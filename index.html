@@ -1,10 +1,10 @@
-<title>Harf Arabic</title>
+<title>Harf Gulf Arabic</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Readex+Pro:wght@300;400;500;600&display=swap">
 <style>
-/* layout: one-column practice app, sticky top bar with tabs, each tab a focused practice surface; arabic set large in naskh */
+/* layout: one-column practice app. sticky top bar with stage meter and tabs; "today" is the home surface, the course map sits behind it */
 :root{
   --paper:#eef3f1; --card:#fbfdfc; --ink:#13201c; --muted:#56655f; --line:#cddad5;
   --tile:#0f5f5a; --tile-soft:#d6ebe7; --saffron:#b8740f; --good:#2f7d3c; --bad:#b3362c;
@@ -19,89 +19,117 @@
   --paper:#0d1513; --card:#15201d; --ink:#e4ede9; --muted:#9db0a9; --line:#2a3a35;
   --tile:#5fc0b5; --tile-soft:#173a36; --saffron:#e9a53d; --good:#6cc27a; --bad:#ef7d72; color-scheme:dark}
 *{box-sizing:border-box}
-html,body{min-height:100%}
 body{background:var(--paper);color:var(--ink);font:400 15px/1.55 var(--ui);
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
 .wrap{max-width:760px;margin:0 auto;padding-block:0 48px}
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);padding-block:14px 0;border-bottom:1px solid var(--line)}
-.brand{display:flex;align-items:baseline;gap:10px;justify-content:space-between;flex-wrap:wrap}
-.brand h1{margin:0;font:600 20px/1.2 var(--ui);letter-spacing:.01em;display:flex;align-items:baseline;gap:8px}
-.brand h1 .ar{font:700 28px/1 var(--ar);color:var(--tile)}
-.stats{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
-.stats b{color:var(--ink);font-weight:500}
-nav{display:flex;gap:4px;overflow-x:auto;margin-top:10px;scrollbar-width:none}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);padding-block:12px 0;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:12px;justify-content:space-between;flex-wrap:wrap}
+.brand h1{margin:0;font:600 19px/1.2 var(--ui);display:flex;align-items:baseline;gap:8px}
+.brand h1 .ar{font:700 27px/1 var(--ar);color:var(--tile)}
+.stage-pill{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:8px;font-variant-numeric:tabular-nums}
+.stage-pill b{color:var(--ink);font-weight:500}
+.stage-bar{width:90px;height:6px;border-radius:3px;background:var(--line);overflow:hidden}
+.stage-bar i{display:block;height:100%;background:var(--tile)}
+nav{display:flex;gap:2px;overflow-x:auto;margin-top:8px;scrollbar-width:none}
 nav::-webkit-scrollbar{display:none}
 nav button{flex:0 0 auto;border:0;background:none;color:var(--muted);font:500 14px var(--ui);padding:9px 12px 11px;cursor:pointer;border-bottom:2px solid transparent}
 nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--tile)}
-nav button:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--saffron);outline-offset:2px}
-main section{padding-top:20px}
-h2{font:500 13px var(--ui);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 12px}
+:focus-visible{outline:2px solid var(--saffron);outline-offset:2px}
+main section{padding-top:18px}
+h2{font:500 12px var(--ui);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 10px}
+h3{font:600 18px/1.3 var(--ui);margin:0}
 p{margin:0}
-.lede{color:var(--muted);max-width:62ch;margin-bottom:16px}
+.lede{color:var(--muted);max-width:62ch;margin-bottom:14px}
 .ar{font-family:var(--ar);direction:rtl;unicode-bidi:isolate}
-button.btn{font:500 14px var(--ui);border-radius:var(--r);border:1px solid var(--line);background:var(--card);color:var(--ink);padding:10px 14px;cursor:pointer;min-height:44px}
-button.btn:hover{border-color:var(--tile)}
-button.primary{background:var(--tile);border-color:var(--tile);color:var(--paper)}
-button.btn:disabled{opacity:.45;cursor:not-allowed}
-.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.notice{font-size:13px;color:var(--muted);border-left:3px solid var(--saffron);padding:8px 12px;background:var(--card);border-radius:0 var(--r) var(--r) 0;margin-bottom:16px;max-width:66ch}
-.notice[hidden]{display:none}
-/* letters */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(68px,1fr));gap:8px;direction:rtl}
-.grid button{aspect-ratio:1;max-width:100%;border:1px solid var(--line);background:var(--card);border-radius:var(--r);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:var(--ink);padding:4px}
-.grid button .g{font:400 34px/1 var(--ar)}
-.grid button .n{font:400 11px var(--ui);color:var(--muted);direction:ltr}
-.grid button[aria-pressed="true"]{border-color:var(--tile);background:var(--tile-soft)}
-.letter-card{margin-top:16px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px;display:grid;gap:16px}
-.lc-top{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
-.lc-glyph{font:400 88px/1 var(--ar);color:var(--tile);min-width:90px;text-align:center}
-.lc-meta{min-width:0;flex:1}
-.lc-meta h3{margin:0 0 4px;font:600 20px var(--ui)}
-.lc-meta .ar{font-size:24px}
-.forms{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;direction:rtl}
-.forms div{border:1px solid var(--line);border-radius:var(--r);padding:8px 4px;text-align:center}
-.forms .f{font:400 40px/1.4 var(--ar)}
-.forms .l{font-size:11px;color:var(--muted);direction:ltr;text-transform:uppercase;letter-spacing:.06em}
-.example{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
-.example .ar{font-size:30px}
+.tr{color:var(--muted);font-style:italic}
 .tag{font-size:12px;color:var(--muted)}
-/* practice cards */
-.stage{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px 18px;text-align:center;display:grid;gap:14px;justify-items:center}
-.big{font:400 52px/1.5 var(--ar);direction:rtl;word-break:break-word;max-width:100%}
-.mid{font:400 34px/1.6 var(--ar);direction:rtl}
-.translit{color:var(--muted);font-style:italic}
-.en{font:500 20px var(--ui)}
+.stack{display:grid;gap:12px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.btn{font:500 14px var(--ui);border-radius:var(--r);border:1px solid var(--line);background:var(--card);color:var(--ink);padding:9px 14px;cursor:pointer;min-height:44px}
+.btn:hover{border-color:var(--tile)}
+.btn.primary{background:var(--tile);border-color:var(--tile);color:var(--paper)}
+.btn.ghost{background:none}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.small{min-height:36px;padding:6px 10px;font-size:13px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.notice{font-size:13px;color:var(--muted);border-left:3px solid var(--saffron);padding:8px 12px;background:var(--card);border-radius:0 var(--r) var(--r) 0;max-width:66ch}
+.chip{display:inline-block;font-size:12px;border:1px solid var(--saffron);color:var(--saffron);border-radius:99px;padding:2px 9px}
+/* today */
+.steps{display:grid;gap:8px}
+.step{display:flex;gap:12px;align-items:center;padding:12px 14px;border:1px solid var(--line);border-radius:var(--r);background:var(--card)}
+.step .n{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-weight:600;font-size:13px;border:1.5px solid var(--line);flex:0 0 auto;font-variant-numeric:tabular-nums}
+.step.done .n{background:var(--tile);border-color:var(--tile);color:var(--paper)}
+.step.now{border-color:var(--tile)}
+.step .body{flex:1;min-width:0}
+.step .body b{font-weight:500}
+/* cards */
+.stage{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px 16px;text-align:center;display:grid;gap:12px;justify-items:center}
+.big{font:400 46px/1.55 var(--ar);direction:rtl;overflow-wrap:anywhere;max-width:100%}
+.mid{font:400 30px/1.6 var(--ar);direction:rtl}
+.en{font:500 19px var(--ui)}
+.msa{font-size:13px;color:var(--muted)}
+.msa .ar{font-size:20px;color:var(--ink)}
 .meter{width:100%;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
 .meter i{display:block;height:100%;background:var(--tile);width:0}
-.options{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%}
-.options button{min-height:56px}
-.options button.right{border-color:var(--good);background:color-mix(in srgb,var(--good) 14%,var(--card))}
-.options button.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 12%,var(--card))}
 .grades{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;width:100%}
-.grades button small{display:block;font-size:11px;color:var(--muted);font-weight:400}
-.feedback{font-weight:500;min-height:1.5em}
+.grades .btn small{display:block;font-size:11px;color:inherit;opacity:.75;font-weight:400}
+.feedback{font-weight:500;min-height:1.4em}
 .feedback.ok{color:var(--good)} .feedback.no{color:var(--bad)}
-select,input[type=text],textarea{font:400 15px var(--ui);color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:10px 12px;min-height:44px}
-.answer{font:400 30px/1.4 var(--ar);direction:rtl;text-align:right;width:100%}
-.kbd{display:grid;grid-template-columns:repeat(auto-fill,minmax(40px,1fr));gap:5px;width:100%;direction:rtl}
-.kbd button{font:400 22px/1 var(--ar);min-height:44px;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:8px;cursor:pointer}
-.kbd button.wide{grid-column:span 3;font:500 13px var(--ui)}
-.diff{font:400 26px/1.6 var(--ar);direction:rtl}
-.diff .x{color:var(--bad);text-decoration:underline wavy}
-/* tutor */
+.options{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%}
+.options .btn{min-height:54px}
+.options .btn.right{border-color:var(--good);background:color-mix(in srgb,var(--good) 14%,var(--card))}
+.options .btn.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 12%,var(--card))}
+.mode{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+/* dialogue */
+.dialogue{display:grid;gap:10px}
+.line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;text-align:left}
+.who{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:600;background:var(--tile-soft);color:var(--tile)}
+.who.b{background:color-mix(in srgb,var(--saffron) 18%,var(--card));color:var(--saffron)}
+.line .txt{min-width:0}
+.line .ar{font-size:26px;line-height:1.7;display:block;text-align:right}
+.line .en{font-size:14px;font-weight:400}
+/* course */
+.stagehead{display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap;margin:18px 0 8px}
+.units{display:grid;gap:8px}
+.unit{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px 14px;border:1px solid var(--line);border-radius:var(--r);background:var(--card);text-align:left;cursor:pointer;color:var(--ink);font:inherit;width:100%}
+.unit[disabled]{cursor:default;opacity:.55}
+.unit .t{min-width:0}
+.unit .st{font-size:12px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.unit.done .st{color:var(--good)}
+/* sounds */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:8px;direction:rtl}
+.grid button{aspect-ratio:1;max-width:100%;border:1px solid var(--line);background:var(--card);border-radius:var(--r);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:var(--ink);padding:4px}
+.grid button .g{font:400 32px/1 var(--ar)}
+.grid button .n{font:400 11px var(--ui);color:var(--muted);direction:ltr}
+.grid button[aria-pressed="true"]{border-color:var(--tile);background:var(--tile-soft)}
+.forms{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;direction:rtl}
+.forms div{border:1px solid var(--line);border-radius:var(--r);padding:8px 4px;text-align:center}
+.forms .f{font:400 38px/1.4 var(--ar)}
+.forms .l{font-size:11px;color:var(--muted);direction:ltr;text-transform:uppercase;letter-spacing:.06em}
+.subtabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.subtabs .btn[aria-pressed="true"]{border-color:var(--tile);background:var(--tile-soft)}
+.vowel{display:grid;grid-template-columns:70px 1fr auto;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.vowel .ar{font-size:38px;text-align:center}
+.vowel .min{min-width:0}
+table.shift{width:100%;border-collapse:collapse;font-size:14px}
+table.shift td,table.shift th{padding:8px 6px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+table.shift .ar{font-size:24px}
+.tablewrap{overflow-x:auto}
+/* talk */
 .chat{display:grid;gap:10px;margin-bottom:12px}
 .msg{padding:12px 14px;border-radius:var(--r);border:1px solid var(--line);background:var(--card);max-width:92%;min-width:0;overflow-wrap:anywhere}
 .msg.me{justify-self:end;background:var(--tile-soft);border-color:transparent}
 .msg .ar{font-size:24px;line-height:1.7;display:block}
-.msg .t{color:var(--muted);font-style:italic;display:block}
 .msg .fix{font-size:13px;color:var(--saffron);display:block;margin-top:6px}
 .compose{display:flex;gap:8px}
 .compose textarea{flex:1;min-width:0;resize:vertical;min-height:52px}
-.progress-list{display:grid;gap:8px}
-.progress-list div{display:flex;justify-content:space-between;gap:12px;font-variant-numeric:tabular-nums;border-bottom:1px solid var(--line);padding-block:6px}
+select,input[type=text],textarea{font:400 15px var(--ui);color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:9px 12px;min-height:44px}
+.kv{display:grid;gap:6px}
+.kv div{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-block:7px;font-variant-numeric:tabular-nums}
+.setting{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;padding-block:8px;border-bottom:1px solid var(--line)}
 footer{margin-top:28px;font-size:12px;color:var(--muted)}
-@media (max-width:480px){.options{grid-template-columns:1fr}.big{font-size:42px}.lc-glyph{font-size:72px}}
+@media (max-width:480px){.options{grid-template-columns:1fr}.big{font-size:38px}.grades .btn{padding-inline:4px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 
@@ -109,205 +137,132 @@ footer{margin-top:28px;font-size:12px;color:var(--muted)}
 <header>
   <div class="brand">
     <h1><span class="ar" lang="ar">حرف</span> Harf</h1>
-    <div class="stats" id="stats"></div>
+    <div class="stage-pill"><span id="stage-label">Stage 0</span><span class="stage-bar"><i id="stage-fill"></i></span><span id="streak-label"></span></div>
   </div>
   <nav role="tablist" id="tabs">
-    <button role="tab" data-tab="letters" aria-selected="true">Letters</button>
+    <button role="tab" data-tab="today" aria-selected="true">Today</button>
+    <button role="tab" data-tab="course">Course</button>
     <button role="tab" data-tab="review">Review</button>
-    <button role="tab" data-tab="quiz">Quiz</button>
-    <button role="tab" data-tab="speak">Speak</button>
-    <button role="tab" data-tab="type">Type</button>
-    <button role="tab" data-tab="tutor" id="tutor-tab" hidden>Tutor</button>
-    <button role="tab" data-tab="progress">Progress</button>
+    <button role="tab" data-tab="sounds">Sounds</button>
+    <button role="tab" data-tab="talk">Talk</button>
+    <button role="tab" data-tab="me">Progress</button>
   </nav>
 </header>
 
 <main>
-<p class="notice" id="voice-note" hidden></p>
-
-<section id="letters" role="tabpanel">
-  <h2>The 28 letters</h2>
-  <p class="lede">Tap a letter to see its four shapes and hear it. Arabic reads right to left, and most letters join to the next one, so a letter changes shape depending on where it sits in a word.</p>
-  <div class="grid" id="letter-grid"></div>
-  <div class="letter-card" id="letter-card"></div>
-</section>
-
-<section id="review" role="tabpanel" hidden>
-  <h2>Spaced repetition</h2>
-  <p class="lede">Cards you find hard come back sooner, easy ones later. A few minutes a day beats an hour once a week.</p>
-  <div class="row" style="margin-bottom:12px">
-    <label for="deck-select" class="tag">Deck</label>
-    <select id="deck-select"></select>
-    <label for="dir-select" class="tag">Direction</label>
-    <select id="dir-select">
-      <option value="ar-en">Arabic → English</option>
-      <option value="en-ar">English → Arabic</option>
-      <option value="audio">Listen → meaning</option>
-    </select>
-  </div>
-  <div class="stage" id="review-stage"></div>
-</section>
-
-<section id="quiz" role="tabpanel" hidden>
-  <h2>Quick quiz</h2>
-  <div class="row" style="margin-bottom:12px">
-    <label for="quiz-mode" class="tag">Mode</label>
-    <select id="quiz-mode">
-      <option value="letter">Letter shape → name</option>
-      <option value="read">Read the word → meaning</option>
-      <option value="listen">Listen → meaning</option>
-    </select>
-  </div>
-  <div class="stage" id="quiz-stage"></div>
-</section>
-
-<section id="speak" role="tabpanel" hidden>
-  <h2>Speaking</h2>
-  <p class="lede">Listen, then say it out loud. Where your browser supports it, the app listens and scores you; otherwise compare with the recording yourself.</p>
-  <p class="notice" id="mic-note" hidden></p>
-  <div class="stage" id="speak-stage"></div>
-</section>
-
-<section id="type" role="tabpanel" hidden>
-  <h2>Writing</h2>
-  <p class="lede">Hear a word and type it in Arabic script. Vowel marks are optional: <span class="ar" lang="ar">كتاب</span> and <span class="ar" lang="ar">كِتَاب</span> both count.</p>
-  <div class="stage" id="type-stage"></div>
-</section>
-
-<section id="tutor" role="tabpanel" hidden>
-  <h2>Conversation tutor</h2>
-  <p class="lede">Write in Arabic, transliteration or English. The tutor answers in simple Modern Standard Arabic, with transliteration, a translation, and a gentle correction of your last message.</p>
-  <div class="chat" id="chat"></div>
-  <form class="compose" id="compose">
-    <label for="chat-input" class="tag" hidden>Message</label>
-    <textarea id="chat-input" placeholder="مرحبا! or: how do I say I am a student?"></textarea>
-    <button class="btn primary" type="submit" id="chat-send">Send</button>
-  </form>
-</section>
-
-<section id="progress" role="tabpanel" hidden>
-  <h2>Your progress</h2>
-  <div class="progress-list" id="progress-list"></div>
-  <div class="row" style="margin-top:16px">
-    <button class="btn" id="reset-btn">Reset progress</button>
-    <button class="btn" id="reset-confirm" hidden>Tap again to erase everything</button>
-  </div>
-</section>
+<p class="notice" id="voice-note" hidden style="margin-top:14px"></p>
+<section id="today" role="tabpanel"></section>
+<section id="course" role="tabpanel" hidden></section>
+<section id="review" role="tabpanel" hidden></section>
+<section id="sounds" role="tabpanel" hidden></section>
+<section id="talk" role="tabpanel" hidden></section>
+<section id="me" role="tabpanel" hidden></section>
 </main>
-
-<footer>Modern Standard Arabic (fuṣḥā). Progress is saved in this browser only. Pronunciation comes from your device's Arabic voice, so quality varies by device.</footer>
+<footer id="foot">Gulf Arabic (General Khaleeji, UAE-leaning) for speaking, with Modern Standard Arabic shown for understanding.</footer>
 </div>
 
 <script id="data">
-// [glyph, name in arabic (spoken), english name, translit, sound hint, joins to next?, example vowelled, example translit, example meaning]
+// ---------- alphabet: [glyph, spoken name, english name, translit, sound, joins next] ----------
 const LETTERS=[
-["ا","أَلِف","alif","ā","long ā, or a seat for hamza (ʼ)",false,"أَسَد","asad","lion"],
-["ب","بَاء","bāʼ","b","b as in bat",true,"بَيْت","bayt","house"],
-["ت","تَاء","tāʼ","t","t as in tap",true,"تُفَّاح","tuffāḥ","apples"],
-["ث","ثَاء","thāʼ","th","th as in think",true,"ثَلْج","thalj","snow"],
-["ج","جِيم","jīm","j","j as in jam",true,"جَمَل","jamal","camel"],
-["ح","حَاء","ḥāʼ","ḥ","breathy h from deep in the throat",true,"حَلِيب","ḥalīb","milk"],
-["خ","خَاء","khāʼ","kh","ch as in Scottish loch",true,"خُبْز","khubz","bread"],
-["د","دَال","dāl","d","d as in dog",false,"دَرْس","dars","lesson"],
-["ذ","ذَال","dhāl","dh","th as in this",false,"ذَهَب","dhahab","gold"],
-["ر","رَاء","rāʼ","r","rolled or tapped r",false,"رَجُل","rajul","man"],
-["ز","زَاي","zāy","z","z as in zoo",false,"زَيْت","zayt","oil"],
-["س","سِين","sīn","s","s as in sun",true,"سَمَك","samak","fish"],
-["ش","شِين","shīn","sh","sh as in ship",true,"شَمْس","shams","sun"],
-["ص","صَاد","ṣād","ṣ","heavy s, tongue low and back",true,"صَدِيق","ṣadīq","friend"],
-["ض","ضَاد","ḍād","ḍ","heavy d",true,"ضَيْف","ḍayf","guest"],
-["ط","طَاء","ṭāʼ","ṭ","heavy t",true,"طَعَام","ṭaʿām","food"],
-["ظ","ظَاء","ẓāʼ","ẓ","heavy th as in this",true,"ظُهْر","ẓuhr","noon"],
-["ع","عَيْن","ʿayn","ʿ","squeeze in the throat, no English match",true,"عَيْن","ʿayn","eye"],
-["غ","غَيْن","ghayn","gh","gargled sound, like a French r",true,"غُرْفَة","ghurfa","room"],
-["ف","فَاء","fāʼ","f","f as in fan",true,"فِيل","fīl","elephant"],
-["ق","قَاف","qāf","q","k made far back in the throat",true,"قَلَم","qalam","pen"],
-["ك","كَاف","kāf","k","k as in kite",true,"كِتَاب","kitāb","book"],
-["ل","لَام","lām","l","l as in lamp",true,"لَيْل","layl","night"],
-["م","مِيم","mīm","m","m as in moon",true,"مَاء","māʼ","water"],
-["ن","نُون","nūn","n","n as in noon",true,"نُور","nūr","light"],
-["ه","هَاء","hāʼ","h","h as in hat",true,"هَوَاء","hawāʼ","air"],
-["و","وَاو","wāw","w / ū","w as in wet, or long oo",false,"وَلَد","walad","boy"],
-["ي","يَاء","yāʼ","y / ī","y as in yes, or long ee",true,"يَد","yad","hand"]
+["ا","أَلِف","alif","ā","long ā, or a seat for hamza (ʼ)",false],["ب","بَاء","bāʼ","b","b as in bat",true],
+["ت","تَاء","tāʼ","t","t as in tap",true],["ث","ثَاء","thāʼ","th","th as in think (kept in Gulf speech)",true],
+["ج","جِيم","jīm","j","j as in jam; often y in Kuwaiti and Emirati speech",true],["ح","حَاء","ḥāʼ","ḥ","breathy h from deep in the throat",true],
+["خ","خَاء","khāʼ","kh","ch as in Scottish loch",true],["د","دَال","dāl","d","d as in dog",false],
+["ذ","ذَال","dhāl","dh","th as in this (kept in Gulf speech)",false],["ر","رَاء","rāʼ","r","rolled or tapped r",false],
+["ز","زَاي","zāy","z","z as in zoo",false],["س","سِين","sīn","s","s as in sun",true],
+["ش","شِين","shīn","sh","sh as in ship",true],["ص","صَاد","ṣād","ṣ","heavy s, tongue low and back",true],
+["ض","ضَاد","ḍād","ḍ","heavy d; in the Gulf usually said like ظ (heavy dh)",true],["ط","طَاء","ṭāʼ","ṭ","heavy t",true],
+["ظ","ظَاء","ẓāʼ","ẓ","heavy th as in this",true],["ع","عَيْن","ʿayn","ʿ","squeeze in the throat, no English match",true],
+["غ","غَيْن","ghayn","gh","gargled, like a French r",true],["ف","فَاء","fāʼ","f","f as in fan",true],
+["ق","قَاف","qāf","q","deep k in fuṣḥā; usually g in Gulf speech",true],["ك","كَاف","kāf","k","k as in kite; sometimes ch in Gulf speech",true],
+["ل","لَام","lām","l","l as in lamp",true],["م","مِيم","mīm","m","m as in moon",true],
+["ن","نُون","nūn","n","n as in noon",true],["ه","هَاء","hāʼ","h","h as in hat",true],
+["و","وَاو","wāw","w / ū","w as in wet, or long oo",false],["ي","يَاء","yāʼ","y / ī","y as in yes, or long ee",true]
 ];
-// [vowelled arabic, translit, english]
-const DECKS={
-"Greetings":[
-["السَّلَامُ عَلَيْكُم","as-salāmu ʿalaykum","peace be upon you (hello)"],
-["وَعَلَيْكُمُ السَّلَام","wa ʿalaykumu s-salām","and upon you peace (reply)"],
-["مَرْحَبًا","marḥaban","hello"],
-["صَبَاحُ الْخَيْر","ṣabāḥu l-khayr","good morning"],
-["صَبَاحُ النُّور","ṣabāḥu n-nūr","good morning (reply)"],
-["مَسَاءُ الْخَيْر","masāʼu l-khayr","good evening"],
-["كَيْفَ حَالُكَ؟","kayfa ḥāluka?","how are you? (to a man)"],
-["كَيْفَ حَالُكِ؟","kayfa ḥāluki?","how are you? (to a woman)"],
-["بِخَيْر، الْحَمْدُ لِلّٰه","bi-khayr, al-ḥamdu lillāh","fine, praise be to God"],
-["مَا اسْمُكَ؟","mā -smuka?","what is your name? (to a man)"],
-["اِسْمِي","ismī","my name is"],
-["تَشَرَّفْنَا","tasharrafnā","nice to meet you"],
-["مَعَ السَّلَامَة","maʿa s-salāma","goodbye"]
-],
-"Polite words":[
-["شُكْرًا","shukran","thank you"],
-["عَفْوًا","ʿafwan","you're welcome"],
-["مِنْ فَضْلِكَ","min faḍlika","please (to a man)"],
-["مِنْ فَضْلِكِ","min faḍliki","please (to a woman)"],
-["نَعَم","naʿam","yes"],
-["لَا","lā","no"],
-["آسِف","āsif","sorry (said by a man)"],
-["آسِفَة","āsifa","sorry (said by a woman)"],
-["إِنْ شَاءَ اللّٰه","in shāʼa llāh","God willing"],
-["أَنَا لَا أَفْهَم","anā lā afham","I don't understand"],
-["مَرَّةً أُخْرَى","marratan ukhrā","once more / again"]
-],
-"Numbers":[
-["وَاحِد","wāḥid","one (١)"],
-["اِثْنَان","ithnān","two (٢)"],
-["ثَلَاثَة","thalātha","three (٣)"],
-["أَرْبَعَة","arbaʿa","four (٤)"],
-["خَمْسَة","khamsa","five (٥)"],
-["سِتَّة","sitta","six (٦)"],
-["سَبْعَة","sabʿa","seven (٧)"],
-["ثَمَانِيَة","thamāniya","eight (٨)"],
-["تِسْعَة","tisʿa","nine (٩)"],
-["عَشَرَة","ʿashara","ten (١٠)"]
-],
-"People":[
-["أَنَا","anā","I"],
-["أَنْتَ","anta","you (to a man)"],
-["أَنْتِ","anti","you (to a woman)"],
-["هُوَ","huwa","he"],
-["هِيَ","hiya","she"],
-["نَحْنُ","naḥnu","we"],
-["أُمّ","umm","mother"],
-["أَب","ab","father"],
-["أَخ","akh","brother"],
-["أُخْت","ukht","sister"],
-["صَدِيق","ṣadīq","friend (man)"],
-["صَدِيقَة","ṣadīqa","friend (woman)"],
-["طَالِب","ṭālib","student (man)"]
-],
-"Everyday":[
-["بَيْت","bayt","house"],
-["بَاب","bāb","door"],
-["كِتَاب","kitāb","book"],
-["قَلَم","qalam","pen"],
-["مَاء","māʼ","water"],
-["خُبْز","khubz","bread"],
-["قَهْوَة","qahwa","coffee"],
-["شَاي","shāy","tea"],
-["سَيَّارَة","sayyāra","car"],
-["مَدْرَسَة","madrasa","school"],
-["جَامِعَة","jāmiʿa","university"],
-["مَسْجِد","masjid","mosque"],
-["سُوق","sūq","market"],
-["يَوْم","yawm","day"],
-["لَيْل","layl","night"],
-["كَبِير","kabīr","big"],
-["صَغِير","ṣaghīr","small"],
-["جَمِيل","jamīl","beautiful"]
-]
+// ---------- short vowels and marks: [shown, name, sound, example, example translit, example meaning] ----------
+const VOWELS=[
+["بَ","fatḥa","short a","كَتَبَ","kataba","he wrote"],["بِ","kasra","short i","بِنْت","bint","girl"],
+["بُ","ḍamma","short u","كُتُب","kutub","books"],["بْ","sukūn","no vowel after the letter","قَلْب","qalb","heart"],
+["بّ","shadda","letter said twice (held longer)","حُبّ","ḥubb","love"],["بًا","tanwīn","adds -an / -in / -un (mostly fuṣḥā)","شُكْرًا","shukran","thank you"],
+["بَا","alif after fatḥa","long ā","بَاب","bāb","door"],["بِي","yāʼ after kasra","long ī","كَبِير","kabīr","big"],
+["بُو","wāw after ḍamma","long ū","نُور","nūr","light"]
+];
+// ---------- gulf sound shifts: [letter, fuṣḥā, gulf, example ar, fuṣḥā reading, gulf reading, meaning] ----------
+const SHIFTS=[
+["ق","q","g","قهوة","qahwa","gahwa","coffee"],
+["ك","k","ch (some words)","باكر","bākir","bāchir","tomorrow"],
+["ج","j","y (Kuwait, UAE, Bahrain)","دجاج","dajāj","diyāy","chicken"],
+["ض","ḍ","ẓ (heavy dh)","أبيض","abyaḍ","abyaẓ","white"],
+["ث / ذ","th / dh","kept, unlike Egyptian or Levantine","ثلاث","thalāth","thalāth","three"]
+];
+// ---------- ear training: minimal pairs [ar, translit, meaning] x2 ----------
+const PAIRS=[
+[["قلب","qalb","heart"],["كلب","kalb","dog"]],[["صيف","ṣayf","summer"],["سيف","sayf","sword"]],
+[["طين","ṭīn","mud"],["تين","tīn","figs"]],[["حال","ḥāl","state, condition"],["هال","hāl","cardamom"]],
+[["عين","ʿayn","eye"],["أين","ayn","where (fuṣḥā)"]],[["غالي","ghālī","expensive"],["خالي","khālī","empty"]],
+[["ظل","ẓill","shade"],["ذل","dhull","humiliation"]],[["ضار","ḍārr","harmful"],["دار","dār","house"]]
+];
+// ---------- stage 1, hand-written. item: [ar, gulf translit, english, fuṣḥā equivalent or "", note or ""] ----------
+const COURSE=[
+{id:"u1",stage:1,title:"Hello and how are you",goal:"Greet someone and answer “how are you?”",
+ tip:"Gulf adds -ak when talking to a man and -ich to a woman: shlōnak? / shlōnich? (how are you?).",
+ dialogue:[["A","السلام عليكم","as-salāmu ʿalaykum","Peace be upon you."],["B","وعليكم السلام، هلا والله","wa ʿalaykum is-salām, hala wallāh","And upon you peace. Hi there!"],["A","شلونك؟","shlōnak?","How are you?"],["B","زين، الحمد لله. وانت شلونك؟","zēn, il-ḥamdu lillāh. w inta shlōnak?","Good, thank God. And how are you?"],["A","بخير، الله يسلمك","b-khēr, allah ysallmak","Fine, God keep you."]],
+ items:[["السلام عليكم","as-salāmu ʿalaykum","hello (peace be upon you)","السلام عليكم",""],["وعليكم السلام","wa ʿalaykum is-salām","reply to salām","وعليكم السلام",""],["هلا","hala","hi","أهلًا",""],["هلا والله","hala wallāh","hi there! (warm)","",""],["شلونك؟","shlōnak?","how are you? (to a man)","كيف حالك؟",""],["شلونج؟","shlōnich?","how are you? (to a woman)","كيف حالكِ؟","often written شلونك too"],["زين","zēn","good, fine","جيد",""],["الحمد لله","il-ḥamdu lillāh","praise God (I'm fine)","الحمد لله",""],["الله يسلمك","allah ysallmak","God keep you (warm thanks)","","to a woman: allah ysallmich"]]},
+{id:"u2",stage:1,title:"Survival words",goal:"Ask for things politely and handle not understanding",
+ tip:"ī (إي) is the everyday Gulf “yes”. naʿam is a more polite yes, and naʿam? on its own means “pardon?”.",
+ dialogue:[["A","لو سمحت، عندك ماي؟","law samaḥt, ʿindak māy?","Excuse me, do you have water?"],["B","إي، تفضل","ī, tfaẓẓal","Yes, here you go."],["A","مشكور","mashkūr","Thanks."],["B","العفو","il-ʿafu","You're welcome."]],
+ items:[["إي","ī","yes","نعم",""],["لا","la","no","لا",""],["مشكور","mashkūr","thanks (to a man)","شكرًا","to a woman: mashkūra"],["العفو","il-ʿafu","you're welcome","عفوًا",""],["لو سمحت","law samaḥt","excuse me / please (to a man)","من فضلك","to a woman: law samaḥti"],["تفضل","tfaẓẓal","here you go / go ahead (to a man)","تفضّل","to a woman: tfaẓẓali"],["ما فهمت","ma fhimt","I didn't understand","لم أفهم",""],["شوي شوي","shwayy shwayy","slowly / little by little","ببطء",""],["عيد مرة ثانية","ʿīd marra thānya","say it again (to a man)","أعد مرة أخرى","to a woman: ʿīdi"]]},
+{id:"u3",stage:1,title:"About me",goal:"Say your name, where you're from and what you do",
+ tip:"There's no word for “am / is / are” in the present: ana ṭālib = I (am a) student.",
+ dialogue:[["A","شسمك؟","shismak?","What's your name?"],["B","اسمي سالم. وانت؟","ismi Sālim. w inta?","My name is Salim. And you?"],["A","أنا خالد. انت من وين؟","ana Khālid. inta min wēn?","I'm Khalid. Where are you from?"],["B","أنا من بريطانيا، أدرس هني","ana min brīṭānya, adris hni","I'm from Britain, I study here."],["A","ما شاء الله، تشرفنا","mā shāʼ allāh, tsharrafna","Great, nice to meet you."]],
+ items:[["شسمك؟","shismak?","what's your name? (to a man)","ما اسمك؟","to a woman: shismich?; Saudi: wish ismak?"],["اسمي","ismi","my name is","اسمي",""],["انت","inta","you (to a man)","أنتَ",""],["انتي","inti","you (to a woman)","أنتِ",""],["من وين؟","min wēn?","from where?","من أين؟",""],["أنا من","ana min","I'm from","أنا من",""],["أدرس","adris","I study","أدرس",""],["هني","hni","here","هنا","Saudi and Qatar: hina"],["تشرفنا","tsharrafna","nice to meet you","تشرفنا",""]]},
+{id:"u4",stage:1,title:"Numbers and prices",goal:"Count to five and ask how much",
+ tip:"After numbers 11 and up the noun stays singular: ʿishrīn dirham (twenty dirhams).",
+ dialogue:[["A","بكم هذا؟","b-cham hādha?","How much is this?"],["B","بعشرين درهم","b-ʿishrīn dirham","Twenty dirhams."],["A","وايد غالي!","wāyid ghāli!","Very expensive!"],["B","خلاص، بخمسطعش","khalāṣ, b-khamsṭaʿash","OK, fifteen."]],
+ items:[["واحد","wāḥid","one (١)","واحد",""],["ثنين","thnēn","two (٢)","اثنان",""],["ثلاثة","thalātha","three (٣)","ثلاثة","before a noun: thalāth (thalāth sanawāt, three years)"],["أربعة","arbaʿa","four (٤)","أربعة","before a noun: arbaʿ"],["خمسة","khamsa","five (٥)","خمسة","before a noun: khams (khams dagāyig, five minutes)"],["بكم؟","b-cham?","how much? (price)","بكم؟","b-kam in Saudi and Qatar"],["غالي","ghāli","expensive","غالٍ",""],["رخيص","rkhīṣ","cheap","رخيص",""],["وايد","wāyid","very / a lot","جدًا / كثيرًا","Kuwait, UAE, Bahrain, Qatar; Saudis say marra or kthīr"]]},
+{id:"u5",stage:1,title:"More numbers",goal:"Count to ten, then twenty and a hundred",
+ tip:"Arabic digits go left to right like English ones: ٢٥ is 25.",
+ dialogue:[["A","كم عمرك؟","cham ʿumrak?","How old are you?"],["B","عشرين سنة","ʿishrīn sana","Twenty."],["A","وكم أخ عندك؟","w cham akh ʿindak?","And how many brothers do you have?"],["B","عندي ثلاثة","ʿindi thalātha","I have three."]],
+ items:[["ستة","sitta","six (٦)","ستة","before a noun: sitt"],["سبعة","sabʿa","seven (٧)","سبعة","before a noun: sabʿ"],["ثمانية","thamānya","eight (٨)","ثمانية","before a noun: thamān"],["تسعة","tisʿa","nine (٩)","تسعة","before a noun: tisʿ"],["عشرة","ʿashra","ten (١٠)","عشرة","before a noun: ʿashar"],["عشرين","ʿishrīn","twenty (٢٠)","عشرون",""],["مية","miya","a hundred (١٠٠)","مئة",""],["كم؟","cham?","how many?","كم؟","kam in Saudi and Qatar"],["عندي","ʿindi","I have","عندي",""]]},
+{id:"u6",stage:1,title:"At the café",goal:"Order food and drink and ask for the bill",
+ tip:"abi (I want) comes from the older abghi; you'll hear abgha in western Saudi (Hijaz). To a woman: tabīn? (do you want?).",
+ dialogue:[["A","هلا، شو تبي؟","hala, shu tabi?","Hi, what would you like?"],["B","أبي قهوة وماي لو سمحت","abi gahwa w māy law samaḥt","I'd like coffee and water, please."],["A","تبي حليب؟","tabi ḥalīb?","Do you want milk?"],["B","لا، بس قهوة. والحساب لو سمحت","la, bas gahwa. w il-ḥsāb law samaḥt","No, just coffee. And the bill, please."]],
+ items:[["أبي","abi","I want","أريد",""],["تبي؟","tabi?","do you want? (to a man)","هل تريد؟","to a woman: tabīn?"],["قهوة","gahwa","coffee","قهوة","phone voices say qahwa"],["شاي","chāy","tea","شاي","often written چاي; Saudi: shāy"],["ماي","māy","water","ماء",""],["حليب","ḥalīb","milk","حليب",""],["بس","bas","just / only / enough","فقط",""],["الحساب","il-ḥsāb","the bill","الحساب",""],["عيش","ʿēsh","rice (in the Gulf)","أرز","in Egypt ʿēsh means bread"]]},
+{id:"u7",stage:1,title:"Questions and directions",goal:"Ask the five big questions and follow simple directions",
+ tip:"Question words go first and the rest stays in normal order: wēn il-masjid? = where (is) the mosque?",
+ dialogue:[["A","لو سمحت، وين المسجد؟","law samaḥt, wēn il-masjid?","Excuse me, where's the mosque?"],["B","سيدا، بعدين يمين","sīda, baʿdēn yamīn","Straight on, then right."],["A","قريب؟","garīb?","Is it close?"],["B","إي، قريب وايد. خمس دقايق","ī, garīb wāyid. khams dagāyig","Yes, very close. Five minutes."]],
+ items:[["وين؟","wēn?","where?","أين؟",""],["شو؟","shu?","what?","ماذا؟","Kuwait, Bahrain, Qatar: shinu?; Saudi: wish / ēsh?"],["ليش؟","lēsh?","why?","لماذا؟",""],["منو؟","minu?","who?","مَن؟",""],["متى؟","mita?","when?","متى؟",""],["سيدا","sīda","straight on","إلى الأمام مباشرةً",""],["يمين","yamīn","right","يمين",""],["يسار","yasār","left","يسار",""],["قريب","garīb","near, close","قريب",""]]},
+{id:"u8",stage:1,title:"Time and plans",goal:"Talk about now, today and tomorrow",
+ tip:"Put b- in front of a verb for “will”: arūḥ (I go) becomes barūḥ (I'll go).",
+ dialogue:[["A","وين رايح؟","wēn rāyiḥ?","Where are you going?"],["B","رايح السوق الحين","rāyiḥ is-sūg il-ḥīn","I'm going to the market now."],["A","أنا بروح باكر إن شاء الله","ana barūḥ bāchir in shāʼ allāh","I'll go tomorrow, God willing."],["B","يلا، نشوفك بعدين","yalla, nshūfak baʿdēn","OK, see you later."]],
+ items:[["الحين","il-ḥīn","now","الآن",""],["اليوم","il-yōm","today","اليوم",""],["باكر","bāchir","tomorrow","غدًا","often written باچر"],["أمس","ams","yesterday","أمس","also very common: البارحة, il-bārḥa"],["بعدين","baʿdēn","later / then","لاحقًا / ثمّ",""],["رايح","rāyiḥ","going (a man)","ذاهب","a woman: rāyḥa"],["أروح","arūḥ","I go","أذهب",""],["بروح","barūḥ","I'll go","سأذهب",""],["يلا","yalla","come on / let's go / OK","هيا",""]]},
+{id:"u9",stage:1,title:"Can and know",goal:"Say what you can and can't do, and what you know",
+ tip:"Put ma before a verb to make it negative: agdar (I can) becomes ma agdar (I can't).",
+ dialogue:[["A","تتكلم عربي؟","titkallam ʿarabi?","Do you speak Arabic?"],["B","شوي. أبي أتعلم الخليجي","shwayy. abi atʿallam il-khalīji","A little. I want to learn Gulf Arabic."],["A","زين! تقدر تقول شلونك؟","zēn! tigdar tgūl shlōnak?","Great! Can you say shlōnak?"],["B","إي أقدر، بس ما أعرف وايد","ī agdar, bas ma aʿruf wāyid","Yes I can, but I don't know much."]],
+ items:[["أقدر","agdar","I can","أستطيع",""],["ما أقدر","ma agdar","I can't","لا أستطيع",""],["أعرف","aʿruf","I know","أعرف",""],["ما أعرف","ma aʿruf","I don't know","لا أعرف",""],["تتكلم","titkallam","you speak (to a man)","تتكلم","to a woman: titkallamīn"],["عربي","ʿarabi","Arabic","العربية",""],["أتعلم","atʿallam","I learn","أتعلّم",""],["شوي","shwayy","a little","قليلًا",""],["تقول","tgūl","you say (to a man)","تقول","to a woman: tgūlīn"]]},
+{id:"u10",stage:1,title:"Visiting and good manners",goal:"Use the call-and-response phrases of Gulf hospitality",
+ tip:"These come in pairs: learn the reply with the phrase. yaʿṭīk il-ʿāfya → allah yʿāfīk.",
+ dialogue:[["A","حياك الله، تفضل","ḥayyāk allāh, tfaẓẓal","Welcome, come in."],["B","الله يحييك. ما شاء الله، البيت وايد حلو","allah yḥayyīk. mā shāʼ allāh, il-bēt wāyid ḥilu","God bless you. Wow, the house is really nice."],["A","تفضل القهوة","tfaẓẓal il-gahwa","Here's the coffee."],["B","يعطيك العافية","yaʿṭīk il-ʿāfya","Thank you for your trouble."],["A","الله يعافيك","allah yʿāfīk","You're welcome (God give you health)."]],
+ items:[["حياك الله","ḥayyāk allāh","welcome (to a man)","أهلًا وسهلًا","to a woman: ḥayyāch allāh"],["الله يحييك","allah yḥayyīk","reply to “welcome”","","to a woman: allah yḥayyīch"],["يعطيك العافية","yaʿṭīk il-ʿāfya","thanks for your effort / well done","","said to someone working or helping; to a woman: yaʿṭīch il-ʿāfya"],["الله يعافيك","allah yʿāfīk","reply to yaʿṭīk il-ʿāfya","","to a woman: allah yʿāfīch"],["ما شاء الله","mā shāʼ allāh","wonderful! (praise)","ما شاء الله","said when admiring something"],["إن شاء الله","in shāʼ allāh","God willing","إن شاء الله",""],["حلو","ḥilu","nice / sweet / pretty","جميل",""],["عساك بخير","ʿasāk b-khēr","hope you're well","أرجو أن تكون بخير","to a woman: ʿasāch b-khēr"],["ولا يهمك","wala yhimmak","don't worry about it","لا تقلق","to a woman: wala yhimmich"]]}
+];
+// ---------- syllabus for generated stages ----------
+const SYLLABUS={
+2:{name:"Everyday",level:"A2",topics:["family","my daily routine","shopping and bargaining","weather and seasons","taxis and getting around","at a restaurant","phone calls and messages","likes and dislikes","what I did yesterday (past tense)","plans for the weekend (future)"]},
+3:{name:"Conversations",level:"B1",topics:["describing people","at the doctor","work and study","travel and hotels","Ramadan and Eid","invitations and hospitality","giving opinions","telling a short story","feelings and moods","football and hobbies"]},
+4:{name:"Fluent",level:"B2",topics:["the news (with fuṣḥā comparison)","making an argument","jokes and idioms","Gulf culture and history","a business meeting","technology and social media","talking about faith","weddings and family customs","complaining and solving problems","hypotheticals (if I were...)"]},
+5:{name:"Native-like",level:"C1",topics:["Gulf proverbs","Nabati poetry","Kuwaiti vs Emirati vs Saudi speech","fast speech and slang","switching between formal and informal","debating","telling stories with humour","listening to fuṣḥā news","negotiating","interviews and formal speaking"]}
 };
+const STAGE_NAMES={0:"Foundations",1:"Survival",2:"Everyday",3:"Conversations",4:"Fluent",5:"Native-like",6:"Open-ended"};
+// ---------- fuṣḥā recognition track: [vowelled ar, translit, english] ----------
+const MSA=[
+["مَرْحَبًا","marḥaban","hello"],["صَبَاحُ الْخَيْر","ṣabāḥu l-khayr","good morning"],["كَيْفَ حَالُكَ؟","kayfa ḥāluka?","how are you? (to a man)"],
+["شُكْرًا","shukran","thank you"],["مِنْ فَضْلِكَ","min faḍlika","please (to a man)"],["نَعَم","naʿam","yes"],
+["أُرِيدُ","urīdu","I want"],["لَا أَفْهَمُ","lā afhamu","I don't understand"],["أَيْنَ؟","ayna?","where?"],
+["مَاذَا؟","mādhā?","what?"],["لِمَاذَا؟","limādhā?","why?"],["الْآن","al-ān","now"],["غَدًا","ghadan","tomorrow"],
+["جَيِّد","jayyid","good"],["كَثِيرًا","kathīran","a lot"],["أَسْتَطِيعُ","astaṭīʿu","I can"],["ذَهَبَ","dhahaba","he went"],
+["كِتَاب","kitāb","book"],["مَدْرَسَة","madrasa","school"],["جَامِعَة","jāmiʿa","university"],["أَخْبَار","akhbār","news"],
+["حُكُومَة","ḥukūma","government"],["اِقْتِصَاد","iqtiṣād","economy"],["طَقْس","ṭaqs","weather"]
+];
 </script>
 
 <script id="logic">
@@ -316,6 +271,7 @@ const HARAKAT=/[ً-ٰٟـ]/g;
 function normalizeArabic(s){
   return String(s||"").replace(HARAKAT,"")
     .replace(/[أإآٱ]/g,"ا").replace(/ى/g,"ي").replace(/ة/g,"ه").replace(/ؤ/g,"و").replace(/ئ/g,"ي")
+    .replace(/چ/g,"ك").replace(/گ/g,"ق").replace(/ڤ/g,"ف").replace(/پ/g,"ب")
     .replace(/[^ء-ي\s]/g,"").replace(/\s+/g," ").trim();
 }
 function levenshtein(a,b){
@@ -330,20 +286,26 @@ function similarity(a,b){
   const x=normalizeArabic(a),y=normalizeArabic(b);
   if(!x&&!y) return 1; const d=levenshtein(x,y); return 1-d/Math.max(x.length,y.length);
 }
-// four positional shapes using the tatweel (ـ) joiner. non-joining letters have no distinct initial/medial
 function letterForms(g,joins){
   const T="ـ";
   return joins?{isolated:g,initial:g+T,medial:T+g+T,final:T+g}:{isolated:g,initial:g,medial:T+g,final:T+g};
 }
-const DAY=86400000;
-// simplified sm-2. grade: 0 again, 1 hard, 2 good, 3 easy
+const DAY=86400000, MATURE_DAYS=7;
+// simplified sm-2. card {e ease, i interval days, r reps, d due ms, l lapses}. grade 0 again, 1 hard, 2 good, 3 easy
 function schedule(card,grade,now){
-  const c=Object.assign({ease:2.5,interval:0,reps:0,due:0,lapses:0},card);
-  if(grade===0){ c.reps=0; c.lapses++; c.interval=0; c.ease=Math.max(1.3,c.ease-0.2); c.due=now+60000; return c; }
-  if(grade===1){ c.ease=Math.max(1.3,c.ease-0.15); c.interval=c.reps===0?0.5:Math.max(1,c.interval*1.2); }
-  else if(grade===2){ c.interval=c.reps===0?1:c.reps===1?3:c.interval*c.ease; }
-  else { c.ease+=0.15; c.interval=c.reps===0?3:Math.max(4,c.interval*c.ease*1.3); }
-  c.reps++; c.due=now+Math.round(c.interval*DAY); return c;
+  const c=Object.assign({e:2.5,i:0,r:0,d:0,l:0},card);
+  if(grade===0){ c.r=0; c.l++; c.i=0; c.e=Math.max(1.3,c.e-0.2); c.d=now+60000; return c; }
+  if(grade===1){ c.e=Math.max(1.3,c.e-0.15); c.i=c.r===0?0.5:Math.max(1,c.i*1.2); }
+  else if(grade===2){ c.i=c.r===0?1:c.r===1?3:c.i*c.e; }
+  else { c.e+=0.15; c.i=c.r===0?3:Math.max(4,c.i*c.e*1.3); }
+  c.r++; c.d=now+Math.round(c.i*DAY); return c;
+}
+// desirable difficulty: recognise first, then listen, then mostly produce
+function cardMode(card,isMsa){
+  if(isMsa) return (card&&card.r>=2&&card.r%2===0)?"listen":"recognize";
+  const r=card?card.r:0;
+  if(r<2) return "recognize"; if(r===2) return "listen";
+  return ["produce","produce","listen","produce","recognize"][r%5];
 }
 function pickOptions(correct,pool,n,rand){
   rand=rand||Math.random;
@@ -352,282 +314,593 @@ function pickOptions(correct,pool,n,rand){
   for(let i=out.length-1;i>0;i--){ const j=Math.floor(rand()*(i+1)); [out[i],out[j]]=[out[j],out[i]]; }
   return out;
 }
-if(typeof module!=="undefined") module.exports={normalizeArabic,levenshtein,similarity,letterForms,schedule,pickOptions};
+// phone voices read fuṣḥā sounds; flag items whose gulf pronunciation differs from the script
+function soundShift(ar,tr){
+  const t=String(tr||"").toLowerCase(), a=String(ar||""); const out=[];
+  if(/ق/.test(a)&&/g/.test(t.replace(/gh/g,""))) out.push("ق is said g");
+  if(/[كچ]/.test(a)&&/ch/.test(t)) out.push("ك is said ch");
+  if(/ج/.test(a)&&!/j/.test(t)&&/y/.test(t)) out.push("ج is said y");
+  return out;
+}
+// shape check for ai-written units before they enter the course
+function validateUnit(u){
+  const errs=[]; const ar=/[ء-ي]/;
+  const str=(s,max)=>typeof s==="string"&&s.trim().length>0&&s.length<=max;
+  if(!u||typeof u!=="object") return ["not an object"];
+  if(!str(u.title,80)) errs.push("title"); if(!str(u.goal,160)) errs.push("goal"); if(!str(u.tip,300)) errs.push("tip");
+  if(!Array.isArray(u.dialogue)||u.dialogue.length<3||u.dialogue.length>10) errs.push("dialogue length");
+  else u.dialogue.forEach((l,i)=>{ if(!l||!["A","B"].includes(l.who)||!str(l.ar,200)||!ar.test(l.ar)||!str(l.tr,200)||!str(l.en,200)) errs.push("dialogue line "+i); });
+  if(!Array.isArray(u.items)||u.items.length<4||u.items.length>9) errs.push("item count");
+  else u.items.forEach((it,i)=>{ if(!it||!str(it.ar,80)||!ar.test(it.ar)||!str(it.tr,80)||!str(it.en,80)||(it.msa!=null&&typeof it.msa!=="string")) errs.push("item "+i); });
+  return errs;
+}
+// mastery gate: a stage is done when its units are done and 80% of its items are remembered for a week+
+function stageStatus(unitIds,itemIds,state){
+  const done=unitIds.filter(id=>state.unitsDone&&state.unitsDone[id]).length;
+  const live=itemIds.filter(id=>!(state.suspended&&state.suspended[id]));
+  const mature=live.filter(id=>state.cards[id]&&state.cards[id].i>=MATURE_DAYS).length;
+  const frac=live.length?mature/live.length:0;
+  return {unitsDone:done,units:unitIds.length,mature,items:live.length,frac,complete:unitIds.length>0&&done===unitIds.length&&frac>=0.8};
+}
+// one day's plan: oldest due cards first (capped), then a new lesson only if the backlog is under control
+function planDay(cards,suspended,now,opts){
+  const o=Object.assign({maxReviews:60,backlogLimit:40},opts||{});
+  const due=Object.keys(cards).filter(id=>!(suspended&&suspended[id])&&cards[id].d<=now).sort((a,b)=>cards[a].d-cards[b].d);
+  return {reviews:due.slice(0,o.maxReviews),backlog:due.length,allowNew:due.length<=o.backlogLimit};
+}
+// interleave: never two cards from the same unit back to back when avoidable
+function interleave(ids,unitOf){
+  const groups={}; ids.forEach(id=>{const u=unitOf(id);(groups[u]=groups[u]||[]).push(id);});
+  const out=[]; let last=null;
+  while(out.length<ids.length){
+    const keys=Object.keys(groups).filter(k=>groups[k].length).sort((a,b)=>groups[b].length-groups[a].length);
+    const k=keys.find(x=>x!==last)||keys[0]; out.push(groups[k].shift()); last=k;
+  }
+  return out;
+}
+const packCard=c=>[Math.round(c.e*100),Math.round(c.i*1000)/1000,c.r,Math.round(c.d/60000),c.l];
+const unpackCard=a=>({e:a[0]/100,i:a[1],r:a[2],d:a[3]*60000,l:a[4]});
+if(typeof module!=="undefined") module.exports={normalizeArabic,levenshtein,similarity,letterForms,schedule,cardMode,pickOptions,soundShift,validateUnit,stageStatus,planDay,interleave,packCard,unpackCard,MATURE_DAYS};
 </script>
 
 <script>
 (function(){
 const $=s=>document.querySelector(s);
-const el=(tag,props,...kids)=>{const e=document.createElement(tag);Object.assign(e,props||{});for(const k of kids)e.append(k);return e};
-// ---- storage (per browser, never required) ----
-const KEY="harf-v1";
-let S={cards:{},streak:0,lastDay:"",reviewsToday:0,quiz:{right:0,total:0},speak:{best:0,tries:0},typed:{right:0,total:0}};
-try{const raw=localStorage.getItem(KEY); if(raw) S=Object.assign(S,JSON.parse(raw));}catch(e){}
-const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}};
-// local calendar day (not utc), so a late-night session in summer time counts for the right day
+const el=(tag,props,...kids)=>{const e=document.createElement(tag);if(props){for(const [k,v] of Object.entries(props)){if(k==="style"||k.includes("-"))e.setAttribute(k,v);else e[k]=v;}}for(const k of kids)if(k!=null&&k!==false)e.append(k);return e};
+const arSpan=(t,cls)=>el("span",{className:"ar"+(cls?" "+cls:""),lang:"ar",textContent:t});
+
+// ===== state =====
+const KEY="harf-gulf-v1";
+const blank=()=>({cards:{},unitsDone:{},suspended:{},custom:[],gen:[],streak:0,lastDay:"",reviewsToday:0,newToday:0,
+  session:{day:"",done:{}},settings:{translit:"auto",newPerDay:1},talks:0,speakBest:0,updatedAt:0});
+let S=blank();
 const dayKey=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
 const today=()=>dayKey(new Date());
 const yesterday=()=>{const d=new Date();d.setDate(d.getDate()-1);return dayKey(d);};
-// called when the learner actually practises, never on page load, so opening the app doesn't keep a streak alive
+function serialize(){ const o=Object.assign({},S,{cards:{}}); delete o.gen; for(const [k,c] of Object.entries(S.cards)) o.cards[k]=packCard(c); return o; }
+function hydrate(o){ const s=Object.assign(blank(),o||{}); s.settings=Object.assign(blank().settings,s.settings||{}); s.session=Object.assign(blank().session,s.session||{});
+  const cards={}; for(const [k,a] of Object.entries(s.cards||{})) if(Array.isArray(a)&&a.length===5) cards[k]=unpackCard(a); s.cards=cards; s.gen=S.gen||[]; return s; }
+try{ const raw=localStorage.getItem(KEY); if(raw) S=hydrate(JSON.parse(raw)); const g=localStorage.getItem(KEY+"-gen"); if(g) S.gen=JSON.parse(g)||[]; }catch(e){}
+
+// ===== sync to the account (claude.ai only) =====
+let DB=null, UID=null, saveTimer=0, writing=Promise.resolve(), syncNote="This browser only";
+function save(){
+  S.updatedAt=Date.now();
+  try{ localStorage.setItem(KEY,JSON.stringify(serialize())); }catch(e){}
+  clearTimeout(saveTimer); saveTimer=setTimeout(pushRemote,1500);
+}
+function pushRemote(){
+  if(!DB||!UID) return;
+  const body=serialize();
+  writing=writing.then(()=>DB.doc(`data/users/${UID}/progress`).set(body)).then(()=>{syncNote="Saved to your account";},e=>{syncNote=e&&e.code==="quota_exceeded"?"Account storage full, saving in this browser only":"Couldn't reach your account, saving in this browser";});
+}
+function saveGenUnit(u){
+  try{ localStorage.setItem(KEY+"-gen",JSON.stringify(S.gen)); }catch(e){}
+  if(DB&&UID) writing=writing.then(()=>DB.doc(`data/users/${UID}/progress`).collection("units").doc(u.id).set(u)).catch(()=>{});
+}
+async function setupSync(){
+  if(!window.claude||!window.claude.use) return;
+  const [db,user]=await Promise.all([window.claude.use("db"),window.claude.use("user")]);
+  if(!db||!user) return;
+  const id=await user.id(); if(!id) return;
+  DB=db; UID=id;
+  try{
+    const snap=await DB.doc(`data/users/${UID}/progress`).get();
+    if(snap.exists){ const remote=snap.data(); if((remote.updatedAt||0)>(S.updatedAt||0)){ const gen=S.gen; S=hydrate(remote); S.gen=gen; try{localStorage.setItem(KEY,JSON.stringify(serialize()));}catch(e){} } else pushRemote(); }
+    else pushRemote();
+    const us=await DB.doc(`data/users/${UID}/progress`).collection("units").limit(1000).get();
+    const known=new Set(S.gen.map(u=>u.id)); let added=false;
+    us.docs.forEach(d=>{ const u=d.data(); if(u&&!known.has(u.id)&&!validateUnit(u).length){ S.gen.push(u); added=true; } });
+    S.gen.sort((a,b)=>(a.createdAt||0)-(b.createdAt||0));
+    if(added) try{ localStorage.setItem(KEY+"-gen",JSON.stringify(S.gen)); }catch(e){}
+    for(const u of S.gen) if(!us.docs.some(d=>d.id===u.id)) saveGenUnit(u);
+    syncNote="Saved to your account";
+  }catch(e){ syncNote="Couldn't reach your account, saving in this browser"; }
+  rebuild(); refresh();
+}
+
+// ===== items index =====
+let ITEMS={}, UNITS=[], ITEM_UNIT={};
+function rebuild(){
+  ITEMS={}; ITEM_UNIT={}; UNITS=[];
+  const addUnit=(u,gen)=>{ UNITS.push(u); u.items.forEach((it,i)=>{ const id=u.id+"."+i; ITEMS[id]=Object.assign({id,unit:u.id,stage:u.stage,gen},it); ITEM_UNIT[id]=u.id; }); };
+  COURSE.forEach(u=>addUnit({id:u.id,stage:u.stage,title:u.title,goal:u.goal,tip:u.tip,
+    dialogue:u.dialogue.map(([who,ar,tr,en])=>({who,ar,tr,en})),items:u.items.map(([ar,tr,en,msa,note])=>({ar,tr,en,msa,note}))},false));
+  S.gen.forEach(u=>addUnit(u,true));
+  MSA.forEach(([ar,tr,en],i)=>{ const id="m."+i; ITEMS[id]={id,unit:"msa",stage:"msa",msaTrack:true,ar,tr,en}; ITEM_UNIT[id]="msa"; });
+  S.custom.forEach(c=>{ ITEMS[c.id]=Object.assign({unit:"custom",stage:"custom"},c); ITEM_UNIT[c.id]="custom"; });
+}
+rebuild();
+const unitById=id=>UNITS.find(u=>u.id===id);
+const unitsOfStage=n=>UNITS.filter(u=>u.stage===n);
+function stageInfo(n){
+  const us=unitsOfStage(n); const ids=Object.values(ITEMS).filter(it=>it.stage===n).map(it=>it.id);
+  return stageStatus(us.map(u=>u.id),ids,S);
+}
+function currentStage(){
+  if(!S.unitsDone.sounds) return 0;
+  for(let n=1;n<=5;n++){ const st=stageInfo(n); const plannedLeft=n>=2?Math.max(0,SYLLABUS[n].topics.length-unitsOfStage(n).length):0;
+    if(!st.complete||plannedLeft>0) return n; }
+  return 6;
+}
+function nextUnit(){
+  const stage=currentStage(); if(stage===0) return {kind:"sounds"};
+  const pending=UNITS.find(u=>u.stage===stage&&!S.unitsDone[u.id]); if(pending) return {kind:"unit",unit:pending};
+  if(stage>=2&&stage<=5){ const made=new Set(unitsOfStage(stage).map(u=>u.topic)); const topic=SYLLABUS[stage].topics.find(t=>!made.has(t)); if(topic) return {kind:"generate",stage,topic}; }
+  if(stage===6) return {kind:"generate",stage:6,topic:null};
+  return {kind:"consolidate",stage};
+}
 function touchDay(){
   const t=today(); if(S.lastDay===t) return;
-  S.streak=S.lastDay===yesterday()?S.streak+1:1; S.lastDay=t; S.reviewsToday=0; save();
+  S.streak=S.lastDay===yesterday()?S.streak+1:1; S.lastDay=t; S.reviewsToday=0; S.newToday=0; save();
 }
 const shownStreak=()=>S.lastDay===today()||S.lastDay===yesterday()?S.streak:0;
-const reviewsToday=()=>S.lastDay===today()?S.reviewsToday:0;
-// ---- all items ----
-const ITEMS=[];
-for(const [deck,rows] of Object.entries(DECKS)) rows.forEach(([ar,tr,en])=>ITEMS.push({id:deck+"|"+ar,deck,ar,tr,en}));
-const plain=s=>normalizeArabic(s);
-// ---- speech out ----
+function showTr(){ const m=S.settings.translit; if(m!=="auto") return m; const st=currentStage(); return st<=1?"always":st===2?"tap":"never"; }
+
+// ===== speech =====
 let arVoice=null;
 function pickVoice(){
   if(!("speechSynthesis" in window)) return;
-  const vs=speechSynthesis.getVoices(); arVoice=vs.find(v=>/^ar/i.test(v.lang))||null;
+  const vs=speechSynthesis.getVoices();
+  arVoice=vs.find(v=>/^ar-(AE|KW|QA|BH|OM)/i.test(v.lang))||vs.find(v=>/^ar-SA/i.test(v.lang))||vs.find(v=>/^ar/i.test(v.lang))||null;
   const note=$("#voice-note");
-  if(!arVoice&&vs.length){ note.hidden=false; note.textContent="No Arabic voice found on this device, so audio may be silent or read in the wrong accent. Windows: Settings, Time & language, Speech, add Arabic. Android: Google Speech Services, install Arabic. iPhone: Settings, Accessibility, Spoken Content, Voices, Arabic."; }
+  if(!arVoice&&vs.length){ note.hidden=false; note.textContent="No Arabic voice on this device, so audio may be silent. Android: Google Speech Services, add Arabic. iPhone: Settings, Accessibility, Spoken Content, Voices, Arabic. Windows: Settings, Time & language, Speech, add Arabic."; }
   else note.hidden=true;
 }
 if("speechSynthesis" in window){ pickVoice(); speechSynthesis.onvoiceschanged=pickVoice; }
 function say(text,rate){
-  if(!("speechSynthesis" in window)) return;
-  speechSynthesis.cancel();
-  const u=new SpeechSynthesisUtterance(text); u.lang=arVoice?arVoice.lang:"ar-SA"; if(arVoice) u.voice=arVoice; u.rate=rate||0.85;
-  speechSynthesis.speak(u);
+  if(!("speechSynthesis" in window)||!text) return;
+  speechSynthesis.cancel(); const u=new SpeechSynthesisUtterance(text);
+  u.lang=arVoice?arVoice.lang:"ar-SA"; if(arVoice) u.voice=arVoice; u.rate=rate||0.85; speechSynthesis.speak(u);
 }
-const playBtn=(text,label)=>el("button",{className:"btn",type:"button",textContent:label||"▶ Play",onclick:()=>say(text)});
-const slowBtn=text=>el("button",{className:"btn",type:"button",textContent:"Slow",onclick:()=>say(text,0.55)});
-// ---- tabs ----
+const playBtn=(text,label,cls)=>el("button",{className:"btn small"+(cls?" "+cls:""),type:"button",textContent:label||"▶ Play","aria-label":"play audio",onclick:()=>say(text)});
+const slowBtn=text=>el("button",{className:"btn small",type:"button",textContent:"Slow",onclick:()=>say(text,0.55)});
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+let micBlocked=false;
+// listen once, score against target; calls back with {pct, heard} or {error}
+function listen(target,cb){
+  if(!SR||micBlocked){ cb({error:"unsupported"}); return; }
+  let rec; try{ rec=new SR(); }catch(e){ micBlocked=true; cb({error:"unsupported"}); return; }
+  rec.lang="ar-AE"; rec.interimResults=false; rec.maxAlternatives=5; let got=false;
+  rec.onresult=e=>{ got=true; const alts=[...e.results[0]].map(a=>a.transcript); let best=0,heard=alts[0]||"";
+    alts.forEach(a=>{const s=similarity(a,target); if(s>best){best=s;heard=a;}}); cb({pct:Math.round(best*100),heard}); };
+  rec.onerror=e=>{ got=true; if(e.error==="not-allowed"||e.error==="service-not-allowed"){ micBlocked=true; cb({error:"blocked"}); } else cb({error:e.error}); };
+  rec.onend=()=>{ if(!got) cb({error:"no-speech"}); };
+  try{ rec.start(); }catch(e){ micBlocked=true; cb({error:"unsupported"}); }
+}
+function speakWidget(target,onScore){
+  const fb=el("p",{className:"feedback"}); const box=el("div",{className:"stack",style:"justify-items:center;width:100%"});
+  if(SR&&!micBlocked){
+    const mic=el("button",{className:"btn primary",type:"button",textContent:"🎤 Say it"});
+    mic.onclick=()=>{ mic.disabled=true; mic.textContent="Listening…"; fb.className="feedback"; fb.textContent="";
+      listen(target,r=>{ mic.disabled=false; mic.textContent="🎤 Say it";
+        if(r.error){ fb.className="feedback no"; fb.textContent=r.error==="blocked"||r.error==="unsupported"?"The microphone isn't available here. Say it aloud and compare with the audio.":"Didn't catch that, try again."; if(micBlocked) mic.remove(); return; }
+        fb.className="feedback "+(r.pct>=75?"ok":"no"); fb.textContent=(r.pct>=75?"Good, ":r.pct>=50?"Close, ":"Try again, ")+r.pct+"% match. Heard: "; fb.append(arSpan(r.heard||"…"));
+        if(onScore) onScore(r.pct); }); };
+    box.append(mic);
+  } else box.append(el("p",{className:"tag",textContent:"Say it out loud, then reveal and compare."}));
+  box.append(fb); return box;
+}
+function trLine(tr){
+  const mode=showTr(); if(mode==="never") return null;
+  if(mode==="tap"){ const b=el("button",{className:"btn ghost small",type:"button",textContent:"Show pronunciation"}); b.onclick=()=>b.replaceWith(el("p",{className:"tr",textContent:tr})); return b; }
+  return el("p",{className:"tr",textContent:tr});
+}
+function shiftChip(it){ const s=soundShift(it.ar,it.tr); return s.length?el("p",{},el("span",{className:"chip",textContent:"Gulf: "+it.tr+" · phone voice reads it the standard way"})):null; }
+
+// ===== tabs =====
 const tabs=[...document.querySelectorAll("#tabs button")];
+let currentTab="today";
 function show(name){
-  tabs.forEach(b=>b.setAttribute("aria-selected",String(b.dataset.tab===name)));
+  currentTab=name; tabs.forEach(b=>b.setAttribute("aria-selected",String(b.dataset.tab===name)));
   document.querySelectorAll("main section").forEach(s=>s.hidden=s.id!==name);
-  ({review:renderReview,quiz:newQuiz,speak:newSpeak,type:newType,progress:renderProgress})[name]?.();
+  ({today:renderToday,course:renderCourse,review:()=>startReview($("#review"),null),sounds:renderSounds,talk:renderTalk,me:renderMe})[name]();
+  window.scrollTo(0,0);
 }
 tabs.forEach(b=>b.onclick=()=>show(b.dataset.tab));
-// ---- stats ----
-function renderStats(){
-  const now=Date.now(); const learned=Object.values(S.cards).filter(c=>c.reps>0).length;
-  const due=Object.values(S.cards).filter(c=>c.due<=now).length;
-  const st=$("#stats"); st.textContent="";
-  st.append("Streak ",el("b",{textContent:shownStreak()+"d"})," · Learned ",el("b",{textContent:learned+"/"+ITEMS.length})," · Due ",el("b",{textContent:String(due)}));
+function refresh(){
+  const st=currentStage(); $("#stage-label").textContent=`Stage ${st} · ${STAGE_NAMES[st]}`;
+  let frac=0; if(st===0) frac=0; else if(st<=5){ const i=stageInfo(st); const planned=st===1?COURSE.length:SYLLABUS[st].topics.length; frac=Math.min(1,(i.unitsDone/planned)*0.5+i.frac*0.5); } else frac=1;
+  $("#stage-fill").style.width=Math.round(frac*100)+"%"; $("#streak-label").textContent=shownStreak()?shownStreak()+"-day streak":"";
 }
-// ---- letters ----
-let curLetter=0;
-function renderLetterGrid(){
-  const g=$("#letter-grid"); g.textContent="";
-  LETTERS.forEach((L,i)=>g.append(el("button",{type:"button",onclick:()=>{curLetter=i;renderLetterGrid();renderLetter();say(L[1]);}},
-    el("span",{className:"g",textContent:L[0],lang:"ar"}),el("span",{className:"n",textContent:L[2]}))));
-  [...g.children].forEach((b,i)=>b.setAttribute("aria-pressed",String(i===curLetter)));
-}
-function renderLetter(){
-  const [g,arName,name,tr,hint,joins,ex,exTr,exEn]=LETTERS[curLetter]; const f=letterForms(g,joins);
-  const c=$("#letter-card"); c.textContent="";
-  const forms=el("div",{className:"forms"});
-  [["isolated","Alone"],["initial","Start"],["medial","Middle"],["final","End"]].forEach(([k,lab])=>
-    forms.append(el("div",{},el("div",{className:"f ar",lang:"ar",textContent:f[k]}),el("div",{className:"l",textContent:lab}))));
-  c.append(
-    el("div",{className:"lc-top"},el("div",{className:"lc-glyph ar",lang:"ar",textContent:g}),
-      el("div",{className:"lc-meta"},el("h3",{textContent:name+"  ·  "+tr}),el("span",{className:"ar",lang:"ar",textContent:arName}),el("p",{className:"tag",textContent:hint+(joins?"":". Never joins to the letter after it.")})),
-      el("div",{className:"row"},playBtn(arName),slowBtn(arName))),
-    forms,
-    el("div",{className:"example"},el("span",{className:"ar",lang:"ar",textContent:ex}),el("span",{},el("span",{className:"translit",textContent:exTr})," = "+exEn),playBtn(ex,"▶ Word")));
-}
-// ---- review (srs) ----
-const deckSel=$("#deck-select"), dirSel=$("#dir-select");
-deckSel.append(el("option",{value:"all",textContent:"All decks"}),...Object.keys(DECKS).map(d=>el("option",{value:d,textContent:d})));
-deckSel.onchange=dirSel.onchange=renderReview;
-const NEW_PER_DAY=10;
-let reviewTimer=0;
-function nextCard(){
-  const now=Date.now(); const pool=ITEMS.filter(it=>deckSel.value==="all"||it.deck===deckSel.value);
-  const due=pool.filter(it=>S.cards[it.id]&&S.cards[it.id].due<=now).sort((a,b)=>S.cards[a.id].due-S.cards[b.id].due);
-  if(due.length) return due[0];
-  const newToday=Object.values(S.cards).filter(c=>c.firstSeen===today()).length;
-  if(newToday>=NEW_PER_DAY) return null;
-  return pool.find(it=>!S.cards[it.id])||null;
-}
-function renderReview(){
-  renderStats(); const st=$("#review-stage"); st.textContent="";
-  const it=nextCard();
-  clearTimeout(reviewTimer);
-  if(!it){
-    const soon=ITEMS.filter(x=>(deckSel.value==="all"||x.deck===deckSel.value)&&S.cards[x.id]).map(x=>S.cards[x.id].due).filter(d=>d-Date.now()<15*60000).sort((a,b)=>a-b)[0];
-    if(soon){ const secs=Math.max(1,Math.ceil((soon-Date.now())/1000));
-      st.append(el("p",{className:"en",textContent:"Next card in "+(secs<60?secs+"s":Math.ceil(secs/60)+" min")}),el("p",{className:"tag",textContent:"Cards you marked Again come back shortly. Keep this tab open, or try the quiz meanwhile."}));
-      reviewTimer=setTimeout(()=>{ if(!$("#review").hidden) renderReview(); },Math.min(secs*1000,30000)); return; }
-    st.append(el("p",{className:"en",textContent:"All caught up"}),el("p",{className:"tag",textContent:"Nothing due in this deck. Come back later, or try the quiz."})); return; }
-  const dir=dirSel.value; const isNew=!S.cards[it.id];
-  if(isNew) st.append(el("p",{className:"tag",textContent:"New card"}));
-  if(dir==="ar-en") st.append(el("div",{className:"big",lang:"ar",textContent:it.ar}));
-  else if(dir==="en-ar") st.append(el("div",{className:"en",textContent:it.en}));
-  else { st.append(el("p",{className:"tag",textContent:"Listen and recall the meaning"})); setTimeout(()=>say(it.ar),150); }
-  if(dir!=="en-ar") st.append(el("div",{className:"row"},playBtn(it.ar),slowBtn(it.ar)));
-  const reveal=el("button",{className:"btn primary",type:"button",textContent:"Show answer"});
-  reveal.onclick=()=>{
-    reveal.remove();
-    if(dir!=="ar-en") st.append(el("div",{className:"big",lang:"ar",textContent:it.ar}));
-    st.append(el("p",{className:"translit",textContent:it.tr}));
-    st.append(el("p",{className:"en",textContent:it.en}));
-    if(dir==="en-ar") { say(it.ar); st.append(el("div",{className:"row"},playBtn(it.ar),slowBtn(it.ar))); }
-    const gr=el("div",{className:"grades"});
-    const cur=S.cards[it.id]||{};
-    [["Again",0],["Hard",1],["Good",2],["Easy",3]].forEach(([lab,g])=>{
-      const nx=schedule(cur,g,Date.now()); const mins=(nx.due-Date.now())/60000;
-      const when=mins<60?"1m":mins<1440?Math.round(mins/60)+"h":Math.round(mins/1440)+"d";
-      gr.append(el("button",{className:"btn"+(g===2?" primary":""),type:"button",onclick:()=>grade(it,g)},lab,el("small",{textContent:when})));
-    });
-    st.append(gr);
+
+// ===== today =====
+function renderToday(){
+  refresh(); const sec=$("#today"); sec.textContent="";
+  if(S.session.day!==today()) S.session={day:today(),done:{}};
+  const plan=planDay(S.cards,S.suspended,Date.now()); const nu=nextUnit();
+  const done=S.session.done;
+  sec.append(el("h2",{textContent:"Today's session · about 30 minutes"}));
+  if(!Object.keys(S.cards).length&&!S.unitsDone.sounds) sec.append(el("p",{className:"lede",textContent:"You're starting from zero. Each day: review what's due, learn one new lesson, then speak. Everything you learn keeps coming back until you know it for good."}));
+  const steps=el("div",{className:"steps"});
+  const mk=(key,title,desc,action,label,enabled=true)=>{
+    const isDone=!!done[key]; const s=el("div",{className:"step"+(isDone?" done":"")},el("span",{className:"n",textContent:isDone?"✓":String(steps.children.length+1)}),el("div",{className:"body"},el("b",{textContent:title}),el("p",{className:"tag",textContent:desc})));
+    if(!isDone&&enabled) s.append(el("button",{className:"btn small primary",type:"button",textContent:label,onclick:action}));
+    steps.append(s);
   };
-  st.append(reveal);
+  const dueN=plan.reviews.length;
+  if(!dueN) done.review=1;
+  mk("review","Review",dueN?`${dueN} card${dueN>1?"s":""} due, mixed together`:"Nothing due yet",()=>startReview(sec,()=>{done.review=1;save();renderToday();}),"Start",dueN>0);
+  let newDesc,newAct,newEnabled=true;
+  const capReached=S.newToday>=S.settings.newPerDay&&S.lastDay===today();
+  if(capReached){ newDesc="Today's new lesson is done. More tomorrow (spacing beats cramming)."; newEnabled=false; done.learn=1; }
+  else if(!plan.allowNew){ newDesc=`Paused: ${plan.backlog} reviews are waiting. Clear them first so nothing slips.`; newEnabled=false; }
+  else if(nu.kind==="sounds"){ newDesc="Stage 0: short vowels, Gulf sounds and ear training"; newAct=()=>{show("sounds");}; }
+  else if(nu.kind==="unit"){ newDesc=`${nu.unit.title}: ${nu.unit.goal}`; newAct=()=>openLesson(sec,nu.unit,()=>{done.learn=1;save();renderToday();}); }
+  else if(nu.kind==="generate"){ newDesc=SAMPLE?`New lesson: ${nu.topic||"a topic you choose"}`:"Next lessons are written for you in the claude.ai version"; newEnabled=!!SAMPLE; newAct=()=>generateUnit(sec,nu.stage,nu.topic,u=>openLesson(sec,u,()=>{done.learn=1;save();renderToday();})); }
+  else { newDesc="Keep reviewing: the stage completes once 80% of its phrases stick for a week."; newEnabled=false; }
+  mk("learn","New lesson",newDesc,newAct,"Learn",newEnabled);
+  const lastUnit=[...UNITS].reverse().find(u=>S.unitsDone[u.id]);
+  mk("speak","Speak",lastUnit?`Role-play “${lastUnit.title}”: you take part B`:"Unlocks after your first lesson",()=>roleplay(sec,lastUnit,()=>{done.speak=1;save();renderToday();}),"Start",!!lastUnit);
+  if(SAMPLE) mk("talk","Story or chat","A short story at your level, or a conversation",()=>{done.talk=1;save();show("talk");},"Open",!!lastUnit);
+  sec.append(steps);
+  const all=["review","learn","speak"].concat(SAMPLE?["talk"]:[]).every(k=>done[k]);
+  if(all) sec.append(el("p",{className:"notice",style:"margin-top:14px",textContent:"Session complete. Extra reviews are fine, but tomorrow's session does more for you than another hour today."}));
+  const nm=Object.keys(S.cards).length;
+  if(nm) sec.append(el("p",{className:"tag",style:"margin-top:14px",textContent:`${nm} phrases in rotation · ${Object.values(S.cards).filter(c=>c.i>=MATURE_DAYS).length} remembered for a week or more · ${syncNote}`}));
 }
-function grade(it,g){
-  touchDay(); const prev=S.cards[it.id]; const nx=schedule(prev||{},g,Date.now());
-  nx.firstSeen=prev?.firstSeen||today(); S.cards[it.id]=nx; S.reviewsToday++; save(); renderReview();
-}
-// ---- quiz ----
-const quizMode=$("#quiz-mode"); quizMode.onchange=()=>newQuiz();
-function newQuiz(){
-  const st=$("#quiz-stage"); st.textContent=""; const mode=quizMode.value;
-  let prompt,correct,opts,spoken;
-  if(mode==="letter"){
-    const i=Math.floor(Math.random()*LETTERS.length); const L=LETTERS[i]; const f=letterForms(L[0],L[5]);
-    const pos=["isolated","initial","medial","final"][Math.floor(Math.random()*4)];
-    prompt=el("div",{className:"big",lang:"ar",textContent:f[pos]}); st.append(el("p",{className:"tag",textContent:"Which letter is this? ("+pos+" form)"}));
-    correct=L[2]+" ("+L[3]+")"; opts=pickOptions(correct,LETTERS.map(x=>x[2]+" ("+x[3]+")"),4); spoken=L[1];
-  } else {
-    const it=ITEMS[Math.floor(Math.random()*ITEMS.length)]; correct=it.en;
-    const same=plain(it.ar);
-    opts=pickOptions(correct,[...new Set(ITEMS.filter(x=>x===it||plain(x.ar)!==same).map(x=>x.en))],4); spoken=it.ar;
-    if(mode==="read"){ prompt=el("div",{className:"big",lang:"ar",textContent:plain(it.ar)}); st.append(el("p",{className:"tag",textContent:"Read it (no vowel marks). What does it mean?"})); }
-    else { prompt=el("div",{className:"row"},playBtn(it.ar),slowBtn(it.ar)); st.append(el("p",{className:"tag",textContent:"What did you hear?"})); setTimeout(()=>say(it.ar),150); }
-  }
-  st.append(prompt);
-  const box=el("div",{className:"options"}); const fb=el("p",{className:"feedback"});
-  opts.forEach(o=>box.append(el("button",{className:"btn",type:"button",textContent:o,onclick:e=>{
-    if(box.dataset.done) return; box.dataset.done="1"; touchDay(); S.quiz.total++;
-    const ok=o===correct; if(ok) S.quiz.right++; save();
-    [...box.children].forEach(b=>{ if(b.textContent===correct) b.classList.add("right"); else if(b===e.currentTarget) b.classList.add("wrong"); });
-    fb.className="feedback "+(ok?"ok":"no"); fb.textContent=ok?"Correct":"Not quite: "+correct; say(spoken);
-    st.append(el("button",{className:"btn primary",type:"button",textContent:"Next",onclick:newQuiz}));
-  }})));
-  st.append(box,fb,el("p",{className:"tag",textContent:`Score ${S.quiz.right}/${S.quiz.total}`}));
-}
-// ---- speak ----
-const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
-function newSpeak(){
-  const st=$("#speak-stage"); st.textContent="";
-  const pool=ITEMS.filter(it=>it.deck!=="Numbers"||Math.random()<0.5); const it=pool[Math.floor(Math.random()*pool.length)];
-  st.append(el("div",{className:"big",lang:"ar",textContent:it.ar}),el("p",{className:"translit",textContent:it.tr}),el("p",{className:"en",textContent:it.en}),
-    el("div",{className:"row"},playBtn(it.ar,"▶ Hear it"),slowBtn(it.ar)));
-  const fb=el("p",{className:"feedback"}); const meter=el("div",{className:"meter"},el("i"));
-  const note=$("#mic-note");
-  if(SR){
-    const mic=el("button",{className:"btn primary",type:"button",textContent:"🎤 Say it"});
-    mic.onclick=()=>{
-      let rec; try{ rec=new SR(); }catch(e){ fallback("Speech recognition could not start here."); return; }
-      rec.lang="ar-SA"; rec.interimResults=false; rec.maxAlternatives=5;
-      mic.disabled=true; mic.textContent="Listening…"; fb.className="feedback"; fb.textContent="";
-      rec.onresult=e=>{
-        const alts=[...e.results[0]].map(a=>a.transcript); let best=0,heard=alts[0]||"";
-        alts.forEach(a=>{const s=similarity(a,it.ar); if(s>best){best=s;heard=a;}});
-        const pct=Math.round(best*100); meter.firstChild.style.width=pct+"%";
-        touchDay(); S.speak.tries++; S.speak.best=Math.max(S.speak.best,pct); save();
-        fb.className="feedback "+(pct>=80?"ok":"no");
-        fb.textContent=(pct>=80?"Great, ":pct>=50?"Close, ":"Try again, ")+pct+"% match. Heard: ";
-        fb.append(el("span",{className:"ar",lang:"ar",textContent:heard||"(nothing)"}));
-      };
-      rec.onerror=e=>{ if(e.error==="not-allowed"||e.error==="service-not-allowed") fallback("Microphone access is blocked here. Use the self-check below, or run the local version (see the README)."); else { fb.className="feedback no"; fb.textContent="Didn't catch that ("+e.error+"). Try again."; } };
-      rec.onend=()=>{ mic.disabled=false; mic.textContent="🎤 Say it"; };
-      try{ rec.start(); }catch(e){ fallback("Speech recognition could not start here."); }
+
+// ===== lesson: input → phrases → quick check =====
+function openLesson(host,u,onDone){
+  host.textContent="";
+  const back=el("button",{className:"btn ghost small",type:"button",textContent:"← Back",onclick:()=>show(currentTab)});
+  host.append(back,el("h2",{textContent:`Stage ${u.stage} · ${u.title}`}));
+  const body=el("div",{className:"stack"}); host.append(body);
+  // 1. comprehensible input: listen and try to understand before reading the translation
+  const step1=()=>{
+    body.textContent="";
+    body.append(el("p",{className:"lede",textContent:"Listen first and try to work out what's happening. Then reveal the English and check."}));
+    const dl=el("div",{className:"dialogue panel"}); const ens=[];
+    u.dialogue.forEach(l=>{ const en=el("p",{className:"en",textContent:l.en,hidden:true}); ens.push(en);
+      const tr=trLine(l.tr);
+      dl.append(el("div",{className:"line"},el("span",{className:"who"+(l.who==="B"?" b":""),textContent:l.who}),el("div",{className:"txt"},arSpan(l.ar),tr,en,el("div",{className:"row"},playBtn(l.ar),slowBtn(l.ar))))); });
+    let i=0; const playAll=el("button",{className:"btn",type:"button",textContent:"▶ Play the conversation"});
+    playAll.onclick=()=>{ i=0; const next=()=>{ if(i>=u.dialogue.length||!("speechSynthesis" in window)) return; const ut=new SpeechSynthesisUtterance(u.dialogue[i].ar); ut.lang=arVoice?arVoice.lang:"ar-SA"; if(arVoice) ut.voice=arVoice; ut.rate=0.85; ut.onend=()=>{i++;setTimeout(next,450);}; speechSynthesis.speak(ut); }; speechSynthesis.cancel(); next(); };
+    const reveal=el("button",{className:"btn",type:"button",textContent:"Reveal English"}); reveal.onclick=()=>{ens.forEach(e=>e.hidden=false);reveal.remove();};
+    body.append(el("div",{className:"row"},playAll,reveal),dl,el("p",{className:"notice",textContent:"Tip: "+u.tip}),
+      el("div",{className:"row"},el("button",{className:"btn primary",type:"button",textContent:"Learn the phrases →",onclick:step2})));
+  };
+  // 2. the new phrases, one at a time
+  const step2=()=>{
+    let k=0;
+    const showItem=()=>{
+      body.textContent=""; const it=u.items[k];
+      const card=el("div",{className:"stage"},el("p",{className:"mode",textContent:`New phrase ${k+1} of ${u.items.length}`}),el("div",{className:"big",lang:"ar",textContent:it.ar}),
+        el("p",{className:"tr",textContent:it.tr}),el("p",{className:"en",textContent:it.en}),
+        it.msa&&normalizeArabic(it.msa)!==normalizeArabic(it.ar)?el("p",{className:"msa"},"In fuṣḥā: ",arSpan(it.msa)):null,
+        it.note?el("p",{className:"tag",textContent:it.note}):null, shiftChip(it),
+        el("div",{className:"row"},playBtn(it.ar),slowBtn(it.ar)), speakWidget(it.ar),
+        el("button",{className:"btn primary",type:"button",textContent:k<u.items.length-1?"Next →":"Quick check →",onclick:()=>{k++;k<u.items.length?showItem():step3();}}));
+      body.append(card); say(it.ar);
     };
-    st.append(mic,meter,fb);
-  } else fallback("This browser can't score your speech (Chrome, Edge and Safari can, when running the local version). Say it aloud, replay the recording, and mark yourself honestly.");
-  function fallback(msg){
-    note.hidden=false; note.textContent=msg;
-    if(st.querySelector(".self")) return;
-    st.append(el("div",{className:"row self"},
-      el("button",{className:"btn",type:"button",textContent:"I said it well",onclick:()=>{touchDay();S.speak.tries++;save();newSpeak();}}),
-      el("button",{className:"btn",type:"button",textContent:"Needs work",onclick:()=>{say(it.ar,0.55);}})));
+    showItem();
+  };
+  // 3. immediate retrieval: english → which arabic? then the phrases join the review rotation
+  const step3=()=>{
+    const order=[...u.items.keys()].sort(()=>Math.random()-0.5); let q=0, right=0; const missed=new Set();
+    const ask=()=>{
+      body.textContent=""; if(q>=order.length) return finish();
+      const it=u.items[order[q]]; const opts=pickOptions(it.ar,u.items.map(x=>x.ar),4);
+      const box=el("div",{className:"options"}); const fb=el("p",{className:"feedback"});
+      opts.forEach(o=>box.append(el("button",{className:"btn",type:"button",lang:"ar",style:"font-family:var(--ar);font-size:22px",textContent:o,onclick:e=>{
+        if(box.dataset.done) return; box.dataset.done="1"; const ok=o===it.ar; if(ok) right++; else missed.add(order[q]);
+        [...box.children].forEach(b=>{ if(b.textContent===it.ar) b.classList.add("right"); else if(b===e.currentTarget) b.classList.add("wrong"); });
+        fb.className="feedback "+(ok?"ok":"no"); fb.textContent=ok?"Yes":"It's "+it.tr; say(it.ar);
+        box.after(el("button",{className:"btn primary",type:"button",textContent:"Next",onclick:()=>{q++;ask();}}));
+      }})));
+      body.append(el("div",{className:"stage"},el("p",{className:"mode",textContent:`Check ${q+1} of ${order.length}`}),el("p",{className:"en",textContent:it.en}),box,fb));
+    };
+    const finish=()=>{
+      touchDay(); const now=Date.now();
+      u.items.forEach((it,i)=>{ const id=u.id+"."+i; if(!S.cards[id]) S.cards[id]=schedule({},missed.has(i)?0:2,now); });
+      S.unitsDone[u.id]=today(); S.newToday++; save(); refresh();
+      body.append(el("div",{className:"stage"},el("p",{className:"en",textContent:`${right} of ${u.items.length} right`}),
+        el("p",{className:"tag",textContent:"All of these are now in your review rotation. The ones you missed come back in a minute, the rest tomorrow."}),
+        el("button",{className:"btn primary",type:"button",textContent:"Done",onclick:onDone||(()=>show(currentTab))})));
+    };
+    ask();
+  };
+  step1();
+}
+
+// ===== role-play: you are B =====
+function roleplay(host,u,onDone){
+  host.textContent=""; let k=0;
+  host.append(el("button",{className:"btn ghost small",type:"button",textContent:"← Back",onclick:()=>show(currentTab)}),el("h2",{textContent:"Role-play · "+u.title}));
+  const body=el("div",{className:"stack"}); host.append(body);
+  const step=()=>{
+    body.textContent=""; if(k>=u.dialogue.length){ touchDay(); save(); body.append(el("div",{className:"stage"},el("p",{className:"en",textContent:"Conversation done"}),el("p",{className:"tag",textContent:"Do it again tomorrow without looking. Speed comes from repetition."}),el("button",{className:"btn primary",type:"button",textContent:"Done",onclick:onDone||(()=>show(currentTab))}))); return; }
+    const l=u.dialogue[k];
+    if(l.who==="A"){ body.append(el("div",{className:"stage"},el("p",{className:"mode",textContent:"They say"}),el("div",{className:"mid",lang:"ar",textContent:l.ar}),trLine(l.tr),el("div",{className:"row"},playBtn(l.ar,"▶ Again")),el("button",{className:"btn primary",type:"button",textContent:"Your turn →",onclick:()=>{k++;step();}}))); say(l.ar); return; }
+    const ans=el("div",{className:"stack",hidden:true,style:"justify-items:center"},el("div",{className:"mid",lang:"ar",textContent:l.ar}),el("p",{className:"tr",textContent:l.tr}),el("div",{className:"row"},playBtn(l.ar)));
+    body.append(el("div",{className:"stage"},el("p",{className:"mode",textContent:"You say (in Gulf Arabic)"}),el("p",{className:"en",textContent:l.en}),speakWidget(l.ar),
+      el("button",{className:"btn",type:"button",textContent:"Show the answer",onclick:e=>{ans.hidden=false;e.currentTarget.remove();}}),ans,
+      el("button",{className:"btn primary",type:"button",textContent:"Next →",onclick:()=>{k++;step();}})));
+  };
+  step();
+}
+
+// ===== review: interleaved, mode by maturity =====
+function startReview(host,onDone){
+  host.textContent="";
+  const plan=planDay(S.cards,S.suspended,Date.now());
+  let queue=interleave(plan.reviews,id=>ITEM_UNIT[id]||"x");
+  if(onDone) host.append(el("button",{className:"btn ghost small",type:"button",textContent:"← Back",onclick:()=>show(currentTab)}));
+  host.append(el("h2",{textContent:"Review"}));
+  const body=el("div",{className:"stack"}); host.append(body);
+  const total=queue.length; let n=0;
+  const next=()=>{
+    body.textContent="";
+    const now=Date.now();
+    if(!queue.length){
+      const soon=Object.keys(S.cards).filter(id=>!S.suspended[id]&&S.cards[id].d>now&&S.cards[id].d-now<10*60000).sort((a,b)=>S.cards[a].d-S.cards[b].d)[0];
+      if(soon){ const secs=Math.ceil((S.cards[soon].d-now)/1000); body.append(el("div",{className:"stage"},el("p",{className:"en",textContent:`One more in ${secs<60?secs+"s":Math.ceil(secs/60)+" min"}`}),el("p",{className:"tag",textContent:"Cards you marked Again come back shortly."})));
+        setTimeout(()=>{ if(!body.isConnected) return; queue=interleave(planDay(S.cards,S.suspended,Date.now()).reviews,id=>ITEM_UNIT[id]||"x"); next(); },Math.min(secs*1000,30000)); return; }
+      body.append(el("div",{className:"stage"},el("p",{className:"en",textContent:total?"Review done":"Nothing due"}),el("p",{className:"tag",textContent:total?`${total} cards reviewed. They'll come back as you start to forget them.`:"Learn a lesson from Today and its phrases will start showing up here."}),onDone?el("button",{className:"btn primary",type:"button",textContent:"Continue",onclick:onDone}):null));
+      return;
+    }
+    const id=queue.shift(); const it=ITEMS[id]; n++;
+    if(!it){ next(); return; }
+    const card=S.cards[id]; const mode=cardMode(card,it.msaTrack);
+    const stage=el("div",{className:"stage"}); body.append(el("div",{className:"meter"},el("i",{style:`width:${Math.round(100*(n-1)/Math.max(1,total))}%`})),stage);
+    const ans=el("div",{className:"stack",hidden:true,style:"justify-items:center;width:100%"});
+    const labels={recognize:"What does it mean?",listen:"Listen: what does it mean?",produce:"Say it in Gulf Arabic"};
+    stage.append(el("p",{className:"mode",textContent:(it.msaTrack?"Fuṣḥā · ":"")+labels[mode]}));
+    if(mode==="recognize"){ stage.append(el("div",{className:"big",lang:"ar",textContent:it.ar}),trLine(it.tr),el("div",{className:"row"},playBtn(it.ar))); }
+    else if(mode==="listen"){ stage.append(el("div",{className:"row"},playBtn(it.ar,"▶ Play"),slowBtn(it.ar))); setTimeout(()=>say(it.ar),120); }
+    else { stage.append(el("p",{className:"en",textContent:it.en}),it.note?el("p",{className:"tag",textContent:it.note}):null,speakWidget(it.ar)); }
+    if(mode!=="recognize") ans.append(el("div",{className:"big",lang:"ar",textContent:it.ar}),el("p",{className:"tr",textContent:it.tr}));
+    else ans.append(el("p",{className:"tr",textContent:it.tr}));
+    if(mode!=="produce") ans.append(el("p",{className:"en",textContent:it.en}));
+    if(it.msa&&normalizeArabic(it.msa)!==normalizeArabic(it.ar)) ans.append(el("p",{className:"msa"},"In fuṣḥā: ",arSpan(it.msa)));
+    if(it.note&&mode!=="produce") ans.append(el("p",{className:"tag",textContent:it.note}));
+    const sc=shiftChip(it); if(sc) ans.append(sc);
+    if(mode==="produce") ans.append(el("div",{className:"row"},playBtn(it.ar),slowBtn(it.ar)));
+    const gr=el("div",{className:"grades"});
+    [["Again",0],["Hard",1],["Good",2],["Easy",3]].forEach(([lab,g])=>{
+      const nx=schedule(card,g,Date.now()); const mins=(nx.d-Date.now())/60000;
+      const when=mins<60?"1m":mins<1440?Math.round(mins/60)+"h":Math.round(mins/1440)+"d";
+      gr.append(el("button",{className:"btn"+(g===2?" primary":""),type:"button",onclick:()=>{ touchDay(); S.cards[id]=schedule(S.cards[id],g,Date.now()); S.reviewsToday++; save(); if(g===0) queue.push(id); next(); }},lab,el("small",{textContent:when})));
+    });
+    ans.append(gr,el("button",{className:"btn ghost small",type:"button",textContent:"Something wrong with this card? Hide it",onclick:()=>{ S.suspended[id]=1; save(); next(); }}));
+    const reveal=el("button",{className:"btn primary",type:"button",textContent:"Show answer"});
+    reveal.onclick=()=>{ reveal.remove(); ans.hidden=false; if(mode!=="listen") say(it.ar); };
+    stage.append(reveal,ans);
+  };
+  next();
+}
+
+// ===== course map =====
+function renderCourse(){
+  refresh(); const sec=$("#course"); sec.textContent="";
+  sec.append(el("p",{className:"lede",textContent:"Stages go from zero to native-like. You move up when you've finished a stage's lessons and 80% of its phrases have stuck for at least a week. After stage 5 the course keeps going with topics you choose."}));
+  const cur=currentStage();
+  const head=(n,extra)=>el("div",{className:"stagehead"},el("h3",{textContent:`Stage ${n} · ${STAGE_NAMES[n]}`}),el("span",{className:"tag",textContent:extra||""}));
+  sec.append(head(0,S.unitsDone.sounds?"Done":"Start here"));
+  sec.append(el("div",{className:"units"},el("button",{className:"unit"+(S.unitsDone.sounds?" done":""),type:"button",onclick:()=>show("sounds")},el("span",{className:"t"},el("b",{textContent:"Script, vowels and Gulf sounds"}),el("p",{className:"tag",textContent:"28 letters, short vowels, how Gulf pronunciation differs, ear training"})),el("span",{className:"st",textContent:S.unitsDone.sounds?"Done":"Open"}))));
+  for(let n=1;n<=5;n++){
+    const info=stageInfo(n); const planned=n===1?COURSE.length:SYLLABUS[n].topics.length;
+    sec.append(head(n,`${n>=2?SYLLABUS[n].level+" · ":""}${info.unitsDone}/${planned} lessons · ${Math.round(info.frac*100)}% stuck`));
+    const list=el("div",{className:"units"});
+    const us=unitsOfStage(n);
+    us.forEach(u=>{ const d=!!S.unitsDone[u.id]; const locked=n>cur&&!d;
+      list.append(el("button",{className:"unit"+(d?" done":""),type:"button",disabled:locked,onclick:()=>openLesson(sec,u,()=>show("course"))},el("span",{className:"t"},el("b",{textContent:u.title}),el("p",{className:"tag",textContent:u.goal})),el("span",{className:"st",textContent:d?"Done":locked?"Locked":"Open"}))); });
+    if(n>=2){ const made=new Set(us.map(u=>u.topic)); SYLLABUS[n].topics.filter(t=>!made.has(t)).forEach(t=>list.append(el("div",{className:"unit",style:"cursor:default;opacity:.6"},el("span",{className:"t"},el("b",{textContent:t[0].toUpperCase()+t.slice(1)}),el("p",{className:"tag",textContent:SAMPLE?"Written for you when you reach it":"Needs the claude.ai version"})),el("span",{className:"st",textContent:"Planned"})))); }
+    sec.append(list);
   }
-  st.append(el("button",{className:"btn",type:"button",textContent:"Next phrase",onclick:newSpeak}));
+  const open=UNITS.filter(u=>u.stage===6);
+  sec.append(head(6,"No end"),el("p",{className:"tag",textContent:"New topics for as long as you keep going, mixed with everything you already know."}));
+  if(open.length){ const list=el("div",{className:"units"}); open.forEach(u=>list.append(el("button",{className:"unit"+(S.unitsDone[u.id]?" done":""),type:"button",onclick:()=>openLesson(sec,u,()=>show("course"))},el("span",{className:"t"},el("b",{textContent:u.title}),el("p",{className:"tag",textContent:u.goal})),el("span",{className:"st",textContent:S.unitsDone[u.id]?"Done":"Open"})))); sec.append(list); }
+  const msaLearned=Object.keys(S.cards).filter(k=>k.startsWith("m.")).length;
+  sec.append(el("div",{className:"stagehead"},el("h3",{textContent:"Understanding fuṣḥā"}),el("span",{className:"tag",textContent:`${msaLearned}/${MSA.length} words`})),
+    el("p",{className:"tag",textContent:"Standard Arabic for reading and understanding: news, signs, formal speech. Recognition only, three new words a day once you've done stage 1 lesson 5."}));
 }
-// ---- type ----
-const KEYS="ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي ة ى ء أ إ آ ؤ ئ".split(" ");
-function newType(){
-  const st=$("#type-stage"); st.textContent="";
-  const pool=ITEMS.filter(it=>plain(it.ar).length<=12); const it=pool[Math.floor(Math.random()*pool.length)];
-  st.append(el("p",{className:"tag",textContent:"Listen, then write it"}),el("div",{className:"row"},playBtn(it.ar),slowBtn(it.ar)),el("p",{className:"en",textContent:it.en}));
-  setTimeout(()=>say(it.ar),150);
-  const inp=el("input",{type:"text",id:"type-answer",className:"answer",lang:"ar",dir:"rtl",autocomplete:"off",autocapitalize:"off",spellcheck:false,placeholder:"اكتب هنا"});
-  inp.setAttribute("aria-label","your answer in arabic");
-  const kbd=el("div",{className:"kbd"});
-  KEYS.forEach(k=>kbd.append(el("button",{type:"button",textContent:k,lang:"ar",onclick:()=>{inp.value+=k;}})));
-  kbd.append(el("button",{type:"button",className:"wide",textContent:"space",onclick:()=>{inp.value+=" ";}}),
-    el("button",{type:"button",className:"wide",textContent:"⌫ delete",onclick:()=>{inp.value=[...inp.value].slice(0,-1).join("");}}));
-  const fb=el("div",{className:"feedback"});
-  const check=el("button",{className:"btn primary",type:"button",textContent:"Check"});
-  check.onclick=()=>{
-    const a=plain(inp.value), t=plain(it.ar); touchDay(); S.typed.total++;
-    fb.textContent="";
-    if(a===t){ S.typed.right++; fb.className="feedback ok"; fb.append("Correct  ",el("span",{className:"ar",lang:"ar",textContent:it.ar})); }
-    else{
-      fb.className="feedback no"; fb.append("Answer: ",el("span",{className:"diff",lang:"ar",textContent:it.ar})," ",el("span",{className:"translit",textContent:it.tr}));
-      if(a) { const yours=el("div",{className:"diff",lang:"ar"}); [...a].forEach((ch,i)=>yours.append(el("span",{className:ch===t[i]?"":"x",textContent:ch}))); fb.append(el("div",{className:"tag",textContent:"Yours (differences underlined):"}),yours); }
-    }
-    save(); check.disabled=true;
-    st.append(el("button",{className:"btn",type:"button",textContent:"Next word",onclick:newType}));
-  };
-  inp.addEventListener("keydown",e=>{ if(e.key==="Enter"&&!check.disabled) check.click(); });
-  st.append(inp,kbd,check,fb,el("p",{className:"tag",textContent:`Correct ${S.typed.right}/${S.typed.total}`}));
+function feedMsa(){
+  if(!S.unitsDone.u5) return; const t=today(); if(S.msaDay===t) return;
+  let added=0; const now=Date.now();
+  for(let i=0;i<MSA.length&&added<3;i++){ const id="m."+i; if(!S.cards[id]){ S.cards[id]=Object.assign(schedule({},2,now),{d:now}); added++; } }
+  S.msaDay=t; if(added) save();
 }
-// ---- progress ----
-function renderProgress(){
-  renderStats(); const l=$("#progress-list"); l.textContent="";
-  const learned=Object.values(S.cards).filter(c=>c.reps>0).length;
-  const mature=Object.values(S.cards).filter(c=>c.interval>=21).length;
-  const rows=[["Day streak",shownStreak()],["Cards learned",learned+" of "+ITEMS.length],["Cards remembered 3+ weeks",mature],["Reviews today",reviewsToday()],
-    ["Quiz",S.quiz.total?`${S.quiz.right}/${S.quiz.total} (${Math.round(100*S.quiz.right/S.quiz.total)}%)`:"not started"],
-    ["Typing",S.typed.total?`${S.typed.right}/${S.typed.total}`:"not started"],["Best speaking match",S.speak.tries?S.speak.best+"%":"not started"]];
-  Object.keys(DECKS).forEach(d=>{const n=DECKS[d].length;const k=ITEMS.filter(it=>it.deck===d&&S.cards[it.id]?.reps>0).length;rows.push([d+" deck",`${k}/${n}`]);});
-  rows.forEach(([a,b])=>l.append(el("div",{},el("span",{textContent:a}),el("b",{textContent:String(b)}))));
+
+// ===== sounds =====
+let soundTab="letters", curLetter=0;
+function renderSounds(){
+  const sec=$("#sounds"); sec.textContent="";
+  sec.append(el("h2",{textContent:"Stage 0 · Foundations"}));
+  const st=el("div",{className:"subtabs"});
+  [["letters","Letters"],["vowels","Vowel marks"],["gulf","Gulf sounds"],["ear","Ear training"]].forEach(([k,lab])=>st.append(el("button",{className:"btn small",type:"button","aria-pressed":String(soundTab===k),textContent:lab,onclick:()=>{soundTab=k;renderSounds();}})));
+  sec.append(st); const body=el("div",{className:"stack"}); sec.append(body);
+  if(soundTab==="letters"){
+    body.append(el("p",{className:"lede",textContent:"Tap a letter to hear it and see its four shapes. Arabic reads right to left and most letters join the next one, so a letter changes shape with its position."}));
+    const g=el("div",{className:"grid"}); LETTERS.forEach((L,i)=>g.append(el("button",{type:"button","aria-pressed":String(i===curLetter),onclick:()=>{curLetter=i;say(L[1]);renderSounds();}},el("span",{className:"g",lang:"ar",textContent:L[0]}),el("span",{className:"n",textContent:L[2]}))));
+    const L=LETTERS[curLetter]; const f=letterForms(L[0],L[5]); const forms=el("div",{className:"forms"});
+    [["isolated","Alone"],["initial","Start"],["medial","Middle"],["final","End"]].forEach(([k,lab])=>forms.append(el("div",{},el("div",{className:"f ar",lang:"ar",textContent:f[k]}),el("div",{className:"l",textContent:lab}))));
+    body.append(g,el("div",{className:"panel stack"},el("div",{className:"row",style:"justify-content:space-between"},el("div",{},el("h3",{textContent:`${L[2]} · ${L[3]}`}),arSpan(L[1]),el("p",{className:"tag",textContent:L[4]+(L[5]?"":". Never joins the letter after it.")})),el("div",{className:"row"},playBtn(L[1]),slowBtn(L[1]))),forms));
+  }
+  if(soundTab==="vowels"){
+    body.append(el("p",{className:"lede",textContent:"Short vowels are small marks above or below letters. Everyday writing usually leaves them out, but learner texts and the Qur'an include them. Gulf speech drops most word endings."}));
+    const p=el("div",{className:"panel"}); VOWELS.forEach(([m,name,sound,ex,tr,en])=>p.append(el("div",{className:"vowel"},el("span",{className:"ar",lang:"ar",textContent:m}),el("div",{className:"min"},el("b",{textContent:name}),el("p",{className:"tag",textContent:sound}),el("p",{},arSpan(ex)," ",el("span",{className:"tr",textContent:tr})," = "+en)),playBtn(ex)))); body.append(p);
+  }
+  if(soundTab==="gulf"){
+    body.append(el("p",{className:"lede",textContent:"Gulf Arabic is written with the same letters but a few are said differently. Phone voices read the standard way, so trust the pronunciation line over the audio for these."}));
+    const t=el("table",{className:"shift"}); t.append(el("tr",{},...["Letter","Fuṣḥā","Gulf","Example"].map(h=>el("th",{textContent:h}))));
+    SHIFTS.forEach(([l,f,g,ex,fr,gr,en])=>t.append(el("tr",{},el("td",{},arSpan(l)),el("td",{textContent:f}),el("td",{textContent:g}),el("td",{},arSpan(ex)," ",el("span",{className:"tr",textContent:fr+" → "+gr})," "+en))));
+    body.append(el("div",{className:"panel tablewrap"},t),el("p",{className:"notice",textContent:"Also: “your” is -ak to a man and -ich to a woman (shlōnak / shlōnich), and future is b- in front of a verb (barūḥ, I'll go)."}));
+  }
+  if(soundTab==="ear"){
+    body.append(el("p",{className:"lede",textContent:"These pairs differ by one sound English doesn't separate. Hearing the difference comes before saying it."}));
+    let right=0,total=0; const stage=el("div",{className:"stage"}); body.append(stage);
+    const round=()=>{
+      stage.textContent=""; const pair=PAIRS[Math.floor(Math.random()*PAIRS.length)]; const pick=pair[Math.floor(Math.random()*2)];
+      const fb=el("p",{className:"feedback"}); const opts=el("div",{className:"options"});
+      [...pair].sort(()=>Math.random()-0.5).forEach(w=>opts.append(el("button",{className:"btn",type:"button",onclick:e=>{ if(opts.dataset.done) return; opts.dataset.done="1"; total++; const ok=w===pick; if(ok) right++;
+        [...opts.children].forEach(b=>{ if(b.dataset.w===pick[0]) b.classList.add("right"); else if(b===e.currentTarget) b.classList.add("wrong"); });
+        fb.className="feedback "+(ok?"ok":"no"); fb.textContent=(ok?"Right. ":"That was "+pick[1]+". ")+`${right}/${total}`;
+        if(total>=8&&right/total>=0.75&&!S.unitsDone.sounds){ S.unitsDone.sounds=today(); touchDay(); save(); refresh(); fb.textContent+=" · Stage 0 complete, stage 1 is unlocked on Today."; hint.textContent="Stage 0 is done. Come back here whenever a sound feels shaky."; }
+        stage.append(el("button",{className:"btn primary",type:"button",textContent:"Next",onclick:round})); },"data-w":w[0]},arSpan(w[0])," ",el("span",{className:"tag",textContent:w[1]+" · "+w[2]}))));
+      stage.append(el("p",{className:"mode",textContent:"Which word did you hear?"}),el("div",{className:"row"},playBtn(pick[0],"▶ Play"),slowBtn(pick[0])),opts,fb); say(pick[0]);
+    };
+    const hint=el("p",{className:"tag"}); body.append(hint);
+    round();
+    hint.textContent=(S.unitsDone.sounds?"Stage 0 is done. Come back here whenever a sound feels shaky.":"Get 75% or more over 8 tries to finish stage 0.");
+  }
 }
-$("#reset-btn").onclick=()=>{$("#reset-confirm").hidden=false;};
-$("#reset-confirm").onclick=()=>{S={cards:{},streak:0,lastDay:"",reviewsToday:0,quiz:{right:0,total:0},speak:{best:0,tries:0},typed:{right:0,total:0}};save();$("#reset-confirm").hidden=true;renderProgress();};
-// ---- tutor (only where the claude viewer offers it) ----
-const history=[];
-async function setupTutor(){
-  if(!window.claude?.use) return;
-  const sample=await window.claude.use("sample"); if(!sample) return;
-  $("#tutor-tab").hidden=false;
-  const chat=$("#chat");
-  const add=(cls,...kids)=>{const m=el("div",{className:"msg "+cls},...kids);chat.append(m);m.scrollIntoView({block:"nearest"});return m;};
-  add("",el("span",{className:"ar",lang:"ar",textContent:"أَهْلًا! أَنَا مُعَلِّمُك. كَيْفَ حَالُك؟"}),el("span",{className:"t",textContent:"ahlan! anā muʿallimuk. kayfa ḥāluk?"}),el("span",{textContent:"Hi! I'm your teacher. How are you?"}));
-  $("#compose").onsubmit=async e=>{
-    e.preventDefault(); const inp=$("#chat-input"); const text=inp.value.trim().slice(0,500); if(!text) return;
-    inp.value=""; add("me",el("span",{textContent:text})); const btn=$("#chat-send"); btn.disabled=true;
-    const wait=add("",el("span",{className:"t",textContent:"…"}));
-    history.push({role:"user",content:text});
-    const instructions="You are a patient Arabic tutor for an English-speaking beginner learning Modern Standard Arabic. "+
-      "Reply ONLY with JSON: {\"arabic\": short fully vowelled MSA reply (1-2 simple sentences) that keeps the conversation going with a question, "+
-      "\"translit\": its transliteration, \"english\": its translation, \"correction\": if the learner's last message tried Arabic and had a mistake, a one-line friendly correction in English with the corrected Arabic, else \"\"}. "+
-      "If the learner asks how to say something, answer it in the arabic field. Conversation so far:\n"+
-      history.slice(-10).map(m=>(m.role==="user"?"Learner: ":"Tutor: ")+m.content).join("\n");
+
+// ===== talk: tutor + stories (claude.ai only) =====
+let SAMPLE=null; const chatLog=[];
+function knownList(n){ return Object.keys(S.cards).filter(id=>ITEMS[id]&&!ITEMS[id].msaTrack&&!S.suspended[id]).slice(-n).map(id=>ITEMS[id].ar+" ("+ITEMS[id].en+")").join(", "); }
+const DIALECT="General Khaleeji (Gulf) Arabic, leaning Emirati where Gulf varieties differ. Write in Arabic script as Gulf speakers write it, never Egyptian or Levantine forms. Transliteration must show Gulf pronunciation (ق as g, ك as ch where Gulf speakers say ch, ض as ẓ), with ā ī ū ē ō, ḥ, ʿ, ʼ, kh, gh, sh, th, dh, ṣ, ṭ, ẓ.";
+let talkMode="chat";
+function renderTalk(){
+  const sec=$("#talk"); sec.textContent="";
+  if(!SAMPLE){ sec.append(el("h2",{textContent:"Talk"}),el("p",{className:"lede",textContent:"The conversation partner and stories need the claude.ai version of this page. Everything else works here."})); return; }
+  const st=el("div",{className:"subtabs"});
+  [["chat","Conversation"],["story","Story"]].forEach(([k,lab])=>st.append(el("button",{className:"btn small",type:"button","aria-pressed":String(talkMode===k),textContent:lab,onclick:()=>{talkMode=k;renderTalk();}})));
+  sec.append(el("h2",{textContent:"Talk in Gulf Arabic"}),st);
+  if(talkMode==="chat") renderChat(sec); else renderStory(sec);
+}
+function renderChat(sec){
+  sec.append(el("p",{className:"lede",textContent:"Write in Gulf Arabic, transliteration or English. Your partner replies at your level and corrects you gently. Tap “Add to my cards” on new words to keep them."}));
+  const chat=el("div",{className:"chat"}); sec.append(chat);
+  const scen=el("div",{className:"row",style:"margin-bottom:10px"}); ["Order at a café","Meet someone new","Take a taxi","Visit a friend's house"].forEach(s=>scen.append(el("button",{className:"btn small",type:"button",textContent:s,onclick:()=>{inp.value="Let's role-play: "+s.toLowerCase()+". You start.";form.requestSubmit();}})));
+  sec.append(scen);
+  const add=(cls,...kids)=>{const m=el("div",{className:"msg "+cls},...kids);chat.append(m);return m;};
+  const renderReply=(m,r)=>{ m.textContent=""; m.append(arSpan(r.arabic||""),el("span",{className:"tr",style:"display:block",textContent:r.translit||""}),el("span",{textContent:r.english||""}));
+    if(r.correction) m.append(el("span",{className:"fix",textContent:r.correction}));
+    const row=el("div",{className:"row",style:"margin-top:6px"},playBtn(r.arabic||"","▶ Hear")); m.append(row);
+    (Array.isArray(r.new_words)?r.new_words:[]).slice(0,4).forEach(w=>{ if(!w||typeof w.ar!=="string"||typeof w.en!=="string") return;
+      const b=el("button",{className:"btn small",type:"button",textContent:"+ "+w.ar+" ("+w.en+")",onclick:()=>{ addCustom(w); b.disabled=true; b.textContent="Added: "+w.ar; }}); row.append(b); }); };
+  if(!chatLog.length) add("",arSpan("هلا والله! شلونك اليوم؟"),el("span",{className:"tr",style:"display:block",textContent:"hala wallāh! shlōnak il-yōm?"}),el("span",{textContent:"Hi there! How are you today?"}));
+  chatLog.forEach(m=>{ if(m.role==="user") add("me",el("span",{textContent:m.content})); else renderReply(add(""),m.r); });
+  const inp=el("textarea",{id:"chat-input",placeholder:"زين الحمد لله … or: how do I say I'm tired?"}); inp.setAttribute("aria-label","your message");
+  const send=el("button",{className:"btn primary",type:"submit",textContent:"Send"});
+  const form=el("form",{className:"compose"},inp,send); sec.append(form);
+  form.onsubmit=async e=>{ e.preventDefault(); const text=inp.value.trim().slice(0,500); if(!text) return; inp.value=""; send.disabled=true;
+    add("me",el("span",{textContent:text})); chatLog.push({role:"user",content:text}); const wait=add("",el("span",{className:"tr",textContent:"…"}));
+    const prompt=`You are a warm, patient conversation partner helping an English speaker learn ${DIALECT}
+Learner stage: ${currentStage()} of 5 (${STAGE_NAMES[currentStage()]}). Words they already know: ${knownList(120)||"almost none yet"}.
+Reply mostly with words they know plus at most 2 new ones, in 1-2 short sentences, and keep the conversation going with a question. If they ask how to say something, answer it.
+Return ONLY JSON: {"arabic": your Gulf reply in Arabic script, "translit": its transliteration, "english": its translation, "correction": if their last message tried Arabic and had a mistake or used fuṣḥā where Gulf speakers say something else, one friendly line in English with the Gulf version; else "", "new_words": up to 2 objects {"ar","tr","en"} for new words in your reply}.
+Conversation so far:
+${chatLog.slice(-12).map(m=>(m.role==="user"?"Learner: ":"Partner: ")+(m.role==="user"?m.content:m.r.arabic)).join("\n")}`;
+    try{ const r=await SAMPLE.json(prompt,{modelTier:"default",cache:false}); chatLog.push({role:"assistant",r}); renderReply(wait,r); S.talks=(S.talks||0)+1; touchDay(); save(); }
+    catch(err){ chatLog.pop(); wait.textContent=err&&err.code==="rate_limited"?"Too many messages at once. Wait a minute and try again.":"Your partner couldn't answer that. Try again in a moment."; }
+    send.disabled=false; };
+}
+function addCustom(w){
+  const id="c"+Date.now().toString(36)+Math.random().toString(36).slice(2,5);
+  const c={id,ar:String(w.ar).slice(0,80),tr:String(w.tr||"").slice(0,80),en:String(w.en).slice(0,80)};
+  S.custom.push(c); ITEMS[id]=Object.assign({unit:"custom",stage:"custom"},c); ITEM_UNIT[id]="custom";
+  S.cards[id]=Object.assign(schedule({},2,Date.now()),{d:Date.now()+DAYMS}); save();
+}
+const DAYMS=86400000;
+function renderStory(sec){
+  sec.append(el("p",{className:"lede",textContent:"A short story using words you know plus a couple of new ones. Read and listen first, reveal the English only when you're stuck."}));
+  const box=el("div",{className:"stack"}); const go=el("button",{className:"btn primary",type:"button",textContent:"Write me a story"}); sec.append(go,box);
+  go.onclick=async()=>{ go.disabled=true; box.textContent=""; box.append(el("p",{className:"tag",textContent:"Writing…"}));
+    const st=currentStage(); const reg=st>=3&&Math.random()<0.3?"Modern Standard Arabic (fuṣḥā), as in a simple news item, so the learner practises understanding":DIALECT;
+    const prompt=`Write a short, engaging story for an English-speaking learner at stage ${st} of 5 (${STAGE_NAMES[st]}), in ${reg}
+Use mainly words they know: ${knownList(150)||"basic greetings"}. Add at most ${st<=1?2:4} new words. ${st<=1?"4":st<=3?"6":"8"} short lines.
+Return ONLY JSON: {"title": English title, "lines": [{"ar","tr","en"}], "question": {"q": an English comprehension question, "options": [3 English options], "answer": the correct option exactly}, "new_words": [{"ar","tr","en"}]}`;
+    try{ const r=await SAMPLE.json(prompt,{modelTier:"default",cache:false}); box.textContent="";
+      if(!r||!Array.isArray(r.lines)) throw new Error("bad");
+      const p=el("div",{className:"panel dialogue"}); box.append(el("h3",{textContent:r.title||"Story"}),p);
+      r.lines.slice(0,10).forEach(l=>{ if(!l||typeof l.ar!=="string") return; const en=el("p",{className:"en",hidden:true,textContent:l.en||""});
+        p.append(el("div",{className:"line",style:"grid-template-columns:1fr"},el("div",{className:"txt"},arSpan(l.ar),trLine(l.tr||""),en,el("div",{className:"row"},playBtn(l.ar),el("button",{className:"btn small ghost",type:"button",textContent:"English",onclick:()=>{en.hidden=!en.hidden;}}))))); });
+      if(r.question&&Array.isArray(r.question.options)){ const fb=el("p",{className:"feedback"}); const o=el("div",{className:"options"});
+        r.question.options.forEach(op=>o.append(el("button",{className:"btn",type:"button",textContent:String(op),onclick:e=>{ if(o.dataset.done) return; o.dataset.done="1"; const ok=op===r.question.answer; e.currentTarget.classList.add(ok?"right":"wrong"); fb.className="feedback "+(ok?"ok":"no"); fb.textContent=ok?"Right":"Answer: "+r.question.answer; touchDay(); save(); }})));
+        box.append(el("div",{className:"stage"},el("p",{className:"en",textContent:String(r.question.q||"")}),o,fb)); }
+      const nw=el("div",{className:"row"}); (Array.isArray(r.new_words)?r.new_words:[]).slice(0,4).forEach(w=>{ if(!w||typeof w.ar!=="string"||typeof w.en!=="string") return; const b=el("button",{className:"btn small",type:"button",textContent:"+ "+w.ar+" ("+w.en+")",onclick:()=>{addCustom(w);b.disabled=true;b.textContent="Added";}}); nw.append(b); });
+      if(nw.children.length) box.append(el("p",{className:"tag",textContent:"New words, tap to add to your cards:"}),nw);
+    }catch(err){ box.textContent=""; box.append(el("p",{className:"feedback no",textContent:err&&err.code==="rate_limited"?"Too many requests. Try again in a minute.":"Couldn't write a story just now. Try again."})); }
+    go.disabled=false; go.textContent="Another story"; };
+}
+// lessons for stage 2+ are written on demand, checked, then stored with your progress
+async function generateUnit(host,stage,topic,then){
+  host.textContent=""; host.append(el("h2",{textContent:"Writing your next lesson"}));
+  let chosen=topic;
+  if(!chosen){ const inp=el("input",{type:"text",id:"topic-input",placeholder:"e.g. buying a car, my favourite food, a trip to Dubai"}); inp.setAttribute("aria-label","topic");
+    const go=el("button",{className:"btn primary",type:"button",textContent:"Write it"});
+    host.append(el("p",{className:"lede",textContent:"You're past the planned stages. Pick any topic and the lesson is built around what you already know."}),el("div",{className:"compose"},inp,go));
+    await new Promise(res=>{go.onclick=()=>{ if(inp.value.trim()){ chosen=inp.value.trim().slice(0,80); res(); } };});
+    host.textContent=""; host.append(el("h2",{textContent:"Writing your next lesson"})); }
+  const status=el("p",{className:"tag",textContent:`Topic: ${chosen}. This takes a few seconds.`}); host.append(status);
+  const lvl=stage<=5?SYLLABUS[stage].level:"C1+";
+  const prompt=`Write one lesson of a ${DIALECT}
+The learner is English-speaking, at stage ${stage} (${STAGE_NAMES[stage]}, about CEFR ${lvl}). Topic: ${chosen}.
+Phrases they already know (reuse many of them in the dialogue, never re-teach them): ${knownList(200)||"basic greetings"}.
+Return ONLY JSON: {"title": short English title, "goal": one line on what they'll be able to do, "tip": one short grammar or usage insight relevant to the lesson,
+"dialogue": 4-6 lines [{"who":"A" or "B","ar","tr","en"}] that are natural and slightly above their level,
+"items": 6-8 NEW useful phrases from the dialogue [{"ar","tr","en","msa": the Modern Standard Arabic equivalent or "" if the same}]}.
+Mark gender in "en" where it matters, e.g. "(to a man)". Keep each phrase short.`;
+  for(let attempt=0;attempt<2;attempt++){
     try{
-      const r=await sample.json(instructions,{modelTier:"default"});
-      wait.textContent="";
-      wait.append(el("span",{className:"ar",lang:"ar",textContent:r.arabic||""}),el("span",{className:"t",textContent:r.translit||""}),el("span",{textContent:r.english||""}));
-      if(r.correction) wait.append(el("span",{className:"fix",textContent:r.correction}));
-      wait.append(el("div",{className:"row",style:"margin-top:6px"},playBtn(r.arabic||"","▶ Hear")));
-      history.push({role:"assistant",content:r.arabic||""});
+      const r=await SAMPLE.json(prompt,{modelTier:"complex",cache:false});
+      const errs=validateUnit(r); if(errs.length) throw {code:"shape",message:errs.join(", ")};
+      const knownNorm=new Set(Object.values(ITEMS).map(it=>normalizeArabic(it.ar)));
+      r.items=r.items.filter(it=>!knownNorm.has(normalizeArabic(it.ar)));
+      if(r.items.length<3) throw {code:"shape",message:"too few new phrases"};
+      const u={id:"g"+Date.now().toString(36),stage,topic:topic,title:r.title.slice(0,80),goal:r.goal.slice(0,160),tip:r.tip.slice(0,300),
+        dialogue:r.dialogue.slice(0,10).map(l=>({who:l.who,ar:l.ar,tr:l.tr,en:l.en})),items:r.items.slice(0,9).map(it=>({ar:it.ar,tr:it.tr,en:it.en,msa:it.msa||""})),createdAt:Date.now(),ai:true};
+      S.gen.push(u); saveGenUnit(u); rebuild(); save();
+      then(u); return;
     }catch(err){
-      wait.textContent=err?.code==="rate_limited"?"Too many messages at once, wait a minute and try again.":"The tutor couldn't answer that. Try again in a moment.";
-      history.pop();
+      if(err&&err.code==="rate_limited"){ status.textContent="Too many requests right now. Try again in a minute."; break; }
+      status.textContent=attempt===0?"That attempt didn't come out right, trying again…":"Couldn't write a good lesson just now. Try again later.";
     }
-    btn.disabled=false;
-  };
+  }
+  host.append(el("button",{className:"btn",type:"button",textContent:"Back",onclick:()=>show(currentTab)}));
 }
-// ---- boot ----
-renderStats(); renderLetterGrid(); renderLetter(); setupTutor();
+
+// ===== progress & settings =====
+function renderMe(){
+  refresh(); const sec=$("#me"); sec.textContent="";
+  const cards=Object.entries(S.cards).filter(([id])=>!S.suspended[id]);
+  const mature=cards.filter(([,c])=>c.i>=MATURE_DAYS).length; const gulf=cards.filter(([id])=>!id.startsWith("m.")).length;
+  const st=currentStage();
+  const kv=el("div",{className:"kv"});
+  [["Stage",`${st} · ${STAGE_NAMES[st]}`],["Day streak",shownStreak()],["Gulf phrases in rotation",gulf],["Fuṣḥā words in rotation",cards.length-gulf],["Remembered for a week or more",mature],["Lessons done",Object.keys(S.unitsDone).filter(k=>k!=="sounds").length],["Reviews today",S.lastDay===today()?S.reviewsToday:0],["Conversations",S.talks||0],["Progress saved",syncNote]]
+    .forEach(([a,b])=>kv.append(el("div",{},el("span",{textContent:a}),el("b",{textContent:String(b)}))));
+  sec.append(el("h2",{textContent:"Your progress"}),kv);
+  sec.append(el("p",{className:"notice",style:"margin-top:14px",textContent:"Fluency comes from talking to people. Around stage 3, add a weekly session with a native Gulf tutor (italki or similar) and bring your weakest cards to it."}));
+  sec.append(el("h2",{style:"margin-top:22px",textContent:"Settings"}));
+  const trSel=el("select",{id:"set-translit"}); [["auto","Fade out as I level up"],["always","Always show"],["tap","Show on tap"],["never","Never show"]].forEach(([v,l])=>trSel.append(el("option",{value:v,textContent:l,selected:S.settings.translit===v})));
+  trSel.onchange=()=>{S.settings.translit=trSel.value;save();};
+  const nSel=el("select",{id:"set-new"}); [[1,"1 lesson a day (about 30 min)"],[2,"2 lessons a day (about 45 min)"]].forEach(([v,l])=>nSel.append(el("option",{value:v,textContent:l,selected:S.settings.newPerDay===v})));
+  nSel.onchange=()=>{S.settings.newPerDay=+nSel.value;save();};
+  sec.append(el("div",{className:"setting"},el("label",{htmlFor:"set-translit",textContent:"Pronunciation lines"}),trSel),el("div",{className:"setting"},el("label",{htmlFor:"set-new",textContent:"New lessons"}),nSel));
+  const hidden=Object.keys(S.suspended).filter(k=>S.suspended[k]);
+  if(hidden.length){ const b=el("button",{className:"btn small",type:"button",textContent:`Restore ${hidden.length} hidden card${hidden.length>1?"s":""}`,onclick:()=>{S.suspended={};save();renderMe();}}); sec.append(el("div",{className:"setting"},el("span",{textContent:"Cards you hid"}),b)); }
+  const r1=el("button",{className:"btn small",type:"button",textContent:"Reset all progress"}); const r2=el("button",{className:"btn small",type:"button",hidden:true,textContent:"Tap again to erase everything"});
+  r1.onclick=()=>{r2.hidden=false;}; r2.onclick=()=>{ const gen=S.gen; S=blank(); S.gen=gen; save(); rebuild(); renderMe(); };
+  sec.append(el("div",{className:"setting"},el("span",{textContent:"Start over (keeps written lessons)"}),el("div",{className:"row"},r1,r2)));
+}
+
+// ===== boot =====
+async function setupSample(){
+  if(!window.claude||!window.claude.use) return;
+  const s=await window.claude.use("sample"); if(!s) return; SAMPLE=s; if(currentTab==="today") renderToday(); if(currentTab==="course") renderCourse();
+}
+feedMsa(); refresh(); renderToday(); setupSync(); setupSample();
 })();
 </script>
