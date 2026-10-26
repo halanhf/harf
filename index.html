@@ -1,0 +1,620 @@
+<title>Harf Arabic</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Readex+Pro:wght@300;400;500;600&display=swap">
+<style>
+/* layout: one-column practice app, sticky top bar with tabs, each tab a focused practice surface; arabic set large in naskh */
+:root{
+  --paper:#eef3f1; --card:#fbfdfc; --ink:#13201c; --muted:#56655f; --line:#cddad5;
+  --tile:#0f5f5a; --tile-soft:#d6ebe7; --saffron:#b8740f; --good:#2f7d3c; --bad:#b3362c;
+  --ar:"Amiri","Noto Naskh Arabic","Times New Roman",serif;
+  --ui:"Readex Pro","Segoe UI",system-ui,sans-serif;
+  --r:10px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0d1513; --card:#15201d; --ink:#e4ede9; --muted:#9db0a9; --line:#2a3a35;
+  --tile:#5fc0b5; --tile-soft:#173a36; --saffron:#e9a53d; --good:#6cc27a; --bad:#ef7d72; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0d1513; --card:#15201d; --ink:#e4ede9; --muted:#9db0a9; --line:#2a3a35;
+  --tile:#5fc0b5; --tile-soft:#173a36; --saffron:#e9a53d; --good:#6cc27a; --bad:#ef7d72; color-scheme:dark}
+*{box-sizing:border-box}
+html,body{min-height:100%}
+body{background:var(--paper);color:var(--ink);font:400 15px/1.55 var(--ui);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+.wrap{max-width:760px;margin:0 auto;padding-block:0 48px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);padding-block:14px 0;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:baseline;gap:10px;justify-content:space-between;flex-wrap:wrap}
+.brand h1{margin:0;font:600 20px/1.2 var(--ui);letter-spacing:.01em;display:flex;align-items:baseline;gap:8px}
+.brand h1 .ar{font:700 28px/1 var(--ar);color:var(--tile)}
+.stats{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.stats b{color:var(--ink);font-weight:500}
+nav{display:flex;gap:4px;overflow-x:auto;margin-top:10px;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav button{flex:0 0 auto;border:0;background:none;color:var(--muted);font:500 14px var(--ui);padding:9px 12px 11px;cursor:pointer;border-bottom:2px solid transparent}
+nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--tile)}
+nav button:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--saffron);outline-offset:2px}
+main section{padding-top:20px}
+h2{font:500 13px var(--ui);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 12px}
+p{margin:0}
+.lede{color:var(--muted);max-width:62ch;margin-bottom:16px}
+.ar{font-family:var(--ar);direction:rtl;unicode-bidi:isolate}
+button.btn{font:500 14px var(--ui);border-radius:var(--r);border:1px solid var(--line);background:var(--card);color:var(--ink);padding:10px 14px;cursor:pointer;min-height:44px}
+button.btn:hover{border-color:var(--tile)}
+button.primary{background:var(--tile);border-color:var(--tile);color:var(--paper)}
+button.btn:disabled{opacity:.45;cursor:not-allowed}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.notice{font-size:13px;color:var(--muted);border-left:3px solid var(--saffron);padding:8px 12px;background:var(--card);border-radius:0 var(--r) var(--r) 0;margin-bottom:16px;max-width:66ch}
+.notice[hidden]{display:none}
+/* letters */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(68px,1fr));gap:8px;direction:rtl}
+.grid button{aspect-ratio:1;max-width:100%;border:1px solid var(--line);background:var(--card);border-radius:var(--r);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:var(--ink);padding:4px}
+.grid button .g{font:400 34px/1 var(--ar)}
+.grid button .n{font:400 11px var(--ui);color:var(--muted);direction:ltr}
+.grid button[aria-pressed="true"]{border-color:var(--tile);background:var(--tile-soft)}
+.letter-card{margin-top:16px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px;display:grid;gap:16px}
+.lc-top{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.lc-glyph{font:400 88px/1 var(--ar);color:var(--tile);min-width:90px;text-align:center}
+.lc-meta{min-width:0;flex:1}
+.lc-meta h3{margin:0 0 4px;font:600 20px var(--ui)}
+.lc-meta .ar{font-size:24px}
+.forms{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;direction:rtl}
+.forms div{border:1px solid var(--line);border-radius:var(--r);padding:8px 4px;text-align:center}
+.forms .f{font:400 40px/1.4 var(--ar)}
+.forms .l{font-size:11px;color:var(--muted);direction:ltr;text-transform:uppercase;letter-spacing:.06em}
+.example{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.example .ar{font-size:30px}
+.tag{font-size:12px;color:var(--muted)}
+/* practice cards */
+.stage{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px 18px;text-align:center;display:grid;gap:14px;justify-items:center}
+.big{font:400 52px/1.5 var(--ar);direction:rtl;word-break:break-word;max-width:100%}
+.mid{font:400 34px/1.6 var(--ar);direction:rtl}
+.translit{color:var(--muted);font-style:italic}
+.en{font:500 20px var(--ui)}
+.meter{width:100%;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--tile);width:0}
+.options{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%}
+.options button{min-height:56px}
+.options button.right{border-color:var(--good);background:color-mix(in srgb,var(--good) 14%,var(--card))}
+.options button.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 12%,var(--card))}
+.grades{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;width:100%}
+.grades button small{display:block;font-size:11px;color:var(--muted);font-weight:400}
+.feedback{font-weight:500;min-height:1.5em}
+.feedback.ok{color:var(--good)} .feedback.no{color:var(--bad)}
+select,input[type=text],textarea{font:400 15px var(--ui);color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:10px 12px;min-height:44px}
+.answer{font:400 30px/1.4 var(--ar);direction:rtl;text-align:right;width:100%}
+.kbd{display:grid;grid-template-columns:repeat(auto-fill,minmax(40px,1fr));gap:5px;width:100%;direction:rtl}
+.kbd button{font:400 22px/1 var(--ar);min-height:44px;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:8px;cursor:pointer}
+.kbd button.wide{grid-column:span 3;font:500 13px var(--ui)}
+.diff{font:400 26px/1.6 var(--ar);direction:rtl}
+.diff .x{color:var(--bad);text-decoration:underline wavy}
+/* tutor */
+.chat{display:grid;gap:10px;margin-bottom:12px}
+.msg{padding:12px 14px;border-radius:var(--r);border:1px solid var(--line);background:var(--card);max-width:92%;min-width:0;overflow-wrap:anywhere}
+.msg.me{justify-self:end;background:var(--tile-soft);border-color:transparent}
+.msg .ar{font-size:24px;line-height:1.7;display:block}
+.msg .t{color:var(--muted);font-style:italic;display:block}
+.msg .fix{font-size:13px;color:var(--saffron);display:block;margin-top:6px}
+.compose{display:flex;gap:8px}
+.compose textarea{flex:1;min-width:0;resize:vertical;min-height:52px}
+.progress-list{display:grid;gap:8px}
+.progress-list div{display:flex;justify-content:space-between;gap:12px;font-variant-numeric:tabular-nums;border-bottom:1px solid var(--line);padding-block:6px}
+footer{margin-top:28px;font-size:12px;color:var(--muted)}
+@media (max-width:480px){.options{grid-template-columns:1fr}.big{font-size:42px}.lc-glyph{font-size:72px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="brand">
+    <h1><span class="ar" lang="ar">حرف</span> Harf</h1>
+    <div class="stats" id="stats"></div>
+  </div>
+  <nav role="tablist" id="tabs">
+    <button role="tab" data-tab="letters" aria-selected="true">Letters</button>
+    <button role="tab" data-tab="review">Review</button>
+    <button role="tab" data-tab="quiz">Quiz</button>
+    <button role="tab" data-tab="speak">Speak</button>
+    <button role="tab" data-tab="type">Type</button>
+    <button role="tab" data-tab="tutor" id="tutor-tab" hidden>Tutor</button>
+    <button role="tab" data-tab="progress">Progress</button>
+  </nav>
+</header>
+
+<main>
+<p class="notice" id="voice-note" hidden></p>
+
+<section id="letters" role="tabpanel">
+  <h2>The 28 letters</h2>
+  <p class="lede">Tap a letter to see its four shapes and hear it. Arabic reads right to left, and most letters join to the next one, so a letter changes shape depending on where it sits in a word.</p>
+  <div class="grid" id="letter-grid"></div>
+  <div class="letter-card" id="letter-card"></div>
+</section>
+
+<section id="review" role="tabpanel" hidden>
+  <h2>Spaced repetition</h2>
+  <p class="lede">Cards you find hard come back sooner, easy ones later. A few minutes a day beats an hour once a week.</p>
+  <div class="row" style="margin-bottom:12px">
+    <label for="deck-select" class="tag">Deck</label>
+    <select id="deck-select"></select>
+    <label for="dir-select" class="tag">Direction</label>
+    <select id="dir-select">
+      <option value="ar-en">Arabic → English</option>
+      <option value="en-ar">English → Arabic</option>
+      <option value="audio">Listen → meaning</option>
+    </select>
+  </div>
+  <div class="stage" id="review-stage"></div>
+</section>
+
+<section id="quiz" role="tabpanel" hidden>
+  <h2>Quick quiz</h2>
+  <div class="row" style="margin-bottom:12px">
+    <label for="quiz-mode" class="tag">Mode</label>
+    <select id="quiz-mode">
+      <option value="letter">Letter shape → name</option>
+      <option value="read">Read the word → meaning</option>
+      <option value="listen">Listen → meaning</option>
+    </select>
+  </div>
+  <div class="stage" id="quiz-stage"></div>
+</section>
+
+<section id="speak" role="tabpanel" hidden>
+  <h2>Speaking</h2>
+  <p class="lede">Listen, then say it out loud. Where your browser supports it, the app listens and scores you; otherwise compare with the recording yourself.</p>
+  <p class="notice" id="mic-note" hidden></p>
+  <div class="stage" id="speak-stage"></div>
+</section>
+
+<section id="type" role="tabpanel" hidden>
+  <h2>Writing</h2>
+  <p class="lede">Hear a word and type it in Arabic script. Vowel marks are optional: <span class="ar" lang="ar">كتاب</span> and <span class="ar" lang="ar">كِتَاب</span> both count.</p>
+  <div class="stage" id="type-stage"></div>
+</section>
+
+<section id="tutor" role="tabpanel" hidden>
+  <h2>Conversation tutor</h2>
+  <p class="lede">Write in Arabic, transliteration or English. The tutor answers in simple Modern Standard Arabic, with transliteration, a translation, and a gentle correction of your last message.</p>
+  <div class="chat" id="chat"></div>
+  <form class="compose" id="compose">
+    <label for="chat-input" class="tag" hidden>Message</label>
+    <textarea id="chat-input" placeholder="مرحبا! or: how do I say I am a student?"></textarea>
+    <button class="btn primary" type="submit" id="chat-send">Send</button>
+  </form>
+</section>
+
+<section id="progress" role="tabpanel" hidden>
+  <h2>Your progress</h2>
+  <div class="progress-list" id="progress-list"></div>
+  <div class="row" style="margin-top:16px">
+    <button class="btn" id="reset-btn">Reset progress</button>
+    <button class="btn" id="reset-confirm" hidden>Tap again to erase everything</button>
+  </div>
+</section>
+</main>
+
+<footer>Modern Standard Arabic (fuṣḥā). Progress is saved in this browser only. Pronunciation comes from your device's Arabic voice, so quality varies by device.</footer>
+</div>
+
+<script id="data">
+// [glyph, name in arabic (spoken), english name, translit, sound hint, joins to next?, example vowelled, example translit, example meaning]
+const LETTERS=[
+["ا","أَلِف","alif","ā","long ā, or a seat for hamza (ʼ)",false,"أَسَد","asad","lion"],
+["ب","بَاء","bāʼ","b","b as in bat",true,"بَيْت","bayt","house"],
+["ت","تَاء","tāʼ","t","t as in tap",true,"تُفَّاح","tuffāḥ","apples"],
+["ث","ثَاء","thāʼ","th","th as in think",true,"ثَلْج","thalj","snow"],
+["ج","جِيم","jīm","j","j as in jam",true,"جَمَل","jamal","camel"],
+["ح","حَاء","ḥāʼ","ḥ","breathy h from deep in the throat",true,"حَلِيب","ḥalīb","milk"],
+["خ","خَاء","khāʼ","kh","ch as in Scottish loch",true,"خُبْز","khubz","bread"],
+["د","دَال","dāl","d","d as in dog",false,"دَرْس","dars","lesson"],
+["ذ","ذَال","dhāl","dh","th as in this",false,"ذَهَب","dhahab","gold"],
+["ر","رَاء","rāʼ","r","rolled or tapped r",false,"رَجُل","rajul","man"],
+["ز","زَاي","zāy","z","z as in zoo",false,"زَيْت","zayt","oil"],
+["س","سِين","sīn","s","s as in sun",true,"سَمَك","samak","fish"],
+["ش","شِين","shīn","sh","sh as in ship",true,"شَمْس","shams","sun"],
+["ص","صَاد","ṣād","ṣ","heavy s, tongue low and back",true,"صَدِيق","ṣadīq","friend"],
+["ض","ضَاد","ḍād","ḍ","heavy d",true,"ضَيْف","ḍayf","guest"],
+["ط","طَاء","ṭāʼ","ṭ","heavy t",true,"طَعَام","ṭaʿām","food"],
+["ظ","ظَاء","ẓāʼ","ẓ","heavy th as in this",true,"ظُهْر","ẓuhr","noon"],
+["ع","عَيْن","ʿayn","ʿ","squeeze in the throat, no English match",true,"عَيْن","ʿayn","eye"],
+["غ","غَيْن","ghayn","gh","gargled sound, like a French r",true,"غُرْفَة","ghurfa","room"],
+["ف","فَاء","fāʼ","f","f as in fan",true,"فِيل","fīl","elephant"],
+["ق","قَاف","qāf","q","k made far back in the throat",true,"قَلَم","qalam","pen"],
+["ك","كَاف","kāf","k","k as in kite",true,"كِتَاب","kitāb","book"],
+["ل","لَام","lām","l","l as in lamp",true,"لَيْل","layl","night"],
+["م","مِيم","mīm","m","m as in moon",true,"مَاء","māʼ","water"],
+["ن","نُون","nūn","n","n as in noon",true,"نُور","nūr","light"],
+["ه","هَاء","hāʼ","h","h as in hat",true,"هَوَاء","hawāʼ","air"],
+["و","وَاو","wāw","w / ū","w as in wet, or long oo",false,"وَلَد","walad","boy"],
+["ي","يَاء","yāʼ","y / ī","y as in yes, or long ee",true,"يَد","yad","hand"]
+];
+// [vowelled arabic, translit, english]
+const DECKS={
+"Greetings":[
+["السَّلَامُ عَلَيْكُم","as-salāmu ʿalaykum","peace be upon you (hello)"],
+["وَعَلَيْكُمُ السَّلَام","wa ʿalaykumu s-salām","and upon you peace (reply)"],
+["مَرْحَبًا","marḥaban","hello"],
+["صَبَاحُ الْخَيْر","ṣabāḥu l-khayr","good morning"],
+["صَبَاحُ النُّور","ṣabāḥu n-nūr","good morning (reply)"],
+["مَسَاءُ الْخَيْر","masāʼu l-khayr","good evening"],
+["كَيْفَ حَالُكَ؟","kayfa ḥāluka?","how are you? (to a man)"],
+["كَيْفَ حَالُكِ؟","kayfa ḥāluki?","how are you? (to a woman)"],
+["بِخَيْر، الْحَمْدُ لِلّٰه","bi-khayr, al-ḥamdu lillāh","fine, praise be to God"],
+["مَا اسْمُكَ؟","mā -smuka?","what is your name? (to a man)"],
+["اِسْمِي","ismī","my name is"],
+["تَشَرَّفْنَا","tasharrafnā","nice to meet you"],
+["مَعَ السَّلَامَة","maʿa s-salāma","goodbye"]
+],
+"Polite words":[
+["شُكْرًا","shukran","thank you"],
+["عَفْوًا","ʿafwan","you're welcome"],
+["مِنْ فَضْلِكَ","min faḍlika","please (to a man)"],
+["مِنْ فَضْلِكِ","min faḍliki","please (to a woman)"],
+["نَعَم","naʿam","yes"],
+["لَا","lā","no"],
+["آسِف","āsif","sorry (said by a man)"],
+["آسِفَة","āsifa","sorry (said by a woman)"],
+["إِنْ شَاءَ اللّٰه","in shāʼa llāh","God willing"],
+["أَنَا لَا أَفْهَم","anā lā afham","I don't understand"],
+["مَرَّةً أُخْرَى","marratan ukhrā","once more / again"]
+],
+"Numbers":[
+["وَاحِد","wāḥid","one (١)"],
+["اِثْنَان","ithnān","two (٢)"],
+["ثَلَاثَة","thalātha","three (٣)"],
+["أَرْبَعَة","arbaʿa","four (٤)"],
+["خَمْسَة","khamsa","five (٥)"],
+["سِتَّة","sitta","six (٦)"],
+["سَبْعَة","sabʿa","seven (٧)"],
+["ثَمَانِيَة","thamāniya","eight (٨)"],
+["تِسْعَة","tisʿa","nine (٩)"],
+["عَشَرَة","ʿashara","ten (١٠)"]
+],
+"People":[
+["أَنَا","anā","I"],
+["أَنْتَ","anta","you (to a man)"],
+["أَنْتِ","anti","you (to a woman)"],
+["هُوَ","huwa","he"],
+["هِيَ","hiya","she"],
+["نَحْنُ","naḥnu","we"],
+["أُمّ","umm","mother"],
+["أَب","ab","father"],
+["أَخ","akh","brother"],
+["أُخْت","ukht","sister"],
+["صَدِيق","ṣadīq","friend (man)"],
+["صَدِيقَة","ṣadīqa","friend (woman)"],
+["طَالِب","ṭālib","student (man)"]
+],
+"Everyday":[
+["بَيْت","bayt","house"],
+["بَاب","bāb","door"],
+["كِتَاب","kitāb","book"],
+["قَلَم","qalam","pen"],
+["مَاء","māʼ","water"],
+["خُبْز","khubz","bread"],
+["قَهْوَة","qahwa","coffee"],
+["شَاي","shāy","tea"],
+["سَيَّارَة","sayyāra","car"],
+["مَدْرَسَة","madrasa","school"],
+["جَامِعَة","jāmiʿa","university"],
+["مَسْجِد","masjid","mosque"],
+["سُوق","sūq","market"],
+["يَوْم","yawm","day"],
+["لَيْل","layl","night"],
+["كَبِير","kabīr","big"],
+["صَغِير","ṣaghīr","small"],
+["جَمِيل","jamīl","beautiful"]
+]
+};
+</script>
+
+<script id="logic">
+// pure helpers, also run by tests/logic.test.js under node
+const HARAKAT=/[ً-ٰٟـ]/g;
+function normalizeArabic(s){
+  return String(s||"").replace(HARAKAT,"")
+    .replace(/[أإآٱ]/g,"ا").replace(/ى/g,"ي").replace(/ة/g,"ه").replace(/ؤ/g,"و").replace(/ئ/g,"ي")
+    .replace(/[^ء-ي\s]/g,"").replace(/\s+/g," ").trim();
+}
+function levenshtein(a,b){
+  const m=a.length,n=b.length; if(!m) return n; if(!n) return m;
+  let prev=Array.from({length:n+1},(_,j)=>j);
+  for(let i=1;i<=m;i++){ const cur=[i];
+    for(let j=1;j<=n;j++) cur[j]=Math.min(prev[j]+1,cur[j-1]+1,prev[j-1]+(a[i-1]===b[j-1]?0:1));
+    prev=cur; }
+  return prev[n];
+}
+function similarity(a,b){
+  const x=normalizeArabic(a),y=normalizeArabic(b);
+  if(!x&&!y) return 1; const d=levenshtein(x,y); return 1-d/Math.max(x.length,y.length);
+}
+// four positional shapes using the tatweel (ـ) joiner. non-joining letters have no distinct initial/medial
+function letterForms(g,joins){
+  const T="ـ";
+  return joins?{isolated:g,initial:g+T,medial:T+g+T,final:T+g}:{isolated:g,initial:g,medial:T+g,final:T+g};
+}
+const DAY=86400000;
+// simplified sm-2. grade: 0 again, 1 hard, 2 good, 3 easy
+function schedule(card,grade,now){
+  const c=Object.assign({ease:2.5,interval:0,reps:0,due:0,lapses:0},card);
+  if(grade===0){ c.reps=0; c.lapses++; c.interval=0; c.ease=Math.max(1.3,c.ease-0.2); c.due=now+60000; return c; }
+  if(grade===1){ c.ease=Math.max(1.3,c.ease-0.15); c.interval=c.reps===0?0.5:Math.max(1,c.interval*1.2); }
+  else if(grade===2){ c.interval=c.reps===0?1:c.reps===1?3:c.interval*c.ease; }
+  else { c.ease+=0.15; c.interval=c.reps===0?3:Math.max(4,c.interval*c.ease*1.3); }
+  c.reps++; c.due=now+Math.round(c.interval*DAY); return c;
+}
+function pickOptions(correct,pool,n,rand){
+  rand=rand||Math.random;
+  const others=pool.filter(x=>x!==correct); const out=[correct];
+  while(out.length<Math.min(n,pool.length)&&others.length){ out.push(others.splice(Math.floor(rand()*others.length),1)[0]); }
+  for(let i=out.length-1;i>0;i--){ const j=Math.floor(rand()*(i+1)); [out[i],out[j]]=[out[j],out[i]]; }
+  return out;
+}
+if(typeof module!=="undefined") module.exports={normalizeArabic,levenshtein,similarity,letterForms,schedule,pickOptions};
+</script>
+
+<script>
+(function(){
+const $=s=>document.querySelector(s);
+const el=(tag,props,...kids)=>{const e=document.createElement(tag);Object.assign(e,props||{});for(const k of kids)e.append(k);return e};
+// ---- storage (per browser, never required) ----
+const KEY="harf-v1";
+let S={cards:{},streak:0,lastDay:"",reviewsToday:0,quiz:{right:0,total:0},speak:{best:0,tries:0},typed:{right:0,total:0}};
+try{const raw=localStorage.getItem(KEY); if(raw) S=Object.assign(S,JSON.parse(raw));}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}};
+const today=()=>new Date().toISOString().slice(0,10);
+function touchDay(){
+  const t=today(); if(S.lastDay===t) return;
+  const y=new Date(Date.now()-86400000).toISOString().slice(0,10);
+  S.streak=S.lastDay===y?S.streak+1:1; S.lastDay=t; S.reviewsToday=0; save();
+}
+// ---- all items ----
+const ITEMS=[];
+for(const [deck,rows] of Object.entries(DECKS)) rows.forEach(([ar,tr,en])=>ITEMS.push({id:deck+"|"+ar,deck,ar,tr,en}));
+const plain=s=>normalizeArabic(s);
+// ---- speech out ----
+let arVoice=null;
+function pickVoice(){
+  if(!("speechSynthesis" in window)) return;
+  const vs=speechSynthesis.getVoices(); arVoice=vs.find(v=>/^ar/i.test(v.lang))||null;
+  const note=$("#voice-note");
+  if(!arVoice&&vs.length){ note.hidden=false; note.textContent="No Arabic voice found on this device, so audio may be silent or read in the wrong accent. Windows: Settings, Time & language, Speech, add Arabic. Android: Google Speech Services, install Arabic. iPhone: Settings, Accessibility, Spoken Content, Voices, Arabic."; }
+  else note.hidden=true;
+}
+if("speechSynthesis" in window){ pickVoice(); speechSynthesis.onvoiceschanged=pickVoice; }
+function say(text,rate){
+  if(!("speechSynthesis" in window)) return;
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text); u.lang=arVoice?arVoice.lang:"ar-SA"; if(arVoice) u.voice=arVoice; u.rate=rate||0.85;
+  speechSynthesis.speak(u);
+}
+const playBtn=(text,label)=>el("button",{className:"btn",type:"button",textContent:label||"▶ Play",onclick:()=>say(text)});
+const slowBtn=text=>el("button",{className:"btn",type:"button",textContent:"Slow",onclick:()=>say(text,0.55)});
+// ---- tabs ----
+const tabs=[...document.querySelectorAll("#tabs button")];
+function show(name){
+  tabs.forEach(b=>b.setAttribute("aria-selected",String(b.dataset.tab===name)));
+  document.querySelectorAll("main section").forEach(s=>s.hidden=s.id!==name);
+  ({review:renderReview,quiz:newQuiz,speak:newSpeak,type:newType,progress:renderProgress})[name]?.();
+}
+tabs.forEach(b=>b.onclick=()=>show(b.dataset.tab));
+// ---- stats ----
+function renderStats(){
+  const now=Date.now(); const learned=Object.values(S.cards).filter(c=>c.reps>0).length;
+  const due=Object.values(S.cards).filter(c=>c.due<=now).length;
+  const st=$("#stats"); st.textContent="";
+  st.append("Streak ",el("b",{textContent:S.streak+"d"})," · Learned ",el("b",{textContent:learned+"/"+ITEMS.length})," · Due ",el("b",{textContent:String(due)}));
+}
+// ---- letters ----
+let curLetter=0;
+function renderLetterGrid(){
+  const g=$("#letter-grid"); g.textContent="";
+  LETTERS.forEach((L,i)=>g.append(el("button",{type:"button",onclick:()=>{curLetter=i;renderLetterGrid();renderLetter();say(L[1]);}},
+    el("span",{className:"g",textContent:L[0],lang:"ar"}),el("span",{className:"n",textContent:L[2]}))));
+  [...g.children].forEach((b,i)=>b.setAttribute("aria-pressed",String(i===curLetter)));
+}
+function renderLetter(){
+  const [g,arName,name,tr,hint,joins,ex,exTr,exEn]=LETTERS[curLetter]; const f=letterForms(g,joins);
+  const c=$("#letter-card"); c.textContent="";
+  const forms=el("div",{className:"forms"});
+  [["isolated","Alone"],["initial","Start"],["medial","Middle"],["final","End"]].forEach(([k,lab])=>
+    forms.append(el("div",{},el("div",{className:"f ar",lang:"ar",textContent:f[k]}),el("div",{className:"l",textContent:lab}))));
+  c.append(
+    el("div",{className:"lc-top"},el("div",{className:"lc-glyph ar",lang:"ar",textContent:g}),
+      el("div",{className:"lc-meta"},el("h3",{textContent:name+"  ·  "+tr}),el("span",{className:"ar",lang:"ar",textContent:arName}),el("p",{className:"tag",textContent:hint+(joins?"":". Never joins to the letter after it.")})),
+      el("div",{className:"row"},playBtn(arName),slowBtn(arName))),
+    forms,
+    el("div",{className:"example"},el("span",{className:"ar",lang:"ar",textContent:ex}),el("span",{},el("span",{className:"translit",textContent:exTr})," = "+exEn),playBtn(ex,"▶ Word")));
+}
+// ---- review (srs) ----
+const deckSel=$("#deck-select"), dirSel=$("#dir-select");
+deckSel.append(el("option",{value:"all",textContent:"All decks"}),...Object.keys(DECKS).map(d=>el("option",{value:d,textContent:d})));
+deckSel.onchange=dirSel.onchange=renderReview;
+const NEW_PER_DAY=10;
+function nextCard(){
+  const now=Date.now(); const pool=ITEMS.filter(it=>deckSel.value==="all"||it.deck===deckSel.value);
+  const due=pool.filter(it=>S.cards[it.id]&&S.cards[it.id].due<=now).sort((a,b)=>S.cards[a.id].due-S.cards[b.id].due);
+  if(due.length) return due[0];
+  const newToday=Object.values(S.cards).filter(c=>c.firstSeen===today()).length;
+  if(newToday>=NEW_PER_DAY) return null;
+  return pool.find(it=>!S.cards[it.id])||null;
+}
+function renderReview(){
+  renderStats(); const st=$("#review-stage"); st.textContent="";
+  const it=nextCard();
+  if(!it){ st.append(el("p",{className:"en",textContent:"All caught up"}),el("p",{className:"tag",textContent:"Nothing due in this deck. Come back later, or try the quiz."})); return; }
+  const dir=dirSel.value; const isNew=!S.cards[it.id];
+  if(isNew) st.append(el("p",{className:"tag",textContent:"New card"}));
+  if(dir==="ar-en") st.append(el("div",{className:"big",lang:"ar",textContent:it.ar}));
+  else if(dir==="en-ar") st.append(el("div",{className:"en",textContent:it.en}));
+  else { st.append(el("p",{className:"tag",textContent:"Listen and recall the meaning"})); setTimeout(()=>say(it.ar),150); }
+  if(dir!=="en-ar") st.append(el("div",{className:"row"},playBtn(it.ar),slowBtn(it.ar)));
+  const reveal=el("button",{className:"btn primary",type:"button",textContent:"Show answer"});
+  reveal.onclick=()=>{
+    reveal.remove();
+    if(dir!=="ar-en") st.append(el("div",{className:"big",lang:"ar",textContent:it.ar}));
+    st.append(el("p",{className:"translit",textContent:it.tr}));
+    st.append(el("p",{className:"en",textContent:it.en}));
+    if(dir==="en-ar") { say(it.ar); st.append(el("div",{className:"row"},playBtn(it.ar),slowBtn(it.ar))); }
+    const gr=el("div",{className:"grades"});
+    const cur=S.cards[it.id]||{};
+    [["Again",0],["Hard",1],["Good",2],["Easy",3]].forEach(([lab,g])=>{
+      const nx=schedule(cur,g,Date.now()); const mins=(nx.due-Date.now())/60000;
+      const when=mins<60?"1m":mins<1440?Math.round(mins/60)+"h":Math.round(mins/1440)+"d";
+      gr.append(el("button",{className:"btn"+(g===2?" primary":""),type:"button",onclick:()=>grade(it,g)},lab,el("small",{textContent:when})));
+    });
+    st.append(gr);
+  };
+  st.append(reveal);
+}
+function grade(it,g){
+  touchDay(); const prev=S.cards[it.id]; const nx=schedule(prev||{},g,Date.now());
+  nx.firstSeen=prev?.firstSeen||today(); S.cards[it.id]=nx; S.reviewsToday++; save(); renderReview();
+}
+// ---- quiz ----
+const quizMode=$("#quiz-mode"); quizMode.onchange=()=>newQuiz();
+function newQuiz(){
+  const st=$("#quiz-stage"); st.textContent=""; const mode=quizMode.value;
+  let prompt,correct,opts,spoken;
+  if(mode==="letter"){
+    const i=Math.floor(Math.random()*LETTERS.length); const L=LETTERS[i]; const f=letterForms(L[0],L[5]);
+    const pos=["isolated","initial","medial","final"][Math.floor(Math.random()*4)];
+    prompt=el("div",{className:"big",lang:"ar",textContent:f[pos]}); st.append(el("p",{className:"tag",textContent:"Which letter is this? ("+pos+" form)"}));
+    correct=L[2]+" ("+L[3]+")"; opts=pickOptions(correct,LETTERS.map(x=>x[2]+" ("+x[3]+")"),4); spoken=L[1];
+  } else {
+    const it=ITEMS[Math.floor(Math.random()*ITEMS.length)]; correct=it.en;
+    opts=pickOptions(correct,[...new Set(ITEMS.map(x=>x.en))],4); spoken=it.ar;
+    if(mode==="read"){ prompt=el("div",{className:"big",lang:"ar",textContent:plain(it.ar)}); st.append(el("p",{className:"tag",textContent:"Read it (no vowel marks). What does it mean?"})); }
+    else { prompt=el("div",{className:"row"},playBtn(it.ar),slowBtn(it.ar)); st.append(el("p",{className:"tag",textContent:"What did you hear?"})); setTimeout(()=>say(it.ar),150); }
+  }
+  st.append(prompt);
+  const box=el("div",{className:"options"}); const fb=el("p",{className:"feedback"});
+  opts.forEach(o=>box.append(el("button",{className:"btn",type:"button",textContent:o,onclick:e=>{
+    if(box.dataset.done) return; box.dataset.done="1"; S.quiz.total++;
+    const ok=o===correct; if(ok) S.quiz.right++; save();
+    [...box.children].forEach(b=>{ if(b.textContent===correct) b.classList.add("right"); else if(b===e.currentTarget) b.classList.add("wrong"); });
+    fb.className="feedback "+(ok?"ok":"no"); fb.textContent=ok?"Correct":"Not quite: "+correct; say(spoken);
+    st.append(el("button",{className:"btn primary",type:"button",textContent:"Next",onclick:newQuiz}));
+  }})));
+  st.append(box,fb,el("p",{className:"tag",textContent:`Score ${S.quiz.right}/${S.quiz.total}`}));
+}
+// ---- speak ----
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+function newSpeak(){
+  const st=$("#speak-stage"); st.textContent="";
+  const pool=ITEMS.filter(it=>it.deck!=="Numbers"||Math.random()<0.5); const it=pool[Math.floor(Math.random()*pool.length)];
+  st.append(el("div",{className:"big",lang:"ar",textContent:it.ar}),el("p",{className:"translit",textContent:it.tr}),el("p",{className:"en",textContent:it.en}),
+    el("div",{className:"row"},playBtn(it.ar,"▶ Hear it"),slowBtn(it.ar)));
+  const fb=el("p",{className:"feedback"}); const meter=el("div",{className:"meter"},el("i"));
+  const note=$("#mic-note");
+  if(SR){
+    const mic=el("button",{className:"btn primary",type:"button",textContent:"🎤 Say it"});
+    mic.onclick=()=>{
+      let rec; try{ rec=new SR(); }catch(e){ fallback("Speech recognition could not start here."); return; }
+      rec.lang="ar-SA"; rec.interimResults=false; rec.maxAlternatives=5;
+      mic.disabled=true; mic.textContent="Listening…"; fb.className="feedback"; fb.textContent="";
+      rec.onresult=e=>{
+        const alts=[...e.results[0]].map(a=>a.transcript); let best=0,heard=alts[0]||"";
+        alts.forEach(a=>{const s=similarity(a,it.ar); if(s>best){best=s;heard=a;}});
+        const pct=Math.round(best*100); meter.firstChild.style.width=pct+"%";
+        S.speak.tries++; S.speak.best=Math.max(S.speak.best,pct); save();
+        fb.className="feedback "+(pct>=80?"ok":"no");
+        fb.textContent=(pct>=80?"Great, ":pct>=50?"Close, ":"Try again, ")+pct+"% match. Heard: ";
+        fb.append(el("span",{className:"ar",lang:"ar",textContent:heard||"(nothing)"}));
+      };
+      rec.onerror=e=>{ if(e.error==="not-allowed"||e.error==="service-not-allowed") fallback("Microphone access is blocked here. Use the self-check below, or run the local version (see the README)."); else { fb.className="feedback no"; fb.textContent="Didn't catch that ("+e.error+"). Try again."; } };
+      rec.onend=()=>{ mic.disabled=false; mic.textContent="🎤 Say it"; };
+      try{ rec.start(); }catch(e){ fallback("Speech recognition could not start here."); }
+    };
+    st.append(mic,meter,fb);
+  } else fallback("This browser can't score your speech (Chrome, Edge and Safari can, when running the local version). Say it aloud, replay the recording, and mark yourself honestly.");
+  function fallback(msg){
+    note.hidden=false; note.textContent=msg;
+    if(st.querySelector(".self")) return;
+    st.append(el("div",{className:"row self"},
+      el("button",{className:"btn",type:"button",textContent:"I said it well",onclick:()=>{S.speak.tries++;save();newSpeak();}}),
+      el("button",{className:"btn",type:"button",textContent:"Needs work",onclick:()=>{say(it.ar,0.55);}})));
+  }
+  st.append(el("button",{className:"btn",type:"button",textContent:"Next phrase",onclick:newSpeak}));
+}
+// ---- type ----
+const KEYS="ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي ة ى ء أ إ آ ؤ ئ".split(" ");
+function newType(){
+  const st=$("#type-stage"); st.textContent="";
+  const pool=ITEMS.filter(it=>plain(it.ar).length<=12); const it=pool[Math.floor(Math.random()*pool.length)];
+  st.append(el("p",{className:"tag",textContent:"Listen, then write it"}),el("div",{className:"row"},playBtn(it.ar),slowBtn(it.ar)),el("p",{className:"en",textContent:it.en}));
+  setTimeout(()=>say(it.ar),150);
+  const inp=el("input",{type:"text",id:"type-answer",className:"answer",lang:"ar",dir:"rtl",autocomplete:"off",autocapitalize:"off",spellcheck:false,placeholder:"اكتب هنا"});
+  inp.setAttribute("aria-label","your answer in arabic");
+  const kbd=el("div",{className:"kbd"});
+  KEYS.forEach(k=>kbd.append(el("button",{type:"button",textContent:k,lang:"ar",onclick:()=>{inp.value+=k;}})));
+  kbd.append(el("button",{type:"button",className:"wide",textContent:"space",onclick:()=>{inp.value+=" ";}}),
+    el("button",{type:"button",className:"wide",textContent:"⌫ delete",onclick:()=>{inp.value=[...inp.value].slice(0,-1).join("");}}));
+  const fb=el("div",{className:"feedback"});
+  const check=el("button",{className:"btn primary",type:"button",textContent:"Check"});
+  check.onclick=()=>{
+    const a=plain(inp.value), t=plain(it.ar); S.typed.total++;
+    fb.textContent="";
+    if(a===t){ S.typed.right++; fb.className="feedback ok"; fb.append("Correct  ",el("span",{className:"ar",lang:"ar",textContent:it.ar})); }
+    else{
+      fb.className="feedback no"; fb.append("Answer: ",el("span",{className:"diff",lang:"ar",textContent:it.ar})," ",el("span",{className:"translit",textContent:it.tr}));
+      if(a) { const yours=el("div",{className:"diff",lang:"ar"}); [...a].forEach((ch,i)=>yours.append(el("span",{className:ch===t[i]?"":"x",textContent:ch}))); fb.append(el("div",{className:"tag",textContent:"Yours (differences underlined):"}),yours); }
+    }
+    save(); check.disabled=true;
+    st.append(el("button",{className:"btn",type:"button",textContent:"Next word",onclick:newType}));
+  };
+  inp.addEventListener("keydown",e=>{ if(e.key==="Enter"&&!check.disabled) check.click(); });
+  st.append(inp,kbd,check,fb,el("p",{className:"tag",textContent:`Correct ${S.typed.right}/${S.typed.total}`}));
+}
+// ---- progress ----
+function renderProgress(){
+  renderStats(); const l=$("#progress-list"); l.textContent="";
+  const learned=Object.values(S.cards).filter(c=>c.reps>0).length;
+  const mature=Object.values(S.cards).filter(c=>c.interval>=21).length;
+  const rows=[["Day streak",S.streak],["Cards learned",learned+" of "+ITEMS.length],["Cards remembered 3+ weeks",mature],["Reviews today",S.reviewsToday],
+    ["Quiz",S.quiz.total?`${S.quiz.right}/${S.quiz.total} (${Math.round(100*S.quiz.right/S.quiz.total)}%)`:"not started"],
+    ["Typing",S.typed.total?`${S.typed.right}/${S.typed.total}`:"not started"],["Best speaking match",S.speak.tries?S.speak.best+"%":"not started"]];
+  Object.keys(DECKS).forEach(d=>{const n=DECKS[d].length;const k=ITEMS.filter(it=>it.deck===d&&S.cards[it.id]?.reps>0).length;rows.push([d+" deck",`${k}/${n}`]);});
+  rows.forEach(([a,b])=>l.append(el("div",{},el("span",{textContent:a}),el("b",{textContent:String(b)}))));
+}
+$("#reset-btn").onclick=()=>{$("#reset-confirm").hidden=false;};
+$("#reset-confirm").onclick=()=>{S={cards:{},streak:0,lastDay:"",reviewsToday:0,quiz:{right:0,total:0},speak:{best:0,tries:0},typed:{right:0,total:0}};save();$("#reset-confirm").hidden=true;renderProgress();};
+// ---- tutor (only where the claude viewer offers it) ----
+const history=[];
+async function setupTutor(){
+  if(!window.claude?.use) return;
+  const sample=await window.claude.use("sample"); if(!sample) return;
+  $("#tutor-tab").hidden=false;
+  const chat=$("#chat");
+  const add=(cls,...kids)=>{const m=el("div",{className:"msg "+cls},...kids);chat.append(m);m.scrollIntoView({block:"nearest"});return m;};
+  add("",el("span",{className:"ar",lang:"ar",textContent:"أَهْلًا! أَنَا مُعَلِّمُك. كَيْفَ حَالُك؟"}),el("span",{className:"t",textContent:"ahlan! anā muʿallimuk. kayfa ḥāluk?"}),el("span",{textContent:"Hi! I'm your teacher. How are you?"}));
+  $("#compose").onsubmit=async e=>{
+    e.preventDefault(); const inp=$("#chat-input"); const text=inp.value.trim().slice(0,500); if(!text) return;
+    inp.value=""; add("me",el("span",{textContent:text})); const btn=$("#chat-send"); btn.disabled=true;
+    const wait=add("",el("span",{className:"t",textContent:"…"}));
+    history.push({role:"user",content:text});
+    const instructions="You are a patient Arabic tutor for an English-speaking beginner learning Modern Standard Arabic. "+
+      "Reply ONLY with JSON: {\"arabic\": short fully vowelled MSA reply (1-2 simple sentences) that keeps the conversation going with a question, "+
+      "\"translit\": its transliteration, \"english\": its translation, \"correction\": if the learner's last message tried Arabic and had a mistake, a one-line friendly correction in English with the corrected Arabic, else \"\"}. "+
+      "If the learner asks how to say something, answer it in the arabic field. Conversation so far:\n"+
+      history.slice(-10).map(m=>(m.role==="user"?"Learner: ":"Tutor: ")+m.content).join("\n");
+    try{
+      const r=await sample.json(instructions,{modelTier:"default"});
+      wait.textContent="";
+      wait.append(el("span",{className:"ar",lang:"ar",textContent:r.arabic||""}),el("span",{className:"t",textContent:r.translit||""}),el("span",{textContent:r.english||""}));
+      if(r.correction) wait.append(el("span",{className:"fix",textContent:r.correction}));
+      wait.append(el("div",{className:"row",style:"margin-top:6px"},playBtn(r.arabic||"","▶ Hear")));
+      history.push({role:"assistant",content:r.arabic||""});
+    }catch(err){
+      wait.textContent=err?.code==="rate_limited"?"Too many messages at once, wait a minute and try again.":"The tutor couldn't answer that. Try again in a moment.";
+      history.pop();
+    }
+    btn.disabled=false;
+  };
+}
+// ---- boot ----
+touchDay(); renderStats(); renderLetterGrid(); renderLetter(); setupTutor();
+})();
+</script>
