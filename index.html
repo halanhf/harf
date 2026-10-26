@@ -364,12 +364,17 @@ const KEY="harf-v1";
 let S={cards:{},streak:0,lastDay:"",reviewsToday:0,quiz:{right:0,total:0},speak:{best:0,tries:0},typed:{right:0,total:0}};
 try{const raw=localStorage.getItem(KEY); if(raw) S=Object.assign(S,JSON.parse(raw));}catch(e){}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}};
-const today=()=>new Date().toISOString().slice(0,10);
+// local calendar day (not utc), so a late-night session in summer time counts for the right day
+const dayKey=d=>`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+const today=()=>dayKey(new Date());
+const yesterday=()=>{const d=new Date();d.setDate(d.getDate()-1);return dayKey(d);};
+// called when the learner actually practises, never on page load, so opening the app doesn't keep a streak alive
 function touchDay(){
   const t=today(); if(S.lastDay===t) return;
-  const y=new Date(Date.now()-86400000).toISOString().slice(0,10);
-  S.streak=S.lastDay===y?S.streak+1:1; S.lastDay=t; S.reviewsToday=0; save();
+  S.streak=S.lastDay===yesterday()?S.streak+1:1; S.lastDay=t; S.reviewsToday=0; save();
 }
+const shownStreak=()=>S.lastDay===today()||S.lastDay===yesterday()?S.streak:0;
+const reviewsToday=()=>S.lastDay===today()?S.reviewsToday:0;
 // ---- all items ----
 const ITEMS=[];
 for(const [deck,rows] of Object.entries(DECKS)) rows.forEach(([ar,tr,en])=>ITEMS.push({id:deck+"|"+ar,deck,ar,tr,en}));
@@ -405,7 +410,7 @@ function renderStats(){
   const now=Date.now(); const learned=Object.values(S.cards).filter(c=>c.reps>0).length;
   const due=Object.values(S.cards).filter(c=>c.due<=now).length;
   const st=$("#stats"); st.textContent="";
-  st.append("Streak ",el("b",{textContent:S.streak+"d"})," · Learned ",el("b",{textContent:learned+"/"+ITEMS.length})," · Due ",el("b",{textContent:String(due)}));
+  st.append("Streak ",el("b",{textContent:shownStreak()+"d"})," · Learned ",el("b",{textContent:learned+"/"+ITEMS.length})," · Due ",el("b",{textContent:String(due)}));
 }
 // ---- letters ----
 let curLetter=0;
@@ -433,6 +438,7 @@ const deckSel=$("#deck-select"), dirSel=$("#dir-select");
 deckSel.append(el("option",{value:"all",textContent:"All decks"}),...Object.keys(DECKS).map(d=>el("option",{value:d,textContent:d})));
 deckSel.onchange=dirSel.onchange=renderReview;
 const NEW_PER_DAY=10;
+let reviewTimer=0;
 function nextCard(){
   const now=Date.now(); const pool=ITEMS.filter(it=>deckSel.value==="all"||it.deck===deckSel.value);
   const due=pool.filter(it=>S.cards[it.id]&&S.cards[it.id].due<=now).sort((a,b)=>S.cards[a.id].due-S.cards[b.id].due);
@@ -444,7 +450,13 @@ function nextCard(){
 function renderReview(){
   renderStats(); const st=$("#review-stage"); st.textContent="";
   const it=nextCard();
-  if(!it){ st.append(el("p",{className:"en",textContent:"All caught up"}),el("p",{className:"tag",textContent:"Nothing due in this deck. Come back later, or try the quiz."})); return; }
+  clearTimeout(reviewTimer);
+  if(!it){
+    const soon=ITEMS.filter(x=>(deckSel.value==="all"||x.deck===deckSel.value)&&S.cards[x.id]).map(x=>S.cards[x.id].due).filter(d=>d-Date.now()<15*60000).sort((a,b)=>a-b)[0];
+    if(soon){ const secs=Math.max(1,Math.ceil((soon-Date.now())/1000));
+      st.append(el("p",{className:"en",textContent:"Next card in "+(secs<60?secs+"s":Math.ceil(secs/60)+" min")}),el("p",{className:"tag",textContent:"Cards you marked Again come back shortly. Keep this tab open, or try the quiz meanwhile."}));
+      reviewTimer=setTimeout(()=>{ if(!$("#review").hidden) renderReview(); },Math.min(secs*1000,30000)); return; }
+    st.append(el("p",{className:"en",textContent:"All caught up"}),el("p",{className:"tag",textContent:"Nothing due in this deck. Come back later, or try the quiz."})); return; }
   const dir=dirSel.value; const isNew=!S.cards[it.id];
   if(isNew) st.append(el("p",{className:"tag",textContent:"New card"}));
   if(dir==="ar-en") st.append(el("div",{className:"big",lang:"ar",textContent:it.ar}));
@@ -485,14 +497,15 @@ function newQuiz(){
     correct=L[2]+" ("+L[3]+")"; opts=pickOptions(correct,LETTERS.map(x=>x[2]+" ("+x[3]+")"),4); spoken=L[1];
   } else {
     const it=ITEMS[Math.floor(Math.random()*ITEMS.length)]; correct=it.en;
-    opts=pickOptions(correct,[...new Set(ITEMS.map(x=>x.en))],4); spoken=it.ar;
+    const same=plain(it.ar);
+    opts=pickOptions(correct,[...new Set(ITEMS.filter(x=>x===it||plain(x.ar)!==same).map(x=>x.en))],4); spoken=it.ar;
     if(mode==="read"){ prompt=el("div",{className:"big",lang:"ar",textContent:plain(it.ar)}); st.append(el("p",{className:"tag",textContent:"Read it (no vowel marks). What does it mean?"})); }
     else { prompt=el("div",{className:"row"},playBtn(it.ar),slowBtn(it.ar)); st.append(el("p",{className:"tag",textContent:"What did you hear?"})); setTimeout(()=>say(it.ar),150); }
   }
   st.append(prompt);
   const box=el("div",{className:"options"}); const fb=el("p",{className:"feedback"});
   opts.forEach(o=>box.append(el("button",{className:"btn",type:"button",textContent:o,onclick:e=>{
-    if(box.dataset.done) return; box.dataset.done="1"; S.quiz.total++;
+    if(box.dataset.done) return; box.dataset.done="1"; touchDay(); S.quiz.total++;
     const ok=o===correct; if(ok) S.quiz.right++; save();
     [...box.children].forEach(b=>{ if(b.textContent===correct) b.classList.add("right"); else if(b===e.currentTarget) b.classList.add("wrong"); });
     fb.className="feedback "+(ok?"ok":"no"); fb.textContent=ok?"Correct":"Not quite: "+correct; say(spoken);
@@ -519,7 +532,7 @@ function newSpeak(){
         const alts=[...e.results[0]].map(a=>a.transcript); let best=0,heard=alts[0]||"";
         alts.forEach(a=>{const s=similarity(a,it.ar); if(s>best){best=s;heard=a;}});
         const pct=Math.round(best*100); meter.firstChild.style.width=pct+"%";
-        S.speak.tries++; S.speak.best=Math.max(S.speak.best,pct); save();
+        touchDay(); S.speak.tries++; S.speak.best=Math.max(S.speak.best,pct); save();
         fb.className="feedback "+(pct>=80?"ok":"no");
         fb.textContent=(pct>=80?"Great, ":pct>=50?"Close, ":"Try again, ")+pct+"% match. Heard: ";
         fb.append(el("span",{className:"ar",lang:"ar",textContent:heard||"(nothing)"}));
@@ -534,7 +547,7 @@ function newSpeak(){
     note.hidden=false; note.textContent=msg;
     if(st.querySelector(".self")) return;
     st.append(el("div",{className:"row self"},
-      el("button",{className:"btn",type:"button",textContent:"I said it well",onclick:()=>{S.speak.tries++;save();newSpeak();}}),
+      el("button",{className:"btn",type:"button",textContent:"I said it well",onclick:()=>{touchDay();S.speak.tries++;save();newSpeak();}}),
       el("button",{className:"btn",type:"button",textContent:"Needs work",onclick:()=>{say(it.ar,0.55);}})));
   }
   st.append(el("button",{className:"btn",type:"button",textContent:"Next phrase",onclick:newSpeak}));
@@ -555,7 +568,7 @@ function newType(){
   const fb=el("div",{className:"feedback"});
   const check=el("button",{className:"btn primary",type:"button",textContent:"Check"});
   check.onclick=()=>{
-    const a=plain(inp.value), t=plain(it.ar); S.typed.total++;
+    const a=plain(inp.value), t=plain(it.ar); touchDay(); S.typed.total++;
     fb.textContent="";
     if(a===t){ S.typed.right++; fb.className="feedback ok"; fb.append("Correct  ",el("span",{className:"ar",lang:"ar",textContent:it.ar})); }
     else{
@@ -573,7 +586,7 @@ function renderProgress(){
   renderStats(); const l=$("#progress-list"); l.textContent="";
   const learned=Object.values(S.cards).filter(c=>c.reps>0).length;
   const mature=Object.values(S.cards).filter(c=>c.interval>=21).length;
-  const rows=[["Day streak",S.streak],["Cards learned",learned+" of "+ITEMS.length],["Cards remembered 3+ weeks",mature],["Reviews today",S.reviewsToday],
+  const rows=[["Day streak",shownStreak()],["Cards learned",learned+" of "+ITEMS.length],["Cards remembered 3+ weeks",mature],["Reviews today",reviewsToday()],
     ["Quiz",S.quiz.total?`${S.quiz.right}/${S.quiz.total} (${Math.round(100*S.quiz.right/S.quiz.total)}%)`:"not started"],
     ["Typing",S.typed.total?`${S.typed.right}/${S.typed.total}`:"not started"],["Best speaking match",S.speak.tries?S.speak.best+"%":"not started"]];
   Object.keys(DECKS).forEach(d=>{const n=DECKS[d].length;const k=ITEMS.filter(it=>it.deck===d&&S.cards[it.id]?.reps>0).length;rows.push([d+" deck",`${k}/${n}`]);});
@@ -615,6 +628,6 @@ async function setupTutor(){
   };
 }
 // ---- boot ----
-touchDay(); renderStats(); renderLetterGrid(); renderLetter(); setupTutor();
+renderStats(); renderLetterGrid(); renderLetter(); setupTutor();
 })();
 </script>
