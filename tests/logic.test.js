@@ -28,16 +28,33 @@ test("letter forms",()=>{
   assert.deepEqual({...L.letterForms("ب",true)},{isolated:"ب",initial:"بـ",medial:"ـبـ",final:"ـب"});
   assert.deepEqual({...L.letterForms("د",false)},{isolated:"د",initial:"د",medial:"ـد",final:"ـد"});
 });
-test("schedule: again in a minute, good grows, ease floor 1.3",()=>{
-  const a=L.schedule({},0,now); assert.equal(a.d,now+60000); assert.equal(a.r,0);
-  const g1=L.schedule({},2,now); assert.equal(g1.d,now+DAY);
-  const g2=L.schedule(g1,2,now); assert.equal(g2.d,now+3*DAY);
-  assert.equal(L.schedule(g2,2,now).i,7.5);
-  let c={}; for(let i=0;i<20;i++) c=L.schedule(c,0,now); assert.equal(c.e,1.3);
+test("fsrs: new card goes through 1m and 10m steps, then graduates to days",()=>{
+  const a=L.schedule({},2,now); assert.equal(a.st,1); assert.equal(a.d,now+10*60000); assert.equal(a.i,0);
+  const b=L.schedule(a,2,now+10*60000); assert.equal(b.st,-1); assert.ok(b.i>=3&&b.i<=6,`graduated interval ${b.i}`);
+  const again=L.schedule({},0,now); assert.equal(again.st,0); assert.equal(again.d,now+60000);
+  const easy=L.schedule({},3,now); assert.equal(easy.st,-1); assert.ok(easy.i>=10,`easy first interval ${easy.i}`);
 });
-test("card pack/unpack round-trips",()=>{
-  const c=L.schedule(L.schedule({},2,now),3,now); const u=L.unpackCard(L.packCard(c));
-  assert.equal(u.r,c.r); assert.equal(u.l,c.l); assert.ok(Math.abs(u.e-c.e)<0.01); assert.ok(Math.abs(u.d-c.d)<60000); assert.ok(Math.abs(u.i-c.i)<0.001);
+test("fsrs: intervals grow on success and a lapse sends the card back to relearning with lower stability",()=>{
+  let c=L.schedule(L.schedule({},2,now),2,now+600000); let t=c.d; const ivs=[c.i];
+  for(let k=0;k<4;k++){ c=L.schedule(c,2,t); ivs.push(c.i); t=c.d; }
+  for(let k=1;k<ivs.length;k++) assert.ok(ivs[k]>ivs[k-1],`intervals ${ivs}`);
+  const s0=c.s; const lapsed=L.schedule(c,0,t); assert.ok(lapsed.s<s0); assert.equal(lapsed.l,1); assert.equal(lapsed.st,0); assert.equal(lapsed.d,t+10*60000);
+  const back=L.schedule(lapsed,2,t+10*60000); assert.equal(back.st,-1); assert.ok(back.i>=1);
+});
+test("fsrs: higher retention target means shorter intervals; difficulty stays in 1..10",()=>{
+  const base=L.schedule(L.schedule({},2,now),2,now+600000);
+  const lo=L.schedule(base,2,base.d,0.85), hi=L.schedule(base,2,base.d,0.95);
+  assert.ok(hi.i<lo.i,`0.95 -> ${hi.i}, 0.85 -> ${lo.i}`);
+  let c=base; for(let k=0;k<10;k++){ c=L.schedule(c,1,c.d); assert.ok(c.k>=1&&c.k<=10); }
+  assert.ok(Math.abs(L.retrievability(5,5)-0.9)<1e-9); assert.ok(Math.abs(L.intervalDays(5,0.9)-5)<1e-9);
+});
+test("cards pack and unpack; old sm-2 cards migrate",()=>{
+  const c=L.schedule(L.schedule({},2,now),2,now+600000); const u=L.unpackCard(L.packCard(c));
+  for(const k of ["r","l","st","i"]) assert.equal(u[k],c[k],k); assert.ok(Math.abs(u.s-c.s)<0.001); assert.ok(Math.abs(u.d-c.d)<60000);
+  const old=L.unpackCard([250,7.5,3,Math.round((now+7.5*DAY)/60000),0]);
+  assert.equal(old.st,-1); assert.equal(old.i,7.5); assert.ok(old.s>=7); assert.equal(old.k,5);
+  const reviewed=L.schedule(old,2,old.d); assert.ok(reviewed.i>7.5);
+  assert.equal(L.isLeech({l:4}),true); assert.equal(L.isLeech({l:3}),false);
 });
 test("card modes get harder with reps; fuṣḥā track stays receptive",()=>{
   assert.equal(L.cardMode(undefined,false),"recognize");
@@ -46,6 +63,7 @@ test("card modes get harder with reps; fuṣḥā track stays receptive",()=>{
   const later=[3,4,5,6,7,8,9,10].map(r=>L.cardMode({r},false));
   assert.ok(later.filter(m=>m==="produce").length>=4);
   for(let r=0;r<10;r++) assert.notEqual(L.cardMode({r},true),"produce");
+  assert.equal(L.cardMode({r:0},false,true),"build"); assert.equal(L.cardMode({r:4},false,true),"produce");
 });
 test("soundShift flags gulf pronunciations the phone voice will miss",()=>{
   assert.deepEqual([...L.soundShift("قهوة","gahwa")],["ق is said g"]);

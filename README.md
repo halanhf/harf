@@ -16,7 +16,14 @@ The method combines the [Palteca method](https://palteca.com/method) (understand
 | Interleaving | Reviews mix units so you never get two from the same lesson in a row |
 | Speaking (output) | Say every new phrase, role-play each dialogue as speaker B, chat with an AI partner |
 | Ear training | Minimal pairs (قلب/كلب, صيف/سيف, ...) before you're asked to produce the sounds |
-| Habit | One "Today" session of about 30 minutes. New lessons pause if reviews pile up, so nothing slips |
+| Habit | One "Today" session of about 30 minutes. New lessons pause if reviews pile up, so nothing slips. Streak freezes (one per 7-day streak, hold 2) so one missed day doesn't end the habit |
+| Better scheduling | FSRS-5, the scheduler Anki uses by default: fewer reviews for the same retention, and it copes with breaks. You choose the retention target (85, 90 or 95%) |
+| Graduated recall | New phrases come back after 1 minute and 10 minutes before moving to days (Pimsleur's graduated interval recall) |
+| Building sentences | Each dialogue line becomes a word-tile puzzle the day after its lesson, then later something you say from English |
+| Output with feedback | "Make a sentence": translate an English sentence built from your words, get a corrected Gulf version and why (Swain's output hypothesis) |
+| Anticipation | Hands-free audio drill: English prompt, pause to answer out loud, then the Gulf phrase twice (Pimsleur) |
+| Shadowing | Repeat along with any line, slow then normal speed. Record yourself and compare where the microphone is allowed |
+| Tricky cards | Cards forgotten 4+ times are listed with an AI memory hook, since more repetition alone rarely fixes them |
 
 ## Stages
 
@@ -39,7 +46,8 @@ You move up when a stage's lessons are done **and** 80% of its phrases have stuc
 | Stages 0 and 1, reviews, role-play | Yes | Yes |
 | AI lessons (stage 2+), stories, conversation partner | Yes | No (needs Claude) |
 | Progress | Saved to your account, private to you, works across devices | This browser only |
-| Speech scoring | No (published pages can't use the microphone) | Yes, in Chrome, Edge or recent Safari |
+| Speech scoring, record and compare | No (published pages can't use the microphone) | Yes, in Chrome, Edge or recent Safari |
+| Backup | Export a file from Progress | Export a file from Progress |
 
 Run locally (speech recognition needs a secure page, so serve it):
 
@@ -48,6 +56,20 @@ python -m http.server 8000      # then open http://localhost:8000
 ```
 
 Privacy note: Chrome and Edge send speech recognition audio to Google's or Microsoft's servers.
+
+## Research behind it
+
+| Source | Finding used |
+|---|---|
+| [Anki manual: FSRS](https://docs.ankiweb.net/faqs/what-spaced-repetition-algorithm) | FSRS models stability, difficulty and retrievability; needs fewer reviews than SM-2 for the same retention and handles delays better |
+| [Implementing FSRS in 100 lines](https://borretti.me/article/implementing-fsrs-in-100-lines) | FSRS-5 default parameters and formulas used here |
+| [The Pimsleur Method](https://www.pimsleur.com/the_pimsleur_method) | Graduated interval recall, anticipation, a small core vocabulary, words learned inside conversations |
+| [Swain's output hypothesis (JALT review)](https://jalt-publications.org/tlt/articles/2198-output-and-beyond-dialogue-review-merrill-swains-current-approach-sla) | Producing language makes learners notice gaps and test hypotheses, so input alone isn't enough |
+| [Shadowing as a language learning method](https://journal.uia.no/index.php/NJLTL/article/view/1139) | Shadowing studied mainly for listening and pronunciation; evidence is promising but mostly small-scale |
+| [Duolingo on streaks](https://blog.duolingo.com/how-duolingo-streak-builds-habit) | Streak freezes raised daily active learners without encouraging more days off |
+| [The Palteca Method](https://palteca.com/method) | Input you can understand, topic clusters, 7±2 items, minimal pairs, short grammar insights |
+
+Few apps teach Gulf Arabic specifically; most mainstream ones teach MSA, Egyptian or Levantine ([overview](https://talkinarabic.com/arabic-apps/)). That gap is why this course is written for Khaleeji.
 
 ## Known limits
 
@@ -64,4 +86,4 @@ Privacy note: Chrome and Edge send speech recognition audio to Google's or Micro
 node --test tests/logic.test.js
 ```
 
-Covers the scheduler, card-mode progression, interleaving, the mastery gate, the AI-lesson validator, Arabic normalisation (including Gulf letters چ and گ), and the course data: every hand-written lesson must pass the same validator AI lessons do, with 5 to 9 phrases and no duplicates across the course.
+Covers the FSRS scheduler (learning steps, growth, lapses, retention target, migration of older cards), card-mode progression, interleaving, the mastery gate, the AI-lesson validator, Arabic normalisation (including Gulf letters چ and گ), and the course data: every hand-written lesson must pass the same validator AI lessons do, with 5 to 9 phrases and no duplicates across the course.
