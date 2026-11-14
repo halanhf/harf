@@ -9,7 +9,7 @@ const block=id=>{const m=html.match(new RegExp(`<script id="${id}">([\\s\\S]*?)<
 const ctx={module:{exports:{}}};
 vm.createContext(ctx);
 vm.runInContext(block("logic"),ctx);
-vm.runInContext(block("data")+";this.D={LETTERS,VOWELS,SHIFTS,PAIRS,COURSE,SYLLABUS,MSA};",ctx);
+vm.runInContext(block("data")+";this.D={LETTERS,VOWELS,SHIFTS,PAIRS,COURSE,SYLLABUS,MSA,GRAMMAR,NUMBERS};",ctx);
 const L=ctx.module.exports, D=ctx.D;
 const DAY=86400000, now=1e12;
 
@@ -56,20 +56,29 @@ test("cards pack and unpack; old sm-2 cards migrate",()=>{
   const reviewed=L.schedule(old,2,old.d); assert.ok(reviewed.i>7.5);
   assert.equal(L.isLeech({l:4}),true); assert.equal(L.isLeech({l:3}),false);
 });
-test("card modes get harder with reps; fuṣḥā track stays receptive",()=>{
+test("card modes follow how well a card is known, not how often it was seen",()=>{
   assert.equal(L.cardMode(undefined,false),"recognize");
-  assert.equal(L.cardMode({r:1},false),"recognize");
-  assert.equal(L.cardMode({r:2},false),"listen");
-  const later=[3,4,5,6,7,8,9,10].map(r=>L.cardMode({r},false));
-  assert.ok(later.filter(m=>m==="produce").length>=4);
-  for(let r=0;r<10;r++) assert.notEqual(L.cardMode({r},true),"produce");
-  assert.equal(L.cardMode({r:0},false,true),"build"); assert.equal(L.cardMode({r:4},false,true),"produce");
+  // a brand-new card failed twice is still learning: no jump to speaking on day one
+  let c=L.schedule({},0,now); c=L.schedule(c,0,now+60000); c=L.schedule(c,0,now+120000);
+  assert.equal(L.cardMode(c,false),"recognize");
+  c=L.schedule(L.schedule({},2,now),2,now+600000); assert.equal(c.st,-1); assert.ok(c.i<3||L.cardMode(c,false)!=="recognize");
+  assert.equal(L.cardMode({st:-1,i:2,r:3},false),"listen");
+  const mature=[3,4,5,6,7,8,9,10].map(r=>L.cardMode({st:-1,i:12,r},false));
+  assert.ok(mature.filter(m=>m==="produce").length>=4,`${mature}`);
+  // a lapse sends it back to recognise
+  const lapsed=L.schedule({s:20,k:5,d:now,t:now-20*DAY,r:8,l:0,st:-1,i:20},0,now); assert.equal(L.cardMode(lapsed,false),"recognize");
+  for(let r=0;r<10;r++){ assert.notEqual(L.cardMode({st:-1,i:30,r},true),"produce"); assert.notEqual(L.cardMode({st:-1,i:30,r},true,false),"build"); }
+  assert.equal(L.cardMode(undefined,false,true),"build"); assert.equal(L.cardMode({st:-1,i:3,r:6},false,true),"build");
+  const ms=[0,1,2,3,4,5].map(r=>L.cardMode({st:-1,i:10,r},false,true)); assert.ok(ms.includes("produce")&&ms.includes("build"),`${ms}`);
 });
 test("soundShift flags gulf pronunciations the phone voice will miss",()=>{
   assert.deepEqual([...L.soundShift("قهوة","gahwa")],["ق is said g"]);
   assert.deepEqual([...L.soundShift("باكر","bāchir")],["ك is said ch"]);
   assert.deepEqual([...L.soundShift("غالي","ghāli")],[]);
   assert.deepEqual([...L.soundShift("دجاج","diyāy")],["ج is said y"]);
+  assert.deepEqual([...L.soundShift("شاي","chāy")],["ش is said ch here"]);
+  assert.deepEqual([...L.soundShift("شلونج؟","shlōnich?")],["ج here is said ch"]);
+  assert.deepEqual([...L.soundShift("شلونك؟","shlōnak?")],[]);
 });
 test("planDay: oldest due first, capped, new lesson paused when backlog is big",()=>{
   const cards={a:{d:now-3},b:{d:now-1},c:{d:now+DAY},d:{d:now-2}};
@@ -77,6 +86,8 @@ test("planDay: oldest due first, capped, new lesson paused when backlog is big",
   assert.deepEqual([...p.reviews],["a","b"]); assert.equal(p.allowNew,true);
   const many={}; for(let i=0;i<50;i++) many["x"+i]={d:now-i};
   const q=L.planDay(many,{},now,{maxReviews:60,backlogLimit:40}); assert.equal(q.allowNew,false); assert.equal(q.reviews.length,50);
+  // a restored card (negative marker) is back in the plan
+  assert.deepEqual([...L.planDay(cards,{d:-5},now).reviews],["a","d","b"]);
 });
 test("interleave avoids back-to-back cards from one unit",()=>{
   const ids=["u1.0","u1.1","u1.2","u2.0","u2.1","u3.0"]; const out=L.interleave(ids,id=>id.split(".")[0]);
@@ -97,6 +108,10 @@ test("validateUnit accepts a good ai lesson and rejects bad shapes",()=>{
   assert.deepEqual([...L.validateUnit(good)],[]);
   assert.ok(L.validateUnit(null).length);
   assert.ok(L.validateUnit({...good,items:good.items.slice(0,2)}).length);
+  // three phrases is the floor a generated lesson can reach after known ones are removed; it must still load everywhere
+  assert.deepEqual([...L.validateUnit({...good,items:good.items.slice(0,3)})],[]);
+  assert.deepEqual([...L.validateUnit({...good,items:good.items.map(it=>({...it,note:"to a woman: x"}))})],[]);
+  assert.ok(L.validateUnit({...good,items:good.items.map(it=>({...it,note:7}))}).length);
   assert.ok(L.validateUnit({...good,dialogue:[...good.dialogue.slice(0,2),{who:"C",ar:"x",tr:"x",en:"x"}]}).length);
   assert.ok(L.validateUnit({...good,items:[...good.items.slice(0,3),{ar:"hello",tr:"x",en:"x"}]}).length);
 });
@@ -120,7 +135,56 @@ test("data: every course unit is well formed with 7±2 phrases and no duplicate 
   }
 });
 test("data: syllabus covers stages 2-5 with ten topics each; pairs and fuṣḥā list are well formed",()=>{
-  for(const n of [2,3,4,5]) assert.equal(D.SYLLABUS[n].topics.length,10);
+  for(const n of [2,3,4,5]){ const t=D.SYLLABUS[n].topics; assert.ok(t.length>=10,`stage ${n}`); assert.equal(new Set(t).size,t.length,`stage ${n} has duplicate topics`); }
   for(const p of D.PAIRS){ assert.equal(p.length,2); assert.notEqual(p[0][0],p[1][0]); }
   const seen=new Set(); for(const m of D.MSA){ assert.equal(m.length,3); assert.ok(!seen.has(m[0])); seen.add(m[0]); }
+});
+test("word match marks which target words speech recognition caught",()=>{
+  const m=L.wordMatch("أبي قهوة لو سمحت","ابي قهوه لو"); assert.deepEqual([...m.words.map(w=>w.ok)],[true,true,true,false]); assert.ok(m.pct>=60&&m.pct<100);
+  assert.equal(L.wordMatch("زين","زين").pct,100); assert.equal(L.wordMatch("زين","").words[0].ok,false);
+});
+test("streak: consecutive days grow it, freezes cover gaps, a time-zone change can't reset it",()=>{
+  let s={streak:0,freezes:0,lastDay:""}; s=L.nextStreak(s,"2026-01-01"); assert.equal(s.streak,1);
+  s=L.nextStreak(s,"2026-01-02"); assert.equal(s.streak,2); assert.equal(L.nextStreak(s,"2026-01-02").newDay,false);
+  // flying west: the clock goes back a day; nothing resets
+  const w=L.nextStreak(s,"2026-01-01"); assert.equal(w.streak,2); assert.equal(w.newDay,false);
+  for(let d=3;d<=7;d++) s=L.nextStreak(s,`2026-01-0${d}`); assert.equal(s.streak,7); assert.equal(s.freezes,1);
+  const gap=L.nextStreak(s,"2026-01-09"); assert.equal(gap.streak,8); assert.equal(gap.freezes,0);
+  assert.equal(L.nextStreak(s,"2026-01-10").streak,1);
+  assert.equal(L.visibleStreak(s,"2026-01-09"),7); assert.equal(L.visibleStreak(s,"2026-01-10"),0);
+  assert.equal(L.nextStreak({streak:30,lastDay:"2026-02-28"},"2026-03-01").streak,31);
+});
+test("merge: a stale copy never overwrites newer work, from either side",()=>{
+  const card=(t,r)=>[1,5,r,t+1440,0,t,-1,1];
+  const phone={updatedAt:100,lastDay:"2026-03-02",streak:9,cards:{a:card(5000,4),b:card(1000,2)},unitsDone:{u1:"2026-03-01"},suspended:{x:50},custom:[{id:"c1",ar:"ا"}],log:{"2026-03-02":5},session:{day:"2026-03-02",done:{review:1}}};
+  const pc={updatedAt:900,lastDay:"2026-03-01",streak:8,cards:{a:card(3000,3),b:card(2000,3),c:card(10,1)},unitsDone:{u2:"2026-03-01"},suspended:{x:-80},custom:[{id:"c2",ar:"ب"}],log:{"2026-03-02":2,"2026-03-01":7},session:{day:"2026-03-01",done:{learn:1}}};
+  for(const m of [L.mergeProgress(phone,pc),L.mergeProgress(pc,phone)]){
+    assert.equal(m.cards.a[5],5000); assert.equal(m.cards.b[5],2000); assert.ok(m.cards.c);
+    assert.deepEqual(Object.keys(m.unitsDone).sort(),["u1","u2"]);
+    assert.equal(m.suspended.x,-80); assert.equal(L.isHidden(m.suspended,"x"),false);
+    assert.deepEqual([...m.custom.map(c=>c.id)].sort(),["c1","c2"]);
+    assert.equal(m.log["2026-03-02"],5); assert.equal(m.log["2026-03-01"],7);
+    assert.equal(m.lastDay,"2026-03-02"); assert.equal(m.streak,9); assert.equal(m.session.day,"2026-03-02");
+    assert.equal(m.updatedAt,900);
+  }
+  // old 5-element cards still merge
+  assert.ok(L.mergeProgress({cards:{a:[100,2,1,999999,0]}},{cards:{}}).cards.a);
+});
+test("merge: starting over wins over older progress on other devices, but keeps work done after it",()=>{
+  const R=Date.UTC(2026,2,5); const rMin=Math.floor(R/60000);
+  const reset={updatedAt:R,resetAt:R,resetDay:"2026-03-05",cards:{},unitsDone:{},lastDay:"",streak:0};
+  const old={updatedAt:R+5,lastDay:"2026-03-04",streak:12,cards:{a:[1,5,3,rMin+999,0,rMin-100,-1,2],b:[1,5,1,rMin+999,0,rMin+50,-1,1]},unitsDone:{u1:"2026-03-01",u2:"2026-03-05"},custom:[{id:"c"+(R-1000).toString(36)+"abc"},{id:"c"+(R+1000).toString(36)+"abc"}]};
+  const m=L.mergeProgress(old,reset);
+  assert.deepEqual(Object.keys(m.cards),["b"]); assert.deepEqual(Object.keys(m.unitsDone),["u2"]); assert.equal(m.streak,0); assert.equal(m.custom.length,1);
+  assert.equal(m.resetAt,R);
+});
+test("grade labels say when the card comes back",()=>{
+  assert.equal(L.whenLabel(60000),"in 1 min"); assert.equal(L.whenLabel(10*60000),"in 10 min"); assert.equal(L.whenLabel(3*3600000),"in 3 h");
+  assert.equal(L.whenLabel(DAY),"tomorrow"); assert.equal(L.whenLabel(9*DAY),"in 9 days"); assert.equal(L.whenLabel(90*DAY),"in 3 mo");
+});
+test("data: grammar tables and numbers are well formed; stage 1 keeps 7±2 phrases per lesson",()=>{
+  for(const g of D.GRAMMAR){ assert.ok(g.title&&Array.isArray(g.rows)&&g.rows.length>=4,g.title); for(const r of g.rows){ assert.equal(r.length,3,g.title); assert.match(r[0],/[ء-ي]/); } }
+  const seen=new Set(); for(const n of D.NUMBERS){ assert.equal(n.length,4); assert.match(n[1],/[ء-ي]/); assert.ok(!seen.has(n[3])); seen.add(n[3]); }
+  assert.ok(D.COURSE.length>=14); assert.equal(D.COURSE[0].id,"u1");
+  for(const p of D.VOWELS) assert.equal(p.length,6); for(const p of D.SHIFTS) assert.equal(p.length,7);
 });
