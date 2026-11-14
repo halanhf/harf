@@ -764,18 +764,33 @@ function serialize(){ const o=Object.assign({},S,{cards:{}}); delete o.gen; for(
 function hydrate(raw){ const o=clone(raw); const b=blank(); const s=Object.assign(b,o);
   s.settings=Object.assign(blank().settings,o.settings||{}); s.session=Object.assign({day:"",done:{}},o.session||{}); s.session.done=Object.assign({},s.session.done);
   for(const f of ["unitsDone","suspended","log","rp","seen"]) if(!s[f]||typeof s[f]!=="object"||Array.isArray(s[f])) s[f]={};
-  s.custom=Array.isArray(s.custom)?s.custom.filter(c=>c&&typeof c.id==="string"&&typeof c.ar==="string"):[];
-  const cards={}; for(const [k,a] of Object.entries(o.cards||{})) if(Array.isArray(a)&&(a.length===5||a.length===8)&&a.every(x=>typeof x==="number"&&isFinite(x))) cards[k]=unpackCard(a);
+  const st=s.settings, r=+st.retention; st.retention=r>=0.7&&r<=0.99?r:0.9; st.newPerDay=+st.newPerDay===2?2:1; st.autoplay=st.autoplay!==false;
+  if(!["auto","always","tap","never"].includes(st.translit)) st.translit="auto"; if(!["","m","f"].includes(st.gender)) st.gender=""; if(!["auto","device","claude"].includes(st.voice)) st.voice="auto";
+  for(const f of ["streak","freezes","reviewsToday","newToday","talks","resetAt","updatedAt"]) s[f]=isFinite(+s[f])?+s[f]:0;
+  for(const f of ["lastDay","freezeUsed","msaDay","resetDay"]) if(typeof s[f]!=="string") s[f]="";
+  s.custom=Array.isArray(s.custom)?s.custom.filter(c=>c&&typeof c.id==="string"&&/^c[0-9a-z]+$/.test(c.id)&&typeof c.ar==="string"&&c.ar).map(c=>({id:c.id,ar:c.ar.slice(0,80),tr:String(c.tr||"").slice(0,80),en:String(c.en||"").slice(0,80)})):[];
+  const cards={}; for(const [k,a] of Object.entries(o.cards&&typeof o.cards==="object"?o.cards:{})) if(validCard(a)) cards[k]=unpackCard(a);
   s.cards=cards; s.gen=S.gen||[]; return s; }
-const persistLocal=()=>{ try{ localStorage.setItem(KEY,JSON.stringify(serialize())); }catch(e){} };
-try{ const raw=localStorage.getItem(KEY); if(raw) S=hydrate(JSON.parse(raw)); const g=localStorage.getItem(KEY+"-gen"); if(g) S.gen=(JSON.parse(g)||[]).filter(u=>u&&typeof u.id==="string"&&!validateUnit(u).length); }catch(e){}
+// this browser's copy. a failed write (storage full, private window, blocked) is shown, never swallowed: in the installed app it's the only copy
+let localFail=false;
+function persistLocal(){
+  try{ localStorage.setItem(KEY,JSON.stringify(serialize())); if(localFail){ localFail=false; if(sync.state!=="error") $("#sync-note").hidden=true; } }
+  catch(e){ if(!localFail){ localFail=true; const n=$("#sync-note"); n.hidden=false; n.textContent="This browser isn't letting Harf save (storage is full or blocked, as in a private window). Export a backup from Progress now so today's work isn't lost."; } }
+}
+const cleanIn=raw=>cleanSaved(raw,Date.now(),today());
+let unreadable=false;
+try{ const raw=localStorage.getItem(KEY);
+  // saved progress that can't be read is kept aside under another name, not overwritten by the next save
+  if(raw){ try{ S=hydrate(cleanIn(JSON.parse(raw))); }catch(e){ unreadable=true; try{ localStorage.setItem(KEY+"-unreadable-"+Date.now(),raw); }catch(e2){} } }
+  const g=localStorage.getItem(KEY+"-gen"); if(g){ const a=JSON.parse(g); S.gen=Array.isArray(a)?a.filter(validGen):[]; } }catch(e){}
 const markDone=k=>{ if(S.session.day!==today()) S.session={day:today(),done:{}}; S.session.done[k]=1; save(); };
 
 // ===== sync to the account (claude.ai only). every write reads the account copy first and merges, so no device's work is lost =====
 let DB=null, UID=null, synced=false, saveTimer=0, pushing=null, pushAgain=false, replaceNext=false;
 const sync={state:"local",msg:"This browser only"};
+if(unreadable){ const n=$("#sync-note"); n.hidden=false; n.textContent="Saved progress in this browser couldn't be read, so a copy was kept aside and the app started fresh. Import a backup from Progress if you have one."; }
 function setSync(state,msg){ sync.state=state; sync.msg=msg; const n=$("#sync-note");
-  if(state==="error"){ n.hidden=false; n.textContent=msg+" Your progress is still safe in this browser and will sync when it can."; } else n.hidden=true; }
+  if(state==="error"){ n.hidden=false; n.textContent=msg+" Your progress is still safe in this browser and will sync when it can."; } else if(!localFail) n.hidden=true; }
 const syncError=e=>{ const c=e&&e.code; return c==="quota_exceeded"?"Account storage is full.":c==="not_granted"||c==="forbidden"||c==="permission_denied"?"This page isn't allowed to save to your account.":`Couldn't save to your account${c?" ("+c+")":""}.`; };
 function save(){ S.updatedAt=Date.now(); persistLocal(); if(synced){ clearTimeout(saveTimer); saveTimer=setTimeout(pushRemote,1500); } }
 const progressRef=()=>DB.doc(`data/users/${UID}/progress`);
@@ -787,7 +802,7 @@ function pushRemote(opts){
   pushing=(async()=>{
     try{
       const ref=progressRef();
-      if(!(opts&&opts.replace)){ const snap=await ref.get(); if(snap.exists&&applyMerged(mergeProgress(serialize(),snap.data()))) afterRemoteChange(); }
+      if(!(opts&&opts.replace)){ const snap=await ref.get(); if(snap.exists&&applyMerged(mergeProgress(serialize(),cleanIn(snap.data())))) afterRemoteChange(); }
       await ref.set(serialize()); setSync("ok","Saved to your account");
     }catch(e){ setSync("error",syncError(e)); }
   })();
@@ -806,18 +821,22 @@ async function setupSync(){
   DB=db; UID=id; setSync("pending","Connecting to your account…");
   try{
     const snap=await progressRef().get();
-    if(snap.exists&&applyMerged(mergeProgress(serialize(),snap.data()))) afterRemoteChange();
+    if(snap.exists&&applyMerged(mergeProgress(serialize(),cleanIn(snap.data())))) afterRemoteChange();
   }catch(e){ setSync("error",syncError(e)); }
   synced=true; await pushRemote();
   try{
     const us=await progressRef().collection("units").limit(1000).get();
     const known=new Set(S.gen.map(u=>u.id)); let added=false;
-    us.docs.forEach(d=>{ const u=clone(d.data()); if(u&&typeof u.id==="string"&&!known.has(u.id)&&!validateUnit(u).length){ S.gen.push(u); added=true; } });
+    us.docs.forEach(d=>{ const u=clone(d.data()); if(validGen(u)&&!known.has(u.id)){ S.gen.push(u); added=true; } });
     S.gen.sort((a,b)=>(a.createdAt||0)-(b.createdAt||0));
     if(added){ try{ localStorage.setItem(KEY+"-gen",JSON.stringify(S.gen)); }catch(e){} afterRemoteChange(); }
     for(const u of S.gen) if(!us.docs.some(d=>d.id===u.id)) saveGenUnit(u);
   }catch(e){}
 }
+// another tab or window of this app saved: merge its work in, so this tab's next save can't overwrite it.
+// merged in memory only (no write back), so two tabs never answer each other's saves in a loop
+addEventListener("storage",e=>{ if(e.key!==KEY||!e.newValue) return;
+  try{ const before=sig(S), gen=S.gen; S=hydrate(mergeProgress(serialize(),cleanIn(JSON.parse(e.newValue)))); S.gen=gen; if(sig(S)!==before) afterRemoteChange(); }catch(x){} });
 document.addEventListener("visibilitychange",()=>{ if(synced) pushRemote(); });
 addEventListener("pagehide",()=>{ if(synced) pushRemote(); });
 
@@ -1061,8 +1080,10 @@ function todaySteps(){
   if(S.session.day!==today()) S.session={day:today(),done:{}};
   const p=plan(), nu=nextUnit(), done=S.session.done, dueN=p.reviews.length;
   const steps=[];
-  steps.push({key:"review",title:"Review",desc:dueN?`${dueN} card${dueN>1?"s":""} due, mixed together (about ${Math.max(1,Math.round(dueN*0.35))} min)`:done.review?"All caught up":"Nothing due right now",
-    avail:dueN>0,done:!dueN&&!!done.review,run:()=>startReview(()=>{ markDone("review"); show("today"); })});
+  // after a long break the backlog is worked off one capped session a day, so one session still finishes the day
+  const capDone=!!done.review&&dueN>0&&S.lastDay===today()&&S.reviewsToday>=60;
+  steps.push({key:"review",title:"Review",desc:capDone?`Today's reviews are done. ${p.backlog} more wait for the next days (extra sessions from Review are fine)`:dueN?`${dueN} card${dueN>1?"s":""} due, mixed together (about ${Math.max(1,Math.round(dueN*0.35))} min)`:done.review?"All caught up":"Nothing due right now",
+    avail:dueN>0&&!capDone,done:(!dueN||capDone)&&!!done.review,run:()=>startReview(()=>{ markDone("review"); show("today"); })});
   const L={key:"learn",title:"New lesson",avail:false,done:false};
   const cap=S.lastDay===today()&&S.newToday>=S.settings.newPerDay;
   if(cap){ L.desc=S.settings.newPerDay>1?"Today's new lessons are done.":"Today's new lesson is done. More tomorrow: spacing beats cramming."; L.done=true; }
@@ -1226,8 +1247,10 @@ function renderReviewTab(){
 function startReview(onDone){
   const exit=onDone||(()=>show(currentTab));
   const f=focusView({title:"Review",onClose:exit});
-  let queue=interleave(plan().reviews,id=>ITEM_UNIT[id]||"x"), total=queue.length, n=0, shown=null, waitTimer=0;
-  const topUp=()=>{ const due=planDay(liveCards(),S.suspended,Date.now(),{maxReviews:500}).reviews.filter(id=>!queue.includes(id)&&id!==shown); if(due.length){ queue.push(...due); total+=due.length; } };
+  const first=plan(); let queue=interleave(first.reviews,id=>ITEM_UNIT[id]||"x"), total=queue.length, n=0, shown=null, waitTimer=0;
+  // cards over today's cap wait for the next session; the top-up only brings in cards that come due while this one runs
+  const held=new Set(planDay(liveCards(),S.suspended,Date.now(),{maxReviews:1e9}).reviews.filter(id=>!first.reviews.includes(id)));
+  const topUp=()=>{ const due=planDay(liveCards(),S.suspended,Date.now(),{maxReviews:500,exclude:held}).reviews.filter(id=>!queue.includes(id)&&id!==shown); if(due.length){ queue.push(...due); total+=due.length; } };
   const finish=()=>{ keyHandler=null; flush(); f.progress(total,total); f.body.textContent="";
     if(onDone&&n) S.session.done.review=1;
     f.body.append(el("div",{className:"stage"},el("p",{className:"en",textContent:n?"Review done":"Nothing due"}),el("p",{className:"tag",textContent:n?`${n} card${n>1?"s":""} reviewed. They'll come back as you start to forget them.`:"Learn a lesson and its phrases will show up here."}),
@@ -1251,7 +1274,8 @@ function startReview(onDone){
     const labels={recognize:"What does it mean?",listen:"Listen: what does it mean?",produce:"Say it in Gulf Arabic",build:"Build the sentence"};
     stage.append(el("p",{className:"mode",textContent:(it.msaTrack?"Fuṣḥā · ":"")+labels[mode]}));
     let suggest=-1;
-    if(mode==="recognize") ap(stage,bigAr(it.ar),trLine(it.tr,"tap"));
+    const trTap=mode==="recognize"?trLine(it.tr,"tap"):null;
+    if(mode==="recognize") ap(stage,bigAr(it.ar),trTap);
     else if(mode==="listen"){ ap(stage,el("div",{className:"row center"},playBtn(it.ar,"Play",{vary:true}),slowBtn(it.ar))); setTimeout(()=>{ if(f.alive()&&stage.isConnected) say(it.ar,null,{vary:true}); },150); }
     else if(mode==="build"){
       // tap the words in order; building it yourself beats reading it (desirable difficulty)
@@ -1277,7 +1301,7 @@ function startReview(onDone){
       el("details",{className:"more"},el("summary",{textContent:"Problem with this card?"}),el("div",{className:"row"},el("button",{className:"btn small ghost",type:"button",textContent:"Hide it from reviews",onclick:()=>{ S.suspended[id]=Date.now(); save(); next(); }}))));
     const grade=g=>{ touchDay(); S.cards[id]=sched(S.cards[id],g,Date.now()); S.reviewsToday++; logActivity(1); save(); if(onDone) S.session.done.review=1; next(); };
     const gr=el("div",{className:"grades",role:"group","aria-label":"How well did you know it?"});
-    const reveal=()=>{ if(!ans.hidden) return; ans.hidden=false; acts.textContent=""; const now=Date.now();
+    const reveal=()=>{ if(!ans.hidden) return; ans.hidden=false; acts.textContent=""; if(trTap&&trTap.tagName==="BUTTON") trTap.remove(); const now=Date.now();
       [["Forgot",0],["Hard",1],["Got it",2],["Easy",3]].forEach(([lab,g])=>{ const nx=sched(card,g,now);
         gr.append(el("button",{className:"btn"+(g===(suggest>=0?suggest:2)?" primary":""),type:"button",onclick:()=>grade(g)},el("span",{},lab,el("kbd",{textContent:String(g+1)})),el("small",{textContent:whenLabel(nx.d-now)}))); });
       acts.append(gr); if(mode!=="listen"&&mode!=="build") auto(it.ar); };
@@ -1680,13 +1704,16 @@ Return ONLY JSON: {"hook": one or two sentences in English, "example_ar", "examp
     try{ const a=el("a",{href:URL.createObjectURL(new Blob([data],{type:"application/json"})),download:`harf-backup-${today()}.json`}); document.body.append(a); a.click(); a.remove(); bmsg.textContent="Downloaded."; }
     catch(e){ try{ await navigator.clipboard.writeText(data); bmsg.textContent="Copied to the clipboard. Paste it into a note to keep it."; }catch(e2){ bmsg.textContent="Couldn't export here."; } } };
   imp.onchange=()=>{ const file=imp.files&&imp.files[0]; imp.value=""; if(!file) return; if(file.size>3e6){ bmsg.textContent="That file is too big to be a Harf backup."; return; }
-    file.text().then(t=>{ let o; try{ o=JSON.parse(t); }catch(e){ throw 0; } if(!o||o.app!=="harf-gulf"||!o.state||typeof o.state!=="object"||typeof o.state.cards!=="object") throw 0;
-      const gen=Array.isArray(o.gen)?o.gen.filter(u=>u&&typeof u.id==="string"&&!validateUnit(u).length):[];
-      const n=Object.keys(o.state.cards||{}).length;
-      bmsg.textContent=""; ap(bmsg,el("p",{textContent:`Backup${o.saved?" from "+String(o.saved).slice(0,10):""}: ${n} cards, ${Object.keys(o.state.unitsDone||{}).length} lessons. It's combined with what's here: each card keeps its most recent review, so nothing is lost.`}),
+    file.text().then(t=>{ let o; try{ o=JSON.parse(t); }catch(e){ throw 0; } if(!o||o.app!=="harf-gulf"||!o.state||typeof o.state!=="object"||Array.isArray(o.state)||!o.state.cards||typeof o.state.cards!=="object") throw 0;
+      const gen=Array.isArray(o.gen)?o.gen.filter(validGen):[]; const state=cleanIn(o.state);
+      const n=Object.keys(state.cards).length, bad=Object.keys(o.state.cards).length-n;
+      // a backup made after "start over" on another device carries that reset: say what it will remove before it does
+      const lost=state.resetAt>(S.resetAt||0)?Object.values(S.cards).filter(c=>c.t<state.resetAt).length:0;
+      bmsg.textContent=""; ap(bmsg,el("p",{textContent:`Backup${o.saved?" from "+String(o.saved).slice(0,10):""}: ${n} cards, ${Object.keys(state.unitsDone).length} lessons${bad?` (${bad} damaged card${bad>1?"s":""} skipped)`:""}. It's combined with what's here: each card keeps its most recent review.`}),
+        lost?el("p",{className:"notice warn",textContent:`This backup was made after “Start over” on ${state.resetDay||"another device"}, so ${lost} card${lost>1?"s":""} here from before then will be removed.`}):null,
         el("div",{className:"row"},el("button",{className:"btn small primary",type:"button",textContent:"Restore it",onclick:()=>{
           const ids=new Set(S.gen.map(u=>u.id)); gen.forEach(u=>{ if(!ids.has(u.id)){ S.gen.push(u); saveGenUnit(u); } }); rebuild();
-          applyMerged(mergeProgress(serialize(),o.state)); rebuild(); save(); flush(); refresh(); renderMe(); announce("Backup restored"); }}),
+          applyMerged(mergeProgress(serialize(),state)); rebuild(); save(); flush(); refresh(); renderMe(); announce("Backup restored"); }}),
           el("button",{className:"btn small ghost",type:"button",textContent:"Cancel",onclick:()=>{ bmsg.textContent=""; }}))); })
     .catch(()=>{ bmsg.textContent="That isn't a Harf backup file."; }); };
   sec.append(el("div",{className:"setting"},el("span",{textContent:"Backup"}),el("div",{className:"row"},exp,impL,imp)),bmsg);
