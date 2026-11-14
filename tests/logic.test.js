@@ -188,3 +188,45 @@ test("data: grammar tables and numbers are well formed; stage 1 keeps 7±2 phras
   assert.ok(D.COURSE.length>=14); assert.equal(D.COURSE[0].id,"u1");
   for(const p of D.VOWELS) assert.equal(p.length,6); for(const p of D.SHIFTS) assert.equal(p.length,7);
 });
+test("fsrs: stability has a floor, so a card failed many times keeps its history instead of restarting as new",()=>{
+  let c=L.schedule(L.schedule({},2,now),2,now+600000); let t=c.d;
+  c=L.schedule(c,0,t); for(let k=1;k<=20;k++){ t+=60000; c=L.schedule(c,0,t); }
+  assert.ok(c.s>=L.S_MIN,`s ${c.s}`); assert.equal(c.l,1); assert.ok(c.r>20);
+  const u=L.unpackCard(L.packCard(c)); assert.ok(u.s>0); const k0=u.k;
+  const next=L.schedule(u,2,t+600000); assert.equal(next.st,-1); assert.ok(Math.abs(next.k-k0)<2,"difficulty kept");
+  // a card saved with s 0 by the older code is repaired on load, not treated as brand new
+  const old=L.unpackCard([0,6.4,25,Math.round(t/60000),3,Math.round(t/60000),0,0]); assert.ok(old.s>0); assert.equal(L.schedule(old,2,t).r,26);
+});
+test("fsrs: review intervals keep hard < good < easy, stay capped, and a bad retention setting can't make NaN",()=>{
+  let c=L.schedule(L.schedule({},2,now),2,now+600000);
+  for(const days of [1,3,30]){ const t=c.d+days*DAY; const iv=[1,2,3].map(g=>L.schedule(c,g,t).i); assert.ok(iv[0]<iv[1]&&iv[1]<iv[2],`${iv}`); c=L.schedule(c,2,t); }
+  for(const r of ["x",5,-1,null,NaN]){ const x=L.schedule(c,2,c.d,r); assert.ok(Number.isFinite(x.d)&&Number.isFinite(x.i),String(r)); }
+  const huge=L.schedule({s:1e7,k:1,d:now,t:now-1e7*DAY,r:9,l:0,st:-1,i:1e7},3,now); assert.ok(huge.i<=L.MAX_IVL);
+});
+test("planDay: cards held back by the daily cap stay out of a topped-up session",()=>{
+  const many={}; for(let i=0;i<100;i++) many["x"+i]={d:now-100+i};
+  const first=L.planDay(many,{},now); assert.equal(first.reviews.length,60);
+  const held=new Set(L.planDay(many,{},now,{maxReviews:1e9}).reviews.filter(id=>!first.reviews.includes(id)));
+  many.x0={d:now+60000}; // reviewed in the session, comes back in a minute
+  const top=L.planDay(many,{},now+120000,{maxReviews:500,exclude:held}).reviews; assert.ok(top.includes("x0")); assert.ok(top.every(id=>!held.has(id)));
+});
+test("merge and cleanSaved: a damaged or hostile backup never replaces good progress",()=>{
+  const good=[1,5,3,1000,0,900,-1,2];
+  const local={updatedAt:5,cards:{a:good,b:good}};
+  const bad={updatedAt:9e15,cards:{a:[1,5,3,"x",0,"zzz",-1,2],b:null,c:[1,2]},custom:{},unitsDone:"abc",resetAt:9e15,resetDay:"9999-12-31"};
+  const clean=L.cleanSaved(bad,now,"2026-11-14");
+  assert.deepEqual(Object.keys(clean.cards),[]); assert.equal(JSON.stringify(clean.unitsDone),"{}"); assert.equal(clean.resetAt,0); assert.equal(clean.resetDay,"");
+  const skew=L.cleanSaved({resetAt:now+60000,resetDay:"2026-11-15"},now,"2026-11-14"); assert.equal(skew.resetAt,now); assert.equal(skew.resetDay,"2026-11-14");
+  const m=L.mergeProgress(local,clean); assert.deepEqual([...m.cards.a],good); assert.deepEqual([...m.cards.b],good);
+  // even unclean, merge itself never picks a broken card or throws on a non-array word list
+  const m2=L.mergeProgress(local,{cards:bad.cards,custom:{}}); assert.deepEqual([...m2.cards.a],good); assert.deepEqual([...m2.cards.b],good); assert.equal(m2.cards.c,undefined);
+  assert.equal(JSON.stringify(L.cleanSaved(null,now).cards),"{}"); assert.equal(L.cleanSaved([1,2],now).custom.length,0);
+});
+test("validGen accepts generated lessons only",()=>{
+  const u={id:"gabc12",stage:2,title:"T",goal:"G",tip:"t",dialogue:[1,2,3].map(()=>({who:"A",ar:"هلا",tr:"hala",en:"hi"})),items:[1,2,3].map(i=>({ar:"زين"+i,tr:"zēn",en:"good"}))};
+  assert.equal(L.validGen(u),true); assert.equal(L.validGen({...u,id:"u1"}),false); assert.equal(L.validGen({...u,stage:"x"}),false); assert.equal(L.validGen({...u,items:[]}),false);
+});
+test("streak: a clock that was days ahead and got corrected carries on instead of freezing the streak",()=>{
+  const s=L.nextStreak({streak:5,freezes:1,lastDay:"2027-01-10"},"2026-11-14"); assert.equal(s.newDay,true); assert.equal(s.lastDay,"2026-11-14"); assert.equal(s.streak,5);
+  assert.equal(L.nextStreak(s,"2026-11-15").streak,6);
+});

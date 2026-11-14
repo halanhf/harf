@@ -526,20 +526,23 @@ const DAY=86400000, MATURE_DAYS=7;
 const FSRS_W=[0.40255,1.18385,3.173,15.69105,7.1949,0.5345,1.4604,0.0046,1.54575,0.1192,1.01925,1.9395,0.11,0.29605,2.2698,0.2315,2.9898,0.51655,0.6621];
 const F_FACTOR=19/81, F_DECAY=-0.5;
 const LEARN_STEPS=[1,10], RELEARN_STEPS=[10]; // minutes: pimsleur-style graduated recall before a card leaves the day
+const S_MIN=0.01, MAX_IVL=36500; // fsrs-rs floor for stability (so a card forgotten many times never looks brand new) and anki's longest interval
 const clampD=x=>Math.min(10,Math.max(1,x));
 const retrievability=(days,s)=>Math.pow(1+F_FACTOR*days/s,F_DECAY);
 const intervalDays=(s,ret)=>s/F_FACTOR*(Math.pow(ret,1/F_DECAY)-1);
 const initD=G=>clampD(FSRS_W[4]-Math.exp(FSRS_W[5]*(G-1))+1);
 const nextD=(k,G)=>{ const dd=-FSRS_W[6]*(G-3); return clampD(FSRS_W[7]*initD(4)+(1-FSRS_W[7])*(k+dd*(10-k)/9)); };
-const sSuccess=(k,s,R,G)=>s*(1+Math.exp(FSRS_W[8])*(11-k)*Math.pow(s,-FSRS_W[9])*(Math.exp(FSRS_W[10]*(1-R))-1)*(G===2?FSRS_W[15]:1)*(G===4?FSRS_W[16]:1));
-const sFail=(k,s,R)=>Math.min(FSRS_W[11]*Math.pow(k,-FSRS_W[12])*(Math.pow(s+1,FSRS_W[13])-1)*Math.exp(FSRS_W[14]*(1-R)),s);
-const sShort=(s,G)=>s*Math.exp(FSRS_W[17]*(G-3+FSRS_W[18]));
+const sSuccess=(k,s,R,G)=>Math.max(S_MIN,s*(1+Math.exp(FSRS_W[8])*(11-k)*Math.pow(s,-FSRS_W[9])*(Math.exp(FSRS_W[10]*(1-R))-1)*(G===2?FSRS_W[15]:1)*(G===4?FSRS_W[16]:1)));
+const sFail=(k,s,R)=>Math.max(S_MIN,Math.min(FSRS_W[11]*Math.pow(k,-FSRS_W[12])*(Math.pow(s+1,FSRS_W[13])-1)*Math.exp(FSRS_W[14]*(1-R)),s));
+const sShort=(s,G)=>Math.max(S_MIN,s*Math.exp(FSRS_W[17]*(G-3+FSRS_W[18])));
 // card {s, k, d due ms, t last review ms, r reps, l lapses, st learning step (-1 = in review), i scheduled interval days}
 // grade from the ui: 0 again, 1 hard, 2 good, 3 easy
 function schedule(card,grade,now,retention){
-  const ret=retention||0.9, G=grade+1;
+  let ret=+retention; if(!(ret>=0.7&&ret<=0.99)) ret=0.9; // a bad setting must never produce NaN due dates
+  const G=grade+1;
   const c=Object.assign({s:0,k:0,d:0,t:0,r:0,l:0,st:0,i:0},card||{});
-  const graduate=()=>{ c.st=-1; c.i=Math.max(1,Math.round(intervalDays(c.s,ret))); c.d=now+c.i*DAY; };
+  const ivl=s=>Math.min(MAX_IVL,Math.max(1,Math.round(intervalDays(s,ret))));
+  const graduate=()=>{ c.st=-1; c.i=ivl(c.s); c.d=now+c.i*DAY; };
   const step=(steps)=>{ c.i=0;
     if(G===1){ c.st=0; c.d=now+steps[0]*60000; }
     else if(G===2){ c.d=now+Math.round((steps[c.st]||steps[0])*1.5)*60000; }
@@ -550,7 +553,10 @@ function schedule(card,grade,now,retention){
   else {
     const elapsed=Math.max(0,(now-c.t)/DAY); const R=retrievability(elapsed,c.s);
     if(G===1){ c.s=sFail(c.k,c.s,R); c.k=nextD(c.k,1); c.l++; c.st=0; c.i=0; c.d=now+RELEARN_STEPS[0]*60000; }
-    else { c.s=elapsed<1?sShort(c.s,G):sSuccess(c.k,c.s,R,G); c.k=nextD(c.k,G); graduate(); }
+    else if(elapsed<1){ c.s=sShort(c.s,G); c.k=nextD(c.k,G); graduate(); }
+    else { // as the reference scheduler does: hard < good < easy by at least a day each
+      let h=ivl(sSuccess(c.k,c.s,R,2)), g=ivl(sSuccess(c.k,c.s,R,3)), e=ivl(sSuccess(c.k,c.s,R,4)); h=Math.min(h,g); g=Math.max(g,h+1); e=Math.max(e,g+1);
+      c.s=sSuccess(c.k,c.s,R,G); c.k=nextD(c.k,G); c.st=-1; c.i=Math.min(MAX_IVL,[h,g,e][G-2]); c.d=now+c.i*DAY; }
   }
   c.r++; c.t=now; return c;
 }
@@ -608,7 +614,8 @@ function stageStatus(unitIds,itemIds,state){
 // one day's plan: oldest due cards first (capped), then a new lesson only if the backlog is under control
 function planDay(cards,suspended,now,opts){
   const o=Object.assign({maxReviews:60,backlogLimit:40},opts||{});
-  const due=Object.keys(cards).filter(id=>!isHidden(suspended,id)&&cards[id].d<=now).sort((a,b)=>cards[a].d-cards[b].d);
+  const ex=o.exclude||new Set(); // cards held back by today's cap stay out of a session that is topped up as it runs
+  const due=Object.keys(cards).filter(id=>!isHidden(suspended,id)&&!ex.has(id)&&cards[id].d<=now).sort((a,b)=>cards[a].d-cards[b].d);
   return {reviews:due.slice(0,o.maxReviews),backlog:due.length,allowNew:due.length<=o.backlogLimit};
 }
 // interleave: never two cards from the same unit back to back when avoidable
@@ -625,7 +632,8 @@ function interleave(ids,unitOf){
 const packCard=c=>[Math.round(c.s*1000)/1000,Math.round(c.k*100)/100,c.r,Math.round(c.d/60000),c.l,Math.round(c.t/60000),c.st,c.i];
 function unpackCard(a){
   if(a.length===5){ const i=a[1], d=a[3]*60000; return {s:Math.max(0.4,i),k:5,r:a[2],d,l:a[4],t:d-i*DAY,st:a[2]>0&&i>=1?-1:0,i}; }
-  return {s:a[0],k:a[1],r:a[2],d:a[3]*60000,l:a[4],t:a[5]*60000,st:a[6],i:a[7]};
+  const seen=a[2]>0; // a reviewed card stored with s 0 (older stability underflow) keeps its history instead of restarting as new
+  return {s:seen?Math.max(S_MIN,a[0]):a[0],k:seen?clampD(a[1]):a[1],r:a[2],d:a[3]*60000,l:a[4],t:a[5]*60000,st:a[6],i:a[7]};
 }
 const isLeech=c=>!!c&&c.l>=4;
 // days: "YYYY-MM-DD" keys in local time; arithmetic on the calendar date so a time-zone change can't skip or repeat a day
@@ -635,7 +643,8 @@ function nextStreak(st,t){
   const o={streak:st.streak||0,freezes:st.freezes||0,freezeUsed:st.freezeUsed||"",lastDay:st.lastDay||"",newDay:false};
   if(!o.lastDay){ o.streak=1; o.lastDay=t; o.newDay=true; return o; }
   const gap=dayNum(t)-dayNum(o.lastDay);
-  if(!(gap>0)) return o; // same day, or the clock went back (flew west): nothing changes
+  if(gap<-1){ o.lastDay=t; o.newDay=true; return o; } // the clock was days ahead and got corrected: carry on from today
+  if(!(gap>0)) return o; // same day, or the clock went back a day (flew west): nothing changes
   o.newDay=true;
   if(gap===1) o.streak++;
   else if(gap-1<=o.freezes&&gap<=3){ o.freezes-=gap-1; o.freezeUsed=t; o.streak++; }
@@ -649,6 +658,21 @@ function visibleStreak(st,t){
   if(!(gap>1)) return st.streak||0;
   return gap-1<=(st.freezes||0)&&gap<=3?st.streak||0:0;
 }
+const validCard=a=>Array.isArray(a)&&(a.length===5||a.length===8)&&a.every(x=>typeof x==="number"&&isFinite(x));
+// lessons written by ai: generated ids only (so one can't replace a hand-written lesson), a real stage, and a valid shape
+const validGen=u=>!!u&&typeof u.id==="string"&&/^g[0-9a-z]+$/.test(u.id)&&[2,3,4,5,6].includes(u.stage)&&!validateUnit(u).length;
+// make a saved copy from outside (backup file, account, another tab) safe to merge: wrong shapes become empty,
+// broken cards are dropped, and a "start over" marker can't be in the future (that would wipe work done after it)
+function cleanSaved(raw,now,todayKey){
+  const o=raw&&typeof raw==="object"&&!Array.isArray(raw)?Object.assign({},raw):{};
+  const cards={}; if(o.cards&&typeof o.cards==="object") for(const [k,a] of Object.entries(o.cards)) if(validCard(a)) cards[k]=a; o.cards=cards;
+  for(const f of ["unitsDone","suspended","log","rp","seen"]) if(!o[f]||typeof o[f]!=="object"||Array.isArray(o[f])) o[f]={};
+  if(!Array.isArray(o.custom)) o.custom=[];
+  const R=+o.resetAt; o.resetAt=R>0&&R<=now+DAY?Math.min(R,now):0; // a clock a little ahead is pulled back; a date far ahead is junk and ignored
+  o.resetDay=typeof o.resetDay==="string"&&o.resetAt?o.resetDay:"";
+  if(todayKey&&o.resetDay>todayKey) o.resetDay=todayKey;
+  return o;
+}
 // combine two saved copies of progress (packed form) so no device's work is lost: each card keeps its most recent
 // review, finished lessons and added words are unioned, and day counters come from whichever copy saw the later day
 function mergeProgress(a,b){
@@ -657,11 +681,13 @@ function mergeProgress(a,b){
   const out=Object.assign({},older,newer);
   const keys=(x,y)=>new Set([...Object.keys(x||{}),...Object.keys(y||{})]);
   const lastReview=c=>!Array.isArray(c)?-1:c.length===8?c[5]:c[3]-Math.round(c[1]*1440);
-  out.cards={}; for(const k of keys(a.cards,b.cards)){ const x=(a.cards||{})[k], y=(b.cards||{})[k];
+  const ok=c=>validCard(c)?c:undefined; // a broken card from a bad backup or copy must never replace a good one
+  out.cards={}; for(const k of keys(a.cards,b.cards)){ const x=ok((a.cards||{})[k]), y=ok((b.cards||{})[k]); if(!x&&!y) continue;
     out.cards[k]=!x?y:!y?x:(lastReview(x)>lastReview(y)||(lastReview(x)===lastReview(y)&&(x[2]||0)>=(y[2]||0)))?x:y; }
   out.unitsDone={}; for(const k of keys(a.unitsDone,b.unitsDone)){ const x=(a.unitsDone||{})[k], y=(b.unitsDone||{})[k]; out.unitsDone[k]=!x?y:!y?x:(x<y?x:y); }
   out.suspended={}; for(const k of keys(a.suspended,b.suspended)){ const x=+(a.suspended||{})[k]||0, y=+(b.suspended||{})[k]||0; out.suspended[k]=Math.abs(x)>=Math.abs(y)?x:y; }
-  const byId=new Map(); [...(older.custom||[]),...(newer.custom||[])].forEach(c=>{ if(c&&c.id) byId.set(c.id,c); }); out.custom=[...byId.values()];
+  const arr=x=>Array.isArray(x)?x:[];
+  const byId=new Map(); [...arr(older.custom),...arr(newer.custom)].forEach(c=>{ if(c&&c.id) byId.set(c.id,c); }); out.custom=[...byId.values()];
   out.log={}; for(const k of keys(a.log,b.log)) out.log[k]=Math.max(+(a.log||{})[k]||0,+(b.log||{})[k]||0);
   out.rp={}; for(const k of keys(a.rp,b.rp)){ const x=(a.rp||{})[k]||"", y=(b.rp||{})[k]||""; out.rp[k]=x>y?x:y; }
   out.seen=Object.assign({},a.seen,b.seen);
@@ -694,7 +720,7 @@ function whenLabel(ms){
   if(m<1.5) return "in 1 min"; if(m<60) return `in ${Math.round(m)} min`; if(m<1440) return `in ${Math.round(m/60)} h`;
   const d=Math.round(m/1440); if(d<60) return d===1?"tomorrow":`in ${d} days`; return `in ${Math.round(d/30)} mo`;
 }
-if(typeof module!=="undefined") module.exports={normalizeArabic,levenshtein,similarity,wordMatch,letterForms,schedule,retrievability,intervalDays,isLeech,FSRS_W,cardMode,pickOptions,soundShift,validateUnit,isHidden,stageStatus,planDay,interleave,packCard,unpackCard,MATURE_DAYS,dayNum,nextStreak,visibleStreak,mergeProgress,whenLabel};
+if(typeof module!=="undefined") module.exports={validCard,validGen,cleanSaved,S_MIN,MAX_IVL,normalizeArabic,levenshtein,similarity,wordMatch,letterForms,schedule,retrievability,intervalDays,isLeech,FSRS_W,cardMode,pickOptions,soundShift,validateUnit,isHidden,stageStatus,planDay,interleave,packCard,unpackCard,MATURE_DAYS,dayNum,nextStreak,visibleStreak,mergeProgress,whenLabel};
 </script>
 
 <script>
