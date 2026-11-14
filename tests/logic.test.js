@@ -240,3 +240,8 @@ test("built app: no third-party requests, and the csp allows exactly its own inl
   for(const js of scripts) assert.ok(csp.includes(`'sha256-${crypto.createHash("sha256").update(js).digest("base64")}'`),"script hash missing from csp");
   assert.match(csp,/default-src 'self'/); assert.match(csp,/object-src 'none'/);
 });
+test("built app: an update precaches fresh files, not the previous version still in the http cache",()=>{
+  const sw=fs.readFileSync(path.join(__dirname,"..","docs","sw.js"),"utf8");
+  assert.match(sw,/addAll\(SHELL\.map\(u=>new Request\(u,\{cache:"reload"\}\)\)\)/);
+  assert.match(sw,/const CACHE="harf-v[0-9a-f]{10}"/);
+});
