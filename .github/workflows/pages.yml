@@ -1,9 +1,8 @@
 name: pages
-# publishes docs/ (the installable app) to GitHub Pages. needs Settings > Pages > Source: GitHub Actions
+# publishes docs/ (the installable app) to GitHub Pages. needs Settings > Pages > Source: GitHub Actions,
+# and Pages needs a public repo (or GitHub Pro for a private one). manual until that's set up, so it can't fail on every push.
+# once it works, add back:  push: {branches: [main], paths: ["docs/**"]}
 on:
-  push:
-    branches: [main]
-    paths: ["docs/**"]
   workflow_dispatch:
 permissions:
   contents: read
