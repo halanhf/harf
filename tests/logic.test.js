@@ -230,3 +230,13 @@ test("streak: a clock that was days ahead and got corrected carries on instead o
   const s=L.nextStreak({streak:5,freezes:1,lastDay:"2027-01-10"},"2026-11-14"); assert.equal(s.newDay,true); assert.equal(s.lastDay,"2026-11-14"); assert.equal(s.streak,5);
   assert.equal(L.nextStreak(s,"2026-11-15").streak,6);
 });
+test("built app: no third-party requests, and the csp allows exactly its own inline scripts",()=>{
+  const crypto=require("node:crypto");
+  const built=fs.readFileSync(path.join(__dirname,"..","docs","index.html"),"utf8");
+  assert.ok(!/fonts\.g(oogleapis|static)/.test(built)); assert.ok(!/<(script|link)[^>]*(src|href)="https?:/.test(built));
+  const csp=built.match(/Content-Security-Policy" content="([^"]+)"/)[1];
+  const scripts=[...built.matchAll(/<script[^>]*>([\s\S]*?)<\/script>/g)].map(m=>m[1]);
+  assert.ok(scripts.length>=4);
+  for(const js of scripts) assert.ok(csp.includes(`'sha256-${crypto.createHash("sha256").update(js).digest("base64")}'`),"script hash missing from csp");
+  assert.match(csp,/default-src 'self'/); assert.match(csp,/object-src 'none'/);
+});

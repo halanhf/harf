@@ -1,10 +1,10 @@
 # builds the installable app (docs/) from index.html, the same file published on claude.ai
 # run: python build.py   (ci fails if docs/ is out of date)
-import hashlib, re, shutil
+import base64, hashlib, re, shutil
 from pathlib import Path
 
 root = Path(__file__).parent
-src = (root / "index.html").read_text(encoding="utf-8")
+src = (root / "index.html").read_text(encoding="utf-8").replace("\r\n", "\n")  # a windows checkout may have crlf; the build must match ci byte for byte
 out = root / "docs"
 
 # google fonts aren't available offline, so the app ships its own copies
@@ -19,10 +19,22 @@ fonts = """<style>
 @font-face{font-family:"Readex Pro";font-weight:500;font-display:swap;src:url(fonts/readex-pro-latin-500-normal.woff2) format("woff2")}
 @font-face{font-family:"Readex Pro";font-weight:600;font-display:swap;src:url(fonts/readex-pro-latin-600-normal.woff2) format("woff2")}
 </style>"""
+sw = """<script>
+// installed-app extras: offline support and asking the browser not to clear progress
+window.HARF_PWA=true;
+if("serviceWorker" in navigator) addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
+if(navigator.storage&&navigator.storage.persist) navigator.storage.persist().catch(()=>{});
+</script>
+"""
+rest = body.strip() + "\n" + sw
+# csp: only this app's own inline scripts (by hash) and files from its own folder; nothing loads from other sites
+hashes = " ".join(f"'sha256-{base64.b64encode(hashlib.sha256(js.encode()).digest()).decode()}'" for js in re.findall(r"<script[^>]*>(.*?)</script>", rest, re.S))
+csp = f"default-src 'self'; script-src 'self' {hashes}; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"
 head = f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="{csp}">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>{title}</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -40,19 +52,12 @@ head = f"""<!doctype html>
 </head>
 <body>
 """
-sw = """<script>
-// installed-app extras: offline support and asking the browser not to clear progress
-window.HARF_PWA=true;
-if("serviceWorker" in navigator) addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
-if(navigator.storage&&navigator.storage.persist) navigator.storage.persist().catch(()=>{});
-</script>
-"""
-html = head + body.strip() + "\n" + sw + "</body>\n</html>\n"
+html = head + rest + "</body>\n</html>\n"
 build = hashlib.sha256(html.encode()).hexdigest()[:10]
 
 if out.exists(): shutil.rmtree(out)
 shutil.copytree(root / "pwa", out)
-(out / "sw.js").write_text((root / "pwa" / "sw.js").read_text().replace("__BUILD__", build))
-(out / "index.html").write_text(html, encoding="utf-8")
+(out / "sw.js").write_text((root / "pwa" / "sw.js").read_text(encoding="utf-8").replace("\r\n", "\n").replace("__BUILD__", build), encoding="utf-8", newline="\n")  # lf on windows too, so ci matches
+(out / "index.html").write_text(html, encoding="utf-8", newline="\n")
 (out / ".nojekyll").write_text("")
 print(f"built docs/ ({build})")

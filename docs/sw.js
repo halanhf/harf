@@ -1,6 +1,6 @@
 // offline support for the installed app. the page is fetched network-first so a new version shows up on the next open;
 // fonts and icons are cache-first because they never change under the same name
-const CACHE="harf-v1401ae202e";
+const CACHE="harf-vaaecb63e5f";
 const SHELL=["./","./index.html","./manifest.webmanifest","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-maskable-512.png","./icons/apple-touch-icon.png","./icons/favicon-32.png",
   "./fonts/amiri-arabic-400-normal.woff2","./fonts/amiri-arabic-700-normal.woff2","./fonts/readex-pro-latin-400-normal.woff2","./fonts/readex-pro-latin-500-normal.woff2","./fonts/readex-pro-latin-600-normal.woff2","./fonts/readex-pro-latin-ext-400-normal.woff2"];
 self.addEventListener("install",e=>{ e.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL)).then(()=>self.skipWaiting())); });
