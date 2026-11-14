@@ -27,7 +27,7 @@ The method combines the [Palteca method](https://palteca.com/method) (understand
 | Self-correction first | In chat and sentence practice a mistake gets a hint and another try before the answer is shown (prompts beat recasts in the research) |
 | Many voices | Listening cards and ear training rotate through every Arabic voice the device has (high-variability training) |
 | Ear training | Minimal pairs (قلب/كلب, صيف/سيف, ...) before you're asked to produce the sounds |
-| Habit | One "Today" session of about 30 minutes. New lessons pause if reviews pile up, so nothing slips. Streak freezes (one per 7-day streak, hold 2) so one missed day doesn't end the habit |
+| Habit | One "Today" session of about 30 minutes, with at most 60 reviews a day, so a backlog after a break is worked off over a few days instead of in one sitting. New lessons pause while more than 40 reviews are waiting, so nothing slips. Streak freezes (one per 7-day streak, hold 2) so one missed day doesn't end the habit |
 | Better scheduling | FSRS-5, the scheduler Anki uses by default: fewer reviews for the same retention, and it copes with breaks. You choose the retention target (85, 90 or 95%) |
 | Graduated recall | New phrases come back after 1 minute and 10 minutes before moving to days (Pimsleur's graduated interval recall) |
 | Building sentences | Each dialogue line becomes a word-tile puzzle the day after its lesson, then later something you say from English |
@@ -61,11 +61,27 @@ You move up when a stage's lessons are done **and** 80% of its phrases have stuc
 | Voice | The device's Arabic voice; the Claude voice where the device has none | The device's Arabic voice |
 | Backup | Export a file from Progress | Export a file from Progress |
 
-Run locally (speech recognition needs a secure page, so serve it):
+Run the installable version locally (speech recognition needs a secure page, and `localhost` counts as one). In PowerShell or a terminal, from the repo folder:
 
 ```
-python -m http.server 8000      # then open http://localhost:8000
+python build.py                          # only after changing index.html
+python -m http.server 8000 -d docs       # then open http://localhost:8000
 ```
+
+Serve `docs/`, not the repo root: the root `index.html` is the claude.ai source, which loads Google Fonts and has no offline support.
+
+## Your progress is safe
+
+| Risk | What the app does |
+|---|---|
+| Browser storage full or blocked (private window) | A warning appears at the top telling you to export a backup; nothing fails silently |
+| Saved data can't be read | It is kept aside under another name, not overwritten, and you're told |
+| Two tabs or windows open at once | Each tab merges the other's saves, so neither overwrites the other's reviews |
+| A damaged or wrong backup file | Damaged cards are skipped, bad settings fall back to defaults, and the preview says what will change before anything is restored |
+| A backup made after "Start over" on another device | The preview warns how many cards here it will remove |
+| App update | Progress lives in browser storage, which updates never touch; the new version loads on the next open while online |
+
+Export a backup from Progress now and then anyway: browser storage can be cleared by you or the system, and the installed app's progress lives only on that device. The installed app has a strict content security policy: it runs only its own scripts and loads nothing from other sites.
 
 Privacy note: Chrome and Edge send speech recognition audio to Google's or Microsoft's servers. On claude.ai, dictation goes to Anthropic's speech-to-text and the page only receives the words.
 
@@ -99,6 +115,6 @@ Few apps teach Gulf Arabic specifically; most mainstream ones teach MSA, Egyptia
 node --test tests/logic.test.js
 ```
 
-Covers the FSRS scheduler (learning steps, growth, lapses, retention target, migration of older cards), card modes, interleaving, the mastery gate, the AI-lesson validator, Arabic normalisation (including Gulf letters چ and گ), word-level speech matching, streaks across time zones, the sync merge (stale copies never win, resets propagate), and the course data: every hand-written lesson must pass the same validator AI lessons do, with 5 to 9 phrases and no duplicates across the course.
+Covers the FSRS scheduler (learning steps, growth, lapses, stability floor, hard < good < easy ordering, retention target, migration of older cards), the daily review cap, safe loading of damaged backups, card modes, interleaving, the mastery gate, the AI-lesson validator, Arabic normalisation (including Gulf letters چ and گ), word-level speech matching, streaks across time zones, the sync merge (stale copies never win, resets propagate), and the course data: every hand-written lesson must pass the same validator AI lessons do, with 5 to 9 phrases and no duplicates across the course.
 
-`python build.py` rebuilds `docs/` (the installable app); CI fails if it's out of date.
+`python build.py` rebuilds `docs/` (the installable app); CI fails if it's out of date. The tests also check that the built app loads nothing from other sites and that its content security policy matches its inline scripts.
