@@ -103,6 +103,8 @@ The course follows **CODA-Gulf** (S: Khalifa et al. 2016; Habash et al. 2018) fo
 - يمه: yumma "mum" (the item, s2u030) vs yammah "beside him, near him". Teach "near him" as a chunk (يمه على طول style) and note the clash where yumma is taught.
 - تسلم: tislam "thanks (to a man)" vs tsallim "you hand over / greet". Write تسلّم with shadda for the second.
 - طب: ṭibb "medicine" (the item, s2u003) vs UAE ṭabb "came in, entered" vs Egyptian/Levantine ṭab "OK" (never use). Teach ṭabb only as a chunk.
+- ارتاح: irtāḥ "he rested" vs artāḥ "I rest". Teach as a chunk (artāḥ shwayy).
+- لفت: lift "lift, elevator" (loan) vs lifat "he turned". Teach il-lift as a chunk with the article.
 - غير ghēr "other" vs ghayyar "changed" (teach غيرت); دور dōr "turn, floor" vs dawwar "looked for" (teach دورت); تعرف "you know" vs taʿarraf (teach تعرفت على, 55/36); ودي widdi "I'd like" vs ودى wadda "took" (teach ودني "take me", 219/131).
 - ريال (coin) vs ريّال (man): only the shadda separates them, and the linter ignores shadda, so they can't both be items. "Man" is the item (s1u025); the coin goes in notes and dialogue.
 
