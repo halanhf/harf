@@ -32,7 +32,7 @@ def main():
     only = int(args[0]) if args else None
     gumar = "--gumar" in sys.argv
     errs, warns = [], []
-    seen_ids, seen_items = {}, {}
+    seen_ids, seen_items, seen_bags = {}, {}, {}
     known = set()  # every word form taught or heard so far, in course order
     for n in range(1, 6):
         for src, u in units_of(n):
@@ -68,8 +68,10 @@ def main():
                 if r[3] and not AR.search(r[3]): E(f"items[{i}] fuṣḥā column isn't Arabic")
                 k = norm(r[0])
                 if k in seen_items: E(f"items[{i}] {r[0]} already taught in {seen_items[k]}")
+                elif " " in k and (bag := " ".join(sorted(k.split()))) in seen_bags: W(f"items[{i}] {r[0]} has the same words as {seen_bags[bag][1]} in {seen_bags[bag][0]}, in another order: a re-teach unless the meaning differs")
                 if norm(r[0]) in HOMOGRAPHS and uid not in HOMOGRAPHS[norm(r[0])]: W(f"items[{i}] {r[0]} is a bare homograph (STYLE §2): teach it inside a chunk")
                 seen_items[k] = uid
+                if " " in k: seen_bags.setdefault(" ".join(sorted(k.split())), (uid, r[0]))
                 en, note = r[2].lower(), r[4].lower()
                 if "(to a man)" in en and "woman" not in note: W(f"items[{i}] says (to a man) but the note has no woman's form")
                 if "(to a woman)" in en and "man" not in note.replace("woman", ""): W(f"items[{i}] says (to a woman) but the note has no man's form")
