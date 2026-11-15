@@ -758,9 +758,9 @@
    ],
    [
     "B",
-    "ما عليه، مب لازم عشا. المهم نلعب",
-    "ma ʿalēh, mub lāzim ʿasha. il-muhimm nilʿab",
-    "Never mind, no need for dinner. What matters is that we play."
+    "ما عليه، مب لازم عشا. عندي فانيلة، والمهم نلعب",
+    "ma ʿalēh, mub lāzim ʿasha. ʿindi fānēla, w il-muhimm nilʿab",
+    "Never mind, no need for dinner. I've got a shirt, and what matters is that we play."
    ]
   ],
   "items": [
@@ -851,9 +851,9 @@
    ],
    [
     "B",
-    "بس أنا مرتبك. وإذا تلخبطت قدامهم؟",
-    "bas ana mirtabik. w idha tlakhbaṭt jiddāmhum?",
-    "But I'm flustered. And what if I get muddled in front of them?"
+    "بس أنا مرتبك. وإذا تلخبطت قدامهم؟ فضيحة!",
+    "bas ana mirtabik. w idha tlakhbaṭt jiddāmhum? faẓīḥa!",
+    "But I'm flustered. And what if I get muddled in front of them? How embarrassing!"
    ],
    [
     "A",
@@ -962,9 +962,9 @@
    ],
    [
     "A",
-    "وين المشكلة؟ أجرب، وإذا ما نفع، أدرس بعدين",
-    "wēn il-mushkila? ajarrib, w idha ma nifaʿ, adris baʿdēn",
-    "Where's the problem? I'll try, and if it doesn't work out, I'll study later."
+    "وين المشكلة؟ أجرب، وإذا ما نفع، بتصرف وأدرس",
+    "wēn il-mushkila? ajarrib, w idha ma nifaʿ, batṣarraf w adris",
+    "Where's the problem? I'll try, and if it doesn't work out, I'll sort something out and study."
    ],
    [
     "B",
@@ -1057,9 +1057,9 @@
   "dialogue": [
    [
     "A",
-    "شوف الماي! شو هالجمال! طلع الكاميرا",
-    "shūf il-māy! shu hal-jamāl! ṭallaʿ il-kāmīra",
-    "Look at the water! How beautiful! Get the camera out."
+    "شوف الماي! شو هالجمال! صور، وصير مؤثر!",
+    "shūf il-māy! shu hal-jamāl! ṣawwir, w ṣīr muʼaththir!",
+    "Look at the water! How beautiful! Take a picture, and be an influencer!"
    ],
    [
     "B",
@@ -1560,9 +1560,9 @@
    ],
    [
     "A",
-    "خوش! مهما كان، هذي فرصتك، وهذي مسؤولية. ومع احترامي لأمك، لا تفوتها",
-    "khōsh! mahma kān, hādhi furṣtak, w hādhi masʼūliyya. w maʿa iḥtirāmi l-ummak, la tfawwit-ha",
-    "Great! Whatever happens, this is your chance, and it's a responsibility. And with all respect to your mum, don't miss it."
+    "خوش! مهما كان، هذي فرصتك، تحفة! ومع احترامي لأمك، لا تفوتها",
+    "khōsh! mahma kān, hādhi furṣtak, tuḥfa! w maʿa iḥtirāmi l-ummak, la tfawwit-ha",
+    "Great! Whatever the case, this is your chance, and a great one! And with all respect to your mum, don't miss it."
    ],
    [
     "B",
@@ -1795,9 +1795,9 @@
    ],
    [
     "B",
-    "بقعد. ومب راجع لندن… لا، أقصد، مب الحين",
-    "bagʿid. w mub rājiʿ Landan… la, agṣid, mub il-ḥīn",
-    "Staying. And not going back to London… no, I mean, not now."
+    "بقعد، مضطر. ومب راجع لندن… لا، أقصد، مب الحين",
+    "bagʿid, muẓṭarr. w mub rājiʿ Landan… la, agṣid, mub il-ḥīn",
+    "Staying; I have to. And not going back to London… no, I mean, not now."
    ],
    [
     "A",
