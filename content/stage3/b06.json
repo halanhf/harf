@@ -127,7 +127,7 @@
   "stage": 3,
   "title": "Don't make me go on my own",
   "goal": "Sēf wants to skip the cinema tonight; talk him round without keeping him out late",
-  "tip": "la tkhallīni + a verb with a- means 'don't make me' or 'don't leave me': la tkhallīni arūḥ b-rūḥi 'don't make me go on my own'. About someone else: ykhallīni atrayya 'he keeps me waiting'. To a woman it's spelt the same (la tkhallīnni); to a group: la tkhallūni.",
+  "tip": "la tkhallīni + a verb with a- means 'don't make me' or 'don't let me': la tkhallīni arūḥ b-rūḥi 'don't make me go on my own'. On its own, la tkhallīni is 'don't leave me'. About someone else: ykhallīni atrayya 'he keeps me waiting'. To a woman it's the same: la tkhallīni; to a group: la tkhallūni.",
   "grammar": "la tkhallīni + verb: 'don't make me / don't leave me'",
   "dialogue": [
    [
@@ -185,14 +185,14 @@
     "la tkhallīni",
     "don't make me, don't leave me (to a man)",
     "لا تجعلني / لا تتركني",
-    "to a woman: la tkhallīnni (spelt the same: لا تخليني); to a group: la tkhallūni (لا تخلوني)"
+    "to a woman: the same, la tkhallīni (لا تخليني); to a group: la tkhallūni (لا تخلوني)"
    ],
    [
     "لا تخليني أروح بروحي",
     "la tkhallīni arūḥ b-rūḥi",
     "don't make me go on my own (to a man)",
     "لا تجعلني أذهب وحدي",
-    "to a woman: la tkhallīnni arūḥ b-rūḥi"
+    "to a woman: the same, la tkhallīni arūḥ b-rūḥi"
    ],
    [
     "يخليني أتريا",
@@ -206,7 +206,7 @@
     "la tkhallīni atʼakhkhar",
     "don't make me late, don't keep me out late (to a man)",
     "لا تجعلني أتأخر",
-    "to a woman: la tkhallīnni atʼakhkhar"
+    "to a woman: the same, la tkhallīni atʼakhkhar"
    ],
    [
     "ما أقدر أيي",
@@ -273,9 +273,9 @@
    ],
    [
     "B",
-    "خلوه على راحته. مب لازم يطلع ويانا",
-    "khallūh ʿala rāḥtah. mub lāzim yiṭlaʿ wiyyāna",
-    "Leave him be. He doesn't have to come out with us."
+    "خلوه على راحته. مب لازم يطلع وياكم",
+    "khallūh ʿala rāḥtah. mub lāzim yiṭlaʿ wiyyākum",
+    "Leave him be. He doesn't have to come out with you."
    ],
    [
     "A",
@@ -308,7 +308,7 @@
     "khallūh",
     "leave him, let him be (to a group)",
     "اتركوه / دعوه",
-    "to one man: khallah (خله); to one woman: khallīh (خليه)"
+    "to one man: khallah (خله); to one woman: khallīh (خليه); same spelling, past: khallōh 'they left him'"
    ],
    [
     "خلوه ينام",
@@ -438,7 +438,7 @@
     "khallīh ʿalay",
     "leave it to me, leave him to me (to a woman)",
     "اتركيه لي",
-    "to a man: khallah ʿalay (خله علي); a feminine thing: khallīha ʿalay"
+    "to a man: khallah ʿalay (خله علي); a feminine thing: khallīha ʿalay; the same 'leave it to me' as khallha ʿalay 'it's on me (I'll pay)'"
    ],
    [
     "التقرير ما خلص",
@@ -566,9 +566,9 @@
    [
     "ما عدت",
     "ma ʿidt",
-    "I'm not … any more, I no longer",
-    "لم أعد",
-    "ma ʿād works for 'I' too: ma ʿād agdar = I can't any more"
+    "I no longer, I'm not … any more; you no longer (to a man)",
+    "لم أعد / لم تعد",
+    "to a woman: ma ʿidti (ما عدتي); ma ʿād works for 'I' too: ma ʿād agdar = I can't any more"
    ],
    [
     "ما عدت أتحمل البرد",
@@ -594,7 +594,7 @@
    [
     "لا تغيب عنا",
     "la tghīb ʿanna",
-    "don't stay away (from us) so long (to a man)",
+    "don't stay away from us, don't be a stranger (to a man)",
     "لا تغب عنا",
     "to a woman: la tghībīn ʿanna (لا تغيبين عنا)"
    ],
@@ -613,7 +613,7 @@
     "kint = I was, you were (to a man)"
    ]
   ],
-  "culture": "When people meet after a while, Gulf manners put the greetings first: warm hellos and questions about health before any other news. Someone back from a trip is welcomed with il-ḥamdu lillāh ʿala s-salāma (reply: allāh ysallmak). With an elder like Bū Rāshid, apologise for staying away, and if he says he's unwell, answer with salāmāt."
+  "culture": "When an elder hasn't seen you for a while, expect a warm welcome with a friendly complaint: hala wallāh! wēnak? ma ʿidna nshūfak! Answer the welcome (hala bik), apologise for staying away (sāmiḥni) and say where you were. Someone back from a trip is welcomed with il-ḥamdu lillāh ʿala s-salāma (reply: allāh ysallmak). If he says he's unwell, answer with salāmāt."
  },
  {
   "id": "s3u062",
@@ -767,9 +767,9 @@
    ],
    [
     "A",
-    "يوم الخميس. باقي على الإجازة أسبوع بس",
-    "yōm il-khamīs. bāgi ʿala l-ijāza usbūʿ bas",
-    "On Thursday. Just a week to go till the holidays."
+    "يوم الخميس، وبعدين الإجازة!",
+    "yōm il-khamīs, w baʿdēn il-ijāza!",
+    "On Thursday, and then it's the holidays!"
    ],
    [
     "B",
@@ -785,9 +785,9 @@
    ],
    [
     "B",
-    "أكيد! وخبر فهد. كم باقي على الخميس؟",
-    "akīd! w khabbir Fahad. cham bāgi ʿala l-khamīs?",
-    "Definitely! And let Fahad know. How long till Thursday?"
+    "أكيد! وخبر فهد. كم باقي على الإجازة؟",
+    "akīd! w khabbir Fahad. cham bāgi ʿala l-ijāza?",
+    "Definitely! And let Fahad know. How long till the holidays?"
    ],
    [
     "A",
@@ -1045,11 +1045,11 @@
   ],
   "items": [
    [
-    "بعدكم",
-    "baʿadkum",
-    "you're still (to a group)",
-    "ما زلتم",
-    "to one man: baʿdak (بعدك); to one woman: baʿdich (بعدج)"
+    "بعدكم هني؟",
+    "baʿadkum hni?",
+    "are you still here? (to a group)",
+    "هل ما زلتم هنا؟",
+    "to one man: baʿdak hni? (بعدك هني؟); to one woman: baʿdich hni? (بعدج هني؟)"
    ],
    [
     "باقي لنا",
@@ -1077,7 +1077,7 @@
     "la tkhallūni",
     "don't make me, don't leave me (to a group)",
     "لا تجعلوني / لا تتركوني",
-    "to one man: la tkhallīni (لا تخليني); to one woman: la tkhallīnni (spelt the same: لا تخليني)"
+    "to one man or one woman: la tkhallīni (لا تخليني)"
    ],
    [
     "ما نخليك بروحك",
