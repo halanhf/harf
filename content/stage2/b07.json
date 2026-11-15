@@ -9,8 +9,8 @@
   "dialogue": [
    [
     "A",
-    "هذا فريجنا. هذيلا البيوت كلها حق أهلي",
-    "hādha firījna. hādhēla l-byūt killha ḥagg ahli",
+    "هذا فريجنا. هذي البيوت كلها حق أهلي",
+    "hādha firījna. hādhi l-byūt killha ḥagg ahli",
     "This is our neighbourhood. These houses all belong to my family."
    ],
    [
@@ -255,9 +255,9 @@
    ],
    [
     "A",
-    "الله يبارك فيك. رمضان كريم!",
-    "allāh ybārik fīk. ramaẓān karīm!",
-    "And to you. Ramadan Kareem!"
+    "الله يبارك فيك. رمضان كريم! الفطور جاهز",
+    "allāh ybārik fīk. ramaẓān karīm! il-fuṭūr jāhiz",
+    "And to you. Ramadan Kareem! Iftar's ready."
    ],
    [
     "B",
@@ -267,9 +267,9 @@
    ],
    [
     "A",
-    "كلنا صايمين ويوعانين! يلا، أذن المغرب. الفطور جاهز",
-    "killna ṣāymīn w yōʿānīn! yalla, adhdhan il-maghrib. il-fuṭūr jāhiz",
-    "We're all fasting and starving! Right, the maghrib call's gone. Iftar's ready."
+    "كلنا صايمين ويوعانين! يلا، أذن المغرب. خذ تمر وماي",
+    "killna ṣāymīn w yōʿānīn! yalla, adhdhan il-maghrib. khudh tamr w māy",
+    "We're all fasting and starving! Right, the maghrib call's gone. Have some dates and water."
    ],
    [
     "B",
@@ -289,7 +289,7 @@
     "مبارك عليكم الشهر",
     "mubārak ʿalēkum ish-shahar",
     "happy Ramadan (lit. blessed be the month for you), at the start of Ramadan",
-    "",
+    "رمضان مبارك / شهر مبارك",
     "said as it is, to one person or many; the reply is allāh ybārik fīk (to a woman: fīch)"
    ],
    [
@@ -332,7 +332,7 @@
     "il-fuṭūr",
     "iftar, the meal that breaks the fast",
     "الإفطار",
-    "breakfast is riyūg (ريوق)"
+    "fuṭūr also means breakfast; breakfast is also riyūg (ريوق)"
    ],
    [
     "أذن المغرب",
@@ -356,7 +356,7 @@
   "stage": 2,
   "title": "Back after Eid",
   "goal": "At the office after the Eid holiday, Maryam welcomes you back: Eid greetings and the summer weather",
-  "tip": "For Eid, say ʿasākum min ʿuwwādah and answer by saying it back. To someone back from a trip: il-ḥamdu lillāh ʿala s-salāma → allāh ysallmak (to a woman: ysallmich). Plural things still take the feminine: ish-shawāriʿ killha ghubār 'the streets are covered in dust'.",
+  "tip": "For Eid, say ʿasākum min ʿuwwādah and answer by saying it back. To someone back from a trip: il-ḥamdu lillāh ʿala s-salāma → allāh ysallmak (to a woman: ysallmich). Plural things still take the feminine: ish-shawāriʿ w is-sayyārāt killha ghubār 'the streets and cars are all covered in dust'.",
   "grammar": "recycle: plurals with feminine agreement (ish-shawāriʿ killha)",
   "dialogue": [
    [
@@ -397,9 +397,9 @@
    ],
    [
     "A",
-    "والغبار بعد! الشوارع كلها غبار",
-    "w il-ghubār baʿad! ish-shawāriʿ killha ghubār",
-    "And the dust too! The streets are covered in dust."
+    "والغبار بعد! الشوارع والسيارات كلها غبار",
+    "w il-ghubār baʿad! ish-shawāriʿ w is-sayyārāt killha ghubār",
+    "And the dust too! The streets and the cars are all covered in dust."
    ]
   ],
   "items": [
@@ -407,7 +407,7 @@
     "عساكم من عواده",
     "ʿasākum min ʿuwwādah",
     "happy Eid (lit. may you be among those who see it again)",
-    "",
+    "عيد مبارك / كل عام وأنتم بخير",
     "the reply is the same words"
    ],
    [
@@ -473,7 +473,7 @@
   "stage": 2,
   "title": "What do I call him?",
   "goal": "Outside Bū Rāshid's majlis in Sharjah, Sēf tells you how to address his uncle",
-  "tip": "gūl 'say' takes -lah 'to him': gūl-lah 'tell him', la tgūl-lah 'don't say to him', shu agūl-lah? 'what do I call him?'. Call an older man yā ʿammi or ṭāl ʿumrak, even if he isn't your uncle. yā rayyāl is for friends only.",
+  "tip": "gūl 'say' takes -lah 'to him': gūl-lah 'tell him', la tgūl-lah 'don't say to him', shu agūl-lah? 'what do I call him?'. Call an older man yā Bū Rāshid, yā ʿammi or ṭāl ʿumrak, even if he isn't your uncle. yā rayyāl is for friends only.",
   "grammar": "recycle: imperatives with -lah (gūl-lah, la tgūl-lah)",
   "dialogue": [
    [
@@ -490,9 +490,9 @@
    ],
    [
     "A",
-    "شفيك؟ قول له يا عمي، أو طال عمرك",
-    "shfīk? gūl-lah yā ʿammi, aw ṭāl ʿumrak",
-    "What's the matter? Call him 'uncle', or 'sir'."
+    "عادي. أو قول له يا عمي، أو طال عمرك",
+    "ʿādi. aw gūl-lah yā ʿammi, aw ṭāl ʿumrak",
+    "That's fine. Or call him 'uncle', or 'sir'."
    ],
    [
     "B",
@@ -508,15 +508,15 @@
    ],
    [
     "B",
-    "زين. وإذا قال لي حياك الله؟",
-    "zēn. w idha gāl-li ḥayyāk allāh?",
-    "OK. And if he says 'welcome' to me?"
+    "زين. وإذا قال لي الحمد لله على السلامة؟",
+    "zēn. w idha gāl-li l-ḥamdu lillāh ʿala s-salāma?",
+    "OK. And if he says 'welcome back' to me?"
    ],
    [
     "A",
-    "قول له الله يحييك يا طويل العمر. ناس طيبين، بتشوف",
-    "gūl-lah allāh yḥayyīk yā ṭawīl il-ʿumr. nās ṭayybīn, bitshūf",
-    "Say 'allāh yḥayyīk, ṭawīl il-ʿumr' to him. They're nice people, you'll see."
+    "قول له الله يسلمك يا طويل العمر. ناس طيبين، بتشوف",
+    "gūl-lah allāh ysallmak yā ṭawīl il-ʿumr. nās ṭayybīn, bitshūf",
+    "Say 'allāh ysallmak, ṭawīl il-ʿumr' to him. They're nice people, you'll see."
    ]
   ],
   "items": [
@@ -537,9 +537,9 @@
    [
     "طويل العمر",
     "ṭawīl il-ʿumr",
-    "sir (respectful, to an elder; lit. long-lived one)",
+    "sir (respectful, to an elder; lit. long-lived one) (to a man)",
     "",
-    "usually yā ṭawīl il-ʿumr; a mark of respect, not a title"
+    "to a woman: ṭawīlat il-ʿumr (طويلة العمر); usually yā ṭawīl il-ʿumr; a mark of respect, not a title"
    ],
    [
     "قول له",
@@ -709,7 +709,7 @@
   "stage": 2,
   "title": "Sorry, uncle!",
   "goal": "Bū Rāshid asks about your studies and you knock your cup over: say sorry and offer to clean up",
-  "tip": "To excuse yourself, say is-samūḥa; the reply is masmūḥ 'you're forgiven'. ma ʿalēh 'never mind' means the same as maʿlēsh. Imperative + object: khallah 'leave it', khallni amsaḥah 'let me wipe it'.",
+  "tip": "To say sorry, say is-samūḥa; the reply is masmūḥ 'you're forgiven'. ma ʿalēh 'never mind' means the same as maʿlēsh. Imperative + object: khallah 'leave it', khallni amsaḥah 'let me wipe it'.",
   "grammar": "recycle: imperatives with object endings (khallah, khallni amsaḥah)",
   "dialogue": [
    [
@@ -761,7 +761,7 @@
     "is-samūḥa",
     "sorry, excuse me (asking forgiveness)",
     "المعذرة / عفوًا",
-    "the reply is masmūḥ; also is-samūḥa minnak 'I beg your pardon' (to a man)"
+    "the reply is masmūḥ; also is-samūḥa minnak 'forgive me' (to a man; to a woman: is-samūḥa minnich)"
    ],
    [
     "مسموح",
@@ -780,9 +780,9 @@
    [
     "حبيبي",
     "ḥabībi",
-    "my dear, mate (lit. my love) (friends only; not to an elder)",
+    "my dear, mate (elders and friends say it to you; you say it to friends only)",
     "حبيبي",
-    "usually yā ḥabībi; between friends, and from an older man to a younger one; never to a woman outside the family"
+    "usually yā ḥabībi; never to a woman outside the family"
    ],
    [
     "شو تدرس؟",
@@ -905,7 +905,7 @@
     "زين جي؟",
     "zēn chī?",
     "is this all right? like this?",
-    "هل هكذا جيد؟",
+    "هكذا؟ / هل هذا جيد؟",
     "the answer: hē, zēn chī 'yes, that's right'"
    ],
    [
@@ -960,9 +960,9 @@
    ],
    [
     "A",
-    "زين، بس لازم تزورنا مرة ثانية يا حبيبي",
-    "zēn, bas lāzim tzūrna marra thānya yā ḥabībi",
-    "All right, but you must visit us again, my boy."
+    "زين. حياك أي وقت، لازم تزورنا يا حبيبي",
+    "zēn. ḥayyāk ay wagt, lāzim tzūrna yā ḥabībi",
+    "All right. You're welcome any time, you must visit us, my boy."
    ],
    [
     "B",
@@ -1017,14 +1017,14 @@
     "tzūrna",
     "you visit us, (that) you visit us (to a man)",
     "تزورنا",
-    "to a woman: tzūrīna (تزورينا); lāzim tzūrna 'you must visit us'"
+    "to a woman: tzūrīnna (تزورينا); lāzim tzūrna 'you must visit us'"
    ],
    [
-    "مرة ثانية",
-    "marra thānya",
-    "again, another time",
-    "مرة أخرى",
-    ""
+    "أي وقت",
+    "ay wagt",
+    "any time",
+    "في أي وقت",
+    "ḥayyāk ay wagt 'you're welcome any time' (to a man)"
    ],
    [
     "سلم لي على",
