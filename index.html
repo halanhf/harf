@@ -172,6 +172,9 @@ button.say{background:none;border:0;color:var(--ink);cursor:pointer;padding:0 8p
 details.stg{border-top:1px solid var(--line);padding-block:6px}
 details.stg>summary{color:var(--ink);font-size:16px}
 details.stg>summary .tag{margin-left:auto}
+details.grp{margin:4px 0}
+details.grp>summary{font-size:14px;color:var(--ink)}
+details.grp>summary .tag{margin-left:auto}
 .units{display:grid;gap:8px;padding-bottom:10px}
 .unit{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px 14px;border:1px solid var(--line);border-radius:var(--r);background:var(--card);text-align:left;cursor:pointer;color:var(--ink);font:inherit;width:100%}
 .unit.next{background:var(--tile-soft);border-color:var(--tile)}
@@ -403,48 +406,8 @@ const READINGS=[
 
 ];
 // </content>
-// ---------- syllabus for generated stages ----------
-// grammar after "·" goes to the lesson writer; topic strings are matched exactly, so keep them stable once lessons exist
-const SYLLABUS={
-2:{name:"Everyday",level:"A2",topics:[
-"my family · my, your, his, her endings (-i, -ak, -ich, -ah, -ha) and ʿind for “have”",
-"my daily routine · present tense for every person (ashrab, tishrab, tishrabīn, yishrab, yishrabūn)",
-"what I'm doing right now · gāʿid / gāʿda + verb for “-ing”",
-"shopping and bargaining · this and that (hādha, hādhi, hādhāk) and numbers with nouns",
-"at a restaurant · commands and requests (ʿaṭni, jīb, mumkin + verb)",
-"taxis and getting around · directions as commands (liff, waggif, rūḥ sīda) and ʿala, min, ʿind",
-"what I did yesterday · past tense with -t, -ti, -at, -na, -aw (sawwēt, kalēt, shift)",
-"a trip I took · past of rāḥ, gāl, kān, shāf (riḥt, gilt, kint, shift)",
-"plans for the weekend · future b- for every person (barūḥ, bitrūḥ, binrūḥ) and days of the week",
-"likes and dislikes · aḥibb / ma aḥibb + verb, and object endings (aḥibbah, aḥibbha)",
-"weather and seasons · mub / mū with adjectives, and kān for “was”",
-"phone calls and messages · telling the time and object endings (gul lah, kallimni)"]},
-3:{name:"Conversations",level:"B1",topics:[
-"describing people · comparatives and superlatives (akbar min, aḥsan wāḥid)",
-"at the doctor · “it hurts” (yōjaʿni), ʿindi + symptom, lāzim and mafrūḍ",
-"work and study · kān + present for “used to”, kān gāʿid for “was doing”",
-"travel and hotels · real conditionals with idha (idha tabi, idha ṣār)",
-"Ramadan and Eid · fixed greetings and their replies (ramaẓān karīm / allāh akram, ʿīdkum mubārak)",
-"invitations and hospitality · accepting and declining politely, endings on prepositions (li, lak, ʿalēh)",
-"giving opinions · aẓinn inn / aʿtigid inn and “that” clauses",
-"people and things I know · illi for who, which and that",
-"telling a short story · linking past events (baʿdēn, w ʿugub, gām + verb)",
-"feelings and moods · adjectives and participles with gender (zaʿlān / zaʿlāna, taʿbān / taʿbāna)",
-"football and hobbies · how often (dāyman, aḥyānan, ʿumri ma) and verbal nouns",
-"fixing things at home · ṣār, kharbān and inkisar (things that happen)"]},
-4:{name:"Fluent",level:"B2",topics:[
-"the news · fuṣḥā negation (lā, lam, lan, laysa) beside Gulf ma and mub",
-"making an argument · because, although, so (ʿashān, liʼann, maʿ inn, yaʿni)",
-"hypotheticals · unreal conditionals (law ʿindi flūs chān ishtarēt bēt)",
-"Gulf culture and history · habitual past in the plural (kānaw yghōṣūn ʿala l-lūlū)",
-"a business meeting · polite formal Gulf (law tismaḥ, ḥaḍratak, nitmanna)",
-"technology and social media · sawwa + English loanwords (sawwēt update)",
-"talking about faith · set phrases and when each is used",
-"weddings and family customs · reported speech (gāl inn, gālaw li)",
-"complaining and solving problems · khalli + verb and kān lāzim (should have)",
-"jokes and idioms · common Gulf idioms and their literal meanings"]},
-5:{name:"Native-like",level:"C1",topics:["Gulf proverbs","Nabati poetry","Kuwaiti vs Emirati vs Saudi speech","fast speech and slang","switching between formal and informal","debating","telling stories with humour","listening to fuṣḥā news","negotiating","interviews and formal speaking"]}
-};
+// ---------- stages: every stage 1-5 lesson is written in advance (content/); lessons written live by AI only start once all of them are done
+const STAGE_LEVELS={1:"A1",2:"A2",3:"B1",4:"B2",5:"C1",6:"C1+"};
 const STAGE_NAMES={0:"Foundations",1:"Survival",2:"Everyday",3:"Conversations",4:"Fluent",5:"Native-like",6:"Open-ended"};
 // ---------- grammar reference: {title, note, rows: [ar, translit, english]} ----------
 const GRAMMAR=[
@@ -890,8 +853,8 @@ function rebuild(){
     u.dialogue.forEach((l,i)=>{ const n=tilesOf(l.ar).length; if(n<2||n>8) return; const id=u.id+".s"+i; ITEMS[id]={id,unit:u.id,stage:"s"+u.stage,sentence:true,ar:l.ar,tr:l.tr,en:l.en}; ITEM_UNIT[id]=u.id; }); };
   COURSE.forEach(u=>addUnit({id:u.id,stage:u.stage,title:u.title,goal:u.goal,tip:u.tip,
     dialogue:u.dialogue.map(([who,ar,tr,en])=>({who,ar,tr,en})),items:u.items.map(([ar,tr,en,msa,note])=>({ar,tr,en,msa,note}))},false));
-  S.gen.forEach(u=>addUnit(u,true));
-  MSA.forEach(([ar,tr,en],i)=>{ const id="m."+i; ITEMS[id]={id,unit:"msa",stage:"msa",msaTrack:true,ar,tr,en}; ITEM_UNIT[id]="msa"; });
+  S.gen.forEach(u=>{ if(u.stage===6) addUnit(u,true); }); // stages 1-5 are written in advance; ai lessons are only for after them
+  MSA.forEach(([ar,tr,en,gulf],i)=>{ const id="m."+i; ITEMS[id]={id,unit:"msa",stage:"msa",msaTrack:true,ar,tr,en,gulf:gulf||""}; ITEM_UNIT[id]="msa"; });
   S.custom.forEach(c=>{ ITEMS[c.id]=Object.assign({unit:"custom",stage:"custom"},c); ITEM_UNIT[c.id]="custom"; });
 }
 rebuild();
@@ -913,20 +876,16 @@ function feedMsa(){
   S.msaDay=t; save();
 }
 const unitsOfStage=n=>UNITS.filter(u=>u.stage===n);
-const topicName=t=>String(t||"").split(" · ")[0];
-const topicGrammar=t=>String(t||"").split(" · ")[1]||"";
 function stageInfo(n){ const us=unitsOfStage(n); const ids=Object.values(ITEMS).filter(it=>it.stage===n).map(it=>it.id); return stageStatus(us.map(u=>u.id),ids,S); }
-const plannedOf=n=>n===1?COURSE.length:Math.max(SYLLABUS[n].topics.length,unitsOfStage(n).length);
+const plannedOf=n=>Math.max(1,unitsOfStage(n).length);
 function currentStage(){
   if(!S.unitsDone.sounds) return 0;
-  for(let n=1;n<=5;n++){ const st=stageInfo(n); const left=n>=2?SYLLABUS[n].topics.filter(t=>!unitsOfStage(n).some(u=>u.topic===t)).length:0;
-    if(!st.complete||left>0) return n; }
+  for(let n=1;n<=5;n++) if(!stageInfo(n).complete) return n;
   return 6;
 }
 function nextUnit(){
   const stage=currentStage(); if(stage===0) return {kind:"sounds"};
   const pending=UNITS.find(u=>u.stage===stage&&!S.unitsDone[u.id]); if(pending) return {kind:"unit",unit:pending};
-  if(stage>=2&&stage<=5){ const made=new Set(unitsOfStage(stage).map(u=>u.topic)); const topic=SYLLABUS[stage].topics.find(t=>!made.has(t)); if(topic) return {kind:"generate",stage,topic}; }
   if(stage===6) return {kind:"generate",stage:6,topic:null};
   return {kind:"consolidate",stage};
 }
@@ -1156,7 +1115,7 @@ function todaySteps(){
   else if(!p.allowNew){ L.desc=`Paused: ${p.backlog} reviews are waiting. Clear them first so nothing slips.`; }
   else if(nu.kind==="sounds"){ L.title="Sounds and script"; L.desc="Stage 0: letters, vowel marks and Gulf sounds, then a short listening test (about 15 min)"; L.avail=true; L.run=()=>show("course","sounds"); }
   else if(nu.kind==="unit"){ L.desc=`${nu.unit.title}: ${nu.unit.goal} (about 10 min)`; L.avail=true; L.run=()=>openLesson(nu.unit,()=>show("today")); }
-  else if(nu.kind==="generate"){ L.avail=!!SAMPLE; L.desc=SAMPLE?`${topicName(nu.topic)||"A topic you choose"}: written for you at your level`:"Next lessons are written for you in the claude.ai version"; L.run=()=>generateUnit(nu.stage,nu.topic,u=>openLesson(u,()=>show("today"))); }
+  else if(nu.kind==="generate"){ L.avail=!!SAMPLE; L.desc=SAMPLE?`A topic you choose: written for you at your level`:"Next lessons are written for you in the claude.ai version"; L.run=()=>generateUnit(nu.stage,nu.topic,u=>openLesson(u,()=>show("today"))); }
   else L.desc="Keep reviewing: this stage completes once 80% of its phrases stick for a week.";
   steps.push(L);
   const rp=roleplayUnit();
@@ -1411,7 +1370,7 @@ function renderCourse(){
   ({lessons:renderLessons,sounds:renderSounds,grammar:renderGrammar,numbers:renderNumbers})[courseTab](sec);
 }
 function renderLessons(sec){
-  sec.append(el("p",{className:"lede",textContent:"Stages go from zero to native-like. You move up when you've finished a stage's lessons and 80% of its phrases have stuck for at least a week. After stage 5 the course keeps going with topics you choose."}));
+  sec.append(el("p",{className:"lede",textContent:"Five stages take you from zero to C1, every lesson written and checked in advance. You move up when you've finished a stage's lessons and 80% of its phrases have stuck for at least a week. After stage 5 the course keeps going with lessons written for you on topics you choose."}));
   const cur=currentStage(); const nu=nextUnit(); const nextId=nu.kind==="unit"?nu.unit.id:null;
   const unitBtn=(u,locked)=>{ const d=!!S.unitsDone[u.id]; const isNext=u.id===nextId;
     return el("button",{className:"unit"+(d?" done":"")+(isNext?" next":""),type:"button",disabled:locked,onclick:()=>openLesson(u,()=>show("course"))},
@@ -1424,11 +1383,12 @@ function renderLessons(sec){
   for(let n=1;n<=5;n++){
     const info=stageInfo(n); const planned=plannedOf(n); const pct=Math.round(info.frac*100);
     const us=unitsOfStage(n); const list=el("div",{className:"units"});
-    us.forEach(u=>list.append(unitBtn(u,n>cur&&!S.unitsDone[u.id])));
-    if(n>=2){ const made=new Set(us.map(u=>u.topic)); SYLLABUS[n].topics.filter(t=>!made.has(t)).forEach(t=>{ const name=topicName(t);
-      list.append(el("div",{className:"unit planned"},el("span",{className:"t"},el("b",{textContent:name[0].toUpperCase()+name.slice(1)}),el("p",{className:"tag",textContent:(topicGrammar(t)?topicGrammar(t)+". ":"")+(SAMPLE?"Written for you when you reach it":"Written for you in the claude.ai version")})),el("span",{className:"st",textContent:"Planned"}))); }); }
+    // a stage has dozens of lessons, so they're grouped in tens; the group holding the next lesson starts open
+    for(let g=0;g<us.length;g+=10){ const grp=us.slice(g,g+10); const box=el("div",{className:"units"},grp.map(u=>unitBtn(u,n>cur&&!S.unitsDone[u.id])));
+      const doneN=grp.filter(u=>S.unitsDone[u.id]).length;
+      list.append(us.length<=12?box:el("details",{className:"grp",open:grp.some(u=>u.id===nextId)},el("summary",{},el("span",{textContent:`Lessons ${g+1}–${g+grp.length}`}),el("span",{className:"tag",textContent:`${doneN}/${grp.length} done`})),box)); }
     sec.append(el("details",{className:"stg",open:n===cur},el("summary",{},el("span",{className:"ring",style:`--p:${Math.round(Math.min(1,info.unitsDone/planned)*50+info.frac*50)}`,"aria-hidden":"true"}),
-      el("b",{textContent:`Stage ${n} · ${STAGE_NAMES[n]}`}),el("span",{className:"tag",textContent:`${n>=2?SYLLABUS[n].level+" · ":""}${info.unitsDone}/${planned} lessons · ${pct}% known for a week+`})),list));
+      el("b",{textContent:`Stage ${n} · ${STAGE_NAMES[n]}`}),el("span",{className:"tag",textContent:`${STAGE_LEVELS[n]} · ${info.unitsDone}/${planned} lessons · ${pct}% known for a week+`})),list));
   }
   const open=UNITS.filter(u=>u.stage===6);
   const l6=el("div",{className:"units"},open.map(u=>unitBtn(u,false)));
@@ -1666,8 +1626,8 @@ async function generateUnit(stage,topic,then){
       f.body.append(el("p",{className:"lede",textContent:"You're past the planned stages. Pick any topic and the lesson is built around what you already know."}),el("div",{className:"compose"},inp,go));
       await new Promise(res=>{ go.onclick=()=>{ if(inp.value.trim()){ chosen=inp.value.trim().slice(0,80); res(); } }; });
       if(!f.alive()) return; f.body.textContent=""; }
-    const status=el("p",{className:"tag",role:"status",textContent:`Topic: ${topicName(chosen)}. This takes a few seconds.`}); f.body.append(status);
-    const lvl=stage<=5?SYLLABUS[stage].level:"C1+";
+    const status=el("p",{className:"tag",role:"status",textContent:`Topic: ${chosen}. This takes a few seconds.`}); f.body.append(status);
+    const lvl=STAGE_LEVELS[stage]||"C1+";
     const prompt=`Write one lesson for a course in ${DIALECT}
 The learner is English-speaking, at stage ${stage} (${STAGE_NAMES[stage]}, about CEFR ${lvl}). Topic: ${chosen}.
 If the topic names a grammar point after "·", the tip must teach it with 2-3 short transliterated examples, and the dialogue must use it at least 3 times.

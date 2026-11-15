@@ -9,7 +9,7 @@ const block=id=>{const m=html.match(new RegExp(`<script id="${id}">([\\s\\S]*?)<
 const ctx={module:{exports:{}}};
 vm.createContext(ctx);
 vm.runInContext(block("logic"),ctx);
-vm.runInContext(block("data")+";this.D={LETTERS,VOWELS,SHIFTS,PAIRS,COURSE,SYLLABUS,MSA,GRAMMAR,NUMBERS};",ctx);
+vm.runInContext(block("data")+";this.D={LETTERS,VOWELS,SHIFTS,PAIRS,COURSE,STAGE_LEVELS,MSA,READINGS,GRAMMAR,NUMBERS};",ctx);
 const L=ctx.module.exports, D=ctx.D;
 const DAY=86400000, now=1e12;
 
@@ -134,10 +134,12 @@ test("data: every course unit is well formed with 7±2 phrases and no duplicate 
     assert.deepEqual([...L.validateUnit(conv)],[],u.id);
   }
 });
-test("data: syllabus covers stages 2-5 with ten topics each; pairs and fuṣḥā list are well formed",()=>{
-  for(const n of [2,3,4,5]){ const t=D.SYLLABUS[n].topics; assert.ok(t.length>=10,`stage ${n}`); assert.equal(new Set(t).size,t.length,`stage ${n} has duplicate topics`); }
+test("data: the course runs stage by stage in teaching order; pairs and fuṣḥā list are well formed",()=>{
+  let last=1; const ids=new Set();
+  for(const u of D.COURSE){ assert.ok(u.stage>=last,`${u.id} is out of stage order`); last=u.stage; assert.ok(!ids.has(u.id),`duplicate unit ${u.id}`); ids.add(u.id);
+    assert.ok(/^(u\d+|s[1-5]u\d{3})$/.test(u.id),u.id); assert.ok(D.STAGE_LEVELS[u.stage],u.id); }
   for(const p of D.PAIRS){ assert.equal(p.length,2); assert.notEqual(p[0][0],p[1][0]); }
-  const seen=new Set(); for(const m of D.MSA){ assert.equal(m.length,3); assert.ok(!seen.has(m[0])); seen.add(m[0]); }
+  const seen=new Set(); for(const m of D.MSA){ assert.ok(m.length>=3&&m.length<=5); assert.ok(!seen.has(m[0]),`duplicate fuṣḥā word ${m[0]}`); seen.add(m[0]); }
 });
 test("word match marks which target words speech recognition caught",()=>{
   const m=L.wordMatch("أبي قهوة لو سمحت","ابي قهوه لو"); assert.deepEqual([...m.words.map(w=>w.ok)],[true,true,true,false]); assert.ok(m.pct>=60&&m.pct<100);
