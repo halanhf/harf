@@ -110,7 +110,7 @@
     "عقبالك",
     "ʿugbālak",
     "may you be next (to a man; said to someone unmarried at a wedding)",
-    "عقبالك",
+    "",
     "to a woman: ʿugbālich (عقبالج); also said at graduations; the reply: allāh yismaʿ minnak"
    ],
    [
@@ -127,9 +127,9 @@
   "id": "s3u085",
   "stage": 3,
   "title": "At Ḥamad's wedding",
-  "goal": "In the men's hall at Ḥamad's wedding, congratulate the groom's father, praise the groom and leave with bil-afrāḥ dāymīn",
-  "tip": "Wishes to a whole family take group endings: mabrūk ʿalēkum 'congratulations to you all', bil-afrāḥ dāymīn 'may you always have happy occasions' (dāymīn is plural). Answer a good wish with w inta baʿad 'you too'; to a group, w intu baʿad.",
-  "grammar": "recycle: group endings in wishes (mabrūk ʿalēkum, dāymīn)",
+  "goal": "In the men's hall at Ḥamad's wedding, congratulate the groom's father, praise the groom with mā shāʼ allāh and say goodbye",
+  "tip": "Congratulate a whole family with the group ending: mabrūk ʿalēkum 'congratulations to you all'. alf mabrūk (lit. a thousand congratulations) is warmer. Both get allāh ybārik fīk. Say mā shāʼ allāh before you praise: mā shāʼ allāh, il-miʿris kashkha!",
+  "grammar": "recycle: group endings (mabrūk ʿalēkum) and mā shāʼ allāh before praise",
   "dialogue": [
    [
     "B",
@@ -169,15 +169,15 @@
    ],
    [
     "B",
-    "المعرس كشخة! يلا، بالأفراح دايمين",
-    "il-miʿris kashkha! yalla, bil-afrāḥ dāymīn",
-    "(Later) The groom looks great! Well, may you always have happy occasions."
+    "ما شاء الله، المعرس كشخة! يلا، ألف مبروك",
+    "mā shāʼ allāh, il-miʿris kashkha! yalla, alf mabrūk",
+    "(Later) Mā shāʼ allāh, the groom looks great! Well, many congratulations."
    ],
    [
     "A",
-    "وانت بعد، إن شاء الله. نشوفك في عرسك!",
-    "w inta baʿad, in shāʼ allāh. nshūfak fi ʿirsak!",
-    "You too, God willing. See you at your own wedding!"
+    "الله يبارك فيك يا ولدي. نشوفك في عرسك!",
+    "allāh ybārik fīk yā wildi. nshūfak fi ʿirsak!",
+    "Thank you, son. See you at your own wedding!"
    ]
   ],
   "items": [
@@ -217,18 +217,11 @@
     "dressed up (a man): kāshikh (كاشخ)"
    ],
    [
-    "بالأفراح دايمين",
-    "bil-afrāḥ dāymīn",
-    "may you always have happy occasions (to a family; at weddings and Eid)",
-    "",
-    "the reply: w inta baʿad (وانت بعد)"
-   ],
-   [
-    "وانت بعد",
-    "w inta baʿad",
-    "you too, the same to you (to a man)",
-    "وأنت أيضًا",
-    "to a woman: w inti baʿad (وانتي بعد); to a group: w intu baʿad (وانتو بعد)"
+    "ألف مبروك",
+    "alf mabrūk",
+    "many congratulations (lit. a thousand congratulations)",
+    "ألف مبروك",
+    "the reply: allāh ybārik fīk (to a woman: fīch)"
    ],
    [
     "في عرسك",
@@ -236,9 +229,16 @@
     "at your wedding (to a man)",
     "في عرسك",
     "to a woman: fi ʿirsich (في عرسج)"
+   ],
+   [
+    "نشوفك",
+    "nshūfak",
+    "see you, we'll see you (to a man)",
+    "نراك",
+    "to a woman: nshūfich (نشوفج); to a group: nshūfkum (you know it)"
    ]
   ],
-  "culture": "At an Emirati wedding, men and women celebrate apart, often in two halls next to each other. The men's party is the simpler one, often with traditional cane line dancing. Before the big day, the marriage contract is signed in front of male witnesses at a small ceremony called the milcha, and the bride's female friends hold a henna party for her."
+  "culture": "At an Emirati wedding, men and women celebrate apart, often in two halls next to each other. The men's party is the simpler one, often with traditional cane line dancing. Before the big day, the marriage contract is signed in front of male witnesses at a small ceremony called the milcha, and a few days before the wedding the women hold a henna party for the bride."
  },
  {
   "id": "s3u086",
@@ -352,10 +352,10 @@
     "allāh ykhallīh lakum",
     "God bless him for you (said of a child to the family)",
     "",
-    "of a girl: allāh ykhallīha lakum (الله يخليها لكم)"
+    "of a girl: allāh ykhallīha lakum (you know allāh ykhallīha)"
    ]
   ],
-  "culture": "For a new baby, Gulf people say mabrūk and then add mā shāʼ allāh, the same pair they use for new clothes or a new bag. mā shāʼ allāh praises something while asking God to keep it safe from envy and the evil eye."
+  "culture": "For a new baby, Gulf people say mabrūk and then add mā shāʼ allāh, the same pair they use for new clothes or a new bag. mā shāʼ allāh ('what God has willed') lets you admire something without envy, and people say it to protect what they praise from the evil eye."
  },
  {
   "id": "s3u087",
@@ -613,7 +613,7 @@
     "A",
     "طرشت له: مب فاضي لك. وفهمني غلط",
     "ṭarrasht-lah: mub fāẓi lak. w fhimni ghalaṭ",
-    "I texted him: I'm not free for you. And he got me wrong."
+    "I texted him, 'I've got no time for you', and he took it the wrong way."
    ],
    [
     "B",
@@ -817,7 +817,7 @@
     "shgilt?",
     "what did you say? (to a man) (Kuwait)",
     "ماذا قلت؟",
-    "to a woman: shgiltī? (شقلتي؟); UAE: shu gilt? (شو قلت؟)"
+    "to a woman: shgilti? (شقلتي؟); UAE: shu gilt? (شو قلت؟)"
    ],
    [
     "ما سمعتك",
@@ -831,7 +831,7 @@
     "inṭirni",
     "wait for me (to a man) (Kuwait)",
     "انتظرني",
-    "to a woman: inṭiri (انطري); to a group: inṭirūni (انطروني); UAE: trayyāni (ترياني)"
+    "to a woman: inṭirīni (انطريني); to a group: inṭirūni (انطروني); UAE: trayyāni (ترياني)"
    ]
   ]
  },
@@ -840,14 +840,14 @@
   "stage": 3,
   "title": "Meeting Nūra",
   "goal": "At Fahad's family home, with Fahad there, meet his sister Nūra: answer her welcome and ask after their mother",
-  "tip": "Nūra speaks Kuwaiti (ēh, shinu, yumma); you answer in your own Arabic. Replies to a woman take her endings: allāh yḥayyīch, shu giltī?, law samaḥti. A family answers tsharrafna with ish-sharaf lana 'the honour is ours', and il-bēt bētkum means 'make yourselves at home'.",
-  "grammar": "Kuwaiti forms II: recycle ēh, shinu, yumma; replies to a woman (allāh yḥayyīch, giltī)",
+  "tip": "Nūra speaks Kuwaiti (ēh, shinu, yumma); you answer in your own Arabic. Replies to a woman take her endings: allāh yḥayyīch, shu gilti?, law samaḥti. A family answers tsharrafna with ish-sharaf lana 'the honour is ours', and il-bēt bētkum means 'make yourselves at home'.",
+  "grammar": "Kuwaiti forms II: recycle ēh, shinu, yumma; replies to a woman (allāh yḥayyīch, gilti)",
   "dialogue": [
    [
     "A",
     "السلام عليكم، حياكم الله. أنا نورة، أخت فهد",
     "as-salāmu ʿalaykum, ḥayyākum allāh. ana Nūra, ukhut Fahad",
-    "Hello, welcome. I'm Nūra, Fahad's sister."
+    "(Fahad brings you and Sēf in) Hello, welcome. I'm Nūra, Fahad's sister."
    ],
    [
     "B",
@@ -876,7 +876,7 @@
    [
     "B",
     "سامحيني، شو قلتي؟",
-    "sāmḥīni, shu giltī?",
+    "sāmḥīni, shu gilti?",
     "Sorry, what did you say?"
    ],
    [
@@ -937,10 +937,10 @@
    ],
    [
     "شو قلتي؟",
-    "shu giltī?",
+    "shu gilti?",
     "what did you say? (to a woman)",
     "ماذا قلتِ؟",
-    "to a man: shu gilt? (شو قلت؟); Kuwait: shgiltī? (شقلتي؟)"
+    "to a man: shu gilt? (شو قلت؟); Kuwait: shgilti? (شقلتي؟)"
    ],
    [
     "لو سمحتي",
@@ -1049,7 +1049,7 @@
     "takfa",
     "please, I'm begging you (Kuwait)",
     "أرجوك",
-    "Saudis say it too; UAE: allāh ykhallīk (الله يخليك)"
+    "UAE: allāh ykhallīk (الله يخليك); Saudi: takfa too"
    ],
    [
     "ما بنقول شي",
@@ -1072,7 +1072,7 @@
   "stage": 3,
   "title": "Two and a half dinars",
   "goal": "Buy a perfume for your mum in a Kuwaiti shop, with Fahad asking the prices in dinars and haggling for you",
-  "tip": "Kuwait's money is the dīnār. Count it like dirhams: dīnārēn 'two dinars', khams danānīr 'five dinars' (three to ten take the plural), ʿishrīn dīnār from eleven up. Your comparatives work here too: fī shay arkhaṣ? 'is there anything cheaper?', rīḥtah aḥla 'it smells nicer'.",
+  "tip": "Kuwait's money is the dīnār. Count it like dirhams: dīnārēn 'two dinars', ʿishrīn dīnār from eleven up; from three to ten you'll hear danānīr: khams danānīr 'five dinars'. Your comparatives work here too: fī shay arkhaṣ? 'is there anything cheaper?', rīḥtah aḥla 'it smells nicer'.",
   "grammar": "recycle: numbers with nouns (dīnārēn, khams danānīr) and comparatives (arkhaṣ, aḥla)",
   "dialogue": [
    [
@@ -1083,9 +1083,9 @@
    ],
    [
     "A",
-    "يقول بخمس دنانير. حيل غالي!",
-    "ygūl b-khams danānīr. ḥēl ghāli!",
-    "He says five dinars. That's really expensive!"
+    "يقول بخمس دنانير. غالي شوي!",
+    "ygūl b-khams danānīr. ghāli shwayy!",
+    "He says five dinars. That's a bit pricey!"
    ],
    [
     "B",
@@ -1128,14 +1128,14 @@
    [
     "دينار",
     "dīnār",
-    "a dinar (Kuwait's money); dinars (after eleven and up)",
+    "a dinar (Kuwait's money); dinars (after a number, and in prices)",
     "دينار",
-    "ʿishrīn dīnār = twenty dinars; you know dirham (درهم)"
+    "two dinars: dīnārēn; after three to ten you'll also hear danānīr (دنانير); you know dirham (درهم)"
    ],
    [
     "دنانير",
     "danānīr",
-    "dinars (after three to ten)",
+    "dinars (you'll hear it after three to ten)",
     "دنانير",
     "khams danānīr = five dinars"
    ],
@@ -1189,7 +1189,7 @@
   "stage": 3,
   "title": "An evening at the diwaniya",
   "goal": "Go with Fahad to his father's diwaniya: greet Bū Fahad respectfully, pass on your family's greetings and take his coffee",
-  "tip": "Bū Fahad means 'Fahad's father'. Greet him first, with respect: yā ʿammi, ṭāl ʿumrak. Agree to a request with ḥāẓir 'certainly'. Pass on your family's greetings with the plural: ysallmūn ʿalēk 'they send their regards'; the reply is allāh ysallimhum 'God keep them'.",
+  "tip": "Bū Fahad means 'Fahad's father'. Greet him with respect: yā ʿammi, ṭāl ʿumrak. Agree to a request with ḥāẓir 'certainly'. Pass on your family's greetings with the plural: ysallmūn ʿalēk 'they send their regards'; the reply is allāh ysallimhum 'God keep them'.",
   "grammar": "Kuwaiti forms II: id-dīwāniyya, shlōn il-ahal; recycle respectful address (yā ʿammi, ṭāl ʿumrak)",
   "dialogue": [
    [
@@ -1353,9 +1353,9 @@
    ],
    [
     "A",
-    "صج، حتى إحنا: أهل شرق غير عن أهل قبلة",
-    "ṣij, ḥatta iḥna: ahal Sharg ghēr ʿan ahal Jibla",
-    "True, even among us: the people of Sharq are different from the people of Jibla."
+    "صج، حتى إحنا: أيام زمان أهل شرق غير عن أهل جبلة",
+    "ṣij, ḥatta iḥna: ayyām zamān ahal Sharg ghēr ʿan ahal Jibla",
+    "True, even among us: in the old days the people of Sharq were different from the people of Jibla."
    ]
   ],
   "items": [
@@ -1416,6 +1416,6 @@
     "UAE: ḥatta niḥin (حتى نحن); you know ḥatta ana"
    ]
   ],
-  "culture": "Kuwaitis can often tell which old quarter of Kuwait City a family comes from, such as Qibla (Jibla), Al-Murqab or Sharq, by the way they speak. One example: the word for 'sugar' is said shekar in Sharq but shakar in Qibla."
+  "culture": "In old Kuwait Town, quarters such as Jibla and Sharq each had their own way of speaking. Today those differences have mostly blurred, and Kuwaitis from all areas speak a shared, levelled Kuwaiti."
  }
 ]
