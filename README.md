@@ -80,7 +80,7 @@ Open it, press **Continue** until Today says you're done. A normal day is review
 
 - **Reviews:** say the answer before you reveal it, then grade yourself honestly. On a PC, Space shows the answer and 1 to 4 grade it.
 - **Leaving a lesson:** the ✕, or Android's back gesture. If you're halfway through a lesson the first back asks "Leave?" and a second back leaves.
-- **Backups:** Progress, **Export backup**, every week or so, and before you clear browser data. **Import backup** merges, and it tells you what will change before it does anything.
+- **Backups:** Progress, **Export backup**, every week or so, and before you clear browser data. **Import backup** merges, and it tells you what will change before it does anything. It can't undo **Start over**, though: anything older than the reset stays gone.
 - **Too many reviews after a break:** Today stops at 60 a day and spreads the rest over the next few days. New lessons pause while more than 40 are waiting.
 
 ## Updating
@@ -106,7 +106,7 @@ Export a backup first if you might want your progress back.
 - **Chrome (Windows):** open the app, ⋮ menu, **Uninstall Harf**, **Remove**. Tick **Also delete data from Chrome** to wipe progress too.
 - **Edge:** go to `edge://apps`, **Details** on Harf, **Uninstall**.
 - **iPhone or Android:** touch and hold the icon and remove it.
-- **Just the progress:** Progress, Danger zone, **Reset all progress**. That also clears it on every device synced to the account.
+- **Just the progress:** Progress, Danger zone, **Reset all progress**. That also clears it on every device synced to the account, and a backup made before it won't bring it back.
 
 ## Troubleshooting
 
@@ -138,11 +138,12 @@ Export a backup first if you might want your progress back.
 | Two tabs or windows open | Each tab merges the other's saves, so neither wipes the other's reviews |
 | A damaged or wrong backup file | Damaged cards are skipped, bad settings fall back to defaults, and you see a preview first |
 | A backup made after "Start over" on another device | The preview says how many cards here it'll remove |
+| A backup made before you chose "Start over" | The preview says its older cards won't come back, rather than pretending to restore them |
 | App update | Progress isn't in the files, so updates never touch it |
 
 ## How it works
 
-`index.html` is the whole app and is what gets published on claude.ai. `python build.py` turns it into `docs/`: the same page with the fonts bundled, a content security policy, a web app manifest and a small service worker. The service worker fetches the page network-first (so updates show up) and keeps the fonts and icons cached for offline use. Opening the root `index.html` directly isn't the offline app: it loads Google Fonts and has no service worker, so serve `docs/` instead.
+`index.html` is the whole app and is what gets published on claude.ai. `python build.py` turns it into `docs/`: the same page with the fonts bundled, a content security policy, a web app manifest and a small service worker. The service worker fetches the page network-first (so updates show up), falls back to the saved copy when you're offline or the network hasn't answered in 4 seconds, and keeps the fonts and icons cached for offline use. Opening the root `index.html` directly isn't the offline app: it loads Google Fonts and has no service worker, so serve `docs/` instead.
 
 ### The method
 
@@ -151,6 +152,7 @@ I based it on the [Palteca method](https://palteca.com/method) (input you can un
 - Every lesson starts with a short dialogue. You listen and work it out before the English shows.
 - 5 to 9 new phrases per lesson, all on one topic, then a quick check straight away.
 - Reviews use FSRS-5, the scheduler Anki uses by default. New and missed phrases come back after 1 and 10 minutes, then at growing gaps. You pick the retention target (85, 90 or 95%).
+- Like Anki, a review day runs from 4am to 4am. A card due tomorrow is in tomorrow's session whatever time you study, not only from the minute you graded it.
 - A card is recognised while it's new, heard once it's held for a few days, and mostly said from English once it's held for a week. Forget it and it goes back to recognition.
 - Reviews mix units, so you never get two from the same lesson in a row.
 - You say every new phrase and see word by word what was caught. Each dialogue becomes a role-play where you're B, and the lines come back later as word tiles to put in order.
@@ -204,7 +206,7 @@ Most mainstream apps teach MSA, Egyptian or Levantine ([overview](https://talkin
 node --test tests/logic.test.js
 ```
 
-They cover the FSRS scheduler (learning steps, growth, lapses, the stability floor, hard < good < easy, the retention target, older cards), the daily review cap, loading damaged backups safely, card modes, interleaving, the stage gate, the AI-lesson validator, Arabic normalisation (including چ and گ), word-level speech matching, streaks across time zones, the sync merge, the contrast of the main text colours in light and dark mode, and the course data: every hand-written lesson has to pass the same validator AI lessons do. They also check the built app loads nothing from other sites and that its content security policy matches its inline scripts.
+They cover the FSRS scheduler (learning steps, growth, lapses, the stability floor, hard < good < easy, the retention target, older cards), the daily review cap, loading damaged backups safely, card modes, interleaving, the stage gate, the AI-lesson validator, Arabic normalisation (including چ and گ), word-level speech matching, streaks across time zones, review days across a clock change, a time-zone change and the clock going back, the sync merge, the contrast of the main text colours in light and dark mode, and the course data: every hand-written lesson has to pass the same validator AI lessons do. They also check the built app loads nothing from other sites, that its content security policy matches its inline scripts, that the service worker opens the saved copy offline or on a stalled connection, and that Android's back gesture closes a lesson without quitting the app.
 
 ## Credits
 

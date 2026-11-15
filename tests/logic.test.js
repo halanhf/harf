@@ -286,3 +286,74 @@ test("export on claude.ai never fakes a download: a page-started download is blo
   assert.match(html,/try\{ if\(window\.claude\) throw 0; const a=el\("a"/);
   assert.match(html,/document\.addEventListener\("touchstart",\(\)=>\{\},\{passive:true\}\)/); // ios shows the pressed state only with a touch listener
 });
+test("review days: a card due tomorrow is in all of tomorrow's session (from 4am), across dst, a time-zone change and a clock going back",()=>{
+  const tz=process.env.TZ;
+  try{
+    process.env.TZ="Europe/London";
+    const at=(y,m,d,h)=>new Date(y,m-1,d,h).getTime();
+    // graded "tomorrow" at 8pm: due in tomorrow's 7am session, not only from 8pm
+    let c=L.schedule(L.schedule({},2,at(2026,11,10,19)),2,at(2026,11,10,20)); c=Object.assign({},c,{i:1,d:at(2026,11,10,20)+DAY});
+    assert.ok(L.dueAt(c)<=at(2026,11,11,7),"due by 7am the next day");
+    assert.ok(L.dueAt(c)>at(2026,11,11,3),"not before that day starts at 4am");
+    assert.equal(L.planDay({a:c},{},at(2026,11,11,7)).reviews.length,1);
+    assert.equal(L.planDay({a:c},{},at(2026,11,11,2)).reviews.length,0);
+    // minute learning steps stay exact
+    const step=L.schedule({},2,at(2026,11,10,20)); assert.equal(L.dueAt(step),step.d);
+    // the uk clocks go forward on 29 march 2026: a card graded the evening before is due that morning
+    const dst={s:3,k:5,r:3,l:0,st:-1,i:1,t:at(2026,3,28,21),d:at(2026,3,28,21)+DAY};
+    assert.equal(L.planDay({a:dst},{},at(2026,3,29,6)).reviews.length,1);
+    assert.equal(L.learnDay(at(2026,3,29,6))-L.learnDay(dst.t),1);
+    // reviewed next morning, it counts as a day later (not a same-day review), so it grows like any other review
+    const next=L.schedule(dst,2,at(2026,3,29,7)); assert.ok(next.i>=2,`next interval ${next.i}`);
+    // the clock went back (or a flight west): no negative days, no NaN
+    const back=L.schedule(dst,2,dst.t-3*3600000); assert.ok(Number.isFinite(back.d)&&back.i>=1);
+    // a long absence (two years): finite, and the interval keeps growing
+    const away=L.schedule({s:30,k:5,r:9,l:0,st:-1,i:30,t:at(2024,11,10,9),d:at(2024,12,10,9)},2,at(2026,11,10,9)); assert.ok(Number.isFinite(away.s)&&away.i>30&&away.i<=L.MAX_IVL,`${away.i}`);
+    // flying from london to dubai after grading: still due the next local day
+    process.env.TZ="Asia/Dubai"; assert.equal(L.planDay({a:c},{},at(2026,11,11,9)).reviews.length,1);
+  }finally{ if(tz===undefined) delete process.env.TZ; else process.env.TZ=tz; }
+});
+test("cleanSaved: junk day fields can't win every merge or stop the streak",()=>{
+  const o=L.cleanSaved({lastDay:"zzz",msaDay:7,freezeUsed:"2026-01-02",session:{day:"x",done:{review:1}}},now,"2026-11-14");
+  assert.equal(o.lastDay,""); assert.equal(o.msaDay,""); assert.equal(o.freezeUsed,"2026-01-02"); assert.equal(o.session.day,"");
+  assert.equal(L.mergeProgress({lastDay:"2026-11-14",streak:5},o).streak,5);
+  const ok=L.cleanSaved({lastDay:"2026-11-14",session:{day:"2026-11-14",done:{review:1}}},now,"2026-11-14"); assert.equal(ok.lastDay,"2026-11-14"); assert.equal(ok.session.done.review,1);
+});
+test("back gesture: reopened mid-lesson (reload, or the phone closed the app in the background), back isn't dead twice",()=>{
+  const main=html.match(/<script>\r?\n\(function\(\)\{([\s\S]*?)<\/script>/)[1];
+  const code=main.slice(main.indexOf("let skipPop"),main.indexOf("function show("));
+  const run=framed=>{
+    const entries=[{state:null},{state:{harf:1}},{state:{harf:2}}]; let at=2;
+    const history={get state(){ return entries[at].state; },get length(){ return entries.length; },pushState(){},replaceState(s){ entries[at].state=s; },go(n){ at+=n; }};
+    const win={}; win.top=framed?{}:win;
+    const env={history,window:win,document:{body:{classList:{contains:()=>false}},addEventListener(){}},addEventListener(){},$:()=>null};
+    vm.createContext(env); vm.runInContext(code,env); return {at,state:entries[at].state};
+  };
+  assert.deepEqual(run(false),{at:0,state:null}); // the installed app steps back over its old lesson entries
+  const f=run(true); assert.equal(f.at,2); assert.equal(f.state,null); // inside claude.ai it leaves history alone (the page around may have added some)
+});
+test("service worker: the page opens from the saved copy offline, on a stalled connection, and updates it when online",async()=>{
+  const sw=fs.readFileSync(path.join(__dirname,"..","docs","sw.js"),"utf8");
+  const store=new Map(); const cache={put:async(k,v)=>{ store.set(String(k),v); },match:async k=>store.get(String(k)),addAll:async()=>{}};
+  const handlers={}; let net=()=>new Promise(()=>{});
+  const env={self:{addEventListener:(t,f)=>{ handlers[t]=f; },skipWaiting(){},clients:{claim(){}}},location:{origin:"https://h.test"},URL,Request:function(u){ this.url=u; },
+    Response:{error:()=>({error:true})},setTimeout:f=>{ f(); return 0; },fetch:()=>net(),
+    caches:{open:async()=>cache,match:async k=>store.get(String(k)),keys:async()=>[],delete:async()=>true}};
+  vm.createContext(env); vm.runInContext(sw,env);
+  const open=async()=>{ let p; const waits=[]; handlers.fetch({request:{method:"GET",mode:"navigate",url:"https://h.test/"},respondWith:x=>{ p=x; },waitUntil:x=>waits.push(x)}); const r=await p; return r; };
+  store.set("./",{ok:true,body:"saved"});
+  assert.equal((await open()).body,"saved","stalled connection: the saved copy after the timeout");
+  net=()=>Promise.reject(new TypeError("offline")); assert.equal((await open()).body,"saved","offline: the saved copy");
+  const fresh={ok:true,body:"new",clone(){ return {ok:true,body:"new"}; }}; net=()=>Promise.resolve(fresh);
+  env.setTimeout=()=>0; // online and quick: the network answer wins and is saved for next time
+  assert.equal((await open()).body,"new"); await new Promise(r=>setImmediate(r)); assert.equal(store.get("./").body,"new");
+  store.clear(); net=()=>Promise.reject(new TypeError("offline")); assert.equal((await open()).error,true,"nothing saved yet and offline: a network error, not a hang");
+});
+test("import after start over: the preview counts the backup cards the reset will drop, so a restore is never a silent no-op",()=>{
+  const R=Date.UTC(2026,10,14); const rMin=Math.floor(R/60000);
+  const here={resetAt:R,resetDay:"2026-11-14",cards:{}};
+  const backup=L.cleanSaved({cards:{a:[3,5,3,rMin+999,0,rMin-3000,-1,3],b:[3,5,3,rMin+999,0,rMin+5,-1,3]}},R+DAY,"2026-11-15");
+  const merged=L.mergeProgress(here,backup); const gone=Object.keys(backup.cards).filter(k=>!merged.cards[k]);
+  assert.deepEqual(gone,["a"]);
+  assert.match(html,/gone=Object\.keys\(state\.cards\)\.filter\(k=>!merged\.cards\[k\]\)/); assert.match(html,/won't`\} come back\. Start over can't be undone with a backup/);
+});

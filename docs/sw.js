@@ -1,6 +1,7 @@
-// offline support for the installed app. the page is fetched network-first so a new version shows up on the next open;
+// offline support for the installed app. the page is fetched network-first (falling back to the saved copy offline or after 4 s)
+// so a new version shows up on the next open;
 // fonts and icons are cache-first because they never change under the same name
-const CACHE="harf-v07a2fb848c";
+const CACHE="harf-v9233d60fa7";
 // the page is stored as "./" only: hosts like cloudflare pages redirect /index.html to /, and a redirected copy can't open the app offline
 const SHELL=["./","./manifest.webmanifest","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-maskable-512.png","./icons/apple-touch-icon.png","./icons/favicon-32.png",
   "./fonts/amiri-arabic-400-normal.woff2","./fonts/amiri-arabic-700-normal.woff2","./fonts/readex-pro-latin-400-normal.woff2","./fonts/readex-pro-latin-500-normal.woff2","./fonts/readex-pro-latin-600-normal.woff2","./fonts/readex-pro-latin-ext-400-normal.woff2"];
@@ -11,8 +12,11 @@ self.addEventListener("fetch",e=>{
   const r=e.request; if(r.method!=="GET") return;
   const u=new URL(r.url); if(u.origin!==location.origin) return; // never cache anything from other sites
   if(r.mode==="navigate"||u.pathname.endsWith("/")||u.pathname.endsWith("index.html")){
-    e.respondWith(fetch(r).then(res=>{ if(res.ok){ const copy=res.clone(); caches.open(CACHE).then(c=>c.put("./",copy)); } return res; })
-      .catch(()=>caches.match("./")));
+    const net=fetch(r).then(res=>{ if(res.ok){ const copy=res.clone(); return caches.open(CACHE).then(c=>c.put("./",copy)).then(()=>res,()=>res); } return res; });
+    e.waitUntil(net.catch(()=>{})); // a slow fetch still finishes and updates the cache for next time
+    // on a connection that's up but passes nothing (a train, one bar of signal) don't wait minutes: after 4 s open the saved copy
+    const slow=new Promise(ok=>setTimeout(ok,4000)).then(()=>caches.match("./")).then(m=>m||net);
+    e.respondWith(Promise.race([net,slow]).catch(()=>caches.match("./")).then(m=>m||Response.error()));
     return;
   }
   e.respondWith(caches.match(r).then(m=>m||fetch(r).then(res=>{ if(res.ok&&/\/(fonts|icons)\//.test(u.pathname)){ const copy=res.clone(); caches.open(CACHE).then(c=>c.put(r,copy)); } return res; })));

@@ -542,6 +542,11 @@ const nextD=(k,G)=>{ const dd=-FSRS_W[6]*(G-3); return clampD(FSRS_W[7]*initD(4)
 const sSuccess=(k,s,R,G)=>Math.max(S_MIN,s*(1+Math.exp(FSRS_W[8])*(11-k)*Math.pow(s,-FSRS_W[9])*(Math.exp(FSRS_W[10]*(1-R))-1)*(G===2?FSRS_W[15]:1)*(G===4?FSRS_W[16]:1)));
 const sFail=(k,s,R)=>Math.max(S_MIN,Math.min(FSRS_W[11]*Math.pow(k,-FSRS_W[12])*(Math.pow(s+1,FSRS_W[13])-1)*Math.exp(FSRS_W[14]*(1-R)),s));
 const sShort=(s,G)=>Math.max(S_MIN,s*Math.exp(FSRS_W[17]*(G-3+FSRS_W[18])));
+// review days run 4am to 4am local, as in anki: a card due "tomorrow" is in all of tomorrow's session, not only from the
+// minute it was graded, and days between reviews are counted in these days (a dst change or the clock going back can't skew them)
+const ROLL_H=4;
+const learnDay=ms=>{ const t=new Date(ms); return Math.round(Date.UTC(t.getFullYear(),t.getMonth(),t.getDate()-(t.getHours()<ROLL_H?1:0))/DAY); };
+const dueAt=c=>{ if(!(c.d-c.t>=DAY/2)) return c.d; const u=new Date(learnDay(c.d)*DAY); return new Date(u.getUTCFullYear(),u.getUTCMonth(),u.getUTCDate(),ROLL_H).getTime(); }; // minute steps stay exact
 // card {s, k, d due ms, t last review ms, r reps, l lapses, st learning step (-1 = in review), i scheduled interval days}
 // grade from the ui: 0 again, 1 hard, 2 good, 3 easy
 function schedule(card,grade,now,retention){
@@ -558,7 +563,7 @@ function schedule(card,grade,now,retention){
   if(!c.s){ c.s=FSRS_W[G-1]; c.k=initD(G); c.st=0; step(LEARN_STEPS); }
   else if(c.st>=0){ c.s=sShort(c.s,G); c.k=nextD(c.k,G); step(c.l>0?RELEARN_STEPS:LEARN_STEPS); }
   else {
-    const elapsed=Math.max(0,(now-c.t)/DAY); const R=retrievability(elapsed,c.s);
+    const elapsed=Math.max(0,learnDay(now)-learnDay(c.t)); const R=retrievability(elapsed,c.s);
     if(G===1){ c.s=sFail(c.k,c.s,R); c.k=nextD(c.k,1); c.l++; c.st=0; c.i=0; c.d=now+RELEARN_STEPS[0]*60000; }
     else if(elapsed<1){ c.s=sShort(c.s,G); c.k=nextD(c.k,G); graduate(); }
     else { // as the reference scheduler does: hard < good < easy by at least a day each
@@ -622,7 +627,7 @@ function stageStatus(unitIds,itemIds,state){
 function planDay(cards,suspended,now,opts){
   const o=Object.assign({maxReviews:60,backlogLimit:40},opts||{});
   const ex=o.exclude||new Set(); // cards held back by today's cap stay out of a session that is topped up as it runs
-  const due=Object.keys(cards).filter(id=>!isHidden(suspended,id)&&!ex.has(id)&&cards[id].d<=now).sort((a,b)=>cards[a].d-cards[b].d);
+  const due=Object.keys(cards).filter(id=>!isHidden(suspended,id)&&!ex.has(id)&&dueAt(cards[id])<=now).sort((a,b)=>cards[a].d-cards[b].d);
   return {reviews:due.slice(0,o.maxReviews),backlog:due.length,allowNew:due.length<=o.backlogLimit};
 }
 // interleave: never two cards from the same unit back to back when avoidable
@@ -675,6 +680,9 @@ function cleanSaved(raw,now,todayKey){
   const cards={}; if(o.cards&&typeof o.cards==="object") for(const [k,a] of Object.entries(o.cards)) if(validCard(a)) cards[k]=a; o.cards=cards;
   for(const f of ["unitsDone","suspended","log","rp","seen"]) if(!o[f]||typeof o[f]!=="object"||Array.isArray(o[f])) o[f]={};
   if(!Array.isArray(o.custom)) o.custom=[];
+  // day fields must be real dates: a junk one sorts after every date, so it would win every merge and stop the streak counting
+  for(const f of ["lastDay","freezeUsed","msaDay"]) if(!(typeof o[f]==="string"&&(o[f]===""||isFinite(dayNum(o[f]))))) o[f]="";
+  if(!o.session||typeof o.session!=="object"||!(typeof o.session.day==="string"&&isFinite(dayNum(o.session.day)))) o.session={day:"",done:{}};
   const R=+o.resetAt; o.resetAt=R>0&&R<=now+DAY?Math.min(R,now):0; // a clock a little ahead is pulled back; a date far ahead is junk and ignored
   o.resetDay=typeof o.resetDay==="string"&&o.resetAt?o.resetDay:"";
   if(todayKey&&o.resetDay>todayKey) o.resetDay=todayKey;
@@ -727,7 +735,7 @@ function whenLabel(ms){
   if(m<1.5) return "in 1 min"; if(m<60) return `in ${Math.round(m)} min`; if(m<1440) return `in ${Math.round(m/60)} h`;
   const d=Math.round(m/1440); if(d<60) return d===1?"tomorrow":`in ${d} days`; return `in ${Math.round(d/30)} mo`;
 }
-if(typeof module!=="undefined") module.exports={validCard,validGen,cleanSaved,S_MIN,MAX_IVL,normalizeArabic,levenshtein,similarity,wordMatch,letterForms,schedule,retrievability,intervalDays,isLeech,FSRS_W,cardMode,pickOptions,soundShift,validateUnit,isHidden,stageStatus,planDay,interleave,packCard,unpackCard,MATURE_DAYS,dayNum,nextStreak,visibleStreak,mergeProgress,whenLabel};
+if(typeof module!=="undefined") module.exports={learnDay,dueAt,validCard,validGen,cleanSaved,S_MIN,MAX_IVL,normalizeArabic,levenshtein,similarity,wordMatch,letterForms,schedule,retrievability,intervalDays,isLeech,FSRS_W,cardMode,pickOptions,soundShift,validateUnit,isHidden,stageStatus,planDay,interleave,packCard,unpackCard,MATURE_DAYS,dayNum,nextStreak,visibleStreak,mergeProgress,whenLabel};
 </script>
 
 <script>
@@ -1057,7 +1065,9 @@ const RENDER={today:()=>renderToday(),review:()=>renderReviewTab(),course:()=>re
 let skipPop=0, histLen=0, closeFocus=null;
 const depth=()=>{ try{ const s=history.state; return s&&s.harf>0?s.harf:0; }catch(e){ return 0; } };
 function pushBack(){ try{ for(let d=depth();d<2;d++) history.pushState({harf:d+1},""); }catch(e){} try{ histLen=history.length; }catch(e){} }
-try{ if(depth()) history.replaceState(null,""); }catch(e){} // reloaded mid-lesson: start counting again from here
+// reloaded mid-lesson (or the phone reopened the app it had closed in the background): step back over the old lesson entries,
+// or back would do nothing twice. inside claude.ai the page around us may have added history since, so there just start counting again
+try{ const d=depth(); if(d){ if(window.top===window) history.go(-d); else history.replaceState(null,""); } }catch(e){}
 // if the page around us (claude.ai) added history since, going back would undo its step: leave ours in place instead
 function dropBack(){ try{ const d=depth(); if(!d||history.length!==histLen) return; skipPop++; try{ history.go(-d); }catch(e){ skipPop--; } }catch(e){} }
 addEventListener("popstate",()=>{ if(skipPop){ skipPop--; return; } if(!closeFocus||!document.body.classList.contains("focus")) return;
@@ -1254,8 +1264,8 @@ function roleplay(u,onDone){
 }
 
 // ===== review tab and session =====
-function forecast(days){ const out=Array(days).fill(0); const start=new Date(Date.now()); start.setHours(0,0,0,0);
-  for(const [id,c] of Object.entries(liveCards())){ if(isHidden(S.suspended,id)) continue; const d=Math.max(0,Math.floor((c.d-start.getTime())/DAY)); if(d<days) out[d]++; }
+function forecast(days){ const out=Array(days).fill(0);
+  for(const [id,c] of Object.entries(liveCards())){ if(isHidden(S.suspended,id)) continue; const d=Math.max(0,learnDay(dueAt(c))-learnDay(Date.now())); if(d<days) out[d]++; }
   return out; }
 function forecastBars(){ const f=forecast(7); const max=Math.max(1,...f); const names=["Today","Tmrw"];
   return el("div",{className:"bars",role:"img","aria-label":"Cards due over the next 7 days: "+f.join(", ")},f.map((n,i)=>{ const d=new Date(Date.now()); d.setDate(d.getDate()+i);
@@ -1264,7 +1274,7 @@ function renderReviewTab(){
   refresh(); const sec=$("#review"); sec.textContent=""; const p=plan(); const n=p.reviews.length; const any=Object.keys(liveCards()).length;
   sec.append(el("h2",{textContent:"Review"}));
   if(!any){ sec.append(el("p",{className:"lede",textContent:"Learn a lesson from Today and its phrases will start showing up here."})); return; }
-  const nextDue=Object.entries(liveCards()).filter(([id])=>!isHidden(S.suspended,id)).map(([,c])=>c.d).filter(d=>d>Date.now()).sort((a,b)=>a-b)[0];
+  const nextDue=Object.entries(liveCards()).filter(([id])=>!isHidden(S.suspended,id)).map(([,c])=>dueAt(c)).filter(d=>d>Date.now()).sort((a,b)=>a-b)[0];
   sec.append(el("div",{className:"hero"},el("p",{className:"kicker",textContent:n?"Due now":"All caught up"}),
     el("h2",{className:"big-title",style:"text-transform:none;letter-spacing:0;color:var(--ink)",textContent:n?`${n} card${n>1?"s":""}`:"Nothing due right now"}),
     el("p",{textContent:n?"Mixed from every lesson. Say each answer before you reveal it.":nextDue?`Next card ${whenLabel(nextDue-Date.now())}.`:""}),
@@ -1748,8 +1758,11 @@ Return ONLY JSON: {"hook": one or two sentences in English, "example_ar", "examp
       const n=Object.keys(state.cards).length, bad=Object.keys(o.state.cards).length-n;
       // a backup made after "start over" on another device carries that reset: say what it will remove before it does
       const lost=state.resetAt>(S.resetAt||0)?Object.values(S.cards).filter(c=>c.t<state.resetAt).length:0;
+      // and the other way round: "start over" here, after the backup was made, drops its older cards when they merge. say so, never a silent no-op
+      const merged=mergeProgress(serialize(),state), gone=Object.keys(state.cards).filter(k=>!merged.cards[k]).length;
       bmsg.textContent=""; ap(bmsg,el("p",{textContent:`Backup${o.saved?" from "+String(o.saved).slice(0,10):""}: ${n} cards, ${Object.keys(state.unitsDone).length} lessons${bad?` (${bad} damaged card${bad>1?"s":""} skipped)`:""}. It's combined with what's here: each card keeps its most recent review.`}),
         lost?el("p",{className:"notice warn",textContent:`This backup was made after “Start over” on ${state.resetDay||"another device"}, so ${lost} card${lost>1?"s":""} here from before then will be removed.`}):null,
+        gone?el("p",{className:"notice warn",textContent:`You chose “Start over” on ${merged.resetDay||"a later day"}, after this backup was made, so ${gone===n?"none of its cards will":`${gone} of its cards won't`} come back. Start over can't be undone with a backup.`}):null,
         el("div",{className:"row"},el("button",{className:"btn small primary",type:"button",textContent:"Restore it",onclick:()=>{
           const ids=new Set(S.gen.map(u=>u.id)); gen.forEach(u=>{ if(!ids.has(u.id)){ S.gen.push(u); saveGenUnit(u); } }); rebuild();
           applyMerged(mergeProgress(serialize(),state)); rebuild(); save(); flush(); refresh(); renderMe(); announce("Backup restored"); }}),
