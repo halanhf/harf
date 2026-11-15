@@ -321,7 +321,7 @@ These are the high-frequency dialect forms in the Gumar AE+KW top 1,000 (names, 
 | طبعا | 344 | 338:351 | GULF | s1u053 |
 | المهم | 379 | 402:251 | GULF | s2u018 |
 | قاعد | 390 | 231:402 | GULF | s2u018 |
-| تدري | 391 | 247:386 | GULF | s2u001 |
+| تدري | 391 | 247:386 | GULF | s2u003 |
 | للحين | 418 | 152:447 | GULF | s2u085 |
 | خلني | 422 (خل) | 241:354 | GULF | s1u048 |
 | هالشي | 423 | 299:293 | GULF | s1u027 |
@@ -334,7 +334,7 @@ These are the high-frequency dialect forms in the Gumar AE+KW top 1,000 (names, 
 | قدام | 571 (as جدام) | 300:153 | GULF | s1u061 |
 | ما في | 581 | 166:280 | GULF | u13 |
 | ترا | 606 | 219:207 | GULF | s2u077 |
-| يطالع | 609 | 270:154 | GULF | s2u007 |
+| يطالع | 609 | 270:154 | GULF | s2u012 |
 | ودي | 725 | 151:208 | GULF | s2u068 |
 | ياي | 739 | 247:106 | GULF | s1u061 |
 | دوم | 852 | 198:106 | GULF | s2u001 |
