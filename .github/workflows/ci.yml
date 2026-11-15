@@ -26,9 +26,10 @@ jobs:
       - name: local server from the readme serves the app
         run: |
           python3 -m http.server 8000 --bind 127.0.0.1 -d docs & sleep 2
-          curl -sf http://127.0.0.1:8000/ | grep -q 'rel="manifest"'
-          curl -sf http://127.0.0.1:8000/sw.js | grep -q 'harf-v'
-          curl -sf http://127.0.0.1:8000/manifest.webmanifest | python3 -c "import json,sys; m=json.load(sys.stdin); assert m['display']=='standalone' and len(m['icons'])>=3"
+          curl -sf -o /tmp/page.html http://127.0.0.1:8000/ && grep -q 'rel="manifest"' /tmp/page.html
+          curl -sf -o /tmp/sw.js http://127.0.0.1:8000/sw.js && grep -q 'harf-v' /tmp/sw.js
+          curl -sf -o /tmp/m.json http://127.0.0.1:8000/manifest.webmanifest
+          python3 -c "import json; m=json.load(open('/tmp/m.json')); assert m['display']=='standalone' and len(m['icons'])>=3"
   # the owner builds and serves on windows: a crlf checkout must still build the same docs/, and the readme commands must work in powershell
   windows:
     runs-on: windows-latest
