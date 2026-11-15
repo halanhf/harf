@@ -35,7 +35,7 @@ def main():
     only = int(args[0]) if args else None
     gumar = "--gumar" in sys.argv
     errs, warns = [], []
-    seen_ids, seen_items, seen_bags = {}, {}, {}
+    seen_ids, seen_items, seen_bags, seen_stems = {}, {}, {}, {}
     known = set()  # every word form taught or heard so far, in course order
     for n in range(1, 6):
         for src, u in units_of(n):
@@ -74,6 +74,9 @@ def main():
                 elif " " not in k and (na := re.sub(r"^ال", "", k)) != k and na in seen_items or " " not in k and ("ال" + k) in seen_items: W(f"items[{i}] {r[0]} is an earlier single-word item with or without il- ({seen_items.get(re.sub(r'^ال', '', k)) or seen_items.get('ال' + k)}): a re-teach")
                 elif " " in k and (bag := " ".join(sorted(k.split()))) in seen_bags: W(f"items[{i}] {r[0]} has the same words as {seen_bags[bag][1]} in {seen_bags[bag][0]}, in another order: a re-teach unless the meaning differs")
                 if norm(r[0]) in HOMOGRAPHS and uid not in HOMOGRAPHS[norm(r[0])]: W(f"items[{i}] {r[0]} is a bare homograph (STYLE §2): teach it inside a chunk")
+                sk = stem_key(k)
+                if k not in seen_items and sk in seen_stems and seen_stems[sk][1] != k: W(f"items[{i}] {r[0]} looks like {seen_stems[sk][1]} ({seen_stems[sk][0]}) with only the person or ending changed: if so, put it in a note and teach something new")
+                seen_stems.setdefault(sk, (uid, k))
                 seen_items[k] = uid
                 if " " in k: seen_bags.setdefault(" ".join(sorted(k.split())), (uid, r[0]))
                 en, note = r[2].lower(), r[4].lower()
@@ -153,6 +156,14 @@ def formula_gaps(dl):
             if not any(w != who and any(r in a for r in replies) for w, a in rows[i + 1:]):
                 out.append(f"dialogue[{i}] has the formula {m.group(0)} but no later line from the other speaker gives its reply ({' / '.join(replies)}; FRAMEWORK §7)")
     return out
+
+def stem_key(k):  # crude: drop article/b-/w- prefixes and pronoun/person endings, to spot an earlier item with only the person or ending changed
+    out = []
+    for w in k.split():
+        w = re.sub(r"^(وال|بال|ال|و|ب)(?=..)", "", w)
+        if len(w) > 3: w = re.sub(r"(هم|ها|كم|نا|ين|ون|وا|ته|تها|تهم|تك|تي|ت|ه|ك|ج|ي)$", "", w)
+        out.append(w)
+    return " ".join(sorted(out))
 
 def check_fusha(errs, warns):
     seen = {}
