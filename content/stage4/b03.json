@@ -168,7 +168,7 @@
    [
     "B",
     "ممكن. لا تشيلين هم، عندي نسخة على اللابتوب",
-    "mumkin. la tshīlīn ham, ʿindi nuskha ʿala l-lābtōb",
+    "mumkin. la tshīlīn hamm, ʿindi nuskha ʿala l-lābtōb",
     "Could be. Don't worry, I've got a copy on my laptop."
    ],
    [
@@ -199,7 +199,7 @@
     "A",
     "مسموح! بس لا تخربطها مرة ثانية",
     "masmūḥ! bas la tkharbiṭha marra thānya",
-    "Forgiven! But don't mess it up again."
+    "Forgiven! But don't mess them up again."
    ]
   ],
   "items": [
@@ -481,7 +481,7 @@
     "sawwā-li blōk",
     "he blocked me (on an app)",
     "حظرني",
-    "I blocked him: sawwēt-lah blōk (سويت له بلوك); you'll also hear ballakni (بلكني)"
+    "I blocked him: sawwēt-lah blōk (سويت له بلوك)"
    ],
    [
     "ليش يسوي لك بلوك؟",
@@ -550,7 +550,7 @@
   "stage": 4,
   "title": "What do you hope for?",
   "goal": "In Bū Rāshid's majlis, talk about your hopes for after your studies and answer his good wishes",
-  "tip": "atmanna 'I hope, I'd love to' takes a bare verb: atmanna alga shughul hni 'I hope to find a job here'. For someone else, add inn: atmanna innak tigʿid 'I hope you stay'. kint atmanna is a wish that can't come true: kint atmanna agdar 'I wish I could'.",
+  "tip": "atmanna 'I hope, I'd love to' takes a bare verb: atmanna alga shughul hni 'I hope to find a job here'. For someone else, use their verb, with or without inn: atmanna (innak) tigʿid 'I hope you stay'. kint atmanna is a wish that can't come true: kint atmanna agdar 'I wish I could'.",
   "grammar": "atmanna 'I hope, I wish' + verb, + inn; kint atmanna 'I wish (but can't)'",
   "dialogue": [
    [
@@ -587,7 +587,7 @@
     "B",
     "آمين. تسلم يا عمي. بس أهلي يتمنون أرجع",
     "āmīn. tislam yā ʿammi. bas ahli yitmannūn arjaʿ",
-    "Amen. Thank you, uncle. But my family wish I'd come back."
+    "Amen. Thank you, uncle. But my family are hoping I'll go back."
    ],
    [
     "A",
@@ -741,7 +741,7 @@
     "A",
     "وإذا كنسلت، بحط صورتك في القروب!",
     "w idha kansalt, baḥuṭṭ ṣūrtak fi l-grūb!",
-    "And if you cancel, I'll put your picture in the group!"
+    "And if you cancel, I'll post your photo in the group so everyone knows!"
    ]
   ],
   "items": [
@@ -849,9 +849,9 @@
    ],
    [
     "A",
-    "أنا أفضل العربي على الهندي، بس المدير ما يحب الأكل الحار",
-    "ana afaẓẓil il-ʿarabi ʿala l-hindi, bas il-mudīr ma yḥibb il-akil il-ḥārr",
-    "I prefer Arabic to Indian, but the manager doesn't like spicy food."
+    "أنا أفضل العربي على الهندي، والمدير أصلا ما يحب الأكل الحار",
+    "ana afaẓẓil il-ʿarabi ʿala l-hindi, w il-mudīr aṣlan ma yḥibb il-akil il-ḥārr",
+    "I prefer Arabic to Indian, and the manager doesn't like spicy food anyway."
    ],
    [
     "B",
@@ -977,9 +977,9 @@
    ],
    [
     "B",
-    "سنة كاملة. ومشتهي أكل أمي بعد",
-    "sana kāmla. w mishtahi akil ummi baʿad",
-    "A whole year. And I'm craving my mum's cooking, too."
+    "شهرين بس، وأحسها سنة كاملة. ومشتهي أكل أمي بعد",
+    "shahrēn bas, w aḥissha sana kāmla. w mishtahi akil ummi baʿad",
+    "Only two months, and it feels like a whole year. And I'm craving my mum's cooking, too."
    ],
    [
     "A",
@@ -1087,7 +1087,7 @@
   "stage": 4,
   "title": "Checkpoint 4.2: getting ready for your family",
   "goal": "Checkpoint: with Sēf, plan your family's visit: what they'd like, who's coming, and what you'd all prefer to do",
-  "tip": "Review of s4u016–028, now about other people: shu yfaẓẓlūn? 'what would they like?', khāṭirhum fi 'they're dying for', idha ma kansal 'if he doesn't cancel', yitmanna yshūf 'he's hoping to see', plus ʿaṭētni iyyāh and widdi lō. ʿala l-ʿasha here is 'for dinner'.",
+  "tip": "Review of s4u016–028, now about other people: shu yfaẓẓlūn? 'what would they like?', il-akil il-imārāti 'Emirati food', idha ma kansal 'if he doesn't cancel', yitmanna yshūf 'he's hoping to see', plus ʿaṭētni iyyāh and widdi lō. ʿala l-ʿasha here is 'for dinner'.",
   "grammar": "checkpoint 4.2: iyyā-, kansal, atmanna, yā rēt, afaẓẓil, khāṭri, widdi lō, with 'they' and 'he'",
   "dialogue": [
    [
@@ -1160,11 +1160,11 @@
     "to a group: shu tfaẓẓlūn? (شو تفضلون؟), not tfaẓẓalu 'go ahead'"
    ],
    [
-    "خاطرهم في",
-    "khāṭirhum fi",
-    "they're dying for, they'd love (a thing)",
-    "يشتهون",
-    "he's dying for: khāṭrah fi (خاطره في); she's dying for: khāṭirha fi (خاطرها في)"
+    "الأكل الإماراتي",
+    "il-akil il-imārāti",
+    "Emirati food, Emirati cooking",
+    "الطعام الإماراتي",
+    "Kuwaiti food: il-akil il-kwēti (الأكل الكويتي); they're dying for: khāṭirhum fi (خاطرهم في)"
    ],
    [
     "يا ريت كل الناس",
