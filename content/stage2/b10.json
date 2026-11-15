@@ -348,8 +348,8 @@
   "stage": 2,
   "title": "Sēf's Emirati words",
   "goal": "Understand Sēf when he speaks the way Emiratis do at home, and accept his invitation to meet his family",
-  "tip": "Emiratis often use local forms. Sēf's il-ḥīna basīr is il-ḥīn barūḥ 'I'm going now'; abā, tabā = abi, tabi; hub = mub; yirmis = yitkallam 'speaks'; ummāya = ummi 'my mum'; ḥijra = ghurfa 'room'. Learn to understand them all, and keep using the forms you know.",
-  "grammar": "Emirati alternatives (UAE): abā, tabā, hub, il-ḥīna, basīr, yirmis",
+  "tip": "Emiratis often use local forms. Sēf's il-ḥīna basīr is il-ḥīn barūḥ 'I'm going now'; abā, tabā = abi, tabi; hub = mub; yirmis = yitkallam 'speaks'; yālis = gāʿid 'sitting, -ing'; ummāya = ummi 'my mum'. Learn to understand them all, and keep using the forms you know.",
+  "grammar": "Emirati alternatives (UAE): abā, tabā, hub, il-ḥīna, basīr, yirmis, yālis",
   "culture": "In Emirati dialect novels, abā is almost as common as abi, and basīr nearly as common as barūḥ, while Kuwaiti writers hardly ever use them. You'll also hear ʿasab (عسب) for ʿashān 'because, so that'. Some Emiratis frown on it as a newer habit, so just recognise it.",
   "dialogue": [
    [
@@ -378,9 +378,9 @@
    ],
    [
     "A",
-    "هيه، أمايه في حجرتها، بس تبا تشوفك",
-    "hē, ummāya fi ḥijrat-ha, bas tabā tshūfak",
-    "Yes, my mum's in her room, but she wants to see you."
+    "هيه، أمايه يالسة في الصالة، بس تبا تشوفك",
+    "hē, ummāya yālsa fi ṣ-ṣāla, bas tabā tshūfak",
+    "Yes, my mum's sitting in the living room, but she wants to see you."
    ],
    [
     "B",
@@ -390,7 +390,7 @@
    ],
    [
     "A",
-    "هب مشكلة، ترا أبويه يرمس إنجليزي. يلا، ما أبا أتأخر",
+    "هب مشكلة، ترا أبويه يرمس انقليزي. يلا، ما أبا أتأخر",
     "hub mushkila, tara ubūya yirmis ingilīzi. yalla, ma abā atʼakhkhar",
     "No problem, my dad speaks English. Come on, I don't want to be late."
    ]
@@ -432,11 +432,11 @@
     "the default is ummi (أمي); my dad: ubūya (أبويه)"
    ],
    [
-    "حجرة",
-    "ḥijra",
-    "room (UAE)",
-    "غرفة",
-    "the default is ghurfa (غرفة); ḥijrat-ha = her room"
+    "يالس",
+    "yālis",
+    "sitting; is …-ing (a man) (UAE)",
+    "جالس",
+    "a woman: yālsa (يالسة); the default is gāʿid (قاعد); yālis yirmis = he's talking"
    ],
    [
     "هب",
@@ -560,9 +560,9 @@
   "dialogue": [
    [
     "A",
-    "يا ولدي، شو تسوي هني؟ تدرس ولّا تشتغل؟",
-    "yā wildi, shu tsawwi hni? tidris walla tishtaghil?",
-    "Son, what do you do here? Do you study or work?"
+    "يا ولدي، شو تسوي هالأيام؟ تدرس ولّا تشتغل؟",
+    "yā wildi, shu tsawwi hal-ayyām? tidris walla tishtaghil?",
+    "Son, what are you up to these days? Do you study or work?"
    ],
    [
     "B",
@@ -578,9 +578,9 @@
    ],
    [
     "B",
-    "آمين. هيه، عندي أخ وأخت هناك، وأنا أكبر واحد",
-    "āmīn. hē, ʿindi akh w ukht hnāk, w ana akbar wāḥid",
-    "Amen. Yes, I have a brother and a sister there, and I'm the eldest."
+    "آمين. هيه، عندي ثلاث إخوان وأخت هناك، وأنا أكبر واحد",
+    "āmīn. hē, ʿindi thalāth ikhwān w ukht hnāk, w ana akbar wāḥid",
+    "Amen. Yes, I have three brothers and a sister there, and I'm the eldest."
    ],
    [
     "A",
@@ -603,11 +603,11 @@
   ],
   "items": [
    [
-    "شو تسوي هني؟",
-    "shu tsawwi hni?",
-    "what do you do here? what brings you here? (to a man)",
-    "ماذا تفعل هنا؟",
-    "to a woman: shu tsawwīn hni? (شو تسوين هني؟); say it warmly: on its own it can sound like 'what are you doing here?!'"
+    "كل شي غالي",
+    "kill shay ghāli",
+    "everything's expensive",
+    "كل شيء غالٍ",
+    "kill shay ghāli hal-ayyām = everything's expensive these days"
    ],
    [
     "تدرس ولّا تشتغل؟",
