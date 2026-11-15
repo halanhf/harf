@@ -112,6 +112,8 @@ The course follows **CODA-Gulf** (S: Khalifa et al. 2016; Habash et al. 2018) fo
 - ودنا: widdana "we'd like" vs waddna "take us!" Teach only as a chunk (ودنا نشوفك, ودنا المول).
 - برايك: b-rāyak on its own means "suit yourself, up to you" (خلاص برايك 29/0), not "in your opinion"; ask an opinion with shu raʼyak?
 - صدقت: ṣidagt "you're right" vs ṣaddagt "I believed" (ما صدقت 348/189). Teach as a chunk: ṣidagt wallāh.
+- الخطبة: il-khuṭba "the sermon" vs il-khiṭba "the engagement": teach inside a chunk (il-khuṭba gabl iṣ-ṣalāh).
+- بتسبح: batsabbaḥ "I'll shower" vs bitisbaḥ "you'll swim": teach inside a chunk.
 - تعور: tʿawwir "it (f.) hurts" vs other readings. Teach as a chunk: īdi tʿawwirni "my hand hurts" (ايدي تعورني 18/3; feminine body parts: hand, eye, leg, ear) vs rāsi yʿawwirni "my head hurts" (masculine).
 - ارتاح: irtāḥ "he rested" vs artāḥ "I rest". Teach as a chunk (artāḥ shwayy).
 - لفت: lift "lift, elevator" (loan) vs lifat "he turned". Teach il-lift as a chunk with the article.

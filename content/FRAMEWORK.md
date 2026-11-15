@@ -246,7 +246,8 @@ Teach the pair together, in the same dialogue. Evidence: S sourced; C Gumar phra
 | من العايدين والفايزين | وانت من العايدين (U) | Eid | S; C 27/7 | s3u073 |
 | عظم الله أجركم | أجرنا وأجركم (U) | condolences to the family | S (phrase); C 26/24; reply C 4/10, U | s3u075 |
 | الله يرحمه / يرحمها | آمين (U) | on mentioning the dead | C 571/338 | s3u075 |
-| مأجور | (reply U) | after a good deed, a funeral, paying for others | S (Wiktionary) | s3u076 |
+| مأجور | (reply U) | after a good deed, a funeral, paying for others | S (Wiktionary); C AE 0 / KW 3, so Kuwait note only | note in s3u076 |
+| جزاك الله خير | وإياك | thanks for a good deed (UAE also يزاك) | S (reply sourced) | s3u076 |
 | عقبالك | الله يسمع منك | at weddings and graduations | C 60/39, 47/58; pair U | s3u084 |
 | بالأفراح دايمين | (U) | weddings, Eid | S (Eid list); wedding use inferred | s3u085 |
 | new-baby, new-house and new-car formulas (beyond mabrūk + mā shāʼ allāh, S) | U | — | none sourced; don't write any until a native supplies them | B1 only after native check |
