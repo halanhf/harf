@@ -129,3 +129,7 @@ Covers the FSRS scheduler (learning steps, growth, lapses, stability floor, hard
 | FSRS-5 default parameters | [open-spaced-repetition](https://github.com/open-spaced-repetition/fsrs4anki) | MIT |
 
 The teaching ideas credited to the Palteca method above are described in this project's own words. No Palteca text, lessons or images are included.
+
+## Licence
+
+MIT, see [LICENSE](LICENSE). The bundled fonts (Amiri, Readex Pro) stay under the SIL Open Font License; their licence files sit next to them in `docs/fonts/` and `pwa/fonts/`.
