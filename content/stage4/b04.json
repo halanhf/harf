@@ -51,9 +51,9 @@
    ],
    [
     "B",
-    "زين! وهذا الياهل الصغيّر محمد؟",
-    "zēn! w hādha l-yāhil iṣ-ṣghayyir Muḥammad?",
-    "OK! And this tiny little one is Muḥammad?"
+    "زين! وهذا البيبي الصغيّر محمد؟",
+    "zēn! w hādha l-bēbi ṣ-ṣghayyir Muḥammad?",
+    "OK! And this tiny little baby is Muḥammad?"
    ],
    [
     "A",
@@ -119,11 +119,11 @@
     ""
    ],
    [
-    "الياهل الصغيّر",
-    "il-yāhil iṣ-ṣghayyir",
-    "the tiny little one, the little baby",
+    "البيبي الصغيّر",
+    "il-bēbi ṣ-ṣghayyir",
+    "the tiny little baby",
     "الطفل الصغير",
-    "yāhil 'child' is UAE; ṣghayyir is the loving small form of ṣghīr"
+    "ṣghayyir is the loving small form of ṣghīr; UAE also: il-yāhil (الياهل) 'the child'"
    ],
    [
     "حتى أمه وأبوه",
@@ -415,6 +415,7 @@
     ""
    ]
   ],
+  "culture": "How you address someone shows respect. Elders and strangers get yā ʿammi or ṭāl ʿumrak; yā rayyāl is for friends, and saying it to an elder or in a meeting comes across as very rude. With young people you know, English words and bro are fine; with elders, keep your Arabic unmixed.",
   "receptive": [
    4,
    7,
@@ -695,10 +696,10 @@
     ""
    ]
   ],
-  "culture": "Machbūs is spiced rice cooked with meat, chicken or fish, and it is a favourite family lunch in the Emirates. Passing on your mother's regards, and asking after the host's family, is part of any visit; the answer to a greeting sent through you is allāh ysallmah / ysallimha 'God keep him / her'.",
+  "culture": "Machbūs, rice cooked with spices and meat, chicken or fish, is one of the classic Emirati dishes,. Admire the food (yā salām ʿala r-rīḥa!) and thank the cook: tislamīn to a woman, tislam to a man.",
   "receptive": [
-   3,
-   4
+   4,
+   5
   ]
  },
  {
