@@ -21,9 +21,9 @@
    ],
    [
     "A",
-    "لا تتطنز علي! سهرت عليها، وهذا مجهود",
-    "la titṭannaz ʿalay! sihart ʿalēha, w hādha majhūd",
-    "Don't make fun of me! I stayed up late on it; that's real effort."
+    "لا تتطنز علي! لا تتفلسف، سهرت عليها وتبهدلت، وهذا مجهود",
+    "la titṭannaz ʿalay! la titfalsaf, sihart ʿalēha w tbahdalt, w hādha majhūd",
+    "Don't make fun of me! Don't get clever; I stayed up late on it and had a rough time, and that's real effort."
    ],
    [
     "B",
@@ -63,9 +63,9 @@
    ],
    [
     "B",
-    "كرك بعد؟ هذا من طيبك! وايد عليك اليوم",
-    "karak baʿad? hādha min ṭībak! wāyid ʿalēk il-yōm",
-    "Karak too? That's so kind of you! You're really overdoing it today! (ironic)"
+    "كرك بعد؟ هذا من طيبك! ما عليك زود اليوم",
+    "karak baʿad? hādha min ṭībak! ma ʿalēk zōd il-yōm",
+    "Karak too? That's so kind of you! Nobody could top you today! (ironic)"
    ]
   ],
   "items": [
@@ -107,7 +107,7 @@
    [
     "تعال حبيبي!",
     "taʿāl ḥabībi!",
-    "(sarcastic) nice try, mate! come off it! (to a man) (friends only)",
+    "(ironic) nice try, mate! come off it! (to a man) (friends only)",
     "",
     "(recognise); to a woman: taʿāli ḥabībti (تعالي حبيبتي); said straight, it's a friendly 'come here, mate'"
    ]
@@ -122,14 +122,14 @@
   "stage": 5,
   "title": "Nice parking, champ! Mock praise",
   "goal": "Outside Bū Rāshid's majlis, Rāshid praises your terrible parking; take the joke, and tease him back about his team's defeat",
-  "tip": "Mock praise uses real compliments for something bad: yā baṭal 'champ', shu hal-mawhiba! 'what talent!', innak fannān 'you're an artist'. The tone and the situation tell everyone it's a joke. When you've both scored a point, call it even: wāḥid wāḥid (you'll hear tʿādalna).",
-  "grammar": "irony: mock praise (yā baṭal, innak fannān)",
+  "tip": "Mock praise uses real compliments for something bad: yā baṭal 'champ', brāvo ʿalēk, shu hal-mawhiba! 'what talent!'. The tone and the situation tell everyone it's a joke. When you've both scored a point, call it even: wāḥid wāḥid (you'll hear tʿādalna).",
+  "grammar": "irony: mock praise (yā baṭal, brāvo ʿalēk, shu hal-mawhiba)",
   "dialogue": [
    [
     "A",
-    "يا سلام! صفيت السيارة عدل، ما شاء الله عليك يا بطل",
-    "yā salām! ṣaffēt is-sayyāra ʿadil, mā shāʼ allāh ʿalēk yā baṭal",
-    "Wow! You've parked the car so straight; well done, champ! (ironic)"
+    "يا سلام! صفيت السيارة عدل، برافو عليك يا بطل",
+    "yā salām! ṣaffēt is-sayyāra ʿadil, brāvo ʿalēk yā baṭal",
+    "Wow! You've parked the car so straight; bravo, champ! (ironic)"
    ],
    [
     "B",
@@ -270,9 +270,9 @@
    ],
    [
     "A",
-    "ما شاء الله! الإنقليزي بيعلم ولد دبي العربي؟ هذي يديدة!",
-    "mā shāʼ allāh! il-ingilīzi biyʿallim wild Dbayy il-ʿarabi? hādhi yidīda!",
-    "Well I never! The Englishman's going to teach a Dubai lad Arabic? That's a new one!"
+    "الإنقليزي بيعلم ولد دبي العربي؟ شو هالموهبة! لا تتفلسف علينا",
+    "il-ingilīzi biyʿallim wild Dbayy il-ʿarabi? shu hal-mawhiba! la titfalsaf ʿalēna",
+    "The Englishman's going to teach a Dubai lad Arabic? What talent! Don't get clever with us. (teasing)"
    ],
    [
     "B",
@@ -282,9 +282,9 @@
    ],
    [
     "A",
-    "شفت يا سيف؟ حتى ربيعك صار شاهد عليك!",
-    "shift yā Sēf? ḥatta rbīʿak ṣār shāhid ʿalēk!",
-    "See, Sēf? Even your friend has become a witness against you!"
+    "شفت يا سيف؟ حتى ربيعك صار شاهد عليك! لا تتهرب",
+    "shift yā Sēf? ḥatta rbīʿak ṣār shāhid ʿalēk! la titharrab",
+    "See, Sēf? Even your friend has become a witness against you! Don't try to dodge it!"
    ],
    [
     "B",
@@ -294,9 +294,9 @@
    ],
    [
     "A",
-    "أدري يا ولدي، هذا كلام مجالس. سيف من صغره دلوع أمه، بس الغربة ما فيها مزح",
-    "adri yā wildi, hādha kalām majālis. Sēf min ṣighrah dallūʿ ummah, bas il-ghurba ma fīha mazaḥ",
-    "I know, son, that's just majlis talk. Sēf's been his mother's spoilt boy since he was little, but being far from home is no joke."
+    "أدري يا ولدي. سيف من صغره دلوع أمه وكله شقاوة، بس الغربة ما فيها مزح",
+    "adri yā wildi. Sēf min ṣighrah dallūʿ ummah w killah shagāwa, bas il-ghurba ma fīha mazaḥ",
+    "I know, son. Since he was little Sēf's been his mother's spoilt boy and full of mischief, but being far from home is no joke."
    ],
    [
     "B",
@@ -306,13 +306,6 @@
    ]
   ],
   "items": [
-   [
-    "نتمصخر",
-    "nitmaṣkhar",
-    "we're joking around, we're making fun (of someone)",
-    "نمزح / نسخر",
-    "(recognise); I'm joking around: atmaṣkhar (أتمصخر)"
-   ],
    [
     "يرطن",
     "yirṭin",
@@ -342,18 +335,17 @@
     ""
    ],
    [
-    "دلوع",
-    "dallūʿ",
-    "spoilt (a boy or man), a pampered child",
-    "مدلل",
-    "(recognise); a girl: dallūʿa (دلوعة)"
+    "شقاوة",
+    "shagāwa",
+    "mischief, cheekiness",
+    "شقاوة",
+    "(recognise)"
    ]
   ],
   "receptive": [
    0,
    1,
-   2,
-   5
+   4
   ],
   "culture": "Bū Rāshid may tease Sēf, or you, in front of the majlis; you can laugh, play along or joke at your own expense. Keep your jokes away from anything that would embarrass someone: a joke that makes a person lose face reads as disrespect. Friends' words such as yā rayyāl are out of place here: with elders and in official settings they're a real faux pas."
  },
@@ -373,9 +365,9 @@
    ],
    [
     "B",
-    "خيبة يا فهد! هذاك من زمان",
-    "khēba yā Fahad! hādhāk min zamān",
-    "Come off it, Fahad! That was ages ago."
+    "خيبة يا فهد! لا تتطنز عليه",
+    "khēba yā Fahad! la titṭannaz ʿalēh",
+    "Come off it, Fahad! Don't make fun of him."
    ],
    [
     "A",
@@ -393,7 +385,7 @@
     "A",
     "شفيه؟ أمزح! دمه خفيف، يتحمل",
     "shfīh? amzaḥ! dammah khafīf, yitḥammal",
-    "What's up with him? I'm joking! He's a good sport, he can take it."
+    "What's up with him? I'm joking! He's fun, he can take a joke."
    ],
    [
     "B",
@@ -481,7 +473,7 @@
   "stage": 5,
   "title": "The printer hates me: humour at work",
   "goal": "At the office, the printer jams again just before a meeting; joke about it with Maryam, keep it polite, and get the copies printed",
-  "tip": "At work, keep humour light and aim it at things or at yourself: haṭ-ṭābʿa manḥūsa 'this printer's jinxed', killha nakad 'it's nothing but grief'. Maryam's irony is just as gentle: wallāh innak fannān! il-ḥīn iṭ-ṭābʿa ṣārat taʿarf thalāth lughāt 'now the printer knows three languages'.",
+  "tip": "At work, keep humour light and aim it at things or at yourself: haṭ-ṭābʿa manḥūsa 'this printer's jinxed', killha nakad 'it's nothing but grief'. Maryam's irony is just as gentle: wallāh innak fannān! il-ḥīn iṭ-ṭābʿa ṣārat tifham ʿarabi 'now the printer understands Arabic'.",
   "grammar": "light irony at work: joking about yourself (ḥaẓẓi, kill ma)",
   "dialogue": [
    [
@@ -510,9 +502,9 @@
    ],
    [
     "A",
-    "إجازة؟ مب وقته! انت توك راجع من إجازة",
-    "ijāza? mub wagtah! inta tawwak rājiʿ min ijāza",
-    "A holiday? Not now! You've only just come back from one."
+    "إجازة؟ زودتها! انت توك راجع من إجازة",
+    "ijāza? zawwadt-ha! inta tawwak rājiʿ min ijāza",
+    "A holiday? Now you've gone too far! You've only just come back from one."
    ],
    [
     "B",
@@ -534,9 +526,9 @@
    ],
    [
     "A",
-    "والله إنك فنان! الحين الطابعة صارت تعرف ثلاث لغات",
-    "wallāh innak fannān! il-ḥīn iṭ-ṭābʿa ṣārat taʿarf thalāth lughāt",
-    "Honestly, you're a genius! Now the printer knows three languages."
+    "والله إنك فنان! الحين الطابعة صارت تفهم عربي",
+    "wallāh innak fannān! il-ḥīn iṭ-ṭābʿa ṣārat tifham ʿarabi",
+    "Honestly, you're a genius! Now the printer understands Arabic."
    ],
    [
     "B",
@@ -575,13 +567,6 @@
     "a woman, or a feminine thing: ṭafshāna (طفشانة)"
    ],
    [
-    "مزاجها",
-    "mizājha",
-    "her mood, its mood (a feminine thing)",
-    "مزاجها",
-    "his mood: mizājah (مزاجه)"
-   ],
-   [
     "الحبر",
     "il-ḥibir",
     "the ink",
@@ -590,7 +575,7 @@
    ]
   ],
   "receptive": [
-   5
+   4
   ],
   "culture": "Maryam and B aim the jokes at the printer and keep any teasing gentle: humour between colleagues stays light, and it stays polite. Khēba and yā rayyāl are words for friends; a woman colleague, a manager or a client hears plain, friendly Arabic."
  },
@@ -599,7 +584,7 @@
   "stage": 5,
   "title": "I won't do it again",
   "goal": "On the phone, Rāshid is cool with you after your joke about his school marks in front of his dad's guests; apologise properly and make it up to him",
-  "tip": "A real apology after a joke has no excuses: aʿtadhir minnak, ḥaggak ʿalay, ma baʿīd-ha 'I won't do it again'. Say what was wrong (kānat sakhīfa 'it was a stupid joke', mub jiddām in-nās), and let him have his say: gahartni wallāh 'you really got to me'.",
+  "tip": "A real apology after a joke has no excuses: aʿtadhir minnak, ḥaggak ʿalay, ma baʿīd-ha 'I won't do it again'. Say what was wrong (kānat sakhīfa 'it was a stupid joke', ma kān gaṣdi ajraḥak), and let him have his say: gahartni wallāh 'you really got to me'.",
   "grammar": "after a joke goes wrong: apologising without excuses (aʿtadhir minnak, ma baʿīd-ha)",
   "dialogue": [
    [
@@ -640,9 +625,9 @@
    ],
    [
     "B",
-    "فهمت. كان المفروض أمزح وياك بروحنا، مب قدام الناس",
-    "fhimt. kān il-mafrūẓ amzaḥ wiyyāk b-rūḥna, mub jiddām in-nās",
-    "I get it. I should have joked with you when it was just us, not in front of people."
+    "فهمت. ما كان قصدي أجرحك. كان المفروض أمزح وياك بروحنا",
+    "fhimt. ma kān gaṣdi ajraḥak. kān il-mafrūẓ amzaḥ wiyyāk b-rūḥna",
+    "I get it. I didn't mean to hurt you. I should have joked with you when it was just us."
    ],
    [
     "A",
@@ -702,7 +687,7 @@
    [
     "تمون",
     "tmūn",
-    "you're close enough (to ask or joke), you're one of us (to a man)",
+    "you've got the right (to ask or joke with me), we're close (to a man)",
     "لك دالة",
     "(recognise); to a woman: tmūnīn (تمونين)"
    ]
@@ -718,7 +703,7 @@
   "stage": 5,
   "title": "Can you do it cheaper?",
   "goal": "At the office, a client says your offer is too expensive; hold the price politely, and (as Bū Saʿīd allows) give a small discount for a quick deal",
-  "tip": "Don't drop the price at once. Show what he gets (nkhalliṣ gabil il-mawʿid b-usbūʿ), ask for something back (ʿala sharṭ twaggʿūn il-ʿagid hal-usbūʿ) and keep the respect (ṭāl ʿumrak). ṣaddigni 'believe me' backs a point, but use it once, not in every line.",
+  "tip": "Don't drop the price at once. Show what he gets (nkhalliṣ gabil il-mawʿid b-usbūʿ), ask for something back (ʿala sharṭ twaggʿūn il-ʿagid hal-usbūʿ) and keep the respect (ṭāl ʿumrak). Only then give a little: nigdar nnazzil shwayy.",
   "grammar": "negotiating: giving something in return (ʿala sharṭ…, nafs is-siʿir bas…)",
   "dialogue": [
    [
@@ -729,20 +714,20 @@
    ],
    [
     "B",
-    "أفهمك، طال عمرك. بس صدقني، شغلنا يستاهل",
-    "afhamak, ṭāl ʿumrak. bas ṣaddigni, shughulna yistāhil",
-    "I understand, sir. But believe me, our work is worth it."
+    "أفهمك، طال عمرك. بس شغلنا فيه مجهود",
+    "afhamak, ṭāl ʿumrak. bas shughulna fīh majhūd",
+    "I understand, sir. But there's real effort in our work."
    ],
    [
     "A",
-    "كل ما أكلم شركة تقول جي. وفي شركة ثانية عرضها مغري، أرخص منكم",
-    "kill ma akallim sharika tgūl chī. w fī sharika thānya ʿarẓha mughri, arkhaṣ minkum",
-    "Every company I talk to says that. And there's another company whose offer's tempting; it's cheaper than you."
+    "أنا طفشان! كل شركة تقول جي. وفي شركة ثانية عرضها مغري، أرخص منكم",
+    "ana ṭafshān! kill sharika tgūl chī. w fī sharika thānya ʿarẓha mughri, arkhaṣ minkum",
+    "I'm fed up! Every company says that. And there's another company whose offer's tempting; it's cheaper than you."
    ],
    [
     "B",
-    "يمكن، بس من صوب ثاني، بيخلصون على الوقت؟",
-    "yimkin, bas min ṣōb thāni, biykhallṣūn ʿala l-wagt?",
+    "يمكن، بس من جهة ثانية، بيخلصون على الوقت؟",
+    "yimkin, bas min jiha thānya, biykhallṣūn ʿala l-wagt?",
     "Maybe, but on the other hand, will they finish on time?"
    ],
    [
@@ -753,21 +738,21 @@
    ],
    [
     "B",
-    "في جملة وحدة: نفس السعر، بس نخلص قبل الموعد بأسبوع، والتدريب علينا",
-    "fi jumla waḥda: nafs is-siʿir, bas nkhalliṣ gabil il-mawʿid b-usbūʿ, w it-tadrīb ʿalēna",
-    "In a nutshell: the same price, but we finish a week before the deadline, and the training's on us."
+    "باختصار: نفس السعر، بس نخلص قبل الموعد بأسبوع، والتدريب علينا",
+    "b-ikhtiṣār: nafs is-siʿir, bas nkhalliṣ gabil il-mawʿid b-usbūʿ, w it-tadrīb ʿalēna",
+    "In short: the same price, but we finish a week before the deadline, and the training's on us."
    ],
    [
     "A",
-    "عرض مب شين. بس المدير عندي مزاجه صعب، والسعر ثابت؟",
-    "ʿarẓ mub shēn. bas il-mudīr ʿindi mizājah ṣaʿb, w is-siʿir thābit?",
-    "Not a bad offer. But my manager's hard to please; and is the price fixed?"
+    "عرض مب شين. بس لا تتهرب: السعر ثابت؟",
+    "ʿarẓ mub shēn. bas la titharrab: is-siʿir thābit?",
+    "Not a bad offer. But don't dodge the question: is the price fixed?"
    ],
    [
     "B",
-    "مب ثابت، بو سعيد مرن. نقدر، على شرط توقعون العقد هالأسبوع",
-    "mub thābit, Bū Saʿīd marin. nigdar, ʿala sharṭ twaggʿūn il-ʿagid hal-usbūʿ",
-    "It isn't fixed; Bū Saʿīd is flexible. We can, on condition you sign the contract this week."
+    "بو سعيد مرن. نقدر ننزل شوي، على شرط توقعون العقد هالأسبوع",
+    "Bū Saʿīd marin. nigdar nnazzil shwayy, ʿala sharṭ twaggʿūn il-ʿagid hal-usbūʿ",
+    "Bū Saʿīd is flexible. We can knock a little off, on condition you sign the contract this week."
    ],
    [
     "A",
@@ -805,13 +790,6 @@
     "(recognise)"
    ],
    [
-    "ثابت",
-    "thābit",
-    "fixed, firm (a price); steady",
-    "ثابت",
-    "a feminine thing: thābta (ثابتة)"
-   ],
-   [
     "مرن",
     "marin",
     "flexible (a man; a plan)",
@@ -830,7 +808,7 @@
    0,
    1,
    2,
-   5
+   4
   ]
  },
  {
@@ -849,9 +827,9 @@
    ],
    [
     "A",
-    "تفضل، بس بسرعة، عندي اجتماع",
-    "tfaẓẓal, bas b-surʿa, ʿindi ijtimāʿ",
-    "Go ahead, but quickly; I've got a meeting."
+    "تفضل، بس بسرعة، وقتي محدود",
+    "tfaẓẓal, bas b-surʿa, wagti maḥdūd",
+    "Go ahead, but quickly; my time's limited."
    ],
    [
     "B",
@@ -867,15 +845,15 @@
    ],
    [
     "B",
-    "هالمرة غير. القايمة تنظم الشغل، وأنا بسويها",
-    "hal-marra ghēr. il-gāyma tnaẓẓim ish-shughul, w ana basawwīha",
-    "This time's different. The list organises the work, and I'll set it up."
+    "هالمرة غير. بتصير روتين، وأنا بسويها",
+    "hal-marra ghēr. bitṣīr rūtīn, w ana basawwīha",
+    "This time's different. It'll become routine, and I'll set it up."
    ],
    [
     "A",
-    "وإذا صار الشغل ممل؟ لازم أشاور الفريق أول",
-    "w idha ṣār ish-shughul mumill? lāzim ashāwir il-farīg awwal",
-    "And if the work gets tedious? I have to check with the team first."
+    "وإذا الفريق ما تأقلم عليها؟ لازم أشاور الكل أول",
+    "w idha l-farīg ma taʼaglam ʿalēha? lāzim ashāwir il-kill awwal",
+    "And if the team doesn't adapt to it? I have to check with everyone first."
    ],
    [
     "B",
@@ -885,9 +863,9 @@
    ],
    [
     "A",
-    "كلامك منطقي، والفكرة مب شين. بس منو بيتابع الشغل كل أسبوع؟",
-    "kalāmak manṭiqi, w il-fikra mub shēn. bas minu biytābiʿ ish-shughul kill usbūʿ?",
-    "That makes sense, and the idea's not bad. But who's going to keep track of the work every week?"
+    "كلامك منطقي، والإيميلات صج تتراكم. بس لا تتهرب: منو بيتابع الشغل؟",
+    "kalāmak manṭiqi, w il-īmēlāt ṣij titrākam. bas la titharrab: minu biytābiʿ ish-shughul?",
+    "That makes sense, and the emails really do pile up. But don't dodge the question: who's going to keep track of the work?"
    ],
    [
     "B",
@@ -897,9 +875,9 @@
    ],
    [
     "A",
-    "زين، أقنعتني، وأنا مرن. شهر واحد، على شرط تتابعها بنفسك",
-    "zēn, agnaʿtni, w ana marin. shahar wāḥid, ʿala sharṭ titābiʿha b-nafsak",
-    "All right, you've convinced me, and I'm flexible. One month, on condition you keep track of it yourself."
+    "زين، أقنعتني. شهر واحد، على شرط تتابعها بنفسك",
+    "zēn, agnaʿtni. shahar wāḥid, ʿala sharṭ titābiʿha b-nafsak",
+    "All right, you've convinced me. One month, on condition you keep track of it yourself."
    ]
   ],
   "items": [
@@ -918,36 +896,29 @@
     "a feminine thing: mshattata (مشتتة)"
    ],
    [
-    "متلخبط",
-    "mitlakhbiṭ",
-    "muddled, mixed up",
-    "مختلط / مرتبك",
-    "(recognise); a feminine thing: mitlakhbiṭa (متلخبطة)"
+    "روتين",
+    "rūtīn",
+    "routine, a habit (English loan)",
+    "روتين",
+    ""
    ],
    [
-    "تنظم",
-    "tnaẓẓim",
-    "(it, f.) organises; you organise (to a man)",
-    "تنظم",
-    "to a woman: tnaẓẓmīn (تنظمين); he organises: ynaẓẓim (ينظم)"
+    "تأقلم",
+    "taʼaglam",
+    "(he / it) adapted, got used to (something)",
+    "تأقلم",
+    "(recognise); he'll adapt: biyitʼaglam (بيتأقلم)"
    ],
    [
-    "ممل",
-    "mumill",
-    "boring, tedious",
-    "ممل",
-    "(recognise); a feminine thing: mumilla (مملة)"
-   ],
-   [
-    "أقنعتني",
-    "agnaʿtni",
-    "you've convinced me (to a man)",
-    "أقنعتني",
-    "to a woman: agnaʿtīni (أقنعتيني)"
+    "تتراكم",
+    "titrākam",
+    "(they, f.; things) pile up",
+    "تتراكم",
+    "(recognise)"
    ]
   ],
   "receptive": [
-   2,
+   3,
    4
   ]
  },
@@ -956,7 +927,7 @@
   "stage": 5,
   "title": "I'll vouch for him",
   "goal": "On the phone, tell your landlord your flatmate is moving out, and persuade him to accept the colleague who'll move in instead",
-  "tip": "Persuade from your record: inta taʿarfni min yōm ma sikant 'you've known me since I moved in'. If it's good, he'll add to it: ʿumrak ma taʼakhkhart. Vouch for the other man (wild ḥalāl, mʼaddab w rizīn), and take the risk on yourself: ana aẓmanah, w ʿala masʼūliyyti.",
+  "tip": "Persuade from your record: inta taʿarfni min yōm ma sikant 'you've known me since I moved in'. If it's good, he'll add to it: ʿumrak ma taʼakhkhart. Vouch for the other man (wild ḥalāl, rizīn), and take the risk on yourself: ana aẓmanah, w ʿala masʼūliyyti.",
   "grammar": "persuading from your record (min yōm ma…, ʿumrak ma…, ʿala masʼūliyyti)",
   "dialogue": [
    [
@@ -991,15 +962,15 @@
    ],
    [
     "A",
-    "بس أنا ما أعرفه. وإذا سوى ضجة، منو بيضمن لي؟",
-    "bas ana ma aʿarfah. w idha sawwa ẓajja, minu biyiẓman-li?",
-    "But I don't know him. And if he makes a racket, who's going to guarantee me?"
+    "بس أنا ما أعرفه. وإذا سوى ضجة وفوضى؟ ما أبي نكد مع الجيران",
+    "bas ana ma aʿarfah. w idha sawwa ẓajja w fawẓa? ma abi nakad maʿa l-yīrān",
+    "But I don't know him. And if he makes a racket and a mess? I don't want trouble with the neighbours."
    ],
    [
     "B",
-    "ولد حلال، مؤدب ورزين. أنا أضمنه، وعلى مسؤوليتي",
-    "wild ḥalāl, mʼaddab w rizīn. ana aẓmanah, w ʿala masʼūliyyti",
-    "He's a decent guy, well-mannered and level-headed. I vouch for him, on my responsibility."
+    "ولد حلال، مؤدب ورزين، وما يتهرب من شي. أنا أضمنه، وعلى مسؤوليتي",
+    "wild ḥalāl, mʼaddab w rizīn, w ma yitharrab min shay. ana aẓmanah, w ʿala masʼūliyyti",
+    "He's a decent guy, well-mannered and level-headed, and he doesn't dodge anything. I vouch for him, on my responsibility."
    ],
    [
     "A",
@@ -1009,25 +980,18 @@
    ],
    [
     "B",
-    "وانت تعرفني من يوم ما سكنت. إذا تقدر، تعال السبت وتتعرف عليه",
-    "w inta taʿarfni min yōm ma sikant. idha tigdar, taʿāl is-sabt w titʿarraf ʿalēh",
-    "And you've known me since the day I moved in. If you can, come on Saturday and meet him."
+    "وانت تعرفني من يوم ما سكنت. إذا تقدر، تمر علينا السبت وتتعرف عليه",
+    "w inta taʿarfni min yōm ma sikant. idha tigdar, tmurr ʿalēna s-sabt w titʿarraf ʿalēh",
+    "And you've known me since the day I moved in. If you can, drop by on Saturday and meet him."
    ],
    [
     "A",
-    "زين، أقنعتني، وأنا مرن. السبت بعد العصر، وإذا عجبني نتفاهم",
-    "zēn, agnaʿtni, w ana marin. is-sabt baʿd il-ʿaṣir, w idha ʿajabni nitfāham",
-    "All right, you've convinced me, and I'm flexible. Saturday after ʿaṣr, and if I like him, we'll come to an arrangement."
+    "زين، كلامك مب شين. السبت بعد العصر، وإذا عجبني نتفاهم",
+    "zēn, kalāmak mub shēn. is-sabt baʿd il-ʿaṣir, w idha ʿajabni nitfāham",
+    "All right, that's fair enough. Saturday after ʿaṣr, and if I like him, we'll come to an arrangement."
    ]
   ],
   "items": [
-   [
-    "آمر؟",
-    "āmir?",
-    "what can I do for you? (lit. command me) (respectful)",
-    "",
-    "(recognise)"
-   ],
    [
     "عزوبي",
     "ʿazūbi",
@@ -1036,11 +1000,11 @@
     "(recognise); bachelors: ʿzāb (عزاب)"
    ],
    [
-    "زميل من الدوام",
-    "zamīl min id-dawām",
-    "a colleague from work (a man)",
-    "زميل من العمل",
-    "a woman: zamīla (زميلة)"
+    "زميل",
+    "zamīl",
+    "a colleague (a man)",
+    "زميل",
+    "a woman: zamīla (زميلة); my colleague: zamīli (زميلي)"
    ],
    [
     "ضجة",
@@ -1057,13 +1021,6 @@
     ""
    ],
    [
-    "مؤدب",
-    "mʼaddab",
-    "well-mannered, polite (a man)",
-    "مؤدب",
-    "a woman: mʼaddaba (مؤدبة)"
-   ],
-   [
     "رزين",
     "rizīn",
     "level-headed, sensible (a man)",
@@ -1073,8 +1030,7 @@
   ],
   "receptive": [
    0,
-   1,
-   3
+   2
   ],
   "task": "This week: in Talk, ask your partner to play your landlord, who doesn't want a stranger in his flat. Persuade him for 10 turns, respectfully (ṭāl ʿumrak, ʿala masʼūliyyti, min yōm ma…). Then switch register: record a 2-minute voice note telling Sēf how it went, as friends talk, with a joke or two. Keep to what each person says: no rules, prices or official steps."
  },
@@ -1084,7 +1040,7 @@
   "title": "One condition",
   "goal": "At your flat on Saturday, your colleague is held up at work, but the landlord likes what he sees; agree to his condition, and get your own small request in",
   "tip": "When the other side sets a condition, accept it clearly (ma ykhālif, w ʿala masʼūliyyti), then make your own request straight away, while he's pleased: bas ʿindi ṭalab ṣghīr. Keep it small and concrete, and he can agree without losing face.",
-  "grammar": "negotiating: accepting a condition and asking in return (ma ykhālif…, bas ʿindi ṭalab ṣaghīr)",
+  "grammar": "negotiating: accepting a condition and asking in return (ma ykhālif…, bas ʿindi ṭalab ṣghīr)",
   "dialogue": [
    [
     "A",
@@ -1094,9 +1050,9 @@
    ],
    [
     "B",
-    "تسلم طال عمرك. زميلي من الدوام تأخر، بيمر عليك بعدين",
-    "tislam ṭāl ʿumrak. zamīli min id-dawām taʼakhkhar, biymurr ʿalēk baʿdēn",
-    "Thank you, sir. My colleague from work is held up; he'll come by later."
+    "تسلم طال عمرك. زميلي تأخر في الدوام",
+    "tislam ṭāl ʿumrak. zamīli taʼakhkhar fi d-dawām",
+    "Thank you, sir. My colleague's been held up at work."
    ],
    [
     "A",
@@ -1130,8 +1086,8 @@
    ],
    [
     "B",
-    "الصيانة تصلح الحنفية، وتصبغ الغرفة قبل لا يسكن",
-    "iṣ-ṣiyāna tṣalliḥ il-ḥanafiyya, w tiṣbugh il-ghurfa gabil la yiskin",
+    "ممكن الصيانة تصلح الحنفية، وتصبغ الغرفة قبل لا يسكن؟",
+    "mumkin iṣ-ṣiyāna tṣalliḥ il-ḥanafiyya, w tiṣbugh il-ghurfa gabil la yiskin?",
     "Could maintenance fix the tap, and paint the room before he moves in?"
    ],
    [
@@ -1174,7 +1130,7 @@
     "iṣ-ṣabigh",
     "the paint (on a wall, a car)",
     "الطلاء",
-    "to paint it (f.): tiṣbughha (تصبغها)"
+    "to paint it (f.): tiṣbugh-ha (تصبغها)"
    ],
    [
     "الصيانة",
@@ -1201,7 +1157,7 @@
   "stage": 5,
   "title": "Time for a new car?",
   "goal": "At a karak stand, your classmate Khalfān says it's time to change your old car and pushes a big one; argue for a small one, and agree to see one he knows",
-  "tip": "Persuasion between friends goes both ways. Khalfān pushes (ismaʿni…, yā shēkh, il-ḥajim muhimm); you answer with your own priorities: ish-shakil mub kill shay 'looks aren't everything', ma abi aṣrif wāyid. Before you say yes, check: la ykūn fīha shay? 'there's nothing wrong with it, is there?'",
+  "tip": "Persuasion between friends goes both ways. Khalfān pushes (ismaʿni…, yā shēkh, il-ḥajim muhimm); you answer with your own priorities: ish-shakil mub kill shay 'looks aren't everything', ma ʿindi flūs wāyid. Before you say yes, check: la ykūn fīha shay? 'there's nothing wrong with it, is there?'",
   "grammar": "persuading a friend: pushing and pushing back (ismaʿni…, mub kill shay)",
   "dialogue": [
    [
@@ -1212,15 +1168,15 @@
    ],
    [
     "B",
-    "أدري، بس ما أبي أصرف وايد",
-    "adri, bas ma abi aṣrif wāyid",
-    "I know, but I don't want to spend a lot."
+    "أدري، بس ما عندي فلوس وايد",
+    "adri, bas ma ʿindi flūs wāyid",
+    "I know, but I haven't got much money."
    ],
    [
     "A",
-    "اسمعني، خذ لك سيارة كبيرة. تروح البر، تروح حتا، ولا شي يوقفك",
-    "ismaʿni, khudh-lak sayyāra kbīra. trūḥ il-barr, trūḥ Ḥatta, wala shay ywaggfak",
-    "Listen to me, get yourself a big car. You can go to the desert, to Hatta, and nothing will stop you."
+    "اسمعني، خذ لك سيارة كبيرة من الوكالة. تروح البر، تروح حتا، ولا شي يوقفك",
+    "ismaʿni, khudh-lak sayyāra kbīra min il-wakāla. trūḥ il-barr, trūḥ Ḥatta, wala shay ywaggfak",
+    "Listen to me, get yourself a big car from the dealership. You can go to the desert, to Hatta, and nothing will stop you."
    ],
    [
     "B",
@@ -1230,21 +1186,21 @@
    ],
    [
     "A",
-    "صغيرة؟ يا شيخ! الحجم مهم، والكبيرة تاكل بترول شوي بس",
-    "ṣghīra? yā shēkh! il-ḥajim muhimm, w il-kbīra tākil batrōl shwayy bas",
-    "Small? Come on! Size matters, and a big one only uses a little petrol."
+    "صغيرة؟ يا شيخ! الحجم مهم، والكبيرة مريحة أكثر",
+    "ṣghīra? yā shēkh! il-ḥajim muhimm, w il-kbīra mirīḥa akthar",
+    "Small? Come on! Size matters, and a big one is more comfortable."
    ],
    [
     "B",
-    "الشكل مب كل شي. أهم شي ما تخرب كل أسبوع",
-    "ish-shakil mub kill shay. ahamm shay ma tikhrab kill usbūʿ",
-    "Looks aren't everything. The main thing is it doesn't break down every week."
+    "الشكل مب كل شي. أهم شي ما تخرب، صارت روتين!",
+    "ish-shakil mub kill shay. ahamm shay ma tikhrab, ṣārat rūtīn!",
+    "Looks aren't everything. The main thing is it doesn't break down; with mine it's become a routine!"
    ],
    [
     "A",
-    "زين، أقنعتني. في واحد أعرفه يبيع سيارته، صغيرة ونظيفة، وسعرها مب شين",
-    "zēn, agnaʿtni. fī wāḥid aʿarfah ybīʿ sayyārtah, ṣghīra w naẓīfa, w siʿrha mub shēn",
-    "OK, you've convinced me. There's a guy I know selling his car; it's small and in good condition, and the price isn't bad."
+    "زين، فهمت. في واحد أعرفه يبيع سيارته، صغيرة ونظيفة، وسعرها مغري",
+    "zēn, fhimt. fī wāḥid aʿarfah ybīʿ sayyārtah, ṣghīra w naẓīfa, w siʿrha mughri",
+    "OK, I get it. There's a guy I know selling his car; it's small and in good condition, and the price is tempting."
    ],
    [
     "B",
@@ -1254,9 +1210,9 @@
    ],
    [
     "A",
-    "لا، بيسافر ويبي يبيعها بسرعة",
-    "la, biysāfir w yabi ybīʿha b-surʿa",
-    "No, he's going abroad and wants to sell it quickly."
+    "لا، بيسافر ويبي يبيعها بسرعة، والتواير يديدة",
+    "la, biysāfir w yabi ybīʿha b-surʿa, w it-tawāyir yidīda",
+    "No, he's going abroad and wants to sell it quickly, and the tyres are new."
    ],
    [
     "B",
@@ -1267,11 +1223,11 @@
   ],
   "items": [
    [
-    "ما أبي أصرف وايد",
-    "ma abi aṣrif wāyid",
-    "I don't want to spend a lot",
-    "لا أريد أن أصرف كثيرًا",
-    "UAE also: ma abā aṣrif (ما أبا أصرف)"
+    "الوكالة",
+    "il-wakāla",
+    "the (car) dealership",
+    "الوكالة",
+    ""
    ],
    [
     "الحجم",
@@ -1281,13 +1237,6 @@
     "(recognise)"
    ],
    [
-    "تاكل بترول",
-    "tākil batrōl",
-    "(it, f.) burns petrol, uses petrol (lit. eats petrol)",
-    "تستهلك وقودًا",
-    "(recognise); a thirsty car: tākil batrōl wāyid"
-   ],
-   [
     "نظيفة",
     "naẓīfa",
     "clean; in good condition (a car, a flat)",
@@ -1295,23 +1244,23 @@
     "a masculine thing: naẓīf (نظيف)"
    ],
    [
-    "يبيع سيارته",
-    "ybīʿ sayyārtah",
-    "(he's) selling his car",
-    "يبيع سيارته",
-    "I'm selling my car: abīʿ sayyārti (أبيع سيارتي)"
-   ],
-   [
     "فحص",
     "faḥiṣ",
     "an inspection, a check-up (of a car)",
     "فحص",
     "I'll get it (f.) inspected: basawwī-lha faḥiṣ (بسوي لها فحص)"
+   ],
+   [
+    "التواير",
+    "it-tawāyir",
+    "the tyres",
+    "الإطارات",
+    "(recognise)"
    ]
   ],
   "receptive": [
    1,
-   2
+   4
   ]
  },
  {
@@ -1319,14 +1268,14 @@
   "stage": 5,
   "title": "Cash today? That's different",
   "goal": "At the seller's house, look over the small car Khalfān found for you, resist his pressure, and agree a discount for cash after this afternoon's inspection",
-  "tip": "Answer pressure calmly: if he says someone else wants it, let him (khallah yākhidh-ha). Show you're serious (ana jādd), then offer what he wants most in return for what you want: idha l-faḥiṣ ṭilaʿ zēn, adfaʿ-lak kāsh il-yōm, bas tnazzil shwayy.",
-  "grammar": "negotiating: calling a bluff, then trading (khallah yākhidh-ha, idha…, bas…)",
+  "tip": "Answer pressure calmly: if he says someone else wants it, let him (khallah yākhidhha). Show you're serious (ana jādd), then offer what he wants most in return for what you want: idha l-faḥiṣ ṭilaʿ zēn, adfaʿ-lak kāsh il-yōm, bas tnazzil shwayy.",
+  "grammar": "negotiating: calling a bluff, then trading (khallah yākhidhha, idha…, bas…)",
   "dialogue": [
    [
     "A",
-    "هذي هي. شوف العداد، ما مشت وايد، ونظيفة من داخل ومن برا",
-    "hādhi hiya. shūf il-ʿaddād, ma mishat wāyid, w naẓīfa min dākhil w min barra",
-    "Here it is. Look at the meter: it hasn't done many kilometres, and it's clean inside and out."
+    "هذي هي. شوف العداد، ونظيفة من داخل ومن برا",
+    "hādhi hiya. shūf il-ʿaddād, w naẓīfa min dākhil w min barra",
+    "Here it is. Look at the mileage on the meter, and it's clean inside and out."
    ],
    [
     "B",
@@ -1336,15 +1285,15 @@
    ],
    [
     "A",
-    "الخدش بسيط، والسيارة ما عليها ولا دعمة. والمكينة زينة",
-    "il-khadish basīṭ, w is-sayyāra ma ʿalēha wala dʿma. w il-makīna zēna",
-    "The scratch is nothing, and the car hasn't had a single knock. And the engine's good."
+    "الخدش بسيط، والبودي سليم. والمكينة زينة",
+    "il-khadish basīṭ, w il-bōdi salīm. w il-makīna zēna",
+    "The scratch is nothing, and the body's sound. And the engine's good."
    ],
    [
     "B",
-    "بس سعرها غالي شوي. ما أبي أصرف وايد",
-    "bas siʿrha ghāli shwayy. ma abi aṣrif wāyid",
-    "But it's a bit expensive. I don't want to spend a lot."
+    "بس سعرها غالي شوي، وما عندي فلوس وايد",
+    "bas siʿrha ghāli shwayy, w ma ʿindi flūs wāyid",
+    "But it's a bit expensive, and I haven't got much money."
    ],
    [
     "A",
@@ -1372,8 +1321,8 @@
    ],
    [
     "A",
-    "كاش اليوم؟ هذا كلام ثاني. ما يخالف، بس عطني عربون الحين",
-    "kāsh il-yōm? hādha kalām thāni. ma ykhālif, bas ʿaṭni ʿarbūn il-ḥīn",
+    "كاش اليوم؟ هذا شي ثاني. ما يخالف، بس عطني عربون الحين",
+    "kāsh il-yōm? hādha shay thāni. ma ykhālif, bas ʿaṭni ʿarbūn il-ḥīn",
     "Cash today? That's a different matter. Fine by me, but give me a deposit now."
    ],
    [
@@ -1392,13 +1341,6 @@
     "(recognise)"
    ],
    [
-    "ما مشت وايد",
-    "ma mishat wāyid",
-    "it (f.) hasn't done many kilometres (a car; lit. it hasn't walked much)",
-    "لم تقطع مسافة كبيرة",
-    "(recognise)"
-   ],
-   [
     "خدش",
     "khadish",
     "a scratch",
@@ -1406,10 +1348,10 @@
     "the scratch: il-khadish (الخدش)"
    ],
    [
-    "دعمة",
-    "dʿma",
-    "a knock, a bump (a minor accident)",
-    "صدمة",
+    "البودي",
+    "il-bōdi",
+    "the (car) body, the bodywork (English loan)",
+    "هيكل السيارة",
     "(recognise)"
    ],
    [
@@ -1420,18 +1362,17 @@
     "(recognise)"
    ],
    [
-    "عربون",
-    "ʿarbūn",
-    "a deposit, money down",
-    "عربون",
-    ""
+    "جاد",
+    "jādd",
+    "serious (a man)",
+    "جاد",
+    "a woman: jādda (جادة); I'm serious: ana jādd (أنا جاد)"
    ]
   ],
   "receptive": [
    0,
-   1,
-   3,
-   4
+   2,
+   3
   ],
   "culture": "When someone shows you something new, Gulf speakers admire it with mā shāʼ allāh, to praise it without envy. So B starts with mā shāʼ allāh even while he points out the scratch."
  }
