@@ -21,7 +21,7 @@
    ],
    [
     "A",
-    "يبي التقرير. التقرير، خلصته ولا بعد؟",
+    "يبي التقرير. التقرير، خلصته ولّا بعد؟",
     "yabi t-taqrīr. it-taqrīr, khallaṣtah walla baʿad?",
     "He wants the report. The report: have you finished it, or not yet?"
    ],
@@ -40,7 +40,7 @@
    [
     "B",
     "هيه، الملاحظات شفتها، وبخلصها اليوم إن شاء الله",
-    "hē, il-mulāḥaẓāt shift-ha, w bakhalliṣha il-yōm in shāʼ allāh",
+    "hē, il-mulāḥaẓāt shift-ha, w bakhalliṣha l-yōm in shāʼ allāh",
     "Yes, the comments, I've seen them, and I'll get them done today, God willing."
    ],
    [
@@ -58,11 +58,11 @@
   ],
   "items": [
    [
-    "ما شفته اليوم",
-    "ma shiftah il-yōm",
-    "I haven't seen him today, I didn't see him today",
-    "لم أره اليوم",
-    "her: ma shift-ha il-yōm (ما شفتها اليوم)"
+    "ولّا بعد؟",
+    "walla baʿad?",
+    "or not yet?",
+    "أم ليس بعد؟",
+    "khallaṣtah walla baʿad? = have you finished it or not yet?"
    ],
    [
     "التقرير خلصته",
@@ -257,22 +257,22 @@
  {
   "id": "s4u042",
   "stage": 4,
-  "title": "You did what?!",
-  "goal": "On the phone, react to Sēf's news with the question word at the end: sawwēt shu? 'you did what?'",
-  "tip": "Gulf speakers often leave the question word where the answer would go, at the end. It adds surprise or stress: sawwēt shu?! 'you did what?!', tgūl shu? 'you're saying what?', ubūk gāl shu? 'your dad said what?'. A calm question puts it first, as before: shu sawwēt?",
-  "grammar": "question word at the end for surprise and stress (sawwēt shu?, gāl shu?)",
+  "title": "You said what?!",
+  "goal": "On the phone, react to Sēf's news with the question word at the end: gilt shu? 'you said what?'",
+  "tip": "Gulf speakers often leave the question word where the answer would go, at the end. It adds surprise or stress: gilt shu?! 'you said what?!', tgūl shu? 'you're saying what?', shift minu? 'you saw who?'. A calm question puts it first, as before: shu gilt?",
+  "grammar": "question word at the end for surprise and stress (gilt shu?, shift minu?)",
   "dialogue": [
    [
     "A",
     "ترا بعت سيارتي اليوم",
-    "tara biʿt sayyārti il-yōm",
+    "tara biʿt sayyārti l-yōm",
     "Just so you know, I sold my car today."
    ],
    [
     "B",
-    "سويت شو؟! بعتها؟ ليش؟",
-    "sawwēt shu?! biʿtha? lēsh?",
-    "You did what?! You sold it? Why?"
+    "قلت شو؟! بعتها؟ ليش؟",
+    "gilt shu?! biʿtha? lēsh?",
+    "You said what?! You sold it? Why?"
    ],
    [
     "A",
@@ -288,27 +288,27 @@
    ],
    [
     "A",
-    "هيه، وأبوي لما شافها قال إنها أحلى سيارة في البيت",
-    "hē, w ubūy lamma shāfha gāl innha aḥla sayyāra fi l-bēt",
-    "Yes, and when my dad saw it, he said it's the nicest car in the house."
+    "هيه، وفي المعرض شفت واحد تعرفه، وهو بعد شرى وحدة مثلها",
+    "hē, w fi l-maʿraẓ shift wāḥid taʿarfah, w huwa baʿad shara waḥda mithilha",
+    "Yes, and at the showroom I saw someone you know, and he bought one like it too."
    ],
    [
     "B",
-    "أبوك قال شو؟ ما صدقت!",
-    "ubūk gāl shu? ma ṣaddagt!",
-    "Your dad said what? I can't believe it!"
+    "شفت منو؟ قول!",
+    "shift minu? gūl!",
+    "You saw who? Tell me!"
    ],
    [
     "A",
-    "هيه والله! وباكر بتشوفها عند الجامعة",
-    "hē wallāh! w bāchir bitshūfha ʿind il-jāmʿa",
-    "Honestly, yes! And tomorrow you'll see it at the university."
+    "الدكتور حقكم في الجامعة! باكر بتشوف السيارتين عند الجامعة",
+    "id-diktōr ḥaggkum fi l-jāmʿa! bāchir bitshūf is-sayyārtēn ʿind il-jāmʿa",
+    "Your lecturer at the university! Tomorrow you'll see both cars at the university."
    ],
    [
     "B",
-    "زين، بس لونها شو؟",
-    "zēn, bas lōnha shu?",
-    "OK, but what colour is it?"
+    "ما صدقت! زين، بس سيارتك لونها شو؟",
+    "ma ṣaddagt! zēn, bas sayyārtak lōnha shu?",
+    "I can't believe it! OK, but your car, what colour is it?"
    ],
    [
     "A",
@@ -319,11 +319,11 @@
   ],
   "items": [
    [
-    "سويت شو؟",
-    "sawwēt shu?",
-    "you did what?! (to a man)",
-    "ماذا فعلت؟",
-    "to a woman: sawwēti shu? (سويتي شو؟); a calm question: shu sawwēt?"
+    "قلت شو؟",
+    "gilt shu?",
+    "you said what?! (to a man)",
+    "ماذا قلت؟",
+    "to a woman: gilti shu? (قلتي شو؟); a calm question: shu gilt?"
    ],
    [
     "تقول شو؟",
@@ -333,11 +333,11 @@
     "to a woman: tgūlīn shu? (تقولين شو؟)"
    ],
    [
-    "قال شو؟",
-    "gāl shu?",
-    "he said what?",
-    "ماذا قال؟",
-    "she said what?: gālat shu? (قالت شو؟)"
+    "شفت منو؟",
+    "shift minu?",
+    "you saw who?! (to a man)",
+    "من رأيت؟",
+    "to a woman: shifti minu? (شفتي منو؟)"
    ],
    [
     "بعت سيارتي",
@@ -361,11 +361,11 @@
     "he / it (m.): yikhrab (يخرب)"
    ],
    [
-    "أحلى سيارة",
-    "aḥla sayyāra",
-    "the nicest car",
-    "أجمل سيارة",
-    ""
+    "في المعرض",
+    "fi l-maʿraẓ",
+    "at the showroom; at the exhibition",
+    "في المعرض",
+    "(recognise)"
    ],
    [
     "هذا سر",
@@ -383,6 +383,7 @@
    ]
   ],
   "receptive": [
+   6,
    8
   ]
  },
@@ -414,8 +415,8 @@
    ],
    [
     "B",
-    "الغرف الصغيرة ما تفرق عندي. المهم المواقف",
-    "il-ghuraf iṣ-ṣghīra ma tfarrig ʿindi. il-muhimm il-mawāgif",
+    "الغرف الصغيرة ما تفرق معي. المهم المواقف",
+    "il-ghuraf iṣ-ṣghīra ma tfarrig maʿi. il-muhimm il-mawāgif",
     "Small rooms make no difference to me. What matters is the parking."
    ],
    [
@@ -459,11 +460,11 @@
     "il-ghuraf ṣghīra = the rooms are small"
    ],
    [
-    "ما تفرق عندي",
-    "ma tfarrig ʿindi",
-    "they make no difference to me; it (f.) doesn't matter to me",
-    "لا تهمني",
-    "about a masculine thing: ma yfarrig ʿindi (ما يفرق عندي)"
+    "الشمس ما توصل",
+    "ish-shams ma tōṣal",
+    "the sun doesn't get (to it), it's out of the sun",
+    "الشمس لا تصل",
+    ""
    ],
    [
     "المواقف",
@@ -517,7 +518,7 @@
   "stage": 4,
   "title": "Checkpoint 4.3: news of the rent at the majlis",
   "goal": "Checkpoint: in Bū Rāshid's majlis, with Sēf there, answer his questions about your flat and the landlord, respectfully",
-  "tip": "Review: topic first (ṣāḥib ish-shigga, ma shifnāh), the question word at the end (simaʿt shu?), -ha and feminine agreement for things (il-umūr hādhi), a guess with atwaqqaʿ, and respectful replies to an elder: yā ʿammi, ʿala ʿēni w rāsi.",
+  "tip": "Review: topic first (ṣāḥib ish-shigga, ma shifnāh), the question word at the end (simaʿt shu?), -ha and feminine agreement for things (il-umūr hādhi), a guess with atwaggaʿ, and respectful replies to an elder: yā ʿammi, ʿala ʿēni w rāsi.",
   "grammar": "checkpoint 4.3: address, guesses, topic first, fronting, question word at the end, non-human plural agreement",
   "dialogue": [
    [
@@ -553,14 +554,14 @@
    [
     "B",
     "صاحب الشقة للحين ما شفناه، بس أتوقع نتفاهم",
-    "ṣāḥib ish-shigga lil-ḥīn ma shifnāh, bas atwaqqaʿ nitfāham",
+    "ṣāḥib ish-shigga lil-ḥīn ma shifnāh, bas atwaggaʿ nitfāham",
     "The landlord, we haven't seen him yet, but I expect we'll come to an agreement."
    ],
    [
     "A",
-    "زين، بس لا تستعيل. الأمور هذي يبالها صبر",
-    "zēn, bas la tistaʿyil. il-umūr hādhi yabā-lha ṣabir",
-    "Good, but don't rush. Things like this need patience."
+    "زين، بس على هونك. الأمور هذي يبالها صبر",
+    "zēn, bas ʿala hōnak. il-umūr hādhi yabā-lha ṣabir",
+    "Good, but take it easy. Things like this need patience."
    ],
    [
     "B",
@@ -592,11 +593,11 @@
     "her: ma shifnāha (ما شفناها)"
    ],
    [
-    "لا تستعيل",
-    "la tistaʿyil",
-    "don't rush, take your time (to a man)",
-    "لا تستعجل",
-    "to a woman: la tistaʿylīn (لا تستعيلين); you'll see written تستعجل"
+    "على هونك",
+    "ʿala hōnak",
+    "take it easy, take your time, slowly (to a man)",
+    "على مهلك",
+    "to a woman: ʿala hōnich (على هونج)"
    ],
    [
     "يباله صبر",
@@ -648,7 +649,7 @@
    ],
    [
     "A",
-    "بس الإيجار أكبر شي، صح ولا لا؟",
+    "بس الإيجار أكبر شي، صح ولّا لا؟",
     "bas il-ījār akbar shay, ṣaḥḥ walla la?",
     "But rent's the biggest thing, right or not?"
    ],
@@ -694,7 +695,7 @@
     "Kuwait: mū bas (مو بس)"
    ],
    [
-    "صح ولا لا؟",
+    "صح ولّا لا؟",
     "ṣaḥḥ walla la?",
     "right or not? am I right?",
     "أليس كذلك؟",
@@ -952,11 +953,11 @@
     ""
    ],
    [
-    "فكر في",
-    "fakkir fi",
-    "think about (to a man)",
-    "فكّر في",
-    "to a woman: fakkri fi (فكري في)"
+    "مب الحين",
+    "mub il-ḥīn",
+    "not now, not yet",
+    "ليس الآن",
+    ""
    ],
    [
     "توفر وقت",
@@ -973,11 +974,11 @@
     "to a woman: ma titʿabīn? (ما تتعبين؟)"
    ],
    [
-    "بتنتقل؟",
-    "bitintigil?",
-    "are you going to move (house)? (to a man)",
-    "هل ستنتقل؟",
-    "to a woman: bitintiglīn? (بتنتقلين؟)"
+    "الصبح والعصر",
+    "iṣ-ṣubḥ w il-ʿaṣir",
+    "morning and afternoon, (at) rush hour",
+    "الصباح والعصر",
+    ""
    ],
    [
     "المسافة",
@@ -1192,7 +1193,7 @@
    ],
    [
     "A",
-    "احسبها زين: يستاهل ولا ما يستاهل؟",
+    "احسبها زين: يستاهل ولّا ما يستاهل؟",
     "iḥsibha zēn: yistāhil walla ma yistāhil?",
     "Work it out properly: is it worth it or not?"
    ],
@@ -1290,7 +1291,7 @@
   "stage": 4,
   "title": "Bottom line: we're staying",
   "goal": "On a call, tell Sēf how the talk with the landlord went, weigh it up and say what you've decided",
-  "tip": "Sum up and decide: ʿala kill ḥāl 'anyway', ḥasabt-ha 'I worked it out', garrarna 'we've decided'. You'll also hear il-khulāṣa 'in short, the bottom line'. Recycle the question word at the end: w huwa gāl shu?",
+  "tip": "Sum up and decide: garār ḥilu 'a good decision', ḥasabt-ha 'I worked it out', garrarna 'we've decided'. You'll also hear il-khulāṣa 'in short, the bottom line'. Recycle the question word at the end: w huwa gāl shu?",
   "grammar": "recycle: question word at the end, comparatives; summing up and deciding",
   "dialogue": [
    [
@@ -1343,9 +1344,9 @@
    ],
    [
     "A",
-    "على كل حال، زين سويتوا. والخلاصة، انت ومردف ما تفترقون!",
-    "ʿala kill ḥāl, zēn sawwētu. w il-khulāṣa, inta w Mirdif ma tiftargūn!",
-    "Anyway, you did the right thing. Bottom line: you and Mirdif are inseparable!"
+    "على كل حال، قرار حلو. والخلاصة، انت ومردف ما تفترقون!",
+    "ʿala kill ḥāl, garār ḥilu. w il-khulāṣa, inta w Mirdif ma tiftargūn!",
+    "Anyway, good decision. Bottom line: you and Mirdif are inseparable!"
    ],
    [
     "B",
@@ -1398,11 +1399,11 @@
     "to a woman: ḥasabtīha (حسبتيها)"
    ],
    [
-    "على كل حال",
-    "ʿala kill ḥāl",
-    "anyway, in any case",
-    "على كل حال",
-    ""
+    "قرار",
+    "garār",
+    "a decision",
+    "قرار",
+    "garār ḥilu = a good decision"
    ],
    [
     "قررنا",
