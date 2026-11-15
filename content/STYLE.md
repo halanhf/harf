@@ -122,7 +122,7 @@ One scheme, always. It is the app's `DIALECT` scheme (index.html), with the y ru
 | Sound | Write | Examples | Notes |
 |---|---|---|---|
 | long vowels | ā ī ū | bāchir, ʿīd, rūḥ | |
-| Gulf ay / aw | ē ō | bēt, zēn, yōm, mōl | never ay / aw in Gulf lines, except: geminate -ayy- / -aww- (shwayy, ḥayyāk, sawwa, Dbayy); shay "thing"; law in the stage 1 phrase law samaḥt (elsewhere لو is lō); religious formulas as stage 1 has them (as-salāmu ʿalaykum); the past plural verb ending -aw (rāḥaw, yaw); ay "which/any" (أي); aw "or" (أو); aw kept in maC- nouns (mawʿid, mawẓūʿ) and aCC- plurals and elatives (awlād, awgāt, awrāg, awsaṭ), per the published UAE grammar; ō stays in yōm, mōl, yōṣal |
+| Gulf ay / aw | ē ō | bēt, zēn, yōm, mōl | never ay / aw in Gulf lines, except: geminate -ayy- / -aww- (shwayy, ḥayyāk, sawwa, Dbayy); shay "thing"; law in the stage 1 phrase law samaḥt (elsewhere لو is lō); religious formulas as stage 1 has them (as-salāmu ʿalaykum); the past plural verb ending -aw (rāḥaw, yaw); ay "which/any" (أي); aw "or" (أو); aw kept in maC- nouns (mawʿid, mawẓūʿ) and aCC- plurals and elatives (awlād, awgāt, awrāg, awsaṭ), per the published UAE grammar; aw in taC- verbal nouns of w-first roots (tawfīr, tawṣīl), where the w is a root consonant; ō stays in yōm, mōl, yōṣal |
 | short vowels | a i u | shismak, ʿarabi | don't write e or o for short vowels |
 | feminine ending ة | -a; **-at in a construct** (before the possessor noun) | gahwa; sayyārat Sēf, ghurfat ubūy, ghalṭat ish-shāṭir | -t before a suffix: sayyārti |
 | "his" ـه | -ah (after a vowel: -h) | bētah, ʿindah, ʿaṭāh | keeps it apart from -a |
