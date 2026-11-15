@@ -1,0 +1,1042 @@
+[
+ {
+  "id": "s3u102",
+  "stage": 3,
+  "title": "One time in Deira: starting a story",
+  "goal": "At a karak stand, tell Sēf a funny story from your first week in Dubai, starting it with marra min il-marrāt",
+  "tip": "Open a story with marra min il-marrāt 'once, one time'. Move it on with lamma + a past verb 'when': lamma ṭalabt 'when I ordered'. Give the turn with gām + a verb: gām ykallimni bil-ingilīzi 'he started talking to me in English'.",
+  "grammar": "recycle: lamma + past, gām + verb, kān gāʿid; opening a story (marra min il-marrāt)",
+  "dialogue": [
+   [
+    "A",
+    "خبرني، كيف كان أول أسبوع لك في دبي؟",
+    "khabbirni, chēf kān awwal usbūʿ lak fi Dbayy?",
+    "Tell me, how was your first week in Dubai?"
+   ],
+   [
+    "B",
+    "والله غريب! مرة من المرات، رحت مطعم في ديرة",
+    "wallāh gharīb! marra min il-marrāt, riḥt maṭʿam fi Dēra",
+    "Honestly, strange! One time, I went to a restaurant in Deira."
+   ],
+   [
+    "A",
+    "زين، وبعدين؟",
+    "zēn, w baʿdēn?",
+    "Yes, and then?"
+   ],
+   [
+    "B",
+    "لما طلبت، قلت بالعربي: أبي عصير لو سمحت",
+    "lamma ṭalabt, gilt bil-ʿarabi: abi ʿaṣīr law samaḥt",
+    "When I ordered, I said in Arabic: 'A juice, please.'"
+   ],
+   [
+    "A",
+    "ما شاء الله عليك! وفهم؟",
+    "mā shāʼ allāh ʿalēk! w fihim?",
+    "Good for you! And did he understand?"
+   ],
+   [
+    "B",
+    "هيه، بس قام يكلمني بالإنقليزي!",
+    "hē, bas gām ykallimni bil-ingilīzi!",
+    "Yes, but he started talking to me in English!"
+   ],
+   [
+    "A",
+    "كلهم جي! وانت شو قلت له؟",
+    "killhum chī! w inta shu gilt-lah?",
+    "They're all like that! And what did you say to him?"
+   ],
+   [
+    "B",
+    "قلت له: أنا قاعد أتعلم عربي! وقام يضحك",
+    "gilt-lah: ana gāʿid atʿallam ʿarabi! w gām yiẓḥak",
+    "I told him: 'I'm learning Arabic!' And he burst out laughing."
+   ]
+  ],
+  "items": [
+   [
+    "مرة من المرات",
+    "marra min il-marrāt",
+    "once, one time (to start a story)",
+    "ذات مرة",
+    ""
+   ],
+   [
+    "أول أسبوع",
+    "awwal usbūʿ",
+    "the first week",
+    "الأسبوع الأول",
+    "the first day: awwal yōm (أول يوم)"
+   ],
+   [
+    "لما طلبت",
+    "lamma ṭalabt",
+    "when I ordered; when you ordered (to a man)",
+    "عندما طلبت",
+    "to a woman: lamma ṭalabti (لما طلبتي)"
+   ],
+   [
+    "قلت بالعربي",
+    "gilt bil-ʿarabi",
+    "I said (it) in Arabic; you said (it) in Arabic (to a man)",
+    "قلت بالعربية",
+    "to a woman: gilti bil-ʿarabi (قلتي بالعربي)"
+   ],
+   [
+    "قام يكلمني",
+    "gām ykallimni",
+    "he started talking to me",
+    "بدأ يكلمني",
+    "she started talking to me: gāmat tkallimni (قامت تكلمني)"
+   ],
+   [
+    "بالإنقليزي",
+    "bil-ingilīzi",
+    "in English",
+    "بالإنجليزية",
+    "you'll see written بالانجليزي"
+   ],
+   [
+    "كلهم جي",
+    "killhum chī",
+    "they're all like that",
+    "كلهم هكذا",
+    "wider Gulf: killhum chidhi (كلهم جذي)"
+   ],
+   [
+    "شو قلت له؟",
+    "shu gilt-lah?",
+    "what did you say to him? (to a man)",
+    "ماذا قلت له؟",
+    "to a woman: shu giltī-lah? (شو قلتي له؟)"
+   ],
+   [
+    "قاعد أتعلم عربي",
+    "gāʿid atʿallam ʿarabi",
+    "I'm learning Arabic (said by a man)",
+    "أتعلم العربية",
+    "a woman says: gāʿda atʿallam ʿarabi (قاعدة أتعلم عربي)"
+   ]
+  ],
+  "culture": "A story or a chat is a sālfa (سالفة), and telling one is ysōlif. Friends keep a story going with w baʿdēn? 'and then?' and wallāh? 'really?', so expect to be interrupted: it means they're listening."
+ },
+ {
+  "id": "s3u103",
+  "stage": 3,
+  "title": "Suddenly the power went off",
+  "goal": "At the office, tell Maryam why you look so tired: you got stuck in your building's lift last night",
+  "tip": "fajʼa 'suddenly' marks the turn in a story, and the verb after it is past: w fajʼa ingiṭʿat il-kahraba 'and suddenly the power went off'. Set the scene first with kān + a participle: kint rājiʿ il-bēt 'I was on my way home'.",
+  "grammar": "recycle: kān + participle (kint rājiʿ), gām + verb; the turn in a story (fajʼa)",
+  "dialogue": [
+   [
+    "A",
+    "صباح الخير. شفيك؟ شكلك تعبان",
+    "ṣabāḥ il-khēr. shfīk? shaklak taʿbān",
+    "Good morning. What's wrong? You look tired."
+   ],
+   [
+    "B",
+    "صباح النور. البارحة صار لي شي غريب",
+    "ṣabāḥ in-nūr. il-bārḥa ṣār-li shay gharīb",
+    "Good morning. Something strange happened to me last night."
+   ],
+   [
+    "A",
+    "خير إن شاء الله؟ شو صار؟",
+    "khēr in shāʼ allāh? shu ṣār?",
+    "Nothing bad, I hope? What happened?"
+   ],
+   [
+    "B",
+    "كنت راجع البيت من الشغل، ودخلت اللفت",
+    "kint rājiʿ il-bēt min ish-shughul, w dakhalt il-lift",
+    "I was on my way home from work, and I got into the lift."
+   ],
+   [
+    "A",
+    "وبعدين؟ لا تقول إنه وقف!",
+    "w baʿdēn? la tgūl innah wigaf!",
+    "And then? Don't tell me it stopped!"
+   ],
+   [
+    "B",
+    "هيه! فجأة انقطعت الكهربا، واللفت وقف بين الطوابق",
+    "hē! fajʼa ingiṭʿat il-kahraba, w il-lift wigaf bēn iṭ-ṭawābig",
+    "Yes! Suddenly the power went off, and the lift stopped between floors."
+   ],
+   [
+    "A",
+    "يا ساتر! وكم قعدت داخل؟",
+    "yā sātir! w cham gaʿadt dākhil?",
+    "Good grief! And how long were you stuck inside?"
+   ],
+   [
+    "B",
+    "نص ساعة، تصدقين؟ قمت أصارخ وأدق الباب!",
+    "nuṣṣ sāʿa, tṣaddgīn? gimt aṣārikh w adigg il-bāb!",
+    "Half an hour, can you believe it? I started shouting and banging on the door!"
+   ]
+  ],
+  "items": [
+   [
+    "فجأة",
+    "fajʼa",
+    "suddenly, all of a sudden",
+    "فجأة",
+    ""
+   ],
+   [
+    "صار لي شي غريب",
+    "ṣār-li shay gharīb",
+    "something strange happened to me",
+    "حدث لي شيء غريب",
+    "to us: ṣār-lna shay gharīb (صار لنا شي غريب)"
+   ],
+   [
+    "كنت راجع البيت",
+    "kint rājiʿ il-bēt",
+    "I was on my way home (said by a man)",
+    "كنت عائدًا إلى البيت",
+    "a woman says: kint rājʿa l-bēt (كنت راجعة البيت)"
+   ],
+   [
+    "دخلت اللفت",
+    "dakhalt il-lift",
+    "I got into the lift; you got into the lift (to a man)",
+    "دخلت المصعد",
+    "to a woman: dakhalti l-lift (دخلتي اللفت)"
+   ],
+   [
+    "انقطعت الكهربا",
+    "ingiṭʿat il-kahraba",
+    "the power went off, there was a power cut",
+    "انقطعت الكهرباء",
+    "the power came back: rijʿat il-kahraba (رجعت الكهربا)"
+   ],
+   [
+    "بين الطوابق",
+    "bēn iṭ-ṭawābig",
+    "between floors",
+    "بين الطوابق",
+    "one floor: ṭābig (طابق)"
+   ],
+   [
+    "يا ساتر!",
+    "yā sātir!",
+    "good grief! oh my God! (a shock or a scare)",
+    "يا ساتر",
+    ""
+   ],
+   [
+    "كم قعدت؟",
+    "cham gaʿadt?",
+    "how long were you (there)? how long did you stay? (to a man)",
+    "كم بقيت؟",
+    "to a woman: cham gaʿadti? (كم قعدتي؟)"
+   ],
+   [
+    "تصدقين؟",
+    "tṣaddgīn?",
+    "can you believe it? would you believe it? (to a woman)",
+    "هل تصدقين؟",
+    "to a man: tṣaddig? (تصدق؟)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u104",
+  "stage": 3,
+  "title": "In the end it was in my pocket",
+  "goal": "At a café, tell Fahad and Sēf how you lost your car key at the beach, and how the story ended",
+  "tip": "bil-akhīr 'in the end, finally' brings a story to its end, like ākhir shay. ṭilaʿ 'he went out' also means 'it turned out (to be)': ṭilaʿ fi jēbi 'it turned out to be in my pocket'. To a group: tadrūn …? 'do you know …?'",
+  "grammar": "recycle: lamma + past, gām + verb; ending a story (bil-akhīr; ṭilaʿ 'it turned out')",
+  "dialogue": [
+   [
+    "B",
+    "تدرون شو صار لي يوم الجمعة في البحر؟",
+    "tadrūn shu ṣār-li yōm il-jumʿa fi l-baḥar?",
+    "Do you know what happened to me at the beach on Friday?"
+   ],
+   [
+    "A",
+    "لا والله. شنو صار؟",
+    "la wallāh. shinu ṣār?",
+    "No idea. What happened?"
+   ],
+   [
+    "B",
+    "لما طلعت من الماي، ما لقيت مفتاح السيارة!",
+    "lamma ṭilaʿt min il-māy, ma ligēt miftāḥ is-sayyāra!",
+    "When I came out of the water, I couldn't find the car key!"
+   ],
+   [
+    "A",
+    "أفا! ودورت عليه زين؟",
+    "afa! w dawwart ʿalēh zēn?",
+    "Oh no! And did you look for it properly?"
+   ],
+   [
+    "B",
+    "دورت ساعة كاملة، والناس قاموا يدورون وياي",
+    "dawwart sāʿa kāmla, w in-nās gāmaw ydawwrūn wiyyāy",
+    "I looked for a whole hour, and people started looking with me."
+   ],
+   [
+    "A",
+    "زين، وبالأخير لقيته؟",
+    "zēn, w bil-akhīr ligētah?",
+    "OK, and in the end did you find it?"
+   ],
+   [
+    "B",
+    "هيه! طلع في جيبي من الأول!",
+    "hē! ṭilaʿ fi jēbi min il-awwal!",
+    "Yes! It turned out it had been in my pocket all along!"
+   ],
+   [
+    "A",
+    "صج؟! والله ضحكتني!",
+    "ṣij?! wallāh ẓaḥḥaktni!",
+    "Really?! You've really made me laugh!"
+   ]
+  ],
+  "items": [
+   [
+    "بالأخير",
+    "bil-akhīr",
+    "in the end, finally",
+    "في النهاية / أخيرًا",
+    "also: fi l-akhīr (في الأخير); like ākhir shay 'in the end'"
+   ],
+   [
+    "تدرون شو صار لي؟",
+    "tadrūn shu ṣār-li?",
+    "do you know what happened to me? (to a group)",
+    "هل تعرفون ماذا حدث لي؟",
+    "to one man: tadri shu ṣār-li? (تدري شو صار لي؟); to one woman: tadrīn shu ṣār-li?"
+   ],
+   [
+    "ما لقيت",
+    "ma ligēt",
+    "I couldn't find, I didn't find; you didn't find (to a man)",
+    "لم أجد",
+    "to a woman: ma ligēti (ما لقيتي)"
+   ],
+   [
+    "أفا!",
+    "afa!",
+    "oh no! (dismay, or mild reproach: 'oh, come on!')",
+    "",
+    ""
+   ],
+   [
+    "دورت عليه",
+    "dawwart ʿalēh",
+    "I looked for it (m.); you looked for it (to a man)",
+    "بحثت عنه",
+    "for a feminine thing: dawwart ʿalēha (دورت عليها)"
+   ],
+   [
+    "ساعة كاملة",
+    "sāʿa kāmla",
+    "a whole hour",
+    "ساعة كاملة",
+    "like yōm kāmil 'a whole day'"
+   ],
+   [
+    "قاموا يدورون",
+    "gāmaw ydawwrūn",
+    "they started looking (for it)",
+    "بدأوا يبحثون",
+    "he started looking: gām ydawwir (قام يدور)"
+   ],
+   [
+    "من الأول",
+    "min il-awwal",
+    "all along, from the start",
+    "من البداية",
+    ""
+   ],
+   [
+    "ضحكتني",
+    "ẓaḥḥaktni",
+    "you made me laugh (to a man)",
+    "أضحكتني",
+    "to a woman: ẓaḥḥaktīni (ضحكتيني); to a group: ẓaḥḥaktūni (ضحكتوني)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u105",
+  "stage": 3,
+  "title": "Are you kidding? Reacting to a story",
+  "goal": "At university, Sēf tells you how he helped an old man whose car had broken down; keep him going and react to the twist",
+  "tip": "A good listener keeps the story going: w baʿdēn? kammil! 'and then? go on!', and reacts to the twist: titghashmar? 'are you kidding?', mub maʿgūl! 'no way!'. Participles set the scene: shift shēba wāgif 'I saw an old man standing'.",
+  "grammar": "recycle: participles in a story (rājiʿ, wāgif); listener phrases (kammil!, titghashmar?)",
+  "dialogue": [
+   [
+    "A",
+    "اسمع هالسالفة! أمس كنت راجع من البر",
+    "ismaʿ has-sālfa! ams kint rājiʿ min il-barr",
+    "Listen to this! Yesterday I was coming back from the desert."
+   ],
+   [
+    "B",
+    "هيه، وبعدين؟ كمل!",
+    "hē, w baʿdēn? kammil!",
+    "Yes, and then? Go on!"
+   ],
+   [
+    "A",
+    "شفت شيبة واقف يم سيارته، وسيارته خربانة",
+    "shift shēba wāgif yamm sayyārtah, w sayyārtah kharbāna",
+    "I saw an old man standing by his car, and his car had broken down."
+   ],
+   [
+    "B",
+    "مسكين! وانت وقفت له؟",
+    "maskīn! w inta waggaft-lah?",
+    "Poor man! And did you stop for him?"
+   ],
+   [
+    "A",
+    "هيه، ووصلته بيته. وتدري منو طلع؟",
+    "hē, w waṣṣaltah bētah. w tadri minu ṭilaʿ?",
+    "Yes, and I gave him a lift home. And guess who he turned out to be?"
+   ],
+   [
+    "B",
+    "منو؟ قول!",
+    "minu? gūl!",
+    "Who? Tell me!"
+   ],
+   [
+    "A",
+    "الدكتور اليديد حقنا! وشافني اليوم في المحاضرة",
+    "id-daktōr il-yidīd ḥaggna! w shāfni l-yōm fi l-muḥāẓra",
+    "Our new lecturer! And he saw me today in the lecture."
+   ],
+   [
+    "B",
+    "تتغشمر؟! مب معقول!",
+    "titghashmar?! mub maʿgūl!",
+    "Are you kidding?! No way!"
+   ]
+  ],
+  "items": [
+   [
+    "اسمع هالسالفة",
+    "ismaʿ has-sālfa",
+    "listen to this (story) (to a man)",
+    "اسمع هذه القصة",
+    "to a woman: ismaʿi has-sālfa (اسمعي هالسالفة)"
+   ],
+   [
+    "كمل!",
+    "kammil!",
+    "go on! carry on! (to a man)",
+    "أكمل",
+    "to a woman: kammli! (كملي)"
+   ],
+   [
+    "شيبة",
+    "shēba",
+    "an old man",
+    "رجل مسن",
+    "Kuwait also: shāyib (شايب); speak to him as yā ʿammi"
+   ],
+   [
+    "سيارته خربانة",
+    "sayyārtah kharbāna",
+    "his car's broken down",
+    "سيارته معطلة",
+    "my car: sayyārti kharbāna (سيارتي خربانة)"
+   ],
+   [
+    "وقفت له",
+    "waggaft-lah",
+    "I stopped for him (in the car); you stopped for him (to a man)",
+    "توقفت له",
+    "to a woman: waggaftī-lah (وقفتي له)"
+   ],
+   [
+    "وصلته",
+    "waṣṣaltah",
+    "I gave him a lift, I dropped him off; you gave him a lift (to a man)",
+    "أوصلته",
+    "to a woman: waṣṣaltīh (وصلتيه)"
+   ],
+   [
+    "تدري منو طلع؟",
+    "tadri minu ṭilaʿ?",
+    "guess who he turned out to be? (lit. do you know who he turned out to be?) (to a man)",
+    "هل تعرف من كان؟",
+    "to a woman: tadrīn minu ṭilaʿ? (تدرين منو طلع؟)"
+   ],
+   [
+    "تتغشمر؟",
+    "titghashmar?",
+    "are you kidding? are you joking? (to a man)",
+    "هل تمزح؟",
+    "to a woman: titghashmarīn? (تتغشمرين؟); among friends"
+   ],
+   [
+    "مب معقول!",
+    "mub maʿgūl!",
+    "no way! I can't believe it!",
+    "غير معقول",
+    "Kuwait: mū maʿgūl (مو معقول)"
+   ]
+  ],
+  "culture": "titghashmar? 'are you kidding?' comes from ghashmara 'joking, teasing', and is friends' talk. With an elder like Bū Rāshid, react with ṣij? 'really?' or wallāh? instead, and let him finish the story."
+ },
+ {
+  "id": "s3u106",
+  "stage": 3,
+  "title": "Juḥa's donkey: telling a joke",
+  "goal": "At a desert camp, tell Sēf and the guys a Juḥa joke and get the punchline right",
+  "tip": "A joke is told like a story, in the past, with marra min il-marrāt and fajʼa. The punchline is often a quote: Juḥa gāl: tṣaddig il-ḥmār w ma tṣaddigni? 'you believe the donkey and not me?'. To a group: tabūn agūl-lkum nukta? 'shall I tell you a joke?'",
+  "grammar": "recycle: storytelling (marra min il-marrāt, fajʼa); quoting speech in a joke",
+  "dialogue": [
+   [
+    "B",
+    "يا شباب، تبون أقول لكم نكتة؟",
+    "yā shabāb, tabūn agūl-lkum nukta?",
+    "Guys, shall I tell you a joke?"
+   ],
+   [
+    "A",
+    "يلا، قول! بس لا تكون بايخة!",
+    "yalla, gūl! bas la tkūn bāykha!",
+    "Go on, tell it! Just don't let it be a lame one!"
+   ],
+   [
+    "B",
+    "مرة من المرات، جار جحا قال له: عطني حمارك",
+    "marra min il-marrāt, jār Juḥa gāl-lah: ʿaṭni ḥmārak",
+    "Once, Juḥa's neighbour said to him: 'Lend me your donkey.'"
+   ],
+   [
+    "A",
+    "وجحا شو قال له؟",
+    "w Juḥa shu gāl-lah?",
+    "And what did Juḥa say to him?"
+   ],
+   [
+    "B",
+    "قال: آسف، الحمار مب هني. وفجأة سمعوا صوت الحمار!",
+    "gāl: āsif, il-ḥmār mub hni. w fajʼa simʿaw ṣōt il-ḥmār!",
+    "He said: 'Sorry, the donkey's not here.' And suddenly they heard the donkey!"
+   ],
+   [
+    "A",
+    "والجار شو قال؟",
+    "w il-jār shu gāl?",
+    "And what did the neighbour say?"
+   ],
+   [
+    "B",
+    "قال: أسمع الحمار! وجحا قال: تصدق الحمار وما تصدقني؟",
+    "gāl: asmaʿ il-ḥmār! w Juḥa gāl: tṣaddig il-ḥmār w ma tṣaddigni?",
+    "He said: 'I can hear the donkey!' And Juḥa said: 'You believe the donkey and not me?'"
+   ],
+   [
+    "A",
+    "والله ضحكتنا! نكتة حلوة",
+    "wallāh ẓaḥḥaktna! nukta ḥilwa",
+    "You've really made us laugh! That's a good one."
+   ]
+  ],
+  "items": [
+   [
+    "نكتة",
+    "nukta",
+    "a joke",
+    "نكتة",
+    "jokes: nukat (نكت)"
+   ],
+   [
+    "تبون أقول لكم؟",
+    "tabūn agūl-lkum?",
+    "shall I tell you? do you want me to tell you? (to a group)",
+    "هل تريدون أن أقول لكم؟",
+    "to one man: tabi agūl-lak? (تبي أقول لك؟); to one woman: tabīn agūl-lich?"
+   ],
+   [
+    "بايخة",
+    "bāykha",
+    "lame, not funny (a joke)",
+    "سخيفة",
+    "for a masculine noun: bāyikh (بايخ)"
+   ],
+   [
+    "جار جحا",
+    "jār Juḥa",
+    "Juḥa's neighbour",
+    "جار جحا",
+    "my neighbour: jāri (جاري)"
+   ],
+   [
+    "الحمار",
+    "il-ḥmār",
+    "the donkey",
+    "الحمار",
+    "his donkey: ḥmārah (حماره)"
+   ],
+   [
+    "سمعوا صوت",
+    "simʿaw ṣōt",
+    "they heard (the sound of)",
+    "سمعوا صوت",
+    "I heard: simaʿt (سمعت)"
+   ],
+   [
+    "وجحا شو قال له؟",
+    "w Juḥa shu gāl-lah?",
+    "and what did Juḥa say to him?",
+    "وماذا قال له جحا؟",
+    "to her: shu gāl-lha? (شو قال لها؟)"
+   ],
+   [
+    "ما تصدقني",
+    "ma tṣaddigni",
+    "you don't believe me (to a man)",
+    "لا تصدقني",
+    "to a woman: ma tṣaddgīni (ما تصدقيني)"
+   ],
+   [
+    "ضحكتنا",
+    "ẓaḥḥaktna",
+    "you made us laugh (to a man)",
+    "أضحكتنا",
+    "to a woman: ẓaḥḥaktīna (ضحكتينا)"
+   ]
+  ],
+  "culture": "Juḥa (جحا) is the wise fool of Arab folk tales; the same stories are told about Nasreddin in Turkey and Iran. 'You believe the donkey and not me?' is one of the best known. A Juḥa joke is a safe choice: it makes fun of no real group of people."
+ },
+ {
+  "id": "s3u107",
+  "stage": 3,
+  "title": "I nearly missed my flight",
+  "goal": "Back from London, tell Bū Rāshid in his majlis, with Sēf there, how you nearly missed your flight, from start to finish",
+  "tip": "A longer story strings it all together: the scene with kān, lamma for 'when', fajʼa for the turn, gām for what you started doing, bil-akhīr for the end. kān b- says what nearly happened: iṭ-ṭayyāra kānat bitfūtni 'I nearly missed my flight'.",
+  "grammar": "recycle: kān b- 'nearly', lamma, fajʼa, gām + verb, bil-akhīr in one story",
+  "dialogue": [
+   [
+    "A",
+    "الحمد لله على السلامة يا ولدي. كيف كانت لندن؟",
+    "il-ḥamdu lillāh ʿala s-salāma yā wildi. chēf kānat Landan?",
+    "Welcome back, son. How was London?"
+   ],
+   [
+    "B",
+    "الله يسلمك يا عمي. حلوة، بس الطيارة كانت بتفوتني!",
+    "allāh ysallmak yā ʿammi. ḥilwa, bas iṭ-ṭayyāra kānat bitfūtni!",
+    "Thank you, uncle. Lovely, but I nearly missed my flight!"
+   ],
+   [
+    "A",
+    "يا ساتر! ليش يا ولدي؟ شو صار؟",
+    "yā sātir! lēsh yā wildi? shu ṣār?",
+    "Good grief! Why, son? What happened?"
+   ],
+   [
+    "B",
+    "الطيارة الساعة ثمان، ولما قمت من النوم كانت الساعة ست!",
+    "iṭ-ṭayyāra s-sāʿa thamān, w lamma gimt min in-nōm kānat is-sāʿa sitt!",
+    "The flight was at eight, and when I woke up it was six!"
+   ],
+   [
+    "A",
+    "ست؟! وشو سويت؟",
+    "sitt?! w shu sawwēt?",
+    "Six?! And what did you do?"
+   ],
+   [
+    "B",
+    "خذت تاكسي، وفجأة الشارع كله زحمة!",
+    "khadht tāksi, w fajʼa ish-shāriʿ killah zaḥma!",
+    "I got a taxi, and suddenly the whole road was jammed!"
+   ],
+   [
+    "A",
+    "أفا! ووصلت على الوقت؟",
+    "afa! w wiṣalt ʿala l-wagt?",
+    "Oh no! And did you get there on time?"
+   ],
+   [
+    "B",
+    "قمت أركض في المطار، وبالأخير الطيارة طلعت متأخرة!",
+    "gimt arkiẓ fi l-maṭār, w bil-akhīr iṭ-ṭayyāra ṭilʿat mitʼakhkhra!",
+    "I started running through the airport, and in the end the flight turned out to be late!"
+   ]
+  ],
+  "items": [
+   [
+    "الطيارة كانت بتفوتني",
+    "iṭ-ṭayyāra kānat bitfūtni",
+    "I nearly missed my flight (lit. the plane was about to miss me)",
+    "كادت تفوتني الطائرة",
+    "I missed it: fātatni (فاتتني)"
+   ],
+   [
+    "قمت من النوم",
+    "gimt min in-nōm",
+    "I woke up, I got up; you got up (to a man)",
+    "استيقظت",
+    "to a woman: gimti min in-nōm (قمتي من النوم)"
+   ],
+   [
+    "الساعة ست",
+    "is-sāʿa sitt",
+    "six o'clock, at six",
+    "الساعة السادسة",
+    "at eight: is-sāʿa thamān (الساعة ثمان)"
+   ],
+   [
+    "خذت تاكسي",
+    "khadht tāksi",
+    "I got a taxi; you got a taxi (to a man)",
+    "أخذت سيارة أجرة",
+    "to a woman: khadhti tāksi (خذتي تاكسي)"
+   ],
+   [
+    "الشارع كله زحمة",
+    "ish-shāriʿ killah zaḥma",
+    "the whole road's jammed",
+    "الشارع كله مزدحم",
+    ""
+   ],
+   [
+    "على الوقت",
+    "ʿala l-wagt",
+    "on time",
+    "في الوقت المحدد",
+    "late: mitʼakhkhir (متأخر)"
+   ],
+   [
+    "قمت أركض",
+    "gimt arkiẓ",
+    "I started running",
+    "بدأت أركض",
+    "he started running: gām yirkiẓ (قام يركض)"
+   ],
+   [
+    "طلعت متأخرة",
+    "ṭilʿat mitʼakhkhra",
+    "it (f.) turned out to be late",
+    "تبين أنها متأخرة",
+    "for a masculine noun: ṭilaʿ mitʼakhkhir (طلع متأخر)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u108",
+  "stage": 3,
+  "title": "Checkpoint 3.7: a surprise lunch for Ḥamad",
+  "goal": "Checkpoint (stage review): at the office, hear from Maryam that a colleague is leaving, and plan a surprise lunch with her",
+  "tip": "Stage 3 in one scene: a participle for a plan (Ḥamad ṭāliʿ), reported speech (gāl-li innah), idha + past for 'if' (idha wāfag), il-mafrūẓ + verb, and to a woman la tgūlīn-lah 'don't tell him' and khallīha mufājaʼa 'keep it a surprise'.",
+  "grammar": "checkpoint 3.7 (stage review): recycle s3u001–s3u107 (participles, reported speech, idha, il-mafrūẓ, khalli)",
+  "dialogue": [
+   [
+    "A",
+    "سمعت؟ حمد طالع من الشركة آخر الشهر",
+    "simaʿt? Ḥamad ṭāliʿ min ish-sharika ākhir ish-shahar",
+    "Have you heard? Ḥamad's leaving the company at the end of the month."
+   ],
+   [
+    "B",
+    "صج؟ منو قال لج؟",
+    "ṣij? minu gāl-lich?",
+    "Really? Who told you?"
+   ],
+   [
+    "A",
+    "هو قال لي إنه لقى شغل في أبوظبي",
+    "huwa gāl-li innah liga shughul fi Abūẓabi",
+    "He told me himself that he's found a job in Abu Dhabi."
+   ],
+   [
+    "B",
+    "زين، خلنا نسوي له غدا قبل لا يسافر",
+    "zēn, khallna nsawwī-lah ghada gabil la ysāfir",
+    "Right, let's put on a lunch for him before he goes."
+   ],
+   [
+    "A",
+    "فكرة حلوة! بس ما أدري إذا المدير بيوافق",
+    "fikra ḥilwa! bas ma adri idha l-mudīr biywāfig",
+    "Good idea! But I don't know if the manager will agree."
+   ],
+   [
+    "B",
+    "بسأله. وإذا وافق، المفروض نحجز من الحين",
+    "basʼalah. w idha wāfag, il-mafrūẓ niḥjiz min il-ḥīn",
+    "I'll ask him. And if he agrees, we should book now."
+   ],
+   [
+    "A",
+    "زين. أنا بطرش للكل، وانت كلم المدير",
+    "zēn. ana baṭarrish lil-kill, w inta kallim il-mudīr",
+    "OK. I'll message everyone, and you talk to the manager."
+   ],
+   [
+    "B",
+    "تمام. بس لا تقولين له، خليها مفاجأة!",
+    "tamām. bas la tgūlīn-lah, khallīha mufājaʼa!",
+    "Great. But don't tell him, keep it a surprise!"
+   ]
+  ],
+  "items": [
+   [
+    "منو قال لج؟",
+    "minu gāl-lich?",
+    "who told you? (to a woman)",
+    "من أخبركِ؟",
+    "to a man: minu gāl-lak? (منو قال لك؟)"
+   ],
+   [
+    "قبل لا يسافر",
+    "gabil la ysāfir",
+    "before he goes away, before he leaves",
+    "قبل أن يسافر",
+    "before she goes away: gabil la tsāfir (قبل لا تسافر)"
+   ],
+   [
+    "إذا وافق",
+    "idha wāfag",
+    "if he agrees, if he says yes",
+    "إذا وافق",
+    "if she agrees: idha wāfgat (إذا وافقت)"
+   ],
+   [
+    "المفروض نحجز",
+    "il-mafrūẓ niḥjiz",
+    "we should book, we're supposed to book",
+    "يجب أن نحجز",
+    "I should book: il-mafrūẓ aḥjiz (المفروض أحجز)"
+   ],
+   [
+    "لا تقولين له",
+    "la tgūlīn-lah",
+    "don't tell him (to a woman)",
+    "لا تقولي له",
+    "to a man: la tgūl-lah; to a group: la tgūlūn-lah"
+   ],
+   [
+    "خليها مفاجأة",
+    "khallīha mufājaʼa",
+    "keep it a surprise (to a woman)",
+    "اجعليها مفاجأة",
+    "to a man: khallha mufājaʼa (خلها مفاجأة)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u109",
+  "stage": 3,
+  "title": "B1 exit: chatting with a stranger",
+  "goal": "B1 exit: at a café, an Emirati at the next table starts chatting; talk about yourself, Dubai and football without preparing",
+  "tip": "Unprepared talk runs on short answers with a reason, then a question back: bi-ṣarāḥa in-nās… w inta? To agree, say ṣidagt 'you're right, true'. shu yābak Dbayy? is 'what brought you to Dubai?'; it's friendly, not nosy.",
+  "grammar": "B1 exit: unprepared conversation on a familiar topic",
+  "dialogue": [
+   [
+    "A",
+    "السلام عليكم. ما شاء الله، تتكلم عربي!",
+    "as-salāmu ʿalaykum. mā shāʼ allāh, titkallam ʿarabi!",
+    "Hello. Wow, you speak Arabic!"
+   ],
+   [
+    "B",
+    "وعليكم السلام. شوي شوي، للحين أتعلم",
+    "wa ʿalaykum is-salām. shwayy shwayy, lil-ḥīn atʿallam",
+    "Hello. A little, I'm still learning."
+   ],
+   [
+    "A",
+    "من وين انت؟ وشو يابك دبي؟",
+    "min wēn inta? w shu yābak Dbayy?",
+    "Where are you from? And what brought you to Dubai?"
+   ],
+   [
+    "B",
+    "من لندن. ييت أدرس، وأتدرب في شركة",
+    "min Landan. yīt adris, w atdarrab fi sharika",
+    "From London. I came to study, and I'm doing an internship at a company."
+   ],
+   [
+    "A",
+    "حلو! وشو أحسن شي في دبي برأيك؟",
+    "ḥilu! w shu aḥsan shay fi Dbayy b-raʼyak?",
+    "Nice! And what's the best thing about Dubai, in your opinion?"
+   ],
+   [
+    "B",
+    "بصراحة الناس، طيبين وايد. بس الصيف حار!",
+    "bi-ṣarāḥa in-nās, ṭayybīn wāyid. bas iṣ-ṣēf ḥārr!",
+    "Honestly, the people; they're really nice. But the summer's hot!"
+   ],
+   [
+    "A",
+    "صدقت والله! وتحب الكورة؟ تشجع أي فريق؟",
+    "ṣidagt wallāh! w tḥibb il-kōra? tshajjiʿ ay farīg?",
+    "Too true! And do you like football? Which team do you support?"
+   ],
+   [
+    "B",
+    "أكيد! أشجع فريق من لندن. وانت؟",
+    "akīd! ashajjiʿ farīg min Landan. w inta?",
+    "Of course! I support a London team. And you?"
+   ]
+  ],
+  "items": [
+   [
+    "شو يابك؟",
+    "shu yābak?",
+    "what brought you (here)? (to a man)",
+    "ما الذي جاء بك؟",
+    "to a woman: shu yābich? (شو يابج؟); you'll see written جابك"
+   ],
+   [
+    "بصراحة",
+    "bi-ṣarāḥa",
+    "honestly, to be honest",
+    "بصراحة",
+    ""
+   ],
+   [
+    "صدقت",
+    "ṣidagt",
+    "you're right, too true (to a man)",
+    "صدقت",
+    "to a woman: ṣidagti (صدقتي)"
+   ],
+   [
+    "الكورة",
+    "il-kōra",
+    "football",
+    "كرة القدم",
+    ""
+   ],
+   [
+    "تشجع أي فريق؟",
+    "tshajjiʿ ay farīg?",
+    "which team do you support? (to a man)",
+    "أي فريق تشجع؟",
+    "to a woman: tshajjʿīn ay farīg? (تشجعين أي فريق؟)"
+   ],
+   [
+    "أشجع",
+    "ashajjiʿ",
+    "I support (a team)",
+    "أشجع",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s3u110",
+  "stage": 3,
+  "title": "B1 exit: my first day at work",
+  "goal": "B1 exit: a year into your internship, tell Maryam and the team the story of your first day at the office",
+  "tip": "Tell it in order: the scene with kān (ma kint aʿarf aḥad, kint khāyif), the turn with fajʼa, what started with gām, and how it ended. To a woman, 'do you remember?' is tidhkrīn?",
+  "grammar": "B1 exit: narrate an experience (kān gāʿid, lamma, fajʼa, gām + verb)",
+  "dialogue": [
+   [
+    "A",
+    "تدري إن اليوم صار لك سنة ويانا؟",
+    "tadri inn il-yōm ṣār-lak sana wiyyāna?",
+    "Did you know it's a year today since you joined us?"
+   ],
+   [
+    "B",
+    "سنة؟! والله ما حسيت. تذكرين أول يوم لي؟",
+    "sana?! wallāh ma ḥassēt. tidhkrīn awwal yōm li?",
+    "A year?! Honestly, I hadn't noticed. Do you remember my first day?"
+   ],
+   [
+    "A",
+    "أكيد! بس قول لهم انت، شو صار؟",
+    "akīd! bas gūl-lhum inta, shu ṣār?",
+    "Of course! But you tell them what happened."
+   ],
+   [
+    "B",
+    "لما ييت، ما كنت أعرف أحد، وكنت خايف وايد",
+    "lamma yīt, ma kint aʿarf aḥad, w kint khāyif wāyid",
+    "When I came, I didn't know anyone, and I was really nervous."
+   ],
+   [
+    "A",
+    "وكنت قاعد ساكت طول الاجتماع!",
+    "w kint gāʿid sākit ṭūl il-ijtimāʿ!",
+    "And you sat there silent through the whole meeting!"
+   ],
+   [
+    "B",
+    "هيه! وفجأة المدير قال لي: تكلم عن نفسك بالعربي!",
+    "hē! w fajʼa l-mudīr gāl-li: tkallam ʿan nafsak bil-ʿarabi!",
+    "Yes! And suddenly the manager said to me: 'Tell us about yourself in Arabic!'"
+   ],
+   [
+    "A",
+    "وانت قمت ترجف!",
+    "w inta gimt tirjif!",
+    "And you started shaking!"
+   ],
+   [
+    "B",
+    "بس قلت: اسمي سالم، وأنا طالب! والكل قام يصفق",
+    "bas gilt: ismi Sālim, w ana ṭālib! w il-kill gām yṣaffig",
+    "But I said: 'My name's Sālim, and I'm a student!' And everyone started clapping."
+   ]
+  ],
+  "items": [
+   [
+    "تذكرين؟",
+    "tidhkrīn?",
+    "do you remember? (to a woman)",
+    "هل تذكرين؟",
+    "to a man: tidhkir? (تذكر؟)"
+   ],
+   [
+    "لما ييت",
+    "lamma yīt",
+    "when I came, when I arrived; when you came (to a man)",
+    "عندما جئت",
+    "to a woman: lamma yīti (لما ييتي)"
+   ],
+   [
+    "ما كنت أعرف أحد",
+    "ma kint aʿarf aḥad",
+    "I didn't know anyone",
+    "لم أكن أعرف أحدًا",
+    ""
+   ],
+   [
+    "كنت قاعد ساكت",
+    "kint gāʿid sākit",
+    "I was sitting there silent; you were sitting silent (to a man)",
+    "كنت جالسًا صامتًا",
+    "a woman says: kint gāʿda sākta (كنت قاعدة ساكتة)"
+   ],
+   [
+    "تكلم عن نفسك",
+    "tkallam ʿan nafsak",
+    "tell us about yourself, talk about yourself (to a man)",
+    "تحدث عن نفسك",
+    "to a woman: tkallami ʿan nafsich (تكلمي عن نفسج)"
+   ],
+   [
+    "الكل قام يصفق",
+    "il-kill gām yṣaffig",
+    "everyone started clapping",
+    "بدأ الجميع يصفقون",
+    ""
+   ]
+  ]
+ }
+]
