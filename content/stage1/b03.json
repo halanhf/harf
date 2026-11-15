@@ -746,7 +746,7 @@
     "id": "s1u044",
     "stage": 1,
     "title": "Which day?",
-    "goal": "Pick a day to go out with a friend, name the days of the week, and say good night.",
+    "goal": "On a late-night call, pick a day to go out with a friend, name the days of the week, and say good night.",
     "grammar": "Days of the week: yōm + day",
     "tip": "Days come with yōm 'day': yōm il-aḥad (Sun), il-ithnēn (Mon), ith-thalātha (Tue), il-arbaʿa (Wed), il-khamīs (Thu), il-jumʿa (Fri), is-sabt (Sat). No word for 'on' is needed: yōm il-jumʿa ʿindi shughul (on Friday I've got work).",
     "culture": "Since January 2022 the UAE's official weekend has been Saturday and Sunday, and federal government offices close at Friday noon (Sharjah's government takes Friday off too). Kuwait's weekend is Friday and Saturday. Friday's noon prayer is the main prayer of the week, so Friday plans usually start after it.",
@@ -1064,9 +1064,9 @@
       [
         "نتأخر",
         "nitʼakhkhar",
-        "we're late, we'll be late",
+        "we're late (as a habit), we get late",
         "نتأخر",
-        "I'm late: atʼakhkhar"
+        "I: atʼakhkhar (أتأخر); late right now: taʼakhkharna 'we're late', taʼakhkhart 'I'm late'"
       ]
     ]
   }
