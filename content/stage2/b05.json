@@ -1,0 +1,901 @@
+[
+ {
+  "id": "s2u041",
+  "stage": 2,
+  "title": "Busy until three",
+  "goal": "Tell Sēf until when you're busy, and plan to meet after your lecture",
+  "tip": "lēn means 'until'. Put it before a time or a noun, lēn is-sāʿa thalāth 'until three', or before a present verb, lēn tkhalliṣ 'until you finish'. ʿugub is the Emirati 'after' before a noun: ʿugub il-muḥāẓra 'after the lecture'. baʿd works everywhere.",
+  "grammar": "lēn 'until'; ʿugub 'after' (UAE) + noun",
+  "dialogue": [
+   [
+    "A",
+    "هلا! وين كنت؟ نتغدى سوا اليوم؟",
+    "hala! wēn kint? nitghadda sawa l-yōm?",
+    "Hi! Where have you been? Shall we have lunch together today?"
+   ],
+   [
+    "B",
+    "ما أقدر، عندي شغل لين الساعة ثلاث",
+    "ma agdar, ʿindi shughul lēn is-sāʿa thalāth",
+    "I can't, I've got work until three."
+   ],
+   [
+    "A",
+    "عادي، نتغدى عقب الشغل",
+    "ʿādi, nitghadda ʿugub ish-shughul",
+    "No problem, we'll have lunch after work."
+   ],
+   [
+    "B",
+    "بس بعد الغدا عندي محاضرة لين ست",
+    "bas baʿd il-ghada ʿindi muḥāẓra lēn sitt",
+    "But after lunch I've got a lecture until six."
+   ],
+   [
+    "A",
+    "زين، وعقب المحاضرة؟ بترياك لين تخلص",
+    "zēn, w ʿugub il-muḥāẓra? batrayyāk lēn tkhalliṣ",
+    "OK, and after the lecture? I'll wait for you until you finish."
+   ],
+   [
+    "B",
+    "مشكور! بعد المغرب نروح المول؟",
+    "mashkūr! baʿd il-maghrib nrūḥ il-mōl?",
+    "Thanks! Shall we go to the mall after maghrib?"
+   ],
+   [
+    "A",
+    "اتفقنا. صار لي زمان ما شفتك!",
+    "ittafagna. ṣār-li zamān ma shiftak!",
+    "Deal. I haven't seen you for ages!"
+   ]
+  ],
+  "items": [
+   [
+    "لين",
+    "lēn",
+    "until",
+    "حتى / إلى أن",
+    "also before a present verb: lēn tkhalliṣ 'until you finish'"
+   ],
+   [
+    "عقب",
+    "ʿugub",
+    "after (before a noun) (UAE)",
+    "بعد",
+    "baʿd (بعد) is the everyday form everywhere: baʿd il-maghrib"
+   ],
+   [
+    "لين الساعة ثلاث",
+    "lēn is-sāʿa thalāth",
+    "until three o'clock",
+    "حتى الساعة الثالثة",
+    ""
+   ],
+   [
+    "محاضرة",
+    "muḥāẓra",
+    "a lecture, a class (at university)",
+    "محاضرة",
+    ""
+   ],
+   [
+    "بترياك",
+    "batrayyāk",
+    "I'll wait for you (to a man) (UAE)",
+    "سأنتظرك",
+    "to a woman: batrayyāch (بترياج)"
+   ],
+   [
+    "لين تخلص",
+    "lēn tkhalliṣ",
+    "until you finish (to a man)",
+    "حتى تنتهي",
+    "to a woman: lēn tkhallṣīn (لين تخلصين)"
+   ],
+   [
+    "سوا",
+    "sawa",
+    "together",
+    "معًا",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s2u042",
+  "stage": 2,
+  "title": "After work, step by step",
+  "goal": "Tell Maryam what you did after work yesterday, in order",
+  "tip": "To say 'after I did something', put baʿd ma before a past verb: baʿd ma khallaṣt 'after I finished'. Emiratis also say ʿugub ma: ʿugub ma rijaʿt 'after I got back'. To tell steps in order: awwal shay 'first', baʿd-ha 'after that', ākhir shay 'in the end'.",
+  "grammar": "baʿd ma / ʿugub ma + past: 'after I …'",
+  "dialogue": [
+   [
+    "A",
+    "صباح الخير! شو سويت أمس عقب الدوام؟",
+    "ṣabāḥ il-khēr! shu sawwēt ams ʿugub id-dawām?",
+    "Good morning! What did you do yesterday after work?"
+   ],
+   [
+    "B",
+    "صباح النور. بعد ما خلصت، رحت المول ويا سيف",
+    "ṣabāḥ in-nūr. baʿd ma khallaṣt, riḥt il-mōl wiyya Sēf",
+    "Good morning. After I finished, I went to the mall with Sēf."
+   ],
+   [
+    "A",
+    "والله؟ شو اشتريت؟",
+    "wallāh? shu shtarēt?",
+    "Really? What did you buy?"
+   ],
+   [
+    "B",
+    "أول شي اشتريت قميص، وبعدها تعشينا",
+    "awwal shay shtarēt gamīṣ, w baʿd-ha tʿashshēna",
+    "First I bought a shirt, and after that we had dinner."
+   ],
+   [
+    "A",
+    "حلو! وعقب ما تعشيتوا؟",
+    "ḥilu! w ʿugub ma tʿashshētu?",
+    "Nice! And after you'd had dinner?"
+   ],
+   [
+    "B",
+    "آخر شي رجعت البيت ونمت. وانتي؟",
+    "ākhir shay rijaʿt il-bēt w nimt. w inti?",
+    "In the end I went home and slept. And you?"
+   ],
+   [
+    "A",
+    "أنا عقب ما رجعت البيت، نمت لين الصبح!",
+    "ana ʿugub ma rijaʿt il-bēt, nimt lēn iṣ-ṣubḥ!",
+    "Me? After I got home, I slept till morning!"
+   ]
+  ],
+  "items": [
+   [
+    "بعد ما",
+    "baʿd ma",
+    "after (before a verb: after I …, after you …)",
+    "بعد أن",
+    ""
+   ],
+   [
+    "عقب ما",
+    "ʿugub ma",
+    "after (before a verb) (UAE)",
+    "بعد أن",
+    "everyone also says baʿd ma (بعد ما)"
+   ],
+   [
+    "بعد ما خلصت",
+    "baʿd ma khallaṣt",
+    "after I finished; after you finished (to a man)",
+    "بعد أن انتهيت",
+    "a woman says, or to a woman: baʿd ma khallaṣti"
+   ],
+   [
+    "أول شي",
+    "awwal shay",
+    "first (of all), first thing",
+    "أولًا",
+    ""
+   ],
+   [
+    "بعدها",
+    "baʿd-ha",
+    "after that, then",
+    "بعد ذلك",
+    "UAE also: ʿugubha (عقبها)"
+   ],
+   [
+    "آخر شي",
+    "ākhir shay",
+    "in the end, finally; the last thing",
+    "أخيرًا / في النهاية",
+    ""
+   ],
+   [
+    "تعشينا",
+    "tʿashshēna",
+    "we had dinner",
+    "تعشينا",
+    "you had dinner (to a group): tʿashshētu (تعشيتوا)"
+   ]
+  ]
+ },
+ {
+  "id": "s2u043",
+  "stage": 2,
+  "title": "Before you go, have a coffee",
+  "goal": "Leave Sēf's house politely when Umm Sēf asks you to stay",
+  "tip": "'Before' + a verb is gabil la, and the verb after it is in the present form: gabil la trūḥ 'before you go', gabil la ansa 'before I forget'. Before a noun it's just gabil: gabil il-maghrib 'before maghrib'.",
+  "grammar": "gabil la + present verb: 'before …'",
+  "dialogue": [
+   [
+    "A",
+    "وين رايح؟ اقعد لين يرجع سيف",
+    "wēn rāyiḥ? igʿid lēn yirjaʿ Sēf",
+    "Where are you off to? Stay until Sēf gets back."
+   ],
+   [
+    "B",
+    "أحسن أروح يا أم سيف، عندي محاضرة الصبح",
+    "aḥsan arūḥ yā Umm Sēf, ʿindi muḥāẓra iṣ-ṣubḥ",
+    "I'd better go, Umm Sēf, I've got a lecture in the morning."
+   ],
+   [
+    "A",
+    "زين، بس قبل لا تروح، اشرب قهوة",
+    "zēn, bas gabil la trūḥ, ishrab gahwa",
+    "All right, but before you go, have a coffee."
+   ],
+   [
+    "B",
+    "تسلمين! بشربها بسرعة قبل لا أتأخر",
+    "tislamīn! bashrabha b-surʿa gabil la atʼakhkhar",
+    "Thank you! I'll drink it quickly before I'm late."
+   ],
+   [
+    "A",
+    "الله يسلمك. وقبل لا أنسى، هذي حلويات حقك",
+    "allāh ysallmak. w gabil la ansa, hādhi ḥalawiyyāt ḥaggak",
+    "God keep you. And before I forget, these sweets are for you."
+   ],
+   [
+    "B",
+    "ما قصرتي! ما في داعي",
+    "mā gaṣṣarti! ma fī dāʿi",
+    "That's so kind of you! There was no need."
+   ],
+   [
+    "A",
+    "ما سوينا شي. البيت بيتك",
+    "mā sawwēna shay. il-bēt bētak",
+    "It was nothing. This is your home too."
+   ]
+  ],
+  "items": [
+   [
+    "قبل لا",
+    "gabil la",
+    "before (before a verb)",
+    "قبل أن",
+    "also: gabil ma (قبل ما)"
+   ],
+   [
+    "قبل لا تروح",
+    "gabil la trūḥ",
+    "before you go (to a man)",
+    "قبل أن تذهب",
+    "to a woman: gabil la trūḥīn (قبل لا تروحين)"
+   ],
+   [
+    "قبل لا أنسى",
+    "gabil la ansa",
+    "before I forget",
+    "قبل أن أنسى",
+    ""
+   ],
+   [
+    "أحسن أروح",
+    "aḥsan arūḥ",
+    "I'd better go",
+    "من الأفضل أن أذهب",
+    ""
+   ],
+   [
+    "اشرب",
+    "ishrab",
+    "drink, have (a drink) (to a man)",
+    "اشرب",
+    "to a woman: ishrabi (اشربي)"
+   ],
+   [
+    "تسلمين",
+    "tislamīn",
+    "thank you (to a woman)",
+    "شكرًا لكِ",
+    "to a man: tislam (تسلم); the reply is allāh ysallmak (to a man) or allāh ysallmich (to a woman)"
+   ],
+   [
+    "البيت بيتك",
+    "il-bēt bētak",
+    "make yourself at home (lit. the house is your house) (to a man)",
+    "البيت بيتك",
+    "to a woman: il-bēt bētich"
+   ]
+  ]
+ },
+ {
+  "id": "s2u044",
+  "stage": 2,
+  "title": "As soon as I arrived",
+  "goal": "Tell Sēf about the day you first came to Dubai, and promise to message him from your trip",
+  "tip": "awwal ma means 'as soon as': awwal ma ṭilaʿt 'as soon as I came out'. With a present verb it points ahead: awwal ma tōṣal 'as soon as you get there'. yōm + a past verb means 'when': yōm wiṣalt 'when I arrived'. lamma works too.",
+  "grammar": "awwal ma 'as soon as'; yōm + past 'when'",
+  "dialogue": [
+   [
+    "A",
+    "شو سويت يوم ييت دبي أول مرة؟",
+    "shu sawwēt yōm yīt Dbayy awwal marra?",
+    "What did you do when you first came to Dubai?"
+   ],
+   [
+    "B",
+    "يوم وصلت، كان الحر وايد!",
+    "yōm wiṣalt, kān il-ḥarr wāyid!",
+    "When I arrived, it was so hot!"
+   ],
+   [
+    "A",
+    "والله؟ وأول ما طلعت من المطار؟",
+    "wallāh? w awwal ma ṭilaʿt min il-maṭār?",
+    "Really? And as soon as you came out of the airport?"
+   ],
+   [
+    "B",
+    "أول ما طلعت، شربت ماي بارد. كان أحسن شي!",
+    "awwal ma ṭilaʿt, shirabt māy bārid. kān aḥsan shay!",
+    "As soon as I came out, I drank cold water. It was the best thing ever!"
+   ],
+   [
+    "A",
+    "وباكر مسافر لندن؟",
+    "w bāchir msāfir Landan?",
+    "And you're flying to London tomorrow?"
+   ],
+   [
+    "B",
+    "هيه، بس قبل لا أروح عندي دوام",
+    "hē, bas gabil la arūḥ ʿindi dawām",
+    "Yes, but before I go I've got work."
+   ],
+   [
+    "A",
+    "زين. أول ما توصل، طرش لي رسالة",
+    "zēn. awwal ma tōṣal, ṭarrish-li risāla",
+    "OK. As soon as you land, send me a message."
+   ]
+  ],
+  "items": [
+   [
+    "أول ما",
+    "awwal ma",
+    "as soon as",
+    "بمجرد أن / حالما",
+    ""
+   ],
+   [
+    "أول ما طلعت",
+    "awwal ma ṭilaʿt",
+    "as soon as I came out; as soon as you came out (to a man)",
+    "حالما خرجت",
+    "a woman says, or to a woman: awwal ma ṭilaʿti"
+   ],
+   [
+    "أول ما توصل",
+    "awwal ma tōṣal",
+    "as soon as you get there (to a man)",
+    "حالما تصل",
+    "to a woman: awwal ma tōṣlīn (أول ما توصلين)"
+   ],
+   [
+    "يوم وصلت",
+    "yōm wiṣalt",
+    "when I arrived; when you arrived (to a man)",
+    "عندما وصلت",
+    "also: lamma wiṣalt (لما وصلت); to a woman: yōm wiṣalti"
+   ],
+   [
+    "يوم ييت",
+    "yōm yīt",
+    "when I came; when you came (to a man)",
+    "عندما جئت",
+    "to a woman: yōm yīti; you'll see written يوم جيت"
+   ],
+   [
+    "مسافر",
+    "msāfir",
+    "travelling, flying (somewhere) (a man)",
+    "مسافر",
+    "a woman: msāfra (مسافرة)"
+   ]
+  ]
+ },
+ {
+  "id": "s2u045",
+  "stage": 2,
+  "title": "So that we're not late",
+  "goal": "Get your friends to leave early for the cinema, and say what for",
+  "tip": "ʿashān + a present verb means 'so that': ʿashān nilga bārkin 'so we find a parking space'. 'So that … not' is ʿashān ma: ʿashān ma nitʼakhkhar 'so we're not late'. ʿashān shu? asks 'what for?', and ʿashān chī means 'that's why'.",
+  "grammar": "ʿashān + present verb: 'so that'",
+  "dialogue": [
+   [
+    "B",
+    "يا شباب، نطلع الساعة خمس عشان ما نتأخر",
+    "yā shabāb, niṭlaʿ is-sāʿa khams ʿashān ma nitʼakhkhar",
+    "Guys, let's leave at five so we're not late."
+   ],
+   [
+    "A",
+    "خمس؟ عشان شو؟ الفلم الساعة ثمان!",
+    "khams? ʿashān shu? il-film is-sāʿa thamān!",
+    "Five? What for? The film's at eight!"
+   ],
+   [
+    "B",
+    "عشان نلقى باركن. وبعدها نتعشى سوا",
+    "ʿashān nilga bārkin. w baʿd-ha nitʿashsha sawa",
+    "So we find a parking space. And then we'll have dinner together."
+   ],
+   [
+    "A",
+    "زين، والتذاكر؟",
+    "zēn, w it-tadhākir?",
+    "OK, and the tickets?"
+   ],
+   [
+    "B",
+    "اشتريتها أمس. انتو بس تعالوا بدري!",
+    "shtarētha ams. intu bas taʿālu badri!",
+    "I bought them yesterday. You lot just come early!"
+   ],
+   [
+    "A",
+    "ومنو بيسوق؟",
+    "w minu biysūg?",
+    "And who's driving?"
+   ],
+   [
+    "B",
+    "أنا. عشان جي قلت لكم: الساعة خمس!",
+    "ana. ʿashān chī gilt-lkum: is-sāʿa khams!",
+    "Me. That's why I told you: five o'clock!"
+   ]
+  ],
+  "items": [
+   [
+    "عشان ما نتأخر",
+    "ʿashān ma nitʼakhkhar",
+    "so that we're not late",
+    "لكي لا نتأخر",
+    ""
+   ],
+   [
+    "عشان شو؟",
+    "ʿashān shu?",
+    "what for?",
+    "لماذا؟",
+    "Kuwait: ʿashān shinu? (عشان شنو)"
+   ],
+   [
+    "عشان جي",
+    "ʿashān chī",
+    "that's why, so",
+    "لذلك",
+    "wider Gulf and Kuwait: ʿashān chidhi (عشان جذي)"
+   ],
+   [
+    "باركن",
+    "bārkin",
+    "a parking space, parking",
+    "موقف سيارات",
+    "from English 'parking'"
+   ],
+   [
+    "التذاكر",
+    "it-tadhākir",
+    "the tickets",
+    "التذاكر",
+    "one ticket: tadhkara (تذكرة)"
+   ],
+   [
+    "منو بيسوق؟",
+    "minu biysūg?",
+    "who's driving? who'll drive?",
+    "من سيقود؟",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s2u046",
+  "stage": 2,
+  "title": "The guy by the door",
+  "goal": "Point out people and things around the university to Sēf",
+  "tip": "illi means 'who, that, which' and never changes. Use it after a noun with il-: ir-rayyāl illi yamm il-bāb 'the man by the door', il-kitāb illi ʿala ṭ-ṭāwla 'the book on the table'. After a noun without il-, leave it out: ʿindi rbīʿ yidris hni 'I've got a friend who studies here'.",
+  "grammar": "illi after a definite noun",
+  "dialogue": [
+   [
+    "A",
+    "منو الريّال اللي يم الباب؟",
+    "minu r-rayyāl illi yamm il-bāb?",
+    "Who's the guy by the door?"
+   ],
+   [
+    "B",
+    "هذا مارك، ربيعي اللي من لندن",
+    "hādha Mārk, rbīʿi illi min Landan",
+    "That's Mark, my friend from London."
+   ],
+   [
+    "A",
+    "والشباب اللي هناك؟ أول مرة أشوفهم",
+    "w ish-shabāb illi hnāk? awwal marra ashūfhum",
+    "And the guys over there? It's the first time I've seen them."
+   ],
+   [
+    "B",
+    "هذيلا الطلاب اللي يدرسون وياي هندسة",
+    "hādhēla ṭ-ṭullāb illi yidrisūn wiyyāy handasa",
+    "They're the students who study engineering with me."
+   ],
+   [
+    "A",
+    "زين. والكتاب اللي على الطاولة، حقك؟",
+    "zēn. w il-kitāb illi ʿala ṭ-ṭāwla, ḥaggak?",
+    "OK. And the book on the table, is it yours?"
+   ],
+   [
+    "B",
+    "لا، حق الطالب اللي يقعد يمي",
+    "la, ḥagg iṭ-ṭālib illi yigʿid yammi",
+    "No, it belongs to the student who sits next to me."
+   ],
+   [
+    "A",
+    "يلا، قبل لا نتأخر! المحاضرة اللي الساعة عشر بتبدا",
+    "yalla, gabil la nitʼakhkhar! il-muḥāẓra illi s-sāʿa ʿashr bitibda",
+    "Come on, before we're late! The ten o'clock lecture is about to start."
+   ]
+  ],
+  "items": [
+   [
+    "اللي",
+    "illi",
+    "who, that, which (after a noun with il-)",
+    "الذي / التي",
+    "never changes for gender or number; you'll see written الي"
+   ],
+   [
+    "الريّال اللي",
+    "ir-rayyāl illi",
+    "the man who, the guy who",
+    "الرجل الذي",
+    ""
+   ],
+   [
+    "الشباب اللي",
+    "ish-shabāb illi",
+    "the guys who, the young men who",
+    "الشباب الذين",
+    ""
+   ],
+   [
+    "الكتاب اللي على الطاولة",
+    "il-kitāb illi ʿala ṭ-ṭāwla",
+    "the book (that's) on the table",
+    "الكتاب الذي على الطاولة",
+    ""
+   ],
+   [
+    "بتبدا",
+    "bitibda",
+    "it's going to start, it'll start (a feminine thing: a lecture, a film)",
+    "ستبدأ",
+    "a masculine thing: biybda (بيبدا)"
+   ],
+   [
+    "يقعد",
+    "yigʿid",
+    "he sits",
+    "يجلس",
+    "UAE also: yiylis (ييلس)"
+   ],
+   [
+    "يمي",
+    "yammi",
+    "next to me",
+    "بجانبي",
+    "next to you: yammak (to a man), yammich (to a woman)"
+   ]
+  ]
+ },
+ {
+  "id": "s2u047",
+  "stage": 2,
+  "title": "The module I'm doing now",
+  "goal": "Tell Fahad about your studies, your module and your next exam",
+  "tip": "illi also joins a noun to a phrase with no verb: il-māda illi ʿindi l-ḥīn 'the module I've got now', il-imtiḥān illi yōm il-aḥad 'the exam on Sunday'. dirāsa is 'studying, studies': shlōn id-dirāsa? 'how are your studies going?'",
+  "grammar": "illi + a phrase with no verb",
+  "dialogue": [
+   [
+    "A",
+    "شلونك؟ شلون الدراسة؟",
+    "shlōnak? shlōn id-dirāsa?",
+    "How are you? How are your studies going?"
+   ],
+   [
+    "B",
+    "زين الحمد لله، بس وايد صعبة",
+    "zēn il-ḥamdu lillāh, bas wāyid ṣaʿba",
+    "Fine, thank God, but they're really hard."
+   ],
+   [
+    "A",
+    "ليش؟ شنو تخصصك؟",
+    "lēsh? shinu takhaṣṣuṣak?",
+    "Why? What's your major?"
+   ],
+   [
+    "B",
+    "هندسة. والمادة اللي عندي الحين صعبة",
+    "handasa. w il-māda illi ʿindi l-ḥīn ṣaʿba",
+    "Engineering. And the module I've got now is hard."
+   ],
+   [
+    "A",
+    "عندك امتحان هالأسبوع؟",
+    "ʿindak imtiḥān hal-usbūʿ?",
+    "Have you got an exam this week?"
+   ],
+   [
+    "B",
+    "هيه، الامتحان اللي يوم الأحد. بدرس لين الليل",
+    "hē, il-imtiḥān illi yōm il-aḥad. badris lēn il-lēl",
+    "Yes, the one on Sunday. I'll study until late at night."
+   ],
+   [
+    "A",
+    "إن شاء الله تنجح! وبعد الامتحان نطلع سوا",
+    "in shāʼ allāh tinjaḥ! w baʿd il-imtiḥān niṭlaʿ sawa",
+    "I hope you pass! And after the exam let's go out together."
+   ]
+  ],
+  "items": [
+   [
+    "الدراسة",
+    "id-dirāsa",
+    "studying, (my, your) studies",
+    "الدراسة",
+    ""
+   ],
+   [
+    "صعبة",
+    "ṣaʿba",
+    "hard, difficult (with a feminine noun)",
+    "صعبة",
+    "with a masculine noun: ṣaʿb (صعب)"
+   ],
+   [
+    "تخصصك",
+    "takhaṣṣuṣak",
+    "your major, your subject (at university) (to a man)",
+    "تخصصك",
+    "to a woman: takhaṣṣuṣich; Fahad's shinu is Kuwaiti for shu"
+   ],
+   [
+    "المادة",
+    "il-māda",
+    "the module, the (school) subject",
+    "المادة",
+    ""
+   ],
+   [
+    "يوم الأحد",
+    "yōm il-aḥad",
+    "Sunday, on Sunday",
+    "يوم الأحد",
+    ""
+   ],
+   [
+    "بدرس",
+    "badris",
+    "I'll study",
+    "سأدرس",
+    ""
+   ],
+   [
+    "إن شاء الله تنجح",
+    "in shāʼ allāh tinjaḥ",
+    "I hope you pass (to a man)",
+    "أتمنى أن تنجح",
+    "to a woman: in shāʼ allāh tinjaḥīn"
+   ]
+  ]
+ },
+ {
+  "id": "s2u048",
+  "stage": 2,
+  "title": "The manager we've got",
+  "goal": "Talk with Maryam about your internship: your job, the manager and the hours",
+  "tip": "Talking about work with illi: il-mudīr illi ʿindna 'the manager we've got', il-muwaẓẓafīn illi wiyyāna 'the people who work with us'. Endings make work words personal: shughli 'my job', mudīri 'my manager', mashrūʿich 'your project' (to a woman).",
+  "grammar": "illi in talk about work",
+  "dialogue": [
+   [
+    "A",
+    "هلا! كيف الشغل ويانا؟",
+    "hala! chēf ish-shughul wiyyāna?",
+    "Hi! How's work with us going?"
+   ],
+   [
+    "B",
+    "زين، شغلي وايد حلو. والمدير اللي عندنا طيب",
+    "zēn, shughli wāyid ḥilu. w il-mudīr illi ʿindna ṭayyib",
+    "Good, I really like my job. And the manager we've got is nice."
+   ],
+   [
+    "A",
+    "هيه، والموظفين اللي ويانا كلهم طيبين",
+    "hē, w il-muwaẓẓafīn illi wiyyāna killhum ṭayybīn",
+    "Yes, and the people who work with us are all nice."
+   ],
+   [
+    "B",
+    "بس الدوام اللي يبدا الساعة سبع بدري شوي!",
+    "bas id-dawām illi yibda s-sāʿa sabʿ badri shwayy!",
+    "But a working day that starts at seven is a bit early!"
+   ],
+   [
+    "A",
+    "صح. وأنا اليوم عندي اجتماع لين خمس",
+    "ṣaḥḥ. w ana l-yōm ʿindi ijtimāʿ lēn khams",
+    "True. And today I've got a meeting until five."
+   ],
+   [
+    "B",
+    "الاجتماع اللي عن مشروعج؟",
+    "il-ijtimāʿ illi ʿan mashrūʿich?",
+    "The one about your project?"
+   ],
+   [
+    "A",
+    "هيه. نشرب قهوة سوا بعد الدوام",
+    "hē. nishrab gahwa sawa baʿd id-dawām",
+    "Yes. Let's get a coffee together after work."
+   ]
+  ],
+  "items": [
+   [
+    "المدير",
+    "il-mudīr",
+    "the manager, the boss",
+    "المدير",
+    "my manager: mudīri (مديري)"
+   ],
+   [
+    "شغلي",
+    "shughli",
+    "my work, my job",
+    "عملي",
+    ""
+   ],
+   [
+    "الموظفين",
+    "il-muwaẓẓafīn",
+    "the staff, the employees",
+    "الموظفون",
+    "one: muwaẓẓaf (موظف); a woman: muwaẓẓafa (موظفة)"
+   ],
+   [
+    "يبدا",
+    "yibda",
+    "it starts, it begins (a masculine thing: the working day, the film)",
+    "يبدأ",
+    "a feminine thing: tibda (تبدا)"
+   ],
+   [
+    "المشروع",
+    "il-mashrūʿ",
+    "the project",
+    "المشروع",
+    "your project (to a woman): mashrūʿich (مشروعج)"
+   ],
+   [
+    "كيف الشغل؟",
+    "chēf ish-shughul?",
+    "how's work?",
+    "كيف العمل؟",
+    "also: shlōn ish-shughul?"
+   ]
+  ]
+ },
+ {
+  "id": "s2u049",
+  "stage": 2,
+  "title": "I'm the one who sent it",
+  "goal": "Tell Sēf about a mistake at work: what happened and who did it",
+  "tip": "After a pronoun or a question word, illi gives 'the one who': ana illi ṭarrashtah 'I'm the one who sent it', minu illi…? 'who is it that…?'. ish-shay illi is 'the thing that': ish-shay illi kān fīh 'what was in it'. illi ṣār is 'what happened'.",
+  "grammar": "ana illi, minu illi, ish-shay illi: 'the one who'",
+  "dialogue": [
+   [
+    "A",
+    "شو فيه؟ شو اللي صار اليوم؟",
+    "shu fīh? shu illi ṣār il-yōm?",
+    "What's up? What happened today?"
+   ],
+   [
+    "B",
+    "الإيميل اللي كان حق المدير، راح لكل اللي في الشركة!",
+    "il-īmēl illi kān ḥagg il-mudīr, rāḥ l-kill illi fi sh-sharika!",
+    "The email that was meant for the manager went to everyone in the company!"
+   ],
+   [
+    "A",
+    "لا! ومنو اللي طرشه؟",
+    "la! w minu illi ṭarrashah?",
+    "No! And who sent it?"
+   ],
+   [
+    "B",
+    "أنا اللي طرشته! ما دريت",
+    "ana illi ṭarrashtah! ma dirēt",
+    "I'm the one who sent it! I didn't realise."
+   ],
+   [
+    "A",
+    "والشي اللي كان فيه؟ مشكلة؟",
+    "w ish-shay illi kān fīh? mushkila?",
+    "And what was in it? Is it a problem?"
+   ],
+   [
+    "B",
+    "لا، والمدير قال: اللي صار صار",
+    "la, w il-mudīr gāl: illi ṣār ṣār",
+    "No, and the manager said: what's done is done."
+   ],
+   [
+    "A",
+    "الحمد لله! مديرك ريّال زين",
+    "il-ḥamdu lillāh! mudīrak rayyāl zēn",
+    "Thank God! Your manager's a good guy."
+   ]
+  ],
+  "items": [
+   [
+    "اللي صار",
+    "illi ṣār",
+    "what happened",
+    "ما حدث",
+    "illi ṣār ṣār: what's done is done"
+   ],
+   [
+    "كل اللي",
+    "kill illi",
+    "everyone who; everything that",
+    "كل من / كل ما",
+    ""
+   ],
+   [
+    "منو اللي…؟",
+    "minu illi…?",
+    "who (is it that)…?",
+    "من الذي…؟",
+    ""
+   ],
+   [
+    "أنا اللي",
+    "ana illi",
+    "I'm the one who, it was me who",
+    "أنا الذي",
+    "a woman says the same: ana illi"
+   ],
+   [
+    "الشي اللي",
+    "ish-shay illi",
+    "the thing that, what",
+    "الشيء الذي",
+    ""
+   ],
+   [
+    "ما دريت",
+    "ma dirēt",
+    "I didn't realise, I didn't know",
+    "لم أدرِ",
+    ""
+   ]
+  ]
+ }
+]

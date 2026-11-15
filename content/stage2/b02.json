@@ -1,0 +1,1133 @@
+[
+ {
+  "id": "s2u013",
+  "stage": 2,
+  "title": "Weekend plans with Sēf",
+  "goal": "Say what you'll do on Saturday and accept Sēf's invitation to the desert",
+  "tip": "For the future, put b- on the present verb: arūḥ → barūḥ 'I'll go', tsawwi → bitsawwi 'you'll do', akūn → bakūn 'I'll be', ayīb → bayīb 'I'll bring'. You know barūḥ already. When a time word shows the future, the b- can drop: bāchir arūḥ.",
+  "grammar": "future b-: I and you (barūḥ, bitsawwi)",
+  "dialogue": [
+   [
+    "A",
+    "سالم، شو بتسوي يوم السبت؟",
+    "Sālim, shu bitsawwi yōm is-sabt?",
+    "Salim, what are you doing on Saturday?"
+   ],
+   [
+    "B",
+    "ما أدري. يمكن بنام طول اليوم! وانت؟",
+    "ma adri. yimkin banām ṭūl il-yōm! w inta?",
+    "I don't know. Maybe I'll sleep all day! And you?"
+   ],
+   [
+    "A",
+    "أنا بروح البر ويا الشباب. بتيي؟",
+    "ana barūḥ il-barr wiyya sh-shabāb. bityī?",
+    "I'm going to the desert with the guys. Are you coming?"
+   ],
+   [
+    "B",
+    "أكيد! بتمر علي؟",
+    "akīd! bitmurr ʿalay?",
+    "Definitely! Will you pick me up?"
+   ],
+   [
+    "A",
+    "هيه، بمر عليك الساعة أربع",
+    "hē, bamurr ʿalēk is-sāʿa arbaʿ",
+    "Yes, I'll pick you up at four."
+   ],
+   [
+    "B",
+    "زين، بكون جاهز. وبييب الماي",
+    "zēn, bakūn jāhiz. w bayīb il-māy",
+    "Great, I'll be ready. And I'll bring the water."
+   ],
+   [
+    "A",
+    "حلو! وبيكون الجو حلو في البر",
+    "ḥilu! w biykūn il-jaww ḥilu fi l-barr",
+    "Nice! And the weather will be lovely in the desert."
+   ]
+  ],
+  "items": [
+   [
+    "شو بتسوي؟",
+    "shu bitsawwi?",
+    "what are you going to do? what are you doing (later)? (to a man)",
+    "ماذا ستفعل؟",
+    "to a woman: shu bitsawwīn? (شو بتسوين)"
+   ],
+   [
+    "بنام",
+    "banām",
+    "I'll sleep",
+    "سأنام",
+    ""
+   ],
+   [
+    "بتيي؟",
+    "bityī?",
+    "will you come? are you coming? (to a man)",
+    "هل ستأتي؟",
+    "to a woman: bityīn? (بتيين); you'll see written بتجي"
+   ],
+   [
+    "بتمر علي؟",
+    "bitmurr ʿalay?",
+    "will you pick me up? will you come by for me? (to a man)",
+    "هل ستمر علي؟",
+    "to a woman: bitmurrīn ʿalay?"
+   ],
+   [
+    "بمر عليك",
+    "bamurr ʿalēk",
+    "I'll pick you up, I'll come by for you (to a man)",
+    "سأمر عليك",
+    "to a woman: bamurr ʿalēch (بمر عليج)"
+   ],
+   [
+    "بكون",
+    "bakūn",
+    "I'll be",
+    "سأكون",
+    ""
+   ],
+   [
+    "جاهز",
+    "jāhiz",
+    "ready (a man)",
+    "جاهز",
+    "a woman: jāhza (جاهزة)"
+   ],
+   [
+    "بييب",
+    "bayīb",
+    "I'll bring",
+    "سأحضر",
+    "you'll see written بجيب"
+   ],
+   [
+    "بيكون",
+    "biykūn",
+    "it'll be; he'll be",
+    "سيكون",
+    "she'll be, you'll be: bitkūn (بتكون); il-jaww = the weather"
+   ]
+  ],
+  "culture": "In the cooler months, roughly November to March, many people in the UAE drive out to the desert (il-barr) at the weekend with friends or family: they sit on rugs round a fire, grill food, drink tea and chat late into the night. In summer it is far too hot for this."
+ },
+ {
+  "id": "s2u014",
+  "stage": 2,
+  "title": "Turning down a dinner",
+  "goal": "Tell Maryam you can't come to the office dinner, and promise you won't forget tomorrow's meeting",
+  "tip": "To say you won't do something, put ma before the b- verb: ma barūḥ 'I won't go', ma bagdar 'I won't be able to', ma bansa 'I won't forget', ma batʼakhkhar 'I won't be late'. You'll also hear ma rāḥ arūḥ, which is more Kuwaiti.",
+  "grammar": "negative future: ma + b- (ma barūḥ)",
+  "dialogue": [
+   [
+    "A",
+    "سالم، عندنا عشا يوم الخميس، كل المكتب. بتيي؟",
+    "Sālim, ʿindana ʿasha yōm il-khamīs, kill il-maktab. bityī?",
+    "Salim, we're having a dinner on Thursday, the whole office. Are you coming?"
+   ],
+   [
+    "B",
+    "آسف، ما بقدر. عندي امتحان يوم الجمعة",
+    "āsif, ma bagdar. ʿindi imtiḥān yōm il-jumʿa",
+    "Sorry, I can't make it. I've got an exam on Friday."
+   ],
+   [
+    "A",
+    "خسارة! وبعد الامتحان؟ بنروح السينما",
+    "khasāra! w baʿd il-imtiḥān? binrūḥ is-sīnama",
+    "What a shame! And after the exam? We're going to the cinema."
+   ],
+   [
+    "B",
+    "لا والله، ما بروح. برجع البيت وبنام!",
+    "la wallāh, ma barūḥ. barjaʿ il-bēt w banām!",
+    "No way, I'm not going. I'll go home and sleep!"
+   ],
+   [
+    "A",
+    "زين. بس باكر عندنا اجتماع الساعة ثمان. لا تنسى!",
+    "zēn. bas bāchir ʿindana ijtimāʿ is-sāʿa thamān. la tinsa!",
+    "OK. But tomorrow we've got a meeting at eight. Don't forget!"
+   ],
+   [
+    "B",
+    "لا تحاتين، ما بنسى وما بتأخر",
+    "la tḥātīn, ma bansa w ma batʼakhkhar",
+    "Don't worry, I won't forget and I won't be late."
+   ],
+   [
+    "A",
+    "زين! والمرة الياية بتيي ويانا",
+    "zēn! w il-marra l-yāya bityī wiyyāna",
+    "Good! And next time you're coming with us."
+   ]
+  ],
+  "items": [
+   [
+    "ما بقدر",
+    "ma bagdar",
+    "I won't be able to, I can't make it",
+    "لن أستطيع",
+    ""
+   ],
+   [
+    "ما بروح",
+    "ma barūḥ",
+    "I won't go, I'm not going",
+    "لن أذهب",
+    "Kuwait-leaning: ma rāḥ arūḥ (ما راح أروح)"
+   ],
+   [
+    "ما بنسى",
+    "ma bansa",
+    "I won't forget",
+    "لن أنسى",
+    ""
+   ],
+   [
+    "ما بتأخر",
+    "ma batʼakhkhar",
+    "I won't be late",
+    "لن أتأخر",
+    ""
+   ],
+   [
+    "برجع البيت",
+    "barjaʿ il-bēt",
+    "I'll go back home",
+    "سأعود إلى البيت",
+    ""
+   ],
+   [
+    "خسارة!",
+    "khasāra!",
+    "what a shame! too bad!",
+    "يا للخسارة!",
+    ""
+   ],
+   [
+    "يوم الخميس",
+    "yōm il-khamīs",
+    "on Thursday",
+    "يوم الخميس",
+    ""
+   ],
+   [
+    "عندنا",
+    "ʿindana",
+    "we have, we've got",
+    "عندنا / لدينا",
+    ""
+   ],
+   [
+    "المرة الياية",
+    "il-marra l-yāya",
+    "next time",
+    "المرة القادمة",
+    "you'll see written المرة الجاية"
+   ]
+  ]
+ },
+ {
+  "id": "s2u015",
+  "stage": 2,
+  "title": "Who's going? The desert trip",
+  "goal": "Plan the desert trip with Sēf: say what we'll do there and what the others will do",
+  "tip": "b- goes on every person: nrūḥ → binrūḥ 'we'll go', yrūḥ → biyrūḥ 'he'll go', trūḥ → bitrūḥ 'she'll go', yrūḥūn → biyrūḥūn 'they'll go'. biyṣīr means 'it'll happen, it'll get': biyṣīr bard 'it'll get cold'. With two verbs, one b- is often enough: binsōlif w nishrab chāy.",
+  "grammar": "future b-: we, he, she, they (binrūḥ, biyrūḥūn)",
+  "dialogue": [
+   [
+    "B",
+    "سيف، متى بنروح يوم السبت؟",
+    "Sēf, mita binrūḥ yōm is-sabt?",
+    "Sēf, what time are we going on Saturday?"
+   ],
+   [
+    "A",
+    "بنروح بعد العصر. الشباب بيروحون قبلنا",
+    "binrūḥ baʿd il-ʿaṣr. ish-shabāb biyrūḥūn gabilna",
+    "We'll go after the afternoon prayer. The guys will go before us."
+   ],
+   [
+    "B",
+    "زين. وشو بنسوي هناك؟",
+    "zēn. w shu binsawwi hnāk?",
+    "OK. And what will we do there?"
+   ],
+   [
+    "A",
+    "بنسولف ونشرب شاي. وبيصير برد في الليل",
+    "binsōlif w nishrab chāy. w biyṣīr bard fi l-lēl",
+    "We'll chat and drink tea. And it'll get cold at night."
+   ],
+   [
+    "B",
+    "والله؟ زين، بلبس جاكيت",
+    "wallāh? zēn, balbas jākēt",
+    "Really? OK, I'll wear a jacket."
+   ],
+   [
+    "A",
+    "وأمي بتسوي لنا عيش ودياي",
+    "w ummi bitsawwī-lna ʿēsh w diyāy",
+    "And my mum will make us rice and chicken."
+   ],
+   [
+    "B",
+    "ما شاء الله! بيكون يوم حلو",
+    "mā shāʼ allāh! biykūn yōm ḥilu",
+    "Wow! It's going to be a great day."
+   ]
+  ],
+  "items": [
+   [
+    "بنروح",
+    "binrūḥ",
+    "we'll go, we're going",
+    "سنذهب",
+    ""
+   ],
+   [
+    "بيروحون",
+    "biyrūḥūn",
+    "they'll go, they're going",
+    "سيذهبون",
+    "he'll go: biyrūḥ; she'll go: bitrūḥ"
+   ],
+   [
+    "قبلنا",
+    "gabilna",
+    "before us",
+    "قبلنا",
+    ""
+   ],
+   [
+    "بنسوي",
+    "binsawwi",
+    "we'll do, we'll make",
+    "سنفعل",
+    ""
+   ],
+   [
+    "بنسولف",
+    "binsōlif",
+    "we'll chat",
+    "سنتحدث",
+    "ysōlif = to chat; UAE also: yirmis (يرمس) 'to talk'"
+   ],
+   [
+    "بيصير",
+    "biyṣīr",
+    "it'll happen; it'll get, it'll turn",
+    "سيصير / سيحدث",
+    "biyṣīr bard = it'll get cold"
+   ],
+   [
+    "بلبس",
+    "balbas",
+    "I'll wear, I'll put on",
+    "سألبس",
+    ""
+   ],
+   [
+    "جاكيت",
+    "jākēt",
+    "jacket",
+    "سترة",
+    ""
+   ],
+   [
+    "بتسوي لنا",
+    "bitsawwī-lna",
+    "she'll make (for) us",
+    "ستعد لنا",
+    "you'll make us, said to a man, sounds the same"
+   ]
+  ]
+ },
+ {
+  "id": "s2u016",
+  "stage": 2,
+  "title": "A promise to Maryam",
+  "goal": "Ask Maryam about her day in Sharjah and promise to finish the file while she's out",
+  "tip": "Talking to a woman, the future keeps -īn: bitrūḥīn 'you'll go', bitsawwīn 'you'll do', bityīn 'you'll come'. To promise, use b- with the verb: bakhallṣah 'I'll finish it', bakhabbrich 'I'll let you know'. waʿd? 'promise?' gets the answer waʿd! 'I promise!'",
+  "grammar": "future b- to a woman: bitrūḥīn, bitsawwīn",
+  "dialogue": [
+   [
+    "B",
+    "مريم، بتروحين الشارقة باكر؟",
+    "Maryam, bitrūḥīn ish-Shārja bāchir?",
+    "Maryam, are you going to Sharjah tomorrow?"
+   ],
+   [
+    "A",
+    "هيه، عندي اجتماع هناك. بطلع من البيت الساعة سبع",
+    "hē, ʿindi ijtimāʿ hnāk. baṭlaʿ min il-bēt is-sāʿa sabʿ",
+    "Yes, I've got a meeting there. I'll leave home at seven."
+   ],
+   [
+    "B",
+    "زين. وشو بتسوين بعد الاجتماع؟",
+    "zēn. w shu bitsawwīn baʿd il-ijtimāʿ?",
+    "OK. And what will you do after the meeting?"
+   ],
+   [
+    "A",
+    "برجع المكتب. بس الملف لازم يخلص الصبح!",
+    "barjaʿ il-maktab. bas il-malaff lāzim yikhlaṣ iṣ-ṣubḥ!",
+    "I'll come back to the office. But the file has to be done in the morning!"
+   ],
+   [
+    "B",
+    "لا تحاتين، أنا بخلصه وبخبرج",
+    "la tḥātīn, ana bakhallṣah w bakhabbrich",
+    "Don't worry, I'll finish it and let you know."
+   ],
+   [
+    "A",
+    "وعد؟",
+    "waʿd?",
+    "Promise?"
+   ],
+   [
+    "B",
+    "وعد! وانتي متى بتيين المكتب؟",
+    "waʿd! w inti mita bityīn il-maktab?",
+    "I promise! And when will you come into the office?"
+   ]
+  ],
+  "items": [
+   [
+    "بتروحين",
+    "bitrūḥīn",
+    "you'll go, are you going? (to a woman)",
+    "ستذهبين",
+    "to a man: bitrūḥ"
+   ],
+   [
+    "بطلع",
+    "baṭlaʿ",
+    "I'll leave, I'll go out",
+    "سأخرج",
+    "baṭlaʿ min il-bēt = I'll leave home"
+   ],
+   [
+    "شو بتسوين؟",
+    "shu bitsawwīn?",
+    "what are you going to do? (to a woman)",
+    "ماذا ستفعلين؟",
+    "to a man: shu bitsawwi?"
+   ],
+   [
+    "بعد الاجتماع",
+    "baʿd il-ijtimāʿ",
+    "after the meeting",
+    "بعد الاجتماع",
+    ""
+   ],
+   [
+    "لازم يخلص",
+    "lāzim yikhlaṣ",
+    "it has to be finished, it must be done",
+    "يجب أن ينتهي",
+    "yikhlaṣ = it ends, it's done; don't confuse with ykhalliṣ 'he finishes (something)'"
+   ],
+   [
+    "بخلصه",
+    "bakhallṣah",
+    "I'll finish it",
+    "سأنهيه",
+    ""
+   ],
+   [
+    "بخبرج",
+    "bakhabbrich",
+    "I'll let you know, I'll tell you (to a woman)",
+    "سأخبرك",
+    "to a man: bakhabbrak (بخبرك)"
+   ],
+   [
+    "وعد",
+    "waʿd",
+    "a promise; I promise",
+    "وعد / أعدك",
+    "as a question: waʿd? = promise?"
+   ],
+   [
+    "بتيين؟",
+    "bityīn?",
+    "will you come? are you coming? (to a woman)",
+    "هل ستأتين؟",
+    "to a man: bityī?; you'll see written بتجين"
+   ]
+  ]
+ },
+ {
+  "id": "s2u017",
+  "stage": 2,
+  "title": "Checkpoint 2.1: a study day with the guys",
+  "goal": "Plan a library day with Sēf and his classmates: ask the group about tomorrow, offer coffee and promise to be on time",
+  "tip": "Talking to a group, present and future verbs end in -ūn: tsawwūn → bitsawwūn 'you'll do', la tḥātūn 'don't worry'. 'We' takes n-: binmurr 'we'll come by', ma bintrayyāk 'we won't wait for you'. 'With you all' is wiyyākum, 'for you all' -lkum.",
+  "grammar": "checkpoint 2.1: recycle s2u001–s2u016",
+  "dialogue": [
+   [
+    "B",
+    "هلا شباب! شو بتسوون باكر؟",
+    "hala shabāb! shu bitsawwūn bāchir?",
+    "Hi guys! What are you doing tomorrow?"
+   ],
+   [
+    "A",
+    "بنروح المكتبة وندرس طول اليوم. بتيي؟",
+    "binrūḥ il-maktaba w nidris ṭūl il-yōm. bityī?",
+    "We're going to the library to study all day. Are you coming?"
+   ],
+   [
+    "B",
+    "أكيد! بس سيارتي مب زينة. أروح وياكم؟",
+    "akīd! bas sayyārti mub zēna. arūḥ wiyyākum?",
+    "Definitely! But my car's not working. Can I go with you?"
+   ],
+   [
+    "A",
+    "هيه، بنمر عليك الساعة تسع",
+    "hē, binmurr ʿalēk is-sāʿa tisʿ",
+    "Yes, we'll pick you up at nine."
+   ],
+   [
+    "B",
+    "زين! وبييب لكم قهوة",
+    "zēn! w bayīb-lkum gahwa",
+    "Great! And I'll bring you all coffee."
+   ],
+   [
+    "A",
+    "حلو! بس لا تتأخر، ما بنترياك!",
+    "ḥilu! bas la titʼakhkhar, ma bintrayyāk!",
+    "Nice! But don't be late, we won't wait for you!"
+   ],
+   [
+    "B",
+    "لا تحاتون، بكون جاهز قبلكم!",
+    "la tḥātūn, bakūn jāhiz gabilkum!",
+    "Don't worry, I'll be ready before you!"
+   ]
+  ],
+  "items": [
+   [
+    "شو بتسوون؟",
+    "shu bitsawwūn?",
+    "what are you going to do? (to a group)",
+    "ماذا ستفعلون؟",
+    "to one man: shu bitsawwi?; to one woman: shu bitsawwīn?"
+   ],
+   [
+    "وياكم",
+    "wiyyākum",
+    "with you (a group)",
+    "معكم",
+    "with you (one man): wiyyāk; with us: wiyyāna"
+   ],
+   [
+    "بنمر عليك",
+    "binmurr ʿalēk",
+    "we'll pick you up, we'll come by for you (to a man)",
+    "سنمر عليك",
+    "to a woman: binmurr ʿalēch"
+   ],
+   [
+    "بييب لكم",
+    "bayīb-lkum",
+    "I'll bring you (a group)",
+    "سأحضر لكم",
+    "to one man: bayīb-lak; to one woman: bayīb-lich"
+   ],
+   [
+    "ما بنترياك",
+    "ma bintrayyāk",
+    "we won't wait for you (to a man)",
+    "لن ننتظرك",
+    "to a woman: ma bintrayyāch"
+   ],
+   [
+    "لا تحاتون",
+    "la tḥātūn",
+    "don't worry (to a group)",
+    "لا تقلقوا",
+    "to one man: la tḥāti; to one woman: la tḥātīn"
+   ]
+  ]
+ },
+ {
+  "id": "s2u018",
+  "stage": 2,
+  "title": "What are you up to? A call from Sēf",
+  "goal": "Answer Sēf's call, say what you're doing right now and end the call when someone else rings",
+  "tip": "For 'doing right now', put gāʿid before the present verb: gāʿid adhākir 'I'm revising', gāʿid tsūg? 'are you driving?', gāʿid ashrab 'I'm drinking'. On its own gāʿid means 'sitting'. It agrees with the person: a woman says gāʿda (next lesson).",
+  "grammar": "progressive: gāʿid + present verb (a man)",
+  "dialogue": [
+   [
+    "A",
+    "ألو، هلا سالم! شو قاعد تسوي؟",
+    "alō, hala Sālim! shu gāʿid tsawwi?",
+    "Hello, hi Salim! What are you up to?"
+   ],
+   [
+    "B",
+    "هلا فيك! قاعد أذاكر حق الامتحان",
+    "hala fīk! gāʿid adhākir ḥagg il-imtiḥān",
+    "Hi! I'm revising for the exam."
+   ],
+   [
+    "A",
+    "الحين؟ يا ريّال، الساعة عشر!",
+    "il-ḥīn? yā rayyāl, is-sāʿa ʿashr!",
+    "Now? Man, it's ten o'clock!"
+   ],
+   [
+    "B",
+    "هيه، الامتحان باكر. وانت؟ قاعد تسوق؟",
+    "hē, il-imtiḥān bāchir. w inta? gāʿid tsūg?",
+    "Yes, the exam's tomorrow. And you? Are you driving?"
+   ],
+   [
+    "A",
+    "لا، قاعد أشرب كرك ويا الشباب. تبي تيي؟",
+    "la, gāʿid ashrab karak wiyya sh-shabāb. tabi tyī?",
+    "No, I'm having a karak with the guys. Do you want to come?"
+   ],
+   [
+    "B",
+    "ما أقدر، قاعد أذاكر! لحظة، أحد يتصل. بكلمك بعدين",
+    "ma agdar, gāʿid adhākir! laḥẓa, aḥad yittaṣil. bakallmak baʿdēn",
+    "I can't, I'm revising! Hang on, someone's calling. I'll call you later."
+   ],
+   [
+    "A",
+    "زين، يلا باي!",
+    "zēn, yalla bāy!",
+    "OK, bye then!"
+   ]
+  ],
+  "items": [
+   [
+    "ألو",
+    "alō",
+    "hello (on the phone)",
+    "ألو",
+    ""
+   ],
+   [
+    "شو قاعد تسوي؟",
+    "shu gāʿid tsawwi?",
+    "what are you doing (right now)? (to a man)",
+    "ماذا تفعل الآن؟",
+    "to a woman: shu gāʿda tsawwīn?"
+   ],
+   [
+    "قاعد",
+    "gāʿid",
+    "am / is …-ing, in the middle of (a man; before a present verb)",
+    "",
+    "a woman: gāʿda; a group: gāʿdīn; UAE also: yālis (يالس); alone it means 'sitting'"
+   ],
+   [
+    "قاعد أذاكر",
+    "gāʿid adhākir",
+    "I'm revising, I'm studying (for an exam) (said by a man)",
+    "أذاكر الآن",
+    "a woman says: gāʿda adhākir"
+   ],
+   [
+    "قاعد تسوق؟",
+    "gāʿid tsūg?",
+    "are you driving? (to a man)",
+    "هل تقود الآن؟",
+    "to a woman: gāʿda tsūgīn?"
+   ],
+   [
+    "حق الامتحان",
+    "ḥagg il-imtiḥān",
+    "for the exam",
+    "للامتحان",
+    "ḥagg = for: ḥagg il-mudīr = for the manager"
+   ],
+   [
+    "لحظة",
+    "laḥẓa",
+    "hang on, one moment",
+    "لحظة",
+    "laḥẓa shwayy = just a sec"
+   ],
+   [
+    "أحد يتصل",
+    "aḥad yittaṣil",
+    "someone's calling",
+    "أحد يتصل",
+    ""
+   ],
+   [
+    "بكلمك بعدين",
+    "bakallmak baʿdēn",
+    "I'll call you later, I'll talk to you later (to a man)",
+    "سأكلمك لاحقًا",
+    "to a woman: bakallmich baʿdēn"
+   ]
+  ]
+ },
+ {
+  "id": "s2u019",
+  "stage": 2,
+  "title": "Calling Maryam in the car",
+  "goal": "Call Maryam, find out what she's doing and ask her one quick question about the meeting",
+  "tip": "With a woman, gāʿid becomes gāʿda and the 'you' verb keeps -īn: shu gāʿda tsawwīn? 'what are you doing?', gāʿda tsūgīn? 'are you driving?'. A woman about herself: gāʿda asūg 'I'm driving'. About a man: il-mudīr gāʿid ytrayyāk 'the manager is waiting for you'.",
+  "grammar": "progressive to and about a woman: gāʿda + -īn",
+  "dialogue": [
+   [
+    "B",
+    "ألو مريم، شحالج؟ عندج وقت؟",
+    "alō Maryam, shḥālich? ʿindich wagt?",
+    "Hello Maryam, how are you? Have you got a moment?"
+   ],
+   [
+    "A",
+    "بخير الله يسلمك. هيه، تفضل",
+    "b-khēr, allāh ysallmak. hē, tfaẓẓal",
+    "Fine, thank you. Yes, go ahead."
+   ],
+   [
+    "B",
+    "شو قاعدة تسوين؟ انتي في السيارة؟",
+    "shu gāʿda tsawwīn? inti fi s-sayyāra?",
+    "What are you doing? Are you in the car?"
+   ],
+   [
+    "A",
+    "هيه، قاعدة أسوق، رايحة المكتب",
+    "hē, gāʿda asūg, rāyḥa l-maktab",
+    "Yes, I'm driving, on my way to the office."
+   ],
+   [
+    "B",
+    "زين، سؤال واحد بس: الاجتماع الساعة كم؟",
+    "zēn, suʼāl wāḥid bas: il-ijtimāʿ is-sāʿa cham?",
+    "OK, just one question: what time's the meeting?"
+   ],
+   [
+    "A",
+    "الساعة عشر. والمدير قاعد يترياك!",
+    "is-sāʿa ʿashr. w il-mudīr gāʿid ytrayyāk!",
+    "At ten. And the manager's waiting for you!"
+   ],
+   [
+    "B",
+    "أنا ياي! وانتي لا تسوقين بسرعة",
+    "ana yāy! w inti la tsūgīn b-surʿa",
+    "I'm on my way! And don't you drive fast."
+   ]
+  ],
+  "items": [
+   [
+    "قاعدة",
+    "gāʿda",
+    "am / is …-ing (a woman; before a present verb)",
+    "",
+    "a man: gāʿid; alone it means 'sitting' (a woman)"
+   ],
+   [
+    "شو قاعدة تسوين؟",
+    "shu gāʿda tsawwīn?",
+    "what are you doing (right now)? (to a woman)",
+    "ماذا تفعلين الآن؟",
+    "to a man: shu gāʿid tsawwi?"
+   ],
+   [
+    "عندج وقت؟",
+    "ʿindich wagt?",
+    "have you got a moment? are you free? (to a woman)",
+    "هل لديك وقت؟",
+    "to a man: ʿindak wagt?"
+   ],
+   [
+    "في السيارة",
+    "fi s-sayyāra",
+    "in the car",
+    "في السيارة",
+    ""
+   ],
+   [
+    "قاعد أسوق",
+    "gāʿid asūg",
+    "I'm driving (said by a man)",
+    "أقود الآن",
+    "a woman says: gāʿda asūg"
+   ],
+   [
+    "سؤال واحد",
+    "suʼāl wāḥid",
+    "one question",
+    "سؤال واحد",
+    "suʼāl wāḥid bas = just one question"
+   ],
+   [
+    "يترياك",
+    "ytrayyāk",
+    "he's waiting for you (to a man)",
+    "ينتظرك",
+    "to a woman: ytrayyāch; Kuwait: yinṭirk (ينطرك)"
+   ],
+   [
+    "لا تسوقين بسرعة",
+    "la tsūgīn b-surʿa",
+    "don't drive fast (to a woman)",
+    "لا تقودي بسرعة",
+    "to a man: la tsūg b-surʿa"
+   ]
+  ]
+ },
+ {
+  "id": "s2u020",
+  "stage": 2,
+  "title": "Watching the match at Sēf's",
+  "goal": "Call Sēf and his friends, find out what they're all doing and say you'll join them",
+  "tip": "For we, they or a group, gāʿid becomes gāʿdīn: gāʿdīn nshūf 'we're watching', shu gāʿdīn tsawwūn? 'what are you all doing?'. For one person it stays gāʿid or gāʿda: minu gāʿid yilʿab? 'who's playing?', ummi gāʿda tsawwi ʿasha 'my mum's making dinner'.",
+  "grammar": "progressive with we, they and a group: gāʿdīn",
+  "dialogue": [
+   [
+    "B",
+    "ألو سيف! انتو وين؟ شو قاعدين تسوون؟",
+    "alō Sēf! intu wēn? shu gāʿdīn tsawwūn?",
+    "Hello Sēf! Where are you guys? What are you all doing?"
+   ],
+   [
+    "A",
+    "نحن في البيت، قاعدين نشوف المباراة",
+    "niḥin fi l-bēt, gāʿdīn nshūf il-mubārā",
+    "We're at home, watching the match."
+   ],
+   [
+    "B",
+    "زين! منو قاعد يلعب؟",
+    "zēn! minu gāʿid yilʿab?",
+    "Nice! Who's playing?"
+   ],
+   [
+    "A",
+    "الإمارات! تعال، الشباب كلهم هني",
+    "il-Imārāt! taʿāl, ish-shabāb killhum hni",
+    "The UAE! Come over, all the guys are here."
+   ],
+   [
+    "B",
+    "زين، ياي الحين. تبون شي؟",
+    "zēn, yāy il-ḥīn. tabūn shay?",
+    "OK, coming now. Do you want anything?"
+   ],
+   [
+    "A",
+    "لا، أمي قاعدة تسوي لنا عشا",
+    "la, ummi gāʿda tsawwī-lna ʿasha",
+    "No, my mum's making us dinner."
+   ],
+   [
+    "B",
+    "حلو! يلا، عشر دقايق وأنا عندكم",
+    "ḥilu! yalla, ʿashr dagāyig w ana ʿindakum",
+    "Great! OK, I'll be with you in ten minutes."
+   ]
+  ],
+  "items": [
+   [
+    "قاعدين",
+    "gāʿdīn",
+    "are …-ing (we, they, a group; before a present verb)",
+    "",
+    "one man: gāʿid; one woman: gāʿda; alone it means 'sitting'"
+   ],
+   [
+    "شو قاعدين تسوون؟",
+    "shu gāʿdīn tsawwūn?",
+    "what are you doing (right now)? (to a group)",
+    "ماذا تفعلون الآن؟",
+    "to one man: shu gāʿid tsawwi?; to one woman: shu gāʿda tsawwīn?"
+   ],
+   [
+    "قاعدين نشوف",
+    "gāʿdīn nshūf",
+    "we're watching",
+    "نشاهد الآن",
+    ""
+   ],
+   [
+    "المباراة",
+    "il-mubārā",
+    "the match",
+    "المباراة",
+    ""
+   ],
+   [
+    "منو قاعد يلعب؟",
+    "minu gāʿid yilʿab?",
+    "who's playing?",
+    "من يلعب؟",
+    ""
+   ],
+   [
+    "الشباب كلهم",
+    "ish-shabāb killhum",
+    "all the guys",
+    "الشباب كلهم",
+    ""
+   ],
+   [
+    "عشر دقايق",
+    "ʿashr dagāyig",
+    "ten minutes",
+    "عشر دقائق",
+    "one minute: dagīga"
+   ],
+   [
+    "عندكم",
+    "ʿindakum",
+    "at your place, with you (a group); you have (a group)",
+    "عندكم / لديكم",
+    "to one man: ʿindak; to one woman: ʿindich"
+   ]
+  ],
+  "culture": "Big football matches, above all the national team's, are often watched together: friends gather at someone's house or majlis, the family brings food and tea, and the room reacts loudly to every chance. Going over to join is normal; you don't need a formal invitation from a close friend."
+ },
+ {
+  "id": "s2u021",
+  "stage": 2,
+  "title": "A bad line on the metro",
+  "goal": "Deal with a bad phone line: say you can't hear, call back, and say a phone isn't working",
+  "tip": "To say something isn't happening right now, put mub before gāʿid: mub gāʿid asmaʿak 'I can't hear you (right now)', tilifōnha mub gāʿid yishtaghil 'her phone isn't working'. Kuwaitis say mū gāʿid. For a woman: mub gāʿda.",
+  "grammar": "negative progressive: mub gāʿid + verb",
+  "dialogue": [
+   [
+    "A",
+    "ألو؟ سالم؟",
+    "alō? Sālim?",
+    "Hello? Salim?"
+   ],
+   [
+    "B",
+    "هلا سيف! تسمعني؟ أنا في المترو",
+    "hala Sēf! tismaʿni? ana fi l-mitro",
+    "Hi Sēf! Can you hear me? I'm on the metro."
+   ],
+   [
+    "A",
+    "الصوت مب واضح. مب قاعد أسمعك زين",
+    "iṣ-ṣōt mub wāẓiḥ. mub gāʿid asmaʿak zēn",
+    "The sound isn't clear. I can't hear you properly."
+   ],
+   [
+    "B",
+    "زين، بتصل فيك بعد دقيقة",
+    "zēn, battaṣil fīk baʿd dagīga",
+    "OK, I'll call you back in a minute."
+   ],
+   [
+    "A",
+    "هلا! الحين أسمعك. الشبكة في المترو مب زينة",
+    "hala! il-ḥīn asmaʿak. ish-shabaka fi l-mitro mub zēna",
+    "Hi! I can hear you now. The signal on the metro is bad."
+   ],
+   [
+    "B",
+    "اتصلت في مريم، بس تلفونها مب قاعد يشتغل",
+    "ittaṣalt fi Maryam, bas tilifōnha mub gāʿid yishtaghil",
+    "I called Maryam, but her phone isn't working."
+   ],
+   [
+    "A",
+    "يمكن قاعدة تسوق. بكلمها أنا بعدين",
+    "yimkin gāʿda tsūg. bakallimha ana baʿdēn",
+    "Maybe she's driving. I'll call her later."
+   ]
+  ],
+  "items": [
+   [
+    "تسمعني؟",
+    "tismaʿni?",
+    "can you hear me? (to a man)",
+    "هل تسمعني؟",
+    "to a woman: tismaʿīni? (تسمعيني)"
+   ],
+   [
+    "الصوت",
+    "iṣ-ṣōt",
+    "the sound; the voice",
+    "الصوت",
+    ""
+   ],
+   [
+    "مب واضح",
+    "mub wāẓiḥ",
+    "not clear",
+    "غير واضح",
+    "clear: wāẓiḥ"
+   ],
+   [
+    "مب قاعد أسمعك",
+    "mub gāʿid asmaʿak",
+    "I can't hear you (right now) (said by a man, to a man)",
+    "لا أسمعك",
+    "a woman says: mub gāʿda asmaʿak; to a woman: asmaʿich; Kuwait: mū gāʿid"
+   ],
+   [
+    "بتصل فيك",
+    "battaṣil fīk",
+    "I'll call you (to a man)",
+    "سأتصل بك",
+    "to a woman: battaṣil fīch (بتصل فيج)"
+   ],
+   [
+    "بعد دقيقة",
+    "baʿd dagīga",
+    "in a minute",
+    "بعد دقيقة",
+    ""
+   ],
+   [
+    "الشبكة",
+    "ish-shabaka",
+    "the (phone) signal, the network",
+    "الشبكة",
+    ""
+   ],
+   [
+    "مب قاعد يشتغل",
+    "mub gāʿid yishtaghil",
+    "it isn't working (right now)",
+    "لا يعمل",
+    "about a feminine noun: mub gāʿda tishtaghil"
+   ],
+   [
+    "بكلمها",
+    "bakallimha",
+    "I'll call her, I'll talk to her",
+    "سأكلمها",
+    "him: bakallmah"
+   ]
+  ]
+ },
+ {
+  "id": "s2u022",
+  "stage": 2,
+  "title": "Sēf's mum answers the phone",
+  "goal": "Call Sēf's house, speak politely to Umm Sēf and leave a message for Sēf",
+  "tip": "gāʿid agrees with whoever is doing it: Sēf gāʿid yṣalli 'Sēf is praying', ana gāʿda asawwi l-ghada (a woman) 'I'm making lunch'. In the UAE you'll also hear yālis: yālis yṣalli. il-muhimm 'anyway, the main thing' moves a talk on to your point.",
+  "grammar": "progressive for he and she: gāʿid yṣalli, gāʿda asawwi",
+  "dialogue": [
+   [
+    "B",
+    "السلام عليكم. أم سيف؟ أنا سالم",
+    "as-salāmu ʿalaykum. Umm Sēf? ana Sālim",
+    "Hello. Umm Sēf? It's Salim."
+   ],
+   [
+    "A",
+    "وعليكم السلام. هلا يا ولدي، شحالك؟",
+    "wa ʿalaykum is-salām. hala yā wildi, shḥālak?",
+    "Hello. Hi, son, how are you?"
+   ],
+   [
+    "B",
+    "بخير الله يسلمج. المهم، سيف موجود؟",
+    "b-khēr, allāh ysallmich. il-muhimm, Sēf mawjūd?",
+    "Fine, thank you. Is Sēf in, by the way?"
+   ],
+   [
+    "A",
+    "هيه، بس قاعد يصلي. وأنا قاعدة أسوي الغدا",
+    "hē, bas gāʿid yṣalli. w ana gāʿda asawwi l-ghada",
+    "Yes, but he's praying. And I'm making lunch."
+   ],
+   [
+    "B",
+    "ما بطول عليج. قولي له يتصل فيني، الله يخليج",
+    "ma baṭawwil ʿalēch. gūlī-lah yittaṣil fīni, allāh ykhallīch",
+    "I won't keep you. Please tell him to call me."
+   ],
+   [
+    "A",
+    "إن شاء الله، بقول له. في أمان الله",
+    "in shāʼ allāh, bagūl-lah. fī amān illāh",
+    "Of course, I'll tell him. Goodbye."
+   ],
+   [
+    "B",
+    "مشكورة. مع السلامة",
+    "mashkūra. maʿa s-salāma",
+    "Thank you. Goodbye."
+   ]
+  ],
+  "items": [
+   [
+    "المهم",
+    "il-muhimm",
+    "anyway; the main thing (to move on to your point)",
+    "المهم / على أي حال",
+    ""
+   ],
+   [
+    "موجود؟",
+    "mawjūd?",
+    "is he there? is he in?",
+    "هل هو موجود؟",
+    "about a woman: mawjūda?"
+   ],
+   [
+    "قاعد يصلي",
+    "gāʿid yṣalli",
+    "he's praying",
+    "يصلي الآن",
+    "she's praying: gāʿda tṣalli; UAE also: yālis yṣalli"
+   ],
+   [
+    "قاعدة أسوي الغدا",
+    "gāʿda asawwi l-ghada",
+    "I'm making lunch (said by a woman)",
+    "أعد الغداء الآن",
+    "a man says: gāʿid asawwi l-ghada"
+   ],
+   [
+    "ما بطول عليج",
+    "ma baṭawwil ʿalēch",
+    "I won't keep you long (to a woman)",
+    "لن أطيل عليك",
+    "to a man: ma baṭawwil ʿalēk"
+   ],
+   [
+    "قولي له",
+    "gūlī-lah",
+    "tell him (to a woman)",
+    "قولي له",
+    "to a man: gūl-lah; you'll see written قوليله"
+   ],
+   [
+    "يتصل فيني",
+    "yittaṣil fīni",
+    "to call me (he calls me)",
+    "يتصل بي",
+    ""
+   ],
+   [
+    "بقول له",
+    "bagūl-lah",
+    "I'll tell him",
+    "سأقول له",
+    "you'll see written بقوله"
+   ]
+  ],
+  "culture": "When a friend's mother or sister answers the phone at home, keep it short and respectful: greet with as-salāmu ʿalaykum, ask after her and the family in a word, ask for your friend and leave a message. Long chatting with a friend's female relatives is unusual for a young man."
+ }
+]

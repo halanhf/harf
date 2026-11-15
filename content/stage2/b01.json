@@ -1,0 +1,1361 @@
+[
+ {
+  "id": "s2u001",
+  "stage": 2,
+  "title": "What do you do every day?",
+  "goal": "Tell Sēf about your day: when you study, work, get home and play football.",
+  "tip": "The present says what you do regularly. 'I' starts with a-, 'you' (to a man) with ti-, and questions need no 'do': adris (I study), tidris? (do you study?); arjaʿ (I get back), tirjaʿ? Add kill yōm (every day) or dōm (always): kill yōm alʿab kūra.",
+  "grammar": "Present tense I: I (a-) and you to a man (ti-); habitual meaning",
+  "dialogue": [
+   [
+    "A",
+    "شو تسوي كل يوم؟",
+    "shu tsawwi kill yōm?",
+    "What do you do every day?"
+   ],
+   [
+    "B",
+    "الصبح أدرس، والعصر أشتغل",
+    "iṣ-ṣubḥ adris, w il-ʿaṣr ashtaghil",
+    "In the morning I study, and in the afternoon I work."
+   ],
+   [
+    "A",
+    "ومتى ترجع البيت؟",
+    "w mita tirjaʿ il-bēt?",
+    "And when do you get home?"
+   ],
+   [
+    "B",
+    "أرجع بالمترو بعد الدوام، وأطبخ عشا",
+    "arjaʿ bil-mitro baʿd id-dawām, w aṭbakh ʿasha",
+    "I get back on the metro after work and cook dinner."
+   ],
+   [
+    "A",
+    "وما تلعب كورة؟",
+    "w ma tilʿab kūra?",
+    "And don't you play football?"
+   ],
+   [
+    "B",
+    "ألعب، بس مب كل يوم",
+    "alʿab, bas mub kill yōm",
+    "I do, but not every day."
+   ],
+   [
+    "A",
+    "أنا دوم ألعب يوم الجمعة، قريب منك. تعال!",
+    "ana dōm alʿab yōm il-jumʿa, garīb minnak. taʿāl!",
+    "I always play on Fridays, near you. Come along!"
+   ]
+  ],
+  "items": [
+   [
+    "كل يوم",
+    "kill yōm",
+    "every day",
+    "كل يوم",
+    ""
+   ],
+   [
+    "دوم",
+    "dōm",
+    "always, all the time",
+    "دائمًا",
+    "goes before the verb: dōm alʿab = I always play"
+   ],
+   [
+    "ترجع",
+    "tirjaʿ",
+    "you go back, you get back (to a man)",
+    "ترجع",
+    "to a woman: tirjaʿīn (ترجعين)"
+   ],
+   [
+    "أرجع",
+    "arjaʿ",
+    "I go back, I get back",
+    "أرجع / أعود",
+    "arjaʿ il-bēt = I get home"
+   ],
+   [
+    "بعد الدوام",
+    "baʿd id-dawām",
+    "after work, after hours",
+    "بعد الدوام",
+    ""
+   ],
+   [
+    "أطبخ",
+    "aṭbakh",
+    "I cook",
+    "أطبخ",
+    ""
+   ],
+   [
+    "ألعب",
+    "alʿab",
+    "I play",
+    "ألعب",
+    ""
+   ],
+   [
+    "تلعب؟",
+    "tilʿab?",
+    "do you play? (to a man)",
+    "هل تلعب؟",
+    "to a woman: tilʿabīn? (تلعبين؟)"
+   ],
+   [
+    "كورة",
+    "kūra",
+    "football; a ball",
+    "كرة القدم / كرة",
+    "nilʿab kūra = we play football"
+   ]
+  ],
+  "culture": "Football is the most popular sport in the UAE. In the hot months friends often play in the evening, after sunset, when it is cooler."
+ },
+ {
+  "id": "s2u002",
+  "stage": 2,
+  "title": "What are you studying, Maryam?",
+  "goal": "Ask Maryam when she leaves work, what she studies and where.",
+  "tip": "To a woman, the 'you' verb adds -īn: tidris → tidrisīn, tiktib → tiktibīn, tiṭlaʿ → tiṭlaʿīn. So: Maryam, shu tidrisīn? (what are you studying?). 'Do you know?' is tadri? to a man and tadrīn? to a woman; tadrīn shu? means 'you know what?'",
+  "grammar": "Present tense I: you to a woman: ti- + -īn (tidrisīn, tiṭlaʿīn)",
+  "dialogue": [
+   [
+    "B",
+    "مريم، تطلعين من الدوام الساعة كم؟",
+    "Maryam, tiṭlaʿīn min id-dawām is-sāʿa cham?",
+    "Maryam, what time do you leave work?"
+   ],
+   [
+    "A",
+    "الساعة ثلاث. وبعد الدوام أدرس",
+    "is-sāʿa thalāth. w baʿd id-dawām adris",
+    "At three. And after work I study."
+   ],
+   [
+    "B",
+    "والله؟ شو تدرسين؟",
+    "wallāh? shu tidrisīn?",
+    "Really? What are you studying?"
+   ],
+   [
+    "A",
+    "ماجستير. وأكتب بحث الحين!",
+    "mājistēr. w aktib baḥth il-ḥīn!",
+    "A master's. And I'm writing a dissertation now!"
+   ],
+   [
+    "B",
+    "وين تكتبين؟ في البيت؟",
+    "wēn tiktibīn? fi l-bēt?",
+    "Where do you write? At home?"
+   ],
+   [
+    "A",
+    "لا، في المكتبة. البيت زحمة!",
+    "la, fi l-maktaba. il-bēt zaḥma!",
+    "No, in the library. Home's too busy!"
+   ],
+   [
+    "B",
+    "تدرين شو؟ أنا بعد أدرس هناك كل يوم",
+    "tadrīn shu? ana baʿad adris hnāk kill yōm",
+    "You know what? I study there every day too."
+   ]
+  ],
+  "items": [
+   [
+    "تطلعين",
+    "tiṭlaʿīn",
+    "you go out, you leave (to a woman)",
+    "تخرجين",
+    "to a man: tiṭlaʿ (تطلع); tiṭlaʿīn min id-dawām = you leave work"
+   ],
+   [
+    "تدرسين",
+    "tidrisīn",
+    "you study (to a woman)",
+    "تدرسين",
+    "to a man: tidris (تدرس)"
+   ],
+   [
+    "ماجستير",
+    "mājistēr",
+    "a master's degree",
+    "ماجستير",
+    "you'll also hear the English 'master' (ماستر)"
+   ],
+   [
+    "أكتب",
+    "aktib",
+    "I write",
+    "أكتب",
+    ""
+   ],
+   [
+    "بحث",
+    "baḥth",
+    "a research paper, a dissertation",
+    "بحث",
+    ""
+   ],
+   [
+    "تكتبين",
+    "tiktibīn",
+    "you write (to a woman)",
+    "تكتبين",
+    "to a man: tiktib (تكتب)"
+   ],
+   [
+    "المكتبة",
+    "il-maktaba",
+    "the library; also a bookshop",
+    "المكتبة",
+    ""
+   ],
+   [
+    "تدرين؟",
+    "tadrīn?",
+    "do you know? (to a woman)",
+    "هل تعرفين؟",
+    "to a man: tadri? (تدري؟); tadrīn shu? = you know what?"
+   ]
+  ]
+ },
+ {
+  "id": "s2u003",
+  "stage": 2,
+  "title": "My brother studies medicine",
+  "goal": "Hear Sēf talk about his sister's job and his brother's studies.",
+  "tip": "'He' starts with yi- and 'she' with ti-: yidris (he studies), tidris (she studies). So 'she works' and 'you (m.) work' sound the same, tishtaghil, and the context tells you which: ukhti tishtaghil wiyya Maryam. Negative: ma + verb, ma yitʿab (he doesn't get tired).",
+  "grammar": "Present tense I: he (yi-) and she (ti-)",
+  "dialogue": [
+   [
+    "A",
+    "تدري إن أختي تشتغل ويا مريم؟",
+    "tadri inn ukhti tishtaghil wiyya Maryam?",
+    "Did you know my sister works with Maryam?"
+   ],
+   [
+    "B",
+    "لا والله! وأخوك؟ يشتغل بعد؟",
+    "la wallāh! w akhūk? yishtaghil baʿad?",
+    "No way! And your brother? Does he work too?"
+   ],
+   [
+    "A",
+    "لا، يدرس طب، ودوم في المكتبة",
+    "la, yidris ṭibb, w dōm fi l-maktaba",
+    "No, he studies medicine, and he's always in the library."
+   ],
+   [
+    "B",
+    "طب؟ يعني يدرس ليل ونهار!",
+    "ṭibb? yaʿni yidris lēl w nahār!",
+    "Medicine? So he studies day and night!"
+   ],
+   [
+    "A",
+    "هيه، ويسهر كل ليلة",
+    "hē, w yis-har kill lēla",
+    "Yes, and he stays up late every night."
+   ],
+   [
+    "B",
+    "ما يتعب؟",
+    "ma yitʿab?",
+    "Doesn't he get tired?"
+   ],
+   [
+    "A",
+    "يتعب، بس يحب الطب وايد",
+    "yitʿab, bas yḥibb iṭ-ṭibb wāyid",
+    "He does, but he really loves medicine."
+   ]
+  ],
+  "items": [
+   [
+    "تدري؟",
+    "tadri?",
+    "do you know? did you know? (to a man)",
+    "هل تعرف؟",
+    "to a woman: tadrīn? (تدرين؟); tadri inn … = did you know that …"
+   ],
+   [
+    "يشتغل",
+    "yishtaghil",
+    "he works",
+    "يعمل",
+    "she works: tishtaghil (تشتغل)"
+   ],
+   [
+    "يدرس",
+    "yidris",
+    "he studies",
+    "يدرس",
+    "she studies: tidris (تدرس)"
+   ],
+   [
+    "طب",
+    "ṭibb",
+    "medicine (the subject)",
+    "طب",
+    "yidris ṭibb = he studies medicine"
+   ],
+   [
+    "ليل ونهار",
+    "lēl w nahār",
+    "day and night, all the time",
+    "ليلًا ونهارًا",
+    ""
+   ],
+   [
+    "يسهر",
+    "yis-har",
+    "he stays up late",
+    "يسهر",
+    "I stay up late: as-har (أسهر)"
+   ],
+   [
+    "كل ليلة",
+    "kill lēla",
+    "every night",
+    "كل ليلة",
+    ""
+   ],
+   [
+    "يتعب",
+    "yitʿab",
+    "he gets tired",
+    "يتعب",
+    "ma yitʿab? = doesn't he get tired?"
+   ],
+   [
+    "يحب",
+    "yḥibb",
+    "he likes, he loves",
+    "يحب",
+    "she likes: tḥibb (تحب)"
+   ]
+  ]
+ },
+ {
+  "id": "s2u004",
+  "stage": 2,
+  "title": "We go out on Fridays",
+  "goal": "Tell Umm Sēf what you and Sēf do together on Fridays.",
+  "tip": "'We' starts with ni-: nilʿab (we play), niṭlaʿ (we go out), nis-har (we stay up). You can leave out niḥin, because ni- already means 'we': yōm il-jumʿa nilʿab kūra. Two verbs can follow each other with w: niṭlaʿ w nis-har.",
+  "grammar": "Present tense I: we (ni-): nilʿab, niskin, niṭlaʿ",
+  "dialogue": [
+   [
+    "A",
+    "انت وسيف دوم ويا بعض!",
+    "inta w Sēf dōm wiyya baʿaẓ!",
+    "You and Sēf are always together!"
+   ],
+   [
+    "B",
+    "هيه، ندرس في نفس الجامعة، ونسكن قريب",
+    "hē, nidris fi nafs il-jāmʿa, w niskin garīb",
+    "Yes, we study at the same university and live nearby."
+   ],
+   [
+    "A",
+    "وشو تسوون يوم الجمعة؟",
+    "w shu tsawwūn yōm il-jumʿa?",
+    "And what do you get up to on Fridays?"
+   ],
+   [
+    "B",
+    "نلعب كورة، ومرات نروح البحر ونسبح",
+    "nilʿab kūra, w marrāt nrūḥ il-baḥar w nisbaḥ",
+    "We play football, and sometimes we go to the beach and swim."
+   ],
+   [
+    "A",
+    "وفي الليل؟",
+    "w fi l-lēl?",
+    "And at night?"
+   ],
+   [
+    "B",
+    "نطلع ونسهر ويا الشباب كل ليلة",
+    "niṭlaʿ w nis-har wiyya sh-shabāb kill lēla",
+    "We go out and stay up late with the guys every night."
+   ],
+   [
+    "A",
+    "والجامعة؟!",
+    "w il-jāmʿa?!",
+    "And what about university?!"
+   ]
+  ],
+  "items": [
+   [
+    "ويا بعض",
+    "wiyya baʿaẓ",
+    "together, with each other",
+    "معًا",
+    "you'll also hear maʿa baʿaẓ (مع بعض)"
+   ],
+   [
+    "نسكن",
+    "niskin",
+    "we live (somewhere)",
+    "نسكن",
+    "I live: askin (أسكن)"
+   ],
+   [
+    "شو تسوون؟",
+    "shu tsawwūn?",
+    "what do you do? (to a group)",
+    "ماذا تفعلون؟",
+    "to one man: shu tsawwi?; to one woman: shu tsawwīn?"
+   ],
+   [
+    "نلعب",
+    "nilʿab",
+    "we play",
+    "نلعب",
+    ""
+   ],
+   [
+    "مرات",
+    "marrāt",
+    "sometimes; times",
+    "أحيانًا",
+    "marrāt … w marrāt … = sometimes … and sometimes …"
+   ],
+   [
+    "نسبح",
+    "nisbaḥ",
+    "we swim",
+    "نسبح",
+    ""
+   ],
+   [
+    "نطلع",
+    "niṭlaʿ",
+    "we go out",
+    "نخرج",
+    ""
+   ],
+   [
+    "نسهر",
+    "nis-har",
+    "we stay up late, we spend the evening out",
+    "نسهر",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s2u005",
+  "stage": 2,
+  "title": "Do you all work here?",
+  "goal": "Chat with two young men at a karak stand and get invited to football.",
+  "tip": "For a group, 'you' and 'they' add -ūn: tilʿabūn (you all play), yilʿabūn (they play). A short i before the last consonant drops: tishtaghil → tishtaghlūn, yishtaghil → yishtaghlūn. 'We' stays nishtaghil, with no ending.",
+  "grammar": "Present tense I: you all (ti- … -ūn) and they (yi- … -ūn)",
+  "dialogue": [
+   [
+    "B",
+    "هلا يا شباب! تدرسون ويا سيف؟",
+    "hala yā shabāb! tidrisūn wiyya Sēf?",
+    "Hi guys! Do you study with Sēf?"
+   ],
+   [
+    "A",
+    "لا، نشتغل في المطار",
+    "la, nishtaghil fi l-maṭār",
+    "No, we work at the airport."
+   ],
+   [
+    "B",
+    "ما شاء الله! تشتغلون كل يوم؟",
+    "mā shāʼ allāh! tishtaghlūn kill yōm?",
+    "Great! Do you work every day?"
+   ],
+   [
+    "A",
+    "هيه، وأبوي وعمي يشتغلون هناك بعد",
+    "hē, w ubūy w ʿammi yishtaghlūn hnāk baʿad",
+    "Yes, and my dad and my uncle work there too."
+   ],
+   [
+    "B",
+    "وتلعبون كورة؟ سيف يلعب دوم!",
+    "w tilʿabūn kūra? Sēf yilʿab dōm!",
+    "And do you play football? Sēf plays all the time!"
+   ],
+   [
+    "A",
+    "هيه، ربعنا يلعبون كل خميس. تبي تيي؟",
+    "hē, rabʿna yilʿabūn kill khamīs. tabi tyī?",
+    "Yes, our mates play every Thursday. Want to come?"
+   ],
+   [
+    "B",
+    "أكيد! وين تلعبون؟",
+    "akīd! wēn tilʿabūn?",
+    "Definitely! Where do you play?"
+   ]
+  ],
+  "items": [
+   [
+    "يا شباب",
+    "yā shabāb",
+    "guys! (to a group of young men)",
+    "يا شباب",
+    "friendly; to older men use yā jamāʿa"
+   ],
+   [
+    "نشتغل",
+    "nishtaghil",
+    "we work",
+    "نعمل",
+    ""
+   ],
+   [
+    "تشتغلون",
+    "tishtaghlūn",
+    "you work (to a group)",
+    "تعملون",
+    "to one man: tishtaghil; to one woman: tishtaghlīn"
+   ],
+   [
+    "يشتغلون",
+    "yishtaghlūn",
+    "they work",
+    "يعملون",
+    ""
+   ],
+   [
+    "يلعب",
+    "yilʿab",
+    "he plays",
+    "يلعب",
+    ""
+   ],
+   [
+    "تلعبون",
+    "tilʿabūn",
+    "you play (to a group)",
+    "تلعبون",
+    "to one man: tilʿab; to one woman: tilʿabīn"
+   ],
+   [
+    "يلعبون",
+    "yilʿabūn",
+    "they play",
+    "يلعبون",
+    ""
+   ],
+   [
+    "كل خميس",
+    "kill khamīs",
+    "every Thursday",
+    "كل خميس",
+    "also kill jumʿa (every Friday)"
+   ]
+  ],
+  "culture": "Karak stands and cafeterias are where young men in Dubai often meet after work. Inviting a new acquaintance to a game straight away, as here, is ordinary friendliness."
+ },
+ {
+  "id": "s2u006",
+  "stage": 2,
+  "title": "Sēf doesn't study!",
+  "goal": "Defend Sēf when his mother complains about his habits, and say what you don't do.",
+  "tip": "Put ma before a present verb for 'don't': ma as-har (I don't stay up late), ma yidris (he doesn't study). The verb itself doesn't change. mub is for words that aren't verbs: mub zēn, mub kill yōm.",
+  "grammar": "Present tense I: ma + present for 'don't, doesn't'",
+  "dialogue": [
+   [
+    "A",
+    "سيف ما يدرس! دوم يلعب ويطلع",
+    "Sēf ma yidris! dōm yilʿab w yiṭlaʿ",
+    "Sēf doesn't study! He's always playing and going out."
+   ],
+   [
+    "B",
+    "لا يا أم سيف، يدرس، بس في الليل",
+    "la yā Umm Sēf, yidris, bas fi l-lēl",
+    "No, Umm Sēf, he does study, but at night."
+   ],
+   [
+    "A",
+    "والصبح ما يصحى! كل يوم أصحيه",
+    "w iṣ-ṣubḥ ma yiṣḥa! kill yōm aṣaḥḥīh",
+    "And in the morning he doesn't wake up! Every day I wake him."
+   ],
+   [
+    "B",
+    "هيه، بس ينجح على طول",
+    "hē, bas yinjaḥ ʿala ṭūl",
+    "True, but he always passes."
+   ],
+   [
+    "A",
+    "وانت؟ تدرس في الليل بعد؟",
+    "w inta? tidris fi l-lēl baʿad?",
+    "And you? Do you study at night too?"
+   ],
+   [
+    "B",
+    "لا، أنا ما أسهر. أدرس الصبح",
+    "la, ana ma as-har. adris iṣ-ṣubḥ",
+    "No, I don't stay up late. I study in the mornings."
+   ],
+   [
+    "A",
+    "ما شاء الله عليك! علمه شوي!",
+    "mā shāʼ allāh ʿalēk! ʿallmah shwayy!",
+    "Good for you! Teach him a bit!"
+   ]
+  ],
+  "items": [
+   [
+    "ما يدرس",
+    "ma yidris",
+    "he doesn't study",
+    "لا يدرس",
+    ""
+   ],
+   [
+    "يطلع",
+    "yiṭlaʿ",
+    "he goes out",
+    "يخرج",
+    "she goes out: tiṭlaʿ (تطلع)"
+   ],
+   [
+    "ما يصحى",
+    "ma yiṣḥa",
+    "he doesn't wake up",
+    "لا يستيقظ",
+    "I wake up: aṣḥa (أصحى)"
+   ],
+   [
+    "أصحيه",
+    "aṣaḥḥīh",
+    "I wake him up",
+    "أوقظه",
+    "wake me up!: ṣaḥḥni (صحني)"
+   ],
+   [
+    "ينجح",
+    "yinjaḥ",
+    "he passes (an exam), he succeeds",
+    "ينجح",
+    "past: nijaḥt (I passed)"
+   ],
+   [
+    "ما أسهر",
+    "ma as-har",
+    "I don't stay up late",
+    "لا أسهر",
+    ""
+   ],
+   [
+    "ما شاء الله عليك",
+    "mā shāʼ allāh ʿalēk",
+    "good for you, well done (to a man)",
+    "",
+    "to a woman: mā shāʼ allāh ʿalēch (ما شاء الله عليج)"
+   ],
+   [
+    "علمه",
+    "ʿallmah",
+    "teach him (to a man)",
+    "علمه",
+    "to a woman: ʿallmīh (علميه)"
+   ]
+  ]
+ },
+ {
+  "id": "s2u007",
+  "stage": 2,
+  "title": "Who does the shopping?",
+  "goal": "Ask Sēf who goes to the supermarket in his family, and tease him about it.",
+  "tip": "Hollow verbs keep a long vowel in the present: rāḥ → yrūḥ (he goes), shāf → yshūf (he sees), gāl → ygūl (he says), nām → ynām (he sleeps). No vowel comes before the stem: trūḥ, ashūf, anām. Endings work as before: tshūfīn, yrūḥūn.",
+  "grammar": "Present tense II: hollow verbs with a long middle vowel (yrūḥ, yshūf, ygūl, ynām)",
+  "dialogue": [
+   [
+    "B",
+    "منو يروح السوبرماركت في بيتكم؟",
+    "minu yrūḥ is-sūbarmārkit fi bētkum?",
+    "Who goes to the supermarket in your house?"
+   ],
+   [
+    "A",
+    "أبوي، يروح كل خميس بعد الدوام",
+    "ubūy, yrūḥ kill khamīs baʿd id-dawām",
+    "My dad, he goes every Thursday after work."
+   ],
+   [
+    "B",
+    "بروحه؟",
+    "b-rūḥah?",
+    "On his own?"
+   ],
+   [
+    "A",
+    "لا، ويا أمي. هي تشوف الأسعار، وهو يدفع!",
+    "la, wiyya ummi. hiya tshūf il-asʿār, w huwa yidfaʿ!",
+    "No, with my mum. She checks the prices, and he pays!"
+   ],
+   [
+    "B",
+    "وانت؟ ما تروح وياهم؟",
+    "w inta? ma trūḥ wiyyāhum?",
+    "And you? Don't you go with them?"
+   ],
+   [
+    "A",
+    "لا، أنام! أبوي يقول: سيف ما يصحى!",
+    "la, anām! ubūy ygūl: Sēf ma yiṣḥa!",
+    "No, I sleep! My dad says, 'Sēf never wakes up!'"
+   ],
+   [
+    "B",
+    "والله كلامه صح! انت كسلان",
+    "wallāh kalāmah ṣaḥḥ! inta kaslān",
+    "Honestly, he's right! You're lazy."
+   ]
+  ],
+  "items": [
+   [
+    "يروح",
+    "yrūḥ",
+    "he goes",
+    "يذهب",
+    "she goes: trūḥ (تروح)"
+   ],
+   [
+    "بروحه",
+    "b-rūḥah",
+    "on his own, by himself",
+    "وحده",
+    "on her own: b-rūḥha"
+   ],
+   [
+    "تشوف",
+    "tshūf",
+    "she sees, she checks; you see (to a man)",
+    "ترى",
+    "to a woman: tshūfīn (تشوفين)"
+   ],
+   [
+    "الأسعار",
+    "il-asʿār",
+    "the prices",
+    "الأسعار",
+    "one price: siʿir"
+   ],
+   [
+    "يدفع",
+    "yidfaʿ",
+    "he pays",
+    "يدفع",
+    ""
+   ],
+   [
+    "وياهم",
+    "wiyyāhum",
+    "with them",
+    "معهم",
+    ""
+   ],
+   [
+    "أنام",
+    "anām",
+    "I sleep",
+    "أنام",
+    ""
+   ],
+   [
+    "يقول",
+    "ygūl",
+    "he says",
+    "يقول",
+    "she says: tgūl (تقول)"
+   ],
+   [
+    "كسلان",
+    "kaslān",
+    "lazy (a man)",
+    "كسلان",
+    "a woman: kaslāna (كسلانة)"
+   ]
+  ]
+ },
+ {
+  "id": "s2u008",
+  "stage": 2,
+  "title": "A walk after work",
+  "goal": "Ask Maryam what she does after work and agree to walk with her family.",
+  "tip": "Verbs whose past ends in a vowel keep a vowel in the present: sawwa → ysawwi (he does), asawwi, nsawwi; miša → yimshi (he walks), amshi, timshi. Before -īn and -ūn the final i goes: tsawwi → tsawwīn, timshi → timshīn, yimshi → yimshūn.",
+  "grammar": "Present tense II: verbs ending in a vowel (ysawwi, yimshi)",
+  "dialogue": [
+   [
+    "B",
+    "مريم، شو تسوين بعد الدوام؟",
+    "Maryam, shu tsawwīn baʿd id-dawām?",
+    "Maryam, what do you do after work?"
+   ],
+   [
+    "A",
+    "أمشي ساعة في الحديقة ويا أبوي",
+    "amshi sāʿa fi l-ḥadīga wiyya ubūy",
+    "I walk for an hour in the park with my dad."
+   ],
+   [
+    "B",
+    "كل يوم؟ ما تتعبين؟",
+    "kill yōm? ma titʿabīn?",
+    "Every day? Don't you get tired?"
+   ],
+   [
+    "A",
+    "لا، عادي. وانت؟ ما تمشي؟",
+    "la, ʿādi. w inta? ma timshi?",
+    "No, it's fine. And you? Don't you walk?"
+   ],
+   [
+    "B",
+    "لا، سيف يسوي رياضة، بس أنا كسلان!",
+    "la, Sēf ysawwi riyāẓa, bas ana kaslān!",
+    "No, Sēf does sport, but I'm lazy!"
+   ],
+   [
+    "A",
+    "يلا، تمشي ويانا يوم الخميس؟",
+    "yalla, timshi wiyyāna yōm il-khamīs?",
+    "Come on, will you walk with us on Thursday?"
+   ],
+   [
+    "B",
+    "ليش لا! نمشي الساعة كم؟",
+    "lēsh la! nimshi is-sāʿa cham?",
+    "Why not! What time do we walk?"
+   ]
+  ],
+  "items": [
+   [
+    "شو تسوين؟",
+    "shu tsawwīn?",
+    "what do you do? what are you doing? (to a woman)",
+    "ماذا تفعلين؟",
+    "to a man: shu tsawwi?"
+   ],
+   [
+    "أمشي",
+    "amshi",
+    "I walk",
+    "أمشي",
+    ""
+   ],
+   [
+    "ساعة",
+    "sāʿa",
+    "an hour",
+    "ساعة",
+    "is-sāʿa = the time, o'clock"
+   ],
+   [
+    "الحديقة",
+    "il-ḥadīga",
+    "the park, the garden",
+    "الحديقة",
+    ""
+   ],
+   [
+    "تتعبين",
+    "titʿabīn",
+    "you get tired (to a woman)",
+    "تتعبين",
+    "to a man: titʿab (تتعب)"
+   ],
+   [
+    "تمشي",
+    "timshi",
+    "you walk (to a man); she walks",
+    "تمشي",
+    "to a woman: timshīn (تمشين)"
+   ],
+   [
+    "يسوي",
+    "ysawwi",
+    "he does, he makes",
+    "يفعل / يعمل",
+    "she does: tsawwi (تسوي)"
+   ],
+   [
+    "رياضة",
+    "riyāẓa",
+    "sport, exercise",
+    "رياضة",
+    "ysawwi riyāẓa = he does sport, he works out"
+   ],
+   [
+    "نمشي",
+    "nimshi",
+    "we walk; shall we walk?",
+    "نمشي",
+    ""
+   ]
+  ],
+  "culture": "In a Dubai summer it is too hot to walk in the day, so people walk in the early morning, after sunset, or inside air-conditioned malls. In winter, parks and beach paths fill up in the evenings."
+ },
+ {
+  "id": "s2u009",
+  "stage": 2,
+  "title": "Moving into the flat",
+  "goal": "Tell Sēf where to put things in your new flat while your phone rings.",
+  "tip": "Doubled verbs end in a double consonant: ḥaṭṭ → yḥuṭṭ (he puts), aḥuṭṭ, nḥuṭṭ; radd → yrudd (he answers). Endings go straight on: tḥuṭṭīn, yḥuṭṭūn, nḥuṭṭha (we put it). The present is also used for 'shall I …?': wēn aḥuṭṭ il-karātīn?",
+  "grammar": "Present tense II: doubled verbs (yḥuṭṭ, yrudd, ydigg)",
+  "dialogue": [
+   [
+    "A",
+    "وين أحط الكراتين؟",
+    "wēn aḥuṭṭ il-karātīn?",
+    "Where shall I put the boxes?"
+   ],
+   [
+    "B",
+    "حطها في الغرفة، يم الدريشة",
+    "ḥuṭṭha fi l-ghurfa, yamm id-dirīsha",
+    "Put them in the room, by the window."
+   ],
+   [
+    "A",
+    "والكنبة؟ نحطها هني؟",
+    "w il-kanaba? nḥuṭṭha hni?",
+    "And the sofa? Shall we put it here?"
+   ],
+   [
+    "B",
+    "هيه، قدام التلفزيون. أبوي دوم يحطها جي",
+    "hē, jiddām it-tilfizyōn. ubūy dōm yḥuṭṭha chī",
+    "Yes, in front of the TV. My dad always puts it like that."
+   ],
+   [
+    "A",
+    "تلفونك يدق!",
+    "tilifōnak ydigg!",
+    "Your phone's ringing!"
+   ],
+   [
+    "B",
+    "هذي أمي. أرد عليها بعد ساعة",
+    "hādhi ummi. arudd ʿalēha baʿd sāʿa",
+    "It's my mum. I'll call her back in an hour."
+   ],
+   [
+    "A",
+    "لا يا ريّال، رد عليها الحين! لا تكون كسلان",
+    "la yā rayyāl, rudd ʿalēha l-ḥīn! la tkūn kaslān",
+    "No, man, answer her now! Don't be lazy."
+   ]
+  ],
+  "items": [
+   [
+    "أحط",
+    "aḥuṭṭ",
+    "I put; shall I put?",
+    "أضع",
+    ""
+   ],
+   [
+    "الكراتين",
+    "il-karātīn",
+    "the (cardboard) boxes",
+    "الكراتين",
+    "one box: kartōn (كرتون)"
+   ],
+   [
+    "نحطها",
+    "nḥuṭṭha",
+    "we put it (a feminine thing) or them; shall we put it?",
+    "نضعها",
+    "for a masculine thing: nḥuṭṭah (نحطه)"
+   ],
+   [
+    "يحط",
+    "yḥuṭṭ",
+    "he puts",
+    "يضع",
+    "she puts: tḥuṭṭ (تحط)"
+   ],
+   [
+    "يدق",
+    "ydigg",
+    "it rings; he knocks",
+    "يرن / يطرق",
+    "il-bāb ydigg = someone's at the door"
+   ],
+   [
+    "أرد",
+    "arudd",
+    "I answer, I reply",
+    "أرد",
+    "arudd ʿalēh = I answer him, I call him back"
+   ],
+   [
+    "رد عليها",
+    "rudd ʿalēha",
+    "answer her! (to a man)",
+    "رد عليها",
+    "to a woman: ruddi ʿalēha; answer him: rudd ʿalēh"
+   ],
+   [
+    "يا ريّال",
+    "yā rayyāl",
+    "man!, mate! (friends only)",
+    "",
+    "only to friends of your age, never to an elder or in a meeting"
+   ]
+  ]
+ },
+ {
+  "id": "s2u010",
+  "stage": 2,
+  "title": "I don't eat meat",
+  "goal": "Order lunch with Sēf at the university cafeteria and say what you don't eat.",
+  "tip": "kal (ate) and khadh (took) have a long ā in the present: ākil (I eat), tākil, yākil, nākil; ākhidh (I take, I'll have), tākhidh, yākhidh. To a woman: tāklīn, tākhdhīn; to a group: tāklūn, tākhdhūn. ākhidh also orders food: ākhidh simach.",
+  "grammar": "Present tense II: kal and khadh: ākil (I eat), yākil, ākhidh (I take), yākhidh",
+  "dialogue": [
+   [
+    "A",
+    "شو تاكل؟ أنا دوم آخذ عيش ولحم",
+    "shu tākil? ana dōm ākhidh ʿēsh w laḥam",
+    "What are you having? I always get rice and meat."
+   ],
+   [
+    "B",
+    "أنا ما آكل لحم",
+    "ana ma ākil laḥam",
+    "I don't eat meat."
+   ],
+   [
+    "A",
+    "والله؟ من متى؟",
+    "wallāh? min mita?",
+    "Really? Since when?"
+   ],
+   [
+    "B",
+    "من زمان. آكل سمك ودياي بس",
+    "min zamān. ākil simach w diyāy bas",
+    "For ages. I only eat fish and chicken."
+   ],
+   [
+    "A",
+    "زين، خذ سمك. وتاخذ عصير؟",
+    "zēn, khudh simach. w tākhidh ʿaṣīr?",
+    "OK, get the fish. And will you have a juice?"
+   ],
+   [
+    "B",
+    "لا، ماي وسلطة بس",
+    "la, māy w salaṭa bas",
+    "No, just water and a salad."
+   ],
+   [
+    "A",
+    "سلطة بس؟ أخوي يسوي رياضة، وياكل صحنين!",
+    "salaṭa bas? akhūy ysawwi riyāẓa, w yākil ṣaḥnēn!",
+    "Just a salad? My brother works out, and he eats two plates!"
+   ]
+  ],
+  "items": [
+   [
+    "تاكل",
+    "tākil",
+    "you eat; are you having? (to a man)",
+    "تأكل",
+    "to a woman: tāklīn (تاكلين)"
+   ],
+   [
+    "آخذ",
+    "ākhidh",
+    "I take; I'll have (ordering)",
+    "آخذ",
+    ""
+   ],
+   [
+    "ما آكل",
+    "ma ākil",
+    "I don't eat",
+    "لا آكل",
+    "laḥam is red meat: chicken (diyāy) and fish are counted apart"
+   ],
+   [
+    "من متى؟",
+    "min mita?",
+    "since when?",
+    "منذ متى؟",
+    ""
+   ],
+   [
+    "سلطة",
+    "salaṭa",
+    "salad",
+    "سلطة",
+    ""
+   ],
+   [
+    "تاخذ",
+    "tākhidh",
+    "you take; will you have? (to a man)",
+    "تأخذ",
+    "to a woman: tākhdhīn (تاخذين)"
+   ],
+   [
+    "ياكل",
+    "yākil",
+    "he eats",
+    "يأكل",
+    "she eats: tākil (تاكل)"
+   ],
+   [
+    "صحنين",
+    "ṣaḥnēn",
+    "two plates",
+    "صحنين",
+    "one plate: ṣaḥan"
+   ]
+  ]
+ },
+ {
+  "id": "s2u011",
+  "stage": 2,
+  "title": "When are you coming?",
+  "goal": "Take a call from Umm Sēf about lunch tomorrow, and say you'd like to learn her harees.",
+  "tip": "'Come' in the present: ayī (I come), tyī (you come, to a man), yyī (he comes), nyī (we come); to a woman tyīn, to a group tyūn. 'It' or 'him' after a verb ending in a vowel is -īh: nsawwi → nsawwīh (we make it), asawwi → asawwīh. After a consonant it's -ah: aḥibb → aḥibbah.",
+  "grammar": "Present tense II: 'come' (ayī, tyī, yyī); object -īh after a vowel (nsawwīh)",
+  "dialogue": [
+   [
+    "A",
+    "سالم، متى تيي باكر؟",
+    "Sālim, mita tyī bāchir?",
+    "Salim, when are you coming tomorrow?"
+   ],
+   [
+    "B",
+    "أيي الساعة وحدة إن شاء الله",
+    "ayī is-sāʿa waḥda in shāʼ allāh",
+    "I'll come at one, God willing."
+   ],
+   [
+    "A",
+    "زين. وسيف يي وياك؟",
+    "zēn. w Sēf yyī wiyyāk?",
+    "Good. Is Sēf coming with you?"
+   ],
+   [
+    "B",
+    "لا، يي بعد الدوام",
+    "la, yyī baʿd id-dawām",
+    "No, he's coming after work."
+   ],
+   [
+    "A",
+    "تحب الهريس؟ نسويه دوم يوم الجمعة",
+    "tḥibb il-harīs? nsawwīh dōm yōm il-jumʿa",
+    "Do you like harees? We always make it on Fridays."
+   ],
+   [
+    "B",
+    "أحبه وايد، بس ما أعرف أسويه",
+    "aḥibbah wāyid, bas ma aʿarf asawwīh",
+    "I love it, but I don't know how to make it."
+   ],
+   [
+    "A",
+    "تعال بدري، ونسويه ويا بعض!",
+    "taʿāl badri, w nsawwīh wiyya baʿaẓ!",
+    "Come early, and we'll make it together!"
+   ]
+  ],
+  "items": [
+   [
+    "متى تيي؟",
+    "mita tyī?",
+    "when are you coming? (to a man)",
+    "متى تأتي؟",
+    "to a woman: mita tyīn? (متى تيين؟)"
+   ],
+   [
+    "أيي",
+    "ayī",
+    "I come, I'm coming",
+    "آتي",
+    "you'll see written اجي"
+   ],
+   [
+    "يي",
+    "yyī",
+    "he comes, he's coming",
+    "يأتي",
+    "she comes: tyī (تيي); they come: yyūn (ييون); you'll see written يجي"
+   ],
+   [
+    "وياك",
+    "wiyyāk",
+    "with you (to a man)",
+    "معك",
+    "to a woman: wiyyāch (وياج)"
+   ],
+   [
+    "الهريس",
+    "il-harīs",
+    "harees (wheat and meat, slow-cooked)",
+    "الهريس",
+    ""
+   ],
+   [
+    "نسويه",
+    "nsawwīh",
+    "we make it, we do it",
+    "نصنعه / نفعله",
+    "for a feminine thing: nsawwīha"
+   ],
+   [
+    "أحبه",
+    "aḥibbah",
+    "I love it, I like him",
+    "أحبه",
+    "for a feminine thing: aḥibbha"
+   ],
+   [
+    "أسويه",
+    "asawwīh",
+    "I make it, I do it",
+    "أصنعه / أفعله",
+    "ma aʿarf asawwīh = I don't know how to make it"
+   ]
+  ],
+  "culture": "Harees, wheat cooked for hours with meat until smooth, is a traditional Emirati dish, served especially in Ramadan, at Eid and at weddings. Offering to teach a guest a family dish is a warm gesture."
+ },
+ {
+  "id": "s2u012",
+  "stage": 2,
+  "title": "The weekly shop",
+  "goal": "Talk with Sēf at the supermarket about when you shop and how his dad shops.",
+  "tip": "This lesson mixes the verb types: yilga (he finds) and yishtiri (he buys) end in a vowel like yimshi; yākhidh keeps its long ā; yṭāliʿ (he looks) is regular. yākhidh wagt means 'it takes time' or 'he takes his time'.",
+  "grammar": "Present tense II recycled: yilga, yishtiri, yimshi, yṭāliʿ, yākhidh",
+  "dialogue": [
+   [
+    "A",
+    "كل أسبوع تيي هني؟",
+    "kill usbūʿ tyī hni?",
+    "Do you come here every week?"
+   ],
+   [
+    "B",
+    "هيه، كل سبت آخذ أغراض الأسبوع",
+    "hē, kill sabt ākhidh aghrāẓ il-usbūʿ",
+    "Yes, every Saturday I get the week's shopping."
+   ],
+   [
+    "A",
+    "وتلقى كل شي هني؟",
+    "w tilga kill shay hni?",
+    "And do you find everything here?"
+   ],
+   [
+    "B",
+    "هيه، بس الأسعار غالية شوي",
+    "hē, bas il-asʿār ghālya shwayy",
+    "Yes, but the prices are a bit high."
+   ],
+   [
+    "A",
+    "أبوي يحب السوق. يمشي ويطالع ويشتري",
+    "ubūy yḥibb is-sūg. yimshi w yṭāliʿ w yishtiri",
+    "My dad loves the market. He walks around, looks and buys."
+   ],
+   [
+    "B",
+    "بروحه؟ وياخذ وقت؟",
+    "b-rūḥah? w yākhidh wagt?",
+    "On his own? And does it take him long?"
+   ],
+   [
+    "A",
+    "ساعتين! بس دوم يلقى سمك زين",
+    "sāʿtēn! bas dōm yilga simach zēn",
+    "Two hours! But he always finds good fish."
+   ]
+  ],
+  "items": [
+   [
+    "كل أسبوع",
+    "kill usbūʿ",
+    "every week",
+    "كل أسبوع",
+    ""
+   ],
+   [
+    "أغراض",
+    "aghrāẓ",
+    "shopping, groceries, things",
+    "أغراض / مشتريات",
+    "aghrāẓ il-bēt = things for the house"
+   ],
+   [
+    "تلقى",
+    "tilga",
+    "you find (to a man); she finds",
+    "تجد",
+    "to a woman: tilgīn (تلقين)"
+   ],
+   [
+    "يشتري",
+    "yishtiri",
+    "he buys",
+    "يشتري",
+    "she buys: tishtiri (تشتري)"
+   ],
+   [
+    "يمشي",
+    "yimshi",
+    "he walks",
+    "يمشي",
+    ""
+   ],
+   [
+    "يطالع",
+    "yṭāliʿ",
+    "he looks (at), he watches",
+    "ينظر / يشاهد",
+    "yṭāliʿ it-tilfizyōn = he watches TV"
+   ],
+   [
+    "ياخذ وقت",
+    "yākhidh wagt",
+    "it takes (a long) time; he takes his time",
+    "يستغرق وقتًا",
+    ""
+   ],
+   [
+    "ساعتين",
+    "sāʿtēn",
+    "two hours",
+    "ساعتان",
+    ""
+   ],
+   [
+    "يلقى",
+    "yilga",
+    "he finds",
+    "يجد",
+    ""
+   ]
+  ]
+ }
+]

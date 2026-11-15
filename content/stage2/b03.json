@@ -1,0 +1,224 @@
+[
+ {
+  "id": "s2u023",
+  "stage": 2,
+  "title": "Did you get my message?",
+  "goal": "Sort out a WhatsApp message from Sēf on the phone: say it hasn't arrived, ask him to send it again, and confirm you've got it",
+  "tip": "Object endings join the verb: -ni 'me', -ak 'you (m.)', -ich 'you (f.)', -ah 'him, it', -ha 'her, it'. A risāla is feminine, so 'it' is -ha: ṭarrasht-ha 'I sent it', shift-ha 'I saw it'. wiṣlatni 'it reached me' means 'I got it'.",
+  "grammar": "Object endings on verbs: -ni, -ak, -ich, -ah, -ha",
+  "dialogue": [
+   ["A", "ألو، طرشت لك رسالة. شفتها؟", "alō, ṭarrasht-lak risāla. shift-ha?", "Hello? I sent you a message. Have you seen it?"],
+   ["B", "لا، ما وصلتني. متى طرشتها؟", "la, ma wiṣlatni. mita ṭarrasht-ha?", "No, I haven't got it. When did you send it?"],
+   ["A", "قبل شوي. فيها العنوان", "gabil shwayy. fīha l-ʿinwān", "A little while ago. The address is in it."],
+   ["B", "طرشها مرة ثانية، الله يخليك", "ṭarrish-ha marra thānya, allāh ykhallīk", "Send it again, please."],
+   ["A", "طرشتها. وصلتك؟", "ṭarrasht-ha. wiṣlatak?", "Sent. Did you get it?"],
+   ["B", "هيه، وصلتني. شفتها الحين", "hē, wiṣlatni. shift-ha l-ḥīn", "Yes, I've got it. I can see it now."],
+   ["A", "زين. يلا، أشوفك هناك", "zēn. yalla, ashūfak hnāk", "Good. Right, see you there."]
+  ],
+  "items": [
+   ["طرشت لك", "ṭarrasht-lak", "I sent you, I've sent you (to a man)", "أرسلت لك", "to a woman: ṭarrasht-lich (طرشت لج)"],
+   ["رسالة", "risāla", "a message (text, WhatsApp)", "رسالة", "you'll also hear masij (مسج), from English 'message'"],
+   ["شفتها؟", "shift-ha?", "have you seen it (f.)? (to a man); I saw it, I saw her", "هل رأيتها؟", "to a woman: shiftīha? (شفتيها؟); a masculine thing: shiftah (شفته)"],
+   ["ما وصلتني", "ma wiṣlatni", "I haven't got it (f.) (lit. it didn't reach me)", "لم تصلني", "a masculine thing: ma wiṣalni (ما وصلني)"],
+   ["طرشتها", "ṭarrasht-ha", "I sent it (f.); you sent it (to a man)", "أرسلتها", "to a woman (you sent it): ṭarrashtīha (طرشتيها); a masculine thing: ṭarrashtah (طرشته)"],
+   ["طرشها", "ṭarrish-ha", "send it (f.) (to a man)", "أرسلها", "to a woman: ṭarrshīha (طرشيها); a masculine thing: ṭarrshah (طرشه)"],
+   ["وصلتك؟", "wiṣlatak?", "did you get it (f.)? (to a man)", "هل وصلتك؟", "to a woman: wiṣlatich? (وصلتج؟); a masculine thing: wiṣalak? (وصلك؟)"],
+   ["أشوفك", "ashūfak", "see you, I'll see you (to a man)", "أراك", "to a woman: ashūfich (أشوفج); to a group: ashūfkum (أشوفكم)"],
+   ["العنوان", "il-ʿinwān", "the address", "العنوان", ""]
+  ]
+ },
+ {
+  "id": "s2u024",
+  "stage": 2,
+  "title": "Tell him I'm on my way",
+  "goal": "Answer Maryam's call when you're running late: ask her to pass a message to the manager and point her to your email",
+  "tip": "For 'to me, to him', join l- and the ending to the verb: gūl-li 'tell me', gūl-lah 'tell him', gūl-lha 'tell her', agūl-lich 'I tell you (f.)'. To a woman the verb ends in a long -ī first: gūlī-lah. After a vowel, 'it' is -h: shūfīh 'look at it'.",
+  "grammar": "Dative l- + ending on verbs: gūl-lah, gilt-lah, agūl-lich",
+  "dialogue": [
+   ["A", "ألو، انت وين؟ المدير يبيك", "alō, inta wēn? il-mudīr yabīk", "Hello, where are you? The manager's asking for you."],
+   ["B", "في الطريق. قولي له بكون هناك بعد ربع ساعة", "fi ṭ-ṭarīg. gūlī-lah bakūn hnāk baʿd rubʿ sāʿa", "On my way. Tell him I'll be there in a quarter of an hour."],
+   ["A", "زين، بقول له. وين الملف؟", "zēn, bagūl-lah. wēn il-malaff?", "OK, I'll tell him. Where's the file?"],
+   ["B", "طرشت لج إيميل البارحة. شوفيه", "ṭarrasht-lich īmēl il-bārḥa. shūfīh", "I sent you an email last night. Have a look at it."],
+   ["A", "هيه، لقيته. وقلت له، لا تحاتي", "hē, ligētah. w gilt-lah, la tḥāti", "Yes, I've found it. And I've told him, don't worry."],
+   ["B", "مشكورة، ما قصرتي", "mashkūra, mā gaṣṣarti", "Thanks, that's really kind of you."],
+   ["A", "ما سوينا شي. لا تتأخر!", "mā sawwēna shay. la titʼakhkhar!", "It was nothing. Don't be late!"]
+  ],
+  "items": [
+   ["يبيك", "yabīk", "(he) wants you, (he's) asking for you (to a man)", "يريدك", "to a woman: yabīch (يبيج)"],
+   ["قولي له", "gūlī-lah", "tell him (to a woman)", "قولي له", "to a man: gūl-lah (قول له); tell her: gūlī-lha (قولي لها)"],
+   ["بقول له", "bagūl-lah", "I'll tell him", "سأقول له", "I'll tell her: bagūl-lha (بقول لها); I'll tell you (f.): bagūl-lich (بقول لج)"],
+   ["شوفيه", "shūfīh", "have a look at it (m.) (to a woman)", "انظري إليه", "to a man: shūfah (شوفه)"],
+   ["لقيته", "ligētah", "I found it (m.), I found him; you found it (to a man)", "وجدته", "to a woman (you found it): ligētīh (لقيتيه)"],
+   ["قلت له", "gilt-lah", "I told him; you told him (to a man)", "قلت له", "to a woman (you told him): giltī-lah (قلتي له); I told her: gilt-lha (قلت لها)"],
+   ["ما قصرتي", "mā gaṣṣarti", "thank you, that's very kind of you (to a woman)", "شكرًا لكِ", "to a man: mā gaṣṣart (u12); the reply: mā sawwēna shay"],
+   ["لا تتأخر", "la titʼakhkhar", "don't be late (to a man)", "لا تتأخر", "to a woman: la titʼakhkharīn (لا تتأخرين)"]
+  ],
+  "culture": "The National (2020) lists ṭarrish 'send' among the Emirati words to use in the workplace: ṭarrish-li 'send it to me', ṭarrasht-lah 'I sent it to him'. In young people's speech it often comes mixed with English, as in 'ana ṭarrasht-lak risāla yesterday'."
+ },
+ {
+  "id": "s2u025",
+  "stage": 2,
+  "title": "At the phone shop counter",
+  "goal": "Buy a phone charger from a shop worker: ask if they have one, take it, and say no to the bag and the receipt",
+  "tip": "After a vowel, 'it (m.)' is a long -īh: tabi → tabīh 'do you want it?', abi → abīh 'I want it'. 'It (f.)' is -ha: ma abīha 'I don't want it'. When 'me' is already on the verb, 'it' goes on iyyā-: ʿaṭni iyyāh 'give it to me'.",
+  "grammar": "Object endings after a vowel (tabīh, abīha); ʿaṭni iyyāh",
+  "dialogue": [
+   ["B", "السلام عليكم. عندك شاحن حق هالتلفون؟", "as-salāmu ʿalaykum. ʿindak shāḥin ḥagg hat-tilifōn?", "Hello. Have you got a charger for this phone?"],
+   ["A", "وعليكم السلام. هيه، هذا حق هالموبايل. تبيه؟", "wa ʿalaykum is-salām. hē, hādha ḥagg hal-mobāyl. tabīh?", "Hello. Yes, this one's for this phone. Do you want it?"],
+   ["B", "هيه، أبيه. بكم؟", "hē, abīh. b-cham?", "Yes, I'll have it. How much?"],
+   ["A", "بخمسين درهم. أحطه في كيس؟", "b-khamsīn dirham. aḥuṭṭah fi kīs?", "Fifty dirhams. Shall I put it in a bag?"],
+   ["B", "لا، مشكور. عطني إياه بس", "la, mashkūr. ʿaṭni iyyāh bas", "No, thanks. Just give it to me."],
+   ["A", "العفو. والفاتورة، تبيها؟", "il-ʿafu. w il-fātūra, tabīha?", "You're welcome. And the receipt, do you want it?"],
+   ["B", "لا، ما أبيها", "la, ma abīha", "No, I don't need it."]
+  ],
+  "items": [
+   ["شاحن", "shāḥin", "a (phone) charger", "شاحن", ""],
+   ["موبايل", "mobāyl", "mobile (phone)", "هاتف محمول", "recognise: you'll hear it in shops; the course word is tilifōn (تلفون)"],
+   ["تبيه؟", "tabīh?", "do you want it (m.)? (to a man)", "هل تريده؟", "to a woman: tabīnah? (تبينه؟); a feminine thing: tabīha? (تبيها؟)"],
+   ["أبيه", "abīh", "I want it (m.), I'll have it", "أريده", "a feminine thing: abīha (أبيها)"],
+   ["أحطه", "aḥuṭṭah", "I put it; shall I put it…?", "أضعه", "a feminine thing: aḥuṭṭha (أحطها)"],
+   ["عطني إياه", "ʿaṭni iyyāh", "give it (m.) to me (to a man)", "أعطني إياه", "to a woman: ʿaṭīni iyyāh (عطيني إياه); a feminine thing: ʿaṭni iyyāha (عطني إياها)"],
+   ["الفاتورة", "il-fātūra", "the receipt, the bill (in a shop)", "الفاتورة", "at a restaurant: il-ḥsāb (u6)"],
+   ["ما أبيها", "ma abīha", "I don't want it (f.), I don't need it", "لا أريدها", "a masculine thing: ma abīh (ما أبيه)"]
+  ]
+ },
+ {
+  "id": "s2u026",
+  "stage": 2,
+  "title": "Did you see the photo?",
+  "goal": "Tell Sēf and the guys where you put the photo from the desert trip, and promise to send them the video",
+  "tip": "A vowel before an ending gets long: shiftu 'you (pl.) saw' → shiftūha 'you saw it', shifna 'we saw' → shifnāha 'we saw it'. 'To you all' is -lkum: baṭarrish-lkum 'I'll send you'. To a group, the imperative ends in -ū before the ending: shūfūha 'look at it'.",
+  "grammar": "Object endings with groups: shiftūha, shifnāha, -lkum",
+  "dialogue": [
+   ["A", "شباب، وين الصورة حق البر؟", "shabāb, wēn iṣ-ṣūra ḥagg il-barr?", "Guys, where's the photo from the desert?"],
+   ["B", "حطيتها في القروب. ما شفتوها؟", "ḥaṭṭēt-ha fi l-grūb. ma shiftūha?", "I put it in the group. Haven't you seen it?"],
+   ["A", "لا، ما شفناها. وينها؟", "la, ma shifnāha. wēnha?", "No, we haven't. Where is it?"],
+   ["B", "في قروب الجامعة. شوفوها الحين", "fi grūb il-jāmʿa. shūfūha l-ḥīn", "In the uni group. Have a look at it now."],
+   ["A", "هيه، لقيناها! ما شاء الله، حلوة", "hē, ligēnāha! mā shāʼ allāh, ḥilwa", "Yes, we've found it! Wow, it's lovely."],
+   ["B", "وباكر بطرش لكم الفيديو بعد", "w bāchir baṭarrish-lkum il-fīdyo baʿad", "And tomorrow I'll send you the video too."],
+   ["A", "زين، بنشوفه إن شاء الله", "zēn, binshūfah in shāʼ allāh", "Great, we'll watch it."]
+  ],
+  "items": [
+   ["حطيتها", "ḥaṭṭēt-ha", "I put it (f.); you put it (to a man)", "وضعتها", "to a woman (you put it): ḥaṭṭētīha (حطيتيها); a masculine thing: ḥaṭṭētah (حطيته)"],
+   ["ما شفتوها؟", "ma shiftūha?", "haven't you seen it (f.)? (to a group)", "ألم تروها؟", "to one man: ma shift-ha?; to one woman: ma shiftīha?"],
+   ["ما شفناها", "ma shifnāha", "we haven't seen it (f.)", "لم نرها", "a masculine thing: ma shifnāh (ما شفناه)"],
+   ["وينها؟", "wēnha?", "where is it (f.)? where is she?", "أين هي؟", "where is it (m.), where is he?: wēnah? (وينه؟)"],
+   ["شوفوها", "shūfūha", "look at it (f.) (to a group)", "انظروا إليها", "to one man: shūf-ha (شوفها); to one woman: shūfīha (شوفيها)"],
+   ["لقيناها", "ligēnāha", "we found it (f.), we found her", "وجدناها", "a masculine thing: ligēnāh (لقيناه)"],
+   ["بطرش لكم", "baṭarrish-lkum", "I'll send you (to a group)", "سأرسل لكم", "to one man: baṭarrish-lak (بطرش لك); to one woman: baṭarrish-lich (بطرش لج)"],
+   ["الفيديو", "il-fīdyo", "the video", "الفيديو", ""],
+   ["بنشوفه", "binshūfah", "we'll see it, we'll watch it (m.)", "سنراه", "a feminine thing: binshūf-ha (بنشوفها)"]
+  ]
+ },
+ {
+  "id": "s2u027",
+  "stage": 2,
+  "title": "Meet Fahad from Kuwait",
+  "goal": "Meet Fahad, Sēf's Kuwaiti friend: understand his Kuwaiti 'yes', 'what' and 'not', and ask how long he's staying",
+  "tip": "Fahad speaks Kuwaiti. Three words to catch: ēh 'yes' (close to your ī from u2), shinu 'what' (UAE shu), and mū 'not' (UAE mub): mū awwal marra 'it's not the first time'. Learn to understand them, and keep using your own shu, mub, ī and hē.",
+  "grammar": "Kuwaiti forms for recognition: ēh, shinu, mū",
+  "dialogue": [
+   ["A", "السلام عليكم. أنا فهد، ربيع سيف", "as-salāmu ʿalaykum. ana Fahad, rbīʿ Sēf", "Hello. I'm Fahad, Sēf's friend."],
+   ["B", "وعليكم السلام. هلا والله! انت كويتي؟", "wa ʿalaykum is-salām. hala wallāh! inta kwēti?", "Hello! Great to meet you. Are you Kuwaiti?"],
+   ["A", "إيه، كويتي. وانت شنو اسمك؟", "ēh, kwēti. w inta shinu ismak?", "Yes, Kuwaiti. And what's your name?"],
+   ["B", "اسمي سالم. أول مرة في دبي؟", "ismi Sālim. awwal marra fi Dbayy?", "My name's Sālim. Is this your first time in Dubai?"],
+   ["A", "لا، مو أول مرة. أحب دبي وايد", "la, mū awwal marra. aḥibb Dbayy wāyid", "No, it's not my first time. I love Dubai."],
+   ["B", "حلو! بتقعد كم يوم؟", "ḥilu! bitigʿid cham yōm?", "Nice! How many days are you staying?"],
+   ["A", "أسبوعين. شنو عندك باكر؟", "usbūʿēn. shinu ʿindak bāchir?", "Two weeks. What have you got on tomorrow?"]
+  ],
+  "items": [
+   ["إيه", "ēh", "yes (Kuwait)", "نعم", "like ī (إي) from u2; UAE: hē (هيه)"],
+   ["شنو؟", "shinu?", "what? (Kuwait)", "ماذا؟ / ما؟", "UAE: shu (شو); shinu ismak? = what's your name?"],
+   ["مو", "mū", "not (before anything that isn't a verb) (Kuwait)", "ليس", "UAE: mub (مب)"],
+   ["كويتي", "kwēti", "Kuwaiti (a man)", "كويتي", "a woman: kwētiyya (كويتية); Kuwait: il-Kwēt (الكويت)"],
+   ["أول مرة", "awwal marra", "the first time", "أول مرة", "Kuwait: mū awwal marra = UAE: mub awwal marra (it's not the first time)"],
+   ["بتقعد", "bitigʿid", "will you stay? you'll stay (to a man)", "ستبقى", "to a woman: bitigʿidīn (بتقعدين)"],
+   ["كم يوم؟", "cham yōm?", "how many days?", "كم يومًا؟", ""],
+   ["أسبوعين", "usbūʿēn", "two weeks", "أسبوعين", "one week: usbūʿ (أسبوع)"]
+  ],
+  "culture": "Gulf Arabic is one family with national marks. In the Gumar corpus of dialect novels, Emirati writers use shu about ten times as often as shinu, and Kuwaiti writers do the reverse; Kuwaiti writing also strongly prefers mū to mub. You don't need to switch: recognise Fahad's forms and keep your own."
+ },
+ {
+  "id": "s2u028",
+  "stage": 2,
+  "title": "These are my mates",
+  "goal": "Meet Fahad's friends from Kuwait: catch iḥna, hadhōl and ḥēl, welcome the group and suggest dinner",
+  "tip": "Fahad says iḥna for 'we' (UAE niḥin) and hadhōl for 'these' (UAE hādhēla). ḥēl means 'very, a lot' and goes before or after the word: ḥēl ḥilu, fikra ḥilwa ḥēl. Kuwaitis say wāyid too. To the whole group, use -ūn and -īn: tabūn 'do you want?', sāknīn.",
+  "grammar": "Kuwaiti forms for recognition: iḥna, hadhōl, ḥēl",
+  "dialogue": [
+   ["A", "سالم، تعال! هذول ربعي من الكويت", "Sālim, taʿāl! hadhōl rabʿi min il-Kwēt", "Sālim, come here! These are my mates from Kuwait."],
+   ["B", "هلا والله! حياكم الله في دبي", "hala wallāh! ḥayyākum allāh fi Dbayy", "Hi! Welcome to Dubai, all of you."],
+   ["A", "الله يحييك. إحنا هني في إجازة، أسبوع بس", "allāh yḥayyīk. iḥna hni fi ijāza, usbūʿ bas", "Thank you. We're here on holiday, just for a week."],
+   ["B", "وين ساكنين؟ في فندق؟", "wēn sāknīn? fi fundug?", "Where are you staying? In a hotel?"],
+   ["A", "إيه، في ديرة. حيل حلو، وقريب من كل شي", "ēh, fi Dēra. ḥēl ḥilu, w garīb min kill shay", "Yes, in Deira. It's really nice, and close to everything."],
+   ["B", "تبون نتعشى ويا بعض الليلة؟", "tabūn nitʿashsha wiyya baʿaẓ il-lēla?", "Do you want to have dinner together tonight?"],
+   ["A", "إيه والله! فكرة حلوة حيل", "ēh wallāh! fikra ḥilwa ḥēl", "Oh yes! That's a really good idea."]
+  ],
+  "items": [
+   ["هذول", "hadhōl", "these (people or things) (Kuwait)", "هؤلاء", "UAE: hādhēla (هذيلا)"],
+   ["إحنا", "iḥna", "we (Kuwait)", "نحن", "UAE: niḥin (نحن)"],
+   ["حيل", "ḥēl", "very, really, a lot (Kuwait)", "جدًا / كثيرًا", "before or after the word: ḥēl ḥilu, fikra ḥilwa ḥēl; UAE: wāyid (وايد)"],
+   ["إيه والله", "ēh wallāh", "oh yes, definitely (Kuwait)", "نعم والله", "UAE: hē wallāh (هيه والله)"],
+   ["فندق", "fundug", "a hotel", "فندق", ""],
+   ["كل شي", "kill shay", "everything", "كل شيء", ""],
+   ["إجازة", "ijāza", "a holiday, time off", "إجازة", "fi ijāza = on holiday"],
+   ["الليلة", "il-lēla", "tonight", "الليلة", "il-lēl (الليل) = the night"]
+  ]
+ },
+ {
+  "id": "s2u029",
+  "stage": 2,
+  "title": "Is there a table?",
+  "goal": "Wait for Sēf with Fahad at a busy restaurant: understand aku and māku, and find somewhere to sit",
+  "tip": "Kuwaitis say aku 'there is' and māku 'there isn't' where Emiratis say fī and ma fī: māku ṭāwla 'there are no tables'. shaku? 'what's up?' comes from the same word. Fahad also says mū mushkila for your mub mushkila, and illaḥīn beside il-ḥīn.",
+  "grammar": "Kuwaiti forms for recognition: aku, māku, shaku",
+  "dialogue": [
+   ["A", "شكو؟ وين سيف؟", "shaku? wēn Sēf?", "What's up? Where's Sēf?"],
+   ["B", "عنده شغل، بيتأخر شوي", "ʿindah shughul, biytʼakhkhar shwayy", "He's got work, he'll be a bit late."],
+   ["A", "مو مشكلة. بس اللحين المطعم زحمة، ماكو طاولة", "mū mushkila. bas illaḥīn il-maṭʿam zaḥma, māku ṭāwla", "No problem. But right now the restaurant's packed, there are no tables."],
+   ["B", "شوف، في طاولة برا", "shūf, fī ṭāwla barra", "Look, there's a table outside."],
+   ["A", "إيه، أكو! بس الجو حار برا", "ēh, aku! bas il-jaww ḥārr barra", "Oh yes, there is! But it's hot outside."],
+   ["B", "عادي. نقعد برا؟", "ʿādi. nigʿid barra?", "That's fine. Shall we sit outside?"],
+   ["A", "يلا. وقول له إحنا برا", "yalla. w gūl-lah iḥna barra", "OK. And tell him we're outside."]
+  ],
+  "items": [
+   ["شكو؟", "shaku?", "what's up? what's going on? (Kuwait)", "ما الأمر؟", "UAE: shu fīh? (شو فيه؟)"],
+   ["ماكو", "māku", "there isn't, there aren't (Kuwait)", "لا يوجد", "UAE: ma fī (ما في)"],
+   ["أكو", "aku", "there is, there are (Kuwait)", "يوجد", "UAE: fī (في)"],
+   ["مو مشكلة", "mū mushkila", "no problem (Kuwait)", "لا مشكلة", "UAE: mub mushkila (مب مشكلة)"],
+   ["اللحين", "illaḥīn", "now (Kuwait)", "الآن", "Kuwaitis also say il-ḥīn (الحين), the UAE default"],
+   ["بيتأخر", "biytʼakhkhar", "he'll be late", "سيتأخر", "she'll be late: bititʼakhkhar (بتتأخر)"],
+   ["الجو", "il-jaww", "the weather", "الجو", "il-jaww ḥārr = it's hot"],
+   ["نقعد", "nigʿid", "shall we sit? we sit", "نجلس", "UAE also: niylis (نيلس) [native check]"]
+  ]
+ },
+ {
+  "id": "s2u030",
+  "stage": 2,
+  "title": "Fahad calls home",
+  "goal": "Talk to Fahad while he phones his parents in Kuwait: catch yumma, yuba, ihu and ihi, and send your greetings",
+  "tip": "Fahad calls his mother yumma and his father yuba (Kuwait); you'll hear yumma in the UAE too. For 'he' and 'she' he says ihu and ihi (UAE huwa, hiya). Greetings use the endings: sallim ʿalēha 'say hi to her', and the reply allāh ysallimha 'God keep her'.",
+  "grammar": "Kuwaiti forms for recognition: yumma, yuba, ihu, ihi",
+  "dialogue": [
+   ["A", "هلا يمه! إيه، أنا ويا سالم", "hala yumma! ēh, ana wiyya Sālim", "(on the phone) Hi, Mum! Yes, I'm with Sālim."],
+   ["B", "هذي أمك؟ سلم عليها", "hādhi ummak? sallim ʿalēha", "Is that your mum? Say hi to her from me."],
+   ["A", "يمه، سالم يسلم عليج. اهي تسلّم عليك", "yumma, Sālim ysallim ʿalēch. ihi tsallim ʿalēk", "(on the phone) Mum, Sālim says hi. (to you) She says hi to you."],
+   ["B", "الله يسلمها. وأبوك؟ عساه بخير", "allāh ysallimha. w ubūk? ʿasāh b-khēr", "God keep her. And your dad? I hope he's well."],
+   ["A", "الحمد لله، اهو يمها اللحين", "il-ḥamdu lillāh, ihu yammha illaḥīn", "He's fine, thank God. He's right next to her now."],
+   ["B", "زين. سلم عليه بعد", "zēn. sallim ʿalēh baʿad", "Great. Say hi to him too."],
+   ["A", "يبه! سالم يسلم عليك", "yuba! Sālim ysallim ʿalēk", "(on the phone) Dad! Sālim says hi."]
+  ],
+  "items": [
+   ["يمه", "yumma", "Mum! (calling or talking to your mother) (Kuwait)", "يا أمي", "UAE: ummi (أمي); yumma is common in the UAE too"],
+   ["يبه", "yuba", "Dad! (calling or talking to your father) (Kuwait)", "يا أبي", "UAE: ubūy (أبوي)"],
+   ["اهي", "ihi", "she (Kuwait)", "هي", "UAE: hiya (هي)"],
+   ["اهو", "ihu", "he (Kuwait)", "هو", "UAE: huwa (هو)"],
+   ["أمك", "ummak", "your mum (to a man)", "أمك", "to a woman: ummich (أمج); your dad: ubūk (أبوك)"],
+   ["سلم عليها", "sallim ʿalēha", "say hi to her (from me) (to a man)", "سلّم عليها", "to a woman: sallmi ʿalēha (سلمي عليها)"],
+   ["تسلّم عليك", "tsallim ʿalēk", "(she) says hi to you (to a man)", "تسلّم عليك", "to a woman: tsallim ʿalēch (تسلّم عليج); not tislam (تسلم, 'thank you')"],
+   ["الله يسلمها", "allāh ysallimha", "God keep her (reply when she sends greetings)", "الله يسلمها", "of a man: allāh ysallmah (s1u020)"],
+   ["عساه بخير", "ʿasāh b-khēr", "I hope he's well", "أرجو أن يكون بخير", "of a woman: ʿasāha b-khēr (عساها بخير)"]
+  ],
+  "culture": "Inside Kuwait, saying y for j marks urban (ḥaḍar) speech: the Kuwait Times quotes Kuwaiti linguist Rashaid saying Bedouin (badu) speakers don't have it. Even so, Kuwaiti novels write jīt (جيت) more often than yīt (ييت), so expect j from many Kuwaitis where Emiratis say y."
+ }
+]
