@@ -72,9 +72,9 @@
    [
     "سو خير وقطه بحر",
     "saww khēr w giṭṭah baḥar",
-    "do good and throw it in the sea (do a good deed, then forget it and don't talk about it)",
+    "do good and throw it in the sea (a proverb)",
     "اعمل الخير وارمه في البحر",
-    "(recognise) a proverb; you'll also hear سو خير وقطه بالبحر (bil-baḥar)"
+    "(recognise) do a good deed, then forget it and don't talk about it; you'll also hear سو خير وقطه بالبحر (bil-baḥar)"
    ],
    [
     "وديت جارك المستشفى",
@@ -162,7 +162,7 @@
    [
     "A",
     "الملف غلط. طرشت النسخة القديمة، والأرقام كلها قديمة",
-    "il-malaff ghalaṭ. ṭarrasht in-nuskha il-gadīma, w il-argām killha gadīma",
+    "il-malaff ghalaṭ. ṭarrasht in-nuskha l-gadīma, w il-argām killha gadīma",
     "The file's wrong. You sent the old version, and the figures are all out of date."
    ],
    [
@@ -180,7 +180,7 @@
    [
     "B",
     "صح. بطرش لهم النسخة الصح الحين، وبعتذر منهم",
-    "ṣaḥḥ. baṭarrish-lhum in-nuskha iṣ-ṣaḥḥ il-ḥīn, w baʿtadhir minhum",
+    "ṣaḥḥ. baṭarrish-lhum in-nuskha ṣ-ṣaḥḥ il-ḥīn, w baʿtadhir minhum",
     "Right. I'll send them the right version now, and apologise to them."
    ],
    [
@@ -206,16 +206,16 @@
    [
     "غلطة الشاطر بألف",
     "ghalṭat ish-shāṭir b-alf",
-    "the clever one's mistake counts for a thousand (when someone good at their job slips, it costs more)",
+    "the clever one's mistake counts for a thousand (a proverb)",
     "خطأ الماهر بألف",
-    "(recognise) a proverb, said when a capable person makes a mistake"
+    "(recognise) when someone good at their job slips, it costs more; said when a capable person makes a mistake"
    ],
    [
     "النسخة القديمة",
-    "in-nuskha il-gadīma",
+    "in-nuskha l-gadīma",
     "the old version (of a file)",
     "النسخة القديمة",
-    "the right version: in-nuskha iṣ-ṣaḥḥ (النسخة الصح)"
+    "the right version: in-nuskha ṣ-ṣaḥḥ (النسخة الصح)"
    ],
    [
     "ما انتبهت",
@@ -387,11 +387,11 @@
     ""
    ],
    [
-    "بوديك",
-    "bawaddīk",
-    "I'll take you, I'll drive you (to a man)",
-    "سأوصلك",
-    "to a woman: bawaddīch (بوديج)"
+    "التاكسي غالي",
+    "it-tāksi ghāli",
+    "a taxi's expensive, taxis are expensive",
+    "سيارة الأجرة غالية",
+    ""
    ],
    [
     "الريوق عليك",
@@ -472,9 +472,9 @@
    [
     "الذيب ما يهرول عبث",
     "idh-dhīb ma yharwil ʿabath",
-    "the wolf doesn't trot for nothing (when someone like that suddenly makes an effort, he's after something)",
+    "the wolf doesn't trot for nothing (a proverb)",
     "الذئب لا يهرول عبثًا",
-    "(recognise) a proverb, said of someone whose sudden kindness hides a motive"
+    "(recognise) when someone like that suddenly makes an effort, he's after something; said of kindness that hides a motive"
    ],
    [
     "عزمني على كرك",
@@ -611,9 +611,9 @@
    [
     "الخنفس في عين أمه غزال",
     "il-khunfus fi ʿēn ummah ghazāl",
-    "in his mother's eye the beetle is a gazelle (people think the world of their own children and things)",
+    "in his mother's eye the beetle is a gazelle (a proverb)",
     "القرد في عين أمه غزال",
-    "(recognise) a proverb; also with is-sibāl (السبال) 'the monkey' for il-khunfus"
+    "(recognise) people think the world of their own children and things; also with is-sibāl (السبال) 'the monkey' for il-khunfus"
    ],
    [
     "أحسن لاعب",
@@ -701,8 +701,8 @@
    ],
    [
     "A",
-    "عادي يا ولدي. الأمثال كلام الأولين، وكل مثل وراه حكمة",
-    "ʿādi yā wildi. il-amthāl kalām il-awwalīn, w kill mathal warāh ḥikma",
+    "عادي يا ولدي. الأمثال كلام ناس أول، وكل مثل وراه حكمة",
+    "ʿādi yā wildi. il-amthāl kalām nās awwal, w kill mathal warāh ḥikma",
     "That's normal, son. Proverbs are the words of the old folk, and there's wisdom behind every one."
    ],
    [
@@ -737,8 +737,8 @@
    ],
    [
     "A",
-    "راشد؟ ما يعرف ولا مثل! يقول لي إن هذا كلام شيبان",
-    "Rāshid? ma yaʿarf wala mathal! ygūl-li inn hādha kalām shēbān",
+    "راشد؟ ما يعرف ولا مثل! يقول لي إن هذا كلام شواب",
+    "Rāshid? ma yaʿarf wala mathal! ygūl-li inn hādha kalām shuwwāb",
     "Rāshid? He doesn't know a single proverb! He tells me it's old men's talk."
    ],
    [
@@ -764,13 +764,6 @@
     "about a feminine noun or plural things: ṣaʿb afhamha (صعب أفهمها)"
    ],
    [
-    "كلام الأولين",
-    "kalām il-awwalīn",
-    "the words of the old folk, of our forefathers",
-    "كلام الأولين",
-    "(recognise)"
-   ],
-   [
     "وراه حكمة",
     "warāh ḥikma",
     "there's wisdom behind it",
@@ -785,11 +778,11 @@
     "I didn't mean anything: ma gaṣadt shay (ما قصدت شي)"
    ],
    [
-    "في محله",
-    "fi maḥallah",
-    "spot on, just right for the situation",
-    "في محله",
-    ""
+    "ما بقول لك شو هو",
+    "ma bagūl-lak shu huwa",
+    "I won't tell you what it is (to a man)",
+    "لن أقول لك ما هو",
+    "to a woman: ma bagūl-lich shu huwa (ما بقول لج شو هو)"
    ],
    [
     "ما يعرف ولا مثل",
@@ -799,11 +792,11 @@
     "wala + a noun = not a single: wala kilma (ولا كلمة) 'not a word'"
    ],
    [
-    "كلام شيبان",
-    "kalām shēbān",
+    "كلام شواب",
+    "kalām shuwwāb",
     "old men's talk, old-fashioned stuff",
     "كلام كبار السن",
-    "(recognise) friends' talk; ish-shēbān = the old men"
+    "(recognise) ish-shuwwāb = the old men; one old man: shāyib (شايب)"
    ],
    [
     "بتعلمها بداله",
@@ -815,8 +808,7 @@
   ],
   "receptive": [
    2,
-   3,
-   7
+   6
   ]
  },
  {
@@ -1060,11 +1052,11 @@
     "to a woman: rafaʿti rāsi (رفعتي راسي)"
    ],
    [
-    "فشلة",
-    "fashla",
-    "how embarrassing! (friends only)",
-    "",
-    "(recognise)"
+    "صور الهدف",
+    "ṣawwar il-hadaf",
+    "he filmed the goal",
+    "صوّر الهدف",
+    "I filmed it: ṣawwartah (صورته)"
    ],
    [
     "قروب العائلة",
@@ -1083,7 +1075,6 @@
   ],
   "receptive": [
    2,
-   5,
    7
   ]
  },
@@ -1284,9 +1275,9 @@
    ],
    [
     "A",
-    "إذا ما عندنا امتحانات. بس هالمرة ما بنفوتها!",
-    "idha ma ʿindana imtiḥānāt. bas hal-marra ma binfawwitha!",
-    "When we haven't got exams. But this time we're not missing it!"
+    "إذا ما عندنا امتحانات. بس هالمرة أكيد بنطلع!",
+    "idha ma ʿindana imtiḥānāt. bas hal-marra akīd biniṭlaʿ!",
+    "When we haven't got exams. But this time we're definitely going!"
    ]
   ],
   "items": [
@@ -1312,11 +1303,11 @@
     "I'll grill: bashwi (بشوي)"
    ],
    [
-    "وناسة",
-    "wanāsa",
-    "(it'll be) great fun",
-    "متعة",
-    "(recognise)"
+    "بنسولف للصبح",
+    "binsōlif liṣ-ṣubḥ",
+    "we'll chat till morning",
+    "سنتحدث حتى الصباح",
+    ""
    ],
    [
     "هو اللي بيسوق",
@@ -1345,19 +1336,11 @@
     "it'll get dirty (a feminine noun)",
     "ستتسخ",
     "a masculine noun: biytwassakh (بيتوسخ)"
-   ],
-   [
-    "ما بنفوتها",
-    "ma binfawwitha",
-    "we won't miss it (f.)",
-    "لن نفوتها",
-    "a masculine thing: ma binfawwitah (ما بنفوته)"
    ]
   ],
   "receptive": [
    0,
-   1,
-   3
+   1
   ]
  },
  {
@@ -1510,7 +1493,7 @@
    [
     "A",
     "يلا، أبوي داخل ويا الضيوف. بس لا تقول له برو!",
-    "yalla, ubūy dākhil wiyya iẓ-ẓyūf. bas la tgūl-lah brō!",
+    "yalla, ubūy dākhil wiyya ẓ-ẓyūf. bas la tgūl-lah brō!",
     "Come on, my dad's inside with the guests. Just don't call him bro!"
    ],
    [
@@ -1533,8 +1516,8 @@
    ],
    [
     "A",
-    "تنقال، عادي. بس قدام الشيبان خلك على العربي",
-    "tingāl, ʿādi. bas jiddām ish-shēbān khallak ʿala l-ʿarabi",
+    "تنقال، عادي. بس قدام الشواب خلك على العربي",
+    "tingāl, ʿādi. bas jiddām ish-shuwwāb khallak ʿala l-ʿarabi",
     "You can say them, that's fine. But in front of the old men, stick to Arabic."
    ],
    [
@@ -1591,8 +1574,8 @@
     "of a masculine noun: ma yingāl (ما ينقال)"
    ],
    [
-    "قدام الشيبان",
-    "jiddām ish-shēbān",
+    "قدام الشواب",
+    "jiddām ish-shuwwāb",
     "in front of the old men",
     "أمام كبار السن",
     "(recognise)"
@@ -1619,11 +1602,11 @@
     "(recognise)"
    ],
    [
-    "من ذاك اليوم",
-    "min dhāk il-yōm",
-    "since that day",
-    "منذ ذلك اليوم",
-    ""
+    "هذا مجلس، مب ملعب",
+    "hādha majlis, mub malʿab",
+    "this is a majlis, not a football pitch",
+    "هذا مجلس وليس ملعبًا",
+    "(recognise)"
    ],
    [
     "يلا ندخل",
@@ -1636,7 +1619,8 @@
   "task": "This week: record two short voice notes saying you can't come on Friday and suggesting another day. Send the first to Rāshid: casual, with a few English words (brō, sōri, ōkē). Then say the same thing to Bū Rāshid: yā ʿammi or ṭāl ʿumrak, all in Arabic, no English. Listen back and check that the two really sound different.",
   "receptive": [
    3,
-   6
+   6,
+   7
   ]
  },
  {

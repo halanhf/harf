@@ -233,11 +233,11 @@
         ""
       ],
       [
-        "ما انتبهت",
-        "ma ntibaht",
-        "I didn't notice; you didn't notice (to a man)",
-        "لم أنتبه",
-        "to a woman: ma ntibahti (ما انتبهتي)"
+        "رقم غلط",
+        "ragam ghalaṭ",
+        "a wrong figure, a wrong number",
+        "رقم خاطئ",
+        ""
       ],
       [
         "التقنية",
@@ -477,11 +477,11 @@
         "(recognise)"
       ],
       [
-        "انت مصدق؟",
-        "inta mṣaddig?",
-        "do you believe it? (to a man)",
-        "هل أنت مصدق؟",
-        "to a woman: inti mṣaddga? (انتي مصدقة؟)"
+        "وظايف أكثر",
+        "waẓāyif akthar",
+        "more jobs",
+        "وظائف أكثر",
+        ""
       ],
       [
         "مب كل الوظايف",
@@ -561,7 +561,7 @@
       [
         "A",
         "المقال بالإنجليزي، ورسالة توصية من الدكتور حق المادة",
-        "il-maqāl bil-ingilīzi, w risālat tawṣiya min id-daktōr ḥagg il-mādda",
+        "il-maqāl bil-ingilīzi, w risālat tawṣiya min id-daktōr ḥagg il-māda",
         "The essay in English, and a reference letter from the professor who teaches the course."
       ],
       [
@@ -637,11 +637,11 @@
         "(recognise)"
       ],
       [
-        "طرشته لك",
-        "ṭarrashtah lak",
-        "I sent it (m.) to you (to a man)",
-        "أرسلته لك",
-        "to a woman: ṭarrashtah lich (طرشته لج)"
+        "الدكتور حق المادة",
+        "id-daktōr ḥagg il-māda",
+        "the lecturer for the module, the professor who teaches the course",
+        "أستاذ المادة",
+        ""
       ],
       [
         "بيكون كتبها",
@@ -957,7 +957,7 @@
     "stage": 4,
     "title": "Water was precious",
     "goal": "In Bū Rāshid's majlis, with Sēf there, hear where water came from in the old days and where it comes from now",
-    "tip": "Recycle the topic first with a pronoun that points back: il-māy ayyām awwal kān ghāli 'water, in the old days, it was precious'; in-niʿma la tẓayyiʿha 'a blessing, you don't waste it'. kān + present is 'used to': kānaw yākhdhūnah 'they used to get it'.",
+    "tip": "Recycle the topic first with a pronoun that points back: il-māy ayyām awwal kān ghāli 'water, in the old days, it was precious'; in-niʿma la tẓayyiʿha 'a blessing, you don't waste it'. kān + present is 'used to': kintu tākhdhūnah? 'did you (all) use to get it?'.",
     "grammar": "recycle: topic first with a resumptive pronoun; kān + present ('used to'); ayyām awwal vs il-ḥīn",
     "dialogue": [
       [
@@ -968,9 +968,9 @@
       ],
       [
         "B",
-        "من وين كانوا ياخذونه يا عمي؟",
-        "min wēn kānaw yākhdhūnah yā ʿammi?",
-        "Where did people get it from, uncle?"
+        "من وين كنتوا تاخذونه يا عمي؟",
+        "min wēn kintu tākhdhūnah yā ʿammi?",
+        "Where did you all get it from, uncle?"
       ],
       [
         "A",
@@ -1144,8 +1144,8 @@
       ],
       [
         "B",
-        "في الفهيدي بعده في بيوت قديمة، صح؟",
-        "fi l-Fahīdi baʿdah fī byūt gadīma, ṣaḥḥ?",
+        "في الفهيدي للحين في بيوت قديمة، صح؟",
+        "fi l-Fahīdi lil-ḥīn fī byūt gadīma, ṣaḥḥ?",
         "In Al Fahidi there are still old houses, right?"
       ],
       [
@@ -1205,8 +1205,8 @@
         "a city: madīna (مدينة)"
       ],
       [
-        "بعده في",
-        "baʿdah fī",
+        "للحين في",
+        "lil-ḥīn fī",
         "there's still, there are still",
         "لا يزال هناك",
         ""
@@ -1239,7 +1239,7 @@
     "title": "Recycling at the office",
     "goal": "At the office, Maryam explains the new recycling bins; suggest printing less, and agree a plan for plastic bottles",
     "tip": "Recycle word order for emphasis: niṭbaʿ-lah huwa bas 'we print just for him' puts the stress on huwa. Fuṣḥā words you'll hear at work: iʿādat tadwīr 'recycling', il-bīʼa 'the environment'.",
-    "grammar": "recycle: fronting and emphasis (huwa bas, il-bāgi …); lēsh ma + verb for suggestions",
+    "grammar": "recycle: fronting and emphasis (huwa bas, il-bāgi …); shu raʼyich + verb for suggestions",
     "dialogue": [
       [
         "A",
@@ -1261,9 +1261,9 @@
       ],
       [
         "B",
-        "زين. بس ترا نحن نطبع وايد. ليش ما نطرش الملفات بالإيميل؟",
-        "zēn. bas tara niḥin niṭbaʿ wāyid. lēsh ma nṭarrish il-malaffāt bil-īmēl?",
-        "OK. But we print a lot, you know. Why don't we send the files by email?"
+        "زين. بس ترا نحن نطبع وايد. شو رأيج نطرش الملفات بالإيميل؟",
+        "zēn. bas tara niḥin niṭbaʿ wāyid. shu raʼyich nṭarrish il-malaffāt bil-īmēl?",
+        "OK. But we print a lot, you know. What do you think about sending the files by email?"
       ],
       [
         "A",
@@ -1370,15 +1370,15 @@
     "id": "s4u107",
     "stage": 4,
     "title": "If there were more trees",
-    "goal": "In a park one evening with Sēf, notice how much cooler it is under the trees, and talk about which trees can stand the heat",
+    "goal": "In a park one evening with Sēf and Fahad, notice how much cooler it is under the trees, and talk about which trees can stand the heat",
     "tip": "Recycle lō kān fī … chān for a city that isn't (yet) like that: lō kān fī shajar akthar, chān iṣ-ṣēf akhaff 'if there were more trees, summer would be easier'. ʿashān chī 'that's why' links a reason to a plan.",
     "grammar": "recycle: lō kān fī … chān + adjective; comparatives (abrad, akhaff); yā rēt",
     "dialogue": [
       [
         "B",
-        "الحديقة حلوة الليلة. الجو أبرد هني",
-        "il-ḥadīga ḥilwa l-lēla. il-jaww abrad hni",
-        "The park's lovely tonight. It's cooler here."
+        "الحديقة حلوة الليلة. تحسون الجو أبرد هني؟",
+        "il-ḥadīga ḥilwa l-lēla. tḥissūn il-jaww abrad hni?",
+        "The park's lovely tonight. Can you both feel it's cooler here?"
       ],
       [
         "A",
@@ -1614,7 +1614,7 @@
         "هذا تعبك",
         "hādha taʿabak",
         "that's your own hard work (paying off) (to a man)",
-        "هذا ثمرة تعبك",
+        "هذه ثمرة تعبك",
         "to a woman: hādha taʿabich (هذا تعبج)"
       ]
     ]
@@ -1683,9 +1683,9 @@
       ],
       [
         "B",
-        "ما ينعرف دايما. بس نعلمهم يستخدمونه صح",
-        "ma yinʿirif dāyman. bas nʿallimhum yistakhdimūnah ṣaḥḥ",
-        "You can't always tell. But we teach them to use it properly."
+        "ما ينعرف دايما. بس لازم تعلمونهم يستخدمونه صح",
+        "ma yinʿirif dāyman. bas lāzim tʿallmūnhum yistakhdimūnah ṣaḥḥ",
+        "You can't always tell. But you (lecturers) have to teach them to use it properly."
       ]
     ],
     "items": [

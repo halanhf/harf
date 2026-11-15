@@ -2,7 +2,7 @@
  {
   "id": "s4u058",
   "stage": 4,
-  "title": "Ēsh tabgha? A classmate from Jeddah",
+  "title": "Ēsh ismak? A classmate from Jeddah",
   "goal": "At university, a new Saudi classmate from Jeddah asks you for yesterday's lecture notes; catch his Saudi forms and ask him to slow down",
   "tip": "Saudi speakers from Jeddah say some everyday words differently. Learn to hear them, and keep your own: ēsh = shu 'what', abgha = abi 'I want', daḥḥīn = il-ḥīn 'now', īwa = hē 'yes', marra ḥilu = wāyid ḥilu 'really nice'. If it's too fast: ma lḥigt ʿalēk.",
   "grammar": "recycle; listening to other Gulf voices (receptive)",
@@ -133,7 +133,7 @@
     "to a woman: khaṭṭich ḥilu"
    ]
   ],
-  "culture": "Saudi Arabia has several big dialect groups. Jeddah, Mecca and Medina, in the west, speak Hijazi: ēsh 'what', abgha 'I want', daḥīn 'now', īwa 'yes'. Riyadh and the centre speak Najdi, and the Eastern Province speaks a Gulf dialect close to Kuwaiti and Bahraini. Saudis are the biggest group of Gulf visitors you'll hear in Dubai's malls and universities.",
+  "culture": "Saudi Arabia has several big dialect groups. Jeddah, Mecca and Medina, in the west, speak Hijazi: ēsh 'what', abgha 'I want', daḥīn 'now', īwa 'yes'. Riyadh and the centre speak Najdi, and the Eastern Province speaks a Gulf dialect close to Kuwaiti and Bahraini.",
   "receptive": [
    0,
    1,
@@ -424,7 +424,7 @@
  {
   "id": "s4u061",
   "stage": 4,
-  "title": "Wish rāyak? A fan from Riyadh",
+  "title": "Wish raʼyak? A fan from Riyadh",
   "goal": "At a café showing a match, the Saudi fan from Riyadh at the next table starts chatting about football; catch his Najdi forms and tell him who you support",
   "tip": "Riyadh speech has its own words, too: wish 'what' (wish raʼyak? 'what do you think?'), wājid 'very' (UAE wāyid), shāhi 'tea' (UAE chāy), and the greeting kēf ḥālak? Answer in your own Gulf forms: he'll understand you.",
   "grammar": "recycle; listening to other Gulf voices (receptive)",
@@ -587,7 +587,7 @@
     "A",
     "زين. شنو رايك نقسم الشغل بيننا؟",
     "zēn. shinu raʼyak ngassim ish-shughul bēnna?",
-    "Yes. What do you think about splitting the work between us?"
+    "Good. What do you think about splitting the work between us?"
    ],
    [
     "B",
@@ -599,7 +599,7 @@
     "A",
     "والثنين الباقيين؟ هم قالوا بيكتبون المقدمة",
     "w ith-thnēn il-bāgyīn? humma gālaw biyiktibūn il-mugaddima",
-    "Good. And the other two? They said they'll write the introduction."
+    "And the other two? They said they'll write the introduction."
    ],
    [
     "B",
@@ -697,7 +697,7 @@
     "to a woman: ṭarrshi fi l-grūb"
    ]
   ],
-  "culture": "Gulf Arabic, the family Emirati belongs to, is spoken in Kuwait, Bahrain, Qatar, the UAE and eastern Saudi Arabia. Each country's speech has its own marks: Qatari humma 'they', Kuwaiti shinu and iḥna, Bahraini āni 'I' in some communities. Oman has its own dialects, and many Omanis say ج as g. Speakers usually understand each other without any trouble.",
+  "culture": "Gulf Arabic, the family Emirati belongs to, is spoken in Kuwait, Bahrain, Qatar, the UAE and eastern Saudi Arabia. Each country's speech has its own marks: Qatari humma 'they', Kuwaiti shinu and iḥna, Bahraini āni 'I' in some communities. Oman has its own dialects, and many Omanis say ج as g.",
   "receptive": [
    4,
    5
@@ -1560,7 +1560,7 @@
    [
     "A",
     "لا تطول عليهم، الفرص ما تنتظر حد",
-    "la ṭṭawwil ʿalēhum, il-furaṣ ma tintiẓir ḥad",
+    "la tṭawwil ʿalēhum, il-furaṣ ma tintiẓir ḥad",
     "Don't keep them waiting; chances don't wait for anyone."
    ],
    [
@@ -1616,10 +1616,10 @@
    ],
    [
     "لا تطول عليهم",
-    "la ṭṭawwil ʿalēhum",
+    "la tṭawwil ʿalēhum",
     "don't keep them waiting (to a man)",
     "لا تتأخر عليهم",
-    "to a woman: la ṭṭawwlīn ʿalēhum"
+    "to a woman: la tṭawwlīn ʿalēhum"
    ],
    [
     "الفرص ما تنتظر حد",
@@ -1671,7 +1671,7 @@
     ""
    ]
   ],
-  "culture": "Emiratis move between registers every day. Everyday life is in Emirati Arabic, formal settings such as the news, speeches and education use fuṣḥā, and English is widely used at work. Sanaʿ is the Emirati word for traditional good manners: how to greet, sit, serve coffee and speak to elders in the majlis.",
+  "culture": "Emiratis move between registers every day. Everyday life is in Emirati Arabic, formal settings such as the news, speeches and education use fuṣḥā, and many workplaces also run in English. Sanaʿ is the Emirati word for the inherited code of manners and behaviour that shapes the majlis, a part of Emirati identity built on mutual respect.",
   "receptive": [
    2,
    5,
@@ -1720,7 +1720,7 @@
    [
     "B",
     "طلبت منهم يزيدون الراتب شوي",
-    "ṭalabt minnhum yzīdūn ir-rātib shwayy",
+    "ṭalabt minhum yzīdūn ir-rātib shwayy",
     "I asked them to raise it a little."
    ],
    [
@@ -1772,7 +1772,7 @@
    ],
    [
     "طلبت منهم",
-    "ṭalabt minnhum",
+    "ṭalabt minhum",
     "I asked them (for something)",
     "طلبت منهم",
     ""
