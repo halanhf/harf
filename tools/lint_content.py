@@ -220,6 +220,11 @@ def check_line(ar, tr, en, where, E, W, mx):
     if "ḍ" in tr: W(f"{where} uses ḍ: the gulf scheme writes ẓ for both ض and ظ")
     if re.search(r"\bḥadd\b", tr) and "حد" in ar: W(f"{where} 'someone' is ḥad (one d); ḥadd is 'edge, limit'")
     if re.search(r"(?:^|[\s,.!?;:])lā(?=$|[\s,.!?;:])", tr) and "لا" in ar: W(f"{where} 'no' / 'don't' is la, not lā (STYLE §3)")
+    C = r"(?:sh|kh|gh|th|dh|ch|[bdfghjklmnqrstvwyzḥṣṭẓʿʼ])"
+    m4 = re.search(rf"\bbi[ytn]{C}{C}\w*", tr)
+    if m4 and not re.match(r"bi[ytn](?:sh|kh|gh|th|dh|ch)[aeiouāīūēō]", m4.group(0)): W(f"{where} {m4.group(0)}: a helping vowel is needed after b- before two consonants (biyikhtār, bitikhsar; STYLE §2)")
+    m5 = re.search(r"\b\w*([tskdgz])\1h(?:a|um)\b", tr)
+    if m5: W(f"{where} {m5.group(0)}: hyphenate after a double consonant before -ha/-hum (radd-hum, gadd-ha; STYLE §3)")
     for bad, good in (("جدام", "قدام"), ("ترى", "ترا")):
         if re.search(rf"(?:^|\s){bad}(?:\s|$|[؟!.،])", ar): W(f"{where} write {good}, the course spelling, not {bad}")
     m3 = re.search(r"\b\w*[^tskdgcz\s-]-h(?:a|um)\b", tr)
