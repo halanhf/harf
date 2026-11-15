@@ -592,7 +592,7 @@
   "title": "Coffee in the majlis",
   "goal": "Bū Rāshid welcomes you and serves Arabic coffee: accept a cup, and say when you've had enough",
   "tip": "A host gives orders with imperatives: tfaẓẓal igʿid 'please sit', yīb id-dalla 'bring the pot', ṣubb-lah 'pour (for) him'. ṣubb is a doubled verb like ḥuṭṭ 'put'. To refuse more, say bas, mashkūr and shake the cup.",
-  "grammar": "recycle: imperatives (tfaẓẓal igʿid, yīb, ṣubb-lah, khudh)",
+  "grammar": "recycle: imperatives (tfaẓẓal igʿid, yīb, ṣubb-lah) and object -ha (aḥibbha)",
   "dialogue": [
    [
     "A",
@@ -674,11 +674,11 @@
     "to a woman: tfaẓẓali igʿidi (تفضلي اقعدي)"
    ],
    [
-    "خذ تمر",
-    "khudh tamr",
-    "have some dates (to a man)",
-    "خذ تمرًا",
-    "to a woman: khudhi tamr (خذي تمر)"
+    "أحبها",
+    "aḥibbha",
+    "I love it, I like it (a feminine thing: coffee, a city); I love her",
+    "أحبها",
+    "a masculine thing: aḥibbah (أحبه)"
    ],
    [
     "تبي بعد؟",
@@ -895,11 +895,11 @@
     "to a woman: tbakhkhari (تبخري)"
    ],
    [
-    "قربه صوبك",
-    "garribah ṣōbak",
-    "bring it close to you (to a man)",
-    "قربه منك",
-    "to a woman: garribīh ṣōbich (قربيه صوبج)"
+    "قربه",
+    "garribah",
+    "bring it closer (a masculine thing) (to a man)",
+    "قربه",
+    "to a woman: garribīh (قربيه); garribah ṣōbak 'bring it close to you'"
    ],
    [
     "ريحته حلوة",
