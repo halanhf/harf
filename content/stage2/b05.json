@@ -15,9 +15,9 @@
    ],
    [
     "B",
-    "ما أقدر، عندي شغل لين الساعة ثلاث",
-    "ma agdar, ʿindi shughul lēn is-sāʿa thalāth",
-    "I can't, I've got work until three."
+    "هلا فيك! ما أقدر، عندي شغل لين الساعة ثلاث",
+    "hala fīk! ma agdar, ʿindi shughul lēn is-sāʿa thalāth",
+    "Hi! I can't, I've got work until three."
    ],
    [
     "A",
@@ -45,9 +45,9 @@
    ],
    [
     "A",
-    "اتفقنا. صار لي زمان ما شفتك!",
-    "ittafagna. ṣār-li zamān ma shiftak!",
-    "Deal. I haven't seen you for ages!"
+    "العفو. اتفقنا! صار لي زمان ما شفتك",
+    "il-ʿafu. ittafagna! ṣār-li zamān ma shiftak",
+    "You're welcome. Deal! I haven't seen you for ages!"
    ]
   ],
   "items": [
@@ -250,7 +250,7 @@
    [
     "B",
     "أحسن أروح يا أم سيف، عندي محاضرة الصبح",
-    "aḥsan arūḥ yā Umm Sēf, ʿindi muḥāẓra iṣ-ṣubḥ",
+    "aḥsan arūḥ yā Umm Sēf, ʿindi muḥāẓra ṣ-ṣubḥ",
     "I'd better go, Umm Sēf, I've got a lecture in the morning."
    ],
    [
@@ -314,11 +314,11 @@
     ""
    ],
    [
-    "اشرب",
-    "ishrab",
-    "drink, have (a drink) (to a man)",
-    "اشرب",
-    "to a woman: ishrabi (اشربي)"
+    "اشرب قهوة",
+    "ishrab gahwa",
+    "have a coffee (to a man)",
+    "اشرب قهوة",
+    "to a woman: ishrabi gahwa (اشربي قهوة)"
    ],
    [
     "تسلمين",
@@ -428,7 +428,7 @@
     "yōm wiṣalt",
     "when I arrived; when you arrived (to a man)",
     "عندما وصلت",
-    "also: lamma wiṣalt (لما وصلت); to a woman: yōm wiṣalti"
+    "to a woman: yōm wiṣalti; also: lamma wiṣalt (لما وصلت)"
    ],
    [
     "يوم ييت",
@@ -502,7 +502,7 @@
    [
     "B",
     "اشتريتها أمس. انتو بس تعالوا بدري!",
-    "ishtarētha ams. intu bas taʿālu badri!",
+    "ishtarēt-ha ams. intu bas taʿālu badri!",
     "I bought them yesterday. You lot just come early!"
    ],
    [
@@ -662,7 +662,7 @@
     "bitibda",
     "it's going to start, it'll start (a feminine thing: a lecture, a party)",
     "ستبدأ",
-    "a masculine thing: biybda (بيبدا)"
+    "a masculine thing (a film, a meeting): biyibda (بيبدا)"
    ],
    [
     "يقعد",
@@ -734,7 +734,7 @@
    ],
    [
     "B",
-    "هيه، الامتحان اللي يوم الإثنين. بدرس لين الليل",
+    "هيه، الامتحان اللي يوم الاثنين. بدرس لين الليل",
     "hē, il-imtiḥān illi yōm il-ithnēn. badris lēn il-lēl",
     "Yes, the one on Monday. I'll study until late at night."
    ],
@@ -768,7 +768,7 @@
     ""
    ],
    [
-    "يوم الإثنين",
+    "يوم الاثنين",
     "yōm il-ithnēn",
     "Monday, on Monday",
     "يوم الاثنين",
@@ -820,9 +820,9 @@
    ],
    [
     "B",
-    "زين، شغلي وايد حلو. والمدير اللي عندنا طيب",
-    "zēn, shughli wāyid ḥilu. w il-mudīr illi ʿindana ṭayyib",
-    "Good, I really like my job. And the manager we've got is nice."
+    "هلا فيج! زين، شغلي وايد حلو. والمدير اللي عندنا طيب",
+    "hala fīch! zēn, shughli wāyid ḥilu. w il-mudīr illi ʿindana ṭayyib",
+    "Hi! Good, I really like my job. And the manager we've got is nice."
    ],
    [
     "A",
