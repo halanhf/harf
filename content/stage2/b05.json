@@ -187,7 +187,7 @@
     "baʿd ma khallaṣt",
     "after I finished; after you finished (to a man)",
     "بعد أن انتهيت",
-    "a woman says, or to a woman: baʿd ma khallaṣti"
+    "to a woman: baʿd ma khallaṣti (بعد ما خلصتي)"
    ],
    [
     "أول شي",
@@ -222,7 +222,7 @@
     "rijaʿt il-bēt",
     "I went home, I got home; you went home (to a man)",
     "عدت إلى البيت",
-    "a woman says, or to a woman: rijaʿti l-bēt"
+    "to a woman: rijaʿti l-bēt"
    ],
    [
     "لين الصبح",
@@ -237,15 +237,15 @@
   "id": "s2u043",
   "stage": 2,
   "title": "Before you go, have a coffee",
-  "goal": "Leave Sēf's house politely when Umm Sēf asks you to stay",
+  "goal": "Leave politely at the end of a visit to Sēf's family, when Umm Sēf asks you to stay",
   "tip": "'Before' + a verb is gabil la, and the verb after it is in the present form: gabil la trūḥ 'before you go', gabil la ansa 'before I forget'. Before a noun it's just gabil: gabil il-maghrib 'before maghrib'.",
   "grammar": "gabil la + present verb: 'before …'",
   "dialogue": [
    [
     "A",
-    "وين رايح؟ اقعد لين يرجع سيف",
-    "wēn rāyiḥ? igʿid lēn yirjaʿ Sēf",
-    "Where are you off to? Stay until Sēf gets back."
+    "وين رايح؟ اقعد لين يرجع بو سيف",
+    "wēn rāyiḥ? igʿid lēn yirjaʿ Bū Sēf",
+    "Where are you off to? Stay until Sēf's dad gets back."
    ],
    [
     "B",
@@ -263,7 +263,7 @@
     "B",
     "تسلمين! بشربها بسرعة قبل لا أتأخر",
     "tislamīn! bashrabha b-surʿa gabil la atʼakhkhar",
-    "Thank you! I'll drink it quickly before I'm late."
+    "Thank you! I'll drink it quickly, before it gets too late."
    ],
    [
     "A",
@@ -275,7 +275,7 @@
     "B",
     "ما قصرتي! ما في داعي",
     "mā gaṣṣarti! ma fī dāʿi",
-    "That's so kind of you! There was no need."
+    "That's so kind of you! There's no need."
    ],
    [
     "A",
@@ -330,7 +330,7 @@
    [
     "البيت بيتك",
     "il-bēt bētak",
-    "make yourself at home (lit. the house is your house) (to a man)",
+    "you're always welcome here (lit. the house is your house) (to a man)",
     "البيت بيتك",
     "to a woman: il-bēt bētich"
    ],
@@ -354,7 +354,7 @@
   "id": "s2u044",
   "stage": 2,
   "title": "As soon as I arrived",
-  "goal": "Tell Sēf about the day you first came to Dubai, and promise to message him from your trip",
+  "goal": "Tell Sēf about the day you first came to Dubai, and about your trip to London tomorrow",
   "tip": "awwal ma means 'as soon as': awwal ma ṭilaʿt 'as soon as I came out'. With a present verb it points ahead: awwal ma tōṣal 'as soon as you get there'. yōm + a past verb means 'when': yōm wiṣalt 'when I arrived'. lamma works too.",
   "grammar": "awwal ma 'as soon as'; yōm + past 'when'",
   "dialogue": [
@@ -414,7 +414,7 @@
     "awwal ma ṭilaʿt",
     "as soon as I came out; as soon as you came out (to a man)",
     "حالما خرجت",
-    "a woman says, or to a woman: awwal ma ṭilaʿti"
+    "to a woman: awwal ma ṭilaʿti (أول ما طلعتي)"
    ],
    [
     "أول ما توصل",
@@ -582,7 +582,7 @@
   "stage": 2,
   "title": "The guy by the door",
   "goal": "Point out people and things around the university to Sēf",
-  "tip": "illi means 'who, that, which' and never changes. Use it after a noun with il-: ir-rayyāl illi yamm il-bāb 'the man by the door', il-kitāb illi ʿala ṭ-ṭāwla 'the book on the table'. After a noun without il-, leave it out: ʿindi rbīʿ yidris hni 'I've got a friend who studies here'.",
+  "tip": "illi 'who, that, which' never changes. Use it after a definite noun (with il- or an ending like -i 'my'): ir-rayyāl illi yamm il-bāb 'the man by the door', rbīʿi illi min Landan 'my friend from London'. Otherwise leave it out: ʿindi rbīʿ yidris hni 'I've got a friend who studies here'.",
   "grammar": "illi after a definite noun",
   "dialogue": [
    [
@@ -632,9 +632,9 @@
    [
     "اللي",
     "illi",
-    "who, that, which (after a noun with il-)",
+    "who, that, which (after a definite noun)",
     "الذي / التي",
-    "never changes for gender or number; you'll see written الي"
+    "never changes for gender or number; not used after an indefinite noun; you'll see written الي"
    ],
    [
     "الريّال اللي",
@@ -660,7 +660,7 @@
    [
     "بتبدا",
     "bitibda",
-    "it's going to start, it'll start (a feminine thing: a lecture, a film)",
+    "it's going to start, it'll start (a feminine thing: a lecture, a party)",
     "ستبدأ",
     "a masculine thing: biybda (بيبدا)"
    ],
@@ -832,9 +832,9 @@
    ],
    [
     "B",
-    "بس الدوام اللي يبدا الساعة سبع بدري شوي!",
-    "bas id-dawām illi yibda s-sāʿa sabʿ badri shwayy!",
-    "But a working day that starts at seven is a bit early!"
+    "بس الدوام اللي عندنا يبدا الساعة سبع، بدري شوي!",
+    "bas id-dawām illi ʿindana yibda s-sāʿa sabʿ, badri shwayy!",
+    "But the hours we've got start at seven, that's a bit early!"
    ],
    [
     "A",
@@ -850,9 +850,9 @@
    ],
    [
     "A",
-    "هيه. نشرب قهوة سوا بعد الدوام",
-    "hē. nishrab gahwa sawa baʿd id-dawām",
-    "Yes. Let's get a coffee together after work."
+    "هيه. بعدين نشرب قهوة كلنا في المكتب",
+    "hē. baʿdēn nishrab gahwa killna fi l-maktab",
+    "Yes. Later we'll all have a coffee in the office."
    ]
   ],
   "items": [
@@ -992,7 +992,7 @@
     "ana illi",
     "I'm the one who, it was me who",
     "أنا الذي",
-    "a woman says the same: ana illi"
+    "a woman says the same"
    ],
    [
     "الشي اللي",

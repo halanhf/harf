@@ -22,7 +22,7 @@
    [
     "A",
     "أنا بروح البر ويا الشباب. بتيي؟",
-    "ana barūḥ il-barr wiyya sh-shabāb. bityī?",
+    "ana barūḥ il-barr wiyya sh-shabāb. bitiyi?",
     "I'm going to the desert with the guys. Are you coming?"
    ],
    [
@@ -67,10 +67,10 @@
    ],
    [
     "بتيي؟",
-    "bityī?",
+    "bitiyi?",
     "will you come? are you coming? (to a man)",
     "هل ستأتي؟",
-    "to a woman: bityīn? (بتيين); you'll see written بتجي"
+    "to a woman: bitiyīn? (بتيين); you'll see written بتجي"
    ],
    [
     "بتمر علي؟",
@@ -128,7 +128,7 @@
    [
     "A",
     "سالم، عندنا عشا يوم الخميس، كل المكتب. بتيي؟",
-    "Sālim, ʿindana ʿasha yōm il-khamīs, kill il-maktab. bityī?",
+    "Sālim, ʿindana ʿasha yōm il-khamīs, kill il-maktab. bitiyi?",
     "Salim, we're having a dinner on Thursday, the whole office. Are you coming?"
    ],
    [
@@ -147,7 +147,7 @@
     "B",
     "لا والله، ما بروح. برجع البيت وبنام!",
     "la wallāh, ma barūḥ. barjaʿ il-bēt w banām!",
-    "No way, I'm not going. I'll go home and sleep!"
+    "No, honestly, I'm not going. I'll go home and sleep!"
    ],
    [
     "A",
@@ -164,7 +164,7 @@
    [
     "A",
     "زين! والمرة الياية بتيي ويانا",
-    "zēn! w il-marra l-yāya bityī wiyyāna",
+    "zēn! w il-marra l-yāya bitiyi wiyyāna",
     "Good! And next time you're coming with us."
    ]
   ],
@@ -230,7 +230,7 @@
     "il-marra l-yāya",
     "next time",
     "المرة القادمة",
-    "you'll see written المرة الجاية"
+    "you'll see written المرة الجاية; same as il-marra th-thānya (المرة الثانية)"
    ]
   ]
  },
@@ -356,7 +356,7 @@
   "stage": 2,
   "title": "A promise to Maryam",
   "goal": "Ask Maryam about her day in Sharjah and promise to finish the file while she's out",
-  "tip": "Talking to a woman, the future keeps -īn: bitrūḥīn 'you'll go', bitsawwīn 'you'll do', bityīn 'you'll come'. To promise, use b- with the verb: bakhallṣah 'I'll finish it', bakhabbrich 'I'll let you know'. waʿd? 'promise?' gets the answer waʿd! 'I promise!'",
+  "tip": "Talking to a woman, the future keeps -īn: bitrūḥīn 'you'll go', bitsawwīn 'you'll do', bitiyīn 'you'll come'. To promise, use b- with the verb: bakhallṣah 'I'll finish it', bakhabbrich 'I'll let you know'. waʿd? 'promise?' gets the answer waʿd! 'I promise!'",
   "grammar": "future b- to a woman: bitrūḥīn, bitsawwīn",
   "dialogue": [
    [
@@ -398,7 +398,7 @@
    [
     "B",
     "وعد! وانتي متى بتيين المكتب؟",
-    "waʿd! w inti mita bityīn il-maktab?",
+    "waʿd! w inti mita bitiyīn il-maktab?",
     "I promise! And when will you come into the office?"
    ]
   ],
@@ -449,7 +449,7 @@
     "بخبرج",
     "bakhabbrich",
     "I'll let you know, I'll tell you (to a woman)",
-    "سأخبرك",
+    "سأخبركِ",
     "to a man: bakhabbrak (بخبرك)"
    ],
    [
@@ -461,10 +461,10 @@
    ],
    [
     "بتيين؟",
-    "bityīn?",
+    "bitiyīn?",
     "will you come? are you coming? (to a woman)",
     "هل ستأتين؟",
-    "to a man: bityī?; you'll see written بتجين"
+    "to a man: bitiyi?; you'll see written بتجين"
    ]
   ]
  },
@@ -484,9 +484,9 @@
    ],
    [
     "A",
-    "بنروح المكتبة وندرس طول اليوم. بتيي؟",
-    "binrūḥ il-maktaba w nidris ṭūl il-yōm. bityī?",
-    "We're going to the library to study all day. Are you coming?"
+    "هلا فيك! بنروح المكتبة وندرس طول اليوم. بتيي؟",
+    "hala fīk! binrūḥ il-maktaba w nidris ṭūl il-yōm. bitiyi?",
+    "Hi! We're going to the library to study all day. Are you coming?"
    ],
    [
     "B",
@@ -532,7 +532,7 @@
     "wiyyākum",
     "with you (a group)",
     "معكم",
-    "with you (one man): wiyyāk; with us: wiyyāna"
+    "to one man: wiyyāk; to one woman: wiyyāch; with us: wiyyāna"
    ],
    [
     "بنمر عليك",
@@ -599,7 +599,7 @@
    [
     "A",
     "لا، قاعد أشرب كرك ويا الشباب. تبي تيي؟",
-    "la, gāʿid ashrab karak wiyya sh-shabāb. tabi tyī?",
+    "la, gāʿid ashrab karak wiyya sh-shabāb. tabi tiyi?",
     "No, I'm having a karak with the guys. Do you want to come?"
    ],
    [
@@ -669,8 +669,8 @@
     "أحد يتصل",
     "aḥad yittaṣil",
     "someone's calling",
-    "أحد يتصل",
-    ""
+    "أحدهم يتصل",
+    "UAE also: ḥadd yittaṣil (حد يتصل)"
    ],
    [
     "بكلمك بعدين",
@@ -686,7 +686,7 @@
   "stage": 2,
   "title": "Calling Maryam in the car",
   "goal": "Call Maryam, find out what she's doing and ask her one quick question about the meeting",
-  "tip": "With a woman, gāʿid becomes gāʿda and the 'you' verb keeps -īn: shu gāʿda tsawwīn? 'what are you doing?', gāʿda tsūgīn? 'are you driving?'. A woman about herself: gāʿda asūg 'I'm driving'. About a man: il-mudīr gāʿid ytrayyāk 'the manager is waiting for you'.",
+  "tip": "With a woman, gāʿid becomes gāʿda and the 'you' verb keeps -īn: shu gāʿda tsawwīn? 'what are you doing?', gāʿda tsūgīn? 'are you driving?'. A woman about herself: gāʿda asūg 'I'm driving'. About a man: il-mudīr gāʿid yitrayyāk 'the manager is waiting for you'.",
   "grammar": "progressive to and about a woman: gāʿda + -īn",
   "dialogue": [
    [
@@ -722,14 +722,14 @@
    [
     "A",
     "الساعة عشر. والمدير قاعد يترياك!",
-    "is-sāʿa ʿashr. w il-mudīr gāʿid ytrayyāk!",
+    "is-sāʿa ʿashr. w il-mudīr gāʿid yitrayyāk!",
     "At ten. And the manager's waiting for you!"
    ],
    [
     "B",
     "أنا ياي! وانتي لا تسوقين بسرعة",
     "ana yāy! w inti la tsūgīn b-surʿa",
-    "I'm on my way! And don't you drive fast."
+    "I'm on my way! And don't drive too fast."
    ]
   ],
   "items": [
@@ -751,7 +751,7 @@
     "عندج وقت؟",
     "ʿindich wagt?",
     "have you got a moment? are you free? (to a woman)",
-    "هل لديك وقت؟",
+    "هل لديكِ وقت؟",
     "to a man: ʿindak wagt?"
    ],
    [
@@ -777,10 +777,10 @@
    ],
    [
     "يترياك",
-    "ytrayyāk",
+    "yitrayyāk",
     "he's waiting for you (to a man)",
     "ينتظرك",
-    "to a woman: ytrayyāch; Kuwait: yinṭirk (ينطرك)"
+    "to a woman: yitrayyāch; Kuwait: yinṭrak (ينطرك), U"
    ],
    [
     "لا تسوقين بسرعة",
@@ -948,9 +948,9 @@
    ],
    [
     "A",
-    "يمكن قاعدة تسوق. بكلمها أنا بعدين",
-    "yimkin gāʿda tsūg. bakallimha ana baʿdēn",
-    "Maybe she's driving. I'll call her later."
+    "يمكن الشبكة عندها مب زينة بعد. بكلمها أنا بعدين",
+    "yimkin ish-shabaka ʿind-ha mub zēna baʿad. bakallimha ana baʿdēn",
+    "Maybe her signal's bad too. I'll call her later."
    ]
   ],
   "items": [
@@ -1025,7 +1025,7 @@
   "title": "Sēf's mum answers the phone",
   "goal": "Call Sēf's house, speak politely to Umm Sēf and leave a message for Sēf",
   "tip": "gāʿid agrees with whoever is doing it: Sēf gāʿid yṣalli 'Sēf is praying', ana gāʿda asawwi l-ghada (a woman) 'I'm making lunch'. In the UAE you'll also hear yālis: yālis yṣalli. il-muhimm 'anyway, the main thing' moves a talk on to your point.",
-  "grammar": "progressive for he and she: gāʿid yṣalli, gāʿda asawwi",
+  "grammar": "progressive agrees with the subject: gāʿid yṣalli (he), gāʿda asawwi (I, a woman)",
   "dialogue": [
    [
     "B",
@@ -1041,21 +1041,21 @@
    ],
    [
     "B",
-    "بخير الله يسلمج. المهم، سيف موجود؟",
-    "b-khēr, allāh ysallmich. il-muhimm, Sēf mawjūd?",
-    "Fine, thank you. Anyway, is Sēf in?"
+    "بخير الله يسلمج. وانتي شحالج؟ سيف موجود؟",
+    "b-khēr, allāh ysallmich. w inti shḥālich? Sēf mawjūd?",
+    "Fine, thank you. And how are you? Is Sēf in?"
    ],
    [
     "A",
-    "هيه، بس قاعد يصلي. وأنا قاعدة أسوي الغدا",
-    "hē, bas gāʿid yṣalli. w ana gāʿda asawwi l-ghada",
-    "Yes, but he's praying. And I'm making lunch."
+    "الحمد لله. هيه، بس قاعد يصلي. وأنا قاعدة أسوي الغدا",
+    "il-ḥamdu lillāh. hē, bas gāʿid yṣalli. w ana gāʿda asawwi l-ghada",
+    "Fine, thank God. Yes, but he's praying. And I'm making lunch."
    ],
    [
     "B",
-    "ما بطول عليج. قولي له يتصل فيني، الله يخليج",
-    "ma baṭawwil ʿalēch. gūlī-lah yittaṣil fīni, allāh ykhallīch",
-    "I won't keep you. Please tell him to call me."
+    "ما بطول عليج. المهم، قولي له يتصل فيني، الله يخليج",
+    "ma baṭawwil ʿalēch. il-muhimm, gūlī-lah yittaṣil fīni, allāh ykhallīch",
+    "I won't keep you. Anyway, please tell him to call me."
    ],
    [
     "A",
@@ -1103,7 +1103,7 @@
     "ما بطول عليج",
     "ma baṭawwil ʿalēch",
     "I won't keep you long (to a woman)",
-    "لن أطيل عليك",
+    "لن أطيل عليكِ",
     "to a man: ma baṭawwil ʿalēk"
    ],
    [
