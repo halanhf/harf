@@ -10,7 +10,7 @@ will memorise whatever the course teaches. Be calibrated: do not invent problems
   what has already been taught.
 - Evidence: `python3 /home/claude/gulfcheck/attest.py word|phrase|unit …` (real Emirati and Kuwaiti writing),
   `python3 tools/lint_content.py {N} --gumar`, the research notes in
-  `/home/claude/research_notes/Gulf Arabic course to C1/`, any reference PDFs in `/home/claude/refs/`, and web search.
+  `/home/claude/research_notes/Gulf Arabic course to C1/`, the reference sources in `/home/claude/refs/` (read its README.md; grep the .txt files), and web search.
   Fuṣḥā words found in the corpus inside narration do not prove they are spoken (STYLE §10).
 
 ## Check every line and item

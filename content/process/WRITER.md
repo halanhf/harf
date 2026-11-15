@@ -16,7 +16,7 @@ against a corpus of real Gulf writing, and anything wrong will come back to you.
   `/home/claude/reports/Gulf Arabic course to C1.md`, and the corpus tool:
   `python3 /home/claude/gulfcheck/attest.py word <arabic>`, `phrase "<arabic>"`, `unit <file> [unit id]`
   (counts in ~9M words of Emirati (AE) and ~5M of Kuwaiti (KW) written dialect; 0 hits is a warning sign, not proof).
-  Search the web for anything you are unsure of. If a reference PDF has been added in `/home/claude/refs/`, use it.
+  Search the web for anything you are unsure of. Reference sources are in `/home/claude/refs/` (read its README.md; grep the .txt files).
 
 ## Write
 Output: `content/stage{N}/b{NN}.json`, a JSON array of units in teaching order, exactly the ids your batch was given.
