@@ -5,7 +5,7 @@
 "title": "Hi Sēf, what's new?",
 "goal": "Greet a friend the Emirati way, answer 'what's new?', and ask where someone is.",
 "grammar": "Independent pronouns: ana, inta, huwa; no word for 'is'",
-"tip": "Gulf Arabic has no 'is': huwa fi l-bēt = he (is) at home; ana b-khēr = I'm fine. So far: ana (I), inta (you, to a man), inti (you, to a woman), and now huwa (he). Emiratis ask shḥālak?; your shlōnak? is just as good.",
+"tip": "Gulf Arabic has no 'is': huwa fi l-bēt = he (is) at home. So far: ana (I), inta (you, to a man), inti (you, to a woman), and now huwa (he). On a verb, -ah means 'him, it': nshūfah = we'll see him. Emiratis ask shḥālak?; your shlōnak? is just as good.",
 "dialogue": [
 [
 "A",
@@ -78,7 +78,7 @@
 "ma shay",
 "nothing much (reply to shu l-yidīd?)",
 "لا شيء",
-""
+"a fixed reply: here ma goes before a noun"
 ],
 [
 "هو",
@@ -117,7 +117,7 @@
 "goal": "Greet a woman colleague, ask how she is with the -ich form, and ask about another colleague.",
 "grammar": "Pronoun hiya (she); -ich and -a when talking to a woman; no copula",
 "tip": "Speaking to a woman, words change: shḥālak → shḥālich (-ich = your), mashkūr → mashkūra (-a agrees with her). hiya = she, again with no 'is': hiya fi ijtimāʿ = she's in a meeting. hē is the Emirati 'yes'; your ī is fine too.",
-"culture": "Handshakes between men and women vary. Many Emirati women don't shake hands with men, so let a woman offer her hand first; if she doesn't, a smile and the greeting are enough, and some men touch their chest. Men usually shake hands with every man present. (Needs a native check.)",
+"culture": "Handshakes between men and women vary. Many Emirati women don't shake hands with men, so let a woman offer her hand first; if she doesn't, a smile and the greeting are enough, and some men touch their chest. Men usually shake hands with every man present.",
 "dialogue": [
 [
 "A",
@@ -326,7 +326,7 @@
 "goal": "Arrive at Sēf's house, answer a warm welcome, and pass greetings on to someone who isn't there.",
 "grammar": "Pronoun hum (they); the full set ana, inta, inti, huwa, hiya, niḥin, intu, hum",
 "tip": "hum = they, for men, women or a mix: hum fi l-majlis = they're in the majlis. The full set: ana, inta, inti, huwa, hiya, niḥin, intu, hum. ysallim ʿalēk = he says hi to you; for 'she', tsallim ʿalēk.",
-"culture": "When you walk into a majlis, say as-salāmu ʿalaykum to the whole room. The men there usually stand, and the newcomer goes round shaking hands, often starting from the right or with the oldest man. (Needs a native check.)",
+"culture": "When you walk into a majlis, say as-salāmu ʿalaykum to the whole room. The men there usually stand, and the newcomer goes round shaking hands, often starting from the right or with the oldest man.",
 "dialogue": [
 [
 "A",
@@ -419,7 +419,7 @@
 "الله يسلمه",
 "allāh ysallmah",
 "God keep him (reply when he sends greetings)",
-"",
+"سلمه الله",
 "for a woman: allāh ysallimha"
 ],
 [
@@ -435,7 +435,7 @@
 "id": "s1u021",
 "stage": 1,
 "title": "Meeting Sēf's mum",
-"goal": "Greet Sēf's mother respectfully and answer questions about your family with 'my' and 'your'.",
+"goal": "At Sēf's home, greet his mother respectfully and answer her questions about your family with 'my' and 'your'.",
 "grammar": "Possessive endings -i (my), -ak (your, m.), -ich (your, f.)",
 "tip": "Add an ending to a noun for 'my' and 'your': ahal → ahli (my family), ahlak (your family, to a man), ahlich (to a woman). After a vowel, 'my' is -y: ubū → ubūy (my dad). walad (son) shortens: wildi (my son), wildich (your son, to a woman).",
 "dialogue": [
@@ -558,27 +558,27 @@
 ],
 [
 "A",
-"هيه، ثلاث إخوان. وانت؟",
-"hē, thalāth ikhwān. w inta?",
-"Yes, three brothers. And you?"
+"هيه، أخ واحد بس. وانت؟",
+"hē, akh wāḥid bas. w inta?",
+"Yes, just one brother. And you?"
 ],
 [
 "B",
-"عندي أخ وأخت. أخوي في لندن",
-"ʿindi akh w ukht. akhūy fi Landan",
-"I have a brother and a sister. My brother's in London."
+"عندي ثلاث إخوان وأخت. إخواني في لندن",
+"ʿindi thalāth ikhwān w ukht. ikhwāni fi Landan",
+"I have three brothers and a sister. My brothers are in London."
 ],
 [
 "A",
-"وأختك؟",
-"w ukhtak?",
-"And your sister?"
+"وأختك وين؟",
+"w ukhtak wēn?",
+"And where's your sister?"
 ],
 [
 "B",
-"أختي في لندن بعد. وانتي، عندج خوات؟",
-"ukhti fi Landan baʿad. w inti, ʿindich khawāt?",
-"My sister's in London too. And you, do you have sisters?"
+"ويا أمي وأبوي في لندن. وانتي، عندج خوات؟",
+"wiyya ummi w ubūy fi Landan. w inti, ʿindich khawāt?",
+"With my mum and dad in London. And you, do you have sisters?"
 ],
 [
 "A",
@@ -773,15 +773,15 @@
 ],
 [
 "A",
-"لا، هذي مب حقه",
-"la, hādhi mub ḥaggah",
-"No, it isn't his."
+"لا، أحمد في البيت اليوم. مب حقه",
+"la, Aḥmad fi l-bēt il-yōm. mub ḥaggah",
+"No, Ahmed's at home today. It isn't his."
 ],
 [
 "B",
-"والكتاب؟ حقك؟",
-"w il-kitāb? ḥaggak?",
-"And the book? Is it yours?"
+"طيب، والكتاب؟ حقك؟",
+"ṭayyib, w il-kitāb? ḥaggak?",
+"OK, and the book? Is it yours?"
 ],
 [
 "A",
@@ -977,10 +977,10 @@
 "id": "s1u026",
 "stage": 1,
 "title": "Asking after the family",
-"goal": "Visit Sēf's mother, ask after the family politely, and show her where your family lives.",
+"goal": "Visit Sēf's family with Sēf: answer his mother's welcome, ask after her, and show her where your family lives.",
 "grammar": "Possessive endings -na (our), -kum (your, pl.), -hum (their)",
 "tip": "-na = our, -kum = your (to a group or a whole family), -hum = their: bētna (our house), bētkum (your house), ʿyālhum (their kids). After t, d, g, k or s, a hyphen goes before -ha and -hum, so you don't read th, dh, gh, kh or sh: bēt-hum, ḥagg-ha.",
-"culture": "Ask after a family as a whole: shḥāl il-ahal? (how's the family?) or ʿasāhum b-khēr? Don't ask a man about his wife by name; ask after 'the family' or 'the house' instead. (Needs a native check.)",
+"culture": "Ask after a family as a whole: shḥāl il-ahal? (how's the family?) or ʿasāhum b-khēr? Don't ask a man about his wife by name; ask after 'the family' or 'the house' instead.",
 "dialogue": [
 [
 "A",
@@ -990,15 +990,15 @@
 ],
 [
 "B",
-"الله يحييج. كلهم بخير، الحمد لله",
-"allāh yḥayyīch. killhum b-khēr, il-ḥamdu lillāh",
-"God bless you. They're all well, thank God."
+"الله يحييج يا خالتي. كلهم بخير. وانتي؟",
+"allāh yḥayyīch yā khālti. killhum b-khēr. w inti?",
+"God bless you, auntie. They're all well. And you?"
 ],
 [
 "A",
-"وين ساكنين؟ في لندن؟",
-"wēn sāknīn? fi Landan?",
-"Where do they live? In London?"
+"الحمد لله. وين ساكنين؟ في لندن؟",
+"il-ḥamdu lillāh. wēn sāknīn? fi Landan?",
+"Fine, thank God. Where do they live? In London?"
 ],
 [
 "B",

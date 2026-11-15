@@ -2,46 +2,46 @@
  {
   "id": "s1u047",
   "stage": 1,
-  "title": "What time do you finish?",
-  "goal": "Agree a time with Maryam, your colleague, to meet about work.",
-  "tip": "To fix a time, say the day, then is-sāʿa and the hour. No word for 'at' is needed: bāchir is-sāʿa tisʿ w rubʿ (tomorrow at 9:15), baʿd bāchir iṣ-ṣubḥ (the day after tomorrow, in the morning).",
-  "grammar": "Telling the time with a day: bāchir is-sāʿa tisʿ",
+  "title": "Which date suits you?",
+  "goal": "Agree a day, a date and a time with Maryam, your colleague, for a work meeting.",
+  "tip": "To fix a meeting, give the day or the date, then is-sāʿa and the hour, with no word for 'on' or 'at': yōm il-arbaʿa is-sāʿa tisʿ (on Wednesday at nine). A date is the plain number: siṭṭaʿash (the 16th), thamanṭaʿash iṣ-ṣubḥ (the 18th, in the morning).",
+  "grammar": "Day, date and time together: yōm il-arbaʿa, sabaʿṭaʿash, is-sāʿa tisʿ",
   "dialogue": [
    [
     "A",
-    "سالم، متى بتخلص اليوم؟",
-    "Sālim, mita bitkhalliṣ il-yōm?",
-    "Salim, what time do you finish today?"
+    "سالم، نتلاقى يوم الثلاثاء، سطعش؟",
+    "Sālim, nitlāga yōm ith-thalātha, siṭṭaʿash?",
+    "Salim, shall we meet on Tuesday, the sixteenth?"
    ],
    [
     "B",
-    "خمس ونص. وانتي متى بتخلصين؟",
-    "khams w nuṣṣ. w inti mita bitkhallṣīn?",
-    "Half past five. And when do you finish?"
+    "سطعش عندي موعد. يوم الأربعاء، سبعطعش؟",
+    "siṭṭaʿash ʿindi mawʿid. yōm il-arbaʿa, sabaʿṭaʿash?",
+    "On the sixteenth I've got an appointment. Wednesday, the seventeenth?"
    ],
    [
     "A",
-    "أنا أخلص بدري. نتلاقى باكر الساعة تسع؟",
-    "ana akhalliṣ badri. nitlāga bāchir is-sāʿa tisʿ?",
-    "I finish early. Shall we meet tomorrow at nine?"
+    "سبعطعش ما أقدر. ثمنطعش يناسبك؟",
+    "sabaʿṭaʿash ma agdar. thamanṭaʿash ynāsbak?",
+    "The seventeenth I can't. Does the eighteenth suit you?"
    ],
    [
     "B",
-    "باكر عندي موعد. بعد باكر؟",
-    "bāchir ʿindi mawʿid. baʿd bāchir?",
-    "Tomorrow I've got an appointment. The day after?"
+    "إي، يناسبني. الساعة كم؟",
+    "ī, ynāsibni. is-sāʿa cham?",
+    "Yes, it suits me. What time?"
    ],
    [
     "A",
-    "زين. بعد باكر الساعة تسع وربع يناسبك؟",
-    "zēn. baʿd bāchir is-sāʿa tisʿ w rubʿ ynāsbak?",
-    "OK. Does the day after tomorrow at quarter past nine suit you?"
+    "بدري، الساعة تسع وربع الصبح",
+    "badri, is-sāʿa tisʿ w rubʿ iṣ-ṣubḥ",
+    "Early: quarter past nine in the morning."
    ],
    [
     "B",
-    "إي، يناسبني. اتفقنا!",
-    "ī, ynāsibni. ittafagna!",
-    "Yes, that suits me. It's a deal!"
+    "زين، اتفقنا!",
+    "zēn, ittafagna!",
+    "OK, it's a deal!"
    ]
   ],
   "items": [
@@ -92,7 +92,7 @@
     "ynāsbak?",
     "does it suit you? (to a man)",
     "هل يناسبك؟",
-    "to a woman: ynāsbich? (يناسبج)"
+    "to a woman: ynāsbich? (يناسبج); it suits me: ynāsibni; ma ynāsibni = it doesn't suit me"
    ],
    [
     "سبعطعش",
@@ -132,9 +132,9 @@
    ],
    [
     "A",
-    "لا، شوف الساعة! يلا بسرعة",
-    "la, shūf is-sāʿa! yalla b-surʿa",
-    "No, look at the time! Come on, quick."
+    "لا، شوف الساعة! إحدعش ونص",
+    "la, shūf is-sāʿa! iḥdaʿash w nuṣṣ",
+    "No, look at the time! Half past eleven."
    ],
    [
     "B",
@@ -224,15 +224,15 @@
    ],
    [
     "A",
-    "تريا شوي. شو فيه؟",
-    "trayya shwayy. shu fīh?",
-    "Wait a bit. What's up?"
+    "تريا دقيقة. شو فيه؟",
+    "trayya dagīga. shu fīh?",
+    "Wait a minute. What's up?"
    ],
    [
     "B",
-    "الإيميل ما يفتح",
-    "il-īmēl ma yiftaḥ",
-    "The email won't open."
+    "الإيميل ما يفتح. ما أدري شو صار",
+    "il-īmēl ma yiftaḥ. ma adri shu ṣār",
+    "The email won't open. I don't know what happened."
    ],
    [
     "A",
@@ -335,15 +335,15 @@
    ],
    [
     "A",
-    "شو تبي؟",
-    "shu tabi?",
-    "What do you want?"
+    "شو فيه؟ شو تبي؟",
+    "shu fīh? shu tabi?",
+    "What's up? What do you want?"
    ],
    [
     "B",
-    "خلوني أصوركم. قربوا شوي",
-    "khallūni aṣawwirkum. garrbu shwayy",
-    "Let me take your photo. Come a bit closer."
+    "دقيقة، خلوني أصوركم. قربوا شوي",
+    "dagīga, khallūni aṣawwirkum. garrbu shwayy",
+    "One minute, let me take your photo. Come a bit closer."
    ],
    [
     "A",
@@ -359,9 +359,9 @@
    ],
    [
     "A",
-    "خلني أشوف. حلوة! يلا، خلنا نروح",
-    "khallni ashūf. ḥilwa! yalla, khallna nrūḥ",
-    "Let me see. Lovely! Come on, let's go."
+    "خلني أشوف. حلوة! زين سويت. يلا، خلنا نروح",
+    "khallni ashūf. ḥilwa! zēn sawwēt. yalla, khallna nrūḥ",
+    "Let me see. Lovely! Well done. Come on, let's go."
    ]
   ],
   "items": [
@@ -384,7 +384,7 @@
     "khallni",
     "let me (to a man)",
     "دعني",
-    "to a woman: khallīni (خليني); to a group: khallūni (خلوني); you'll also hear khallīni to men (U); khallni ashūf = let me see"
+    "to a woman: khallīni (خليني); to a group: khallūni (خلوني); khallni ashūf = let me see"
    ],
    [
     "أصور",
@@ -419,10 +419,10 @@
     "khallna",
     "let's (to a man)",
     "دعنا",
-    "to a woman: khallīna (خلينا); to a group: khallūna (خلونا); you'll also hear khallīna to men (U); khallna nrūḥ = let's go"
+    "to a woman: khallīna (خلينا); to a group: khallūna (خلونا); khallna nrūḥ = let's go"
    ]
   ],
-  "culture": "In public places, ask before you photograph people and keep women and families you don't know out of your photos. In the UAE, taking or sharing photos of people without their consent is also against the law, with heavy fines. Many families prefer that photos of their women aren't taken or shared. (Needs a native check.)"
+  "culture": "In public places, ask before you photograph people and keep women and families you don't know out of your photos. In the UAE, taking or sharing photos of people without their consent is also against the law, with heavy fines. Many families prefer that photos of their women aren't taken or shared."
  },
  {
   "id": "s1u051",
@@ -434,9 +434,9 @@
   "dialogue": [
    [
     "A",
-    "يلا، أنا بروح",
-    "yalla, ana barūḥ",
-    "Right, I'm off."
+    "يلا، الساعة إحدعش. أنا بروح",
+    "yalla, is-sāʿa iḥdaʿash. ana barūḥ",
+    "Right, it's eleven. I'm off."
    ],
    [
     "B",
@@ -458,9 +458,9 @@
    ],
    [
     "A",
-    "لا تحاتي، هذا هو. في أمان الله",
-    "la tḥāti, hādha huwa. fī amān illāh",
-    "Don't worry, here it is. Bye."
+    "لا تحاتي، هذا هو. نتلاقى باكر!",
+    "la tḥāti, hādha huwa. nitlāga bāchir!",
+    "Don't worry, here it is. See you tomorrow!"
    ],
    [
     "B",
@@ -546,9 +546,9 @@
   "dialogue": [
    [
     "A",
-    "سالم، أنا رايحة البنك. برجع على طول",
-    "Sālim, ana rāyḥa l-bank. barjaʿ ʿala ṭūl",
-    "Salim, I'm going to the bank. I'll be straight back."
+    "سالم، عندي موعد في البنك. برجع على طول",
+    "Sālim, ʿindi mawʿid fi l-bank. barjaʿ ʿala ṭūl",
+    "Salim, I've got an appointment at the bank. I'll be straight back."
    ],
    [
     "B",
@@ -576,9 +576,9 @@
    ],
    [
     "B",
-    "زين. بس لا تنسين، بدون سكر!",
-    "zēn. bas la tinsīn, bidūn sukkar!",
-    "OK. But don't forget, no sugar!"
+    "زين، اتفقنا. بس لا تنسين القهوة!",
+    "zēn, ittafagna. bas la tinsīn il-gahwa!",
+    "OK, deal. But don't forget the coffee!"
    ]
   ],
   "items": [
@@ -654,21 +654,21 @@
    ],
    [
     "A",
-    "مشكور، بس ما أبي أطلع. عندي شغل",
-    "mashkūr, bas ma abi aṭlaʿ. ʿindi shughul",
-    "Thanks, but I'd rather not go out. I've got work."
+    "مشكور، بس ما أبي أطلع. عندي دوام",
+    "mashkūr, bas ma abi aṭlaʿ. ʿindi dawām",
+    "Thanks, but I'd rather not go out. I'm working."
    ],
    [
     "B",
-    "العفو. تبين أييب لج شي؟",
-    "il-ʿafu. tabīn ayīb-lich shay?",
-    "No problem. Do you want me to bring you anything?"
+    "لا تحاتين. تبين أييب لج شي؟",
+    "la tḥātīn. tabīn ayīb-lich shay?",
+    "Don't worry. Do you want me to bring you anything?"
    ],
    [
     "A",
-    "هيه، أي شي حلو، الله يخليك!",
-    "hē, ay shay ḥilu, allāh ykhallīk!",
-    "Yes, anything sweet, please!"
+    "هيه، أي شي حلو. وخلها علي!",
+    "hē, ay shay ḥilu. w khallha ʿalay!",
+    "Yes, anything sweet. And it's on me!"
    ]
   ],
   "items": [
@@ -752,9 +752,9 @@
    ],
    [
     "B",
-    "طبعا، تفضلي. شو هذا؟",
-    "ṭabʿan, tfaẓẓali. shu hādha?",
-    "Of course, here you are. What's this?"
+    "على طول، تفضلي. شو هذا؟",
+    "ʿala ṭūl, tfaẓẓali. shu hādha?",
+    "Right away, here you are. What's this?"
    ],
    [
     "A",
@@ -770,9 +770,9 @@
    ],
    [
     "A",
-    "طبعا. باكر الصبح، بعد الاجتماع",
-    "ṭabʿan. bāchir iṣ-ṣubḥ, baʿd il-ijtimāʿ",
-    "Of course. Tomorrow morning, after the meeting."
+    "طبعا. يوم الأربعاء الصبح، بعد الاجتماع",
+    "ṭabʿan. yōm il-arbaʿa ṣ-ṣubḥ, baʿd il-ijtimāʿ",
+    "Of course. On Wednesday morning, after the meeting."
    ]
   ],
   "items": [
@@ -857,15 +857,15 @@
    ],
    [
     "B",
-    "زين الحمد لله. إي، عاجبني وايد",
-    "zēn il-ḥamdu lillāh. ī, ʿājibni wāyid",
-    "Fine, thank God. Yes, I like it a lot."
+    "زين الحمد لله. طبعا، عاجبني وايد",
+    "zēn il-ḥamdu lillāh. ṭabʿan, ʿājibni wāyid",
+    "Fine, thank God. Of course, I like it a lot."
    ],
    [
     "A",
-    "وشو تحب تسوي يوم السبت؟",
-    "w shu tḥibb tsawwi yōm is-sabt?",
-    "And what do you like doing on Saturdays?"
+    "وشو تحب تسوي بعد الدوام؟",
+    "w shu tḥibb tsawwi baʿd id-dawām?",
+    "And what do you like doing after work?"
    ],
    [
     "B",
@@ -881,9 +881,9 @@
    ],
    [
     "B",
-    "عادي. أنا ما أحب البرد",
-    "ʿādi. ana ma aḥibb il-bard",
-    "That's fine. I don't like the cold."
+    "عادي، أروح في الليل. ما أحب البرد",
+    "ʿādi, arūḥ fi l-lēl. ma aḥibb il-bard",
+    "No big deal, I go at night. I don't like the cold."
    ]
   ],
   "items": [
@@ -958,7 +958,7 @@
   "title": "Maybe, because…",
   "goal": "Answer Sēf's invitation to the desert: maybe, why, because, why not.",
   "tip": "Give a reason with ʿashān (because) and a whole sentence: ʿashān ʿindi imtiḥān (because I've got an exam). Invitations use tabi + verb: tabi tiyi? (do you want to come?). Not sure yet? yimkin (maybe), mub akīd (not sure).",
-  "grammar": "Want + verb: tabi tyī; because: ʿashān",
+  "grammar": "Want + verb: tabi tiyi; because: ʿashān",
   "dialogue": [
    [
     "A",
@@ -992,9 +992,9 @@
    ],
    [
     "B",
-    "زين، ليش لا!",
-    "zēn, lēsh la!",
-    "OK, why not!"
+    "زين، ليش لا! اتفقنا",
+    "zēn, lēsh la! ittafagna",
+    "OK, why not! It's a deal."
    ]
   ],
   "items": [

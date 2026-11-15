@@ -171,6 +171,8 @@ def check_line(ar, tr, en, where, E, W, mx):
     if AR.search(tr) or AR.search(en): E(f"{where} transliteration or English has Arabic letters")
     if not TR_OK.match(tr): E(f"{where} transliteration has characters outside the scheme: {tr}")
     if "ḍ" in tr: W(f"{where} uses ḍ: the gulf scheme writes ẓ for both ض and ظ")
+    m2 = re.search(r"\b\w*[aeiouāīūēō] i(?:l|ṣ|s|ṭ|t|sh|d|dh|th|r|n|z|ẓ)-\S+", tr)
+    if m2: W(f"{where} article after a vowel is l- not il- (STYLE §3): {m2.group(0)}")
     if re.search(r"(?:^|\s)ولا(?:\s|$|[؟!.،])", ar) and re.search(r"\bwalla\b", tr): W(f"{where} \"or\" is written ولّا with shadda (ولا reads as wala)")
     if re.search(r"[تسكد](?:ها|هم)(?:\s|$|[؟!.،])", ar) and re.search(r"(?:[āaēīiūō][tsk]h(?:a|um)|ndh(?:a|um))\b", tr):
         W(f"{where} a suffix -ha/-hum/-ah after t/s/k/d/g needs a hyphen so it isn't read as a digraph (e.g. shrāt-ha)")

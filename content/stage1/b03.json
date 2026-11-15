@@ -220,7 +220,7 @@
     "title": "Good news!",
     "goal": "Ask what happened, congratulate a friend and answer, and say what you said, saw and slept.",
     "grammar": "Past tense II: hollow verbs (gilt, shift, nimt)",
-    "tip": "Verbs with a long middle vowel (gāl said, shāf saw, nām slept) shorten it before -t: gilt (I said, you said), shift, nimt. To a woman add -i: gilti, shifti. The he-form keeps the long vowel: gāl, shāf, ṣār (it happened).",
+    "tip": "Verbs with a long middle vowel (gāl said, shāf saw, nām slept) shorten it before -t: gilt (I said, you said), shift, nimt. riḥt (from rāḥ) is the same pattern. To a woman add -i: gilti, shifti. The he-form keeps the long vowel: gāl, shāf, ṣār (it happened).",
     "culture": "Say mabrūk for any good news: a passed exam, a new job, a wedding, a new car. The reply is allāh ybārik fīk (to a woman: fīch). When admiring something new, or a child, people add mā shāʼ allāh.",
     "dialogue": [
       [
@@ -237,9 +237,9 @@
       ],
       [
         "B",
-        "والله؟ مبروك!",
-        "wallāh? mabrūk!",
-        "Really? Congratulations!"
+        "يعني نجحت؟ مبروك!",
+        "yaʿni nijaḥt? mabrūk!",
+        "So you passed? Congratulations!"
       ],
       [
         "A",
@@ -255,9 +255,9 @@
       ],
       [
         "A",
-        "البارحة الساعة ثلاث، وما نمت!",
-        "il-bārḥa s-sāʿa thalāth, w ma nimt!",
-        "Last night at three, and I didn't sleep!"
+        "قبل شوي! والبارحة ما نمت",
+        "gabil shwayy! w il-bārḥa ma nimt",
+        "Just now! And last night I didn't sleep."
       ]
     ],
     "items": [
@@ -342,21 +342,21 @@
       ],
       [
         "B",
-        "صباح النور. مشيت في السوق وايد",
-        "ṣabāḥ in-nūr. mishēt fi s-sūg wāyid",
-        "Good morning. I walked round the souq for ages."
+        "صباح النور. طلعت ومشيت في السوق وايد",
+        "ṣabāḥ in-nūr. ṭilaʿt w mishēt fi s-sūg wāyid",
+        "Good morning. I went out and walked round the souq for ages."
       ],
       [
         "A",
-        "والله؟ ولقيت شي حلو؟",
-        "wallāh? w ligēt shay ḥilu?",
-        "Really? Did you find anything nice?"
+        "والله؟ ويا منو؟",
+        "wallāh? wiyya minu?",
+        "Really? Who with?"
       ],
       [
         "B",
-        "هيه، لقيت مطعم حلو. وانتي؟",
-        "hē, ligēt maṭʿam ḥilu. w inti?",
-        "Yes, I found a nice restaurant. And you?"
+        "ويا ربعي، ولقيت مطعم حلو. وانتي؟",
+        "wiyya rabʿi, w ligēt maṭʿam ḥilu. w inti?",
+        "With my mates, and I found a nice restaurant. And you?"
       ],
       [
         "A",
@@ -453,9 +453,9 @@
       ],
       [
         "B",
-        "حطيت المفتاح على الطاولة",
-        "ḥaṭṭēt il-miftāḥ ʿala ṭ-ṭāwla",
-        "I put the key on the table."
+        "قلت لك، حطيت المفتاح على الطاولة",
+        "gilt-lak, ḥaṭṭēt il-miftāḥ ʿala ṭ-ṭāwla",
+        "I told you, I put the key on the table."
       ],
       [
         "A",
@@ -465,9 +465,9 @@
       ],
       [
         "B",
-        "يمكن أخوك خذ المفتاح؟",
-        "yimkin akhūk khadh il-miftāḥ?",
-        "Maybe your brother took the key?"
+        "يعني أخوك خذ المفتاح؟",
+        "yaʿni akhūk khadh il-miftāḥ?",
+        "So your brother took the key?"
       ],
       [
         "A",
@@ -545,45 +545,45 @@
     "id": "s1u042",
     "stage": 1,
     "title": "I brought you something",
-    "goal": "Arrive at Sēf's family home, greet Umm Sēf, say how you came and what you brought, and ask after Sēf.",
+    "goal": "Arrive at Sēf's home at his invitation: greet Umm Sēf and ask after her, say how you came and what you brought.",
     "grammar": "Past tense II: come and bring (yīt, yibt, ma yā)",
     "tip": "'Come' and 'bring' are irregular: yīt (I came, you came), yā (he came), ma yā (he didn't come, he hasn't come); yibt (I brought, you brought), yāb (he brought). Emiratis say y where fuṣḥā and many other speakers have j (jīt, jibt), so these are written with ي.",
     "dialogue": [
       [
         "A",
-        "حياك الله يا سالم، تفضل",
-        "ḥayyāk allāh yā Sālim, tfaẓẓal",
-        "Welcome, Salim. Come in."
+        "حياك الله يا سالم، تفضل. سيف في المجلس",
+        "ḥayyāk allāh yā Sālim, tfaẓẓal. Sēf fi l-majlis",
+        "Welcome, Salim, come in. Sēf's in the majlis."
       ],
       [
         "B",
-        "الله يحييج. يبت لكم حلويات",
-        "allāh yḥayyīch. yibt-lkum ḥalawiyyāt",
-        "Thank you. I brought you all some sweets."
+        "الله يحييج. شحالج يا خالتي؟ يبت لكم حلويات",
+        "allāh yḥayyīch. shḥālich yā khālti? yibt-lkum ḥalawiyyāt",
+        "Thank you. How are you, auntie? I brought you all some sweets."
       ],
       [
         "A",
-        "ما قصرت، بس ما في داعي!",
-        "mā gaṣṣart, bas ma fī dāʿi!",
-        "That's very kind, but there was no need!"
+        "الحمد لله. ما قصرت، بس ما في داعي!",
+        "il-ḥamdu lillāh. mā gaṣṣart, bas ma fī dāʿi!",
+        "Fine, thank God. That's very kind, but there was no need!"
       ],
       [
         "B",
-        "ما سوينا شي. سيف هني، الله يخليج؟",
-        "mā sawwēna shay. Sēf hni, allāh ykhallīch?",
-        "It's nothing. Is Sēf in, please?"
+        "ما سوينا شي. وأحمد؟ وصل؟",
+        "mā sawwēna shay. w Aḥmad? wiṣal?",
+        "It's nothing. And Ahmed? Has he got here?"
       ],
       [
         "A",
-        "ما يا من الجامعة. ييت ويا منو؟",
-        "ma yā min il-jāmʿa. yīt wiyya minu?",
-        "He hasn't come back from the university yet. Who did you come with?"
+        "لا، ما يا. ييت ويا منو؟",
+        "la, ma yā. yīt wiyya minu?",
+        "No, he hasn't come yet. Who did you come with?"
       ],
       [
         "B",
-        "ييت بروحي، بتاكسي",
-        "yīt b-rūḥi, b-tāksi",
-        "I came on my own, by taxi."
+        "ييت بروحي، بتاكسي. وصلت الحين",
+        "yīt b-rūḥi, b-tāksi. wiṣalt il-ḥīn",
+        "I came on my own, by taxi. I've just got here."
       ]
     ],
     "items": [
@@ -746,40 +746,40 @@
     "id": "s1u044",
     "stage": 1,
     "title": "Which day?",
-    "goal": "On a late-night call, pick a day to go out with a friend, name the days of the week, and say good night.",
+    "goal": "On a late-night call, pick a day and a date to go out with a friend, and say good night.",
     "grammar": "Days of the week: yōm + day",
-    "tip": "Days come with yōm 'day': yōm il-aḥad (Sun), il-ithnēn (Mon), ith-thalātha (Tue), il-arbaʿa (Wed), il-khamīs (Thu), il-jumʿa (Fri), is-sabt (Sat). yōm can be dropped, and no word for 'on' is needed: (yōm) il-jumʿa ʿindi shughul (on Friday I've got work).",
+    "tip": "Days take yōm 'day': yōm il-aḥad (Sun), il-ithnēn (Mon), ith-thalātha (Tue), il-arbaʿa (Wed), il-khamīs (Thu), il-jumʿa (Fri), is-sabt (Sat). yōm can go, and 'on' needs no word: il-jumʿa ʿindi shughul. A date is the plain number: yōm il-aḥad, thalaṭṭaʿash (Sunday the 13th).",
     "culture": "Since January 2022 the UAE's official weekend has been Saturday and Sunday, and federal government offices close at Friday noon (Sharjah's government takes Friday off too). Kuwait's weekend is Friday and Saturday. Friday's noon prayer is the main prayer of the week, so Friday plans usually start after it.",
     "dialogue": [
       [
         "A",
-        "نروح البحر هالأسبوع؟",
-        "nrūḥ il-baḥar hal-usbūʿ?",
-        "Shall we go to the beach this week?"
+        "ما رحنا البحر من زمان. نروح هالأسبوع؟",
+        "ma riḥna l-baḥar min zamān. nrūḥ hal-usbūʿ?",
+        "We haven't been to the beach for ages. Shall we go this week?"
       ],
       [
         "B",
-        "يلا! أي يوم؟",
-        "yalla! ay yōm?",
-        "Sure! Which day?"
+        "يلا! أي يوم؟ يوم الجمعة ولّا يوم السبت؟",
+        "yalla! ay yōm? yōm il-jumʿa walla yōm is-sabt?",
+        "Sure! Which day? Friday or Saturday?"
       ],
       [
         "A",
-        "يوم الجمعة؟",
-        "yōm il-jumʿa?",
-        "Friday?"
+        "الجمعة والسبت عندي شغل. يوم الأحد، ثلطعش؟",
+        "il-jumʿa w is-sabt ʿindi shughul. yōm il-aḥad, thalaṭṭaʿash?",
+        "Friday and Saturday I've got work. Sunday, the thirteenth?"
       ],
       [
         "B",
-        "الجمعة عندي شغل. يوم ثاني؟",
-        "il-jumʿa ʿindi shughul. yōm thāni?",
-        "Friday I've got work. Another day?"
+        "الأحد ما أقدر. يوم الاثنين، أربعطعش؟",
+        "il-aḥad ma agdar. yōm il-ithnēn, arbaʿṭaʿash?",
+        "Sunday I can't. Monday, the fourteenth?"
       ],
       [
         "A",
-        "زين، يوم السبت. تصبح على خير!",
-        "zēn, yōm is-sabt. tiṣbaḥ ʿala khēr!",
-        "OK, Saturday then. Good night!"
+        "زين، الاثنين بعد الشغل. تصبح على خير!",
+        "zēn, il-ithnēn baʿd ish-shughul. tiṣbaḥ ʿala khēr!",
+        "OK, Monday after work. Good night!"
       ],
       [
         "B",
@@ -871,15 +871,15 @@
       ],
       [
         "A",
-        "لا، الصبح والعصر. وانت؟",
-        "la, iṣ-ṣubḥ w il-ʿaṣr. w inta?",
-        "No, mornings and afternoons. And you?"
+        "لا، الصبح والعصر، وأرجع متأخر. وانت؟",
+        "la, iṣ-ṣubḥ w il-ʿaṣr, w arjaʿ mitʼakhkhir. w inta?",
+        "No, mornings and afternoons, and I get home late. And you?"
       ],
       [
         "B",
-        "أنا هني الصبح، والعصر في الجامعة",
-        "ana hni ṣ-ṣubḥ, w il-ʿaṣr fi l-jāmʿa",
-        "I'm here in the mornings, and at the university in the afternoons."
+        "أنا هني من الصبح، والعصر في الجامعة",
+        "ana hni min iṣ-ṣubḥ, w il-ʿaṣr fi l-jāmʿa",
+        "I'm here from the morning, and at the university in the afternoon."
       ],
       [
         "A",
@@ -889,15 +889,15 @@
       ],
       [
         "B",
-        "في الليل، بعد المغرب",
-        "fi l-lēl, baʿd il-maghrib",
-        "At night, after maghrib."
+        "في الليل، بعد المغرب. ويوم السبت!",
+        "fi l-lēl, baʿd il-maghrib. w yōm is-sabt!",
+        "At night, after maghrib. And on Saturday!"
       ],
       [
         "A",
-        "زين. يلا، نتغدى ويا الكل الظهر؟",
-        "zēn. yalla, nitghadda wiyya l-kill iẓ-ẓuhur?",
-        "Good. Shall we have lunch with everyone at midday?"
+        "زين. نتغدى ويا الكل يوم الثلاثاء الظهر؟",
+        "zēn. nitghadda wiyya l-kill yōm ith-thalātha iẓ-ẓuhur?",
+        "Good. Shall we have lunch with everyone on Tuesday at midday?"
       ]
     ],
     "items": [
@@ -970,9 +970,9 @@
     "id": "s1u046",
     "stage": 1,
     "title": "What time is the film?",
-    "goal": "Tell the time with half past, quarter past and quarter to, and count minutes, before a film with Sēf.",
-    "grammar": "Telling the time (w nuṣṣ, w rubʿ, illa rubʿ); a singular noun after 11",
-    "tip": "is-sāʿa + hour: is-sāʿa thintēn (two o'clock), is-sāʿa waḥda (one). Then w nuṣṣ (half past), w rubʿ (quarter past), illa rubʿ (quarter to). From 11 up the noun stays singular: ʿishrīn dagīga, khamsīn dirham, but khams dagāyig.",
+    "goal": "Tell the time with half past and quarter to, and use 11 to 19 for the time, minutes and prices, before a film with Sēf.",
+    "grammar": "Telling the time (w nuṣṣ, w rubʿ, illa rubʿ); 11 to 19 and a singular noun after 11",
+    "tip": "is-sāʿa + hour: is-sāʿa thnaʿash (twelve o'clock). Then w nuṣṣ (half past), w rubʿ (quarter past), illa rubʿ (quarter to). 11 to 19 end in -ṭaʿash, and the noun after them stays singular: khamsṭaʿash dagīga, tisaʿṭaʿash dirham; but 3 to 10 take the plural: khams dagāyig.",
     "dialogue": [
       [
         "A",
@@ -982,15 +982,15 @@
       ],
       [
         "B",
-        "الساعة ثنتين ونص",
-        "is-sāʿa thintēn w nuṣṣ",
-        "It's half past two."
+        "إحدعش ونص",
+        "iḥdaʿash w nuṣṣ",
+        "Half past eleven."
       ],
       [
         "A",
-        "والفلم الساعة ثلاث إلا ربع!",
-        "w il-film is-sāʿa thalāth illa rubʿ!",
-        "And the film's at quarter to three!"
+        "والفلم الساعة ثنعش إلا ربع!",
+        "w il-film is-sāʿa thnaʿash illa rubʿ!",
+        "And the film's at quarter to twelve!"
       ],
       [
         "B",
@@ -1000,15 +1000,15 @@
       ],
       [
         "A",
-        "بخمسين درهم. والسينما عشرين دقيقة من هني!",
-        "b-khamsīn dirham. w is-sīnama ʿishrīn dagīga min hni!",
-        "Fifty dirhams. And the cinema's twenty minutes from here!"
+        "بتسعطعش درهم. والسينما خمسطعش دقيقة بالتاكسي!",
+        "b-tisaʿṭaʿash dirham. w is-sīnama khamsṭaʿash dagīga bit-tāksi!",
+        "Nineteen dirhams. And the cinema's fifteen minutes by taxi!"
       ],
       [
         "B",
-        "يلا بسرعة! كل مرة نتأخر",
-        "yalla b-surʿa! kill marra nitʼakhkhar",
-        "Come on, quick! We're late every time."
+        "يلا بسرعة! قلت لك، كل مرة نتأخر",
+        "yalla b-surʿa! gilt-lak, kill marra nitʼakhkhar",
+        "Come on, quick! I told you, we're late every time."
       ]
     ],
     "items": [

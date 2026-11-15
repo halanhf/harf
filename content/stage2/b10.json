@@ -7,24 +7,113 @@
   "tip": "taww- 'just' always takes an ending: tawwni 'I've just', tawwak 'you've just', tawwah 'he's just', tawwha 'she's just'. It usually comes before a participle: tawwni wāṣil 'I've just arrived', tawwah ṭāliʿ 'he's just come out'. tawwni adri: 'it's the first I've heard'.",
   "grammar": "taww- + ending + participle: 'just' (tawwni wāṣil)",
   "dialogue": [
-   ["A", "صباح الخير! توك ياي؟", "ṣabāḥ il-khēr! tawwak yāy?", "Morning! Have you only just got in?"],
-   ["B", "صباح النور. هيه، توني واصل. زحمة وايد!", "ṣabāḥ in-nūr. hē, tawwni wāṣil. zaḥma wāyid!", "Morning. Yes, I've just arrived. The traffic's terrible!"],
-   ["A", "ترا المدير يبيك. توه طالع من الاجتماع", "tara il-mudīr yabīk. tawwah ṭāliʿ min il-ijtimāʿ", "The manager wants you, by the way. He's just come out of the meeting."],
-   ["B", "أي اجتماع؟ محد قال لي!", "ay ijtimāʿ? maḥḥad gāl-li!", "What meeting? Nobody told me!"],
-   ["A", "شوف تلفونك. الرسالة توها واصلة", "shūf tilifōnak. ir-risāla tawwha wāṣla", "Check your phone. The message has only just come through."],
-   ["B", "صح! توني أدري. عيل بروح له الحين", "ṣaḥḥ! tawwni adri. ʿayal barūḥ-lah il-ḥīn", "You're right! It's the first I've heard. I'll go and see him now, then."],
-   ["A", "يلا بسرعة، شكله يترياك", "yalla b-surʿa, shaklah yitrayyāk", "Quick, then, he seems to be waiting for you."]
+   [
+    "A",
+    "صباح الخير! توك ياي؟",
+    "ṣabāḥ il-khēr! tawwak yāy?",
+    "Morning! Have you only just got in?"
+   ],
+   [
+    "B",
+    "صباح النور. هيه، توني واصل. زحمة وايد!",
+    "ṣabāḥ in-nūr. hē, tawwni wāṣil. zaḥma wāyid!",
+    "Morning. Yes, I've just arrived. The traffic's terrible!"
+   ],
+   [
+    "A",
+    "ترا المدير يبيك. توه طالع من الاجتماع",
+    "tara l-mudīr yabīk. tawwah ṭāliʿ min il-ijtimāʿ",
+    "The manager wants you, by the way. He's just come out of the meeting."
+   ],
+   [
+    "B",
+    "أي اجتماع؟ محد قال لي!",
+    "ay ijtimāʿ? maḥḥad gāl-li!",
+    "What meeting? Nobody told me!"
+   ],
+   [
+    "A",
+    "شوف تلفونك. الرسالة توها واصلة",
+    "shūf tilifōnak. ir-risāla tawwha wāṣla",
+    "Check your phone. The message has only just come through."
+   ],
+   [
+    "B",
+    "صح! توني أدري. عيل بروح له الحين",
+    "ṣaḥḥ! tawwni adri. ʿayal barūḥ-lah il-ḥīn",
+    "You're right! It's the first I've heard. I'll go and see him now, then."
+   ],
+   [
+    "A",
+    "يلا بسرعة، شكله يترياك",
+    "yalla b-surʿa, shaklah yitrayyāk",
+    "Quick, then, he seems to be waiting for you."
+   ]
   ],
   "items": [
-   ["توني", "tawwni", "I've just (done something)", "للتو", "before a participle or a past verb: tawwni wāṣil; Kuwait: the same"],
-   ["توني واصل", "tawwni wāṣil", "I've just arrived (said by a man)", "وصلت للتو", "a woman says: tawwni wāṣla (توني واصلة)"],
-   ["توك ياي؟", "tawwak yāy?", "have you only just got here? (to a man)", "هل وصلت للتو؟", "to a woman: tawwich yāya? (توج ياية؟)"],
-   ["توه", "tawwah", "he's just (done something)", "للتو", "she's just: tawwha (توها)"],
-   ["توه طالع", "tawwah ṭāliʿ", "he's just gone out, he's just come out", "خرج للتو", "about a woman: tawwha ṭālʿa (توها طالعة)"],
-   ["توها واصلة", "tawwha wāṣla", "(she, it) has only just arrived (a woman or a feminine noun: a message)", "وصلت للتو", "about a man or a masculine noun: tawwah wāṣil (توه واصل)"],
-   ["توني أدري", "tawwni adri", "it's the first I've heard, I've only just found out", "علمت للتو", "lit. 'only now I know'"],
-   ["بروح له", "barūḥ-lah", "I'll go and see him, I'll go to him", "سأذهب إليه", "to her: barūḥ-lha (بروح لها)"],
-   ["زحمة وايد", "zaḥma wāyid", "the traffic's terrible, it's really crowded", "ازدحام شديد", ""]
+   [
+    "توني",
+    "tawwni",
+    "I've just (done something)",
+    "للتو",
+    "before a participle or a past verb: tawwni wāṣil; Kuwait: the same"
+   ],
+   [
+    "توني واصل",
+    "tawwni wāṣil",
+    "I've just arrived (said by a man)",
+    "وصلت للتو",
+    "a woman says: tawwni wāṣla (توني واصلة)"
+   ],
+   [
+    "توك ياي؟",
+    "tawwak yāy?",
+    "have you only just got here? (to a man)",
+    "هل وصلت للتو؟",
+    "to a woman: tawwich yāya? (توج ياية؟)"
+   ],
+   [
+    "توه",
+    "tawwah",
+    "he's just (done something)",
+    "للتو",
+    "she's just: tawwha (توها)"
+   ],
+   [
+    "توه طالع",
+    "tawwah ṭāliʿ",
+    "he's just gone out, he's just come out",
+    "خرج للتو",
+    "about a woman: tawwha ṭālʿa (توها طالعة)"
+   ],
+   [
+    "توها واصلة",
+    "tawwha wāṣla",
+    "(she, it) has only just arrived (a woman or a feminine noun: a message)",
+    "وصلت للتو",
+    "about a man or a masculine noun: tawwah wāṣil (توه واصل)"
+   ],
+   [
+    "توني أدري",
+    "tawwni adri",
+    "it's the first I've heard, I've only just found out",
+    "علمت للتو",
+    "lit. 'only now I know'"
+   ],
+   [
+    "بروح له",
+    "barūḥ-lah",
+    "I'll go and see him, I'll go to him",
+    "سأذهب إليه",
+    "to her: barūḥ-lha (بروح لها)"
+   ],
+   [
+    "زحمة وايد",
+    "zaḥma wāyid",
+    "the traffic's terrible, it's really crowded",
+    "ازدحام شديد",
+    ""
+   ]
   ]
  },
  {
@@ -35,23 +124,106 @@
   "tip": "lil-ḥīn means 'still': lil-ḥīn fi l-jāmʿa? 'still at uni?'. Before ma and a past verb it means 'still not, not yet': lil-ḥīn ma khallaṣt 'I still haven't finished', lil-ḥīn ma tʿashshēt? 'haven't you had dinner yet?'. Kuwaitis say it the same way.",
   "grammar": "lil-ḥīn 'still'; lil-ḥīn ma + past 'not yet'",
   "dialogue": [
-   ["B", "ألو سيف، وينك؟ للحين في الجامعة؟", "alō Sēf, wēnak? lil-ḥīn fi l-jāmʿa?", "Hello Sēf, where are you? Still at uni?"],
-   ["A", "هيه، في المكتبة. للحين ما خلصت", "hē, fi l-maktaba. lil-ḥīn ma khallaṣt", "Yes, in the library. I still haven't finished."],
-   ["B", "الساعة عشر! والمكتبة للحين مفتوحة؟", "is-sāʿa ʿashr! w il-maktaba lil-ḥīn maftūḥa?", "It's ten o'clock! And the library's still open?"],
-   ["A", "هيه، أيام الامتحانات مفتوحة لين نص الليل", "hē, ayyām il-imtiḥānāt maftūḥa lēn nuṣṣ il-lēl", "Yes, during exams it's open till midnight."],
-   ["B", "وانت للحين ما تعشيت؟", "w inta lil-ḥīn ma tʿashshēt?", "And you still haven't had dinner?"],
-   ["A", "لا، ماني فاضي. للحين ما كلت ولا شي!", "la, māni fāẓi. lil-ḥīn ma kalt wala shay!", "No, I haven't had time. I still haven't eaten a thing!"],
-   ["B", "عيل بييب لك عشا. أنا ياي!", "ʿayal bayīb-lak ʿasha. ana yāy!", "Then I'll bring you dinner. I'm on my way!"]
+   [
+    "B",
+    "ألو سيف، وينك؟ للحين في الجامعة؟",
+    "alō Sēf, wēnak? lil-ḥīn fi l-jāmʿa?",
+    "Hello Sēf, where are you? Still at uni?"
+   ],
+   [
+    "A",
+    "هيه، في المكتبة. للحين ما خلصت",
+    "hē, fi l-maktaba. lil-ḥīn ma khallaṣt",
+    "Yes, in the library. I still haven't finished."
+   ],
+   [
+    "B",
+    "الساعة عشر! والمكتبة للحين مفتوحة؟",
+    "is-sāʿa ʿashr! w il-maktaba lil-ḥīn maftūḥa?",
+    "It's ten o'clock! And the library's still open?"
+   ],
+   [
+    "A",
+    "هيه، أيام الامتحانات مفتوحة لين نص الليل",
+    "hē, ayyām il-imtiḥānāt maftūḥa lēn nuṣṣ il-lēl",
+    "Yes, during exams it's open till midnight."
+   ],
+   [
+    "B",
+    "وانت للحين ما تعشيت؟",
+    "w inta lil-ḥīn ma tʿashshēt?",
+    "And you still haven't had dinner?"
+   ],
+   [
+    "A",
+    "لا، ماني فاضي. للحين ما كلت ولا شي!",
+    "la, māni fāẓi. lil-ḥīn ma kalt wala shay!",
+    "No, I haven't had time. I still haven't eaten a thing!"
+   ],
+   [
+    "B",
+    "عيل بييب لك عشا. أنا ياي!",
+    "ʿayal bayīb-lak ʿasha. ana yāy!",
+    "Then I'll bring you dinner. I'm on my way!"
+   ]
   ],
   "items": [
-   ["للحين", "lil-ḥīn", "still", "ما زال / لا يزال", "Kuwait: the same"],
-   ["للحين ما", "lil-ḥīn ma", "still not, not yet (before a past verb)", "لم … بعد", "lil-ḥīn ma wiṣal = he hasn't arrived yet"],
-   ["للحين ما خلصت", "lil-ḥīn ma khallaṣt", "I still haven't finished; you still haven't finished? (to a man)", "لم أنتهِ بعد", "to a woman: lil-ḥīn ma khallaṣti? (للحين ما خلصتي؟)"],
-   ["للحين ما تعشيت؟", "lil-ḥīn ma tʿashshēt?", "haven't you had dinner yet? (to a man)", "ألم تتعشَّ بعد؟", "to a woman: lil-ḥīn ma tʿashshēti? (للحين ما تعشيتي؟); tʿashshēt = I had dinner"],
-   ["وينك؟", "wēnak?", "where are you? (to a man)", "أين أنت؟", "to a woman: wēnich? (وينج؟)"],
-   ["أيام الامتحانات", "ayyām il-imtiḥānāt", "during exams, exam time", "أيام الامتحانات", "one exam: imtiḥān (امتحان)"],
-   ["نص الليل", "nuṣṣ il-lēl", "midnight", "منتصف الليل", "lēn nuṣṣ il-lēl = till midnight"],
-   ["أنا ياي", "ana yāy", "I'm on my way, I'm coming (said by a man)", "أنا قادم", "a woman says: ana yāya (أنا ياية)"]
+   [
+    "للحين",
+    "lil-ḥīn",
+    "still",
+    "ما زال / لا يزال",
+    "Kuwait: the same"
+   ],
+   [
+    "للحين ما",
+    "lil-ḥīn ma",
+    "still not, not yet (before a past verb)",
+    "لم … بعد",
+    "lil-ḥīn ma wiṣal = he hasn't arrived yet"
+   ],
+   [
+    "للحين ما خلصت",
+    "lil-ḥīn ma khallaṣt",
+    "I still haven't finished; you still haven't finished? (to a man)",
+    "لم أنتهِ بعد",
+    "to a woman: lil-ḥīn ma khallaṣti? (للحين ما خلصتي؟)"
+   ],
+   [
+    "للحين ما تعشيت؟",
+    "lil-ḥīn ma tʿashshēt?",
+    "haven't you had dinner yet? (to a man)",
+    "ألم تتعشَّ بعد؟",
+    "to a woman: lil-ḥīn ma tʿashshēti? (للحين ما تعشيتي؟); tʿashshēt = I had dinner"
+   ],
+   [
+    "وينك؟",
+    "wēnak?",
+    "where are you? (to a man)",
+    "أين أنت؟",
+    "to a woman: wēnich? (وينج؟)"
+   ],
+   [
+    "أيام الامتحانات",
+    "ayyām il-imtiḥānāt",
+    "during exams, exam time",
+    "أيام الامتحانات",
+    "one exam: imtiḥān (امتحان)"
+   ],
+   [
+    "نص الليل",
+    "nuṣṣ il-lēl",
+    "midnight",
+    "منتصف الليل",
+    "lēn nuṣṣ il-lēl = till midnight"
+   ],
+   [
+    "أنا ياي",
+    "ana yāy",
+    "I'm on my way, I'm coming (said by a man)",
+    "أنا قادم",
+    "a woman says: ana yāya (أنا ياية)"
+   ]
   ]
  },
  {
@@ -62,24 +234,113 @@
   "tip": "chān + a past verb looks back at what didn't happen: chān gilt-li! 'you should have told me!', chān yīt 'I'd have come'. Between friends it's a light complaint, and the usual answer is ṣaḥḥ, ghalṭati 'true, my fault'. Also: lēsh ma gilt-li? 'why didn't you tell me?'",
   "grammar": "chān + past: 'should have, would have' (chunks)",
   "dialogue": [
-   ["A", "هلا! شفت الصور؟ ترا رحنا البر أمس", "hala! shift iṣ-ṣuwar? tara riḥna l-barr ams", "Hi! Have you seen the photos? We went to the desert yesterday."],
-   ["B", "هلا فيك. رحتوا البر؟ ليش ما قلت لي؟", "hala fīk. riḥtu l-barr? lēsh ma gilt-li?", "Hi. You went to the desert? Why didn't you tell me?"],
-   ["A", "آسف يا ريّال، والله نسيت", "āsif yā rayyāl, wallāh nisēt", "Sorry, mate, I honestly forgot."],
-   ["B", "جان قلت لي! جان ييت وياكم", "chān gilt-li! chān yīt wiyyākum", "You should've told me! I'd have come with you."],
-   ["A", "صح، غلطتي. جان خبرتك من أول", "ṣaḥḥ, ghalṭati. chān khabbartak min awwal", "True, my fault. I should have told you before."],
-   ["B", "ماشي. بس المرة الياية لا تنسى!", "māshi. bas il-marra l-yāya la tinsa!", "OK. But don't forget next time!"],
-   ["A", "ما بنسى، بقول لك. وعد!", "ma bansa, bagūl-lak. waʿd!", "I won't forget, I'll tell you. Promise!"]
+   [
+    "A",
+    "هلا! شفت الصور؟ ترا رحنا البر أمس",
+    "hala! shift iṣ-ṣuwar? tara riḥna l-barr ams",
+    "Hi! Have you seen the photos? We went to the desert yesterday."
+   ],
+   [
+    "B",
+    "هلا فيك. رحتوا البر؟ ليش ما قلت لي؟",
+    "hala fīk. riḥtu l-barr? lēsh ma gilt-li?",
+    "Hi. You went to the desert? Why didn't you tell me?"
+   ],
+   [
+    "A",
+    "آسف يا ريّال، والله نسيت",
+    "āsif yā rayyāl, wallāh nisēt",
+    "Sorry, mate, I honestly forgot."
+   ],
+   [
+    "B",
+    "جان قلت لي! جان ييت وياكم",
+    "chān gilt-li! chān yīt wiyyākum",
+    "You should've told me! I'd have come with you."
+   ],
+   [
+    "A",
+    "صح، غلطتي. جان خبرتك من أول",
+    "ṣaḥḥ, ghalṭati. chān khabbartak min awwal",
+    "True, my fault. I should have told you before."
+   ],
+   [
+    "B",
+    "ماشي. بس المرة الياية لا تنسى!",
+    "māshi. bas il-marra l-yāya la tinsa!",
+    "OK. But don't forget next time!"
+   ],
+   [
+    "A",
+    "ما بنسى، بقول لك. وعد!",
+    "ma bansa, bagūl-lak. waʿd!",
+    "I won't forget, I'll tell you. Promise!"
+   ]
   ],
   "items": [
-   ["جان قلت لي", "chān gilt-li", "you should have told me (to a man)", "كان عليك أن تخبرني", "to a woman: chān gilti-li (جان قلتي لي); to a group: chān giltu-li (جان قلتوا لي); Kuwait: the same, you'll see written چان"],
-   ["ليش ما قلت لي؟", "lēsh ma gilt-li?", "why didn't you tell me? (to a man)", "لماذا لم تخبرني؟", "to a woman: lēsh ma gilti-li? (ليش ما قلتي لي؟)"],
-   ["جان ييت", "chān yīt", "I'd have come, I would have come", "لكنت أتيت", "chān yīt wiyyākum = I'd have come with you"],
-   ["جان خبرتك", "chān khabbartak", "I should have told you, I should have let you know (to a man)", "كان عليّ أن أخبرك", "to a woman: chān khabbartich (جان خبرتج)"],
-   ["نسيت", "nisēt", "I forgot; you forgot (to a man)", "نسيت", "to a woman: nisēti (نسيتي)"],
-   ["غلطتي", "ghalṭati", "my fault, my mistake", "خطئي", ""],
-   ["بقول لك", "bagūl-lak", "I'll tell you (to a man)", "سأخبرك", "to a woman: bagūl-lich (بقول لج)"],
-   ["الصور", "iṣ-ṣuwar", "the photos", "الصور", "one photo: ṣūra (صورة)"],
-   ["من أول", "min awwal", "before, earlier, from the start", "من قبل", ""]
+   [
+    "جان قلت لي",
+    "chān gilt-li",
+    "you should have told me (to a man)",
+    "كان عليك أن تخبرني",
+    "to a woman: chān gilti-li (جان قلتي لي); to a group: chān giltu-li (جان قلتوا لي); Kuwait: the same, you'll see written چان"
+   ],
+   [
+    "ليش ما قلت لي؟",
+    "lēsh ma gilt-li?",
+    "why didn't you tell me? (to a man)",
+    "لماذا لم تخبرني؟",
+    "to a woman: lēsh ma gilti-li? (ليش ما قلتي لي؟)"
+   ],
+   [
+    "جان ييت",
+    "chān yīt",
+    "I'd have come, I would have come",
+    "لكنت أتيت",
+    "chān yīt wiyyākum = I'd have come with you"
+   ],
+   [
+    "جان خبرتك",
+    "chān khabbartak",
+    "I should have told you, I should have let you know (to a man)",
+    "كان عليّ أن أخبرك",
+    "to a woman: chān khabbartich (جان خبرتج)"
+   ],
+   [
+    "نسيت",
+    "nisēt",
+    "I forgot; you forgot (to a man)",
+    "نسيت",
+    "to a woman: nisēti (نسيتي)"
+   ],
+   [
+    "غلطتي",
+    "ghalṭati",
+    "my fault, my mistake",
+    "خطئي",
+    ""
+   ],
+   [
+    "بقول لك",
+    "bagūl-lak",
+    "I'll tell you (to a man)",
+    "سأخبرك",
+    "to a woman: bagūl-lich (بقول لج)"
+   ],
+   [
+    "الصور",
+    "iṣ-ṣuwar",
+    "the photos",
+    "الصور",
+    "one photo: ṣūra (صورة)"
+   ],
+   [
+    "من أول",
+    "min awwal",
+    "before, earlier, from the start",
+    "من قبل",
+    ""
+   ]
   ]
  },
  {
@@ -91,23 +352,106 @@
   "grammar": "Emirati alternatives (UAE): abā, tabā, hub, il-ḥīna, basīr, yirmis",
   "culture": "In Emirati dialect novels, abā is almost as common as abi, and basīr nearly as common as barūḥ, while Kuwaiti writers hardly ever use them. You'll also hear ʿasab (عسب) for ʿashān 'because, so that'. Some Emiratis frown on it as a newer habit, so just recognise it.",
   "dialogue": [
-   ["A", "الحينه بسير البيت. تبا تيي وياي؟", "il-ḥīna basīr il-bēt. tabā tiyi wiyyāy?", "I'm heading home now. Do you want to come with me?"],
-   ["B", "ما فهمت. عيد مرة ثانية، شوي شوي", "ma fhimt. ʿīd marra thānya, shwayy shwayy", "I didn't get that. Say it again, slowly."],
-   ["A", "يعني الحين بروح البيت. تبي تيي وياي؟", "yaʿni il-ḥīn barūḥ il-bēt. tabi tiyi wiyyāy?", "I mean: I'm going home now. Do you want to come with me?"],
-   ["B", "آه، فهمت! زين عيل. أمك في البيت؟", "ā, fhimt! zēn ʿayal. ummak fi l-bēt?", "Ah, got it! OK, then. Is your mum at home?"],
-   ["A", "هيه، أمايه في حجرتها، بس تبا تشوفك", "hē, ummāya fi ḥijrat-ha, bas tabā tshūfak", "Yes, my mum's in her room, but she wants to see you."],
-   ["B", "ماشي، بس أنا أتكلم عربي شوي", "māshi, bas ana atkallam ʿarabi shwayy", "OK, but I only speak a little Arabic."],
-   ["A", "هب مشكلة، ترا أبوي يرمس إنجليزي. يلا، ما أبا أتأخر", "hub mushkila, tara ubūy yirmis ingilīzi. yalla, ma abā atʼakhkhar", "No problem, my dad speaks English. Come on, I don't want to be late."]
+   [
+    "A",
+    "الحينه بسير البيت. تبا تيي وياي؟",
+    "il-ḥīna basīr il-bēt. tabā tiyi wiyyāy?",
+    "I'm heading home now. Do you want to come with me?"
+   ],
+   [
+    "B",
+    "ما فهمت. عيد مرة ثانية، شوي شوي",
+    "ma fhimt. ʿīd marra thānya, shwayy shwayy",
+    "I didn't get that. Say it again, slowly."
+   ],
+   [
+    "A",
+    "يعني الحين بروح البيت. تبي تيي وياي؟",
+    "yaʿni l-ḥīn barūḥ il-bēt. tabi tiyi wiyyāy?",
+    "I mean: I'm going home now. Do you want to come with me?"
+   ],
+   [
+    "B",
+    "آه، فهمت! زين عيل. أمك في البيت؟",
+    "ā, fhimt! zēn ʿayal. ummak fi l-bēt?",
+    "Ah, got it! OK, then. Is your mum at home?"
+   ],
+   [
+    "A",
+    "هيه، أمايه في حجرتها، بس تبا تشوفك",
+    "hē, ummāya fi ḥijrat-ha, bas tabā tshūfak",
+    "Yes, my mum's in her room, but she wants to see you."
+   ],
+   [
+    "B",
+    "ماشي، بس أنا أتكلم عربي شوي",
+    "māshi, bas ana atkallam ʿarabi shwayy",
+    "OK, but I only speak a little Arabic."
+   ],
+   [
+    "A",
+    "هب مشكلة، ترا أبوي يرمس إنجليزي. يلا، ما أبا أتأخر",
+    "hub mushkila, tara ubūy yirmis ingilīzi. yalla, ma abā atʼakhkhar",
+    "No problem, my dad speaks English. Come on, I don't want to be late."
+   ]
   ],
   "items": [
-   ["الحينه", "il-ḥīna", "now (UAE)", "الآن", "the default is il-ḥīn (الحين); both are fine"],
-   ["بسير", "basīr", "I'll go, I'm off (UAE)", "سأذهب", "the default is barūḥ (بروح); binsīr (بنسير) = we'll go"],
-   ["تبا؟", "tabā?", "do you want? (to a man); she wants (UAE)", "هل تريد؟", "to a woman: tabīn? (تبين؟), as everywhere; the default is tabi (تبي)"],
-   ["أبا", "abā", "I want (UAE)", "أريد", "the default is abi (أبي); ma abā = I don't want"],
-   ["أمايه", "ummāya", "my mum (UAE)", "أمي", "the default is ummi (أمي); my dad: ubūya (أبويه)"],
-   ["حجرة", "ḥijra", "room (UAE)", "غرفة", "the default is ghurfa (غرفة); ḥijrat-ha = her room"],
-   ["هب", "hub", "not (UAE)", "ليس", "the default is mub (مب); hub mushkila = no problem"],
-   ["يرمس", "yirmis", "talks, speaks (UAE)", "يتكلم", "the default is yitkallam (يتكلم); tirmis = you talk, she talks"]
+   [
+    "الحينه",
+    "il-ḥīna",
+    "now (UAE)",
+    "الآن",
+    "the default is il-ḥīn (الحين); both are fine"
+   ],
+   [
+    "بسير",
+    "basīr",
+    "I'll go, I'm off (UAE)",
+    "سأذهب",
+    "the default is barūḥ (بروح); binsīr (بنسير) = we'll go"
+   ],
+   [
+    "تبا؟",
+    "tabā?",
+    "do you want? (to a man); she wants (UAE)",
+    "هل تريد؟",
+    "to a woman: tabīn? (تبين؟), as everywhere; the default is tabi (تبي)"
+   ],
+   [
+    "أبا",
+    "abā",
+    "I want (UAE)",
+    "أريد",
+    "the default is abi (أبي); ma abā = I don't want"
+   ],
+   [
+    "أمايه",
+    "ummāya",
+    "my mum (UAE)",
+    "أمي",
+    "the default is ummi (أمي); my dad: ubūya (أبويه)"
+   ],
+   [
+    "حجرة",
+    "ḥijra",
+    "room (UAE)",
+    "غرفة",
+    "the default is ghurfa (غرفة); ḥijrat-ha = her room"
+   ],
+   [
+    "هب",
+    "hub",
+    "not (UAE)",
+    "ليس",
+    "the default is mub (مب); hub mushkila = no problem"
+   ],
+   [
+    "يرمس",
+    "yirmis",
+    "talks, speaks (UAE)",
+    "يتكلم",
+    "the default is yitkallam (يتكلم); tirmis = you talk, she talks"
+   ]
   ]
  },
  {
@@ -118,21 +462,92 @@
   "tip": "To a woman, taww- takes -ich (tawwich yāya?) and past verbs end in -ti before -li: lēsh ma gilti-li? 'why didn't you tell me?', chān diggēti ʿalay 'you should have called me'. 'We've just' is tawwna + a plural participle: tawwna wāṣlīn.",
   "grammar": "checkpoint 2.5: recycle s2u073–s2u088 (taww-, lil-ḥīn, chān, discourse markers, negatives)",
   "dialogue": [
-   ["B", "هلا مريم! توج ياية؟", "hala Maryam! tawwich yāya?", "Hi Maryam! Have you just got in?"],
-   ["A", "هلا فيك. هيه، تونا واصلين من اجتماع ويا المدير", "hala fīk. hē, tawwna wāṣlīn min ijtimāʿ wiyya l-mudīr", "Hi. Yes, the manager and I have just got back from a meeting."],
-   ["B", "اجتماع؟ عن المشروع؟ ليش ما قلتي لي؟", "ijtimāʿ? ʿan il-mashrūʿ? lēsh ma gilti-li?", "A meeting? About the project? Why didn't you tell me?"],
-   ["A", "ترا طرشت لك رسالة الصبح!", "tara ṭarrasht-lak risāla iṣ-ṣubḥ!", "I did send you a message this morning, you know!"],
-   ["B", "والله؟ للحين ما وصلتني. محد قال لي شي", "wallāh? lil-ḥīn ma wiṣlatni. maḥḥad gāl-li shay", "Really? It still hasn't reached me. Nobody told me anything."],
-   ["A", "شكله من الشبكة. المهم، المدير يسأل عنك", "shaklah min ish-shabaka. il-muhimm, il-mudīr yisʼal ʿannak", "It must be the network. Anyway, the manager's asking for you."],
-   ["B", "زين، بروح له. بس جان دقيتي علي!", "zēn, barūḥ-lah. bas chān diggēti ʿalay!", "OK, I'll go and see him. But you should've called me!"]
+   [
+    "B",
+    "هلا مريم! توج ياية؟",
+    "hala Maryam! tawwich yāya?",
+    "Hi Maryam! Have you just got in?"
+   ],
+   [
+    "A",
+    "هلا فيك. هيه، تونا واصلين من اجتماع ويا المدير",
+    "hala fīk. hē, tawwna wāṣlīn min ijtimāʿ wiyya l-mudīr",
+    "Hi. Yes, the manager and I have just got back from a meeting."
+   ],
+   [
+    "B",
+    "اجتماع؟ عن المشروع؟ ليش ما قلتي لي؟",
+    "ijtimāʿ? ʿan il-mashrūʿ? lēsh ma gilti-li?",
+    "A meeting? About the project? Why didn't you tell me?"
+   ],
+   [
+    "A",
+    "ترا طرشت لك رسالة الصبح!",
+    "tara ṭarrasht-lak risāla ṣ-ṣubḥ!",
+    "I did send you a message this morning, you know!"
+   ],
+   [
+    "B",
+    "والله؟ للحين ما وصلتني. محد قال لي شي",
+    "wallāh? lil-ḥīn ma wiṣlatni. maḥḥad gāl-li shay",
+    "Really? It still hasn't reached me. Nobody told me anything."
+   ],
+   [
+    "A",
+    "شكله من الشبكة. المهم، المدير يسأل عنك",
+    "shaklah min ish-shabaka. il-muhimm, il-mudīr yisʼal ʿannak",
+    "It must be the network. Anyway, the manager's asking for you."
+   ],
+   [
+    "B",
+    "زين، بروح له. بس جان دقيتي علي!",
+    "zēn, barūḥ-lah. bas chān diggēti ʿalay!",
+    "OK, I'll go and see him. But you should've called me!"
+   ]
   ],
   "items": [
-   ["توج ياية؟", "tawwich yāya?", "have you only just got here? (to a woman)", "هل وصلتِ للتو؟", "to a man: tawwak yāy? (توك ياي؟)"],
-   ["تونا واصلين", "tawwna wāṣlīn", "we've just arrived, we've just got back", "وصلنا للتو", "they've just arrived: tawwhum wāṣlīn (توهم واصلين)"],
-   ["ليش ما قلتي لي؟", "lēsh ma gilti-li?", "why didn't you tell me? (to a woman)", "لماذا لم تخبريني؟", "to a man: lēsh ma gilt-li?"],
-   ["للحين ما وصلتني", "lil-ḥīn ma wiṣlatni", "it still hasn't reached me (a message, a parcel)", "لم تصلني بعد", "for a masculine noun: lil-ḥīn ma wiṣalni (للحين ما وصلني)"],
-   ["يسأل عنك", "yisʼal ʿannak", "(he)'s asking for you, asking about you (to a man)", "يسأل عنك", "to a woman: yisʼal ʿannich (يسأل عنج)"],
-   ["جان دقيتي علي", "chān diggēti ʿalay", "you should have called me (to a woman)", "كان عليكِ أن تتصلي بي", "to a man: chān diggēt ʿalay (جان دقيت علي)"]
+   [
+    "توج ياية؟",
+    "tawwich yāya?",
+    "have you only just got here? (to a woman)",
+    "هل وصلتِ للتو؟",
+    "to a man: tawwak yāy? (توك ياي؟)"
+   ],
+   [
+    "تونا واصلين",
+    "tawwna wāṣlīn",
+    "we've just arrived, we've just got back",
+    "وصلنا للتو",
+    "they've just arrived: tawwhum wāṣlīn (توهم واصلين)"
+   ],
+   [
+    "ليش ما قلتي لي؟",
+    "lēsh ma gilti-li?",
+    "why didn't you tell me? (to a woman)",
+    "لماذا لم تخبريني؟",
+    "to a man: lēsh ma gilt-li?"
+   ],
+   [
+    "للحين ما وصلتني",
+    "lil-ḥīn ma wiṣlatni",
+    "it still hasn't reached me (a message, a parcel)",
+    "لم تصلني بعد",
+    "for a masculine noun: lil-ḥīn ma wiṣalni (للحين ما وصلني)"
+   ],
+   [
+    "يسأل عنك",
+    "yisʼal ʿannak",
+    "(he)'s asking for you, asking about you (to a man)",
+    "يسأل عنك",
+    "to a woman: yisʼal ʿannich (يسأل عنج)"
+   ],
+   [
+    "جان دقيتي علي",
+    "chān diggēti ʿalay",
+    "you should have called me (to a woman)",
+    "كان عليكِ أن تتصلي بي",
+    "to a man: chān diggēt ʿalay (جان دقيت علي)"
+   ]
   ]
  },
  {
@@ -143,21 +558,92 @@
   "tip": "Answer an elder in short, full sentences and add yā ʿammi. akbar wāḥid 'the eldest' works like aḥsan wāḥid. atdarrab is 'I'm doing an internship, I'm training'. To allāh ywaffigak 'good luck, God grant you success', answer āmīn.",
   "grammar": "A2 exit: describe my family, living conditions, education and job",
   "dialogue": [
-   ["A", "يا ولدي، قول لي عن نفسك. تدرس ولّا تشتغل؟", "yā wildi, gūl-li ʿan nafsak. tidris walla tishtaghil?", "Son, tell me about yourself. Do you study or work?"],
-   ["B", "الثنين يا عمي. أدرس هندسة، وأتدرب في شركة", "ith-thnēn yā ʿammi. adris handasa, w atdarrab fi sharika", "Both, uncle. I study engineering, and I'm doing an internship at a company."],
-   ["A", "ما شاء الله، الله يوفقك. وأهلك للحين في لندن؟", "mā shāʼ allāh, allāh ywaffigak. w ahlak lil-ḥīn fi Landan?", "Good for you, I wish you every success. And is your family still in London?"],
-   ["B", "آمين. هيه، عندي أخ وأخت هناك، وأنا أكبر واحد", "āmīn. hē, ʿindi akh w ukht hnāk, w ana akbar wāḥid", "Thank you. Yes, I have a brother and a sister there, and I'm the eldest."],
-   ["A", "وانت هني ساكن بروحك؟", "w inta hni sākin b-rūḥak?", "And here, do you live on your own?"],
-   ["B", "لا أبد، ساكن ويا ربيعي في مردف. والإيجار غالي!", "la abad, sākin wiyya rbīʿi fi Mirdif. w il-ījār ghāli!", "No, not at all, I live with my friend in Mirdif. And the rent's expensive!"],
-   ["A", "هيه والله، كل شي غالي هالأيام", "hē wallāh, kill shay ghāli hal-ayyām", "Yes, honestly, everything's expensive these days."]
+   [
+    "A",
+    "يا ولدي، قول لي عن نفسك. تدرس ولّا تشتغل؟",
+    "yā wildi, gūl-li ʿan nafsak. tidris walla tishtaghil?",
+    "Son, tell me about yourself. Do you study or work?"
+   ],
+   [
+    "B",
+    "الثنين يا عمي. أدرس هندسة، وأتدرب في شركة",
+    "ith-thnēn yā ʿammi. adris handasa, w atdarrab fi sharika",
+    "Both, uncle. I study engineering, and I'm doing an internship at a company."
+   ],
+   [
+    "A",
+    "ما شاء الله، الله يوفقك. وأهلك للحين في لندن؟",
+    "mā shāʼ allāh, allāh ywaffigak. w ahlak lil-ḥīn fi Landan?",
+    "Good for you, I wish you every success. And is your family still in London?"
+   ],
+   [
+    "B",
+    "آمين. هيه، عندي أخ وأخت هناك، وأنا أكبر واحد",
+    "āmīn. hē, ʿindi akh w ukht hnāk, w ana akbar wāḥid",
+    "Thank you. Yes, I have a brother and a sister there, and I'm the eldest."
+   ],
+   [
+    "A",
+    "وانت هني ساكن بروحك؟",
+    "w inta hni sākin b-rūḥak?",
+    "And here, do you live on your own?"
+   ],
+   [
+    "B",
+    "لا أبد، ساكن ويا ربيعي في مردف. والإيجار غالي!",
+    "la abad, sākin wiyya rbīʿi fi Mirdif. w il-ījār ghāli!",
+    "No, not at all, I live with my friend in Mirdif. And the rent's expensive!"
+   ],
+   [
+    "A",
+    "هيه والله، كل شي غالي هالأيام",
+    "hē wallāh, kill shay ghāli hal-ayyām",
+    "Yes, honestly, everything's expensive these days."
+   ]
   ],
   "items": [
-   ["قول لي عن نفسك", "gūl-li ʿan nafsak", "tell me about yourself (to a man)", "حدثني عن نفسك", "to a woman: gūlī-li ʿan nafsich (قولي لي عن نفسج)"],
-   ["تدرس ولّا تشتغل؟", "tidris walla tishtaghil?", "do you study or work? (to a man)", "هل تدرس أم تعمل؟", "to a woman: tidrisīn walla tishtaghlīn?"],
-   ["أتدرب", "atdarrab", "I'm doing an internship, I'm training", "أتدرّب", "an intern, a trainee: mitdarrib (متدرب)"],
-   ["الله يوفقك", "allāh ywaffigak", "good luck, God grant you success (to a man)", "وفقك الله", "to a woman: allāh ywaffigich (الله يوفقج); reply: āmīn (آمين)"],
-   ["أكبر واحد", "akbar wāḥid", "the eldest, the biggest one", "الأكبر", "the youngest: aṣghar wāḥid (أصغر واحد)"],
-   ["الإيجار", "il-ījār", "the rent", "الإيجار", "il-ījār ghāli = the rent's expensive"]
+   [
+    "قول لي عن نفسك",
+    "gūl-li ʿan nafsak",
+    "tell me about yourself (to a man)",
+    "حدثني عن نفسك",
+    "to a woman: gūlī-li ʿan nafsich (قولي لي عن نفسج)"
+   ],
+   [
+    "تدرس ولّا تشتغل؟",
+    "tidris walla tishtaghil?",
+    "do you study or work? (to a man)",
+    "هل تدرس أم تعمل؟",
+    "to a woman: tidrisīn walla tishtaghlīn?"
+   ],
+   [
+    "أتدرب",
+    "atdarrab",
+    "I'm doing an internship, I'm training",
+    "أتدرّب",
+    "an intern, a trainee: mitdarrib (متدرب)"
+   ],
+   [
+    "الله يوفقك",
+    "allāh ywaffigak",
+    "good luck, God grant you success (to a man)",
+    "وفقك الله",
+    "to a woman: allāh ywaffigich (الله يوفقج); reply: āmīn (آمين)"
+   ],
+   [
+    "أكبر واحد",
+    "akbar wāḥid",
+    "the eldest, the biggest one",
+    "الأكبر",
+    "the youngest: aṣghar wāḥid (أصغر واحد)"
+   ],
+   [
+    "الإيجار",
+    "il-ījār",
+    "the rent",
+    "الإيجار",
+    "il-ījār ghāli = the rent's expensive"
+   ]
   ]
  }
 ]

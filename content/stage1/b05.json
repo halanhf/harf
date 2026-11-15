@@ -27,15 +27,15 @@
    ],
    [
     "B",
-    "مشكور! الكرك هني حلو، صح؟",
-    "mashkūr! il-karak hni ḥilu, ṣaḥḥ?",
-    "Thanks! The karak here is good, isn't it?"
+    "ليش لا، مشكور! الكرك هني حلو، صح؟",
+    "lēsh la, mashkūr! il-karak hni ḥilu, ṣaḥḥ?",
+    "Why not, thanks! The karak here is good, isn't it?"
    ],
    [
     "A",
-    "صح، وايد حلو. بالعافية!",
-    "ṣaḥḥ, wāyid ḥilu. bil-ʿāfya!",
-    "True, really good. Enjoy!"
+    "طبعا، أحب الكرك هني. بالعافية!",
+    "ṭabʿan, aḥibb il-karak hni. bil-ʿāfya!",
+    "Of course, I love the karak here. Enjoy!"
    ],
    [
     "B",
@@ -115,7 +115,7 @@
   "id": "s1u058",
   "stage": 1,
   "title": "At the supermarket",
-  "goal": "Shop with Maryam for the office breakfast: say what you need and ask a woman what she wants",
+  "goal": "At the office, plan the team breakfast with Maryam: say what we need from the supermarket and ask her what she wants",
   "tip": "Endings recap: nāgiṣ 'missing' + -na gives shu nāgiṣna? 'what do we need?'. To a woman the verb ends in -īn: inti shu tabīn? (to a man: shu tabi?). inzēn means 'OK, will do', or 'OK?' tagged on the end of a request.",
   "grammar": "recycle: possessives, past, modals",
   "dialogue": [
@@ -145,9 +145,15 @@
    ],
    [
     "A",
-    "لا، بس جي. يلا نروح",
-    "la, bas chī. yalla nrūḥ",
-    "No, that's it. Let's go."
+    "لا، بس جي. يعطيك العافية!",
+    "la, bas chī. yaʿṭīk il-ʿāfya!",
+    "No, that's it. Thanks for doing this!"
+   ],
+   [
+    "B",
+    "الله يعافيج",
+    "allāh yʿāfīch",
+    "You're welcome."
    ]
   ],
   "items": [
@@ -253,6 +259,12 @@
     "لا والله، هالمرة علي!",
     "la wallāh, hal-marra ʿalay!",
     "No way, this time it's on me!"
+   ],
+   [
+    "A",
+    "انزين، انزين!",
+    "inzēn, inzēn!",
+    "OK, OK!"
    ]
   ],
   "items": [
@@ -318,33 +330,33 @@
   "id": "s1u060",
   "stage": 1,
   "title": "Lunch at Sēf's house",
-  "goal": "Answer Umm Sēf's welcome, praise her cooking and say you're full",
+  "goal": "Lunch with Sēf's family: answer Umm Sēf's welcome, ask after her, praise her cooking and say you're full",
   "tip": "To a woman, use -ich: allāh yḥayyīch, allāh yʿāfīch. tislam īdich 'bless your hand' thanks the cook; the hand is the subject, so tislam doesn't change. Past recap: shbaʿt 'I'm full'. Endings: ṣaḥnak 'your plate'.",
   "grammar": "recycle: possessives, past, modals",
   "dialogue": [
    [
     "A",
-    "حياك الله. تفضل على الغدا",
-    "ḥayyāk allāh. tfaẓẓal ʿala l-ghada",
-    "Welcome. Please, come and have lunch."
+    "حياك الله يا ولدي. تفضل على الغدا",
+    "ḥayyāk allāh yā wildi. tfaẓẓal ʿala l-ghada",
+    "Welcome, son. Please, come and have lunch."
    ],
    [
     "B",
-    "الله يحييج. ما شاء الله، سمك ولحم!",
-    "allāh yḥayyīch. mā shāʼ allāh, simach w laḥam!",
-    "Thank you. Wow, fish and meat!"
+    "الله يحييج. شحالج يا خالتي؟",
+    "allāh yḥayyīch. shḥālich yā khālti?",
+    "Thank you. How are you, auntie?"
    ],
    [
     "A",
-    "كل، كل! صحنك فاضي",
-    "kil, kil! ṣaḥnak fāẓi",
-    "Eat, eat! Your plate's empty."
+    "بخير. كل، سمك ولحم ودياي! صحنك فاضي",
+    "b-khēr. kil, simach w laḥam w diyāy! ṣaḥnak fāẓi",
+    "Fine. Eat, there's fish, meat and chicken! Your plate's empty."
    ],
    [
     "B",
-    "والله شبعت. تسلم إيدج، وايد لذيذ",
-    "wallāh shbaʿt. tislam īdich, wāyid ladhīdh",
-    "Honestly, I'm full. Bless your hands, it's delicious."
+    "لا والله، شبعت. تسلم إيدج، وايد لذيذ",
+    "la wallāh, shbaʿt. tislam īdich, wāyid ladhīdh",
+    "No really, I'm full. Bless your hands, it's delicious."
    ],
    [
     "A",
@@ -430,7 +442,7 @@
   "id": "s1u061",
   "stage": 1,
   "title": "Finding the metro station",
-  "goal": "Ask a passer-by the way to the metro and follow directions with 'in front of' and 'behind'",
+  "goal": "Ask a passer-by the way to the metro, say you didn't understand, ask for it slowly, and follow directions with 'in front of' and 'behind'",
   "tip": "Place words go straight before the noun: jiddām il-mōl 'in front of the mall', wara l-maḥaṭṭa 'behind the station'. They take the same endings as nouns: jiddāmak 'in front of you', warāh 'behind it'.",
   "grammar": "prepositions of place: jiddām, wara, fōg, taḥt, yamm, barra, ṣōb + noun or ending",
   "dialogue": [
@@ -442,33 +454,33 @@
    ],
    [
     "A",
-    "مب بعيد. روح سيدا صوب الإشارة",
-    "mub baʿīd. rūḥ sīda ṣōb il-ishāra",
+    "مب بعيد. روح على طول صوب الإشارة",
+    "mub baʿīd. rūḥ ʿala ṭūl ṣōb il-ishāra",
     "It's not far. Go straight on towards the traffic lights."
    ],
    [
     "B",
-    "عند الإشارة أروح يمين؟",
-    "ʿind il-ishāra arūḥ yamīn?",
-    "At the lights, do I go right?"
+    "ما فهمت. تقدر تقول شوي شوي؟",
+    "ma fhimt. tigdar tgūl shwayy shwayy?",
+    "I didn't get that. Can you say it slowly?"
    ],
    [
     "A",
-    "لا، يسار. بتشوف المول قدامك",
-    "la, yasār. bitshūf il-mōl jiddāmak",
-    "No, left. You'll see the mall in front of you."
+    "تتكلم انقليزي؟",
+    "titkallam ingilīzi?",
+    "Do you speak English?"
    ],
    [
     "B",
-    "والمحطة ورا المول؟",
-    "w il-maḥaṭṭa wara l-mōl?",
-    "And the station's behind the mall?"
+    "شوي بس. عند الإشارة يمين، صح؟",
+    "shwayy bas. ʿind il-ishāra yamīn, ṣaḥḥ?",
+    "Just a little. At the lights, right, isn't it?"
    ],
    [
     "A",
-    "هيه، وراه. خمس دقايق بس",
-    "hē, warāh. khams dagāyig bas",
-    "Yes, behind it. Just five minutes."
+    "لا، يسار. المول قدامك، والمحطة وراه",
+    "la, yasār. il-mōl jiddāmak, w il-maḥaṭṭa warāh",
+    "No, left. The mall's in front of you, and the station's behind it."
    ]
   ],
   "items": [
@@ -559,9 +571,9 @@
    ],
    [
     "A",
-    "فوق. بس التذكرة تحت، يم الباب",
-    "fōg. bas it-tadhkara taḥt, yamm il-bāb",
-    "Upstairs. But you get the ticket downstairs, by the door."
+    "فوق. بس التذكرة تحت، قدام الباب",
+    "fōg. bas it-tadhkara taḥt, jiddām il-bāb",
+    "Upstairs. But you get the ticket downstairs, in front of the door."
    ],
    [
     "B",
@@ -639,39 +651,39 @@
   "id": "s1u063",
   "stage": 1,
   "title": "Where are you? On the phone",
-  "goal": "Find Maryam outside the mall by phone: say you're on the way and nearly there, and ask whether she's inside or outside",
+  "goal": "Find Maryam and the team outside the mall by phone before a team lunch: say you're on the way, ask her to repeat, and say you're nearly there",
   "tip": "barra 'outside' and dākhil 'inside' also go before a noun: barra l-mōl, dākhil il-mōl. yāy 'coming' works like rāyiḥ: a man says yāy, a woman yāya. To a woman the endings take -ich: minnich 'from you', asmaʿich 'I hear you'.",
   "grammar": "prepositions of place: jiddām, wara, fōg, taḥt, yamm, barra, ṣōb + noun or ending",
   "dialogue": [
    [
     "A",
-    "ألو، انت وين؟",
-    "alō, inta wēn?",
-    "Hello? Where are you?"
+    "ألو، انت وين؟ الكل هني!",
+    "alō, inta wēn? il-kill hni!",
+    "Hello? Where are you? Everyone's here!"
    ],
    [
     "B",
-    "أنا في الطريق. ياي الحين",
-    "ana fi ṭ-ṭarīg. yāy il-ḥīn",
-    "I'm on the way. I'm coming now."
+    "أنا في الطريق، في المترو. ياي الحين",
+    "ana fi ṭ-ṭarīg, fi l-mitro. yāy il-ḥīn",
+    "I'm on the way, on the metro. I'm coming now."
    ],
    [
     "A",
-    "زين. أنا برا المول، عند الباب",
-    "zēn. ana barra l-mōl, ʿind il-bāb",
-    "OK. I'm outside the mall, by the door."
+    "زين. نحن برا المول، عند الباب",
+    "zēn. niḥin barra l-mōl, ʿind il-bāb",
+    "OK. We're outside the mall, by the door."
    ],
    [
     "B",
-    "ما أسمعج عدل. انتي داخل المول؟",
-    "ma asmaʿich ʿadil. inti dākhil il-mōl?",
-    "I can't hear you properly. Are you inside the mall?"
+    "ما أسمعج عدل. عيدي مرة ثانية؟",
+    "ma asmaʿich ʿadil. ʿīdi marra thānya?",
+    "I can't hear you properly. Can you say it again?"
    ],
    [
     "A",
-    "لا، برا! قدام الباب",
-    "la, barra! jiddām il-bāb",
-    "No, outside! In front of the door."
+    "برا، مب داخل! قدام الباب",
+    "barra, mub dākhil! jiddām il-bāb",
+    "Outside, not inside! In front of the door."
    ],
    [
     "B",
@@ -744,7 +756,7 @@
   "stage": 1,
   "title": "Bus or metro? Getting to the airport",
   "goal": "Ask Sēf how to get to the airport and compare the bus, the metro and walking",
-  "tip": "chēf? 'how?' asks the same as shlōn? from u15; both are fine: chēf arūḥ il-maṭār? 'how do I get to the airport?'. Place words keep working: il-mōgif jiddām il-bēt 'the stop's in front of the house'.",
+  "tip": "chēf? 'how?' asks the same as shlōn? from u15; both are fine: chēf arūḥ il-maṭār? 'how do I get to the airport?'. Place words keep working: il-mōgif jiddām il-bēt 'the stop's right outside home'.",
   "grammar": "prepositions of place: jiddām, wara, fōg, taḥt, yamm, barra, ṣōb + noun or ending",
   "dialogue": [
    [
@@ -763,7 +775,7 @@
     "B",
     "والباص؟ الموقف قدام البيت",
     "w il-bāṣ? il-mōgif jiddām il-bēt",
-    "And the bus? The stop's in front of the house."
+    "And the bus? The stop's right outside home."
    ],
    [
     "A",
@@ -779,9 +791,9 @@
    ],
    [
     "A",
-    "لا، يم المول. خمس دقايق على ريولك",
-    "la, yamm il-mōl. khams dagāyig ʿala ryūlak",
-    "No, it's by the mall. Five minutes on foot."
+    "هيه، بعيدة على ريولك. خذ تاكسي",
+    "hē, baʿīda ʿala ryūlak. khudh tāksi",
+    "Yes, it's too far to walk. Take a taxi."
    ]
   ],
   "items": [
@@ -804,7 +816,7 @@
     "aw",
     "or",
     "أو",
-    "in a question you'll also hear walla"
+    "in questions you already know walla (ولّا): kbīra walla ṣghīra?"
    ],
    [
     "الباص",
@@ -937,7 +949,7 @@
   "id": "s1u066",
   "stage": 1,
   "title": "A1 exit: where I live and who I know",
-  "goal": "Tell Umm Sēf where you live, who you live with and what the area is like",
+  "goal": "At Sēf's family home, with Sēf there, tell Umm Sēf where you live, who you live with and what the area is like",
   "tip": "sākin 'living' works like rāyiḥ: a man says sākin, a woman sākna. Adjectives agree too: il-manṭiga hādya 'the area's quiet', il-jīrān ṭayybīn 'the neighbours are nice'. Endings: b-rūḥak 'on your own', aʿarfah 'I know him', aʿarfhum 'I know them'.",
   "grammar": "A1 exit: describe where I live and people I know",
   "dialogue": [
@@ -949,15 +961,15 @@
    ],
    [
     "B",
-    "في مردف، في شقة صغيرة",
-    "fi Mirdif, fi shigga ṣghīra",
-    "In Mirdif, in a small flat."
+    "في مردف، في شقة صغيرة يم المول",
+    "fi Mirdif, fi shigga ṣghīra yamm il-mōl",
+    "In Mirdif, in a small flat near the mall."
    ],
    [
     "A",
-    "ساكن بروحك؟",
-    "sākin b-rūḥak?",
-    "Do you live on your own?"
+    "ساكن بروحك، صح؟",
+    "sākin b-rūḥak, ṣaḥḥ?",
+    "You live on your own, right?"
    ],
    [
     "B",
@@ -967,15 +979,15 @@
    ],
    [
     "A",
-    "ما شاء الله. والمنطقة حلوة؟",
-    "mā shāʼ allāh. w il-manṭiga ḥilwa?",
-    "How lovely. And is the area nice?"
+    "ما شاء الله. والمنطقة زحمة؟",
+    "mā shāʼ allāh. w il-manṭiga zaḥma?",
+    "How lovely. And is the area busy?"
    ],
    [
     "B",
-    "هيه، هادية. والجيران طيبين، أعرفهم كلهم",
-    "hē, hādya. w il-jīrān ṭayybīn, aʿarfhum killhum",
-    "Yes, it's quiet. And the neighbours are nice, I know them all."
+    "لا، هادية. والجيران طيبين، أعرفهم كلهم",
+    "la, hādya. w il-jīrān ṭayybīn, aʿarfhum killhum",
+    "No, it's quiet. And the neighbours are nice, I know them all."
    ]
   ],
   "items": [
@@ -1021,7 +1033,6 @@
     "أعرفهم",
     ""
    ]
-  ],
-  "culture": "Most people living in Dubai aren't Emirati, so English is often the working language in shops and offices. With Emiratis and other Arabic speakers, start in Arabic anyway: a few Gulf words usually change the tone of the whole conversation."
+  ]
  }
 ]
