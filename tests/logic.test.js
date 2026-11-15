@@ -377,3 +377,15 @@ test("import after start over: the preview counts the backup cards the reset wil
   assert.deepEqual(gone,["a"]);
   assert.match(html,/gone=Object\.keys\(state\.cards\)\.filter\(k=>!merged\.cards\[k\]\)/); assert.match(html,/won't`\} come back\. Start over can't be undone with a backup/);
 });
+test("account copy is split by card group, and joining gives the same progress back",()=>{
+  assert.equal(L.shardOf("u12.3"),"s1"); assert.equal(L.shardOf("u3.s2"),"s1"); assert.equal(L.shardOf("s3u041.2"),"s3"); assert.equal(L.shardOf("s5u120.s4"),"s5");
+  assert.equal(L.shardOf("m.40"),"msa"); assert.equal(L.shardOf("cabc123"),"own"); assert.equal(L.shardOf("gk2j.1"),"gen"); assert.equal(L.shardOf("weird"),"other");
+  const card=(t,r)=>[1,5,r,t+1440,0,t,-1,1];
+  const full={updatedAt:5,streak:3,cards:{"u1.0":card(10,1),"s2u001.0":card(20,1),"m.1":card(30,1),"cxyz":card(40,1)}};
+  const {meta,shards}=L.splitProgress(full); assert.equal(meta.cards,undefined); assert.equal(meta.streak,3);
+  assert.deepEqual(Object.keys(shards.s1),["u1.0"]); assert.deepEqual(Object.keys(shards.s2),["s2u001.0"]); assert.deepEqual(Object.keys(shards.own),["cxyz"]);
+  assert.deepEqual(JSON.parse(JSON.stringify(L.joinProgress(meta,shards))),full);
+  // a legacy main document that still holds cards: the newer review wins whichever document it came from
+  const joined=L.joinProgress({cards:{"u1.0":card(10,1)}},{s1:{"u1.0":card(99,2)}}); assert.equal(joined.cards["u1.0"][5],99);
+  const joined2=L.joinProgress({cards:{"u1.0":card(99,2)}},{s1:{"u1.0":card(10,1)}}); assert.equal(joined2.cards["u1.0"][5],99);
+});

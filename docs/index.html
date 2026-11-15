@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-PbbnTDiA6IR4qkP22LmdlNFuTik6ZiRad9LhFnn02f4=' 'sha256-GXqx2dvrDRK/ZUMphui4kMywHZcA/gNA7JGN4DKpDKY=' 'sha256-TjzEs/CMu4MGclROfc2cb0kmyM1+N6cj6F9N00bxRGI=' 'sha256-vp9yiuNVlFlgqmBK0iLBTlFGjpvCVGY5xQ5q7LnFcr8='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-PbbnTDiA6IR4qkP22LmdlNFuTik6ZiRad9LhFnn02f4=' 'sha256-GFUuS5eRV+iOvv8sGmI3Zv5AlCUW8VeXjv0RJj4bpo4=' 'sha256-wP29Dq+9IQ/VIFn80meL7+RyRpOYFkKx/1xHTISO1JM=' 'sha256-vp9yiuNVlFlgqmBK0iLBTlFGjpvCVGY5xQ5q7LnFcr8='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -748,7 +748,23 @@ function whenLabel(ms){
   if(m<1.5) return "in 1 min"; if(m<60) return `in ${Math.round(m)} min`; if(m<1440) return `in ${Math.round(m/60)} h`;
   const d=Math.round(m/1440); if(d<60) return d===1?"tomorrow":`in ${d} days`; return `in ${Math.round(d/30)} mo`;
 }
-if(typeof module!=="undefined") module.exports={learnDay,dueAt,validCard,validGen,cleanSaved,S_MIN,MAX_IVL,normalizeArabic,levenshtein,similarity,wordMatch,letterForms,schedule,retrievability,intervalDays,isLeech,FSRS_W,cardMode,pickOptions,soundShift,validateUnit,isHidden,stageStatus,planDay,interleave,packCard,unpackCard,MATURE_DAYS,dayNum,nextStreak,visibleStreak,mergeProgress,whenLabel};
+// the account copy is split so no saved document grows past the store's size limit (a full course is thousands of
+// cards): one document for everything except cards, and one per group of cards
+const SHARDS=["s1","s2","s3","s4","s5","msa","own","gen","other"];
+const shardOf=id=>{ const m=/^s([1-5])u/.exec(id); return m?"s"+m[1]:/^u\d/.test(id)?"s1":id.startsWith("m.")?"msa":/^c[0-9a-z]+$/.test(id)?"own":/^g[0-9a-z]/.test(id)?"gen":"other"; };
+function splitProgress(obj){
+  const meta=Object.assign({},obj); delete meta.cards; const shards={}; SHARDS.forEach(n=>shards[n]={});
+  for(const [k,c] of Object.entries(obj.cards||{})) shards[shardOf(k)][k]=c;
+  return {meta,shards};
+}
+// older copies kept cards in the main document; those still count, and a shard's copy of a card wins only by the usual merge rule
+function joinProgress(meta,shards){
+  const o=Object.assign({},meta||{}); const cards=Object.assign({},o.cards&&typeof o.cards==="object"?o.cards:{});
+  for(const n of SHARDS){ const sh=shards&&shards[n]; if(!sh||typeof sh!=="object") continue;
+    for(const [k,c] of Object.entries(sh)) cards[k]=cards[k]?mergeProgress({cards:{[k]:cards[k]}},{cards:{[k]:c}}).cards[k]:c; }
+  o.cards=cards; return o;
+}
+if(typeof module!=="undefined") module.exports={SHARDS,shardOf,splitProgress,joinProgress,learnDay,dueAt,validCard,validGen,cleanSaved,S_MIN,MAX_IVL,normalizeArabic,levenshtein,similarity,wordMatch,letterForms,schedule,retrievability,intervalDays,isLeech,FSRS_W,cardMode,pickOptions,soundShift,validateUnit,isHidden,stageStatus,planDay,interleave,packCard,unpackCard,MATURE_DAYS,dayNum,nextStreak,visibleStreak,mergeProgress,whenLabel};
 </script>
 
 <script>
@@ -822,6 +838,28 @@ function setSync(state,msg){ sync.state=state; sync.msg=msg; const n=$("#sync-no
 const syncError=e=>{ const c=e&&e.code; return c==="quota_exceeded"?"Account storage is full.":c==="not_granted"||c==="forbidden"||c==="permission_denied"?"This page isn't allowed to save to your account.":`Couldn't save to your account${c?" ("+c+")":""}.`; };
 function save(){ S.updatedAt=Date.now(); persistLocal(); if(synced){ clearTimeout(saveTimer); saveTimer=setTimeout(pushRemote,1500); } }
 const progressRef=()=>DB.doc(`data/users/${UID}/progress`);
+const shardRef=n=>DB.doc(`data/users/${UID}/cards_${n}`);
+// what this browser last read or wrote for each card group, so unchanged groups aren't fetched or rewritten
+let shardStamp={}, shardSent={};
+// the account copy: the main document plus any card groups that changed since this browser last saw them.
+// groups left out only mean fewer cards to merge in; merging never deletes a card, so skipping one is safe
+async function readRemote(){
+  const snap=await progressRef().get(); if(!snap.exists) return null;
+  const meta=clone(snap.data()); const stamps=meta.shards&&typeof meta.shards==="object"?meta.shards:{}; delete meta.shards;
+  const shards={};
+  await Promise.all(SHARDS.filter(n=>stamps[n]&&stamps[n]!==shardStamp[n]).map(async n=>{ const d=await shardRef(n).get();
+    if(d.exists){ const o=clone(d.data()); shards[n]=o.cards&&typeof o.cards==="object"?o.cards:{}; } shardStamp[n]=stamps[n]; }));
+  return cleanIn(joinProgress(meta,shards));
+}
+// card groups first, then the main document that points at them, so a reader never follows a stamp to an unwritten group
+async function writeRemote(){
+  const {meta,shards}=splitProgress(serialize()); const stamps={};
+  for(const n of SHARDS){ const body=JSON.stringify(shards[n]); const empty=body==="{}";
+    if(empty&&!shardStamp[n]) continue;
+    if(body!==shardSent[n]||!shardStamp[n]){ const st=Date.now().toString(36)+Math.random().toString(36).slice(2,6); await shardRef(n).set({cards:shards[n]}); shardStamp[n]=st; shardSent[n]=body; }
+    stamps[n]=shardStamp[n]; }
+  meta.shards=stamps; await progressRef().set(meta);
+}
 const sig=s=>{ let t=0; for(const c of Object.values(s.cards)) t+=c.t; return [Object.keys(s.cards).length,t,Object.keys(s.unitsDone).length,s.streak,s.lastDay,s.custom.length,Object.values(s.suspended).filter(v=>v>0).length].join("|"); };
 function applyMerged(merged){ const before=sig(S); const gen=S.gen; S=hydrate(merged); S.gen=gen; persistLocal(); return sig(S)!==before; }
 function pushRemote(opts){
@@ -829,9 +867,8 @@ function pushRemote(opts){
   if(pushing){ if(opts&&opts.replace) replaceNext=true; else pushAgain=true; return pushing; }
   pushing=(async()=>{
     try{
-      const ref=progressRef();
-      if(!(opts&&opts.replace)){ const snap=await ref.get(); if(snap.exists&&applyMerged(mergeProgress(serialize(),cleanIn(snap.data())))) afterRemoteChange(); }
-      await ref.set(serialize()); setSync("ok","Saved to your account");
+      if(!(opts&&opts.replace)){ const remote=await readRemote(); if(remote&&applyMerged(mergeProgress(serialize(),remote))) afterRemoteChange(); }
+      await writeRemote(); setSync("ok","Saved to your account");
     }catch(e){ setSync("error",syncError(e)); }
   })();
   return pushing.then(()=>{ pushing=null; if(replaceNext){ replaceNext=false; pushAgain=false; return pushRemote({replace:true}); } if(pushAgain){ pushAgain=false; return pushRemote(); } });
@@ -848,8 +885,8 @@ async function setupSync(){
   let id=null; try{ id=await user.id(); }catch(e){} if(!id) return;
   DB=db; UID=id; setSync("pending","Connecting to your account…");
   try{
-    const snap=await progressRef().get();
-    if(snap.exists&&applyMerged(mergeProgress(serialize(),cleanIn(snap.data())))) afterRemoteChange();
+    const remote=await readRemote();
+    if(remote&&applyMerged(mergeProgress(serialize(),remote))) afterRemoteChange();
   }catch(e){ setSync("error",syncError(e)); }
   synced=true; await pushRemote();
   try{
