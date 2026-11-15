@@ -109,7 +109,7 @@ Settings, Dubai first: karak stand, Dubai Metro, a mall, the office, a universit
 
 | Units | Grammar point | Functions and situations | Domain | New items (examples; then recycle) | Culture |
 |---|---|---|---|---|---|
-| s3u001–s3u006 | **Active participles:** yāy, nāyim, msāfir (near future), ʿārif, fāhim, shāyif, msawwi; meaning depends on the verb class (S examples; class rules U) | on the way somewhere; travel plans; "I've already eaten" | travel | مسافر, نايم, عارف, فاهم, شايف, مسوي; recycle: ياي, رايح | — |
+| s3u001–s3u006 | **Active participles:** yāy, nāyim, msāfir (near future), ʿārif, fāhim, shāyif, msawwi; meaning depends on the verb class (S examples; class rules U) | on the way somewhere; travel plans; "I've already eaten" | travel | نايم, عارف, فاهم, شايف, مسوي; recycle: ياي, رايح, مسافر | — |
 | s3u007–s3u011 | **Past progressive** kān gāʿid; inceptive gām + verb (gāmat taktib, S); kān rāḥ "was about to" (S); kint b- "was going to" | telling small incidents with background | storytelling | كان قاعد, قام يضحك, كنت بقول لك; recycle: قاعد | — |
 | s3u012 | checkpoint 3.1 | — | — | 6 | — |
 | s3u013–s3u018 | **Conditionals:** idha + perfect (S); lō hypothetical (S); ḥatta lō "even if" (C); ilā "if" (UAE / Bedouin) in notes | offers, advice, plans with conditions | plans | لو عندي, حتى لو; reuse: إذا تبي | — |
@@ -117,11 +117,11 @@ Settings, Dubai first: karak stand, Dubai Metro, a mall, the office, a universit
 | s3u024–s3u027 | **Indirect questions:** ma adri wēn…, gūl-li shu…, idha "whether" (U) | asking for information politely; at a service counter | services | ما أدري وين, تدري شو, اسأله إذا | — |
 | s3u028 | checkpoint 3.2 | — | — | 6 | — |
 | s3u029–s3u034 | **Form II verbs** (doubled middle letter), taught as inflected chunks: yṣalliḥ, ghayyart, waddni, dawwart, khallaṣt, ngawwi (S) | tasks at work; fixing things | work | يصلح, غيرت, ودني, دورت, خلصت, الله يقويك (U); recycle: سويت, طرش | office hierarchy and politeness |
-| s3u035–s3u040 | **Forms III, V, VI** as chunks (sāʿidni, sāfart; tʿawwadt, tʿarraft ʿala; tʿāwanna) (U for Gulf examples) | government and services: appointments, forms, help; **renting a flat, opening a bank account** (no invented procedures) | services | ساعدني, سافرت, تعودت, تعرفت على, إيجار, حساب بنك | — |
+| s3u035–s3u040 | **Forms III, V, VI** as chunks (sāʿidni, sāfart; tʿawwadt, tʿarraft ʿala; tʿāwanna) (U for Gulf examples) | government and services: appointments, forms, help; **renting a flat, opening a bank account** (no invented procedures) | services | ساعدني, تعودت, تعرفت على, إيجار, حساب بنك; reuse: سافرت | — |
 | s3u041–s3u045 | **Forms VII, VIII, X** (ingiṭaʿ, iḥtāj, ittiṣal, istaʿmal, istānas) (U) | travel problems: lost luggage, a cut-off phone, hotel complaints | travel | انقطع, أحتاج, اتصلت, استعملت, استانست; recycle: اشتريت | — |
 | s3u046 | checkpoint 3.3 | — | — | 6 | — |
-| s3u047–s3u051 | **Passive participle and verbal noun** (mamnūʿ, mashghūl, mitʿawwid; dirāsa, sawāga) (placement S, Gulf forms U) | rules and signs; busy and closed; hobbies | daily life | ممنوع, متعود, سواقة, مسكر; recycle: مسموح, مشغول | — |
-| s3u052–s3u056 | **Permission and obligation:** ma yṣīr (C), ʿēb, ḥarām, il-mafrūẓ (C), lāzim ma vs mub lāzim (U scope), yabā-lah "it needs" (C: يباله 192/2) | etiquette, rules, what's allowed | etiquette | ما يصير, عيب, المفروض, مب لازم, لازم ما, يباله; recycle: يصير؟ | mosque and majlis etiquette; ʿēb as a social word |
+| s3u047–s3u051 | **Passive participle and verbal noun** (mamnūʿ, mashghūl, mitʿawwid; dirāsa, sawāga) (placement S, Gulf forms U) | rules and signs; busy and closed; hobbies | daily life | ممنوع, متعود, سواقة; recycle: مسموح, مشغول, مسكر | — |
+| s3u052–s3u056 | **Permission and obligation:** ma yṣīr (C), ʿēb, ḥarām, il-mafrūẓ (C), lāzim ma vs mub lāzim (U scope), yabā-lah "it needs" (C: يباله 192/2) | etiquette, rules, what's allowed | etiquette | عيب, المفروض, مب لازم, لازم ما, يباله; recycle: يصير؟, ما يصير | mosque and majlis etiquette; ʿēb as a social word |
 | s3u057–s3u060 | **khalli + object + verb** "let X do" (C): khallah yrūḥ, la tkhallīni | making plans with friends; light persuasion | social | خله يروح, لا تخليني, خلوه; recycle: خلنا, خلني | — |
 | s3u061–s3u064 | **"Still", "no longer", "left":** ma ʿād, baʿad "still" (U), bāgi, ẓall (U) | catching up after time away | conversation | ما عاد, باقي, ظل, بعده ما يا (U); recycle: توه, للحين | — |
 | s3u065 | checkpoint 3.4 | — | — | 6 | — |
