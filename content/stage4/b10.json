@@ -21,9 +21,9 @@
       ],
       [
         "A",
-        "هندسة، في بريطانيا، إذا حصلت بعثة. ولد عمي، أذكى واحد فينا، مبتعث هناك من سنتين",
-        "handasa, fi Brīṭānya, idha ḥaṣṣalt baʿtha. wild ʿammi, adhka wāḥid fīna, mibtaʿath hnāk min santēn",
-        "Engineering, in Britain, if I get a scholarship. My cousin, the cleverest of us all, has been there on a scholarship for two years."
+        "هندسة، في بريطانيا، إذا حصلت بعثة. هذا طبيعي عندنا، ولد عمي مبتعث هناك من سنتين",
+        "handasa, fi Brīṭānya, idha ḥaṣṣalt baʿtha. hādha ṭabīʿi ʿindana: wild ʿammi mibtaʿath hnāk min santēn",
+        "Engineering, in Britain, if I get a scholarship. That's normal for us: my cousin's been there on a scholarship for two years."
       ],
       [
         "B",
@@ -145,7 +145,7 @@
     "title": "The AI writes the summary",
     "goal": "At the office, Maryam shows you how the team now uses AI for report summaries; say what it's good for and why you'd still check it",
     "tip": "Recycle lō ma … chān for what nearly went wrong: lō ma ntibahti, chān ṭarrashnāh ghalaṭ 'if you hadn't noticed, we'd have sent it wrong'. New technology words come straight from fuṣḥā: idh-dhakāʼ il-iṣṭināʿi 'AI', it-tiqniyya 'technology', il-bayānāt 'the data'.",
-    "grammar": "recycle: lō ma + past, chān + past; topic first (il-garār garārna)",
+    "grammar": "recycle: lō ma + past, chān + past; ṣirna + present ('we've started …')",
     "dialogue": [
       [
         "A",
@@ -325,9 +325,9 @@
       ],
       [
         "B",
-        "وقول له إذا احتاج شي، أنا موجود. الامتحانات قريبة!",
-        "w gūl-lah idha ḥtāj shay, ana mawjūd. il-imtiḥānāt garība!",
-        "And tell him if he needs anything, I'm here. The exams are coming up!"
+        "وقول له يا عمي، إذا احتاج شي، أنا موجود. الامتحانات قريبة!",
+        "w gūl-lah yā ʿammi, idha ḥtāj shay, ana mawjūd. il-imtiḥānāt garība!",
+        "And tell him, uncle, if he needs anything, I'm here. The exams are coming up!"
       ]
     ],
     "items": [
@@ -567,9 +567,9 @@
       ],
       [
         "A",
-        "طرشته لك أمس! ما شفته؟ لا تجاملني!",
-        "ṭarrashtah lak ams! ma shiftah? la tjāmilni!",
-        "I sent it to you yesterday! Didn't you see it? Don't just be nice about it!"
+        "طرشته لك أمس! ما شفته؟ وقول لي إذا في شي غلط، لا تجاملني!",
+        "ṭarrashtah lak ams! ma shiftah? w gūl-li idha fī shay ghalaṭ, la tjāmilni!",
+        "I sent it to you yesterday! Didn't you see it? And tell me if something's wrong; don't just be nice!"
       ],
       [
         "B",
@@ -712,9 +712,9 @@
       ],
       [
         "A",
-        "هذا أهم شي! تأكدت قبل لا أسجل. لازم تتأكد من الاعتماد",
-        "hādha ahamm shay! taʼakkadt gabil la asajjil. lāzim titʼakkad min il-iʿtimād",
-        "That's the most important thing! I checked before I signed up. You have to check the accreditation."
+        "هذا أهم شي! تأكدت قبل لا أسجل، مب كل مكان يعترف فيها. لازم تتأكد من الاعتماد",
+        "hādha ahamm shay! taʼakkadt gabil la asajjil, mub kill makān yiʿtirif fīha. lāzim titʼakkad min il-iʿtimād",
+        "That's the most important thing! I checked before I signed up: not everywhere recognises it. You have to check the accreditation."
       ],
       [
         "B",
@@ -756,7 +756,7 @@
         "ḥēl mitʿib",
         "really tiring (Kuwait)",
         "متعب جدًا",
-        "the UAE says mitʿib wāyid (متعب وايد); (recognise)"
+        "UAE also: mitʿib wāyid (متعب وايد); (recognise)"
       ],
       [
         "التعليم عن بعد",
@@ -1258,8 +1258,8 @@
       ],
       [
         "B",
-        "كل واحد ييب غرشته وياه من البيت. هذي تفرق",
-        "kill wāḥid yīb gharshatah wiyyāh min il-bēt. hādhi tfarrig",
+        "خل كل واحد ييب غرشته وياه من البيت. هذي تفرق",
+        "khal kill wāḥid yīb gharshatah wiyyāh min il-bēt. hādhi tfarrig",
         "Let everyone bring their own bottle from home. That makes a difference."
       ],
       [
@@ -1403,25 +1403,18 @@
       ],
       [
         "A",
-        "كلامك صح. يلا نتمشى شوي تحت الشجر",
-        "kalāmak ṣaḥḥ. yalla nitmashsha shwayy taḥt ish-shajar",
+        "صح كلامك. يلا نتمشى شوي تحت الشجر",
+        "ṣaḥḥ kalāmak. yalla nitmashsha shwayy taḥt ish-shajar",
         "You're right. Come on, let's walk a bit under the trees."
       ]
     ],
     "items": [
       [
-        "الجو أبرد",
-        "il-jaww abrad",
-        "it's cooler, the weather's cooler",
-        "الجو أبرد",
-        ""
-      ],
-      [
         "الشجر يبرد",
         "ish-shajar ybarrid",
         "trees cool (it) down",
         "الأشجار تبرد",
-        "a tree: shajara (شجرة)"
+        "a tree: shajara (شجرة); cooler: abrad (أبرد), as in il-jaww abrad hni"
       ],
       [
         "لو كان في شجر أكثر",
@@ -1468,7 +1461,7 @@
     ],
     "culture": "The ghaf (Prosopis cineraria) was declared the UAE's national tree in 2008. It is drought-tolerant and stays green in the open desert, which is why it has long been valued for shade and as a meeting place.",
     "receptive": [
-      6
+      5
     ]
   },
   {
@@ -1511,15 +1504,15 @@
       ],
       [
         "B",
-        "خلك واثق من نفسك، ومستعد تتعلم مهارات",
-        "khallak wāthig min nafsak, w mistaʿidd titʿallam mahārāt",
+        "خلك واثق من نفسك، ومستعد تتعلم مهارات يديدة",
+        "khallak wāthig min nafsak, w mistaʿidd titʿallam mahārāt yidīda",
         "Stay confident, and ready to learn new skills."
       ],
       [
         "A",
-        "والمقابلة الساعة وحدة الظهر، في عز الحر. بطلع في آخر لحظة",
-        "w il-mugābla s-sāʿa waḥda ẓ-ẓuhur, fi ʿizz il-ḥarr. baṭlaʿ fi ākhir laḥẓa",
-        "And the interview's at one in the afternoon, in the worst of the heat. I'll leave at the last minute."
+        "والمقابلة الساعة وحدة الظهر، في عز الحر، فوق الأربعين. بطلع في آخر لحظة",
+        "w il-mugābla s-sāʿa waḥda ẓ-ẓuhur, fi ʿizz il-ḥarr, fōg il-arbaʿīn. baṭlaʿ fi ākhir laḥẓa",
+        "And the interview's at one in the afternoon, in the worst of the heat, over forty (degrees). I'll leave at the last minute."
       ],
       [
         "B",
@@ -1596,7 +1589,7 @@
         "B",
         "الإيجابيات وايد. أول شي، يوفر وقت، ويصلح الإملاء",
         "il-ījābiyyāt wāyid. awwal shay, ywaffir wagt, w yṣalliḥ il-imla",
-        "There are plenty of pros. First, it saves time, and it fixes your spelling."
+        "There are plenty of pros. First, it saves time, and it fixes spelling."
       ],
       [
         "A",
@@ -1630,8 +1623,8 @@
       ],
       [
         "B",
-        "لا، بالعكس. لو منعناه، جان استخدموه من ورا",
-        "la, bil-ʿaks. lō manaʿnāh, chān istakhdamōh min wara",
+        "لا، بالعكس. لو منعناه، جان استخدموه من ورانا",
+        "la, bil-ʿaks. lō manaʿnāh, chān istakhdamōh min warāna",
         "No, quite the opposite. If we banned it, they'd use it behind our backs."
       ],
       [
@@ -1644,7 +1637,7 @@
         "B",
         "ما ينعرف دايما. بس تقدرون تشيكون، والأحسن تعلمونهم يستخدمونه صح",
         "ma yinʿirif dāyman. bas tigdarūn tchayykūn, w il-aḥsan tʿallmūnhum yistakhdmūnah ṣaḥḥ",
-        "You can't always tell. But you can check, and it's better to teach them to use it properly."
+        "You can't always tell. But you (lecturers) can check, and it's better to teach them to use it properly."
       ]
     ],
     "items": [
@@ -1677,11 +1670,11 @@
         ""
       ],
       [
-        "من ورا",
-        "min wara",
-        "behind (people's) backs, on the sly",
-        "من وراء الظهر / سرًّا",
-        ""
+        "من ورانا",
+        "min warāna",
+        "behind our backs, without us knowing",
+        "من وراء ظهورنا / سرًّا",
+        "behind my back: min warāy (من وراي)"
       ],
       [
         "شو الحل؟",
