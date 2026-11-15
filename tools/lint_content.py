@@ -13,10 +13,10 @@ def norm(s):  # same idea as normalizeArabic in the app
     return re.sub(r"\s+", " ", re.sub(r"[^ء-ي\s]", " ", s)).strip()
 AR = re.compile(r"[ء-ي]")
 LATIN = re.compile(r"[A-Za-z]")
-TR_OK = re.compile(r"^[a-zA-Zāīūēōḥṣṭẓḍʿʼ'’\- ,.?!;:()/…\"“”0-9]+$")
+TR_OK = re.compile(r"^[a-zA-Zāīūēōḥṣṭẓḍʿʼ'’ĀĪŪĒŌḤṢṬẒ\- ,.?!;:()/…\"“”0-9]+$")  # capitals for names (ʿĀysha)
 # words that give away fuṣḥā or another dialect inside a gulf line (warnings: some have rare legitimate gulf uses)
 MSA = {"سوف", "لن", "لم", "ليس", "ليست", "هل", "الذي", "التي", "الذين", "ماذا", "لماذا", "اريد", "الان", "انني", "لكي", "حسنا", "ايضا", "جدا"}
-OTHER = {"عايز", "عاوز", "دلوقتي", "ازيك", "بدي", "بدك", "بدها", "هلق", "هيك", "كتير", "منيح", "كويس", "فين", "بتاع", "اوي", "حاجه", "عشان ايه", "ايه", "دي", "ده", "كده", "هيدا", "هاد", "شنو هاد", "تبغى", "ابغى", "ايش"}
+OTHER = {"عايز", "عاوز", "دلوقتي", "ازيك", "بدي", "بدك", "بدها", "هلق", "هيك", "كتير", "منيح", "كويس", "فين", "بتاع", "اوي", "حاجه", "عشان ايه", "دي", "ده", "كده", "هيدا", "هاد", "شنو هاد", "تبغى", "ابغى", "ايش"}
 FIELDS = {"id", "stage", "title", "goal", "tip", "dialogue", "items", "grammar", "culture", "task"}
 
 def units_of(n):
