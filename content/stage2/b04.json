@@ -15,9 +15,9 @@
    ],
    [
     "A",
-    "هذا أحسن من هذاك، بس أغلى",
-    "hādha aḥsan min hādhāk, bas aghla",
-    "This one's better than that one, but it's more expensive."
+    "هذا أحسن من هذاك، بس أغلى. تبيه؟",
+    "hādha aḥsan min hādhāk, bas aghla. tabīh?",
+    "This one's better than that one, but it's more expensive. Do you want it?"
    ],
    [
     "B",
@@ -39,15 +39,15 @@
    ],
    [
     "A",
-    "صح. شو تبي، أرخص ولا أسرع؟",
-    "ṣaḥḥ. shu tabi, arkhaṣ walla asraʿ?",
-    "True. What do you want, cheaper or faster?"
+    "صح. المهم، شو تبي، أرخص ولا أسرع؟",
+    "ṣaḥḥ. il-muhimm, shu tabi, arkhaṣ walla asraʿ?",
+    "True. Anyway, what do you want, cheaper or faster?"
    ],
    [
     "B",
-    "أسرع. خلاص، باخذ هذا، يستاهل",
-    "asraʿ. khalāṣ, bākhidh hādha, yistāhil",
-    "Faster. OK, I'll take this one, it's worth it."
+    "أسرع. خلاص، أبيه، يستاهل",
+    "asraʿ. khalāṣ, abīh, yistāhil",
+    "Faster. OK, I'll have it, it's worth it."
    ]
   ],
   "items": [
@@ -150,9 +150,9 @@
    ],
    [
     "B",
-    "الأزرق؟ ما أحب الأزرق. عندهم أحمر؟",
-    "il-azrag? ma aḥibb il-azrag. ʿindhum aḥmar?",
-    "The blue? I don't like blue. Do they have red?"
+    "الأزرق؟ لا، ما أبيه. عندهم أحمر؟",
+    "il-azrag? la, ma abīh. ʿindhum aḥmar?",
+    "The blue one? No, I don't want it. Do they have red?"
    ],
    [
     "A",
@@ -162,9 +162,9 @@
    ],
    [
     "B",
-    "خلاص، باخذه",
-    "khalāṣ, bākhdhah",
-    "OK, I'll take it."
+    "خلاص، عطني إياه",
+    "khalāṣ, ʿaṭni iyyāh",
+    "OK, give it to me."
    ]
   ],
   "items": [
@@ -261,9 +261,9 @@
    ],
    [
     "A",
-    "بميتين. هو أغلى واحد هني",
-    "b-mītēn. huwa aghla wāḥid hni",
-    "Two hundred. It's the most expensive one here."
+    "بميتين. هو أغلى واحد هني. تبيه؟",
+    "b-mītēn. huwa aghla wāḥid hni. tabīh?",
+    "Two hundred. It's the most expensive one here. Do you want it?"
    ],
    [
     "B",
@@ -450,7 +450,7 @@
     "mithil",
     "like, the same as",
     "مثل",
-    "mithilha = like it (f.); mithlah = like it (m.)"
+    "mithilha = like it (a feminine thing)"
    ],
    [
     "شرات",
@@ -471,9 +471,9 @@
   "dialogue": [
    [
     "A",
-    "والله الأكل هني أحسن من المول",
-    "wallāh il-akil hni aḥsan min il-mōl",
-    "Honestly, the food here is better than at the mall."
+    "والله الأكل هني أحسن من المول، مثل كل مرة",
+    "wallāh il-akil hni aḥsan min il-mōl, mithil kill marra",
+    "Honestly, the food here is better than at the mall, as usual."
    ],
    [
     "B",
@@ -489,9 +489,9 @@
    ],
    [
     "B",
-    "لا والله، مثل كل مرة! نص نص",
-    "la wallāh, mithil kill marra! nuṣṣ nuṣṣ",
-    "No way, that's what you say every time! Let's go halves."
+    "لا والله، كل مرة انت تدفع! نص نص",
+    "la wallāh, kill marra inta tidfaʿ! nuṣṣ nuṣṣ",
+    "No way, you pay every time! Let's go halves."
    ],
    [
     "A",
@@ -507,9 +507,9 @@
    ],
    [
     "A",
-    "عادي، أنا أدفع كاش، وخل الباقي له",
-    "ʿādi, ana adfaʿ kāsh, w khall il-bāgi lah",
-    "No problem, I'll pay cash and leave him the change."
+    "عادي، أنا أدفع كاش، والباقي له",
+    "ʿādi, ana adfaʿ kāsh, w il-bāgi lah",
+    "No problem, I'll pay cash, and he can keep the change."
    ]
   ],
   "items": [
@@ -691,15 +691,15 @@
    ],
    [
     "B",
-    "ما شاء الله! كان كبير؟",
-    "mā shāʼ allāh! kān kbīr?",
-    "Wow! Was it big?"
+    "ما شاء الله! كان أكبر من بيتكم؟",
+    "mā shāʼ allāh! kān akbar min bētkum?",
+    "Wow! Was it bigger than your house?"
    ],
    [
     "A",
-    "لا، كان صغير، بس كان في حوش كبير",
-    "la, kān ṣghīr, bas kān fī ḥōsh kbīr",
-    "No, it was small, but there was a big courtyard."
+    "لا، كان أصغر. بس كان في حوش كبير",
+    "la, kān aṣghar. bas kān fī ḥōsh kbīr",
+    "No, it was smaller. But there was a big courtyard."
    ],
    [
     "B",
@@ -715,15 +715,15 @@
    ],
    [
     "B",
-    "والبيت الحين وين؟",
-    "w il-bēt il-ḥīn wēn?",
-    "And where's the house now?"
+    "والبيت الحين موجود؟",
+    "w il-bēt il-ḥīn mawjūd?",
+    "And is the house still there now?"
    ],
    [
     "A",
-    "في ديرة. كانت المنطقة هادية، الحين زحمة",
-    "fi Dēra. kānat il-manṭiga hādya, il-ḥīn zaḥma",
-    "In Deira. The area was quiet; now it's packed."
+    "لا، راح. كانت المنطقة هادية، الحين زحمة",
+    "la, rāḥ. kānat il-manṭiga hādya, il-ḥīn zaḥma",
+    "No, it's gone. The area was quiet; now it's packed."
    ]
   ],
   "items": [
@@ -808,9 +808,9 @@
    ],
    [
     "A",
-    "كنا ساكنين في ديرة، قريب من البحر",
-    "kinna sāknīn fi Dēra, garīb min il-baḥar",
-    "We lived in Deira, near the sea."
+    "أيام زمان كنا ساكنين في ديرة، قريب من البحر",
+    "ayyām zamān kinna sāknīn fi Dēra, garīb min il-baḥar",
+    "In the old days we lived in Deira, near the sea."
    ],
    [
     "B",
@@ -820,9 +820,9 @@
    ],
    [
     "A",
-    "كنا نلعب في الفريج ويا العيال",
-    "kinna nilʿab fi l-firīj wiyya l-ʿyāl",
-    "We used to play in the neighbourhood with the other kids."
+    "كنا نلعب في الفريج ويا العيال، أحلى شي!",
+    "kinna nilʿab fi l-firīj wiyya l-ʿyāl, aḥla shay!",
+    "We used to play in the neighbourhood with the other kids, the best thing ever!"
    ],
    [
     "B",
@@ -832,9 +832,9 @@
    ],
    [
     "A",
-    "هيه، كنت أمشي ويا خواتي. وانت؟",
-    "hē, kint amshi wiyya khawāti. w inta?",
-    "Yes, I used to walk there with my sisters. And you?"
+    "هيه، كنت أمشي ويا خواتي. ما كان في باص",
+    "hē, kint amshi wiyya khawāti. ma kān fī bāṣ",
+    "Yes, I used to walk there with my sisters. There was no bus."
    ],
    [
     "B",
@@ -951,7 +951,7 @@
     "A",
     "ما أدري. الحين أحسن، بس أول كان أهدى",
     "ma adri. il-ḥīn aḥsan, bas awwal kān ahda",
-    "I don't know. Now is better, but before it was quieter."
+    "I don't know. It's better now, but it used to be quieter."
    ]
   ],
   "items": [
@@ -1036,9 +1036,9 @@
    ],
    [
     "B",
-    "صار لي سنة تقريبا",
-    "ṣār-li sana tagrīban",
-    "About a year."
+    "صار لي سنة تقريبا. أول كنت في لندن",
+    "ṣār-li sana tagrīban. awwal kint fi Landan",
+    "About a year. Before that I was in London."
    ],
    [
     "A",
@@ -1060,9 +1060,9 @@
    ],
    [
     "B",
-    "هيه، بس الحر صعب علي",
-    "hē, bas il-ḥarr ṣaʿb ʿalay",
-    "Yes, but the heat's hard for me."
+    "هيه، بس الحر صعب علي. البرد أحسن!",
+    "hē, bas il-ḥarr ṣaʿb ʿalay. il-bard aḥsan!",
+    "Yes, but the heat's hard for me. The cold is better!"
    ],
    [
     "A",

@@ -99,6 +99,20 @@
     "together",
     "معًا",
     ""
+   ],
+   [
+    "صار لي زمان",
+    "ṣār-li zamān",
+    "it's been ages (for me)",
+    "منذ زمن طويل",
+    "said with a past: ṣār-li zamān ma shiftak 'I haven't seen you for ages'"
+   ],
+   [
+    "ما شفتك",
+    "ma shiftak",
+    "I haven't seen you, I didn't see you (to a man)",
+    "لم أرك",
+    "to a woman: ma shiftich (ما شفتج)"
    ]
   ]
  },
@@ -202,6 +216,20 @@
     "we had dinner",
     "تعشينا",
     "you had dinner (to a group): tʿashshētu (تعشيتوا)"
+   ],
+   [
+    "رجعت البيت",
+    "rijaʿt il-bēt",
+    "I went home, I got home; you went home (to a man)",
+    "عدت إلى البيت",
+    "a woman says, or to a woman: rijaʿti l-bēt"
+   ],
+   [
+    "لين الصبح",
+    "lēn iṣ-ṣubḥ",
+    "till morning",
+    "حتى الصباح",
+    ""
    ]
   ]
  },
@@ -305,6 +333,20 @@
     "make yourself at home (lit. the house is your house) (to a man)",
     "البيت بيتك",
     "to a woman: il-bēt bētich"
+   ],
+   [
+    "وين رايح؟",
+    "wēn rāyiḥ?",
+    "where are you off to? (to a man)",
+    "إلى أين أنت ذاهب؟",
+    "to a woman: wēn rāyḥa?"
+   ],
+   [
+    "لين يرجع",
+    "lēn yirjaʿ",
+    "until he gets back",
+    "حتى يرجع",
+    "until she gets back: lēn tirjaʿ (لين ترجع)"
    ]
   ]
  },
@@ -401,6 +443,27 @@
     "travelling, flying (somewhere) (a man)",
     "مسافر",
     "a woman: msāfra (مسافرة)"
+   ],
+   [
+    "ماي بارد",
+    "māy bārid",
+    "cold water",
+    "ماء بارد",
+    ""
+   ],
+   [
+    "قبل لا أروح",
+    "gabil la arūḥ",
+    "before I go",
+    "قبل أن أذهب",
+    ""
+   ],
+   [
+    "عندي دوام",
+    "ʿindi dawām",
+    "I've got work, I'm on shift",
+    "لدي دوام",
+    ""
    ]
   ]
  },
@@ -496,6 +559,20 @@
     "minu biysūg?",
     "who's driving? who'll drive?",
     "من سيقود؟",
+    ""
+   ],
+   [
+    "قلت لكم",
+    "gilt-lkum",
+    "I told you (to a group)",
+    "قلت لكم",
+    "to one man: gilt-lak; to one woman: gilt-lich"
+   ],
+   [
+    "الساعة خمس",
+    "is-sāʿa khams",
+    "five o'clock, at five",
+    "الساعة الخامسة",
     ""
    ]
   ]
@@ -600,6 +677,20 @@
     "next to me",
     "بجانبي",
     "next to you: yammak (to a man), yammich (to a woman)"
+   ],
+   [
+    "قبل لا نتأخر",
+    "gabil la nitʼakhkhar",
+    "before we're late",
+    "قبل أن نتأخر",
+    ""
+   ],
+   [
+    "يم الباب",
+    "yamm il-bāb",
+    "by the door, next to the door",
+    "بجانب الباب",
+    ""
    ]
   ]
  },
@@ -696,6 +787,20 @@
     "I hope you pass (to a man)",
     "أتمنى أن تنجح",
     "to a woman: in shāʼ allāh tinjaḥīn"
+   ],
+   [
+    "شلون الدراسة؟",
+    "shlōn id-dirāsa?",
+    "how are your studies going?",
+    "كيف الدراسة؟",
+    "UAE also: chēf id-dirāsa?"
+   ],
+   [
+    "بعد الامتحان",
+    "baʿd il-imtiḥān",
+    "after the exam",
+    "بعد الامتحان",
+    "UAE also: ʿugub il-imtiḥān"
    ]
   ]
  },
@@ -792,6 +897,20 @@
     "how's work?",
     "كيف العمل؟",
     "also: shlōn ish-shughul?"
+   ],
+   [
+    "عندي اجتماع",
+    "ʿindi ijtimāʿ",
+    "I've got a meeting",
+    "لدي اجتماع",
+    ""
+   ],
+   [
+    "كلهم طيبين",
+    "killhum ṭayybīn",
+    "they're all nice",
+    "كلهم طيبون",
+    ""
    ]
   ]
  },
@@ -852,7 +971,7 @@
     "illi ṣār",
     "what happened",
     "ما حدث",
-    "illi ṣār ṣār: what's done is done"
+    ""
    ],
    [
     "كل اللي",
@@ -887,6 +1006,20 @@
     "ma dirēt",
     "I didn't realise, I didn't know",
     "لم أدرِ",
+    ""
+   ],
+   [
+    "اللي صار صار",
+    "illi ṣār ṣār",
+    "what's done is done (lit. what happened happened)",
+    "ما حدث قد حدث",
+    ""
+   ],
+   [
+    "ريّال زين",
+    "rayyāl zēn",
+    "a good guy, a decent man",
+    "رجل طيب",
     ""
    ]
   ]
