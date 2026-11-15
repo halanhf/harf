@@ -1,6 +1,6 @@
 [
 ["حَاسُوب","ḥāsūb","computer","M كمبيوتر kambyūtar","general"],
-["هَاتِف مَحْمُول","hātif maḥmūl","mobile phone (UAE forms also: hātif mutaḥarrik)","M تلفون tilifōn","general"],
+["هَاتِف مَحْمُول","hātif maḥmūl","mobile phone (on UAE forms also hātif mutaḥarrik)","M تلفون tilifōn","general"],
 ["حَاسُوب مَحْمُول","ḥāsūb maḥmūl","laptop","M لابتوب lābtōb","general"],
 ["تِلْفَاز","tilfāz","television (set)","G~ tilfizyōn","general"],
 ["كُرَةُ الْقَدَم","kuratu l-qadam","football","G~ kōra","general"],
@@ -187,7 +187,7 @@
 ["عَلَى الْأَقَلّ","ʿala l-aqall","at least","G~ ʿala l-agall","function"],
 ["مِنَ الْوَاضِحِ أَنَّ","mina l-wāḍiḥi anna","it is clear that","G~ wāẓiḥ inn","function"],
 ["بَدَلًا مِنْ","badalan min","instead of","G~ badal","function"],
-["مُقَابِلَ","muqābila","in return for; compared with, versus (3 muqābil 1, 3–1); opposite","G~ mugābil","function"],
+["مُقَابِلَ","muqābila","in return for; compared with, versus (3 muqābil 1, 3–1); opposite","G~ mgābil","function"],
 ["سَوَاءٌ … أَمْ","sawāʼun … am","whether … or","G~ sawāʼ … walla","function"],
 ["بَعْدَ أَنْ","baʿda an","after (+ verb)","G~ baʿd ma","function"],
 ["قَبْلَ أَنْ","qabla an","before (+ verb)","G~ gabil la","function"],
