@@ -115,7 +115,7 @@
   "title": "Fifty thousand for a car",
   "goal": "In the office car park, Maryam shows you the car she has bought: ask the price and talk in thousands of dirhams",
   "tip": "alf is 1,000 and alfēn 2,000. From 3,000 to 10,000 use ālāf: thalāth ālāf, khams ālāf, ʿashr ālāf. From 11,000 up, alf stays as it is: ʿishrīn alf, khamsīn alf. Add the rest with w: alfēn w khams miya is 2,500.",
-  "grammar": "thousands: alf, alfēn, thalāth ālāf … ʿashar ālāf; ʿishrīn alf",
+  "grammar": "thousands: alf, alfēn, thalāth ālāf … ʿashr ālāf; ʿishrīn alf",
   "dialogue": [
    [
     "A",
@@ -132,8 +132,8 @@
    [
     "A",
     "بخمسين ألف. مب يديدة، عمرها ثلاث سنين",
-    "b-khamsīn alf. mub yidīda, ʿumrha thalāth snīn",
-    "Fifty thousand. It's not new, it's three years old."
+    "b-khamsīn alf. mub yidīda, ʿumrha thalāth sinīn",
+    "Fifty thousand. It's not brand new, it's three years old."
    ],
    [
     "B",
@@ -191,7 +191,7 @@
    ],
    [
     "عمرها ثلاث سنين",
-    "ʿumrha thalāth snīn",
+    "ʿumrha thalāth sinīn",
     "it's three years old (a feminine thing); she's three",
     "عمرها ثلاث سنوات",
     "a masculine thing or a boy: ʿumrah (عمره)"
@@ -230,7 +230,7 @@
   "id": "s2u052",
   "stage": 2,
   "title": "Third street on the right",
-  "goal": "Find Sēf's new flat: follow his directions on the phone with ordinals (third street, fourth building, tenth floor)",
+  "goal": "Find Fahad's rented flat, where Sēf and the others are waiting: follow Sēf's directions on the phone with ordinals (third street, fourth building, tenth floor)",
   "tip": "Ordinals: thāni 2nd, thālith 3rd, rābiʿ 4th, khāmis 5th … ʿāshir 10th. Before a noun, with no il-, they mean 'the …': thālith shāriʿ 'the third street', rābiʿ bināya 'the fourth building'. After a noun with il-, they agree like adjectives: iṭ-ṭābig il-ʿāshir 'the tenth floor'.",
   "grammar": "ordinals: thāni … ʿāshir before a noun; ākhir wāḥid",
   "dialogue": [
@@ -466,7 +466,7 @@
   "title": "Checkpoint 2.3: a surprise for Sēf",
   "goal": "Plan Sēf's birthday dinner with Fahad and Maryam: say when it is, agree on a place and split the bill",
   "tip": "To a group, 'don't' takes -ūn: la tgūlūn-lah 'don't tell him' (to one man: la tgūl-lah). After kill wāḥid 'each person' the verb is the he-form: kill wāḥid yidfaʿ 'each person pays'. ma ʿindi illa means 'I've only got'.",
-  "grammar": "checkpoint 2.3: recycle s2u046–s2u053 (illi, hundreds, months, the end of the month)",
+  "grammar": "checkpoint 2.3: recycle s2u046–s2u053 (illi, hundreds, the end of the month)",
   "dialogue": [
    [
     "B",
@@ -562,7 +562,7 @@
   "title": "My head hurts",
   "goal": "At the office, tell Maryam you're not feeling well, answer her get-well wishes and agree to go home",
   "tip": "shfīk? 'what's wrong?' is to a man; to a woman it's shfīch? Say what hurts, then yʿawwirni: rāsi yʿawwirni 'my head hurts'. To someone ill, say salāmāt or ma tshūf shar. The reply to both is allāh ysallmak, or allāh ysallmich to a woman.",
-  "grammar": "recycle: present and past (yʿawwirni, aḥiss; min il-bārḥa)",
+  "grammar": "recycle: present and future (yʿawwirni, aḥiss; bagūl, basawwīh)",
   "dialogue": [
    [
     "A",
@@ -720,7 +720,7 @@
    [
     "A",
     "بكتب لك دوا، خذه من الصيدلية اللي تحت",
-    "baktib-lak dawa, khudhah min iṣ-ṣaydaliyya illi taḥt",
+    "baktib-lak dawa, khudhah min iṣ-ṣēdaliyya illi taḥt",
     "I'll write you a prescription. Get it from the pharmacy downstairs."
    ]
   ],
@@ -783,7 +783,7 @@
    ],
    [
     "صيدلية",
-    "ṣaydaliyya",
+    "ṣēdaliyya",
     "a pharmacy, a chemist's",
     "صيدلية",
     ""
