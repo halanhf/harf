@@ -260,3 +260,29 @@ test("colours: every text/background token pair passes WCAG AA (4.5:1) in light 
   for(const [name,t] of [["light",light],["dark",dark]]) for(const [fg,bg] of pairs){ const r=ratio(t[fg],t[bg]); assert.ok(r>=4.5,`${name}: --${fg} on --${bg} is ${r.toFixed(2)}:1`); }
   assert.match(css,/\.badge\{[^}]*background:var\(--saffron-ink\);color:var\(--card\)/);
 });
+test("back gesture: a lesson closes on back, back (asking first) without leaving the app or adding history without a tap",()=>{
+  // runs the page's history code against a fake browser history. chrome skips entries a page adds without a fresh tap,
+  // so the next back would quit the app: every push must come from a tap
+  const main=html.match(/<script>\n\(function\(\)\{([\s\S]*?)<\/script>/)[1];
+  const code=main.slice(main.indexOf("let skipPop"),main.indexOf("function show("));
+  const entries=[{state:null}]; let at=0, tap=false; const pops=[], clicks=[], pushes=[];
+  const history={get state(){ return entries[at].state; },get length(){ return entries.length; },
+    pushState(s){ pushes.push(tap); entries.splice(at+1); entries.push({state:s}); at++; },replaceState(s){ entries[at].state=s; },
+    go(n){ at+=n; tap=false; pops.forEach(f=>f()); }};
+  const body={focus:false,classList:{contains:c=>c==="focus"&&body.focus}};
+  let armed=false; const x={click(){ if(!armed){ armed=true; return; } closeLesson(); }};
+  const env={history,document:{body,addEventListener:(t,f)=>{ if(t==="click") clicks.push(f); }},addEventListener:(t,f)=>{ if(t==="popstate") pops.push(f); },$:()=>x};
+  vm.createContext(env); vm.runInContext(code+";this.api={pushBack,dropBack,setClose:f=>{closeFocus=f;}};",env);
+  const closeLesson=()=>{ body.focus=false; armed=false; env.api.setClose(null); env.api.dropBack(); };
+  const open=()=>{ tap=true; body.focus=true; env.api.setClose(closeLesson); env.api.pushBack(); };
+  const back=()=>{ assert.ok(at>0,"back would leave the app"); history.go(-1); };
+  open(); back(); assert.equal(body.focus,true); assert.equal(armed,true); // first back asks
+  back(); assert.equal(body.focus,false); assert.equal(at,0);            // second back closes, still in the app
+  open(); tap=true; clicks.forEach(f=>f({isTrusted:true})); closeLesson(); assert.equal(at,0); assert.equal(entries[at].state,null); // the x leaves nothing behind
+  open(); back(); tap=true; clicks.forEach(f=>f({isTrusted:true})); armed=false; back(); assert.equal(body.focus,true); back(); assert.equal(body.focus,false);
+  assert.ok(pushes.length>=4&&pushes.every(Boolean),"history added without a tap: "+pushes);
+});
+test("export on claude.ai never fakes a download: a page-started download is blocked there",()=>{
+  assert.match(html,/try\{ if\(window\.claude\) throw 0; const a=el\("a"/);
+  assert.match(html,/document\.addEventListener\("touchstart",\(\)=>\{\},\{passive:true\}\)/); // ios shows the pressed state only with a touch listener
+});
