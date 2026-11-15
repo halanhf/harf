@@ -1,0 +1,1277 @@
+[
+ {
+  "id": "s4u011",
+  "stage": 4,
+  "title": "You can't hear a thing in here!",
+  "goal": "At a noisy café, Sēf gets a call and a photo from Fahad; say what can't be heard, made out or seen",
+  "tip": "Form VII in the present says what can or can't be done to a thing, with nobody named: iṣ-ṣōt ma yinsimiʿ 'you can't hear a thing', kalāmah ma yinfihim 'you can't make out what he says', ma yinshāf 'it can't be seen'. A feminine thing takes t-: ma tinshāf.",
+  "grammar": "Form VII present as 'can / can't be done': ma yinsimiʿ, ma yinfihim, ma yinshāf",
+  "dialogue": [
+   [
+    "A",
+    "فهد يدق علي، بس الصوت ما ينسمع هني",
+    "Fahad ydigg ʿalay, bas iṣ-ṣōt ma yinsimiʿ hni",
+    "Fahad's ringing me, but you can't hear a thing in here."
+   ],
+   [
+    "B",
+    "الموسيقى عالية وايد. اطلع برا وكلمه",
+    "il-mūsīga ʿālya wāyid. iṭlaʿ barra w kallmah",
+    "The music's really loud. Go outside and talk to him."
+   ],
+   [
+    "A",
+    "طلعت، بس الخط قاعد ينقطع، وكلامه ما ينفهم من الهوا",
+    "ṭilaʿt, bas il-khaṭṭ gāʿid yingiṭiʿ, w kalāmah ma yinfihim min il-hawa",
+    "I did, but the line keeps cutting out, and you can't make out what he's saying because of the wind."
+   ],
+   [
+    "B",
+    "طرش له مسج أحسن",
+    "ṭarrish-lah masij aḥsan",
+    "Better send him a message."
+   ],
+   [
+    "A",
+    "طرشت له، ورد علي بصورة. يقول إنه في المطار",
+    "ṭarrasht-lah, w radd ʿalay b-ṣūra. ygūl innah fi l-maṭār",
+    "I did, and he answered with a photo. He says he's at the airport."
+   ],
+   [
+    "B",
+    "راويني. الصورة ظلمة! ما ينشاف فيها شي",
+    "rāwīni. iṣ-ṣūra ẓalma! ma yinshāf fīha shay",
+    "Show me. The photo's so dark! You can't see a thing in it."
+   ],
+   [
+    "A",
+    "المهم، طيارته بتوصل الساعة عشر الليلة",
+    "il-muhimm, ṭayyārtah bitōṣal is-sāʿa ʿashr il-lēla",
+    "Anyway, his plane gets in at ten tonight."
+   ],
+   [
+    "B",
+    "زين! بنشوفه بعيوننا، أحسن من الصور",
+    "zēn! binshūfah b-ʿyūnna, aḥsan min iṣ-ṣuwar",
+    "Great! We'll see him with our own eyes; better than photos."
+   ]
+  ],
+  "items": [
+   [
+    "الصوت ما ينسمع",
+    "iṣ-ṣōt ma yinsimiʿ",
+    "you can't hear a thing, the sound can't be heard",
+    "الصوت لا يُسمع",
+    "it can be heard: yinsimiʿ (ينسمع); a feminine noun: ma tinsimiʿ (ما تنسمع)"
+   ],
+   [
+    "كلامه ما ينفهم",
+    "kalāmah ma yinfihim",
+    "you can't make out what he's saying",
+    "كلامه غير مفهوم",
+    "what she's saying: kalāmha ma yinfihim (كلامها ما ينفهم)"
+   ],
+   [
+    "ما ينشاف فيها شي",
+    "ma yinshāf fīha shay",
+    "you can't see a thing in it (a feminine noun: a photo, a room)",
+    "لا يُرى فيها شيء",
+    "in a masculine noun: ma yinshāf fīh shay (ما ينشاف فيه شي)"
+   ],
+   [
+    "الموسيقى عالية",
+    "il-mūsīga ʿālya",
+    "the music's loud",
+    "الموسيقى عالية",
+    "the sound's loud: iṣ-ṣōt ʿāli (الصوت عالي)"
+   ],
+   [
+    "اطلع برا",
+    "iṭlaʿ barra",
+    "go outside, step out (to a man)",
+    "اخرج",
+    "to a woman: iṭlaʿi barra (اطلعي برا)"
+   ],
+   [
+    "من الهوا",
+    "min il-hawa",
+    "because of the wind",
+    "بسبب الريح",
+    "(recognise) il-hawa is the wind or the air"
+   ],
+   [
+    "رد علي بصورة",
+    "radd ʿalay b-ṣūra",
+    "he answered me with a photo",
+    "رد علي بصورة",
+    "(recognise) she answered: raddat ʿalay (ردت علي)"
+   ],
+   [
+    "الصورة ظلمة",
+    "iṣ-ṣūra ẓalma",
+    "the photo's dark",
+    "الصورة مظلمة",
+    "also of a room: il-ghurfa ẓalma (الغرفة ظلمة)"
+   ],
+   [
+    "بنشوفه بعيوننا",
+    "binshūfah b-ʿyūnna",
+    "we'll see him with our own eyes",
+    "سنراه بأعيننا",
+    "her: binshūfha (بنشوفها)"
+   ]
+  ],
+  "receptive": [
+   5,
+   6
+  ]
+ },
+ {
+  "id": "s4u012",
+  "stage": 4,
+  "title": "The uni website won't let me in",
+  "goal": "On the last day of course registration, the university website is jammed; Sēf helps you get in and open your timetable",
+  "tip": "Form VII present without ma says what can be done: yinfitiḥ 'it opens, it can be opened', yinḥall 'it can be sorted out'. From dashsh 'go in' comes ma yindashsh 'you can't get in': il-mawgiʿ ma yindashsh 'the site won't let you in'.",
+  "grammar": "Form VII present as 'can / can't be done': ma yindashsh, yinḥall, ma yinfitiḥ",
+  "dialogue": [
+   [
+    "B",
+    "سيف، موقع الجامعة ما يندش!",
+    "Sēf, mawgiʿ il-jāmʿa ma yindashsh!",
+    "Sēf, the uni website won't let me in!"
+   ],
+   [
+    "A",
+    "عادي، اليوم آخر يوم للتسجيل، والكل قاعد يسجل الحين",
+    "ʿādi, il-yōm ākhir yōm lit-tasjīl, w il-kill gāʿid ysajjil il-ḥīn",
+    "That's normal: today's the last day to register, and everyone's registering right now."
+   ],
+   [
+    "B",
+    "وإذا ما سجلت اليوم؟ شو بيصير؟",
+    "w idha ma sajjalt il-yōm? shu biyṣīr?",
+    "And if I don't register today? What'll happen?"
+   ],
+   [
+    "A",
+    "لا تحاتي، كل شي ينحل. جرب من تلفوني",
+    "la tḥāti, kill shay yinḥall. jarrib min tilifōni",
+    "Don't worry, everything can be sorted out. Try from my phone."
+   ],
+   [
+    "B",
+    "دشيت! بس ملف الجدول ما ينفتح",
+    "dashshēt! bas malaff il-jadwal ma yinfitiḥ",
+    "I'm in! But the timetable file won't open."
+   ],
+   [
+    "A",
+    "يباله برنامج ثاني، بس على اللابتوب ينفتح أكيد",
+    "yabā-lah barnāmij thāni, bas ʿala l-lābtōb yinfitiḥ akīd",
+    "It needs another program, but it'll definitely open on the laptop."
+   ],
+   [
+    "B",
+    "زين. والمادة اللي أبيها؟ للحين فيها مكان؟",
+    "zēn. w il-māda illi abīha? lil-ḥīn fīha makān?",
+    "OK. And the module I want? Is there still a place on it?"
+   ],
+   [
+    "A",
+    "هيه، بس باقي مكانين بس. سجل الحين قبل لا يروحون",
+    "hē, bas bāgi makānēn bas. sajjil il-ḥīn gabil la yrūḥūn",
+    "Yes, but there are only two places left. Register now before they go."
+   ],
+   [
+    "B",
+    "سجلت! الحمد لله",
+    "sajjalt! il-ḥamdu lillāh",
+    "Done, I've registered! Thank God."
+   ]
+  ],
+  "items": [
+   [
+    "ما يندش",
+    "ma yindashsh",
+    "you can't get in, it won't let you in (a website, a place)",
+    "لا يمكن الدخول إليه",
+    "a feminine noun: ma tindashsh (ما تندش)"
+   ],
+   [
+    "كل شي ينحل",
+    "kill shay yinḥall",
+    "everything can be sorted out",
+    "كل شيء له حل",
+    ""
+   ],
+   [
+    "ما ينفتح",
+    "ma yinfitiḥ",
+    "it won't open, it can't be opened",
+    "لا يُفتح",
+    "a feminine noun: ma tinfitiḥ (ما تنفتح); it opened: infitaḥ (انفتح)"
+   ],
+   [
+    "دشيت",
+    "dashshēt",
+    "I got in, I went in; you got in (to a man)",
+    "دخلت",
+    "to a woman: dashshēti (دشيتي)"
+   ],
+   [
+    "إذا ما سجلت",
+    "idha ma sajjalt",
+    "if I don't register; if you don't register (to a man)",
+    "إذا لم أسجل",
+    "to a woman: idha ma sajjalti (إذا ما سجلتي)"
+   ],
+   [
+    "جرب من تلفوني",
+    "jarrib min tilifōni",
+    "try from my phone (to a man)",
+    "جرب من هاتفي",
+    "to a woman: jarrbi min tilifōni (جربي من تلفوني)"
+   ],
+   [
+    "آخر يوم للتسجيل",
+    "ākhir yōm lit-tasjīl",
+    "the last day to register",
+    "آخر يوم للتسجيل",
+    "(recognise)"
+   ],
+   [
+    "يباله برنامج ثاني",
+    "yabā-lah barnāmij thāni",
+    "it needs another program",
+    "يحتاج إلى برنامج آخر",
+    "(recognise)"
+   ],
+   [
+    "باقي مكانين بس",
+    "bāgi makānēn bas",
+    "there are only two places left",
+    "بقي مكانان فقط",
+    "(recognise) one place left: bāgi makān wāḥid (باقي مكان واحد)"
+   ]
+  ],
+  "receptive": [
+   6,
+   7,
+   8
+  ]
+ },
+ {
+  "id": "s4u013",
+  "stage": 4,
+  "title": "It's not your fault, son",
+  "goal": "In Bū Rāshid's majlis, apologise for arriving late, accept his kind words and his lunch, and praise the food",
+  "tip": "Form VII gives set phrases about people and things: inta ma tinlām 'it's not your fault (you can't be blamed)', ma tinwiṣif 'it's beyond words', ma tinradd 'it can't be turned down', kalām ma yingāl 'something you don't say'. With 'you' the prefix is t-: ma tinlām.",
+  "grammar": "Form VII present in set phrases: ma tinlām, ma tinwiṣif, ma tinradd, ma yingāl",
+  "dialogue": [
+   [
+    "B",
+    "السلام عليكم. السموحة يا عمي، تأخرت عليكم",
+    "as-salāmu ʿalaykum. is-samūḥa yā ʿammi, taʼakhkhart ʿalēkum",
+    "Peace be upon you. I'm sorry, uncle, I'm late."
+   ],
+   [
+    "A",
+    "وعليكم السلام. مسموح يا ولدي، الزحمة اليوم ما تنطاق",
+    "wa ʿalaykum is-salām. masmūḥ yā waladi, iz-zaḥma l-yōm ma tinṭāg",
+    "And upon you peace. No need, son; the traffic today is unbearable."
+   ],
+   [
+    "B",
+    "هيه والله، قعدت ساعة في الطريق",
+    "hē wallāh, gaʿadt sāʿa fi ṭ-ṭarīg",
+    "Yes, honestly, I sat an hour on the road."
+   ],
+   [
+    "A",
+    "انت ما تنلام. المهم إنك وصلت بالسلامة",
+    "inta ma tinlām. il-muhimm innak wiṣalt bis-salāma",
+    "It's not your fault. The main thing is you got here safely."
+   ],
+   [
+    "B",
+    "ما شاء الله، ريحة العيش ما تنوصف!",
+    "mā shāʼ allāh, rīḥat il-ʿēsh ma tinwiṣif!",
+    "Wow, the smell of the rice is beyond words!"
+   ],
+   [
+    "A",
+    "تفضل اقعد. وعزيمتي ما تنرد، لازم تتغدى ويانا",
+    "tfaẓẓal igʿid. w ʿazīmti ma tinradd, lāzim titghadda wiyyāna",
+    "Please, sit down. And you can't turn down my invitation: you must have lunch with us."
+   ],
+   [
+    "B",
+    "أكيد يا عمي، ما أقدر أقول لا!",
+    "akīd yā ʿammi, ma agdar agūl la!",
+    "Of course, uncle, I can't say no!"
+   ],
+   [
+    "A",
+    "وسيف يقول إنك صرت تطبخ أحسن منه، صج هالكلام؟",
+    "w Sēf ygūl innak ṣirt tiṭbakh aḥsan minnah, ṣij hal-kalām?",
+    "And Sēf says you've got to cooking better than him; is that true?"
+   ],
+   [
+    "B",
+    "هذا كلام ما ينقال جدام سيف!",
+    "hādha kalām ma yingāl jiddām Sēf!",
+    "That's something you don't say in front of Sēf!"
+   ]
+  ],
+  "items": [
+   [
+    "ما تنلام",
+    "ma tinlām",
+    "it's not your fault, you can't be blamed (to a man)",
+    "لا تُلام",
+    "to a woman: ma tinlāmīn (ما تنلامين); he can't be blamed: ma yinlām (ما ينلام)"
+   ],
+   [
+    "ما تنوصف",
+    "ma tinwiṣif",
+    "it's beyond words, out of this world (a feminine noun)",
+    "لا توصف",
+    "a masculine noun: ma yinwiṣif (ما ينوصف)"
+   ],
+   [
+    "عزيمتي ما تنرد",
+    "ʿazīmti ma tinradd",
+    "you can't turn down my invitation",
+    "دعوتي لا تُرد",
+    "(recognise)"
+   ],
+   [
+    "كلام ما ينقال",
+    "kalām ma yingāl",
+    "something you don't say, not something to say",
+    "كلام لا يُقال",
+    ""
+   ],
+   [
+    "تأخرت عليكم",
+    "taʼakhkhart ʿalēkum",
+    "I'm late, I've kept you (all) waiting",
+    "تأخرت عليكم",
+    "to one man: taʼakhkhart ʿalēk (تأخرت عليك); to one woman: taʼakhkhart ʿalēch (تأخرت عليج)"
+   ],
+   [
+    "المهم إنك وصلت بالسلامة",
+    "il-muhimm innak wiṣalt bis-salāma",
+    "the main thing is you got here safely (to a man)",
+    "المهم أنك وصلت بالسلامة",
+    "(recognise) to a woman: il-muhimm innich wiṣalti bis-salāma"
+   ],
+   [
+    "ريحة العيش",
+    "rīḥat il-ʿēsh",
+    "the smell of the rice",
+    "رائحة الأرز",
+    "ʿēsh is rice in the Gulf, not bread"
+   ],
+   [
+    "ما أقدر أقول لا",
+    "ma agdar agūl la",
+    "I can't say no",
+    "لا أستطيع أن أرفض",
+    ""
+   ],
+   [
+    "صرت تطبخ",
+    "ṣirt tiṭbakh",
+    "you've started cooking, you cook now (to a man)",
+    "أصبحت تطبخ",
+    "(recognise) to a woman: ṣirti tiṭbakhīn (صرتي تطبخين)"
+   ]
+  ],
+  "receptive": [
+   2,
+   5,
+   8
+  ]
+ },
+ {
+  "id": "s4u014",
+  "stage": 4,
+  "title": "They say we're moving",
+  "goal": "At the office, Maryam passes on a rumour that the company is moving; ask who's saying it and say how far you believe it",
+  "tip": "ygūlūn with no subject is 'people say, they say': ygūlūn ʿan il-mudīr innah… 'they say the manager…'. mithil ma ygūlūn 'as they say' brings in a set phrase. To doubt it: minu ygūl? 'says who?', and Form VII ma yinʿirif 'you can't tell, nobody knows'.",
+  "grammar": "impersonal ygūlūn and Form VII ma yinʿirif: rumours",
+  "dialogue": [
+   [
+    "A",
+    "سمعت؟ يقولون الشركة بتنتقل أبوظبي السنة الياية",
+    "simaʿt? ygūlūn ish-sharika bitintigil Abuẓabi s-sana l-yāya",
+    "Have you heard? They say the company's moving to Abu Dhabi next year."
+   ],
+   [
+    "B",
+    "منو يقول؟ أول مرة أسمع!",
+    "minu ygūl? awwal marra asmaʿ!",
+    "Says who? It's the first I've heard of it!"
+   ],
+   [
+    "A",
+    "الكل يتكلم. ويقولون عن المدير إنه شاف مكتب هناك",
+    "il-kill yitkallam. w ygūlūn ʿan il-mudīr innah shāf maktab hnāk",
+    "Everyone's talking. And they say the manager has been to see an office there."
+   ],
+   [
+    "B",
+    "يمكن إشاعة. هالكلام ما ينعرف من وين يطلع",
+    "yimkin ishāʿa. hal-kalām ma yinʿirif min wēn yiṭlaʿ",
+    "Maybe it's a rumour. You never can tell where this kind of talk comes from."
+   ],
+   [
+    "A",
+    "يمكن. بس إذا صج، شو بتسوي؟",
+    "yimkin. bas idha ṣij, shu bitsawwi?",
+    "Maybe. But if it's true, what will you do?"
+   ],
+   [
+    "B",
+    "من مردف لأبوظبي كل يوم؟ ما ينطاق!",
+    "min Mirdif l-Abuẓabi kill yōm? ma yinṭāg!",
+    "From Mirdif to Abu Dhabi every day? That'd be unbearable!"
+   ],
+   [
+    "A",
+    "مثل ما يقولون، كل شي ينحل",
+    "mithil ma ygūlūn, kill shay yinḥall",
+    "As they say, everything can be sorted out."
+   ],
+   [
+    "B",
+    "إن شاء الله. بس لين يقولون لنا رسمي، ما بصدق شي",
+    "in shāʼ allāh. bas lēn ygūlūn-lna rasmi, ma baṣaddig shay",
+    "I hope so. But until they tell us officially, I won't believe a thing."
+   ]
+  ],
+  "items": [
+   [
+    "يقولون عنه",
+    "ygūlūn ʿannah",
+    "they say about him, people say he…",
+    "يقولون عنه",
+    "about her: ygūlūn ʿanha (يقولون عنها)"
+   ],
+   [
+    "منو يقول؟",
+    "minu ygūl?",
+    "says who? who says so?",
+    "من يقول ذلك؟",
+    ""
+   ],
+   [
+    "أول مرة أسمع",
+    "awwal marra asmaʿ",
+    "it's the first I've heard (of it)",
+    "أول مرة أسمع بهذا",
+    ""
+   ],
+   [
+    "إشاعة",
+    "ishāʿa",
+    "a rumour",
+    "إشاعة",
+    "rumours: ishāʿāt (إشاعات)"
+   ],
+   [
+    "ما ينعرف",
+    "ma yinʿirif",
+    "you can't tell, nobody knows",
+    "لا يُعرف",
+    ""
+   ],
+   [
+    "الكل يتكلم",
+    "il-kill yitkallam",
+    "everyone's talking (about it)",
+    "الجميع يتكلم",
+    "(recognise)"
+   ],
+   [
+    "مثل ما يقولون",
+    "mithil ma ygūlūn",
+    "as they say, like they say",
+    "كما يقولون",
+    "UAE also: shrāt ma ygūlūn (شرات ما يقولون)"
+   ],
+   [
+    "بتنتقل",
+    "bitintigil",
+    "it's going to move, it'll move (a feminine noun: the company)",
+    "ستنتقل",
+    "(recognise) a masculine noun: biyintigil (بينتقل)"
+   ],
+   [
+    "ما بصدق شي",
+    "ma baṣaddig shay",
+    "I won't believe a thing",
+    "لن أصدق شيئًا",
+    ""
+   ]
+  ],
+  "receptive": [
+   5,
+   7
+  ]
+ },
+ {
+  "id": "s4u015",
+  "stage": 4,
+  "title": "Checkpoint 4.1: late for the wedding",
+  "goal": "Checkpoint: stuck in traffic with Sēf on the way to a wedding, say what you should have done, what will have happened by now, and what can't be heard",
+  "tip": "Review of s4u001–014: hindsight with lō … chān + past (lō ṭilaʿna badri, chān wiṣalna), what will have happened with biykūn + past (biykūnūn bidaw), and Form VII for what can't be done (il-mukālama ma tinsimiʿ).",
+  "grammar": "checkpoint 4.1: lō … chān, biykūn + past, Form VII 'can't be'",
+  "dialogue": [
+   [
+    "A",
+    "الشارع كله زحمة! لو طلعنا بدري، جان وصلنا الحين",
+    "ish-shāriʿ killah zaḥma! lō ṭilaʿna badri, chān wiṣalna l-ḥīn",
+    "The whole road's jammed! If we'd left early, we'd be there by now."
+   ],
+   [
+    "B",
+    "جان قلت لي! أنا كنت جاهز من الساعة سبع",
+    "chān gilt-li! ana kint jāhiz min is-sāʿa sabʿ",
+    "You should have told me! I was ready from seven."
+   ],
+   [
+    "A",
+    "الحين بيكونون بدوا العشا",
+    "il-ḥīn biykūnūn bidaw il-ʿasha",
+    "By now they'll have started dinner."
+   ],
+   [
+    "B",
+    "والعريس؟ بيكون وصل القاعة؟",
+    "w il-ʿarīs? biykūn wiṣal il-gāʿa?",
+    "And the groom? Will he have got to the hall?"
+   ],
+   [
+    "A",
+    "أكيد. دق على فهد، يمكن يعرف",
+    "akīd. digg ʿala Fahad, yimkin yaʿarf",
+    "Sure. Ring Fahad; maybe he knows."
+   ],
+   [
+    "B",
+    "دقيت، بس الأغاني عالية والمكالمة ما تنسمع",
+    "daggēt, bas il-aghāni ʿālya w il-mukālama ma tinsimiʿ",
+    "I did, but the songs are loud and you can't hear the call."
+   ],
+   [
+    "A",
+    "عادي، المهم نوصل قبل لا يخلص العرس",
+    "ʿādi, il-muhimm nōṣal gabil la yikhlaṣ il-ʿirs",
+    "Never mind, the main thing is we get there before the wedding's over."
+   ],
+   [
+    "B",
+    "إن شاء الله. بس المرة الثانية بنطلع قبل الساعة ست!",
+    "in shāʼ allāh. bas il-marra th-thānya biniṭlaʿ gabil is-sāʿa sitt!",
+    "I hope so. But next time we're leaving before six!"
+   ]
+  ],
+  "items": [
+   [
+    "لو طلعنا بدري",
+    "lō ṭilaʿna badri",
+    "if we'd left early",
+    "لو خرجنا مبكرًا",
+    "if I'd left early: lō ṭilaʿt badri (لو طلعت بدري)"
+   ],
+   [
+    "جان وصلنا",
+    "chān wiṣalna",
+    "we'd have got there, we'd be there (by now)",
+    "لوصلنا",
+    "I'd have got there: chān wiṣalt (جان وصلت)"
+   ],
+   [
+    "بيكونون بدوا",
+    "biykūnūn bidaw",
+    "they'll have started (by now)",
+    "سيكونون قد بدؤوا",
+    "he'll have started: biykūn bida (بيكون بدا)"
+   ],
+   [
+    "بيكون وصل",
+    "biykūn wiṣal",
+    "he'll have got there, he's probably there by now",
+    "سيكون قد وصل",
+    "she: bitkūn wiṣlat (بتكون وصلت)"
+   ],
+   [
+    "المكالمة ما تنسمع",
+    "il-mukālama ma tinsimiʿ",
+    "you can't hear the call",
+    "المكالمة لا تُسمع",
+    ""
+   ],
+   [
+    "قبل لا يخلص العرس",
+    "gabil la yikhlaṣ il-ʿirs",
+    "before the wedding's over",
+    "قبل أن ينتهي العرس",
+    "before the party's over: gabil la tikhlaṣ il-ḥafla (قبل لا تخلص الحفلة)"
+   ]
+  ],
+  "task": "This week: with a tutor or exchange partner (search a tutoring site for «Emirati Arabic tutor»), tell the story of a time you were late, in about a minute. Then say what you should have done (lō …, chān …) and what the others will have done while they waited (biykūnūn …). Ask them about a time they were late, and use 3 items from s4u011–015 in your answers."
+ },
+ {
+  "id": "s4u016",
+  "stage": 4,
+  "title": "I gave it to him this morning",
+  "goal": "At the office, Maryam is looking for the meeting-room key and a file; say who you gave them to and who'll give them back",
+  "tip": "With two objects, the person goes on the verb and the thing on iyyā-: ʿaṭētah iyyāh 'I gave it (m.) to him', ʿaṭētich iyyāh 'I gave it to you (f.)'. A feminine thing takes iyyāha: ʿaṭētah iyyāha. The future works the same: biyaʿṭīch iyyāh 'he'll give it to you (f.)'.",
+  "grammar": "double objects with iyyā-: ʿaṭētah iyyāh, ʿaṭētni iyyāh, biyaʿṭīch iyyāh",
+  "dialogue": [
+   [
+    "A",
+    "وين مفتاح غرفة الاجتماعات؟ دورته في كل مكان وما لقيته",
+    "wēn miftāḥ ghurfat il-ijtimāʿāt? dawwartah fi kill makān w ma ligētah",
+    "Where's the meeting-room key? I've looked for it everywhere and I can't find it."
+   ],
+   [
+    "B",
+    "أحمد خذاه. عطيته إياه الصبح",
+    "Aḥmad khadhāh. ʿaṭētah iyyāh iṣ-ṣubḥ",
+    "Aḥmad's got it. I gave it to him this morning."
+   ],
+   [
+    "A",
+    "زين. والملف الأحمر؟ عطيتني إياه أمس؟",
+    "zēn. w il-malaff il-aḥmar? ʿaṭētni iyyāh ams?",
+    "OK. And the red file? Did you give it to me yesterday?"
+   ],
+   [
+    "B",
+    "هيه، عطيتج إياه قبل يومين، تذكرين؟",
+    "hē, ʿaṭētich iyyāh gabil yōmēn, tidhkrīn?",
+    "Yes, I gave it to you two days ago, remember?"
+   ],
+   [
+    "A",
+    "صح! لقيته، كان على مكتبي طول الوقت",
+    "ṣaḥḥ! ligētah, kān ʿala maktabi ṭūl il-wagt",
+    "That's right! Found it; it was on my desk the whole time."
+   ],
+   [
+    "B",
+    "الحمد لله. والمفتاح، أحمد بيعطيج إياه بعد الاجتماع",
+    "il-ḥamdu lillāh. w il-miftāḥ, Aḥmad biyaʿṭīch iyyāh baʿd il-ijtimāʿ",
+    "Thank God. And the key: Aḥmad will give it to you after the meeting."
+   ],
+   [
+    "A",
+    "بس أنا أبيه قبل الساعة ثلاث",
+    "bas ana abīh gabil is-sāʿa thalāth",
+    "But I need it before three."
+   ],
+   [
+    "B",
+    "لا تحاتين، الحين أقول له",
+    "la tḥātīn, il-ḥīn agūl-lah",
+    "Don't worry, I'll tell him now."
+   ]
+  ],
+  "items": [
+   [
+    "عطيته إياه",
+    "ʿaṭētah iyyāh",
+    "I gave it (m.) to him; you gave it to him (to a man)",
+    "أعطيته إياه",
+    "a feminine thing: ʿaṭētah iyyāha (عطيته إياها); to a woman: ʿaṭētīh iyyāh (عطيتيه إياه)"
+   ],
+   [
+    "عطيتني إياه؟",
+    "ʿaṭētni iyyāh?",
+    "did you give it (m.) to me? (to a man)",
+    "هل أعطيتني إياه؟",
+    "to a woman: ʿaṭētīni iyyāh? (عطيتيني إياه؟)"
+   ],
+   [
+    "عطيتج إياه",
+    "ʿaṭētich iyyāh",
+    "I gave it (m.) to you (to a woman)",
+    "أعطيتكِ إياه",
+    "to a man: ʿaṭētak iyyāh (عطيتك إياه)"
+   ],
+   [
+    "بيعطيج إياه",
+    "biyaʿṭīch iyyāh",
+    "he'll give it (m.) to you (to a woman)",
+    "سيعطيكِ إياه",
+    "to a man: biyaʿṭīk iyyāh (بيعطيك إياه)"
+   ],
+   [
+    "خذاه",
+    "khadhāh",
+    "he took it (m.), he's got it",
+    "أخذه",
+    "she took it: khadhatah (خذته)"
+   ],
+   [
+    "ما لقيته",
+    "ma ligētah",
+    "I can't find it (m.), I didn't find it",
+    "لم أجده",
+    "a feminine thing: ma ligēt-ha (ما لقيتها)"
+   ],
+   [
+    "دورته في كل مكان",
+    "dawwartah fi kill makān",
+    "I've looked for it (m.) everywhere",
+    "بحثت عنه في كل مكان",
+    "a feminine thing: dawwart-ha fi kill makān (دورتها في كل مكان)"
+   ],
+   [
+    "طول الوقت",
+    "ṭūl il-wagt",
+    "the whole time, all along",
+    "طوال الوقت",
+    "(recognise)"
+   ],
+   [
+    "قبل يومين",
+    "gabil yōmēn",
+    "two days ago",
+    "قبل يومين",
+    "a week ago: gabil usbūʿ (قبل أسبوع)"
+   ]
+  ],
+  "receptive": [
+   7
+  ]
+ },
+ {
+  "id": "s4u017",
+  "stage": 4,
+  "title": "Lend me a hundred?",
+  "goal": "At a petrol station your card won't go through; borrow money from Sēf and promise to pay it back",
+  "tip": "Money (flūs) is 'it (f.)' or 'them', so it takes -ha: barudd-ha lak 'I'll pay it back to you'. With iyyā-: baʿṭīk iyyāha 'I'll give it (f.) to you'. To borrow, ask sallifni 'lend me'; to a woman, sallfīni.",
+  "grammar": "double objects: baʿṭīk iyyāha, barudd-ha lak; lending and borrowing",
+  "dialogue": [
+   [
+    "B",
+    "سيف، البطاقة ما اشتغلت، وفي البوك عشرة دراهم بس",
+    "Sēf, il-biṭāga ma ishtaghalat, w fi l-būk ʿashara darāhim bas",
+    "Sēf, my card didn't work, and there's only ten dirhams in my wallet."
+   ],
+   [
+    "A",
+    "عادي، كم تبي؟",
+    "ʿādi, cham tabi?",
+    "No problem; how much do you want?"
+   ],
+   [
+    "B",
+    "سلفني مية، وبردها لك باكر",
+    "sallifni miya, w barudd-ha lak bāchir",
+    "Lend me a hundred, and I'll pay it back tomorrow."
+   ],
+   [
+    "A",
+    "خذ. ولا تستعيل، ردها لي متى ما تبي",
+    "khudh. w la tistaʿyil, rudd-ha li mita ma tabi",
+    "Here. And no rush; pay it back whenever you like."
+   ],
+   [
+    "B",
+    "لا لا، باكر بعطيك إياها أول شي",
+    "la la, bāchir baʿṭīk iyyāha awwal shay",
+    "No, no, tomorrow I'll give it to you first thing."
+   ],
+   [
+    "A",
+    "زين. بس لا تنسى، ترى أنا بعد أنسى!",
+    "zēn. bas la tinsa, tara ana baʿad ansa!",
+    "OK. Just don't forget, because I forget too!"
+   ],
+   [
+    "B",
+    "ما بنسى. والله ما قصرت يا سيف",
+    "ma bansa. wallāh mā gaṣṣart yā Sēf",
+    "I won't forget. Honestly, thanks a lot, Sēf."
+   ],
+   [
+    "A",
+    "ما سوينا شي. مرة ثانية أنا بقول لك: سلفني!",
+    "mā sawwēna shay. marra thānya ana bagūl-lak: sallifni!",
+    "It was nothing. Another time I'll be the one saying 'lend me'!"
+   ]
+  ],
+  "items": [
+   [
+    "سلفني",
+    "sallifni",
+    "lend me (to a man)",
+    "أقرضني",
+    "to a woman: sallfīni (سلفيني)"
+   ],
+   [
+    "بردها لك",
+    "barudd-ha lak",
+    "I'll pay it back to you, I'll give it (f.) back to you (to a man)",
+    "سأردها لك",
+    "to a woman: barudd-ha lich (بردها لج); a masculine thing: baruddah lak (برده لك)"
+   ],
+   [
+    "ردها لي",
+    "rudd-ha li",
+    "give it (f.) back to me, pay it back (to a man)",
+    "ردها لي",
+    "to a woman: ruddī-ha li (رديها لي)"
+   ],
+   [
+    "بعطيك إياها",
+    "baʿṭīk iyyāha",
+    "I'll give it (f.) to you (to a man)",
+    "سأعطيك إياها",
+    "to a woman: baʿṭīch iyyāha (بعطيج إياها)"
+   ],
+   [
+    "البطاقة ما اشتغلت",
+    "il-biṭāga ma ishtaghalat",
+    "the card didn't work",
+    "لم تعمل البطاقة",
+    ""
+   ],
+   [
+    "لا تستعيل",
+    "la tistaʿyil",
+    "no rush, take your time (to a man)",
+    "لا تستعجل",
+    "(recognise) to a woman: la tistaʿylīn (لا تستعيلين); you'll see written لا تستعجل"
+   ],
+   [
+    "متى ما تبي",
+    "mita ma tabi",
+    "whenever you like (to a man)",
+    "متى ما تريد",
+    "(recognise) to a woman: mita ma tabīn (متى ما تبين)"
+   ],
+   [
+    "كم تبي؟",
+    "cham tabi?",
+    "how much do you want? how many do you want? (to a man)",
+    "كم تريد؟",
+    "to a woman: cham tabīn? (كم تبين؟)"
+   ],
+   [
+    "ترى أنا بعد أنسى",
+    "tara ana baʿad ansa",
+    "because I forget too, mind, I forget things too",
+    "فأنا أيضًا أنسى",
+    "(recognise) tara at the start warns or explains: mind, you know"
+   ]
+  ],
+  "receptive": [
+   5,
+   6,
+   8
+  ]
+ },
+ {
+  "id": "s4u018",
+  "stage": 4,
+  "title": "He still hasn't given them back",
+  "goal": "On campus, tell Sēf a classmate still hasn't returned the books you lent him, and agree how to ask for them",
+  "tip": "With a 'to' person and a thing, l- + person comes first and iyyā- + thing second: ma radd-li iyyāhum 'he hasn't given them back to me', biyrudd-lak iyyāhum 'he'll give them back to you'. Plural things take iyyāhum.",
+  "grammar": "double objects with l- + iyyā-: ma radd-li iyyāhum, biyrudd-lak iyyāhum",
+  "dialogue": [
+   [
+    "B",
+    "تذكر الكتب اللي سلفتها حمد؟ للحين ما رد لي إياهم",
+    "tidhkir il-kutub illi sallaft-ha Ḥamad? lil-ḥīn ma radd-li iyyāhum",
+    "Remember the books I lent Ḥamad? He still hasn't given them back to me."
+   ],
+   [
+    "A",
+    "من متى؟",
+    "min mita?",
+    "Since when?"
+   ],
+   [
+    "B",
+    "من شهرين! والامتحان الأسبوع الياي",
+    "min shahrēn! w il-imtiḥān il-usbūʿ il-yāy",
+    "For two months! And the exam's next week."
+   ],
+   [
+    "A",
+    "قول له بصراحة إنك تبيهم قبل الامتحان",
+    "gūl-lah b-ṣarāḥa innak tabīhum gabil il-imtiḥān",
+    "Tell him straight that you need them before the exam."
+   ],
+   [
+    "B",
+    "قلت له مرتين، ويقول: باكر برجعهم لك!",
+    "gilt-lah marratēn, w ygūl: bāchir barajjiʿhum lak!",
+    "I've told him twice, and he says: 'I'll give them back to you tomorrow!'"
+   ],
+   [
+    "A",
+    "عيل خلني أكلمه أنا. هو يسمع كلامي",
+    "ʿayal khallni akallmah ana. huwa yismaʿ kalāmi",
+    "Then let me talk to him. He listens to me."
+   ],
+   [
+    "B",
+    "زين، بس بأدب. هو ريّال زين، بس ينسى",
+    "zēn, bas b-adab. huwa rayyāl zēn, bas yinsa",
+    "OK, but politely. He's a good guy; he just forgets."
+   ],
+   [
+    "A",
+    "لا تحاتي. باكر بيرد لك إياهم، ولّا أنا بشتري لك غيرهم!",
+    "la tḥāti. bāchir biyrudd-lak iyyāhum, walla ana bashtirī-lak ghērhum!",
+    "Don't worry. He'll give them back to you tomorrow, or else I'll buy you some others!"
+   ],
+   [
+    "B",
+    "لا يا ريّال! أبي كتبي بس",
+    "la yā rayyāl! abi kutbi bas",
+    "No way, man! I just want my books."
+   ]
+  ],
+  "items": [
+   [
+    "ما رد لي إياهم",
+    "ma radd-li iyyāhum",
+    "he hasn't given them back to me",
+    "لم يرجعها إلي",
+    "a masculine thing: ma radd-li iyyāh (ما رد لي إياه)"
+   ],
+   [
+    "بيرد لك إياهم",
+    "biyrudd-lak iyyāhum",
+    "he'll give them back to you (to a man)",
+    "سيرجعها إليك",
+    "to a woman: biyrudd-lich iyyāhum (بيرد لج إياهم)"
+   ],
+   [
+    "اللي سلفتها",
+    "illi sallaft-ha",
+    "that I lent (a feminine noun or plural things); that you lent (to a man)",
+    "التي أعرتها",
+    "a masculine noun: illi sallaftah (اللي سلفته); to a woman: illi sallaftī-ha (اللي سلفتيها)"
+   ],
+   [
+    "برجعهم لك",
+    "barajjiʿhum lak",
+    "I'll give them back to you (to a man)",
+    "سأرجعها لك",
+    "to a woman: barajjiʿhum lich (برجعهم لج)"
+   ],
+   [
+    "من شهرين",
+    "min shahrēn",
+    "for two months (now), two months ago",
+    "منذ شهرين",
+    "for a week: min usbūʿ (من أسبوع)"
+   ],
+   [
+    "أبي كتبي بس",
+    "abi kutbi bas",
+    "I just want my books",
+    "أريد كتبي فقط",
+    "my book: kitābi (كتابي)"
+   ],
+   [
+    "يسمع كلامي",
+    "yismaʿ kalāmi",
+    "he listens to me, he does what I say",
+    "يسمع كلامي",
+    "(recognise)"
+   ],
+   [
+    "بأدب",
+    "b-adab",
+    "politely, nicely",
+    "بأدب",
+    ""
+   ],
+   [
+    "بشتري لك غيرهم",
+    "bashtirī-lak ghērhum",
+    "I'll buy you some others (to a man)",
+    "سأشتري لك غيرها",
+    "(recognise) to a woman: bashtirī-lich ghērhum (بشتري لج غيرهم)"
+   ]
+  ],
+  "receptive": [
+   6,
+   8
+  ]
+ },
+ {
+  "id": "s4u019",
+  "stage": 4,
+  "title": "Shall I show it to you?",
+  "goal": "At the office, Maryam asks to see your presentation before the meeting; offer to show it to her and send it",
+  "tip": "iyyā- works with other giving and telling verbs too: arāwīch iyyāh 'I'll show it (m.) to you (f.)', gilt-lak iyyāh 'I told it to you'. With a 'to' phrase, the thing can go straight on the verb: ṭarrshah-li 'send it to me', aṭarrshah lich 'I'll send it to you (f.)'.",
+  "grammar": "double objects: arāwīch iyyāh, gilt-lak iyyāh; ṭarrshah-li",
+  "dialogue": [
+   [
+    "A",
+    "خلصت العرض حق الاجتماع؟",
+    "khallaṣt il-ʿarẓ ḥagg il-ijtimāʿ?",
+    "Have you finished the presentation for the meeting?"
+   ],
+   [
+    "B",
+    "هيه. تبين أراويج إياه؟",
+    "hē. tabīn arāwīch iyyāh?",
+    "Yes. Do you want me to show it to you?"
+   ],
+   [
+    "A",
+    "أكيد. وطرشه لي بعد، أبي أقراه في البيت الليلة",
+    "akīd. w ṭarrshah-li baʿad, abi agrāh fil-bēt il-lēla",
+    "Sure. And send it to me too; I want to read it at home tonight."
+   ],
+   [
+    "B",
+    "الحين أطرشه لج. شوفي، هذي أول صفحة",
+    "il-ḥīn aṭarrshah lich. shūfi, hādhi awwal ṣafḥa",
+    "I'll send it to you now. Look, this is the first page."
+   ],
+   [
+    "A",
+    "حلوة، بس الأرقام صغيرة وايد، ما تنشاف من بعيد",
+    "ḥilwa, bas il-argām ṣghīra wāyid, ma tinshāf min baʿīd",
+    "Nice, but the numbers are really small; you can't see them from far away."
+   ],
+   [
+    "B",
+    "صح، بكبرها. وباكر الصبح براويج إياه مرة ثانية",
+    "ṣaḥḥ, bakabbir-ha. w bāchir iṣ-ṣubḥ barāwīch iyyāh marra thānya",
+    "True, I'll make them bigger. And tomorrow morning I'll show it to you again."
+   ],
+   [
+    "A",
+    "زين. وتذكر الشي اللي قلت لك إياه أمس؟",
+    "zēn. w tidhkir ish-shay illi gilt-lak iyyāh ams?",
+    "OK. And do you remember the thing I told you yesterday?"
+   ],
+   [
+    "B",
+    "هيه، حطيته في آخر صفحة",
+    "hē, ḥaṭṭētah fi ākhir ṣafḥa",
+    "Yes, I've put it on the last page."
+   ],
+   [
+    "A",
+    "ممتاز! جي المدير بيحبه",
+    "mumtāz! chī l-mudīr biyḥibbah",
+    "Excellent! That way the manager will love it."
+   ]
+  ],
+  "items": [
+   [
+    "تبين أراويج إياه؟",
+    "tabīn arāwīch iyyāh?",
+    "do you want me to show it (m.) to you? (to a woman)",
+    "هل تريدين أن أريكِ إياه؟",
+    "to a man: tabi arāwīk iyyāh? (تبي أراويك إياه؟)"
+   ],
+   [
+    "طرشه لي",
+    "ṭarrshah-li",
+    "send it (m.) to me (to a man)",
+    "أرسله لي",
+    "to a woman: ṭarrshīh-li (طرشيه لي); a feminine thing: ṭarrish-ha li (طرشها لي)"
+   ],
+   [
+    "أطرشه لج",
+    "aṭarrshah lich",
+    "I'll send it (m.) to you (to a woman)",
+    "أرسله لكِ",
+    "to a man: aṭarrshah lak (أطرشه لك)"
+   ],
+   [
+    "أقراه",
+    "agrāh",
+    "I read it (m.), (to) read it",
+    "أقرؤه",
+    "(recognise) a feminine thing: agrāha (أقراها)"
+   ],
+   [
+    "ما تنشاف من بعيد",
+    "ma tinshāf min baʿīd",
+    "you can't see them from far away (a feminine noun or plural things)",
+    "لا تُرى من بعيد",
+    "(recognise) a masculine noun: ma yinshāf (ما ينشاف)"
+   ],
+   [
+    "بكبرها",
+    "bakabbir-ha",
+    "I'll make it (f.) or them bigger",
+    "سأكبرها",
+    "a masculine thing: bakabbrah (بكبره)"
+   ],
+   [
+    "قلت لك إياه",
+    "gilt-lak iyyāh",
+    "I told you (it) (to a man)",
+    "قلته لك",
+    "to a woman: gilt-lich iyyāh (قلت لج إياه)"
+   ],
+   [
+    "حطيته",
+    "ḥaṭṭētah",
+    "I put it (m.); you put it (to a man)",
+    "وضعته",
+    "to a woman: ḥaṭṭētīh (حطيتيه); a feminine thing: ḥaṭṭēt-ha (حطيتها)"
+   ],
+   [
+    "آخر صفحة",
+    "ākhir ṣafḥa",
+    "the last page",
+    "الصفحة الأخيرة",
+    "the first page: awwal ṣafḥa (أول صفحة)"
+   ]
+  ],
+  "receptive": [
+   3,
+   4
+  ]
+ },
+ {
+  "id": "s4u020",
+  "stage": 4,
+  "title": "My father gave it to me",
+  "goal": "In the majlis, Bū Rāshid lends you an old book that matters to him; accept it with respect and promise to give it back",
+  "tip": "Recycle iyyā-: ʿaṭāni iyyāh 'he gave it to me', ʿaṭētak iyyāh 'I gave it to you'. In fast speech the two objects run together: ʿaṭnīh 'give it to me' for ʿaṭni iyyāh. Learn to hear it; the full form is always fine.",
+  "grammar": "recycle: double objects with iyyā- (ʿaṭāni iyyāh, ʿaṭētak iyyāh); fast-speech ʿaṭnīh",
+  "dialogue": [
+   [
+    "A",
+    "هذا الكتاب عن الغوص، أبوي الله يرحمه عطاني إياه وأنا صغير",
+    "hādha l-kitāb ʿan il-ghōṣ, ubūy allāh yirḥamah ʿaṭāni iyyāh w ana ṣghīr",
+    "This book's about pearl diving; my father, God rest him, gave it to me when I was little."
+   ],
+   [
+    "B",
+    "آمين. ما شاء الله، شكله قديم وايد",
+    "āmīn. mā shāʼ allāh, shaklah gadīm wāyid",
+    "Amen. Goodness, it looks really old."
+   ],
+   [
+    "A",
+    "خذه واقراه، بس ترى هو أمانة عندك",
+    "khudhah w igrāh, bas tara huwa amāna ʿindak",
+    "Take it and read it, but mind, it's in your keeping."
+   ],
+   [
+    "B",
+    "يا عمي، ما أقدر آخذه! هذا غالي عليك",
+    "yā ʿammi, ma agdar ākhdhah! hādha ghāli ʿalēk",
+    "Uncle, I can't take it! It means a lot to you."
+   ],
+   [
+    "A",
+    "عشان جي عطيتك إياه. انت تحب هالسوالف القديمة",
+    "ʿashān chī ʿaṭētak iyyāh. inta tḥibb has-sawālif il-gadīma",
+    "That's exactly why I gave it to you. You love these old stories."
+   ],
+   [
+    "B",
+    "الله يخليك يا عمي. بحافظ عليه، وبرده لك أول ما أخلصه",
+    "allāh ykhallīk yā ʿammi. baḥāfiẓ ʿalēh, w baruddah lak awwal ma akhallṣah",
+    "Thank you, uncle. I'll look after it, and I'll give it back to you as soon as I finish it."
+   ],
+   [
+    "A",
+    "لا تستعيل. ولما تخلصه عطنيه، أبي أعطيه سيف بعدك",
+    "la tistaʿyil. w lamma tkhallṣah ʿaṭnīh, abi aʿṭīh Sēf baʿdak",
+    "No hurry. And when you've finished it, give it to me; I want to give it to Sēf after you."
+   ],
+   [
+    "B",
+    "إن شاء الله. بس سيف بيرده لك قبلي!",
+    "in shāʼ allāh. bas Sēf biyruddah lak gabli!",
+    "God willing. But Sēf will give it back to you before I do!"
+   ]
+  ],
+  "items": [
+   [
+    "عطاني إياه",
+    "ʿaṭāni iyyāh",
+    "he gave it (m.) to me",
+    "أعطاني إياه",
+    "she gave it to me: ʿaṭatni iyyāh (عطتني إياه)"
+   ],
+   [
+    "عطيتك إياه",
+    "ʿaṭētak iyyāh",
+    "I gave it (m.) to you (to a man)",
+    "أعطيتك إياه",
+    "to a woman: ʿaṭētich iyyāh (عطيتج إياه)"
+   ],
+   [
+    "أمانة عندك",
+    "amāna ʿindak",
+    "it's in your keeping, look after it for me (to a man)",
+    "أمانة عندك",
+    "(recognise) to a woman: amāna ʿindich (أمانة عندج)"
+   ],
+   [
+    "غالي عليك",
+    "ghāli ʿalēk",
+    "it means a lot to you, it's precious to you (to a man)",
+    "عزيز عليك",
+    "to a woman: ghāli ʿalēch (غالي عليج); to me: ghāli ʿalay (غالي علي)"
+   ],
+   [
+    "هالسوالف القديمة",
+    "has-sawālif il-gadīma",
+    "these old stories, these tales of the old days",
+    "هذه القصص القديمة",
+    "(recognise) sālfa (سالفة) is a story or a chat; sawālif is the plural"
+   ],
+   [
+    "بحافظ عليه",
+    "baḥāfiẓ ʿalēh",
+    "I'll look after it (m.), I'll take care of it",
+    "سأحافظ عليه",
+    "a feminine thing: baḥāfiẓ ʿalēha (بحافظ عليها)"
+   ],
+   [
+    "عطنيه",
+    "ʿaṭnīh",
+    "give it (m.) to me (to a man), in fast speech",
+    "أعطني إياه",
+    "(recognise) the full form is ʿaṭni iyyāh (عطني إياه); to a woman: ʿaṭīnīh (عطينيه)"
+   ],
+   [
+    "أول ما أخلصه",
+    "awwal ma akhallṣah",
+    "as soon as I finish it (m.)",
+    "حالما أنهيه",
+    "a feminine thing: awwal ma akhalliṣ-ha (أول ما أخلصها)"
+   ],
+   [
+    "الغوص",
+    "il-ghōṣ",
+    "pearl diving",
+    "الغوص",
+    "(recognise)"
+   ]
+  ],
+  "task": "This week: search YouTube for «مسلسل إماراتي» (Emirati series) or «سوالف» (chats). Listen until you hear إياه, إياها or إياهم three times, and write down the sentence around each: who gave, showed or told what to whom? Within a minute you should hear شو / مب (UAE) or شنو / مو (Kuwait). If you hear سوف, ليس or هل all the time, it's fuṣḥā: pick another clip.",
+  "receptive": [
+   2,
+   4,
+   6,
+   8
+  ]
+ }
+]

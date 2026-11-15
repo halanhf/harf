@@ -1,0 +1,1199 @@
+[
+ {
+  "id": "s4u021",
+  "stage": 4,
+  "title": "The camp's cancelled",
+  "goal": "On the phone with Sēf, deal with a cancelled weekend camp booking and stop him cancelling everything else",
+  "tip": "Some verbs have four consonants. kansal 'cancel', from English, works like a Form II verb: kansalt 'I cancelled', bakansil 'I'll cancel', la tkansil 'don't cancel'. Put t- in front for 'got cancelled': ir-riḥla tkansalat 'the trip's been called off'.",
+  "grammar": "quadriliteral verbs: kansal 'cancel' (kansalt, ykansil, bakansil); tkansal 'got cancelled'",
+  "dialogue": [
+   [
+    "A",
+    "سمعت؟ كنسلوا الحجز حق المخيم!",
+    "simaʿt? kansalaw il-ḥajz ḥagg il-mukhayyam!",
+    "Have you heard? They've cancelled the camp booking!"
+   ],
+   [
+    "B",
+    "ليش كنسلوه؟ دفعنا كل شي!",
+    "lēsh kansalūh? difaʿna kill shay!",
+    "Why did they cancel it? We'd paid for everything!"
+   ],
+   [
+    "A",
+    "يقولون عندهم مشكلة في المخيم، وبيرجعون لنا الفلوس كلها",
+    "ygūlūn ʿind-hum mushkila fi l-mukhayyam, w biyrajjʿūn-lna l-flūs killha",
+    "They say they've got a problem at the camp, and they'll give us all our money back."
+   ],
+   [
+    "B",
+    "يعني الرحلة تكنسلت خلاص؟",
+    "yaʿni r-riḥla tkansalat khalāṣ?",
+    "So the trip's off, then?"
+   ],
+   [
+    "A",
+    "هيه. وأنا بعد كنسلت السيارة اللي حجزتها",
+    "hē. w ana baʿad kansalt is-sayyāra illi ḥajazt-ha",
+    "Yes. And I've cancelled the car I booked, too."
+   ],
+   [
+    "B",
+    "ليش؟ لا تكنسل كل شي! خلنا نروح مكان ثاني",
+    "lēsh? la tkansil kill shay! khallna nrūḥ makān thāni",
+    "Why? Don't cancel everything! Let's go somewhere else."
+   ],
+   [
+    "A",
+    "زين، بحجزها مرة ثانية. بس لا تكنسل انت في آخر لحظة!",
+    "zēn, baḥjizha marra thānya. bas la tkansil inta fi ākhir laḥẓa!",
+    "OK, I'll book it again. But don't you pull out at the last minute!"
+   ],
+   [
+    "B",
+    "أنا؟ أبد! هالمرة ما بكنسل",
+    "ana? abad! hal-marra ma bakansil",
+    "Me? Never! This time I won't cancel."
+   ],
+   [
+    "A",
+    "إن شاء الله. بكلم الشباب وبطرش لك المكان",
+    "in shāʼ allāh. bakallim ish-shabāb w baṭarrish-lak il-makān",
+    "Let's hope so. I'll talk to the guys and send you the place."
+   ]
+  ],
+  "items": [
+   [
+    "كنسلت",
+    "kansalt",
+    "I cancelled; you cancelled (to a man)",
+    "ألغيت",
+    "to a woman: kansalti (كنسلتي); he cancelled: kansal (كنسل); from English 'cancel'"
+   ],
+   [
+    "ليش كنسلوه؟",
+    "lēsh kansalūh?",
+    "why did they cancel it (m.)?",
+    "لماذا ألغوه؟",
+    "a feminine thing: lēsh kansalūha? (ليش كنسلوها؟); they cancelled: kansalaw (كنسلوا)"
+   ],
+   [
+    "تكنسلت",
+    "tkansalat",
+    "it (f.) got cancelled, it's off",
+    "ألغيت",
+    "a masculine thing: tkansal (تكنسل): il-mawʿid tkansal = the appointment's been cancelled"
+   ],
+   [
+    "لا تكنسل",
+    "la tkansil",
+    "don't cancel (to a man)",
+    "لا تلغ",
+    "to a woman: la tkansilīn (لا تكنسلين)"
+   ],
+   [
+    "ما بكنسل",
+    "ma bakansil",
+    "I won't cancel",
+    "لن ألغي",
+    "I'll cancel: bakansil (بكنسل)"
+   ],
+   [
+    "الحجز",
+    "il-ḥajz",
+    "the booking, the reservation",
+    "الحجز",
+    "booked: maḥjūz; I booked it (f.): ḥajazt-ha (حجزتها)"
+   ],
+   [
+    "في آخر لحظة",
+    "fi ākhir laḥẓa",
+    "at the last minute",
+    "في آخر لحظة",
+    ""
+   ],
+   [
+    "بيرجعون لنا الفلوس",
+    "biyrajjʿūn-lna l-flūs",
+    "they'll give us our money back, we'll get a refund",
+    "سيعيدون لنا المال",
+    "(recognise) for one person: biyrajjʿūn-li l-flūs (بيرجعون لي الفلوس)"
+   ],
+   [
+    "المخيم",
+    "il-mukhayyam",
+    "the (desert) camp",
+    "المخيم",
+    "(recognise)"
+   ]
+  ],
+  "receptive": [
+   7,
+   8
+  ],
+  "culture": "Some English verbs have been part of Gulf speech for generations: chayyak 'check' was already written down in Kuwait in 1951. Newer ones take the same Arabic endings, like kansal 'cancel'. Mixing English into Arabic is most common among young people and in relaxed settings, so these verbs sound casual: with elders and in formal emails, people tend to use Arabic words."
+ },
+ {
+  "id": "s4u022",
+  "stage": 4,
+  "title": "Who messed up the file?",
+  "goal": "At the office, tell Maryam the shared presentation has got messed up, and sort it out together",
+  "tip": "kharbaṭ 'mess up' is a Gulf verb with four consonants: kharbaṭt 'I messed up', la tkharbiṭha 'don't mess it up'. With t- it happens by itself: il-alwān tkharbaṭat 'the colours got messed up'. The participle starts with mi-: mitkharbiṭ 'messed up, in a muddle'.",
+  "grammar": "quadriliteral verbs: kharbaṭ 'mess up', tkharbaṭ 'get messed up', mitkharbiṭ 'messed up'",
+  "dialogue": [
+   [
+    "B",
+    "مريم، فتحتي العرض اليوم؟ كله متخربط!",
+    "Maryam, fataḥti l-ʿarẓ il-yōm? killah mitkharbiṭ!",
+    "Maryam, have you opened the presentation today? It's all messed up!"
+   ],
+   [
+    "A",
+    "لا والله! شو صار له؟ أمس كان زين",
+    "la wallāh! shu ṣār-lah? ams kān zēn",
+    "Oh no! What's happened to it? It was fine yesterday."
+   ],
+   [
+    "B",
+    "الصور مب في مكانها، والألوان تخربطت بعد",
+    "iṣ-ṣuwar mub fi makānha, w il-alwān tkharbaṭat baʿad",
+    "The pictures aren't where they should be, and the colours have got messed up too."
+   ],
+   [
+    "A",
+    "يمكن أحد فتحه من تلفونه وخربطه بدون ما يدري",
+    "yimkin aḥad fataḥah min tilifōnah w kharbaṭah bidūn ma yadri",
+    "Maybe someone opened it on their phone and messed it up without realising."
+   ],
+   [
+    "B",
+    "ممكن. لا تشيلين هم، عندي نسخة على اللابتوب",
+    "mumkin. la tshīlīn ham, ʿindi nuskha ʿala l-lābtōb",
+    "Could be. Don't worry, I've got a copy on my laptop."
+   ],
+   [
+    "A",
+    "الحمد لله! جهازي لعوزني اليوم، كل شوي يطفي",
+    "il-ḥamdu lillāh! jihāzi laʿwazni l-yōm, kill shwayy yiṭfi",
+    "Thank God! My computer's been driving me mad today, it keeps switching off."
+   ],
+   [
+    "B",
+    "وهذا بعد ما يرضى يشتغل… خلاص، اشتغل! طرشت لج النسخة",
+    "w hādha baʿad ma yirẓa yishtaghil… khalāṣ, ishtaghal! ṭarrasht-lich in-nuskha",
+    "And this one won't start either… there, it's on! I've sent you the copy."
+   ],
+   [
+    "A",
+    "ما شاء الله عليك! بشيك عليها قبل الاجتماع",
+    "mā shāʼ allāh ʿalēk! bachayyik ʿalēha gabil il-ijtimāʿ",
+    "Well done you! I'll check it before the meeting."
+   ],
+   [
+    "B",
+    "والسموحة… أنا اللي خربطت الألوان أمس!",
+    "w is-samūḥa… ana illi kharbaṭt il-alwān ams!",
+    "And sorry… I'm the one who messed up the colours yesterday!"
+   ],
+   [
+    "A",
+    "مسموح! بس لا تخربطها مرة ثانية",
+    "masmūḥ! bas la tkharbiṭha marra thānya",
+    "Forgiven! But don't mess it up again."
+   ]
+  ],
+  "items": [
+   [
+    "متخربط",
+    "mitkharbiṭ",
+    "messed up, in a mess (a masculine thing)",
+    "مضطرب / غير مرتب",
+    "a feminine thing: mitkharbṭa (متخربطة); you'll also hear mlakhbaṭ (ملخبط)"
+   ],
+   [
+    "تخربطت",
+    "tkharbaṭat",
+    "it (f.) got messed up; they (things) got messed up",
+    "اختلطت / اضطربت",
+    "a masculine thing: tkharbaṭ (تخربط)"
+   ],
+   [
+    "أنا اللي خربطت",
+    "ana illi kharbaṭt",
+    "I'm the one who messed (it) up",
+    "أنا الذي أفسدت",
+    "you messed (it) up: kharbaṭt (خربطت) to a man, kharbaṭti (خربطتي) to a woman"
+   ],
+   [
+    "لا تخربطها",
+    "la tkharbiṭha",
+    "don't mess it (f.) up (to a man)",
+    "لا تفسدها",
+    "to a woman: la tkharbṭīnha (لا تخربطينها); a masculine thing: la tkharbiṭah (لا تخربطه)"
+   ],
+   [
+    "ما يرضى يشتغل",
+    "ma yirẓa yishtaghil",
+    "it won't start, it won't work (a masculine thing)",
+    "لا يعمل",
+    "a feminine thing: ma tirẓa tishtaghil (ما ترضى تشتغل); yirẓa = he's willing, he agrees"
+   ],
+   [
+    "عندي نسخة",
+    "ʿindi nuskha",
+    "I've got a copy",
+    "عندي نسخة",
+    "the copy: in-nuskha (النسخة)"
+   ],
+   [
+    "بدون ما يدري",
+    "bidūn ma yadri",
+    "without realising, without knowing",
+    "دون أن يدري",
+    "(recognise) without realising (said of yourself): bidūn ma adri (بدون ما أدري)"
+   ],
+   [
+    "لعوزني",
+    "laʿwazni",
+    "it's been driving me mad, it's given me a hard time (UAE)",
+    "أزعجني",
+    "(recognise) I'm fed up with it: tlaʿwazt (تلعوزت)"
+   ],
+   [
+    "كل شوي يطفي",
+    "kill shwayy yiṭfi",
+    "it keeps switching off (a masculine thing)",
+    "ينطفئ كل قليل",
+    "(recognise) a feminine thing: kill shwayy tiṭfi (كل شوي تطفي)"
+   ]
+  ],
+  "receptive": [
+   6,
+   7,
+   8
+  ]
+ },
+ {
+  "id": "s4u023",
+  "stage": 4,
+  "title": "Turn it off and on again",
+  "goal": "Help Sēf when his phone freezes: restart it, then sort out the numbers he didn't save",
+  "tip": "English verbs come in two ways. Some take Arabic endings, like Form II: sayyaf 'save' gives sayyaft 'I saved', lāzim tsayyif 'you have to save'. Others stay in English after sawwa 'do': sawwi ristārt 'restart it', basawwi abdēt 'I'll update'.",
+  "grammar": "English verbs: Arabic endings (sayyaf 'save') or sawwa + the English word (sawwi ristārt)",
+  "dialogue": [
+   [
+    "A",
+    "يا ريّال، تلفوني معلّق! الشاشة ما تتحرك",
+    "yā rayyāl, tilifōni mʿallag! ish-shāsha ma titḥarrak",
+    "Mate, my phone's frozen! The screen won't move."
+   ],
+   [
+    "B",
+    "عادي، صار لي نفس الشي. طفه وشغله",
+    "ʿādi, ṣār-li nafs ish-shay. ṭaffah w shaghghlah",
+    "Happens all the time, the same thing happened to me. Turn it off and on again."
+   ],
+   [
+    "A",
+    "حاولت، بس ما يرضى يطفي!",
+    "ḥāwalt, bas ma yirẓa yiṭfi!",
+    "I've tried, but it won't switch off!"
+   ],
+   [
+    "B",
+    "عيل اضغط على الزرين مع بعض وسوي ريستارت",
+    "ʿayal iẓghaṭ ʿala z-zirrēn maʿa baʿaẓ w sawwi ristārt",
+    "Then press both buttons together and restart it."
+   ],
+   [
+    "A",
+    "زين… اشتغل! بس الأرقام اليديدة اللي ما سيفتها راحت!",
+    "zēn… ishtaghal! bas il-argām il-yidīda illi ma sayyaft-ha rāḥat!",
+    "OK… it's on! But the new numbers I hadn't saved have gone!"
+   ],
+   [
+    "B",
+    "كم مرة قلت لك؟ لازم تسيف كل رقم على طول",
+    "cham marra gilt-lak? lāzim tsayyif kill ragam ʿala ṭūl",
+    "How many times have I told you? You have to save every number straight away."
+   ],
+   [
+    "A",
+    "خلاص، من اليوم بسيف كل شي. وبسوي أبديت بعد",
+    "khalāṣ, min il-yōm basayyif kill shay. w basawwi abdēt baʿad",
+    "All right, from today I'll save everything. And I'll do an update, too."
+   ],
+   [
+    "B",
+    "زين. ورقمي؟ سيفته؟",
+    "zēn. w ragmi? sayyaftah?",
+    "Good. And my number? Did you save it?"
+   ],
+   [
+    "A",
+    "رقمك؟ لا تخاف، رقمك محفوظ عندي من زمان!",
+    "ragmak? la tkhāf, ragmak maḥfūẓ ʿindi min zamān!",
+    "Your number? Don't worry, I've had your number saved for ages!"
+   ]
+  ],
+  "items": [
+   [
+    "تلفوني معلّق",
+    "tilifōni mʿallag",
+    "my phone's frozen, my phone's stuck",
+    "هاتفي متوقف عن الاستجابة",
+    "a feminine thing: ish-shāsha mʿallga (الشاشة معلقة) = the screen's frozen"
+   ],
+   [
+    "طفه وشغله",
+    "ṭaffah w shaghghlah",
+    "turn it (m.) off and on again (to a man)",
+    "أطفئه وشغله",
+    "to a woman: ṭaffīh w shaghghlīh (طفيه وشغليه)"
+   ],
+   [
+    "سوي ريستارت",
+    "sawwi ristārt",
+    "restart it (to a man)",
+    "أعد التشغيل",
+    "to a woman: sawwī ristārt (said the same way); I restarted it: sawwēt ristārt (سويت ريستارت)"
+   ],
+   [
+    "سيفتها",
+    "sayyaft-ha",
+    "I saved it (f.), I saved them (numbers, files); you saved it (to a man)",
+    "حفظتها",
+    "to a woman (you saved it): sayyaftīha (سيفتيها); a masculine thing: sayyaftah (سيفته); from English 'save'; you'll also hear khazzant-ha (خزنتها)"
+   ],
+   [
+    "لازم تسيف",
+    "lāzim tsayyif",
+    "you have to save (it) (to a man)",
+    "يجب أن تحفظ",
+    "to a woman: lāzim tsayyfīn (لازم تسيفين)"
+   ],
+   [
+    "بسوي أبديت",
+    "basawwi abdēt",
+    "I'll do an update, I'll update (it)",
+    "سأحدّث",
+    "you'll also hear it with p: apdēt"
+   ],
+   [
+    "صار لي نفس الشي",
+    "ṣār-li nafs ish-shay",
+    "the same thing happened to me",
+    "حدث لي الشيء نفسه",
+    "to us: ṣār-lna nafs ish-shay (صار لنا نفس الشي)"
+   ],
+   [
+    "اضغط على الزر",
+    "iẓghaṭ ʿala z-zirr",
+    "press the button (to a man)",
+    "اضغط على الزر",
+    "to a woman: iẓghaṭi ʿala z-zirr (اضغطي على الزر); both buttons: iz-zirrēn (الزرين)"
+   ],
+   [
+    "محفوظ",
+    "maḥfūẓ",
+    "saved, kept (a number, a file)",
+    "محفوظ",
+    "(recognise) a feminine thing: maḥfūẓa (محفوظة)"
+   ]
+  ],
+  "receptive": [
+   8
+  ],
+  "culture": "Tech talk among young people in the Gulf is full of English. Many English words simply go after sawwa 'do', so the Arabic verb carries the person and tense and the English word stays as it is: sawwēt ristārt 'I restarted it', sawwa lāyk 'he liked it'. It's easy to build your own, but keep it for friends. With older people, use Arabic verbs where you can: ṭaffah w shaghghlah."
+ },
+ {
+  "id": "s4u024",
+  "stage": 4,
+  "title": "Did Sēf block me?",
+  "goal": "Fahad thinks Sēf has blocked him; find out what really happened and keep him in the group chat",
+  "tip": "Put the person after sawwa with l-: sawwā-li blōk 'he blocked me', sawwēt-lah blōk 'I blocked him', ysawwī-lak blōk 'he blocks you'. The English word never changes; only sawwa does. The same goes for muting: sawwaw-li myūt 'they muted me'.",
+  "grammar": "sawwa + English word with a dative ending: sawwā-li blōk 'he blocked me'",
+  "dialogue": [
+   [
+    "A",
+    "سيف سوى لي بلوك! رسايلي ما توصله",
+    "Sēf sawwā-li blōk! rasāyli ma tōṣlah",
+    "Sēf's blocked me! My messages aren't getting through to him."
+   ],
+   [
+    "B",
+    "سيف؟ مستحيل! يمكن غلطة",
+    "Sēf? mustaḥīl! yimkin ghalṭa",
+    "Sēf? No way! Maybe it's a mistake."
+   ],
+   [
+    "A",
+    "شنو غلطة؟ صار له يومين ما يرد علي، وصورته اختفت!",
+    "shinu ghalṭa? ṣār-lah yōmēn ma yrudd ʿalay, w ṣūrtah ikhtifat!",
+    "What do you mean, a mistake? He hasn't answered me for two days, and his picture's disappeared!"
+   ],
+   [
+    "B",
+    "خلني أشيك… لا، حتى أنا ما يرد علي",
+    "khallni achayyik… la, ḥatta ana ma yrudd ʿalay",
+    "Let me check… no, he's not answering me either."
+   ],
+   [
+    "A",
+    "هلا! سيف اتصل الحين. يقول تلفونه طاح في الماي",
+    "hala! Sēf ittaṣal il-ḥīn. ygūl tilifōnah ṭāḥ fi l-māy",
+    "Hey! Sēf's just rung. He says his phone fell in the water."
+   ],
+   [
+    "B",
+    "الحمد لله، مب بلوك! بس ليش يسوي لك بلوك أصلا؟",
+    "il-ḥamdu lillāh, mub blōk! bas lēsh ysawwī-lak blōk aṣlan?",
+    "Thank God it's not a block! But why would he block you anyway?"
+   ],
+   [
+    "A",
+    "لأني طرشت فيديوهات وايد في القروب، والشباب سووا لي ميوت",
+    "lanni ṭarrasht fīdyōhāt wāyid fi l-grūb, w ish-shabāb sawwaw-li myūt",
+    "Because I sent loads of videos in the group, and the guys have muted me."
+   ],
+   [
+    "B",
+    "وأنا بعد كنت بسوي لك ميوت!",
+    "w ana baʿad kint basawwī-lak myūt!",
+    "And I was about to mute you too!"
+   ],
+   [
+    "A",
+    "حتى انت؟ خلاص، بطلع من القروب!",
+    "ḥatta inta? khalāṣ, baṭlaʿ min il-grūb!",
+    "You too? Right, I'm leaving the group!"
+   ],
+   [
+    "B",
+    "لا تطلع! بس طرش أقل",
+    "la tiṭlaʿ! bas ṭarrish aqall",
+    "Don't leave! Just send less."
+   ]
+  ],
+  "items": [
+   [
+    "سوى لي بلوك",
+    "sawwā-li blōk",
+    "he blocked me (on an app)",
+    "حظرني",
+    "I blocked him: sawwēt-lah blōk (سويت له بلوك); you'll also hear ballakni (بلكني)"
+   ],
+   [
+    "ليش يسوي لك بلوك؟",
+    "lēsh ysawwī-lak blōk?",
+    "why would he block you? (to a man)",
+    "لماذا يحظرك؟",
+    "to a woman: lēsh ysawwī-lich blōk? (ليش يسوي لج بلوك؟)"
+   ],
+   [
+    "مستحيل",
+    "mustaḥīl",
+    "no way! impossible",
+    "مستحيل",
+    ""
+   ],
+   [
+    "يمكن غلطة",
+    "yimkin ghalṭa",
+    "maybe it's a mistake",
+    "ربما خطأ",
+    "a mistake: ghalṭa (غلطة)"
+   ],
+   [
+    "صورته اختفت",
+    "ṣūrtah ikhtifat",
+    "his (profile) picture's disappeared",
+    "اختفت صورته",
+    "(recognise) her picture: ṣūrat-ha (صورتها)"
+   ],
+   [
+    "سووا لي ميوت",
+    "sawwaw-li myūt",
+    "they've muted me",
+    "كتموا صوتي",
+    "(recognise) friends' talk; he muted me: sawwā-li myūt (سوى لي ميوت)"
+   ],
+   [
+    "رسايلي ما توصله",
+    "rasāyli ma tōṣlah",
+    "my messages aren't getting through to him",
+    "رسائلي لا تصله",
+    "to her: rasāyli ma tōṣal-ha (رسايلي ما توصلها)"
+   ],
+   [
+    "بطلع من القروب",
+    "baṭlaʿ min il-grūb",
+    "I'll leave the group (chat)",
+    "سأخرج من المجموعة",
+    "don't leave: la tiṭlaʿ (لا تطلع) to a man, la tiṭlaʿīn (لا تطلعين) to a woman"
+   ],
+   [
+    "طرش أقل",
+    "ṭarrish aqall",
+    "send less (to a man)",
+    "أرسل أقل",
+    "to a woman: ṭarrshi aqall (طرشي أقل)"
+   ]
+  ],
+  "receptive": [
+   4,
+   5
+  ]
+ },
+ {
+  "id": "s4u025",
+  "stage": 4,
+  "title": "What do you hope for?",
+  "goal": "In Bū Rāshid's majlis, talk about your hopes for after your studies and answer his good wishes",
+  "tip": "atmanna 'I hope, I'd love to' takes a bare verb: atmanna alga shughul hni 'I hope to find a job here'. For someone else, add inn: atmanna innak tigʿid 'I hope you stay'. kint atmanna is a wish that can't come true: kint atmanna agdar 'I wish I could'.",
+  "grammar": "atmanna 'I hope, I wish' + verb, + inn; kint atmanna 'I wish (but can't)'",
+  "dialogue": [
+   [
+    "A",
+    "هلا والله بسالم! شو أخبار الدراسة؟",
+    "hala wallāh b-Sālim! shu akhbār id-dirāsa?",
+    "Welcome, Sālim! How are your studies going?"
+   ],
+   [
+    "B",
+    "هلا فيك يا عمي. باقي لي سنة وأخلص، إن شاء الله",
+    "hala fīk yā ʿammi. bāgi-li sana w akhalliṣ, in shāʼ allāh",
+    "Hello, uncle. I've got one year left and then I'm done, God willing."
+   ],
+   [
+    "A",
+    "ما شاء الله! وبعدين؟ بترجع لندن ولّا بتقعد عندنا؟",
+    "mā shāʼ allāh! w baʿdēn? bitirjaʿ Landan walla bitigʿid ʿindana?",
+    "Wonderful! And then? Will you go back to London or stay with us?"
+   ],
+   [
+    "B",
+    "أتمنى ألقى شغل هني. دبي صارت مثل ديرتي",
+    "atmanna alga shughul hni. Dbayy ṣārat mithil dīrti",
+    "I hope to find a job here. Dubai's become like home to me."
+   ],
+   [
+    "A",
+    "الله يوفقك. وأتمنى إنك تقعد، الكل يحبك هني",
+    "allāh ywaffgak. w atmanna innak tigʿid, il-kill yḥibbak hni",
+    "God grant you success. And I hope you stay; everyone here loves you."
+   ],
+   [
+    "B",
+    "آمين. تسلم يا عمي. بس أهلي يتمنون أرجع",
+    "āmīn. tislam yā ʿammi. bas ahli yitmannūn arjaʿ",
+    "Amen. Thank you, uncle. But my family wish I'd come back."
+   ],
+   [
+    "A",
+    "الله يسلمك. طبيعي، كل أم تتمنى ولدها يكون يمها",
+    "allāh ysallmak. ṭabīʿi, kill umm titmanna wildha ykūn yammha",
+    "God keep you. That's natural; every mother wants her son near her."
+   ],
+   [
+    "B",
+    "صح. كنت أتمنى أقدر أعيش في المكانين!",
+    "ṣaḥḥ. kint atmanna agdar aʿīsh fi l-makānēn!",
+    "True. I wish I could live in both places!"
+   ],
+   [
+    "A",
+    "إن شاء الله يصير اللي تتمناه، وتلقى الشغل اللي تبيه",
+    "in shāʼ allāh yṣīr illi titmannāh, w tilga sh-shughul illi tabīh",
+    "God willing, what you wish for will happen, and you'll find the job you want."
+   ]
+  ],
+  "items": [
+   [
+    "أتمنى",
+    "atmanna",
+    "I hope, I wish; I'd love to (+ verb)",
+    "أتمنى",
+    "a woman says the same; you hope: titmanna (تتمنى) to a man, titmannīn (تتمنين) to a woman"
+   ],
+   [
+    "أتمنى إنك",
+    "atmanna innak",
+    "I hope (that) you… (to a man)",
+    "أتمنى أنك",
+    "to a woman: atmanna innich (أتمنى إنج); I hope he…: atmanna innah (أتمنى إنه)"
+   ],
+   [
+    "كنت أتمنى",
+    "kint atmanna",
+    "I wish, I'd have loved (to) (but it can't happen)",
+    "كنت أتمنى",
+    ""
+   ],
+   [
+    "يتمنون",
+    "yitmannūn",
+    "they wish, they hope",
+    "يتمنون",
+    "he wishes: yitmanna (يتمنى)"
+   ],
+   [
+    "أتمنى ألقى شغل",
+    "atmanna alga shughul",
+    "I hope to find a job, I hope I find work",
+    "أتمنى أن أجد عملًا",
+    ""
+   ],
+   [
+    "صارت مثل ديرتي",
+    "ṣārat mithil dīrti",
+    "it's (f.) become like home to me, it feels like my own country (a city)",
+    "أصبحت مثل وطني",
+    "dīra = your home country, your homeland; a masculine place: ṣār mithil dīrti (صار مثل ديرتي)"
+   ],
+   [
+    "الكل يحبك",
+    "il-kill yḥibbak",
+    "everyone loves you (to a man)",
+    "الجميع يحبك",
+    "(recognise) to a woman: il-kill yḥibbich (الكل يحبج)"
+   ],
+   [
+    "كل أم تتمنى",
+    "kill umm titmanna",
+    "every mother wishes, every mother wants",
+    "كل أم تتمنى",
+    "(recognise)"
+   ],
+   [
+    "اللي تتمناه",
+    "illi titmannāh",
+    "what you wish for, what you hope for (to a man)",
+    "ما تتمناه",
+    "(recognise) to a woman: illi titmannīnah (اللي تتمنينه)"
+   ]
+  ],
+  "receptive": [
+   6,
+   7,
+   8
+  ],
+  "culture": "Older people often answer a young man's plans with a blessing. allāh ywaffgak 'God grant you success' is answered with āmīn, and a thank-you with tislam gets allāh ysallmak.",
+  "task": "This week: with a tutor or exchange partner (search a tutoring site for «Emirati Arabic tutor» or «مدرس لهجة إماراتية»), talk for 10 minutes about your plans after your studies. Say two things you hope for with atmanna, one thing you wish you could do with kint atmanna, and ask them what they hope for (titmanna?)."
+ },
+ {
+  "id": "s4u026",
+  "stage": 4,
+  "title": "I wish I'd come",
+  "goal": "Sēf shows you photos of the trip you missed; say what you wish had happened and what you hope for next time",
+  "tip": "yā rēt 'I wish, if only' (you know yā lēt too) can take a pronoun: yā rētni 'I wish I…'. A past verb after it is a regret: yā rētni riḥt 'I wish I'd gone'. A present verb is a hope: yā rēt il-jaww yiẓall ḥilu 'I hope the weather stays nice'.",
+  "grammar": "yā rēt, yā rētni + past (regret) or present (hope); yā rēt lō … chān",
+  "dialogue": [
+   [
+    "A",
+    "شوف الصور! هذا الوادي اللي رحنا له في حتا",
+    "shūf iṣ-ṣuwar! hādha l-wādi illi riḥnā-lah fi Ḥatta",
+    "Look at the photos! This is the wadi we went to in Hatta."
+   ],
+   [
+    "B",
+    "ما شاء الله! يا ريتني رحت وياكم",
+    "mā shāʼ allāh! yā rētni riḥt wiyyākum",
+    "Wow! I wish I'd gone with you."
+   ],
+   [
+    "A",
+    "يا ريت! بس انت كنسلت في آخر لحظة",
+    "yā rēt! bas inta kansalt fi ākhir laḥẓa",
+    "If only! But you pulled out at the last minute."
+   ],
+   [
+    "B",
+    "كان عندي امتحان. لو ما كان عندي، جان ييت",
+    "kān ʿindi imtiḥān. lō ma kān ʿindi, chān yīt",
+    "I had an exam. If I hadn't had one, I'd have come."
+   ],
+   [
+    "A",
+    "يا ريت لو قلت لي من قبل، جان غيرنا اليوم",
+    "yā rēt lō gilt-li min gabil, chān ghayyarna l-yōm",
+    "If only you'd told me before, we'd have changed the day."
+   ],
+   [
+    "B",
+    "صح. يا ريتني فكرت جي",
+    "ṣaḥḥ. yā rētni fakkart chī",
+    "True. I wish I'd thought of that."
+   ],
+   [
+    "A",
+    "عادي. المرة الياية بنروح كلنا، ويا ريت الجو يظل حلو",
+    "ʿādi. il-marra l-yāya binrūḥ killna, w yā rēt il-jaww yiẓall ḥilu",
+    "Never mind. Next time we'll all go, and I hope the weather stays nice."
+   ],
+   [
+    "B",
+    "يا ريت! وهالمرة ما بكنسل",
+    "yā rēt! w hal-marra ma bakansil",
+    "I hope so! And this time I won't cancel."
+   ],
+   [
+    "A",
+    "وإذا كنسلت، بحط صورتك في القروب!",
+    "w idha kansalt, baḥuṭṭ ṣūrtak fi l-grūb!",
+    "And if you cancel, I'll put your picture in the group!"
+   ]
+  ],
+  "items": [
+   [
+    "يا ريت",
+    "yā rēt",
+    "I wish, if only; I hope so",
+    "يا ليت",
+    "you'll see written ياريت; it means the same as yā lēt (يا ليت)"
+   ],
+   [
+    "يا ريتني رحت وياكم",
+    "yā rētni riḥt wiyyākum",
+    "I wish I'd gone with you (all)",
+    "ليتني ذهبت معكم",
+    "with you (one man): wiyyāk (وياك); you'll see written ياريتني"
+   ],
+   [
+    "يا ريت لو",
+    "yā rēt lō",
+    "if only (you had…)",
+    "ليت لو",
+    "the result takes chān: yā rēt lō gilt-li, chān ghayyarna = if only you'd told me, we'd have changed it; you'll see written ياريت لو"
+   ],
+   [
+    "يا ريتني فكرت جي",
+    "yā rētni fakkart chī",
+    "I wish I'd thought of that",
+    "ليتني فكرت هكذا",
+    ""
+   ],
+   [
+    "لو ما كان عندي",
+    "lō ma kān ʿindi",
+    "if I hadn't had (it)",
+    "لو لم يكن عندي",
+    "kān ʿindi = I had"
+   ],
+   [
+    "جان غيرنا اليوم",
+    "chān ghayyarna l-yōm",
+    "we'd have changed the day",
+    "لغيرنا اليوم",
+    "(recognise)"
+   ],
+   [
+    "يظل حلو",
+    "yiẓall ḥilu",
+    "(it) stays nice",
+    "يبقى جميلًا",
+    "(recognise) a feminine thing: tiẓall ḥilwa (تظل حلوة)"
+   ],
+   [
+    "الوادي",
+    "il-wādi",
+    "the wadi, the valley",
+    "الوادي",
+    "(recognise)"
+   ],
+   [
+    "بحط صورتك",
+    "baḥuṭṭ ṣūrtak",
+    "I'll put (up) your picture (to a man)",
+    "سأضع صورتك",
+    "to a woman: baḥuṭṭ ṣūrtich (بحط صورتج)"
+   ]
+  ],
+  "receptive": [
+   5,
+   6,
+   7
+  ]
+ },
+ {
+  "id": "s4u027",
+  "stage": 4,
+  "title": "Which do you prefer?",
+  "goal": "At the office, Maryam is planning the team lunch; say what you prefer, and when you don't mind",
+  "tip": "afaẓẓil 'I prefer, I'd rather' takes a noun or a bare verb: afaẓẓil niṭlub 'I'd rather we ordered in'. Compare with ʿala: afaẓẓil il-ʿarabi ʿala l-hindi. To a woman, 'what do you prefer?' is shu tfaẓẓlīn? To a man it's shu tfaẓẓil?",
+  "grammar": "afaẓẓil 'I prefer' + noun or verb; afaẓẓil X ʿala Y; badāl ma 'instead of'",
+  "dialogue": [
+   [
+    "A",
+    "بنسوي غدا للفريق يوم الخميس. نروح مطعم ولّا نطلب للمكتب؟",
+    "binsawwi ghada lil-farīg yōm il-khamīs. nrūḥ maṭʿam walla niṭlub lil-maktab?",
+    "We're doing a team lunch on Thursday. Shall we go to a restaurant or order in to the office?"
+   ],
+   [
+    "B",
+    "أنا أفضل نطلب. المطاعم زحمة وقت الغدا",
+    "ana afaẓẓil niṭlub. il-maṭāʿim zaḥma wagt il-ghada",
+    "I'd rather we ordered in. Restaurants are packed at lunchtime."
+   ],
+   [
+    "A",
+    "زين. وشو تفضل، عربي ولّا هندي؟",
+    "zēn. w shu tfaẓẓil, ʿarabi walla hindi?",
+    "OK. And what do you prefer, Arabic or Indian?"
+   ],
+   [
+    "B",
+    "ما تفرق معي. وانتي شو تفضلين؟",
+    "ma tfarrig maʿi. w inti shu tfaẓẓlīn?",
+    "It makes no difference to me. And what do you prefer?"
+   ],
+   [
+    "A",
+    "أنا أفضل العربي على الهندي، بس المدير ما يحب الأكل الحار",
+    "ana afaẓẓil il-ʿarabi ʿala l-hindi, bas il-mudīr ma yḥibb il-akil il-ḥārr",
+    "I prefer Arabic to Indian, but the manager doesn't like spicy food."
+   ],
+   [
+    "B",
+    "عيل خلنا نطلب عربي، بدال ما نغير كل شي عشانه",
+    "ʿayal khallna niṭlub ʿarabi, badāl ma nghayyir kill shay ʿashānah",
+    "Then let's order Arabic, instead of changing everything for him."
+   ],
+   [
+    "A",
+    "فكرة حلوة. والوقت؟ الساعة وحدة ولّا ثنتين؟",
+    "fikra ḥilwa. w il-wagt? is-sāʿa waḥda walla thintēn?",
+    "Good idea. And the time? One o'clock or two?"
+   ],
+   [
+    "B",
+    "اللي يريحج. بس أفضل وحدة، بدال ما نقعد يوعانين",
+    "illi yrīḥich. bas afaẓẓil waḥda, badāl ma nigʿid yōʿānīn",
+    "Whatever suits you. But I'd rather one, instead of sitting around hungry."
+   ],
+   [
+    "A",
+    "خلاص، الساعة وحدة. بطرش للفريق الحين",
+    "khalāṣ, is-sāʿa waḥda. baṭarrish lil-farīg il-ḥīn",
+    "Done, one o'clock. I'll message the team now."
+   ]
+  ],
+  "items": [
+   [
+    "أنا أفضل",
+    "ana afaẓẓil",
+    "I prefer, I'd rather",
+    "أنا أفضّل",
+    "a woman says the same; afaẓẓil niṭlub = I'd rather we ordered (in)"
+   ],
+   [
+    "شو تفضلين؟",
+    "shu tfaẓẓlīn?",
+    "what do you prefer? (to a woman)",
+    "ماذا تفضلين؟",
+    "to a man: shu tfaẓẓil? (شو تفضل؟), spelled like tfaẓẓal 'go ahead'"
+   ],
+   [
+    "أفضل … على …",
+    "afaẓẓil … ʿala …",
+    "I prefer … to …",
+    "أفضّل … على …",
+    "afaẓẓil il-gahwa ʿala sh-shāy = I prefer coffee to tea"
+   ],
+   [
+    "ما تفرق معي",
+    "ma tfarrig maʿi",
+    "it makes no difference to me, I don't mind",
+    "لا فرق عندي",
+    ""
+   ],
+   [
+    "اللي يريحج",
+    "illi yrīḥich",
+    "whatever suits you, whatever's easiest for you (to a woman)",
+    "ما يريحك",
+    "to a man: illi yrīḥak (اللي يريحك)"
+   ],
+   [
+    "بدال ما",
+    "badāl ma",
+    "instead of (+ verb)",
+    "بدلًا من أن",
+    "badāl ma nigʿid = instead of sitting (around)"
+   ],
+   [
+    "نطلب للمكتب",
+    "niṭlub lil-maktab",
+    "we order in, we have it delivered to the office",
+    "نطلب إلى المكتب",
+    "(recognise)"
+   ],
+   [
+    "ما يحب الأكل الحار",
+    "ma yḥibb il-akil il-ḥārr",
+    "he doesn't like spicy food",
+    "لا يحب الطعام الحار",
+    "(recognise) I don't like spicy food: ma aḥibb il-akil il-ḥārr (ما أحب الأكل الحار)"
+   ],
+   [
+    "وقت الغدا",
+    "wagt il-ghada",
+    "at lunchtime",
+    "وقت الغداء",
+    "at dinner time: wagt il-ʿasha (وقت العشا)"
+   ]
+  ],
+  "receptive": [
+   6,
+   7
+  ],
+  "culture": "When a colleague asks what you'd prefer, ma tfarrig maʿi 'I don't mind' or illi yrīḥich 'whatever suits you' is polite. But if you do have a preference, give it with a reason, as B does here: it helps the person who's organising."
+ },
+ {
+  "id": "s4u028",
+  "stage": 4,
+  "title": "I'm dying to see her",
+  "goal": "Chat with Sēf about missing your family and what you're longing for, and hear about his mother's invitation",
+  "tip": "For a strong want, say khāṭri 'I'm dying to, I long to' + a verb (khāṭri ashūf ummi) or fi + a thing (khāṭri fi akil ummi). nafsi fi is 'I've really wanted'. widdi lō is 'I'd love it if': widdi lō tiyi. All are softer and warmer than abi.",
+  "grammar": "strong wants: khāṭri + verb or fi; nafsi fi; widdi lō; recycle: widdi, ḥabbēt",
+  "dialogue": [
+   [
+    "A",
+    "شفيك ساكت؟ مشتاق لأهلك؟",
+    "shfīk sākit? mishtāg l-ahlak?",
+    "Why so quiet? Missing your family?"
+   ],
+   [
+    "B",
+    "هيه والله. خاطري أشوف أمي",
+    "hē wallāh. khāṭri ashūf ummi",
+    "Yes, honestly. I'm dying to see my mum."
+   ],
+   [
+    "A",
+    "طبيعي. صار لك وايد ما رحت لندن؟",
+    "ṭabīʿi. ṣār-lak wāyid ma riḥt Landan?",
+    "That's natural. Has it been long since you went to London?"
+   ],
+   [
+    "B",
+    "سنة كاملة. وخاطري في أكل أمي بعد",
+    "sana kāmla. w khāṭri fi akil ummi baʿad",
+    "A whole year. And I'm craving my mum's cooking, too."
+   ],
+   [
+    "A",
+    "شو تطبخ لك أمك؟",
+    "shu tiṭbakh-lak ummak?",
+    "What does your mum cook for you?"
+   ],
+   [
+    "B",
+    "روست يوم الأحد! ودي لو تيي دبي وتطبخ لنا",
+    "rōst yōm il-aḥad! widdi lō tiyi Dbayy w tiṭbakh-lna",
+    "A Sunday roast! I'd love it if she came to Dubai and cooked for us."
+   ],
+   [
+    "A",
+    "ليش لا؟ حبيت أقول لك: أمي تبي تعزم أهلك إذا يوا",
+    "lēsh la? ḥabbēt agūl-lak: ummi tabi tʿazim ahlak idha yaw",
+    "Why not? I wanted to tell you: my mum wants to invite your family if they come."
+   ],
+   [
+    "B",
+    "والله؟ نفسي في هالشي من زمان!",
+    "wallāh? nafsi fi hash-shay min zamān!",
+    "Really? I've wanted that for ages!"
+   ],
+   [
+    "A",
+    "خلاص، كلمهم. وأنا خاطري أذوق هالروست!",
+    "khalāṣ, kallimhum. w ana khāṭri adhūg har-rōst!",
+    "Done, talk to them. And I'm dying to taste this roast!"
+   ]
+  ],
+  "items": [
+   [
+    "خاطري أشوف",
+    "khāṭri ashūf",
+    "I'm dying to see, I long to see",
+    "أشتاق إلى رؤية",
+    "a woman says the same; khāṭri + any verb: khāṭri asāfir = I'm dying to travel"
+   ],
+   [
+    "خاطري في",
+    "khāṭri fi",
+    "I'm craving, I really fancy (a thing)",
+    "أشتهي",
+    "khāṭri fi gahwa = I'm dying for a coffee"
+   ],
+   [
+    "نفسي في",
+    "nafsi fi",
+    "I've really wanted, I'd love (a thing)",
+    "أتوق إلى",
+    "on its own, nafsi means 'myself'"
+   ],
+   [
+    "ودي لو",
+    "widdi lō",
+    "I'd love it if",
+    "أود لو",
+    "widdi lō tiyi = I'd love it if you came (to a man); you know widdi + verb 'I'd love to'"
+   ],
+   [
+    "سنة كاملة",
+    "sana kāmla",
+    "a whole year",
+    "سنة كاملة",
+    "a whole month: shahar kāmil (شهر كامل)"
+   ],
+   [
+    "أكل أمي",
+    "akil ummi",
+    "my mum's cooking, my mum's food",
+    "طعام أمي",
+    "your mum's cooking: akil ummak (to a man), akil ummich (to a woman)"
+   ],
+   [
+    "تطبخ لنا",
+    "tiṭbakh-lna",
+    "she cooks for us; you cook for us (to a man)",
+    "تطبخ لنا",
+    "to a woman (you cook for us): tiṭbakhīn-lna (تطبخين لنا); she cooks for you: tiṭbakh-lak (تطبخ لك)"
+   ],
+   [
+    "صار لك وايد ما رحت…؟",
+    "ṣār-lak wāyid ma riḥt…?",
+    "has it been long since you went (to)…? (to a man)",
+    "هل مضى وقت طويل منذ ذهبت…؟",
+    "(recognise) to a woman: ṣār-lich wāyid ma riḥti…? (صار لج وايد ما رحتي…؟)"
+   ],
+   [
+    "أذوق",
+    "adhūg",
+    "(I) taste, (to) try (food)",
+    "أتذوق",
+    "(recognise) taste it (to a man): dhūgah (ذوقه)"
+   ]
+  ],
+  "receptive": [
+   7,
+   8
+  ]
+ },
+ {
+  "id": "s4u029",
+  "stage": 4,
+  "title": "Checkpoint 4.2: getting ready for your family",
+  "goal": "Checkpoint: with Sēf, plan your family's visit: what they'd like, who's coming, and what you'd all prefer to do",
+  "tip": "Review of s4u016–028, now about other people: shu yfaẓẓlūn? 'what would they like?', khāṭirhum fi 'they're dying for', idha ma kansal 'if he doesn't cancel', yitmanna yshūf 'he's hoping to see', atmanna-lhum 'I hope they have', plus ʿaṭētni iyyāh and widdi lō.",
+  "grammar": "checkpoint 4.2: iyyā-, kansal, atmanna, yā rēt, afaẓẓil, khāṭri, widdi lō, with 'they' and 'he'",
+  "dialogue": [
+   [
+    "A",
+    "أهلك بيوصلون الخميس؟ أمي تسأل شو يفضلون على العشا",
+    "ahlak biyōṣlūn il-khamīs? ummi tisʼal shu yfaẓẓlūn ʿala l-ʿasha",
+    "Is your family arriving on Thursday? My mum's asking what they'd like for dinner."
+   ],
+   [
+    "B",
+    "هيه، إن شاء الله. خاطرهم في الأكل الإماراتي",
+    "hē, in shāʼ allāh. khāṭirhum fi l-akil il-imārāti",
+    "Yes, God willing. They're dying to try Emirati food."
+   ],
+   [
+    "A",
+    "زين! وهذا شاحنك، عطيتني إياه السبت ونسيت أرده",
+    "zēn! w hādha shāḥnak, ʿaṭētni iyyāh is-sabt w nisēt arudd-ah",
+    "Great! And here's your charger: you gave it to me on Saturday and I forgot to give it back."
+   ],
+   [
+    "B",
+    "ما عليه. يا ريت كل الناس يردون الأغراض مثلك!",
+    "ma ʿalēh. yā rēt kill in-nās yruddūn il-aghrāẓ mithlak!",
+    "Never mind. I wish everyone gave things back like you!"
+   ],
+   [
+    "A",
+    "وفهد ياي بعد، إذا ما كنسل مثل كل مرة",
+    "w Fahad yāy baʿad, idha ma kansal mithil kill marra",
+    "And Fahad's coming too, if he doesn't cancel like every time."
+   ],
+   [
+    "B",
+    "لا، هالمرة كلمني. يقول يتمنى يشوف أبوي",
+    "la, hal-marra kallamni. ygūl yitmanna yshūf ubūy",
+    "No, this time he rang me. He says he's hoping to meet my dad."
+   ],
+   [
+    "A",
+    "حلو! وانت شو تفضل، نقعد في البيت ولّا نطلع البر؟",
+    "ḥilu! w inta shu tfaẓẓil, nigʿid fi l-bēt walla niṭlaʿ il-barr?",
+    "Nice! And what would you prefer, stay at home or go out to the desert?"
+   ],
+   [
+    "B",
+    "أفضل البيت أول يوم. أكيد بيكونون تعبانين",
+    "afaẓẓil il-bēt awwal yōm. akīd biykūnūn taʿbānīn",
+    "I'd rather home on the first day. They're bound to be tired."
+   ],
+   [
+    "A",
+    "صح. أتمنى لهم وقت حلو هني",
+    "ṣaḥḥ. atmanna-lhum wagt ḥilu hni",
+    "True. I hope they have a lovely time here."
+   ],
+   [
+    "B",
+    "إن شاء الله. ودي لو يحبون دبي مثلي",
+    "in shāʼ allāh. widdi lō yḥibbūn Dbayy mithli",
+    "God willing. I'd love it if they loved Dubai as much as I do."
+   ]
+  ],
+  "items": [
+   [
+    "شو يفضلون؟",
+    "shu yfaẓẓlūn?",
+    "what do they prefer? what would they like?",
+    "ماذا يفضلون؟",
+    "to a group: shu tfaẓẓlūn? (شو تفضلون؟), not tfaẓẓalu 'go ahead'"
+   ],
+   [
+    "خاطرهم في",
+    "khāṭirhum fi",
+    "they're dying for, they'd love (a thing)",
+    "يشتهون",
+    "he's dying for: khāṭrah fi (خاطره في); she's dying for: khāṭirha fi (خاطرها في)"
+   ],
+   [
+    "يا ريت كل الناس",
+    "yā rēt kill in-nās",
+    "I wish everyone (would)…",
+    "ليت كل الناس",
+    "yā rēt kill in-nās mithlak = I wish everyone were like you (to a man)"
+   ],
+   [
+    "إذا ما كنسل",
+    "idha ma kansal",
+    "if he doesn't cancel",
+    "إذا لم يلغ",
+    "if they don't cancel: idha ma kansalaw (إذا ما كنسلوا)"
+   ],
+   [
+    "يتمنى يشوف",
+    "yitmanna yshūf",
+    "he's hoping to see, he'd love to meet",
+    "يتمنى أن يرى",
+    "she's hoping to see: titmanna tshūf (تتمنى تشوف)"
+   ],
+   [
+    "أتمنى لهم",
+    "atmanna-lhum",
+    "I hope they (have)…, I wish them…",
+    "أتمنى لهم",
+    "to you: atmanna-lak (أتمنى لك) to a man, atmanna-lich (أتمنى لج) to a woman"
+   ]
+  ]
+ }
+]
