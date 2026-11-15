@@ -9,7 +9,7 @@
   "dialogue": [
    [
     "B",
-    "سيف، أي واحد أحسن؟ هذا ولا هذاك؟",
+    "سيف، أي واحد أحسن؟ هذا ولّا هذاك؟",
     "Sēf, ay wāḥid aḥsan? hādha walla hādhāk?",
     "Sēf, which one's better? This one or that one?"
    ],
@@ -39,7 +39,7 @@
    ],
    [
     "A",
-    "صح، بس هذا أسرع. المهم، شو تبي، أرخص ولا أسرع؟",
+    "صح، بس هذا أسرع. المهم، شو تبي، أرخص ولّا أسرع؟",
     "ṣaḥḥ, bas hādha asraʿ. il-muhimm, shu tabi, arkhaṣ walla asraʿ?",
     "True, but this one's faster. Anyway, what do you want, cheaper or faster?"
    ],
@@ -338,7 +338,7 @@
     "آخر كلام",
     "ākhir kalām",
     "my last word, final offer",
-    "السعر النهائي",
+    "كلمتي الأخيرة / العرض الأخير",
     ""
    ],
    [
@@ -495,7 +495,7 @@
    ],
    [
     "A",
-    "زين. تدفع كاش ولا بطاقة؟",
+    "زين. تدفع كاش ولّا بطاقة؟",
     "zēn. tidfaʿ kāsh walla biṭāga?",
     "OK. Are you paying cash or card?"
    ],
@@ -509,7 +509,7 @@
     "A",
     "عادي، أنا أدفع كاش، والباقي له",
     "ʿādi, ana adfaʿ kāsh, w il-bāgi lah",
-    "No problem, I'll pay cash, and he can keep the change."
+    "No problem, I'm paying cash, and he can keep the change."
    ]
   ],
   "items": [
@@ -636,7 +636,7 @@
     "ligētu",
     "you found (to a group)",
     "وجدتم",
-    "to one man: ligēt; ligētu shay? = have you found anything?"
+    "to one man: ligēt; to one woman: ligēti; ligētu shay? = have you found anything?"
    ],
    [
     "اشترينا",
@@ -760,7 +760,7 @@
     "kān ʿindakum?",
     "did you have? (to a group or a family)",
     "هل كان لديكم؟",
-    "I had: kān ʿindi; to one man: kān ʿindak?"
+    "to one man: kān ʿindak?; to one woman: kān ʿindich?; I had: kān ʿindi"
    ],
    [
     "أيام زمان",
@@ -808,15 +808,15 @@
    ],
    [
     "A",
-    "وعليكم السلام، بخير الحمد لله",
-    "wa ʿalaykum is-salām, b-khēr il-ḥamdu lillāh",
-    "Hello, fine, thank God."
+    "وعليكم السلام، بخير الحمد لله. وأهلك؟ عساهم بخير؟",
+    "wa ʿalaykum is-salām, b-khēr il-ḥamdu lillāh. w ahlak? ʿasāhum b-khēr?",
+    "Hello, fine, thank God. And your family? I hope they're well?"
    ],
    [
     "B",
-    "لما كنتي صغيرة، وين كنتي ساكنة؟",
-    "lamma kinti ṣghīra, wēn kinti sākna?",
-    "When you were little, where did you live?"
+    "الحمد لله بخير. لما كنتي صغيرة، وين كنتي ساكنة؟",
+    "il-ḥamdu lillāh b-khēr. lamma kinti ṣghīra, wēn kinti sākna?",
+    "They're fine, thank God. When you were little, where did you live?"
    ],
    [
     "A",
@@ -838,9 +838,9 @@
    ],
    [
     "B",
-    "أنا لما كنت صغير، كنت أروح المدرسة بالباص",
-    "ana lamma kint ṣghīr, kint arūḥ il-madrasa bil-bāṣ",
-    "When I was little, I used to go to school by bus."
+    "أنا لما كنت صغير، كنت أروح المدرسة وأرجع البيت، بس!",
+    "ana lamma kint ṣghīr, kint arūḥ il-madrasa w arjaʿ il-bēt, bas!",
+    "When I was little, I just went to school and came home!"
    ]
   ],
   "items": [
@@ -849,7 +849,7 @@
     "lamma kint ṣghīr",
     "when I was little (said by a man)",
     "عندما كنت صغيرًا",
-    "a woman says: lamma kint ṣghīra; more often: yōm kint ṣghīr (taught in s2u041)"
+    "a woman says: lamma kint ṣghīra; more often: yōm kint ṣghīr (yōm + past is taught in s2u044)"
    ],
    [
     "كنت",
@@ -960,7 +960,7 @@
     "kintu",
     "you were (to a group)",
     "كنتم",
-    "kintu trūḥūn = you used to go (to a group)"
+    "to one man: kint; to one woman: kinti; kintu trūḥūn = you used to go (to a group)"
    ],
    [
     "كانوا",
