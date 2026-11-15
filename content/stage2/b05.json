@@ -238,7 +238,7 @@
   "stage": 2,
   "title": "Before you go, have a coffee",
   "goal": "At Sēf's house, with Sēf there, leave politely at the end of the visit when Umm Sēf asks you to stay",
-  "tip": "'Before' + a verb is gabil la, and the verb after it is in the present form: gabil la trūḥ 'before you go', gabil la ansa 'before I forget'. Before a noun it's just gabil: gabil il-maghrib 'before maghrib'.",
+  "tip": "'Before' + a verb is gabil la, and the verb after it is in the present form: gabil la trūḥ 'before you go', gabil la ansa 'before I forget'. This la doesn't mean 'not' (la trūḥ on its own is 'don't go'). Before a noun it's just gabil: gabil il-maghrib 'before maghrib'.",
   "grammar": "gabil la + present verb: 'before …'",
   "dialogue": [
    [
@@ -676,7 +676,7 @@
     "rbīʿi illi",
     "my friend who, my friend (the one) …",
     "صديقي الذي",
-    "my friend (a woman): rbīʿti illi (ربيعتي اللي)"
+    "a woman says, about a female friend: rbīʿti illi (ربيعتي اللي)"
    ],
    [
     "يم الباب",
@@ -729,7 +729,7 @@
     "B",
     "هيه، الامتحان اللي يوم الاثنين. بدرس لين الليل",
     "hē, il-imtiḥān illi yōm il-ithnēn. badris lēn il-lēl",
-    "Yes, the one on Monday. I'll study until late at night."
+    "Yes, the one on Monday. I'll be studying till night."
    ],
    [
     "A",
@@ -789,11 +789,11 @@
     "also: chēf id-dirāsa? (كيف الدراسة؟)"
    ],
    [
-    "بعد الامتحان",
-    "baʿd il-imtiḥān",
-    "after the exam",
-    "بعد الامتحان",
-    "UAE also: ʿugub il-imtiḥān"
+    "هالأسبوع",
+    "hal-usbūʿ",
+    "this week",
+    "هذا الأسبوع",
+    ""
    ]
   ]
  },
