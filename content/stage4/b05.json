@@ -21,9 +21,9 @@
    ],
    [
     "A",
-    "يبي التقرير. التقرير، خلصته ولّا بعد؟",
-    "yabi t-taqrīr. it-taqrīr, khallaṣtah walla baʿad?",
-    "He wants the report. The report: have you finished it, or not yet?"
+    "يبي النسخة الأخيرة من التقرير قبل التسليم. خلصته ولّا بعد؟",
+    "yabi n-nuskha l-akhīra min it-taqrīr gabil it-taslīm. khallaṣtah walla baʿad?",
+    "He wants the final version of the report before the deadline. Have you finished it, or not yet?"
    ],
    [
     "B",
@@ -39,9 +39,9 @@
    ],
    [
     "B",
-    "هيه، شفتها كلها، وبخلصها اليوم إن شاء الله",
-    "hē, shift-ha killha, w bakhalliṣha l-yōm in shāʼ allāh",
-    "Yes, I've seen them all, and I'll get them done today, God willing."
+    "هيه، شفتها كلها، وقاعد أخلصها أول بأول",
+    "hē, shift-ha killha, w gāʿid akhallṣha awwal b-awwal",
+    "Yes, I've seen them all, and I'm getting through them as I go."
    ],
    [
     "A",
@@ -65,18 +65,25 @@
     "khallaṣtah walla baʿad? = have you finished it or not yet?"
    ],
    [
-    "التقرير خلصته",
-    "it-taqrīr khallaṣtah",
-    "the report, I've finished it; I've finished the report",
-    "أنهيت التقرير",
-    "the topic comes first and -ah 'it' points back to it"
+    "النسخة الأخيرة",
+    "in-nuskha l-akhīra",
+    "the final version (of a document)",
+    "النسخة الأخيرة",
+    ""
    ],
    [
-    "قاعد أشوفها",
-    "gāʿid ashūfha",
-    "I'm going through them, I'm looking at them (things) (said by a man)",
-    "أراجعها",
-    "a woman says: gāʿda ashūfha (قاعدة أشوفها); things in the plural take -ha: il-argām … ashūfha"
+    "أول بأول",
+    "awwal b-awwal",
+    "as I go, bit by bit as things come in",
+    "أولًا بأول",
+    ""
+   ],
+   [
+    "التسليم",
+    "it-taslīm",
+    "the deadline, handing (it) in",
+    "التسليم",
+    "(recognise)"
    ],
    [
     "الملاحظات",
@@ -105,19 +112,13 @@
     "I get it off my mind, I stop worrying about it (lit. I rest my head)",
     "أريح بالي",
     ""
-   ],
-   [
-    "تروح له",
-    "trūḥ-lah",
-    "you go to him, you go and see him (to a man)",
-    "تذهب إليه",
-    "to a woman: trūḥīn-lah (تروحين له)"
    ]
   ],
   "receptive": [
    3,
    4,
-   5
+   5,
+   6
   ],
   "task": "This week: search YouTube for «سوالف» (chats) or «بودكاست إماراتي» (Emirati podcast). Listen for 5 minutes and write down two sentences that put the topic first, like il-mudīr, ma shiftah. Within a minute you should hear شو / مب (UAE) or شنو / مو (Kuwait). If you hear سوف, ليس or هل all the time, it's fuṣḥā: pick another clip."
  },
@@ -137,9 +138,9 @@
    ],
    [
     "B",
-    "لا والله! حساب اليوم أنا بدفعه",
-    "la wallāh! ḥsāb il-yōm ana badfaʿah",
-    "No way! Today's bill, I'm paying it."
+    "لا والله! اليوم دوري. حساب اليوم أنا بدفعه",
+    "la wallāh! il-yōm dōri. ḥsāb il-yōm ana badfaʿah",
+    "No way! It's my turn today. Today's bill, I'm paying it."
    ],
    [
     "A",
@@ -173,18 +174,18 @@
    ],
    [
     "B",
-    "ما شاء الله! هالمطعم بنرجع له أكيد",
-    "mā shāʼ allāh! hal-maṭʿam binirjaʿ-lah akīd",
-    "Wow! This restaurant, we'll definitely come back to it."
+    "ما شاء الله! الخدمة هني زينة. هالمطعم بنرجع له أكيد",
+    "mā shāʼ allāh! il-khidma hni zēna. hal-maṭʿam binirjaʿ-lah akīd",
+    "Wow! The service here is good. This restaurant, we'll definitely come back to it."
    ]
   ],
   "items": [
    [
-    "أنا بدفعه",
-    "ana badfaʿah",
-    "I'm paying for it, I'll pay it (me, not you)",
-    "سأدفعه أنا",
-    "her / it (f.): ana badfaʿha (أنا بدفعها)"
+    "اليوم دوري",
+    "il-yōm dōri",
+    "it's my turn today",
+    "اليوم دوري",
+    "your turn (to a man): dōrak (دورك)"
    ],
    [
     "لا تحلف",
@@ -201,11 +202,11 @@
     "to her / it (f.): binirjaʿ-lha (بنرجع لها)"
    ],
    [
-    "ما طلبته",
-    "ma ṭalabtah",
-    "I didn't order it (m.); you didn't order it (to a man)",
-    "لم أطلبه",
-    "to a woman: ma ṭalabtīh (ما طلبتيه)"
+    "الخدمة",
+    "il-khidma",
+    "the service (in a restaurant, a shop)",
+    "الخدمة",
+    ""
    ],
    [
     "يقدمه",
@@ -417,7 +418,7 @@
    [
     "B",
     "زين. والعقد؟ تعرفين إذا سنة؟",
-    "zēn. w il-ʿagd? taʿarfīn idha sana?",
+    "zēn. w il-ʿagid? taʿarfīn idha sana?",
     "Good. And the lease? Do you know if it's for a year?"
    ],
    [
@@ -463,7 +464,7 @@
    ],
    [
     "العقد",
-    "il-ʿagd",
+    "il-ʿagid",
     "the contract, the lease",
     "العقد",
     ""
@@ -836,11 +837,11 @@
     "Kuwait: mū sharṭ (مو شرط)"
    ],
    [
-    "تاخذ راحتك",
-    "tākhidh rāḥtak",
-    "you can relax, you can do as you like (to a man)",
-    "تأخذ راحتك",
-    "(recognise); to a woman: tākhdhīn rāḥtich (تاخذين راحتج)"
+    "أغلب الوقت",
+    "aghlab il-wagt",
+    "most of the time",
+    "أغلب الوقت / معظم الوقت",
+    ""
    ],
    [
     "خصوصية",
@@ -865,7 +866,6 @@
    ]
   ],
   "receptive": [
-   5,
    6,
    7
   ]
@@ -875,7 +875,7 @@
   "stage": 4,
   "title": "Honestly, I hadn't thought of it like that",
   "goal": "At the office, with the team around, Maryam says living near work would save you time; concede her point but keep one of your own",
-  "tip": "Concede in two steps: first give way, wallāh ma fakkart fīha chī 'honestly, I hadn't thought of it like that', then maʿich ḥagg (to a woman). Keep your own point with bas: mub il-ḥīn, bas ʿajbatni l-fikra 'not now, but I like the idea'.",
+  "tip": "Concede in two steps: first give way, wallāh ma fakkart fīha chī 'honestly, I hadn't thought of it like that', then maʿich ḥagg (to a woman). Keep your own point with bas: mub il-ḥīn, bas idha ligēt shay munāsib… 'not now, but if I find something suitable…'.",
   "grammar": "recycle: lō + present, il-muhimm; conceding a point",
   "dialogue": [
    [
@@ -892,9 +892,9 @@
    ],
    [
     "A",
-    "بس لو تسكن قريب من الدوام، توفر وقت وبترول",
-    "bas lō tiskin garīb min id-dawām, twaffir wagt w batrōl",
-    "But if you lived near work, you'd save time and petrol."
+    "بس لو تسكن قريب من الدوام، توفر وقت وبترول وتختصر الطريق",
+    "bas lō tiskin garīb min id-dawām, twaffir wagt w batrōl w tikhtiṣir iṭ-ṭarīg",
+    "But if you lived near work, you'd save time and petrol and cut the journey short."
    ],
    [
     "B",
@@ -922,9 +922,9 @@
    ],
    [
     "B",
-    "مب الحين، بس عجبتني الفكرة",
-    "mub il-ḥīn, bas ʿajbatni l-fikra",
-    "Not now, but I like the idea."
+    "مب الحين، بس إذا لقيت شي مناسب، ليش لا؟",
+    "mub il-ḥīn, bas idha ligēt shay munāsib, lēsh la?",
+    "Not now, but if I find something suitable, why not?"
    ],
    [
     "A",
@@ -945,7 +945,7 @@
     "ma fakkart fīha chī",
     "I hadn't thought of it like that",
     "لم أفكر فيها بهذه الطريقة",
-    ""
+    "compare yā rētni fakkart chī (يا ريتني فكرت جي) = I wish I'd thought of that"
    ],
    [
     "مب الحين",
@@ -969,11 +969,11 @@
     "(recognise)"
    ],
    [
-    "بترول",
-    "batrōl",
-    "petrol",
-    "بنزين",
-    ""
+    "تختصر",
+    "tikhtiṣir",
+    "you cut short (a journey), you save (distance) (to a man)",
+    "تختصر",
+    "(recognise); to a woman: tikhtiṣrīn (تختصرين)"
    ],
    [
     "المسافة",
@@ -983,11 +983,11 @@
     "(recognise)"
    ],
    [
-    "عجبتني الفكرة",
-    "ʿajbatni l-fikra",
-    "I like the idea",
-    "أعجبتني الفكرة",
-    "UAE also: ʿaybatni (عيبتني)"
+    "شي مناسب",
+    "shay munāsib",
+    "something suitable, something that suits (me)",
+    "شيء مناسب",
+    ""
    ],
    [
     "المهم تكون مرتاح",
@@ -1000,6 +1000,7 @@
   "receptive": [
    2,
    3,
+   4,
    5
   ]
  },
@@ -1140,7 +1141,7 @@
  {
   "id": "s4u049",
   "stage": 4,
-  "title": "With respect, uncle, the difference is big",
+  "title": "You're right, uncle, but the difference is big",
   "goal": "In Bū Rāshid's majlis, with Sēf there, disagree with him respectfully about moving further out, then give way on one point",
   "tip": "With an elder, agree first and only then say bas: ṣaḥḥ kalāmak yā ʿammi, bas il-farg kbīr 'you're right, uncle, but the difference is big'. Give way with ṣaḥḥ, mub shwayy 'true, that's not nothing' and kalāmak fi maḥallah 'what you say is spot on'.",
   "grammar": "recycle: comparatives (aghla min) and cham; disagreeing with an elder, conceding",
@@ -1306,13 +1307,13 @@
     "A",
     "وهو قال شنو؟",
     "w huwa gāl shinu?",
-    "And he said what? (Fahad)"
+    "And he said what?"
    ],
    [
     "B",
-    "بالأخير تفاهمنا على نص اللي طلبه",
-    "bil-akhīr tfāhamna ʿala nuṣṣ illi ṭalabah",
-    "In the end we agreed on half the increase he was asking for."
+    "بالأخير تنازل شوي، وتفاهمنا على نص اللي طلبه",
+    "bil-akhīr tnāzal shwayy, w tfāhamna ʿala nuṣṣ illi ṭalabah",
+    "In the end he backed down a bit, and we agreed on half the increase he was asking for."
    ],
    [
     "A",
@@ -1341,11 +1342,11 @@
   ],
   "items": [
    [
-    "وافقت على طول",
-    "wāfagt ʿala ṭūl",
-    "you agreed straight away (to a man); I agreed straight away",
-    "وافقت فورًا",
-    "to a woman: wāfagti ʿala ṭūl (وافقتي على طول)"
+    "تنازل",
+    "tnāzal",
+    "he backed down, he gave way (on a price or a demand)",
+    "تنازل",
+    "she backed down: tnāzlat (تنازلت)"
    ],
    [
     "الزيادة",
