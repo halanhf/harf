@@ -15,15 +15,15 @@
       ],
       [
         "B",
-        "صج؟ وين بالضبط؟",
-        "ṣij? wēn biẓ-ẓabṭ?",
-        "Really? Where exactly?"
+        "صج؟ في شي معين تبي تدرسه؟",
+        "ṣij? fī shay mʿayyan tabi tidrisah?",
+        "Really? Is there something specific you want to study?"
       ],
       [
         "A",
-        "في بريطانيا، إذا حصلت بعثة. ولد عمي مبتعث هناك من سنتين",
-        "fi Brīṭānya, idha ḥaṣṣalt baʿtha. wild ʿammi mibtaʿath hnāk min santēn",
-        "In Britain, if I get a scholarship. My cousin's been there on a scholarship for two years."
+        "هندسة، في بريطانيا، إذا حصلت بعثة. ولد عمي، أذكى واحد فينا، مبتعث هناك من سنتين",
+        "handasa, fi Brīṭānya, idha ḥaṣṣalt baʿtha. wild ʿammi, adhka wāḥid fīna, mibtaʿath hnāk min santēn",
+        "Engineering, in Britain, if I get a scholarship. My cousin, the cleverest of us all, has been there on a scholarship for two years."
       ],
       [
         "B",
@@ -63,9 +63,9 @@
       ],
       [
         "B",
-        "أكيد! وبساعدك في الطلب إذا تبي",
-        "akīd! w basāʿdak fi ṭ-ṭalab idha tabi",
-        "Of course! And I'll help you with the application if you like."
+        "أكيد، من صجي! وبساعدك في الطلب إذا تبي",
+        "akīd, min ṣijji! w basāʿdak fi ṭ-ṭalab idha tabi",
+        "Of course, I mean it! And I'll help you with the application if you like."
       ]
     ],
     "items": [
@@ -145,7 +145,7 @@
     "title": "The AI writes the summary",
     "goal": "At the office, Maryam shows you how the team now uses AI for report summaries; say what it's good for and why you'd still check it",
     "tip": "Recycle lō ma … chān for what nearly went wrong: lō ma ntibahti, chān ṭarrashnāh ghalaṭ 'if you hadn't noticed, we'd have sent it wrong'. New technology words come straight from fuṣḥā: idh-dhakāʼ il-iṣṭināʿi 'AI', it-tiqniyya 'technology', il-bayānāt 'the data'.",
-    "grammar": "recycle: lō ma + past, chān + past; topic first (il-garār garārak)",
+    "grammar": "recycle: lō ma + past, chān + past; topic first (il-garār garārna)",
     "dialogue": [
       [
         "A",
@@ -161,21 +161,21 @@
       ],
       [
         "A",
-        "لا، يحلل البيانات ويسوي لنا ملخص، وبعدين نحن نراجعه",
-        "la, yḥallil il-bayānāt w ysawwī-lna mulakhkhaṣ, w baʿdēn niḥin nrājʿah",
-        "No, it analyses the data and does a summary for us, and then we check it."
+        "لا، شي بسيط: يحلل البيانات ويسوي لنا ملخص، وبعدين نحن نراجعه",
+        "la, shay basīṭ: yḥallil il-bayānāt w ysawwī-lna mulakhkhaṣ, w baʿdēn niḥin nrājʿah",
+        "No, it's nothing much: it analyses the data and does a summary for us, and then we check it."
       ],
       [
         "B",
-        "زين، لأن أحيانا يغلط",
-        "zēn, lann aḥyānan yighlaṭ",
-        "Good, because sometimes it gets things wrong."
+        "زين، لأن أحيانا يغلط، والمراجعة تفرق",
+        "zēn, lann aḥyānan yighlaṭ, w il-murājaʿa tfarrig",
+        "Good, because sometimes it gets things wrong, and checking makes a difference."
       ],
       [
         "A",
-        "هيه، أمس حط رقم غلط، وما انتبهت إلا في الاجتماع",
-        "hē, ams ḥaṭṭ ragam ghalaṭ, w ma ntibaht illa fi l-ijtimāʿ",
-        "Yes, yesterday it put in a wrong figure, and I only noticed in the meeting."
+        "هيه، أمس حط كم غلطة صغيرة، وما انتبهت إلا في الاجتماع",
+        "hē, ams ḥaṭṭ cham ghalṭa ṣghīra, w ma ntibaht illa fi l-ijtimāʿ",
+        "Yes, yesterday it put in a few small mistakes, and I only noticed in the meeting."
       ],
       [
         "B",
@@ -233,13 +233,6 @@
         ""
       ],
       [
-        "رقم غلط",
-        "ragam ghalaṭ",
-        "a wrong figure, a wrong number",
-        "رقم خاطئ",
-        ""
-      ],
-      [
         "التقنية",
         "it-tiqniyya",
         "technology",
@@ -265,7 +258,7 @@
     "receptive": [
       0,
       2,
-      6
+      5
     ]
   },
   {
@@ -302,9 +295,9 @@
       ],
       [
         "A",
-        "مطلوبة؟ بس شو يشتغلون فيها؟",
-        "maṭlūba? bas shu yishtaghlūn fīha?",
-        "In demand? But what work do they do with it?"
+        "مطلوبة؟ بس هالشغل صعب أفهمه. شو يشتغلون فيها؟",
+        "maṭlūba? bas hash-shughul ṣaʿb afhamah. shu yishtaghlūn fīha?",
+        "In demand? But that kind of work is hard for me to understand. What work do they do with it?"
       ],
       [
         "B",
@@ -326,15 +319,15 @@
       ],
       [
         "A",
-        "هذا عين العقل! بقول له إن سالم وياه",
-        "hādha ʿēn il-ʿagil! bagūl-lah inn Sālim wiyyāh",
-        "That's very wise! I'll tell him Sālim's on his side."
+        "هذا عين العقل! راشد دوم يسولف عنك، بقول له إنك وياه",
+        "hādha ʿēn il-ʿagil! Rāshid dōm ysōlif ʿannak, bagūl-lah innak wiyyāh",
+        "That's very wise! Rāshid's always talking about you; I'll tell him you're on his side."
       ],
       [
         "B",
-        "وقول له إذا احتاج شي، أنا موجود",
-        "w gūl-lah idha ḥtāj shay, ana mawjūd",
-        "And tell him if he needs anything, I'm here."
+        "وقول له إذا احتاج شي، أنا موجود. الامتحانات قريبة!",
+        "w gūl-lah idha ḥtāj shay, ana mawjūd. il-imtiḥānāt garība!",
+        "And tell him if he needs anything, I'm here. The exams are coming up!"
       ]
     ],
     "items": [
@@ -421,9 +414,9 @@
       ],
       [
         "A",
-        "يعني بعد عشر سنين، شو بيكون صار في الشغل؟",
-        "yaʿni baʿd ʿashr sinīn, shu biykūn ṣār fi sh-shughul?",
-        "So in ten years, what will have happened at work?"
+        "يعني بعد عشر سنين، شو بيكون صار في سوق العمل؟",
+        "yaʿni baʿd ʿashr sinīn, shu biykūn ṣār fi sūg il-ʿamal?",
+        "So in ten years, what will have happened in the job market?"
       ],
       [
         "B",
@@ -439,9 +432,9 @@
       ],
       [
         "B",
-        "لا، بنتعلم مهارات يديدة",
-        "la, binitʿallam mahārāt yidīda",
-        "No, we'll learn new skills."
+        "لا، بنتعلم مهارات يديدة. البرمجة مطلوبة وايد",
+        "la, binitʿallam mahārāt yidīda. il-barmaja maṭlūba wāyid",
+        "No, we'll learn new skills. Programming's in great demand."
       ],
       [
         "A",
@@ -519,11 +512,11 @@
         "(recognise)"
       ],
       [
-        "مهارات يديدة",
-        "mahārāt yidīda",
-        "new skills",
-        "مهارات جديدة",
-        "a skill: mahāra (مهارة)"
+        "مهارات",
+        "mahārāt",
+        "skills",
+        "مهارات",
+        "a skill: mahāra (مهارة); new skills: mahārāt yidīda (مهارات يديدة)"
       ],
       [
         "بعد عشر سنين",
@@ -562,21 +555,21 @@
       ],
       [
         "A",
-        "المقال بالإنقليزي، ورسالة توصية من الدكتور حق المادة",
-        "il-maqāl bil-ingilīzi, w risālat tawṣiya min id-daktōr ḥagg il-māda",
-        "The essay in English, and a reference letter from the professor who teaches the course."
+        "المقال بالإنقليزي، تقدر تشيك عليه؟ ورسالة توصية من الدكتور حق المادة",
+        "il-maqāl bil-ingilīzi, tigdar tchayyik ʿalēh? w risālat tawṣiya min id-daktōr ḥagg il-māda",
+        "The essay's in English: can you check it over? And a reference letter from the professor who teaches the course."
       ],
       [
         "B",
-        "المقال طرشه لي، وبراجعه الليلة",
-        "il-maqāl ṭarrshah li, w barājʿah il-lēla",
-        "The essay, send it to me, and I'll go over it tonight."
+        "المقال طرشه لي، وبشيك على الإملاء الليلة",
+        "il-maqāl ṭarrshah li, w bachayyik ʿala l-imla l-lēla",
+        "The essay, send it to me, and I'll check the spelling tonight."
       ],
       [
         "A",
-        "طرشته لك أمس! ما شفته؟",
-        "ṭarrashtah lak ams! ma shiftah?",
-        "I sent it to you yesterday! Didn't you see it?"
+        "طرشته لك أمس! ما شفته؟ لا تجاملني!",
+        "ṭarrashtah lak ams! ma shiftah? la tjāmilni!",
+        "I sent it to you yesterday! Didn't you see it? Don't just be nice about it!"
       ],
       [
         "B",
@@ -598,9 +591,9 @@
       ],
       [
         "A",
-        "إن شاء الله. وإذا طلعت لي البعثة، العشا علي!",
-        "in shāʼ allāh. w idha ṭilʿat-li l-baʿtha, il-ʿasha ʿalay!",
-        "God willing. And if I get the scholarship, dinner's on me!"
+        "إن شاء الله. وإذا طلعت لي البعثة وصرت أدرس برا، العشا علي!",
+        "in shāʼ allāh. w idha ṭilʿat-li l-baʿtha w ṣirt adris barra, il-ʿasha ʿalay!",
+        "God willing. And if I get the scholarship and end up studying abroad, dinner's on me!"
       ],
       [
         "B",
@@ -625,11 +618,18 @@
         ""
       ],
       [
-        "المقال طرشه لي",
-        "il-maqāl ṭarrshah li",
-        "send me the essay, the essay, send it to me (to a man)",
-        "أرسل لي المقال",
-        "to a woman: il-maqāl ṭarrshīh li (المقال طرشيه لي)"
+        "المقال",
+        "il-maqāl",
+        "the essay (for an application), the article",
+        "المقال",
+        "stress it by putting it first: il-maqāl ṭarrshah li = the essay, send it to me (to a man); to a woman: il-maqāl ṭarrshīh li"
+      ],
+      [
+        "الإملاء",
+        "il-imla",
+        "spelling",
+        "الإملاء",
+        ""
       ],
       [
         "رسالة توصية",
@@ -658,19 +658,12 @@
         "a copy of everything",
         "نسخة من كل شيء",
         ""
-      ],
-      [
-        "إذا طلعت لي البعثة",
-        "idha ṭilʿat-li l-baʿtha",
-        "if I get the scholarship (lit. if the scholarship comes out for me)",
-        "إذا حصلت على البعثة",
-        "if you get it: idha ṭilʿat-lak (إذا طلعت لك) to a man"
       ]
     ],
     "receptive": [
       0,
-      3,
-      5
+      4,
+      6
     ]
   },
   {
@@ -701,15 +694,15 @@
       ],
       [
         "B",
-        "ما شاء الله! بس لازم يكون متعب، شغل ودراسة",
-        "mā shāʼ allāh! bas lāzim ykūn mitʿib, shughul w dirāsa",
-        "Wow! But it must be tiring, work and study together."
+        "ما شاء الله! بس لازم يكون متعب. شغل ودراسة مب سهلة",
+        "mā shāʼ allāh! bas lāzim ykūn mitʿib. shughul w dirāsa mub sahla",
+        "Wow! But it must be tiring. Work and study together isn't easy."
       ],
       [
         "A",
-        "إيه، حيل متعب. بس التعليم عن بعد يوفر علي السفر والإيجار",
-        "ēh, ḥēl mitʿib. bas it-taʿlīm ʿan buʿd ywaffir ʿalay is-safar w il-ījār",
-        "Yes, really tiring. But distance learning saves me the travel and the rent."
+        "إيه، حيل متعب. بس التعليم عن بعد يوفر علي السفر والإيجار، وأتعلم مهارات",
+        "ēh, ḥēl mitʿib. bas it-taʿlīm ʿan buʿd ywaffir ʿalay is-safar w il-ījār, w atʿallam mahārāt",
+        "Yes, really tiring. But distance learning saves me the travel and the rent, and I'm learning skills."
       ],
       [
         "B",
@@ -725,15 +718,15 @@
       ],
       [
         "B",
-        "حلو! الله يوفقك يا فهد",
-        "ḥilu! allāh ywaffgak yā Fahad",
-        "Great! Good luck, Fahad."
+        "حلو! شو باقي؟ سنة؟ الله يوفقك يا فهد",
+        "ḥilu! shu bāgi? sana? allāh ywaffgak yā Fahad",
+        "Great! What's left? A year? Good luck, Fahad."
       ],
       [
         "A",
-        "آمين، وياك. وإذا فكرت تدرس جذي، أنا أساعدك",
-        "āmīn, wiyyāk. w idha fakkart tidris chidhi, ana asāʿdak",
-        "Amen, and to you. And if you think of studying like this, I'll help you."
+        "باقي سنة. آمين، وانت بعد. وإذا فكرت تدرس جذي، أنا أساعدك",
+        "bāgi sana. āmīn, w inta baʿad. w idha fakkart tidris chidhi, ana asāʿdak",
+        "A year left. Amen, and you too. And if you think of studying like this, I'll help you."
       ]
     ],
     "items": [
@@ -829,15 +822,15 @@
       ],
       [
         "B",
-        "ليش؟ الجو مب حار وايد اليوم",
-        "lēsh? il-jaww mub ḥārr wāyid il-yōm",
-        "Why? It's not that hot today."
+        "ليش؟ بس نص ساعة، مب وايد",
+        "lēsh? bas nuṣṣ sāʿa, mub wāyid",
+        "Why? It's only half an hour, not long."
       ],
       [
         "A",
-        "مب حار؟ الحرارة فوق الأربعين، والرطوبة بعد!",
-        "mub ḥārr? il-ḥarāra fōg il-arbaʿīn, w ir-ruṭūba baʿad!",
-        "Not hot? It's over forty degrees, and humid as well!"
+        "نص ساعة؟ الحرارة فوق الأربعين. أصعب شي الرطوبة!",
+        "nuṣṣ sāʿa? il-ḥarāra fōg il-arbaʿīn. aṣʿab shay ir-ruṭūba!",
+        "Half an hour? It's over forty degrees. The humidity's the worst of it!"
       ],
       [
         "B",
@@ -859,9 +852,9 @@
       ],
       [
         "A",
-        "الصبح بدري أو بعد المغرب. لو طلعت الحين، جان طحت من ضربة شمس",
-        "iṣ-ṣubḥ badri aw baʿd il-maghrib. lō ṭilaʿt il-ḥīn, chān ṭiḥt min ẓarbat shams",
-        "Early in the morning or after maghrib. If you went out now, you'd collapse with sunstroke."
+        "الصبح بدري أو بعد المغرب، هذا طبيعي عندنا. لو طلعت الحين، جان طحت من ضربة شمس",
+        "iṣ-ṣubḥ badri aw baʿd il-maghrib, hādha ṭabīʿi ʿindana. lō ṭilaʿt il-ḥīn, chān ṭiḥt min ẓarbat shams",
+        "Early in the morning or after maghrib; that's normal for us. If you went out now, you'd collapse with sunstroke."
       ],
       [
         "B",
@@ -871,19 +864,12 @@
       ],
       [
         "A",
-        "هذا الكلام! والكاب لا تنساه",
-        "hādha l-kalām! w il-kāb la tinsāh",
-        "That's more like it! And your cap, don't forget it."
+        "هذا الكلام! والكاب لا تنساه. يلا ندخل",
+        "hādha l-kalām! w il-kāb la tinsāh. yalla nidkhil",
+        "That's more like it! And your cap, don't forget it. Let's go in."
       ]
     ],
     "items": [
-      [
-        "أركض",
-        "arkiẓ",
-        "(I) run, (to) go running",
-        "أركض",
-        "you run: tirkiẓ (تركض) to a man"
-      ],
       [
         "انت مينون؟",
         "inta maynūn?",
@@ -934,17 +920,17 @@
         ""
       ],
       [
-        "الكاب لا تنساه",
-        "il-kāb la tinsāh",
-        "don't forget your cap, your cap, don't forget it (to a man)",
-        "لا تنسَ القبعة",
-        "to a woman: il-kāb la tinsīnah (الكاب لا تنسينه)"
+        "الكاب",
+        "il-kāb",
+        "the cap (a baseball cap)",
+        "القبعة",
+        "your cap, don't forget it: il-kāb la tinsāh (to a man); to a woman: il-kāb la tinsīnah"
       ]
     ],
     "culture": "Every summer since 2005 the UAE has had a midday break for outdoor work. In recent years it has run from 15 June to 15 September: work under direct sun is banned from 12:30 to 3 p.m., and employers must give outdoor workers shade and drinking water. That's why building sites go quiet in the early afternoon.",
     "receptive": [
-      1,
-      5
+      0,
+      4
     ]
   },
   {
@@ -981,9 +967,9 @@
       ],
       [
         "A",
-        "أغلبه من البحر يا ولدي، من محطات التحلية اللي على الساحل",
-        "aghlabah min il-baḥar yā wildi, min maḥaṭṭāt it-taḥliya illi ʿala s-sāḥil",
-        "Most of it from the sea, son, from the desalination plants on the coast."
+        "أغلبه من البحر يا ولدي، من محطات التحلية اللي على الساحل. والتحلية مب سهلة",
+        "aghlabah min il-baḥar yā wildi, min maḥaṭṭāt it-taḥliya illi ʿala s-sāḥil. w it-taḥliya mub sahla",
+        "Most of it from the sea, son, from the desalination plants on the coast. And desalination isn't easy."
       ],
       [
         "B",
@@ -999,9 +985,9 @@
       ],
       [
         "B",
-        "معك حق يا عمي. أنا بعد لازم أنتبه",
-        "maʿak ḥagg yā ʿammi. ana baʿad lāzim antibih",
-        "You're right, uncle. I need to be careful too."
+        "معك حق يا عمي. أنا بعد لازم أنتبه، القطرة تفرق",
+        "maʿak ḥagg yā ʿammi. ana baʿad lāzim antibih, il-giṭra tfarrig",
+        "You're right, uncle. I need to be careful too; every drop makes a difference."
       ],
       [
         "A",
@@ -1011,9 +997,9 @@
       ],
       [
         "B",
-        "إن شاء الله. من اليوم بسكر الماي على طول",
-        "in shāʼ allāh. min il-yōm basakkir il-māy ʿala ṭūl",
-        "God willing. From today I'll turn the water off straight away."
+        "إن شاء الله. شي بسيط، بس من اليوم بسكر الماي على طول",
+        "in shāʼ allāh. shay basīṭ, bas min il-yōm basakkir il-māy ʿala ṭūl",
+        "God willing. It's a small thing, but from today I'll turn the water off straight away."
       ]
     ],
     "items": [
@@ -1032,11 +1018,11 @@
         "one channel: falaj (فلج); (recognise)"
       ],
       [
-        "على الساحل",
-        "ʿala s-sāḥil",
-        "on the coast",
-        "على الساحل",
-        ""
+        "الساحل",
+        "is-sāḥil",
+        "the coast",
+        "الساحل",
+        "on the coast: ʿala s-sāḥil"
       ],
       [
         "محطات التحلية",
@@ -1097,9 +1083,9 @@
     "dialogue": [
       [
         "A",
-        "شوف هالأبراج! أبوي يقول هني كله كان رمل",
-        "shūf hal-abrāj! ubūy ygūl hni killah kān raml",
-        "Look at these towers! My dad says this was all sand."
+        "شوف هالأبراج! أبوي يقول هني كله كان رمل، والبيوت بس على الساحل",
+        "shūf hal-abrāj! ubūy ygūl hni killah kān raml, w il-byūt bas ʿala s-sāḥil",
+        "Look at these towers! My dad says this was all sand, and the houses were only on the coast."
       ],
       [
         "B",
@@ -1127,9 +1113,9 @@
       ],
       [
         "B",
-        "صح، بس المدن الكبيرة كلها جي",
-        "ṣaḥḥ, bas il-mudun il-kbīra killha chī",
-        "True, but all big cities are like that."
+        "صح، بس المدن الكبيرة كلها جي. الحياة فيها مب سهلة",
+        "ṣaḥḥ, bas il-mudun il-kbīra killha chī. il-ḥayāh fīha mub sahla",
+        "True, but all big cities are like that. Life in them isn't easy."
       ],
       [
         "A",
@@ -1145,9 +1131,9 @@
       ],
       [
         "A",
-        "هيه، وفيها البراجيل. أبوي يقول هذي كانت المكيف حق أول",
-        "hē, w fīha l-barājīl. ubūy ygūl hādhi kānat il-mkayyif ḥagg awwal",
-        "Yes, with the wind towers. My dad says those were the old days' AC."
+        "هيه، وفيها البراجيل. أبوي يقول هذي كانت المكيف حق أول، يوم الشمس قوية",
+        "hē, w fīha l-barājīl. ubūy ygūl hādhi kānat il-mkayyif ḥagg awwal, yōm ish-shams gawiyya",
+        "Yes, with the wind towers. My dad says those were the old days' AC, when the sun was fierce."
       ],
       [
         "B",
@@ -1158,11 +1144,11 @@
     ],
     "items": [
       [
-        "هالأبراج",
-        "hal-abrāj",
-        "these towers, these tower blocks",
-        "هذه الأبراج",
-        "a tower: burj (برج)"
+        "الأبراج",
+        "il-abrāj",
+        "the towers, the tower blocks",
+        "الأبراج",
+        "a tower: burj (برج); these towers: hal-abrāj (هالأبراج)"
       ],
       [
         "كله كان رمل",
@@ -1207,13 +1193,6 @@
         ""
       ],
       [
-        "الفرجان القديمة",
-        "il-firjān il-gadīma",
-        "the old neighbourhoods",
-        "الأحياء القديمة",
-        "one: il-firīj (الفريج); (recognise)"
-      ],
-      [
         "البراجيل",
         "il-barājīl",
         "the wind towers",
@@ -1224,8 +1203,7 @@
     "culture": "In old Dubai, houses in the Al Fahidi (Bastakiya) quarter were built close together around shaded courtyards and alleys, and many had a barjīl: a wind tower that catches the breeze and sends it down into the rooms. The quarter has been restored, and many of its houses now hold galleries, cafés and small museums.",
     "task": "This week: with a tutor or exchange partner (search a tutoring site for «Emirati Arabic tutor»), ask how their city has changed since they were little: the heat, the traffic, the old neighbourhoods. Give one change you like and one you don't (il-ḥilu fīh…, bas il-mushkila…), and end with one wish (yā rēt…).",
     "receptive": [
-      7,
-      8
+      7
     ]
   },
   {
@@ -1262,9 +1240,9 @@
       ],
       [
         "A",
-        "فكرة حلوة. بس المدير يحب يقرا على الورق",
-        "fikra ḥilwa. bas il-mudīr yḥibb yigra ʿala l-warag",
-        "Good idea. But the manager likes reading on paper."
+        "فكرة حلوة. التغيير زين، بس المدير يحب يقرا على الورق",
+        "fikra ḥilwa. it-taghyīr zēn, bas il-mudīr yḥibb yigra ʿala l-warag",
+        "Good idea. Change is good, but the manager likes reading on paper."
       ],
       [
         "B",
@@ -1280,15 +1258,15 @@
       ],
       [
         "B",
-        "كل واحد ييب غرشته وياه من البيت",
-        "kill wāḥid yīb gharshatah wiyyāh min il-bēt",
-        "Everyone brings their own bottle from home."
+        "كل واحد ييب غرشته وياه من البيت. هذي تفرق",
+        "kill wāḥid yīb gharshatah wiyyāh min il-bēt. hādhi tfarrig",
+        "Let everyone bring their own bottle from home. That makes a difference."
       ],
       [
         "A",
-        "أحسن شي! جي نوفر ونحافظ على البيئة بعد",
-        "aḥsan shay! chī nwaffir w nḥāfiẓ ʿala l-bīʼa baʿad",
-        "Perfect! That way we save (money) and look after the environment too."
+        "أحسن شي! شي بسيط، بس جي نوفر ونحافظ على البيئة بعد",
+        "aḥsan shay! shay basīṭ, bas chī nwaffir w nḥāfiẓ ʿala l-bīʼa baʿad",
+        "Perfect! It's a small thing, but that way we save (money) and look after the environment too."
       ]
     ],
     "items": [
@@ -1300,11 +1278,11 @@
         "(recognise)"
       ],
       [
-        "الصناديق اليديدة",
-        "iṣ-ṣanādīg il-yidīda",
-        "the new bins, the new boxes",
-        "الصناديق الجديدة",
-        "a bin, a box: ṣandūg (صندوق)"
+        "الصناديق",
+        "iṣ-ṣanādīg",
+        "the bins, the boxes",
+        "الصناديق",
+        "a bin, a box: ṣandūg (صندوق); the new bins: iṣ-ṣanādīg il-yidīda"
       ],
       [
         "وين أحط",
@@ -1383,21 +1361,21 @@
       ],
       [
         "B",
-        "لو كان في شجر أكثر في الشوارع، جان الصيف أخف",
-        "lō kān fī shajar akthar fi sh-shawāriʿ, chān iṣ-ṣēf akhaff",
-        "If there were more trees on the streets, summer would be easier."
+        "لو كان في شجر أكثر بين الأبراج، جان الصيف أخف",
+        "lō kān fī shajar akthar bēn il-abrāj, chān iṣ-ṣēf akhaff",
+        "If there were more trees between the towers, summer would be easier."
       ],
       [
         "A",
-        "يمكن. بس الشجر يحتاج ماي وايد، والماي هني غالي",
-        "yimkin. bas ish-shajar yiḥtāj māy wāyid, w il-māy hni ghāli",
-        "Maybe. But trees need a lot of water, and water's precious here."
+        "يمكن. بس الشجر يحتاج ماي وايد. ترا الماي نعمة",
+        "yimkin. bas ish-shajar yiḥtāj māy wāyid. tara l-māy niʿma",
+        "Maybe. But trees need a lot of water. Water's a blessing, you know."
       ],
       [
         "B",
-        "صح. بس ما في شجر يتحمل الحر؟",
-        "ṣaḥḥ. bas ma fī shajar yitḥammal il-ḥarr?",
-        "True. But aren't there trees that can stand the heat?"
+        "صح، كل قطرة غالية. بس ما في شجر يتحمل الحر؟",
+        "ṣaḥḥ, kill giṭra ghālya. bas ma fī shajar yitḥammal il-ḥarr?",
+        "True, every drop counts. But aren't there trees that can stand the heat?"
       ],
       [
         "A",
@@ -1486,13 +1464,6 @@
         "it (f.) takes years to grow",
         "تستغرق سنين حتى تكبر",
         ""
-      ],
-      [
-        "تحت الشجر",
-        "taḥt ish-shajar",
-        "under the trees",
-        "تحت الأشجار",
-        ""
       ]
     ],
     "culture": "The ghaf (Prosopis cineraria) was declared the UAE's national tree in 2008. It is drought-tolerant and stays green in the open desert, which is why it has long been valued for shade and as a meeting place.",
@@ -1522,15 +1493,15 @@
       ],
       [
         "A",
-        "الله يبارك فيك! بس شوي خايف",
-        "allāh ybārik fīk! bas shwayy khāyif",
-        "Thanks! But I'm a bit nervous."
+        "الله يبارك فيك! بس شوي خايف، أبي أدرس برا وايد",
+        "allāh ybārik fīk! bas shwayy khāyif, abi adris barra wāyid",
+        "Thanks! But I'm a bit nervous; I really want to study abroad."
       ],
       [
         "B",
-        "لا تخاف. الأسئلة، بنتدرب عليها الليلة",
-        "la tkhāf. il-asʼila, binitdarrab ʿalēha l-lēla",
-        "Don't worry. The questions, we'll practise them tonight."
+        "لا تخاف. الأسئلة مب سهلة، بس بنتدرب عليها الليلة",
+        "la tkhāf. il-asʼila mub sahla, bas binitdarrab ʿalēha l-lēla",
+        "Don't worry. The questions aren't easy, but we'll practise them tonight."
       ],
       [
         "A",
@@ -1540,9 +1511,9 @@
       ],
       [
         "B",
-        "قول إنك مستعد تتعلم، وخلك واثق من نفسك",
-        "gūl innak mustaʿidd titʿallam, w khallak wāthig min nafsak",
-        "Say you're ready to learn, and stay confident."
+        "قول إنك مستعد تتعلم مهارات يديدة، وخلك واثق من نفسك",
+        "gūl innak mistaʿidd titʿallam mahārāt yidīda, w khallak wāthig min nafsak",
+        "Say you're ready to learn new skills, and stay confident."
       ],
       [
         "A",
@@ -1552,9 +1523,9 @@
       ],
       [
         "B",
-        "لا، بالعكس. اطلع بدري، وغرشة الماي لا تنساها!",
-        "la, bil-ʿaks. iṭlaʿ badri, w gharshat il-māy la tinsāha!",
-        "No, quite the opposite. Leave early, and your bottle of water, don't forget it!"
+        "لا، بالعكس. أفضل تطلع بدري، الشمس قوية. وغرشة الماي لا تنساها!",
+        "la, bil-ʿaks. afaẓẓil tiṭlaʿ badri, ish-shams gawiyya. w gharshat il-māy la tinsāha!",
+        "No, quite the opposite. I'd rather you left early; the sun's fierce. And your bottle of water, don't forget it!"
       ],
       [
         "A",
@@ -1586,10 +1557,10 @@
       ],
       [
         "مستعد",
-        "mustaʿidd",
+        "mistaʿidd",
         "ready, prepared, willing (a man)",
         "مستعد",
-        "a woman: mustaʿidda (مستعدة)"
+        "a woman: mistaʿidda (مستعدة)"
       ],
       [
         "في عز الحر",
@@ -1604,13 +1575,6 @@
         "the bottle of water, your water bottle",
         "قنينة الماء",
         "a bottle: gharsha (غرشة); bottles: gharāsh (غراش)"
-      ],
-      [
-        "هذا تعبك",
-        "hādha taʿabak",
-        "that's your own hard work (paying off) (to a man)",
-        "هذه ثمرة تعبك",
-        "to a woman: hādha taʿabich (هذا تعبج)"
       ]
     ]
   },
@@ -1619,20 +1583,20 @@
     "stage": 4,
     "title": "B2 exit: AI at university, for and against",
     "goal": "B2 exit: in a seminar, your lecturer asks you to set out the pros and cons of students using AI, then defend your answer",
-    "tip": "Argue both sides, then decide: il-ījābiyyāt… w is-salbiyyāt…, with an example that puts the topic first (il-baḥth…, tkhalliṣah), a guess with yimkin ykūn, a counterfactual to reject an idea (lō manaʿnāh, chān…), and Form VII for what can't be done (ma yinʿirif). la, bil-ʿaks pushes back politely.",
+    "tip": "Argue both sides, then decide: il-ījābiyyāt… w is-salbiyyāt…, with an example that puts the topic first (il-baḥth…, tkhallṣah), a guess with yimkin ykūn, a counterfactual to reject an idea (lō manaʿnāh, chān…), and Form VII for what can't be done (ma yinʿirif). la, bil-ʿaks pushes back politely.",
     "grammar": "B2 exit: pros and cons (topic first, yimkin ykūn, lō … chān, Form VII, la bil-ʿaks)",
     "dialogue": [
       [
         "A",
-        "اليوم نتكلم عن الذكاء الاصطناعي في الدراسة. سالم، شو رأيك فيه؟",
-        "il-yōm nitkallam ʿan idh-dhakāʼ il-iṣṭināʿi fi d-dirāsa. Sālim, shu raʼyak fīh?",
-        "Today we're talking about AI in studying. Sālim, what do you think of it?"
+        "اليوم نتكلم عن التقنية والذكاء الاصطناعي في الدراسة. سالم، شو رأيك فيه؟",
+        "il-yōm nitkallam ʿan it-tiqniyya w idh-dhakāʼ il-iṣṭināʿi fi d-dirāsa. Sālim, shu raʼyak fīh?",
+        "Today we're talking about technology and AI in studying. Sālim, what do you think of AI?"
       ],
       [
         "B",
-        "الإيجابيات وايد. أول شي، يوفر وقت",
-        "il-ījābiyyāt wāyid. awwal shay, ywaffir wagt",
-        "There are plenty of pros. First, it saves time."
+        "الإيجابيات وايد. أول شي، يوفر وقت، ويصلح الإملاء",
+        "il-ījābiyyāt wāyid. awwal shay, ywaffir wagt, w yṣalliḥ il-imla",
+        "There are plenty of pros. First, it saves time, and it fixes your spelling."
       ],
       [
         "A",
@@ -1643,7 +1607,7 @@
       [
         "B",
         "البحث اللي كان ياخذ أسبوع، الحين تخلصه في يوم",
-        "il-baḥth illi kān yākhidh usbūʿ, il-ḥīn tkhalliṣah fi yōm",
+        "il-baḥth illi kān yākhidh usbūʿ, il-ḥīn tkhallṣah fi yōm",
         "Research that used to take a week, now you finish it in a day."
       ],
       [
@@ -1654,15 +1618,15 @@
       ],
       [
         "B",
-        "هذي هي المشكلة. يمكن يكون أسهل، بس ما يتعلمون شي",
-        "hādhi hiya l-mushkila. yimkin ykūn ashal, bas ma yitʿallamūn shay",
-        "That's exactly the problem. It might be easier, but they don't learn anything."
+        "هذي هي المشكلة. يمكن يكون أسهل، بس ما يتعلمون مهارات",
+        "hādhi hiya l-mushkila. yimkin ykūn ashal, bas ma yitʿallamūn mahārāt",
+        "That's exactly the problem. It might be easier, but they don't learn skills."
       ],
       [
         "A",
-        "يعني الأحسن نمنعه في الجامعة؟",
-        "yaʿni l-aḥsan nimnaʿah fi l-jāmʿa?",
-        "So we'd better ban it at university?"
+        "أنا محتار. يعني الأحسن نمنعه في الجامعة؟",
+        "ana miḥtār. yaʿni l-aḥsan nimnaʿah fi l-jāmʿa?",
+        "I'm torn. So would it be better to ban it at university?"
       ],
       [
         "B",
@@ -1678,9 +1642,9 @@
       ],
       [
         "B",
-        "ما ينعرف دايما. بس لازم تعلمونهم يستخدمونه صح",
-        "ma yinʿirif dāyman. bas lāzim tʿallmūnhum yistakhdimūnah ṣaḥḥ",
-        "You can't always tell. But you (lecturers) have to teach them to use it properly."
+        "ما ينعرف دايما. بس تقدرون تشيكون، والأحسن تعلمونهم يستخدمونه صح",
+        "ma yinʿirif dāyman. bas tigdarūn tchayykūn, w il-aḥsan tʿallmūnhum yistakhdmūnah ṣaḥḥ",
+        "You can't always tell. But you can check, and it's better to teach them to use it properly."
       ]
     ],
     "items": [
@@ -1762,9 +1726,9 @@
       ],
       [
         "A",
-        "وشو استفدت منها؟",
-        "w shu istafadt minha?",
-        "And what did you gain from it?"
+        "وشو الإيجابيات؟ شو استفدت منها؟",
+        "w shu l-ījābiyyāt? shu istafadt minha?",
+        "And what are the pros? What did you gain from it?"
       ],
       [
         "B",
@@ -1780,15 +1744,15 @@
       ],
       [
         "B",
-        "اسمح لي يا عمي، بس السنة تمر بسرعة",
-        "ismaḥ-li yā ʿammi, bas is-sana tmurr b-surʿa",
-        "With respect, uncle, but a year goes by fast."
+        "اسمح لي يا بو راشد، بس السنة تمر بسرعة، وسيف مستعد",
+        "ismaḥ-li yā Bū Rāshid, bas is-sana tmurr b-surʿa, w Sēf mistaʿidd",
+        "With respect, Bū Rāshid, but a year goes by fast, and Sēf is ready."
       ],
       [
         "A",
-        "ما أدري… يمكن يكون كلامك صح",
-        "ma adri… yimkin ykūn kalāmak ṣaḥḥ",
-        "I don't know… maybe you're right."
+        "أنا محتار، شو الحل؟ يمكن يكون كلامك صح",
+        "ana miḥtār, shu l-ḥall? yimkin ykūn kalāmak ṣaḥḥ",
+        "I can't make up my mind; what's the answer? Maybe you're right."
       ],
       [
         "B",
@@ -1804,13 +1768,6 @@
         "not happy (about it), uneasy (a man)",
         "غير مرتاح",
         "a woman: mub mirtāḥa (مب مرتاحة)"
-      ],
-      [
-        "الغربة صعبة",
-        "il-ghurba ṣaʿba",
-        "living abroad is hard, being away from home is hard",
-        "الغربة صعبة",
-        ""
       ],
       [
         "عشتها",
