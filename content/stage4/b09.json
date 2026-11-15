@@ -293,9 +293,9 @@
    ],
    [
     "A",
-    "الساعة ست، يعني لازم نطلع أربع ونص. ما أبي تفوتني الطيارة",
-    "is-sāʿa sitt, yaʿni lāzim niṭlaʿ arbaʿ w nuṣṣ. ma abi tfūtni ṭ-ṭayyāra",
-    "At six, so we'll have to leave at half past four. I don't want to miss the plane."
+    "الساعة ست، يعني لازم نطلع أربع ونص. ما أبي تفوتني الطيارة، والطابور طويل",
+    "is-sāʿa sitt, yaʿni lāzim niṭlaʿ arbaʿ w nuṣṣ. ma abi tfūtni ṭ-ṭayyāra, w iṭ-ṭābūr ṭawīl",
+    "At six, so we'll have to leave at half past four. I don't want to miss the plane, and the queue's long."
    ],
    [
     "B",
@@ -364,6 +364,13 @@
     "breakfast's on you (to a man)",
     "الفطور عليك",
     "to a woman: ir-riyūg ʿalēch (الريوق عليج)"
+   ],
+   [
+    "الطابور",
+    "iṭ-ṭābūr",
+    "the queue, the line (of people)",
+    "الطابور",
+    "a long queue: ṭābūr ṭawīl (طابور طويل)"
    ]
   ],
   "receptive": [
