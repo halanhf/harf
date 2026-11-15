@@ -63,9 +63,9 @@
    ],
    [
     "B",
-    "سوري، كمل كلامك. وأنا أكتب الخطة، بلا تكرار",
-    "sōri, kammil kalāmak. w ana aktib il-khiṭṭa, bala tikrār",
-    "Sorry, go on. And I'll write up the plan, with nothing said twice."
+    "سوري، كمل كلامك. أنا المنسق: أكتب الخطة، بلا تكرار",
+    "sōri, kammil kalāmak. ana l-munassiq: aktib il-khiṭṭa, bala tikrār",
+    "Sorry, go on. I'm the coordinator: I'll write up the plan, with nothing said twice."
    ]
   ],
   "items": [
@@ -103,6 +103,13 @@
     "repetition, repeating (yourself)",
     "تكرار",
     "without repeating ourselves: bala tikrār"
+   ],
+   [
+    "المنسق",
+    "il-munassiq",
+    "the coordinator (a man)",
+    "المنسق",
+    "a woman: il-munassiqa (المنسقة); q kept, as in fuṣḥā"
    ]
   ]
  },
@@ -128,8 +135,8 @@
    ],
    [
     "A",
-    "أنا. السيستم اليديد فيه مشكلة، والكل يشتكي",
-    "ana. is-sistim il-yidīd fīh mushkila, w il-kill yishtiki",
+    "أنا. النظام اليديد فيه مشكلة، والكل يشتكي",
+    "ana. in-niẓām il-yidīd fīh mushkila, w il-kill yishtiki",
     "Me. The new system has a problem, and everyone's complaining."
    ],
    [
@@ -158,9 +165,9 @@
    ],
    [
     "B",
-    "شوي هدوء يا جماعة! أنا محايد، وما نبي جدال",
-    "shwayy hudūʼ yā jamāʿa! ana muḥāyid, w ma nabi jidāl",
-    "A bit of quiet, everyone! I'm not taking sides, and we don't want an argument."
+    "شوي هدوء يا جماعة! خلونا بنظام: أنا محايد، وما نبي جدال",
+    "shwayy hudūʼ yā jamāʿa! khallūna b-niẓām: ana muḥāyid, w ma nabi jidāl",
+    "A bit of quiet, everyone! Let's keep some order: I'm not taking sides, and we don't want an argument."
    ],
    [
     "A",
@@ -170,8 +177,8 @@
    ],
    [
     "B",
-    "خلاص، نأجلها للاجتماع الياي. والحين، السيستم",
-    "khalāṣ, nʼajjilha lil-ijtimāʿ il-yāy. w il-ḥīn, is-sistim",
+    "خلاص، نأجلها للاجتماع الياي. والحين، النظام",
+    "khalāṣ, nʼajjilha lil-ijtimāʿ il-yāy. w il-ḥīn, in-niẓām",
     "Fine, we'll put it off to the next meeting. And now, the system."
    ]
   ],
@@ -210,6 +217,13 @@
     "neutral, not taking sides (a man)",
     "محايد",
     "a woman: muḥāyda (محايدة)"
+   ],
+   [
+    "بنظام",
+    "b-niẓām",
+    "in order, properly, by the rules",
+    "بنظام",
+    "order, a system: niẓām (نظام)"
    ]
   ]
  },
@@ -235,7 +249,7 @@
    ],
    [
     "A",
-    "زين. وفي عوايق في السيستم اليديد؟ سمعت الكل يشتكي",
+    "زين. وفي عوايق في النظام اليديد؟ سمعت الكل يشتكي",
     "zēn. w fī ʿawāyig fi s-sistim il-yidīd? simaʿt il-kill yishtiki",
     "Good. And are there any snags with the new system? I heard everyone's complaining."
    ],
@@ -376,9 +390,9 @@
    ],
    [
     "A",
-    "هذا كلام عاطفي، مب أرقام",
-    "hādha kalām ʿāṭifi, mub argām",
-    "That's emotional talk, not figures."
+    "هذا مجرد كلام عاطفي، مب أرقام",
+    "hādha mujarrad kalām ʿāṭifi, mub argām",
+    "That's just emotional talk, not figures."
    ],
    [
     "B",
@@ -427,6 +441,13 @@
     "a contradiction (formal)",
     "تناقض",
     "q kept, as in fuṣḥā"
+   ],
+   [
+    "مجرد كلام",
+    "mujarrad kalām",
+    "just talk, mere words",
+    "مجرد كلام",
+    ""
    ],
    [
     "تنفي",
@@ -581,9 +602,9 @@
    ],
    [
     "A",
-    "عادي، كل واحد يرتبك أول مرة. خذ نفس عميق",
-    "ʿādi, kill wāḥid yirtibik awwal marra. khudh nafas ʿamīg",
-    "That's normal; everyone gets flustered the first time. Take a deep breath."
+    "عادي، كل واحد يرتبك أول مرة. هذي رهبة المسرح. خذ نفس عميق",
+    "ʿādi, kill wāḥid yirtibik awwal marra. hādhi rahbat il-masraḥ. khudh nafas ʿamīg",
+    "That's normal; everyone gets flustered the first time. It's stage fright. Take a deep breath."
    ],
    [
     "B",
@@ -635,6 +656,13 @@
     "a nightmare",
     "كابوس",
     ""
+   ],
+   [
+    "رهبة",
+    "rahba",
+    "nerves, awe (before an audience or an elder)",
+    "رهبة",
+    "stage fright: rahbat il-masraḥ"
    ],
    [
     "أتلعثم",
