@@ -96,7 +96,7 @@
     "بطاقة الجامعة",
     "biṭāgat il-jāmʿa",
     "student card, university ID card",
-    "بطاقة الجامعة",
+    "البطاقة الجامعية",
     "before a noun, biṭāga becomes biṭāgat"
    ],
    [
@@ -431,7 +431,7 @@
     "أبي أسأل إذا",
     "abi asʼal idha",
     "I'd like to ask if, I'm calling to ask whether",
-    "أريد أن أسأل إذا",
+    "أريد أن أسأل إن كان",
     "a polite way to start a call to a shop, a clinic or an office"
    ],
    [
@@ -545,7 +545,7 @@
    [
     "A",
     "زين، بسألها. وإذا عرفت شي، بطرش لكم",
-    "zēn, basʼalha. w idha ʿirift shay, baṭarrish-lkum",
+    "zēn, basʼalha. w idha ʿiraft shay, baṭarrish-lkum",
     "OK, I'll ask her. And if I find out anything, I'll message you."
    ]
   ],
@@ -599,8 +599,8 @@
   "stage": 3,
   "title": "Who fixes the printer?",
   "goal": "Find the office technician, tell him what's wrong with the printer, and encourage him while he works",
-  "tip": "Many everyday verbs double their middle letter: ṣallaḥ 'he fixed', yṣalliḥ 'he fixes'. You know some already: sawwa, ṭarrash, khallaṣ. They take the usual endings: aṣalliḥ 'I fix', tṣalliḥ 'you fix', yṣallḥūn 'they fix'. With 'it': aṣalliḥha 'I'll fix it (f.)'.",
-  "grammar": "Form II verbs (doubled middle letter): yṣalliḥ 'he fixes', aṣalliḥha 'I'll fix it'",
+  "tip": "Many everyday verbs double their middle letter: ṣallaḥ 'he fixed', yṣalliḥ 'he fixes'. You know some already: sawwa, ṭarrash, khallaṣ. They take the usual endings: aṣalliḥ 'I fix', tṣalliḥ 'you fix', yṣallḥūn 'they fix'. With 'it': aṣalliḥha 'I fix it (f.)', baṣalliḥha 'I'll fix it (f.)'.",
+  "grammar": "Form II verbs (doubled middle letter): yṣalliḥ 'he fixes', aṣalliḥha 'I fix it (f.)'",
   "dialogue": [
    [
     "B",
@@ -662,9 +662,9 @@
    [
     "أصلحها",
     "aṣalliḥha",
-    "I'll fix it (f.), I fix it",
+    "(let me) fix it (f.), I fix it",
     "أصلحها",
-    "a masculine thing: aṣallḥah (أصلحه)"
+    "I'll fix it: baṣalliḥha (بصلحها); a masculine thing: aṣallḥah (أصلحه)"
    ],
    [
     "الله يقويك",
@@ -706,14 +706,14 @@
     "idha khirbat",
     "if it (f.) breaks down",
     "إذا تعطلت",
-    "a masculine thing: idha khirab (إذا خرب)"
+    "a masculine thing: idha khirib (إذا خرب)"
    ],
    [
     "اشتغلت",
     "ishtaghalat",
     "it's working now, it worked (a feminine thing)",
     "اشتغلت / عملت",
-    "a masculine thing: ishtaghal (اشتغل)"
+    "a masculine thing: ishtaghal (اشتغل); not ishtaghalt 'I worked', written the same"
    ]
   ],
   "culture": "allāh ygawwīk is what you say to someone in the middle of a job: a technician, a cleaner, friends carrying furniture. yaʿṭīk il-ʿāfya, which you already know, works in the same places. Both are warm and everyday, not formal, and you can say them to anyone working, whatever their job."
@@ -1083,7 +1083,7 @@
     "asmaʿah",
     "I can hear it (m.), I can hear him",
     "أسمعه",
-    "I can hear it (f.), her: asmaʿha (أسمعها)"
+    "I can hear it (f.), her: asmaʿha (أسمعها); not ismaʿah 'listen to him!' (اسمعه)"
    ]
   ]
  },
@@ -1135,7 +1135,7 @@
     "A",
     "الله يقويك. وإذا تبي شي، قول لي",
     "allāh ygawwīk. w idha tabi shay, gūl-li",
-    "Good work. And if you need anything, tell me."
+    "Keep it up. And if you need anything, tell me."
    ],
    [
     "B",
@@ -1266,7 +1266,7 @@
     "جهزتوا",
     "jahhaztu",
     "you (all) got (it) ready; have you got it ready? (to a group)",
-    "هل جهزتم",
+    "جهزتم",
     "to one man: jahhazt; to one woman: jahhazti; you'll see written جهزتو"
    ],
    [
