@@ -5,7 +5,7 @@
     "title": "Where did you all go?",
     "goal": "Ask a group of friends where they went and who with, using the you-all past ending -tu.",
     "grammar": "Past tense I: you all (-tu); we (-na) recycled",
-    "tip": "For a group, add -tu for 'you all' (you met -na 'we' in s1u036): wiṣal (he arrived) → wiṣaltu? (did you all arrive?); riḥt (I went) → riḥtu; ṭilaʿt → ṭilaʿtu. Use -tu for two or more people, men or women.",
+    "tip": "For a group the ending is -tu 'you all' (you met -na 'we' in s1u036). Take the 'I' form and add -u: wiṣalt → wiṣaltu? (did you all arrive?); riḥt → riḥtu; ṭilaʿt → ṭilaʿtu. Use it for two or more people, men or women.",
     "dialogue": [
       [
         "B",
@@ -106,7 +106,7 @@
         "il-marra th-thānya",
         "next time",
         "المرة القادمة",
-        ""
+        "UAE also: il-marra l-yāya (المرة الياية)"
       ]
     ]
   },
@@ -256,7 +256,7 @@
       [
         "A",
         "البارحة الساعة ثلاث، وما نمت!",
-        "il-bārḥa is-sāʿa thalāth, w ma nimt!",
+        "il-bārḥa s-sāʿa thalāth, w ma nimt!",
         "Last night at three, and I didn't sleep!"
       ]
     ],
@@ -342,9 +342,9 @@
       ],
       [
         "B",
-        "مشيت في السوق وايد",
-        "mishēt fi s-sūg wāyid",
-        "I walked round the souq for ages."
+        "صباح النور. مشيت في السوق وايد",
+        "ṣabāḥ in-nūr. mishēt fi s-sūg wāyid",
+        "Good morning. I walked round the souq for ages."
       ],
       [
         "A",
@@ -495,14 +495,14 @@
         "khadht",
         "I took; you took (to a man)",
         "أخذتُ / أخذتَ",
-        "to a woman: khadhti (خذتي); khadhat 'she took' is spelled the same"
+        "to a woman: khadhti (خذتي); khadhat 'she took' is spelled the same; also said: khadhēt (خذيت)"
       ],
       [
         "كلت",
         "kalt",
         "I ate; you ate (to a man)",
         "أكلتُ / أكلتَ",
-        "to a woman: kalti (كلتي); also said: akalt (أكلت)"
+        "to a woman: kalti (كلتي); also said: akalt (أكلت), kalēt (كليت)"
       ],
       [
         "ما كلت",
@@ -545,7 +545,7 @@
     "id": "s1u042",
     "stage": 1,
     "title": "I brought you something",
-    "goal": "Arrive at a friend's family home, say how you came and what you brought, and ask after him.",
+    "goal": "Arrive at Sēf's family home, greet Umm Sēf, say how you came and what you brought, and ask after Sēf.",
     "grammar": "Past tense II: come and bring (yīt, yibt, ma yā)",
     "tip": "'Come' and 'bring' are irregular: yīt (I came, you came), yā (he came), ma yā (he didn't come, he hasn't come); yibt (I brought, you brought), yāb (he brought). Emiratis say y where others say j (jīt, jibt), so these are written with ي.",
     "dialogue": [
@@ -627,7 +627,7 @@
         "ma fī dāʿi",
         "there's no need",
         "لا داعي",
-        "you'll see written مافي داعي"
+        "you'll see written مافي داعي; also very common: ma lah dāʿi (ماله داعي)"
       ],
       [
         "ما سوينا شي",
@@ -663,7 +663,7 @@
       [
         "B",
         "هلا سيف! شو سويت في الويكند؟",
-        "hala Sēf! shu sawwēt fi l-wīkend?",
+        "hala Sēf! shu sawwēt fi l-wīkind?",
         "Hi Sēf! What did you do at the weekend?"
       ],
       [
@@ -686,8 +686,8 @@
       ],
       [
         "B",
-        "ما شاء الله! ونمتوا في البر؟",
-        "mā shāʼ allāh! w nimtu fi l-barr?",
+        "ما شاء الله! ونمتوا هناك؟",
+        "mā shāʼ allāh! w nimtu hnāk?",
         "Wonderful! And did you sleep out there?"
       ],
       [
@@ -749,7 +749,7 @@
     "goal": "Pick a day to go out with a friend, name the days of the week, and say good night.",
     "grammar": "Days of the week: yōm + day",
     "tip": "Days come with yōm 'day': yōm il-aḥad (Sun), il-ithnēn (Mon), ith-thulāthā (Tue), il-arbiʿa (Wed), il-khamīs (Thu), il-jumʿa (Fri), is-sabt (Sat). No word for 'on' is needed: yōm il-jumʿa ʿindi shughul (on Friday I've got work).",
-    "culture": "Since January 2022 the UAE's official weekend has been Saturday and Sunday, and government offices close at Friday noon. Kuwait's weekend is Friday and Saturday. Friday's noon prayer is the main prayer of the week, so Friday plans usually start after it.",
+    "culture": "Since January 2022 the UAE's official weekend has been Saturday and Sunday, and federal government offices close at Friday noon (Sharjah's government takes Friday off too). Kuwait's weekend is Friday and Saturday. Friday's noon prayer is the main prayer of the week, so Friday plans usually start after it.",
     "dialogue": [
       [
         "A",
@@ -843,7 +843,7 @@
         "tiṣbaḥ ʿala khēr",
         "good night (to a man)",
         "تصبح على خير",
-        "to a woman: tiṣbaḥīn ʿala khēr; reply: w inta min ahlah"
+        "to a woman: tiṣbaḥīn ʿala khēr (تصبحين على خير); reply: w inta min ahlah"
       ],
       [
         "وانت من أهله",
@@ -860,7 +860,7 @@
     "title": "Mornings and afternoons",
     "goal": "Compare your day with a colleague's: morning, midday, afternoon, evening and night.",
     "grammar": "Parts of the day: iṣ-ṣubḥ, iẓ-ẓuhur, il-ʿaṣr, il-lēl",
-    "tip": "Parts of the day need no word for 'in': iṣ-ṣubḥ ashtaghil (in the morning I work), il-ʿaṣr fi l-jāmʿa (in the afternoon at the university). Plans are often timed by the prayers: baʿd il-maghrib (after sunset prayer).",
+    "tip": "Most parts of the day need no word for 'in': iṣ-ṣubḥ ashtaghil (in the morning I work), il-ʿaṣr fi l-jāmʿa (in the afternoon at the university). Night usually takes one: fi l-lēl (at night). Plans are often timed by prayers: baʿd il-maghrib.",
     "culture": "The five prayers frame the day: il-fajr (dawn), iẓ-ẓuhur (midday), il-ʿaṣr (afternoon), il-maghrib (sunset), il-ʿisha (night). People often set times by them ('after ʿaṣr', 'before maghrib'), and the clock times move with the seasons: in Dubai, maghrib is about 5:30 pm in winter and about 7 pm in summer.",
     "dialogue": [
       [
@@ -878,7 +878,7 @@
       [
         "B",
         "أنا هني الصبح، والعصر في الجامعة",
-        "ana hni iṣ-ṣubḥ, w il-ʿaṣr fi l-jāmʿa",
+        "ana hni ṣ-ṣubḥ, w il-ʿaṣr fi l-jāmʿa",
         "I'm here in the mornings, and at the university in the afternoons."
       ],
       [
@@ -891,12 +891,12 @@
         "B",
         "في الليل، بعد المغرب",
         "fi l-lēl, baʿd il-maghrib",
-        "In the evening, after maghrib."
+        "At night, after maghrib."
       ],
       [
         "A",
         "زين. يلا، نتغدى الظهر؟",
-        "zēn. yalla, nitghadda iẓ-ẓuhur?",
+        "zēn. yalla, nitghadda ẓ-ẓuhur?",
         "Good. Shall we have lunch at midday?"
       ]
     ],
@@ -965,7 +965,7 @@
     "title": "What time is the film?",
     "goal": "Tell the time with half past, quarter past and quarter to, and count minutes, before a film with Sēf.",
     "grammar": "Telling the time (w nuṣṣ, w rubʿ, illa rubʿ); a singular noun after 11",
-    "tip": "is-sāʿa + hour: is-sāʿa thintēn (two o'clock), is-sāʿa wiḥda (one). Then w nuṣṣ (half past), w rubʿ (quarter past), illa rubʿ (quarter to). From 11 up the noun stays singular: khamsṭaʿash dagīga, but khams dagāyig.",
+    "tip": "is-sāʿa + hour: is-sāʿa thintēn (two o'clock), is-sāʿa waḥda (one). Then w nuṣṣ (half past), w rubʿ (quarter past), illa rubʿ (quarter to). From 11 up the noun stays singular: khamsṭaʿash dagīga, but khams dagāyig.",
     "dialogue": [
       [
         "A",
