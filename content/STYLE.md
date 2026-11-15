@@ -106,7 +106,7 @@ The course follows **CODA-Gulf** (S: Khalifa et al. 2016; Habash et al. 2018) fo
 - صج ṣij "really" keeps ج (natives write صج 2476/3162 vs صق 3/0): a deliberate exception to the ق rule, like الفريج.
 - طب: ṭibb "medicine" (the item, s2u003) vs UAE ṭabb "came in, entered" vs Egyptian/Levantine ṭab "OK" (never use). Teach ṭabb only as a chunk.
 - ودنا: widdana "we'd like" vs waddna "take us!" Teach only as a chunk (ودنا نشوفك, ودنا المول).
-- تعور: tʿawwir "it hurts (f.)" vs tʿūr (rare). Teach as a chunk: tʿawwirni rāsi / rāsi yʿawwirni.
+- تعور: tʿawwir "it (f.) hurts" vs other readings. Teach as a chunk: īdi tʿawwirni "my hand hurts" (ايدي تعورني 18/3; feminine body parts: hand, eye, leg, ear) vs rāsi yʿawwirni "my head hurts" (masculine).
 - ارتاح: irtāḥ "he rested" vs artāḥ "I rest". Teach as a chunk (artāḥ shwayy).
 - لفت: lift "lift, elevator" (loan) vs lifat "he turned". Teach il-lift as a chunk with the article.
 - غير ghēr "other" vs ghayyar "changed" (teach غيرت); دور dōr "turn, floor" vs dawwar "looked for" (teach دورت); تعرف "you know" vs taʿarraf (teach تعرفت على, 55/36); ودي widdi "I'd like" vs ودى wadda "took" (teach ودني "take me", 219/131).
