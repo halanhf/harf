@@ -1,0 +1,1377 @@
+[
+ {
+  "id": "s4u001",
+  "stage": 4,
+  "title": "If I'd known, I'd have come",
+  "goal": "Sēf tells you that you missed the lecture where the professor went over the exam; say what you'd have done if you'd known",
+  "tip": "lō + a past verb looks back at something that didn't happen: lō dirēt 'if I'd known'. The result is chān + a past verb: lō dirēt, chān yīt badri 'if I'd known, I'd have come early'. chān never changes; the past verb shows who: chān ʿiraft 'you'd have known'.",
+  "grammar": "past counterfactual: lō + past verb, chān + past verb",
+  "dialogue": [
+   [
+    "A",
+    "وينك اليوم؟ الدكتور حل ويانا أسئلة الامتحانات القديمة كلها!",
+    "wēnak il-yōm? id-daktōr ḥall wiyyāna asʼilat il-imtiḥānāt il-gadīma killha!",
+    "Where were you today? The professor went through all the old exam papers with us!"
+   ],
+   [
+    "B",
+    "لا والله! كنت نايم، المنبه ما رن",
+    "la wallāh! kint nāyim, il-munabbih ma rann",
+    "No way! I was asleep, the alarm didn't go off."
+   ],
+   [
+    "A",
+    "خسارة! لو حضرت، جان عرفت شو بيكون في الامتحان",
+    "khasāra! lō ḥaẓart, chān ʿiraft shu biykūn fi l-imtiḥān",
+    "What a shame! If you'd been there, you'd have known what's going to be in the exam."
+   ],
+   [
+    "B",
+    "لو دريت، جان ييت من الساعة سبع!",
+    "lō dirēt, chān yīt min is-sāʿa sabʿ!",
+    "If I'd known, I'd have come at seven!"
+   ],
+   [
+    "A",
+    "ترا طرشت لك في القروب أمس. لو شفت تلفونك، جان دريت",
+    "tara ṭarrasht-lak fi l-grūb ams. lō shift tilifōnak, chān dirēt",
+    "I sent it to you in the group yesterday, you know. If you'd looked at your phone, you'd have known."
+   ],
+   [
+    "B",
+    "تلفوني كان طافي. البطارية خلصت",
+    "tilifōni kān ṭāfi. il-baṭṭāriyya khilṣat",
+    "My phone was off. The battery died."
+   ],
+   [
+    "A",
+    "ما عليه، لا تحاتي. كتبت كل شي قاله",
+    "ma ʿalēh, la tḥāti. kitabt kill shay gālah",
+    "Never mind, don't worry. I wrote down everything he said."
+   ],
+   [
+    "B",
+    "صج؟ والله لو ما عندي ربيع مثلك، جان ضعت!",
+    "ṣij? wallāh lō ma ʿindi rbīʿ mithlak, chān ẓiʿt!",
+    "Really? Honestly, if I didn't have a friend like you, I'd be lost!"
+   ],
+   [
+    "A",
+    "يلا، تعال المكتبة وأشرح لك",
+    "yalla, taʿāl il-maktaba w ashraḥ-lak",
+    "Come on, come to the library and I'll explain it to you."
+   ]
+  ],
+  "items": [
+   [
+    "لو دريت",
+    "lō dirēt",
+    "if I'd known; if you'd known (to a man)",
+    "لو علمت",
+    "to a woman: lō dirēti (لو دريتي)"
+   ],
+   [
+    "لو حضرت",
+    "lō ḥaẓart",
+    "if you'd been there, if you'd come (to class) (to a man); if I'd been there",
+    "لو حضرت",
+    "to a woman: lō ḥaẓarti (لو حضرتي)"
+   ],
+   [
+    "جان عرفت",
+    "chān ʿiraft",
+    "you'd have known (to a man); I'd have known",
+    "لعرفت",
+    "to a woman: chān ʿirafti (جان عرفتي)"
+   ],
+   [
+    "لو شفت تلفونك",
+    "lō shift tilifōnak",
+    "if you'd looked at your phone (to a man)",
+    "لو نظرت إلى هاتفك",
+    "to a woman: lō shifti tilifōnich (لو شفتي تلفونج)"
+   ],
+   [
+    "المنبه ما رن",
+    "il-munabbih ma rann",
+    "the alarm didn't go off",
+    "لم يرن المنبه",
+    ""
+   ],
+   [
+    "كان طافي",
+    "kān ṭāfi",
+    "it was off, it was switched off (m.)",
+    "كان مطفأً",
+    "a feminine thing: kānat ṭāfya (كانت طافية)"
+   ],
+   [
+    "البطارية خلصت",
+    "il-baṭṭāriyya khilṣat",
+    "the battery died, the battery ran out",
+    "نفدت البطارية",
+    ""
+   ],
+   [
+    "جان ضعت",
+    "chān ẓiʿt",
+    "I'd be lost, I'd have been lost",
+    "لضعت",
+    ""
+   ],
+   [
+    "أسئلة الامتحانات القديمة",
+    "asʼilat il-imtiḥānāt il-gadīma",
+    "old exam papers, past exam questions",
+    "أسئلة الامتحانات السابقة",
+    "(recognise)"
+   ]
+  ],
+  "receptive": [
+   3,
+   8
+  ]
+ },
+ {
+  "id": "s4u002",
+  "stage": 4,
+  "title": "Good thing you saved a copy",
+  "goal": "At the office, your laptop dies before a meeting; Maryam saved a copy. Thank her and say what would have happened",
+  "tip": "Put ma after lō for 'if … hadn't': lō ma ḥafaẓti nuskha 'if you hadn't saved a copy'. Put ma after chān for 'wouldn't have': chān ma khallaṣna 'we wouldn't have finished'. zēn inn- + an ending is 'good thing (that)': zēn innich ḥafaẓtīha.",
+  "grammar": "negative counterfactual: lō ma + past verb, chān ma + past verb",
+  "dialogue": [
+   [
+    "B",
+    "مريم، اللابتوب طفى فجأة، والعرض كله راح!",
+    "Maryam, il-lābtōb ṭafa fajʼa, w il-ʿarẓ killah rāḥ!",
+    "Maryam, the laptop suddenly died, and the whole presentation's gone!"
+   ],
+   [
+    "A",
+    "لا تخاف، حفظت نسخة عندي أمس",
+    "la tkhāf, ḥafaẓt nuskha ʿindi ams",
+    "Don't panic, I saved a copy on mine yesterday."
+   ],
+   [
+    "B",
+    "الحمد لله! لو ما حفظتي نسخة، جان ضاع شغل أسبوع كامل",
+    "il-ḥamdu lillāh! lō ma ḥafaẓti nuskha, chān ẓāʿ shughul usbūʿ kāmil",
+    "Thank God! If you hadn't saved a copy, a whole week's work would have been lost."
+   ],
+   [
+    "A",
+    "هيه، ومن غيرها جان ما خلصنا قبل الاجتماع",
+    "hē, w min ghērha chān ma khallaṣna gabl il-ijtimāʿ",
+    "Yes, and without it we wouldn't have finished before the meeting."
+   ],
+   [
+    "B",
+    "زين إنج حفظتيها! أنا ما حفظت شي",
+    "zēn innich ḥafaẓtīha! ana ma ḥafaẓt shay",
+    "Good thing you saved it! I hadn't saved anything."
+   ],
+   [
+    "A",
+    "كم مرة قلت لك؟ احفظ كل عشر دقايق!",
+    "cham marra gilt-lak? iḥfaẓ kill ʿashr dagāyig!",
+    "How many times have I told you? Save every ten minutes!"
+   ],
+   [
+    "B",
+    "صح، غلطتي. لو سمعت كلامج، جان ما صار شي",
+    "ṣaḥḥ, ghalṭati. lō simaʿt kalāmich, chān ma ṣār shay",
+    "True, my fault. If I'd listened to you, nothing would have happened."
+   ],
+   [
+    "A",
+    "المهم، تعال نكمل من عندي",
+    "il-muhimm, taʿāl nkammil min ʿindi",
+    "Anyway, come on, let's carry on from mine."
+   ],
+   [
+    "B",
+    "ماشي. ومن اليوم، بحفظ كل شي مرتين!",
+    "māshi. w min il-yōm, baḥfaẓ kill shay marratēn!",
+    "OK. And from today, I'll save everything twice!"
+   ]
+  ],
+  "items": [
+   [
+    "لو ما حفظتي",
+    "lō ma ḥafaẓti",
+    "if you hadn't saved (it) (to a woman)",
+    "لو لم تحفظي",
+    "to a man: lō ma ḥafaẓt (لو ما حفظت)"
+   ],
+   [
+    "جان ضاع",
+    "chān ẓāʿ",
+    "it would have been lost (m.)",
+    "لضاع",
+    "a feminine thing: chān ẓāʿat (جان ضاعت)"
+   ],
+   [
+    "جان ما خلصنا",
+    "chān ma khallaṣna",
+    "we wouldn't have finished",
+    "لما انتهينا",
+    ""
+   ],
+   [
+    "جان ما صار شي",
+    "chān ma ṣār shay",
+    "nothing would have happened",
+    "لما حدث شيء",
+    ""
+   ],
+   [
+    "زين إنج",
+    "zēn innich",
+    "good thing you … (to a woman)",
+    "من الجيد أنكِ",
+    "to a man: zēn innak (زين إنك)"
+   ],
+   [
+    "حفظت نسخة",
+    "ḥafaẓt nuskha",
+    "I saved a copy; you saved a copy (to a man)",
+    "حفظت نسخة",
+    "to a woman: ḥafaẓti nuskha (حفظتي نسخة)"
+   ],
+   [
+    "لو سمعت كلامج",
+    "lō simaʿt kalāmich",
+    "if I'd listened to you (to a woman) (lit. heard your words)",
+    "لو سمعت كلامكِ",
+    "to a man: lō simaʿt kalāmak (لو سمعت كلامك)"
+   ],
+   [
+    "من غيرها",
+    "min ghērha",
+    "without it (f.), without her",
+    "من دونها",
+    "(recognise)"
+   ],
+   [
+    "كم مرة قلت لك؟",
+    "cham marra gilt-lak?",
+    "how many times have I told you? (to a man)",
+    "كم مرة قلت لك؟",
+    "to a woman: cham marra gilt-lich? (كم مرة قلت لج؟); (recognise)"
+   ]
+  ],
+  "receptive": [
+   7,
+   8
+  ]
+ },
+ {
+  "id": "s4u003",
+  "stage": 4,
+  "title": "If it weren't for you",
+  "goal": "The day after your car battery died on the road at night, thank Sēf for coming to help, and take his advice",
+  "tip": "lōla means 'if it weren't for': lōla z-zaḥma 'if it weren't for the traffic'. It takes endings: lōlāk 'if it weren't for you (m.)', lōlāch (f.). The result is chān + a past verb: lōlāk, chān ẓallēt hnāk. lōla allāh thumm inta is a warm way to say thanks.",
+  "grammar": "lōla 'if it weren't for' + chān + past verb",
+  "dialogue": [
+   [
+    "A",
+    "ها، شو صار في السيارة؟ ركبوا لك بطارية يديدة؟",
+    "hā, shu ṣār fi s-sayyāra? rakkbaw-lak baṭṭāriyya yidīda?",
+    "So, what happened with the car? Did they put a new battery in for you?"
+   ],
+   [
+    "B",
+    "هيه، الصبح في الكراج. الحمد لله",
+    "hē, iṣ-ṣubḥ fi l-karāj. il-ḥamdu lillāh",
+    "Yes, this morning at the garage. Thank God."
+   ],
+   [
+    "A",
+    "أمس كنت خايف عليك، الشارع كان ظلام",
+    "ams kint khāyif ʿalēk, ish-shāriʿ kān ẓalām",
+    "Last night I was worried about you, the road was dark."
+   ],
+   [
+    "B",
+    "والله لولاك، جان ظليت هناك لين الصبح",
+    "wallāh lōlāk, chān ẓallēt hnāk lēn iṣ-ṣubḥ",
+    "Honestly, if it weren't for you, I'd have stayed stuck there till morning."
+   ],
+   [
+    "A",
+    "لا يا ريّال، ما سويت شي. أي واحد جان سوى نفس الشي",
+    "la yā rayyāl, ma sawwēt shay. ay wāḥid chān sawwa nafs ish-shay",
+    "Come on, man, I didn't do anything. Anyone would have done the same."
+   ],
+   [
+    "B",
+    "لا، لولا الله ثم انت، جان ما دريت شو أسوي",
+    "la, lōla allāh thumm inta, chān ma dirēt shu asawwi",
+    "No, if it weren't for God and then you, I wouldn't have known what to do."
+   ],
+   [
+    "A",
+    "بس ترا قلت لك من شهرين: جان غيرتها من زمان!",
+    "bas tara gilt-lak min shahrēn: chān ghayyart-ha min zamān!",
+    "But I told you two months ago: you should have changed it ages ago!"
+   ],
+   [
+    "B",
+    "صح كلامك. جان غيرتها، بس نسيت",
+    "ṣaḥḥ kalāmak. chān ghayyart-ha, bas nisēt",
+    "You're right. I should have changed it, but I forgot."
+   ],
+   [
+    "A",
+    "ما عليه، الحمد لله على كل حال",
+    "ma ʿalēh, il-ḥamdu lillāh ʿala kill ḥāl",
+    "Never mind, thank God for everything."
+   ],
+   [
+    "B",
+    "والعشا الليلة علي، لا تقول لا!",
+    "w il-ʿasha l-lēla ʿalay, la tgūl la!",
+    "And dinner tonight's on me, don't say no!"
+   ]
+  ],
+  "items": [
+   [
+    "لولاك",
+    "lōlāk",
+    "if it weren't for you, without you (to a man)",
+    "لولاك",
+    "to a woman: lōlāch (لولاج)"
+   ],
+   [
+    "لولا الله ثم انت",
+    "lōla allāh thumm inta",
+    "if it weren't for God and then you (warm thanks) (to a man)",
+    "لولا الله ثم أنت",
+    "to a woman: lōla allāh thumm inti (لولا الله ثم انتي)"
+   ],
+   [
+    "جان ظليت",
+    "chān ẓallēt",
+    "I'd have stayed, I'd have been stuck",
+    "لبقيت",
+    ""
+   ],
+   [
+    "أي واحد جان سوى",
+    "ay wāḥid chān sawwa",
+    "anyone would have done (it)",
+    "لفعل أي شخص ذلك",
+    "(recognise)"
+   ],
+   [
+    "جان غيرتها",
+    "chān ghayyart-ha",
+    "you should have changed it (f.) (to a man); I should have changed it",
+    "كان عليك أن تغيرها",
+    "to a woman: chān ghayyartīha (جان غيرتيها)"
+   ],
+   [
+    "ركبوا لك",
+    "rakkbaw-lak",
+    "they fitted you (a part), they put in for you (to a man)",
+    "ركبوا لك",
+    "to a woman: rakkbaw-lich (ركبوا لج); (recognise)"
+   ],
+   [
+    "الشارع كان ظلام",
+    "ish-shāriʿ kān ẓalām",
+    "the road was dark",
+    "كان الشارع مظلمًا",
+    "(recognise)"
+   ],
+   [
+    "الحمد لله على كل حال",
+    "il-ḥamdu lillāh ʿala kill ḥāl",
+    "thank God for everything, thank God anyway (after something bad)",
+    "الحمد لله على كل حال",
+    ""
+   ],
+   [
+    "لا تقول لا",
+    "la tgūl la",
+    "don't say no (insisting) (to a man)",
+    "لا تقل لا",
+    "to a woman: la tgūlīn la (لا تقولين لا)"
+   ]
+  ],
+  "receptive": [
+   3,
+   5,
+   6
+  ]
+ },
+ {
+  "id": "s4u004",
+  "stage": 4,
+  "title": "No regrets, uncle",
+  "goal": "In Bū Rāshid's majlis, with Sēf there, he asks if you regret coming to Dubai; say what would have happened if you hadn't",
+  "tip": "lō ma + a past verb with chān ma answers 'what if I hadn't?': lō ma yīt Dbayy, chān ma tʿallamt il-ʿarabi. chān + an adjective is 'it would have been …': chān aḥsan 'it would have been better'. To an elder, keep yā ʿammi.",
+  "grammar": "counterfactuals about life choices; chān + adjective",
+  "dialogue": [
+   [
+    "A",
+    "ها يا ولدي، صار لك سنتين في دبي. ندمت إنك ييت؟",
+    "hā yā wildi, ṣār-lak santēn fi Dbayy. nidamt innak yīt?",
+    "So, my son, you've been in Dubai two years now. Do you regret coming?"
+   ],
+   [
+    "B",
+    "لا والله يا عمي، ما ندمت أبد",
+    "la wallāh yā ʿammi, ma nidamt abad",
+    "No, honestly, uncle, I don't regret it at all."
+   ],
+   [
+    "A",
+    "زين. ولو ما ييت، شو جان سويت؟",
+    "zēn. w lō ma yīt, shu chān sawwēt?",
+    "Good. And if you hadn't come, what would you have done?"
+   ],
+   [
+    "B",
+    "جان درست في لندن، وجان ما تعلمت العربي",
+    "chān darast fi Landan, w chān ma tʿallamt il-ʿarabi",
+    "I'd have studied in London, and I wouldn't have learnt Arabic."
+   ],
+   [
+    "A",
+    "وجان ما عرفناك! الحمد لله إنك ييت",
+    "w chān ma ʿirafnāk! il-ḥamdu lillāh innak yīt",
+    "And we'd never have got to know you! Thank God you came."
+   ],
+   [
+    "B",
+    "الله يخليك يا عمي. بس مرات أقول: لو اخترت طب، جان أحسن",
+    "allāh ykhallīk yā ʿammi. bas marrāt agūl: lō ikhtart ṭibb, chān aḥsan",
+    "That's kind of you, uncle. But sometimes I think: if I'd chosen medicine, it would have been better."
+   ],
+   [
+    "A",
+    "لا يا ولدي، الهندسة زينة. وبعدين، اللي فات مات",
+    "la yā wildi, il-handasa zēna. w baʿdēn, illi fāt māt",
+    "No, my son, engineering's good. And anyway, what's past is past."
+   ],
+   [
+    "B",
+    "صدقت والله يا عمي",
+    "ṣidagt wallāh yā ʿammi",
+    "Too true, uncle."
+   ],
+   [
+    "A",
+    "تفضل القهوة، وسلم لي على أبوك",
+    "tfaẓẓal il-gahwa, w sallim-li ʿala ubūk",
+    "Have some coffee, and give my regards to your father."
+   ],
+   [
+    "B",
+    "الله يسلمك، يوصل إن شاء الله",
+    "allāh ysallmak, yōṣal in shāʼ allāh",
+    "Thank you, I'll pass it on."
+   ]
+  ],
+  "items": [
+   [
+    "ندمت إنك ييت؟",
+    "nidamt innak yīt?",
+    "do you regret coming? (to a man)",
+    "هل ندمت أنك جئت؟",
+    "to a woman: nidamti innich yīti? (ندمتي إنج ييتي؟)"
+   ],
+   [
+    "ما ندمت أبد",
+    "ma nidamt abad",
+    "I don't regret it at all, I've never regretted it",
+    "لم أندم أبدًا",
+    ""
+   ],
+   [
+    "شو جان سويت؟",
+    "shu chān sawwēt?",
+    "what would you have done? (to a man)",
+    "ماذا كنت ستفعل؟",
+    "to a woman: shu chān sawwēti? (شو جان سويتي؟)"
+   ],
+   [
+    "جان درست",
+    "chān darast",
+    "I'd have studied; you'd have studied (to a man)",
+    "لدرست",
+    "to a woman: chān darasti (جان درستي)"
+   ],
+   [
+    "جان ما تعلمت",
+    "chān ma tʿallamt",
+    "I wouldn't have learnt; you wouldn't have learnt (to a man)",
+    "لما تعلمت",
+    "to a woman: chān ma tʿallamti (جان ما تعلمتي)"
+   ],
+   [
+    "جان ما عرفناك",
+    "chān ma ʿirafnāk",
+    "we'd never have got to know you (to a man)",
+    "لما عرفناك",
+    "to a woman: chān ma ʿirafnāch (جان ما عرفناج); (recognise)"
+   ],
+   [
+    "لو اخترت",
+    "lō ikhtart",
+    "if I'd chosen; if you'd chosen (to a man)",
+    "لو اخترت",
+    "to a woman: lō ikhtarti (لو اخترتي)"
+   ],
+   [
+    "جان أحسن",
+    "chān aḥsan",
+    "it would have been better",
+    "لكان أفضل",
+    ""
+   ],
+   [
+    "اللي فات مات",
+    "illi fāt māt",
+    "what's past is past, let bygones be bygones",
+    "ما فات مات",
+    "a saying; (recognise)"
+   ]
+  ],
+  "receptive": [
+   5,
+   8
+  ]
+ },
+ {
+  "id": "s4u005",
+  "stage": 4,
+  "title": "You should have registered earlier",
+  "goal": "Sēf missed the course registration; talk about what he and the university should have done, and what he can still do",
+  "tip": "chān + someone's past verb says what they should have done: chān sajjalt badri 'you should have registered early', chān ṭarrashaw īmēl 'they should have sent an email'. It works for every person: chān sajjalt (I), chān gālaw (they).",
+  "grammar": "chān + past verb: 'should have' for any person",
+  "dialogue": [
+   [
+    "A",
+    "خلاص، راحت علي! التسجيل سكر أمس",
+    "khalāṣ, rāḥat ʿalay! it-tasjīl sakkar ams",
+    "That's it, I've missed out! Registration closed yesterday."
+   ],
+   [
+    "B",
+    "أفا! ليش ما سجلت من أول؟",
+    "afa! lēsh ma sajjalt min awwal?",
+    "Oh no! Why didn't you register earlier?"
+   ],
+   [
+    "A",
+    "نسيت. والجامعة ما طرشت ولا رسالة!",
+    "nisēt. w il-jāmʿa ma ṭarrashat wala risāla!",
+    "I forgot. And the university didn't send a single message!"
+   ],
+   [
+    "B",
+    "والله جان طرشوا إيميل على الأقل",
+    "wallāh chān ṭarrashaw īmēl ʿala l-aqall",
+    "Honestly, they should have sent an email at least."
+   ],
+   [
+    "A",
+    "صح. بس أنا بعد جان سجلت قبل الكل. الغلط مني",
+    "ṣaḥḥ. bas ana baʿad chān sajjalt gabl il-kill. il-ghalaṭ minni",
+    "True. But I should have registered before everyone too. It's my fault."
+   ],
+   [
+    "B",
+    "وكلمت الدكتور؟",
+    "w kallamt id-daktōr?",
+    "And did you talk to the professor?"
+   ],
+   [
+    "A",
+    "هيه، يقول: لو ييتني قبل يومين، جان ساعدتك",
+    "hē, ygūl: lō yītni gabil yōmēn, chān sāʿadtak",
+    "Yes, he says: if you'd come to me two days ago, I'd have helped you."
+   ],
+   [
+    "B",
+    "يعني ما في أمل؟",
+    "yaʿni ma fī amal?",
+    "So there's no hope?"
+   ],
+   [
+    "A",
+    "في، بس لازم أكتب له إيميل وأشرح له",
+    "fī, bas lāzim aktib-lah īmēl w ashraḥ-lah",
+    "There is, but I have to write him an email and explain."
+   ],
+   [
+    "B",
+    "اكتبه الحين! لا تتريا لين باكر",
+    "iktibah il-ḥīn! la titrayya lēn bāchir",
+    "Write it now! Don't wait till tomorrow."
+   ]
+  ],
+  "items": [
+   [
+    "راحت علي",
+    "rāḥat ʿalay",
+    "I've missed out, I've missed my chance",
+    "فاتتني الفرصة",
+    ""
+   ],
+   [
+    "التسجيل سكر",
+    "it-tasjīl sakkar",
+    "registration has closed",
+    "أُغلق التسجيل",
+    "(recognise)"
+   ],
+   [
+    "ليش ما سجلت؟",
+    "lēsh ma sajjalt?",
+    "why didn't you register? (to a man)",
+    "لماذا لم تسجل؟",
+    "to a woman: lēsh ma sajjalti? (ليش ما سجلتي؟)"
+   ],
+   [
+    "جان طرشوا",
+    "chān ṭarrashaw",
+    "they should have sent",
+    "كان عليهم أن يرسلوا",
+    ""
+   ],
+   [
+    "جان سجلت",
+    "chān sajjalt",
+    "I should have registered; you should have registered (to a man)",
+    "كان علي أن أسجل",
+    "to a woman: chān sajjalti (جان سجلتي)"
+   ],
+   [
+    "لو ييتني",
+    "lō yītni",
+    "if you'd come to me (to a man)",
+    "لو جئتني",
+    "to a woman: lō yītīni (لو ييتيني); (recognise)"
+   ],
+   [
+    "جان ساعدتك",
+    "chān sāʿadtak",
+    "I'd have helped you (to a man)",
+    "لساعدتك",
+    "to a woman: chān sāʿadtich (جان ساعدتج); (recognise)"
+   ],
+   [
+    "ما في أمل؟",
+    "ma fī amal?",
+    "is there no hope? no chance at all?",
+    "ألا يوجد أمل؟",
+    ""
+   ],
+   [
+    "لا تتريا",
+    "la titrayya",
+    "don't wait (to a man)",
+    "لا تنتظر",
+    "to a woman: la titrayyīn (لا تتريين)"
+   ]
+  ],
+  "task": "This week: record a 60-second voice note to Sēf about one thing you'd do differently if you could go back a year. Say what happened, then use lō + a past verb with chān twice (lō dirēt, chān …) and chān + a past verb once for 'I should have' (chān sajjalt …). Listen back once and fix any 'you' ending.",
+  "receptive": [
+   1,
+   5,
+   6
+  ]
+ },
+ {
+  "id": "s4u006",
+  "stage": 4,
+  "title": "If I'd known about the delay",
+  "goal": "Meet Fahad at Dubai airport after his delayed flight, with Sēf parking the car, and catch his Kuwaiti lō dāri",
+  "tip": "lō kān (or lō kint) + an adjective or participle is 'if it had been / if I had been': lō kān il-jaww zēn 'if the weather had been good'. Fahad's Kuwaiti lō dāri 'if I'd known' means the same as lō dirēt. lō kān fī wagt 'if there'd been time'.",
+  "grammar": "counterfactual with lō kān + adjective or participle",
+  "dialogue": [
+   [
+    "B",
+    "هلا والله بفهد! الحمد لله على السلامة",
+    "hala wallāh b-Fahad! il-ḥamdu lillāh ʿala s-salāma",
+    "Hello, Fahad! Welcome, good to have you here safe."
+   ],
+   [
+    "A",
+    "الله يسلمك. شنو هالرحلة! تأخرت ثلاث ساعات",
+    "allāh ysallmak. shinu har-riḥla! taʼakhkharat thalāth sāʿāt",
+    "Thanks. What a flight! It was three hours late."
+   ],
+   [
+    "B",
+    "ثلاث ساعات؟ لو درينا، جان ما طلعنا من البيت بدري",
+    "thalāth sāʿāt? lō dirēna, chān ma ṭilaʿna min il-bēt badri",
+    "Three hours? If we'd known, we wouldn't have left the house early."
+   ],
+   [
+    "A",
+    "وأنا لو داري، جان قعدت أنام في البيت شوي بعد!",
+    "w ana lō dāri, chān gaʿadt anām fi l-bēt shwayy baʿad!",
+    "And if I'd known, I'd have stayed at home and slept a bit more!"
+   ],
+   [
+    "B",
+    "ولو كان في وقت، جان رحنا نتريق قبل",
+    "w lō kān fī wagt, chān riḥna nitrayyag gabil",
+    "And if there'd been time, we'd have gone for breakfast first."
+   ],
+   [
+    "A",
+    "عادي، الحين نروح. وين سيف؟",
+    "ʿādi, il-ḥīn nrūḥ. wēn Sēf?",
+    "It's fine, we'll go now. Where's Sēf?"
+   ],
+   [
+    "B",
+    "يصف السيارة. لو كان الجو زين، جان مشينا له",
+    "yṣiff is-sayyāra. lō kān il-jaww zēn, chān mishēna lah",
+    "He's parking the car. If the weather had been nice, we'd have walked over to him."
+   ],
+   [
+    "A",
+    "لا لا، المكيف أحسن! يلا، شلون جان وصلت من غيركم؟",
+    "la la, il-mkayyif aḥsan! yalla, shlōn chān wiṣalt min ghērkum?",
+    "No, no, the air conditioning's better! Come on, how would I have got there without you guys?"
+   ],
+   [
+    "B",
+    "جان خذت تاكسي، عادي! حياك الله في دبي",
+    "chān khadht tāksi, ʿādi! ḥayyāk allāh fi Dbayy",
+    "You'd have taken a taxi, no big deal! Welcome to Dubai."
+   ],
+   [
+    "A",
+    "الله يحييك. والله اشتقت لكم!",
+    "allāh yḥayyīk. wallāh ishtagt-lkum!",
+    "Thank you. I've really missed you guys!"
+   ]
+  ],
+  "items": [
+   [
+    "لو درينا",
+    "lō dirēna",
+    "if we'd known",
+    "لو علمنا",
+    ""
+   ],
+   [
+    "جان ما طلعنا",
+    "chān ma ṭilaʿna",
+    "we wouldn't have left, we wouldn't have gone out",
+    "لما خرجنا",
+    ""
+   ],
+   [
+    "لو داري",
+    "lō dāri",
+    "if I'd known (Kuwait) (said by a man)",
+    "لو كنت أعلم",
+    "a woman says: lō dārya (لو دارية); UAE: lō dirēt; (recognise)"
+   ],
+   [
+    "تأخرت ثلاث ساعات",
+    "taʼakhkharat thalāth sāʿāt",
+    "it (f.) was three hours late (a flight)",
+    "تأخرت ثلاث ساعات",
+    "(recognise)"
+   ],
+   [
+    "لو كان في وقت",
+    "lō kān fī wagt",
+    "if there'd been time, if there was time",
+    "لو كان هناك وقت",
+    ""
+   ],
+   [
+    "لو كان الجو زين",
+    "lō kān il-jaww zēn",
+    "if the weather had been nice, if the weather were nice",
+    "لو كان الجو جميلًا",
+    ""
+   ],
+   [
+    "يصف السيارة",
+    "yṣiff is-sayyāra",
+    "he's parking the car",
+    "يركن السيارة",
+    ""
+   ],
+   [
+    "اشتقت لكم",
+    "ishtagt-lkum",
+    "I've missed you (all)",
+    "اشتقت إليكم",
+    "to one man: ishtagt-lak; to one woman: ishtagt-lich"
+   ],
+   [
+    "جان رحنا",
+    "chān riḥna",
+    "we'd have gone",
+    "لذهبنا",
+    ""
+   ]
+  ],
+  "receptive": [
+   2,
+   3
+  ]
+ },
+ {
+  "id": "s4u007",
+  "stage": 4,
+  "title": "I'll have finished by tomorrow",
+  "goal": "At the office, Maryam asks when your part of the report will be done; promise what you'll have finished, and by when",
+  "tip": "bakūn + a past verb says what will be done by a certain time: bakūn khallaṣt bāchir 'I'll have finished by tomorrow'. The first verb shows the person and the future (bitkūn, biykūn); the past verb agrees too: biykūn shāfah 'he'll have seen it'. To a woman: bitkūnīn khallaṣti.",
+  "grammar": "future perfect: bakūn + past verb",
+  "dialogue": [
+   [
+    "A",
+    "سالم، المدير يبي التقرير يوم الخميس. متى بتكون خلصت حقك؟",
+    "Sālim, il-mudīr yabi t-taqrīr yōm il-khamīs. mita bitkūn khallaṣt ḥaggak?",
+    "Sālim, the manager wants the report on Thursday. When will you have finished your part?"
+   ],
+   [
+    "B",
+    "إن شاء الله بكون خلصت باكر الظهر",
+    "in shāʼ allāh bakūn khallaṣt bāchir iẓ-ẓuhur",
+    "God willing, I'll have finished by tomorrow at midday."
+   ],
+   [
+    "A",
+    "زين. وأنا بكون خلصت الأرقام الليلة",
+    "zēn. w ana bakūn khallaṣt il-argām il-lēla",
+    "Good. And I'll have finished the figures tonight."
+   ],
+   [
+    "B",
+    "يعني باكر العصر بيكون التقرير جاهز؟",
+    "yaʿni bāchir il-ʿaṣir biykūn it-taqrīr jāhiz?",
+    "So tomorrow afternoon the report will be ready?"
+   ],
+   [
+    "A",
+    "إن شاء الله. بس باكر العصر أنا عندي موعد، لازم أطلع بدري",
+    "in shāʼ allāh. bas bāchir il-ʿaṣir ana ʿindi mawʿid, lāzim aṭlaʿ badri",
+    "God willing. But tomorrow afternoon I've got an appointment, I have to leave early."
+   ],
+   [
+    "B",
+    "ما عليه، أنا بطرشه للمدير. بيكون شافه قبل الخميس",
+    "ma ʿalēh, ana baṭarrshah lil-mudīr. biykūn shāfah gabl il-khamīs",
+    "No problem, I'll send it to the manager. He'll have seen it before Thursday."
+   ],
+   [
+    "A",
+    "ممتاز. وإذا في شي ناقص؟",
+    "mumtāz. w idha fī shay nāgiṣ?",
+    "Great. And if something's missing?"
+   ],
+   [
+    "B",
+    "لا تحاتين، بكون راجعته مرتين",
+    "la tḥātīn, bakūn rājaʿtah marratēn",
+    "Don't worry, I'll have checked it twice."
+   ],
+   [
+    "A",
+    "يعطيك العافية",
+    "yaʿṭīk il-ʿāfya",
+    "Thanks for all your work."
+   ],
+   [
+    "B",
+    "الله يعافيج",
+    "allāh yʿāfīch",
+    "And you."
+   ]
+  ],
+  "items": [
+   [
+    "بكون خلصت",
+    "bakūn khallaṣt",
+    "I'll have finished",
+    "سأكون قد انتهيت",
+    ""
+   ],
+   [
+    "متى بتكون خلصت؟",
+    "mita bitkūn khallaṣt?",
+    "when will you have finished? (to a man)",
+    "متى ستكون قد انتهيت؟",
+    "to a woman: mita bitkūnīn khallaṣti? (متى بتكونين خلصتي؟)"
+   ],
+   [
+    "لازم أطلع بدري",
+    "lāzim aṭlaʿ badri",
+    "I have to leave early",
+    "يجب أن أخرج مبكرًا",
+    ""
+   ],
+   [
+    "باكر الظهر",
+    "bāchir iẓ-ẓuhur",
+    "tomorrow at midday",
+    "غدًا ظهرًا",
+    ""
+   ],
+   [
+    "بيكون جاهز",
+    "biykūn jāhiz",
+    "it (m.) will be ready",
+    "سيكون جاهزًا",
+    "a feminine thing: bitkūn jāhza (بتكون جاهزة)"
+   ],
+   [
+    "بيكون شافه",
+    "biykūn shāfah",
+    "he'll have seen it (m.)",
+    "سيكون قد رآه",
+    ""
+   ],
+   [
+    "شي ناقص",
+    "shay nāgiṣ",
+    "something missing",
+    "شيء ناقص",
+    "(recognise)"
+   ],
+   [
+    "بكون راجعته",
+    "bakūn rājaʿtah",
+    "I'll have checked it (m.), I'll have gone over it",
+    "سأكون قد راجعته",
+    ""
+   ],
+   [
+    "بطرشه للمدير",
+    "baṭarrshah lil-mudīr",
+    "I'll send it (m.) to the manager",
+    "سأرسله إلى المدير",
+    ""
+   ]
+  ],
+  "receptive": [
+   6
+  ]
+ },
+ {
+  "id": "s4u008",
+  "stage": 4,
+  "title": "He must have overslept",
+  "goal": "Waiting with Sēf for Fahad outside his hotel, guess what has happened to him",
+  "tip": "biykūn + a past verb is also a guess about now: biykūn nām 'he's probably fallen asleep'. akīd biykūn … is a strong guess: akīd biykūn ṭilaʿ 'he must have left'. Ask with tẓunn: tẓunn biykūn wiṣal? 'do you think he's got there?'",
+  "grammar": "biykūn + past verb for guesses: 'he'll have, he must have'",
+  "dialogue": [
+   [
+    "A",
+    "فهد ما يرد. الساعة عشر وما طلع",
+    "Fahad ma yrudd. is-sāʿa ʿashr w ma ṭilaʿ",
+    "Fahad's not answering. It's ten and he hasn't come out."
+   ],
+   [
+    "B",
+    "بيكون نام. أمس سهرنا لين ثنتين",
+    "biykūn nām. ams sihirna lēn thintēn",
+    "He's probably fallen asleep. We stayed up till two last night."
+   ],
+   [
+    "A",
+    "لا، طرش لي رسالة الساعة ثمان. أكيد بيكون طلع من الفندق",
+    "la, ṭarrash-li risāla s-sāʿa thamān. akīd biykūn ṭilaʿ min il-fundug",
+    "No, he sent me a message at eight. He must have left the hotel."
+   ],
+   [
+    "B",
+    "عيل وينه؟ بيكون ضاع؟",
+    "ʿayal wēnah? biykūn ẓāʿ?",
+    "Then where is he? Has he got lost?"
+   ],
+   [
+    "A",
+    "تظن؟ أول مرة يي دبي، بس عنده خرايط في تلفونه",
+    "tẓunn? awwal marra yiyi Dbayy, bas ʿindah kharāyiṭ fi tilifōnah",
+    "You think? It's his first time in Dubai, but he's got maps on his phone."
+   ],
+   [
+    "B",
+    "يمكن تلفونه طافي. بتكون البطارية خلصت",
+    "yimkin tilifōnah ṭāfi. bitkūn il-baṭṭāriyya khilṣat",
+    "Maybe his phone's off. The battery will have died."
+   ],
+   [
+    "A",
+    "تظن بيكون وصل المترو؟",
+    "tẓunn biykūn wiṣal il-mitrō?",
+    "Do you think he'll have got to the metro?"
+   ],
+   [
+    "B",
+    "شوف، هذاك هو! ياي من المحل وفي إيده كرك",
+    "shūf, hādhāk huwa! yāy min il-maḥall w fi īdah karak",
+    "Look, there he is! He's coming from the shop with a karak in his hand."
+   ],
+   [
+    "A",
+    "الحمد لله! ونحن نقول بيكون صار له شي!",
+    "il-ḥamdu lillāh! w niḥin ngūl biykūn ṣār-lah shay!",
+    "Thank God! And there we were thinking something must have happened to him!"
+   ]
+  ],
+  "items": [
+   [
+    "بيكون نام",
+    "biykūn nām",
+    "he's probably fallen asleep, he'll have gone to sleep",
+    "لعله نام",
+    ""
+   ],
+   [
+    "سهرنا",
+    "sihirna",
+    "we stayed up late",
+    "سهرنا",
+    ""
+   ],
+   [
+    "أكيد بيكون طلع",
+    "akīd biykūn ṭilaʿ",
+    "he must have left, he'll have gone out for sure",
+    "لا بد أنه خرج",
+    ""
+   ],
+   [
+    "بيكون ضاع؟",
+    "biykūn ẓāʿ?",
+    "has he got lost? he's probably got lost",
+    "هل ضاع يا ترى؟",
+    ""
+   ],
+   [
+    "عنده خرايط",
+    "ʿindah kharāyiṭ",
+    "he has maps",
+    "لديه خرائط",
+    "(recognise)"
+   ],
+   [
+    "تظن بيكون وصل؟",
+    "tẓunn biykūn wiṣal?",
+    "do you think he'll have got there? (to a man)",
+    "هل تظن أنه وصل؟",
+    "to a woman: tẓunnīn biykūn wiṣal? (تظنين بيكون وصل؟)"
+   ],
+   [
+    "هذاك هو",
+    "hādhāk huwa",
+    "there he is, that's him (over there)",
+    "ها هو ذاك",
+    ""
+   ],
+   [
+    "في إيده كرك",
+    "fi īdah karak",
+    "with a karak in his hand",
+    "في يده كرك",
+    ""
+   ],
+   [
+    "بيكون صار له شي",
+    "biykūn ṣār-lah shay",
+    "something must have happened to him",
+    "لا بد أنه حدث له شيء",
+    "(recognise)"
+   ]
+  ],
+  "receptive": [
+   4,
+   8
+  ]
+ },
+ {
+  "id": "s4u009",
+  "stage": 4,
+  "title": "It'll probably be packed",
+  "goal": "Plan a Saturday trip to Hatta with Sēf: guess what the roads, the weather and the place will be like",
+  "tip": "biykūn + an adjective or noun is 'it'll (probably) be': biykūn zaḥma 'it'll be crowded'. It agrees with what it describes: il-maṭāʿim bitkūn msakkara 'the restaurants will be closed'. With fī: biykūn fī nās wāyid 'there'll be lots of people'.",
+  "grammar": "biykūn + adjective or noun: 'will (probably) be'",
+  "dialogue": [
+   [
+    "A",
+    "شرايك نروح حتا يوم السبت؟",
+    "shrāyak nrūḥ Ḥatta yōm is-sabt?",
+    "How about going to Hatta on Saturday?"
+   ],
+   [
+    "B",
+    "فكرة حلوة! بس بيكون زحمة؟",
+    "fikra ḥilwa! bas biykūn zaḥma?",
+    "Good idea! But will it be crowded?"
+   ],
+   [
+    "A",
+    "الصبح لا. بس العصر بيكون في ناس وايد",
+    "iṣ-ṣubḥ la. bas il-ʿaṣir biykūn fī nās wāyid",
+    "Not in the morning. But in the afternoon there'll be lots of people."
+   ],
+   [
+    "B",
+    "عيل نطلع الساعة ست؟ الشارع بيكون فاضي",
+    "ʿayal niṭlaʿ is-sāʿa sitt? ish-shāriʿ biykūn fāẓi",
+    "So shall we leave at six? The road will be empty."
+   ],
+   [
+    "A",
+    "هيه، وبنكون هناك قبل ثمان",
+    "hē, w binkūn hnāk gabil thamān",
+    "Yes, and we'll be there before eight."
+   ],
+   [
+    "B",
+    "والجو؟ بيكون حار؟",
+    "w il-jaww? biykūn ḥārr?",
+    "And the weather? Will it be hot?"
+   ],
+   [
+    "A",
+    "لا، الحين الجو حلو. بس خذ جاكيت، الصبح بيكون بارد شوي",
+    "la, il-ḥīn il-jaww ḥilu. bas khudh jākēt, iṣ-ṣubḥ biykūn bārid shwayy",
+    "No, the weather's nice now. But take a jacket, it'll be a bit cold in the morning."
+   ],
+   [
+    "B",
+    "زين. والريوق؟ المطاعم بتكون مسكرة الساعة ست",
+    "zēn. w ir-riyūg? il-maṭāʿim bitkūn msakkara s-sāʿa sitt",
+    "OK. And breakfast? The restaurants will be closed at six."
+   ],
+   [
+    "A",
+    "لا تحاتي، أمي بتسوي لنا ريوق. أكيد بيكون وايد!",
+    "la tḥāti, ummi bitsawwī-lna riyūg. akīd biykūn wāyid!",
+    "Don't worry, my mum's going to make us breakfast. It's bound to be loads!"
+   ],
+   [
+    "B",
+    "الله يخليها! سلم لي عليها",
+    "allāh ykhallīha! sallim-li ʿalēha",
+    "Bless her! Say hello to her for me."
+   ]
+  ],
+  "items": [
+   [
+    "بيكون زحمة",
+    "biykūn zaḥma",
+    "it'll be crowded, it'll probably be busy",
+    "سيكون مزدحمًا",
+    ""
+   ],
+   [
+    "بيكون في ناس وايد",
+    "biykūn fī nās wāyid",
+    "there'll be lots of people",
+    "سيكون هناك ناس كثيرون",
+    "(recognise)"
+   ],
+   [
+    "الشارع بيكون فاضي",
+    "ish-shāriʿ biykūn fāẓi",
+    "the road will be empty",
+    "سيكون الشارع خاليًا",
+    ""
+   ],
+   [
+    "بيكون حار؟",
+    "biykūn ḥārr?",
+    "will it be hot?",
+    "هل سيكون حارًا؟",
+    ""
+   ],
+   [
+    "بيكون بارد شوي",
+    "biykūn bārid shwayy",
+    "it'll be a bit cold, it'll be chilly",
+    "سيكون باردًا قليلًا",
+    ""
+   ],
+   [
+    "أمي بتسوي لنا ريوق",
+    "ummi bitsawwī-lna riyūg",
+    "my mum's going to make us breakfast",
+    "أمي ستعد لنا الفطور",
+    "(recognise)"
+   ],
+   [
+    "الريوق",
+    "ir-riyūg",
+    "breakfast",
+    "الفطور",
+    ""
+   ],
+   [
+    "بتكون مسكرة",
+    "bitkūn msakkara",
+    "they'll be closed (shops, restaurants); it (f.)'ll be closed",
+    "ستكون مغلقة",
+    ""
+   ],
+   [
+    "أكيد بيكون وايد",
+    "akīd biykūn wāyid",
+    "it's bound to be loads, there'll surely be plenty",
+    "بالتأكيد سيكون كثيرًا",
+    "(recognise)"
+   ]
+  ],
+  "receptive": [
+   1,
+   5,
+   8
+  ]
+ },
+ {
+  "id": "s4u010",
+  "stage": 4,
+  "title": "By the time I'm back",
+  "goal": "Before the manager travels, he asks the team what will be done by the time he's back; answer for yourself and the team",
+  "tip": "To a group: bitkūnūn khallaṣtu? 'will you have finished?'. Answer for the team with binkūn khallaṣna 'we'll have finished'. lēn + a present verb gives 'by the time': lēn tirjaʿ 'by the time you're back'. To a manager, keep ṭāl ʿumrak.",
+  "grammar": "future perfect with every person; lēn 'by the time'",
+  "dialogue": [
+   [
+    "A",
+    "يا جماعة، أنا مسافر الأسبوع الياي. لين أرجع، بتكونون خلصتوا العرض؟",
+    "yā jamāʿa, ana msāfir il-usbūʿ il-yāy. lēn arjaʿ, bitkūnūn khallaṣtu l-ʿarẓ?",
+    "Guys, I'm travelling next week. By the time I'm back, will you have finished the presentation?"
+   ],
+   [
+    "B",
+    "إن شاء الله طال عمرك. بنكون خلصنا يوم الخميس",
+    "in shāʼ allāh ṭāl ʿumrak. binkūn khallaṣna yōm il-khamīs",
+    "God willing, sir. We'll have finished by Thursday."
+   ],
+   [
+    "A",
+    "زين. والأرقام اليديدة؟",
+    "zēn. w il-argām il-yidīda?",
+    "Good. And the new figures?"
+   ],
+   [
+    "B",
+    "مريم بتكون خلصتها قبل، وبتطرش لك إيميل",
+    "Maryam bitkūn khallaṣat-ha gabil, w bitṭarrish-lak īmēl",
+    "Maryam will have finished them before then, and she'll send you an email."
+   ],
+   [
+    "A",
+    "وانت؟ شو بتكون سويت لين أرجع؟",
+    "w inta? shu bitkūn sawwēt lēn arjaʿ?",
+    "And you? What will you have done by the time I'm back?"
+   ],
+   [
+    "B",
+    "بكون كتبت التقرير، وبكون رتبت الاجتماع",
+    "bakūn kitabt it-taqrīr, w bakūn rattabt il-ijtimāʿ",
+    "I'll have written the report, and I'll have set up the meeting."
+   ],
+   [
+    "A",
+    "ممتاز. والعميل بيكون شاف العرض قبل الاجتماع؟",
+    "mumtāz. w il-ʿamīl biykūn shāf il-ʿarẓ gabl il-ijtimāʿ?",
+    "Great. And will the client have seen the presentation before the meeting?"
+   ],
+   [
+    "B",
+    "هيه، بنكون طرشنا له العرض يوم الأحد",
+    "hē, binkūn ṭarrashnā-lah il-ʿarẓ yōm il-aḥad",
+    "Yes, we'll have sent him the presentation by Sunday."
+   ],
+   [
+    "A",
+    "يعطيكم العافية. إذا صار أي شي، طرشوا لي",
+    "yaʿṭīkum il-ʿāfya. idha ṣār ay shay, ṭarrshū-li",
+    "Thanks for all your work, all of you. If anything happens, message me."
+   ],
+   [
+    "B",
+    "الله يعافيك. توصل بالسلامة طال عمرك",
+    "allāh yʿāfīk. tōṣal bis-salāma ṭāl ʿumrak",
+    "Thank you. Have a safe trip, sir."
+   ]
+  ],
+  "items": [
+   [
+    "لين أرجع",
+    "lēn arjaʿ",
+    "by the time I'm back, until I get back",
+    "حتى أعود",
+    ""
+   ],
+   [
+    "بتكونون خلصتوا؟",
+    "bitkūnūn khallaṣtu?",
+    "will you have finished? (to a group)",
+    "هل ستكونون قد انتهيتم؟",
+    "to one man: bitkūn khallaṣt?; to one woman: bitkūnīn khallaṣti?"
+   ],
+   [
+    "بنكون خلصنا",
+    "binkūn khallaṣna",
+    "we'll have finished",
+    "سنكون قد انتهينا",
+    ""
+   ],
+   [
+    "بتكون خلصتها",
+    "bitkūn khallaṣat-ha",
+    "she'll have finished it (f.), she'll have finished them (things)",
+    "ستكون قد أنهتها",
+    ""
+   ],
+   [
+    "شو بتكون سويت؟",
+    "shu bitkūn sawwēt?",
+    "what will you have done? (to a man)",
+    "ماذا ستكون قد فعلت؟",
+    "to a woman: shu bitkūnīn sawwēti? (شو بتكونين سويتي؟)"
+   ],
+   [
+    "بكون كتبت",
+    "bakūn kitabt",
+    "I'll have written",
+    "سأكون قد كتبت",
+    ""
+   ],
+   [
+    "رتبت الاجتماع",
+    "rattabt il-ijtimāʿ",
+    "I set up the meeting; you set up the meeting (to a man)",
+    "رتبت الاجتماع",
+    "to a woman: rattabti l-ijtimāʿ"
+   ],
+   [
+    "العميل",
+    "il-ʿamīl",
+    "the client",
+    "العميل",
+    "(recognise)"
+   ],
+   [
+    "طرشوا لي",
+    "ṭarrshū-li",
+    "message me, send me (it) (to a group)",
+    "أرسلوا لي",
+    "to one man: ṭarrish-li; to one woman: ṭarrshī-li"
+   ]
+  ],
+  "task": "This week: search YouTube for «بودكاست إماراتي» (Emirati podcast) or «سوالف» (chats). Listen until you hear جان or بيكون three times, and write down the sentence around each. Within a minute you should hear شو / مب (UAE) or شنو / مو (Kuwait). If you hear سوف, ليس or هل all the time, it's fuṣḥā: pick another clip.",
+  "receptive": [
+   7
+  ]
+ }
+]
