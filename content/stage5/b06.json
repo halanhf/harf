@@ -21,9 +21,9 @@
    ],
    [
     "A",
-    "وهذا البوش كله حقنا. نيي هني كل أسبوع في الشتا، ونرتاح من الزحمة",
-    "w hādha l-bōsh killah ḥaggna. nyī hni kill usbūʿ fi sh-shita, w nirtāḥ min iz-zaḥma",
-    "And all these camels are ours. We come here every week in winter and get away from the crowds."
+    "وهذا البوش كله حقنا. نيي هني كل أسبوع في الشتا، وراشد يعطيهم العلف",
+    "w hādha l-bōsh killah ḥaggna. nyī hni kill usbūʿ fi sh-shita, w Rāshid yʿaṭīhum il-ʿalaf",
+    "And all these camels are ours. We come here every week in winter, and Rāshid gives them their feed."
    ],
    [
     "B",
@@ -77,13 +77,6 @@
     "our ʿizba: ʿizbatna (عزبتنا)"
    ],
    [
-    "ورثتها من أبوي",
-    "wiritht-ha min ubūy",
-    "I inherited it (f.) from my father",
-    "ورثتها من أبي",
-    "he inherited it: wirith-ha (ورثها)"
-   ],
-   [
     "في الشتا",
     "fi sh-shita",
     "in (the) winter",
@@ -110,11 +103,19 @@
     "camel's milk (lit. the she-camel's milk)",
     "حليب الناقة",
     ""
+   ],
+   [
+    "العلف",
+    "il-ʿalaf",
+    "the (animal) feed, fodder",
+    "العلف",
+    "(recognise)"
    ]
   ],
   "receptive": [
+   2,
    3,
-   4
+   5
   ],
   "culture": "An ʿizba is a family farm out in the desert: camels, often goats and chickens, sometimes falcons, with a majlis and a kitchen, used as a desert holiday home. Families invite relatives and close friends there, so an invitation to the family ʿizba is a sign of trust."
  },
@@ -419,9 +420,9 @@
    ],
    [
     "A",
-    "مرات. والبدو أيام أول كانوا ينظمون الشعر عن كل شي في حياتهم",
-    "marrāt. w il-badu ayyām awwal kānaw yinẓimūn ish-shiʿir ʿan kill shay fi ḥayāt-hum",
-    "Sometimes. And in the old days the Bedouin composed poetry about everything in their lives."
+    "مرات. والبدو أيام أول كانوا ينظمون الشعر عن كل شي في حياتهم، حتى الألغاز",
+    "marrāt. w il-badu ayyām awwal kānaw yinẓimūn ish-shiʿir ʿan kill shay fi ḥayāt-hum, ḥatta l-alghāz",
+    "Sometimes. And in the old days the Bedouin composed poetry about everything in their lives, even riddles."
    ],
    [
     "B",
@@ -458,13 +459,6 @@
     "everyday: il-barr"
    ],
    [
-    "ينظمون الشعر",
-    "yinẓimūn ish-shiʿir",
-    "they compose poetry",
-    "ينظمون الشعر",
-    "he composes: yinẓim (ينظم)"
-   ],
-   [
     "شعر نبطي",
     "shiʿir nabaṭi",
     "nabaṭi poetry (Bedouin poetry in the dialect)",
@@ -484,9 +478,17 @@
     "chivalry, horsemanship (a theme of old poems)",
     "الفروسية",
     "(recognise)"
+   ],
+   [
+    "الألغاز",
+    "il-alghāz",
+    "riddles",
+    "الألغاز",
+    "(recognise); one riddle: lughuz (لغز)"
    ]
   ],
   "receptive": [
+   2,
    3,
    4,
    5
@@ -750,14 +752,14 @@
    ],
    [
     "B",
-    "عندي فلوس من التدريب في البنك، صار لها سنة. لازم أطلع زكاتها؟",
-    "ʿindi flūs min it-tadrīb fi l-bank, ṣār-lha sana. lāzim aṭallaʿ zakāt-ha?",
-    "I've got money from my internship in the bank, and it's been there a year. Do I have to pay zakat on it?"
+    "رصيدي في البنك من التدريب صار له سنة. لازم أدفع زكاته؟",
+    "riṣīdi fi l-bank min it-tadrīb ṣār-lah sana. lāzim adfaʿ zakātah?",
+    "My bank balance from the internship has been there a year. Do I have to pay zakat on it?"
    ],
    [
     "A",
-    "إذا وصلت النصاب، وكملت عندك سنة هجرية، هيه لازم",
-    "idha wiṣlat in-niṣāb, w kimlat ʿindak sana hijriyya, hē lāzim",
+    "إذا وصل النصاب، وكمل عندك سنة هجرية، هيه لازم",
+    "idha wiṣal in-niṣāb, w kimal ʿindak sana hijriyya, hē lāzim",
     "If it's reached the niṣāb, the minimum, and you've had it a full Hijri year, then yes, you do."
    ],
    [
@@ -768,9 +770,9 @@
    ],
    [
     "A",
-    "على حسب سعر الذهب، يعني يتغير. وتطلع ربع العشر من المال كله",
-    "ʿala ḥasab siʿir idh-dhahab, yaʿni yitghayyar. w tṭallaʿ rubʿ il-ʿushur min il-māl killah",
-    "It goes by the price of gold, so it changes. And you pay a quarter of a tenth of all the money."
+    "على حسب سعر الذهب، يعني يتغير. وتدفع ربع العشر من المال كله",
+    "ʿala ḥasab siʿir idh-dhahab, yaʿni yitghayyar. w tidfaʿ rubʿ il-ʿushur min il-māl killah",
+    "It goes by the price of gold, so it changes. And you pay a quarter of a tenth of all of it."
    ],
    [
     "B",
@@ -820,10 +822,10 @@
     "everyday: il-flūs"
    ],
    [
-    "لازم أطلع زكاتها؟",
-    "lāzim aṭallaʿ zakāt-ha?",
-    "do I have to pay zakat on it (f.)? (lit. take out its zakat)",
-    "هل يجب أن أخرج زكاتها؟",
+    "رصيدي في البنك",
+    "riṣīdi fi l-bank",
+    "my bank balance, my savings in the bank",
+    "رصيدي في البنك",
     ""
    ],
    [
@@ -1098,8 +1100,8 @@
   "dialogue": [
    [
     "A",
-    "سالم، طلعت زكاة الفطر ولّا بعدك؟",
-    "Sālim, ṭallaʿt zakāt il-fiṭr walla baʿdak?",
+    "سالم، دفعت زكاة الفطر ولّا بعدك؟",
+    "Sālim, difaʿt zakāt il-fiṭr walla baʿdak?",
     "Sālim, have you paid zakāt il-fiṭr, or not yet?"
    ],
    [
@@ -1116,8 +1118,8 @@
    ],
    [
     "B",
-    "أنا ساكن ويا ربيعي، يعني بطلعها عن نفسي بس",
-    "ana sākin wiyya rbīʿi, yaʿni baṭallaʿha ʿan nafsi bas",
+    "أنا ساكن ويا ربيعي، يعني بدفعها عن نفسي بس",
+    "ana sākin wiyya rbīʿi, yaʿni badfaʿha ʿan nafsi bas",
     "I live with a friend, so I'll just pay it for myself."
    ],
    [
@@ -1152,8 +1154,8 @@
    ],
    [
     "B",
-    "زين إنج ذكرتيني! باكر الصبح بطلعها إن شاء الله",
-    "zēn innich dhakkartīni! bāchir iṣ-ṣubḥ baṭallaʿha in shāʼ allāh",
+    "زين إنج ذكرتيني! باكر الصبح بدفعها إن شاء الله",
+    "zēn innich dhakkartīni! bāchir iṣ-ṣubḥ badfaʿha in shāʼ allāh",
     "Good thing you reminded me! I'll pay it tomorrow morning, God willing."
    ]
   ],
@@ -1236,14 +1238,14 @@
    ],
    [
     "B",
-    "لا، بس سمعت الخبر بالليل. وطلعت زكاة الفطر قبل الصلاة",
-    "la, bas simaʿt il-khabar bil-lēl. w ṭallaʿt zakāt il-fiṭr gabil iṣ-ṣalā",
+    "لا، بس سمعت الخبر بالليل. ودفعت زكاة الفطر قبل الصلاة",
+    "la, bas simaʿt il-khabar bil-lēl. w difaʿt zakāt il-fiṭr gabil iṣ-ṣalā",
     "No, but I heard the news at night. And I paid zakāt il-fiṭr before the prayer."
    ],
    [
     "A",
-    "ما شاء الله عليك! وعمي يقول طلعت زكاتك بعد",
-    "mā shāʼ allāh ʿalēk! w ʿammi ygūl ṭallaʿt zakātak baʿad",
+    "ما شاء الله عليك! وعمي يقول دفعت زكاتك بعد",
+    "mā shāʼ allāh ʿalēk! w ʿammi ygūl difaʿt zakātak baʿad",
     "Well done! And my uncle says you paid your zakat too."
    ],
    [
@@ -1266,9 +1268,9 @@
    ],
    [
     "A",
-    "خلاص، وأنا أشرب حليب الناقة. وراشد بيقول لنا شعر نبطي!",
-    "khalāṣ, w ana ashrab ḥalīb in-nāga. w Rāshid biygūl-lana shiʿir nabaṭi!",
-    "Done, and I'll drink the camel milk. And Rāshid's going to recite nabaṭi poetry for us!"
+    "خلاص، وأنا أشرب حليب الناقة. وعمي بيطلع الشاهين اليديد، وراشد بيقول لنا شعر نبطي!",
+    "khalāṣ, w ana ashrab ḥalīb in-nāga. w ʿammi biyṭalliʿ ish-shāhīn il-yidīd, w Rāshid biygūl-lana shiʿir nabaṭi!",
+    "Done, and I'll drink the camel milk. And my uncle's bringing out his new peregrine, and Rāshid's going to recite nabaṭi poetry for us!"
    ],
    [
     "B",
@@ -1307,15 +1309,16 @@
     ""
    ],
    [
-    "شرح لي",
-    "sharaḥ-li",
-    "he explained (it) to me",
-    "شرح لي",
-    "you explained to me: sharaḥt-li (شرحت لي)"
+    "الشاهين",
+    "ish-shāhīn",
+    "the peregrine (a kind of falcon)",
+    "الشاهين",
+    "(recognise); the falcon most used for hunting: il-ḥurr (الحر)"
    ]
   ],
   "receptive": [
-   1
+   1,
+   4
   ]
  }
 ]

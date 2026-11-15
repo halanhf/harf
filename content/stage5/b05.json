@@ -21,9 +21,9 @@
    ],
    [
     "A",
-    "يمكن من الشاحن. جربت شاحن ثاني؟",
-    "yimkin min ish-shāḥin. jarrabt shāḥin thāni?",
-    "Maybe it's the charger. Have you tried another charger?"
+    "يمكن من الشاحن. جربت شاحن ثاني، ولّا يبي فحص؟",
+    "yimkin min ish-shāḥin. jarrabt shāḥin thāni, walla yabi faḥiṣ?",
+    "Maybe it's the charger. Have you tried another charger, or does it need checking?"
    ],
    [
     "B",
@@ -39,9 +39,9 @@
    ],
    [
     "B",
-    "ثلاث أسابيع؟ مب معقول! أحس إني انغشيت",
-    "thalāth asābīʿ? mub maʿgūl! aḥiss inni ingashsht",
-    "Three weeks? No way! I feel I've been ripped off."
+    "ثلاث أسابيع؟ مب معقول! أنا طفشان، أحس إني انغشيت",
+    "thalāth asābīʿ? mub maʿgūl! ana ṭafshān, aḥiss inni ingashsht",
+    "Three weeks? No way! I'm sick of it; I feel I've been ripped off."
    ],
    [
     "A",
@@ -145,9 +145,9 @@
    ],
    [
     "B",
-    "تعوذ من الشيطان. عشان كورة ترفع صوتك؟",
-    "taʿawwadh min ish-shēṭān. ʿashān kūra tirfaʿ ṣōtak?",
-    "Seek refuge from Satan. You're raising your voice over football?"
+    "تعوذ من الشيطان. أدري إنك منرفز، بس عشان كورة ترفع صوتك؟",
+    "taʿawwadh min ish-shēṭān. adri innak mnarfaz, bas ʿashān kūra tirfaʿ ṣōtak?",
+    "Seek refuge from Satan. I know you're fed up, but you're raising your voice over football?"
    ],
    [
     "A",
@@ -273,9 +273,9 @@
    ],
    [
     "A",
-    "لاحظت، الأرقام كانت قديمة. وأنا عرضتها على الإدارة! منو المسؤول؟",
-    "lāḥaẓt, il-argām kānat gadīma. w ana ʿaraẓt-ha ʿala l-idāra! minu l-masʼūl?",
-    "I noticed: the figures were old. And I'd shown them to the management! Who's responsible?"
+    "لاحظت، الأرقام كانت قديمة، وأنا عرضتها على الإدارة! قهرتني. منو المسؤول؟",
+    "lāḥaẓt, il-argām kānat gadīma, w ana ʿaraẓt-ha ʿala l-idāra! gahartni. minu l-masʼūl?",
+    "I noticed: the figures were old, and I'd shown them to the management! You've really annoyed me. Who's responsible?"
    ],
    [
     "B",
@@ -285,9 +285,9 @@
    ],
    [
     "A",
-    "زين إنك اتصلت. الغلط يصير، بس الإهمال لا",
-    "zēn innak ittaṣalt. il-ghalaṭ yṣīr, bas il-ihmāl la",
-    "Good that you called. Mistakes happen, but carelessness doesn't (have to)."
+    "زين إنك اتصلت. أدري إنه مب متعمد. الغلط يصير، بس الإهمال لا",
+    "zēn innak ittaṣalt. adri innah mub mitʿammid. il-ghalaṭ yṣīr, bas il-ihmāl la",
+    "Good that you called. I know it wasn't deliberate. Mistakes happen, but carelessness doesn't (have to)."
    ],
    [
     "B",
@@ -297,9 +297,9 @@
    ],
    [
     "A",
-    "زين. بس ما أبي هالشي يصير مرة ثانية",
-    "zēn. bas ma abi hash-shay yṣīr marra thānya",
-    "Fine. But I don't want this to happen again."
+    "ما يخالف. بس ما أبي هالشي يصير مرة ثانية",
+    "ma ykhālif. bas ma abi hash-shay yṣīr marra thānya",
+    "All right. But I don't want this to happen again."
    ],
    [
     "B",
@@ -391,9 +391,9 @@
    ],
    [
     "B",
-    "عشان مقطع؟ يمكن حمد ما كان متعمد",
-    "ʿashān magṭaʿ? yimkin Ḥamad ma kān mitʿammid",
-    "Over a clip? Maybe Ḥamad didn't mean it."
+    "عشان مقطع؟ مزحة سخيفة، بس يمكن حمد ما كان متعمد",
+    "ʿashān magṭaʿ? mazḥa sakhīfa, bas yimkin Ḥamad ma kān mitʿammid",
+    "Over a clip? A silly joke, but maybe Ḥamad didn't mean it."
    ],
    [
     "A",
@@ -720,9 +720,9 @@
   "dialogue": [
    [
     "A",
-    "يدي، الله يرحمه، كان غواص. من يوم ما كان صغير وهو في البحر",
-    "yaddi, allāh yirḥamah, kān ghawwāṣ. min yōm ma kān ṣghīr w huwa fi l-baḥar",
-    "My grandfather, God rest him, was a pearl diver. Ever since he was little he was at sea."
+    "يدي، الله يرحمه، كان غواص، وكان ولد حلال. من وهو صغير في البحر",
+    "yaddi, allāh yirḥamah, kān ghawwāṣ, w kān wild ḥalāl. min w huwa ṣghīr fi l-baḥar",
+    "My grandfather, God rest him, was a pearl diver, and a decent man. He was at sea from when he was little."
    ],
    [
     "B",
@@ -768,15 +768,15 @@
    ],
    [
     "A",
-    "يدي يقول دقيقتين، وأحيانا أكثر. اسمعني، كانت حياة صعبة",
-    "yaddi ygūl digīgtēn, w aḥyānan akthar. ismaʿni, kānat ḥayā ṣaʿba",
-    "My grandfather used to say two minutes, sometimes more. Listen to me: it was a hard life."
+    "يدي يقول دقيقتين، وأحيانا أكثر. كانت حياة صعبة، بس كان رزين ما يشتكي",
+    "yaddi ygūl digīgtēn, w aḥyānan akthar. kānat ḥayā ṣaʿba, bas kān rizīn ma yishtiki",
+    "My grandfather used to say two minutes, sometimes more. It was a hard life, but he was steady and never complained."
    ],
    [
     "B",
-    "سبحان الله. وأنا أتعب من نص ساعة في المسبح!",
-    "subḥān allāh. w ana atʿab min nuṣṣ sāʿa fi l-masbaḥ!",
-    "Glory be to God. And I get tired after half an hour in the pool!"
+    "سبحان الله، يدك قدوة. وأنا أتعب من نص ساعة في المسبح!",
+    "subḥān allāh, yaddak gidwa. w ana atʿab min nuṣṣ sāʿa fi l-masbaḥ!",
+    "Glory be to God; your grandfather's an example. And I get tired after half an hour in the pool!"
    ]
   ],
   "items": [
@@ -843,8 +843,8 @@
   "stage": 5,
   "title": "Not every oyster has a pearl",
   "goal": "At a heritage stall in Shindagha, an old man whose father was a diver shows you and Mājid a diver's tools; ask what each one was for",
-  "tip": "Asking about an object: min shu msawwa? 'what's it made of?', shu fāyidtah? 'what's it for?', and w yilgūn il-maḥār wēn? with the question word at the end. Heritage words (fiṭām, ḥaṣāt il-ghōṣ, hērāt) are for recognising.",
-  "grammar": "heritage I: asking about old objects (min shu msawwa?, … wēn?)",
+  "tip": "Asking about an object: min shu msawwa? 'what's it made of?', shu fāyidtah? 'what's it for?', and shu ydawwrūn biẓ-ẓabṭ? to get the details. Heritage words (fiṭām, ḥaṣāt il-ghōṣ, hērāt) are for recognising.",
+  "grammar": "heritage I: asking about old objects (min shu msawwa?, shu ydawwrūn?)",
   "dialogue": [
    [
     "A",
@@ -860,27 +860,27 @@
    ],
    [
     "A",
-    "من العظم. وهذي حصاة الغوص، يربطها في ريله، وينزل وهو يكتم نفسه",
-    "min il-ʿaẓum. w hādhi ḥaṣāt il-ghōṣ, yarbuṭha fi rīlah, w yinzil w huwa yiktim nafasah",
-    "Bone. And this is the diving stone; he tied it to his foot and went down holding his breath."
+    "من العظم. وهذي حصاة الغوص، يربطها في ريله، وينزل وهو يكتم نفسه، والسيب ماسك الحبل",
+    "min il-ʿaẓum. w hādhi ḥaṣāt il-ghōṣ, yarbuṭha fi rīlah, w yinzil w huwa yiktim nafasah, w is-sēb māsik il-ḥabil",
+    "Bone. And this is the diving stone; he tied it to his foot and went down holding his breath, while the sēb held the rope."
    ],
    [
     "B",
-    "وتحت، يلقون المحار وين؟",
-    "w taḥt, yilgūn il-maḥār wēn?",
-    "And down there, where did they find the oysters?"
+    "وتحت البحر، شو يدورون بالضبط؟",
+    "w taḥt il-baḥar, shu ydawwrūn biẓ-ẓabṭ?",
+    "And under the sea, what exactly were they looking for?"
    ],
    [
     "A",
-    "في الهيرات، أماكن في البحر النوخذة يعرفها زين",
-    "fi l-hērāt, amākin fi l-baḥar in-nōkhidha yaʿarfha zēn",
-    "In the hērāt, places in the sea the nōkhidha knew well."
+    "المحار. يلقونه في الهيرات، أماكن في البحر النوخذة يعرفها زين",
+    "il-maḥār. yilgūnah fi l-hērāt, amākin fi l-baḥar in-nōkhidha yaʿarfha zēn",
+    "Oysters. They found them in the hērāt, places in the sea the nōkhidha knew well."
    ],
    [
     "B",
-    "وكل محارة فيها لولو؟",
-    "w kill maḥāra fīha lūlu?",
-    "And does every oyster have a pearl in it?"
+    "وكلها فيها لولو؟",
+    "w killha fīha lūlu?",
+    "And do they all have pearls in them?"
    ],
    [
     "A",
@@ -998,9 +998,9 @@
    ],
    [
     "B",
-    "ما شاء الله، كبيرة! وكانوا يسوونها بالإيد؟",
-    "mā shāʼ allāh, kbīra! w kānaw ysawwūnha bil-īd?",
-    "Goodness, they're big! And did they build them by hand?"
+    "ما شاء الله، كبيرة! وكانوا يسوونها بالإيد؟ هذا شي نادر",
+    "mā shāʼ allāh, kbīra! w kānaw ysawwūnha bil-īd? hādha shay nādir",
+    "Goodness, they're big! And they built them by hand? That's rare."
    ],
    [
     "A",

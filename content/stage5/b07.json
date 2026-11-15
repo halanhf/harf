@@ -9,7 +9,7 @@
   "dialogue": [
    [
     "A",
-    "يلا، خلنا نسوي خطة العرض. موضوعنا: تحتاج العربي في دبي، ولا يكفيك الإنقليزي؟",
+    "يلا، خلنا نسوي خطة العرض. موضوعنا: تحتاج العربي في دبي، ولّا يكفيك الإنقليزي؟",
     "yalla, khallna nsawwi khiṭṭat il-ʿarẓ. mawẓūʿna: tiḥtāj il-ʿarabi fi Dbayy, walla ykaffīk il-inglīzi?",
     "Right, let's make a plan for the talk. Our topic: do you need Arabic in Dubai, or is English enough?"
    ],
@@ -467,8 +467,8 @@
   "stage": 5,
   "title": "Don't back out now! Debating with Fahad",
   "goal": "On a video call from Kuwait, Fahad hears you won the seminar debate and challenges you: Kuwaiti or Emirati? Hold your ground with a friend",
-  "tip": "With a friend the same moves get playful. Tease back instead of proving: la titfalsaf ʿalay 'don't lecture me', la tishmit 'don't gloat', mub maghrūr 'I'm not big-headed'. When he asks tabi tinsiḥib? 'want to back out?', refuse and offer a draw.",
-  "grammar": "debating with a friend (la titfalsaf, tinsiḥib, maghrūr, la tishmit)",
+  "tip": "With a friend the same moves get playful. Tease back instead of proving: la titfalsaf ʿalay 'don't lecture me', la tishmit 'don't gloat'. When he asks tabi tinsiḥib? 'want to back out?', refuse and offer a draw.",
+  "grammar": "debating with a friend (la titfalsaf, la tishmit, tinsiḥib)",
   "dialogue": [
    [
     "A",
@@ -547,13 +547,6 @@
     "to a woman: la titfalsafīn (لا تتفلسفين)"
    ],
    [
-    "مغرور",
-    "maghrūr",
-    "big-headed, full of himself (a man)",
-    "مغرور",
-    "a woman: maghrūra (مغرورة)"
-   ],
-   [
     "لا تشمت",
     "la tishmit",
     "don't gloat (to a man)",
@@ -583,8 +576,8 @@
    ]
   ],
   "receptive": [
-   5,
-   6
+   4,
+   5
   ]
  },
  {
@@ -597,9 +590,9 @@
   "dialogue": [
    [
     "A",
-    "يلا، ابدا العرض. تخيل إن القاعة مليانة والجمهور يطالعك",
-    "yalla, ibda l-ʿarẓ. tkhayyal inn il-gāʿa malyāna w il-jumhūr yṭālʿak",
-    "Go on, start the talk. Imagine the hall's full and the audience is watching you."
+    "يلا، ابدا العرض. تخيل إنك على المسرح والجمهور يطالعك",
+    "yalla, ibda l-ʿarẓ. tkhayyal innak ʿala l-masraḥ w il-jumhūr yṭālʿak",
+    "Go on, start the talk. Imagine you're on the stage and the audience is watching you."
    ],
    [
     "B",
@@ -627,7 +620,7 @@
    ],
    [
     "B",
-    "زين. وأطالع الورقة ولا الجمهور؟",
+    "زين. وأطالع الورقة ولّا الجمهور؟",
     "zēn. w aṭāliʿ il-waraga walla l-jumhūr?",
     "OK. And do I look at my notes or at the audience?"
    ],
@@ -690,6 +683,13 @@
     "il-jumhūr",
     "the audience",
     "الجمهور",
+    ""
+   ],
+   [
+    "على المسرح",
+    "ʿala l-masraḥ",
+    "on the stage, on stage",
+    "على المسرح",
     ""
    ]
   ]
@@ -820,7 +820,7 @@
   "stage": 5,
   "title": "C1 exit: Do you need Arabic in Dubai?",
   "goal": "C1 exit: at the university seminar, give your five-minute talk on Arabic in Dubai, and answer your classmate Khalfān, who argues the other side",
-  "tip": "Review, now in one talk: announce your points, build on the other side (mithil ma gāl Khalfān…), pick up a word (ʿala ṭāri…), answer an objection (khallni arudd), and close with the upshot. New: il-ʿarabi yaʾaththir ʿala…, il-ʿarabi jisr.",
+  "tip": "Review, now in one talk: announce your points, build on the other side (mithil ma gāl Khalfān…), pick up a word (ʿala ṭāri…), answer an objection (khallni arudd), and close with the upshot. New: yaʼaththir ʿala…, jisr, tsidd il-fajwa.",
   "grammar": "C1 exit: extended presentation (building on a point, debating, summarising)",
   "dialogue": [
    [
@@ -844,7 +844,7 @@
    [
     "B",
     "مثل ما قال خلفان، الشغل بالإنقليزي. بس العربي يأثر على الثقة",
-    "mithil ma gāl Khalfān, ish-shughul bil-inglīzi. bas il-ʿarabi yaʾaththir ʿala th-thiga",
+    "mithil ma gāl Khalfān, ish-shughul bil-inglīzi. bas il-ʿarabi yaʼaththir ʿala th-thiga",
     "As Khalfān said, work's in English. But Arabic affects trust."
    ],
    [
@@ -861,15 +861,15 @@
    ],
    [
     "A",
-    "بس انت حالة خاصة! والفجوة بين اللغتين كبيرة",
-    "bas inta ḥāla khāṣṣa! w il-fajwa bēn il-lughtēn kbīra",
-    "But you're a special case! And the gap between the two languages is big."
+    "بس انت حالة خاصة! ومع العولمة، الفجوة بين اللغتين كل يوم تكبر",
+    "bas inta ḥāla khāṣṣa! w maʿa l-ʿawlama, il-fajwa bēn il-lughtēn kill yōm tikbar",
+    "But you're a special case! And with globalisation, the gap between the two languages grows every day."
    ],
    [
     "B",
-    "خلني أرد. مب لازم تتعلم كل شي، كلمتين باللهجة تفرق وايد",
-    "khallni arudd. mub lāzim titʿallam kill shay; kilmitēn bil-lahja tfarrig wāyid",
-    "Let me answer that. You don't have to learn everything; a couple of words of dialect make a big difference."
+    "خلني أرد. مب لازم تتعلم كل شي، كلمتين باللهجة تسد الفجوة",
+    "khallni arudd. mub lāzim titʿallam kill shay; kilmitēn bil-lahja tsidd il-fajwa",
+    "Let me answer that. You don't have to learn everything; a couple of words of dialect close the gap."
    ],
    [
     "A",
@@ -887,10 +887,10 @@
   "items": [
    [
     "يأثر على",
-    "yaʾaththir ʿala",
+    "yaʼaththir ʿala",
     "(it) affects, (it) has an effect on",
     "يؤثر على",
-    "a feminine thing: taʾaththir ʿala (تأثر على)"
+    "a feminine thing: taʼaththir ʿala (تأثر على)"
    ],
    [
     "جسر",
@@ -907,38 +907,38 @@
     "(recognise); plural: maḥāwir (محاور)"
    ],
    [
-    "الفجوة",
-    "il-fajwa",
-    "the gap",
-    "الفجوة",
-    "(recognise)"
+    "تسد",
+    "tsidd",
+    "(it, f.) closes, (it, f.) fills (a gap)",
+    "تسد",
+    "a masculine thing: ysidd (يسد); close the gap: tsidd il-fajwa"
    ],
    [
-    "عندي ثلاث نقاط",
-    "ʿindi thalāth nigāṭ",
-    "I've got three points",
-    "لدي ثلاث نقاط",
-    "one point: nugṭa (نقطة)"
+    "العولمة",
+    "il-ʿawlama",
+    "globalisation (formal)",
+    "العولمة",
+    "(recognise)"
    ]
   ],
   "receptive": [
    2,
-   3
+   4
   ]
  },
  {
   "id": "s5u090",
   "stage": 5,
   "title": "C1 exit: one talk, three voices",
-  "goal": "C1 exit: Sēf is home for the holidays; in Bū Rāshid's majlis, give your talk as at university, as to your manager, and as majlis talk, and close the evening",
-  "tip": "One message, three registers: formal (yisharrifni atkallam ʿan…, it-turāth), office (ṭāl ʿumrak, fi saṭrēn), majlis (wallāh, short and warm). Then end the way the majlis ends: a blessing and its reply, and thanks to the people who stood by you (intu sanadi).",
+  "goal": "C1 exit: in Bū Rāshid's majlis, with Sēf on a video call from abroad, give your talk as at university, as to your manager and as majlis talk",
+  "tip": "One message, three registers: formal (yisharrifni atkallam ʿan…, it-taqālīd), office (ṭāl ʿumrak, fi saṭrēn), majlis (wallāh, short and warm). Then close the way the majlis closes: a blessing and its reply, and thanks to the people who stood by you (intu sanadi).",
   "grammar": "C1 exit: register shifting (formal, office, majlis) on one topic",
   "dialogue": [
    [
     "A",
-    "حياكم الله! سيف رجع لنا، واشتقنا له. وسالم صار نجم الجامعة!",
-    "ḥayyākum allāh! Sēf rijaʿ lana, w ishtagna lah. w Sālim ṣār najim il-jāmʿa!",
-    "Welcome, both of you! Sēf's back with us, and we've missed him. And Sālim's become the star of the university!"
+    "حياكم الله! وسيف ويانا من الغربة على الفيديو. سالم صار نجم الجامعة!",
+    "ḥayyākum allāh! w Sēf wiyyāna min il-ghurba ʿala l-fīdyo. Sālim ṣār najim il-jāmʿa!",
+    "Welcome! And Sēf's with us from abroad on video. Sālim's become the star of the university!"
    ],
    [
     "B",
@@ -954,9 +954,9 @@
    ],
    [
     "B",
-    "يشرفني أتكلم عن العربي، لأنه جزء من التراث والحياة في دبي",
-    "yisharrifni atkallam ʿan il-ʿarabi, lannah juzʼ min it-turāth w il-ḥayā fi Dbayy",
-    "It's my honour to speak about Arabic, because it's part of the heritage and of life in Dubai. (formal)"
+    "يشرفني أتكلم عن العربي، لأنه جزء من العادات والتقاليد والحياة في دبي",
+    "yisharrifni atkallam ʿan il-ʿarabi, lannah juzʼ min il-ʿādāt w it-taqālīd w il-ḥayā fi Dbayy",
+    "It's my honour to speak about Arabic, because it's part of the customs, the traditions and the life of Dubai. (formal)"
    ],
    [
     "A",
@@ -972,15 +972,15 @@
    ],
    [
     "A",
-    "والحين مثل ما نسولف هني، يا ريّال!",
-    "w il-ḥīn mithil ma nsōlif hni, yā rayyāl!",
-    "And now the way we talk here, mate!"
+    "والحين مثل ما نسولف هني، يا ريّال! وكيف اندمجت ويانا؟",
+    "w il-ḥīn mithil ma nsōlif hni, yā rayyāl! w chēf indamajt wiyyāna?",
+    "And now the way we talk here, mate! And how did you fit in with us so well?"
    ],
    [
     "B",
-    "والله، الإنقليزي يفتح لك الباب، بس العربي يفتح لك المجلس!",
-    "wallāh, il-inglīzi yiftaḥ-lak il-bāb, bas il-ʿarabi yiftaḥ-lak il-majlis!",
-    "Honestly, English opens the door for you, but Arabic opens the majlis for you!"
+    "والله، الإنقليزي يفتح لك الباب، بس العربي يفتح لك المجلس! ورفقتكم سوت الباقي",
+    "wallāh, il-inglīzi yiftaḥ-lak il-bāb, bas il-ʿarabi yiftaḥ-lak il-majlis! w rifgatkum sawwat il-bāgi",
+    "Honestly, English opens the door for you, but Arabic opens the majlis! And your company did the rest."
    ],
    [
     "A",
@@ -997,18 +997,25 @@
   ],
   "items": [
    [
-    "التراث",
-    "it-turāth",
-    "heritage (formal)",
-    "التراث",
-    ""
+    "التقاليد",
+    "it-taqālīd",
+    "traditions (formal)",
+    "التقاليد",
+    "customs and traditions: il-ʿādāt w it-taqālīd; q kept, as in fuṣḥā"
    ],
    [
-    "اشتقنا له",
-    "ishtagna lah",
-    "we've missed him",
-    "اشتقنا إليه",
-    "we've missed you (to a man): ishtagna lak (اشتقنا لك)"
+    "اندمجت",
+    "indamajt",
+    "you fitted in, you settled in (to a man); I fitted in",
+    "اندمجت",
+    "to a woman: indamajti (اندمجتي)"
+   ],
+   [
+    "رفقة",
+    "rifga",
+    "company, companionship",
+    "رفقة",
+    "your company (to a group): rifgatkum (رفقتكم)"
    ],
    [
     "عزوة",
@@ -1023,18 +1030,11 @@
     "my support, the people I lean on",
     "سندي",
     "a support: sanad (سند)"
-   ],
-   [
-    "العملاء",
-    "il-ʿumala",
-    "clients, customers (of a company)",
-    "العملاء",
-    "one client: ʿamīl (عميل)"
    ]
   ],
   "receptive": [
-   2
+   3
   ],
-  "task": "This week: pick a topic you care about and record it three times, 2 minutes each: as a short formal talk (yisharrifni atkallam ʿan…), as a summary for a manager (ṭāl ʿumrak, fi saṭrēn), and as majlis talk among friends. Then, with a tutor or exchange partner, give the majlis version live and let them argue back for 10 minutes. Listen to your three recordings and note one thing each register taught you."
+  "task": "This week: pick a topic you care about and record it three times, 2 minutes each: as a short formal talk (yisharrifni atkallam ʿan…), as a summary for a manager (ṭāl ʿumrak, fi saṭrēn), and as majlis talk. Then, with a tutor or exchange partner, give the majlis version live and let them argue back for 10 minutes."
  }
 ]
