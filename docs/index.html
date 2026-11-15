@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-o0yYkI7dIRbxBTku/gaR16JWa96mw+FYaoe8wgAyIpQ=' 'sha256-HvBY4llcNvE1m/EX6bMH9KpzHc4dGfeOX8BAF06ncDY=' 'sha256-1Cy7SCijkjWVsszHZiYrU5A7oZ2IR8uf4vD8q0lz2OA=' 'sha256-vp9yiuNVlFlgqmBK0iLBTlFGjpvCVGY5xQ5q7LnFcr8='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-o0yYkI7dIRbxBTku/gaR16JWa96mw+FYaoe8wgAyIpQ=' 'sha256-HvBY4llcNvE1m/EX6bMH9KpzHc4dGfeOX8BAF06ncDY=' 'sha256-IAXU67MsiJvB4fZvkCqNoCfZLfJM2JjemPNYych74eA=' 'sha256-vp9yiuNVlFlgqmBK0iLBTlFGjpvCVGY5xQ5q7LnFcr8='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -1349,7 +1349,9 @@ function startReview(onDone){
     else ans.append(el("p",{className:"tr",textContent:it.tr}));
     if(mode!=="produce") ans.append(el("p",{className:"en",textContent:it.en}));
     if(it.msa&&normalizeArabic(it.msa)!==normalizeArabic(it.ar)) ans.append(el("p",{className:"msa"},"In fuṣḥā: ",arSpan(it.msa)));
-    if(it.gulf) ans.append(el("p",{className:"msa"},"In Gulf speech: ",arSpan(it.gulf)));
+    // gulf column: "G=" same word in gulf speech, "G~ gahwa" said differently, "M الحين il-ḥīn" gulf uses another word
+    if(it.gulf){ const g=String(it.gulf).trim(); const m=/^M\s+(\S+(?:\s+[\u0600-\u06FF]\S*)*)\s+(.+)$/.exec(g);
+      ans.append(g==="G="?el("p",{className:"msa",textContent:"Gulf speech uses this word too."}):g.startsWith("G~")?el("p",{className:"msa",textContent:"Gulf speech says it: "+g.slice(2).trim()}):m?el("p",{className:"msa"},"Gulf speech uses ",arSpan(m[1])," ",el("span",{className:"tr",textContent:m[2]})," instead."):null); }
     if(it.note&&mode!=="produce") ans.append(el("p",{className:"tag",textContent:it.note}));
     ap(ans,shiftChip(it),el("div",{className:"row center"},mode==="produce"||mode==="build"?[playBtn(it.ar),slowBtn(it.ar)]:null,!it.sentence&&!it.msaTrack?nativeLink(it):null),
       isLeech(card)?el("p",{},el("span",{className:"chip",textContent:"Tricky card: get a memory aid in Progress"})):null,

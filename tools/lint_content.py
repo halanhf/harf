@@ -76,12 +76,47 @@ def main():
             for l in dl: known.update(norm(l[1]).split())
             for r in it: known.update(norm(r[0]).split())
             known.update(strip(w) for w in list(known))
+    if only is None: check_fusha(errs, warns)
     if gumar: gumar_check(only, warns)
     for m in errs: print("ERROR", m)
     for m in warns: print("warn ", m)
     total = sum(len(units_of(n)) for n in range(1, 6))
     print(f"{total} units, {len(seen_items)} phrases: {len(errs)} errors, {len(warns)} warnings")
     sys.exit(1 if errs else 0)
+
+def batches(name):  # content/<name>.json then content/<name>/*.json
+    out = []; f = root / "content" / f"{name}.json"
+    if f.exists(): out += [(f.name, x) for x in json.loads(f.read_text(encoding="utf-8"))]
+    for g in sorted((root / "content" / name).glob("*.json"), key=lambda p: p.name):
+        out += [(f"{name}/{g.name}", x) for x in json.loads(g.read_text(encoding="utf-8"))]
+    return out
+
+DOMAINS = {"function", "signs", "forms", "services", "news", "religion", "general"}
+def check_fusha(errs, warns):
+    seen = {}
+    for i, (src, r) in enumerate(batches("msa")):
+        where = f"{src} m.{i}"
+        if not (isinstance(r, list) and 3 <= len(r) <= 5 and all(isinstance(x, str) for x in r) and all(x.strip() for x in r[:3])): errs.append(f"{where}: row shape"); continue
+        if not AR.search(r[0]) or LATIN.search(r[0]): errs.append(f"{where}: Arabic field")
+        if AR.search(r[1]) or AR.search(r[2]): errs.append(f"{where}: Arabic letters in translit/english")
+        if not TR_OK.match(r[1]): errs.append(f"{where}: transliteration has characters outside the scheme: {r[1]}")
+        if len(r) > 3 and r[3] and not re.fullmatch(r"G=|G~ .+|M \S.+", r[3]): errs.append(f"{where}: gulf column format: {r[3]}")
+        if len(r) > 4 and r[4] and r[4] not in DOMAINS: errs.append(f"{where}: domain {r[4]}")
+        if i >= 44 and not HAR.search(r[0]): warns.append(f"{where}: fuṣḥā word without vowel marks: {r[0]}")
+        k = norm(r[0])
+        if k in seen: errs.append(f"{where}: {r[0]} duplicates {seen[k]}")
+        seen[k] = where
+    ids = set()
+    for src, r in batches("readings"):
+        rid = r.get("id") if isinstance(r, dict) else None; where = f"{src} {rid}"
+        if not (isinstance(rid, str) and re.fullmatch(r"r[1-5]-\d{2}", rid)) or rid in ids: errs.append(f"{where}: bad or duplicate id"); continue
+        ids.add(rid)
+        if not (r.get("level") in range(1, 6) and r.get("stage") in range(1, 6) and isinstance(r.get("title"), str) and r["title"]): errs.append(f"{where}: level/stage/title")
+        ls = r.get("lines"); qs = r.get("questions")
+        if not (isinstance(ls, list) and len(ls) >= 2 and all(isinstance(l, list) and len(l) == 2 and AR.search(l[0]) and isinstance(l[1], str) and l[1] for l in ls)): errs.append(f"{where}: lines must be [arabic, english] pairs"); ls = []
+        for j, l in enumerate(ls):
+            if len(l[0].split()) > 20: warns.append(f"{where}: line {j} over 20 words")
+        if not (isinstance(qs, list) and qs and all(isinstance(q, list) and len(q) == 3 and isinstance(q[1], list) and len(q[1]) >= 2 and q[2] in q[1] for q in qs)): errs.append(f"{where}: questions must be [question, [options], answer-in-options]")
 
 PRE = ("وال", "بال", "فال", "لل", "ال", "و", "ب", "ل", "ف")
 def strip(w):

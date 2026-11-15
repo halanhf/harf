@@ -8,9 +8,11 @@ src = (root / "index.html").read_text(encoding="utf-8").replace("\r\n", "\n")  #
 
 # 1. the course lives in content/*.json (one file per stage, plus the fuṣḥā list and readings); it's compiled into
 # index.html between the <content> markers so the page stays a single file that claude.ai can publish
-def rows(name, key):
+def rows(name, key):  # content/<name>.json, then content/<name>/*.json in name order (written in batches)
     f = root / "content" / name
     data = json.loads(f.read_text(encoding="utf-8")) if f.exists() else []
+    for g in sorted((root / "content" / name.replace(".json", "")).glob("*.json"), key=lambda p: p.name):
+        data += json.loads(g.read_text(encoding="utf-8"))
     return f"const {key}=[\n" + ",\n".join(json.dumps(x, ensure_ascii=False, separators=(",", ":")) for x in data) + "\n];\n"
 units = []
 for n in range(1, 6):  # a stage is content/stageN.json, then content/stageN/*.json in name order (lessons are written in batches)

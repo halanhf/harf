@@ -139,7 +139,8 @@ test("data: the course runs stage by stage in teaching order; pairs and fuṣḥ
   for(const u of D.COURSE){ assert.ok(u.stage>=last,`${u.id} is out of stage order`); last=u.stage; assert.ok(!ids.has(u.id),`duplicate unit ${u.id}`); ids.add(u.id);
     assert.ok(/^(u\d+|s[1-5]u\d{3})$/.test(u.id),u.id); assert.ok(D.STAGE_LEVELS[u.stage],u.id); }
   for(const p of D.PAIRS){ assert.equal(p.length,2); assert.notEqual(p[0][0],p[1][0]); }
-  const seen=new Set(); for(const m of D.MSA){ assert.ok(m.length>=3&&m.length<=5); assert.ok(!seen.has(m[0]),`duplicate fuṣḥā word ${m[0]}`); seen.add(m[0]); }
+  const seen=new Set(); for(const m of D.MSA){ assert.ok(m.length>=3&&m.length<=5); const k=L.normalizeArabic(m[0]); assert.ok(!seen.has(k),`duplicate fuṣḥā word ${m[0]}`); seen.add(k);
+    if(m[3]) assert.ok(/^(G=|G~ .+|M \S.+)$/.test(m[3]),`${m[0]} gulf column: ${m[3]}`); if(m[4]) assert.ok(["function","signs","forms","services","news","religion","general"].includes(m[4]),`${m[0]} domain ${m[4]}`); }
 });
 test("word match marks which target words speech recognition caught",()=>{
   const m=L.wordMatch("أبي قهوة لو سمحت","ابي قهوه لو"); assert.deepEqual([...m.words.map(w=>w.ok)],[true,true,true,false]); assert.ok(m.pct>=60&&m.pct<100);
@@ -393,7 +394,7 @@ test("account copy is split by card group, and joining gives the same progress b
 });
 test("data: readings are well formed and their answers are among the options",()=>{
   const ids=new Set();
-  for(const r of D.READINGS){ assert.ok(/^r\d{3}$/.test(r.id)&&!ids.has(r.id),r.id); ids.add(r.id);
+  for(const r of D.READINGS){ assert.ok(/^r[1-5]-\d{2}$/.test(r.id)&&!ids.has(r.id),r.id); ids.add(r.id);
     assert.ok(r.level>=1&&r.level<=5&&r.stage>=1&&r.stage<=5&&r.title,r.id);
     assert.ok(Array.isArray(r.lines)&&r.lines.length>=2); for(const l of r.lines){ assert.equal(l.length,2,r.id); assert.match(l[0],/[ء-ي]/); assert.ok(l[1]); }
     assert.ok(Array.isArray(r.questions)&&r.questions.length>=1); for(const [q,o,a] of r.questions){ assert.ok(q&&o.length>=2&&o.includes(a),`${r.id}: ${q}`); } }
