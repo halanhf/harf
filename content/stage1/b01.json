@@ -55,9 +55,9 @@
 [
 "هلا بك",
 "hala bik",
-"hi to you too; welcome (to a guest)",
+"hi to you too; welcome (to a man)",
 "أهلًا بك",
-"to a woman: hala bich (هلا بج); replies to hala, and a host also opens with it"
+"to a woman: hala bich (هلا بج); replies to hala, and a host also opens with it to a guest"
 ],
 [
 "بخير",
@@ -264,9 +264,9 @@
 [
 "هلا فيك",
 "hala fīk",
-"hi to you too (reply to hala)",
+"hi to you too (to a man)",
 "أهلًا بك",
-"to a woman: hala fīch (هلا فيج); to a group: hala fīkum (هلا فيكم)"
+"to a woman: hala fīch (هلا فيج); to a group: hala fīkum (هلا فيكم); replies to hala; same as hala bik (هلا بك)"
 ],
 [
 "انتو",
@@ -437,7 +437,7 @@
 "title": "Meeting Sēf's mum",
 "goal": "Greet Sēf's mother respectfully and answer questions about your family with 'my' and 'your'.",
 "grammar": "Possessive endings -i (my), -ak (your, m.), -ich (your, f.)",
-"tip": "Add an ending to a noun for 'my' and 'your': ahl → ahli (my family), ahlak (your family, to a man), ahlich (to a woman). After a vowel, 'my' is -y: ubū → ubūy (my dad). walad (son) shortens: wildi (my son), wildich (your son, to a woman).",
+"tip": "Add an ending to a noun for 'my' and 'your': ahal → ahli (my family), ahlak (your family, to a man), ahlich (to a woman). After a vowel, 'my' is -y: ubū → ubūy (my dad). walad (son) shortens: wildi (my son), wildich (your son, to a woman).",
 "dialogue": [
 [
 "A",
@@ -467,7 +467,7 @@
 "A",
 "الله يحفظهم. وانت ويا ولدي في الجامعة؟",
 "allāh yiḥfaẓhum. w inta wiyya wildi fi l-jāmʿa?",
-"God keep them. And you're at the university with my son?"
+"God protect them. And you're at the university with my son?"
 ],
 [
 "B",
@@ -508,7 +508,7 @@
 [
 "الله يحفظهم",
 "allāh yiḥfaẓhum",
-"God keep them",
+"God protect them",
 "حفظهم الله",
 "said when someone mentions their family"
 ],
@@ -576,9 +576,9 @@
 ],
 [
 "B",
-"أختي في الجامعة. وانتي، عندج خوات؟",
-"ukhti fi l-jāmʿa. w inti, ʿindich khawāt?",
-"My sister's at university. And you, do you have sisters?"
+"أختي في لندن بعد. وانتي، عندج خوات؟",
+"ukhti fi Landan baʿad. w inti, ʿindich khawāt?",
+"My sister's in London too. And you, do you have sisters?"
 ],
 [
 "A",
@@ -791,9 +791,9 @@
 ],
 [
 "B",
-"الشنطة حق فاطمة! هذا اسمها",
-"ish-shanṭa ḥagg Fāṭma! hādha ismha",
-"The bag is Fatma's! Here's her name."
+"العفو. الشنطة حق فاطمة! هذا اسمها",
+"il-ʿafu. ish-shanṭa ḥagg Fāṭma! hādha ismha",
+"You're welcome. The bag is Fatma's! Here's her name."
 ]
 ],
 "items": [
@@ -979,7 +979,7 @@
 "title": "Asking after the family",
 "goal": "Visit Sēf's mother, ask after the family politely, and show her where your family lives.",
 "grammar": "Possessive endings -na (our), -kum (your, pl.), -hum (their)",
-"tip": "-na = our, -kum = your (to a group or a whole family), -hum = their: bētna (our house), bētkum (your house), ʿyālhum (their kids). After t or d, write a hyphen before -ha and -hum: bēt-hum.",
+"tip": "-na = our, -kum = your (to a group or a whole family), -hum = their: bētna (our house), bētkum (your house), ʿyālhum (their kids). After t, d, g, k or s, a hyphen goes before -ha and -hum, so you don't read th, dh, gh, kh or sh: bēt-hum, ḥagg-ha.",
 "culture": "Ask after a family as a whole: shḥāl il-ahal? (how's the family?) or ʿasāhum b-khēr? Don't ask a man about his wife by name; ask after 'the family' or 'the house' instead. (Needs a native check.)",
 "dialogue": [
 [
@@ -1004,7 +1004,7 @@
 "B",
 "هيه. تفضلي، هذا بيتنا",
 "hē. tfaẓẓali, hādha bētna",
-"Yes. Here, this is our house."
+"Yes. Here, this is (a photo of) our house."
 ],
 [
 "A",
