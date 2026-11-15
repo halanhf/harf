@@ -502,7 +502,7 @@
   "stage": 4,
   "title": "Checkpoint 4.3: news of the rent at the majlis",
   "goal": "Checkpoint: in Bū Rāshid's majlis, with Sēf there, answer his questions about your flat and the landlord, respectfully",
-  "tip": "Review: topic first (ṣāḥib ish-shigga, ma shifnāh), the question word last, il-umūr hādhi yabā-lha, atwaggaʿ. New: simaʿt shu?, allāh yiʿīnak (reply āmīn), ʿala hōnak, the respectful ʿala ʿēni w rāsi, and ma yṣīr illa khēr 'it'll all turn out fine'.",
+  "tip": "Review: topic first (ṣāḥib ish-shigga, ma shifnāh), the question word last, il-umūr hādhi yabā-lha, atwaggaʿ, shakhṣiyyan, lāzim ykūn. New: simaʿt shu?, allāh yiʿīnak (reply āmīn), ʿala hōnak, ʿala ʿēni w rāsi, and ma yṣīr illa khēr 'it'll all turn out fine'.",
   "grammar": "checkpoint 4.3: address, guesses, topic first, fronting, question word at the end, non-human plural agreement",
   "dialogue": [
    [
@@ -525,9 +525,9 @@
    ],
    [
     "B",
-    "سمعت شو يا عمي؟ منو قال لك؟",
-    "simaʿt shu yā ʿammi? minu gāl-lak?",
-    "You heard what, uncle? Who told you?"
+    "سمعت شو يا عمي؟ لازم يكون غلط!",
+    "simaʿt shu yā ʿammi? lāzim ykūn ghalaṭ!",
+    "You heard what, uncle? It must be a mistake!"
    ],
    [
     "A",
@@ -537,9 +537,9 @@
    ],
    [
     "B",
-    "آمين. صاحب الشقة للحين ما شفناه، بس أتوقع نتفاهم",
-    "āmīn. ṣāḥib ish-shigga lil-ḥīn ma shifnāh, bas atwaggaʿ nitfāham",
-    "Amen. The landlord, we haven't seen him yet, but I expect we'll come to an agreement."
+    "آمين. صاحب الشقة للحين ما شفناه، بس شخصيا أتوقع نتفاهم",
+    "āmīn. ṣāḥib ish-shigga lil-ḥīn ma shifnāh, bas shakhṣiyyan atwaggaʿ nitfāham",
+    "Amen. The landlord, we haven't seen him yet, but personally I expect we'll come to an agreement."
    ],
    [
     "A",

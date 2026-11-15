@@ -525,8 +525,8 @@
   "stage": 4,
   "title": "Checkpoint 4.1: late for the wedding",
   "goal": "Checkpoint: stuck in traffic with Sēf on the way to a wedding, say what you should have done, what will have happened by now, and what can't be heard",
-  "tip": "Review of s4u001–014: hindsight with lō … chān + past (lō ṭilaʿna badri, chān wiṣalna), what will have happened with biykūn + past (biykūnūn bidaw), and Form VII for what can't be done (il-mukālama ma tinsimiʿ).",
-  "grammar": "checkpoint 4.1: lō … chān, biykūn + past, Form VII 'can't be'",
+  "tip": "Review of s4u001–014: hindsight with lō … chān + past (lō ṭilaʿna badri, chān wiṣalna), what will have happened with biykūn + past (you'll hear biykūnūn bidaw), and Form VII for what can't be done (il-mukālama ma tinsimiʿ).",
+  "grammar": "checkpoint 4.1: lō … chān, biykūn + past (recognise), Form VII 'can't be'",
   "dialogue": [
    [
     "A",
@@ -548,9 +548,9 @@
    ],
    [
     "B",
-    "وفهد؟ تظن بيكون وصل؟",
-    "w Fahad? tẓunn biykūn wiṣal?",
-    "And Fahad? Do you think he'll have got there?"
+    "وفهد؟ تظن وصل؟",
+    "w Fahad? tẓunn wiṣal?",
+    "And Fahad? Do you think he's there yet?"
    ],
    [
     "A",
@@ -597,7 +597,7 @@
     "biykūnūn bidaw",
     "they'll have started (by now)",
     "سيكونون قد بدؤوا",
-    "he'll have started: biykūn bada (بيكون بدا)"
+    "he'll have started: biykūn bada (بيكون بدا); (recognise)"
    ],
    [
     "المهم نوصل",
@@ -621,7 +621,10 @@
     "before the party's over: gabil la tikhlaṣ il-ḥafla (قبل لا تخلص الحفلة)"
    ]
   ],
-  "task": "This week: with a tutor or exchange partner (search a tutoring site for «Emirati Arabic tutor»), tell the story of a time you were late, in about a minute. Then say what you should have done (lō …, chān …) and what the others will have done while they waited (biykūnūn …). Ask them about a time they were late, and use 3 items from s4u011–015 in your answers."
+  "task": "This week: with a tutor or exchange partner (search a tutoring site for «Emirati Arabic tutor»), tell the story of a time you were late, in about a minute. Then say what you should have done (lō …, chān …) and guess what the others did while they waited (yimkin …). Ask them about a time they were late, and use 3 items from s4u011–015 in your answers.",
+  "receptive": [
+   2
+  ]
  },
  {
   "id": "s4u016",
@@ -889,9 +892,9 @@
   "dialogue": [
    [
     "B",
-    "تذكر الكتب اللي سلفتها لحمد؟ للحين ما رد لي إياها",
-    "tidhkir il-kutub illi sallaft-ha l-Ḥamad? lil-ḥīn ma radd-li iyyāha",
-    "Remember the books I lent Ḥamad? He still hasn't given them back to me."
+    "تذكر الكتب اللي سلفتها لماجد؟ للحين ما رد لي إياها",
+    "tidhkir il-kutub illi sallaft-ha l-Mājid? lil-ḥīn ma radd-li iyyāha",
+    "Remember the books I lent Mājid? He still hasn't given them back to me."
    ],
    [
     "A",
@@ -1126,13 +1129,6 @@
     "to a woman: illi giltah lich (اللي قلته لج); a feminine thing: illi gilt-ha lak (اللي قلتها لك)"
    ],
    [
-    "ممتاز!",
-    "mumtāz!",
-    "excellent! great!",
-    "ممتاز",
-    "about a feminine noun: mumtāza (ممتازة)"
-   ],
-   [
     "آخر صفحة",
     "ākhir ṣafḥa",
     "the last page",
@@ -1204,13 +1200,6 @@
   ],
   "items": [
    [
-    "عطاني إياه",
-    "ʿaṭāni iyyāh",
-    "he gave it (m.) to me",
-    "أعطاني إياه",
-    "she gave it to me: ʿaṭatni iyyāh (عطتني إياه)"
-   ],
-   [
     "وأنا صغير",
     "w ana ṣghīr",
     "as a child, when I was little (after a statement) (a man says)",
@@ -1269,10 +1258,10 @@
   ],
   "task": "This week: search YouTube for «مسلسل إماراتي» (Emirati series). Pick 5 short lines where someone gives, lends, shows or hands something back (listen for إياه, إياها, عطني, رده). Pause, repeat each line twice, matching the speed. Within a minute you should hear شو / مب (UAE) or شنو / مو (Kuwait). If you hear سوف, ليس or هل all the time, it's fuṣḥā: pick another clip.",
   "receptive": [
-   2,
-   4,
-   6,
-   8
+   1,
+   3,
+   5,
+   7
   ]
  }
 ]

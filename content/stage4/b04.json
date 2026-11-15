@@ -138,7 +138,7 @@
   "stage": 4,
   "title": "Why 'Bū Rāshid'?",
   "goal": "In Bū Rāshid's majlis in Sharjah, with Sēf there, ask why everyone calls him Bū Rāshid, and what you'd be called",
-  "tip": "A man is often called bū (father of) + his eldest son's name, a woman umm + the son's name: Bū Rāshid, Umm Sēf. Call him with yā: yā Bū Rāshid. 'So-and-so' is fulān: yā bū fulān 'So-and-so's dad'.",
+  "tip": "You know yā Bū Rāshid from stage 2. Here's why it works: a man is often called bū (father of) + his eldest son's name, a woman umm + the son's name: Bū Rāshid, Umm Sēf. Call him with yā: yā Bū Rāshid. 'So-and-so' is fulān: yā bū fulān 'So-and-so's dad'.",
   "grammar": "abu / umm: bū + son's name (yā Bū Rāshid); fulān 'so-and-so'",
   "dialogue": [
    [
@@ -947,13 +947,6 @@
     "to a woman: ma rgadti (ما رقدتي); everywhere: ma nimt (ما نمت) (recognise)"
    ],
    [
-    "أسوق شوي شوي",
-    "asūg shwayy shwayy",
-    "I drive slowly",
-    "أقود ببطء",
-    "he drives: ysūg (يسوق)"
-   ],
-   [
     "أحس كني",
     "aḥiss chinni",
     "I feel as if I, it feels like I",
@@ -1103,14 +1096,14 @@
   "stage": 4,
   "title": "They don't talk to each other",
   "goal": "With Sēf, find out why two classmates have fallen out, and plan to get them to make up: baʿaẓ, kill wāḥid … ith-thāni",
-  "tip": "'Each other' is baʿaẓ after a plural verb: ma ykallmūn baʿaẓ 'they don't talk to each other', biyshūfūn baʿaẓ 'they'll see each other'. Or say it in two halves: kill wāḥid ylūm ith-thāni 'each one blames the other'.",
+  "tip": "You know yaʿarfūn baʿaẓ 'they know each other' and wiyya baʿaẓ 'together'. baʿaẓ works after any plural verb: ma ykallmūn baʿaẓ 'they don't talk to each other', biyshūfūn baʿaẓ 'they'll see each other'. Or say it in two halves: kill wāḥid ylūm ith-thāni 'each one blames the other'.",
   "grammar": "reciprocals: verb + baʿaẓ (ma ykallmūn baʿaẓ), kill wāḥid … ith-thāni, mitzāʿlīn",
   "dialogue": [
    [
     "A",
-    "تدري إن أحمد وحمد متزاعلين؟",
-    "tadri inn Aḥmad w Ḥamad mitzāʿlīn?",
-    "Did you know Aḥmad and Ḥamad have fallen out?"
+    "تدري إن خلفان وماجد متزاعلين؟",
+    "tadri inn Khalfān w Mājid mitzāʿlīn?",
+    "Did you know Khalfān and Mājid have fallen out?"
    ],
    [
     "B",
@@ -1235,8 +1228,8 @@
   "stage": 4,
   "title": "Personally, I didn't like it",
   "goal": "At the office, give Maryam your honest view of the new system, with examples: shakhṣiyyan, mathalan, khuṣūṣan",
-  "tip": "Words ending in -an work like English -ly: shakhṣiyyan 'personally', mathalan 'for example', khuṣūṣan 'especially', tamāman 'completely', fiʿlan 'really'. You already know tagrīban, ṭabʿan and aṣlan. Write them with ا, no extra mark.",
-  "grammar": "-an adverbs: shakhṣiyyan, mathalan, khuṣūṣan, tamāman, fiʿlan, dāyman. Recycle: tagrīban, ṭabʿan, aṣlan",
+  "tip": "Words ending in -an work like English -ly: shakhṣiyyan 'personally', mathalan 'for example', khuṣūṣan 'especially', tamāman 'completely', fiʿlan 'really'. You already know tagrīban and aṣlan. Write them with ا, no extra mark.",
+  "grammar": "-an adverbs: shakhṣiyyan, mathalan, khuṣūṣan, tamāman, fiʿlan, dāyman. Recycle: tagrīban, aṣlan",
   "dialogue": [
    [
     "A",

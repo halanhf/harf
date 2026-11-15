@@ -129,7 +129,7 @@
   "stage": 4,
   "title": "The neighbour at the door",
   "goal": "At your flat in Mirdif, the older Emirati neighbour from next door brings food from his family; thank him, offer help, accept his invitation",
-  "tip": "Offers use idha + past: idha ḥtajt ay shay 'if you need anything' (lit. 'if you needed'). To thank a whole family, put the thanks you know in the group form: ma tgaṣṣrūn, tislam īdkum. To an older man: yā ʿammi; ana ḥāẓir 'I'm at your service', and offer back with w inta baʿad.",
+  "tip": "Offers use idha + past: idha ḥtajt ay shay 'if you need anything'. To thank a whole family, use group forms: ma tgaṣṣrūn 'you're all so kind' (you know mā gaṣṣartu) and tislam īdkum 'bless your hands'. To an older man: yā ʿammi; ana ḥāẓir 'I'm at your service', and offer back with w inta baʿad.",
   "grammar": "recycle: idha + past for offers (idha ḥtajt), plural you (-kum, -ūn)",
   "dialogue": [
    [
@@ -686,7 +686,7 @@
    [
     "A",
     "هذا عيد الاتحاد يا ريّال، يوم اتحدت الإمارات سنة واحد وسبعين",
-    "hādha ʿīd il-ittiḥād yā rayyāl, yōm ittaḥadat il-imārāt sanat wāḥid w sabʿīn",
+    "hādha ʿīd il-ittiḥād yā rayyāl, yōm ittaḥadat il-Imārāt sanat wāḥid w sabʿīn",
     "It's Union Day, man: the day the Emirates united, in '71."
    ],
    [
@@ -747,7 +747,7 @@
    ],
    [
     "اتحدت الإمارات",
-    "ittaḥadat il-imārāt",
+    "ittaḥadat il-Imārāt",
     "the Emirates united",
     "اتحدت الإمارات",
     "(recognise)"
@@ -778,7 +778,7 @@
   "stage": 4,
   "title": "Checkpoint 4.4: Fahad comes for National Day",
   "goal": "Checkpoint: Fahad and his cousin visit you in Mirdif over National Day; tell them about your neighbours, plan the evening, and hear about Kuwait's national days",
-  "tip": "Review, and now you say it: ma khallūna nnām 'they didn't let us sleep', khallhum 'forget them, leave them', maʿak ḥagg, il-khulāṣa, arīḥ and il-ḥilu fīh, kill ʿām w intu b-khēr, and idha ḥtajtu shay 'if you need anything' to a group. Fahad uses Kuwaiti forms (shinu, iḥna).",
+  "tip": "Review, and now you say it: ma khallūna nnām 'they didn't let us sleep', khallhum 'forget them, leave them', ma tghayyar shay, maʿak ḥagg, arīḥ and il-ḥilu fīh, kill ʿām w intu b-khēr, and idha ḥtajtu shay 'if you need anything' to a group. Fahad uses Kuwaiti forms (shinu, iḥna).",
   "grammar": "checkpoint 4.4 (s4u045–s4u056): khalla + verb, agreeing and pros and cons, comparatives, group forms",
   "dialogue": [
    [
@@ -801,9 +801,9 @@
    ],
    [
     "B",
-    "كلمنا صاحب الشقة. الخلاصة، خلهم. المهم بنطلع الليلة؟",
-    "kallamna ṣāḥib ish-shigga. il-khulāṣa, khallhum. il-muhimm biniṭlaʿ il-lēla?",
-    "We talked to the landlord. Bottom line: forget them. The main thing is, are we going out tonight?"
+    "كلمهم الحارس، بس ما تغير شي. خلهم! المهم بنطلع الليلة؟",
+    "kallamhum il-ḥāris, bas ma tghayyar shay. khallhum! il-muhimm biniṭlaʿ il-lēla?",
+    "The watchman talked to them, but nothing changed. Forget them! The main thing is, are we going out tonight?"
    ],
    [
     "A",

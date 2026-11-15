@@ -161,7 +161,7 @@
    [
     "A",
     "هيه، ومن غيرها جان ما خلصنا قبل الاجتماع",
-    "hē, w min ghērha chān ma khallaṣna gabl il-ijtimāʿ",
+    "hē, w min ghērha chān ma khallaṣna gabil il-ijtimāʿ",
     "Yes, and without it we'd never finish before the meeting."
    ],
    [
@@ -202,13 +202,6 @@
     "if you hadn't saved (it) (to a woman)",
     "لو لم تحفظي",
     "to a man: lō ma ḥafaẓt (لو ما حفظت)"
-   ],
-   [
-    "جان ضاع",
-    "chān ẓāʿ",
-    "it would have been lost (m.)",
-    "لضاع",
-    "a feminine thing: chān ẓāʿat (جان ضاعت)"
    ],
    [
     "جان ما خلصنا",
@@ -261,8 +254,8 @@
    ]
   ],
   "receptive": [
-   7,
-   8
+   6,
+   7
   ]
  },
  {
@@ -511,13 +504,6 @@
     "to a woman: chān ma tʿallamti (جان ما تعلمتي)"
    ],
    [
-    "جان ما عرفناك",
-    "chān ma ʿirafnāk",
-    "we'd never have got to know you (to a man)",
-    "لما عرفناك",
-    "to a woman: chān ma ʿirafnāch (جان ما عرفناج); (recognise)"
-   ],
-   [
     "لو اخترت",
     "lō ikhtart",
     "if I'd chosen; if you'd chosen (to a man)",
@@ -540,8 +526,7 @@
    ]
   ],
   "receptive": [
-   5,
-   8
+   7
   ]
  },
  {
@@ -650,13 +635,6 @@
     "to a woman: chān sajjalti (جان سجلتي)"
    ],
    [
-    "لو ييتني",
-    "lō yītni",
-    "if you'd come to me (to a man)",
-    "لو جئتني",
-    "to a woman: lō yītīni (لو ييتيني); (recognise)"
-   ],
-   [
     "جان ساعدتك",
     "chān sāʿadtak",
     "I'd have helped you (to a man)",
@@ -681,8 +659,7 @@
   "task": "This week: record a 60-second voice note to Sēf about one thing you'd do differently if you could go back a year. Say what happened, then use lō + a past verb with chān twice (lō dirēt, chān …) and chān + a past verb once for 'I should have' (chān sajjalt …). Listen back once and fix any 'you' ending.",
   "receptive": [
    1,
-   5,
-   6
+   5
   ]
  },
  {
@@ -871,7 +848,7 @@
    [
     "A",
     "زين، بيكون شافه قبل الخميس. وإذا في شي ناقص؟",
-    "zēn, biykūn shāfah gabl il-khamīs. w idha fī shay nāgiṣ?",
+    "zēn, biykūn shāfah gabil il-khamīs. w idha fī shay nāgiṣ?",
     "Good, he'll have seen it before Thursday. And if something's missing?"
    ],
    [
@@ -1267,7 +1244,7 @@
    [
     "B",
     "هيه، وبتطرش لك إيميل قبل الخميس",
-    "hē, w bitṭarrish-lak īmēl gabl il-khamīs",
+    "hē, w bitṭarrish-lak īmēl gabil il-khamīs",
     "Yes, and she'll send you an email before Thursday."
    ],
    [
@@ -1285,7 +1262,7 @@
    [
     "A",
     "ممتاز. والعميل بيكون شاف العرض قبل الاجتماع؟",
-    "mumtāz. w il-ʿamīl biykūn shāf il-ʿarẓ gabl il-ijtimāʿ?",
+    "mumtāz. w il-ʿamīl biykūn shāf il-ʿarẓ gabil il-ijtimāʿ?",
     "Great. And will the client have seen the presentation before the meeting?"
    ],
    [
@@ -1309,32 +1286,11 @@
   ],
   "items": [
    [
-    "لين أرجع",
-    "lēn arjaʿ",
-    "by the time I'm back, until I get back",
-    "حتى أعود",
-    ""
-   ],
-   [
-    "بتكونون خلصتوا؟",
-    "bitkūnūn khallaṣtu?",
-    "will you have finished? (to a group)",
-    "هل ستكونون قد انتهيتم؟",
-    "to one man: bitkūn khallaṣt? (بتكون خلصت؟); to one woman: bitkūnīn khallaṣti? (بتكونين خلصتي؟); (recognise)"
-   ],
-   [
     "شو بتكون سويت؟",
     "shu bitkūn sawwēt?",
     "what will you have done? (to a man)",
     "ماذا ستكون قد فعلت؟",
     "to a woman: shu bitkūnīn sawwēti? (شو بتكونين سويتي؟); (recognise)"
-   ],
-   [
-    "بتكون خلصت الأرقام",
-    "bitkūn khallaṣat il-argām",
-    "she'll have finished the figures",
-    "ستكون قد أنهت الأرقام",
-    "(recognise)"
    ],
    [
     "العميل",
@@ -1344,11 +1300,11 @@
     "(recognise)"
    ],
    [
-    "بيكون شاف العرض",
-    "biykūn shāf il-ʿarẓ",
-    "he'll have seen the presentation",
-    "سيكون قد رأى العرض",
-    "(recognise)"
+    "ممتاز!",
+    "mumtāz!",
+    "excellent! great!",
+    "ممتاز",
+    "about a feminine noun: mumtāza (ممتازة)"
    ],
    [
     "الأرقام اليديدة",
@@ -1374,11 +1330,8 @@
   ],
   "task": "This week: search YouTube for «بودكاست إماراتي» (Emirati podcast) or «سوالف» (chats). Listen until you hear جان or بكون / بيكون three times, and write down the sentence around each. Within a minute you should hear شو / مب (UAE) or شنو / مو (Kuwait). If you hear سوف, ليس or هل all the time, it's fuṣḥā: pick another clip.",
   "receptive": [
-   1,
-   2,
-   3,
-   4,
-   5
+   0,
+   1
   ]
  }
 ]

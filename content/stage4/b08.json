@@ -212,7 +212,7 @@
     "ẓiʿaft",
     "you've lost weight (to a man); I've lost weight",
     "نحفت",
-    "to a woman: ẓiʿafti; in the Gulf ẓiʿīf usually means thin"
+    "to a woman: ẓiʿafti; ẓaʿīf (ضعيف) is 'weak', and in the Gulf it also means 'thin'"
    ],
    [
     "باين عليك",
@@ -786,7 +786,7 @@
   "id": "s4u077",
   "stage": 4,
   "title": "Stuck in the sand",
-  "goal": "At a café, tell Fahad, who is visiting Dubai, the long story of how you and Sēf got stuck in the sand on the way to a camp",
+  "goal": "At a café, tell Fahad, just back in Dubai from Kuwait, the long story of how you and Sēf got stuck in the sand on the way to a camp",
   "tip": "Set the scene with w + a pronoun + a participle or a present verb, 'as, while': w niḥin rāyḥīn 'as we were on our way', w ana aḥfir 'while I was digging'. Then move on with fi nuṣṣ iṭ-ṭarīg 'halfway', fajʼa, and close with min dhāk il-yōm 'since that day'.",
   "grammar": "recycle: w + pronoun + present verb or participle ('as …'); narrative markers fi nuṣṣ iṭ-ṭarīg, min dhāk il-yōm",
   "dialogue": [
@@ -1558,7 +1558,7 @@
   "stage": 4,
   "title": "Checkpoint 4.6: karak at the camp",
   "goal": "Checkpoint: at a winter desert camp, tell Sēf about your new routine, make the karak while you explain each step, and laugh at your gym story",
-  "tip": "Review, and now you say it: ṣār-li + time, khaffaft, thalāth marrāt fi l-usbūʿ, khallah yighli, lēn yifūr, la tdhakkirni, jismi killah yʿawwirni. Give the steps in order: awwal shay, baʿdēn, lēn. Tease a friend who's up early: shu han-nashāṭ?",
+  "tip": "Review, and now you say it: ṣār-li + time, khaffaft, thalāth marrāt fi l-usbūʿ, khallah yighli, lēn yifūr, la tdhakkirni, bil-mukhtaṣar, jismi killah yʿawwirni. Give the steps in order: awwal shay, baʿdēn, lēn. Tease a friend who's up early: shu han-nashāṭ?",
   "grammar": "checkpoint 4.6 (s4u071–s4u082): routines, steps in order, narrative markers",
   "dialogue": [
    [
@@ -1617,9 +1617,9 @@
    ],
    [
     "B",
-    "لا تذكرني! جسمي كله كان يعورني",
-    "la tdhakkirni! jismi killah kān yʿawwirni",
-    "Don't remind me! My whole body ached."
+    "لا تذكرني! بالمختصر، جسمي كله كان يعورني",
+    "la tdhakkirni! bil-mukhtaṣar, jismi killah kān yʿawwirni",
+    "Don't remind me! Long story short, my whole body ached."
    ]
   ],
   "items": [
@@ -1636,13 +1636,6 @@
     "up since dawn (a man)",
     "مستيقظ منذ الفجر",
     "a woman: ṣāḥya min il-fajr"
-   ],
-   [
-    "كان يعورني",
-    "kān yʿawwirni",
-    "it was hurting me, it ached (a masculine thing: my head, my body)",
-    "كان يؤلمني",
-    "a feminine body part: kānat tʿawwirni"
    ],
    [
     "يحبه حلو وايد",
@@ -1667,7 +1660,7 @@
    ]
   ],
   "receptive": [
-   5
+   4
   ]
  }
 ]

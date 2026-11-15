@@ -434,7 +434,7 @@
    [
     "B",
     "أشجع فريق من لندن، وفي الإمارات أشجع فريق ربيعي",
-    "ashajjiʿ farīg min Landan, w fi l-imārāt ashajjiʿ farīg rbīʿi",
+    "ashajjiʿ farīg min Landan, w fi l-Imārāt ashajjiʿ farīg rbīʿi",
     "I support a London team, and in the Emirates I support my friend's team."
    ],
    [
@@ -496,7 +496,7 @@
     "id-difāʿ ḥagg-hum ẓaʿīf",
     "their defence is weak",
     "دفاعهم ضعيف",
-    ""
+    "ẓaʿīf means both 'weak' and 'thin' (ضعيف)"
    ],
    [
     "أي فريق تشجع؟",
@@ -876,7 +876,7 @@
     "khabbirna ʿan nafsak",
     "tell us about yourself (to a man)",
     "أخبرنا عن نفسك",
-    "to a woman: khabbrīna ʿan nafsich; also: tkallam ʿan nafsak"
+    "to a woman: khabbrīna ʿan nafsich; you know tkallam ʿan nafsak 'talk about yourself'"
    ],
    [
     "ليش تبي تشتغل عندنا؟",
@@ -1032,11 +1032,11 @@
     "to a woman: ʿindich ay suʼāl?"
    ],
    [
-    "إذا صار نصيب",
-    "idha ṣār naṣīb",
-    "if it works out, if it's meant to be",
-    "إذا كان مقدرًا",
-    ""
+    "نصيب",
+    "naṣīb",
+    "fate, what's meant to be",
+    "نصيب",
+    "if it works out, if it's meant to be: idha ṣār naṣīb (إذا صار نصيب)"
    ],
    [
     "بالكثير",
@@ -1592,7 +1592,7 @@
   "stage": 4,
   "title": "Checkpoint 4.5: I got the job!",
   "goal": "Checkpoint: Fahad phones from Kuwait; tell him about the job offer, the interview and the salary talk, and catch his Kuwaiti forms",
-  "tip": "Review, and now you say it: ʿarẓ shughul, ʿindi khibra, mumkin tzīdūn ir-rātib shwayy?, ʿala bāli, il-ḥilu fīh, b-ikhtiṣār, idha ṣār naṣīb and bāgi-li. Fahad uses Kuwaiti forms (shinu, ḥēl).",
+  "tip": "Review, and now you say it: ʿarẓ shughul, ʿindi khibra, mumkin tzīdūn ir-rātib shwayy?, ʿala bāli, furṣa dhahabiyya, b-ikhtiṣār, idha ṣār naṣīb and bāgi-li. Fahad uses Kuwaiti forms (shinu, ḥēl).",
   "grammar": "checkpoint 4.5 (s4u058–s4u069): other Gulf voices, media, interviews and office register",
   "dialogue": [
    [
@@ -1639,9 +1639,9 @@
    ],
    [
     "B",
-    "عادي. باختصار، بقبل إذا صار نصيب. الحلو فيه الخبرة",
-    "ʿādi. b-ikhtiṣār, bagbal idha ṣār naṣīb. il-ḥilu fīh il-khibra",
-    "That's fine. In short, I'll accept if it works out. The good thing about it is the experience."
+    "عادي، فرصة ذهبية. وباختصار، بقبل إذا صار نصيب",
+    "ʿādi, furṣa dhahabiyya. w b-ikhtiṣār, bagbal idha ṣār naṣīb",
+    "That's fine, it's a golden chance. In short, I'll accept if it works out."
    ],
    [
     "A",
@@ -1693,7 +1693,7 @@
     "zēn sawwēt = well done (for what you did)"
    ]
   ],
-  "task": "This week: with a tutor or exchange partner (search «معلم لهجة إماراتية» or «Emirati Arabic tutor»), tell the story of a job interview, real or imagined: the questions, your answers, the salary talk. Use 4 items from these two weeks, e.g. khabbirna ʿan nafsak, ʿindi khibra, taḥt iẓ-ẓaghiṭ, idha ṣār naṣīb. Let your partner ask follow-up questions for 8 turns.",
+  "task": "This week: with a tutor or exchange partner (search «معلم لهجة إماراتية» or «Emirati Arabic tutor»), tell the story of a job interview, real or imagined: the questions, your answers, the salary talk. Use 4 items from these two weeks, e.g. khabbirna ʿan nafsak, ʿindi khibra, mumkin tzīdūn ir-rātib shwayy?, furṣa dhahabiyya. Let your partner ask follow-up questions for 8 turns.",
   "receptive": [
    0,
    1,

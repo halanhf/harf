@@ -113,13 +113,6 @@
     ""
    ],
    [
-    "بيرجعون لنا الفلوس",
-    "biyrajjʿūn-lna l-flūs",
-    "they'll give us our money back, we'll get a refund",
-    "سيعيدون لنا المال",
-    "(recognise) for one person: biyrajjʿūn-li l-flūs (بيرجعون لي الفلوس)"
-   ],
-   [
     "المخيم",
     "il-mukhayyam",
     "the (desert) camp",
@@ -128,8 +121,7 @@
    ]
   ],
   "receptive": [
-   7,
-   8
+   7
   ],
   "culture": "Some English verbs have been part of Gulf speech for generations: chayyak 'check' was already written down in Kuwait in 1951. Newer ones take the same Arabic endings, like kansal 'cancel'. Mixing English into Arabic is most common among young people and in relaxed settings, so these verbs sound casual: with elders and in formal settings, people tend to use Arabic words."
  },
@@ -168,7 +160,7 @@
    [
     "B",
     "ممكن. لا تشيلين هم، عندي نسخة على اللابتوب",
-    "mumkin. la tshīlīn hamm, ʿindi nuskha ʿala l-lābtōb",
+    "mumkin. la tshīlīn ham, ʿindi nuskha ʿala l-lābtōb",
     "Could be. Don't worry, I've got a copy on my laptop."
    ],
    [
@@ -781,13 +773,6 @@
     "kān ʿindi = I had"
    ],
    [
-    "جان غيرنا الموعد",
-    "chān ghayyarna l-mawʿid",
-    "we'd have changed the date",
-    "لغيرنا الموعد",
-    "(recognise)"
-   ],
-   [
     "يظل حلو",
     "yiẓall ḥilu",
     "(it) stays nice",
@@ -811,8 +796,7 @@
   ],
   "receptive": [
    5,
-   6,
-   7
+   6
   ]
  },
  {
@@ -1087,7 +1071,7 @@
   "stage": 4,
   "title": "Checkpoint 4.2: getting ready for your family",
   "goal": "Checkpoint: with Sēf, plan your family's visit: what they'd like, who's coming, and what you'd all prefer to do",
-  "tip": "Review of s4u016–028, now about other people: shu yfaẓẓlūn? 'what would they like?', il-akil il-imārāti 'Emirati food', idha ma kansal 'if he doesn't cancel', yitmanna yshūf 'he's hoping to see', plus ʿaṭētni iyyāh and widdi lō. ʿala l-ʿasha here is 'for dinner'.",
+  "tip": "Review of s4u016–028, now about other people: il-akil il-imārāti 'Emirati food', idha ma kansal 'if he doesn't cancel', yitmanna yshūf 'he's hoping to see', plus nisēt aruddah, ʿaṭētni iyyāh and widdi lō. ʿala l-ʿasha here is 'for dinner'.",
   "grammar": "checkpoint 4.2: iyyā-, kansal, atmanna, yā rēt, afaẓẓil, khāṭri, widdi lō, with 'they' and 'he'",
   "dialogue": [
    [
@@ -1153,11 +1137,11 @@
   ],
   "items": [
    [
-    "شو يفضلون؟",
-    "shu yfaẓẓlūn?",
-    "what do they prefer? what would they like?",
-    "ماذا يفضلون؟",
-    "to a group: shu tfaẓẓlūn? (شو تفضلون؟), not tfaẓẓalu 'go ahead'"
+    "نسيت أرده",
+    "nisēt aruddah",
+    "I forgot to give it (m.) back",
+    "نسيت أن أعيده",
+    "a feminine thing: nisēt arudd-ha (نسيت أردها)"
    ],
    [
     "الأكل الإماراتي",

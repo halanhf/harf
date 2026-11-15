@@ -380,15 +380,15 @@
   "dialogue": [
    [
     "A",
-    "شفت حمد؟ عزمني على كرك، وسألني عنك!",
-    "shift Ḥamad? ʿazamni ʿala karak, w saʼalni ʿannak!",
-    "Have you seen Ḥamad? He bought me a karak and asked about you!"
+    "شفت سلطان؟ عزمني على كرك، وسألني عنك!",
+    "shift Sulṭān? ʿazamni ʿala karak, w saʼalni ʿannak!",
+    "Have you seen Sulṭān? He bought me a karak and asked about you!"
    ],
    [
     "B",
-    "حمد؟ هذا عمره ما كلمني!",
-    "Ḥamad? hādha ʿumrah ma kallamni!",
-    "Ḥamad? He's never said a word to me!"
+    "سلطان؟ هذا عمره ما كلمني!",
+    "Sulṭān? hādha ʿumrah ma kallamni!",
+    "Sulṭān? He's never said a word to me!"
    ],
    [
     "A",
@@ -636,7 +636,7 @@
   "title": "As the old folk say",
   "goal": "In Bū Rāshid's majlis, with Sēf there, he asks about the proverbs you're learning; talk about what they mean",
   "tip": "Talk about proverbs: il-amthāl 'proverbs' (one is a mathal, spelt like mithil 'like'), il-mathal fi maḥallah 'the proverb's spot on'. wala + a noun is 'not a single': ma yaʿarf wala mathal 'he doesn't know a single proverb'.",
-  "grammar": "recycle: wala + noun 'not a single'; baʿaẓ 'some'",
+  "grammar": "recycle: wala + noun 'not a single'; new: baʿaẓha 'some of them'",
   "dialogue": [
    [
     "A",
@@ -1087,7 +1087,7 @@
    [
     "A",
     "أوكي! وبتدرب عليه مرتين قبل باكر، وبطرش لك على الواتساب. ثانكس برو!",
-    "ōkē! w batdarrab ʿalēh marratēn gabl bāchir, w baṭarrish-lak ʿala l-wātsāb. thānks brō!",
+    "ōkē! w batdarrab ʿalēh marratēn gabil bāchir, w baṭarrish-lak ʿala l-wātsāb. thānks brō!",
     "OK! And I'll practise it twice before tomorrow, and I'll message you on WhatsApp. Thanks, bro!"
    ],
    [
@@ -1544,7 +1544,7 @@
     ""
    ]
   ],
-  "task": "This week: record two short voice notes saying you can't come on Friday and suggesting another day. Send the first to Rāshid: casual, with a few English words (brō, sōri, ōkē). Then say the same thing to Bū Rāshid: yā ʿammi or ṭāl ʿumrak, all in Arabic, no English. Listen back and check that the two really sound different.",
+  "task": "This week: with a tutor or exchange partner (search a tutoring site for «Emirati Arabic tutor»), act out two short calls saying you can't come on Friday and suggesting another day. First your partner plays Rāshid: be casual, with a few English words (brō, sōri, ōkē). Then they play Bū Rāshid: yā ʿammi or ṭāl ʿumrak, all in Arabic. Ask them which version sounded wrong, and why.",
   "receptive": [
    1,
    4,
