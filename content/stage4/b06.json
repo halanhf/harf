@@ -118,18 +118,10 @@
     "I complain about them, I report them",
     "أشتكي منهم",
     "about him: ashtiki ʿalēh (أشتكي عليه)"
-   ],
-   [
-    "الحارس",
-    "il-ḥāris",
-    "the watchman, the security guard (of a building)",
-    "الحارس",
-    "(recognise)"
    ]
   ],
   "receptive": [
-   2,
-   8
+   2
   ]
  },
  {
@@ -172,15 +164,15 @@
    ],
    [
     "B",
-    "الله يخليك يا عمي. وانت بعد، إذا تبي شي، أنا حاضر",
-    "allāh ykhallīk yā ʿammi. w inta baʿad, idha tabi shay, ana ḥāẓir",
-    "Thank you, uncle. And you too: if you want anything, I'm at your service."
+    "الله يخليك يا عمي. وانت بعد، إذا احتجت شي، أنا حاضر",
+    "allāh ykhallīk yā ʿammi. w inta baʿad, idha ḥtajt shay, ana ḥāẓir",
+    "Thank you, uncle. And you too: if you need anything, I'm at your service."
    ],
    [
     "A",
     "زين يا ولدي. تعال عندنا يوم الجمعة بعد العصر، نتقهوى ويا عيالي",
     "zēn yā wildi. taʿāl ʿindana yōm il-jumʿa baʿd il-ʿaṣir, nitgahwa wiyya ʿyāli",
-    "Good, son. Come over to ours on Friday after the afternoon prayer; we'll have coffee with my sons."
+    "Good, son. Come over to ours on Friday after the afternoon prayer; we'll have coffee with my kids."
    ],
    [
     "B",
@@ -216,7 +208,7 @@
     "ḥagg il-jār",
     "for the neighbour",
     "للجار",
-    ""
+    "also 'the neighbour's right', what you owe a neighbour (in religious talk)"
    ],
    [
     "إذا احتجت أي شي",
@@ -242,7 +234,7 @@
    [
     "نتقهوى",
     "nitgahwa",
-    "we have coffee (together), we'll have coffee",
+    "(so) we can have coffee (together), let's have coffee",
     "نشرب القهوة",
     "(recognise)"
    ]
@@ -258,7 +250,7 @@
   "stage": 4,
   "title": "He cut in on me!",
   "goal": "Driving on a busy Dubai road with Sēf, complain about other drivers and take his advice to slow down",
-  "tip": "Recycle w + pronoun + present for 'while': w ana asūg 'while I'm driving', w ana akallim 'while I'm on the phone'. Commands and don'ts: khiff shwayy 'slow down a bit', la tsarriʿ 'don't speed up'. In traffic, dakhal ʿalay is 'he cut in on me'.",
+  "tip": "Recycle w + pronoun + present for 'while': w ana asūg 'while I'm driving', w ana atkallam 'while I'm on the phone'. Commands and don'ts: khiff shwayy 'slow down a bit', la tsarriʿ 'don't speed up'. In traffic, dakhal ʿalay is 'he cut in on me'.",
   "grammar": "recycle: w + pronoun + present ('while'), commands and la + verb",
   "dialogue": [
    [
@@ -299,8 +291,8 @@
    ],
    [
     "A",
-    "أدري. الشهر اللي طاف يتني مخالفة، الكاميرا صورتني وأنا أكلم في التلفون",
-    "adri. ish-shahar illi ṭāf yatni mukhālafa, il-kāmira ṣawwaratni w ana akallim fi t-tilifōn",
+    "أدري. الشهر اللي طاف يتني مخالفة، الكاميرا صورتني وأنا أتكلم في التلفون",
+    "adri. ish-shahar illi ṭāf yatni mukhālafa, il-kāmira ṣawwaratni w ana atkallam fi t-tilifōn",
     "I know. Last month I got a fine: the camera caught me while I was on the phone."
    ],
    [
@@ -422,7 +414,7 @@
    [
     "A",
     "عادي، في باص يوصلك. وفي المترو تقدر تقرا أو ترتاح",
-    "ʿādi, fī bāṣ ywaṣṣlak. w fi l-mitrō tigdar tigra aw tartāḥ",
+    "ʿādi, fī bāṣ ywaṣṣlak. w fi l-mitrō tigdar tigra aw tirtāḥ",
     "That's fine, there's a bus that takes you there. And on the metro you can read or relax."
    ],
    [
@@ -454,7 +446,7 @@
    [
     "تعبتني",
     "taʿʿabatni",
-    "it's worn me out, it's tired me out (a feminine thing: traffic, work)",
+    "it's worn me out, it's tired me out (a feminine thing: the traffic, the drive)",
     "أتعبتني",
     "a masculine thing: taʿʿabni (تعبني)"
    ],
@@ -466,16 +458,16 @@
     "arīḥ here is 'more relaxing' (comparative), not arayyiḥ 'I rest'"
    ],
    [
-    "أوفر",
-    "awfar",
-    "cheaper, it saves (more) money",
-    "أوفر",
-    ""
+    "ليش ما تاخذ المترو؟",
+    "lēsh ma tākhidh il-mitrō?",
+    "why don't you take the metro? (to a man)",
+    "لماذا لا تركب المترو؟",
+    "to a woman: lēsh ma tākhdhīn il-mitrō? (ليش ما تاخذين المترو؟)"
    ],
    [
     "مب قريبة من المكتب",
     "mub garība min il-maktab",
-    "(it's) not near the office (a feminine thing: a station, a shop)",
+    "(it's) not near the office (a feminine thing: a station, a university)",
     "ليست قريبة من المكتب",
     "a masculine thing: mub garīb (مب قريب)"
    ],
@@ -540,9 +532,9 @@
    ],
    [
     "B",
-    "والحين الكل يبي عرس أكبر من غيره",
-    "w il-ḥīn il-kill yabi ʿirs akbar min ghērah",
-    "And now everyone wants a bigger wedding than the next person."
+    "والحين الكل صار يبي عرس أكبر من غيره",
+    "w il-ḥīn il-kill ṣār yabi ʿirs akbar min ghērah",
+    "And now everyone's started wanting a bigger wedding than the next person."
    ],
    [
     "A",
@@ -554,7 +546,7 @@
     "B",
     "وبعض الشباب يبدون حياتهم وعليهم ديون",
     "w baʿaẓ ish-shabāb yibdūn ḥayāt-hum w ʿalēhum diyūn",
-    "And some young men start their married life in debt."
+    "And some young men start their (married) life in debt."
    ],
    [
     "A",
@@ -641,7 +633,7 @@
    ]
   ],
   "culture": "The mahr is the groom's marriage gift to the bride, agreed as part of the marriage contract. For Emiratis the law sets an upper limit on it, and the government gives a one-off marriage grant to an Emirati man marrying an Emirati woman, if his income is under a set limit. Even so, many families talk about how hard it has become to keep a wedding simple.",
-  "task": "This week: with a tutor or exchange partner (search «معلم لهجة إماراتية» or «Emirati Arabic tutor»), ask how weddings work in their family: the hall, the guests, the cost. Then give your own view for a minute, using 3 items from this week, e.g. ṣārat tkallif wāyid, kalām in-nās, w ʿalēhum diyūn. Keep it going for 8 turns.",
+  "task": "This week: with a tutor or exchange partner (search «معلم لهجة إماراتية» or «Emirati Arabic tutor»), ask how weddings usually work where they are from: the hall, the guests, why costs have gone up. Then give your own view for a minute, using 3 items from this week, e.g. ṣārat tkallif wāyid, kalām in-nās, w ʿalēhum diyūn. Keep it going for 8 turns.",
   "receptive": [
    3,
    7
@@ -652,7 +644,7 @@
   "stage": 4,
   "title": "National Day plans",
   "goal": "Sēf tells you his plans for the UAE's National Day; ask what the day means to him and wish him well",
-  "tip": "Recycle the future b- for plans: binḥuṭṭ aʿlām 'we'll put flags up', biniṭlaʿ 'we'll go out', bayīb-lak 'I'll bring you'. On a national day the wish is kill ʿām w intu b-khēr 'many happy returns' (lit. every year may you all be well); the reply is w inta b-khēr.",
+  "tip": "Recycle the future b- for plans: binḥuṭṭ aʿlām 'we'll put flags up', biniṭlaʿ 'we'll go out', bayīb-lak 'I'll bring you'. On a national day the wish is kill ʿām w intu b-khēr 'happy holiday' (lit. every year may you all be well); the reply is w inta b-khēr.",
   "grammar": "recycle: future b- for plans (binḥuṭṭ, biniṭlaʿ, bayīb)",
   "dialogue": [
    [
@@ -694,14 +686,14 @@
    [
     "A",
     "هذا عيد الاتحاد يا ريّال، يوم اتحدت الإمارات سنة واحد وسبعين",
-    "hādha ʿīd il-ittiḥād yā rayyāl, yōm ittaḥadat il-Imārāt sanat wāḥid w sabʿīn",
+    "hādha ʿīd il-ittiḥād yā rayyāl, yōm ittaḥadat il-imārāt sanat wāḥid w sabʿīn",
     "It's Union Day, man: the day the Emirates united, in '71."
    ],
    [
     "B",
     "ما شاء الله. كل عام وانتو بخير",
     "mā shāʼ allāh. kill ʿām w intu b-khēr",
-    "That's wonderful. Many happy returns to you all."
+    "That's wonderful. Happy National Day to you all."
    ],
    [
     "A",
@@ -755,7 +747,7 @@
    ],
    [
     "اتحدت الإمارات",
-    "ittaḥadat il-Imārāt",
+    "ittaḥadat il-imārāt",
     "the Emirates united",
     "اتحدت الإمارات",
     "(recognise)"
@@ -763,7 +755,7 @@
    [
     "كل عام وانتو بخير",
     "kill ʿām w intu b-khēr",
-    "many happy returns, happy holiday (lit. every year may you be well) (to a group)",
+    "happy holiday (lit. every year may you be well) (to a group)",
     "كل عام وأنتم بخير",
     "to one man: kill ʿām w inta b-khēr; to one woman: kill ʿām w inti b-khēr; the reply: w inta b-khēr; the plural is usual even to one person (you and yours)"
    ],
@@ -835,7 +827,7 @@
     "B",
     "صج؟ كل عام وانتو بخير من الحين!",
     "ṣij? kill ʿām w intu b-khēr min il-ḥīn!",
-    "Really? Many happy returns to you both, in advance!"
+    "Really? Happy National Day to you both, in advance!"
    ],
    [
     "A",
@@ -845,9 +837,9 @@
    ],
    [
     "B",
-    "إن شاء الله. والحين إذا احتجتوا شي، لا تستحون",
-    "in shāʼ allāh. w il-ḥīn idha ḥtajtu shay, la tistiḥūn",
-    "God willing. And for now, if you need anything, don't be shy."
+    "إن شاء الله. وإذا احتجتوا شي، لا تستحون",
+    "in shāʼ allāh. w idha ḥtajtu shay, la tistiḥūn",
+    "God willing. And if you need anything, don't be shy."
    ]
   ],
   "items": [
