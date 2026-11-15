@@ -239,7 +239,7 @@
   "stage": 2,
   "title": "Who's going? The desert trip",
   "goal": "Plan the desert trip with Sēf: say what we'll do there and what the others will do",
-  "tip": "b- goes on every person: nrūḥ → binrūḥ 'we'll go', yrūḥ → biyrūḥ 'he'll go', trūḥ → bitrūḥ 'she'll go', yrūḥūn → biyrūḥūn 'they'll go'. biyṣīr means 'it'll happen, it'll get': biyṣīr bard 'it'll get cold'. With two verbs, one b- is often enough: binsōlif w nishrab chāy.",
+  "tip": "b- goes on every person: nrūḥ → binrūḥ 'we'll go', yrūḥ → biyrūḥ 'he'll go', trūḥ → bitrūḥ 'she'll go', yrūḥūn → biyrūḥūn 'they'll go'. biyṣīr means 'it'll happen, it'll get': biyṣīr bard 'it'll get cold'. The b- can drop on a second verb: binsōlif w nishrab chāy.",
   "grammar": "future b-: we, he, she, they (binrūḥ, biyrūḥūn)",
   "dialogue": [
    [
@@ -492,7 +492,7 @@
     "B",
     "أكيد! بس سيارتي مب زينة. أروح وياكم؟",
     "akīd! bas sayyārti mub zēna. arūḥ wiyyākum?",
-    "Definitely! But my car's not working. Can I go with you?"
+    "Definitely! But my car's playing up. Can I go with you?"
    ],
    [
     "A",
@@ -1043,7 +1043,7 @@
     "B",
     "بخير الله يسلمج. المهم، سيف موجود؟",
     "b-khēr, allāh ysallmich. il-muhimm, Sēf mawjūd?",
-    "Fine, thank you. Is Sēf in, by the way?"
+    "Fine, thank you. Anyway, is Sēf in?"
    ],
    [
     "A",
@@ -1116,7 +1116,7 @@
    [
     "يتصل فيني",
     "yittaṣil fīni",
-    "to call me (he calls me)",
+    "(for him) to call me",
     "يتصل بي",
     ""
    ],

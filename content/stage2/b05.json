@@ -608,7 +608,7 @@
   "stage": 2,
   "title": "The module I'm doing now",
   "goal": "Tell Fahad about your studies, your module and your next exam",
-  "tip": "illi also joins a noun to a phrase with no verb: il-māda illi ʿindi l-ḥīn 'the module I've got now', il-imtiḥān illi yōm il-aḥad 'the exam on Sunday'. dirāsa is 'studying, studies': shlōn id-dirāsa? 'how are your studies going?'",
+  "tip": "illi also joins a noun to a phrase with no verb: il-māda illi ʿindi l-ḥīn 'the module I've got now', il-imtiḥān illi yōm il-ithnēn 'the exam on Monday'. dirāsa is 'studying, studies': shlōn id-dirāsa? 'how are your studies going?'",
   "grammar": "illi + a phrase with no verb",
   "dialogue": [
    [
@@ -621,7 +621,7 @@
     "B",
     "زين الحمد لله، بس وايد صعبة",
     "zēn il-ḥamdu lillāh, bas wāyid ṣaʿba",
-    "Fine, thank God, but they're really hard."
+    "Fine, thank God, but it's really hard."
    ],
    [
     "A",
@@ -643,9 +643,9 @@
    ],
    [
     "B",
-    "هيه، الامتحان اللي يوم الأحد. بدرس لين الليل",
-    "hē, il-imtiḥān illi yōm il-aḥad. badris lēn il-lēl",
-    "Yes, the one on Sunday. I'll study until late at night."
+    "هيه، الامتحان اللي يوم الإثنين. بدرس لين الليل",
+    "hē, il-imtiḥān illi yōm il-ithnēn. badris lēn il-lēl",
+    "Yes, the one on Monday. I'll study until late at night."
    ],
    [
     "A",
@@ -667,7 +667,7 @@
     "takhaṣṣuṣak",
     "your major, your subject (at university) (to a man)",
     "تخصصك",
-    "to a woman: takhaṣṣuṣich; Fahad's shinu is Kuwaiti for shu"
+    "to a woman: takhaṣṣuṣich"
    ],
    [
     "المادة",
@@ -677,10 +677,10 @@
     ""
    ],
    [
-    "يوم الأحد",
-    "yōm il-aḥad",
-    "Sunday, on Sunday",
-    "يوم الأحد",
+    "يوم الإثنين",
+    "yōm il-ithnēn",
+    "Monday, on Monday",
+    "يوم الاثنين",
     ""
    ],
    [

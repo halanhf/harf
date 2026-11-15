@@ -361,15 +361,15 @@
   "dialogue": [
    [
     "B",
-    "مساء الخير. اشتريت هالساعة أمس، بس خربانة",
-    "masāʼ il-khēr. ishtarēt has-sāʿa ams, bas kharbāna",
-    "Good evening. I bought this watch yesterday, but it's broken."
+    "مساء الخير. اشتريت هالساعة أمس، بس ما تشتغل",
+    "masāʼ il-khēr. ishtarēt has-sāʿa ams, bas ma tishtaghil",
+    "Good evening. I bought this watch yesterday, but it doesn't work."
    ],
    [
     "A",
-    "مساء النور. عندك الفاتورة؟",
-    "masāʼ in-nūr. ʿindak il-fātūra?",
-    "Good evening. Do you have the receipt?"
+    "مساء النور. خربانة؟ عندك الفاتورة؟",
+    "masāʼ in-nūr. kharbāna? ʿindak il-fātūra?",
+    "Good evening. Broken? Do you have the receipt?"
    ],
    [
     "B",
@@ -425,11 +425,11 @@
     "reply to masāʼ il-khēr"
    ],
    [
-    "الفاتورة",
-    "il-fātūra",
-    "the receipt; the invoice",
-    "الفاتورة / الإيصال",
-    ""
+    "ما تشتغل",
+    "ma tishtaghil",
+    "it doesn't work (a feminine thing: a watch, a car)",
+    "لا تعمل",
+    "for a masculine thing: ma yishtaghil (ما يشتغل)"
    ],
    [
     "أبدلها",
@@ -584,7 +584,7 @@
   "stage": 2,
   "title": "Checkpoint 2.2: a present for Sēf's mum",
   "goal": "Call Sēf, who is shopping with Fahad: ask the group what they're doing, compare presents and offer to chip in",
-  "tip": "To a group, gāʿid becomes gāʿdīn and the verb takes -ūn: shu gāʿdīn tsawwūn? shrāykum? is short for shu raʼykum? 'what do you think?'; before a verb it means 'how about…?': shrāykum nrūḥ? aḥla shay 'the best thing' is a superlative.",
+  "tip": "To a group, past verbs take -tu (ligētu 'you found') and present verbs -ūn (shu gāʿdīn tsawwūn?). shrāykum? is short for shu raʼykum? 'what do you think?'; before a verb it means 'how about…?': shrāykum nrūḥ? aḥla shay 'the best thing' is a superlative.",
   "grammar": "checkpoint 2.2: recycle s2u018–s2u035 (gāʿid, comparatives, superlatives, mithil)",
   "dialogue": [
    [
@@ -632,11 +632,11 @@
   ],
   "items": [
    [
-    "شو قاعدين تسوون؟",
-    "shu gāʿdīn tsawwūn?",
-    "what are you doing? (to a group)",
-    "ماذا تفعلون؟",
-    "to one man: shu gāʿid tsawwi?; to one woman: shu gāʿda tsawwīn?"
+    "لقيتوا",
+    "ligētu",
+    "you found (to a group)",
+    "وجدتم",
+    "to one man: ligēt; ligētu shay? = have you found anything?"
    ],
    [
     "اشترينا",
@@ -704,7 +704,7 @@
    [
     "B",
     "وكان عندكم مكيف؟",
-    "w kān ʿindkum mkayyif?",
+    "w kān ʿindakum mkayyif?",
     "And did you have air conditioning?"
    ],
    [
@@ -757,7 +757,7 @@
    ],
    [
     "كان عندكم؟",
-    "kān ʿindkum?",
+    "kān ʿindakum?",
     "did you have? (to a group or a family)",
     "هل كان لديكم؟",
     "I had: kān ʿindi; to one man: kān ʿindak?"
@@ -856,7 +856,7 @@
     "kint",
     "I was; you were (to a man)",
     "كنتُ / كنتَ",
-    "kint + verb = I used to: kint arūḥ"
+    "to a woman: kinti; kint + verb = I used to: kint arūḥ"
    ],
    [
     "كنتي",

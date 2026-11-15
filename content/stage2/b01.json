@@ -511,7 +511,7 @@
     "yā shabāb",
     "guys! (to a group of young men)",
     "يا شباب",
-    "friendly; to older men use yā jamāʿa"
+    "friendly, to young men you know or have just met"
    ],
    [
     "نشتغل",
@@ -643,7 +643,7 @@
     "aṣaḥḥīh",
     "I wake him up",
     "أوقظه",
-    "wake me up!: ṣaḥḥni (صحني)"
+    "for her: aṣaḥḥīha (أصحيها)"
    ],
    [
     "ينجح",
@@ -797,7 +797,7 @@
   "stage": 2,
   "title": "A walk after work",
   "goal": "Ask Maryam what she does after work and agree to walk with her family.",
-  "tip": "Verbs whose past ends in a vowel keep a vowel in the present: sawwa → ysawwi (he does), asawwi, nsawwi; miša → yimshi (he walks), amshi, timshi. Before -īn and -ūn the final i goes: tsawwi → tsawwīn, timshi → timshīn, yimshi → yimshūn.",
+  "tip": "Verbs whose past ends in a vowel keep a vowel in the present: sawwa → ysawwi (he does), asawwi, nsawwi; misha → yimshi (he walks), amshi, timshi. Before -īn and -ūn the final i goes: tsawwi → tsawwīn, timshi → timshīn, yimshi → yimshūn.",
   "grammar": "Present tense II: verbs ending in a vowel (ysawwi, yimshi)",
   "dialogue": [
    [
@@ -1060,15 +1060,15 @@
    ],
    [
     "B",
-    "لا، ماي وسلطة بس",
-    "la, māy w salaṭa bas",
-    "No, just water and a salad."
+    "لا، ماي بس. وآخذ سلطة بعد",
+    "la, māy bas. w ākhidh salaṭa baʿad",
+    "No, just water. And I'll get a salad too."
    ],
    [
     "A",
-    "سلطة بس؟ أخوي يسوي رياضة، وياكل صحنين!",
-    "salaṭa bas? akhūy ysawwi riyāẓa, w yākil ṣaḥnēn!",
-    "Just a salad? My brother works out, and he eats two plates!"
+    "سمك وسلطة؟ أخوي يسوي رياضة، وياكل صحنين!",
+    "simach w salaṭa? akhūy ysawwi riyāẓa, w yākil ṣaḥnēn!",
+    "Fish and salad? My brother works out, and he eats two plates!"
    ]
   ],
   "items": [
