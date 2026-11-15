@@ -113,10 +113,21 @@ def batches(name):  # content/<name>.json then content/<name>/*.json
     return out
 
 DOMAINS = {"function", "signs", "forms", "services", "news", "religion", "general"}
+def dialect_items():  # bare form -> unit id of every taught dialect item
+    out = {}
+    for n in range(1, 6):
+        for _, u in units_of(n):
+            for it in u.get("items", []):
+                if isinstance(it, list) and it and isinstance(it[0], str): out.setdefault(re.sub(r"^ال", "", norm(it[0])), u.get("id"))
+    return out
+
 def check_fusha(errs, warns):
     seen = {}
+    taught = dialect_items()
     for i, (src, r) in enumerate(batches("msa")):
         where = f"{src} m.{i}"
+        if i >= 44 and len(r) > 3 and r[3] == "G=" and not re.match(r"[٠-٩0-9]", r[0]) and re.sub(r"^ال", "", norm(r[0])) in taught:
+            warns.append(f"{where}: {r[0]} is G= and the same as dialect item in {taught[re.sub(r'^ال', '', norm(r[0]))]}: a wasted card unless the meaning differs")
         if not (isinstance(r, list) and 3 <= len(r) <= 5 and all(isinstance(x, str) for x in r) and all(x.strip() for x in r[:3])): errs.append(f"{where}: row shape"); continue
         if not AR.search(r[0]) or LATIN.search(r[0]): errs.append(f"{where}: Arabic field")
         if AR.search(r[1]) or AR.search(r[2]): errs.append(f"{where}: Arabic letters in translit/english")
