@@ -4,14 +4,14 @@
   "stage": 4,
   "title": "Do good and throw it in the sea",
   "goal": "In Bū Rāshid's majlis, with Sēf there, he hears you helped your neighbour; play it down, and understand his proverb",
-  "tip": "Learn a proverb whole, for recognition. saww khēr w giṭṭah baḥar 'do good and throw it in the sea' means: do the good deed, then forget it and don't tell people about it. Recycle the past to play down what you did: ma sawwēt shay, ma ḥabbēt atkallam ʿan il-mawẓūʿ.",
+  "tip": "Learn a proverb whole, for recognition. saww khēr w giṭṭah baḥar 'do good and throw it in the sea': do the good deed, then forget it and don't tell people. The proverb keeps an old short command, saww; in ordinary speech you say sawwi. Recycle the past: ma sawwēt shay.",
   "grammar": "recycle: past tense to play down a good deed; a proverb for recognition",
   "dialogue": [
    [
     "A",
-    "سيف يقول إنك وديت جارك المستشفى نص الليل",
-    "Sēf ygūl innak waddēt jārak il-mustashfa nuṣṣ il-lēl",
-    "Sēf says you took your neighbour to hospital in the middle of the night."
+    "سيف يقول إنك وديت جارك المستشفى نص الليل، والكل نايم",
+    "Sēf ygūl innak waddēt jārak il-mustashfa nuṣṣ il-lēl, w il-kill nāyim",
+    "Sēf says you took your neighbour to hospital in the middle of the night, while everyone was asleep."
    ],
    [
     "B",
@@ -21,8 +21,8 @@
    ],
    [
     "A",
-    "جزاك الله خير يا ولدي. وشحاله الحين؟",
-    "jazāk allāh khēr yā wildi. w shḥālah il-ḥīn?",
+    "الله يجزاك خير يا ولدي. وشحاله الحين؟",
+    "allāh yijzāk khēr yā wildi. w shḥālah il-ḥīn?",
     "God reward you, son. And how is he now?"
    ],
    [
@@ -33,9 +33,9 @@
    ],
    [
     "A",
-    "وليش ما قلت لنا؟ سيف هو اللي قال",
-    "w lēsh ma gilt-lana? Sēf huwa illi gāl",
-    "So why didn't you tell us? It was Sēf who told us."
+    "وانت ساكت! ليش ما قلت لنا؟ سيف هو اللي قال",
+    "w inta sākit! lēsh ma gilt-lana? Sēf huwa illi gāl",
+    "And you said nothing! Why didn't you tell us? It was Sēf who told us."
    ],
    [
     "B",
@@ -167,15 +167,15 @@
    ],
    [
     "B",
-    "لا! والله ما انتبهت. آسف، ما أدري شلون صارت",
-    "la! wallāh ma ntibaht. āsif, ma adri shlōn ṣārat",
-    "Oh no! I honestly didn't notice. Sorry, I don't know how it happened."
+    "لا! فشلة! والله ما انتبهت. آسف، ما أدري شلون صارت",
+    "la! fashla! wallāh ma ntibaht. āsif, ma adri shlōn ṣārat",
+    "Oh no! How embarrassing! I honestly didn't notice. Sorry, I don't know how it happened."
    ],
    [
     "A",
-    "تصير. بس غلطة الشاطر بألف: العميل يثق في أرقامك",
-    "tṣīr. bas ghalṭat ish-shāṭir b-alf: il-ʿamīl yithig fi argāmak",
-    "It happens. But a clever man's mistake counts for a thousand: the client trusts your figures."
+    "يصير جذي. بس غلطة الشاطر بألف: العميل يثق في أرقامك",
+    "yṣīr chidhi. bas ghalṭat ish-shāṭir b-alf: il-ʿamīl yithig fi argāmak",
+    "These things happen. But a clever man's mistake counts for a thousand: the client trusts your figures."
    ],
    [
     "B",
@@ -185,9 +185,9 @@
    ],
    [
     "A",
-    "زين. وقول لهم يمسحون الأولى، فيها أغلاط",
-    "zēn. w gūl-lhum yimsaḥūn il-ūla, fīha aghlāṭ",
-    "Good. And tell them to delete the first one; it's got mistakes in it."
+    "زين. وعلى فكرة، قول لهم يمسحون الأولى، فيها أغلاط",
+    "zēn. w ʿala fikra, gūl-lhum yimsaḥūn il-ūla, fīha aghlāṭ",
+    "Good. And by the way, tell them to delete the first one; it's got mistakes in it."
    ],
    [
     "B",
@@ -211,10 +211,10 @@
     "(recognise) when someone good at their job slips, it costs more; said when a capable person makes a mistake"
    ],
    [
-    "النسخة القديمة",
-    "in-nuskha l-gadīma",
-    "the old version (of a file)",
-    "النسخة القديمة",
+    "الملف غلط",
+    "il-malaff ghalaṭ",
+    "the file's wrong, it's the wrong file",
+    "الملف خطأ",
     "the right version: in-nuskha ṣ-ṣaḥḥ (النسخة الصح)"
    ],
    [
@@ -253,17 +253,17 @@
     ""
    ],
    [
-    "الكل يغلط",
-    "il-kill yighlaṭ",
-    "everyone makes mistakes",
-    "الكل يخطئ",
-    ""
+    "يمسحون الأولى",
+    "yimsaḥūn il-ūla",
+    "they delete the first one (a feminine noun: a version, a copy)",
+    "يحذفون الأولى",
+    "delete it! (to a man): imsaḥha (امسحها)"
    ],
    [
     "المهم تتعلم منها",
     "il-muhimm titʿallam minha",
     "what matters is that you learn from it (to a man)",
-    "المهم أن تتعلم منه",
+    "المهم أن تتعلم منها",
     "to a woman: il-muhimm titʿallamīn minha (المهم تتعلمين منها)"
    ]
   ],
@@ -278,7 +278,7 @@
   "stage": 4,
   "title": "Whoever said 'huh?' heard",
   "goal": "At a karak stand, Sēf asks you for a lift to the airport at dawn; try pretending you didn't hear, then agree on your terms",
-  "tip": "man gāl hā simaʿ 'whoever said huh? heard': said, half joking, to someone who asks 'what?' to dodge a request. Recycle the question word at the end (s4u042): iṭ-ṭayyāra s-sāʿa cham? 'the flight's at what time?' and future b- for the deal: bawaddīk 'I'll take you'.",
+  "tip": "min gāl hā simaʿ 'whoever said huh? heard': said, half joking, to someone who asks 'what?' to dodge a request. Recycle the question word at the end (s4u042): iṭ-ṭayyāra s-sāʿa cham? 'the flight's at what time?' and future b- for the deal: bawaddīk 'I'll take you'.",
   "grammar": "recycle: question word at the end; future b- for promises; a proverb for recognition",
   "dialogue": [
    [
@@ -296,7 +296,7 @@
    [
     "A",
     "لا تسوي عمرك ما سمعت! من قال ها سمع",
-    "la tsawwi ʿumrak ma simaʿt! man gāl hā simaʿ",
+    "la tsawwi ʿumrak ma simaʿt! min gāl hā simaʿ",
     "Don't pretend you didn't hear! Whoever says 'huh?' heard."
    ],
    [
@@ -307,21 +307,21 @@
    ],
    [
     "A",
-    "الساعة ست، يعني لازم نطلع أربع ونص",
-    "is-sāʿa sitt, yaʿni lāzim niṭlaʿ arbaʿ w nuṣṣ",
-    "At six, so we'll have to leave at half past four."
+    "الساعة ست، يعني لازم نطلع أربع ونص. ما أبي تفوتني الطيارة",
+    "is-sāʿa sitt, yaʿni lāzim niṭlaʿ arbaʿ w nuṣṣ. ma abi tfūtni ṭ-ṭayyāra",
+    "At six, so we'll have to leave at half past four. I don't want to miss the plane."
    ],
    [
     "B",
-    "أربع ونص؟! هذا نص الليل يا ريّال!",
-    "arbaʿ w nuṣṣ?! hādha nuṣṣ il-lēl yā rayyāl!",
-    "Half past four?! That's the middle of the night, man!"
+    "أربع ونص؟! والكل نايم! هذا نص الليل يا ريّال!",
+    "arbaʿ w nuṣṣ?! w il-kill nāyim! hādha nuṣṣ il-lēl yā rayyāl!",
+    "Half past four?! Everyone's asleep! That's the middle of the night, man!"
    ],
    [
     "A",
-    "أدري، وأنا بعد ما أحب أقوم بدري. بس التاكسي غالي",
-    "adri, w ana baʿad ma aḥibb agūm badri. bas it-tāksi ghāli",
-    "I know; I don't like getting up early either. But a taxi's expensive."
+    "أدري، وأنا بعد ما أحب أقوم بدري. والمصيبة إن التاكسي غالي",
+    "adri, w ana baʿad ma aḥibb agūm badri. w il-muṣība inn it-tāksi ghāli",
+    "I know; I don't like getting up early either. And the worst part is, a taxi's expensive."
    ],
    [
     "B",
@@ -339,17 +339,10 @@
   "items": [
    [
     "من قال ها سمع",
-    "man gāl hā simaʿ",
+    "min gāl hā simaʿ",
     "whoever says 'huh?' heard (you heard me fine)",
     "من قال ها فقد سمع",
     "(recognise) a proverb, said to someone pretending not to have heard"
-   ],
-   [
-    "ها؟ شو قلت؟",
-    "hā? shu gilt?",
-    "huh? what did you say? (to a man)",
-    "ماذا قلت؟",
-    "to a woman: hā? shu gilti? (ها؟ شو قلتي؟)"
    ],
    [
     "لا تسوي عمرك ما سمعت",
@@ -439,9 +432,9 @@
    ],
    [
     "A",
-    "باكر آخر يوم حق المشروع، وهو للحين ما بدا",
-    "bāchir ākhir yōm ḥagg il-mashrūʿ, w huwa lil-ḥīn ma bada",
-    "Tomorrow's the deadline for the project, and he still hasn't started."
+    "واللي يضحك إن باكر آخر يوم حق المشروع، وهو للحين ما بدا",
+    "w illi yiẓḥak inn bāchir ākhir yōm ḥagg il-mashrūʿ, w huwa lil-ḥīn ma bada",
+    "And the funny thing is, tomorrow's the deadline for the project, and he still hasn't started."
    ],
    [
     "B",
@@ -451,9 +444,9 @@
    ],
    [
     "A",
-    "بالضبط. توه طرش لي: عندكم الملخص؟",
-    "biẓ-ẓabṭ. tawwah ṭarrash-li: ʿindkum il-mulakhkhaṣ?",
-    "Exactly. He's just texted me: 'Have you got the summary?'"
+    "بالضبط. توه طرش لي فويس: عندكم الملخص؟",
+    "biẓ-ẓabṭ. tawwah ṭarrash-li fōys: ʿindkum il-mulakhkhaṣ?",
+    "Exactly. He's just sent me a voice note: 'Have you got the summary?'"
    ],
    [
     "B",
@@ -548,9 +541,9 @@
   "dialogue": [
    [
     "A",
-    "عمي بو راشد يقول إن راشد أحسن لاعب في الشارقة!",
-    "ʿammi Bū Rāshid ygūl inn Rāshid aḥsan lāʿib fi sh-Shārja!",
-    "My uncle Bū Rāshid says Rāshid's the best player in Sharjah!"
+    "على قول عمي بو راشد، راشد أحسن لاعب في الشارقة!",
+    "ʿala gōl ʿammi Bū Rāshid, Rāshid aḥsan lāʿib fi sh-Shārja!",
+    "According to my uncle Bū Rāshid, Rāshid's the best player in Sharjah!"
    ],
    [
     "B",
@@ -566,9 +559,9 @@
    ],
    [
     "B",
-    "يمكن عمك يحبه وايد، عشان جي يمدحه",
-    "yimkin ʿammak yḥibbah wāyid, ʿashān chī yimdaḥah",
-    "Maybe your uncle loves him so much, that's why he praises him."
+    "يمكن عمك يحبه وايد، عشان جي يمدحه. ولّا يحب يبالغ؟",
+    "yimkin ʿammak yḥibbah wāyid, ʿashān chī yimdaḥah. walla yḥibb ybālig?",
+    "Maybe your uncle loves him so much, that's why he praises him. Or does he like to exaggerate?"
    ],
    [
     "A",
@@ -602,9 +595,9 @@
    ],
    [
     "B",
-    "إن شاء الله. بس ما بقول له شو قلت!",
-    "in shāʼ allāh. bas ma bagūl-lah shu gilt!",
-    "I hope so. But I won't tell him what you said!"
+    "إن شاء الله. بس ما بقول له شي!",
+    "in shāʼ allāh. bas ma bagūl-lah shay!",
+    "I hope so. But I won't tell him a thing!"
    ]
   ],
   "items": [
@@ -616,18 +609,18 @@
     "(recognise) people think the world of their own children and things; also with is-sibāl (السبال) 'the monkey' for il-khunfus"
    ],
    [
-    "أحسن لاعب",
-    "aḥsan lāʿib",
-    "the best player",
-    "أفضل لاعب",
-    ""
+    "شفته يلعب؟",
+    "shiftah yilʿab?",
+    "have you seen him play? (to a man)",
+    "هل رأيته يلعب؟",
+    "to a woman: shiftīh yilʿab? (شفتيه يلعب؟)"
    ],
    [
-    "لاعب عادي",
-    "lāʿib ʿādi",
-    "an ordinary player, nothing special",
-    "لاعب عادي",
-    ""
+    "بتشوفه في المجلس",
+    "bitshūfah fi l-majlis",
+    "you'll see him at the majlis (to a man)",
+    "ستراه في المجلس",
+    "to a woman: bitshūfīnah fi l-majlis (بتشوفينه في المجلس)"
    ],
    [
     "مثله مثل غيره",
@@ -651,18 +644,11 @@
     "clever: dhaki (ذكي)"
    ],
    [
-    "وانت مصدق؟",
-    "w inta mṣaddig?",
-    "and you believe it? (to a man)",
-    "وهل تصدق ذلك؟",
-    "to a woman: w inti mṣaddga? (وانتي مصدقة؟)"
-   ],
-   [
-    "ما يصدقون",
-    "ma yṣaddgūn",
-    "they don't believe it",
-    "لا يصدقون",
-    "he doesn't believe it: ma yṣaddig (ما يصدق)"
+    "كل واحد يشوف عياله أحسن عيال",
+    "kill wāḥid yshūf ʿyālah aḥsan ʿyāl",
+    "everyone thinks their own kids are the best",
+    "كل واحد يرى أولاده أفضل الأولاد",
+    "(recognise) how people explain the beetle proverb"
    ],
    [
     "يبي يتعرف عليك",
@@ -675,7 +661,8 @@
   "culture": "The beetle proverb is Emirati, and you'll also hear it with is-sibāl 'the monkey' in place of the beetle. It's said of anything its owner values more than it's worth, and above all of the way parents, especially mothers, see their own children.",
   "receptive": [
    0,
-   3
+   3,
+   6
   ]
  },
  {
@@ -706,15 +693,15 @@
    ],
    [
     "B",
-    "سيف قال مثل عن راشد، بس ما بقول لك شو هو!",
-    "Sēf gāl mathal ʿan Rāshid, bas ma bagūl-lak shu huwa!",
-    "Sēf said a proverb about Rāshid, but I won't tell you which one!"
+    "سيف قال لي مثل حلو، بس ما بقول لك شو هو!",
+    "Sēf gāl-li mathal ḥilu, bas ma bagūl-lak shu huwa!",
+    "Sēf told me a good proverb, but I won't tell you which one!"
    ],
    [
     "A",
-    "أعرفه! أكيد قال الخنفس في عين أمه غزال. سيف من يومه يمزح",
-    "aʿarfah! akīd gāl il-khunfus fi ʿēn ummah ghazāl. Sēf min yōmah yimzaḥ",
-    "I know it! He'll have said 'in his mother's eye the beetle is a gazelle'. Sēf's always been a joker."
+    "أعرفه! أكيد قال الخنفس في عين أمه غزال. سيف دمه خفيف",
+    "aʿarfah! akīd gāl il-khunfus fi ʿēn ummah ghazāl. Sēf dammah khafīf",
+    "I know it! He'll have said 'in his mother's eye the beetle is a gazelle'. Sēf's good fun."
    ],
    [
     "B",
@@ -832,14 +819,14 @@
    ],
    [
     "A",
-    "هيه. أبوي دوم يسولف عنك، يقول إنك تتكلم عربي زين",
-    "hē. ubūy dōm ysōlif ʿannak, ygūl innak titkallam ʿarabi zēn",
-    "Yes. My dad's always talking about you; he says you speak good Arabic."
+    "هيه. أبوي دوم يسولف عنك، وعلى قوله إنك تتكلم عربي زين",
+    "hē. ubūy dōm ysōlif ʿannak, w ʿala gōlah innak titkallam ʿarabi zēn",
+    "Yes. My dad's always talking about you, and according to him you speak good Arabic."
    ],
    [
     "B",
-    "مشكور. بس انتو تتكلمون وايد سريع!",
-    "mashkūr. bas intu titkallamūn wāyid sarīʿ!",
+    "مشكور. بس انتو تتكلمون وايد بسرعة!",
+    "mashkūr. bas intu titkallamūn wāyid b-surʿa!",
     "Thanks. But you all talk really fast!"
    ],
    [
@@ -850,15 +837,15 @@
    ],
    [
     "B",
-    "ما عليه. شو تدرس الحين؟",
-    "ma ʿalēh. shu tidris il-ḥīn?",
-    "That's fine. What are you studying now?"
+    "ما عليه. وعلى فكرة، في أي صف انت؟",
+    "ma ʿalēh. w ʿala fikra, fi ay ṣaff inta?",
+    "That's fine. And by the way, what year are you in?"
    ],
    [
     "A",
-    "آخر سنة في المدرسة، والامتحانات قريبة. والله ضغط!",
-    "ākhir sana fi l-madrasa, w il-imtiḥānāt garība. wallāh ẓaghiṭ!",
-    "It's my last year at school, and the exams are coming up. It's really stressful!"
+    "المختصر، آخر سنة في المدرسة، والامتحانات قريبة. والله ضغط!",
+    "il-mukhtaṣar, ākhir sana fi l-madrasa, w il-imtiḥānāt garība. wallāh ẓaghiṭ!",
+    "Long story short: it's my last year at school, and the exams are coming up. It's really stressful!"
    ],
    [
     "B",
@@ -895,18 +882,18 @@
     "to a woman: dōm ysōlif ʿannich (دوم يسولف عنج)"
    ],
    [
-    "انتو تتكلمون وايد سريع",
-    "intu titkallamūn wāyid sarīʿ",
+    "انتو تتكلمون وايد بسرعة",
+    "intu titkallamūn wāyid b-surʿa",
     "you (all) talk really fast (to a group)",
     "أنتم تتكلمون بسرعة كبيرة",
-    "to one man: titkallam wāyid sarīʿ (تتكلم وايد سريع); to one woman: titkallamīn wāyid sarīʿ"
+    "to one man: titkallam wāyid b-surʿa (تتكلم وايد بسرعة); to one woman: titkallamīn wāyid b-surʿa"
    ],
    [
     "نص كلامنا إنقليزي",
     "nuṣṣ kalāmna ingilīzi",
     "half of what we say is English",
     "نصف كلامنا إنجليزي",
-    ""
+    "you'll see written إنجليزي"
    ],
    [
     "جي نتكلم",
@@ -930,11 +917,11 @@
     ""
    ],
    [
-    "بطرش لك مسج",
-    "baṭarrish-lak masij",
-    "I'll send you a message, I'll text you (to a man)",
-    "سأرسل لك رسالة",
-    "to a woman: baṭarrish-lich masij (بطرش لج مسج); masij is English 'message'"
+    "على الواتساب",
+    "ʿala l-wātsāb",
+    "on WhatsApp",
+    "عبر واتساب",
+    "you'll also hear masij (مسج) 'a message', from English"
    ],
    [
     "بالعربي بليز",
@@ -955,14 +942,14 @@
   "stage": 4,
   "title": "Kafu! Rāshid's winning goal",
   "goal": "Rāshid sends you a voice note: his school team won the final; congratulate him and catch his friends' slang",
-  "tip": "Young men praise each other with slang you should recognise: kafu! 'well done, you're the man!', and rahīb 'awesome': recognise them. Say your own praise with what you know: mabrūk, tistāhil 'you deserve it'.",
+  "tip": "Praise you should recognise: kafu! 'well done, good man!' and rahīb 'awesome'. Say your own praise with what you know: mabrūk, tistāhil (you met yistāhil in stage 2). Recycle illi: ana illi sajjalt 'I'm the one who scored'.",
   "grammar": "recycle: illi in 'I'm the one who' (ana illi sajjalt); youth slang for recognition",
   "dialogue": [
    [
     "A",
-    "برو! فزنا بالنهائي، وأنا اللي سجلت الهدف!",
-    "brō! fizna bin-nihāʼi, w ana illi sajjalt il-hadaf!",
-    "Bro! We won the final, and I'm the one who scored the goal!"
+    "هلا برو! فزنا بالنهائي، وأنا اللي سجلت الهدف!",
+    "hala brō! fizna bin-nihāʼi, w ana illi sajjalt il-hadaf!",
+    "Hey bro! We won the final, and I'm the one who scored the goal!"
    ],
    [
     "B",
@@ -972,8 +959,8 @@
    ],
    [
     "A",
-    "الله يبارك فيك! الشباب كلهم يصيحون: كفو يا راشد، كفو!",
-    "allāh ybārik fīk! ish-shabāb killhum yṣīḥūn: kafu yā Rāshid, kafu!",
+    "الله يبارك فيك! الشباب كلهم يصارخون: كفو يا راشد، كفو!",
+    "allāh ybārik fīk! ish-shabāb killhum yṣārkhūn: kafu yā Rāshid, kafu!",
     "Thanks! All the guys were shouting, 'Well done, Rāshid, well done!'"
    ],
    [
@@ -984,33 +971,33 @@
    ],
    [
     "A",
-    "أبوي قال: رفعت راسي. وصور الهدف عشر مرات، فشلة!",
-    "ubūy gāl: rafaʿt rāsi. w ṣawwar il-hadaf ʿashr marrāt, fashla!",
-    "My dad said, 'You've made me proud.' And he filmed the goal ten times. So embarrassing!"
+    "أبوي قال: رفعت راسي. وصور الهدف، وشاف المقطع عشر مرات، فشلة!",
+    "ubūy gāl: rafaʿt rāsi. w ṣawwar il-hadaf, w shāf il-magṭaʿ ʿashr marrāt, fashla!",
+    "My dad said, 'You've made me proud.' And he filmed the goal and watched the clip ten times. So embarrassing!"
    ],
    [
     "B",
-    "ليش؟ هذا شي حلو! أبوك وايد مستانس",
-    "lēsh? hādha shay ḥilu! ubūk wāyid mistānis",
-    "Why? That's nice! Your dad's really happy."
+    "ليش؟ هذا شي حلو! أبوك وايد مستانس، ودوم يسولف عنك",
+    "lēsh? hādha shay ḥilu! ubūk wāyid mistānis, w dōm ysōlif ʿannak",
+    "Why? That's nice! Your dad's really happy, and he's always talking about you."
    ],
    [
     "A",
-    "أدري، بس طرشه في قروب العائلة! حتى سيف شافه",
-    "adri, bas ṭarrashah fi grūb il-ʿāyla! ḥatta Sēf shāfah",
-    "I know, but he sent it to the family group! Even Sēf's seen it."
+    "أدري، بس هو اللي طرشه في قروب العائلة! حتى سيف شافه",
+    "adri, bas huwa illi ṭarrashah fi grūb il-ʿāyla! ḥatta Sēf shāfah",
+    "I know, but he's the one who sent it to the family group! Even Sēf's seen it."
    ],
    [
     "B",
-    "زين! الحين سيف ما يقدر يقول إنك لاعب عادي",
-    "zēn! il-ḥīn Sēf ma yigdar ygūl innak lāʿib ʿādi",
-    "Good! Now Sēf can't say you're an ordinary player."
+    "زين! الحين الكل عرف إنك أحسن لاعب",
+    "zēn! il-ḥīn il-kill ʿiraf innak aḥsan lāʿib",
+    "Good! Now everyone knows you're the best player."
    ],
    [
     "A",
-    "قال جي؟! خله يشوف الهدف مرة ثانية، كان رهيب!",
-    "gāl chī?! khallah yshūf il-hadaf marra thānya, kān rahīb!",
-    "He said that?! Let him watch the goal again; it was awesome!"
+    "أحسن لاعب؟ صج ولّا تتغشمر؟ بس والله الهدف كان رهيب!",
+    "aḥsan lāʿib? ṣij walla titghashmar? bas wallāh il-hadaf kān rahīb!",
+    "The best player? Are you serious or kidding? But honestly, the goal was awesome!"
    ]
   ],
   "items": [
@@ -1031,16 +1018,16 @@
    [
     "كفو",
     "kafu",
-    "well done! you're the man! (young men's praise)",
+    "well done! good man! (praise)",
     "",
-    "(recognise) friends only"
+    "(recognise)"
    ],
    [
-    "تستاهل",
-    "tistāhil",
-    "you deserve it (to a man)",
-    "تستحق",
-    "to a woman: tistāhlīn (تستاهلين)"
+    "حتى سيف شافه",
+    "ḥatta Sēf shāfah",
+    "even Sēf's seen it",
+    "حتى سيف رآه",
+    "even I've seen it: ḥatta ana shiftah (حتى أنا شفته)"
    ],
    [
     "رفعت راسي",
@@ -1086,9 +1073,9 @@
   "dialogue": [
    [
     "A",
-    "برو، عندي عرض بالإنقليزي باكر. تقدر تشيك عليه؟",
-    "brō, ʿindi ʿarẓ bil-ingilīzi bāchir. tigdar tchayyik ʿalēh?",
-    "Bro, I've got a presentation in English tomorrow. Can you check it over?"
+    "هلا برو! عندي عرض بالإنقليزي باكر. تقدر تشيك عليه؟",
+    "hala brō! ʿindi ʿarẓ bil-ingilīzi bāchir. tigdar tchayyik ʿalēh?",
+    "Hey bro! I've got a presentation in English tomorrow. Can you check it over?"
    ],
    [
     "B",
@@ -1110,9 +1097,9 @@
    ],
    [
     "A",
-    "كم غلطة بس؟ يعني بنجح؟",
-    "cham ghalṭa bas? yaʿni banjaḥ?",
-    "Only a few? So I'll pass?"
+    "كم غلطة بس؟ رهيب! يعني بنجح؟",
+    "cham ghalṭa bas? rahīb! yaʿni banjaḥ?",
+    "Only a few? Awesome! So I'll pass?"
    ],
    [
     "B",
@@ -1134,9 +1121,9 @@
    ],
    [
     "A",
-    "أوكي! وبتدرب عليه مرتين قبل باكر. ثانكس برو!",
-    "ōkē! w batdarrab ʿalēh marratēn gabl bāchir. thānks brō!",
-    "OK! And I'll practise it twice before tomorrow. Thanks, bro!"
+    "أوكي! وبتدرب عليه مرتين قبل باكر. كفو! ثانكس برو!",
+    "ōkē! w batdarrab ʿalēh marratēn gabl bāchir. kafu! thānks brō!",
+    "OK! And I'll practise it twice before tomorrow. Good man! Thanks, bro!"
    ],
    [
     "B",
@@ -1154,11 +1141,11 @@
     "to a woman: tigdarīn tchayykīn ʿalēh? (تقدرين تشيكين عليه؟)"
    ],
    [
-    "قول لي الصج",
-    "gūl-li ṣ-ṣij",
-    "tell me the truth (to a man)",
-    "قل لي الحقيقة",
-    "to a woman: gūlī-li ṣ-ṣij (قولي لي الصج)"
+    "المدرس صعب",
+    "il-mudarris ṣaʿb",
+    "the teacher's tough, the teacher's strict",
+    "المدرس صعب",
+    "a woman teacher: il-mudarrisa ṣaʿba (المدرسة صعبة; spelt like il-madrasa 'the school')"
    ],
    [
     "لا تجاملني",
@@ -1225,9 +1212,9 @@
   "dialogue": [
    [
     "A",
-    "برو، الويكند بنطلع كشتة ويا الشلة. تيي ويانا؟",
-    "brō, il-wīkind biniṭlaʿ kashta wiyya sh-shilla. tiyi wiyyāna?",
-    "Bro, at the weekend we're going on a desert trip with the gang. Will you come with us?"
+    "هلا برو! الويكند بنطلع كشتة ويا الشلة. تيي ويانا؟",
+    "hala brō! il-wīkind biniṭlaʿ kashta wiyya sh-shilla. tiyi wiyyāna?",
+    "Hey bro! At the weekend we're going on a desert trip with the gang. Will you come with us?"
    ],
    [
     "B",
@@ -1249,9 +1236,9 @@
    ],
    [
     "A",
-    "أكيد، هو اللي بيسوق. وانت ييب الفحم، أوكي؟",
-    "akīd, huwa illi biysūg. w inta yīb il-faḥam, ōkē?",
-    "Of course; he's the one driving. And you bring the charcoal, OK?"
+    "أكيد، هو اللي بيسوق. وانت ييب الفحم، أوكي؟ والريوق عليك!",
+    "akīd, huwa illi biysūg. w inta yīb il-faḥam, ōkē? w ir-riyūg ʿalēk!",
+    "Of course; he's the one driving. And you bring the charcoal, OK? And breakfast's on you!"
    ],
    [
     "B",
@@ -1273,9 +1260,9 @@
    ],
    [
     "A",
-    "إذا ما عندنا امتحانات. بس هالمرة أكيد بنطلع!",
-    "idha ma ʿindana imtiḥānāt. bas hal-marra akīd biniṭlaʿ!",
-    "When we haven't got exams. But this time we're definitely going!"
+    "إذا ما عندنا امتحانات. بس هالمرة أكيد بنطلع، من صجي!",
+    "idha ma ʿindana imtiḥānāt. bas hal-marra akīd biniṭlaʿ, min ṣijji!",
+    "When we haven't got exams. But this time we're definitely going, I mean it!"
    ]
   ],
   "items": [
@@ -1333,7 +1320,7 @@
     "bititwassakh",
     "it'll get dirty (a feminine noun)",
     "ستتسخ",
-    "a masculine noun: biytwassakh (بيتوسخ)"
+    "a masculine noun: biyitwassakh (بيتوسخ)"
    ]
   ],
   "receptive": [
@@ -1369,15 +1356,15 @@
    ],
    [
     "B",
-    "بس ليش تتكلمون إنقليزي أصلا؟",
-    "bas lēsh titkallamūn ingilīzi aṣlan?",
-    "But why do you speak English at all?"
+    "بس ليش نص كلامكم إنقليزي أصلا؟",
+    "bas lēsh nuṣṣ kalāmkum ingilīzi aṣlan?",
+    "But why is half of what you say in English at all?"
    ],
    [
     "A",
-    "ما أدري، طبيعي عندنا. في أشيا أسهل أقولها بالإنقليزي",
-    "ma adri, ṭabīʿi ʿindana. fī ashya ashal agūlha bil-ingilīzi",
-    "I don't know, it's normal for us. Some things are easier to say in English."
+    "ما أدري، طبيعي عندنا، جي نتكلم. في أشيا أسهل أقولها بالإنقليزي",
+    "ma adri, ṭabīʿi ʿindana, chī nitkallam. fī ashya ashal agūlha bil-ingilīzi",
+    "I don't know, it's normal for us; that's how we talk. Some things are easier to say in English."
    ],
    [
     "B",
@@ -1389,7 +1376,7 @@
     "A",
     "الدعا، والسوالف ويا الأهل، والمزح بعد!",
     "id-duʿa, w is-sawālif wiyya l-ahal, w il-mazḥ baʿad!",
-    "Prayers, chatting with the family, and joking too!"
+    "Duʿa (personal prayers), chatting with the family, and joking too!"
    ],
    [
     "B",
@@ -1475,7 +1462,7 @@
     "one letter: ḥarf (حرف)"
    ]
   ],
-  "culture": "Young Emiratis say they switch on purpose, not at random: some ideas come out more easily in English, others in Arabic. English dominates many university classes, but Arabic is how they talk to grandparents, pray and keep their ties to their heritage. Online, many type Arabic in English letters and numbers, which they call Arabeezy.",
+  "culture": "Researchers find that young Emiratis switch on purpose, not at random, and one student says some ideas come out more easily in English, others in Arabic. English dominates many university classes, but Arabic is how they talk to grandparents, pray and keep their ties to their heritage. Online, many type Arabic in English letters and numbers: Arabeezy.",
   "receptive": [
    7
   ]
@@ -1496,9 +1483,9 @@
    ],
    [
     "B",
-    "لا تخاف! أدري، أقول له يا عمي",
-    "la tkhāf! adri, agūl-lah yā ʿammi",
-    "Don't worry! I know: I call him yā ʿammi."
+    "لا تخاف! من صجي، أدري. أقول له يا عمي",
+    "la tkhāf! min ṣijji, adri. agūl-lah yā ʿammi",
+    "Don't worry! Seriously, I know: I call him yā ʿammi."
    ],
    [
     "A",
@@ -1514,9 +1501,9 @@
    ],
    [
     "A",
-    "تنقال، عادي. بس قدام الشواب خلك على العربي",
-    "tingāl, ʿādi. bas jiddām ish-shuwwāb khallak ʿala l-ʿarabi",
-    "You can say them, that's fine. But in front of the old men, stick to Arabic."
+    "تنقال، عادي. بس قدام الشواب خلك على العربي، عربي وبس",
+    "tingāl, ʿādi. bas jiddām ish-shuwwāb khallak ʿala l-ʿarabi, ʿarabi w bas",
+    "You can say them, that's fine. But in front of the old men, stick to Arabic: Arabic only."
    ],
    [
     "B",
@@ -1544,9 +1531,9 @@
    ],
    [
     "B",
-    "خلاص، فهمت. يلا ندخل!",
-    "khalāṣ, fhimt. yalla nidkhil!",
-    "Right, got it. Let's go in!"
+    "خلاص، فهمت. ولا كلمة إنقليزي! يلا ندخل",
+    "khalāṣ, fhimt. wala kilma ingilīzi! yalla nidkhil",
+    "Right, got it. Not a word of English! Let's go in."
    ]
   ],
   "items": [
@@ -1626,7 +1613,7 @@
   "stage": 4,
   "title": "Checkpoint 4.7: back in the majlis",
   "goal": "Checkpoint: in Bū Rāshid's majlis, with Sēf and Rāshid there, play down how you helped Rāshid, and keep your English out of it",
-  "tip": "Review, and now you say it: ma ḥabbēt atkallam ʿan il-mawẓūʿ, tistāhil, min ṣijji, ma tingāl, khallak ʿala l-ʿarabi, and the proverbs you recognise in Bū Rāshid's lines. Here, in front of an elder, B's Arabic has no English in it.",
+  "tip": "Review, and now you say it: ma ḥabbēt atkallam ʿan il-mawẓūʿ, min ṣijji, ma tingāl, w bas, and the future (ma bagūlha), a comparative (ashṭar minni) and wala + noun yourself. Recognise the proverbs in Bū Rāshid's lines. In front of an elder, B uses no English.",
   "grammar": "checkpoint 4.7 (s4u084–s4u095): proverbs for recognition, youth speech and register",
   "dialogue": [
    [
@@ -1637,9 +1624,9 @@
    ],
    [
     "B",
-    "شي بسيط يا عمي. هو اللي اشتغل عليه",
-    "shay basīṭ yā ʿammi. huwa illi ishtaghal ʿalēh",
-    "It was nothing, uncle. He's the one who worked on it."
+    "شي بسيط يا عمي. هو اللي اشتغل عليه، وهو أشطر مني",
+    "shay basīṭ yā ʿammi. huwa illi ishtaghal ʿalēh, w huwa ashṭar minni",
+    "It was nothing, uncle. He's the one who worked on it, and he's cleverer than me."
    ],
    [
     "A",
@@ -1649,9 +1636,9 @@
    ],
    [
     "B",
-    "يستاهل! تدرب عليه وايد",
-    "yistāhil! tdarrab ʿalēh wāyid",
-    "He deserves it! He practised it a lot."
+    "يستاهل! تدرب عليه وايد، وما خلى ولا غلطة",
+    "yistāhil! tdarrab ʿalēh wāyid, w ma khalla wala ghalṭa",
+    "He deserves it! He practised it a lot, and he didn't leave a single mistake."
    ],
    [
     "A",
@@ -1673,9 +1660,9 @@
    ],
    [
     "B",
-    "بس ويا راشد! هني عربي وبس",
-    "bas wiyya Rāshid! hni ʿarabi w bas",
-    "Only with Rāshid! In here it's Arabic only."
+    "بس ويا راشد! هني عربي وبس، وما بقولها مرة ثانية",
+    "bas wiyya Rāshid! hni ʿarabi w bas, w ma bagūlha marra thānya",
+    "Only with Rāshid! In here it's Arabic only, and I won't say it again."
    ],
    [
     "A",
@@ -1720,18 +1707,18 @@
     "I practised it: tdarrabt ʿalēh (تدربت عليه)"
    ],
    [
-    "زين تسوي",
-    "zēn tsawwi",
-    "good for you, you're doing the right thing (to a man)",
-    "أحسنت",
-    "to a woman: zēn tsawwīn (زين تسوين)"
+    "ما خلى ولا غلطة",
+    "ma khalla wala ghalṭa",
+    "he didn't leave a single mistake (in it)",
+    "لم يترك خطأً واحدًا",
+    "I didn't leave a single mistake: ma khallēt wala ghalṭa (ما خليت ولا غلطة)"
    ],
    [
-    "ما أرد عليك",
-    "ma arudd ʿalēk",
-    "I won't answer you (to a man)",
-    "لن أرد عليك",
-    "to a woman: ma arudd ʿalēch (ما أرد عليج)"
+    "ساعدته في العرض",
+    "sāʿadtah fi l-ʿarẓ",
+    "you helped him with the presentation (to a man)",
+    "ساعدته في العرض",
+    "to a woman: sāʿadtīh fi l-ʿarẓ (ساعدتيه في العرض); I helped him is the same: sāʿadtah"
    ]
   ]
  }
