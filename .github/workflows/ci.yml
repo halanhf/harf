@@ -16,6 +16,8 @@ jobs:
           persist-credentials: false
       # the runner's preinstalled node has the built-in test runner, so no setup step or dependencies
       - run: node --version && node --test tests/logic.test.js
+      # the course content: shape, duplicates, transliteration scheme (warnings are printed for reviewers, errors fail)
+      - run: python3 tools/lint_content.py
       # docs/ is the installable app built from index.html; it must match the source
       - name: installed app is up to date
         run: |
