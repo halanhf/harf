@@ -71,6 +71,7 @@ def main():
                 if r[3] and not AR.search(r[3]): E(f"items[{i}] fuṣḥā column isn't Arabic")
                 k = norm(r[0])
                 if k in seen_items: E(f"items[{i}] {r[0]} already taught in {seen_items[k]}")
+                elif " " not in k and (na := re.sub(r"^ال", "", k)) != k and na in seen_items or " " not in k and ("ال" + k) in seen_items: W(f"items[{i}] {r[0]} is an earlier single-word item with or without il- ({seen_items.get(re.sub(r'^ال', '', k)) or seen_items.get('ال' + k)}): a re-teach")
                 elif " " in k and (bag := " ".join(sorted(k.split()))) in seen_bags: W(f"items[{i}] {r[0]} has the same words as {seen_bags[bag][1]} in {seen_bags[bag][0]}, in another order: a re-teach unless the meaning differs")
                 if norm(r[0]) in HOMOGRAPHS and uid not in HOMOGRAPHS[norm(r[0])]: W(f"items[{i}] {r[0]} is a bare homograph (STYLE §2): teach it inside a chunk")
                 seen_items[k] = uid
