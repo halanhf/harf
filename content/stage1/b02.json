@@ -42,7 +42,7 @@
     ],
     "items": [
       ["غرفة", "ghurfa", "room", "غرفة", "UAE also: ḥijra (حجرة)"],
-      ["كبير", "kbīr", "big (masculine)", "كبير", "feminine: kbīra; people (plural): kbār; also chbīr (UAE and Kuwait)"],
+      ["كبير", "kbīr", "big (masculine)", "كبير", "feminine: kbīra; people (plural): kbār; UAE also: chbīr; Kuwait: chbīr"],
       ["صغير", "ṣghīr", "small (masculine)", "صغير", "feminine: ṣghīra; people (plural): ṣghār"],
       ["يديد", "yidīd", "new (masculine)", "جديد", "feminine: yidīda; you'll see written جديد"],
       ["قديم", "gadīm", "old (for things, masculine)", "قديم", "feminine: gadīma; for people say kbīr: rayyāl kbīr, an old man"],
@@ -133,7 +133,7 @@
     "id": "s1u032",
     "stage": 1,
     "title": "Checkpoint 1.1: visiting Sēf's family",
-    "goal": "Visit Sēf's family home with a friend at Sēf's invitation: Umm Sēf's welcome, how-are-you and thanks for a group",
+    "goal": "Visit Sēf's family home with a friend, Sēf with you: Umm Sēf's welcome, how-are-you and thanks for a group",
     "tip": "To two or more people, -ak and -ich become -kum: shḥālkum?, ḥayyākum allāh, ʿasākum b-khēr. Commands add -u (tfaẓẓalu), mā gaṣṣart becomes mā gaṣṣartu, and mashkūr becomes mashkūrīn.",
     "grammar": "checkpoint 1.1: group forms (-kum, -u, -īn)",
     "dialogue": [

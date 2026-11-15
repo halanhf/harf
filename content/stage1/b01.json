@@ -15,9 +15,9 @@
 ],
 [
 "B",
-"هلا بك. بخير، الله يسلمك",
-"hala bik. b-khēr, allāh ysallmak",
-"Hi. Fine, God keep you."
+"هلا بك. بخير، الله يسلمك. وانت؟",
+"hala bik. b-khēr, allāh ysallmak. w inta?",
+"Hi. Fine, God keep you. And you?"
 ],
 [
 "A",
@@ -435,7 +435,7 @@
 "id": "s1u021",
 "stage": 1,
 "title": "Meeting Sēf's mum",
-"goal": "At Sēf's home, greet his mother respectfully and answer her questions about your family with 'my' and 'your'.",
+"goal": "At Sēf's home, with Sēf there, greet his mother respectfully and answer her questions about your family with 'my' and 'your'.",
 "grammar": "Possessive endings -i (my), -ak (your, m.), -ich (your, f.)",
 "tip": "Add an ending to a noun for 'my' and 'your': ahal → ahli (my family), ahlak (your family, to a man), ahlich (to a woman). After a vowel, 'my' is -y: ubū → ubūy (my dad). walad (son) shortens: wildi (my son), wildich (your son, to a woman).",
 "dialogue": [
@@ -471,9 +471,9 @@
 ],
 [
 "B",
-"هيه، في نفس الجامعة. ولدج ربيعي",
-"hē, fi nafs il-jāmʿa. wildich rbīʿi",
-"Yes, at the same university. Your son is my friend."
+"هيه، في نفس الجامعة. سيف ربيعي",
+"hē, fi nafs il-jāmʿa. Sēf rbīʿi",
+"Yes, at the same university. Sēf's my friend."
 ]
 ],
 "items": [
@@ -548,7 +548,7 @@
 "title": "Brothers and sisters",
 "goal": "Ask Maryam about her brothers and sisters and talk about yours.",
 "grammar": "Possessive endings -ak, -ich, -ha; family plurals learned as words",
-"tip": "Family plurals are learned as words: akh (brother) → ikhwān, ukht (sister) → khawāt. Endings go on as usual: ikhwāni (my brothers), khawātich (your sisters, to a woman), rayyilha (her husband). ʿindich = you have (to a woman).",
+"tip": "Family plurals are learned as words: akh (brother) → ikhwān, ukhut (sister) → khawāt. Endings go on as usual: ikhwāni (my brothers), khawātich (your sisters, to a woman), rayyilha (her husband). ʿindich = you have (to a woman).",
 "dialogue": [
 [
 "B",
@@ -565,7 +565,7 @@
 [
 "B",
 "عندي ثلاث إخوان وأخت. إخواني في لندن",
-"ʿindi thalāth ikhwān w ukht. ikhwāni fi Landan",
+"ʿindi thalāth ikhwān w ukhut. ikhwāni fi Landan",
 "I have three brothers and a sister. My brothers are in London."
 ],
 [
@@ -576,14 +576,14 @@
 ],
 [
 "B",
-"ويا أمي وأبوي في لندن. وانتي، عندج خوات؟",
-"wiyya ummi w ubūy fi Landan. w inti, ʿindich khawāt?",
-"With my mum and dad in London. And you, do you have sisters?"
+"ويا ريلها وعيالها في لندن. وانتي، عندج خوات؟",
+"wiyya rayyilha w ʿyālha fi Landan. w inti, ʿindich khawāt?",
+"With her husband and kids in London. And you, do you have sisters?"
 ],
 [
 "A",
 "أخت وحدة. هي متزوجة، وريلها من الشارقة",
-"ukht waḥda. hiya mitzawwja, w rayyilha min ish-Shārja",
+"ukhut waḥda. hiya mitzawwja, w rayyilha min ish-Shārja",
 "One sister. She's married, and her husband is from Sharjah."
 ]
 ],
@@ -625,7 +625,7 @@
 ],
 [
 "أخت وحدة",
-"ukht waḥda",
+"ukhut waḥda",
 "one sister",
 "أخت واحدة",
 "waḥda is wāḥid with feminine words"
@@ -733,7 +733,7 @@
 "ʿumrah",
 "his age",
 "عمره",
-"ʿumrah santēn = he's two; her age: ʿumurha"
+"ʿumrah santēn = he's two; her age: ʿumrha"
 ],
 [
 "سنتين",
@@ -757,7 +757,7 @@
 "title": "Whose is this?",
 "goal": "Ask whose things are after a lecture and say what's yours with ḥagg.",
 "grammar": "ḥagg- 'belonging to': ḥaggi, ḥaggak, ḥaggah, ḥagg minu? (Kuwait: māl-)",
-"tip": "ḥagg + ending = mine, yours, his: ḥaggi, ḥaggak (to a man), ḥaggich (to a woman), ḥaggah, ḥagg-ha. Before a name: ḥagg Aḥmad = Ahmed's. 'Whose?' = ḥagg minu? Kuwaitis also say māl: māli, mālak.",
+"tip": "ḥagg + ending = mine, yours, his: ḥaggi, ḥaggak (to a man), ḥaggich (to a woman), ḥaggah, ḥagg-ha. Before a name: ḥagg Aḥmad = Ahmed's. 'Whose?' = ḥagg minu? Kuwaitis also say māl: māli, mālak. But ʿind- takes ma: mub ḥaggi (not mine), ma ʿindi (I don't have).",
 "dialogue": [
 [
 "A",
@@ -767,9 +767,9 @@
 ],
 [
 "B",
-"مب حقي. حق أحمد؟",
-"mub ḥaggi. ḥagg Aḥmad?",
-"Not mine. Ahmed's?"
+"مب حقي، ما عندي شنطة. حق أحمد؟",
+"mub ḥaggi, ma ʿindi shanṭa. ḥagg Aḥmad?",
+"Not mine, I don't have a bag. Ahmed's?"
 ],
 [
 "A",
@@ -854,11 +854,11 @@
 ""
 ],
 [
-"اسمها",
-"ismha",
-"her name",
-"اسمها",
-"his name: ismah"
+"ما عندي",
+"ma ʿindi",
+"I don't have",
+"ليس عندي",
+"before ʿind- use ma, not mub: ma ʿindi shanṭa; you don't have: ma ʿindak (to a man), ma ʿindich (to a woman)"
 ]
 ]
 },

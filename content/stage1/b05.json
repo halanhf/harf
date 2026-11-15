@@ -22,7 +22,7 @@
    [
     "A",
     "يلا، الريوق على حسابي. كرك وخبز وبيض؟",
-    "yalla, ir-riyūg ʿala ḥsābi. karak w khubz w bēẓ?",
+    "yalla, ir-riyūg ʿala ḥsābi. karak w khubiz w bēẓ?",
     "Come on, breakfast's on me. Karak, bread and eggs?"
    ],
    [
@@ -82,7 +82,7 @@
    ],
    [
     "خبز",
-    "khubz",
+    "khubiz",
     "bread",
     "خبز",
     ""
@@ -128,7 +128,7 @@
    [
     "B",
     "ناقصنا حليب وخبز. وانتي شو تبين؟",
-    "nāgiṣna ḥalīb w khubz. w inti shu tabīn?",
+    "nāgiṣna ḥalīb w khubiz. w inti shu tabīn?",
     "We need milk and bread. And what do you want?"
    ],
    [
@@ -348,9 +348,9 @@
    ],
    [
     "A",
-    "بخير. كل، سمك ولحم ودياي! صحنك فاضي",
-    "b-khēr. kil, simach w laḥam w diyāy! ṣaḥnak fāẓi",
-    "Fine. Eat, there's fish, meat and chicken! Your plate's empty."
+    "بخير. تفضل، سمك ولحم ودياي! صحنك فاضي",
+    "b-khēr. tfaẓẓal, simach w laḥam w diyāy! ṣaḥnak fāẓi",
+    "Fine. Help yourself, there's fish, meat and chicken! Your plate's empty."
    ],
    [
     "B",
@@ -871,7 +871,7 @@
    ],
    [
     "A",
-    "هلا فيك! ياين، نحن في المترو، قريبين",
+    "هلا فيك! يايين، نحن في المترو، قريبين",
     "hala fīk! yāyīn, niḥin fi l-mitro, garībīn",
     "Hi! Coming, we're on the metro, close by."
    ],
@@ -909,11 +909,11 @@
     "to one man: inta wēn?; to one woman: inti wēn?"
    ],
    [
-    "ياين",
+    "يايين",
     "yāyīn",
     "coming (a group; we or they)",
     "قادمون",
-    "one man: yāy; one woman: yāya"
+    "one man: yāy; one woman: yāya; you'll see written ياين"
    ],
    [
     "قريبين",

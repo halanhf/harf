@@ -822,7 +822,7 @@
         "thalaṭṭaʿash",
         "thirteen (١٣)",
         "ثلاثة عشر",
-        "11 to 19 end in -ṭaʿash; a date is the plain number: thalaṭṭaʿash = the 13th"
+        "13 to 19 end in -ṭaʿash; a date is the plain number: thalaṭṭaʿash = the 13th"
       ],
       [
         "يوم الاثنين",
@@ -972,7 +972,7 @@
     "title": "What time is the film?",
     "goal": "Tell the time with half past and quarter to, and use 11 to 19 for the time, minutes and prices, before a film with Sēf.",
     "grammar": "Telling the time (w nuṣṣ, w rubʿ, illa rubʿ); 11 to 19 and a singular noun after 11",
-    "tip": "is-sāʿa + hour: is-sāʿa thnaʿash (twelve o'clock). Then w nuṣṣ (half past), w rubʿ (quarter past), illa rubʿ (quarter to). 11 to 19 end in -ṭaʿash, and the noun after them stays singular: khamsṭaʿash dagīga, tisaʿṭaʿash dirham; but 3 to 10 take the plural: khams dagāyig.",
+    "tip": "is-sāʿa + hour: is-sāʿa thnaʿash (twelve). Then w nuṣṣ (half past), w rubʿ (quarter past), illa rubʿ (quarter to). 13 to 19 end in -ṭaʿash (11 is iḥdaʿash, 12 thnaʿash). After 11 to 19 the noun stays singular: khamsṭaʿash dagīga; but 3 to 10 take the plural: khams dagāyig.",
     "dialogue": [
       [
         "A",
@@ -994,15 +994,15 @@
       ],
       [
         "B",
-        "يعني بعد ربع ساعة؟ والتذكرة بكم؟",
-        "yaʿni baʿd rubʿ sāʿa? w it-tadhkara b-cham?",
-        "So in a quarter of an hour? And how much is the ticket?"
+        "يعني بعد ربع ساعة؟ والتاكسي بكم؟",
+        "yaʿni baʿd rubʿ sāʿa? w it-tāksi b-cham?",
+        "So in a quarter of an hour? And how much is the taxi?"
       ],
       [
         "A",
-        "بتسعطعش درهم. والسينما خمسطعش دقيقة بالتاكسي!",
-        "b-tisaʿṭaʿash dirham. w is-sīnama khamsṭaʿash dagīga bit-tāksi!",
-        "Nineteen dirhams. And the cinema's fifteen minutes by taxi!"
+        "بتسعطعش درهم. والسينما خمسطعش دقيقة!",
+        "b-tisaʿṭaʿash dirham. w is-sīnama khamsṭaʿash dagīga!",
+        "Nineteen dirhams. And the cinema's fifteen minutes away!"
       ],
       [
         "B",

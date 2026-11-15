@@ -92,6 +92,7 @@ The course follows **CODA-Gulf** (S: Khalifa et al. 2016; Habash et al. 2018) fo
 8. **Helping vowel in CvCC nouns:** Gulf usually inserts a short vowel between the last two consonants: akil, isim, ṣifir, khubiz, ʿiṭir, laḥam, shahar, baḥar, dihin (the published UAE grammar writes them this way). Not when the first of the two is l, r, n or m: bint, galb, ḥarb, shams. Kept as the course already teaches them, pending a native check: ṣubḥ, is-sabt, ʿashr (before a noun). Every other new CvCC noun follows the rule (khashim "nose", per the published grammar).
 9. **The future b- keeps the i before a consonant cluster:** binitrayyāk, bititʼakhkhar, binitghadda (not bintrayyāk). Before a single consonant: bashūf, bitrūḥ.
 10. **A final -i or -u lengthens before a suffix:** giltī-li, giltī-lah, giltū-li, ṭarrashtī-lhum (written with ā/ī/ū because the vowel is stressed and long).
+11. **An unstressed i in a verb's last syllable drops before a vowel-initial ending:** ywaffig + ak → ywaffgak, garrib + ah → garrbah, khabbir + ich → khabbrich, ṭarrish + ī → ṭarrshī (as s1u049).
 
 **Homographs: teach these only as chunks, never bare,** because the linter's duplicate check sees one key:
 - يدي: yaddi "my grandfather" vs īdi "my hand" (write "my hand" إيدي, 3592/421).

@@ -9,9 +9,9 @@
   "dialogue": [
    [
     "A",
-    "سالم، نتلاقى يوم الثلاثاء، سطعش؟",
-    "Sālim, nitlāga yōm ith-thalātha, siṭṭaʿash?",
-    "Salim, shall we meet on Tuesday, the sixteenth?"
+    "سالم، نتلاقى في المكتب يوم الثلاثاء، سطعش؟",
+    "Sālim, nitlāga fi l-maktab yōm ith-thalātha, siṭṭaʿash?",
+    "Salim, shall we meet in the office on Tuesday, the sixteenth?"
    ],
    [
     "B",
@@ -503,7 +503,7 @@
     "dawām",
     "work hours, a shift",
     "دوام",
-    "ʿindi dawām = I'm working (I have work); also school or university hours"
+    "ʿindi dawām = I'm working (I have work); also school or university hours; ʿindi dawām bāchir: you'll see written باجر"
    ],
    [
     "هذا هو",
@@ -558,9 +558,9 @@
    ],
    [
     "A",
-    "إن شاء الله. لا تنسى الإيميل!",
-    "in shāʼ allāh. la tinsa l-īmēl!",
-    "Sure. Don't forget the email!"
+    "إن شاء الله. لا تنسى الإيميل والملف!",
+    "in shāʼ allāh. la tinsa l-īmēl w il-malaff!",
+    "Sure. Don't forget the email and the file!"
    ],
    [
     "B",
@@ -576,9 +576,9 @@
    ],
    [
     "B",
-    "زين، اتفقنا. بس لا تنسين القهوة!",
-    "zēn, ittafagna. bas la tinsīn il-gahwa!",
-    "OK, deal. But don't forget the coffee!"
+    "لا، خذي. بس لا تنسين القهوة!",
+    "la, khudhi. bas la tinsīn il-gahwa!",
+    "No, take it. But don't forget the coffee!"
    ]
   ],
   "items": [
