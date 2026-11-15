@@ -68,8 +68,8 @@
    ["B", "سيف، انت عارف وين المحاضرة اليوم؟", "Sēf, inta ʿārif wēn il-muḥāẓra l-yōm?", "Sēf, do you know where the lecture is today?"],
    ["A", "لا، مب عارف. بس شايف هذاك الريّال؟", "la, mub ʿārif. bas shāyif hādhāk ir-rayyāl?", "No, I don't. But do you see that man?"],
    ["B", "هيه، شايفه. منو هو؟", "hē, shāyfah. minu huwa?", "Yes, I can see him. Who is he?"],
-   ["A", "هذا الدكتور حقنا. هو عارف كل شي", "hādha d-daktōr ḥaggna. huwa ʿārif kill shay", "That's our lecturer. He knows everything."],
-   ["B", "زين، بسأله. بس ترا أنا مب فاهم المادة", "zēn, basʼalah. bas tara ana mub fāhim il-māda", "OK, I'll ask him. But honestly, I don't understand the module."],
+   ["A", "هذا الدكتور اليديد حقنا. هو عارف كل شي", "hādha d-daktōr il-yidīd ḥaggna. huwa ʿārif kill shay", "That's our new lecturer. He knows everything."],
+   ["B", "زين، بسأله. بس ترا أنا مب فاهم المادة", "zēn, basʼalah. bas tara ana mub fāhim il-māda", "OK, I'll ask him. But mind you, I don't understand the module."],
    ["A", "عادي، محد فاهم شي! حتى أنا", "ʿādi, maḥḥad fāhim shay! ḥatta ana", "Don't worry, nobody understands a thing! Me included."],
    ["B", "عيل خلنا نذاكر ويا بعض", "ʿayal khallna ndhākir wiyya baʿaẓ", "Then let's revise together."],
    ["A", "فكرة حلوة. بس انت عارف، أنا كسلان!", "fikra ḥilwa. bas inta ʿārif, ana kaslān!", "Good idea. But you know I'm lazy!"]
@@ -77,7 +77,7 @@
   "items": [
    ["انت عارف؟", "inta ʿārif?", "do you know? (to a man)", "هل تعرف؟", "to a woman: inti ʿārfa? (انتي عارفة؟)"],
    ["مب عارف", "mub ʿārif", "I don't know (said by a man)", "لا أعرف", "a woman says: mub ʿārfa (مب عارفة); ma aʿarf and ma adri mean the same"],
-   ["شايف", "shāyif", "(can) see, seeing; do you see? (a man)", "يرى", "a woman: shāyfa (شايفة); shāyfah = I can see him"],
+   ["شايف", "shāyif", "(can) see, seeing; do you see? (a man)", "أرى / ترى", "a woman: shāyfa (شايفة); shāyfah = I can see him"],
    ["عارف كل شي", "ʿārif kill shay", "(he) knows everything", "يعرف كل شيء", "a woman: ʿārfa kill shay"],
    ["حقنا", "ḥaggna", "our, ours", "لنا", "yours (to a group): ḥaggkum (حقكم)"],
    ["بسأله", "basʼalah", "I'll ask him", "سأسأله", "I'll ask her: basʼalha (بسألها)"],
@@ -165,7 +165,7 @@
   "items": [
    ["حاجزين", "ḥājzīn", "(have) booked (a group, or 'we')", "حجزنا / حجزوا", "one man: ḥājiz (حاجز); one woman: ḥājza (حاجزة)"],
    ["ماخذ إجازة", "mākhidh ijāza", "(has) taken time off, (is) on leave (a man)", "أخذ إجازة", "a woman: mākhdha ijāza (ماخذة إجازة)"],
-   ["يايب", "yāyib", "bringing; has brought (a man)", "جالب", "a woman: yāyba (يايبة); a group: yāybīn (يايبين); you'll see written جايب"],
+   ["يايب", "yāyib", "bringing; has brought (a man)", "أحضر", "a woman: yāyba (يايبة); a group: yāybīn (يايبين); you'll see written جايب"],
    ["طالعين", "ṭālʿīn", "setting off, leaving (a group, or 'we')", "خارجون", "one man: ṭāliʿ (طالع); one woman: ṭālʿa (طالعة)"],
    ["من أسبوع", "min usbūʿ", "a week ago; for a week (now)", "منذ أسبوع", "like min sāʿa"],
    ["بعد صلاة الفجر", "baʿd ṣalāt il-fajr", "after the dawn prayer, at first light", "بعد صلاة الفجر", ""],
@@ -192,9 +192,9 @@
    ["B", "آسف والله. المرة الياية بشوفها وياك", "āsif wallāh. il-marra l-yāya bashūfha wiyyāk", "I'm really sorry. Next time I'll watch it with you."]
   ],
   "items": [
-   ["كنت قاعد", "kint gāʿid", "I was (…-ing); you were (…-ing) (to a man)", "كنتُ", "a woman says: kint gāʿda (كنت قاعدة); to a woman: kinti gāʿda (كنتي قاعدة); + a present verb: kint gāʿid asūg"],
+   ["كنت قاعد", "kint gāʿid", "I was (…-ing); you were (…-ing) (to a man)", "كنتُ / كنتَ", "a woman says: kint gāʿda (كنت قاعدة); to a woman: kinti gāʿda (كنتي قاعدة); + a present verb: kint gāʿid asūg"],
    ["كنا قاعدين", "kinna gāʿdīn", "we were (…-ing)", "كنا", "kinna gāʿdīn nākil = we were eating"],
-   ["كنت نايم", "kint nāyim", "I was asleep; you were asleep (to a man)", "كنت نائمًا", "a woman says: kint nāyma (كنت نايمة)"],
+   ["كنت نايم", "kint nāyim", "I was asleep; you were asleep (to a man)", "كنت نائمًا", "a woman says: kint nāyma (كنت نايمة); to a woman: kinti nāyma (كنتي نايمة)"],
    ["دقيت عليك", "daggēt ʿalēk", "I rang you, I called you (to a man)", "اتصلت بك", "to a woman: daggēt ʿalēch (دقيت عليج)"],
    ["ثلاث مرات", "thalāth marrāt", "three times", "ثلاث مرات", "twice: marratēn (مرتين)"],
    ["ما سمعت", "ma simaʿt", "I didn't hear; you didn't hear (to a man)", "لم أسمع", "to a woman: ma simaʿti (ما سمعتي)"],
@@ -269,7 +269,7 @@
   "goal": "Turn up late to dinner with Sēf and Fahad, apologise to the group and say what you were going to do",
   "tip": "kān + b- + a present verb is 'was going to, was about to': kint bagūl-lak 'I was going to tell you', kinna binrūḥ 'we were about to go', kān biyrūḥ 'he was about to go'. kān agrees, and so does the verb after b-. Kuwaitis say this too, and also use rāḥ: kint rāḥ agūl-lak.",
   "grammar": "'Was going to': kān + b- + present verb (kint bagūl-lak, kinna binrūḥ); Kuwait: kān rāḥ",
-  "culture": "Saying il-ʿasha ʿala ḥsābi 'dinner's on me' is a friendly way to make up for keeping friends waiting. Friends often argue over who pays: khallha ʿalay! la wallāh! Let them insist once before you give in or win.",
+  "culture": "Saying il-ʿasha ʿala ḥsābi 'dinner's on me' is a friendly way to make up for keeping friends waiting. Friends often argue over who pays (khallha ʿalay! la wallāh!): an offer is usually turned down once before it's accepted, so expect to insist.",
   "dialogue": [
    ["A", "وينك يا ريّال؟ كنا بنروح!", "wēnak yā rayyāl? kinna binrūḥ!", "Where have you been, mate? We were about to go!"],
    ["B", "آسف يا شباب! كنت بتصل فيكم، بس نسيت تلفوني", "āsif yā shabāb! kint battaṣil fīkum, bas nisēt tilifōni", "Sorry, guys! I was going to call you, but I forgot my phone."],
@@ -298,7 +298,7 @@
   "title": "A camel in the road: telling what happened",
   "goal": "Tell Bū Rāshid about a scare on the road back from Hatta: what you were doing, what happened, what nearly happened",
   "tip": "A short story uses this block's three tools: the background with kān gāʿid (Sēf kān gāʿid ysūg 'Sēf was driving'), a sudden turn with gām (gām yṣārikh 'he started shouting') and what nearly happened with kint b- (kint bamūt min il-khōf 'I nearly died of fright').",
-  "grammar": "Telling an incident: kān gāʿid for the background, gām for a sudden turn, kint b- for a near miss",
+  "grammar": "Telling an incident: kān gāʿid for the background, gām for a sudden turn, kint b- for what nearly happened",
   "culture": "Outside the cities, camels sometimes wander onto the road, above all at night, so drive slowly there. Someone back from a trip is welcomed with il-ḥamdu lillāh ʿala s-salāma; il-ḥamdu lillāh ʿala salāmatkum is also said when people have had a scare. The answer to both is allāh ysallmak.",
   "dialogue": [
    ["A", "الحمد لله على السلامة يا ولدي. كيف كانت حتا؟", "il-ḥamdu lillāh ʿala s-salāma yā wildi. chēf kānat Ḥatta?", "Welcome back, son. How was Hatta?"],
