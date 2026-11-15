@@ -138,9 +138,9 @@
    ],
    [
     "A",
-    "أنا أروح ديرة. الأسواق هناك أرخص بوايد",
-    "ana arūḥ Dēra. il-aswāg hnāk arkhaṣ b-wāyid",
-    "I go to Deira. The souqs there are much cheaper."
+    "أنا أروح ديرة. الأسواق هناك رخيصة وايد",
+    "ana arūḥ Dēra. il-aswāg hnāk rakhīṣa wāyid",
+    "I go to Deira. The souqs there are really cheap."
    ],
    [
     "B",
@@ -290,7 +290,7 @@
     "mubārak ʿalēkum ish-shahar",
     "happy Ramadan (lit. blessed be the month for you), at the start of Ramadan",
     "رمضان مبارك / شهر مبارك",
-    "said as it is, to one person or many; the reply is allāh ybārik fīk (to a woman: fīch)"
+    "said as it is, to one person or many; the reply is allāh ybārik fīk (to a woman: fīch); you'll also hear ʿalēna w ʿalēkum (علينا وعليكم)"
    ],
    [
     "رمضان كريم",
@@ -355,7 +355,7 @@
   "id": "s2u062",
   "stage": 2,
   "title": "Back after Eid",
-  "goal": "At the office after the Eid holiday, Maryam welcomes you back: Eid greetings and the summer weather",
+  "goal": "At the office after the Eid holiday, Maryam welcomes you back: Eid greetings and the weather",
   "tip": "For Eid, say ʿasākum min ʿuwwādah and answer by saying it back. To someone back from a trip: il-ḥamdu lillāh ʿala s-salāma → allāh ysallmak (to a woman: ysallmich). Plural things still take the feminine: ish-shawāriʿ w is-sayyārāt killha ghubār 'the streets and cars are all covered in dust'.",
   "grammar": "recycle: plurals with feminine agreement (ish-shawāriʿ killha)",
   "dialogue": [
@@ -391,9 +391,9 @@
    ],
    [
     "B",
-    "الله يسلمج، كلهم بخير. بس الرطوبة هني!",
-    "allāh ysallmich, killhum b-khēr. bas ir-ruṭūba hni!",
-    "Thanks, they're all well. But the humidity here!"
+    "الله يسلمج، كلهم بخير. بس الرطوبة هني ما تنطاق!",
+    "allāh ysallmich, killhum b-khēr. bas ir-ruṭūba hni ma tinṭāg!",
+    "Thanks, they're all well. But the humidity here is unbearable!"
    ],
    [
     "A",
@@ -446,11 +446,11 @@
     "to a woman: ma shifnāch (ما شفناج)"
    ],
    [
-    "كلهم بخير",
-    "killhum b-khēr",
-    "they're all well",
-    "كلهم بخير",
-    "an answer to shḥāl il-ahal?"
+    "ما تنطاق",
+    "ma tinṭāg",
+    "it's unbearable (a feminine thing: the humidity, the traffic)",
+    "لا تطاق",
+    "a masculine thing: ma yinṭāg (ما ينطاق), il-ḥarr ma yinṭāg 'the heat is unbearable'"
    ],
    [
     "الرطوبة",
@@ -473,7 +473,7 @@
   "stage": 2,
   "title": "What do I call him?",
   "goal": "Outside Bū Rāshid's majlis in Sharjah, Sēf tells you how to address his uncle",
-  "tip": "gūl 'say' takes -lah 'to him': gūl-lah 'tell him', la tgūl-lah 'don't say to him', shu agūl-lah? 'what do I call him?'. Call an older man yā Bū Rāshid, yā ʿammi or ṭāl ʿumrak, even if he isn't your uncle. yā rayyāl is for friends only.",
+  "tip": "gūl 'say' takes -lah 'to him': gūl-lah 'tell him', la tgūl-lah 'don't say to him', shu agūl-lah? 'what do I call him?'. Call an older man by his kunya, yā Bū Rāshid ('Rāshid's father'), or yā ʿammi or ṭāl ʿumrak, even if he isn't your uncle. yā rayyāl is for friends only.",
   "grammar": "recycle: imperatives with -lah (gūl-lah, la tgūl-lah)",
   "dialogue": [
    [
@@ -591,7 +591,7 @@
   "stage": 2,
   "title": "Coffee in the majlis",
   "goal": "Bū Rāshid welcomes you and serves Arabic coffee: accept a cup, and say when you've had enough",
-  "tip": "A host gives orders with imperatives: tfaẓẓal igʿid 'please sit', yīb id-dalla 'bring the pot', ṣubb-lah 'pour (for) him'. ṣubb is a doubled verb like ḥuṭṭ 'put'. To refuse more, say bas, mashkūr and shake the cup.",
+  "tip": "A host gives orders with imperatives: tfaẓẓal igʿid 'please sit', yīb id-dalla 'bring the pot', ṣubb-lah 'pour (for) him'. ṣubb is doubled like ḥuṭṭ 'put'. -ha is 'it' for a feminine thing: aḥibbha 'I love it (coffee)'. To refuse more, say bas, mashkūr and shake the cup.",
   "grammar": "recycle: imperatives (tfaẓẓal igʿid, yīb, ṣubb-lah) and object -ha (aḥibbha)",
   "dialogue": [
    [
@@ -667,11 +667,11 @@
     ""
    ],
    [
-    "تفضل اقعد",
-    "tfaẓẓal igʿid",
-    "please sit down (to a man)",
-    "تفضل اجلس",
-    "to a woman: tfaẓẓali igʿidi (تفضلي اقعدي)"
+    "يعرف",
+    "yaʿarf",
+    "he knows; he knows how to (+ a verb)",
+    "يعرف",
+    "yaʿarf yhizz il-finjān 'he knows to shake the cup'; she knows: taʿarf (تعرف)"
    ],
    [
     "أحبها",
@@ -826,8 +826,8 @@
   "stage": 2,
   "title": "Incense, and stay for dinner",
   "goal": "Bū Rāshid passes you the incense burner and insists you stay for dinner",
-  "tip": "Object endings sit on imperatives: garribah ṣōbak 'bring it close to you'. tbakhkhar 'perfume yourself with incense' is an imperative too. bala means 'without': bala ʿasha 'without dinner'. bititʿashsha wiyyāna 'you'll have dinner with us' is a friendly order.",
-  "grammar": "recycle: imperatives (tbakhkhar, khudh) and object endings (garribah)",
+  "tip": "Object endings sit on imperatives: garrbah ṣōbak 'bring it close to you'. tbakhkhar 'perfume yourself with incense' is an imperative too. bala means 'without': bala ʿasha 'without dinner'. bititʿashsha wiyyāna 'you'll have dinner with us' is a friendly order.",
+  "grammar": "recycle: imperatives (tbakhkhar, khudh) and object endings (garrbah)",
   "dialogue": [
    [
     "A",
@@ -844,7 +844,7 @@
    [
     "A",
     "خذ المدخن وقربه صوبك",
-    "khudh il-madkhan w garribah ṣōbak",
+    "khudh il-madkhan w garrbah ṣōbak",
     "Take the burner and hold it close to you."
    ],
    [
@@ -896,10 +896,10 @@
    ],
    [
     "قربه",
-    "garribah",
+    "garrbah",
     "bring it closer (a masculine thing) (to a man)",
     "قربه",
-    "to a woman: garribīh (قربيه); garribah ṣōbak 'bring it close to you'"
+    "to a woman: garrbīh (قربيه); garrbah ṣōbak 'bring it close to you'"
    ],
    [
     "زين جي؟",
@@ -954,9 +954,9 @@
    ],
    [
     "B",
-    "الله يخليك، عندي محاضرة الصبح",
-    "allāh ykhallīk, ʿindi muḥāẓra ṣ-ṣubḥ",
-    "That's kind of you, but I've got a lecture in the morning."
+    "الله يخليك، عندي محاضرة الصبح. لازم أقوم بدري",
+    "allāh ykhallīk, ʿindi muḥāẓra ṣ-ṣubḥ. lāzim agūm badri",
+    "That's kind of you, but I've got a lecture in the morning. I have to get up early."
    ],
    [
     "A",
@@ -1006,11 +1006,11 @@
     "to one man: igʿid (اقعد); to one woman: igʿidi (اقعدي); UAE also: iylisu (ايلسوا)"
    ],
    [
-    "عندي محاضرة",
-    "ʿindi muḥāẓra",
-    "I've got a lecture, I've got a class",
-    "عندي محاضرة",
-    ""
+    "أقوم",
+    "agūm",
+    "I get up",
+    "أقوم / أنهض",
+    "lāzim agūm badri 'I have to get up early'; get up! (to a man): gūm (قوم)"
    ],
    [
     "تزورنا",
