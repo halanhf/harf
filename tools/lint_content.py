@@ -17,6 +17,9 @@ TR_OK = re.compile(r"^[a-zA-Zāīūēōḥṣṭẓḍʿʼ'’ĀĪŪĒŌḤṢ�
 # words that give away fuṣḥā or another dialect inside a gulf line (warnings: some have rare legitimate gulf uses)
 MSA = {"سوف", "لن", "لم", "ليس", "ليست", "هل", "الذي", "التي", "الذين", "ماذا", "لماذا", "اريد", "الان", "انني", "لكي", "حسنا", "ايضا", "جدا"}
 OTHER = {"عايز", "عاوز", "دلوقتي", "ازيك", "بدي", "بدك", "بدها", "هلق", "هيك", "كتير", "منيح", "كويس", "فين", "بتاع", "اوي", "حاجه", "عشان ايه", "دي", "ده", "كده", "هيدا", "هاد", "شنو هاد", "تبغى", "ابغى", "ايش"}
+# source names the course must never show live in an untracked local file (one per line)
+_pf = root / "tools" / "private_markers.txt"
+PRIVATE = "".join("|" + re.escape(w.strip()) for w in (_pf.read_text(encoding="utf-8").splitlines() if _pf.exists() else []) if w.strip())
 FIELDS = {"id", "stage", "title", "goal", "tip", "dialogue", "items", "grammar", "culture", "task", "receptive"}
 
 def units_of(n):
@@ -52,7 +55,7 @@ def main():
                 if k in u and not (isinstance(u[k], str) and 0 < len(u[k]) <= mx): E(f"{k} empty or over {mx} chars")
             dl = u.get("dialogue"); it = u.get("items")
             shown = json.dumps(u, ensure_ascii=False)  # everything here reaches the learner
-            mk = re.search(r"native[ -]check|native queue|\[weak\]|\(U\)|\bU\b[,;)\x22]|TODO|course lead|\bS: |\bC: |attest|Gumar", shown)
+            mk = re.search(r"(?:native[ -]check|native queue|\[weak\]|\(U\)|\bU\b[,;)\x22]|TODO|course lead|\bS: |\bC: |attest|Gumar" + PRIVATE + r")", shown)
             if mk: E(f"writer-only marker shown to the learner: {mk.group(0)!r} (move it to the writer log)")
             if "receptive" in u and not (isinstance(u["receptive"], list) and all(isinstance(i, int) and 0 <= i < len(it or []) for i in u["receptive"]) and len(set(u["receptive"])) == len(u["receptive"])): E("receptive must list item indexes")
             if not (isinstance(dl, list) and 3 <= len(dl) <= 10): E("dialogue must have 3-10 lines"); dl = []

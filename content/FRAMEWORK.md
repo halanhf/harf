@@ -176,7 +176,7 @@ From here each lesson marks about 3 (B2) or 4 (C1) items receptive (STYLE §13),
 
 ### Stage 5 (C1): s5u001–s5u090
 
-C1 grammar categories come from the table of contents of a published Emirati Arabic reference grammar. Only the contents page was read. **Don't draft s5 grammar labels or grammar notes until the book is in hand; draft functions, dialogues and tasks first.**
+C1 grammar categories come from the table of contents of a published comprehensive grammar of Emirati Arabic. Only the contents page was read. **Don't draft s5 grammar labels or grammar notes until the book is in hand; draft functions, dialogues and tasks first.**
 
 | Units | Grammar point | Functions and situations | Culture |
 |---|---|---|---|
@@ -475,11 +475,11 @@ Reading rules: ids `r1-01` … `r5-14`; within a level, order them by batch so e
 10. **Taboo and sensitivity:** descent labels, animal insults, the ṭalāg and ḥarām oaths, asking after a man's wife, khaddāma vs ʿāmla.
 11. **Proverbs:** Arabic script for The National's 2013 Emirati set; which proverbs younger people still say.
 12. **Facts:** the current UAE and Kuwaiti weekends, national day dates, any government, bank or rental procedure used in a lesson.
-13. **C1 grammar:** all of it, until a full Emirati reference grammar is bought and read.
+13. **C1 grammar:** all of it, until a full Emirati grammar is available.
 14. **Fuṣḥā track:** a verified frequency ranking (KELLY or Buckwalter must be obtained); Eastern vs Western digits on Gulf signs; Hijri dates on UAE and Kuwaiti documents.
 15. **Scope numbers:** every lesson, item, minute and hour estimate in this file (E).
 
-Five purchases or downloads would close most of this list (S, report): Holes, *Colloquial Arabic of the Gulf*; two published Emirati grammars; a Gulf Arabic-English dictionary; the CODA* seed lexicon (manual download); Hanan Al Fardan's *Spoken Emirati Phrasebook* for formula replies.
+Five purchases or downloads would close most of this list (S, report): a recent reference grammar of Gulf Arabic and of Emirati; a Gulf Arabic-English dictionary; the CODA* seed lexicon (manual download); Hanan Al Fardan's *Spoken Emirati Phrasebook* for formula replies.
 
 ## 15. Responses to review
 

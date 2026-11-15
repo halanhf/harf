@@ -4,3 +4,6 @@ __pycache__/
 
 # review sheets cite private reference sources: kept local only
 content/review/
+
+# names of private sources, checked by the linter but never published
+tools/private_markers.txt
