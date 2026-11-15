@@ -47,7 +47,7 @@
     "A",
     "لا والله. لازم يسوون لك أشعة، يمكن شي خطير",
     "la wallāh. lāzim ysawwūn-lak ashiʿʿa, yimkin shay khaṭīr",
-    "No way. They have to do an X-ray on you. It could be something serious."
+    "No way. You need an X-ray. It could be something serious."
    ],
    [
     "B",
@@ -76,7 +76,7 @@
     "tigdar tḥarrik-ha?",
     "can you move it (f.)? (to a man)",
     "هل تستطيع تحريكها؟",
-    "to a woman: tigdarīn tḥarrkīn-ha? (تقدرين تحركينها؟); a masculine thing: tigdar tḥarrikah?"
+    "to a woman: tigdarīn tḥarrkīnha? (تقدرين تحركينها؟); a masculine thing: tigdar tḥarrkah?"
    ],
    [
     "مكسورة",
@@ -104,7 +104,7 @@
     "ashiʿʿa",
     "an X-ray",
     "أشعة سينية",
-    "ysawwūn-lak ashiʿʿa = they do an X-ray on you (to a man)"
+    "ysawwūn-lak ashiʿʿa = they'll X-ray you, you need an X-ray (to a man)"
    ],
    [
     "شي خطير",
@@ -117,7 +117,7 @@
     "سوق شوي شوي",
     "sūg shwayy shwayy",
     "drive slowly (to a man)",
-    "قد ببطء",
+    "قد السيارة ببطء",
     "to a woman: sūgi shwayy shwayy (سوقي شوي شوي)"
    ]
   ],
@@ -262,7 +262,7 @@
    ],
    [
     "B",
-    "صباح النور. طحت وانا ألعب كورة",
+    "صباح النور. طحت وأنا ألعب كورة",
     "ṣabāḥ in-nūr. ṭiḥt w ana alʿab kūra",
     "Morning. I fell while I was playing football."
    ],
@@ -312,7 +312,7 @@
     "to a woman: shu ṣār fi īdich? (شو صار في إيدج؟)"
    ],
    [
-    "وانا ألعب كورة",
+    "وأنا ألعب كورة",
     "w ana alʿab kūra",
     "while I was playing football",
     "بينما كنت ألعب كرة القدم",
@@ -367,7 +367,7 @@
   "id": "s3u099",
   "stage": 3,
   "title": "My wallet's gone!",
-  "goal": "After coffee with Sēf you can't find your wallet: say what's in it, think back to where you last had it and decide what to do",
+  "goal": "After coffee with Sēf at a mall café you can't find your wallet: say what's in it, think back to where you last had it and decide what to do",
   "tip": "ẓāʿ 'it got lost' needs no doer, like ṭāḥ 'it fell': ẓāʿ būki 'my wallet's gone'. ẓayyaʿt 'I lost' says who did it. insarag 'it got stolen' is Form VII, like inkisar 'it broke'. Set the scene with kint gāʿid: kint gāʿid adfaʿ 'I was paying'.",
   "grammar": "recycle: ẓāʿ 'it got lost' vs ẓayyaʿt 'I lost'; Form VII (insarag); kint gāʿid for the background",
   "dialogue": [
@@ -491,7 +491,7 @@
   "stage": 3,
   "title": "At the police station",
   "goal": "At a Dubai police station, report your lost wallet to an officer: say when and where it went missing and describe it",
-  "tip": "Describe a lost thing with kān: kān fīh 'there was … in it', kān fīh khams miya dirham. Say what you don't know with an indirect question: ma adri wēn ṭāḥ 'I don't know where it fell'. ẓāyiʿ 'lost' is a participle, like rāyiḥ: a feminine thing is ẓāyʿa.",
+  "tip": "Describe a lost thing with kān: kān fīh 'there was … in it', kān fīh khams miya dirham. Say what you don't know with an indirect question: ma adri wēn ṭāḥ 'I don't know where I dropped it'. ẓāyiʿ 'lost' is a participle, like rāyiḥ: a feminine thing is ẓāyʿa.",
   "grammar": "recycle: kān for a past description (kān fīh); indirect questions (ma adri wēn); participles (ẓāyiʿ)",
   "dialogue": [
    [
@@ -508,9 +508,9 @@
    ],
    [
     "B",
-    "اليوم الظهر في المول. بس ما أدري وين طاح",
-    "il-yōm iẓ-ẓuhur fi l-mōl. bas ma adri wēn ṭāḥ",
-    "Today at midday, at the mall. But I don't know where it fell."
+    "اليوم الظهر في كوفي في المول. بس ما أدري وين طاح",
+    "il-yōm iẓ-ẓuhur fi kōfi fi l-mōl. bas ma adri wēn ṭāḥ",
+    "Today at midday, at a café in the mall. But I don't know where I dropped it."
    ],
    [
     "A",
@@ -533,7 +533,7 @@
    [
     "B",
     "تفضل. تتوقع بتلقونه؟",
-    "tfaẓẓal. titwaggaʿ bitligūnah?",
+    "tfaẓẓal. titwaggaʿ bitilgūnah?",
     "Here you go. Do you think you'll find it?"
    ],
    [
@@ -549,7 +549,7 @@
     "abi aballigh ʿan",
     "I'd like to report (something to the police)",
     "أريد أن أبلغ عن",
-    "I reported it to the police: ballaght ish-shurṭa (بلغت الشرطة)"
+    "I told the police, I reported (it) to the police: ballaght ish-shurṭa (بلغت الشرطة)"
    ],
    [
     "ضايع",
@@ -605,7 +605,7 @@
     "ysallmūn",
     "they hand in, they hand over",
     "يسلمون",
-    "he hands in: ysallim (يسلّم); not ysallim ʿala = says hi to"
+    "he hands in: ysallim (يسلّم); don't mix it up with ysallim ʿala (يسلم على) = he says hi to"
    ]
   ],
   "culture": "Dubai Police say they returned more than 171,000 found items to their owners in 2025. Found things can be handed in at police stations and at some shopping centres, so it's worth reporting a loss even when you think it's gone for good."
