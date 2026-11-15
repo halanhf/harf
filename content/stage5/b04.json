@@ -3,7 +3,7 @@
   "id": "s5u047",
   "stage": 5,
   "title": "Wāyid ʿalēk! Saying the opposite",
-  "goal": "In the university library, Sēf turns up late to your group project with one slide; tease him with irony, then share out the rest of the work",
+  "goal": "In the university library, your classmate Mājid turns up late to your group project with one slide; tease him with irony, then share out the work",
   "tip": "Irony says the opposite with a straight face. To a friend who has done almost nothing: wāyid ʿalēk! 'steady on, don't overdo it!' (lit. it's too much for you). Mock sympathy works the same way: sāʿtēn? yā ḥalīlak! 'two hours? you poor thing!'. Use it with friends who can laugh back.",
   "grammar": "irony: saying the opposite of what you mean (wāyid ʿalēk)",
   "dialogue": [
@@ -270,7 +270,7 @@
   "id": "s5u049",
   "stage": 5,
   "title": "The uncle's jokes",
-  "goal": "In Bū Rāshid's majlis, with Sēf there, he jokes that Sēf will come home talking like a foreigner; laugh along, add a joke, stay respectful",
+  "goal": "In Bū Rāshid's majlis, Sēf is on a video call from abroad, and his uncle jokes he'll come home talking like a foreigner; laugh along and stay respectful",
   "tip": "When an elder jokes, join in at your own expense or play along with his joke, and never turn it back on him. ana baʿallmah il-ʿarabi 'I'll teach him Arabic' makes him laugh because it's the wrong way round. When he turns serious, follow him: ṣidagt yā ʿammi.",
   "grammar": "irony with elders: playing along respectfully (ana baʿallmah il-ʿarabi, ṣār ygūl)",
   "dialogue": [
@@ -278,7 +278,7 @@
     "A",
     "يا هلا! تعال يا ولدي، نحن قاعدين نضحك على سيف",
     "yā hala! taʿāl yā wildi, niḥin gāʿdīn niẓḥak ʿala Sēf",
-    "Welcome! Come in, son; we're having a laugh at Sēf's expense."
+    "Welcome! Come in, son; we're having a laugh at Sēf (on the video call)."
    ],
    [
     "B",
@@ -330,9 +330,9 @@
    ],
    [
     "B",
-    "صدقت يا عمي. بنشتاق له وايد",
-    "ṣidagt yā ʿammi. binishtāg-lah wāyid",
-    "That's true, uncle. We'll miss him a lot."
+    "صدقت يا عمي. نشتاق له وايد",
+    "ṣidagt yā ʿammi. nishtāg-lah wāyid",
+    "That's true, uncle. We miss him a lot."
    ]
   ],
   "items": [
@@ -412,15 +412,15 @@
   "id": "s5u050",
   "stage": 5,
   "title": "Enough now: where banter stops",
-  "goal": "At a karak stand, Fahad's teasing of Sēf goes too far in front of strangers; step in kindly, stop it, and help Fahad put it right",
+  "goal": "At a karak stand during Fahad's visit, his teasing of your classmate Mājid goes too far in front of strangers; step in, stop it, and help Fahad put it right",
   "tip": "To stop a joke without a fight: khalāṣ ʿād 'that's enough now', then say why: mub jiddām in-nās 'not in front of people', il-ḥīn mub wagtah 'now's not the time'. zawwadt-ha means 'you went too far', and Fahad uses the same words for 'I went too far' with ḥaggak ʿalay 'I'm sorry'.",
   "grammar": "where banter stops: khalāṣ ʿād, zawwadt-ha, mub wagtah",
   "dialogue": [
    [
     "A",
-    "سيف بيسوق في الغربة؟ هذا اللي رسب في الليسن ثلاث مرات!",
-    "Sēf biysūg fi l-ghurba? hādha illi risab fi l-lēsin thalāth marrāt!",
-    "Sēf's going to drive abroad? This is the guy who failed his driving test three times!"
+    "ماجد يسوق بروحه للجامعة؟ هذا اللي رسب في الليسن ثلاث مرات!",
+    "Mājid ysūg b-rūḥah lil-jāmʿa? hādha illi risab fi l-lēsin thalāth marrāt!",
+    "Mājid drives himself to uni now? This is the guy who failed his driving test three times!"
    ],
    [
     "B",
@@ -436,9 +436,9 @@
    ],
    [
     "B",
-    "فهد، خلاص عاد. سيف ما ضحك",
-    "Fahad, khalāṣ ʿād. Sēf ma ẓiḥak",
-    "Fahad, that's enough now. Sēf isn't laughing."
+    "فهد، خلاص عاد. ماجد ما ضحك",
+    "Fahad, khalāṣ ʿād. Mājid ma ẓiḥak",
+    "Fahad, that's enough now. Mājid isn't laughing."
    ],
    [
     "A",
@@ -466,15 +466,15 @@
    ],
    [
     "A",
-    "سيف، حقك علي يا خوي. زودتها",
-    "Sēf, ḥaggak ʿalay yā khūy. zawwadt-ha",
-    "Sēf, I'm sorry, bro. I went too far."
+    "ماجد، حقك علي يا خوي. زودتها",
+    "Mājid, ḥaggak ʿalay yā khūy. zawwadt-ha",
+    "Mājid, I'm sorry, bro. I went too far."
    ],
    [
     "B",
     "يلا، الكرك اليوم على فهد!",
     "yalla, il-karak il-yōm ʿala Fahad!",
-    "(to Sēf) Come on, karak's on Fahad today!"
+    "(to Mājid) Come on, karak's on Fahad today!"
    ]
   ],
   "items": [
@@ -1351,8 +1351,8 @@
   "id": "s5u057",
   "stage": 5,
   "title": "Time for a new car?",
-  "goal": "At a karak stand, Sēf says it's time to change your old car and pushes a big one; argue for a small, cheap one, and agree to see a car he knows of",
-  "tip": "Persuasion between friends goes both ways. Sēf pushes (ismaʿni…, yā shēkh, ish-shakil muhimm); you answer with your own priorities: ish-shakil mub kill shay 'looks aren't everything', ma abi aṣrif wāyid. Before you say yes, check: la ykūn fīha shay? 'there's nothing wrong with it, is there?'",
+  "goal": "At a karak stand, your classmate Khalfān says it's time to change your old car and pushes a big one; argue for a small one, and agree to see one he knows",
+  "tip": "Persuasion between friends goes both ways. Khalfān pushes (ismaʿni…, yā shēkh, ish-shakil muhimm); you answer with your own priorities: ish-shakil mub kill shay 'looks aren't everything', ma abi aṣrif wāyid. Before you say yes, check: la ykūn fīha shay? 'there's nothing wrong with it, is there?'",
   "grammar": "persuading a friend: pushing and pushing back (ismaʿni…, mub kill shay)",
   "dialogue": [
    [
@@ -1490,7 +1490,7 @@
   "id": "s5u058",
   "stage": 5,
   "title": "Cash today? Now you're talking",
-  "goal": "At the seller's house, look over the small car Sēf found for you, resist his pressure, and agree a small discount for paying cash after the inspection",
+  "goal": "At the seller's house, look over the small car Khalfān found for you, resist his pressure, and agree a small discount for paying cash after the inspection",
   "tip": "Answer pressure calmly: if he says someone else wants it, let him (khallah yākhidh-ha). Show you're serious (ana jādd), then offer what he wants most in return for what you want: idha l-faḥiṣ ṭilaʿ zēn, adfaʿ-lak kāsh il-yōm, bas tnazzil shwayy.",
   "grammar": "negotiating: calling a bluff, then trading (khallah yākhidh-ha, idha…, bas…)",
   "dialogue": [

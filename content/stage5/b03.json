@@ -139,7 +139,7 @@
   "id": "s5u033",
   "stage": 5,
   "title": "Taking your leave, the old way",
-  "goal": "In Bū Rāshid's majlis, with Sēf there, hear how visitors entered and left a sheikh's majlis in the old days, and take your leave the same way",
+  "goal": "In Bū Rāshid's majlis, with Rāshid there, hear how visitors entered and left a sheikh's majlis in the old days, and take your leave the same way",
   "tip": "Before leaving an elder or a host, ask, don't announce: ṭāl ʿumrak, idha ma shay lāzim, binitrakhkhaṣ 'sir, if there's nothing you need, we'll take our leave'. The host may keep you (igʿid 'stay') or let you go with allāh ywaffigkum, and you answer āmīn.",
   "grammar": "taking leave from an elder: ṭāl ʿumrak, idha ma shay lāzim, binitrakhkhaṣ",
   "dialogue": [
@@ -412,7 +412,7 @@
   "id": "s5u035",
   "stage": 5,
   "title": "Oops, sorry! Bravo!",
-  "goal": "At a five-a-side pitch, Rāshid and Sēf react to your game with English interjections; then agree which ones to keep away from Rāshid's dad",
+  "goal": "At a five-a-side pitch, Rāshid and his friend Mājid react to your game with English interjections; then agree which ones to keep away from Rāshid's dad",
   "tip": "With friends your age, borrowed interjections are normal: ūps!, sōri, wāw!, brāvo ʿalēk!, yēs!. With elders, switch to the Arabic ones: is-samūḥa for sōri, yā salām or mā shāʼ allāh for wāw. Rāshid's rule: il-ingilīzi lil-malʿab, w il-ʿarabi lil-majlis.",
   "grammar": "borrowed interjections (sōri, ūps, wāw, brāvo) and their Arabic counterparts",
   "dialogue": [
@@ -696,7 +696,7 @@
   "id": "s5u037",
   "stage": 5,
   "title": "Tislam īdak!",
-  "goal": "At lunch in Bū Rāshid's majlis, with Sēf there, praise the fish he caught, thank him the way guests do, and refuse a third helping politely",
+  "goal": "At lunch in Bū Rāshid's majlis, with Rāshid there, praise the fish he caught, thank him the way guests do, and refuse a third helping politely",
   "tip": "Thank a host for food he made with tislam īdak 'bless your hands'; he answers bil-ʿāfya, and you say allāh yʿāfīk. Praise it with ma ʿalēk zōd 'it couldn't be better', and refuse more with allāh la yhīnak, bas shbaʿt. If he says hādha min ṭībak, he is returning the compliment.",
   "grammar": "thanks and praise for a host: ma ʿalēk zōd, allāh la yhīnak (recycle: tislam īdak)",
   "dialogue": [
@@ -738,9 +738,9 @@
    ],
    [
     "A",
-    "وين شبعت؟ ما أكلت شي! سيف، حط له",
-    "wēn shbaʿt? ma akalt shay! Sēf, ḥuṭṭ lah",
-    "Full? You've hardly eaten! Sēf, give him some more."
+    "وين شبعت؟ ما أكلت شي! راشد، حط له",
+    "wēn shbaʿt? ma akalt shay! Rāshid, ḥuṭṭ lah",
+    "Full? You've hardly eaten! Rāshid, give him some more."
    ],
    [
     "B",
@@ -750,9 +750,9 @@
    ],
    [
     "A",
-    "الله يسلمك. على كل حال، القهوة! سيف، صب لربعك",
-    "allāh ysallmak. ʿala kill ḥāl, il-gahwa! Sēf, ṣubb l-rabʿak",
-    "God keep you. Anyway, coffee! Sēf, pour for your friends."
+    "الله يسلمك. على كل حال، القهوة! راشد، صب لربعك",
+    "allāh ysallmak. ʿala kill ḥāl, il-gahwa! Rāshid, ṣubb l-rabʿak",
+    "God keep you. Anyway, coffee! Rāshid, pour for your friends."
    ]
   ],
   "items": [
@@ -824,7 +824,7 @@
   "stage": 5,
   "title": "Same news, office style",
   "goal": "At the office, Maryam helps you turn \"the report's late, long story\" into something you can say in Bū Saʿīd's meeting",
-  "tip": "In a meeting, keep Gulf grammar but borrow fuṣḥā words, and keep their q: fi l-ḥaqīqa 'in fact', nitwaqqaʿ 'we expect'. Give the reason with bi-sabab + noun, not ʿashān: bi-sabab taʼakhkhur il-bayānāt. With Sēf you'd still say it-taqrīr biyitʼakhkhar, is-sālfa ṭawīla!",
+  "tip": "In a meeting, keep Gulf grammar but borrow fuṣḥā words, and keep their q: fi l-ḥaqīqa 'in fact', nitwaqqaʿ 'we expect'. Give the reason with bi-sabab + noun, not ʿashān: bi-sabab taʼakhkhur il-bayānāt. With Mājid you'd still say it-taqrīr biyitʼakhkhar, is-sālfa ṭawīla!",
   "grammar": "register shifting: everyday → office (fi l-ḥaqīqa, bi-sabab, nitwaqqaʿ; q kept)",
   "dialogue": [
    [
@@ -841,9 +841,9 @@
    ],
    [
     "A",
-    "بيني وبينك، هذا كلامك ويا سيف! في الاجتماع لازم تكون رسمي أكثر",
-    "bēni w bēnak, hādha kalāmak wiyya Sēf! fi l-ijtimāʿ lāzim tkūn rasmi akthar",
-    "Between you and me, that's how you talk with Sēf! In the meeting you need to be more formal."
+    "بيني وبينك، هذا كلامك ويا ماجد! في الاجتماع لازم تكون رسمي أكثر",
+    "bēni w bēnak, hādha kalāmak wiyya Mājid! fi l-ijtimāʿ lāzim tkūn rasmi akthar",
+    "Between you and me, that's how you talk with Mājid! In the meeting you need to be more formal."
    ],
    [
     "B",
@@ -883,9 +883,9 @@
    ],
    [
     "B",
-    "الله لا يهينج! يعني في المكتب بسبب، وويا سيف عشان!",
-    "allāh la yhīnich! yaʿni fi l-maktab bi-sabab, w wiyya Sēf ʿashān!",
-    "Thanks so much! So at the office bi-sabab, and with Sēf ʿashān!"
+    "الله لا يهينج! يعني في المكتب بسبب، وويا ماجد عشان!",
+    "allāh la yhīnich! yaʿni fi l-maktab bi-sabab, w wiyya Mājid ʿashān!",
+    "Thanks so much! So at the office bi-sabab, and with Mājid ʿashān!"
    ]
   ],
   "items": [
@@ -961,7 +961,7 @@
   "id": "s5u039",
   "stage": 5,
   "title": "You sound like the news!",
-  "goal": "In Bū Rāshid's majlis, with Sēf there, you answer him in office Arabic; he teases you, and you switch back to majlis talk",
+  "goal": "In Bū Rāshid's majlis, with Rāshid there, you answer him in office Arabic; he teases you, and you switch back to majlis talk",
   "tip": "Office words sound stiff in the majlis: yitqaddam bi-shakl mumtāz earns you chinnak mudhīʿ akhbār 'you sound like a newsreader'. Switch down to plain talk: ish-shughul zēn, bas fīh ẓaghiṭ wāyid. In a majlis, ma yiḥtāj rasmiyyāt 'no need for formalities'.",
   "grammar": "register shifting: office → majlis (recycle: chinnak + noun)",
   "dialogue": [
@@ -1473,13 +1473,6 @@
     "a masculine thing: ma lah tarjama (ما له ترجمة)"
    ],
    [
-    "منطقي",
-    "manṭiqi",
-    "(that) makes sense, logical",
-    "منطقي",
-    "q kept, as in fuṣḥā"
-   ],
-   [
     "بأي لغة؟",
     "b-ay lugha?",
     "in which language?",
@@ -1695,9 +1688,9 @@
    ],
    [
     "B",
-    "زين، بقول لسيف وبو راشد يسمعونها",
-    "zēn, bagūl l-Sēf w Bū Rāshid yismaʿūnha",
-    "Great, I'll tell Sēf and Bū Rāshid to listen to it."
+    "زين، بقول لفهد وبو راشد يسمعونها",
+    "zēn, bagūl l-Fahad w Bū Rāshid yismaʿūnha",
+    "Great, I'll tell Fahad and Bū Rāshid to listen to it."
    ],
    [
     "A",
@@ -1918,7 +1911,7 @@
     ""
    ]
   ],
-  "task": "This week: with a tutor or exchange partner, do a 10-minute mock radio interview about your Arabic. They ask in a formal style; you answer in educated Gulf Arabic (bin-nisba li, min nāḥya…, bi-shakl ʿāmm). Then switch: off air, retell the interview for 2 minutes the way you'd tell Sēf, mixing in as much English as he would.",
+  "task": "This week: with a tutor or exchange partner, do a 10-minute mock radio interview about your Arabic. They ask in a formal style; you answer in educated Gulf Arabic (bin-nisba li, min nāḥya…, bi-shakl ʿāmm). Then switch: off air, retell the interview for 2 minutes the way you'd tell Sēf on a video call, mixing in as much English as he would.",
   "receptive": [
    1,
    2,
