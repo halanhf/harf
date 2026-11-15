@@ -333,11 +333,11 @@
     "fi sh-shams = in the sun"
    ],
    [
-    "هالحر",
-    "hal-ḥarr",
-    "this heat",
-    "هذا الحر",
-    ""
+    "أنام متأخر",
+    "anām mitʼakhkhir",
+    "I go to bed late, I stay up late",
+    "أنام متأخرًا",
+    "ana mitʿawwid anām mitʼakhkhir = I'm used to going to bed late"
    ],
    [
     "من صغري",
@@ -374,54 +374,54 @@
   "id": "s3u050",
   "stage": 3,
   "title": "Driving lessons",
-  "goal": "Tell Sēf how your driving lessons are going and when your test is",
+  "goal": "Ask Sēf how his little brother's driving lessons are going and when his test is, and say how you got around in London",
   "tip": "A verbal noun names an activity: sāg 'drove' → is-swāga 'driving', diras 'studied' → id-dirāsa 'studying', zār 'visited' → iz-zyāra 'the visit'. Use it like any noun: is-swāga hni ṣaʿba 'driving here is hard', imtiḥān is-swāga 'the driving test'. Learn each one with its verb.",
   "grammar": "verbal noun: is-swāga 'driving' (sāg, ysūg)",
   "dialogue": [
    [
-    "A",
-    "شو أخبار السواقة؟",
-    "shu akhbār is-swāga?",
-    "How's the driving going?"
-   ],
-   [
     "B",
-    "صعبة وايد! هني الكل يسوق بسرعة",
-    "ṣaʿba wāyid! hni l-kill ysūg b-surʿa",
-    "Really hard! Everyone here drives fast."
+    "شو أخبار السواقة ويا أخوك الصغير؟",
+    "shu akhbār is-swāga wiyya akhūk iṣ-ṣghīr?",
+    "How's your little brother getting on with his driving?"
    ],
    [
     "A",
-    "صج. وفي لندن ما كنت تسوق؟",
-    "ṣij. w fi Landan ma kint tsūg?",
-    "True. And didn't you drive in London?"
+    "صعبة وايد عليه! يقول هني الكل يسوق بسرعة",
+    "ṣaʿba wāyid ʿalēh! ygūl hni l-kill ysūg b-surʿa",
+    "He's finding it really hard! He says everyone here drives fast."
    ],
    [
     "B",
-    "لا، كنت أروح بالباص وبالمترو",
-    "la, kint arūḥ bil-bāṣ w bil-mitrō",
-    "No, I used to take the bus and the tube."
+    "صج. أنا بعد كنت خايف شوي أول مرة",
+    "ṣij. ana baʿad kint khāyif shwayy awwal marra",
+    "True. I was a bit nervous the first time too."
    ],
    [
     "A",
-    "زين. ومتى امتحان السواقة؟",
-    "zēn. w mita imtiḥān is-swāga?",
-    "Right. And when's the driving test?"
+    "وفي لندن ما كنت تسوق؟",
+    "w fi Landan ma kint tsūg?",
+    "And didn't you drive in London?"
    ],
    [
     "B",
-    "الأسبوع الياي إن شاء الله. خايف شوي",
-    "il-usbūʿ il-yāy in shāʼ allāh. khāyif shwayy",
-    "Next week, God willing. I'm a bit nervous."
+    "لا، كنت أروح بالباص وبالمترو. ومتى امتحان السواقة حقه؟",
+    "la, kint arūḥ bil-bāṣ w bil-mitrō. w mita imtiḥān is-swāga ḥaggah?",
+    "No, I used to take the bus and the tube. And when's his driving test?"
    ],
    [
     "A",
-    "لا تخاف. أول ما تاخذ الرخصة، نسوق في البر!",
-    "la tkhāf. awwal ma tākhidh ir-rukhṣa, nsūg fi l-barr!",
-    "Don't worry. As soon as you get your licence, we'll go driving in the desert!"
+    "الأسبوع الياي إن شاء الله",
+    "il-usbūʿ il-yāy in shāʼ allāh",
+    "Next week, God willing."
    ],
    [
     "B",
+    "قول له لا يخاف. أول ما ياخذ الرخصة، نسوق في البر!",
+    "gūl-lah la ykhāf. awwal ma yākhidh ir-rukhṣa, nsūg fi l-barr!",
+    "Tell him not to worry. As soon as he gets his licence, we'll go driving in the desert!"
+   ],
+   [
+    "A",
     "البر؟ لا لا، السواقة في البر بعدين!",
     "il-barr? la la, is-swāga fi l-barr baʿdēn!",
     "The desert? No, no, desert driving can wait!"
@@ -468,7 +468,7 @@
     "ir-rukhṣa",
     "the (driving) licence",
     "رخصة القيادة",
-    "tākhidh ir-rukhṣa = you get your licence; you'll also hear il-laysan (الليسن)"
+    "yākhidh ir-rukhṣa = he gets his licence; you'll also hear il-lēsan (الليسن)"
    ],
    [
     "ما كنت تسوق؟",
@@ -724,11 +724,11 @@
     ""
    ],
    [
-    "الأرقام",
-    "il-argām",
-    "the figures, the numbers",
-    "الأرقام",
-    "one number: ragam (رقم)"
+    "يقولون لي",
+    "ygūlūn-li",
+    "they tell me, they say to me",
+    "يقولون لي",
+    "kān il-mafrūẓ ygūlūn-li = they should have told me; he tells me: ygūl-li (يقول لي)"
    ],
    [
     "الإيميل حق المدير",
@@ -743,21 +743,21 @@
   "id": "s3u053",
   "stage": 3,
   "title": "You don't have to bring anything",
-  "goal": "Sēf passes on his uncle's dinner invitation: find out what you don't have to do and what you mustn't do",
+  "goal": "Sēf passes on his uncle's invitation to a big dinner with lots of guests: find out what you don't have to do and what you mustn't do",
   "tip": "mub lāzim + verb usually means 'you don't have to': mub lāzim tyīb shay 'no need to bring anything'. To forbid something, put ma after lāzim: lāzim ma titʼakhkhar 'you mustn't be late'. mub lāzim can also mean 'shouldn't, mustn't', so lāzim ma is the clear way to say 'mustn't'.",
   "grammar": "mub lāzim 'don't have to' vs lāzim ma 'mustn't'",
   "dialogue": [
    [
     "A",
-    "عمي بو راشد عازمنا على العشا يوم الخميس",
-    "ʿammi Bū Rāshid ʿāzimna ʿala l-ʿasha yōm il-khamīs",
-    "My uncle Bū Rāshid has invited us to dinner on Thursday."
+    "عمي بو راشد عازمنا على عشا كبير يوم الخميس، وفي ضيوف وايد",
+    "ʿammi Bū Rāshid ʿāzimna ʿala ʿasha kbīr yōm il-khamīs, w fī ẓyūf wāyid",
+    "My uncle Bū Rāshid has invited us to a big dinner on Thursday, and there'll be lots of guests."
    ],
    [
     "B",
-    "حلو! لازم أييب شي وياي؟",
-    "ḥilu! lāzim ayīb shay wiyyāy?",
-    "Great! Do I need to bring anything?"
+    "حلو! لازم أييب شي وياي هالمرة؟",
+    "ḥilu! lāzim ayīb shay wiyyāy hal-marra?",
+    "Great! Do I need to bring anything this time?"
    ],
    [
     "A",
@@ -867,7 +867,7 @@
   "id": "s3u054",
   "stage": 3,
   "title": "It's not ḥarām, it's ʿēb",
-  "goal": "At the door of Bū Rāshid's majlis, ask Sēf what's polite and what's rude",
+  "goal": "At the door of Bū Rāshid's majlis on the night of the big dinner, full of guests, check with Sēf what's polite and what's rude",
   "tip": "ʿēb + a present verb means 'it's rude to': ʿēb tmidd ryūlak ṣōb in-nās 'it's rude to stretch your legs out towards people'. ʿēb is about manners: people will think you weren't brought up well. ḥarām is about religion: Islam forbids it. So a thing can be mub ḥarām, bas ʿēb.",
   "grammar": "ʿēb + verb 'it's rude to'; ʿēb (manners) vs ḥarām (religion)",
   "dialogue": [
@@ -1057,7 +1057,7 @@
     "ḥad yṣalli",
     "someone praying, anyone who's praying",
     "أحد يصلي",
-    "ḥad = anyone, someone; nobody: maḥḥad (محد)"
+    "ḥad = anyone, someone, the same as aḥad (أحد) in ma shift aḥad; nobody: maḥḥad (محد)"
    ],
    [
     "أتوضى",
@@ -1163,9 +1163,9 @@
    ],
    [
     "B",
-    "ماشي. وطرشي لي الصور أول ما تخلصين",
-    "māshi. w ṭarrshī-li ṣ-ṣuwar awwal ma tkhallṣīn",
-    "OK. And send me the pictures as soon as you're done."
+    "ماشي. وطرشي لي الصور أول ما تخلصين، لو سمحتي",
+    "māshi. w ṭarrshī-li ṣ-ṣuwar awwal ma tkhallṣīn, law samaḥti",
+    "OK. And send me the pictures as soon as you're done, please."
    ]
   ],
   "items": [
