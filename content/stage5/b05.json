@@ -4,8 +4,8 @@
   "stage": 5,
   "title": "I've been ripped off!",
   "goal": "At an electronics shop, the laptop you bought there last week keeps switching off; complain firmly but politely, and don't leave without an answer",
-  "tip": "Complain in steps: what's wrong and since when (min awwal yōm), what you've tried (jarrabt kill shay), how you feel (aḥiss inni ingashsht, ana mnarfaz), then what you want. If they hide behind 'policy', say what you see: aḥiss innak timāṭil, and ask for il-masʼūl.",
-  "grammar": "complaining: problem, feeling, demand (aḥiss inni ingashsht, timāṭil)",
+  "tip": "Complain in steps: what's wrong and since when (min awwal yōm), what you've tried (jarrabt kill shay), how you feel (aḥiss inni inghashshēt, ana mnarfaz), then what you want. If they hide behind 'policy', say what you see: aḥiss innak timāṭil, and don't leave until il-masʼūl has looked at it.",
+  "grammar": "complaining: problem, feeling, demand (aḥiss inni inghashshēt, timāṭil)",
   "dialogue": [
    [
     "A",
@@ -40,13 +40,13 @@
    [
     "B",
     "ثلاث أسابيع؟ مب معقول! أنا طفشان، أحس إني انغشيت",
-    "thalāth asābīʿ? mub maʿgūl! ana ṭafshān, aḥiss inni ingashsht",
+    "thalāth asābīʿ? mub maʿgūl! ana ṭafshān, aḥiss inni inghashshēt",
     "Three weeks? No way! I'm sick of it; I feel I've been ripped off."
    ],
    [
     "A",
     "يا أخوي، اللابتوب عليه كفالة سنة، ما بتخسر شي",
-    "yā akhūy, il-lābtōb ʿalēh kafāla sana, ma bitikhsar shay",
+    "yā akhūy, il-lābtōb ʿalēh kafāla sana, ma bitkhsar shay",
     "Brother, the laptop has a year's warranty; you won't lose anything."
    ],
    [
@@ -70,18 +70,11 @@
   ],
   "items": [
    [
-    "انغشيت",
-    "ingashsht",
-    "I've been ripped off, I've been cheated",
-    "تعرضت للغش",
-    ""
-   ],
-   [
     "كفالة",
     "kafāla",
     "a warranty, a guarantee (on something you buy)",
-    "كفالة",
-    ""
+    "كفالة / ضمان",
+    "UAE also: ẓamān (ضمان)"
    ],
    [
     "منرفز",
@@ -113,8 +106,8 @@
    ]
   ],
   "receptive": [
-   4,
-   5
+   3,
+   4
   ]
  },
  {
@@ -159,7 +152,7 @@
     "B",
     "سلامات. ماجد، تعال. صلوا على النبي يا شباب",
     "salāmāt. Mājid, taʿāl. ṣallū ʿala n-nabi yā shabāb",
-    "Oh no, sorry. Mājid, come here. Calm down, lads; say a blessing on the Prophet."
+    "Hope you're OK. Mājid, come here. Calm down, lads; say a blessing on the Prophet."
    ],
    [
     "A",
@@ -206,7 +199,7 @@
     "aʿūdh billāh min ish-shēṭān",
     "I seek refuge in God from Satan (the reply: 'all right, I'm calming down')",
     "أعوذ بالله من الشيطان",
-    "(recognise)"
+    ""
    ],
    [
     "صلوا على النبي",
@@ -238,7 +231,6 @@
    ]
   ],
   "receptive": [
-   2,
    5,
    6
   ],
@@ -250,8 +242,8 @@
   "stage": 5,
   "title": "It was an oversight on our part",
   "goal": "On the phone, apologise formally to a client for the file with the wrong figures you sent him yesterday, and say what you've done about it",
-  "tip": "A formal apology names the mistake, owns it and promises care, with no excuses: il-khaṭaʼ min ʿindana, ma fī mubarrir, w binkūn ḥarīṣīn akthar. The other side often closes it with ḥaṣal khēr 'no harm done'.",
-  "grammar": "a formal apology (formal): il-khaṭaʼ min ʿindana, ma fī mubarrir",
+  "tip": "A formal apology names the mistake, owns it and promises care, with no excuses: il-khaṭaʼ min ʿindana, ma lah mubarrir, w binkūn ḥarīṣīn akthar. The other side often closes it with ḥaṣal khēr 'no harm done'.",
+  "grammar": "a formal apology (formal): il-khaṭaʼ min ʿindana, ma lah mubarrir",
   "dialogue": [
    [
     "B",
@@ -279,15 +271,15 @@
    ],
    [
     "B",
-    "أنا المسؤول. الخطأ من عندنا، وما في مبرر",
-    "ana l-masʼūl. il-khaṭaʼ min ʿindana, w ma fī mubarrir",
-    "I am. The mistake was ours, and there's no excuse. (formal)"
+    "أنا المسؤول. الخطأ من عندنا، وما له مبرر",
+    "ana l-masʼūl. il-khaṭaʼ min ʿindana, w ma lah mubarrir",
+    "I am. The mistake was ours, and there's no excuse for it. (formal)"
    ],
    [
     "A",
     "زين إنك اتصلت. أدري إنه مب متعمد. الغلط يصير، بس الإهمال لا",
     "zēn innak ittaṣalt. adri innah mub mitʿammid. il-ghalaṭ yṣīr, bas il-ihmāl la",
-    "Good that you called. I know it wasn't deliberate. Mistakes happen, but carelessness doesn't (have to)."
+    "Good that you called. I know it wasn't deliberate. Mistakes happen, but carelessness isn't acceptable."
    ],
    [
     "B",
@@ -323,10 +315,10 @@
     ""
    ],
    [
-    "ما في مبرر",
-    "ma fī mubarrir",
-    "there's no excuse (for it), it can't be justified (formal)",
-    "لا يوجد مبرر",
+    "ما له مبرر",
+    "ma lah mubarrir",
+    "there's no excuse for it, it can't be justified (formal)",
+    "لا مبرر له",
     ""
    ],
    [
@@ -367,27 +359,27 @@
   "id": "s5u062",
   "stage": 5,
   "title": "Cousins who won't speak",
-  "goal": "In Bū Rāshid's majlis, he tells you Rāshid and his cousin Ḥamad have fallen out, and asks you to be the go-between; agree, and plan how",
-  "tip": "Mediating starts with naming the problem gently: mithāwshīn 'they've fallen out', kill wāḥid rākib rāsah 'each one's dug his heels in'. Then offer to step in as the go-between (il-wasīṭ) before il-fitna grows, and hear each side first: basmaʿ min Rāshid awwal.",
+  "goal": "In Bū Rāshid's majlis, he tells you a joke in the family group has set Rāshid against Ḥamad, the cousin whose wedding you went to; agree to be the go-between",
+  "tip": "Mediating starts with naming the problem gently: mithāwshīn 'they've fallen out', kill wāḥid rākib rāsah 'each one's dug his heels in'. Then offer to step in (aṣalliḥ bēnhum) before il-fitna grows, and hear each side first: basmaʿ min Rāshid awwal.",
   "grammar": "mediating I: naming the quarrel, offering to step in (mithāwshīn, rākib rāsah)",
   "dialogue": [
    [
     "A",
-    "يا ولدي، أبيك في سالفة. راشد وولد عمه حمد متهاوشين",
-    "yā wildi, abīk fi sālfa. Rāshid w wild ʿammah Ḥamad mithāwshīn",
-    "Son, I need you for something. Rāshid and his cousin Ḥamad have fallen out."
+    "يا ولدي، أبيك في سالفة. راشد وحمد ولد أخوي متهاوشين",
+    "yā wildi, abīk fi sālfa. Rāshid w Ḥamad wild akhūy mithāwshīn",
+    "Son, I need you for something. Rāshid and my brother's son Ḥamad have fallen out."
    ],
    [
     "B",
-    "أفا يا عمي! شو صار بينهم؟",
-    "afa yā ʿammi! shu ṣār bēnhum?",
-    "Oh no, uncle! What happened between them?"
+    "أفا يا عمي! حمد المعرس؟ شو صار بينهم؟",
+    "afa yā ʿammi! Ḥamad il-miʿris? shu ṣār bēnhum?",
+    "Oh no, uncle! Ḥamad, the groom? What happened between them?"
    ],
    [
     "A",
-    "حمد حط مقطع لراشد وهو طايح في الملعب، والكل ضحك عليه",
-    "Ḥamad ḥaṭṭ magṭaʿ l-Rāshid w huwa ṭāyiḥ fi l-malʿab, w il-kill ẓiḥak ʿalēh",
-    "Ḥamad posted a clip of Rāshid falling over on the pitch, and everyone laughed at him."
+    "حمد حط في قروب الأهل مقطع لراشد وهو طايح في الملعب، وراشد رد عليه بكلام ما يصير",
+    "Ḥamad ḥaṭṭ fi girūb il-ahal magṭaʿ l-Rāshid w huwa ṭāyiḥ fi l-malʿab, w Rāshid radd ʿalēh b-kalām ma yṣīr",
+    "Ḥamad put a clip of Rāshid falling over on the pitch in the family group, and Rāshid answered him with words he shouldn't have used."
    ],
    [
     "B",
@@ -397,21 +389,21 @@
    ],
    [
     "A",
-    "يمكن، بس من أسبوعين ما يكلمون بعض. قلت لراشد تعوذ من الشيطان، بس كل واحد راكب راسه",
-    "yimkin, bas min usbūʿēn ma ykallmūn baʿaẓ. gilt l-Rāshid taʿawwadh min ish-shēṭān, bas kill wāḥid rākib rāsah",
-    "Maybe, but they haven't spoken to each other for two weeks. I told Rāshid to calm down, but each one's dug his heels in."
+    "يمكن، بس أبو حمد زعل. يقول راشد ما احترم ولده الكبير",
+    "yimkin, bas Bū Ḥamad ziʿal. ygūl Rāshid ma iḥtaram wildah il-kbīr",
+    "Maybe, but Ḥamad's father got upset. He says Rāshid didn't respect his grown-up son."
    ],
    [
     "B",
-    "الله يهداهم. تبيني أكون الوسيط بينهم؟",
-    "allāh yihdāhum. tabīni akūn il-wasīṭ bēnhum?",
-    "God guide them. Do you want me to be the go-between?"
+    "الله يهداهم. يعني صارت سالفة كبار، وكل واحد راكب راسه؟",
+    "allāh yihdāhum. yaʿni ṣārat sālfat kbār, w kill wāḥid rākib rāsah?",
+    "God guide them. So it's become a grown-ups' matter, and each one's dug his heels in?"
    ],
    [
     "A",
-    "هيه، راشد يسمع منك. وأنا إذا دخلت، كلامي يصير أوامر، وتكبر الفتنة",
-    "hē, Rāshid yismaʿ minnak. w ana idha dakhalt, kalāmi yṣīr awāmir, w tikbar il-fitna",
-    "Yes, Rāshid listens to you. If I step in, my word becomes an order, and the trouble gets worse."
+    "هيه. وأنا إذا دخلت، تصير بيني وبين أخوي، وتكبر الفتنة. وانت ربيعهم الثنين",
+    "hē. w ana idha dakhalt, tṣīr bēni w bēn akhūy, w tikbar il-fitna. w inta rbīʿhum ith-thnēn",
+    "Yes. And if I step in, it becomes between me and my brother, and the bad blood grows. And you're friends with both of them."
    ],
    [
     "B",
@@ -427,9 +419,9 @@
    ],
    [
     "B",
-    "إن شاء الله يفتحون صفحة يديدة، ويرجعون أحسن من أول",
-    "in shāʼ allāh yiftaḥūn ṣafḥa yidīda, w yirjaʿūn aḥsan min awwal",
-    "God willing they'll make a fresh start, and be better friends than before."
+    "إن شاء الله أصلح بينهم، ويفتحون صفحة يديدة",
+    "in shāʼ allāh aṣalliḥ bēnhum, w yiftaḥūn ṣafḥa yidīda",
+    "God willing I'll make peace between them, and they'll make a fresh start."
    ]
   ],
   "items": [
@@ -455,6 +447,13 @@
     ""
    ],
    [
+    "طايح",
+    "ṭāyiḥ",
+    "fallen over, (lying) on the ground (a man)",
+    "ساقط",
+    "a woman: ṭāyḥa (طايحة)"
+   ],
+   [
     "صلة الرحم",
     "ṣilat ir-raḥim",
     "keeping up family ties (a religious duty)",
@@ -464,30 +463,22 @@
    [
     "الصلح خير",
     "iṣ-ṣulḥ khēr",
-    "making peace is best (from the Qurʼan)",
+    "making peace is best (a saying from the Qurʼan)",
     "الصلح خير",
-    "(recognise)"
-   ],
-   [
-    "خيرهم اللي يبدا بالسلام",
-    "khērhum illi yibda bis-salām",
-    "the better of the two is the one who greets first (after a hadith)",
-    "خيرهما الذي يبدأ بالسلام",
     "(recognise)"
    ]
   ],
   "receptive": [
-   3,
    4,
    5
   ],
-  "culture": "iṣ-ṣulḥ khēr, 'making peace is best', is from the Qurʼan (4:128). khērhum illi yibda bis-salām echoes a hadith: a Muslim shouldn't cut off his brother for more than three days, and the better of the two is the one who greets first. ṣilat ir-raḥim, keeping up ties with relatives, is a religious duty, so a family quarrel is everyone's business."
+  "culture": "iṣ-ṣulḥ khēr, 'making peace is best', echoes the Qurʼan (4:128, wa ṣ-ṣulḥu khayr). khērhum illi yibda bis-salām echoes a hadith: a Muslim shouldn't cut off his brother for more than three days, and the better of the two is the one who greets first. ṣilat ir-raḥim, keeping up ties with relatives, is a religious duty, so a family quarrel is everyone's business."
  },
  {
   "id": "s5u063",
   "stage": 5,
   "title": "You hurt his feelings",
-  "goal": "At a karak stand, you talk to Rāshid's cousin Ḥamad about the clip: give him Rāshid's side, hear his, and get him to make the first move",
+  "goal": "At a karak stand, talk to Ḥamad, the cousin whose wedding you went to, about the clip and the row in the family group; give Rāshid's side, hear his, and get him to move first",
   "tip": "As the go-between, give each side's feelings, not your verdict: Rāshid infaẓaḥ, kasart khāṭrah. Answer the fear behind a question (ḥāgid ʿalay?) with la, galbah abyaẓ, call it ṣār sūʼ fahm, and ask for one small step: ibda inta.",
   "grammar": "mediating II: giving each side's feelings (kasart khāṭrah, galbah abyaẓ, ṣār sūʼ fahm)",
   "dialogue": [
@@ -499,33 +490,33 @@
    ],
    [
     "A",
-    "راشد طرشك؟ أنا ما سويت شي، كانت مزحة",
-    "Rāshid ṭarrashk? ana ma sawwēt shay, kānat mazḥa",
-    "Did Rāshid send you? I didn't do anything; it was a joke."
+    "عمي طرشك؟ أنا ما سويت شي، كانت مزحة",
+    "ʿammi ṭarrashak? ana ma sawwēt shay, kānat mazḥa",
+    "Did my uncle send you? I didn't do anything; it was a joke."
    ],
    [
     "B",
-    "محد طرشني. بس راشد انفضح، المقطع شافه الكل",
-    "maḥḥad ṭarrashni. bas Rāshid infaẓaḥ, il-magṭaʿ shāfah il-kill",
-    "Nobody sent me. But Rāshid was shown up; everyone saw the clip."
+    "هيه، عمك كلمني. بس راشد انفضح، المقطع شافه الكل",
+    "hē, ʿammak kallamni. bas Rāshid infaẓaḥ, il-magṭaʿ shāfah il-kill",
+    "Yes, your uncle talked to me. But Rāshid was shown up; everyone saw the clip."
    ],
    [
     "A",
-    "والله ما كان قصدي أكسر خاطره",
-    "wallāh ma kān gaṣdi aksir khāṭrah",
-    "Honestly, I didn't mean to hurt his feelings."
+    "والله ما كان قصدي أكسر خاطره. بس هو رد علي قدام الأهل كلهم!",
+    "wallāh ma kān gaṣdi aksir khāṭrah. bas huwa radd ʿalay jiddām il-ahal killhum!",
+    "Honestly, I didn't mean to hurt his feelings. But he answered me back in front of the whole family!"
    ],
    [
     "B",
-    "أدري، بس كسرت خاطره. وللحين زعلان منك",
-    "adri, bas kasart khāṭrah. w lil-ḥīn zaʿlān minnak",
-    "I know, but you hurt his feelings. And he's still cross with you."
+    "أدري، وغلط. بس انت الكبير، وكسرت خاطره",
+    "adri, w ghiliṭ. bas inta l-kabīr, w kasart khāṭrah",
+    "I know, and he was wrong. But you're the older one, and you hurt his feelings."
    ],
    [
     "A",
-    "وهو بعد ما رد علي ولا مرة! يعني هو حاقد علي؟",
-    "w huwa baʿad ma radd ʿalay wala marra! yaʿni huwa ḥāgid ʿalay?",
-    "And he hasn't answered me once either! So he's got a grudge against me?"
+    "وأبوي للحين زعلان. يعني راشد حاقد علي؟",
+    "w ubūy lil-ḥīn zaʿlān. yaʿni Rāshid ḥāgid ʿalay?",
+    "And my father's still upset. So Rāshid's got a grudge against me?"
    ],
    [
     "B",
@@ -547,23 +538,16 @@
    ],
    [
     "A",
-    "خلاص، اللي صار صار. عفا الله عما سلف",
-    "khalāṣ, illi ṣār ṣār. ʿafa llāh ʿamma salaf",
-    "All right, what's done is done. Let bygones be bygones."
+    "خلاص، اللي صار صار. وبكلم أبوي بعد. عفا الله عما سلف",
+    "khalāṣ, illi ṣār ṣār. w bakallim ubūy baʿad. ʿafa llāh ʿamma salaf",
+    "All right, what's done is done. I'll talk to my father too. Let bygones be bygones."
    ]
   ],
   "items": [
    [
-    "انفضح",
-    "infaẓaḥ",
-    "he was shown up, he was shamed in public",
-    "افتضح أمره",
-    "she was shown up: infaẓḥat (انفضحت)"
-   ],
-   [
     "كسرت خاطره",
     "kasart khāṭrah",
-    "you hurt his feelings (lit. you broke his heart) (to a man); I hurt his feelings",
+    "you hurt his feelings (lit. you broke his khāṭir, his spirit) (to a man); I hurt his feelings",
     "جرحت مشاعره",
     "to a woman: kasarti khāṭrah (كسرتي خاطره)"
    ],
@@ -575,18 +559,18 @@
     "about a woman: ḥāgda ʿalay (حاقدة علي)"
    ],
    [
-    "سوء فهم",
-    "sūʼ fahm",
-    "a misunderstanding",
-    "سوء فهم",
-    ""
-   ],
-   [
     "قلبه أبيض",
     "galbah abyaẓ",
     "he doesn't hold grudges, he's good-hearted (lit. his heart is white)",
     "قلبه طيب",
     "about a woman: galbha abyaẓ (قلبها أبيض)"
+   ],
+   [
+    "سوء فهم",
+    "sūʼ fahm",
+    "a misunderstanding",
+    "سوء فهم",
+    ""
    ],
    [
     "عفا الله عما سلف",
@@ -597,7 +581,7 @@
    ]
   ],
   "receptive": [
-   5
+   4
   ]
  },
  {
@@ -605,7 +589,7 @@
   "stage": 5,
   "title": "Checkpoint 5.4: peace in the majlis",
   "goal": "Checkpoint: in Bū Rāshid's majlis, Rāshid and Ḥamad have made up; take his thanks, and tell him how your complaint and your apology went",
-  "tip": "Recycle the block: the complaint (ingashsht, kafāla), the calm (rawwig), the apology (il-khaṭaʼ min ʿindana, ḥaṣal khēr) and the peace (rākib rāsah, kasart khāṭrah). When an elder praises you, pass it back: ma sawwēt illa l-wājib.",
+  "tip": "Recycle the block: the peace (kasar khāṭrah, sūʼ fahm, rākib rāsah, rawwig), the complaint (inghashshēt, il-masʼūl) and the apology (il-khaṭaʼ min ʿindana, ḥaṣal khēr). When an elder praises you, pass it on, with a joke if you like.",
   "grammar": "recycle: complaining, calming, apologising, mediating",
   "dialogue": [
    [
@@ -616,15 +600,15 @@
    ],
    [
     "B",
-    "الحمد لله. ما سويت إلا الواجب",
-    "il-ḥamdu lillāh. ma sawwēt illa l-wājib",
-    "Thank God. I only did my duty."
+    "الحمد لله. حمد ما كان متعمد، بس كسر خاطره، وصار سوء فهم",
+    "il-ḥamdu lillāh. Ḥamad ma kān mitʿammid, bas kasar khāṭrah, w ṣār sūʼ fahm",
+    "Thank God. Ḥamad didn't mean it, but he hurt his feelings, and there was a misunderstanding."
    ],
    [
     "A",
-    "لا يا ولدي، انت كنت الوسيط. انت ريّال واعي، وتكسب الناس",
-    "la yā wildi, inta kint il-wasīṭ. inta rayyāl wāʿi, w tiksib in-nās",
-    "No, son, you were the go-between. You're a sensible man, and you win people over."
+    "انت اللي صلحت بينهم. انت ريّال واعي ومتزن، وربيع وفي، وتكسب الناس",
+    "inta illi ṣallaḥt bēnhum. inta rayyāl wāʿi w mitzin, w rbīʿ wafi, w tiksib in-nās",
+    "You're the one who made peace between them. You're a sensible, steady man, a loyal friend, and you win people over."
    ],
    [
     "B",
@@ -640,9 +624,9 @@
    ],
    [
     "B",
-    "اللابتوب. حسيت إني انغشيت، بس طلع عليه كفالة وبدلوه",
-    "il-lābtōb. ḥassēt inni ingashsht, bas ṭilaʿ ʿalēh kafāla w baddalōh",
-    "The laptop. I felt I'd been ripped off, but it turned out to be under warranty, and they replaced it."
+    "اللابتوب. حسيت إني انغشيت، بس المسؤول شافه وبدلوه",
+    "il-lābtōb. ḥassēt inni inghashshēt, bas il-masʼūl shāfah w baddalōh",
+    "The laptop. I felt I'd been ripped off, but the manager looked at it, and they replaced it."
    ],
    [
     "A",
@@ -659,14 +643,14 @@
    [
     "A",
     "هذا الصح. اللي يعترف بغلطه كبير، وانت صاير قدوة لراشد",
-    "hādha ṣ-ṣaḥḥ. illi yiʿtirif b-ghalṭah kabīr, w inta ṣāyir gidwa l-Rāshid",
+    "hādha ṣ-ṣaḥḥ. illi yiʿtirif b-ghalṭah kabīr, w inta ṣāyir qudwa l-Rāshid",
     "That's right. A man who admits his mistake is a big man, and you've become a role model for Rāshid."
    ],
    [
     "B",
-    "قدوة؟ لا يا عمي، أنا بس متزن هالأسبوع!",
-    "gidwa? la yā ʿammi, ana bas mitzin hal-usbūʿ!",
-    "A role model? No, uncle; I've just been steady this week!"
+    "قدوة؟ لا يا عمي. بس إذا راشد ركب راسه مرة ثانية، بقول له: روق!",
+    "qudwa? la yā ʿammi. bas idha Rāshid rikab rāsah marra thānya, bagūl-lah: rawwig!",
+    "A role model? No, uncle. But if Rāshid digs his heels in again, I'll tell him: chill!"
    ]
   ],
   "items": [
@@ -689,25 +673,26 @@
     "tiksib in-nās",
     "you win people over (to a man)",
     "تكسب الناس",
-    "to a woman: tiksbīn in-nās (تكسبين الناس)"
-   ],
-   [
-    "قدوة",
-    "gidwa",
-    "a role model, an example",
-    "قدوة",
-    ""
+    "to a woman: tiksbīn in-nās (تكسبين الناس); (recognise)"
    ],
    [
     "متزن",
     "mitzin",
-    "steady, balanced, keeping your head (a man)",
+    "steady, composed, keeping your head (a man)",
     "متزن",
     "a woman: mitzina (متزنة)"
+   ],
+   [
+    "ربيع وفي",
+    "rbīʿ wafi",
+    "a loyal friend",
+    "صديق وفي",
+    "a woman: wafiyya (وفية)"
    ]
   ],
   "receptive": [
-   0
+   0,
+   2
   ]
  },
  {
@@ -715,8 +700,8 @@
   "stage": 5,
   "title": "When the sea fed everyone",
   "goal": "In Bū Rāshid's majlis, with Rāshid there, ask about his grandfather, a pearl diver, and what life at sea was like before oil",
-  "tip": "Old words come with the old stories: nōkhidha, sēb, il-ghōṣ il-kbīr. Just recognise them. To keep an elder talking, ask short follow-ups (w cham shahar?, w shu shughlah?) and react (subḥān allāh).",
-  "grammar": "heritage I: asking an elder about the old days (w cham…?, w shu shughlah?)",
+  "tip": "Old words come with the old stories: nōkhidha, sēb. Just recognise them. To keep an elder talking, ask short follow-ups (w cham shahar?, shu shughulhum biẓ-ẓabṭ?) and react (subḥān allāh).",
+  "grammar": "heritage I: asking an elder about the old days (w cham…?, shu shughulhum?)",
   "dialogue": [
    [
     "A",
@@ -775,7 +760,7 @@
    [
     "B",
     "سبحان الله، يدك قدوة. وأنا أتعب من نص ساعة في المسبح!",
-    "subḥān allāh, yaddak gidwa. w ana atʿab min nuṣṣ sāʿa fi l-masbaḥ!",
+    "subḥān allāh, yaddak qudwa. w ana atʿab min nuṣṣ sāʿa fi l-masbaḥ!",
     "Glory be to God; your grandfather's an example. And I get tired after half an hour in the pool!"
    ]
   ],
@@ -792,13 +777,6 @@
     "is-sēb",
     "the rope man (who lowered the diver and pulled him up)",
     "",
-    "(recognise)"
-   ],
-   [
-    "الغوص الكبير",
-    "il-ghōṣ il-kbīr",
-    "the big dive (the main pearling season, in summer)",
-    "موسم الغوص الكبير",
     "(recognise)"
    ],
    [
@@ -832,8 +810,7 @@
   ],
   "receptive": [
    0,
-   1,
-   2
+   1
   ],
   "culture": "Before oil, pearl diving was one of the main trades of the Emirates. The main season, il-ghōṣ il-kbīr ('the big dive'), ran from early June to the end of September. The nōkhidha ran the boat for its owner and shared out the season's earnings; the sēb handled the ropes that lowered the divers and pulled them up when they tugged.",
   "task": "This week: search YouTube for «قصص الغوص» (pearl-diving stories) or «الغوص على اللؤلؤ». Find an older speaker telling his own memories and listen for 10 minutes. Within a minute you should hear شو / مب; if you hear سوف or ليس all the time, pick another clip. Note every word from this week's lessons you hear (in-nōkhidha, is-sēb, rizg) with the sentence around it."
@@ -842,9 +819,9 @@
   "id": "s5u066",
   "stage": 5,
   "title": "Not every oyster has a pearl",
-  "goal": "At a heritage stall in Shindagha, an old man whose father was a diver shows you and Mājid a diver's tools; ask what each one was for",
-  "tip": "Asking about an object: min shu msawwa? 'what's it made of?', shu fāyidtah? 'what's it for?', and shu ydawwrūn biẓ-ẓabṭ? to get the details. Heritage words (fiṭām, ḥaṣāt il-ghōṣ, hērāt) are for recognising.",
-  "grammar": "heritage I: asking about old objects (min shu msawwa?, shu ydawwrūn?)",
+  "goal": "At a heritage stall in Shindagha, an old man whose father was a diver shows you and Mājid a diver's tools; ask what they're made of and what each one was for",
+  "tip": "Asking about an object: min shu msawwa? 'what's it made of?' and w hādhi, shu fāyidt-ha? 'and what's this one for?'. Heritage words (fiṭām, ḥaṣāt il-ghōṣ, hērāt) are for recognising.",
+  "grammar": "heritage I: asking about old objects (min shu msawwa?, shu fāyidt-ha?)",
   "dialogue": [
    [
     "A",
@@ -860,21 +837,21 @@
    ],
    [
     "A",
-    "من العظم. وهذي حصاة الغوص، يربطها في ريله، وينزل وهو يكتم نفسه، والسيب ماسك الحبل",
-    "min il-ʿaẓum. w hādhi ḥaṣāt il-ghōṣ, yarbuṭha fi rīlah, w yinzil w huwa yiktim nafasah, w is-sēb māsik il-ḥabil",
-    "Bone. And this is the diving stone; he tied it to his foot and went down holding his breath, while the sēb held the rope."
+    "من العظم. والسيب ماسك الحبل، والغواص ينزل وهو يكتم نفسه",
+    "min il-ʿaẓum. w is-sēb māsik il-ḥabil, w il-ghawwāṣ yinzil w huwa yiktim nafasah",
+    "Bone. The sēb held the rope, and the diver went down holding his breath."
    ],
    [
     "B",
-    "وتحت البحر، شو يدورون بالضبط؟",
-    "w taḥt il-baḥar, shu ydawwrūn biẓ-ẓabṭ?",
-    "And under the sea, what exactly were they looking for?"
+    "وهذي، شو فايدتها؟",
+    "w hādhi, shu fāyidt-ha?",
+    "And this one, what's it for?"
    ],
    [
     "A",
-    "المحار. يلقونه في الهيرات، أماكن في البحر النوخذة يعرفها زين",
-    "il-maḥār. yilgūnah fi l-hērāt, amākin fi l-baḥar in-nōkhidha yaʿarfha zēn",
-    "Oysters. They found them in the hērāt, places in the sea the nōkhidha knew well."
+    "هذي حصاة الغوص، يربطها في ريله عشان ينزل. وتحت يلقى المحار في الهيرات",
+    "hādhi ḥaṣāt il-ghōṣ, yarbuṭha fi rīlah ʿashān yinzil. w taḥt yilga l-maḥār fi l-hērāt",
+    "This is the diving stone; he tied it to his foot so he'd sink. And down there he found the oysters in the hērāt, the pearl beds."
    ],
    [
     "B",
@@ -890,15 +867,15 @@
    ],
    [
     "B",
-    "يعني اللولو نادر، ورزقهم على الله",
-    "yaʿni l-lūlu nādir, w rizghum ʿala llāh",
+    "يعني اللولو نادر، وكان رزقهم على الله",
+    "yaʿni l-lūlu nādir, w kān rizghum ʿala llāh",
     "So pearls are rare, and their living was in God's hands."
    ],
    [
     "A",
-    "هيه. والكبيرة النادرة، الكل يستانس عليها",
-    "hē. w il-kbīra n-nādra, il-kill yistānis ʿalēha",
-    "Yes. And a big, rare one made everyone happy."
+    "هيه. وإذا لقوا وحدة كبيرة نادرة، النوخذة يستانس قبل الكل",
+    "hē. w idha ligaw waḥda kbīra nādra, in-nōkhidha yistānis gabl il-kill",
+    "Yes. And if they found a big, rare one, the nōkhidha was the happiest of all."
    ],
    [
     "B",
@@ -925,9 +902,9 @@
    [
     "المحار",
     "il-maḥār",
-    "oysters; one oyster: maḥāra",
+    "oysters",
     "المحار",
-    "(recognise)"
+    "one oyster: maḥāra; (recognise)"
    ],
    [
     "الهيرات",
@@ -939,9 +916,9 @@
    [
     "اللولو",
     "il-lūlu",
-    "pearls; one pearl: lūlwa",
+    "pearls",
     "اللؤلؤ",
-    ""
+    "one pearl: lūlwa (لولوة)"
    ],
    [
     "نادر",
@@ -981,7 +958,7 @@
    [
     "A",
     "هيه. والعبرة من زمان توصل الناس من بر دبي لديرة، على الخور",
-    "hē. w il-ʿabra min zamān twaṣṣil in-nās min Bur Dubai l-Dēra, ʿala l-khōr",
+    "hē. w il-ʿabra min zamān twaṣṣil in-nās min Bur Dbayy l-Dēra, ʿala l-khōr",
     "Yes. The abra has taken people from Bur Dubai to Deira across the Creek for ages."
    ],
    [
@@ -1083,7 +1060,7 @@
   "stage": 5,
   "title": "Lanes, towers and palm fronds",
   "goal": "On a Friday walk in Al Fahidi with your classmate Khalfān, ask how the old houses were built and how people kept cool",
-  "tip": "Talk about how things used to be with kānaw + present: kānaw yibnūn b-ḥajar 'they used to build with stone', kānaw yiskinūn fi ʿarīsh. Khalfān's old words (sikīk, ʿarīsh, jarīd in-nakhal) are for recognising.",
+  "tip": "Talk about how things used to be with kānaw + present: kānaw yibnūn bil-ḥajar 'they used to build with stone', kānaw yiskinūn fi ʿarīsh. Khalfān's old words (sikīk, ʿarīsh, jarīd in-nakhal) are for recognising.",
   "grammar": "heritage I: how things used to be (kānaw yibnūn…, kānaw yiskinūn…)",
   "dialogue": [
    [
@@ -1204,8 +1181,8 @@
   "stage": 5,
   "title": "Freej: the old neighbourhood",
   "goal": "At the office lunch with the team, Maryam talks about the cartoon Freej and her grandmother's neighbourhood; ask her what life in the frīj was like",
-  "tip": "Compare then and now with awwal … w il-ḥīn …: awwal il-kill yaʿarf il-kill, w il-ḥīn kill wāḥid mnʿazil. With Maryam, keep your -ich and -īn: yaddtich, taʿarfīn.",
-  "grammar": "comparing then and now (awwal … w il-ḥīn …, kānaw + verb)",
+  "tip": "Compare then and now with awwal … and kānaw + verb, against il-ḥīn …: awwal il-kill yaʿarf il-kill, kānaw ywazzʿūn ʿala l-jīrān, w il-ḥīn kill wāḥid mnʿazil. With Maryam, keep your -ich and -īn: yaddtich, taʿarfīn.",
+  "grammar": "comparing then and now (awwal …, kānaw + verb, w il-ḥīn …)",
   "dialogue": [
    [
     "A",
@@ -1233,9 +1210,9 @@
    ],
    [
     "A",
-    "تقول الكل يعرف الكل، والعيال يلعبون في السكيك، والكل يتفقد الثاني",
-    "tgūl il-kill yaʿarf il-kill, w il-ʿyāl yilʿabūn fi s-sikīk, w il-kill yitfaggad ith-thāni",
-    "She says everyone knew everyone, the kids played in the lanes, and everyone looked out for each other."
+    "تقول أول الكل يعرف الكل، والعيال كانوا يلعبون في السكيك، والكل يتفقد الثاني",
+    "tgūl awwal il-kill yaʿarf il-kill, w il-ʿyāl kānaw yilʿabūn fi s-sikīk, w il-kill yitfaggad ith-thāni",
+    "She says that in the old days everyone knew everyone, the kids used to play in the lanes, and everyone looked out for each other."
    ],
    [
     "B",
@@ -1245,9 +1222,9 @@
    ],
    [
     "A",
-    "يوزعون على الجيران، مثل أم خماس لما تطبخ الهريس. كان في تعاون",
-    "ywazzʿūn ʿala l-jīrān, mithil Umm Khammās lamma tiṭbakh il-harīs. kān fī taʿāwun",
-    "They'd share it out among the neighbours, like Umm Khammās when she makes harees. People helped each other."
+    "كانوا يوزعون على الجيران، والجيران يوزعون عليهم. كان في تعاون",
+    "kānaw ywazzʿūn ʿala l-jīrān, w il-jīrān ywazzʿūn ʿalēhum. kān fī taʿāwun",
+    "They'd share it out among the neighbours, and the neighbours did the same for them. People helped each other."
    ],
    [
     "B",
@@ -1284,13 +1261,6 @@
     "he hands out: ywazziʿ (يوزع)"
    ],
    [
-    "تعاون",
-    "taʿāwun",
-    "co-operation, helping each other",
-    "تعاون",
-    ""
-   ],
-   [
     "منعزل",
     "mnʿazil",
     "cut off, keeping to himself, isolated (a man)",
@@ -1313,10 +1283,10 @@
    ]
   ],
   "receptive": [
-   4,
-   5
+   3,
+   4
   ],
-  "culture": "Freej, an Emirati 3D cartoon first shown in Ramadan 2006, follows four grandmothers in Dubai: Umm Khammās, Umm Salūm, Umm Saʿīd and Umm ʿAllāwi. firīj is the Emirati word for neighbourhood, and in the show Umm Khammās sends the harees she cooks round to the neighbours."
+  "culture": "Freej, an Emirati computer-animated cartoon first shown in Ramadan 2006, follows four grandmothers in Dubai: Umm Khammās, Umm Salūm, Umm Saʿīd and Umm ʿAllāwi. firīj is the Emirati word for neighbourhood."
  },
  {
   "id": "s5u070",
@@ -1365,7 +1335,7 @@
    [
     "A",
     "هيه، عشان ينسون التعب. والتباب، عيال صغار يساعدون السيب. والسردال يقود كل السفن",
-    "hē, ʿashān yinsūn it-taʿab. w it-tabbāb, ʿyāl ṣghār ysāʿdūn is-sēb. w is-sardāl yqūd kill is-sufun",
+    "hē, ʿashān yinsūn it-taʿab. w it-tabbāb, ʿyāl ṣghār ysāʿdūn is-sēb. w is-sardāl ygūd kill is-sufun",
     "Yes, so they'd forget how tired they were. The tabbāb, young boys, helped the rope man. And the sardāl led the whole fleet."
    ],
    [
