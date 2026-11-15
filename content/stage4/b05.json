@@ -23,7 +23,7 @@
     "A",
     "يبي النسخة الأخيرة من التقرير قبل التسليم. خلصته ولّا بعد؟",
     "yabi n-nuskha l-akhīra min it-taqrīr gabil it-taslīm. khallaṣtah walla baʿad?",
-    "He wants the final version of the report before the deadline. Have you finished it, or not yet?"
+    "He wants the final version of the report before it's due. Have you finished it, or not yet?"
    ],
    [
     "B",
@@ -81,9 +81,9 @@
    [
     "التسليم",
     "it-taslīm",
-    "the deadline, handing (it) in",
+    "handing (it) in, the submission",
     "التسليم",
-    "(recognise)"
+    "(recognise); gabil it-taslīm = before it's due"
    ],
    [
     "الملاحظات",
@@ -195,13 +195,6 @@
     "to a woman: la tiḥlfīn (لا تحلفين); said when someone swears 'la wallāh!' to pay"
    ],
    [
-    "بنرجع له",
-    "binirjaʿ-lah",
-    "we'll come back to it (m.), we'll go back there",
-    "سنعود إليه",
-    "to her / it (f.): binirjaʿ-lha (بنرجع لها)"
-   ],
-   [
     "الخدمة",
     "il-khidma",
     "the service (in a restaurant, a shop)",
@@ -238,9 +231,9 @@
    ]
   ],
   "receptive": [
+   3,
    4,
-   5,
-   7
+   6
   ]
  },
  {
@@ -509,7 +502,7 @@
   "stage": 4,
   "title": "Checkpoint 4.3: news of the rent at the majlis",
   "goal": "Checkpoint: in Bū Rāshid's majlis, with Sēf there, answer his questions about your flat and the landlord, respectfully",
-  "tip": "Review: topic first (ṣāḥib ish-shigga, ma shifnāh), the question word at the end (simaʿt shu?), feminine agreement for things (il-umūr hādhi yabā-lha), a guess with atwaggaʿ. New: respectful replies to an elder, ʿala ʿēni w rāsi and ma yṣīr illa khēr.",
+  "tip": "Review: topic first (ṣāḥib ish-shigga, ma shifnāh), the question word last, il-umūr hādhi yabā-lha, atwaggaʿ. New: simaʿt shu?, allāh yiʿīnak (reply āmīn), ʿala hōnak, the respectful ʿala ʿēni w rāsi, and ma yṣīr illa khēr 'it'll all turn out fine'.",
   "grammar": "checkpoint 4.3: address, guesses, topic first, fronting, question word at the end, non-human plural agreement",
   "dialogue": [
    [
@@ -574,7 +567,7 @@
     "simaʿt shu?",
     "you heard what? (to a man)",
     "ماذا سمعت؟",
-    "to a woman: simaʿti shu? (سمعتي شو؟)"
+    "to a woman: simaʿti shu? (سمعتي شو؟); compare the calm simaʿt shu ṣār? (سمعت شو صار؟) = did you hear what happened?"
    ],
    [
     "على هونك",
@@ -619,15 +612,15 @@
   "dialogue": [
    [
     "A",
-    "ربعي كلهم يشتكون من الإيجار هالأيام",
-    "rabʿi killhum yishtikūn min il-ījār hal-ayyām",
-    "All my mates are complaining about the rent these days."
+    "الإيجار هالأيام غالي وايد، وربعي كلهم يشتكون منه",
+    "il-ījār hal-ayyām ghāli wāyid, w rabʿi killhum yishtikūn minnah",
+    "Rent's really expensive these days, and all my mates are complaining about it."
    ],
    [
     "B",
-    "معك حق، الإيجار غالي وايد",
-    "maʿak ḥagg, il-ījār ghāli wāyid",
-    "You're right, rent's really expensive."
+    "معك حق، غالي وايد",
+    "maʿak ḥagg, ghāli wāyid",
+    "You're right, it's really expensive."
    ],
    [
     "A",
@@ -689,13 +682,6 @@
     "Kuwait: mū bas (مو بس)"
    ],
    [
-    "صح ولّا لا؟",
-    "ṣaḥḥ walla la?",
-    "right or not? am I right?",
-    "أليس كذلك؟",
-    ""
-   ],
-   [
     "مية بالمية",
     "miya bil-miya",
     "a hundred percent, totally",
@@ -732,8 +718,8 @@
    ]
   ],
   "receptive": [
-   6,
-   8
+   5,
+   7
   ],
   "task": "This week: with a tutor or exchange partner (search a tutoring site for «Emirati Arabic tutor»), ask what they think about the cost of living where they live. Agree fully with one point (maʿak ḥagg), agree in part with another (ṣaḥḥ, bas…), and give one reason of your own."
  },
@@ -894,7 +880,7 @@
     "A",
     "بس لو تسكن قريب من الدوام، توفر وقت وبترول وتختصر الطريق",
     "bas lō tiskin garīb min id-dawām, twaffir wagt w batrōl w tikhtiṣir iṭ-ṭarīg",
-    "But if you lived near work, you'd save time and petrol and cut the journey short."
+    "But if you lived near work, you'd save time and petrol and shorten the route."
    ],
    [
     "B",
@@ -950,7 +936,7 @@
    [
     "مب الحين",
     "mub il-ḥīn",
-    "not now, not yet",
+    "not now, not for now",
     "ليس الآن",
     ""
    ],
@@ -971,9 +957,9 @@
    [
     "تختصر",
     "tikhtiṣir",
-    "you cut short (a journey), you save (distance) (to a man)",
+    "you shorten the route, you take a shorter way (to a man)",
     "تختصر",
-    "(recognise); to a woman: tikhtiṣrīn (تختصرين)"
+    "(recognise); to a woman: tikhtiṣrīn (تختصرين); tikhtiṣir iṭ-ṭarīg = you take a shorter way"
    ],
    [
     "المسافة",
@@ -1044,9 +1030,9 @@
    ],
    [
     "B",
-    "بالضبط. وفوق هذا، ما في مترو قريب",
-    "biẓ-ẓabṭ. w fōg hādha, ma fī mitrō garīb",
-    "Exactly. And on top of that, there's no metro nearby."
+    "بالضبط. وفوق هذا، ما في مواقف",
+    "biẓ-ẓabṭ. w fōg hādha, ma fī mawāgif",
+    "Exactly. And on top of that, there's no parking."
    ],
    [
     "A",
@@ -1242,13 +1228,6 @@
     "work it out, do the sums (to a man)",
     "احسبها",
     "to a woman: iḥsbīha (احسبيها)"
-   ],
-   [
-    "بعيدة شوي",
-    "baʿīda shwayy",
-    "a bit far, a bit further out (f.)",
-    "بعيدة قليلًا",
-    "a masculine thing: baʿīd shwayy (بعيد شوي)"
    ],
    [
     "في محله",
