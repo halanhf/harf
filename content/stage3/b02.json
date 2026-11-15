@@ -21,9 +21,9 @@
    ],
    [
     "A",
-    "نايم للحين؟ شو كنت قاعد تسوي البارحة؟",
-    "nāyim lil-ḥīn? shu kint gāʿid tsawwi l-bārḥa?",
-    "Still asleep at this time? What were you doing last night?"
+    "مسموح. بس نايم للحين؟ شو كنت قاعد تسوي البارحة؟",
+    "masmūḥ. bas nāyim lil-ḥīn? shu kint gāʿid tsawwi l-bārḥa?",
+    "No worries. But still asleep at this time? What were you doing last night?"
    ],
    [
     "B",
@@ -97,7 +97,7 @@
     "tiẓḥakūn ʿalēh",
     "you're laughing at him (to a group)",
     "تضحكون عليه",
-    "gimtu tiẓḥakūn ʿalēh = you started laughing at him; to one man: tiẓḥak ʿalēh"
+    "to one man: tiẓḥak ʿalēh (تضحك عليه); to one woman: tiẓḥakīn ʿalēh (تضحكين عليه); gimtu tiẓḥakūn ʿalēh = you started laughing at him"
    ]
   ]
  },
@@ -600,14 +600,14 @@
   "stage": 3,
   "title": "If I were you, I'd say yes",
   "goal": "Sēf has a job offer in Abu Dhabi and isn't sure: give him advice with lō and wish him luck",
-  "tip": "lō ana makānak 'if I were you' is a common way to give advice, and the advice follows with chān + past: lō ana makānak, chān wāfagt 'if I were you, I'd say yes'. With a present verb, lō is a gentle 'if': lō tishraḥ-lah, yimkin ywāfig 'if you explained it to him, he might agree'.",
+  "tip": "lō ana makānak 'if I were you' is a common way to give advice, and the advice follows with chān + past: lō ana makānak, chān wāfagt 'if I were you, I'd say yes'. With a present verb, lō is a gentle 'if': lō tishraḥ-lah, yimkin ywāfig 'if you explain it to him, he might agree'.",
   "grammar": "lō in advice and wishes (lō ana makānak, yā lēt)",
   "culture": "Many Muslims avoid lō when regretting the past ('if only I'd…'), following a well-known hadith that says 'if' opens the door to the devil's work. After a loss or a mistake people say qaddar allāh w mā shāʼ faʿal 'God decreed it, and did as He willed'. lō for advice, plans and wishes is fine.",
   "dialogue": [
    [
     "A",
     "عندي عرض شغل في أبوظبي. شو رأيك؟",
-    "ʿindi ʿarẓ shughul fi Abūẓabi. shu raʼyak?",
+    "ʿindi ʿarẓ shughul fi Abuẓabi. shu raʼyak?",
     "I've got a job offer in Abu Dhabi. What do you think?"
    ],
    [
@@ -619,7 +619,7 @@
    [
     "A",
     "بس أبوظبي بعيدة، وأهلي كلهم هني",
-    "bas Abūẓabi baʿīda, w ahli killhum hni",
+    "bas Abuẓabi baʿīda, w ahli killhum hni",
     "But Abu Dhabi's far, and all my family's here."
    ],
    [
@@ -638,7 +638,7 @@
     "B",
     "كلمه انت. لو تشرح له، يمكن يوافق. الله يوفقك!",
     "kallmah inta. lō tishraḥ-lah, yimkin ywāfig. allāh ywaffgak!",
-    "Talk to him yourself. If you explained it to him, he might agree. Good luck!"
+    "Talk to him yourself. If you explain it to him, he might agree. Good luck!"
    ],
    [
     "A",
@@ -699,7 +699,7 @@
    [
     "لو تشرح له",
     "lō tishraḥ-lah",
-    "if you explained (it) to him (to a man)",
+    "if you explain (it) to him (to a man)",
     "لو تشرح له",
     "to a woman: lō tishraḥīn-lah (لو تشرحين له)"
    ],
@@ -726,7 +726,7 @@
   "goal": "Try to leave Bū Rāshid's majlis before dinner, with Sēf there, and give in politely when he insists",
   "tip": "ḥatta lō means 'even if': ḥatta lō ʿindak imtiḥān 'even if you've got an exam'. Add ma for 'even if … not': ḥatta lō ma dhākart wāyid 'even if you haven't revised much'. w lō shwayy 'even just a little' is a common way for a host to insist.",
   "grammar": "ḥatta lō 'even if' (ḥatta lō ʿindak …, ḥatta lō ma …)",
-  "culture": "A Gulf host insists, often two or three times, and a guest usually says no at first. Giving in with zēn, bas shwayy 'OK, but just a little' honours the host. Sitting with the family for a few minutes counts; nobody expects you to eat a mountain of food.",
+  "culture": "A Gulf host insists, often two or three times, and a guest usually says no at first. Giving in with zēn, bas shwayy 'OK, but just a little' honours the host. Sitting down to eat for a few minutes counts; nobody expects you to eat a mountain of food.",
   "dialogue": [
    [
     "A",
@@ -969,9 +969,9 @@
    ],
    [
     "B",
-    "لا، قلت لك إني مسافر الخميس، مب اليوم!",
-    "la, gilt-lak inni msāfir il-khamīs, mub il-yōm!",
-    "No, I told you I'm flying on Thursday, not today!"
+    "هلا فيك! لا، قلت لك إني مسافر الخميس، مب اليوم!",
+    "hala fīk! la, gilt-lak inni msāfir il-khamīs, mub il-yōm!",
+    "Hi! No, I told you I'm flying on Thursday, not today!"
    ],
    [
     "A",
