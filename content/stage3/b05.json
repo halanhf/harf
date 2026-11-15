@@ -4,7 +4,7 @@
   "stage": 3,
   "title": "No eating on the metro",
   "goal": "Ride the Dubai Metro with Sēf and learn the rules: where you can sit and what's not allowed",
-  "tip": "A passive participle on the pattern maCCūC says what has been done to something: katab 'wrote' → maktūb 'written', manaʿ 'banned' → mamnūʿ 'banned'. For a rule, put a verbal noun after it: mamnūʿ il-akil 'no eating'. masmūḥ is the opposite: it-taṣwīr masmūḥ 'photos are allowed'.",
+  "tip": "A passive participle (maCCūC) says what has been done to something: katab 'wrote' → maktūb 'written', manaʿ 'forbade' → mamnūʿ 'forbidden, not allowed'. For a rule, put a verbal noun after it: mamnūʿ il-akil 'no eating'. The opposite is masmūḥ 'allowed', the same word you say back to is-samūḥa.",
   "grammar": "passive participle maCCūC: mamnūʿ, maktūb, masmūḥ",
   "dialogue": [
    [
@@ -51,9 +51,9 @@
    ],
    [
     "A",
-    "مسموح، بس لا تصور الناس",
-    "masmūḥ, bas la tṣawwir in-nās",
-    "They're allowed, but don't take photos of people."
+    "ما أدري، بس لا تصور الناس",
+    "ma adri, bas la tṣawwir in-nās",
+    "I'm not sure, but don't take photos of people."
    ]
   ],
   "items": [
@@ -103,7 +103,7 @@
     "لا تصور الناس",
     "la tṣawwir in-nās",
     "don't take photos of people (to a man)",
-    "لا تصوّر الناس",
+    "لا تصور الناس",
     "to a woman: la tṣawwrīn in-nās (لا تصورين الناس)"
    ],
    [
@@ -121,7 +121,7 @@
     "plural things take the feminine: fāẓya; one seat: il-kursi fāẓi"
    ]
   ],
-  "culture": "The Dubai Metro has a section for women and children, clearly marked on the platform and the doors: men don't sit there. Eating and drinking aren't allowed on the trains, and you can be fined. Taking photos of people without asking can break UAE privacy law, so ask first or keep strangers out of the picture."
+  "culture": "The Dubai Metro has a section for women and children, clearly marked on the platform and the doors. Men aren't allowed in it at all, and can be fined. Eating and drinking, even water, aren't allowed on the trains either. Taking photos of people without asking can break UAE privacy law, so ask first or keep strangers out of the picture."
  },
  {
   "id": "s3u048",
@@ -169,15 +169,15 @@
    ],
    [
     "B",
-    "بطرش له رسالة. وانتي، تبين قهوة؟",
-    "baṭarrish-lah risāla. w inti, tabīn gahwa?",
-    "I'll send him a message. And would you like a coffee?"
+    "بطرش له رسالة. ونطلب قهوة للاجتماع؟",
+    "baṭarrish-lah risāla. w niṭlub gahwa lil-ijtimāʿ?",
+    "I'll send him a message. And shall we order coffee for the meeting?"
    ],
    [
     "A",
     "ودي، بس الكافتيريا مسكرة اليوم!",
     "widdi, bas il-kāftērya msakkara l-yōm!",
-    "I'd love one, but the cafeteria's closed today!"
+    "I'd love that, but the cafeteria's closed today!"
    ]
   ],
   "items": [
@@ -186,7 +186,7 @@
     "mʿaṭṭal",
     "out of order, not working (a lift, a machine)",
     "معطل",
-    "with a feminine noun: mʿaṭṭala (معطلة); also: kharbān (خربان)"
+    "with a feminine noun: mʿaṭṭala (معطلة); everyday word: kharbān (خربان)"
    ],
    [
     "من أمس",
@@ -468,7 +468,7 @@
     "ir-rukhṣa",
     "the (driving) licence",
     "رخصة القيادة",
-    "tākhidh ir-rukhṣa = you get your licence"
+    "tākhidh ir-rukhṣa = you get your licence; you'll also hear il-laysan (الليسن)"
    ],
    [
     "ما كنت تسوق؟",
@@ -481,7 +481,7 @@
     "خايف شوي",
     "khāyif shwayy",
     "a bit nervous (a man)",
-    "قلق قليلًا",
+    "خائف قليلًا",
     "a woman: khāyfa shwayy (خايفة شوي)"
    ],
    [
@@ -499,7 +499,7 @@
   "title": "What do you do in your free time?",
   "goal": "Ask a group of Sēf's friends about their hobbies and say what you like doing",
   "tip": "For hobbies, put a verbal noun after aḥibb 'I like' or hiwāyti 'my hobby is': aḥibb is-sibāḥa 'I like swimming', hiwāyti ṣ-ṣēd 'my hobby's fishing'. A verb works too, with nothing in between: aḥibb asbaḥ 'I like to swim'. To a group: shu tḥibbūn? 'what do you like?'",
-  "grammar": "verbal nouns after aḥibb and hiwāyti: is-sibāḥa, iṣ-ṣēd, il-giraya",
+  "grammar": "verbal nouns after aḥibb and hiwāyti: is-sibāḥa, iṣ-ṣēd, il-girāya",
   "dialogue": [
    [
     "B",
@@ -528,7 +528,7 @@
    [
     "B",
     "أحب القراية والسباحة. انتو تحبون السباحة؟",
-    "aḥibb il-giraya w is-sibāḥa. intu tḥibbūn is-sibāḥa?",
+    "aḥibb il-girāya w is-sibāḥa. intu tḥibbūn is-sibāḥa?",
     "I like reading and swimming. Do you guys like swimming?"
    ],
    [
@@ -581,7 +581,7 @@
    ],
    [
     "القراية",
-    "il-giraya",
+    "il-girāya",
     "reading",
     "القراءة",
     "you'll also hear il-qirāʼa (القراءة)"
@@ -632,8 +632,8 @@
    ],
    [
     "B",
-    "اليوم؟ المفروض يوم الخميس!",
-    "il-yōm? il-mafrūẓ yōm il-khamīs!",
+    "اليوم؟ كان المفروض يوم الخميس!",
+    "il-yōm? kān il-mafrūẓ yōm il-khamīs!",
     "Today? It was supposed to be Thursday!"
    ],
    [
@@ -668,9 +668,9 @@
    ],
    [
     "B",
-    "ماشي. طرشي لي الملف الحين",
-    "māshi. ṭarrshī-li l-malaff il-ḥīn",
-    "OK. Send me the file now."
+    "ماشي. طرشي لي الملف لو سمحتي",
+    "māshi. ṭarrshī-li l-malaff law samaḥti",
+    "OK. Send me the file, please."
    ]
   ],
   "items": [
@@ -744,7 +744,7 @@
   "stage": 3,
   "title": "You don't have to bring anything",
   "goal": "Sēf passes on his uncle's dinner invitation: find out what you don't have to do and what you mustn't do",
-  "tip": "mub lāzim + verb usually means 'you don't have to': mub lāzim tyīb shay 'no need to bring anything'. To forbid something, put ma after lāzim: lāzim ma titʼakhkhar 'you mustn't be late'. mub lāzim can also mean 'better not', so lāzim ma is the clear way to say 'mustn't'.",
+  "tip": "mub lāzim + verb usually means 'you don't have to': mub lāzim tyīb shay 'no need to bring anything'. To forbid something, put ma after lāzim: lāzim ma titʼakhkhar 'you mustn't be late'. mub lāzim can also mean 'shouldn't, mustn't', so lāzim ma is the clear way to say 'mustn't'.",
   "grammar": "mub lāzim 'don't have to' vs lāzim ma 'mustn't'",
   "dialogue": [
    [
@@ -861,7 +861,7 @@
     ""
    ]
   ],
-  "culture": "Guests aren't expected to bring anything to a majlis dinner, but turning up on time and dressed neatly matters. A visitor from abroad isn't expected to wear a kandūra; smart, modest clothes are fine. If you can't come after all, tell your host in good time."
+  "culture": "A guest at a majlis dinner usually doesn't need to bring anything; if something is needed, your host or the friend who invited you will say so. Some hosts, like Bū Rāshid, care a lot about guests arriving on time, and neat, modest clothes always matter. A visitor from abroad isn't expected to wear a kandūra."
  },
  {
   "id": "s3u054",
@@ -992,7 +992,7 @@
   "stage": 3,
   "title": "Maghrib at the mosque",
   "goal": "Stop at a mosque with Sēf for the maghrib prayer: wudu, shoes, phone and what not to do",
-  "tip": "Mosque rules use this block's forms: lāzim ma tmurr jiddām ḥad yṣalli 'you mustn't walk in front of anyone praying', ma yṣīr yrinn 'it mustn't ring'. New words: atwaẓẓa 'I do wudu', ʿala ṣ-ṣāmit 'on silent', ir-raff 'the shelf'.",
+  "tip": "Mosque rules use this block's forms: lāzim ma tmurr jiddām ḥad yṣalli 'you mustn't walk in front of anyone praying', ma yṣīr yrinn 'it mustn't ring'. New words: atwaẓẓa 'I do wudu', ir-raff 'the shelf, the rack'. You already know ṣāmit 'on silent'.",
   "grammar": "recycle: lāzim ma, ma yṣīr (mosque rules)",
   "dialogue": [
    [
@@ -1081,11 +1081,11 @@
     ""
    ],
    [
-    "على الصامت",
-    "ʿala ṣ-ṣāmit",
-    "on silent (a phone)",
-    "على الوضع الصامت",
-    "tilifōnak khallah ʿala ṣ-ṣāmit = put your phone on silent (to a man); to a woman: tilifōnich khallīh ʿala ṣ-ṣāmit"
+    "نصلي",
+    "nṣalli",
+    "we pray; shall we pray?",
+    "نصلي",
+    "I pray: aṣalli (أصلي); he's praying: gāʿid yṣalli"
    ],
    [
     "يرن",
@@ -1109,7 +1109,7 @@
     ""
    ]
   ],
-  "culture": "In a mosque, shoes go on the rack by the door, phones go on silent and voices stay low. Women pray in their own section, often with its own entrance. Most mosques have a washing area for wudu. If the prayer has started, join a row quietly, and never walk in front of someone who is praying. Afterwards people often say tagabbal allāh to each other."
+  "culture": "In a mosque, shoes go on the rack by the door, phones go on silent and voices stay low. Women pray in their own section, often with its own entrance. Most mosques have a washing area for wudu. If the prayer has started, join a row quietly, and never walk in front of someone who is praying. Afterwards people often say tagabbal allāh to each other, and the answer is minna w minkum."
  },
  {
   "id": "s3u056",
