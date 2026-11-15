@@ -45,8 +45,8 @@
    ],
    [
     "A",
-    "زين، انت بريء لين يطلع الدليل! والمثل يقول: لا تبوق ولا تخاف",
-    "zēn, inta barīʼ lēn yiṭlaʿ id-dalīl! w il-mathal ygūl: la tbūg wala tkhāf",
+    "زين، انت بريء لين يطلع الدليل! والمثل يقول: لا تبوق لا تخاف",
+    "zēn, inta barīʼ lēn yiṭlaʿ id-dalīl! w il-mathal ygūl: la tbūg la tkhāf",
     "OK, you're innocent until the evidence turns up! As the saying goes: if you don't steal, you've nothing to fear."
    ],
    [
@@ -57,9 +57,9 @@
    ],
    [
     "A",
-    "شوف! هني هي، الحمد لله. السموحة إني شكيت فيك",
-    "shūf! hni hiya, il-ḥamdu lillāh. is-samūḥa inni shakkēt fīk",
-    "Look! Here it is, thank God. Sorry I suspected you."
+    "شوف! هني هي، الحمد لله. السموحة، شكيت فيك وظلمتك",
+    "shūf! hni hiya, il-ḥamdu lillāh. is-samūḥa, shakkēt fīk w ẓalamtak",
+    "Look! Here it is, thank God. Sorry, I suspected you and I was unfair to you."
    ],
    [
     "B",
@@ -81,7 +81,7 @@
     "māli dakhal",
     "it's nothing to do with me, it's none of my business",
     "لا علاقة لي",
-    "Kuwait also: māli shughul (مالي شغل)"
+    "Kuwait: māli shughul (مالي شغل)"
    ],
    [
     "الكيكة",
@@ -91,11 +91,11 @@
     ""
    ],
    [
-    "شكيت فيك",
-    "shakkēt fīk",
-    "I suspected you (to a man)",
-    "شككت فيك",
-    "to a woman: shakkēt fīch (شكيت فيج)"
+    "ظلمتك",
+    "ẓalamtak",
+    "I wronged you, I was unfair to you (to a man)",
+    "ظلمتك",
+    "to a woman: ẓalamtich (ظلمتج)"
    ],
    [
     "بريء",
@@ -105,8 +105,8 @@
     "a woman: barīʼa (بريئة); (recognise)"
    ],
    [
-    "لا تبوق ولا تخاف",
-    "la tbūg wala tkhāf",
+    "لا تبوق لا تخاف",
+    "la tbūg la tkhāf",
     "if you don't steal, you've nothing to fear (a saying)",
     "",
     "(recognise)"
@@ -128,13 +128,13 @@
    [
     "A",
     "شو صار على سيارتك؟ صلحوها في الورشة؟",
-    "shu ṣār ʿala sayyārtak? ṣallaḥūha fi l-warsha?",
+    "shu ṣār ʿala sayyārtak? ṣallaḥōha fi l-warsha?",
     "What's happening with your car? Have they fixed it at the garage?"
    ],
    [
     "B",
     "لا صلحوها ولا اتصلوا! صار لي أسبوع",
-    "la ṣallaḥūha wala ittaṣlaw! ṣār-li usbūʿ",
+    "la ṣallaḥōha wala ittaṣlaw! ṣār-li usbūʿ",
     "They haven't fixed it or even called! It's been a week."
    ],
    [
@@ -221,18 +221,10 @@
     "the (repair) garage, the workshop",
     "الورشة",
     "(recognise)"
-   ],
-   [
-    "لا رحت ولا ييت",
-    "la riḥt wala yīt",
-    "you haven't been anywhere (lit. you neither went nor came) (to a man)",
-    "لم تذهب ولم تأت",
-    "to a woman: la riḥti wala yīti; (recognise)"
    ]
   ],
   "receptive": [
-   4,
-   5
+   4
   ]
  },
  {
@@ -519,15 +511,15 @@
    ],
    [
     "A",
-    "ما بدعم! بلبس الحزام، وبسوق على هوني",
-    "ma badʿam! balbis il-ḥizām, w basūg ʿala hōni",
+    "ما بدعم! بلبس الحزام، وبسوق شوي شوي",
+    "ma badʿam! balbis il-ḥizām, w basūg shwayy shwayy",
     "I won't crash! I'll wear the seatbelt, and I'll drive slowly."
    ],
    [
     "B",
-    "لا لا، السيارة مب لعبة بالريموت! وخطر عليك",
-    "la la, is-sayyāra mub liʿba bir-rīmōt! w khaṭar ʿalēk",
-    "No, no, a car isn't a remote-control toy! And it's dangerous for you."
+    "لا لا، السيارة مب لعبة بالريموت! وخطر عليك، لا تتهور",
+    "la la, is-sayyāra mub liʿba bir-rīmōt! w khaṭar ʿalēk, la tit-hawwar",
+    "No, no, a car isn't a remote-control toy! And it's dangerous for you; don't be rash."
    ],
    [
     "A",
@@ -558,11 +550,11 @@
     "a woman: mistahtira (مستهترة)"
    ],
    [
-    "خطر",
-    "khaṭar",
-    "dangerous; a danger",
-    "خطر",
-    ""
+    "لا تتهور",
+    "la tit-hawwar",
+    "don't be rash, don't do anything reckless (to a man)",
+    "لا تتهور",
+    "to a woman: la tit-hawwarīn (لا تتهورين)"
    ],
    [
     "الحزام",
@@ -582,7 +574,7 @@
     "يفحطون",
     "yfaḥḥiṭūn",
     "they drift, they spin their cars (youth)",
-    "يفحطون",
+    "",
     "(recognise)"
    ]
   ],
@@ -597,7 +589,7 @@
   "title": "Whoever wins, I'm with them!",
   "goal": "At university, your classmate Khalfān is organising a five-a-side game for Thursday night; sort out who plays, who pays and whose team you're on",
   "grammar": "free relatives: illi 'whoever, whatever', shu ma / wēn ma 'whatever, wherever'",
-  "tip": "illi with no noun before it means 'whoever' or 'whatever': illi yfūz 'whoever wins', illi ʿindah 'whatever he's got'. shu ma, wēn ma and minu ma make 'whatever, wherever, whoever': shu ma ṣār 'whatever happens', wēn ma ḥaṭṭētak 'wherever I put you'.",
+  "tip": "illi with no noun before it means 'whoever' or 'whatever': illi yfūz 'whoever wins', illi ʿindah 'whatever he's got', maʿa illi tabi 'with whoever you like'. shu ma and wēn ma make 'whatever, wherever': shu ma ṣār 'whatever happens', wēn ma ḥaṭṭētak 'wherever I put you'.",
   "dialogue": [
    [
     "A",
@@ -608,7 +600,7 @@
    [
     "B",
     "أكيد! تمرين ولّا مباراة؟ وفي جمهور؟",
-    "akīd! tamrīn walla mubārāh? w fī jamhūr?",
+    "akīd! tamrīn walla mubārā? w fī jamhūr?",
     "Sure! Training or a match? And will there be a crowd?"
    ],
    [
@@ -637,8 +629,8 @@
    ],
    [
     "A",
-    "مع منو ما تبي. بس تذكر: أنا الكابتن، والتشكيلة علي!",
-    "maʿa minu ma tabi. bas tdhakkar: ana l-kābtin, w it-tashkīla ʿalay!",
+    "مع اللي تبي. بس تذكر: أنا الكابتن، والتشكيلة علي!",
+    "maʿa illi tabi. bas tdhakkar: ana l-kābtin, w it-tashkīla ʿalay!",
     "With whoever you like. But remember: I'm the captain, and the line-up is down to me!"
    ],
    [
@@ -649,9 +641,9 @@
    ],
    [
     "A",
-    "من جدك؟ ما يصير جي! وين ما حطيتك تلعب، وعندي خطة. ولا تسلل!",
-    "min jiddak? ma yṣīr chī! wēn ma ḥaṭṭētak tilʿab, w ʿindi khuṭṭa. w la tasallul!",
-    "Are you serious? You can't do that! You play wherever I put you, and I've got a plan. And no offside!"
+    "من جدك؟ ما يصير جي! وين ما حطيتك تلعب، ولّا احتياط",
+    "min jiddak? ma yṣīr chī! wēn ma ḥaṭṭētak tilʿab, walla iḥtiyāṭ",
+    "Are you serious? You can't do that! You play wherever I put you, or you're on the bench."
    ],
    [
     "B",
@@ -676,10 +668,10 @@
     ""
    ],
    [
-    "خطة",
-    "khuṭṭa",
-    "a plan",
-    "خطة",
+    "احتياط",
+    "iḥtiyāṭ",
+    "a substitute, on the bench",
+    "احتياط",
     ""
    ],
    [
@@ -695,19 +687,11 @@
     "the line-up (of a team)",
     "التشكيلة",
     "(recognise)"
-   ],
-   [
-    "تسلل",
-    "tasallul",
-    "offside",
-    "تسلل",
-    "(recognise)"
    ]
   ],
   "receptive": [
    3,
-   4,
-   5
+   4
   ]
  },
  {
@@ -738,9 +722,9 @@
    ],
    [
     "B",
-    "فضيحة! تورطنا! والشباب، اللي بعضهم ياي من الشارقة، الحين في الطريق",
-    "faẓīḥa! twarraṭna! w ish-shabāb, illi baʿaẓhum yāy min ish-Shārja, il-ḥīn fi ṭ-ṭarīg",
-    "What a disgrace! We're in a fix! And the guys, some of whom are coming from Sharjah, are on their way now."
+    "فضيحة! تورطنا! والشباب بعضهم ياي من الشارقة، والحين في الطريق",
+    "faẓīḥa! twarraṭna! w ish-shabāb baʿaẓhum yāy min ish-Shārja, w il-ḥīn fi ṭ-ṭarīg",
+    "What a disgrace! We're in a fix! And some of the guys are coming from Sharjah, and they're on their way now."
    ],
    [
     "A",
@@ -751,7 +735,7 @@
    [
     "B",
     "خذلتني يا خلفان. مب انت اللي عندك خطة؟",
-    "khadhaltni yā Khalfān. mub inta illi ʿindak khuṭṭa?",
+    "khadhaltni yā Khalfān. mub inta illi ʿindak khiṭṭa?",
     "You've let me down, Khalfān. Weren't you the one with a plan?"
    ],
    [
@@ -762,9 +746,9 @@
    ],
    [
     "B",
-    "مسؤولية يا خلفان! لا تكون مستهتر هالمرة",
-    "masʼūliyya yā Khalfān! la tkūn mistahtir hal-marra",
-    "It's a responsibility, Khalfān! Don't be careless this time."
+    "هذا إهمال يا خلفان! الحجز مسؤوليتك، لا تكون مستهتر هالمرة",
+    "hādha ihmāl yā Khalfān! il-ḥajiz masʼūliyytak, la tkūn mistahtir hal-marra",
+    "That's sloppy, Khalfān! The booking was your responsibility; don't be careless this time."
    ],
    [
     "A",
@@ -809,10 +793,10 @@
     ""
    ],
    [
-    "مسؤولية",
-    "masʼūliyya",
-    "a responsibility",
-    "مسؤولية",
+    "إهمال",
+    "ihmāl",
+    "negligence, sloppiness",
+    "إهمال",
     ""
    ],
    [
@@ -843,9 +827,9 @@
    ],
    [
     "B",
-    "أنا؟ ما تدرين شكثر أتوتر قدام العميل",
-    "ana? ma tadrīn shkuthur atwattar jiddām il-ʿamīl",
-    "Me? You've no idea how nervous I get in front of clients."
+    "أنا؟ أتوتر وايد قدام العميل!",
+    "ana? atwattar wāyid jiddām il-ʿamīl!",
+    "Me? I get really nervous in front of clients!"
    ],
    [
     "A",
@@ -861,9 +845,9 @@
    ],
    [
     "A",
-    "شوي شجاعة! بنسوي خطة، وبتصرف وياك لو صار شي",
-    "shwayy shajāʿa! binsawwi khuṭṭa, w batṣarraf wiyyāk lō ṣār shay",
-    "A bit of courage! We'll make a plan, and I'll handle it with you if anything comes up."
+    "وين الشجاعة؟ بنسوي خطة، وبتصرف وياك لو صار شي",
+    "wēn ish-shajāʿa? binsawwi khiṭṭa, w batṣarraf wiyyāk lō ṣār shay",
+    "Where's your courage? We'll make a plan, and I'll handle it with you if anything comes up."
    ],
    [
     "B",
@@ -985,8 +969,8 @@
    [
     "B",
     "وإذا ما نفع؟ فضيحة! لازم يكون عندك خطة",
-    "w idha ma nifaʿ? faẓīḥa! lāzim ykūn ʿindak khuṭṭa",
-    "And if it doesn't work out? A disaster! You need a plan."
+    "w idha ma nifaʿ? faẓīḥa! lāzim ykūn ʿindak khiṭṭa",
+    "And if it doesn't work out? How embarrassing! You need a plan."
    ],
    [
     "A",
@@ -1241,8 +1225,8 @@
    ],
    [
     "A",
-    "أكيد. وجرأتك في الأسئلة كانت حلوة، والفريق كله فخور فيك",
-    "akīd. w jurʼatak fi l-asʼila kānat ḥilwa, w il-farīg killah fakhūr fīk",
+    "أكيد. وجرأتك في الأسئلة كانت حلوة، والفريق كله فخور بك",
+    "akīd. w jurʼatak fi l-asʼila kānat ḥilwa, w il-farīg killah fakhūr bik",
     "Of course. And your nerve with the questions was great, and the whole team is proud of you."
    ],
    [
@@ -1263,7 +1247,7 @@
    [
     "مهما كان",
     "mahma kān",
-    "whatever happened, whatever the case, no matter what",
+    "anyway, whatever the case, no matter what",
     "مهما كان",
     ""
    ],
@@ -1289,11 +1273,11 @@
     "(recognise)"
    ],
    [
-    "فخور فيك",
-    "fakhūr fīk",
+    "فخور بك",
+    "fakhūr bik",
     "proud of you (to a man)",
     "فخور بك",
-    "to a woman: fakhūr fīch (فخور فيج); (recognise)"
+    "to a woman: fakhūr bich (فخور بج); (recognise)"
    ]
   ],
   "receptive": [
@@ -1343,7 +1327,7 @@
     "B",
     "مب عذر! مهما كان، لعبت زين في الشوط الثاني",
     "mub ʿudhur! mahma kān, liʿabt zēn fi sh-shōṭ ith-thāni",
-    "It's not an excuse! Whatever you say, I played well in the second half."
+    "It's not an excuse! Anyway, I played well in the second half."
    ],
    [
     "A",
@@ -1511,13 +1495,6 @@
     ""
    ],
    [
-    "المبيعات",
-    "il-mabīʿāt",
-    "sales (figures)",
-    "المبيعات",
-    "(recognise)"
-   ],
-   [
     "المخزون",
     "il-makhzūn",
     "the stock (in a shop or warehouse)",
@@ -1534,15 +1511,14 @@
   ],
   "receptive": [
    3,
-   4,
-   5
+   4
   ]
  },
  {
   "id": "s5u029",
   "stage": 5,
   "title": "Between you and me, Fahad",
-  "goal": "On a call with Fahad, tell him, just between you, that you've accepted the graduate job you were offered and are staying in Dubai; your mum doesn't know yet",
+  "goal": "On a call with Fahad, now that the company has offered you a graduate job, tell him, just between you, that you're staying; your mum doesn't know yet",
   "grammar": "parentheticals: bēni w bēnak, ʿala ḥasab ʿilmi, la samaḥ allāh, allāh yiḥfaẓ- after naming a parent",
   "tip": "Asides go in the middle of a sentence: bas, bēni w bēnak, bagʿid… 'but, between you and me, I'm staying…'. la samaḥ allāh 'God forbid' softens a bad thought. After naming a parent, add a blessing: ummi, allāh yiḥfaẓha, … 'my mum, God keep her, …'.",
   "dialogue": [
@@ -1639,7 +1615,7 @@
    [
     "على ما يبدو",
     "ʿala ma yibdu",
-    "it seems, apparently",
+    "it seems, apparently (formal)",
     "على ما يبدو",
     "(recognise)"
    ],
@@ -1662,7 +1638,7 @@
   "title": "Staying? Staying.",
   "goal": "On a video call from abroad, Sēf fires quick questions about your decision to stay in Dubai; answer him in short replies, the way friends do",
   "grammar": "ellipsis and short replies: answering with one word or phrase, leaving out what's known",
-  "tip": "Between friends, leave out what you both know. Answer with the key word: bitigʿid walla bitirjaʿ? — bagʿid. Answer a 'when' with just the time: il-wīkind. One or two words can carry a whole answer: dumūʿ, akīd; giṣṣa ṭawīla!",
+  "tip": "Between friends, leave out what you both know. Answer with the key word: bitigʿid walla bitirjaʿ? — bagʿid. Answer a 'when' with just the time: il-wīkind. One or two words can carry a whole answer: la, fīdyō; dumūʿ, akīd.",
   "dialogue": [
    [
     "A",
@@ -1696,15 +1672,15 @@
    ],
    [
     "B",
-    "لا، فيديو. قصة طويلة! وأخوي الكبير ويانا",
-    "la, fīdyō. giṣṣa ṭawīla! w akhūy il-kbīr wiyyāna",
-    "No, video. Long story! With my eldest brother on it too."
+    "لا، فيديو. وأخوي الكبير ويانا، يواسيها",
+    "la, fīdyō. w akhūy il-kbīr wiyyāna, ywāsīha",
+    "No, video. With my eldest brother on too, to comfort her."
    ],
    [
     "A",
-    "بيني وبينك، أمك عاطفية. لا سمح الله، بتبكي؟",
-    "bēni w bēnak, ummak ʿāṭifiyya. la samaḥ allāh, bitibchi?",
-    "Between you and me, your mum's emotional. God forbid, will she cry?"
+    "صدقني، أمك عاطفية. لا سمح الله، بتبكي؟",
+    "ṣaddigni, ummak ʿāṭifiyya. la samaḥ allāh, bitibchi?",
+    "Believe me, your mum's emotional. God forbid, will she cry?"
    ],
    [
     "B",
@@ -1727,13 +1703,6 @@
   ],
   "items": [
    [
-    "ها؟",
-    "hā?",
-    "so? well? (asking for news)",
-    "",
-    ""
-   ],
-   [
     "بتبكي",
     "bitibchi",
     "she'll cry; you'll cry (to a man)",
@@ -1748,18 +1717,18 @@
     ""
    ],
    [
-    "قصة طويلة",
-    "giṣṣa ṭawīla",
-    "(it's a) long story",
-    "قصة طويلة",
-    ""
-   ],
-   [
     "مضطر",
     "muẓṭarr",
     "I have to, I've no choice (a man)",
     "مضطر",
     "a woman: muẓṭarra (مضطرة)"
+   ],
+   [
+    "يواسيها",
+    "ywāsīha",
+    "(he'll) comfort her, console her",
+    "يواسيها",
+    "to comfort him: ywāsīh (يواسيه)"
    ],
    [
     "مغامرة",
@@ -1771,7 +1740,7 @@
   ],
   "task": "This week: with a tutor or exchange partner (search a tutoring site for «Emirati Arabic tutor»), talk for 10 minutes about a decision you've made. Ask them to fire short questions at you, and answer in one or two words where you can (bagʿid, il-wīkind, shwayy, akīd). Slip in one aside (bēni w bēnak, ṣaddigni) and correct yourself once on purpose (la, agṣid…).",
   "receptive": [
-   5
+   4
   ]
  },
  {
@@ -1790,21 +1759,21 @@
    ],
    [
     "B",
-    "مب أنا! والله العظيم، لا مفتاح ولا سيارة!",
-    "mub ana! wallāh il-ʿaẓīm, la miftāḥ wala sayyāra!",
-    "Not me! I swear to God: no key, no car!"
+    "مب أنا! والله العظيم، لا مفتاح ولا سيارة! مالي دخل",
+    "mub ana! wallāh il-ʿaẓīm, la miftāḥ wala sayyāra! māli dakhal",
+    "Not me! I swear to God: no key, no car! It's nothing to do with me."
    ],
    [
     "A",
-    "زين زين، ما يحتاج تحلف. راشد اللي قال لي، وهو ما يكذب",
-    "zēn zēn, ma yiḥtāj tiḥlif. Rāshid illi gāl-li, w huwa ma yichdhib",
-    "OK, OK, no need to swear. It was Rāshid who told me, and he doesn't lie."
+    "زين زين، ما يحتاج تحلف. راشد اللي قال لي، وهو ما يكذب ولا يألف من عنده",
+    "zēn zēn, ma yiḥtāj tiḥlif. Rāshid illi gāl-li, w huwa ma yichdhib wala yiʼallif min ʿindah",
+    "OK, OK, no need to swear. It was Rāshid who told me, and he doesn't lie or make things up."
    ],
    [
     "B",
-    "راشد؟ يتهمني؟ هالشيطان يألف من عنده!",
-    "Rāshid? yitthimni? hash-shēṭān yiʼallif min ʿindah!",
-    "Rāshid? He's accusing me? That little devil makes things up!"
+    "راشد؟ مب هو اللي ترجاني وقلت له لا؟ والحين يتهمني؟ هالشيطان!",
+    "Rāshid? mub huwa illi trajjāni w gilt-lah la? w il-ḥīn yittihimni? hash-shēṭān!",
+    "Rāshid? Wasn't he the one who begged me and I said no? And now he's accusing me? The little devil!"
    ],
    [
     "A",
@@ -1820,9 +1789,9 @@
    ],
    [
     "A",
-    "إيه، كل واحد يقول جذي، بس مو مقنعة. وشنو قررت؟ بتقعد؟",
-    "ēh, kill wāḥid ygūl chidhi, bas mū mugniʿa. w shinu garrart? bitigʿid?",
-    "Yeah, everyone says that, but it's not convincing. And what have you decided? Are you staying?"
+    "إيه، كل واحد يقول جذي، بس مو عذر مقنع. وشنو قررت؟ بتقعد؟",
+    "ēh, kill wāḥid ygūl chidhi, bas mū ʿudhur mugniʿ. w shinu garrart? bitigʿid?",
+    "Yeah, everyone says that, but it's not a convincing excuse. And what have you decided? Are you staying?"
    ],
    [
     "B",
@@ -1846,10 +1815,10 @@
   "items": [
    [
     "يتهمني",
-    "yitthimni",
+    "yittihimni",
     "he's accusing me",
     "يتهمني",
-    "you're accusing me: titthimni (to a man), titthimīnni (to a woman)"
+    "you're accusing me: tittihimni (to a man), tittihimīni (to a woman)"
    ],
    [
     "شيطان",
@@ -1863,7 +1832,7 @@
     "yiʼallif min ʿindah",
     "he makes things up (lit. he composes from himself)",
     "يختلق",
-    ""
+    "(recognise)"
    ],
    [
     "ما يكذب",
@@ -1881,6 +1850,7 @@
    ]
   ],
   "receptive": [
+   2,
    4
   ]
  }
