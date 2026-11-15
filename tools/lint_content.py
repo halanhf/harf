@@ -65,6 +65,13 @@ def main():
                 if not (isinstance(l, list) and len(l) == 4 and l[0] in ("A", "B") and all(isinstance(x, str) and x.strip() for x in l[1:])): E(f"dialogue[{i}] shape"); continue
                 check_line(l[1], l[2], l[3], f"dialogue[{i}]", E, W, 200)
             for m in formula_gaps(dl): W(m)
+            if n >= 4 and isinstance(it, list):
+                rec = set(u.get("receptive", [])) if isinstance(u.get("receptive"), list) else set()
+                for i, r in enumerate(it):
+                    if isinstance(r, list) and len(r) == 5:
+                        tagged = "(recognise)" in r[4]
+                        if tagged and i not in rec: W(f"items[{i}] note says (recognise) but the item isn't in receptive")
+                        if i in rec and not tagged: W(f"items[{i}] is receptive but its note doesn't say (recognise)")
             for i, r in enumerate(it):
                 if not (isinstance(r, list) and len(r) == 5 and all(isinstance(x, str) for x in r) and all(x.strip() for x in r[:3])): E(f"items[{i}] shape"); continue
                 check_line(r[0], r[1], r[2], f"items[{i}]", E, W, 80)
