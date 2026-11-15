@@ -9,9 +9,9 @@
   "dialogue": [
    [
     "B",
-    "مريم، ساعديني الله يخليج. هالاستمارة كلها بالعربي",
-    "Maryam, sāʿdīni allāh ykhallīch. hal-istimāra killha bil-ʿarabi",
-    "Maryam, help me, please. This form's all in Arabic."
+    "مريم، ساعديني الله يخليج. الاستمارة كلها بالعربي",
+    "Maryam, sāʿdīni allāh ykhallīch. il-istimāra killha bil-ʿarabi",
+    "Maryam, help me, please. The form's all in Arabic."
    ],
    [
     "A",
@@ -250,7 +250,7 @@
    [
     "A",
     "منو هذا اللي كنت تسولف وياه؟",
-    "minu hādha lli kint tsōlif wiyyāh?",
+    "minu hādha illi kint tsōlif wiyyāh?",
     "Who's that you were chatting with?"
    ],
    [
@@ -268,7 +268,7 @@
    [
     "B",
     "لا، تخرج السنة اللي طافت وتوظف في بنك",
-    "la, tkharraj is-sana lli ṭāfat w twaẓẓaf fi bank",
+    "la, tkharraj is-sana illi ṭāfat w twaẓẓaf fi bank",
     "No, he graduated last year and got a job at a bank."
    ],
    [
@@ -334,7 +334,7 @@
    ],
    [
     "السنة اللي طافت",
-    "is-sana lli ṭāfat",
+    "is-sana illi ṭāfat",
     "last year",
     "السنة الماضية",
     ""
@@ -850,9 +850,9 @@
    ],
    [
     "B",
-    "من لندن. وكل أغراضي فيها!",
-    "min Landan. w kill aghrāẓi fīha!",
-    "From London. And all my things are in it!"
+    "من لندن. وكل أغراضي فيها، حتى الهدايا اللي اشتريتها!",
+    "min Landan. w kill aghrāẓi fīha, ḥatta l-hadāya illi ishtarēt-ha!",
+    "From London. And all my things are in it, even the presents I bought!"
    ],
    [
     "A",
@@ -978,27 +978,27 @@
    ],
    [
     "A",
-    "زين. وشو لبست اليوم؟",
-    "zēn. w shu libast il-yōm?",
-    "Good. So what did you wear today?"
+    "زين. وملابسك كلها في الشنطة؟",
+    "zēn. w malābsak killha fi sh-shanṭa?",
+    "Good. And all your clothes are in the bag?"
    ],
    [
     "B",
-    "اشتريت من المول. اخترت أرخص قميصين!",
-    "ishtarēt min il-mōl. ikhtart arkhaṣ gamīṣēn!",
-    "I bought some at the mall. I picked the two cheapest shirts!"
+    "هيه! اخترت قميصين من المول، ولبست واحد",
+    "hē! ikhtart gamīṣēn min il-mōl, w libast wāḥid",
+    "Yes! I picked out two shirts at the mall and put one on."
    ],
    [
     "A",
-    "زين سويت! والحين ارتحت؟",
-    "zēn sawwēt! w il-ḥīn irtaḥt?",
-    "Good thinking! And have you had some rest now?"
+    "زين سويت! وارتحت شوي؟",
+    "zēn sawwēt! w irtaḥt shwayy?",
+    "Good thinking! And have you had a bit of rest?"
    ],
    [
     "B",
-    "هيه، نمت عدل وارتحت، الحمد لله",
-    "hē, nimt ʿadil w irtaḥt, il-ḥamdu lillāh",
-    "Yes, I slept properly and I'm rested, thank God."
+    "هيه، الحمد لله. نمت عدل وارتحت",
+    "hē, il-ḥamdu lillāh. nimt ʿadil w irtaḥt",
+    "Yes, thank God. I slept properly and I'm rested."
    ]
   ],
   "items": [

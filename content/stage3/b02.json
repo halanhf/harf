@@ -843,6 +843,7 @@
   "goal": "Get back to your desk and let Maryam pass on messages: what the manager and two colleagues said",
   "tip": "To pass on what someone said, use gāl inn- or gālat inn- + an ending: gāl innah taʿbān 'he said he's not well', gālat innha fi ṭ-ṭarīg 'she said she's on her way'. -ah is 'he', -ha is 'she'. gāl-li innah is 'he told me (that) he'.",
   "grammar": "reported speech: gāl innah / gālat innha + what was said",
+  "culture": "When you hear a colleague is ill, say salāmtah 'I hope he's OK' (about a man) or salāmat-ha (about a woman); to the person himself, it's salāmāt. Asking after someone who's off sick is expected at work, not nosy.",
   "dialogue": [
    [
     "A",
@@ -998,9 +999,9 @@
    ],
    [
     "A",
-    "زين. قول لهم إنا نسلم عليهم",
-    "zēn. gūl-lhum inna nsallim ʿalēhum",
-    "Great. Tell them we send our best."
+    "زين. قول لهم إني أسلم عليهم",
+    "zēn. gūl-lhum inni asallim ʿalēhum",
+    "Great. Tell them I say hello."
    ],
    [
     "B",
@@ -1060,11 +1061,11 @@
     ""
    ],
    [
-    "قول لهم إنا",
-    "gūl-lhum inna",
-    "tell them (that) we (to a man)",
-    "قل لهم إننا",
-    "to a woman: gūlī-lhum inna (قولي لهم إنا)"
+    "قول لهم",
+    "gūl-lhum",
+    "tell them (to a man)",
+    "قل لهم",
+    "to a woman: gūlī-lhum (قولي لهم); gūl-lhum inni … = tell them (that) I …"
    ],
    [
     "أقول لهم",
@@ -1080,7 +1081,7 @@
   "stage": 3,
   "title": "They say the manager's leaving",
   "goal": "Catch the latest office gossip from Maryam at work: what people are saying and what you've heard",
-  "tip": "For news you've heard, start with simaʿt inn… 'I heard that…' or ygūlūn inn… 'they say that…'. Before a pronoun, inn takes its ending: simaʿt innah biytzawwaj 'I heard he's getting married'. To sound careful, add yimkin kalām bas 'maybe it's just talk' or allāhu aʿlam 'who knows'.",
+  "tip": "For news you've heard, start with simaʿt inn… 'I heard that…' or ygūlūn inn… 'they say that…'. Before a pronoun, inn takes its ending: simaʿt innah biyitzawwaj 'I heard he's getting married'. To sound careful, add yimkin kalām bas 'maybe it's just talk' or allāhu aʿlam 'who knows'.",
   "grammar": "hearsay: ygūlūn inn…, simaʿt inn… (+ ending)",
   "dialogue": [
    [
@@ -1104,7 +1105,7 @@
    [
     "B",
     "صج؟ أنا سمعت إنه بيتزوج!",
-    "ṣij? ana simaʿt innah biytzawwaj!",
+    "ṣij? ana simaʿt innah biyitzawwaj!",
     "Really? I heard he's getting married!"
    ],
    [
