@@ -61,6 +61,7 @@ def main():
             for i, l in enumerate(dl):
                 if not (isinstance(l, list) and len(l) == 4 and l[0] in ("A", "B") and all(isinstance(x, str) and x.strip() for x in l[1:])): E(f"dialogue[{i}] shape"); continue
                 check_line(l[1], l[2], l[3], f"dialogue[{i}]", E, W, 200)
+            for m in formula_gaps(dl): W(m)
             for i, r in enumerate(it):
                 if not (isinstance(r, list) and len(r) == 5 and all(isinstance(x, str) for x in r) and all(x.strip() for x in r[:3])): E(f"items[{i}] shape"); continue
                 check_line(r[0], r[1], r[2], f"items[{i}]", E, W, 80)
@@ -127,6 +128,25 @@ def dialect_items():  # bare form -> unit id of every taught dialect item
     return out
 
 HOMOGRAPHS = {norm(w): ok for w, ok in [('يدي', ()), ('ويه', ()), ('يا', ()), ('مرة', ('s1u044',)), ('يصلح', ('s3u029',)), ('غير', ()), ('دور', ()), ('تعرف', ()), ('ودي', ()), ('ربع', ()), ('يمه', ('s2u030',)), ('تسلم', ('s1u060',)), ('طب', ('s2u003',)), ('ودنا', ()), ('ارتاح', ()), ('لفت', ()), ('تعور', ())]}
+
+# FRAMEWORK §7: a social formula is taught with its reply in the same dialogue, said back by the other speaker
+FORMULAS = [(r"السلام عليكم", ["وعليكم السلام"]), (r"ما قصرت", ["ما سوينا شي"]), (r"يعطي\w* العافيه", ["الله يعافي"]),
+    (r"الله يقوي", ["الله يعافي", "الله يقوي"]), (r"بالعافيه", ["الله يعافي"]), (r"نعيما", ["الله ينعم"]),
+    (r"حيا\w* الله", ["الله يحيي"]), (r"تشرفنا", ["الشرف"]), (r"مبروك", ["الله يبارك", "يبارك في"]),
+    (r"سلامات|سلامت(?:ك|ج|ه|ها|كم)\b", ["الله يسلم"]), (r"ما تشوف\w* شر", ["الله يسلم", "الشر ما"]), (r"رمضان كريم", ["الله اكرم"]),
+    (r"تقبل الله", ["منا ومنكم", "منا و منكم"]), (r"عظم الله اجركم", ["اجرنا واجركم"]), (r"الله يرحم(?:ه|ها)\b", ["امين"]),
+    (r"الله يوفق", ["امين", "الله يوفق"]), (r"عقبال", ["الله يسمع"]), (r"صباح الخير", ["صباح النور"]), (r"مساء الخير", ["مساء النور"]),
+    (r"تصبح\w* على خير", ["من اهله"]), (r"السموحه", ["مسموح", "ما عليه"])]
+def formula_gaps(dl):
+    rows = [(l[0], norm(l[1])) for l in dl if isinstance(l, list) and len(l) == 4]
+    out = []
+    for i, (who, ar) in enumerate(rows):
+        for pat, replies in FORMULAS:
+            m = re.search(pat, ar)
+            if not m or any(r in ar for r in replies if r not in m.group(0)): continue  # the line is itself the reply
+            if not any(w != who and any(r in a for r in replies) for w, a in rows[i + 1:]):
+                out.append(f"dialogue[{i}] has the formula {m.group(0)} but no later line from the other speaker gives its reply ({' / '.join(replies)}; FRAMEWORK §7)")
+    return out
 
 def check_fusha(errs, warns):
     seen = {}
