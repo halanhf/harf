@@ -151,9 +151,9 @@
    ],
    [
     "A",
-    "زين. اقعد هناك، والممرضة بتناديك",
-    "zēn. igʿid hnāk, w il-mumarriẓa bitnādīk",
-    "OK. Sit over there, and the nurse will call you."
+    "زين. تفضل اقعد هناك، والممرضة بتناديك",
+    "zēn. tfaẓẓal igʿid hnāk, w il-mumarriẓa bitnādīk",
+    "OK. Please take a seat over there, and the nurse will call you."
    ],
    [
     "B",
@@ -298,9 +298,9 @@
    ],
    [
     "B",
-    "زين، بدق على شركة التأمين بعد الاجتماع",
-    "zēn, badigg ʿala sharikat it-taʼmīn baʿd il-ijtimāʿ",
-    "OK, I'll ring the insurance company after the meeting."
+    "زين، بدق على شركة التأمين وبسألهم إذا يغطون الدوا",
+    "zēn, badigg ʿala sharikat it-taʼmīn w basʼalhum idha yghaṭṭūn id-dawa",
+    "OK, I'll ring the insurance company and ask them whether they cover medicine."
    ]
   ],
   "items": [
@@ -468,7 +468,7 @@
     "yimkin aḥad ligāh",
     "maybe someone (has) found it (m.)",
     "ربما وجده أحد",
-    "a feminine thing: ligāha (لقاها); UAE also: ḥadd (حد) for aḥad"
+    "a feminine thing: ligāha (لقاها); UAE also: ḥad (حد) for aḥad"
    ],
    [
     "دق على البنك",
@@ -491,7 +491,7 @@
   "stage": 3,
   "title": "At the police station",
   "goal": "At a Dubai police station, report your lost wallet to an officer: say when and where it went missing and describe it",
-  "tip": "Describe a lost thing with kān: kān fīh 'there was … in it', kān fīh khams miya dirham. Say what you don't know with an indirect question: ma adri wēn ṭāḥ 'I don't know where I dropped it'. ẓāyiʿ 'lost' is a participle, like rāyiḥ: a feminine thing is ẓāyʿa.",
+  "tip": "Describe a lost thing with kān: kān fīh 'there was … in it', kān fīh khams miyat dirham. Say what you don't know with an indirect question: ma adri wēn ṭāḥ 'I don't know where I dropped it'. ẓāyiʿ 'lost' is a participle, like rāyiḥ: a feminine thing is ẓāyʿa.",
   "grammar": "recycle: kān for a past description (kān fīh); indirect questions (ma adri wēn); participles (ẓāyiʿ)",
   "dialogue": [
    [
@@ -521,7 +521,7 @@
    [
     "B",
     "لونه أسود. كان فيه بطاقاتي وخمس مية درهم",
-    "lōnah aswad. kān fīh biṭāgāti w khams miya dirham",
+    "lōnah aswad. kān fīh biṭāgāti w khams miyat dirham",
     "It's black. My cards and five hundred dirhams were in it."
    ],
    [
@@ -614,8 +614,8 @@
   "id": "s3u101",
   "stage": 3,
   "title": "Checkpoint 3.6: the wallet turns up",
-  "goal": "Checkpoint: Fahad and Sēf come with you to collect your wallet; tell Fahad (A) what happened and how your hand is, and thank them both",
-  "tip": "A Kuwaiti says shṣār? for shu ṣār? 'what happened?'. A feminine thing takes feminine verbs: biṭāgat it-taʼmīn ẓāʿat 'the insurance card's gone', ṣārat aḥsan 'it's got better'. To thank two or more people: mā gaṣṣartu; the reply is mā sawwēna shay.",
+  "goal": "Checkpoint: Fahad and Sēf wait outside while you collect your wallet from the police; tell Fahad (A) what happened and how your hand is, and thank them both",
+  "tip": "A Kuwaiti says shṣār? for shu ṣār? 'what happened?'. A feminine thing takes feminine verbs: biṭāgat it-taʼmīn ẓāʿat 'the insurance card's gone', ṣārat aḥsan 'it's got better'. il-ghada ʿalay 'lunch is on me' becomes il-ghada ʿalēna 'lunch is on us'.",
   "grammar": "checkpoint 3.6: recycle s3u084–s3u100 (health, insurance, losing things)",
   "dialogue": [
    [
@@ -632,9 +632,9 @@
    ],
    [
     "A",
-    "ما شاء الله! وكل شي فيه؟",
-    "mā shāʼ allāh! w kill shay fīh?",
-    "Brilliant! And is everything in it?"
+    "الحمد لله! وكل شي فيه؟",
+    "il-ḥamdu lillāh! w kill shay fīh?",
+    "Thank God! And is everything in it?"
    ],
    [
     "B",
@@ -704,11 +704,11 @@
     "a masculine thing: ṣār aḥsan (صار أحسن); worse: ṣārat akhass"
    ],
    [
-    "ما قصرتوا",
-    "mā gaṣṣartu",
-    "thank you, you've been so kind (to a group)",
-    "شكرًا لكم",
-    "to one man: mā gaṣṣart; to one woman: mā gaṣṣarti; reply: mā sawwēna shay"
+    "الغدا علينا",
+    "il-ghada ʿalēna",
+    "lunch is on us (we're paying)",
+    "الغداء على حسابنا",
+    "one person: il-ghada ʿalay (الغدا علي)"
    ]
   ]
  }
