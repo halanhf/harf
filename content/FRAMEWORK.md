@@ -205,7 +205,7 @@ C1 grammar categories come from the table of contents of a published Emirati Ara
 
 ## 7. Social formulas with their fixed replies
 
-Teach the pair together, in the same dialogue. Evidence: S sourced; C Gumar phrase count AE/KW; U unsourced. A formula whose reply is U may be used in a dialogue only after a native confirms the reply.
+Teach the pair together, in the same dialogue. Evidence: S sourced; C Gumar phrase count AE/KW; U unsourced. A formula whose reply is U ships with the best-evidenced reply (corpus, grammar, course sources) and is listed in content/review/native_queue.md for a native to confirm (course-lead ruling).
 
 | Formula | Fixed reply | When | Evidence | Taught in |
 |---|---|---|---|---|
