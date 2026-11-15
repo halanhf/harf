@@ -89,7 +89,7 @@
     "lō shift tilifōnak",
     "if you'd looked at your phone (to a man)",
     "لو نظرت إلى هاتفك",
-    "to a woman: lō shifti tilifōnich (لو شفتي تلفونج)"
+    "to a woman: lō shifti tilifōnich (لو شفتي تلفونج); (recognise)"
    ],
    [
     "المنبه ما رن",
@@ -490,11 +490,11 @@
     ""
    ],
    [
-    "شو كنت بتسوي؟",
-    "shu kint bitsawwi?",
-    "what would you have done? (to a man)",
-    "ماذا كنت ستفعل؟",
-    "to a woman: shu kinti bitsawwīn? (شو كنتي بتسوين؟)"
+    "لو ما ييت",
+    "lō ma yīt",
+    "if you hadn't come (to a man); if I hadn't come",
+    "لو لم تأت",
+    "to a woman: lō ma yīti (لو ما ييتي)"
    ],
    [
     "جان درست",
@@ -615,11 +615,11 @@
   ],
   "items": [
    [
-    "راحت علي",
-    "rāḥat ʿalay",
-    "I've missed out, I've missed my chance",
-    "فاتتني الفرصة",
-    ""
+    "اكتبه الحين",
+    "iktibah il-ḥīn",
+    "write it (m.) now (to a man)",
+    "اكتبه الآن",
+    "to a woman: iktibīh il-ḥīn (اكتبيه الحين)"
    ],
    [
     "سكروا التسجيل",
@@ -681,7 +681,8 @@
   "task": "This week: record a 60-second voice note to Sēf about one thing you'd do differently if you could go back a year. Say what happened, then use lō + a past verb with chān twice (lō dirēt, chān …) and chān + a past verb once for 'I should have' (chān sajjalt …). Listen back once and fix any 'you' ending.",
   "receptive": [
    1,
-   5
+   5,
+   6
   ]
  },
  {
@@ -689,7 +690,7 @@
   "stage": 4,
   "title": "If we'd known it'd be this busy",
   "goal": "On a busy night out with Fahad and Sēf, look back on the hunt for parking and catch Fahad's Kuwaiti lō dāri",
-  "tip": "lō kān (or lō kinna) + a place, adjective or participle is 'if it/we had been': lō kān il-maṭʿam fi l-mōl 'if the restaurant had been in the mall', lō kinna ḥājzīn 'if we'd booked'. Fahad's Kuwaiti lō dāri means lō dirēt 'if I'd known', and his nanṭir is 'we wait'.",
+  "tip": "lō kān (or lō kinna) + a place, adjective or participle is 'if it/we had been': lō kān il-maṭʿam fi l-mōl 'if the restaurant had been in the mall', lō kinna ḥājzīn 'if we'd booked'. Fahad's Kuwaiti lō dāri means lō dirēt 'if I'd known', and his ninṭir is 'we wait'.",
   "grammar": "counterfactual with lō kān / lō kinna + place, adjective or participle",
   "dialogue": [
    [
@@ -743,22 +744,22 @@
    [
     "A",
     "زين سويت! جان قعدنا ننطر ساعة ثانية",
-    "zēn sawwēt! chān gaʿadna nanṭir sāʿa thānya",
+    "zēn sawwēt! chān gaʿadna ninṭir sāʿa thānya",
     "Good call! We'd have been stuck waiting another hour."
    ],
    [
     "B",
     "يلا ندخل، سيف يعرف المكان",
-    "yalla ndkhil, Sēf yaʿarf il-makān",
+    "yalla nidkhil, Sēf yaʿarf il-makān",
     "Come on, let's go in, Sēf knows the place."
    ]
   ],
   "items": [
    [
-    "لو درينا",
-    "lō dirēna",
-    "if we'd known",
-    "لو علمنا",
+    "المطعم زحمة",
+    "il-maṭʿam zaḥma",
+    "the restaurant's packed",
+    "المطعم مزدحم",
     ""
    ],
    [
@@ -812,7 +813,7 @@
    ],
    [
     "جان قعدنا ننطر",
-    "chān gaʿadna nanṭir",
+    "chān gaʿadna ninṭir",
     "we'd have been stuck waiting (Kuwait)",
     "لبقينا ننتظر",
     "UAE: chān gaʿadna nitrayya (جان قعدنا نتريا); (recognise)"
@@ -889,7 +890,7 @@
     "B",
     "الله يعافيج",
     "allāh yʿāfīch",
-    "And you."
+    "Thank you."
    ]
   ],
   "items": [
@@ -940,7 +941,7 @@
     "shay nāgiṣ",
     "something missing",
     "شيء ناقص",
-    "(recognise)"
+    ""
    ],
    [
     "براجعه مرتين",
@@ -960,14 +961,13 @@
   "receptive": [
    0,
    1,
-   5,
-   6
+   5
   ]
  },
  {
   "id": "s4u008",
   "stage": 4,
-  "title": "He must have overslept",
+  "title": "He must have left",
   "goal": "Waiting with Sēf outside Fahad's building, guess what has happened to him, and catch Sēf's biykūn guesses",
   "tip": "biykūn + a past verb is a guess you'll hear: biykūn nām 'he's probably fallen asleep', akīd biykūn ṭilaʿ 'he must have left'. To guess yourself, yimkin + a past verb is the simplest: yimkin nām 'maybe he's fallen asleep', yimkin ẓāʿ? 'maybe he's got lost?'",
   "grammar": "biykūn + past verb for guesses (recognise); yimkin + past verb",
@@ -998,15 +998,15 @@
    ],
    [
     "A",
-    "تظن؟ يعرف دبي زين، وبعدين عنده خرايط في تلفونه",
-    "tẓunn? yaʿarf Dbayy zēn, w baʿdēn ʿindah kharāyiṭ fi tilifōnah",
-    "You think? He knows Dubai well, and anyway he's got maps on his phone."
+    "تظن؟ يعرف دبي زين، وبعدين تلفونه فيه خرايط",
+    "tẓunn? yaʿarf Dbayy zēn, w baʿdēn tilifōnah fīh kharāyiṭ",
+    "You think? He knows Dubai well, and anyway his phone's got maps."
    ],
    [
     "B",
-    "يمكن تلفونه طافي، والبطارية خلصت",
-    "yimkin tilifōnah ṭāfi, w il-baṭṭāriyya khilṣat",
-    "Maybe his phone's off and the battery's died."
+    "يمكن تلفونه طافي، البطارية خلصت",
+    "yimkin tilifōnah ṭāfi, il-baṭṭāriyya khilṣat",
+    "Maybe his phone's off; the battery's died."
    ],
    [
     "A",
@@ -1071,10 +1071,10 @@
     "(recognise)"
    ],
    [
-    "هذاك هو",
-    "hādhāk huwa",
-    "there he is, that's him (over there)",
-    "ها هو ذاك",
+    "ياي من المحل",
+    "yāy min il-maḥall",
+    "he's coming from the shop",
+    "قادم من المحل",
     ""
    ],
    [
@@ -1211,11 +1211,11 @@
     "(recognise)"
    ],
    [
-    "الريوق",
-    "ir-riyūg",
-    "breakfast",
-    "الفطور",
-    ""
+    "شرايك نروح؟",
+    "shrāyak nrūḥ?",
+    "how about going? shall we go? (to a man)",
+    "ما رأيك أن نذهب؟",
+    "to a woman: shrāyich nrūḥ? (شرايج نروح؟)"
    ],
    [
     "بتكون مسكرة",
@@ -1233,6 +1233,7 @@
    ]
   ],
   "receptive": [
+   1,
    5,
    8
   ]
@@ -1242,7 +1243,7 @@
   "stage": 4,
   "title": "By the time I'm back",
   "goal": "Before the manager travels, he asks the team what will be done by the time he's back; answer for yourself and the team",
-  "tip": "Listen for the future perfect: bitkūnūn khallaṣtu? 'will you (all) have finished?'. Answer with the plain future: binkhalliṣ yōm il-khamīs. lēn + a present verb is 'by the time': lēn arjaʿ 'by the time I'm back'. To a manager, keep ṭāl ʿumrak.",
+  "tip": "Listen for the future perfect: bitkūnūn khallaṣtu? 'will you (all) have finished?'. Answer with the plain future: binkhalliṣ yōm il-khamīs. lēn 'until' + a present verb can also mean 'by the time': lēn arjaʿ. To a manager, keep ṭāl ʿumrak.",
   "grammar": "future perfect to a group (recognise); lēn 'by the time'",
   "dialogue": [
    [
@@ -1357,18 +1358,18 @@
     ""
    ],
    [
-    "قبل الاجتماع",
-    "gabl il-ijtimāʿ",
-    "before the meeting",
-    "قبل الاجتماع",
+    "بنخلص يوم الخميس",
+    "binkhalliṣ yōm il-khamīs",
+    "we'll finish on Thursday",
+    "سننتهي يوم الخميس",
     ""
    ],
    [
-    "طرشوا لي",
-    "ṭarrshū-li",
-    "message me, send me (it) (to a group)",
-    "أرسلوا لي",
-    "to one man: ṭarrish-li (طرش لي); to one woman: ṭarrshī-li (طرشي لي)"
+    "بنطرش له العرض",
+    "binṭarrish-lah il-ʿarẓ",
+    "we'll send him the presentation",
+    "سنرسل له العرض",
+    ""
    ]
   ],
   "task": "This week: search YouTube for «بودكاست إماراتي» (Emirati podcast) or «سوالف» (chats). Listen until you hear جان or بكون / بيكون three times, and write down the sentence around each. Within a minute you should hear شو / مب (UAE) or شنو / مو (Kuwait). If you hear سوف, ليس or هل all the time, it's fuṣḥā: pick another clip.",
