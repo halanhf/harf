@@ -145,7 +145,7 @@
     "A",
     "بثلاث آلاف؟ تشتري سيكل بس!",
     "b-thalāth ālāf? tishtiri sēkal bas!",
-    "With three thousand? You'll only buy a bike!"
+    "With three thousand? You could only buy a bike!"
    ],
    [
     "B",
@@ -194,7 +194,7 @@
     "ʿumrha thalāth sinīn",
     "it's three years old (a feminine thing); she's three",
     "عمرها ثلاث سنوات",
-    "a masculine thing or a boy: ʿumrah (عمره)"
+    "a masculine thing or a boy: ʿumrah (عمره); you've also seen thalāth sanawāt (s1u023)"
    ],
    [
     "تشتري",
@@ -560,8 +560,8 @@
   "id": "s2u055",
   "stage": 2,
   "title": "My head hurts",
-  "goal": "At the office, tell Maryam you're not feeling well, answer her get-well wishes and agree to go home",
-  "tip": "shfīk? 'what's wrong?' is to a man; to a woman it's shfīch? Say what hurts, then yʿawwirni: rāsi yʿawwirni 'my head hurts'. To someone ill, say salāmāt or ma tshūf shar. The reply to both is allāh ysallmak, or allāh ysallmich to a woman.",
+  "goal": "At the office, tell Maryam you're not feeling well and answer her get-well wishes; she sends you home and offers to cover your work",
+  "tip": "shfīk? 'what's wrong?' is to a man; to a woman it's shfīch? Say what hurts, then yʿawwirni: rāsi yʿawwirni 'my head hurts'. A feminine part takes tʿawwirni: īdi tʿawwirni 'my hand hurts'. To someone ill, say salāmāt or ma tshūf shar; the reply is allāh ysallmak (to a woman: allāh ysallmich).",
   "grammar": "recycle: present and future (yʿawwirni, aḥiss; bagūl, basawwīh)",
   "dialogue": [
    [
@@ -627,7 +627,7 @@
     "rāsi yʿawwirni",
     "my head hurts, I've got a headache",
     "رأسي يؤلمني",
-    "say the part that hurts first, then yʿawwirni"
+    "say the part that hurts first; a masculine part takes yʿawwirni, a feminine one (hand, leg, eye, ear) tʿawwirni: īdi tʿawwirni (إيدي تعورني) = my hand hurts"
    ],
    [
     "سلامات",
@@ -641,7 +641,7 @@
     "ma tshūf shar",
     "get well soon, I hope it's nothing (to a man; lit. may you see no harm)",
     "لا بأس عليك",
-    "to a woman: ma tshūfīn shar (ما تشوفين شر); reply: allāh ysallmak, or ish-shar ma yiyīk (الشر ما ييك)"
+    "to a woman: ma tshūfīn shar (ما تشوفين شر); reply: allāh ysallmak, or ish-shar ma yiyīk (الشر ما يييك)"
    ],
    [
     "أحس",
@@ -984,7 +984,7 @@
     "ما تعورت",
     "ma tʿawwart",
     "I didn't get hurt; you didn't get hurt (to a man)",
-    "لم أُصب",
+    "لم أصب",
     "to a woman: ma tʿawwarti (ما تعورتي); she didn't get hurt: ma tʿawwrat; fī aḥad tʿawwar? = is anyone hurt?"
    ],
    [
