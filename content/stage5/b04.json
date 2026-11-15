@@ -27,9 +27,9 @@
    ],
    [
     "B",
-    "ساعتين؟ يا حليلك! لازم ترتاح الحين",
-    "sāʿtēn? yā ḥalīlak! lāzim tirtāḥ il-ḥīn",
-    "Two hours? You poor thing! You must have a rest now. (ironic)"
+    "ساعتين؟ يا حليلك! فيه ضغط وايد، لازم ترتاح",
+    "sāʿtēn? yā ḥalīlak! fīh ẓaghiṭ wāyid, lāzim tirtāḥ",
+    "Two hours? You poor thing! That's a lot of pressure; you must have a rest. (ironic)"
    ],
    [
     "A",
@@ -51,9 +51,9 @@
    ],
    [
     "B",
-    "أمزح وياك. أنا بقدم النص الأول",
-    "amzaḥ wiyyāk. ana bagaddim in-nuṣṣ il-awwal",
-    "I'm joking. I'll present the first half."
+    "أمزح وياك. أنا بقدم النص الأول، والأسئلة في الآخر عليك",
+    "amzaḥ wiyyāk. ana bagaddim in-nuṣṣ il-awwal, w il-asʼila fi l-ākhir ʿalēk",
+    "I'm joking. I'll present the first half, and the questions at the end are yours."
    ],
    [
     "A",
@@ -63,9 +63,9 @@
    ],
    [
     "B",
-    "كرك بعد؟ ما شاء الله، وايد عليك اليوم!",
-    "karak baʿad? mā shāʼ allāh, wāyid ʿalēk il-yōm!",
-    "Karak too? Wow, you're really overdoing it today! (ironic)"
+    "كرك بعد؟ هذا من طيبك! وايد عليك اليوم",
+    "karak baʿad? hādha min ṭībak! wāyid ʿalēk il-yōm",
+    "Karak too? That's so kind of you! You're really overdoing it today! (ironic)"
    ]
   ],
   "items": [
@@ -155,9 +155,9 @@
    ],
    [
     "A",
-    "لا، والله إنك فنان! تستاهل جايزة على هالشي",
-    "la, wallāh innak fannān! tistāhil jāyza ʿala hash-shay",
-    "No, honestly, you're an artist! You deserve a prize for that. (ironic)"
+    "لا، صفيت السيارة بشكل ممتاز! والله إنك فنان، تستاهل جايزة",
+    "la, ṣaffēt is-sayyāra bi-shakl mumtāz! wallāh innak fannān, tistāhil jāyza",
+    "No, you parked the car excellently! Honestly, you're an artist; you deserve a prize. (ironic)"
    ],
    [
     "B",
@@ -167,9 +167,9 @@
    ],
    [
     "A",
-    "خيبة! منو قال لك؟ أكيد سيف",
-    "khēba! minu gāl-lak? akīd Sēf",
-    "Come on! Who told you? It must have been Sēf."
+    "خيبة! لا تتطنز علي. منو قال لك؟ أكيد سيف",
+    "khēba! la titṭannaz ʿalay. minu gāl-lak? akīd Sēf",
+    "Come on! Don't make fun of me. Who told you? It must have been Sēf (in the family group)."
    ],
    [
     "B",
@@ -191,9 +191,9 @@
    ],
    [
     "A",
-    "تأخرت! شافها من الدريشة، وقام يضحك",
-    "taʼakhkhart! shāfha min id-dirīsha, w gām yiẓḥak",
-    "Too late! He saw it from the window and burst out laughing."
+    "تأخرت! شافها من الدريشة، وقام يضحك. تعال حبيبي!",
+    "taʼakhkhart! shāfha min id-dirīsha, w gām yiẓḥak. taʿāl ḥabībi!",
+    "Too late! He saw it from the window and burst out laughing. Nice try, mate!"
    ],
    [
     "B",
@@ -276,21 +276,21 @@
   "dialogue": [
    [
     "A",
-    "يا هلا! تعال يا ولدي، نحن قاعدين نضحك على سيف",
-    "yā hala! taʿāl yā wildi, niḥin gāʿdīn niẓḥak ʿala Sēf",
+    "يا حيا الله! تعال يا ولدي، نحن قاعدين نضحك على سيف",
+    "yā ḥayya allāh! taʿāl yā wildi, niḥin gāʿdīn niẓḥak ʿala Sēf",
     "Welcome! Come in, son; we're having a laugh at Sēf (on the video call)."
    ],
    [
     "B",
-    "هلا والله يا عمي. خير؟ شو سوى؟",
-    "hala wallāh yā ʿammi. khēr? shu sawwa?",
-    "Hello, uncle. What is it? What's he done?"
+    "الله يحييك يا عمي. خير؟ شو سوى؟",
+    "allāh yḥayyīk yā ʿammi. khēr? shu sawwa?",
+    "Thank you, uncle. What is it? What's he done?"
    ],
    [
     "A",
-    "سنة في الغربة، وبيرجع يرطن مثل الأجانب، ولا بيعرف يصب القهوة!",
-    "sana fi l-ghurba, w biyirjaʿ yirṭin mithil il-ajānib, wala biyaʿrif yṣibb il-gahwa!",
-    "A year abroad, and he'll come back jabbering like a foreigner, and won't even know how to pour the coffee!"
+    "سنة في الغربة، وبيرجع يرطن مثل الأجانب، ينسى الكلمات العربية، ولا بيعرف يصب القهوة!",
+    "sana fi l-ghurba, w biyirjaʿ yirṭin mithil il-ajānib, yinsa l-kalimāt il-ʿarabiyya, wala biyaʿrif yṣibb il-gahwa!",
+    "A year abroad, and he'll come back jabbering like a foreigner, forgetting his Arabic words, and won't even know how to pour the coffee!"
    ],
    [
     "B",
@@ -324,9 +324,9 @@
    ],
    [
     "A",
-    "أدري يا ولدي. المزح حلو، بس الغربة ما فيها مزح",
-    "adri yā wildi. il-mazaḥ ḥilu, bas il-ghurba ma fīha mazaḥ",
-    "I know, son. Joking's all very well, but being far from home is no joke."
+    "أدري يا ولدي، هذا كلام مجالس. بس الغربة ما فيها مزح",
+    "adri yā wildi, hādha kalām majālis. bas il-ghurba ma fīha mazaḥ",
+    "I know, son, that's just majlis talk. But being far from home is no joke."
    ],
    [
     "B",
@@ -418,9 +418,9 @@
   "dialogue": [
    [
     "A",
-    "ماجد يسوق بروحه للجامعة؟ هذا اللي رسب في الليسن ثلاث مرات!",
-    "Mājid ysūg b-rūḥah lil-jāmʿa? hādha illi risab fi l-lēsin thalāth marrāt!",
-    "Mājid drives himself to uni now? This is the guy who failed his driving test three times!"
+    "ماجد يسوق بروحه للجامعة؟ يا بطل! هذا اللي رسب في الليسن ثلاث مرات!",
+    "Mājid ysūg b-rūḥah lil-jāmʿa? yā baṭal! hādha illi risab fi l-lēsin thalāth marrāt!",
+    "Mājid drives himself to uni now? What a champ! This is the guy who failed his driving test three times!"
    ],
    [
     "B",
@@ -460,9 +460,9 @@
    ],
    [
     "B",
-    "أدري. بس الحين مب وقته للمزح. كلمه",
-    "adri. bas il-ḥīn mub wagtah lil-mazaḥ. kallmah",
-    "I know. But now's not the time for jokes. Talk to him."
+    "أدري. بس الحين مب وقته، هالسالفة ما فيها مزح عنده. كلمه",
+    "adri. bas il-ḥīn mub wagtah, has-sālfa ma fīha mazaḥ ʿindah. kallmah",
+    "I know. But now's not the time; for him, that story's no joke. Talk to him."
    ],
    [
     "A",
@@ -472,9 +472,9 @@
    ],
    [
     "B",
-    "يلا، الكرك اليوم على فهد!",
-    "yalla, il-karak il-yōm ʿala Fahad!",
-    "(to Mājid) Come on, karak's on Fahad today!"
+    "يلا، الكرك اليوم على فهد! وايد عليك يا فهد",
+    "yalla, il-karak il-yōm ʿala Fahad! wāyid ʿalēk yā Fahad",
+    "(to Mājid) Come on, karak's on Fahad today! Steady on, Fahad, don't overdo it! (ironic)"
    ]
   ],
   "items": [
@@ -571,9 +571,9 @@
    ],
    [
     "A",
-    "كل ما تقرب منها تخرب! والله ما شفت جي",
-    "kill ma tgarrib minha tikhrab! wallāh ma shift chī",
-    "Every time you go near it, it breaks down! Honestly, I've never seen anything like it."
+    "كل ما تقرب منها تخرب، وقدام الناس بعد! والله ما شفت جي",
+    "kill ma tgarrib minha tikhrab, w jiddām in-nās baʿad! wallāh ma shift chī",
+    "Every time you go near it, it breaks down, and in front of everyone too! Honestly, I've never seen anything like it."
    ],
    [
     "B",
@@ -583,9 +583,9 @@
    ],
    [
     "A",
-    "إجازة؟ انت توك راجع من إجازة!",
-    "ijāza? inta tawwak rājiʿ min ijāza!",
-    "A holiday? You've only just come back from one!"
+    "إجازة؟ مب وقته! انت توك راجع من إجازة",
+    "ijāza? mub wagtah! inta tawwak rājiʿ min ijāza",
+    "A holiday? Not now! You've only just come back from one."
    ],
    [
     "B",
@@ -613,9 +613,9 @@
    ],
    [
     "B",
-    "على الأقل أحد يتعلم مني! مشكورة على النسخ",
-    "ʿala l-aqall aḥad yitʿallam minni! mashkūra ʿala n-nusakh",
-    "At least someone's learning from me! Thanks for the copies."
+    "على الأقل أحد يتعلم مني! يلا، خلاص عاد، الاجتماع بعد خمس دقايق",
+    "ʿala l-aqall aḥad yitʿallam minni! yalla, khalāṣ ʿād, il-ijtimāʿ baʿd khams dagāyig",
+    "At least someone's learning from me! Come on, that's enough joking; the meeting's in five minutes."
    ]
   ],
   "items": [
@@ -836,21 +836,21 @@
    ],
    [
     "A",
-    "كل الشركات تقول جي. وفي شركة ثانية أرخص منكم",
-    "kill ish-sharikāt tgūl chī. w fī sharika thānya arkhaṣ minkum",
-    "Every company says that. And there's another company that's cheaper than you."
+    "كل ما أكلم شركة تقول جي. وفي شركة ثانية أرخص منكم",
+    "kill ma akallim sharika tgūl chī. w fī sharika thānya arkhaṣ minkum",
+    "Every company I talk to says that. And there's another company that's cheaper than you."
    ],
    [
     "B",
-    "يمكن أرخص، بس بيخلصون على الوقت؟",
-    "yimkin arkhaṣ, bas biykhallṣūn ʿala l-wagt?",
-    "Maybe cheaper, but will they finish on time?"
+    "يمكن أرخص، بس من ناحية ثانية، بيخلصون على الوقت؟",
+    "yimkin arkhaṣ, bas min nāḥya thānya, biykhallṣūn ʿala l-wagt?",
+    "Maybe cheaper, but on the other hand, will they finish on time?"
    ],
    [
     "A",
-    "هذا اللي ما أدريه. والميزانية عندنا محدودة، شو بتعطوني زيادة؟",
-    "hādha illi ma adrīh. w il-mīzāniyya ʿindana maḥdūda, shu bitaʿṭūni ziyāda?",
-    "That I don't know. And our budget's limited; what will you give me on top?"
+    "هذا اللي ما أدريه. بشكل عام الميزانية عندنا محدودة، شو بتعطوني زيادة؟",
+    "hādha illi ma adrīh. bi-shakl ʿāmm il-mīzāniyya ʿindana maḥdūda, shu bitaʿṭūni ziyāda?",
+    "That I don't know. On the whole our budget's limited; what will you give me on top?"
    ],
    [
     "B",
@@ -1000,9 +1000,9 @@
    ],
    [
     "A",
-    "كلامك منطقي. بس منو بيتابع الشغل كل أسبوع؟",
-    "kalāmak manṭiqi. bas minu biytābiʿ ish-shughul kill usbūʿ?",
-    "That makes sense. But who's going to keep track of the work every week?"
+    "كلامك منطقي، والفكرة مب شين. بس منو بيتابع الشغل كل أسبوع؟",
+    "kalāmak manṭiqi, w il-fikra mub shēn. bas minu biytābiʿ ish-shughul kill usbūʿ?",
+    "That makes sense, and the idea's not bad. But who's going to keep track of the work every week?"
    ],
    [
     "B",
@@ -1012,9 +1012,9 @@
    ],
    [
     "A",
-    "زين، أقنعتني. شهر واحد، وبعدين نشوف",
-    "zēn, agnaʿtni. shahar wāḥid, w baʿdēn nshūf",
-    "All right, you've convinced me. One month, and then we'll see."
+    "زين، أقنعتني. شهر واحد، على شرط تتابعها بنفسك",
+    "zēn, agnaʿtni. shahar wāḥid, ʿala sharṭ titābiʿha b-nafsak",
+    "All right, you've convinced me. One month, on condition you keep track of it yourself."
    ]
   ],
   "items": [
@@ -1090,9 +1090,9 @@
   "dialogue": [
    [
     "B",
-    "السلام عليكم، طال عمرك. أنا سالم، ساكن في شقتك في مردف",
-    "as-salāmu ʿalaykum, ṭāl ʿumrak. ana Sālim, sākin fi shiggtak fi Mirdif",
-    "Hello, sir. It's Sālim; I live in your flat in Mirdif."
+    "السلام عليكم، طال عمرك. تسمح لي دقيقتين؟",
+    "as-salāmu ʿalaykum, ṭāl ʿumrak. tismaḥ-li digīgtēn?",
+    "Hello, sir. Can you spare me two minutes?"
    ],
    [
     "A",
@@ -1102,8 +1102,8 @@
    ],
    [
     "B",
-    "ربيعي اللي ساكن معاي بيطلع من الشقة آخر الشهر",
-    "rbīʿi illi sākin maʿāy biyiṭlaʿ min ish-shigga ākhir ish-shahar",
+    "ربيعي اللي ساكن معاي بيطلع آخر الشهر",
+    "rbīʿi illi sākin maʿāy biyiṭlaʿ ākhir ish-shahar",
     "My friend who lives with me is moving out at the end of the month."
    ],
    [
@@ -1120,9 +1120,9 @@
    ],
    [
     "A",
-    "بس أنا ما أعرفه. ومنو بيضمن لي إنه زين؟",
-    "bas ana ma aʿarfah. w minu biyiẓman-li innah zēn?",
-    "But I don't know him. And who's going to guarantee me he's all right?"
+    "بس أنا ما أعرفه. وإذا ما نفع، منو بيضمن لي؟",
+    "bas ana ma aʿarfah. w idha ma nifaʿ, minu biyiẓman-li?",
+    "But I don't know him. And if it doesn't work out, who's going to guarantee it for me?"
    ],
    [
     "B",
@@ -1144,9 +1144,9 @@
    ],
    [
     "A",
-    "زين، السبت بعد العصر. وإذا عجبني، نتفاهم",
-    "zēn, is-sabt baʿd il-ʿaṣir. w idha ʿajabni, nitfāham",
-    "All right, Saturday after ʿaṣr. And if I like him, we'll come to an arrangement."
+    "زين، أقنعتني. السبت بعد العصر، وإذا عجبني نتفاهم",
+    "zēn, agnaʿtni. is-sabt baʿd il-ʿaṣir, w idha ʿajabni nitfāham",
+    "All right, you've convinced me. Saturday after ʿaṣr, and if I like him, we'll come to an arrangement."
    ]
   ],
   "items": [
@@ -1230,21 +1230,21 @@
    ],
    [
     "B",
-    "تسلم طال عمرك. أهم شي عندي إنها تبقى جي",
-    "tislam ṭāl ʿumrak. ahamm shay ʿindi innha tibga chī",
-    "Thank you, sir. What matters most to me is that it stays this way."
+    "تسلم طال عمرك. من يوم ما سكنت وهي جي",
+    "tislam ṭāl ʿumrak. min yōm ma sikant w hiya chī",
+    "Thank you, sir. It's been like this since the day I moved in."
    ],
    [
     "A",
-    "الله يسلمك. وزميلك، شو شغله؟",
-    "allāh ysallmak. w zamīlak, shu shughlah?",
-    "You're welcome. And your colleague, what does he do?"
+    "الله يسلمك. وزميلك من الدوام، شو شغله؟",
+    "allāh ysallmak. w zamīlak min id-dawām, shu shughlah?",
+    "You're welcome. And your colleague from work, what does he do?"
    ],
    [
     "B",
-    "مهندس في الشركة اللي أتدرب فيها. ريّال محترم وهادي",
-    "muhandis fi sh-sharika illi atdarrab fīha. rayyāl miḥtaram w hādi",
-    "He's an engineer at the company where I'm an intern. A decent, quiet man."
+    "مهندس في شركتنا، ريّال هادي، وأنا أضمنه",
+    "muhandis fi sharikatna, rayyāl hādi, w ana aẓmanah",
+    "An engineer at our company, a quiet man, and I'll vouch for him."
    ],
    [
     "A",
@@ -1254,9 +1254,9 @@
    ],
    [
     "B",
-    "ما يخالف، أنا المسؤول. بس عندي طلب صغير",
-    "ma ykhālif, ana l-masʼūl. bas ʿindi ṭalab ṣghīr",
-    "No problem, I'm responsible. But I've got a small request."
+    "ما يخالف، وعلى مسؤوليتي. بس عندي طلب صغير",
+    "ma ykhālif, w ʿala masʼūliyyti. bas ʿindi ṭalab ṣghīr",
+    "No problem; it's on me. But I've got a small request."
    ],
    [
     "A",
@@ -1393,9 +1393,9 @@
    ],
    [
     "A",
-    "زين، أقنعتني. في واحد أعرفه يبيع سيارته، صغيرة ونظيفة",
-    "zēn, agnaʿtni. fī wāḥid aʿarfah ybīʿ sayyārtah, ṣghīra w naẓīfa",
-    "OK, you've convinced me. There's a guy I know selling his car; it's small and in good condition."
+    "زين، أقنعتني. في واحد أعرفه يبيع سيارته، صغيرة ونظيفة، وسعرها مب شين",
+    "zēn, agnaʿtni. fī wāḥid aʿarfah ybīʿ sayyārtah, ṣghīra w naẓīfa, w siʿrha mub shēn",
+    "OK, you've convinced me. There's a guy I know selling his car; it's small and in good condition, and the price isn't bad."
    ],
    [
     "B",
@@ -1411,9 +1411,9 @@
    ],
    [
     "B",
-    "زين، بس بشوفها أول، وبسوي لها فحص",
-    "zēn, bas bashūfha awwal, w basawwī-lha faḥiṣ",
-    "OK, but I'll see it first and get it inspected."
+    "ما يخالف، بس بشوفها أول، وبسوي لها فحص",
+    "ma ykhālif, bas bashūfha awwal, w basawwī-lha faḥiṣ",
+    "Fine, but I'll see it first and get it inspected."
    ]
   ],
   "items": [
@@ -1508,15 +1508,15 @@
    ],
    [
     "A",
-    "الكفرات بسيطة. وترا في واحد ثاني يبيها اليوم",
-    "il-kafarāt basīṭa. w tara fī wāḥid thāni yabīha l-yōm",
-    "The tyres are nothing. And there's someone else who wants it today, you know."
+    "الكفرات بسيطة، والسيارة ما فيها شي. وترا في واحد ثاني يبيها اليوم",
+    "il-kafarāt basīṭa, w is-sayyāra ma fīha shay. w tara fī wāḥid thāni yabīha l-yōm",
+    "The tyres are nothing, and there's nothing wrong with the car. And there's someone else who wants it today, you know."
    ],
    [
     "B",
-    "خله ياخذها. أنا جاد، بس ما بدفع أكثر من سعرها",
-    "khallah yākhidhha. ana jādd, bas ma badfaʿ akthar min siʿrha",
-    "Let him have it. I'm serious, but I won't pay more than it's worth."
+    "خله ياخذها. أنا جاد، بس ما بدفع أكثر",
+    "khallah yākhidhha. ana jādd, bas ma badfaʿ akthar",
+    "Let him have it. I'm serious, but I won't pay more."
    ],
    [
     "A",
