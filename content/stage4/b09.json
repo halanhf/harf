@@ -45,7 +45,7 @@
    ],
    [
     "A",
-    "زين سويت. سو خير وقطه بحر: يعني سو الزين وانساه، لا تتكلم عنه",
+    "زين سويت. سو خير وقطه بحر: يعني سوي الزين وانساه، لا تتكلم عنه",
     "zēn sawwēt. saww khēr w giṭṭah baḥar: yaʿni sawwi z-zēn w insāh, la titkallam ʿannah",
     "You did right. 'Do good and throw it in the sea': do the good deed and forget it; don't talk about it."
    ],
@@ -186,7 +186,7 @@
    [
     "A",
     "زين. وقول لهم يمسحون الأولى، فيها أغلاط",
-    "zēn. w gūl-lhum ymsaḥūn il-ūla, fīha aghlāṭ",
+    "zēn. w gūl-lhum yimsaḥūn il-ūla, fīha aghlāṭ",
     "Good. And tell them to delete the first one; it's got mistakes in it."
    ],
    [
@@ -410,7 +410,7 @@
   "stage": 4,
   "title": "The wolf doesn't trot for nothing",
   "goal": "At university, Sēf says a classmate who never talks to you suddenly bought him a karak; work out what he's after",
-  "tip": "idh-dhīb ma yharwil ʿabath 'the wolf doesn't trot for nothing': when someone who never bothers suddenly makes an effort, he's after something. Recycle guesses with akīd 'must' and the past: akīd yabi shay 'he must want something'; ʿumrah ma kallamni 'he's never spoken to me'.",
+  "tip": "idh-dhīb ma yharwil ʿabath 'the wolf doesn't trot for nothing': when someone who never bothers suddenly makes an effort, he's after something. Recycle guesses with akīd 'must': akīd yabi shay 'he must want something', and ʿumr- ma 'never': ʿumrah ma kallamni 'he's never spoken to me'.",
   "grammar": "recycle: akīd for guesses; ʿumr- ma 'never'; a proverb for recognition",
   "dialogue": [
    [
@@ -484,11 +484,11 @@
     "I treated him: ʿazamtah (عزمته)"
    ],
    [
-    "عمره ما كلمني",
-    "ʿumrah ma kallamni",
-    "he's never spoken to me",
-    "لم يكلمني أبدًا",
-    "I've never…: ʿumri ma … (عمري ما)"
+    "شو يبي يعني؟",
+    "shu yabi yaʿni?",
+    "what would he want, then? what's he after?",
+    "ماذا يريد إذن؟",
+    "about a woman: shu tabi yaʿni? (شو تبي يعني؟)"
    ],
    [
     "ولا أنا",
@@ -641,7 +641,7 @@
     "yimdaḥah",
     "he praises him",
     "يمدحه",
-    "(recognise) she praises him: timdaḥah (تمدحه)"
+    "she praises him: timdaḥah (تمدحه)"
    ],
    [
     "أذكى واحد",
@@ -675,8 +675,7 @@
   "culture": "The beetle proverb is Emirati, and you'll also hear it with is-sibāl 'the monkey' in place of the beetle. It's said of anything its owner values more than it's worth, and above all of the way parents, especially mothers, see their own children.",
   "receptive": [
    0,
-   3,
-   4
+   3
   ]
  },
  {
@@ -833,9 +832,9 @@
    ],
    [
     "A",
-    "هيه. أبوي ما يسكت عنك، يقول إنك تتكلم عربي زين",
-    "hē. ubūy ma yiskit ʿannak, ygūl innak titkallam ʿarabi zēn",
-    "Yes. My dad never stops talking about you; he says you speak good Arabic."
+    "هيه. أبوي دوم يسولف عنك، يقول إنك تتكلم عربي زين",
+    "hē. ubūy dōm ysōlif ʿannak, ygūl innak titkallam ʿarabi zēn",
+    "Yes. My dad's always talking about you; he says you speak good Arabic."
    ],
    [
     "B",
@@ -858,7 +857,7 @@
    [
     "A",
     "آخر سنة في المدرسة، والامتحانات قريبة. والله ضغط!",
-    "ākhir sana fi l-madrasa, w il-imtiḥānāt garība. wallāh ẓaghṭ!",
+    "ākhir sana fi l-madrasa, w il-imtiḥānāt garība. wallāh ẓaghiṭ!",
     "It's my last year at school, and the exams are coming up. It's really stressful!"
    ],
    [
@@ -889,11 +888,11 @@
     "(recognise) friends only, never to an elder"
    ],
    [
-    "أبوي ما يسكت عنك",
-    "ubūy ma yiskit ʿannak",
-    "my dad never stops talking about you (to a man)",
-    "أبي لا يكف عن الحديث عنك",
-    "(recognise) to a woman: ma yiskit ʿannich (ما يسكت عنج)"
+    "دوم يسولف عنك",
+    "dōm ysōlif ʿannak",
+    "he's always talking about you (to a man)",
+    "يتحدث عنك دائمًا",
+    "to a woman: dōm ysōlif ʿannich (دوم يسولف عنج)"
    ],
    [
     "انتو تتكلمون وايد سريع",
@@ -945,11 +944,10 @@
     "blīz is English 'please': fine with friends your age"
    ]
   ],
-  "culture": "Young Emiratis switch between Arabic and English all the time, more with friends and in relaxed settings, less with elders. Bro, OK, sorry and LOL turn up in the middle of Arabic sentences. Keep it for people your own age: with Bū Rāshid and his guests, stay in Arabic.",
+  "culture": "Young Emiratis switch between Arabic and English all the time, more with friends and in relaxed settings, less with elders. Words like bro and LOL turn up in the middle of Arabic conversations. Keep it for people your own age: with Bū Rāshid and his guests, stay in Arabic.",
   "task": "This week: search YouTube for «سوالف شباب» (young people chatting) or «يومياتي» (vlog) with «إماراتي». Within a minute you should hear شو / مب (UAE) or شنو / مو (Kuwait); if not, pick another clip. Write down three sentences where someone drops an English word into Arabic (like masij, ōkē, sōri), then say each aloud twice at the speaker's speed.",
   "receptive": [
-   0,
-   1
+   0
   ]
  },
  {
@@ -957,7 +955,7 @@
   "stage": 4,
   "title": "Kafu! Rāshid's winning goal",
   "goal": "Rāshid sends you a voice note: his school team won the final; congratulate him and catch his friends' slang",
-  "tip": "Young men praise each other with slang you should recognise: kafu! 'well done, you're the man!', rahīb 'awesome', and fashla 'how embarrassing!'. Say your own praise with what you know: mabrūk, tistāhil 'you deserve it'.",
+  "tip": "Young men praise each other with slang you should recognise: kafu! 'well done, you're the man!', and rahīb 'awesome': recognise them. Say your own praise with what you know: mabrūk, tistāhil 'you deserve it'.",
   "grammar": "recycle: illi in 'I'm the one who' (ana illi sajjalt); youth slang for recognition",
   "dialogue": [
    [
@@ -1477,7 +1475,7 @@
     "one letter: ḥarf (حرف)"
    ]
   ],
-  "culture": "Young Emiratis say they switch on purpose, not at random: some ideas come out more easily in English, others in Arabic. English is everywhere at university and work, but Arabic is how they talk to grandparents, pray and keep their ties to their heritage. Online, many type Arabic in English letters and numbers, which they call Arabeezy.",
+  "culture": "Young Emiratis say they switch on purpose, not at random: some ideas come out more easily in English, others in Arabic. English dominates many university classes, but Arabic is how they talk to grandparents, pray and keep their ties to their heritage. Online, many type Arabic in English letters and numbers, which they call Arabeezy.",
   "receptive": [
    7
   ]
@@ -1725,7 +1723,7 @@
     "زين تسوي",
     "zēn tsawwi",
     "good for you, you're doing the right thing (to a man)",
-    "حسنًا تفعل",
+    "أحسنت",
     "to a woman: zēn tsawwīn (زين تسوين)"
    ],
    [
