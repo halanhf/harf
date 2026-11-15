@@ -234,7 +234,7 @@
     "batābiʿha",
     "I'll follow it up, I'll keep track of it",
     "سأتابعها",
-    "for a masculine thing: batābiʿah (بتابعه)"
+    "for a masculine thing: batābʿah (بتابعه)"
    ]
   ],
   "culture": "At a service counter, say what you need in one line (abi … ʿan muʿāmalti) and thank the clerk with mā gaṣṣart; the answer is mā sawwēna shay. muʿāmala is the everyday word for any paperwork you're waiting on at an office."
@@ -316,7 +316,7 @@
     "jārna",
     "our neighbour",
     "جارنا",
-    "my neighbour: jāri (جاري)"
+    "my neighbour: jāri (جاري); UAE also: yār (يار), yārna (يارنا)"
    ],
    [
     "تخرج",
@@ -395,7 +395,7 @@
    ],
    [
     "B",
-    "بعيدة شوي عن شغلي. بس بتعود إن شاء الله",
+    "بعيدة شوي عن شغلي. بس بتعوّد إن شاء الله",
     "baʿīda shwayy ʿan shughli. bas batʿawwad in shāʼ allāh",
     "It's a bit far from my work. But I'll get used to it, God willing."
    ],
@@ -449,7 +449,7 @@
     "you'll see written الكهرباء"
    ],
    [
-    "بتعود",
+    "بتعوّد",
     "batʿawwad",
     "I'll get used to it",
     "سأتعود",
@@ -606,9 +606,9 @@
   "id": "s3u040",
   "stage": 3,
   "title": "Opening a bank account",
-  "goal": "Open a bank account and ask a bank employee about an Islamic account, recycling Forms III, V and VI",
+  "goal": "Open a bank account and ask a bank employee about an Islamic account, recycling Forms III and VI",
   "tip": "This lesson recycles the derived forms. Form III: asāʿdak 'I help you'. Form VI: tʿāmalt wiyyāna 'you've dealt with us (before)', from tʿāmal 'deal with each other'. With a woman, B says hala fīch and law samaḥti.",
-  "grammar": "recycle: Forms III, V, VI (asāʿdak, tʿāmalt)",
+  "grammar": "recycle: Forms III, VI (asāʿdak, tʿāmalt)",
   "dialogue": [
    [
     "A",
@@ -780,9 +780,9 @@
    [
     "انقطع",
     "ingiṭaʿ",
-    "it cut out, it got cut off (a line, the power, the water)",
+    "it cut out, it got cut off (a line, the water)",
     "انقطع",
-    "for a feminine noun: ingiṭʿat (انقطعت)"
+    "for a feminine noun such as il-kahraba 'the power': ingiṭʿat (انقطعت)"
    ],
    [
     "ينقطع",
@@ -997,15 +997,15 @@
    ],
    [
     "A",
-    "زين سويت! وشو اخترت؟ أبيض؟",
-    "zēn sawwēt! w shu ikhtart? abyaẓ?",
-    "Good thinking! What did you go for? White?"
+    "زين سويت! والثاني؟ شو اخترت؟",
+    "zēn sawwēt! w ith-thāni? shu ikhtart?",
+    "Good thinking! And the other one? What did you go for?"
    ],
    [
     "B",
-    "هيه، أبيض. ونمت عدل وارتحت، الحمد لله",
-    "hē, abyaẓ. w nimt ʿadil w irtaḥt, il-ḥamdu lillāh",
-    "Yes, white. And I slept properly and I'm rested, thank God."
+    "أبيض بعد. ونمت عدل وارتحت، الحمد لله",
+    "abyaẓ baʿad. w nimt ʿadil w irtaḥt, il-ḥamdu lillāh",
+    "White as well. And I slept properly and I'm rested, thank God."
    ]
   ],
   "items": [
@@ -1340,15 +1340,15 @@
    ],
    [
     "A",
-    "عادي! بس انتو محتاجين ثلاجة أكبر",
-    "ʿādi! bas intu miḥtājīn thallāja akbar",
-    "No problem! But you two need a bigger fridge."
+    "الله يعافيك، عادي! بس انتو محتاجين ثلاجة أكبر",
+    "allāh yʿāfīk, ʿādi! bas intu miḥtājīn thallāja akbar",
+    "Thank you, it's nothing! But you two need a bigger fridge."
    ],
    [
     "B",
     "صح. ودوني السوق باكر، والغدا علي",
     "ṣaḥḥ. waddūni s-sūg bāchir, w il-ghada ʿalay",
-    "True. Take me to the market tomorrow, and lunch is on me."
+    "True. Take me shopping tomorrow, and lunch is on me."
    ],
    [
     "A",
@@ -1376,7 +1376,7 @@
     "الله يقويكم",
     "allāh ygawwīkum",
     "God give you strength (to a group, said to people working)",
-    "الله يقويكم",
+    "",
     "to one man: allāh ygawwīk (الله يقويك)"
    ],
    [
