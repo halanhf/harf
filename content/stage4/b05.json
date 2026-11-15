@@ -276,9 +276,9 @@
    ],
    [
     "A",
-    "كانت قديمة، وكل شهر تخرب. وشريت وحدة يديدة، وكالة!",
-    "kānat gadīma, w kill shahar tikhrab. w shirēt waḥda yidīda, wakāla!",
-    "It was old, and every month it broke down. And I've bought a new one, brand new from the dealer!"
+    "كانت قديمة، وكل شهر تخرب. وشريت وحدة يديدة، موديل السنة!",
+    "kānat gadīma, w kill shahar tikhrab. w shirēt waḥda yidīda, mōdēl is-sana!",
+    "It was old, and every month it broke down. And I've bought a new one, this year's model!"
    ],
    [
     "B",
@@ -375,10 +375,10 @@
     ""
    ],
    [
-    "وكالة",
-    "wakāla",
-    "brand new (a car, straight from the dealer)",
-    "جديدة من الوكالة",
+    "موديل السنة",
+    "mōdēl is-sana",
+    "this year's model (a car)",
+    "طراز هذا العام",
     "(recognise)"
    ]
   ],
@@ -730,11 +730,11 @@
     ""
    ],
    [
-    "غلا المعيشة",
-    "ghala l-maʿīsha",
-    "the cost of living",
-    "غلاء المعيشة",
-    "(recognise) (formal)"
+    "المعيشة",
+    "il-maʿīsha",
+    "living, the cost of living (formal)",
+    "المعيشة",
+    "(recognise); ghala l-maʿīsha (غلا المعيشة) = the cost of living (in the news)"
    ]
   ],
   "receptive": [
@@ -863,11 +863,11 @@
     "(recognise)"
    ],
    [
-    "انت أدرى بحالك",
-    "inta adra b-ḥālak",
-    "you know your own situation best (to a man)",
-    "أنت أدرى بحالك",
-    "(recognise); to a woman: inti adra b-ḥālich (انتي أدرى بحالج)"
+    "انت أدرى",
+    "inta adra",
+    "you know best (to a man)",
+    "أنت أدرى",
+    "(recognise); to a woman: inti adra (انتي أدرى)"
    ]
   ],
   "receptive": [
