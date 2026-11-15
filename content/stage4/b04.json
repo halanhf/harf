@@ -57,9 +57,9 @@
    ],
    [
     "A",
-    "الله يخليك. تعال، القهوة يتنا",
-    "allāh ykhallīk. taʿāl, il-gahwa yatna",
-    "Thank you. Come on, the coffee's here."
+    "الله يخليك. تفضل اقعد",
+    "allāh ykhallīk. tfaẓẓal igʿid",
+    "Thank you. Please, sit down."
    ]
   ],
   "items": [
@@ -355,7 +355,7 @@
    [
     "يا أخوي",
     "yā akhūy",
-    "excuse me, brother (polite, to a man about your age you don't know; lit. my brother)",
+    "excuse me, brother (polite, to a man your age; lit. my brother)",
     "يا أخي",
     "to a woman: yā ukhti (يا أختي)"
    ],
@@ -381,18 +381,18 @@
     "(recognise)"
    ],
    [
-    "غلط؟",
-    "ghalaṭ?",
-    "is that wrong?",
-    "هل هذا خطأ؟",
-    ""
+    "إذا شفت",
+    "idha shift",
+    "if I see, if I meet; if you see (to a man)",
+    "إذا رأيت",
+    "to a woman: idha shifti (إذا شفتي)"
    ],
    [
-    "المحطة",
-    "il-maḥaṭṭa",
-    "the petrol station; the station",
-    "محطة الوقود / المحطة",
-    ""
+    "الشيوخ",
+    "ish-shyūkh",
+    "sheikhs, the sheikhs",
+    "الشيوخ",
+    "one: shēkh (شيخ)"
    ],
    [
     "على قد الشغل",
@@ -602,9 +602,9 @@
    ],
    [
     "A",
-    "زين! يلا، الغدا جاهز. سيف قال إنك تحب المكبوس",
-    "zēn! yalla, il-ghada jāhiz. Sēf gāl innak tḥibb il-machbūs",
-    "Good! Come on, lunch is ready. Sēf said you like machbūs."
+    "زين! يلا، الغدا على السفرة. سيف قال إنك تحب المكبوس",
+    "zēn! yalla, il-ghada ʿala s-sufra. Sēf gāl innak tḥibb il-machbūs",
+    "Good! Come on, lunch is on the table. Sēf said you like machbūs."
    ],
    [
     "B",
@@ -641,13 +641,6 @@
     "to a woman: shḥāl ummich? (شحال أمج؟)"
    ],
    [
-    "إن شاء الله بخير",
-    "in shāʼ allāh b-khēr",
-    "well, I hope (asking after someone)",
-    "إن شاء الله بخير",
-    ""
-   ],
-   [
     "المكبوس",
     "il-machbūs",
     "machbūs (spiced rice with meat, chicken or fish)",
@@ -660,6 +653,13 @@
     "when will she visit us? when will you visit us? (to a man)",
     "متى ستزورنا؟",
     "to a woman: mita bitzūrīnna? (متى بتزورينا؟) (recognise)"
+   ],
+   [
+    "على السفرة",
+    "ʿala s-sufra",
+    "on the table, served (of a meal)",
+    "على المائدة",
+    ""
    ],
    [
     "خذ راحتك",
@@ -685,8 +685,8 @@
   ],
   "culture": "Machbūs, rice cooked with spices and meat, chicken or fish, is one of the classic Emirati dishes. Admire the food (yā salām ʿala r-rīḥa!) and thank the cook: tislamīn to a woman, tislam to a man, or tislam īdich 'bless your hands' to the woman who cooked it.",
   "receptive": [
-   4,
-   6
+   3,
+   5
   ]
  },
  {
@@ -1185,11 +1185,11 @@
     "we don't talk: ma nkallim baʿaẓ (ما نكلم بعض)"
    ],
    [
-    "شو صار بينهم؟",
-    "shu ṣār bēnhum?",
-    "what happened between them?",
-    "ماذا حدث بينهم؟",
-    "between you: bēnkum (بينكم)"
+    "لازم نسوي شي",
+    "lāzim nsawwi shay",
+    "we've got to do something",
+    "يجب أن نفعل شيئًا",
+    ""
    ],
    [
     "كل واحد يلوم الثاني",
