@@ -94,6 +94,7 @@ The course follows **CODA-Gulf** (S: Khalifa et al. 2016; Habash et al. 2018) fo
 - يا: "he came" vs the vocative يا. Teach ما يا "he didn't come" (110/10) or another chunk attested with attest.py; never bare يا.
 - مرة: marra "once, time" (the item, s1u044) vs mara "woman, wife" vs Saudi marra "very". Teach "wife" as مرتي (187/274) and Saudi "very" only in a chunk such as مرة حلو (14/43).
 - يصلح: yṣalliḥ "fixes" (the item, s3u029) vs yiṣlaḥ "will do, is suitable". Teach the second only as ما يصلح (16/25).
+- ربع: rubʿ "quarter" (clock time: w rubʿ, illa rubʿ) vs rabʿ "friends, mates". Teach "friends" as ربعي rabʿi "my mates" (276/130); never bare ربع.
 - غير ghēr "other" vs ghayyar "changed" (teach غيرت); دور dōr "turn, floor" vs dawwar "looked for" (teach دورت); تعرف "you know" vs taʿarraf (teach تعرفت على, 55/36); ودي widdi "I'd like" vs ودى wadda "took" (teach ودني "take me", 219/131).
 - ريال (coin) vs ريّال (man): only the shadda separates them, and the linter ignores shadda, so they can't both be items. "Man" is the item (s1u021); the coin goes in notes and dialogue.
 
