@@ -144,15 +144,15 @@
    ],
    [
     "A",
-    "عيل روح ويا فهد. هو فاضي الليلة",
-    "ʿayal rūḥ wiyya Fahad. huwa fāẓi l-lēla",
-    "Then go with Fahad. He's free tonight."
+    "عيل فهد؟ خله يروح وياك، هو فاضي الليلة",
+    "ʿayal Fahad? khallah yrūḥ wiyyāk, huwa fāẓi l-lēla",
+    "What about Fahad, then? Let him go with you; he's free tonight."
    ],
    [
     "B",
-    "فهد؟ كل مرة يتأخر ويخليني أتريا ساعة!",
-    "Fahad? kill marra yitʼakhkhar w ykhallīni atrayya sāʿa!",
-    "Fahad? He's late every time and keeps me waiting an hour!"
+    "فهد؟ لا! كل مرة يتأخر ويخليني أتريا ساعة",
+    "Fahad? la! kill marra yitʼakhkhar w ykhallīni atrayya sāʿa",
+    "Fahad? No way! He's late every time and keeps me waiting an hour."
    ],
    [
     "A",
@@ -162,9 +162,9 @@
    ],
    [
     "B",
-    "تسع. ادرس العصر، وتعال بالليل",
-    "tisʿ. idris il-ʿaṣir, w taʿāl bil-lēl",
-    "Nine. Study this afternoon and come in the evening."
+    "تسع. ادرس العصر، ومب لازم تيي بدري",
+    "tisʿ. idris il-ʿaṣir, w mub lāzim tiyi badri",
+    "Nine. Study this afternoon; you don't need to come early."
    ],
    [
     "A",
@@ -249,7 +249,7 @@
   "id": "s3u059",
   "stage": 3,
   "title": "Let him sleep, guys",
-  "goal": "At Sēf's place, Fahad wants to wake Sēf up to go out; tell the guys to let him sleep",
+  "goal": "At Sēf's place, Fahad and the guys want to wake Sēf up to go out; tell them to let him sleep",
   "tip": "To a group, khalli becomes khallū-: khallūh ynām 'let him sleep', khallūha 'leave it (f.)', khallūhum 'leave them'. Before -lah 'for him' the u stays long: khallū-lah warga 'leave him a note'. Other group commands end in -u too: rūḥu intu 'you go'.",
   "grammar": "khallū- + object + verb (to a group)",
   "dialogue": [
@@ -267,9 +267,9 @@
    ],
    [
     "A",
-    "بس إحنا بنطلع الحين، وهو قال: صحوني!",
-    "bas iḥna biniṭlaʿ il-ḥīn, w huwa gāl: ṣaḥḥūni!",
-    "But we're heading out now, and he said, \"Wake me up!\""
+    "بس إحنا المفروض نطلع الحين، وهو قال: صحوني!",
+    "bas iḥna l-mafrūẓ niṭlaʿ il-ḥīn, w huwa gāl: ṣaḥḥūni!",
+    "But we're supposed to head out now, and he said, \"Wake me up!\""
    ],
    [
     "B",
@@ -291,9 +291,9 @@
    ],
    [
     "A",
-    "فكرة حلوة. وانت؟ ما بتيي ويانا؟",
-    "fikra ḥilwa. w inta? ma bitiyi wiyyāna?",
-    "Good idea. And you? Aren't you coming with us?"
+    "فكرة حلوة. وانت؟ تبي تيي ويانا؟",
+    "fikra ḥilwa. w inta? tabi tiyi wiyyāna?",
+    "Good idea. And you? Do you want to come with us?"
    ],
    [
     "B",
@@ -372,7 +372,7 @@
   "id": "s3u060",
   "stage": 3,
   "title": "Leave it to me",
-  "goal": "Maryam is working late on a report; offer to help, suggest finishing it together tomorrow and deal with the manager",
+  "goal": "As you leave the office, Maryam is still at her desk with a report; offer to help, suggest finishing it tomorrow and deal with the manager",
   "tip": "To a woman, khalli becomes khallī-: khallīni asāʿdich 'let me help you', khallīh ʿalay 'leave it (him) to me'. khallīna + a we-verb is 'let's': khallīna nkhalliṣ. No word for 'to' comes between khalli and the verb.",
   "grammar": "khallī- + object + verb (to a woman); khallīna 'let's' (recycle)",
   "dialogue": [
@@ -408,9 +408,9 @@
    ],
    [
     "A",
-    "زين، بس والمدير؟ ما أبيه يزعل",
-    "zēn, bas w il-mudīr? ma abīh yizʿal",
-    "OK, but what about the manager? I don't want him to be annoyed."
+    "زين. والمدير؟ ما أبيه يزعل",
+    "zēn. w il-mudīr? ma abīh yizʿal",
+    "OK. And the manager? I don't want him to be annoyed."
    ],
    [
     "B",
@@ -469,11 +469,11 @@
     "about a woman: ma abīha tizʿal (ما أبيها تزعل)"
    ],
    [
-    "عطيني",
-    "ʿaṭīni",
-    "give me (to a woman)",
-    "أعطيني",
-    "to a man: ʿaṭni (عطني)"
+    "نخلص التقرير",
+    "nkhalliṣ it-taqrīr",
+    "we finish the report; shall we finish the report?",
+    "ننهي التقرير",
+    "I finish it: akhallṣah (أخلصه)"
    ],
    [
     "الأرقام يبالها وقت",
@@ -507,9 +507,9 @@
    ],
    [
     "B",
-    "سامحني يا عمي، كنت في لندن شهر",
-    "sāmiḥni yā ʿammi, kint fi Landan shahar",
-    "Forgive me, uncle. I was in London for a month."
+    "هلا بك يا عمي! سامحني، كنت في لندن شهر",
+    "hala bik yā ʿammi! sāmiḥni, kint fi Landan shahar",
+    "Hello, uncle! Forgive me, I was in London for a month."
    ],
    [
     "A",
@@ -533,7 +533,7 @@
     "B",
     "سلامات يا عمي!",
     "salāmāt yā ʿammi!",
-    "I'm sorry to hear that, uncle! I hope you feel better."
+    "Oh dear, get well soon, uncle!"
    ],
    [
     "A",
@@ -543,9 +543,9 @@
    ],
    [
     "B",
-    "إن شاء الله. من اليوم بييكم كل أسبوع",
-    "in shāʼ allāh. min il-yōm bayīkum kill usbūʿ",
-    "I won't, God willing. From now on I'll come every week."
+    "إن شاء الله يا عمي. المفروض أييكم كل أسبوع",
+    "in shāʼ allāh yā ʿammi. il-mafrūẓ ayīkum kill usbūʿ",
+    "I won't, God willing, uncle. I ought to come and see you every week."
    ]
   ],
   "items": [
@@ -599,11 +599,11 @@
     "to a woman: la tghībīn ʿanna (لا تغيبين عنا)"
    ],
    [
-    "بييكم",
-    "bayīkum",
-    "I'll come to you (all), I'll come and see you",
-    "سآتيكم",
-    "to one man: bayīk (بييك)"
+    "أييكم",
+    "ayīkum",
+    "I come to you (all), I come and see you (all)",
+    "آتيكم",
+    "to one man: ayīk (أييك); I'll come and see you: bayīkum (بييكم)"
    ],
    [
     "كنت في لندن شهر",
@@ -631,9 +631,9 @@
    ],
    [
     "A",
-    "لا، صاحي. بس بعدني في الفراش",
-    "la, ṣāḥi. bas baʿadni fi l-firāsh",
-    "No, I'm awake. But I'm still in bed."
+    "هلا فيك! لا، صاحي. بس بعدني في الفراش",
+    "hala fīk! la, ṣāḥi. bas baʿadni fi l-firāsh",
+    "Hi! No, I'm awake. But I'm still in bed."
    ],
    [
     "B",
@@ -655,15 +655,15 @@
    ],
    [
     "A",
-    "هيه، بعده ما يا. بيرجع يوم الاثنين",
-    "hē, baʿdah ma yā. biyirjaʿ yōm il-ithnēn",
-    "Yes, he hasn't come back yet. He'll be back on Monday."
+    "هيه، بعده ما يا. ما عاد يبي يرجع!",
+    "hē, baʿdah ma yā. ma ʿād yabi yirjaʿ!",
+    "Yes, he still hasn't come back. He doesn't want to come back any more!"
    ],
    [
     "B",
-    "زين. عيل خلنا نتغدى اليوم، أنا وانت",
-    "zēn. ʿayal khallna nitghadda l-yōm, ana w inta",
-    "OK. Then let's have lunch today, just you and me."
+    "زين. عيل نتغدى اليوم؟ لا تخليني آكل بروحي!",
+    "zēn. ʿayal nitghadda l-yōm? la tkhallīni ākil b-rūḥi!",
+    "OK. Then shall we have lunch today? Don't make me eat on my own!"
    ],
    [
     "A",
@@ -737,7 +737,7 @@
     "to a woman: yalla gūmi! (يلا قومي!)"
    ]
   ],
-  "culture": "Since January 2022 the UAE's official weekend has been Saturday and Sunday (before that it was Friday and Saturday), so a lazy Saturday morning is normal. Friday is still the day of the big midday prayer."
+  "culture": "Since January 2022 the UAE's official weekend has been Saturday and Sunday, with a short working day on Friday for government staff; before that it was Friday and Saturday. So a lazy Saturday morning is normal."
  },
  {
   "id": "s3u063",
@@ -749,9 +749,9 @@
   "dialogue": [
    [
     "B",
-    "شو أخبار الامتحانات؟ باقي لك وايد؟",
-    "shu akhbār il-imtiḥānāt? bāgi-lak wāyid?",
-    "How are the exams going? Have you got many left?"
+    "سيف! بعدك تدرس؟ باقي لك وايد؟",
+    "Sēf! baʿdak tidris? bāgi-lak wāyid?",
+    "Sēf! Still studying? Have you got many left?"
    ],
    [
     "A",
@@ -779,21 +779,21 @@
    ],
    [
     "A",
-    "ما شاء الله! عيل خلنا نروح البر بعد الامتحانات",
-    "mā shāʼ allāh! ʿayal khallna nrūḥ il-barr baʿd il-imtiḥānāt",
-    "Great stuff! Then let's go to the desert after the exams."
+    "ما شاء الله! عيل بعد الامتحانات نروح كلنا البر",
+    "mā shāʼ allāh! ʿayal baʿd il-imtiḥānāt nrūḥ killna l-barr",
+    "Great stuff! Then after the exams we'll all go to the desert."
    ],
    [
     "B",
-    "أكيد! كم باقي على الخميس؟ ثلاث أيام؟",
-    "akīd! cham bāgi ʿala l-khamīs? thalāth ayyām?",
-    "Definitely! How long till Thursday? Three days?"
+    "أكيد! وخلي فهد يعرف. كم باقي على الخميس؟",
+    "akīd! w khalli Fahad yaʿarf. cham bāgi ʿala l-khamīs?",
+    "Definitely! And let Fahad know. How long till Thursday?"
    ],
    [
     "A",
-    "هيه، ثلاث أيام. بس الحين المفروض أدرس!",
-    "hē, thalāth ayyām. bas il-ḥīn il-mafrūẓ adris!",
-    "Yes, three days. But right now I'm supposed to be studying!"
+    "ثلاث أيام بس. يلا، خلني أدرس الحين!",
+    "thalāth ayyām bas. yalla, khallni adris il-ḥīn!",
+    "Just three days. Right, let me get on with studying!"
    ]
   ],
   "items": [
@@ -878,9 +878,9 @@
    ],
    [
     "A",
-    "آسف، كنت في الكويت، وتلفوني خرب",
-    "āsif, kint fi l-Kwēt, w tilifōni khirab",
-    "Sorry, I was in Kuwait, and my phone broke."
+    "آسف، كنت في الكويت وتلفوني خرب. توني راجع!",
+    "āsif, kint fi l-Kwēt w tilifōni khirab. tawwni rājiʿ!",
+    "Sorry, I was in Kuwait and my phone broke. I've only just got back!"
    ],
    [
     "B",
@@ -974,7 +974,7 @@
     "kil baʿad",
     "have some more, eat some more (to a man)",
     "كل المزيد",
-    "to a woman: kilī baʿad (كلي بعد)"
+    "to a woman: kili baʿad (كلي بعد)"
    ],
    [
     "شي خفيف",
@@ -1020,9 +1020,9 @@
    ],
    [
     "B",
-    "عطوني الملف، أنا أخلصها. وانتو روحوا البيت",
-    "ʿaṭūni l-malaff, ana akhallṣha. w intu rūḥu l-bēt",
-    "Give me the file, I'll finish them. And you go home."
+    "عطوني الملف، أنا أخلصها. وروحوا انتو البيت",
+    "ʿaṭūni l-malaff, ana akhallṣha. w rūḥu intu l-bēt",
+    "Give me the file, I'll finish them. And you two go home."
    ],
    [
     "A",
