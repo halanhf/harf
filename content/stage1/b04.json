@@ -218,9 +218,9 @@
   "dialogue": [
    [
     "B",
-    "مريم، تعالي شوفي، الله يخليج",
-    "Maryam, taʿāli shūfi, allāh ykhallīch",
-    "Maryam, come and have a look, please."
+    "مريم، تقدرين تساعديني؟ تعالي شوفي",
+    "Maryam, tigdarīn tsāʿdīnni? taʿāli shūfi",
+    "Maryam, can you help me? Come and have a look."
    ],
    [
     "A",
@@ -311,11 +311,11 @@
     ""
    ],
    [
-    "بشوف",
-    "bashūf",
-    "I'll have a look",
-    "سأرى",
-    ""
+    "تقدر تساعدني؟",
+    "tigdar tsāʿidni?",
+    "can you help me? (to a man)",
+    "هل تستطيع مساعدتي؟",
+    "to a woman: tigdarīn tsāʿdīnni? (تقدرين تساعديني؟)"
    ]
   ]
  },
@@ -752,9 +752,9 @@
    ],
    [
     "B",
-    "على طول، تفضلي. شو هذا؟",
-    "ʿala ṭūl, tfaẓẓali. shu hādha?",
-    "Right away, here you are. What's this?"
+    "على طول، تفضلي. شلون تقولين هذا بالعربي؟",
+    "ʿala ṭūl, tfaẓẓali. shlōn tgūlīn hādha bil-ʿarabi?",
+    "Right away, here you are. How do you say this in Arabic?"
    ],
    [
     "A",
@@ -784,11 +784,11 @@
     "to a woman: agdar asāʿdich? (أقدر أساعدج)"
    ],
    [
-    "تقدر",
-    "tigdar",
-    "you can, can you? (to a man)",
-    "تستطيع",
-    "to a woman: tigdarīn (تقدرين)"
+    "شلون تقول … بالعربي؟",
+    "shlōn tgūl … bil-ʿarabi?",
+    "how do you say … in Arabic? (to a man)",
+    "كيف تقول … بالعربية؟",
+    "to a woman: shlōn tgūlīn … bil-ʿarabi?; UAE also: chēf tgūl…; shlōn tgūl hādha bil-ʿarabi? = how do you say this in Arabic?"
    ],
    [
     "تقدر تعلمني؟",
