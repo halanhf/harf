@@ -56,7 +56,7 @@
     "tawwni",
     "I've just (done something)",
     "للتو",
-    "before a participle or a past verb: tawwni wāṣil; Kuwait: the same"
+    "Kuwait: the same; before a participle or a past verb: tawwni wāṣil"
    ],
    [
     "توني واصل",
@@ -347,7 +347,7 @@
   "id": "s2u088",
   "stage": 2,
   "title": "Sēf's Emirati words",
-  "goal": "Understand Sēf when he speaks the way Emiratis do at home, and accept his invitation to meet his family",
+  "goal": "Understand Sēf when he speaks the way Emiratis do at home, and accept his invitation home",
   "tip": "Emiratis often use local forms. Sēf's il-ḥīna basīr is il-ḥīn barūḥ 'I'm going now'; abā, tabā = abi, tabi; hub = mub; yirmis = yitkallam 'speaks'; yālis = gāʿid 'sitting, -ing'; ummāya = ummi 'my mum'. Learn to understand them all, and keep using the forms you know.",
   "grammar": "Emirati alternatives (UAE): abā, tabā, hub, il-ḥīna, basīr, yirmis, yālis",
   "culture": "In Emirati dialect novels, abā is almost as common as abi, and basīr nearly as common as barūḥ, while Kuwaiti writers hardly ever use them. You'll also hear ʿasab (عسب) for ʿashān 'because, so that'. Some Emiratis frown on it as a newer habit, so just recognise it.",
@@ -378,21 +378,21 @@
    ],
    [
     "A",
-    "هيه، أمايه يالسة في الصالة، بس تبا تشوفك",
-    "hē, ummāya yālsa fi ṣ-ṣāla, bas tabā tshūfak",
-    "Yes, my mum's sitting in the living room, but she wants to see you."
+    "هيه، أمايه يالسة في الصالة، وتبا تشوفك",
+    "hē, ummāya yālsa fi ṣ-ṣāla, w tabā tshūfak",
+    "Yes, my mum's sitting in the living room, and she wants to see you."
    ],
    [
     "B",
-    "ماشي، بس أنا أتكلم عربي شوي",
-    "māshi, bas ana atkallam ʿarabi shwayy",
-    "OK, but I only speak a little Arabic."
+    "ماشي، بس انت تتكلم وايد بسرعة!",
+    "māshi, bas inta titkallam wāyid b-surʿa!",
+    "OK, but you talk really fast!"
    ],
    [
     "A",
-    "هب مشكلة، ترا أبويه يرمس انقليزي. يلا، ما أبا أتأخر",
-    "hub mushkila, tara ubūya yirmis ingilīzi. yalla, ma abā atʼakhkhar",
-    "No problem, my dad speaks English. Come on, I don't want to be late."
+    "هب مشكلة، ترا أبويه يرمس شوي شوي. يلا، ما أبا أتأخر",
+    "hub mushkila, tara ubūya yirmis shwayy shwayy. yalla, ma abā atʼakhkhar",
+    "No problem, my dad talks slowly. Come on, I don't want to be late."
    ]
   ],
   "items": [
@@ -530,9 +530,9 @@
    [
     "للحين ما وصلتني",
     "lil-ḥīn ma wiṣlatni",
-    "it still hasn't reached me (a message, a parcel)",
+    "it still hasn't reached me (a message)",
     "لم تصلني بعد",
-    "for a masculine noun: lil-ḥīn ma wiṣalni (للحين ما وصلني)"
+    "for a masculine noun (a parcel): lil-ḥīn ma wiṣalni (للحين ما وصلني)"
    ],
    [
     "يسأل عنك",
@@ -555,7 +555,7 @@
   "stage": 2,
   "title": "A2 exit: my family, my home, my studies and my job",
   "goal": "A2 exit: in Bū Rāshid's majlis, tell him about your studies, internship, family and where you live",
-  "tip": "Answer an elder in short, full sentences and add yā ʿammi. akbar wāḥid 'the eldest' works like aḥsan wāḥid. atdarrab is 'I'm doing an internship, I'm training'. To allāh ywaffigak 'good luck, God grant you success', answer āmīn.",
+  "tip": "Answer an elder in short, full sentences and add yā ʿammi. aṣghar wāḥid 'the youngest' works like aḥsan wāḥid. atdarrab is 'I'm doing an internship, I'm training'. To allāh ywaffgak 'good luck, God grant you success', answer āmīn.",
   "grammar": "A2 exit: describe my family, living conditions, education and job",
   "dialogue": [
    [
@@ -573,14 +573,14 @@
    [
     "A",
     "ما شاء الله، الله يوفقك. وأهلك للحين في لندن؟",
-    "mā shāʼ allāh, allāh ywaffigak. w ahlak lil-ḥīn fi Landan?",
+    "mā shāʼ allāh, allāh ywaffgak. w ahlak lil-ḥīn fi Landan?",
     "Good for you, I wish you every success. And is your family still in London?"
    ],
    [
     "B",
-    "آمين. هيه، عندي ثلاث إخوان وأخت هناك، وأنا أكبر واحد",
-    "āmīn. hē, ʿindi thalāth ikhwān w ukht hnāk, w ana akbar wāḥid",
-    "Amen. Yes, I have three brothers and a sister there, and I'm the eldest."
+    "آمين. هيه، عندي ثلاث إخوان وأخت هناك، وأنا أصغر واحد",
+    "āmīn. hē, ʿindi thalāth ikhwān w ukht hnāk, w ana aṣghar wāḥid",
+    "Amen. Yes, I have three brothers and a sister there, and I'm the youngest."
    ],
    [
     "A",
@@ -625,17 +625,17 @@
    ],
    [
     "الله يوفقك",
-    "allāh ywaffigak",
+    "allāh ywaffgak",
     "good luck, God grant you success (to a man)",
     "وفقك الله",
-    "to a woman: allāh ywaffigich (الله يوفقج); reply: āmīn (آمين)"
+    "to a woman: allāh ywaffgich (الله يوفقج); reply: āmīn (آمين)"
    ],
    [
-    "أكبر واحد",
-    "akbar wāḥid",
-    "the eldest, the biggest one",
-    "الأكبر",
-    "the youngest: aṣghar wāḥid (أصغر واحد)"
+    "أصغر واحد",
+    "aṣghar wāḥid",
+    "the youngest, the smallest one",
+    "الأصغر",
+    "the eldest: akbar wāḥid (أكبر واحد)"
    ],
    [
     "الإيجار",
