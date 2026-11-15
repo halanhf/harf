@@ -323,7 +323,7 @@
   "id": "s1u050",
   "stage": 1,
   "title": "Come here, everyone!",
-  "goal": "Call Saif and his friends together for a photo at Global Village: come, come closer, look, smile, let me, let's.",
+  "goal": "Call Sēf and his friends together for a photo at Global Village: come, come closer, look, smile, let me, let's.",
   "tip": "To a group, add -u to the man's form: taʿāl → taʿālu, shūf → shūfu, garrib → garrbu (come closer; the i drops). 'Let' is khallni / khallna to a man: khallni ashūf (let me see), khallna nrūḥ (let's go). khallīni and khallīna work for a man or a woman; to a group khallūni. The next verb has no 'to'.",
   "grammar": "Imperative to a group: add -u (taʿālu, shūfu); khallni",
   "dialogue": [
@@ -428,7 +428,7 @@
   "id": "s1u051",
   "stage": 1,
   "title": "Don't go yet",
-  "goal": "Say goodbye to Saif at the end of the evening: don't go, don't forget, don't worry, take care.",
+  "goal": "Say goodbye to Sēf at the end of the evening: don't go, don't forget, don't worry, take care.",
   "tip": "For 'don't', put la before the ordinary 'you' verb, not the command form: trūḥ → la trūḥ (don't go), tinsa → la tinsa (don't forget). To a woman the verb keeps -īn: la trūḥīn, la tḥātīn; to a group -ūn: la trūḥūn.",
   "grammar": "Don't: la + the 'you' verb (la trūḥ, la trūḥīn)",
   "dialogue": [
@@ -845,7 +845,7 @@
   "id": "s1u055",
   "stage": 1,
   "title": "What do you like?",
-  "goal": "Tell Saif what you like and don't like about life in Dubai.",
+  "goal": "Tell Sēf what you like and don't like about life in Dubai.",
   "tip": "aḥibb (I like, I love) takes a noun or a verb with no 'to': aḥibb il-baḥar, aḥibb arūḥ il-baḥar (I like going to the beach). ʿājibni means 'I like it' (it pleases me): ish-shughul ʿājibni. Ask a man ʿājbak? and a woman ʿājbich?",
   "grammar": "Like + verb: aḥibb arūḥ, ma aḥibb; ʿājibni",
   "dialogue": [
@@ -956,7 +956,7 @@
   "id": "s1u056",
   "stage": 1,
   "title": "Maybe, because…",
-  "goal": "Answer Saif's invitation to the desert: maybe, why, because, why not.",
+  "goal": "Answer Sēf's invitation to the desert: maybe, why, because, why not.",
   "tip": "Give a reason with ʿashān (because) and a whole sentence: ʿashān ʿindi imtiḥān (because I've got an exam). Invitations use tabi + verb: tabi tyī? (do you want to come?). Not sure yet? yimkin (maybe), mub akīd (not sure).",
   "grammar": "Want + verb: tabi tyī; because: ʿashān",
   "dialogue": [

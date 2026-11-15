@@ -9,7 +9,7 @@
     "dialogue": [
       ["A", "ما شاء الله، الشقة حلوة!", "mā shāʼ allāh, ish-shigga ḥilwa!", "Wow, the flat's lovely!"],
       ["B", "مشكور. هذي الصالة، والمطبخ هناك", "mashkūr. hādhi ṣ-ṣāla, w il-maṭbakh hnāk", "Thanks. This is the living room, and the kitchen's over there."],
-      ["A", "والكنبة؟ جي ولا جي؟", "w il-kanaba? chī walla chī?", "And the sofa? This way or that way?"],
+      ["A", "والكنبة؟ جي ولّا جي؟", "w il-kanaba? chī walla chī?", "And the sofa? This way or that way?"],
       ["B", "جي، عند الدريشة", "chī, ʿind id-darīsha", "This way, by the window."],
       ["A", "هيه، جذي زين. والتلفزيون؟", "hē, chidhi zēn. w it-tilfizyōn?", "Yes, that's good like that. And the TV?"],
       ["B", "طيب، عند الباب", "ṭayyib, ʿind il-bāb", "OK, by the door."]
@@ -35,8 +35,8 @@
     "grammar": "Adjectives after the noun; feminine -a; il- on both for “the new …”",
     "dialogue": [
       ["A", "ما شاء الله، عندك شقة يديدة؟", "mā shāʼ allāh, ʿindak shigga yidīda?", "Wow, you've got a new flat?"],
-      ["B", "إي، في بناية قديمة في ديرة", "ī, fi bināya gadīma fi Dēra", "Yes, in an old building in Deira."],
-      ["A", "والشقة؟ كبيرة ولا صغيرة؟", "w ish-shigga? kbīra walla ṣghīra?", "And the flat? Big or small?"],
+      ["B", "إي، في بناية قديمة في مردف", "ī, fi bināya gadīma fi Mirdif", "Yes, in an old building in Mirdif."],
+      ["A", "والشقة؟ كبيرة ولّا صغيرة؟", "w ish-shigga? kbīra walla ṣghīra?", "And the flat? Big or small?"],
       ["B", "صغيرة، بس الغرفة كبيرة. ومكتبج اليديد؟", "ṣghīra, bas il-ghurfa kbīra. w maktabich il-yidīd?", "Small, but the bedroom's big. And your new office?"],
       ["A", "مكتبي حلو، بس الكرسي قديم!", "maktabi ḥilu, bas il-kursi gadīm!", "My office is nice, but the chair's old!"]
     ],
@@ -48,7 +48,7 @@
       ["قديم", "gadīm", "old (for things, masculine)", "قديم", "feminine: gadīma; for people say kbīr: rayyāl kbīr, an old man"],
       ["بناية", "bināya", "building", "بناية / مبنى", ""],
       ["الكرسي", "il-kursi", "the chair", "الكرسي", ""],
-      ["ولا", "walla", "or (in questions)", "أم / أو", "kbīra walla ṣghīra? = big or small?; not the same as wala (not even)"]
+      ["ولّا", "walla", "or (in questions)", "أم / أو", "kbīra walla ṣghīra? = big or small?; not the same as wala (not even)"]
     ]
   },
   {
@@ -86,7 +86,7 @@
     "tip": "hādha (m.) and hādhi (f.) mean “this”; hādhāk (m.) and hādhīch (f.) mean “that, over there”. With a noun, the noun takes il-: hādha l-gamīṣ, hādhīch is-sāʿa. Alone they mean “this one, that one”: hādhāk ḥilu.",
     "grammar": "Demonstratives near and far: hādha, hādhi, hādhāk, hādhīch",
     "dialogue": [
-      ["B", "شو رأيك؟ هذا القميص ولا هذاك؟", "shu raʼyak? hādha l-gamīṣ walla hādhāk?", "What do you think? This shirt or that one?"],
+      ["B", "شو رأيك؟ هذا القميص ولّا هذاك؟", "shu raʼyak? hādha l-gamīṣ walla hādhāk?", "What do you think? This shirt or that one?"],
       ["A", "هذاك الأبيض حلو", "hādhāk il-abyaẓ ḥilu", "That white one's nice."],
       ["B", "والأسود؟", "w il-aswad?", "And the black one?"],
       ["A", "مب حلو. بس هذيك الساعة حلوة!", "mub ḥilu. bas hādhīch is-sāʿa ḥilwa!", "Not nice. But that watch over there is nice!"],
