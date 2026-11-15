@@ -391,3 +391,14 @@ test("account copy is split by card group, and joining gives the same progress b
   const joined=L.joinProgress({cards:{"u1.0":card(10,1)}},{s1:{"u1.0":card(99,2)}}); assert.equal(joined.cards["u1.0"][5],99);
   const joined2=L.joinProgress({cards:{"u1.0":card(99,2)}},{s1:{"u1.0":card(10,1)}}); assert.equal(joined2.cards["u1.0"][5],99);
 });
+test("data: readings are well formed and their answers are among the options",()=>{
+  const ids=new Set();
+  for(const r of D.READINGS){ assert.ok(/^r\d{3}$/.test(r.id)&&!ids.has(r.id),r.id); ids.add(r.id);
+    assert.ok(r.level>=1&&r.level<=5&&r.stage>=1&&r.stage<=5&&r.title,r.id);
+    assert.ok(Array.isArray(r.lines)&&r.lines.length>=2); for(const l of r.lines){ assert.equal(l.length,2,r.id); assert.match(l[0],/[ء-ي]/); assert.ok(l[1]); }
+    assert.ok(Array.isArray(r.questions)&&r.questions.length>=1); for(const [q,o,a] of r.questions){ assert.ok(q&&o.length>=2&&o.includes(a),`${r.id}: ${q}`); } }
+});
+test("merge: readings done on either device are kept",()=>{
+  const m=L.mergeProgress({read:{r001:"2026-03-01"},updatedAt:1},{read:{r002:"2026-03-02",r001:"2026-03-05"},updatedAt:2});
+  assert.deepEqual({...m.read},{r001:"2026-03-05",r002:"2026-03-02"});
+});

@@ -630,7 +630,7 @@ const validGen=u=>!!u&&typeof u.id==="string"&&/^g[0-9a-z]+$/.test(u.id)&&[2,3,4
 function cleanSaved(raw,now,todayKey){
   const o=raw&&typeof raw==="object"&&!Array.isArray(raw)?Object.assign({},raw):{};
   const cards={}; if(o.cards&&typeof o.cards==="object") for(const [k,a] of Object.entries(o.cards)) if(validCard(a)) cards[k]=a; o.cards=cards;
-  for(const f of ["unitsDone","suspended","log","rp","seen"]) if(!o[f]||typeof o[f]!=="object"||Array.isArray(o[f])) o[f]={};
+  for(const f of ["unitsDone","suspended","log","rp","seen","read"]) if(!o[f]||typeof o[f]!=="object"||Array.isArray(o[f])) o[f]={};
   if(!Array.isArray(o.custom)) o.custom=[];
   // day fields must be real dates: a junk one sorts after every date, so it would win every merge and stop the streak counting
   for(const f of ["lastDay","freezeUsed","msaDay"]) if(!(typeof o[f]==="string"&&(o[f]===""||isFinite(dayNum(o[f]))))) o[f]="";
@@ -656,7 +656,7 @@ function mergeProgress(a,b){
   const arr=x=>Array.isArray(x)?x:[];
   const byId=new Map(); [...arr(older.custom),...arr(newer.custom)].forEach(c=>{ if(c&&c.id) byId.set(c.id,c); }); out.custom=[...byId.values()];
   out.log={}; for(const k of keys(a.log,b.log)) out.log[k]=Math.max(+(a.log||{})[k]||0,+(b.log||{})[k]||0);
-  out.rp={}; for(const k of keys(a.rp,b.rp)){ const x=(a.rp||{})[k]||"", y=(b.rp||{})[k]||""; out.rp[k]=x>y?x:y; }
+  for(const f of ["rp","read"]){ out[f]={}; for(const k of keys(a[f],b[f])){ const x=(a[f]||{})[k]||"", y=(b[f]||{})[k]||""; out[f][k]=x>y?x:y; } }
   out.seen=Object.assign({},a.seen,b.seen);
   const la=a.lastDay||"", lb=b.lastDay||"";
   const day=la===lb?newer:la>lb?a:b;
@@ -735,7 +735,7 @@ document.documentElement.lang=document.documentElement.lang||"en";
 const KEY="harf-gulf-v1";
 const blank=()=>({cards:{},unitsDone:{},suspended:{},custom:[],gen:[],streak:0,lastDay:"",reviewsToday:0,newToday:0,
   session:{day:"",done:{}},settings:{translit:"auto",newPerDay:1,retention:0.9,gender:"",autoplay:true,voice:"auto"},
-  talks:0,freezes:0,freezeUsed:"",log:{},rp:{},seen:{},msaDay:"",resetAt:0,resetDay:"",updatedAt:0});
+  talks:0,freezes:0,freezeUsed:"",log:{},rp:{},seen:{},read:{},msaDay:"",resetAt:0,resetDay:"",updatedAt:0});
 const clone=x=>JSON.parse(JSON.stringify(x==null?{}:x));
 const sched=(c,g,now)=>schedule(c,g,now,S.settings.retention||0.9);
 let S=blank();
@@ -746,7 +746,7 @@ function serialize(){ const o=Object.assign({},S,{cards:{}}); delete o.gen; for(
 // remote data is frozen by the platform, so everything is deep-copied before use
 function hydrate(raw){ const o=clone(raw); const b=blank(); const s=Object.assign(b,o);
   s.settings=Object.assign(blank().settings,o.settings||{}); s.session=Object.assign({day:"",done:{}},o.session||{}); s.session.done=Object.assign({},s.session.done);
-  for(const f of ["unitsDone","suspended","log","rp","seen"]) if(!s[f]||typeof s[f]!=="object"||Array.isArray(s[f])) s[f]={};
+  for(const f of ["unitsDone","suspended","log","rp","seen","read"]) if(!s[f]||typeof s[f]!=="object"||Array.isArray(s[f])) s[f]={};
   const st=s.settings, r=+st.retention; st.retention=r>=0.7&&r<=0.99?r:0.9; st.newPerDay=+st.newPerDay===2?2:1; st.autoplay=st.autoplay!==false;
   if(!["auto","always","tap","never"].includes(st.translit)) st.translit="auto"; if(!["","m","f"].includes(st.gender)) st.gender=""; if(!["auto","device","claude"].includes(st.voice)) st.voice="auto";
   for(const f of ["streak","freezes","reviewsToday","newToday","talks","resetAt","updatedAt"]) s[f]=isFinite(+s[f])?+s[f]:0;
@@ -1320,6 +1320,7 @@ function startReview(onDone){
     else ans.append(el("p",{className:"tr",textContent:it.tr}));
     if(mode!=="produce") ans.append(el("p",{className:"en",textContent:it.en}));
     if(it.msa&&normalizeArabic(it.msa)!==normalizeArabic(it.ar)) ans.append(el("p",{className:"msa"},"In fuṣḥā: ",arSpan(it.msa)));
+    if(it.gulf) ans.append(el("p",{className:"msa"},"In Gulf speech: ",arSpan(it.gulf)));
     if(it.note&&mode!=="produce") ans.append(el("p",{className:"tag",textContent:it.note}));
     ap(ans,shiftChip(it),el("div",{className:"row center"},mode==="produce"||mode==="build"?[playBtn(it.ar),slowBtn(it.ar)]:null,!it.sentence&&!it.msaTrack?nativeLink(it):null),
       isLeech(card)?el("p",{},el("span",{className:"chip",textContent:"Tricky card: get a memory aid in Progress"})):null,
@@ -1365,9 +1366,9 @@ function audioDrill(){
 function renderCourse(){
   refresh(); const sec=$("#course"); sec.textContent=""; sec.append(el("h2",{textContent:"Course"}));
   const st=el("div",{className:"subtabs",role:"group","aria-label":"Course sections"});
-  [["lessons","Lessons"],["sounds","Sounds"],["grammar","Grammar"],["numbers","Numbers"]].forEach(([k,lab])=>st.append(el("button",{className:"btn small",type:"button","aria-pressed":String(courseTab===k),textContent:lab,onclick:()=>{ courseTab=k; renderCourse(); }})));
+  [["lessons","Lessons"],["reading","Reading"],["sounds","Sounds"],["grammar","Grammar"],["numbers","Numbers"]].forEach(([k,lab])=>st.append(el("button",{className:"btn small",type:"button","aria-pressed":String(courseTab===k),textContent:lab,onclick:()=>{ courseTab=k; renderCourse(); }})));
   sec.append(st);
-  ({lessons:renderLessons,sounds:renderSounds,grammar:renderGrammar,numbers:renderNumbers})[courseTab](sec);
+  ({lessons:renderLessons,reading:renderReading,sounds:renderSounds,grammar:renderGrammar,numbers:renderNumbers})[courseTab](sec);
 }
 function renderLessons(sec){
   sec.append(el("p",{className:"lede",textContent:"Five stages take you from zero to C1, every lesson written and checked in advance. You move up when you've finished a stage's lessons and 80% of its phrases have stuck for at least a week. After stage 5 the course keeps going with lessons written for you on topics you choose."}));
@@ -1454,6 +1455,45 @@ function renderGrammar(sec){
   sec.append(el("p",{className:"lede",textContent:"The patterns behind the phrases, for when you want to see the whole set. You don't need to memorise these tables: the lessons and reviews build them up for you."}));
   GRAMMAR.forEach(g=>{ const t=el("table",{className:"gtable"}); g.rows.forEach(([ar,tr,en])=>t.append(el("tr",{},el("td",{},arSpan(ar)),el("td",{},el("span",{className:"tr",textContent:tr})),el("td",{textContent:en}),el("td",{},el("button",{className:"btn small ghost",type:"button","aria-label":"Play: "+ar,onclick:()=>say(ar)},icon("play"))))));
     sec.append(el("details",{className:"stg"},el("summary",{},el("b",{textContent:g.title})),el("div",{className:"panel stack"},el("div",{style:"overflow-x:auto"},t),g.note?el("p",{className:"tag",textContent:g.note}):null))); });
+}
+// ===== fuṣḥā reading: short graded texts (news, signs, notices, stories), unlocked stage by stage, for understanding only
+// a reading is {id, level 1-5, stage it unlocks at, title, lines:[[ar, en]], questions:[[question, [options], answer]]}
+function renderReading(sec){
+  const cur=currentStage();
+  sec.append(el("p",{className:"lede",textContent:"Standard Arabic is what you'll read on signs, forms and the news, and hear in formal speech. These short texts train you to understand it. You don't need to speak it: read, listen, then answer the questions."}));
+  if(!READINGS.length){ sec.append(el("p",{className:"tag",textContent:"Readings arrive with the next update."})); return; }
+  for(let lv=1;lv<=5;lv++){ const rs=READINGS.filter(r=>r.level===lv); if(!rs.length) continue;
+    const box=el("div",{className:"units"});
+    rs.forEach(r=>{ const locked=r.stage>cur, d=!!S.read[r.id];
+      box.append(el("button",{className:"unit"+(d?" done":""),type:"button",disabled:locked,onclick:()=>openReading(r)},el("span",{className:"t"},el("b",{textContent:r.title}),el("p",{className:"tag",textContent:`${r.lines.length} lines · ${r.questions.length} question${r.questions.length>1?"s":""}`})),
+        el("span",{className:"st",textContent:d?"Read":locked?`Stage ${r.stage}`:"Open"}))); });
+    const doneN=rs.filter(r=>S.read[r.id]).length;
+    sec.append(el("details",{className:"stg",open:rs.some(r=>r.stage<=cur&&!S.read[r.id])},el("summary",{},el("b",{textContent:`Level ${lv}`}),el("span",{className:"tag",textContent:`${doneN}/${rs.length} read`})),box)); }
+}
+function openReading(r){
+  const f=focusView({title:r.title}); let q=0, right=0;
+  const text=()=>{ f.body.textContent=""; f.progress(0,r.questions.length+1);
+    const p=el("div",{className:"panel dialogue"}); const ens=[];
+    p.append(el("div",{className:"row"},el("button",{className:"btn small",type:"button",onclick:()=>sayQueue(r.lines.flatMap(l=>[{text:l[0],rate:0.8},{pause:500}]))},icon("play"),el("span",{textContent:"Play it all"})),
+      el("button",{className:"btn small",type:"button",textContent:"Show all English",onclick:()=>ens.forEach(e=>e.hidden=false)})));
+    r.lines.forEach(([ar,en])=>{ const e=el("p",{className:"en",hidden:true,textContent:en}); ens.push(e);
+      p.append(el("div",{className:"line",style:"grid-template-columns:1fr"},el("div",{className:"txt"},el("button",{className:"line-play",type:"button","aria-label":"Play: "+ar,onclick:()=>say(ar,0.8)},arSpan(ar),icon("play")),e,
+        el("div",{className:"row"},el("button",{className:"btn small ghost",type:"button",textContent:"English",onclick:()=>{ e.hidden=!e.hidden; }}))))); });
+    f.body.append(el("p",{className:"lede",textContent:"Read it first and work out what you can. Tap a line to hear it, and look at the English only when you're stuck."}),p,
+      el("div",{className:"actions page"},el("button",{className:"btn primary wide",type:"button",textContent:"Questions →",onclick:ask}))); };
+  const ask=()=>{ if(!f.alive()) return; f.body.textContent="";
+    if(q>=r.questions.length){ S.read[r.id]=today(); touchDay(); logActivity(1); save(); flush();
+      f.body.append(el("div",{className:"stage"},el("p",{className:"en",textContent:`${right} of ${r.questions.length} right`}),el("div",{className:"actions"},el("button",{className:"btn wide",type:"button",textContent:"Read it again",onclick:()=>{ q=0; right=0; text(); }}),el("button",{className:"btn primary wide",type:"button",textContent:"Done",onclick:()=>show("course","reading")})))); return; }
+    f.progress(q+1,r.questions.length+1);
+    const [qq,opts,ans]=r.questions[q]; const box=el("div",{className:"options"}); const fb=el("p",{className:"feedback",role:"status"}); const acts=el("div",{className:"actions"});
+    opts.forEach(o=>box.append(el("button",{className:"btn",type:"button","data-o":o,textContent:o,onclick:e=>{ if(box.dataset.done) return; box.dataset.done="1"; const ok=o===ans; if(ok) right++;
+      [...box.children].forEach(b=>{ if(b.dataset.o===ans) b.classList.add("right"); else if(b===e.currentTarget) b.classList.add("wrong"); });
+      fb.className="feedback "+(ok?"ok":"no"); fb.textContent=ok?"Right":"Answer: "+ans; buzz(ok?10:[30,40,30]);
+      acts.append(el("button",{className:"btn primary wide",type:"button",textContent:"Next",onclick:()=>{ q++; ask(); }})); }})));
+    const card=el("div",{className:"stage"},el("p",{className:"mode",textContent:`Question ${q+1} of ${r.questions.length}`}),el("p",{className:"en",textContent:qq}),box,fb,acts,
+      el("details",{className:"more"},el("summary",{textContent:"See the text again"}),el("div",{className:"stack",style:"text-align:right"},r.lines.map(l=>arSpan(l[0])))));
+    f.body.append(card); focusCard(card); };
+  text();
 }
 function renderNumbers(sec){
   sec.append(el("p",{className:"lede",textContent:"Gulf numbers, with the Arabic digits you'll see on prices and signs. Tap one to hear it. The voice reads the teens the standard way (khamsata ʿashar); the transliteration shows what Gulf speakers say."}),
