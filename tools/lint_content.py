@@ -219,6 +219,7 @@ def check_line(ar, tr, en, where, E, W, mx):
     if not TR_OK.match(tr): E(f"{where} transliteration has characters outside the scheme: {tr}")
     if "ḍ" in tr: W(f"{where} uses ḍ: the gulf scheme writes ẓ for both ض and ظ")
     if re.search(r"\bḥadd\b", tr) and "حد" in ar: W(f"{where} 'someone' is ḥad (one d); ḥadd is 'edge, limit'")
+    if re.search(r"(?:^|[\s,.!?;:])lā(?=$|[\s,.!?;:])", tr) and "لا" in ar: W(f"{where} 'no' / 'don't' is la, not lā (STYLE §3)")
     for bad, good in (("جدام", "قدام"), ("ترى", "ترا")):
         if re.search(rf"(?:^|\s){bad}(?:\s|$|[؟!.،])", ar): W(f"{where} write {good}, the course spelling, not {bad}")
     m3 = re.search(r"\b\w*[^tskdgcz\s-]-h(?:a|um)\b", tr)
