@@ -134,7 +134,7 @@
     "A",
     "تفضل، عندك موعد؟",
     "tfaẓẓal, ʿindak mawʿid?",
-    "Come in. Do you have an appointment?"
+    "Yes, go ahead. Do you have an appointment?"
    ],
    [
     "B",
@@ -202,11 +202,11 @@
     "baḥāwil asāʿdak = I'll try to help you"
    ],
    [
-    "صار لها",
-    "ṣār-lha",
-    "it's been … (for it, for her)",
-    "مضى عليها",
-    "ṣār-lha shahar = it's been a month; for him or a masculine thing: ṣār-lah (صار له)"
+    "عند المدير",
+    "ʿind il-mudīr",
+    "(it's) with the manager",
+    "",
+    "hē, ʿind il-mudīr = yes, it's with the manager"
    ],
    [
     "رقم",
@@ -569,7 +569,7 @@
     "بشّر",
     "bashshir",
     "so, tell me (the news)! (to a man)",
-    "ما الأخبار؟",
+    "بشرني / ما الأخبار؟",
     "to a woman: bashshri (بشري); said when you're waiting for news; the answer starts abashshrak (أبشرك); also bashshirni (بشرني)"
    ],
    [
@@ -654,9 +654,9 @@
    ],
    [
     "B",
-    "زين، بييبها باكر إن شاء الله",
-    "zēn, bayībha bāchir in shāʼ allāh",
-    "Great, I'll bring them tomorrow, God willing."
+    "زين، بييبها باكر إن شاء الله. ساعدتيني وايد!",
+    "zēn, bayībha bāchir in shāʼ allāh. sāʿadtīni wāyid!",
+    "Great, I'll bring them tomorrow, God willing. You've been a big help!"
    ]
   ],
   "items": [
@@ -1065,7 +1065,8 @@
     "نمت جيدًا",
     ""
    ]
-  ]
+  ],
+  "culture": "When someone gets back from a trip, say il-ḥamdu lillāh ʿala s-salāma; the answer is allāh ysallmak, to a woman allāh ysallmich."
  },
  {
   "id": "s3u044",
@@ -1224,8 +1225,8 @@
    ],
    [
     "B",
-    "ما عليه. لا، ما استخدمنا شي. نحتاج الفاتورة بس",
-    "ma ʿalēh. la, ma istakhdamna shay. niḥtāj il-fātūra bas",
+    "مسموح. لا، ما استخدمنا شي. نحتاج الفاتورة بس",
+    "masmūḥ. la, ma istakhdamna shay. niḥtāj il-fātūra bas",
     "That's all right. No, we didn't use anything. We just need the bill."
    ],
    [
@@ -1304,7 +1305,7 @@
   "id": "s3u046",
   "stage": 3,
   "title": "Checkpoint 3.3: moving day",
-  "goal": "Checkpoint: Sēf and Fahad help you move into the new flat; ask them for help, sort out the AC and thank them",
+  "goal": "Checkpoint: Sēf (A) and Fahad help you move into the new flat; ask them for help, sort out the AC and thank them",
   "tip": "To a group, a command or a past 'you' ends in -u, and it lengthens before -ni: sāʿdūni 'help me (all of you)', waddūni 'take me'. Group wishes take -kum: allāh ygawwīkum. A plural participle takes -īn: miḥtājīn 'we need, you (all) need'.",
   "grammar": "checkpoint 3.3: recycle s3u029–s3u045 (Forms II, III, V, VI, VII, VIII, X)",
   "dialogue": [
@@ -1342,7 +1343,7 @@
     "A",
     "الله يعافيك، عادي! بس انتو محتاجين ثلاجة أكبر",
     "allāh yʿāfīk, ʿādi! bas intu miḥtājīn thallāja akbar",
-    "Thank you, it's nothing! But you two need a bigger fridge."
+    "Thank you, it's nothing! But you and your flatmate need a bigger fridge."
    ],
    [
     "B",
@@ -1400,6 +1401,7 @@
     "استمتعنا معك",
     "to a woman: istānasna wiyyāch (استانسنا وياج)"
    ]
-  ]
+  ],
+  "culture": "To friends who've worked hard for you, say allāh ygawwīkum (to one man: allāh ygawwīk); a common reply is allāh yʿāfīk."
  }
 ]
