@@ -1,0 +1,1034 @@
+[
+ {
+  "id": "s1u057",
+  "stage": 1,
+  "title": "Breakfast at the cafeteria",
+  "goal": "Say you haven't had breakfast, order karak with Sēf and say who's paying",
+  "tip": "Past recap: trayyagt? 'have you had breakfast?' and trayyagt 'I've had breakfast' sound the same, like shirabt; ma trayyagt = I haven't. Endings recap: ḥsāb + -i gives ʿala ḥsābi, 'on my account', so 'it's on me'.",
+  "grammar": "recycle: possessives, past, modals",
+  "dialogue": [
+   [
+    "A",
+    "صباح الخير يا ريّال. تريقت؟",
+    "ṣabāḥ il-khēr yā rayyāl. trayyagt?",
+    "Morning, man. Have you had breakfast?"
+   ],
+   [
+    "B",
+    "لا، ما تريقت. أنا يوعان",
+    "la, ma trayyagt. ana yōʿān",
+    "No, I haven't. I'm hungry."
+   ],
+   [
+    "A",
+    "يلا، الريوق على حسابي. كرك وخبز وبيض؟",
+    "yalla, ir-riyūg ʿala ḥsābi. karak w khubz w bēẓ?",
+    "Come on, breakfast's on me. Karak, bread and eggs?"
+   ],
+   [
+    "B",
+    "أكيد! الكرك هني حلو، صح؟",
+    "akīd! il-karak hni ḥilu, ṣaḥḥ?",
+    "Sure! The karak here is good, isn't it?"
+   ],
+   [
+    "A",
+    "صح، وايد حلو. بالعافية!",
+    "ṣaḥḥ, wāyid ḥilu. bil-ʿāfya!",
+    "True, really good. Enjoy!"
+   ],
+   [
+    "B",
+    "الله يعافيك",
+    "allāh yʿāfīk",
+    "Thanks (God give you health)."
+   ]
+  ],
+  "items": [
+   [
+    "ريوق",
+    "riyūg",
+    "breakfast",
+    "فطور",
+    "you'll also hear fuṭūr (فطور)"
+   ],
+   [
+    "تريقت؟",
+    "trayyagt?",
+    "have you had breakfast? (to a man) / I've had breakfast",
+    "هل تناولت الفطور؟",
+    "to a woman: trayyagti?; I haven't: ma trayyagt"
+   ],
+   [
+    "يوعان",
+    "yōʿān",
+    "hungry (a man)",
+    "جائع",
+    "a woman: yōʿāna (يوعانة); you'll see written جوعان"
+   ],
+   [
+    "على حسابي",
+    "ʿala ḥsābi",
+    "it's on me (I'm paying)",
+    "على حسابي",
+    ""
+   ],
+   [
+    "كرك",
+    "karak",
+    "karak (strong tea boiled with milk and spices)",
+    "",
+    ""
+   ],
+   [
+    "خبز",
+    "khubz",
+    "bread",
+    "خبز",
+    ""
+   ],
+   [
+    "بيض",
+    "bēẓ",
+    "eggs",
+    "بيض",
+    "one egg: bēẓa"
+   ],
+   [
+    "صح",
+    "ṣaḥḥ",
+    "true; right? (tagged on)",
+    "صحيح",
+    "…, ṣaḥḥ? = …, isn't it?"
+   ],
+   [
+    "بالعافية",
+    "bil-ʿāfya",
+    "enjoy (to someone eating or drinking)",
+    "هنيئًا",
+    "reply: allāh yʿāfīk; to a woman: allāh yʿāfīch"
+   ]
+  ],
+  "culture": "Karak is strong black tea boiled with milk, sugar and cardamom. Small cafeterias all over Dubai sell it all day, and many people order it without getting out of the car. Among friends, offering to pay (ʿala ḥsābi) is normal, and the other person usually protests."
+ },
+ {
+  "id": "s1u058",
+  "stage": 1,
+  "title": "At the supermarket",
+  "goal": "Shop with Maryam for the office breakfast: say what you need and ask a woman what she wants",
+  "tip": "Endings recap: nāgiṣ 'missing' + -na gives shu nāgiṣna? 'what do we need?'. To a woman the verb ends in -īn: inti shu tabīn? (to a man: shu tabi?). inzēn means 'OK, will do', or 'OK?' tagged on the end of a request.",
+  "grammar": "recycle: possessives, past, modals",
+  "dialogue": [
+   [
+    "A",
+    "باكر الريوق علينا. شو نشتري من السوبرماركت؟",
+    "bāchir ir-riyūg ʿalēna. shu nishtiri min is-sūbarmārkit?",
+    "Tomorrow breakfast is on us. What shall we buy at the supermarket?"
+   ],
+   [
+    "B",
+    "ناقصنا حليب وخبز. وانتي شو تبين؟",
+    "nāgiṣna ḥalīb w khubz. w inti shu tabīn?",
+    "We need milk and bread. And what do you want?"
+   ],
+   [
+    "A",
+    "أبي فواكه. وخذ كيس، انزين؟",
+    "abi fawākih. w khidh kīs, inzēn?",
+    "I want fruit. And take a bag, OK?"
+   ],
+   [
+    "B",
+    "أوكي. شي ثاني؟",
+    "ōkē. shay thāni?",
+    "OK. Anything else?"
+   ],
+   [
+    "A",
+    "لا، بس جي. يلا نروح",
+    "la, bas chī. yalla nrūḥ",
+    "No, that's it. Let's go."
+   ]
+  ],
+  "items": [
+   [
+    "نشتري",
+    "nishtiri",
+    "we buy / shall we buy?",
+    "نشتري",
+    "I buy: ashtiri"
+   ],
+   [
+    "السوبرماركت",
+    "is-sūbarmārkit",
+    "the supermarket",
+    "المتجر",
+    ""
+   ],
+   [
+    "ناقص",
+    "nāgiṣ",
+    "missing; (we're) out of",
+    "ناقص",
+    "shu nāgiṣna? = what do we need?"
+   ],
+   [
+    "حليب",
+    "ḥalīb",
+    "milk",
+    "حليب",
+    ""
+   ],
+   [
+    "فواكه",
+    "fawākih",
+    "fruit",
+    "فواكه",
+    ""
+   ],
+   [
+    "كيس",
+    "kīs",
+    "bag (plastic or paper)",
+    "كيس",
+    ""
+   ],
+   [
+    "انزين",
+    "inzēn",
+    "OK, will do; OK? (after a request)",
+    "حسنًا",
+    "said when you agree to do something"
+   ],
+   [
+    "أوكي",
+    "ōkē",
+    "OK",
+    "",
+    "from English; normal among young people"
+   ],
+   [
+    "شي ثاني؟",
+    "shay thāni?",
+    "anything else?",
+    "شيء آخر؟",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s1u059",
+  "stage": 1,
+  "title": "Ordering dinner in",
+  "goal": "Greet Sēf after his shower, agree on dinner, order from a restaurant and insist on paying",
+  "tip": "After a shower or a haircut say naʿīman; the reply is allāh yinʿim ʿalēk. Endings recap: ʿala ḥsābi 'on me'. Insist with la wallāh: la wallāh, hal-marra ʿalayy 'no way, this time it's on me'.",
+  "grammar": "recycle: possessives, past, modals",
+  "dialogue": [
+   [
+    "B",
+    "نعيما!",
+    "naʿīman!",
+    "Naʿīman! (said after a shower)"
+   ],
+   [
+    "A",
+    "الله ينعم عليك. شو نتعشى؟",
+    "allāh yinʿim ʿalēk. shu nitʿashsha?",
+    "Thanks (God bless you too). What shall we have for dinner?"
+   ],
+   [
+    "B",
+    "أنا يوعان. نطلب أكل من مطعم؟",
+    "ana yōʿān. niṭlub akil min maṭʿam?",
+    "I'm hungry. Shall we order food from a restaurant?"
+   ],
+   [
+    "A",
+    "هيه، عيش ودياي. والعشا على حسابي",
+    "hē, ʿēsh w diyāy. w il-ʿasha ʿala ḥsābi",
+    "Yes, rice and chicken. And dinner's on me."
+   ],
+   [
+    "B",
+    "لا والله، هالمرة علي!",
+    "la wallāh, hal-marra ʿalayy!",
+    "No way, this time it's on me!"
+   ]
+  ],
+  "items": [
+   [
+    "نعيما",
+    "naʿīman",
+    "said to someone fresh from a shower or a haircut",
+    "نعيمًا",
+    "reply: allāh yinʿim ʿalēk"
+   ],
+   [
+    "الله ينعم عليك",
+    "allāh yinʿim ʿalēk",
+    "reply to naʿīman (to a man)",
+    "أنعم الله عليك",
+    "to a woman: allāh yinʿim ʿalēch"
+   ],
+   [
+    "نتعشى",
+    "nitʿashsha",
+    "we have dinner / shall we have dinner?",
+    "نتعشى",
+    "I've had dinner: tʿashshēt (تعشيت)"
+   ],
+   [
+    "نطلب",
+    "niṭlub",
+    "we order / shall we order?",
+    "نطلب",
+    ""
+   ],
+   [
+    "أكل",
+    "akil",
+    "food",
+    "طعام",
+    "the food: il-akil"
+   ],
+   [
+    "مطعم",
+    "maṭʿam",
+    "restaurant",
+    "مطعم",
+    ""
+   ],
+   [
+    "دياي",
+    "diyāy",
+    "chicken",
+    "دجاج",
+    "you'll see written دجاج too; one chicken: diyāya"
+   ],
+   [
+    "عشا",
+    "ʿasha",
+    "dinner",
+    "عشاء",
+    ""
+   ],
+   [
+    "لا والله",
+    "la wallāh",
+    "no way, no really (refusing or insisting)",
+    "",
+    "used when you insist, e.g. on paying"
+   ]
+  ]
+ },
+ {
+  "id": "s1u060",
+  "stage": 1,
+  "title": "Lunch at Sēf's house",
+  "goal": "Answer Umm Sēf's welcome, praise her cooking and say you're full",
+  "tip": "To a woman, use -ich: allāh yḥayyīch, allāh yʿāfīch. tislam īdich 'bless your hand' thanks the cook; the hand is the subject, so tislam doesn't change. Past recap: shbaʿt 'I'm full', ma kalt shay 'you haven't eaten anything'.",
+  "grammar": "recycle: possessives, past, modals",
+  "dialogue": [
+   [
+    "A",
+    "حياك الله. تفضل على الغدا",
+    "ḥayyāk allāh. tfaẓẓal ʿala l-ghada",
+    "Welcome. Please, come and have lunch."
+   ],
+   [
+    "B",
+    "الله يحييج. ما شاء الله، سمك ولحم!",
+    "allāh yḥayyīch. mā shāʼ allāh, simach w laḥam!",
+    "Thank you. Wow, fish and meat!"
+   ],
+   [
+    "A",
+    "كل، كل! انت ما كلت شي",
+    "kil, kil! inta ma kalt shay",
+    "Eat, eat! You haven't eaten anything."
+   ],
+   [
+    "B",
+    "والله شبعت. تسلم إيدج، وايد لذيذ",
+    "wallāh shbaʿt. tislam īdich, wāyid ladhīdh",
+    "Honestly, I'm full. Bless your hands, it's delicious."
+   ],
+   [
+    "A",
+    "الله يسلمك. بالعافية عليك",
+    "allāh ysallmak. bil-ʿāfya ʿalēk",
+    "You're welcome. Enjoy it."
+   ],
+   [
+    "B",
+    "الله يعافيج",
+    "allāh yʿāfīch",
+    "Thank you (God give you health)."
+   ]
+  ],
+  "items": [
+   [
+    "غدا",
+    "ghada",
+    "lunch",
+    "غداء",
+    "the lunch: il-ghada"
+   ],
+   [
+    "سمك",
+    "simach",
+    "fish",
+    "سمك",
+    "you'll see written سمج"
+   ],
+   [
+    "لحم",
+    "laḥam",
+    "meat",
+    "لحم",
+    ""
+   ],
+   [
+    "ما كلت شي",
+    "ma kalt shay",
+    "you haven't eaten anything (to a man) / I haven't eaten anything",
+    "لم تأكل شيئًا",
+    "to a woman: ma kalti shay"
+   ],
+   [
+    "شبعت",
+    "shbaʿt",
+    "I'm full (I've had enough)",
+    "شبعت",
+    ""
+   ],
+   [
+    "تسلم",
+    "tislam",
+    "thank you (to a man; lit. may you be safe)",
+    "شكرًا",
+    "to a woman: tislamīn (تسلمين); reply: allāh ysallmak"
+   ],
+   [
+    "تسلم إيدك",
+    "tislam īdak",
+    "bless your hands (to a man who cooked or made something)",
+    "سلمت يداك",
+    "to a woman: tislam īdich (تسلم إيدج); reply: allāh ysallmak"
+   ],
+   [
+    "لذيذ",
+    "ladhīdh",
+    "delicious",
+    "لذيذ",
+    ""
+   ]
+  ],
+  "culture": "Eat, pass dishes and take your coffee cup with the right hand. A host keeps offering more even after you say you're full; saying wallāh shbaʿt, il-ḥamdu lillāh once or twice is the polite way to stop. Praise the food and thank the cook with tislam īdich."
+ },
+ {
+  "id": "s1u061",
+  "stage": 1,
+  "title": "Finding the metro station",
+  "goal": "Ask a passer-by the way to the metro and follow directions with 'in front of' and 'behind'",
+  "tip": "Place words go straight before the noun: jiddām il-mōl 'in front of the mall', wara l-maḥaṭṭa 'behind the station'. They take the same endings as nouns: jiddāmak 'in front of you', warāh 'behind it'.",
+  "grammar": "prepositions of place: jiddām, wara, fōg, taḥt, yamm, barra, ṣōb + noun or ending",
+  "dialogue": [
+   [
+    "B",
+    "لو سمحت، وين محطة المترو؟",
+    "law samaḥt, wēn maḥaṭṭat il-mitro?",
+    "Excuse me, where's the metro station?"
+   ],
+   [
+    "A",
+    "مب بعيد. روح سيدا صوب الإشارة",
+    "mub baʿīd. rūḥ sīda ṣōb il-ishāra",
+    "It's not far. Go straight on towards the traffic lights."
+   ],
+   [
+    "B",
+    "عند الإشارة أروح يمين؟",
+    "ʿind il-ishāra arūḥ yamīn?",
+    "At the lights, do I go right?"
+   ],
+   [
+    "A",
+    "لا، يسار. بتشوف المول قدامك",
+    "la, yasār. bitshūf il-mōl jiddāmak",
+    "No, left. You'll see the mall in front of you."
+   ],
+   [
+    "B",
+    "والمحطة ورا المول؟",
+    "w il-maḥaṭṭa wara l-mōl?",
+    "And the station's behind the mall?"
+   ],
+   [
+    "A",
+    "هيه، وراه. خمس دقايق بس",
+    "hē, warāh. khams dagāyig bas",
+    "Yes, behind it. Just five minutes."
+   ]
+  ],
+  "items": [
+   [
+    "المترو",
+    "il-mitro",
+    "the metro",
+    "المترو",
+    ""
+   ],
+   [
+    "محطة",
+    "maḥaṭṭa",
+    "station",
+    "محطة",
+    "the metro station: maḥaṭṭat il-mitro"
+   ],
+   [
+    "بعيد",
+    "baʿīd",
+    "far",
+    "بعيد",
+    "not far: mub baʿīd"
+   ],
+   [
+    "صوب",
+    "ṣōb",
+    "towards, in the direction of",
+    "نحو",
+    "ṣōbak = your way, towards you"
+   ],
+   [
+    "الإشارة",
+    "il-ishāra",
+    "the traffic lights",
+    "إشارة المرور",
+    ""
+   ],
+   [
+    "عند",
+    "ʿind",
+    "at, by (a place)",
+    "عند",
+    "the same word as in ʿindi 'I have'"
+   ],
+   [
+    "قدام",
+    "jiddām",
+    "in front of",
+    "أمام",
+    "jiddāmak = in front of you; you'll see written جدام"
+   ],
+   [
+    "ورا",
+    "wara",
+    "behind",
+    "وراء / خلف",
+    "warāh = behind it"
+   ],
+   [
+    "بتشوف",
+    "bitshūf",
+    "you'll see (to a man)",
+    "سترى",
+    "to a woman: bitshūfīn"
+   ]
+  ]
+ },
+ {
+  "id": "s1u062",
+  "stage": 1,
+  "title": "Up or down? On the metro",
+  "goal": "Find the platform and the tickets with Sēf, ask where to get off and sit next to him",
+  "tip": "fōg 'up, above' and taḥt 'down, below' stand alone or go before a noun: il-mitro fōg 'the metro's upstairs', taḥt il-mōl 'under the mall'. yamm 'next to' takes endings too: yamm il-bāb 'by the door', yammi 'next to me'.",
+  "grammar": "prepositions of place: jiddām, wara, fōg, taḥt, yamm, barra, ṣōb + noun or ending",
+  "dialogue": [
+   [
+    "A",
+    "يلا نركب المترو",
+    "yalla nirkab il-mitro",
+    "Come on, let's take the metro."
+   ],
+   [
+    "B",
+    "زين. المترو فوق ولا تحت؟",
+    "zēn. il-mitro fōg walla taḥt?",
+    "OK. Is the metro upstairs or downstairs?"
+   ],
+   [
+    "A",
+    "فوق. بس التذكرة تحت، يم الباب",
+    "fōg. bas it-tadhkara taḥt, yamm il-bāb",
+    "Upstairs. But the tickets are downstairs, by the door."
+   ],
+   [
+    "B",
+    "المترو مب زحمة اليوم. وين ننزل؟",
+    "il-mitro mub zaḥma il-yōm. wēn ninzil?",
+    "The metro isn't crowded today. Where do we get off?"
+   ],
+   [
+    "A",
+    "في محطة المول. تعال، اقعد يمي",
+    "fi maḥaṭṭat il-mōl. taʿāl, igʿid yammi",
+    "At the mall station. Come, sit next to me."
+   ]
+  ],
+  "items": [
+   [
+    "نركب",
+    "nirkab",
+    "we get on / let's take (the bus, the metro)",
+    "نركب",
+    "I get on: arkab"
+   ],
+   [
+    "ننزل",
+    "ninzil",
+    "we get off / let's get off",
+    "ننزل",
+    ""
+   ],
+   [
+    "فوق",
+    "fōg",
+    "up, upstairs; above",
+    "فوق",
+    ""
+   ],
+   [
+    "تحت",
+    "taḥt",
+    "down, downstairs; below",
+    "تحت",
+    ""
+   ],
+   [
+    "ولا",
+    "walla",
+    "or (in a question)",
+    "أم",
+    "fōg walla taḥt? = up or down?"
+   ],
+   [
+    "تذكرة",
+    "tadhkara",
+    "ticket",
+    "تذكرة",
+    ""
+   ],
+   [
+    "الباب",
+    "il-bāb",
+    "the door",
+    "الباب",
+    ""
+   ],
+   [
+    "يم",
+    "yamm",
+    "next to, by",
+    "بجانب",
+    "yammi = next to me; yammak = next to you; you'll also hear jamb (جنب)"
+   ],
+   [
+    "زحمة",
+    "zaḥma",
+    "crowded; a crush, traffic",
+    "زحام",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s1u063",
+  "stage": 1,
+  "title": "Where are you? On the phone",
+  "goal": "Find Maryam outside the mall by phone: say where you are, outside or inside, and that you're coming",
+  "tip": "barra 'outside' and dākhil 'inside' also go before a noun: barra l-mōl, dākhil il-mōl. yāy 'coming' works like rāyiḥ: a man says yāy, a woman yāya. To a woman the endings take -ich: minnich 'from you', asmaʿich 'I hear you'.",
+  "grammar": "prepositions of place: jiddām, wara, fōg, taḥt, yamm, barra, ṣōb + noun or ending",
+  "dialogue": [
+   [
+    "A",
+    "ألو، انت وين؟",
+    "alō, inta wēn?",
+    "Hello? Where are you?"
+   ],
+   [
+    "B",
+    "أنا في الطريق. ياي الحين",
+    "ana fi ṭ-ṭarīg. yāy il-ḥīn",
+    "I'm on the way. I'm coming now."
+   ],
+   [
+    "A",
+    "زين. أنا برا المول، عند الباب",
+    "zēn. ana barra l-mōl, ʿind il-bāb",
+    "OK. I'm outside the mall, by the door."
+   ],
+   [
+    "B",
+    "ما أسمعج عدل. انتي داخل المول؟",
+    "ma asmaʿich ʿidil. inti dākhil il-mōl?",
+    "I can't hear you properly. Are you inside the mall?"
+   ],
+   [
+    "A",
+    "لا، برا! قدام الباب",
+    "la, barra! jiddām il-bāb",
+    "No, outside! In front of the door."
+   ],
+   [
+    "B",
+    "انزين، أنا قريب منج. خمس دقايق",
+    "inzēn, ana garīb minnich. khams dagāyig",
+    "OK, I'm close to you. Five minutes."
+   ]
+  ],
+  "items": [
+   [
+    "انت وين؟",
+    "inta wēn?",
+    "where are you? (to a man)",
+    "أين أنت؟",
+    "to a woman: inti wēn?"
+   ],
+   [
+    "في الطريق",
+    "fi ṭ-ṭarīg",
+    "on the way",
+    "في الطريق",
+    ""
+   ],
+   [
+    "ياي",
+    "yāy",
+    "coming (a man)",
+    "قادم",
+    "a woman: yāya (ياية); you'll see written جاي"
+   ],
+   [
+    "برا",
+    "barra",
+    "outside",
+    "خارج",
+    "you'll see written برع"
+   ],
+   [
+    "داخل",
+    "dākhil",
+    "inside",
+    "داخل",
+    ""
+   ],
+   [
+    "ما أسمعك",
+    "ma asmaʿak",
+    "I can't hear you (to a man)",
+    "لا أسمعك",
+    "to a woman: ma asmaʿich (ما أسمعج)"
+   ],
+   [
+    "عدل",
+    "ʿidil",
+    "properly, right; straight",
+    "جيدًا",
+    "ma asmaʿak ʿidil = I can't hear you properly"
+   ],
+   [
+    "قريب منك",
+    "garīb minnak",
+    "close to you (to a man)",
+    "قريب منك",
+    "to a woman: garīb minnich"
+   ]
+  ]
+ },
+ {
+  "id": "s1u064",
+  "stage": 1,
+  "title": "Bus or metro? Getting to the airport",
+  "goal": "Ask Sēf how to get to the airport and compare the bus, the metro and walking",
+  "tip": "chēf? 'how?' asks the same as shlōn? from u15; both are fine: chēf arūḥ il-maṭār? 'how do I get to the airport?'. Place words keep working: il-mōgif jiddām il-bēt 'the stop's in front of the house'.",
+  "grammar": "prepositions of place: jiddām, wara, fōg, taḥt, yamm, barra, ṣōb + noun or ending",
+  "dialogue": [
+   [
+    "B",
+    "باكر بروح المطار. كيف أروح؟",
+    "bāchir barūḥ il-maṭār. chēf arūḥ?",
+    "Tomorrow I'm going to the airport. How do I get there?"
+   ],
+   [
+    "A",
+    "بالمترو أو بالتاكسي",
+    "bil-mitro aw bit-tāksi",
+    "By metro or by taxi."
+   ],
+   [
+    "B",
+    "والباص؟ الموقف قدام البيت",
+    "w il-bāṣ? il-mōgif jiddām il-bēt",
+    "And the bus? The stop's in front of the house."
+   ],
+   [
+    "A",
+    "الباص يوصل، بس مب سريع",
+    "il-bāṣ yōṣal, bas mub sarīʿ",
+    "The bus gets there, but it isn't fast."
+   ],
+   [
+    "B",
+    "زين، المترو. المحطة بعيدة؟",
+    "zēn, il-mitro. il-maḥaṭṭa baʿīda?",
+    "OK, the metro. Is the station far?"
+   ],
+   [
+    "A",
+    "لا، خمس دقايق على ريولك",
+    "la, khams dagāyig ʿala ryūlak",
+    "No, five minutes on foot."
+   ]
+  ],
+  "items": [
+   [
+    "كيف",
+    "chēf",
+    "how?",
+    "كيف",
+    "the same as shlōn (u15); some say kēf"
+   ],
+   [
+    "المطار",
+    "il-maṭār",
+    "the airport",
+    "المطار",
+    ""
+   ],
+   [
+    "أو",
+    "aw",
+    "or",
+    "أو",
+    "in a question you'll also hear walla"
+   ],
+   [
+    "الباص",
+    "il-bāṣ",
+    "the bus",
+    "الحافلة",
+    ""
+   ],
+   [
+    "موقف",
+    "mōgif",
+    "(bus) stop; car park",
+    "موقف",
+    "bus stop: mōgif il-bāṣ"
+   ],
+   [
+    "يوصل",
+    "yōṣal",
+    "it gets there, it reaches",
+    "يصل",
+    ""
+   ],
+   [
+    "سريع",
+    "sarīʿ",
+    "fast, quick",
+    "سريع",
+    "not fast: mub sarīʿ"
+   ],
+   [
+    "على ريولي",
+    "ʿala ryūli",
+    "on foot (lit. on my feet)",
+    "سيرًا على الأقدام",
+    "to a man: ʿala ryūlak; you'll see written رجولي"
+   ]
+  ]
+ },
+ {
+  "id": "s1u065",
+  "stage": 1,
+  "title": "Checkpoint 1.4: a day out with Sēf",
+  "goal": "Meet Sēf and his friends: find them, suggest lunch and argue over the bill, speaking to a group",
+  "tip": "Talking to a group, use intu and plural endings. Adjectives take -īn: yōʿānīn 'hungry', garībīn 'close'; yāy becomes yāyīn 'coming'. ḥsāb takes -na for 'us': ʿala ḥsābna 'it's on us'.",
+  "grammar": "checkpoint 1.4: recycle s1u053–s1u064",
+  "dialogue": [
+   [
+    "B",
+    "هلا سيف، انتو وين؟",
+    "hala Sēf, intu wēn?",
+    "Hi Sēf, where are you guys?"
+   ],
+   [
+    "A",
+    "ياين! نحن في المترو، قريبين",
+    "yāyīn! niḥin fi l-mitro, garībīn",
+    "Coming! We're on the metro, close by."
+   ],
+   [
+    "B",
+    "زين. انتو يوعانين؟ نتغدى في المول؟",
+    "zēn. intu yōʿānīn? nitghadda fi l-mōl?",
+    "Great. Are you hungry? Shall we have lunch at the mall?"
+   ],
+   [
+    "A",
+    "هيه والله! المطعم وين؟",
+    "hē wallāh! il-maṭʿam wēn?",
+    "Definitely! Where's the restaurant?"
+   ],
+   [
+    "B",
+    "فوق، يم السينما. والغدا على حسابي",
+    "fōg, yamm is-sīnama. w il-ghada ʿala ḥsābi",
+    "Upstairs, next to the cinema. And lunch is on me."
+   ],
+   [
+    "A",
+    "لا والله، الغدا على حسابنا!",
+    "la wallāh, il-ghada ʿala ḥsābna!",
+    "No way, lunch is on us!"
+   ]
+  ],
+  "items": [
+   [
+    "انتو وين؟",
+    "intu wēn?",
+    "where are you? (to a group)",
+    "أين أنتم؟",
+    "to one man: inta wēn?; to one woman: inti wēn?"
+   ],
+   [
+    "ياين",
+    "yāyīn",
+    "coming (a group; we or they)",
+    "قادمون",
+    "one man: yāy; one woman: yāya"
+   ],
+   [
+    "قريبين",
+    "garībīn",
+    "close, nearby (a group)",
+    "قريبون",
+    "one man: garīb; one woman: garība"
+   ],
+   [
+    "يوعانين",
+    "yōʿānīn",
+    "hungry (a group)",
+    "جائعون",
+    "one man: yōʿān; one woman: yōʿāna"
+   ],
+   [
+    "نتغدى",
+    "nitghadda",
+    "we have lunch / shall we have lunch?",
+    "نتغدى",
+    "I've had lunch: tghaddēt (تغديت)"
+   ],
+   [
+    "على حسابنا",
+    "ʿala ḥsābna",
+    "it's on us (we're paying)",
+    "على حسابنا",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s1u066",
+  "stage": 1,
+  "title": "A1 exit: where I live and who I know",
+  "goal": "Tell Umm Sēf where you live, who you live with and what the area is like",
+  "tip": "sākin 'living' works like rāyiḥ: a man says sākin, a woman sākna. The endings do the rest: b-rūḥi 'by myself', rabīʿi 'my friend', yammna 'next to us', aʿarfah 'I know him'.",
+  "grammar": "A1 exit: describe where I live and people I know",
+  "dialogue": [
+   [
+    "A",
+    "وين ساكن الحين؟",
+    "wēn sākin il-ḥīn?",
+    "Where are you living now?"
+   ],
+   [
+    "B",
+    "ساكن في شقة صغيرة في دبي",
+    "sākin fi shagga ṣghīra fi Dbayy",
+    "In a small flat in Dubai."
+   ],
+   [
+    "A",
+    "ساكن بروحك؟",
+    "sākin b-rūḥak?",
+    "Do you live on your own?"
+   ],
+   [
+    "B",
+    "لا، ويا ربيعي. أعرفه من الجامعة",
+    "la, wiyya rabīʿi. aʿarfah min il-jāmʿa",
+    "No, with my friend. I know him from university."
+   ],
+   [
+    "A",
+    "ما شاء الله. والمنطقة حلوة؟",
+    "mā shāʼ allāh. w il-manṭiga ḥilwa?",
+    "How lovely. And is the area nice?"
+   ],
+   [
+    "B",
+    "هيه، حلوة وايد. والمترو يمنا",
+    "hē, ḥilwa wāyid. w il-mitro yammna",
+    "Yes, really nice. And the metro's right next to us."
+   ]
+  ],
+  "items": [
+   [
+    "ساكن",
+    "sākin",
+    "living (in a place) (a man)",
+    "ساكن",
+    "a woman: sākna (ساكنة); wēn sākin? = where do you live?"
+   ],
+   [
+    "شقة",
+    "shagga",
+    "flat, apartment",
+    "شقة",
+    ""
+   ],
+   [
+    "بروحي",
+    "b-rūḥi",
+    "by myself, alone",
+    "وحدي",
+    "to a man: b-rūḥak; to a woman: b-rūḥich"
+   ],
+   [
+    "ربيعي",
+    "rabīʿi",
+    "my friend (a man)",
+    "صديقي",
+    "UAE; also common: ṣāḥbi (صاحبي)"
+   ],
+   [
+    "أعرفه",
+    "aʿarfah",
+    "I know him",
+    "أعرفه",
+    "I know her: aʿarfha (أعرفها)"
+   ],
+   [
+    "منطقة",
+    "manṭiga",
+    "area, neighbourhood",
+    "منطقة",
+    ""
+   ]
+  ],
+  "culture": "Most people living in Dubai aren't Emirati, so English is often the working language in shops and offices. Start in Arabic anyway: a few Gulf words usually change the tone of the whole conversation."
+ }
+]
