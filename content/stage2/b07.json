@@ -238,7 +238,7 @@
   "stage": 2,
   "title": "Iftar at Sēf's",
   "goal": "Sēf invites you to break the fast at his family's house: give and answer the Ramadan greetings",
-  "tip": "Ramadan greetings come in pairs. mubārak ʿalēkum ish-shahr → allāh ybārik fīk. ramaẓān karīm → allāhu akram. After breaking the fast or after prayer: tagabbal allāh → minna w minkum. Plurals again: killna ṣāymīn 'we're all fasting'.",
+  "tip": "Ramadan greetings come in pairs. mubārak ʿalēkum ish-shahar → allāh ybārik fīk. ramaẓān karīm → allāhu akram. After breaking the fast or after prayer: tagabbal allāh → minna w minkum. Plurals again: killna ṣāymīn 'we're all fasting'.",
   "grammar": "recycle: plurals (ṣāymīn, yōʿānīn) with Ramadan greetings and their replies",
   "dialogue": [
    [
@@ -250,7 +250,7 @@
    [
     "B",
     "هلا فيك، الله يحييك. مبارك عليكم الشهر!",
-    "hala fīk, allāh yḥayyīk. mubārak ʿalēkum ish-shahr!",
+    "hala fīk, allāh yḥayyīk. mubārak ʿalēkum ish-shahar!",
     "Hi, thanks. Happy Ramadan to you all!"
    ],
    [
@@ -287,7 +287,7 @@
   "items": [
    [
     "مبارك عليكم الشهر",
-    "mubārak ʿalēkum ish-shahr",
+    "mubārak ʿalēkum ish-shahar",
     "happy Ramadan (lit. blessed be the month for you), at the start of Ramadan",
     "",
     "said as it is, to one person or many; the reply is allāh ybārik fīk (to a woman: fīch)"
@@ -349,7 +349,7 @@
     ""
    ]
   ],
-  "culture": "Ramadan greetings are everyday speech, not formal. At the start of the month you'll hear mubārak ʿalēkum ish-shahr, and ramaẓān karīm all month. The fast ends at the maghrib call to prayer. People usually break it with dates and water, pray maghrib, and then eat."
+  "culture": "Ramadan greetings are everyday speech, not formal. At the start of the month you'll hear mubārak ʿalēkum ish-shahar, and ramaẓān karīm all month. The fast ends at the maghrib call to prayer. People usually break it with dates and water, pray maghrib, and then eat."
  },
  {
   "id": "s2u062",
