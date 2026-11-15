@@ -4,13 +4,13 @@
     "stage": 1,
     "title": "Showing your flat",
     "goal": "Show a friend round your flat and say where things go",
-    "tip": "il- means “the”. Before the sun letters t, th, d, dh, r, z, s, sh, ṣ, ṭ, ẓ, l, n it turns into that letter: ish-shigga, id-darīsha. Before the others it stays il-: il-bāb, il-maṭbakh. After a vowel the i drops: hādhi ṣ-ṣāla. chī and chidhi both mean “like this”.",
+    "tip": "il- means “the”. Before the sun letters t, th, d, dh, r, z, s, sh, ṣ, ṭ, ẓ, l, n it turns into that letter: ish-shigga, id-dirīsha. Before the others it stays il-: il-bāb, il-maṭbakh. After a vowel the i drops: hādhi ṣ-ṣāla. chī and chidhi both mean “like this”.",
     "grammar": "The article il- and the sun letters",
     "dialogue": [
       ["A", "ما شاء الله، الشقة حلوة!", "mā shāʼ allāh, ish-shigga ḥilwa!", "Wow, the flat's lovely!"],
       ["B", "مشكور. هذي الصالة، والمطبخ هناك", "mashkūr. hādhi ṣ-ṣāla, w il-maṭbakh hnāk", "Thanks. This is the living room, and the kitchen's over there."],
       ["A", "والكنبة؟ جي ولّا جي؟", "w il-kanaba? chī walla chī?", "And the sofa? This way or that way?"],
-      ["B", "جي، عند الدريشة", "chī, ʿind id-darīsha", "This way, by the window."],
+      ["B", "جي، عند الدريشة", "chī, ʿind id-dirīsha", "This way, by the window."],
       ["A", "هيه، جذي زين. والتلفزيون؟", "hē, chidhi zēn. w it-tilfizyōn?", "Yes, that's good like that. And the TV?"],
       ["B", "طيب، عند الباب", "ṭayyib, ʿind il-bāb", "OK, by the door."]
     ],
@@ -19,7 +19,7 @@
       ["الصالة", "iṣ-ṣāla", "the living room", "غرفة المعيشة", "sun letter: iṣ-ṣāla"],
       ["المطبخ", "il-maṭbakh", "the kitchen", "المطبخ", "moon letter: il- stays"],
       ["الكنبة", "il-kanaba", "the sofa", "الأريكة", ""],
-      ["الدريشة", "id-darīsha", "the window", "النافذة", "you'll also hear ish-shubbāk (الشباك)"],
+      ["الدريشة", "id-dirīsha", "the window", "النافذة", "plural: dirāyish (درايش); you'll also hear ish-shubbāk (الشباك)"],
       ["التلفزيون", "it-tilfizyōn", "the TV", "التلفاز", ""],
       ["الباب", "il-bāb", "the door", "الباب", ""],
       ["جي", "chī", "like this, so", "هكذا", "the everyday Emirati form; chī walla chī? = this way or that way?"],
@@ -42,7 +42,7 @@
     ],
     "items": [
       ["غرفة", "ghurfa", "room", "غرفة", "UAE also: ḥijra (حجرة)"],
-      ["كبير", "kbīr", "big (masculine)", "كبير", "feminine: kbīra; people (plural): kbār; Kuwait: chbīr"],
+      ["كبير", "kbīr", "big (masculine)", "كبير", "feminine: kbīra; people (plural): kbār; also chbīr (UAE and Kuwait)"],
       ["صغير", "ṣghīr", "small (masculine)", "صغير", "feminine: ṣghīra; people (plural): ṣghār"],
       ["يديد", "yidīd", "new (masculine)", "جديد", "feminine: yidīda; you'll see written جديد"],
       ["قديم", "gadīm", "old (for things, masculine)", "قديم", "feminine: gadīma; for people say kbīr: rayyāl kbīr, an old man"],

@@ -28,7 +28,7 @@
    [
     "B",
     "باكر عندي موعد. بعد باكر؟",
-    "bāchir ʿindi mōʿid. baʿd bāchir?",
+    "bāchir ʿindi mawʿid. baʿd bāchir?",
     "Tomorrow I've got an appointment. The day after?"
    ],
    [
@@ -75,7 +75,7 @@
    ],
    [
     "عندي موعد",
-    "ʿindi mōʿid",
+    "ʿindi mawʿid",
     "I've got an appointment",
     "عندي موعد",
     ""
@@ -324,7 +324,7 @@
   "stage": 1,
   "title": "Come here, everyone!",
   "goal": "Call Sēf and his friends together for a photo at Global Village: come, come closer, look, smile, let me, let's.",
-  "tip": "To a group, add -u to the man's form: taʿāl → taʿālu, shūf → shūfu, garrib → garrbu (come closer; the i drops). 'Let' is khallni / khallna to a man: khallni ashūf (let me see), khallna nrūḥ (let's go). khallīni and khallīna work for a man or a woman; to a group khallūni. The next verb has no 'to'.",
+  "tip": "To a group, add -u to the man's form: taʿāl → taʿālu, shūf → shūfu, garrib → garrbu (come closer; the i drops). 'Let' to a man is khallni / khallna: khallni ashūf (let me see), khallna nrūḥ (let's go); to a woman khallīni, khallīna; to a group khallūni. The next verb has no 'to'.",
   "grammar": "Imperative to a group: add -u (taʿālu, shūfu); khallni",
   "dialogue": [
    [
@@ -384,7 +384,7 @@
     "khallni",
     "let me (to a man)",
     "دعني",
-    "also khallīni (خليني), to a man or a woman; to a group: khallūni (خلوني); khallni ashūf = let me see"
+    "to a woman: khallīni (خليني); to a group: khallūni (خلوني); you'll also hear khallīni to men (U); khallni ashūf = let me see"
    ],
    [
     "أصور",
@@ -419,7 +419,7 @@
     "khallna",
     "let's (to a man)",
     "دعنا",
-    "also khallīna (خلينا), to a man or a woman; to a group: khallūna (خلونا); khallna nrūḥ = let's go"
+    "to a woman: khallīna (خلينا); to a group: khallūna (خلونا); you'll also hear khallīna to men (U); khallna nrūḥ = let's go"
    ]
   ],
   "culture": "In public places, ask before you photograph people and keep women and families you don't know out of your photos. In the UAE, taking or sharing photos of people without their consent is also against the law, with heavy fines. Many families prefer that photos of their women aren't taken or shared. (Needs a native check.)"
@@ -957,13 +957,13 @@
   "stage": 1,
   "title": "Maybe, because…",
   "goal": "Answer Sēf's invitation to the desert: maybe, why, because, why not.",
-  "tip": "Give a reason with ʿashān (because) and a whole sentence: ʿashān ʿindi imtiḥān (because I've got an exam). Invitations use tabi + verb: tabi tyī? (do you want to come?). Not sure yet? yimkin (maybe), mub akīd (not sure).",
+  "tip": "Give a reason with ʿashān (because) and a whole sentence: ʿashān ʿindi imtiḥān (because I've got an exam). Invitations use tabi + verb: tabi tiyi? (do you want to come?). Not sure yet? yimkin (maybe), mub akīd (not sure).",
   "grammar": "Want + verb: tabi tyī; because: ʿashān",
   "dialogue": [
    [
     "A",
     "تبي تيي البر ويانا يوم الجمعة؟",
-    "tabi tyī l-barr wiyyāna yōm il-jumʿa?",
+    "tabi tiyi l-barr wiyyāna yōm il-jumʿa?",
     "Do you want to come to the desert with us on Friday?"
    ],
    [
@@ -1000,10 +1000,10 @@
   "items": [
    [
     "تبي تيي؟",
-    "tabi tyī?",
+    "tabi tiyi?",
     "do you want to come? (to a man)",
     "هل تريد أن تأتي؟",
-    "to a woman: tabīn tyīn? (تبين تيين؟); you'll see written تجي"
+    "to a woman: tabīn tiyīn? (تبين تيين؟); you'll see written تجي"
    ],
    [
     "يمكن",

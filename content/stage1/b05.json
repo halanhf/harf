@@ -664,7 +664,7 @@
    [
     "B",
     "ما أسمعج عدل. انتي داخل المول؟",
-    "ma asmaʿich ʿidil. inti dākhil il-mōl?",
+    "ma asmaʿich ʿadil. inti dākhil il-mōl?",
     "I can't hear you properly. Are you inside the mall?"
    ],
    [
@@ -725,10 +725,10 @@
    ],
    [
     "عدل",
-    "ʿidil",
+    "ʿadil",
     "properly, right; straight",
     "جيدًا",
-    "ma asmaʿak ʿidil = I can't hear you properly"
+    "ma asmaʿak ʿadil = I can't hear you properly"
    ],
    [
     "قريب منك",
@@ -938,7 +938,7 @@
   "stage": 1,
   "title": "A1 exit: where I live and who I know",
   "goal": "Tell Umm Sēf where you live, who you live with and what the area is like",
-  "tip": "sākin 'living' works like rāyiḥ: a man says sākin, a woman sākna. Adjectives agree too: il-manṭiga hādya 'the area's quiet', il-jīrān ṭayybīn 'the neighbours are nice'. Endings: b-rōḥak 'on your own', aʿarfah 'I know him', aʿarfhum 'I know them'.",
+  "tip": "sākin 'living' works like rāyiḥ: a man says sākin, a woman sākna. Adjectives agree too: il-manṭiga hādya 'the area's quiet', il-jīrān ṭayybīn 'the neighbours are nice'. Endings: b-rūḥak 'on your own', aʿarfah 'I know him', aʿarfhum 'I know them'.",
   "grammar": "A1 exit: describe where I live and people I know",
   "dialogue": [
    [
@@ -956,7 +956,7 @@
    [
     "A",
     "ساكن بروحك؟",
-    "sākin b-rōḥak?",
+    "sākin b-rūḥak?",
     "Do you live on your own?"
    ],
    [

@@ -43,7 +43,7 @@ Names carry origin, so reviewers can check each line against its speaker.
 | Sēf | سيف | Emirati, Dubai | man, 22 | university friend | friends: yā rayyāl, khēba, English loans | s1u017 |
 | Maryam | مريم | Emirati, Dubai | woman, 26 | colleague at the internship | polite, neutral; B practises -ich / -īn with her | s1u018 |
 | Umm Sēf | أم سيف | Emirati, Dubai | woman, ~50 | Sēf's mother | respectful | s1u021 |
-| Bū Rāshid | بو راشد | Emirati, Sharjah | man, ~60 | Sēf's uncle, majlis host | respectful: yā ʿammi, ṭawīl il-ʿumr | named in s1u021; host from s2u063 |
+| Bū Rāshid | بو راشد | Emirati, Sharjah | man, ~60 | Sēf's uncle, majlis host | respectful: yā ʿammi, ṭawīl il-ʿumr | first named in stage 2 (no stage 1 unit names him); host from s2u063 |
 | Rāshid | راشد | Emirati, Sharjah | man, 17 | Bū Rāshid's son | youth speech, slang | s4u090 |
 | Fahad | فهد | Kuwaiti, Kuwait City | man, 24 | Sēf's friend; Kuwaiti forms | friends | s2u027 |
 | Nūra | نورة | Kuwaiti | woman, 28 | Fahad's sister, met on the Kuwait trip | polite | s3u090 |
