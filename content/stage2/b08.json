@@ -121,8 +121,8 @@
   "dialogue": [
    [
     "A",
-    "باكر بنتغدى كلنا سوا. ودك تيي؟",
-    "bāchir binitghadda killna sawa. widdak tiyi?",
+    "باكر بنتغدى كلنا مع بعض. ودك تيي؟",
+    "bāchir binitghadda killna maʿa baʿaẓ. widdak tiyi?",
     "Tomorrow we're all having lunch together. Would you like to come?"
    ],
    [
@@ -152,7 +152,7 @@
    [
     "B",
     "يعني هيه! بس يمكن أتأخر. تطرشين لي العنوان؟",
-    "yaʿni hē! bas yimkin atʼakhkhar. tṭarrishīn-li l-ʿinwān?",
+    "yaʿni hē! bas yimkin atʼakhkhar. tṭarrshīn-li l-ʿinwān?",
     "It means yes! But I might be late. Will you send me the address?"
    ],
    [
@@ -214,7 +214,7 @@
    ],
    [
     "تطرشين لي",
-    "tṭarrishīn-li",
+    "tṭarrshīn-li",
     "will you send me (to a woman)",
     "هل ترسلين لي",
     "to a man: tṭarrish-li (تطرش لي)"
@@ -234,7 +234,7 @@
   "stage": 2,
   "title": "Let's go to the desert",
   "goal": "Suggest a desert trip to Sēf, ask if you can bring a friend, and ask to come back early",
-  "tip": "khal + a we-verb is a quick 'let's': khal nrūḥ 'let's go', khal nshūf 'let's see'. It means the same as khallna nrūḥ. yṣīr? asks 'is it OK?': yṣīr ayīb rbīʿi? 'can I bring my friend?'. The answer is yṣīr 'it's fine' or ma yṣīr 'no way'.",
+  "tip": "khal + a we-verb is a quick 'let's': khal nrūḥ 'let's go', khal nshūf 'let's see'. It means the same as khallna nrūḥ. yṣīr? asks 'is it OK?': yṣīr ayīb rbīʿi? 'can I bring my friend?'. The answer is yṣīr 'it's fine' or ma yṣīr 'no, it's not OK'.",
   "grammar": "khal + verb 'let's'; yṣīr? 'is it OK?'",
   "dialogue": [
    [
@@ -263,9 +263,9 @@
    ],
    [
     "A",
-    "أبشر! في مكان في السيارة",
-    "abshir! fī makān fi s-sayyāra",
-    "Sure thing! There's room in the car."
+    "يصير! أكيد، في مكان في السيارة",
+    "yṣīr! akīd, fī makān fi s-sayyāra",
+    "Sure, of course! There's room in the car."
    ],
    [
     "B",
@@ -275,9 +275,9 @@
    ],
    [
     "A",
-    "ما يصير! خل نشوف، يمكن نرجع الساعة عشر",
-    "ma yṣīr! khal nshūf, yimkin nirjaʿ is-sāʿa ʿashr",
-    "No way! Let's see, maybe we'll be back at ten."
+    "ما يصير! بس ما عليه، خل نشوف. يمكن الساعة عشر",
+    "ma yṣīr! bas ma ʿalēh, khal nshūf. yimkin is-sāʿa ʿashr",
+    "No way! But OK, let's see. Maybe at ten."
    ]
   ],
   "items": [
@@ -312,9 +312,9 @@
    [
     "ما يصير",
     "ma yṣīr",
-    "no way, that won't do; it's not right",
+    "no, it's not OK; that won't do",
     "لا يصح",
-    ""
+    "with friends it can also be a joking 'no way!'"
    ],
    [
     "والله فكرة",
@@ -374,9 +374,9 @@
    ],
    [
     "B",
-    "أوكي. والشباب دوم يشربون كرك بعد الشغل",
-    "ōkē. w ish-shabāb dōm yishrabūn karak baʿd ish-shughul",
-    "OK. And the guys always have karak after work."
+    "أوكي. وبعد الشغل نشرب كرك مع الشباب؟",
+    "ōkē. w baʿd ish-shughul nishrab karak maʿa sh-shabāb?",
+    "OK. And after work, shall we have karak with the guys?"
    ],
    [
     "A",
@@ -424,7 +424,7 @@
     "khallūna niṭlaʿ",
     "let's head out, let's go out (to a group)",
     "لنخرج",
-    ""
+    "to one man: khallna niṭlaʿ; to one woman: khallīna niṭlaʿ"
    ],
    [
     "نبدا",
@@ -491,9 +491,9 @@
    ],
    [
     "B",
-    "على هالخشم! يصير أييب فهد ويانا؟",
-    "ʿala hal-khashm! yṣīr ayīb Fahad wiyyāna?",
-    "With pleasure! May I bring Fahad with us?"
+    "على هالخشم! يصير أييب فهد وياي؟",
+    "ʿala hal-khashm! yṣīr ayīb Fahad wiyyāy?",
+    "With pleasure! May I bring Fahad with me?"
    ],
    [
     "A",
@@ -532,9 +532,9 @@
    [
     "أبشر طال عمرك",
     "abshir ṭāl ʿumrak",
-    "consider it done, sir (respectful)",
+    "consider it done, sir (respectful) (to a man)",
     "",
-    "to an elder or someone senior"
+    "to a woman: abshiri ṭāl ʿumrich (أبشري طال عمرج); to an elder or someone senior"
    ],
    [
     "ودنا",
@@ -679,7 +679,7 @@
   "dialogue": [
    [
     "A",
-    "شوف هذا! أخذ مكاني! ما صارت!",
+    "شوف هذا! خذ مكاني! ما صارت!",
     "shūf hādha! khadh makāni! ma ṣārat!",
     "Look at him! He took my spot! This is too much!"
    ],
@@ -771,11 +771,11 @@
     ""
    ],
    [
-    "ما نجحت",
-    "ma nijaḥt",
-    "I didn't pass; you didn't pass (to a man)",
-    "لم أنجح",
-    "to a woman: ma nijaḥti (ما نجحتي)"
+    "ما بعصب",
+    "ma baʿaṣṣib",
+    "I won't get angry",
+    "لن أغضب",
+    "a woman says the same; to a man: ma bitʿaṣṣib? = you won't get angry?"
    ],
    [
     "صح كلامك",
@@ -848,9 +848,9 @@
    [
     "خايف من",
     "khāyif min",
-    "scared of",
+    "scared of (a man)",
     "خائف من",
-    ""
+    "a woman: khāyfa min (خايفة من)"
    ],
    [
     "كنت خايف",
@@ -876,9 +876,9 @@
    [
     "وايد مستانس",
     "wāyid mistānis",
-    "really happy, so happy",
+    "really happy, so happy (a man)",
     "سعيد جدًا",
-    ""
+    "a woman: wāyid mistānsa (وايد مستانسة)"
    ],
    [
     "شو قال؟",
@@ -890,9 +890,9 @@
    [
     "خايف علي",
     "khāyif ʿalay",
-    "worried about me",
+    "worried about me (a man)",
     "قلق علي",
-    "khāyif ʿalēk = worried about you"
+    "a woman: khāyfa ʿalay (خايفة علي); khāyif ʿalēk = worried about you"
    ]
   ]
  },
@@ -936,9 +936,9 @@
    ],
    [
     "B",
-    "خيبة! يلا، خلنا ناكل قبل لا يبرد",
-    "khēba! yalla, khallna nākil gabil la yibrad",
-    "Seriously?! Come on, let's eat before it gets cold."
+    "خيبة! يلا، خلني آكل قبل لا يبرد",
+    "khēba! yalla, khallni ākil gabil la yibrad",
+    "Seriously?! Come on, let me eat before it gets cold."
    ],
    [
     "A",
