@@ -27,9 +27,9 @@
    ],
    [
     "B",
-    "عادي. حصة، تذكريني؟ أنا سالم",
-    "ʿādi. Ḥiṣṣa, tidhkrīni? ana Sālim",
-    "That's fine. Ḥiṣṣa, do you remember me? I'm Sālim."
+    "عادي. هلا حصة! أنا سالم",
+    "ʿādi. hala Ḥiṣṣa! ana Sālim",
+    "That's fine. Hi, Ḥiṣṣa! I'm Sālim."
    ],
    [
     "A",
@@ -103,7 +103,7 @@
     "il-kill ygūl-lah",
     "everyone calls him (a name)",
     "الجميع يناديه",
-    "everyone calls her: il-kill ygūl-lha (الكل يقول لها) (recognise)"
+    "everyone calls her: il-kill ygūl-lha (الكل يقول لها)"
    ],
    [
     "وايد رسمي",
@@ -130,8 +130,7 @@
   "task": "This week: search YouTube for «مسلسل إماراتي» (Emirati series) and watch one family scene. Listen for pet names (like Ḥammūd or Maryūm) and for yā ʿammi, yā khālti, yā wildi. Write down three, and who says each one to whom. Within a minute you should hear شو / مب; if you hear سوف, ليس or هل all the time, it's fuṣḥā: pick another clip.",
   "receptive": [
    0,
-   4,
-   5
+   4
   ]
  },
  {
@@ -186,9 +185,9 @@
    ],
    [
     "A",
-    "في ناس ما عندهم عيال وعندهم اسم. خالد مثلا يقولون له بو وليد",
-    "fī nās ma ʿindahum ʿyāl w ʿindahum ism. Khālid mathalan ygūlūn-lah Bū Walīd",
-    "Some people have no children and still get one. Any Khālid, for example, gets called Bū Walīd."
+    "في ناس ما عندهم عيال، وبعد يقولون لهم بو فلان. خالد مثلا يقولون له بو وليد",
+    "fī nās ma ʿindahum ʿyāl, w baʿad ygūlūn-lhum bū fulān. Khālid mathalan ygūlūn-lah Bū Walīd",
+    "Some people have no children and still get called Bū So-and-so. A Khālid, for example, often gets called Bū Walīd."
    ],
    [
     "B",
@@ -228,7 +227,7 @@
    [
     "على اسم ولده",
     "ʿala ism wildah",
-    "after his son, named after his son",
+    "by his son's name (of what a man is called)",
     "باسم ابنه",
     "after her son: ʿala ism wild-ha (على اسم ولدها) (recognise)"
    ],
@@ -317,7 +316,7 @@
     "B",
     "والبنت اللي في الصيدلية؟",
     "w il-bint illi fi ṣ-ṣēdaliyya?",
-    "And the girl at the pharmacy?"
+    "And the woman at the pharmacy?"
    ],
    [
     "A",
@@ -371,7 +370,7 @@
     "yā shēkh",
     "sir (to a sheikh)",
     "يا شيخ",
-    "to a sheikha: yā shēkha (يا شيخة)"
+    "to a sheikha: yā shēkha (يا شيخة); you'll also hear yā shēkh! among friends as 'come on! no way!'"
    ],
    [
     "يا الحبيب",
@@ -392,7 +391,7 @@
     "ish-shyūkh",
     "sheikhs, the sheikhs",
     "الشيوخ",
-    "one: shēkh (شيخ)"
+    "one: shēkh (شيخ) (recognise)"
    ],
    [
     "على قد الشغل",
@@ -411,8 +410,8 @@
   ],
   "culture": "How you address someone shows respect. Elders and strangers get yā ʿammi or ṭāl ʿumrak; yā rayyāl is for friends, and saying it to an elder or in a meeting comes across as very rude. With young people you know, English words and bro are fine; with elders, keep your Arabic unmixed.",
   "receptive": [
-   3,
    4,
+   6,
    7
   ]
  },
@@ -421,8 +420,8 @@
   "stage": 4,
   "title": "Yā salām! Shkubur-ha!",
   "goal": "Sēf turns up in his brother's new car: show how impressed you are, and how lucky his brother is",
-  "tip": "To say 'how big!' or 'how lovely!', put sh- on a noun with an ending: shkubur-ha! 'how big it (f.) is!', shḥalātah! 'how lovely he/it is!'. Add yā salām! 'wow!' and yā ḥaẓẓah! 'lucky him!'.",
-  "grammar": "exclamatives: yā salām!, sh- + noun + ending (shkubur-ha!, shḥalāt-ha!), yā ḥaẓẓah!",
+  "tip": "To say 'how big!' or 'how lovely!', put sh- on a noun with an ending: shkuburha! 'how big it (f.) is!', shḥalātah! 'how lovely he/it is!'. Add yā salām! 'wow!' and yā ḥaẓẓah! 'lucky him!'.",
+  "grammar": "exclamatives: yā salām!, sh- + noun + ending (shkuburha!, shḥalāt-ha!), yā ḥaẓẓah!",
   "dialogue": [
    [
     "A",
@@ -433,13 +432,13 @@
    [
     "B",
     "يا سلام! شكبرها!",
-    "yā salām! shkubur-ha!",
+    "yā salām! shkuburha!",
     "Wow! How big it is!"
    ],
    [
     "A",
     "وايد حلوة، صح؟ وداخلها أحلى",
-    "wāyid ḥilwa, ṣaḥḥ? w dākhil-ha aḥla",
+    "wāyid ḥilwa, ṣaḥḥ? w dākhilha aḥla",
     "Really nice, isn't it? And it's even nicer inside."
    ],
    [
@@ -451,14 +450,14 @@
    [
     "A",
     "الله يبارك فيك! بس لا تسألني كم دفع فيها، ولا تسأله هو بعد!",
-    "allāh ybārik fīk! bas la tisʼalni cham dafaʿ fīha, wala tisʼalah huwa baʿad!",
+    "allāh ybārik fīk! bas la tisʼalni cham difaʿ fīha, wala tisʼalah huwa baʿad!",
     "Thanks! But don't ask me how much he paid for it, and don't ask him either!"
    ],
    [
     "B",
-    "لا تقول! أكيد وايد",
-    "la tgūl! akīd wāyid",
-    "Don't tell me! It must be a lot."
+    "أكيد وايد! ما بسأله",
+    "akīd wāyid! ma basʼalah",
+    "It must be a lot! I won't ask him."
    ],
    [
     "A",
@@ -468,9 +467,9 @@
    ],
    [
     "B",
-    "يا حظه! سيارتي صغيرة وقديمة",
-    "yā ḥaẓẓah! sayyārti ṣghīra w gadīma",
-    "Lucky him! My car's small and old."
+    "لا تقول! كل يوم؟ يا حظه! سيارتي قديمة",
+    "la tgūl! kill yōm? yā ḥaẓẓah! sayyārti gadīma",
+    "No way! Every day? Lucky him! My car's old."
    ],
    [
     "A",
@@ -495,7 +494,7 @@
    ],
    [
     "شكبرها!",
-    "shkubur-ha!",
+    "shkuburha!",
     "how big it (f.) is!",
     "ما أكبرها!",
     "of a masculine thing: shkubrah! (شكبره)"
@@ -526,7 +525,7 @@
     "shkuthur",
     "how (very)…! so much! (exclaiming)",
     "كم",
-    "before a sentence: shkuthur huwa mistānis! 'he's so happy!'; to ask a price, say cham (كم) (recognise)"
+    "before a sentence: shkuthur huwa mistānis! 'he's so happy!'; to ask a price, say cham (كم)"
    ],
    [
     "لا تقول!",
@@ -540,7 +539,7 @@
     "mistānis ʿalēha",
     "he's really happy with it (f.)",
     "سعيد بها",
-    "a woman: mistānsa ʿalēha (مستانسة عليها)"
+    "a woman: mistānsa ʿalēha (مستانسة عليها) (recognise)"
    ],
    [
     "حليله!",
@@ -551,7 +550,6 @@
    ]
   ],
   "receptive": [
-   5,
    7,
    8
   ]
@@ -567,7 +565,7 @@
    [
     "A",
     "هلا والله! حياك الله يا ولدي، تفضل خذ راحتك",
-    "hala wallāh! ḥayyāk allāh yā wildi, tfaẓẓal khidh rāḥtak",
+    "hala wallāh! ḥayyāk allāh yā wildi, tfaẓẓal khudh rāḥtak",
     "Hello! Welcome, son, come in and make yourself at home."
    ],
    [
@@ -590,9 +588,9 @@
    ],
    [
     "A",
-    "الله يسلمها! يا حليلها. متى بتزورنا؟",
-    "allāh ysallimha! yā ḥalīlha. mita bitzūrna?",
-    "God keep her! Bless her. When's she going to visit us?"
+    "الله يسلمها! يا حليلها. متى بتزورنا مرة ثانية؟",
+    "allāh ysallimha! yā ḥalīlha. mita bitzūrna marra thānya?",
+    "God keep her! Bless her. When's she going to visit us again?"
    ],
    [
     "B",
@@ -631,7 +629,7 @@
     "yā Umm Sēf",
     "Umm Sēf! (respectful, to a woman by her son's name)",
     "يا أم سيف",
-    "any woman: yā umm + her son's name (يا أم …)"
+    "any woman: yā umm + her son's name (يا أم …); warmer still: yā khālti (يا خالتي), which you know"
    ],
    [
     "شحال أمك؟",
@@ -663,10 +661,10 @@
    ],
    [
     "خذ راحتك",
-    "khidh rāḥtak",
+    "khudh rāḥtak",
     "make yourself at home, make yourself comfortable (to a man)",
     "خذ راحتك",
-    "to a woman: khidhi rāḥtich (خذي راحتج) (recognise)"
+    "to a woman: khudhi rāḥtich (خذي راحتج) (recognise)"
    ],
    [
     "تفتح النفس",
@@ -693,7 +691,7 @@
   "id": "s4u035",
   "stage": 4,
   "title": "He must be in a meeting",
-  "goal": "At the office, help Maryam guess why the manager hasn't answered her: lāzim ykūn, yimkin kān, la ykūn…?",
+  "goal": "At the office, help Maryam guess why the manager, Bū Saʿīd, hasn't answered her: lāzim ykūn, yimkin kān, la ykūn…?",
   "tip": "Guess with ykūn and kān: lāzim ykūn fi ijtimāʿ 'he must be in a meeting', yimkin kān mashghūl 'maybe he was busy'. A worried guess: la ykūn zaʿlān? 'he isn't cross, is he?'. Future: biykūn mitfahhim 'he'll be understanding'.",
   "grammar": "kān / ykūn strings: lāzim ykūn, yimkin kān, la ykūn…?, biykūn + participle",
   "dialogue": [
@@ -923,9 +921,9 @@
    [
     "أونه",
     "awinna",
-    "as if! yeah, right! (mocking what someone claims) (UAE)",
+    "as if! yeah, right! (mocking what someone claims) (UAE) (friends only)",
     "",
-    "friends only"
+    ""
    ],
    [
     "كن الشارع حقه",
@@ -946,7 +944,7 @@
     "ma rgadt",
     "you didn't sleep (to a man); I didn't sleep (UAE)",
     "لم تنم",
-    "to a woman: ma rgadti (ما رقدتي); everywhere: ma nimt (ما نمت)"
+    "to a woman: ma rgadti (ما رقدتي); everywhere: ma nimt (ما نمت) (recognise)"
    ],
    [
     "أسوق شوي شوي",
@@ -974,7 +972,7 @@
   "stage": 4,
   "title": "I reckon I passed",
   "goal": "After the exam, tell Sēf what you'd thought, what you expect, and what you don't believe: atwaggaʿ, ʿala bāli, ma aʿtagid",
-  "tip": "Gulf has a word for each kind of thinking: atwaggaʿ inn 'I expect', aẓunn 'I think', aḥiss 'I feel', ma aʿtagid 'I don't believe so', and ʿala bāli or ẓannēt 'I thought (but I was wrong)': ʿala bāli biykūn sahil.",
+  "tip": "Gulf has a word for each kind of thinking: atwaggaʿ inn 'I expect' (you know titwaggaʿ?), aẓunn 'I think', aḥiss 'I feel', ma aʿtagid 'I don't believe so', and ʿala bāli or ẓannēt 'I thought (but I was wrong)': ʿala bāli biykūn sahil.",
   "grammar": "\"I think\" expressions: atwaggaʿ inn, ʿala bāli / ẓannēt (thought wrongly), ma aʿtagid. Recycle: aẓunn, aḥiss, titwaggaʿ",
   "dialogue": [
    [
@@ -1003,8 +1001,8 @@
    ],
    [
     "A",
-    "عادي! وأنا ظنيت انت دوم الأول",
-    "ʿādi! w ana ẓannēt inta dōm il-awwal",
+    "عادي! وأنا ظنيت إنك دوم الأول",
+    "ʿādi! w ana ẓannēt innak dōm il-awwal",
     "That's OK! And I thought you always came top."
    ],
    [
@@ -1158,9 +1156,9 @@
    ],
    [
     "A",
-    "فكرة حلوة! بس لا نقول لهم إنهم بيشوفون بعض",
-    "fikra ḥilwa! bas la ngūl-lhum innhum biyshūfūn baʿaẓ",
-    "Good idea! But let's not tell them they'll be seeing each other."
+    "فكرة حلوة! بس ما بنقول لهم إنهم بيشوفون بعض",
+    "fikra ḥilwa! bas ma bingūl-lhum innhum biyshūfūn baʿaẓ",
+    "Good idea! But we won't tell them they'll be seeing each other."
    ],
    [
     "B",
