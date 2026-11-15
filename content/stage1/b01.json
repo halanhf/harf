@@ -1,228 +1,1081 @@
 [
-{"id":"s1u017","stage":1,
-"title":"Hi Sēf, what's new?",
-"goal":"Greet a friend the Emirati way, answer 'what's new?', and ask where someone is.",
-"grammar":"Independent pronouns: ana, inta, huwa; no word for 'is'",
-"tip":"Gulf Arabic has no 'is': huwa fi l-bēt = he (is) at home; ana b-khēr = I'm fine. So far: ana (I), inta (you, to a man), inti (you, to a woman), and now huwa (he). Emiratis ask shḥālak?; your shlōnak? is just as good.",
-"dialogue":[
-["A","هلا والله! شحالك؟","hala wallāh! shḥālak?","Hey there! How are you?"],
-["B","هلا بك. بخير، الله يسلمك","hala bik. b-khēr, allāh ysallmak","Hi. Fine, God keep you."],
-["A","الحمد لله. شو اليديد؟","il-ḥamdu lillāh. shu l-yidīd?","Good to hear. What's new?"],
-["B","ما شي. وين أحمد؟","ma shay. wēn Aḥmad?","Not much. Where's Ahmed?"],
-["A","هو في البيت اليوم","huwa fi l-bēt il-yōm","He's at home today."],
-["B","والله؟ طيب، نشوفه بعدين","wallāh? ṭayyib, nshūfah baʿdēn","Really? OK, we'll see him later."]],
-"items":[
-["شحالك؟","shḥālak?","how are you? (to a man)","كيف حالك؟","to a woman: shḥālich (شحالج); shlōnak, which you know, is just as good"],
-["هلا بك","hala bik","hi to you too (reply to hala)","أهلًا بك","to a woman: hala bich (هلا بج)"],
-["بخير","b-khēr","fine, well","بخير","the usual answer: b-khēr, allāh ysallmak"],
-["شو اليديد؟","shu l-yidīd?","what's new?","ما الجديد؟","reply: ma shay"],
-["ما شي","ma shay","nothing much (reply to shu l-yidīd?)","لا شيء",""],
-["هو","huwa","he","هو","Kuwait: ihu (اهو)"],
-["في البيت","fi l-bēt","at home","في البيت",""],
-["والله؟","wallāh?","really?","حقًا؟","without the question mark it means 'honestly, I swear'"],
-["طيب","ṭayyib","OK, all right","حسنًا","of a person: kind, nice (rayyāl ṭayyib)"]]},
-
-{"id":"s1u018","stage":1,
-"title":"Good morning, Maryam",
-"goal":"Greet a woman colleague, ask how she is with the -ich form, and ask about another colleague.",
-"grammar":"Pronouns: inti (you, to a woman) and hiya (she); no copula",
-"tip":"Speaking to a woman, 'you' endings change: shḥālak → shḥālich, mashkūr → mashkūra. hiya = she, again with no 'is': hiya fi ijtimāʿ = she's in a meeting. hē is the Emirati 'yes'; your ī is fine too.",
-"culture":"Handshakes between men and women vary. Many Emirati women don't shake hands with men, so let a woman offer her hand first; if she doesn't, a smile and the greeting are enough, and some men touch their chest. Men usually shake hands with every man present. (Needs a native check.)",
-"dialogue":[
-["A","صباح الخير!","ṣabāḥ il-khēr!","Good morning!"],
-["B","صباح النور. شحالج؟","ṣabāḥ in-nūr. shḥālich?","Good morning. How are you?"],
-["A","بخير، الله يسلمك. وانت شخبارك؟","b-khēr, allāh ysallmak. w inta shakhbārak?","Fine, God keep you. And how are things with you?"],
-["B","زين الحمد لله. سارة في المكتب؟","zēn il-ḥamdu lillāh. Sāra fi l-maktab?","Good, thank God. Is Sara in the office?"],
-["A","هيه، بس هي في اجتماع الحين","hē, bas hiya fi ijtimāʿ il-ḥīn","Yes, but she's in a meeting now."],
-["B","طيب، مشكورة","ṭayyib, mashkūra","OK, thanks."]],
-"items":[
-["صباح النور","ṣabāḥ in-nūr","good morning (the reply)","صباح النور","answers ṣabāḥ il-khēr"],
-["شحالج؟","shḥālich?","how are you? (to a woman)","كيف حالكِ؟","to a man: shḥālak; shlōnich works too"],
-["شخبارك؟","shakhbārak?","how are things? (to a man)","ما أخبارك؟","to a woman: shakhbārich (شخبارج); reply: zēn il-ḥamdu lillāh"],
-["هي","hiya","she","هي","Kuwait: ihi (اهي)"],
-["هيه","hē","yes","نعم","Kuwait: ēh (إيه); your ī (إي) is fine everywhere"],
-["المكتب","il-maktab","the office","المكتب",""],
-["في اجتماع","fi ijtimāʿ","in a meeting","في اجتماع",""],
-["مشكورة","mashkūra","thanks (to a woman)","شكرًا","to a man: mashkūr"]]},
-
-{"id":"s1u019","stage":1,
-"title":"We're students here",
-"goal":"Greet two students at the university, say who 'we' are, and ask a group questions.",
-"grammar":"Pronouns: niḥin (we) and intu (you, to a group)",
-"tip":"niḥin = we, intu = you (to a group), still with no 'is': niḥin ṭullāb = we're students. A verb to a group ends in -ūn: intu tidrisūn = you (all) study. as-salāmu ʿalaykum already greets everyone present.",
-"dialogue":[
-["B","السلام عليكم","as-salāmu ʿalaykum","Peace be upon you."],
-["A","وعليكم السلام، هلا والله","wa ʿalaykum is-salām, hala wallāh","And upon you peace. Hi there."],
-["B","هلا فيك. انتو تدرسون هني؟","hala fīk. intu tidrisūn hni?","Hi. Do you (two) study here?"],
-["A","هيه، نحن طلاب هندسة. وانت؟","hē, niḥin ṭullāb handasa. w inta?","Yes, we're engineering students. And you?"],
-["B","أنا بعد. انتو من دبي؟","ana baʿad. intu min Dbayy?","Me too. Are you from Dubai?"],
-["A","لا، نحن من العين، بس ندرس هني","la, niḥin min il-ʿĒn, bas nidris hni","No, we're from Al Ain, but we study here."]],
-"items":[
-["هلا فيك","hala fīk","hi to you too (reply to hala)","أهلًا بك","to a woman: hala fīch (هلا فيج)"],
-["انتو","intu","you (to a group)","أنتم",""],
-["تدرسون","tidrisūn","you study (to a group)","تدرسون","to one man: tidris; to one woman: tidrisīn"],
-["نحن","niḥin","we","نحن","Kuwait: iḥna (إحنا)"],
-["طلاب","ṭullāb","students","طلاب","one: ṭālib (a man), ṭālba (a woman)"],
-["هندسة","handasa","engineering","هندسة",""],
-["أنا بعد","ana baʿad","me too","وأنا أيضًا","baʿad after a word means 'too'"],
-["ندرس","nidris","we study","ندرس",""]]},
-
-{"id":"s1u020","stage":1,
-"title":"Welcome! The guys are in the majlis",
-"goal":"Arrive at Sēf's house, answer a warm welcome, and pass greetings on to someone who isn't there.",
-"grammar":"Pronoun hum (they); the full set ana, inta, inti, huwa, hiya, niḥin, intu, hum",
-"tip":"hum = they, for men, women or a mix: hum fi l-majlis = they're in the majlis. The full set: ana, inta, inti, huwa, hiya, niḥin, intu, hum. ysallim ʿalēk = he says hi to you; for 'she', tsallim ʿalēk.",
-"culture":"When you walk into a majlis, say as-salāmu ʿalaykum to the whole room. The men there usually stand, and the newcomer goes round shaking hands, often starting from the right or with the oldest man. (Needs a native check.)",
-"dialogue":[
-["A","مرحبا الساع! هلا وغلا","marḥaba is-sāʿ! hala w ghala","Welcome, welcome! Great to see you."],
-["B","هلا والله. شحالك؟","hala wallāh. shḥālak?","Hi there. How are you?"],
-["A","بخير. تفضل، الشباب في المجلس","b-khēr. tfaẓẓal, ish-shabāb fi l-majlis","Fine. Come in, the guys are in the majlis."],
-["B","منو؟ أحمد وحمد؟","minu? Aḥmad w Ḥamad?","Who? Ahmed and Hamad?"],
-["A","هيه، هم كلهم هني. وخالد يسلم عليك","hē, hum killhum hni. w Khālid ysallim ʿalēk","Yes, they're all here. And Khalid says hi."],
-["B","الله يسلمه. سلم عليه","allāh ysallmah. sallim ʿalēh","God keep him. Say hi to him from me."]],
-"items":[
-["مرحبا الساع","marḥaba is-sāʿ","welcome! (to a guest arriving, UAE)","","reply: hala wallāh"],
-["هلا وغلا","hala w ghala","welcome! great to see you (warm)","",""],
-["الشباب","ish-shabāb","the guys, the young men","الشباب",""],
-["المجلس","il-majlis","the majlis (the room where guests sit)","المجلس",""],
-["هم","hum","they","هم","for men, women or a mix"],
-["كلهم","killhum","all of them","كلهم",""],
-["يسلم عليك","ysallim ʿalēk","(he) says hi to you (to a man)","يسلم عليك","to a woman: ysallim ʿalēch; she says hi: tsallim ʿalēk"],
-["الله يسلمه","allāh ysallmah","God keep him (reply when he sends greetings)","","for a woman: allāh ysallimha"],
-["سلم عليه","sallim ʿalēh","say hi to him from me (to a man)","سلم عليه","to a woman: sallmi ʿalēh; for her: sallim ʿalēha"]]},
-
-{"id":"s1u021","stage":1,
-"title":"Meeting Sēf's mum",
-"goal":"Greet Sēf's mother respectfully and answer questions about your family with 'my' and 'your'.",
-"grammar":"Possessive endings -i (my), -ak (your, m.), -ich (your, f.)",
-"tip":"Add an ending to a noun for 'my' and 'your': ahl → ahli (my family), ahlak (your family, to a man), ahlich (to a woman). After a vowel, 'my' is -y: ubū → ubūy (my dad). walad (son) shortens: wildi (my son), wildich (your son, to a woman).",
-"dialogue":[
-["A","هلا بك، حياك الله","hala bik, ḥayyāk allāh","Hello, welcome."],
-["B","الله يحييج. شحالج؟","allāh yḥayyīch. shḥālich?","God bless you. How are you?"],
-["A","بخير الحمد لله. وأهلك؟ عساهم بخير؟","b-khēr il-ḥamdu lillāh. w ahlak? ʿasāhum b-khēr?","Fine, thank God. And your family? I hope they're well?"],
-["B","هيه، أمي وأبوي في لندن","hē, ummi w ubūy fi Landan","Yes, my mum and dad are in London."],
-["A","الله يحفظهم. وانت ويا ولدي في الجامعة؟","allāh yiḥfaẓhum. w inta wiyya wildi fi l-jāmʿa?","God keep them. And you're at the university with my son?"],
-["B","هيه، في نفس الجامعة. ولدج ربيعي","hē, fi nafs il-jāmʿa. wildich rbīʿi","Yes, at the same university. Your son is my friend."]],
-"items":[
-["أمي","ummi","my mum","أمي","UAE also: ummāya (أمايه)"],
-["أبوي","ubūy","my dad","أبي","UAE also: ubūya (أبويه)"],
-["أهلي","ahli","my family, my parents","أهلي","your family: ahlak (to a man), ahlich (to a woman)"],
-["الله يحفظهم","allāh yiḥfaẓhum","God keep them","حفظهم الله","said when someone mentions their family"],
-["ويا","wiyya","with","مع","with me: wiyyāy; with you: wiyyāk (to a man), wiyyāch (to a woman)"],
-["ولدي","wildi","my son","ابني","your son: wildak (to a man), wildich (to a woman)"],
-["نفس","nafs","the same","نفس","fi nafs il-jāmʿa = at the same university"],
-["ربيعي","rbīʿi","my friend (a man) (UAE)","صديقي","my group of friends: rabʿi (ربعي)"]]},
-
-{"id":"s1u022","stage":1,
-"title":"Brothers and sisters",
-"goal":"Ask Maryam about her brothers and sisters and talk about yours.",
-"grammar":"Possessive endings -ak, -ich, -ha; family plurals learned as words",
-"tip":"Family plurals are learned as words: akh (brother) → ikhwān, ukht (sister) → khawāt. Endings go on as usual: ikhwāni (my brothers), khawātich (your sisters, to a woman), rayyilha (her husband). ʿindich = you have (to a woman).",
-"dialogue":[
-["B","مريم، عندج إخوان؟","Maryam, ʿindich ikhwān?","Maryam, do you have brothers?"],
-["A","هيه، ثلاث إخوان. وانت؟","hē, thalāth ikhwān. w inta?","Yes, three brothers. And you?"],
-["B","عندي أخ وأخت. أخوي في لندن","ʿindi akh w ukht. akhūy fi Landan","I have a brother and a sister. My brother's in London."],
-["A","وأختك؟","w ukhtak?","And your sister?"],
-["B","أختي في الجامعة. وانتي، عندج خوات؟","ukhti fi l-jāmʿa. w inti, ʿindich khawāt?","My sister's at university. And you, do you have sisters?"],
-["A","أخت وحدة. هي متزوجة، وريلها من الشارقة","ukht waḥda. hiya mitzawwja, w rayyilha min ish-Shārja","One sister. She's married, and her husband is from Sharjah."]],
-"items":[
-["أخوي","akhūy","my brother","أخي","your brother: akhūk (to a man), akhūch (to a woman)"],
-["أختي","ukhti","my sister","أختي","your sister: ukhtak (to a man), ukhtich (to a woman)"],
-["إخواني","ikhwāni","my brothers","إخوتي","brothers: ikhwān (إخوان)"],
-["خواتي","khawāti","my sisters","أخواتي","sisters: khawāt (خوات)"],
-["أخ","akh","a brother","أخ",""],
-["أخت وحدة","ukht waḥda","one sister","أخت واحدة","waḥda is wāḥid with feminine words"],
-["متزوج","mitzawwij","married (a man)","متزوج","a woman: mitzawwja (متزوجة); UAE also: miʿarris (معرس)"],
-["ريلها","rayyilha","her husband","زوجها","lit. 'her man'; my husband (a woman says): rayyli"]]},
-
-{"id":"s1u023","stage":1,
-"title":"Family photos",
-"goal":"Look at Sēf's family photos, ask who's who, and praise the children the Gulf way.",
-"grammar":"Endings -ah (his) and -ha (her); ة becomes t before an ending or a noun",
-"tip":"-ah = his, -ha = her: bintah (his daughter), bint-ha (her daughter). A word ending in -a takes t before an ending or a following noun: ṣūra → ṣūrti (my photo), ṣūrat ahli (a photo of my family). wild ukhti = my sister's son.",
-"culture":"Praise a child, a house or a new car with mā shāʼ allāh. Praise without it can sound like envy (the evil eye), so Gulf speakers add it almost automatically, and often add a blessing for a child: allāh ykhallīh, allāh ykhallīha.",
-"dialogue":[
-["A","هذي صورة أهلي","hādhi ṣūrat ahli","This is a photo of my family."],
-["B","ما شاء الله! منو هذا؟","mā shāʼ allāh! minu hādha?","Lovely! Who's this?"],
-["A","هذا أخوي، وهذي بنته","hādha akhūy, w hādhi bintah","This is my brother, and this is his daughter."],
-["B","الله يخليها. وهذا ولده؟","allāh ykhallīha. w hādha wildah?","God bless her. And is this his son?"],
-["A","لا، هذا ولد أختي. عمره سنتين","la, hādha wild ukhti. ʿumrah santēn","No, that's my sister's son. He's two."],
-["B","ما شاء الله، الله يخليهم لك","mā shāʼ allāh, allāh ykhallīhum lak","Lovely, God keep them for you."]],
-"items":[
-["صورة","ṣūra","photo, picture","صورة","my photo: ṣūrti; a photo of my family: ṣūrat ahli"],
-["منو هذا؟","minu hādha?","who's this? (a man or boy)","من هذا؟","for a woman or girl: minu hādhi?"],
-["بنتي","binti","my daughter","ابنتي","his daughter: bintah; her daughter: bint-ha"],
-["الله يخليها","allāh ykhallīha","God bless her (said of a child)","حفظها الله","of a boy: allāh ykhallīh; of them: allāh ykhallīhum"],
-["ولد أختي","wild ukhti","my sister's son, my nephew","ابن أختي","walad (boy, son) becomes wild before a noun"],
-["عمره","ʿumrah","his age","عمره","ʿumrah santēn = he's two; her age: ʿumurha"],
-["سنتين","santēn","two years","سنتان","one year: sana; three years: thalāth sinīn"],
-["عيال","ʿyāl","kids, children","أطفال / أولاد","my kids: ʿyāli; UAE also: yahhāl (يهال)"]]},
-
-{"id":"s1u024","stage":1,
-"title":"Whose is this?",
-"goal":"Ask whose things are after a lecture and say what's yours with ḥagg.",
-"grammar":"ḥagg- 'belonging to': ḥaggi, ḥaggak, ḥaggah, ḥagg minu? (Kuwait: māl-)",
-"tip":"ḥagg + ending = mine, yours, his: ḥaggi, ḥaggak (to a man), ḥaggich (to a woman), ḥaggah, ḥagg-ha. Before a name: ḥagg Aḥmad = Ahmed's. 'Whose?' = ḥagg minu? Kuwaitis also say māl: māli, mālak.",
-"dialogue":[
-["A","هذي الشنطة حق منو؟","hādhi sh-shanṭa ḥagg minu?","Whose bag is this?"],
-["B","مب حقي. حق أحمد؟","mub ḥaggi. ḥagg Aḥmad?","Not mine. Ahmed's?"],
-["A","لا، هذي مب حقه","la, hādhi mub ḥaggah","No, it isn't his."],
-["B","والكتاب؟ حقك؟","w il-kitāb? ḥaggak?","And the book? Is it yours?"],
-["A","هيه، هذا حقي. مشكور","hē, hādha ḥaggi. mashkūr","Yes, that's mine. Thanks."],
-["B","الشنطة حق فاطمة! هذا اسمها","ish-shanṭa ḥagg Fāṭma! hādha ismha","The bag is Fatma's! Here's her name."]],
-"items":[
-["حق","ḥagg","belonging to, for","مِلك","ḥagg Aḥmad = Ahmed's; Kuwait also: māl (مال)"],
-["حقي","ḥaggi","mine","لي","Kuwait also: māli (مالي)"],
-["حق منو؟","ḥagg minu?","whose?","لمن؟","hādha ḥagg minu? = whose is this?"],
-["حقك","ḥaggak","yours (to a man)","لك","to a woman: ḥaggich (حقج)"],
-["حقه","ḥaggah","his","له","hers: ḥagg-ha (حقها)"],
-["مب حقي","mub ḥaggi","it's not mine","ليس لي",""],
-["الشنطة","ish-shanṭa","the bag","الحقيبة",""],
-["الكتاب","il-kitāb","the book","الكتاب",""],
-["اسمها","ismha","her name","اسمها","his name: ismah"]]},
-
-{"id":"s1u025","stage":1,
-"title":"Sēf's dad's car",
-"goal":"Talk about whose car and whose house it is, using two nouns together.",
-"grammar":"The construct: noun + owner for 'X of Y' (bēt ubūy, sayyārat ubūy)",
-"tip":"Put the owner straight after the thing, with no word for 'of': bēt yaddi = my grandad's house. A word ending in -a takes -at: sayyāra → sayyārat ubūy (my dad's car). Only the second noun takes il- or an ending.",
-"dialogue":[
-["B","ما شاء الله! هذي سيارتك؟","mā shāʼ allāh! hādhi sayyārtak?","Wow! Is this your car?"],
-["A","لا، هذي سيارة أبوي","la, hādhi sayyārat ubūy","No, it's my dad's car."],
-["B","وسيارتك وين؟","w sayyārtak wēn?","And where's yours?"],
-["A","ويا ولد عمي اليوم. هو ريّال طيب","wiyya wild ʿammi il-yōm. huwa rayyāl ṭayyib","My cousin has it today. He's a good guy."],
-["B","طيب، ونحن وين رايحين؟","ṭayyib, w niḥin wēn rāyḥīn?","OK, and where are we going?"],
-["A","بيت يدي ويدتي. كل الأهل هناك","bēt yaddi w yaddti. kill il-ahal hnāk","To my grandparents' house. The whole family's there."]],
-"items":[
-["سيارتي","sayyārti","my car","سيارتي","a car: sayyāra (سيارة); your car: sayyārtak (to a man)"],
-["سيارة أبوي","sayyārat ubūy","my dad's car","سيارة أبي",""],
-["ولد عمي","wild ʿammi","my cousin (my father's brother's son)","ابن عمي","a girl cousin: bint ʿammi (بنت عمي)"],
-["عمي","ʿammi","my uncle (my father's brother)","عمي",""],
-["ريّال","rayyāl","man","رجل","you'll see written ريال, which is also the riyal coin"],
-["بيت يدي","bēt yaddi","my grandad's house","بيت جدي","yaddi (my grandfather) is also written جدي"],
-["يدتي","yaddti","my grandmother","جدتي","also written جدتي"],
-["كل","kill","all, every, the whole","كل","kill il-ahal = the whole family"],
-["رايحين","rāyḥīn","going (a group, or 'we')","ذاهبون","one man: rāyiḥ; one woman: rāyḥa"]]},
-
-{"id":"s1u026","stage":1,
-"title":"Asking after the family",
-"goal":"Visit Sēf's mother, ask after the family politely, and show her where your family lives.",
-"grammar":"Possessive endings -na (our), -kum (your, pl.), -hum (their)",
-"tip":"-na = our, -kum = your (to a group or a whole family), -hum = their: bētna (our house), bētkum (your house), ʿyālhum (their kids). After t or d, write a hyphen before -ha and -hum: bēt-hum.",
-"culture":"Ask after a family as a whole: shḥāl il-ahal? (how's the family?) or ʿasāhum b-khēr? Don't ask a man about his wife by name; ask after 'the family' or 'the house' instead. (Needs a native check.)",
-"dialogue":[
-["A","حياك الله يا ولدي. شحال الأهل؟","ḥayyāk allāh yā wildi. shḥāl il-ahal?","Welcome, son. How's the family?"],
-["B","الله يحييج. كلهم بخير، الحمد لله","allāh yḥayyīch. killhum b-khēr, il-ḥamdu lillāh","God bless you. They're all well, thank God."],
-["A","وين ساكنين؟ في لندن؟","wēn sāknīn? fi Landan?","Where do they live? In London?"],
-["B","هيه. تفضلي، هذا بيتنا","hē. tfaẓẓali, hādha bētna","Yes. Here, this is our house."],
-["A","ما شاء الله، بيتكم حلو. وهذا منو؟","mā shāʼ allāh, bētkum ḥilu. w hādha minu?","Lovely, your house is nice. And who's this?"],
-["B","هذا ريل أختي، ويا عيالهم","hādha rayyil ukhti, wiyya ʿyālhum","That's my sister's husband, with their kids."]],
-"items":[
-["يا ولدي","yā wildi","son, my boy (an older person to a young man)","يا بني","an older woman to a young woman: yā binti"],
-["شحال الأهل؟","shḥāl il-ahal?","how's the family?","كيف حال العائلة؟","the polite way to ask after someone's family"],
-["ساكنين","sāknīn","they live, (they're) living (in a place)","يسكنون","a man: sākin; a woman: sākna"],
-["بيتنا","bētna","our house, our home","بيتنا","their house: bēt-hum"],
-["بيتكم","bētkum","your house (to a group or a family)","بيتكم","to one man: bētak; to one woman: bētich"],
-["ريل أختي","rayyil ukhti","my sister's husband","زوج أختي","rayyāl (man) becomes rayyil before a noun or ending"],
-["عيالهم","ʿyālhum","their kids","أطفالهم","our kids: ʿyālna; your kids (to a group): ʿyālkum"]]}
+{
+"id": "s1u017",
+"stage": 1,
+"title": "Hi Sēf, what's new?",
+"goal": "Greet a friend the Emirati way, answer 'what's new?', and ask where someone is.",
+"grammar": "Independent pronouns: ana, inta, huwa; no word for 'is'",
+"tip": "Gulf Arabic has no 'is': huwa fi l-bēt = he (is) at home; ana b-khēr = I'm fine. So far: ana (I), inta (you, to a man), inti (you, to a woman), and now huwa (he). Emiratis ask shḥālak?; your shlōnak? is just as good.",
+"dialogue": [
+[
+"A",
+"هلا والله! شحالك؟",
+"hala wallāh! shḥālak?",
+"Hey there! How are you?"
+],
+[
+"B",
+"هلا بك. بخير، الله يسلمك",
+"hala bik. b-khēr, allāh ysallmak",
+"Hi. Fine, God keep you."
+],
+[
+"A",
+"الحمد لله. شو اليديد؟",
+"il-ḥamdu lillāh. shu l-yidīd?",
+"Good to hear. What's new?"
+],
+[
+"B",
+"ما شي. وين أحمد؟",
+"ma shay. wēn Aḥmad?",
+"Not much. Where's Ahmed?"
+],
+[
+"A",
+"هو في البيت اليوم",
+"huwa fi l-bēt il-yōm",
+"He's at home today."
+],
+[
+"B",
+"والله؟ طيب، نشوفه بعدين",
+"wallāh? ṭayyib, nshūfah baʿdēn",
+"Really? OK, we'll see him later."
+]
+],
+"items": [
+[
+"شحالك؟",
+"shḥālak?",
+"how are you? (to a man)",
+"كيف حالك؟",
+"to a woman: shḥālich (شحالج); shlōnak, which you know, is just as good"
+],
+[
+"هلا بك",
+"hala bik",
+"hi to you too (reply to hala)",
+"أهلًا بك",
+"to a woman: hala bich (هلا بج)"
+],
+[
+"بخير",
+"b-khēr",
+"fine, well",
+"بخير",
+"the usual answer: b-khēr, allāh ysallmak"
+],
+[
+"شو اليديد؟",
+"shu l-yidīd?",
+"what's new?",
+"ما الجديد؟",
+"reply: ma shay"
+],
+[
+"ما شي",
+"ma shay",
+"nothing much (reply to shu l-yidīd?)",
+"لا شيء",
+""
+],
+[
+"هو",
+"huwa",
+"he",
+"هو",
+"Kuwait: ihu (اهو)"
+],
+[
+"في البيت",
+"fi l-bēt",
+"at home",
+"في البيت",
+""
+],
+[
+"والله؟",
+"wallāh?",
+"really?",
+"حقًا؟",
+"without the question mark it means 'honestly, I swear'"
+],
+[
+"طيب",
+"ṭayyib",
+"OK, all right",
+"حسنًا",
+"of a person: kind, nice (rayyāl ṭayyib)"
+]
+]
+},
+{
+"id": "s1u018",
+"stage": 1,
+"title": "Good morning, Maryam",
+"goal": "Greet a woman colleague, ask how she is with the -ich form, and ask about another colleague.",
+"grammar": "Pronouns: inti (you, to a woman) and hiya (she); no copula",
+"tip": "Speaking to a woman, 'you' endings change: shḥālak → shḥālich, mashkūr → mashkūra. hiya = she, again with no 'is': hiya fi ijtimāʿ = she's in a meeting. hē is the Emirati 'yes'; your ī is fine too.",
+"culture": "Handshakes between men and women vary. Many Emirati women don't shake hands with men, so let a woman offer her hand first; if she doesn't, a smile and the greeting are enough, and some men touch their chest. Men usually shake hands with every man present. (Needs a native check.)",
+"dialogue": [
+[
+"A",
+"صباح الخير!",
+"ṣabāḥ il-khēr!",
+"Good morning!"
+],
+[
+"B",
+"صباح النور. شحالج؟",
+"ṣabāḥ in-nūr. shḥālich?",
+"Good morning. How are you?"
+],
+[
+"A",
+"بخير، الله يسلمك. وانت شخبارك؟",
+"b-khēr, allāh ysallmak. w inta shakhbārak?",
+"Fine, God keep you. And how are things with you?"
+],
+[
+"B",
+"زين الحمد لله. سارة في المكتب؟",
+"zēn il-ḥamdu lillāh. Sāra fi l-maktab?",
+"Good, thank God. Is Sara in the office?"
+],
+[
+"A",
+"هيه، بس هي في اجتماع الحين",
+"hē, bas hiya fi ijtimāʿ il-ḥīn",
+"Yes, but she's in a meeting now."
+],
+[
+"B",
+"طيب، مشكورة",
+"ṭayyib, mashkūra",
+"OK, thanks."
+]
+],
+"items": [
+[
+"صباح النور",
+"ṣabāḥ in-nūr",
+"good morning (the reply)",
+"صباح النور",
+"answers ṣabāḥ il-khēr"
+],
+[
+"شحالج؟",
+"shḥālich?",
+"how are you? (to a woman)",
+"كيف حالكِ؟",
+"to a man: shḥālak; shlōnich works too"
+],
+[
+"شخبارك؟",
+"shakhbārak?",
+"how are things? (to a man)",
+"ما أخبارك؟",
+"to a woman: shakhbārich (شخبارج); reply: zēn il-ḥamdu lillāh"
+],
+[
+"هي",
+"hiya",
+"she",
+"هي",
+"Kuwait: ihi (اهي)"
+],
+[
+"هيه",
+"hē",
+"yes",
+"نعم",
+"Kuwait: ēh (إيه); your ī (إي) is fine everywhere"
+],
+[
+"المكتب",
+"il-maktab",
+"the office",
+"المكتب",
+""
+],
+[
+"في اجتماع",
+"fi ijtimāʿ",
+"in a meeting",
+"في اجتماع",
+""
+],
+[
+"مشكورة",
+"mashkūra",
+"thanks (to a woman)",
+"شكرًا",
+"to a man: mashkūr"
+]
+]
+},
+{
+"id": "s1u019",
+"stage": 1,
+"title": "We're students here",
+"goal": "Greet two students at the university, say who 'we' are, and ask a group questions.",
+"grammar": "Pronouns: niḥin (we) and intu (you, to a group)",
+"tip": "niḥin = we, intu = you (to a group), still with no 'is': niḥin ṭullāb = we're students. A verb to a group ends in -ūn: intu tidrisūn = you (all) study. as-salāmu ʿalaykum already greets everyone present.",
+"dialogue": [
+[
+"B",
+"السلام عليكم",
+"as-salāmu ʿalaykum",
+"Peace be upon you."
+],
+[
+"A",
+"وعليكم السلام، هلا والله",
+"wa ʿalaykum is-salām, hala wallāh",
+"And upon you peace. Hi there."
+],
+[
+"B",
+"هلا فيك. انتو تدرسون هني؟",
+"hala fīk. intu tidrisūn hni?",
+"Hi. Do you (two) study here?"
+],
+[
+"A",
+"هيه، نحن طلاب هندسة. وانت؟",
+"hē, niḥin ṭullāb handasa. w inta?",
+"Yes, we're engineering students. And you?"
+],
+[
+"B",
+"أنا بعد. انتو من دبي؟",
+"ana baʿad. intu min Dbayy?",
+"Me too. Are you from Dubai?"
+],
+[
+"A",
+"لا، نحن من العين، بس ندرس هني",
+"la, niḥin min il-ʿĒn, bas nidris hni",
+"No, we're from Al Ain, but we study here."
+]
+],
+"items": [
+[
+"هلا فيك",
+"hala fīk",
+"hi to you too (reply to hala)",
+"أهلًا بك",
+"to a woman: hala fīch (هلا فيج)"
+],
+[
+"انتو",
+"intu",
+"you (to a group)",
+"أنتم",
+""
+],
+[
+"تدرسون",
+"tidrisūn",
+"you study (to a group)",
+"تدرسون",
+"to one man: tidris; to one woman: tidrisīn"
+],
+[
+"نحن",
+"niḥin",
+"we",
+"نحن",
+"Kuwait: iḥna (إحنا)"
+],
+[
+"طلاب",
+"ṭullāb",
+"students",
+"طلاب",
+"one: ṭālib (a man), ṭālba (a woman)"
+],
+[
+"هندسة",
+"handasa",
+"engineering",
+"هندسة",
+""
+],
+[
+"أنا بعد",
+"ana baʿad",
+"me too",
+"وأنا أيضًا",
+"baʿad after a word means 'too'"
+],
+[
+"ندرس",
+"nidris",
+"we study",
+"ندرس",
+""
+]
+]
+},
+{
+"id": "s1u020",
+"stage": 1,
+"title": "Welcome! The guys are in the majlis",
+"goal": "Arrive at Sēf's house, answer a warm welcome, and pass greetings on to someone who isn't there.",
+"grammar": "Pronoun hum (they); the full set ana, inta, inti, huwa, hiya, niḥin, intu, hum",
+"tip": "hum = they, for men, women or a mix: hum fi l-majlis = they're in the majlis. The full set: ana, inta, inti, huwa, hiya, niḥin, intu, hum. ysallim ʿalēk = he says hi to you; for 'she', tsallim ʿalēk.",
+"culture": "When you walk into a majlis, say as-salāmu ʿalaykum to the whole room. The men there usually stand, and the newcomer goes round shaking hands, often starting from the right or with the oldest man. (Needs a native check.)",
+"dialogue": [
+[
+"A",
+"مرحبا الساع! هلا وغلا",
+"marḥaba is-sāʿ! hala w ghala",
+"Welcome, welcome! Great to see you."
+],
+[
+"B",
+"هلا والله. شحالك؟",
+"hala wallāh. shḥālak?",
+"Hi there. How are you?"
+],
+[
+"A",
+"بخير. تفضل، الشباب في المجلس",
+"b-khēr. tfaẓẓal, ish-shabāb fi l-majlis",
+"Fine. Come in, the guys are in the majlis."
+],
+[
+"B",
+"منو؟ أحمد وحمد؟",
+"minu? Aḥmad w Ḥamad?",
+"Who? Ahmed and Hamad?"
+],
+[
+"A",
+"هيه، هم كلهم هني. وخالد يسلم عليك",
+"hē, hum killhum hni. w Khālid ysallim ʿalēk",
+"Yes, they're all here. And Khalid says hi."
+],
+[
+"B",
+"الله يسلمه. سلم عليه",
+"allāh ysallmah. sallim ʿalēh",
+"God keep him. Say hi to him from me."
+]
+],
+"items": [
+[
+"مرحبا الساع",
+"marḥaba is-sāʿ",
+"welcome! (to a guest arriving, UAE)",
+"",
+"reply: hala wallāh"
+],
+[
+"هلا وغلا",
+"hala w ghala",
+"welcome! great to see you (warm)",
+"",
+""
+],
+[
+"الشباب",
+"ish-shabāb",
+"the guys, the young men",
+"الشباب",
+""
+],
+[
+"المجلس",
+"il-majlis",
+"the majlis (the room where guests sit)",
+"المجلس",
+""
+],
+[
+"هم",
+"hum",
+"they",
+"هم",
+"for men, women or a mix"
+],
+[
+"كلهم",
+"killhum",
+"all of them",
+"كلهم",
+""
+],
+[
+"يسلم عليك",
+"ysallim ʿalēk",
+"(he) says hi to you (to a man)",
+"يسلم عليك",
+"to a woman: ysallim ʿalēch; she says hi: tsallim ʿalēk"
+],
+[
+"الله يسلمه",
+"allāh ysallmah",
+"God keep him (reply when he sends greetings)",
+"",
+"for a woman: allāh ysallimha"
+],
+[
+"سلم عليه",
+"sallim ʿalēh",
+"say hi to him from me (to a man)",
+"سلم عليه",
+"to a woman: sallmi ʿalēh; for her: sallim ʿalēha"
+]
+]
+},
+{
+"id": "s1u021",
+"stage": 1,
+"title": "Meeting Sēf's mum",
+"goal": "Greet Sēf's mother respectfully and answer questions about your family with 'my' and 'your'.",
+"grammar": "Possessive endings -i (my), -ak (your, m.), -ich (your, f.)",
+"tip": "Add an ending to a noun for 'my' and 'your': ahl → ahli (my family), ahlak (your family, to a man), ahlich (to a woman). After a vowel, 'my' is -y: ubū → ubūy (my dad). walad (son) shortens: wildi (my son), wildich (your son, to a woman).",
+"dialogue": [
+[
+"A",
+"هلا بك، حياك الله",
+"hala bik, ḥayyāk allāh",
+"Hello, welcome."
+],
+[
+"B",
+"الله يحييج. شحالج؟",
+"allāh yḥayyīch. shḥālich?",
+"God bless you. How are you?"
+],
+[
+"A",
+"بخير الحمد لله. وأهلك؟ عساهم بخير؟",
+"b-khēr il-ḥamdu lillāh. w ahlak? ʿasāhum b-khēr?",
+"Fine, thank God. And your family? I hope they're well?"
+],
+[
+"B",
+"هيه، أمي وأبوي في لندن",
+"hē, ummi w ubūy fi Landan",
+"Yes, my mum and dad are in London."
+],
+[
+"A",
+"الله يحفظهم. وانت ويا ولدي في الجامعة؟",
+"allāh yiḥfaẓhum. w inta wiyya wildi fi l-jāmʿa?",
+"God keep them. And you're at the university with my son?"
+],
+[
+"B",
+"هيه، في نفس الجامعة. ولدج ربيعي",
+"hē, fi nafs il-jāmʿa. wildich rbīʿi",
+"Yes, at the same university. Your son is my friend."
+]
+],
+"items": [
+[
+"أمي",
+"ummi",
+"my mum",
+"أمي",
+"UAE also: ummāya (أمايه)"
+],
+[
+"أبوي",
+"ubūy",
+"my dad",
+"أبي",
+"UAE also: ubūya (أبويه)"
+],
+[
+"أهلي",
+"ahli",
+"my family, my parents",
+"أهلي",
+"your family: ahlak (to a man), ahlich (to a woman)"
+],
+[
+"عساهم بخير؟",
+"ʿasāhum b-khēr?",
+"I hope they're well? (asking after family)",
+"أرجو أن يكونوا بخير",
+"about one man: ʿasāh b-khēr?; you know ʿasāk b-khēr"
+],
+[
+"الله يحفظهم",
+"allāh yiḥfaẓhum",
+"God keep them",
+"حفظهم الله",
+"said when someone mentions their family"
+],
+[
+"ويا",
+"wiyya",
+"with",
+"مع",
+"with me: wiyyāy; with you: wiyyāk (to a man), wiyyāch (to a woman)"
+],
+[
+"ولدي",
+"wildi",
+"my son",
+"ابني",
+"your son: wildak (to a man), wildich (to a woman)"
+],
+[
+"نفس",
+"nafs",
+"the same",
+"نفس",
+"fi nafs il-jāmʿa = at the same university"
+],
+[
+"ربيعي",
+"rbīʿi",
+"my friend (a man) (UAE)",
+"صديقي",
+"my group of friends: rabʿi (ربعي)"
+]
+]
+},
+{
+"id": "s1u022",
+"stage": 1,
+"title": "Brothers and sisters",
+"goal": "Ask Maryam about her brothers and sisters and talk about yours.",
+"grammar": "Possessive endings -ak, -ich, -ha; family plurals learned as words",
+"tip": "Family plurals are learned as words: akh (brother) → ikhwān, ukht (sister) → khawāt. Endings go on as usual: ikhwāni (my brothers), khawātich (your sisters, to a woman), rayyilha (her husband). ʿindich = you have (to a woman).",
+"dialogue": [
+[
+"B",
+"مريم، عندج إخوان؟",
+"Maryam, ʿindich ikhwān?",
+"Maryam, do you have brothers?"
+],
+[
+"A",
+"هيه، ثلاث إخوان. وانت؟",
+"hē, thalāth ikhwān. w inta?",
+"Yes, three brothers. And you?"
+],
+[
+"B",
+"عندي أخ وأخت. أخوي في لندن",
+"ʿindi akh w ukht. akhūy fi Landan",
+"I have a brother and a sister. My brother's in London."
+],
+[
+"A",
+"وأختك؟",
+"w ukhtak?",
+"And your sister?"
+],
+[
+"B",
+"أختي في الجامعة. وانتي، عندج خوات؟",
+"ukhti fi l-jāmʿa. w inti, ʿindich khawāt?",
+"My sister's at university. And you, do you have sisters?"
+],
+[
+"A",
+"أخت وحدة. هي متزوجة، وريلها من الشارقة",
+"ukht waḥda. hiya mitzawwja, w rayyilha min ish-Shārja",
+"One sister. She's married, and her husband is from Sharjah."
+]
+],
+"items": [
+[
+"أخوي",
+"akhūy",
+"my brother",
+"أخي",
+"your brother: akhūk (to a man), akhūch (to a woman)"
+],
+[
+"أختي",
+"ukhti",
+"my sister",
+"أختي",
+"your sister: ukhtak (to a man), ukhtich (to a woman)"
+],
+[
+"إخواني",
+"ikhwāni",
+"my brothers",
+"إخوتي",
+"brothers: ikhwān (إخوان)"
+],
+[
+"خواتي",
+"khawāti",
+"my sisters",
+"أخواتي",
+"sisters: khawāt (خوات)"
+],
+[
+"أخ",
+"akh",
+"a brother",
+"أخ",
+""
+],
+[
+"أخت وحدة",
+"ukht waḥda",
+"one sister",
+"أخت واحدة",
+"waḥda is wāḥid with feminine words"
+],
+[
+"متزوج",
+"mitzawwij",
+"married (a man)",
+"متزوج",
+"a woman: mitzawwja (متزوجة); UAE also: miʿarris (معرس)"
+],
+[
+"ريلها",
+"rayyilha",
+"her husband",
+"زوجها",
+"lit. 'her man'; my husband (a woman says): rayyli"
+]
+]
+},
+{
+"id": "s1u023",
+"stage": 1,
+"title": "Family photos",
+"goal": "Look at Sēf's family photos, ask who's who, and praise the children the Gulf way.",
+"grammar": "Endings -ah (his) and -ha (her); ة becomes t before an ending or a noun",
+"tip": "-ah = his, -ha = her: bintah (his daughter), bint-ha (her daughter). A word ending in -a takes t before an ending or a following noun: ṣūra → ṣūrti (my photo), ṣūrat ahli (a photo of my family). wild ukhti = my sister's son.",
+"culture": "Praise a child, a house or a new car with mā shāʼ allāh. Praise without it can sound like envy (the evil eye), so Gulf speakers add it almost automatically, and often add a blessing for a child: allāh ykhallīh, allāh ykhallīha.",
+"dialogue": [
+[
+"A",
+"هذي صورة أهلي",
+"hādhi ṣūrat ahli",
+"This is a photo of my family."
+],
+[
+"B",
+"ما شاء الله! منو هذا؟",
+"mā shāʼ allāh! minu hādha?",
+"Lovely! Who's this?"
+],
+[
+"A",
+"هذا أخوي، وهذي بنته",
+"hādha akhūy, w hādhi bintah",
+"This is my brother, and this is his daughter."
+],
+[
+"B",
+"الله يخليها. وهذا ولده؟",
+"allāh ykhallīha. w hādha wildah?",
+"God bless her. And is this his son?"
+],
+[
+"A",
+"لا، هذا ولد أختي. عمره سنتين",
+"la, hādha wild ukhti. ʿumrah santēn",
+"No, that's my sister's son. He's two."
+],
+[
+"B",
+"ما شاء الله، الله يخليهم لك",
+"mā shāʼ allāh, allāh ykhallīhum lak",
+"Lovely, God keep them for you."
+]
+],
+"items": [
+[
+"صورة",
+"ṣūra",
+"photo, picture",
+"صورة",
+"my photo: ṣūrti; a photo of my family: ṣūrat ahli"
+],
+[
+"منو هذا؟",
+"minu hādha?",
+"who's this? (a man or boy)",
+"من هذا؟",
+"for a woman or girl: minu hādhi?"
+],
+[
+"بنتي",
+"binti",
+"my daughter",
+"ابنتي",
+"his daughter: bintah; her daughter: bint-ha"
+],
+[
+"الله يخليها",
+"allāh ykhallīha",
+"God bless her (said of a child)",
+"حفظها الله",
+"of a boy: allāh ykhallīh; of them: allāh ykhallīhum"
+],
+[
+"ولد أختي",
+"wild ukhti",
+"my sister's son, my nephew",
+"ابن أختي",
+"walad (boy, son) becomes wild before a noun"
+],
+[
+"عمره",
+"ʿumrah",
+"his age",
+"عمره",
+"ʿumrah santēn = he's two; her age: ʿumurha"
+],
+[
+"سنتين",
+"santēn",
+"two years",
+"سنتان",
+"one year: sana; three years: thalāth sinīn"
+],
+[
+"عيال",
+"ʿyāl",
+"kids, children",
+"أطفال / أولاد",
+"my kids: ʿyāli; UAE also: yahhāl (يهال)"
+]
+]
+},
+{
+"id": "s1u024",
+"stage": 1,
+"title": "Whose is this?",
+"goal": "Ask whose things are after a lecture and say what's yours with ḥagg.",
+"grammar": "ḥagg- 'belonging to': ḥaggi, ḥaggak, ḥaggah, ḥagg minu? (Kuwait: māl-)",
+"tip": "ḥagg + ending = mine, yours, his: ḥaggi, ḥaggak (to a man), ḥaggich (to a woman), ḥaggah, ḥagg-ha. Before a name: ḥagg Aḥmad = Ahmed's. 'Whose?' = ḥagg minu? Kuwaitis also say māl: māli, mālak.",
+"dialogue": [
+[
+"A",
+"هذي الشنطة حق منو؟",
+"hādhi sh-shanṭa ḥagg minu?",
+"Whose bag is this?"
+],
+[
+"B",
+"مب حقي. حق أحمد؟",
+"mub ḥaggi. ḥagg Aḥmad?",
+"Not mine. Ahmed's?"
+],
+[
+"A",
+"لا، هذي مب حقه",
+"la, hādhi mub ḥaggah",
+"No, it isn't his."
+],
+[
+"B",
+"والكتاب؟ حقك؟",
+"w il-kitāb? ḥaggak?",
+"And the book? Is it yours?"
+],
+[
+"A",
+"هيه، هذا حقي. مشكور",
+"hē, hādha ḥaggi. mashkūr",
+"Yes, that's mine. Thanks."
+],
+[
+"B",
+"الشنطة حق فاطمة! هذا اسمها",
+"ish-shanṭa ḥagg Fāṭma! hādha ismha",
+"The bag is Fatma's! Here's her name."
+]
+],
+"items": [
+[
+"حق",
+"ḥagg",
+"belonging to, for",
+"مِلك",
+"ḥagg Aḥmad = Ahmed's; Kuwait also: māl (مال)"
+],
+[
+"حقي",
+"ḥaggi",
+"mine",
+"لي",
+"Kuwait also: māli (مالي)"
+],
+[
+"حق منو؟",
+"ḥagg minu?",
+"whose?",
+"لمن؟",
+"hādha ḥagg minu? = whose is this?"
+],
+[
+"حقك",
+"ḥaggak",
+"yours (to a man)",
+"لك",
+"to a woman: ḥaggich (حقج)"
+],
+[
+"حقه",
+"ḥaggah",
+"his",
+"له",
+"hers: ḥagg-ha (حقها)"
+],
+[
+"مب حقي",
+"mub ḥaggi",
+"it's not mine",
+"ليس لي",
+""
+],
+[
+"الشنطة",
+"ish-shanṭa",
+"the bag",
+"الحقيبة",
+""
+],
+[
+"الكتاب",
+"il-kitāb",
+"the book",
+"الكتاب",
+""
+],
+[
+"اسمها",
+"ismha",
+"her name",
+"اسمها",
+"his name: ismah"
+]
+]
+},
+{
+"id": "s1u025",
+"stage": 1,
+"title": "Sēf's dad's car",
+"goal": "Talk about whose car and whose house it is, using two nouns together.",
+"grammar": "The construct: noun + owner for 'X of Y' (bēt ubūy, sayyārat ubūy)",
+"tip": "Put the owner straight after the thing, with no word for 'of': bēt yaddi = my grandad's house. A word ending in -a takes -at: sayyāra → sayyārat ubūy (my dad's car). Only the second noun takes il- or an ending.",
+"dialogue": [
+[
+"B",
+"ما شاء الله! هذي سيارتك؟",
+"mā shāʼ allāh! hādhi sayyārtak?",
+"Wow! Is this your car?"
+],
+[
+"A",
+"لا، هذي سيارة أبوي",
+"la, hādhi sayyārat ubūy",
+"No, it's my dad's car."
+],
+[
+"B",
+"وسيارتك وين؟",
+"w sayyārtak wēn?",
+"And where's yours?"
+],
+[
+"A",
+"ويا ولد عمي اليوم. هو ريّال طيب",
+"wiyya wild ʿammi il-yōm. huwa rayyāl ṭayyib",
+"My cousin has it today. He's a good guy."
+],
+[
+"B",
+"طيب، ونحن وين رايحين؟",
+"ṭayyib, w niḥin wēn rāyḥīn?",
+"OK, and where are we going?"
+],
+[
+"A",
+"بيت يدي ويدتي. كل الأهل هناك",
+"bēt yaddi w yaddti. kill il-ahal hnāk",
+"To my grandparents' house. The whole family's there."
+]
+],
+"items": [
+[
+"سيارتي",
+"sayyārti",
+"my car",
+"سيارتي",
+"a car: sayyāra (سيارة); your car: sayyārtak (to a man)"
+],
+[
+"سيارة أبوي",
+"sayyārat ubūy",
+"my dad's car",
+"سيارة أبي",
+""
+],
+[
+"ولد عمي",
+"wild ʿammi",
+"my cousin (my father's brother's son)",
+"ابن عمي",
+"a girl cousin: bint ʿammi (بنت عمي)"
+],
+[
+"عمي",
+"ʿammi",
+"my uncle (my father's brother)",
+"عمي",
+""
+],
+[
+"ريّال",
+"rayyāl",
+"man",
+"رجل",
+"you'll see written ريال, which is also the riyal coin"
+],
+[
+"بيت يدي",
+"bēt yaddi",
+"my grandad's house",
+"بيت جدي",
+"yaddi (my grandfather) is also written جدي"
+],
+[
+"يدتي",
+"yaddti",
+"my grandmother",
+"جدتي",
+"also written جدتي"
+],
+[
+"كل",
+"kill",
+"all, every, the whole",
+"كل",
+"kill il-ahal = the whole family"
+],
+[
+"رايحين",
+"rāyḥīn",
+"going (a group, or 'we')",
+"ذاهبون",
+"one man: rāyiḥ; one woman: rāyḥa"
+]
+]
+},
+{
+"id": "s1u026",
+"stage": 1,
+"title": "Asking after the family",
+"goal": "Visit Sēf's mother, ask after the family politely, and show her where your family lives.",
+"grammar": "Possessive endings -na (our), -kum (your, pl.), -hum (their)",
+"tip": "-na = our, -kum = your (to a group or a whole family), -hum = their: bētna (our house), bētkum (your house), ʿyālhum (their kids). After t or d, write a hyphen before -ha and -hum: bēt-hum.",
+"culture": "Ask after a family as a whole: shḥāl il-ahal? (how's the family?) or ʿasāhum b-khēr? Don't ask a man about his wife by name; ask after 'the family' or 'the house' instead. (Needs a native check.)",
+"dialogue": [
+[
+"A",
+"حياك الله يا ولدي. شحال الأهل؟",
+"ḥayyāk allāh yā wildi. shḥāl il-ahal?",
+"Welcome, son. How's the family?"
+],
+[
+"B",
+"الله يحييج. كلهم بخير، الحمد لله",
+"allāh yḥayyīch. killhum b-khēr, il-ḥamdu lillāh",
+"God bless you. They're all well, thank God."
+],
+[
+"A",
+"وين ساكنين؟ في لندن؟",
+"wēn sāknīn? fi Landan?",
+"Where do they live? In London?"
+],
+[
+"B",
+"هيه. تفضلي، هذا بيتنا",
+"hē. tfaẓẓali, hādha bētna",
+"Yes. Here, this is our house."
+],
+[
+"A",
+"ما شاء الله، بيتكم حلو. وهذا منو؟",
+"mā shāʼ allāh, bētkum ḥilu. w hādha minu?",
+"Lovely, your house is nice. And who's this?"
+],
+[
+"B",
+"هذا ريل أختي، ويا عيالهم",
+"hādha rayyil ukhti, wiyya ʿyālhum",
+"That's my sister's husband, with their kids."
+]
+],
+"items": [
+[
+"يا ولدي",
+"yā wildi",
+"son, my boy (an older person to a young man)",
+"يا بني",
+"an older woman to a young woman: yā binti"
+],
+[
+"شحال الأهل؟",
+"shḥāl il-ahal?",
+"how's the family?",
+"كيف حال العائلة؟",
+"the polite way to ask after someone's family"
+],
+[
+"ساكنين",
+"sāknīn",
+"they live, (they're) living (in a place)",
+"يسكنون",
+"a man: sākin; a woman: sākna"
+],
+[
+"بيتنا",
+"bētna",
+"our house, our home",
+"بيتنا",
+"their house: bēt-hum"
+],
+[
+"تفضلي",
+"tfaẓẓali",
+"here you are, please (to a woman)",
+"تفضلي",
+"to a man: tfaẓẓal (you know it)"
+],
+[
+"بيتكم",
+"bētkum",
+"your house (to a group or a family)",
+"بيتكم",
+"to one man: bētak; to one woman: bētich"
+],
+[
+"ريل أختي",
+"rayyil ukhti",
+"my sister's husband",
+"زوج أختي",
+"rayyāl (man) becomes rayyil before a noun or ending"
+],
+[
+"عيالهم",
+"ʿyālhum",
+"their kids",
+"أطفالهم",
+"our kids: ʿyālna; your kids (to a group): ʿyālkum"
+]
+]
+}
 ]
