@@ -27,9 +27,9 @@
    ],
    [
     "B",
-    "وإذا زارنا وزير؟ نكتب سعادة بعد؟",
-    "w idha zārna wazīr? niktib saʿāda baʿad?",
-    "And if a minister visits us? Do we write saʿāda too?"
+    "وإذا زارنا وزير؟ نكتب نفس اللقب؟",
+    "w idha zārna wazīr? niktib nafs il-laqab?",
+    "And if a minister visits us? Do we write the same title?"
    ],
    [
     "A",
@@ -45,21 +45,21 @@
    ],
    [
     "A",
-    "هيه. وفي الكلام طال عمرك وبس. بس لا تقول له يا ريّال!",
-    "hē. w fi l-kalām ṭāl ʿumrak w bas. bas la tgūl-lah yā rayyāl!",
-    "Yes. And when you're talking, just ṭāl ʿumrak. But don't call him yā rayyāl!"
+    "هيه. على كل حال، في الكلام طال عمرك وبس. لا تقول له يا ريّال!",
+    "hē. ʿala kill ḥāl, fi l-kalām ṭāl ʿumrak w bas. la tgūl-lah yā rayyāl!",
+    "Yes. Anyway, when you're talking, just ṭāl ʿumrak. Don't call him yā rayyāl!"
    ],
    [
     "B",
-    "لا تخافين، ولا برو بعد! بكون رسمي من أول ما يدخل",
-    "la tkhāfīn, wala brō baʿad! bakūn rasmi min awwal ma yidkhil",
-    "Don't worry, and no \"bro\" either! I'll be formal from the moment he walks in."
+    "صدقيني، ولا برو بعد! بكون رسمي من أول ما يدخل",
+    "ṣaddgīni, wala brō baʿad! bakūn rasmi min awwal ma yidkhil",
+    "Believe me, no \"bro\" either! I'll be formal from the moment he walks in."
    ],
    [
     "A",
-    "زين. وخلك على العربي، هو يحب يسمع الشباب يتكلمون عربي",
-    "zēn. w khallak ʿala l-ʿarabi, huwa yḥibb yismaʿ ish-shabāb yitkallamūn ʿarabi",
-    "Good. And stick to Arabic; he likes hearing young people speak Arabic."
+    "زين. وبيني وبينك، هو يحب يسمع الشباب يتكلمون عربي",
+    "zēn. w bēni w bēnak, huwa yḥibb yismaʿ ish-shabāb yitkallamūn ʿarabi",
+    "Good. And between you and me, he likes hearing young people speak Arabic."
    ]
   ],
   "items": [
@@ -163,9 +163,9 @@
    ],
    [
     "B",
-    "وإذا دخلت، أقعد على طول؟",
-    "w idha dakhalt, agʿid ʿala ṭūl?",
-    "And once I'm in, do I sit down straight away?"
+    "ها؟ وإذا دخلت، أقعد على طول؟",
+    "hā? w idha dakhalt, agʿid ʿala ṭūl?",
+    "Huh? And once I'm in, do I sit down straight away?"
    ],
    [
     "A",
@@ -175,9 +175,9 @@
    ],
    [
     "B",
-    "وشلون الواحد يطلع؟ ما أبي أطلع بدون ما أستأذن",
-    "w shlōn il-wāḥid yiṭlaʿ? ma abi aṭlaʿ bidūn ma astaʼdhin",
-    "And how does one leave? I wouldn't want to leave without asking."
+    "وشلون الواحد يطلع؟ أقصد، ما أبي أطلع بدون ما أستأذن",
+    "w shlōn il-wāḥid yiṭlaʿ? agṣid, ma abi aṭlaʿ bidūn ma astaʼdhin",
+    "And how does one leave? I mean, I wouldn't want to leave without asking."
    ],
    [
     "A",
@@ -187,9 +187,9 @@
    ],
    [
     "B",
-    "يلا، طال عمرك، إذا ما شي لازم، بنترخص. الوقت تأخر",
-    "yalla, ṭāl ʿumrak, idha ma shay lāzim, binitrakhkhaṣ. il-wagt taʼakhkhar",
-    "Right then, sir: if there's nothing you need, we'll take our leave. It's getting late."
+    "على كل حال، الوقت تأخر. طال عمرك، إذا ما شي لازم، بنترخص",
+    "ʿala kill ḥāl, il-wagt taʼakhkhar. ṭāl ʿumrak, idha ma shay lāzim, binitrakhkhaṣ",
+    "Anyway, it's getting late. Sir, if there's nothing you need, we'll take our leave."
    ],
    [
     "A",
@@ -299,9 +299,9 @@
    ],
    [
     "A",
-    "الاجتماع بعد ساعة، والتقرير للحين ما وصلني",
-    "il-ijtimāʿ baʿd sāʿa, w it-taqrīr lil-ḥīn ma wiṣalni",
-    "The meeting's in an hour, and I still haven't got the report."
+    "الاجتماع بعد ساعة، والمدير العام بيحضر، والتقرير للحين ما وصلني",
+    "il-ijtimāʿ baʿd sāʿa, w il-mudīr il-ʿāmm biyiḥẓar, w it-taqrīr lil-ḥīn ma wiṣalni",
+    "The meeting's in an hour, the director general will be there, and I still haven't got the report."
    ],
    [
     "B",
@@ -311,9 +311,9 @@
    ],
    [
     "A",
-    "وطرش نسخة لمريم بعد، عشان تراجعه قبل الاجتماع",
-    "w ṭarrish nuskha l-Maryam baʿad, ʿashān trājʿah gabil il-ijtimāʿ",
-    "And send a copy to Maryam too, so she can go over it before the meeting."
+    "وطرش نسخة لمريم، عشان تراجع التفاصيل قبل الاجتماع",
+    "w ṭarrish nuskha l-Maryam, ʿashān trājiʿ it-tafāṣīl gabil il-ijtimāʿ",
+    "And send a copy to Maryam, so she can go over the details before the meeting."
    ],
    [
     "B",
@@ -341,9 +341,9 @@
    ],
    [
     "B",
-    "ما سوينا شي، هذا واجبي",
-    "mā sawwēna shay, hādha wājbi",
-    "It's nothing; it's my job."
+    "ما سوينا شي، صدقني هذا واجبي",
+    "mā sawwēna shay, ṣaddigni hādha wājbi",
+    "It's nothing; believe me, it's my job."
    ]
   ],
   "items": [
@@ -424,9 +424,9 @@
    ],
    [
     "B",
-    "عادي، ما صار شي",
-    "ʿādi, ma ṣār shay",
-    "It's fine, nothing happened."
+    "عادي، ما صار شي. جولة ثانية؟",
+    "ʿādi, ma ṣār shay. jōla thānya?",
+    "It's fine, nothing happened. Another round?"
    ],
    [
     "A",
@@ -442,9 +442,9 @@
    ],
    [
     "A",
-    "برافو عليك! سيف، شفت؟ الريّال صار محترف",
-    "brāvo ʿalēk! Sēf, shift? ir-rayyāl ṣār miḥtarif",
-    "Bravo! Sēf, did you see? The guy's turned pro."
+    "برافو عليك! غلبتني، شي خيال! الريّال صار محترف",
+    "brāvo ʿalēk! ghalabtni, shay khayāl! ir-rayyāl ṣār miḥtarif",
+    "Bravo! You beat me, that was unbelievable! The guy's turned pro."
    ],
    [
     "B",
@@ -567,9 +567,9 @@
    ],
    [
     "B",
-    "خطير؟ يعني فيه شي غلط؟",
-    "khaṭīr? yaʿni fīh shay ghalaṭ?",
-    "Dangerous? You mean something's wrong with it?"
+    "ها؟ يعني فيه شي غلط؟",
+    "hā? yaʿni fīh shay ghalaṭ?",
+    "Huh? You mean something's wrong with it?"
    ],
    [
     "A",
@@ -579,9 +579,9 @@
    ],
    [
     "B",
-    "هذي كلمات يديدة علي!",
-    "hādhi kalimāt yidīda ʿalay!",
-    "These words are new to me!"
+    "سوري، هذي كلمات يديدة علي!",
+    "sōri, hādhi kalimāt yidīda ʿalay!",
+    "Sorry, these words are new to me!"
    ],
    [
     "A",
@@ -603,9 +603,9 @@
    ],
    [
     "B",
-    "زين، بس لا تصير أوفر، باقي ما ذقناه",
-    "zēn, bas la tṣīr ōvar, bāgi ma dhugnāh",
-    "OK, but don't go over the top; we haven't tried it yet."
+    "ومع هذا، لا تصير أوفر، باقي ما ذقناه",
+    "w maʿa hādha, la tṣīr ōvar, bāgi ma dhugnāh",
+    "Even so, don't go over the top; we haven't tried it yet."
    ],
    [
     "A",
@@ -720,9 +720,9 @@
    ],
    [
     "B",
-    "الله يعافيك. والله ما عليك زود، أحلى سمك أكلته",
-    "allāh yʿāfīk. wallāh ma ʿalēk zōd, aḥla simach akaltah",
-    "God give you health. Honestly, it couldn't be better; the best fish I've ever had."
+    "الله يعافيك. أعترف، ما عليك زود، أحلى سمك أكلته",
+    "allāh yʿāfīk. aʿtarif, ma ʿalēk zōd, aḥla simach akaltah",
+    "God give you health. I have to say, it couldn't be better; the best fish I've ever had."
    ],
    [
     "A",
@@ -732,9 +732,9 @@
    ],
    [
     "B",
-    "الله لا يهينك يا عمي، بس والله شبعت",
-    "allāh la yhīnak yā ʿammi, bas wallāh shbaʿt",
-    "Thank you so much, uncle, but honestly, I'm full."
+    "الله لا يهينك يا عمي، بس صدقني شبعت",
+    "allāh la yhīnak yā ʿammi, bas ṣaddigni shbaʿt",
+    "Thank you so much, uncle, but believe me, I'm full."
    ],
    [
     "A",
@@ -750,9 +750,9 @@
    ],
    [
     "A",
-    "الله يسلمك. عيل القهوة! سيف، صب لربعك",
-    "allāh ysallmak. ʿayal il-gahwa! Sēf, ṣubb l-rabʿak",
-    "God keep you. Coffee, then! Sēf, pour for your friends."
+    "الله يسلمك. على كل حال، القهوة! سيف، صب لربعك",
+    "allāh ysallmak. ʿala kill ḥāl, il-gahwa! Sēf, ṣubb l-rabʿak",
+    "God keep you. Anyway, coffee! Sēf, pour for your friends."
    ]
   ],
   "items": [
@@ -841,15 +841,15 @@
    ],
    [
     "A",
-    "هذا كلامك ويا سيف! في الاجتماع لازم تكون رسمي أكثر",
-    "hādha kalāmak wiyya Sēf! fi l-ijtimāʿ lāzim tkūn rasmi akthar",
-    "That's how you talk with Sēf! In the meeting you need to be more formal."
+    "بيني وبينك، هذا كلامك ويا سيف! في الاجتماع لازم تكون رسمي أكثر",
+    "bēni w bēnak, hādha kalāmak wiyya Sēf! fi l-ijtimāʿ lāzim tkūn rasmi akthar",
+    "Between you and me, that's how you talk with Sēf! In the meeting you need to be more formal."
    ],
    [
     "B",
-    "زين. في الحقيقة، التقرير محتاج أسبوع زيادة",
-    "zēn. fi l-ḥaqīqa, it-taqrīr miḥtāj usbūʿ zyāda",
-    "OK. In fact, the report needs one more week. (formal)"
+    "زين. أقصد: في الحقيقة، التقرير محتاج أسبوع زيادة",
+    "zēn. agṣid: fi l-ḥaqīqa, it-taqrīr miḥtāj usbūʿ zyāda",
+    "OK. I mean: in fact, the report needs one more week. (formal)"
    ],
    [
     "A",
@@ -883,9 +883,9 @@
    ],
    [
     "B",
-    "يعني في المكتب بسبب، وويا سيف عشان!",
-    "yaʿni fi l-maktab bi-sabab, w wiyya Sēf ʿashān!",
-    "So at the office bi-sabab, and with Sēf ʿashān!"
+    "الله لا يهينج! يعني في المكتب بسبب، وويا سيف عشان!",
+    "allāh la yhīnich! yaʿni fi l-maktab bi-sabab, w wiyya Sēf ʿashān!",
+    "Thanks so much! So at the office bi-sabab, and with Sēf ʿashān!"
    ]
   ],
   "items": [
@@ -997,9 +997,9 @@
    ],
    [
     "B",
-    "زين، بس فيه ضغط وايد، والمدير دوم مستعيل",
-    "zēn, bas fīh ẓaghiṭ wāyid, w il-mudīr dōm mistaʿyil",
-    "Good, but there's a lot of pressure, and the manager's always in a hurry."
+    "زين، بس بيني وبينك، فيه ضغط وايد، والمدير دوم مستعيل",
+    "zēn, bas bēni w bēnak, fīh ẓaghiṭ wāyid, w il-mudīr dōm mistaʿyil",
+    "Good, but between you and me, there's a lot of pressure, and the manager's always in a hurry."
    ],
    [
     "A",
@@ -1021,9 +1021,9 @@
    ],
    [
     "B",
-    "في المجلس كلام مجالس بس، أبشر يا عمي!",
-    "fi l-majlis kalām majālis bas, abshir yā ʿammi!",
-    "In the majlis, majlis talk only; you have my word, uncle!"
+    "في المجلس كلام مجالس بس، الله يخليك لنا!",
+    "fi l-majlis kalām majālis bas, allāh ykhallīk lana!",
+    "In the majlis, majlis talk only; God keep you for us!"
    ]
   ],
   "items": [
@@ -1117,9 +1117,9 @@
    ],
    [
     "B",
-    "عشرين سنة وانت تعطي هالشركة من وقتك وخبرتك",
-    "ʿishrīn sana w inta tʿaṭi hash-sharika min wagtak w khibirtak",
-    "For twenty years you've given this company your time and your experience. (formal)"
+    "في الحقيقة، عشرين سنة وانت تعطي هالشركة من وقتك وخبرتك",
+    "fi l-ḥaqīqa, ʿishrīn sana w inta tʿaṭi hash-sharika min wagtak w khibirtak",
+    "In fact, for twenty years you've given this company your time and your experience. (formal)"
    ],
    [
     "A",
@@ -1135,9 +1135,9 @@
    ],
    [
     "A",
-    "كلامك يرفع الراس يا سالم",
-    "kalāmak yirfaʿ ir-rās yā Sālim",
-    "Your words make me proud, Sālim."
+    "كلامك يرفع الراس، وقلته بشكل ممتاز",
+    "kalāmak yirfaʿ ir-rās, w giltah bi-shakl mumtāz",
+    "Your words make me proud, and you put it beautifully."
    ],
    [
     "B",
@@ -1256,9 +1256,9 @@
    ],
    [
     "B",
-    "أهلا وسهلا بكم في شركتنا. بالنيابة عن المدير، يسعدنا نرحب فيكم",
-    "ahlan wa sahlan bikum fi sharikatna. bin-niyāba ʿan il-mudīr, yisʿidna nraḥḥib fīkum",
-    "Welcome to our company. On behalf of the manager, we're delighted to welcome you. (formal)"
+    "أهلا وسهلا بكم. بالنيابة عن المدير العام، يسعدنا نرحب فيكم",
+    "ahlan wa sahlan bikum. bin-niyāba ʿan il-mudīr il-ʿāmm, yisʿidna nraḥḥib fīkum",
+    "Welcome. On behalf of the director general, we're delighted to welcome you. (formal)"
    ],
    [
     "A",
@@ -1268,9 +1268,9 @@
    ],
    [
     "B",
-    "بنبدا بجولة قصيرة في المكتب، وبعدها عرض عن شغلنا",
-    "binibda b-jōla gaṣīra fi l-maktab, w baʿdha ʿarẓ ʿan shughulna",
-    "We'll start with a short tour of the office, and then a presentation on our work. (formal)"
+    "باسم الفريق، بنبدا بجولة قصيرة في المكتب",
+    "b-ism il-farīg, binibda b-jōla gaṣīra fi l-maktab",
+    "On behalf of the team, we'll start with a short tour of the office. (formal)"
    ],
    [
     "A",
@@ -1292,9 +1292,9 @@
    ],
    [
     "B",
-    "العفو. يلا يا شباب، من هني!",
-    "il-ʿafu. yalla yā shabāb, min hni!",
-    "You're welcome. Come on, lads, this way!"
+    "العفو. تامرون على شي ثاني؟ يلا يا شباب، من هني!",
+    "il-ʿafu. tāmrūn ʿala shay thāni? yalla yā shabāb, min hni!",
+    "You're welcome. Anything else you need? Come on, lads, this way!"
    ]
   ],
   "items": [
@@ -1376,9 +1376,9 @@
    ],
    [
     "B",
-    "العميل منو؟",
-    "il-ʿamīl minu?",
-    "Who's the client?"
+    "العميل منو؟ المدير العام؟",
+    "il-ʿamīl minu? il-mudīr il-ʿāmm?",
+    "Who's the client? The director general?"
    ],
    [
     "A",
@@ -1394,9 +1394,9 @@
    ],
    [
     "A",
-    "الشرايح بالعربي والإنقليزي، بس الكلام باللهجة. هذا الطبيعي عندنا",
-    "ish-sharāyiḥ bil-ʿarabi w il-ingilīzi, bas il-kalām bil-lahja. hādha ṭ-ṭabīʿi ʿindana",
-    "The slides in Arabic and English, but the talking in dialect. That's normal for us."
+    "في الحقيقة، الشرايح بالعربي والإنقليزي، بس الكلام باللهجة. هذا الطبيعي عندنا",
+    "fi l-ḥaqīqa, ish-sharāyiḥ bil-ʿarabi w il-ingilīzi, bas il-kalām bil-lahja. hādha ṭ-ṭabīʿi ʿindana",
+    "Actually, the slides in Arabic and English, but the talking in dialect. That's normal for us."
    ],
    [
     "B",
@@ -1406,9 +1406,9 @@
    ],
    [
     "A",
-    "هيه، والمصطلحات التقنية نقولها بالإنقليزي حتى في الاجتماع",
-    "hē, w il-muṣṭalaḥāt it-tiqniyya ngūlha bil-ingilīzi ḥatta fi l-ijtimāʿ",
-    "Yes, and the technical terms we say in English, even in the meeting."
+    "هيه، هذا كلام المكتب: المصطلحات التقنية نقولها بالإنقليزي",
+    "hē, hādha kalām il-maktab: il-muṣṭalaḥāt it-tiqniyya ngūlha bil-ingilīzi",
+    "Yes, that's office talk: the technical terms we say in English."
    ],
    [
     "B",
@@ -1529,9 +1529,9 @@
    ],
    [
     "B",
-    "بالنسبة لي، الناس هني يتكلمون اللهجة، فحبيت أفهمهم وأسولف وياهم",
-    "bin-nisba li, in-nās hni yitkallamūn il-lahja, fa ḥabbēt afhamhum w asōlif wiyyāhum",
-    "For me, people here speak the dialect, so I wanted to understand them and chat with them."
+    "بالنسبة لي، الناس هني يتكلمون اللهجة، فحبيت أفهمهم",
+    "bin-nisba li, in-nās hni yitkallamūn il-lahja, fa ḥabbēt afhamhum",
+    "For me, people here speak the dialect, so I wanted to understand them."
    ],
    [
     "A",
@@ -1553,9 +1553,9 @@
    ],
    [
     "B",
-    "بشكل عام، الشباب يخلطون عربي وإنقليزي، بس العربي باقي قوي",
-    "bi-shakl ʿāmm, ish-shabāb yikhliṭūn ʿarabi w ingilīzi, bas il-ʿarabi bāgi gawi",
-    "On the whole, young people mix Arabic and English, but Arabic is still strong."
+    "بشكل عام، الشباب يخلطون، بس العربي باقي قوي",
+    "bi-shakl ʿāmm, ish-shabāb yikhliṭūn, bas il-ʿarabi bāgi gawi",
+    "On the whole, young people mix (languages), but Arabic is still strong."
    ],
    [
     "A",
@@ -1659,9 +1659,9 @@
    ],
    [
     "B",
-    "الحمد لله! والله توترت وايد على الهوا",
-    "il-ḥamdu lillāh! wallāh twattart wāyid ʿala l-hawa",
-    "Thank God! Honestly, I got really nervous on air."
+    "الحمد لله! في الحقيقة توترت وايد على الهوا",
+    "il-ḥamdu lillāh! fi l-ḥaqīqa twattart wāyid ʿala l-hawa",
+    "Thank God! In fact, I got really nervous on air."
    ],
    [
     "A",
@@ -1671,9 +1671,9 @@
    ],
    [
     "B",
-    "بس حسيت إني أخلط فصحى ولهجة في جملة وحدة",
-    "bas ḥassēt inni akhliṭ fuṣḥa w lahja fi jumla waḥda",
-    "But I felt I was mixing fuṣḥā and dialect in a single sentence."
+    "بشكل عام زين، بس حسيت إني أخلط فصحى ولهجة في جملة وحدة",
+    "bi-shakl ʿāmm zēn, bas ḥassēt inni akhliṭ fuṣḥa w lahja fi jumla waḥda",
+    "On the whole fine, but I felt I was mixing fuṣḥā and dialect in a single sentence."
    ],
    [
     "A",
@@ -1800,9 +1800,9 @@
    ],
    [
     "B",
-    "هلا فيك! كانت حلوة، بس توترت شوي",
-    "hala fīk! kānat ḥilwa, bas twattart shwayy",
-    "Hi! It went well, but I got a bit nervous."
+    "هلا فيك! في الحقيقة كانت حلوة، بس توترت شوي",
+    "hala fīk! fi l-ḥaqīqa kānat ḥilwa, bas twattart shwayy",
+    "Hi! It actually went well, but I got a bit nervous."
    ],
    [
     "A",
@@ -1836,9 +1836,9 @@
    ],
    [
     "B",
-    "باختصار: ليش اللهجة، وشو أصعب شي، وشلون يتكلم الشباب",
-    "b-ikhtiṣār: lēsh il-lahja, w shu aṣʿab shay, w shlōn yitkallam ish-shabāb",
-    "In short: why the dialect, what's the hardest thing, and how young people talk."
+    "باختصار: ليش اللهجة، وشو أكبر تحدي، وشلون يتكلم الشباب",
+    "b-ikhtiṣār: lēsh il-lahja, w shu akbar taḥaddi, w shlōn yitkallam ish-shabāb",
+    "In short: why the dialect, what the biggest challenge is, and how young people talk."
    ],
    [
     "A",
@@ -1953,9 +1953,9 @@
    ],
    [
     "B",
-    "على الهوا الكلام رسمي، بس في المجلس كلام مجالس",
-    "ʿala l-hawa l-kalām rasmi, bas fi l-majlis kalām majālis",
-    "On air the talk is formal, but in the majlis it's majlis talk."
+    "على الهوا رسمي، وفي المجلس كلام مجالس",
+    "ʿala l-hawa rasmi, w fi l-majlis kalām majālis",
+    "On air it's formal, and in the majlis it's majlis talk."
    ],
    [
     "A",
@@ -1977,15 +1977,15 @@
    ],
    [
     "B",
-    "تسلم يا عمي. طال عمرك، إذا ما شي لازم، بنترخص",
-    "tislam yā ʿammi. ṭāl ʿumrak, idha ma shay lāzim, binitrakhkhaṣ",
-    "Thank you, uncle. Sir, if there's nothing you need, we'll take our leave."
+    "طال عمرك، إذا ما شي لازم، بنترخص",
+    "ṭāl ʿumrak, idha ma shay lāzim, binitrakhkhaṣ",
+    "Sir, if there's nothing you need, we'll take our leave."
    ],
    [
     "A",
-    "الله يسلمك. وين بدري؟ بس يلا، الله يوفقكم",
-    "allāh ysallmak. wēn badri? bas yalla, allāh ywaffigkum",
-    "God keep you. Leaving so early? But off you go; God grant you success."
+    "وين؟ بدري! بس يلا، الله يوفقكم",
+    "wēn? badri! bas yalla, allāh ywaffigkum",
+    "What, already? It's early! But off you go; God grant you success."
    ],
    [
     "B",
