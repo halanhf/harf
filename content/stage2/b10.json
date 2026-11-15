@@ -231,7 +231,7 @@
   "stage": 2,
   "title": "You should have told me!",
   "goal": "Complain, lightly, that Sēf went to the desert without you, and get a promise for next time",
-  "tip": "chān + a past verb looks back at what didn't happen: chān gilt-li! 'you should have told me!', chān yīt 'I'd have come'. Between friends it's a light complaint, and the usual answer is ṣaḥḥ, ghalṭati 'true, my fault'. Also: lēsh ma gilt-li? 'why didn't you tell me?'",
+  "tip": "chān + a past verb looks back at what didn't happen: chān gilt-li! 'you should have told me!', chān yīt 'I'd have come'. Between friends it's a light complaint, and you can answer ṣaḥḥ, ghalṭati 'true, my fault'. Also: lēsh ma gilt-li? 'why didn't you tell me?'",
   "grammar": "chān + past: 'should have, would have' (chunks)",
   "dialogue": [
    [
@@ -372,9 +372,9 @@
    ],
    [
     "B",
-    "آه، فهمت! زين عيل. أمك في البيت؟",
-    "ā, fhimt! zēn ʿayal. ummak fi l-bēt?",
-    "Ah, got it! OK, then. Is your mum at home?"
+    "آه، فهمت! زين عيل. أهلك في البيت؟",
+    "ā, fhimt! zēn ʿayal. ahlak fi l-bēt?",
+    "Ah, got it! OK, then. Is your family at home?"
    ],
    [
     "A",
@@ -390,8 +390,8 @@
    ],
    [
     "A",
-    "هب مشكلة، ترا أبوي يرمس إنجليزي. يلا، ما أبا أتأخر",
-    "hub mushkila, tara ubūy yirmis ingilīzi. yalla, ma abā atʼakhkhar",
+    "هب مشكلة، ترا أبويه يرمس إنجليزي. يلا، ما أبا أتأخر",
+    "hub mushkila, tara ubūya yirmis ingilīzi. yalla, ma abā atʼakhkhar",
     "No problem, my dad speaks English. Come on, I don't want to be late."
    ]
   ],
@@ -459,7 +459,7 @@
   "stage": 2,
   "title": "Checkpoint 2.5: the meeting nobody told me about",
   "goal": "Checkpoint: Maryam has just come back from a meeting you missed; ask what happened and complain, lightly, that she didn't call",
-  "tip": "To a woman, taww- takes -ich (tawwich yāya?) and past verbs end in -ti before -li: lēsh ma gilti-li? 'why didn't you tell me?', chān diggēti ʿalay 'you should have called me'. 'We've just' is tawwna + a plural participle: tawwna wāṣlīn.",
+  "tip": "To a woman, taww- takes -ich (tawwich yāya?) and every past 'you' verb ends in -ti: lēsh ma gilti-li? 'why didn't you tell me?', chān daggēti ʿalay 'you should have called me'. 'We've just' is tawwna + a plural participle: tawwna wāṣlīn.",
   "grammar": "checkpoint 2.5: recycle s2u073–s2u088 (taww-, lil-ḥīn, chān, discourse markers, negatives)",
   "dialogue": [
    [
@@ -472,7 +472,7 @@
     "A",
     "هلا فيك. هيه، تونا واصلين من اجتماع ويا المدير",
     "hala fīk. hē, tawwna wāṣlīn min ijtimāʿ wiyya l-mudīr",
-    "Hi. Yes, the manager and I have just got back from a meeting."
+    "Hi. Yes, we've just got back from a meeting with the manager."
    ],
    [
     "B",
@@ -501,7 +501,7 @@
    [
     "B",
     "زين، بروح له. بس جان دقيتي علي!",
-    "zēn, barūḥ-lah. bas chān diggēti ʿalay!",
+    "zēn, barūḥ-lah. bas chān daggēti ʿalay!",
     "OK, I'll go and see him. But you should've called me!"
    ]
   ],
@@ -543,10 +543,10 @@
    ],
    [
     "جان دقيتي علي",
-    "chān diggēti ʿalay",
+    "chān daggēti ʿalay",
     "you should have called me (to a woman)",
     "كان عليكِ أن تتصلي بي",
-    "to a man: chān diggēt ʿalay (جان دقيت علي)"
+    "to a man: chān daggēt ʿalay (جان دقيت علي)"
    ]
   ]
  },
@@ -560,9 +560,9 @@
   "dialogue": [
    [
     "A",
-    "يا ولدي، قول لي عن نفسك. تدرس ولّا تشتغل؟",
-    "yā wildi, gūl-li ʿan nafsak. tidris walla tishtaghil?",
-    "Son, tell me about yourself. Do you study or work?"
+    "يا ولدي، شو تسوي هني؟ تدرس ولّا تشتغل؟",
+    "yā wildi, shu tsawwi hni? tidris walla tishtaghil?",
+    "Son, what do you do here? Do you study or work?"
    ],
    [
     "B",
@@ -580,7 +580,7 @@
     "B",
     "آمين. هيه، عندي أخ وأخت هناك، وأنا أكبر واحد",
     "āmīn. hē, ʿindi akh w ukht hnāk, w ana akbar wāḥid",
-    "Thank you. Yes, I have a brother and a sister there, and I'm the eldest."
+    "Amen. Yes, I have a brother and a sister there, and I'm the eldest."
    ],
    [
     "A",
@@ -603,24 +603,24 @@
   ],
   "items": [
    [
-    "قول لي عن نفسك",
-    "gūl-li ʿan nafsak",
-    "tell me about yourself (to a man)",
-    "حدثني عن نفسك",
-    "to a woman: gūlī-li ʿan nafsich (قولي لي عن نفسج)"
+    "شو تسوي هني؟",
+    "shu tsawwi hni?",
+    "what do you do here? what brings you here? (to a man)",
+    "ماذا تفعل هنا؟",
+    "to a woman: shu tsawwīn hni? (شو تسوين هني؟); say it warmly: on its own it can sound like 'what are you doing here?!'"
    ],
    [
     "تدرس ولّا تشتغل؟",
     "tidris walla tishtaghil?",
     "do you study or work? (to a man)",
     "هل تدرس أم تعمل؟",
-    "to a woman: tidrisīn walla tishtaghlīn?"
+    "to a woman: tidrisīn walla tishtaghlīn? (تدرسين ولّا تشتغلين؟)"
    ],
    [
     "أتدرب",
     "atdarrab",
     "I'm doing an internship, I'm training",
-    "أتدرّب",
+    "أتدرب",
     "an intern, a trainee: mitdarrib (متدرب)"
    ],
    [
