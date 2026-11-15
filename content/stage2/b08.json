@@ -16,7 +16,7 @@
    [
     "A",
     "هلا فيك! على هالخشم. وين العزيمة؟",
-    "hala fīk! ʿala hal-khashm. wēn il-ʿazīma?",
+    "hala fīk! ʿala hal-khashim. wēn il-ʿazīma?",
     "Hi! With pleasure. Where's the dinner?"
    ],
    [
@@ -75,7 +75,7 @@
    ],
    [
     "على هالخشم",
-    "ʿala hal-khashm",
+    "ʿala hal-khashim",
     "with pleasure, gladly (lit. on this nose)",
     "",
     "a warm yes to an invitation or a favour"
@@ -109,7 +109,7 @@
     "the answer to a favour someone asks of you"
    ]
   ],
-  "culture": "Gulf hosts insist, often with wallāh. To turn something down politely, say mashkūr, allāh ykhallīk, or il-marra l-yāya 'next time'. To say yes to an invitation or a favour, ʿala hal-khashm and ʿala rāsi are warm, very Gulf answers."
+  "culture": "Gulf hosts insist, often with wallāh. To turn something down politely, say mashkūr, allāh ykhallīk, or il-marra l-yāya 'next time'. To say yes to an invitation or a favour, ʿala hal-khashim and ʿala rāsi are warm, very Gulf answers."
  },
  {
   "id": "s2u069",
@@ -368,15 +368,15 @@
    ],
    [
     "A",
-    "خلنا نبدا الحين. أنا أكتب وانت تطالع",
-    "khallna nibda l-ḥīn. ana aktib w inta tṭāliʿ",
-    "Let's start now. I'll write and you check it."
+    "خلنا نبدا الحين. أنا أكتب وانت تطالعه",
+    "khallna nibda l-ḥīn. ana aktib w inta tṭālʿah",
+    "Let's start now. I'll write and you look it over."
    ],
    [
     "B",
-    "أوكي. وبعد الشغل نشرب كرك مع الشباب؟",
-    "ōkē. w baʿd ish-shughul nishrab karak maʿa sh-shabāb?",
-    "OK. And after work, shall we have karak with the guys?"
+    "أوكي. وبعد الشغل نشرب كرك كلنا؟",
+    "ōkē. w baʿd ish-shughul nishrab karak killna?",
+    "OK. And after work, shall we all have karak?"
    ],
    [
     "A",
@@ -492,7 +492,7 @@
    [
     "B",
     "على هالخشم! يصير أييب فهد وياي؟",
-    "ʿala hal-khashm! yṣīr ayīb Fahad wiyyāy?",
+    "ʿala hal-khashim! yṣīr ayīb Fahad wiyyāy?",
     "With pleasure! May I bring Fahad with me?"
    ],
    [
@@ -537,11 +537,11 @@
     "to a woman: abshiri ṭāl ʿumrich (أبشري طال عمرج); to an elder or someone senior"
    ],
    [
-    "ودنا",
-    "widdna",
-    "we'd love to",
-    "نود",
-    "widdna nshūfak = we'd love to see you"
+    "ودنا نشوفك",
+    "widdna nshūfak",
+    "we'd love to see you (to a man)",
+    "نود أن نراك",
+    "to a woman: widdna nshūfich (ودنا نشوفج); widdna + verb = we'd love to"
    ],
    [
     "الله يحفظكم",
@@ -595,7 +595,7 @@
     "A",
     "والله؟ أنا كنت زعلانة من الصبح",
     "wallāh? ana kint zaʿlāna min iṣ-ṣubḥ",
-    "Really? I've been upset since this morning."
+    "Really? I was upset all morning."
    ],
    [
     "B",
@@ -977,18 +977,18 @@
     "to a woman: timzaḥīn? (تمزحين؟)"
    ],
    [
-    "كل هذا",
-    "kill hādha",
-    "all this, all that",
-    "كل هذا",
-    ""
+    "بتاكل كل هذا؟",
+    "bitākil kill hādha?",
+    "you're going to eat all that? (to a man)",
+    "هل ستأكل كل هذا؟",
+    "to a woman: bitāklīn kill hādha? (بتاكلين كل هذا؟); said with khēba to tease"
    ],
    [
-    "ما كلت شي",
-    "ma kalt shay",
-    "I haven't eaten anything",
-    "لم آكل شيئًا",
-    ""
+    "يصير آكل وياك؟",
+    "yṣīr ākil wiyyāk?",
+    "can I eat with you? (to a man)",
+    "هل يمكنني أن آكل معك؟",
+    "to a woman: yṣīr ākil wiyyāch? (يصير آكل وياج؟)"
    ],
    [
     "قبل لا يبرد",
