@@ -67,6 +67,7 @@ def main():
                 if r[3] and not AR.search(r[3]): E(f"items[{i}] fuṣḥā column isn't Arabic")
                 k = norm(r[0])
                 if k in seen_items: E(f"items[{i}] {r[0]} already taught in {seen_items[k]}")
+                if norm(r[0]) in HOMOGRAPHS and uid not in HOMOGRAPHS[norm(r[0])]: W(f"items[{i}] {r[0]} is a bare homograph (STYLE §2): teach it inside a chunk")
                 seen_items[k] = uid
                 en, note = r[2].lower(), r[4].lower()
                 if "(to a man)" in en and "woman" not in note: W(f"items[{i}] says (to a man) but the note has no woman's form")
@@ -124,6 +125,8 @@ def dialect_items():  # bare form -> unit id of every taught dialect item
             for it in u.get("items", []):
                 if isinstance(it, list) and it and isinstance(it[0], str): out.setdefault(re.sub(r"^ال", "", norm(it[0])), u.get("id"))
     return out
+
+HOMOGRAPHS = {norm(w): ok for w, ok in [('يدي', ()), ('ويه', ()), ('يا', ()), ('مرة', ('s1u044',)), ('يصلح', ('s3u029',)), ('غير', ()), ('دور', ()), ('تعرف', ()), ('ودي', ()), ('ربع', ()), ('يمه', ('s2u030',)), ('تسلم', ('s1u060',)), ('طب', ('s2u003',)), ('ودنا', ()), ('ارتاح', ()), ('لفت', ()), ('تعور', ())]}
 
 def check_fusha(errs, warns):
     seen = {}
