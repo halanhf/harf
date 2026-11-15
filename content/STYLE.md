@@ -74,7 +74,7 @@ The course follows **CODA-Gulf** (S: Khalifa et al. 2016; Habash et al. 2018) fo
 | negated pronouns | joined | ماني "I'm not", ماهو | S (CODA*) |
 | final tāʼ marbūṭa | always ة; becomes ت before a suffix | سيارة → سيارتي | S (GUMAR) |
 | 3rd person masculine suffix | ـه | بيته bētah, عنده ʿindah | S |
-| alif maqṣūra | as in fuṣḥā | متى, على, سوى | S |
+| alif maqṣūra | as in fuṣḥā; a defective verb's he-form ends in ى because Gulf says -a (نسى nisa, لقى liga, مشى misha) | متى, على, سوى, نسى | S |
 | initial hamza | write أ / إ / آ where fuṣḥā has it (stage 1 practice: أبي, أقدر, أنا, إي, إن شاء الله, آسف). Kept from stage 1: انت, انتي, انتو without hamza | أروح, أعرف; انت | stage 1; CODA* allows either. The linter and attest.py ignore hamza |
 | vowel marks | none. Shadda only where it prevents a misreading (ريّال "man" vs ريال the coin) | — | lint warns on other marks |
 | Persian letters چ گ ڤ پ | never in an Arabic field. Allowed in a note: "you'll see written چاي" | — | S (CODA* uses none) |
