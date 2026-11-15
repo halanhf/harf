@@ -21,15 +21,15 @@
    ],
    [
     "B",
-    "في شقتي. تقدر تقول لفهد بعد؟",
-    "fi shiggti. tigdar tgūl l-Fahad baʿad?",
-    "At my flat. Can you tell Fahad too?"
+    "في شقتي. وفهد والشباب؟ قول لهم، الله يخليك",
+    "fi shiggti. w Fahad w ish-shabāb? gūl-lhum, allāh ykhallīk",
+    "At my flat. And Fahad and the guys? Tell them, please."
    ],
    [
     "A",
-    "أبشر! بس سوي لنا كرك بعد العشا",
-    "abshir! bas sawwī-lna karak baʿd il-ʿasha",
-    "You got it! But make us karak after dinner."
+    "أبشر! بس سوي لنا كرك مثل ما تسويه أمي",
+    "abshir! bas sawwī-lna karak mithil ma tsawwīh ummi",
+    "You got it! But make us karak the way my mum makes it."
    ],
    [
     "B",
@@ -39,9 +39,9 @@
    ],
    [
     "A",
-    "أكل بريطاني؟ إن شاء الله زين!",
-    "akil brīṭāni? in shāʼ allāh zēn!",
-    "British food? Let's hope it's good!"
+    "أكل بريطاني؟ إن شاء الله ريحته حلوة!",
+    "akil brīṭāni? in shāʼ allāh rīḥtah ḥilwa!",
+    "British food? Let's hope it smells good!"
    ]
   ],
   "items": [
@@ -127,15 +127,15 @@
    ],
    [
     "B",
-    "ودي والله، بس عندي امتحان الساعة ثنتين",
-    "widdi wallāh, bas ʿindi imtiḥān is-sāʿa thintēn",
-    "I'd really love to, but I've got an exam at two."
+    "ودي والله، بس عندي محاضرة الساعة ثنتين",
+    "widdi wallāh, bas ʿindi muḥāẓra is-sāʿa thintēn",
+    "I'd really love to, but I've got a lecture at two."
    ],
    [
     "A",
-    "خسارة! وبعد الامتحان؟ نحن في المطعم اللي صوب المكتب",
-    "khasāra! w baʿd il-imtiḥān? niḥin fi l-maṭʿam illi ṣōb il-maktab",
-    "Shame! What about after the exam? We'll be at the restaurant near the office."
+    "خسارة! وبعد المحاضرة؟ نحن في المطعم اللي صوب المكتب",
+    "khasāra! w baʿd il-muḥāẓra? niḥin fi l-maṭʿam illi ṣōb il-maktab",
+    "Shame! What about after the lecture? We'll be at the restaurant near the office."
    ],
    [
     "B",
@@ -157,9 +157,9 @@
    ],
    [
     "A",
-    "أكيد. ونترياك!",
-    "akīd. w nitrayyāk!",
-    "Of course. And we'll wait for you!"
+    "أكيد. وما عليه، نترياك!",
+    "akīd. w ma ʿalēh, nitrayyāk!",
+    "Of course. And don't worry, we'll wait for you!"
    ]
   ],
   "items": [
@@ -171,11 +171,11 @@
     "a kind way to say no"
    ],
    [
-    "ودك تيي؟",
-    "widdak tiyi?",
-    "would you like to come? (to a man)",
-    "هل تود أن تأتي؟",
-    "to a woman: widdich tiyīn? (ودج تيين؟)"
+    "ودك…؟",
+    "widdak…?",
+    "would you like to…? (to a man)",
+    "هل تود…؟",
+    "to a woman: widdich…? (ودج…؟); widdak tiyi? = would you like to come?"
    ],
    [
     "ودي أشوف",
@@ -251,9 +251,9 @@
    ],
    [
     "A",
-    "والله فكرة! خل نقول لفهد بعد",
-    "wallāh fikra! khal ngūl l-Fahad baʿad",
-    "Good idea! Let's tell Fahad too."
+    "والله فكرة! خل نقول للجماعة بعد",
+    "wallāh fikra! khal ngūl lil-jamāʿa baʿad",
+    "Good idea! Let's tell the others too."
    ],
    [
     "B",
@@ -263,15 +263,15 @@
    ],
    [
     "A",
-    "أكيد يصير! في مكان في السيارة",
-    "akīd yṣīr! fī makān fi s-sayyāra",
-    "Of course! There's room in the car."
+    "أبشر! في مكان في السيارة",
+    "abshir! fī makān fi s-sayyāra",
+    "Sure thing! There's room in the car."
    ],
    [
     "B",
-    "بس يصير نرجع بدري؟ لازم أذاكر",
-    "bas yṣīr nirjaʿ badri? lāzim adhākir",
-    "But can we come back early? I have to revise."
+    "وحبيت أسألك: يصير نرجع بدري؟ لازم أذاكر",
+    "w ḥabbēt asʼalak: yṣīr nirjaʿ badri? lāzim adhākir",
+    "And I wanted to ask: can we come back early? I have to revise."
    ],
    [
     "A",
@@ -386,9 +386,9 @@
    ],
    [
     "B",
-    "يا جماعة! خلونا نطلع الساعة خمس",
-    "yā jamāʿa! khallūna niṭlaʿ is-sāʿa khams",
-    "Everyone! Let's head out at five."
+    "يا جماعة! خلونا نطلع الساعة خمس. يصير؟",
+    "yā jamāʿa! khallūna niṭlaʿ is-sāʿa khams. yṣīr?",
+    "Everyone! Let's head out at five. OK?"
    ],
    [
     "A",
@@ -587,9 +587,9 @@
    ],
    [
     "B",
-    "صج؟ بس العرض كان وايد زين!",
-    "ṣij? bas il-ʿarẓ kān wāyid zēn!",
-    "Really? But the presentation was really good!"
+    "صج؟ بس العرض كان حلو! أنا حبيته",
+    "ṣij? bas il-ʿarẓ kān ḥilu! ana ḥabbētah",
+    "Really? But the presentation was good! I liked it."
    ],
    [
     "A",
@@ -599,15 +599,15 @@
    ],
    [
     "B",
-    "لا تزعلين. يمكن المدير كان تعبان اليوم",
-    "la tizʿalīn. yimkin il-mudīr kān taʿbān il-yōm",
-    "Don't be upset. Maybe the manager was just tired today."
+    "ما عليه، لا تزعلين. يمكن المدير كان تعبان",
+    "ma ʿalēh, la tizʿalīn. yimkin il-mudīr kān taʿbān",
+    "Never mind, don't be upset. Maybe the manager was tired."
    ],
    [
     "A",
-    "يمكن. الحين أحسن، الحمد لله",
-    "yimkin. il-ḥīn aḥsan, il-ḥamdu lillāh",
-    "Maybe. I feel better now, thank God."
+    "يمكن. الحين أحسن. يلا، نبدا الشغل",
+    "yimkin. il-ḥīn aḥsan. yalla, nibda sh-shughul",
+    "Maybe. I feel better now. Come on, let's get to work."
    ]
   ],
   "items": [
@@ -685,9 +685,9 @@
    ],
    [
     "B",
-    "لا تعصب يا ريّال. في مكان ثاني هناك",
-    "la tʿaṣṣib yā rayyāl. fī makān thāni hnāk",
-    "Calm down, mate. There's another spot over there."
+    "لا تعصب يا ريّال. خل نشوف، في مكان ثاني هناك",
+    "la tʿaṣṣib yā rayyāl. khal nshūf, fī makān thāni hnāk",
+    "Calm down, mate. Let's see, there's another spot over there."
    ],
    [
     "A",
@@ -703,9 +703,9 @@
    ],
    [
     "A",
-    "الامتحان اللي كان أمس، ما نجحت فيه",
-    "il-imtiḥān illi kān ams, ma nijaḥt fīh",
-    "The exam yesterday: I didn't pass it."
+    "الامتحان اللي كان أمس، ما نجحت فيه. وايد زعلان",
+    "il-imtiḥān illi kān ams, ma nijaḥt fīh. wāyid zaʿlān",
+    "The exam yesterday: I didn't pass it. I'm really upset."
    ],
    [
     "B",
@@ -754,7 +754,7 @@
     "allāh yihdāk",
     "come on now (gentle telling-off, lit. God guide you) (to a man)",
     "هداك الله",
-    "to a woman: allāh yihdāch (الله يهداج); to friends, not to elders"
+    "to a woman: allāh yihdāch (الله يهداج)"
    ],
    [
     "كل يوم جي",
@@ -796,9 +796,9 @@
   "dialogue": [
    [
     "A",
-    "شو صار في العرض اليوم؟",
-    "shu ṣār fi l-ʿarẓ il-yōm?",
-    "What happened with the presentation today?"
+    "شو صار في العرض اللي سويته اليوم؟",
+    "shu ṣār fi l-ʿarẓ illi sawwētah il-yōm?",
+    "How did the presentation you gave today go?"
    ],
    [
     "B",
@@ -820,9 +820,9 @@
    ],
    [
     "A",
-    "مبروك! الليلة العشا على حسابي",
-    "mabrūk! il-lēla l-ʿasha ʿala ḥsābi",
-    "Congratulations! Tonight dinner's on me."
+    "صج؟ مبروك! الليلة العشا على حسابي",
+    "ṣij? mabrūk! il-lēla l-ʿasha ʿala ḥsābi",
+    "Really? Congratulations! Tonight dinner's on me."
    ],
    [
     "B",
@@ -832,9 +832,9 @@
    ],
    [
     "A",
-    "شوي! بس الحين أنا بعد مستانس",
-    "shwayy! bas il-ḥīn ana baʿad mistānis",
-    "A bit! But now I'm happy too."
+    "شوي! بس الحين أحسن، وأنا بعد مستانس",
+    "shwayy! bas il-ḥīn aḥsan, w ana baʿad mistānis",
+    "A bit! But it's all fine now, and I'm happy too."
    ]
   ],
   "items": [
@@ -918,9 +918,9 @@
    ],
    [
     "A",
-    "أمزح وياك! بالعافية",
-    "amzaḥ wiyyāk! bil-ʿāfya",
-    "I'm joking! Enjoy your food."
+    "أمزح وياك! لا تعصب. بالعافية",
+    "amzaḥ wiyyāk! la tʿaṣṣib. bil-ʿāfya",
+    "I'm joking! Don't get cross. Enjoy your food."
    ],
    [
     "B",
@@ -939,6 +939,12 @@
     "خيبة! يلا، خلنا ناكل قبل لا يبرد",
     "khēba! yalla, khallna nākil gabil la yibrad",
     "Seriously?! Come on, let's eat before it gets cold."
+   ],
+   [
+    "A",
+    "صح كلامك! يصير آكل وياك؟",
+    "ṣaḥḥ kalāmak! yṣīr ākil wiyyāk?",
+    "You're right! Can I eat with you?"
    ]
   ],
   "items": [

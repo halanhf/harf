@@ -121,7 +121,7 @@
   "stage": 2,
   "title": "Shops in Deira",
   "goal": "At work, Maryam tells you where she shops: talk about shops, souqs and streets",
-  "tip": "Words in -a add -āt: sayyāra → sayyārāt; so do some others, maḥall → maḥallāt. Other plurals are broken: sūg → aswāg, ʿiṭir → ʿuṭūr, shāriʿ → shawāriʿ. Plurals of things take a feminine singular adjective: il-maḥallāt ghālya 'the shops are expensive'.",
+  "tip": "Words in -a add -āt: sayyāra → sayyārāt; so do some others, maḥall → maḥallāt. Other plurals are broken: sūg → aswāg, ʿiṭir → ʿuṭūr, maṭʿam → maṭāʿim. Plurals of things take a feminine singular adjective: il-maḥallāt ghālya 'the shops are expensive'.",
   "grammar": "sound plurals -āt (sayyāra → sayyārāt); plural things take a feminine adjective",
   "dialogue": [
    [
@@ -150,9 +150,9 @@
    ],
    [
     "A",
-    "كل شي! فيها محلات وايد، عطور وملابس",
-    "kill shay! fīha maḥallāt wāyid, ʿuṭūr w malābis",
-    "Everything! There are loads of shops there, perfumes and clothes."
+    "كل شي! فيها عطور وملابس ومطاعم وايد",
+    "kill shay! fīha ʿuṭūr w malābis w maṭāʿim wāyid",
+    "Everything! There are perfumes, clothes and loads of restaurants."
    ],
    [
     "B",
@@ -190,11 +190,11 @@
     "one: sayyāra (سيارة); the cars: is-sayyārāt"
    ],
    [
-    "غالية",
-    "ghālya",
-    "expensive (with a feminine noun or a plural of things)",
-    "غالية",
-    "masculine: ghāli (غالي); il-maḥallāt ghālya 'the shops are expensive'"
+    "مطاعم",
+    "maṭāʿim",
+    "restaurants",
+    "مطاعم",
+    "one: maṭʿam (مطعم)"
    ],
    [
     "عطور",
@@ -218,11 +218,11 @@
     "one: shāriʿ (شارع)"
    ],
    [
-    "تشتري",
-    "tishtiri",
-    "you buy (to a man)",
-    "تشتري",
-    "to a woman: tishtirīn (تشترين)"
+    "تشترين",
+    "tishtirīn",
+    "you buy (to a woman)",
+    "تشترين",
+    "to a man: tishtiri (تشتري)"
    ],
    [
     "فيها",
