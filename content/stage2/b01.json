@@ -495,7 +495,7 @@
    [
     "A",
     "هيه، ربعنا يلعبون كل خميس. تبي تيي؟",
-    "hē, rabʿna yilʿabūn kill khamīs. tabi tyī?",
+    "hē, rabʿna yilʿabūn kill khamīs. tabi tiyi?",
     "Yes, our mates play every Thursday. Want to come?"
    ],
    [
@@ -1135,31 +1135,31 @@
   "stage": 2,
   "title": "When are you coming?",
   "goal": "Take a call from Umm Sēf about lunch tomorrow, and say you'd like to learn her harees.",
-  "tip": "'Come' in the present: ayī (I come), tyī (you come, to a man), yyī (he comes), nyī (we come); to a woman tyīn, to a group tyūn. 'It' or 'him' after a verb ending in a vowel is -īh: nsawwi → nsawwīh (we make it), asawwi → asawwīh. After a consonant it's -ah: aḥibb → aḥibbah.",
-  "grammar": "Present tense II: 'come' (ayī, tyī, yyī); object -īh after a vowel (nsawwīh)",
+  "tip": "'Come': ayi (I), tiyi (you, to a man; she), yiyi (he), niyi (we); tiyīn to a woman, tiyūn to a group, yiyūn (they). 'It' or 'him' after a verb ending in a vowel is -īh: nsawwi → nsawwīh (we make it). After a consonant it's -ah: aḥibb → aḥibbah.",
+  "grammar": "Present tense II: 'come' (ayi, tiyi, yiyi); object -īh after a vowel (nsawwīh)",
   "dialogue": [
    [
     "A",
     "سالم، متى تيي باكر؟",
-    "Sālim, mita tyī bāchir?",
+    "Sālim, mita tiyi bāchir?",
     "Salim, when are you coming tomorrow?"
    ],
    [
     "B",
     "أيي الساعة وحدة إن شاء الله",
-    "ayī is-sāʿa waḥda in shāʼ allāh",
+    "ayi is-sāʿa waḥda in shāʼ allāh",
     "I'll come at one, God willing."
    ],
    [
     "A",
-    "زين. وسيف يي وياك؟",
-    "zēn. w Sēf yyī wiyyāk?",
+    "زين. وسيف ييي وياك؟",
+    "zēn. w Sēf yiyi wiyyāk?",
     "Good. Is Sēf coming with you?"
    ],
    [
     "B",
-    "لا، يي بعد الدوام",
-    "la, yyī baʿd id-dawām",
+    "لا، ييي بعد الدوام",
+    "la, yiyi baʿd id-dawām",
     "No, he's coming after work."
    ],
    [
@@ -1184,24 +1184,24 @@
   "items": [
    [
     "متى تيي؟",
-    "mita tyī?",
+    "mita tiyi?",
     "when are you coming? (to a man)",
     "متى تأتي؟",
-    "to a woman: mita tyīn? (متى تيين؟)"
+    "to a woman: mita tiyīn? (متى تيين؟)"
    ],
    [
     "أيي",
-    "ayī",
+    "ayi",
     "I come, I'm coming",
     "آتي",
     "you'll see written اجي"
    ],
    [
-    "يي",
-    "yyī",
+    "ييي",
+    "yiyi",
     "he comes, he's coming",
     "يأتي",
-    "she comes: tyī (تيي); they come: yyūn (ييون); you'll see written يجي"
+    "she comes: tiyi (تيي); they come: yiyūn (ييون); you'll see written يي or يجي"
    ],
    [
     "وياك",
@@ -1252,7 +1252,7 @@
    [
     "A",
     "كل أسبوع تيي هني؟",
-    "kill usbūʿ tyī hni?",
+    "kill usbūʿ tiyi hni?",
     "Do you come here every week?"
    ],
    [

@@ -54,6 +54,7 @@ def main():
             if "receptive" in u and not (isinstance(u["receptive"], list) and all(isinstance(i, int) and 0 <= i < len(it or []) for i in u["receptive"]) and len(set(u["receptive"])) == len(u["receptive"])): E("receptive must list item indexes")
             if not (isinstance(dl, list) and 3 <= len(dl) <= 10): E("dialogue must have 3-10 lines"); dl = []
             if not (isinstance(it, list) and 5 <= len(it) <= 9): E("items must be 5-9"); it = []
+            elif n >= 2 and len(it) < 8 and not re.search(r"checkpoint|exit", str(u.get("title", "")) + str(u.get("goal", "")), re.I): W(f"only {len(it)} items: normal lessons need 8-9 (FRAMEWORK item arithmetic)")
             for i, l in enumerate(dl):
                 if not (isinstance(l, list) and len(l) == 4 and l[0] in ("A", "B") and all(isinstance(x, str) and x.strip() for x in l[1:])): E(f"dialogue[{i}] shape"); continue
                 check_line(l[1], l[2], l[3], f"dialogue[{i}]", E, W, 200)
