@@ -271,128 +271,121 @@
   {
     "id": "s4u099",
     "stage": 4,
-    "title": "Government or private, uncle?",
-    "goal": "In Bū Rāshid's majlis, with Sēf there, tell him what work you hope to do, and give your view on Sēf's choice of the private sector",
-    "tip": "Recycle atmanna + verb for your hopes: atmanna ashtaghil muhandis 'I hope to work as an engineer'. Weigh it up with a comparative: il-ḥukūma aẓman 'the government's safer', yitʿallam asraʿ 'he learns faster'. To an elder, agree before you add your point: ṣaḥḥ yā ʿammi, bas…",
-    "grammar": "recycle: atmanna + verb; comparatives (aẓman, asraʿ); ṣaḥḥ … bas … with an elder",
+    "title": "What should Rāshid study?",
+    "goal": "In Bū Rāshid's majlis, with Sēf there, he asks your advice: Rāshid wants to study programming, not medicine; give your view respectfully",
+    "tip": "Recycle comparatives to weigh it up: iṭ-ṭibb aẓman 'medicine's safer'. Stress the person with a pronoun at the end: shu yabi huwa? 'and what does he want?'. To an elder, agree before you add your point: ṣaḥḥ yā ʿammi, … bas…",
+    "grammar": "recycle: comparatives (aẓman); stress with a pronoun (shu yabi huwa?); ṣaḥḥ … bas … with an elder",
     "dialogue": [
       [
         "A",
-        "ها يا ولدي، قربت تتخرج. شو ناوي تشتغل؟",
-        "hā yā wildi, garrabt titkharraj. shu nāwi tishtaghil?",
-        "So, son, you're nearly graduating. What are you planning to work as?"
+        "يا ولدي، راشد بيخلص المدرسة هالسنة، وهو محتار شو يدرس",
+        "yā wildi, Rāshid biykhalliṣ il-madrasa has-sana, w huwa miḥtār shu yidris",
+        "Son, Rāshid finishes school this year, and he can't decide what to study."
       ],
       [
         "B",
-        "أتمنى أشتغل مهندس في شركة طاقة",
-        "atmanna ashtaghil muhandis fi sharikat ṭāqa",
-        "I hope to work as an engineer in an energy company."
+        "ما شاء الله! وشو يبي هو؟",
+        "mā shāʼ allāh! w shu yabi huwa?",
+        "Wonderful! And what does he want?"
       ],
       [
         "A",
-        "ما شاء الله. وسيف يقول يبي القطاع الخاص، وأنا أقول له الحكومة أضمن",
-        "mā shāʼ allāh. w Sēf ygūl yabi l-qiṭāʿ il-khāṣṣ, w ana agūl-lah il-ḥukūma aẓman",
-        "Wonderful. And Sēf says he wants the private sector, and I tell him the government's safer."
+        "يبي يدرس برمجة، وأنا أقول له الطب أضمن",
+        "yabi yidris barmaja, w ana agūl-lah iṭ-ṭibb aẓman",
+        "He wants to study programming, and I tell him medicine's safer."
       ],
       [
         "B",
-        "صح يا عمي، بس في الخاص يتعلم أسرع",
-        "ṣaḥḥ yā ʿammi, bas fi l-khāṣṣ yitʿallam asraʿ",
-        "True, uncle, but in the private sector he'll learn faster."
+        "صح يا عمي، الطب زين. بس البرمجة مطلوبة وايد الحين",
+        "ṣaḥḥ yā ʿammi, iṭ-ṭibb zēn. bas il-barmaja maṭlūba wāyid il-ḥīn",
+        "True, uncle, medicine's good. But programming's in great demand now."
       ],
       [
         "A",
-        "يتعلم، بس الدوام طويل والراتب على حسب الشركة",
-        "yitʿallam, bas id-dawām ṭawīl w ir-rātib ʿala ḥasab ish-sharika",
-        "He'll learn, but the hours are long and the pay depends on the company."
+        "مطلوبة؟ بس شو يشتغلون فيها؟",
+        "maṭlūba? bas shu yishtaghlūn fīha?",
+        "In demand? But what work do they do with it?"
       ],
       [
         "B",
-        "كلامك صح. بس الخبرة اللي بياخذها ما تتعوض",
-        "kalāmak ṣaḥḥ. bas il-khibra illi biyākhidhha ma titʿawwaẓ",
-        "You're right. But the experience he'll get is something you can't replace."
+        "وايد شي. يسوون تطبيقات، ويشتغلون في كل الشركات",
+        "wāyid shay. ysawwūn taṭbīgāt, w yishtaghlūn fi kill ish-sharikāt",
+        "All sorts. They make apps, and they work in every company."
       ],
       [
         "A",
-        "يعني انت ويا سيف؟",
-        "yaʿni inta wiyya Sēf?",
-        "So you're on Sēf's side?"
+        "يعني تنصحني أخليه يدرس اللي يبيه؟",
+        "yaʿni tinṣaḥni akhallīh yidris illi yabīh?",
+        "So you'd advise me to let him study what he wants?"
       ],
       [
         "B",
-        "أنا ويا اللي يحبه. إذا يحب شغله، بينجح",
-        "ana wiyya illi yḥibbah. idha yḥibb shughlah, biyinjaḥ",
-        "I'm for whatever he loves. If he loves his work, he'll do well."
+        "هيه يا عمي. اللي يحب شغله ينجح فيه",
+        "hē yā ʿammi. illi yḥibb shughlah yinjaḥ fīh",
+        "Yes, uncle. Whoever loves their work does well at it."
       ],
       [
         "A",
-        "هذا عين العقل! الله يوفقكم انتو الثنين",
-        "hādha ʿēn il-ʿagil! allāh ywaffigkum intu th-thnēn",
-        "That's very wise! May God grant you both success."
+        "هذا عين العقل! بقول له إن سالم وياه",
+        "hādha ʿēn il-ʿagil! bagūl-lah inn Sālim wiyyāh",
+        "That's very wise! I'll tell him Sālim's on his side."
       ],
       [
         "B",
-        "آمين، ويخليك لنا يا عمي",
-        "āmīn, w ykhallīk lana yā ʿammi",
-        "Amen, and may God keep you for us, uncle."
+        "وقول له إذا احتاج شي، أنا موجود",
+        "w gūl-lah idha ḥtāj shay, ana mawjūd",
+        "And tell him if he needs anything, I'm here."
       ]
     ],
     "items": [
       [
-        "قربت تتخرج",
-        "garrabt titkharraj",
-        "you're about to graduate, you've nearly graduated (to a man)",
-        "أوشكت على التخرج",
-        "to a woman: garrabti titkharrajīn (قربتي تتخرجين)"
+        "بيخلص المدرسة",
+        "biykhalliṣ il-madrasa",
+        "he'll finish school, he's finishing school",
+        "سينهي المدرسة",
+        "she'll finish school: bitkhalliṣ il-madrasa (بتخلص المدرسة)"
       ],
       [
-        "أشتغل مهندس",
-        "ashtaghil muhandis",
-        "(to) work as an engineer; I work as an engineer",
-        "أعمل مهندسًا",
+        "محتار",
+        "miḥtār",
+        "can't decide, torn, unsure (a man)",
+        "محتار",
+        "a woman: miḥtāra (محتارة)"
+      ],
+      [
+        "يدرس برمجة",
+        "yidris barmaja",
+        "he studies programming, (to) study programming",
+        "يدرس البرمجة",
+        "programming: il-barmaja (البرمجة)"
+      ],
+      [
+        "الطب أضمن",
+        "iṭ-ṭibb aẓman",
+        "medicine's safer, medicine's a surer bet",
+        "الطب أضمن",
         ""
       ],
       [
-        "القطاع الخاص",
-        "il-qiṭāʿ il-khāṣṣ",
-        "the private sector",
-        "القطاع الخاص",
-        "in speech often just il-khāṣṣ; (recognise)"
+        "مطلوبة وايد",
+        "maṭlūba wāyid",
+        "in great demand, much sought after (a feminine thing)",
+        "مطلوبة كثيرًا",
+        "a masculine thing: maṭlūb wāyid (مطلوب وايد)"
       ],
       [
-        "الحكومة أضمن",
-        "il-ḥukūma aẓman",
-        "the government's safer, a government job is more secure",
-        "العمل الحكومي أضمن",
+        "يسوون تطبيقات",
+        "ysawwūn taṭbīgāt",
+        "they make apps",
+        "يصنعون تطبيقات",
         ""
       ],
       [
-        "يتعلم أسرع",
-        "yitʿallam asraʿ",
-        "he learns faster, he'll learn faster",
-        "يتعلم أسرع",
+        "اللي يحب شغله",
+        "illi yḥibb shughlah",
+        "whoever loves their work, someone who loves his job",
+        "من يحب عمله",
         ""
-      ],
-      [
-        "الدوام طويل",
-        "id-dawām ṭawīl",
-        "the hours are long, it's a long working day",
-        "ساعات العمل طويلة",
-        ""
-      ],
-      [
-        "الراتب على حسب الشركة",
-        "ir-rātib ʿala ḥasab ish-sharika",
-        "the pay depends on the company",
-        "الراتب يعتمد على الشركة",
-        ""
-      ],
-      [
-        "يحب شغله",
-        "yḥibb shughlah",
-        "he loves his work, he likes his job",
-        "يحب عمله",
-        "she loves her work: tḥibb shughulha (تحب شغلها)"
       ],
       [
         "هذا عين العقل",
@@ -403,8 +396,7 @@
       ]
     ],
     "receptive": [
-      2,
-      8
+      7
     ]
   },
   {
@@ -430,7 +422,7 @@
       [
         "A",
         "يعني بعد عشر سنين، شو بيكون صار؟",
-        "yaʿni baʿd ʿashr snīn, shu biykūn ṣār?",
+        "yaʿni baʿd ʿashr sinīn, shu biykūn ṣār?",
         "So in ten years, what will have happened?"
       ],
       [
@@ -549,140 +541,141 @@
   {
     "id": "s4u101",
     "stage": 4,
-    "title": "Can you look at my CV?",
-    "goal": "At the office, ask Maryam to look over your CV before you apply for a graduate job, and take her advice",
-    "tip": "Recycle iyyā- for 'it' after a verb that already has 'to you': ṭarrashtich iyyāha 'I sent it (f.) to you' (to a woman). To ask a colleague's advice politely: ʿindich dagīga? abi raʼyich…",
-    "grammar": "recycle: double objects with iyyā- (ṭarrashtich iyyāha); commands to a man",
+    "title": "The deadline's Thursday",
+    "goal": "In the university library, help Sēf finish his scholarship application before the deadline: the essay, the reference letter and a copy of everything",
+    "tip": "Recycle 'it' + l- 'to you': ṭarrashtah lak 'I sent it (m.) to you'. Put the thing first to stress it: il-maqāl ṭarrishah li 'the essay, send it to me'. You'll hear fuṣḥā terms: ākhir mawʿid lit-taqdīm 'the deadline', risālat tawṣiya 'a reference'.",
+    "grammar": "recycle: object + l- (ṭarrashtah lak); biykūn + past; topic first (il-maqāl ṭarrishah li)",
     "dialogue": [
       [
-        "B",
-        "مريم، عندج دقيقة؟ أبي رأيج في سيرتي الذاتية",
-        "Maryam, ʿindich dagīga? abi raʼyich fi sīrti dh-dhātiyya",
-        "Maryam, have you got a minute? I'd like your opinion on my CV."
-      ],
-      [
         "A",
-        "أكيد. طرشها لي على الإيميل وبشوفها الحين",
-        "akīd. ṭarrishha li ʿala l-īmēl w bashūfha l-ḥīn",
-        "Sure. Send it to me by email and I'll look at it now."
+        "ساعدني يا ريّال، آخر موعد للتقديم على البعثة يوم الخميس الياي!",
+        "sāʿidni yā rayyāl, ākhir mawʿid lit-taqdīm ʿala l-baʿtha yōm il-khamīs il-yāy!",
+        "Help me, man: the deadline to apply for the scholarship is next Thursday!"
       ],
       [
         "B",
-        "طرشتج إياها الصبح",
-        "ṭarrashtich iyyāha ṣ-ṣubḥ",
-        "I sent it to you this morning."
+        "أبشر. شو باقي؟",
+        "abshir. shu bāgi?",
+        "You got it. What's left?"
       ],
       [
         "A",
-        "آه صح، شفتها. حلوة، بس طويلة شوي. صفحتين وايد",
-        "āh ṣaḥḥ, shift-ha. ḥilwa, bas ṭawīla shwayy. ṣafḥatēn wāyid",
-        "Ah right, I've seen it. It's good, but a bit long. Two pages is too much."
+        "المقال بالإنجليزي، ورسالة توصية من الدكتور حق المادة",
+        "il-maqāl bil-ingilīzi, w risālat tawṣiya min id-daktōr ḥagg il-mādda",
+        "The essay in English, and a reference letter from the professor who teaches the course."
       ],
       [
         "B",
-        "يعني أشيل شي منها؟",
-        "yaʿni ashīl shay minha?",
-        "So should I take something out of it?"
+        "المقال طرشه لي، وبراجعه الليلة",
+        "il-maqāl ṭarrishah li, w barājʿah il-lēla",
+        "The essay, send it to me, and I'll go over it tonight."
       ],
       [
         "A",
-        "شيل الهوايات، وحط التدريب ويانا فوق. هذي أهم خبرة عندك",
-        "shīl il-hiwāyāt, w ḥuṭṭ it-tadrīb wiyyāna fōg. hādhi ahamm khibra ʿindak",
-        "Take out the hobbies and put your internship with us at the top. That's the most important experience you've got."
+        "طرشته لك أمس! ما شفته؟",
+        "ṭarrashtah lak ams! ma shiftah?",
+        "I sent it to you yesterday! Didn't you see it?"
       ],
       [
         "B",
-        "زين. وأكتب رسالة بعد؟",
-        "zēn. w aktib risāla baʿad?",
-        "OK. And should I write a letter as well?"
+        "والله ما انتبهت. والدكتور؟ كلمته؟",
+        "wallāh ma ntibaht. w id-daktōr? kallamtah?",
+        "Honestly, I didn't notice. And the professor? Have you talked to him?"
       ],
       [
         "A",
-        "هيه، رسالة قصيرة. قول فيها ليش تبي هالوظيفة بالذات",
-        "hē, risāla gaṣīra. gūl fīha lēsh tabi hal-waẓīfa bidh-dhāt",
-        "Yes, a short letter. Say in it why you want this job in particular."
+        "هيه، قال بيكون كتبها قبل يوم الأربعاء",
+        "hē, gāl biykūn kitabha gabil yōm il-arbiʿāʼ",
+        "Yes, he said he'll have written it before Wednesday."
       ],
       [
         "B",
-        "مشكورة يا مريم، ما قصرتي",
-        "mashkūra yā Maryam, mā gaṣṣarti",
-        "Thanks, Maryam, that's really kind of you."
+        "زين. ولا تنسى تحفظ نسخة من كل شي",
+        "zēn. w la tinsa tiḥfaẓ nuskha min kill shay",
+        "Good. And don't forget to keep a copy of everything."
       ],
       [
         "A",
-        "ما سوينا شي. وخبرني إذا ردوا عليك",
-        "mā sawwēna shay. w khabbirni idha raddaw ʿalēk",
-        "It was nothing. And let me know if they get back to you."
+        "إن شاء الله. وإذا طلعت لي البعثة، العشا علي!",
+        "in shāʼ allāh. w idha ṭilʿat-li l-baʿtha, il-ʿasha ʿalay!",
+        "God willing. And if I get the scholarship, dinner's on me!"
+      ],
+      [
+        "B",
+        "اتفقنا! وبتطلع لك إن شاء الله",
+        "ittafagna! w bitiṭlaʿ-lak in shāʼ allāh",
+        "Deal! And you'll get it, God willing."
       ]
     ],
     "items": [
       [
-        "سيرتي الذاتية",
-        "sīrti dh-dhātiyya",
-        "my CV",
-        "سيرتي الذاتية",
-        "a CV: sīra dhātiyya (سيرة ذاتية); many people just say is-sī vī"
-      ],
-      [
-        "طرشتج إياها",
-        "ṭarrashtich iyyāha",
-        "I sent it (f.) to you (to a woman)",
-        "أرسلتها إليكِ",
-        "to a man: ṭarrashtak iyyāha (طرشتك إياها)"
-      ],
-      [
-        "طويلة شوي",
-        "ṭawīla shwayy",
-        "a bit long (a feminine thing)",
-        "طويلة قليلًا",
-        "a masculine thing: ṭawīl shwayy (طويل شوي)"
-      ],
-      [
-        "أشيل شي",
-        "ashīl shay",
-        "(should I) take something out, (I) cut something",
-        "أحذف شيئًا",
-        ""
-      ],
-      [
-        "شيل الهوايات",
-        "shīl il-hiwāyāt",
-        "take out the hobbies (to a man)",
-        "احذف الهوايات",
-        "to a woman: shīli l-hiwāyāt (شيلي الهوايات)"
-      ],
-      [
-        "أهم خبرة",
-        "ahamm khibra",
-        "the most important experience",
-        "أهم خبرة",
-        ""
-      ],
-      [
-        "رسالة قصيرة",
-        "risāla gaṣīra",
-        "a short letter, a short message",
-        "رسالة قصيرة",
-        "a cover letter is also called a cover letter in English at work"
-      ],
-      [
-        "بالذات",
-        "bidh-dhāt",
-        "in particular, this very one",
-        "بالذات",
+        "آخر موعد للتقديم",
+        "ākhir mawʿid lit-taqdīm",
+        "the deadline (to apply), the last day for applications",
+        "آخر موعد للتقديم",
         "(recognise)"
       ],
       [
-        "إذا ردوا عليك",
-        "idha raddaw ʿalēk",
-        "if they get back to you, if they answer you (to a man)",
-        "إذا ردوا عليك",
-        "to a woman: idha raddaw ʿalēch (إذا ردوا عليج); (recognise)"
+        "شو باقي؟",
+        "shu bāgi?",
+        "what's left? what else is there (to do)?",
+        "ماذا بقي؟",
+        ""
+      ],
+      [
+        "المقال طرشه لي",
+        "il-maqāl ṭarrishah li",
+        "send me the essay, the essay, send it to me (to a man)",
+        "أرسل لي المقال",
+        "to a woman: il-maqāl ṭarrshīh li (المقال طرشيه لي)"
+      ],
+      [
+        "رسالة توصية",
+        "risālat tawṣiya",
+        "a reference letter, a letter of recommendation",
+        "رسالة توصية",
+        "(recognise)"
+      ],
+      [
+        "طرشته لك",
+        "ṭarrashtah lak",
+        "I sent it (m.) to you (to a man)",
+        "أرسلته لك",
+        "to a woman: ṭarrashtah lich (طرشته لج)"
+      ],
+      [
+        "بيكون كتبها",
+        "biykūn kitabha",
+        "he'll have written it (f.)",
+        "سيكون قد كتبها",
+        "(recognise)"
+      ],
+      [
+        "نسخة من كل شي",
+        "nuskha min kill shay",
+        "a copy of everything",
+        "نسخة من كل شيء",
+        ""
+      ],
+      [
+        "الخميس الياي",
+        "il-khamīs il-yāy",
+        "next Thursday",
+        "الخميس القادم",
+        ""
+      ],
+      [
+        "بتطلع لك",
+        "bitiṭlaʿ-lak",
+        "you'll get it (f.: a scholarship, a place) (to a man)",
+        "ستحصل عليها",
+        "to a woman: bitiṭlaʿ-lich (بتطلع لج)"
       ]
     ],
     "receptive": [
-      7,
-      8
+      0,
+      3,
+      5
     ]
   },
   {
@@ -830,7 +823,7 @@
       [
         "B",
         "بطلع أركض شوي قبل الغدا",
-        "baṭlaʿ arkuẓ shwayy gabil il-ghada",
+        "baṭlaʿ arkiẓ shwayy gabil il-ghada",
         "I'm going out for a quick run before lunch."
       ],
       [
@@ -854,19 +847,19 @@
       [
         "B",
         "بس في لندن كنت أركض في الصيف عادي",
-        "bas fi Landan kint arkuẓ fi ṣ-ṣēf ʿādi",
+        "bas fi Landan kint arkiẓ fi ṣ-ṣēf ʿādi",
         "But in London I used to run in summer, no problem."
       ],
       [
         "A",
-        "هذا مب صيف لندن يا ريّال! الشمس هني تحرق",
-        "hādha mub ṣēf Landan yā rayyāl! ish-shams hni tiḥrig",
-        "This isn't a London summer, man! The sun here burns."
+        "هذا مب صيف لندن يا ريّال! الشمس هني قوية",
+        "hādha mub ṣēf Landan yā rayyāl! ish-shams hni gawiyya",
+        "This isn't a London summer, man! The sun here is fierce."
       ],
       [
         "B",
         "زين، متى أركض عيل؟",
-        "zēn, mita arkuẓ ʿayal?",
+        "zēn, mita arkiẓ ʿayal?",
         "OK, so when do I run, then?"
       ],
       [
@@ -878,7 +871,7 @@
       [
         "B",
         "خلاص، بركض باكر الصبح، وبشرب ماي وايد",
-        "khalāṣ, barkuẓ bāchir iṣ-ṣubḥ, w bashrab māy wāyid",
+        "khalāṣ, barkiẓ bāchir iṣ-ṣubḥ, w bashrab māy wāyid",
         "Fine, I'll run tomorrow morning, and I'll drink plenty of water."
       ],
       [
@@ -891,10 +884,10 @@
     "items": [
       [
         "أركض",
-        "arkuẓ",
+        "arkiẓ",
         "(I) run, (to) go running",
         "أركض",
-        "you run: tirkuẓ (تركض) to a man"
+        "you run: tirkiẓ (تركض) to a man"
       ],
       [
         "انت مينون؟",
@@ -911,10 +904,10 @@
         ""
       ],
       [
-        "الشمس تحرق",
-        "ish-shams tiḥrig",
-        "the sun's scorching, the sun burns",
-        "الشمس تحرق",
+        "الشمس قوية",
+        "ish-shams gawiyya",
+        "the sun's strong, the sun's fierce",
+        "الشمس قوية",
         ""
       ],
       [
@@ -1426,7 +1419,7 @@
       [
         "A",
         "حلوة الفكرة، بس الشجرة تاخذ سنين لين تكبر",
-        "ḥilwa l-fikra, bas ish-shajara tākhidh snīn lēn tikbar",
+        "ḥilwa l-fikra, bas ish-shajara tākhidh sinīn lēn tikbar",
         "Nice idea, but a tree takes years to grow."
       ],
       [
@@ -1494,7 +1487,7 @@
       ],
       [
         "تاخذ سنين لين تكبر",
-        "tākhidh snīn lēn tikbar",
+        "tākhidh sinīn lēn tikbar",
         "it (f.) takes years to grow",
         "تستغرق سنين حتى تكبر",
         ""
@@ -1516,66 +1509,66 @@
     "id": "s4u108",
     "stage": 4,
     "title": "Checkpoint 4.8: an interview in the heat",
-    "goal": "Checkpoint: at the office, tell Maryam you've got a job interview, take her advice, and thank her for her help with your CV",
-    "tip": "Review, and now you say it: ʿindi khabar 'I've got news', ʿindi mugābala 'I've got an interview', shwayy khāyif 'a bit nervous', mustaʿidd 'ready', fi ʿizz il-ḥarr 'in the worst of the heat', and lō ma sāʿadtīni, chān ma ṭalabūni 'if you hadn't helped me, they wouldn't have called me'.",
-    "grammar": "checkpoint 4.8 (s4u097–s4u107): lō ma … chān, biykūn, study and work words, heat",
+    "goal": "Checkpoint: Sēf has been called for his scholarship interview; calm his nerves, give him advice for the day, and answer his thanks",
+    "tip": "Review, and now you say it: ʿindi mugābla 'I've got an interview', mustaʿidd 'ready', fi ʿizz il-ḥarr 'in the worst of the heat', gharshat māy 'a bottle of water', hādha taʿabak 'that's your own hard work'. Sēf's thanks recycle lō ma … chān ma: lō ma sāʿadtni, chān ma ṭalabūni.",
+    "grammar": "checkpoint 4.8 (s4u097–s4u107): lō ma … chān, studying abroad, heat and water",
     "dialogue": [
       [
+        "A",
+        "عندي خبر! عندي مقابلة حق البعثة يوم الأحد",
+        "ʿindi khabar! ʿindi mugābla ḥagg il-baʿtha yōm il-aḥad",
+        "I've got news! I've got an interview for the scholarship on Sunday."
+      ],
+      [
         "B",
-        "مريم، عندي خبر! عندي مقابلة في شركة طاقة",
-        "Maryam, ʿindi khabar! ʿindi mugābala fi sharikat ṭāqa",
-        "Maryam, I've got news! I've got an interview at an energy company."
+        "مبروك! قلت لك طلبك قوي",
+        "mabrūk! gilt-lak ṭalabak gawi",
+        "Congratulations! I told you your application was strong."
       ],
       [
         "A",
-        "مبروك! قلت لك سيرتك حلوة",
-        "mabrūk! gilt-lak sīrtak ḥilwa",
-        "Congratulations! I told you your CV was good."
+        "الله يبارك فيك! بس شوي خايف",
+        "allāh ybārik fīk! bas shwayy khāyif",
+        "Thanks! But I'm a bit nervous."
       ],
       [
         "B",
-        "الله يبارك فيج! بس شوي خايف",
-        "allāh ybārik fīch! bas shwayy khāyif",
-        "Thank you! But I'm a bit nervous."
+        "لا تخاف. أكيد بيسألون ليش تبي تدرس برا",
+        "la tkhāf. akīd biysʼalūn lēsh tabi tidris barra",
+        "Don't worry. They're bound to ask why you want to study abroad."
       ],
       [
         "A",
-        "لا تخاف. أكيد بيسألونك عن الخبرة والتدريب",
-        "la tkhāf. akīd biysʼalūnak ʿan il-khibra w it-tadrīb",
-        "Don't worry. They're bound to ask you about your experience and the internship."
-      ],
-      [
-        "B",
         "وإذا سألوني شي ما أعرفه؟",
-        "w idha saʼalūni shay ma aʿarfah?",
+        "w idha saʼlōni shay ma aʿarfah?",
         "And if they ask me something I don't know?"
       ],
       [
-        "A",
+        "B",
         "قول بصراحة ما تعرف، بس إنك مستعد تتعلم",
         "gūl b-ṣarāḥa ma taʿarf, bas innak mustaʿidd titʿallam",
         "Say honestly that you don't know, but that you're ready to learn."
       ],
       [
-        "B",
-        "زين. والمقابلة يوم الأحد الظهر، في عز الحر!",
-        "zēn. w il-mugābala yōm il-aḥad iẓ-ẓuhur, fi ʿizz il-ḥarr!",
-        "OK. And the interview's on Sunday at midday, in the worst of the heat!"
+        "A",
+        "زين. والمقابلة الساعة وحدة الظهر، في عز الحر!",
+        "zēn. w il-mugābla s-sāʿa waḥda ẓ-ẓuhur, fi ʿizz il-ḥarr!",
+        "OK. And the interview's at one in the afternoon, in the worst of the heat!"
       ],
       [
-        "A",
+        "B",
         "عيل اطلع بدري، وخذ معك غرشة ماي",
         "ʿayal iṭlaʿ badri, w khudh maʿak gharshat māy",
         "Then leave early, and take a bottle of water with you."
       ],
       [
-        "B",
-        "إن شاء الله. لو ما ساعدتيني في السيرة، جان ما طلبوني",
-        "in shāʼ allāh. lō ma sāʿadtīni fi s-sīra, chān ma ṭalabūni",
-        "God willing. If you hadn't helped me with the CV, they wouldn't have called me."
+        "A",
+        "إن شاء الله. لو ما ساعدتني في الطلب، جان ما طلبوني",
+        "in shāʼ allāh. lō ma sāʿadtni fi ṭ-ṭalab, chān ma ṭalabūni",
+        "God willing. If you hadn't helped me with the application, they wouldn't have called me."
       ],
       [
-        "A",
+        "B",
         "لا، هذا تعبك انت. وخبرني شو صار!",
         "la, hādha taʿabak inta. w khabbirni shu ṣār!",
         "No, that's your own hard work. And tell me how it goes!"
@@ -1591,17 +1584,10 @@
       ],
       [
         "عندي مقابلة",
-        "ʿindi mugābala",
+        "ʿindi mugābla",
         "I've got an interview",
         "لدي مقابلة",
-        "a job interview: mugābalat shughul (مقابلة شغل)"
-      ],
-      [
-        "هذا تعبك",
-        "hādha taʿabak",
-        "that's your own hard work (paying off) (to a man)",
-        "هذا ثمرة تعبك",
-        "to a woman: hādha taʿabich (هذا تعبج)"
+        ""
       ],
       [
         "مستعد",
@@ -1623,6 +1609,13 @@
         "a bottle of water",
         "قنينة ماء",
         "a bottle: gharsha (غرشة); bottles: gharāsh (غراش)"
+      ],
+      [
+        "هذا تعبك",
+        "hādha taʿabak",
+        "that's your own hard work (paying off) (to a man)",
+        "هذا ثمرة تعبك",
+        "to a woman: hādha taʿabich (هذا تعبج)"
       ]
     ]
   },

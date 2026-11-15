@@ -40,7 +40,7 @@
    [
     "B",
     "السموحة، تكلم على راحتك. ما لحقت عليك",
-    "is-samūḥa, takallam ʿala rāḥtak. ma lḥigt ʿalēk",
+    "is-samūḥa, tkallam ʿala rāḥtak. ma lḥigt ʿalēk",
     "Sorry, take it slowly. I didn't catch that."
    ],
    [
@@ -57,15 +57,15 @@
    ],
    [
     "A",
-    "مشكور يا سالم! والله خطك مرة حلو، الله يعطيك العافية",
-    "mashkūr yā Sālim! wallāh khaṭṭak marra ḥilu, allāh yaʿṭīk il-ʿāfya",
-    "Thanks, Sālim! Your handwriting's really nice. Thanks a lot."
+    "مشكور يا سالم! خطك حلو، والملاحظات مرة حلوة. الله يعطيك العافية",
+    "mashkūr yā Sālim! khaṭṭak ḥilu, w il-mulāḥaẓāt marra ḥilwa. allāh yaʿṭīk il-ʿāfya",
+    "Thanks, Sālim! Your handwriting's nice, and the notes are really good. Thanks a lot."
    ],
    [
     "B",
-    "الله يعافيك. وإذا تبي شي ثاني، قول لي",
-    "allāh yʿāfīk. w idha tabi shay thāni, gūl-li",
-    "You're welcome. And if you need anything else, tell me."
+    "الله يعافيك. وإذا احتجت أي شي، أنا حاضر",
+    "allāh yʿāfīk. w idha ḥtajt ay shay, ana ḥāẓir",
+    "You're welcome. And if you need anything, I'm happy to help."
    ]
   ],
   "items": [
@@ -107,7 +107,7 @@
    [
     "تبيها الحين؟",
     "tabīha l-ḥīn?",
-    "do you want it now? do you want them now? (a feminine thing or plural things) (to a man)",
+    "do you want it now? (a feminine thing or plural things) (to a man)",
     "هل تريدها الآن؟",
     "to a woman: tabīnha l-ḥīn? (تبينها الحين؟)"
    ],
@@ -157,14 +157,14 @@
    ],
    [
     "B",
-    "أوه! منو سجل جول حقنا؟",
-    "ōh! minu sajjal il-gōl ḥaggna?",
+    "أوه! منو سجل الهدف حقنا؟",
+    "ōh! minu sajjal il-hadaf ḥaggna?",
     "Oh! Who scored our goal?"
    ],
    [
     "A",
-    "اللاعب اليديد، بالراس. بس هم سجلوا جول قبله من بلنتي",
-    "il-lāʿib il-yidīd, bir-rās. bas hum sajjalaw gōl gablah min bilanti",
+    "اللاعب اليديد، بالراس. بس هم سجلوا هدف قبله من بلنتي",
+    "il-lāʿib il-yidīd, bir-rās. bas hum sajjalaw hadaf gablah min bilanti",
     "The new player, with a header. But they scored before that, from a penalty."
    ],
    [
@@ -176,14 +176,14 @@
    [
     "A",
     "شوف شوف! طاح داخل المنطقة!",
-    "shūf shūf! ṭāḥ dākhil il-manṭiqa!",
+    "shūf shūf! ṭāḥ dākhil il-manṭiga!",
     "Look, look! He's gone down in the box!"
    ],
    [
     "B",
-    "والحكم ما عطاه شي!",
-    "w il-ḥakam ma ʿaṭāh shay!",
-    "And the referee's given him nothing!"
+    "والحكم ما عطاه شي! مية بالمية بلنتي",
+    "w il-ḥakam ma ʿaṭāh shay! miya bil-miya bilanti",
+    "And the referee's given him nothing! That's a penalty, a hundred percent."
    ],
    [
     "A",
@@ -193,14 +193,14 @@
    ],
    [
     "B",
-    "هد أعصابك يا ريّال، باقي ربع ساعة",
-    "hidd aʿṣābak yā rayyāl, bāgi rubʿ sāʿa",
-    "Calm down, man, there's a quarter of an hour left."
+    "خف شوي يا ريّال، هد أعصابك. باقي ربع ساعة",
+    "khiff shwayy yā rayyāl, hidd aʿṣābak. bāgi rubʿ sāʿa",
+    "Ease off a bit, man, calm down. There's a quarter of an hour left."
    ],
    [
     "A",
-    "جول! سجلنا! اثنين واحد!",
-    "gōl! sajjalna! thnēn wāḥid!",
+    "هدف! سجلنا! اثنين واحد!",
+    "hadaf! sajjalna! thnēn wāḥid!",
     "Goal! We've scored! Two-one!"
    ],
    [
@@ -226,11 +226,11 @@
     "two-one: thnēn wāḥid"
    ],
    [
-    "سجلوا جول",
-    "sajjalaw gōl",
+    "سجلوا هدف",
+    "sajjalaw hadaf",
     "they scored (a goal)",
     "سجلوا هدفًا",
-    "we scored: sajjalna; formal: hadaf (هدف)"
+    "we scored: sajjalna; you'll also hear the English gōl"
    ],
    [
     "بلنتي",
@@ -248,7 +248,7 @@
    ],
    [
     "داخل المنطقة",
-    "dākhil il-manṭiqa",
+    "dākhil il-manṭiga",
     "in the box, inside the (penalty) area",
     "داخل منطقة الجزاء",
     "(recognise)"
@@ -314,21 +314,21 @@
    ],
    [
     "A",
-    "هههه ما بقول شي. بس الممثلين وايد زينين فيه",
-    "hahaha, ma bagūl shay. bas il-mumaththilīn wāyid zēnīn fīh",
-    "Ha ha, I won't say a thing. But the actors are really good in it."
+    "هههه ما بقول شي. بس الممثلين وايد زينين فيه، مية بالمية",
+    "hahaha, ma bagūl shay. bas il-mumaththilīn wāyid zēnīn fīh, miya bil-miya",
+    "Ha ha, I won't say a thing. But the actors are really good in it, a hundred percent."
    ],
    [
     "B",
-    "صح، وأحسن شي اللهجة. للحين أتعلم منها",
-    "ṣaḥḥ, w aḥsan shay il-lahja. lil-ḥīn atʿallam minha",
-    "True, and the best thing is the dialect. I'm still learning from it."
+    "صح، والحلو فيه اللهجة. للحين أتعلم منها",
+    "ṣaḥḥ, w il-ḥilu fīh il-lahja. lil-ḥīn atʿallam minha",
+    "True, and the good thing about it is the dialect. I'm still learning from it."
    ],
    [
     "A",
-    "زين. والموسم الثاني بينزل السنة الياية، يقولون",
-    "zēn. w il-mōsim ith-thāni biyinzil is-sana l-yāya, ygūlūn",
-    "Good. And the second season's coming out next year, they say."
+    "زين. والموسم الثاني بينزل السنة الياية، هذا كلام الناس",
+    "zēn. w il-mōsim ith-thāni biyinzil is-sana l-yāya, hādha kalām in-nās",
+    "Good. And the second season's coming out next year, that's what people are saying."
    ],
    [
     "B",
@@ -338,15 +338,15 @@
    ],
    [
     "A",
-    "على نفس المنصة، بس لازم تشترك عشان تشوفه",
-    "ʿala nafs il-minaṣṣa, bas lāzim tishtirik ʿashān tshūfah",
-    "On the same platform, but you have to subscribe to watch it."
+    "على نفس المنصة، بس لازم تشترك عشان تشوفه. الاشتراك على قد الحال",
+    "ʿala nafs il-minaṣṣa, bas lāzim tishtirik ʿashān tshūfah. il-ishtirāk ʿala gadd il-ḥāl",
+    "On the same platform, but you have to subscribe to watch it. The subscription doesn't cost much."
    ],
    [
     "B",
-    "خلاص، بشترك ونشوفه سوا",
-    "khalāṣ, bashtirik w nshūfah sawa",
-    "Right, I'll subscribe and we'll watch it together."
+    "عجبتني الفكرة. بشترك ونشوفه سوا",
+    "ʿajbatni l-fikra. bashtirik w nshūfah sawa",
+    "I like the idea. I'll subscribe and we'll watch it together."
    ]
   ],
   "items": [
@@ -426,7 +426,7 @@
   "stage": 4,
   "title": "Wish rāyak? A fan from Riyadh",
   "goal": "At a café showing a match, the Saudi fan from Riyadh at the next table starts chatting about football; catch his Najdi forms and tell him who you support",
-  "tip": "Riyadh speech has its own words, too: wish 'what' (wish rāyak? 'what do you think?'), wājid 'very' (UAE wāyid), shāhi 'tea' (UAE chāy), and the greeting kēf ḥālak? Answer in your own Gulf forms: he'll understand you.",
+  "tip": "Riyadh speech has its own words, too: wish 'what' (wish raʼyak? 'what do you think?'), wājid 'very' (UAE wāyid), shāhi 'tea' (UAE chāy), and the greeting kēf ḥālak? Answer in your own Gulf forms: he'll understand you.",
   "grammar": "recycle; listening to other Gulf voices (receptive)",
   "dialogue": [
    [
@@ -443,21 +443,21 @@
    ],
    [
     "A",
-    "مشكور. وش رايك في المباراة؟ الفريقين واجد زينين الليلة",
-    "mashkūr. wish rāyak fi l-mubārā? il-farīgēn wājid zēnīn il-lēla",
-    "Thanks. What do you think of the match? Both teams are really good tonight."
+    "مشكور. وش رايك في المباراة؟ الشوط الثاني بدا، والفريقين واجد زينين",
+    "mashkūr. wish raʼyak fi l-mubārā? ish-shōṭ ith-thāni bida, w il-farīgēn wājid zēnīn",
+    "Thanks. What do you think of the match? The second half's started, and both teams are really good."
    ],
    [
     "B",
-    "هيه، بس الدفاع حقهم ضعيف",
-    "hē, bas id-difāʿ ḥagghum ẓaʿīf",
-    "Yes, but their defence is weak."
+    "صح، بس الدفاع حقهم ضعيف. والحكم بعد!",
+    "ṣaḥḥ, bas id-difāʿ ḥagghum ẓaʿīf. w il-ḥakam baʿad!",
+    "True, but their defence is weak. And so is the referee!"
    ],
    [
     "A",
-    "صح. وانت، أي فريق تشجع؟",
-    "ṣaḥḥ. w inta, ay farīg tshajjiʿ?",
-    "True. And you: which team do you support?"
+    "معك حق. وانت، أي فريق تشجع؟",
+    "maʿak ḥagg. w inta, ay farīg tshajjiʿ?",
+    "You're right. And you: which team do you support?"
    ],
    [
     "B",
@@ -500,10 +500,10 @@
    ],
    [
     "وش رايك؟",
-    "wish rāyak?",
+    "wish raʼyak?",
     "what do you think? (Saudi) (to a man)",
     "ما رأيك؟",
-    "to a woman: wish rāyik?; UAE: shrāyak?; (recognise)"
+    "to a woman: wish raʼyik?; UAE: shrāyak?; (recognise)"
    ],
    [
     "واجد زينين",
@@ -586,14 +586,14 @@
    [
     "A",
     "زين. شنو رايك نقسم الشغل بيننا؟",
-    "zēn. shinu rāyak ngassim ish-shughul bēnna?",
+    "zēn. shinu raʼyak ngassim ish-shughul bēnna?",
     "Yes. What do you think about splitting the work between us?"
    ],
    [
     "B",
-    "فكرة حلوة. كل واحد ياخذ جزء",
-    "fikra ḥilwa. kill wāḥid yākhidh juzʼ",
-    "Good idea. Each of us takes a part."
+    "عجبتني الفكرة. كل واحد ياخذ جزء",
+    "ʿajbatni l-fikra. kill wāḥid yākhidh juzʼ",
+    "I like the idea. Each of us takes a part."
    ],
    [
     "A",
@@ -621,15 +621,15 @@
    ],
    [
     "A",
-    "تمام. وإذا صار شي، طرش في القروب",
-    "tamām. w idha ṣār shay, ṭarrish fi l-grūb",
-    "Fine. And if anything happens, post in the group."
+    "تمام. وإذا احتجت أي شي، طرش في القروب",
+    "tamām. w idha ḥtajt ay shay, ṭarrish fi l-grūb",
+    "Fine. And if you need anything, post in the group."
    ],
    [
     "B",
-    "إن شاء الله. يلا، نشوفك الخميس",
-    "in shāʼ allāh. yalla, nshūfak il-khamīs",
-    "Will do. Right, see you Thursday."
+    "إن شاء الله. يلا، نشوفك الخميس بعد العصر",
+    "in shāʼ allāh. yalla, nshūfak il-khamīs baʿd il-ʿaṣir",
+    "Will do. Right, see you Thursday, late afternoon."
    ]
   ],
   "items": [
@@ -737,9 +737,9 @@
    ],
    [
     "A",
-    "ما شاء الله عليك! هذي أغنية قديمة، من التسعينات",
-    "mā shāʼ allāh ʿalēk! hādhi ughniya gadīma, min it-tisʿīnāt",
-    "Well done you! This is an old song, from the nineties."
+    "ما شاء الله عليك! هذي أغنية قديمة، من التسعينات. أيام أول!",
+    "mā shāʼ allāh ʿalēk! hādhi ughniya gadīma, min it-tisʿīnāt. ayyām awwal!",
+    "Well done you! This is an old song, from the nineties. The old days!"
    ],
    [
     "B",
@@ -848,7 +848,7 @@
   "stage": 4,
   "title": "Tell us about yourself",
   "goal": "In a job interview for a graduate post at a Dubai company, answer the HR manager's first questions about you and your experience",
-  "tip": "At an interview, talk in polite Gulf Arabic with some formal work words: khibra 'experience', taḥt iẓ-ẓaghṭ 'under pressure'. Answer about yourself with the present: adris handasa 'I study engineering', ashtaghil zēn… 'I work well…'.",
+  "tip": "At an interview, talk in polite Gulf Arabic with some formal work words: khibra 'experience', taḥt iẓ-ẓaghiṭ 'under pressure'. Answer about yourself with the present: adris handasa 'I study engineering', ashtaghil zēn… 'I work well…'.",
   "grammar": "recycle; office register (polite, more formal words)",
   "dialogue": [
    [
@@ -877,15 +877,15 @@
    ],
    [
     "A",
-    "زين. وليش تبي تشتغل عندنا بالذات؟",
-    "zēn. w lēsh tabi tishtaghil ʿindana bidh-dhāt?",
-    "Good. And why do you want to work for us in particular?"
+    "زين. وليش تبي تشتغل عندنا بالذات؟ مب بس عشان الراتب؟",
+    "zēn. w lēsh tabi tishtaghil ʿindana bidh-dhāt? mub bas ʿashān ir-rātib?",
+    "Good. And why do you want to work for us in particular? Not just for the salary?"
    ],
    [
     "B",
-    "لأن شركتكم معروفة، وأبي أتعلم أكثر",
-    "lann sharikatkum maʿrūfa, w abi atʿallam akthar",
-    "Because your company is well known, and I want to learn more."
+    "لا، بالعكس. شركتكم معروفة، وأبي أتعلم أكثر",
+    "la, bil-ʿaks. sharikatkum maʿrūfa, w abi atʿallam akthar",
+    "No, not at all. Your company is well known, and I want to learn more."
    ],
    [
     "A",
@@ -896,7 +896,7 @@
    [
     "B",
     "أشتغل زين تحت الضغط، وأحب الشغل ويا الفريق",
-    "ashtaghil zēn taḥt iẓ-ẓaghṭ, w aḥibb ish-shughul wiyya l-farīg",
+    "ashtaghil zēn taḥt iẓ-ẓaghiṭ, w aḥibb ish-shughul wiyya l-farīg",
     "I work well under pressure, and I like working with the team."
    ],
    [
@@ -957,7 +957,7 @@
    ],
    [
     "تحت الضغط",
-    "taḥt iẓ-ẓaghṭ",
+    "taḥt iẓ-ẓaghiṭ",
     "under pressure",
     "تحت الضغط",
     ""
@@ -998,8 +998,8 @@
    ],
    [
     "B",
-    "أحيانا أدقق وايد في التفاصيل، وآخذ وقت",
-    "aḥyānan adaggig wāyid fi t-tafāṣīl, w ākhidh wagt",
+    "أحيانا أدقق في التفاصيل وايد، وآخذ وقت",
+    "aḥyānan adaggig fi t-tafāṣīl wāyid, w ākhidh wagt",
     "Sometimes I focus too much on the details, and I take time."
    ],
    [
@@ -1028,9 +1028,9 @@
    ],
    [
     "A",
-    "بعد ما تتخرج. وبنتواصل وياك بعد أسبوعين بالكثير",
-    "baʿd ma titkharraj. w binitwāṣal wiyyāk baʿd usbūʿēn bil-kathīr",
-    "After you graduate. And we'll get back to you in two weeks at the most."
+    "بعد ما تتخرج. وبنتصل فيك بعد أسبوعين بالكثير",
+    "baʿd ma titkharraj. w binittaṣil fīk baʿd usbūʿēn bil-kathīr",
+    "After you graduate. And we'll call you in two weeks at the most."
    ],
    [
     "B",
@@ -1102,11 +1102,11 @@
     ""
    ],
    [
-    "بنتواصل وياك",
-    "binitwāṣal wiyyāk",
-    "we'll get back to you, we'll be in touch (to a man)",
-    "سنتواصل معك",
-    "to a woman: binitwāṣal wiyyāch; (recognise)"
+    "بالكثير",
+    "bil-kathīr",
+    "at the most",
+    "على الأكثر",
+    "at the least: bil-galīl (بالقليل)"
    ],
    [
     "مشكور على وقتك",
@@ -1116,10 +1116,9 @@
     "to a woman: mashkūra ʿala wagtich"
    ]
   ],
-  "task": "This week: in Talk, ask your partner to play an HR manager interviewing you for a job in Dubai. Answer at least 6 questions in Gulf Arabic, and use khabbirna ʿan nafsak, ʿindi khibra, taḥt iẓ-ẓaghṭ and wēn tshūf nafsak in the conversation. Ask two questions of your own, and close with mashkūr ʿala wagtak. Then do it again, faster.",
+  "task": "This week: in Talk, ask your partner to play an HR manager interviewing you for a job in Dubai. Answer at least 6 questions in Gulf Arabic, and use khabbirna ʿan nafsak, ʿindi khibra, taḥt iẓ-ẓaghiṭ and wēn tshūf nafsak in the conversation. Ask two questions of your own, and close with mashkūr ʿala wagtak. Then do it again, faster.",
   "receptive": [
-   0,
-   7
+   0
   ]
  },
  {
@@ -1127,7 +1126,7 @@
   "stage": 4,
   "title": "The job offer",
   "goal": "The company's HR manager phones with a job offer; thank him, ask politely for a higher salary, and ask for time to think",
-  "tip": "Asking for more, politely: mumkin tzīdūnah shwayy? 'could you raise it a little?' and giving a reason. Recycle aqall min 'less than' and the -ūn ending for 'you' (the company): tzīdūnah, ʿalēkum.",
+  "tip": "Asking for more, politely: mumkin tzīdūn ir-rātib shwayy? 'could you raise the salary a little?', then give a reason. Recycle aqall min 'less than' and the -ūn ending for 'you' (the company): tzīdūn, ʿalēkum.",
   "grammar": "recycle; office register (polite, more formal words)",
   "dialogue": [
    [
@@ -1162,9 +1161,9 @@
    ],
    [
     "B",
-    "فاهم. بس ممكن تزيدونه شوي؟ عندي خبرة سنتين",
-    "fāhim. bas mumkin tzīdūnah shwayy? ʿindi khibra santēn",
-    "I understand. But could you raise it a little? I've got two years' experience."
+    "فاهم. بس ممكن تزيدون الراتب شوي؟ عندي خبرة سنتين",
+    "fāhim. bas mumkin tzīdūn ir-rātib shwayy? ʿindi khibra santēn",
+    "I understand. But could you raise the salary a little? I've got two years' experience."
    ],
    [
     "A",
@@ -1181,13 +1180,13 @@
    [
     "A",
     "أكيد. بس رد علينا قبل نهاية الأسبوع",
-    "akīd. bas ridd ʿalēna gabil nihāyat il-usbūʿ",
+    "akīd. bas rudd ʿalēna gabil nihāyat il-usbūʿ",
     "Of course. But get back to us before the end of the week."
    ],
    [
     "B",
     "إن شاء الله، برد عليكم قبل الخميس",
-    "in shāʼ allāh, baridd ʿalēkum gabil il-khamīs",
+    "in shāʼ allāh, barudd ʿalēkum gabil il-khamīs",
     "Will do. I'll get back to you before Thursday."
    ]
   ],
@@ -1228,11 +1227,11 @@
     "(recognise)"
    ],
    [
-    "ممكن تزيدونه شوي؟",
-    "mumkin tzīdūnah shwayy?",
-    "could you raise it a little? (to a group, a company)",
-    "هل يمكن أن تزيدوه قليلًا؟",
-    "to one man: mumkin tzīdah shwayy?"
+    "ممكن تزيدون الراتب شوي؟",
+    "mumkin tzīdūn ir-rātib shwayy?",
+    "could you raise the salary a little? (to a group, a company)",
+    "هل يمكن أن تزيدوا الراتب قليلًا؟",
+    "to one man: mumkin tzīd ir-rātib shwayy?"
    ],
    [
     "ما أقدر أوعدك بشي",
@@ -1313,9 +1312,9 @@
    ],
    [
     "B",
-    "باختصار، نقترح نوسع الخدمة لأبوظبي",
-    "b-ikhtiṣār, niqtariḥ nwassiʿ il-khidma l-Abuẓabi",
-    "In short, we suggest expanding the service to Abu Dhabi."
+    "باختصار، اقتراح الفريق إننا نوسع الخدمة لأبوظبي",
+    "b-ikhtiṣār, iqtirāḥ il-farīg innana nwassiʿ il-khidma l-Abuẓabi",
+    "In short, the team's suggestion is that we expand the service to Abu Dhabi."
    ],
    [
     "A",
@@ -1388,16 +1387,15 @@
     ""
    ],
    [
-    "نقترح نوسع",
-    "niqtariḥ nwassiʿ",
-    "we suggest expanding, we propose to expand",
-    "نقترح أن نوسع",
-    "(recognise)"
+    "اقتراح الفريق",
+    "iqtirāḥ il-farīg",
+    "the team's suggestion, the team's proposal",
+    "اقتراح الفريق",
+    "my suggestion: iqtirāḥi (اقتراحي)"
    ]
   ],
   "receptive": [
-   2,
-   8
+   2
   ]
  },
  {
@@ -1550,7 +1548,7 @@
    [
     "A",
     "سمعت إنهم عطوك عرض شغل! مبروك يا ولدي",
-    "simaʿt innhum ʿaṭōk ʿarẓ shughul! mabrūk yā wildi",
+    "simaʿt innhum ʿaṭūk ʿarẓ shughul! mabrūk yā wildi",
     "I hear they've offered you a job! Congratulations, son."
    ],
    [
@@ -1591,20 +1589,20 @@
    ],
    [
     "B",
-    "تسلم يا عمي على النصيحة. يعني في المجلس شو العلوم، وفي الشغل شو الأخبار؟",
-    "tislam yā ʿammi ʿala n-naṣīḥa. yaʿni fi l-majlis shu l-ʿilūm, w fi sh-shughul shu l-akhbār?",
-    "Thanks for the advice, uncle. So in the majlis it's 'what's the news', and at work 'what's the latest'?"
+    "تسلم يا عمي على النصيحة",
+    "tislam yā ʿammi ʿala n-naṣīḥa",
+    "Thanks for the advice, uncle."
    ],
    [
     "A",
-    "الله يسلمك. بالضبط! ما شاء الله، صرت تعرف السنع يا ولدي",
-    "allāh ysallmak. biẓ-ẓabṭ! mā shāʼ allāh, ṣirt taʿarf is-sanaʿ yā wildi",
-    "You're welcome. Exactly! Well done, you know good manners now, son."
+    "الله يسلمك. يعني في المجلس شو العلوم، وفي الشغل شو الأخبار. وبتعرف السنع يا ولدي",
+    "allāh ysallmak. yaʿni fi l-majlis shu l-ʿilūm, w fi sh-shughul shu l-akhbār. w bitaʿarf is-sanaʿ yā wildi",
+    "You're welcome. So in the majlis it's 'what's the news?', and at work 'what's the latest?'. And you'll learn good manners, son."
    ],
    [
     "B",
     "كله منكم يا عمي. وباكر برد عليهم إن شاء الله",
-    "killah minkum yā ʿammi. w bāchir baridd ʿalēhum in shāʼ allāh",
+    "killah minkum yā ʿammi. w bāchir barudd ʿalēhum in shāʼ allāh",
     "It's all thanks to you, uncle. And tomorrow I'll give them my answer, God willing."
    ]
   ],
@@ -1686,7 +1684,7 @@
   "stage": 4,
   "title": "Checkpoint 4.5: I got the job!",
   "goal": "Checkpoint: Fahad phones from Kuwait; tell him about the job offer, the interview and the salary talk, and catch his Kuwaiti forms",
-  "tip": "Review, and now you say it: ʿarẓ shughul, ʿindi khibra, taḥt iẓ-ẓaghṭ, mumkin tzīdūnah shwayy?, idha ṣār naṣīb, ma lḥigt ʿalēk and hidd aʿṣābak. Fahad uses Kuwaiti forms (shinu, iḥna, ḥēl).",
+  "tip": "Review, and now you say it: ʿarẓ shughul, ʿindi khibra, taḥt iẓ-ẓaghiṭ, mumkin tzīdūn ir-rātib shwayy?, idha ṣār naṣīb, ma lḥigt ʿalēk and hidd aʿṣābak. Fahad uses Kuwaiti forms (shinu, iḥna, ḥēl).",
   "grammar": "checkpoint 4.5 (s4u058–s4u069): other Gulf voices, media, interviews and office register",
   "dialogue": [
    [
@@ -1698,19 +1696,19 @@
    [
     "B",
     "هلا فيك! الحمد لله، عطوني عرض شغل!",
-    "hala fīk! il-ḥamdu lillāh, ʿaṭōni ʿarẓ shughul!",
+    "hala fīk! il-ḥamdu lillāh, ʿaṭūni ʿarẓ shughul!",
     "Hi! Great, thanks: they've offered me a job!"
    ],
    [
     "A",
     "مبروك! حيل فرحت لك. شنو سألوك؟",
-    "mabrūk! ḥēl firaḥt lak. shinu saʼlōk?",
+    "mabrūk! ḥēl firaḥt lak. shinu saʼlūk?",
     "Congratulations! I'm really happy for you. What did they ask you?"
    ],
    [
     "B",
     "الله يبارك فيك. سألوني عن خبرتي، وقلت أشتغل زين تحت الضغط",
-    "allāh ybārik fīk. saʼlōni ʿan khibrati, w gilt ashtaghil zēn taḥt iẓ-ẓaghṭ",
+    "allāh ybārik fīk. saʼlūni ʿan khibrati, w gilt ashtaghil zēn taḥt iẓ-ẓaghiṭ",
     "Thank you. They asked about my experience, and I said I work well under pressure."
    ],
    [
@@ -1721,15 +1719,15 @@
    ],
    [
     "B",
-    "طلبت منهم يزيدونه شوي",
-    "ṭalabt minnhum yzīdūnah shwayy",
+    "طلبت منهم يزيدون الراتب شوي",
+    "ṭalabt minnhum yzīdūn ir-rātib shwayy",
     "I asked them to raise it a little."
    ],
    [
     "A",
-    "حركات! وإذا ما زادوه؟",
-    "ḥarakāt! w idha ma zādōh?",
-    "Smart move! And if they don't raise it?"
+    "حركات! وإذا ما وافقوا؟",
+    "ḥarakāt! w idha ma wāfagaw?",
+    "Smart move! And if they don't agree?"
    ],
    [
     "B",
@@ -1767,7 +1765,7 @@
    ],
    [
     "سألوني عن",
-    "saʼlōni ʿan",
+    "saʼlūni ʿan",
     "they asked me about",
     "سألوني عن",
     ""
@@ -1794,7 +1792,7 @@
     ""
    ]
   ],
-  "task": "This week: with a tutor or exchange partner (search «معلم لهجة إماراتية» or «Emirati Arabic tutor»), tell the story of a job interview, real or imagined: the questions, your answers, the salary talk. Use 4 items from these two weeks, e.g. khabbirna ʿan nafsak, ʿindi khibra, taḥt iẓ-ẓaghṭ, idha ṣār naṣīb. Let your partner ask follow-up questions for 8 turns.",
+  "task": "This week: with a tutor or exchange partner (search «معلم لهجة إماراتية» or «Emirati Arabic tutor»), tell the story of a job interview, real or imagined: the questions, your answers, the salary talk. Use 4 items from these two weeks, e.g. khabbirna ʿan nafsak, ʿindi khibra, taḥt iẓ-ẓaghiṭ, idha ṣār naṣīb. Let your partner ask follow-up questions for 8 turns.",
   "receptive": [
    1,
    4

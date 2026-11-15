@@ -1,0 +1,1741 @@
+[
+ {
+  "id": "s4u071",
+  "stage": 4,
+  "title": "My whole body aches",
+  "goal": "On campus, tell Sēf about your first week at the gym and why everything aches, and take his advice",
+  "tip": "ṣār + a present verb says what you've started doing: ṣirt arūḥ in-nādi 'I've started going to the gym'. A body part with yʿawwir 'hurts' takes the person as the object: jismi killah yʿawwirni 'my whole body aches' (jism is masculine, so y-).",
+  "grammar": "recycle: ṣār + present verb for a new habit (ṣirt arūḥ)",
+  "dialogue": [
+   [
+    "A",
+    "شفيك تمشي جي؟ لا تقول طحت!",
+    "shfīk timshi chī? la tgūl ṭiḥt!",
+    "What's up with the way you're walking? Don't tell me you fell!"
+   ],
+   [
+    "B",
+    "لا، صرت أروح النادي. جسمي كله يعورني",
+    "la, ṣirt arūḥ in-nādi. jismi killah yʿawwirni",
+    "No, I've started going to the gym. My whole body aches."
+   ],
+   [
+    "A",
+    "عادي، أول أسبوع العضلات كلها تعورك. شو سويت؟",
+    "ʿādi, awwal usbūʿ il-ʿaẓalāt killha tʿawwrak. shu sawwēt?",
+    "That's normal: in the first week all your muscles ache. What did you do?"
+   ],
+   [
+    "B",
+    "لعبت حديد ساعة كاملة، وثاني يوم ركضت",
+    "liʿabt ḥadīd sāʿa kāmla, w thāni yōm rakaẓt",
+    "I lifted weights for a whole hour, and the next day I went running."
+   ],
+   [
+    "A",
+    "ساعة كاملة من أول مرة؟ منو قال لك تسوي جي؟",
+    "sāʿa kāmla min awwal marra? minu gāl-lak tsawwi chī?",
+    "A whole hour, the first time? Who told you to do that?"
+   ],
+   [
+    "B",
+    "المدرب. يقول ثلاث مرات في الأسبوع",
+    "il-mudarrib. ygūl thalāth marrāt fi l-usbūʿ",
+    "The trainer. He says three times a week."
+   ],
+   [
+    "A",
+    "زين، بس على هونك. جسمك ما تعود للحين، يباله وقت",
+    "zēn, bas ʿala hōnak. jismak ma tʿawwad lil-ḥīn, yabā-lah wagt",
+    "Fine, but take it easy. Your body isn't used to it yet; it needs time."
+   ],
+   [
+    "B",
+    "معك حق. وانت؟ تلعب حديد؟",
+    "maʿak ḥagg. w inta? tilʿab ḥadīd?",
+    "You're right. And you? Do you lift weights?"
+   ],
+   [
+    "A",
+    "هيه، من سنتين. تبي تيي وياي باكر؟",
+    "hē, min santēn. tabi tiyi wiyyāy bāchir?",
+    "Yes, for two years. Do you want to come with me tomorrow?"
+   ],
+   [
+    "B",
+    "إن شاء الله، بس بعد العصر. الصبح ما أقدر أقوم",
+    "in shāʼ allāh, bas baʿd il-ʿaṣir. iṣ-ṣubḥ ma agdar agūm",
+    "God willing, but after ʿaṣr. In the morning I can't get up."
+   ]
+  ],
+  "items": [
+   [
+    "صرت أروح النادي",
+    "ṣirt arūḥ in-nādi",
+    "I've started going to the gym",
+    "أصبحت أذهب إلى النادي",
+    "you'll also hear il-jīm (الجيم); nādi is also a sports club"
+   ],
+   [
+    "جسمي كله يعورني",
+    "jismi killah yʿawwirni",
+    "my whole body aches, I ache all over",
+    "جسمي كله يؤلمني",
+    ""
+   ],
+   [
+    "العضلات",
+    "il-ʿaẓalāt",
+    "the muscles",
+    "العضلات",
+    "(recognise)"
+   ],
+   [
+    "لعبت حديد",
+    "liʿabt ḥadīd",
+    "I lifted weights; you lifted weights (to a man)",
+    "رفعت الأثقال",
+    "lit. I played iron; to a woman: liʿabti ḥadīd; he lifts weights: yilʿab ḥadīd"
+   ],
+   [
+    "ثاني يوم",
+    "thāni yōm",
+    "the next day, the day after",
+    "في اليوم التالي",
+    ""
+   ],
+   [
+    "المدرب",
+    "il-mudarrib",
+    "the trainer, the coach",
+    "المدرب",
+    "a woman: il-mudarriba (المدربة)"
+   ],
+   [
+    "ثلاث مرات في الأسبوع",
+    "thalāth marrāt fi l-usbūʿ",
+    "three times a week",
+    "ثلاث مرات في الأسبوع",
+    ""
+   ],
+   [
+    "ما أقدر أقوم",
+    "ma agdar agūm",
+    "I can't get up",
+    "لا أستطيع أن أقوم",
+    ""
+   ]
+  ],
+  "receptive": [
+   2
+  ]
+ },
+ {
+  "id": "s4u072",
+  "stage": 4,
+  "title": "I'm on a diet",
+  "goal": "At a team lunch in the office, Maryam offers everyone sweets; say you're on a diet and what you've cut down on",
+  "tip": "ma ʿād + a present verb says 'not any more': ma ʿidt ākil ḥalawiyyāt 'I don't eat sweets any more'. It takes the person: ma ʿidt (I), ma ʿād (he). With a participle, the ending shows who: ana msawwi rijīm 'I'm on a diet' (a woman: msawwya).",
+  "grammar": "recycle: ma ʿād + present verb, 'not any more'",
+  "dialogue": [
+   [
+    "A",
+    "تفضلوا، يايبة لكم حلويات من البيت. خذ يا سالم، لا تستحي",
+    "tfaẓẓalu, yāyba-lkum ḥalawiyyāt min il-bēt. khudh yā Sālim, la tistiḥi",
+    "Help yourselves, I've brought you all sweets from home. Take one, Sālim, don't be shy."
+   ],
+   [
+    "B",
+    "ما أقدر، أنا مسوي رجيم",
+    "ma agdar, ana msawwi rijīm",
+    "I can't, I'm on a diet."
+   ],
+   [
+    "A",
+    "رجيم؟ انت؟ بس انت ضعفت، باين عليك!",
+    "rijīm? inta? bas inta ẓiʿaft, bāyin ʿalēk!",
+    "A diet? You? But you've lost weight, it shows!"
+   ],
+   [
+    "B",
+    "صج؟ زاد وزني لما صرت أسوق لكل مكان",
+    "ṣij? zād wazni lamma ṣirt asūg l-kill makān",
+    "Really? I put on weight when I started driving everywhere."
+   ],
+   [
+    "A",
+    "وشو غيرت؟",
+    "w shu ghayyart?",
+    "And what have you changed?"
+   ],
+   [
+    "B",
+    "ما عدت آكل حلويات، وخففت السكر",
+    "ma ʿidt ākil ḥalawiyyāt, w khaffaft is-sukkar",
+    "I don't eat sweets any more, and I've cut down on sugar."
+   ],
+   [
+    "A",
+    "ما شاء الله عليك! أنا ما أقدر أقاوم الحلو، خصوصا ويا القهوة",
+    "mā shāʼ allāh ʿalēk! ana ma agdar agāwim il-ḥilu, khuṣūṣan wiyya l-gahwa",
+    "Good for you! I can't resist sweet things, especially with coffee."
+   ],
+   [
+    "B",
+    "ولا أنا! بس أحاول. شوي عيش ووايد سلطة",
+    "wala ana! bas aḥāwil. shwayy ʿēsh w wāyid salaṭa",
+    "Nor can I! But I'm trying. A bit of rice and lots of salad."
+   ],
+   [
+    "A",
+    "عيل خذ وحدة بس، وحدة ما تضر",
+    "ʿayal khudh waḥda bas, waḥda ma tẓurr",
+    "Then take just one; one won't hurt."
+   ],
+   [
+    "B",
+    "زين، وحدة بس. بس لا تقولين للمدرب!",
+    "zēn, waḥda bas. bas la tgūlīn lil-mudarrib!",
+    "OK, just one. But don't tell my trainer!"
+   ]
+  ],
+  "items": [
+   [
+    "مسوي رجيم",
+    "msawwi rijīm",
+    "on a diet (a man)",
+    "أتبع حمية",
+    "a woman: msawwya rijīm (مسوية رجيم)"
+   ],
+   [
+    "ضعفت",
+    "ẓiʿaft",
+    "you've lost weight (to a man); I've lost weight",
+    "نحفت",
+    "to a woman: ẓiʿafti; in the Gulf ẓiʿīf usually means thin"
+   ],
+   [
+    "باين عليك",
+    "bāyin ʿalēk",
+    "it shows, you can tell (lit. it's visible on you) (to a man)",
+    "يظهر عليك",
+    "to a woman: bāyin ʿalēch"
+   ],
+   [
+    "زاد وزني",
+    "zād wazni",
+    "I've put on weight (lit. my weight went up)",
+    "زاد وزني",
+    ""
+   ],
+   [
+    "ما عدت آكل",
+    "ma ʿidt ākil",
+    "I don't eat … any more",
+    "لم أعد آكل",
+    ""
+   ],
+   [
+    "خففت السكر",
+    "khaffaft is-sukkar",
+    "I've cut down on sugar; you've cut down on sugar (to a man)",
+    "خففت السكر",
+    "to a woman: khaffafti is-sukkar; sukkar 'sugar' is spelled like sakkar 'he closed'"
+   ],
+   [
+    "ما أقدر أقاوم",
+    "ma agdar agāwim",
+    "I can't resist",
+    "لا أستطيع أن أقاوم",
+    ""
+   ],
+   [
+    "يايبة لكم",
+    "yāyba-lkum",
+    "I've brought you (said by a woman, to a group)",
+    "أحضرت لكم",
+    "a man says: yāyib-lkum; (recognise)"
+   ]
+  ],
+  "receptive": [
+   7
+  ]
+ },
+ {
+  "id": "s4u073",
+  "stage": 4,
+  "title": "I haven't slept properly for a week",
+  "goal": "At a karak stand, tell Sēf you can't sleep, and hear what changed things for him",
+  "tip": "ṣār-li + a time + a present verb says how long something has been going on: ṣār-li usbūʿ ma anām ʿadil 'I haven't slept properly for a week'. ṣirt + a present verb is the change: ṣirt anām aḥsan 'I've started sleeping better'.",
+  "grammar": "recycle: ṣār-li + time for 'for (a week) now'",
+  "dialogue": [
+   [
+    "A",
+    "شكلك تعبان. بعدك ما تنام زين؟",
+    "shaklak taʿbān. baʿdak ma tnām zēn?",
+    "You look tired. Still not sleeping well?"
+   ],
+   [
+    "B",
+    "لا والله. صار لي أسبوع ما أنام عدل",
+    "la wallāh. ṣār-li usbūʿ ma anām ʿadil",
+    "No, honestly. I haven't slept properly for a week."
+   ],
+   [
+    "A",
+    "ليش؟ تفكر في شي؟",
+    "lēsh? tfakkir fi shay?",
+    "Why? Is something on your mind?"
+   ],
+   [
+    "B",
+    "لا، بس أنام الساعة وحدة، وأتقلب لين الفجر",
+    "la, bas anām is-sāʿa waḥda, w atgallab lēn il-fajr",
+    "No, I just go to bed at one and toss and turn till dawn."
+   ],
+   [
+    "A",
+    "وقبل لا تنام؟ أكيد على التلفون",
+    "w gabil la tnām? akīd ʿala t-tilifōn",
+    "And before you sleep? On your phone, I bet."
+   ],
+   [
+    "B",
+    "هيه، أظل على التلفون ساعة وأكثر",
+    "hē, aẓall ʿala t-tilifōn sāʿa w akthar",
+    "Yes, I stay on my phone for an hour or more."
+   ],
+   [
+    "A",
+    "أنا كنت جي. لما خليت التلفون برا الغرفة، صرت أنام أحسن",
+    "ana kint chī. lamma khallēt it-tilifōn barra l-ghurfa, ṣirt anām aḥsan",
+    "I used to be like that. When I left my phone outside the room, I started sleeping better."
+   ],
+   [
+    "B",
+    "زين، بجرب. بس الغفوة بعد الغدا ما أقدر أخليها!",
+    "zēn, bajarrib. bas il-ghafwa baʿd il-ghada ma agdar akhallīha!",
+    "OK, I'll try. But I can't give up my nap after lunch!"
+   ],
+   [
+    "A",
+    "لا تخليها، بس خلها قصيرة. وأنا ما أشرب قهوة بعد العصر، تطير النوم",
+    "la tkhallīha, bas khallha gaṣīra. w ana ma ashrab gahwa baʿd il-ʿaṣir, tṭayyir in-nōm",
+    "Don't give it up, just keep it short. And I don't drink coffee after ʿaṣr; it keeps me awake."
+   ]
+  ],
+  "items": [
+   [
+    "صار لي أسبوع",
+    "ṣār-li usbūʿ",
+    "for a week now, it's been a week (for me)",
+    "منذ أسبوع",
+    ""
+   ],
+   [
+    "أتقلب",
+    "atgallab",
+    "I toss and turn",
+    "أتقلب",
+    ""
+   ],
+   [
+    "لين الفجر",
+    "lēn il-fajr",
+    "till dawn",
+    "حتى الفجر",
+    ""
+   ],
+   [
+    "أظل على التلفون",
+    "aẓall ʿala t-tilifōn",
+    "I stay on my phone, I keep scrolling on my phone",
+    "أظل على الهاتف",
+    ""
+   ],
+   [
+    "برا الغرفة",
+    "barra l-ghurfa",
+    "outside the room, out of the room",
+    "خارج الغرفة",
+    ""
+   ],
+   [
+    "صرت أنام أحسن",
+    "ṣirt anām aḥsan",
+    "I've started sleeping better, I sleep better now",
+    "أصبحت أنام أفضل",
+    ""
+   ],
+   [
+    "الغفوة",
+    "il-ghafwa",
+    "the nap",
+    "القيلولة / الغفوة",
+    ""
+   ],
+   [
+    "خلها قصيرة",
+    "khallha gaṣīra",
+    "keep it short (a feminine thing) (to a man)",
+    "اجعلها قصيرة",
+    "to a woman: khallīha gaṣīra"
+   ],
+   [
+    "تطير النوم",
+    "tṭayyir in-nōm",
+    "it (f.) keeps you awake (lit. it makes sleep fly off)",
+    "تطرد النوم",
+    "(recognise)"
+   ]
+  ],
+  "receptive": [
+   8
+  ]
+ },
+ {
+  "id": "s4u074",
+  "stage": 4,
+  "title": "One thing at a time",
+  "goal": "At the office, Maryam notices you're stressed about two reports; say what's getting to you and take her advice",
+  "tip": "Advice is mostly commands and la + a present verb: khudhhum wāḥid wāḥid 'take them one at a time', khudh brēk 'take a break', la tḥuṭṭ fi bālak 'don't let it get to you'. To a woman they end in -i / -īn: khudhi brēk, la tḥuṭṭīn fi bālich.",
+  "grammar": "recycle: commands and la + present verb for advice",
+  "dialogue": [
+   [
+    "A",
+    "سالم، من الصبح وانت ساكت. شفيك؟",
+    "Sālim, min iṣ-ṣubḥ w inta sākit. shfīk?",
+    "Sālim, you've been quiet since this morning. What's wrong?"
+   ],
+   [
+    "B",
+    "متوتر شوي. عندي تقريرين لازم أسلّمهم الخميس",
+    "mitwattir shwayy. ʿindi taqrīrēn lāzim asallimhum il-khamīs",
+    "I'm a bit stressed. I've got two reports to hand in on Thursday."
+   ],
+   [
+    "A",
+    "بس الخميس بعيد! ليش متوتر جي؟",
+    "bas il-khamīs baʿīd! lēsh mitwattir chī?",
+    "But Thursday's ages away! Why are you so stressed?"
+   ],
+   [
+    "B",
+    "المدير يبيهم مرتبين، وأنا مضغوط من كل صوب",
+    "il-mudīr yabīhum mrattabīn, w ana maẓghūṭ min kill ṣōb",
+    "The manager wants them done properly, and I'm under pressure from every side."
+   ],
+   [
+    "A",
+    "هد أعصابك. خذهم واحد واحد: الأول باكر، والثاني الأربعا",
+    "hidd aʿṣābak. khudhhum wāḥid wāḥid: il-awwal bāchir, w ith-thāni l-arbaʿa",
+    "Calm down. Take them one at a time: the first one tomorrow, the second on Wednesday."
+   ],
+   [
+    "B",
+    "معج حق. بس ما أنام زين من الضغط",
+    "maʿich ḥagg. bas ma anām zēn min iẓ-ẓaghiṭ",
+    "You're right. But I can't sleep well with the stress."
+   ],
+   [
+    "A",
+    "لا تحط في بالك وايد. الشغل ما يخلص، كل يوم في شي يديد",
+    "la tḥuṭṭ fi bālak wāyid. ish-shughul ma yikhlaṣ, kill yōm fī shay yidīd",
+    "Don't let it get to you so much. Work never ends; there's something new every day."
+   ],
+   [
+    "B",
+    "صدقتي. يمكن أحتاج بريك",
+    "ṣidagti. yimkin aḥtāj brēk",
+    "True. Maybe I need a break."
+   ],
+   [
+    "A",
+    "هيه، خذ بريك. اطلع تمشى عشر دقايق ورد",
+    "hē, khudh brēk. iṭlaʿ itmashsha ʿashr dagāyig w rudd",
+    "Yes, take a break. Go out for a ten-minute walk and come back."
+   ],
+   [
+    "B",
+    "فكرة حلوة. بطلع أتمشى شوي، وبرد أكمل",
+    "fikra ḥilwa. baṭlaʿ atmashsha shwayy, w barudd akammil",
+    "Good idea. I'll go out for a little walk and come back to finish."
+   ]
+  ],
+  "items": [
+   [
+    "وانت ساكت",
+    "w inta sākit",
+    "and you've been quiet, with you (sitting there) saying nothing (to a man)",
+    "وأنت صامت",
+    "to a woman: w inti sākta; (recognise)"
+   ],
+   [
+    "متوتر",
+    "mitwattir",
+    "stressed, tense, on edge (a man)",
+    "متوتر",
+    "a woman: mitwattra (متوترة)"
+   ],
+   [
+    "مضغوط",
+    "maẓghūṭ",
+    "under pressure, stressed out (a man)",
+    "مضغوط",
+    "a woman: maẓghūṭa (مضغوطة)"
+   ],
+   [
+    "من كل صوب",
+    "min kill ṣōb",
+    "from every side, from all directions",
+    "من كل جانب",
+    ""
+   ],
+   [
+    "لا تحط في بالك",
+    "la tḥuṭṭ fi bālak",
+    "don't let it get to you, don't dwell on it (to a man)",
+    "لا تشغل بالك",
+    "to a woman: la tḥuṭṭīn fi bālich"
+   ],
+   [
+    "الشغل ما يخلص",
+    "ish-shughul ma yikhlaṣ",
+    "work never ends (lit. work doesn't finish)",
+    "العمل لا ينتهي",
+    "(recognise)"
+   ],
+   [
+    "كل يوم في شي يديد",
+    "kill yōm fī shay yidīd",
+    "there's something new every day",
+    "كل يوم يوجد شيء جديد",
+    "(recognise)"
+   ],
+   [
+    "خذ بريك",
+    "khudh brēk",
+    "take a break (to a man)",
+    "خذ استراحة",
+    "to a woman: khudhi brēk; also istirāḥa (استراحة) 'a break'"
+   ],
+   [
+    "أتمشى",
+    "atmashsha",
+    "I go for a walk, I take a stroll",
+    "أتمشى",
+    "go for a walk (to a man): itmashsha"
+   ]
+  ],
+  "receptive": [
+   0,
+   5,
+   6
+  ]
+ },
+ {
+  "id": "s4u075",
+  "stage": 4,
+  "title": "Karak, step by step",
+  "goal": "At your flat in Mirdif, Sēf shows you how to make karak; follow each step, ask about amounts, and say the recipe back",
+  "tip": "Explain a process with commands and order words: awwal shay 'first', baʿdēn 'then', lēn 'until'. khallah + a present verb is 'let it …': khallah yighli 'let it boil'. To check you've got it, say the steps back and end with ṣaḥḥ?",
+  "grammar": "recycle: commands with awwal shay, baʿdēn, lēn for steps",
+  "dialogue": [
+   [
+    "B",
+    "أبي أتعلم أسوي كرك مثل اللي عند المحل",
+    "abi atʿallam asawwi karak mithil illi ʿind il-maḥall",
+    "I want to learn to make karak like the one at the shop."
+   ],
+   [
+    "A",
+    "سهلة! أول شي، حط الماي على النار، وحط فيه شاي وهيل",
+    "sahla! awwal shay, ḥuṭṭ il-māy ʿala n-nār, w ḥuṭṭ fīh chāy w hēl",
+    "Easy! First, put the water on the heat, and put tea and cardamom in it."
+   ],
+   [
+    "B",
+    "كم ملعقة شاي؟",
+    "cham milʿagat chāy?",
+    "How many spoons of tea?"
+   ],
+   [
+    "A",
+    "ملعقة لكل كوب، أو أكثر إذا تبيه ثقيل. وخله يغلي",
+    "milʿaga l-kill kūb, aw akthar idha tabīh thagīl. w khallah yighli",
+    "A spoon for each cup, or more if you want it strong. And let it boil."
+   ],
+   [
+    "B",
+    "وبعدين؟ الحليب؟",
+    "w baʿdēn? il-ḥalīb?",
+    "And then? The milk?"
+   ],
+   [
+    "A",
+    "هيه، حط الحليب والسكر، وخله على نار هادية",
+    "hē, ḥuṭṭ il-ḥalīb w is-sukkar, w khallah ʿala nār hādya",
+    "Yes, add the milk and sugar, and leave it on a low heat."
+   ],
+   [
+    "B",
+    "لين متى؟",
+    "lēn mita?",
+    "Until when?"
+   ],
+   [
+    "A",
+    "لين يفور مرتين. بس انتبه، لا تخليه يطلع برا الجدر",
+    "lēn yifūr marratēn. bas intibih, la tkhallīh yiṭlaʿ barra l-jidir",
+    "Until it froths up twice. But careful, don't let it boil over (lit. go out of the pot)."
+   ],
+   [
+    "B",
+    "يعني: الماي والشاي والهيل، بعدين الحليب والسكر، ويفور مرتين. صح؟",
+    "yaʿni: il-māy w ish-shāy w il-hēl, baʿdēn il-ḥalīb w is-sukkar, w yifūr marratēn. ṣaḥḥ?",
+    "So: water, tea and cardamom, then milk and sugar, and it froths up twice. Right?"
+   ],
+   [
+    "A",
+    "بالضبط! وفي ناس يحطون زعفران بعد، على كيفك",
+    "biẓ-ẓabṭ! w fī nās yḥuṭṭūn zaʿfarān baʿad, ʿala kēfak",
+    "Exactly! And some people add saffron too; up to you."
+   ]
+  ],
+  "items": [
+   [
+    "حط الماي على النار",
+    "ḥuṭṭ il-māy ʿala n-nār",
+    "put the water on (to heat) (to a man)",
+    "ضع الماء على النار",
+    "to a woman: ḥuṭṭi il-māy ʿala n-nār"
+   ],
+   [
+    "هيل",
+    "hēl",
+    "cardamom",
+    "هيل",
+    ""
+   ],
+   [
+    "ملعقة",
+    "milʿaga",
+    "a spoon, a spoonful",
+    "ملعقة",
+    "a spoon of tea: milʿagat chāy"
+   ],
+   [
+    "ثقيل",
+    "thagīl",
+    "strong (tea, coffee); heavy",
+    "ثقيل",
+    ""
+   ],
+   [
+    "خله يغلي",
+    "khallah yighli",
+    "let it boil (to a man)",
+    "دعه يغلي",
+    "to a woman: khallīh yighli"
+   ],
+   [
+    "على نار هادية",
+    "ʿala nār hādya",
+    "on a low heat",
+    "على نار هادئة",
+    ""
+   ],
+   [
+    "لين يفور",
+    "lēn yifūr",
+    "until it froths up, until it boils up",
+    "حتى يفور",
+    ""
+   ],
+   [
+    "الجدر",
+    "il-jidir",
+    "the pot, the saucepan",
+    "القدر",
+    "(recognise)"
+   ],
+   [
+    "زعفران",
+    "zaʿfarān",
+    "saffron",
+    "زعفران",
+    "(recognise)"
+   ]
+  ],
+  "receptive": [
+   7,
+   8
+  ],
+  "task": "This week: search YouTube for «طريقة الكرك» (how to make karak) or «طبخ إماراتي» (Emirati cooking). Watch one recipe and note three steps the cook gives (listen for حط, خله and لين). Then explain the recipe aloud, step by step, in under a minute. Within a minute you should hear شو / مب (UAE) or شنو / مو (Kuwait); if you hear سوف, ليس or هل all the time, it's fuṣḥā: pick another clip."
+ },
+ {
+  "id": "s4u076",
+  "stage": 4,
+  "title": "It counts your steps",
+  "goal": "In Bū Rāshid's majlis, with Sēf there, show him how to use a step-counter app on his phone, one step at a time",
+  "tip": "kill ma + a present verb is 'every time, whenever': kill ma timshi, yiḥsib 'every time you walk, it counts'. Explaining to an elder, keep each step short and add yā ʿammi or ṭāl ʿumrak; the verbs are still the ordinary 'you' forms: tiftaḥah, tḥuṭṭah.",
+  "grammar": "recycle: kill ma + present verb, 'every time'",
+  "dialogue": [
+   [
+    "A",
+    "يا ولدي، الدكتور يقول لي أمشي أكثر. بس كيف أعرف كم مشيت؟",
+    "yā wildi, id-daktōr ygūl-li amshi akthar. bas chēf aʿarf cham mishēt?",
+    "Son, the doctor tells me to walk more. But how do I know how far I've walked?"
+   ],
+   [
+    "B",
+    "سهلة يا عمي. في تطبيق يحسب خطواتك",
+    "sahla yā ʿammi. fī taṭbīg yiḥsib khaṭawātak",
+    "That's easy, uncle. There's an app that counts your steps."
+   ],
+   [
+    "A",
+    "تطبيق؟ أنا ما أدري عن هالأشيا. علمني شوي شوي",
+    "taṭbīg? ana ma adri ʿan hal-ashya. ʿallimni shwayy shwayy",
+    "An app? I don't know about these things. Teach me slowly."
+   ],
+   [
+    "B",
+    "عطني تلفونك، طال عمرك. أول شي ننزل التطبيق",
+    "ʿaṭni tilifōnak, ṭāl ʿumrak. awwal shay nnazzil it-taṭbīg",
+    "Give me your phone, sir. First we download the app."
+   ],
+   [
+    "A",
+    "تفضل. وبعدين؟",
+    "tfaẓẓal. w baʿdēn?",
+    "Here you are. And then?"
+   ],
+   [
+    "B",
+    "بعدين تحطه في جيبك. كل ما تمشي، يحسب",
+    "baʿdēn tḥuṭṭah fi jēbak. kill ma timshi, yiḥsib",
+    "Then you put it in your pocket. Every time you walk, it counts."
+   ],
+   [
+    "A",
+    "بروحه؟ ما أضغط شي؟",
+    "b-rūḥah? ma aẓghaṭ shay?",
+    "By itself? I don't press anything?"
+   ],
+   [
+    "B",
+    "لا، بروحه. وفي الليل شوف هني، يطلع لك كم خطوة مشيت",
+    "la, b-rūḥah. w fi l-lēl shūf hni, yiṭlaʿ lak cham khaṭwa mishēt",
+    "No, by itself. And at night look here: it shows you how many steps you've walked."
+   ],
+   [
+    "A",
+    "ما شاء الله! والله زمانكم غير يا ولدي. الله يحفظك",
+    "mā shāʼ allāh! wallāh zamānkum ghēr yā wildi. allāh yiḥfaẓak",
+    "Wonderful! Your times really are different, son. God keep you."
+   ],
+   [
+    "B",
+    "الله يحفظك يا عمي. وأنا حاضر",
+    "allāh yiḥfaẓak yā ʿammi. w ana ḥāẓir",
+    "God keep you, uncle. And I'm always here to help."
+   ]
+  ],
+  "items": [
+   [
+    "في تطبيق",
+    "fī taṭbīg",
+    "there's an app",
+    "يوجد تطبيق",
+    "an app: taṭbīg (تطبيق)"
+   ],
+   [
+    "يحسب خطواتك",
+    "yiḥsib khaṭawātak",
+    "it counts your steps (to a man)",
+    "يحسب خطواتك",
+    "to a woman: yiḥsib khaṭawātich"
+   ],
+   [
+    "ننزل التطبيق",
+    "nnazzil it-taṭbīg",
+    "we download the app; let's download the app",
+    "نحمّل التطبيق",
+    "download it (to a man): nazzilah"
+   ],
+   [
+    "كل ما تمشي",
+    "kill ma timshi",
+    "every time you walk, whenever you walk (to a man)",
+    "كلما تمشي",
+    "to a woman: kill ma timshīn"
+   ],
+   [
+    "ما أضغط شي؟",
+    "ma aẓghaṭ shay?",
+    "I don't press anything?",
+    "ألا أضغط شيئًا؟",
+    ""
+   ],
+   [
+    "يطلع لك",
+    "yiṭlaʿ lak",
+    "it shows you, it comes up for you (on a screen) (to a man)",
+    "يظهر لك",
+    "to a woman: yiṭlaʿ lich"
+   ],
+   [
+    "كم خطوة",
+    "cham khaṭwa",
+    "how many steps",
+    "كم خطوة",
+    "a step: khaṭwa; steps: khaṭawāt"
+   ],
+   [
+    "ما أدري عن هالأشيا",
+    "ma adri ʿan hal-ashya",
+    "I don't know about these things",
+    "لا أعرف شيئًا عن هذه الأشياء",
+    "(recognise)"
+   ],
+   [
+    "زمانكم غير",
+    "zamānkum ghēr",
+    "your times are different, it's a different world now (to a group)",
+    "زمانكم مختلف",
+    "(recognise)"
+   ]
+  ],
+  "receptive": [
+   7,
+   8
+  ]
+ },
+ {
+  "id": "s4u077",
+  "stage": 4,
+  "title": "Stuck in the sand",
+  "goal": "At a café, tell Fahad the long story of how you and Sēf got stuck in the sand on the way to a camp",
+  "tip": "Set the scene with w + a pronoun + a participle or a present verb, 'as, while': w niḥin rāyḥīn 'as we were on our way', w ana aḥfir 'while I was digging'. Then move on with fi nuṣṣ iṭ-ṭarīg 'halfway', fajʼa, and close with min dhāk il-yōm 'since that day'.",
+  "grammar": "narrative markers: w + pronoun + participle ('as …'), min dhāk il-yōm",
+  "dialogue": [
+   [
+    "A",
+    "سمعت إنكم غرزتوا في البر! شنو صار؟",
+    "simaʿt innakum gharaztu fi l-barr! shinu ṣār?",
+    "I heard you got stuck in the desert! What happened?"
+   ],
+   [
+    "B",
+    "لا تذكرني! ونحن رايحين المخيم، دخلنا طريق رمل",
+    "la tdhakkirni! w niḥin rāyḥīn il-mukhayyam, dakhalna ṭarīg raml",
+    "Don't remind me! As we were heading to the camp, we turned onto a sandy track."
+   ],
+   [
+    "A",
+    "بسيارتك؟",
+    "b-sayyārtak?",
+    "In your car?"
+   ],
+   [
+    "B",
+    "هيه. وفي نص الطريق، غرزنا في الرمل",
+    "hē. w fi nuṣṣ iṭ-ṭarīg, gharazna fi r-raml",
+    "Yes. And halfway there, we got stuck in the sand."
+   ],
+   [
+    "A",
+    "يا ساتر! وشلون طلعتوا؟",
+    "yā sātir! w shlōn ṭlaʿtu?",
+    "Good grief! And how did you get out?"
+   ],
+   [
+    "B",
+    "حاولنا ساعة كاملة. وأنا أحفر، سيف قاعد يصور!",
+    "ḥāwalna sāʿa kāmla. w ana aḥfir, Sēf gāʿid yṣawwir!",
+    "We tried for a whole hour. While I was digging, Sēf was filming!"
+   ],
+   [
+    "A",
+    "هذا سيف، ما يتغير! وبعدين؟",
+    "hādha Sēf, ma yitghayyar! w baʿdēn?",
+    "That's Sēf, he never changes! And then?"
+   ],
+   [
+    "B",
+    "فجأة طلع لنا شيبة بسيارة كبيرة، وسحبنا بحبل",
+    "fajʼa ṭilaʿ lana shēba b-sayyāra kbīra, w siḥabna b-ḥabil",
+    "Suddenly an old man turned up out of nowhere in a big car and pulled us out with a rope."
+   ],
+   [
+    "A",
+    "الله يجزاه خير! أنا عمري ما غرزت، الحمد لله",
+    "allāh yjzāh khēr! ana ʿumri ma gharazt, il-ḥamdu lillāh",
+    "God reward him! I've never got stuck in my life, thank God."
+   ],
+   [
+    "B",
+    "ولا أنا قبل! ومن ذاك اليوم، ما أدخل الرمل إلا ويا سيارة ثانية",
+    "wala ana gabil! w min dhāk il-yōm, ma adkhil ir-raml illa wiyya sayyāra thānya",
+    "Nor had I, before! And since that day, I only go onto the sand with a second car."
+   ]
+  ],
+  "items": [
+   [
+    "لا تذكرني",
+    "la tdhakkirni",
+    "don't remind me (to a man)",
+    "لا تذكرني",
+    "to a woman: la tdhakkrīni"
+   ],
+   [
+    "ونحن رايحين",
+    "w niḥin rāyḥīn",
+    "as we were on our way, as we were going",
+    "ونحن ذاهبون",
+    "Kuwait: w iḥna rāyḥīn"
+   ],
+   [
+    "في نص الطريق",
+    "fi nuṣṣ iṭ-ṭarīg",
+    "halfway (there), in the middle of the journey",
+    "في منتصف الطريق",
+    ""
+   ],
+   [
+    "غرزنا",
+    "gharazna",
+    "we got stuck (in sand, mud)",
+    "علقنا",
+    "you got stuck (to a group): gharaztu"
+   ],
+   [
+    "وأنا أحفر",
+    "w ana aḥfir",
+    "while I was digging",
+    "وأنا أحفر",
+    ""
+   ],
+   [
+    "طلع لنا",
+    "ṭilaʿ lana",
+    "(he) turned up out of nowhere (lit. came out at us)",
+    "ظهر لنا",
+    ""
+   ],
+   [
+    "عمري ما",
+    "ʿumri ma",
+    "I've never (in my life)",
+    "لم … في حياتي",
+    "ʿumri ma shift chī 'I've never seen anything like it'"
+   ],
+   [
+    "من ذاك اليوم",
+    "min dhāk il-yōm",
+    "since that day, from that day on",
+    "منذ ذلك اليوم",
+    ""
+   ],
+   [
+    "الله يجزاه خير",
+    "allāh yjzāh khēr",
+    "God reward him",
+    "جزاه الله خيرًا",
+    "(recognise)"
+   ]
+  ],
+  "receptive": [
+   8
+  ]
+ },
+ {
+  "id": "s4u078",
+  "stage": 4,
+  "title": "I didn't know where to put myself",
+  "goal": "At the office, tell Maryam and the team about the voice note you sent to the wrong group",
+  "tip": "An anecdote needs a hook and a payoff: start with ṣār-li mawgif 'something happened to me', turn it with ṭilaʿ inni 'it turned out I', top it with w il-muṣība 'and the worst part', and react to your own embarrassment: ma ʿiraft wēn awaddi wiyhi.",
+  "grammar": "narrative markers: ṣār-li mawgif, ṭilaʿ inn, w il-muṣība",
+  "dialogue": [
+   [
+    "A",
+    "سالم، شفيك تضحك بروحك؟",
+    "Sālim, shfīk tiẓḥak b-rūḥak?",
+    "Sālim, what are you laughing at all by yourself?"
+   ],
+   [
+    "B",
+    "تذكرت موقف صار لي أمس. تبون أقول لكم؟",
+    "tdhakkart mawgif ṣār-li ams. tabūn agūl-lkum?",
+    "I remembered something that happened to me yesterday. Do you want me to tell you?"
+   ],
+   [
+    "A",
+    "أكيد! شو صار؟",
+    "akīd! shu ṣār?",
+    "Of course! What happened?"
+   ],
+   [
+    "B",
+    "طرشت فويس لسيف، أقول المحاضرة طويلة وايد، وطلع إني طرشته لقروب الجامعة",
+    "ṭarrasht fōys l-Sēf, agūl il-muḥāẓara ṭawīla wāyid, w ṭilaʿ inni ṭarrashtah l-grūb il-jāmʿa",
+    "I sent Sēf a voice note saying the lecture was really long, and it turned out I'd sent it to the uni group."
+   ],
+   [
+    "A",
+    "لا! والدكتور في القروب؟",
+    "la! w id-daktōr fi l-grūb?",
+    "No! And is the lecturer in the group?"
+   ],
+   [
+    "B",
+    "هيه! والمصيبة، رد علي: شكرا على رأيك",
+    "hē! w il-muṣība, radd ʿalay: shukran ʿala raʼyak",
+    "Yes! And the worst part: he replied to me, 'Thanks for your opinion.'"
+   ],
+   [
+    "A",
+    "فشلة! وشو سويت؟",
+    "fashla! w shu sawwēt?",
+    "How embarrassing! And what did you do?"
+   ],
+   [
+    "B",
+    "ما عرفت وين أودي ويهي. والكل سمعه",
+    "ma ʿiraft wēn awaddi wiyhi. w il-kill simaʿah",
+    "I didn't know where to put myself. And everyone had heard it."
+   ],
+   [
+    "A",
+    "واللي يضحك إنك قاعد تضحك عليها الحين!",
+    "w illi yiẓḥak innak gāʿid tiẓḥak ʿalēha l-ḥīn!",
+    "And the funny thing is that you're laughing about it now!"
+   ],
+   [
+    "B",
+    "شو أسوي؟ اللي صار صار. بس من الحين أشوف القروب قبل لا أطرش",
+    "shu asawwi? illi ṣār ṣār. bas min il-ḥīn ashūf il-grūb gabil la aṭarrish",
+    "What can I do? What's done is done. But from now on I check the group before I send."
+   ]
+  ],
+  "items": [
+   [
+    "صار لي موقف",
+    "ṣār-li mawgif",
+    "something happened to me, I had an (awkward) moment",
+    "حدث لي موقف",
+    "mawgif 'a situation, an incident', not mōgif 'a parking space'"
+   ],
+   [
+    "طلع إني",
+    "ṭilaʿ inni",
+    "it turned out (that) I",
+    "اتضح أنني",
+    ""
+   ],
+   [
+    "فويس",
+    "fōys",
+    "a voice note (on WhatsApp)",
+    "رسالة صوتية",
+    "send a voice note: ṭarrish fōys"
+   ],
+   [
+    "والمصيبة",
+    "w il-muṣība",
+    "and the worst part (is), and to top it all (lit. and the disaster)",
+    "والمصيبة",
+    ""
+   ],
+   [
+    "فشلة!",
+    "fashla!",
+    "how embarrassing! what an embarrassment!",
+    "يا للإحراج",
+    "(recognise)"
+   ],
+   [
+    "ما عرفت وين أودي ويهي",
+    "ma ʿiraft wēn awaddi wiyhi",
+    "I didn't know where to put myself (lit. where to take my face)",
+    "لم أعرف أين أخفي وجهي",
+    ""
+   ],
+   [
+    "الكل سمعه",
+    "il-kill simaʿah",
+    "everyone heard it (m.), everyone's heard it",
+    "الكل سمعه",
+    ""
+   ],
+   [
+    "اللي يضحك إن",
+    "illi yiẓḥak inn",
+    "the funny thing is (that)",
+    "المضحك أن",
+    "(recognise)"
+   ]
+  ],
+  "receptive": [
+   4,
+   7
+  ]
+ },
+ {
+  "id": "s4u079",
+  "stage": 4,
+  "title": "In our day, uncle?",
+  "goal": "In Bū Rāshid's majlis, with Sēf there, ask him for his story about a trip to Al Ain as a young man, and keep it going respectfully",
+  "tip": "An older speaker tells a story with kinna 'we were' and kān 'there was', and moves it on with il-ḥāṣil 'anyway, so'. Keep him going with short questions in the past: w shu sawwētu? w wṣaltu? and react with yā sātir! or mā shāʼ allāh.",
+  "grammar": "narrative: kinna + noun, il-ḥāṣil, past-tense questions to keep a story going",
+  "dialogue": [
+   [
+    "B",
+    "يا عمي، سيف يقول عندك سالفة حلوة عن العين",
+    "yā ʿammi, Sēf ygūl ʿindak sālfa ḥilwa ʿan il-ʿĒn",
+    "Uncle, Sēf says you've got a good story about Al Ain."
+   ],
+   [
+    "A",
+    "سيف ما ينسى شي! زين، اسمع. كنا شباب، ورحنا العين بسيارة قديمة",
+    "Sēf ma yinsa shay! zēn, ismaʿ. kinna shabāb, w riḥna l-ʿĒn b-sayyāra gadīma",
+    "Sēf never forgets a thing! All right, listen. We were young, and we drove to Al Ain in an old car."
+   ],
+   [
+    "B",
+    "من الشارقة؟ ووصلتوا؟",
+    "min ish-Shārja? w wṣaltu?",
+    "From Sharjah? And did you get there?"
+   ],
+   [
+    "A",
+    "الحاصل، في نص الطريق خربت السيارة، والدنيا ليل، وما عندنا تلفونات",
+    "il-ḥāṣil, fi nuṣṣ iṭ-ṭarīg khirbat is-sayyāra, w id-dinya lēl, w ma ʿindana tilifōnāt",
+    "Anyway, halfway there the car broke down, it was night, and we had no phones."
+   ],
+   [
+    "B",
+    "يا ساتر! وشو سويتوا؟",
+    "yā sātir! w shu sawwētu?",
+    "Good grief! And what did you do?"
+   ],
+   [
+    "A",
+    "قعدنا نتريا. وبعد ساعتين، وقف لنا ريّال ما نعرفه",
+    "gaʿadna nitrayya. w baʿd sāʿtēn, wigaf lana rayyāl ma nʿarfah",
+    "We sat and waited. After two hours, a man we didn't know stopped for us."
+   ],
+   [
+    "B",
+    "ما شاء الله! وصلح السيارة؟",
+    "mā shāʼ allāh! w ṣallaḥ is-sayyāra?",
+    "Wonderful! And did he fix the car?"
+   ],
+   [
+    "A",
+    "لا، ما قدر. بس عزمنا بيته، وبتنا عنده لين الصبح",
+    "la, ma gidar. bas ʿazamna bētah, w bitna ʿindah lēn iṣ-ṣubḥ",
+    "No, he couldn't. But he invited us to his house, and we spent the night there till morning."
+   ],
+   [
+    "B",
+    "ناس أول غير والله. سالفة ما تنتسى يا عمي",
+    "nās awwal ghēr wallāh. sālfa ma tintisa yā ʿammi",
+    "People back then really were different. That's a story you can't forget, uncle."
+   ],
+   [
+    "A",
+    "صدقت. ومن ذاك اليوم صار مثل أخوي، وللحين عياله يزوروني",
+    "ṣidagt. w min dhāk il-yōm ṣār mithil akhūy, w lil-ḥīn ʿyālah yzūrūni",
+    "True. And from that day he was like a brother to me; his children still visit me."
+   ]
+  ],
+  "items": [
+   [
+    "سالفة حلوة",
+    "sālfa ḥilwa",
+    "a good story",
+    "قصة جميلة",
+    ""
+   ],
+   [
+    "كنا شباب",
+    "kinna shabāb",
+    "we were young (men)",
+    "كنا شبابًا",
+    ""
+   ],
+   [
+    "الحاصل",
+    "il-ḥāṣil",
+    "anyway, so (moving a story on)",
+    "المهم",
+    "(recognise)"
+   ],
+   [
+    "والدنيا ليل",
+    "w id-dinya lēl",
+    "and it was dark, and night had fallen",
+    "وكان الليل قد حل",
+    "(recognise)"
+   ],
+   [
+    "وقف لنا",
+    "wigaf lana",
+    "he stopped for us",
+    "توقف لنا",
+    ""
+   ],
+   [
+    "بتنا عنده",
+    "bitna ʿindah",
+    "we spent the night at his place",
+    "بتنا عنده",
+    "(recognise)"
+   ],
+   [
+    "ناس أول",
+    "nās awwal",
+    "people in the old days, people back then",
+    "الناس في الماضي",
+    ""
+   ],
+   [
+    "ما تنتسى",
+    "ma tintisa",
+    "(it) can't be forgotten, unforgettable (a feminine thing)",
+    "لا تُنسى",
+    ""
+   ]
+  ],
+  "receptive": [
+   2,
+   3,
+   5
+  ]
+ },
+ {
+  "id": "s4u080",
+  "stage": 4,
+  "title": "The spoon in the cup",
+  "goal": "At a winter desert camp, tell Sēf and the guys a clean joke, explain the punchline when he doesn't get it, and take the teasing",
+  "tip": "A joke often opens with wāḥid rāḥ… 'this guy went …' and ends on a quote. If someone doesn't get it, explain it simply, in the present. Praise someone's humour with dammak khafīf 'you're funny' (lit. your blood is light).",
+  "grammar": "narrative markers for a joke: wāḥid rāḥ…, gāl-lah: …",
+  "dialogue": [
+   [
+    "A",
+    "يا شباب، سالم عنده نكتة. يلا، قولها!",
+    "yā shabāb, Sālim ʿindah nukta. yalla, gūlha!",
+    "Guys, Sālim's got a joke. Come on, tell it!"
+   ],
+   [
+    "B",
+    "زين. واحد راح للدكتور، قال له: يا دكتور، كل ما أشرب كرك عيني تعورني",
+    "zēn. wāḥid rāḥ lid-daktōr, gāl-lah: yā daktōr, kill ma ashrab karak ʿēni tʿawwirni",
+    "OK. This guy went to the doctor and said, 'Doctor, every time I drink karak, my eye hurts.'"
+   ],
+   [
+    "A",
+    "وشو قال له الدكتور؟",
+    "w shu gāl-lah id-daktōr?",
+    "And what did the doctor say to him?"
+   ],
+   [
+    "B",
+    "قال له: شل الملعقة من الكوب قبل لا تشرب!",
+    "gāl-lah: shill il-milʿaga min il-kūb gabil la tishrab!",
+    "He said, 'Take the spoon out of the cup before you drink!'"
+   ],
+   [
+    "A",
+    "ما فهمتها! ليش الملعقة؟",
+    "ma fhimt-ha! lēsh il-milʿaga?",
+    "I didn't get it! Why the spoon?"
+   ],
+   [
+    "B",
+    "الملعقة تدخل في عينه وهو يشرب!",
+    "il-milʿaga tidkhil fi ʿēnah w huwa yishrab!",
+    "The spoon goes in his eye while he's drinking!"
+   ],
+   [
+    "A",
+    "هاه، الحين فهمت. حلوة، بس قديمة!",
+    "hāh, il-ḥīn fhimt. ḥilwa, bas gadīma!",
+    "Ah, now I get it. Good one, but it's old!"
+   ],
+   [
+    "B",
+    "قديمة؟ أنا أول مرة أسمعها!",
+    "gadīma? ana awwal marra asmaʿha!",
+    "Old? It's the first time I've heard it!"
+   ],
+   [
+    "A",
+    "سمعتها من أبوي وأنا ياهل. دمك خفيف، بس النكتة عمرها أكبر منك!",
+    "simiʿtha min ubūy w ana yāhil. dammak khafīf, bas in-nukta ʿumrha akbar minnak!",
+    "I heard it from my dad when I was a kid. You're funny, but that joke's older than you!"
+   ],
+   [
+    "B",
+    "خلاص، المرة الياية بييب لكم نكتة يديدة",
+    "khalāṣ, il-marra l-yāya bayīb-lkum nukta yidīda",
+    "Fine, next time I'll bring you all a new joke."
+   ]
+  ],
+  "items": [
+   [
+    "قولها",
+    "gūlha",
+    "tell it, say it (a feminine thing: a joke, a story) (to a man)",
+    "قلها",
+    "to a woman: gūlīha"
+   ],
+   [
+    "واحد راح",
+    "wāḥid rāḥ",
+    "this guy went, a man went (to start a joke)",
+    "ذهب رجل",
+    ""
+   ],
+   [
+    "شل الملعقة",
+    "shill il-milʿaga",
+    "take the spoon out (to a man)",
+    "أخرج الملعقة",
+    "to a woman: shilli il-milʿaga; shill 'take away, lift' (UAE)"
+   ],
+   [
+    "وهو يشرب",
+    "w huwa yishrab",
+    "while he's drinking, while he drinks",
+    "وهو يشرب",
+    ""
+   ],
+   [
+    "وأنا ياهل",
+    "w ana yāhil",
+    "when I was a kid (UAE)",
+    "عندما كنت طفلًا",
+    "(recognise)"
+   ],
+   [
+    "دمك خفيف",
+    "dammak khafīf",
+    "you're funny, you're good fun (lit. your blood is light) (to a man)",
+    "أنت ظريف",
+    "to a woman: dammich khafīf; the opposite: dammah thagīl 'he's tiresome'"
+   ],
+   [
+    "عمرها أكبر منك",
+    "ʿumrha akbar minnak",
+    "it's older than you (a feminine thing) (to a man)",
+    "عمرها أكبر منك",
+    "to a woman: ʿumrha akbar minnich; (recognise)"
+   ],
+   [
+    "نكتة يديدة",
+    "nukta yidīda",
+    "a new joke",
+    "نكتة جديدة",
+    ""
+   ]
+  ],
+  "receptive": [
+   4,
+   6
+  ],
+  "task": "This week: with a tutor or exchange partner (search a tutoring site for «Emirati Arabic tutor»), tell one short, clean joke or funny story in Gulf Arabic. Open with wāḥid rāḥ… or marra min il-marrāt, use fajʼa once, and end on a quote. Ask them to tell you one back, react (dammak khafīf! or bāykha!), and ask what any word you missed means."
+ },
+ {
+  "id": "s4u081",
+  "stage": 4,
+  "title": "So he says",
+  "goal": "At university, pass on to Sēf the story Fahad told you about nearly missing his flight, and say how far you believe it",
+  "tip": "When you retell someone else's story, show it's theirs: ʿala gōlah 'according to him', ygūl-lak 'he says' (lit. he says to you), ana agūl-lak illi gāl-li 'I'm just telling you what he told me'. React with ṣij walla yitghashmar? 'is he serious or kidding?'",
+  "grammar": "retelling: ʿala gōlah, ygūl-lak + past verb",
+  "dialogue": [
+   [
+    "A",
+    "شفت فهد أمس؟ شو أخباره؟",
+    "shift Fahad ams? shu akhbārah?",
+    "Did you see Fahad yesterday? How's he doing?"
+   ],
+   [
+    "B",
+    "هيه، وقال لي سالفة غريبة",
+    "hē, w gāl-li sālfa gharība",
+    "Yes, and he told me a strange story."
+   ],
+   [
+    "A",
+    "شو؟ قول!",
+    "shu? gūl!",
+    "What? Tell me!"
+   ],
+   [
+    "B",
+    "على قوله، نام في المطار قدام البوابة، وما سمعهم ينادونه",
+    "ʿala gōlah, nām fi l-maṭār jiddām il-bawwāba, w ma simaʿhum ynādūnah",
+    "According to him, he fell asleep at the airport in front of the gate and didn't hear them calling him."
+   ],
+   [
+    "A",
+    "لا تقول! وفاتته الطيارة؟",
+    "la tgūl! w fātatah iṭ-ṭayyāra?",
+    "No way! And he missed the plane?"
+   ],
+   [
+    "B",
+    "لا، هذا الحلو! يقول لك صحى، والطيارة متأخرة ساعتين",
+    "la, hādha l-ḥilu! ygūl-lak ṣiḥa, w iṭ-ṭayyāra mitʼakhkhra sāʿtēn",
+    "No, that's the best part! He says he woke up and the plane was two hours late."
+   ],
+   [
+    "A",
+    "يا حظه! بس فهد يحب يبالغ. صج ولّا يتغشمر؟",
+    "yā ḥaẓẓah! bas Fahad yḥibb ybālig. ṣij walla yitghashmar?",
+    "Lucky him! But Fahad likes to exaggerate. Is he serious or kidding?"
+   ],
+   [
+    "B",
+    "ما أدري، أقول لك اللي قال لي بس",
+    "ma adri, agūl-lak illi gāl-li bas",
+    "I don't know; I'm just telling you what he told me."
+   ],
+   [
+    "A",
+    "زين، على ذمته يعني!",
+    "zēn, ʿala dhimmtah yaʿni!",
+    "OK, so that's his version, then!"
+   ],
+   [
+    "B",
+    "هيه، بس أنا مصدقه. فهد ما يكذب علي",
+    "hē, bas ana mṣaddgah. Fahad ma yikdhib ʿalay",
+    "Yes, but I believe him. Fahad doesn't lie to me."
+   ]
+  ],
+  "items": [
+   [
+    "سالفة غريبة",
+    "sālfa gharība",
+    "a strange story",
+    "قصة غريبة",
+    ""
+   ],
+   [
+    "على قوله",
+    "ʿala gōlah",
+    "according to him, so he says",
+    "على حد قوله",
+    "according to her: ʿala gōl-ha"
+   ],
+   [
+    "فاتته الطيارة",
+    "fātatah iṭ-ṭayyāra",
+    "he missed the plane (lit. the plane passed him by)",
+    "فاتته الطائرة",
+    "I missed the plane: fātatni iṭ-ṭayyāra"
+   ],
+   [
+    "هذا الحلو",
+    "hādha l-ḥilu",
+    "that's the best part, that's the good bit",
+    "هذا هو الجميل",
+    ""
+   ],
+   [
+    "يحب يبالغ",
+    "yḥibb ybālig",
+    "he likes to exaggerate",
+    "يحب أن يبالغ",
+    ""
+   ],
+   [
+    "صج ولّا يتغشمر؟",
+    "ṣij walla yitghashmar?",
+    "is he serious or (is he) kidding?",
+    "هل هو جاد أم يمزح؟",
+    "(friends only)"
+   ],
+   [
+    "أقول لك اللي قال لي",
+    "agūl-lak illi gāl-li",
+    "I'm telling you what he told me (to a man)",
+    "أقول لك ما قاله لي",
+    "to a woman: agūl-lich illi gāl-li"
+   ],
+   [
+    "على ذمته",
+    "ʿala dhimmtah",
+    "so he says, that's his version (lit. on his conscience)",
+    "على ذمته",
+    "(recognise)"
+   ],
+   [
+    "أنا مصدقه",
+    "ana mṣaddgah",
+    "I believe him (said by a man)",
+    "أنا أصدقه",
+    "a woman says: ana mṣaddgatah"
+   ]
+  ],
+  "receptive": [
+   7
+  ]
+ },
+ {
+  "id": "s4u082",
+  "stage": 4,
+  "title": "Where was I?",
+  "goal": "At a café, tell Fahad and Sēf how you lost the car at the mall with your parents, and keep going when Fahad keeps interrupting",
+  "tip": "Hold the floor with ṭawwil bālak 'hang on', khallni akammil 'let me finish' and la tgāṭiʿni 'don't interrupt me'. Pick the thread up with wēn wiṣalt? 'where was I?', and wrap up with il-mukhtaṣar 'long story short'.",
+  "grammar": "narrative markers: holding the floor and picking the story up again",
+  "dialogue": [
+   [
+    "B",
+    "المهم، طلعنا من المول أنا وأمي وأبوي، وما لقينا السيارة",
+    "il-muhimm, ṭlaʿna min il-mōl ana w ummi w ubūy, w ma ligēna s-sayyāra",
+    "Anyway, my mum, my dad and I came out of the mall, and we couldn't find the car."
+   ],
+   [
+    "A",
+    "شنو؟ انسرقت؟ في المولات يصير جذي",
+    "shinu? insirgat? fi l-mōlāt yṣīr chidhi",
+    "What? Had it been stolen? That happens in malls."
+   ],
+   [
+    "B",
+    "طول بالك، خلني أكمل!",
+    "ṭawwil bālak, khallni akammil!",
+    "Hang on, let me finish!"
+   ],
+   [
+    "A",
+    "زين زين، كمل",
+    "zēn zēn, kammil",
+    "OK, OK, go on."
+   ],
+   [
+    "B",
+    "أمي قالت الطابق الثاني، وأبوي قال الثالث",
+    "ummi gālat iṭ-ṭābig ith-thāni, w ubūy gāl ith-thālith",
+    "My mum said the second floor, and my dad said the third."
+   ],
+   [
+    "A",
+    "وانت؟ ما تذكر وين خليتها؟",
+    "w inta? ma tidhkir wēn khallēt-ha?",
+    "And you? Don't you remember where you left it?"
+   ],
+   [
+    "B",
+    "لا تقاطعني يا فهد! وين وصلت؟",
+    "la tgāṭiʿni yā Fahad! wēn wiṣalt?",
+    "Don't interrupt me, Fahad! Where was I?"
+   ],
+   [
+    "A",
+    "أبوك قال الثالث",
+    "ubūk gāl ith-thālith",
+    "Your dad said the third."
+   ],
+   [
+    "B",
+    "هيه. المختصر، دورنا ساعة كاملة، وطلعت في الطابق الأول!",
+    "hē. il-mukhtaṣar, dawwarna sāʿa kāmla, w ṭilʿat fi ṭ-ṭābig il-awwal!",
+    "Right. Long story short, we searched for a whole hour, and it turned out to be on the first floor!"
+   ],
+   [
+    "A",
+    "والله؟ وعلى فكرة، أنا بعد صار لي نفس الشي في المطار",
+    "wallāh? w ʿala fikra, ana baʿad ṣār-li nafs ish-shay fi l-maṭār",
+    "Seriously? And by the way, the same thing happened to me at the airport."
+   ]
+  ],
+  "items": [
+   [
+    "يصير جذي",
+    "yṣīr chidhi",
+    "that happens, things like that happen (Kuwait)",
+    "يحدث هذا",
+    "UAE: yṣīr chī (يصير جي); (recognise)"
+   ],
+   [
+    "طول بالك",
+    "ṭawwil bālak",
+    "hang on, be patient (to a man)",
+    "اصبر / تمهل",
+    "to a woman: ṭawwli bālich"
+   ],
+   [
+    "خلني أكمل",
+    "khallni akammil",
+    "let me finish (to a man)",
+    "دعني أكمل",
+    "to a woman: khallīni akammil"
+   ],
+   [
+    "الطابق الثاني",
+    "iṭ-ṭābig ith-thāni",
+    "the second floor",
+    "الطابق الثاني",
+    ""
+   ],
+   [
+    "لا تقاطعني",
+    "la tgāṭiʿni",
+    "don't interrupt me (to a man)",
+    "لا تقاطعني",
+    "to a woman: la tgāṭʿīni"
+   ],
+   [
+    "وين وصلت؟",
+    "wēn wiṣalt?",
+    "where was I? (lit. where did I get to?)",
+    "أين وصلت؟",
+    ""
+   ],
+   [
+    "المختصر",
+    "il-mukhtaṣar",
+    "long story short, in short",
+    "باختصار",
+    ""
+   ],
+   [
+    "وعلى فكرة",
+    "w ʿala fikra",
+    "and by the way",
+    "وبالمناسبة",
+    ""
+   ],
+   [
+    "أنا وأمي وأبوي",
+    "ana w ummi w ubūy",
+    "my mum, my dad and I (lit. I and my mum and my dad)",
+    "أنا وأمي وأبي",
+    ""
+   ]
+  ],
+  "receptive": [
+   0
+  ]
+ },
+ {
+  "id": "s4u083",
+  "stage": 4,
+  "title": "Checkpoint 4.6: karak at the camp",
+  "goal": "Checkpoint: at a winter desert camp, tell Sēf about your new routine, make the karak while you explain each step, and laugh at your gym story",
+  "tip": "Review, and now you say it: ṣār-li + time, ma ʿidt ākil, khaffaft, thalāth marrāt fi l-usbūʿ, khallah yighli, lēn yifūr, la tdhakkirni, jismi killah yʿawwirni. Give the steps in order: awwal shay, baʿdēn, lēn. Tease a friend who's up early: shu han-nashāṭ?",
+  "grammar": "checkpoint 4.6 (s4u071–s4u082): routines, steps in order, narrative markers",
+  "dialogue": [
+   [
+    "A",
+    "يا سالم، شو هالنشاط؟ الكل نايم، وانت صاحي من الفجر!",
+    "yā Sālim, shu han-nashāṭ? il-kill nāyim, w inta ṣāḥi min il-fajr!",
+    "Sālim, what's all this energy? Everyone's asleep, and you've been up since dawn!"
+   ],
+   [
+    "B",
+    "صار لي شهر أنام بدري، والتلفون برا الخيمة",
+    "ṣār-li shahar anām badri, w it-tilifōn barra l-khēma",
+    "For a month now I've been going to bed early, with my phone outside the tent."
+   ],
+   [
+    "A",
+    "ما شاء الله! وبعدك تروح النادي؟",
+    "mā shāʼ allāh! w baʿdak trūḥ in-nādi?",
+    "Good for you! And are you still going to the gym?"
+   ],
+   [
+    "B",
+    "هيه، ثلاث مرات في الأسبوع. وخففت الحلويات",
+    "hē, thalāth marrāt fi l-usbūʿ. w khaffaft il-ḥalawiyyāt",
+    "Yes, three times a week. And I've cut down on sweets."
+   ],
+   [
+    "A",
+    "زين، عيل انت بتسوي لنا الكرك. فهد يبي يتعلم",
+    "zēn, ʿayal inta bitsawwī-lna l-karak. Fahad yabi yitʿallam",
+    "Great, then you're making us the karak. Fahad wants to learn."
+   ],
+   [
+    "B",
+    "أبشر! أول شي الماي والشاي والهيل، وخله يغلي",
+    "abshir! awwal shay il-māy w ish-shāy w il-hēl, w khallah yighli",
+    "Right away! First the water, the tea and the cardamom, and let it boil."
+   ],
+   [
+    "A",
+    "والسكر؟ فهد يحبه حلو وايد",
+    "w is-sukkar? Fahad yḥibbah ḥilu wāyid",
+    "And the sugar? Fahad likes it really sweet."
+   ],
+   [
+    "B",
+    "بعدين الحليب والسكر، لين يفور مرتين",
+    "baʿdēn il-ḥalīb w is-sukkar, lēn yifūr marratēn",
+    "Then the milk and sugar, until it froths up twice."
+   ],
+   [
+    "A",
+    "ذكرتني بسالفتك في النادي، أول أسبوع!",
+    "dhakkartni b-sālftak fi n-nādi, awwal usbūʿ!",
+    "You've reminded me of your story at the gym, that first week!"
+   ],
+   [
+    "B",
+    "لا تذكرني! جسمي كله كان يعورني",
+    "la tdhakkirni! jismi killah kān yʿawwirni",
+    "Don't remind me! My whole body ached."
+   ]
+  ],
+  "items": [
+   [
+    "شو هالنشاط؟",
+    "shu han-nashāṭ?",
+    "what's all this energy? (teasing someone up early or very busy)",
+    "ما هذا النشاط؟",
+    ""
+   ],
+   [
+    "الكل نايم",
+    "il-kill nāyim",
+    "everyone's asleep",
+    "الجميع نائم",
+    ""
+   ],
+   [
+    "صاحي من الفجر",
+    "ṣāḥi min il-fajr",
+    "up since dawn (a man)",
+    "مستيقظ منذ الفجر",
+    "a woman: ṣāḥya min il-fajr"
+   ],
+   [
+    "برا الخيمة",
+    "barra l-khēma",
+    "outside the tent",
+    "خارج الخيمة",
+    ""
+   ],
+   [
+    "يحبه حلو وايد",
+    "yḥibbah ḥilu wāyid",
+    "he likes it really sweet (a masculine thing: tea, coffee)",
+    "يحبه حلوًا جدًا",
+    ""
+   ],
+   [
+    "ذكرتني بسالفتك",
+    "dhakkartni b-sālftak",
+    "you've reminded me of your story (to a man)",
+    "ذكرتني بقصتك",
+    "to a woman: dhakkartīni b-sālftich"
+   ]
+  ]
+ }
+]
