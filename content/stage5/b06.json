@@ -1,0 +1,1318 @@
+[
+ {
+  "id": "s5u071",
+  "stage": 5,
+  "title": "Welcome to the ʿizba",
+  "goal": "At Bū Rāshid's ʿizba in the desert outside Sharjah, with Rāshid there, he shows you his camels; ask about them and why the family keeps an ʿizba",
+  "tip": "To ask about a way of life, kānaw + present says what people used to do: in-nās kānaw yishrabūn ḥalīb in-nāga. Ask about a family's habits with -ūn: shu tsawwūn fīhum? Bū Rāshid's camel words (il-bōsh, ḥuwār) are for recognition.",
+  "grammar": "recycle: asking about a way of life (kānaw + present 'used to'; -ūn questions)",
+  "dialogue": [
+   [
+    "A",
+    "حياك الله في عزبتنا يا ولدي. هذي العزبة ورثتها من أبوي",
+    "ḥayyāk allāh fi ʿizbatna yā wildi. hādhi l-ʿizba wiritht-ha min ubūy",
+    "Welcome to our ʿizba, son. I inherited this ʿizba from my father."
+   ],
+   [
+    "B",
+    "الله يحييك يا عمي. ما شاء الله، المكان كبير وايد",
+    "allāh yḥayyīk yā ʿammi. mā shāʼ allāh, il-makān kbīr wāyid",
+    "Thank you, uncle. Mā shāʼ allāh, it's a huge place."
+   ],
+   [
+    "A",
+    "وهذا البوش كله حقنا. نيي هني كل أسبوع في الشتا، ونرتاح من الزحمة",
+    "w hādha l-bōsh killah ḥaggna. nyī hni kill usbūʿ fi sh-shita, w nirtāḥ min iz-zaḥma",
+    "And all these camels are ours. We come here every week in winter and get away from the crowds."
+   ],
+   [
+    "B",
+    "كلهم حقكم؟ وشو تسوون فيهم؟",
+    "killhum ḥaggkum? w shu tsawwūn fīhum?",
+    "They're all yours? And what do you do with them?"
+   ],
+   [
+    "A",
+    "هذي الناقة توها يابت حوار. وحليبها نشربه كل يوم الصبح",
+    "hādhi n-nāga tawwha yābat ḥuwār. w ḥalībha nishrabah kill yōm iṣ-ṣubḥ",
+    "This she-camel has just had a calf. And we drink her milk every morning."
+   ],
+   [
+    "B",
+    "حليب الناقة؟ عمري ما شربته!",
+    "ḥalīb in-nāga? ʿumri ma shribtah!",
+    "Camel milk? I've never had it!"
+   ],
+   [
+    "A",
+    "ذوقه، ما في مثله. أهلنا أيام أول كانوا يشربونه كل يوم",
+    "dhūgah, ma fī mithlah. ahalna ayyām awwal kānaw yishrabūnah kill yōm",
+    "Taste it; there's nothing like it. Our people in the old days used to drink it every day."
+   ],
+   [
+    "B",
+    "الله! حلو. بس ليش للحين عندكم عزبة، والبيت في الشارقة؟",
+    "allāh! ḥilu. bas lēsh lil-ḥīn ʿindakum ʿizba, w il-bēt fi sh-Shārja?",
+    "Wow, it's good. But why do you still have an ʿizba, when your home's in Sharjah?"
+   ],
+   [
+    "A",
+    "عشان العيال ما ينسون، ويعرفون كيف كانوا أهلهم يعيشون",
+    "ʿashān il-ʿyāl ma yinsūn, w yaʿarfūn chēf kānaw ahalhum yʿīshūn",
+    "So the children don't forget, and know how their family used to live."
+   ],
+   [
+    "B",
+    "صدقت والله يا عمي. ممكن أشوفهم من قريب؟",
+    "ṣidagt wallāh yā ʿammi. mumkin ashūfhum min garīb?",
+    "You're so right, uncle. Can I see them up close?"
+   ]
+  ],
+  "items": [
+   [
+    "العزبة",
+    "il-ʿizba",
+    "the ʿizba (a family farm out in the desert, with camels and a majlis)",
+    "المزرعة",
+    "our ʿizba: ʿizbatna (عزبتنا)"
+   ],
+   [
+    "ورثتها من أبوي",
+    "wiritht-ha min ubūy",
+    "I inherited it (f.) from my father",
+    "ورثتها من أبي",
+    "he inherited it: wirith-ha (ورثها)"
+   ],
+   [
+    "في الشتا",
+    "fi sh-shita",
+    "in (the) winter",
+    "في الشتاء",
+    ""
+   ],
+   [
+    "البوش",
+    "il-bōsh",
+    "camels, the camels (UAE)",
+    "الإبل",
+    "(recognise)"
+   ],
+   [
+    "توها يابت حوار",
+    "tawwha yābat ḥuwār",
+    "she's just had a calf (a camel)",
+    "ولدت حوارًا للتو",
+    "(recognise)"
+   ],
+   [
+    "حليب الناقة",
+    "ḥalīb in-nāga",
+    "camel's milk (lit. the she-camel's milk)",
+    "حليب الناقة",
+    ""
+   ]
+  ],
+  "receptive": [
+   3,
+   4
+  ],
+  "culture": "An ʿizba is a family farm out in the desert: camels, often goats and chickens, sometimes falcons, with a majlis and a kitchen, used as a desert holiday home. Families invite relatives and close friends there, so an invitation to the family ʿizba is a sign of trust."
+ },
+ {
+  "id": "s5u072",
+  "stage": 5,
+  "title": "A falcon on your hand",
+  "goal": "At the ʿizba, Rāshid shows you his father's falcon; learn what its gear is called, and hold it on the glove for the first time",
+  "tip": "Instructions come as short imperatives (ilbas il-mangala, irfaʿ īdak) and warnings as la + present (la titḥarrak wāyid). Ask permission with mumkin + an I-verb: mumkin ashīlah? The falconry words (il-burgaʿ, il-mangala, il-wakir, makhālbah) are for recognition.",
+  "grammar": "recycle: instructions and warnings (imperatives; la + present)",
+  "dialogue": [
+   [
+    "A",
+    "تعال شوف صقر أبوي. لا تخاف، عليه البرقع وما يشوف شي",
+    "taʿāl shūf ṣagr ubūy. la tkhāf, ʿalēh il-burgaʿ w ma yshūf shay",
+    "Come and see my dad's falcon. Don't be scared: he's got his hood on and can't see a thing."
+   ],
+   [
+    "B",
+    "ليش مغطين عيونه؟",
+    "lēsh mghaṭṭīn ʿyūnah?",
+    "Why have they covered his eyes?"
+   ],
+   [
+    "A",
+    "عشان يكون هادي. إذا ما شاف شي، ما يخاف ولا يطير",
+    "ʿashān ykūn hādi. idha ma shāf shay, ma ykhāf wala yṭīr",
+    "So he stays calm. If he can't see anything, he doesn't get scared or fly off."
+   ],
+   [
+    "B",
+    "وهالشي اللي على إيدك شو؟",
+    "w hash-shay illi ʿala īdak shu?",
+    "And what's that thing on your hand?"
+   ],
+   [
+    "A",
+    "هذي المنقلة. مخالبه قوية، وبدونها بيجرح إيدك",
+    "hādhi l-mangala. makhālbah gawiyya, w bidūnha biyijraḥ īdak",
+    "That's the glove. His talons are strong, and without it he'd cut your hand."
+   ],
+   [
+    "B",
+    "ممكن أشيله؟ بس ترا أول مرة",
+    "mumkin ashīlah? bas tara awwal marra",
+    "Can I hold him? It's my first time, though."
+   ],
+   [
+    "A",
+    "أكيد. البس المنقلة، وارفع إيدك شوي. ولا تتحرك وايد",
+    "akīd. ilbas il-mangala, w irfaʿ īdak shwayy. w la titḥarrak wāyid",
+    "Sure. Put the glove on and lift your hand a bit. And don't move too much."
+   ],
+   [
+    "B",
+    "أوه! شوف جناحه! وريشه ناعم وايد",
+    "ōh! shūf jināḥah! w rīshah nāʿim wāyid",
+    "Oh! Look at his wing! And his feathers are so soft."
+   ],
+   [
+    "A",
+    "شفت؟ ارتاح عليك. بعدين نرجعه على الوكر، وتصير صقار مثل أبوي!",
+    "shift? irtāḥ ʿalēk. baʿdēn nrajjʿah ʿala l-wakir, w tṣīr ṣaggār mithil ubūy!",
+    "See? He's settled on you. Afterwards we'll put him back on his perch, and you'll be a falconer like my dad!"
+   ],
+   [
+    "B",
+    "مرة وحدة؟ خلني أتعلم أشيله زين أول!",
+    "marra waḥda? khallni atʿallam ashīlah zēn awwal!",
+    "Just like that? Let me learn to hold him properly first!"
+   ]
+  ],
+  "items": [
+   [
+    "صقر أبوي",
+    "ṣagr ubūy",
+    "my dad's falcon",
+    "صقر أبي",
+    "your dad's falcon: ṣagr ubūk (صقر أبوك)"
+   ],
+   [
+    "جناحه",
+    "jināḥah",
+    "his wing, its wing (a bird's)",
+    "جناحه",
+    ""
+   ],
+   [
+    "ريشه ناعم",
+    "rīshah nāʿim",
+    "his feathers are soft (a bird's)",
+    "ريشه ناعم",
+    ""
+   ],
+   [
+    "عليه البرقع",
+    "ʿalēh il-burgaʿ",
+    "he's got his hood on (a falcon)",
+    "عليه البرقع",
+    "(recognise); il-burgaʿ is also the face mask some older Emirati women wear"
+   ],
+   [
+    "المنقلة",
+    "il-mangala",
+    "the falconer's glove",
+    "القفاز",
+    "(recognise)"
+   ],
+   [
+    "مخالبه قوية",
+    "makhālbah gawiyya",
+    "his talons are strong",
+    "مخالبه قوية",
+    "(recognise)"
+   ],
+   [
+    "الوكر",
+    "il-wakir",
+    "the perch (a falcon's wooden stand)",
+    "الوكر",
+    "(recognise)"
+   ]
+  ],
+  "receptive": [
+   3,
+   4,
+   5,
+   6
+  ],
+  "culture": "Falconry is part of Emirati heritage: in 2010 the UAE led a group of countries in having it added to UNESCO's list of the intangible cultural heritage of humanity. The leather hood (il-burgaʿ) covers the falcon's eyes to keep it calm, and it rests on the falconer's glove (il-mangala) or on a wooden perch (il-wakir) pushed into the sand."
+ },
+ {
+  "id": "s5u073",
+  "stage": 5,
+  "title": "Bint il-barg: truffles after the rain",
+  "goal": "Out in the desert after the winter rain with your classmate Mājid, look for desert truffles the way his uncle taught him, and keep the spot to yourselves",
+  "tip": "Guess from what you see with yimkin ('maybe') and shaklah ('it looks like it'): yimkin tiḥtah shay? – shaklah! Mājid's words for the truffles (il-fagʿ, bint il-barg) are for recognition; to tell him you've found one, ligēt shay! is enough.",
+  "grammar": "recycle: guessing from signs (yimkin, shaklah, idha …)",
+  "dialogue": [
+   [
+    "A",
+    "شوف البر كيف صار أخضر بعد المطر! طلع العشب في كل مكان",
+    "shūf il-barr chēf ṣār akhẓar baʿd il-maṭar! ṭilaʿ il-ʿushub fi kill makān",
+    "Look how green the desert's turned after the rain! The grass has come up everywhere."
+   ],
+   [
+    "B",
+    "ما شاء الله! عمري ما شفته جي. شو ندور بالضبط؟",
+    "mā shāʼ allāh! ʿumri ma shiftah chī. shu ndawwir biẓ-ẓabṭ?",
+    "Mā shāʼ allāh! I've never seen it like this. What are we looking for, exactly?"
+   ],
+   [
+    "A",
+    "الفقع. خالي يقول يطلع بعد المطر اللي فيه رعد وبرق",
+    "il-fagʿ. khāli ygūl yiṭlaʿ baʿd il-maṭar illi fīh raʿd w barg",
+    "Desert truffles. My uncle says they come up after rain with thunder and lightning."
+   ],
+   [
+    "B",
+    "وشلون نعرف وين هو؟ أكيد تحت الأرض",
+    "w shlōn naʿarf wēn huwa? akīd tiḥt il-arẓ",
+    "And how do we know where they are? They must be underground."
+   ],
+   [
+    "A",
+    "هيه، ينبت تحت الأرض. تدور شق صغير، والأماكن سر، محد يقولها لك",
+    "hē, yinbit tiḥt il-arẓ. tdawwir shagg ṣghīr, w il-amākin sirr, maḥḥad ygūlha-lak",
+    "Yes, they grow underground. You look for a little crack, and the spots are a secret: nobody tells you them."
+   ],
+   [
+    "B",
+    "هني! شوف هالشق. يمكن تحته شي؟",
+    "hni! shūf hash-shagg. yimkin tiḥtah shay?",
+    "Here! Look at this crack. Maybe there's something under it?"
+   ],
+   [
+    "A",
+    "شكله! بس شوي شوي، دور بإيدك",
+    "shaklah! bas shwayy shwayy, dawwir b-īdak",
+    "Looks like it! But gently: feel around with your hand."
+   ],
+   [
+    "B",
+    "لقيت شي! أبيض وكبير",
+    "ligēt shay! abyaẓ w kbīr",
+    "I've found something! It's white and big."
+   ],
+   [
+    "A",
+    "ما شاء الله عليك! أهلنا يسمونه بنت البرق",
+    "mā shāʼ allāh ʿalēk! ahalna ysammūnah bint il-barg",
+    "Well done! Our old folk call it 'daughter of the lightning'."
+   ],
+   [
+    "B",
+    "حلو الاسم. والمكان؟ بيني وبينك!",
+    "ḥilu l-isim. w il-makān? bēni w bēnak!",
+    "What a lovely name. And the spot? Just between you and me!"
+   ]
+  ],
+  "items": [
+   [
+    "صار أخضر",
+    "ṣār akhẓar",
+    "it's turned green",
+    "أصبح أخضر",
+    "a feminine thing: ṣārat khaẓra (صارت خضرا)"
+   ],
+   [
+    "بعد المطر",
+    "baʿd il-maṭar",
+    "after the rain",
+    "بعد المطر",
+    ""
+   ],
+   [
+    "طلع العشب",
+    "ṭilaʿ il-ʿushub",
+    "the grass has come up",
+    "نبت العشب",
+    ""
+   ],
+   [
+    "الفقع",
+    "il-fagʿ",
+    "desert truffles",
+    "الكمأة",
+    "(recognise)"
+   ],
+   [
+    "رعد وبرق",
+    "raʿd w barg",
+    "thunder and lightning",
+    "رعد وبرق",
+    "(recognise)"
+   ],
+   [
+    "ينبت تحت الأرض",
+    "yinbit tiḥt il-arẓ",
+    "it grows underground (a plant)",
+    "ينبت تحت الأرض",
+    "(recognise)"
+   ],
+   [
+    "بنت البرق",
+    "bint il-barg",
+    "'daughter of the lightning' (an old name for desert truffles)",
+    "الكمأة",
+    "(recognise)"
+   ]
+  ],
+  "receptive": [
+   3,
+   4,
+   5,
+   6
+  ]
+ },
+ {
+  "id": "s5u074",
+  "stage": 5,
+  "title": "Poetry in the majlis",
+  "goal": "In Bū Rāshid's majlis, with Rāshid there, a guest has just recited a nabaṭi poem; say how much you understood, and ask Bū Rāshid what nabaṭi poetry is",
+  "tip": "Say honestly how much you followed: simaʿtha, bas ma fhimt killha. Then check with yaʿni …?: yaʿni mithil il-amthāl? Bū Rāshid's words for the poetry (shiʿir nabaṭi, il-ḥanīn, il-furūsiyya) are for recognition.",
+  "grammar": "recycle: saying how much you understood (ma fhimt killha, bas …; yaʿni …?)",
+  "dialogue": [
+   [
+    "A",
+    "سمعت القصيدة يا سالم؟ هذا شعر نبطي، شعر البدو",
+    "simaʿt il-gaṣīda yā Sālim? hādha shiʿir nabaṭi, shiʿir il-badu",
+    "Did you hear the poem, Sālim? That's nabaṭi poetry, the poetry of the Bedouin."
+   ],
+   [
+    "B",
+    "سمعتها، بس ما فهمت كلها. الكلمات قديمة وايد",
+    "simaʿtha, bas ma fhimt killha. il-kalimāt gadīma wāyid",
+    "I heard it, but I didn't understand all of it. The words are very old."
+   ],
+   [
+    "A",
+    "النبطي باللهجة، مب بالفصحى. بس فيه كلمات ما يستخدمونها الشباب الحين",
+    "in-nabaṭi bil-lahja, mub bil-fuṣḥa. bas fīh kalimāt ma yistakhdmūnha sh-shabāb il-ḥīn",
+    "Nabaṭi is in the dialect, not in fuṣḥā. But it has words young people don't use now."
+   ],
+   [
+    "B",
+    "وعن شو كانت القصيدة؟",
+    "w ʿan shu kānat il-gaṣīda?",
+    "And what was the poem about?"
+   ],
+   [
+    "A",
+    "عن الصحرا، والحنين للأهل. وفي قصايد عن الفروسية والحكمة",
+    "ʿan iṣ-ṣaḥra, w il-ḥanīn lil-ahal. w fī gaṣāyid ʿan il-furūsiyya w il-ḥikma",
+    "About the desert, and longing for family. And there are poems about chivalry and wisdom."
+   ],
+   [
+    "B",
+    "يعني مثل الأمثال؟ كل بيت فيه حكمة؟",
+    "yaʿni mithil il-amthāl? kill bēt fīh ḥikma?",
+    "So it's like proverbs? Every line has some wisdom in it?"
+   ],
+   [
+    "A",
+    "مرات. والبدو أيام أول كانوا ينظمون الشعر عن كل شي في حياتهم",
+    "marrāt. w il-badu ayyām awwal kānaw yinẓimūn ish-shiʿir ʿan kill shay fi ḥayāt-hum",
+    "Sometimes. And in the old days the Bedouin composed poetry about everything in their lives."
+   ],
+   [
+    "B",
+    "والحين؟ الشباب يحبونه بعد؟",
+    "w il-ḥīn? ish-shabāb yḥibbūnah baʿad?",
+    "And today? Do young people like it too?"
+   ],
+   [
+    "A",
+    "هيه، في مسابقات في التلفزيون، وراشد يتابعها ويايه كل أسبوع",
+    "hē, fī musābagāt fi t-tilfizyōn, w Rāshid ytābiʿha wiyyāy kill usbūʿ",
+    "Yes, there are competitions on TV, and Rāshid watches them with me every week."
+   ],
+   [
+    "B",
+    "عيل بتابعها معكم. يمكن أفهم بيت أو بيتين!",
+    "ʿayal batābiʿha maʿakum. yimkin afham bēt aw bētēn!",
+    "Then I'll watch with you. Maybe I'll understand a line or two!"
+   ]
+  ],
+  "items": [
+   [
+    "البدو",
+    "il-badu",
+    "the Bedouin",
+    "البدو",
+    ""
+   ],
+   [
+    "الصحرا",
+    "iṣ-ṣaḥra",
+    "the desert (the open desert, in poems and stories)",
+    "الصحراء",
+    "everyday: il-barr"
+   ],
+   [
+    "ينظمون الشعر",
+    "yinẓimūn ish-shiʿir",
+    "they compose poetry",
+    "ينظمون الشعر",
+    "he composes: yinẓim (ينظم)"
+   ],
+   [
+    "شعر نبطي",
+    "shiʿir nabaṭi",
+    "nabaṭi poetry (Bedouin poetry in the dialect)",
+    "الشعر النبطي",
+    "(recognise)"
+   ],
+   [
+    "الحنين للأهل",
+    "il-ḥanīn lil-ahal",
+    "longing for (your) family",
+    "الحنين إلى الأهل",
+    "(recognise)"
+   ],
+   [
+    "الفروسية",
+    "il-furūsiyya",
+    "chivalry, horsemanship (a theme of old poems)",
+    "الفروسية",
+    "(recognise)"
+   ]
+  ],
+  "receptive": [
+   3,
+   4,
+   5
+  ],
+  "culture": "Nabaṭi poetry began among the Bedouin of the Arabian Peninsula and is composed in the spoken dialect, not classical Arabic. Its themes include chivalry, pride, longing, advice and wisdom, love of family and country, and the desert. It has had a revival in the UAE, helped by televised poetry competitions watched across the Gulf."
+ },
+ {
+  "id": "s5u075",
+  "stage": 5,
+  "title": "The desert misses you, Sēf",
+  "goal": "On a video call from abroad, Sēf sees your photos from his uncle's ʿizba; tell him about the weekend, tease him about his cold, and plan the desert for his next visit home",
+  "tip": "Tell news in short past-tense bursts, one thing per sentence: shilt iṣ-ṣagr ʿala īdi! w shribt ḥalīb in-nāga. Friends tease about luck and weather: yā ḥaẓẓak!, aḥsidak! 'I'm jealous!'. Plan with yōm + present: yōm tirjaʿ 'when you're back'.",
+  "grammar": "recycle: telling a friend about your weekend (past narrative; la … wala)",
+  "dialogue": [
+   [
+    "A",
+    "هلا والله! شو هالصور اللي طرشتها؟ صقر وبوش وفقع!",
+    "hala wallāh! shu haṣ-ṣuwar illi ṭarrasht-ha? ṣagr w bōsh w fagʿ!",
+    "Hey! What are these photos you sent? A falcon, camels and truffles!"
+   ],
+   [
+    "B",
+    "هلا فيك! كنا في عزبة عمك ويا راشد",
+    "hala fīk! kinna fi ʿizbat ʿammak wiyya Rāshid",
+    "Hi! We were at your uncle's ʿizba with Rāshid."
+   ],
+   [
+    "A",
+    "يا حظك! أنا هني لا بر ولا عزبة، بس ضباب وبرد",
+    "yā ḥaẓẓak! ana hni la barr wala ʿizba, bas ḍabāb w bard",
+    "Lucky you! Here I've got no desert and no ʿizba, just fog and cold."
+   ],
+   [
+    "B",
+    "شلت الصقر على إيدي أول مرة! وشربت حليب الناقة",
+    "shilt iṣ-ṣagr ʿala īdi awwal marra! w shribt ḥalīb in-nāga",
+    "I held the falcon on my hand for the first time! And I drank camel milk."
+   ],
+   [
+    "A",
+    "والله أحسدك! أنا قاعد أرجف من البرد",
+    "wallāh aḥsidak! ana gāʿid arjif min il-bard",
+    "Honestly, I'm jealous! I'm sitting here shivering from the cold."
+   ],
+   [
+    "B",
+    "مسكين! وأنا هني في الدفا، والبر أخضر بعد المطر",
+    "maskīn! w ana hni fi d-dafa, w il-barr akhẓar baʿd il-maṭar",
+    "Poor you! And I'm here in the warm, and the desert's green after the rain."
+   ],
+   [
+    "A",
+    "لا تزيدها علي! صج متجمد، ما أحس بإيدي",
+    "la tzīdha ʿalay! ṣij mitjammid, ma aḥiss b-īdi",
+    "Don't rub it in! I'm really frozen; I can't feel my hands."
+   ],
+   [
+    "B",
+    "عيل يوم ترجع في الإجازة، أول شي العزبة",
+    "ʿayal yōm tirjaʿ fi l-ijāza, awwal shay il-ʿizba",
+    "Then when you're back for the holidays, the ʿizba's the first thing."
+   ],
+   [
+    "A",
+    "اتفقنا! ويدي، الله يرحمه، كان يقول شعر في العزبة",
+    "ittafagna! w yaddi, allāh yirḥamah, kān ygūl shiʿir fi l-ʿizba",
+    "Deal! And my grandad, God rest his soul, used to recite poetry at the ʿizba."
+   ],
+   [
+    "B",
+    "آمين، الله يرحمه. عيل لازم تعلمني شوي منه",
+    "āmīn, allāh yirḥamah. ʿayal lāzim tʿallimni shwayy minnah",
+    "Amen, God rest his soul. Then you've got to teach me a bit of it."
+   ]
+  ],
+  "items": [
+   [
+    "يا حظك!",
+    "yā ḥaẓẓak!",
+    "lucky you! (to a man)",
+    "يا لحظك!",
+    "to a woman: yā ḥaẓẓich (يا حظج)"
+   ],
+   [
+    "ضباب",
+    "ḍabāb",
+    "fog, mist",
+    "ضباب",
+    ""
+   ],
+   [
+    "أحسدك!",
+    "aḥsidak!",
+    "I'm jealous! (teasing, among friends) (to a man)",
+    "أحسدك!",
+    "to a woman: aḥsidich (أحسدج); friends only: said as a joke"
+   ],
+   [
+    "أرجف من البرد",
+    "arjif min il-bard",
+    "I'm shivering from the cold",
+    "أرتجف من البرد",
+    ""
+   ],
+   [
+    "في الدفا",
+    "fi d-dafa",
+    "in the warm, where it's warm",
+    "في الدفء",
+    ""
+   ],
+   [
+    "متجمد",
+    "mitjammid",
+    "frozen (a man), freezing",
+    "متجمد",
+    "a woman: mitjammda (متجمدة)"
+   ]
+  ],
+  "task": "This week: with a tutor or exchange partner, have a 10-minute conversation about desert life. Ask what they know about camels, falconry and the ʿizba, and tell them about a trip of your own in past-tense bursts (shilt…, shribt…). To prepare, search YouTube for «الصقارة» (falconry) or «يوم في العزبة» (a day at the ʿizba), and note three words you hear."
+ },
+ {
+  "id": "s5u076",
+  "stage": 5,
+  "title": "What was the sermon about?",
+  "goal": "Outside the mosque in Sharjah after the Friday prayer, with Rāshid there, ask Bū Rāshid about the fuṣḥā phrases you heard in the sermon",
+  "tip": "The sermon is in fuṣḥā, but you talk about it in Gulf Arabic: il-khuṭba l-yōm kānat ʿan iz-zakā. The preacher's set phrases (ʿibād allāh, ittaqu llāh, aqūlu qawli hādha …) are for recognition; Bū Rāshid explains each one with yaʿni.",
+  "grammar": "fuṣḥā bridge: recognising set phrases from the sermon, explaining them in Gulf",
+  "dialogue": [
+   [
+    "A",
+    "تقبل الله يا ولدي",
+    "tagabbal allāh yā wildi",
+    "May God accept (your prayer), son."
+   ],
+   [
+    "B",
+    "منا ومنكم يا عمي. الخطبة اليوم كانت عن الزكاة، صح؟",
+    "minna w minkum yā ʿammi. il-khuṭba l-yōm kānat ʿan iz-zakā, ṣaḥḥ?",
+    "From us and from you, uncle. Today's sermon was about zakat, wasn't it?"
+   ],
+   [
+    "A",
+    "صح، عشان رمضان قريب. والخطيب قرا آية عن الزكاة. فهمت كلامه؟",
+    "ṣaḥḥ, ʿashān ramaẓān garīb. w il-khaṭīb gara āya ʿan iz-zakā. fhimt kalāmah?",
+    "Right, because Ramadan's coming. And the preacher recited a verse about zakat. Did you understand him?"
+   ],
+   [
+    "B",
+    "شوي. الفصحى في الخطبة صعبة علي",
+    "shwayy. il-fuṣḥa fi l-khuṭba ṣaʿba ʿalay",
+    "A bit. The fuṣḥā in the sermon is hard for me."
+   ],
+   [
+    "A",
+    "أول ما طلع المنبر قال «عباد الله، اتقوا الله»، يعني يا ناس، خافوا الله في كل شي",
+    "awwal ma ṭilaʿ il-minbar gāl «ʿibād allāh, ittaqu llāh», yaʿni yā nās, khāfu llāh fi kill shay",
+    "As soon as he went up the minbar he said 'servants of God, fear God': it means, people, be mindful of God in everything."
+   ],
+   [
+    "B",
+    "وليش يقعد في النص، بين الخطبتين؟",
+    "w lēsh yigʿid fi n-nuṣṣ, bēn il-khuṭbatēn?",
+    "And why does he sit down in the middle, between the two sermons?"
+   ],
+   [
+    "A",
+    "هذا من السنة. النبي صلى الله عليه وسلم كان يخطب خطبتين، ويقعد بينهم",
+    "hādha min is-sunna. in-nabi ṣalla llāhu ʿalayhi wa sallam kān yikhṭub khuṭbatēn, w yigʿid bēnhum",
+    "That's from the Sunna. The Prophet, peace be upon him, used to give two sermons and sit between them."
+   ],
+   [
+    "B",
+    "وفي آخر الخطبة الأولى، شو قال؟",
+    "w fi ākhir il-khuṭba l-ūla, shu gāl?",
+    "And at the end of the first sermon, what did he say?"
+   ],
+   [
+    "A",
+    "«أقول قولي هذا وأستغفر الله العظيم لي ولكم». يعني خلصت كلامي، والله يغفر لنا كلنا",
+    "«aqūlu qawli hādha wa astaghfiru llāha l-ʿaẓīma li wa lakum». yaʿni khallaṣt kalāmi, w allāh yighfir lana killana",
+    "'I say these words of mine and ask God Almighty's forgiveness for me and for you.' It means: I've finished, and may God forgive us all."
+   ],
+   [
+    "B",
+    "الحين فهمت! المرة الياية بنتبه أكثر",
+    "il-ḥīn fhimt! il-marra l-yāya bantabih akthar",
+    "Now I get it! Next time I'll pay more attention."
+   ]
+  ],
+  "items": [
+   [
+    "الزكاة",
+    "iz-zakā",
+    "zakat (the alms a Muslim with enough savings must pay each year)",
+    "الزكاة",
+    ""
+   ],
+   [
+    "قرا آية",
+    "gara āya",
+    "he recited a verse (of the Quran)",
+    "قرأ آية",
+    "I recited: gareit (قريت) āya"
+   ],
+   [
+    "الله يغفر لنا",
+    "allāh yighfir lana",
+    "may God forgive us",
+    "غفر الله لنا",
+    ""
+   ],
+   [
+    "عباد الله، اتقوا الله",
+    "ʿibād allāh, ittaqu llāh",
+    "servants of God, fear God (formal, from the sermon)",
+    "عباد الله، اتقوا الله",
+    "(recognise)"
+   ],
+   [
+    "طلع المنبر",
+    "ṭilaʿ il-minbar",
+    "he went up the minbar (the mosque's pulpit)",
+    "صعد المنبر",
+    "(recognise)"
+   ],
+   [
+    "من السنة",
+    "min is-sunna",
+    "from the Sunna (what the Prophet did)",
+    "من السنة",
+    "(recognise)"
+   ]
+  ],
+  "receptive": [
+   3,
+   4,
+   5
+  ],
+  "culture": "The Friday sermon (khuṭba) is given in fuṣḥā from the minbar before the prayer, in two parts, with the preacher sitting briefly between them, as the Prophet did. It often opens with 'servants of God, fear God', and the first part often ends with 'I say these words of mine and ask God's forgiveness for me and for you'."
+ },
+ {
+  "id": "s5u077",
+  "stage": 5,
+  "title": "Do I owe zakat?",
+  "goal": "In Bū Rāshid's majlis in Ramadan, with Rāshid there, ask him whether you owe zakat on your internship savings, and check what you've understood",
+  "tip": "Check you've understood by saying it back with yaʿni: yaʿni min kill alf, khamsa w ʿishrīn? Ask about a duty with lāzim …? 'do I have to …?'. Bū Rāshid's religious terms (sana hijriyya, il-bukhul) are for recognition.",
+  "grammar": "recycle: asking for advice and checking (idha …, yaʿni …?, ṣaḥḥ?)",
+  "dialogue": [
+   [
+    "B",
+    "يا عمي، عندي سؤال عن الزكاة، إذا تسمح لي",
+    "yā ʿammi, ʿindi suʼāl ʿan iz-zakā, idha tismaḥ-li",
+    "Uncle, I've got a question about zakat, if you don't mind."
+   ],
+   [
+    "A",
+    "تفضل يا ولدي، اسأل",
+    "tfaẓẓal yā wildi, isʼal",
+    "Go ahead, son, ask."
+   ],
+   [
+    "B",
+    "عندي فلوس من التدريب في البنك، صار لها سنة. لازم أطلع زكاتها؟",
+    "ʿindi flūs min it-tadrīb fi l-bank, ṣār-lha sana. lāzim aṭallaʿ zakāt-ha?",
+    "I've got money from my internship in the bank, and it's been there a year. Do I have to pay zakat on it?"
+   ],
+   [
+    "A",
+    "إذا وصلت النصاب، وكملت عندك سنة هجرية، هيه لازم",
+    "idha wiṣlat in-niṣāb, w kimlat ʿindak sana hijriyya, hē lāzim",
+    "If it's reached the niṣāb, the minimum, and you've had it a full Hijri year, then yes, you do."
+   ],
+   [
+    "B",
+    "والنصاب كم؟",
+    "w in-niṣāb cham?",
+    "And how much is the niṣāb?"
+   ],
+   [
+    "A",
+    "على حسب سعر الذهب، يعني يتغير. وتطلع ربع العشر من المال كله",
+    "ʿala ḥasab siʿir idh-dhahab, yaʿni yitghayyar. w tṭallaʿ rubʿ il-ʿushur min il-māl killah",
+    "It goes by the price of gold, so it changes. And you pay a quarter of a tenth of all the money."
+   ],
+   [
+    "B",
+    "يعني ثنين ونص بالمية؟ من كل ألف، خمسة وعشرين؟",
+    "yaʿni thnēn w nuṣṣ bil-miya? min kill alf, khamsa w ʿishrīn?",
+    "So two and a half per cent? Out of every thousand, twenty-five?"
+   ],
+   [
+    "A",
+    "بالضبط. وتعطيها الفقير والمحتاج، والأيتام",
+    "biẓ-ẓabṭ. w tʿaṭīha l-fagīr w il-miḥtāj, w il-aytām",
+    "Exactly. And you give it to the poor and the needy, and to orphans."
+   ],
+   [
+    "B",
+    "ما كنت أدري إنها جي واضحة. الحمد لله",
+    "ma kint adri innha chī wāẓḥa. il-ḥamdu lillāh",
+    "I didn't know it was so clear. Thank God."
+   ],
+   [
+    "A",
+    "والزكاة تبعد الواحد عن البخل، وتبارك في المال",
+    "w iz-zakā tibʿid il-wāḥid ʿan il-bukhul, w tbārik fi l-māl",
+    "And zakat keeps a man away from meanness, and brings blessing to his money."
+   ]
+  ],
+  "items": [
+   [
+    "الفقير والمحتاج",
+    "il-fagīr w il-miḥtāj",
+    "the poor and the needy",
+    "الفقير والمحتاج",
+    ""
+   ],
+   [
+    "الأيتام",
+    "il-aytām",
+    "orphans",
+    "الأيتام",
+    "one orphan: yatīm (يتيم)"
+   ],
+   [
+    "المال",
+    "il-māl",
+    "money, wealth (formal)",
+    "المال",
+    "everyday: il-flūs"
+   ],
+   [
+    "لازم أطلع زكاتها؟",
+    "lāzim aṭallaʿ zakāt-ha?",
+    "do I have to pay zakat on it (f.)? (lit. take out its zakat)",
+    "هل يجب أن أخرج زكاتها؟",
+    ""
+   ],
+   [
+    "سنة هجرية",
+    "sana hijriyya",
+    "a Hijri (lunar) year",
+    "سنة هجرية",
+    "(recognise)"
+   ],
+   [
+    "البخل",
+    "il-bukhul",
+    "meanness, stinginess",
+    "البخل",
+    "(recognise); a mean man: bakhīl (بخيل)"
+   ]
+  ],
+  "receptive": [
+   4,
+   5
+  ],
+  "culture": "Zakat on savings is 2.5 per cent of wealth that has stayed at or above the niṣāb, a minimum set by the value of 87.48 grams of gold, for a full lunar year. It can be paid at any time of year, but many people pay it in Ramadan."
+ },
+ {
+  "id": "s5u078",
+  "stage": 5,
+  "title": "Longer than Ramadan! Fahad's sayings",
+  "goal": "On a video call from Kuwait during Ramadan, Fahad teaches you three Kuwaiti sayings about Ramadan; work out what each one means and when you'd use it",
+  "tip": "When you hear a saying, check how it's used: tgūlūnha ʿan …? 'do you say it about …?', or yaʿni …? Fahad's Kuwaiti sayings, and his ghabga, are for recognition. Answer news of someone poor with allāh yiʿīnah.",
+  "grammar": "recycle: checking what a saying means (tgūlūnha ʿan …?, yaʿni …?)",
+  "dialogue": [
+   [
+    "A",
+    "هلا والله! شلونك؟ شلون الصيام عندكم؟",
+    "hala wallāh! shlōnak? shlōn iṣ-ṣiyām ʿindakum?",
+    "Hey! How are you? How's the fasting going over there?"
+   ],
+   [
+    "B",
+    "هلا فيك! زين الحمد لله، بس العطش صعب في الدوام",
+    "hala fīk! zēn il-ḥamdu lillāh, bas il-ʿaṭash ṣaʿb fi d-dawām",
+    "Hi! Fine, thank God, but the thirst is hard at work."
+   ],
+   [
+    "A",
+    "لازم تشرب ماي وايد في السحور. وعندنا في الكويت نقول عن الشي الصعب «أطول من شهر رمضان»",
+    "lāzim tishrab māy wāyid fi s-saḥūr. w ʿindana fi l-Kwēt ngūl ʿan ish-shay iṣ-ṣaʿb «aṭwal min shahar ramaẓān»",
+    "You need to drink lots of water at suhoor. And in Kuwait we say of something hard, 'longer than the month of Ramadan'."
+   ],
+   [
+    "B",
+    "حلوة! تقولونها عن أي شي صعب؟",
+    "ḥilwa! tgūlūnha ʿan ay shay ṣaʿb?",
+    "Nice! Do you say it about anything hard?"
+   ],
+   [
+    "A",
+    "إيه. وعن الشي اللي لازم تسويه نقول «أفرض من الصوم والصلاة»",
+    "ēh. w ʿan ish-shay illi lāzim tsawwīh ngūl «afraẓ min iṣ-ṣōm w iṣ-ṣalā»",
+    "Yes. And for something you absolutely have to do, we say 'more of a duty than fasting and prayer'."
+   ],
+   [
+    "B",
+    "يعني مثل السحور!",
+    "yaʿni mithil is-saḥūr!",
+    "So, like suhoor!"
+   ],
+   [
+    "A",
+    "ههه، بالضبط! وعن اللي فقير وايد يقولون «ما عنده ما يفطر الصايم»",
+    "hhh, biẓ-ẓabṭ! w ʿan illi fagīr wāyid ygūlūn «ma ʿindah ma yfaṭṭir iṣ-ṣāyim»",
+    "Ha, exactly! And about someone very poor they say 'he hasn't enough to feed a fasting man'."
+   ],
+   [
+    "B",
+    "الله يعينه. عشان جي الصدقة في رمضان لها أجر كبير",
+    "allāh yiʿīnah. ʿashān chī iṣ-ṣadaga fi ramaẓān laha ajir kbīr",
+    "God help him. That's why charity in Ramadan has a great reward."
+   ],
+   [
+    "A",
+    "صدقت. والليلة عندنا غبقة في البيت، بعد التراويح، للأهل والييران",
+    "ṣidagt. w il-lēla ʿindana ghabga fi l-bēt, baʿd it-tarāwīḥ, lil-ahal w il-yīrān",
+    "You're right. And tonight we've got a ghabga at home after tarāwīḥ, for family and neighbours."
+   ],
+   [
+    "B",
+    "ما شاء الله! سلم لي عليهم كلهم",
+    "mā shāʼ allāh! sallim-li ʿalēhum killhum",
+    "Mā shāʼ allāh! Say hi to them all from me."
+   ]
+  ],
+  "items": [
+   [
+    "العطش",
+    "il-ʿaṭash",
+    "thirst",
+    "العطش",
+    "thirsty (a man): ʿaṭshān (عطشان)"
+   ],
+   [
+    "السحور",
+    "is-saḥūr",
+    "suhoor (the meal before dawn in Ramadan)",
+    "السحور",
+    ""
+   ],
+   [
+    "أطول من شهر رمضان",
+    "aṭwal min shahar ramaẓān",
+    "'longer than the month of Ramadan' (said of something hard) (Kuwait)",
+    "أطول من شهر رمضان",
+    "(recognise)"
+   ],
+   [
+    "أفرض من الصوم والصلاة",
+    "afraẓ min iṣ-ṣōm w iṣ-ṣalā",
+    "'more of a duty than fasting and prayer' (something you must do) (Kuwait)",
+    "أوجب من الصوم والصلاة",
+    "(recognise)"
+   ],
+   [
+    "ما عنده ما يفطر الصايم",
+    "ma ʿindah ma yfaṭṭir iṣ-ṣāyim",
+    "'he can't even feed a fasting man' (said of someone very poor) (Kuwait)",
+    "لا يملك ما يفطر به الصائم",
+    "(recognise)"
+   ],
+   [
+    "غبقة",
+    "ghabga",
+    "a ghabga (a late-evening Ramadan meal for family and neighbours) (Kuwait)",
+    "وليمة رمضانية",
+    "(recognise)"
+   ]
+  ],
+  "receptive": [
+   2,
+   3,
+   4,
+   5
+  ],
+  "culture": "These three sayings are recorded as Kuwaiti Ramadan proverbs: 'longer than the month of Ramadan' is said of something hard, 'more of a duty than fasting and prayer' of something that must be done, and 'he hasn't enough to feed a fasting man' of real poverty. A ghabga is a meal held after the tarāwīḥ prayers in Ramadan for family and neighbours."
+ },
+ {
+  "id": "s5u079",
+  "stage": 5,
+  "title": "A water cooler for Grandad",
+  "goal": "Outside the mosque after the night prayer in Ramadan, Rāshid shows you the water cooler his father has put up for his late grandfather; talk about charity that goes on",
+  "tip": "ʿan rūḥ + a person says who a good deed is done for after their death: ʿan rūḥ yaddi. Add what it does with a present verb: tisgi l-ʿaṭshān 'it gives the thirsty a drink'. The hadith wording (ʿilm yuntafaʿu bih, yaghrisu gharsan) is fuṣḥā, for recognition.",
+  "grammar": "recycle: explaining a purpose (ʿan rūḥ …, ʿashān …, yaʿni …)",
+  "dialogue": [
+   [
+    "B",
+    "هالبرادة يديدة؟ ما كانت هني قبل",
+    "hal-barrāda yidīda? ma kānat hni gabil",
+    "Is this water cooler new? It wasn't here before."
+   ],
+   [
+    "A",
+    "هيه، أبوي حطها عن روح يدي، الله يرحمه. يقول هذي صدقة جارية",
+    "hē, ubūy ḥaṭṭha ʿan rūḥ yaddi, allāh yirḥamah. ygūl hādhi ṣadaga jārya",
+    "Yes, my dad put it up for my late grandad, God rest his soul. He says it's a charity that goes on."
+   ],
+   [
+    "B",
+    "آمين، الله يرحمه. يعني كل واحد يشرب منها، يدك ياخذ أجر؟",
+    "āmīn, allāh yirḥamah. yaʿni kill wāḥid yishrab minha, yaddak yākhidh ajir?",
+    "Amen, God rest his soul. So everyone who drinks from it, your grandad gets a reward?"
+   ],
+   [
+    "A",
+    "إن شاء الله. تسقي العطشان في الحر، والثواب يوصله كل يوم",
+    "in shāʼ allāh. tisgi l-ʿaṭshān fi l-ḥarr, w ith-thawāb yōṣlah kill yōm",
+    "God willing. It gives the thirsty a drink in the heat, and the reward reaches him every day."
+   ],
+   [
+    "B",
+    "فكرة حلوة وايد. في أشياء ثانية جي؟",
+    "fikra ḥilwa wāyid. fī ashyāʼ thānya chī?",
+    "What a lovely idea. Are there other things like that?"
+   ],
+   [
+    "A",
+    "وايد. في الحديث: «صدقة جارية، أو علم ينتفع به، أو ولد صالح يدعو له»",
+    "wāyid. fi l-ḥadīth: «ṣadaqa jāriya, aw ʿilm yuntafaʿu bih, aw walad ṣāliḥ yadʿū lah»",
+    "Lots. In the hadith: 'an ongoing charity, or knowledge that benefits people, or a righteous child who prays for him'."
+   ],
+   [
+    "B",
+    "وانت الولد اللي يدعي له!",
+    "w inta l-walad illi yidʿī-lah!",
+    "And you're the boy who prays for him!"
+   ],
+   [
+    "A",
+    "إن شاء الله. وفي حديث ثاني: اللي «يغرس غرسا»، ياكل منه طير أو إنسان، له صدقة",
+    "in shāʼ allāh. w fī ḥadīth thāni: illi «yaghrisu gharsan», yākil minnah ṭēr aw insān, lah ṣadaga",
+    "God willing. And in another hadith: whoever 'plants a plant' that a bird or a person eats from, it counts as charity for him."
+   ],
+   [
+    "B",
+    "عيل بزرع نخلة عند البيت! والعزبة فيها مكان وايد",
+    "ʿayal bazraʿ nakhla ʿind il-bēt! w il-ʿizba fīha makān wāyid",
+    "Then I'll plant a palm tree by the house! And the ʿizba's got plenty of room."
+   ],
+   [
+    "A",
+    "صدقت! أبوي بيستانس، بنزرع وحدة باسم يدي",
+    "ṣidagt! ubūy biystānis, binizraʿ waḥda b-ism yaddi",
+    "Good thinking! My dad will be pleased; we'll plant one in my grandad's name."
+   ]
+  ],
+  "items": [
+   [
+    "صدقة جارية",
+    "ṣadaga jārya",
+    "an ongoing charity (a good deed whose reward goes on after death)",
+    "صدقة جارية",
+    ""
+   ],
+   [
+    "تسقي العطشان",
+    "tisgi l-ʿaṭshān",
+    "it (f.) gives the thirsty a drink",
+    "تسقي العطشان",
+    "he gives a drink: ysgi (يسقي)"
+   ],
+   [
+    "بزرع نخلة",
+    "bazraʿ nakhla",
+    "I'll plant a palm tree",
+    "سأزرع نخلة",
+    ""
+   ],
+   [
+    "الثواب",
+    "ith-thawāb",
+    "the reward (from God, for a good deed)",
+    "الثواب",
+    "(recognise)"
+   ],
+   [
+    "علم ينتفع به",
+    "ʿilm yuntafaʿu bih",
+    "knowledge that benefits people (formal, from the hadith)",
+    "علم ينتفع به",
+    "(recognise)"
+   ],
+   [
+    "يغرس غرسا",
+    "yaghrisu gharsan",
+    "he plants a plant (formal, from the hadith)",
+    "يغرس غرسا",
+    "(recognise)"
+   ]
+  ],
+  "receptive": [
+   3,
+   4,
+   5
+  ],
+  "culture": "An ongoing charity (ṣadaqa jāriya) is one whose good goes on after death. A hadith in Ṣaḥīḥ Muslim says a person's deeds end at death except for three: an ongoing charity, knowledge that benefits others, and a righteous child who prays for them. Another, in al-Bukhārī, says a plant that a bird or a person eats from counts as charity."
+ },
+ {
+  "id": "s5u080",
+  "stage": 5,
+  "title": "Before the Eid prayer",
+  "goal": "At the office in the last days of Ramadan, with the team around, Maryam asks whether you've paid zakāt il-fiṭr; check the rules with her and how you can pay",
+  "tip": "Say what's required with lāzim gabil … and what's possible with tigdar … aw … 'you can … or …'. To a woman, B says innich and dhakkartīni 'you (f.) reminded me'. Zakāt il-fiṭr and awwal shawwāl are for recognition.",
+  "grammar": "recycle: duties and options (lāzim gabil …, tigdar … aw …)",
+  "dialogue": [
+   [
+    "A",
+    "سالم، طلعت زكاة الفطر ولّا بعدك؟",
+    "Sālim, ṭallaʿt zakāt il-fiṭr walla baʿdak?",
+    "Sālim, have you paid zakāt il-fiṭr, or not yet?"
+   ],
+   [
+    "B",
+    "بعدني. لازم قبل صلاة العيد، صح؟",
+    "baʿadni. lāzim gabil ṣalāt il-ʿīd, ṣaḥḥ?",
+    "Not yet. It has to be before the Eid prayer, right?"
+   ],
+   [
+    "A",
+    "هيه، قبل الصلاة يوم أول شوال. وعن كل فرد في البيت، حتى العيال",
+    "hē, gabil iṣ-ṣalā yōm awwal shawwāl. w ʿan kill fard fi l-bēt, ḥatta l-ʿyāl",
+    "Yes, before the prayer on the first of Shawwāl. And for every person in the household, even the children."
+   ],
+   [
+    "B",
+    "أنا ساكن ويا ربيعي، يعني بطلعها عن نفسي بس",
+    "ana sākin wiyya rbīʿi, yaʿni baṭallaʿha ʿan nafsi bas",
+    "I live with a friend, so I'll just pay it for myself."
+   ],
+   [
+    "A",
+    "زين. تقدر تعطيها كيلوين ونص عيش، أو فلوس",
+    "zēn. tigdar tʿaṭīha kīlōyn w nuṣṣ ʿēsh, aw flūs",
+    "Fine. You can give two and a half kilos of rice, or money."
+   ],
+   [
+    "B",
+    "وأعطيها منو؟ ما أعرف حد محتاج",
+    "w aʿaṭīha minu? ma aʿarf ḥad miḥtāj",
+    "And who do I give it to? I don't know anyone in need."
+   ],
+   [
+    "A",
+    "الجمعيات الخيرية تاخذها، ويوزعونها على المحتاجين قبل العيد",
+    "il-jamʿiyyāt il-khēriyya tākhidhha, w ywazzʿūnha ʿala l-miḥtājīn gabil il-ʿīd",
+    "The charities take it, and they hand it out to people in need before Eid."
+   ],
+   [
+    "B",
+    "زين. وغير الزكاة، أبي أتبرع بشي بعد",
+    "zēn. w ghēr iz-zakā, abi atbarraʿ b-shay baʿad",
+    "Good. And apart from zakat, I'd like to donate something too."
+   ],
+   [
+    "A",
+    "التبرع ما له وقت، متى ما تبي. بس زكاة الفطر لها وقت",
+    "it-tabarruʿ ma lah wagt, mata ma tabi. bas zakāt il-fiṭr laha wagt",
+    "Donating has no set time: whenever you like. But zakāt il-fiṭr has its time."
+   ],
+   [
+    "B",
+    "زين إنج ذكرتيني! باكر الصبح بطلعها إن شاء الله",
+    "zēn innich dhakkartīni! bāchir iṣ-ṣubḥ baṭallaʿha in shāʼ allāh",
+    "Good thing you reminded me! I'll pay it tomorrow morning, God willing."
+   ]
+  ],
+  "items": [
+   [
+    "كيلوين ونص عيش",
+    "kīlōyn w nuṣṣ ʿēsh",
+    "two and a half kilos of rice",
+    "كيلوان ونصف من الأرز",
+    ""
+   ],
+   [
+    "عن كل فرد",
+    "ʿan kill fard",
+    "for each person, for every individual",
+    "عن كل فرد",
+    ""
+   ],
+   [
+    "يوزعونها",
+    "ywazzʿūnha",
+    "they hand it (f.) out, they distribute it",
+    "يوزعونها",
+    "he hands it out: ywazziʿha (يوزعها)"
+   ],
+   [
+    "أتبرع بشي",
+    "atbarraʿ b-shay",
+    "(to) donate something, give something to charity",
+    "أتبرع بشيء",
+    "donating: it-tabarruʿ (التبرع)"
+   ],
+   [
+    "زكاة الفطر",
+    "zakāt il-fiṭr",
+    "zakāt il-fiṭr (the alms paid for each person before the Eid prayer)",
+    "زكاة الفطر",
+    "(recognise)"
+   ],
+   [
+    "أول شوال",
+    "awwal shawwāl",
+    "the first of Shawwāl (the day of Eid al-Fiṭr)",
+    "أول شوال",
+    "(recognise)"
+   ]
+  ],
+  "receptive": [
+   4,
+   5
+  ],
+  "culture": "Zakāt il-fiṭr is paid for every Muslim in the household, children included, and must be paid before the Eid prayer. It is usually reckoned as about 2.5 kg of rice per person, and in the UAE it may also be paid in cash; the amount in money is announced each year.",
+  "task": "This week: search YouTube for «خطبة الجمعة» (Friday sermon). It is in fuṣḥā, so expect no dialect. Listen to the first three minutes twice and note each set phrase you know (عباد الله, اتقوا الله, أقول قولي هذا). Then tell Bū Rāshid, in respectful Gulf Arabic and in five sentences, what the sermon was about (il-khuṭba kānat ʿan …)."
+ },
+ {
+  "id": "s5u081",
+  "stage": 5,
+  "title": "Checkpoint 5.5: Eid at the majlis",
+  "goal": "Checkpoint: on Eid morning in Bū Rāshid's majlis, Sēf, home for the Eid holiday, catches up on your Ramadan and plans the ʿizba for the holiday",
+  "tip": "This checkpoint recycles the block: the ʿizba and its camels, the falcon, the sermon, zakāt il-fiṭr and charity. Answer an Eid greeting by saying it back: ʿasākum min ʿuwwādah. Say you'd love to with wallāh widdi!",
+  "grammar": "checkpoint 5.5 (s5u065–s5u080): heritage words, the sermon, zakat and charity",
+  "dialogue": [
+   [
+    "A",
+    "عساكم من عواده يا سالم!",
+    "ʿasākum min ʿuwwādah yā Sālim!",
+    "Eid Mubarak, Sālim! (lit. may you live to see it come back)"
+   ],
+   [
+    "B",
+    "عساكم من عواده! الحمد لله على السلامة يا سيف",
+    "ʿasākum min ʿuwwādah! il-ḥamdu lillāh ʿala s-salāma yā Sēf",
+    "Eid Mubarak! Welcome home, Sēf."
+   ],
+   [
+    "A",
+    "الله يسلمك. شفت الهلال البارحة؟ ما توقعنا العيد اليوم!",
+    "allāh ysallmak. shift il-hilāl il-bārḥa? ma twaggaʿna l-ʿīd il-yōm!",
+    "Thank you. Did you see the new moon last night? We didn't expect Eid today!"
+   ],
+   [
+    "B",
+    "لا، بس سمعت الخبر بالليل. وطلعت زكاة الفطر قبل الصلاة",
+    "la, bas simaʿt il-khabar bil-lēl. w ṭallaʿt zakāt il-fiṭr gabil iṣ-ṣalā",
+    "No, but I heard the news at night. And I paid zakāt il-fiṭr before the prayer."
+   ],
+   [
+    "A",
+    "ما شاء الله عليك! وعمي يقول طلعت زكاتك بعد",
+    "mā shāʼ allāh ʿalēk! w ʿammi ygūl ṭallaʿt zakātak baʿad",
+    "Well done! And my uncle says you paid your zakat too."
+   ],
+   [
+    "B",
+    "هيه، هو اللي شرح لي. وأبوك زرع نخلة باسم يدك",
+    "hē, huwa illi sharaḥ-li. w ubūk zaraʿ nakhla b-ism yaddak",
+    "Yes, he's the one who explained it to me. And your dad planted a palm tree in your grandad's name."
+   ],
+   [
+    "A",
+    "الله يرحمه. وثاني يوم العيد بنروح العزبة، نشوف الإبل ونسوي لقيمات على الجمر",
+    "allāh yirḥamah. w thāni yōm il-ʿīd binrūḥ il-ʿizba, nshūf il-ibil w nsawwi lgēmāt ʿala l-jamir",
+    "God rest his soul. And on the second day of Eid we'll go to the ʿizba, see the camels and make luqaimat over the embers."
+   ],
+   [
+    "B",
+    "آمين، الله يرحمه. والله ودي! بس هالمرة أنا اللي بشيل الصقر",
+    "āmīn, allāh yirḥamah. wallāh widdi! bas hal-marra ana illi bashīl iṣ-ṣagr",
+    "Amen, God rest his soul. I'd love to! But this time I'm the one holding the falcon."
+   ],
+   [
+    "A",
+    "خلاص، وأنا أشرب حليب الناقة. وراشد بيقول لنا شعر نبطي!",
+    "khalāṣ, w ana ashrab ḥalīb in-nāga. w Rāshid biygūl-lana shiʿir nabaṭi!",
+    "Done, and I'll drink the camel milk. And Rāshid's going to recite nabaṭi poetry for us!"
+   ],
+   [
+    "B",
+    "عيل بنسمعه للآخر، حتى لو ما فهمنا كله!",
+    "ʿayal binismaʿah lil-ākhir, ḥatta lō ma fhimna killah!",
+    "Then we'll listen to the end, even if we don't understand all of it!"
+   ]
+  ],
+  "items": [
+   [
+    "الهلال",
+    "il-hilāl",
+    "the new moon, the crescent (that starts the month)",
+    "الهلال",
+    ""
+   ],
+   [
+    "الإبل",
+    "il-ibil",
+    "camels (the general word, as in the news)",
+    "الإبل",
+    "(recognise); UAE everyday: il-bōsh"
+   ],
+   [
+    "على الجمر",
+    "ʿala l-jamir",
+    "over the embers, on the coals",
+    "على الجمر",
+    ""
+   ],
+   [
+    "لقيمات",
+    "lgēmāt",
+    "luqaimat (sweet fried dough balls with date syrup)",
+    "لقيمات",
+    ""
+   ],
+   [
+    "شرح لي",
+    "sharaḥ-li",
+    "he explained (it) to me",
+    "شرح لي",
+    "you explained to me: sharaḥt-li (شرحت لي)"
+   ]
+  ]
+ }
+]
