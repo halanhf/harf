@@ -140,6 +140,7 @@ One scheme, always. It is the app's `DIALECT` scheme (index.html), with the y ru
 - **The reverse:** when the lesson's point is the feminine form, the English says **(to a woman)** and the note gives `to a man: …`. Teach the woman's form as its own item only for very frequent phrases (how are you, thanks, do you want, you know).
 - **Plurals:** English **(to a group)**, note `to one man: …; to one woman: …`. Default plural forms are the merged ones: intu, -kum, hum, -ūn (S). Feminine plurals (intin, -kin, -in) are recognition only, in notes, from B1.
 - **The learner must produce feminine and plural forms.** From s1u018 on, at least one dialogue in three has B speaking to a woman (Maryam, Umm Sēf, Nūra) or to a group, so B's own lines carry -ich, -īn and -ūn.
+- **"I" has one form for both sexes in verbs:** riḥt, rijaʿt, khallaṣt are said by men and women alike; -ti is only "you" to a woman (riḥti "you (f.) went"). Never write "a woman says: …ti" for a first-person verb. Only adjectives and participles change (āsif/āsfa, rāyiḥ/rāyḥa).
 - **Every second-person form must match its addressee in that line:** -ak / t-verb for a man; -ich / t-…-īn for a woman; -kum / t-…-ūn for a group. The English gloss must match too ("you (f.)" where it isn't obvious).
 
 ## 5. Variants and labels in notes
@@ -171,7 +172,8 @@ One scheme, always. It is the app's `DIALECT` scheme (index.html), with the y ru
 8. **Social formulas come with their reply** in the same dialogue (FRAMEWORK §7).
 9. **One point per lesson, recycled in the dialogue at least twice.**
 10. **English gloss:** natural English, same gender and number as the Arabic, no word-for-word glossing. Use brackets for what English needs but Arabic leaves out: "(It's) twenty dirhams."
-11. **No fabricated facts.** No invented holidays, laws, prices given as current fact, office procedures or quotes from real people. When a fact is needed (weekend days, visa steps), mark it U in the review sheet and send it to the native queue.
+11. **Gulf norms for a male learner (course-lead ruling).** B is an unmarried young man. He is never alone socially with an unrelated woman: no one-to-one coffee, walks, meals or cooking with Maryam, Umm Sēf, Nūra or other women. Maryam is a colleague: meet her at work, in a group, or in a public place with others; Umm Sēf hosts only when Sēf or the family is present, and B's dealings with her are brief and respectful (he asks after her, she asks after his family). Invitations to homes come through the men (Sēf, Bū Rāshid). Phone and work messages between B and a woman stay polite and to the point.
+12. **No fabricated facts.** No invented holidays, laws, prices given as current fact, office procedures or quotes from real people. When a fact is needed (weekend days, visa steps), mark it U in the review sheet and send it to the native queue.
 
 ## 8. The fuṣḥā column (item field 4)
 
