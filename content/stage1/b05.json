@@ -168,7 +168,7 @@
    [
     "ناقص",
     "nāgiṣ",
-    "missing; (we're) out of",
+    "missing, lacking; short of",
     "ناقص",
     "shu nāgiṣna? = what do we need?"
    ],
@@ -220,7 +220,7 @@
   "id": "s1u059",
   "stage": 1,
   "title": "Ordering dinner in",
-  "goal": "Greet Sēf after his shower, agree on dinner, order from a restaurant and insist on paying",
+  "goal": "Greet Sēf after his shower, suggest ordering dinner from a restaurant and insist on paying",
   "tip": "After a shower or a haircut say naʿīman; the reply is allāh yinʿim ʿalēk. Endings recap: ʿala ḥsābi 'on me'. Insist with la wallāh: la wallāh, hal-marra ʿalay 'no way, this time it's on me'.",
   "grammar": "recycle: possessives, past, modals",
   "dialogue": [
@@ -424,7 +424,7 @@
     ""
    ]
   ],
-  "culture": "Eat, pass dishes and take your coffee cup with the right hand. A host keeps offering more even after you say you're full; saying wallāh shbaʿt, il-ḥamdu lillāh once or twice is the polite way to stop. Praise the food and thank the cook with tislam īdich."
+  "culture": "Eat, pass dishes and take your coffee cup with the right hand. A host keeps offering more even after you say you're full; saying wallāh shbaʿt, il-ḥamdu lillāh once or twice is the polite way to stop. Praise the food and thank the cook with tislam īdich (to a man: tislam īdak)."
  },
  {
   "id": "s1u061",
@@ -639,7 +639,7 @@
   "id": "s1u063",
   "stage": 1,
   "title": "Where are you? On the phone",
-  "goal": "Find Maryam outside the mall by phone: say where you are, outside or inside, and that you're coming",
+  "goal": "Find Maryam outside the mall by phone: say you're on the way and nearly there, and ask whether she's inside or outside",
   "tip": "barra 'outside' and dākhil 'inside' also go before a noun: barra l-mōl, dākhil il-mōl. yāy 'coming' works like rāyiḥ: a man says yāy, a woman yāya. To a woman the endings take -ich: minnich 'from you', asmaʿich 'I hear you'.",
   "grammar": "prepositions of place: jiddām, wara, fōg, taḥt, yamm, barra, ṣōb + noun or ending",
   "dialogue": [
@@ -767,9 +767,9 @@
    ],
    [
     "A",
-    "الباص يوصل، بس مب سريع",
-    "il-bāṣ yōṣal, bas mub sarīʿ",
-    "The bus gets there, but it isn't fast."
+    "الباص يوصل المطار، بس مب سريع",
+    "il-bāṣ yōṣal il-maṭār, bas mub sarīʿ",
+    "The bus gets to the airport, but it isn't fast."
    ],
    [
     "B",
@@ -1022,6 +1022,6 @@
     ""
    ]
   ],
-  "culture": "Most people living in Dubai aren't Emirati, so English is often the working language in shops and offices. Start in Arabic anyway: a few Gulf words usually change the tone of the whole conversation."
+  "culture": "Most people living in Dubai aren't Emirati, so English is often the working language in shops and offices. With Emiratis and other Arabic speakers, start in Arabic anyway: a few Gulf words usually change the tone of the whole conversation."
  }
 ]
