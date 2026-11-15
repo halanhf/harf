@@ -4,7 +4,7 @@
   "stage": 3,
   "title": "The film I saw",
   "goal": "Tell Sēf about a film you saw, using illi with an ending that points back to the noun",
-  "tip": "When the noun is the object of the verb after illi, the verb takes an ending that points back to it: il-film illi shiftah 'the film I saw' (lit. that I saw it). Plural things take -ha: il-aghāni illi simaʿt-ha 'the songs I heard', it-tadhākir illi shirēt-ha 'the tickets I bought'.",
+  "tip": "When the noun is the object of the verb after illi, the verb takes an ending that points back to it: il-film illi shiftah 'the film I saw' (lit. that I saw it). Plural things take -ha: il-aghāni illi simaʿt-ha 'the songs I heard', it-tadhākir illi ishtarēt-ha 'the tickets I bought'.",
   "grammar": "resumptive pronoun: il-film illi shiftah 'the film (that) I saw'",
   "dialogue": [
    [
@@ -33,14 +33,14 @@
    ],
    [
     "A",
-    "زين، بشوفه. والتذاكر اللي شريتها، غالية؟",
-    "zēn, bashūfah. w it-tadhākir illi shirēt-ha, ghālya?",
+    "زين، بشوفه. والتذاكر اللي اشتريتها، غالية؟",
+    "zēn, bashūfah. w it-tadhākir illi ishtarēt-ha, ghālya?",
     "Great, I'll see it. And the tickets you bought, are they expensive?"
    ],
    [
     "B",
     "لا، رخيصة. بس الفشار اللي كلته كان غالي!",
-    "la, rakhīṣa. bas il-fashār illi kaltah kān ghāli!",
+    "la, rkhīṣa. bas il-fashār illi kaltah kān ghāli!",
     "No, they're cheap. But the popcorn I ate was expensive!"
    ],
    [
@@ -81,7 +81,7 @@
    [
     "الأغاني",
     "il-aghāni",
-    "the songs, the music (in a film)",
+    "the songs",
     "الأغاني",
     "a song: ughniya (أغنية)"
    ],
@@ -100,11 +100,11 @@
     "about a feminine noun: bashūfha (بشوفها)"
    ],
    [
-    "التذاكر اللي شريتها",
-    "it-tadhākir illi shirēt-ha",
+    "التذاكر اللي اشتريتها",
+    "it-tadhākir illi ishtarēt-ha",
     "the tickets I bought; the tickets you bought (to a man)",
     "التذاكر التي اشتريتها",
-    "plural things take -ha; to a woman: illi shirētīha (اللي شريتيها)"
+    "plural things take -ha; to a woman: illi ishtarētīha (اللي اشتريتيها); you'll also hear shirēt-ha (شريتها)"
    ],
    [
     "تنصحني؟",
@@ -118,7 +118,7 @@
     "il-fashār",
     "popcorn",
     "الفشار",
-    ""
+    "you'll also hear the English word popcorn (بوب كورن)"
    ]
   ]
  },
@@ -150,9 +150,9 @@
    ],
    [
     "B",
-    "لا، هذاك اللي رحت له ويا الشباب الأسبوع اللي طاف",
-    "la, hādhāk illi riḥt-lah wiyya sh-shabāb il-usbūʿ illi ṭāf",
-    "No, the one I went to with the guys last week."
+    "لا، هذاك اللي تعشينا فيه ويا الشباب الأسبوع اللي طاف",
+    "la, hādhāk illi tʿashshēna fīh wiyya sh-shabāb il-usbūʿ illi ṭāf",
+    "No, the one we had dinner at with the guys last week."
    ],
    [
     "A",
@@ -188,11 +188,11 @@
     "to a man: illi gilt-lak ʿannah (اللي قلت لك عنه); about a feminine noun: ʿanha"
    ],
    [
-    "اللي رحت له",
-    "illi riḥt-lah",
-    "(the one) I went to",
-    "الذي ذهبت إليه",
-    "about a feminine noun: illi riḥt-lha (اللي رحت لها)"
+    "اللي تعشينا فيه",
+    "illi tʿashshēna fīh",
+    "(the one) we had dinner at",
+    "الذي تعشينا فيه",
+    "about a feminine noun: illi tʿashshēna fīha (اللي تعشينا فيها)"
    ],
    [
     "اللي تتكلم عنه",
@@ -606,11 +606,11 @@
     "about a feminine noun: ana sawwēt-ha (أنا سويتها)"
    ],
    [
-    "لا تقولين له",
-    "la tgūlīn-lah",
-    "don't tell him (to a woman)",
-    "لا تقولي له",
-    "to a man: la tgūl-lah (لا تقول له)"
+    "الأرقام اللي فيه",
+    "il-argām illi fīh",
+    "the figures in it",
+    "الأرقام التي فيه",
+    "about a feminine noun: illi fīha (اللي فيها)"
    ]
   ]
  },
@@ -860,7 +860,7 @@
   "stage": 3,
   "title": "Eid morning",
   "goal": "Wish Sēf a happy Eid after the Eid prayer and plan a visit to his family",
-  "tip": "To ʿīdak mubārak 'happy Eid' (to a man) the reply is min il-ʿāydīn wil-fāyzīn. ʿasākum min ʿuwwādah is answered with the same words. Participles again: ummi msawwya ghada 'my mum's made lunch'.",
+  "tip": "One common reply to ʿīdak mubārak 'happy Eid' (to a man) is min il-ʿāydīn w il-fāyzīn. ʿasākum min ʿuwwādah is answered with the same words. Participles again: ummi msawwya ghada 'my mum's made lunch'.",
   "grammar": "recycle: participles (msawwya) and the b- future",
   "dialogue": [
    [
@@ -872,7 +872,7 @@
    [
     "B",
     "من العايدين والفايزين! عساكم من عواده",
-    "min il-ʿāydīn wil-fāyzīn! ʿasākum min ʿuwwādah",
+    "min il-ʿāydīn w il-fāyzīn! ʿasākum min ʿuwwādah",
     "And to you (lit. may you be among those who return and win)! Happy Eid to you all."
    ],
    [
@@ -895,9 +895,9 @@
    ],
    [
     "B",
-    "إن شاء الله. وعيال عمك، أعطيهم عيدية؟",
-    "in shāʼ allāh. w ʿyāl ʿammak, aʿṭīhum ʿīdiyya?",
-    "Sure. And your cousins, should I give them Eid money?"
+    "إن شاء الله. وعيال عمك الصغار، أعطيهم عيدية؟",
+    "in shāʼ allāh. w ʿyāl ʿammak iṣ-ṣghār, aʿṭīhum ʿīdiyya?",
+    "Sure. And your little cousins, should I give them Eid money?"
    ],
    [
     "A",
@@ -918,14 +918,14 @@
     "ʿīdak mubārak",
     "happy Eid (to a man)",
     "عيد مبارك",
-    "to a woman: ʿīdich mubārak; to a group: ʿīdkum mubārak; the reply is min il-ʿāydīn wil-fāyzīn"
+    "to a woman: ʿīdich mubārak; to a group: ʿīdkum mubārak; a common reply is min il-ʿāydīn w il-fāyzīn"
    ],
    [
     "من العايدين والفايزين",
-    "min il-ʿāydīn wil-fāyzīn",
-    "and to you (the reply to ʿīdak mubārak; lit. among those who return and win)",
+    "min il-ʿāydīn w il-fāyzīn",
+    "and to you (a common reply to ʿīdak mubārak)",
     "من العائدين والفائزين",
-    "also said on its own as an Eid wish"
+    "lit. among those who return (to it) and win; also said on its own as an Eid wish"
    ],
    [
     "صليت العيد؟",
@@ -1045,11 +1045,11 @@
     "relaxed speech: ṣalāt il-yimʿa"
    ],
    [
-    "الخطبة",
-    "il-khuṭba",
-    "the sermon (at the Friday prayer)",
-    "الخطبة",
-    "the same letters also spell il-khiṭba 'the engagement'"
+    "الخطبة قبل الصلاة",
+    "il-khuṭba gabil iṣ-ṣalā",
+    "the sermon comes before the prayer",
+    "الخطبة قبل الصلاة",
+    "il-khuṭba = the (Friday) sermon; the same letters also spell il-khiṭba 'the engagement'"
    ],
    [
     "بتصلي ويانا؟",
@@ -1073,11 +1073,11 @@
     "you'll miss it: bitfūtak (بتفوتك)"
    ],
    [
-    "بتسبح",
-    "batsabbaḥ",
-    "I'll have a shower",
-    "سأستحم",
-    ""
+    "بتسبح وبلبس",
+    "batsabbaḥ w balbas",
+    "I'll have a shower and get dressed",
+    "سأستحم وألبس",
+    "you'll have a shower (to a man): bititsabbaḥ (بتتسبح)"
    ],
    [
     "بكون عندك",
@@ -1101,7 +1101,7 @@
     ""
    ]
   ],
-  "culture": "Since January 2026 the Friday sermon and prayer start at 12:45 pm in every mosque in the UAE; from 2022 they started at 1:15 pm. The UAE weekend is Saturday and Sunday, so Friday is a working day for many people. The sermon comes first, and worshippers are urged to arrive early so they don't miss it."
+  "culture": "Since 2 January 2026 the Friday sermon and prayer start at 12:45 pm in every mosque in the UAE, set by the national Islamic affairs authority. The UAE weekend is Saturday and Sunday, so Friday is a working day for many people. The sermon comes first, and worshippers are urged to arrive early so they don't miss it."
  },
  {
   "id": "s3u075",
@@ -1231,20 +1231,20 @@
   "stage": 3,
   "title": "At the ʿazā",
   "goal": "Give your condolences to Bū Rāshid at the family's ʿazā, sit a while and take your leave",
-  "tip": "At the ʿazā, say ʿaẓẓam allāh ajrakum to the family. As you leave they may say maʼjūr 'God reward you (for coming)'; answer w iyyāk 'and you too'. kān + a present verb means 'used to': kān ysāʿid il-kill 'he used to help everyone'.",
+  "tip": "At the ʿazā, say ʿaẓẓam allāh ajrakum to the family. As you leave they may thank you with jazāk allāh khēr 'God reward you'; answer w iyyāk 'and you too'. kān + a present verb means 'used to': kān ysāʿid il-kill 'he used to help everyone'.",
   "grammar": "recycle: kān + present verb 'used to', reported speech, headless illi",
   "dialogue": [
    [
     "B",
-    "عظم الله أجركم يا عمي",
-    "ʿaẓẓam allāh ajrakum yā ʿammi",
-    "May God reward you all (in your loss), uncle."
+    "السلام عليكم. عظم الله أجركم يا عمي",
+    "as-salāmu ʿalaykum. ʿaẓẓam allāh ajrakum yā ʿammi",
+    "Peace be upon you. May God reward you all (in your loss), uncle."
    ],
    [
     "A",
-    "أجرنا وأجركم. حياك الله يا ولدي، تفضل اقعد",
-    "ajrana w ajrakum. ḥayyāk allāh yā wildi, tfaẓẓal igʿid",
-    "And you too. Welcome, son, please sit down."
+    "وعليكم السلام. أجرنا وأجركم. حياك الله يا ولدي، تفضل اقعد",
+    "wa ʿalaykum is-salām. ajrana w ajrakum. ḥayyāk allāh yā wildi, tfaẓẓal igʿid",
+    "And peace be upon you. And you too. Welcome, son, please sit down."
    ],
    [
     "B",
@@ -1254,9 +1254,9 @@
    ],
    [
     "A",
-    "آمين. هيه والله، اللي يعرفه ما ينساه",
-    "āmīn. hē wallāh, illi yaʿarfah ma yinsāh",
-    "Amen. Yes, truly. Anyone who knows him never forgets him."
+    "آمين. هيه والله، اللي عرفه ما ينساه",
+    "āmīn. hē wallāh, illi ʿirfah ma yinsāh",
+    "Amen. Yes, truly. Anyone who knew him will never forget him."
    ],
    [
     "B",
@@ -1266,8 +1266,8 @@
    ],
    [
     "A",
-    "آمين. مأجور يا ولدي، الله يحفظك",
-    "āmīn. maʼjūr yā wildi, allāh yiḥfaẓak",
+    "آمين. جزاك الله خير يا ولدي، الله يحفظك",
+    "āmīn. jazāk allāh khēr yā wildi, allāh yiḥfaẓak",
     "Amen. God reward you (for coming), son. God keep you."
    ],
    [
@@ -1279,18 +1279,18 @@
   ],
   "items": [
    [
-    "مأجور",
-    "maʼjūr",
-    "God reward you (to someone who has done a good deed, e.g. come to an ʿazā)",
+    "جزاك الله خير",
+    "jazāk allāh khēr",
+    "God reward you (thanks for a good deed) (to a man)",
     "جزاك الله خيرًا",
-    "to a woman: maʼjūra (مأجورة); to a group: maʼjūrīn (مأجورين); the reply is w iyyāk"
+    "said e.g. to someone who came to an ʿazā; to a woman: jazāch allāh khēr; UAE also: yzāk allāh khēr (يزاك الله خير); Kuwait: maʼjūr (مأجور); the reply is w iyyāk"
    ],
    [
     "وإياك",
     "w iyyāk",
-    "and you too (the reply to maʼjūr and other blessings) (to a man)",
+    "and you too (the reply to jazāk allāh khēr) (to a man)",
     "وإياك",
-    "to a woman: w iyyāch (وإياج); to a group: w iyyākum (وإياكم)"
+    "also answers other blessings; to a woman: w iyyāch (وإياج); to a group: w iyyākum (وإياكم)"
    ],
    [
     "تفضل اقعد",
@@ -1307,10 +1307,10 @@
     "she used to help: kānat tsāʿid (كانت تساعد)"
    ],
    [
-    "اللي يعرفه ما ينساه",
-    "illi yaʿarfah ma yinsāh",
-    "anyone who knows him never forgets him",
-    "من يعرفه لا ينساه",
+    "اللي عرفه ما ينساه",
+    "illi ʿirfah ma yinsāh",
+    "anyone who knew him won't forget him",
+    "من عرفه لا ينساه",
     ""
    ],
    [
