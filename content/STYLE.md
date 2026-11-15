@@ -89,7 +89,7 @@ The course follows **CODA-Gulf** (S: Khalifa et al. 2016; Habash et al. 2018) fo
 5. **في أمان الله** stays as in u11; note "you'll see written فمان الله" (539/110).
 6. **بعد** is transliterated by meaning: baʿad "too, also, still, yet" (ana baʿad), baʿd "after" (baʿd il-maghrib, baʿd bāchir). Course lead ruling; both are the same spelling.
 7. **الفريج il-firīj "the neighbourhood"** keeps ج although the j comes from ق (course-lead exception): فريق reads as "team" in the app's voice and in print.
-8. **Helping vowel in CvCC nouns:** Gulf usually inserts a short vowel between the last two consonants: akil, isim, ṣifir, khubiz, ʿiṭir, laḥam, shahar, baḥar, dihin (the published UAE grammar writes them this way). Not when the first of the two is l, r, n or m: bint, galb, ḥarb, shams.
+8. **Helping vowel in CvCC nouns:** Gulf usually inserts a short vowel between the last two consonants: akil, isim, ṣifir, khubiz, ʿiṭir, laḥam, shahar, baḥar, dihin (the published UAE grammar writes them this way). Not when the first of the two is l, r, n or m: bint, galb, ḥarb, shams. Kept as the course already teaches them, pending a native check: ṣubḥ, is-sabt, ʿashr (before a noun). Every other new CvCC noun follows the rule (khashim "nose", per the published grammar).
 9. **The future b- keeps the i before a consonant cluster:** binitrayyāk, bititʼakhkhar, binitghadda (not bintrayyāk). Before a single consonant: bashūf, bitrūḥ.
 10. **A final -i or -u lengthens before a suffix:** giltī-li, giltī-lah, giltū-li, ṭarrashtī-lhum (written with ā/ī/ū because the vowel is stressed and long).
 
@@ -102,7 +102,9 @@ The course follows **CODA-Gulf** (S: Khalifa et al. 2016; Habash et al. 2018) fo
 - ربع: rubʿ "quarter" (clock time: w rubʿ, illa rubʿ) vs rabʿ "friends, mates". Teach "friends" as ربعي rabʿi "my mates" (276/130); never bare ربع.
 - يمه: yumma "mum" (the item, s2u030) vs yammah "beside him, near him". Teach "near him" as a chunk (يمه على طول style) and note the clash where yumma is taught.
 - تسلم: tislam "thanks (to a man)" vs tsallim "you hand over / greet". Write تسلّم with shadda for the second.
+- صج ṣij "really" keeps ج (natives write صج 2476/3162 vs صق 3/0): a deliberate exception to the ق rule, like الفريج.
 - طب: ṭibb "medicine" (the item, s2u003) vs UAE ṭabb "came in, entered" vs Egyptian/Levantine ṭab "OK" (never use). Teach ṭabb only as a chunk.
+- ودنا: widdana "we'd like" vs waddna "take us!" Teach only as a chunk (ودنا نشوفك, ودنا المول).
 - ارتاح: irtāḥ "he rested" vs artāḥ "I rest". Teach as a chunk (artāḥ shwayy).
 - لفت: lift "lift, elevator" (loan) vs lifat "he turned". Teach il-lift as a chunk with the article.
 - غير ghēr "other" vs ghayyar "changed" (teach غيرت); دور dōr "turn, floor" vs dawwar "looked for" (teach دورت); تعرف "you know" vs taʿarraf (teach تعرفت على, 55/36); ودي widdi "I'd like" vs ودى wadda "took" (teach ودني "take me", 219/131).
