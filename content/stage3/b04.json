@@ -27,9 +27,9 @@
    ],
    [
     "A",
-    "هذي يعني عيد ميلادك. اكتب هني",
-    "hādhi yaʿni ʿīd mīlādak. iktib hni",
-    "This means your birthday. Write it here."
+    "هذي يعني تاريخ ميلادك. اكتب هني",
+    "hādhi yaʿni tārīkh mīlādak. iktib hni",
+    "This means your date of birth. Write it here."
    ],
    [
     "B",
@@ -138,9 +138,9 @@
    ],
    [
     "B",
-    "هيه، أبي أقابل المدير عن معاملتي",
-    "hē, abi agābil il-mudīr ʿan muʿāmalti",
-    "Yes, I'd like to see the manager about my paperwork."
+    "لا، بس أبي أقابل المدير عن معاملتي",
+    "la, bas abi agābil il-mudīr ʿan muʿāmalti",
+    "No, but I'd like to see the manager about my paperwork."
    ],
    [
     "A",
@@ -489,15 +489,15 @@
   "dialogue": [
    [
     "A",
-    "بشر! شو صار ويا صاحب الشقة؟",
+    "بشّر! شو صار ويا صاحب الشقة؟",
     "bashshir! shu ṣār wiyya ṣāḥib ish-shigga?",
     "So, tell me! What happened with the flat's owner?"
    ],
    [
     "B",
-    "تلاقينا أمس، وتفاهمنا على كل شي",
-    "tlāgēna ams, w tfāhamna ʿala kill shay",
-    "We met up yesterday and agreed on everything."
+    "أبشرك، تلاقينا أمس وتفاهمنا على كل شي",
+    "abashshrak, tlāgēna ams w tfāhamna ʿala kill shay",
+    "Good news: we met up yesterday and agreed on everything."
    ],
    [
     "A",
@@ -566,11 +566,18 @@
     "the owner of the house: ṣāḥib il-bēt (صاحب البيت)"
    ],
    [
-    "بشر",
+    "بشّر",
     "bashshir",
     "so, tell me (the news)! (to a man)",
     "ما الأخبار؟",
-    "to a woman: bashshri (بشري); said when you're waiting for news; also bashshirni (بشرني)"
+    "to a woman: bashshri (بشري); said when you're waiting for news; the answer starts abashshrak (أبشرك); also bashshirni (بشرني)"
+   ],
+   [
+    "أبشرك",
+    "abashshrak",
+    "I've got good news for you (to a man)",
+    "أبشرك",
+    "to a woman: abashshrich (أبشرج); the answer to bashshir!"
    ],
    [
     "نزل",
@@ -949,7 +956,7 @@
   "stage": 3,
   "title": "Back from London",
   "goal": "Tell Maryam at work what happened with your lost bag, using Form VIII verbs in the past: ittaṣalt 'I called', ikhtart 'I chose'",
-  "tip": "Form VIII in the past starts with i-: ittaṣalt 'I called', ishtarēt 'I bought', ikhtart 'I chose', irtaḥt 'I rested'. After ma the i stays: ma ishtarēt. To a woman, 'you' adds -ti: ittaṣalti, irtaḥti.",
+  "tip": "Form VIII in the past starts with i-: ittaṣalt 'I called', ishtarēt 'I bought', ikhtart 'I chose', irtaḥt 'I rested'. After ma the i stays: ma ishtarēt. Everyday speech also says shirēt 'I bought' (Form I). To a woman, 'you' adds -ti: ittaṣalti, irtaḥti.",
   "grammar": "Forms VII, VIII, X as chunks: Form VIII past (ittaṣalt, ikhtart, irtaḥt)",
   "dialogue": [
    [
@@ -984,21 +991,21 @@
    ],
    [
     "B",
-    "هيه! رحت المول واخترت قميصين، ولبست واحد",
-    "hē! riḥt il-mōl w ikhtart gamīṣēn, w libast wāḥid",
-    "Yes! I went to the mall, picked out two shirts and put one on."
+    "هيه! رحت المول وشريت قميصين، ولبست واحد",
+    "hē! riḥt il-mōl w shirēt gamīṣēn, w libast wāḥid",
+    "Yes! I went to the mall, bought two shirts and put one on."
    ],
    [
     "A",
-    "زين سويت! وارتحت شوي؟",
-    "zēn sawwēt! w irtaḥt shwayy?",
-    "Good thinking! And have you had a bit of rest?"
+    "زين سويت! وشو اخترت؟ أبيض؟",
+    "zēn sawwēt! w shu ikhtart? abyaẓ?",
+    "Good thinking! What did you go for? White?"
    ],
    [
     "B",
-    "هيه، الحمد لله. نمت عدل وارتحت",
-    "hē, il-ḥamdu lillāh. nimt ʿadil w irtaḥt",
-    "Yes, thank God. I slept properly and I'm rested."
+    "هيه، أبيض. ونمت عدل وارتحت، الحمد لله",
+    "hē, abyaẓ. w nimt ʿadil w irtaḥt, il-ḥamdu lillāh",
+    "Yes, white. And I slept properly and I'm rested, thank God."
    ]
   ],
   "items": [
@@ -1021,7 +1028,7 @@
     "bitōṣal",
     "it (f.)'ll arrive, it'll get here",
     "ستصل",
-    "for a masculine thing: biyōṣal (بيوصل)"
+    "for a masculine thing: biyōṣal (بيوصل); the same form also means 'you'll arrive' (to a man)"
    ],
    [
     "لبست",
@@ -1064,9 +1071,9 @@
   "id": "s3u044",
   "stage": 3,
   "title": "The AC isn't working",
-  "goal": "Complain at a hotel reception about your room, using Form X verbs: istalamna 'we got (the room)', istaghrabt 'I'm surprised'",
-  "tip": "Form X starts with ista-: istalam 'received, took over', istaghrab 'was surprised', istakhdam 'used'. Past: istalamna l-ghurfa 'we've got our room'. In the present the i goes: astakhdim 'I use', yistakhdim 'he uses': agdar astakhdim in-nit? 'can I use the internet?'",
-  "grammar": "Forms VII, VIII, X as chunks: Form X (istalam, istaghrab, istakhdam)",
+  "goal": "Complain at a hotel reception about your room, using Form X verbs: istaghrabt 'I'm surprised', astakhdim 'I use'",
+  "tip": "Form X adds sta- before the root: istaghrab 'was surprised' (gh-r-b), istakhdam 'used' (kh-d-m). Past: istaghrabt 'I'm surprised'. In the present the i goes: astakhdim 'I use'. istalam 'received' only looks like Form X: it is Form VIII (s-l-m with -t-, like ishtaghal).",
+  "grammar": "Forms VII, VIII, X as chunks: Form X (istaghrab, istakhdam)",
   "dialogue": [
    [
     "B",
@@ -1175,7 +1182,7 @@
     ""
    ]
   ],
-  "culture": "Hotel and shop staff often apologise with is-samūḥa (minnak), 'pardon us'. Answer ma ʿalēh or masmūḥ, and then say what you need. A calm, short complaint goes down better than a long one."
+  "culture": "is-samūḥa (minnak) is a polite 'pardon (us)'. Answer ma ʿalēh or masmūḥ, and then say what you need. Keep a complaint calm and short."
  },
  {
   "id": "s3u045",
@@ -1333,9 +1340,9 @@
    ],
    [
     "A",
-    "عادي! بس انتو محتاجين ثلاجة يديدة",
-    "ʿādi! bas intu miḥtājīn thallāja yidīda",
-    "No problem! But you two need a new fridge."
+    "عادي! بس انتو محتاجين ثلاجة أكبر",
+    "ʿādi! bas intu miḥtājīn thallāja akbar",
+    "No problem! But you two need a bigger fridge."
    ],
    [
     "B",
