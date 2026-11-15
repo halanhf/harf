@@ -104,7 +104,7 @@
     "بييب",
     "bayīb",
     "I'll bring",
-    "سأحضر",
+    "سأجلب / سأحضر",
     "you'll see written بجيب"
    ],
    [
@@ -239,14 +239,14 @@
   "stage": 2,
   "title": "Who's going? The desert trip",
   "goal": "Plan the desert trip with Sēf: say what we'll do there and what the others will do",
-  "tip": "b- goes on every person: nrūḥ → binrūḥ 'we'll go', yrūḥ → biyrūḥ 'he'll go', trūḥ → bitrūḥ 'she'll go', yrūḥūn → biyrūḥūn 'they'll go'. biyṣīr means 'it'll happen, it'll get': biyṣīr bard 'it'll get cold'. The b- can drop on a second verb: binsōlif w nishrab chāy.",
+  "tip": "b- goes on every person: nrūḥ → binrūḥ 'we'll go', yrūḥ → biyrūḥ 'he'll go', trūḥ → bitrūḥ 'she'll go', yrūḥūn → biyrūḥūn 'they'll go'. biyṣīr means 'it'll happen, it'll get': biyṣīr il-jaww bārid 'it'll get cold'. The b- can drop on a second verb: binsōlif w nishrab chāy.",
   "grammar": "future b-: we, he, she, they (binrūḥ, biyrūḥūn)",
   "dialogue": [
    [
     "B",
     "سيف، متى بنروح يوم السبت؟",
     "Sēf, mita binrūḥ yōm is-sabt?",
-    "Sēf, what time are we going on Saturday?"
+    "Sēf, when are we going on Saturday?"
    ],
    [
     "A",
@@ -262,8 +262,8 @@
    ],
    [
     "A",
-    "بنسولف ونشرب شاي. وبيصير برد في الليل",
-    "binsōlif w nishrab chāy. w biyṣīr bard fi l-lēl",
+    "بنسولف ونشرب شاي. وبيصير الجو بارد في الليل",
+    "binsōlif w nishrab chāy. w biyṣīr il-jaww bārid fi l-lēl",
     "We'll chat and drink tea. And it'll get cold at night."
    ],
    [
@@ -326,7 +326,7 @@
     "biyṣīr",
     "it'll happen; it'll get, it'll turn",
     "سيصير / سيحدث",
-    "biyṣīr bard = it'll get cold"
+    "biyṣīr il-jaww bārid = it'll get cold"
    ],
    [
     "بلبس",
@@ -473,7 +473,7 @@
   "stage": 2,
   "title": "Checkpoint 2.1: a study day with the guys",
   "goal": "Plan a library day with Sēf and his classmates: ask the group about tomorrow, offer coffee and promise to be on time",
-  "tip": "Talking to a group, present and future verbs end in -ūn: tsawwūn → bitsawwūn 'you'll do', la tḥātūn 'don't worry'. 'We' takes n-: binmurr 'we'll come by', ma bintrayyāk 'we won't wait for you'. 'With you all' is wiyyākum, 'for you all' -lkum.",
+  "tip": "Talking to a group, present and future verbs end in -ūn: tsawwūn → bitsawwūn 'you'll do', la tḥātūn 'don't worry'. 'We' takes n-: binmurr 'we'll come by', ma binitrayyāk 'we won't wait for you'. 'With you all' is wiyyākum, 'for you all' -lkum.",
   "grammar": "checkpoint 2.1: recycle s2u001–s2u016",
   "dialogue": [
    [
@@ -509,7 +509,7 @@
    [
     "A",
     "حلو! بس لا تتأخر، ما بنترياك!",
-    "ḥilu! bas la titʼakhkhar, ma bintrayyāk!",
+    "ḥilu! bas la titʼakhkhar, ma binitrayyāk!",
     "Nice! But don't be late, we won't wait for you!"
    ],
    [
@@ -550,10 +550,10 @@
    ],
    [
     "ما بنترياك",
-    "ma bintrayyāk",
+    "ma binitrayyāk",
     "we won't wait for you (to a man)",
     "لن ننتظرك",
-    "to a woman: ma bintrayyāch"
+    "to a woman: ma binitrayyāch"
    ],
    [
     "لا تحاتون",
@@ -780,7 +780,7 @@
     "yitrayyāk",
     "he's waiting for you (to a man)",
     "ينتظرك",
-    "to a woman: yitrayyāch; Kuwait: yinṭrak (ينطرك), U"
+    "to a woman: yitrayyāch; Kuwait: yinṭrak (ينطرك)"
    ],
    [
     "لا تسوقين بسرعة",
@@ -906,8 +906,8 @@
   "id": "s2u021",
   "stage": 2,
   "title": "A bad line on the metro",
-  "goal": "Deal with a bad phone line: say you can't hear, call back, and say a phone isn't working",
-  "tip": "To say something isn't happening right now, put mub before gāʿid: mub gāʿid asmaʿak 'I can't hear you (right now)', tilifōnha mub gāʿid yishtaghil 'her phone isn't working'. Kuwaitis say mū gāʿid. For a woman: mub gāʿda.",
+  "goal": "Deal with a bad line on the metro: check Sēf can hear you, call him back, and say Maryam isn't answering",
+  "tip": "To say something isn't happening right now, put mub before gāʿid: mub gāʿid asmaʿak 'I can't hear you (right now)', Maryam mub gāʿda tradd 'Maryam isn't answering'. Kuwaitis say mū gāʿid. For a woman: mub gāʿda.",
   "grammar": "negative progressive: mub gāʿid + verb",
   "dialogue": [
    [
@@ -942,9 +942,9 @@
    ],
    [
     "B",
-    "اتصلت في مريم، بس تلفونها مب قاعد يشتغل",
-    "ittaṣalt fi Maryam, bas tilifōnha mub gāʿid yishtaghil",
-    "I called Maryam, but her phone isn't working."
+    "اتصلت في مريم، بس مب قاعدة ترد",
+    "ittaṣalt fi Maryam, bas mub gāʿda tradd",
+    "I called Maryam, but she isn't answering."
    ],
    [
     "A",
@@ -1004,11 +1004,11 @@
     ""
    ],
    [
-    "مب قاعد يشتغل",
-    "mub gāʿid yishtaghil",
-    "it isn't working (right now)",
-    "لا يعمل",
-    "about a feminine noun: mub gāʿda tishtaghil"
+    "مب قاعدة ترد",
+    "mub gāʿda tradd",
+    "she isn't answering (right now)",
+    "لا ترد",
+    "about a man: mub gāʿid yradd; you'll also hear just ma tradd (ما ترد)"
    ],
    [
     "بكلمها",
