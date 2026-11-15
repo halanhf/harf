@@ -1542,7 +1542,7 @@
   "stage": 4,
   "title": "Office or majlis?",
   "goal": "In Bū Rāshid's majlis, with Sēf there, tell him about your job offer and hear his advice on talking at work and in the majlis",
-  "tip": "The same person talks differently at the office and in the majlis. At work: shu l-akhbār?, ṭāl ʿumrak, short and to the point. In the majlis: start with the greeting, ask shu l-ʿilūm? 'what's the news?', and let the older man lead.",
+  "tip": "The same person talks differently at the office and in the majlis. At work: shu l-akhbār?, ṭāl ʿumrak, short and to the point. In the majlis: start with the greeting, ask shu ʿilūmak? 'what's your news?', and let the older man lead.",
   "grammar": "recycle: register and address (office vs majlis)",
   "dialogue": [
    [
@@ -1595,8 +1595,8 @@
    ],
    [
     "A",
-    "الله يسلمك. يعني في المجلس شو العلوم، وفي الشغل شو الأخبار. وبتعرف السنع يا ولدي",
-    "allāh ysallmak. yaʿni fi l-majlis shu l-ʿilūm, w fi sh-shughul shu l-akhbār. w bitaʿarf is-sanaʿ yā wildi",
+    "الله يسلمك. يعني في المجلس شو علومك، وفي الشغل شو الأخبار. وبتعرف السنع يا ولدي",
+    "allāh ysallmak. yaʿni fi l-majlis shu ʿilūmak, w fi sh-shughul shu l-akhbār. w bitaʿarf is-sanaʿ yā wildi",
     "You're welcome. So in the majlis it's 'what's the news?', and at work 'what's the latest?'. And you'll learn good manners, son."
    ],
    [
@@ -1650,11 +1650,11 @@
     "(recognise)"
    ],
    [
-    "شو العلوم؟",
-    "shu l-ʿilūm?",
-    "what's the news? how are things? (majlis)",
-    "ما الأخبار؟",
-    "(recognise)"
+    "شو علومك؟",
+    "shu ʿilūmak?",
+    "what's your news? how are things? (majlis) (to a man)",
+    "ما أخبارك؟",
+    "to a woman: shu ʿilūmich?; (recognise)"
    ],
    [
     "السنع",
