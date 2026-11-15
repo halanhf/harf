@@ -4,7 +4,7 @@
   "stage": 4,
   "title": "Do good and throw it in the sea",
   "goal": "In Bū Rāshid's majlis, with Sēf there, he hears you helped your neighbour; play it down, and understand his proverb",
-  "tip": "Learn a proverb whole, for recognition. saww khēr w giṭṭah baḥar 'do good and throw it in the sea': do the good deed, then forget it and don't tell people. The proverb keeps an old short command, saww; in ordinary speech you say sawwi. Recycle the past: ma sawwēt shay.",
+  "tip": "Learn a proverb whole, for recognition. saww khēr w giṭṭah baḥar 'do good and throw it in the sea': do the good deed, then forget it and don't tell people. The proverb uses a short form of the command, saww; in ordinary speech you say sawwi. Recycle the past: ma sawwēt shay.",
   "grammar": "recycle: past tense to play down a good deed; a proverb for recognition",
   "dialogue": [
    [
@@ -21,9 +21,9 @@
    ],
    [
     "A",
-    "الله يجزاك خير يا ولدي. وشحاله الحين؟",
-    "allāh yijzāk khēr yā wildi. w shḥālah il-ḥīn?",
-    "God reward you, son. And how is he now?"
+    "الله يجزاك خير يا ولدي، هذي هي الفزعة. وشحاله الحين؟",
+    "allāh yijzāk khēr yā wildi, hādhi hiya l-fazʿa. w shḥālah il-ḥīn?",
+    "God reward you, son: that's true fazʿa. And how is he now?"
    ],
    [
     "B",
@@ -88,7 +88,7 @@
     "ʿyālah msāfrīn",
     "his children are away (travelling)",
     "أولاده مسافرون",
-    "her children: ʿyāl-ha msāfrīn (عيالها مسافرين)"
+    "her children: ʿyālha msāfrīn (عيالها مسافرين)"
    ],
    [
     "ما حبيت أتكلم عن الموضوع",
@@ -159,9 +159,9 @@
    ],
    [
     "A",
-    "يصير جي. بس غلطة الشاطر بألف: العميل يثق في أرقامك",
-    "yṣīr chī. bas ghalṭat ish-shāṭir b-alf: il-ʿamīl yithig fi argāmak",
-    "These things happen. But a clever man's mistake counts for a thousand: the client trusts your figures."
+    "طول بالك، يصير جي. بس غلطة الشاطر بألف: العميل يثق في أرقامك",
+    "ṭawwil bālak, yṣīr chī. bas ghalṭat ish-shāṭir b-alf: il-ʿamīl yithig fi argāmak",
+    "Easy, these things happen. But a clever man's mistake counts for a thousand: the client trusts your figures."
    ],
    [
     "B",
@@ -195,13 +195,6 @@
     "the clever one's mistake counts for a thousand (a proverb)",
     "خطأ الماهر بألف",
     "(recognise) when someone good at their job slips, it costs more; said when a capable person makes a mistake"
-   ],
-   [
-    "الملف غلط",
-    "il-malaff ghalaṭ",
-    "the file's wrong, it's the wrong file",
-    "الملف خطأ",
-    "the right version: in-nuskha ṣ-ṣaḥḥ (النسخة الصح)"
    ],
    [
     "ما انتبهت",
@@ -256,7 +249,7 @@
   "task": "This week: with a tutor or exchange partner (search a tutoring site for «Emirati Arabic tutor»), ask which Gulf proverbs they still hear at home. Tell them the two you've met (saww khēr w giṭṭah baḥar, ghalṭat ish-shāṭir b-alf), ask whether they know them, and get them to explain one more in Gulf Arabic. Write it down with its meaning.",
   "receptive": [
    0,
-   4
+   3
   ]
  },
  {
@@ -299,9 +292,9 @@
    ],
    [
     "B",
-    "أربع ونص؟! والكل نايم! هذا نص الليل يا ريّال!",
-    "arbaʿ w nuṣṣ?! w il-kill nāyim! hādha nuṣṣ il-lēl yā rayyāl!",
-    "Half past four?! Everyone's asleep! That's the middle of the night, man!"
+    "أربع ونص؟! شو هالنشاط؟ هذا نص الليل يا ريّال!",
+    "arbaʿ w nuṣṣ?! shu han-nashāṭ? hādha nuṣṣ il-lēl yā rayyāl!",
+    "Half past four?! What's all this energy? That's the middle of the night, man!"
    ],
    [
     "A",
@@ -317,9 +310,9 @@
    ],
    [
     "A",
-    "تم! وبييب لك شي من السفر بعد",
-    "tamm! w bayīb-lak shay min is-safar baʿad",
-    "Deal! And I'll bring you something back from the trip, too."
+    "تم! وعلى فكرة، بييب لك شي من السفر",
+    "tamm! w ʿala fikra, bayīb-lak shay min is-safar",
+    "Deal! And by the way, I'll bring you something back from the trip."
    ]
   ],
   "items": [
@@ -532,9 +525,9 @@
    ],
    [
     "A",
-    "شفته. لاعب عادي، مثله مثل غيره",
-    "shiftah. lāʿib ʿādi, mithlah mithil ghērah",
-    "I have. He's an ordinary player, no better than anyone else."
+    "شفته. هذا على ذمته! لاعب عادي، مثله مثل غيره",
+    "shiftah. hādha ʿala dhimmtah! lāʿib ʿādi, mithlah mithil ghērah",
+    "I have. That's his version! He's an ordinary player, no better than anyone else."
    ],
    [
     "B",
@@ -585,7 +578,7 @@
     "il-gird fi ʿēn ummah ghazāl",
     "in his mother's eye the monkey is a gazelle (a proverb)",
     "القرد في عين أمه غزال",
-    "(recognise) people think the world of their own children and things; an Emirati form has il-khonfos 'the beetle', or 'as-sibaal, in place of il-gird"
+    "(recognise) people think the world of their own children and things; Emirati forms have il-khunfus 'the beetle', or is-sibāl (another word for monkey), in place of il-gird"
    ],
    [
     "شفته يلعب؟",
@@ -620,7 +613,7 @@
     "kill wāḥid yshūf ʿyālah aḥsan ʿyāl",
     "everyone thinks their own kids are the best",
     "كل واحد يرى أولاده أفضل الأولاد",
-    "(recognise) how people explain the beetle proverb"
+    "(recognise) how people explain this proverb"
    ],
    [
     "يبي يتعرف عليك",
@@ -630,7 +623,7 @@
     "to a woman: yabi yitʿarraf ʿalēch (يبي يتعرف عليج)"
    ]
   ],
-  "culture": "It's said of anything its owner values more than it's worth, including the way parents see their own children. Emiratis also have their own versions of the saying, with il-khonfos 'the beetle' or 'as-sibaal in place of the monkey.",
+  "culture": "It's said of anything its owner values more than it's worth, including the way parents see their own children. Emiratis also have their own versions of the saying: il-khunfus 'the beetle' in place of il-gird, or is-sibāl, another word for 'monkey'.",
   "receptive": [
    0,
    3,
@@ -695,9 +688,9 @@
    ],
    [
     "A",
-    "راشد؟ ما يعرف ولا مثل! يقول لي إن هذا كلام شواب",
-    "Rāshid? ma yaʿarf wala mathal! ygūl-li inn hādha kalām shuwwāb",
-    "Rāshid? He doesn't know a single proverb! He tells me it's old men's talk."
+    "راشد؟ ما يعرف ولا مثل! على قوله، هذا كلام شواب",
+    "Rāshid? ma yaʿarf wala mathal! ʿala gōlah, hādha kalām shuwwāb",
+    "Rāshid? He doesn't know a single proverb! According to him, it's old men's talk."
    ],
    [
     "B",
@@ -842,7 +835,7 @@
    [
     "هلا برو",
     "hala brō",
-    "hi bro, hey bro (young men's talk)",
+    "hi bro, hey bro (friends only)",
     "",
     "(recognise) friends only, never to an elder"
    ],
@@ -1025,7 +1018,7 @@
    [
     "رهيب",
     "rahīb",
-    "awesome, amazing (friends' talk)",
+    "awesome, amazing (friends only)",
     "رائع",
     "(recognise)"
    ]
@@ -1477,9 +1470,9 @@
    ],
    [
     "A",
-    "أبد! مرة قلتها بالغلط، وأبوي طالعني جي…",
-    "abad! marra gilt-ha bil-ghalaṭ, w ubūy ṭālaʿni chī…",
-    "Never! Once I said it by mistake, and my dad gave me this look…"
+    "أبد! مرة قلتها بالغلط وما انتبهت، وأبوي طالعني جي…",
+    "abad! marra gilt-ha bil-ghalaṭ w ma ntibaht, w ubūy ṭālaʿni chī…",
+    "Never! Once I said it by mistake without noticing, and my dad gave me this look…"
    ],
    [
     "B",
