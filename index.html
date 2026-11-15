@@ -554,7 +554,8 @@ function schedule(card,grade,now,retention){
   const G=grade+1;
   const c=Object.assign({s:0,k:0,d:0,t:0,r:0,l:0,st:0,i:0},card||{});
   const ivl=s=>Math.min(MAX_IVL,Math.max(1,Math.round(intervalDays(s,ret))));
-  const graduate=()=>{ c.st=-1; c.i=ivl(c.s); c.d=now+c.i*DAY; };
+  const later=n=>{ const t=new Date(now); t.setDate(t.getDate()+n); return t.getTime(); }; // n calendar days at the same clock time, so a dst change can't move it to another review day
+  const graduate=()=>{ c.st=-1; c.i=ivl(c.s); c.d=later(c.i); };
   const step=(steps)=>{ c.i=0;
     if(G===1){ c.st=0; c.d=now+steps[0]*60000; }
     else if(G===2){ c.d=now+Math.round((steps[c.st]||steps[0])*1.5)*60000; }
@@ -568,7 +569,7 @@ function schedule(card,grade,now,retention){
     else if(elapsed<1){ c.s=sShort(c.s,G); c.k=nextD(c.k,G); graduate(); }
     else { // as the reference scheduler does: hard < good < easy by at least a day each
       let h=ivl(sSuccess(c.k,c.s,R,2)), g=ivl(sSuccess(c.k,c.s,R,3)), e=ivl(sSuccess(c.k,c.s,R,4)); h=Math.min(h,g); g=Math.max(g,h+1); e=Math.max(e,g+1);
-      c.s=sSuccess(c.k,c.s,R,G); c.k=nextD(c.k,G); c.st=-1; c.i=Math.min(MAX_IVL,[h,g,e][G-2]); c.d=now+c.i*DAY; }
+      c.s=sSuccess(c.k,c.s,R,G); c.k=nextD(c.k,G); c.st=-1; c.i=Math.min(MAX_IVL,[h,g,e][G-2]); c.d=later(c.i); }
   }
   c.r++; c.t=now; return c;
 }
@@ -1268,8 +1269,8 @@ function forecast(days){ const out=Array(days).fill(0);
   for(const [id,c] of Object.entries(liveCards())){ if(isHidden(S.suspended,id)) continue; const d=Math.max(0,learnDay(dueAt(c))-learnDay(Date.now())); if(d<days) out[d]++; }
   return out; }
 function forecastBars(){ const f=forecast(7); const max=Math.max(1,...f); const names=["Today","Tmrw"];
-  return el("div",{className:"bars",role:"img","aria-label":"Cards due over the next 7 days: "+f.join(", ")},f.map((n,i)=>{ const d=new Date(Date.now()); d.setDate(d.getDate()+i);
-    return el("div",{},el("span",{textContent:String(n)}),el("i",{style:`height:${Math.round(70*n/max)}px`}),el("span",{textContent:names[i]||d.toLocaleDateString(undefined,{weekday:"short"})})); })); }
+  return el("div",{className:"bars",role:"img","aria-label":"Cards due over the next 7 days: "+f.join(", ")},f.map((n,i)=>{ const d=new Date((learnDay(Date.now())+i)*DAY); // review days: at 1am it's still yesterday's
+    return el("div",{},el("span",{textContent:String(n)}),el("i",{style:`height:${Math.round(70*n/max)}px`}),el("span",{textContent:names[i]||d.toLocaleDateString(undefined,{weekday:"short",timeZone:"UTC"})})); })); }
 function renderReviewTab(){
   refresh(); const sec=$("#review"); sec.textContent=""; const p=plan(); const n=p.reviews.length; const any=Object.keys(liveCards()).length;
   sec.append(el("h2",{textContent:"Review"}));
@@ -1298,8 +1299,8 @@ function startReview(onDone){
   const next=()=>{
     clearTimeout(waitTimer); if(!f.alive()) return; f.body.textContent=""; keyHandler=null; topUp();
     if(!queue.length){
-      const now=Date.now(); const soon=Object.entries(liveCards()).filter(([id,c])=>!isHidden(S.suspended,id)&&c.d>now&&c.d-now<10*60000).sort((a,b)=>a[1].d-b[1].d);
-      if(soon.length&&n){ const ms=soon[0][1].d-now; flush();
+      const now=Date.now(); const soon=Object.entries(liveCards()).filter(([id,c])=>!isHidden(S.suspended,id)&&!held.has(id)&&dueAt(c)>now&&dueAt(c)-now<10*60000).sort((a,b)=>dueAt(a[1])-dueAt(b[1])); // when it really comes back, and never one held for the next days
+      if(soon.length&&n){ const ms=dueAt(soon[0][1])-now; flush();
         f.body.append(el("div",{className:"stage"},el("p",{className:"en",textContent:`${soon.length} card${soon.length>1?"s":""} come${soon.length>1?"":"s"} back ${whenLabel(ms)}`}),
           el("p",{className:"tag",textContent:"New and forgotten cards return after a short gap on purpose: recalling after a pause is what makes them stick. Wait here, or finish and they'll be on Today."}),
           el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Finish for now",onclick:finish}))));
@@ -1343,7 +1344,7 @@ function startReview(onDone){
     const gr=el("div",{className:"grades",role:"group","aria-label":"How well did you know it?"});
     const reveal=()=>{ if(!ans.hidden) return; ans.hidden=false; acts.textContent=""; if(trTap&&trTap.tagName==="BUTTON") trTap.remove(); const now=Date.now();
       [["Forgot",0],["Hard",1],["Got it",2],["Easy",3]].forEach(([lab,g])=>{ const nx=sched(card,g,now);
-        gr.append(el("button",{className:"btn"+(g===(suggest>=0?suggest:2)?" primary":""),type:"button",onclick:()=>grade(g)},el("span",{},lab,el("kbd",{textContent:String(g+1)})),el("small",{textContent:whenLabel(nx.d-now)}))); });
+        gr.append(el("button",{className:"btn"+(g===(suggest>=0?suggest:2)?" primary":""),type:"button",onclick:()=>grade(g)},el("span",{},lab,el("kbd",{textContent:String(g+1)})),el("small",{textContent:whenLabel(nx.st<0?nx.i*DAY:nx.d-now)}))); });
       acts.append(gr); if(mode!=="listen"&&mode!=="build") auto(it.ar);
       try{ ans.scrollIntoView({block:"nearest"}); }catch(e){} }; // on a short screen (phone on its side) the answer would sit under the grade buttons
     if(mode!=="build") acts.append(el("button",{className:"btn primary wide",type:"button",textContent:"Show answer",onclick:reveal}));

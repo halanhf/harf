@@ -1,7 +1,7 @@
 // offline support for the installed app. the page is fetched network-first (falling back to the saved copy offline or after 4 s)
 // so a new version shows up on the next open;
 // fonts and icons are cache-first because they never change under the same name
-const CACHE="harf-v9233d60fa7";
+const CACHE="harf-v717c65e95d", ROOT=new URL("./",location.href).pathname;
 // the page is stored as "./" only: hosts like cloudflare pages redirect /index.html to /, and a redirected copy can't open the app offline
 const SHELL=["./","./manifest.webmanifest","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-maskable-512.png","./icons/apple-touch-icon.png","./icons/favicon-32.png",
   "./fonts/amiri-arabic-400-normal.woff2","./fonts/amiri-arabic-700-normal.woff2","./fonts/readex-pro-latin-400-normal.woff2","./fonts/readex-pro-latin-500-normal.woff2","./fonts/readex-pro-latin-600-normal.woff2","./fonts/readex-pro-latin-ext-400-normal.woff2"];
@@ -11,7 +11,8 @@ self.addEventListener("activate",e=>{ e.waitUntil(caches.keys().then(ks=>Promise
 self.addEventListener("fetch",e=>{
   const r=e.request; if(r.method!=="GET") return;
   const u=new URL(r.url); if(u.origin!==location.origin) return; // never cache anything from other sites
-  if(r.mode==="navigate"||u.pathname.endsWith("/")||u.pathname.endsWith("index.html")){
+  // only the app's own page is saved as "./": opening another file (a font licence, a folder listing on the pc) mustn't replace it
+  if(u.pathname===ROOT||u.pathname===ROOT+"index.html"){
     const net=fetch(r).then(res=>{ if(res.ok){ const copy=res.clone(); return caches.open(CACHE).then(c=>c.put("./",copy)).then(()=>res,()=>res); } return res; });
     e.waitUntil(net.catch(()=>{})); // a slow fetch still finishes and updates the cache for next time
     // on a connection that's up but passes nothing (a train, one bar of signal) don't wait minutes: after 4 s open the saved copy

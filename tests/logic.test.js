@@ -181,6 +181,8 @@ test("merge: starting over wins over older progress on other devices, but keeps 
 test("grade labels say when the card comes back",()=>{
   assert.equal(L.whenLabel(60000),"in 1 min"); assert.equal(L.whenLabel(10*60000),"in 10 min"); assert.equal(L.whenLabel(3*3600000),"in 3 h");
   assert.equal(L.whenLabel(DAY),"tomorrow"); assert.equal(L.whenLabel(9*DAY),"in 9 days"); assert.equal(L.whenLabel(90*DAY),"in 3 mo");
+  // review grades are labelled in whole days: the evening before the clocks go forward, "tomorrow" is only 23 h away
+  assert.match(html,/whenLabel\(nx\.st<0\?nx\.i\*DAY:nx\.d-now\)/);
 });
 test("data: grammar tables and numbers are well formed; stage 1 keeps 7±2 phrases per lesson",()=>{
   for(const g of D.GRAMMAR){ assert.ok(g.title&&Array.isArray(g.rows)&&g.rows.length>=4,g.title); for(const r of g.rows){ assert.equal(r.length,3,g.title); assert.match(r[0],/[ء-ي]/); } }
@@ -309,6 +311,17 @@ test("review days: a card due tomorrow is in all of tomorrow's session (from 4am
     const back=L.schedule(dst,2,dst.t-3*3600000); assert.ok(Number.isFinite(back.d)&&back.i>=1);
     // a long absence (two years): finite, and the interval keeps growing
     const away=L.schedule({s:30,k:5,r:9,l:0,st:-1,i:30,t:at(2024,11,10,9),d:at(2024,12,10,9)},2,at(2026,11,10,9)); assert.ok(Number.isFinite(away.s)&&away.i>30&&away.i<=L.MAX_IVL,`${away.i}`);
+    // graded just after 4am the day before the clocks go back (or the hour before 4am ahead of them going forward):
+    // the interval still lands that many review days later, not one early (due again the same day) or one late
+    for(const t of [at(2026,10,24,4)+30*60000,at(2026,3,28,3)+30*60000]) for(const g of [1,2,3]){
+      const x=L.schedule({s:5,k:5,r:3,l:0,st:-1,i:1,t:t-DAY,d:t},g,t);
+      assert.equal(L.learnDay(L.dueAt(x))-L.learnDay(t),x.i,`${new Date(t)} grade ${g}`); }
+    const one=L.schedule({s:5,k:5,r:3,l:0,st:-1,i:1,t:at(2026,10,23,4)+1800000,d:at(2026,10,24,4)+1800000},0+1,at(2026,10,24,4)+1800000);
+    assert.equal(L.planDay({a:one},{},at(2026,10,24,5)).reviews.length,0,"not due again the same morning");
+    // saved due times from before review days: a card comes due at the start of its own review day, never later (so none
+    // vanish) and never more than that day early (so a big deck doesn't all come due at once)
+    for(let k=0;k<2000;k++){ const t=at(2025,1,1,0)+k*4567891, i=1+k%40, old={s:3,k:5,r:3,l:0,st:-1,i,t,d:t+i*DAY};
+      const due=L.dueAt(old); assert.ok(due<=old.d&&old.d-due<DAY+3600001&&L.learnDay(due)===L.learnDay(old.d),`${new Date(old.d)}`); }
     // flying from london to dubai after grading: still due the next local day
     process.env.TZ="Asia/Dubai"; assert.equal(L.planDay({a:c},{},at(2026,11,11,9)).reviews.length,1);
   }finally{ if(tz===undefined) delete process.env.TZ; else process.env.TZ=tz; }
@@ -336,7 +349,7 @@ test("service worker: the page opens from the saved copy offline, on a stalled c
   const sw=fs.readFileSync(path.join(__dirname,"..","docs","sw.js"),"utf8");
   const store=new Map(); const cache={put:async(k,v)=>{ store.set(String(k),v); },match:async k=>store.get(String(k)),addAll:async()=>{}};
   const handlers={}; let net=()=>new Promise(()=>{});
-  const env={self:{addEventListener:(t,f)=>{ handlers[t]=f; },skipWaiting(){},clients:{claim(){}}},location:{origin:"https://h.test"},URL,Request:function(u){ this.url=u; },
+  const env={self:{addEventListener:(t,f)=>{ handlers[t]=f; },skipWaiting(){},clients:{claim(){}}},location:{origin:"https://h.test",href:"https://h.test/sw.js"},URL,Request:function(u){ this.url=u; },
     Response:{error:()=>({error:true})},setTimeout:f=>{ f(); return 0; },fetch:()=>net(),
     caches:{open:async()=>cache,match:async k=>store.get(String(k)),keys:async()=>[],delete:async()=>true}};
   vm.createContext(env); vm.runInContext(sw,env);
@@ -347,6 +360,13 @@ test("service worker: the page opens from the saved copy offline, on a stalled c
   const fresh={ok:true,body:"new",clone(){ return {ok:true,body:"new"}; }}; net=()=>Promise.resolve(fresh);
   env.setTimeout=()=>0; // online and quick: the network answer wins and is saved for next time
   assert.equal((await open()).body,"new"); await new Promise(r=>setImmediate(r)); assert.equal(store.get("./").body,"new");
+  // slow but working: the saved copy opens after the timeout, the download finishes anyway, and the next open has the update
+  store.set("./",{ok:true,body:"saved"}); let arrive; net=()=>new Promise(ok=>{ arrive=()=>ok({ok:true,body:"v2",clone(){ return {ok:true,body:"v2"}; }}); });
+  env.setTimeout=f=>{ f(); return 0; }; assert.equal((await open()).body,"saved"); arrive(); await new Promise(r=>setImmediate(r)); assert.equal(store.get("./").body,"v2");
+  // another file opened in the app's scope (a font licence, a folder listing) never replaces the saved page
+  const lic={ok:true,body:"licence",clone(){ return this; }}; net=()=>Promise.resolve(lic); let p2;
+  handlers.fetch({request:{method:"GET",mode:"navigate",url:"https://h.test/fonts/"},respondWith:x=>{ p2=x; },waitUntil(){}}); await p2; await new Promise(r=>setImmediate(r));
+  assert.equal(store.get("./").body,"v2");
   store.clear(); net=()=>Promise.reject(new TypeError("offline")); assert.equal((await open()).error,true,"nothing saved yet and offline: a network error, not a hang");
 });
 test("import after start over: the preview counts the backup cards the reset will drop, so a restore is never a silent no-op",()=>{
