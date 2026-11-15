@@ -348,7 +348,7 @@
   "id": "s2u004",
   "stage": 2,
   "title": "We go out on Fridays",
-  "goal": "Tell Umm Sēf what you and Sēf do together on Fridays.",
+  "goal": "At Sēf's home, with Sēf there: tell Umm Sēf what you and Sēf do together on Fridays.",
   "tip": "'We' starts with ni-: nilʿab (we play), niṭlaʿ (we go out), nis-har (we stay up). You can leave out niḥin, because ni- already means 'we': yōm il-jumʿa nilʿab kūra. Two verbs can follow each other with w: niṭlaʿ w nis-har.",
   "grammar": "Present tense I: we (ni-): nilʿab, niskin, niṭlaʿ",
   "dialogue": [
@@ -569,7 +569,7 @@
   "id": "s2u006",
   "stage": 2,
   "title": "Sēf doesn't study!",
-  "goal": "Defend Sēf when his mother complains about his habits, and say what you don't do.",
+  "goal": "At Sēf's home, with Sēf there: defend Sēf when his mother complains about his habits, and say what you don't do.",
   "tip": "Put ma before a present verb for 'don't': ma as-har (I don't stay up late), ma yidris (he doesn't study). The verb itself doesn't change. mub is for words that aren't verbs: mub zēn, mub kill yōm.",
   "grammar": "Present tense I: ma + present for 'don't, doesn't'",
   "dialogue": [
@@ -680,7 +680,7 @@
   "stage": 2,
   "title": "Who does the shopping?",
   "goal": "Ask Sēf who goes to the supermarket in his family, and tease him about it.",
-  "tip": "Hollow verbs keep a long vowel in the present: rāḥ → yrūḥ (he goes), shāf → yshūf (he sees), gāl → ygūl (he says), nām → ynām (he sleeps). No vowel comes before the stem: trūḥ, ashūf, anām. Endings work as before: tshūfīn, yrūḥūn.",
+  "tip": "Hollow verbs keep a long vowel in the present: rāḥ → yrūḥ (he goes), shāf → yshūf (he sees), gāl → ygūl (he says), nām → ynām (he sleeps). No i- comes between the prefix and the stem: trūḥ, ashūf, anām. Endings work as before: tshūfīn, yrūḥūn.",
   "grammar": "Present tense II: hollow verbs with a long middle vowel (yrūḥ, yshūf, ygūl, ynām)",
   "dialogue": [
    [
@@ -705,7 +705,7 @@
     "A",
     "لا، ويا أمي. هي دوم تشوف الأسعار، وهو يدفع!",
     "la, wiyya ummi. hiya dōm tshūf il-asʿār, w huwa yidfaʿ!",
-    "No, with my mum. She checks the prices, and he pays!"
+    "No, with my mum. She always checks the prices, and he pays!"
    ],
    [
     "B",
@@ -1125,7 +1125,7 @@
     "صحنين",
     "ṣaḥnēn",
     "two plates",
-    "صحنين",
+    "صحنان",
     "one plate: ṣaḥan"
    ]
   ]
@@ -1134,7 +1134,7 @@
   "id": "s2u011",
   "stage": 2,
   "title": "When are you coming?",
-  "goal": "Take a call from Umm Sēf about lunch tomorrow, and tell her you love harees but can't make it.",
+  "goal": "Take a call from Umm Sēf about lunch tomorrow, and tell her you love harees but don't know how to make it.",
   "tip": "'Come': ayi (I), tiyi (you, to a man; she), yiyi (he), niyi (we); tiyīn to a woman, tiyūn to a group, yiyūn (they). 'It' or 'him' after a verb ending in a vowel is -īh: nsawwi → nsawwīh (we make it). After a consonant it's -ah: aḥibb → aḥibbah.",
   "grammar": "Present tense II: 'come' (ayi, tiyi, yiyi); object -īh after a vowel (nsawwīh)",
   "dialogue": [
@@ -1176,9 +1176,9 @@
    ],
    [
     "A",
-    "سيف يعرف يسويه. تسوونه ويا بعض!",
-    "Sēf yaʿarf ysawwīh. tsawwūnah wiyya baʿaẓ!",
-    "Sēf knows how to make it. You can make it together!"
+    "ولا يهمك، أنا أسويه، وانت بس تاكل!",
+    "wala yhimmak, ana asawwīh, w inta bas tākil!",
+    "Don't worry, I'll make it. You just eat!"
    ]
   ],
   "items": [

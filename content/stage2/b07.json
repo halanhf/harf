@@ -21,15 +21,15 @@
    ],
    [
     "A",
-    "هيه. هذا بيت عمي، عنده خمس بنات وولدين",
-    "hē. hādha bēt ʿammi, ʿindah khams banāt w waladēn",
-    "Yes. This is my uncle's house. He's got five daughters and two sons."
+    "هيه. هذا بيت يدي، عنده خمس بنات وولدين",
+    "hē. hādha bēt yaddi, ʿindah khams banāt w waladēn",
+    "Yes. This is my grandad's house. He's got five daughters and two sons."
    ],
    [
     "B",
     "ومنو هذيلا الرياييل اللي برا؟",
     "w minu hādhēla r-ryāyīl illi barra?",
-    "And who are those men outside?"
+    "And who are these men outside?"
    ],
    [
     "A",
@@ -227,7 +227,7 @@
    [
     "فيها",
     "fīha",
-    "there is, there are (in a place you call 'she': a city, an area)",
+    "there is, there are (in it: a feminine place, such as a city or an area)",
     "فيها",
     "for a masculine place: fīh (فيه); fīha maḥallāt 'it has shops'"
    ]
@@ -831,9 +831,9 @@
   "dialogue": [
    [
     "A",
-    "تفضل، تبخر يا ولدي",
-    "tfaẓẓal, tbakhkhar yā wildi",
-    "Here, take some incense, son."
+    "تفضل، هذا بخور. تبخر يا ولدي",
+    "tfaẓẓal, hādha bukhūr. tbakhkhar yā wildi",
+    "Here, this is incense. Perfume yourself with it, son."
    ],
    [
     "B",
@@ -1003,7 +1003,7 @@
     "igʿdu",
     "sit down; stay (to a group)",
     "اجلسوا",
-    "to one man: igʿid (اقعد); to one woman: igʿidi (اقعدي)"
+    "to one man: igʿid (اقعد); to one woman: igʿidi (اقعدي); UAE also: iylisu (ايلسوا)"
    ],
    [
     "عندي محاضرة",
