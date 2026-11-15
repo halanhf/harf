@@ -867,13 +867,13 @@
   "stage": 3,
   "title": "I kept ringing you!",
   "goal": "Fahad is back from Kuwait; find out why he didn't answer and what he did with his family",
-  "tip": "ẓall + a present verb means 'kept on doing': ẓallēt adigg ʿalēk 'I kept ringing you'. On its own it means 'stayed': ẓallēt wiyya ahli. It changes like any past verb: ẓall 'he', ẓallat 'she', ẓallēna 'we'. In Dubai you'll also hear tamm: tammēt.",
-  "grammar": "ẓall + present verb: 'kept on'; ẓallēt 'I stayed'",
+  "tip": "tamm + a present verb means 'kept on doing': tammēt adigg ʿalēk 'I kept ringing you', tamm yisʼal 'he kept asking'. On its own it means 'stayed'. tammēt is 'I' or 'you (to a man)', tammēna 'we'. Fahad says ẓall, common in Kuwait too: ẓallēt, ẓall ygūl.",
+  "grammar": "tamm + present verb: 'kept on'; tammēt 'I stayed' (also ẓall)",
   "dialogue": [
    [
     "B",
-    "وينك يا فهد؟ ظليت أدق عليك يومين!",
-    "wēnak yā Fahad? ẓallēt adigg ʿalēk yōmēn!",
+    "وينك يا فهد؟ تميت أدق عليك يومين!",
+    "wēnak yā Fahad? tammēt adigg ʿalēk yōmēn!",
     "Where've you been, Fahad? I kept ringing you for two days!"
    ],
    [
@@ -884,9 +884,9 @@
    ],
    [
     "B",
-    "الحمد لله على السلامة! شو سويت هناك؟",
-    "il-ḥamdu lillāh ʿala s-salāma! shu sawwēt hnāk?",
-    "Welcome back! What did you get up to there?"
+    "الحمد لله على السلامة! سيف تم يسأل عنك. شو سويت هناك؟",
+    "il-ḥamdu lillāh ʿala s-salāma! Sēf tamm yisʼal ʿannak. shu sawwēt hnāk?",
+    "Welcome back! Sēf kept asking about you. What did you get up to there?"
    ],
    [
     "A",
@@ -896,8 +896,8 @@
    ],
    [
     "B",
-    "حلو! أكيد ظليت تاكل طول اليوم",
-    "ḥilu! akīd ẓallēt tākil ṭūl il-yōm",
+    "حلو! أكيد تميت تاكل طول اليوم",
+    "ḥilu! akīd tammēt tākil ṭūl il-yōm",
     "Nice! I bet you kept eating all day."
    ],
    [
@@ -921,39 +921,39 @@
   ],
   "items": [
    [
-    "ظليت",
-    "ẓallēt",
+    "تميت",
+    "tammēt",
     "I kept (on), I stayed; you kept (on) (to a man)",
     "ظللت / بقيت",
-    "to a woman: ẓallēti (ظليتي); UAE also: tammēt (تميت)"
+    "to a woman: tammēti (تميتي); also: ẓallēt (ظليت), common in Kuwait too"
    ],
    [
-    "ظليت أدق عليك",
-    "ẓallēt adigg ʿalēk",
+    "تميت أدق عليك",
+    "tammēt adigg ʿalēk",
     "I kept ringing you, I kept calling you (to a man)",
     "ظللت أتصل بك",
-    "to a woman: ẓallēt adigg ʿalēch (ظليت أدق عليج)"
+    "to a woman: tammēt adigg ʿalēch (تميت أدق عليج); also: ẓallēt adigg (ظليت أدق)"
    ],
    [
-    "ظل يقول",
-    "ẓall ygūl",
-    "he kept saying",
-    "ظل يقول",
-    "she kept saying: ẓallat tgūl (ظلت تقول)"
+    "تم يسأل عنك",
+    "tamm yisʼal ʿannak",
+    "he kept asking about you (to a man)",
+    "ظل يسأل عنك",
+    "to a woman: tamm yisʼal ʿannich (تم يسأل عنج); also: ẓall (ظل), common in Kuwait too"
    ],
    [
-    "ظلت تطبخ",
-    "ẓallat tiṭbakh",
-    "she kept cooking",
-    "ظلت تطبخ",
-    "he kept cooking: ẓall yiṭbakh (ظل يطبخ)"
+    "تميت تاكل",
+    "tammēt tākil",
+    "you kept eating (to a man)",
+    "ظللت تأكل",
+    "to a woman: tammēti tāklīn (تميتي تاكلين); I kept eating: tammēt ākil"
    ],
    [
-    "ظليت ويا أهلي",
-    "ẓallēt wiyya ahli",
-    "I stayed with my family",
-    "بقيت مع أهلي",
-    ""
+    "تطبخ كل يوم",
+    "tiṭbakh kill yōm",
+    "she cooks every day; you cook every day (to a man)",
+    "تطبخ كل يوم",
+    "to a woman: tiṭbakhīn kill yōm (تطبخين كل يوم)"
    ],
    [
     "تلفوني خرب",
@@ -991,7 +991,7 @@
   "stage": 3,
   "title": "Checkpoint 3.4: working late",
   "goal": "Checkpoint: Maryam and a colleague are still at the office; offer to help them finish the presentation",
-  "tip": "Group and 'we' forms of this block: baʿadkum 'you're still (all of you)', bāgi-lna 'we've got … left', la tkhallūni 'don't make me (to a group)'. ma ʿād fīni 'I've had enough, I'm worn out'. tammēt is the Dubai word for ẓallēt 'I kept on'.",
+  "tip": "Group and 'we' forms of this block: baʿadkum 'you're still (all of you)', bāgi-lna 'we've got … left', la tkhallūni 'don't make me (to a group)'. ma ʿād fīni 'I've had enough, I'm worn out'. tammēna 'we kept on' (also ẓallēna).",
   "grammar": "checkpoint 3.4: recycle s3u047–s3u064 (participles, obligation, khalli, still / no longer / left)",
   "dialogue": [
    [
@@ -1014,9 +1014,9 @@
    ],
    [
     "A",
-    "الأرقام بس. تميت أراجعها طول العصر، ما عاد فيني",
-    "il-argām bas. tammēt arājiʿha ṭūl il-ʿaṣir, ma ʿād fīni",
-    "Just the figures. I kept checking them all afternoon; I'm worn out."
+    "الأرقام بس. تمينا نشتغل عليها طول العصر، ما عاد فيني",
+    "il-argām bas. tammēna nishtaghil ʿalēha ṭūl il-ʿaṣir, ma ʿād fīni",
+    "Just the figures. We've been at them all afternoon; I'm worn out."
    ],
    [
     "B",
@@ -1059,11 +1059,11 @@
     "bāgi-lna sāʿa = we've got an hour left"
    ],
    [
-    "تميت",
-    "tammēt",
-    "I kept (on), I stayed (UAE)",
-    "ظللت / بقيت",
-    "Gulf-wide: ẓallēt (ظليت); tammēt adris = I kept studying"
+    "تمينا",
+    "tammēna",
+    "we kept (on), we stayed",
+    "ظللنا / بقينا",
+    "also: ẓallēna (ظلينا), common in Kuwait too; tammēna nishtaghil = we kept working"
    ],
    [
     "ما عاد فيني",
