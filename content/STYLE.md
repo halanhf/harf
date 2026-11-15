@@ -64,7 +64,7 @@ The course follows **CODA-Gulf** (S: Khalifa et al. 2016; Habash et al. 2018) fo
 | ch from ك in roots | write ك | باكر bāchir, سمك simach, كم cham | S (GUMAR) |
 | 2nd person feminine -ich | always ـج | عندج ʿindich, شحالج shḥālich, عليج ʿalēch | S; C (عليج 7565/3072, لج 6707/3650) |
 | **y-sound from fuṣḥā j, in dialect words** | write ي | ياي yāy "coming" (2266/554 vs جاي 568/911); يالس yālis (2951/48 vs جالس 505/839); ريّال rayyāl (2293/683); يديد yidīd (962/194 vs جديد 765/710 for jadīd); شو اليديد (8/0); يهال, ياهل; ييت yīt "I came" (801/266 vs جيت 321/567); يبت yibt "I brought" (370/93); ييب لي yīb-li (16/9); دياي diyāy (39/25); يلس yalas (1566/15; present ييلس yiylis 420/4); ويهي wiyhi "my face" (2446/235); يوعان yōʿān "hungry" (194/83) | C; course lead |
-| **j kept** | write ج where the word is said with j: fuṣḥā-shared, formal or recent words | جامعة jāmʿa, جواز jawāz, جنسية jinsiyya, مسجد masjid, الجمعة il-jumʿa (relaxed speech yimʿa: note it), مجلس majlis | stage 1 (u7, u16); y-spellings are rare: اليامعه 17/0, مسيد 27/2 |
+| **j kept** | write ج where the word is said with j: fuṣḥā-shared, formal or recent words | جامعة jāmʿa, جواز jawāz, جنسية jinsiyya, مسجد masjid, الجمعة il-jumʿa (relaxed speech yimʿa: note it), مجلس majlis | stage 1 (u7, u16); y-spellings are rare: اليامعه 17/0. Exception: with the article, المسيد 451/29 beats المسجد 48/63 (UAE). Keep masjid as the item, and always note "UAE also: il-masīd" |
 | deciding j or y | look up both spellings with attest.py, cite both counts in the review sheet, and log the word in the seed lexicon | — | — |
 | ch in شاي | write ش | شاي chāy | S (GUMAR) |
 | counterfactual chān | جان, kept apart from كان "was" | جان قلت لي chān gilt-li | S (GUMAR) |
