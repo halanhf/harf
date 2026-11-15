@@ -12,7 +12,7 @@ There are two ways to run it, built from the same `index.html`:
 | AI lessons (stage 2+), stories, chat partner, sentence practice | Yes | No, they need Claude |
 | Speaking feedback | Claude dictation (Chrome or Edge on a computer or Android) | The browser's own recogniser (Chrome, Edge), plus record and compare |
 
-I use the claude.ai version day to day. The offline app is the backup plan, and the one to use if the repo ever goes public.
+I use the claude.ai version day to day. The offline app is the backup plan, and it's the one anyone else can use now the repo's public.
 
 ## What you need
 
@@ -47,21 +47,23 @@ Always use exactly http://127.0.0.1:8000. The browser keeps progress per address
 
 ### The offline app on your phone (needs hosting)
 
-A phone can't reach your PC's `127.0.0.1`, so `docs/` has to be on the web over HTTPS. The repo is private, and GitHub Pages only works on private repos with GitHub Pro, so the free route is Cloudflare Pages, which can deploy from a private repo:
+A phone can't reach your PC's `127.0.0.1`, so `docs/` has to be on the web over HTTPS. The repo's public now, so there are two free ways.
+
+**GitHub Pages.** In the repo go to Settings, Pages, Source: **GitHub Actions**. Then Actions, **pages**, **Run workflow**. It'll be at https://halanhf.github.io/arabic-learn/. The workflow only runs by hand for now, so run it again after each change you want on the phone. One catch: all my Pages sites share that one address, so another project there could in theory mess with Harf's saved progress.
+
+**Cloudflare Pages** doesn't have that problem, and it redeploys on every push:
 
 1. In the Cloudflare dashboard go to **Workers & Pages**, then **Create application**, **Pages**, **Connect to Git**.
 2. Pick **GitHub**. When GitHub asks which repos, choose **Only select repositories** and pick `arabic-learn`. Then **Install & Authorize** and **Begin setup**.
 3. Production branch: `main`. Leave the framework preset alone. Build command: leave it blank (Cloudflare's docs also suggest `exit 0`, which does the same). Build output directory: `docs`.
 4. **Save and Deploy**. You get an address like `https://<project-name>.pages.dev`, and every push to `main` redeploys it.
 
-Anyone with that address can open the app. That's fine: it's only the app, and progress never leaves each person's own browser.
+Anyone with either address can open the app. That's fine: it's only the app, and progress never leaves each person's own browser.
 
 Then put it on the phone:
 
 - **iPhone:** open the address in Safari, Share, **Add to Home Screen**, **Add**. The home screen app keeps its own progress, separate from Safari, so add it before you start, or move your progress across with a backup.
 - **Android:** open it in Chrome and go to Progress, **Install Harf as an app** (or ⋮ menu, **Install and create shortcut**, then **Install**).
-
-If the repo goes public, GitHub Pages is free instead: Settings, Pages, Source: **GitHub Actions**, then Actions, **pages**, **Run workflow**. It'll be at https://halanhf.github.io/arabic-learn/. All my Pages sites would share that one address, so another project there could in theory mess with Harf's saved progress. Cloudflare doesn't have that problem.
 
 ## First run
 
@@ -94,7 +96,7 @@ Open it, press **Continue** until Today says you're done. A normal day is review
 
   CI fails if `docs/` doesn't match `index.html`.
 - **claude.ai version:** republish the artifact from the new `index.html`. It keeps the same link and your progress. The page needs the `db`, `user`, `sample`, `dictation` and `downloads` capabilities, so keep them when republishing (without `downloads` the backup can only go to the clipboard).
-- **Hosted offline app:** Cloudflare redeploys on push. The app loads the new version the next time it's opened online.
+- **Hosted offline app:** Cloudflare redeploys on push; for GitHub Pages run the **pages** workflow again. The app loads the new version the next time it's opened online.
 - **PC install from 127.0.0.1:** start the server again, open the app once, then stop the server.
 
 Updates never touch progress. It lives in browser storage, not in the files.
@@ -119,7 +121,7 @@ Export a backup first if you might want your progress back.
 | Progress gone on the PC install | You opened a different address or port. Use exactly http://127.0.0.1:8000 |
 | Old version still showing | Open it once while online. The installed app checks for a new version every time it opens |
 | Export backup says "Couldn't export here" | claude.ai only lets a page save files through its downloads permission. Open Harf in a web browser on claude.ai and export from there |
-| `pages` workflow fails | Pages isn't switched on, or the repo is private without GitHub Pro |
+| `pages` workflow fails | Pages isn't switched on yet: Settings, Pages, Source: **GitHub Actions** |
 
 ## Security and privacy
 
@@ -152,7 +154,7 @@ I based it on the [Palteca method](https://palteca.com/method) (input you can un
 - Every lesson starts with a short dialogue. You listen and work it out before the English shows.
 - 5 to 9 new phrases per lesson, all on one topic, then a quick check straight away.
 - Reviews use FSRS-5, the scheduler Anki uses by default. New and missed phrases come back after 1 and 10 minutes, then at growing gaps. You pick the retention target (85, 90 or 95%).
-- Like Anki, a review day runs from 4am to 4am. A card due tomorrow is in tomorrow's session whatever time you study, not only from the minute you graded it.
+- Like Anki, a review day runs from 4am to 4am. A card due tomorrow is in tomorrow's session whatever time you study, not only from the minute you graded it. The streak and the daily limits on new lessons and reviews still turn over at midnight.
 - A card is recognised while it's new, heard once it's held for a few days, and mostly said from English once it's held for a week. Forget it and it goes back to recognition.
 - Reviews mix units, so you never get two from the same lesson in a row.
 - You say every new phrase and see word by word what was caught. Each dialogue becomes a role-play where you're B, and the lines come back later as word tiles to put in order.
