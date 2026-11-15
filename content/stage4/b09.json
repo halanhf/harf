@@ -91,25 +91,11 @@
     "her children: ʿyāl-ha msāfrīn (عيالها مسافرين)"
    ],
    [
-    "أي واحد بيسوي جي",
-    "ay wāḥid biysawwi chī",
-    "anyone would do the same",
-    "أي شخص سيفعل ذلك",
-    "also: ay wāḥid biysawwi chidhi (أي واحد بيسوي جذي)"
-   ],
-   [
     "ما حبيت أتكلم عن الموضوع",
     "ma ḥabbēt atkallam ʿan il-mawẓūʿ",
     "I didn't want to talk about it",
     "لم أرد أن أتكلم عن الموضوع",
     ""
-   ],
-   [
-    "لا تتكلم عنه",
-    "la titkallam ʿannah",
-    "don't talk about it (to a man)",
-    "لا تتكلم عنه",
-    "to a woman: la titkallamīn ʿannah (لا تتكلمين عنه)"
    ],
    [
     "ما أقول لحد",
@@ -136,7 +122,7 @@
   "culture": "A proverb is a mathal (plural amthāl). Gulf proverbs carry beliefs, habits and morals handed down from older generations. In the next few lessons you'll meet some of them: learn them for recognition, so you know what someone means when they use one.",
   "receptive": [
    0,
-   7
+   5
   ]
  },
  {
@@ -173,8 +159,8 @@
    ],
    [
     "A",
-    "يصير جذي. بس غلطة الشاطر بألف: العميل يثق في أرقامك",
-    "yṣīr chidhi. bas ghalṭat ish-shāṭir b-alf: il-ʿamīl yithig fi argāmak",
+    "يصير جي. بس غلطة الشاطر بألف: العميل يثق في أرقامك",
+    "yṣīr chī. bas ghalṭat ish-shāṭir b-alf: il-ʿamīl yithig fi argāmak",
     "These things happen. But a clever man's mistake counts for a thousand: the client trusts your figures."
    ],
    [
@@ -278,7 +264,7 @@
   "stage": 4,
   "title": "Whoever said 'huh?' heard",
   "goal": "At a karak stand, Sēf asks you for a lift to the airport at dawn; try pretending you didn't hear, then agree on your terms",
-  "tip": "min gāl hā simaʿ 'whoever said huh? heard': said, half joking, to someone who asks 'what?' to dodge a request. Recycle the question word at the end (s4u042): iṭ-ṭayyāra s-sāʿa cham? 'the flight's at what time?' and future b- for the deal: bawaddīk 'I'll take you'.",
+  "tip": "min gāl hā simaʿ 'whoever says huh? heard': said, half joking, to someone who asks 'what?' to dodge a request. The question word can go at the end: iṭ-ṭayyāra s-sāʿa cham? 'the flight's at what time?'. Recycle future b- for the deal: bawaddīk 'I'll take you'.",
   "grammar": "recycle: question word at the end; future b- for promises; a proverb for recognition",
   "dialogue": [
    [
@@ -359,20 +345,6 @@
     "to a woman: the same, twaddīni l-maṭār? (the n of twaddīn drops before -ni)"
    ],
    [
-    "الطيارة الساعة كم؟",
-    "iṭ-ṭayyāra s-sāʿa cham?",
-    "what time's the flight?",
-    "متى موعد الطائرة؟",
-    ""
-   ],
-   [
-    "هذا نص الليل",
-    "hādha nuṣṣ il-lēl",
-    "that's the middle of the night",
-    "هذا منتصف الليل",
-    ""
-   ],
-   [
     "ما أحب أقوم بدري",
     "ma aḥibb agūm badri",
     "I don't like getting up early",
@@ -438,9 +410,9 @@
    ],
    [
     "B",
-    "آها! يعني يبي ملفاتنا",
-    "āha! yaʿni yabi malaffātna",
-    "Aha! So he wants our files."
+    "آها! يعني أكيد يبي ملفاتنا",
+    "āha! yaʿni akīd yabi malaffātna",
+    "Aha! So he must want our files."
    ],
    [
     "A",
@@ -473,7 +445,7 @@
     "عزمني على كرك",
     "ʿazamni ʿala karak",
     "he treated me to a karak, he bought me a karak",
-    "دعاني إلى كوب كرك",
+    "دعاني إلى كوب شاي",
     "I treated him: ʿazamtah (عزمته)"
    ],
    [
@@ -534,9 +506,9 @@
  {
   "id": "s4u088",
   "stage": 4,
-  "title": "A beetle in his mother's eyes",
+  "title": "A monkey in his mother's eyes",
   "goal": "In the car with Sēf, hear what his uncle says about his son Rāshid's football, and understand Sēf's proverb",
-  "tip": "il-khunfus fi ʿēn ummah ghazāl 'in his mother's eye the beetle is a gazelle': people think the world of what is theirs, above all their own children. Recycle comparatives for 'the best', 'the cleverest': aḥsan lāʿib 'the best player', adhka wāḥid 'the cleverest one'.",
+  "tip": "il-gird fi ʿēn ummah ghazāl 'in his mother's eye the monkey is a gazelle': people think the world of what is theirs, above all their own children. Recycle comparatives for 'the best': aḥsan lāʿib 'the best player', aḥsan ʿyāl 'the best kids', adhka wāḥid 'the cleverest one'.",
   "grammar": "recycle: elatives (aḥsan, adhka) for 'the best'; a proverb for recognition",
   "dialogue": [
    [
@@ -565,9 +537,9 @@
    ],
    [
     "A",
-    "أكيد. الخنفس في عين أمه غزال: كل واحد يشوف عياله أحسن عيال",
-    "akīd. il-khunfus fi ʿēn ummah ghazāl: kill wāḥid yshūf ʿyālah aḥsan ʿyāl",
-    "Sure. 'In his mother's eye the beetle is a gazelle': everyone thinks their own kids are the best."
+    "يحبه. القرد في عين أمه غزال: كل واحد يشوف عياله أحسن عيال",
+    "yḥibbah. il-gird fi ʿēn ummah ghazāl: kill wāḥid yshūf ʿyālah aḥsan ʿyāl",
+    "He loves him. 'In his mother's eye the monkey is a gazelle': everyone thinks their own kids are the best."
    ],
    [
     "B",
@@ -602,11 +574,11 @@
   ],
   "items": [
    [
-    "الخنفس في عين أمه غزال",
-    "il-khunfus fi ʿēn ummah ghazāl",
-    "in his mother's eye the beetle is a gazelle (a proverb)",
     "القرد في عين أمه غزال",
-    "(recognise) people think the world of their own children and things; also with is-sibāl (السبال) 'the monkey' for il-khunfus"
+    "il-gird fi ʿēn ummah ghazāl",
+    "in his mother's eye the monkey is a gazelle (a proverb)",
+    "القرد في عين أمه غزال",
+    "(recognise) people think the world of their own children and things; an Emirati form has il-khonfos 'the beetle', or 'as-sibaal, in place of il-gird"
    ],
    [
     "شفته يلعب؟",
@@ -637,13 +609,6 @@
     "she praises him: timdaḥah (تمدحه)"
    ],
    [
-    "أذكى واحد",
-    "adhka wāḥid",
-    "the cleverest one",
-    "أذكى واحد",
-    "clever: dhaki (ذكي)"
-   ],
-   [
     "كل واحد يشوف عياله أحسن عيال",
     "kill wāḥid yshūf ʿyālah aḥsan ʿyāl",
     "everyone thinks their own kids are the best",
@@ -658,11 +623,11 @@
     "to a woman: yabi yitʿarraf ʿalēch (يبي يتعرف عليج)"
    ]
   ],
-  "culture": "The beetle proverb is Emirati, and you'll also hear it with is-sibāl 'the monkey' in place of the beetle. It's said of anything its owner values more than it's worth, and above all of the way parents, especially mothers, see their own children.",
+  "culture": "It's said of anything its owner values more than it's worth, including the way parents see their own children. Emiratis also have their own versions of the saying, with il-khonfos 'the beetle' or 'as-sibaal in place of the monkey.",
   "receptive": [
    0,
    3,
-   6
+   5
   ]
  },
  {
@@ -699,9 +664,9 @@
    ],
    [
     "A",
-    "أعرفه! أكيد قال الخنفس في عين أمه غزال. سيف دمه خفيف",
-    "aʿarfah! akīd gāl il-khunfus fi ʿēn ummah ghazāl. Sēf dammah khafīf",
-    "I know it! He'll have said 'in his mother's eye the beetle is a gazelle'. Sēf's good fun."
+    "أعرفه! أكيد قال القرد في عين أمه غزال. سيف دمه خفيف",
+    "aʿarfah! akīd gāl il-gird fi ʿēn ummah ghazāl. Sēf dammah khafīf",
+    "I know it! He'll have said 'in his mother's eye the monkey is a gazelle'. Sēf's good fun."
    ],
    [
     "B",
@@ -747,7 +712,7 @@
     "ṣaʿb afhamah",
     "hard (for me) to understand",
     "يصعب علي فهمه",
-    "about a feminine noun or plural things: ṣaʿb afhamha (صعب أفهمها)"
+    "about a feminine noun or things (pl.): ṣaʿb afhamha (صعب أفهمها); here baʿaẓha 'some of them' takes -ah"
    ],
    [
     "وراه حكمة",
@@ -825,9 +790,9 @@
    ],
    [
     "B",
-    "مشكور. بس انتو تتكلمون وايد بسرعة!",
-    "mashkūr. bas intu titkallamūn wāyid b-surʿa!",
-    "Thanks. But you all talk really fast!"
+    "مشكور. بس انتو تتكلمون وايد بسرعة، صعب أفهمكم!",
+    "mashkūr. bas intu titkallamūn wāyid b-surʿa, ṣaʿb afhamkum!",
+    "Thanks. But you all talk really fast; it's hard to understand you!"
    ],
    [
     "A",
@@ -843,9 +808,9 @@
    ],
    [
     "A",
-    "المختصر، آخر سنة في المدرسة، والامتحانات قريبة. والله ضغط!",
-    "il-mukhtaṣar, ākhir sana fi l-madrasa, w il-imtiḥānāt garība. wallāh ẓaghiṭ!",
-    "Long story short: it's my last year at school, and the exams are coming up. It's really stressful!"
+    "آخر سنة في المدرسة، والامتحانات قريبة. والله ضغط!",
+    "ākhir sana fi l-madrasa, w il-imtiḥānāt garība. wallāh ẓaghiṭ!",
+    "It's my last year at school, and the exams are coming up. It's really stressful!"
    ],
    [
     "B",
@@ -931,7 +896,7 @@
     "blīz is English 'please': fine with friends your age"
    ]
   ],
-  "culture": "Young Emiratis switch between Arabic and English all the time, more with friends and in relaxed settings, less with elders. Words like bro and LOL turn up in the middle of Arabic conversations. Keep it for people your own age: with Bū Rāshid and his guests, stay in Arabic.",
+  "culture": "Young Emiratis switch between Arabic and English a lot, more among young people and in relaxed settings, and words like bro and LOL turn up in the middle of Arabic conversations.",
   "task": "This week: search YouTube for «سوالف شباب» (young people chatting) or «يومياتي» (vlog) with «إماراتي». Within a minute you should hear شو / مب (UAE) or شنو / مو (Kuwait); if not, pick another clip. Write down three sentences where someone drops an English word into Arabic (like masij, ōkē, sōri), then say each aloud twice at the speaker's speed.",
   "receptive": [
    0
@@ -1121,9 +1086,9 @@
    ],
    [
     "A",
-    "أوكي! وبتدرب عليه مرتين قبل باكر. كفو! ثانكس برو!",
-    "ōkē! w batdarrab ʿalēh marratēn gabl bāchir. kafu! thānks brō!",
-    "OK! And I'll practise it twice before tomorrow. Good man! Thanks, bro!"
+    "أوكي! وبتدرب عليه مرتين قبل باكر، وبطرش لك على الواتساب. ثانكس برو!",
+    "ōkē! w batdarrab ʿalēh marratēn gabl bāchir, w baṭarrish-lak ʿala l-wātsāb. thānks brō!",
+    "OK! And I'll practise it twice before tomorrow, and I'll message you on WhatsApp. Thanks, bro!"
    ],
    [
     "B",
@@ -1207,7 +1172,7 @@
   "stage": 4,
   "title": "A desert trip with the gang",
   "goal": "Rāshid invites you to a weekend desert trip with his friends; ask where, who's going and what to bring",
-  "tip": "Plans for the weekend use future b-: biniṭlaʿ kashta 'we're going on a desert trip', binishwi 'we'll grill', huwa illi biysūg 'he's the one driving'. Rāshid mixes in English (il-wīkind, ōkē); his ish-shilla 'the gang' and wanāsa 'great fun' are for recognition.",
+  "tip": "Plans for the weekend use future b-: biniṭlaʿ kashta 'we're going on a desert trip', binishwi 'we'll grill', huwa illi biysūg 'he's the one driving'. Rāshid mixes in English (il-wīkind, ōkē); his ish-shilla 'the gang' is for recognition.",
   "grammar": "recycle: future b- for weekend plans; illi biy- 'the one who will'",
   "dialogue": [
    [
@@ -1271,13 +1236,13 @@
     "biniṭlaʿ kashta",
     "we're going on a desert trip, an outing",
     "سنخرج في رحلة برية",
-    "(recognise) a kashta (كشتة) is a trip out to the desert or the countryside with friends or family"
+    "a kashta (كشتة) is a trip out to the desert or the countryside with friends or family"
    ],
    [
     "الشلة",
     "ish-shilla",
     "the gang, my group of friends",
-    "الشلة",
+    "الرفاق",
     "(recognise)"
    ],
    [
@@ -1324,7 +1289,6 @@
    ]
   ],
   "receptive": [
-   0,
    1
   ]
  },
@@ -1375,7 +1339,7 @@
    [
     "A",
     "الدعا، والسوالف ويا الأهل، والمزح بعد!",
-    "id-duʿa, w is-sawālif wiyya l-ahal, w il-mazḥ baʿad!",
+    "id-duʿa, w is-sawālif wiyya l-ahal, w il-mazaḥ baʿad!",
     "Duʿa (personal prayers), chatting with the family, and joking too!"
    ],
    [
@@ -1398,13 +1362,6 @@
    ]
   ],
   "items": [
-   [
-    "ولا كلمة إنقليزي",
-    "wala kilma ingilīzi",
-    "not a single word of English",
-    "ولا كلمة إنجليزية",
-    ""
-   ],
    [
     "لاحظت",
     "lāḥaẓt",
@@ -1462,9 +1419,9 @@
     "one letter: ḥarf (حرف)"
    ]
   ],
-  "culture": "Researchers find that young Emiratis switch on purpose, not at random, and one student says some ideas come out more easily in English, others in Arabic. English dominates many university classes, but Arabic is how they talk to grandparents, pray and keep their ties to their heritage. Online, many type Arabic in English letters and numbers: Arabeezy.",
+  "culture": "Researchers find that young Emiratis switch on purpose, not at random. One student says some ideas come out more easily in English, others in Arabic, and that English dominates her classes; another says Arabic is how he speaks to his grandmother, prays and connects to tradition. Online, many type Arabic in English letters and numbers: Arabeezy.",
   "receptive": [
-   7
+   6
   ]
  },
  {
@@ -1514,7 +1471,7 @@
    [
     "A",
     "أبد! مرة قلتها بالغلط، وأبوي طالعني جي…",
-    "abad! marra giltha bil-ghalaṭ, w ubūy ṭālaʿni chī…",
+    "abad! marra gilt-ha bil-ghalaṭ, w ubūy ṭālaʿni chī…",
     "Never! Once I said it by mistake, and my dad gave me this look…"
    ],
    [
@@ -1526,7 +1483,7 @@
    [
     "A",
     "قال: هذا مجلس، مب ملعب! ومن ذاك اليوم ما قلتها",
-    "gāl: hādha majlis, mub malʿab! w min dhāk il-yōm ma giltha",
+    "gāl: hādha majlis, mub malʿab! w min dhāk il-yōm ma gilt-ha",
     "He said, 'This is a majlis, not a football pitch!' And I haven't said it since that day."
    ],
    [
@@ -1538,25 +1495,11 @@
   ],
   "items": [
    [
-    "لا تقول له برو",
-    "la tgūl-lah brō",
-    "don't call him bro (to a man)",
-    "لا تقل له يا أخي",
-    "to a woman: la tgūlīn-lah brō (لا تقولين له برو)"
-   ],
-   [
     "الضيوف الكبار",
     "iẓ-ẓyūf il-kbār",
     "the older guests",
     "الضيوف الكبار",
     "one older guest: iẓ-ẓēf il-kbīr (الضيف الكبير)"
-   ],
-   [
-    "ما تنقال",
-    "ma tingāl",
-    "it isn't said, you don't say it (of a word)",
-    "لا تقال",
-    "of a masculine noun: ma yingāl (ما ينقال)"
    ],
    [
     "قدام الشواب",
@@ -1574,7 +1517,7 @@
    ],
    [
     "قلتها بالغلط",
-    "giltha bil-ghalaṭ",
+    "gilt-ha bil-ghalaṭ",
     "I said it by mistake",
     "قلتها خطأ",
     "by mistake: bil-ghalaṭ (بالغلط)"
@@ -1603,9 +1546,9 @@
   ],
   "task": "This week: record two short voice notes saying you can't come on Friday and suggesting another day. Send the first to Rāshid: casual, with a few English words (brō, sōri, ōkē). Then say the same thing to Bū Rāshid: yā ʿammi or ṭāl ʿumrak, all in Arabic, no English. Listen back and check that the two really sound different.",
   "receptive": [
-   3,
-   6,
-   7
+   1,
+   4,
+   5
   ]
  },
  {
@@ -1613,7 +1556,7 @@
   "stage": 4,
   "title": "Checkpoint 4.7: back in the majlis",
   "goal": "Checkpoint: in Bū Rāshid's majlis, with Sēf and Rāshid there, play down how you helped Rāshid, and keep your English out of it",
-  "tip": "Review, and now you say it: ma ḥabbēt atkallam ʿan il-mawẓūʿ, min ṣijji, ma tingāl, w bas, and the future (ma bagūlha), a comparative (ashṭar minni) and wala + noun yourself. Recognise the proverbs in Bū Rāshid's lines. In front of an elder, B uses no English.",
+  "tip": "Review, and now you say it: ma ḥabbēt atkallam ʿan il-mawẓūʿ, min ṣijji, ma tingāl, w bas, the future (ma bagūlha), ashṭar minni, wala + noun, akīd, ʿumri ma and a question word at the end (gāl-lak shu?). Recognise the proverb in Bū Rāshid's line.",
   "grammar": "checkpoint 4.7 (s4u084–s4u095): proverbs for recognition, youth speech and register",
   "dialogue": [
    [
@@ -1636,9 +1579,9 @@
    ],
    [
     "B",
-    "يستاهل! تدرب عليه وايد، وما خلى ولا غلطة",
-    "yistāhil! tdarrab ʿalēh wāyid, w ma khalla wala ghalṭa",
-    "He deserves it! He practised it a lot, and he didn't leave a single mistake."
+    "يستاهل! أكيد تدرب عليه وايد، وما خلى ولا غلطة",
+    "yistāhil! akīd tdarrab ʿalēh wāyid, w ma khalla wala ghalṭa",
+    "He deserves it! He must have practised it a lot, and he didn't leave a single mistake."
    ],
    [
     "A",
@@ -1660,9 +1603,9 @@
    ],
    [
     "B",
-    "بس ويا راشد! هني عربي وبس، وما بقولها مرة ثانية",
-    "bas wiyya Rāshid! hni ʿarabi w bas, w ma bagūlha marra thānya",
-    "Only with Rāshid! In here it's Arabic only, and I won't say it again."
+    "قال لك شو؟! بس ويا راشد. هني عربي وبس، وما بقولها مرة ثانية",
+    "gāl-lak shu?! bas wiyya Rāshid. hni ʿarabi w bas, w ma bagūlha marra thānya",
+    "He told you what?! Only with Rāshid. In here it's Arabic only, and I won't say it again."
    ],
    [
     "A",
@@ -1672,9 +1615,9 @@
    ],
    [
     "B",
-    "أبد يا عمي! من صجي، ما تنقال هني",
-    "abad yā ʿammi! min ṣijji, ma tingāl hni",
-    "Never, uncle! Honestly, it's not a word for in here."
+    "أبد يا عمي! عمري ما قلتها قدامك، ومن صجي ما تنقال هني",
+    "abad yā ʿammi! ʿumri ma gilt-ha jiddāmak, w min ṣijji ma tingāl hni",
+    "Never, uncle! I've never said it in front of you, and honestly, it's not a word for in here."
    ]
   ],
   "items": [
