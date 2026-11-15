@@ -154,7 +154,7 @@ From here each lesson marks about 3 (B2) or 4 (C1) items receptive (STYLE §13),
 | s4u025–s4u028 | **Wish, want, prefer.** New: atmanna, yā rēt, afaẓẓil. Recycle: widdi, ḥabbēt | preferences and hopes | personal | — |
 | s4u029 | checkpoint 4.2 | — | — | — |
 | s4u030–s4u034 | **Diminutives** (a -ayyir / -ayya example chosen with a native, U), abu / umm uses, address, exclamatives (U). New: yā khālti, yā bū X, يا أختي yā ukhti (chunk; 113/69), yā shēkh. Recycle: yā ʿammi, أختي, صغير | addressing people of every rank; nicknames | people | bū-names, kunya conventions (U) |
-| s4u035–s4u039 | **kān / ykūn strings** (lāzim ykūn, yimkin kān); "as if"; "I think"; reciprocals; -an adverbs. New: atwaqqaʿ, taqrīban, awinna (UAE, S), kinnah / chinnah (C), baʿaẓ (C). Recycle: aẓunn, aḥiss, ṭabʿan, aṣlan | guessing, interpreting, describing impressions | conversation | — |
+| s4u035–s4u039 | **kān / ykūn strings** (lāzim ykūn, yimkin kān); "as if"; "I think"; reciprocals; -an adverbs. New: atwaqqaʿ, taqrīban, awinna (UAE, S), kinnah / chinnah (C), baʿaẓ (C). Recycle: aẓunn, aḥiss, aṣlan (ṭabʿan is not a stage 1–4 item) | guessing, interpreting, describing impressions | conversation | — |
 | s4u040–s4u043 | **Word order:** topic first with a resumptive pronoun, fronting for emphasis, question word at the end (S), agreement with non-human plurals (U) | emphasis and contrast in argument | conversation | — |
 | s4u044 | checkpoint 4.3 | — | — | — |
 | s4u045–s4u050 | recycle | agreeing, disagreeing politely, conceding (ṣaḥḥ bas…, maʿak ḥagg bas…); pros and cons | cost of living, rent | — |
