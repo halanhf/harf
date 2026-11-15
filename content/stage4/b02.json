@@ -240,11 +240,11 @@
     "(recognise)"
    ],
    [
-    "يباله شبكة أحسن",
-    "yabā-lah shabaka aḥsan",
-    "it needs a better signal",
-    "يحتاج إلى شبكة أفضل",
-    "(recognise)"
+    "في نفس الوقت",
+    "fi nafs il-wagt",
+    "at the same time",
+    "في الوقت نفسه",
+    ""
    ],
    [
     "باقي تذاكر شوي بس",
@@ -256,7 +256,6 @@
   ],
   "receptive": [
    6,
-   7,
    8
   ]
  },
@@ -404,8 +403,8 @@
   "dialogue": [
    [
     "A",
-    "سمعت؟ يقولون الشركة بتنتقل أبوظبي السنة الياية",
-    "simaʿt? ygūlūn ish-sharika bitintigil Abuẓabi s-sana l-yāya",
+    "سمعت؟ يقولون الشركة بتنتقل لأبوظبي السنة الياية",
+    "simaʿt? ygūlūn ish-sharika bitintigil l-Abuẓabi s-sana l-yāya",
     "Have you heard? They say the company's moving to Abu Dhabi next year."
    ],
    [
@@ -598,7 +597,7 @@
     "biykūnūn bidaw",
     "they'll have started (by now)",
     "سيكونون قد بدؤوا",
-    "he'll have started: biykūn bida (بيكون بدا)"
+    "he'll have started: biykūn bada (بيكون بدا)"
    ],
    [
     "المهم نوصل",
@@ -729,7 +728,7 @@
     "dawwartah fi kill makān",
     "I've looked for it (m.) everywhere",
     "بحثت عنه في كل مكان",
-    "(recognise) a feminine thing: dawwart-ha fi kill makān (دورتها في كل مكان)"
+    "(recognise) a feminine thing: dawwart-ha fi kill makān (دورتها في كل مكان); also said with ʿala, as in s3u032: dawwart ʿalēh (دورت عليه)"
    ],
    [
     "طول الوقت",
@@ -743,7 +742,7 @@
     "gabil yōmēn",
     "two days ago",
     "قبل يومين",
-    "a week ago: gabil usbūʿ (قبل أسبوع)"
+    "a week ago: gabil usbūʿ (قبل أسبوع); min yōmēn (من يومين, s2u056) can also mean 'two days ago'"
    ]
   ],
   "receptive": [
@@ -829,14 +828,14 @@
     "rudd-ha li",
     "give it (f.) back to me, pay it back (to a man)",
     "ردها لي",
-    "to a woman: ruddī-ha li (رديها لي)"
+    "to a woman: ruddīha li (رديها لي)"
    ],
    [
-    "بعطيك إياها",
-    "baʿṭīk iyyāha",
-    "I'll give it (f.) to you (to a man)",
-    "سأعطيك إياها",
-    "to a woman: baʿṭīch iyyāha (بعطيج إياها)"
+    "عشر دراهم بس",
+    "ʿashr darāhim bas",
+    "only ten dirhams, just ten dirhams",
+    "عشرة دراهم فقط",
+    "twenty dirhams: ʿishrīn dirham (عشرين درهم)"
    ],
    [
     "البطاقة ما اشتغلت",
@@ -963,14 +962,14 @@
     "illi sallaft-ha",
     "that I lent (a feminine noun or plural things); that you lent (to a man)",
     "التي أعرتها",
-    "a masculine noun: illi sallaftah (اللي سلفته); to a woman: illi sallaftī-ha (اللي سلفتيها)"
+    "a masculine noun: illi sallaftah (اللي سلفته); to a woman: illi sallaftīha (اللي سلفتيها)"
    ],
    [
     "برجعها لك",
     "barajjiʿha lak",
     "I'll give them (things) back to you, I'll give it (f.) back to you (to a man)",
     "سأرجعها لك",
-    "to a woman: barajjiʿha lich (برجعها لج)"
+    "to a woman: barajjiʿha lich (برجعها لج); without lak it's 'I'll put it back' (s3u030)"
    ],
    [
     "من شهرين",
@@ -1054,7 +1053,7 @@
    [
     "B",
     "صح، بكبرها. وباكر الصبح براويج إياه مرة ثانية",
-    "ṣaḥḥ, bakabbir-ha. w bāchir iṣ-ṣubḥ barāwīch iyyāh marra thānya",
+    "ṣaḥḥ, bakabbirha. w bāchir iṣ-ṣubḥ barāwīch iyyāh marra thānya",
     "True, I'll make them bigger. And tomorrow morning I'll show it to you again."
    ],
    [
@@ -1085,11 +1084,11 @@
     "to a man: tabi arāwīk iyyāh? (تبي أراويك إياه؟)"
    ],
    [
-    "طرشه لي",
-    "ṭarrshah li",
-    "send it (m.) to me (to a man)",
-    "أرسله لي",
-    "to a woman: ṭarrshīh li (طرشيه لي); a feminine thing: ṭarrish-ha li (طرشها لي)"
+    "العرض حق الاجتماع",
+    "il-ʿarẓ ḥagg il-ijtimāʿ",
+    "the presentation for the meeting",
+    "العرض الخاص بالاجتماع",
+    ""
    ],
    [
     "أطرشه لج",
@@ -1114,7 +1113,7 @@
    ],
    [
     "بكبرها",
-    "bakabbir-ha",
+    "bakabbirha",
     "I'll make it (f.) or them bigger",
     "سأكبرها",
     "a masculine thing: bakabbrah (بكبره)"
@@ -1127,11 +1126,11 @@
     "to a woman: illi giltah lich (اللي قلته لج); a feminine thing: illi gilt-ha lak (اللي قلتها لك)"
    ],
    [
-    "حطيته",
-    "ḥaṭṭētah",
-    "I put it (m.); you put it (to a man)",
-    "وضعته",
-    "to a woman: ḥaṭṭētīh (حطيتيه); a feminine thing: ḥaṭṭēt-ha (حطيتها)"
+    "ممتاز!",
+    "mumtāz!",
+    "excellent! great!",
+    "ممتاز",
+    "about a feminine noun: mumtāza (ممتازة)"
    ],
    [
     "آخر صفحة",
@@ -1214,9 +1213,9 @@
    [
     "وأنا صغير",
     "w ana ṣghīr",
-    "when I was little, as a child (a man says)",
+    "as a child, when I was little (after a statement) (a man says)",
     "عندما كنت صغيرًا",
-    "a woman says: w ana ṣghīra (وأنا صغيرة)"
+    "a woman says: w ana ṣghīra (وأنا صغيرة); also lamma kint ṣghīr (لما كنت صغير, s2u038)"
    ],
    [
     "أمانة عندك",
@@ -1258,7 +1257,7 @@
     "awwal ma akhallṣah",
     "as soon as I finish it (m.)",
     "حالما أنهيه",
-    "a feminine thing: awwal ma akhalliṣ-ha (أول ما أخلصها)"
+    "a feminine thing: awwal ma akhalliṣha (أول ما أخلصها)"
    ],
    [
     "الغوص",
