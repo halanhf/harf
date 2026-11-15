@@ -4,7 +4,7 @@
     "stage": 1,
     "title": "Showing your flat",
     "goal": "Show a friend round your flat and say where things go",
-    "tip": "il- means “the”. Before the sun letters t, th, d, dh, r, z, s, sh, ṣ, ṭ, ẓ, l, n it turns into that letter: ish-shigga, id-darīsha. Before the others it stays il-: il-bāb, il-maṭbakh. chī and chidhi both mean “like this”.",
+    "tip": "il- means “the”. Before the sun letters t, th, d, dh, r, z, s, sh, ṣ, ṭ, ẓ, l, n it turns into that letter: ish-shigga, id-darīsha. Before the others it stays il-: il-bāb, il-maṭbakh. After a vowel the i drops: hādhi ṣ-ṣāla. chī and chidhi both mean “like this”.",
     "grammar": "The article il- and the sun letters",
     "dialogue": [
       ["A", "ما شاء الله، الشقة حلوة!", "mā shāʼ allāh, ish-shigga ḥilwa!", "Wow, the flat's lovely!"],
@@ -37,7 +37,7 @@
       ["A", "ما شاء الله، عندك شقة يديدة؟", "mā shāʼ allāh, ʿindak shigga yidīda?", "Wow, you've got a new flat?"],
       ["B", "إي، في بناية قديمة في ديرة", "ī, fi bināya gadīma fi Dēra", "Yes, in an old building in Deira."],
       ["A", "والشقة؟ كبيرة ولا صغيرة؟", "w ish-shigga? kbīra walla ṣghīra?", "And the flat? Big or small?"],
-      ["B", "صغيرة، بس الغرفة كبيرة. ومكتبج اليديد؟", "ṣghīra, bas il-ghurfa kbīra. w maktabich il-yidīd?", "Small, but the room's big. And your new office?"],
+      ["B", "صغيرة، بس الغرفة كبيرة. ومكتبج اليديد؟", "ṣghīra, bas il-ghurfa kbīra. w maktabich il-yidīd?", "Small, but the bedroom's big. And your new office?"],
       ["A", "مكتبي حلو، بس الكرسي قديم!", "maktabi ḥilu, bas il-kursi gadīm!", "My office is nice, but the chair's old!"]
     ],
     "items": [
@@ -90,7 +90,7 @@
       ["A", "هذاك الأبيض حلو", "hādhāk il-abyaẓ ḥilu", "That white one's nice."],
       ["B", "والأسود؟", "w il-aswad?", "And the black one?"],
       ["A", "مب حلو. بس هذيك الساعة حلوة!", "mub ḥilu. bas hādhīch is-sāʿa ḥilwa!", "Not nice. But that watch over there is nice!"],
-      ["B", "إي والله، بس غالية. باخذ القميص", "ī wallāh, bas ghālya. bākhidh il-gamīṣ", "It really is, but it's expensive. I'll take the shirt."]
+      ["B", "إي والله، بس غالية. باخذ الأبيض", "ī wallāh, bas ghālya. bākhidh il-abyaẓ", "It really is, but it's expensive. I'll take the white one."]
     ],
     "items": [
       ["هذا", "hādha", "this, this one (masculine)", "هذا", "feminine: hādhi (هذي)"],
@@ -134,7 +134,7 @@
     "stage": 1,
     "title": "Checkpoint 1.1: visiting Sēf's family",
     "goal": "Visit Sēf's family home with a friend: Umm Sēf's welcome, how-are-you and thanks for a group",
-    "tip": "To two or more people, -ak and -ich become -kum: shḥālkum?, ḥayyākum allāh, ʿasākum b-khēr. Commands add -u (tfaẓẓalu), and mashkūr becomes mashkūrīn.",
+    "tip": "To two or more people, -ak and -ich become -kum: shḥālkum?, ḥayyākum allāh, ʿasākum b-khēr. Commands add -u (tfaẓẓalu), mā gaṣṣart becomes mā gaṣṣartu, and mashkūr becomes mashkūrīn.",
     "grammar": "checkpoint 1.1: group forms (-kum, -u, -īn)",
     "dialogue": [
       ["A", "هلا والله، حياكم الله! شحالكم؟ عساكم بخير؟", "hala wallāh, ḥayyākum allāh! shḥālkum? ʿasākum b-khēr?", "Hello, welcome, both of you! How are you? All well, I hope?"],
@@ -237,7 +237,7 @@
     "stage": 1,
     "title": "We went to the beach",
     "goal": "Tell Maryam where you and Sēf went and when you got back, and ask about her evening",
-    "tip": "“We” adds -na: riḥna (we went), wiṣalna (we arrived), ṭilaʿna (we went out). ma works the same: ma riḥna (we didn't go). For “Sēf and I”, Gulf puts ana first: ana w Sēf.",
+    "tip": "“We” adds -na: riḥna (we went), wiṣalna (we arrived), ṭilaʿna (we went out). ma works the same: ma riḥna (we didn't go). Where English says “Sēf and I”, Gulf speakers often put ana first: ṭilaʿna ana w Sēf.",
     "grammar": "Past tense: we -na",
     "dialogue": [
       ["A", "طلعت البارحة؟", "ṭilaʿt il-bārḥa?", "Did you go out last night?"],
@@ -252,7 +252,7 @@
       ["طلعنا", "ṭilaʿna", "we went out", "خرجنا", ""],
       ["رحنا", "riḥna", "we went", "ذهبنا", ""],
       ["وصلنا", "wiṣalna", "we arrived, we got there", "وصلنا", ""],
-      ["أول", "awwal", "first", "أول", "awwal marra = the first time"],
+      ["أول", "awwal", "first", "أول", "awwal marra = the first time; also “before, in the old days” (U)"],
       ["البحر", "il-baḥar", "the sea, the beach", "البحر", ""],
       ["متأخر", "mitʼakhkhir", "late (a man)", "متأخر", "a woman: mitʼakhkhra; a group: mitʼakhkhrīn (متأخرين); after a verb it can stay mitʼakhkhir: wiṣalna mitʼakhkhir = we got there late"],
       ["الساعة وحدة", "is-sāʿa waḥda", "one o'clock, at one", "الساعة الواحدة", "two o'clock: is-sāʿa thintēn"]
