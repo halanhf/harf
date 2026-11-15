@@ -4,8 +4,8 @@
   "stage": 1,
   "title": "Which date suits you?",
   "goal": "Agree a day, a date and a time with Maryam, your colleague, for a work meeting.",
-  "tip": "To fix a meeting, give the day or the date, then is-sāʿa and the hour, with no word for 'on' or 'at': yōm il-arbaʿa is-sāʿa tisʿ (on Wednesday at nine). A date is the plain number: siṭṭaʿash (the 16th), thamanṭaʿash iṣ-ṣubḥ (the 18th, in the morning).",
-  "grammar": "Day, date and time together: yōm il-arbaʿa, sabaʿṭaʿash, is-sāʿa tisʿ",
+  "tip": "To fix a meeting, give the day or the date, then is-sāʿa and the hour, with no word for 'on' or 'at': yōm il-arbaʿa is-sāʿa tisiʿ (on Wednesday at nine). A date is the plain number: siṭṭaʿash (the 16th), thamanṭaʿash iṣ-ṣubḥ (the 18th, in the morning).",
+  "grammar": "Day, date and time together: yōm il-arbaʿa, sabaʿṭaʿash, is-sāʿa tisiʿ",
   "dialogue": [
    [
     "A",
@@ -34,7 +34,7 @@
    [
     "A",
     "بدري، الساعة تسع وربع الصبح",
-    "badri, is-sāʿa tisʿ w rubʿ iṣ-ṣubḥ",
+    "badri, is-sāʿa tisiʿ w rubʿ iṣ-ṣubḥ",
     "Early: quarter past nine in the morning."
    ],
    [
