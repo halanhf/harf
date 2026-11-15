@@ -76,6 +76,7 @@ def main():
             for l in dl: known.update(norm(l[1]).split())
             for r in it: known.update(norm(r[0]).split())
             known.update(strip(w) for w in list(known))
+    check_translit_consistency(only, warns)
     if only is None: check_fusha(errs, warns)
     if gumar: gumar_check(only, warns)
     for m in errs: print("ERROR", m)
@@ -83,6 +84,26 @@ def main():
     total = sum(len(units_of(n)) for n in range(1, 6))
     print(f"{total} units, {len(seen_items)} phrases: {len(errs)} errors, {len(warns)} warnings")
     sys.exit(1 if errs else 0)
+
+# the same arabic word should be transliterated the same way everywhere (wiḥda in one lesson and waḥda in another
+# teaches two pronunciations). lines whose arabic and transliteration have the same number of words are aligned word by word
+def check_translit_consistency(only, warns):
+    seen = {}
+    for n in range(1, 6):
+        for src, u in units_of(n):
+            rows = [(l[1], l[2]) for l in u.get("dialogue", []) if isinstance(l, list) and len(l) == 4] + [(r[0], r[1]) for r in u.get("items", []) if isinstance(r, list) and len(r) == 5]
+            for ar, tr in rows:
+                aw = ar.replace("،", " ").replace("؟", " ").split(); tw = re.sub(r"[,.?!;:…]", " ", tr).split()
+                if len(aw) != len(tw): continue
+                for a_, t_ in zip(aw, tw):
+                    k = norm(a_); t_ = t_.lower().strip("'\"“”()")
+                    if k and t_: seen.setdefault(k, {}).setdefault(t_, set()).add(u.get("id"))
+    for k, forms in seen.items():
+        if len(forms) > 1:
+            ids = sorted({i for v in forms.values() for i in v})
+            stages = {int(i[1]) if i.startswith("s") else 1 for i in ids}
+            if only is None or only in stages:
+                warns.append(f"translit: {k} is written " + " / ".join(f"{t} ({', '.join(sorted(v)[:3])})" for t, v in forms.items()))
 
 def batches(name):  # content/<name>.json then content/<name>/*.json
     out = []; f = root / "content" / f"{name}.json"
