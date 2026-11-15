@@ -1,0 +1,1091 @@
+[
+ {
+  "id": "s3u057",
+  "stage": 3,
+  "title": "Let him come with us",
+  "goal": "Plan a Saturday trip with Sēf and say who should come along, who drives and when to leave",
+  "tip": "khalli 'let' takes the person as an ending, and the verb after it agrees: khallah yrūḥ 'let him go', khallhum yiyūn 'let them come'. To a woman add -ī-: khallīh yrūḥ. Before a name it stays khalli: khalli Fahad ysūg 'let Fahad drive'.",
+  "grammar": "khalli + object ending + present verb: 'let him / them do'",
+  "dialogue": [
+   [
+    "A",
+    "يوم السبت بنروح رأس الخيمة. تبي تيي ويانا؟",
+    "yōm is-sabt binrūḥ Rās il-Khēma. tabi tiyi wiyyāna?",
+    "We're going to Ras Al Khaimah on Saturday. Do you want to come with us?"
+   ],
+   [
+    "B",
+    "أكيد! وفهد؟ خله يروح ويانا بعد",
+    "akīd! w Fahad? khallah yrūḥ wiyyāna baʿad",
+    "Definitely! What about Fahad? Let him come with us too."
+   ],
+   [
+    "A",
+    "زين، بس سيارتي ما فيها مكان",
+    "zēn, bas sayyārti ma fīha makān",
+    "Fine, but there's no room in my car."
+   ],
+   [
+    "B",
+    "عادي، خله يسوق سيارته. يحب السواقة وايد",
+    "ʿādi, khallah ysūg sayyārtah. yḥibb is-swāga wāyid",
+    "No problem, let him drive his car. He loves driving."
+   ],
+   [
+    "A",
+    "صح. وعيال عمي يبون ييون بعد",
+    "ṣaḥḥ. w ʿyāl ʿammi yabūn yiyūn baʿad",
+    "True. And my cousins want to come too."
+   ],
+   [
+    "B",
+    "خلهم ييون! أحسن، نروح كلنا ويا بعض",
+    "khallhum yiyūn! aḥsan, nrūḥ killna wiyya baʿaẓ",
+    "Let them come! Even better, we'll all go together."
+   ],
+   [
+    "A",
+    "زين. بس خلي فهد يعرف: لازم ما يتأخر!",
+    "zēn. bas khalli Fahad yaʿarf: lāzim ma yitʼakhkhar!",
+    "OK. But make sure Fahad knows he mustn't be late!"
+   ],
+   [
+    "B",
+    "ماشي، بقول له. يلا، نشوفك السبت",
+    "māshi, bagūl-lah. yalla, nshūfak is-sabt",
+    "OK, I'll tell him. Right, see you on Saturday."
+   ]
+  ],
+  "items": [
+   [
+    "خله يروح",
+    "khallah yrūḥ",
+    "let him go, let him come along (to a man)",
+    "دعه يذهب",
+    "to a woman: khallīh yrūḥ (خليه يروح); khallah yrūḥ wiyyāna = let him come with us"
+   ],
+   [
+    "خله يسوق",
+    "khallah ysūg",
+    "let him drive (to a man)",
+    "دعه يقود",
+    "to a woman: khallīh ysūg (خليه يسوق)"
+   ],
+   [
+    "خلهم ييون",
+    "khallhum yiyūn",
+    "let them come (to a man)",
+    "دعهم يأتون",
+    "to a woman: khallīhum yiyūn (خليهم ييون)"
+   ],
+   [
+    "خلي فهد يعرف",
+    "khalli Fahad yaʿarf",
+    "make sure Fahad knows, let Fahad know (to a man)",
+    "أخبر فهد",
+    "to a woman: khallī Fahad yaʿarf; khalli + any name + verb: khalli Sēf ysūg = let Sēf drive"
+   ],
+   [
+    "يبون ييون",
+    "yabūn yiyūn",
+    "they want to come",
+    "يريدون أن يأتوا",
+    "he wants to come: yabi yiyi (يبي ييي)"
+   ],
+   [
+    "ما فيها مكان",
+    "ma fīha makān",
+    "there's no room in it (a car, a room)",
+    "ليس فيها مكان",
+    "in it (m.): ma fīh makān (ما فيه مكان)"
+   ],
+   [
+    "تبي تيي ويانا؟",
+    "tabi tiyi wiyyāna?",
+    "do you want to come with us? (to a man)",
+    "هل تريد أن تأتي معنا؟",
+    "to a woman: tabīn tiyīn wiyyāna? (تبين تيين ويانا؟)"
+   ],
+   [
+    "نروح كلنا",
+    "nrūḥ killna",
+    "we'll all go, let's all go",
+    "نذهب كلنا",
+    ""
+   ],
+   [
+    "نشوفك السبت",
+    "nshūfak is-sabt",
+    "see you on Saturday (to a man)",
+    "نراك يوم السبت",
+    "to a woman: nshūfich is-sabt (نشوفج السبت)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u058",
+  "stage": 3,
+  "title": "Don't make me go on my own",
+  "goal": "Sēf wants to skip the cinema tonight; talk him round without keeping him out late",
+  "tip": "la tkhallīni + a verb with a- means 'don't make me' or 'don't leave me': la tkhallīni arūḥ b-rūḥi 'don't make me go on my own'. About someone else: ykhallīni atrayya 'he keeps me waiting'. To a woman it's spelt the same (la tkhallīnni); to a group: la tkhallūni.",
+  "grammar": "la tkhallīni + verb: 'don't make me / don't leave me'",
+  "dialogue": [
+   [
+    "A",
+    "سامحني، ما أقدر أيي السينما الليلة. المفروض أدرس",
+    "sāmiḥni, ma agdar ayi s-sīnama l-lēla. il-mafrūẓ adris",
+    "Sorry, I can't make the cinema tonight. I'm supposed to be studying."
+   ],
+   [
+    "B",
+    "لا عاد! لا تخليني أروح بروحي",
+    "la ʿād! la tkhallīni arūḥ b-rūḥi",
+    "Oh, come on! Don't make me go on my own."
+   ],
+   [
+    "A",
+    "عيل روح ويا فهد. هو فاضي الليلة",
+    "ʿayal rūḥ wiyya Fahad. huwa fāẓi l-lēla",
+    "Then go with Fahad. He's free tonight."
+   ],
+   [
+    "B",
+    "فهد؟ كل مرة يتأخر ويخليني أتريا ساعة!",
+    "Fahad? kill marra yitʼakhkhar w ykhallīni atrayya sāʿa!",
+    "Fahad? He's late every time and keeps me waiting an hour!"
+   ],
+   [
+    "A",
+    "صح والله. زين، الفيلم الساعة كم؟",
+    "ṣaḥḥ wallāh. zēn, il-film is-sāʿa cham?",
+    "That's true. OK, what time's the film?"
+   ],
+   [
+    "B",
+    "تسع. ادرس العصر، وتعال بالليل",
+    "tisʿ. idris il-ʿaṣir, w taʿāl bil-lēl",
+    "Nine. Study this afternoon and come in the evening."
+   ],
+   [
+    "A",
+    "زين، بس لا تخليني أتأخر. لازم أنام بدري",
+    "zēn, bas la tkhallīni atʼakhkhar. lāzim anām badri",
+    "OK, but don't keep me out late. I need to get to bed early."
+   ],
+   [
+    "B",
+    "لا تخاف! بعد الفيلم، نرجع على طول",
+    "la tkhāf! baʿd il-film, nirjaʿ ʿala ṭūl",
+    "Don't worry! Straight after the film, we'll head back."
+   ]
+  ],
+  "items": [
+   [
+    "لا تخليني",
+    "la tkhallīni",
+    "don't make me, don't leave me (to a man)",
+    "لا تجعلني / لا تتركني",
+    "to a woman: la tkhallīnni (spelt the same: لا تخليني); to a group: la tkhallūni (لا تخلوني)"
+   ],
+   [
+    "لا تخليني أروح بروحي",
+    "la tkhallīni arūḥ b-rūḥi",
+    "don't make me go on my own (to a man)",
+    "لا تجعلني أذهب وحدي",
+    "to a woman: la tkhallīnni arūḥ b-rūḥi"
+   ],
+   [
+    "يخليني أتريا",
+    "ykhallīni atrayya",
+    "he keeps me waiting, he makes me wait",
+    "يجعلني أنتظر",
+    "she keeps me waiting: tkhallīni atrayya (تخليني أتريا)"
+   ],
+   [
+    "لا تخليني أتأخر",
+    "la tkhallīni atʼakhkhar",
+    "don't make me late, don't keep me out late (to a man)",
+    "لا تجعلني أتأخر",
+    "to a woman: la tkhallīnni atʼakhkhar"
+   ],
+   [
+    "ما أقدر أيي",
+    "ma agdar ayi",
+    "I can't come, I can't make it",
+    "لا أستطيع أن آتي",
+    "ma agdar ayi l-lēla = I can't make it tonight"
+   ],
+   [
+    "فاضي الليلة",
+    "fāẓi l-lēla",
+    "free tonight (a man)",
+    "متفرغ الليلة",
+    "a woman: fāẓya l-lēla (فاضية الليلة)"
+   ],
+   [
+    "الفيلم الساعة كم؟",
+    "il-film is-sāʿa cham?",
+    "what time's the film?",
+    "متى موعد الفيلم؟",
+    ""
+   ],
+   [
+    "كل مرة يتأخر",
+    "kill marra yitʼakhkhar",
+    "he's late every time",
+    "يتأخر كل مرة",
+    "she's late every time: kill marra titʼakhkhar (كل مرة تتأخر)"
+   ],
+   [
+    "نرجع على طول",
+    "nirjaʿ ʿala ṭūl",
+    "we'll come straight back, we'll head straight home",
+    "نرجع مباشرة",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s3u059",
+  "stage": 3,
+  "title": "Let him sleep, guys",
+  "goal": "At Sēf's place, Fahad wants to wake Sēf up to go out; tell the guys to let him sleep",
+  "tip": "To a group, khalli becomes khallū-: khallūh ynām 'let him sleep', khallūha 'leave it (f.)', khallūhum 'leave them'. Before -lah 'for him' the u stays long: khallū-lah warga 'leave him a note'. Other group commands end in -u too: rūḥu intu 'you go'.",
+  "grammar": "khallū- + object + verb (to a group)",
+  "dialogue": [
+   [
+    "A",
+    "سيف نايم! شنو رأيك، نصحيه؟",
+    "Sēf nāyim! shinu raʼyak, nṣaḥḥīh?",
+    "Sēf's asleep! What do you reckon, shall we wake him up?"
+   ],
+   [
+    "B",
+    "لا يا شباب، خلوه ينام. توه خلص امتحانه",
+    "la yā shabāb, khallūh ynām. tawwah khallaṣ imtiḥānah",
+    "No, guys, let him sleep. He's only just finished his exam."
+   ],
+   [
+    "A",
+    "بس إحنا بنطلع الحين، وهو قال: صحوني!",
+    "bas iḥna biniṭlaʿ il-ḥīn, w huwa gāl: ṣaḥḥūni!",
+    "But we're heading out now, and he said, \"Wake me up!\""
+   ],
+   [
+    "B",
+    "خلوه على راحته. مب لازم يطلع ويانا",
+    "khallūh ʿala rāḥtah. mub lāzim yiṭlaʿ wiyyāna",
+    "Leave him be. He doesn't have to come out with us."
+   ],
+   [
+    "A",
+    "زين، وإذا صحى وما لقانا؟",
+    "zēn, w idha ṣiḥa w ma ligāna?",
+    "OK, and if he wakes up and can't find us?"
+   ],
+   [
+    "B",
+    "خلوا له ورقة على الطاولة",
+    "khallū-lah warga ʿala ṭ-ṭāwla",
+    "Leave him a note on the table."
+   ],
+   [
+    "A",
+    "فكرة حلوة. وانت؟ ما بتيي ويانا؟",
+    "fikra ḥilwa. w inta? ma bitiyi wiyyāna?",
+    "Good idea. And you? Aren't you coming with us?"
+   ],
+   [
+    "B",
+    "لا، روحوا انتو. أنا بقعد وياه",
+    "la, rūḥu intu. ana bagʿid wiyyāh",
+    "No, you lot go. I'll stay with him."
+   ]
+  ],
+  "items": [
+   [
+    "خلوه",
+    "khallūh",
+    "leave him, let him be (to a group)",
+    "اتركوه / دعوه",
+    "to one man: khallah (خله); to one woman: khallīh (خليه)"
+   ],
+   [
+    "خلوه ينام",
+    "khallūh ynām",
+    "let him sleep (to a group)",
+    "دعوه ينام",
+    "to one man: khallah ynām (خله ينام); to one woman: khallīh ynām (خليه ينام)"
+   ],
+   [
+    "خلوه على راحته",
+    "khallūh ʿala rāḥtah",
+    "leave him be, let him do as he likes (to a group)",
+    "دعوه على راحته",
+    "to one man: khallah ʿala rāḥtah (خله على راحته); to one woman: khallīh ʿala rāḥtah"
+   ],
+   [
+    "خلوا له ورقة",
+    "khallū-lah warga",
+    "leave him a note (to a group)",
+    "اتركوا له ورقة",
+    "leave me a note: khallū-li warga (خلوا لي ورقة)"
+   ],
+   [
+    "توه خلص",
+    "tawwah khallaṣ",
+    "he's only just finished",
+    "انتهى للتو",
+    "she's only just finished: tawwha khallṣat (توها خلصت)"
+   ],
+   [
+    "إذا صحى",
+    "idha ṣiḥa",
+    "if he wakes up, when he wakes up",
+    "إذا استيقظ",
+    "if she wakes up: idha ṣiḥat (إذا صحت)"
+   ],
+   [
+    "صحوني",
+    "ṣaḥḥūni",
+    "wake me up (to a group)",
+    "أيقظوني",
+    "to one man: ṣaḥḥni (صحني); to one woman: ṣaḥḥīni (صحيني)"
+   ],
+   [
+    "روحوا انتو",
+    "rūḥu intu",
+    "you go (on), you lot go (to a group)",
+    "اذهبوا أنتم",
+    "to one man: rūḥ inta (روح انت); to one woman: rūḥi inti (روحي انتي)"
+   ],
+   [
+    "بقعد وياه",
+    "bagʿid wiyyāh",
+    "I'll stay with him",
+    "سأبقى معه",
+    "with her: bagʿid wiyyāha (بقعد وياها)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u060",
+  "stage": 3,
+  "title": "Leave it to me",
+  "goal": "Maryam is working late on a report; offer to help, suggest finishing it together tomorrow and deal with the manager",
+  "tip": "To a woman, khalli becomes khallī-: khallīni asāʿdich 'let me help you', khallīh ʿalay 'leave it (him) to me'. khallīna + a we-verb is 'let's': khallīna nkhalliṣ. No word for 'to' comes between khalli and the verb.",
+  "grammar": "khallī- + object + verb (to a woman); khallīna 'let's' (recycle)",
+  "dialogue": [
+   [
+    "B",
+    "مريم، للحين هني؟ الساعة سبع!",
+    "Maryam, lil-ḥīn hni? is-sāʿa sabʿ!",
+    "Maryam, still here? It's seven o'clock!"
+   ],
+   [
+    "A",
+    "هيه، التقرير ما خلص، والمدير يبيه الصبح",
+    "hē, it-taqrīr ma khilaṣ, w il-mudīr yabīh iṣ-ṣubḥ",
+    "Yes, the report isn't finished, and the manager wants it in the morning."
+   ],
+   [
+    "B",
+    "خليني أساعدج. عطيني الأرقام",
+    "khallīni asāʿdich. ʿaṭīni l-argām",
+    "Let me help you. Give me the figures."
+   ],
+   [
+    "A",
+    "لا، مشكور. بس الأرقام يبالها وقت وايد",
+    "la, mashkūr. bas il-argām yabā-lha wagt wāyid",
+    "No, thanks. But the figures need a lot of time."
+   ],
+   [
+    "B",
+    "عيل خلينا نخلص التقرير باكر الصبح ويا بعض",
+    "ʿayal khallīna nkhalliṣ it-taqrīr bāchir iṣ-ṣubḥ wiyya baʿaẓ",
+    "Then let's finish the report together tomorrow morning."
+   ],
+   [
+    "A",
+    "زين، بس والمدير؟ ما أبيه يزعل",
+    "zēn, bas w il-mudīr? ma abīh yizʿal",
+    "OK, but what about the manager? I don't want him to be annoyed."
+   ],
+   [
+    "B",
+    "خليه علي، أنا بكلمه. يعطيج العافية!",
+    "khallīh ʿalay, ana bakallmah. yaʿṭīch il-ʿāfya!",
+    "Leave him to me, I'll talk to him. Thanks for all your hard work!"
+   ],
+   [
+    "A",
+    "الله يعافيك. نشوفك باكر إن شاء الله",
+    "allāh yʿāfīk. nshūfak bāchir in shāʼ allāh",
+    "Thank you. See you tomorrow, God willing."
+   ]
+  ],
+  "items": [
+   [
+    "خليني أساعدج",
+    "khallīni asāʿdich",
+    "let me help you (to a woman)",
+    "دعيني أساعدك",
+    "to a man: khallni asāʿdak (خلني أساعدك)"
+   ],
+   [
+    "خليه علي",
+    "khallīh ʿalay",
+    "leave it to me, leave him to me (to a woman)",
+    "اتركيه لي",
+    "to a man: khallah ʿalay (خله علي); a feminine thing: khallīha ʿalay"
+   ],
+   [
+    "التقرير ما خلص",
+    "it-taqrīr ma khilaṣ",
+    "the report isn't finished, the report isn't done",
+    "لم ينته التقرير",
+    "khilaṣ = it's finished, it's over; khallaṣt = I finished (it)"
+   ],
+   [
+    "يبيه الصبح",
+    "yabīh iṣ-ṣubḥ",
+    "he wants it in the morning",
+    "يريده في الصباح",
+    "she wants it: tabīh (تبيه)"
+   ],
+   [
+    "باكر الصبح",
+    "bāchir iṣ-ṣubḥ",
+    "tomorrow morning",
+    "غدًا صباحًا",
+    ""
+   ],
+   [
+    "ما أبيه يزعل",
+    "ma abīh yizʿal",
+    "I don't want him to get upset, I don't want him annoyed",
+    "لا أريده أن يغضب",
+    "about a woman: ma abīha tizʿal (ما أبيها تزعل)"
+   ],
+   [
+    "عطيني",
+    "ʿaṭīni",
+    "give me (to a woman)",
+    "أعطيني",
+    "to a man: ʿaṭni (عطني)"
+   ],
+   [
+    "الأرقام يبالها وقت",
+    "il-argām yabā-lha wagt",
+    "the figures will take time, the numbers need time",
+    "الأرقام تحتاج إلى وقت",
+    ""
+   ],
+   [
+    "الساعة سبع",
+    "is-sāʿa sabʿ",
+    "it's seven o'clock; at seven",
+    "الساعة السابعة",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s3u061",
+  "stage": 3,
+  "title": "We never see you any more!",
+  "goal": "Back from a month in London, visit Bū Rāshid's majlis, apologise for staying away and catch up",
+  "tip": "ma ʿād + a verb means 'not any more': ma ʿād amshi wāyid 'I don't walk much any more'. With a past verb: ma ʿād shifnāk 'we haven't seen you since'. For 'I' you'll also hear ma ʿidt: ma ʿidt atḥammal il-bard 'I can't take the cold any more'.",
+  "grammar": "ma ʿād / ma ʿidt + verb: 'not any more'",
+  "dialogue": [
+   [
+    "A",
+    "هلا والله! وينك يا ولدي؟ ما عاد شفناك!",
+    "hala wallāh! wēnak yā wildi? ma ʿād shifnāk!",
+    "Well, hello! Where've you been, son? We haven't seen you for ages!"
+   ],
+   [
+    "B",
+    "سامحني يا عمي، كنت في لندن شهر",
+    "sāmiḥni yā ʿammi, kint fi Landan shahar",
+    "Forgive me, uncle. I was in London for a month."
+   ],
+   [
+    "A",
+    "الحمد لله على السلامة. ولندن؟ باردة؟",
+    "il-ḥamdu lillāh ʿala s-salāma. w Landan? bārda?",
+    "Welcome back. And London? Was it cold?"
+   ],
+   [
+    "B",
+    "الله يسلمك. باردة وايد! ما عدت أتحمل البرد",
+    "allāh ysallmak. bārda wāyid! ma ʿidt atḥammal il-bard",
+    "Thank you. Very cold! I can't take the cold any more."
+   ],
+   [
+    "A",
+    "صرت مثلنا يا ولدي! وأنا ما عاد أمشي وايد، ريولي تعورني",
+    "ṣirt mithilna yā wildi! w ana ma ʿād amshi wāyid, ryūli tʿawwirni",
+    "You've become like us, son! As for me, I don't walk much any more; my legs hurt."
+   ],
+   [
+    "B",
+    "سلامات يا عمي!",
+    "salāmāt yā ʿammi!",
+    "I'm sorry to hear that, uncle! I hope you feel better."
+   ],
+   [
+    "A",
+    "الله يسلمك. بس انت لا تغيب عنا مرة ثانية!",
+    "allāh ysallmak. bas inta la tghīb ʿanna marra thānya!",
+    "Thank you. But don't you stay away from us again!"
+   ],
+   [
+    "B",
+    "إن شاء الله. من اليوم بييكم كل أسبوع",
+    "in shāʼ allāh. min il-yōm bayīkum kill usbūʿ",
+    "I won't, God willing. From now on I'll come every week."
+   ]
+  ],
+  "items": [
+   [
+    "ما عاد",
+    "ma ʿād",
+    "not any more, no longer (before a verb)",
+    "لم يعد",
+    "ma ʿād amshi wāyid = I don't walk much any more; Kuwait: the same"
+   ],
+   [
+    "ما عاد شفناك",
+    "ma ʿād shifnāk",
+    "we haven't seen you for ages, you've disappeared (to a man)",
+    "لم نعد نراك",
+    "to a woman: ma ʿād shifnāch (ما عاد شفناج)"
+   ],
+   [
+    "ما عدت",
+    "ma ʿidt",
+    "I'm not … any more, I no longer",
+    "لم أعد",
+    "ma ʿād works for 'I' too: ma ʿād agdar = I can't any more"
+   ],
+   [
+    "ما عدت أتحمل البرد",
+    "ma ʿidt atḥammal il-bard",
+    "I can't take the cold any more",
+    "لم أعد أتحمل البرد",
+    "atḥammal = I bear, I put up with"
+   ],
+   [
+    "ما عاد أمشي وايد",
+    "ma ʿād amshi wāyid",
+    "I don't walk much any more",
+    "لم أعد أمشي كثيرًا",
+    ""
+   ],
+   [
+    "ريولي تعورني",
+    "ryūli tʿawwirni",
+    "my legs hurt, my feet hurt",
+    "رجلاي تؤلمانني",
+    "my head hurts: rāsi yʿawwirni (راسي يعورني)"
+   ],
+   [
+    "لا تغيب عنا",
+    "la tghīb ʿanna",
+    "don't stay away (from us) so long (to a man)",
+    "لا تغب عنا",
+    "to a woman: la tghībīn ʿanna (لا تغيبين عنا)"
+   ],
+   [
+    "بييكم",
+    "bayīkum",
+    "I'll come to you (all), I'll come and see you",
+    "سآتيكم",
+    "to one man: bayīk (بييك)"
+   ],
+   [
+    "كنت في لندن شهر",
+    "kint fi Landan shahar",
+    "I was in London for a month",
+    "كنت في لندن شهرًا",
+    "kint = I was, you were (to a man)"
+   ]
+  ],
+  "culture": "When people meet after a while, Gulf manners put the greetings first: long hellos and questions about health and family before any other news. So with an elder like Bū Rāshid, apologise for the absence, answer his questions about your family, and ask after his health in turn."
+ },
+ {
+  "id": "s3u062",
+  "stage": 3,
+  "title": "Are you still asleep?",
+  "goal": "Back in Dubai on a Saturday morning, ring Sēf, find out who's still away and plan lunch",
+  "tip": "baʿad + an ending means 'still': baʿadni 'I'm still', baʿdak 'you're still', baʿdah 'he's still'. Add a place, a participle or ma + past: baʿdak nāyim? 'are you still asleep?', baʿdah ma yā 'he still hasn't come'. lil-ḥīn means the same.",
+  "grammar": "baʿad + ending 'still': baʿadni, baʿdak, baʿdah",
+  "dialogue": [
+   [
+    "B",
+    "هلا سيف! بعدك نايم؟ الساعة عشر!",
+    "hala Sēf! baʿdak nāyim? is-sāʿa ʿashr!",
+    "Hi Sēf! Are you still asleep? It's ten o'clock!"
+   ],
+   [
+    "A",
+    "لا، صاحي. بس بعدني في الفراش",
+    "la, ṣāḥi. bas baʿadni fi l-firāsh",
+    "No, I'm awake. But I'm still in bed."
+   ],
+   [
+    "B",
+    "يلا قوم! توني راجع من لندن، ودي أشوفك",
+    "yalla gūm! tawwni rājiʿ min Landan, widdi ashūfak",
+    "Come on, get up! I've just got back from London and I want to see you."
+   ],
+   [
+    "A",
+    "الحمد لله على السلامة! بعدك تعبان من السفر؟",
+    "il-ḥamdu lillāh ʿala s-salāma! baʿdak taʿbān min is-safar?",
+    "Welcome back! Are you still tired from the trip?"
+   ],
+   [
+    "B",
+    "الله يسلمك. شوي. وفهد؟ بعده في الكويت؟",
+    "allāh ysallmak. shwayy. w Fahad? baʿdah fi l-Kwēt?",
+    "Thanks. A bit. And Fahad? Is he still in Kuwait?"
+   ],
+   [
+    "A",
+    "هيه، بعده ما يا. بيرجع يوم الاثنين",
+    "hē, baʿdah ma yā. biyirjaʿ yōm il-ithnēn",
+    "Yes, he hasn't come back yet. He'll be back on Monday."
+   ],
+   [
+    "B",
+    "زين. عيل خلنا نتغدى اليوم، أنا وانت",
+    "zēn. ʿayal khallna nitghadda l-yōm, ana w inta",
+    "OK. Then let's have lunch today, just you and me."
+   ],
+   [
+    "A",
+    "ماشي. بس عطني ساعة، بعدني ما تريقت!",
+    "māshi. bas ʿaṭni sāʿa, baʿadni ma trayyagt!",
+    "Sure. But give me an hour; I haven't even had breakfast yet!"
+   ]
+  ],
+  "items": [
+   [
+    "بعدك نايم؟",
+    "baʿdak nāyim?",
+    "are you still asleep? (to a man)",
+    "هل ما زلت نائمًا؟",
+    "to a woman: baʿdich nāyma? (بعدج نايمة؟)"
+   ],
+   [
+    "بعدني",
+    "baʿadni",
+    "I'm still",
+    "ما زلت",
+    "baʿadni fi l-firāsh = I'm still in bed; lil-ḥīn (للحين) means the same"
+   ],
+   [
+    "بعده ما يا",
+    "baʿdah ma yā",
+    "he still hasn't come, he isn't here yet",
+    "لم يأت بعد",
+    ""
+   ],
+   [
+    "بعده في الكويت",
+    "baʿdah fi l-Kwēt",
+    "he's still in Kuwait",
+    "ما زال في الكويت",
+    "baʿdah fi = he's still in (a place)"
+   ],
+   [
+    "بعدني ما تريقت",
+    "baʿadni ma trayyagt",
+    "I still haven't had breakfast",
+    "لم أفطر بعد",
+    ""
+   ],
+   [
+    "بعدك تعبان؟",
+    "baʿdak taʿbān?",
+    "are you still tired? (to a man)",
+    "هل ما زلت متعبًا؟",
+    "to a woman: baʿdich taʿbāna? (بعدج تعبانة؟)"
+   ],
+   [
+    "في الفراش",
+    "fi l-firāsh",
+    "in bed",
+    "في الفراش",
+    ""
+   ],
+   [
+    "توني راجع",
+    "tawwni rājiʿ",
+    "I've only just got back (said by a man)",
+    "عدت للتو",
+    "a woman says: tawwni rājʿa (توني راجعة)"
+   ],
+   [
+    "يلا قوم!",
+    "yalla gūm!",
+    "come on, get up! (to a man)",
+    "هيا قم!",
+    "to a woman: yalla gūmi! (يلا قومي!)"
+   ]
+  ],
+  "culture": "Since January 2022 the UAE's official weekend has been Saturday and Sunday (before that it was Friday and Saturday), so a lazy Saturday morning is normal. Friday is still the day of the big midday prayer."
+ },
+ {
+  "id": "s3u063",
+  "stage": 3,
+  "title": "How many have you got left?",
+  "goal": "Catch up with Sēf on his exams, ask what's left and plan a desert trip for when they're over",
+  "tip": "bāgi means 'left, remaining'. bāgi-li + a noun: 'I've got … left' (bāgi-li imtiḥānēn). bāgi ʿala + an event: how long until it (bāgi ʿala l-ijāza usbūʿ 'a week to go till the holidays'). ma bāgi shay 'there's nothing left'; cham bāgi? 'how long to go?'",
+  "grammar": "bāgi 'left, remaining': bāgi-li, bāgi ʿala",
+  "dialogue": [
+   [
+    "B",
+    "شو أخبار الامتحانات؟ باقي لك وايد؟",
+    "shu akhbār il-imtiḥānāt? bāgi-lak wāyid?",
+    "How are the exams going? Have you got many left?"
+   ],
+   [
+    "A",
+    "لا، باقي لي امتحانين بس، الحمد لله",
+    "la, bāgi-li imtiḥānēn bas, il-ḥamdu lillāh",
+    "No, I've only got two exams left, thank God."
+   ],
+   [
+    "B",
+    "زين! ومتى آخر امتحان؟",
+    "zēn! w mita ākhir imtiḥān?",
+    "Great! And when's the last exam?"
+   ],
+   [
+    "A",
+    "يوم الخميس. باقي على الإجازة أسبوع بس",
+    "yōm il-khamīs. bāgi ʿala l-ijāza usbūʿ bas",
+    "On Thursday. Just a week to go till the holidays."
+   ],
+   [
+    "B",
+    "وأنا خلصت المشروع في الشغل. ما باقي شي!",
+    "w ana khallaṣt il-mashrūʿ fi sh-shughul. ma bāgi shay!",
+    "And I've finished the project at work. There's nothing left!"
+   ],
+   [
+    "A",
+    "ما شاء الله! عيل خلنا نروح البر بعد الامتحانات",
+    "mā shāʼ allāh! ʿayal khallna nrūḥ il-barr baʿd il-imtiḥānāt",
+    "Great stuff! Then let's go to the desert after the exams."
+   ],
+   [
+    "B",
+    "أكيد! كم باقي على الخميس؟ ثلاث أيام؟",
+    "akīd! cham bāgi ʿala l-khamīs? thalāth ayyām?",
+    "Definitely! How long till Thursday? Three days?"
+   ],
+   [
+    "A",
+    "هيه، ثلاث أيام. بس الحين المفروض أدرس!",
+    "hē, thalāth ayyām. bas il-ḥīn il-mafrūẓ adris!",
+    "Yes, three days. But right now I'm supposed to be studying!"
+   ]
+  ],
+  "items": [
+   [
+    "باقي لك وايد؟",
+    "bāgi-lak wāyid?",
+    "have you got much left? have you got many left? (to a man)",
+    "هل بقي لك الكثير؟",
+    "to a woman: bāgi-lich wāyid? (باقي لج وايد؟)"
+   ],
+   [
+    "باقي لي",
+    "bāgi-li",
+    "I've got … left, I still have",
+    "بقي لي",
+    "bāgi-li imtiḥānēn = I've got two exams left"
+   ],
+   [
+    "باقي على",
+    "bāgi ʿala",
+    "(there's) … to go till",
+    "بقي على",
+    "bāgi ʿala l-ijāza usbūʿ = a week to go till the holidays"
+   ],
+   [
+    "ما باقي شي",
+    "ma bāgi shay",
+    "there's nothing left",
+    "لم يبق شيء",
+    ""
+   ],
+   [
+    "كم باقي على…؟",
+    "cham bāgi ʿala…?",
+    "how long till …? how long to go?",
+    "كم بقي على…؟",
+    "cham bāgi? = how much is left? how long to go?"
+   ],
+   [
+    "امتحانين",
+    "imtiḥānēn",
+    "two exams",
+    "امتحانان",
+    "one exam: imtiḥān (امتحان)"
+   ],
+   [
+    "آخر امتحان",
+    "ākhir imtiḥān",
+    "the last exam",
+    "آخر امتحان",
+    ""
+   ],
+   [
+    "بعد الامتحانات",
+    "baʿd il-imtiḥānāt",
+    "after the exams",
+    "بعد الامتحانات",
+    ""
+   ],
+   [
+    "ثلاث أيام",
+    "thalāth ayyām",
+    "three days",
+    "ثلاثة أيام",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s3u064",
+  "stage": 3,
+  "title": "I kept ringing you!",
+  "goal": "Fahad is back from Kuwait; find out why he didn't answer and what he did with his family",
+  "tip": "ẓall + a present verb means 'kept on doing': ẓallēt adigg ʿalēk 'I kept ringing you'. On its own it means 'stayed': ẓallēt wiyya ahli. It changes like any past verb: ẓall 'he', ẓallat 'she', ẓallēna 'we'. In Dubai you'll also hear tamm: tammēt.",
+  "grammar": "ẓall + present verb: 'kept on'; ẓallēt 'I stayed'",
+  "dialogue": [
+   [
+    "B",
+    "وينك يا فهد؟ ظليت أدق عليك يومين!",
+    "wēnak yā Fahad? ẓallēt adigg ʿalēk yōmēn!",
+    "Where've you been, Fahad? I kept ringing you for two days!"
+   ],
+   [
+    "A",
+    "آسف، كنت في الكويت، وتلفوني خرب",
+    "āsif, kint fi l-Kwēt, w tilifōni khirab",
+    "Sorry, I was in Kuwait, and my phone broke."
+   ],
+   [
+    "B",
+    "الحمد لله على السلامة! شو سويت هناك؟",
+    "il-ḥamdu lillāh ʿala s-salāma! shu sawwēt hnāk?",
+    "Welcome back! What did you get up to there?"
+   ],
+   [
+    "A",
+    "الله يسلمك. ظليت ويا أهلي، وأمي ظلت تطبخ كل يوم!",
+    "allāh ysallmak. ẓallēt wiyya ahli, w ummi ẓallat tiṭbakh kill yōm!",
+    "Thanks. I stayed with my family, and my mum kept cooking every day!"
+   ],
+   [
+    "B",
+    "حلو! أكيد ظليت تاكل طول اليوم",
+    "ḥilu! akīd ẓallēt tākil ṭūl il-yōm",
+    "Nice! I bet you kept eating all day."
+   ],
+   [
+    "A",
+    "إيه والله! وأبوي ظل يقول: كل بعد!",
+    "ēh wallāh! w ubūy ẓall ygūl: kil baʿad!",
+    "Yeah, honestly! And my dad kept saying, \"Have some more!\""
+   ],
+   [
+    "B",
+    "عيل ما عاد تبي غدا اليوم؟",
+    "ʿayal ma ʿād tabi ghada l-yōm?",
+    "So you don't want lunch any more today?"
+   ],
+   [
+    "A",
+    "لا لا، أبي! بس خلنا ناكل شي خفيف",
+    "la la, abi! bas khallna nākil shay khafīf",
+    "No, no, I do! But let's have something light."
+   ]
+  ],
+  "items": [
+   [
+    "ظليت",
+    "ẓallēt",
+    "I kept (on), I stayed; you kept (on) (to a man)",
+    "ظللت / بقيت",
+    "to a woman: ẓallēti (ظليتي); UAE also: tammēt (تميت)"
+   ],
+   [
+    "ظليت أدق عليك",
+    "ẓallēt adigg ʿalēk",
+    "I kept ringing you, I kept calling you (to a man)",
+    "ظللت أتصل بك",
+    "to a woman: ẓallēt adigg ʿalēch (ظليت أدق عليج)"
+   ],
+   [
+    "ظل يقول",
+    "ẓall ygūl",
+    "he kept saying",
+    "ظل يقول",
+    "she kept saying: ẓallat tgūl (ظلت تقول)"
+   ],
+   [
+    "ظلت تطبخ",
+    "ẓallat tiṭbakh",
+    "she kept cooking",
+    "ظلت تطبخ",
+    "he kept cooking: ẓall yiṭbakh (ظل يطبخ)"
+   ],
+   [
+    "ظليت ويا أهلي",
+    "ẓallēt wiyya ahli",
+    "I stayed with my family",
+    "بقيت مع أهلي",
+    ""
+   ],
+   [
+    "تلفوني خرب",
+    "tilifōni khirab",
+    "my phone broke, my phone's broken",
+    "تعطل هاتفي",
+    "a feminine thing: is-sayyāra khirbat = the car broke down"
+   ],
+   [
+    "شو سويت هناك؟",
+    "shu sawwēt hnāk?",
+    "what did you do there? what did you get up to? (to a man)",
+    "ماذا فعلت هناك؟",
+    "to a woman: shu sawwēti hnāk? (شو سويتي هناك؟)"
+   ],
+   [
+    "كل بعد",
+    "kil baʿad",
+    "have some more, eat some more (to a man)",
+    "كل المزيد",
+    "to a woman: kilī baʿad (كلي بعد)"
+   ],
+   [
+    "شي خفيف",
+    "shay khafīf",
+    "something light (to eat)",
+    "شيء خفيف",
+    ""
+   ]
+  ],
+  "culture": "Gulf hosts, and Gulf mums, keep pressing food on you: 'kil baʿad!' again and again. It shows generosity; nobody expects you to finish everything. Take a little from each dish, and thank them warmly for the food."
+ },
+ {
+  "id": "s3u065",
+  "stage": 3,
+  "title": "Checkpoint 3.4: working late",
+  "goal": "Checkpoint: Maryam and a colleague are still at the office; offer to help them finish the presentation",
+  "tip": "Group and 'we' forms of this block: baʿadkum 'you're still (all of you)', bāgi-lna 'we've got … left', la tkhallūni 'don't make me (to a group)'. ma ʿād fīni 'I've had enough, I'm worn out'. tammēt is the Dubai word for ẓallēt 'I kept on'.",
+  "grammar": "checkpoint 3.4: recycle s3u047–s3u064 (participles, obligation, khalli, still / no longer / left)",
+  "dialogue": [
+   [
+    "B",
+    "انتو بعدكم هني؟ الساعة ثمان!",
+    "intu baʿadkum hni? is-sāʿa thamān!",
+    "Are you still here? It's eight o'clock!"
+   ],
+   [
+    "A",
+    "هيه، العرض يباله شغل، وباقي لنا ساعة بس",
+    "hē, il-ʿarẓ yabā-lah shughul, w bāgi-lna sāʿa bas",
+    "Yes, the presentation needs work, and we've only got an hour left."
+   ],
+   [
+    "B",
+    "عيل خلوني أساعدكم. شو باقي؟",
+    "ʿayal khallūni asāʿidkum. shu bāgi?",
+    "Then let me help you. What's left?"
+   ],
+   [
+    "A",
+    "الأرقام بس. تميت أراجعها طول العصر، ما عاد فيني",
+    "il-argām bas. tammēt arājiʿha ṭūl il-ʿaṣir, ma ʿād fīni",
+    "Just the figures. I kept checking them all afternoon; I'm worn out."
+   ],
+   [
+    "B",
+    "عطوني الملف، أنا أخلصها. وانتو روحوا البيت",
+    "ʿaṭūni l-malaff, ana akhallṣha. w intu rūḥu l-bēt",
+    "Give me the file, I'll finish them. And you go home."
+   ],
+   [
+    "A",
+    "لا والله، ما نخليك بروحك! نخلصها ويا بعض",
+    "la wallāh, ma nkhallīk b-rūḥak! nkhallṣha wiyya baʿaẓ",
+    "No way, we won't leave you on your own! We'll finish them together."
+   ],
+   [
+    "B",
+    "زين، بس لا تخلوني أكتب الإيميل حق المدير!",
+    "zēn, bas la tkhallūni aktib il-īmēl ḥagg il-mudīr!",
+    "OK, but don't make me write the email to the manager!"
+   ],
+   [
+    "A",
+    "لا تخاف، الإيميل علي!",
+    "la tkhāf, il-īmēl ʿalay!",
+    "Don't worry, leave the email to me!"
+   ]
+  ],
+  "items": [
+   [
+    "بعدكم",
+    "baʿadkum",
+    "you're still (to a group)",
+    "ما زلتم",
+    "to one man: baʿdak (بعدك); to one woman: baʿdich (بعدج)"
+   ],
+   [
+    "باقي لنا",
+    "bāgi-lna",
+    "we've got … left, we still have",
+    "بقي لنا",
+    "bāgi-lna sāʿa = we've got an hour left"
+   ],
+   [
+    "تميت",
+    "tammēt",
+    "I kept (on), I stayed (UAE)",
+    "ظللت / بقيت",
+    "Gulf-wide: ẓallēt (ظليت); tammēt adris = I kept studying"
+   ],
+   [
+    "ما عاد فيني",
+    "ma ʿād fīni",
+    "I've had enough, I'm worn out, I can't go on",
+    "لم أعد أقدر",
+    ""
+   ],
+   [
+    "لا تخلوني",
+    "la tkhallūni",
+    "don't make me, don't leave me (to a group)",
+    "لا تجعلوني / لا تتركوني",
+    "to one man: la tkhallīni (لا تخليني)"
+   ],
+   [
+    "ما نخليك بروحك",
+    "ma nkhallīk b-rūḥak",
+    "we won't leave you on your own (to a man)",
+    "لن نتركك وحدك",
+    "to a woman: ma nkhallīch b-rūḥich (ما نخليج بروحج)"
+   ]
+  ]
+ }
+]

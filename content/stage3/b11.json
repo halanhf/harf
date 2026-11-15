@@ -15,9 +15,9 @@
    ],
    [
     "B",
-    "والله غريب! مرة من المرات، رحت مطعم في ديرة",
-    "wallāh gharīb! marra min il-marrāt, riḥt maṭʿam fi Dēra",
-    "Honestly, strange! One time, I went to a restaurant in Deira."
+    "والله كان غريب! مرة من المرات، رحت مطعم في ديرة",
+    "wallāh kān gharīb! marra min il-marrāt, riḥt maṭʿam fi Dēra",
+    "Honestly, it was strange! One time, I went to a restaurant in Deira."
    ],
    [
     "A",
@@ -29,7 +29,7 @@
     "B",
     "لما طلبت، قلت بالعربي: أبي عصير لو سمحت",
     "lamma ṭalabt, gilt bil-ʿarabi: abi ʿaṣīr law samaḥt",
-    "When I ordered, I said in Arabic: 'A juice, please.'"
+    "When I ordered, I said in Arabic: 'I'd like a juice, please.'"
    ],
    [
     "A",
@@ -121,7 +121,7 @@
     "a woman says: gāʿda atʿallam ʿarabi (قاعدة أتعلم عربي)"
    ]
   ],
-  "culture": "A story or a chat is a sālfa (سالفة), and telling one is ysōlif. Friends keep a story going with w baʿdēn? 'and then?' and wallāh? 'really?', so expect to be interrupted: it means they're listening."
+  "culture": "A story or a chat is a sālfa (سالفة), and to chat or tell one is ysōlif. Friends keep a story going with w baʿdēn? 'and then?' and wallāh? 'really?', so expect to be interrupted: it means they're listening."
  },
  {
   "id": "s3u103",
@@ -171,7 +171,7 @@
     "A",
     "يا ساتر! وكم قعدت داخل؟",
     "yā sātir! w cham gaʿadt dākhil?",
-    "Good grief! And how long were you stuck inside?"
+    "Good grief! And how long were you in there?"
    ],
    [
     "B",
@@ -231,11 +231,11 @@
     ""
    ],
    [
-    "كم قعدت؟",
-    "cham gaʿadt?",
-    "how long were you (there)? how long did you stay? (to a man)",
-    "كم بقيت؟",
-    "to a woman: cham gaʿadti? (كم قعدتي؟)"
+    "أدق الباب",
+    "adigg il-bāb",
+    "I knock on the door, I bang on the door",
+    "أطرق الباب",
+    "he knocks: ydigg il-bāb (يدق الباب)"
    ],
    [
     "تصدقين؟",
@@ -298,9 +298,9 @@
    ],
    [
     "A",
-    "صج؟! والله ضحكتني!",
-    "ṣij?! wallāh ẓaḥḥaktni!",
-    "Really?! You've really made me laugh!"
+    "صج؟! والله ضحكتني حيل!",
+    "ṣij?! wallāh ẓaḥḥaktni ḥēl!",
+    "Really?! Honestly, you've made me laugh so much!"
    ]
   ],
   "items": [
@@ -326,18 +326,11 @@
     "to a woman: ma ligēti (ما لقيتي)"
    ],
    [
-    "أفا!",
-    "afa!",
-    "oh no! (dismay, or mild reproach: 'oh, come on!')",
-    "",
-    ""
-   ],
-   [
-    "دورت عليه",
-    "dawwart ʿalēh",
-    "I looked for it (m.); you looked for it (to a man)",
-    "بحثت عنه",
-    "for a feminine thing: dawwart ʿalēha (دورت عليها)"
+    "طلع في جيبي",
+    "ṭilaʿ fi jēbi",
+    "it turned out to be in my pocket",
+    "تبين أنه في جيبي",
+    "ṭilaʿ = it (m.) turned out; ṭilʿat = it (f.) turned out"
    ],
    [
     "ساعة كاملة",
@@ -367,7 +360,8 @@
     "أضحكتني",
     "to a woman: ẓaḥḥaktīni (ضحكتيني); to a group: ẓaḥḥaktūni (ضحكتوني)"
    ]
-  ]
+  ],
+  "culture": "Fahad says ḥēl 'so much, very', where Sēf would say wāyid: ḥēl is the more Kuwaiti word, and you'll hear it from Fahad and Nūra. afa! 'oh no!' is said all over the Gulf when you hear bad news."
  },
  {
   "id": "s3u105",
@@ -397,7 +391,7 @@
    ],
    [
     "B",
-    "مسكين! وانت وقفت له؟",
+    "مسكين! وانت وقّفت له؟",
     "maskīn! w inta waggaft-lah?",
     "Poor man! And did you stop for him?"
    ],
@@ -405,7 +399,7 @@
     "A",
     "هيه، ووصلته بيته. وتدري منو طلع؟",
     "hē, w waṣṣaltah bētah. w tadri minu ṭilaʿ?",
-    "Yes, and I gave him a lift home. And guess who he turned out to be?"
+    "Yes, and I gave him a lift home. And do you know who he turned out to be?"
    ],
    [
     "B",
@@ -456,7 +450,7 @@
     "my car: sayyārti kharbāna (سيارتي خربانة)"
    ],
    [
-    "وقفت له",
+    "وقّفت له",
     "waggaft-lah",
     "I stopped for him (in the car); you stopped for him (to a man)",
     "توقفت له",
@@ -472,16 +466,16 @@
    [
     "تدري منو طلع؟",
     "tadri minu ṭilaʿ?",
-    "guess who he turned out to be? (lit. do you know who he turned out to be?) (to a man)",
+    "do you know who he turned out to be? (to a man)",
     "هل تعرف من كان؟",
     "to a woman: tadrīn minu ṭilaʿ? (تدرين منو طلع؟)"
    ],
    [
     "تتغشمر؟",
     "titghashmar?",
-    "are you kidding? are you joking? (to a man)",
+    "are you kidding? are you joking? (to a man) (friends only)",
     "هل تمزح؟",
-    "to a woman: titghashmarīn? (تتغشمرين؟); among friends"
+    "to a woman: titghashmarīn? (تتغشمرين؟); with an elder, say ṣij? or wallāh?"
    ],
    [
     "مب معقول!",
@@ -490,8 +484,7 @@
     "غير معقول",
     "Kuwait: mū maʿgūl (مو معقول)"
    ]
-  ],
-  "culture": "titghashmar? 'are you kidding?' comes from ghashmara 'joking, teasing', and is friends' talk. With an elder like Bū Rāshid, react with ṣij? 'really?' or wallāh? instead, and let him finish the story."
+  ]
  },
  {
   "id": "s3u106",
@@ -515,9 +508,9 @@
    ],
    [
     "B",
-    "مرة من المرات، جار جحا قال له: عطني حمارك",
-    "marra min il-marrāt, jār Juḥa gāl-lah: ʿaṭni ḥmārak",
-    "Once, Juḥa's neighbour said to him: 'Lend me your donkey.'"
+    "مرة من المرات، جار جحا قال له: عطني الحمار شوي",
+    "marra min il-marrāt, jār Juḥa gāl-lah: ʿaṭni l-ḥmār shwayy",
+    "Once, Juḥa's neighbour said to him: 'Lend me the donkey for a bit.'"
    ],
    [
     "A",
@@ -529,7 +522,7 @@
     "B",
     "قال: آسف، الحمار مب هني. وفجأة سمعوا صوت الحمار!",
     "gāl: āsif, il-ḥmār mub hni. w fajʼa simʿaw ṣōt il-ḥmār!",
-    "He said: 'Sorry, the donkey's not here.' And suddenly they heard the donkey!"
+    "He said: 'Sorry, the donkey's not here.' And suddenly they heard the sound of the donkey!"
    ],
    [
     "A",
@@ -573,18 +566,18 @@
     "for a masculine noun: bāyikh (بايخ)"
    ],
    [
-    "جار جحا",
-    "jār Juḥa",
-    "Juḥa's neighbour",
-    "جار جحا",
-    "my neighbour: jāri (جاري)"
+    "الجار",
+    "il-jār",
+    "the neighbour",
+    "الجار",
+    "my neighbour: jāri (جاري); our neighbour: jārna"
    ],
    [
     "الحمار",
     "il-ḥmār",
     "the donkey",
     "الحمار",
-    "his donkey: ḥmārah (حماره)"
+    "his donkey: ḥmārah (حماره); never call a person this: it's an insult"
    ],
    [
     "سمعوا صوت",
@@ -594,10 +587,10 @@
     "I heard: simaʿt (سمعت)"
    ],
    [
-    "وجحا شو قال له؟",
-    "w Juḥa shu gāl-lah?",
-    "and what did Juḥa say to him?",
-    "وماذا قال له جحا؟",
+    "شو قال له؟",
+    "shu gāl-lah?",
+    "what did he say to him?",
+    "ماذا قال له؟",
     "to her: shu gāl-lha? (شو قال لها؟)"
    ],
    [
@@ -645,21 +638,21 @@
    ],
    [
     "B",
-    "الطيارة الساعة ثمان، ولما قمت من النوم كانت الساعة ست!",
-    "iṭ-ṭayyāra s-sāʿa thamān, w lamma gimt min in-nōm kānat is-sāʿa sitt!",
-    "The flight was at eight, and when I woke up it was six!"
+    "تخيل يا عمي! لما قمت من النوم كانت الساعة ست",
+    "tkhayyal yā ʿammi! lamma gimt min in-nōm kānat is-sāʿa sitt",
+    "Just imagine, uncle! When I woke up, it was six o'clock."
    ],
    [
     "A",
-    "ست؟! وشو سويت؟",
-    "sitt?! w shu sawwēt?",
-    "Six?! And what did you do?"
+    "ست؟! والطيارة الساعة كم؟",
+    "sitt?! w iṭ-ṭayyāra s-sāʿa cham?",
+    "Six?! And what time was the flight?"
    ],
    [
     "B",
-    "خذت تاكسي، وفجأة الشارع كله زحمة!",
-    "khadht tāksi, w fajʼa ish-shāriʿ killah zaḥma!",
-    "I got a taxi, and suddenly the whole road was jammed!"
+    "ثمان! خذت تاكسي، وفجأة الشارع كله زحمة!",
+    "thamān! khadht tāksi, w fajʼa sh-shāriʿ killah zaḥma!",
+    "Eight! I got a taxi, and suddenly the whole road was jammed!"
    ],
    [
     "A",
@@ -725,11 +718,11 @@
     "he started running: gām yirkiẓ (قام يركض)"
    ],
    [
-    "طلعت متأخرة",
-    "ṭilʿat mitʼakhkhra",
-    "it (f.) turned out to be late",
-    "تبين أنها متأخرة",
-    "for a masculine noun: ṭilaʿ mitʼakhkhir (طلع متأخر)"
+    "تخيل!",
+    "tkhayyal!",
+    "(just) imagine! (to a man)",
+    "تخيل",
+    "to a woman: tkhayyali! (تخيلي)"
    ]
   ]
  },
@@ -840,20 +833,20 @@
   "stage": 3,
   "title": "B1 exit: chatting with a stranger",
   "goal": "B1 exit: at a café, an Emirati at the next table starts chatting; talk about yourself, Dubai and football without preparing",
-  "tip": "Unprepared talk runs on short answers with a reason, then a question back: bi-ṣarāḥa in-nās… w inta? To agree, say ṣidagt 'you're right, true'. shu yābak Dbayy? is 'what brought you to Dubai?'; it's friendly, not nosy.",
+  "tip": "Unprepared talk runs on short answers with a reason, then a question back: b-ṣarāḥa n-nās… w inta? To agree, say ṣidagt 'you're right, true'. shu yābak Dbayy? is 'what brought you to Dubai?'; it's friendly, not nosy.",
   "grammar": "B1 exit: unprepared conversation on a familiar topic",
   "dialogue": [
    [
     "A",
     "السلام عليكم. ما شاء الله، تتكلم عربي!",
     "as-salāmu ʿalaykum. mā shāʼ allāh, titkallam ʿarabi!",
-    "Hello. Wow, you speak Arabic!"
+    "Peace be upon you. Wow, you speak Arabic!"
    ],
    [
     "B",
     "وعليكم السلام. شوي شوي، للحين أتعلم",
     "wa ʿalaykum is-salām. shwayy shwayy, lil-ḥīn atʿallam",
-    "Hello. A little, I'm still learning."
+    "And upon you peace. A little; I'm still learning."
    ],
    [
     "A",
@@ -876,13 +869,13 @@
    [
     "B",
     "بصراحة الناس، طيبين وايد. بس الصيف حار!",
-    "bi-ṣarāḥa in-nās, ṭayybīn wāyid. bas iṣ-ṣēf ḥārr!",
+    "b-ṣarāḥa n-nās, ṭayybīn wāyid. bas iṣ-ṣēf ḥārr!",
     "Honestly, the people; they're really nice. But the summer's hot!"
    ],
    [
     "A",
     "صدقت والله! وتحب الكورة؟ تشجع أي فريق؟",
-    "ṣidagt wallāh! w tḥibb il-kōra? tshajjiʿ ay farīg?",
+    "ṣidagt wallāh! w tḥibb il-kūra? tshajjiʿ ay farīg?",
     "Too true! And do you like football? Which team do you support?"
    ],
    [
@@ -901,10 +894,10 @@
     "to a woman: shu yābich? (شو يابج؟); you'll see written جابك"
    ],
    [
-    "بصراحة",
-    "bi-ṣarāḥa",
-    "honestly, to be honest",
-    "بصراحة",
+    "للحين أتعلم",
+    "lil-ḥīn atʿallam",
+    "I'm still learning",
+    "ما زلت أتعلم",
     ""
    ],
    [
@@ -915,25 +908,25 @@
     "to a woman: ṣidagti (صدقتي)"
    ],
    [
-    "الكورة",
-    "il-kōra",
-    "football",
-    "كرة القدم",
-    ""
+    "تحب الكورة؟",
+    "tḥibb il-kūra?",
+    "do you like football? (to a man)",
+    "هل تحب كرة القدم؟",
+    "to a woman: tḥibbīn il-kūra? (تحبين الكورة؟)"
    ],
    [
-    "تشجع أي فريق؟",
-    "tshajjiʿ ay farīg?",
-    "which team do you support? (to a man)",
-    "أي فريق تشجع؟",
-    "to a woman: tshajjʿīn ay farīg? (تشجعين أي فريق؟)"
+    "فريق",
+    "farīg",
+    "a team",
+    "فريق",
+    "not il-firīj 'the neighbourhood'"
    ],
    [
     "أشجع",
     "ashajjiʿ",
     "I support (a team)",
     "أشجع",
-    ""
+    "you support: tshajjiʿ (تشجع) to a man, tshajjʿīn (تشجعين) to a woman"
    ]
   ]
  },
@@ -949,13 +942,13 @@
     "A",
     "تدري إن اليوم صار لك سنة ويانا؟",
     "tadri inn il-yōm ṣār-lak sana wiyyāna?",
-    "Did you know it's a year today since you joined us?"
+    "Did you know you've been with us a year today?"
    ],
    [
     "B",
     "سنة؟! والله ما حسيت. تذكرين أول يوم لي؟",
     "sana?! wallāh ma ḥassēt. tidhkrīn awwal yōm li?",
-    "A year?! Honestly, I hadn't noticed. Do you remember my first day?"
+    "A year?! Honestly, it doesn't feel like it. Do you remember my first day?"
    ],
    [
     "A",
@@ -979,7 +972,7 @@
     "B",
     "هيه! وفجأة المدير قال لي: تكلم عن نفسك بالعربي!",
     "hē! w fajʼa l-mudīr gāl-li: tkallam ʿan nafsak bil-ʿarabi!",
-    "Yes! And suddenly the manager said to me: 'Tell us about yourself in Arabic!'"
+    "Yes! And suddenly the manager said to me: 'Talk about yourself in Arabic!'"
    ],
    [
     "A",
