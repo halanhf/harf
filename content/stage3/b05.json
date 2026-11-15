@@ -326,11 +326,11 @@
     "niḥin mitʿawwdīn = we're used to it"
    ],
    [
-    "كل شي بالليل",
-    "kill shay bil-lēl",
-    "everything happens at night",
-    "كل شيء في الليل",
-    ""
+    "الشمس",
+    "ish-shams",
+    "the sun",
+    "الشمس",
+    "fi sh-shams = in the sun"
    ],
    [
     "هالحر",
@@ -731,11 +731,11 @@
     "one number: ragam (رقم)"
    ],
    [
-    "أكتب الإيميل",
-    "aktib il-īmēl",
-    "I write the email, I'll write the email",
-    "أكتب البريد الإلكتروني",
-    "you write: tiktib (تكتب); I wrote: kitabt"
+    "الإيميل حق المدير",
+    "il-īmēl ḥagg il-mudīr",
+    "the email to the manager",
+    "البريد الإلكتروني للمدير",
+    ""
    ]
   ]
  },
@@ -833,18 +833,18 @@
     "he's invited me: ʿāzimni (عازمني)"
    ],
    [
-    "لازم أييب شي؟",
-    "lāzim ayīb shay?",
-    "do I need to bring anything?",
-    "هل يجب أن أحضر شيئًا؟",
-    ""
+    "البس شي محترم",
+    "ilbas shay miḥtaram",
+    "wear something smart (to a man)",
+    "البس شيئًا محترمًا",
+    "to a woman: ilbasi shay miḥtaram (البسي شي محترم)"
    ],
    [
-    "شي محترم",
-    "shay miḥtaram",
-    "something smart, something decent (to wear)",
-    "شيء محترم",
-    "miḥtaram = respectable, decent: rayyāl miḥtaram = a decent man"
+    "محترم",
+    "miḥtaram",
+    "respectable, decent; smart (clothes)",
+    "محترم",
+    "with a feminine noun: miḥtarama (محترمة); rayyāl miḥtaram = a decent man"
    ],
    [
     "التأخير",
@@ -1195,7 +1195,7 @@
     "yabā-li",
     "I need",
     "أحتاج إلى",
-    "you need: yabā-lak (to a man), yabā-lich (to a woman) (يبالج)"
+    "we need: yabā-lna (يبالنا)"
    ],
    [
     "ما يباله",
@@ -1226,11 +1226,11 @@
     "X ʿalay = leave X to me, I'll take care of X"
    ],
    [
-    "يومين بس",
-    "yōmēn bas",
-    "just two days",
-    "يومان فقط",
-    ""
+    "يبالك",
+    "yabā-lak",
+    "you need (to a man)",
+    "تحتاج إلى",
+    "to a woman: yabā-lich (يبالج); shu yabā-lak? = what do you need?"
    ]
   ]
  }
