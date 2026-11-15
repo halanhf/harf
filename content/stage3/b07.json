@@ -152,7 +152,7 @@
     "B",
     "لا، هذاك اللي تعشينا فيه ويا الشباب الأسبوع اللي طاف",
     "la, hādhāk illi tʿashshēna fīh wiyya sh-shabāb il-usbūʿ illi ṭāf",
-    "No, the one we had dinner at with the guys last week."
+    "No, the one the guys and I had dinner at last week."
    ],
    [
     "A",
@@ -184,7 +184,7 @@
     "اللي قلت لج عنه",
     "illi gilt-lich ʿannah",
     "(the one) I told you about (to a woman)",
-    "الذي حدثتك عنه",
+    "الذي حدثتكِ عنه",
     "to a man: illi gilt-lak ʿannah (اللي قلت لك عنه); about a feminine noun: ʿanha"
    ],
    [
@@ -736,14 +736,14 @@
     ""
    ]
   ],
-  "culture": "On the first night of Ramadan, the family usually gathers for iftar at the house of the head of the family, often the grandfather. Two weeks before Ramadan, on the night of 15 Shaʿbān, Emirati children celebrate ḥagg il-lēla: after maghrib they go from house to house in traditional clothes, carrying woven bags and singing, and neighbours give them sweets and nuts."
+  "culture": "Two weeks before Ramadan, on the night of 15 Shaʿbān, Emirati children celebrate ḥagg il-lēla: after maghrib they go from house to house in traditional clothes, carrying woven bags and singing, and neighbours give them sweets and nuts."
  },
  {
   "id": "s3u072",
   "stage": 3,
   "title": "Iftar at the majlis",
   "goal": "Break the fast at Bū Rāshid's majlis with the right greetings and replies",
-  "tip": "Each greeting has its reply: ramaẓān karīm → allāhu akram; ḥayyāk allāh → allāh yḥayyīk; mā gaṣṣart → mā sawwēna shay; tagabbal allāh → minna w minkum. Say bismillāh before the first date. illi again: il-harīs illi tḥibbah 'the harees you like'.",
+  "tip": "Each formula has its reply: ramaẓān karīm → allāhu akram; ḥayyāk allāh → allāh yḥayyīk; mā gaṣṣart → mā sawwēna shay; tagabbal allāh → minna w minkum. Say bismillāh before the first date. illi again: il-harīs illi tḥibbah 'the harees you like'.",
   "grammar": "recycle: illi and the Ramadan replies",
   "dialogue": [
    [
@@ -853,7 +853,7 @@
     ""
    ]
   ],
-  "culture": "The fast is broken with dates and laban (buttermilk), and harees and thareed are common iftar dishes. Later in the evening, after the ʿishāʼ prayer, come the tarawih prayers, every night of Ramadan."
+  "culture": "The fast is broken with dates and laban (buttermilk) or water, and harees and thareed are common iftar dishes. Later in the evening, after the ʿishāʼ prayer, come the tarawih prayers, every night of Ramadan."
  },
  {
   "id": "s3u073",
@@ -895,21 +895,21 @@
    ],
    [
     "B",
-    "إن شاء الله. وعيال عمك الصغار، أعطيهم عيدية؟",
-    "in shāʼ allāh. w ʿyāl ʿammak iṣ-ṣghār, aʿṭīhum ʿīdiyya?",
-    "Sure. And your little cousins, should I give them Eid money?"
+    "إن شاء الله. وعيال عمك الصغار هناك بعد؟",
+    "in shāʼ allāh. w ʿyāl ʿammak iṣ-ṣghār hnāk baʿad?",
+    "Sure. And are your little cousins there too?"
    ],
    [
     "A",
-    "إذا تبي، بس مب لازم. أكيد بيستانسون!",
-    "idha tabi, bas mub lāzim. akīd biyistānsūn!",
-    "If you like, but you don't have to. They'll love it, for sure!"
+    "هيه، وعمي بو راشد يعطيهم عيدية. بيستانسون!",
+    "hē, w ʿammi Bū Rāshid yaʿṭīhum ʿīdiyya. biyistānsūn!",
+    "Yes, and my uncle Bū Rāshid gives them Eid money. They'll love it!"
    ],
    [
     "B",
-    "زين، بعطي كل واحد عشرين درهم",
-    "zēn, baʿṭi kill wāḥid ʿishrīn dirham",
-    "OK, I'll give each of them twenty dirhams."
+    "حلو! يلا، بكون عندكم الساعة وحدة",
+    "ḥilu! yalla, bakūn ʿindkum is-sāʿa waḥda",
+    "Great! Right, I'll be at yours at one."
    ]
   ],
   "items": [
@@ -925,7 +925,7 @@
     "min il-ʿāydīn w il-fāyzīn",
     "and to you (a common reply to ʿīdak mubārak)",
     "من العائدين والفائزين",
-    "lit. among those who return (to it) and win; also said on its own as an Eid wish"
+    "lit. among those who return (to it) and win; also said on its own as an Eid wish, and then answered with the same words"
    ],
    [
     "صليت العيد؟",
@@ -944,16 +944,16 @@
    [
     "عيدية",
     "ʿīdiyya",
-    "Eid money (given to children)",
+    "Eid money (given to children by older relatives)",
     "عيدية",
     ""
    ],
    [
-    "أعطيهم",
-    "aʿṭīhum",
-    "I give them; shall I give them?",
-    "أعطيهم",
-    "I give him: aʿṭīh (أعطيه)"
+    "يعطيهم عيدية",
+    "yaʿṭīhum ʿīdiyya",
+    "he gives them Eid money",
+    "يعطيهم عيدية",
+    "I give them: aʿṭīhum (أعطيهم)"
    ],
    [
     "بيستانسون",
@@ -963,11 +963,11 @@
     "he'll love it: biyistānis (بيستانس)"
    ],
    [
-    "بعطي",
-    "baʿṭi",
-    "I'll give",
-    "سأعطي",
-    ""
+    "عيال عمك الصغار",
+    "ʿyāl ʿammak iṣ-ṣghār",
+    "your little cousins (to a man)",
+    "أبناء عمك الصغار",
+    "to a woman: ʿyāl ʿammich iṣ-ṣghār (عيال عمج الصغار)"
    ],
    [
     "تعال البيت",
@@ -977,7 +977,7 @@
     "to a woman: taʿāli l-bēt (تعالي البيت)"
    ]
   ],
-  "culture": "Eid al-Fitr starts with the Eid prayer, usually shortly after sunrise. Families then have breakfast together and go round visiting relatives and friends, where guests get Arabic coffee and dates and sweets such as luqaimat. Many people wear something new, and children get ʿīdiyya, a little money from parents, grandparents and older relatives."
+  "culture": "The day of Eid al-Fitr starts with the Eid prayer, usually shortly after sunrise. Families then have breakfast together and go round visiting relatives and friends, where guests get Arabic coffee and dates and sweets such as luqaimat. Many people wear something new, and children get ʿīdiyya, a little money from parents, grandparents and older relatives."
  },
  {
   "id": "s3u074",
@@ -1213,16 +1213,16 @@
    [
     "الله يصبركم",
     "allāh yṣabbirkum",
-    "may God give you (all) patience",
+    "may God give you patience (to a group)",
     "صبركم الله",
     "to one man: allāh yṣabbrak (الله يصبرك); to one woman: allāh yṣabbrich; the reply is āmīn"
    ],
    [
     "ودي أييكم",
     "widdi ayīkum",
-    "I'd like to come and see you (all)",
+    "I'd like to come and see you (to a group)",
     "أود أن آتي إليكم",
-    ""
+    "to one man: widdi ayīk (ودي أييك); to one woman: widdi ayīch (ودي أييج)"
    ]
   ]
  },
@@ -1231,7 +1231,7 @@
   "stage": 3,
   "title": "At the ʿazā",
   "goal": "Give your condolences to Bū Rāshid at the family's ʿazā, sit a while and take your leave",
-  "tip": "At the ʿazā, say ʿaẓẓam allāh ajrakum to the family. As you leave they may thank you with jazāk allāh khēr 'God reward you'; answer w iyyāk 'and you too'. kān + a present verb means 'used to': kān ysāʿid il-kill 'he used to help everyone'.",
+  "tip": "At the ʿazā, say ʿaẓẓam allāh ajrakum to the family. When you leave, thank them with jazāk allāh khēr 'God reward you'; the answer is w iyyāk 'and you too'. kān + a present verb means 'used to': kān ysāʿid il-kill 'he used to help everyone'.",
   "grammar": "recycle: kān + present verb 'used to', reported speech, headless illi",
   "dialogue": [
    [
@@ -1260,37 +1260,31 @@
    ],
    [
     "B",
-    "عن إذنك يا عمي، لازم أمشي. الله يصبركم",
-    "ʿan idhnak yā ʿammi, lāzim amshi. allāh yṣabbirkum",
-    "Excuse me, uncle, I have to go. May God give you all patience."
+    "عن إذنك يا عمي، لازم أمشي. الله يصبركم، وجزاك الله خير",
+    "ʿan idhnak yā ʿammi, lāzim amshi. allāh yṣabbirkum, w jazāk allāh khēr",
+    "Excuse me, uncle, I have to go. May God give you all patience, and thank you (lit. God reward you)."
    ],
    [
     "A",
-    "آمين. جزاك الله خير يا ولدي، الله يحفظك",
-    "āmīn. jazāk allāh khēr yā wildi, allāh yiḥfaẓak",
-    "Amen. God reward you (for coming), son. God keep you."
-   ],
-   [
-    "B",
-    "وإياك يا عمي",
-    "w iyyāk yā ʿammi",
-    "And you too, uncle."
+    "آمين، وإياك يا ولدي. الله يحفظك",
+    "āmīn, w iyyāk yā wildi. allāh yiḥfaẓak",
+    "Amen, and you too, son. God keep you."
    ]
   ],
   "items": [
    [
     "جزاك الله خير",
     "jazāk allāh khēr",
-    "God reward you (thanks for a good deed) (to a man)",
+    "God reward you, thank you (for kindness or a good deed) (to a man)",
     "جزاك الله خيرًا",
-    "said e.g. to someone who came to an ʿazā; to a woman: jazāch allāh khēr; UAE also: yzāk allāh khēr (يزاك الله خير); Kuwait: maʼjūr (مأجور); the reply is w iyyāk"
+    "to a woman: jazāch allāh khēr (UAE: yzāch, يزاج الله خير); to a group: jazākum allāh khēr; UAE also: yzāk allāh khēr (يزاك الله خير); Kuwait also: maʼjūr (مأجور); the reply to jazāk allāh khēr is w iyyāk"
    ],
    [
     "وإياك",
     "w iyyāk",
     "and you too (the reply to jazāk allāh khēr) (to a man)",
     "وإياك",
-    "also answers other blessings; to a woman: w iyyāch (وإياج); to a group: w iyyākum (وإياكم)"
+    "to a woman: w iyyāch (وإياج); to a group: w iyyākum (وإياكم); also answers other blessings"
    ],
    [
     "تفضل اقعد",
