@@ -1,0 +1,715 @@
+[
+ {
+  "id": "s3u096",
+  "stage": 3,
+  "title": "I fell on my hand",
+  "goal": "Playing football with Sēf, you fall on your hand: say what hurts, then let him take you to A&E",
+  "tip": "ṭāḥ 'he fell' gives ṭiḥt 'I fell', as rāḥ gives riḥt. A hand is feminine, so its verb and participle are feminine too: īdi tʿawwirni 'my hand hurts', maksūra 'broken'. A head is masculine: rāsi yʿawwirni.",
+  "grammar": "recycle: hollow-verb past (ṭiḥt) and a feminine body part (īdi tʿawwirni, maksūra)",
+  "dialogue": [
+   [
+    "A",
+    "شفيك؟ طحت؟",
+    "shfīk? ṭiḥt?",
+    "What's wrong? Did you fall?"
+   ],
+   [
+    "B",
+    "هيه، طحت. إيدي تعورني وايد",
+    "hē, ṭiḥt. īdi tʿawwirni wāyid",
+    "Yes, I fell. My hand really hurts."
+   ],
+   [
+    "A",
+    "سلامات! تقدر تحركها؟",
+    "salāmāt! tigdar tḥarrik-ha?",
+    "Oh no! Can you move it?"
+   ],
+   [
+    "B",
+    "الله يسلمك. شوي بس. يمكن مكسورة؟",
+    "allāh ysallmak. shwayy bas. yimkin maksūra?",
+    "Thanks. Only a little. Could it be broken?"
+   ],
+   [
+    "A",
+    "إن شاء الله مب مكسورة، بس لازم نروح الطوارئ",
+    "in shāʼ allāh mub maksūra, bas lāzim nrūḥ iṭ-ṭawāriʼ",
+    "Hopefully it isn't broken, but we have to go to A&E."
+   ],
+   [
+    "B",
+    "مب لازم! بحط عليها ثلج وبرتاح",
+    "mub lāzim! baḥuṭṭ ʿalēha thalj w bartāḥ",
+    "There's no need! I'll put ice on it and rest."
+   ],
+   [
+    "A",
+    "لا والله. لازم يسوون لك أشعة، يمكن شي خطير",
+    "la wallāh. lāzim ysawwūn-lak ashiʿʿa, yimkin shay khaṭīr",
+    "No way. They have to do an X-ray on you. It could be something serious."
+   ],
+   [
+    "B",
+    "زين، يلا. بس سوق شوي شوي!",
+    "zēn, yalla. bas sūg shwayy shwayy!",
+    "OK, let's go. But drive slowly!"
+   ]
+  ],
+  "items": [
+   [
+    "طحت",
+    "ṭiḥt",
+    "I fell; you fell (to a man)",
+    "سقطت",
+    "to a woman: ṭiḥti (طحتي); he fell: ṭāḥ (طاح)"
+   ],
+   [
+    "إيدي تعورني",
+    "īdi tʿawwirni",
+    "my hand hurts",
+    "يدي تؤلمني",
+    "a hand, an eye or an ear takes tʿawwirni; a masculine part takes yʿawwirni: rāsi yʿawwirni"
+   ],
+   [
+    "تقدر تحركها؟",
+    "tigdar tḥarrik-ha?",
+    "can you move it (f.)? (to a man)",
+    "هل تستطيع تحريكها؟",
+    "to a woman: tigdarīn tḥarrkīn-ha? (تقدرين تحركينها؟); a masculine thing: tigdar tḥarrikah?"
+   ],
+   [
+    "مكسورة",
+    "maksūra",
+    "broken (a feminine thing, such as a hand)",
+    "مكسورة",
+    "a masculine thing: maksūr (مكسور); inkisar = it broke"
+   ],
+   [
+    "الطوارئ",
+    "iṭ-ṭawāriʼ",
+    "A&E, the emergency department",
+    "قسم الطوارئ",
+    "in full: gism iṭ-ṭawāriʼ (قسم الطوارئ)"
+   ],
+   [
+    "ثلج",
+    "thalj",
+    "ice",
+    "ثلج",
+    ""
+   ],
+   [
+    "أشعة",
+    "ashiʿʿa",
+    "an X-ray",
+    "أشعة سينية",
+    "ysawwūn-lak ashiʿʿa = they do an X-ray on you (to a man)"
+   ],
+   [
+    "شي خطير",
+    "shay khaṭīr",
+    "something serious",
+    "شيء خطير",
+    "not serious: mub khaṭīr (مب خطير)"
+   ],
+   [
+    "سوق شوي شوي",
+    "sūg shwayy shwayy",
+    "drive slowly (to a man)",
+    "قد ببطء",
+    "to a woman: sūgi shwayy shwayy (سوقي شوي شوي)"
+   ]
+  ],
+  "culture": "Visiting the sick (ʿiyādat il-marīẓ) is a recommended act in Islam. When you hear that someone is ill or hurt, call or visit, and say salāmāt or ma tshūf shar. The answer is allāh ysallmak (to a woman: allāh ysallmich)."
+ },
+ {
+  "id": "s3u097",
+  "stage": 3,
+  "title": "At the A&E desk",
+  "goal": "At the A&E desk, tell the receptionist (a woman) what happened, show your insurance card and ask about the wait",
+  "tip": "The future is b- + the present verb for every person: bitnādīk 'she'll call you', biyshūfak 'he'll see you', batrayya 'I'll wait'. For 'if it gets worse', use idha + past: idha ṣārat akhass, bagūl-lich 'if it gets worse, I'll tell you'.",
+  "grammar": "recycle: future b- for I, he and she (batrayya, biyshūfak, bitnādīk); idha + past",
+  "dialogue": [
+   [
+    "B",
+    "السلام عليكم. طحت على إيدي، وتعورني وايد",
+    "as-salāmu ʿalaykum. ṭiḥt ʿala īdi, w tʿawwirni wāyid",
+    "Hello. I fell on my hand, and it really hurts."
+   ],
+   [
+    "A",
+    "وعليكم السلام. سلامات! عندك تأمين؟",
+    "wa ʿalaykum is-salām. salāmāt! ʿindak taʼmīn?",
+    "Hello. Oh dear! Have you got insurance?"
+   ],
+   [
+    "B",
+    "الله يسلمج. هيه، هذي بطاقة التأمين",
+    "allāh ysallmich. hē, hādhi biṭāgat it-taʼmīn",
+    "Thank you. Yes, this is the insurance card."
+   ],
+   [
+    "A",
+    "زين. اقعد هناك، والممرضة بتناديك",
+    "zēn. igʿid hnāk, w il-mumarriẓa bitnādīk",
+    "OK. Sit over there, and the nurse will call you."
+   ],
+   [
+    "B",
+    "بتريا وايد؟",
+    "batrayya wāyid?",
+    "Will I be waiting long?"
+   ],
+   [
+    "A",
+    "ما أدري. الحين في وايد ناس، يمكن ساعة",
+    "ma adri. il-ḥīn fī wāyid nās, yimkin sāʿa",
+    "I don't know. There are a lot of people now, maybe an hour."
+   ],
+   [
+    "B",
+    "زين. بس إذا صارت أخس، بقول لج",
+    "zēn. bas idha ṣārat akhass, bagūl-lich",
+    "OK. But if it gets worse, I'll tell you."
+   ],
+   [
+    "A",
+    "أكيد. والدكتور بيشوفك أول ما يفضى",
+    "akīd. w id-daktōr biyshūfak awwal ma yifẓa",
+    "Of course. And the doctor will see you as soon as he's free."
+   ]
+  ],
+  "items": [
+   [
+    "عندك تأمين؟",
+    "ʿindak taʼmīn?",
+    "have you got insurance? (to a man)",
+    "هل لديك تأمين؟",
+    "to a woman: ʿindich taʼmīn? (عندج تأمين؟)"
+   ],
+   [
+    "بطاقة التأمين",
+    "biṭāgat it-taʼmīn",
+    "the insurance card",
+    "بطاقة التأمين",
+    ""
+   ],
+   [
+    "الممرضة",
+    "il-mumarriẓa",
+    "the nurse (a woman)",
+    "الممرضة",
+    "a man: il-mumarriẓ (الممرض)"
+   ],
+   [
+    "بتناديك",
+    "bitnādīk",
+    "she'll call you (by name) (to a man)",
+    "ستناديك",
+    "to a woman: bitnādīch (بتناديج); he'll call you: biynādīk (بيناديك)"
+   ],
+   [
+    "بتريا وايد؟",
+    "batrayya wāyid?",
+    "will I be waiting long? (UAE)",
+    "هل سأنتظر طويلًا؟",
+    ""
+   ],
+   [
+    "في وايد ناس",
+    "fī wāyid nās",
+    "there are a lot of people",
+    "يوجد كثير من الناس",
+    "Kuwait: aku wāyid nās (أكو وايد ناس)"
+   ],
+   [
+    "صارت أخس",
+    "ṣārat akhass",
+    "it (f.) got worse",
+    "ساءت",
+    "a masculine thing: ṣār akhass (صار أخس)"
+   ],
+   [
+    "بيشوفك",
+    "biyshūfak",
+    "he'll see you (to a man)",
+    "سيراك",
+    "to a woman: biyshūfich (بيشوفج)"
+   ],
+   [
+    "أول ما يفضى",
+    "awwal ma yifẓa",
+    "as soon as he's free",
+    "حالما يتفرغ",
+    "about a woman: awwal ma tifẓa (أول ما تفضى)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u098",
+  "stage": 3,
+  "title": "Did the insurance cover it?",
+  "goal": "Back at the office, tell Maryam what the doctor said and what the insurance did and didn't cover",
+  "tip": "ghaṭṭa 'it covered' is Form II, like sawwa: present yghaṭṭi. Pass on what the doctor said with gāl inn-: gāl innha mub maksūra 'he said it isn't broken'. Ask with idha 'whether': isʼalhum idha… 'ask them whether…'.",
+  "grammar": "recycle: reported speech (gāl innha), idha 'whether' and Form II (ghaṭṭa)",
+  "dialogue": [
+   [
+    "A",
+    "صباح الخير! شو صار في إيدك؟",
+    "ṣabāḥ il-khēr! shu ṣār fi īdak?",
+    "Good morning! What happened to your hand?"
+   ],
+   [
+    "B",
+    "صباح النور. طحت وانا ألعب كورة",
+    "ṣabāḥ in-nūr. ṭiḥt w ana alʿab kūra",
+    "Morning. I fell while I was playing football."
+   ],
+   [
+    "A",
+    "ما تشوف شر! مكسورة؟",
+    "ma tshūf shar! maksūra?",
+    "I hope it's nothing serious! Is it broken?"
+   ],
+   [
+    "B",
+    "الله يسلمج. لا، الدكتور قال إنها مب مكسورة",
+    "allāh ysallmich. la, id-daktōr gāl innha mub maksūra",
+    "Thank you. No, the doctor said it isn't broken."
+   ],
+   [
+    "A",
+    "الحمد لله. والتأمين غطى العلاج؟",
+    "il-ḥamdu lillāh. w it-taʼmīn ghaṭṭa l-ʿilāj?",
+    "Thank God. And did the insurance cover the treatment?"
+   ],
+   [
+    "B",
+    "غطى الأشعة، بس الدوا دفعته من جيبي",
+    "ghaṭṭa l-ashiʿʿa, bas id-dawa difaʿtah min jēbi",
+    "It covered the X-ray, but I paid for the medicine out of my own pocket."
+   ],
+   [
+    "A",
+    "غريبة! دق عليهم واسألهم إذا بيرجعون لك الفلوس",
+    "gharība! digg ʿalēhum w isʼalhum idha biyrajjʿūn-lak il-flūs",
+    "That's odd! Ring them and ask them whether they'll give you the money back."
+   ],
+   [
+    "B",
+    "زين، بدق على شركة التأمين بعد الاجتماع",
+    "zēn, badigg ʿala sharikat it-taʼmīn baʿd il-ijtimāʿ",
+    "OK, I'll ring the insurance company after the meeting."
+   ]
+  ],
+  "items": [
+   [
+    "شو صار في إيدك؟",
+    "shu ṣār fi īdak?",
+    "what happened to your hand? (to a man)",
+    "ماذا حدث ليدك؟",
+    "to a woman: shu ṣār fi īdich? (شو صار في إيدج؟)"
+   ],
+   [
+    "وانا ألعب كورة",
+    "w ana alʿab kūra",
+    "while I was playing football",
+    "بينما كنت ألعب كرة القدم",
+    "w ana + a present verb = while I was …-ing: ṭiḥt w ana amshi = I fell while I was walking"
+   ],
+   [
+    "غطى",
+    "ghaṭṭa",
+    "it covered (the cost); he covered",
+    "غطى",
+    "present: yghaṭṭi (يغطي); it covered it (f.): ghaṭṭāha (غطاها)"
+   ],
+   [
+    "العلاج",
+    "il-ʿilāj",
+    "the treatment",
+    "العلاج",
+    ""
+   ],
+   [
+    "دفعته من جيبي",
+    "difaʿtah min jēbi",
+    "I paid for it (m.) out of my own pocket",
+    "دفعته من جيبي",
+    "a feminine thing: difaʿt-ha (دفعتها); I paid: difaʿt (دفعت)"
+   ],
+   [
+    "اسألهم إذا",
+    "isʼalhum idha",
+    "ask them whether, ask them if (to a man)",
+    "اسألهم إذا",
+    "to a woman: isʼalīhum idha (اسأليهم إذا)"
+   ],
+   [
+    "بيرجعون لك الفلوس",
+    "biyrajjʿūn-lak il-flūs",
+    "they'll give you the money back (to a man)",
+    "سيعيدون لك المال",
+    "to a woman: biyrajjʿūn-lich il-flūs (بيرجعون لج الفلوس)"
+   ],
+   [
+    "شركة التأمين",
+    "sharikat it-taʼmīn",
+    "the insurance company",
+    "شركة التأمين",
+    ""
+   ]
+  ],
+  "culture": "In Dubai, a 2013 law makes employers provide basic health insurance for their staff, and sponsors for the people they sponsor. What a plan covers differs from one policy to the next, so it's normal to ring the insurer or ask HR when a bill isn't covered."
+ },
+ {
+  "id": "s3u099",
+  "stage": 3,
+  "title": "My wallet's gone!",
+  "goal": "After coffee with Sēf you can't find your wallet: say what's in it, think back to where you last had it and decide what to do",
+  "tip": "ẓāʿ 'it got lost' needs no doer, like ṭāḥ 'it fell': ẓāʿ būki 'my wallet's gone'. ẓayyaʿt 'I lost' says who did it. insarag 'it got stolen' is Form VII, like inkisar 'it broke'. Set the scene with kint gāʿid: kint gāʿid adfaʿ 'I was paying'.",
+  "grammar": "recycle: ẓāʿ 'it got lost' vs ẓayyaʿt 'I lost'; Form VII (insarag); kint gāʿid for the background",
+  "dialogue": [
+   [
+    "B",
+    "سيف! ضاع بوكي!",
+    "Sēf! ẓāʿ būki!",
+    "Sēf! My wallet's gone!"
+   ],
+   [
+    "A",
+    "لا تحاتي. متى آخر مرة شفته؟",
+    "la tḥāti. mita ākhir marra shiftah?",
+    "Don't worry. When did you last see it?"
+   ],
+   [
+    "B",
+    "في الكوفي. كنت قاعد أدفع الحساب",
+    "fi l-kōfi. kint gāʿid adfaʿ il-ḥsāb",
+    "At the café. I was paying the bill."
+   ],
+   [
+    "A",
+    "يمكن طاح منك هناك. ولّا يمكن انسرق؟",
+    "yimkin ṭāḥ minnak hnāk. walla yimkin insarag?",
+    "Maybe you dropped it there. Or maybe it got stolen?"
+   ],
+   [
+    "B",
+    "ما أدري! كل بطاقاتي فيه، وفلوس بعد",
+    "ma adri! kill biṭāgāti fīh, w flūs baʿad",
+    "I don't know! All my cards are in it, and money too."
+   ],
+   [
+    "A",
+    "خلنا نرجع الكوفي. يمكن أحد لقاه",
+    "khallna nirjaʿ il-kōfi. yimkin aḥad ligāh",
+    "Let's go back to the café. Maybe someone found it."
+   ],
+   [
+    "B",
+    "وإذا ما لقيناه، شو أسوي؟",
+    "w idha ma ligēnāh, shu asawwi?",
+    "And if we don't find it, what do I do?"
+   ],
+   [
+    "A",
+    "دق على البنك أول، وبعدين بنروح مركز الشرطة",
+    "digg ʿala l-bank awwal, w baʿdēn binrūḥ markaz ish-shurṭa",
+    "Ring the bank first, and then we'll go to the police station."
+   ]
+  ],
+  "items": [
+   [
+    "ضاع بوكي",
+    "ẓāʿ būki",
+    "my wallet's gone, I've lost my wallet (lit. my wallet got lost)",
+    "ضاعت محفظتي",
+    "your wallet (to a man): būkak (بوكك); you'll also hear maḥfaẓa (محفظة)"
+   ],
+   [
+    "متى آخر مرة شفته؟",
+    "mita ākhir marra shiftah?",
+    "when did you last see it (m.)? (to a man)",
+    "متى رأيته آخر مرة؟",
+    "to a woman: mita ākhir marra shiftīh? (متى آخر مرة شفتيه؟)"
+   ],
+   [
+    "الكوفي",
+    "il-kōfi",
+    "the café, the coffee shop",
+    "المقهى",
+    ""
+   ],
+   [
+    "يمكن طاح منك",
+    "yimkin ṭāḥ minnak",
+    "maybe you dropped it (lit. maybe it fell from you) (to a man)",
+    "ربما سقط منك",
+    "to a woman: yimkin ṭāḥ minnich (يمكن طاح منج)"
+   ],
+   [
+    "انسرق",
+    "insarag",
+    "it got stolen, it was stolen",
+    "سُرق",
+    "a feminine thing: insargat (انسرقت); UAE also: inbāg (انباق)"
+   ],
+   [
+    "كل بطاقاتي فيه",
+    "kill biṭāgāti fīh",
+    "all my cards are in it (m.)",
+    "كل بطاقاتي فيه",
+    "in a feminine thing, such as a bag: fīha (فيها)"
+   ],
+   [
+    "يمكن أحد لقاه",
+    "yimkin aḥad ligāh",
+    "maybe someone (has) found it (m.)",
+    "ربما وجده أحد",
+    "a feminine thing: ligāha (لقاها); UAE also: ḥadd (حد) for aḥad"
+   ],
+   [
+    "دق على البنك",
+    "digg ʿala l-bank",
+    "ring the bank (to a man)",
+    "اتصل بالبنك",
+    "to a woman: diggi ʿala l-bank (دقي على البنك)"
+   ],
+   [
+    "مركز الشرطة",
+    "markaz ish-shurṭa",
+    "the police station",
+    "مركز الشرطة",
+    "you'll also hear il-makhfar (المخفر)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u100",
+  "stage": 3,
+  "title": "At the police station",
+  "goal": "At a Dubai police station, report your lost wallet to an officer: say when and where it went missing and describe it",
+  "tip": "Describe a lost thing with kān: kān fīh 'there was … in it', kān fīh khams miya dirham. Say what you don't know with an indirect question: ma adri wēn ṭāḥ 'I don't know where it fell'. ẓāyiʿ 'lost' is a participle, like rāyiḥ: a feminine thing is ẓāyʿa.",
+  "grammar": "recycle: kān for a past description (kān fīh); indirect questions (ma adri wēn); participles (ẓāyiʿ)",
+  "dialogue": [
+   [
+    "B",
+    "السلام عليكم. أبي أبلغ عن بوك ضايع",
+    "as-salāmu ʿalaykum. abi aballigh ʿan būk ẓāyiʿ",
+    "Hello. I'd like to report a lost wallet."
+   ],
+   [
+    "A",
+    "وعليكم السلام. زين، متى ضاع، ووين؟",
+    "wa ʿalaykum is-salām. zēn, mita ẓāʿ, w wēn?",
+    "Hello. OK, when was it lost, and where?"
+   ],
+   [
+    "B",
+    "اليوم الظهر في المول. بس ما أدري وين طاح",
+    "il-yōm iẓ-ẓuhur fi l-mōl. bas ma adri wēn ṭāḥ",
+    "Today at midday, at the mall. But I don't know where it fell."
+   ],
+   [
+    "A",
+    "شو لونه؟ وشو كان فيه؟",
+    "shu lōnah? w shu kān fīh?",
+    "What colour is it? And what was in it?"
+   ],
+   [
+    "B",
+    "لونه أسود. كان فيه بطاقاتي وخمس مية درهم",
+    "lōnah aswad. kān fīh biṭāgāti w khams miya dirham",
+    "It's black. My cards and five hundred dirhams were in it."
+   ],
+   [
+    "A",
+    "زين، بكتب البلاغ. عطني رقمك",
+    "zēn, baktib il-balāgh. ʿaṭni ragmak",
+    "OK, I'll write up the report. Give me your number."
+   ],
+   [
+    "B",
+    "تفضل. تتوقع بتلقونه؟",
+    "tfaẓẓal. titwaggaʿ bitligūnah?",
+    "Here you go. Do you think you'll find it?"
+   ],
+   [
+    "A",
+    "إن شاء الله. وايد ناس يسلّمون الأغراض اللي يلقونها",
+    "in shāʼ allāh. wāyid nās ysallmūn il-aghrāẓ illi yilgūnha",
+    "Hopefully. A lot of people hand in the things they find."
+   ]
+  ],
+  "items": [
+   [
+    "أبي أبلغ عن",
+    "abi aballigh ʿan",
+    "I'd like to report (something to the police)",
+    "أريد أن أبلغ عن",
+    "I reported it to the police: ballaght ish-shurṭa (بلغت الشرطة)"
+   ],
+   [
+    "ضايع",
+    "ẓāyiʿ",
+    "lost, missing (a thing)",
+    "ضائع",
+    "a feminine thing: ẓāyʿa (ضايعة)"
+   ],
+   [
+    "متى ضاع؟",
+    "mita ẓāʿ?",
+    "when was it lost? when did it go missing?",
+    "متى ضاع؟",
+    "a feminine thing: mita ẓāʿat? (متى ضاعت؟)"
+   ],
+   [
+    "شو لونه؟",
+    "shu lōnah?",
+    "what colour is it (m.)?",
+    "ما لونه؟",
+    "a feminine thing: shu lōnha? (شو لونها؟)"
+   ],
+   [
+    "كان فيه",
+    "kān fīh",
+    "there was … in it (m.), it had … in it",
+    "كان فيه",
+    "in a feminine thing: kān fīha (كان فيها)"
+   ],
+   [
+    "البلاغ",
+    "il-balāgh",
+    "the (police) report",
+    "البلاغ",
+    "a report: balāgh (بلاغ)"
+   ],
+   [
+    "عطني رقمك",
+    "ʿaṭni ragmak",
+    "give me your number (to a man)",
+    "أعطني رقمك",
+    "to a woman: ʿaṭīni ragmich (عطيني رقمج)"
+   ],
+   [
+    "تتوقع؟",
+    "titwaggaʿ?",
+    "do you think so? do you expect…? (to a man)",
+    "هل تتوقع؟",
+    "to a woman: titwaggaʿīn? (تتوقعين؟)"
+   ],
+   [
+    "يسلّمون",
+    "ysallmūn",
+    "they hand in, they hand over",
+    "يسلمون",
+    "he hands in: ysallim (يسلّم); not ysallim ʿala = says hi to"
+   ]
+  ],
+  "culture": "Dubai Police say they returned more than 171,000 found items to their owners in 2025. Found things can be handed in at police stations and at some shopping centres, so it's worth reporting a loss even when you think it's gone for good."
+ },
+ {
+  "id": "s3u101",
+  "stage": 3,
+  "title": "Checkpoint 3.6: the wallet turns up",
+  "goal": "Checkpoint: Fahad and Sēf come with you to collect your wallet; tell Fahad (A) what happened and how your hand is, and thank them both",
+  "tip": "A Kuwaiti says shṣār? for shu ṣār? 'what happened?'. A feminine thing takes feminine verbs: biṭāgat it-taʼmīn ẓāʿat 'the insurance card's gone', ṣārat aḥsan 'it's got better'. To thank two or more people: mā gaṣṣartu; the reply is mā sawwēna shay.",
+  "grammar": "checkpoint 3.6: recycle s3u084–s3u100 (health, insurance, losing things)",
+  "dialogue": [
+   [
+    "A",
+    "شصار؟ البوك وياك؟",
+    "shṣār? il-būk wiyyāk?",
+    "What happened? Have you got the wallet?"
+   ],
+   [
+    "B",
+    "هيه! واحد لقاه في المول وسلّمه للشرطة",
+    "hē! wāḥid ligāh fi l-mōl w sallamah lish-shurṭa",
+    "Yes! Someone found it at the mall and handed it in to the police."
+   ],
+   [
+    "A",
+    "ما شاء الله! وكل شي فيه؟",
+    "mā shāʼ allāh! w kill shay fīh?",
+    "Brilliant! And is everything in it?"
+   ],
+   [
+    "B",
+    "الفلوس والبطاقات كلها، بس بطاقة التأمين ضاعت",
+    "il-flūs w il-biṭāgāt killha, bas biṭāgat it-taʼmīn ẓāʿat",
+    "All the money and the cards, but the insurance card's gone."
+   ],
+   [
+    "A",
+    "عادي. وإيدك؟ رحت المستشفى مرة ثانية؟",
+    "ʿādi. w īdak? riḥt il-mustashfa marra thānya?",
+    "Never mind. And your hand? Did you go to the hospital again?"
+   ],
+   [
+    "B",
+    "لا، ما يباله، صارت أحسن. يا شباب، ما قصرتوا وياي",
+    "la, ma yabā-lah, ṣārat aḥsan. yā shabāb, mā gaṣṣartu wiyyāy",
+    "No, there's no need, it's got better. Guys, you've been so good to me."
+   ],
+   [
+    "A",
+    "ما سوينا شي! يلا، الغدا علينا اليوم",
+    "mā sawwēna shay! yalla, il-ghada ʿalēna l-yōm",
+    "We didn't do anything! Come on, lunch is on us today."
+   ],
+   [
+    "B",
+    "لا والله، هالمرة علي!",
+    "la wallāh, hal-marra ʿalay!",
+    "No way, this time it's on me!"
+   ]
+  ],
+  "items": [
+   [
+    "شصار؟",
+    "shṣār?",
+    "what happened? (Kuwait)",
+    "ماذا حدث؟",
+    "UAE: shu ṣār? (شو صار؟)"
+   ],
+   [
+    "سلّمه للشرطة",
+    "sallamah lish-shurṭa",
+    "he handed it (m.) in to the police",
+    "سلمه للشرطة",
+    "a feminine thing: sallamha (سلّمها)"
+   ],
+   [
+    "ضاعت",
+    "ẓāʿat",
+    "it (f.) got lost, it's gone missing",
+    "ضاعت",
+    "a masculine thing: ẓāʿ (ضاع)"
+   ],
+   [
+    "المستشفى",
+    "il-mustashfa",
+    "the hospital",
+    "المستشفى",
+    ""
+   ],
+   [
+    "صارت أحسن",
+    "ṣārat aḥsan",
+    "it (f.) has got better, it's better now",
+    "تحسنت",
+    "a masculine thing: ṣār aḥsan (صار أحسن); worse: ṣārat akhass"
+   ],
+   [
+    "ما قصرتوا",
+    "mā gaṣṣartu",
+    "thank you, you've been so kind (to a group)",
+    "شكرًا لكم",
+    "to one man: mā gaṣṣart; to one woman: mā gaṣṣarti; reply: mā sawwēna shay"
+   ]
+  ]
+ }
+]

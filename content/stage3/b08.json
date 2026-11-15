@@ -1,0 +1,205 @@
+[
+ {
+  "id": "s3u077",
+  "stage": 3,
+  "title": "I don't think so: aẓunn",
+  "goal": "In a university corridor, guess with Sēf why the lecturer hasn't turned up",
+  "tip": "aẓunn 'I think' goes straight in front of a sentence: aẓunn il-muḥāẓra bāchir. Before a pronoun, add inn- and its ending: aẓunn innah nisa 'I think he forgot'. ma aẓunn on its own is 'I don't think so'. To ask: tẓunn? (to a woman: tẓunnīn?).",
+  "grammar": "aẓunn + sentence 'I think'; ma aẓunn 'I don't think so'; tẓunn? 'do you think?'",
+  "dialogue": [
+   ["A", "الدكتور للحين ما يا. تظن في محاضرة اليوم؟", "id-daktōr lil-ḥīn ma yā. tẓunn fī muḥāẓra l-yōm?", "The lecturer still hasn't come. Do you think there's a lecture today?"],
+   ["B", "ما أظن. صار لنا نص ساعة نتريا", "ma aẓunn. ṣār-lna nuṣṣ sāʿa nitrayya", "I don't think so. We've been waiting for half an hour."],
+   ["A", "أظن إنه نسى. هو دوم ينسى!", "aẓunn innah nisa. huwa dōm yinsa!", "I think he forgot. He's always forgetting!"],
+   ["B", "لا، ما أظن نسى. أظن إنه في الزحمة", "la, ma aẓunn nisa. aẓunn innah fi z-zaḥma", "No, I don't think he forgot. I think he's stuck in traffic."],
+   ["A", "شوف الإيميل! يقولون المحاضرة باكر", "shūf il-īmēl! ygūlūn il-muḥāẓra bāchir", "Look at the email! They say the lecture's tomorrow."],
+   ["B", "زين. تظن بيعطينا امتحان باكر؟", "zēn. tẓunn biyaʿṭīna imtiḥān bāchir?", "OK. Do you think he'll give us a test tomorrow?"],
+   ["A", "هيه، على ما أظن. قال لنا الأسبوع اللي طاف", "hē, ʿala ma aẓunn. gāl-lna l-usbūʿ illi ṭāf", "Yes, I think so. He told us last week."],
+   ["B", "عيل خلنا ندرس اليوم في المكتبة", "ʿayal khallna nidris il-yōm fi l-maktaba", "Then let's study in the library today."]
+  ],
+  "items": [
+   ["أظن", "aẓunn", "I think", "أظن", ""],
+   ["ما أظن", "ma aẓunn", "I don't think so; I don't think (that)", "لا أظن", ""],
+   ["تظن؟", "tẓunn?", "do you think? (to a man)", "هل تظن؟", "to a woman: tẓunnīn? (تظنين؟)"],
+   ["أظن إنه", "aẓunn innah", "I think (that) he / it …", "أظن أنه", "she / it (f.): aẓunn innha (أظن إنها)"],
+   ["على ما أظن", "ʿala ma aẓunn", "I think so, as far as I know", "على ما أظن", ""],
+   ["نسى", "nisa", "he forgot", "نسي", "she forgot: nisat (نست); I forgot: nisēt"],
+   ["في الزحمة", "fi z-zaḥma", "in the traffic, stuck in traffic", "في الزحام", ""],
+   ["بيعطينا", "biyaʿṭīna", "he'll give us", "سيعطينا", "she'll give us: bitaʿṭīna (بتعطينا)"],
+   ["الأسبوع اللي طاف", "il-usbūʿ illi ṭāf", "last week", "الأسبوع الماضي", "last month: ish-shahar illi ṭāf"]
+  ]
+ },
+ {
+  "id": "s3u078",
+  "stage": 3,
+  "title": "In my opinion, the desert: b-raʼyi",
+  "goal": "Plan the weekend with Sēf and Fahad, and give your opinion with a reason",
+  "tip": "b-raʼyi 'in my opinion' starts the sentence: b-raʼyi l-barr aḥsan. To ask: b-raʼyak? (to a woman: b-raʼyich?). Give the reason with lann 'because' before a noun: lann il-jaww ḥilu. With no noun, use lannah 'because it / he': lannah garīb. ʿashān works too.",
+  "grammar": "b-raʼyi 'in my opinion'; lann / lannah 'because' to give a reason",
+  "dialogue": [
+   ["A", "يا شباب، الويكند ياي. البر ولّا البحر؟", "yā shabāb, il-wīkind yāy. il-barr walla l-baḥar?", "Guys, the weekend's coming up. The desert or the beach?"],
+   ["B", "برأيي البر، لأن الجو حلو هالأيام", "b-raʼyi l-barr, lann il-jaww ḥilu hal-ayyām", "In my opinion the desert, because the weather's nice at the moment."],
+   ["A", "إيه والله! والبحر الحين بارد حيل", "ēh wallāh! w il-baḥar il-ḥīn bārid ḥēl", "Oh yes, definitely! And the sea's really cold now."],
+   ["B", "وانت يا سيف؟ برأيك شو أحسن؟", "w inta yā Sēf? b-raʼyak shu aḥsan?", "What about you, Sēf? Which do you think is better?"],
+   ["A", "على كيفكم. بس البحر أحسن، لأنه قريب", "ʿala kēfkum. bas il-baḥar aḥsan, lannah garīb", "Up to you. But the beach is better, because it's close."],
+   ["B", "البر مب بعيد بسيارة فهد!", "il-barr mub baʿīd b-sayyārat Fahad!", "The desert's not far in Fahad's car!"],
+   ["A", "خلاص، نروح بسيارتي. بس الأكل عليكم", "khalāṣ, nrūḥ b-sayyārti. bas il-akil ʿalēkum", "Fine, we'll go in my car. But the food's on you two."],
+   ["B", "اتفقنا! وأنا بييب الحطب", "ittafagna! w ana bayīb il-ḥaṭab", "Deal! And I'll bring the firewood."]
+  ],
+  "items": [
+   ["برأيي", "b-raʼyi", "in my opinion, I'd say", "برأيي / في رأيي", "you'll see written برايي"],
+   ["برأيك؟", "b-raʼyak?", "in your opinion? what do you think? (to a man)", "برأيك؟", "to a woman: b-raʼyich? (برأيج؟)"],
+   ["لأن", "lann", "because", "لأن", "ʿashān (عشان) works in the same place"],
+   ["لأنه", "lannah", "because it / he …", "لأنه", "because she / it (f.): lannha (لأنها)"],
+   ["شو أحسن؟", "shu aḥsan?", "which is better? what's best?", "أيهما أفضل؟", ""],
+   ["على كيفكم", "ʿala kēfkum", "up to you, as you like (to a group)", "كما تشاؤون", "to one man: ʿala kēfak; to one woman: ʿala kēfich"],
+   ["مب بعيد", "mub baʿīd", "it's not far", "ليس بعيدًا", "a feminine thing: mub baʿīda"],
+   ["بسيارتي", "b-sayyārti", "in my car", "بسيارتي", "in your car: b-sayyārtak (to a man), b-sayyārtich (to a woman)"],
+   ["الويكند", "il-wīkind", "the weekend", "عطلة نهاية الأسبوع", ""]
+  ]
+ },
+ {
+  "id": "s3u079",
+  "stage": 3,
+  "title": "The first time I've seen stars like that",
+  "goal": "At Bū Rāshid's majlis, tell him what you've tried in the UAE and what you'd still like to try",
+  "tip": "Talk about experiences with the past: jarrabt 'I've tried', rikabt 'I rode'. The question is the same form: jarrabt iṣ-ṣēd? 'have you tried fishing?' awwal marra + a present verb means 'the first time I've …': awwal marra ashūf nujūm chī. For 'not yet', say la, lil-ḥīn.",
+  "grammar": "recycle: past tense for experiences; awwal marra + present verb",
+  "dialogue": [
+   ["A", "ها يا ولدي، استانست في الإمارات هالسنة؟", "hā yā wildi, istānast fi l-imārāt has-sana?", "So, son, have you enjoyed yourself in the Emirates this year?"],
+   ["B", "وايد يا عمي! كل شي هني تجربة يديدة", "wāyid yā ʿammi! kill shay hni tajruba yidīda", "Very much, uncle! Everything here is a new experience."],
+   ["A", "ما شاء الله. شو أحلى شي جربته؟", "mā shāʼ allāh. shu aḥla shay jarrabtah?", "That's wonderful. What's the best thing you've tried?"],
+   ["B", "نمت في البر وركبت بعير. أول مرة أشوف نجوم جي!", "nimt fi l-barr w rikabt biʿīr. awwal marra ashūf nujūm chī!", "I slept out in the desert and rode a camel. The first time I've seen stars like that!"],
+   ["A", "صج؟ والبحر؟ جربت الصيد بالطراد؟", "ṣij? w il-baḥar? jarrabt iṣ-ṣēd biṭ-ṭarrād?", "Really? And the sea? Have you tried fishing from a boat?"],
+   ["B", "لا، للحين. بس ودي أجربه", "la, lil-ḥīn. bas widdi ajarrbah", "No, not yet. But I'd love to try it."],
+   ["A", "عيل يوم السبت بنطلع بالطراد. لازم تيي ويانا", "ʿayal yōm is-sabt biniṭlaʿ biṭ-ṭarrād. lāzim tiyi wiyyāna", "Then on Saturday we'll go out in the boat. You must come with us."],
+   ["B", "إن شاء الله يا عمي. هالسنة ما أنساها أبد!", "in shāʼ allāh yā ʿammi. has-sana ma ansāha abad!", "God willing, uncle. I'll never forget this year!"]
+  ],
+  "items": [
+   ["جربت", "jarrabt", "I tried, I've tried; have you tried? (to a man)", "جربت", "to a woman: jarrabti? (جربتي؟); I've tried it: jarrabtah"],
+   ["أجربه", "ajarrbah", "(to) try it (m.)", "أجربه", "a feminine thing: ajarribha (أجربها)"],
+   ["ركبت", "rikabt", "I rode, I went on (a camel, a boat)", "ركبت", "you rode (to a woman): rikabti"],
+   ["تجربة", "tajruba", "an experience; a try", "تجربة", "a new experience: tajruba yidīda"],
+   ["أول مرة أشوف", "awwal marra ashūf", "the first time I've seen", "لأول مرة أرى", ""],
+   ["نجوم", "nujūm", "stars", "نجوم", "the stars: in-nujūm"],
+   ["ما أنساها", "ma ansāha", "I'll never forget it (a feminine thing)", "لن أنساها", "a masculine thing: ma ansāh (ما أنساه)"],
+   ["بنطلع", "biniṭlaʿ", "we'll go out, we're heading out", "سنخرج", ""],
+   ["تيي ويانا", "tiyi wiyyāna", "you come with us (to a man)", "تأتي معنا", "to a woman: tiyīn wiyyāna (تيين ويانا)"]
+  ],
+  "culture": "in shāʼ allāh 'God willing' is the polite answer to an elder's invitation. It can be a real yes or a soft maybe, so if you mean yes, make it clear: in shāʼ allāh, akīd! or ask what time. If you can't come, thank him and give a reason."
+ },
+ {
+  "id": "s3u080",
+  "stage": 3,
+  "title": "What are you planning to do? nāwi",
+  "goal": "At the office, tell Maryam your plans after the internship and ask about hers",
+  "tip": "nāwi 'planning to' is a participle, so it agrees with the speaker: nāwi (a man), nāwya (a woman), nāwyīn (a group), then a present verb: nāwi akammil dirāsti 'I'm planning to carry on with my studies'. After baʿd ma, a plan takes a present verb: baʿd ma titkharraj 'after you graduate'.",
+  "grammar": "nāwi / nāwya + verb 'planning to'; recycle: future b-, baʿd ma",
+  "dialogue": [
+   ["A", "شو ناوي تسوي بعد التدريب؟", "shu nāwi tsawwi baʿd it-tadrīb?", "What are you planning to do after the internship?"],
+   ["B", "ناوي أرجع لندن وأكمل دراستي", "nāwi arjaʿ Landan w akammil dirāsti", "I'm planning to go back to London and carry on with my studies."],
+   ["A", "زين. وبعد ما تتخرج، شو خطتك؟", "zēn. w baʿd ma titkharraj, shu khiṭṭtak?", "Good. And after you graduate, what's your plan?"],
+   ["B", "أظن برجع دبي وأدور شغل هني", "aẓunn barjaʿ Dbayy w adawwir shughul hni", "I think I'll come back to Dubai and look for a job here."],
+   ["A", "إن شاء الله! الله يوفقك", "in shāʼ allāh! allāh ywaffgak", "I hope so! Good luck."],
+   ["B", "آمين. وانتي، شو ناوية؟", "āmīn. w inti, shu nāwya?", "Amen. And you, what are you planning?"],
+   ["A", "ناوية أدرس ماجستير السنة الياية، بس للحين ما قررت", "nāwya adris mājistēr is-sana l-yāya, bas lil-ḥīn ma garrart", "I'm planning to do a master's next year, but I haven't decided yet."],
+   ["B", "برأيي فكرة حلوة. بتنجحين أكيد!", "b-raʼyi fikra ḥilwa. bitinjaḥīn akīd!", "I think it's a good idea. You'll definitely do well!"]
+  ],
+  "items": [
+   ["ناوي", "nāwi", "planning to, intending to (a man); I'm planning to", "أنوي", "a woman: nāwya (ناوية)"],
+   ["شو ناوي تسوي؟", "shu nāwi tsawwi?", "what are you planning to do? (to a man)", "ماذا تنوي أن تفعل؟", "to a woman: shu nāwya tsawwīn? (شو ناوية تسوين؟)"],
+   ["التدريب", "it-tadrīb", "the internship, the training", "التدريب", "after the internship: baʿd it-tadrīb"],
+   ["أكمل دراستي", "akammil dirāsti", "(to) carry on with my studies", "أكمل دراستي", ""],
+   ["بعد ما تتخرج", "baʿd ma titkharraj", "after you graduate (to a man)", "بعد أن تتخرج", "to a woman: baʿd ma titkharrajīn; after I graduate: baʿd ma atkharraj"],
+   ["خطتي", "khiṭṭti", "my plan", "خطتي", "what's your plan?: shu khiṭṭtak? (to a man), shu khiṭṭtich? (to a woman)"],
+   ["أدور شغل", "adawwir shughul", "(to) look for a job", "أبحث عن عمل", ""],
+   ["آمين", "āmīn", "amen (the answer to a blessing such as allāh ywaffgak)", "آمين", ""],
+   ["ما قررت", "ma garrart", "I haven't decided", "لم أقرر", "he decided: garrar (قرر)"]
+  ],
+  "culture": "Plans in the Gulf come wrapped in in shāʼ allāh. When someone tells you their plans, wish them well with allāh ywaffgak 'God grant you success' (to a woman: allāh ywaffgich). The answer is āmīn, and you can add a wish back: w inta baʿad 'and you too'."
+ },
+ {
+  "id": "s3u081",
+  "stage": 3,
+  "title": "My dream since I was little",
+  "goal": "At a karak stand one evening, hear Sēf's dream and tell him your ambition",
+  "tip": "ḥilmi 'my dream' and ṭumūḥi 'my ambition' are followed straight by a present verb, with no word for 'to': ḥilmi aṣīr ṭayyār 'my dream is to be a pilot'. aṣīr 'I become' works the same after abi: abi aṣīr muhandis 'I want to be an engineer'.",
+  "grammar": "ḥilmi, ṭumūḥi + present verb; recycle: abi + verb, lann",
+  "dialogue": [
+   ["A", "تدري شو حلمي من صغري؟", "tadri shu ḥilmi min ṣighri?", "Do you know what my dream's been since I was little?"],
+   ["B", "شو؟ تصير لاعب كورة؟", "shu? tṣīr lāʿib kūra?", "What? To be a footballer?"],
+   ["A", "لا! حلمي أصير طيار، لأني أحب السفر", "la! ḥilmi aṣīr ṭayyār, lanni aḥibb is-safar", "No! My dream is to be a pilot, because I love travelling."],
+   ["B", "ما شاء الله! وللحين تبي تصير طيار؟", "mā shāʼ allāh! w lil-ḥīn tabi tṣīr ṭayyār?", "Wow! And do you still want to be a pilot?"],
+   ["A", "أكيد! وانت، شو طموحك؟", "akīd! w inta, shu ṭumūḥak?", "Of course! And you, what's your ambition?"],
+   ["B", "طموحي أفتح شركة حقي. بس أول أبي أصير مهندس زين", "ṭumūḥi aftaḥ sharika ḥaggi. bas awwal abi aṣīr muhandis zēn", "My ambition is to open my own company. But first I want to be a good engineer."],
+   ["A", "إن شاء الله يتحقق حلمك. الله يوفقك!", "in shāʼ allāh yitḥaggag ḥilmak. allāh ywaffgak!", "I hope your dream comes true. Good luck!"],
+   ["B", "آمين، وانت بعد!", "āmīn, w inta baʿad!", "Amen, and you too!"]
+  ],
+  "items": [
+   ["حلمي", "ḥilmi", "my dream", "حلمي", "your dream: ḥilmak (to a man), ḥilmich (to a woman)"],
+   ["طموحي", "ṭumūḥi", "my ambition", "طموحي", "your ambition: ṭumūḥak (to a man), ṭumūḥich (to a woman)"],
+   ["أبي أصير", "abi aṣīr", "I want to be, I want to become", "أريد أن أصبح", "you become: tṣīr (to a man), tṣīrīn (to a woman)"],
+   ["لاعب كورة", "lāʿib kūra", "a footballer", "لاعب كرة قدم", ""],
+   ["طيار", "ṭayyār", "a pilot", "طيار", ""],
+   ["مهندس", "muhandis", "an engineer", "مهندس", "a woman: muhandisa (مهندسة)"],
+   ["لأني", "lanni", "because I …", "لأنني", ""],
+   ["السفر", "is-safar", "travelling, travel", "السفر", ""],
+   ["يتحقق", "yitḥaggag", "(it) comes true", "يتحقق", "in shāʼ allāh yitḥaggag ḥilmak = I hope your dream comes true (to a man)"]
+  ]
+ },
+ {
+  "id": "s3u082",
+  "stage": 3,
+  "title": "I feel Dubai's better for work: aḥiss inn",
+  "goal": "Over coffee with Sēf and Fahad, say where you'd like to live after university and why",
+  "tip": "aḥiss inn 'I feel (that)' gives an opinion from the heart: aḥiss inn Dbayy aḥsan lish-shughul. Before a pronoun, add the ending: aḥiss inni 'I feel I', aḥiss innah 'I feel he / it'. Ask lēsh tḥiss chī? 'why do you feel that way?' and answer with lann.",
+  "grammar": "recycle: aḥiss + inn- 'I feel that'; opinions with lann",
+  "dialogue": [
+   ["A", "بعد الجامعة، وين تبي تسكن؟ دبي ولّا لندن؟", "baʿd il-jāmʿa, wēn tabi tiskin? Dbayy walla Landan?", "After university, where do you want to live? Dubai or London?"],
+   ["B", "صعب! بس أحس إن دبي أحسن للشغل", "ṣaʿb! bas aḥiss inn Dbayy aḥsan lish-shughul", "That's hard! But I feel Dubai's better for work."],
+   ["A", "ليش تحس جي؟", "lēsh tḥiss chī?", "Why do you feel that way?"],
+   ["B", "لأن الفرص هني وايد، والناس طيبين", "lann il-furaṣ hni wāyid, w in-nās ṭayybīn", "Because there are lots of opportunities here, and the people are nice."],
+   ["A", "بس الغربة صعبة. ما تشتاق لأهلك؟", "bas il-ghurba ṣaʿba. ma tishtāg l-ahlak?", "But living away from home is hard. Don't you miss your family?"],
+   ["B", "هيه، مشتاق لهم وايد. بس على الأقل لندن مب بعيدة", "hē, mishtāg lahum wāyid. bas ʿala l-aqall Landan mub baʿīda", "Yes, I miss them a lot. But at least London isn't far."],
+   ["A", "وبصراحة، نحن ما بنخليك تروح!", "w b-ṣarāḥa, niḥin ma binkhallīk trūḥ!", "And honestly, we're not letting you go!"],
+   ["B", "عيل خلاص، أظن بقعد هني!", "ʿayal khalāṣ, aẓunn bagʿid hni!", "Well then, I think I'll stay here!"]
+  ],
+  "items": [
+   ["أحس إن", "aḥiss inn", "I feel (that)", "أشعر أن", "before a pronoun: aḥiss inni 'I feel I', aḥiss innah 'I feel he / it'"],
+   ["تحس", "tḥiss", "you feel (to a man)", "تشعر", "to a woman: tḥissīn (تحسين); why do you feel that way?: lēsh tḥiss chī?"],
+   ["الفرص", "il-furaṣ", "the opportunities, the chances", "الفرص", "one: furṣa (فرصة)"],
+   ["الغربة", "il-ghurba", "living away from home, being abroad", "الغربة", ""],
+   ["تشتاق", "tishtāg", "you miss (someone) (to a man)", "تشتاق", "to a woman: tishtāgīn (تشتاقين); don't you miss your family?: ma tishtāg l-ahlak?"],
+   ["مشتاق لهم", "mishtāg lahum", "I miss them (said by a man)", "مشتاق إليهم", "a woman says: mishtāga lahum (مشتاقة لهم)"],
+   ["على الأقل", "ʿala l-aqall", "at least", "على الأقل", ""],
+   ["بصراحة", "b-ṣarāḥa", "honestly, to be honest", "بصراحة", ""],
+   ["بقعد هني", "bagʿid hni", "I'll stay here", "سأبقى هنا", ""]
+  ],
+  "culture": "il-ghurba is being far from your country and family, and the homesickness that comes with it. When Gulf friends ask a foreigner ma tishtāg l-ahlak? 'don't you miss your family?', it is a kind question. A warm answer about your family is the natural reply."
+ },
+ {
+  "id": "s3u083",
+  "stage": 3,
+  "title": "Checkpoint 3.5: where shall we have lunch?",
+  "goal": "Checkpoint: ask Maryam and the team where to have your farewell lunch, and wish them luck with the project",
+  "tip": "To a group, endings are -kum and -ūn: b-raʼykum? 'what do you all think?', allāh ywaffigkum 'good luck (all of you)', basāʿidkum 'I'll help you'. To a woman: shu raʼyich?, tẓunnīn? A group participle takes -īn: nāwyīn 'we're planning'.",
+  "grammar": "checkpoint 3.5: recycle s3u057–s3u082 (khalli, ma ʿād, bāgi, illi, aẓunn, b-raʼyi, nāwi)",
+  "dialogue": [
+   ["B", "باقي لي أسبوعين بس. برأيكم وين نتغدى الخميس؟", "bāgī-li usbūʿēn bas. b-raʼykum wēn nitghadda l-khamīs?", "I've only got two weeks left. Where do you all think we should have lunch on Thursday?"],
+   ["A", "أظن المطعم اللي يم المترو. أكله زين", "aẓunn il-maṭʿam illi yamm il-mitrō. aklah zēn", "I think the restaurant by the metro. Its food's good."],
+   ["B", "مريم، شو رأيج؟ تظنين زين؟", "Maryam, shu raʼyich? tẓunnīn zēn?", "Maryam, what do you think? Do you think it's good?"],
+   ["A", "ما أظن، لأنه ما عاد مثل قبل", "ma aẓunn, lannah ma ʿād mithil gabil", "I don't think so, because it's not like it was before."],
+   ["B", "خلاص، خلوني أختار أنا. والغدا علي!", "khalāṣ, khallūni akhtār ana. w il-ghada ʿalay!", "Right, let me choose, then. And lunch is on me!"],
+   ["A", "مشكور! ونحن ناوين نخلص المشروع قبل لا تسافر", "mashkūr! w niḥin nāwyīn nkhalliṣ il-mashrūʿ gabil la tsāfir", "Thank you! And we're planning to finish the project before you leave."],
+   ["B", "الله يوفقكم! وأنا بساعدكم لين آخر يوم", "allāh ywaffigkum! w ana basāʿidkum lēn ākhir yōm", "Good luck! And I'll help you until the last day."],
+   ["A", "آمين، وانت بعد!", "āmīn, w inta baʿad!", "Amen, and you too!"]
+  ],
+  "items": [
+   ["شو رأيج؟", "shu raʼyich?", "what do you think? (to a woman)", "ما رأيكِ؟", "to a man: shu raʼyak?; to a group: shu raʼykum?"],
+   ["برأيكم؟", "b-raʼykum?", "in your opinion? what do you all think? (to a group)", "برأيكم؟", "to one man: b-raʼyak?; to one woman: b-raʼyich?"],
+   ["تظنين؟", "tẓunnīn?", "do you think? (to a woman)", "هل تظنين؟", "to a man: tẓunn?; to a group: tẓunnūn?"],
+   ["ناوين", "nāwyīn", "planning to, intending to (a group); we're planning to", "ننوي / تنوون", "one man: nāwi; one woman: nāwya"],
+   ["الله يوفقكم", "allāh ywaffigkum", "good luck, God grant you success (to a group)", "وفقكم الله", "to one man: allāh ywaffgak; to one woman: allāh ywaffgich; the answer: āmīn"],
+   ["بساعدكم", "basāʿidkum", "I'll help you (to a group)", "سأساعدكم", "to one man: basāʿdak; to one woman: basāʿdich"]
+  ]
+ }
+]
