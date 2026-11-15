@@ -39,7 +39,7 @@ Names carry origin, so reviewers can check each line against its speaker.
 
 | Name | Script | Origin | Sex, age | Role | Register with the learner | From |
 |---|---|---|---|---|---|---|
-| (learner, B) | — | British, Muslim (fasts in Ramadan, prays; from s2u061), studying and interning in Dubai | man, ~20, unmarried | always speaker B from s1u017; Arabic name Sālim if needed (u3) | — | s1u017 |
+| (learner, B) | — | British, Muslim (fasts in Ramadan, prays; from s2u061), studying and interning in Dubai | man, ~20, unmarried; family in London: mum and dad, three older brothers, one older married sister (her husband and kids also in London); B is the youngest | always speaker B from s1u017; Arabic name Sālim if needed (u3) | — | s1u017 |
 | Sēf | سيف | Emirati, Dubai | man, 22 | university friend | friends: yā rayyāl, khēba, English loans | s1u017 |
 | Maryam | مريم | Emirati, Dubai | woman, 26 | colleague at the internship | polite, neutral; B practises -ich / -īn with her | s1u018 |
 | Umm Sēf | أم سيف | Emirati, Dubai | woman, ~50 | Sēf's mother | respectful | s1u021 |
@@ -181,7 +181,7 @@ C1 grammar categories come from the table of contents of a published Emirati Ara
 | Units | Grammar point | Functions and situations | Culture |
 |---|---|---|---|
 | s5u001–s5u006 | **Epistemic and evidential modality.** New: chūd (Kuwait-leaning, S Kuwaiti study; C جود 270/285 mixes jūd "generosity") [weak], wāẓiḥ inn, sāmiʿ inn. Recycle: yimkin, akīd, shakl-ah, ygūlūn inn (يقولون إن, s3u019) | hedging, guessing, reporting what you've heard | — |
-| s5u007–s5u010 | **Optatives and hortatives.** New: عساه / عساها + wish (105/77), الله يوفقك (170/160), الله يحفظك (272/49). Recycle: yā rēt, khal + verb, and the ʿasa and allāh y- formulas in §7 | wishing, blessing, urging | blessings as social glue |
+| s5u007–s5u010 | **Optatives and hortatives.** New: عساه / عساها + wish (105/77), الله يوفقك (recycle: taught in s2u090) (170/160), الله يحفظك (272/49). Recycle: yā rēt, khal + verb, and the ʿasa and allāh y- formulas in §7 | wishing, blessing, urging | blessings as social glue |
 | s5u011–s5u014 | **Assertive gid** in kān gid + perfect (S: Alotaibi, Kuwaiti; Emirati use U) [weak]; understatement. Recycle: wallāh, aṣlan, tara, ʿād | insisting, emphasising, playing down | — |
 | s5u015 | checkpoint 5.1 | — | — |
 | s5u016–s5u020 | **Negative polarity and concord.** New: wala marra (S), ma … illa, ma ʿumri. Recycle: abad, maḥḥad | strong denials, "never in my life" | — |
