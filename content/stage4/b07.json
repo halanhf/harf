@@ -59,7 +59,7 @@
     "A",
     "مشكور يا سالم! خطك حلو، والملاحظات مرة حلوة. الله يعطيك العافية",
     "mashkūr yā Sālim! khaṭṭak ḥilu, w il-mulāḥaẓāt marra ḥilwa. allāh yaʿṭīk il-ʿāfya",
-    "Thanks, Sālim! Your handwriting's nice, and the notes are really good. Thanks a lot."
+    "Thanks, Sālim! Your handwriting's nice, and the notes are really good. Thanks for your trouble."
    ],
    [
     "B",
@@ -133,7 +133,7 @@
   "stage": 4,
   "title": "Penalty! A match on TV",
   "goal": "At Sēf's place, watch the second half of a league match with him: follow the score, the referee and the commentator",
-  "tip": "Recycle the past for what just happened: sajjalaw gōl 'they scored', ṭāḥ 'he went down', ma ʿaṭāh shay 'he didn't give him anything'. TV commentators often use fuṣḥā-flavoured words like ẓarbat jazāʼ 'penalty kick'; people at home just say bilanti.",
+  "tip": "Recycle the past for what just happened: sajjalaw hadaf 'they scored', ṭāḥ 'he went down', ma ʿaṭāh shay 'he didn't give him anything'. TV commentators often use fuṣḥā-flavoured words like ẓarbat jazāʼ 'penalty kick'; people at home just say bilanti.",
   "grammar": "recycle: past tense for events (sajjalaw, ṭāḥ, ma ʿaṭāh)",
   "dialogue": [
    [
@@ -174,9 +174,9 @@
    ],
    [
     "A",
-    "اسمع المعلق، يقول ضربة جزاء واضحة والحكم ما شافها",
-    "ismaʿ il-muʿallig, ygūl ẓarbat jazāʼ wāẓḥa w il-ḥakam ma shāfha",
-    "Listen to the commentator: he says it's a clear penalty and the referee didn't see it."
+    "اسمع المعلق! يقول ضربة جزاء واضحة والحكم ما شافها! ما يصير جي!",
+    "ismaʿ il-muʿallig! ygūl ẓarbat jazāʼ wāẓḥa w il-ḥakam ma shāfha! ma yṣīr chī!",
+    "Listen to the commentator! He says it's a clear penalty and the referee didn't see it! This can't go on!"
    ],
    [
     "B",
@@ -186,7 +186,7 @@
    ],
    [
     "A",
-    "هدف! سجلنا! اثنين واحد!",
+    "هدف! سجلنا! ثنين واحد!",
     "hadaf! sajjalna! thnēn wāḥid!",
     "Goal! We've scored! Two-one!"
    ],
@@ -272,7 +272,7 @@
   "stage": 4,
   "title": "Don't spoil it for me!",
   "goal": "In a university corridor, Sēf asks if you've finished the Kuwaiti series he told you about; talk about the episodes, the actors and the next season",
-  "tip": "Recycle bāgi-li for what's left: bāgi-li thalāth ḥalgāt 'I've got three episodes left'. And the future b- for what's coming: biyinzil 'it'll come out', bashtirik 'I'll subscribe'. To stop a spoiler: la tḥarrig ʿalay!",
+  "tip": "Recycle bāgi-li for what's left: bāgi-li thalāth ḥalgāt 'I've got three episodes left'. And the future b- for what's coming: biyinzil 'it'll come out', bashtirik 'I'll subscribe'. To stop a spoiler: la tkharrib ʿalay!",
   "grammar": "recycle: bāgi-li; future b- (biyinzil, bashtirik)",
   "dialogue": [
    [
@@ -295,8 +295,8 @@
    ],
    [
     "B",
-    "لا لا، لا تحرق علي!",
-    "la la, la tḥarrig ʿalay!",
+    "لا لا، لا تخرب علي!",
+    "la la, la tkharrib ʿalay!",
     "No, no, don't spoil it for me!"
    ],
    [
@@ -352,11 +352,11 @@
     "episodes: ḥalgāt (حلقات); the last episode: il-ḥalga l-akhīra"
    ],
    [
-    "لا تحرق علي",
-    "la tḥarrig ʿalay",
+    "لا تخرب علي",
+    "la tkharrib ʿalay",
     "don't spoil it for me (to a man)",
     "لا تفسد علي المفاجأة",
-    "to a woman: la tḥarrgīn ʿalay"
+    "to a woman: la tkharribīn ʿalay"
    ],
    [
     "الموسم",
@@ -384,14 +384,13 @@
     "lāzim tishtirik",
     "you have to subscribe (to a man)",
     "يجب أن تشترك",
-    "to a woman: lāzim tishtirkīn; (recognise)"
+    "to a woman: lāzim tishtirkīn"
    ]
   ],
   "task": "This week: you'll hear a lot of Egyptian and Levantine Arabic in Dubai. Search YouTube for «مسلسل سوري» (Syrian series) or «فيلم مصري» (Egyptian film) and watch 5 minutes. Note 3 words that aren't Gulf (Egyptian izzayyak 'how are you', ʿāyiz 'I want'; Levantine kīfak, baddi 'I want'), then tell Sēf in Gulf Arabic what happened in the clip.",
   "receptive": [
    3,
-   5,
-   6
+   5
   ]
  },
  {
@@ -423,7 +422,7 @@
    [
     "B",
     "صح، بس الدفاع حقهم ضعيف. والحكم بعد!",
-    "ṣaḥḥ, bas id-difāʿ ḥagghum ẓaʿīf. w il-ḥakam baʿad!",
+    "ṣaḥḥ, bas id-difāʿ ḥagg-hum ẓaʿīf. w il-ḥakam baʿad!",
     "True, but their defence is weak. And so is the referee!"
    ],
    [
@@ -481,7 +480,7 @@
    [
     "واجد زينين",
     "wājid zēnīn",
-    "really good (people) (Saudi)",
+    "really good (of people or teams, plural) (Saudi)",
     "جيدون جدًا",
     "UAE: wāyid zēnīn; Kuwait also: wājid; (recognise)"
    ],
@@ -494,7 +493,7 @@
    ],
    [
     "الدفاع حقهم ضعيف",
-    "id-difāʿ ḥagghum ẓaʿīf",
+    "id-difāʿ ḥagg-hum ẓaʿīf",
     "their defence is weak",
     "دفاعهم ضعيف",
     ""
@@ -541,7 +540,7 @@
   "stage": 4,
   "title": "A Qatari on the project",
   "goal": "At university, plan a group project with a Qatari classmate: split the work, set a deadline, and catch his Qatari forms",
-  "tip": "Qatari speech is close to Emirati, but you'll hear huwwa for 'he' and humma for 'they' (UAE huwa, hum), as in Bahrain, and shinu for 'what', as in Kuwait. Recycle kill wāḥid 'each one' to split the work: kill wāḥid yākhidh juzʼ.",
+  "tip": "Qatari speech is close to Emirati, but you'll hear huwwa for 'he' and humma for 'they' (UAE huwa, hum), as in Bahrain, and you may also hear shinu for 'what', as in Kuwait. Recycle kill wāḥid 'each one' to split the work: kill wāḥid yākhidh juzʼ.",
   "grammar": "recycle; listening to other Gulf voices (receptive)",
   "dialogue": [
    [
@@ -584,7 +583,7 @@
     "A",
     "وأنا العرض. بس هوّ قال لازم نتدرب عليه قبل",
     "w ana l-ʿarẓ. bas huwwa gāl lāzim nitdarrab ʿalēh gabil",
-    "And I'll do the presentation. But he said we need to practise it beforehand."
+    "And I'll do the presentation. But he (the professor) said we need to practise it beforehand."
    ],
    [
     "B",
@@ -674,7 +673,7 @@
   "stage": 4,
   "title": "His voice is beautiful",
   "goal": "In Sēf's car, he plays a song by a Khaleeji singer; talk about the voice, the words and the tune, and plan to go to his concert",
-  "tip": "Recycle the superlative and 'the best thing about it': aḥla ughniya 'the best song', il-ḥilu fīha l-kalimāt. Use ʿala bāli 'I thought' to say what you expected: ʿala bāli kalimātha ṣaʿba.",
+  "tip": "Recycle the superlative and 'the best thing about it': aḥla ughniya 'the best song', il-ḥilu fīha l-kalimāt. Use ʿala bāli 'I thought' to say what you expected: ʿala bāli kalimāt-ha ṣaʿba.",
   "grammar": "recycle: comparatives, il-ḥilu fīha, ʿala bāli",
   "dialogue": [
    [
@@ -733,9 +732,9 @@
    ],
    [
     "B",
-    "خلاص، حطها علي. وانت اختار المقاعد",
-    "khalāṣ, ḥuṭṭha ʿalay. w inta khtār il-magāʿid",
-    "OK, put it on me (I'll pay). And you choose the seats."
+    "خلاص، الحساب علي. وانت اختار المقاعد",
+    "khalāṣ, il-ḥsāb ʿalay. w inta khtār il-magāʿid",
+    "OK, I'm paying. And you choose the seats."
    ]
   ],
   "items": [
@@ -800,7 +799,7 @@
   "stage": 4,
   "title": "Tell us about yourself",
   "goal": "In a job interview for a graduate post at a Dubai company, answer the HR manager's first questions about you and your experience",
-  "tip": "At an interview, talk in polite Gulf Arabic with some formal work words: khibra 'experience', taḥt iẓ-ẓaghiṭ 'under pressure'. Answer about yourself with the present: adris handasa 'I study engineering', ashtaghil zēn… 'I work well…'.",
+  "tip": "At an interview, talk in polite Gulf Arabic with some formal work words: khibra 'experience', and the useful phrase taḥt iẓ-ẓaghiṭ 'under pressure'. Answer about yourself with the present: adris handasa 'I study engineering', ashtaghil zēn… 'I work well…'.",
   "grammar": "recycle; office register (polite, more formal words)",
   "dialogue": [
    [
@@ -875,9 +874,9 @@
    [
     "خبرنا عن نفسك",
     "khabbirna ʿan nafsak",
-    "introduce yourself (the interviewer's opening request) (to a man)",
+    "tell us about yourself (to a man)",
     "أخبرنا عن نفسك",
-    "to a woman: khabbrīna ʿan nafsich"
+    "to a woman: khabbrīna ʿan nafsich; also: tkallam ʿan nafsak"
    ],
    [
     "ليش تبي تشتغل عندنا؟",
@@ -950,7 +949,7 @@
    [
     "A",
     "هذا مب عيب. ووين تشوف نفسك بعد خمس سنين؟",
-    "hādha mub ʿēb. w wēn tshūf nafsak baʿd khams snīn?",
+    "hādha mub ʿēb. w wēn tshūf nafsak baʿd khams sinīn?",
     "That's not a bad thing. And where do you see yourself in five years?"
    ],
    [
@@ -1054,7 +1053,7 @@
     ""
    ]
   ],
-  "task": "This week: in Talk, ask your partner to play an HR manager interviewing you for a job in Dubai. Answer at least 6 questions in Gulf Arabic, and use khabbirna ʿan nafsak, ʿindi khibra, taḥt iẓ-ẓaghiṭ and wēn tshūf nafsak in the conversation. Ask two questions of your own, and close with mashkūr ʿala wagtak. Then do it again, faster.",
+  "task": "This week: in Talk, ask your partner to play an HR manager interviewing you for a job in Dubai. Answer at least 6 questions in Gulf Arabic, and use khabbirna ʿan nafsak, ʿindi khibra and wēn tshūf nafsak in the conversation (and taḥt iẓ-ẓaghiṭ 'under pressure', if it fits). Ask two questions of your own, and close with mashkūr ʿala wagtak. Then do it again, faster.",
   "receptive": [
    1,
    6
@@ -1593,7 +1592,7 @@
   "stage": 4,
   "title": "Checkpoint 4.5: I got the job!",
   "goal": "Checkpoint: Fahad phones from Kuwait; tell him about the job offer, the interview and the salary talk, and catch his Kuwaiti forms",
-  "tip": "Review, and now you say it: ʿarẓ shughul, ʿindi khibra, taḥt iẓ-ẓaghiṭ, mumkin tzīdūn ir-rātib shwayy?, ʿala bāli, il-ḥilu fīh, idha ṣār naṣīb and bāgi-li. Fahad uses Kuwaiti forms (shinu, ḥēl).",
+  "tip": "Review, and now you say it: ʿarẓ shughul, ʿindi khibra, mumkin tzīdūn ir-rātib shwayy?, ʿala bāli, il-ḥilu fīh, b-ikhtiṣār, idha ṣār naṣīb and bāgi-li. Fahad uses Kuwaiti forms (shinu, ḥēl).",
   "grammar": "checkpoint 4.5 (s4u058–s4u069): other Gulf voices, media, interviews and office register",
   "dialogue": [
    [
@@ -1610,8 +1609,8 @@
    ],
    [
     "A",
-    "مبروك! حيل فرحت لك. شنو سألوك؟",
-    "mabrūk! ḥēl firaḥt lak. shinu saʼlūk?",
+    "مبروك! فرحت لك حيل. شنو سألوك؟",
+    "mabrūk! firaḥt lak ḥēl. shinu saʼlūk?",
     "Congratulations! I'm really happy for you. What did they ask you?"
    ],
    [
@@ -1640,9 +1639,9 @@
    ],
    [
     "B",
-    "عادي، بقبل إذا صار نصيب. الحلو فيه الخبرة",
-    "ʿādi, bagbal idha ṣār naṣīb. il-ḥilu fīh il-khibra",
-    "That's fine, I'll accept if it works out. The good thing about it is the experience."
+    "عادي. باختصار، بقبل إذا صار نصيب. الحلو فيه الخبرة",
+    "ʿādi. b-ikhtiṣār, bagbal idha ṣār naṣīb. il-ḥilu fīh il-khibra",
+    "That's fine. In short, I'll accept if it works out. The good thing about it is the experience."
    ],
    [
     "A",
@@ -1663,14 +1662,14 @@
     "shinu akhbār…?",
     "how's … going? any news on …? (Kuwait)",
     "ما أخبار…؟",
-    "UAE: shu akhbār…? (شو أخبار…؟); shinu akhbār il-mugābla? = how did the interview go?"
+    "UAE: shu akhbār…? (شو أخبار…؟); shinu akhbār il-mugābla? = how did the interview go?; (recognise)"
    ],
    [
-    "حيل فرحت لك",
-    "ḥēl firaḥt lak",
+    "فرحت لك حيل",
+    "firaḥt lak ḥēl",
     "I'm really happy for you (Kuwait) (to a man)",
     "فرحت لك كثيرًا",
-    "to a woman: ḥēl firaḥt lich; UAE: wāyid firaḥt lak; (recognise)"
+    "to a woman: firaḥt lich ḥēl; UAE: firaḥt lak wāyid; (recognise)"
    ],
    [
     "لازم نحتفل",
@@ -1696,6 +1695,7 @@
   ],
   "task": "This week: with a tutor or exchange partner (search «معلم لهجة إماراتية» or «Emirati Arabic tutor»), tell the story of a job interview, real or imagined: the questions, your answers, the salary talk. Use 4 items from these two weeks, e.g. khabbirna ʿan nafsak, ʿindi khibra, taḥt iẓ-ẓaghiṭ, idha ṣār naṣīb. Let your partner ask follow-up questions for 8 turns.",
   "receptive": [
+   0,
    1,
    3
   ]
