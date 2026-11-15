@@ -39,9 +39,9 @@
    ],
    [
     "A",
-    "صح. المهم، شو تبي، أرخص ولا أسرع؟",
-    "ṣaḥḥ. il-muhimm, shu tabi, arkhaṣ walla asraʿ?",
-    "True. Anyway, what do you want, cheaper or faster?"
+    "صح، بس هذا أسرع. المهم، شو تبي، أرخص ولا أسرع؟",
+    "ṣaḥḥ, bas hādha asraʿ. il-muhimm, shu tabi, arkhaṣ walla asraʿ?",
+    "True, but this one's faster. Anyway, what do you want, cheaper or faster?"
    ],
    [
     "B",
@@ -122,7 +122,7 @@
   "title": "A bigger size?",
   "goal": "Try on a shirt with Sēf: too tight, too loose, another size or colour",
   "tip": "Sizes compare like prices: akbar 'bigger', aṣghar 'smaller'; add shwayy for 'a bit': aṣghar shwayy. Colours have the same shape (aḥmar 'red', azrag 'blue') but they aren't comparatives: they change for a feminine noun (ḥamra, zarga), while akbar and aḥla never change.",
-  "grammar": "Comparatives of size (akbar, aṣghar shwayy); colours look like comparatives but agree",
+  "grammar": "Comparatives of size (akbar, aṣghar shwayy); colour words look like comparatives but agree (shown in the notes)",
   "dialogue": [
    [
     "B",
@@ -151,7 +151,7 @@
    [
     "B",
     "الأزرق؟ لا، ما أبيه. عندهم أحمر؟",
-    "il-azrag? la, ma abīh. ʿindhum aḥmar?",
+    "il-azrag? la, ma abīh. ʿind-hum aḥmar?",
     "The blue one? No, I don't want it. Do they have red?"
    ],
    [
@@ -338,7 +338,7 @@
     "آخر كلام",
     "ākhir kalām",
     "my last word, final offer",
-    "",
+    "السعر النهائي",
     ""
    ],
    [
@@ -356,7 +356,7 @@
   "stage": 2,
   "title": "Taking it back",
   "goal": "Return a watch that doesn't work to a shop assistant (a woman) and ask for one like your friend's",
-  "tip": "mithil 'like' goes before a noun or takes an ending: mithil sāʿat rbīʿi 'like my friend's watch', mithilha 'like it (f.)'. Emiratis also say shrāt: shrātha 'just like it'. ishtarēt 'I bought' ends like sawwēt.",
+  "tip": "mithil 'like' goes before a noun or takes an ending: mithil sāʿat rbīʿi 'like my friend's watch', mithilha 'like it (f.)'. Emiratis also say shrāt: shrāt-ha 'just like it'. ishtarēt 'I bought' ends like sawwēt.",
   "grammar": "mithil + noun or ending 'like' (mithil sāʿat rbīʿi, mithilha); UAE shrāt",
   "dialogue": [
    [
@@ -380,7 +380,7 @@
    [
     "A",
     "أكيد. تبي وحدة ثانية شراتها؟",
-    "akīd. tabi waḥda thānya shrātha?",
+    "akīd. tabi waḥda thānya shrāt-ha?",
     "Sure. Do you want another one just like it?"
    ],
    [
@@ -457,7 +457,7 @@
     "shrāt",
     "like, just like (UAE)",
     "مثل",
-    "the default is mithil (مثل); shrātha = just like it (f.)"
+    "the default is mithil (مثل); shrāt-ha = just like it (f.)"
    ]
   ]
  },
@@ -577,7 +577,7 @@
     ""
    ]
   ],
-  "culture": "Friends often argue over the bill (la wallāh! ʿala ḥsābi!), and the one who invited usually pays. Young friends and colleagues also split it (nuṣṣ nuṣṣ). With an elder or at someone's home, let the host pay and thank them."
+  "culture": "Friends often argue over the bill (la wallāh! ʿala ḥsābi!), and the one who invited usually pays. Young friends and colleagues also split it (nuṣṣ nuṣṣ). When an elder or a host has invited you, let them pay and thank them."
  },
  {
   "id": "s2u036",
@@ -595,9 +595,9 @@
    ],
    [
     "A",
-    "أنا وفهد في المول، نشتري هدية حق أمي",
-    "ana w Fahad fi l-mōl, nishtiri hadiyya ḥagg ummi",
-    "Fahad and I are at the mall, buying a present for my mum."
+    "هلا! أنا وفهد في المول، نشتري هدية حق أمي",
+    "hala! ana w Fahad fi l-mōl, nishtiri hadiyya ḥagg ummi",
+    "Hi! Fahad and I are at the mall, buying a present for my mum."
    ],
    [
     "B",
@@ -705,7 +705,7 @@
     "B",
     "وكان عندكم مكيف؟",
     "w kān ʿindakum mkayyif?",
-    "And did you have air conditioning?"
+    "And did your family have air conditioning?"
    ],
    [
     "A",
@@ -796,10 +796,22 @@
   "id": "s2u038",
   "stage": 2,
   "title": "When I was little",
-  "goal": "Ask Umm Sēf about her childhood and tell her about yours",
-  "tip": "kān + a present-tense verb means 'used to': kinna nilʿab 'we used to play', kint arūḥ 'I used to go'. Both verbs agree with the subject: kinti trūḥīn? 'did you use to go?' (to a woman). lamma kint ṣghīr 'when I was little' (a woman: ṣghīra).",
+  "goal": "At Sēf's home, with Sēf there: greet Umm Sēf, ask after her and about her childhood, and tell her about yours",
+  "tip": "kān + a present-tense verb means 'used to': kinna nilʿab 'we used to play', kint arūḥ 'I used to go'. Both verbs agree with the subject: kinti tsawwīn? 'did you use to do?' (to a woman). lamma kint ṣghīr 'when I was little' (a woman: ṣghīra).",
   "grammar": "kān + present verb = 'used to' (kint arūḥ, kinna nilʿab); lamma 'when'",
   "dialogue": [
+   [
+    "B",
+    "السلام عليكم يا أم سيف، شحالج؟",
+    "as-salāmu ʿalaykum yā Umm Sēf, shḥālich?",
+    "Hello, Umm Sēf, how are you?"
+   ],
+   [
+    "A",
+    "وعليكم السلام، بخير الحمد لله",
+    "wa ʿalaykum is-salām, b-khēr il-ḥamdu lillāh",
+    "Hello, fine, thank God."
+   ],
    [
     "B",
     "لما كنتي صغيرة، وين كنتي ساكنة؟",
@@ -826,21 +838,9 @@
    ],
    [
     "B",
-    "وكنتي تروحين المدرسة؟",
-    "w kinti trūḥīn il-madrasa?",
-    "And did you go to school?"
-   ],
-   [
-    "A",
-    "هيه، كنت أمشي ويا خواتي. ما كان عندنا سيارة",
-    "hē, kint amshi wiyya khawāti. ma kān ʿindana sayyāra",
-    "Yes, I used to walk there with my sisters. We didn't have a car."
-   ],
-   [
-    "B",
-    "أنا لما كنت صغير، كنت أروح بالباص",
-    "ana lamma kint ṣghīr, kint arūḥ bil-bāṣ",
-    "When I was little, I used to go by bus."
+    "أنا لما كنت صغير، كنت أروح المدرسة بالباص",
+    "ana lamma kint ṣghīr, kint arūḥ il-madrasa bil-bāṣ",
+    "When I was little, I used to go to school by bus."
    ]
   ],
   "items": [
@@ -849,7 +849,7 @@
     "lamma kint ṣghīr",
     "when I was little (said by a man)",
     "عندما كنت صغيرًا",
-    "a woman says: lamma kint ṣghīra; UAE also: yōm kint ṣghīr (يوم كنت صغير)"
+    "a woman says: lamma kint ṣghīra; more often: yōm kint ṣghīr (taught in s2u041)"
    ],
    [
     "كنت",
@@ -907,8 +907,8 @@
   "id": "s2u039",
   "stage": 2,
   "title": "Dubai used to be different",
-  "goal": "Talk with Maryam about how Dubai has changed since she was a child",
-  "tip": "kān works with comparatives too: kānat iz-zaḥma agall 'the traffic was lighter', awwal kān ahda 'it used to be quieter'. For 'used to', kān agrees with the subject: kintu trūḥūn 'you (all) used to go', kānaw yaʿarfūn 'they used to know'.",
+  "goal": "At the office, talk with Maryam about how Dubai has changed since she was a child",
+  "tip": "kān works with comparatives too: kānat iz-zaḥma agall 'the traffic was lighter', awwal kān ahda 'it used to be quieter' (awwal = before, in the old days). For 'used to', kān agrees with the subject: kintu trūḥūn 'you (all) used to go', kānaw yaʿarfūn 'they used to know'.",
   "grammar": "kān + present verb for groups (kintu trūḥūn, kānaw yaʿarfūn); kān + comparative",
   "dialogue": [
    [
@@ -1001,7 +1001,7 @@
     "يعرفون بعض",
     "yaʿarfūn baʿaẓ",
     "they know each other",
-    "يعرفون بعضهم",
+    "يعرف بعضهم بعضًا",
     ""
    ],
    [
@@ -1076,7 +1076,7 @@
     "صار لي",
     "ṣār-li",
     "it's been … (for me), I've been … (for)",
-    "منذ",
+    "منذ / مضى عليّ",
     "ṣār-lah = he's been; ṣār-lha = she's been"
    ],
    [
