@@ -51,6 +51,9 @@ def main():
             for k, mx in (("grammar", 120), ("culture", 400), ("task", 400)):
                 if k in u and not (isinstance(u[k], str) and 0 < len(u[k]) <= mx): E(f"{k} empty or over {mx} chars")
             dl = u.get("dialogue"); it = u.get("items")
+            shown = json.dumps(u, ensure_ascii=False)  # everything here reaches the learner
+            mk = re.search(r"native[ -]check|native queue|\[weak\]|\(U\)|\bU\b[,;)]|TODO|course lead|\bS: |\bC: |attest|Gumar", shown)
+            if mk: E(f"writer-only marker shown to the learner: {mk.group(0)!r} (move it to the writer log)")
             if "receptive" in u and not (isinstance(u["receptive"], list) and all(isinstance(i, int) and 0 <= i < len(it or []) for i in u["receptive"]) and len(set(u["receptive"])) == len(u["receptive"])): E("receptive must list item indexes")
             if not (isinstance(dl, list) and 3 <= len(dl) <= 10): E("dialogue must have 3-10 lines"); dl = []
             if not (isinstance(it, list) and 5 <= len(it) <= 9): E("items must be 5-9"); it = []
