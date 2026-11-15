@@ -135,7 +135,7 @@
   "stage": 4,
   "title": "I'm on a diet",
   "goal": "On campus, Sēf hands round sweets his mum made; say you're on a diet and what you've cut down on",
-  "tip": "ma ʿād + a present verb says 'not any more': ma ʿidt ākil ḥalawiyyāt 'I don't eat sweets any more'. It takes the person: ma ʿidt (I), ma ʿād (he). With a participle, the ending shows who: ana msawwi rijīm 'I'm on a diet' (a woman: msawwya).",
+  "tip": "ma ʿād + a present verb says 'not any more': ma ʿidt ākil ḥalawiyyāt 'I don't eat sweets any more'. It can take the person, ma ʿidt (I), ma ʿād (he), but ma ʿād also works for 'I' (s3u061: ma ʿād amshi wāyid). With a participle: ana msawwi rijīm 'I'm on a diet'.",
   "grammar": "recycle: ma ʿād + present verb, 'not any more'",
   "dialogue": [
    [
@@ -294,7 +294,7 @@
     "B",
     "هيه، تميت على التلفون ساعة وأكثر",
     "hē, tammēt ʿala t-tilifōn sāʿa w akthar",
-    "Yes, I've been on my phone for an hour or more."
+    "Yes, I stayed on my phone for an hour or more."
    ],
    [
     "A",
@@ -310,9 +310,9 @@
    ],
    [
     "A",
-    "لا تخليها، بس خلها قصيرة. وأنا ما أشرب قهوة بعد العصر، تطير النوم",
-    "la tkhallīha, bas khallha gaṣīra. w ana ma ashrab gahwa baʿd il-ʿaṣir, tṭayyir in-nōm",
-    "Don't give it up, just keep it short. And I don't drink coffee after ʿaṣr; it keeps me awake."
+    "لا تخليها، بس خلها قصيرة. وأنا ما أشرب قهوة بعد العصر، يطير النوم من عيني",
+    "la tkhallīha, bas khallha gaṣīra. w ana ma ashrab gahwa baʿd il-ʿaṣir, yiṭīr in-nōm min ʿēni",
+    "Don't give it up, just keep it short. And I don't drink coffee after ʿaṣr; it keeps me awake (lit. sleep flies from my eyes)."
    ]
   ],
   "items": [
@@ -352,10 +352,10 @@
     ""
    ],
    [
-    "تطير النوم",
-    "tṭayyir in-nōm",
-    "it (f.) keeps you awake (lit. it makes sleep fly off)",
-    "تطرد النوم",
+    "يطير النوم من عيني",
+    "yiṭīr in-nōm min ʿēni",
+    "I can't sleep, it keeps me awake (lit. sleep flies from my eye)",
+    "يفارقني النوم",
     "(recognise)"
    ],
    [
@@ -655,7 +655,7 @@
   "stage": 4,
   "title": "It counts your steps",
   "goal": "In Bū Rāshid's majlis, with Sēf there, show him how to use a step-counter app on his phone, one step at a time",
-  "tip": "kill ma + a present verb is 'every time, whenever': kill ma timshi, yiḥsib 'every time you walk, it counts'. Explaining to an elder, keep each step short and add yā ʿammi or ṭāl ʿumrak; the verbs are still the ordinary 'you' forms: tiftaḥah, tḥuṭṭah.",
+  "tip": "kill ma + a present verb is 'every time, whenever': kill ma timshi, yiḥsib 'every time you walk, it counts'. Explaining to an elder, keep each step short and add yā ʿammi or ṭāl ʿumrak; the verbs are still the ordinary 'you' forms: tḥuṭṭah, timshi.",
   "grammar": "recycle: kill ma + present verb, 'every time'",
   "dialogue": [
    [
@@ -739,7 +739,7 @@
     "nnazzil it-taṭbīg",
     "we download the app; let's download the app",
     "نحمّل التطبيق",
-    "download it (to a man): nazzilah"
+    "download it (to a man): nazzilah; not ninzil 'we get off' (ننزل, s1u062)"
    ],
    [
     "كل ما تمشي",
@@ -772,7 +772,7 @@
    [
     "زمانكم غير",
     "zamānkum ghēr",
-    "your times are different (to a young man, about his generation)",
+    "your times are different (to young people, about their generation)",
     "زمانكم مختلف",
     "(recognise)"
    ]
@@ -786,7 +786,7 @@
   "id": "s4u077",
   "stage": 4,
   "title": "Stuck in the sand",
-  "goal": "At a café, tell Fahad the long story of how you and Sēf got stuck in the sand on the way to a camp",
+  "goal": "At a café, tell Fahad, who is visiting Dubai, the long story of how you and Sēf got stuck in the sand on the way to a camp",
   "tip": "Set the scene with w + a pronoun + a participle or a present verb, 'as, while': w niḥin rāyḥīn 'as we were on our way', w ana aḥfir 'while I was digging'. Then move on with fi nuṣṣ iṭ-ṭarīg 'halfway', fajʼa, and close with min dhāk il-yōm 'since that day'.",
   "grammar": "recycle: w + pronoun + present verb or participle ('as …'); narrative markers fi nuṣṣ iṭ-ṭarīg, min dhāk il-yōm",
   "dialogue": [
@@ -1211,9 +1211,9 @@
    ],
    [
     "A",
-    "هاه، الحين فهمت. حلوة، بس قديمة!",
-    "hāh, il-ḥīn fhimt. ḥilwa, bas gadīma!",
-    "Ah, now I get it. Good one, but it's old!"
+    "هاه، الحين تذكرتها. حلوة، بس قديمة!",
+    "hāh, il-ḥīn tdhakkart-ha. ḥilwa, bas gadīma!",
+    "Ah, now I remember it. Good one, but it's old!"
    ],
    [
     "B",
@@ -1331,9 +1331,9 @@
    ],
    [
     "B",
-    "لا، هذا الحلو! يقول لك صحى، والطيارة متأخرة ساعتين",
-    "la, hādha l-ḥilu! ygūl-lak ṣiḥa, w iṭ-ṭayyāra mitʼakhkhra sāʿtēn",
-    "No, that's the best part! He says he woke up and the plane was two hours late."
+    "لا، هذا الحلو! يقول لك واحد من الموظفين صحاه، وركب آخر واحد",
+    "la, hādha l-ḥilu! ygūl-lak wāḥid min il-muwaẓẓafīn ṣaḥḥāh, w rikib ākhir wāḥid",
+    "No, that's the best part! He says one of the staff woke him up, and he boarded last."
    ],
    [
     "A",
@@ -1427,7 +1427,7 @@
   "stage": 4,
   "title": "Where was I?",
   "goal": "At a café, tell Fahad and Sēf how you lost the car at the mall with your parents, and keep going when Fahad keeps interrupting",
-  "tip": "Hold the floor with ṭawwil bālak 'hang on', khallni akammil 'let me finish' and la tgāṭiʿni 'don't interrupt me'. Pick the thread up with wēn wiṣalt? 'where was I?', and wrap up with il-mukhtaṣar 'long story short'.",
+  "tip": "Hold the floor with ṭawwil bālak 'hang on', khallni akammil 'let me finish' and la tgāṭiʿni 'don't interrupt me'. Pick the thread up with wēn wiṣalt? 'where was I?', and wrap up with bil-mukhtaṣar 'long story short'.",
   "grammar": "narrative markers: holding the floor and picking the story up again",
   "dialogue": [
    [
@@ -1480,8 +1480,8 @@
    ],
    [
     "B",
-    "هيه. المختصر، بعد عشر دقايق لقيتها بروحي في الطابق الأول!",
-    "hē. il-mukhtaṣar, baʿd ʿashr dagāyig ligēt-ha b-rūḥi fi ṭ-ṭābig il-awwal!",
+    "هيه. بالمختصر، بعد عشر دقايق لقيتها بروحي في الطابق الأول!",
+    "hē. bil-mukhtaṣar, baʿd ʿashr dagāyig ligēt-ha b-rūḥi fi ṭ-ṭābig il-awwal!",
     "Right. Long story short, ten minutes later I found it myself, on the first floor!"
    ],
    [
@@ -1528,8 +1528,8 @@
     ""
    ],
    [
-    "المختصر",
-    "il-mukhtaṣar",
+    "بالمختصر",
+    "bil-mukhtaṣar",
     "long story short, in short",
     "باختصار",
     ""
@@ -1605,9 +1605,9 @@
    ],
    [
     "B",
-    "بعدين الحليب والسكر، لين يفور مرتين",
-    "baʿdēn il-ḥalīb w is-sukkar, lēn yifūr marratēn",
-    "Then the milk and sugar, until it froths up twice."
+    "بعدين الحليب والسكر، لين يفور مرتين. وبعد الكرك، النادي!",
+    "baʿdēn il-ḥalīb w is-sukkar, lēn yifūr marratēn. w baʿd il-karak, in-nādi!",
+    "Then the milk and sugar, until it froths up twice. And after the karak, the gym!"
    ],
    [
     "A",
@@ -1664,13 +1664,6 @@
     "sticking to it, committed (to a routine, a plan) (a man)",
     "ملتزم",
     "a woman: miltazma (ملتزمة); (recognise)"
-   ],
-   [
-    "يبي يتعلم",
-    "yabi yitʿallam",
-    "he wants to learn",
-    "يريد أن يتعلم",
-    ""
    ]
   ],
   "receptive": [
