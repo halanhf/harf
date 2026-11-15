@@ -29,7 +29,7 @@
     "A",
     "هذي يعني عيد ميلادك. اكتب هني",
     "hādhi yaʿni ʿīd mīlādak. iktib hni",
-    "This means your date of birth. Write it here."
+    "This means your birthday. Write it here."
    ],
    [
     "B",
@@ -69,7 +69,7 @@
     "sāʿadtni",
     "you helped me (to a man)",
     "ساعدتني",
-    "to a woman: sāʿadtīni (ساعدتيني); the same spelling read sāʿadatni means 'she helped me'"
+    "to a woman: sāʿadtīni (ساعدتيني); the same spelling read sāʿdatni means 'she helped me'"
    ],
    [
     "حاولت",
@@ -127,7 +127,7 @@
   "stage": 3,
   "title": "At the service counter",
   "goal": "Ask a clerk at a service counter about your paperwork, using Form III verbs in the present: agābil 'I see (someone)', baḥāwil 'I'll try'",
-  "tip": "Form III keeps its long ā in the present: agābil 'I meet, I see (someone)', asāʿdak 'I help you', arājiʿ 'I check back (at an office)'. Future: baḥāwil 'I'll try', batābiʿ 'I'll follow (it) up'. The past is sāfar 'he's gone away', as in sāfart.",
+  "tip": "Form III keeps its long ā in the present: agābil 'I meet, I see (someone)', asāʿdak 'I help you', arājiʿ 'I check back (at an office)'. Future: baḥāwil 'I'll try', batābiʿ 'I'll follow (it) up'. The past has it too: sāfar 'he's gone away' (you know sāfart).",
   "grammar": "Forms III, V, VI as chunks: Form III present (agābil, baḥāwil, arājiʿ)",
   "dialogue": [
    [
@@ -417,7 +417,7 @@
     "تفرج",
     "tfarraj",
     "have a look (round) (to a man)",
-    "تجول وانظر",
+    "تجول / تفرج",
     "to a woman: tfarraji (تفرجي); you look around: titfarraj (تتفرج)"
    ],
    [
@@ -570,7 +570,7 @@
     "bashshir",
     "so, tell me (the news)! (to a man)",
     "ما الأخبار؟",
-    "to a woman: bashshiri (بشري); said when you're waiting for news; also bashshirni (بشرني)"
+    "to a woman: bashshri (بشري); said when you're waiting for news; also bashshirni (بشرني)"
    ],
    [
     "نزل",
@@ -746,8 +746,8 @@
    ],
    [
     "A",
-    "أفا! شلون انكسرت؟",
-    "afa! shlōn inkisrat?",
+    "أفا! كيف انكسرت؟",
+    "afa! chēf inkisrat?",
     "Oh no! How did it break?"
    ],
    [
@@ -984,9 +984,9 @@
    ],
    [
     "B",
-    "هيه! اخترت قميصين من المول، ولبست واحد",
-    "hē! ikhtart gamīṣēn min il-mōl, w libast wāḥid",
-    "Yes! I picked out two shirts at the mall and put one on."
+    "هيه! رحت المول واخترت قميصين، ولبست واحد",
+    "hē! riḥt il-mōl w ikhtart gamīṣēn, w libast wāḥid",
+    "Yes! I went to the mall, picked out two shirts and put one on."
    ],
    [
     "A",
@@ -1065,8 +1065,8 @@
   "stage": 3,
   "title": "The AC isn't working",
   "goal": "Complain at a hotel reception about your room, using Form X verbs: istalamna 'we got (the room)', istaghrabt 'I'm surprised'",
-  "tip": "Form X starts with ista-: istalam 'received, took over', istaghrab 'was surprised', istaʿmal 'used'. Past: istalamna l-ghurfa 'we've got our room'. In the present the i goes: astaʿmil 'I use', yistaʿmil 'he uses': agdar astaʿmil in-nit? 'can I use the internet?'",
-  "grammar": "Forms VII, VIII, X as chunks: Form X (istalam, istaghrab, istaʿmal)",
+  "tip": "Form X starts with ista-: istalam 'received, took over', istaghrab 'was surprised', istakhdam 'used'. Past: istalamna l-ghurfa 'we've got our room'. In the present the i goes: astakhdim 'I use', yistakhdim 'he uses': agdar astakhdim in-nit? 'can I use the internet?'",
+  "grammar": "Forms VII, VIII, X as chunks: Form X (istalam, istaghrab, istakhdam)",
   "dialogue": [
    [
     "B",
@@ -1094,9 +1094,9 @@
    ],
    [
     "B",
-    "والماي الحار بعد انقطع الصبح",
-    "w il-māy il-ḥārr baʿad ingiṭaʿ iṣ-ṣubḥ",
-    "And the hot water went off this morning too."
+    "والماي الحار بعد انقطع",
+    "w il-māy il-ḥārr baʿad ingiṭaʿ",
+    "And the hot water's gone off too."
    ],
    [
     "A",
@@ -1106,8 +1106,8 @@
    ],
    [
     "B",
-    "زين. وأقدر أستعمل النت؟ ما يفتح عندي",
-    "zēn. w agdar astaʿmil in-nit? ma yiftaḥ ʿindi",
+    "زين. وأقدر أستخدم النت؟ ما يفتح عندي",
+    "zēn. w agdar astakhdim in-nit? ma yiftaḥ ʿindi",
     "Good. And can I use the internet? It won't load for me."
    ],
    [
@@ -1154,11 +1154,11 @@
     "to a woman: baṭarrish-lich wāḥid (بطرش لج واحد)"
    ],
    [
-    "أستعمل",
-    "astaʿmil",
+    "أستخدم",
+    "astakhdim",
     "I use",
-    "أستعمل",
-    "agdar astaʿmil …? = can I use …?"
+    "أستخدم",
+    "agdar astakhdim …? = can I use …?; also: astaʿmil (أستعمل)"
    ],
    [
     "النت",
@@ -1182,8 +1182,8 @@
   "stage": 3,
   "title": "Checking out",
   "goal": "Check out of the hotel and tell the receptionist how your stay went, recycling Forms VII, VIII and X",
-  "tip": "istānas 'had a good time' is Form X: istānast 'I enjoyed it', istānasna 'we enjoyed it', to a group istānastu? The mistānis you know is its participle. istaʿmal 'used' and istaḥmal 'put up with' work the same way: ma istaʿmalna shay 'we didn't use anything'.",
-  "grammar": "recycle: Forms VII, VIII, X (ingiṭaʿ, ishtaghal, niḥtāj, istānas, istaʿmal)",
+  "tip": "istānas 'had a good time' is Form X: istānast 'I enjoyed it', istānasna 'we enjoyed it', to a group istānastu? The mistānis you know is its participle. istakhdam 'used' and istaḥmal 'put up with' work the same way: ma istakhdamna shay 'we didn't use anything'.",
+  "grammar": "recycle: Forms VII, VIII, X (ingiṭaʿ, ishtaghal, niḥtāj, istānas, istakhdam)",
   "dialogue": [
    [
     "A",
@@ -1211,14 +1211,14 @@
    ],
    [
     "A",
-    "السموحة. استعملتوا شي من الثلاجة؟",
-    "is-samūḥa. istaʿmaltu shay min ith-thallāja?",
+    "السموحة. استخدمتوا شي من الثلاجة؟",
+    "is-samūḥa. istakhdamtu shay min ith-thallāja?",
     "Sorry about that. Did you use anything from the fridge?"
    ],
    [
     "B",
-    "ما عليه. لا، ما استعملنا شي. نحتاج الفاتورة بس",
-    "ma ʿalēh. la, ma istaʿmalna shay. niḥtāj il-fātūra bas",
+    "ما عليه. لا، ما استخدمنا شي. نحتاج الفاتورة بس",
+    "ma ʿalēh. la, ma istakhdamna shay. niḥtāj il-fātūra bas",
     "That's all right. No, we didn't use anything. We just need the bill."
    ],
    [
@@ -1243,17 +1243,17 @@
     "to a woman (you): istānasti (استانستي); we had a good time: istānasna (استانسنا)"
    ],
    [
-    "استعملت",
-    "istaʿmalt",
+    "استخدمت",
+    "istakhdamt",
     "I used; you used (to a man)",
-    "استعملت / استخدمت",
-    "to a woman (you used): istaʿmalti (استعملتي)"
+    "استخدمت / استعملت",
+    "to a woman (you used): istakhdamti (استخدمتي); also: istaʿmalt (استعملت)"
    ],
    [
-    "ما استعملنا شي",
-    "ma istaʿmalna shay",
+    "ما استخدمنا شي",
+    "ma istakhdamna shay",
     "we didn't use anything",
-    "لم نستعمل شيئًا",
+    "لم نستخدم شيئًا",
     ""
    ],
    [
@@ -1288,7 +1288,7 @@
     "تزورونا",
     "tzūrūna",
     "(you'll) visit us (to a group)",
-    "تزورونا",
+    "تزوروننا",
     "to one man: tzūrna (تزورنا); in shāʼ allāh tzūrūna marra thānya = we hope you'll visit us again"
    ]
   ]
@@ -1333,9 +1333,9 @@
    ],
    [
     "A",
-    "عادي! بس انت محتاج ثلاجة يديدة",
-    "ʿādi! bas inta miḥtāj thallāja yidīda",
-    "No problem! But you need a new fridge."
+    "عادي! بس انتو محتاجين ثلاجة يديدة",
+    "ʿādi! bas intu miḥtājīn thallāja yidīda",
+    "No problem! But you two need a new fridge."
    ],
    [
     "B",
