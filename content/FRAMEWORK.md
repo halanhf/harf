@@ -212,6 +212,7 @@ Teach the pair together, in the same dialogue. Evidence: S sourced; C Gumar phra
 | السلام عليكم | وعليكم السلام | any greeting; more religious than hala (S) | S | u1 |
 | هلا / هلا والله | هلا بك / هلا فيك, هلا والله | casual hello | C هلا بك 71/80, هلا فيك 81/261 | u1; هلا بك s1u017 |
 | شلونك؟ / شحالك؟ | زين الحمد لله; بخير الله يسلمك | how are you | C بخير الله يسلمك 38/24; pair U | u1; s1u017 |
+| الله يوفقك | آمين; الله يوفقك (back) | a wish for success (study, work) | C; pair U (native queue) | s2u090 |
 | مرحبا الساع | (reply U: هلا والله) | warm welcome to an arriving guest (UAE) | S (Eton); C 237/2 | s1u020 |
 | شو اليديد؟ | ما شي | what's new? | S (Eton); C 8/0 [weak]; ما شي 549/11 | s1u017 |
 | شخبارك؟ | زين الحمد لله | what's your news? | C 245/401; reply U | s1u018 |
