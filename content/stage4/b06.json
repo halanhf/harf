@@ -4,7 +4,7 @@
   "stage": 4,
   "title": "The upstairs neighbours kept me awake",
   "goal": "At university, tell Sēf the neighbours upstairs kept you up all night, and talk through whether to complain",
-  "tip": "Recycle khalla + person + verb: ma khallūni anām 'they didn't let me sleep', khallhum usbūʿ 'give them a week'. Advice is lāzim + verb (lāzim tkallimhum 'you have to talk to them') and idha 'if'. To complain about someone: ashtiki ʿalēhum.",
+  "tip": "Recycle khalla + person + verb: ma khallūni anām 'they didn't let me sleep', khal il-ḥāris ykallimhum 'get the watchman to talk to them'. Advice is lāzim + verb (lāzim tkallimhum 'you have to talk to them') and idha 'if'. To complain about someone: ashtiki ʿalēhum.",
   "grammar": "recycle: khalla + verb (ma khallūni anām), lāzim + verb, idha",
   "dialogue": [
    [
@@ -29,7 +29,7 @@
     "B",
     "إزعاج! عيالهم يركضون فوق راسي",
     "izʿāj! ʿyālhum yirkẓūn fōg rāsi",
-    "A racket! Their kids were running around right over my head."
+    "A racket! Their kids run around right over my head."
    ],
    [
     "A",
@@ -45,9 +45,9 @@
    ],
    [
     "A",
-    "عيل قول للحارس حق البناية، هذا شغله",
-    "ʿayal gūl lil-ḥāris ḥagg il-bināya, hādha shughlah",
-    "Then tell the building's watchman; that's his job."
+    "عيل خل الحارس حق البناية يكلمهم، هذا شغله",
+    "ʿayal khal il-ḥāris ḥagg il-bināya ykallimhum, hādha shughlah",
+    "Then get the building's watchman to talk to them; that's his job."
    ],
    [
     "B",
@@ -57,9 +57,9 @@
    ],
    [
     "A",
-    "كلامك صح. عيل خلهم أسبوع، وإذا ما تغير شي، قول للحارس",
-    "kalāmak ṣaḥḥ. ʿayal khallhum usbūʿ, w idha ma tghayyar shay, gūl lil-ḥāris",
-    "Fair enough. Then give them a week, and if nothing changes, tell the watchman."
+    "صح كلامك. عيل عطهم أسبوع، وإذا ما تغير شي، خل الحارس يكلمهم",
+    "ṣaḥḥ kalāmak. ʿayal ʿaṭhum usbūʿ, w idha ma tghayyar shay, khal il-ḥāris ykallimhum",
+    "Fair enough. Then give them a week, and if nothing changes, get the watchman to talk to them."
    ]
   ],
   "items": [
@@ -78,11 +78,11 @@
     "he didn't let me sleep: ma khallāni anām (ما خلاني أنام)"
    ],
    [
-    "ما رقدت",
-    "ma rgadt",
-    "I didn't sleep; you didn't sleep (to a man) (UAE)",
-    "لم أنم",
-    "to a woman: ma rgadti (ما رقدتي); the everyday form you know is ma nimt; (recognise)"
+    "الصوت يوصل لك",
+    "iṣ-ṣōt yōṣal lak",
+    "the noise reaches you, you can hear the noise (to a man)",
+    "الصوت يصل إليك",
+    "to a woman: iṣ-ṣōt yōṣal lich (الصوت يوصل لج); (recognise)"
    ],
    [
     "إزعاج",
@@ -99,11 +99,11 @@
     "you know ṭūl il-yōm 'all day'"
    ],
    [
-    "بالراحة",
-    "bir-rāḥa",
-    "calmly, gently, nicely (in how you say something)",
-    "بهدوء / بلطف",
-    "also 'slowly, carefully'"
+    "خل الحارس يكلمهم",
+    "khal il-ḥāris ykallimhum",
+    "get the watchman to talk to them (to a man)",
+    "اجعل الحارس يكلمهم",
+    "to a woman: khalli l-ḥāris ykallimhum (خلي الحارس يكلمهم)"
    ],
    [
     "ما تغير شي",
@@ -137,7 +137,7 @@
   "stage": 4,
   "title": "The neighbour at the door",
   "goal": "At your flat in Mirdif, the older Emirati neighbour from next door brings food from his family; thank him, offer help, accept his invitation",
-  "tip": "Offers use idha + past: idha ḥtajt ay shay 'if you need anything' (lit. 'if you needed'). Thank a whole family in the plural: ma tgaṣṣrūn 'you're all so kind', tislam īdkum. To an older man: yā ʿammi; ana ḥāẓir 'I'm at your service'.",
+  "tip": "Offers use idha + past: idha ḥtajt ay shay 'if you need anything' (lit. 'if you needed'). To thank a whole family, put the thanks you know in the group form: ma tgaṣṣrūn, tislam īdkum. To an older man: yā ʿammi; ana ḥāẓir 'I'm at your service', and offer back with w inta baʿad.",
   "grammar": "recycle: idha + past for offers (idha ḥtajt), plural you (-kum, -ūn)",
   "dialogue": [
    [
@@ -198,25 +198,25 @@
     "to a woman: illi yammich (اللي يمج); yammak is 'beside you', not yumma 'mum'"
    ],
    [
-    "هريس",
-    "harīs",
-    "harees (wheat slow-cooked with meat)",
-    "هريس",
-    "(recognise)"
+    "بعد العصر",
+    "baʿd il-ʿaṣir",
+    "after the afternoon prayer, in the late afternoon",
+    "بعد العصر",
+    ""
    ],
    [
-    "ما تقصرون",
-    "ma tgaṣṣrūn",
-    "you're (all) so kind, thank you all (lit. you don't fall short) (to a group)",
-    "لا تقصرون",
-    "to one man: ma tgaṣṣir (ما تقصر); to one woman: ma tgaṣṣrīn (ما تقصرين)"
+    "وانت بعد",
+    "w inta baʿad",
+    "and you too, the same goes for you (to a man)",
+    "وأنت أيضًا",
+    "to a woman: w inti baʿad (وانتي بعد)"
    ],
    [
-    "تسلم إيدكم",
-    "tislam īdkum",
-    "bless your hands (to a family or group who cooked)",
-    "سلمت أيديكم",
-    "to one man you know tislam īdak; the reply is allāh ysallmak"
+    "حق الجار",
+    "ḥagg il-jār",
+    "for the neighbour",
+    "للجار",
+    ""
    ],
    [
     "إذا احتجت أي شي",
@@ -224,13 +224,6 @@
     "if you need anything (to a man)",
     "إذا احتجت أي شيء",
     "to a woman: idha ḥtajti ay shay (إذا احتجتي أي شي)"
-   ],
-   [
-    "لا تستحي",
-    "la tistiḥi",
-    "don't be shy, don't hesitate (to a man)",
-    "لا تتردد",
-    "to a woman: la tistiḥīn (لا تستحين)"
    ],
    [
     "الباب بالباب",
@@ -256,9 +249,8 @@
   ],
   "culture": "Harees is wheat slow-cooked with meat and ghee until smooth. Cleaning and grinding the grain is hard work, so it is made in big pots: a dish for Ramadan, for guests and for weddings, and one that gets shared. In 2023 it was added to UNESCO's list of intangible cultural heritage, nominated by the UAE, Oman and Saudi Arabia.",
   "receptive": [
-   1,
-   6,
-   8
+   5,
+   7
   ]
  },
  {
@@ -277,7 +269,7 @@
    ],
    [
     "B",
-    "شفت هذا؟ دخل عليّ فجأة!",
+    "شفت هذا؟ دخل علي فجأة!",
     "shift hādha? dakhal ʿalay fajʼa!",
     "Did you see that? He cut in on me out of nowhere!"
    ],
@@ -291,7 +283,7 @@
     "B",
     "صج! شو يبي هذا؟",
     "ṣij! shu yabi hādha?",
-    "Right! What does he want?"
+    "Seriously! What does he want?"
    ],
    [
     "A",
@@ -326,11 +318,11 @@
   ],
   "items": [
    [
-    "دخل عليّ",
+    "دخل علي",
     "dakhal ʿalay",
     "he cut in on me (in traffic); he came in on me",
     "قطع علي الطريق",
-    "she cut in on me: dakhlat ʿalay (دخلت عليّ)"
+    "she cut in on me: dakhlat ʿalay (دخلت علي)"
    ],
    [
     "لاصق فينا",
@@ -372,7 +364,7 @@
     "mub misriʿ",
     "(I'm) not speeding (a man)",
     "لست مسرعًا",
-    "a woman: mub misirʿa (مب مسرعة)"
+    "a woman: mub misrʿa (مب مسرعة)"
    ],
    [
     "يتني مخالفة",
@@ -413,7 +405,7 @@
     "B",
     "هيه، بس الزحمة الصبح تعبتني",
     "hē, bas iz-zaḥma ṣ-ṣubḥ taʿʿabatni",
-    "Yes, but the morning traffic is wearing me out."
+    "Yes, but the morning traffic has worn me out."
    ],
    [
     "A",
@@ -423,9 +415,9 @@
    ],
    [
     "B",
-    "صح أوفر، بس المحطة مب قريبة من بيتي",
-    "ṣaḥḥ awfar, bas il-maḥaṭṭa mub garība min bēti",
-    "True, it's cheaper, but the station isn't near my place."
+    "صح أوفر، بس المحطة مب قريبة من المكتب",
+    "ṣaḥḥ awfar, bas il-maḥaṭṭa mub garība min il-maktab",
+    "True, it's cheaper, but the station isn't near the office."
    ],
    [
     "A",
@@ -442,13 +434,13 @@
    [
     "A",
     "والبترول والمواقف؟ حسبتها؟",
-    "w il-batrōl w il-mawāgif? ḥsabtha?",
+    "w il-batrōl w il-mawāgif? ḥasabt-ha?",
     "And the petrol and the parking? Have you worked it out?"
    ],
    [
     "B",
     "لا والله ما حسبتها. يمكن أجرب المترو أسبوع",
-    "la wallāh ma ḥsabtha. yimkin ajarrib il-mitrō usbūʿ",
+    "la wallāh ma ḥasabt-ha. yimkin ajarrib il-mitrō usbūʿ",
     "No, honestly, I haven't worked it out. Maybe I'll try the metro for a week."
    ],
    [
@@ -462,7 +454,7 @@
    [
     "تعبتني",
     "taʿʿabatni",
-    "it's wearing me out, it's tiring me out (a feminine thing: traffic, work)",
+    "it's worn me out, it's tired me out (a feminine thing: traffic, work)",
     "أتعبتني",
     "a masculine thing: taʿʿabni (تعبني)"
    ],
@@ -481,18 +473,18 @@
     ""
    ],
    [
-    "مب قريبة من بيتي",
-    "mub garība min bēti",
-    "(it's) not near my place (a feminine thing: a station, a shop)",
-    "ليست قريبة من بيتي",
+    "مب قريبة من المكتب",
+    "mub garība min il-maktab",
+    "(it's) not near the office (a feminine thing: a station, a shop)",
+    "ليست قريبة من المكتب",
     "a masculine thing: mub garīb (مب قريب)"
    ],
    [
-    "على كيفي",
-    "ʿala kēfi",
-    "as I like, my own way, when it suits me",
-    "على راحتي",
-    "you know ʿala kēfak 'as you like'"
+    "في باص يوصلك",
+    "fī bāṣ ywaṣṣlak",
+    "there's a bus that takes you (there) (to a man)",
+    "توجد حافلة توصلك",
+    "to a woman: fī bāṣ ywaṣṣlich (في باص يوصلج); (recognise)"
    ],
    [
     "وقت ما أبي",
@@ -506,26 +498,18 @@
     "il-batrōl",
     "petrol",
     "البنزين",
-    "(recognise)"
+    ""
    ],
    [
-    "المواقف",
-    "il-mawāgif",
-    "the parking, the car parks",
-    "المواقف",
-    "(recognise)"
-   ],
-   [
-    "ما حسبتها",
-    "ma ḥsabtha",
-    "I haven't worked it out, I haven't added it up",
-    "لم أحسبها",
-    "worked it out: ḥsabtha (حسبتها)"
+    "بعدك تيي…؟",
+    "baʿdak tiyi…?",
+    "do you still come (to)…? (to a man)",
+    "هل ما زلت تأتي…؟",
+    "to a woman: baʿdich tiyīn…? (بعدج تيين…؟)"
    ]
   ],
   "receptive": [
-   6,
-   7
+   4
   ]
  },
  {
@@ -544,8 +528,8 @@
    ],
    [
     "B",
-    "كلامك صح يا عمي. القاعة والعشا والمعازيم، كل شي غالي",
-    "kalāmak ṣaḥḥ yā ʿammi. il-gāʿa w il-ʿasha w il-maʿāzīm, kill shay ghāli",
+    "صح كلامك يا عمي. القاعة والعشا والمعازيم، كل شي غالي",
+    "ṣaḥḥ kalāmak yā ʿammi. il-gāʿa w il-ʿasha w il-maʿāzīm, kill shay ghāli",
     "You're right, uncle. The hall, the dinner, the guests: everything's expensive."
    ],
    [
@@ -575,7 +559,7 @@
    [
     "A",
     "هيه، والحكومة تساعدهم بمنحة، بس المفروض ما يبالغون",
-    "hē, w il-ḥukūma tsāʿidhum b-minḥa, bas il-mafrūẓ ma ybālghūn",
+    "hē, w il-ḥukūma tsāʿid-hum b-minḥa, bas il-mafrūẓ ma ybālghūn",
     "Yes, and the government helps them with a grant, but they shouldn't go overboard."
    ],
    [
@@ -586,8 +570,8 @@
    ],
    [
     "A",
-    "زين تقول يا ولدي. بس نشوف لما تعرس انت!",
-    "zēn tgūl yā wildi. bas nshūf lamma tʿarris inta!",
+    "زين قلت يا ولدي. بس نشوف لما تعرس انت!",
+    "zēn gilt yā wildi. bas nshūf lamma tʿarris inta!",
     "Well said, son. But we'll see when you get married yourself!"
    ]
   ],
@@ -639,7 +623,7 @@
     "w ʿalēhum diyūn",
     "and they're in debt (lit. and debts are on them)",
     "وعليهم ديون",
-    "I'm in debt: ʿalay diyūn (عليّ ديون)"
+    "I'm in debt: ʿalay diyūn (علي ديون)"
    ],
    [
     "منحة",
@@ -649,19 +633,18 @@
     "(recognise)"
    ],
    [
-    "ما يبالغون",
-    "ma ybālghūn",
-    "they don't overdo it, they don't go overboard",
-    "لا يبالغون",
-    "(recognise)"
+    "أيام أول",
+    "ayyām awwal",
+    "in the old days, back then",
+    "في الماضي",
+    ""
    ]
   ],
-  "culture": "The mahr is the groom's marriage gift to the bride, agreed as part of the marriage contract. For Emiratis the law sets an upper limit on it, and the government gives Emirati grooms on lower incomes a one-off marriage grant. Even so, many families talk about how hard it has become to keep a wedding simple.",
-  "task": "This week: with a tutor or exchange partner (search «معلم لهجة إماراتية» or «Emirati Arabic tutor»), ask how weddings work in their family: the hall, the guests, the cost. Then give your own view for a minute, using 3 items from this week, e.g. ṣārat tkallif wāyid, kalām in-nās, ʿala gadd il-ḥāl. Keep it going for 8 turns.",
+  "culture": "The mahr is the groom's marriage gift to the bride, agreed as part of the marriage contract. For Emiratis the law sets an upper limit on it, and the government gives a one-off marriage grant to an Emirati man marrying an Emirati woman, if his income is under a set limit. Even so, many families talk about how hard it has become to keep a wedding simple.",
+  "task": "This week: with a tutor or exchange partner (search «معلم لهجة إماراتية» or «Emirati Arabic tutor»), ask how weddings work in their family: the hall, the guests, the cost. Then give your own view for a minute, using 3 items from this week, e.g. ṣārat tkallif wāyid, kalām in-nās, w ʿalēhum diyūn. Keep it going for 8 turns.",
   "receptive": [
    3,
-   7,
-   8
+   7
   ]
  },
  {
@@ -782,7 +765,7 @@
     "kill ʿām w intu b-khēr",
     "many happy returns, happy holiday (lit. every year may you be well) (to a group)",
     "كل عام وأنتم بخير",
-    "to one man: kill ʿām w inta b-khēr; to one woman: kill ʿām w inti b-khēr; the reply: w inta b-khēr"
+    "to one man: kill ʿām w inta b-khēr; to one woman: kill ʿām w inti b-khēr; the reply: w inta b-khēr; the plural is usual even to one person (you and yours)"
    ],
    [
     "وانت بخير",
@@ -792,7 +775,7 @@
     "to a woman: w inti b-khēr (وانتي بخير); to a group: w intu b-khēr (وانتو بخير)"
    ]
   ],
-  "culture": "National Day, officially Eid al-Etihad (Union Day), is on 2 December: on that day in 1971 six emirates formed the union, and Ras al-Khaimah joined in February 1972. It is a public holiday on 2 and 3 December. A month earlier, on 3 November, is Flag Day: at 11 a.m. people across the country raise the flag together.",
+  "culture": "National Day, officially Eid al-Etihad (Union Day), is on 2 December: on that day in 1971 six emirates formed the union, and Ras al-Khaimah joined on 10 February 1972. It is a two-day public holiday, usually around 2 December; the Cabinet sets the dates each year. A month earlier, on 3 November, is Flag Day: at 11 a.m. people across the country raise the flag together.",
   "receptive": [
    5,
    6
@@ -803,8 +786,8 @@
   "stage": 4,
   "title": "Checkpoint 4.4: Fahad comes for National Day",
   "goal": "Checkpoint: Fahad and his cousin visit you in Mirdif over National Day; tell them about your neighbours, plan the evening, and hear about Kuwait's national days",
-  "tip": "Review, and now you say it: ma khallūna nnām 'they didn't let us sleep', khallhum 'let them', idha ḥtajtu shay 'if you need anything' and la tistiḥūn 'don't be shy' (to a group), arīḥ, kill ʿām w intu b-khēr. Fahad uses Kuwaiti forms (shinu, iḥna, mū).",
-  "grammar": "checkpoint 4.4 (s4u045–s4u056): khalla + verb, idha + past, group forms, comparatives, b- future",
+  "tip": "Review, and now you say it: ma khallūna nnām 'they didn't let us sleep', khallhum 'forget them, leave them', maʿak ḥagg, il-khulāṣa, arīḥ and il-ḥilu fīh, kill ʿām w intu b-khēr, and idha ḥtajtu shay 'if you need anything' to a group. Fahad uses Kuwaiti forms (shinu, iḥna).",
+  "grammar": "checkpoint 4.4 (s4u045–s4u056): khalla + verb, agreeing and pros and cons, comparatives, group forms",
   "dialogue": [
    [
     "A",
@@ -826,21 +809,21 @@
    ],
    [
     "B",
-    "كلمنا صاحب الشقة. خلهم، المهم بنطلع الليلة؟",
-    "kallamna ṣāḥib ish-shigga. khallhum, il-muhimm biniṭlaʿ il-lēla?",
-    "We talked to the landlord. Forget them; the main thing is, are we going out tonight?"
+    "كلمنا صاحب الشقة. الخلاصة، خلهم. المهم بنطلع الليلة؟",
+    "kallamna ṣāḥib ish-shigga. il-khulāṣa, khallhum. il-muhimm biniṭlaʿ il-lēla?",
+    "We talked to the landlord. Bottom line: forget them. The main thing is, are we going out tonight?"
    ],
    [
     "A",
-    "أكيد! بس الشوارع زحمة، الكل طالع بالأعلام",
-    "akīd! bas ish-shawāriʿ zaḥma, il-kill ṭāliʿ bil-aʿlām",
-    "Of course! But the roads are jammed; everyone's out with flags."
+    "أكيد! بس الشوارع زحمة، الكل طالع بالأعلام ويهرن",
+    "akīd! bas ish-shawāriʿ zaḥma, il-kill ṭāliʿ bil-aʿlām w yharrin",
+    "Of course! But the roads are jammed; everyone's out with flags, honking."
    ],
    [
     "B",
-    "معك حق. بنروح بالمترو، أريح من السيارة الليلة",
-    "maʿak ḥagg. binrūḥ bil-mitrō, arīḥ min is-sayyāra l-lēla",
-    "You're right. We'll take the metro; it's easier than the car tonight."
+    "معك حق. بنروح بالمترو، أريح. الحلو فيه ما في زحمة",
+    "maʿak ḥagg. binrūḥ bil-mitrō, arīḥ. il-ḥilu fīh ma fī zaḥma",
+    "You're right. We'll take the metro; it's easier. The good thing about it is there's no traffic."
    ],
    [
     "A",
@@ -856,9 +839,9 @@
    ],
    [
     "A",
-    "وانت بخير! وتعال الكويت، البيت بيتك",
-    "w inta b-khēr! w taʿāl il-Kwēt, il-bēt bētak",
-    "And to you! And come to Kuwait; our home is your home."
+    "وانت بخير! وتعال الكويت، البيت بيتك، على قد الحال",
+    "w inta b-khēr! w taʿāl il-Kwēt, il-bēt bētak, ʿala gadd il-ḥāl",
+    "And to you! And come to Kuwait; our home is your home, nothing fancy."
    ],
    [
     "B",
@@ -869,11 +852,11 @@
   ],
   "items": [
    [
-    "ما خلونا ننام",
-    "ma khallūna nnām",
-    "they didn't let us sleep, they kept us awake",
-    "لم يدعونا ننام",
-    "you know ma khallūni anām 'they didn't let me sleep'"
+    "جيران جذي",
+    "jīrān chidhi",
+    "neighbours like that",
+    "جيران مثل هؤلاء",
+    ""
    ],
    [
     "الكل طالع",
@@ -897,21 +880,21 @@
     "(recognise)"
    ],
    [
-    "إذا احتجتوا شي",
-    "idha ḥtajtu shay",
-    "if you need anything (to a group)",
-    "إذا احتجتم شيئًا",
-    "to one man: idha ḥtajt ay shay (you know it); to one woman: idha ḥtajti shay"
+    "من الحين",
+    "min il-ḥīn",
+    "in advance, already (lit. from now)",
+    "مقدمًا",
+    ""
    ],
    [
-    "لا تستحون",
-    "la tistiḥūn",
-    "don't be shy, don't hesitate (to a group)",
-    "لا تترددوا",
-    "to one man: la tistiḥi (you know it); to one woman: la tistiḥīn"
+    "في فبراير",
+    "fi fibrāyir",
+    "in February",
+    "في فبراير",
+    ""
    ]
   ],
-  "culture": "Kuwait marks two days in a row: National Day on 25 February, for independence in 1961, and Liberation Day on 26 February, for the end of the Iraqi occupation in 1991. Both are public holidays.",
+  "culture": "Kuwait marks two days in a row. National Day, 25 February, celebrates independence: that was won on 19 June 1961, and since the 1960s it has been celebrated on the anniversary of Sheikh Abdullah Al-Salem taking office. Liberation Day, 26 February, marks the end of the Iraqi occupation in 1991. Both are public holidays.",
   "receptive": [
    2,
    3

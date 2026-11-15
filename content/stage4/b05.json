@@ -33,9 +33,9 @@
    ],
    [
     "A",
-    "حلو. والملاحظات اللي طرشتها أمس على التعديلات، شفتها؟",
-    "ḥilu. w il-mulāḥaẓāt illi ṭarrasht-ha ams ʿala t-taʿdīlāt, shift-ha?",
-    "Good. And the comments on the changes that I sent yesterday, have you seen them?"
+    "حلو. والملاحظات على التعديلات، حطيتها أمس في المرفق. شفتها؟",
+    "ḥilu. w il-mulāḥaẓāt ʿala t-taʿdīlāt, ḥaṭṭēt-ha ams fi l-murfag. shift-ha?",
+    "Good. And the comments on the changes, I put them in the attachment yesterday. Have you seen them?"
    ],
    [
     "B",
@@ -51,9 +51,9 @@
    ],
    [
     "B",
-    "صح كلامج. المدير بروح له الحين",
-    "ṣaḥḥ kalāmich. il-mudīr barūḥ-lah il-ḥīn",
-    "You're right. The manager, I'll go to him now."
+    "صح كلامج. بروح له الحين وأريح راسي",
+    "ṣaḥḥ kalāmich. barūḥ-lah il-ḥīn w arayyiḥ rāsi",
+    "You're right. I'll go to him now and get it off my mind."
    ]
   ],
   "items": [
@@ -93,18 +93,18 @@
     "(recognise)"
    ],
    [
-    "بخلصها",
-    "bakhalliṣha",
-    "I'll finish them, I'll get them done; I'll finish it (f.)",
-    "سأنهيها",
-    "him / it (m.): bakhallṣah (بخلصه)"
+    "المرفق",
+    "il-murfag",
+    "the attachment (to an email)",
+    "المرفق",
+    "(recognise)"
    ],
    [
-    "الأحسن",
-    "il-aḥsan",
-    "it's best (to), you'd better",
-    "الأفضل",
-    "il-aḥsan trūḥ = you'd better go"
+    "أريح راسي",
+    "arayyiḥ rāsi",
+    "I get it off my mind, I stop worrying about it (lit. I rest my head)",
+    "أريح بالي",
+    ""
    ],
    [
     "تروح له",
@@ -112,18 +112,12 @@
     "you go to him, you go and see him (to a man)",
     "تذهب إليه",
     "to a woman: trūḥīn-lah (تروحين له)"
-   ],
-   [
-    "يتصل فيك",
-    "yittaṣil fīk",
-    "he rings you, he calls you (to a man)",
-    "يتصل بك",
-    "to a woman: yittaṣil fīch (يتصل فيج)"
    ]
   ],
   "receptive": [
    3,
-   4
+   4,
+   5
   ],
   "task": "This week: search YouTube for «سوالف» (chats) or «بودكاست إماراتي» (Emirati podcast). Listen for 5 minutes and write down two sentences that put the topic first, like il-mudīr, ma shiftah. Within a minute you should hear شو / مب (UAE) or شنو / مو (Kuwait). If you hear سوف, ليس or هل all the time, it's fuṣḥā: pick another clip."
  },
@@ -137,9 +131,9 @@
   "dialogue": [
    [
     "A",
-    "يلا، الحساب علي اليوم",
-    "yalla, il-ḥsāb ʿalay il-yōm",
-    "Come on, the bill's on me today."
+    "يلا، اليوم على حسابي",
+    "yalla, il-yōm ʿala ḥsābi",
+    "Come on, today's on me."
    ],
    [
     "B",
@@ -173,9 +167,9 @@
    ],
    [
     "A",
-    "الكيك هذا المطعم يقدمه حق كل الزباين، وببلاش بعد",
-    "il-kēk hādha l-maṭʿam yigaddmah ḥagg kill iz-zbāyin, w b-balāsh baʿad",
-    "This cake, the restaurant gives it to all its customers, and for free too."
+    "الكيك هذا ضيافة، المطعم يقدمه حق كل الزباين ببلاش",
+    "il-kēk hādha ẓiyāfa, il-maṭʿam yigaddmah ḥagg kill iz-zbāyin b-balāsh",
+    "This cake is on the house: the restaurant gives it to all its customers for free."
    ],
    [
     "B",
@@ -193,13 +187,6 @@
     "her / it (f.): ana badfaʿha (أنا بدفعها)"
    ],
    [
-    "مب أنا",
-    "mub ana",
-    "not me, it wasn't me",
-    "لست أنا",
-    "Kuwait: mū ana (مو أنا)"
-   ],
-   [
     "المرة اللي طافت",
     "il-marra illi ṭāfat",
     "last time, the time before",
@@ -207,11 +194,11 @@
     ""
    ],
    [
-    "ادفعه",
-    "idfaʿah",
-    "pay for it (m.) (to a man)",
-    "ادفعه",
-    "to a woman: idfaʿīh (ادفعيه)"
+    "بنرجع له",
+    "binirjaʿ-lah",
+    "we'll come back to it (m.), we'll go back there",
+    "سنعود إليه",
+    "to her / it (f.): binirjaʿ-lha (بنرجع لها)"
    ],
    [
     "القهوة علي",
@@ -247,11 +234,19 @@
     "for free",
     "مجانًا",
     ""
+   ],
+   [
+    "ضيافة",
+    "ẓiyāfa",
+    "on the house, complimentary (lit. hospitality)",
+    "ضيافة",
+    "(recognise)"
    ]
   ],
   "receptive": [
+   5,
    6,
-   7
+   8
   ]
  },
  {
@@ -300,21 +295,21 @@
    ],
    [
     "A",
-    "الدكتور حقكم في الجامعة! باكر بتشوف السيارتين عند الجامعة",
-    "id-daktōr ḥaggkum fi l-jāmʿa! bāchir bitshūf is-sayyārtēn ʿind il-jāmʿa",
-    "Your lecturer at the university! Tomorrow you'll see both cars at the university."
+    "الدكتور حقك في الجامعة! وهو بعد شاف سيارتي وعجبته",
+    "id-daktōr ḥaggak fi l-jāmʿa! w huwa baʿad shāf sayyārti w ʿajbatah",
+    "Your lecturer at the university! And he saw my car too and liked it."
    ],
    [
     "B",
-    "ما صدقت! زين، بس سيارتك لونها شو؟",
-    "ma ṣaddagt! zēn, bas sayyārtak lōnha shu?",
-    "I can't believe it! OK, but your car, what colour is it?"
+    "صج؟! زين، بس سيارتك لونها شو؟",
+    "ṣij?! zēn, bas sayyārtak lōnha shu?",
+    "Really?! OK, but your car, what colour is it?"
    ],
    [
     "A",
-    "هذا سر! بتعرف بروحك",
-    "hādha sirr! bitaʿarf b-rūḥak",
-    "That's a secret! You'll find out for yourself."
+    "هذا سر! بتشوفها باكر عند الجامعة",
+    "hādha sirr! bitshūfha bāchir ʿind il-jāmʿa",
+    "That's a secret! You'll see it tomorrow at the university."
    ]
   ],
   "items": [
@@ -344,7 +339,7 @@
     "biʿt sayyārti",
     "I sold my car",
     "بعت سيارتي",
-    "you sold it (f.), to a man: biʿtha (بعتها)"
+    "it (f.): biʿtha (بعتها)"
    ],
    [
     "شريت",
@@ -358,7 +353,7 @@
     "tikhrab",
     "it (f.) breaks down",
     "تتعطل",
-    "he / it (m.): yikhrab (يخرب)"
+    "(recognise); he / it (m.): yikhrab (يخرب)"
    ],
    [
     "في المعرض",
@@ -383,6 +378,7 @@
    ]
   ],
   "receptive": [
+   5,
    6,
    8
   ]
@@ -392,8 +388,8 @@
   "stage": 4,
   "title": "The flats are all new",
   "goal": "At the office, Maryam shows you some flat ads; talk about rooms, parking and shops, with feminine singular agreement for things in the plural",
-  "tip": "Plural things usually take the feminine singular: is-sayyārāt yidīda 'the cars are new', il-maḥallāt tsakkir badri 'the shops close early', il-ghuraf ṣghīra. For people use the plural: ish-shabāb zēnīn.",
-  "grammar": "agreement with non-human plurals: feminine singular (il-maḥallāt tsakkir, il-ghuraf ṣghīra)",
+  "tip": "Plural things usually take the feminine singular: is-sayyārāt yidīda 'the cars are new', il-maḥallāt tsakkir badri 'the shops close early', il-ghuraf ẓayga. For people use the plural: ish-shabāb zēnīn.",
+  "grammar": "agreement with non-human plurals: feminine singular (il-maḥallāt tsakkir, il-ghuraf ẓayga)",
   "dialogue": [
    [
     "A",
@@ -409,21 +405,21 @@
    ],
    [
     "A",
-    "لا، مب وايد غالية. بس الغرف صغيرة شوي",
-    "la, mub wāyid ghālya. bas il-ghuraf ṣghīra shwayy",
-    "No, they're not that expensive. But the rooms are a bit small."
+    "لا، مب وايد غالية، والإيجار يشمل المواقف. بس الغرف ضيقة شوي",
+    "la, mub wāyid ghālya, w il-ījār yishmal il-mawāgif. bas il-ghuraf ẓayga shwayy",
+    "No, they're not that expensive, and the rent includes parking. But the rooms are a bit cramped."
    ],
    [
     "B",
-    "الغرف الصغيرة ما تفرق معي. المهم المواقف",
-    "il-ghuraf iṣ-ṣghīra ma tfarrig maʿi. il-muhimm il-mawāgif",
-    "Small rooms make no difference to me. What matters is the parking."
+    "الغرف الضيقة ما تفرق معي. المهم المواقف، وين؟",
+    "il-ghuraf iẓ-ẓayga ma tfarrig maʿi. il-muhimm il-mawāgif, wēn?",
+    "Cramped rooms make no difference to me. What matters is the parking: where is it?"
    ],
    [
     "A",
-    "المواقف تحت العمارة، وكلها مظللة، يعني الشمس ما توصل السيارات",
-    "il-mawāgif taḥt il-ʿimāra, w killha mẓallala, yaʿni sh-shams ma tōṣal is-sayyārāt",
-    "The parking's under the building, and it's all shaded, so the sun doesn't get to the cars."
+    "المواقف قدام العمارة، وكلها مظللة، يعني الشمس ما توصل السيارات",
+    "il-mawāgif jiddām il-ʿimāra, w killha mẓallala, yaʿni sh-shams ma tōṣal is-sayyārāt",
+    "The parking's in front of the building, and it's all shaded, so the sun doesn't get to the cars."
    ],
    [
     "B",
@@ -459,32 +455,39 @@
     "these flats: hash-shigag (هالشقق)"
    ],
    [
-    "الغرف",
-    "il-ghuraf",
-    "the rooms",
-    "الغرف",
-    "il-ghuraf ṣghīra = the rooms are small"
+    "قريبة من المترو",
+    "garība min il-mitrō",
+    "close to the metro (f., or things)",
+    "قريبة من المترو",
+    "a masculine thing: garīb min il-mitrō (قريب من المترو)"
+   ],
+   [
+    "المهم المواقف",
+    "il-muhimm il-mawāgif",
+    "what matters is the parking",
+    "المهم المواقف",
+    ""
    ],
    [
     "الشمس ما توصل",
     "ish-shams ma tōṣal",
     "the sun doesn't get (to it), it's out of the sun",
     "الشمس لا تصل",
+    "(recognise)"
+   ],
+   [
+    "قدام العمارة",
+    "jiddām il-ʿimāra",
+    "in front of the building",
+    "أمام العمارة",
     ""
    ],
    [
-    "المواقف",
-    "il-mawāgif",
-    "the parking, the parking spaces",
-    "المواقف",
-    ""
-   ],
-   [
-    "العمارة",
-    "il-ʿimāra",
-    "the building, the block (of flats)",
-    "العمارة",
-    ""
+    "يشمل",
+    "yishmal",
+    "(it) includes",
+    "يشمل",
+    "(recognise) (formal); il-ījār yishmal il-mawāgif = the rent includes parking"
    ],
    [
     "مظللة",
@@ -492,13 +495,6 @@
     "shaded, covered (parking)",
     "مظللة",
     "(recognise)"
-   ],
-   [
-    "المحلات",
-    "il-maḥallāt",
-    "the shops",
-    "المحلات",
-    ""
    ],
    [
     "تسكر",
@@ -510,13 +506,15 @@
    [
     "مب لي",
     "mub li",
-    "(it's) not for me",
-    "ليست لي",
+    "(it's) not for me, it doesn't suit me",
+    "لا تناسبني",
     ""
    ]
   ],
   "receptive": [
-   5
+   3,
+   5,
+   6
   ]
  },
  {
@@ -524,7 +522,7 @@
   "stage": 4,
   "title": "Checkpoint 4.3: news of the rent at the majlis",
   "goal": "Checkpoint: in Bū Rāshid's majlis, with Sēf there, answer his questions about your flat and the landlord, respectfully",
-  "tip": "Review: topic first (ṣāḥib ish-shigga, ma shifnāh), the question word at the end (simaʿt shu?), -ha and feminine agreement for things (il-umūr hādhi), a guess with atwaggaʿ, and respectful replies to an elder: yā ʿammi, ʿala ʿēni w rāsi.",
+  "tip": "Review: topic first (ṣāḥib ish-shigga, ma shifnāh), the question word at the end (simaʿt shu?), feminine agreement for things (il-umūr hādhi yabā-lha), a guess with atwaggaʿ. New: respectful replies to an elder, ʿala ʿēni w rāsi and ma yṣīr illa khēr.",
   "grammar": "checkpoint 4.3: address, guesses, topic first, fronting, question word at the end, non-human plural agreement",
   "dialogue": [
    [
@@ -553,9 +551,9 @@
    ],
    [
     "A",
-    "سيف قال لي. وانت شو بتسوي؟",
-    "Sēf gāl-li. w inta shu bitsawwi?",
-    "Sēf told me. And what are you going to do?"
+    "سيف قال لي. الأخبار توصل بسرعة! وانت شو بتسوي؟",
+    "Sēf gāl-li. il-akhbār tōṣal b-surʿa! w inta shu bitsawwi?",
+    "Sēf told me. News travels fast! And what are you going to do?"
    ],
    [
     "B",
@@ -565,24 +563,24 @@
    ],
    [
     "A",
-    "زين، بس على هونك. الأمور هذي يبالها صبر",
-    "zēn, bas ʿala hōnak. il-umūr hādhi yabā-lha ṣabir",
-    "Good, but take it easy. Things like this need patience."
+    "زين، بس على هونك. الأمور هذي يبالها صبر، والصبر مفتاح الفرج",
+    "zēn, bas ʿala hōnak. il-umūr hādhi yabā-lha ṣabir, w iṣ-ṣabir miftāḥ il-faraj",
+    "Good, but take it easy. Things like this need patience, and patience is the key to relief."
    ],
    [
     "B",
-    "على عيني وراسي يا عمي",
-    "ʿala ʿēni w rāsi yā ʿammi",
-    "I'll do as you say, uncle."
+    "على عيني وراسي يا عمي. إن شاء الله ما يصير إلا خير",
+    "ʿala ʿēni w rāsi yā ʿammi. in shāʼ allāh ma yṣīr illa khēr",
+    "I'll do as you say, uncle. God willing, it'll all turn out fine."
    ]
   ],
   "items": [
    [
-    "ساكن فيها",
-    "sākin fīha",
-    "living in it (f.) (a man)",
-    "ساكن فيها",
-    "a woman: sākna fīha (ساكنة فيها)"
+    "الأخبار توصل بسرعة",
+    "il-akhbār tōṣal b-surʿa",
+    "news travels fast",
+    "الأخبار تصل بسرعة",
+    "(recognise)"
    ],
    [
     "سمعت شو؟",
@@ -592,13 +590,6 @@
     "to a woman: simaʿti shu? (سمعتي شو؟)"
    ],
    [
-    "ما شفناه",
-    "ma shifnāh",
-    "we haven't seen him, we didn't see him",
-    "لم نره",
-    "her: ma shifnāha (ما شفناها)"
-   ],
-   [
     "على هونك",
     "ʿala hōnak",
     "take it easy, take your time, slowly (to a man)",
@@ -606,19 +597,30 @@
     "to a woman: ʿala hōnich (على هونج)"
    ],
    [
-    "يباله صبر",
-    "yabā-lah ṣabir",
-    "it needs patience, it takes patience",
-    "يحتاج إلى صبر",
-    "with a feminine word or several things: yabā-lha ṣabir (يبالها صبر)"
-   ],
-   [
     "على عيني وراسي",
     "ʿala ʿēni w rāsi",
-    "gladly, I'll do as you say (lit. on my eye and my head)",
-    "على الرحب والسعة",
-    "(respectful)"
+    "gladly, I'll do as you say (lit. on my eye and my head) (respectful)",
+    "على العين والرأس",
+    ""
+   ],
+   [
+    "ما يصير إلا خير",
+    "ma yṣīr illa khēr",
+    "it'll all turn out fine, only good will come of it",
+    "لن يحدث إلا الخير",
+    ""
+   ],
+   [
+    "الصبر مفتاح الفرج",
+    "iṣ-ṣabir miftāḥ il-faraj",
+    "patience is the key to relief (a saying)",
+    "الصبر مفتاح الفرج",
+    "(recognise)"
    ]
+  ],
+  "receptive": [
+   0,
+   5
   ]
  },
  {
@@ -667,9 +669,9 @@
    ],
    [
     "A",
-    "هذا غلا المعيشة اللي يتكلمون عنه في الأخبار كل يوم",
-    "hādha ghala l-maʿīsha illi yitkallamūn ʿannah fi l-akhbār kill yōm",
-    "That's the 'cost of living' they talk about on the news every day."
+    "هذا الغلا اللي يتكلمون عنه في الأخبار كل يوم، والكل يشتكي منه",
+    "hādha l-ghala illi yitkallamūn ʿannah fi l-akhbār kill yōm, w il-kill yishtiki minnah",
+    "That's the high cost of living they talk about on the news every day, and everyone complains about it."
    ],
    [
     "B",
@@ -726,24 +728,25 @@
     "yishtakūn",
     "they complain",
     "يشتكون",
-    "yishtakūn min il-ījār = they complain about the rent"
+    "(recognise); he complains: yishtiki (يشتكي)"
    ],
    [
-    "غيرنا",
-    "ghērna",
-    "others, other people (lit. other than us)",
-    "غيرنا",
+    "أكبر شي",
+    "akbar shay",
+    "the biggest thing",
+    "أكبر شيء",
     ""
    ],
    [
-    "المعيشة",
-    "il-maʿīsha",
-    "living, the cost of living (formal)",
-    "المعيشة",
-    "(recognise); ghala l-maʿīsha (غلا المعيشة) = the cost of living (in the news)"
+    "الغلا",
+    "il-ghala",
+    "high prices, the high cost of living",
+    "الغلاء",
+    "(recognise); in the news: ghalāʼ il-maʿīsha (غلاء المعيشة)"
    ]
   ],
   "receptive": [
+   6,
    8
   ],
   "task": "This week: with a tutor or exchange partner (search a tutoring site for «Emirati Arabic tutor»), ask what they think about the cost of living where they live. Agree fully with one point (maʿak ḥagg), agree in part with another (ṣaḥḥ, bas…), and give one reason of your own."
@@ -770,8 +773,8 @@
    ],
    [
     "A",
-    "سيف يقول إنك للحين ساكن ويا ربيعك. ليش ما تسكن بروحك؟",
-    "Sēf ygūl innak lil-ḥīn sākin wiyya rbīʿak. lēsh ma tiskin b-rūḥak?",
+    "سيف يقول إنك للحين ساكن ويا صديقك. ليش ما تسكن بروحك؟",
+    "Sēf ygūl innak lil-ḥīn sākin wiyya ṣadīgak. lēsh ma tiskin b-rūḥak?",
     "Sēf says you're still living with your friend. Why don't you live on your own?"
    ],
    [
@@ -794,9 +797,9 @@
    ],
    [
     "A",
-    "إيه، بس صدقني، الشقة بروحك أحسن لك",
-    "ēh, bas ṣaddigni, ish-shigga b-rūḥak aḥsan lak",
-    "Yeah, but believe me, a flat of your own is better for you."
+    "إيه، بس صدقني، بروحك تاخذ راحتك وعندك خصوصية",
+    "ēh, bas ṣaddigni, b-rūḥak tākhidh rāḥtak w ʿindak khuṣūṣiyya",
+    "Yeah, but believe me, on your own you can relax, and you have privacy."
    ],
    [
     "B",
@@ -829,9 +832,9 @@
    [
     "لا تبالغ",
     "la tbālig",
-    "don't exaggerate (to a man)",
+    "don't exaggerate (to a man) (friends only)",
     "لا تبالغ",
-    "to a woman: la tbālgīn (لا تبالغين); friends only"
+    "to a woman: la tbālgīn (لا تبالغين)"
    ],
    [
     "اسمح لي، بس…",
@@ -848,18 +851,18 @@
     "Kuwait: mū sharṭ (مو شرط)"
    ],
    [
-    "أغلب الوقت",
-    "aghlab il-wagt",
-    "most of the time",
-    "أغلب الوقت",
-    ""
+    "تاخذ راحتك",
+    "tākhidh rāḥtak",
+    "you can relax, you can do as you like (to a man)",
+    "تأخذ راحتك",
+    "(recognise); to a woman: tākhdhīn rāḥtich (تاخذين راحتج)"
    ],
    [
-    "هادي",
-    "hādi",
-    "quiet, calm (a man)",
-    "هادئ",
-    "a woman: hādya (هادية)"
+    "خصوصية",
+    "khuṣūṣiyya",
+    "privacy",
+    "خصوصية",
+    "(recognise)"
    ],
    [
     "كل واحد له رأيه",
@@ -873,12 +876,13 @@
     "inta adra",
     "you know best (to a man)",
     "أنت أدرى",
-    "(recognise); to a woman: inti adra (انتي أدرى)"
+    "to a woman: inti adra (انتي أدرى)"
    ]
   ],
   "receptive": [
-   7,
-   8
+   5,
+   6,
+   7
   ]
  },
  {
@@ -897,9 +901,9 @@
    ],
    [
     "B",
-    "لا، عادي. مردف مب بعيد",
-    "la, ʿādi. Mirdif mub baʿīd",
-    "No, it's fine. Mirdif's not far."
+    "لا، عادي. تعودت على الطريق",
+    "la, ʿādi. tʿawwadt ʿala ṭ-ṭarīg",
+    "No, it's fine. I've got used to the drive."
    ],
    [
     "A",
@@ -977,14 +981,14 @@
     "ma titʿab?",
     "don't you get tired? (to a man)",
     "ألا تتعب؟",
-    "to a woman: ma titʿabīn? (ما تتعبين؟)"
+    "(recognise); to a woman: ma titʿabīn? (ما تتعبين؟)"
    ],
    [
     "الصبح والعصر",
     "iṣ-ṣubḥ w il-ʿaṣir",
     "morning and afternoon, (at) rush hour",
     "الصباح والعصر",
-    ""
+    "(recognise)"
    ],
    [
     "المسافة",
@@ -998,7 +1002,7 @@
     "ʿajbatni l-fikra",
     "I like the idea",
     "أعجبتني الفكرة",
-    ""
+    "UAE also: ʿaybatni (عيبتني)"
    ],
    [
     "المهم تكون مرتاح",
@@ -1009,6 +1013,8 @@
    ]
   ],
   "receptive": [
+   3,
+   4,
    5
   ]
  },
@@ -1017,7 +1023,7 @@
   "stage": 4,
   "title": "The good thing about it, and the problem",
   "goal": "Weigh up the pros and cons of a cheaper flat with Sēf: il-ḥilu fīha…, bas il-mushkila…, min ṣōb thāni…",
-  "tip": "List the good side with il-ḥilu fīha 'the good thing about it' and the bad with bas il-mushkila 'but the problem is' or ʿēbha 'its drawback'. Balance them with min ṣōb… w min ṣōb thāni 'on one hand… on the other', and hedge with ʿala ḥasab 'it depends'.",
+  "tip": "List the good side with il-ḥilu fīha 'the good thing about it' and the bad with bas il-mushkila 'but the problem is'; add more with w fōg hādha 'on top of that'. Balance them with min ṣōb… w min ṣōb thāni 'on one hand… on the other', and hedge with ʿala ḥasab 'it depends'.",
   "grammar": "recycle: comparatives (arkhaṣ, awsaʿ) and inn; weighing pros and cons",
   "dialogue": [
    [
@@ -1052,9 +1058,9 @@
    ],
    [
     "B",
-    "بالضبط. وعيبها بعد إن ما في مترو قريب",
-    "biẓ-ẓabṭ. w ʿēbha baʿad inn ma fī mitrō garīb",
-    "Exactly. And another drawback is there's no metro nearby."
+    "بالضبط. وفوق هذا، ما في مترو قريب",
+    "biẓ-ẓabṭ. w fōg hādha, ma fī mitrō garīb",
+    "Exactly. And on top of that, there's no metro nearby."
    ],
    [
     "A",
@@ -1064,9 +1070,9 @@
    ],
    [
     "B",
-    "على حسب الإيجار اللي بيطلبه صاحب الشقة",
-    "ʿala ḥasab il-ījār illi biyiṭlubah ṣāḥib ish-shigga",
-    "It depends on the rent the landlord's going to ask for."
+    "على حسب الإيجار اللي بيطلبه صاحب شقتنا",
+    "ʿala ḥasab il-ījār illi biyiṭlubah ṣāḥib shiggatna",
+    "It depends on the rent our landlord's going to ask for."
    ],
    [
     "A",
@@ -1080,7 +1086,7 @@
     "الحلو فيها",
     "il-ḥilu fīha",
     "the good thing about it (f.)",
-    "الجميل فيها",
+    "الميزة فيها",
     "about a masculine thing: il-ḥilu fīh (الحلو فيه)"
    ],
    [
@@ -1098,11 +1104,11 @@
     "Kuwait: min nāḥya thānya (من ناحية ثانية)"
    ],
    [
-    "عيبها",
-    "ʿēbha",
-    "its (f.) drawback, the downside of it",
-    "عيبها",
-    "about a masculine thing: ʿēbah (عيبه); ʿēb on its own means 'rude'"
+    "وفوق هذا",
+    "w fōg hādha",
+    "and on top of that, and what's more",
+    "وفوق ذلك",
+    ""
    ],
    [
     "على حسب",
@@ -1123,7 +1129,7 @@
     "il-iʿlān",
     "the ad, the listing",
     "الإعلان",
-    ""
+    "(recognise)"
    ],
    [
     "مسبح",
@@ -1141,6 +1147,7 @@
    ]
   ],
   "receptive": [
+   6,
    7,
    8
   ]
@@ -1150,7 +1157,7 @@
   "stage": 4,
   "title": "With respect, uncle, the difference is big",
   "goal": "In Bū Rāshid's majlis, with Sēf there, disagree with him respectfully about moving further out, then give way on one point",
-  "tip": "With an elder, agree first and only then say bas: ṣaḥḥ kalāmak yā ʿammi, bas il-farg kbīr 'you're right, uncle, but the difference is big'. Give way with ṣaḥḥ, mub qalīla 'true, that's not nothing', and close with yimkin ma yistāhil 'maybe it's not worth it'.",
+  "tip": "With an elder, agree first and only then say bas: ṣaḥḥ kalāmak yā ʿammi, bas il-farg kbīr 'you're right, uncle, but the difference is big'. Give way with ṣaḥḥ, mub shwayy 'true, that's not nothing' and kalāmak fi maḥallah 'what you say is spot on'.",
   "grammar": "recycle: comparatives (aghla min) and cham; disagreeing with an elder, conceding",
   "dialogue": [
    [
@@ -1167,7 +1174,7 @@
    ],
    [
     "A",
-    "يا ولدي، أنا دوم أقول لعيالي: الوقت من ذهب",
+    "يا ولدي، أنا دوم أقول حق عيالي: الوقت من ذهب",
     "yā wildi, ana dōm agūl ḥagg ʿyāli: il-wagt min dhahab",
     "Son, I always tell my children: time is gold."
    ],
@@ -1185,8 +1192,8 @@
    ],
    [
     "B",
-    "ساعة تقريبا… صح، مب قليلة",
-    "sāʿa tagrīban… ṣaḥḥ, mub qalīla",
+    "ساعة تقريبا… صح، مب شوي",
+    "sāʿa tagrīban… ṣaḥḥ, mub shwayy",
     "About an hour… True, that's not nothing."
    ],
    [
@@ -1197,9 +1204,9 @@
    ],
    [
     "B",
-    "والله يا عمي، يمكن ما يستاهل. بفكر فيها زين",
-    "wallāh yā ʿammi, yimkin ma yistāhil. bafakkir fīha zēn",
-    "Honestly, uncle, maybe it isn't worth it. I'll think it over properly."
+    "كلامك في محله يا عمي، يمكن ما يستاهل. بفكر فيها زين",
+    "kalāmak fi maḥallah yā ʿammi, yimkin ma yistāhil. bafakkir fīha zēn",
+    "What you say is spot on, uncle; maybe it isn't worth it. I'll think it over properly."
    ],
    [
     "A",
@@ -1223,13 +1230,6 @@
     ""
    ],
    [
-    "دوم أقول",
-    "dōm agūl",
-    "I always say",
-    "دائمًا أقول",
-    ""
-   ],
-   [
     "الوقت من ذهب",
     "il-wagt min dhahab",
     "time is gold, time is precious (a saying)",
@@ -1241,21 +1241,14 @@
     "bitẓīʿ",
     "(it, f.) will be lost, will go to waste",
     "ستضيع",
-    "he / it (m.): biyẓīʿ (بيضيع)"
+    "(recognise); he / it (m.): biyẓīʿ (بيضيع)"
    ],
    [
-    "ساعة تقريبا",
-    "sāʿa tagrīban",
-    "about an hour",
-    "ساعة تقريبًا",
+    "مب شوي",
+    "mub shwayy",
+    "that's not nothing, that's quite a lot",
+    "ليس قليلًا",
     ""
-   ],
-   [
-    "مب قليلة",
-    "mub qalīla",
-    "that's not nothing, that's quite a lot (f.)",
-    "ليست قليلة",
-    "with a masculine word: mub qalīl (مب قليل)"
    ],
    [
     "احسبها",
@@ -1265,11 +1258,18 @@
     "to a woman: iḥsbīha (احسبيها)"
    ],
    [
-    "ما يستاهل",
-    "ma yistāhil",
-    "it's not worth it",
-    "لا يستحق",
-    ""
+    "بعيدة شوي",
+    "baʿīda shwayy",
+    "a bit far, a bit further out (f.)",
+    "بعيدة قليلًا",
+    "a masculine thing: baʿīd shwayy (بعيد شوي)"
+   ],
+   [
+    "في محله",
+    "fi maḥallah",
+    "spot on, well said, (it's) right (lit. in its place)",
+    "في محله",
+    "kalāmak fi maḥallah = what you say is spot on (to a man)"
    ],
    [
     "تفكر تغير",
@@ -1280,6 +1280,7 @@
    ]
   ],
   "receptive": [
+   1,
    2
   ],
   "culture": "Friendly words don't travel upwards. Yā rayyāl is fine with Sēf but a real faux pas with an elder or in a meeting; to someone like Bū Rāshid it's yā ʿammi, and ṭawīl il-ʿumr is used respectfully to elders, sheikhs and strangers. In this scene B also agrees first, ṣaḥḥ kalāmak yā ʿammi, before his 'but'."
@@ -1288,21 +1289,21 @@
   "id": "s4u050",
   "stage": 4,
   "title": "Bottom line: we're staying",
-  "goal": "On a group call, tell Sēf and Fahad how the talk with the landlord went, weigh it up and say what you've decided",
-  "tip": "Sum up and decide: garār ḥilu 'a good decision', ḥasabt-ha 'I worked it out', garrarna 'we've decided'. You'll also hear il-khulāṣa 'in short, the bottom line'. Recycle the question word at the end: w huwa gāl shu?",
+  "goal": "On a group call (Sēf talks, Fahad asks one question), tell them how the talk with your landlord went and what you've decided",
+  "tip": "Sum up and decide: garār ḥilu 'a good decision', ḥasabt-ha 'I worked it out', garrarna 'we've decided'. You'll also hear iz-zubda 'the bottom line'. Fahad recycles the question word at the end: w huwa gāl shinu?",
   "grammar": "recycle: question word at the end, comparatives; summing up and deciding",
   "dialogue": [
    [
     "A",
-    "ها؟ شو صار ويا صاحب الشقة؟",
-    "hā? shu ṣār wiyya ṣāḥib ish-shigga?",
-    "So? What happened with the landlord?"
+    "ها؟ شو صار ويا صاحب شقتكم؟",
+    "hā? shu ṣār wiyya ṣāḥib shiggatkum?",
+    "So? What happened with your landlord?"
    ],
    [
     "B",
-    "تدرون؟ يبي يزيد الإيجار شوي",
-    "tadrūn? yabi yzīd il-ījār shwayy",
-    "Do you know what? He wants to put the rent up a bit."
+    "تدرون؟ صج يبي يزيد الإيجار",
+    "tadrūn? ṣij yabi yzīd il-ījār",
+    "You know what? He really does want to put the rent up."
    ],
    [
     "A",
@@ -1318,15 +1319,15 @@
    ],
    [
     "A",
-    "وهو قال شو؟",
-    "w huwa gāl shu?",
-    "And he said what?"
+    "وهو قال شنو؟",
+    "w huwa gāl shinu?",
+    "And he said what? (Fahad)"
    ],
    [
     "B",
     "بالأخير تفاهمنا على نص اللي طلبه",
     "bil-akhīr tfāhamna ʿala nuṣṣ illi ṭalabah",
-    "In the end we agreed on half of what he asked for."
+    "In the end we agreed on half the increase he was asking for."
    ],
    [
     "A",
@@ -1342,8 +1343,8 @@
    ],
    [
     "A",
-    "على كل حال، قرار حلو. والخلاصة، انت ومردف ما تفترقون!",
-    "ʿala kill ḥāl, garār ḥilu. w il-khulāṣa, inta w Mirdif ma tiftargūn!",
+    "على كل حال، قرار حلو. والزبدة، انت ومردف ما تفترقون!",
+    "ʿala kill ḥāl, garār ḥilu. w iz-zubda, inta w Mirdif ma tiftargūn!",
     "Anyway, good decision. Bottom line: you and Mirdif are inseparable!"
    ],
    [
@@ -1383,11 +1384,11 @@
     ""
    ],
    [
-    "بتقعدون؟",
-    "bitigʿdūn?",
-    "are you staying? will you stay? (to a group, or about you and others)",
-    "هل ستبقون؟",
-    "to one man: bitigʿid; to a woman: bitigʿdīn (بتقعدين)"
+    "ما تفترقون",
+    "ma tiftargūn",
+    "you're inseparable, you never part (to a group)",
+    "لا تفترقون",
+    "(recognise)"
    ],
    [
     "حسبتها",
@@ -1411,14 +1412,15 @@
     "I've decided: garrart (قررت)"
    ],
    [
-    "الخلاصة",
-    "il-khulāṣa",
-    "in short, the bottom line (is)",
+    "الزبدة",
+    "iz-zubda",
+    "the bottom line, the gist (lit. the butter)",
     "الخلاصة",
     "(recognise)"
    ]
   ],
   "receptive": [
+   4,
    8
   ],
   "task": "This week: in Talk, ask your partner to play your landlord, who wants to put the rent up. Disagree politely (ismaḥ-li, bas…; mub sharṭ), give way on one point (maʿak ḥagg, bas…) and finish with an agreement (tfāhamna ʿala…). Keep it going for 8 turns, and don't invent any official rules: just talk it through."
