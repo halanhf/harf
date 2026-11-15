@@ -39,15 +39,15 @@
    ],
    [
     "B",
-    "هيه، وصلتني. شفتها الحين",
-    "hē, wiṣlatni. shift-ha l-ḥīn",
-    "Yes, I've got it. I've seen it now."
+    "هيه، وصلتني. وطرش لي صورة المكان بعد",
+    "hē, wiṣlatni. w ṭarrish-li ṣūrat il-makān baʿad",
+    "Yes, I've got it. And send me a photo of the place too."
    ],
    [
     "A",
-    "زين. يلا، أشوفك هناك",
-    "zēn. yalla, ashūfak hnāk",
-    "Good. Right, see you there."
+    "زين، بطرشها. يلا، أشوفك هناك",
+    "zēn, baṭarrish-ha. yalla, ashūfak hnāk",
+    "OK, I'll send it. Right, see you there."
    ]
   ],
   "items": [
@@ -511,7 +511,7 @@
     "ēh",
     "yes (Kuwait)",
     "نعم",
-    "like ī (إي) from u2; UAE: hē (هيه)"
+    "UAE: hē (هيه); like ī (إي) from u2"
    ],
    [
     "شنو؟",
@@ -577,13 +577,13 @@
     "A",
     "سالم، تعال! هذول ربعي من الكويت. تعرفهم؟",
     "Sālim, taʿāl! hadhōl rabʿi min il-Kwēt. taʿarfhum?",
-    "Sālim, come here! These are my mates from Kuwait. Do you know them?"
+    "Sālim, come here! These are my mates from Kuwait. Have you met them?"
    ],
    [
     "B",
     "لا، ما أعرفهم. هلا والله، حياكم الله في دبي",
     "la, ma aʿarfhum. hala wallāh, ḥayyākum allāh fi Dbayy",
-    "No, I don't. Hi, welcome to Dubai, all of you."
+    "No, I haven't. Hi, welcome to Dubai, all of you."
    ],
    [
     "A",
@@ -636,7 +636,7 @@
     "ḥēl",
     "very, really, a lot (Kuwait)",
     "جدًا / كثيرًا",
-    "before or after the word: ḥēl ḥilu, fikra ḥilwa ḥēl; UAE: wāyid (وايد)"
+    "UAE: wāyid (وايد); before or after the word: ḥēl ḥilu, fikra ḥilwa ḥēl"
    ],
    [
     "إيه والله",
@@ -680,7 +680,7 @@
   "stage": 2,
   "title": "Is there a table?",
   "goal": "Wait for Sēf with Fahad at a busy restaurant: understand aku and māku, and find somewhere to sit",
-  "tip": "Kuwaitis say aku 'there is' and māku 'there isn't' where Emiratis say fī and ma fī: māku ṭāwla 'there are no tables'. shaku? 'what's up?' comes from the same word. Fahad also says mū mushkila for your mub mushkila, and illaḥīn beside il-ḥīn.",
+  "tip": "Kuwaitis say aku 'there is' and māku 'there isn't' where Emiratis say fī and ma fī (many Kuwaitis say fī and ma fī too): māku ṭāwla 'there are no tables'. shaku? 'what's up?' comes from the same word. Fahad also says mū mushkila for your mub mushkila.",
   "grammar": "Kuwaiti forms for recognition: aku, māku, shaku",
   "dialogue": [
    [
@@ -760,7 +760,7 @@
     "illaḥīn",
     "now (Kuwait)",
     "الآن",
-    "Kuwaitis also say il-ḥīn (الحين), the UAE default"
+    "Kuwaitis say il-ḥīn (الحين), the UAE default, even more often; you'll hear illaḥīn in the UAE too"
    ],
    [
     "بيتأخر",
@@ -870,7 +870,7 @@
     "ummak",
     "your mum (to a man)",
     "أمك",
-    "to a woman: ummich (أمج); your dad: ubūk (أبوك)"
+    "to a woman: ummich (أمج); your dad: ubūk (أبوك); you'll also hear il-wālda (الوالدة) 'your mother' (respectful)"
    ],
    [
     "سلم عليها",
@@ -890,7 +890,7 @@
     "الله يسلمها",
     "allāh ysallimha",
     "God keep her (reply when she sends greetings)",
-    "",
+    "سلمها الله",
     "of a man: allāh ysallmah (s1u020)"
    ],
    [
