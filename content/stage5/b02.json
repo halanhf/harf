@@ -4,8 +4,8 @@
   "stage": 5,
   "title": "Wallāh il-ʿaẓīm, it wasn't me!",
   "goal": "At the office, Maryam asks who took the cake for today's party; deny it firmly, then help her work out where it went",
-  "grammar": "strong denial: an oath, mub ana, ḥatta ma + verb, ma … ay ḥad",
-  "tip": "Stack your negatives for a firm denial: an oath (wallāh il-ʿaẓīm), the denial (ma lamast-ha), then 'not even' with ḥatta ma + verb (ḥatta ma dakhalt il-maṭbakh). Inside a negative, 'anyone' is ay ḥad: ma shift ay ḥad. Put the stress on 'me' with mub ana.",
+  "grammar": "strong denial: aḥlif lich, mub ana, ḥatta ma + verb, ma … ay ḥad",
+  "tip": "Stack your negatives for a firm denial: an oath (aḥlif lich, or wallāh il-ʿaẓīm), the denial (ma lamast-ha), then 'not even' with ḥatta ma + verb (ḥatta ma dakhalt il-maṭbakh). Inside a negative, 'anyone' is ay ḥad: ma shift ay ḥad. Put the stress on 'me' with mub ana.",
   "dialogue": [
    [
     "A",
@@ -15,9 +15,9 @@
    ],
    [
     "B",
-    "مب أنا! والله العظيم ما لمستها",
-    "mub ana! wallāh il-ʿaẓīm ma lamast-ha",
-    "It wasn't me! I swear to God I didn't touch it."
+    "مب أنا! أحلف لج، ما لمستها",
+    "mub ana! aḥlif lich, ma lamast-ha",
+    "It wasn't me! I swear to you I didn't touch it."
    ],
    [
     "A",
@@ -77,11 +77,11 @@
     ""
    ],
    [
-    "والله العظيم",
-    "wallāh il-ʿaẓīm",
-    "I swear to God (lit. by God Almighty)",
-    "والله العظيم",
-    "for a serious denial or promise; don't use it for small things"
+    "أحلف لج",
+    "aḥlif lich",
+    "I swear to you (to a woman)",
+    "أحلف لكِ",
+    "to a man: aḥlif lak (أحلف لك)"
    ],
    [
     "ما لمستها",
@@ -428,21 +428,21 @@
    ],
    [
     "B",
-    "أكيد! عمري ما شفت سباق هجن",
-    "akīd! ʿumri ma shift sibāg hijin",
-    "Definitely! I've never seen a camel race in my life."
+    "أكيد! عمري ما شفت ولا سباق",
+    "akīd! ʿumri ma shift wala sibāg",
+    "Definitely! I've never seen a single race in my life."
    ],
    [
     "A",
     "صج؟ ولا مرة؟ ولا حتى في التلفزيون؟",
-    "ṣij? wala marra? wala ḥatta fi t-tilifizyōn?",
+    "ṣij? wala marra? wala ḥatta fi t-tilfizyōn?",
     "Really? Not once? Not even on TV?"
    ],
    [
     "B",
-    "ولا مرة. وما أعرف أي شي عن الهجن",
-    "wala marra. w ma aʿarf ay shay ʿan il-hijin",
-    "Not once. And I don't know anything about racing camels."
+    "ولا مرة. وما أعرف أي شي عنها",
+    "wala marra. w ma aʿarf ay shay ʿanha",
+    "Not once. And I don't know anything about them."
    ],
    [
     "A",
@@ -471,7 +471,7 @@
    [
     "A",
     "قبل الفجر. والسباق الصبح بدري، يعني ما في نوم!",
-    "gabl il-fajr. w is-sibāg iṣ-ṣubḥ badri, yaʿni ma fī nōm!",
+    "gabil il-fajr. w is-sibāg iṣ-ṣubḥ badri, yaʿni ma fī nōm!",
     "Before dawn. The race is early in the morning, so no lie-in!"
    ],
    [
@@ -519,7 +519,7 @@
    ],
    [
     "قبل الفجر",
-    "gabl il-fajr",
+    "gabil il-fajr",
     "before dawn",
     "قبل الفجر",
     ""
@@ -564,7 +564,7 @@
    [
     "A",
     "برو، عطني مفتاح سيارتك! بس لفة وحدة حول المجلس",
-    "brō, ʿaṭni miftāḥ sayyārtak! bas laffa wiḥda ḥōl il-majlis",
+    "brō, ʿaṭni miftāḥ sayyārtak! bas laffa waḥda ḥōl il-majlis",
     "Bro, give me your car key! Just one spin round the majlis."
    ],
    [
@@ -674,7 +674,7 @@
    ],
    [
     "لفة وحدة",
-    "laffa wiḥda",
+    "laffa waḥda",
     "one spin, one quick drive round",
     "لفة واحدة",
     "(recognise)"
@@ -723,7 +723,7 @@
    [
     "B",
     "شو ما صار، أنا بكون هناك قبل الساعة ثمان",
-    "shu ma ṣār, ana bakūn hnāk gabl is-sāʿa thamān",
+    "shu ma ṣār, ana bakūn hnāk gabil is-sāʿa thamān",
     "Whatever happens, I'll be there before eight."
    ],
    [
@@ -1119,7 +1119,7 @@
   "title": "Who says you need a degree?",
   "goal": "In the majlis, with Sēf there, Rāshid says he'll skip university and become a YouTuber; argue with him using questions, and find a middle way",
   "grammar": "rhetorical questions in an argument: minu gāl inn…?, shu l-fāyda min…?, wēn il-mushkila?",
-  "tip": "Argue with questions that don't want an answer: minu gāl inn…? 'who says…?', shu l-fāyda min…? 'what's the point of…?', wēn il-mushkila? 'where's the problem?'. A question can also push back gently: lēsh tṣaʿʿibha ʿala nafsak? 'why make it hard for yourself?'",
+  "tip": "Argue with questions that don't want an answer: minu gāl inn…? 'who says…?', shu l-fāyda min…? 'what's the point of…?', wēn il-mushkila? 'where's the problem?'. A question can also push back gently: lēsh titʿib nafsak? 'why wear yourself out?'",
   "dialogue": [
    [
     "A",
@@ -1165,9 +1165,9 @@
    ],
    [
     "B",
-    "صح، بس ليش تصعبها على نفسك؟ تقدر تسوي الثنتين",
-    "ṣaḥḥ, bas lēsh tṣaʿʿibha ʿala nafsak? tigdar tsawwi th-thintēn",
-    "True, but why make it hard for yourself? You can do both."
+    "صح، بس ليش تتعب نفسك؟ تقدر تسوي الثنتين",
+    "ṣaḥḥ, bas lēsh titʿib nafsak? tigdar tsawwi th-thintēn",
+    "True, but why wear yourself out? You can do both."
    ],
    [
     "A",
@@ -1212,11 +1212,11 @@
     ""
    ],
    [
-    "ليش تصعبها على نفسك؟",
-    "lēsh tṣaʿʿibha ʿala nafsak?",
-    "why make it hard for yourself? (to a man)",
-    "لماذا تصعبها على نفسك؟",
-    "to a woman: lēsh tṣaʿʿbīnha ʿala nafsich (ليش تصعبينها على نفسج)"
+    "ليش تتعب نفسك؟",
+    "lēsh titʿib nafsak?",
+    "why wear yourself out? why make it hard for yourself? (to a man)",
+    "لماذا تتعب نفسك؟",
+    "to a woman: lēsh titʿbīn nafsich? (ليش تتعبين نفسج؟)"
    ],
    [
     "الشهادة",
@@ -1366,10 +1366,10 @@
     "(recognise)"
    ],
    [
-    "ضيعت وايد",
-    "ẓayyaʿt wāyid",
-    "I've missed out on a lot",
-    "فاتني الكثير",
+    "حوالينا",
+    "ḥawālēna",
+    "all around us",
+    "حولنا",
     ""
    ],
    [
@@ -1562,15 +1562,15 @@
    ],
    [
     "B",
-    "ما أقول لا، بس الجويستك حقي كان خربان",
-    "ma agūl la, bas il-jōystik ḥaggi kān kharbān",
-    "I won't say no, but my controller was broken."
+    "ما أقول لا، بس في الشوط الأول ما ركزت",
+    "ma agūl la, bas fi sh-shōṭ il-awwal ma rakkazt",
+    "I won't say no, but I wasn't focused in the first half."
    ],
    [
     "A",
-    "كل مرة نفس العذر! الجويستك، النت، التلفزيون",
-    "kill marra nafs il-ʿudhur! il-jōystik, in-net, it-tilifizyōn",
-    "The same excuse every time! The controller, the internet, the TV."
+    "كل مرة نفس العذر! ما ركزت، الجويستك خربان، النت بطيء",
+    "kill marra nafs il-ʿudhur! ma rakkazt, il-jōystik kharbān, in-nit baṭīʼ",
+    "The same excuse every time! I wasn't focused, the controller's broken, the internet's slow."
    ],
    [
     "B",
@@ -1633,11 +1633,11 @@
     "an excuse: ʿudhur (عذر); the same excuse: nafs il-ʿudhur"
    ],
    [
-    "خربان",
-    "kharbān",
-    "broken, not working (a thing, m.)",
-    "معطل",
-    "a feminine thing: kharbāna (خربانة)"
+    "ما ركزت",
+    "ma rakkazt",
+    "I wasn't focused, I didn't concentrate",
+    "لم أركز",
+    "you weren't focused: ma rakkazt (to a man), ma rakkazti (to a woman)"
    ],
    [
     "الجويستك",
@@ -1691,19 +1691,19 @@
    [
     "B",
     "زادت عشرين بالمية... لا، أقصد عشرة",
-    "zādat ʿishrīn bil-miya… la, agṣid ʿashara",
+    "zādat ʿishrīn bil-miya… la, agṣid ʿashra",
     "They went up twenty per cent… no, I mean ten."
    ],
    [
     "A",
     "عشرة ولّا عشرين؟ في فرق!",
-    "ʿashara walla ʿishrīn? fī farg!",
+    "ʿashra walla ʿishrīn? fī farg!",
     "Ten or twenty? There's a difference!"
    ],
    [
     "B",
     "السموحة، زلة لسان. عشرة بالمية، مب عشرين",
-    "is-samūḥa, zallat lisān. ʿashara bil-miya, mub ʿishrīn",
+    "is-samūḥa, zallat lisān. ʿashra bil-miya, mub ʿishrīn",
     "Sorry, a slip of the tongue. Ten per cent, not twenty."
    ],
    [
@@ -1759,15 +1759,15 @@
     ""
    ],
    [
-    "خلني أقولها بطريقة ثانية",
-    "khallni agūlha b-ṭarīga thānya",
-    "let me put it another way",
-    "دعني أقولها بطريقة أخرى",
-    ""
+    "بطريقة ثانية",
+    "b-ṭarīga thānya",
+    "another way, differently",
+    "بطريقة أخرى",
+    "let me put it another way: khallni agūlha b-ṭarīga thānya"
    ],
    [
     "عشرة بالمية",
-    "ʿashara bil-miya",
+    "ʿashra bil-miya",
     "ten per cent",
     "عشرة بالمئة",
     ""
@@ -1918,13 +1918,6 @@
     ""
    ],
    [
-    "الراتب بيزيد",
-    "ir-rātib biyzīd",
-    "the salary will go up",
-    "سيزيد الراتب",
-    ""
-   ],
-   [
     "كل الأمهات",
     "kill il-ummahāt",
     "all mothers, all mums",
@@ -1947,8 +1940,8 @@
    ]
   ],
   "receptive": [
-   7,
-   8
+   6,
+   7
   ]
  },
  {
@@ -2155,7 +2148,7 @@
     "ma yiḥtāj tiḥlif",
     "no need to swear (to a man)",
     "لا داعي أن تحلف",
-    "to a woman: ma yiḥtāj tiḥlifīn (ما يحتاج تحلفين)"
+    "to a woman: ma yiḥtāj tiḥlifīn (ما يحتاج تحلفين); (recognise)"
    ],
    [
     "لا تصدقه",
@@ -2194,6 +2187,7 @@
    ]
   ],
   "receptive": [
+   0,
    4,
    5
   ]

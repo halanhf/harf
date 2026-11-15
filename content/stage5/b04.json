@@ -819,7 +819,7 @@
   "stage": 5,
   "title": "Can you do it cheaper?",
   "goal": "At the office, a client says your team's offer is too expensive; hold the price politely, and give him something in return for a small discount",
-  "tip": "Don't drop the price at once. Show what he gets (nkhalliṣ gabl il-mawʿid b-usbūʿ), ask for something back (ʿala sharṭ twaggʿūn il-ʿagid hal-usbūʿ) and keep the respect (ṭāl ʿumrak). ṣaddigni 'believe me' backs a point, but use it once, not in every line.",
+  "tip": "Don't drop the price at once. Show what he gets (nkhalliṣ gabil il-mawʿid b-usbūʿ), ask for something back (ʿala sharṭ twaggʿūn il-ʿagid hal-usbūʿ) and keep the respect (ṭāl ʿumrak). ṣaddigni 'believe me' backs a point, but use it once, not in every line.",
   "grammar": "negotiating: giving something in return (ʿala sharṭ…, nafs is-siʿir bas…)",
   "dialogue": [
    [
@@ -830,9 +830,9 @@
    ],
    [
     "B",
-    "نفهمك، طال عمرك. بس صدقني، شغلنا يستاهل",
-    "nifhamak, ṭāl ʿumrak. bas ṣaddigni, shughulna yistāhil",
-    "We understand, sir. But believe me, our work is worth it."
+    "أفهمك، طال عمرك. بس صدقني، شغلنا يستاهل",
+    "afhamak, ṭāl ʿumrak. bas ṣaddigni, shughulna yistāhil",
+    "I understand, sir. But believe me, our work is worth it."
    ],
    [
     "A",
@@ -885,13 +885,6 @@
   ],
   "items": [
    [
-    "تنزلون السعر",
-    "tnazzlūn is-siʿir",
-    "you bring the price down (to a group)",
-    "تخفضون السعر",
-    "to one man: tnazzil is-siʿir (تنزل السعر)"
-   ],
-   [
     "نفس السعر",
     "nafs is-siʿir",
     "the same price",
@@ -910,6 +903,13 @@
     "mub shēn",
     "not bad (at all)",
     "ليس سيئًا",
+    "(recognise)"
+   ],
+   [
+    "الميزانية",
+    "il-mīzāniyya",
+    "the budget",
+    "الميزانية",
     "(recognise)"
    ],
    [
@@ -942,6 +942,7 @@
    ]
   ],
   "receptive": [
+   2,
    3,
    4,
    7
@@ -1598,13 +1599,6 @@
     ""
    ],
    [
-    "طلع زين",
-    "ṭilaʿ zēn",
-    "(it) came back fine, turned out fine",
-    "كان جيدًا",
-    "a feminine thing: ṭilʿat zēna (طلعت زينة)"
-   ],
-   [
     "تنزل شوي",
     "tnazzil shwayy",
     "you knock a bit off, you come down a bit (on price) (to a man)",
@@ -1622,7 +1616,7 @@
   "receptive": [
    0,
    2,
-   8
+   7
   ],
   "culture": "When someone shows you something new, Gulf speakers admire it with mā shāʼ allāh, to praise it without envy, and say mabrūk for the new thing; the reply is allāh ybārik fīk. So B starts with mā shāʼ allāh even while he points out the old tyres, and the seller's mabrūk closes the deal."
  }
