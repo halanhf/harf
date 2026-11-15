@@ -15,9 +15,9 @@
       ],
       [
         "A",
-        "وصلنا قبل شوي. وانت؟",
-        "wiṣalna gabil shwayy. w inta?",
-        "We got here a little while ago. And you?"
+        "هلا والله! وصلنا قبل شوي. وانت؟",
+        "hala wallāh! wiṣalna gabil shwayy. w inta?",
+        "Hi! We got here a little while ago. And you?"
       ],
       [
         "B",
@@ -441,7 +441,7 @@
     "id": "s1u041",
     "stage": 1,
     "title": "Where did you put the key?",
-    "goal": "Say where you put something and who took it, and whether you've eaten: ḥaṭṭēt, khadht, kalt.",
+    "goal": "Tell Sēf where you put the car key and who took it, and say whether you've eaten: ḥaṭṭēt, khadht, kalt.",
     "grammar": "Past tense II: doubled and hamzated verbs (ḥaṭṭēt, khadht, kalt)",
     "tip": "Doubled verbs (ḥaṭṭ put) add -ē- like sawwēt: ḥaṭṭēt (I put, you put). 'Take' and 'eat' have short forms: khadh (he took) → khadht (I took), kal (he ate) → kalt (I ate). To a woman: ḥaṭṭēti, khadhti, kalti.",
     "dialogue": [
@@ -471,9 +471,9 @@
       ],
       [
         "A",
-        "آسف، أنا خذت المفتاح! كلت شي؟",
-        "āsif, ana khadht il-miftāḥ! kalt shay?",
-        "Sorry, I took the key! Have you eaten anything?"
+        "آسف، أنا خذت المفتاح! يلا، كلت شي؟",
+        "āsif, ana khadht il-miftāḥ! yalla, kalt shay?",
+        "Sorry, I took the key! Right, have you eaten anything?"
       ],
       [
         "B",
@@ -557,9 +557,9 @@
       ],
       [
         "B",
-        "الله يحييج. يبت لج حلويات",
-        "allāh yḥayyīch. yibt-lich ḥalawiyyāt",
-        "Thank you. I brought you some sweets."
+        "الله يحييج. يبت لكم حلويات",
+        "allāh yḥayyīch. yibt-lkum ḥalawiyyāt",
+        "Thank you. I brought you all some sweets."
       ],
       [
         "A",
@@ -575,15 +575,15 @@
       ],
       [
         "A",
-        "لا، ما يا من الجامعة. ييت ويا منو؟",
-        "la, ma yā min il-jāmʿa. yīt wiyya minu?",
-        "No, he hasn't come back from the university. Who did you come with?"
+        "ما يا من الجامعة. ييت ويا منو؟",
+        "ma yā min il-jāmʿa. yīt wiyya minu?",
+        "He hasn't come back from the university yet. Who did you come with?"
       ],
       [
         "B",
-        "ييت بروحي، في التاكسي",
-        "yīt b-rōḥi, fi t-tāksi",
-        "I came on my own, in a taxi."
+        "ييت بروحي، بتاكسي",
+        "yīt b-rōḥi, b-tāksi",
+        "I came on my own, by taxi."
       ]
     ],
     "items": [
@@ -606,7 +606,7 @@
         "yibt-lak",
         "I brought you (to a man)",
         "أحضرت لك",
-        "to a woman: yibt-lich (يبت لج)"
+        "to a woman: yibt-lich (يبت لج); to a group or a family: yibt-lkum (يبت لكم)"
       ],
       [
         "ما يا",
@@ -644,11 +644,11 @@
         ""
       ],
       [
-        "في التاكسي",
-        "fi t-tāksi",
-        "in a taxi, by taxi",
-        "في سيارة الأجرة",
-        ""
+        "بتاكسي",
+        "b-tāksi",
+        "by taxi",
+        "بسيارة أجرة",
+        "also said: fi t-tāksi (في التاكسي)"
       ]
     ]
   },
@@ -748,7 +748,7 @@
     "title": "Which day?",
     "goal": "Pick a day to go out with a friend, name the days of the week, and say good night.",
     "grammar": "Days of the week: yōm + day",
-    "tip": "Days come with yōm 'day': yōm il-aḥad (Sun), il-ithnēn (Mon), ith-thulāthā (Tue), il-arbiʿa (Wed), il-khamīs (Thu), il-jumʿa (Fri), is-sabt (Sat). No word for 'on' is needed: yōm il-jumʿa ʿindi shughul (on Friday I've got work).",
+    "tip": "Days come with yōm 'day': yōm il-aḥad (Sun), il-ithnēn (Mon), ith-thalātha (Tue), il-arbaʿa (Wed), il-khamīs (Thu), il-jumʿa (Fri), is-sabt (Sat). No word for 'on' is needed: yōm il-jumʿa ʿindi shughul (on Friday I've got work).",
     "culture": "Since January 2022 the UAE's official weekend has been Saturday and Sunday, and federal government offices close at Friday noon (Sharjah's government takes Friday off too). Kuwait's weekend is Friday and Saturday. Friday's noon prayer is the main prayer of the week, so Friday plans usually start after it.",
     "dialogue": [
       [
@@ -895,9 +895,9 @@
       ],
       [
         "A",
-        "زين. يلا، نتغدى الظهر؟",
-        "zēn. yalla, nitghadda ẓ-ẓuhur?",
-        "Good. Shall we have lunch at midday?"
+        "زين. يلا، نتغدى ويا الكل الظهر؟",
+        "zēn. yalla, nitghadda wiyya l-kill iẓ-ẓuhur?",
+        "Good. Shall we have lunch with everyone at midday?"
       ]
     ],
     "items": [
@@ -927,7 +927,7 @@
         "il-lēl",
         "the night",
         "الليل",
-        "at night: fi l-lēl; you'll also hear بالليل"
+        "at night: fi l-lēl; also said: bil-lēl (بالليل)"
       ],
       [
         "بعد المغرب",
@@ -965,7 +965,7 @@
     "title": "What time is the film?",
     "goal": "Tell the time with half past, quarter past and quarter to, and count minutes, before a film with Sēf.",
     "grammar": "Telling the time (w nuṣṣ, w rubʿ, illa rubʿ); a singular noun after 11",
-    "tip": "is-sāʿa + hour: is-sāʿa thintēn (two o'clock), is-sāʿa waḥda (one). Then w nuṣṣ (half past), w rubʿ (quarter past), illa rubʿ (quarter to). From 11 up the noun stays singular: khamsṭaʿash dagīga, but khams dagāyig.",
+    "tip": "is-sāʿa + hour: is-sāʿa thintēn (two o'clock), is-sāʿa waḥda (one). Then w nuṣṣ (half past), w rubʿ (quarter past), illa rubʿ (quarter to). From 11 up the noun stays singular: ʿishrīn dagīga, khamsṭaʿash dagīga, but khams dagāyig.",
     "dialogue": [
       [
         "A",
@@ -993,15 +993,15 @@
       ],
       [
         "A",
-        "هيه، والسينما خمسطعش دقيقة من هني",
-        "hē, w is-sīnama khamsṭaʿash dagīga min hni",
-        "Yes, and the cinema's fifteen minutes from here."
+        "هيه، والسينما عشرين دقيقة من هني!",
+        "hē, w is-sīnama ʿishrīn dagīga min hni!",
+        "Yes, and the cinema's twenty minutes from here!"
       ],
       [
         "B",
-        "يلا بسرعة! كل مرة نتأخر",
-        "yalla b-surʿa! kill marra nitʼakhkhar",
-        "Come on, quick! We're late every time."
+        "يلا بسرعة! كل مرة نتأخر خمسطعش دقيقة",
+        "yalla b-surʿa! kill marra nitʼakhkhar khamsṭaʿash dagīga",
+        "Come on, quick! Every time we're fifteen minutes late."
       ]
     ],
     "items": [
@@ -1013,11 +1013,11 @@
         "half an hour: nuṣṣ sāʿa"
       ],
       [
-        "ربع",
-        "rubʿ",
-        "a quarter; quarter past (thintēn w rubʿ)",
-        "ربع",
-        ""
+        "وربع",
+        "w rubʿ",
+        "quarter past (thintēn w rubʿ)",
+        "والربع",
+        "a quarter: rubʿ (ربع), as in rubʿ sāʿa; quarter to: illa rubʿ"
       ],
       [
         "إلا ربع",
