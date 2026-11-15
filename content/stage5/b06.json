@@ -497,7 +497,7 @@
   "id": "s5u075",
   "stage": 5,
   "title": "The desert misses you, Sēf",
-  "goal": "On a video call from abroad, Sēf sees your photos from his uncle's ʿizba; tell him about the weekend, tease him about his cold, and plan the desert for his next visit home",
+  "goal": "On a video call from abroad, Sēf sees your photos from his uncle's ʿizba; tell him about it, tease him about the cold, and plan his next visit home",
   "tip": "Tell news in short past-tense bursts, one thing per sentence: shilt iṣ-ṣagr ʿala īdi! w shribt ḥalīb in-nāga. Friends tease about luck and weather: yā ḥaẓẓak!, aḥsidak! 'I'm jealous!'. Plan with yōm + present: yōm tirjaʿ 'when you're back'.",
   "grammar": "recycle: telling a friend about your weekend (past narrative; la … wala)",
   "dialogue": [
@@ -516,7 +516,7 @@
    [
     "A",
     "يا حظك! أنا هني لا بر ولا عزبة، بس ضباب وبرد",
-    "yā ḥaẓẓak! ana hni la barr wala ʿizba, bas ḍabāb w bard",
+    "yā ḥaẓẓak! ana hni la barr wala ʿizba, bas ẓabāb w bard",
     "Lucky you! Here I've got no desert and no ʿizba, just fog and cold."
    ],
    [
@@ -572,7 +572,7 @@
    ],
    [
     "ضباب",
-    "ḍabāb",
+    "ẓabāb",
     "fog, mist",
     "ضباب",
     ""
@@ -643,7 +643,7 @@
    [
     "A",
     "أول ما طلع المنبر قال «عباد الله، اتقوا الله»، يعني يا ناس، خافوا الله في كل شي",
-    "awwal ma ṭilaʿ il-minbar gāl «ʿibād allāh, ittaqu llāh», yaʿni yā nās, khāfu llāh fi kill shay",
+    "awwal ma ṭilaʿ il-minbar gāl “ʿibād allāh, ittaqu llāh”, yaʿni yā nās, khāfu llāh fi kill shay",
     "As soon as he went up the minbar he said 'servants of God, fear God': it means, people, be mindful of God in everything."
    ],
    [
@@ -667,7 +667,7 @@
    [
     "A",
     "«أقول قولي هذا وأستغفر الله العظيم لي ولكم». يعني خلصت كلامي، والله يغفر لنا كلنا",
-    "«aqūlu qawli hādha wa astaghfiru llāha l-ʿaẓīma li wa lakum». yaʿni khallaṣt kalāmi, w allāh yighfir lana killana",
+    "“aqūlu qawli hādha wa astaghfiru llāha l-ʿaẓīma li wa lakum”. yaʿni khallaṣt kalāmi, w allāh yighfir lana killana",
     "'I say these words of mine and ask God Almighty's forgiveness for me and for you.' It means: I've finished, and may God forgive us all."
    ],
    [
@@ -870,7 +870,7 @@
    [
     "A",
     "لازم تشرب ماي وايد في السحور. وعندنا في الكويت نقول عن الشي الصعب «أطول من شهر رمضان»",
-    "lāzim tishrab māy wāyid fi s-saḥūr. w ʿindana fi l-Kwēt ngūl ʿan ish-shay iṣ-ṣaʿb «aṭwal min shahar ramaẓān»",
+    "lāzim tishrab māy wāyid fi s-saḥūr. w ʿindana fi l-Kwēt ngūl ʿan ish-shay iṣ-ṣaʿb “aṭwal min shahar ramaẓān”",
     "You need to drink lots of water at suhoor. And in Kuwait we say of something hard, 'longer than the month of Ramadan'."
    ],
    [
@@ -882,7 +882,7 @@
    [
     "A",
     "إيه. وعن الشي اللي لازم تسويه نقول «أفرض من الصوم والصلاة»",
-    "ēh. w ʿan ish-shay illi lāzim tsawwīh ngūl «afraẓ min iṣ-ṣōm w iṣ-ṣalā»",
+    "ēh. w ʿan ish-shay illi lāzim tsawwīh ngūl “afraẓ min iṣ-ṣōm w iṣ-ṣalā”",
     "Yes. And for something you absolutely have to do, we say 'more of a duty than fasting and prayer'."
    ],
    [
@@ -894,13 +894,13 @@
    [
     "A",
     "ههه، بالضبط! وعن اللي فقير وايد يقولون «ما عنده ما يفطر الصايم»",
-    "hhh, biẓ-ẓabṭ! w ʿan illi fagīr wāyid ygūlūn «ma ʿindah ma yfaṭṭir iṣ-ṣāyim»",
+    "hhh, biẓ-ẓabṭ! w ʿan illi fagīr wāyid ygūlūn “ma ʿindah ma yfaṭṭir iṣ-ṣāyim”",
     "Ha, exactly! And about someone very poor they say 'he hasn't enough to feed a fasting man'."
    ],
    [
     "B",
     "الله يعينه. عشان جي الصدقة في رمضان لها أجر كبير",
-    "allāh yiʿīnah. ʿashān chī iṣ-ṣadaga fi ramaẓān laha ajir kbīr",
+    "allāh yiʿīnah. ʿashān chī ṣ-ṣadaga fi ramaẓān laha ajir kbīr",
     "God help him. That's why charity in Ramadan has a great reward."
    ],
    [
@@ -972,7 +972,7 @@
   "id": "s5u079",
   "stage": 5,
   "title": "A water cooler for Grandad",
-  "goal": "Outside the mosque after the night prayer in Ramadan, Rāshid shows you the water cooler his father has put up for his late grandfather; talk about charity that goes on",
+  "goal": "After the night prayer in Ramadan, Rāshid shows you the water cooler his father put up outside the mosque for his late grandfather; talk about lasting charity",
   "tip": "ʿan rūḥ + a person says who a good deed is done for after their death: ʿan rūḥ yaddi. Add what it does with a present verb: tisgi l-ʿaṭshān 'it gives the thirsty a drink'. The hadith wording (ʿilm yuntafaʿu bih, yaghrisu gharsan) is fuṣḥā, for recognition.",
   "grammar": "recycle: explaining a purpose (ʿan rūḥ …, ʿashān …, yaʿni …)",
   "dialogue": [
@@ -1009,7 +1009,7 @@
    [
     "A",
     "وايد. في الحديث: «صدقة جارية، أو علم ينتفع به، أو ولد صالح يدعو له»",
-    "wāyid. fi l-ḥadīth: «ṣadaqa jāriya, aw ʿilm yuntafaʿu bih, aw walad ṣāliḥ yadʿū lah»",
+    "wāyid. fi l-ḥadīth: “ṣadaqa jāriya, aw ʿilm yuntafaʿu bih, aw walad ṣāliḥ yadʿū lah”",
     "Lots. In the hadith: 'an ongoing charity, or knowledge that benefits people, or a righteous child who prays for him'."
    ],
    [
@@ -1021,7 +1021,7 @@
    [
     "A",
     "إن شاء الله. وفي حديث ثاني: اللي «يغرس غرسا»، ياكل منه طير أو إنسان، له صدقة",
-    "in shāʼ allāh. w fī ḥadīth thāni: illi «yaghrisu gharsan», yākil minnah ṭēr aw insān, lah ṣadaga",
+    "in shāʼ allāh. w fī ḥadīth thāni: illi “yaghrisu gharsan”, yākil minnah ṭēr aw insān, lah ṣadaga",
     "God willing. And in another hadith: whoever 'plants a plant' that a bird or a person eats from, it counts as charity for him."
    ],
    [
@@ -1313,6 +1313,9 @@
     "شرح لي",
     "you explained to me: sharaḥt-li (شرحت لي)"
    ]
+  ],
+  "receptive": [
+   1
   ]
  }
 ]

@@ -594,8 +594,8 @@
   "stage": 5,
   "title": "He told me himself",
   "goal": "On the metro with Sēf, you disagree about which night Bū Rāshid's dinner is; back up your version by saying where you heard it",
-  "tip": "Say how you know: gālha-li b-nafsah 'he told me himself'. Ask for proof: min wēn simaʿt? shu d-dalīl? And back yourself: idha ṭilaʿt ghalṭān 'if I turn out to be wrong', ana mitayaqqin 'I'm certain'.",
-  "grammar": "certainty and its source: b-nafsah, shu d-dalīl?, mitayaqqin",
+  "tip": "Say how you know: gālha-li b-nafsah 'he told me himself'. Ask for proof: min wēn simaʿt? shu d-dalīl? And back yourself: idha ṭilaʿt ghalṭān 'if I turn out to be wrong', ana mitʼakkid miya bil-miya 'I'm a hundred percent sure'.",
+  "grammar": "certainty and its source: b-nafsah, shu d-dalīl?, miya bil-miya",
   "dialogue": [
    [
     "A",
@@ -611,9 +611,9 @@
    ],
    [
     "A",
-    "انت غلطان. حسب علمي الجمعة",
-    "inta ghalṭān. ḥasab ʿilmi l-jumʿa",
-    "You're wrong. As far as I know, it's Friday."
+    "انت غلطان. أنا متيقن إنها الجمعة",
+    "inta ghalṭān. ana mitayaqqin innha l-jumʿa",
+    "You're wrong. I'm positive it's Friday."
    ],
    [
     "B",
@@ -653,9 +653,9 @@
    ],
    [
     "B",
-    "طرش. أنا متيقن، ورسالته مكتوب فيها الخميس",
-    "ṭarrish. ana mitayaqqin, w risāltah maktūb fīha l-khamīs",
-    "Go ahead. I'm certain, and his message says Thursday."
+    "طرش. أنا متأكد مية بالمية، ورسالته مكتوب فيها الخميس",
+    "ṭarrish. ana mitʼakkid miya bil-miya, w risāltah maktūb fīha l-khamīs",
+    "Go ahead. I'm a hundred percent sure, and his message says Thursday."
    ]
   ],
   "items": [
@@ -685,7 +685,7 @@
     "mitayaqqin",
     "certain, positive (said by a man) (formal)",
     "متيقن",
-    "a woman says: mitayaqqina (متيقنة)"
+    "a woman says: mitayaqqina (متيقنة); (recognise)"
    ],
    [
     "البرهان",
@@ -703,6 +703,7 @@
    ]
   ],
   "receptive": [
+   3,
    4,
    5
   ]
@@ -747,8 +748,8 @@
    ],
    [
     "B",
-    "أكيد بدعي له. أنا متيقن إنه مستعد",
-    "akīd badʿī-lah. ana mitayaqqin innah mistaʿidd",
+    "أكيد بدعي له. أنا متأكد إنه مستعد",
+    "akīd badʿī-lah. ana mitʼakkid innah mistaʿidd",
     "Of course I'll pray for him. I'm certain he's ready."
    ],
    [
@@ -877,8 +878,8 @@
    ],
    [
     "B",
-    "هيه، عندي واحد يديد. أنا متيقن إنه يحتاجه",
-    "hē, ʿindi wāḥid yidīd. ana mitayaqqin innah yiḥtājah",
+    "هيه، عندي واحد يديد. أنا متأكد إنه يحتاجه",
+    "hē, ʿindi wāḥid yidīd. ana mitʼakkid innah yiḥtājah",
     "Yes, I've got a new one. I'm sure he needs it."
    ],
    [
@@ -1228,8 +1229,8 @@
    ],
    [
     "B",
-    "ما أدري. بس أنا متيقن، والله العظيم",
-    "ma adri. bas ana mitayaqqin, wallāh il-ʿaẓīm",
+    "ما أدري. بس أنا متأكد، والله العظيم",
+    "ma adri. bas ana mitʼakkid, wallāh il-ʿaẓīm",
     "I don't know. But I'm certain, I swear to God."
    ],
    [
