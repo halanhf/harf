@@ -57,9 +57,9 @@
    ],
    [
     "A",
-    "هيه، من سنتين. تبي تيي وياي باكر؟",
-    "hē, min santēn. tabi tiyi wiyyāy bāchir?",
-    "Yes, for two years. Do you want to come with me tomorrow?"
+    "هيه، من سنتين، وصرت أروح كل يوم. تبي تيي وياي باكر؟",
+    "hē, min santēn, w ṣirt arūḥ kill yōm. tabi tiyi wiyyāy bāchir?",
+    "Yes, for two years, and now I go every day. Do you want to come with me tomorrow?"
    ],
    [
     "B",
@@ -77,11 +77,11 @@
     "you'll also hear il-jīm (الجيم); nādi is also a sports club"
    ],
    [
-    "جسمي كله يعورني",
-    "jismi killah yʿawwirni",
-    "my whole body aches, I ache all over",
-    "جسمي كله يؤلمني",
-    ""
+    "جسمي كله",
+    "jismi killah",
+    "my whole body, all over (my body)",
+    "جسمي كله",
+    "your whole body (to a man): jismak killah; my whole body aches: jismi killah yʿawwirni"
    ],
    [
     "العضلات",
@@ -112,18 +112,18 @@
     "a woman: il-mudarriba (المدربة)"
    ],
    [
-    "ثلاث مرات في الأسبوع",
-    "thalāth marrāt fi l-usbūʿ",
-    "three times a week",
-    "ثلاث مرات في الأسبوع",
-    ""
+    "ركضت",
+    "rakaẓt",
+    "I went running, I ran; you ran (to a man)",
+    "ركضت",
+    "to a woman: rakaẓti; he runs: yirkiẓ"
    ],
    [
-    "ما أقدر أقوم",
-    "ma agdar agūm",
-    "I can't get up",
-    "لا أستطيع أن أقوم",
-    ""
+    "ما تعود للحين",
+    "ma tʿawwad lil-ḥīn",
+    "it isn't used to it yet (a masculine thing: your body)",
+    "لم يعتد بعد",
+    "your body isn't used to it yet: jismak ma tʿawwad lil-ḥīn"
    ]
   ],
   "receptive": [
@@ -152,9 +152,9 @@
    ],
    [
     "A",
-    "رجيم؟ انت؟ بس انت ضعفت، باين عليك!",
-    "rijīm? inta? bas inta ẓiʿaft, bāyin ʿalēk!",
-    "A diet? You? But you've lost weight, it shows!"
+    "رجيم؟ عشان جي ضعفت! باين عليك",
+    "rijīm? ʿashān chī ẓiʿaft! bāyin ʿalēk",
+    "A diet? So that's why you've lost weight! It shows."
    ],
    [
     "B",
@@ -182,21 +182,21 @@
    ],
    [
     "B",
-    "ولا أنا! بس أحاول. شوي عيش ووايد سلطة",
-    "wala ana! bas aḥāwil. shwayy ʿēsh w wāyid salaṭa",
-    "Nor can I! But I'm trying. A bit of rice and lots of salad."
+    "ولا أنا! بس أحاول. ما عدت أشرب عصير، وآكل وايد سلطة",
+    "wala ana! bas aḥāwil. ma ʿidt ashrab ʿaṣīr, w ākil wāyid salaṭa",
+    "Me neither! But I'm trying. I don't drink juice any more, and I eat lots of salad."
    ],
    [
     "A",
-    "عيل خذ وحدة بس، وحدة ما تضر",
-    "ʿayal khudh waḥda bas, waḥda ma tẓurr",
+    "عيل خذ وحدة بس، وحدة ما تسوي شي",
+    "ʿayal khudh waḥda bas, waḥda ma tsawwi shay",
     "Then take just one; one won't hurt."
    ],
    [
     "B",
     "زين، وحدة بس. بس لا تقولين للمدرب!",
     "zēn, waḥda bas. bas la tgūlīn lil-mudarrib!",
-    "OK, just one. But don't tell my trainer!"
+    "OK, just one. But don't tell the trainer!"
    ]
   ],
   "items": [
@@ -250,16 +250,14 @@
     ""
    ],
    [
-    "يايبة لكم",
-    "yāyba-lkum",
-    "I've brought you (said by a woman, to a group)",
-    "أحضرت لكم",
-    "a man says: yāyib-lkum; (recognise)"
+    "أحاول",
+    "aḥāwil",
+    "I'm trying, I try",
+    "أحاول",
+    "he tries: yḥāwil; we tried: ḥāwalna"
    ]
   ],
-  "receptive": [
-   7
-  ]
+  "receptive": []
  },
  {
   "id": "s4u073",
@@ -307,14 +305,14 @@
    ],
    [
     "A",
-    "أنا كنت جي. لما خليت التلفون برا الغرفة، صرت أنام أحسن",
-    "ana kint chī. lamma khallēt it-tilifōn barra l-ghurfa, ṣirt anām aḥsan",
-    "I used to be like that. When I left my phone outside the room, I started sleeping better."
+    "أنا كنت جي. صار لي شهر أخلي التلفون برا الغرفة، وصرت أنام أحسن",
+    "ana kint chī. ṣār-li shahar akhalli t-tilifōn barra l-ghurfa, w ṣirt anām aḥsan",
+    "I used to be like that. For a month now I've been leaving my phone outside the room, and I've started sleeping better."
    ],
    [
     "B",
-    "زين، بجرب. بس الغفوة بعد الغدا ما أقدر أخليها!",
-    "zēn, bajarrib. bas il-ghafwa baʿd il-ghada ma agdar akhallīha!",
+    "زين، بجرب. بس القيلولة بعد الغدا ما أقدر أخليها!",
+    "zēn, bajarrib. bas il-gēlūla baʿd il-ghada ma agdar akhallīha!",
     "OK, I'll try. But I can't give up my nap after lunch!"
    ],
    [
@@ -326,13 +324,6 @@
   ],
   "items": [
    [
-    "صار لي أسبوع",
-    "ṣār-li usbūʿ",
-    "for a week now, it's been a week (for me)",
-    "منذ أسبوع",
-    ""
-   ],
-   [
     "أتقلب",
     "atgallab",
     "I toss and turn",
@@ -340,11 +331,11 @@
     ""
    ],
    [
-    "لين الفجر",
-    "lēn il-fajr",
-    "till dawn",
-    "حتى الفجر",
-    ""
+    "أنا كنت جي",
+    "ana kint chī",
+    "I used to be like that (too), I was like that",
+    "كنت كذلك",
+    "you were like that (to a man): inta kint chī"
    ],
    [
     "أظل على التلفون",
@@ -368,10 +359,10 @@
     ""
    ],
    [
-    "الغفوة",
-    "il-ghafwa",
-    "the nap",
-    "القيلولة / الغفوة",
+    "القيلولة",
+    "il-gēlūla",
+    "the nap (after lunch)",
+    "القيلولة",
     ""
    ],
    [
@@ -390,7 +381,7 @@
    ]
   ],
   "receptive": [
-   8
+   7
   ]
  },
  {
@@ -417,7 +408,7 @@
     "A",
     "بس الخميس بعيد! ليش متوتر جي؟",
     "bas il-khamīs baʿīd! lēsh mitwattir chī?",
-    "But Thursday's ages away! Why are you so stressed?"
+    "But Thursday's still a way off! Why are you so stressed?"
    ],
    [
     "B",
@@ -513,11 +504,11 @@
     "(recognise)"
    ],
    [
-    "خذ بريك",
-    "khudh brēk",
-    "take a break (to a man)",
-    "خذ استراحة",
-    "to a woman: khudhi brēk; also istirāḥa (استراحة) 'a break'"
+    "بريك",
+    "brēk",
+    "a break (from work or study)",
+    "استراحة",
+    "take a break (to a man): khudh brēk; to a woman: khudhi brēk; also istirāḥa (استراحة)"
    ],
    [
     "أتمشى",
@@ -725,9 +716,9 @@
    ],
    [
     "B",
-    "لا، بروحه. وفي الليل شوف هني، يطلع لك كم خطوة مشيت",
-    "la, b-rūḥah. w fi l-lēl shūf hni, yiṭlaʿ-lak cham khaṭwa mishēt",
-    "No, by itself. And at night look here: it shows you how many steps you've walked."
+    "لا، بروحه. وكل ما تبي تعرف، شوف هني: يطلع لك كم خطوة مشيت",
+    "la, b-rūḥah. w kill ma tabi taʿarf, shūf hni: yiṭlaʿ-lak cham khaṭwa mishēt",
+    "No, by itself. And whenever you want to know, look here: it shows you how many steps you've walked."
    ],
    [
     "A",
@@ -744,11 +735,11 @@
   ],
   "items": [
    [
-    "في تطبيق",
-    "fī taṭbīg",
-    "there's an app",
-    "يوجد تطبيق",
-    "an app: taṭbīg (تطبيق)"
+    "تطبيق",
+    "taṭbīg",
+    "an app",
+    "تطبيق",
+    "apps: taṭbīgāt (تطبيقات)"
    ],
    [
     "يحسب خطواتك",
@@ -786,11 +777,11 @@
     "to a woman: yiṭlaʿ-lich"
    ],
    [
-    "كم خطوة",
-    "cham khaṭwa",
-    "how many steps",
-    "كم خطوة",
-    "a step: khaṭwa; steps: khaṭawāt"
+    "خطوة",
+    "khaṭwa",
+    "a step",
+    "خطوة",
+    "steps: khaṭawāt (خطوات)"
    ],
    [
     "ما أدري عن هالأشيا",
@@ -802,7 +793,7 @@
    [
     "زمانكم غير",
     "zamānkum ghēr",
-    "your times are different, it's a different world now (to a group)",
+    "your times are different (to a young man, about his generation)",
     "زمانكم مختلف",
     "(recognise)"
    ]
@@ -847,7 +838,7 @@
    [
     "A",
     "يا ساتر! وشلون طلعتوا؟",
-    "yā sātir! w shlōn ṭlaʿtu?",
+    "yā sātir! w shlōn ṭilaʿtu?",
     "Good grief! And how did you get out?"
    ],
    [
@@ -871,7 +862,7 @@
    [
     "A",
     "الله يجزاه خير! أنا عمري ما غرزت، الحمد لله",
-    "allāh yjzāh khēr! ana ʿumri ma gharazt, il-ḥamdu lillāh",
+    "allāh yijzāh khēr! ana ʿumri ma gharazt, il-ḥamdu lillāh",
     "God reward him! I've never got stuck in my life, thank God."
    ],
    [
@@ -897,11 +888,11 @@
     "Kuwait: w iḥna rāyḥīn"
    ],
    [
-    "في نص الطريق",
-    "fi nuṣṣ iṭ-ṭarīg",
-    "halfway (there), in the middle of the journey",
-    "في منتصف الطريق",
-    ""
+    "الرمل",
+    "ir-raml",
+    "the sand",
+    "الرمل",
+    "in the sand: fi r-raml"
    ],
    [
     "غرزنا",
@@ -940,7 +931,7 @@
    ],
    [
     "الله يجزاه خير",
-    "allāh yjzāh khēr",
+    "allāh yijzāh khēr",
     "God reward him",
     "جزاه الله خيرًا",
     "(recognise)"
@@ -955,8 +946,8 @@
   "stage": 4,
   "title": "I didn't know where to put myself",
   "goal": "At the office, tell Maryam and the team about the voice note you sent to the wrong group",
-  "tip": "An anecdote needs a hook and a payoff: start with ṣār-li mawgif 'something happened to me', turn it with ṭilaʿ inni 'it turned out I', top it with w il-muṣība 'and the worst part', and react to your own embarrassment: ma ʿiraft wēn awaddi wiyhi.",
-  "grammar": "narrative markers: ṣār-li mawgif, ṭilaʿ inn, w il-muṣība",
+  "tip": "An anecdote needs a hook and a payoff: start with tdhakkart mawgif 'I remembered something that happened', turn it with ṭilaʿ inni 'it turned out I', top it with w il-muṣība 'and the worst part', and end with ṭilaʿ again: w ṭilaʿ id-daktōr ma ziʿal.",
+  "grammar": "narrative markers: ṭilaʿ 'it turned out', w il-muṣība",
   "dialogue": [
    [
     "A",
@@ -1014,18 +1005,18 @@
    ],
    [
     "B",
-    "شو أسوي؟ اللي صار صار. بس من الحين أشوف القروب قبل لا أطرش",
-    "shu asawwi? illi ṣār ṣār. bas min il-ḥīn ashūf il-grūb gabil la aṭarrish",
-    "What can I do? What's done is done. But from now on I check the group before I send."
+    "شو أسوي؟ اللي صار صار. وطلع الدكتور ما زعل، الحمد لله",
+    "shu asawwi? illi ṣār ṣār. w ṭilaʿ id-daktōr ma ziʿal, il-ḥamdu lillāh",
+    "What can I do? What's done is done. And it turned out the lecturer wasn't upset, thank God."
    ]
   ],
   "items": [
    [
-    "صار لي موقف",
-    "ṣār-li mawgif",
-    "something happened to me, I had an (awkward) moment",
-    "حدث لي موقف",
-    "mawgif 'a situation, an incident', not mōgif 'a parking space'"
+    "تذكرت موقف",
+    "tdhakkart mawgif",
+    "I remembered something that happened (lit. a situation)",
+    "تذكرت موقفًا",
+    "mawgif 'a situation, an incident', not mōgif 'a parking space'; you remembered (to a man): same form"
    ],
    [
     "طلع إني",
@@ -1087,8 +1078,8 @@
   "stage": 4,
   "title": "In our day, uncle?",
   "goal": "In Bū Rāshid's majlis, with Sēf there, ask him for his story about a trip to Al Ain as a young man, and keep it going respectfully",
-  "tip": "An older speaker tells a story with kinna 'we were' and kān 'there was', and moves it on with il-ḥāṣil 'anyway, so'. Keep him going with short questions in the past: w shu sawwētu? w wṣaltu? and react with yā sātir! or mā shāʼ allāh.",
-  "grammar": "narrative: kinna + noun, il-ḥāṣil, past-tense questions to keep a story going",
+  "tip": "An older speaker sets the scene with kinna 'we were' and ma kān ʿindana 'we didn't have', and moves on with il-ḥāṣil 'anyway, so'. Keep him going with short questions in the past: w wiṣaltu? w shu sawwētu? w ṣallaḥ is-sayyāra? and react with yā sātir! or il-ḥamdu lillāh.",
+  "grammar": "narrative: kinna and ma kān for the scene, past-tense questions to keep a story going",
   "dialogue": [
    [
     "B",
@@ -1105,13 +1096,13 @@
    [
     "B",
     "من الشارقة؟ ووصلتوا؟",
-    "min ish-Shārja? w wṣaltu?",
+    "min ish-Shārja? w wiṣaltu?",
     "From Sharjah? And did you get there?"
    ],
    [
     "A",
-    "الحاصل، في نص الطريق خربت السيارة، والدنيا ليل، وما عندنا تلفونات",
-    "il-ḥāṣil, fi nuṣṣ iṭ-ṭarīg khirbat is-sayyāra, w id-dinya lēl, w ma ʿindana tilifōnāt",
+    "الحاصل، في نص الطريق خربت السيارة، والدنيا ليل، وما كان عندنا تلفونات",
+    "il-ḥāṣil, fi nuṣṣ iṭ-ṭarīg khirbat is-sayyāra, w id-dinya lēl, w ma kān ʿindana tilifōnāt",
     "Anyway, halfway there the car broke down, it was night, and we had no phones."
    ],
    [
@@ -1128,9 +1119,9 @@
    ],
    [
     "B",
-    "ما شاء الله! وصلح السيارة؟",
-    "mā shāʼ allāh! w ṣallaḥ is-sayyāra?",
-    "Wonderful! And did he fix the car?"
+    "الحمد لله! وصلح السيارة؟",
+    "il-ḥamdu lillāh! w ṣallaḥ is-sayyāra?",
+    "Thank God! And did he fix the car?"
    ],
    [
     "A",
@@ -1140,9 +1131,9 @@
    ],
    [
     "B",
-    "ناس أول غير والله. سالفة ما تنتسى يا عمي",
-    "nās awwal ghēr wallāh. sālfa ma tintisa yā ʿammi",
-    "People back then really were different. That's a story you can't forget, uncle."
+    "ناس أول غير والله. سالفة ما أنساها يا عمي",
+    "nās awwal ghēr wallāh. sālfa ma ansāha yā ʿammi",
+    "People back then really were different. That's a story I'll never forget, uncle."
    ],
    [
     "A",
@@ -1153,11 +1144,11 @@
   ],
   "items": [
    [
-    "سالفة حلوة",
-    "sālfa ḥilwa",
-    "a good story",
-    "قصة جميلة",
-    ""
+    "صار مثل أخوي",
+    "ṣār mithil akhūy",
+    "he became like a brother to me",
+    "أصبح مثل أخي",
+    "she became like a sister to me: ṣārat mithil ukhti"
    ],
    [
     "كنا شباب",
@@ -1202,17 +1193,18 @@
     ""
    ],
    [
-    "ما تنتسى",
-    "ma tintisa",
-    "(it) can't be forgotten, unforgettable (a feminine thing)",
-    "لا تُنسى",
-    ""
+    "يزوروني",
+    "yzūrūni",
+    "they visit me, they come to see me",
+    "يزورونني",
+    "(recognise)"
    ]
   ],
   "receptive": [
    2,
    3,
-   5
+   5,
+   7
   ]
  },
  {
@@ -1274,7 +1266,7 @@
    [
     "A",
     "سمعتها من أبوي وأنا ياهل. دمك خفيف، بس النكتة عمرها أكبر منك!",
-    "simiʿtha min ubūy w ana yāhil. dammak khafīf, bas in-nukta ʿumrha akbar minnak!",
+    "simaʿt-ha min ubūy w ana yāhil. dammak khafīf, bas in-nukta ʿumrha akbar minnak!",
     "I heard it from my dad when I was a kid. You're funny, but that joke's older than you!"
    ],
    [
@@ -1335,11 +1327,11 @@
     "to a woman: ʿumrha akbar minnich; (recognise)"
    ],
    [
-    "نكتة يديدة",
-    "nukta yidīda",
-    "a new joke",
-    "نكتة جديدة",
-    ""
+    "حلوة، بس قديمة!",
+    "ḥilwa, bas gadīma!",
+    "good one, but it's old! (a joke, a story)",
+    "جميلة لكنها قديمة",
+    "about a masculine thing: ḥilu, bas gadīm"
    ]
   ],
   "receptive": [
@@ -1419,13 +1411,6 @@
   ],
   "items": [
    [
-    "سالفة غريبة",
-    "sālfa gharība",
-    "a strange story",
-    "قصة غريبة",
-    ""
-   ],
-   [
     "على قوله",
     "ʿala gōlah",
     "according to him, so he says",
@@ -1440,10 +1425,10 @@
     "I missed the plane: fātatni iṭ-ṭayyāra"
    ],
    [
-    "هذا الحلو",
-    "hādha l-ḥilu",
-    "that's the best part, that's the good bit",
-    "هذا هو الجميل",
+    "البوابة",
+    "il-bawwāba",
+    "the gate (at an airport), the main gate",
+    "البوابة",
     ""
    ],
    [
@@ -1483,7 +1468,7 @@
    ]
   ],
   "receptive": [
-   7
+   6
   ]
  },
  {
@@ -1497,14 +1482,14 @@
    [
     "B",
     "المهم، طلعنا من المول أنا وأمي وأبوي، وما لقينا السيارة",
-    "il-muhimm, ṭlaʿna min il-mōl ana w ummi w ubūy, w ma ligēna s-sayyāra",
+    "il-muhimm, ṭilaʿna min il-mōl ana w ummi w ubūy, w ma ligēna s-sayyāra",
     "Anyway, my mum, my dad and I came out of the mall, and we couldn't find the car."
    ],
    [
     "A",
-    "شنو؟ انسرقت؟ في المولات يصير جذي",
-    "shinu? insirgat? fi l-mōlāt yṣīr chidhi",
-    "What? Had it been stolen? That happens in malls."
+    "شنو؟ انسرقت؟",
+    "shinu? insirgat?",
+    "What? Had it been stolen?"
    ],
    [
     "B",
@@ -1550,18 +1535,18 @@
    ],
    [
     "A",
-    "والله؟ وعلى فكرة، أنا بعد صار لي نفس الشي في المطار",
-    "wallāh? w ʿala fikra, ana baʿad ṣār-li nafs ish-shay fi l-maṭār",
-    "Seriously? And by the way, the same thing happened to me at the airport."
+    "والله؟ يصير جذي. وعلى فكرة، أنا بعد صار لي نفس الشي في المطار",
+    "wallāh? yṣīr chidhi. w ʿala fikra, ana baʿad ṣār-li nafs ish-shay fi l-maṭār",
+    "Seriously? That happens. And by the way, the same thing happened to me at the airport."
    ]
   ],
   "items": [
    [
     "يصير جذي",
     "yṣīr chidhi",
-    "that happens, things like that happen (Kuwait)",
+    "that happens, things like that happen",
     "يحدث هذا",
-    "UAE: yṣīr chī (يصير جي); (recognise)"
+    "UAE also: yṣīr chī (يصير جي); (recognise)"
    ],
    [
     "طول بالك",
@@ -1576,13 +1561,6 @@
     "let me finish (to a man)",
     "دعني أكمل",
     "to a woman: khallīni akammil"
-   ],
-   [
-    "الطابق الثاني",
-    "iṭ-ṭābig ith-thāni",
-    "the second floor",
-    "الطابق الثاني",
-    ""
    ],
    [
     "لا تقاطعني",
@@ -1613,11 +1591,11 @@
     ""
    ],
    [
-    "أنا وأمي وأبوي",
-    "ana w ummi w ubūy",
-    "my mum, my dad and I (lit. I and my mum and my dad)",
-    "أنا وأمي وأبي",
-    ""
+    "وين خليتها؟",
+    "wēn khallēt-ha?",
+    "where did you leave it (f.)? (to a man); where did I leave it?",
+    "أين تركتها؟",
+    "to a woman: wēn khallētī-ha?"
    ]
   ],
   "receptive": [
@@ -1640,15 +1618,15 @@
    ],
    [
     "B",
-    "صار لي شهر أنام بدري، والتلفون برا الخيمة",
-    "ṣār-li shahar anām badri, w it-tilifōn barra l-khēma",
-    "For a month now I've been going to bed early, with my phone outside the tent."
+    "صار لي شهر أنام بدري، والتلفون برا الغرفة",
+    "ṣār-li shahar anām badri, w it-tilifōn barra l-ghurfa",
+    "For a month now I've been going to bed early, with my phone outside the room."
    ],
    [
     "A",
-    "ما شاء الله! وبعدك تروح النادي؟",
-    "mā shāʼ allāh! w baʿdak trūḥ in-nādi?",
-    "Good for you! And are you still going to the gym?"
+    "ما شاء الله! والنادي؟ للحين ملتزم؟",
+    "mā shāʼ allāh! w in-nādi? lil-ḥīn miltazim?",
+    "Good for you! And the gym? Still sticking to it?"
    ],
    [
     "B",
@@ -1716,11 +1694,11 @@
     "a woman: ṣāḥya min il-fajr"
    ],
    [
-    "برا الخيمة",
-    "barra l-khēma",
-    "outside the tent",
-    "خارج الخيمة",
-    ""
+    "كان يعورني",
+    "kān yʿawwirni",
+    "it was hurting me, it ached (a masculine thing: my head, my body)",
+    "كان يؤلمني",
+    "a feminine body part: kānat tʿawwirni"
    ],
    [
     "يحبه حلو وايد",
@@ -1735,7 +1713,24 @@
     "you've reminded me of your story (to a man)",
     "ذكرتني بقصتك",
     "to a woman: dhakkartīni b-sālftich"
+   ],
+   [
+    "ملتزم",
+    "miltazim",
+    "sticking to it, committed (to a routine, a plan) (a man)",
+    "ملتزم",
+    "a woman: miltazma (ملتزمة); (recognise)"
+   ],
+   [
+    "يبي يتعلم",
+    "yabi yitʿallam",
+    "he wants to learn",
+    "يريد أن يتعلم",
+    ""
    ]
+  ],
+  "receptive": [
+   6
   ]
  }
 ]
