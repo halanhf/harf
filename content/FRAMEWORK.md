@@ -39,7 +39,7 @@ Names carry origin, so reviewers can check each line against its speaker.
 
 | Name | Script | Origin | Sex, age | Role | Register with the learner | From |
 |---|---|---|---|---|---|---|
-| (learner, B) | — | British, studying and interning in Dubai | man, ~20 | always speaker B from s1u017; Arabic name Sālim if needed (u3) | — | s1u017 |
+| (learner, B) | — | British, Muslim (fasts in Ramadan, prays; from s2u061), studying and interning in Dubai | man, ~20, unmarried | always speaker B from s1u017; Arabic name Sālim if needed (u3) | — | s1u017 |
 | Sēf | سيف | Emirati, Dubai | man, 22 | university friend | friends: yā rayyāl, khēba, English loans | s1u017 |
 | Maryam | مريم | Emirati, Dubai | woman, 26 | colleague at the internship | polite, neutral; B practises -ich / -īn with her | s1u018 |
 | Umm Sēf | أم سيف | Emirati, Dubai | woman, ~50 | Sēf's mother | respectful | s1u021 |
@@ -101,7 +101,7 @@ Settings, Dubai first: karak stand, Dubai Metro, a mall, the office, a universit
 | s2u077–s2u080 | discourse markers; fast-speech note (madri, shallah, aani, ʿshān, S: The National) | telling news; "so then…"; "mind you…" | conversation | عاد, عيل, ترا, أصلا, شكله, ماشي | — |
 | s2u081–s2u084 | Negatives with nobody and nothing: maḥḥad, ma shay, wala shay, wala wāḥid; abad; māni | complaints and "no way" | conversation | محد, أبد, ماني, غصب, ولا واحد, ولا شي | — |
 | s2u085–s2u087 | "just", "still", "should have" as chunks: tawwni (C), lil-ḥīn (C), chān gilt-li (S; full grammar at B2) | catching up; mild blame | conversation | توه, توني, للحين, جان قلت لي | — |
-| s2u088 | Emirati alternatives (items glossed "(UAE)") | everyday Emirati forms you'll hear from Sēf and Maryam | people | أبا, تبا, هب, الحينه, يرمس, بسير, يالس; عسب in a note only | — |
+| s2u088 | Emirati alternatives (items glossed "(UAE)") | everyday Emirati forms you'll hear from Sēf and Maryam | people | أبا, تبا, هب, الحينه, يرمس, بسير (يالس is already the course default, STYLE §2); عسب in a note only | — |
 | s2u089 | checkpoint 2.5 | — | — | 6 | — |
 | s2u090 | **A2 exit** | "Describe my family, living conditions, education and job" (CEFR A2, S) | — | 6 | — |
 
@@ -344,7 +344,7 @@ These are the high-frequency dialect forms in the Gumar AE+KW top 1,000 (names, 
 | برا | 941 | 125:148 | GULF | s1u061 |
 | أبد | 798 | 166:160 | GULF | s2u081 |
 
-UAE-only forms taught as "(UAE)" items in s2u088: أبا (594), تبا (727), هب (466), الحينه (450), بسير (623), يالس (783), يرمس; عسب (437) appears in a note only.
+UAE-only forms taught as "(UAE)" items in s2u088: أبا (594), تبا (727), هب (466), الحينه (450), بسير (623), يرمس (يالس 783 is the course default, not a UAE item); عسب (437) appears in a note only.
 
 ## 9. Grammar recycling map
 
