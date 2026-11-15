@@ -4,7 +4,7 @@
   "stage": 4,
   "title": "Little Ḥiṣṣa and baby Ḥammūd",
   "goal": "At Sēf's family home, with Sēf, meet his little niece again and find out the pet names the family uses",
-  "tip": "Gulf Arabic makes words small and dear: ṣghīr 'small' → ṣghayyir 'tiny', bint 'girl' → bnayya 'little girl'. Names do it too: Muḥammad → Ḥammūd, Sālim → Sallūm, Maryam → Maryūm. Use a pet name only once the family uses it for you.",
+  "tip": "Gulf Arabic makes words small and dear: ṣghīr 'small' → ṣghayyir 'tiny', bint 'girl' → bnayya 'little girl'. Names do it too: Muḥammad → Ḥammūd, Sālim → Sallūm, Maryam → Maryūm. Use a pet name for someone only after their family uses it in front of you, and never for a woman outside your family.",
   "grammar": "diminutives: ṣghīr → ṣghayyir, bint → bnayya; pet names (Ḥammūd, Sallūm)",
   "dialogue": [
    [
@@ -33,27 +33,15 @@
    ],
    [
     "A",
-    "قولي له: هلا عمي سلوم! ترا كلنا في البيت نسميه سلوم",
-    "gūlī-lah: hala ʿammi Sallūm! tara killna fi l-bēt nsammīh Sallūm",
-    "Say to him: 'Hi, Uncle Sallūm!' We all call him Sallūm at home, you know."
+    "قولي له: هلا عمي سلوم! كلنا نسميه سلوم، أمي تقول سالم وايد رسمي",
+    "gūlī-lah: hala ʿammi Sallūm! killna nsammīh Sallūm, ummi tgūl Sālim wāyid rasmi",
+    "Say to him: 'Hi, Uncle Sallūm!' We all call him Sallūm; my mum says Sālim is too formal."
    ],
    [
     "B",
-    "سلوم؟! من متى؟",
-    "Sallūm?! min mita?",
-    "Sallūm?! Since when?"
-   ],
-   [
-    "A",
-    "من زمان! أمي تقول سالم وايد رسمي",
-    "min zamān! ummi tgūl Sālim wāyid rasmi",
-    "For ages! My mum says Sālim is too formal."
-   ],
-   [
-    "B",
-    "زين! وهذا البيبي الصغيّر محمد؟",
-    "zēn! w hādha l-bēbi ṣ-ṣghayyir Muḥammad?",
-    "OK! And this tiny little baby is Muḥammad?"
+    "سلوم؟! زين. وهذا البيبي الصغيّر محمد؟",
+    "Sallūm?! zēn. w hādha l-bēbi ṣ-ṣghayyir Muḥammad?",
+    "Sallūm?! OK. And this tiny little baby is Muḥammad?"
    ],
    [
     "A",
@@ -66,6 +54,12 @@
     "ما شاء الله عليه! الله يخليه لكم",
     "mā shāʼ allāh ʿalēh! allāh ykhallīh lakum",
     "Mā shāʼ allāh! God bless him for you all."
+   ],
+   [
+    "A",
+    "الله يخليك. تعال، القهوة يتنا",
+    "allāh ykhallīk. taʿāl, il-gahwa yatna",
+    "Thank you. Come on, the coffee's here."
    ]
   ],
   "items": [
@@ -91,11 +85,11 @@
     "he's grown so much: kibar wāyid (كبر وايد)"
    ],
    [
-    "تذكريني؟",
-    "tidhkrīni?",
-    "do you remember me? (to a woman or girl)",
-    "هل تذكرينني؟",
-    "to a man: tidhkirni? (تذكرني؟)"
+    "بنت أخوي",
+    "bint akhūy",
+    "my niece (my brother's daughter)",
+    "ابنة أخي",
+    "my sister's daughter: bint ukhti (بنت أختي)"
    ],
    [
     "نسميه",
@@ -145,13 +139,13 @@
   "stage": 4,
   "title": "Why 'Bū Rāshid'?",
   "goal": "In Bū Rāshid's majlis in Sharjah, with Sēf there, ask why everyone calls him Bū Rāshid, and what you'd be called",
-  "tip": "A man is often called bū (father of) + his eldest son's name, a woman umm + the son's name: Bū Rāshid, Umm Sēf. Call him with yā: yā bū Rāshid. 'So-and-so' is fulān: yā bū fulān 'Mr So-and-so's dad'.",
-  "grammar": "abu / umm: bū + son's name (yā bū Rāshid); fulān 'so-and-so'",
+  "tip": "A man is often called bū (father of) + his eldest son's name, a woman umm + the son's name: Bū Rāshid, Umm Sēf. Call him with yā: yā Bū Rāshid. 'So-and-so' is fulān: yā bū fulān 'So-and-so's dad'.",
+  "grammar": "abu / umm: bū + son's name (yā Bū Rāshid); fulān 'so-and-so'",
   "dialogue": [
    [
     "B",
     "مساء الخير يا بو راشد",
-    "masāʼ il-khēr yā bū Rāshid",
+    "masāʼ il-khēr yā Bū Rāshid",
     "Good evening, Bū Rāshid."
    ],
    [
@@ -169,14 +163,14 @@
    [
     "A",
     "بخير الله يسلمك. ما شاء الله، صرت تقول بو راشد مثلنا!",
-    "b-khēr, allāh ysallmak. mā shāʼ allāh, ṣirt tgūl bū Rāshid mithilna!",
+    "b-khēr, allāh ysallmak. mā shāʼ allāh, ṣirt tgūl Bū Rāshid mithilna!",
     "Fine, thank you. Mā shāʼ allāh, you've started saying Bū Rāshid like us!"
    ],
    [
     "B",
-    "هيه! بس ليش الكل يقول لك بو راشد، مب اسمك؟",
-    "hē! bas lēsh il-kill ygūl-lak bū Rāshid, mub ismak?",
-    "Yes! But why does everyone call you Bū Rāshid, not your name?"
+    "هيه! بس ليش الكل يقول لك بو راشد، مب باسمك؟",
+    "hē! bas lēsh il-kill ygūl-lak Bū Rāshid, mub b-ismak?",
+    "Yes! But why does everyone call you Bū Rāshid, not by your name?"
    ],
    [
     "A",
@@ -193,8 +187,8 @@
    [
     "A",
     "في ناس ما عندهم عيال وعندهم اسم. خالد مثلا يقولون له بو وليد",
-    "fī nās ma ʿindahum ʿyāl w ʿindahum ism. Khālid mathalan ygūlūn-lah bū Walīd",
-    "Some people have no children and still have one. Khālid, for example, gets called Bū Walīd."
+    "fī nās ma ʿindahum ʿyāl w ʿindahum ism. Khālid mathalan ygūlūn-lah Bū Walīd",
+    "Some people have no children and still get one. Any Khālid, for example, gets called Bū Walīd."
    ],
    [
     "B",
@@ -212,7 +206,7 @@
   "items": [
    [
     "يا بو راشد",
-    "yā bū Rāshid",
+    "yā Bū Rāshid",
     "Bū Rāshid! (respectful: a man called by his son's name)",
     "يا أبا راشد",
     "any man: yā bū + his eldest son's name; a woman: yā umm + the son's name (يا أم …)"
@@ -268,7 +262,7 @@
    ],
    [
     "يقولون له بو وليد",
-    "ygūlūn-lah bū Walīd",
+    "ygūlūn-lah Bū Walīd",
     "he gets called Bū Walīd (a name Khālids often get)",
     "يكنى أبا الوليد",
     "(recognise)"
@@ -322,7 +316,7 @@
    [
     "B",
     "والبنت اللي في الصيدلية؟",
-    "w il-bint illi fi ṣ-ṣaydaliyya?",
+    "w il-bint illi fi ṣ-ṣēdaliyya?",
     "And the girl at the pharmacy?"
    ],
    [
@@ -361,7 +355,7 @@
    [
     "يا أخوي",
     "yā akhūy",
-    "excuse me, mate (polite, to a man you don't know; lit. my brother)",
+    "excuse me, brother (polite, to a man about your age you don't know; lit. my brother)",
     "يا أخي",
     "to a woman: yā ukhti (يا أختي)"
    ],
@@ -394,11 +388,11 @@
     ""
    ],
    [
-    "قول لها",
-    "gūl-lha",
-    "say to her, tell her (to a man)",
-    "قل لها",
-    "to a woman: gūlī-lha (قولي لها)"
+    "المحطة",
+    "il-maḥaṭṭa",
+    "the petrol station; the station",
+    "محطة الوقود / المحطة",
+    ""
    ],
    [
     "على قد الشغل",
@@ -417,9 +411,9 @@
   ],
   "culture": "How you address someone shows respect. Elders and strangers get yā ʿammi or ṭāl ʿumrak; yā rayyāl is for friends, and saying it to an elder or in a meeting comes across as very rude. With young people you know, English words and bro are fine; with elders, keep your Arabic unmixed.",
   "receptive": [
+   3,
    4,
-   7,
-   3
+   7
   ]
  },
  {
@@ -450,15 +444,15 @@
    ],
    [
     "B",
-    "ما شاء الله! شحلاتها! يا حظ أخوك",
-    "mā shāʼ allāh! shḥalāt-ha! yā ḥaẓẓ akhūk",
-    "Mā shāʼ allāh! How lovely it is! Your brother's so lucky."
+    "مبروك عليه! شحلاتها! يا حظ أخوك",
+    "mabrūk ʿalēh! shḥalāt-ha! yā ḥaẓẓ akhūk",
+    "Congratulations to him! How lovely it is! Your brother's so lucky."
    ],
    [
     "A",
-    "هيه، بس لا تسألني شكثر دفع فيها، ولا تسأله هو بعد!",
-    "hē, bas la tisʼalni shkuthur dafaʿ fīha, wala tisʼalah huwa baʿad!",
-    "Yes, but don't ask me how much he paid for it, and don't ask him either!"
+    "الله يبارك فيك! بس لا تسألني كم دفع فيها، ولا تسأله هو بعد!",
+    "allāh ybārik fīk! bas la tisʼalni cham dafaʿ fīha, wala tisʼalah huwa baʿad!",
+    "Thanks! But don't ask me how much he paid for it, and don't ask him either!"
    ],
    [
     "B",
@@ -468,9 +462,9 @@
    ],
    [
     "A",
-    "هو مستانس عليها وايد. كل يوم يغسلها، حليله!",
-    "huwa mistānis ʿalēha wāyid. kill yōm yighsilha, ḥalīlah!",
-    "He's so happy with it. He washes it every day, bless him!"
+    "شكثر هو مستانس عليها! كل يوم يغسلها، حليله!",
+    "shkuthur huwa mistānis ʿalēha! kill yōm yighsilha, ḥalīlah!",
+    "He's so happy with it! He washes it every day, bless him!"
    ],
    [
     "B",
@@ -530,9 +524,9 @@
    [
     "شكثر",
     "shkuthur",
-    "how much! what a lot!",
+    "how (very)…! so much! (exclaiming)",
     "كم",
-    "(recognise)"
+    "before a sentence: shkuthur huwa mistānis! 'he's so happy!'; to ask a price, say cham (كم) (recognise)"
    ],
    [
     "لا تقول!",
@@ -572,14 +566,14 @@
   "dialogue": [
    [
     "A",
-    "هلا والله! حياك الله يا ولدي، تفضل",
-    "hala wallāh! ḥayyāk allāh yā wildi, tfaẓẓal",
-    "Hello! Welcome, son, come in."
+    "هلا والله! حياك الله يا ولدي، تفضل خذ راحتك",
+    "hala wallāh! ḥayyāk allāh yā wildi, tfaẓẓal khidh rāḥtak",
+    "Hello! Welcome, son, come in and make yourself at home."
    ],
    [
     "B",
     "الله يحييج يا أم سيف. شحالج؟",
-    "allāh yḥayyīch yā umm Sēf. shḥālich?",
+    "allāh yḥayyīch yā Umm Sēf. shḥālich?",
     "Thank you, Umm Sēf. How are you?"
    ],
    [
@@ -590,7 +584,7 @@
    ],
    [
     "B",
-    "بخير الحمد لله. أمي تسلم عليج وايد",
+    "بخير الحمد لله. أمي تسلّم عليج وايد",
     "b-khēr il-ḥamdu lillāh. ummi tsallim ʿalēch wāyid",
     "She's well, thank God. My mum sends you her warm regards."
    ],
@@ -614,9 +608,9 @@
    ],
    [
     "B",
-    "يا سلام على الريحة! تسلمين يا خالتي",
-    "yā salām ʿala r-rīḥa! tislamīn yā khālti",
-    "What a lovely smell! Thank you, auntie."
+    "يا سلام على الريحة! تفتح النفس. تسلمين يا خالتي",
+    "yā salām ʿala r-rīḥa! tiftaḥ in-nafs. tislamīn yā khālti",
+    "What a lovely smell! It makes me hungry. Thank you, auntie."
    ],
    [
     "A",
@@ -634,7 +628,7 @@
   "items": [
    [
     "يا أم سيف",
-    "yā umm Sēf",
+    "yā Umm Sēf",
     "Umm Sēf! (respectful, to a woman by her son's name)",
     "يا أم سيف",
     "any woman: yā umm + her son's name (يا أم …)"
@@ -658,14 +652,7 @@
     "il-machbūs",
     "machbūs (spiced rice with meat, chicken or fish)",
     "المكبوس",
-    ""
-   ],
-   [
-    "يا حليلها",
-    "yā ḥalīlha",
-    "bless her! (said fondly) (UAE)",
-    "",
-    "(recognise)"
+    "you'll see written المجبوس"
    ],
    [
     "متى بتزورنا؟",
@@ -675,17 +662,17 @@
     "to a woman: mita bitzūrīnna? (متى بتزورينا؟) (recognise)"
    ],
    [
-    "الصيف الياي",
-    "iṣ-ṣēf il-yāy",
-    "next summer",
-    "الصيف القادم",
-    ""
+    "خذ راحتك",
+    "khidh rāḥtak",
+    "make yourself at home, make yourself comfortable (to a man)",
+    "خذ راحتك",
+    "to a woman: khidhi rāḥtich (خذي راحتج) (recognise)"
    ],
    [
-    "الغدا جاهز",
-    "il-ghada jāhiz",
-    "lunch is ready",
-    "الغداء جاهز",
+    "تفتح النفس",
+    "tiftaḥ in-nafs",
+    "it makes you hungry, it whets your appetite",
+    "تفتح الشهية",
     ""
    ],
    [
@@ -696,24 +683,24 @@
     ""
    ]
   ],
-  "culture": "Machbūs, rice cooked with spices and meat, chicken or fish, is one of the classic Emirati dishes,. Admire the food (yā salām ʿala r-rīḥa!) and thank the cook: tislamīn to a woman, tislam to a man.",
+  "culture": "Machbūs, rice cooked with spices and meat, chicken or fish, is one of the classic Emirati dishes. Admire the food (yā salām ʿala r-rīḥa!) and thank the cook: tislamīn to a woman, tislam to a man, or tislam īdich 'bless your hands' to the woman who cooked it.",
   "receptive": [
    4,
-   5
+   6
   ]
  },
  {
   "id": "s4u035",
   "stage": 4,
   "title": "He must be in a meeting",
-  "goal": "At the office, help Maryam guess why the manager hasn't answered her: lāzim ykūn, yimkin kān, ma ykūn…?",
-  "tip": "Guess with ykūn and kān: lāzim ykūn fi jtimāʿ 'he must be in a meeting', yimkin kān mashghūl 'maybe he was busy'. A worried guess: ma ykūn zaʿlān? 'he isn't cross, is he?'. Future: biykūn fāhim 'he'll understand'.",
-  "grammar": "kān / ykūn strings: lāzim ykūn, yimkin kān, ma ykūn…?, biykūn + participle",
+  "goal": "At the office, help Maryam guess why the manager hasn't answered her: lāzim ykūn, yimkin kān, la ykūn…?",
+  "tip": "Guess with ykūn and kān: lāzim ykūn fi ijtimāʿ 'he must be in a meeting', yimkin kān mashghūl 'maybe he was busy'. A worried guess: la ykūn zaʿlān? 'he isn't cross, is he?'. Future: biykūn mitfahhim 'he'll be understanding'.",
+  "grammar": "kān / ykūn strings: lāzim ykūn, yimkin kān, la ykūn…?, biykūn + participle",
   "dialogue": [
    [
     "A",
     "سالم، بو سعيد ما رد على إيميلي من الصبح",
-    "Sālim, bū Saʿīd ma radd ʿala īmēli min iṣ-ṣubḥ",
+    "Sālim, Bū Saʿīd ma radd ʿala īmēli min iṣ-ṣubḥ",
     "Sālim, Bū Saʿīd hasn't answered my email since this morning."
    ],
    [
@@ -730,20 +717,20 @@
    ],
    [
     "B",
-    "يمكن كان مشغول وايد ونسى",
-    "yimkin kān mashghūl wāyid w nisa",
-    "Maybe he was really busy and forgot."
+    "يمكن كان مشغول وايد، يمكن نسى",
+    "yimkin kān mashghūl wāyid, yimkin nisa",
+    "Maybe he was really busy, maybe he forgot."
    ],
    [
     "A",
-    "ما يكون زعلان مني؟ أمس قلت له إن التقرير بيتأخر",
-    "ma ykūn zaʿlān minni? ams gilt-lah inn it-taqrīr biytʼakhkhar",
+    "لا يكون زعلان مني؟ أمس قلت له إن التقرير بيتأخر",
+    "la ykūn zaʿlān minni? ams gilt-lah inn it-taqrīr biyitʼakhkhar",
     "He isn't cross with me, is he? Yesterday I told him the report would be late."
    ],
    [
     "B",
-    "لا أبد! أكيد بيكون فاهم",
-    "la abad! akīd biykūn fāhim",
+    "لا أبد! أكيد بيكون متفهم",
+    "la abad! akīd biykūn mitfahhim",
     "Not at all! I'm sure he'll understand."
    ],
    [
@@ -760,9 +747,9 @@
    ],
    [
     "A",
-    "شفت؟ طلع عنده موعد عند الدكتور من الصبح!",
-    "shift? ṭilaʿ ʿindah mawʿid ʿind id-daktōr min iṣ-ṣubḥ!",
-    "See? It turns out he's had a doctor's appointment since this morning!"
+    "صدقت والله! طلع عنده موعد عند الدكتور من الصبح!",
+    "ṣidagt wallāh! ṭilaʿ ʿindah mawʿid ʿind id-daktōr min iṣ-ṣubḥ!",
+    "You were right! It turns out he had a doctor's appointment this morning!"
    ],
    [
     "B",
@@ -794,32 +781,32 @@
     "she might be: yimkin tkūn (يمكن تكون)"
    ],
    [
-    "ما يكون زعلان؟",
-    "ma ykūn zaʿlān?",
+    "لا يكون زعلان؟",
+    "la ykūn zaʿlān?",
     "he isn't cross, is he? (a worried guess)",
     "أيكون غاضبًا؟",
-    "of a woman: ma tkūn zaʿlāna? (ما تكون زعلانة؟)"
+    "of a woman: la tkūn zaʿlāna? (لا تكون زعلانة؟); not the same as la tkūn zaʿlān 'don't be cross' (to a man)"
    ],
    [
-    "بيكون فاهم",
-    "biykūn fāhim",
-    "he'll understand, he'll be fine about it",
+    "بيكون متفهم",
+    "biykūn mitfahhim",
+    "he'll be understanding, he'll understand",
     "سيكون متفهمًا",
-    "she'll understand: bitkūn fāhma (بتكون فاهمة)"
+    "she'll be understanding: bitkūn mitfahhma (بتكون متفهمة)"
    ],
    [
-    "مشغول وايد",
-    "mashghūl wāyid",
-    "really busy (a man)",
-    "مشغول جدًا",
-    "a woman: mashghūla wāyid (مشغولة وايد)"
+    "يمكن نسى",
+    "yimkin nisa",
+    "maybe he forgot",
+    "ربما نسي",
+    "maybe she forgot: yimkin nisat (يمكن نست); maybe I forgot: yimkin nisēt (يمكن نسيت)"
    ],
    [
-    "زعلان مني",
-    "zaʿlān minni",
-    "cross with me, upset with me (a man)",
-    "غاضب مني",
-    "a woman: zaʿlāna minni (زعلانة مني)"
+    "عند الدكتور",
+    "ʿind id-daktōr",
+    "at the doctor's",
+    "عند الطبيب",
+    ""
    ],
    [
     "سكرتيرته",
@@ -987,8 +974,8 @@
   "stage": 4,
   "title": "I reckon I passed",
   "goal": "After the exam, tell Sēf what you'd thought, what you expect, and what you don't believe: atwaggaʿ, ʿala bāli, ma aʿtagid",
-  "tip": "Gulf has a word for each kind of thinking: atwaggaʿ inn 'I expect', aẓunn 'I think', aḥiss 'I feel', ma aʿtagid 'I don't believe so', and ʿala bāli or ḥasbāli 'I thought (but I was wrong)': ʿala bāli biykūn sahil.",
-  "grammar": "\"I think\" expressions: atwaggaʿ inn, ʿala bāli / ḥasbāli (thought wrongly), ma aʿtagid. Recycle: aẓunn, aḥiss",
+  "tip": "Gulf has a word for each kind of thinking: atwaggaʿ inn 'I expect', aẓunn 'I think', aḥiss 'I feel', ma aʿtagid 'I don't believe so', and ʿala bāli or ẓannēt 'I thought (but I was wrong)': ʿala bāli biykūn sahil.",
+  "grammar": "\"I think\" expressions: atwaggaʿ inn, ʿala bāli / ẓannēt (thought wrongly), ma aʿtagid. Recycle: aẓunn, aḥiss, titwaggaʿ",
   "dialogue": [
    [
     "A",
@@ -1016,8 +1003,8 @@
    ],
    [
     "A",
-    "عادي! وأنا حسبالي انت دوم الأول",
-    "ʿādi! w ana ḥasbāli inta dōm il-awwal",
+    "عادي! وأنا ظنيت انت دوم الأول",
+    "ʿādi! w ana ẓannēt inta dōm il-awwal",
     "That's OK! And I thought you always came top."
    ],
    [
@@ -1053,13 +1040,6 @@
   ],
   "items": [
    [
-    "أتوقع إن",
-    "atwaggaʿ inn",
-    "I expect (that), I reckon",
-    "أتوقع أن",
-    "I reckon I…: atwaggaʿ inni (أتوقع إني)"
-   ],
-   [
     "لا تفكر فيه",
     "la tfakkir fīh",
     "don't think about it, put it out of your mind (to a man)",
@@ -1067,18 +1047,18 @@
     "to a woman: la tfakkrīn fīh (لا تفكرين فيه)"
    ],
    [
-    "على بالي بيكون",
-    "ʿala bāli biykūn",
-    "I thought it would be (but it wasn't)",
-    "ظننت أنه سيكون",
-    ""
+    "ظنيت",
+    "ẓannēt",
+    "I thought, I assumed (wrongly)",
+    "ظننت",
+    "(recognise); also: ḥasbāli (حسبالي), Kuwait-leaning"
    ],
    [
-    "حسبالي",
-    "ḥasbāli",
-    "I thought, I assumed (wrongly)",
-    "حسبت",
-    "(recognise)"
+    "متى النتايج؟",
+    "mita n-natāyij?",
+    "when are the results (out)?",
+    "متى النتائج؟",
+    ""
    ],
    [
     "ما أعتقد",
@@ -1117,8 +1097,7 @@
    ]
   ],
   "receptive": [
-   3,
-   4
+   1
   ]
  },
  {
@@ -1126,7 +1105,7 @@
   "stage": 4,
   "title": "They don't talk to each other",
   "goal": "With Sēf, find out why two classmates have fallen out, and plan to get them to make up: baʿaẓ, kill wāḥid … ith-thāni",
-  "tip": "'Each other' is baʿaẓ after a plural verb: ma ykallmūn baʿaẓ 'they don't talk to each other', biyshūfūn baʿaẓ 'they'll see each other'. Or say it in two halves: kill wāḥid yalūm ith-thāni 'each one blames the other'.",
+  "tip": "'Each other' is baʿaẓ after a plural verb: ma ykallmūn baʿaẓ 'they don't talk to each other', biyshūfūn baʿaẓ 'they'll see each other'. Or say it in two halves: kill wāḥid ylūm ith-thāni 'each one blames the other'.",
   "grammar": "reciprocals: verb + baʿaẓ (ma ykallmūn baʿaẓ), kill wāḥid … ith-thāni, mitzāʿlīn",
   "dialogue": [
    [
@@ -1156,7 +1135,7 @@
    [
     "A",
     "المشروع! كل واحد يلوم الثاني، ويقول إنه ما سوى شي",
-    "il-mashrūʿ! kill wāḥid yalūm ith-thāni, w ygūl innah ma sawwa shay",
+    "il-mashrūʿ! kill wāḥid ylūm ith-thāni, w ygūl innah ma sawwa shay",
     "The project! Each one blames the other and says he did nothing."
    ],
    [
@@ -1214,7 +1193,7 @@
    ],
    [
     "كل واحد يلوم الثاني",
-    "kill wāḥid yalūm ith-thāni",
+    "kill wāḥid ylūm ith-thāni",
     "each one blames the other",
     "كل واحد يلوم الآخر",
     "(recognise)"
@@ -1264,7 +1243,7 @@
    [
     "A",
     "سالم، بو سعيد يبي رأيك في البرنامج اليديد",
-    "Sālim, bū Saʿīd yabi raʼyak fi l-barnāmij il-yidīd",
+    "Sālim, Bū Saʿīd yabi raʼyak fi l-barnāmij il-yidīd",
     "Sālim, Bū Saʿīd wants your opinion on the new system."
    ],
    [
@@ -1277,7 +1256,7 @@
     "A",
     "ليش؟ أنا شفته سهل تقريبا",
     "lēsh? ana shiftah sahil tagrīban",
-    "Why? I found it fairly easy."
+    "Why? I found it more or less easy."
    ],
    [
     "B",
