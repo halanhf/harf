@@ -129,7 +129,7 @@ One scheme, always. It is the app's `DIALECT` scheme (index.html), with the y ru
 | "his" ـه | -ah (after a vowel: -h) | bētah, ʿindah, ʿaṭāh | keeps it apart from -a |
 | ح ص ط | ḥ ṣ ṭ | ḥilu, ṣabāḥ, ṭālib | |
 | ض and ظ | ẓ for both | tfaẓẓal, abyaẓ, il-mafrūẓ | ḍ triggers a lint warning |
-| ع / hamza | ʿ / ʼ | ʿindi; masāʼ, shāʼ allāh, b-raʼyi, liʼann | no ʼ at the start of a word (ana, abi, idhnak) |
+| ع / hamza | ʿ / ʼ | ʿindi; masāʼ, shāʼ allāh, b-raʼyi (Gulf "because" is lann, لأن) | no ʼ at the start of a word (ana, abi, idhnak) |
 | خ غ ش ث ذ | kh gh sh th dh | khalāṣ, ghāli, thalātha, hādha, idha | never ḏ |
 | ق | g; j where Gulf says j; q only in religious or formal words | gahwa, garīb, jiddām; qurʼān | |
 | ك | k; ch only where Gulf really says ch | kitāb; bāchir, simach, cham, -ich | ch is learned word by word (S: lexical, not a rule) |
