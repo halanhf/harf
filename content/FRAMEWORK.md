@@ -15,7 +15,7 @@ This is the plan that about 470 lessons are written and checked against. `STYLE.
 | 5 | C1 | **s5u001–s5u090** | **90** | 9 (about 4) | ~790 | ~460 / ~330 | ~4,080 | 18 (every 5th unit) | F18–F20 | R5: 14 |
 | | | | **466** | | | **~3,450 / ~630** | **~4,080** | **40** | **1,000 words** | **82** |
 
-**Daily time budget (course lead):** about 30 minutes: **one lesson ≈ 10 minutes, reviews ≈ 15, speaking ≈ 5** (role-play of the lesson's B lines, or the app's Talk partner). Reviews come first; if they run long, the new lesson waits for the next day. A lesson brings at most 9 new item cards plus its 2–8-word dialogue lines as sentence cards (E: up to about 15 new cards a day), which is what keeps reviews near 15 minutes. B2 and C1 `task`s are **weekly and optional**, done outside the 30 minutes.
+**Daily time budget (course lead):** about 30 minutes: **one lesson ≈ 10 minutes, reviews ≈ 15, speaking ≈ 5** (role-play of the lesson's B lines, or the app's Talk partner). Reviews come first; if they run long, the new lesson waits for the next day. A lesson brings at most 9 new item cards plus its 2–8-word dialogue lines as sentence cards (E: up to about 15 new cards a day), which is what keeps reviews near 15 minutes. B2 and C1 `task`s are **weekly and optional**, done outside the 30 minutes. Receptive items cut production effort, not the number of reviews, so once reviews build up expect about 5 new lessons a week rather than 7 (E): the 466 lessons then take about 1.8 years at 30 minutes a day.
 
 **Item arithmetic.** The app allows 5 to 9 items per unit, and each phrase is taught once in the whole course. About 4,080 items in 466 units needs **9 items in every normal lesson** (8 is the floor) and **6 in checkpoint and exit lessons**. Items may be words or chunks ("ما أدري وين", "على طول"). From B2 a lesson may mark some items **receptive** (optional field `"receptive": [indices]`, STYLE §13): about 3 per B2 lesson and 4 per C1 lesson, so the productive load drops to about 6 and 5 there, as the report advises ("met by receptive learning … not by overloading production drills"). Productive total ≈ 3,450 items; receptive ≈ 630, plus what tasks and the fuṣḥā track add. All figures are E.
 
@@ -29,7 +29,7 @@ This is the plan that about 470 lessons are written and checked against. `STYLE.
 | B2 | 7–10 | 3–16 (half of B's lines 2–8) | as B1 | 1 in 2 | every 5th unit | ≤25% |
 | C1 | 7–10 | 3–16 (half of B's lines 2–8) | as B1 | 1 in 2 | every 5th unit | ≤30% |
 
-**Checkpoints** come every 9 to 18 units (numbered per stage: checkpoint 1.1, 1.2 …). The dialogue recycles the block's items in a new scene. The 6 items are things the block needed but didn't teach: group or other-gender forms of a frequent phrase, a collocation, or (from A2) a labelled regional variant. A checkpoint never re-teaches a phrase.
+**Checkpoints** come every 6 to 18 units (numbered per stage: checkpoint 1.1, 1.2 …). The dialogue recycles the block's items in a new scene. The 6 items are things the block needed but didn't teach: group or other-gender forms of a frequent phrase, a collocation, or (from A2) a labelled regional variant. A checkpoint never re-teaches a phrase.
 
 **How to read the "new items" cells below.** Forms before "recycle:" or "reuse:" are new items for that block. Forms after it were taught earlier: use them in the dialogue, never as items.
 
@@ -92,7 +92,8 @@ Settings, Dubai first: karak stand, Dubai Metro, a mall, the office, a universit
 | s2u050–s2u053 | Numbers II: hundreds, thousands, money (dirham, fils; Kuwaiti dinar in notes); ordinals 1st–10th and ākhir (S); months by number (S: shahar tisʿa) and by name (U) | prices, dates, birthdays, appointments | numbers | ثلاث مية, ألفين, ثالث, رابع, عاشر, آخر واحد, شهر; recycle: أول, ثاني | — |
 | s2u054 | checkpoint 2.3 | — | — | 6 | — |
 | s2u055–s2u058 | recycle: present, past | at the clinic and pharmacy; I'm ill; get well soon; **emergencies**: an accident, calling an ambulance or the police (no invented procedures) | health, safety | تعبان, يعورني, أحس, دكتور, صيدلية, شفيك, خير؟, سلامات, ما تشوف شر, عسى ما شر, إسعاف, حادث, شرطة; reuse: الله يسلمك | — |
-| s2u059–s2u062 | **Noun plurals:** sound -īn / -āt, the common broken plurals (bēt → byūt, rayyāl → ryāyīl, bint → banāt, sūg → aswāg, walad → ʿyāl), the dual recycled, plural + adjective agreement (S: gulfarabic.com G.2; published grammar) | seasons and occasions: summer heat, welcome back, **Ramadan and Eid greetings** | weather, seasons | بيوت, ريايل, بنات, أسواق, سيارات, الحر, الرطوبة, الغبار, البرد, الحمد لله على السلامة, رمضان كريم, الله أكرم, مبارك عليكم الشهر, تقبل الله, منا ومنكم, عساكم من عواده; reuse: الله يبارك فيك | Ramadan and Eid greetings (S: The National); summer life |
+| s2u059–s2u060 | **Noun plurals:** sound -īn / -āt, the common broken plurals (bēt → byūt, rayyāl → ryāyīl, bint → banāt, sūg → aswāg, walad → ʿyāl), the dual recycled, plural + adjective agreement (S: gulfarabic.com G.2; published grammar) | describing the city, the neighbourhood and the shops | city | بيوت, رياييل (221/51; you'll see written ريايل), بنات, أسواق, سيارات, محلات, ناس | — |
+| s2u061–s2u062 | recycle: plurals | seasons and occasions: summer heat, welcome back, **Ramadan and Eid greetings** | weather, seasons | الحر, الرطوبة, الغبار, البرد, الحمد لله على السلامة, رمضان كريم, الله أكرم, مبارك عليكم الشهر, تقبل الله, منا ومنكم, عساكم من عواده; reuse: الله يبارك فيك | Ramadan and Eid greetings (S: The National); summer life |
 | s2u063–s2u067 | recycle: imperatives, object endings | **majlis visit** at Bū Rāshid's: coffee, dates, incense, the long goodbye; addressing elders | hospitality | فنجان, دلة, بخور, طال عمرك, طويل العمر, يا عمي, السموحة, مسموح, ما عليه (tip: "you'll also hear maʿlēsh"), حبيبي (register note) | the finjān shake to refuse more coffee (S); the long goodbye (S); yā rayyāl is for friends only (S); كثر خيرك as a polite refusal, recognise only until a native confirms it (S Wiktionary; C 3/0) |
 | s2u068–s2u071 | ḥabbēt + verb "I'd like to" (S); widdi; khal / khallīna + verb "let's" (C) | invitations: accepting, declining, suggesting | social plans | حبيت, ودي, خلنا, يصير؟, أبشر, على هالخشم, على راسي | in shāʼ allāh as a soft "maybe" (S) |
 | s2u072 | checkpoint 2.4 | — | — | 6 | — |
@@ -152,14 +153,14 @@ From here each lesson marks about 3 (B2) or 4 (C1) items receptive (STYLE §13),
 | s4u021–s4u024 | **Quadriliteral verbs** and English verbs with Arabic endings (kansal, chayyak, ballak: U) | tech trouble; cancelling, checking, blocking | technology | youth loans |
 | s4u025–s4u028 | **Wish, want, prefer.** New: atmanna, yā rēt, afaẓẓil. Recycle: widdi, ḥabbēt | preferences and hopes | personal | — |
 | s4u029 | checkpoint 4.2 | — | — | — |
-| s4u030–s4u034 | **Diminutives** (ṣghayyir), abu / umm uses, address, exclamatives (U). New: yā khālti, yā bū X, ukhti, yā shēkh. Recycle: yā ʿammi | addressing people of every rank; nicknames | people | bū-names, kunya conventions (U) |
+| s4u030–s4u034 | **Diminutives** (a -ayyir / -ayya example chosen with a native, U), abu / umm uses, address, exclamatives (U). New: yā khālti, yā bū X, يا أختي yā ukhti (chunk; 113/69), yā shēkh. Recycle: yā ʿammi, أختي, صغير | addressing people of every rank; nicknames | people | bū-names, kunya conventions (U) |
 | s4u035–s4u039 | **kān / ykūn strings** (lāzim ykūn, yimkin kān); "as if"; "I think"; reciprocals; -an adverbs. New: atwaqqaʿ, taqrīban, awinna (UAE, S), kinnah / chinnah (C), baʿaẓ (C). Recycle: aẓunn, aḥiss, ṭabʿan, aṣlan | guessing, interpreting, describing impressions | conversation | — |
 | s4u040–s4u043 | **Word order:** topic first with a resumptive pronoun, fronting for emphasis, question word at the end (S), agreement with non-human plurals (U) | emphasis and contrast in argument | conversation | — |
 | s4u044 | checkpoint 4.3 | — | — | — |
 | s4u045–s4u050 | recycle | agreeing, disagreeing politely, conceding (ṣaḥḥ bas…, maʿak ḥagg bas…); pros and cons | cost of living, rent | — |
 | s4u051–s4u056 | recycle | society and community: neighbours, traffic, wedding costs, national days | society | national day dates (U: verify) |
 | s4u057 | checkpoint 4.4 | — | — | — |
-| s4u058–s4u063 | recycle; listening to fast speech | **other Arabic voices and media:** recognising Saudi (wish, abgha, marra "very", daḥḥīn), Qatari, Bahraini and Omani forms (receptive items glossed by region); Levantine and Egyptian heard in Dubai (one weekly task); TV series, football, music | media | the Gulf's dialect map (S: Wikipedia; regional cells U) |
+| s4u058–s4u063 | recycle; listening to fast speech | **other Arabic voices and media:** recognising Saudi (wish, abgha, daḥḥīn; marra "very" only in the chunk مرة حلو marra ḥilu, 14/43, because مرة "once" is an s1u044 item), Qatari, Bahraini and Omani forms (receptive items glossed by region); Levantine and Egyptian heard in Dubai (one weekly task); TV series, football, music | media | the Gulf's dialect map (S: Wikipedia; regional cells U) |
 | s4u064–s4u069 | recycle; office register | work II: job interview, salary, presenting, complaining to a manager | work | office vs majlis register |
 | s4u070 | checkpoint 4.5 | — | — | — |
 | s4u071–s4u076 | recycle | health and lifestyle: diet, gym, sleep, stress; **explaining how to do something** (a recipe, an app, a process, without invented official steps) | health | — |
@@ -179,8 +180,8 @@ C1 grammar categories come from the table of contents of a published Emirati Ara
 
 | Units | Grammar point | Functions and situations | Culture |
 |---|---|---|---|
-| s5u001–s5u006 | **Epistemic and evidential modality.** New: chūd (Kuwait-leaning, S Kuwaiti study; C جود 270/285 mixes jūd "generosity") [weak], wāẓiḥ inn, ygūlūn inn, sāmiʿ inn. Recycle: yimkin, akīd, shakl-ah | hedging, guessing, reporting what you've heard | — |
-| s5u007–s5u010 | **Optatives and hortatives.** New: ʿasa + ending, allāh y- wishes. Recycle: yā rēt, khal + verb | wishing, blessing, urging | blessings as social glue |
+| s5u001–s5u006 | **Epistemic and evidential modality.** New: chūd (Kuwait-leaning, S Kuwaiti study; C جود 270/285 mixes jūd "generosity") [weak], wāẓiḥ inn, sāmiʿ inn. Recycle: yimkin, akīd, shakl-ah, ygūlūn inn (يقولون إن, s3u019) | hedging, guessing, reporting what you've heard | — |
+| s5u007–s5u010 | **Optatives and hortatives.** New: عساه / عساها + wish (105/77), الله يوفقك (170/160), الله يحفظك (272/49). Recycle: yā rēt, khal + verb, and the ʿasa and allāh y- formulas in §7 | wishing, blessing, urging | blessings as social glue |
 | s5u011–s5u014 | **Assertive gid** in kān gid + perfect (S: Alotaibi, Kuwaiti; Emirati use U) [weak]; understatement. Recycle: wallāh, aṣlan, tara, ʿād | insisting, emphasising, playing down | — |
 | s5u015 | checkpoint 5.1 | — | — |
 | s5u016–s5u020 | **Negative polarity and concord.** New: wala marra (S), ma … illa, ma ʿumri. Recycle: abad, maḥḥad | strong denials, "never in my life" | — |
@@ -230,11 +231,11 @@ Teach the pair together, in the same dialogue. Evidence: S sourced; C Gumar phra
 | سلامات | الله يسلمك (reuse) | to someone ill | C 198/82; pair U | s2u055 |
 | ما تشوف شر | الله يسلمك (U) | to someone ill | C 25/34; reply U | s2u055 |
 | عسى ما شر؟ | ما شر, الحمد لله | "nothing bad, I hope?" | C 103/136; pair U | s2u055 |
-| الحمد لله على السلامة | الله يسلمك (reuse) | welcome back from a trip or illness | C 180/89; pair U | s2u059 |
-| رمضان كريم | الله أكرم | Ramadan | S | s2u059 |
-| مبارك عليكم الشهر / شهرك مبارك | الله يبارك فيك (reuse) | start of Ramadan | S (The National) | s2u059; شهرك مبارك s3u071 |
-| تقبل الله (منا ومنكم) | منا ومنكم | after prayer, fasting, iftar | S; C 20/30 | s2u059 |
-| عساكم من عواده | repeat it | Eid (UAE and GCC) | S (reply: repeat) | s2u059 |
+| الحمد لله على السلامة | الله يسلمك (reuse) | welcome back from a trip or illness | C 180/89; pair U | s2u061 |
+| رمضان كريم | الله أكرم | Ramadan | S | s2u061 |
+| مبارك عليكم الشهر / شهرك مبارك | الله يبارك فيك (reuse) | start of Ramadan | S (The National) | s2u061; شهرك مبارك s3u071 |
+| تقبل الله (منا ومنكم) | منا ومنكم | after prayer, fasting, iftar | S; C 20/30 | s2u061 |
+| عساكم من عواده | repeat it | Eid (UAE and GCC) | S (reply: repeat) | s2u061 |
 | كثر خيرك | (host insists or accepts) | polite refusal of an offer (S, Wiktionary) | C weak 3/0; usage U | culture note s2u063; item only after native check |
 | طال عمرك / طويل العمر | — (respectful address, not a pair) | to elders, sheikhs, strangers (S) | S; C 172/123, 80/11 | s2u063 |
 | السموحة | مسموح; ما عليه (U) | "excuse me, pardon" (meaning U) | C السموحه 489/67, السموحه منك 72/8, مسموح 124/51 | s2u063 |
@@ -352,7 +353,7 @@ Each point is taught in its block and must reappear, in use, in the listed later
 | Point | Taught | Recycled in |
 |---|---|---|
 | possessive endings, construct | s1u021 | every stage; -ich forms in every block with Maryam or Umm Sēf |
-| noun plurals and the dual | u14 (dual), s1u021 (family plurals as vocabulary), s2u059 | s3u066, s4u040 (non-human agreement) |
+| noun plurals and the dual | u14 (dual), s1u021 (family plurals as vocabulary), s2u059 | s2u061, s3u066, s4u040 (non-human agreement) |
 | past tense (all types) | s1u033–s1u042 | s2u037 (kān), s2u041 (time clauses), s3u007 (kān gāʿid), s3u102 (storytelling), s4u077 |
 | present tense -īn / -ūn | s2u001–s2u012 | s2u018 (progressive), s2u037 (used to), s3u013 (conditionals), all later dialogues |
 | future b- | u8, s2u013 | s3u013 (result clause), s4u007 (future perfect) |
@@ -372,7 +373,7 @@ Each point is taught in its block and must reappear, in use, in the listed later
 
 1. **Cards.** The app's spaced review brings back every item and every 2–8-word dialogue line. Lessons don't drill old items; they use them.
 2. **Dialogues.** Each new dialogue uses at least 3 items from the previous 10 units and at least 2 from more than 30 units back. The reviewer lists them in the review sheet.
-3. **Checkpoints** every 9 to 18 units put the block's items into a new scene (§1).
+3. **Checkpoints** every 6 to 18 units put the block's items into a new scene (§1).
 4. **Grammar** follows the map in §9.
 5. **Cast continuity.** Sēf, Maryam, Bū Rāshid and Fahad keep their lives going (Sēf's exams, Maryam's project, the Kuwait trip), so earlier situations come back naturally.
 6. **Teach once.** A form named after "recycle:" or "reuse:" in this file is never an item again. Stage 1 phrases appear in later dialogues verbatim (STYLE §3).
@@ -418,7 +419,7 @@ The `task` field appears in every 5th unit of stages 4 and 5 (s4u005, s4u010 …
 
 **Domain values:** function, signs, forms, services, news, religion, general.
 
-**Order: the words Gulf speech doesn't use come first** (S, report). **The test for an M function word:** below about 128 pm in both Gumar corpora, or above it only through fuṣḥā narration in the novels (التي 160:204, تلك 170:83, هذه 103:112: Gulf speech uses اللي, هذيك, هذي). Words that pass Gumar's top 1,000 as real speech are G~, not M: لكن 802:1060, لأن 506:879, هنا 188:350, ثم 82:157, أن / إن, إلى. The M words double as the dialect lessons' MSA blacklist (STYLE §10). The ranked spine beyond F03 comes from the KELLY Arabic list (CC BY-NC-SA) cross-checked against Buckwalter and Parkinson; neither could be downloaded in the research, so **every batch after F03 needs the list obtained first** (U).
+**Order: the words Gulf speech doesn't use come first** (S, report). **The test for an M function word:** below about 128 pm in both Gumar corpora, or above it only through fuṣḥā narration in the novels (التي 160:204, تلك 170:83, هذه 103:112: Gulf speech uses اللي, هذيك, هذي). Words that pass Gumar's top 1,000 as real speech are G~, not M: لكن 802:1060, لأن 506:879, هنا 188:350, ثم 82:157, أن / إن, إلى. **The blacklist is the STYLE §10 hard list only.** F01 words not on it (سوى, قد, كما, إذن, نحو, حول, ضدّ, أثناء, ما زال, كي) are never auto-flagged: سوى normalises to Gulf sawwa / sawwi (1419/699) and إذن is also "permission" (عن إذنك). سوى must never enter the linter's MSA set. The ranked spine beyond F03 comes from the KELLY Arabic list (CC BY-NC-SA) cross-checked against Buckwalter and Parkinson; neither could be downloaded in the research, so **every batch after F03 needs the list obtained first** (U).
 
 | Batch | Stage | Words | Domain | Contents (examples; never duplicate the 44 in F00) |
 |---|---|---|---|---|
@@ -486,4 +487,6 @@ The review (`content/review/framework_review.md`, 55 rows) was applied in full: 
 - **#11 (like this):** took the reviewer's first option. جي chī is the Emirati default, and جذي chidhi is taught beside it at s1u027.
 - **#33 (other dialects):** placed at s4u058–s4u063 ("other Arabic voices and media", receptive items by region, plus one Levantine or Egyptian gist task), not at s5u053, so persuasion keeps its C1 block.
 
-Other changes beyond the review: Kuwaiti items start at s2u027 (the s1u032 checkpoint now teaches group forms); a checkpoint (s1u052) was added to stage 1, shifting the modal and food blocks to s1u053 and s1u057; Ramadan and Eid greetings moved to A2 (s2u059) and emergencies to s2u055; Form II to X verbs are taught as inflected chunks to avoid homograph collisions; weak forms were replaced after attest.py checks (خابرني 1/1 and صلحت 16/5 dropped for اتصلت 1839/870 and يصلح 110/75).
+Other changes beyond the review: Kuwaiti items start at s2u027 (the s1u032 checkpoint now teaches group forms); a checkpoint (s1u052) was added to stage 1, shifting the modal and food blocks to s1u053 and s1u057; Ramadan and Eid greetings moved to A2 (now s2u061) and emergencies to s2u055; Form II to X verbs are taught as inflected chunks to avoid homograph collisions; weak forms were replaced after attest.py checks (خابرني 1/1 and صلحت 16/5 dropped for اتصلت 1839/870 and يصلح 110/75).
+
+**Round 2** (appended to the same review file): all 3 MUST FIX, all 9 SHOULD FIX and all 5 NOTEs applied, none rejected. R2-1 to R2-3 (re-taught يقولون إن, أختي, Saudi مرة) moved to recycle or chunks; R2-4 exceptions list now names جي, جذي, جان; R2-5 "sit" is yalas / ييلس yiylis [weak]; R2-6 the blacklist is the STYLE §10 hard list only; R2-7 checkpoints "every 6 to 18 units"; R2-8 رياييل; R2-9 s5u007 names only new wishes; R2-10, R2-13 homograph list updated; R2-11 s2u059–s2u060 (plurals, city) split from s2u061–s2u062 (seasons, Ramadan and Eid; §7 "taught in" updated); R2-12 معليش is a stage 1 form, fine for B; R2-14 STYLE §9 marks the app and linter work done; R2-15 calendar note in §1; R2-16 diminutive example left to a native; R2-17 the DIALECT rule in index.html now has the ي rule. Stage 1 rows are unchanged.

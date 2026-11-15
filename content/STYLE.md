@@ -14,7 +14,7 @@ Evidence keys used below:
 
 **The rule for choosing a default (S, report):** where one form is common in both corpora (rates within about 3 to 1), it is the default, even if one country also has its own form. Otherwise the Dubai/northern-Emirates form is the default and the other forms go in notes. Kuwaiti forms are taught for recognition from A2 (a Kuwaiti friend joins the cast at s2u027), never at A1, and never banned.
 
-**Stage 1 forms are FINE, everywhere.** The 16 stage 1 lessons stay as they are. Some of their forms are pan-Gulf or Kuwaiti-leaning (شلونك / شلونج, إي, شلون). They are correct Gulf Arabic, and B (the learner) may use them in any later lesson. The Emirati alternatives (شحالك, هيه, كيف chēf) are taught as **extra items**, never as corrections: no tip, note or reviewer comment may tell the learner to stop saying a stage 1 form. Emirati speakers in the cast use the Emirati default; B may use either.
+**Stage 1 forms are FINE, everywhere.** The 16 stage 1 lessons stay as they are. Some of their forms are pan-Gulf or Kuwaiti-leaning (شلونك / شلونج, إي, شلون, معليش). They are correct Gulf Arabic, and B (the learner) may use them in any later lesson. The Emirati alternatives (شحالك, هيه, كيف chēf) are taught as **extra items**, never as corrections: no tip, note or reviewer comment may tell the learner to stop saying a stage 1 form. Emirati speakers in the cast use the Emirati default; B may use either.
 
 | Feature | Default (script, translit) | Labelled variants (go in notes) | Gumar evidence | Stage 1 form (fine for B) |
 |---|---|---|---|---|
@@ -45,7 +45,7 @@ Evidence keys used below:
 | "kids, child" | عيال ʿyāl | UAE also: يهال yahhāl, ياهل yāhil "child" | عيال 1531/720; يهال 347/124; ياهل 1068/399 | — |
 | "room" | غرفة ghurfa | UAE also: حجرة ḥijra | غرفه 3503/2239; حجره 1251/31 | — |
 | "talk, speak" | يتكلم yitkallam; يسولف ysōlif "chat" | UAE also: يرمس yirmis | يتكلم 1015/882; يرمس 1205/6; يسولف 488/188 | تتكلم (u9) |
-| "sit" | قعد gaʿad | UAE also: يلس yilis | قعد 923/1404 (102:269); يلس 1566/15 | — |
+| "sit" | قعد gaʿad | UAE also: يلس yalas [weak: native check yalas / yilas]; present ييلس yiylis | قعد 923/1404 (102:269); يلس 1566/15, يلست 5388/22, ييلس 420/4 | — |
 | "sleep" | نام nām | UAE also: رقد rgad | انام 784/1146; ارقد 1528/67 | — |
 | "money" | فلوس flūs | UAE also: بيزات bēzāt | فلوس 342/391; بيزات 129/5 | — |
 | "car / phone" | سيارة sayyāra, تلفون tilifōn | موتر mōtar, موبايل mobāyl (recognise; mōtar is old-fashioned in Kuwait, S) | سياره 2170/860 vs موتر 52/1; تلفون 955/492 vs موبايل 338/114 | — |
@@ -63,7 +63,7 @@ The course follows **CODA-Gulf** (S: Khalifa et al. 2016; Habash et al. 2018) fo
 | g (and j) from ق | write ق | قهوة gahwa, قال gāl, قريب garīb, قدام jiddām [weak translit] | S (CODA*) |
 | ch from ك in roots | write ك | باكر bāchir, سمك simach, كم cham | S (GUMAR) |
 | 2nd person feminine -ich | always ـج | عندج ʿindich, شحالج shḥālich, عليج ʿalēch | S; C (عليج 7565/3072, لج 6707/3650) |
-| **y-sound from fuṣḥā j, in dialect words** | write ي | ياي yāy "coming" (2266/554 vs جاي 568/911); يالس yālis (2951/48 vs جالس 505/839); ريّال rayyāl (2293/683); يديد yidīd (962/194 vs جديد 765/710 for jadīd); شو اليديد (8/0); يهال, ياهل; ييت yīt "I came" (801/266 vs جيت 321/567); يبت yibt "I brought" (370/93); ييب لي yīb-li (16/9); دياي diyāy (39/25); يلس yilis (1566/15); ويهي wiyhi "my face" (2446/235); يوعان yōʿān "hungry" (194/83) | C; course lead |
+| **y-sound from fuṣḥā j, in dialect words** | write ي | ياي yāy "coming" (2266/554 vs جاي 568/911); يالس yālis (2951/48 vs جالس 505/839); ريّال rayyāl (2293/683); يديد yidīd (962/194 vs جديد 765/710 for jadīd); شو اليديد (8/0); يهال, ياهل; ييت yīt "I came" (801/266 vs جيت 321/567); يبت yibt "I brought" (370/93); ييب لي yīb-li (16/9); دياي diyāy (39/25); يلس yalas (1566/15; present ييلس yiylis 420/4); ويهي wiyhi "my face" (2446/235); يوعان yōʿān "hungry" (194/83) | C; course lead |
 | **j kept** | write ج where the word is said with j: fuṣḥā-shared, formal or recent words | جامعة jāmʿa, جواز jawāz, جنسية jinsiyya, مسجد masjid, الجمعة il-jumʿa (relaxed speech yimʿa: note it), مجلس majlis | stage 1 (u7, u16); y-spellings are rare: اليامعه 17/0, مسيد 27/2 |
 | deciding j or y | look up both spellings with attest.py, cite both counts in the review sheet, and log the word in the seed lexicon | — | — |
 | ch in شاي | write ش | شاي chāy | S (GUMAR) |
@@ -82,7 +82,7 @@ The course follows **CODA-Gulf** (S: Khalifa et al. 2016; Habash et al. 2018) fo
 | punctuation | Arabic comma ، and question mark ؟ | — | stage 1 |
 
 **Deliberate exceptions (whole list):**
-1. **جذي chidhi**, not كذي (ch spelled ج). Natives write جذي 2679/6242 against كذي 17/4, and كذي would read as Saudi كذا.
+1. **جذي chidhi, جي chī** and **جان chān**: ch spelled ج. Natives write جذي 2679/6242 against كذي 17/4, and جي 6406/475; كذي and كي would read as Saudi كذا or fuṣḥā كي. جان is CODA's own spelling.
 2. **باكر bāchir** stays as in u8 and the app's DIALECT rule, although natives mostly write باجر (4173/1772 against 137/42). Note "you'll see written باجر" the first time it recurs.
 3. **ثنين thnēn** stays as in u4 and the NUMBERS table, although اثنين is more common in writing (349/301 against 46/43).
 4. **محد maḥḥad** "nobody" is one word (it is fused, not ما + word). C: 676/399 pm. [weak]
@@ -91,8 +91,9 @@ The course follows **CODA-Gulf** (S: Khalifa et al. 2016; Habash et al. 2018) fo
 **Homographs: teach these only as chunks, never bare,** because the linter's duplicate check sees one key:
 - يدي: yaddi "my grandfather" vs īdi "my hand" (write "my hand" إيدي, 3592/421).
 - ويه: wiyh "face" vs wēh "ugh!". Teach ويهي "my face"; the interjection only in notes.
-- يا: "he came" vs the vocative يا. Teach ما يا "he didn't come" (110/10), يا أمس.
-- مرة: marra "once, time" vs mara "woman, wife". Teach "wife" as مرتي (187/274).
+- يا: "he came" vs the vocative يا. Teach ما يا "he didn't come" (110/10) or another chunk attested with attest.py; never bare يا.
+- مرة: marra "once, time" (the item, s1u044) vs mara "woman, wife" vs Saudi marra "very". Teach "wife" as مرتي (187/274) and Saudi "very" only in a chunk such as مرة حلو (14/43).
+- يصلح: yṣalliḥ "fixes" (the item, s3u029) vs yiṣlaḥ "will do, is suitable". Teach the second only as ما يصلح (16/25).
 - غير ghēr "other" vs ghayyar "changed" (teach غيرت); دور dōr "turn, floor" vs dawwar "looked for" (teach دورت); تعرف "you know" vs taʿarraf (teach تعرفت على, 55/36); ودي widdi "I'd like" vs ودى wadda "took" (teach ودني "take me", 219/131).
 - ريال (coin) vs ريّال (man): only the shadda separates them, and the linter ignores shadda, so they can't both be items. "Man" is the item (s1u021); the coin goes in notes and dialogue.
 
@@ -113,7 +114,7 @@ One scheme, always. It is the app's `DIALECT` scheme (index.html), with the y ru
 | خ غ ش ث ذ | kh gh sh th dh | khalāṣ, ghāli, thalātha, hādha, idha | never ḏ |
 | ق | g; j where Gulf says j; q only in religious or formal words | gahwa, garīb, jiddām; qurʼān | |
 | ك | k; ch only where Gulf really says ch | kitāb; bāchir, simach, cham, -ich | ch is learned word by word (S: lexical, not a rule) |
-| ج / ي | ج is j; ★ ي spells the Gulf y-sound and is y | jāmʿa, masjid; yāy, yidīd, rayyāl, yīt | ★ addition to DIALECT |
+| ج / ي | ج is j, or ch in the listed words جي, جذي, جان (§2 exceptions); ★ ي spells the Gulf y-sound and is y | jāmʿa, masjid; chī, chidhi, chān; yāy, yidīd, rayyāl, yīt | ★ addition to DIALECT |
 | geminates | doubled letters | sawwa, rayyāl, ḥammām | |
 | article | il-; l- after a vowel; doubled before sun letters (t th d dh r z s sh ṣ ẓ ṭ l n) | il-bēt, is-sūg, ish-shams, fi l-jāmʿa, maʿa s-salāma | ق (g), ك (ch), ج (j) and ي (y) are moon letters: il-gahwa, il-jāmʿa, il-yidīd |
 | imperfect prefix | no vowel before a long-vowel or doubled stem; yi- / ti- / ni- before a consonant cluster | ygūl, trūḥ, ygūlūn, yḥuṭṭ; yishrab, titkallam, nishtaghil | stage 1 (tgūl, trūḥ, titkallam) |
@@ -178,12 +179,12 @@ One scheme, always. It is the app's `DIALECT` scheme (index.html), with the y ru
 - **Leave it ""** for Gulf formulas, interjections, slang, loans and names with no fuṣḥā counterpart (هلا والله, الله يحييك, خيبة, اوكي).
 - **Never** put a Gulf form, a definition or Latin letters in it. The linter errors if the field isn't Arabic.
 
-## 9. Changes this sheet needs in the app and linter (not yet applied)
+## 9. Changes this sheet needs in the app and linter
 
-1. **`DIALECT` constant (index.html).** Arabic-script rule: replace "keep ق for the g sound and ك for k (باكر is said bāchir)" with "keep ق for the g sound and ك for k (باكر is said bāchir); write ي where Gulf speakers say y in dialect words (ياي, ريّال, يديد, يالس) and keep ج where the word is said with j (جامعة)". Transliteration: replace "ج as j" with "ج as j; ي as y". Dialect rules: add "Emirati forms are the default: hē (yes), niḥin (we), shḥālak (how are you), chī (like this), hādhēla (these); Kuwaiti shinu, mū, iḥna, ēh only from a Kuwaiti character; the learner's stage 1 forms shlōnak, ī, shlōn are always fine".
+1. **`DIALECT` constant (index.html). Done.** Arabic-script rule: replace "keep ق for the g sound and ك for k (باكر is said bāchir)" with "keep ق for the g sound and ك for k (باكر is said bāchir); write ي where Gulf speakers say y in dialect words (ياي, ريّال, يديد, يالس) and keep ج where the word is said with j (جامعة)". Transliteration: replace "ج as j" with "ج as j; ي as y". Dialect rules: add "Emirati forms are the default: hē (yes), niḥin (we), shḥālak (how are you), chī (like this), hādhēla (these); Kuwaiti shinu, mū, iḥna, ēh only from a Kuwaiti character; the learner's stage 1 forms shlōnak, ī, shlōn are always fine".
 2. **`GRAMMAR` table.** "I, you, he…": put نحن niḥin first ("we; Kuwait: iḥna"). "This, that…": put هذيلا hādhēla first ("these; Kuwait: hadhōl").
-3. **`tools/lint_content.py`.** Add `receptive` to FIELDS and check it: a list of distinct 0-based integers, each a valid index into `items`, allowed only in stage 4 and 5 units, at most 5 per unit. (The linter already accepts capitalised names and no longer flags ايه.)
-4. **The app.** Items listed in a unit's `receptive` field get only "recognize" and "listen" card modes, never "produce" (see `cardMode`), and are left out of `knownList` (they aren't words the learner is expected to use). B2/C1 `task` text is shown as an optional weekly task, not as part of the day's lesson.
+3. **`tools/lint_content.py`. Done:** `receptive` is accepted and checked for valid, distinct indexes. Until the linter also checks it, "stage 4–5 only" and "at most 5 per unit" are reviewer checks (§10 check 11).
+4. **The app. Done** (receptive cards, weekly tasks). Items listed in a unit's `receptive` field get only "recognize" and "listen" card modes, never "produce" (see `cardMode`), and are left out of `knownList` (they aren't words the learner is expected to use). B2/C1 `task` text is shown as an optional weekly task, not as part of the day's lesson.
 
 ## 10. Reviewer checklist, ranked by how often each error is expected
 
@@ -193,7 +194,7 @@ Apply every check to every Arabic line and item. Ranks 1 to 3 come from document
 |---|---|---|---|
 | 1 | **MSA leakage** | Hard list: سوف, لن, ليس/ليست, لم + verb, الآن, جدا, فقط, يجب, منذ, عندما, هذه, ذلك, تلك, هؤلاء, الذين, الذي, التي, حيث, خلال, لقد, يوجد, لدى, كذلك, لذلك, بينما, أيضا, كثيرا, أريد, ماذا, لماذا, حسنا, لكي, إنني, ربما, إنما, لعل; case endings or tanwīn; أنا لا أفهم-type sentences. Soft list (fine in fixed phrases or (formal) lines only): هل, كيف حالك, نعم, قد | Hard: rewrite. Soft: justify or rewrite. Gumar hits on these words come from narration and do not count as evidence (e.g. اريد 2170/347, هذه 934/585) |
 | 2 | **Over-formal politeness** | هل يمكنك…, من فضلك chains, شكرًا جزيلًا in speech, textbook greetings | Use لو سمحت, ممكن…؟, عطني, الله يخليك, مشكور, ما قصرت |
-| 3 | **Egyptian or Levantine leakage** | Hard: عايز, عاوز, بدّي, بدك, دلوقتي, هلق, كده, هيك, ازيك, كيفك, منيح, كويس, فين, ما…ش, ح- future, عم + verb, بـ as present tense, استنى. Soft (they occur in Gulf novels): مش (Abu Dhabi only, tagged), ليه, مين, معليش, شو in a Kuwaiti's line | Hard: rewrite. Soft: change to default unless the speaker's origin justifies it |
+| 3 | **Egyptian or Levantine leakage** | Hard: عايز, عاوز, بدّي, بدك, دلوقتي, هلق, كده, هيك, ازيك, كيفك, منيح, كويس, فين, ما…ش, ح- future, عم + verb, بـ as present tense, استنى. Soft (they occur in Gulf novels): مش (Abu Dhabi only, tagged), ليه, مين, معليش (soft in A's lines only; it is a stage 1 item and always fine for B), شو in a Kuwaiti's line | Hard: rewrite. Soft: change to default unless the speaker's origin justifies it |
 | 4 | **Wrong person, gender or number** | -īn missing for a woman (تقولي for تقولين), -ūn missing for a group, ـك where ـج is meant, masculine adjective for a woman speaker, English gloss with the wrong gender | Fix to agree with the addressee in that line |
 | 5 | **Regions mixed inside one speaker** | مب with شنو, هيه with إحنا, Kuwaiti اهو in an Emirati's line | Make the line match the speaker's origin |
 | 6 | **Invented or unattested form** | attest.py gives under 3 hits for a word, or 0 for a two-word phrase. For y-words, look up the ي spelling and cite it | Exact-string web search for Gulf hits; still nothing → native queue, and it can't ship as an item |
@@ -201,7 +202,7 @@ Apply every check to every Arabic line and item. Ranks 1 to 3 come from document
 | 8 | **Transliteration off-scheme** | wayid/waayed, č, ḏ, ʾ, q for a Gulf g, ay/aw in Gulf words, ḍ, missing hyphen on il-, b-ykūn | Fix to §3 |
 | 9 | **Script, transliteration and English disagree** | قال with qāla, gloss "you (m.)" over a ـج form, جديد written but yidīd transliterated | Fix so all three say the same thing |
 | 10 | **Cultural or factual fabrication** | wrong formula reply (السلام عليكم → الله يسلمك is wrong), invented customs, wrong weekend days, invented quotes | Check against FRAMEWORK §7 and sources; U → native queue |
-| 11 | **Course structure** | a phrase taught twice (lint error), a bare homograph (§2), an item missing from the dialogue beyond the allowed two, over-length fields, more than one new grammar point, a rude word as an item, a tip that "corrects" a stage 1 form, a receptive item in B's line | Fix before merge |
+| 11 | **Course structure** | a phrase taught twice (lint error), a bare homograph (§2), an item missing from the dialogue beyond the allowed two, over-length fields, more than one new grammar point, a rude word as an item, a tip that "corrects" a stage 1 form, a receptive item in B's line, `receptive` outside stage 4–5 or more than 5 per unit | Fix before merge |
 
 **Order of work for every batch:** (1) `python3 tools/lint_content.py N` with zero errors; (2) `python3 tools/lint_content.py N --gumar` and `python3 /home/claude/gulfcheck/attest.py unit <file>`, with every "check" flag either fixed or justified in the review sheet; for every y-word, cite the ي-spelling count and the ج-spelling count; (3) two blind reviewers, one hunting leakage (checks 1, 3, 5), one judging naturalness and register (checks 2, 7, 10); (4) any disagreement, unattested form or U item goes to the native queue. Nothing marked U ships as an item until a native confirms it.
 
@@ -213,7 +214,7 @@ Apply every check to every Arabic line and item. Ranks 1 to 3 come from document
 - missing -īn / -ūn where Gulf requires them;
 - script, transliteration and English that say different things;
 - transliteration outside the scheme, چ or گ in an Arabic field, final ه for ة, vowel marks or tanwīn in a Gulf line;
-- two countries' variants in one speaker's line, or a Kuwaiti or Saudi variant in B's line (B's stage 1 forms شلونك / شلونج, إي and شلون are not variants for this rule: they are always fine);
+- two countries' variants in one speaker's line, or a Kuwaiti or Saudi variant in B's line (B's stage 1 forms شلونك / شلونج, إي, شلون and معليش are not variants for this rule: they are always fine);
 - a wrong fixed reply to a social formula;
 - a phrase already taught, a bare homograph, a lint error, or a rude or taboo word as an item;
 - a form with zero corpus hits and no other source, shipped as an item;
@@ -225,7 +226,7 @@ Apply every check to every Arabic line and item. Ranks 1 to 3 come from document
 - a more conservative form (intin, hin, feminine plural verbs) → note only, from B1.
 
 **FINE** (don't flag):
-- the learner's stage 1 forms (شلونك / شلونج, إي, شلون) in B's lines, anywhere in the course;
+- the learner's stage 1 forms (شلونك / شلونج, إي, شلون, معليش) in B's lines, anywhere in the course;
 - words shared with fuṣḥā that Gulf also uses in speech: كيف chēf, بعد, قبل, كل, لو, إذا, لأن lann, لكن, ثم, شركة, الجامعة;
 - English loans and code-switching in peer dialogues among young people;
 - the soft-list words in a fixed phrase, in a (formal) line, or in a speaker whose origin uses them;
