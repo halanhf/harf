@@ -21,7 +21,9 @@
   --tile:#5fc0b5; --tile-soft:#173a36; --saffron:#e9a53d; --saffron-ink:#e9a53d; --good:#6cc27a; --bad:#ef7d72; color-scheme:dark}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:72px;scroll-padding-bottom:calc(var(--tabbar) + 16px)}
+:root:has(body.focus){scroll-padding-bottom:160px}
+@media (max-height:500px){:root:has(body.focus){scroll-padding-bottom:90px}}
 body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.55 var(--ui);
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
@@ -42,12 +44,12 @@ nav#tabs button{flex:0 0 auto;border:0;background:none;color:var(--muted);font:5
 nav#tabs button svg{width:18px;height:18px}
 nav#tabs button[aria-current="page"]{color:var(--ink);border-bottom-color:var(--tile)}
 nav#tabs button:focus-visible{outline-offset:-3px;border-radius:6px}
-.badge{min-width:18px;height:18px;padding:0 5px;border-radius:9px;background:var(--saffron);color:#fff;font:600 11px/18px var(--ui);text-align:center}
+.badge{min-width:18px;height:18px;padding:0 5px;border-radius:9px;background:var(--saffron-ink);color:var(--card);font:600 11px/18px var(--ui);text-align:center}
 :focus-visible{outline:2px solid var(--saffron);outline-offset:2px}
 main section{padding-top:18px}
 h2{font:500 12px var(--ui);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 10px}
 h3{font:600 18px/1.3 var(--ui);margin:0}
-.title{font:600 22px/1.25 var(--ui);margin:0 0 6px}
+.title{font:600 22px/1.25 var(--ui);margin:0 0 6px;text-transform:none;letter-spacing:0;color:var(--ink)}
 p{margin:0}
 .lede{color:var(--muted);max-width:62ch;margin-bottom:14px}
 .ar{font-family:var(--ar);direction:rtl;unicode-bidi:isolate}
@@ -59,6 +61,9 @@ p{margin:0}
 .btn{font:500 15px var(--ui);border-radius:var(--r);border:1px solid var(--line-strong);background:var(--card);color:var(--ink);padding:9px 14px;cursor:pointer;min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none}
 .btn svg{width:18px;height:18px;flex:0 0 auto}
 @media (hover:hover){.btn:hover{border-color:var(--tile)}}
+.btn,.step,.unit,.line-play,.grid button,.numgrid button,nav#tabs button{transition:background-color .1s,border-color .1s}
+.btn:active:not(:disabled),button.step:active,button.unit:active:not(:disabled),.line-play:active,.grid button:active,.numgrid button:active,nav#tabs button:active{background-color:color-mix(in srgb,var(--tile) 16%,var(--card))}
+.btn.primary:active:not(:disabled){background-color:color-mix(in srgb,var(--tile) 80%,var(--ink))}
 .btn.primary{background:var(--tile);border-color:var(--tile);color:var(--paper)}
 .btn.ghost{background:none;border-color:var(--line)}
 .btn.link{background:none;border:0;color:var(--tile);padding-inline:6px;text-decoration:underline;text-underline-offset:3px}
@@ -102,7 +107,7 @@ body.focus header,body.focus footer{display:none}
 .fbar .x{width:44px;height:44px;border-radius:50%;border:0;background:none;color:var(--muted);cursor:pointer;display:grid;place-items:center;flex:0 0 auto}
 .fbar .x svg{width:22px;height:22px}
 .fbar .x.confirm{width:auto;padding:0 12px;border:1px solid var(--bad);color:var(--bad);border-radius:var(--r);font:500 14px var(--ui)}
-.fbar .ft{font:500 14px var(--ui);color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:0 1 auto;max-width:45%}
+.fbar .ft{font:500 14px var(--ui);color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:0 1 auto;max-width:45%;margin:0}
 .tiles{flex:1;display:flex;gap:3px;align-items:center;min-width:0}
 .tiles i{flex:1;height:8px;border-radius:2px;background:var(--line);min-width:2px}
 .tiles i.on{background:var(--tile)}
@@ -124,7 +129,7 @@ button.say{background:none;border:0;color:var(--ink);cursor:pointer;padding:0 8p
 .msa .ar{font-size:20px;color:var(--ink)}
 .grades{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;width:100%}
 .grades .btn{flex-direction:column;gap:0;padding-inline:4px;min-height:56px}
-.grades .btn small{display:block;font-size:12px;color:inherit;opacity:.8;font-weight:400}
+.grades .btn small{display:block;font-size:12px;color:inherit;font-weight:400}
 .grades kbd{display:none}
 @media (hover:hover) and (pointer:fine){.grades kbd{display:inline;font:400 11px var(--ui);opacity:.6;margin-left:4px}}
 .feedback{font-weight:500;min-height:1.4em}
@@ -1034,28 +1039,42 @@ function shiftChip(it){ const s=soundShift(it.ar,it.tr); return s.length?el("p",
 const TABS=[["today","Today"],["review","Review"],["course","Course"],["talk","Talk"],["me","Progress"]];
 const tabs=[...document.querySelectorAll("#tabs button")];
 tabs.forEach(b=>{ const t=TABS.find(x=>x[0]===b.dataset.tab); ap(b,icon(t[0]),el("span",{textContent:t[1]})); if(t[0]==="review") b.append(el("span",{className:"badge",id:"due-badge",hidden:true})); b.onclick=()=>show(t[0]); });
+let installEvt=null;
+const standalone=()=>{ try{ return matchMedia("(display-mode: standalone)").matches||navigator.standalone===true; }catch(e){ return false; } };
+// chrome and edge offer to install the offline copy: keep that offer for the button in Progress instead of a pop-up
+addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); installEvt=e; if(currentTab==="me"&&!busy) renderMe(); });
+addEventListener("appinstalled",()=>{ installEvt=null; if(currentTab==="me"&&!busy) renderMe(); });
 let currentTab="today", viewId=0, busy=false, keyHandler=null, wake=null, courseTab="lessons";
 function releaseWake(){ try{ if(wake) wake.release(); }catch(e){} wake=null; }
 async function keepAwake(){ try{ if(navigator.wakeLock) wake=await navigator.wakeLock.request("screen"); }catch(e){} }
 function leaveActivity(){ viewId++; stopAudio(); busy=false; keyHandler=null; releaseWake(); document.body.classList.remove("focus"); if(DICT&&dictSink) DICT.stop().catch(()=>{}); }
 const RENDER={today:()=>renderToday(),review:()=>renderReviewTab(),course:()=>renderCourse(),talk:()=>renderTalk(),me:()=>renderMe()};
+// a lesson or review is one step in the browser history, so the phone's back gesture closes it (with the same
+// "leave?" check as the close button) instead of quitting the installed app halfway through a lesson
+let backEntry=false, skipPop=0;
+function pushBack(){ if(backEntry) return; try{ history.pushState({harf:"focus"},""); backEntry=true; }catch(e){} }
+function dropBack(){ if(!backEntry) return; backEntry=false; skipPop++; try{ history.back(); }catch(e){ skipPop--; } }
+addEventListener("popstate",()=>{ if(skipPop){ skipPop--; return; } if(!backEntry) return; backEntry=false; const x=document.querySelector("body.focus .fbar .x"); if(x) x.click(); });
 function show(name,sub){
-  leaveActivity(); if(sub) courseTab=sub; currentTab=name;
+  const fromFocus=document.body.classList.contains("focus");
+  leaveActivity(); dropBack(); if(sub) courseTab=sub; currentTab=name;
   tabs.forEach(b=>{ if(b.dataset.tab===name) b.setAttribute("aria-current","page"); else b.removeAttribute("aria-current"); });
   document.querySelectorAll("main section").forEach(s=>s.hidden=s.id!==name);
   $("#foot").hidden=!(name==="course"||name==="me");
   RENDER[name](); window.scrollTo(0,0);
+  // the button that closed the lesson is gone: put keyboard and screen reader focus at the top of the page it opened
+  if(fromFocus){ const h=$("#"+name+" h2"); if(h){ h.setAttribute("tabindex","-1"); try{ h.focus({preventScroll:true}); }catch(e){} } }
 }
 document.addEventListener("keydown",e=>{ if(!keyHandler||e.altKey||e.ctrlKey||e.metaKey) return; const t=e.target; if(t&&(t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return; keyHandler(e); });
 // lessons, reviews and role-plays take the whole screen: no tabs, a close button and a row of progress tiles
 function focusView(opts){
-  leaveActivity(); busy=true; const vid=viewId; document.body.classList.add("focus");
+  leaveActivity(); pushBack(); busy=true; const vid=viewId; document.body.classList.add("focus");
   const host=$("#"+currentTab); host.textContent=""; window.scrollTo(0,0);
   const x=el("button",{className:"x",type:"button","aria-label":"Close"},icon("x"));
   const tiles=el("div",{className:"tiles",role:"progressbar","aria-valuemin":"0"});
-  const body=el("div",{className:"stack"}); host.append(el("div",{className:"fbar"},x,el("span",{className:"ft",textContent:opts.title||""}),tiles),body);
+  const body=el("div",{className:"stack"}); host.append(el("div",{className:"fbar"},x,el("h1",{className:"ft",textContent:opts.title||""}),tiles),body);
   let armed=0;
-  x.onclick=()=>{ if(opts.confirm&&opts.confirm()&&!armed){ x.className="x confirm"; x.textContent="Leave? Tap again"; armed=setTimeout(()=>{ armed=0; x.className="x"; x.textContent=""; x.append(icon("x")); },3000); return; }
+  x.onclick=()=>{ if(opts.confirm&&opts.confirm()&&!armed){ x.className="x confirm"; x.textContent="Leave? Tap again"; pushBack(); armed=setTimeout(()=>{ armed=0; x.className="x"; x.textContent=""; x.append(icon("x")); },3000); return; }
     clearTimeout(armed); (opts.onClose||(()=>show(currentTab)))(); };
   return {body,alive:()=>vid===viewId,
     progress(done,total){ tiles.textContent=""; tiles.setAttribute("aria-valuenow",String(done)); tiles.setAttribute("aria-valuemax",String(total)); tiles.setAttribute("aria-label",`${done} of ${total}`);
@@ -1146,7 +1165,7 @@ function openLesson(u,onDone){
       sayQueue(parts,{onPart:(i,p)=>{ lines.forEach(x=>x.classList.remove("playing")); if(p.text) lines[p.i].classList.add("playing"); },onDone:()=>lines.forEach(x=>x.classList.remove("playing"))}); };
     const tog=(t,get,set)=>{ const b=el("button",{className:"btn small",type:"button","aria-pressed":"false",textContent:t}); b.onclick=()=>{ set(!get()); b.setAttribute("aria-pressed",String(get())); }; return b; };
     const reveal=el("button",{className:"btn small",type:"button",textContent:"Reveal English"}); reveal.onclick=()=>{ ens.forEach(e=>e.hidden=false); reveal.remove(); };
-    body.append(stepper(0),el("h3",{className:"title",textContent:u.title}),el("p",{className:"lede",textContent:"Listen first and work out what's happening. Tap any line to hear it again. Then reveal the English and check."}),
+    body.append(stepper(0),el("h2",{className:"title",textContent:u.title}),el("p",{className:"lede",textContent:"Listen first and work out what's happening. Tap any line to hear it again. Then reveal the English and check."}),
       el("div",{className:"row"},playAll,tog("Slow",()=>slow,v=>slow=v),tog("Shadow",()=>shadow,v=>shadow=v),reveal),dl,el("p",{className:"notice",textContent:"Tip: "+u.tip}),
       el("div",{className:"actions page"},el("button",{className:"btn primary wide",type:"button",textContent:"Learn the phrases →",onclick:step2})));
   };
@@ -1304,7 +1323,8 @@ function startReview(onDone){
     const reveal=()=>{ if(!ans.hidden) return; ans.hidden=false; acts.textContent=""; if(trTap&&trTap.tagName==="BUTTON") trTap.remove(); const now=Date.now();
       [["Forgot",0],["Hard",1],["Got it",2],["Easy",3]].forEach(([lab,g])=>{ const nx=sched(card,g,now);
         gr.append(el("button",{className:"btn"+(g===(suggest>=0?suggest:2)?" primary":""),type:"button",onclick:()=>grade(g)},el("span",{},lab,el("kbd",{textContent:String(g+1)})),el("small",{textContent:whenLabel(nx.d-now)}))); });
-      acts.append(gr); if(mode!=="listen"&&mode!=="build") auto(it.ar); };
+      acts.append(gr); if(mode!=="listen"&&mode!=="build") auto(it.ar);
+      try{ ans.scrollIntoView({block:"nearest"}); }catch(e){} }; // on a short screen (phone on its side) the answer would sit under the grade buttons
     if(mode!=="build") acts.append(el("button",{className:"btn primary wide",type:"button",textContent:"Show answer",onclick:reveal}));
     stage.append(ans,acts); focusCard(stage);
     keyHandler=e=>{ if(!ans.hidden&&"1234".includes(e.key)){ e.preventDefault(); grade(+e.key-1); }
@@ -1337,7 +1357,7 @@ function audioDrill(){
 
 // ===== course: lessons, sounds, grammar, numbers =====
 function renderCourse(){
-  refresh(); const sec=$("#course"); sec.textContent="";
+  refresh(); const sec=$("#course"); sec.textContent=""; sec.append(el("h2",{textContent:"Course"}));
   const st=el("div",{className:"subtabs",role:"group","aria-label":"Course sections"});
   [["lessons","Lessons"],["sounds","Sounds"],["grammar","Grammar"],["numbers","Numbers"]].forEach(([k,lab])=>st.append(el("button",{className:"btn small",type:"button","aria-pressed":String(courseTab===k),textContent:lab,onclick:()=>{ courseTab=k; renderCourse(); }})));
   sec.append(st);
@@ -1682,8 +1702,15 @@ Return ONLY JSON: {"hook": one or two sentences in English, "example_ar", "examp
   const pwa=!!window.HARF_PWA;
   sec.append(el("h3",{style:"margin:22px 0 6px",textContent:"Phone and computer"}),el("p",{className:"tag",style:"max-width:62ch",textContent:DB
     ?"Open this same page on your phone (claude.ai in the browser, or the Claude app) and sign in to the same account: your progress follows you. Speaking practice and the Claude voice work in Chrome or Edge on a computer or Android; on iPhone and in the Claude apps, say answers aloud and compare."
-    :pwa?"This installed version keeps progress on this device. To move it, use Export backup here and Import backup on the other device."
+    :pwa?(standalone()?"This installed app keeps progress on this device. To move it, use Export backup here and Import backup on the other device."
+      :"Progress here stays in this browser. To move it, use Export backup here and Import backup on the other device.")
     :"Progress here stays in this browser. The claude.ai version syncs across devices; use Export and Import backup to move progress between them."}));
+  // the offline copy can go on the home screen or the taskbar: the browser's own install button where there is one, the steps where there isn't
+  if(pwa&&!standalone()){
+    if(installEvt) sec.append(el("button",{className:"btn small",type:"button",textContent:"Install Harf as an app",onclick:()=>{ const e=installEvt; installEvt=null; e.prompt(); e.userChoice.catch(()=>{}).then(()=>renderMe()); }}));
+    else sec.append(el("p",{className:"tag",style:"max-width:62ch;margin-top:6px",textContent:/iPhone|iPad|iPod/.test(navigator.userAgent)
+      ?"To add it to your home screen: Share, then Add to Home Screen. The home screen app keeps its own progress, separate from Safari, so add it before you start or move your progress across with a backup."
+      :"To install it, open Chrome or Edge's menu and look for Install (on Android: Install and create shortcut). It then opens in its own window and works offline."})); }
   sec.append(el("h2",{style:"margin-top:26px",textContent:"Settings"}));
   const select=(id,label,opts,val,onch)=>{ const s=el("select",{id}); opts.forEach(([v,l])=>s.append(el("option",{value:String(v),textContent:l,selected:String(val)===String(v)}))); s.onchange=()=>onch(s.value); return el("div",{className:"setting"},el("label",{htmlFor:id,textContent:label}),s); };
   sec.append(select("set-translit","Pronunciation lines",[["auto","Fade out as I level up"],["always","Always show"],["tap","Show on tap"],["never","Never show"]],S.settings.translit,v=>{ S.settings.translit=v; save(); }),
