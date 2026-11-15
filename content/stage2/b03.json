@@ -121,7 +121,7 @@
   "stage": 2,
   "title": "Tell him I'm on my way",
   "goal": "Answer Maryam's call when you're running late: ask her to pass a message to the manager and point her to your email",
-  "tip": "For 'to me, to him', join l- and the ending to the verb: gūl-li 'tell me', gilt-lah 'I told him', gilt-lhum 'I told them', agūl-lich 'I tell you (f.)'. A vowel before an object ending gets long: yabūn + ah → yabūnah 'they want it', shūfi + h → shūfīh 'look at it'.",
+  "tip": "For 'to me, to him', join l- and the ending to the verb: gūl-li 'tell me', gilt-lah 'I told him', gilt-lhum 'I told them', agūl-lich 'I tell you (f.)'. Before an object ending, -ūn keeps its n (yabūn + ah → yabūnah 'they want it') and a final vowel gets long (shūfi + h → shūfīh 'look at it').",
   "grammar": "Dative l- + ending on verbs: gūl-lah, gilt-lah, agūl-lich",
   "dialogue": [
    [
@@ -152,7 +152,7 @@
     "A",
     "هيه، لقيته. وقلت لهم، لا تحاتي",
     "hē, ligētah. w gilt-lhum, la tḥāti",
-    "Yes, I've found it. And I've told them, don't worry."
+    "Yes, I've found it. And I've told them you're on your way, don't worry."
    ],
    [
     "B",
@@ -225,7 +225,7 @@
     "to a woman: la titʼakhkharīn (لا تتأخرين)"
    ]
   ],
-  "culture": "The National (2020) lists ṭarrish 'send' among the Emirati words to use in the workplace: ṭarrish-li 'send it to me', ṭarrasht-lah 'I sent it to him'. In young people's speech it often comes mixed with English, as in 'ana ṭarrasht-lak risāla yesterday'."
+  "culture": "The National (2020) lists ṭarrish 'send' among the Emirati words to use in the workplace: ṭarrish-li 'send it to me', ṭarrasht-lah 'I sent it to him'. You'll also hear it mixed with English, as in 'ana ṭarrasht-lak risāla yesterday'."
  },
  {
   "id": "s2u025",
@@ -310,7 +310,7 @@
    [
     "أحطه",
     "aḥuṭṭah",
-    "I put it; shall I put it…?",
+    "I put it (m.); shall I put it…?",
     "أضعه",
     "a feminine thing: aḥuṭṭha (أحطها)"
    ],
@@ -422,7 +422,7 @@
     "shūfūha",
     "look at it (f.) (to a group)",
     "انظروا إليها",
-    "to one man: shūf-ha (شوفها); to one woman: shūfīha (شوفيها)"
+    "to one man: shūfha (شوفها); to one woman: shūfīha (شوفيها)"
    ],
    [
     "لقيناها",
@@ -450,7 +450,7 @@
     "binshūfah",
     "we'll see it, we'll watch it (m.)",
     "سنراه",
-    "a feminine thing: binshūf-ha (بنشوفها)"
+    "a feminine thing: binshūfha (بنشوفها)"
    ]
   ]
  },
@@ -559,7 +559,7 @@
     "أسبوعين",
     "usbūʿēn",
     "two weeks",
-    "أسبوعين",
+    "أسبوعان",
     "one week: usbūʿ (أسبوع)"
    ]
   ],
@@ -576,7 +576,7 @@
    [
     "A",
     "سالم، تعال! هذول ربعي من الكويت. تعرفهم؟",
-    "Sālim, taʿāl! hadhōl rabʿi min il-Kwēt. tiʿarfhum?",
+    "Sālim, taʿāl! hadhōl rabʿi min il-Kwēt. taʿarfhum?",
     "Sālim, come here! These are my mates from Kuwait. Do you know them?"
    ],
    [
@@ -642,7 +642,7 @@
     "إيه والله",
     "ēh wallāh",
     "oh yes, definitely (Kuwait)",
-    "نعم والله",
+    "",
     "UAE: hē wallāh (هيه والله)"
    ],
    [

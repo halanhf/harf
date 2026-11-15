@@ -506,9 +506,9 @@
    ],
    [
     "B",
-    "عادي، بالبطاقة. ولا تقولون له شي، خلوها مفاجأة!",
-    "ʿādi, bil-biṭāga. w la tgūlūn-lah shay, khallūha mufājaʼa!",
-    "No problem, pay by card. And don't tell him anything, you two. Keep it a surprise!"
+    "عادي، بالبطاقة. بس لا تقولون له شي، خلوها مفاجأة!",
+    "ʿādi, bil-biṭāga. bas la tgūlūn-lah shay, khallūha mufājaʼa!",
+    "No problem, pay by card. But don't tell him anything, you two. Keep it a surprise!"
    ]
   ],
   "items": [
@@ -905,7 +905,7 @@
   "stage": 2,
   "title": "A small accident",
   "goal": "Sēf calls: he's had a small accident. Check he's all right, ask if anyone is hurt and if he has called the ambulance",
-  "tip": "The past tells what happened: ṣār-li ḥādith 'I've had an accident', tʿawwar 'he got hurt', ittaṣalt 'I called; you called'. ma fīni shay means 'nothing's wrong with me, I'm fine'. ʿala s-salāma and other replies come later; salāmtak works here too.",
+  "tip": "The past tells what happened: ṣār-li ḥādith 'I've had an accident', tʿawwar 'he got hurt', ittaṣalt 'I called; you called'. ma fīni shay means 'nothing's wrong with me, I'm fine'. salāmtak 'I hope you're OK' works after an accident too.",
   "grammar": "recycle: past (ṣār, tʿawwar, ittaṣalt) and present (yʿawwir)",
   "dialogue": [
    [

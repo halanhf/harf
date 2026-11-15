@@ -790,11 +790,11 @@
     ],
     "items": [
       [
-        "نروح…؟",
-        "nrūḥ…?",
-        "shall we go…?",
-        "هل نذهب…؟",
-        "nrūḥ il-baḥar? = shall we go to the beach?"
+        "يوم الأحد",
+        "yōm il-aḥad",
+        "Sunday, on Sunday",
+        "يوم الأحد",
+        ""
       ],
       [
         "يوم الجمعة",
@@ -818,24 +818,24 @@
         ""
       ],
       [
-        "هالأسبوع",
-        "hal-usbūʿ",
-        "this week",
-        "هذا الأسبوع",
+        "ثلطعش",
+        "thalaṭṭaʿash",
+        "thirteen (١٣)",
+        "ثلاثة عشر",
+        "11 to 19 end in -ṭaʿash; a date is the plain number: thalaṭṭaʿash = the 13th"
+      ],
+      [
+        "يوم الاثنين",
+        "yōm il-ithnēn",
+        "Monday, on Monday",
+        "يوم الاثنين",
         ""
       ],
       [
-        "يوم ثاني",
-        "yōm thāni",
-        "another day",
-        "يومًا آخر",
-        ""
-      ],
-      [
-        "عندي شغل",
-        "ʿindi shughul",
-        "I've got work, I'm busy",
-        "عندي عمل",
+        "أربعطعش",
+        "arbaʿṭaʿash",
+        "fourteen (١٤)",
+        "أربعة عشر",
         ""
       ],
       [
@@ -956,6 +956,13 @@
         "we have lunch; shall we have lunch?",
         "نتغدى",
         ""
+      ],
+      [
+        "يوم الثلاثاء",
+        "yōm ith-thalātha",
+        "Tuesday, on Tuesday",
+        "يوم الثلاثاء",
+        ""
       ]
     ]
   },
@@ -1027,11 +1034,11 @@
         ""
       ],
       [
-        "ربع ساعة",
-        "rubʿ sāʿa",
-        "a quarter of an hour",
-        "ربع ساعة",
-        ""
+        "تسعطعش",
+        "tisaʿṭaʿash",
+        "nineteen (١٩)",
+        "تسعة عشر",
+        "b-tisaʿṭaʿash dirham = for nineteen dirhams"
       ],
       [
         "دقيقة",
@@ -1041,25 +1048,25 @@
         "3 to 10 take the plural (khams dagāyig); 11 and up the singular (ʿishrīn dagīga)"
       ],
       [
-        "كل مرة",
-        "kill marra",
-        "every time",
-        "كل مرة",
-        ""
+        "إحدعش",
+        "iḥdaʿash",
+        "eleven (١١)",
+        "أحد عشر",
+        "is-sāʿa iḥdaʿash = (at) eleven o'clock"
       ],
       [
-        "الفلم",
-        "il-film",
-        "the film",
-        "الفيلم",
-        "you'll see written الفيلم"
+        "ثنعش",
+        "thnaʿash",
+        "twelve (١٢)",
+        "اثنا عشر",
+        "is-sāʿa thnaʿash = (at) twelve o'clock"
       ],
       [
-        "السينما",
-        "is-sīnama",
-        "the cinema",
-        "السينما",
-        ""
+        "خمسطعش",
+        "khamsṭaʿash",
+        "fifteen (١٥)",
+        "خمسة عشر",
+        "khamsṭaʿash dagīga = fifteen minutes (singular noun)"
       ],
       [
         "نتأخر",
