@@ -4,8 +4,8 @@
   "stage": 5,
   "title": "Speaking of the majlis…: building on a point",
   "goal": "In the university library, plan your group's seminar talk with your classmate Khalfān: do you need Arabic in Dubai? Build on each of his points",
-  "tip": "Take up his point before you add yours: mithil ma gilt… 'as you said…', ana wiyyāk fi han-nugṭa 'I'm with you on that'. Then add your own angle: min hādhi z-zāwiya… And ʿala ṭāri + a word he just used picks it up: ʿala ṭāri l-majālis… 'speaking of majlises…'.",
-  "grammar": "building on a point (mithil ma gilt, min hādhi z-zāwiya, ʿala ṭāri)",
+  "tip": "Take up his point before you add yours: mithil ma gilt… 'as you said…', w ana wiyyāk fi han-nugṭa 'and I'm with you on that'. Then your own angle (min ay zāwiya?). ʿala ṭāri + a word he just used picks it up: ʿala ṭāri l-majālis… 'speaking of majlises…'.",
+  "grammar": "building on a point (mithil ma gilt, ana wiyyāk fi…, ʿala ṭāri)",
   "dialogue": [
    [
     "A",
@@ -15,9 +15,9 @@
    ],
    [
     "B",
-    "زين. شو أول نقطة عندك؟",
-    "zēn. shu awwal nugṭa ʿindak?",
-    "OK. What's your first point?"
+    "زين. من أي زاوية نبدا؟",
+    "zēn. min ay zāwiya nibda?",
+    "OK. From which angle do we start?"
    ],
    [
     "A",
@@ -27,9 +27,9 @@
    ],
    [
     "B",
-    "مثل ما قلت، الشغل بالإنقليزي، وأنا وياك في هالنقطة",
-    "mithil ma gilt, ish-shughul bil-inglīzi, w ana wiyyāk fi han-nugṭa",
-    "As you said, work's in English, and I'm with you on that point."
+    "مثل ما قلت، وأنا وياك في هالنقطة",
+    "mithil ma gilt, w ana wiyyāk fi han-nugṭa",
+    "As you said, and I'm with you on that point."
    ],
    [
     "A",
@@ -39,9 +39,9 @@
    ],
    [
     "B",
-    "لا، ما تقدر تتجاهل الناس. من هذي الزاوية، العربي مرتبط بالثقة",
-    "la, ma tigdar titjāhal in-nās. min hādhi z-zāwiya, il-ʿarabi mirtabiṭ bith-thiga",
-    "No, you can't leave people out. From that angle, Arabic is tied up with trust."
+    "ما تقدر تتجاهل الناس، والعربي مرتبط بالثقة",
+    "ma tigdar titjāhal in-nās, w il-ʿarabi mirtabiṭ bith-thiga",
+    "You can't leave people out, and Arabic is tied up with trust."
    ],
    [
     "A",
@@ -51,9 +51,9 @@
    ],
    [
     "B",
-    "على طاري المجالس، بو راشد يقول أمثال البدو ما لها ترجمة",
-    "ʿala ṭāri l-majālis, Bū Rāshid ygūl amthāl il-badu ma lha tarjama",
-    "Speaking of majlises, Bū Rāshid says Bedouin proverbs don't translate."
+    "على طاري المجالس، أمثال البدو ما لها ترجمة",
+    "ʿala ṭāri l-majālis, amthāl il-badu ma lha tarjama",
+    "Speaking of majlises, Bedouin proverbs don't translate."
    ],
    [
     "A",
@@ -63,8 +63,8 @@
    ],
    [
     "B",
-    "سوري، كمل كلامك. وأنا أكتب الخطة، بلا تكرار",
-    "sōri, kammil kalāmak. w ana aktib il-khiṭṭa, bala tikrār",
+    "سوري، كمل. وأنا أكتب الخطة بلا تكرار",
+    "sōri, kammil. w ana aktib il-khiṭṭa bala tikrār",
     "Sorry, go on. And I'll write up the plan, with nothing said twice."
    ]
   ],
@@ -121,8 +121,8 @@
   "stage": 5,
   "title": "Order, everyone! Chairing a meeting",
   "goal": "At the office, Bū Saʿīd has asked you to chair the weekly team meeting; take Maryam's report, stop an argument, and keep to time",
-  "tip": "A chair opens the floor (minu yabi yiṭraḥ shay? 'does anyone want to bring something up?'), sets the order (il-awlawiyya lit-tagrīr 'the report comes first', nitnāgash fīh ākhir shay 'we'll discuss it last') and calms things down: shwayy hudūʼ, ana muḥāyid, ma nabi jidāl.",
-  "grammar": "chairing a meeting (yiṭraḥ, il-awlawiyya, nitnāgash fīh, hudūʼ)",
+  "tip": "A chair opens the floor (minu yabi yiṭraḥ shay? 'does anyone want to bring something up?'), sets the order (nitnāgash fīh ākhir shay 'we'll discuss it last') and calms things down: shwayy hudūʼ, khallūna b-niẓām, ana muḥāyid.",
+  "grammar": "chairing a meeting (yiṭraḥ, nitnāgash fīh, hudūʼ, b-niẓām)",
   "dialogue": [
    [
     "A",
@@ -132,9 +132,9 @@
    ],
    [
     "B",
-    "صباح النور. هيه. منو يبي يطرح شي قبل لا نبدا؟",
-    "ṣabāḥ in-nūr. hē. minu yabi yiṭraḥ shay gabil la nibda?",
-    "Good morning. Yes. Does anyone want to raise anything before we start?"
+    "صباح النور. منو يبي يطرح شي؟",
+    "ṣabāḥ in-nūr. minu yabi yiṭraḥ shay?",
+    "Good morning. Does anyone want to bring something up?"
    ],
    [
     "A",
@@ -144,21 +144,21 @@
    ],
    [
     "B",
-    "على طاري النظام، نتناقش فيه آخر شي. الأولوية للتقرير: وين وصلتي فيه؟",
-    "ʿala ṭāri n-niẓām, nitnāgash fīh ākhir shay. il-awlawiyya lit-tagrīr: wēn wiṣalti fīh?",
-    "Speaking of the system, we'll discuss it last. The report comes first: how far have you got with it?"
+    "على طاري النظام، نتناقش فيه آخر شي",
+    "ʿala ṭāri n-niẓām, nitnāgash fīh ākhir shay",
+    "Speaking of the system, we'll discuss it last."
    ],
    [
     "A",
-    "خلصته، وطرشته للعميل الصبح",
-    "khallaṣtah, w ṭarrashtah lil-ʿamīl iṣ-ṣubḥ",
-    "I've finished it, and I sent it to the client this morning."
+    "ماشي. والتقرير خلصته، وطرشته للعميل الصبح",
+    "māshi. w it-tagrīr khallaṣtah, w ṭarrashtah lil-ʿamīl iṣ-ṣubḥ",
+    "OK. And the report: I've finished it, and I sent it to the client this morning."
    ],
    [
     "B",
-    "ممتاز. الموضوع الثاني: حفلة آخر السنة. وين تبون تسوونها؟",
-    "mumtāz. il-mawẓūʿ ith-thāni: ḥaflat ākhir is-sana. wēn tabūn tsawwūnha?",
-    "Great. Next item: the end-of-year party. Where do you all want to have it?"
+    "ممتاز. الموضوع الثاني: حفلة آخر السنة",
+    "mumtāz. il-mawẓūʿ ith-thāni: ḥaflat ākhir is-sana",
+    "Great. Next item: the end-of-year party."
    ],
    [
     "A",
@@ -168,21 +168,21 @@
    ],
    [
     "B",
-    "شوي هدوء يا جماعة! خلونا بنظام: أنا محايد، وما نبي جدال",
-    "shwayy hudūʼ yā jamāʿa! khallūna b-niẓām: ana muḥāyid, w ma nabi jidāl",
-    "A bit of quiet, everyone! Let's keep some order: I'm not taking sides, and we don't want an argument."
+    "شوي هدوء يا جماعة! خلونا بنظام",
+    "shwayy hudūʼ yā jamāʿa! khallūna b-niẓām",
+    "A bit of quiet, everyone! Let's keep some order."
    ],
    [
     "A",
-    "معك حق. بس الوقت ما يكفي نقرر اليوم",
-    "maʿak ḥagg. bas il-wagt ma ykaffi ngarrir il-yōm",
-    "You're right. But there isn't enough time to decide today."
+    "سوري. بس الوقت ما يكفي نقرر اليوم",
+    "sōri. bas il-wagt ma ykaffi ngarrir il-yōm",
+    "Sorry. But there isn't enough time to decide today."
    ],
    [
     "B",
-    "خلاص، نأجلها للاجتماع الياي. والحين، النظام",
-    "khalāṣ, nʼajjilha lil-ijtimāʿ il-yāy. w il-ḥīn, in-niẓām",
-    "Fine, we'll put it off to the next meeting. And now, the system."
+    "خلاص، أنا محايد. نأجلها للاجتماع الياي",
+    "khalāṣ, ana muḥāyid. nʼajjilha lil-ijtimāʿ il-yāy",
+    "Fine, I'm not taking sides. We'll put it off to the next meeting."
    ]
   ],
   "items": [
@@ -246,9 +246,9 @@
    ],
    [
     "B",
-    "هلا بك، طال عمرك. في سطرين، بلا تكرار: التقرير وصل للعميل، والباقي تفاصيل",
-    "hala bik, ṭāl ʿumrak. fi saṭrēn, bala tikrār: it-tagrīr wiṣal lil-ʿamīl, w il-bāgi tafāṣīl",
-    "Hello, sir. In a couple of lines, without repeating myself: the report's with the client, and the rest is detail."
+    "هلا بك، طال عمرك. في سطرين: التقرير وصل للعميل",
+    "hala bik, ṭāl ʿumrak. fi saṭrēn: it-tagrīr wiṣal lil-ʿamīl",
+    "Hello, sir. In a couple of lines: the report's with the client."
    ],
    [
     "A",
@@ -258,9 +258,9 @@
    ],
    [
     "B",
-    "هيه، فيه خلل. اتفقنا على خطة: مريم تكلم الشركة، وأنا أتابع",
-    "hē, fīh khalal. ittafagna ʿala khiṭṭa: Maryam tkallim ish-sharika, w ana atābiʿ",
-    "Yes, there's a fault. We agreed on a plan: Maryam calls the company, and I follow it up."
+    "هيه، فيه خلل. ومريم بتكلم الشركة",
+    "hē, fīh khalal. w Maryam bitkallim ish-sharika",
+    "Yes, there's a fault. And Maryam's going to call the company."
    ],
    [
     "A",
@@ -270,9 +270,9 @@
    ],
    [
     "B",
-    "صح، صار جدال، وأجلناها للاجتماع الياي، طال عمرك",
-    "ṣaḥḥ, ṣār jidāl, w ajjalnāha lil-ijtimāʿ il-yāy, ṭāl ʿumrak",
-    "Right, there was an argument, so we've put it off to the next meeting, sir."
+    "صح، صار جدال، وأجلناها، طال عمرك",
+    "ṣaḥḥ, ṣār jidāl, w ajjalnāha, ṭāl ʿumrak",
+    "Right, there was an argument, so we've put it off, sir."
    ],
    [
     "A",
@@ -288,9 +288,9 @@
    ],
    [
     "A",
-    "ما شاء الله، ملخص مرتب. يعطيك العافية",
-    "mā shāʼ allāh, mulakhkhaṣ mrattab. yaʿṭīk il-ʿāfya",
-    "Mā shāʼ allāh, a tidy summary. Thanks for your hard work."
+    "ما شاء الله، ملخص مرتب، بلا تكرار. يعطيك العافية",
+    "mā shāʼ allāh, mulakhkhaṣ mrattab, bala tikrār. yaʿṭīk il-ʿāfya",
+    "Mā shāʼ allāh, a tidy summary, with nothing said twice. Thanks for your hard work."
    ],
    [
     "B",
@@ -352,7 +352,7 @@
   "stage": 5,
   "title": "Prove it! A debate at university",
   "goal": "In a seminar debate, your classmate Sulṭān argues that English is enough to live in Dubai; take him on point by point",
-  "tip": "Answer the argument, not the man. Concede what's true first (ma ankir inn… 'I don't deny that…'), then name the weak spot (hādhi ḥujja nāgṣa, hādha tanāquẓ), and when he calls you ʿāṭifi 'emotional', answer with your own experience.",
+  "tip": "Answer the argument, not the man. Concede what's true first (ma ankir inn… 'I don't deny that…'), then name the weak spot (hādha tanāquẓ, ḥujjatak tiḥtāj dalīl), and when he calls it mujarrad kalām ʿāṭifi, answer: ma tigdar tinfi tajrubti.",
   "grammar": "debating (ma ankir inn, ḥujja, tanāquẓ, ma tigdar tinfi)",
   "dialogue": [
    [
@@ -375,9 +375,9 @@
    ],
    [
     "B",
-    "ممكن، بس من هذي الزاوية، الشغل مب كل الحياة. هذي حجة ناقصة",
-    "mumkin, bas min hādhi z-zāwiya, ish-shughul mub kill il-ḥayā. hādhi ḥujja nāgṣa",
-    "Maybe, but from that angle, work isn't the whole of life. That argument's incomplete."
+    "ممكن، بس الشغل مب كل الحياة",
+    "mumkin, bas ish-shughul mub kill il-ḥayā",
+    "Maybe, but work isn't the whole of life."
    ],
    [
     "A",
@@ -387,9 +387,9 @@
    ],
    [
     "B",
-    "بس أمس قلت إنهم ما يعرفون حد هني. هذا تناقض!",
-    "bas ams gilt innahum ma yaʿarfūn ḥad hni. hādha tanāquẓ!",
-    "But yesterday you said they don't know anyone here. That's a contradiction!"
+    "بس أمس قلت إنهم وحيدين. هذا تناقض!",
+    "bas ams gilt innahum waḥīdīn. hādha tanāquẓ!",
+    "But yesterday you said they're lonely. That's a contradiction!"
    ],
    [
     "A",
@@ -399,15 +399,15 @@
    ],
    [
     "B",
-    "مب عاطفي، وما تقدر تنفي: لما تكلمت عربي، الناس فتحوا لي مجالسهم",
-    "mub ʿāṭifi, w ma tigdar tinfi: lamma tkallamt ʿarabi, in-nās fitḥaw-li majālis-hum",
-    "It's not emotional, and you can't deny it: when I spoke Arabic, people opened their majlises to me."
+    "مب عاطفي. ما تقدر تنفي تجربتي!",
+    "mub ʿāṭifi. ma tigdar tinfi tajrubti!",
+    "It's not emotional. You can't deny my experience!"
    ],
    [
     "A",
-    "صح، معك حق في هذي. بس انت حالة خاصة",
-    "ṣaḥḥ, maʿak ḥagg fi hādhi. bas inta ḥāla khāṣṣa",
-    "True, you're right on that one. But you're a special case."
+    "صح، من هذي الزاوية معك حق. بس انت حالة خاصة",
+    "ṣaḥḥ, min hādhi z-zāwiya maʿak ḥagg. bas inta ḥāla khāṣṣa",
+    "True, from that angle you're right. But you're a special case."
    ],
    [
     "B",
@@ -481,9 +481,9 @@
    ],
    [
     "B",
-    "مباراة حلوة. ما أنكر إن الكويتي حلو، بس لا تتفلسف علي!",
-    "mubārā ḥilwa. ma ankir inn il-kwēti ḥilu, bas la titfalsaf ʿalay!",
-    "Good match. I don't deny Kuwaiti's nice, but don't go lecturing me!"
+    "يلا! بس لا تتفلسف علي!",
+    "yalla! bas la titfalsaf ʿalay!",
+    "Bring it on! But don't go lecturing me!"
    ],
    [
     "A",
@@ -493,9 +493,9 @@
    ],
    [
     "B",
-    "لا تستفزني! الإماراتي بعد الكل يفهمه",
-    "la tistafizzni! il-imārāti baʿad il-kill yifhamah",
-    "Don't wind me up! Everyone understands Emirati too."
+    "لا تستفزني! على طاري الخليج، الكل يفهم الإماراتي",
+    "la tistafizzni! ʿala ṭāri l-khalīj, il-kill yifham il-imārāti",
+    "Don't wind me up! Speaking of the Gulf, everyone understands Emirati."
    ],
    [
     "A",
@@ -505,9 +505,9 @@
    ],
    [
     "B",
-    "مب مغرور! وانت لا تشمت إذا غلبتك",
-    "mub maghrūr! w inta la tishmit idha ghalabtak",
-    "I'm not big-headed! And don't you gloat if I beat you."
+    "مب مغرور! وانت لا تشمت",
+    "mub maghrūr! w inta la tishmit",
+    "I'm not big-headed! And don't you gloat."
    ],
    [
     "A",
@@ -517,9 +517,9 @@
    ],
    [
     "B",
-    "لا أبد! وما تقدر تنفي: الإماراتي اللي أسمعه كل يوم",
-    "la abad! w ma tigdar tinfi: il-imārāti illi asmaʿah kill yōm",
-    "No way! And you can't deny it: Emirati is what I hear every day."
+    "لا أبد! ما أنكر إن الكويتي حلو",
+    "la abad! ma ankir inn il-kwēti ḥilu",
+    "No way! I don't deny Kuwaiti's nice."
    ],
    [
     "A",
@@ -635,9 +635,9 @@
    ],
    [
     "B",
-    "فكرة حلوة. وأبدا بسؤال للجمهور، وأبرز شي في الآخر، صح؟",
-    "fikra ḥilwa. w abda b-suʼāl lil-jumhūr, w abraz shay fi l-ākhir, ṣaḥḥ?",
-    "Good idea. And I start with a question for the audience, and keep the main thing for the end, right?"
+    "فكرة حلوة. وأبرز شي في الآخر، صح؟",
+    "fikra ḥilwa. w abraz shay fi l-ākhir, ṣaḥḥ?",
+    "Good idea. And the main thing at the end, right?"
    ],
    [
     "A",
@@ -713,15 +713,15 @@
    ],
    [
     "B",
-    "أبي أمثال شعبية يا عمي، للنقطة الأخيرة",
-    "abi amthāl shaʿbiyya yā ʿammi, lin-nugṭa l-akhīra",
-    "I'd like some folk proverbs, uncle, for the last point."
+    "أبي أمثال شعبية في سطرين، للنقطة الأخيرة",
+    "abi amthāl shaʿbiyya fi saṭrēn, lin-nugṭa l-akhīra",
+    "I'd like some folk proverbs, in a couple of lines, for the last point."
    ],
    [
     "A",
-    "أول شي لك انت: خير الكلام ما قل ودل. لا تطول عليهم!",
-    "awwal shay lak inta: khēr il-kalām ma gall w dall. la tṭawwil ʿalēhum!",
-    "First, one for you: the best words are few and to the point. Don't drag it out for them!"
+    "أول شي لك انت: خير الكلام ما قل ودل. لا تطول عليهم، وبلا تكرار!",
+    "awwal shay lak inta: khēr il-kalām ma gall w dall. la tṭawwil ʿalēhum, w bala tikrār!",
+    "First, one for you: the best words are few and to the point. Don't drag it out for them, and don't repeat yourself!"
    ],
    [
     "B",
@@ -749,9 +749,9 @@
    ],
    [
     "B",
-    "هيه، ما أنكر إن حجته قوية، بس يشوف غلط الكل إلا غلطه!",
-    "hē, ma ankir inn ḥujjatah gawiyya, bas yshūf ghalaṭ il-kill illa ghalaṭah!",
-    "Yes, I don't deny his arguments are strong, but he sees everyone's mistakes except his own!"
+    "هيه، يشوف غلط الكل إلا غلطه!",
+    "hē, yshūf ghalaṭ il-kill illa ghalaṭah!",
+    "Yes, he sees everyone's mistakes except his own!"
    ],
    [
     "A",
@@ -761,9 +761,9 @@
    ],
    [
     "B",
-    "ما بنسى المغزى يا عمي. بحط ثلاثة بس، بلا تكرار!",
-    "ma bansa l-maghza yā ʿammi. baḥuṭṭ thalātha bas, bala tikrār!",
-    "I won't forget the moral, uncle. I'll only put in three, and no repeating!"
+    "ما بنسى المغزى يا عمي. بحط ثلاثة بس!",
+    "ma bansa l-maghza yā ʿammi. baḥuṭṭ thalātha bas!",
+    "I won't forget the moral, uncle. I'll only put in three!"
    ]
   ],
   "items": [
@@ -823,7 +823,7 @@
   "stage": 5,
   "title": "C1 exit: Do you need Arabic in Dubai?",
   "goal": "C1 exit: at the university seminar, give your five-minute talk on Arabic in Dubai, and answer your classmate Khalfān, who argues the other side",
-  "tip": "Review, now in one talk: announce your points, build on the other side (mithil ma gāl Khalfān…), pick up a word (ʿala ṭāri…), answer an objection (khallni arudd), and close with the upshot. New: yaʼaththir ʿala…, jisr, il-mīza, tsidd il-fajwa.",
+  "tip": "Review, now in one talk: announce your points (ʿindi thalāth nigāṭ), concede and add (ṣaḥḥ, bas il-mīza inn…), pick up a word (ʿala ṭāri…), answer an objection (khallni arudd) and close with the upshot. New: yaʼaththir ʿala…, jisr, tsidd il-fajwa.",
   "grammar": "C1 exit: extended presentation (building on a point, debating, summarising)",
   "dialogue": [
    [
@@ -834,21 +834,21 @@
    ],
    [
     "B",
-    "بسم الله. سؤالنا: تحتاج العربي في دبي؟ عندي ثلاث نقاط",
-    "bismillāh. suʼālna: tiḥtāj il-ʿarabi fi Dbayy? ʿindi thalāth nigāṭ",
-    "In God's name. Our question: do you need Arabic in Dubai? I've got three points."
+    "بسم الله. عندي ثلاث نقاط",
+    "bismillāh. ʿindi thalāth nigāṭ",
+    "In God's name. I've got three points."
    ],
    [
     "A",
-    "أول نقطة الشغل، وهو كله بالإنقليزي، صح؟",
-    "awwal nugṭa sh-shughul, w huwa killah bil-inglīzi, ṣaḥḥ?",
-    "The first point is work, and that's all in English, right?"
+    "أول نقطة الشغل. ومن هذي الزاوية، كله بالإنقليزي، صح؟",
+    "awwal nugṭa sh-shughul. w min hādhi z-zāwiya, killah bil-inglīzi, ṣaḥḥ?",
+    "The first point is work. And from that angle, it's all in English, right?"
    ],
    [
     "B",
-    "مثل ما قال خلفان، الشغل بالإنقليزي. بس من هذي الزاوية، العربي يأثر على الثقة",
-    "mithil ma gāl Khalfān, ish-shughul bil-inglīzi. bas min hādhi z-zāwiya, il-ʿarabi yaʼaththir ʿala th-thiga",
-    "As Khalfān said, work's in English. But from this angle, Arabic affects trust."
+    "صح، بس الميزة إن العربي يأثر على الثقة",
+    "ṣaḥḥ, bas il-mīza inn il-ʿarabi yaʼaththir ʿala th-thiga",
+    "True, but the good thing is that Arabic affects trust."
    ],
    [
     "A",
@@ -858,9 +858,9 @@
    ],
    [
     "B",
-    "على طاري الناس، من تجربتي، العربي جسر بيني وبينهم",
-    "ʿala ṭāri n-nās, min tajrubti, il-ʿarabi jisr bēni w bēnhum",
-    "Speaking of people, from my experience, Arabic is a bridge between me and them."
+    "على طاري الناس، العربي جسر بيني وبينهم",
+    "ʿala ṭāri n-nās, il-ʿarabi jisr bēni w bēnhum",
+    "Speaking of people, Arabic is a bridge between me and them."
    ],
    [
     "A",
@@ -870,9 +870,9 @@
    ],
    [
     "B",
-    "خلني أرد. هذي الميزة: مب لازم تتعلم كل شي، كلمتين باللهجة تسد الفجوة",
-    "khallni arudd. hādhi l-mīza: mub lāzim titʿallam kill shay; kilmitēn bil-lahja tsidd il-fajwa",
-    "Let me answer that. That's the good thing: you don't have to learn everything; a couple of words of dialect close the gap."
+    "خلني أرد: كلمتين باللهجة تسد الفجوة",
+    "khallni arudd: kilmitēn bil-lahja tsidd il-fajwa",
+    "Let me answer that: a couple of words of dialect close the gap."
    ],
    [
     "A",
@@ -944,9 +944,9 @@
    ],
    [
     "B",
-    "الله يحييك يا عمي. عرض صغير، مب أكثر، وقبله كان كابوس!",
-    "allāh yḥayyīk yā ʿammi. ʿarẓ ṣghayyir, mub akthar, w gabilah kān kābūs!",
-    "Thank you, uncle. A little talk, nothing more, and before it, it was a nightmare!"
+    "الله يحييك يا عمي. عرض صغير، وقبله كان كابوس!",
+    "allāh yḥayyīk yā ʿammi. ʿarẓ ṣghayyir, w gabilah kān kābūs!",
+    "Thank you, uncle. Just a little talk, and before it, it was a nightmare!"
    ],
    [
     "A",
@@ -968,9 +968,9 @@
    ],
    [
     "B",
-    "طال عمرك، في سطرين: العربي يساعدنا وايد ويا العملاء",
-    "ṭāl ʿumrak, fi saṭrēn: il-ʿarabi ysāʿidna wāyid wiyya l-ʿumala",
-    "Sir, in a couple of lines: Arabic helps us a great deal with clients. (respectful)"
+    "طال عمرك، في سطرين: العربي يساعدنا ويا العملاء",
+    "ṭāl ʿumrak, fi saṭrēn: il-ʿarabi ysāʿidna wiyya l-ʿumala",
+    "Sir, in a couple of lines: Arabic helps us with clients. (respectful)"
    ],
    [
     "A",
@@ -980,9 +980,9 @@
    ],
    [
     "B",
-    "والله، العربي جسر: الإنقليزي يفتح لك الباب، بس العربي يفتح لك المجلس! وهاللمة سوت الباقي",
-    "wallāh, il-ʿarabi jisr: il-inglīzi yiftaḥ-lak il-bāb, bas il-ʿarabi yiftaḥ-lak il-majlis! w hal-lamma sawwat il-bāgi",
-    "Honestly, Arabic is a bridge: English opens the door for you, but Arabic opens the majlis! And gatherings like this one did the rest."
+    "والله، العربي جسر! وهاللمة سوت الباقي",
+    "wallāh, il-ʿarabi jisr! w hal-lamma sawwat il-bāgi",
+    "Honestly, Arabic is a bridge! And gatherings like this one did the rest."
    ],
    [
     "A",
