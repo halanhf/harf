@@ -1,0 +1,1340 @@
+[
+ {
+  "id": "s3u066",
+  "stage": 3,
+  "title": "The film I saw",
+  "goal": "Tell Sēf about a film you saw, using illi with an ending that points back to the noun",
+  "tip": "When the noun is the object of the verb after illi, the verb takes an ending that points back to it: il-film illi shiftah 'the film I saw' (lit. that I saw it). Plural things take -ha: il-aghāni illi simaʿt-ha 'the songs I heard', it-tadhākir illi shirēt-ha 'the tickets I bought'.",
+  "grammar": "resumptive pronoun: il-film illi shiftah 'the film (that) I saw'",
+  "dialogue": [
+   [
+    "A",
+    "هلا! شو الفلم اللي شفته أمس؟",
+    "hala! shu l-film illi shiftah ams?",
+    "Hi! What was the film you saw yesterday?"
+   ],
+   [
+    "B",
+    "فلم يديد. وايد عجبني!",
+    "film yidīd. wāyid ʿajabni!",
+    "A new film. I really liked it!"
+   ],
+   [
+    "A",
+    "والممثل اللي تحبه، كان فيه؟",
+    "w il-mumaththil illi tḥibbah, kān fīh?",
+    "And the actor you like, was he in it?"
+   ],
+   [
+    "B",
+    "هيه. والأغاني اللي سمعتها حلوة بعد",
+    "hē. w il-aghāni illi simaʿt-ha ḥilwa baʿad",
+    "Yes. And the songs I heard (in it) are good too."
+   ],
+   [
+    "A",
+    "زين، بشوفه. والتذاكر اللي شريتها، غالية؟",
+    "zēn, bashūfah. w it-tadhākir illi shirēt-ha, ghālya?",
+    "Great, I'll see it. And the tickets you bought, are they expensive?"
+   ],
+   [
+    "B",
+    "لا، رخيصة. بس الفشار اللي كلته كان غالي!",
+    "la, rakhīṣa. bas il-fashār illi kaltah kān ghāli!",
+    "No, they're cheap. But the popcorn I ate was expensive!"
+   ],
+   [
+    "A",
+    "دوم جي! تنصحني أشوفه في السينما؟",
+    "dōm chī! tinṣaḥni ashūfah fi s-sīnama?",
+    "It's always like that! Would you recommend I see it at the cinema?"
+   ],
+   [
+    "B",
+    "أكيد، يستاهل. شوفه في السينما، مب في التلفون",
+    "akīd, yistāhil. shūfah fi s-sīnama, mub fi t-tilifōn",
+    "Definitely, it's worth it. Watch it at the cinema, not on your phone."
+   ]
+  ],
+  "items": [
+   [
+    "اللي شفته",
+    "illi shiftah",
+    "that I saw; that you saw (to a man)",
+    "الذي رأيته",
+    "to a woman: illi shiftīh (اللي شفتيه); about a feminine noun or plural things: illi shift-ha (اللي شفتها)"
+   ],
+   [
+    "عجبني",
+    "ʿajabni",
+    "I liked it (lit. it pleased me)",
+    "أعجبني",
+    "did you like it?: ʿajabak? (to a woman: ʿajabich?)"
+   ],
+   [
+    "الممثل اللي تحبه",
+    "il-mumaththil illi tḥibbah",
+    "the actor you like (to a man)",
+    "الممثل الذي تحبه",
+    "to a woman: illi tḥibbīnah (اللي تحبينه); actors: il-mumaththilīn (الممثلين)"
+   ],
+   [
+    "الأغاني",
+    "il-aghāni",
+    "the songs, the music (in a film)",
+    "الأغاني",
+    "a song: ughniya (أغنية)"
+   ],
+   [
+    "اللي سمعتها",
+    "illi simaʿt-ha",
+    "that I heard (a feminine noun or plural things); that you heard (to a man)",
+    "التي سمعتها",
+    "about a masculine noun: illi simaʿtah (اللي سمعته); to a woman: illi simaʿtīha (اللي سمعتيها)"
+   ],
+   [
+    "بشوفه",
+    "bashūfah",
+    "I'll see it, I'll watch it",
+    "سأشاهده",
+    "about a feminine noun: bashūfha (بشوفها)"
+   ],
+   [
+    "التذاكر اللي شريتها",
+    "it-tadhākir illi shirēt-ha",
+    "the tickets I bought; the tickets you bought (to a man)",
+    "التذاكر التي اشتريتها",
+    "plural things take -ha; to a woman: illi shirētīha (اللي شريتيها)"
+   ],
+   [
+    "تنصحني؟",
+    "tinṣaḥni?",
+    "would you recommend it? (lit. do you advise me?) (to a man)",
+    "هل تنصحني؟",
+    "to a woman: tinṣaḥīni? (تنصحيني؟)"
+   ],
+   [
+    "الفشار",
+    "il-fashār",
+    "popcorn",
+    "الفشار",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s3u067",
+  "stage": 3,
+  "title": "The place I told you about",
+  "goal": "Suggest a restaurant to Maryam for the office lunch, with illi and a preposition that points back",
+  "tip": "After a preposition, the ending that points back goes on the preposition: il-maṭʿam illi gilt-lich ʿannah 'the restaurant I told you about', illi ṭalabna minnah 'the one we ordered from'. English can leave 'about' or 'from' at the end; Gulf Arabic always gives it an ending.",
+  "grammar": "resumptive pronoun after a preposition: illi gilt-lich ʿannah",
+  "dialogue": [
+   [
+    "A",
+    "بنطلب غدا للمكتب. تعرف مطعم زين؟",
+    "biniṭlub ghada lil-maktab. taʿarf maṭʿam zēn?",
+    "We're ordering lunch for the office. Do you know a good restaurant?"
+   ],
+   [
+    "B",
+    "هيه، المطعم اللي قلت لج عنه. أكله حلو",
+    "hē, il-maṭʿam illi gilt-lich ʿannah. aklah ḥilu",
+    "Yes, the restaurant I told you about. The food there is good."
+   ],
+   [
+    "A",
+    "اللي في البناية اللي يم المترو؟",
+    "illi fi l-bināya illi yamm il-mitrō?",
+    "The one in the building by the metro?"
+   ],
+   [
+    "B",
+    "لا، هذاك اللي رحت له ويا الشباب الأسبوع اللي طاف",
+    "la, hādhāk illi riḥt-lah wiyya sh-shabāb il-usbūʿ illi ṭāf",
+    "No, the one I went to with the guys last week."
+   ],
+   [
+    "A",
+    "زين. والمكان اللي تتكلم عنه، غالي؟",
+    "zēn. w il-makān illi titkallam ʿannah, ghāli?",
+    "OK. And this place you're talking about, is it expensive?"
+   ],
+   [
+    "B",
+    "لا، رخيص. المطعم اللي طلبنا منه أمس كان أغلى",
+    "la, rkhīṣ. il-maṭʿam illi ṭalabna minnah ams kān aghla",
+    "No, it's cheap. The one we ordered from yesterday was more expensive."
+   ],
+   [
+    "A",
+    "خلاص، نطلب منه. طرش لي الرقم اللي عندك",
+    "khalāṣ, niṭlub minnah. ṭarrish-li r-ragam illi ʿindak",
+    "Right, we'll order from there. Send me the number you've got."
+   ],
+   [
+    "B",
+    "زين، دقيقة وأطرش لج",
+    "zēn, dagīga w aṭarrish-lich",
+    "OK, give me a minute and I'll send it to you."
+   ]
+  ],
+  "items": [
+   [
+    "اللي قلت لج عنه",
+    "illi gilt-lich ʿannah",
+    "(the one) I told you about (to a woman)",
+    "الذي حدثتك عنه",
+    "to a man: illi gilt-lak ʿannah (اللي قلت لك عنه); about a feminine noun: ʿanha"
+   ],
+   [
+    "اللي رحت له",
+    "illi riḥt-lah",
+    "(the one) I went to",
+    "الذي ذهبت إليه",
+    "about a feminine noun: illi riḥt-lha (اللي رحت لها)"
+   ],
+   [
+    "اللي تتكلم عنه",
+    "illi titkallam ʿannah",
+    "(the one) you're talking about (to a man)",
+    "الذي تتحدث عنه",
+    "to a woman: illi titkallamīn ʿannah (اللي تتكلمين عنه)"
+   ],
+   [
+    "طلبنا منه",
+    "ṭalabna minnah",
+    "we ordered from it, we ordered from him",
+    "طلبنا منه",
+    "I ordered: ṭalabt (طلبت)"
+   ],
+   [
+    "أكله حلو",
+    "aklah ḥilu",
+    "the food's good there (lit. its food is good)",
+    "طعامه لذيذ",
+    ""
+   ],
+   [
+    "البناية",
+    "il-bināya",
+    "the building",
+    "المبنى / البناية",
+    ""
+   ],
+   [
+    "الأسبوع اللي طاف",
+    "il-usbūʿ illi ṭāf",
+    "last week",
+    "الأسبوع الماضي",
+    "like ish-shahar illi ṭāf 'last month'"
+   ],
+   [
+    "بنطلب",
+    "biniṭlub",
+    "we're going to order, we'll order",
+    "سنطلب",
+    "I'll order: baṭlub (بطلب)"
+   ],
+   [
+    "الرقم اللي عندك",
+    "ir-ragam illi ʿindak",
+    "the number you've got (to a man)",
+    "الرقم الذي عندك",
+    "to a woman: ir-ragam illi ʿindich (الرقم اللي عندج)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u068",
+  "stage": 3,
+  "title": "Whoever wants to come, comes",
+  "goal": "Plan a desert trip with Sēf and the guys, saying 'whoever…' with illi on its own",
+  "tip": "illi with no noun before it means 'whoever, anyone who': illi yabi yrūḥ, yrūḥ 'whoever wants to go can go'. Its verb takes the 'he' form (y-), even when it means anyone: illi yitʼakhkhar yghassil il-mawāʿīn 'whoever's late washes the dishes'.",
+  "grammar": "headless illi 'whoever': illi yabi yrūḥ, yrūḥ",
+  "dialogue": [
+   [
+    "B",
+    "شباب، يوم السبت بنروح البر. تيون ويانا؟",
+    "shabāb, yōm is-sabt binrūḥ il-barr. tiyūn wiyyāna?",
+    "Guys, on Saturday we're going to the desert. Are you coming with us?"
+   ],
+   [
+    "A",
+    "أنا ياي أكيد. بس ما في مكان للكل في سيارتي",
+    "ana yāy akīd. bas ma fī makān lil-kill fi sayyārti",
+    "I'm coming for sure. But there isn't room for everyone in my car."
+   ],
+   [
+    "B",
+    "عادي، اللي عنده سيارة ييبها",
+    "ʿādi, illi ʿindah sayyāra yībha",
+    "No problem, whoever has a car brings it."
+   ],
+   [
+    "A",
+    "زين. واللي ما يقدر ييي؟",
+    "zēn. w illi ma yigdar yiyi?",
+    "OK. And whoever can't come?"
+   ],
+   [
+    "B",
+    "براحته. بس اللي يبي ييي، ييي",
+    "b-rāḥtah. bas illi yabi yiyi, yiyi",
+    "That's up to him. But whoever wants to come, comes."
+   ],
+   [
+    "A",
+    "والأكل؟ منو بيسويه؟",
+    "w il-akil? minu biysawwīh?",
+    "And the food? Who's going to make it?"
+   ],
+   [
+    "B",
+    "اللي يوصل أول يسوي القهوة، وأنا علي العشا",
+    "illi yōṣal awwal ysawwi l-gahwa, w ana ʿalay il-ʿasha",
+    "Whoever gets there first makes the coffee, and I'll do dinner."
+   ],
+   [
+    "A",
+    "حلو! واللي يتأخر يغسل المواعين",
+    "ḥilu! w illi yitʼakhkhar yghassil il-mawāʿīn",
+    "Nice! And whoever's late washes the dishes."
+   ]
+  ],
+  "items": [
+   [
+    "اللي يبي",
+    "illi yabi",
+    "whoever wants, anyone who wants",
+    "من يريد",
+    "illi yabi yrūḥ, yrūḥ = whoever wants to go can go; whoever doesn't want: illi ma yabi"
+   ],
+   [
+    "اللي ما يقدر",
+    "illi ma yigdar",
+    "whoever can't, anyone who can't",
+    "من لا يستطيع",
+    ""
+   ],
+   [
+    "اللي عنده سيارة",
+    "illi ʿindah sayyāra",
+    "whoever has a car, anyone with a car",
+    "من لديه سيارة",
+    ""
+   ],
+   [
+    "براحته",
+    "b-rāḥtah",
+    "that's up to him, as he likes",
+    "على راحته",
+    "up to you: b-rāḥtak (to a man), b-rāḥtich (to a woman)"
+   ],
+   [
+    "اللي يوصل أول",
+    "illi yōṣal awwal",
+    "whoever gets there first",
+    "من يصل أولًا",
+    ""
+   ],
+   [
+    "اللي يتأخر",
+    "illi yitʼakhkhar",
+    "whoever's late, anyone who's late",
+    "من يتأخر",
+    ""
+   ],
+   [
+    "يغسل المواعين",
+    "yghassil il-mawāʿīn",
+    "he washes the dishes",
+    "يغسل الصحون",
+    "I'll wash the dishes: baghassil il-mawāʿīn (بغسل المواعين)"
+   ],
+   [
+    "تيون ويانا؟",
+    "tiyūn wiyyāna?",
+    "are you coming with us? (to a group)",
+    "هل تأتون معنا؟",
+    "to one man: tiyi wiyyāna?; to one woman: tiyīn wiyyāna?"
+   ],
+   [
+    "ما في مكان للكل",
+    "ma fī makān lil-kill",
+    "there isn't room for everyone",
+    "لا يوجد مكان للجميع",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s3u069",
+  "stage": 3,
+  "title": "Whatever you think",
+  "goal": "Choose a present for your dad with Sēf, using illi for 'what, whatever'",
+  "tip": "illi on its own also means 'what, whatever'. Like a noun, it takes the ending that points back: illi tshūfah 'whatever you think (best)', khudh illi tigdar ʿalēh 'get what you can afford'. With no verb: illi maʿi 'what I've got on me'.",
+  "grammar": "headless illi 'what, whatever': illi tshūfah, illi tishtirīh",
+  "dialogue": [
+   [
+    "B",
+    "أبي أشتري هدية حق أبوي. شو أشتري له؟",
+    "abi ashtiri hadiyya ḥagg ubūy. shu ashtirī-lah?",
+    "I want to buy a present for my dad. What should I get him?"
+   ],
+   [
+    "A",
+    "اللي يحبه هو. شو يحب؟",
+    "illi yḥibbah huwa. shu yḥibb?",
+    "Whatever he likes. What does he like?"
+   ],
+   [
+    "B",
+    "ما أدري! دوم يقول: اللي تشتريه زين",
+    "ma adri! dōm ygūl: illi tishtirīh zēn",
+    "I don't know! He always says: whatever you buy is fine."
+   ],
+   [
+    "A",
+    "عيل خذ له دلة. يحب القهوة العربية؟",
+    "ʿayal khudh-lah dalla. yḥibb il-gahwa l-ʿarabiyya?",
+    "Then get him a dalla. Does he like Arabic coffee?"
+   ],
+   [
+    "B",
+    "هيه، وايد! بس اختار لي انت، اللي تشوفه",
+    "hē, wāyid! bas ikhtār-li inta, illi tshūfah",
+    "Yes, a lot! But you choose for me, whatever you think."
+   ],
+   [
+    "A",
+    "هذي. بس شوف السعر قبل لا تدفع!",
+    "hādhi. bas shūf is-siʿir gabil la tidfaʿ!",
+    "This one. But check the price before you pay!"
+   ],
+   [
+    "B",
+    "لا! اللي معي ما يكفي",
+    "la! illi maʿi ma ykaffi",
+    "Oh no! What I've got on me isn't enough."
+   ],
+   [
+    "A",
+    "عادي، خذ اللي تقدر عليه. هذي الصغيرة أرخص",
+    "ʿādi, khudh illi tigdar ʿalēh. hādhi ṣ-ṣghīra arkhaṣ",
+    "Never mind, get what you can afford. This small one's cheaper."
+   ]
+  ],
+  "items": [
+   [
+    "اللي تشوفه",
+    "illi tshūfah",
+    "whatever you think (best), as you see fit (to a man)",
+    "ما تراه",
+    "to a woman: illi tshūfīnah (اللي تشوفينه)"
+   ],
+   [
+    "اللي يحبه",
+    "illi yḥibbah",
+    "whatever he likes; (the one) he likes",
+    "ما يحبه",
+    "about a woman: illi tḥibbah (اللي تحبه)"
+   ],
+   [
+    "اللي تشتريه",
+    "illi tishtirīh",
+    "whatever you buy (to a man)",
+    "ما تشتريه",
+    "to a woman: illi tishtirīnah (اللي تشترينه)"
+   ],
+   [
+    "هدية حق أبوي",
+    "hadiyya ḥagg ubūy",
+    "a present for my dad",
+    "هدية لأبي",
+    ""
+   ],
+   [
+    "اختار لي",
+    "ikhtār-li",
+    "choose for me (to a man)",
+    "اختر لي",
+    "to a woman: ikhtārī-li (اختاري لي)"
+   ],
+   [
+    "خذ له",
+    "khudh-lah",
+    "get him, buy him (to a man)",
+    "خذ له",
+    "to a woman: khudhī-lah (خذي له)"
+   ],
+   [
+    "اللي معي",
+    "illi maʿi",
+    "what I've got (on me)",
+    "ما معي",
+    ""
+   ],
+   [
+    "ما يكفي",
+    "ma ykaffi",
+    "it isn't enough",
+    "لا يكفي",
+    ""
+   ],
+   [
+    "اللي تقدر عليه",
+    "illi tigdar ʿalēh",
+    "what you can afford, what you can manage (to a man)",
+    "ما تقدر عليه",
+    "to a woman: illi tigdarīn ʿalēh (اللي تقدرين عليه)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u070",
+  "stage": 3,
+  "title": "The file? I haven't opened it",
+  "goal": "Catch up with Maryam at the office, putting the topic first: il-mudīr, ma shiftah",
+  "tip": "Gulf speakers often name the thing first, then comment on it with an ending that points back: il-mudīr, ma shiftah il-yōm 'the manager, I haven't seen him today'; il-īmēlāt, garēt-ha killha 'the emails, I've read them all'. Plural things take -ha.",
+  "grammar": "topic first with a pointing-back ending: il-mudīr, ma shiftah il-yōm",
+  "dialogue": [
+   [
+    "A",
+    "صباح الخير. المدير، شفته اليوم؟",
+    "ṣabāḥ il-khēr. il-mudīr, shiftah il-yōm?",
+    "Good morning. Have you seen the manager today?"
+   ],
+   [
+    "B",
+    "صباح النور. لا، المدير ما شفته اليوم. يمكن عنده اجتماع",
+    "ṣabāḥ in-nūr. la, il-mudīr ma shiftah il-yōm. yimkin ʿindah ijtimāʿ",
+    "Good morning. No, I haven't seen the manager today. Maybe he's got a meeting."
+   ],
+   [
+    "A",
+    "والإيميلات اللي طرشتها أمس، قريتها؟",
+    "w il-īmēlāt illi ṭarrasht-ha ams, garēt-ha?",
+    "And the emails I sent yesterday, have you read them?"
+   ],
+   [
+    "B",
+    "هيه، الإيميلات قريتها كلها. بس الملف ما فتحته",
+    "hē, il-īmēlāt garēt-ha killha. bas il-malaff ma fataḥtah",
+    "Yes, I've read all the emails. But I haven't opened the file."
+   ],
+   [
+    "A",
+    "الملف لازم تشوفه قبل الاجتماع",
+    "il-malaff lāzim tshūfah gabil il-ijtimāʿ",
+    "You need to look at the file before the meeting."
+   ],
+   [
+    "B",
+    "إن شاء الله. والأرقام اللي فيه، منو بيشوفها؟",
+    "in shāʼ allāh. w il-argām illi fīh, minu biyshūfha?",
+    "Will do. And the figures in it, who's going to check them?"
+   ],
+   [
+    "A",
+    "الأرقام انت تشوفها، والعرض أنا سويته",
+    "il-argām inta tshūfha, w il-ʿarẓ ana sawwētah",
+    "You check the figures, and I've done the presentation."
+   ],
+   [
+    "B",
+    "زين. بس المدير، لا تقولين له إني ما فتحته!",
+    "zēn. bas il-mudīr, la tgūlīn-lah inni ma fataḥtah!",
+    "OK. But don't tell the manager I haven't opened it!"
+   ]
+  ],
+  "items": [
+   [
+    "ما شفته اليوم",
+    "ma shiftah il-yōm",
+    "I haven't seen him today",
+    "لم أره اليوم",
+    "about a woman: ma shift-ha l-yōm (ما شفتها اليوم)"
+   ],
+   [
+    "قريتها كلها",
+    "garēt-ha killha",
+    "I've read them all, I read all of it",
+    "قرأتها كلها",
+    "about a masculine noun: garētah killah (قريته كله)"
+   ],
+   [
+    "ما فتحته",
+    "ma fataḥtah",
+    "I haven't opened it, I didn't open it",
+    "لم أفتحه",
+    ""
+   ],
+   [
+    "الإيميلات",
+    "il-īmēlāt",
+    "the emails",
+    "الرسائل الإلكترونية",
+    "one: īmēl (إيميل)"
+   ],
+   [
+    "لازم تشوفه",
+    "lāzim tshūfah",
+    "you need to look at it (to a man)",
+    "يجب أن تراه",
+    "to a woman: lāzim tshūfīnah (لازم تشوفينه)"
+   ],
+   [
+    "منو بيشوفها؟",
+    "minu biyshūfha?",
+    "who's going to look at them? who'll check it? (a feminine noun or plural things)",
+    "من سيراجعها؟",
+    "about a masculine noun: minu biyshūfah? (منو بيشوفه؟)"
+   ],
+   [
+    "انت تشوفها",
+    "inta tshūfha",
+    "you look at them, you check them (to a man)",
+    "أنت تراجعها",
+    "to a woman: inti tshūfīnha (انتي تشوفينها)"
+   ],
+   [
+    "أنا سويته",
+    "ana sawwētah",
+    "I've done it, I did it (myself)",
+    "أنا عملته",
+    "about a feminine noun: ana sawwēt-ha (أنا سويتها)"
+   ],
+   [
+    "لا تقولين له",
+    "la tgūlīn-lah",
+    "don't tell him (to a woman)",
+    "لا تقولي له",
+    "to a man: la tgūl-lah (لا تقول له)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u071",
+  "stage": 3,
+  "title": "Happy Ramadan",
+  "goal": "Greet Sēf at the start of Ramadan and accept an invitation to iftar at Bū Rāshid's",
+  "tip": "At the start of Ramadan say shahrak mubārak to a man (shahrich mubārak to a woman); the reply is allāh ybārik fīk. Invitations often use a participle: ʿammi ʿāzmak ʿala l-fuṭūr 'my uncle's invited you to iftar'. Plans take b-: basāʿid 'I'll help'.",
+  "grammar": "recycle: participles (ʿāzmak) and the b- future in plans",
+  "dialogue": [
+   [
+    "A",
+    "هلا سالم! شهرك مبارك",
+    "hala Sālim! shahrak mubārak",
+    "Hi Sālim! Happy Ramadan."
+   ],
+   [
+    "B",
+    "الله يبارك فيك. أول يوم في رمضان، الحمد لله",
+    "allāh ybārik fīk. awwal yōm fi ramaẓān, il-ḥamdu lillāh",
+    "Thank you (lit. God bless you). The first day of Ramadan, thank God."
+   ],
+   [
+    "A",
+    "عمي بو راشد عازمك على الفطور يوم الخميس",
+    "ʿammi Bū Rāshid ʿāzmak ʿala l-fuṭūr yōm il-khamīs",
+    "My uncle Bū Rāshid's invited you to iftar on Thursday."
+   ],
+   [
+    "B",
+    "ما قصر! على هالخشم. متى أوصل؟",
+    "ma gaṣṣar! ʿala hal-khashim. mita ōṣal?",
+    "That's so kind of him! I'd love to. When should I get there?"
+   ],
+   [
+    "A",
+    "قبل الأذان بشوي. واللي يوصل بدري يساعد!",
+    "gabil il-adhān b-shwayy. w illi yōṣal badri ysāʿid!",
+    "A little before the call to prayer. And whoever gets there early helps out!"
+   ],
+   [
+    "B",
+    "أكيد بساعد. أييب شي وياي؟",
+    "akīd basāʿid. ayīb shay wiyyāy?",
+    "Of course I'll help. Shall I bring anything?"
+   ],
+   [
+    "A",
+    "لا، مب لازم تييب شي. وبالليل نصلي التراويح ويا عمي",
+    "la, mub lāzim tyīb shay. w bil-lēl nṣalli t-tarāwīḥ wiyya ʿammi",
+    "No, you don't need to bring anything. And at night we pray tarawih with my uncle."
+   ],
+   [
+    "B",
+    "إن شاء الله. الله يخليه",
+    "in shāʼ allāh. allāh ykhallīh",
+    "God willing. Bless him."
+   ]
+  ],
+  "items": [
+   [
+    "شهرك مبارك",
+    "shahrak mubārak",
+    "happy Ramadan (lit. blessed be your month) (to a man)",
+    "رمضان مبارك",
+    "to a woman: shahrich mubārak (شهرج مبارك); the reply is allāh ybārik fīk (to a woman: fīch)"
+   ],
+   [
+    "عازمك على الفطور",
+    "ʿāzmak ʿala l-fuṭūr",
+    "(he's) invited you to iftar (to a man)",
+    "دعاك إلى الإفطار",
+    "to a woman: ʿāzmich (عازمج)"
+   ],
+   [
+    "ما قصر",
+    "ma gaṣṣar",
+    "that's so kind of him (lit. he didn't fall short)",
+    "لم يقصر",
+    "about a woman: ma gaṣṣarat"
+   ],
+   [
+    "قبل الأذان",
+    "gabil il-adhān",
+    "before the call to prayer",
+    "قبل الأذان",
+    ""
+   ],
+   [
+    "اللي يوصل بدري",
+    "illi yōṣal badri",
+    "whoever gets there early",
+    "من يصل مبكرًا",
+    ""
+   ],
+   [
+    "بساعد",
+    "basāʿid",
+    "I'll help",
+    "سأساعد",
+    "we'll help: binsāʿid (بنساعد)"
+   ],
+   [
+    "التراويح",
+    "it-tarāwīḥ",
+    "tarawih, the night prayers of Ramadan",
+    "التراويح",
+    "prayed after the ʿishāʼ prayer"
+   ],
+   [
+    "الله يخليه",
+    "allāh ykhallīh",
+    "bless him (warm thanks for someone's kindness; lit. God keep him)",
+    "حفظه الله",
+    "about a woman: allāh ykhallīha"
+   ],
+   [
+    "متى أوصل؟",
+    "mita ōṣal?",
+    "when should I get there?",
+    "متى أصل؟",
+    ""
+   ]
+  ],
+  "culture": "On the first night of Ramadan, the family usually gathers for iftar at the house of the head of the family, often the grandfather. Two weeks before Ramadan, on the night of 15 Shaʿbān, Emirati children celebrate ḥagg il-lēla: after maghrib they go from house to house in traditional clothes, carrying woven bags and singing, and neighbours give them sweets and nuts."
+ },
+ {
+  "id": "s3u072",
+  "stage": 3,
+  "title": "Iftar at the majlis",
+  "goal": "Break the fast at Bū Rāshid's majlis with the right greetings and replies",
+  "tip": "Each greeting has its reply: ramaẓān karīm → allāhu akram; ḥayyāk allāh → allāh yḥayyīk; mā gaṣṣart → mā sawwēna shay; tagabbal allāh → minna w minkum. Say bismillāh before the first date. illi again: il-harīs illi tḥibbah 'the harees you like'.",
+  "grammar": "recycle: illi and the Ramadan replies",
+  "dialogue": [
+   [
+    "B",
+    "السلام عليكم. رمضان كريم يا عمي!",
+    "as-salāmu ʿalaykum. ramaẓān karīm yā ʿammi!",
+    "Peace be upon you. Ramadan Kareem, uncle!"
+   ],
+   [
+    "A",
+    "وعليكم السلام. الله أكرم! حياك الله يا سالم",
+    "wa ʿalaykum is-salām. allāhu akram! ḥayyāk allāh yā Sālim",
+    "And peace be upon you. God is more generous! Welcome, Sālim."
+   ],
+   [
+    "B",
+    "الله يحييك يا طويل العمر. ما شاء الله، كل هذا أكل!",
+    "allāh yḥayyīk yā ṭawīl il-ʿumr. mā shāʼ allāh, kill hādha akil!",
+    "Thank you, sir. Wow, all this food!"
+   ],
+   [
+    "A",
+    "كله من البيت. هذا الثريد، والهريس اللي تحبه",
+    "killah min il-bēt. hādha th-tharīd, w il-harīs illi tḥibbah",
+    "It's all home-made. This is thareed, and (here's) the harees you like."
+   ],
+   [
+    "B",
+    "الله يخليك، ما قصرت",
+    "allāh ykhallīk, mā gaṣṣart",
+    "Thank you so much, you're very kind."
+   ],
+   [
+    "A",
+    "ما سوينا شي. يلا، أذن المغرب! خذ تمرة ولبن",
+    "mā sawwēna shay. yalla, adhdhan il-maghrib! khudh tamra w laban",
+    "It's nothing. Right, there's the maghrib call! Have a date and some laban."
+   ],
+   [
+    "B",
+    "بسم الله. تقبل الله يا عمي",
+    "bismillāh. tagabbal allāh yā ʿammi",
+    "In the name of God. May God accept (our fast), uncle."
+   ],
+   [
+    "A",
+    "منا ومنكم. نصلي المغرب، وبعدين ناكل",
+    "minna w minkum. nṣalli l-maghrib, w baʿdēn nākil",
+    "From us and from you. We'll pray maghrib, and then we'll eat."
+   ]
+  ],
+  "items": [
+   [
+    "كل هذا أكل!",
+    "kill hādha akil!",
+    "all this food!",
+    "كل هذا الطعام!",
+    ""
+   ],
+   [
+    "كله من البيت",
+    "killah min il-bēt",
+    "it's all home-made (lit. all of it is from the house)",
+    "كله من البيت",
+    ""
+   ],
+   [
+    "الثريد",
+    "ith-tharīd",
+    "thareed (bread soaked in a meat and vegetable stew)",
+    "الثريد",
+    ""
+   ],
+   [
+    "تمرة",
+    "tamra",
+    "a date (one)",
+    "تمرة",
+    "dates: tamr (تمر)"
+   ],
+   [
+    "لبن",
+    "laban",
+    "laban, buttermilk",
+    "لبن",
+    ""
+   ],
+   [
+    "بسم الله",
+    "bismillāh",
+    "in the name of God (before eating or starting something)",
+    "بسم الله",
+    ""
+   ],
+   [
+    "الهريس اللي تحبه",
+    "il-harīs illi tḥibbah",
+    "the harees you like (to a man)",
+    "الهريس الذي تحبه",
+    "to a woman: illi tḥibbīnah (اللي تحبينه)"
+   ],
+   [
+    "نصلي المغرب",
+    "nṣalli l-maghrib",
+    "we pray maghrib; we'll pray maghrib",
+    "نصلي المغرب",
+    ""
+   ]
+  ],
+  "culture": "The fast is broken with dates and laban (buttermilk), and harees and thareed are common iftar dishes. Later in the evening, after the ʿishāʼ prayer, come the tarawih prayers, every night of Ramadan."
+ },
+ {
+  "id": "s3u073",
+  "stage": 3,
+  "title": "Eid morning",
+  "goal": "Wish Sēf a happy Eid after the Eid prayer and plan a visit to his family",
+  "tip": "To ʿīdak mubārak 'happy Eid' (to a man) the reply is min il-ʿāydīn wil-fāyzīn. ʿasākum min ʿuwwādah is answered with the same words. Participles again: ummi msawwya ghada 'my mum's made lunch'.",
+  "grammar": "recycle: participles (msawwya) and the b- future",
+  "dialogue": [
+   [
+    "A",
+    "عيدك مبارك يا سالم!",
+    "ʿīdak mubārak yā Sālim!",
+    "Happy Eid, Sālim!"
+   ],
+   [
+    "B",
+    "من العايدين والفايزين! عساكم من عواده",
+    "min il-ʿāydīn wil-fāyzīn! ʿasākum min ʿuwwādah",
+    "And to you (lit. may you be among those who return and win)! Happy Eid to you all."
+   ],
+   [
+    "A",
+    "عساكم من عواده. صليت العيد؟",
+    "ʿasākum min ʿuwwādah. ṣallēt il-ʿīd?",
+    "Happy Eid to you too. Did you go to the Eid prayer?"
+   ],
+   [
+    "B",
+    "هيه، في المسجد اللي يم شقتي. كان زحمة!",
+    "hē, fi l-masjid illi yamm shiggti. kān zaḥma!",
+    "Yes, at the mosque near my flat. It was packed!"
+   ],
+   [
+    "A",
+    "تعال البيت، الأهل كلهم هناك. أمي مسوية غدا",
+    "taʿāl il-bēt, il-ahal killhum hnāk. ummi msawwya ghada",
+    "Come over to ours, the whole family's there. My mum's made lunch."
+   ],
+   [
+    "B",
+    "إن شاء الله. وعيال عمك، أعطيهم عيدية؟",
+    "in shāʼ allāh. w ʿyāl ʿammak, aʿṭīhum ʿīdiyya?",
+    "Sure. And your cousins, should I give them Eid money?"
+   ],
+   [
+    "A",
+    "إذا تبي، بس مب لازم. أكيد بيستانسون!",
+    "idha tabi, bas mub lāzim. akīd biyistānsūn!",
+    "If you like, but you don't have to. They'll love it, for sure!"
+   ],
+   [
+    "B",
+    "زين، بعطي كل واحد عشرين درهم",
+    "zēn, baʿṭi kill wāḥid ʿishrīn dirham",
+    "OK, I'll give each of them twenty dirhams."
+   ]
+  ],
+  "items": [
+   [
+    "عيدك مبارك",
+    "ʿīdak mubārak",
+    "happy Eid (to a man)",
+    "عيد مبارك",
+    "to a woman: ʿīdich mubārak; to a group: ʿīdkum mubārak; the reply is min il-ʿāydīn wil-fāyzīn"
+   ],
+   [
+    "من العايدين والفايزين",
+    "min il-ʿāydīn wil-fāyzīn",
+    "and to you (the reply to ʿīdak mubārak; lit. among those who return and win)",
+    "من العائدين والفائزين",
+    "also said on its own as an Eid wish"
+   ],
+   [
+    "صليت العيد؟",
+    "ṣallēt il-ʿīd?",
+    "did you go to the Eid prayer? (to a man)",
+    "هل صليت صلاة العيد؟",
+    "to a woman: ṣallēti l-ʿīd? (صليتي العيد؟)"
+   ],
+   [
+    "مسوية غدا",
+    "msawwya ghada",
+    "(she's) made lunch",
+    "أعدت الغداء",
+    "a man: msawwi ghada (مسوي غدا)"
+   ],
+   [
+    "عيدية",
+    "ʿīdiyya",
+    "Eid money (given to children)",
+    "عيدية",
+    ""
+   ],
+   [
+    "أعطيهم",
+    "aʿṭīhum",
+    "I give them; shall I give them?",
+    "أعطيهم",
+    "I give him: aʿṭīh (أعطيه)"
+   ],
+   [
+    "بيستانسون",
+    "biyistānsūn",
+    "they'll love it, they'll be happy",
+    "سيفرحون",
+    "he'll love it: biyistānis (بيستانس)"
+   ],
+   [
+    "بعطي",
+    "baʿṭi",
+    "I'll give",
+    "سأعطي",
+    ""
+   ],
+   [
+    "تعال البيت",
+    "taʿāl il-bēt",
+    "come over (to our house) (to a man)",
+    "تعال إلى البيت",
+    "to a woman: taʿāli l-bēt (تعالي البيت)"
+   ]
+  ],
+  "culture": "Eid al-Fitr starts with the Eid prayer, usually shortly after sunrise. Families then have breakfast together and go round visiting relatives and friends, where guests get Arabic coffee and dates and sweets such as luqaimat. Many people wear something new, and children get ʿīdiyya, a little money from parents, grandparents and older relatives."
+ },
+ {
+  "id": "s3u074",
+  "stage": 3,
+  "title": "Friday prayer",
+  "goal": "Arrange to go to the Friday prayer with Sēf and ask about the time and the sermon",
+  "tip": "Friday plans use the b- future: bitṣalli wiyyāna? 'will you pray with us?', batsabbaḥ 'I'll have a shower', bakūn ʿindak 'I'll be at yours'. Headless illi again: illi yiyi mitʼakhkhir tfūtah il-khuṭba 'whoever comes late misses the sermon'.",
+  "grammar": "recycle: the b- future and headless illi",
+  "dialogue": [
+   [
+    "A",
+    "اليوم الجمعة. بتصلي ويانا في المسجد الكبير؟",
+    "il-yōm il-jumʿa. bitṣalli wiyyāna fi l-masjid il-kbīr?",
+    "It's Friday today. Will you pray with us at the big mosque?"
+   ],
+   [
+    "B",
+    "أكيد. صلاة الجمعة الساعة كم الحين؟",
+    "akīd. ṣalāt il-jumʿa s-sāʿa cham il-ḥīn?",
+    "Definitely. What time is the Friday prayer these days?"
+   ],
+   [
+    "A",
+    "وحدة إلا ربع، في كل الإمارات. غيروا الوقت",
+    "waḥda illa rubʿ, fi kill il-Imārāt. ghayyaraw il-wagt",
+    "Quarter to one, all over the Emirates. They changed the time."
+   ],
+   [
+    "B",
+    "زين. والخطبة قبل الصلاة، صح؟",
+    "zēn. w il-khuṭba gabil iṣ-ṣalā, ṣaḥḥ?",
+    "OK. And the sermon's before the prayer, right?"
+   ],
+   [
+    "A",
+    "هيه. واللي ييي متأخر تفوته الخطبة",
+    "hē. w illi yiyi mitʼakhkhir tfūtah il-khuṭba",
+    "Yes. And whoever comes late misses the sermon."
+   ],
+   [
+    "B",
+    "عيل بتسبح وبلبس، وبكون عندك الساعة ثنعش",
+    "ʿayal batsabbaḥ w balbas, w bakūn ʿindak is-sāʿa thnaʿash",
+    "Then I'll have a shower and get dressed, and I'll be at yours at twelve."
+   ],
+   [
+    "A",
+    "زين. ولا تنسى، التلفون على الصامت وقت الخطبة",
+    "zēn. w la tinsa, it-tilifōn ʿala ṣ-ṣāmit wagt il-khuṭba",
+    "OK. And don't forget: phone on silent during the sermon."
+   ],
+   [
+    "B",
+    "أكيد. وبعد الصلاة، الغدا علي",
+    "akīd. w baʿd iṣ-ṣalā, il-ghada ʿalay",
+    "Sure. And after the prayer, lunch is on me."
+   ]
+  ],
+  "items": [
+   [
+    "صلاة الجمعة",
+    "ṣalāt il-jumʿa",
+    "the Friday prayer",
+    "صلاة الجمعة",
+    "relaxed speech: ṣalāt il-yimʿa"
+   ],
+   [
+    "الخطبة",
+    "il-khuṭba",
+    "the sermon (at the Friday prayer)",
+    "الخطبة",
+    "the same letters also spell il-khiṭba 'the engagement'"
+   ],
+   [
+    "بتصلي ويانا؟",
+    "bitṣalli wiyyāna?",
+    "will you pray with us? (to a man)",
+    "هل ستصلي معنا؟",
+    "to a woman: bitṣallīn wiyyāna? (بتصلين ويانا؟)"
+   ],
+   [
+    "غيروا الوقت",
+    "ghayyaraw il-wagt",
+    "they changed the time",
+    "غيروا الوقت",
+    ""
+   ],
+   [
+    "تفوته الخطبة",
+    "tfūtah il-khuṭba",
+    "he misses the sermon",
+    "تفوته الخطبة",
+    "you'll miss it: bitfūtak (بتفوتك)"
+   ],
+   [
+    "بتسبح",
+    "batsabbaḥ",
+    "I'll have a shower",
+    "سأستحم",
+    ""
+   ],
+   [
+    "بكون عندك",
+    "bakūn ʿindak",
+    "I'll be at yours, I'll be at your place (to a man)",
+    "سأكون عندك",
+    "to a woman: bakūn ʿindich (بكون عندج)"
+   ],
+   [
+    "وقت الخطبة",
+    "wagt il-khuṭba",
+    "during the sermon",
+    "وقت الخطبة",
+    ""
+   ],
+   [
+    "الغدا علي",
+    "il-ghada ʿalay",
+    "lunch is on me",
+    "الغداء على حسابي",
+    ""
+   ]
+  ],
+  "culture": "Since January 2026 the Friday sermon and prayer start at 12:45 pm in every mosque in the UAE; from 2022 they started at 1:15 pm. The UAE weekend is Saturday and Sunday, so Friday is a working day for many people. The sermon comes first, and worshippers are urged to arrive early so they don't miss it."
+ },
+ {
+  "id": "s3u075",
+  "stage": 3,
+  "title": "Sad news",
+  "goal": "Offer Sēf your condolences when his father's uncle dies, and ask about the ʿazā",
+  "tip": "When you hear of a death, say allāh yirḥamah 'God have mercy on him' (the reply is āmīn), and to the family ʿaẓẓam allāh ajrakum; they answer ajrana w ajrakum. Reported speech again: simaʿt inn ʿamm ubūk twaffa 'I heard your dad's uncle passed away'.",
+  "grammar": "recycle: reported speech (simaʿt inn) and kān + adjective",
+  "dialogue": [
+   [
+    "B",
+    "سيف، سمعت إن عم أبوك توفى. الله يرحمه",
+    "Sēf, simaʿt inn ʿamm ubūk twaffa. allāh yirḥamah",
+    "Sēf, I heard your dad's uncle passed away. God have mercy on him."
+   ],
+   [
+    "A",
+    "آمين. هيه، البارحة بالليل. كان مريض من زمان",
+    "āmīn. hē, il-bārḥa bil-lēl. kān marīẓ min zamān",
+    "Amen. Yes, last night. He'd been ill for a long time."
+   ],
+   [
+    "B",
+    "إنا لله وإنا إليه راجعون. عظم الله أجركم",
+    "innā lillāhi wa innā ilayhi rājiʿūn. ʿaẓẓam allāh ajrakum",
+    "We belong to God and to Him we return. May God reward you all (in your loss)."
+   ],
+   [
+    "A",
+    "أجرنا وأجركم. الله يخليك يا سالم",
+    "ajrana w ajrakum. allāh ykhallīk yā Sālim",
+    "And you too. Thank you, Sālim."
+   ],
+   [
+    "B",
+    "وين العزا؟ ودي أييكم",
+    "wēn il-ʿazā? widdi ayīkum",
+    "Where's the ʿazā? I'd like to come and see you."
+   ],
+   [
+    "A",
+    "في بيتهم في الشارقة، ثلاث أيام بالليل",
+    "fi bēt-hum fi sh-Shārja, thalāth ayyām bil-lēl",
+    "At their house in Sharjah, for three days, in the evenings."
+   ],
+   [
+    "B",
+    "إن شاء الله بيي الليلة. الله يصبركم",
+    "in shāʼ allāh bayi l-lēla. allāh yṣabbirkum",
+    "I'll come tonight, God willing. May God give you all patience."
+   ],
+   [
+    "A",
+    "آمين يا رب. نشوفك الليلة",
+    "āmīn yā rabb. nshūfak il-lēla",
+    "Amen. See you tonight."
+   ]
+  ],
+  "items": [
+   [
+    "الله يرحمه",
+    "allāh yirḥamah",
+    "God have mercy on him (said whenever you mention someone who has died)",
+    "رحمه الله",
+    "about a woman: allāh yirḥamha (الله يرحمها); the reply is āmīn"
+   ],
+   [
+    "عظم الله أجركم",
+    "ʿaẓẓam allāh ajrakum",
+    "my condolences (to the family; lit. may God make your reward great)",
+    "عظم الله أجركم",
+    "to one man: ʿaẓẓam allāh ajrak; to one woman: ʿaẓẓam allāh ajrich; the reply is ajrana w ajrakum"
+   ],
+   [
+    "أجرنا وأجركم",
+    "ajrana w ajrakum",
+    "and you too (the reply to ʿaẓẓam allāh ajrakum; lit. our reward and yours)",
+    "أجرنا وأجركم",
+    "to one man: ajrana w ajrak (أجرنا وأجرك); to one woman: ajrana w ajrich (أجرنا وأجرج)"
+   ],
+   [
+    "إنا لله وإنا إليه راجعون",
+    "innā lillāhi wa innā ilayhi rājiʿūn",
+    "we belong to God and to Him we return (said on hearing of a death)",
+    "إنا لله وإنا إليه راجعون",
+    ""
+   ],
+   [
+    "توفى",
+    "twaffa",
+    "he passed away",
+    "توفي",
+    "she passed away: twaffat (توفت); the plain word for 'died' is māt (مات)"
+   ],
+   [
+    "كان مريض من زمان",
+    "kān marīẓ min zamān",
+    "he'd been ill for a long time",
+    "كان مريضًا منذ زمن",
+    ""
+   ],
+   [
+    "العزا",
+    "il-ʿazā",
+    "the ʿazā (where the family receive condolences)",
+    "العزاء",
+    "you'll see written العزاء"
+   ],
+   [
+    "الله يصبركم",
+    "allāh yṣabbirkum",
+    "may God give you (all) patience",
+    "صبركم الله",
+    "to one man: allāh yṣabbrak (الله يصبرك); to one woman: allāh yṣabbrich; the reply is āmīn"
+   ],
+   [
+    "ودي أييكم",
+    "widdi ayīkum",
+    "I'd like to come and see you (all)",
+    "أود أن آتي إليكم",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s3u076",
+  "stage": 3,
+  "title": "At the ʿazā",
+  "goal": "Give your condolences to Bū Rāshid at the family's ʿazā, sit a while and take your leave",
+  "tip": "At the ʿazā, say ʿaẓẓam allāh ajrakum to the family. As you leave they may say maʼjūr 'God reward you (for coming)'; answer w iyyāk 'and you too'. kān + a present verb means 'used to': kān ysāʿid il-kill 'he used to help everyone'.",
+  "grammar": "recycle: kān + present verb 'used to', reported speech, headless illi",
+  "dialogue": [
+   [
+    "B",
+    "عظم الله أجركم يا عمي",
+    "ʿaẓẓam allāh ajrakum yā ʿammi",
+    "May God reward you all (in your loss), uncle."
+   ],
+   [
+    "A",
+    "أجرنا وأجركم. حياك الله يا ولدي، تفضل اقعد",
+    "ajrana w ajrakum. ḥayyāk allāh yā wildi, tfaẓẓal igʿid",
+    "And you too. Welcome, son, please sit down."
+   ],
+   [
+    "B",
+    "الله يحييك. الله يرحمه، سيف قال لي إنه كان يساعد الكل",
+    "allāh yḥayyīk. allāh yirḥamah, Sēf gāl-li innah kān ysāʿid il-kill",
+    "Thank you. God have mercy on him. Sēf told me he used to help everyone."
+   ],
+   [
+    "A",
+    "آمين. هيه والله، اللي يعرفه ما ينساه",
+    "āmīn. hē wallāh, illi yaʿarfah ma yinsāh",
+    "Amen. Yes, truly. Anyone who knows him never forgets him."
+   ],
+   [
+    "B",
+    "عن إذنك يا عمي، لازم أمشي. الله يصبركم",
+    "ʿan idhnak yā ʿammi, lāzim amshi. allāh yṣabbirkum",
+    "Excuse me, uncle, I have to go. May God give you all patience."
+   ],
+   [
+    "A",
+    "آمين. مأجور يا ولدي، الله يحفظك",
+    "āmīn. maʼjūr yā wildi, allāh yiḥfaẓak",
+    "Amen. God reward you (for coming), son. God keep you."
+   ],
+   [
+    "B",
+    "وإياك يا عمي",
+    "w iyyāk yā ʿammi",
+    "And you too, uncle."
+   ]
+  ],
+  "items": [
+   [
+    "مأجور",
+    "maʼjūr",
+    "God reward you (to someone who has done a good deed, e.g. come to an ʿazā)",
+    "جزاك الله خيرًا",
+    "to a woman: maʼjūra (مأجورة); to a group: maʼjūrīn (مأجورين); the reply is w iyyāk"
+   ],
+   [
+    "وإياك",
+    "w iyyāk",
+    "and you too (the reply to maʼjūr and other blessings) (to a man)",
+    "وإياك",
+    "to a woman: w iyyāch (وإياج); to a group: w iyyākum (وإياكم)"
+   ],
+   [
+    "تفضل اقعد",
+    "tfaẓẓal igʿid",
+    "please sit down (to a man)",
+    "تفضل اجلس",
+    "to a woman: tfaẓẓali igʿidi (تفضلي اقعدي)"
+   ],
+   [
+    "كان يساعد الكل",
+    "kān ysāʿid il-kill",
+    "he used to help everyone",
+    "كان يساعد الجميع",
+    "she used to help: kānat tsāʿid (كانت تساعد)"
+   ],
+   [
+    "اللي يعرفه ما ينساه",
+    "illi yaʿarfah ma yinsāh",
+    "anyone who knows him never forgets him",
+    "من يعرفه لا ينساه",
+    ""
+   ],
+   [
+    "لازم أمشي",
+    "lāzim amshi",
+    "I have to go, I must be off",
+    "يجب أن أذهب",
+    ""
+   ],
+   [
+    "الله يحفظك",
+    "allāh yiḥfaẓak",
+    "God keep you (a warm goodbye or thanks) (to a man)",
+    "حفظك الله",
+    "to a woman: allāh yiḥfaẓich (الله يحفظج)"
+   ],
+   [
+    "هيه والله",
+    "hē wallāh",
+    "yes, truly; absolutely",
+    "نعم والله",
+    "Kuwait: ēh wallāh"
+   ]
+  ],
+  "culture": "An Emirati ʿazā lasts up to three days after the burial, often in a majlis at the family home, and women mourners sit separately. A man says as-salāmu ʿalaykum as he comes in, shakes hands with everyone seated, says ʿaẓẓam allāh ajrak to the relatives and sits for a while. Talk stays quiet and respectful, and the dead are spoken of well."
+ }
+]
