@@ -851,8 +851,10 @@ function rebuild(){
   ITEMS={}; ITEM_UNIT={}; UNITS=[];
   const addUnit=(u,gen)=>{ UNITS.push(u); u.items.forEach((it,i)=>{ const id=u.id+"."+i; ITEMS[id]=Object.assign({id,unit:u.id,stage:u.stage,gen},it); ITEM_UNIT[id]=u.id; });
     u.dialogue.forEach((l,i)=>{ const n=tilesOf(l.ar).length; if(n<2||n>8) return; const id=u.id+".s"+i; ITEMS[id]={id,unit:u.id,stage:"s"+u.stage,sentence:true,ar:l.ar,tr:l.tr,en:l.en}; ITEM_UNIT[id]=u.id; }); };
-  COURSE.forEach(u=>addUnit({id:u.id,stage:u.stage,title:u.title,goal:u.goal,tip:u.tip,
-    dialogue:u.dialogue.map(([who,ar,tr,en])=>({who,ar,tr,en})),items:u.items.map(([ar,tr,en,msa,note])=>({ar,tr,en,msa,note}))},false));
+  // receptive items (from B2) are learnt for understanding: recognised and heard in reviews, never asked for from English
+  COURSE.forEach(u=>{ const rec=new Set(Array.isArray(u.receptive)?u.receptive:[]);
+    addUnit({id:u.id,stage:u.stage,title:u.title,goal:u.goal,tip:u.tip,grammar:u.grammar||"",culture:u.culture||"",task:u.task||"",
+      dialogue:u.dialogue.map(([who,ar,tr,en])=>({who,ar,tr,en})),items:u.items.map(([ar,tr,en,msa,note],i)=>({ar,tr,en,msa,note,receptive:rec.has(i)}))},false); });
   S.gen.forEach(u=>{ if(u.stage===6) addUnit(u,true); }); // stages 1-5 are written in advance; ai lessons are only for after them
   MSA.forEach(([ar,tr,en,gulf],i)=>{ const id="m."+i; ITEMS[id]={id,unit:"msa",stage:"msa",msaTrack:true,ar,tr,en,gulf:gulf||""}; ITEM_UNIT[id]="msa"; });
   S.custom.forEach(c=>{ ITEMS[c.id]=Object.assign({unit:"custom",stage:"custom"},c); ITEM_UNIT[c.id]="custom"; });
@@ -1171,8 +1173,10 @@ function openLesson(u,onDone){
       sayQueue(parts,{onPart:(i,p)=>{ lines.forEach(x=>x.classList.remove("playing")); if(p.text) lines[p.i].classList.add("playing"); },onDone:()=>lines.forEach(x=>x.classList.remove("playing"))}); };
     const tog=(t,get,set)=>{ const b=el("button",{className:"btn small",type:"button","aria-pressed":"false",textContent:t}); b.onclick=()=>{ set(!get()); b.setAttribute("aria-pressed",String(get())); }; return b; };
     const reveal=el("button",{className:"btn small",type:"button",textContent:"Reveal English"}); reveal.onclick=()=>{ ens.forEach(e=>e.hidden=false); reveal.remove(); };
-    body.append(stepper(0),el("h2",{className:"title",textContent:u.title}),el("p",{className:"lede",textContent:"Listen first and work out what's happening. Tap any line to hear it again. Then reveal the English and check."}),
+    body.append(stepper(0),el("h2",{className:"title",textContent:u.title}),u.grammar?el("p",{},el("span",{className:"chip next",textContent:"Grammar: "+u.grammar})):null,
+      el("p",{className:"lede",textContent:"Listen first and work out what's happening. Tap any line to hear it again. Then reveal the English and check."}),
       el("div",{className:"row"},playAll,tog("Slow",()=>slow,v=>slow=v),tog("Shadow",()=>shadow,v=>shadow=v),reveal),dl,el("p",{className:"notice",textContent:"Tip: "+u.tip}),
+      u.culture?el("p",{className:"notice",textContent:"Culture: "+u.culture}):null,
       el("div",{className:"actions page"},el("button",{className:"btn primary wide",type:"button",textContent:"Learn the phrases →",onclick:step2})));
   };
   // 2. the new phrases, one at a time: hear, say, move on
@@ -1181,7 +1185,7 @@ function openLesson(u,onDone){
     const showItem=()=>{
       f.progress(1+k,steps); body.textContent=""; const it=u.items[k];
       const more=el("details",{className:"more"},el("summary",{textContent:"More practice"}),el("div",{className:"row"},shadowBtn(it.ar),recordWidget(it.ar)));
-      const card=el("div",{className:"stage"},el("p",{className:"mode",textContent:`New phrase ${k+1} of ${u.items.length}`}),bigAr(it.ar),
+      const card=el("div",{className:"stage"},el("p",{className:"mode",textContent:`New phrase ${k+1} of ${u.items.length}`+(it.receptive?" · to understand":"")}),bigAr(it.ar),
         el("div",{className:"row center"},slowBtn(it.ar),nativeLink(it)),
         el("p",{className:"tr",textContent:it.tr}),el("p",{className:"en",textContent:it.en}),
         it.msa&&normalizeArabic(it.msa)!==normalizeArabic(it.ar)?el("p",{className:"msa"},"In fuṣḥā: ",arSpan(it.msa)):null,
@@ -1218,6 +1222,7 @@ function openLesson(u,onDone){
       addSentenceCards(u.id,99); logActivity(u.items.length); save(); flush(); refresh(); f.progress(steps,steps);
       body.append(el("div",{className:"stage"},el("p",{className:"mode",textContent:"Lesson done"}),el("p",{className:"en",textContent:`${right} of ${u.items.length} right`}),
         el("p",{className:"tag",textContent:first?"These phrases are now in your reviews: missed ones come back in a minute, the rest in ten minutes, then at growing gaps. The dialogue lines arrive tomorrow as sentences to build.":"Good refresher. Your review schedule for these phrases hasn't changed."}),
+        u.task?el("div",{className:"notice",style:"text-align:left"},el("b",{textContent:"This week, out in the real world: "}),u.task,el("p",{className:"tag",style:"margin-top:6px",textContent:"Optional, and not part of today's 30 minutes. Real Gulf listening and talking is what takes you past what a course can."})):null,
         el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Continue",onclick:onDone||(()=>show(currentTab))}))));
       announce("Lesson done");
     };
@@ -1292,7 +1297,7 @@ function startReview(onDone){
       return finish();
     }
     const id=queue.shift(); shown=id; const it=ITEMS[id]; n++; f.progress(n-1,total);
-    const card=S.cards[id]; const mode=cardMode(card,it.msaTrack,it.sentence);
+    const card=S.cards[id]; const mode=cardMode(card,it.msaTrack||it.receptive,it.sentence);
     const stage=el("div",{className:"stage"}); f.body.append(stage);
     const ans=el("div",{className:"stack",hidden:true,style:"justify-items:center;width:100%"});
     const acts=el("div",{className:"actions"});

@@ -17,7 +17,7 @@ TR_OK = re.compile(r"^[a-zA-Zāīūēōḥṣṭẓḍʿʼ'’ĀĪŪĒŌḤṢ�
 # words that give away fuṣḥā or another dialect inside a gulf line (warnings: some have rare legitimate gulf uses)
 MSA = {"سوف", "لن", "لم", "ليس", "ليست", "هل", "الذي", "التي", "الذين", "ماذا", "لماذا", "اريد", "الان", "انني", "لكي", "حسنا", "ايضا", "جدا"}
 OTHER = {"عايز", "عاوز", "دلوقتي", "ازيك", "بدي", "بدك", "بدها", "هلق", "هيك", "كتير", "منيح", "كويس", "فين", "بتاع", "اوي", "حاجه", "عشان ايه", "دي", "ده", "كده", "هيدا", "هاد", "شنو هاد", "تبغى", "ابغى", "ايش"}
-FIELDS = {"id", "stage", "title", "goal", "tip", "dialogue", "items", "grammar", "culture", "task"}
+FIELDS = {"id", "stage", "title", "goal", "tip", "dialogue", "items", "grammar", "culture", "task", "receptive"}
 
 def units_of(n):
     out = []
@@ -51,6 +51,7 @@ def main():
             for k, mx in (("grammar", 120), ("culture", 400), ("task", 400)):
                 if k in u and not (isinstance(u[k], str) and 0 < len(u[k]) <= mx): E(f"{k} empty or over {mx} chars")
             dl = u.get("dialogue"); it = u.get("items")
+            if "receptive" in u and not (isinstance(u["receptive"], list) and all(isinstance(i, int) and 0 <= i < len(it or []) for i in u["receptive"]) and len(set(u["receptive"])) == len(u["receptive"])): E("receptive must list item indexes")
             if not (isinstance(dl, list) and 3 <= len(dl) <= 10): E("dialogue must have 3-10 lines"); dl = []
             if not (isinstance(it, list) and 5 <= len(it) <= 9): E("items must be 5-9"); it = []
             for i, l in enumerate(dl):
