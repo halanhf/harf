@@ -570,7 +570,7 @@
     "il-jār",
     "the neighbour",
     "الجار",
-    "my neighbour: jāri (جاري); our neighbour: jārna"
+    "my neighbour: jāri (جاري); UAE also: il-yār (اليار); you've met jārna (جارنا) 'our neighbour'"
    ],
    [
     "الحمار",
@@ -731,8 +731,8 @@
   "stage": 3,
   "title": "Checkpoint 3.7: a surprise lunch for Ḥamad",
   "goal": "Checkpoint (stage review): at the office, tell Maryam that a colleague is leaving, and plan a surprise lunch with her",
-  "tip": "Stage 3 review, and now you say it: news with gāl-li innah + a participle (ṭāliʿ), ma adri wēn, lō ana makānah, chān gaʿadt 'if I were him, I'd stay', illi + -ah (illi yḥibbah), maḥjūz 'booked up', ittaṣalt, and idha + past + b- (idha ma ligēna, binsawwīh).",
-  "grammar": "checkpoint 3.7 (stage review): participle, reported speech, ma adri, lō … chān, illi, maḥjūz, ittaṣalt, idha",
+  "tip": "Stage 3 review, and now you say it: news with gāl-li innah + a participle (ṭāliʿ), ma adri wēn biyrūḥ, lō ana makānah, chān gaʿadt 'if I were him, I'd stay', illi + -ah (illi yḥibbah), maḥjūz 'booked up', ittaṣalt, and to a woman khallīni attaṣil 'let me ring'.",
+  "grammar": "checkpoint 3.7 (stage review): participle, reported speech, ma adri, lō … chān, illi, maḥjūz, ittaṣalt, khalli + verb",
   "dialogue": [
    [
     "B",
@@ -742,15 +742,15 @@
    ],
    [
     "A",
-    "تصدق؟ ليش؟ لقى شغل ثاني؟",
-    "tṣaddig? lēsh? liga shughul thāni?",
-    "Can you believe it? Why? Has he found another job?"
+    "مب معقول! ليش؟ لقى شغل ثاني؟",
+    "mub maʿgūl! lēsh? liga shughul thāni?",
+    "No way! Why? Has he found another job?"
    ],
    [
     "B",
-    "هيه، بس ما أدري وين. لو أنا مكانه، جان قعدت!",
-    "hē, bas ma adri wēn. lō ana makānah, chān gaʿadt!",
-    "Yes, but I don't know where. If I were him, I'd stay!"
+    "هيه، بس ما أدري وين بيروح. لو أنا مكانه، جان قعدت!",
+    "hē, bas ma adri wēn biyrūḥ. lō ana makānah, chān gaʿadt!",
+    "Yes, but I don't know where he's going. If I were him, I'd stay!"
    ],
    [
     "A",
@@ -772,9 +772,9 @@
    ],
    [
     "B",
-    "اتصلت فيهم الصبح! وإذا ما لقينا، بنسويه في المكتب",
-    "ittaṣalt fīhum iṣ-ṣubḥ! w idha ma ligēna, binsawwīh fi l-maktab",
-    "I rang them this morning! And if we don't get one, we'll do it at the office."
+    "اتصلت فيهم من قبل وما لقيت. خليني أتصل مرة ثانية",
+    "ittaṣalt fīhum min gabil w ma ligēt. khallīni attaṣil marra thānya",
+    "I've rung them before and couldn't get one. Let me ring again."
    ],
    [
     "A",
@@ -785,11 +785,11 @@
   ],
   "items": [
    [
-    "سمعتي؟",
-    "simaʿti?",
-    "have you heard? did you hear? (to a woman)",
-    "هل سمعتِ؟",
-    "to a man: simaʿt? (سمعت؟)"
+    "جان قعدت",
+    "chān gaʿadt",
+    "I'd stay, I'd have stayed",
+    "لبقيت",
+    "after lō: lō ana makānah, chān gaʿadt = if I were him, I'd stay"
    ],
    [
     "لقى شغل",
@@ -806,11 +806,11 @@
     "if I were her: lō ana makānha (لو أنا مكانها)"
    ],
    [
-    "اتصلت فيهم",
-    "ittaṣalt fīhum",
-    "I rang them, I called them; you rang them (to a man)",
-    "اتصلت بهم",
-    "to a woman: ittaṣalti fīhum (اتصلتي فيهم)"
+    "خليني أتصل",
+    "khallīni attaṣil",
+    "let me ring, let me call (to a woman)",
+    "دعيني أتصل",
+    "to a man: khallni attaṣil (خلني أتصل)"
    ],
    [
     "قبل لا يطلع",
@@ -833,7 +833,7 @@
   "stage": 3,
   "title": "B1 exit: chatting with a stranger",
   "goal": "B1 exit: at a café, an Emirati at the next table hears you order in Arabic and starts chatting; talk about yourself, Dubai and football",
-  "tip": "Unprepared talk runs on short answers with a reason, then a question back: b-raʼyi n-nās, lann kill illi shift-hum ṭayybīn… w inta? Add a plan (idha ligēt shughul, bagʿid hni), and agree with ṣidagt wallāh! 'too true!'.",
+  "tip": "Unprepared talk runs on short answers with a reason, then a question back: b-raʼyi n-nās, lann kill illi shift-hum ṭayybīn… w inta? Add a plan: idha ligēt shughul, bagʿid hni. When someone agrees with you, you'll hear ṣidagt wallāh! 'too true!'.",
   "grammar": "B1 exit: unprepared conversation on a familiar topic (opinion + reason, idha, illi, ma ʿād)",
   "dialogue": [
    [
@@ -862,9 +862,9 @@
    ],
    [
     "A",
-    "حلو! وشو أحسن شي في دبي برأيك؟",
-    "ḥilu! w shu aḥsan shay fi Dbayy b-raʼyak?",
-    "Nice! And what's the best thing about Dubai, in your opinion?"
+    "حلو! شو رأيك، شو أحسن شي في دبي؟",
+    "ḥilu! shu raʼyak, shu aḥsan shay fi Dbayy?",
+    "Nice! What do you think, what's the best thing about Dubai?"
    ],
    [
     "B",
@@ -874,13 +874,13 @@
    ],
    [
     "A",
-    "صدقت والله! وتحب الكورة؟ تشجع أي فريق؟",
+    "صدقت والله! وتحب الكورة؟ تشجّع أي فريق؟",
     "ṣidagt wallāh! w tḥibb il-kūra? tshajjiʿ ay farīg?",
     "Too true! And do you like football? Which team do you support?"
    ],
    [
     "B",
-    "أشجع فريق من لندن، بس ما عاد أشوف الكورة وايد. وانت؟",
+    "أشجّع فريق من لندن، بس ما عاد أشوف الكورة وايد. وانت؟",
     "ashajjiʿ farīg min Landan, bas ma ʿād ashūf il-kūra wāyid. w inta?",
     "I support a London team, but I don't watch football much any more. And you?"
    ]
@@ -922,11 +922,11 @@
     "to a woman: tḥibbīn il-kūra? (تحبين الكورة؟)"
    ],
    [
-    "أشجع",
+    "أشجّع",
     "ashajjiʿ",
     "I support (a team)",
     "أشجع",
-    "you support: tshajjiʿ (تشجع) to a man, tshajjʿīn (تشجعين) to a woman; a team: farīg (فريق)"
+    "you support: tshajjiʿ (تشجّع) to a man, tshajjʿīn (تشجّعين) to a woman; a team: farīg (فريق)"
    ]
   ]
  },
@@ -935,7 +935,7 @@
   "stage": 3,
   "title": "B1 exit: my first day at work",
   "goal": "B1 exit: a year into your internship, tell Maryam and the team the story of your first day at the office",
-  "tip": "Tell it in order: the scene with kān (ma kint aʿarf aḥad; kint gāʿid asmaʿ 'I was sitting there listening'), the turn with fajʼa, what started with gām (gimt arjif), and the end with bil-akhīr. To a woman, 'do you remember?' is tidhkrīn?",
+  "tip": "Tell it in order: the scene with kān (ma kint aʿarf aḥad, wala kint adri shu l-mafrūẓ asawwi; kint gāʿid asmaʿ 'I was sitting there listening'), the turn with fajʼa, what started with gām (gimt arjif), and the end with bil-akhīr. To a woman, 'do you remember?' is tidhkrīn?",
   "grammar": "B1 exit: narrate an experience (lamma, kān gāʿid + verb, fajʼa, gām + verb, bil-akhīr)",
   "dialogue": [
    [
@@ -958,9 +958,9 @@
    ],
    [
     "B",
-    "لما ييت، ما كنت أعرف أحد، وكنت خايف وايد",
-    "lamma yīt, ma kint aʿarf aḥad, w kint khāyif wāyid",
-    "When I came, I didn't know anyone, and I was really nervous."
+    "لما ييت، ما كنت أعرف أحد، ولا كنت أدري شو المفروض أسوي",
+    "lamma yīt, ma kint aʿarf aḥad, wala kint adri shu l-mafrūẓ asawwi",
+    "When I came, I didn't know anyone, and I didn't know what I was supposed to do."
    ],
    [
     "A",
