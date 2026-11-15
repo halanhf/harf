@@ -449,7 +449,7 @@
    [
     "B",
     "لو سمحت، وين محطة المترو؟",
-    "law samaḥt, wēn maḥaṭṭat il-mitro?",
+    "law samaḥt, wēn maḥaṭṭat il-mitrō?",
     "Excuse me, where's the metro station?"
    ],
    [
@@ -486,7 +486,7 @@
   "items": [
    [
     "المترو",
-    "il-mitro",
+    "il-mitrō",
     "the metro",
     "المترو",
     ""
@@ -496,7 +496,7 @@
     "maḥaṭṭa",
     "station",
     "محطة",
-    "the metro station: maḥaṭṭat il-mitro"
+    "the metro station: maḥaṭṭat il-mitrō"
    ],
    [
     "بعيد",
@@ -554,19 +554,19 @@
   "stage": 1,
   "title": "Up or down? On the metro",
   "goal": "Find the platform and the tickets with Sēf, ask where to get off and sit next to him",
-  "tip": "fōg 'up, above' and taḥt 'down, below' stand alone or go before a noun: il-mitro fōg 'the metro's upstairs', taḥt il-mōl 'under the mall'. yamm 'next to' takes endings too: yamm il-bāb 'by the door', yammi 'next to me'.",
+  "tip": "fōg 'up, above' and taḥt 'down, below' stand alone or go before a noun: il-mitrō fōg 'the metro's upstairs', taḥt il-mōl 'under the mall'. yamm 'next to' takes endings too: yamm il-bāb 'by the door', yammi 'next to me'.",
   "grammar": "prepositions of place: jiddām, wara, fōg, taḥt, yamm, barra, ṣōb + noun or ending",
   "dialogue": [
    [
     "A",
     "يلا نركب المترو",
-    "yalla nirkab il-mitro",
+    "yalla nirkab il-mitrō",
     "Come on, let's take the metro."
    ],
    [
     "B",
     "زين. المترو فوق ولّا تحت؟",
-    "zēn. il-mitro fōg walla taḥt?",
+    "zēn. il-mitrō fōg walla taḥt?",
     "OK. Is the metro upstairs or downstairs?"
    ],
    [
@@ -578,7 +578,7 @@
    [
     "B",
     "المترو مب زحمة اليوم. وين ننزل؟",
-    "il-mitro mub zaḥma l-yōm. wēn ninzil?",
+    "il-mitrō mub zaḥma l-yōm. wēn ninzil?",
     "The metro isn't crowded today. Where do we get off?"
    ],
    [
@@ -664,7 +664,7 @@
    [
     "B",
     "أنا في الطريق، في المترو. ياي الحين",
-    "ana fi ṭ-ṭarīg, fi l-mitro. yāy il-ḥīn",
+    "ana fi ṭ-ṭarīg, fi l-mitrō. yāy il-ḥīn",
     "I'm on the way, on the metro. I'm coming now."
    ],
    [
@@ -768,7 +768,7 @@
    [
     "A",
     "بالمترو أو بالتاكسي",
-    "bil-mitro aw bit-tāksi",
+    "bil-mitrō aw bit-tāksi",
     "By metro or by taxi."
    ],
    [
@@ -786,7 +786,7 @@
    [
     "B",
     "زين، المترو. المحطة ورا المول؟",
-    "zēn, il-mitro. il-maḥaṭṭa wara l-mōl?",
+    "zēn, il-mitrō. il-maḥaṭṭa wara l-mōl?",
     "OK, the metro. Is the station behind the mall?"
    ],
    [
@@ -872,7 +872,7 @@
    [
     "A",
     "هلا فيك! يايين، نحن في المترو، قريبين",
-    "hala fīk! yāyīn, niḥin fi l-mitro, garībīn",
+    "hala fīk! yāyīn, niḥin fi l-mitrō, garībīn",
     "Hi! Coming, we're on the metro, close by."
    ],
    [

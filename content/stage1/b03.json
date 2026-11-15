@@ -859,9 +859,9 @@
     "stage": 1,
     "title": "Mornings and afternoons",
     "goal": "Compare your day with a colleague's: morning, midday, afternoon, evening and night.",
-    "grammar": "Parts of the day: iṣ-ṣubḥ, iẓ-ẓuhur, il-ʿaṣr, il-lēl",
-    "tip": "Most parts of the day need no word for 'in': iṣ-ṣubḥ ashtaghil (in the morning I work), il-ʿaṣr fi l-jāmʿa (in the afternoon at the university). Night usually takes one: fi l-lēl (at night). Plans are often timed by prayers: baʿd il-maghrib.",
-    "culture": "The five prayers frame the day: il-fajr (dawn), iẓ-ẓuhur (midday), il-ʿaṣr (afternoon), il-maghrib (sunset), il-ʿisha (night). People often set times by them ('after ʿaṣr', 'before maghrib'), and the clock times move with the seasons: in Dubai, maghrib is about 5:30 pm in winter and about 7 pm in summer.",
+    "grammar": "Parts of the day: iṣ-ṣubḥ, iẓ-ẓuhur, il-ʿaṣir, il-lēl",
+    "tip": "Most parts of the day need no word for 'in': iṣ-ṣubḥ ashtaghil (in the morning I work), il-ʿaṣir fi l-jāmʿa (in the afternoon at the university). Night usually takes one: fi l-lēl (at night). Plans are often timed by prayers: baʿd il-maghrib.",
+    "culture": "The five prayers frame the day: il-fajr (dawn), iẓ-ẓuhur (midday), il-ʿaṣir (afternoon), il-maghrib (sunset), il-ʿisha (night). People often set times by them ('after ʿaṣir', 'before maghrib'), and the clock times move with the seasons: in Dubai, maghrib is about 5:30 pm in winter and about 7 pm in summer.",
     "dialogue": [
       [
         "B",
@@ -872,13 +872,13 @@
       [
         "A",
         "لا، الصبح والعصر، وأرجع متأخر. وانت؟",
-        "la, iṣ-ṣubḥ w il-ʿaṣr, w arjaʿ mitʼakhkhir. w inta?",
+        "la, iṣ-ṣubḥ w il-ʿaṣir, w arjaʿ mitʼakhkhir. w inta?",
         "No, mornings and afternoons, and I get home late. And you?"
       ],
       [
         "B",
         "أنا هني من الصبح، والعصر في الجامعة",
-        "ana hni min iṣ-ṣubḥ, w il-ʿaṣr fi l-jāmʿa",
+        "ana hni min iṣ-ṣubḥ, w il-ʿaṣir fi l-jāmʿa",
         "I'm here from the morning, and at the university in the afternoon."
       ],
       [
@@ -917,7 +917,7 @@
       ],
       [
         "العصر",
-        "il-ʿaṣr",
+        "il-ʿaṣir",
         "the late afternoon; in the afternoon",
         "العصر / عصرًا",
         "also the afternoon prayer"
