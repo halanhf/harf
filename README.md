@@ -12,7 +12,7 @@ There are two ways to run it, built from the same `index.html`:
 | AI lessons (stage 2+), stories, chat partner, sentence practice | Yes | No, they need Claude |
 | Speaking feedback | Claude dictation (Chrome or Edge on a computer or Android) | The browser's own recogniser (Chrome, Edge), plus record and compare |
 
-I use the claude.ai version day to day. The offline app is the backup plan, and it's the one anyone else can use now the repo's public.
+I use the claude.ai version day to day. The offline app is the backup plan.
 
 ## What you need
 
@@ -47,11 +47,9 @@ Always use exactly http://127.0.0.1:8000. The browser keeps progress per address
 
 ### The offline app on your phone (needs hosting)
 
-A phone can't reach your PC's `127.0.0.1`, so `docs/` has to be on the web over HTTPS. The repo's public now, so there are two free ways.
+A phone can't reach your PC's `127.0.0.1`, so `docs/` has to be on the web over HTTPS. The repo's private, so GitHub Pages would need a paid plan (or making the repo public). Cloudflare Pages is free and can deploy from a private repo.
 
-**GitHub Pages.** In the repo go to Settings, Pages, Source: **GitHub Actions**. Then Actions, **pages**, **Run workflow**. It'll be at https://halanhf.github.io/arabic-learn/. The workflow only runs by hand for now, so run it again after each change you want on the phone. One catch: all my Pages sites share that one address, so another project there could in theory mess with Harf's saved progress.
-
-**Cloudflare Pages** doesn't have that problem, and it redeploys on every push:
+**Cloudflare Pages** redeploys on every push:
 
 1. In the Cloudflare dashboard go to **Workers & Pages**, then **Create application**, **Pages**, **Connect to Git**.
 2. Pick **GitHub**. When GitHub asks which repos, choose **Only select repositories** and pick `arabic-learn`. Then **Install & Authorize** and **Begin setup**.
@@ -96,7 +94,7 @@ Open it, press **Continue** until Today says you're done. A normal day is review
 
   CI fails if `docs/` doesn't match `index.html`.
 - **claude.ai version:** republish the artifact from the new `index.html`. It keeps the same link and your progress. The page needs the `db`, `user`, `sample`, `dictation` and `downloads` capabilities, so keep them when republishing (without `downloads` the backup can only go to the clipboard).
-- **Hosted offline app:** Cloudflare redeploys on push; for GitHub Pages run the **pages** workflow again. The app loads the new version the next time it's opened online.
+- **Hosted offline app:** Cloudflare redeploys on push (if you ever use GitHub Pages instead, run the **pages** workflow again). The app loads the new version the next time it's opened online.
 - **PC install from 127.0.0.1:** start the server again, open the app once, then stop the server.
 
 Updates never touch progress. It lives in browser storage, not in the files.
