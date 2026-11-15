@@ -20,7 +20,7 @@ jobs:
       - name: installed app is up to date
         run: |
           python3 build.py
-          git diff --exit-code -- docs || { echo "docs/ is stale: run python build.py and commit"; exit 1; }
+          git diff --exit-code -- docs index.html || { echo "index.html or docs/ is stale: run python build.py and commit"; exit 1; }
           test -z "$(git status --porcelain -- docs)" || { echo "docs/ has untracked files: run python build.py and commit"; exit 1; }
       # the readme's local install command: the server answers on 127.0.0.1 with the page, worker and manifest
       - name: local server from the readme serves the app
@@ -42,7 +42,7 @@ jobs:
         shell: pwsh
         run: |
           python build.py
-          git diff --exit-code -- docs
+          git diff --exit-code -- docs index.html
           if ($LASTEXITCODE -ne 0) { throw "docs/ differs when built on windows" }
       - name: tests
         shell: pwsh
