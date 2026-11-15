@@ -35,7 +35,7 @@ For every lesson:
   sentence; lines of 2-8 words become sentence-building cards, so prefer that length. B is the learner's role.
 - Colloquial as locals speak. No fuṣḥā, no Egyptian/Levantine, no translationese, no textbook politeness.
 - Gender: "(to a man)" in the english and the woman's form in the note (or the reverse).
-- Fuṣḥā column: the MSA equivalent in Arabic script when it differs, else "".
+- Fuṣḥā column: follow STYLE §8 (the ordinary fuṣḥā equivalent; identical words are repeated; "" only for Gulf formulas, interjections, slang, loans and names with no fuṣḥā counterpart).
 - Notes: the woman's form, a Kuwaiti/Saudi variant ("Kuwait: …"), a usage warning, or "".
 
 ## Check before you finish (loop until clean)
