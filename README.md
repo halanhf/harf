@@ -25,7 +25,7 @@ I use the claude.ai version day to day. The offline app is the backup plan, and 
 ### The claude.ai version on your phone and PC
 
 1. Open the Harf artifact link on both devices, signed in to the same Claude account. (The link isn't in this repo on purpose. It's in my artifacts list on claude.ai.)
-2. **iPhone:** open the link in Safari, tap Share (or the page menu, then Share), tap **Add to Home Screen**, then **Add**. If it offers **Open as Web App**, leave that on.
+2. **iPhone:** open the link in Safari, tap Share (or the page menu, then Share), tap **Add to Home Screen**, then **Add**. If it offers **Open as Web App**, leave that on. The home screen version doesn't share Safari's sign-in, so expect to sign in to Claude once more inside it.
 3. **Android:** open the link in Chrome, tap the ⋮ menu, then **Add to home screen** (newer Chrome calls it **Install and create shortcut**).
 4. **Windows:** in Chrome, ⋮ menu, **Cast, save and share**, **Install page as app…**. In Edge, **Settings and more (…)**, **More tools**, **Apps**, **Install this site as an app**. Then right-click its taskbar icon and pin it.
 
@@ -51,7 +51,7 @@ A phone can't reach your PC's `127.0.0.1`, so `docs/` has to be on the web over 
 
 1. In the Cloudflare dashboard go to **Workers & Pages**, then **Create application**, **Pages**, **Connect to Git**.
 2. Pick **GitHub**. When GitHub asks which repos, choose **Only select repositories** and pick `arabic-learn`. Then **Install & Authorize** and **Begin setup**.
-3. Production branch: `main`. Build command: leave it blank. Build output directory: `docs`.
+3. Production branch: `main`. Leave the framework preset alone. Build command: leave it blank (Cloudflare's docs also suggest `exit 0`, which does the same). Build output directory: `docs`.
 4. **Save and Deploy**. You get an address like `https://<project-name>.pages.dev`, and every push to `main` redeploys it.
 
 Anyone with that address can open the app. That's fine: it's only the app, and progress never leaves each person's own browser.
@@ -79,7 +79,7 @@ If there's no sound, your device has no Arabic voice. The app tells you where to
 Open it, press **Continue** until Today says you're done. A normal day is reviews, one new lesson, then a role-play where you answer as B. On claude.ai there's also a story or chat step.
 
 - **Reviews:** say the answer before you reveal it, then grade yourself honestly. On a PC, Space shows the answer and 1 to 4 grade it.
-- **Leaving a lesson:** the ✕, or Android's back gesture. If you're halfway through a lesson it asks first.
+- **Leaving a lesson:** the ✕, or Android's back gesture. If you're halfway through a lesson the first back asks "Leave?" and a second back leaves.
 - **Backups:** Progress, **Export backup**, every week or so, and before you clear browser data. **Import backup** merges, and it tells you what will change before it does anything.
 - **Too many reviews after a break:** Today stops at 60 a day and spreads the rest over the next few days. New lessons pause while more than 40 are waiting.
 
@@ -93,7 +93,7 @@ Open it, press **Continue** until Today says you're done. A normal day is review
   ```
 
   CI fails if `docs/` doesn't match `index.html`.
-- **claude.ai version:** republish the artifact from the new `index.html`. It keeps the same link and your progress.
+- **claude.ai version:** republish the artifact from the new `index.html`. It keeps the same link and your progress. The page needs the `db`, `user`, `sample`, `dictation` and `downloads` capabilities, so keep them when republishing (without `downloads` the backup can only go to the clipboard).
 - **Hosted offline app:** Cloudflare redeploys on push. The app loads the new version the next time it's opened online.
 - **PC install from 127.0.0.1:** start the server again, open the app once, then stop the server.
 
@@ -118,6 +118,7 @@ Export a backup first if you might want your progress back.
 | Progress gone after adding it to an iPhone home screen | The home screen app has its own storage. Export from Safari, import in the app |
 | Progress gone on the PC install | You opened a different address or port. Use exactly http://127.0.0.1:8000 |
 | Old version still showing | Open it once while online. The installed app checks for a new version every time it opens |
+| Export backup says "Couldn't export here" | claude.ai only lets a page save files through its downloads permission. Open Harf in a web browser on claude.ai and export from there |
 | `pages` workflow fails | Pages isn't switched on, or the repo is private without GitHub Pro |
 
 ## Security and privacy
