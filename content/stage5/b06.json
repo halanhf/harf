@@ -45,9 +45,9 @@
    ],
    [
     "A",
-    "ذوقه، ما في مثله. أهلنا أيام أول كانوا يشربونه كل يوم",
-    "dhūgah, ma fī mithlah. ahalna ayyām awwal kānaw yishrabūnah kill yōm",
-    "Taste it; there's nothing like it. Our people in the old days used to drink it every day."
+    "ذوقه، ما في مثله. أهلنا في الماضي كانوا يشربونه كل يوم",
+    "dhūgah, ma fī mithlah. ahalna fi l-māẓi kānaw yishrabūnah kill yōm",
+    "Taste it; there's nothing like it. In the past our people used to drink it every day."
    ],
    [
     "B",
@@ -57,9 +57,9 @@
    ],
    [
     "A",
-    "عشان العيال ما ينسون، ويعرفون كيف كانوا أهلهم يعيشون",
-    "ʿashān il-ʿyāl ma yinsūn, w yaʿarfūn chēf kānaw ahalhum yʿīshūn",
-    "So the children don't forget, and know how their family used to live."
+    "عشان العيال ما ينسون التراث، ويعرفون كيف كانوا أهلهم يعيشون قبل النفط",
+    "ʿashān il-ʿyāl ma yinsūn it-turāth, w yaʿarfūn chēf kānaw ahalhum yʿīshūn gabil in-nafṭ",
+    "So the children don't forget the old ways, and know how their family lived before oil."
    ],
    [
     "B",
@@ -129,9 +129,9 @@
   "dialogue": [
    [
     "A",
-    "تعال شوف صقر أبوي. لا تخاف، عليه البرقع وما يشوف شي",
-    "taʿāl shūf ṣagr ubūy. la tkhāf, ʿalēh il-burgaʿ w ma yshūf shay",
-    "Come and see my dad's falcon. Don't be scared: he's got his hood on and can't see a thing."
+    "تعال شوف صقر أبوي، ييبه العزبة كل شتا. لا تخاف، عليه البرقع",
+    "taʿāl shūf ṣagr ubūy; yībah il-ʿizba kill shita. la tkhāf, ʿalēh il-burgaʿ",
+    "Come and see my dad's falcon; he brings him to the ʿizba every winter. Don't be scared: he's got his hood on."
    ],
    [
     "B",
@@ -183,9 +183,9 @@
    ],
    [
     "B",
-    "مرة وحدة؟ خلني أتعلم أشيله زين أول!",
-    "marra waḥda? khallni atʿallam ashīlah zēn awwal!",
-    "Just like that? Let me learn to hold him properly first!"
+    "مرة وحدة؟ خلني أتعلم أشيله زين أول! هذا تراث، مب لعبة",
+    "marra waḥda? khallni atʿallam ashīlah zēn awwal! hādha turāth, mub liʿba",
+    "Just like that? Let me learn to hold him properly first! This is heritage, not a game."
    ]
   ],
   "items": [
@@ -257,9 +257,9 @@
   "dialogue": [
    [
     "A",
-    "شوف البر كيف صار أخضر بعد المطر! طلع العشب في كل مكان",
-    "shūf il-barr chēf ṣār akhẓar baʿd il-maṭar! ṭilaʿ il-ʿushub fi kill makān",
-    "Look how green the desert's turned after the rain! The grass has come up everywhere."
+    "شوف البر كيف صار أخضر بعد المطر! طلع العشب في كل مكان، وهذا شي نادر",
+    "shūf il-barr chēf ṣār akhẓar baʿd il-maṭar! ṭilaʿ il-ʿushub fi kill makān, w hādha shay nādir",
+    "Look how green the desert's turned after the rain! The grass has come up everywhere, and that's rare."
    ],
    [
     "B",
@@ -305,9 +305,9 @@
    ],
    [
     "A",
-    "ما شاء الله عليك! أهلنا يسمونه بنت البرق",
-    "mā shāʼ allāh ʿalēk! ahalna ysammūnah bint il-barg",
-    "Well done! Our old folk call it 'daughter of the lightning'."
+    "ما شاء الله عليك! أهلنا يسمونه بنت البرق، وكان رزقهم في الشتا",
+    "mā shāʼ allāh ʿalēk! ahalna ysammūnah bint il-barg, w kān rizghum fi sh-shita",
+    "Well done! Our old folk call it 'daughter of the lightning', and it was what they lived on in winter."
    ],
    [
     "B",
@@ -396,9 +396,9 @@
    ],
    [
     "A",
-    "النبطي باللهجة، مب بالفصحى. بس فيه كلمات ما يستخدمونها الشباب الحين",
-    "in-nabaṭi bil-lahja, mub bil-fuṣḥa. bas fīh kalimāt ma yistakhdmūnha sh-shabāb il-ḥīn",
-    "Nabaṭi is in the dialect, not in fuṣḥā. But it has words young people don't use now."
+    "النبطي باللهجة، مب بالفصحى. بس فيه كلمات من الماضي، ما يستخدمونها الشباب الحين",
+    "in-nabaṭi bil-lahja, mub bil-fuṣḥa. bas fīh kalimāt min il-māẓi, ma yistakhdmūnha sh-shabāb il-ḥīn",
+    "Nabaṭi is in the dialect, not in fuṣḥā. But it has words from the past that young people don't use now."
    ],
    [
     "B",
@@ -420,9 +420,9 @@
    ],
    [
     "A",
-    "مرات. والبدو أيام أول كانوا ينظمون الشعر عن كل شي في حياتهم، حتى الألغاز",
-    "marrāt. w il-badu ayyām awwal kānaw yinẓimūn ish-shiʿir ʿan kill shay fi ḥayāt-hum, ḥatta l-alghāz",
-    "Sometimes. And in the old days the Bedouin composed poetry about everything in their lives, even riddles."
+    "مرات. والبدو أيام أول كانوا ينظمون الشعر عن كل شي في حياتهم، حتى الألغاز. هذا تراثنا",
+    "marrāt. w il-badu ayyām awwal kānaw yinẓimūn ish-shiʿir ʿan kill shay fi ḥayāt-hum, ḥatta l-alghāz. hādha turāthna",
+    "Sometimes. And in the old days the Bedouin composed poetry about everything in their lives, even riddles. That's our heritage."
    ],
    [
     "B",
@@ -432,9 +432,9 @@
    ],
    [
     "A",
-    "هيه، في مسابقات في التلفزيون، وراشد يتابعها ويايه كل أسبوع",
-    "hē, fī musābagāt fi t-tilfizyōn, w Rāshid ytābiʿha wiyyāy kill usbūʿ",
-    "Yes, there are competitions on TV, and Rāshid watches them with me every week."
+    "هيه، في مسابقات في التلفزيون، وراشد يتابعها ويايه في العزبة كل أسبوع",
+    "hē, fī musābagāt fi t-tilfizyōn, w Rāshid ytābiʿha wiyyāy fi l-ʿizba kill usbūʿ",
+    "Yes, there are competitions on TV, and Rāshid watches them with me at the ʿizba every week."
    ],
    [
     "B",
@@ -632,9 +632,9 @@
    ],
    [
     "A",
-    "صح، عشان رمضان قريب. والخطيب قرا آية عن الزكاة. فهمت كلامه؟",
-    "ṣaḥḥ, ʿashān ramaẓān garīb. w il-khaṭīb gara āya ʿan iz-zakā. fhimt kalāmah?",
-    "Right, because Ramadan's coming. And the preacher recited a verse about zakat. Did you understand him?"
+    "صح، عشان رمضان قريب. والخطيب قرا آية عن الزكاة، وهذا خطيب نادر، كلامه واضح. فهمته؟",
+    "ṣaḥḥ, ʿashān ramaẓān garīb. w il-khaṭīb gara āya ʿan iz-zakā; hādha khaṭīb nādir, kalāmah wāẓiḥ. fhimtah?",
+    "Right, because Ramadan's coming. And the preacher recited a verse about zakat; he's a rare preacher, he speaks clearly. Did you follow him?"
    ],
    [
     "B",
@@ -656,9 +656,9 @@
    ],
    [
     "A",
-    "هذا من السنة. النبي صلى الله عليه وسلم كان يخطب خطبتين، ويقعد بينهم",
-    "hādha min is-sunna. in-nabi ṣalla llāhu ʿalayhi wa sallam kān yikhṭub khuṭbatēn, w yigʿid bēnhum",
-    "That's from the Sunna. The Prophet, peace be upon him, used to give two sermons and sit between them."
+    "هذا من السنة. النبي صلى الله عليه وسلم كان يخطب خطبتين، ويقعد بينهم، وهو قدوتنا",
+    "hādha min is-sunna. in-nabi ṣalla llāhu ʿalayhi wa sallam kān yikhṭub khuṭbatēn, w yigʿid bēnhum, w huwa gidwatna",
+    "That's from the Sunna. The Prophet, peace be upon him, used to give two sermons and sit between them, and he's our example."
    ],
    [
     "B",
@@ -674,9 +674,9 @@
    ],
    [
     "B",
-    "الحين فهمت! المرة الياية بنتبه أكثر",
-    "il-ḥīn fhimt! il-marra l-yāya bantabih akthar",
-    "Now I get it! Next time I'll pay more attention."
+    "الحين فهمت! يا حظك يا راشد، انت تفهم كل شي",
+    "il-ḥīn fhimt! yā ḥaẓẓak yā Rāshid, inta tifham kill shay",
+    "Now I get it! Lucky you, Rāshid: you understand all of it."
    ]
   ],
   "items": [
@@ -740,9 +740,9 @@
   "dialogue": [
    [
     "B",
-    "يا عمي، عندي سؤال عن الزكاة، إذا تسمح لي",
-    "yā ʿammi, ʿindi suʼāl ʿan iz-zakā, idha tismaḥ-li",
-    "Uncle, I've got a question about zakat, if you don't mind."
+    "يا عمي، الخطيب قرا آية عن الزكاة. عندي سؤال",
+    "yā ʿammi, il-khaṭīb gara āya ʿan iz-zakā. ʿindi suʼāl",
+    "Uncle, the preacher recited a verse about zakat. I've got a question."
    ],
    [
     "A",
@@ -770,27 +770,27 @@
    ],
    [
     "A",
-    "على حسب سعر الذهب، يعني يتغير. وتدفع ربع العشر من المال كله",
-    "ʿala ḥasab siʿir idh-dhahab, yaʿni yitghayyar. w tidfaʿ rubʿ il-ʿushur min il-māl killah",
-    "It goes by the price of gold, so it changes. And you pay a quarter of a tenth of all of it."
+    "على حسب سعر الذهب، يعني يتغير. وتدفع ربع العشر، يعني ثنين ونص بالمية",
+    "ʿala ḥasab siʿir idh-dhahab, yaʿni yitghayyar. w tidfaʿ rubʿ il-ʿushur, yaʿni thnēn w nuṣṣ bil-miya",
+    "It goes by the price of gold, so it changes. And you pay a quarter of a tenth, that's two and a half per cent."
    ],
    [
     "B",
-    "يعني ثنين ونص بالمية؟ من كل ألف، خمسة وعشرين؟",
-    "yaʿni thnēn w nuṣṣ bil-miya? min kill alf, khamsa w ʿishrīn?",
-    "So two and a half per cent? Out of every thousand, twenty-five?"
+    "يعني من كل ألف، خمسة وعشرين؟",
+    "yaʿni min kill alf, khamsa w ʿishrīn?",
+    "So out of every thousand, twenty-five?"
    ],
    [
     "A",
-    "بالضبط. وتعطيها الفقير والمحتاج، والأيتام",
-    "biẓ-ẓabṭ. w tʿaṭīha l-fagīr w il-miḥtāj, w il-aytām",
-    "Exactly. And you give it to the poor and the needy, and to orphans."
+    "بالضبط. وتعطيها الفقير والمحتاج، والأيتام. هذا تعاون بين الناس",
+    "biẓ-ẓabṭ. w tʿaṭīha l-fagīr w il-miḥtāj, w il-aytām. hādha taʿāwun bēn in-nās",
+    "Exactly. And you give it to the poor and the needy, and to orphans. It's people helping each other."
    ],
    [
     "B",
-    "ما كنت أدري إنها جي واضحة. الحمد لله",
-    "ma kint adri innha chī wāẓḥa. il-ḥamdu lillāh",
-    "I didn't know it was so clear. Thank God."
+    "ما كنت أدري إنها جي واضحة",
+    "ma kint adri innha chī wāẓḥa",
+    "I didn't know it was this clear."
    ],
    [
     "A",
@@ -895,21 +895,21 @@
    ],
    [
     "A",
-    "ههه، بالضبط! وعن اللي فقير وايد يقولون «ما عنده ما يفطر الصايم»",
-    "hhh, biẓ-ẓabṭ! w ʿan illi fagīr wāyid ygūlūn “ma ʿindah ma yfaṭṭir iṣ-ṣāyim”",
-    "Ha, exactly! And about someone very poor they say 'he hasn't enough to feed a fasting man'."
+    "ههه، بالضبط! وعن الفقير والمحتاج يقولون «ما عنده ما يفطر الصايم»",
+    "hhh, biẓ-ẓabṭ! w ʿan il-fagīr w il-miḥtāj ygūlūn “ma ʿindah ma yfaṭṭir iṣ-ṣāyim”",
+    "Ha, exactly! And about the poor and needy they say 'he hasn't enough to feed a fasting man'."
    ],
    [
     "B",
-    "الله يعينه. عشان جي الصدقة في رمضان لها أجر كبير",
-    "allāh yiʿīnah. ʿashān chī ṣ-ṣadaga fi ramaẓān laha ajir kbīr",
-    "God help him. That's why charity in Ramadan has a great reward."
+    "الله يعينه. عشان جي الزكاة والصدقة في رمضان لها أجر كبير",
+    "allāh yiʿīnah. ʿashān chī z-zakā w iṣ-ṣadaga fi ramaẓān laha ajir kbīr",
+    "God help him. That's why zakat and charity in Ramadan bring a great reward."
    ],
    [
     "A",
-    "صدقت. والليلة عندنا غبقة في البيت، بعد التراويح، للأهل والييران",
-    "ṣidagt. w il-lēla ʿindana ghabga fi l-bēt, baʿd it-tarāwīḥ, lil-ahal w il-yīrān",
-    "You're right. And tonight we've got a ghabga at home after tarāwīḥ, for family and neighbours."
+    "صدقت. والليلة عندنا غبقة في البيت، بعد التراويح، للأهل والييران، وأمي بتطرش أكل للأيتام",
+    "ṣidagt. w il-lēla ʿindana ghabga fi l-bēt, baʿd it-tarāwīḥ, lil-ahal w il-yīrān, w ummi bitṭarrish akil lil-aytām",
+    "You're right. And tonight we've got a ghabga at home after tarāwīḥ, for family and neighbours, and my mum's sending food to orphans."
    ],
    [
     "B",
@@ -986,9 +986,9 @@
    ],
    [
     "A",
-    "هيه، أبوي حطها عن روح يدي، الله يرحمه. يقول هذي صدقة جارية",
-    "hē, ubūy ḥaṭṭha ʿan rūḥ yaddi, allāh yirḥamah. ygūl hādhi ṣadaga jārya",
-    "Yes, my dad put it up for my late grandad, God rest his soul. He says it's a charity that goes on."
+    "هيه، أبوي حطها عن روح يدي، الله يرحمه. يقول هذي صدقة جارية، ومن التراث بعد",
+    "hē, ubūy ḥaṭṭha ʿan rūḥ yaddi, allāh yirḥamah. ygūl hādhi ṣadaga jārya, w min it-turāth baʿad",
+    "Yes, my dad put it up for my late grandad, God rest his soul. He says it's a charity that goes on, and part of our heritage too."
    ],
    [
     "B",
@@ -1004,9 +1004,9 @@
    ],
    [
     "B",
-    "فكرة حلوة وايد. في أشياء ثانية جي؟",
-    "fikra ḥilwa wāyid. fī ashyāʼ thānya chī?",
-    "What a lovely idea. Are there other things like that?"
+    "حلوة وايد. وغير الزكاة، في أشياء ثانية؟",
+    "ḥilwa wāyid. w ghēr iz-zakā, fī ashyāʼ thānya?",
+    "That's lovely. And apart from zakat, are there other things?"
    ],
    [
     "A",
@@ -1028,15 +1028,15 @@
    ],
    [
     "B",
-    "عيل بزرع نخلة عند البيت! والعزبة فيها مكان وايد",
-    "ʿayal bazraʿ nakhla ʿind il-bēt! w il-ʿizba fīha makān wāyid",
-    "Then I'll plant a palm tree by the house! And the ʿizba's got plenty of room."
+    "عيل بزرع نخلة عند البيت!",
+    "ʿayal bazraʿ nakhla ʿind il-bēt!",
+    "Then I'll plant a palm tree by the house!"
    ],
    [
     "A",
-    "صدقت! أبوي بيستانس، بنزرع وحدة باسم يدي",
-    "ṣidagt! ubūy biystānis, binizraʿ waḥda b-ism yaddi",
-    "Good thinking! My dad will be pleased; we'll plant one in my grandad's name."
+    "صدقت! أبوي بيستانس، وبنزرع وحدة في العزبة باسم يدي",
+    "ṣidagt! ubūy biystānis, w binizraʿ waḥda fi l-ʿizba b-ism yaddi",
+    "Good thinking! My dad will be pleased, and we'll plant one at the ʿizba in my grandad's name."
    ]
   ],
   "items": [
@@ -1118,15 +1118,15 @@
    ],
    [
     "B",
-    "أنا ساكن ويا ربيعي، يعني بدفعها عن نفسي بس",
-    "ana sākin wiyya rbīʿi, yaʿni badfaʿha ʿan nafsi bas",
-    "I live with a friend, so I'll just pay it for myself."
+    "أنا ساكن ويا ربيعي، يعني عن نفسي بس، صح؟",
+    "ana sākin wiyya rbīʿi, yaʿni ʿan nafsi bas, ṣaḥḥ?",
+    "I live with a friend, so just for myself, right?"
    ],
    [
     "A",
-    "زين. تقدر تعطيها كيلوين ونص عيش، أو فلوس",
-    "zēn. tigdar tʿaṭīha kīlōyn w nuṣṣ ʿēsh, aw flūs",
-    "Fine. You can give two and a half kilos of rice, or money."
+    "زين. أيام النبي كانت «صاعا من تمر»، والحين تقدر تعطيها كيلوين ونص عيش، أو فلوس",
+    "zēn. ayyām in-nabi kānat “ṣāʿan min tamr”, w il-ḥīn tigdar tʿaṭīha kīlōyn w nuṣṣ ʿēsh, aw flūs",
+    "Fine. In the Prophet's day it was 'a ṣāʿ of dates'; now you can give two and a half kilos of rice, or money."
    ],
    [
     "B",
@@ -1136,15 +1136,15 @@
    ],
    [
     "A",
-    "الجمعيات الخيرية تاخذها، ويوزعونها على المحتاجين قبل العيد",
-    "il-jamʿiyyāt il-khēriyya tākhidhha, w ywazzʿūnha ʿala l-miḥtājīn gabil il-ʿīd",
-    "The charities take it, and they hand it out to people in need before Eid."
+    "الجمعيات الخيرية تاخذها، ويوزعونها على المحتاجين والأيتام قبل العيد",
+    "il-jamʿiyyāt il-khēriyya tākhidhha, w ywazzʿūnha ʿala l-miḥtājīn w il-aytām gabil il-ʿīd",
+    "The charities take it, and they hand it out to people in need and orphans before Eid."
    ],
    [
     "B",
-    "زين. وغير الزكاة، أبي أتبرع بشي بعد",
-    "zēn. w ghēr iz-zakā, abi atbarraʿ b-shay baʿad",
-    "Good. And apart from zakat, I'd like to donate something too."
+    "زين. وغير الزكاة، أبي أتبرع بشي بعد، صدقة جارية",
+    "zēn. w ghēr iz-zakā, abi atbarraʿ b-shay baʿad, ṣadaga jārya",
+    "Good. And apart from zakat, I'd like to donate something too, an ongoing charity."
    ],
    [
     "A",
@@ -1175,11 +1175,11 @@
     ""
    ],
    [
-    "يوزعونها",
-    "ywazzʿūnha",
-    "they hand it (f.) out, they distribute it",
-    "يوزعونها",
-    "he hands it out: ywazziʿha (يوزعها)"
+    "صاعا من تمر",
+    "ṣāʿan min tamr",
+    "a ṣāʿ (an old measure) of dates (formal, from the hadith)",
+    "صاعا من تمر",
+    "(recognise)"
    ],
    [
     "أتبرع بشي",
@@ -1204,6 +1204,7 @@
    ]
   ],
   "receptive": [
+   2,
    4,
    5
   ],
@@ -1226,8 +1227,8 @@
    ],
    [
     "B",
-    "عساكم من عواده! الحمد لله على السلامة يا سيف",
-    "ʿasākum min ʿuwwādah! il-ḥamdu lillāh ʿala s-salāma yā Sēf",
+    "عساكم من عواده! الحمد لله على السلامة",
+    "ʿasākum min ʿuwwādah! il-ḥamdu lillāh ʿala s-salāma",
     "Eid Mubarak! Welcome home, Sēf."
    ],
    [
@@ -1238,9 +1239,9 @@
    ],
    [
     "B",
-    "لا، بس سمعت الخبر بالليل. ودفعت زكاة الفطر قبل الصلاة",
-    "la, bas simaʿt il-khabar bil-lēl. w difaʿt zakāt il-fiṭr gabil iṣ-ṣalā",
-    "No, but I heard the news at night. And I paid zakāt il-fiṭr before the prayer."
+    "لا. بس دفعت زكاة الفطر قبل الصلاة",
+    "la. bas difaʿt zakāt il-fiṭr gabil iṣ-ṣalā",
+    "No. But I paid zakāt il-fiṭr before the prayer."
    ],
    [
     "A",
@@ -1274,9 +1275,9 @@
    ],
    [
     "B",
-    "عيل بنسمعه للآخر، حتى لو ما فهمنا كله!",
-    "ʿayal binismaʿah lil-ākhir, ḥatta lō ma fhimna killah!",
-    "Then we'll listen to the end, even if we don't understand all of it!"
+    "عيل بنسمعه للآخر، حتى لو ما فهمنا!",
+    "ʿayal binismaʿah lil-ākhir, ḥatta lō ma fhimna!",
+    "Then we'll listen to the end, even if we don't understand!"
    ]
   ],
   "items": [

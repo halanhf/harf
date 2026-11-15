@@ -208,7 +208,7 @@
    [
     "له هيبة",
     "lah hēba",
-    "it commands respect, it has a certain awe (a place or a person) (a masculine thing)",
+    "it commands respect (a place or a person) (a masculine thing)",
     "له هيبة",
     "a feminine thing: lha hēba (لها هيبة)"
    ],
@@ -707,8 +707,8 @@
   "stage": 5,
   "title": "Same news, office style",
   "goal": "At the office, Maryam helps you turn \"the report's late, long story\" into something you can say in Bū Saʿīd's meeting",
-  "tip": "In a meeting, keep Gulf grammar but borrow office words: it-taqrīr miḥtāj taʼjīl usbūʿ, bit-tansīq maʿa l-gism ith-thāni, it-tārīkh thābit. Classicisms keep their q: fi l-ḥaqīqa, nitwaqqaʿ. With friends you'd still say it-taqrīr biyitʼakhkhar, is-sālfa ṭawīla!",
-  "grammar": "register shifting: everyday → office (taʼjīl, bit-tansīq maʿa, thābit; q kept in fi l-ḥaqīqa, nitwaqqaʿ)",
+  "tip": "In a meeting, keep Gulf grammar but borrow office words: it-taqrīr miḥtāj taʼjīl usbūʿ, il-awlawiyya lit-tansīq, it-tārīkh thābit. Classicisms keep their q: fi l-ḥaqīqa, nitwaqqaʿ. With friends you'd still say it-taqrīr biyitʼakhkhar, is-sālfa ṭawīla!",
+  "grammar": "register shifting: everyday → office (il-awlawiyya, it-tansīq, thābit; q kept in fi l-ḥaqīqa, nitwaqqaʿ)",
   "dialogue": [
    [
     "A",
@@ -742,9 +742,9 @@
    ],
    [
     "B",
-    "بسبب تأخر البيانات. وبنشتغل بالتنسيق مع القسم الثاني",
-    "bi-sabab taʼakhkhur il-bayānāt. w binishtaghil bit-tansīq maʿa l-gism ith-thāni",
-    "Due to the delay in the data. And we'll work in coordination with the other department. (formal)"
+    "بسبب تأخر البيانات. والأولوية الحين للتنسيق مع القسم الثاني",
+    "bi-sabab taʼakhkhur il-bayānāt. w il-awlawiyya l-ḥīn lit-tansīq maʿa l-gism ith-thāni",
+    "Due to the delay in the data. And the priority now is coordinating with the other department. (formal)"
    ],
    [
     "A",
@@ -760,9 +760,9 @@
    ],
    [
     "A",
-    "حلو. شفت؟ نفس الشي، بس بأسلوب ثاني. وفي الإيميل اذكر الإنجاز بعد",
-    "ḥilu. shift? nafs ish-shay, bas b-uslūb thāni. w fi l-īmēl idhkur il-injāz baʿad",
-    "Nice. See? The same thing, just in a different style. And in the email, mention what's been achieved too."
+    "حلو. شفت؟ نفس الشي، بس بأسلوب ثاني. وفي الإيميل اذكر الإجراءات بعد",
+    "ḥilu. shift? nafs ish-shay, bas b-uslūb thāni. w fi l-īmēl idhkur il-ijrāʼāt baʿad",
+    "Nice. See? The same thing, just in a different style. And in the email, mention the procedures too."
    ],
    [
     "B",
@@ -773,18 +773,11 @@
   ],
   "items": [
    [
-    "تأجيل",
-    "taʼjīl",
-    "postponement, putting back (formal)",
-    "تأجيل",
-    "we postpone: nʼajjil (نأجل)"
-   ],
-   [
-    "بالتنسيق مع",
-    "bit-tansīq maʿa",
-    "in coordination with (formal)",
-    "بالتنسيق مع",
-    ""
+    "التنسيق مع",
+    "it-tansīq maʿa",
+    "coordinating with, coordination with (formal)",
+    "التنسيق مع",
+    "in coordination with: bit-tansīq maʿa (بالتنسيق مع)"
    ],
    [
     "ثابت",
@@ -808,11 +801,18 @@
     "b-uslūb thāni: in a different style"
    ],
    [
-    "الإنجاز",
-    "il-injāz",
-    "what's been achieved, the achievement (formal)",
-    "الإنجاز",
-    "(recognise); plural: il-injāzāt (الإنجازات)"
+    "الأولوية",
+    "il-awlawiyya",
+    "the priority (formal)",
+    "الأولوية",
+    ""
+   ],
+   [
+    "الإجراءات",
+    "il-ijrāʼāt",
+    "the procedures, the steps (formal)",
+    "الإجراءات",
+    "(recognise)"
    ]
   ],
   "receptive": [
@@ -847,9 +847,9 @@
    ],
    [
     "B",
-    "السموحة يا عمي، تعودت على كلام المكتب",
-    "is-samūḥa yā ʿammi, tʿawwadt ʿala kalām il-maktab",
-    "Sorry, uncle; I've got used to office talk."
+    "السموحة يا عمي، تعودت على تعابير المكتب",
+    "is-samūḥa yā ʿammi, tʿawwadt ʿala taʿābīr il-maktab",
+    "Sorry, uncle; I've got used to office expressions."
    ],
    [
     "A",
@@ -925,11 +925,11 @@
     "(recognise); one paper: jarīda (جريدة)"
    ],
    [
-    "بخطوات ثابتة",
-    "b-khuṭwāt thābta",
-    "steadily, at a steady pace (lit. with firm steps) (formal)",
-    "بخطوات ثابتة",
-    ""
+    "تعابير",
+    "taʿābīr",
+    "expressions, turns of phrase",
+    "تعابير",
+    "one: taʿbīr (تعبير)"
    ]
   ],
   "receptive": [
@@ -942,8 +942,8 @@
   "stage": 5,
   "title": "A toast for Bū Khālid",
   "goal": "At the office farewell lunch for Bū Khālid, who is retiring after twenty years, give the team's short formal toast and hand him the team's gift",
-  "tip": "A toast here is a short formal speech, not a drink. Open with yisharrifni and say who you speak for (b-ism il-farīg), praise him (kint lana qudwa; tirakt baṣma), close with a wish (it-tawfīq fi mishwārak il-yidīd), and hand over the gift as ʿarbūn wafāʼ 'a token of loyalty'.",
-  "grammar": "formal speech (toast): qudwa, baṣma, mishwār, ʿarbūn wafāʼ",
+  "tip": "A toast here is a short formal speech, not a drink. Open with yisharrifni and say who you speak for (b-ism il-farīg), praise him (kint lana qudwa; tirakt baṣma), close with a wish (nitmanna-lak it-tawfīq), and hand over the gift as ʿarbūn wafāʼ 'a token of loyalty'.",
+  "grammar": "formal speech (toast): qudwa, baṣma, ajyāl, ʿarbūn wafāʼ",
   "dialogue": [
    [
     "A",
@@ -977,9 +977,9 @@
    ],
    [
     "B",
-    "كنت لنا قدوة، وتركت بصمة في كل مشروع",
-    "kint lana qudwa, w tirakt baṣma fi kill mashrūʿ",
-    "You were a role model for us, and you left your mark on every project. (formal)"
+    "كنت قدوة لأجيال من الموظفين، وتركت بصمة في كل مشروع",
+    "kint qudwa l-ajyāl min il-muwaẓẓafīn, w tirakt baṣma fi kill mashrūʿ",
+    "You were a role model for generations of staff, and you left your mark on every project. (formal)"
    ],
    [
     "A",
@@ -989,9 +989,9 @@
    ],
    [
     "B",
-    "ونتمنى لك التوفيق في مشوارك اليديد بعد التقاعد",
-    "w nitmanna-lak it-tawfīq fi mishwārak il-yidīd baʿd it-taqāʿud",
-    "And we wish you every success on your new path in retirement. (formal)"
+    "ونتمنى لك التوفيق والصحة بعد التقاعد",
+    "w nitmanna-lak it-tawfīq w iṣ-ṣiḥḥa baʿd it-taqāʿud",
+    "And we wish you every success and good health in your retirement. (formal)"
    ],
    [
     "A",
@@ -1022,11 +1022,11 @@
     "to a woman: tirakti baṣma (تركتي بصمة)"
    ],
    [
-    "مشوارك",
-    "mishwārak",
-    "your path, your career, your journey (in life) (to a man)",
-    "مسيرتك",
-    "to a woman: mishwārich (مشوارج)"
+    "أجيال",
+    "ajyāl",
+    "generations",
+    "أجيال",
+    "one generation: jīl (جيل)"
    ],
    [
     "حفلة توديع",
@@ -1057,7 +1057,7 @@
   "stage": 5,
   "title": "Welcome to our company",
   "goal": "At the office, a teacher brings a school group to visit; on Bū Saʿīd's behalf, give a short formal welcome, then switch back to everyday talk for the tour",
-  "tip": "A formal welcome has three parts: ahlan wa sahlan bikum (the wa is fuṣḥā, kept in this phrase), who you speak for (bin-niyāba ʿan il-mudīr), and what comes first (nubdha ʿan sharikatna 'a short overview of our company'). Then drop back to everyday Gulf for the practical bits: jōla fi l-mabna, yalla yā shabāb.",
+  "tip": "A formal welcome: ahlan wa sahlan bikum (the wa is fuṣḥā, kept in this phrase), who you speak for (bin-niyāba ʿan mudīrna), and what comes first (nubdha ʿan sharikatna 'a short overview of our company'). Then drop back to everyday Gulf: jōla fi l-mabna, yalla yā shabāb.",
   "grammar": "formal welcome: ahlan wa sahlan bikum, bin-niyāba ʿan, nubdha ʿan",
   "dialogue": [
    [
@@ -1315,9 +1315,9 @@
    ],
    [
     "B",
-    "بالنسبة لي، الناس هني يتكلمون اللهجة، فحبيت أفهمهم",
-    "bin-nisba li, in-nās hni yitkallamūn il-lahja, fa ḥabbēt afhamhum",
-    "For me, people here speak the dialect, so I wanted to understand them. (formal)"
+    "بالنسبة لي، عندي شغف باللهجة، والناس هني يتكلمونها",
+    "bin-nisba li, ʿindi shaghaf bil-lahja, w in-nās hni yitkallamūnha",
+    "For me, I have a passion for the dialect, and people here speak it. (formal)"
    ],
    [
     "A",
@@ -1365,11 +1365,11 @@
     "(recognise); to a woman: ḥaddithīna ʿan tajrubtich"
    ],
    [
-    "أكبر تحدي",
-    "akbar taḥaddi",
-    "the biggest challenge",
-    "أكبر تحدٍّ",
-    ""
+    "شغف",
+    "shaghaf",
+    "a passion (for something)",
+    "شغف",
+    "ʿindi shaghaf b-: I have a passion for"
    ],
    [
     "إذاعة الجامعة",
@@ -1465,9 +1465,9 @@
    ],
    [
     "A",
-    "وصورناك بالكاميرا بعد، بنحط مقطع أونلاين",
-    "w ṣawwarnāk bil-kāmira baʿad, binḥuṭṭ magṭaʿ ōnlāyn",
-    "And we filmed you on camera too; we'll put a clip online."
+    "وصورنا لقطة بالكاميرا بعد، بنحطها أونلاين",
+    "w ṣawwarna lagṭa bil-kāmira baʿad, binḥuṭṭha ōnlāyn",
+    "And we filmed a short clip on camera too; we'll put it online."
    ],
    [
     "B",
@@ -1513,11 +1513,11 @@
     "(recognise)"
    ],
    [
-    "بالكاميرا",
-    "bil-kāmira",
-    "on camera, with the camera",
-    "بالكاميرا",
-    "the camera: il-kāmira (الكاميرا)"
+    "لقطة",
+    "lagṭa",
+    "a shot, a short clip (filmed)",
+    "لقطة",
+    ""
    ]
   ],
   "receptive": [
@@ -1651,7 +1651,7 @@
   "stage": 5,
   "title": "Checkpoint 5.3: the radio star in the majlis",
   "goal": "Checkpoint: in Bū Rāshid's majlis, he heard your radio interview; take his teasing, explain your registers, and take your leave properly",
-  "tip": "Review: answer an elder with ṭāl ʿumrak and allāh la yhīnak; keep wāw for the pitch (yā salām in the majlis); explain your registers with bin-nisba li and ʿala l-hawa … w fi l-majlis …; bless back with āmīn w iyyāk, and leave with ṭāl ʿumrak, idha ma shay lāzim, binitrakhkhaṣ?",
+  "tip": "Review: thank an elder with allāh la yhīnak; keep wāw for the pitch (yā salām in the majlis); explain your registers with ʿala l-hawa … w fi l-majlis …; bless back with āmīn w iyyāk, leave with idha ma shay lāzim, binitrakhkhaṣ?, and offer help with tāmirni ʿala shay thāni?",
   "grammar": "checkpoint 5.3 (s5u032–s5u045): honorifics, borrowed interjections, register shifting",
   "dialogue": [
    [
@@ -1662,8 +1662,8 @@
    ],
    [
     "B",
-    "الله يحييك يا عمي. الله لا يهينك، توترت شوي",
-    "allāh yḥayyīk yā ʿammi. allāh la yhīnak, twattart shwayy",
+    "الله يحييك. الله لا يهينك، توترت شوي",
+    "allāh yḥayyīk. allāh la yhīnak, twattart shwayy",
     "Thank you, uncle. That's kind of you; I was a bit nervous."
    ],
    [
@@ -1674,15 +1674,15 @@
    ],
    [
     "B",
-    "بالنسبة لي، على الهوا رسمي، وفي المجلس سوالف وبس",
-    "bin-nisba li, ʿala l-hawa rasmi, w fi l-majlis sawālif w bas",
-    "For me, on air it's formal, and in the majlis it's just chatting."
+    "على الهوا رسمي، وفي المجلس سوالف وبس",
+    "ʿala l-hawa rasmi, w fi l-majlis sawālif w bas",
+    "On air it's formal, and in the majlis it's just chatting."
    ],
    [
     "A",
-    "زين تسوي. وراشد يقول إنك تقول «واو» في الملعب! لا تصير مغرور علينا",
-    "zēn tsawwi. w Rāshid ygūl innak tgūl \"wāw\" fi l-malʿab! la tṣīr maghrūr ʿalēna",
-    "Good for you. And Rāshid says you say \"wow\" on the pitch! Don't go getting big-headed on us."
+    "زين تسوي. وراشد يقول إنك تقول «واو» في الملعب!",
+    "zēn tsawwi. w Rāshid ygūl innak tgūl \"wāw\" fi l-malʿab!",
+    "Good for you. And Rāshid says you say \"wow\" on the pitch!"
    ],
    [
     "B",
@@ -1692,15 +1692,15 @@
    ],
    [
     "A",
-    "تكلمت زين والله! طرش لي الرابط، الله يرضى عليك",
-    "tkallamt zēn wallāh! ṭarrish-li r-rābiṭ, allāh yirẓa ʿalēk",
-    "You spoke well, honestly! Send me the link; bless you."
+    "تكلمت زين! طرش لي الرابط، أبي أشوفك في القناة. الله يرضى عليك",
+    "tkallamt zēn! ṭarrish-li r-rābiṭ, abi ashūfak fi l-qanāh. allāh yirẓa ʿalēk",
+    "You spoke well! Send me the link; I want to see you on the channel. Bless you."
    ],
    [
     "B",
-    "آمين وإياك. طال عمرك، إذا ما شي لازم، بنترخص؟",
-    "āmīn w iyyāk. ṭāl ʿumrak, idha ma shay lāzim, binitrakhkhaṣ?",
-    "Amen, and you too. Sir, if there's nothing you need, may we take our leave?"
+    "آمين وإياك. إذا ما شي لازم، بنترخص؟",
+    "āmīn w iyyāk. idha ma shay lāzim, binitrakhkhaṣ?",
+    "Amen, and you too. If there's nothing you need, may we take our leave?"
    ],
    [
     "A",
@@ -1724,11 +1724,11 @@
     "(recognise); to a woman: allāh yiḥfaẓich min il-ḥasad"
    ],
    [
-    "مغرور",
-    "maghrūr",
-    "big-headed, conceited (a man)",
-    "مغرور",
-    "a woman: maghrūra (مغرورة)"
+    "القناة",
+    "il-qanāh",
+    "the channel (TV or online)",
+    "القناة",
+    "q kept, as in fuṣḥā"
    ],
    [
     "الرابط",

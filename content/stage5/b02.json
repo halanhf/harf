@@ -34,7 +34,7 @@
    [
     "A",
     "عيل منو خذها؟ ما شفت أي حد يفتح الثلاجة؟",
-    "ʿayal minu khadh-ha? ma shift ay ḥad yiftaḥ ith-thallāja?",
+    "ʿayal minu khadhha? ma shift ay ḥad yiftaḥ ith-thallāja?",
     "Then who took it? Didn't you see anyone open the fridge?"
    ],
    [
@@ -105,13 +105,6 @@
     "a woman: barīʼa (بريئة); (recognise)"
    ],
    [
-    "الدليل",
-    "id-dalīl",
-    "the evidence, the proof",
-    "الدليل",
-    "(recognise)"
-   ],
-   [
     "لا تبوق ولا تخاف",
     "la tbūg wala tkhāf",
     "if you don't steal, you've nothing to fear (a saying)",
@@ -121,8 +114,7 @@
   ],
   "receptive": [
    4,
-   5,
-   6
+   5
   ]
  },
  {
@@ -171,9 +163,9 @@
    ],
    [
     "A",
-    "وانت من غير سيارة، لا رحت ولا ييت. بس كل شي يهون",
-    "w inta min ghēr sayyāra, la riḥt wala yīt. bas kill shay yhūn",
-    "And without a car, you haven't been anywhere. But it's all bearable."
+    "وانت من غير سيارة، لا رحت ولا ييت. بس شد حيلك",
+    "w inta min ghēr sayyāra, la riḥt wala yīt. bas shidd ḥēlak",
+    "And without a car, you haven't been anywhere. But hang in there."
    ],
    [
     "B",
@@ -183,9 +175,9 @@
    ],
    [
     "A",
-    "مب أول مرة تصير. بتعطيهم وقت ولّا بتاخذها ورشة ثانية؟",
-    "mub awwal marra tṣīr. bitʿaṭīhum wagt walla bitākhidh-ha warsha thānya?",
-    "It's not the first time this has happened. Will you give them time, or take it to another garage?"
+    "مب سالفة، مب أول مرة تصير. بتعطيهم وقت ولّا بتاخذها ورشة ثانية؟",
+    "mub sālfa, mub awwal marra tṣīr. bitʿaṭīhum wagt walla bitākhidhha warsha thānya?",
+    "It's no big deal; it's not the first time this has happened. Will you give them time, or take it to another garage?"
    ],
    [
     "B",
@@ -265,8 +257,8 @@
    ],
    [
     "A",
-    "مسموح يا ولدي، الله يسعدك. وشحال الدراسة؟",
-    "masmūḥ yā wildi, allāh yisʿidak. w shḥāl id-dirāsa?",
+    "مسموح يا ولدي، الله يرضى عليك. وشحال الدراسة؟",
+    "masmūḥ yā wildi, allāh yirẓa ʿalēk. w shḥāl id-dirāsa?",
     "No need, son, God bless you. And how are your studies?"
    ],
    [
@@ -277,8 +269,8 @@
    ],
    [
     "A",
-    "راشد؟ ما يفكر إلا في الكورة. كل يوم في التمرين، ويقول بيلعب في المنتخب!",
-    "Rāshid? ma yfakkir illa fi l-kūra. kill yōm fi t-tamrīn, w ygūl biyilʿab fi l-muntakhab!",
+    "راشد؟ ما يفكر إلا في الكورة. كل يوم في التمارين، ويقول بيلعب في المنتخب!",
+    "Rāshid? ma yfakkir illa fi l-kūra. kill yōm fi t-tamārīn, w ygūl biyilʿab fi l-muntakhab!",
     "Rāshid? He thinks of nothing but football. He's at training every day, and says he'll play for the national team!"
    ],
    [
@@ -295,9 +287,9 @@
    ],
    [
     "B",
-    "بس هو عنيد، صح؟ ما يسمع إلا من سيف",
-    "bas huwa ʿanīd, ṣaḥḥ? ma yismaʿ illa min Sēf",
-    "But he's stubborn, isn't he? He listens to no one but Sēf."
+    "بس هو عنيد! ما يسمع إلا من سيف",
+    "bas huwa ʿanīd! ma yismaʿ illa min Sēf",
+    "But he's stubborn! He listens to no one but Sēf."
    ],
    [
     "A",
@@ -328,11 +320,11 @@
     "a woman: mdallaʿa (مدلعة)"
    ],
    [
-    "التمرين",
-    "it-tamrīn",
-    "(sports) training, practice",
-    "التمرين",
-    ""
+    "التمارين",
+    "it-tamārīn",
+    "(sports) training, training sessions",
+    "التمارين",
+    "one session: tamrīn (تمرين)"
    ],
    [
     "المنتخب",
@@ -367,7 +359,7 @@
   "title": "Never seen a camel race",
   "goal": "Outside the majlis, Rāshid invites you to the camel races with his dad; admit you've never been, and agree to an early start",
   "grammar": "negative concord: ma … ay, wala marra, maḥḥad + verb",
-  "tip": "In a negative sentence every 'any' word stays negative: ma aʿarf ay shay ʿanha 'I don't know anything about them', maḥḥad biyisʼalak 'no one will ask you', wala marra 'not once'. For 'there's no need to', Emirati says mub lāzim + verb: mub lāzim taʿarf shay.",
+  "tip": "In a negative sentence every 'any' word stays negative: ma aʿarf ay shay ʿanha 'I don't know anything about them', maḥḥad biyitmaṣkhar ʿalēk 'no one will make fun of you', wala marra 'not once'. For 'there's no need to', Emirati says mub lāzim + verb: mub lāzim taʿarf shay.",
   "dialogue": [
    [
     "A",
@@ -407,9 +399,9 @@
    ],
    [
     "A",
-    "لا تخاف، محد بيسألك شي. وأبوي يعرف كل الناس هناك",
-    "la tkhāf, maḥḥad biyisʼalak shay. w ubūy yaʿarf kill in-nās hnāk",
-    "Don't worry, nobody's going to ask you anything. And my dad knows everyone there."
+    "لا تخاف، محد بيتمصخر عليك. وأبوي يعرف كل الناس هناك",
+    "la tkhāf, maḥḥad biyitmaṣkhar ʿalēk. w ubūy yaʿarf kill in-nās hnāk",
+    "Don't worry, nobody's going to make fun of you. And my dad knows everyone there."
    ],
    [
     "B",
@@ -425,9 +417,9 @@
    ],
    [
     "B",
-    "قدها! عندي جاكيت، وبكون جاهز من الساعة أربع",
-    "gaddha! ʿindi jākēt, w bakūn jāhiz min is-sāʿa arbaʿ",
-    "I'm up to it! I've got a jacket, and I'll be ready from four."
+    "قدها! وبكون جاهز من الساعة أربع",
+    "gaddha! w bakūn jāhiz min is-sāʿa arbaʿ",
+    "I'm up to it! And I'll be ready from four."
    ]
   ],
   "items": [
@@ -446,11 +438,11 @@
     ""
    ],
    [
-    "جاكيت",
-    "jākēt",
-    "a jacket",
-    "سترة",
-    ""
+    "يتمصخر",
+    "yitmaṣkhar",
+    "(he) makes fun (of someone), mocks",
+    "يسخر",
+    "nobody will make fun of you: maḥḥad biyitmaṣkhar ʿalēk"
    ],
    [
     "الهجن",
@@ -503,9 +495,9 @@
    ],
    [
     "A",
-    "مب لازم رخصة حق لفة! وأنا بحط البنزين",
-    "mub lāzim rukhṣa ḥagg laffa! w ana baḥuṭṭ il-banzīn",
-    "You don't need a licence for a spin! And I'll put the petrol in."
+    "مب سالفة! مب لازم رخصة حق لفة، وأنا بحط البنزين",
+    "mub sālfa! mub lāzim rukhṣa ḥagg laffa, w ana baḥuṭṭ il-banzīn",
+    "No big deal! You don't need a licence for a spin, and I'll put the petrol in."
    ],
    [
     "B",
@@ -633,9 +625,9 @@
    ],
    [
     "A",
-    "وكل واحد يلبس اللي عنده، فانيلة وجوتي. مب لازم تشتري شي",
-    "w kill wāḥid yilbis illi ʿindah, fānēla w jūti. mub lāzim tishtiri shay",
-    "And everyone wears whatever they've got, a shirt and trainers. No need to buy anything."
+    "وكل واحد يلبس اللي عنده، مب سالفة. مب لازم تشتري فانيلة",
+    "w kill wāḥid yilbis illi ʿindah, mub sālfa. mub lāzim tishtiri fānēla",
+    "And everyone wears whatever they've got; it's no big deal. No need to buy a shirt."
    ],
    [
     "B",
@@ -657,9 +649,9 @@
    ],
    [
     "A",
-    "من جدك؟ ما يصير جي! وين ما حطيتك تلعب، وعندي خطة",
-    "min jiddak? ma yṣīr chī! wēn ma ḥaṭṭētak tilʿab, w ʿindi khuṭṭa",
-    "Are you serious? You can't do that! You play wherever I put you, and I've got a plan."
+    "من جدك؟ ما يصير جي! وين ما حطيتك تلعب، وعندي خطة. ولا تسلل!",
+    "min jiddak? ma yṣīr chī! wēn ma ḥaṭṭētak tilʿab, w ʿindi khuṭṭa. w la tasallul!",
+    "Are you serious? You can't do that! You play wherever I put you, and I've got a plan. And no offside!"
    ],
    [
     "B",
@@ -684,13 +676,6 @@
     ""
    ],
    [
-    "جوتي",
-    "jūti",
-    "trainers, sports shoes",
-    "حذاء رياضي",
-    ""
-   ],
-   [
     "خطة",
     "khuṭṭa",
     "a plan",
@@ -710,9 +695,17 @@
     "the line-up (of a team)",
     "التشكيلة",
     "(recognise)"
+   ],
+   [
+    "تسلل",
+    "tasallul",
+    "offside",
+    "تسلل",
+    "(recognise)"
    ]
   ],
   "receptive": [
+   3,
    4,
    5
   ]
@@ -745,9 +738,9 @@
    ],
    [
     "B",
-    "فضيحة! والشباب، اللي بعضهم ياي من الشارقة، الحين في الطريق",
-    "faẓīḥa! w ish-shabāb, illi baʿaẓhum yāy min ish-Shārja, il-ḥīn fi ṭ-ṭarīg",
-    "What a disgrace! And the guys, some of whom are coming from Sharjah, are on their way now."
+    "فضيحة! تورطنا! والشباب، اللي بعضهم ياي من الشارقة، الحين في الطريق",
+    "faẓīḥa! twarraṭna! w ish-shabāb, illi baʿaẓhum yāy min ish-Shārja, il-ḥīn fi ṭ-ṭarīg",
+    "What a disgrace! We're in a fix! And the guys, some of whom are coming from Sharjah, are on their way now."
    ],
    [
     "A",
@@ -757,27 +750,27 @@
    ],
    [
     "B",
-    "خذلتني يا خلفان. وين الخطة اللي قلت عنها؟",
-    "khadhaltni yā Khalfān. wēn il-khuṭṭa illi gilt ʿanha?",
-    "You've let me down, Khalfān. Where's that plan you talked about?"
+    "خذلتني يا خلفان. مب انت اللي عندك خطة؟",
+    "khadhaltni yā Khalfān. mub inta illi ʿindak khuṭṭa?",
+    "You've let me down, Khalfān. Weren't you the one with a plan?"
    ],
    [
     "A",
-    "خلاص، بتصرف. بدق على ولد عمي، اللي هو يشتغل في نادي فيه صالة",
-    "khalāṣ, batṣarraf. badigg ʿala wild ʿammi, illi huwa yishtaghil fi nādi fīh ṣāla",
-    "OK, I'll sort it out. I'll ring my cousin, who works at a club with an indoor hall."
+    "خلاص، بتصرف. بدق على ولد عمي، اللي هو يشتغل في نادي",
+    "khalāṣ, batṣarraf. badigg ʿala wild ʿammi, illi huwa yishtaghil fi nādi",
+    "OK, I'll sort it out. I'll ring my cousin, who works at a club."
    ],
    [
     "B",
-    "زين، بس لا تكون مستهتر هالمرة! تورطنا",
-    "zēn, bas la tkūn mistahtir hal-marra! twarraṭna",
-    "OK, but don't be careless this time! We're in a fix."
+    "مسؤولية يا خلفان! لا تكون مستهتر هالمرة",
+    "masʼūliyya yā Khalfān! la tkūn mistahtir hal-marra",
+    "It's a responsibility, Khalfān! Don't be careless this time."
    ],
    [
     "A",
-    "أبشر، يصير خير. والعشا الليلة علي، حتى للجمهور!",
-    "abshir, yṣīr khēr. w il-ʿasha l-lēla ʿalay, ḥatta lil-jamhūr!",
-    "Consider it done; it'll be fine. And tonight's dinner is on me, even for the crowd!"
+    "أبشر، يصير خير. والعشا الليلة على اللي يفوز!",
+    "abshir, yṣīr khēr. w il-ʿasha l-lēla ʿala illi yfūz!",
+    "Consider it done; it'll be fine. And tonight's dinner is on whoever wins!"
    ],
    [
     "B",
@@ -816,10 +809,10 @@
     ""
    ],
    [
-    "صالة",
-    "ṣāla",
-    "an (indoor) hall",
-    "صالة",
+    "مسؤولية",
+    "masʼūliyya",
+    "a responsibility",
+    "مسؤولية",
     ""
    ],
    [
@@ -856,9 +849,9 @@
    ],
    [
     "A",
-    "ليش؟ انت تعرف المشروع أحسن من أي حد",
-    "lēsh? inta taʿarf il-mashrūʿ aḥsan min ay ḥad",
-    "Why? You know the project better than anyone."
+    "ليش؟ مب سالفة! انت تعرف المشروع أحسن من أي حد",
+    "lēsh? mub sālfa! inta taʿarf il-mashrūʿ aḥsan min ay ḥad",
+    "Why? It's no big deal! You know the project better than anyone."
    ],
    [
     "B",
@@ -874,9 +867,9 @@
    ],
    [
     "B",
-    "بس أنا قلقان. وإذا تلخبطت قدامهم؟",
-    "bas ana galgān. w idha tlakhbaṭt jiddāmhum?",
-    "But I'm worried. And what if I get muddled in front of them?"
+    "بس أنا مرتبك. وإذا تلخبطت قدامهم؟",
+    "bas ana mirtabik. w idha tlakhbaṭt jiddāmhum?",
+    "But I'm flustered. And what if I get muddled in front of them?"
    ],
    [
     "A",
@@ -912,11 +905,11 @@
     "you'll see written يا ترى"
    ],
    [
-    "قلقان",
-    "galgān",
-    "worried, anxious (a man)",
-    "قلق",
-    "a woman: galgāna (قلقانة)"
+    "مرتبك",
+    "mirtabik",
+    "flustered, nervous (a man)",
+    "مرتبك",
+    "a woman: mirtabka (مرتبكة)"
    ],
    [
     "تلخبطت",
@@ -997,9 +990,9 @@
    ],
    [
     "A",
-    "أنا مب قلقان. عندي كاميرا، والمحتوى في راسي",
-    "ana mub galgān. ʿindi kāmīra, w il-muḥtawa fi rāsi",
-    "I'm not worried. I've got a camera, and the content's in my head."
+    "أنا مب مرتبك. عندي كاميرا، والمحتوى في راسي",
+    "ana mub mirtabik. ʿindi kāmīra, w il-muḥtawa fi rāsi",
+    "I'm not nervous. I've got a camera, and the content's in my head."
    ],
    [
     "B",
@@ -1110,9 +1103,9 @@
    ],
    [
     "B",
-    "والهوا بارد. زين عندي جاكيت!",
-    "w il-hawa bārid. zēn ʿindi jākēt!",
-    "And the air's cool. Good thing I've got a jacket!"
+    "والهوا بارد. مب مثل دبي!",
+    "w il-hawa bārid. mub mithil Dbayy!",
+    "And the air's cool. Not like Dubai!"
    ],
    [
     "A",
@@ -1128,9 +1121,9 @@
    ],
    [
     "A",
-    "لأنك كل ويكند في المول!",
-    "lann-ak kill wīkind fi l-mōl!",
-    "Because you're at the mall every weekend!"
+    "لأنك كل ويكند في المول، فضيحة!",
+    "lann-ak kill wīkind fi l-mōl, faẓīḥa!",
+    "Because you're at the mall every weekend, it's a disgrace!"
    ],
    [
     "B",
@@ -1196,7 +1189,7 @@
   "title": "Even though I was nervous",
   "goal": "At the office, Maryam tells you the client has approved the project; admit what went wrong in your presentation, and hear why it worked anyway",
   "grammar": "concessives: maʿa inni, w lō innhum, w maʿa hādha, ṣaḥḥ innah … bas, raghm, mahma kān",
-  "tip": "Concede, then turn: maʿa inni kint galgān 'even though I was worried'; w lō innhum shāfōha 'even though they saw them'. Turn with w maʿa hādha 'and yet' or bas. ṣaḥḥ innah … bas … admits a point first; mahma kān 'whatever happened' closes it.",
+  "tip": "Concede, then turn: maʿa inni kint mirtabik 'even though I was flustered'; w lō innhum shāfōha 'even though they saw them'. Turn with w maʿa hādha 'and yet' or bas. ṣaḥḥ innah … bas … admits a point first; mahma kān 'whatever happened' closes it.",
   "dialogue": [
    [
     "A",
@@ -1206,15 +1199,15 @@
    ],
    [
     "B",
-    "الله يبارك فيج! مع إني كنت قلقان وايد",
-    "allāh ybārik fīch! maʿa inni kint galgān wāyid",
-    "Thank you! Even though I was really worried."
+    "الله يبارك فيج! مع إني كنت مرتبك وايد",
+    "allāh ybārik fīch! maʿa inni kint mirtabik wāyid",
+    "Thank you! Even though I was really flustered."
    ],
    [
     "A",
-    "ومع هذا، العرض كان تحفة. البروفة فادت",
-    "w maʿa hādha, il-ʿarẓ kān tuḥfa. il-brōva fādat",
-    "And yet the presentation was superb. The run-through paid off."
+    "ومع هذا، العرض كان تحفة. صح تلخبطت شوي، بس البروفة فادت",
+    "w maʿa hādha, il-ʿarẓ kān tuḥfa. ṣaḥḥ tlakhbaṭt shwayy, bas il-brōva fādat",
+    "And yet the presentation was superb. True, you got a bit muddled, but the run-through paid off."
    ],
    [
     "B",
@@ -1472,9 +1465,9 @@
    ],
    [
     "A",
-    "يعني الخصم هو السبب؟ وشو صار في المخزون؟",
-    "yaʿni l-khaṣim huwa s-sabab? w shu ṣār fi l-makhzūn?",
-    "So the discount is the reason? And what happened to the stock?"
+    "يعني الخصم هو السبب؟ والميزانية؟ وشو صار في المخزون؟",
+    "yaʿni l-khaṣim huwa s-sabab? w il-mīzāniyya? w shu ṣār fi l-makhzūn?",
+    "So the discount is the reason? And the budget? And what happened to the stock?"
    ],
    [
     "B",
@@ -1504,17 +1497,17 @@
     ""
    ],
    [
-    "الخصم",
-    "il-khaṣim",
-    "the discount",
-    "الخصم",
-    ""
-   ],
-   [
     "السبب الوحيد",
     "is-sabab il-waḥīd",
     "the only reason",
     "السبب الوحيد",
+    ""
+   ],
+   [
+    "الميزانية",
+    "il-mīzāniyya",
+    "the budget",
+    "الميزانية",
     ""
    ],
    [
@@ -1591,15 +1584,15 @@
    ],
    [
     "A",
-    "خوش! مهما كان، هذي فرصتك. ومع احترامي لأمك، لا تفوتها",
-    "khōsh! mahma kān, hādhi furṣtak. w maʿa iḥtirāmi l-ummak, la tfawwit-ha",
-    "Great! Whatever happens, this is your chance. And with all respect to your mum, don't miss it."
+    "خوش! مهما كان، هذي فرصتك، وهذي مسؤولية. ومع احترامي لأمك، لا تفوتها",
+    "khōsh! mahma kān, hādhi furṣtak, w hādhi masʼūliyya. w maʿa iḥtirāmi l-ummak, la tfawwit-ha",
+    "Great! Whatever happens, this is your chance, and it's a responsibility. And with all respect to your mum, don't miss it."
    ],
    [
     "B",
-    "أدري. بس هي حنونة، وأنا قلقان",
-    "adri. bas hiya ḥanūna, w ana galgān",
-    "I know. But she's soft-hearted, and I'm worried."
+    "أدري. بس هي عاطفية، وأنا مرتبك",
+    "adri. bas hiya ʿāṭifiyya, w ana mirtabik",
+    "I know. But she's emotional, and I'm nervous."
    ],
    [
     "A",
@@ -1616,11 +1609,11 @@
   ],
   "items": [
    [
-    "حنونة",
-    "ḥanūna",
-    "soft-hearted, loving (a woman)",
-    "حنونة",
-    "a man: ḥanūn (حنون)"
+    "عاطفية",
+    "ʿāṭifiyya",
+    "emotional, sensitive (a woman)",
+    "عاطفية",
+    "a man: ʿāṭifi (عاطفي)"
    ],
    [
     "لا سمح الله",
@@ -1691,9 +1684,9 @@
    ],
    [
     "B",
-    "للحين ما قلت لهم. الويكند",
-    "lil-ḥīn ma gilt-lhum. il-wīkind",
-    "I haven't told them yet. At the weekend."
+    "للحين ما قلت لهم. الويكند. مضطر",
+    "lil-ḥīn ma gilt-lhum. il-wīkind. muẓṭarr",
+    "I haven't told them yet. At the weekend. I have to."
    ],
    [
     "A",
@@ -1709,9 +1702,9 @@
    ],
    [
     "A",
-    "بيني وبينك، أمك حنونة. لا سمح الله، بتبكي؟",
-    "bēni w bēnak, ummak ḥanūna. la samaḥ allāh, bitibchi?",
-    "Between you and me, your mum's soft-hearted. God forbid, will she cry?"
+    "بيني وبينك، أمك عاطفية. لا سمح الله، بتبكي؟",
+    "bēni w bēnak, ummak ʿāṭifiyya. la samaḥ allāh, bitibchi?",
+    "Between you and me, your mum's emotional. God forbid, will she cry?"
    ],
    [
     "B",
@@ -1727,9 +1720,9 @@
    ],
    [
     "B",
-    "كل يوم؟ مشوار! كل خميس، يمكن. يصير خير",
-    "kill yōm? mishwār! kill khamīs, yimkin. yṣīr khēr",
-    "Every day? That's a trek! Every Thursday, maybe. We'll see."
+    "كل يوم؟ لا. كل خميس، يمكن. يصير خير",
+    "kill yōm? la. kill khamīs, yimkin. yṣīr khēr",
+    "Every day? No. Every Thursday, maybe. We'll see."
    ]
   ],
   "items": [
@@ -1762,11 +1755,11 @@
     ""
    ],
    [
-    "مشوار",
-    "mishwār",
-    "a trek, a long way (to go); a trip out",
-    "مشوار",
-    ""
+    "مضطر",
+    "muẓṭarr",
+    "I have to, I've no choice (a man)",
+    "مضطر",
+    "a woman: muẓṭarra (مضطرة)"
    ],
    [
     "مغامرة",
@@ -1791,9 +1784,9 @@
   "dialogue": [
    [
     "A",
-    "سمعت إنك عطيت راشد سيارتك؟ شنو هالحركة؟",
-    "simaʿt innak ʿaṭēt Rāshid sayyārtak? shinu hal-ḥaraka?",
-    "I heard you gave Rāshid your car? What was that about?"
+    "سمعت إنك عطيت راشد سيارتك؟ فضيحة! شنو هالحركة؟",
+    "simaʿt innak ʿaṭēt Rāshid sayyārtak? faẓīḥa! shinu hal-ḥaraka?",
+    "I heard you gave Rāshid your car? Scandal! What was that about?"
    ],
    [
     "B",
@@ -1827,9 +1820,9 @@
    ],
    [
     "A",
-    "إيه، كل واحد يقول جذي. وشنو قررت؟ بتقعد؟",
-    "ēh, kill wāḥid ygūl chidhi. w shinu garrart? bitigʿid?",
-    "Yeah, everyone says that. And what have you decided? Are you staying?"
+    "إيه، كل واحد يقول جذي، بس مو مقنعة. وشنو قررت؟ بتقعد؟",
+    "ēh, kill wāḥid ygūl chidhi, bas mū mugniʿa. w shinu garrart? bitigʿid?",
+    "Yeah, everyone says that, but it's not convincing. And what have you decided? Are you staying?"
    ],
    [
     "B",
@@ -1839,9 +1832,9 @@
    ],
    [
     "A",
-    "يعني ما بقى إلا تقول لأمك؟ مو إشاعة؟",
-    "yaʿni ma baga illa tgūl l-ummak? mū ishāʿa?",
-    "So the only thing left is to tell your mum? It's not just a rumour?"
+    "يعني ما بقى إلا تقول لأمك؟ مو سالفة ملفقة؟",
+    "yaʿni ma baga illa tgūl l-ummak? mū sālfa mlaffaga?",
+    "So the only thing left is to tell your mum? It's not a made-up story?"
    ],
    [
     "B",
@@ -1880,11 +1873,11 @@
     "he's lying: yichdhib (يكذب)"
    ],
    [
-    "إشاعة",
-    "ishāʿa",
-    "a rumour",
-    "إشاعة",
-    "(recognise)"
+    "ملفقة",
+    "mlaffaga",
+    "made up, invented (a story)",
+    "ملفقة",
+    "a masculine noun: mlaffag (ملفق); (recognise)"
    ]
   ],
   "receptive": [
