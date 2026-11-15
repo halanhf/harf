@@ -125,13 +125,13 @@
    [
     "A",
     "والله؟ شو اشتريت؟",
-    "wallāh? shu shtarēt?",
+    "wallāh? shu ishtarēt?",
     "Really? What did you buy?"
    ],
    [
     "B",
     "أول شي اشتريت قميص، وبعدها تعشينا",
-    "awwal shay shtarēt gamīṣ, w baʿd-ha tʿashshēna",
+    "awwal shay ishtarēt gamīṣ, w baʿd-ha tʿashshēna",
     "First I bought a shirt, and after that we had dinner."
    ],
    [
@@ -439,7 +439,7 @@
    [
     "B",
     "اشتريتها أمس. انتو بس تعالوا بدري!",
-    "shtarētha ams. intu bas taʿālu badri!",
+    "ishtarētha ams. intu bas taʿālu badri!",
     "I bought them yesterday. You lot just come early!"
    ],
    [
@@ -661,13 +661,6 @@
     "studying, (my, your) studies",
     "الدراسة",
     ""
-   ],
-   [
-    "صعبة",
-    "ṣaʿba",
-    "hard, difficult (with a feminine noun)",
-    "صعبة",
-    "with a masculine noun: ṣaʿb (صعب)"
    ],
    [
     "تخصصك",
