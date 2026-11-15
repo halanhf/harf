@@ -118,3 +118,14 @@ node --test tests/logic.test.js
 Covers the FSRS scheduler (learning steps, growth, lapses, stability floor, hard < good < easy ordering, retention target, migration of older cards), the daily review cap, safe loading of damaged backups, card modes, interleaving, the mastery gate, the AI-lesson validator, Arabic normalisation (including Gulf letters چ and گ), word-level speech matching, streaks across time zones, the sync merge (stale copies never win, resets propagate), and the course data: every hand-written lesson must pass the same validator AI lessons do, with 5 to 9 phrases and no duplicates across the course.
 
 `python build.py` rebuilds `docs/` (the installable app); CI fails if it's out of date. The tests also check that the built app loads nothing from other sites and that its content security policy matches its inline scripts.
+
+## Credits
+
+| What | From | Licence |
+|---|---|---|
+| Amiri (Arabic font) | [The Amiri Project Authors](https://github.com/aliftype/amiri), subset files from [Fontsource](https://fontsource.org) | SIL Open Font License 1.1, see `pwa/fonts/OFL-Amiri.txt` |
+| Readex Pro (Latin font) | [The Readex Pro Project Authors](https://github.com/ThomasJockin/readexpro), subset files from [Fontsource](https://fontsource.org) | SIL Open Font License 1.1, see `pwa/fonts/OFL-ReadexPro.txt` |
+| App icons | Made for this app: حرف set in Amiri | |
+| FSRS-5 default parameters | [open-spaced-repetition](https://github.com/open-spaced-repetition/fsrs4anki) | MIT |
+
+The teaching ideas credited to the Palteca method above are described in this project's own words. No Palteca text, lessons or images are included.
