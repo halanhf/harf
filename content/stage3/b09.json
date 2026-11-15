@@ -121,7 +121,7 @@
     "to a woman: allāh yismaʿ minnich (الله يسمع منج)"
    ]
   ],
-  "culture": "The white robe Emirati men wear is the kandūra; in Kuwait it is usually called the dishdāsha. At his wedding an Emirati groom traditionally wears a white kandūra with a black bisht, a light cloak worn over it for special occasions."
+  "culture": "The white robe Emirati men wear is the kandūra; in Kuwait it is usually called the dishdāsha. At his wedding an Emirati groom traditionally wears a white kandūra with a black bisht, a cloak worn over it on major occasions."
  },
  {
   "id": "s3u085",
@@ -175,9 +175,9 @@
    ],
    [
     "A",
-    "الله يبارك فيك يا ولدي. نشوفك في عرسك!",
-    "allāh ybārik fīk yā wildi. nshūfak fi ʿirsak!",
-    "Thank you, son. See you at your own wedding!"
+    "الله يبارك فيك يا ولدي. العشا الحين، لا تروح!",
+    "allāh ybārik fīk yā wildi. il-ʿasha l-ḥīn, la trūḥ!",
+    "Thank you, son. Dinner's now, don't go!"
    ]
   ],
   "items": [
@@ -220,22 +220,22 @@
     "ألف مبروك",
     "alf mabrūk",
     "many congratulations (lit. a thousand congratulations)",
-    "ألف مبروك",
+    "ألف مبارك",
     "the reply: allāh ybārik fīk (to a woman: fīch)"
    ],
    [
-    "في عرسك",
-    "fi ʿirsak",
-    "at your wedding (to a man)",
-    "في عرسك",
-    "to a woman: fi ʿirsich (في عرسج)"
+    "كل الرياييل هني",
+    "kill ir-ryāyīl hni",
+    "all the men are here",
+    "كل الرجال هنا",
+    "the women: il-ḥarīm (you know it)"
    ],
    [
-    "نشوفك",
-    "nshūfak",
-    "see you, we'll see you (to a man)",
-    "نراك",
-    "to a woman: nshūfich (نشوفج); to a group: nshūfkum (you know it)"
+    "العشا الحين",
+    "il-ʿasha l-ḥīn",
+    "dinner's now, dinner's being served",
+    "العشاء الآن",
+    ""
    ]
   ],
   "culture": "At an Emirati wedding, men and women celebrate apart, often in two halls next to each other. The men's party is the simpler one, often with traditional cane line dancing. Before the big day, the marriage contract is signed in front of male witnesses at a small ceremony called the milcha, and a few days before the wedding the women hold a henna party for the bride."
@@ -268,15 +268,15 @@
    ],
    [
     "B",
-    "حلو! يعني انت الحين خال!",
-    "ḥilu! yaʿni inta l-ḥīn khāl!",
-    "Lovely! So you're an uncle now!"
+    "حلو! يعني انت خال مرة ثانية!",
+    "ḥilu! yaʿni inta khāl marra thānya!",
+    "Lovely! So you're an uncle again!"
    ],
    [
     "A",
-    "هيه! وأمي مستانسة وايد، هذا أول حفيد",
-    "hē! w ummi mistānsa wāyid, hādha awwal ḥafīd",
-    "Yes! And my mum's so happy: he's the first grandchild."
+    "هيه! وأمي مستانسة وايد، حفيد يديد!",
+    "hē! w ummi mistānsa wāyid, ḥafīd yidīd!",
+    "Yes! And my mum's so happy: a new grandson!"
    ],
    [
     "B",
@@ -327,10 +327,10 @@
     "your father's brother: ʿamm (you know ʿammi)"
    ],
    [
-    "أول حفيد",
-    "awwal ḥafīd",
-    "the first grandchild (a boy)",
-    "أول حفيد",
+    "حفيد",
+    "ḥafīd",
+    "a grandson, a grandchild",
+    "حفيد",
     "a granddaughter: ḥafīda (حفيدة)"
    ],
    [
@@ -840,8 +840,8 @@
   "stage": 3,
   "title": "Meeting Nūra",
   "goal": "At Fahad's family home, with Fahad there, meet his sister Nūra: answer her welcome and ask after their mother",
-  "tip": "Nūra speaks Kuwaiti (ēh, shinu, yumma); you answer in your own Arabic. Replies to a woman take her endings: allāh yḥayyīch, shu gilti?, law samaḥti. A family answers tsharrafna with ish-sharaf lana 'the honour is ours', and il-bēt bētkum means 'make yourselves at home'.",
-  "grammar": "Kuwaiti forms II: recycle ēh, shinu, yumma; replies to a woman (allāh yḥayyīch, gilti)",
+  "tip": "Nūra speaks Kuwaiti (ēh, shinu); you answer in your own Arabic. Replies to a woman take her endings: allāh yḥayyīch, shu gilti?, law samaḥti. A family answers tsharrafna with ish-sharaf lana 'the honour is ours', and il-bēt bētkum means 'make yourselves at home'.",
+  "grammar": "Kuwaiti forms II: recycle ēh, shinu; replies to a woman (allāh yḥayyīch, gilti)",
   "dialogue": [
    [
     "A",
@@ -857,8 +857,8 @@
    ],
    [
     "A",
-    "الشرف لنا. يمه تسلّم عليكم، وتقول البيت بيتكم",
-    "ish-sharaf lana. yumma tsallim ʿalēkum, w tgūl il-bēt bētkum",
+    "الشرف لنا. أمي تسلّم عليكم، وتقول البيت بيتكم",
+    "ish-sharaf lana. ummi tsallim ʿalēkum, w tgūl il-bēt bētkum",
     "The honour's ours. Mum says hello, and says make yourselves at home."
    ],
    [
@@ -999,7 +999,7 @@
     "A",
     "للحين ما يدري. تكفى، لا تقولون له!",
     "lil-ḥīn ma yadri. takfa, la tgūlūn-lah!",
-    "He doesn't know yet. Please, I'm begging you, don't tell him!"
+    "He doesn't know yet. Please, I'm begging you two, don't tell him!"
    ],
    [
     "B",
@@ -1014,7 +1014,7 @@
     "shu s-sālfa?",
     "what's going on? what's the story?",
     "ما القصة؟",
-    "fast speech: shsālfa? (you'll see written شسالفة؟); Kuwait: shinu s-sālfa? (شنو السالفة؟)"
+    "Kuwait: shinu s-sālfa? (شنو السالفة؟); fast speech: shsālfa? (you'll see written شسالفة؟)"
    ],
    [
     "شنو السالفة؟",
@@ -1353,9 +1353,9 @@
    ],
    [
     "A",
-    "صج، حتى إحنا: أيام زمان أهل شرق غير عن أهل جبلة",
-    "ṣij, ḥatta iḥna: ayyām zamān ahal Sharg ghēr ʿan ahal Jibla",
-    "True, even among us: in the old days the people of Sharq were different from the people of Jibla."
+    "صج، حتى إحنا: أيام زمان أهل شرق كانوا يتكلمون غير عن أهل جبلة",
+    "ṣij, ḥatta iḥna: ayyām zamān ahal Sharg kānaw yitkallamūn ghēr ʿan ahal Jibla",
+    "True, even among us: in the old days the people of Sharq spoke differently from the people of Jibla."
    ]
   ],
   "items": [
@@ -1378,7 +1378,7 @@
     "la tgūl chidhi",
     "don't say that! (to a man)",
     "لا تقل هذا",
-    "UAE also: la tgūl chī (لا تقول جي); to a woman: la tgūlīn chidhi"
+    "to a woman: la tgūlīn chidhi (لا تقولين جذي); UAE also: la tgūl chī (لا تقول جي)"
    ],
    [
     "لا تنسونا",
@@ -1416,6 +1416,6 @@
     "UAE: ḥatta niḥin (حتى نحن); you know ḥatta ana"
    ]
   ],
-  "culture": "In old Kuwait Town, quarters such as Jibla and Sharq each had their own way of speaking. Today those differences have mostly blurred, and Kuwaitis from all areas speak a shared, levelled Kuwaiti."
+  "culture": "In old Kuwait Town, quarters such as Jibla and Sharq each had their own way of speaking. Many say those differences have since faded."
  }
 ]
