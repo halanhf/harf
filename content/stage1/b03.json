@@ -3,9 +3,9 @@
     "id": "s1u037",
     "stage": 1,
     "title": "Where did you all go?",
-    "goal": "Ask a group of friends what they did, and say what we did, with the we and you-all past endings.",
-    "grammar": "Past tense I: we (-na) and you all (-tu)",
-    "tip": "For groups, add -na for 'we' and -tu for 'you all': wiṣal (he arrived) → wiṣalna (we arrived), wiṣaltu? (did you all arrive?); riḥt (I went) → riḥna, riḥtu. Use -tu for two or more people, men or women.",
+    "goal": "Ask a group of friends where they went and who with, using the you-all past ending -tu.",
+    "grammar": "Past tense I: you all (-tu); we (-na) recycled",
+    "tip": "For a group, add -tu for 'you all' (you met -na 'we' in s1u036): wiṣal (he arrived) → wiṣaltu? (did you all arrive?); riḥt (I went) → riḥtu; ṭilaʿt → ṭilaʿtu. Use -tu for two or more people, men or women.",
     "dialogue": [
       [
         "B",
@@ -21,9 +21,9 @@
       ],
       [
         "B",
-        "أنا وصلت الحين. وين رحتوا البارحة؟",
-        "ana wiṣalt il-ḥīn. wēn riḥtu l-bārḥa?",
-        "I've just got here. Where did you go last night?"
+        "أنا وصلت الحين. وين طلعتوا البارحة؟",
+        "ana wiṣalt il-ḥīn. wēn ṭilaʿtu l-bārḥa?",
+        "I've just got here. Where did you go out last night?"
       ],
       [
         "A",
@@ -33,15 +33,15 @@
       ],
       [
         "B",
-        "حلو! أنا ما رحت مكان",
-        "ḥilu! ana ma riḥt makān",
-        "Nice! I didn't go anywhere."
+        "والله؟ رحتوا ويا منو؟",
+        "wallāh? riḥtu wiyya minu?",
+        "Really? Who did you go with?"
       ],
       [
         "A",
-        "المرة الثانية تروح ويانا!",
-        "il-marra th-thānya trūḥ wiyyāna!",
-        "Next time you're coming with us!"
+        "ويا ربعنا. المرة الثانية تروح ويانا!",
+        "wiyya rabʿna. il-marra th-thānya trūḥ wiyyāna!",
+        "With our friends. Next time you're coming with us!"
       ]
     ],
     "items": [
@@ -53,11 +53,11 @@
         "to one man: wiṣalt; to one woman: wiṣalti; you'll see written وصلتو"
       ],
       [
-        "وصلنا",
-        "wiṣalna",
-        "we arrived",
-        "وصلنا",
-        ""
+        "طلعتوا",
+        "ṭilaʿtu",
+        "you went out (to a group)",
+        "خرجتم",
+        "to one man: ṭilaʿt; to one woman: ṭilaʿti"
       ],
       [
         "رحتوا",
@@ -67,13 +67,6 @@
         "to one man: riḥt; to one woman: riḥti"
       ],
       [
-        "رحنا",
-        "riḥna",
-        "we went",
-        "ذهبنا",
-        ""
-      ],
-      [
         "رجعنا",
         "rijaʿna",
         "we came back",
@@ -81,18 +74,25 @@
         ""
       ],
       [
-        "متأخر",
-        "mitʼakhkhir",
-        "late (a man)",
-        "متأخر",
-        "a woman: mitʼakhkhra (متأخرة)"
+        "قبل شوي",
+        "gabil shwayy",
+        "a little while ago",
+        "قبل قليل",
+        ""
       ],
       [
-        "مكان",
-        "makān",
-        "place; (after ma) anywhere",
-        "مكان",
-        "ma riḥt makān = I didn't go anywhere"
+        "ويا منو؟",
+        "wiyya minu?",
+        "with whom? who with?",
+        "مع من؟",
+        ""
+      ],
+      [
+        "ربعنا",
+        "rabʿna",
+        "our friends",
+        "أصدقاؤنا",
+        "my friends: rabʿi"
       ],
       [
         "ويانا",
@@ -116,7 +116,7 @@
     "title": "Where is everyone?",
     "goal": "Ask a colleague where everyone went, and understand what they did and didn't do.",
     "grammar": "Past tense I: they (-aw, written ـوا); ma + past",
-    "tip": "'They' adds -aw, written ـوا: rāḥ (he went) → rāḥaw (they went). A short vowel before it drops: kitab (he wrote) → kitbaw, rijaʿ → rijʿaw. For 'didn't', put ma in front: ma kitbaw (they didn't write).",
+    "tip": "'They' adds -aw, written ـوا: rāḥ (he went) → rāḥaw (they went). A short vowel before it drops: kitab (he wrote) → kitbaw, wiṣal → wiṣlaw, rijaʿ → rijʿaw. For 'didn't', put ma in front: ma kitbaw (they didn't write).",
     "dialogue": [
       [
         "B",
@@ -126,9 +126,9 @@
       ],
       [
         "A",
-        "صباح النور. راحوا الاجتماع",
-        "ṣabāḥ in-nūr. rāḥaw il-ijtimāʿ",
-        "Good morning. They've gone to the meeting."
+        "صباح النور. وصلوا الصبح وراحوا الاجتماع",
+        "ṣabāḥ in-nūr. wiṣlaw iṣ-ṣubḥ w rāḥaw il-ijtimāʿ",
+        "Good morning. They got in early and went to the meeting."
       ],
       [
         "B",
@@ -164,6 +164,13 @@
         "you'll see written راحو"
       ],
       [
+        "وصلوا",
+        "wiṣlaw",
+        "they arrived",
+        "وصلوا",
+        "you'll see written وصلو"
+      ],
+      [
         "كتبوا",
         "kitbaw",
         "they wrote",
@@ -189,13 +196,6 @@
         "wēn il-kill?",
         "where is everyone?",
         "أين الجميع؟",
-        ""
-      ],
-      [
-        "الاجتماع",
-        "il-ijtimāʿ",
-        "the meeting",
-        "الاجتماع",
         ""
       ],
       [
@@ -575,8 +575,8 @@
       ],
       [
         "A",
-        "لا، ما يا من الجامعة. ييت مع منو؟",
-        "la, ma yā min il-jāmʿa. yīt maʿa minu?",
+        "لا، ما يا من الجامعة. ييت ويا منو؟",
+        "la, ma yā min il-jāmʿa. yīt wiyya minu?",
         "No, he hasn't come back from the university. Who did you come with?"
       ],
       [
@@ -644,10 +644,10 @@
         ""
       ],
       [
-        "مع منو؟",
-        "maʿa minu?",
-        "with whom?",
-        "مع من؟",
+        "في التاكسي",
+        "fi t-tāksi",
+        "in a taxi, by taxi",
+        "في سيارة الأجرة",
         ""
       ]
     ]
@@ -790,6 +790,13 @@
     ],
     "items": [
       [
+        "نروح…؟",
+        "nrūḥ…?",
+        "shall we go…?",
+        "هل نذهب…؟",
+        "nrūḥ il-baḥar? = shall we go to the beach?"
+      ],
+      [
         "يوم الجمعة",
         "yōm il-jumʿa",
         "Friday, on Friday",
@@ -829,13 +836,6 @@
         "ʿindi shughul",
         "I've got work, I'm busy",
         "عندي عمل",
-        ""
-      ],
-      [
-        "البحر",
-        "il-baḥar",
-        "the sea, the beach",
-        "البحر",
         ""
       ],
       [
@@ -1034,25 +1034,11 @@
         ""
       ],
       [
-        "ثنتين",
-        "thintēn",
-        "two (for hours and feminine nouns)",
-        "اثنتان",
-        "one o'clock: is-sāʿa wiḥda"
-      ],
-      [
         "دقيقة",
         "dagīga",
         "a minute",
         "دقيقة",
         "3 to 10 take the plural (khams dagāyig); 11 and up the singular (khamsṭaʿash dagīga)"
-      ],
-      [
-        "بسرعة",
-        "b-surʿa",
-        "quickly; hurry up",
-        "بسرعة",
-        ""
       ],
       [
         "كل مرة",
@@ -1067,6 +1053,20 @@
         "the film",
         "الفيلم",
         "you'll see written الفيلم"
+      ],
+      [
+        "السينما",
+        "is-sīnama",
+        "the cinema",
+        "السينما",
+        ""
+      ],
+      [
+        "نتأخر",
+        "nitʼakhkhar",
+        "we're late, we'll be late",
+        "نتأخر",
+        "I'm late: atʼakhkhar"
       ]
     ]
   }

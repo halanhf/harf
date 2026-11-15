@@ -3,9 +3,9 @@
   "id": "s1u047",
   "stage": 1,
   "title": "What time do you finish?",
-  "goal": "Agree a meeting time with Maryam, your colleague, using half past, quarter past and quarter to.",
-  "tip": "After the hour add w nuṣṣ (and a half), w rubʿ (and a quarter) or illa rubʿ (less a quarter): khams w nuṣṣ = 5:30, tisʿ w rubʿ = 9:15, arbaʿ illa rubʿ = 3:45. With is-sāʿa the hour takes its short form: is-sāʿa sitt, is-sāʿa khams.",
-  "grammar": "Telling the time: w nuṣṣ, w rubʿ, illa rubʿ",
+  "goal": "Agree a time with Maryam, your colleague, to meet about work.",
+  "tip": "To fix a time, say the day, then is-sāʿa and the hour. No word for 'at' is needed: bāchir is-sāʿa tisʿ w rubʿ (tomorrow at 9:15), baʿd bāchir iṣ-ṣubḥ (the day after tomorrow, in the morning).",
+  "grammar": "Telling the time with a day: bāchir is-sāʿa tisʿ",
   "dialogue": [
    [
     "A",
@@ -15,33 +15,33 @@
    ],
    [
     "B",
-    "الساعة خمس ونص. وانتي متى بتخلصين؟",
-    "is-sāʿa khams w nuṣṣ. w inti mita bitkhallṣīn?",
-    "At half past five. And when do you finish?"
+    "خمس ونص. وانتي متى بتخلصين؟",
+    "khams w nuṣṣ. w inti mita bitkhallṣīn?",
+    "Half past five. And when do you finish?"
    ],
    [
     "A",
-    "أنا أخلص بدري، أربع إلا ربع",
-    "ana akhalliṣ badri, arbaʿ illa rubʿ",
-    "I finish early, at quarter to four."
+    "أنا أخلص بدري. نتلاقى باكر الصبح؟",
+    "ana akhalliṣ badri. nitlāga bāchir iṣ-ṣubḥ?",
+    "I finish early. Shall we meet tomorrow morning?"
    ],
    [
     "B",
-    "نتلاقى باكر الصبح؟",
-    "nitlāga bāchir iṣ-ṣubḥ?",
-    "Shall we meet tomorrow morning?"
+    "باكر عندي موعد. بعد باكر؟",
+    "bāchir ʿindi mōʿid. baʿd bāchir?",
+    "Tomorrow I've got an appointment. The day after?"
    ],
    [
     "A",
-    "هيه. تسع وربع يناسبك؟",
-    "hē. tisʿ w rubʿ ynāsbak?",
-    "Yes. Does quarter past nine suit you?"
+    "زين. الساعة تسع وربع يناسبك؟",
+    "zēn. is-sāʿa tisʿ w rubʿ ynāsbak?",
+    "OK. Does quarter past nine suit you?"
    ],
    [
     "B",
-    "إي، اتفقنا",
-    "ī, ittafagna",
-    "Yes, it's a deal."
+    "إي، يناسبني. اتفقنا!",
+    "ī, ynāsibni. ittafagna!",
+    "Yes, that suits me. It's a deal!"
    ]
   ],
   "items": [
@@ -60,27 +60,6 @@
     "ana akhalliṣ is-sāʿa khams = I finish at five"
    ],
    [
-    "ونص",
-    "w nuṣṣ",
-    "and a half (half past)",
-    "والنصف",
-    "khams w nuṣṣ = 5:30"
-   ],
-   [
-    "وربع",
-    "w rubʿ",
-    "and a quarter (quarter past)",
-    "والربع",
-    "tisʿ w rubʿ = 9:15"
-   ],
-   [
-    "إلا ربع",
-    "illa rubʿ",
-    "less a quarter (quarter to)",
-    "إلا ربعًا",
-    "arbaʿ illa rubʿ = 3:45"
-   ],
-   [
     "بدري",
     "badri",
     "early",
@@ -90,9 +69,23 @@
    [
     "نتلاقى",
     "nitlāga",
-    "we'll meet / shall we meet?",
+    "we'll meet; shall we meet?",
     "نلتقي",
     ""
+   ],
+   [
+    "عندي موعد",
+    "ʿindi mōʿid",
+    "I've got an appointment",
+    "عندي موعد",
+    ""
+   ],
+   [
+    "بعد باكر",
+    "baʿd bāchir",
+    "the day after tomorrow",
+    "بعد غد",
+    "you'll see written بعد باجر"
    ],
    [
     "يناسبك؟",
@@ -102,21 +95,27 @@
     "to a woman: ynāsbich? (يناسبج)"
    ],
    [
+    "يناسبني",
+    "ynāsibni",
+    "it suits me",
+    "يناسبني",
+    "ma ynāsibni = it doesn't suit me"
+   ],
+   [
     "اتفقنا",
     "ittafagna",
     "agreed, it's a deal",
     "اتفقنا",
     ""
    ]
-  ],
-  "culture": "People often fix a time by the prayers rather than the clock: baʿd il-ʿaṣr (after the afternoon prayer), baʿd il-maghrib (after the sunset prayer). Prayer times move with the sun, so in Dubai maghrib comes at about half past five in winter and after seven in summer."
+  ]
  },
  {
   "id": "s1u048",
   "stage": 1,
   "title": "Come on, quick!",
   "goal": "Hurry a friend out of the door: get up, look, listen, take it, come.",
-  "tip": "To tell a man to do something, drop the t- of the 'you' verb: tshūf → shūf (look), trūḥ → rūḥ (go), tgūm → gūm (get up). Before two consonants add i-: tismaʿ → ismaʿ (listen). 'Come' has its own form: taʿāl.",
+  "tip": "To tell a man to do something, drop the t- of the 'you' verb: tshūf → shūf (look), trūḥ → rūḥ (go), tgūm → gūm (get up). Where two consonants would start the word, add i-: tismaʿ → ismaʿ (listen). 'Come' has its own form: taʿāl.",
   "grammar": "Imperative to a man: gūm, shūf, rūḥ, taʿāl",
   "dialogue": [
    [
@@ -127,8 +126,8 @@
    ],
    [
     "B",
-    "دقيقة وحدة. روح انت",
-    "dagīga wiḥda. rūḥ inta",
+    "دقيقة. روح انت",
+    "dagīga. rūḥ inta",
     "One minute. You go."
    ],
    [
@@ -139,9 +138,9 @@
    ],
    [
     "B",
-    "زين. اسمع، وين تلفوني؟",
-    "zēn. ismaʿ, wēn tilifōni?",
-    "OK. Listen, where's my phone?"
+    "زين. اسمع، وين حطيت تلفوني؟",
+    "zēn. ismaʿ, wēn ḥaṭṭēt tilifōni?",
+    "OK. Listen, where did I put my phone?"
    ],
    [
     "A",
@@ -166,13 +165,6 @@
     "I'm late: taʼakhkhart (تأخرت)"
    ],
    [
-    "دقيقة وحدة",
-    "dagīga wiḥda",
-    "one minute (wait)",
-    "دقيقة واحدة",
-    ""
-   ],
-   [
     "روح",
     "rūḥ",
     "go (to a man)",
@@ -187,11 +179,11 @@
     "to a woman: shūfi"
    ],
    [
-    "بسرعة",
-    "b-surʿa",
-    "quickly, quick",
-    "بسرعة",
-    "yalla b-surʿa = come on, quick"
+    "تلفون",
+    "tilifōn",
+    "phone",
+    "هاتف",
+    "my phone: tilifōni; you'll also hear mobāyl (موبايل)"
    ],
    [
     "اسمع",
@@ -337,9 +329,9 @@
   "dialogue": [
    [
     "B",
-    "شباب، تعالوا هني!",
-    "shabāb, taʿālu hni!",
-    "Guys, come over here!"
+    "يا جماعة، تعالوا هني!",
+    "yā jamāʿa, taʿālu hni!",
+    "Everyone, come over here!"
    ],
    [
     "A",
@@ -381,10 +373,10 @@
     "to one man: taʿāl; to one woman: taʿāli"
    ],
    [
-    "شباب",
-    "shabāb",
-    "guys (to a group of young men)",
-    "شباب",
+    "يا جماعة",
+    "yā jamāʿa",
+    "everyone, folks (calling a group)",
+    "يا جماعة",
     ""
    ],
    [
@@ -429,7 +421,8 @@
     "دعنا",
     "khallna nrūḥ = let's go"
    ]
-  ]
+  ],
+  "culture": "Ask before you photograph people, and don't photograph women you don't know. Many families prefer that photos of the women in the family stay inside the family. (Needs a native check.)"
  },
  {
   "id": "s1u051",
@@ -447,15 +440,15 @@
    ],
    [
     "B",
-    "لا تروح! الساعة عشر بس",
-    "la trūḥ! is-sāʿa ʿashar bas",
-    "Don't go! It's only ten."
+    "لا تروح! تو الناس",
+    "la trūḥ! taww in-nās",
+    "Don't go! It's still early."
    ],
    [
     "A",
-    "لازم، عندي دوام باكر",
-    "lāzim, ʿindi dawām bāchir",
-    "I have to, I've got work tomorrow."
+    "لازم، عندي دوام باكر الصبح",
+    "lāzim, ʿindi dawām bāchir iṣ-ṣubḥ",
+    "I have to, I've got work tomorrow morning."
    ],
    [
     "B",
@@ -534,11 +527,11 @@
     "to a woman: la tsūgīn b-surʿa"
    ],
    [
-    "تلفون",
-    "tilifōn",
-    "phone",
-    "هاتف",
-    "you'll also hear mobāyl (موبايل)"
+    "تو الناس",
+    "taww in-nās",
+    "it's still early (don't leave yet)",
+    "ما زال الوقت مبكرًا",
+    ""
    ]
   ]
  },
@@ -672,9 +665,9 @@
    ],
    [
     "A",
-    "هيه، شاي، الله يخليك!",
-    "hē, chāy, allāh ykhallīk!",
-    "Yes, a tea, please!"
+    "هيه، أي شي حلو، الله يخليك!",
+    "hē, ay shay ḥilu, allāh ykhallīk!",
+    "Yes, anything sweet, please!"
    ]
   ],
   "items": [
@@ -691,13 +684,6 @@
     "do you want to go? (to a man)",
     "هل تريد أن تذهب؟",
     "to a woman: tabīn trūḥīn? (تبين تروحين؟)"
-   ],
-   [
-    "ويانا",
-    "wiyyāna",
-    "with us",
-    "معنا",
-    ""
    ],
    [
     "وين بتروحون؟",
@@ -728,10 +714,10 @@
     "ma abi aṭlaʿ = I don't want to go out"
    ],
    [
-    "عندي شغل",
-    "ʿindi shughul",
-    "I've got work (to do)",
-    "لدي عمل",
+    "أي شي",
+    "ay shay",
+    "anything",
+    "أي شيء",
     ""
    ],
    [
@@ -937,11 +923,11 @@
     ""
    ],
    [
-    "البحر",
-    "il-baḥar",
-    "the sea, the beach",
-    "البحر",
-    ""
+    "الحر",
+    "il-ḥarr",
+    "the heat",
+    "الحر",
+    "the adjective is ḥārr (hot)"
    ],
    [
     "الصيف",

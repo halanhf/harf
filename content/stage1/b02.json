@@ -1,0 +1,263 @@
+[
+  {
+    "id": "s1u027",
+    "stage": 1,
+    "title": "Showing your flat",
+    "goal": "Show a friend round your flat and say where things go",
+    "tip": "il- means “the”. Before the sun letters t, th, d, dh, r, z, s, sh, ṣ, ṭ, ẓ, l, n it turns into that letter: ish-shigga, id-darīsha. Before the others it stays il-: il-bāb, il-maṭbakh. chī and chidhi both mean “like this”.",
+    "grammar": "The article il- and the sun letters",
+    "dialogue": [
+      ["A", "ما شاء الله، الشقة حلوة!", "mā shāʼ allāh, ish-shigga ḥilwa!", "Wow, the flat's lovely!"],
+      ["B", "مشكور. هذي الصالة، والمطبخ هناك", "mashkūr. hādhi ṣ-ṣāla, w il-maṭbakh hnāk", "Thanks. This is the living room, and the kitchen's over there."],
+      ["A", "والكنبة؟ جي ولا جي؟", "w il-kanaba? chī walla chī?", "And the sofa? This way or that way?"],
+      ["B", "جي، عند الدريشة", "chī, ʿind id-darīsha", "This way, by the window."],
+      ["A", "هيه، جذي زين. والتلفزيون؟", "hē, chidhi zēn. w it-tilfizyōn?", "Yes, that's good like that. And the TV?"],
+      ["B", "عند الباب", "ʿind il-bāb", "By the door."]
+    ],
+    "items": [
+      ["الشقة", "ish-shigga", "the flat, the apartment", "الشقة", "sun letter: ish-shigga, not il-shigga"],
+      ["الصالة", "iṣ-ṣāla", "the living room", "غرفة المعيشة", "sun letter: iṣ-ṣāla"],
+      ["المطبخ", "il-maṭbakh", "the kitchen", "المطبخ", "moon letter: il- stays"],
+      ["الكنبة", "il-kanaba", "the sofa", "الأريكة", ""],
+      ["الدريشة", "id-darīsha", "the window", "النافذة", "you'll also hear ish-shubbāk (الشباك)"],
+      ["التلفزيون", "it-tilfizyōn", "the TV", "التلفاز", ""],
+      ["الباب", "il-bāb", "the door", "الباب", ""],
+      ["جي", "chī", "like this, so", "هكذا", "the everyday Emirati form; chī walla chī? = this way or that way?"],
+      ["جذي", "chidhi", "like this, so", "هكذا", "said all over the Gulf and the usual form in Kuwait; Emiratis say both"]
+    ]
+  },
+  {
+    "id": "s1u028",
+    "stage": 1,
+    "title": "Big or small, new or old",
+    "goal": "Describe your new flat to a colleague and ask about hers",
+    "tip": "Adjectives come after the noun and add -a for a feminine noun: maktab ṣghīr, bināya gadīma. il- on the noun only makes a sentence: il-ghurfa kbīra (the room is big). For “the new office” both are definite: maktabich il-yidīd.",
+    "grammar": "Adjectives after the noun; feminine -a; il- on both for “the new …”",
+    "dialogue": [
+      ["A", "ما شاء الله، عندك شقة يديدة؟", "mā shāʼ allāh, ʿindak shigga yidīda?", "Wow, you've got a new flat?"],
+      ["B", "إي، في بناية قديمة في ديرة", "ī, fi bināya gadīma fi Dēra", "Yes, in an old building in Deira."],
+      ["A", "والشقة؟ كبيرة ولا صغيرة؟", "w ish-shigga? kbīra walla ṣghīra?", "And the flat? Big or small?"],
+      ["B", "صغيرة، بس الغرفة كبيرة. ومكتبج اليديد؟", "ṣghīra, bas il-ghurfa kbīra. w maktabich il-yidīd?", "Small, but the room's big. And your new office?"],
+      ["A", "مكتبي حلو، بس الكرسي قديم!", "maktabi ḥilu, bas il-kursi gadīm!", "My office is nice, but the chair's old!"]
+    ],
+    "items": [
+      ["غرفة", "ghurfa", "room", "غرفة", "UAE also: ḥijra (حجرة)"],
+      ["كبير", "kbīr", "big (masculine)", "كبير", "feminine: kbīra; Kuwait: chbīr"],
+      ["صغير", "ṣghīr", "small (masculine)", "صغير", "feminine: ṣghīra"],
+      ["يديد", "yidīd", "new (masculine)", "جديد", "feminine: yidīda; you'll see written جديد"],
+      ["قديم", "gadīm", "old (for things, masculine)", "قديم", "feminine: gadīma; for people say kbīr: rayyāl kbīr, an old man"],
+      ["بناية", "bināya", "building", "بناية / مبنى", ""],
+      ["مكتب", "maktab", "office, desk", "مكتب", ""],
+      ["الكرسي", "il-kursi", "the chair", "الكرسي", ""],
+      ["ولا", "walla", "or (in questions)", "أم / أو", "kbīra walla ṣghīra? = big or small?; not the same as wala (not even)"]
+    ]
+  },
+  {
+    "id": "s1u029",
+    "stage": 1,
+    "title": "Who are these people?",
+    "goal": "Say who people in a photo are: where they're from and what they're like",
+    "tip": "For people, plural adjectives end in -īn: ṭayyib → ṭayybīn (kind), mashghūl → mashghūlīn (busy), imārāti → imārātiyyīn (Emiratis). hādhēla means “these”: hādhēla rabʿi, these are my friends.",
+    "grammar": "Plural adjectives for people (-īn); hādhēla “these”",
+    "dialogue": [
+      ["A", "منو هذيلا؟", "minu hādhēla?", "Who are these people?"],
+      ["B", "هذيلا ربعي في الشغل", "hādhēla rabʿi fi sh-shughul", "These are my mates from work."],
+      ["A", "ما شاء الله! كلهم إماراتيين؟", "mā shāʼ allāh! kilhum imārātiyyīn?", "Nice! Are they all Emirati?"],
+      ["B", "لا، في إماراتيين وهنود، وأنا بريطاني", "la, fī imārātiyyīn w hnūd, w ana brīṭāni", "No, there are Emiratis and Indians, and I'm British."],
+      ["A", "زين. والشباب طيبين؟", "zēn. w ish-shabāb ṭayybīn?", "Good. And are the guys nice?"],
+      ["B", "إي، وايد طيبين، بس مشغولين", "ī, wāyid ṭayybīn, bas mashghūlīn", "Yes, really nice, but busy."]
+    ],
+    "items": [
+      ["هذيلا", "hādhēla", "these (people or things)", "هؤلاء", "Kuwait: hadhōl (هذول)"],
+      ["ربعي", "rabʿi", "my friends, my mates", "أصدقائي", "your mates: rabʿak; to a woman: rabʿich"],
+      ["إماراتي", "imārāti", "Emirati (a man)", "إماراتي", "a woman: imārātiyya; plural: imārātiyyīn"],
+      ["بريطاني", "brīṭāni", "British (a man)", "بريطاني", "a woman: brīṭāniyya; ana brīṭāni = I'm British"],
+      ["هنود", "hnūd", "Indians", "هنود", "one man: hindi"],
+      ["الشباب", "ish-shabāb", "the guys, the young men", "الشباب", "yā shabāb! = hey guys!"],
+      ["طيبين", "ṭayybīn", "kind, nice (people)", "طيبون", "one man: ṭayyib; one woman: ṭayyba"],
+      ["مشغول", "mashghūl", "busy (a man)", "مشغول", "a woman: mashghūla; a group: mashghūlīn"],
+      ["كلهم", "kilhum", "all of them", "كلهم", ""]
+    ],
+    "culture": "Most people who live in Dubai aren't Emirati, so many offices and shops work in English, and your colleagues may speak other languages at home. Emiratis notice when a foreigner makes the effort to speak their dialect, even a little."
+  },
+  {
+    "id": "s1u030",
+    "stage": 1,
+    "title": "This one or that one?",
+    "goal": "Choose between things in a shop with “this” and “that”",
+    "tip": "hādha (m.) and hādhi (f.) mean “this”; hādhāk (m.) and hādhīch (f.) mean “that, over there”. With a noun, the noun takes il-: hādha l-gamīṣ, hādhīch is-sāʿa. Alone they mean “this one, that one”: hādhāk ḥilu.",
+    "grammar": "Demonstratives near and far: hādha, hādhi, hādhāk, hādhīch",
+    "dialogue": [
+      ["B", "شو رأيك؟ هذا القميص ولا هذاك؟", "shu raʼyak? hādha l-gamīṣ walla hādhāk?", "What do you think? This shirt or that one?"],
+      ["A", "هذاك الأبيض حلو", "hādhāk il-abyaẓ ḥilu", "That white one's nice."],
+      ["B", "والأسود؟", "w il-aswad?", "And the black one?"],
+      ["A", "مب حلو. بس هذيك الساعة حلوة!", "mub ḥilu. bas hādhīch is-sāʿa ḥilwa!", "Not nice. But that watch over there is nice!"],
+      ["B", "إي والله، بس غالية. باخذ القميص", "ī wallāh, bas ghālya. bākhidh il-gamīṣ", "It really is, but it's expensive. I'll take the shirt."]
+    ],
+    "items": [
+      ["هذا", "hādha", "this, this one (masculine)", "هذا", "feminine: hādhi (هذي)"],
+      ["هذاك", "hādhāk", "that, that one (masculine)", "ذلك", "feminine: hādhīch (هذيك)"],
+      ["هذيك", "hādhīch", "that, that one (feminine)", "تلك", "masculine: hādhāk; you'll see written هذيج"],
+      ["شو رأيك؟", "shu raʼyak?", "what do you think? (to a man)", "ما رأيك؟", "to a woman: shu raʼyich?"],
+      ["القميص", "il-gamīṣ", "the shirt", "القميص", ""],
+      ["أبيض", "abyaẓ", "white (masculine)", "أبيض", "feminine: bēẓa (بيضا)"],
+      ["أسود", "aswad", "black (masculine)", "أسود", "feminine: sōda (سودا)"],
+      ["باخذ", "bākhidh", "I'll take (it)", "سآخذ", "when buying: bākhidh hādha = I'll take this one"]
+    ]
+  },
+  {
+    "id": "s1u031",
+    "stage": 1,
+    "title": "This time, these days",
+    "goal": "Help a friend choose a kandura, using “this time”, “this year” and “these days”",
+    "tip": "hal- is a short “this” or “these” joined to a noun: hal-marra (this time), hal-ayyām (these days). It follows the sun-letter rule: has-sana (this year), hash-shay (this thing).",
+    "grammar": "hal- + noun: hal-marra, hal-ayyām, has-sana, hash-shay",
+    "dialogue": [
+      ["A", "شو رأيك في هالكندورة؟", "shu raʼyak fi hal-kandūra?", "What do you think of this kandura?"],
+      ["B", "حلوة، بس يعني، كل هالشي أبيض!", "ḥilwa, bas yaʿni, kill hash-shay abyaẓ!", "It's nice, but, I mean, all this stuff is white!"],
+      ["A", "لا، هالأيام في ألوان وايد", "la, hal-ayyām fī alwān wāyid", "No, these days there are lots of colours."],
+      ["B", "والله؟ وهالمرة شو تبي؟", "wallāh? w hal-marra shu tabi?", "Really? So what do you want this time?"],
+      ["A", "هالسنة أبي شي ثاني، لون ثاني", "has-sana abi shay thāni, lōn thāni", "This year I want something different, another colour."]
+    ],
+    "items": [
+      ["شي", "shay", "thing, something", "شيء", "shay thāni = something else"],
+      ["هالشي", "hash-shay", "this (thing), this stuff", "هذا الشيء", "shu hash-shay? = what's this?"],
+      ["هالمرة", "hal-marra", "this time", "هذه المرة", ""],
+      ["هالأيام", "hal-ayyām", "these days", "هذه الأيام", ""],
+      ["هالسنة", "has-sana", "this year", "هذه السنة", ""],
+      ["يعني", "yaʿni", "I mean, like, so", "أعني", "fast speech: aani"],
+      ["لون", "lōn", "colour", "لون", "plural: alwān (ألوان)"],
+      ["ألوان", "alwān", "colours", "ألوان", "one colour: lōn"]
+    ],
+    "culture": "The kandūra is the long robe Emirati men wear, usually white, with a ghitra (headcloth) on top; in winter you'll also see darker colours. Many Emirati women wear a black ʿabāya and a shēla (headscarf). These are culture words: you'll hear them more than you'll need to say them."
+  },
+  {
+    "id": "s1u032",
+    "stage": 1,
+    "title": "Checkpoint 1.1: visiting Sēf's family",
+    "goal": "Visit Umm Sēf with a friend: the welcome, how-are-you and thanks for a group",
+    "tip": "To two or more people, -ak and -ich become -kum: shḥālkum?, ḥayyākum allāh, ʿasākum b-khēr. Commands add -u (tfaẓẓalu), and mashkūr becomes mashkūrīn.",
+    "grammar": "checkpoint 1.1: group forms (-kum, -u, -īn)",
+    "dialogue": [
+      ["A", "هلا والله، حياكم الله! شحالكم؟ عساكم بخير؟", "hala wallāh, ḥayyākum allāh! shḥālkum? ʿasākum b-khēr?", "Hello, welcome, both of you! How are you? All well, I hope?"],
+      ["B", "بخير، الله يحييج. وانتي شحالج يا أم سيف؟", "b-khēr, allāh yḥayyīch. w inti shḥālich yā umm Sēf?", "Fine, God bless you. And how are you, Umm Saif?"],
+      ["A", "الحمد لله، الله يسلمكم. تفضلوا", "il-ḥamdu lillāh, allāh ysallimkum. tfaẓẓalu", "Fine, thank God, God keep you both. Come in."],
+      ["B", "مشكورة. هذي حلويات حق البيت", "mashkūra. hādhi ḥalawiyyāt ḥagg il-bēt", "Thank you. Here are some sweets for the house."],
+      ["A", "مشكورين، ما قصرتوا!", "mashkūrīn, mā gaṣṣartu!", "Thank you both, that's so kind!"],
+      ["B", "ما سوينا شي", "mā sawwēna shay", "It's nothing."]
+    ],
+    "items": [
+      ["شحالكم؟", "shḥālkum?", "how are you? (to a group)", "كيف حالكم؟", "to one man: shḥālak; to one woman: shḥālich"],
+      ["حياكم الله", "ḥayyākum allāh", "welcome (to a group)", "أهلًا وسهلًا بكم", "to one man: ḥayyāk allāh; reply: allāh yḥayyīk, to a woman allāh yḥayyīch"],
+      ["عساكم بخير", "ʿasākum b-khēr", "hope you're well (to a group)", "أرجو أن تكونوا بخير", "to one man: ʿasāk b-khēr; to one woman: ʿasāch b-khēr"],
+      ["تفضلوا", "tfaẓẓalu", "come in / here you go (to a group)", "تفضلوا", "to one man: tfaẓẓal; to one woman: tfaẓẓali"],
+      ["الله يسلمكم", "allāh ysallimkum", "God keep you (to a group)", "", "to one man: allāh ysallmak; to one woman: allāh ysallmich"],
+      ["مشكورين", "mashkūrīn", "thank you (to a group)", "شكرًا لكم", "to one man: mashkūr; to one woman: mashkūra"]
+    ],
+    "culture": "On a home visit the greetings go back and forth: how are you, hope you're well, praise God, God keep you. Answer each one with a formula; nobody expects news yet. Bringing something small, such as sweets or dates, is a usual courtesy."
+  },
+  {
+    "id": "s1u033",
+    "stage": 1,
+    "title": "Where did you go last night?",
+    "goal": "Say where you went, when you got back, and that you didn't go",
+    "tip": "For “I” in the past, add -t: riḥt (I went), rijaʿt (I came back). The same form means “you (a man)”: wēn riḥt? (where did you go?). For “didn't”, put ma first: ma riḥt (I didn't go).",
+    "grammar": "Past tense: I and you (a man) -t; ma + past",
+    "dialogue": [
+      ["A", "وين رحت البارحة؟", "wēn riḥt il-bārḥa?", "Where did you go last night?"],
+      ["B", "رحت المول ويا ربعي", "riḥt il-mōl wiyya rabʿi", "I went to the mall with my mates."],
+      ["A", "زين. ورجعت متى؟", "zēn. w rijaʿt mita?", "Nice. And when did you get back?"],
+      ["B", "رجعت الساعة ثنتين", "rijaʿt is-sāʿa thintēn", "I got back at two."],
+      ["A", "وما رحت الجامعة الصبح؟", "w ma riḥt il-jāmʿa ṣ-ṣubḥ?", "And you didn't go to uni this morning?"],
+      ["B", "لا، ما رحت. تعبت وايد", "la, ma riḥt. tiʿabt wāyid", "No, I didn't. I was really tired."]
+    ],
+    "items": [
+      ["البارحة", "il-bārḥa", "last night, yesterday", "البارحة / أمس", "you already know ams (yesterday)"],
+      ["رحت", "riḥt", "I went / you went (to a man)", "ذهبتُ / ذهبتَ", "to a woman: riḥti (رحتي)"],
+      ["وين رحت؟", "wēn riḥt?", "where did you go? (to a man)", "أين ذهبتَ؟", "to a woman: wēn riḥti?"],
+      ["ما رحت", "ma riḥt", "I didn't go", "لم أذهب", ""],
+      ["رجعت", "rijaʿt", "I came back / you came back (to a man)", "رجعتُ / رجعتَ", "to a woman: rijaʿti (رجعتي)"],
+      ["تعبت", "tiʿabt", "I got tired / you got tired (to a man)", "تعبتُ / تعبتَ", "to a woman: tiʿabti (تعبتي); tiʿabt wāyid = I was really tired"],
+      ["المول", "il-mōl", "the mall", "المركز التجاري", ""],
+      ["ثنتين", "thintēn", "two (o'clock); two (with feminine nouns)", "اثنتان", "is-sāʿa thintēn = at two o'clock"]
+    ]
+  },
+  {
+    "id": "s1u034",
+    "stage": 1,
+    "title": "Did you have coffee?",
+    "goal": "Chat with Maryam about the morning: when you got in and what you've done",
+    "tip": "To a woman, “you” in the past adds -ti: wiṣalti? (did you get in?), shirabti? (did you have a drink?). To a man it's the same as “I”: wiṣalt can mean “I arrived” or “you (a man) arrived”.",
+    "grammar": "Past tense: you (a woman) -ti",
+    "dialogue": [
+      ["B", "صباح الخير يا مريم! متى وصلتي؟", "ṣabāḥ il-khēr yā Maryam! mita wiṣalti?", "Good morning, Maryam! When did you get in?"],
+      ["A", "صباح النور. وصلت الحين. وانت؟", "ṣabāḥ in-nūr. wiṣalt il-ḥīn. w inta?", "Good morning. I've just got in. And you?"],
+      ["B", "وصلت الساعة ثمان. شربتي قهوة؟", "wiṣalt is-sāʿa thamān. shirabti gahwa?", "I got in at eight. Have you had a coffee?"],
+      ["A", "لا، ما شربت. كتبت الإيميل حق المدير؟", "la, ma shirabt. kitabt il-īmēl ḥagg il-mudīr?", "No, I haven't. Did you write the email to the manager?"],
+      ["B", "إي، كتبت. يلا، قهوة؟", "ī, kitabt. yalla, gahwa?", "Yes, I did. Come on, coffee?"],
+      ["A", "يلا، بس بسرعة!", "yalla, bas b-surʿa!", "OK, but quickly!"]
+    ],
+    "items": [
+      ["وصلت", "wiṣalt", "I arrived / you arrived (to a man)", "وصلتُ / وصلتَ", "to a woman: wiṣalti (وصلتي)"],
+      ["متى وصلتي؟", "mita wiṣalti?", "when did you get here? (to a woman)", "متى وصلتِ؟", "to a man: mita wiṣalt?"],
+      ["شربت", "shirabt", "I drank / you drank (to a man)", "شربتُ / شربتَ", "to a woman: shirabti (شربتي)"],
+      ["ما شربت", "ma shirabt", "I didn't drink, I haven't had (one)", "لم أشرب", ""],
+      ["كتبت", "kitabt", "I wrote / you wrote (to a man)", "كتبتُ / كتبتَ", "to a woman: kitabti (كتبتي)"],
+      ["الإيميل", "il-īmēl", "the email", "البريد الإلكتروني", ""],
+      ["صباح النور", "ṣabāḥ in-nūr", "good morning (the reply)", "صباح النور", "the reply to ṣabāḥ il-khēr"],
+      ["بسرعة", "b-surʿa", "quickly", "بسرعة", ""]
+    ]
+  },
+  {
+    "id": "s1u035",
+    "stage": 1,
+    "title": "He went, she went",
+    "goal": "Ask a colleague where people are and say where they went",
+    "tip": "“He” is the bare verb: wiṣal (he arrived), rāḥ (he went). “She” adds -at, and the vowel before it drops: wiṣlat, rijʿat. In writing wiṣlat (وصلت) looks like wiṣalt (I arrived): the sentence tells you which.",
+    "grammar": "Past tense: he (no ending) and she (-at)",
+    "dialogue": [
+      ["B", "المدير وصل؟", "il-mudīr wiṣal?", "Has the manager got in?"],
+      ["A", "إي، وصل قبل شوي، بس راح الاجتماع", "ī, wiṣal gabil shwayy, bas rāḥ il-ijtimāʿ", "Yes, he got in a moment ago, but he's gone to the meeting."],
+      ["B", "ومريم؟ وصلت؟", "w Maryam? wiṣlat?", "And Maryam? Has she got in?"],
+      ["A", "إي، بس رجعت البيت. تعبت شوي", "ī, bas rijʿat il-bēt. tiʿbat shwayy", "Yes, but she went back home. She wasn't feeling well."],
+      ["B", "سلامتها!", "salāmat-ha!", "I hope she's OK!"],
+      ["A", "الله يسلمك", "allāh ysallmak", "God keep you."]
+    ],
+    "items": [
+      ["وصل", "wiṣal", "he arrived, he got in", "وصل", "she: wiṣlat (وصلت)"],
+      ["راح", "rāḥ", "he went", "ذهب", "she: rāḥat (راحت)"],
+      ["راحت", "rāḥat", "she went", "ذهبت", "he: rāḥ"],
+      ["رجع", "rijaʿ", "he came back, he went back", "رجع / عاد", "she: rijʿat (رجعت)"],
+      ["قبل", "gabil", "ago; before", "قبل", "gabil shwayy = a moment ago; gabil sāʿa = an hour ago"],
+      ["الاجتماع", "il-ijtimāʿ", "the meeting", "الاجتماع", ""],
+      ["البيت", "il-bēt", "home, the house", "البيت", "rāḥ il-bēt = he went home"],
+      ["سلامتها", "salāmat-ha", "I hope she's OK (when someone is ill)", "سلامتها", "about a man: salāmtah; reply: allāh ysallmak"]
+    ]
+  },
+  {
+    "id": "s1u036",
+    "stage": 1,
+    "title": "We went to the beach",
+    "goal": "Tell Maryam where you and Sēf went and when you got home",
+    "tip": "“We” adds -na: riḥna (we went), wiṣalna (we arrived), ṭilaʿna (we went out). ma works the same: ma riḥna (we didn't go). For “Sēf and I”, Gulf puts ana first: ana w Sēf.",
+    "grammar": "Past tense: we -na",
+    "dialogue": [
+      ["A", "طلعت البارحة؟", "ṭilaʿt il-bārḥa?", "Did you go out last night?"],
+      ["B", "إي، طلعنا أنا وسيف", "ī, ṭilaʿna ana w Sēf", "Yes, Sēf and I went out."],
+      ["A", "زين! وين؟", "zēn! wēn?", "Nice! Where to?"],
+      ["B", "رحنا البحر، أول مرة!", "riḥna l-baḥar, awwal marra!", "We went to the beach, the first time!"],
+      ["A", "حلو! ورجعت متى؟", "ḥilu! w rijaʿt mita?", "Lovely! And when did you get back?"],
+      ["B", "وصلنا البيت متأخر، الساعة وحدة", "wiṣalna l-bēt mitʾakhkhir, is-sāʿa wiḥda", "We got home late, at one."]
+    ],
+    "items": [
+      ["طلعت", "ṭilaʿt", "I went out / you went out (to a man)", "خرجتُ / خرجتَ", "to a woman: ṭilaʿti (طلعتي)"],
+      ["طلعنا", "ṭilaʿna", "we went out", "خرجنا", ""],
+      ["رحنا", "riḥna", "we went", "ذهبنا", ""],
+      ["وصلنا", "wiṣalna", "we arrived, we got there", "وصلنا", ""],
+      ["أول", "awwal", "first", "أول", "awwal marra = the first time"],
+      ["البحر", "il-baḥar", "the sea, the beach", "البحر", ""],
+      ["متأخر", "mitʾakhkhir", "late (a man)", "متأخر", "a woman: mitʾakhkhra; wiṣalna mitʾakhkhir = we got there late"],
+      ["الساعة وحدة", "is-sāʿa wiḥda", "one o'clock, at one", "الساعة الواحدة", "two o'clock: is-sāʿa thintēn"]
+    ]
+  }
+]

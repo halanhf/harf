@@ -134,7 +134,7 @@
    [
     "A",
     "أبي فواكه. وخذ كيس، انزين؟",
-    "abi fawākih. w khidh kīs, inzēn?",
+    "abi fawākih. w khudh kīs, inzēn?",
     "I want fruit. And take a bag, OK?"
    ],
    [
@@ -221,7 +221,7 @@
   "stage": 1,
   "title": "Ordering dinner in",
   "goal": "Greet Sēf after his shower, agree on dinner, order from a restaurant and insist on paying",
-  "tip": "After a shower or a haircut say naʿīman; the reply is allāh yinʿim ʿalēk. Endings recap: ʿala ḥsābi 'on me'. Insist with la wallāh: la wallāh, hal-marra ʿalayy 'no way, this time it's on me'.",
+  "tip": "After a shower or a haircut say naʿīman; the reply is allāh yinʿim ʿalēk. Endings recap: ʿala ḥsābi 'on me'. Insist with la wallāh: la wallāh, hal-marra ʿalay 'no way, this time it's on me'.",
   "grammar": "recycle: possessives, past, modals",
   "dialogue": [
    [
@@ -251,7 +251,7 @@
    [
     "B",
     "لا والله، هالمرة علي!",
-    "la wallāh, hal-marra ʿalayy!",
+    "la wallāh, hal-marra ʿalay!",
     "No way, this time it's on me!"
    ]
   ],
@@ -292,13 +292,6 @@
     "the food: il-akil"
    ],
    [
-    "مطعم",
-    "maṭʿam",
-    "restaurant",
-    "مطعم",
-    ""
-   ],
-   [
     "دياي",
     "diyāy",
     "chicken",
@@ -326,7 +319,7 @@
   "stage": 1,
   "title": "Lunch at Sēf's house",
   "goal": "Answer Umm Sēf's welcome, praise her cooking and say you're full",
-  "tip": "To a woman, use -ich: allāh yḥayyīch, allāh yʿāfīch. tislam īdich 'bless your hand' thanks the cook; the hand is the subject, so tislam doesn't change. Past recap: shbaʿt 'I'm full', ma kalt shay 'you haven't eaten anything'.",
+  "tip": "To a woman, use -ich: allāh yḥayyīch, allāh yʿāfīch. tislam īdich 'bless your hand' thanks the cook; the hand is the subject, so tislam doesn't change. Past recap: shbaʿt 'I'm full'. Endings: ṣaḥnak 'your plate'.",
   "grammar": "recycle: possessives, past, modals",
   "dialogue": [
    [
@@ -343,9 +336,9 @@
    ],
    [
     "A",
-    "كل، كل! انت ما كلت شي",
-    "kil, kil! inta ma kalt shay",
-    "Eat, eat! You haven't eaten anything."
+    "كل، كل! صحنك فاضي",
+    "kil, kil! ṣaḥnak fāẓi",
+    "Eat, eat! Your plate's empty."
    ],
    [
     "B",
@@ -389,11 +382,18 @@
     ""
    ],
    [
-    "ما كلت شي",
-    "ma kalt shay",
-    "you haven't eaten anything (to a man) / I haven't eaten anything",
-    "لم تأكل شيئًا",
-    "to a woman: ma kalti shay"
+    "صحن",
+    "ṣaḥan",
+    "plate, dish",
+    "صحن",
+    "your plate: ṣaḥnak"
+   ],
+   [
+    "فاضي",
+    "fāẓi",
+    "empty; free (not busy)",
+    "فارغ",
+    "a woman, or a feminine thing: fāẓya"
    ],
    [
     "شبعت",
@@ -855,7 +855,7 @@
   "stage": 1,
   "title": "Checkpoint 1.4: a day out with Sēf",
   "goal": "Meet Sēf and his friends: find them, suggest lunch and argue over the bill, speaking to a group",
-  "tip": "Talking to a group, use intu and plural endings. Adjectives take -īn: yōʿānīn 'hungry', garībīn 'close'; yāy becomes yāyīn 'coming'. ḥsāb takes -na for 'us': ʿala ḥsābna 'it's on us'.",
+  "tip": "Talking to a group, use intu and plural endings. Adjectives take -īn: yōʿānīn 'hungry', garībīn 'close'; yāy becomes yāyīn 'coming', and verbs take -ūn: tabūn? 'do you want?'. ḥsāb takes -na for 'us': ʿala ḥsābna 'it's on us'.",
   "grammar": "checkpoint 1.4: recycle s1u053–s1u064",
   "dialogue": [
    [
@@ -872,9 +872,9 @@
    ],
    [
     "B",
-    "زين. انتو يوعانين؟ نتغدى في المول؟",
-    "zēn. intu yōʿānīn? nitghadda fi l-mōl?",
-    "Great. Are you hungry? Shall we have lunch at the mall?"
+    "زين. انتو يوعانين؟ تبون نتغدى في المول؟",
+    "zēn. intu yōʿānīn? tabūn nitghadda fi l-mōl?",
+    "Great. Are you hungry? Do you want to have lunch at the mall?"
    ],
    [
     "A",
@@ -925,11 +925,11 @@
     "one man: yōʿān; one woman: yōʿāna"
    ],
    [
-    "نتغدى",
-    "nitghadda",
-    "we have lunch / shall we have lunch?",
-    "نتغدى",
-    "I've had lunch: tghaddēt (تغديت)"
+    "تبون؟",
+    "tabūn?",
+    "do you want? (to a group)",
+    "هل تريدون؟",
+    "to one man: tabi?; to one woman: tabīn?"
    ],
    [
     "على حسابنا",
@@ -945,7 +945,7 @@
   "stage": 1,
   "title": "A1 exit: where I live and who I know",
   "goal": "Tell Umm Sēf where you live, who you live with and what the area is like",
-  "tip": "sākin 'living' works like rāyiḥ: a man says sākin, a woman sākna. The endings do the rest: b-rūḥi 'by myself', rabīʿi 'my friend', yammna 'next to us', aʿarfah 'I know him'.",
+  "tip": "sākin 'living' works like rāyiḥ: a man says sākin, a woman sākna. Adjectives agree too: il-manṭiga hādya 'the area's quiet', il-jīrān ṭayybīn 'the neighbours are nice'. Endings: b-rōḥak 'on your own', aʿarfah 'I know him'.",
   "grammar": "A1 exit: describe where I live and people I know",
   "dialogue": [
    [
@@ -956,20 +956,20 @@
    ],
    [
     "B",
-    "ساكن في شقة صغيرة في دبي",
-    "sākin fi shagga ṣghīra fi Dbayy",
-    "In a small flat in Dubai."
+    "في دبي، في شقة صغيرة",
+    "fi Dbayy, fi shagga ṣghīra",
+    "In Dubai, in a small flat."
    ],
    [
     "A",
     "ساكن بروحك؟",
-    "sākin b-rūḥak?",
+    "sākin b-rōḥak?",
     "Do you live on your own?"
    ],
    [
     "B",
     "لا، ويا ربيعي. أعرفه من الجامعة",
-    "la, wiyya rabīʿi. aʿarfah min il-jāmʿa",
+    "la, wiyya rbīʿi. aʿarfah min il-jāmʿa",
     "No, with my friend. I know him from university."
    ],
    [
@@ -980,9 +980,9 @@
    ],
    [
     "B",
-    "هيه، حلوة وايد. والمترو يمنا",
-    "hē, ḥilwa wāyid. w il-mitro yammna",
-    "Yes, really nice. And the metro's right next to us."
+    "هيه، هادية. والجيران طيبين",
+    "hē, hādya. w il-jīrān ṭayybīn",
+    "Yes, it's quiet. And the neighbours are nice."
    ]
   ],
   "items": [
@@ -1001,20 +1001,6 @@
     ""
    ],
    [
-    "بروحي",
-    "b-rūḥi",
-    "by myself, alone",
-    "وحدي",
-    "to a man: b-rūḥak; to a woman: b-rūḥich"
-   ],
-   [
-    "ربيعي",
-    "rabīʿi",
-    "my friend (a man)",
-    "صديقي",
-    "UAE; also common: ṣāḥbi (صاحبي)"
-   ],
-   [
     "أعرفه",
     "aʿarfah",
     "I know him",
@@ -1027,6 +1013,20 @@
     "area, neighbourhood",
     "منطقة",
     ""
+   ],
+   [
+    "هادية",
+    "hādya",
+    "quiet, calm (a feminine noun: area, street)",
+    "هادئة",
+    "for a masculine noun: hādi (هادي)"
+   ],
+   [
+    "الجيران",
+    "il-jīrān",
+    "the neighbours",
+    "الجيران",
+    "one neighbour: jār"
    ]
   ],
   "culture": "Most people living in Dubai aren't Emirati, so English is often the working language in shops and offices. Start in Arabic anyway: a few Gulf words usually change the tone of the whole conversation."
