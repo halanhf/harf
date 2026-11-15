@@ -158,7 +158,7 @@
     "A",
     "هيه، بس والله الأزرق لايق عليك، أحلى من الأحمر",
     "hē, bas wallāh il-azrag lāyig ʿalēk, aḥla min il-aḥmar",
-    "Yes, but honestly the blue suits you, it's nicer than the red."
+    "Yes, but honestly the blue would suit you, it's nicer than the red."
    ],
    [
     "B",
@@ -465,7 +465,7 @@
   "id": "s2u035",
   "stage": 2,
   "title": "Splitting the bill",
-  "goal": "Pay at a café with Sēf: insist on sharing, say how you'll pay, leave the change",
+  "goal": "Pay at a café with Sēf: insist on sharing and say how you will pay; Sēf leaves the change",
   "tip": "Recap: compare places with aḥsan min and arkhaṣ; mithil also makes 'as usual': mithil kill marra. Paying: adfaʿ 'I pay', badfaʿ 'I'll pay', tidfaʿ? 'are you paying?'. nuṣṣ nuṣṣ 'half and half' splits the bill between two.",
   "grammar": "recycle: comparatives and mithil",
   "dialogue": [
@@ -572,7 +572,7 @@
    [
     "في جيبي",
     "fi jēbi",
-    "on me, in my pocket",
+    "in my pocket, with me (money)",
     "في جيبي",
     ""
    ]
@@ -584,7 +584,7 @@
   "stage": 2,
   "title": "Checkpoint 2.2: a present for Sēf's mum",
   "goal": "Call Sēf, who is shopping with Fahad: ask the group what they're doing, compare presents and offer to chip in",
-  "tip": "To a group, past verbs take -tu (ligētu 'you found') and present verbs -ūn (shu gāʿdīn tsawwūn?). shrāykum? is short for shu raʼykum? 'what do you think?'; before a verb it means 'how about…?': shrāykum nrūḥ? aḥla shay 'the best thing' is a superlative.",
+  "tip": "To a group, past verbs take -tu (ligētu 'you found') and present verbs -ūn (shu gāʿdīn tsawwūn?). shu raʼyak? becomes shu raʼykum? for a group; before a verb it means 'how about…?': shu raʼykum nrūḥ? aḥla shay 'the best thing' is a superlative.",
   "grammar": "checkpoint 2.2: recycle s2u018–s2u035 (gāʿid, comparatives, superlatives, mithil)",
   "dialogue": [
    [
@@ -613,8 +613,8 @@
    ],
    [
     "B",
-    "شرايكم نروح سوق العطور في ديرة؟",
-    "shrāykum nrūḥ sūg il-ʿuṭūr fi Dēra?",
+    "شو رأيكم نروح سوق العطور في ديرة؟",
+    "shu raʼykum nrūḥ sūg il-ʿuṭūr fi Dēra?",
     "How about we go to the perfume souq in Deira?"
    ],
    [
@@ -653,11 +653,11 @@
     ""
    ],
    [
-    "شرايكم؟",
-    "shrāykum?",
+    "شو رأيكم؟",
+    "shu raʼykum?",
     "what do you think? how about…? (to a group)",
     "ما رأيكم؟",
-    "to one man: shrāyak? (شرايك); to one woman: shrāyich? (شرايج); UAE also: shu raʼykum (شو رأيكم)"
+    "to one man: shu raʼyak? (شو رأيك); to one woman: shu raʼyich?; you'll see written شرايكم (Kuwait)"
    ],
    [
     "بيزات",
@@ -814,15 +814,15 @@
    ],
    [
     "B",
-    "الحمد لله بخير. لما كنتي صغيرة، وين كنتي ساكنة؟",
-    "il-ḥamdu lillāh b-khēr. lamma kinti ṣghīra, wēn kinti sākna?",
-    "They're fine, thank God. When you were little, where did you live?"
+    "الحمد لله بخير. سيف يقول كنتي ساكنة في ديرة؟",
+    "il-ḥamdu lillāh b-khēr. Sēf ygūl kinti sākna fi Dēra?",
+    "They're fine, thank God. Sēf says you used to live in Deira?"
    ],
    [
     "A",
-    "أيام زمان كنا ساكنين في ديرة، قريب من البحر",
-    "ayyām zamān kinna sāknīn fi Dēra, garīb min il-baḥar",
-    "In the old days we lived in Deira, near the sea."
+    "هيه، أيام زمان كنا ساكنين في ديرة، قريب من البحر",
+    "hē, ayyām zamān kinna sāknīn fi Dēra, garīb min il-baḥar",
+    "Yes, in the old days we lived in Deira, near the sea."
    ],
    [
     "B",
