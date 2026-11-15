@@ -55,7 +55,7 @@ head = f"""<!doctype html>
 html = head + rest + "</body>\n</html>\n"
 sw_src = (root / "pwa" / "sw.js").read_text(encoding="utf-8").replace("\r\n", "\n")
 # a new page, worker, icon or font gets a new cache (icons and fonts are served cache-first, so they'd never refresh otherwise)
-assets = b"".join(f.relative_to(root).as_posix().encode() + f.read_bytes().replace(b"\r\n", b"\n") for f in sorted((root / "pwa").rglob("*")) if f.is_file() and f.name != "sw.js")
+assets = b"".join(f.relative_to(root).as_posix().encode() + f.read_bytes().replace(b"\r\n", b"\n") for f in sorted((root / "pwa").rglob("*"), key=lambda p: p.as_posix()) if f.is_file() and f.name != "sw.js")  # sort by the posix string: windows paths sort case-insensitively, which changed the build id
 build = hashlib.sha256((html + sw_src).encode() + assets).hexdigest()[:10]
 
 if out.exists(): shutil.rmtree(out)
