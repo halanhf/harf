@@ -96,7 +96,7 @@
    [
     "ما ذاكرت",
     "ma dhākart",
-    "I haven't revised, I didn't study (for an exam)",
+    "I haven't revised, I didn't study (for an exam); you haven't revised (to a man)",
     "لم أذاكر",
     "to a woman (you haven't): ma dhākarti (ما ذاكرتي)"
    ],
@@ -157,7 +157,7 @@
     "A",
     "لا تنام! ترا شكله ياي!",
     "la tnām! tara shaklah yāy!",
-    "Don't fall asleep! Mind you, looks like he's coming!"
+    "Don't fall asleep! Watch out, looks like he's coming!"
    ]
   ],
   "items": [
@@ -199,7 +199,7 @@
    [
     "ما نمت عدل",
     "ma nimt ʿadil",
-    "I didn't sleep properly",
+    "I didn't sleep properly; you didn't sleep properly (to a man)",
     "لم أنم جيدًا",
     "to a woman (you didn't): ma nimti ʿadil"
    ],
@@ -243,7 +243,7 @@
     "A",
     "ترا المطعم اللي نحبه مسكر اليوم",
     "tara l-maṭʿam illi nḥibbah msakkar il-yōm",
-    "Mind you, the restaurant we like is closed today."
+    "Just so you know, the restaurant we like is closed today."
    ],
    [
     "B",
@@ -352,9 +352,9 @@
    ],
    [
     "B",
-    "قلت لك ما أقدر، لازم أذاكر",
-    "gilt-lak ma agdar, lāzim adhākir",
-    "I told you I can't, I have to revise."
+    "قلت لكم ما أقدر، لازم أذاكر",
+    "gilt-lkum ma agdar, lāzim adhākir",
+    "I told you lot I can't, I have to revise."
    ],
    [
     "A",
@@ -384,7 +384,7 @@
     "A",
     "عيل بييب لك واحد. ترا بمر عليك!",
     "ʿayal bayīb-lak wāḥid. tara bamurr ʿalēk!",
-    "Then I'll bring you one. Mind you, I'm picking you up!"
+    "Then I'll bring you one. And just so you know, I'm picking you up!"
    ]
   ],
   "items": [
@@ -480,9 +480,9 @@
    ],
    [
     "A",
-    "غريبة! وترا محد قال لي عن الاجتماع بعد",
-    "gharība! w tara maḥḥad gāl-li ʿan il-ijtimāʿ baʿad",
-    "That's odd! And mind you, nobody told me about the meeting either."
+    "غريبة! وترا محد قال لي شي بعد",
+    "gharība! w tara maḥḥad gāl-li shay baʿad",
+    "That's odd! And just so you know, nobody said a thing to me either."
    ],
    [
     "B",
@@ -603,9 +603,9 @@
    ],
    [
     "B",
-    "ولا واحد! كلها مسكرة، الساعة ثنتين بالليل",
-    "wala wāḥid! killha msakkara, is-sāʿa thintēn bil-lēl",
-    "Not one! They're all shut, it's two in the morning."
+    "ولا واحد! كلها مسكرة هني، الساعة ثنتين بالليل",
+    "wala wāḥid! killha msakkara hni, is-sāʿa thintēn bil-lēl",
+    "Not one! They're all shut round here, it's two in the morning."
    ],
    [
     "A",
@@ -866,9 +866,9 @@
    [
     "مو فاضي",
     "mū fāẓi",
-    "(he's / I'm) not free, busy (Kuwait)",
+    "(he's / I'm) not free, busy (a man) (Kuwait)",
     "ليس متفرغًا",
-    "UAE: mub fāẓi (مب فاضي)"
+    "a woman: mū fāẓya (مو فاضية); UAE: mub fāẓi (مب فاضي)"
    ],
    [
     "مب فاهم",
