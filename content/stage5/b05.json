@@ -4,8 +4,8 @@
   "stage": 5,
   "title": "I've been ripped off!",
   "goal": "At an electronics shop, the laptop you bought there last week keeps switching off; complain firmly but politely, and don't leave without an answer",
-  "tip": "Complain in steps: what's wrong and since when (min awwal yōm), what you've tried (jarrabt kill shay), how you feel (aḥiss inni ingashsht, ana mnarfaz), then what you want. If they hide behind 'policy', say what you see: aḥiss innak titharrab, and ask for il-masʼūl.",
-  "grammar": "complaining: problem, feeling, demand (aḥiss inni ingashsht, titharrab)",
+  "tip": "Complain in steps: what's wrong and since when (min awwal yōm), what you've tried (jarrabt kill shay), how you feel (aḥiss inni ingashsht, ana mnarfaz), then what you want. If they hide behind 'policy', say what you see: aḥiss innak timāṭil, and ask for il-masʼūl.",
+  "grammar": "complaining: problem, feeling, demand (aḥiss inni ingashsht, timāṭil)",
   "dialogue": [
    [
     "A",
@@ -51,9 +51,9 @@
    ],
    [
     "B",
-    "الكفالة مب عشان أقعد بدون لابتوب. أنا منرفز، وأحس إنك تتهرب",
-    "il-kafāla mub ʿashān agʿid bidūn lābtōb. ana mnarfaz, w aḥiss innak titharrab",
-    "The warranty isn't there so I can sit without a laptop. I'm fed up, and I feel you're dodging it."
+    "الكفالة مب عشان أقعد بدون لابتوب. أنا منرفز، وأحس إنك تماطل",
+    "il-kafāla mub ʿashān agʿid bidūn lābtōb. ana mnarfaz, w aḥiss innak timāṭil",
+    "The warranty isn't there so I can sit without a laptop. I'm fed up, and I feel you're stalling."
    ],
    [
     "A",
@@ -91,11 +91,11 @@
     "a woman: mnarfaza (منرفزة)"
    ],
    [
-    "تتهرب",
-    "titharrab",
-    "you're dodging (it), you're avoiding (it) (to a man)",
-    "تتهرب",
-    "to a woman: titharrabīn (تتهربين); to a group: titharrabūn (تتهربون)"
+    "تماطل",
+    "timāṭil",
+    "you're stalling, you're putting (me) off (to a man)",
+    "تماطل",
+    "to a woman: timāṭlīn (تماطلين); to a group: timāṭlūn (تماطلون)"
    ],
    [
     "سياسة المحل",
@@ -488,8 +488,8 @@
   "stage": 5,
   "title": "You hurt his feelings",
   "goal": "At a karak stand, you talk to Rāshid's cousin Ḥamad about the clip: give him Rāshid's side, hear his, and get him to make the first move",
-  "tip": "As the go-between, give each side's feelings, not your verdict: Rāshid inḥaraj, w huwa ʿātib ʿalēk. Accept the other side too: ṣār sūʼ fahm. Then ask for one small step: ibda inta.",
-  "grammar": "mediating II: giving each side's feelings (inḥaraj, ʿātib ʿalēk, ṣār sūʼ fahm)",
+  "tip": "As the go-between, give each side's feelings, not your verdict: Rāshid infaẓaḥ, kasart khāṭrah. Answer the fear behind a question (ḥāgid ʿalay?) with la, galbah abyaẓ, call it ṣār sūʼ fahm, and ask for one small step: ibda inta.",
+  "grammar": "mediating II: giving each side's feelings (kasart khāṭrah, galbah abyaẓ, ṣār sūʼ fahm)",
   "dialogue": [
    [
     "B",
@@ -505,9 +505,9 @@
    ],
    [
     "B",
-    "محد طرشني. بس راشد انحرج، المقطع شافه الكل",
-    "maḥḥad ṭarrashni. bas Rāshid inḥaraj, il-magṭaʿ shāfah il-kill",
-    "Nobody sent me. But Rāshid was embarrassed; everyone saw the clip."
+    "محد طرشني. بس راشد انفضح، المقطع شافه الكل",
+    "maḥḥad ṭarrashni. bas Rāshid infaẓaḥ, il-magṭaʿ shāfah il-kill",
+    "Nobody sent me. But Rāshid was shown up; everyone saw the clip."
    ],
    [
     "A",
@@ -517,21 +517,21 @@
    ],
    [
     "B",
-    "أدري، بس كسرت خاطره. للحين مجروح، وعاتب عليك",
-    "adri, bas kasart khāṭrah. lil-ḥīn majrūḥ, w ʿātib ʿalēk",
-    "I know, but you hurt his feelings. He's still hurt, and he holds it against you."
+    "أدري، بس كسرت خاطره. وللحين زعلان منك",
+    "adri, bas kasart khāṭrah. w lil-ḥīn zaʿlān minnak",
+    "I know, but you hurt his feelings. And he's still cross with you."
    ],
    [
     "A",
-    "وهو بعد ما رد علي ولا مرة!",
-    "w huwa baʿad ma radd ʿalay wala marra!",
-    "And he hasn't answered me once either!"
+    "وهو بعد ما رد علي ولا مرة! يعني هو حاقد علي؟",
+    "w huwa baʿad ma radd ʿalay wala marra! yaʿni huwa ḥāgid ʿalay?",
+    "And he hasn't answered me once either! So he's got a grudge against me?"
    ],
    [
     "B",
-    "صح، كل واحد راكب راسه. صار سوء فهم، وصرتوا متهاوشين",
-    "ṣaḥḥ, kill wāḥid rākib rāsah. ṣār sūʼ fahm, w ṣirtu mithāwshīn",
-    "True, you've both dug your heels in. There's been a misunderstanding, and now you've fallen out."
+    "لا، قلبه أبيض. بس كل واحد راكب راسه، وصرتوا متهاوشين",
+    "la, galbah abyaẓ. bas kill wāḥid rākib rāsah, w ṣirtu mithāwshīn",
+    "No, he doesn't hold grudges. But you've both dug your heels in, and now you've fallen out."
    ],
    [
     "A",
@@ -541,9 +541,9 @@
    ],
    [
     "B",
-    "امسح المقطع، وابدا انت. كلمه اليوم، أنا أضمنه",
-    "imsaḥ il-magṭaʿ, w ibda inta. kallmah il-yōm, ana aẓmanah",
-    "Delete the clip, and you make the first move. Call him today; I'll vouch for him."
+    "صار سوء فهم وخلاص. امسح المقطع وابدا انت، قبل لا تكبر الفتنة",
+    "ṣār sūʼ fahm w khalāṣ. imsaḥ il-magṭaʿ w ibda inta, gabil la tikbar il-fitna",
+    "It was a misunderstanding, that's all. Delete the clip and make the first move, before the bad blood grows."
    ],
    [
     "A",
@@ -554,11 +554,11 @@
   ],
   "items": [
    [
-    "انحرج",
-    "inḥaraj",
-    "he was embarrassed, he lost face",
-    "شعر بالحرج",
-    "she was embarrassed: inḥarjat (انحرجت)"
+    "انفضح",
+    "infaẓaḥ",
+    "he was shown up, he was shamed in public",
+    "افتضح أمره",
+    "she was shown up: infaẓḥat (انفضحت)"
    ],
    [
     "كسرت خاطره",
@@ -568,11 +568,11 @@
     "to a woman: kasarti khāṭrah (كسرتي خاطره)"
    ],
    [
-    "عاتب عليك",
-    "ʿātib ʿalēk",
-    "(he's) hurt with you, holding it against you (to a man)",
-    "يعاتبك",
-    "about a woman: ʿātba ʿalēk (عاتبة عليك); to a woman: ʿātib ʿalēch (عاتب عليج)"
+    "حاقد علي",
+    "ḥāgid ʿalay",
+    "(he's) got a grudge against me, (he) bears me a grudge",
+    "حاقد علي",
+    "about a woman: ḥāgda ʿalay (حاقدة علي)"
    ],
    [
     "سوء فهم",
@@ -582,11 +582,11 @@
     ""
    ],
    [
-    "مجروح",
-    "majrūḥ",
-    "hurt, wounded (in his feelings) (a man)",
-    "مجروح",
-    "a woman: majrūḥa (مجروحة)"
+    "قلبه أبيض",
+    "galbah abyaẓ",
+    "he doesn't hold grudges, he's good-hearted (lit. his heart is white)",
+    "قلبه طيب",
+    "about a woman: galbha abyaẓ (قلبها أبيض)"
    ],
    [
     "عفا الله عما سلف",
@@ -622,15 +622,15 @@
    ],
    [
     "A",
-    "لا يا ولدي، انت كنت الوسيط. انت ريّال رزين، وتكسب الناس",
-    "la yā wildi, inta kint il-wasīṭ. inta rayyāl razīn, w tiksib in-nās",
-    "No, son, you were the go-between. You're a level-headed man, and you win people over."
+    "لا يا ولدي، انت كنت الوسيط. انت ريّال واعي، وتكسب الناس",
+    "la yā wildi, inta kint il-wasīṭ. inta rayyāl wāʿi, w tiksib in-nās",
+    "No, son, you were the go-between. You're a sensible man, and you win people over."
    ],
    [
     "B",
-    "بس هالأسبوع ما كنت رزين، كنت منرفز!",
-    "bas hal-usbūʿ ma kint razīn, kint mnarfaz!",
-    "But this week I wasn't level-headed; I was fed up!"
+    "بس هالأسبوع ما كنت واعي، كنت منرفز!",
+    "bas hal-usbūʿ ma kint wāʿi, kint mnarfaz!",
+    "But this week I wasn't sensible; I was fed up!"
    ],
    [
     "A",
@@ -678,11 +678,11 @@
     "(recognise)"
    ],
    [
-    "رزين",
-    "razīn",
-    "level-headed, calm and sensible (a man)",
-    "رزين",
-    "a woman: razīna (رزينة)"
+    "واعي",
+    "wāʿi",
+    "sensible, mature, aware (a man)",
+    "واع / ناضج",
+    "a woman: wāʿya (واعية)"
    ],
    [
     "تكسب الناس",

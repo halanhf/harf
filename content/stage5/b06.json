@@ -275,13 +275,13 @@
    [
     "B",
     "وشلون نعرف وين هو؟ أكيد تحت الأرض",
-    "w shlōn naʿarf wēn huwa? akīd tiḥt il-arẓ",
+    "w shlōn naʿarf wēn huwa? akīd taḥt il-arẓ",
     "And how do we know where they are? They must be underground."
    ],
    [
     "A",
     "هيه، ينبت تحت الأرض. تدور شق صغير، والأماكن سر، محد يقولها لك",
-    "hē, yinbit tiḥt il-arẓ. tdawwir shagg ṣghīr, w il-amākin sirr, maḥḥad ygūlha-lak",
+    "hē, yinbit taḥt il-arẓ. tdawwir shagg ṣghīr, w il-amākin sirr, maḥḥad ygūlha-lak",
     "Yes, they grow underground. You look for a little crack, and the spots are a secret: nobody tells you them."
    ],
    [
@@ -353,7 +353,7 @@
    ],
    [
     "ينبت تحت الأرض",
-    "yinbit tiḥt il-arẓ",
+    "yinbit taḥt il-arẓ",
     "it grows underground (a plant)",
     "ينبت تحت الأرض",
     "(recognise)"
@@ -378,7 +378,7 @@
   "stage": 5,
   "title": "Poetry in the majlis",
   "goal": "In Bū Rāshid's majlis, with Rāshid there, a guest has just recited a nabaṭi poem; say how much you understood, and ask Bū Rāshid what nabaṭi poetry is",
-  "tip": "Say honestly how much you followed: simaʿtha, bas ma fhimt killha. Then check with yaʿni …?: yaʿni mithil il-amthāl? Bū Rāshid's words for the poetry (shiʿir nabaṭi, il-ḥanīn, il-furūsiyya) are for recognition.",
+  "tip": "Say honestly how much you followed: simaʿt-ha, bas ma fhimt killha. Then check with yaʿni …?: yaʿni mithil il-amthāl? Bū Rāshid's words for the poetry (shiʿir nabaṭi, il-ḥanīn, il-furūsiyya) are for recognition.",
   "grammar": "recycle: saying how much you understood (ma fhimt killha, bas …; yaʿni …?)",
   "dialogue": [
    [
@@ -390,7 +390,7 @@
    [
     "B",
     "سمعتها، بس ما فهمت كلها. الكلمات قديمة وايد",
-    "simaʿtha, bas ma fhimt killha. il-kalimāt gadīma wāyid",
+    "simaʿt-ha, bas ma fhimt killha. il-kalimāt gadīma wāyid",
     "I heard it, but I didn't understand all of it. The words are very old."
    ],
    [
@@ -1147,7 +1147,7 @@
    [
     "A",
     "التبرع ما له وقت، متى ما تبي. بس زكاة الفطر لها وقت",
-    "it-tabarruʿ ma lah wagt, mata ma tabi. bas zakāt il-fiṭr laha wagt",
+    "it-tabarruʿ ma lah wagt, mita ma tabi. bas zakāt il-fiṭr laha wagt",
     "Donating has no set time: whenever you like. But zakāt il-fiṭr has its time."
    ],
    [
