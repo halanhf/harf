@@ -184,7 +184,7 @@
 ["صَلَاةُ الْعِيد", "ṣalātu l-ʿīd", "Eid prayer", "G=", "religion"],
 ["تَقَبَّلَ اللَّهُ", "taqabbala llāh", "may God accept (it)", "G=", "religion"],
 ["زَكَاة", "zakāh", "zakat (obligatory alms)", "G=", "religion"],
-["صَدَقَة", "ṣadaqa", "voluntary charity", "G~ ṣadaga", "religion"],
+["صَدَقَة", "ṣadaqa", "voluntary charity", "G=", "religion"],
 ["الْحَجّ", "al-ḥajj", "the Hajj", "G=", "religion"],
 ["الْعُمْرَة", "al-ʿumra", "the Umrah", "G=", "religion"],
 ["مُحَرَّم", "muḥarram", "Muharram (1st Hijri month)", "G=", "religion"],

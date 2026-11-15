@@ -324,7 +324,7 @@
   "stage": 1,
   "title": "Come here, everyone!",
   "goal": "Call Saif and his friends together for a photo at Global Village: come, come closer, look, smile, let me, let's.",
-  "tip": "To a group, add -u to the man's form: taʿāl → taʿālu, shūf → shūfu, garrib → garrbu (come closer; the i drops). Khalli means 'let': khallni ashūf (let me see), khallna nrūḥ (let's go); to a group, khallūni. The next verb has no 'to'.",
+  "tip": "To a group, add -u to the man's form: taʿāl → taʿālu, shūf → shūfu, garrib → garrbu (come closer; the i drops). 'Let' is khall- to a man: khallni ashūf (let me see), khallna nrūḥ (let's go); to a woman khallīni, to a group khallūni. The next verb has no 'to'.",
   "grammar": "Imperative to a group: add -u (taʿālu, shūfu); khallni",
   "dialogue": [
    [
@@ -391,7 +391,7 @@
     "aṣawwir",
     "I take a photo",
     "أصور",
-    "aṣawwrak = I'll take your photo (to a man); aṣawwirkum (to a group)"
+    "aṣawwrak? = shall I take your photo? (to a man); khallūni aṣawwirkum = let me take your photo (to a group)"
    ],
    [
     "قربوا",
@@ -419,10 +419,10 @@
     "khallna",
     "let's",
     "دعنا",
-    "khallna nrūḥ = let's go"
+    "to a woman: khallīna (خلينا); to a group: khallūna (خلونا); khallna nrūḥ = let's go"
    ]
   ],
-  "culture": "In public places, ask before you photograph people and keep women and families you don't know out of your photos. Many families prefer that photos of their women aren't taken or shared. (Needs a native check.)"
+  "culture": "In public places, ask before you photograph people and keep women and families you don't know out of your photos. In the UAE, taking or sharing photos of people without their consent is also against the law, with heavy fines. Many families prefer that photos of their women aren't taken or shared. (Needs a native check.)"
  },
  {
   "id": "s1u051",
@@ -615,7 +615,7 @@
     "ʿala ṭūl",
     "straight away",
     "فورًا / مباشرةً",
-    "also 'straight on' when giving directions"
+    "also 'straight on' when giving directions, and 'always, all the time'"
    ],
    [
     "خلها علي",
@@ -631,7 +631,7 @@
   "stage": 1,
   "title": "Do you want to come?",
   "goal": "Invite Maryam to lunch, hear her say no, and offer to bring her something back.",
-  "tip": "abi (I want) and tabi (you want) take the next verb straight after, with no word for 'to': abi atghadda (I want to have lunch), ma abi aṭlaʿ (I don't want to go out). To a woman both verbs take -īn: tabīn trūḥīn? (do you want to go?)",
+  "tip": "abi (I want) and tabi (you want) take the next verb with no 'to': abi atghadda (I want to have lunch), ma abi aṭlaʿ. To a woman, tabīn; her own verb takes -īn too: tabīn trūḥīn? (do you want to go?), but tabīn ayīb-lich shay? (do you want me to bring you something?)",
   "grammar": "Want + verb: abi atghadda, tabi trūḥ, tabīn trūḥīn",
   "dialogue": [
    [
@@ -735,7 +735,7 @@
   "stage": 1,
   "title": "Can I help?",
   "goal": "Offer to help Maryam at the office and ask her to teach you how she makes a presentation.",
-  "tip": "agdar (I can) and tigdar (you can) work like abi: the next verb follows with no 'to'. agdar asāʿdak? (can I help you? to a man), agdar asāʿdich? (to a woman). To a woman tigdar becomes tigdarīn: tigdarīn tʿallmīni? (can you teach me?)",
+  "tip": "agdar (I can) and tigdar (you can) work like abi: the next verb follows with no 'to'. agdar asāʿdak? (can I help you? to a man), agdar asāʿdich? (to a woman). To a woman tigdar becomes tigdarīn: tigdarīn tʿallmīnni? (can you teach me?)",
   "grammar": "Can + verb: agdar asāʿdak, tigdar, tigdarīn",
   "dialogue": [
    [
@@ -765,7 +765,7 @@
    [
     "B",
     "إي! تقدرين تعلميني؟",
-    "ī! tigdarīn tʿallmīni?",
+    "ī! tigdarīn tʿallmīnni?",
     "Yes! Can you teach me?"
    ],
    [
@@ -795,7 +795,7 @@
     "tigdar tʿallimni?",
     "can you teach me? (to a man)",
     "هل تستطيع أن تعلمني؟",
-    "to a woman: tigdarīn tʿallmīni? (تقدرين تعلميني؟)"
+    "to a woman: tigdarīn tʿallmīnni? (تقدرين تعلميني؟)"
    ],
    [
     "تييب لي",
@@ -837,7 +837,7 @@
     "ʿarẓ",
     "a presentation",
     "عرض تقديمي",
-    ""
+    "also 'an offer, a deal' in shops; at work you'll also hear the English: presentation"
    ]
   ]
  },
