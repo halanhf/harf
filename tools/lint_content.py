@@ -214,6 +214,8 @@ def check_line(ar, tr, en, where, E, W, mx):
     if re.search(r"\bḥadd\b", tr) and "حد" in ar: W(f"{where} 'someone' is ḥad (one d); ḥadd is 'edge, limit'")
     for bad, good in (("جدام", "قدام"), ("ترى", "ترا")):
         if re.search(rf"(?:^|\s){bad}(?:\s|$|[؟!.،])", ar): W(f"{where} write {good}, the course spelling, not {bad}")
+    m3 = re.search(r"\b\w*[^tskdgcz\s-]-h(?:a|um)\b", tr)
+    if m3: W(f"{where} {m3.group(0)}: no hyphen before -ha/-hum here; it's only for t, s, k, d, g, c, z (STYLE §3)")
     m = re.search(r"\bwi(?:l|ṣ|s|ṭ|t|sh|d|dh|th|r|n|z|ẓ)-\S+", tr)
     if m: E(f"{where} {m.group(0)}: 'and' is its own word (w il-…, STYLE §3)")
     m2 = re.search(r"\b\w*[aeiouāīūēō] i(?:l|ṣ|s|ṭ|t|sh|d|dh|th|r|n|z|ẓ)-\S+", tr)
