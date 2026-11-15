@@ -620,13 +620,6 @@
     ""
    ],
    [
-    "الباب",
-    "il-bāb",
-    "the door",
-    "الباب",
-    ""
-   ],
-   [
     "يم",
     "yamm",
     "next to, by",
@@ -945,7 +938,7 @@
   "stage": 1,
   "title": "A1 exit: where I live and who I know",
   "goal": "Tell Umm Sēf where you live, who you live with and what the area is like",
-  "tip": "sākin 'living' works like rāyiḥ: a man says sākin, a woman sākna. Adjectives agree too: il-manṭiga hādya 'the area's quiet', il-jīrān ṭayybīn 'the neighbours are nice'. Endings: b-rōḥak 'on your own', aʿarfah 'I know him'.",
+  "tip": "sākin 'living' works like rāyiḥ: a man says sākin, a woman sākna. Adjectives agree too: il-manṭiga hādya 'the area's quiet', il-jīrān ṭayybīn 'the neighbours are nice'. Endings: b-rōḥak 'on your own', aʿarfah 'I know him', aʿarfhum 'I know them'.",
   "grammar": "A1 exit: describe where I live and people I know",
   "dialogue": [
    [
@@ -957,7 +950,7 @@
    [
     "B",
     "في دبي، في شقة صغيرة",
-    "fi Dbayy, fi shagga ṣghīra",
+    "fi Dbayy, fi shigga ṣghīra",
     "In Dubai, in a small flat."
    ],
    [
@@ -980,9 +973,9 @@
    ],
    [
     "B",
-    "هيه، هادية. والجيران طيبين",
-    "hē, hādya. w il-jīrān ṭayybīn",
-    "Yes, it's quiet. And the neighbours are nice."
+    "هيه، هادية. والجيران طيبين، أعرفهم كلهم",
+    "hē, hādya. w il-jīrān ṭayybīn, aʿarfhum killhum",
+    "Yes, it's quiet. And the neighbours are nice, I know them all."
    ]
   ],
   "items": [
@@ -992,13 +985,6 @@
     "living (in a place) (a man)",
     "ساكن",
     "a woman: sākna (ساكنة); wēn sākin? = where do you live?"
-   ],
-   [
-    "شقة",
-    "shagga",
-    "flat, apartment",
-    "شقة",
-    ""
    ],
    [
     "أعرفه",
@@ -1027,6 +1013,13 @@
     "the neighbours",
     "الجيران",
     "one neighbour: jār"
+   ],
+   [
+    "أعرفهم",
+    "aʿarfhum",
+    "I know them",
+    "أعرفهم",
+    ""
    ]
   ],
   "culture": "Most people living in Dubai aren't Emirati, so English is often the working language in shops and offices. Start in Arabic anyway: a few Gulf words usually change the tone of the whole conversation."
