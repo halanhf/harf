@@ -405,7 +405,7 @@
         "mishēt",
         "I walked; you walked (to a man)",
         "مشيتُ / مشيتَ",
-        "to a woman: mishēti (مشيتي)"
+        "to a woman: mishēti (مشيتي); also means 'I left, I set off'"
       ],
       [
         "زين سويت",
@@ -547,7 +547,7 @@
     "title": "I brought you something",
     "goal": "Arrive at Sēf's family home, greet Umm Sēf, say how you came and what you brought, and ask after Sēf.",
     "grammar": "Past tense II: come and bring (yīt, yibt, ma yā)",
-    "tip": "'Come' and 'bring' are irregular: yīt (I came, you came), yā (he came), ma yā (he didn't come, he hasn't come); yibt (I brought, you brought), yāb (he brought). Emiratis say y where others say j (jīt, jibt), so these are written with ي.",
+    "tip": "'Come' and 'bring' are irregular: yīt (I came, you came), yā (he came), ma yā (he didn't come, he hasn't come); yibt (I brought, you brought), yāb (he brought). Emiratis say y where fuṣḥā and many other speakers have j (jīt, jibt), so these are written with ي.",
     "dialogue": [
       [
         "A",
@@ -569,9 +569,9 @@
       ],
       [
         "B",
-        "ما سوينا شي. سيف هني؟",
-        "mā sawwēna shay. Sēf hni?",
-        "It's nothing. Is Sēf here?"
+        "ما سوينا شي. سيف هني، الله يخليج؟",
+        "mā sawwēna shay. Sēf hni, allāh ykhallīch?",
+        "It's nothing. Is Sēf in, please?"
       ],
       [
         "A",
@@ -627,7 +627,7 @@
         "ma fī dāʿi",
         "there's no need",
         "لا داعي",
-        "you'll see written مافي داعي; also very common: ma lah dāʿi (ماله داعي)"
+        "you'll see written مافي داعي; also very common: ma lah dāʿi (ما له داعي, you'll see written ماله داعي)"
       ],
       [
         "ما سوينا شي",
@@ -680,9 +680,9 @@
       ],
       [
         "A",
-        "سوينا عشا، وشفنا النجوم",
-        "sawwēna ʿasha, w shifna n-nujūm",
-        "We made dinner, and we looked at the stars."
+        "سوينا شاي، وشفنا النجوم",
+        "sawwēna chāy, w shifna n-nujūm",
+        "We made tea, and we looked at the stars."
       ],
       [
         "B",
@@ -748,7 +748,7 @@
     "title": "Which day?",
     "goal": "On a late-night call, pick a day to go out with a friend, name the days of the week, and say good night.",
     "grammar": "Days of the week: yōm + day",
-    "tip": "Days come with yōm 'day': yōm il-aḥad (Sun), il-ithnēn (Mon), ith-thalātha (Tue), il-arbaʿa (Wed), il-khamīs (Thu), il-jumʿa (Fri), is-sabt (Sat). No word for 'on' is needed: yōm il-jumʿa ʿindi shughul (on Friday I've got work).",
+    "tip": "Days come with yōm 'day': yōm il-aḥad (Sun), il-ithnēn (Mon), ith-thalātha (Tue), il-arbaʿa (Wed), il-khamīs (Thu), il-jumʿa (Fri), is-sabt (Sat). yōm can be dropped, and no word for 'on' is needed: (yōm) il-jumʿa ʿindi shughul (on Friday I've got work).",
     "culture": "Since January 2022 the UAE's official weekend has been Saturday and Sunday, and federal government offices close at Friday noon (Sharjah's government takes Friday off too). Kuwait's weekend is Friday and Saturday. Friday's noon prayer is the main prayer of the week, so Friday plans usually start after it.",
     "dialogue": [
       [
@@ -965,7 +965,7 @@
     "title": "What time is the film?",
     "goal": "Tell the time with half past, quarter past and quarter to, and count minutes, before a film with Sēf.",
     "grammar": "Telling the time (w nuṣṣ, w rubʿ, illa rubʿ); a singular noun after 11",
-    "tip": "is-sāʿa + hour: is-sāʿa thintēn (two o'clock), is-sāʿa waḥda (one). Then w nuṣṣ (half past), w rubʿ (quarter past), illa rubʿ (quarter to). From 11 up the noun stays singular: ʿishrīn dagīga, khamsṭaʿash dagīga, but khams dagāyig.",
+    "tip": "is-sāʿa + hour: is-sāʿa thintēn (two o'clock), is-sāʿa waḥda (one). Then w nuṣṣ (half past), w rubʿ (quarter past), illa rubʿ (quarter to). From 11 up the noun stays singular: ʿishrīn dagīga, khamsīn dirham, but khams dagāyig.",
     "dialogue": [
       [
         "A",
@@ -987,21 +987,21 @@
       ],
       [
         "B",
-        "يعني بعد ربع ساعة؟",
-        "yaʿni baʿd rubʿ sāʿa?",
-        "So in a quarter of an hour?"
+        "يعني بعد ربع ساعة؟ والتذكرة بكم؟",
+        "yaʿni baʿd rubʿ sāʿa? w it-tadhkara b-cham?",
+        "So in a quarter of an hour? And how much is the ticket?"
       ],
       [
         "A",
-        "هيه، والسينما عشرين دقيقة من هني!",
-        "hē, w is-sīnama ʿishrīn dagīga min hni!",
-        "Yes, and the cinema's twenty minutes from here!"
+        "بخمسين درهم. والسينما عشرين دقيقة من هني!",
+        "b-khamsīn dirham. w is-sīnama ʿishrīn dagīga min hni!",
+        "Fifty dirhams. And the cinema's twenty minutes from here!"
       ],
       [
         "B",
-        "يلا بسرعة! كل مرة نتأخر خمسطعش دقيقة",
-        "yalla b-surʿa! kill marra nitʼakhkhar khamsṭaʿash dagīga",
-        "Come on, quick! Every time we're fifteen minutes late."
+        "يلا بسرعة! كل مرة نتأخر",
+        "yalla b-surʿa! kill marra nitʼakhkhar",
+        "Come on, quick! We're late every time."
       ]
     ],
     "items": [
@@ -1038,7 +1038,7 @@
         "dagīga",
         "a minute",
         "دقيقة",
-        "3 to 10 take the plural (khams dagāyig); 11 and up the singular (khamsṭaʿash dagīga)"
+        "3 to 10 take the plural (khams dagāyig); 11 and up the singular (ʿishrīn dagīga)"
       ],
       [
         "كل مرة",
