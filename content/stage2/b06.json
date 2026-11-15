@@ -125,15 +125,15 @@
    ],
    [
     "B",
-    "ما شاء الله، حلوة! أكيد غالية. بكم؟",
-    "mā shāʼ allāh, ḥilwa! akīd ghālya. b-cham?",
-    "Wow, it's lovely! It must have been expensive. How much?"
+    "ما شاء الله، مبروك عليج! حلوة وأكيد غالية. بكم؟",
+    "mā shāʼ allāh, mabrūk ʿalēch! ḥilwa w akīd ghālya. b-cham?",
+    "Wow, congratulations! It's lovely, and it must have been expensive. How much?"
    ],
    [
     "A",
-    "بخمسين ألف. مب يديدة، عمرها ثلاث سنين",
-    "b-khamsīn alf. mub yidīda, ʿumrha thalāth sinīn",
-    "Fifty thousand. It's not brand new, it's three years old."
+    "الله يبارك فيك. بخمسين ألف. مب يديدة، عمرها ثلاث سنين",
+    "allāh ybārik fīk. b-khamsīn alf. mub yidīda, ʿumrha thalāth sinīn",
+    "Thank you. Fifty thousand. It's not brand new, it's three years old."
    ],
    [
     "B",
@@ -260,9 +260,9 @@
    ],
    [
     "B",
-    "العاشر؟! في لفت؟",
-    "il-ʿāshir?! fī lift?",
-    "The tenth?! Is there a lift?"
+    "العاشر؟! واللفت شغال؟",
+    "il-ʿāshir?! w il-lift shaghghāl?",
+    "The tenth?! Is the lift working?"
    ],
    [
     "A",
@@ -328,11 +328,11 @@
     "also: id-dōr (الدور)"
    ],
    [
-    "لفت",
-    "lift",
-    "a lift (UAE)",
-    "مصعد",
-    "also: maṣʿad (مصعد)"
+    "اللفت",
+    "il-lift",
+    "the lift (UAE)",
+    "المصعد",
+    "also: il-maṣʿad (المصعد)"
    ],
    [
     "لا تاكلون",
@@ -538,7 +538,7 @@
     "ma ʿindi illa",
     "I've only got",
     "ليس عندي إلا",
-    "Kuwait's money: dīnār (دينار), more than one: danānīr (دنانير)"
+    "ma ʿindi illa danānīr = I've only got dinars (Kuwait's money: dīnār, دينار; plural danānīr, دنانير)"
    ],
    [
     "لا تقولون له",
@@ -641,7 +641,7 @@
     "ma tshūf shar",
     "get well soon, I hope it's nothing (to a man; lit. may you see no harm)",
     "لا بأس عليك",
-    "to a woman: ma tshūfīn shar (ما تشوفين شر); reply: allāh ysallmak"
+    "to a woman: ma tshūfīn shar (ما تشوفين شر); reply: allāh ysallmak, or ish-shar ma yiyīk (الشر ما ييك)"
    ],
    [
     "أحس",
@@ -658,18 +658,11 @@
     "to a man: allāh ysallmak (الله يسلمك)"
    ],
    [
-    "روح البيت",
-    "rūḥ il-bēt",
-    "go home (to a man)",
-    "اذهب إلى البيت",
-    "to a woman: rūḥi l-bēt (روحي البيت)"
-   ],
-   [
-    "ارتاح",
-    "irtāḥ",
-    "rest, get some rest (to a man)",
-    "استرح",
-    "to a woman: irtāḥi (ارتاحي)"
+    "روح البيت وارتاح",
+    "rūḥ il-bēt w irtāḥ",
+    "go home and rest (to a man)",
+    "اذهب إلى البيت واسترح",
+    "to a woman: rūḥi l-bēt w irtāḥi (روحي البيت وارتاحي)"
    ]
   ]
  },
@@ -922,9 +915,9 @@
    ],
    [
     "A",
-    "لا، ما فيني شي، الحمد لله. حادث بسيط",
-    "la, ma fīni shay, il-ḥamdu lillāh. ḥādith basīṭ",
-    "No, I'm fine, thank God. It's a minor accident."
+    "لا، ما تعورت، ما فيني شي. حادث بسيط",
+    "la, ma tʿawwart, ma fīni shay. ḥādith basīṭ",
+    "No, I didn't get hurt, I'm fine. It's a minor accident."
    ],
    [
     "B",
@@ -934,8 +927,8 @@
    ],
    [
     "A",
-    "الله يسلمك. الريّال الثاني إيده تعورت شوي",
-    "allāh ysallmak. ir-rayyāl ith-thāni īdah tʿawwrat shwayy",
+    "الله يسلمك. الريّال الثاني تعور شوي في إيده",
+    "allāh ysallmak. ir-rayyāl ith-thāni tʿawwar shwayy fi īdah",
     "Thanks. The other man hurt his hand a bit."
    ],
    [
@@ -988,11 +981,11 @@
     "to a woman: shay yʿawwrich? (شي يعورج؟)"
    ],
    [
-    "تعور",
-    "tʿawwar",
-    "he got hurt",
-    "أصيب",
-    "she got hurt, it got hurt (a feminine thing): tʿawwrat (تعورت); fī aḥad tʿawwar? = is anyone hurt?"
+    "ما تعورت",
+    "ma tʿawwart",
+    "I didn't get hurt; you didn't get hurt (to a man)",
+    "لم أُصب",
+    "to a woman: ma tʿawwarti (ما تعورتي); she didn't get hurt: ma tʿawwrat; fī aḥad tʿawwar? = is anyone hurt?"
    ],
    [
     "اتصلت بالإسعاف؟",
