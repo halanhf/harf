@@ -39,15 +39,15 @@
    ],
    [
     "A",
-    "ثلاث مية وخمسين درهم. كاش ولا بطاقة؟",
+    "ثلاث مية وخمسين درهم. كاش ولّا بطاقة؟",
     "thalāth miya w khamsīn dirham. kāsh walla biṭāga?",
     "Three hundred and fifty dirhams. Cash or card?"
    ],
    [
     "B",
-    "كاش. هذي أربع مية. وقبل لا أنسى، الفاتورة!",
-    "kāsh. hādhi arbaʿ miya. w gabil la ansa, il-fātūra!",
-    "Cash. Here's four hundred. And before I forget, the receipt!"
+    "كاش. هذي أربع مية. وقبل لا أنسى، أبي الفاتورة",
+    "kāsh. hādhi arbaʿ miya. w gabil la ansa, abi l-fātūra",
+    "Cash. Here's four hundred. And before I forget, I'd like the receipt."
    ]
   ],
   "items": [
@@ -89,9 +89,9 @@
    [
     "درهم",
     "dirham",
-    "a dirham; dirhams (after a number)",
+    "a dirham; dirhams (after a number, and in prices)",
     "درهم",
-    "a dirham has a hundred fils (فلس); Kuwait: dīnār (دينار)"
+    "a dirham has a hundred fils (فلس); after 3 to 10 you'll also hear darāhim (دراهم); Kuwait's money: dīnār (دينار)"
    ],
    [
     "سماعات",
@@ -114,7 +114,7 @@
   "stage": 2,
   "title": "Fifty thousand for a car",
   "goal": "In the office car park, Maryam shows you the car she has bought: ask the price and talk in thousands of dirhams",
-  "tip": "alf is 1,000 and alfēn 2,000. From 3,000 to 10,000 use ālāf: thalāth ālāf, khams ālāf, ʿashar ālāf. From 11,000 up, alf stays as it is: ʿishrīn alf, khamsīn alf. Add the rest with w: alfēn w khams miya is 2,500.",
+  "tip": "alf is 1,000 and alfēn 2,000. From 3,000 to 10,000 use ālāf: thalāth ālāf, khams ālāf, ʿashr ālāf. From 11,000 up, alf stays as it is: ʿishrīn alf, khamsīn alf. Add the rest with w: alfēn w khams miya is 2,500.",
   "grammar": "thousands: alf, alfēn, thalāth ālāf … ʿashar ālāf; ʿishrīn alf",
   "dialogue": [
    [
@@ -155,9 +155,9 @@
    ],
    [
     "A",
-    "هيه، ألفين في الشهر، لين سنة ألفين وثلاثين!",
-    "hē, alfēn fi sh-shahar, lēn sanat alfēn w thalāthīn!",
-    "Yes, two thousand a month, until 2030!"
+    "هيه، ألفين في الشهر، لين سنة ألفين وثمانية وعشرين!",
+    "hē, alfēn fi sh-shahar, lēn sanat alfēn w thamānya w ʿishrīn!",
+    "Yes, two thousand a month, until 2028!"
    ]
   ],
   "items": [
@@ -173,7 +173,7 @@
     "thalāth ālāf",
     "three thousand (3,000)",
     "ثلاثة آلاف",
-    "the same up to 10,000: arbaʿ ālāf, khams ālāf … ʿashar ālāf (عشرة آلاف)"
+    "the same up to 10,000: arbaʿ ālāf, khams ālāf … ʿashr ālāf (عشر آلاف; you'll see written عشرة آلاف)"
    ],
    [
     "خمسين ألف",
@@ -211,11 +211,11 @@
     ""
    ],
    [
-    "تدفعين",
-    "tidfaʿīn",
-    "you pay (to a woman)",
-    "تدفعين",
-    "to a man: tidfaʿ (تدفع)"
+    "كل شهر",
+    "kill shahar",
+    "every month",
+    "كل شهر",
+    "every week: kill usbūʿ (كل أسبوع); every day: kill yōm (كل يوم)"
    ],
    [
     "البنك",
@@ -339,7 +339,7 @@
     "la tāklūn",
     "don't eat (to a group)",
     "لا تأكلوا",
-    "to one man: la tākil (لا تاكل)"
+    "to one man: la tākil (لا تاكل); to one woman: la tāklīn (لا تاكلين)"
    ]
   ]
  },
@@ -359,9 +359,9 @@
    ],
    [
     "A",
-    "في شهر عشرة، آخر الشهر",
-    "fi shahar ʿashra, ākhir ish-shahar",
-    "In October, at the end of the month."
+    "في شهر إحدعش، آخر الشهر",
+    "fi shahar iḥdaʿash, ākhir ish-shahar",
+    "In November, at the end of the month."
    ],
    [
     "B",
@@ -552,7 +552,7 @@
     "khallūha",
     "leave it, keep it (a feminine thing) (to a group)",
     "اتركوها",
-    "khallūha mufājaʼa = keep it a surprise; to one man: khallha (خلها)"
+    "to one man: khallha (خلها); to one woman: khallīha (خليها); khallūha mufājaʼa = keep it a surprise"
    ]
   ]
  },
@@ -561,7 +561,7 @@
   "stage": 2,
   "title": "My head hurts",
   "goal": "At the office, tell Maryam you're not feeling well, answer her get-well wishes and agree to go home",
-  "tip": "shfīk? 'what's wrong?' asks a man; to a woman it's shfīch? Say what hurts, then yʿawwirni: rāsi yʿawwirni 'my head hurts'. To someone ill, say salāmāt or ma tshūf shar. The reply to both is allāh ysallmak, or allāh ysallmich to a woman.",
+  "tip": "shfīk? 'what's wrong?' is to a man; to a woman it's shfīch? Say what hurts, then yʿawwirni: rāsi yʿawwirni 'my head hurts'. To someone ill, say salāmāt or ma tshūf shar. The reply to both is allāh ysallmak, or allāh ysallmich to a woman.",
   "grammar": "recycle: present and past (yʿawwirni, aḥiss; min il-bārḥa)",
   "dialogue": [
    [
@@ -633,7 +633,7 @@
     "سلامات",
     "salāmāt",
     "oh no, get well soon (to someone ill or hurt)",
-    "سلامتك",
+    "شفاك الله",
     "reply: allāh ysallmak (الله يسلمك)"
    ],
    [
@@ -756,7 +756,7 @@
    [
     "من يومين",
     "min yōmēn",
-    "for two days (now), since two days ago",
+    "for two days (now); two days ago",
     "منذ يومين",
     ""
    ],
@@ -796,7 +796,7 @@
   "title": "Twice a day, after food",
   "goal": "Get your medicine from a pharmacist (a woman): how many tablets, when to take them and how much it costs",
   "tip": "Numbers come back for medicine: ḥabba waḥda 'one tablet', marratēn fi l-yōm 'twice a day', thalāth marrāt fi l-yōm 'three times a day'. gabil and baʿd work before a noun too: gabil il-akil 'before food', baʿd il-akil 'after food'.",
-  "grammar": "recycle: present (ākhidh, tishrab) with numbers and gabil / baʿd",
+  "grammar": "recycle: present (ākhidh) with numbers and gabil / baʿd",
   "dialogue": [
    [
     "B",
@@ -824,7 +824,7 @@
    ],
    [
     "B",
-    "قبل الأكل ولا بعد الأكل؟",
+    "قبل الأكل ولّا بعد الأكل؟",
     "gabil il-akil walla baʿd il-akil?",
     "Before food or after food?"
    ],

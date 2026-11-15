@@ -89,7 +89,7 @@ The course follows **CODA-Gulf** (S: Khalifa et al. 2016; Habash et al. 2018) fo
 5. **في أمان الله** stays as in u11; note "you'll see written فمان الله" (539/110).
 6. **بعد** is transliterated by meaning: baʿad "too, also, still, yet" (ana baʿad), baʿd "after" (baʿd il-maghrib, baʿd bāchir). Course lead ruling; both are the same spelling.
 7. **الفريج il-firīj "the neighbourhood"** keeps ج although the j comes from ق (course-lead exception): فريق reads as "team" in the app's voice and in print.
-8. **Short-vowel insertion after a guttural:** CaCC nouns whose middle letter is ح ع ه خ غ take a vowel: baḥar, laḥam, shahar, naḥal (the published UAE grammar writes šahar). Not in other nouns: bint, galb.
+8. **Helping vowel in CvCC nouns:** Gulf usually inserts a short vowel between the last two consonants: akil, isim, ṣifir, khubiz, ʿiṭir, laḥam, shahar, baḥar, dihin (the published UAE grammar writes them this way). Not when the first of the two is l, r, n or m: bint, galb, ḥarb, shams.
 9. **The future b- keeps the i before a consonant cluster:** binitrayyāk, bititʼakhkhar, binitghadda (not bintrayyāk). Before a single consonant: bashūf, bitrūḥ.
 
 **Homographs: teach these only as chunks, never bare,** because the linter's duplicate check sees one key:

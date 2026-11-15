@@ -785,15 +785,15 @@
    ],
    [
     "B",
-    "زين، المترو. المحطة بعيدة؟",
-    "zēn, il-mitro. il-maḥaṭṭa baʿīda?",
-    "OK, the metro. Is the station far?"
+    "زين، المترو. المحطة ورا المول؟",
+    "zēn, il-mitro. il-maḥaṭṭa wara l-mōl?",
+    "OK, the metro. Is the station behind the mall?"
    ],
    [
     "A",
-    "هيه، بعيدة على ريولك. خذ تاكسي",
-    "hē, baʿīda ʿala ryūlak. khudh tāksi",
-    "Yes, it's too far to walk. Take a taxi."
+    "لا، بعيدة على ريولك. خذ تاكسي",
+    "la, baʿīda ʿala ryūlak. khudh tāksi",
+    "No, it's too far to walk. Take a taxi."
    ]
   ],
   "items": [
