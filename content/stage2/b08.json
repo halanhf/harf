@@ -1,0 +1,1004 @@
+[
+ {
+  "id": "s2u068",
+  "stage": 2,
+  "title": "I'd like to invite you",
+  "goal": "Invite Sēf to dinner at your flat, and say yes warmly when he asks you a favour",
+  "tip": "ḥabbēt is a polite 'I'd like to'. Put a bare present verb after it, as after abi: ḥabbēt aʿazmak 'I'd like to invite you', ḥabbēt aṭbakh 'I'd like to cook'. It sounds softer than abi, and a woman says it the same way.",
+  "grammar": "ḥabbēt + verb: 'I'd like to' (polite)",
+  "dialogue": [
+   [
+    "B",
+    "هلا سيف! حبيت أعزمك على العشا يوم الخميس",
+    "hala Sēf! ḥabbēt aʿazmak ʿala l-ʿasha yōm il-khamīs",
+    "Hi Sēf! I'd like to invite you to dinner on Thursday."
+   ],
+   [
+    "A",
+    "هلا فيك! على هالخشم. وين العزيمة؟",
+    "hala fīk! ʿala hal-khashm. wēn il-ʿazīma?",
+    "Hi! With pleasure. Where's the dinner?"
+   ],
+   [
+    "B",
+    "في شقتي. تقدر تقول لفهد بعد؟",
+    "fi shiggti. tigdar tgūl l-Fahad baʿad?",
+    "At my flat. Can you tell Fahad too?"
+   ],
+   [
+    "A",
+    "أبشر! بس سوي لنا كرك بعد العشا",
+    "abshir! bas sawwī-lna karak baʿd il-ʿasha",
+    "You got it! But make us karak after dinner."
+   ],
+   [
+    "B",
+    "على راسي! وحبيت أطبخ لكم أكل بريطاني",
+    "ʿala rāsi! w ḥabbēt aṭbakh-lkum akil brīṭāni",
+    "Gladly! And I'd like to cook you (all) some British food."
+   ],
+   [
+    "A",
+    "أكل بريطاني؟ إن شاء الله زين!",
+    "akil brīṭāni? in shāʼ allāh zēn!",
+    "British food? Let's hope it's good!"
+   ]
+  ],
+  "items": [
+   [
+    "حبيت",
+    "ḥabbēt",
+    "I'd like to (+ verb), I wanted to (polite)",
+    "أود",
+    "a woman says the same; ḥabbēt agūl-lak = I wanted to tell you; on its own it also means 'I liked, I loved'"
+   ],
+   [
+    "حبيت أعزمك",
+    "ḥabbēt aʿazmak",
+    "I'd like to invite you (to a man)",
+    "أود أن أدعوك",
+    "to a woman: ḥabbēt aʿazmich (حبيت أعزمج)"
+   ],
+   [
+    "على العشا",
+    "ʿala l-ʿasha",
+    "to dinner (when inviting)",
+    "على العشاء",
+    "to lunch: ʿala l-ghada (على الغدا)"
+   ],
+   [
+    "العزيمة",
+    "il-ʿazīma",
+    "the invitation; the dinner or lunch you're invited to",
+    "الدعوة / الوليمة",
+    ""
+   ],
+   [
+    "على هالخشم",
+    "ʿala hal-khashm",
+    "with pleasure, gladly (lit. on this nose)",
+    "",
+    "a warm yes to an invitation or a favour"
+   ],
+   [
+    "في شقتي",
+    "fi shiggti",
+    "at my flat",
+    "في شقتي",
+    ""
+   ],
+   [
+    "أبشر",
+    "abshir",
+    "you got it, consider it done (to a man)",
+    "",
+    "to a woman: abshiri (أبشري); the answer to a request, to friends and elders alike"
+   ],
+   [
+    "سوي لنا",
+    "sawwī-lna",
+    "make (it) for us (to a man)",
+    "اصنع لنا",
+    "to a woman the same: sawwī-lna"
+   ],
+   [
+    "على راسي",
+    "ʿala rāsi",
+    "gladly, at your service (lit. on my head)",
+    "",
+    "the answer to a favour someone asks of you"
+   ]
+  ],
+  "culture": "Gulf hosts insist, often with wallāh. To turn something down politely, say mashkūr, allāh ykhallīk, or il-marra l-yāya 'next time'. To say yes to an invitation or a favour, ʿala hal-khashm and ʿala rāsi are warm, very Gulf answers."
+ },
+ {
+  "id": "s2u069",
+  "stage": 2,
+  "title": "I'd love to, but…",
+  "goal": "Maryam invites you to lunch with the team: say you'd love to, explain why you may be late, and ask for the address",
+  "tip": "widdi + a bare verb is 'I'd love to': widdi ashūf il-jamāʿa 'I'd love to see everyone'. It's softer than abi, so it's good for a kind no: widdi wallāh, bas… 'I'd really love to, but…'. To ask: widdak? to a man, widdich? to a woman.",
+  "grammar": "widdi + verb 'I'd love to'; widdak? 'would you like to?'",
+  "dialogue": [
+   [
+    "A",
+    "باكر بنتغدى كلنا سوا. ودك تيي؟",
+    "bāchir bintghadda killna sawa. widdak tiyi?",
+    "Tomorrow we're all having lunch together. Would you like to come?"
+   ],
+   [
+    "B",
+    "ودي والله، بس عندي امتحان الساعة ثنتين",
+    "widdi wallāh, bas ʿindi imtiḥān is-sāʿa thintēn",
+    "I'd really love to, but I've got an exam at two."
+   ],
+   [
+    "A",
+    "خسارة! وبعد الامتحان؟ نحن في المطعم اللي صوب المكتب",
+    "khasāra! w baʿd il-imtiḥān? niḥin fi l-maṭʿam illi ṣōb il-maktab",
+    "Shame! What about after the exam? We'll be at the restaurant near the office."
+   ],
+   [
+    "B",
+    "إن شاء الله. ودي أشوف الجماعة كلهم",
+    "in shāʼ allāh. widdi ashūf il-jamāʿa killhum",
+    "God willing. I'd love to see everyone."
+   ],
+   [
+    "A",
+    "إن شاء الله يعني هيه، ولّا يعني لا؟",
+    "in shāʼ allāh yaʿni hē, walla yaʿni la?",
+    "Does 'in shāʼ allāh' mean yes, or does it mean no?"
+   ],
+   [
+    "B",
+    "يعني هيه! بس يمكن أتأخر. تطرشين لي العنوان؟",
+    "yaʿni hē! bas yimkin atʼakhkhar. tṭarrishīn-li l-ʿinwān?",
+    "It means yes! But I might be late. Will you send me the address?"
+   ],
+   [
+    "A",
+    "أكيد. ونترياك!",
+    "akīd. w nitrayyāk!",
+    "Of course. And we'll wait for you!"
+   ]
+  ],
+  "items": [
+   [
+    "ودي والله، بس…",
+    "widdi wallāh, bas…",
+    "I'd really love to, but…",
+    "أود ذلك والله، لكن…",
+    "a kind way to say no"
+   ],
+   [
+    "ودك تيي؟",
+    "widdak tiyi?",
+    "would you like to come? (to a man)",
+    "هل تود أن تأتي؟",
+    "to a woman: widdich tiyīn? (ودج تيين؟)"
+   ],
+   [
+    "ودي أشوف",
+    "widdi ashūf",
+    "I'd love to see",
+    "أود أن أرى",
+    "widdi ashūfak = I'd love to see you"
+   ],
+   [
+    "كلنا",
+    "killna",
+    "all of us, we all",
+    "كلنا",
+    ""
+   ],
+   [
+    "الجماعة",
+    "il-jamāʿa",
+    "the group, everyone (friends or colleagues)",
+    "المجموعة",
+    ""
+   ],
+   [
+    "يعني هيه",
+    "yaʿni hē",
+    "it means yes, I mean yes",
+    "يعني نعم",
+    ""
+   ],
+   [
+    "يمكن أتأخر",
+    "yimkin atʼakhkhar",
+    "I might be late",
+    "ربما أتأخر",
+    ""
+   ],
+   [
+    "تطرشين لي",
+    "tṭarrishīn-li",
+    "will you send me (to a woman)",
+    "هل ترسلين لي",
+    "to a man: tṭarrish-li (تطرش لي)"
+   ],
+   [
+    "نترياك",
+    "nitrayyāk",
+    "we'll wait for you (to a man)",
+    "ننتظرك",
+    "to a woman: nitrayyāch (نترياج)"
+   ]
+  ],
+  "culture": "in shāʼ allāh 'God willing' goes with every plan, and people mean it. It can also be a polite, non-committal 'maybe'. So if you really mean yes, add something firm: in shāʼ allāh, akīd 'definitely', or name a time."
+ },
+ {
+  "id": "s2u070",
+  "stage": 2,
+  "title": "Let's go to the desert",
+  "goal": "Suggest a desert trip to Sēf, ask if you can bring a friend, and ask to come back early",
+  "tip": "khal + a we-verb is a quick 'let's': khal nrūḥ 'let's go', khal nshūf 'let's see'. It means the same as khallna nrūḥ. yṣīr? asks 'is it OK?': yṣīr ayīb rbīʿi? 'can I bring my friend?'. The answer is yṣīr 'it's fine' or ma yṣīr 'no way'.",
+  "grammar": "khal + verb 'let's'; yṣīr? 'is it OK?'",
+  "dialogue": [
+   [
+    "A",
+    "يوم السبت شو نسوي؟",
+    "yōm is-sabt shu nsawwi?",
+    "What shall we do on Saturday?"
+   ],
+   [
+    "B",
+    "خل نروح البر! الجو حلو هالأيام",
+    "khal nrūḥ il-barr! il-jaww ḥilu hal-ayyām",
+    "Let's go to the desert! The weather's nice these days."
+   ],
+   [
+    "A",
+    "والله فكرة! خل نقول لفهد بعد",
+    "wallāh fikra! khal ngūl l-Fahad baʿad",
+    "Good idea! Let's tell Fahad too."
+   ],
+   [
+    "B",
+    "زين. ويصير أييب ربيعي مارك؟",
+    "zēn. w yṣīr ayīb rbīʿi Mārk?",
+    "Great. And is it OK if I bring my friend Mark?"
+   ],
+   [
+    "A",
+    "أكيد يصير! في مكان في السيارة",
+    "akīd yṣīr! fī makān fi s-sayyāra",
+    "Of course! There's room in the car."
+   ],
+   [
+    "B",
+    "بس يصير نرجع بدري؟ لازم أذاكر",
+    "bas yṣīr nirjaʿ badri? lāzim adhākir",
+    "But can we come back early? I have to revise."
+   ],
+   [
+    "A",
+    "ما يصير! خل نشوف، يمكن نرجع الساعة عشر",
+    "ma yṣīr! khal nshūf, yimkin nirjaʿ is-sāʿa ʿashr",
+    "No way! Let's see, maybe we'll be back at ten."
+   ]
+  ],
+  "items": [
+   [
+    "خل نروح",
+    "khal nrūḥ",
+    "let's go",
+    "لنذهب",
+    "the same as khallna nrūḥ"
+   ],
+   [
+    "خل نقول",
+    "khal ngūl",
+    "let's tell, let's say",
+    "لنقل",
+    "khal ngūl l-Fahad = let's tell Fahad"
+   ],
+   [
+    "خل نشوف",
+    "khal nshūf",
+    "let's see",
+    "لنرَ",
+    ""
+   ],
+   [
+    "يصير؟",
+    "yṣīr?",
+    "is it OK? can I? can we?",
+    "هل يمكن؟",
+    "yṣīr ayīb…? = can I bring…?; answer: yṣīr, or ma yṣīr"
+   ],
+   [
+    "ما يصير",
+    "ma yṣīr",
+    "no way, that won't do; it's not right",
+    "لا يصح",
+    ""
+   ],
+   [
+    "والله فكرة",
+    "wallāh fikra",
+    "good idea!",
+    "فكرة جيدة",
+    ""
+   ],
+   [
+    "في مكان",
+    "fī makān",
+    "there's room, there's space",
+    "يوجد مكان",
+    "ma fī makān = there's no room"
+   ],
+   [
+    "نرجع بدري",
+    "nirjaʿ badri",
+    "we come back early",
+    "نرجع مبكرًا",
+    ""
+   ],
+   [
+    "لازم أذاكر",
+    "lāzim adhākir",
+    "I have to revise, I have to study",
+    "يجب أن أذاكر",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s2u071",
+  "stage": 2,
+  "title": "Let's finish it first",
+  "goal": "Plan the afternoon with Maryam at the office, then suggest karak to the whole team",
+  "tip": "khallna 'let's' changes with who you talk to: khallīna to a woman, khallūna to a group. The next verb takes n- for 'we': khallūna niṭlaʿ 'let's head out' (to a group). You'll also hear khallīna said to men.",
+  "grammar": "khallīna (to a woman), khallūna (to a group) + verb",
+  "dialogue": [
+   [
+    "A",
+    "سالم، المدير يبي الملف اليوم!",
+    "Sālim, il-mudīr yabi l-malaff il-yōm!",
+    "Sālim, the manager wants the file today!"
+   ],
+   [
+    "B",
+    "زين، خلينا نخلصه قبل الغدا",
+    "zēn, khallīna nkhallṣah gabil il-ghada",
+    "OK, let's finish it before lunch."
+   ],
+   [
+    "A",
+    "خلنا نبدا الحين. أنا أكتب وانت تطالع",
+    "khallna nibda l-ḥīn. ana aktib w inta tṭāliʿ",
+    "Let's start now. I'll write and you check it."
+   ],
+   [
+    "B",
+    "أوكي. والشباب دوم يشربون كرك بعد الشغل",
+    "ōkē. w ish-shabāb dōm yishrabūn karak baʿd ish-shughul",
+    "OK. And the guys always have karak after work."
+   ],
+   [
+    "A",
+    "فكرة حلوة! خل نقول للجماعة كلهم",
+    "fikra ḥilwa! khal ngūl lil-jamāʿa killhum",
+    "Nice idea! Let's tell the whole team."
+   ],
+   [
+    "B",
+    "يا جماعة! خلونا نطلع الساعة خمس",
+    "yā jamāʿa! khallūna niṭlaʿ is-sāʿa khams",
+    "Everyone! Let's head out at five."
+   ],
+   [
+    "A",
+    "بس أول خلنا نخلص الملف!",
+    "bas awwal khallna nkhalliṣ il-malaff!",
+    "But first let's finish the file!"
+   ]
+  ],
+  "items": [
+   [
+    "خلينا",
+    "khallīna",
+    "let's (to a woman)",
+    "دعينا",
+    "to a man: khallna (خلنا); to a group: khallūna (خلونا); you'll also hear khallīna said to men"
+   ],
+   [
+    "خلونا",
+    "khallūna",
+    "let's (to a group)",
+    "دعونا",
+    "to one man: khallna; to one woman: khallīna"
+   ],
+   [
+    "خلينا نخلص",
+    "khallīna nkhalliṣ",
+    "let's finish (to a woman)",
+    "لننتهِ",
+    "to a man: khallna nkhalliṣ; nkhallṣah = we finish it"
+   ],
+   [
+    "خلونا نطلع",
+    "khallūna niṭlaʿ",
+    "let's head out, let's go out (to a group)",
+    "لنخرج",
+    ""
+   ],
+   [
+    "نبدا",
+    "nibda",
+    "we start; let's start",
+    "نبدأ",
+    "yibda = it starts"
+   ],
+   [
+    "تطالع",
+    "tṭāliʿ",
+    "you look at, you check (to a man)",
+    "تنظر / تراجع",
+    "to a woman: tṭālʿīn (تطالعين)"
+   ],
+   [
+    "قبل الغدا",
+    "gabil il-ghada",
+    "before lunch",
+    "قبل الغداء",
+    ""
+   ],
+   [
+    "بعد الشغل",
+    "baʿd ish-shughul",
+    "after work",
+    "بعد العمل",
+    "also baʿd id-dawām"
+   ],
+   [
+    "فكرة حلوة",
+    "fikra ḥilwa",
+    "nice idea, good idea",
+    "فكرة جميلة",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s2u072",
+  "stage": 2,
+  "title": "Checkpoint 2.4: lunch at Bū Rāshid's",
+  "goal": "Bū Rāshid phones to invite you to Friday lunch: answer respectfully, ask to bring Fahad, and promise not to be late",
+  "tip": "With an elder, stay respectful: yā ʿammi, ṭāl ʿumrak, and abshir for 'consider it done'. For a group, -kum and -ūn come back: killkum 'all of you', la titʼakhkharūn 'don't be late', nshūfkum 'we'll see you all'. widdna is 'we'd love to'.",
+  "grammar": "checkpoint 2.4: recycle s2u055–s2u071 (elders, invitations, ḥabbēt, widdi, yṣīr)",
+  "dialogue": [
+   [
+    "A",
+    "السلام عليكم يا سالم. شحالك؟",
+    "as-salāmu ʿalaykum yā Sālim. shḥālak?",
+    "Peace be upon you, Sālim. How are you?"
+   ],
+   [
+    "B",
+    "وعليكم السلام! بخير الله يسلمك. شحالك يا عمي؟",
+    "wa ʿalaykum is-salām! b-khēr allāh ysallmak. shḥālak yā ʿammi?",
+    "And upon you! Fine, thank you. How are you, sir?"
+   ],
+   [
+    "A",
+    "الحمد لله. حبيت أعزمك على الغدا يوم الجمعة",
+    "il-ḥamdu lillāh. ḥabbēt aʿazmak ʿala l-ghada yōm il-jumʿa",
+    "Thank God. I'd like to invite you to lunch on Friday."
+   ],
+   [
+    "B",
+    "على هالخشم! يصير أييب فهد ويانا؟",
+    "ʿala hal-khashm! yṣīr ayīb Fahad wiyyāna?",
+    "With pleasure! May I bring Fahad with us?"
+   ],
+   [
+    "A",
+    "أكيد! تعالوا كلكم، بس لا تتأخرون",
+    "akīd! taʿālu killkum, bas la titʼakhkharūn",
+    "Of course! Come, all of you, just don't be late."
+   ],
+   [
+    "B",
+    "أبشر طال عمرك! ودنا نشوفك",
+    "abshir ṭāl ʿumrak! widdna nshūfak",
+    "Of course, sir! We'd love to see you."
+   ],
+   [
+    "A",
+    "الله يحفظكم. نشوفكم يوم الجمعة إن شاء الله",
+    "allāh yiḥfaẓkum. nshūfkum yōm il-jumʿa in shāʼ allāh",
+    "God keep you all. See you all on Friday, God willing."
+   ]
+  ],
+  "items": [
+   [
+    "كلكم",
+    "killkum",
+    "all of you",
+    "كلكم",
+    ""
+   ],
+   [
+    "لا تتأخرون",
+    "la titʼakhkharūn",
+    "don't be late (to a group)",
+    "لا تتأخروا",
+    "to one man: la titʼakhkhar; to one woman: la titʼakhkharīn"
+   ],
+   [
+    "أبشر طال عمرك",
+    "abshir ṭāl ʿumrak",
+    "consider it done, sir (respectful)",
+    "",
+    "to an elder or someone senior"
+   ],
+   [
+    "ودنا",
+    "widdna",
+    "we'd love to",
+    "نود",
+    "widdna nshūfak = we'd love to see you"
+   ],
+   [
+    "الله يحفظكم",
+    "allāh yiḥfaẓkum",
+    "God keep you all (warm thanks or goodbye)",
+    "حفظكم الله",
+    "to one man: allāh yiḥfaẓak"
+   ],
+   [
+    "نشوفكم",
+    "nshūfkum",
+    "we'll see you all, see you (to a group)",
+    "نراكم",
+    "to one man: nshūfak; to one woman: nshūfich"
+   ]
+  ]
+ },
+ {
+  "id": "s2u073",
+  "stage": 2,
+  "title": "Are you upset?",
+  "goal": "Maryam looks upset at work: ask what's wrong and cheer her up",
+  "tip": "Feeling words agree with the person: zaʿlān (a man), zaʿlāna (a woman). With kān they go into the past: kint zaʿlāna 'I was upset' (a woman). illi links a verb to a noun: il-ʿarẓ illi sawwētah 'the presentation I did'. ṣij? is 'really?'.",
+  "grammar": "recycle: kān + feeling word; illi + verb",
+  "dialogue": [
+   [
+    "A",
+    "صباح الخير",
+    "ṣabāḥ il-khēr",
+    "Good morning."
+   ],
+   [
+    "B",
+    "صباح النور! خير؟ انتي زعلانة؟",
+    "ṣabāḥ in-nūr! khēr? inti zaʿlāna?",
+    "Good morning! Everything OK? Are you upset?"
+   ],
+   [
+    "A",
+    "هيه شوي. المدير ما حب العرض اللي سويته",
+    "hē shwayy. il-mudīr ma ḥabb il-ʿarẓ illi sawwētah",
+    "A bit, yes. The manager didn't like the presentation I did."
+   ],
+   [
+    "B",
+    "صج؟ بس العرض كان وايد زين!",
+    "ṣij? bas il-ʿarẓ kān wāyid zēn!",
+    "Really? But the presentation was really good!"
+   ],
+   [
+    "A",
+    "والله؟ أنا كنت زعلانة من الصبح",
+    "wallāh? ana kint zaʿlāna min iṣ-ṣubḥ",
+    "Really? I've been upset since this morning."
+   ],
+   [
+    "B",
+    "لا تزعلين. يمكن المدير كان تعبان اليوم",
+    "la tizʿalīn. yimkin il-mudīr kān taʿbān il-yōm",
+    "Don't be upset. Maybe the manager was just tired today."
+   ],
+   [
+    "A",
+    "يمكن. الحين أحسن، الحمد لله",
+    "yimkin. il-ḥīn aḥsan, il-ḥamdu lillāh",
+    "Maybe. I feel better now, thank God."
+   ]
+  ],
+  "items": [
+   [
+    "زعلان",
+    "zaʿlān",
+    "upset, sad, cross (a man)",
+    "حزين / غاضب",
+    "a woman: zaʿlāna (زعلانة); zaʿlān min = upset with"
+   ],
+   [
+    "انتي زعلانة؟",
+    "inti zaʿlāna?",
+    "are you upset? (to a woman)",
+    "هل أنتِ حزينة؟",
+    "to a man: inta zaʿlān?"
+   ],
+   [
+    "صج؟",
+    "ṣij?",
+    "really? is that true?",
+    "حقًا؟",
+    "also wallāh?"
+   ],
+   [
+    "لا تزعلين",
+    "la tizʿalīn",
+    "don't be upset (to a woman)",
+    "لا تحزني",
+    "to a man: la tizʿal (لا تزعل)"
+   ],
+   [
+    "ما حب",
+    "ma ḥabb",
+    "he didn't like",
+    "لم يحب",
+    "she didn't like: ma ḥabbat (ما حبت)"
+   ],
+   [
+    "العرض اللي سويته",
+    "il-ʿarẓ illi sawwētah",
+    "the presentation I did",
+    "العرض الذي قدمته",
+    ""
+   ],
+   [
+    "كان تعبان",
+    "kān taʿbān",
+    "he was tired",
+    "كان متعبًا",
+    ""
+   ],
+   [
+    "الحين أحسن",
+    "il-ḥīn aḥsan",
+    "(it's) better now, (I'm) better now",
+    "الآن أفضل",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s2u074",
+  "stage": 2,
+  "title": "Calm down!",
+  "goal": "Sēf is angry in the car park: calm him down and find out what's really wrong",
+  "tip": "Use kān and illi to say what's behind a feeling: il-imtiḥān illi kān ams 'the exam (that was) yesterday'. mʿaṣṣib is 'angry' (a woman: mʿaṣṣba). allāh yihdāk 'God guide you' is a gentle 'come on now' to a friend who's overdoing it.",
+  "grammar": "recycle: illi kān …; feeling words",
+  "dialogue": [
+   [
+    "A",
+    "شوف هذا! أخذ مكاني! ما صارت!",
+    "shūf hādha! khadh makāni! ma ṣārat!",
+    "Look at him! He took my spot! This is too much!"
+   ],
+   [
+    "B",
+    "لا تعصب يا ريّال. في مكان ثاني هناك",
+    "la tʿaṣṣib yā rayyāl. fī makān thāni hnāk",
+    "Calm down, mate. There's another spot over there."
+   ],
+   [
+    "A",
+    "كل يوم جي! أنا معصب من الصبح",
+    "kill yōm chī! ana mʿaṣṣib min iṣ-ṣubḥ",
+    "It's like this every day! I've been angry since this morning."
+   ],
+   [
+    "B",
+    "ليش معصب؟ شو اللي صار؟",
+    "lēsh mʿaṣṣib? shu illi ṣār?",
+    "Why are you angry? What happened?"
+   ],
+   [
+    "A",
+    "الامتحان اللي كان أمس، ما نجحت فيه",
+    "il-imtiḥān illi kān ams, ma nijaḥt fīh",
+    "The exam yesterday: I didn't pass it."
+   ],
+   [
+    "B",
+    "الله يهداك! امتحان واحد بس. المرة الياية إن شاء الله",
+    "allāh yihdāk! imtiḥān wāḥid bas. il-marra l-yāya in shāʼ allāh",
+    "Come on now! It's just one exam. Next time, God willing."
+   ],
+   [
+    "A",
+    "صح كلامك. خلاص، ما بعصب",
+    "ṣaḥḥ kalāmak. khalāṣ, ma baʿaṣṣib",
+    "You're right. OK, I won't get angry."
+   ]
+  ],
+  "items": [
+   [
+    "معصب",
+    "mʿaṣṣib",
+    "angry (a man)",
+    "غاضب",
+    "a woman: mʿaṣṣba (معصبة)"
+   ],
+   [
+    "لا تعصب",
+    "la tʿaṣṣib",
+    "calm down, don't get angry (to a man)",
+    "لا تغضب",
+    "to a woman: la tʿaṣṣbīn (لا تعصبين)"
+   ],
+   [
+    "ليش معصب؟",
+    "lēsh mʿaṣṣib?",
+    "why are you angry? (to a man)",
+    "لماذا أنت غاضب؟",
+    "to a woman: lēsh mʿaṣṣba?"
+   ],
+   [
+    "ما صارت!",
+    "ma ṣārat!",
+    "this is too much! this has gone too far!",
+    "",
+    "said when something keeps happening or someone overdoes it"
+   ],
+   [
+    "الله يهداك",
+    "allāh yihdāk",
+    "come on now (gentle telling-off, lit. God guide you) (to a man)",
+    "هداك الله",
+    "to a woman: allāh yihdāch (الله يهداج); to friends, not to elders"
+   ],
+   [
+    "كل يوم جي",
+    "kill yōm chī",
+    "it's like this every day",
+    "كل يوم هكذا",
+    ""
+   ],
+   [
+    "مكان ثاني",
+    "makān thāni",
+    "another place, another spot",
+    "مكان آخر",
+    ""
+   ],
+   [
+    "ما نجحت",
+    "ma nijaḥt",
+    "I didn't pass; you didn't pass (to a man)",
+    "لم أنجح",
+    "to a woman: ma nijaḥti (ما نجحتي)"
+   ],
+   [
+    "صح كلامك",
+    "ṣaḥḥ kalāmak",
+    "you're right (to a man)",
+    "معك حق",
+    "to a woman: ṣaḥḥ kalāmich (صح كلامج)"
+   ]
+  ]
+ },
+ {
+  "id": "s2u075",
+  "stage": 2,
+  "title": "I was scared, now I'm happy",
+  "goal": "Tell Sēf how your presentation went: how nervous you were and how happy you are now",
+  "tip": "kint + a feeling word is 'I was …': kint khāyif 'I was scared'. The word agrees with the person: khāyif / khāyfa, mistānis / mistānsa. khāyif min is 'scared of'; khāyif ʿala is 'worried about (someone)'.",
+  "grammar": "recycle: kān / kint + feeling word",
+  "dialogue": [
+   [
+    "A",
+    "شو صار في العرض اليوم؟",
+    "shu ṣār fi l-ʿarẓ il-yōm?",
+    "What happened with the presentation today?"
+   ],
+   [
+    "B",
+    "كنت خايف من المدير، بس العرض كان زين!",
+    "kint khāyif min il-mudīr, bas il-ʿarẓ kān zēn!",
+    "I was scared of the manager, but the presentation went well!"
+   ],
+   [
+    "A",
+    "قلت لك: لا تخاف! وشو قال المدير؟",
+    "gilt-lak: la tkhāf! w shu gāl il-mudīr?",
+    "I told you: don't worry! And what did the manager say?"
+   ],
+   [
+    "B",
+    "قال: حلو وايد! والله وايد مستانس",
+    "gāl: ḥilu wāyid! wallāh wāyid mistānis",
+    "He said: really nice! I'm so happy."
+   ],
+   [
+    "A",
+    "مبروك! الليلة العشا على حسابي",
+    "mabrūk! il-lēla l-ʿasha ʿala ḥsābi",
+    "Congratulations! Tonight dinner's on me."
+   ],
+   [
+    "B",
+    "الله يبارك فيك! وانت بعد كنت خايف علي؟",
+    "allāh ybārik fīk! w inta baʿad kint khāyif ʿalay?",
+    "Thanks! And were you worried about me too?"
+   ],
+   [
+    "A",
+    "شوي! بس الحين أنا بعد مستانس",
+    "shwayy! bas il-ḥīn ana baʿad mistānis",
+    "A bit! But now I'm happy too."
+   ]
+  ],
+  "items": [
+   [
+    "خايف",
+    "khāyif",
+    "afraid, scared, worried (a man)",
+    "خائف",
+    "a woman: khāyfa (خايفة)"
+   ],
+   [
+    "خايف من",
+    "khāyif min",
+    "scared of",
+    "خائف من",
+    ""
+   ],
+   [
+    "كنت خايف",
+    "kint khāyif",
+    "I was scared; you were scared (to a man)",
+    "كنت خائفًا",
+    "a woman says: kint khāyfa; to a woman: kinti khāyfa"
+   ],
+   [
+    "لا تخاف",
+    "la tkhāf",
+    "don't worry, don't be scared (to a man)",
+    "لا تخف",
+    "to a woman: la tkhāfīn (لا تخافين)"
+   ],
+   [
+    "مستانس",
+    "mistānis",
+    "happy, pleased, having a good time (a man)",
+    "سعيد / مسرور",
+    "a woman: mistānsa (مستانسة)"
+   ],
+   [
+    "وايد مستانس",
+    "wāyid mistānis",
+    "really happy, so happy",
+    "سعيد جدًا",
+    ""
+   ],
+   [
+    "شو قال؟",
+    "shu gāl?",
+    "what did he say?",
+    "ماذا قال؟",
+    "what did she say?: shu gālat?"
+   ],
+   [
+    "خايف علي",
+    "khāyif ʿalay",
+    "worried about me",
+    "قلق علي",
+    "khāyif ʿalēk = worried about you"
+   ]
+  ]
+ },
+ {
+  "id": "s2u076",
+  "stage": 2,
+  "title": "Khēba!",
+  "goal": "Sēf teases you about your big meal: tease him back the way friends do",
+  "tip": "Friends tease, and the replies are short: khēba! 'seriously?!' to poke fun, ḥarām ʿalēk! 'that's not fair!' to protest, amzaḥ wiyyāk 'I'm joking'. kān still helps: hādhāk kān ghada 'that was lunch'.",
+  "grammar": "recycle: kān; teasing replies",
+  "dialogue": [
+   [
+    "A",
+    "خيبة! بتاكل كل هذا؟",
+    "khēba! bitākil kill hādha?",
+    "Seriously?! You're going to eat all that?"
+   ],
+   [
+    "B",
+    "حرام عليك! ما كلت شي من الصبح",
+    "ḥarām ʿalēk! ma kalt shay min iṣ-ṣubḥ",
+    "That's not fair! I haven't eaten anything since this morning."
+   ],
+   [
+    "A",
+    "أمزح وياك! بالعافية",
+    "amzaḥ wiyyāk! bil-ʿāfya",
+    "I'm joking! Enjoy your food."
+   ],
+   [
+    "B",
+    "الله يعافيك. وانت أمس كلت صحنين!",
+    "allāh yʿāfīk. w inta ams kalt ṣaḥnēn!",
+    "Thanks. And you ate two plates yesterday!"
+   ],
+   [
+    "A",
+    "تمزح؟ هذاك كان غدا وعشا!",
+    "timzaḥ? hādhāk kān ghada w ʿasha!",
+    "Are you kidding? That was lunch and dinner!"
+   ],
+   [
+    "B",
+    "خيبة! يلا، خلنا ناكل قبل لا يبرد",
+    "khēba! yalla, khallna nākil gabil la yibrad",
+    "Seriously?! Come on, let's eat before it gets cold."
+   ]
+  ],
+  "items": [
+   [
+    "خيبة!",
+    "khēba!",
+    "seriously?! come off it! (teasing) (friends only)",
+    "",
+    "pokes fun at someone overdoing it, or sounds unimpressed; never with strangers or elders"
+   ],
+   [
+    "حرام عليك!",
+    "ḥarām ʿalēk!",
+    "that's not fair! come on! (to a man)",
+    "هذا ظلم",
+    "to a woman: ḥarām ʿalēch (حرام عليج)"
+   ],
+   [
+    "أمزح وياك",
+    "amzaḥ wiyyāk",
+    "I'm joking (with you) (to a man)",
+    "أمزح معك",
+    "to a woman: amzaḥ wiyyāch (أمزح وياج)"
+   ],
+   [
+    "تمزح؟",
+    "timzaḥ?",
+    "are you kidding? (to a man)",
+    "هل تمزح؟",
+    "to a woman: timzaḥīn? (تمزحين؟)"
+   ],
+   [
+    "كل هذا",
+    "kill hādha",
+    "all this, all that",
+    "كل هذا",
+    ""
+   ],
+   [
+    "ما كلت شي",
+    "ma kalt shay",
+    "I haven't eaten anything",
+    "لم آكل شيئًا",
+    ""
+   ],
+   [
+    "قبل لا يبرد",
+    "gabil la yibrad",
+    "before it gets cold",
+    "قبل أن يبرد",
+    ""
+   ],
+   [
+    "هذاك كان",
+    "hādhāk kān",
+    "that was",
+    "ذلك كان",
+    ""
+   ]
+  ],
+  "culture": "Friends in the Gulf tease each other a lot, and khēba 'seriously?!' is part of it: it pokes fun at someone overdoing it (khēba, you'll eat all that?) or says you're not impressed. Keep it for friends your own age. With strangers, elders or at work it sounds rude."
+ }
+]
