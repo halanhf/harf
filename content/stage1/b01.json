@@ -27,15 +27,15 @@
 ],
 [
 "B",
-"ما شي. وين أحمد؟",
-"ma shay. wēn Aḥmad?",
-"Not much. Where's Ahmed?"
+"ما شي. وين أحمد؟ هو في الجامعة؟",
+"ma shay. wēn Aḥmad? huwa fi l-jāmʿa?",
+"Not much. Where's Ahmed? Is he at the university?"
 ],
 [
 "A",
-"هو في البيت اليوم",
-"huwa fi l-bēt il-yōm",
-"He's at home today."
+"لا، هو في البيت اليوم",
+"la, huwa fi l-bēt il-yōm",
+"No, he's at home today."
 ],
 [
 "B",
@@ -55,9 +55,9 @@
 [
 "هلا بك",
 "hala bik",
-"hi to you too (reply to hala)",
+"hi to you too; welcome (to a guest)",
 "أهلًا بك",
-"to a woman: hala bich (هلا بج)"
+"to a woman: hala bich (هلا بج); replies to hala, and a host also opens with it"
 ],
 [
 "بخير",
@@ -115,8 +115,8 @@
 "stage": 1,
 "title": "Good morning, Maryam",
 "goal": "Greet a woman colleague, ask how she is with the -ich form, and ask about another colleague.",
-"grammar": "Pronouns: inti (you, to a woman) and hiya (she); no copula",
-"tip": "Speaking to a woman, 'you' endings change: shḥālak → shḥālich, mashkūr → mashkūra. hiya = she, again with no 'is': hiya fi ijtimāʿ = she's in a meeting. hē is the Emirati 'yes'; your ī is fine too.",
+"grammar": "Pronoun hiya (she); -ich and -a when talking to a woman; no copula",
+"tip": "Speaking to a woman, words change: shḥālak → shḥālich (-ich = your), mashkūr → mashkūra (-a agrees with her). hiya = she, again with no 'is': hiya fi ijtimāʿ = she's in a meeting. hē is the Emirati 'yes'; your ī is fine too.",
 "culture": "Handshakes between men and women vary. Many Emirati women don't shake hands with men, so let a woman offer her hand first; if she doesn't, a smile and the greeting are enough, and some men touch their chest. Men usually shake hands with every man present. (Needs a native check.)",
 "dialogue": [
 [
@@ -139,9 +139,9 @@
 ],
 [
 "B",
-"زين الحمد لله. سارة في المكتب؟",
-"zēn il-ḥamdu lillāh. Sāra fi l-maktab?",
-"Good, thank God. Is Sara in the office?"
+"زين الحمد لله. وسارة؟ هي في المكتب؟",
+"zēn il-ḥamdu lillāh. w Sāra? hiya fi l-maktab?",
+"Good, thank God. And Sara? Is she in the office?"
 ],
 [
 "A",
@@ -237,8 +237,8 @@
 ],
 [
 "B",
-"هلا فيك. انتو تدرسون هني؟",
-"hala fīk. intu tidrisūn hni?",
+"هلا فيكم. انتو تدرسون هني؟",
+"hala fīkum. intu tidrisūn hni?",
 "Hi. Do you (two) study here?"
 ],
 [
@@ -266,14 +266,14 @@
 "hala fīk",
 "hi to you too (reply to hala)",
 "أهلًا بك",
-"to a woman: hala fīch (هلا فيج)"
+"to a woman: hala fīch (هلا فيج); to a group: hala fīkum (هلا فيكم)"
 ],
 [
 "انتو",
 "intu",
 "you (to a group)",
 "أنتم",
-""
+"to one man: inta; to one woman: inti"
 ],
 [
 "تدرسون",
@@ -331,7 +331,7 @@
 [
 "A",
 "مرحبا الساع! هلا وغلا",
-"marḥaba is-sāʿ! hala w ghala",
+"marḥaba s-sāʿ! hala w ghala",
 "Welcome, welcome! Great to see you."
 ],
 [
@@ -342,15 +342,15 @@
 ],
 [
 "A",
-"بخير. تفضل، الشباب في المجلس",
-"b-khēr. tfaẓẓal, ish-shabāb fi l-majlis",
-"Fine. Come in, the guys are in the majlis."
+"بخير، الله يسلمك. تفضل، الشباب في المجلس",
+"b-khēr, allāh ysallmak. tfaẓẓal, ish-shabāb fi l-majlis",
+"Fine, God keep you. Come in, the guys are in the majlis."
 ],
 [
 "B",
-"منو؟ أحمد وحمد؟",
-"minu? Aḥmad w Ḥamad?",
-"Who? Ahmed and Hamad?"
+"منو هم؟ أحمد وحمد؟",
+"minu hum? Aḥmad w Ḥamad?",
+"Who are they? Ahmed and Hamad?"
 ],
 [
 "A",
@@ -368,7 +368,7 @@
 "items": [
 [
 "مرحبا الساع",
-"marḥaba is-sāʿ",
+"marḥaba s-sāʿ",
 "welcome! (to a guest arriving, UAE)",
 "",
 "reply: hala wallāh"
@@ -459,9 +459,9 @@
 ],
 [
 "B",
-"هيه، أمي وأبوي في لندن",
-"hē, ummi w ubūy fi Landan",
-"Yes, my mum and dad are in London."
+"الحمد لله بخير. أمي وأبوي في لندن",
+"il-ḥamdu lillāh b-khēr. ummi w ubūy fi Landan",
+"Fine, thank God. My mum and dad are in London."
 ],
 [
 "A",
@@ -675,15 +675,15 @@
 ],
 [
 "B",
-"الله يخليها. وهذا ولده؟",
-"allāh ykhallīha. w hādha wildah?",
-"God bless her. And is this his son?"
+"الله يخليها. شو اسمها؟",
+"allāh ykhallīha. shu ismha?",
+"God bless her. What's her name?"
 ],
 [
 "A",
-"لا، هذا ولد أختي. عمره سنتين",
-"la, hādha wild ukhti. ʿumrah santēn",
-"No, that's my sister's son. He's two."
+"اسمها حصة. وهذا ولد أختي، عمره سنتين",
+"ismha Ḥiṣṣa. w hādha wild ukhti, ʿumrah santēn",
+"Her name's Hessa. And this is my sister's son, he's two."
 ],
 [
 "B",
@@ -740,7 +740,7 @@
 "santēn",
 "two years",
 "سنتان",
-"one year: sana; three years: thalāth sinīn"
+"one year: sana; three years: thalāth sinīn (you've also seen thalāth sanawāt)"
 ],
 [
 "عيال",
@@ -891,7 +891,7 @@
 [
 "A",
 "ويا ولد عمي اليوم. هو ريّال طيب",
-"wiyya wild ʿammi il-yōm. huwa rayyāl ṭayyib",
+"wiyya wild ʿammi l-yōm. huwa rayyāl ṭayyib",
 "My cousin has it today. He's a good guy."
 ],
 [
@@ -1025,7 +1025,7 @@
 "yā wildi",
 "son, my boy (an older person to a young man)",
 "يا بني",
-"an older woman to a young woman: yā binti"
+"an older person to a young woman: yā binti (يا بنتي)"
 ],
 [
 "شحال الأهل؟",

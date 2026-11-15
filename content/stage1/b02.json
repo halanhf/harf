@@ -30,8 +30,8 @@
     "id": "s1u028",
     "stage": 1,
     "title": "Big or small, new or old",
-    "goal": "Describe your new flat to a colleague and ask about hers",
-    "tip": "Adjectives come after the noun and add -a for a feminine noun: maktab ṣghīr, bināya gadīma. il- on the noun only makes a sentence: il-ghurfa kbīra (the room is big). For “the new office” both are definite: maktabich il-yidīd.",
+    "goal": "Describe your new flat to a colleague and ask about her new office",
+    "tip": "Adjectives come after the noun and add -a for a feminine noun: maktab ṣghīr, bināya gadīma. il- on the noun only makes a sentence: il-ghurfa kbīra (the room is big). “The new office” takes il- twice: il-maktab il-yidīd; “your new office” is maktabich il-yidīd.",
     "grammar": "Adjectives after the noun; feminine -a; il- on both for “the new …”",
     "dialogue": [
       ["A", "ما شاء الله، عندك شقة يديدة؟", "mā shāʼ allāh, ʿindak shigga yidīda?", "Wow, you've got a new flat?"],
@@ -133,7 +133,7 @@
     "id": "s1u032",
     "stage": 1,
     "title": "Checkpoint 1.1: visiting Sēf's family",
-    "goal": "Visit Umm Sēf with a friend: the welcome, how-are-you and thanks for a group",
+    "goal": "Visit Sēf's family home with a friend: Umm Sēf's welcome, how-are-you and thanks for a group",
     "tip": "To two or more people, -ak and -ich become -kum: shḥālkum?, ḥayyākum allāh, ʿasākum b-khēr. Commands add -u (tfaẓẓalu), and mashkūr becomes mashkūrīn.",
     "grammar": "checkpoint 1.1: group forms (-kum, -u, -īn)",
     "dialogue": [
@@ -159,7 +159,7 @@
     "stage": 1,
     "title": "Where did you go last night?",
     "goal": "Say where you went, when you got back, and that you didn't go",
-    "tip": "For “I” in the past, add -t: riḥt (I went), rijaʿt (I came back). The same form means “you (a man)”: wēn riḥt? (where did you go?). For “didn't”, put ma first: ma riḥt (I didn't go).",
+    "tip": "For “I” in the past the verb ends in -t: rijaʿt (I came back), tiʿabt (I got tired); riḥt (I went) is irregular, so learn it as a word. The same form means “you (a man)”: wēn riḥt? For “didn't”, put ma first: ma riḥt (I didn't go).",
     "grammar": "Past tense: I and you (a man) -t; ma + past",
     "dialogue": [
       ["A", "وين رحت البارحة؟", "wēn riḥt il-bārḥa?", "Where did you go last night?"],
@@ -175,7 +175,7 @@
       ["وين رحت؟", "wēn riḥt?", "where did you go? (to a man)", "أين ذهبتَ؟", "to a woman: wēn riḥti?"],
       ["ما رحت", "ma riḥt", "I didn't go", "لم أذهب", ""],
       ["رجعت", "rijaʿt", "I came back / you came back (to a man)", "رجعتُ / رجعتَ", "to a woman: rijaʿti (رجعتي)"],
-      ["تعبت", "tiʿabt", "I got tired / you got tired (to a man)", "تعبتُ / تعبتَ", "to a woman: tiʿabti (تعبتي); tiʿabt wāyid = I was really tired"],
+      ["تعبت", "tiʿabt", "I got tired / you got tired (to a man)", "تعبتُ / تعبتَ", "to a woman: tiʿabti (تعبتي); tiʿabt wāyid = I was really tired; also “I felt unwell”"],
       ["المول", "il-mōl", "the mall", "المركز التجاري", ""],
       ["ثنتين", "thintēn", "two (o'clock); two (with feminine nouns)", "اثنتان", "is-sāʿa thintēn = at two o'clock"]
     ]
@@ -192,7 +192,7 @@
       ["A", "صباح النور. وصلت الحين. وانت؟", "ṣabāḥ in-nūr. wiṣalt il-ḥīn. w inta?", "Good morning. I've just got in. And you?"],
       ["B", "وصلت الساعة ثمان. شربتي قهوة؟", "wiṣalt is-sāʿa thamān. shirabti gahwa?", "I got in at eight. Have you had a coffee?"],
       ["A", "لا، ما شربت. كتبت الإيميل حق المدير؟", "la, ma shirabt. kitabt il-īmēl ḥagg il-mudīr?", "No, I haven't. Did you write the email to the manager?"],
-      ["B", "إي، كتبت. يلا نشرب قهوة؟", "ī, kitabt. yalla nishrab gahwa?", "Yes, I did. Shall we go for a coffee?"],
+      ["B", "إي، كتبته. يلا نشرب قهوة؟", "ī, kitabtah. yalla nishrab gahwa?", "Yes, I did. Shall we go for a coffee?"],
       ["A", "يلا، بس بسرعة!", "yalla, bas b-surʿa!", "OK, but quickly!"]
     ],
     "items": [
@@ -211,11 +211,11 @@
     "stage": 1,
     "title": "He went, she went",
     "goal": "Ask a colleague where people are and say where they went",
-    "tip": "“He” is the bare verb: wiṣal (he arrived), rāḥ (he went). “She” adds -at, and the vowel before it drops: wiṣlat, rijʿat. In writing wiṣlat (وصلت) looks like wiṣalt (I arrived): the sentence tells you which.",
+    "tip": "“He” is the bare verb: wiṣal (he arrived), rāḥ (he went). “She” adds -at. In verbs like wiṣal the vowel before it drops: wiṣlat, rijʿat; rāḥ just adds it: rāḥat. In writing wiṣlat (وصلت) looks like wiṣalt (I arrived): the sentence tells you which.",
     "grammar": "Past tense: he (no ending) and she (-at)",
     "dialogue": [
       ["B", "المدير وصل؟", "il-mudīr wiṣal?", "Has the manager got in?"],
-      ["A", "إي، وصل الصبح، بس طلع قبل شوي", "ī, wiṣal iṣ-ṣubḥ, bas ṭilaʿ gabil shwayy", "Yes, he got in this morning, but he went out a moment ago."],
+      ["A", "هيه، وصل الصبح، بس طلع قبل شوي", "hē, wiṣal iṣ-ṣubḥ, bas ṭilaʿ gabil shwayy", "Yes, he got in this morning, but he went out a moment ago."],
       ["B", "وين راح؟ ومريم؟", "wēn rāḥ? w Maryam?", "Where did he go? And Maryam?"],
       ["A", "ما أدري. ومريم رجعت البيت، تعبت شوي", "ma adri. w Maryam rijʿat il-bēt, tiʿbat shwayy", "I don't know. And Maryam went home, she wasn't feeling well."],
       ["B", "سلامتها!", "salāmat-ha!", "I hope she's OK!"],
@@ -229,7 +229,7 @@
       ["راحت", "rāḥat", "she went", "ذهبت", "he: rāḥ"],
       ["رجع", "rijaʿ", "he came back, he went back", "رجع / عاد", "she: rijʿat (رجعت); rijʿat il-bēt = she went home, no word for “to”"],
       ["قبل", "gabil", "ago; before", "قبل", "gabil sāʿa = an hour ago"],
-      ["سلامتها", "salāmat-ha", "I hope she's OK (when someone is ill)", "سلامتها", "about a man: salāmtah; reply: allāh ysallmak"]
+      ["سلامتها", "salāmat-ha", "I hope she's OK (when someone is ill)", "شفاها الله", "about a man: salāmtah; reply: allāh ysallmak"]
     ]
   },
   {
@@ -243,7 +243,7 @@
       ["A", "طلعت البارحة؟", "ṭilaʿt il-bārḥa?", "Did you go out last night?"],
       ["B", "إي، طلعنا أنا وسيف", "ī, ṭilaʿna ana w Sēf", "Yes, Sēf and I went out."],
       ["A", "زين! وين؟", "zēn! wēn?", "Nice! Where to?"],
-      ["B", "رحنا البحر، أول مرة!", "riḥna l-baḥar, awwal marra!", "We went to the beach, the first time!"],
+      ["B", "رحنا البحر، أول مرة!", "riḥna l-baḥar, awwal marra!", "We went to the beach, for the first time!"],
       ["A", "حلو! ورجعت متى؟", "ḥilu! w rijaʿt mita?", "Lovely! And when did you get back?"],
       ["B", "وصلنا البيت متأخر، الساعة وحدة", "wiṣalna l-bēt mitʼakhkhir, is-sāʿa waḥda", "We got home late, at one."]
     ],

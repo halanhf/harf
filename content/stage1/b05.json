@@ -3,7 +3,7 @@
   "id": "s1u057",
   "stage": 1,
   "title": "Breakfast at the cafeteria",
-  "goal": "Say you haven't had breakfast, order karak with Sēf and say who's paying",
+  "goal": "Say you haven't had breakfast and thank Sēf when he offers to pay",
   "tip": "Past recap: trayyagt? 'have you had breakfast?' and trayyagt 'I've had breakfast' sound the same, like shirabt; ma trayyagt = I haven't. Endings recap: ḥsāb + -i gives ʿala ḥsābi, 'on my account', so 'it's on me'.",
   "grammar": "recycle: possessives, past, modals",
   "dialogue": [
@@ -15,9 +15,9 @@
    ],
    [
     "B",
-    "لا، ما تريقت. أنا يوعان",
-    "la, ma trayyagt. ana yōʿān",
-    "No, I haven't. I'm hungry."
+    "صباح النور. لا، ما تريقت. أنا يوعان",
+    "ṣabāḥ in-nūr. la, ma trayyagt. ana yōʿān",
+    "Morning. No, I haven't. I'm hungry."
    ],
    [
     "A",
@@ -27,9 +27,9 @@
    ],
    [
     "B",
-    "أكيد! الكرك هني حلو، صح؟",
-    "akīd! il-karak hni ḥilu, ṣaḥḥ?",
-    "Sure! The karak here is good, isn't it?"
+    "مشكور! الكرك هني حلو، صح؟",
+    "mashkūr! il-karak hni ḥilu, ṣaḥḥ?",
+    "Thanks! The karak here is good, isn't it?"
    ],
    [
     "A",
@@ -53,10 +53,10 @@
     "you'll also hear fuṭūr (فطور)"
    ],
    [
-    "تريقت؟",
-    "trayyagt?",
-    "have you had breakfast? (to a man) / I've had breakfast",
-    "هل تناولت الفطور؟",
+    "تريقت",
+    "trayyagt",
+    "I've had breakfast / have you had breakfast? (to a man)",
+    "أفطرتُ / هل أفطرتَ؟",
     "to a woman: trayyagti?; I haven't: ma trayyagt"
    ],
    [
@@ -109,7 +109,7 @@
     "reply: allāh yʿāfīk; to a woman: allāh yʿāfīch"
    ]
   ],
-  "culture": "Karak is strong black tea boiled with milk, sugar and cardamom. Small cafeterias all over Dubai sell it all day, and many people order it without getting out of the car. Among friends, offering to pay (ʿala ḥsābi) is normal, and the other person usually protests."
+  "culture": "Karak is strong black tea boiled with milk, sugar and cardamom. Small cafeterias all over Dubai sell it all day, and many people order it without getting out of the car. Among friends, offering to pay (ʿala ḥsābi) is normal; the other person often protests, or thanks them and pays next time."
  },
  {
   "id": "s1u058",
@@ -162,7 +162,7 @@
     "السوبرماركت",
     "is-sūbarmārkit",
     "the supermarket",
-    "المتجر",
+    "السوبرماركت / المتجر",
     ""
    ],
    [
@@ -234,7 +234,7 @@
     "A",
     "الله ينعم عليك. شو نتعشى؟",
     "allāh yinʿim ʿalēk. shu nitʿashsha?",
-    "Thanks (God bless you too). What shall we have for dinner?"
+    "Thanks (God bless you). What shall we have for dinner?"
    ],
    [
     "B",
@@ -566,7 +566,7 @@
    [
     "B",
     "المترو مب زحمة اليوم. وين ننزل؟",
-    "il-mitro mub zaḥma il-yōm. wēn ninzil?",
+    "il-mitro mub zaḥma l-yōm. wēn ninzil?",
     "The metro isn't crowded today. Where do we get off?"
    ],
    [
@@ -610,7 +610,7 @@
     "igʿid",
     "sit (down) (to a man)",
     "اجلس",
-    "to a woman: igʿidi; UAE also: yilis (يلس) for to sit"
+    "to a woman: igʿidi; UAE also uses yalas (يلس) 'sat' for this verb"
    ],
    [
     "تذكرة",
@@ -630,7 +630,7 @@
     "زحمة",
     "zaḥma",
     "crowded; a crush, traffic",
-    "زحام",
+    "مزدحم / زحام",
     ""
    ]
   ]
@@ -779,9 +779,9 @@
    ],
    [
     "A",
-    "لا، خمس دقايق على ريولك",
-    "la, khams dagāyig ʿala ryūlak",
-    "No, five minutes on foot."
+    "لا، يم المول. خمس دقايق على ريولك",
+    "la, yamm il-mōl. khams dagāyig ʿala ryūlak",
+    "No, it's by the mall. Five minutes on foot."
    ]
   ],
   "items": [
@@ -839,7 +839,7 @@
     "ʿala ryūli",
     "on foot (lit. on my feet)",
     "سيرًا على الأقدام",
-    "to a man: ʿala ryūlak; you'll see written رجولي"
+    "to a man: ʿala ryūlak; to a woman: ʿala ryūlich (على ريولج); you'll see written رجولي"
    ]
   ]
  },
@@ -859,9 +859,9 @@
    ],
    [
     "A",
-    "ياين! نحن في المترو، قريبين",
-    "yāyīn! niḥin fi l-mitro, garībīn",
-    "Coming! We're on the metro, close by."
+    "هلا فيك! ياين، نحن في المترو، قريبين",
+    "hala fīk! yāyīn, niḥin fi l-mitro, garībīn",
+    "Hi! Coming, we're on the metro, close by."
    ],
    [
     "B",
@@ -949,9 +949,9 @@
    ],
    [
     "B",
-    "في دبي، في شقة صغيرة",
-    "fi Dbayy, fi shigga ṣghīra",
-    "In Dubai, in a small flat."
+    "في ديرة، في شقة صغيرة",
+    "fi Dēra, fi shigga ṣghīra",
+    "In Deira, in a small flat."
    ],
    [
     "A",
@@ -1003,7 +1003,7 @@
    [
     "هادية",
     "hādya",
-    "quiet, calm (a feminine noun: area, street)",
+    "quiet, calm (with a feminine noun: area, flat)",
     "هادئة",
     "for a masculine noun: hādi (هادي)"
    ],

@@ -21,9 +21,9 @@
    ],
    [
     "A",
-    "أنا أخلص بدري. نتلاقى باكر الصبح؟",
-    "ana akhalliṣ badri. nitlāga bāchir iṣ-ṣubḥ?",
-    "I finish early. Shall we meet tomorrow morning?"
+    "أنا أخلص بدري. نتلاقى باكر الساعة تسع؟",
+    "ana akhalliṣ badri. nitlāga bāchir is-sāʿa tisʿ?",
+    "I finish early. Shall we meet tomorrow at nine?"
    ],
    [
     "B",
@@ -33,9 +33,9 @@
    ],
    [
     "A",
-    "زين. الساعة تسع وربع يناسبك؟",
-    "zēn. is-sāʿa tisʿ w rubʿ ynāsbak?",
-    "OK. Does quarter past nine suit you?"
+    "زين. بعد باكر الساعة تسع وربع يناسبك؟",
+    "zēn. baʿd bāchir is-sāʿa tisʿ w rubʿ ynāsbak?",
+    "OK. Does the day after tomorrow at quarter past nine suit you?"
    ],
    [
     "B",
@@ -115,7 +115,7 @@
   "stage": 1,
   "title": "Come on, quick!",
   "goal": "Hurry a friend out of the door: get up, look, listen, take it, come.",
-  "tip": "To tell a man to do something, drop the t- of the 'you' verb: tshūf → shūf (look), trūḥ → rūḥ (go), tgūm → gūm (get up). Where two consonants would start the word, add i-: tismaʿ → ismaʿ (listen). 'Come' has its own form: taʿāl.",
+  "tip": "To tell a man to do something, drop the t- of the 'you' verb: tshūf → shūf (look), trūḥ → rūḥ (go), tgūm → gūm (get up). Where two consonants would start the word, add i-: tismaʿ → ismaʿ (listen). 'Come' and 'take' have their own forms: taʿāl, khudh.",
   "grammar": "Imperative to a man: gūm, shūf, rūḥ, taʿāl",
   "dialogue": [
    [
@@ -213,7 +213,7 @@
   "stage": 1,
   "title": "Wait a minute",
   "goal": "Ask Maryam to come and look at a problem at work, and follow her instructions.",
-  "tip": "To a woman, add -i to the man's form: shūf → shūfi (look), taʿāl → taʿāli (come). A short vowel before the last consonant drops: ṭarrish-li → ṭarrshī-li (send me). 'Wait' (UAE) is trayya to a man, trayyi to a woman.",
+  "tip": "To a woman, add -i to the man's form: shūf → shūfi (look), taʿāl → taʿāli (come). In verbs like ṭarrish, the short i before the last consonant drops: ṭarrish-li → ṭarrshī-li (send me). 'Wait' (UAE) is trayya to a man, trayyi to a woman.",
   "grammar": "Imperative to a woman: add -i (taʿāli, shūfi)",
   "dialogue": [
    [
@@ -226,7 +226,7 @@
     "A",
     "تريا شوي. شو فيه؟",
     "trayya shwayy. shu fīh?",
-    "Wait a bit. What's wrong with it?"
+    "Wait a bit. What's up?"
    ],
    [
     "B",
@@ -292,8 +292,8 @@
    [
     "شو فيه؟",
     "shu fīh?",
-    "what's wrong with it? what's up with it?",
-    "ما به؟",
+    "what's up? what's the matter? (also: what's wrong with it?)",
+    "ما الأمر؟ / ما به؟",
     "about a person: shfīk? (what's wrong with you?)"
    ],
    [
@@ -323,8 +323,8 @@
   "id": "s1u050",
   "stage": 1,
   "title": "Come here, everyone!",
-  "goal": "Call a group over for a photo at Saif's family home: come, come closer, look, let me, let's.",
-  "tip": "To a group, add -u to the man's form: taʿāl → taʿālu, shūf → shūfu, garrib → garribu (come closer). Khalli means 'let': khallni aṣawwir (let me take a photo), khallna nshūf (let's see). The next verb has no 'to'.",
+  "goal": "Call Saif and his friends together for a photo at Global Village: come, come closer, look, smile, let me, let's.",
+  "tip": "To a group, add -u to the man's form: taʿāl → taʿālu, shūf → shūfu, garrib → garrbu (come closer; the i drops). Khalli means 'let': khallni ashūf (let me see), khallna nrūḥ (let's go); to a group, khallūni. The next verb has no 'to'.",
   "grammar": "Imperative to a group: add -u (taʿālu, shūfu); khallni",
   "dialogue": [
    [
@@ -341,15 +341,15 @@
    ],
    [
     "B",
-    "خلني أصوركم. قربوا شوي",
-    "khallni aṣawwirkum. garribu shwayy",
+    "خلوني أصوركم. قربوا شوي",
+    "khallūni aṣawwirkum. garrbu shwayy",
     "Let me take your photo. Come a bit closer."
    ],
    [
     "A",
-    "يلا عيال، شوفوا هني!",
-    "yalla ʿyāl, shūfu hni!",
-    "Come on, kids, look here!"
+    "يلا شباب، شوفوا هني!",
+    "yalla shabāb, shūfu hni!",
+    "Come on, guys, look here!"
    ],
    [
     "B",
@@ -359,9 +359,9 @@
    ],
    [
     "A",
-    "خلنا نشوف. ما شاء الله، حلوة!",
-    "khallna nshūf. mā shāʼ allāh, ḥilwa!",
-    "Let's see. Wow, it's lovely!"
+    "خلني أشوف. حلوة! يلا، خلنا نروح",
+    "khallni ashūf. ḥilwa! yalla, khallna nrūḥ",
+    "Let me see. Lovely! Come on, let's go."
    ]
   ],
   "items": [
@@ -384,7 +384,7 @@
     "khallni",
     "let me (to a man)",
     "دعني",
-    "to a woman: khallīni (خليني); khallni ashūf = let me see"
+    "to a woman: khallīni (خليني); to a group: khallūni (خلوني); khallni ashūf = let me see"
    ],
    [
     "أصور",
@@ -395,17 +395,17 @@
    ],
    [
     "قربوا",
-    "garribu",
+    "garrbu",
     "come closer (to a group)",
     "اقتربوا",
-    "to one man: garrib; to one woman: garribi"
+    "to one man: garrib; to one woman: garrbi"
    ],
    [
     "شوفوا",
     "shūfu",
     "look (to a group)",
     "انظروا",
-    "to one man: shūf"
+    "to one man: shūf; to one woman: shūfi"
    ],
    [
     "اضحكوا",
@@ -422,7 +422,7 @@
     "khallna nrūḥ = let's go"
    ]
   ],
-  "culture": "Ask before you photograph people, and don't photograph women you don't know. Many families prefer that photos of the women in the family stay inside the family. (Needs a native check.)"
+  "culture": "In public places, ask before you photograph people and keep women and families you don't know out of your photos. Many families prefer that photos of their women aren't taken or shared. (Needs a native check.)"
  },
  {
   "id": "s1u051",
@@ -503,7 +503,7 @@
     "dawām",
     "work hours, a shift",
     "دوام",
-    "ʿindi dawām = I'm working (I have work)"
+    "ʿindi dawām = I'm working (I have work); also school or university hours"
    ],
    [
     "هذا هو",
@@ -533,7 +533,8 @@
     "ما زال الوقت مبكرًا",
     ""
    ]
-  ]
+  ],
+  "culture": "Evenings in the Gulf start late, especially in summer, when the day is too hot to go out. Friends often meet after the ʿisha prayer and stay out until midnight, so ten o'clock can still be taww in-nās."
  },
  {
   "id": "s1u052",
@@ -570,7 +571,7 @@
    [
     "A",
     "لا، خلها علي!",
-    "la, khall-ha ʿalay!",
+    "la, khallha ʿalay!",
     "No, it's on me!"
    ],
    [
@@ -586,7 +587,7 @@
     "yībī-li",
     "bring me (to a woman)",
     "أحضري لي",
-    "to a man: yīb-li"
+    "to a man: yīb-li; you'll see written جيبي لي"
    ],
    [
     "خذي",
@@ -618,7 +619,7 @@
    ],
    [
     "خلها علي",
-    "khall-ha ʿalay",
+    "khallha ʿalay",
     "it's on me (I'll pay)",
     "على حسابي",
     "said when offering to pay"
@@ -653,15 +654,15 @@
    ],
    [
     "A",
-    "لا، ما أبي أطلع. عندي شغل",
-    "la, ma abi aṭlaʿ. ʿindi shughul",
-    "No, I don't want to go out. I've got work."
+    "مشكور، بس ما أبي أطلع. عندي شغل",
+    "mashkūr, bas ma abi aṭlaʿ. ʿindi shughul",
+    "Thanks, but I'd rather not go out. I've got work."
    ],
    [
     "B",
-    "زين. تبين أييب لج شي؟",
-    "zēn. tabīn ayīb-lich shay?",
-    "OK. Do you want me to bring you anything?"
+    "العفو. تبين أييب لج شي؟",
+    "il-ʿafu. tabīn ayīb-lich shay?",
+    "No problem. Do you want me to bring you anything?"
    ],
    [
     "A",
@@ -733,33 +734,33 @@
   "id": "s1u054",
   "stage": 1,
   "title": "Can I help?",
-  "goal": "Offer to help Umm Saif in the kitchen and ask her to teach you a dish.",
+  "goal": "Offer to help Maryam at the office and ask her to teach you how she makes a presentation.",
   "tip": "agdar (I can) and tigdar (you can) work like abi: the next verb follows with no 'to'. agdar asāʿdak? (can I help you? to a man), agdar asāʿdich? (to a woman). To a woman tigdar becomes tigdarīn: tigdarīn tʿallmīni? (can you teach me?)",
   "grammar": "Can + verb: agdar asāʿdak, tigdar, tigdarīn",
   "dialogue": [
    [
     "B",
-    "أم سيف، أقدر أساعدج؟",
-    "Umm Sēf, agdar asāʿdich?",
-    "Umm Saif, can I help you?"
+    "مريم، أقدر أساعدج؟",
+    "Maryam, agdar asāʿdich?",
+    "Maryam, can I help you?"
    ],
    [
     "A",
-    "أكيد. تقدر تييب لي الماي؟",
-    "akīd. tigdar tyīb-li l-māy?",
-    "Of course. Can you bring me the water?"
+    "أكيد. تقدر تييب لي الأوراق؟",
+    "akīd. tigdar tyīb-li l-awrāg?",
+    "Sure. Can you bring me the papers?"
    ],
    [
     "B",
     "طبعا، تفضلي. شو هذا؟",
     "ṭabʿan, tfaẓẓali. shu hādha?",
-    "Sure, here you are. What's this?"
+    "Of course, here you are. What's this?"
    ],
    [
     "A",
-    "هريس. تبي تتعلم؟",
-    "harīs. tabi titʿallam?",
-    "Harees. Do you want to learn (it)?"
+    "عرض حق الاجتماع. تبي تتعلم؟",
+    "ʿarẓ ḥagg il-ijtimāʿ. tabi titʿallam?",
+    "A presentation for the meeting. Do you want to learn (how)?"
    ],
    [
     "B",
@@ -769,9 +770,9 @@
    ],
    [
     "A",
-    "طبعا. تعال باكر العصر",
-    "ṭabʿan. taʿāl bāchir il-ʿaṣr",
-    "Of course. Come tomorrow afternoon."
+    "طبعا. باكر الصبح، بعد الاجتماع",
+    "ṭabʿan. bāchir iṣ-ṣubḥ, baʿd il-ijtimāʿ",
+    "Of course. Tomorrow morning, after the meeting."
    ]
   ],
   "items": [
@@ -801,7 +802,7 @@
     "tyīb-li",
     "you bring me (to a man)",
     "تحضر لي",
-    "to a woman: tyībīn-li; tigdar tyīb-li…? = can you bring me…?"
+    "to a woman: tyībīn-li; tigdar tyīb-li…? = can you bring me…?; you'll see written تجيب لي"
    ],
    [
     "أكيد",
@@ -825,14 +826,20 @@
     "to a woman: tabīn titʿallamīn?"
    ],
    [
-    "هريس",
-    "harīs",
-    "harees (wheat and meat dish)",
-    "هريس",
+    "الأوراق",
+    "il-awrāg",
+    "the papers, the documents",
+    "الأوراق",
+    "one sheet: warga (ورقة)"
+   ],
+   [
+    "عرض",
+    "ʿarẓ",
+    "a presentation",
+    "عرض تقديمي",
     ""
    ]
-  ],
-  "culture": "Harees (هريس) is wheat cooked slowly with meat until it is smooth. It is one of the best-known Emirati dishes and is served especially in Ramadan, at Eid and at weddings."
+  ]
  },
  {
   "id": "s1u055",
@@ -850,9 +857,9 @@
    ],
    [
     "B",
-    "إي، عاجبني وايد",
-    "ī, ʿājibni wāyid",
-    "Yes, I like it a lot."
+    "زين الحمد لله. إي، عاجبني وايد",
+    "zēn il-ḥamdu lillāh. ī, ʿājibni wāyid",
+    "Fine, thank God. Yes, I like it a lot."
    ],
    [
     "A",
@@ -996,7 +1003,7 @@
     "tabi tyī?",
     "do you want to come? (to a man)",
     "هل تريد أن تأتي؟",
-    "to a woman: tabīn tyīn? (تبين تيين؟)"
+    "to a woman: tabīn tyīn? (تبين تيين؟); you'll see written تجي"
    ],
    [
     "يمكن",
@@ -1009,7 +1016,7 @@
     "مب أكيد",
     "mub akīd",
     "not sure, not certain",
-    "لست متأكدًا",
+    "غير مؤكد",
     "Kuwait: mū akīd"
    ],
    [
