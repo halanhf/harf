@@ -212,18 +212,18 @@ Teach the pair together, in the same dialogue. Evidence: S sourced; C Gumar phra
 | السلام عليكم | وعليكم السلام | any greeting; more religious than hala (S) | S | u1 |
 | هلا / هلا والله | هلا بك / هلا فيك, هلا والله | casual hello | C هلا بك 71/80, هلا فيك 81/261 | u1; هلا بك s1u017 |
 | شلونك؟ / شحالك؟ | زين الحمد لله; بخير الله يسلمك | how are you | C بخير الله يسلمك 38/24; pair U | u1; s1u017 |
-| مرحبا الساع | (reply U: هلا والله) | warm welcome to an arriving guest (UAE) | S (Eton); C 237/2 | s1u017 |
+| مرحبا الساع | (reply U: هلا والله) | warm welcome to an arriving guest (UAE) | S (Eton); C 237/2 | s1u020 |
 | شو اليديد؟ | ما شي | what's new? | S (Eton); C 8/0 [weak]; ما شي 549/11 | s1u017 |
-| شخبارك؟ | زين الحمد لله | what's your news? | C 245/401; reply U | s1u017 |
+| شخبارك؟ | زين الحمد لله | what's your news? | C 245/401; reply U | s1u018 |
 | صباح الخير / مساء الخير | صباح النور / مساء النور | time of day | S; C 336/339 | u11 |
 | تصبح على خير / تصبحين على خير | وانت من أهله | good night | C 171/116, reply 53/49; pair U | s1u044 |
 | مشكور / مشكورة | العفو | thanks | S | u2 |
-| تسلم / تسلمين | الله يسلمك | thanks for a favour | C 1226/890; pair U | s1u057 |
+| تسلم / تسلمين | الله يسلمك | thanks for a favour | C 1226/890; pair U | s1u060 |
 | ما قصرت | ما سوينا شي | thanks for real help | stage 1 | u12 |
 | يعطيك العافية | الله يعافيك | to someone working or helping | S (phrase); reply U | u10 |
 | (to someone working) الله يقويك | — | encouragement at work | C 15/21; U | s3u029 |
 | بالعافية | الله يعافيك | after someone eats or drinks | S (AOL); reply U; C 144/146 | s1u057 |
-| نعيما | الله ينعم عليك | after a shower or a haircut | C 22/4, 13/5; pair U | s1u057 |
+| نعيما | الله ينعم عليك | after a shower or a haircut | C 22/4, 13/5; pair U | s1u059 |
 | حياك الله / حياكم الله | الله يحييك / الله يحييكم | welcome to a guest | C 56/55, 43/43 | u10; حياكم s1u032 |
 | تشرفنا | الشرف لي | nice to meet you | stage 1 | u3 |
 | مبروك | الله يبارك فيك / فيج | any congratulations | C 304/269 (reply); general pair U | s1u039 |
@@ -258,7 +258,7 @@ These are the high-frequency dialect forms in the Gumar AE+KW top 1,000 (names, 
 |---|---|---|---|---|
 | بس | 5 | 8146:7915 | GULF | u6 |
 | اللي | 10 | 4906:5151 | GULF | s2u046 |
-| شي | 11 | 4104:4757 | GULF | s1u027 |
+| شي | 11 | 4104:4757 | GULF | s1u031 |
 | والله | 14 | 3558:3360 | GULF | s1u017 (u1 has هلا والله) |
 | مو | 22 | 1109:4313 | KW | note in u13; item s2u027 |
 | شو | 24 | 5011:139 | UAE | u7 |
@@ -266,8 +266,8 @@ These are the high-frequency dialect forms in the Gumar AE+KW top 1,000 (names, 
 | انتي | 30 | 2147:2553 | GULF | u3 |
 | الحين | 45 | 1707:1819 | GULF | u8 |
 | وين | 50 | 1757:1528 | GULF | u7 |
-| راح | 54 | 1071:2039 | GULF | s1u033 |
-| عشان | 56 | 1557:1550 | GULF | s1u053 |
+| راح | 54 | 1071:2039 | GULF | s1u035 |
+| عشان | 56 | 1557:1550 | GULF | s1u056 |
 | شوي | 57 | 1558:1528 | GULF | u9 |
 | خلاص | 62 | 1234:1708 | GULF | u15 |
 | مب | 74 | 2297:128 | UAE | u13 |
@@ -275,29 +275,29 @@ These are the high-frequency dialect forms in the Gumar AE+KW top 1,000 (names, 
 | هلا | 84 | 641:1438 | GULF | u1 |
 | صار (شو صار؟) | 85 | 813:1215 | GULF | s1u039 |
 | وش | 87 | 562:1437 | SA | note only (u3, s2u027) |
-| مرة | 92 | 1014:862 | GULF | s1u044 |
+| مرة | 92 | 1014:862 | GULF | s1u031 (chunks only: hal-marra; ʿīd marra thānya in u2) |
 | يلا | 95 | 706:1144 | GULF | u8 |
 | يمه | 98 | 387:1432 | KW | s2u027 |
 | هذي | 100 | 735:1078 | GULF | u14 |
-| أول | 105 | 812:919 | GULF | s1u033 |
+| أول | 105 | 812:919 | GULF | s1u036 |
 | زين | 108 | 968:741 | GULF | u1 |
 | وايد | 113 | 1051:606 | GULF | u4 |
 | أبي | 114 | 413:1244 | GULF | u6 |
 | لازم | 116 | 814:834 | GULF | u11 |
-| حق | 124 | 822:715 | GULF | s1u021 |
-| يمكن | 131 | 786:701 | GULF | s1u053 |
+| حق | 124 | 822:715 | GULF | s1u024 |
+| يمكن | 131 | 786:701 | GULF | s1u056 |
 | جذي | 133 | 294:1185 | GULF | s1u027 |
 | لج / عليج | 137 / 143 | 741:701 / 836:590 | GULF | s1u021 (-ich endings) |
-| هيه | 139 | 1395:35 | UAE | s1u017 |
+| هيه | 139 | 1395:35 | UAE | s1u018 |
 | طيب | 142 | 412:1014 | GULF | s1u017 |
 | منو | 149 | 782:612 | GULF | u7 |
 | صوب | 152 | 1244:129 | UAE-leaning | s1u061 |
 | لين | 155 | 892:460 | GULF | s2u041 |
 | خير؟ | 157 | 675:668 | GULF | s2u055 |
-| انزين | 158 | 876:464 | GULF | s1u057 |
+| انزين | 158 | 876:464 | GULF | s1u058 |
 | عيل | 177 | 894:321 | GULF | s2u077 |
 | تبي | 182 | 342:836 | GULF | u6 |
-| أكيد | 184 | 568:609 | GULF | s1u053 |
+| أكيد | 184 | 568:609 | GULF | s1u054 |
 | عاد | 190 | 633:503 | GULF | s2u077 |
 | صح | 191 | 645:489 | GULF | s1u057 |
 | ما أدري | 195 | 512:601 | GULF | u13 |
@@ -305,26 +305,26 @@ These are the high-frequency dialect forms in the Gumar AE+KW top 1,000 (names, 
 | عقب | 202 | 895:203 | UAE | s2u041 |
 | ويا | 206 | 764:318 | GULF | s1u021 |
 | محد | 208 | 676:399 | GULF | s2u081 |
-| أوكي | 209 | 370:704 | GULF (loan) | s1u057 |
+| أوكي | 209 | 370:704 | GULF (loan) | s1u058 |
 | شلون | 217 | 200:827 | KW-leaning | u15 |
 | بعدين | 229 | 495:478 | GULF | u8 |
 | صج | 259 | 274:607 | GULF | s2u073 |
 | يصير؟ | 266 | 293:559 | GULF | s2u068 |
 | جان (جان قلت لي) | 269 | 598:247 | GULF | s2u085 (chunk); B2 grammar |
-| عادي | 273 | 441:390 | GULF | s1u053 |
+| عادي | 273 | 441:390 | GULF | s1u055 |
 | هني | 290 | 436:356 | GULF | u3 |
 | باكر (باجر) | 292 | 452:337 | GULF | u8 |
 | جي | 297 | 688:76 | UAE | s1u027 |
 | أحسن | 311 | 325:415 | GULF | s2u031 |
 | أقدر | 326 | 281:445 | GULF | u9 |
 | حرام عليك | 334 | 366:342 | GULF | s2u073 |
-| طبعا | 344 | 338:351 | GULF | s1u053 |
+| طبعا | 344 | 338:351 | GULF | s1u054 |
 | المهم | 379 | 402:251 | GULF | s2u018 |
 | قاعد | 390 | 231:402 | GULF | s2u018 |
 | تدري | 391 | 247:386 | GULF | s2u003 |
 | للحين | 418 | 152:447 | GULF | s2u085 |
-| خلني | 422 (خل) | 241:354 | GULF | s1u048 |
-| هالشي | 423 | 299:293 | GULF | s1u027 |
+| خلني | 422 (خل) | 241:354 | GULF | s1u050 |
+| هالشي | 423 | 299:293 | GULF | s1u031 |
 | تعال | 500 | 257:263 | GULF | s1u048 |
 | أصلا | 527 | 266:220 | GULF | s2u077 |
 | شكله | 531 | 277:208 | GULF | s2u077 |
@@ -336,12 +336,12 @@ These are the high-frequency dialect forms in the Gumar AE+KW top 1,000 (names, 
 | ترا | 606 | 219:207 | GULF | s2u077 |
 | يطالع | 609 | 270:154 | GULF | s2u012 |
 | ودي | 725 | 151:208 | GULF | s2u068 |
-| ياي | 739 | 247:106 | GULF | s1u061 |
+| ياي | 739 | 247:106 | GULF | s1u063 |
 | دوم | 852 | 198:106 | GULF | s2u001 |
 | توه | 861 | 152:149 | GULF | s2u085 |
 | ماني | 928 | 85:192 | GULF | s2u081 |
 | غصب | 935 | 107:168 | GULF | s2u081 |
-| برا | 941 | 125:148 | GULF | s1u061 |
+| برا | 941 | 125:148 | GULF | s1u063 |
 | أبد | 798 | 166:160 | GULF | s2u081 |
 
 UAE-only forms taught as "(UAE)" items in s2u088: أبا (594), تبا (727), هب (466), الحينه (450), بسير (623), يرمس (يالس 783 is the course default, not a UAE item); عسب (437) appears in a note only.
