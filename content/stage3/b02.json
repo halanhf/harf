@@ -1,0 +1,350 @@
+[
+ {
+  "id": "s3u012",
+  "stage": 3,
+  "title": "Checkpoint 3.1: sorry I'm late, guys",
+  "goal": "Checkpoint: turn up late to meet Sēf and Fahad, say sorry to the group and swap stories about what everyone was doing",
+  "tip": "To a group, the past progressive takes the group forms: kintu + verb 'you (all) were …-ing', kinna gāʿdīn 'we were …-ing', gumtu tiẓḥakūn 'you started laughing'. Say sorry to everyone with sāmḥūni. A participle takes -īn for a group: mayyitīn ẓiḥik 'dying of laughter'.",
+  "grammar": "checkpoint 3.1: recycle s3u001–s3u011 (participles, kān gāʿid, gām + verb)",
+  "dialogue": [
+   ["A", "وينك يا ريّال؟ كنا قاعدين نترياك!", "wēnak yā rayyāl? kinna gāʿdīn nitrayyāk!", "Where've you been, man? We've been sitting here waiting for you!"],
+   ["B", "سامحوني شباب. كنت نايم وما سمعت التلفون", "sāmḥūni shabāb. kint nāyim w ma simaʿt it-tilifōn", "Sorry, guys. I was asleep and didn't hear the phone."],
+   ["A", "نايم للحين؟ شو كنت قاعد تسوي البارحة؟", "nāyim lil-ḥīn? shu kint gāʿid tsawwi l-bārḥa?", "Still asleep at this time? What were you doing last night?"],
+   ["B", "كنت قاعد أذاكر لين الساعة ثنتين. وانتو، شو كنتوا تسوون؟", "kint gāʿid adhākir lēn is-sāʿa thintēn. w intu, shu kintu tsawwūn?", "I was revising till two. And you lot, what have you been up to?"],
+   ["A", "فهد كان قاعد يسولف، وكنا ميتين ضحك!", "Fahad kān gāʿid ysōlif, w kinna mayyitīn ẓiḥik!", "Fahad was telling stories, and we were dying of laughter!"],
+   ["B", "صج؟ شو صار له؟", "ṣij? shu ṣār-lah?", "Really? What happened to him?"],
+   ["A", "نام في المترو، ووصل آخر محطة!", "nām fi l-mitrō, w wiṣal ākhir maḥaṭṭa!", "He fell asleep on the metro and ended up at the last stop!"],
+   ["B", "مسكين! وانتو قمتوا تضحكون عليه؟", "miskīn! w intu gumtu tiẓḥakūn ʿalēh?", "Poor guy! And you lot started laughing at him?"]
+  ],
+  "items": [
+   ["سامحوني", "sāmḥūni", "sorry, forgive me (to a group)", "سامحوني", "to one man: sāmiḥni (سامحني); to one woman: sāmḥīni (سامحيني)"],
+   ["كنا قاعدين نترياك", "kinna gāʿdīn nitrayyāk", "we were (sitting here) waiting for you (to a man)", "كنا ننتظرك", "to a woman: kinna gāʿdīn nitrayyāch (كنا قاعدين نترياج)"],
+   ["شو كنتوا تسوون؟", "shu kintu tsawwūn?", "what were you doing? what have you been up to? (to a group)", "ماذا كنتم تفعلون؟", "to one man: shu kint tsawwi?; to one woman: shu kinti tsawwīn?"],
+   ["ميتين ضحك", "mayyitīn ẓiḥik", "dying of laughter, in stitches (a group)", "نموت من الضحك", "one man: mayyit ẓiḥik (ميت ضحك)"],
+   ["شو صار له؟", "shu ṣār-lah?", "what happened to him?", "ماذا حدث له؟", "about a woman: shu ṣār-lha? (شو صار لها؟)"],
+   ["قمتوا تضحكون", "gumtu tiẓḥakūn", "you (all) started laughing, you burst out laughing", "بدأتم تضحكون", "he started laughing: gām yiẓḥak (قام يضحك)"]
+  ]
+ },
+ {
+  "id": "s3u013",
+  "stage": 3,
+  "title": "If you finish early, come straight over",
+  "goal": "Plan a match night at Sēf's: say what happens if you finish early, run late or something comes up",
+  "tip": "For a real 'if' or 'when' about the future, use idha + a past verb: idha khallaṣt badri 'if I finish early', idha taʼakhkhart 'if I'm late'. The verb looks past, but the meaning is future. The other half is a b- future or a command: idha ṣār shay, khabbirni 'if anything comes up, let me know'.",
+  "grammar": "idha + past verb for a real 'if' about the future (idha khallaṣt, taʿāl)",
+  "dialogue": [
+   ["A", "الليلة المباراة. بتيي تشوفها ويانا عندي؟", "il-lēla l-mubārā. bitiyi tshūfha wiyyāna ʿindi?", "The match is tonight. Are you coming to watch it with us at mine?"],
+   ["B", "ودي، بس عندي دوام لين الساعة ثمان", "widdi, bas ʿindi dawām lēn is-sāʿa thamān", "I'd like to, but I'm at work till eight."],
+   ["A", "عادي. إذا خلصت بدري، تعال على طول", "ʿādi. idha khallaṣt badri, taʿāl ʿala ṭūl", "No problem. If you finish early, come straight over."],
+   ["B", "زين. وإذا تأخرت، بدق عليك", "zēn. w idha taʼakhkhart, badigg ʿalēk", "OK. And if I'm running late, I'll give you a ring."],
+   ["A", "ماشي. وإذا صار شي، خبرني", "māshi. w idha ṣār shay, khabbirni", "Fine. And if anything comes up, let me know."],
+   ["B", "إن شاء الله. وإذا ييت، أييب شي وياي؟", "in shāʼ allāh. w idha yīt, ayīb shay wiyyāy?", "Will do. And when I come, shall I bring anything?"],
+   ["A", "هيه، ييب لنا عصير. وإذا وصلت، دق علي", "hē, yīb-lna ʿaṣīr. w idha wiṣalt, digg ʿalay", "Yes, bring us some juice. And when you get here, give me a ring."],
+   ["B", "ولا يهمك. أشوفك الليلة!", "wala yhimmak. ashūfak il-lēla!", "No problem. See you tonight!"]
+  ],
+  "items": [
+   ["إذا خلصت", "idha khallaṣt", "if I finish, when I'm done; if you finish (to a man)", "إذا انتهيت", "to a woman: idha khallaṣti (إذا خلصتي)"],
+   ["إذا تأخرت", "idha taʼakhkhart", "if I'm late; if you're late (to a man)", "إذا تأخرت", "to a woman: idha taʼakhkharti (إذا تأخرتي)"],
+   ["بدق عليك", "badigg ʿalēk", "I'll ring you, I'll call you (to a man)", "سأتصل بك", "to a woman: badigg ʿalēch (بدق عليج)"],
+   ["إذا صار شي", "idha ṣār shay", "if anything comes up, if anything happens", "إذا حدث شيء", ""],
+   ["خبرني", "khabbirni", "let me know, tell me (to a man)", "أخبرني", "to a woman: khabbrīni (خبريني); to a group: khabbrūni (خبروني)"],
+   ["إذا ييت", "idha yīt", "when I come, if I come; if you come (to a man)", "إذا جئت", "to a woman: idha yīti (إذا ييتي)"],
+   ["ييب لنا", "yīb-lna", "bring us (to a man)", "أحضر لنا", "to a woman: yībī-lna (ييبي لنا)"],
+   ["إذا وصلت", "idha wiṣalt", "when you get here, if you arrive (to a man); when I arrive", "إذا وصلت", "to a woman: idha wiṣalti (إذا وصلتي)"],
+   ["دق علي", "digg ʿalay", "give me a ring, call me (to a man)", "اتصل بي", "to a woman: diggī ʿalay (دقي علي)"]
+  ]
+ },
+ {
+  "id": "s3u014",
+  "stage": 3,
+  "title": "If it's no trouble, send me the file",
+  "goal": "Offer Maryam a hand at the office when she's swamped, and make your offers and requests polite with idha",
+  "tip": "When the condition is a want, a 'have' or how things are now, idha takes a present verb or ʿind-: idha tabīn 'if you'd like (to a woman)', idha ʿindak wagt 'if you've got time'. idha ma ʿalēch amr 'if it's no trouble (to a woman)' makes any request softer.",
+  "grammar": "idha + present verb or ʿind- (idha tabīn, idha ʿindak wagt)",
+  "culture": "At work, a request to a colleague is usually softened: idha ma ʿalēk amr, law samaḥt or mumkin…? before the verb. A bare command (ṭarrish-li l-malaff) can sound bossy, even between equals; with a friend it's fine.",
+  "dialogue": [
+   ["B", "مريم، شكلج تعبانة. عندج شغل وايد؟", "Maryam, shaklich taʿbāna. ʿindich shughul wāyid?", "Maryam, you look tired. Have you got loads of work?"],
+   ["A", "هيه والله. لازم أخلص العرض اليوم", "hē wallāh. lāzim akhalliṣ il-ʿarẓ il-yōm", "Yes, honestly. I have to finish the presentation today."],
+   ["B", "إذا تبين، أساعدج", "idha tabīn, asāʿdich", "If you like, I'll help you."],
+   ["A", "مشكور! إذا عندك وقت، شوف هالأرقام. أنا مب فاهمة شي", "mashkūr! idha ʿindak wagt, shūf hal-argām. ana mub fāhma shay", "Thanks! If you've got time, look at these figures. I can't make sense of them."],
+   ["B", "ماشي. وإذا لقيت شي غلط، أقول لج؟", "māshi. w idha ligēt shay ghalaṭ, agūl-lich?", "Sure. And if I find anything wrong, shall I tell you?"],
+   ["A", "أكيد. بس إذا ما عندك وقت، مب مشكلة", "akīd. bas idha ma ʿindak wagt, mub mushkila", "Of course. But if you haven't got time, no problem."],
+   ["B", "عندي وقت. إذا ما عليج أمر، طرشي لي الملف", "ʿindi wagt. idha ma ʿalēch amr, ṭarrshī-li l-malaff", "I've got time. If it's no trouble, send me the file."],
+   ["A", "زين، الحين أطرش لك", "zēn, il-ḥīn aṭarrish-lak", "Great, I'll send it to you now."]
+  ],
+  "items": [
+   ["شكلج تعبانة", "shaklich taʿbāna", "you look tired (to a woman)", "تبدين متعبة", "to a man: shaklak taʿbān (شكلك تعبان)"],
+   ["عندج شغل وايد؟", "ʿindich shughul wāyid?", "have you got loads of work? (to a woman)", "هل لديكِ عمل كثير؟", "to a man: ʿindak shughul wāyid? (عندك شغل وايد؟)"],
+   ["أساعدج", "asāʿdich", "I'll help you, let me help you (to a woman)", "أساعدكِ", "to a man: asāʿdak (أساعدك)"],
+   ["إذا عندك وقت", "idha ʿindak wagt", "if you've got time (to a man)", "إذا كان لديك وقت", "to a woman: idha ʿindich wagt (إذا عندج وقت)"],
+   ["هالأرقام", "hal-argām", "these figures, these numbers", "هذه الأرقام", "one number: ragam (رقم)"],
+   ["شي غلط", "shay ghalaṭ", "something wrong, a mistake", "شيء خطأ", "ghalaṭ = wrong, a mistake"],
+   ["أقول لج؟", "agūl-lich?", "shall I tell you? (to a woman)", "هل أخبركِ؟", "to a man: agūl-lak? (أقول لك؟)"],
+   ["إذا ما عليج أمر", "idha ma ʿalēch amr", "if it's no trouble, if you don't mind (to a woman)", "إذا لم يكن لديكِ مانع", "to a man: idha ma ʿalēk amr (إذا ما عليك أمر)"],
+   ["طرشي لي", "ṭarrshī-li", "send me (to a woman)", "أرسلي لي", "to a man: ṭarrish-li (طرش لي)"]
+  ]
+ },
+ {
+  "id": "s3u015",
+  "stage": 3,
+  "title": "Let's leave early, or we won't find a spot",
+  "goal": "Plan a winter night in the desert with Sēf and the guys: what you'll do if things go wrong, and what happens otherwise",
+  "tip": "idha ma + past verb means 'if … not': idha ma ligēna 'if we don't find (one)'. willa means 'or else, otherwise': lāzim niṭlaʿ badri, willa ma binilga makān 'we have to leave early, or we won't find a spot'. Don't mix it up with walla 'or' in questions.",
+  "grammar": "idha ma + past 'if not'; willa 'otherwise'",
+  "culture": "In the cooler months, roughly November to March, going to il-barr is a favourite outing: friends or families drive out to the desert, put up a tent, light a fire, make coffee and often stay till morning. Popular spots fill up fast at weekends.",
+  "dialogue": [
+   ["A", "شباب، شو رأيكم نروح البر يوم الجمعة؟", "shabāb, shu raʼykum nrūḥ il-barr yōm il-jumʿa?", "Guys, how about going to the desert on Friday?"],
+   ["B", "فكرة حلوة! وإذا ما عندكم شي، نقعد لين الصبح", "fikra ḥilwa! w idha ma ʿindakum shay, nigʿid lēn iṣ-ṣubḥ", "Great idea! And if you've got nothing on, we can stay till morning."],
+   ["A", "زين. بس عندكم خيمة؟ أنا ما عندي", "zēn. bas ʿindakum khēma? ana ma ʿindi", "OK. But have you got a tent? I haven't."],
+   ["B", "لا. إذا ما لقينا، نشتري وحدة", "la. idha ma ligēna, nishtiri waḥda", "No. If we can't find one, we'll buy one."],
+   ["A", "ماشي. ولازم نطلع بدري، وإلا ما بنلقى مكان", "māshi. w lāzim niṭlaʿ badri, willa ma binilga makān", "Fine. And we have to leave early, or else we won't find a spot."],
+   ["B", "صح. وإذا الجو بارد في الليل؟", "ṣaḥḥ. w idha l-jaww bārid fi l-lēl?", "True. And what if it's cold at night?"],
+   ["A", "كل واحد ييب بطانية، وإلا بنموت من البرد!", "kill wāḥid yīb baṭṭāniyya, willa binmūt min il-bard!", "Everyone bring a blanket, or else we'll freeze!"],
+   ["B", "وأنا بييب الحطب والدلة", "w ana bayīb il-ḥaṭab w id-dalla", "And I'll bring the firewood and the coffee pot."]
+  ],
+  "items": [
+   ["إذا ما", "idha ma", "if … not, unless", "إذا لم / إلا إذا", "idha ma ligēna = if we don't find (one)"],
+   ["إذا ما عندكم شي", "idha ma ʿindakum shay", "if you've got nothing on, if you're free (to a group)", "إذا لم يكن لديكم شيء", "to one man: idha ma ʿindak shay; to one woman: idha ma ʿindich shay"],
+   ["خيمة", "khēma", "a tent", "خيمة", "the tent: il-khēma"],
+   ["إذا ما لقينا", "idha ma ligēna", "if we don't find (one), if we can't find (one)", "إذا لم نجد", ""],
+   ["وإلا", "willa", "or else, otherwise", "وإلا", "not the same as walla (ولّا) 'or' in questions"],
+   ["ما بنلقى مكان", "ma binilga makān", "we won't find a spot, there'll be no room for us", "لن نجد مكانًا", ""],
+   ["بطانية", "baṭṭāniyya", "a blanket", "بطانية", "blankets: baṭṭāniyyāt (بطانيات)"],
+   ["بنموت من البرد", "binmūt min il-bard", "we'll freeze (lit. we'll die of the cold)", "سنموت من البرد", "joking, not literal"],
+   ["الحطب", "il-ḥaṭab", "the firewood", "الحطب", ""]
+  ]
+ },
+ {
+  "id": "s3u016",
+  "stage": 3,
+  "title": "If I had a million",
+  "goal": "Dream out loud with Sēf at a car showroom: what you'd each do if you had the money",
+  "tip": "lō is the 'if' of things that aren't true or probably won't happen: lō ʿindi flūs 'if I had money'. The result takes chān + a past verb, and chān never changes: lō ʿindi malyōn, chān riḥt kill makān 'if I had a million, I'd go everywhere'. Real, likely plans keep idha.",
+  "grammar": "lō for an imagined 'if'; result with chān + past (lō ʿindi …, chān …)",
+  "dialogue": [
+   ["A", "شايف هالسيارة؟ لو عندي فلوس، جان اشتريتها اليوم", "shāyif has-sayyāra? lō ʿindi flūs, chān ishtarēt-ha l-yōm", "See this car? If I had the money, I'd buy it today."],
+   ["B", "كم سعرها؟", "cham siʿirha?", "How much is it?"],
+   ["A", "مليون ونص!", "malyōn w nuṣṣ!", "One and a half million!"],
+   ["B", "لو عندي مليون، جان رحت كل مكان في الدنيا", "lō ʿindi malyōn, chān riḥt kill makān fi d-dinya", "If I had a million, I'd go everywhere in the world."],
+   ["A", "وأنا لو عندي مليون، جان اشتريت بيت حق أمي", "w ana lō ʿindi malyōn, chān ishtarēt bēt ḥagg ummi", "And if I had a million, I'd buy my mum a house."],
+   ["B", "حلو! بس لو تدري، أنا ما عندي ولا فلس", "ḥilu! bas lō tadri, ana ma ʿindi wala fils", "Nice! But if only you knew, I haven't got a penny."],
+   ["A", "وأنا بعد! يلا عيل، الكرك علي", "w ana baʿad! yalla ʿayal, il-karak ʿalay", "Same here! Come on then, the karak's on me."],
+   ["B", "لو عندك مليون، جان الغدا بعد عليك!", "lō ʿindak malyōn, chān il-ghada baʿad ʿalēk!", "If you had a million, lunch would be on you too!"]
+  ],
+  "items": [
+   ["لو", "lō", "if (imagined or unlikely)", "لو", "for a real, likely 'if' use idha (إذا); the phrase law samaḥt keeps law"],
+   ["لو عندي", "lō ʿindi", "if I had", "لو كان عندي", "lō ʿindi wagt = if I had time"],
+   ["لو عندك", "lō ʿindak", "if you had (to a man)", "لو كان عندك", "to a woman: lō ʿindich (لو عندج)"],
+   ["جان اشتريتها", "chān ishtarēt-ha", "I'd buy it, I would have bought it (a feminine thing, such as a car)", "لاشتريتها", "for a masculine thing: chān ishtarētah (جان اشتريته)"],
+   ["جان رحت", "chān riḥt", "I'd go, I would have gone", "لذهبت", "chān never changes: chān riḥna = we'd go"],
+   ["مليون", "malyōn", "a million", "مليون", "malyōn w nuṣṣ = one and a half million"],
+   ["في الدنيا", "fi d-dinya", "in the world", "في العالم", "id-dinya killha = the whole world"],
+   ["لو تدري", "lō tadri", "if only you knew (to a man)", "لو تعلم", "to a woman: lō tadrīn (لو تدرين)"],
+   ["ولا فلس", "wala fils", "not a penny, not a single fils", "ولا فلس", "a fils is a hundredth of a dirham"]
+  ]
+ },
+ {
+  "id": "s3u017",
+  "stage": 3,
+  "title": "If I were you, I'd say yes",
+  "goal": "Sēf has a job offer in Abu Dhabi and isn't sure: give him advice with lō and wish him luck",
+  "tip": "lō ana makānak 'if I were you' is the usual way to give advice, and the advice follows with chān + past: lō ana makānak, chān wāfagt 'if I were you, I'd say yes'. With a present verb, lō is a gentle 'if': lō tishraḥ-lah, yimkin ywāfig 'if you explained it to him, he might agree'.",
+  "grammar": "lō in advice and wishes (lō ana makānak, yā lēt)",
+  "culture": "Many Muslims avoid lō when regretting the past ('if only I'd…'), following a well-known hadith that says 'if' opens the door to the devil's work. After a loss or a mistake people say qaddar allāh w mā shāʼ faʿal 'God decreed it, and did as He willed'. lō for advice, plans and wishes is fine.",
+  "dialogue": [
+   ["A", "عندي عرض شغل في أبوظبي. شو رأيك؟", "ʿindi ʿarẓ shughul fi Abūẓabi. shu raʼyak?", "I've got a job offer in Abu Dhabi. What do you think?"],
+   ["B", "ما شاء الله! لو أنا مكانك، جان وافقت على طول", "mā shāʼ allāh! lō ana makānak, chān wāfagt ʿala ṭūl", "That's great! If I were you, I'd say yes straight away."],
+   ["A", "بس أبوظبي بعيدة، وأهلي كلهم هني", "bas Abūẓabi baʿīda, w ahli killhum hni", "But Abu Dhabi's far, and all my family's here."],
+   ["B", "صح، بس هذي فرصة ما تتعوض", "ṣaḥḥ, bas hādhi furṣa ma titʿawwaẓ", "True, but this is a chance you won't get again."],
+   ["A", "لو أبوي يوافق، جان رحت", "lō ubūy ywāfig, chān riḥt", "If my dad agreed, I'd go."],
+   ["B", "كلمه انت. لو تشرح له، يمكن يوافق", "kallmah inta. lō tishraḥ-lah, yimkin ywāfig", "Talk to him yourself. If you explained it to him, he might agree."],
+   ["A", "يا ليت! إن شاء الله", "yā lēt! in shāʼ allāh", "I hope so! God willing."],
+   ["B", "وإذا رحت، أنا بزورك كل أسبوع!", "w idha riḥt, ana bazūrak kill usbūʿ!", "And if you go, I'll visit you every week!"]
+  ],
+  "items": [
+   ["لو أنا مكانك", "lō ana makānak", "if I were you (to a man)", "لو كنت مكانك", "to a woman: lō ana makānich (لو أنا مكانج)"],
+   ["جان وافقت", "chān wāfagt", "I'd say yes, I'd accept", "لوافقت", "I agreed: wāfagt (وافقت)"],
+   ["عرض شغل", "ʿarẓ shughul", "a job offer", "عرض عمل", ""],
+   ["فرصة ما تتعوض", "furṣa ma titʿawwaẓ", "a chance you won't get again, a once-in-a-lifetime chance", "فرصة لا تعوض", ""],
+   ["يوافق", "ywāfig", "(he) agrees, (he) says yes", "يوافق", "I agree: awāfig (أوافق)"],
+   ["كلمه انت", "kallmah inta", "talk to him yourself, you talk to him (to a man)", "كلّمه أنت", "to a woman: kallmīh inti (كلميه انتي)"],
+   ["لو تشرح له", "lō tishraḥ-lah", "if you explained (it) to him (to a man)", "لو تشرح له", "to a woman: lō tishraḥīn-lah (لو تشرحين له)"],
+   ["يا ليت", "yā lēt", "I wish, if only; I hope so", "يا ليت", "you'll see written ياليت"],
+   ["بزورك", "bazūrak", "I'll visit you, I'll come and see you (to a man)", "سأزورك", "to a woman: bazūrich (بزورج)"]
+  ]
+ },
+ {
+  "id": "s3u018",
+  "stage": 3,
+  "title": "Even if it's just a little",
+  "goal": "Try to leave Bū Rāshid's majlis before dinner, with Sēf there, and give in politely when he insists",
+  "tip": "ḥatta lō means 'even if': ḥatta lō ʿindak imtiḥān 'even if you've got an exam'. Add ma for 'even if … not': ḥatta lō ma dhākart wāyid 'even if you haven't revised much'. w lō shwayy 'even just a little' is the host's favourite way to insist.",
+  "grammar": "ḥatta lō 'even if' (ḥatta lō ʿindak …, ḥatta lō ma …)",
+  "culture": "A Gulf host insists, often two or three times, and a guest usually says no at first. Giving in with zēn, bas shwayy 'OK, but just a little' honours the host. Sitting with the family for a few minutes counts; nobody expects you to eat a mountain of food.",
+  "dialogue": [
+   ["A", "وين رايح يا ولدي؟ العشا جاهز!", "wēn rāyiḥ yā wildi? il-ʿasha jāhiz!", "Where are you off to, son? Dinner's ready!"],
+   ["B", "السموحة يا عمي، لازم أروح. عندي امتحان باكر", "is-samūḥa yā ʿammi, lāzim arūḥ. ʿindi imtiḥān bāchir", "Forgive me, uncle, I have to go. I've got an exam tomorrow."],
+   ["A", "حتى لو عندك امتحان، لازم تتعشى ويانا", "ḥatta lō ʿindak imtiḥān, lāzim titʿashsha wiyyāna", "Even if you've got an exam, you must have dinner with us."],
+   ["B", "الله يخليك يا عمي، والله إني مستعجل", "allāh ykhallīk yā ʿammi, wallāh inni mistaʿjil", "Please, uncle, I'm honestly in a hurry."],
+   ["A", "ما يصير تطلع بلا عشا. ولو شوي!", "ma yṣīr tiṭlaʿ bala ʿasha. w lō shwayy!", "You can't leave without dinner. Even just a little!"],
+   ["B", "زين، عشان خاطرك. بس شوي", "zēn, ʿashān khāṭrak. bas shwayy", "All right, for your sake. But just a little."],
+   ["A", "هذا الكلام! وحتى لو ما ذاكرت وايد، بتنجح إن شاء الله", "hādha l-kalām! w ḥatta lō ma dhākart wāyid, bitinjaḥ in shāʼ allāh", "That's more like it! And even if you haven't revised much, you'll pass, God willing."],
+   ["B", "آمين يا عمي", "āmīn yā ʿammi", "Amen, uncle."]
+  ],
+  "items": [
+   ["حتى لو", "ḥatta lō", "even if", "حتى لو / وإن", "UAE also, in older or Bedouin speech: ilā (إلى) for 'if'"],
+   ["حتى لو ما", "ḥatta lō ma", "even if … not", "حتى لو لم", "ḥatta lō ma dhākart = even if you haven't revised"],
+   ["ولو شوي", "w lō shwayy", "even just a little, even a bit", "ولو قليلًا", "a host insisting: w lō shwayy!"],
+   ["العشا جاهز", "il-ʿasha jāhiz", "dinner's ready", "العشاء جاهز", "lunch is ready: il-ghada jāhiz"],
+   ["مستعجل", "mistaʿjil", "in a hurry (a man)", "مستعجل", "a woman: mistaʿjla (مستعجلة)"],
+   ["بلا عشا", "bala ʿasha", "without dinner", "بدون عشاء", "bala = without: bala sukkar = without sugar"],
+   ["عشان خاطرك", "ʿashān khāṭrak", "for your sake, just for you (to a man)", "من أجل خاطرك", "to a woman: ʿashān khāṭrich (عشان خاطرج)"],
+   ["هذا الكلام!", "hādha l-kalām!", "that's more like it! now you're talking!", "هذا هو الكلام", ""],
+   ["بتنجح", "bitinjaḥ", "you'll pass, you'll do well (to a man)", "ستنجح", "to a woman: bitinjaḥīn (بتنجحين)"]
+  ]
+ },
+ {
+  "id": "s3u019",
+  "stage": 3,
+  "title": "He said he wants to see you",
+  "goal": "Get back to your desk and let Maryam pass on messages: what the manager and two colleagues said",
+  "tip": "To pass on what someone said, use gāl inn- or gālat inn- + an ending: gāl innah taʿbān 'he said he's not well', gālat innha fi ṭ-ṭarīg 'she said she's on her way'. -ah is 'he', -ha is 'she'. gāl-li innah is 'he told me (that) he'.",
+  "grammar": "reported speech: gāl innah / gālat innha + what was said",
+  "dialogue": [
+   ["A", "صباح الخير. المدير يسأل عنك", "ṣabāḥ il-khēr. il-mudīr yisʼal ʿannak", "Morning. The manager's been asking for you."],
+   ["B", "صباح النور. شو قال لج؟", "ṣabāḥ in-nūr. shu gāl-lich?", "Morning. What did he tell you?"],
+   ["A", "قال إنه يبيك في مكتبه الساعة عشر", "gāl innah yabīk fi maktabah is-sāʿa ʿashr", "He said he wants to see you in his office at ten."],
+   ["B", "زين. وخالد مب هني اليوم؟", "zēn. w Khālid mub hni l-yōm?", "OK. And Khālid's not in today?"],
+   ["A", "لا. دق علي وقال لي إنه تعبان", "la. dagg ʿalay w gāl-li innah taʿbān", "No. He rang me and told me he's not well."],
+   ["B", "سلامته! وسارة بعد؟", "salāmtah! w Sāra baʿad?", "I hope he's OK! And Sāra too?"],
+   ["A", "لا، سارة قالت إنها في الطريق. زحمة وايد!", "la, Sāra gālat innha fi ṭ-ṭarīg. zaḥma wāyid!", "No, Sāra said she's on her way. The traffic's terrible!"],
+   ["B", "زين، بروح للمدير. وإذا دق خالد، سلمي عليه", "zēn, barūḥ lil-mudīr. w idha dagg Khālid, sallmī ʿalēh", "OK, I'll go to the manager. And if Khālid rings, say hi to him for me."]
+  ],
+  "items": [
+   ["قال إنه", "gāl innah", "he said (that) he, he said (that) it", "قال إنه", "about a woman: gālat innha (قالت إنها)"],
+   ["قالت إنها", "gālat innha", "she said (that) she", "قالت إنها", "about a man: gāl innah (قال إنه)"],
+   ["قال لي إنه", "gāl-li innah", "he told me (that) he", "قال لي إنه", "she told me (that) she: gālat-li innha (قالت لي إنها)"],
+   ["شو قال لج؟", "shu gāl-lich?", "what did he tell you? (to a woman)", "ماذا قال لكِ؟", "to a man: shu gāl-lak? (شو قال لك؟)"],
+   ["في مكتبه", "fi maktabah", "in his office", "في مكتبه", "in her office: fi maktab-ha (في مكتبها); not the same as maktaba 'library'"],
+   ["سلامته", "salāmtah", "I hope he's all right, I hope he gets better (about a man who's ill)", "سلامته", "about a woman: salāmat-ha (سلامتها)"],
+   ["إذا دق", "idha dagg", "if he rings, if he calls", "إذا اتصل", "if she rings: idha daggat (إذا دقت)"],
+   ["سلمي عليه", "sallmī ʿalēh", "say hi to him (from me) (to a woman)", "سلّمي عليه", "to a man: sallim ʿalēh (سلم عليه)"]
+  ]
+ },
+ {
+  "id": "s3u020",
+  "stage": 3,
+  "title": "You told me you were flying today!",
+  "goal": "Bump into Sēf at the mall when he thought you'd already left, and sort out who said what",
+  "tip": "inn takes the same endings as nouns: inni 'that I', innak 'that you (m.)', innich 'that you (f.)', innah 'he', innha 'she', inna 'we', innkum 'you all', innhum 'they'. gilt-li innak msāfir 'you told me you were flying'. ʿala bāli innak … means 'I thought you …'.",
+  "grammar": "inn- with every ending (inni, innak, inna): gilt-li innak msāfir",
+  "dialogue": [
+   ["A", "هلا! انت هني؟ قلت لي إنك مسافر اليوم!", "hala! inta hni? gilt-li innak msāfir il-yōm!", "Hi! You're here? You told me you were flying today!"],
+   ["B", "لا، قلت لك إني مسافر الخميس، مب اليوم!", "la, gilt-lak inni msāfir il-khamīs, mub il-yōm!", "No, I told you I'm flying on Thursday, not today!"],
+   ["A", "صج؟ على بالي إنك رايح اليوم", "ṣij? ʿala bāli innak rāyiḥ il-yōm", "Really? I thought you were going today."],
+   ["B", "لا، فهمتني غلط. الحين أشتري هدايا حق أهلي", "la, fhimtni ghalaṭ. il-ḥīn ashtiri hadāya ḥagg ahli", "No, you got me wrong. Right now I'm buying presents for my family."],
+   ["A", "حلو! وأهلك يدرون إنك ياي؟", "ḥilu! w ahlak yadrūn innak yāy?", "Nice! And does your family know you're coming?"],
+   ["B", "لا، أبيها مفاجأة. قلت لأخوي بس", "la, abīha mufājaʼa. gilt l-akhūy bas", "No, I want it to be a surprise. I've only told my brother."],
+   ["A", "زين. قول لهم إنا نسلم عليهم", "zēn. gūl-lhum inna nsallim ʿalēhum", "Great. Tell them we send our best."],
+   ["B", "إن شاء الله، أقول لهم. الله يسلمك", "in shāʼ allāh, agūl-lhum. allāh ysallmak", "I will, God willing. Thank you."]
+  ],
+  "items": [
+   ["قلت لي إنك", "gilt-li innak", "you told me (that) you (to a man)", "قلت لي إنك", "to a woman: giltī-li innich (قلتي لي إنج)"],
+   ["قلت لك إني", "gilt-lak inni", "I told you (that) I (to a man)", "قلت لك إنني", "to a woman: gilt-lich inni (قلت لج إني)"],
+   ["على بالي إنك", "ʿala bāli innak", "I thought you…, I had the idea you… (to a man)", "ظننت أنك", "to a woman: ʿala bāli innich (على بالي إنج)"],
+   ["فهمتني غلط", "fhimtni ghalaṭ", "you got me wrong, you misunderstood me (to a man)", "فهمتني خطأ", "to a woman: fhimtīni ghalaṭ (فهمتيني غلط)"],
+   ["هدايا", "hadāya", "presents, gifts", "هدايا", "one present: hadiyya (هدية)"],
+   ["يدرون إنك", "yadrūn innak", "they know (that) you (to a man)", "يعرفون أنك", "to a woman: yadrūn innich (يدرون إنج)"],
+   ["أبيها مفاجأة", "abīha mufājaʼa", "I want it to be a surprise", "أريدها مفاجأة", ""],
+   ["قول لهم إنا", "gūl-lhum inna", "tell them (that) we (to a man)", "قل لهم إننا", "to a woman: gūlī-lhum inna (قولي لهم إنا)"],
+   ["أقول لهم", "agūl-lhum", "I'll tell them, I'll let them know", "سأقول لهم", "to her: agūl-lha (أقول لها)"]
+  ]
+ },
+ {
+  "id": "s3u021",
+  "stage": 3,
+  "title": "They say the manager's leaving",
+  "goal": "Catch the latest office gossip from Maryam at work: what people are saying and what you've heard",
+  "tip": "For news you've heard, start with simaʿt inn… 'I heard that…' or ygūlūn inn… 'they say that…'. Before a pronoun, inn takes its ending: simaʿt innah biytzawwaj 'I heard he's getting married'. To sound careful, add yimkin kalām bas 'maybe it's just talk' or allāhu aʿlam 'who knows'.",
+  "grammar": "hearsay: ygūlūn inn…, simaʿt inn… (+ ending)",
+  "dialogue": [
+   ["A", "سمعت إن المدير بيطلع من الشركة؟", "simaʿt inn il-mudīr biyiṭlaʿ min ish-sharika?", "Have you heard the manager's leaving the company?"],
+   ["B", "لا! منو قال لج؟", "la! minu gāl-lich?", "No! Who told you?"],
+   ["A", "كلهم يقولون إنه لقى شغل ثاني", "killhum ygūlūn innah liga shughul thāni", "Everyone's saying he's found another job."],
+   ["B", "صج؟ أنا سمعت إنه بيتزوج!", "ṣij? ana simaʿt innah biytzawwaj!", "Really? I heard he's getting married!"],
+   ["A", "يمكن كلام بس. الله أعلم", "yimkin kalām bas. allāhu aʿlam", "Maybe it's just talk. Who knows."],
+   ["B", "بس إذا صج، منو بيصير المدير؟", "bas idha ṣij, minu biyṣīr il-mudīr?", "But if it's true, who's going to be manager?"],
+   ["A", "يقولون إن أحمد بياخذ مكانه", "ygūlūn inn Aḥmad biyākhidh makānah", "They say Aḥmad will take his place."],
+   ["B", "أحمد؟! زين والله، هذا خبر حلو!", "Aḥmad?! zēn wallāh, hādha khabar ḥilu!", "Aḥmad?! Well, that's good news!"]
+  ],
+  "items": [
+   ["سمعت إن", "simaʿt inn", "I heard (that); have you heard (that)…? (to a man)", "سمعت أن", "to a woman: simaʿti inn (سمعتي إن)"],
+   ["سمعت إنه", "simaʿt innah", "I heard (that) he", "سمعت أنه", "about a woman: simaʿt innha (سمعت إنها)"],
+   ["يقولون إن", "ygūlūn inn", "they say (that), people are saying", "يقولون إن", ""],
+   ["كلهم يقولون", "killhum ygūlūn", "everyone's saying, they all say", "الجميع يقولون", ""],
+   ["كلام بس", "kalām bas", "just talk, only gossip", "مجرد كلام", "yimkin kalām bas = maybe it's just talk"],
+   ["الله أعلم", "allāhu aʿlam", "God knows, who knows", "الله أعلم", ""],
+   ["إذا صج", "idha ṣij", "if it's true", "إذا كان صحيحًا", ""],
+   ["بيطلع من الشركة", "biyiṭlaʿ min ish-sharika", "he's leaving the company", "سيترك الشركة", "about a woman: bitiṭlaʿ min ish-sharika (بتطلع من الشركة)"],
+   ["خبر حلو", "khabar ḥilu", "good news", "خبر جميل", "bad news: khabar mub zēn"]
+  ]
+ },
+ {
+  "id": "s3u022",
+  "stage": 3,
+  "title": "Your uncle says come for dinner",
+  "goal": "Pass on Bū Rāshid's message to Sēf: his greetings, his exact words and his dinner invitation",
+  "tip": "Gulf speakers often quote straight, with no inn: gāl: idha ma yā, ana barūḥ-lah 'he said: if he doesn't come, I'll go to him'. ygūl-lak … passes a message on: ygūl-lak lēsh ma tzūrah? 'he says why don't you visit him?'. To send one back: gūl-lah inni yāy 'tell him I'm coming'.",
+  "grammar": "passing on messages: direct quotes (gāl: …) and ygūl-lak 'he says (to tell you)'",
+  "culture": "Greetings are passed on with care: if someone asks you to sallim ʿala…, it's polite to deliver it, and the reply to ysallim ʿalēk is allāh ysallmah. Older relatives expect visits and calls from the young; a message sent through a friend is a gentle reminder.",
+  "dialogue": [
+   ["A", "شفت عمي في المجلس؟ شو قال لك؟", "shift ʿammi fi l-majlis? shu gāl-lak?", "Did you see my uncle at the majlis? What did he say to you?"],
+   ["B", "هيه. يسلم عليك، ويقول لك ليش ما تزوره؟", "hē. ysallim ʿalēk, w ygūl-lak lēsh ma tzūrah?", "Yes. He says hi, and he says why don't you visit him?"],
+   ["A", "الله يسلمه. والله مشغول هالأيام", "allāh ysallmah. wallāh mashghūl hal-ayyām", "God keep him. Honestly, I've been busy lately."],
+   ["B", "قال: العشا عندي يوم الجمعة، وسيف لازم ييي", "gāl: il-ʿasha ʿindi yōm il-jumʿa, w Sēf lāzim yiyi", "He said: \"Dinner's at my place on Friday, and Sēf has to come.\""],
+   ["A", "يعني لازم أروح؟", "yaʿni lāzim arūḥ?", "So I have to go?"],
+   ["B", "هيه! وقال: إذا ما يا، أنا بروح له", "hē! w gāl: idha ma yā, ana barūḥ-lah", "Yes! And he said: \"If he doesn't come, I'll go to him.\""],
+   ["A", "عيل بروح! قول له إني ياي", "ʿayal barūḥ! gūl-lah inni yāy", "Then I'm going! Tell him I'm coming."],
+   ["B", "لا، دق عليه انت. يبي يسمع صوتك!", "la, digg ʿalēh inta. yabi yismaʿ ṣōtak!", "No, you ring him. He wants to hear your voice!"]
+  ],
+  "items": [
+   ["يقول لك", "ygūl-lak", "he says (to tell you), he's asking (to a man)", "يقول لك", "to a woman: ygūl-lich (يقول لج); she says: tgūl-lak (تقول لك)"],
+   ["ليش ما تزوره؟", "lēsh ma tzūrah?", "why don't you visit him? (to a man)", "لماذا لا تزوره؟", "to a woman: lēsh ma tzūrīnah? (ليش ما تزورينه؟)"],
+   ["مشغول هالأيام", "mashghūl hal-ayyām", "busy lately, busy these days (a man)", "مشغول هذه الأيام", "a woman: mashghūla hal-ayyām (مشغولة هالأيام)"],
+   ["العشا عندي", "il-ʿasha ʿindi", "dinner's at my place", "العشاء عندي", "at our place: il-ʿasha ʿindna (العشا عندنا)"],
+   ["إذا ما يا", "idha ma yā", "if he doesn't come", "إذا لم يأتِ", "if she doesn't come: idha ma yat (إذا ما يت)"],
+   ["قول له إني", "gūl-lah inni", "tell him (that) I (to a man)", "قل له إنني", "to a woman: gūlī-lah inni (قولي له إني)"],
+   ["دق عليه", "digg ʿalēh", "ring him, give him a call (to a man)", "اتصل به", "to a woman: diggī ʿalēh (دقي عليه)"],
+   ["يبي يسمع صوتك", "yabi yismaʿ ṣōtak", "he wants to hear your voice (to a man)", "يريد أن يسمع صوتك", "to a woman: yabi yismaʿ ṣōtich (يبي يسمع صوتج)"]
+  ]
+ },
+ {
+  "id": "s3u023",
+  "stage": 3,
+  "title": "He said he was on his way",
+  "goal": "Wait for Sēf with Fahad at a restaurant and report what Sēf told you on the phone",
+  "tip": "Gulf Arabic keeps the speaker's tense when you report: Sēf said ana yāy, so you say gāl innah yāy 'he said he was coming'. 'I'll be there in ten minutes' becomes gāl innah biyōṣal baʿd ʿashr dagāyig. Only the person changes; English shifts the tense, Arabic doesn't.",
+  "grammar": "no tense shift in reported speech (gāl innah yāy 'he said he was coming')",
+  "dialogue": [
+   ["A", "وين سيف؟ مو قال إنه ياي الساعة سبع؟", "wēn Sēf? mū gāl innah yāy is-sāʿa sabʿ?", "Where's Sēf? Didn't he say he was coming at seven?"],
+   ["B", "هيه، قال إنه في الطريق. يمكن زحمة", "hē, gāl innah fi ṭ-ṭarīg. yimkin zaḥma", "Yes, he said he was on his way. Maybe it's the traffic."],
+   ["A", "شنو قال لك بعد؟", "shinu gāl-lak baʿad?", "What else did he tell you?"],
+   ["B", "قال: أنا طالع من البيت الحين", "gāl: ana ṭāliʿ min il-bēt il-ḥīn", "He said: \"I'm leaving the house now.\""],
+   ["A", "ومتى قال جذي؟", "w mita gāl chidhi?", "And when did he say that?"],
+   ["B", "قبل ساعة! وقال إنه بيوصل بعد عشر دقايق", "gabil sāʿa! w gāl innah biyōṣal baʿd ʿashr dagāyig", "An hour ago! And he said he'd be here in ten minutes."],
+   ["A", "هذا سيف! يقول إنه ياي، واهو للحين في البيت!", "hādha Sēf! ygūl innah yāy, w ihu lil-ḥīn fi l-bēt!", "That's Sēf for you! He says he's coming, and he's still at home!"],
+   ["B", "خلني أدق عليه وأشوف", "khallni adigg ʿalēh w ashūf", "Let me ring him and see."]
+  ],
+  "items": [
+   ["قال إنه ياي", "gāl innah yāy", "he said he was coming, he said he's on his way", "قال إنه قادم", "about a woman: gālat innha yāya (قالت إنها ياية)"],
+   ["قال إنه بيوصل", "gāl innah biyōṣal", "he said he'd get here, he said he'll arrive", "قال إنه سيصل", "about a woman: gālat innha bitōṣal (قالت إنها بتوصل)"],
+   ["يقول إنه", "ygūl innah", "he says (that) he", "يقول إنه", "she says (that) she: tgūl innha (تقول إنها)"],
+   ["شنو قال لك؟", "shinu gāl-lak?", "what did he tell you? (Kuwait) (to a man)", "ماذا قال لك؟", "UAE: shu gāl-lak? (شو قال لك؟)"],
+   ["قال جذي", "gāl chidhi", "he said so, he said that", "قال ذلك", "UAE also: gāl chī (قال جي)"],
+   ["قبل ساعة", "gabil sāʿa", "an hour ago", "قبل ساعة", "two hours ago: gabil sāʿtēn (قبل ساعتين)"],
+   ["طالع من البيت", "ṭāliʿ min il-bēt", "leaving the house, heading out (a man)", "خارج من البيت", "a woman: ṭālʿa min il-bēt (طالعة من البيت)"],
+   ["خلني أدق عليه", "khallni adigg ʿalēh", "let me ring him, let me give him a call (to a man)", "دعني أتصل به", "to a woman: khallīni adigg ʿalēh (خليني أدق عليه)"],
+   ["يمكن زحمة", "yimkin zaḥma", "maybe it's the traffic", "ربما هناك ازدحام", ""]
+  ]
+ }
+]

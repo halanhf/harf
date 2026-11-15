@@ -1,0 +1,1237 @@
+[
+ {
+  "id": "s3u047",
+  "stage": 3,
+  "title": "No eating on the metro",
+  "goal": "Ride the Dubai Metro with Sēf and learn the rules: where you can sit and what's not allowed",
+  "tip": "A passive participle on the pattern maCCūC says what has been done to something: katab 'wrote' → maktūb 'written', manaʿ 'banned' → mamnūʿ 'banned'. For a rule, put a verbal noun after it: mamnūʿ il-akil 'no eating'. masmūḥ is the opposite: it-taṣwīr masmūḥ 'photos are allowed'.",
+  "grammar": "passive participle maCCūC: mamnūʿ, maktūb, masmūḥ",
+  "dialogue": [
+   [
+    "B",
+    "يلا نقعد هني، الكراسي فاضية",
+    "yalla nigʿid hni, il-karāsi fāẓya",
+    "Come on, let's sit here, the seats are free."
+   ],
+   [
+    "A",
+    "لا، هذا حق الحريم والعيال. شوف، مكتوب على الباب",
+    "la, hādha ḥagg il-ḥarīm w il-ʿyāl. shūf, maktūb ʿala l-bāb",
+    "No, this part's for women and children. Look, it says so on the door."
+   ],
+   [
+    "B",
+    "آسف، ما شفته! عيل وين نقعد؟",
+    "āsif, ma shiftah! ʿayal wēn nigʿid?",
+    "Sorry, I didn't see it! Where do we sit, then?"
+   ],
+   [
+    "A",
+    "هناك. وترا ممنوع الأكل والشرب في المترو",
+    "hnāk. w tara mamnūʿ il-akil w ish-shurb fi l-mitrō",
+    "Over there. And by the way, no eating or drinking on the metro."
+   ],
+   [
+    "B",
+    "صج؟ ولا حتى الماي؟",
+    "ṣij? wala ḥatta l-māy?",
+    "Really? Not even water?"
+   ],
+   [
+    "A",
+    "ولا حتى الماي. ممنوع، وفي غرامة",
+    "wala ḥatta l-māy. mamnūʿ, w fī gharāma",
+    "Not even water. It's not allowed, and there's a fine."
+   ],
+   [
+    "B",
+    "زين، بتريا لين ننزل. والتصوير مسموح؟",
+    "zēn, batrayya lēn ninzil. w it-taṣwīr masmūḥ?",
+    "OK, I'll wait till we get off. And are photos allowed?"
+   ],
+   [
+    "A",
+    "مسموح، بس لا تصور الناس",
+    "masmūḥ, bas la tṣawwir in-nās",
+    "They're allowed, but don't take photos of people."
+   ]
+  ],
+  "items": [
+   [
+    "ممنوع",
+    "mamnūʿ",
+    "not allowed, banned",
+    "ممنوع",
+    "with a feminine noun: mamnūʿa (ممنوعة); the opposite: masmūḥ (مسموح)"
+   ],
+   [
+    "ممنوع الأكل والشرب",
+    "mamnūʿ il-akil w ish-shurb",
+    "no eating or drinking",
+    "ممنوع الأكل والشرب",
+    "mamnūʿ + an activity is how rules and signs are said: mamnūʿ it-tadkhīn = no smoking"
+   ],
+   [
+    "مكتوب على الباب",
+    "maktūb ʿala l-bāb",
+    "it says (so) on the door",
+    "مكتوب على الباب",
+    "maktūb = written; maktūb hni = it says here"
+   ],
+   [
+    "حق الحريم",
+    "ḥagg il-ḥarīm",
+    "for women (only)",
+    "للنساء",
+    "il-ḥarīm = women; for men: ḥagg ir-ryāyīl (حق الرياييل)"
+   ],
+   [
+    "في غرامة",
+    "fī gharāma",
+    "there's a fine",
+    "هناك غرامة",
+    "a fine: gharāma; a traffic ticket: mukhālafa (مخالفة)"
+   ],
+   [
+    "التصوير",
+    "it-taṣwīr",
+    "taking photos, photography",
+    "التصوير",
+    "from ṣawwar 'took a photo'"
+   ],
+   [
+    "لا تصور الناس",
+    "la tṣawwir in-nās",
+    "don't take photos of people (to a man)",
+    "لا تصوّر الناس",
+    "to a woman: la tṣawwrīn in-nās (لا تصورين الناس)"
+   ],
+   [
+    "بتريا لين ننزل",
+    "batrayya lēn ninzil",
+    "I'll wait till we get off",
+    "سأنتظر حتى ننزل",
+    ""
+   ],
+   [
+    "الكراسي فاضية",
+    "il-karāsi fāẓya",
+    "the seats are free",
+    "المقاعد فارغة",
+    "plural things take the feminine: fāẓya; one seat: il-kursi fāẓi"
+   ]
+  ],
+  "culture": "The Dubai Metro has a section for women and children, clearly marked on the platform and the doors: men don't sit there. Eating and drinking aren't allowed on the trains, and you can be fined. Taking photos of people without asking can break UAE privacy law, so ask first or keep strangers out of the picture."
+ },
+ {
+  "id": "s3u048",
+  "stage": 3,
+  "title": "The lift's out of order",
+  "goal": "Plan a meeting with Maryam at the office when the lift is broken, the room is booked and the manager's line is busy",
+  "tip": "Participles describe a state: ḥajaz 'booked' → maḥjūz 'booked, taken'; mashghūl 'busy'. Form II verbs (doubled middle letter) make theirs with m-: sakkar 'shut' → msakkar 'shut'; mʿaṭṭal 'out of order' has the same shape. With a feminine noun add -a: il-ghurfa maḥjūza.",
+  "grammar": "participles for states: maḥjūz, mashghūl; Form II with m-: mʿaṭṭal, msakkar",
+  "dialogue": [
+   [
+    "B",
+    "صباح الخير يا مريم. اللفت معطل، طلعت على ريولي!",
+    "ṣabāḥ il-khēr yā Maryam. il-lift mʿaṭṭal, ṭilaʿt ʿala ryūli!",
+    "Morning, Maryam. The lift's out of order, I walked up!"
+   ],
+   [
+    "A",
+    "صباح النور. هيه، معطل من أمس",
+    "ṣabāḥ in-nūr. hē, mʿaṭṭal min ams",
+    "Morning. Yes, it's been out of order since yesterday."
+   ],
+   [
+    "B",
+    "عندنا اجتماع الساعة عشر. غرفة الاجتماعات فاضية؟",
+    "ʿindana ijtimāʿ is-sāʿa ʿashr. ghurfat il-ijtimāʿāt fāẓya?",
+    "We've got a meeting at ten. Is the meeting room free?"
+   ],
+   [
+    "A",
+    "لا، محجوزة لين الظهر",
+    "la, maḥjūza lēn iẓ-ẓuhur",
+    "No, it's booked till midday."
+   ],
+   [
+    "B",
+    "عيل نسويه في مكتبج؟",
+    "ʿayal nsawwīh fi maktabich?",
+    "Shall we have it in your office, then?"
+   ],
+   [
+    "A",
+    "زين. بس المدير لازم يدري. اتصلت فيه، وتلفونه مشغول",
+    "zēn. bas il-mudīr lāzim yadri. ittaṣalt fīh, w tilifōnah mashghūl",
+    "OK. But the manager needs to know. I called him, and his line's busy."
+   ],
+   [
+    "B",
+    "بطرش له رسالة. وانتي، تبين قهوة؟",
+    "baṭarrish-lah risāla. w inti, tabīn gahwa?",
+    "I'll send him a message. And would you like a coffee?"
+   ],
+   [
+    "A",
+    "ودي، بس الكافتيريا مسكرة اليوم!",
+    "widdi, bas il-kāftērya msakkara l-yōm!",
+    "I'd love one, but the cafeteria's closed today!"
+   ]
+  ],
+  "items": [
+   [
+    "معطل",
+    "mʿaṭṭal",
+    "out of order, not working (a lift, a machine)",
+    "معطل",
+    "with a feminine noun: mʿaṭṭala (معطلة); also: kharbān (خربان)"
+   ],
+   [
+    "من أمس",
+    "min ams",
+    "since yesterday",
+    "منذ أمس",
+    "min yōmēn = for two days now"
+   ],
+   [
+    "محجوز",
+    "maḥjūz",
+    "booked, reserved; taken (a seat)",
+    "محجوز",
+    "with a feminine noun: maḥjūza (محجوزة); hādha l-kursi maḥjūz? = is this seat taken?"
+   ],
+   [
+    "لين الظهر",
+    "lēn iẓ-ẓuhur",
+    "till midday",
+    "حتى الظهر",
+    "lēn il-ʿaṣir = till the afternoon"
+   ],
+   [
+    "في مكتبج",
+    "fi maktabich",
+    "in your office (to a woman)",
+    "في مكتبكِ",
+    "to a man: fi maktabak (في مكتبك)"
+   ],
+   [
+    "تلفونه مشغول",
+    "tilifōnah mashghūl",
+    "his line's busy, his phone's engaged",
+    "هاتفه مشغول",
+    "her phone: tilifōnha mashghūl"
+   ],
+   [
+    "لازم يدري",
+    "lāzim yadri",
+    "he has to know, he needs to be told",
+    "يجب أن يعلم",
+    "she has to know: lāzim tadri"
+   ],
+   [
+    "بطرش له رسالة",
+    "baṭarrish-lah risāla",
+    "I'll send him a message",
+    "سأرسل له رسالة",
+    "to her: baṭarrish-lha risāla (بطرش لها رسالة)"
+   ],
+   [
+    "الكافتيريا",
+    "il-kāftērya",
+    "the cafeteria, the canteen",
+    "الكافتيريا / المقصف",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s3u049",
+  "stage": 3,
+  "title": "I'm not used to this heat",
+  "goal": "On a hot afternoon, tell Sēf what you're used to and what you aren't",
+  "tip": "Form V verbs (tʿawwad 'got used to') make their participle with mit-: mitʿawwid 'used to'. It works like an adjective: ana mitʿawwid ʿala l-ḥarr 'I'm used to the heat' (a woman: mitʿawwda). A verb can follow straight after: mitʿawwid anām mitʼakhkhir 'I'm used to going to bed late'.",
+  "grammar": "Form V participle with mit-: mitʿawwid 'used to'",
+  "dialogue": [
+   [
+    "A",
+    "شفيك؟ ويهك أحمر!",
+    "shfīk? wiyhak aḥmar!",
+    "What's wrong? Your face is red!"
+   ],
+   [
+    "B",
+    "حر وايد! أنا مب متعود على هالحر",
+    "ḥarr wāyid! ana mub mitʿawwid ʿala hal-ḥarr",
+    "It's so hot! I'm not used to this heat."
+   ],
+   [
+    "A",
+    "عادي، بتتعود. أنا متعود عليه من صغري",
+    "ʿādi, bititʿawwad. ana mitʿawwid ʿalēh min ṣighri",
+    "Don't worry, you'll get used to it. I've been used to it since I was little."
+   ],
+   [
+    "B",
+    "في لندن ما نشوف الشمس وايد!",
+    "fi Landan ma nshūf ish-shams wāyid!",
+    "In London we don't see the sun much!"
+   ],
+   [
+    "A",
+    "عيل انت متعود على البرد",
+    "ʿayal inta mitʿawwid ʿala l-bard",
+    "So you're used to the cold."
+   ],
+   [
+    "B",
+    "هيه. وهني الناس متعودين يطلعون بالليل، صح؟",
+    "hē. w hni n-nās mitʿawwdīn yiṭlaʿūn bil-lēl, ṣaḥḥ?",
+    "Yes. And here people are used to going out at night, right?"
+   ],
+   [
+    "A",
+    "صح، في الصيف كل شي بالليل",
+    "ṣaḥḥ, fi ṣ-ṣēf kill shay bil-lēl",
+    "Right, in summer everything happens at night."
+   ],
+   [
+    "B",
+    "زين، أنا متعود أنام متأخر!",
+    "zēn, ana mitʿawwid anām mitʼakhkhir!",
+    "Good, I'm used to going to bed late!"
+   ]
+  ],
+  "items": [
+   [
+    "متعود على",
+    "mitʿawwid ʿala",
+    "used to (something) (a man)",
+    "معتاد على",
+    "a woman: mitʿawwda ʿala (متعودة على)"
+   ],
+   [
+    "مب متعود",
+    "mub mitʿawwid",
+    "not used to (it) (a man)",
+    "غير معتاد",
+    "a woman: mub mitʿawwda (مب متعودة); Kuwait: mū mitʿawwid (مو متعود)"
+   ],
+   [
+    "متعودين",
+    "mitʿawwdīn",
+    "used to (it) (a group)",
+    "معتادون",
+    "niḥin mitʿawwdīn = we're used to it"
+   ],
+   [
+    "كل شي بالليل",
+    "kill shay bil-lēl",
+    "everything happens at night",
+    "كل شيء في الليل",
+    ""
+   ],
+   [
+    "هالحر",
+    "hal-ḥarr",
+    "this heat",
+    "هذا الحر",
+    ""
+   ],
+   [
+    "من صغري",
+    "min ṣighri",
+    "since I was little",
+    "منذ صغري",
+    "since he was little: min ṣighrah (من صغره)"
+   ],
+   [
+    "يطلعون بالليل",
+    "yiṭlaʿūn bil-lēl",
+    "they go out at night",
+    "يخرجون في الليل",
+    "we go out: niṭlaʿ (نطلع)"
+   ],
+   [
+    "ويهك أحمر",
+    "wiyhak aḥmar",
+    "your face is red (to a man)",
+    "وجهك أحمر",
+    "to a woman: wiyhich aḥmar (ويهج أحمر)"
+   ],
+   [
+    "حر وايد",
+    "ḥarr wāyid",
+    "it's really hot",
+    "الجو حار جدًا",
+    ""
+   ]
+  ],
+  "culture": "In the hottest months much of daily life in the UAE moves to the evening. People run errands early in the morning or after maghrib, malls and cafés stay busy late, and parks and beaches fill up at night once it cools a little. Midday is for staying indoors."
+ },
+ {
+  "id": "s3u050",
+  "stage": 3,
+  "title": "Driving lessons",
+  "goal": "Tell Sēf how your driving lessons are going and when your test is",
+  "tip": "A verbal noun names an activity: sāg 'drove' → is-swāga 'driving', diras 'studied' → id-dirāsa 'studying', zār 'visited' → iz-zyāra 'the visit'. Use it like any noun: is-swāga hni ṣaʿba 'driving here is hard', imtiḥān is-swāga 'the driving test'. Learn each one with its verb.",
+  "grammar": "verbal noun: is-swāga 'driving' (sāg, ysūg)",
+  "dialogue": [
+   [
+    "A",
+    "شو أخبار السواقة؟",
+    "shu akhbār is-swāga?",
+    "How's the driving going?"
+   ],
+   [
+    "B",
+    "صعبة وايد! هني الكل يسوق بسرعة",
+    "ṣaʿba wāyid! hni l-kill ysūg b-surʿa",
+    "Really hard! Everyone here drives fast."
+   ],
+   [
+    "A",
+    "صج. وفي لندن ما كنت تسوق؟",
+    "ṣij. w fi Landan ma kint tsūg?",
+    "True. And didn't you drive in London?"
+   ],
+   [
+    "B",
+    "لا، كنت أروح بالباص وبالمترو",
+    "la, kint arūḥ bil-bāṣ w bil-mitrō",
+    "No, I used to take the bus and the tube."
+   ],
+   [
+    "A",
+    "زين. ومتى امتحان السواقة؟",
+    "zēn. w mita imtiḥān is-swāga?",
+    "Right. And when's the driving test?"
+   ],
+   [
+    "B",
+    "الأسبوع الياي إن شاء الله. خايف شوي",
+    "il-usbūʿ il-yāy in shāʼ allāh. khāyif shwayy",
+    "Next week, God willing. I'm a bit nervous."
+   ],
+   [
+    "A",
+    "لا تخاف. أول ما تاخذ الرخصة، نسوق في البر!",
+    "la tkhāf. awwal ma tākhidh ir-rukhṣa, nsūg fi l-barr!",
+    "Don't worry. As soon as you get your licence, we'll go driving in the desert!"
+   ],
+   [
+    "B",
+    "البر؟ لا لا، السواقة في البر بعدين!",
+    "il-barr? la la, is-swāga fi l-barr baʿdēn!",
+    "The desert? No, no, desert driving can wait!"
+   ]
+  ],
+  "items": [
+   [
+    "السواقة",
+    "is-swāga",
+    "driving",
+    "القيادة",
+    "sāg = he drove; the driver: is-sāyig (السايق)"
+   ],
+   [
+    "امتحان السواقة",
+    "imtiḥān is-swāga",
+    "the driving test",
+    "اختبار القيادة",
+    ""
+   ],
+   [
+    "شو أخبار…؟",
+    "shu akhbār…?",
+    "how's … going? any news on …?",
+    "ما أخبار…؟",
+    "shu akhbār id-dirāsa? = how are your studies going?"
+   ],
+   [
+    "يسوق",
+    "ysūg",
+    "he drives",
+    "يقود",
+    "I drive: asūg (أسوق); she drives: tsūg (تسوق)"
+   ],
+   [
+    "صعبة وايد",
+    "ṣaʿba wāyid",
+    "really hard (a feminine thing)",
+    "صعبة جدًا",
+    "a masculine thing: ṣaʿb wāyid (صعب وايد)"
+   ],
+   [
+    "الرخصة",
+    "ir-rukhṣa",
+    "the (driving) licence",
+    "رخصة القيادة",
+    "tākhidh ir-rukhṣa = you get your licence"
+   ],
+   [
+    "ما كنت تسوق؟",
+    "ma kint tsūg?",
+    "didn't you (use to) drive? (to a man)",
+    "ألم تكن تقود؟",
+    "to a woman: ma kinti tsūgīn? (ما كنتي تسوقين؟)"
+   ],
+   [
+    "خايف شوي",
+    "khāyif shwayy",
+    "a bit nervous (a man)",
+    "قلق قليلًا",
+    "a woman: khāyfa shwayy (خايفة شوي)"
+   ],
+   [
+    "نسوق في البر",
+    "nsūg fi l-barr",
+    "we drive in the desert, we go desert driving",
+    "نقود في الصحراء",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s3u051",
+  "stage": 3,
+  "title": "What do you do in your free time?",
+  "goal": "Ask a group of Sēf's friends about their hobbies and say what you like doing",
+  "tip": "For hobbies, put a verbal noun after aḥibb 'I like' or hiwāyti 'my hobby is': aḥibb is-sibāḥa 'I like swimming', hiwāyti ṣ-ṣēd 'my hobby's fishing'. A verb works too, with nothing in between: aḥibb asbaḥ 'I like to swim'. To a group: shu tḥibbūn? 'what do you like?'",
+  "grammar": "verbal nouns after aḥibb and hiwāyti: is-sibāḥa, iṣ-ṣēd, il-giraya",
+  "dialogue": [
+   [
+    "B",
+    "يا شباب، شو تسوون في وقت الفراغ؟",
+    "yā shabāb, shu tsawwūn fi wagt il-farāgh?",
+    "Guys, what do you do in your free time?"
+   ],
+   [
+    "A",
+    "كلنا نلعب كورة. وأنا هوايتي الصيد",
+    "killna nilʿab kūra. w ana hiwāyti ṣ-ṣēd",
+    "We all play football. And my hobby's fishing."
+   ],
+   [
+    "B",
+    "الصيد؟ حلو! وين تصيد؟",
+    "iṣ-ṣēd? ḥilu! wēn tṣīd?",
+    "Fishing? Nice! Where do you fish?"
+   ],
+   [
+    "A",
+    "في البحر، بالطراد. وانت، شو تحب؟",
+    "fi l-baḥar, biṭ-ṭarrād. w inta, shu tḥibb?",
+    "At sea, from a boat. And you, what do you like?"
+   ],
+   [
+    "B",
+    "أحب القراية والسباحة. انتو تحبون السباحة؟",
+    "aḥibb il-giraya w is-sibāḥa. intu tḥibbūn is-sibāḥa?",
+    "I like reading and swimming. Do you guys like swimming?"
+   ],
+   [
+    "A",
+    "هيه، كل جمعة نروح البحر. تعال ويانا!",
+    "hē, kill jumʿa nrūḥ il-baḥar. taʿāl wiyyāna!",
+    "Yes, we go to the beach every Friday. Come with us!"
+   ],
+   [
+    "B",
+    "أكيد! بس الصيد ما جربته. علموني!",
+    "akīd! bas iṣ-ṣēd ma jarrabtah. ʿallmūni!",
+    "Definitely! But I've never tried fishing. You'll have to teach me!"
+   ],
+   [
+    "A",
+    "أبشر! بتستانس، بس لازم تصحى بدري",
+    "abshir! bitistānis, bas lāzim tiṣḥa badri",
+    "You're on! You'll love it, but you'll have to get up early."
+   ]
+  ],
+  "items": [
+   [
+    "وقت الفراغ",
+    "wagt il-farāgh",
+    "free time, spare time",
+    "وقت الفراغ",
+    "fi wagt il-farāgh = in your free time"
+   ],
+   [
+    "هوايتي",
+    "hiwāyti",
+    "my hobby (is)",
+    "هوايتي",
+    "a hobby: hiwāya (هواية); your hobby: hiwāytak (to a man), hiwāytich (to a woman)"
+   ],
+   [
+    "الصيد",
+    "iṣ-ṣēd",
+    "fishing; hunting",
+    "الصيد",
+    "you fish: tṣīd (تصيد)"
+   ],
+   [
+    "السباحة",
+    "is-sibāḥa",
+    "swimming",
+    "السباحة",
+    "we swim: nisbaḥ (نسبح)"
+   ],
+   [
+    "القراية",
+    "il-giraya",
+    "reading",
+    "القراءة",
+    "you'll also hear il-qirāʼa (القراءة)"
+   ],
+   [
+    "بالطراد",
+    "biṭ-ṭarrād",
+    "from a boat, by speedboat",
+    "بالقارب",
+    "a small motorboat: ṭarrād (طراد)"
+   ],
+   [
+    "تحبون",
+    "tḥibbūn",
+    "you like (to a group)",
+    "تحبون",
+    "to one man: tḥibb; to one woman: tḥibbīn (تحبين)"
+   ],
+   [
+    "ما جربته",
+    "ma jarrabtah",
+    "I've never tried it",
+    "لم أجربه",
+    "a feminine thing: ma jarrabt-ha (ما جربتها)"
+   ],
+   [
+    "علموني",
+    "ʿallmūni",
+    "teach me (to a group)",
+    "علموني",
+    "to one man: ʿallimni (علمني); to one woman: ʿallmīni (علميني)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u052",
+  "stage": 3,
+  "title": "It was supposed to be Thursday",
+  "goal": "At the office, sort out a changed deadline with Maryam: what you're supposed to do and what should have happened",
+  "tip": "il-mafrūẓ + a present verb says what's expected: il-mafrūẓ nṭarrish il-ʿarẓ il-yōm 'we're supposed to send the presentation today'. It never changes. Put kān in front for what should have happened: kān il-mafrūẓ ygūlūn-li 'they should have told me'.",
+  "grammar": "il-mafrūẓ + verb 'supposed to'; kān il-mafrūẓ 'should have'",
+  "dialogue": [
+   [
+    "A",
+    "ترا المفروض نطرش العرض للمدير اليوم",
+    "tara l-mafrūẓ nṭarrish il-ʿarẓ lil-mudīr il-yōm",
+    "Just so you know, we're supposed to send the presentation to the manager today."
+   ],
+   [
+    "B",
+    "اليوم؟ المفروض يوم الخميس!",
+    "il-yōm? il-mafrūẓ yōm il-khamīs!",
+    "Today? It was supposed to be Thursday!"
+   ],
+   [
+    "A",
+    "لا، غيروا الموعد. ما قالوا لك؟",
+    "la, ghayyaraw il-mawʿid. ma gālaw-lak?",
+    "No, they moved the deadline. Didn't they tell you?"
+   ],
+   [
+    "B",
+    "لا والله! كان المفروض يقولون لي",
+    "la wallāh! kān il-mafrūẓ ygūlūn-li",
+    "No, they didn't! They should have told me."
+   ],
+   [
+    "A",
+    "ما عليه. المدير يبيه قبل الساعة أربع",
+    "ma ʿalēh. il-mudīr yabīh gabil is-sāʿa arbaʿ",
+    "Never mind. The manager wants it before four."
+   ],
+   [
+    "B",
+    "زين. المفروض أسوي الأرقام، صح؟",
+    "zēn. il-mafrūẓ asawwi l-argām, ṣaḥḥ?",
+    "OK. I'm supposed to do the figures, right?"
+   ],
+   [
+    "A",
+    "هيه، وأنا أكتب الإيميل حق المدير",
+    "hē, w ana aktib il-īmēl ḥagg il-mudīr",
+    "Yes, and I'll write the email to the manager."
+   ],
+   [
+    "B",
+    "ماشي. طرشي لي الملف الحين",
+    "māshi. ṭarrshī-li l-malaff il-ḥīn",
+    "OK. Send me the file now."
+   ]
+  ],
+  "items": [
+   [
+    "المفروض",
+    "il-mafrūẓ",
+    "supposed to, should",
+    "من المفترض",
+    "it never changes: il-mafrūẓ trūḥ = you're supposed to go; il-mafrūẓ arūḥ = I'm supposed to go"
+   ],
+   [
+    "كان المفروض",
+    "kān il-mafrūẓ",
+    "should have, was supposed to",
+    "كان من المفترض",
+    "kān il-mafrūẓ trūḥ = you should have gone"
+   ],
+   [
+    "المفروض أسوي",
+    "il-mafrūẓ asawwi",
+    "I'm supposed to do, I should do",
+    "من المفترض أن أعمل",
+    ""
+   ],
+   [
+    "غيروا الموعد",
+    "ghayyaraw il-mawʿid",
+    "they changed the date, they moved the deadline",
+    "غيروا الموعد",
+    "il-mawʿid = the appointment, the agreed time"
+   ],
+   [
+    "ما قالوا لك؟",
+    "ma gālaw-lak?",
+    "didn't they tell you? (to a man)",
+    "ألم يقولوا لك؟",
+    "to a woman: ma gālaw-lich? (ما قالوا لج؟)"
+   ],
+   [
+    "المدير يبيه",
+    "il-mudīr yabīh",
+    "the manager wants it",
+    "المدير يريده",
+    "a feminine thing: yabīha (يبيها)"
+   ],
+   [
+    "قبل الساعة أربع",
+    "gabil is-sāʿa arbaʿ",
+    "before four (o'clock)",
+    "قبل الساعة الرابعة",
+    ""
+   ],
+   [
+    "الأرقام",
+    "il-argām",
+    "the figures, the numbers",
+    "الأرقام",
+    "one number: ragam (رقم)"
+   ],
+   [
+    "أكتب الإيميل",
+    "aktib il-īmēl",
+    "I write the email, I'll write the email",
+    "أكتب البريد الإلكتروني",
+    "you write: tiktib (تكتب); I wrote: kitabt"
+   ]
+  ]
+ },
+ {
+  "id": "s3u053",
+  "stage": 3,
+  "title": "You don't have to bring anything",
+  "goal": "Sēf passes on his uncle's dinner invitation: find out what you don't have to do and what you mustn't do",
+  "tip": "mub lāzim + verb usually means 'you don't have to': mub lāzim tyīb shay 'no need to bring anything'. To forbid something, put ma after lāzim: lāzim ma titʼakhkhar 'you mustn't be late'. mub lāzim can also mean 'better not', so lāzim ma is the clear way to say 'mustn't'.",
+  "grammar": "mub lāzim 'don't have to' vs lāzim ma 'mustn't'",
+  "dialogue": [
+   [
+    "A",
+    "عمي بو راشد عازمنا على العشا يوم الخميس",
+    "ʿammi Bū Rāshid ʿāzimna ʿala l-ʿasha yōm il-khamīs",
+    "My uncle Bū Rāshid has invited us to dinner on Thursday."
+   ],
+   [
+    "B",
+    "حلو! لازم أييب شي وياي؟",
+    "ḥilu! lāzim ayīb shay wiyyāy?",
+    "Great! Do I need to bring anything?"
+   ],
+   [
+    "A",
+    "لا، مب لازم تييب شي. بس تعال",
+    "la, mub lāzim tyīb shay. bas taʿāl",
+    "No, you don't have to bring anything. Just come."
+   ],
+   [
+    "B",
+    "وشو ألبس؟ لازم كندورة؟",
+    "w shu albas? lāzim kandūra?",
+    "And what do I wear? Do I have to wear a kandura?"
+   ],
+   [
+    "A",
+    "مب لازم. البس شي محترم وبس",
+    "mub lāzim. ilbas shay miḥtaram w bas",
+    "No need. Just wear something smart."
+   ],
+   [
+    "B",
+    "زين. وفي شي لازم ما أسويه؟",
+    "zēn. w fī shay lāzim ma asawwīh?",
+    "OK. And is there anything I mustn't do?"
+   ],
+   [
+    "A",
+    "لازم ما تتأخر. عمي ما يحب التأخير",
+    "lāzim ma titʼakhkhar. ʿammi ma yḥibb it-taʼkhīr",
+    "You mustn't be late. My uncle doesn't like people being late."
+   ],
+   [
+    "B",
+    "لا تخاف، بكون هناك قبلك!",
+    "la tkhāf, bakūn hnāk gablak!",
+    "Don't worry, I'll be there before you!"
+   ]
+  ],
+  "items": [
+   [
+    "مب لازم",
+    "mub lāzim",
+    "no need, (you) don't have to",
+    "ليس من الضروري",
+    "Kuwait: mū lāzim (مو لازم)"
+   ],
+   [
+    "مب لازم تييب شي",
+    "mub lāzim tyīb shay",
+    "you don't have to bring anything (to a man)",
+    "لا داعي أن تحضر شيئًا",
+    "to a woman: mub lāzim tyībīn shay (مب لازم تييبين شي)"
+   ],
+   [
+    "لازم ما",
+    "lāzim ma",
+    "(you) mustn't",
+    "يجب ألا",
+    "lāzim ma ninsa = we mustn't forget"
+   ],
+   [
+    "لازم ما تتأخر",
+    "lāzim ma titʼakhkhar",
+    "you mustn't be late (to a man)",
+    "يجب ألا تتأخر",
+    "to a woman: lāzim ma titʼakhkharīn (لازم ما تتأخرين)"
+   ],
+   [
+    "عازمنا",
+    "ʿāzimna",
+    "(he's) invited us",
+    "دعانا",
+    "he's invited me: ʿāzimni (عازمني)"
+   ],
+   [
+    "لازم أييب شي؟",
+    "lāzim ayīb shay?",
+    "do I need to bring anything?",
+    "هل يجب أن أحضر شيئًا؟",
+    ""
+   ],
+   [
+    "شي محترم",
+    "shay miḥtaram",
+    "something smart, something decent (to wear)",
+    "شيء محترم",
+    "miḥtaram = respectable, decent: rayyāl miḥtaram = a decent man"
+   ],
+   [
+    "التأخير",
+    "it-taʼkhīr",
+    "being late, delays",
+    "التأخير",
+    ""
+   ],
+   [
+    "بكون هناك",
+    "bakūn hnāk",
+    "I'll be there",
+    "سأكون هناك",
+    ""
+   ]
+  ],
+  "culture": "Guests aren't expected to bring anything to a majlis dinner, but turning up on time and dressed neatly matters. A visitor from abroad isn't expected to wear a kandūra; smart, modest clothes are fine. If you can't come after all, tell your host in good time."
+ },
+ {
+  "id": "s3u054",
+  "stage": 3,
+  "title": "It's not ḥarām, it's ʿēb",
+  "goal": "At the door of Bū Rāshid's majlis, ask Sēf what's polite and what's rude",
+  "tip": "ʿēb + a present verb means 'it's rude to': ʿēb tmidd ryūlak ṣōb in-nās 'it's rude to stretch your legs out towards people'. ʿēb is about manners: people will think you weren't brought up well. ḥarām is about religion: Islam forbids it. So a thing can be mub ḥarām, bas ʿēb.",
+  "grammar": "ʿēb + verb 'it's rude to'; ʿēb (manners) vs ḥarām (religion)",
+  "dialogue": [
+   [
+    "A",
+    "قبل لا ندش، النعال نخليها برا",
+    "gabil la ndishsh, in-niʿāl nkhallīha barra",
+    "Before we go in: we leave our shoes outside."
+   ],
+   [
+    "B",
+    "أكيد. وأسلم على منو أول؟",
+    "akīd. w asallim ʿala minu awwal?",
+    "Sure. And who do I greet first?"
+   ],
+   [
+    "A",
+    "على عمي أول، هو الكبير",
+    "ʿala ʿammi awwal, huwa l-kbīr",
+    "My uncle first, he's the eldest."
+   ],
+   [
+    "B",
+    "زين. وفي شي عيب لازم أعرفه؟",
+    "zēn. w fī shay ʿēb lāzim aʿarfah?",
+    "OK. And is there anything rude I should know about?"
+   ],
+   [
+    "A",
+    "هيه، عيب تمد ريولك صوب الناس",
+    "hē, ʿēb tmidd ryūlak ṣōb in-nās",
+    "Yes, it's rude to stretch your legs out towards people."
+   ],
+   [
+    "B",
+    "ليش؟ حرام؟",
+    "lēsh? ḥarām?",
+    "Why? Is it ḥarām?"
+   ],
+   [
+    "A",
+    "مب حرام، بس عيب. الكبار ما يحبونه",
+    "mub ḥarām, bas ʿēb. il-kbār ma yḥibbūnah",
+    "It's not ḥarām, it's just bad manners. Older people don't like it."
+   ],
+   [
+    "B",
+    "فهمت. والقهوة آخذها باليمين",
+    "fhimt. w il-gahwa ākhidh-ha bil-yamīn",
+    "Got it. And I take the coffee with my right hand."
+   ]
+  ],
+  "items": [
+   [
+    "عيب",
+    "ʿēb",
+    "rude, bad manners; shameful",
+    "عيب",
+    "ʿēb ʿalēk! = shame on you! (to a man; to a woman: ʿēb ʿalēch); strong, said to children"
+   ],
+   [
+    "حرام",
+    "ḥarām",
+    "forbidden (by religion), a sin",
+    "حرام",
+    "allowed (by religion): ḥalāl (حلال); ḥarām ʿalēk = that's not fair"
+   ],
+   [
+    "مب حرام، بس عيب",
+    "mub ḥarām, bas ʿēb",
+    "it's not forbidden, it's just rude",
+    "ليس حرامًا لكنه عيب",
+    ""
+   ],
+   [
+    "عيب تمد ريولك",
+    "ʿēb tmidd ryūlak",
+    "it's rude to stretch your legs out (to a man)",
+    "من العيب أن تمد رجليك",
+    "to a woman: ʿēb tmiddīn ryūlich (عيب تمدين ريولج)"
+   ],
+   [
+    "النعال",
+    "in-niʿāl",
+    "shoes, sandals",
+    "الأحذية",
+    "your shoes: niʿālak (نعالك)"
+   ],
+   [
+    "نخليها برا",
+    "nkhallīha barra",
+    "we leave them outside (shoes, things)",
+    "نتركها في الخارج",
+    "a masculine thing: nkhallīh barra (نخليه برا)"
+   ],
+   [
+    "أسلم على منو؟",
+    "asallim ʿala minu?",
+    "who do I greet? who do I say hello to?",
+    "على من أسلم؟",
+    ""
+   ],
+   [
+    "هو الكبير",
+    "huwa l-kbīr",
+    "he's the eldest, he's the senior one",
+    "هو الأكبر",
+    "she's the eldest: hiya l-kbīra (هي الكبيرة)"
+   ],
+   [
+    "باليمين",
+    "bil-yamīn",
+    "with the right hand",
+    "باليد اليمنى",
+    "with the left: bil-yasār (باليسار)"
+   ]
+  ],
+  "culture": "Majlis manners: shoes off at the door, greet the host and the eldest first, stand up when an older man comes in, and take and pass coffee with your right hand. Don't point the soles of your feet at anyone. ʿēb is the word parents use to teach all this, and ʿēb ʿalēk! 'shame on you!' is what children hear. Said to an adult, it's a strong rebuke."
+ },
+ {
+  "id": "s3u055",
+  "stage": 3,
+  "title": "Maghrib at the mosque",
+  "goal": "Stop at a mosque with Sēf for the maghrib prayer: wudu, shoes, phone and what not to do",
+  "tip": "Mosque rules use this block's forms: lāzim ma tmurr jiddām ḥad yṣalli 'you mustn't walk in front of anyone praying', ma yṣīr yrinn 'it mustn't ring'. New words: atwaẓẓa 'I do wudu', ʿala ṣ-ṣāmit 'on silent', ir-raff 'the shelf'.",
+  "grammar": "recycle: lāzim ma, ma yṣīr (mosque rules)",
+  "dialogue": [
+   [
+    "A",
+    "أذن المغرب. نصلي في هالمسجد؟",
+    "adhdhan il-maghrib. nṣalli fi hal-masjid?",
+    "That's the call for maghrib. Shall we pray at this mosque?"
+   ],
+   [
+    "B",
+    "يلا. بس لازم أتوضى أول",
+    "yalla. bas lāzim atwaẓẓa awwal",
+    "Let's. But I need to do wudu first."
+   ],
+   [
+    "A",
+    "عادي، في مكان للوضوء ورا المسجد",
+    "ʿādi, fī makān lil-wuẓūʼ wara l-masjid",
+    "No problem, there's a place for wudu behind the mosque."
+   ],
+   [
+    "B",
+    "زين. ووين نخلي النعال؟",
+    "zēn. w wēn nkhalli n-niʿāl?",
+    "OK. And where do we leave our shoes?"
+   ],
+   [
+    "A",
+    "في الرف يم الباب. وتلفونك خله على الصامت",
+    "fi r-raff yamm il-bāb. w tilifōnak khallah ʿala ṣ-ṣāmit",
+    "On the rack by the door. And put your phone on silent."
+   ],
+   [
+    "B",
+    "صح، ما يصير يرن والناس يصلون",
+    "ṣaḥḥ, ma yṣīr yrinn w in-nās yṣallūn",
+    "Right, it mustn't ring while people are praying."
+   ],
+   [
+    "A",
+    "وانتبه، لازم ما تمر قدام حد يصلي",
+    "w intibih, lāzim ma tmurr jiddām ḥad yṣalli",
+    "And careful: you mustn't walk in front of anyone who's praying."
+   ],
+   [
+    "B",
+    "إن شاء الله. يلا، الإمام بدا!",
+    "in shāʼ allāh. yalla, il-imām bada!",
+    "I won't. Come on, the imam's started!"
+   ]
+  ],
+  "items": [
+   [
+    "المسجد",
+    "il-masjid",
+    "the mosque",
+    "المسجد",
+    "UAE also: il-masīd (المسيد); this mosque: hal-masjid"
+   ],
+   [
+    "حد يصلي",
+    "ḥad yṣalli",
+    "someone praying, anyone who's praying",
+    "أحد يصلي",
+    "ḥad = anyone, someone; nobody: maḥḥad (محد)"
+   ],
+   [
+    "أتوضى",
+    "atwaẓẓa",
+    "I do wudu, I wash for prayer",
+    "أتوضأ",
+    "he does wudu: yitwaẓẓa (يتوضى); you'll see written اتوضا"
+   ],
+   [
+    "الوضوء",
+    "il-wuẓūʼ",
+    "wudu, the washing before prayer",
+    "الوضوء",
+    "makān lil-wuẓūʼ = a place for wudu"
+   ],
+   [
+    "الرف",
+    "ir-raff",
+    "the shelf, the (shoe) rack",
+    "الرف",
+    ""
+   ],
+   [
+    "على الصامت",
+    "ʿala ṣ-ṣāmit",
+    "on silent (a phone)",
+    "على الوضع الصامت",
+    "tilifōnak khallah ʿala ṣ-ṣāmit = put your phone on silent (to a man); to a woman: tilifōnich khallīh ʿala ṣ-ṣāmit"
+   ],
+   [
+    "يرن",
+    "yrinn",
+    "it rings (a phone)",
+    "يرن",
+    "tilifōnak yrinn = your phone's ringing"
+   ],
+   [
+    "تمر قدام",
+    "tmurr jiddām",
+    "you walk in front of, you pass in front of (to a man)",
+    "تمر أمام",
+    "to a woman: tmurrīn jiddām (تمرين قدام)"
+   ],
+   [
+    "الإمام",
+    "il-imām",
+    "the imam (who leads the prayer)",
+    "الإمام",
+    ""
+   ]
+  ],
+  "culture": "In a mosque, shoes go on the rack by the door, phones go on silent and voices stay low. Women pray in their own section, often with its own entrance. Most mosques have a washing area for wudu. If the prayer has started, join a row quietly, and never walk in front of someone who is praying. Afterwards people often say tagabbal allāh to each other."
+ },
+ {
+  "id": "s3u056",
+  "stage": 3,
+  "title": "It needs more time",
+  "goal": "Tell Maryam what the project still needs before it goes to the manager",
+  "tip": "yabā-lah + a noun means 'it needs': il-mashrūʿ yabā-lah wagt 'the project needs time'. The ending shows who or what needs it: yabā-lha for a feminine noun or plural things, yabā-li 'I need', yabā-lak 'you need'. ma yabā-lah means 'there's no need'.",
+  "grammar": "yabā-lah + noun 'it needs' (UAE)",
+  "dialogue": [
+   [
+    "A",
+    "المشروع جاهز؟ المدير يبيه باكر",
+    "il-mashrūʿ jāhiz? il-mudīr yabīh bāchir",
+    "Is the project ready? The manager wants it tomorrow."
+   ],
+   [
+    "B",
+    "لا، للحين. يباله وقت شوي",
+    "la, lil-ḥīn. yabā-lah wagt shwayy",
+    "No, not yet. It needs a bit more time."
+   ],
+   [
+    "A",
+    "شو يباله بالضبط؟",
+    "shu yabā-lah biẓ-ẓabṭ?",
+    "What does it need, exactly?"
+   ],
+   [
+    "B",
+    "العرض يباله صور، والأرقام يبالها مراجعة",
+    "il-ʿarẓ yabā-lah ṣuwar, w il-argām yabā-lha murājaʿa",
+    "The presentation needs pictures, and the figures need checking."
+   ],
+   [
+    "A",
+    "زين، الصور علي. وشو يبالك بعد؟",
+    "zēn, iṣ-ṣuwar ʿalay. w shu yabā-lak baʿad?",
+    "OK, leave the pictures to me. What else do you need?"
+   ],
+   [
+    "B",
+    "يبالي يومين بس. نطرش للمدير إيميل؟",
+    "yabā-li yōmēn bas. nṭarrish lil-mudīr īmēl?",
+    "I just need two days. Shall we email the manager?"
+   ],
+   [
+    "A",
+    "ما يباله، أنا بكلمه. انت خلص الأرقام",
+    "ma yabā-lah, ana bakallmah. inta khalliṣ il-argām",
+    "No need, I'll talk to him. You finish the figures."
+   ],
+   [
+    "B",
+    "ماشي. وطرشي لي الصور أول ما تخلصين",
+    "māshi. w ṭarrshī-li ṣ-ṣuwar awwal ma tkhallṣīn",
+    "OK. And send me the pictures as soon as you're done."
+   ]
+  ],
+  "items": [
+   [
+    "يباله",
+    "yabā-lah",
+    "(it) needs",
+    "يحتاج إلى",
+    "for a feminine noun or plural things: yabā-lha (يبالها); Kuwait: yabī-lah (يبيله)"
+   ],
+   [
+    "يباله وقت",
+    "yabā-lah wagt",
+    "it needs time, it'll take a while",
+    "يحتاج إلى وقت",
+    ""
+   ],
+   [
+    "يبالها",
+    "yabā-lha",
+    "(it) needs (a feminine noun); (they) need (things)",
+    "تحتاج إلى",
+    "for a masculine noun: yabā-lah (يباله)"
+   ],
+   [
+    "يبالي",
+    "yabā-li",
+    "I need",
+    "أحتاج إلى",
+    "you need: yabā-lak (to a man), yabā-lich (to a woman) (يبالج)"
+   ],
+   [
+    "ما يباله",
+    "ma yabā-lah",
+    "no need, there's no need",
+    "لا داعي",
+    "ma yabā-lah tgūl-lah = no need to tell him"
+   ],
+   [
+    "شو يباله؟",
+    "shu yabā-lah?",
+    "what does it need?",
+    "ماذا يحتاج؟",
+    ""
+   ],
+   [
+    "مراجعة",
+    "murājaʿa",
+    "checking, a review",
+    "مراجعة",
+    ""
+   ],
+   [
+    "الصور علي",
+    "iṣ-ṣuwar ʿalay",
+    "leave the pictures to me",
+    "سأتولى الصور",
+    "X ʿalay = leave X to me, I'll take care of X"
+   ],
+   [
+    "يومين بس",
+    "yōmēn bas",
+    "just two days",
+    "يومان فقط",
+    ""
+   ]
+  ]
+ }
+]

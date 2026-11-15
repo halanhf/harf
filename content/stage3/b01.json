@@ -1,0 +1,325 @@
+[
+ {
+  "id": "s3u001",
+  "stage": 3,
+  "title": "On my way: participles of going and coming",
+  "goal": "On the phone, tell Sēf you're leaving the office and on your way, and hear that his cousin is flying back to London",
+  "tip": "A participle is a verb used like an adjective: it agrees (ṭāliʿ, ṭālʿa, ṭālʿīn) and takes mub, not ma. From a verb of going or coming it means 'on my way, about to': ana ṭāliʿ il-ḥīn 'I'm leaving now'; wild ʿammi rājiʿ Landan bāchir 'my cousin's going back to London tomorrow'.",
+  "grammar": "Active participles I: going and coming verbs for now and soon (ṭāliʿ, rājiʿ, nāzil; recycle rāyiḥ, yāy)",
+  "dialogue": [
+   ["A", "ألو، وينك؟ نحن في المول من ساعة!", "alō, wēnak? niḥin fi l-mōl min sāʿa!", "Hello, where are you? We've been at the mall for an hour!"],
+   ["B", "آسف، أنا طالع من المكتب الحين", "āsif, ana ṭāliʿ min il-maktab il-ḥīn", "Sorry, I'm just leaving the office now."],
+   ["A", "يلا بسرعة! ولد عمي راجع لندن باكر الصبح", "yalla b-surʿa! wild ʿammi rājiʿ Landan bāchir iṣ-ṣubḥ", "Hurry up! My cousin's going back to London tomorrow morning."],
+   ["B", "والله؟ زين، أنا ياي بالمترو. ربع ساعة بس", "wallāh? zēn, ana yāy bil-mitrō. rubʿ sāʿa bas", "Really? OK, I'm coming on the metro. Just a quarter of an hour."],
+   ["A", "ماشي. نحن نازلين تحت عند المطاعم", "māshi. niḥin nāzlīn taḥt ʿind il-maṭāʿim", "OK. We're heading downstairs, to the restaurants."],
+   ["B", "زين عيل. وطيارته الساعة كم؟", "zēn ʿayal. w ṭayyārtah is-sāʿa cham?", "Fine then. And what time's his flight?"],
+   ["A", "الساعة تسع. أول ما توصل، دق علي", "is-sāʿa tisʿ. awwal ma tōṣal, digg ʿalay", "At nine. Ring me as soon as you get here."]
+  ],
+  "items": [
+   ["أنا طالع", "ana ṭāliʿ", "I'm leaving, I'm heading out (said by a man)", "أنا خارج", "a woman says: ana ṭālʿa (أنا طالعة); ana ṭāliʿ il-ḥīn = I'm just leaving"],
+   ["راجع", "rājiʿ", "going back, on his way back; (he's) back (a man)", "عائد", "a woman: rājʿa (راجعة); a group: rājʿīn (راجعين)"],
+   ["نازلين", "nāzlīn", "going down, heading downstairs (a group, or 'we')", "نازلون", "one man: nāzil (نازل); one woman: nāzla (نازلة)"],
+   ["دق علي", "digg ʿalay", "ring me, give me a call (to a man)", "اتصل بي", "to a woman: diggī ʿalay (دقي علي)"],
+   ["من ساعة", "min sāʿa", "for an hour (now); an hour ago", "منذ ساعة", "like min yōmēn: for two days (now)"],
+   ["ربع ساعة", "rubʿ sāʿa", "a quarter of an hour", "ربع ساعة", "half an hour: nuṣṣ sāʿa (نص ساعة)"],
+   ["يلا بسرعة", "yalla b-surʿa", "hurry up! quick!", "هيا بسرعة", ""],
+   ["طيارته", "ṭayyārtah", "his flight, his plane", "طائرته", "my flight: ṭayyārti (طيارتي); the plane: iṭ-ṭayyāra (الطيارة)"],
+   ["الساعة تسع", "is-sāʿa tisʿ", "nine o'clock, at nine", "الساعة التاسعة", "counting: tisʿa (تسعة); at seven: is-sāʿa sabʿ"]
+  ]
+ },
+ {
+  "id": "s3u002",
+  "stage": 3,
+  "title": "Flying tonight: participles for plans",
+  "goal": "At the office, ask Maryam about her trip, say you're not going away, and wish her a safe journey",
+  "tip": "A participle with a time word is a plan: msāfir il-lēla 'flying tonight'. It agrees with the person: msāfir (a man), msāfra (a woman), msāfrīn (a group, or 'we'). For 'not', use mub: mub msāfir 'I'm not going away'.",
+  "grammar": "Active participles II: plans and the near future, with the -a and -īn forms (msāfra, rāyḥīn, mub msāfir)",
+  "culture": "Someone setting off on a trip is wished tōṣal bis-salāma (to a woman tōṣalīn), 'may you arrive safely', and answers allāh ysallmak. When they come back, greet them with il-ḥamdu lillāh ʿala s-salāma.",
+  "dialogue": [
+   ["B", "صباح الخير مريم. شو هالشنطة؟ مسافرة؟", "ṣabāḥ il-khēr Maryam. shu hash-shanṭa? msāfra?", "Good morning, Maryam. What's this bag? Are you going away?"],
+   ["A", "صباح النور. هيه، مسافرين الليلة، أنا وأهلي", "ṣabāḥ in-nūr. hē, msāfrīn il-lēla, ana w ahli", "Good morning. Yes, we're flying tonight, my family and I."],
+   ["B", "ما شاء الله! وين رايحين؟", "mā shāʼ allāh! wēn rāyḥīn?", "How lovely! Where are you going?"],
+   ["A", "صلالة، عند خالتي. وانت؟ مسافر في الإجازة؟", "Ṣalāla, ʿind khālti. w inta? msāfir fi l-ijāza?", "Salalah, to my aunt's. And you? Are you going away for the holiday?"],
+   ["B", "لا، مب مسافر. أهلي يايين دبي. وانتي متى راجعة؟", "la, mub msāfir. ahli yāyīn Dbayy. w inti mita rājʿa?", "No, I'm not going away. My family's coming to Dubai. And when are you back?"],
+   ["A", "يوم الأحد إن شاء الله. سلم لي على أهلك!", "yōm il-aḥad in shāʼ allāh. sallim-li ʿala ahlak!", "On Sunday, God willing. Give my regards to your family!"],
+   ["B", "إن شاء الله. توصلين بالسلامة!", "in shāʼ allāh. tōṣalīn bis-salāma!", "I will. Have a safe trip!"],
+   ["A", "الله يسلمك. مع السلامة", "allāh ysallmak. maʿa s-salāma", "Thank you. Bye."]
+  ],
+  "items": [
+   ["مسافرة؟", "msāfra?", "are you going away? are you travelling? (to a woman)", "هل أنتِ مسافرة؟", "to a man: msāfir? (مسافر؟)"],
+   ["مسافرين", "msāfrīn", "travelling, flying (a group, or 'we')", "مسافرون", "msāfrīn il-lēla = we're flying tonight"],
+   ["وين رايحين؟", "wēn rāyḥīn?", "where are you going? (to a group)", "إلى أين أنتم ذاهبون؟", "to one man: wēn rāyiḥ? (وين رايح؟); to one woman: wēn rāyḥa? (وين رايحة؟)"],
+   ["عند خالتي", "ʿind khālti", "at my aunt's (my mother's sister)", "عند خالتي", "at my father's sister's: ʿind ʿammti (عند عمتي)"],
+   ["مب مسافر", "mub msāfir", "I'm not going away, I'm not travelling (said by a man)", "لست مسافرًا", "a woman says: mub msāfra (مب مسافرة)"],
+   ["متى راجعة؟", "mita rājʿa?", "when are you back? (to a woman)", "متى ستعودين؟", "to a man: mita rājiʿ? (متى راجع؟)"],
+   ["توصلين بالسلامة", "tōṣalīn bis-salāma", "have a safe trip (to a woman; lit. may you arrive safely)", "تصلين بالسلامة", "to a man: tōṣal bis-salāma (توصل بالسلامة); reply: allāh ysallmak, to a woman allāh ysallmich"],
+   ["في الإجازة", "fi l-ijāza", "on holiday, for the holiday, in the break", "في الإجازة", ""],
+   ["هالشنطة", "hash-shanṭa", "this bag", "هذه الحقيبة", ""]
+  ]
+ },
+ {
+  "id": "s3u003",
+  "stage": 3,
+  "title": "Do you know where it is? ʿārif, fāhim, shāyif",
+  "goal": "In a university corridor, ask Sēf what he knows and can see, using the participles ʿārif, fāhim and shāyif",
+  "tip": "From verbs of knowing and seeing, the participle is a state right now: ʿārif 'I know', fāhim 'I understand', shāyif 'I can see'. Negate it with mub: mub ʿārif 'I don't know'. Your ma aʿarf and ma adri still say the same thing.",
+  "grammar": "Active participles III: knowing and seeing verbs for a present state (ʿārif, fāhim, shāyif)",
+  "dialogue": [
+   ["B", "سيف، انت عارف وين المحاضرة اليوم؟", "Sēf, inta ʿārif wēn il-muḥāẓra l-yōm?", "Sēf, do you know where the lecture is today?"],
+   ["A", "لا، مب عارف. بس شايف هذاك الريّال؟", "la, mub ʿārif. bas shāyif hādhāk ir-rayyāl?", "No, I don't. But do you see that man?"],
+   ["B", "هيه، شايفه. منو هو؟", "hē, shāyfah. minu huwa?", "Yes, I can see him. Who is he?"],
+   ["A", "هذا الدكتور حقنا. هو عارف كل شي", "hādha d-daktōr ḥaggna. huwa ʿārif kill shay", "That's our lecturer. He knows everything."],
+   ["B", "زين، بسأله. بس ترا أنا مب فاهم المادة", "zēn, basʼalah. bas tara ana mub fāhim il-māda", "OK, I'll ask him. But honestly, I don't understand the module."],
+   ["A", "عادي، محد فاهم شي! حتى أنا", "ʿādi, maḥḥad fāhim shay! ḥatta ana", "Don't worry, nobody understands a thing! Me included."],
+   ["B", "عيل خلنا نذاكر ويا بعض", "ʿayal khallna ndhākir wiyya baʿaẓ", "Then let's revise together."],
+   ["A", "فكرة حلوة. بس انت عارف، أنا كسلان!", "fikra ḥilwa. bas inta ʿārif, ana kaslān!", "Good idea. But you know I'm lazy!"]
+  ],
+  "items": [
+   ["انت عارف؟", "inta ʿārif?", "do you know? (to a man)", "هل تعرف؟", "to a woman: inti ʿārfa? (انتي عارفة؟)"],
+   ["مب عارف", "mub ʿārif", "I don't know (said by a man)", "لا أعرف", "a woman says: mub ʿārfa (مب عارفة); ma aʿarf and ma adri mean the same"],
+   ["شايف", "shāyif", "(can) see, seeing; do you see? (a man)", "يرى", "a woman: shāyfa (شايفة); shāyfah = I can see him"],
+   ["عارف كل شي", "ʿārif kill shay", "(he) knows everything", "يعرف كل شيء", "a woman: ʿārfa kill shay"],
+   ["حقنا", "ḥaggna", "our, ours", "لنا", "yours (to a group): ḥaggkum (حقكم)"],
+   ["بسأله", "basʼalah", "I'll ask him", "سأسأله", "I'll ask her: basʼalha (بسألها)"],
+   ["محد فاهم", "maḥḥad fāhim", "nobody understands (it), nobody gets it", "لا أحد يفهم", "maḥḥad fāhim shay = nobody understands a thing"],
+   ["حتى أنا", "ḥatta ana", "even me, me included; me neither (after a negative)", "حتى أنا", ""],
+   ["نذاكر", "ndhākir", "we revise, let's revise (for an exam)", "نذاكر / نراجع", "I revise: adhākir (أذاكر)"]
+  ]
+ },
+ {
+  "id": "s3u004",
+  "stage": 3,
+  "title": "I've already eaten: participles for what's done",
+  "goal": "At Bū Rāshid's majlis, say politely that you've already had dinner, accept a little, and tell him you've passed your exams",
+  "tip": "From verbs of doing, the participle says something is done and still true now: ana mitʿashshi 'I've (already) had dinner', il-ahal msawwīn harīs 'the family have made harees', nājiḥ '(I've) passed'. It agrees like an adjective: msawwi, msawwya, msawwīn.",
+  "grammar": "Active participles IV: doing verbs for a finished action (mitʿashshi, msawwi, nājiḥ)",
+  "culture": "A host keeps offering food, and a guest who has already eaten can say ana mitʿashshi once, then accept a little. Older men often say il-ahal, 'the family', for the people at home rather than naming their wife.",
+  "dialogue": [
+   ["A", "حياك الله يا ولدي. تفضل، العشا جاهز", "ḥayyāk allāh yā wildi. tfaẓẓal, il-ʿasha jāhiz", "Welcome, son. Come in, dinner's ready."],
+   ["B", "الله يحييك يا عمي. بس والله أنا متعشي", "allāh yḥayyīk yā ʿammi. bas wallāh ana mitʿashshi", "Thank you, uncle. But honestly, I've already had dinner."],
+   ["A", "متعشي؟ ما يصير! الأهل مسوين هريس عشانك", "mitʿashshi? ma yṣīr! il-ahal msawwīn harīs ʿashānak", "Had dinner? That won't do! The family have made harees for you."],
+   ["B", "ما قصرت يا عمي. بس شوي، أنا شبعان", "mā gaṣṣart yā ʿammi. bas shwayy, ana shabʿān", "That's very kind, uncle. Just a little, then; I'm full."],
+   ["A", "زين. وشو مسوي في الامتحانات؟", "zēn. w shu msawwi fi l-imtiḥānāt?", "Good. And how have you done in your exams?"],
+   ["B", "الحمد لله، ناجح في كل المواد", "il-ḥamdu lillāh, nājiḥ fi kill il-mawādd", "Thank God, I've passed all my modules."],
+   ["A", "ما شاء الله عليك! وسيف؟ شو مسوي؟", "mā shāʼ allāh ʿalēk! w Sēf? shu msawwi?", "Well done! And Sēf? How has he done?"],
+   ["B", "سيف بعد ناجح. وهو ياي الحين", "Sēf baʿad nājiḥ. w huwa yāy il-ḥīn", "Sēf's passed too. And he's on his way now."]
+  ],
+  "items": [
+   ["أنا متعشي", "ana mitʿashshi", "I've (already) had dinner (said by a man)", "تعشيت", "a woman says: ana mitʿashshya (أنا متعشية); had lunch: mitghaddi (متغدي)"],
+   ["مسوين", "msawwīn", "have made, have done (a group, or 'we')", "صنعوا / عملوا", "one man: msawwi (مسوي); one woman: msawwya (مسوية)"],
+   ["شبعان", "shabʿān", "full (after eating) (a man)", "شبعان", "a woman: shabʿāna (شبعانة)"],
+   ["شو مسوي؟", "shu msawwi?", "how have you done? what have you been up to? (to a man)", "ماذا فعلت؟", "to a woman: shu msawwya? (شو مسوية؟)"],
+   ["ناجح", "nājiḥ", "(has) passed; successful (a man)", "ناجح", "a woman: nājḥa (ناجحة)"],
+   ["في كل المواد", "fi kill il-mawādd", "in all the modules, in every subject", "في كل المواد", "one module: il-māda (المادة)"],
+   ["العشا جاهز", "il-ʿasha jāhiz", "dinner's ready", "العشاء جاهز", "lunch is ready: il-ghada jāhiz (الغدا جاهز)"],
+   ["الأهل", "il-ahal", "the family, the people at home", "الأهل", "my family: ahli (أهلي)"]
+  ]
+ },
+ {
+  "id": "s3u005",
+  "stage": 3,
+  "title": "Still in bed! nāyim, ṣāḥi, wāgif",
+  "goal": "Phone Sēf, who has overslept, while you and Fahad wait outside, using participles for the state someone is in",
+  "tip": "Some participles describe the state someone is in: nāyim 'asleep, in bed', ṣāḥi 'awake', wāgif 'standing'. There's no word for 'is': ana lil-ḥīn nāyim 'I'm still in bed', niḥin wāgfīn barra 'we're standing outside'.",
+  "grammar": "Active participles V: states (nāyim, ṣāḥi, wāgif); no 'is' before them",
+  "dialogue": [
+   ["B", "ألو سيف؟ وينك؟ أنا وفهد واقفين برا", "alō Sēf? wēnak? ana w Fahad wāgfīn barra", "Hello, Sēf? Where are you? Fahad and I are standing outside."],
+   ["A", "آسف يا ريّال! أنا للحين نايم", "āsif yā rayyāl! ana lil-ḥīn nāyim", "Sorry, mate! I'm still in bed."],
+   ["B", "نايم؟! صار لنا ساعة نترياك!", "nāyim?! ṣār-lna sāʿa nitrayyāk!", "In bed?! We've been waiting for you for an hour!"],
+   ["A", "سهرت لين الصبح. انتو تغديتوا؟", "sihart lēn iṣ-ṣubḥ. intu tghaddētu?", "I was up till morning. Have you had lunch?"],
+   ["B", "لا، للحين ما تغدينا. وفهد يوعان وايد!", "la, lil-ḥīn ma tghaddēna. w Fahad yōʿān wāyid!", "No, we haven't had lunch yet. And Fahad's really hungry!"],
+   ["A", "زين، أنا نازل الحين. خمس دقايق بس", "zēn, ana nāzil il-ḥīn. khams dagāyig bas", "OK, I'm coming down now. Just five minutes."],
+   ["B", "زين، بس لا تنام مرة ثانية!", "zēn, bas la tnām marra thānya!", "OK, but don't go back to sleep!"],
+   ["A", "لا تحاتي، أنا صاحي الحين والله!", "la tḥāti, ana ṣāḥi l-ḥīn wallāh!", "Don't worry, I'm awake now, honestly!"]
+  ],
+  "items": [
+   ["نايم", "nāyim", "asleep, in bed (a man)", "نائم", "a woman: nāyma (نايمة); a group: nāymīn (نايمين)"],
+   ["صاحي", "ṣāḥi", "awake, up (a man)", "مستيقظ", "a woman: ṣāḥya (صاحية)"],
+   ["واقفين", "wāgfīn", "standing (a group, or 'we')", "واقفون", "one man: wāgif (واقف); one woman: wāgfa (واقفة)"],
+   ["صار لنا ساعة", "ṣār-lna sāʿa", "we've been (here) for an hour, it's been an hour (for us)", "مرت علينا ساعة", "for me: ṣār-li sāʿa (صار لي ساعة)"],
+   ["سهرت", "sihart", "I stayed up late; you stayed up late (to a man)", "سهرت", "to a woman: siharti (سهرتي)"],
+   ["تغديتوا؟", "tghaddētu?", "have you had lunch? (to a group)", "هل تغديتم؟", "to one man: tghaddēt? (تغديت؟); to one woman: tghaddēti? (تغديتي؟)"],
+   ["ما تغدينا", "ma tghaddēna", "we haven't had lunch, we didn't have lunch", "لم نتغدَّ", "I haven't had lunch: ma tghaddēt (ما تغديت)"],
+   ["أنا نازل", "ana nāzil", "I'm coming down, I'm on my way down (said by a man)", "أنا نازل", "a woman says: ana nāzla (أنا نازلة)"],
+   ["خمس دقايق", "khams dagāyig", "five minutes", "خمس دقائق", "ten minutes: ʿashr dagāyig (عشر دقايق)"]
+  ]
+ },
+ {
+  "id": "s3u006",
+  "stage": 3,
+  "title": "A weekend in Hatta: participles with a group",
+  "goal": "Ask Sēf and Fahad about the weekend trip to Hatta: what they've booked, who's bringing what, when they set off",
+  "tip": "With a group, the participle takes -īn: rāyḥīn, ṭālʿīn, ḥājzīn. From a doing verb, it's done: ḥājzīn il-fundug 'we've booked the hotel'; Fahad mākhidh ijāza 'Fahad has taken time off'. From a going verb, it's the plan: ṭālʿīn baʿd ṣalāt il-fajr 'we're leaving after dawn prayer'.",
+  "grammar": "Active participles VI: the group form -īn, and done vs planned (ḥājzīn, mākhidh, ṭālʿīn)",
+  "culture": "In the cooler months, many people in the UAE head out of the city at weekends: to the mountains, the desert or a camp. Trips often start early, after the dawn prayer, to make the most of the day. Nights out of town can be cold, so take a jacket.",
+  "dialogue": [
+   ["B", "يا شباب، انتو رايحين حتا يوم الخميس؟", "yā shabāb, intu rāyḥīn Ḥatta yōm il-khamīs?", "Guys, are you going to Hatta on Thursday?"],
+   ["A", "هيه، رايحين. وانت ياي ويانا، صح؟", "hē, rāyḥīn. w inta yāy wiyyāna, ṣaḥḥ?", "Yes, we are. And you're coming with us, right?"],
+   ["B", "إن شاء الله. انتو حاجزين الفندق؟", "in shāʼ allāh. intu ḥājzīn il-fundug?", "God willing. Have you booked the hotel?"],
+   ["A", "حاجزين من أسبوع. وفهد ماخذ إجازة يومين", "ḥājzīn min usbūʿ. w Fahad mākhidh ijāza yōmēn", "We booked it a week ago. And Fahad's taken two days off."],
+   ["B", "حلو! أييب شي وياي؟", "ḥilu! ayīb shay wiyyāy?", "Great! Shall I bring anything?"],
+   ["A", "لا، فهد يايب كل شي. بس لا تنسى الجاكيت", "la, Fahad yāyib kill shay. bas la tinsa l-jākēt", "No, Fahad's bringing everything. Just don't forget your jacket."],
+   ["B", "ماشي. انتو طالعين الساعة كم؟", "māshi. intu ṭālʿīn is-sāʿa cham?", "OK. What time are you setting off?"],
+   ["A", "طالعين بعد صلاة الفجر. لا تكون نايم!", "ṭālʿīn baʿd ṣalāt il-fajr. la tkūn nāyim!", "We're leaving after the dawn prayer. Don't be asleep!"]
+  ],
+  "items": [
+   ["حاجزين", "ḥājzīn", "(have) booked (a group, or 'we')", "حجزنا / حجزوا", "one man: ḥājiz (حاجز); one woman: ḥājza (حاجزة)"],
+   ["ماخذ إجازة", "mākhidh ijāza", "(has) taken time off, (is) on leave (a man)", "أخذ إجازة", "a woman: mākhdha ijāza (ماخذة إجازة)"],
+   ["يايب", "yāyib", "bringing; has brought (a man)", "جالب", "a woman: yāyba (يايبة); a group: yāybīn (يايبين); you'll see written جايب"],
+   ["طالعين", "ṭālʿīn", "setting off, leaving (a group, or 'we')", "خارجون", "one man: ṭāliʿ (طالع); one woman: ṭālʿa (طالعة)"],
+   ["من أسبوع", "min usbūʿ", "a week ago; for a week (now)", "منذ أسبوع", "like min sāʿa"],
+   ["بعد صلاة الفجر", "baʿd ṣalāt il-fajr", "after the dawn prayer, at first light", "بعد صلاة الفجر", ""],
+   ["أييب شي وياي؟", "ayīb shay wiyyāy?", "shall I bring anything (with me)?", "هل أحضر شيئًا معي؟", ""],
+   ["يومين", "yōmēn", "two days", "يومين", "min yōmēn = for two days (now)"],
+   ["لا تكون", "la tkūn", "don't be (to a man)", "لا تكن", "la tkūn nāyim = don't be asleep; to a woman: la tkūnīn (لا تكونين)"]
+  ]
+ },
+ {
+  "id": "s3u007",
+  "stage": 3,
+  "title": "I was driving: kint gāʿid",
+  "goal": "Explain to Sēf why you missed his calls last night, saying what you were doing at the time",
+  "tip": "Put kān before gāʿid and the -ing moves into the past: kint gāʿid asūg 'I was driving'. kān changes like any past verb (kint, kān, kānat, kinna, kānaw), and gāʿid agrees too: kinna gāʿdīn nākil 'we were eating'. kān + a state works the same way: kint nāyim 'I was asleep'.",
+  "grammar": "Past progressive: kān gāʿid + present verb 'was …-ing'; kān + participle (kint nāyim)",
+  "dialogue": [
+   ["A", "وينك البارحة؟ دقيت عليك ثلاث مرات!", "wēnak il-bārḥa? daggēt ʿalēk thalāth marrāt!", "Where were you last night? I rang you three times!"],
+   ["B", "آسف، كنت قاعد أسوق. ما سمعت التلفون", "āsif, kint gāʿid asūg. ma simaʿt it-tilifōn", "Sorry, I was driving. I didn't hear the phone."],
+   ["A", "وبعدين؟ دقيت مرة ثانية الساعة تسع", "w baʿdēn? daggēt marra thānya s-sāʿa tisʿ", "And after that? I rang again at nine."],
+   ["B", "الساعة تسع كنا قاعدين ناكل في المطعم", "is-sāʿa tisʿ kinna gāʿdīn nākil fi l-maṭʿam", "At nine we were eating at the restaurant."],
+   ["A", "ويا منو؟ ليش ما قلت لي؟", "wiyya minu? lēsh ma gilt-li?", "Who with? Why didn't you tell me?"],
+   ["B", "ويا الجماعة من الشغل. وبعدها كنت نايم", "wiyya l-jamāʿa min ish-shughul. w baʿd-ha kint nāyim", "With the people from work. And after that I was asleep."],
+   ["A", "ترا كنت قاعد أترياك عشان المباراة!", "tara kint gāʿid atrayyāk ʿashān il-mubārā!", "I was waiting for you for the match, you know!"],
+   ["B", "آسف والله. المرة الياية بشوفها وياك", "āsif wallāh. il-marra l-yāya bashūfha wiyyāk", "I'm really sorry. Next time I'll watch it with you."]
+  ],
+  "items": [
+   ["كنت قاعد", "kint gāʿid", "I was (…-ing); you were (…-ing) (to a man)", "كنتُ", "a woman says: kint gāʿda (كنت قاعدة); to a woman: kinti gāʿda (كنتي قاعدة); + a present verb: kint gāʿid asūg"],
+   ["كنا قاعدين", "kinna gāʿdīn", "we were (…-ing)", "كنا", "kinna gāʿdīn nākil = we were eating"],
+   ["كنت نايم", "kint nāyim", "I was asleep; you were asleep (to a man)", "كنت نائمًا", "a woman says: kint nāyma (كنت نايمة)"],
+   ["دقيت عليك", "daggēt ʿalēk", "I rang you, I called you (to a man)", "اتصلت بك", "to a woman: daggēt ʿalēch (دقيت عليج)"],
+   ["ثلاث مرات", "thalāth marrāt", "three times", "ثلاث مرات", "twice: marratēn (مرتين)"],
+   ["ما سمعت", "ma simaʿt", "I didn't hear; you didn't hear (to a man)", "لم أسمع", "to a woman: ma simaʿti (ما سمعتي)"],
+   ["ناكل", "nākil", "we eat, we're eating", "نأكل", "I eat: ākil (آكل)"],
+   ["أترياك", "atrayyāk", "I wait for you, I'll wait for you (to a man) (UAE)", "أنتظرك", "to a woman: atrayyāch (أترياج)"],
+   ["مرة ثانية", "marra thānya", "again, another time", "مرة ثانية", "next time: il-marra l-yāya"]
+  ]
+ },
+ {
+  "id": "s3u008",
+  "stage": 3,
+  "title": "What were you doing? kān gāʿid for he, she and they",
+  "goal": "At the office, hear Maryam's story about yesterday's meeting and ask her what she was doing",
+  "tip": "kān gāʿid works for every person; both words agree: il-mudīr kān gāʿid yitkallam 'the manager was talking', kint gāʿda aktib 'I was writing (a woman)', kānaw gāʿdīn yṭālʿūnah 'they were staring at him'. To a woman: shu kinti gāʿda tsawwīn? 'what were you doing?'",
+  "grammar": "Past progressive II: kān gāʿid for every person (kān, kānat, kinti, kānaw gāʿdīn)",
+  "culture": "A Gulf story often opens with simaʿt shu ṣār? 'did you hear what happened?', and the listener keeps it going with w baʿdēn? 'and then?'. Office gossip is kept light and kind: maskīn 'poor guy' shows sympathy, not mockery.",
+  "dialogue": [
+   ["A", "سمعت شو صار أمس في الاجتماع؟", "simaʿt shu ṣār ams fi l-ijtimāʿ?", "Did you hear what happened in the meeting yesterday?"],
+   ["B", "لا، كنت قاعد أذاكر في الجامعة. شو صار؟", "la, kint gāʿid adhākir fi l-jāmʿa. shu ṣār?", "No, I was revising at university. What happened?"],
+   ["A", "المدير كان قاعد يتكلم عن المشروع", "il-mudīr kān gāʿid yitkallam ʿan il-mashrūʿ", "The manager was talking about the project."],
+   ["B", "إي، وانتي؟ شو كنتي قاعدة تسوين؟", "ī, w inti? shu kinti gāʿda tsawwīn?", "Right, and you? What were you doing?"],
+   ["A", "كنت قاعدة أكتب. والموظف اليديد كان نايم!", "kint gāʿda aktib. w il-muwaẓẓaf il-yidīd kān nāyim!", "I was taking notes. And the new guy was asleep!"],
+   ["B", "نايم؟! والمدير شافه؟", "nāyim?! w il-mudīr shāfah?", "Asleep?! And did the manager see him?"],
+   ["A", "هيه! والكل كانوا قاعدين يطالعونه", "hē! w il-kill kānaw gāʿdīn yṭālʿūnah", "Yes! And everyone was staring at him."],
+   ["B", "مسكين! أكيد كان تعبان", "maskīn! akīd kān taʿbān", "Poor guy! He must have been tired."]
+  ],
+  "items": [
+   ["كان قاعد", "kān gāʿid", "he was (…-ing)", "كان", "she was (…-ing): kānat gāʿda (كانت قاعدة); kān gāʿid yitkallam = he was talking"],
+   ["كنتي قاعدة", "kinti gāʿda", "you were (…-ing) (to a woman)", "كنتِ", "to a man: kint gāʿid (كنت قاعد)"],
+   ["كانوا قاعدين", "kānaw gāʿdīn", "they were (…-ing)", "كانوا", "we were (…-ing): kinna gāʿdīn (كنا قاعدين)"],
+   ["سمعت شو صار؟", "simaʿt shu ṣār?", "did you hear what happened? (to a man)", "هل سمعت ماذا حدث؟", "to a woman: simaʿti shu ṣār? (سمعتي شو صار؟)"],
+   ["يتكلم عن", "yitkallam ʿan", "(he) talks about, (he's) talking about", "يتكلم عن", "she talks about: titkallam ʿan (تتكلم عن)"],
+   ["الموظف اليديد", "il-muwaẓẓaf il-yidīd", "the new employee, the new guy at work", "الموظف الجديد", "a woman: il-muwaẓẓafa l-yidīda (الموظفة اليديدة)"],
+   ["شافه", "shāfah", "he saw him, he saw it (m.)", "رآه", "she saw him: shāfatah (شافته)"],
+   ["يطالعونه", "yṭālʿūnah", "(they're) looking at him, staring at him", "ينظرون إليه", "at her: yṭālʿūnha (يطالعونها)"],
+   ["مسكين", "maskīn", "poor thing, poor guy (a man)", "مسكين", "a woman: maskīna (مسكينة)"]
+  ]
+ },
+ {
+  "id": "s3u009",
+  "stage": 3,
+  "title": "Everyone started laughing: gām + verb",
+  "goal": "Tell Sēf a funny thing that happened on the metro, using gām for what people suddenly started doing",
+  "tip": "gām 'he got up' + a present verb means 'he started to, he suddenly began': gām yiẓḥak 'he burst out laughing'. gām is a past verb and agrees, and so does the verb after it: gāmat tiẓḥak 'she started laughing', gimna niẓḥak 'we started laughing'.",
+  "grammar": "Inceptive gām + present verb 'started to' (gām yiẓḥak, gāmat tiẓḥak, gimna niẓḥak)",
+  "dialogue": [
+   ["A", "شفيك تضحك؟ شو صار؟", "shfīk tiẓḥak? shu ṣār?", "What are you laughing at? What happened?"],
+   ["B", "كنت قاعد في المترو، وريّال نايم يمي", "kint gāʿid fi l-mitrō, w rayyāl nāyim yammi", "I was sitting on the metro, and a man was asleep next to me."],
+   ["A", "زين، وبعدين؟ شو سوى؟", "zēn, w baʿdēn? shu sawwa?", "OK, and then? What did he do?"],
+   ["B", "دق تلفونه، وقام يتكلم بصوت عالي", "dagg tilifōnah, w gām yitkallam b-ṣōt ʿāli", "His phone rang, and he started talking really loudly."],
+   ["A", "في المترو؟! والناس شو سووا؟", "fi l-mitrō?! w in-nās shu sawwaw?", "On the metro?! And what did people do?"],
+   ["B", "الكل قام يطالعه، وبنت صغيرة قامت تضحك", "il-kill gām yṭālʿah, w bint ṣghīra gāmat tiẓḥak", "Everyone started staring at him, and a little girl started laughing."],
+   ["A", "وانت؟ قمت تضحك بعد؟", "w inta? gimt tiẓḥak baʿad?", "And you? Did you start laughing too?"],
+   ["B", "هيه، وقمنا كلنا نضحك! حتى هو", "hē, w gimna killna niẓḥak! ḥatta huwa", "Yes, and we all started laughing! Even him."]
+  ],
+  "items": [
+   ["قام يضحك", "gām yiẓḥak", "he started laughing, he burst out laughing", "بدأ يضحك", "she started laughing: gāmat tiẓḥak (قامت تضحك)"],
+   ["قمت", "gimt", "I started (+ a verb); you started (to a man); also: I got up", "بدأت / قمت", "to a woman: gimti (قمتي); gimt aẓḥak = I started laughing"],
+   ["قمنا", "gimna", "we started (+ a verb); we got up", "بدأنا / قمنا", "they started: gāmaw (قاموا)"],
+   ["شفيك تضحك؟", "shfīk tiẓḥak?", "what are you laughing at? (to a man)", "لماذا تضحك؟", "to a woman: shfīch tiẓḥakīn? (شفيج تضحكين؟)"],
+   ["دق تلفونه", "dagg tilifōnah", "his phone rang", "رن هاتفه", "my phone rang: dagg tilifōni (دق تلفوني)"],
+   ["بصوت عالي", "b-ṣōt ʿāli", "loudly, in a loud voice", "بصوت عالٍ", "quietly: b-ṣōt wāṭi (بصوت واطي)"],
+   ["الكل", "il-kill", "everyone, everybody", "الجميع", "il-kill gām = everyone started; wēn il-kill? = where's everyone?"],
+   ["بنت صغيرة", "bint ṣghīra", "a little girl", "بنت صغيرة", "a little boy: walad ṣghīr (ولد صغير)"],
+   ["شو سووا؟", "shu sawwaw?", "what did they do?", "ماذا فعلوا؟", "what did he do? shu sawwa? (شو سوى؟)"]
+  ]
+ },
+ {
+  "id": "s3u010",
+  "stage": 3,
+  "title": "I was going to call you: kint b- + verb",
+  "goal": "Turn up late to dinner with Sēf and Fahad, apologise to the group and say what you were going to do",
+  "tip": "kān + b- + a present verb is 'was going to, was about to': kint bagūl-lak 'I was going to tell you', kinna binrūḥ 'we were about to go', kān biyrūḥ 'he was about to go'. kān agrees, and so does the verb after b-. Kuwaitis use rāḥ for b-: kint rāḥ agūl-lak.",
+  "grammar": "'Was going to': kān + b- + present verb (kint bagūl-lak, kinna binrūḥ); Kuwait: kān rāḥ",
+  "culture": "Saying il-ʿasha ʿala ḥsābi 'dinner's on me' is a friendly way to make up for keeping friends waiting. Friends often argue over who pays: khallha ʿalay! la wallāh! Let them insist once before you give in or win.",
+  "dialogue": [
+   ["A", "وينك يا ريّال؟ كنا بنروح!", "wēnak yā rayyāl? kinna binrūḥ!", "Where have you been, mate? We were about to go!"],
+   ["B", "آسف يا شباب! كنت بتصل فيكم، بس نسيت تلفوني", "āsif yā shabāb! kint battaṣil fīkum, bas nisēt tilifōni", "Sorry, guys! I was going to call you, but I forgot my phone."],
+   ["A", "نسيته وين؟ في البيت؟", "nisētah wēn? fi l-bēt?", "Forgot it where? At home?"],
+   ["B", "هيه، في البيت. كنت مستعجل وايد", "hē, fi l-bēt. kint mistaʿjil wāyid", "Yes, at home. I was in a real hurry."],
+   ["A", "ترا كنت بقول لك: فهد زعلان منك", "tara kint bagūl-lak: Fahad zaʿlān minnak", "I was going to tell you: Fahad's cross with you."],
+   ["B", "ليش زعلان؟ شو سويت له؟", "lēsh zaʿlān? shu sawwēt-lah?", "Why's he cross? What have I done to him?"],
+   ["A", "ولا شي، بس يوعان. كان بيروح البيت!", "wala shay, bas yōʿān. kān biyrūḥ il-bēt!", "Nothing, he's just hungry. He was about to go home!"],
+   ["B", "يلا نطلب عيل! والعشا على حسابي", "yalla niṭlub ʿayal! w il-ʿasha ʿala ḥsābi", "Let's order, then! And dinner's on me."]
+  ],
+  "items": [
+   ["كنت بقول لك", "kint bagūl-lak", "I was going to tell you (to a man)", "كنت سأقول لك", "to a woman: kint bagūl-lich (كنت بقول لج); Kuwait: kint rāḥ agūl-lak (كنت راح أقول لك)"],
+   ["كنت بتصل فيكم", "kint battaṣil fīkum", "I was going to call you (to a group)", "كنت سأتصل بكم", "to one man: kint battaṣil fīk (كنت بتصل فيك); to one woman: kint battaṣil fīch (كنت بتصل فيج)"],
+   ["كنا بنروح", "kinna binrūḥ", "we were about to go, we were going to go", "كنا سنذهب", "Kuwait: kinna rāḥ nrūḥ (كنا راح نروح)"],
+   ["كان بيروح", "kān biyrūḥ", "he was about to go, he was going to go", "كان سيذهب", "she was about to go: kānat bitrūḥ (كانت بتروح)"],
+   ["مستعجل", "mistaʿjil", "in a hurry (a man)", "مستعجل", "a woman: mistaʿjla (مستعجلة)"],
+   ["نسيت تلفوني", "nisēt tilifōni", "I forgot my phone, I left my phone behind", "نسيت هاتفي", "to a woman: nisēti tilifōnich (نسيتي تلفونج)"],
+   ["نسيته", "nisētah", "I forgot it (m.), I left it (behind); you forgot it (to a man)", "نسيته", "to a woman: nisētīh (نسيتيه); a feminine thing: nisēt-ha (نسيتها)"],
+   ["زعلان منك", "zaʿlān minnak", "cross with you, upset with you (to a man)", "غاضب منك", "with you (to a woman): zaʿlān minnich (زعلان منج); a woman who's cross: zaʿlāna minnak"],
+   ["شو سويت له؟", "shu sawwēt-lah?", "what have I done to him? what did you do to him? (to a man)", "ماذا فعلت له؟", "to a woman: shu sawwētī-lah? (شو سويتي له؟); to her: shu sawwēt-lha? (شو سويت لها؟)"]
+  ]
+ },
+ {
+  "id": "s3u011",
+  "stage": 3,
+  "title": "A camel in the road: telling what happened",
+  "goal": "Tell Bū Rāshid about a scare on the road back from Hatta: what you were doing, what happened, what nearly happened",
+  "tip": "A short story uses this block's three tools: the background with kān gāʿid (Sēf kān gāʿid ysūg 'Sēf was driving'), a sudden turn with gām (gām yiẓḥak 'he burst out laughing') and a near miss with kint b- (kint bamūt min il-khōf 'I nearly died of fright').",
+  "grammar": "Telling an incident: kān gāʿid for the background, gām for a sudden turn, kint b- for a near miss",
+  "culture": "Outside the cities, camels sometimes wander onto the road, above all at night, so drive slowly there. Il-ḥamdu lillāh ʿala s-salāma welcomes someone back from a trip; il-ḥamdu lillāh ʿala salāmatkum is also said when people have had a scare.",
+  "dialogue": [
+   ["A", "الحمد لله على السلامة يا ولدي. كيف كانت حتا؟", "il-ḥamdu lillāh ʿala s-salāma yā wildi. chēf kānat Ḥatta?", "Welcome back, son. How was Hatta?"],
+   ["B", "الله يسلمك يا عمي. حلوة، بس صار لنا شي غريب", "allāh ysallmak yā ʿammi. ḥilwa, bas ṣār-lna shay gharīb", "Thank you, uncle. Lovely, but something strange happened to us."],
+   ["A", "خير إن شاء الله؟ شو صار؟", "khēr in shāʼ allāh? shu ṣār?", "Nothing bad, I hope? What happened?"],
+   ["B", "كنا راجعين بالليل، وسيف كان قاعد يسوق", "kinna rājʿīn bil-lēl, w Sēf kān gāʿid ysūg", "We were on our way back at night, and Sēf was driving."],
+   ["A", "زين، وبعدين يا ولدي؟", "zēn, w baʿdēn yā wildi?", "Yes, and then, son?"],
+   ["B", "بعير واقف في نص الشارع! وسيف قام يضحك", "biʿīr wāgif fi nuṣṣ ish-shāriʿ! w Sēf gām yiẓḥak", "A camel standing in the middle of the road! And Sēf started laughing."],
+   ["A", "الحمد لله على سلامتكم! أكيد كنت خايف", "il-ḥamdu lillāh ʿala salāmatkum! akīd kint khāyif", "Thank God you're all safe! You must have been scared."],
+   ["B", "هيه، كنت بموت من الخوف! ومن يومها سيف يسوق شوي شوي", "hē, kint bamūt min il-khōf! w min yōmha Sēf ysūg shwayy shwayy", "Yes, I nearly died of fright! And ever since, Sēf drives slowly."]
+  ],
+  "items": [
+   ["كيف كانت؟", "chēf kānat?", "how was it (f.)? how did it go?", "كيف كانت؟", "about a masculine thing: chēf kān? (كيف كان؟)"],
+   ["خير إن شاء الله؟", "khēr in shāʼ allāh?", "nothing bad, I hope? is everything all right?", "خيرًا إن شاء الله؟", ""],
+   ["شي غريب", "shay gharīb", "something strange, something odd", "شيء غريب", ""],
+   ["بالليل", "bil-lēl", "at night", "في الليل", "in the morning: iṣ-ṣubḥ (الصبح)"],
+   ["بعير", "biʿīr", "a camel", "بعير / جمل", "camels: baʿārīn (بعارين)"],
+   ["في نص الشارع", "fi nuṣṣ ish-shāriʿ", "in the middle of the road", "في منتصف الشارع", ""],
+   ["الحمد لله على سلامتكم", "il-ḥamdu lillāh ʿala salāmatkum", "thank God you're (all) safe", "الحمد لله على سلامتكم", "to one man: il-ḥamdu lillāh ʿala salāmtak (على سلامتك)"],
+   ["كنت بموت من الخوف", "kint bamūt min il-khōf", "I nearly died of fright (lit. I was going to die of fear)", "كدت أموت من الخوف", ""],
+   ["من يومها", "min yōmha", "ever since, since that day", "منذ ذلك اليوم", ""]
+  ]
+ }
+]

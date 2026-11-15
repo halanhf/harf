@@ -1,0 +1,1398 @@
+[
+ {
+  "id": "s3u035",
+  "stage": 3,
+  "title": "Help me with this form",
+  "goal": "At the office, ask Maryam to help you fill in a form in Arabic, using Form III verbs: sāʿdīni 'help me', ḥāwalt 'I tried'",
+  "tip": "Form III verbs have a long ā after the first letter: sāʿad 'he helped', ḥāwal 'he tried', sāfar 'he travelled'. Past: ḥāwalt 'I tried'. Command: sāʿidni 'help me', to a woman sāʿdīni. 'You helped me' is sāʿadtni, to a woman sāʿadtīni.",
+  "grammar": "Forms III, V, VI as chunks: Form III past and command (sāʿad, ḥāwal)",
+  "dialogue": [
+   [
+    "B",
+    "مريم، ساعديني الله يخليج. هالاستمارة كلها بالعربي",
+    "Maryam, sāʿdīni allāh ykhallīch. hal-istimāra killha bil-ʿarabi",
+    "Maryam, help me, please. This form's all in Arabic."
+   ],
+   [
+    "A",
+    "أكيد. بس حاول أول بروحك، عشان تتعلم",
+    "akīd. bas ḥāwil awwal b-rūḥak, ʿashān titʿallam",
+    "Of course. But try on your own first, so you learn."
+   ],
+   [
+    "B",
+    "حاولت والله! بس ما فهمت هالكلمة",
+    "ḥāwalt wallāh! bas ma fhimt hal-kilma",
+    "I did try, honestly! But I didn't understand this word."
+   ],
+   [
+    "A",
+    "هذي يعني عيد ميلادك. اكتب هني",
+    "hādhi yaʿni ʿīd mīlādak. iktib hni",
+    "This means your date of birth. Write it here."
+   ],
+   [
+    "B",
+    "زين. وهني شو أكتب؟",
+    "zēn. w hni shu aktib?",
+    "OK. And what do I write here?"
+   ],
+   [
+    "A",
+    "هني اسمك بس. وخلاص، عبيتها!",
+    "hni ismak bas. w khalāṣ, ʿabbēt-ha!",
+    "Just your name here. And that's it, you've filled it in!"
+   ],
+   [
+    "B",
+    "والله ساعدتيني وايد. مشكورة!",
+    "wallāh sāʿadtīni wāyid. mashkūra!",
+    "Honestly, you've been a big help. Thanks!"
+   ],
+   [
+    "A",
+    "العفو. وإذا تبي شي ثاني، أنا موجودة",
+    "il-ʿafu. w idha tabi shay thāni, ana mawjūda",
+    "You're welcome. And if you need anything else, I'm here."
+   ]
+  ],
+  "items": [
+   [
+    "ساعدني",
+    "sāʿidni",
+    "help me (to a man)",
+    "ساعدني",
+    "to a woman: sāʿdīni (ساعديني)"
+   ],
+   [
+    "ساعدتني",
+    "sāʿadtni",
+    "you helped me (to a man)",
+    "ساعدتني",
+    "to a woman: sāʿadtīni (ساعدتيني); the same spelling read sāʿadatni means 'she helped me'"
+   ],
+   [
+    "حاولت",
+    "ḥāwalt",
+    "I tried; you tried (to a man)",
+    "حاولت",
+    "to a woman (you tried): ḥāwalti (حاولتي)"
+   ],
+   [
+    "حاول",
+    "ḥāwil",
+    "try! (to a man)",
+    "حاول",
+    "to a woman: ḥāwli (حاولي); ḥāwil awwal b-rūḥak = try on your own first"
+   ],
+   [
+    "الاستمارة",
+    "il-istimāra",
+    "the form (to fill in)",
+    "الاستمارة",
+    ""
+   ],
+   [
+    "عبيتها",
+    "ʿabbēt-ha",
+    "you filled it in (to a man); I filled it in",
+    "ملأتها",
+    "to a woman (you filled it in): ʿabbētīha (عبيتيها); to fill in: yʿabbi (يعبي)"
+   ],
+   [
+    "هالكلمة",
+    "hal-kilma",
+    "this word",
+    "هذه الكلمة",
+    ""
+   ],
+   [
+    "اكتب هني",
+    "iktib hni",
+    "write here (to a man)",
+    "اكتب هنا",
+    "to a woman: iktibi hni (اكتبي هني)"
+   ],
+   [
+    "أنا موجود",
+    "ana mawjūd",
+    "I'm here (if you need me), I'm around (a man)",
+    "أنا موجود",
+    "a woman: ana mawjūda (أنا موجودة)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u036",
+  "stage": 3,
+  "title": "At the service counter",
+  "goal": "Ask a clerk at a service counter about your paperwork, using Form III verbs in the present: agābil 'I see (someone)', baḥāwil 'I'll try'",
+  "tip": "Form III keeps its long ā in the present: agābil 'I meet, I see (someone)', asāʿdak 'I help you', arājiʿ 'I check back (at an office)'. Future: baḥāwil 'I'll try', batābiʿ 'I'll follow (it) up'. The past is sāfar 'he's gone away', as in sāfart.",
+  "grammar": "Forms III, V, VI as chunks: Form III present (agābil, baḥāwil, arājiʿ)",
+  "dialogue": [
+   [
+    "A",
+    "تفضل، عندك موعد؟",
+    "tfaẓẓal, ʿindak mawʿid?",
+    "Come in. Do you have an appointment?"
+   ],
+   [
+    "B",
+    "هيه، أبي أقابل المدير عن معاملتي",
+    "hē, abi agābil il-mudīr ʿan muʿāmalti",
+    "Yes, I'd like to see the manager about my paperwork."
+   ],
+   [
+    "A",
+    "المدير سافر هالأسبوع. بس بحاول أساعدك",
+    "il-mudīr sāfar hal-usbūʿ. bas baḥāwil asāʿdak",
+    "The manager's away this week. But I'll try to help you."
+   ],
+   [
+    "B",
+    "الله يخليك. معاملتي صار لها شهر",
+    "allāh ykhallīk. muʿāmalti ṣār-lha shahar",
+    "Thank you. My application's been waiting a month."
+   ],
+   [
+    "A",
+    "عطني رقم المعاملة... هيه، عند المدير. لازم يوقعها هو",
+    "ʿaṭni ragam il-muʿāmala... hē, ʿind il-mudīr. lāzim ywaggiʿha huwa",
+    "Give me the application number... Yes, it's with the manager. He has to sign it himself."
+   ],
+   [
+    "B",
+    "ما قصرت. يعني أراجع بعد ما يرجع؟",
+    "mā gaṣṣart. yaʿni arājiʿ baʿd ma yirjaʿ?",
+    "Thanks a lot. So should I come back after he's back?"
+   ],
+   [
+    "A",
+    "ما سوينا شي. لا تحاتي، أنا بتابعها وبتصل فيك",
+    "mā sawwēna shay. la tḥāti, ana batābiʿha w battaṣil fīk",
+    "Not at all. Don't worry, I'll follow it up and call you."
+   ],
+   [
+    "B",
+    "زين، بترياك",
+    "zēn, batrayyāk",
+    "Great, I'll wait to hear from you."
+   ]
+  ],
+  "items": [
+   [
+    "أبي أقابل",
+    "abi agābil",
+    "I'd like to see (someone), I want to meet",
+    "أريد أن أقابل",
+    "agābil = I meet; gābalt (قابلت) = I met"
+   ],
+   [
+    "المعاملة",
+    "il-muʿāmala",
+    "the paperwork, the application (at an office)",
+    "المعاملة",
+    "my paperwork: muʿāmalti (معاملتي); your paperwork: muʿāmaltak (معاملتك)"
+   ],
+   [
+    "بحاول",
+    "baḥāwil",
+    "I'll try",
+    "سأحاول",
+    "baḥāwil asāʿdak = I'll try to help you"
+   ],
+   [
+    "صار لها",
+    "ṣār-lha",
+    "it's been … (for it, for her)",
+    "مضى عليها",
+    "ṣār-lha shahar = it's been a month; for him or a masculine thing: ṣār-lah (صار له)"
+   ],
+   [
+    "رقم",
+    "ragam",
+    "number",
+    "رقم",
+    "your number (to a man): ragmak (رقمك); ragam il-muʿāmala = the application number"
+   ],
+   [
+    "لازم يوقعها",
+    "lāzim ywaggiʿha",
+    "he has to sign it",
+    "يجب أن يوقعها",
+    "to sign: ywaggiʿ (يوقع)"
+   ],
+   [
+    "أراجع",
+    "arājiʿ",
+    "I check back, I follow up (at an office)",
+    "أراجع",
+    "not arjaʿ (أرجع) 'I come back': arājiʿ is going back to an office about your paperwork"
+   ],
+   [
+    "بتابعها",
+    "batābiʿha",
+    "I'll follow it up, I'll keep track of it",
+    "سأتابعها",
+    "for a masculine thing: batābiʿah (بتابعه)"
+   ]
+  ],
+  "culture": "At a service counter, say what you need in one line (abi … ʿan muʿāmalti) and thank the clerk with mā gaṣṣart; the answer is mā sawwēna shay. muʿāmala is the everyday word for any paperwork you're waiting on at an office."
+ },
+ {
+  "id": "s3u037",
+  "stage": 3,
+  "title": "I met our new neighbour",
+  "goal": "Tell Sēf about a new neighbour you've got to know, using Form V verbs: tʿarraft ʿala 'I got to know', tkharraj 'he graduated'",
+  "tip": "Form V is t- + a Form II verb: ʿallam 'taught' → tʿallam 'learned', ʿarraf 'introduced' → tʿarraf ʿala 'got to know'. Past: tʿarraft ʿalēh 'I got to know him', tʿallamt 'I learned', tkharraj 'he graduated'. You already know one: tʿawwadt ʿala.",
+  "grammar": "Forms III, V, VI as chunks: Form V past (tʿarraf, tkharraj, tʿallam)",
+  "dialogue": [
+   [
+    "A",
+    "منو هذا اللي كنت تسولف وياه؟",
+    "minu hādha lli kint tsōlif wiyyāh?",
+    "Who's that you were chatting with?"
+   ],
+   [
+    "B",
+    "هذا جارنا اليديد. تعرفت عليه أمس",
+    "hādha jārna l-yidīd. tʿarraft ʿalēh ams",
+    "That's our new neighbour. I got to know him yesterday."
+   ],
+   [
+    "A",
+    "حلو! شو يسوي؟ يدرس؟",
+    "ḥilu! shu ysawwi? yidris?",
+    "Nice! What does he do? Is he a student?"
+   ],
+   [
+    "B",
+    "لا، تخرج السنة اللي طافت وتوظف في بنك",
+    "la, tkharraj is-sana lli ṭāfat w twaẓẓaf fi bank",
+    "No, he graduated last year and got a job at a bank."
+   ],
+   [
+    "A",
+    "ما شاء الله. وانت تحسنت وايد في العربي!",
+    "mā shāʼ allāh. w inta tḥassant wāyid fi l-ʿarabi!",
+    "Good for him. And your Arabic's got so much better!"
+   ],
+   [
+    "B",
+    "تعلمت من الجيران! تعودت عليهم، نسولف كل يوم",
+    "tʿallamt min il-jīrān! tʿawwadt ʿalēhum, nsōlif kill yōm",
+    "I learned from the neighbours! I've got used to them; we chat every day."
+   ],
+   [
+    "A",
+    "زين عيل، خلني أتعرف عليه أنا بعد",
+    "zēn ʿayal, khallni atʿarraf ʿalēh ana baʿad",
+    "Great, then let me meet him too."
+   ],
+   [
+    "B",
+    "أكيد. تعال الخميس ونشرب قهوة ويا بعض",
+    "akīd. taʿāl il-khamīs w nishrab gahwa wiyya baʿaẓ",
+    "Sure. Come on Thursday and we'll have coffee together."
+   ]
+  ],
+  "items": [
+   [
+    "تعرفت على",
+    "tʿarraft ʿala",
+    "I got to know, I met (someone new); you got to know (to a man)",
+    "تعرفت على",
+    "to a woman (you got to know): tʿarrafti ʿala (تعرفتي على); tʿarraft ʿalēh = I got to know him"
+   ],
+   [
+    "خلني أتعرف عليه",
+    "khallni atʿarraf ʿalēh",
+    "let me meet him, I'd like to get to know him",
+    "دعني أتعرف عليه",
+    "her: khallni atʿarraf ʿalēha (عليها)"
+   ],
+   [
+    "جارنا",
+    "jārna",
+    "our neighbour",
+    "جارنا",
+    "my neighbour: jāri (جاري)"
+   ],
+   [
+    "تخرج",
+    "tkharraj",
+    "he graduated",
+    "تخرج",
+    "I graduated: tkharrajt (تخرجت)"
+   ],
+   [
+    "توظف",
+    "twaẓẓaf",
+    "he got a job",
+    "توظف",
+    "I got a job: twaẓẓaft (توظفت)"
+   ],
+   [
+    "السنة اللي طافت",
+    "is-sana lli ṭāfat",
+    "last year",
+    "السنة الماضية",
+    ""
+   ],
+   [
+    "تحسنت",
+    "tḥassant",
+    "you've improved, you've got better (to a man); I've improved",
+    "تحسنت",
+    "to a woman (you've improved): tḥassanti (تحسنتي); it's got better: tḥassan (تحسن)"
+   ],
+   [
+    "تعلمت",
+    "tʿallamt",
+    "I learned; you learned (to a man)",
+    "تعلمت",
+    "to a woman (you learned): tʿallamti (تعلمتي)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u038",
+  "stage": 3,
+  "title": "Viewing a flat",
+  "goal": "View a flat with its owner and ask what's included, using Form V verbs in the present: tfarraj 'have a look', batʿawwad 'I'll get used to it'",
+  "tip": "Form V in the present is yit- / tit- + the doubled verb: titfarraj 'you look around', bititʿawwad 'you'll get used to it'. 'I' has no i: atʿawwad, batʿawwad 'I'll get used to it'. The command has no prefix: tfarraj 'have a look', to a woman tfarraji.",
+  "grammar": "Forms III, V, VI as chunks: Form V present and command (tfarraj, batʿawwad)",
+  "dialogue": [
+   [
+    "A",
+    "حياك الله. تفضل، تفرج على الشقة على راحتك",
+    "ḥayyāk allāh. tfaẓẓal, tfarraj ʿala sh-shigga ʿala rāḥtak",
+    "Welcome. Come in, have a look round the flat, take your time."
+   ],
+   [
+    "B",
+    "الله يحييك. ما شاء الله، الشقة واسعة",
+    "allāh yḥayyīk. mā shāʼ allāh, ish-shigga wāsʿa",
+    "Thank you. Wow, the flat's spacious."
+   ],
+   [
+    "A",
+    "غرفتين وصالة، ومفروشة بعد",
+    "ghurfatēn w ṣāla, w mafrūsha baʿad",
+    "Two bedrooms and a living room, and it's furnished too."
+   ],
+   [
+    "B",
+    "زين. والكهربا؟ مع الإيجار؟",
+    "zēn. w il-kahraba? maʿa l-ījār?",
+    "Good. And the electricity? Is it in the rent?"
+   ],
+   [
+    "A",
+    "لا، الكهربا والماي عليك. بس المنطقة هادية",
+    "la, il-kahraba w il-māy ʿalēk. bas il-manṭiga hādya",
+    "No, electricity and water are on you. But the area's quiet."
+   ],
+   [
+    "B",
+    "بعيدة شوي عن شغلي. بس بتعود إن شاء الله",
+    "baʿīda shwayy ʿan shughli. bas batʿawwad in shāʼ allāh",
+    "It's a bit far from my work. But I'll get used to it, God willing."
+   ],
+   [
+    "A",
+    "أكيد بتتعود. والمترو قريب، خمس دقايق مشي",
+    "akīd bititʿawwad. w il-mitrō garīb, khams dagāyig mashi",
+    "Of course you will. And the metro's close, five minutes' walk."
+   ],
+   [
+    "B",
+    "زين. بفكر وبرد عليك باكر",
+    "zēn. bafakkir w barudd ʿalēk bāchir",
+    "Great. I'll think about it and get back to you tomorrow."
+   ]
+  ],
+  "items": [
+   [
+    "تفرج",
+    "tfarraj",
+    "have a look (round) (to a man)",
+    "تجول وانظر",
+    "to a woman: tfarraji (تفرجي); you look around: titfarraj (تتفرج)"
+   ],
+   [
+    "على راحتك",
+    "ʿala rāḥtak",
+    "take your time, as you like (to a man)",
+    "على راحتك",
+    "to a woman: ʿala rāḥtich (على راحتج)"
+   ],
+   [
+    "غرفتين",
+    "ghurfatēn",
+    "two rooms, two bedrooms",
+    "غرفتان",
+    "ghurfatēn w ṣāla = two bedrooms and a living room"
+   ],
+   [
+    "مفروشة",
+    "mafrūsha",
+    "furnished (a flat)",
+    "مفروشة",
+    "not furnished: mub mafrūsha (مب مفروشة)"
+   ],
+   [
+    "الكهربا",
+    "il-kahraba",
+    "electricity, the power",
+    "الكهرباء",
+    "you'll see written الكهرباء"
+   ],
+   [
+    "بتعود",
+    "batʿawwad",
+    "I'll get used to it",
+    "سأتعود",
+    "you'll get used to it: bititʿawwad (بتتعود)"
+   ],
+   [
+    "خمس دقايق مشي",
+    "khams dagāyig mashi",
+    "five minutes' walk",
+    "خمس دقائق مشيًا",
+    "ʿashr dagāyig mashi = ten minutes' walk"
+   ],
+   [
+    "بفكر",
+    "bafakkir",
+    "I'll think (about it)",
+    "سأفكر",
+    "bafakkir w barudd ʿalēk = I'll think about it and get back to you"
+   ],
+   [
+    "مع الإيجار؟",
+    "maʿa l-ījār?",
+    "is it included in the rent?, with the rent?",
+    "هل هو مشمول في الإيجار؟",
+    "il-kahraba maʿa l-ījār? = is electricity included in the rent?"
+   ]
+  ],
+  "culture": "Flats are usually described by their rooms: ghurfa w ṣāla is a one-bedroom flat, ghurfatēn w ṣāla a two-bedroom. What the rent covers differs from flat to flat, so ask (maʿa l-ījār?) and read the contract before you agree."
+ },
+ {
+  "id": "s3u039",
+  "stage": 3,
+  "title": "We came to an agreement",
+  "goal": "Tell Sēf how you and the flat's owner sorted things out, using Form VI 'each other' verbs: tlāgēna 'we met up', tfāhamna 'we agreed'",
+  "tip": "Form VI is t- + a Form III verb, and usually means 'each other', so its subject is mostly plural: tlāgēna 'we met up', tfāhamna 'we came to an agreement', binitfāham 'we'll sort it out'. You know its present already: nitlāga 'we meet up'.",
+  "grammar": "Forms III, V, VI as chunks: Form VI past and future (tlāgēna, tfāhamna, binitfāham)",
+  "dialogue": [
+   [
+    "A",
+    "بشر! شو صار ويا صاحب الشقة؟",
+    "bashshir! shu ṣār wiyya ṣāḥib ish-shigga?",
+    "So, tell me! What happened with the flat's owner?"
+   ],
+   [
+    "B",
+    "تلاقينا أمس، وتفاهمنا على كل شي",
+    "tlāgēna ams, w tfāhamna ʿala kill shay",
+    "We met up yesterday and agreed on everything."
+   ],
+   [
+    "A",
+    "زين! والإيجار؟ نزل شوي؟",
+    "zēn! w il-ījār? nizal shwayy?",
+    "Great! And the rent? Did it come down a bit?"
+   ],
+   [
+    "B",
+    "هيه، نزل شوي. وأنا وربيعي بندفع نص نص",
+    "hē, nizal shwayy. w ana w rbīʿi binidfaʿ nuṣṣ nuṣṣ",
+    "Yes, a bit. And my friend and I will pay half each."
+   ],
+   [
+    "A",
+    "حلو. ومتى بتسكنون فيها؟",
+    "ḥilu. w mita bitisknūn fīha?",
+    "Nice. And when are you moving in?"
+   ],
+   [
+    "B",
+    "آخر الشهر. تقدر تساعدنا؟",
+    "ākhir ish-shahar. tigdar tsāʿidna?",
+    "At the end of the month. Can you help us?"
+   ],
+   [
+    "A",
+    "أكيد! أنا وفهد. وبنتفاهم على اليوم بعدين",
+    "akīd! ana w Fahad. w binitfāham ʿala l-yōm baʿdēn",
+    "Of course! Fahad and I will. And we'll sort out the day later."
+   ],
+   [
+    "B",
+    "يلا، اتفقنا!",
+    "yalla, ittafagna!",
+    "Right, deal!"
+   ]
+  ],
+  "items": [
+   [
+    "تلاقينا",
+    "tlāgēna",
+    "we met up",
+    "التقينا",
+    "we'll meet up: binitlāga (بنتلاقى)"
+   ],
+   [
+    "تفاهمنا",
+    "tfāhamna",
+    "we came to an agreement, we sorted it out",
+    "تفاهمنا / اتفقنا",
+    "tfāhamna ʿala kill shay = we agreed on everything"
+   ],
+   [
+    "بنتفاهم",
+    "binitfāham",
+    "we'll sort it out, we'll work it out (between us)",
+    "سنتفاهم",
+    ""
+   ],
+   [
+    "صاحب الشقة",
+    "ṣāḥib ish-shigga",
+    "the flat's owner, the landlord",
+    "صاحب الشقة / المالك",
+    "the owner of the house: ṣāḥib il-bēt (صاحب البيت)"
+   ],
+   [
+    "بشر",
+    "bashshir",
+    "so, tell me (the news)! (to a man)",
+    "ما الأخبار؟",
+    "to a woman: bashshiri (بشري); said when you're waiting for news; also bashshirni (بشرني)"
+   ],
+   [
+    "نزل",
+    "nizal",
+    "it went down, it came down (a price)",
+    "انخفض",
+    "for a feminine noun: nizlat (نزلت)"
+   ],
+   [
+    "بندفع",
+    "binidfaʿ",
+    "we'll pay",
+    "سندفع",
+    "binidfaʿ nuṣṣ nuṣṣ = we'll split it half and half"
+   ],
+   [
+    "بتسكنون",
+    "bitisknūn",
+    "you'll live, you're moving in (to a group)",
+    "ستسكنون",
+    "to one man: bitiskin (بتسكن); to one woman: bitisknīn (بتسكنين)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u040",
+  "stage": 3,
+  "title": "Opening a bank account",
+  "goal": "Open a bank account and ask a bank employee about an Islamic account, recycling Forms III, V and VI",
+  "tip": "This lesson recycles the derived forms. Form III: asāʿdak 'I help you'. Form VI: tʿāmalt wiyyāna 'you've dealt with us (before)', from tʿāmal 'deal with each other'. With a woman, B says hala fīch and law samaḥti.",
+  "grammar": "recycle: Forms III, V, VI (asāʿdak, tʿāmalt)",
+  "dialogue": [
+   [
+    "A",
+    "هلا، تفضل. شو أقدر أساعدك؟",
+    "hala, tfaẓẓal. shu agdar asāʿdak?",
+    "Hello, go ahead. How can I help you?"
+   ],
+   [
+    "B",
+    "هلا فيج. أبي أفتح حساب، لو سمحتي",
+    "hala fīch. abi aftaḥ ḥsāb, law samaḥti",
+    "Hello. I'd like to open an account, please."
+   ],
+   [
+    "A",
+    "أكيد. تعاملت ويانا من قبل؟",
+    "akīd. tʿāmalt wiyyāna min gabil?",
+    "Of course. Have you banked with us before?"
+   ],
+   [
+    "B",
+    "لا، أول مرة. عندكم حساب إسلامي؟",
+    "la, awwal marra. ʿindakum ḥsāb islāmi?",
+    "No, it's the first time. Do you have an Islamic account?"
+   ],
+   [
+    "A",
+    "هيه عندنا. تبي حساب توفير ولّا حساب عادي؟",
+    "hē ʿindana. tabi ḥsāb tawfīr walla ḥsāb ʿādi?",
+    "Yes, we do. Do you want a savings account or a normal one?"
+   ],
+   [
+    "B",
+    "عادي بس. الشركة تبي حساب بنك عشان الراتب",
+    "ʿādi bas. ish-sharika tabi ḥsāb bank ʿashān ir-rātib",
+    "Just a normal one. The company wants a bank account for my salary."
+   ],
+   [
+    "A",
+    "زين. خذ هالورقة، فيها كل الأوراق اللي لازم تييبها",
+    "zēn. khudh hal-warga, fīha kill il-awrāg illi lāzim tyībha",
+    "OK. Take this sheet; it lists all the documents you need to bring."
+   ],
+   [
+    "B",
+    "زين، بييبها باكر إن شاء الله",
+    "zēn, bayībha bāchir in shāʼ allāh",
+    "Great, I'll bring them tomorrow, God willing."
+   ]
+  ],
+  "items": [
+   [
+    "أبي أفتح حساب",
+    "abi aftaḥ ḥsāb",
+    "I'd like to open an account",
+    "أريد أن أفتح حسابًا",
+    ""
+   ],
+   [
+    "حساب بنك",
+    "ḥsāb bank",
+    "a bank account",
+    "حساب بنكي",
+    ""
+   ],
+   [
+    "تعاملت ويانا",
+    "tʿāmalt wiyyāna",
+    "you've dealt with us, you've been our customer (to a man)",
+    "تعاملت معنا",
+    "to a woman: tʿāmalti wiyyāna (تعاملتي ويانا)"
+   ],
+   [
+    "من قبل",
+    "min gabil",
+    "before, previously",
+    "من قبل",
+    ""
+   ],
+   [
+    "حساب إسلامي",
+    "ḥsāb islāmi",
+    "an Islamic account",
+    "حساب إسلامي",
+    ""
+   ],
+   [
+    "حساب توفير",
+    "ḥsāb tawfīr",
+    "a savings account",
+    "حساب توفير",
+    "a current account: ḥsāb jāri (حساب جاري)"
+   ],
+   [
+    "الراتب",
+    "ir-rātib",
+    "the salary",
+    "الراتب",
+    "my salary: rātbi (راتبي)"
+   ],
+   [
+    "هالورقة",
+    "hal-warga",
+    "this sheet, this piece of paper",
+    "هذه الورقة",
+    ""
+   ]
+  ],
+  "culture": "Islamic banking is common in the UAE: there are Islamic banks, and many other banks offer Islamic accounts too. If it matters to you, ask ʿindakum ḥsāb islāmi? Each bank sets its own list of documents, so ask the bank for it rather than relying on what a friend needed."
+ },
+ {
+  "id": "s3u041",
+  "stage": 3,
+  "title": "You're breaking up!",
+  "goal": "Phone Sēf from the airport when the line keeps cutting out, using Form VII verbs: ingiṭaʿ 'it cut out', inkisar 'it broke'",
+  "tip": "Form VII adds in- and says something happened to the thing itself, with nobody named: ingiṭaʿ 'it got cut off', inkisar 'it broke'. For a feminine noun: inkisrat. Present: yingiṭiʿ 'it cuts out': il-khaṭṭ gāʿid yingiṭiʿ 'the line keeps cutting out'.",
+  "grammar": "Forms VII, VIII, X as chunks: Form VII (ingiṭaʿ, inkisar)",
+  "dialogue": [
+   [
+    "A",
+    "ألو؟ وينك؟ الخط قاعد ينقطع",
+    "alō? wēnak? il-khaṭṭ gāʿid yingiṭiʿ",
+    "Hello? Where are you? The line keeps cutting out."
+   ],
+   [
+    "B",
+    "أنا في المطار. تسمعني الحين؟",
+    "ana fi l-maṭār. tismaʿni l-ḥīn?",
+    "I'm at the airport. Can you hear me now?"
+   ],
+   [
+    "A",
+    "هيه، الحين أحسن. انقطع مرتين!",
+    "hē, il-ḥīn aḥsan. ingiṭaʿ marratēn!",
+    "Yes, it's better now. It cut out twice!"
+   ],
+   [
+    "B",
+    "الشبكة هني مب زينة. وتلفوني انكسرت شاشته",
+    "ish-shabaka hni mub zēna. w tilifōni inkisrat shāshtah",
+    "The network here isn't good. And my phone's screen broke."
+   ],
+   [
+    "A",
+    "أفا! شلون انكسرت؟",
+    "afa! shlōn inkisrat?",
+    "Oh no! How did it break?"
+   ],
+   [
+    "B",
+    "طاح من إيدي في الطيارة",
+    "ṭāḥ min īdi fi ṭ-ṭayyāra",
+    "It fell out of my hand on the plane."
+   ],
+   [
+    "A",
+    "خسارة! زين، أنا ياي. طلعت؟",
+    "khasāra! zēn, ana yāy. ṭilaʿt?",
+    "What a shame! OK, I'm on my way. Are you out yet?"
+   ],
+   [
+    "B",
+    "لا، أتريا الشنطة. شكلها ما وصلت!",
+    "la, atrayya sh-shanṭa. shaklha ma wiṣlat!",
+    "No, I'm waiting for my bag. Looks like it hasn't come!"
+   ]
+  ],
+  "items": [
+   [
+    "انقطع",
+    "ingiṭaʿ",
+    "it cut out, it got cut off (a line, the power, the water)",
+    "انقطع",
+    "for a feminine noun: ingiṭʿat (انقطعت)"
+   ],
+   [
+    "ينقطع",
+    "yingiṭiʿ",
+    "it cuts out, it keeps cutting out",
+    "ينقطع",
+    "il-khaṭṭ gāʿid yingiṭiʿ = the line keeps cutting out"
+   ],
+   [
+    "الخط",
+    "il-khaṭṭ",
+    "the (phone) line",
+    "الخط",
+    ""
+   ],
+   [
+    "انكسر",
+    "inkisar",
+    "it broke",
+    "انكسر",
+    "for a feminine noun: inkisrat (انكسرت)"
+   ],
+   [
+    "طاح من إيدي",
+    "ṭāḥ min īdi",
+    "it fell out of my hand, I dropped it",
+    "سقط من يدي",
+    "for a feminine noun: ṭāḥat min īdi (طاحت من إيدي)"
+   ],
+   [
+    "مرتين",
+    "marratēn",
+    "twice",
+    "مرتين",
+    ""
+   ],
+   [
+    "أفا",
+    "afa",
+    "oh no!, really? (on hearing bad news)",
+    "",
+    ""
+   ],
+   [
+    "الطيارة",
+    "iṭ-ṭayyāra",
+    "the plane",
+    "الطائرة",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s3u042",
+  "stage": 3,
+  "title": "My bag didn't arrive",
+  "goal": "Report a missing bag at the airport counter, using Form VIII verbs: aḥtāj 'I need', miḥtāj 'in need of'",
+  "tip": "Form VIII puts -t- after the first letter: iḥtāj 'he needed'. Present: aḥtāj 'I need', tiḥtāj 'you need', to a woman tiḥtājīn. The participle miḥtāj (a woman: miḥtāja) also means 'I need': ana miḥtāj anām 'I need to sleep'.",
+  "grammar": "Forms VII, VIII, X as chunks: Form VIII present and participle (aḥtāj, tiḥtāj, miḥtāj)",
+  "dialogue": [
+   [
+    "B",
+    "السلام عليكم. شنطتي ما وصلت ويا الطيارة",
+    "as-salāmu ʿalaykum. shanṭti ma wiṣlat wiyya ṭ-ṭayyāra",
+    "Hello. My bag didn't come on the plane."
+   ],
+   [
+    "A",
+    "وعليكم السلام. من وين ياي؟",
+    "wa ʿalaykum is-salām. min wēn yāy?",
+    "Hello. Where have you flown in from?"
+   ],
+   [
+    "B",
+    "من لندن. وكل أغراضي فيها!",
+    "min Landan. w kill aghrāẓi fīha!",
+    "From London. And all my things are in it!"
+   ],
+   [
+    "A",
+    "لا تحاتي. أحتاج رقمك وعنوانك بس",
+    "la tḥāti. aḥtāj ragmak w ʿinwānak bas",
+    "Don't worry. I just need your number and address."
+   ],
+   [
+    "B",
+    "تفضل. ومتى بتوصل؟ أحتاج ملابس",
+    "tfaẓẓal. w mita bitōṣal? aḥtāj malābis",
+    "Here you go. And when will it get here? I need clothes."
+   ],
+   [
+    "A",
+    "يمكن باكر. تحتاج شي الحين؟",
+    "yimkin bāchir. tiḥtāj shay il-ḥīn?",
+    "Maybe tomorrow. Do you need anything now?"
+   ],
+   [
+    "B",
+    "لا، بس محتاج أنام. صار لي يوم كامل مسافر!",
+    "la, bas miḥtāj anām. ṣār-li yōm kāmil msāfir!",
+    "No, I just need to sleep. I've been travelling a whole day!"
+   ],
+   [
+    "A",
+    "أول ما توصل الشنطة، بنتصل فيك",
+    "awwal ma tōṣal ish-shanṭa, binittaṣil fīk",
+    "As soon as the bag arrives, we'll call you."
+   ]
+  ],
+  "items": [
+   [
+    "أحتاج",
+    "aḥtāj",
+    "I need",
+    "أحتاج",
+    "aḥtāj malābis = I need clothes"
+   ],
+   [
+    "تحتاج شي؟",
+    "tiḥtāj shay?",
+    "do you need anything? (to a man)",
+    "هل تحتاج شيئًا؟",
+    "to a woman: tiḥtājīn shay? (تحتاجين شي؟)"
+   ],
+   [
+    "محتاج",
+    "miḥtāj",
+    "in need of; I need (a man)",
+    "محتاج",
+    "a woman: miḥtāja (محتاجة); ana miḥtāj anām = I need to sleep"
+   ],
+   [
+    "شنطتي ما وصلت",
+    "shanṭti ma wiṣlat",
+    "my bag didn't arrive, my bag hasn't come",
+    "حقيبتي لم تصل",
+    ""
+   ],
+   [
+    "كل أغراضي",
+    "kill aghrāẓi",
+    "all my things, all my stuff",
+    "كل أغراضي",
+    ""
+   ],
+   [
+    "من وين ياي؟",
+    "min wēn yāy?",
+    "where have you come from? (to a man)",
+    "من أين أتيت؟",
+    "to a woman: min wēn yāya? (من وين ياية؟)"
+   ],
+   [
+    "يوم كامل",
+    "yōm kāmil",
+    "a whole day, a full day",
+    "يوم كامل",
+    ""
+   ],
+   [
+    "بنتصل فيك",
+    "binittaṣil fīk",
+    "we'll call you (to a man)",
+    "سنتصل بك",
+    "to a woman: binittaṣil fīch (بنتصل فيج)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u043",
+  "stage": 3,
+  "title": "Back from London",
+  "goal": "Tell Maryam at work what happened with your lost bag, using Form VIII verbs in the past: ittaṣalt 'I called', ikhtart 'I chose'",
+  "tip": "Form VIII in the past starts with i-: ittaṣalt 'I called', ishtarēt 'I bought', ikhtart 'I chose', irtaḥt 'I rested'. After ma the i stays: ma ishtarēt. To a woman, 'you' adds -ti: ittaṣalti, irtaḥti.",
+  "grammar": "Forms VII, VIII, X as chunks: Form VIII past (ittaṣalt, ikhtart, irtaḥt)",
+  "dialogue": [
+   [
+    "A",
+    "الحمد لله على السلامة! متى رجعت؟",
+    "il-ḥamdu lillāh ʿala s-salāma! mita rijaʿt?",
+    "Welcome back! When did you get back?"
+   ],
+   [
+    "B",
+    "الله يسلمج. أمس، بس شنطتي ما وصلت",
+    "allāh ysallmich. ams, bas shanṭti ma wiṣlat",
+    "Thank you. Yesterday, but my bag didn't arrive."
+   ],
+   [
+    "A",
+    "أفا! وشو سويت؟",
+    "afa! w shu sawwēt?",
+    "Oh no! So what did you do?"
+   ],
+   [
+    "B",
+    "اتصلت فيهم الصبح، وقالوا بتوصل اليوم",
+    "ittaṣalt fīhum iṣ-ṣubḥ, w gālaw bitōṣal il-yōm",
+    "I called them this morning, and they said it'll arrive today."
+   ],
+   [
+    "A",
+    "زين. وشو لبست اليوم؟",
+    "zēn. w shu libast il-yōm?",
+    "Good. So what did you wear today?"
+   ],
+   [
+    "B",
+    "اشتريت من المول. اخترت أرخص قميصين!",
+    "ishtarēt min il-mōl. ikhtart arkhaṣ gamīṣēn!",
+    "I bought some at the mall. I picked the two cheapest shirts!"
+   ],
+   [
+    "A",
+    "زين سويت! والحين ارتحت؟",
+    "zēn sawwēt! w il-ḥīn irtaḥt?",
+    "Good thinking! And have you had some rest now?"
+   ],
+   [
+    "B",
+    "هيه، نمت عدل وارتحت، الحمد لله",
+    "hē, nimt ʿadil w irtaḥt, il-ḥamdu lillāh",
+    "Yes, I slept properly and I'm rested, thank God."
+   ]
+  ],
+  "items": [
+   [
+    "اتصلت",
+    "ittaṣalt",
+    "I called; you called (to a man)",
+    "اتصلت",
+    "to a woman (you called): ittaṣalti (اتصلتي); ittaṣalt fīhum = I called them"
+   ],
+   [
+    "قالوا",
+    "gālaw",
+    "they said",
+    "قالوا",
+    "gālaw bitōṣal = they said it'll arrive"
+   ],
+   [
+    "بتوصل",
+    "bitōṣal",
+    "it (f.)'ll arrive, it'll get here",
+    "ستصل",
+    "for a masculine thing: biyōṣal (بيوصل)"
+   ],
+   [
+    "لبست",
+    "libast",
+    "I wore, I put on; you wore (to a man)",
+    "لبست",
+    "to a woman (you wore): libasti (لبستي)"
+   ],
+   [
+    "قميصين",
+    "gamīṣēn",
+    "two shirts",
+    "قميصان",
+    ""
+   ],
+   [
+    "اخترت",
+    "ikhtart",
+    "I chose, I picked; you chose (to a man)",
+    "اخترت",
+    "to a woman (you chose): ikhtarti (اخترتي)"
+   ],
+   [
+    "ارتحت",
+    "irtaḥt",
+    "I rested, I feel rested; you rested (to a man)",
+    "ارتحت",
+    "to a woman (you rested): irtaḥti (ارتحتي); also 'I was relieved'"
+   ],
+   [
+    "نمت عدل",
+    "nimt ʿadil",
+    "I slept properly, I slept well",
+    "نمت جيدًا",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s3u044",
+  "stage": 3,
+  "title": "The AC isn't working",
+  "goal": "Complain at a hotel reception about your room, using Form X verbs: istalamna 'we got (the room)', istaghrabt 'I'm surprised'",
+  "tip": "Form X starts with ista-: istalam 'received, took over', istaghrab 'was surprised', istaʿmal 'used'. Past: istalamna l-ghurfa 'we've got our room'. In the present the i goes: astaʿmil 'I use', yistaʿmil 'he uses': agdar astaʿmil in-nit? 'can I use the internet?'",
+  "grammar": "Forms VII, VIII, X as chunks: Form X (istalam, istaghrab, istaʿmal)",
+  "dialogue": [
+   [
+    "B",
+    "السلام عليكم. استلمنا الغرفة، بس المكيف ما يشتغل",
+    "as-salāmu ʿalaykum. istalamna l-ghurfa, bas il-mkayyif ma yishtaghil",
+    "Hello. We've got our room, but the AC isn't working."
+   ],
+   [
+    "A",
+    "وعليكم السلام. السموحة منك! أي غرفة؟",
+    "wa ʿalaykum is-salām. is-samūḥa minnak! ay ghurfa?",
+    "Hello. We're so sorry! Which room?"
+   ],
+   [
+    "B",
+    "ما عليه. غرفة مية وعشرين",
+    "ma ʿalēh. ghurfa miya w ʿishrīn",
+    "That's all right. Room one hundred and twenty."
+   ],
+   [
+    "A",
+    "استغربت! المكيف في هالغرفة يديد",
+    "istaghrabt! il-mkayyif fi hal-ghurfa yidīd",
+    "That's strange! The AC in that room is new."
+   ],
+   [
+    "B",
+    "والماي الحار بعد انقطع الصبح",
+    "w il-māy il-ḥārr baʿad ingiṭaʿ iṣ-ṣubḥ",
+    "And the hot water went off this morning too."
+   ],
+   [
+    "A",
+    "ولا يهمك، بطرش لك واحد يشوفهم الحين",
+    "wala yhimmak, baṭarrish-lak wāḥid yshūfhum il-ḥīn",
+    "Don't worry, I'll send someone up to look at them now."
+   ],
+   [
+    "B",
+    "زين. وأقدر أستعمل النت؟ ما يفتح عندي",
+    "zēn. w agdar astaʿmil in-nit? ma yiftaḥ ʿindi",
+    "Good. And can I use the internet? It won't load for me."
+   ],
+   [
+    "A",
+    "أكيد. بعطيك الرقم السري الحين",
+    "akīd. baʿṭīk ir-ragam is-sirri l-ḥīn",
+    "Of course. I'll give you the password now."
+   ]
+  ],
+  "items": [
+   [
+    "استلمنا الغرفة",
+    "istalamna l-ghurfa",
+    "we've got our room, we've checked in",
+    "استلمنا الغرفة",
+    "istalamt (استلمت) = I received, I picked up"
+   ],
+   [
+    "المكيف ما يشتغل",
+    "il-mkayyif ma yishtaghil",
+    "the AC isn't working",
+    "المكيف لا يعمل",
+    ""
+   ],
+   [
+    "استغربت",
+    "istaghrabt",
+    "I'm surprised, I found it strange; you were surprised (to a man)",
+    "استغربت",
+    "to a woman (you were surprised): istaghrabti (استغربتي)"
+   ],
+   [
+    "الماي الحار",
+    "il-māy il-ḥārr",
+    "the hot water",
+    "الماء الساخن",
+    ""
+   ],
+   [
+    "بطرش لك واحد",
+    "baṭarrish-lak wāḥid",
+    "I'll send someone (to you) (to a man)",
+    "سأرسل لك أحدًا",
+    "to a woman: baṭarrish-lich wāḥid (بطرش لج واحد)"
+   ],
+   [
+    "أستعمل",
+    "astaʿmil",
+    "I use",
+    "أستعمل",
+    "agdar astaʿmil …? = can I use …?"
+   ],
+   [
+    "النت",
+    "in-nit",
+    "the internet, the wifi",
+    "الإنترنت",
+    ""
+   ],
+   [
+    "الرقم السري",
+    "ir-ragam is-sirri",
+    "the password, the PIN",
+    "الرقم السري / كلمة المرور",
+    ""
+   ]
+  ],
+  "culture": "Hotel and shop staff often apologise with is-samūḥa (minnak), 'pardon us'. Answer ma ʿalēh or masmūḥ, and then say what you need. A calm, short complaint goes down better than a long one."
+ },
+ {
+  "id": "s3u045",
+  "stage": 3,
+  "title": "Checking out",
+  "goal": "Check out of the hotel and tell the receptionist how your stay went, recycling Forms VII, VIII and X",
+  "tip": "istānas 'had a good time' is Form X: istānast 'I enjoyed it', istānasna 'we enjoyed it', to a group istānastu? The mistānis you know is its participle. istaʿmal 'used' and istaḥmal 'put up with' work the same way: ma istaʿmalna shay 'we didn't use anything'.",
+  "grammar": "recycle: Forms VII, VIII, X (ingiṭaʿ, ishtaghal, niḥtāj, istānas, istaʿmal)",
+  "dialogue": [
+   [
+    "A",
+    "صباح الخير. استانستوا عندنا؟",
+    "ṣabāḥ il-khēr. istānastu ʿindana?",
+    "Good morning. Did you enjoy your stay with us?"
+   ],
+   [
+    "B",
+    "صباح النور. هيه، بس الماي الحار انقطع أمس بعد",
+    "ṣabāḥ in-nūr. hē, bas il-māy il-ḥārr ingiṭaʿ ams baʿad",
+    "Good morning. Yes, but the hot water went off yesterday as well."
+   ],
+   [
+    "A",
+    "آسفين على هالشي. والمكيف؟ اشتغل؟",
+    "āsfīn ʿala hash-shay. w il-mkayyif? ishtaghal?",
+    "We're sorry about that. And the AC? Did it work?"
+   ],
+   [
+    "B",
+    "اشتغل، بس استحملت الحر ساعتين!",
+    "ishtaghal, bas istaḥmalt il-ḥarr sāʿtēn!",
+    "It worked, but I put up with the heat for two hours!"
+   ],
+   [
+    "A",
+    "السموحة. استعملتوا شي من الثلاجة؟",
+    "is-samūḥa. istaʿmaltu shay min ith-thallāja?",
+    "Sorry about that. Did you use anything from the fridge?"
+   ],
+   [
+    "B",
+    "ما عليه. لا، ما استعملنا شي. نحتاج الفاتورة بس",
+    "ma ʿalēh. la, ma istaʿmalna shay. niḥtāj il-fātūra bas",
+    "That's all right. No, we didn't use anything. We just need the bill."
+   ],
+   [
+    "A",
+    "تفضل. وإن شاء الله تزورونا مرة ثانية",
+    "tfaẓẓal. w in shāʼ allāh tzūrūna marra thānya",
+    "Here you are. And we hope you'll visit us again."
+   ],
+   [
+    "B",
+    "إن شاء الله! والله استانسنا",
+    "in shāʼ allāh! wallāh istānasna",
+    "We will! Honestly, we had a great time."
+   ]
+  ],
+  "items": [
+   [
+    "استانست",
+    "istānast",
+    "I had a good time, I enjoyed it; you had a good time (to a man)",
+    "استمتعت",
+    "to a woman (you): istānasti (استانستي); we had a good time: istānasna (استانسنا)"
+   ],
+   [
+    "استعملت",
+    "istaʿmalt",
+    "I used; you used (to a man)",
+    "استعملت / استخدمت",
+    "to a woman (you used): istaʿmalti (استعملتي)"
+   ],
+   [
+    "ما استعملنا شي",
+    "ma istaʿmalna shay",
+    "we didn't use anything",
+    "لم نستعمل شيئًا",
+    ""
+   ],
+   [
+    "استحملت",
+    "istaḥmalt",
+    "I put up with (it), I stood it; you put up with (to a man)",
+    "تحملت",
+    "to a woman (you put up with): istaḥmalti (استحملتي)"
+   ],
+   [
+    "آسفين على هالشي",
+    "āsfīn ʿala hash-shay",
+    "we're sorry about that",
+    "نحن آسفون على هذا",
+    "I'm sorry: āsif (a man), āsfa (a woman)"
+   ],
+   [
+    "استانستوا؟",
+    "istānastu?",
+    "did you have a good time?, did you enjoy it? (to a group)",
+    "هل استمتعتم؟",
+    "to one man: istānast? (استانست؟); to one woman: istānasti? (استانستي؟)"
+   ],
+   [
+    "نحتاج",
+    "niḥtāj",
+    "we need",
+    "نحتاج",
+    ""
+   ],
+   [
+    "تزورونا",
+    "tzūrūna",
+    "(you'll) visit us (to a group)",
+    "تزورونا",
+    "to one man: tzūrna (تزورنا); in shāʼ allāh tzūrūna marra thānya = we hope you'll visit us again"
+   ]
+  ]
+ },
+ {
+  "id": "s3u046",
+  "stage": 3,
+  "title": "Checkpoint 3.3: moving day",
+  "goal": "Checkpoint: Sēf and Fahad help you move into the new flat; ask them for help, sort out the AC and thank them",
+  "tip": "To a group, a command or a past 'you' ends in -u, and it lengthens before -ni: sāʿdūni 'help me (all of you)', waddūni 'take me'. Group wishes take -kum: allāh ygawwīkum. A plural participle takes -īn: miḥtājīn 'we need, you (all) need'.",
+  "grammar": "checkpoint 3.3: recycle s3u029–s3u045 (Forms II, III, V, VI, VII, VIII, X)",
+  "dialogue": [
+   [
+    "B",
+    "يا شباب، ساعدوني شوي في هالكراتين",
+    "yā shabāb, sāʿdūni shwayy fi hal-karātīn",
+    "Guys, help me a bit with these boxes."
+   ],
+   [
+    "A",
+    "أبشر! بس ليش الشقة حارة جي؟ الكهربا انقطعت؟",
+    "abshir! bas lēsh ish-shigga ḥārra chī? il-kahraba ingiṭʿat?",
+    "Sure! But why's the flat so hot? Has the power gone off?"
+   ],
+   [
+    "B",
+    "لا، المكيف ما يشتغل. دورت على رقم صاحب الشقة",
+    "la, il-mkayyif ma yishtaghil. dawwart ʿala ragam ṣāḥib ish-shigga",
+    "No, the AC isn't working. I've been looking for the landlord's number."
+   ],
+   [
+    "A",
+    "ولا يهمك. أعرف واحد يصلح مكيفات، بتصل فيه",
+    "wala yhimmak. aʿarf wāḥid yṣalliḥ mkayyifāt, battaṣil fīh",
+    "Don't worry. I know a guy who fixes ACs; I'll call him."
+   ],
+   [
+    "B",
+    "الله يقويكم يا شباب. تعبتوا وايد اليوم",
+    "allāh ygawwīkum yā shabāb. tiʿabtu wāyid il-yōm",
+    "Thanks for all the work, guys. You've worked so hard today."
+   ],
+   [
+    "A",
+    "عادي! بس انت محتاج ثلاجة يديدة",
+    "ʿādi! bas inta miḥtāj thallāja yidīda",
+    "No problem! But you need a new fridge."
+   ],
+   [
+    "B",
+    "صح. ودوني السوق باكر، والغدا علي",
+    "ṣaḥḥ. waddūni s-sūg bāchir, w il-ghada ʿalay",
+    "True. Take me to the market tomorrow, and lunch is on me."
+   ],
+   [
+    "A",
+    "اتفقنا! والله استانسنا وياك اليوم",
+    "ittafagna! wallāh istānasna wiyyāk il-yōm",
+    "Deal! Honestly, we had a great time with you today."
+   ]
+  ],
+  "items": [
+   [
+    "ساعدوني",
+    "sāʿdūni",
+    "help me (to a group)",
+    "ساعدوني",
+    "to one man: sāʿidni; to one woman: sāʿdīni"
+   ],
+   [
+    "الكهربا انقطعت",
+    "il-kahraba ingiṭʿat",
+    "the power's gone off, there's a power cut",
+    "انقطعت الكهرباء",
+    ""
+   ],
+   [
+    "الله يقويكم",
+    "allāh ygawwīkum",
+    "God give you strength (to a group, said to people working)",
+    "الله يقويكم",
+    "to one man: allāh ygawwīk (الله يقويك)"
+   ],
+   [
+    "محتاجين",
+    "miḥtājīn",
+    "we need; you (all) need; in need of (a group)",
+    "محتاجون",
+    "one man: miḥtāj; one woman: miḥtāja"
+   ],
+   [
+    "ودوني",
+    "waddūni",
+    "take me (to a group)",
+    "خذوني",
+    "to one man: waddni (ودني); to one woman: waddīni (وديني)"
+   ],
+   [
+    "استانسنا وياك",
+    "istānasna wiyyāk",
+    "we had a great time with you (to a man)",
+    "استمتعنا معك",
+    "to a woman: istānasna wiyyāch (استانسنا وياج)"
+   ]
+  ]
+ }
+]
