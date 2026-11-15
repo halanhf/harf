@@ -263,7 +263,7 @@ test("colours: every text/background token pair passes WCAG AA (4.5:1) in light 
 test("back gesture: a lesson closes on back, back (asking first) without leaving the app or adding history without a tap",()=>{
   // runs the page's history code against a fake browser history. chrome skips entries a page adds without a fresh tap,
   // so the next back would quit the app: every push must come from a tap
-  const main=html.match(/<script>\n\(function\(\)\{([\s\S]*?)<\/script>/)[1];
+  const main=html.match(/<script>\r?\n\(function\(\)\{([\s\S]*?)<\/script>/)[1];
   const code=main.slice(main.indexOf("let skipPop"),main.indexOf("function show("));
   const entries=[{state:null}]; let at=0, tap=false; const pops=[], clicks=[], pushes=[];
   const history={get state(){ return entries[at].state; },get length(){ return entries.length; },
