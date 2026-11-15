@@ -245,3 +245,15 @@ test("built app: an update precaches fresh files, not the previous version still
   assert.match(sw,/addAll\(SHELL\.map\(u=>new Request\(u,\{cache:"reload"\}\)\)\)/);
   assert.match(sw,/const CACHE="harf-v[0-9a-f]{10}"/);
 });
+test("colours: every text/background token pair passes WCAG AA (4.5:1) in light and dark",()=>{
+  const css=html.match(/<style>([\s\S]*?)<\/style>/)[1];
+  const vars=src=>Object.fromEntries([...src.matchAll(/--([a-z-]+):(#[0-9a-f]{6})/g)].map(m=>[m[1],m[2]]));
+  const light=vars(css.match(/:root\{([^}]*)\}/)[1]), dark={...light,...vars(css.match(/:root\[data-theme="dark"\]\{([^}]*)\}/)[1])};
+  const lum=h=>{ const c=[1,3,5].map(i=>parseInt(h.slice(i,i+2),16)/255).map(v=>v<=0.03928?v/12.92:((v+0.055)/1.055)**2.4); return 0.2126*c[0]+0.7152*c[1]+0.0722*c[2]; };
+  const ratio=(a,b)=>{ const x=lum(a), y=lum(b); return (Math.max(x,y)+0.05)/(Math.min(x,y)+0.05); };
+  // [text, background]: body and muted text, links and chips, the primary button, the review badge, right/wrong feedback
+  const pairs=[["ink","paper"],["ink","card"],["muted","paper"],["muted","card"],["muted","tile-soft"],["tile","card"],["tile","tile-soft"],
+    ["saffron-ink","card"],["saffron-ink","paper"],["paper","tile"],["card","saffron-ink"],["good","card"],["bad","card"],["bad","paper"]];
+  for(const [name,t] of [["light",light],["dark",dark]]) for(const [fg,bg] of pairs){ const r=ratio(t[fg],t[bg]); assert.ok(r>=4.5,`${name}: --${fg} on --${bg} is ${r.toFixed(2)}:1`); }
+  assert.match(css,/\.badge\{[^}]*background:var\(--saffron-ink\);color:var\(--card\)/);
+});
