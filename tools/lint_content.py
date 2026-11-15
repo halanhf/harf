@@ -106,6 +106,9 @@ def check_fusha(errs, warns):
         k = re.sub(r"\s+", " ", r[0].replace("\u0640", "")).strip()  # vowelled form: أَمَام and إِمَام, ذَكَر and ذَكَرَ are different words
         if k in seen: errs.append(f"{where}: {r[0]} duplicates {seen[k]}")
         elif norm(r[0]) in {norm(x) for x in seen}: warns.append(f"{where}: {r[0]} looks like another row once vowels are dropped: make sure the english tells them apart")
+        else:
+            bare = lambda w: re.sub(r"^ال", "", norm(w))
+            if bare(r[0]) in {bare(x) for x in seen}: warns.append(f"{where}: {r[0]} is another row with or without the article al-: probably the same word taught twice")
         seen[k] = where
     ids = set()
     for src, r in batches("readings"):
