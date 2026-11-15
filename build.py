@@ -53,11 +53,12 @@ head = f"""<!doctype html>
 <body>
 """
 html = head + rest + "</body>\n</html>\n"
-build = hashlib.sha256(html.encode()).hexdigest()[:10]
+sw_src = (root / "pwa" / "sw.js").read_text(encoding="utf-8").replace("\r\n", "\n")
+build = hashlib.sha256((html + sw_src).encode()).hexdigest()[:10]  # a new page or a new worker gets a new cache
 
 if out.exists(): shutil.rmtree(out)
 shutil.copytree(root / "pwa", out)
-(out / "sw.js").write_text((root / "pwa" / "sw.js").read_text(encoding="utf-8").replace("\r\n", "\n").replace("__BUILD__", build), encoding="utf-8", newline="\n")  # lf on windows too, so ci matches
+(out / "sw.js").write_text(sw_src.replace("__BUILD__", build), encoding="utf-8", newline="\n")  # lf on windows too, so ci matches
 (out / "index.html").write_text(html, encoding="utf-8", newline="\n")
 (out / ".nojekyll").write_text("")
 print(f"built docs/ ({build})")

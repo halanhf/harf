@@ -244,6 +244,9 @@ test("built app: an update precaches fresh files, not the previous version still
   const sw=fs.readFileSync(path.join(__dirname,"..","docs","sw.js"),"utf8");
   assert.match(sw,/addAll\(SHELL\.map\(u=>new Request\(u,\{cache:"reload"\}\)\)\)/);
   assert.match(sw,/const CACHE="harf-v[0-9a-f]{10}"/);
+  // cloudflare pages redirects /index.html to /, and a redirected cached copy fails to open offline: only "./" is stored
+  assert.ok(!/"\.\/index\.html"/.test(sw),"sw must not precache or store ./index.html");
+  assert.match(sw,/const SHELL=\["\.\/",/); assert.match(sw,/c\.put\("\.\/",copy\)/); assert.match(sw,/catch\(\(\)=>caches\.match\("\.\/"\)\)/);
 });
 test("colours: every text/background token pair passes WCAG AA (4.5:1) in light and dark",()=>{
   const css=html.match(/<style>([\s\S]*?)<\/style>/)[1];
