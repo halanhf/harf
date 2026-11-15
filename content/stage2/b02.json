@@ -907,7 +907,7 @@
   "stage": 2,
   "title": "A bad line on the metro",
   "goal": "Deal with a bad line on the metro: check Sēf can hear you, call him back, and say Maryam isn't answering",
-  "tip": "To say something isn't happening right now, put mub before gāʿid: mub gāʿid asmaʿak 'I can't hear you (right now)', Maryam mub gāʿda tradd 'Maryam isn't answering'. Kuwaitis say mū gāʿid. For a woman: mub gāʿda.",
+  "tip": "To say something isn't happening right now, put mub before gāʿid: mub gāʿid asmaʿak 'I can't hear you (right now)', Maryam mub gāʿda trudd 'Maryam isn't answering'. Kuwaitis say mū gāʿid. For a woman: mub gāʿda.",
   "grammar": "negative progressive: mub gāʿid + verb",
   "dialogue": [
    [
@@ -943,7 +943,7 @@
    [
     "B",
     "اتصلت في مريم، بس مب قاعدة ترد",
-    "ittaṣalt fi Maryam, bas mub gāʿda tradd",
+    "ittaṣalt fi Maryam, bas mub gāʿda trudd",
     "I called Maryam, but she isn't answering."
    ],
    [
@@ -1005,10 +1005,10 @@
    ],
    [
     "مب قاعدة ترد",
-    "mub gāʿda tradd",
+    "mub gāʿda trudd",
     "she isn't answering (right now)",
     "لا ترد",
-    "about a man: mub gāʿid yradd; you'll also hear just ma tradd (ما ترد)"
+    "about a man: mub gāʿid yradd; you'll also hear just ma trudd (ما ترد)"
    ],
    [
     "بكلمها",
