@@ -1556,7 +1556,7 @@
   "stage": 4,
   "title": "Checkpoint 4.7: back in the majlis",
   "goal": "Checkpoint: in Bū Rāshid's majlis, with Sēf and Rāshid there, play down how you helped Rāshid, and keep your English out of it",
-  "tip": "Review, and now you say it: ma ḥabbēt atkallam ʿan il-mawẓūʿ, min ṣijji, ma tingāl, w bas, the future (ma bagūlha), ashṭar minni, wala + noun, akīd, ʿumri ma and a question word at the end (gāl-lak shu?). Recognise the proverb in Bū Rāshid's line.",
+  "tip": "Review, and now you say it: ma ḥabbēt atkallam ʿan il-mawẓūʿ, min ṣijji, w bas, the future (ma bagūlha), ashṭar minni, wala + noun, akīd, ʿumri ma and a question word at the end (gāl-lak shu?). Recognise the proverb in Bū Rāshid's line.",
   "grammar": "checkpoint 4.7 (s4u084–s4u095): proverbs for recognition, youth speech and register",
   "dialogue": [
    [
@@ -1579,9 +1579,9 @@
    ],
    [
     "B",
-    "يستاهل! أكيد تدرب عليه وايد، وما خلى ولا غلطة",
-    "yistāhil! akīd tdarrab ʿalēh wāyid, w ma khalla wala ghalṭa",
-    "He deserves it! He must have practised it a lot, and he didn't leave a single mistake."
+    "يستاهل! أكيد تدرب عليه، وما خلى ولا غلطة",
+    "yistāhil! akīd tdarrab ʿalēh, w ma khalla wala ghalṭa",
+    "He deserves it! He must have practised it, and he didn't leave a single mistake."
    ],
    [
     "A",
@@ -1591,9 +1591,9 @@
    ],
    [
     "B",
-    "لا والله، بس ما حبيت أتكلم عن الموضوع",
-    "la wallāh, bas ma ḥabbēt atkallam ʿan il-mawẓūʿ",
-    "No, really, I just didn't want to talk about it."
+    "من صجي، ما حبيت أتكلم عن الموضوع",
+    "min ṣijji, ma ḥabbēt atkallam ʿan il-mawẓūʿ",
+    "Honestly, I just didn't want to talk about it."
    ],
    [
     "A",
@@ -1603,9 +1603,9 @@
    ],
    [
     "B",
-    "قال لك شو؟! بس ويا راشد. هني عربي وبس، وما بقولها مرة ثانية",
-    "gāl-lak shu?! bas wiyya Rāshid. hni ʿarabi w bas, w ma bagūlha marra thānya",
-    "He told you what?! Only with Rāshid. In here it's Arabic only, and I won't say it again."
+    "قال لك شو؟! هني عربي وبس",
+    "gāl-lak shu?! hni ʿarabi w bas",
+    "He told you what?! In here it's Arabic only."
    ],
    [
     "A",
@@ -1615,9 +1615,9 @@
    ],
    [
     "B",
-    "أبد يا عمي! عمري ما قلتها قدامك، ومن صجي ما تنقال هني",
-    "abad yā ʿammi! ʿumri ma gilt-ha jiddāmak, w min ṣijji ma tingāl hni",
-    "Never, uncle! I've never said it in front of you, and honestly, it's not a word for in here."
+    "أبد يا عمي! عمري ما قلتها، وما بقولها!",
+    "abad yā ʿammi! ʿumri ma gilt-ha, w ma bagūlha!",
+    "Never, uncle! I've never said it, and I won't!"
    ]
   ],
   "items": [
