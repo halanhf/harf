@@ -1,0 +1,3460 @@
+[
+ {
+  "id": "s5u032",
+  "stage": 5,
+  "title": "Saʿādat, maʿāli, sumuww: titles at work",
+  "goal": "At the office, Maryam briefs you before a director general's visit: which title goes in writing, what to call him, and what not to say",
+  "tip": "Titles go before a post or a name, in writing and formal speech: saʿādat il-mudīr il-ʿāmm, maʿāli l-wazīr. Face to face, the spoken honorific is enough: ṭāl ʿumrak. To check what to say, ask shu nigūl-lah?: shu nigūl-lah fi l-īmēl? 'what do we call him in the email?'",
+  "grammar": "honorifics: written titles (saʿādat, maʿāli, sumuww) vs the spoken ṭāl ʿumrak",
+  "dialogue": [
+   [
+    "A",
+    "باكر يزورنا المدير العام من الحكومة، وبو سعيد يبينا كلنا في استقباله",
+    "bāchir yzūrna l-mudīr il-ʿāmm min il-ḥukūma, w Bū Saʿīd yabīna killna fi stiqbālah",
+    "Tomorrow the director general from the government is visiting us, and Bū Saʿīd wants all of us there to welcome him."
+   ],
+   [
+    "B",
+    "زين، وشو نقول له؟ يا شيخ؟",
+    "zēn, w shu nigūl-lah? yā shēkh?",
+    "OK, and what do we call him? Yā shēkh?"
+   ],
+   [
+    "A",
+    "لا، هو مب شيخ. في الإيميل نكتب «سعادة المدير العام»، وقدامه نقول طال عمرك",
+    "lā, huwa mub shēkh. fi l-īmēl niktib \"saʿādat il-mudīr il-ʿāmm\", w jiddāmah nigūl ṭāl ʿumrak",
+    "No, he isn't a sheikh. In the email we write \"His Excellency the Director General\", and to his face we say ṭāl ʿumrak."
+   ],
+   [
+    "B",
+    "وإذا زارنا وزير؟ نكتب سعادة بعد؟",
+    "w idha zārna wazīr? niktib saʿāda baʿad?",
+    "And if a minister visits us? Do we write saʿāda too?"
+   ],
+   [
+    "A",
+    "لا، للوزير نكتب «معالي الوزير». و«سمو الشيخ» للشيوخ من الأسر الحاكمة",
+    "lā, lil-wazīr niktib \"maʿāli l-wazīr\". w \"sumuww ish-shēkh\" lish-shyūkh min il-usar il-ḥākma",
+    "No, for a minister we write \"His Excellency the Minister\". And \"His Highness the Sheikh\" is for sheikhs from the ruling families."
+   ],
+   [
+    "B",
+    "فهمت. يعني الألقاب في الكتابة والكلام الرسمي؟",
+    "fihimt. yaʿni l-alqāb fi l-kitāba w il-kalām ir-rasmi?",
+    "I see. So the titles are for writing and formal speech?"
+   ],
+   [
+    "A",
+    "هيه. وفي الكلام طال عمرك وبس. بس لا تقول له يا ريّال!",
+    "hē. w fi l-kalām ṭāl ʿumrak w bas. bas la tgūl-lah yā rayyāl!",
+    "Yes. And when you're talking, just ṭāl ʿumrak. But don't call him yā rayyāl!"
+   ],
+   [
+    "B",
+    "لا تخافين، ولا برو بعد! بكون رسمي من أول ما يدخل",
+    "la tkhāfīn, wala brō baʿad! bakūn rasmi min awwal ma yidkhil",
+    "Don't worry, and no \"bro\" either! I'll be formal from the moment he walks in."
+   ],
+   [
+    "A",
+    "زين. وخلك على العربي، هو يحب يسمع الشباب يتكلمون عربي",
+    "zēn. w khallak ʿala l-ʿarabi, huwa yḥibb yismaʿ ish-shabāb yitkallamūn ʿarabi",
+    "Good. And stick to Arabic; he likes hearing young people speak Arabic."
+   ],
+   [
+    "B",
+    "إن شاء الله، وحياه الله",
+    "in shāʼ allāh, w ḥayyāh allāh",
+    "I will, and he's very welcome."
+   ]
+  ],
+  "items": [
+   [
+    "سعادة المدير",
+    "saʿādat il-mudīr",
+    "His Excellency the Director (formal)",
+    "سعادة المدير",
+    "(recognise); written before a senior official's post or name"
+   ],
+   [
+    "معالي الوزير",
+    "maʿāli l-wazīr",
+    "His Excellency the Minister (formal)",
+    "معالي الوزير",
+    "(recognise)"
+   ],
+   [
+    "سمو الشيخ",
+    "sumuww ish-shēkh",
+    "His Highness the Sheikh (formal)",
+    "سمو الشيخ",
+    "(recognise); for sheikhs of the ruling families"
+   ],
+   [
+    "الأسر الحاكمة",
+    "il-usar il-ḥākma",
+    "the ruling families (formal)",
+    "الأسر الحاكمة",
+    "(recognise); one: il-usra l-ḥākma (الأسرة الحاكمة)"
+   ],
+   [
+    "المدير العام",
+    "il-mudīr il-ʿāmm",
+    "the director general",
+    "المدير العام",
+    ""
+   ],
+   [
+    "شو نقول له؟",
+    "shu nigūl-lah?",
+    "what do we call him? what do we say to him?",
+    "ماذا نقول له؟",
+    "to her: shu nigūl-lha? (شو نقول لها؟)"
+   ],
+   [
+    "الألقاب",
+    "il-alqāb",
+    "(official) titles",
+    "الألقاب",
+    "one: il-laqab (اللقب); q kept, as in fuṣḥā"
+   ],
+   [
+    "من الحكومة",
+    "min il-ḥukūma",
+    "from the government",
+    "من الحكومة",
+    ""
+   ],
+   [
+    "في الكتابة",
+    "fi l-kitāba",
+    "in writing",
+    "في الكتابة",
+    ""
+   ]
+  ],
+  "culture": "In official UAE writing, titles come before the name and follow fixed rules. Ṣāḥib is-sumuww (His Highness) goes with rulers and members of the ruling families, maʿāli (His Excellency) with ministers, and saʿādat with senior officials such as directors general, ambassadors and members of the Federal National Council. Use sheikh only for someone who really is one.",
+  "receptive": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ {
+  "id": "s5u033",
+  "stage": 5,
+  "title": "Taking your leave, the old way",
+  "goal": "In Bū Rāshid's majlis, with Sēf there, hear how visitors entered and left a sheikh's majlis in the old days, and take your leave the same way",
+  "tip": "Before leaving an elder or a host, ask, don't announce: ṭāl ʿumrak, idha ma shay lāzim, binitrakhkhaṣ 'sir, if there's nothing you need, we'll take our leave'. The host may keep you (igʿid 'stay') or let you go with allāh ywaffigkum, and you answer āmīn.",
+  "grammar": "taking leave from an elder: ṭāl ʿumrak, idha ma shay lāzim, binitrakhkhaṣ",
+  "dialogue": [
+   [
+    "A",
+    "أيام أول، إذا رحت مجلس الشيخ، تقول للعسكري عند الباب: أنا فلان بن فلان",
+    "ayyām awwal, idha riḥt majlis ish-shēkh, tgūl lil-ʿaskari ʿind il-bāb: ana fulān bin fulān",
+    "In the old days, if you went to the sheikh's majlis, you told the guard at the door: I'm so-and-so, son of so-and-so."
+   ],
+   [
+    "B",
+    "وهو يدخلك على طول؟",
+    "w huwa ydakhkhlak ʿala ṭūl?",
+    "And he let you straight in?"
+   ],
+   [
+    "A",
+    "لا، يستأذن الشيخ أول. والشيوخ يعرفونك من اسم أبوك ويدك",
+    "lā, yistaʼdhin ish-shēkh awwal. w ish-shyūkh yaʿarfūnak min ism ubūk w yaddak",
+    "No, he asked the sheikh's permission first. And the sheikhs knew you by your father's and grandfather's name."
+   ],
+   [
+    "B",
+    "وإذا دخلت، أقعد على طول؟",
+    "w idha dakhalt, agʿid ʿala ṭūl?",
+    "And once I'm in, do I sit down straight away?"
+   ],
+   [
+    "A",
+    "لا يا ولدي، ما تقعد لين يقول لك الشيخ تفضل، وما تبدا الكلام قبله",
+    "lā yā wildi, ma tigʿid lēn ygūl-lak ish-shēkh tfaẓẓal, w ma tibda l-kalām gablah",
+    "No, son: you don't sit until the sheikh says \"please\", and you don't start talking before he does."
+   ],
+   [
+    "B",
+    "وشلون الواحد يطلع؟ ما أبي أطلع بدون ما أستأذن",
+    "w shlōn il-wāḥid yiṭlaʿ? ma abi aṭlaʿ bidūn ma astaʼdhin",
+    "And how does one leave? I wouldn't want to leave without asking."
+   ],
+   [
+    "A",
+    "تقول: طال عمرك، إذا ما شي لازم، بنترخص. والشيخ يقول: اقعد، ولّا الله يوفقكم",
+    "tgūl: ṭāl ʿumrak, idha ma shay lāzim, binitrakhkhaṣ. w ish-shēkh ygūl: igʿid, walla allāh ywaffigkum",
+    "You say: \"Sir, if there's nothing you need, we'll take our leave.\" And the sheikh says \"Stay\", or \"God grant you success\"."
+   ],
+   [
+    "B",
+    "يلا، طال عمرك، إذا ما شي لازم، بنترخص. الوقت تأخر",
+    "yalla, ṭāl ʿumrak, idha ma shay lāzim, binitrakhkhaṣ. il-wagt taʼakhkhar",
+    "Right then, sir: if there's nothing you need, we'll take our leave. It's getting late."
+   ],
+   [
+    "A",
+    "وين؟ بدري! بس يلا، الله يوفقكم",
+    "wēn? badri! bas yalla, allāh ywaffigkum",
+    "What, already? It's early! But off you go; God grant you success."
+   ],
+   [
+    "B",
+    "آمين يا عمي، الله يحفظك",
+    "āmīn yā ʿammi, allāh yiḥfaẓak",
+    "Amen, uncle. God keep you."
+   ]
+  ],
+  "items": [
+   [
+    "بنترخص",
+    "binitrakhkhaṣ",
+    "we'll take our leave, may we go now? (respectful)",
+    "نستأذن",
+    ""
+   ],
+   [
+    "إذا ما شي لازم",
+    "idha ma shay lāzim",
+    "if there's nothing (else) you need (before taking leave, respectful)",
+    "إذا لم يكن هناك شيء",
+    ""
+   ],
+   [
+    "فلان بن فلان",
+    "fulān bin fulān",
+    "so-and-so, son of so-and-so (how a visitor named himself)",
+    "فلان بن فلان",
+    "(recognise)"
+   ],
+   [
+    "العسكري",
+    "il-ʿaskari",
+    "the guard, the soldier",
+    "العسكري / الحارس",
+    "(recognise)"
+   ],
+   [
+    "يستأذن",
+    "yistaʼdhin",
+    "he asks permission",
+    "يستأذن",
+    "I ask permission: astaʼdhin (أستأذن)"
+   ],
+   [
+    "ما تقعد لين",
+    "ma tigʿid lēn",
+    "you don't sit down until",
+    "لا تجلس حتى",
+    "(recognise)"
+   ],
+   [
+    "تبدا الكلام",
+    "tibda l-kalām",
+    "(you) start the conversation, speak first (to a man)",
+    "تبدأ الكلام",
+    "to a woman: tibdīn il-kalām (تبدين الكلام)"
+   ],
+   [
+    "يعرفونك من اسم أبوك",
+    "yaʿarfūnak min ism ubūk",
+    "they know you by your father's name (to a man)",
+    "يعرفونك من اسم أبيك",
+    "(recognise); to a woman: yaʿarfūnich min ism ubūch"
+   ],
+   [
+    "مجلس الشيخ",
+    "majlis ish-shēkh",
+    "the sheikh's majlis",
+    "مجلس الشيخ",
+    ""
+   ]
+  ],
+  "culture": "In the old days, a visitor to a ruler's majlis gave his name at the gate as fulān bin fulān, and the guard asked the sheikh's permission to let him in. The sheikhs knew people by their father's or grandfather's name. Inside, you didn't sit until the sheikh invited you, or speak until he spoke to you, and to leave you asked his permission first.",
+  "receptive": [
+   2,
+   3,
+   5,
+   7
+  ]
+ },
+ {
+  "id": "s5u034",
+  "stage": 5,
+  "title": "Labbēh, ṭāl ʿumrak!",
+  "goal": "At the office, your manager Bū Saʿīd calls you in before a meeting: answer the way you answer a senior, take his requests, and offer more help",
+  "tip": "When an elder or a senior calls your name, answer labbēh 'yes? at your service', not shu?. Take a request with samm ṭāl ʿumrak or ḥāẓir, and offer more: tāmirni ʿala shay thāni? 'anything else I can do for you?'. An elder may thank you with allāh yirẓa ʿalēk.",
+  "grammar": "answering a senior: labbēh, samm ṭāl ʿumrak, tāmirni ʿala shay thāni?",
+  "dialogue": [
+   [
+    "A",
+    "سالم! تعال لو سمحت، أبيك دقيقة",
+    "Sālim! taʿāl law samaḥt, abīk digīga",
+    "Sālim! Come here, please; I need you for a minute."
+   ],
+   [
+    "B",
+    "لبيه طال عمرك",
+    "labbēh ṭāl ʿumrak",
+    "Yes, sir?"
+   ],
+   [
+    "A",
+    "الاجتماع بعد ساعة، والتقرير للحين ما وصلني",
+    "il-ijtimāʿ baʿd sāʿa, w it-taqrīr lil-ḥīn ma wiṣalni",
+    "The meeting's in an hour, and I still haven't got the report."
+   ],
+   [
+    "B",
+    "سم طال عمرك، الحين أطبعه وأييبه لك",
+    "samm ṭāl ʿumrak, il-ḥīn aṭbaʿah w ayībah lak",
+    "Right away, sir; I'll print it now and bring it to you."
+   ],
+   [
+    "A",
+    "وطرش نسخة لمريم بعد، عشان تراجعه قبل الاجتماع",
+    "w ṭarrish nuskha l-Maryam baʿad, ʿashān trājʿah gabil il-ijtimāʿ",
+    "And send a copy to Maryam too, so she can go over it before the meeting."
+   ],
+   [
+    "B",
+    "حاضر. تامرني على شي ثاني؟",
+    "ḥāẓir. tāmirni ʿala shay thāni?",
+    "Certainly. Anything else I can do for you?"
+   ],
+   [
+    "A",
+    "وقول للشباب إن الاجتماع بيتأخر ربع ساعة",
+    "w gūl lish-shabāb inn il-ijtimāʿ biyitʼakhkhar rubʿ sāʿa",
+    "And tell the lads the meeting will start a quarter of an hour late."
+   ],
+   [
+    "B",
+    "أبشر، الحين أقول لهم",
+    "abshir, il-ḥīn agūl-lhum",
+    "Consider it done; I'll tell them now."
+   ],
+   [
+    "A",
+    "ما قصرت يا ولدي، الله يرضى عليك",
+    "mā gaṣṣart yā wildi, allāh yirẓa ʿalēk",
+    "Thank you, son; bless you."
+   ],
+   [
+    "B",
+    "ما سوينا شي، هذا واجبي",
+    "mā sawwēna shay, hādha wājbi",
+    "It's nothing; it's my job."
+   ]
+  ],
+  "items": [
+   [
+    "لبيه",
+    "labbēh",
+    "yes? at your service (answering when an elder or a senior calls you)",
+    "لبيك",
+    "the older form: labbēk (لبيك)"
+   ],
+   [
+    "سم طال عمرك",
+    "samm ṭāl ʿumrak",
+    "right away, sir; certainly (respectful) (to a man)",
+    "",
+    "to a woman: samm ṭāl ʿumrich (سم طال عمرج)"
+   ],
+   [
+    "تامرني على شي ثاني؟",
+    "tāmirni ʿala shay thāni?",
+    "anything else I can do for you? (lit. do you order me anything else?) (to a man)",
+    "هل تأمرني بشيء آخر؟",
+    "to a woman: tāmrīni ʿala shay thāni? (تامريني على شي ثاني؟)"
+   ],
+   [
+    "الله يرضى عليك",
+    "allāh yirẓa ʿalēk",
+    "bless you (an elder to a younger person; lit. may God be pleased with you) (to a man)",
+    "رضي الله عنك",
+    "(recognise); to a woman: allāh yirẓa ʿalēch"
+   ],
+   [
+    "هذا واجبي",
+    "hādha wājbi",
+    "it's my job, it's my duty, it's the least I can do",
+    "هذا واجبي",
+    ""
+   ],
+   [
+    "أبيك دقيقة",
+    "abīk digīga",
+    "I need you for a minute (to a man)",
+    "أريدك دقيقة",
+    "(recognise); to a woman: abīch digīga (أبيج دقيقة)"
+   ],
+   [
+    "تراجعه",
+    "trājʿah",
+    "she goes over it, she reviews it; you go over it (to a man)",
+    "تراجعه",
+    "to a woman: trājʿīnah (تراجعينه)"
+   ],
+   [
+    "بيتأخر ربع ساعة",
+    "biyitʼakhkhar rubʿ sāʿa",
+    "it'll be a quarter of an hour late (a masculine thing)",
+    "سيتأخر ربع ساعة",
+    "a feminine thing: bititʼakhkhar (بتتأخر)"
+   ],
+   [
+    "قول للشباب",
+    "gūl lish-shabāb",
+    "tell the lads, tell the others (to a man)",
+    "قل للشباب",
+    "to a woman: gūlī lish-shabāb (قولي للشباب)"
+   ]
+  ],
+  "receptive": [
+   3,
+   5
+  ]
+ },
+ {
+  "id": "s5u035",
+  "stage": 5,
+  "title": "Oops, sorry! Bravo!",
+  "goal": "At a five-a-side pitch, Rāshid and Sēf react to your game with English interjections; then agree which ones to keep away from Rāshid's dad",
+  "tip": "With friends your age, borrowed interjections are normal: ūps!, sōri, wāw!, brāvo ʿalēk!, yēs!. With elders, switch to the Arabic ones: is-samūḥa for sōri, yā salām or mā shāʼ allāh for wāw. Rāshid's rule: il-ingilīzi lil-malʿab, w il-ʿarabi lil-majlis.",
+  "grammar": "borrowed interjections (sōri, ūps, wāw, brāvo) and their Arabic counterparts",
+  "dialogue": [
+   [
+    "A",
+    "أوبس! سوري، الكورة ضربتك؟",
+    "ūps! sōri, il-kōra ẓarbatak?",
+    "Oops! Sorry, did the ball hit you?"
+   ],
+   [
+    "B",
+    "عادي، ما صار شي",
+    "ʿādi, ma ṣār shay",
+    "It's fine, nothing happened."
+   ],
+   [
+    "A",
+    "يلا دورك. واو! شو هالضربة!",
+    "yalla dōrak. wāw! shu haẓ-ẓarba!",
+    "Go on, your turn. Wow! What a shot!"
+   ],
+   [
+    "B",
+    "يس! أول هدف لي اليوم",
+    "yēs! awwal hadaf li l-yōm",
+    "Yes! My first goal today!"
+   ],
+   [
+    "A",
+    "برافو عليك! سيف، شفت؟ الريّال صار محترف",
+    "brāvo ʿalēk! Sēf, shift? ir-rayyāl ṣār miḥtarif",
+    "Bravo! Sēf, did you see? The guy's turned pro."
+   ],
+   [
+    "B",
+    "لا تبالغ، بس حظ",
+    "la tbālig, bas ḥaẓẓ",
+    "Don't exaggerate; it was just luck."
+   ],
+   [
+    "A",
+    "أوه نو! الكورة طلعت برا الملعب",
+    "ō nō! il-kōra ṭilʿat barra l-malʿab",
+    "Oh no! The ball's gone out of the pitch."
+   ],
+   [
+    "B",
+    "أنا بييبها. بس قدام أبوك ما بقول سوري، بقول السموحة",
+    "ana bayībha. bas jiddām ubūk ma bagūl sōri, bagūl is-samūḥa",
+    "I'll get it. But in front of your dad I won't say \"sorry\", I'll say is-samūḥa."
+   ],
+   [
+    "A",
+    "صح، وبدال واو قول يا سلام ولّا ما شاء الله",
+    "ṣaḥḥ, w badāl wāw gūl yā salām walla mā shāʼ allāh",
+    "Right, and instead of \"wow\" say yā salām or mā shāʼ allāh."
+   ],
+   [
+    "B",
+    "فهمت: الإنقليزي للملعب، والعربي للمجلس!",
+    "fihimt: il-ingilīzi lil-malʿab, w il-ʿarabi lil-majlis!",
+    "Got it: English for the pitch, Arabic for the majlis!"
+   ]
+  ],
+  "items": [
+   [
+    "سوري",
+    "sōri",
+    "sorry (friends only)",
+    "آسف",
+    "with elders: is-samūḥa or āsif"
+   ],
+   [
+    "أوبس!",
+    "ūps!",
+    "oops! (friends only)",
+    "",
+    "(recognise)"
+   ],
+   [
+    "واو!",
+    "wāw!",
+    "wow! (friends only)",
+    "",
+    "(recognise); with elders: yā salām! or mā shāʼ allāh!"
+   ],
+   [
+    "برافو عليك!",
+    "brāvo ʿalēk!",
+    "bravo! well done! (friends only) (to a man)",
+    "أحسنت!",
+    "(recognise); to a woman: brāvo ʿalēch!"
+   ],
+   [
+    "أوه نو!",
+    "ō nō!",
+    "oh no! (friends only)",
+    "",
+    "(recognise)"
+   ],
+   [
+    "يس!",
+    "yēs!",
+    "yes! (cheering) (friends only)",
+    "",
+    ""
+   ],
+   [
+    "أول هدف لي",
+    "awwal hadaf li",
+    "my first goal",
+    "أول هدف لي",
+    ""
+   ],
+   [
+    "الكورة طلعت برا",
+    "il-kōra ṭilʿat barra",
+    "the ball's gone out (of play)",
+    "خرجت الكرة",
+    ""
+   ],
+   [
+    "صار محترف",
+    "ṣār miḥtarif",
+    "he's turned pro, he's become a professional",
+    "أصبح محترفًا",
+    "she: ṣārat miḥtarfa (صارت محترفة)"
+   ]
+  ],
+  "culture": "Young Emiratis switch between Emirati Arabic, fuṣḥā and English every day, and their speech mixes them: Arabic interjections in English sentences, and trendy English expressions in Emirati Arabic. Older people, Emiratis and other Arabs alike, tend to see this mixing as bad Arabic, which is one reason to keep the English for friends.",
+  "task": "This week: with a tutor or exchange partner (search a tutoring site for «Emirati Arabic tutor»), talk for 10 minutes about a match you watched or played. React the way friends do (sōri, wāw!, yēs!). Then retell the best moment for 2 minutes as if to Bū Rāshid's majlis, with Arabic reactions only (is-samūḥa, yā salām, mā shāʼ allāh).",
+  "receptive": [
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ {
+  "id": "s5u036",
+  "stage": 5,
+  "title": "Khaṭīr! Rāshid's new words",
+  "goal": "Rāshid shows you a video of a new burger place, full of the words young people use now; work out what they mean and who you can say them to",
+  "tip": "Young people's praise words often mean the opposite of the dictionary: khaṭīr 'dangerous' means 'amazing', mub ṭabīʿi 'not normal' means 'unreal'. Keep them for friends: khallha wiyya sh-shabāb. To calm a friend down, la tṣīr ōvar 'don't go over the top'.",
+  "grammar": "trendy language: khaṭīr, mub ṭabīʿi, falla, stāyl, ōvar (friends only)",
+  "dialogue": [
+   [
+    "A",
+    "شوف هالفيديو! المطعم اليديد في الجميرا، البرقر خطير",
+    "shūf hal-fīdyo! il-maṭʿam il-yidīd fi l-Jimēra, il-burgar khaṭīr",
+    "Look at this video! The new restaurant in Jumeirah: the burger's insane."
+   ],
+   [
+    "B",
+    "خطير؟ يعني فيه شي غلط؟",
+    "khaṭīr? yaʿni fīh shay ghalaṭ?",
+    "Dangerous? You mean something's wrong with it?"
+   ],
+   [
+    "A",
+    "لا! يعني وايد حلو. والمكان مب طبيعي",
+    "lā! yaʿni wāyid ḥilu. w il-makān mub ṭabīʿi",
+    "No! It means really good. And the place is unreal."
+   ],
+   [
+    "B",
+    "هذي كلمات يديدة علي!",
+    "hādhi kalimāt yidīda ʿalay!",
+    "These words are new to me!"
+   ],
+   [
+    "A",
+    "هذي كلماتنا الحين. والجو هناك فلة، والديكور ستايل",
+    "hādhi kalimātna l-ḥīn. w il-jaww hnāk falla, w id-dīkōr stāyl",
+    "That's how we talk now. And the vibe there is great fun, and the décor's stylish."
+   ],
+   [
+    "B",
+    "وأقدر أقول هالكلام لأبوك؟",
+    "w agdar agūl hal-kalām l-ubūk?",
+    "And can I say this stuff to your dad?"
+   ],
+   [
+    "A",
+    "لا لا، أبوي بيقول شو هالكلام! خلها ويا الشباب",
+    "lā lā, ubūy biygūl shu hal-kalām! khallha wiyya sh-shabāb",
+    "No, no, my dad would say \"what kind of talk is that!\" Save it for the lads."
+   ],
+   [
+    "B",
+    "زين، بس لا تصير أوفر، باقي ما ذقناه",
+    "zēn, bas la tṣīr ōvar, bāgi ma dhugnāh",
+    "OK, but don't go over the top; we haven't tried it yet."
+   ],
+   [
+    "A",
+    "خلاص، الخميس نروح كلنا، وانت قول لي إذا خطير ولّا لا",
+    "khalāṣ, il-khamīs nrūḥ killna, w inta gūl-li idha khaṭīr walla lā",
+    "Fine, on Thursday we'll all go, and you tell me if it's insane or not."
+   ],
+   [
+    "B",
+    "اتفقنا! والديكور بحكم عليه أنا",
+    "ittafagna! w id-dīkōr baḥkum ʿalēh ana",
+    "Deal! And I'll be the judge of the décor."
+   ]
+  ],
+  "items": [
+   [
+    "خطير",
+    "khaṭīr",
+    "amazing, insane (lit. dangerous) (friends only)",
+    "رائع",
+    "(recognise); also means 'serious, dangerous'"
+   ],
+   [
+    "مب طبيعي",
+    "mub ṭabīʿi",
+    "unreal, amazing (lit. not normal) (friends only)",
+    "مذهل",
+    "(recognise)"
+   ],
+   [
+    "فلة",
+    "falla",
+    "great fun, a great vibe (friends only)",
+    "ممتع",
+    "(recognise)"
+   ],
+   [
+    "ستايل",
+    "stāyl",
+    "stylish, cool (friends only)",
+    "أنيق",
+    "(recognise)"
+   ],
+   [
+    "لا تصير أوفر",
+    "la tṣīr ōvar",
+    "don't go over the top, don't overdo it (friends only) (to a man)",
+    "لا تبالغ",
+    "to a woman: la tṣīrīn ōvar (لا تصيرين أوفر)"
+   ],
+   [
+    "كلمات يديدة علي",
+    "kalimāt yidīda ʿalay",
+    "words that are new to me",
+    "كلمات جديدة علي",
+    ""
+   ],
+   [
+    "خلها ويا الشباب",
+    "khallha wiyya sh-shabāb",
+    "save it for the lads, keep it among friends (to a man)",
+    "اتركها مع الشباب",
+    "to a woman: khallīha wiyya l-banāt (خليها ويا البنات)"
+   ],
+   [
+    "الديكور",
+    "id-dīkōr",
+    "the décor",
+    "الديكور",
+    ""
+   ],
+   [
+    "بحكم عليه",
+    "baḥkum ʿalēh",
+    "I'll judge it, I'll be the judge of it (a masculine thing)",
+    "سأحكم عليه",
+    ""
+   ]
+  ],
+  "receptive": [
+   0,
+   1,
+   2,
+   3
+  ]
+ },
+ {
+  "id": "s5u037",
+  "stage": 5,
+  "title": "Tislam īdak!",
+  "goal": "At lunch in Bū Rāshid's majlis, with Sēf there, praise the fish he caught, thank him the way guests do, and refuse a third helping politely",
+  "tip": "Thank a host for food he made with tislam īdak 'bless your hands'; he answers bil-ʿāfya, and you say allāh yʿāfīk. Praise it with ma ʿalēk zōd 'it couldn't be better', and refuse more with allāh la yhīnak, bas shbiʿt. If he says hādha min ṭībak, he is returning the compliment.",
+  "grammar": "thanks and praise for a host: tislam īdak, ma ʿalēk zōd, allāh la yhīnak",
+  "dialogue": [
+   [
+    "A",
+    "تفضلوا، الغدا جاهز. هالسمك صدته بإيدي الصبح",
+    "tfaẓẓalu, il-ghada yāhiz. has-simach ṣidtah b-īdi iṣ-ṣubḥ",
+    "Come and eat, lunch is ready. I caught this fish myself this morning."
+   ],
+   [
+    "B",
+    "ما شاء الله! تسلم إيدك يا عمي",
+    "mā shāʼ allāh! tislam īdak yā ʿammi",
+    "Mā shāʼ allāh! Bless your hands, uncle."
+   ],
+   [
+    "A",
+    "بالعافية عليك يا ولدي",
+    "bil-ʿāfya ʿalēk yā wildi",
+    "Enjoy it, son."
+   ],
+   [
+    "B",
+    "الله يعافيك. والله ما عليك زود، أحلى سمك أكلته",
+    "allāh yʿāfīk. wallāh ma ʿalēk zōd, aḥla simach akaltah",
+    "God give you health. Honestly, it couldn't be better; the best fish I've ever had."
+   ],
+   [
+    "A",
+    "هذا من طيبك. كل، لا تستحي",
+    "hādha min ṭībak. kil, la tistiḥi",
+    "That's kind of you. Eat, don't be shy."
+   ],
+   [
+    "B",
+    "الله لا يهينك يا عمي، بس والله شبعت",
+    "allāh la yhīnak yā ʿammi, bas wallāh shbiʿt",
+    "Thank you so much, uncle, but honestly, I'm full."
+   ],
+   [
+    "A",
+    "وين شبعت؟ ما أكلت شي! سيف، حط له",
+    "wēn shbiʿt? ma kalt shay! Sēf, ḥuṭṭ lah",
+    "Full? You've hardly eaten! Sēf, give him some more."
+   ],
+   [
+    "B",
+    "لا والله، أكلت وايد. تسلم يا عمي، الله يخليك لنا",
+    "lā wallāh, akalt wāyid. tislam yā ʿammi, allāh ykhallīk lana",
+    "No, really, I've eaten loads. Thank you, uncle; God keep you for us."
+   ],
+   [
+    "A",
+    "الله يسلمك. عيل القهوة! سيف، صب لربعك",
+    "allāh ysallmak. ʿayal il-gahwa! Sēf, ṣubb l-rabʿak",
+    "God keep you. Coffee, then! Sēf, pour for your friends."
+   ]
+  ],
+  "items": [
+   [
+    "تسلم إيدك",
+    "tislam īdak",
+    "bless your hands (thanks for food or work someone made) (to a man)",
+    "سلمت يداك",
+    "to a woman: tislam īdich (تسلم إيدج)"
+   ],
+   [
+    "ما عليك زود",
+    "ma ʿalēk zōd",
+    "it couldn't be better, you can't top that (praise) (to a man)",
+    "لا مزيد عليه",
+    "to a woman: ma ʿalēch zōd (ما عليج زود)"
+   ],
+   [
+    "هذا من طيبك",
+    "hādha min ṭībak",
+    "that's kind of you (lit. that's from your goodness) (to a man)",
+    "هذا من طيبتك",
+    "to a woman: hādha min ṭībich (هذا من طيبج)"
+   ],
+   [
+    "الله لا يهينك",
+    "allāh la yhīnak",
+    "thank you so much (lit. may God never humble you) (to a man)",
+    "",
+    "to a woman: allāh la yhīnich (الله لا يهينج)"
+   ],
+   [
+    "صدته بإيدي",
+    "ṣidtah b-īdi",
+    "I caught it myself (lit. with my hand) (a fish)",
+    "اصطدته بيدي",
+    "(recognise)"
+   ],
+   [
+    "أحلى سمك أكلته",
+    "aḥla simach akaltah",
+    "the best fish I've ever eaten",
+    "أطيب سمك أكلته",
+    ""
+   ],
+   [
+    "الله يخليك لنا",
+    "allāh ykhallīk lana",
+    "God keep you for us (warm thanks to an elder or a host) (to a man)",
+    "حفظك الله لنا",
+    "to a woman: allāh ykhallīch lana (الله يخليج لنا)"
+   ],
+   [
+    "حط له",
+    "ḥuṭṭ lah",
+    "give him some (more) (serving food) (to a man)",
+    "ضع له",
+    "(recognise); to a woman: ḥuṭṭī lah (حطي له)"
+   ],
+   [
+    "صب لربعك",
+    "ṣubb l-rabʿak",
+    "pour (coffee) for your friends (to a man)",
+    "صب لأصحابك",
+    "(recognise); to a woman: ṣubbī l-rabʿich"
+   ]
+  ],
+  "receptive": [
+   4,
+   7,
+   8
+  ]
+ },
+ {
+  "id": "s5u038",
+  "stage": 5,
+  "title": "Same news, office style",
+  "goal": "At the office, Maryam helps you turn \"the report's late, long story\" into something you can say in Bū Saʿīd's meeting",
+  "tip": "In a meeting, keep Gulf grammar but borrow fuṣḥā words, and keep their q: fi l-ḥaqīqa 'in fact', nitwaqqaʿ 'we expect'. Give the reason with bi-sabab + noun, not ʿashān: bi-sabab taʼakhkhur il-bayānāt. With Sēf you'd still say it-taqrīr biyitʼakhkhar, is-sālfa ṭawīla!",
+  "grammar": "register shifting: everyday → office (fi l-ḥaqīqa, bi-sabab, nitwaqqaʿ; q kept)",
+  "dialogue": [
+   [
+    "A",
+    "بو سعيد بيسألك في الاجتماع عن التقرير. شو بتقول له؟",
+    "Bū Saʿīd biysaʼlak fi l-ijtimāʿ ʿan it-taqrīr. shu bitgūl-lah?",
+    "Bū Saʿīd will ask you about the report in the meeting. What will you tell him?"
+   ],
+   [
+    "B",
+    "بقول: التقرير بيتأخر شوي، السالفة طويلة!",
+    "bagūl: it-taqrīr biyitʼakhkhar shwayy, is-sālfa ṭawīla!",
+    "I'll say: the report's going to be a bit late, long story!"
+   ],
+   [
+    "A",
+    "هذا كلامك ويا سيف! في الاجتماع لازم تكون رسمي أكثر",
+    "hādha kalāmak wiyya Sēf! fi l-ijtimāʿ lāzim tkūn rasmi akthar",
+    "That's how you talk with Sēf! In the meeting you need to be more formal."
+   ],
+   [
+    "B",
+    "زين. في الحقيقة، التقرير محتاج أسبوع زيادة",
+    "zēn. fi l-ḥaqīqa, it-taqrīr miḥtāj usbūʿ zyāda",
+    "OK. In fact, the report needs one more week. (formal)"
+   ],
+   [
+    "A",
+    "أحسن وايد. وليش؟ لا تقول عشان، قول بسبب",
+    "aḥsan wāyid. w lēsh? la tgūl ʿashān, gūl bi-sabab",
+    "Much better. And why? Don't say ʿashān, say bi-sabab."
+   ],
+   [
+    "B",
+    "بسبب تأخر البيانات من القسم الثاني",
+    "bi-sabab taʼakhkhur il-bayānāt min il-gism ith-thāni",
+    "Due to the delay in the data from the other department. (formal)"
+   ],
+   [
+    "A",
+    "ممتاز. والتاريخ اليديد؟",
+    "mumtāz. w it-tārīkh il-yidīd?",
+    "Excellent. And the new date?"
+   ],
+   [
+    "B",
+    "نتوقع نسلمه يوم الخميس، إن شاء الله",
+    "nitwaqqaʿ nsallmah yōm il-khamīs, in shāʼ allāh",
+    "We expect to hand it in on Thursday, God willing. (formal)"
+   ],
+   [
+    "A",
+    "حلو. شفت؟ نفس الشي، بس بأسلوب ثاني. وفي الإيميل اكتب «نعتذر عن التأخير»",
+    "ḥilu. shift? nafs ish-shay, bas b-uslūb thāni. w fi l-īmēl iktib \"naʿtadhir ʿan it-taʼkhīr\"",
+    "Nice. See? The same thing, just in a different style. And in the email write \"we apologise for the delay\"."
+   ],
+   [
+    "B",
+    "يعني في المكتب بسبب، وويا سيف عشان!",
+    "yaʿni fi l-maktab bi-sabab, w wiyya Sēf ʿashān!",
+    "So at the office bi-sabab, and with Sēf ʿashān!"
+   ]
+  ],
+  "items": [
+   [
+    "في الحقيقة",
+    "fi l-ḥaqīqa",
+    "in fact, actually (formal)",
+    "في الحقيقة",
+    "q kept, as in fuṣḥā"
+   ],
+   [
+    "بسبب",
+    "bi-sabab",
+    "because of, due to (+ noun)",
+    "بسبب",
+    "everyday: ʿashān + verb"
+   ],
+   [
+    "نتوقع",
+    "nitwaqqaʿ",
+    "we expect (formal)",
+    "نتوقع",
+    "q kept in formal talk; everyday speech has g (ma twaggaʿt-ha)"
+   ],
+   [
+    "محتاج أسبوع زيادة",
+    "miḥtāj usbūʿ zyāda",
+    "(it) needs one more week, needs another week",
+    "يحتاج إلى أسبوع إضافي",
+    "a feminine thing: miḥtāja (محتاجة)"
+   ],
+   [
+    "تأخر البيانات",
+    "taʼakhkhur il-bayānāt",
+    "the delay in the data (formal)",
+    "تأخر البيانات",
+    ""
+   ],
+   [
+    "التاريخ اليديد",
+    "it-tārīkh il-yidīd",
+    "the new date",
+    "التاريخ الجديد",
+    ""
+   ],
+   [
+    "بأسلوب ثاني",
+    "b-uslūb thāni",
+    "in a different style, another way",
+    "بأسلوب آخر",
+    ""
+   ],
+   [
+    "نعتذر عن التأخير",
+    "naʿtadhir ʿan it-taʼkhīr",
+    "we apologise for the delay (formal, in writing)",
+    "نعتذر عن التأخير",
+    "(recognise)"
+   ],
+   [
+    "بيسألك",
+    "biysaʼlak",
+    "he'll ask you (to a man)",
+    "سيسألك",
+    "to a woman: biysaʼlich (بيسألج)"
+   ]
+  ],
+  "receptive": [
+   7
+  ]
+ },
+ {
+  "id": "s5u039",
+  "stage": 5,
+  "title": "You sound like the news!",
+  "goal": "In Bū Rāshid's majlis, with Sēf there, you answer him in office Arabic; he teases you, and you switch back to majlis talk",
+  "tip": "chinn- + ending + noun means 'as if … were': chinnak mudhīʿ akhbār 'like a newsreader (to a man)'. In the majlis, drop the office words (yitqaddam bi-shakl mumtāz) for plain talk: ish-shughul zēn, bas fīh ẓaghiṭ wāyid. You'll see it written جنك.",
+  "grammar": "register shifting: office → majlis (chinnak + noun 'as if you were')",
+  "dialogue": [
+   [
+    "A",
+    "يا هلا بسالم! شو علومك؟ وشو أخبار الشغل؟",
+    "yā hala b-Sālim! shu ʿilūmak? w shu akhbār ish-shughul?",
+    "Welcome, Sālim! How are things? And how's work?"
+   ],
+   [
+    "B",
+    "الحمد لله يا عمي. في الحقيقة، المشروع يتقدم بشكل ممتاز",
+    "il-ḥamdu lillāh yā ʿammi. fi l-ḥaqīqa, il-mashrūʿ yitqaddam bi-shakl mumtāz",
+    "Thank God, uncle. In fact, the project is progressing excellently."
+   ],
+   [
+    "A",
+    "يا سلام! تتكلم كنك مذيع أخبار!",
+    "yā salām! titkallam chinnak mudhīʿ akhbār!",
+    "My! You talk like a newsreader!"
+   ],
+   [
+    "B",
+    "السموحة يا عمي، تعودت على كلام المكتب",
+    "is-samūḥa yā ʿammi, tʿawwadt ʿala kalām il-maktab",
+    "Sorry, uncle; I've got used to office talk."
+   ],
+   [
+    "A",
+    "هني مجلس يا ولدي، سولف على راحتك. شلون الشغل صج؟",
+    "hni majlis yā wildi, sōlif ʿala rāḥtak. shlōn ish-shughul ṣij?",
+    "This is a majlis, son; talk freely. How's work really?"
+   ],
+   [
+    "B",
+    "زين، بس فيه ضغط وايد، والمدير دوم مستعيل",
+    "zēn, bas fīh ẓaghiṭ wāyid, w il-mudīr dōm mistaʿyil",
+    "Good, but there's a lot of pressure, and the manager's always in a hurry."
+   ],
+   [
+    "A",
+    "هذا الكلام اللي نفهمه! كلنا جي، الدوام يغير الواحد",
+    "hādha l-kalām illi nifhamah! killna chī, id-dawām yghayyir il-wāḥid",
+    "Now that's talk we understand! We're all like that; work changes a man."
+   ],
+   [
+    "B",
+    "صدقت. في الإيميل فصحى، وفي الاجتماع نص إنقليزي",
+    "ṣidagt. fi l-īmēl fuṣḥa, w fi l-ijtimāʿ nuṣṣ ingilīzi",
+    "True. Fuṣḥā in emails, and half English in meetings."
+   ],
+   [
+    "A",
+    "وفي المجلس؟",
+    "w fi l-majlis?",
+    "And in the majlis?"
+   ],
+   [
+    "B",
+    "في المجلس كلام مجالس بس، أبشر يا عمي!",
+    "fi l-majlis kalām majālis bas, abshir yā ʿammi!",
+    "In the majlis, majlis talk only; you have my word, uncle!"
+   ]
+  ],
+  "items": [
+   [
+    "كنك",
+    "chinnak",
+    "as if you (were), like (to a man)",
+    "كأنك",
+    "to a woman: chinnich (كنج); you'll see written جنك"
+   ],
+   [
+    "مذيع أخبار",
+    "mudhīʿ akhbār",
+    "a newsreader",
+    "مذيع أخبار",
+    "(recognise); a woman: mudhīʿat akhbār (مذيعة أخبار)"
+   ],
+   [
+    "يتقدم",
+    "yitqaddam",
+    "it's progressing, it's moving forward (formal)",
+    "يتقدم",
+    "q kept, as in fuṣḥā; a feminine thing: titqaddam (تتقدم)"
+   ],
+   [
+    "بشكل ممتاز",
+    "bi-shakl mumtāz",
+    "excellently, really well (formal)",
+    "بشكل ممتاز",
+    ""
+   ],
+   [
+    "كلام المكتب",
+    "kalām il-maktab",
+    "office talk, office language",
+    "كلام المكتب",
+    ""
+   ],
+   [
+    "فيه ضغط وايد",
+    "fīh ẓaghiṭ wāyid",
+    "there's a lot of pressure (in it)",
+    "فيه ضغط كبير",
+    ""
+   ],
+   [
+    "الدوام يغير الواحد",
+    "id-dawām yghayyir il-wāḥid",
+    "work changes a man, the job changes you",
+    "العمل يغير الإنسان",
+    "(recognise)"
+   ],
+   [
+    "كلنا جي",
+    "killna chī",
+    "we're all like that",
+    "كلنا هكذا",
+    "(recognise)"
+   ],
+   [
+    "كلام مجالس",
+    "kalām majālis",
+    "majlis talk, the way people talk in a majlis",
+    "كلام المجالس",
+    ""
+   ]
+  ],
+  "receptive": [
+   1,
+   6,
+   7
+  ]
+ },
+ {
+  "id": "s5u040",
+  "stage": 5,
+  "title": "A toast for Bū Khālid",
+  "goal": "At the office farewell lunch for Bū Khālid, who is retiring after twenty years, give the team's short formal toast and hand him the team's gift",
+  "tip": "A toast here is a short formal speech, not a drink. Open with yisharrifni + verb and say who you speak for (b-ism il-farīg), praise one quality, and close with a wish: nitmanna-lak it-tawfīq. Formal words keep their q: it-tawfīq, it-taqāʿud, id-diqqa. Then drop back: hādhi hadiyya basīṭa, tfaẓẓal.",
+  "grammar": "formal speech (toast): yisharrifni, b-ism il-farīg, nitmanna-lak it-tawfīq",
+  "dialogue": [
+   [
+    "A",
+    "يلا يا سالم، يقولون عندك كلمة!",
+    "yalla yā Sālim, ygūlūn ʿindak kilma!",
+    "Come on, Sālim, they say you've got a few words for us!"
+   ],
+   [
+    "B",
+    "يشرفني، باسم الفريق، أقول كلمة بهالمناسبة",
+    "yisharrifni, b-ism il-farīg, agūl kilma b-hal-munāsaba",
+    "It's an honour, on behalf of the team, to say a few words on this occasion. (formal)"
+   ],
+   [
+    "A",
+    "تفضل يا ولدي، كلنا آذان صاغية",
+    "tfaẓẓal yā wildi, killna ādhān ṣāghya",
+    "Go ahead, son; we're all ears."
+   ],
+   [
+    "B",
+    "عشرين سنة وانت تعطي هالشركة من وقتك وخبرتك",
+    "ʿishrīn sana w inta tʿaṭi hash-sharika min wagtak w khibirtak",
+    "For twenty years you've given this company your time and your experience. (formal)"
+   ],
+   [
+    "A",
+    "الله يخليك، هذا واجبي",
+    "allāh ykhallīk, hādha wājbi",
+    "Bless you; it was my duty."
+   ],
+   [
+    "B",
+    "وتعلمنا منك الصبر والدقة في الشغل",
+    "w tʿallamna minnak iṣ-ṣabir w id-diqqa fi sh-shughul",
+    "And we learned patience and precision at work from you. (formal)"
+   ],
+   [
+    "A",
+    "كلامك يرفع الراس يا سالم",
+    "kalāmak yirfaʿ ir-rās yā Sālim",
+    "Your words make me proud, Sālim."
+   ],
+   [
+    "B",
+    "ونتمنى لك التوفيق والصحة بعد التقاعد",
+    "w nitmanna-lak it-tawfīq w iṣ-ṣiḥḥa baʿd it-taqāʿud",
+    "And we wish you every success and good health in your retirement. (formal)"
+   ],
+   [
+    "A",
+    "آمين. والله ما توقعت حفلة توديع بهالشكل. ما قصرتوا يا عيالي",
+    "āmīn. wallāh ma twaggaʿt ḥaflat tawdīʿ b-hash-shakil. mā gaṣṣartu yā ʿyāli",
+    "Amen. Honestly, I didn't expect a farewell party like this. You've all been so kind, my boys."
+   ],
+   [
+    "B",
+    "ما سوينا شي. هذي هدية بسيطة من الفريق، تفضل",
+    "mā sawwēna shay. hādhi hadiyya basīṭa min il-farīg, tfaẓẓal",
+    "It's nothing. This is a small gift from the team; please take it."
+   ]
+  ],
+  "items": [
+   [
+    "يشرفني",
+    "yisharrifni",
+    "it's an honour (for me to), I'm honoured (to) (formal)",
+    "يشرفني",
+    ""
+   ],
+   [
+    "باسم الفريق",
+    "b-ism il-farīg",
+    "on behalf of the team (formal)",
+    "باسم الفريق",
+    ""
+   ],
+   [
+    "كلمة بهالمناسبة",
+    "kilma b-hal-munāsaba",
+    "a few words for this occasion (formal)",
+    "كلمة بهذه المناسبة",
+    ""
+   ],
+   [
+    "تعطي من وقتك",
+    "tʿaṭi min wagtak",
+    "you give (some) of your time (to a man)",
+    "تعطي من وقتك",
+    "to a woman: tʿaṭīn min wagtich (تعطين من وقتج)"
+   ],
+   [
+    "الدقة في الشغل",
+    "id-diqqa fi sh-shughul",
+    "precision at work, care over detail (formal)",
+    "الدقة في العمل",
+    "q kept, as in fuṣḥā"
+   ],
+   [
+    "نتمنى لك التوفيق",
+    "nitmanna-lak it-tawfīq",
+    "we wish you every success (formal) (to a man)",
+    "نتمنى لك التوفيق",
+    "to a woman: nitmanna-lich it-tawfīq (نتمنى لج التوفيق); q kept"
+   ],
+   [
+    "بعد التقاعد",
+    "baʿd it-taqāʿud",
+    "in retirement, after retiring",
+    "بعد التقاعد",
+    "q kept, as in fuṣḥā"
+   ],
+   [
+    "حفلة توديع",
+    "ḥaflat tawdīʿ",
+    "a farewell party, a leaving do",
+    "حفلة توديع",
+    ""
+   ],
+   [
+    "يقولون عندك كلمة",
+    "ygūlūn ʿindak kilma",
+    "they say you've got a few words (to say) (to a man)",
+    "يقولون إن لديك كلمة",
+    "(recognise); to a woman: ʿindich kilma"
+   ]
+  ],
+  "task": "This week: record a 2-minute toast (formal) for a friend's graduation or a colleague who's leaving. Open with yisharrifni and b-ism…, praise one quality, and close with nitmanna-lak it-tawfīq. Then record 30 seconds saying the same thing to the friend over karak, the way friends talk: no fuṣḥā words, and as much ḥilu and wāyid as you like.",
+  "receptive": [
+   8
+  ]
+ },
+ {
+  "id": "s5u041",
+  "stage": 5,
+  "title": "Welcome to our company",
+  "goal": "At the office, a teacher brings a school group to visit; on Bū Saʿīd's behalf, give a short formal welcome, then switch back to everyday talk for the tour",
+  "tip": "A formal welcome has three parts: ahlan wa sahlan bikum (the wa is fuṣḥā, kept in this phrase), who you speak for (bin-niyāba ʿan il-mudīr), and yisʿidna + verb 'we're delighted to'. Then drop back to everyday Gulf for the practical bits: il-asʼila fi l-ākhir, yalla yā shabāb.",
+  "grammar": "formal welcome: ahlan wa sahlan bikum, bin-niyāba ʿan, yisʿidna nraḥḥib fīkum",
+  "dialogue": [
+   [
+    "A",
+    "السلام عليكم. نحن من المدرسة، عندنا موعد زيارة اليوم",
+    "as-salāmu ʿalaykum. niḥin min il-madrasa, ʿindana mawʿid zyāra l-yōm",
+    "Peace be upon you. We're from the school; we've got a visit booked for today."
+   ],
+   [
+    "B",
+    "وعليكم السلام، حياكم الله! تفضلوا",
+    "wa ʿalaykum is-salām, ḥayyākum allāh! tfaẓẓalu",
+    "And peace be upon you. Welcome! Come in."
+   ],
+   [
+    "A",
+    "الله يحييكم. الطلاب كلهم هني، عشرين طالب",
+    "allāh yḥayyīkum. iṭ-ṭullāb killhum hni, ʿishrīn ṭālib",
+    "Thank you. The students are all here, twenty of them."
+   ],
+   [
+    "B",
+    "أهلا وسهلا بكم في شركتنا. بالنيابة عن المدير، يسعدنا نرحب فيكم",
+    "ahlan wa sahlan bikum fi sharikatna. bin-niyāba ʿan il-mudīr, yisʿidna nraḥḥib fīkum",
+    "Welcome to our company. On behalf of the manager, we're delighted to welcome you. (formal)"
+   ],
+   [
+    "A",
+    "الله يحفظك. الشباب متحمسين وايد",
+    "allāh yiḥfaẓak. ish-shabāb mitḥammsīn wāyid",
+    "God keep you. The boys are really excited."
+   ],
+   [
+    "B",
+    "بنبدا بجولة قصيرة في المكتب، وبعدها عرض عن شغلنا",
+    "binibda b-jawla gaṣīra fi l-maktab, w baʿdha ʿarẓ ʿan shughulna",
+    "We'll start with a short tour of the office, and then a presentation on our work. (formal)"
+   ],
+   [
+    "A",
+    "ممتاز. ويقدرون يسألون؟",
+    "mumtāz. w yigdarūn yisʼalūn?",
+    "Excellent. And can they ask questions?"
+   ],
+   [
+    "B",
+    "أكيد، الأسئلة في الآخر. ونتمنى تستفيدون من الزيارة",
+    "akīd, il-asʼila fi l-ākhir. w nitmanna tistafīdūn min iz-zyāra",
+    "Of course, questions at the end. And we hope you get a lot out of the visit."
+   ],
+   [
+    "A",
+    "إن شاء الله. مشكورين على الاستقبال",
+    "in shāʼ allāh. mashkūrīn ʿala l-istiqbāl",
+    "God willing. Thank you for having us."
+   ],
+   [
+    "B",
+    "العفو. يلا يا شباب، من هني!",
+    "il-ʿafu. yalla yā shabāb, min hni!",
+    "You're welcome. Come on, lads, this way!"
+   ]
+  ],
+  "items": [
+   [
+    "أهلا وسهلا بكم",
+    "ahlan wa sahlan bikum",
+    "welcome (to you all) (formal)",
+    "أهلًا وسهلًا بكم",
+    "the wa ('and') is fuṣḥā, kept in this set phrase"
+   ],
+   [
+    "بالنيابة عن",
+    "bin-niyāba ʿan",
+    "on behalf of (formal)",
+    "بالنيابة عن",
+    ""
+   ],
+   [
+    "يسعدنا",
+    "yisʿidna",
+    "we're delighted (to), it's our pleasure (to) (formal)",
+    "يسعدنا",
+    ""
+   ],
+   [
+    "نرحب فيكم",
+    "nraḥḥib fīkum",
+    "we welcome you (to a group) (formal)",
+    "نرحب بكم",
+    "to one man: nraḥḥib fīk; to one woman: nraḥḥib fīch"
+   ],
+   [
+    "جولة قصيرة",
+    "jawla gaṣīra",
+    "a short tour",
+    "جولة قصيرة",
+    ""
+   ],
+   [
+    "الأسئلة في الآخر",
+    "il-asʼila fi l-ākhir",
+    "questions at the end",
+    "الأسئلة في النهاية",
+    ""
+   ],
+   [
+    "متحمسين",
+    "mitḥammsīn",
+    "excited, keen (plural)",
+    "متحمسون",
+    "a man: mitḥammis (متحمس); a woman: mitḥammsa (متحمسة)"
+   ],
+   [
+    "موعد زيارة",
+    "mawʿid zyāra",
+    "a visit (booked), an appointment for a visit",
+    "موعد زيارة",
+    "(recognise)"
+   ],
+   [
+    "على الاستقبال",
+    "ʿala l-istiqbāl",
+    "for having us, for the welcome",
+    "على الاستقبال",
+    "(recognise)"
+   ]
+  ],
+  "receptive": [
+   7,
+   8
+  ]
+ },
+ {
+  "id": "s5u042",
+  "stage": 5,
+  "title": "Three languages, one meeting",
+  "goal": "At the office, plan tomorrow's client presentation with Maryam: which parts go in fuṣḥā, which in English, and which in Emirati",
+  "tip": "Choosing a language is part of the job: il-khiṭāb ir-rasmi bil-fuṣḥa, the slides in Arabic and English, and the talk in Emirati. Technical terms often stay English because some ma lha tarjama wāẓḥa. Ask b-ay lugha? 'in which language?'",
+  "grammar": "triglossia: il-fuṣḥa for writing, English for terms, Emirati for talk",
+  "dialogue": [
+   [
+    "A",
+    "العرض باكر للعميل. نسوي الشرايح بالإنقليزي ولّا بالعربي؟",
+    "il-ʿarẓ bāchir lil-ʿamīl. nsawwi sh-sharāyiḥ bil-ingilīzi walla bil-ʿarabi?",
+    "The presentation for the client is tomorrow. Do we do the slides in English or Arabic?"
+   ],
+   [
+    "B",
+    "العميل منو؟",
+    "il-ʿamīl minu?",
+    "Who's the client?"
+   ],
+   [
+    "A",
+    "جهة حكومية، عشان جي الخطاب الرسمي لازم يكون بالفصحى",
+    "jiha ḥukūmiyya, ʿashān chī il-khiṭāb ir-rasmi lāzim ykūn bil-fuṣḥa",
+    "A government body, so the official letter has to be in fuṣḥā."
+   ],
+   [
+    "B",
+    "والشرايح؟ والكلام في الاجتماع؟",
+    "w ish-sharāyiḥ? w il-kalām fi l-ijtimāʿ?",
+    "And the slides? And the talking in the meeting?"
+   ],
+   [
+    "A",
+    "الشرايح بالعربي والإنقليزي، بس الكلام باللهجة. هذا الطبيعي عندنا",
+    "ish-sharāyiḥ bil-ʿarabi w il-ingilīzi, bas il-kalām bil-lahja. hādha ṭ-ṭabīʿi ʿindana",
+    "The slides in Arabic and English, but the talking in dialect. That's normal for us."
+   ],
+   [
+    "B",
+    "يعني ثلاث لغات في اجتماع واحد!",
+    "yaʿni thalāth lughāt fi jtimāʿ wāḥid!",
+    "So three languages in one meeting!"
+   ],
+   [
+    "A",
+    "هيه، والمصطلحات التقنية نقولها بالإنقليزي حتى في الاجتماع",
+    "hē, w il-muṣṭalaḥāt it-tiqniyya ngūlha bil-ingilīzi ḥatta fi l-ijtimāʿ",
+    "Yes, and the technical terms we say in English, even in the meeting."
+   ],
+   [
+    "B",
+    "منطقي، لأن بعضها ما لها ترجمة واضحة",
+    "manṭiqi, lann baʿaẓha ma lha tarjama wāẓḥa",
+    "That makes sense, because some of them have no clear translation."
+   ],
+   [
+    "A",
+    "بالضبط. وانت بتقدم الأرقام، بأي لغة؟",
+    "biẓ-ẓabṭ. w inta bitgaddim il-argām, b-ay lugha?",
+    "Exactly. And you're presenting the figures: in which language?"
+   ],
+   [
+    "B",
+    "بالعربي، عشان أتدرب. وإذا علقت، الإنقليزي موجود!",
+    "bil-ʿarabi, ʿashān atdarrab. w idha ʿligt, il-ingilīzi mawjūd!",
+    "In Arabic, for the practice. And if I get stuck, there's always English!"
+   ]
+  ],
+  "items": [
+   [
+    "الفصحى",
+    "il-fuṣḥa",
+    "fuṣḥā, Modern Standard Arabic (for writing, news and school)",
+    "الفصحى",
+    ""
+   ],
+   [
+    "الخطاب الرسمي",
+    "il-khiṭāb ir-rasmi",
+    "the official letter",
+    "الخطاب الرسمي",
+    "(recognise)"
+   ],
+   [
+    "جهة حكومية",
+    "jiha ḥukūmiyya",
+    "a government body, a government entity",
+    "جهة حكومية",
+    "(recognise)"
+   ],
+   [
+    "ثلاث لغات",
+    "thalāth lughāt",
+    "three languages",
+    "ثلاث لغات",
+    "one language: lugha (لغة)"
+   ],
+   [
+    "المصطلحات",
+    "il-muṣṭalaḥāt",
+    "the (technical) terms, terminology",
+    "المصطلحات",
+    "(recognise)"
+   ],
+   [
+    "ما لها ترجمة",
+    "ma lha tarjama",
+    "it has no translation, there's no word for it (a feminine or plural thing)",
+    "ليس لها ترجمة",
+    "a masculine thing: ma lah tarjama (ما له ترجمة)"
+   ],
+   [
+    "منطقي",
+    "manṭiqi",
+    "(that) makes sense, logical",
+    "منطقي",
+    "q kept, as in fuṣḥā"
+   ],
+   [
+    "بأي لغة؟",
+    "b-ay lugha?",
+    "in which language?",
+    "بأي لغة؟",
+    ""
+   ],
+   [
+    "إذا علقت",
+    "idha ʿligt",
+    "if I get stuck",
+    "إذا تعثرت",
+    "if you get stuck (to a man): idha ʿligt (same form)"
+   ]
+  ],
+  "culture": "Emiratis live with three languages. Emirati Arabic is for everyday talk; fuṣḥā is for education, public speeches, literature, Islamic studies and TV news; and English is the common language with people who don't speak Arabic. A young Emirati may chat in Emirati with a friend, read a newspaper in fuṣḥā and switch to English in class, all in one day.",
+  "receptive": [
+   1,
+   2,
+   4
+  ]
+ },
+ {
+  "id": "s5u043",
+  "stage": 5,
+  "title": "On air: why Emirati?",
+  "goal": "On a university radio programme, the presenter interviews you about learning Emirati Arabic; answer his formal questions in educated Gulf Arabic",
+  "tip": "On air, structure your answers with educated Gulf linkers: bin-nisba li 'for me', min nāḥya … w min nāḥya thānya 'on the one hand … on the other', bi-shakl ʿāmm 'on the whole'. The presenter's lines are formal (mustamiʿīna l-kirām); your grammar can stay Gulf.",
+  "grammar": "educated spoken Arabic in an interview: bin-nisba li, min nāḥya … min nāḥya thānya, bi-shakl ʿāmm",
+  "dialogue": [
+   [
+    "A",
+    "مستمعينا الكرام، أهلا بكم من جديد. ضيفنا اليوم طالب بريطاني يتكلم اللهجة الإماراتية",
+    "mustamiʿīna l-kirām, ahlan bikum min jadīd. ẓēfna l-yōm ṭālib brīṭāni yitkallam il-lahja l-imārātiyya",
+    "Dear listeners, welcome back. Our guest today is a British student who speaks Emirati Arabic. (formal)"
+   ],
+   [
+    "B",
+    "أهلا وسهلا، يشرفني أكون معكم",
+    "ahlan wa sahlan, yisharrifni akūn maʿākum",
+    "Hello, it's an honour to be with you."
+   ],
+   [
+    "A",
+    "حدثنا عن تجربتك: ليش اخترت اللهجة مب الفصحى؟",
+    "ḥaddithna ʿan tajrubtak: lēsh ikhtart il-lahja mub il-fuṣḥa?",
+    "Tell us about your experience: why did you choose the dialect and not fuṣḥā? (formal)"
+   ],
+   [
+    "B",
+    "بالنسبة لي، الناس هني يتكلمون اللهجة، فحبيت أفهمهم وأسولف وياهم",
+    "bin-nisba li, in-nās hni yitkallamūn il-lahja, fa ḥabbēt afhamhum w asōlif wiyyāhum",
+    "For me, people here speak the dialect, so I wanted to understand them and chat with them."
+   ],
+   [
+    "A",
+    "جميل. وشو أكبر تحدي واجهته؟",
+    "jamīl. w shu akbar taḥaddi wājahtah?",
+    "Lovely. And what's the biggest challenge you've faced? (formal)"
+   ],
+   [
+    "B",
+    "من ناحية، حروف مثل العين والحا. ومن ناحية ثانية، الناس يتكلمون بسرعة",
+    "min nāḥya, ḥurūf mithil il-ʿēn w il-ḥā. w min nāḥya thānya, in-nās yitkallamūn b-surʿa",
+    "On the one hand, letters like ʿayn and ḥā. And on the other hand, people talk fast."
+   ],
+   [
+    "A",
+    "وشلون تشوف العربي بين الشباب اليوم؟",
+    "w shlōn tshūf il-ʿarabi bēn ish-shabāb il-yōm?",
+    "And how do you see Arabic among young people today?"
+   ],
+   [
+    "B",
+    "بشكل عام، الشباب يخلطون عربي وإنقليزي، بس العربي باقي قوي",
+    "bi-shakl ʿāmm, ish-shabāb yikhliṭūn ʿarabi w ingilīzi, bas il-ʿarabi bāgi gawi",
+    "On the whole, young people mix Arabic and English, but Arabic is still strong."
+   ],
+   [
+    "A",
+    "نشكرك على هاللقاء. مستمعينا، بعد الفاصل نرجع لكم",
+    "nashkurak ʿala hal-ligāʼ. mustamiʿīna, baʿd il-fāṣil nirjaʿ lakum",
+    "Thank you for this interview. Listeners, we'll be back after the break. (formal)"
+   ],
+   [
+    "B",
+    "الشكر لكم، والشرف لي",
+    "ish-shukr lakum, w ish-sharaf li",
+    "Thank you, and the honour's mine."
+   ]
+  ],
+  "items": [
+   [
+    "مستمعينا الكرام",
+    "mustamiʿīna l-kirām",
+    "dear listeners (on radio) (formal)",
+    "مستمعينا الكرام",
+    "(recognise)"
+   ],
+   [
+    "أهلا بكم من جديد",
+    "ahlan bikum min jadīd",
+    "welcome back (on radio or TV) (formal)",
+    "أهلًا بكم من جديد",
+    "(recognise)"
+   ],
+   [
+    "حدثنا عن تجربتك",
+    "ḥaddithna ʿan tajrubtak",
+    "tell us about your experience (formal) (to a man)",
+    "حدثنا عن تجربتك",
+    "(recognise); to a woman: ḥaddithīna ʿan tajrubtich"
+   ],
+   [
+    "أكبر تحدي",
+    "akbar taḥaddi",
+    "the biggest challenge",
+    "أكبر تحدٍّ",
+    ""
+   ],
+   [
+    "واجهته",
+    "wājahtah",
+    "you faced (it), you came up against (it) (to a man); I faced it",
+    "واجهته",
+    "to a woman: wājahtīh (واجهتيه)"
+   ],
+   [
+    "من ناحية ثانية",
+    "min nāḥya thānya",
+    "on the other hand",
+    "من ناحية أخرى",
+    "on the one hand: min nāḥya (من ناحية)"
+   ],
+   [
+    "بشكل عام",
+    "bi-shakl ʿāmm",
+    "on the whole, generally (formal)",
+    "بشكل عام",
+    ""
+   ],
+   [
+    "العربي باقي قوي",
+    "il-ʿarabi bāgi gawi",
+    "Arabic is still strong",
+    "العربية لا تزال قوية",
+    ""
+   ],
+   [
+    "بعد الفاصل نرجع لكم",
+    "baʿd il-fāṣil nirjaʿ lakum",
+    "we'll be back after the break (formal)",
+    "بعد الفاصل نعود إليكم",
+    "(recognise)"
+   ]
+  ],
+  "culture": "Fuṣḥā is the language of UAE TV news, education and public speeches, but how much of it a speaker uses depends on the occasion and on the speaker's sense of register. It is quite normal to hear Emirati Arabic in a public speech, mixed with some high-register words and fixed phrases taken from fuṣḥā.",
+  "receptive": [
+   0,
+   1,
+   2,
+   8
+  ]
+ },
+ {
+  "id": "s5u044",
+  "stage": 5,
+  "title": "Off air",
+  "goal": "Straight after the interview, the presenter drops the formal voice; talk about your nerves, the mixing, and when the interview goes out",
+  "tip": "The same speaker shifts register in seconds: on air mustamiʿīna l-kirām, off air khalāṣ, ṭlaʿna min il-hawa. Saying what you did on air: ḥassēt inni akhliṭ 'I felt I was mixing', abda bil-fuṣḥa w akammil bil-lahja 'I start in fuṣḥā and carry on in dialect'.",
+  "grammar": "register shifting: formal → everyday as soon as the mic is off",
+  "dialogue": [
+   [
+    "A",
+    "خلاص، طلعنا من الهوا. ارتاح يا سالم!",
+    "khalāṣ, ṭlaʿna min il-hawa. irtāḥ yā Sālim!",
+    "That's it, we're off air. Relax, Sālim!"
+   ],
+   [
+    "B",
+    "الحمد لله! والله توترت وايد على الهوا",
+    "il-ḥamdu lillāh! wallāh twattart wāyid ʿala l-hawa",
+    "Thank God! Honestly, I got really nervous on air."
+   ],
+   [
+    "A",
+    "ما بان عليك أبد، وصوتك كان واضح في المايك",
+    "ma bān ʿalēk abad, w ṣōtak kān wāẓiḥ fi l-māyk",
+    "It didn't show at all, and your voice was clear on the mic."
+   ],
+   [
+    "B",
+    "بس حسيت إني أخلط فصحى ولهجة في جملة وحدة",
+    "bas ḥassēt inni akhliṭ fuṣḥa w lahja fi jumla waḥda",
+    "But I felt I was mixing fuṣḥā and dialect in a single sentence."
+   ],
+   [
+    "A",
+    "عادي، كلنا جي. حتى أنا أبدا بالفصحى وأكمل باللهجة",
+    "ʿādi, killna chī. ḥatta ana abda bil-fuṣḥa w akammil bil-lahja",
+    "That's normal; we're all like that. Even I start in fuṣḥā and carry on in dialect."
+   ],
+   [
+    "B",
+    "ومتى بتنزل المقابلة؟",
+    "w mita bitinzil il-mugābla?",
+    "And when will the interview go out?"
+   ],
+   [
+    "A",
+    "الخميس الياي، الساعة ثمان الصبح، في البرنامج نفسه",
+    "il-khamīs il-yāy, is-sāʿa thamān iṣ-ṣubḥ, fi l-barnāmij nafsah",
+    "Next Thursday, at eight in the morning, on the same programme."
+   ],
+   [
+    "B",
+    "زين، بقول لسيف وبو راشد يسمعونها",
+    "zēn, bagūl l-Sēf w Bū Rāshid yismaʿūnha",
+    "Great, I'll tell Sēf and Bū Rāshid to listen to it."
+   ],
+   [
+    "A",
+    "وإذا تبي، تعال مرة ثانية ونسوي حلقة عن الأكل الإماراتي",
+    "w idha tabi, taʿāl marra thānya w nsawwi ḥalga ʿan il-akil il-imārāti",
+    "And if you like, come again and we'll do an episode on Emirati food."
+   ],
+   [
+    "B",
+    "أكيد! بس هالمرة بتكلم باللهجة من البداية",
+    "akīd! bas hal-marra batkallam bil-lahja min il-bidāya",
+    "Definitely! But this time I'll talk in dialect from the start."
+   ]
+  ],
+  "items": [
+   [
+    "طلعنا من الهوا",
+    "ṭlaʿna min il-hawa",
+    "we're off air",
+    "انتهى البث",
+    "(recognise)"
+   ],
+   [
+    "على الهوا",
+    "ʿala l-hawa",
+    "on air, live (on radio or TV)",
+    "على الهواء",
+    ""
+   ],
+   [
+    "حسيت إني",
+    "ḥassēt inni",
+    "I felt (that) I…",
+    "شعرت أنني",
+    ""
+   ],
+   [
+    "في جملة وحدة",
+    "fi jumla waḥda",
+    "in a single sentence, in one sentence",
+    "في جملة واحدة",
+    ""
+   ],
+   [
+    "أكمل باللهجة",
+    "akammil bil-lahja",
+    "I carry on in dialect, (to) carry on in dialect",
+    "أكمل باللهجة",
+    ""
+   ],
+   [
+    "بتنزل المقابلة",
+    "bitinzil il-mugābla",
+    "the interview will go out, will be broadcast",
+    "ستُبث المقابلة",
+    ""
+   ],
+   [
+    "في البرنامج نفسه",
+    "fi l-barnāmij nafsah",
+    "on the same programme",
+    "في البرنامج نفسه",
+    "(recognise)"
+   ],
+   [
+    "صوتك كان واضح",
+    "ṣōtak kān wāẓiḥ",
+    "your voice was clear (to a man)",
+    "كان صوتك واضحًا",
+    "(recognise); to a woman: ṣōtich kān wāẓiḥ"
+   ],
+   [
+    "في المايك",
+    "fi l-māyk",
+    "on the mic, into the microphone",
+    "في الميكروفون",
+    "(recognise)"
+   ]
+  ],
+  "receptive": [
+   0,
+   6,
+   7,
+   8
+  ]
+ },
+ {
+  "id": "s5u045",
+  "stage": 5,
+  "title": "Fahad hears about the radio",
+  "goal": "On a video call, Fahad has heard you were on the radio; tell him about it in short, and compare languages at work in Dubai and Kuwait",
+  "tip": "ṣirt + present verb says something has started happening: ṣirt ansa 'I've started forgetting'. Fahad's Kuwaiti forms (shinu, shdaʿwa, ēh) are for recognition. To sum up for a friend, start with b-ikhtiṣār and list the points.",
+  "grammar": "triglossia with English: work in English, the majlis in Arabic (ṣirt + verb 'I've started …')",
+  "dialogue": [
+   [
+    "A",
+    "هلا والله! سمعت إنك طلعت بالراديو! شلون كانت؟",
+    "hala wallāh! simaʿt innak ṭlaʿt bir-rādyo! shlōn kānat?",
+    "Hey! I heard you were on the radio! How did it go?"
+   ],
+   [
+    "B",
+    "هلا فيك! كانت حلوة، بس توترت شوي",
+    "hala fīk! kānat ḥilwa, bas twattart shwayy",
+    "Hi! It went well, but I got a bit nervous."
+   ],
+   [
+    "A",
+    "شدعوه! انت تتكلم أحسن مني. أنا في الدوام كله إنقليزي",
+    "shdaʿwa! inta titkallam aḥsan minni. ana fi d-dawām killah ingilīzi",
+    "Come off it! You speak better than me. At work, everything's English for me."
+   ],
+   [
+    "B",
+    "صج؟ حتى الاجتماعات؟",
+    "ṣij? ḥatta l-ijtimāʿāt?",
+    "Really? Even the meetings?"
+   ],
+   [
+    "A",
+    "إيه، حتى الاجتماعات. صرت أنسى الكلمات العربية حق الشغل",
+    "ēh, ḥatta l-ijtimāʿāt. ṣirt ansa l-kalimāt il-ʿarabiyya ḥagg ish-shughul",
+    "Yes, even the meetings. I've started forgetting the Arabic words for work things."
+   ],
+   [
+    "B",
+    "وأنا بالعكس: أنسى الإنقليزي في المجلس!",
+    "w ana bil-ʿaks: ansa l-ingilīzi fi l-majlis!",
+    "And it's the other way round for me: I forget English in the majlis!"
+   ],
+   [
+    "A",
+    "حلوة هذي! بس شنو سألوك بالمقابلة؟",
+    "ḥilwa hādhi! bas shinu saʼalōk bil-mugābla?",
+    "That's a good one! But what did they ask you in the interview?"
+   ],
+   [
+    "B",
+    "باختصار: ليش اللهجة، وشو أصعب شي، وشلون يتكلم الشباب",
+    "b-ikhtiṣār: lēsh il-lahja, w shu aṣʿab shay, w shlōn yitkallam ish-shabāb",
+    "In short: why the dialect, what's the hardest thing, and how young people talk."
+   ],
+   [
+    "A",
+    "لازم تسوي ويايه نفس المقابلة، بس بالكويتي!",
+    "lāzim tsawwi wiyyāy nafs il-mugābla, bas bil-kwēti!",
+    "You've got to do the same interview with me, but in Kuwaiti!"
+   ],
+   [
+    "B",
+    "اتفقنا! بس انت تسأل بالفصحى، وأنا أرد بالإماراتي",
+    "ittafagna! bas inta tisʼal bil-fuṣḥa, w ana arudd bil-imārāti",
+    "Deal! But you ask in fuṣḥā, and I'll answer in Emirati."
+   ]
+  ],
+  "items": [
+   [
+    "طلعت بالراديو",
+    "ṭlaʿt bir-rādyo",
+    "you were on the radio (to a man); I was on the radio",
+    "ظهرت في الإذاعة",
+    "to a woman: ṭlaʿti bir-rādyo (طلعتي بالراديو)"
+   ],
+   [
+    "شدعوه!",
+    "shdaʿwa!",
+    "come off it! really? (Kuwait) (friends only)",
+    "",
+    "(recognise)"
+   ],
+   [
+    "في الدوام كله إنقليزي",
+    "fi d-dawām killah ingilīzi",
+    "at work it's all English",
+    "في العمل كل شيء بالإنجليزية",
+    "(recognise)"
+   ],
+   [
+    "صرت أنسى",
+    "ṣirt ansa",
+    "I've started forgetting, I keep forgetting",
+    "صرت أنسى",
+    ""
+   ],
+   [
+    "الكلمات العربية",
+    "il-kalimāt il-ʿarabiyya",
+    "the Arabic words",
+    "الكلمات العربية",
+    ""
+   ],
+   [
+    "حق الشغل",
+    "ḥagg ish-shughul",
+    "for work, work (things)",
+    "الخاصة بالعمل",
+    ""
+   ],
+   [
+    "شنو سألوك؟",
+    "shinu saʼalōk?",
+    "what did they ask you? (Kuwait) (to a man)",
+    "ماذا سألوك؟",
+    "(recognise); UAE: shu saʼalōk? (شو سألوك؟); to a woman: saʼalōch"
+   ],
+   [
+    "بالكويتي",
+    "bil-kwēti",
+    "in Kuwaiti (Arabic)",
+    "باللهجة الكويتية",
+    "in Emirati: bil-imārāti (بالإماراتي)"
+   ],
+   [
+    "أرد بالإماراتي",
+    "arudd bil-imārāti",
+    "I answer in Emirati",
+    "أجيب باللهجة الإماراتية",
+    ""
+   ]
+  ],
+  "task": "This week: with a tutor or exchange partner, do a 10-minute mock radio interview about your Arabic. They ask in a formal style; you answer in educated Gulf Arabic (bin-nisba li, min nāḥya…, bi-shakl ʿāmm). Then switch: off air, retell the interview for 2 minutes the way you'd tell Sēf, mixing in as much English as he would.",
+  "receptive": [
+   1,
+   2,
+   6
+  ]
+ },
+ {
+  "id": "s5u046",
+  "stage": 5,
+  "title": "Checkpoint 5.3: the radio star in the majlis",
+  "goal": "Checkpoint: in Bū Rāshid's majlis, he heard your radio interview; take his teasing, explain your registers, and take your leave properly",
+  "tip": "Review: answer an elder with labbēh and ṭāl ʿumrak; keep sōri and wāw for friends (is-samūḥa, yā salām in the majlis); explain register with fi l-maktab … w fi l-majlis …; leave with ṭāl ʿumrak, idha ma shay lāzim, binitrakhkhaṣ.",
+  "grammar": "checkpoint 5.3 (s5u032–s5u045): honorifics, borrowed interjections, register shifting",
+  "dialogue": [
+   [
+    "A",
+    "يا هلا بنجم الإذاعة! سمعناك بالراديو يوم الخميس",
+    "yā hala b-najm il-idhāʿa! simaʿnāk bir-rādyo yōm il-khamīs",
+    "Welcome, radio star! We heard you on the radio on Thursday."
+   ],
+   [
+    "B",
+    "الله يحفظك يا عمي. في الحقيقة توترت شوي",
+    "allāh yiḥfaẓak yā ʿammi. fi l-ḥaqīqa twattart shwayy",
+    "God keep you, uncle. In fact, I got a bit nervous."
+   ],
+   [
+    "A",
+    "ما بان عليك. بس ليش تكلمت كنك مذيع أخبار؟",
+    "ma bān ʿalēk. bas lēsh tkallamt chinnak mudhīʿ akhbār?",
+    "It didn't show. But why did you talk like a newsreader?"
+   ],
+   [
+    "B",
+    "على الهوا الكلام رسمي، بس في المجلس كلام مجالس",
+    "ʿala l-hawa l-kalām rasmi, bas fi l-majlis kalām majālis",
+    "On air the talk is formal, but in the majlis it's majlis talk."
+   ],
+   [
+    "A",
+    "زين تسوي. وراشد يقول إنك تقول «واو» في الملعب!",
+    "zēn tsawwi. w Rāshid ygūl innak tgūl \"wāw\" fi l-malʿab!",
+    "Good for you. And Rāshid says you say \"wow\" on the pitch!"
+   ],
+   [
+    "B",
+    "هيه، ويا الشباب بس. قدامك أقول يا سلام!",
+    "hē, wiyya sh-shabāb bas. jiddāmak agūl yā salām!",
+    "Yes, but only with the lads. In front of you I say yā salām!"
+   ],
+   [
+    "A",
+    "ههه، الله يرضى عليك. يلا تقهوى",
+    "allāh yirẓa ʿalēk. yalla tgahwa",
+    "Bless you. Come on, have some coffee."
+   ],
+   [
+    "B",
+    "تسلم يا عمي. طال عمرك، إذا ما شي لازم، بنترخص",
+    "tislam yā ʿammi. ṭāl ʿumrak, idha ma shay lāzim, binitrakhkhaṣ",
+    "Thank you, uncle. Sir, if there's nothing you need, we'll take our leave."
+   ],
+   [
+    "A",
+    "الله يسلمك. وين بدري؟ بس يلا، الله يوفقكم",
+    "allāh ysallmak. wēn badri? bas yalla, allāh ywaffigkum",
+    "God keep you. Leaving so early? But off you go; God grant you success."
+   ],
+   [
+    "B",
+    "آمين يا عمي. لبيه، تامرني على شي قبل لا أروح؟",
+    "āmīn yā ʿammi. labbēh, tāmirni ʿala shay gabil la arūḥ?",
+    "Amen, uncle. Is there anything I can do for you before I go?"
+   ]
+  ],
+  "items": [
+   [
+    "نجم الإذاعة",
+    "najm il-idhāʿa",
+    "the radio star (teasing, warm)",
+    "نجم الإذاعة",
+    "(recognise)"
+   ],
+   [
+    "سمعناك بالراديو",
+    "simaʿnāk bir-rādyo",
+    "we heard you on the radio (to a man)",
+    "سمعناك في الإذاعة",
+    "to a woman: simaʿnāch bir-rādyo (سمعناج بالراديو)"
+   ],
+   [
+    "زين تسوي",
+    "zēn tsawwi",
+    "good for you, you're doing the right thing (to a man)",
+    "تحسن صنعًا",
+    "to a woman: zēn tsawwīn (زين تسوين)"
+   ],
+   [
+    "تقهوى",
+    "tgahwa",
+    "have some coffee (to a man)",
+    "تناول القهوة",
+    "to a woman: tgahway (تقهوي)"
+   ],
+   [
+    "ويا الشباب بس",
+    "wiyya sh-shabāb bas",
+    "only with the lads, just among friends",
+    "مع الشباب فقط",
+    ""
+   ],
+   [
+    "قدامك أقول",
+    "jiddāmak agūl",
+    "in front of you I say (to a man)",
+    "أمامك أقول",
+    "to a woman: jiddāmich agūl"
+   ]
+  ],
+  "receptive": [
+   0
+  ]
+ },
+ {
+  "id": "s5u006",
+  "stage": 5,
+  "title": "He told me himself",
+  "goal": "On the metro with Sēf, you disagree about which night Bū Rāshid's dinner is; back up your version by saying where you heard it",
+  "tip": "certainty and its source: b-nafsah, b-idhni, min wēn simaʿt?",
+  "grammar": "Say how you know: gālha-li b-nafsah 'he told me himself', simaʿt-ha minnah b-idhni 'I heard it from him with my own ears'. Ask the other side: min wēn simaʿt? And bet on it: idha ṭilaʿt ghalṭān 'if I turn out to be wrong'.",
+  "dialogue": [
+   [
+    "A",
+    "عشا عمي يوم الجمعة، صح؟",
+    "ʿasha ʿammi yōm il-jumʿa, ṣaḥḥ?",
+    "My uncle's dinner is on Friday, right?"
+   ],
+   [
+    "B",
+    "لا، يوم الخميس. أضمن لك",
+    "la, yōm il-khamīs. aẓman-lak",
+    "No, on Thursday. Take it from me."
+   ],
+   [
+    "A",
+    "انت غلطان. أنا سمعت الجمعة",
+    "inta ghalṭān. ana simaʿt il-jumʿa",
+    "You're wrong. I heard Friday."
+   ],
+   [
+    "B",
+    "من وين سمعت؟",
+    "min wēn simaʿt?",
+    "Where did you hear that?"
+   ],
+   [
+    "A",
+    "ما أذكر بالضبط. يمكن من راشد، أو يمكن أنا خربطت",
+    "ma adhkur biẓ-ẓabṭ. yimkin min Rāshid, aw yimkin ana kharbaṭt",
+    "I don't remember exactly. Maybe from Rāshid, or maybe I got it mixed up."
+   ],
+   [
+    "B",
+    "عمك قالها لي بنفسه في المجلس",
+    "ʿammak gālha-li b-nafsah fi l-majlis",
+    "Your uncle told me himself, in the majlis."
+   ],
+   [
+    "A",
+    "زين، بس ذاكرتك مب أحسن من ذاكرتي!",
+    "zēn, bas dhākirtak mub aḥsan min dhākirti!",
+    "OK, but your memory's no better than mine!"
+   ],
+   [
+    "B",
+    "إذا طلعت غلطان، أعزمك على كرك أسبوع كامل",
+    "idha ṭilaʿt ghalṭān, aʿazmak ʿala karak usbūʿ kāmil",
+    "If I turn out to be wrong, I'll buy you karak for a whole week."
+   ],
+   [
+    "A",
+    "اتفقنا! بطرش لعمي وبنشوف منو الصح",
+    "ittafagna! baṭarrish l-ʿammi w binshūf minu ṣ-ṣaḥḥ",
+    "Deal! I'll message my uncle and we'll see who's right."
+   ],
+   [
+    "B",
+    "طرش. أنا سمعتها منه بأذني",
+    "ṭarrish. ana simaʿt-ha minnah b-idhni",
+    "Go ahead. I heard it from him with my own ears."
+   ]
+  ],
+  "items": [
+   [
+    "قالها لي بنفسه",
+    "gālha-li b-nafsah",
+    "he told me himself, he told me in person",
+    "قالها لي بنفسه",
+    "she told me herself: gālat-ha-li b-nafs-ha (قالتها لي بنفسها)"
+   ],
+   [
+    "من وين سمعت؟",
+    "min wēn simaʿt?",
+    "where did you hear that? (to a man)",
+    "من أين سمعت؟",
+    "to a woman: min wēn simaʿti? (من وين سمعتي؟)"
+   ],
+   [
+    "ما أذكر بالضبط",
+    "ma adhkur biẓ-ẓabṭ",
+    "I don't remember exactly",
+    "لا أذكر بالضبط",
+    ""
+   ],
+   [
+    "انت غلطان",
+    "inta ghalṭān",
+    "you're wrong (to a man)",
+    "أنت مخطئ",
+    "to a woman: inti ghalṭāna (انتي غلطانة)"
+   ],
+   [
+    "إذا طلعت غلطان",
+    "idha ṭilaʿt ghalṭān",
+    "if I turn out to be wrong (said by a man)",
+    "إذا تبين أنني مخطئ",
+    "a woman says: idha ṭilaʿt ghalṭāna (إذا طلعت غلطانة)"
+   ],
+   [
+    "منو الصح",
+    "minu ṣ-ṣaḥḥ",
+    "who's right",
+    "من المحق",
+    ""
+   ],
+   [
+    "سمعتها منه بأذني",
+    "simaʿt-ha minnah b-idhni",
+    "I heard it from him with my own ears",
+    "سمعتها منه بأذني",
+    ""
+   ],
+   [
+    "خربطت",
+    "kharbaṭt",
+    "I got (it) mixed up, I muddled it; you got it mixed up (to a man)",
+    "خلطت",
+    "to a woman: kharbaṭti (خربطتي); (recognise)"
+   ],
+   [
+    "ذاكرتي",
+    "dhākirti",
+    "my memory",
+    "ذاكرتي",
+    "your memory: dhākirtak (to a man); (recognise)"
+   ]
+  ],
+  "receptive": [
+   7,
+   8
+  ]
+ },
+ {
+  "id": "s5u007",
+  "stage": 5,
+  "title": "May God make it easy for him",
+  "goal": "At Sēf's family home, with Sēf upstairs packing, Umm Sēf tells you she's worried about him going; answer her worry with blessings",
+  "tip": "optatives: allāh y- + wish; ʿasa + wish",
+  "grammar": "Wish someone well by asking God for it: allāh ysahhil ʿalēh 'may God make it easy for him', allāh yiktib-lah illi fīh il-khēr 'may God bring him what's best'. With ʿasa + a verb: ʿasāha tkūn sana khēr 'may it be a good year'.",
+  "dialogue": [
+   [
+    "A",
+    "هلا يا وليدي، حياك الله. سيف فوق يرتب شنطته",
+    "hala yā wlēdi, ḥayyāk allāh. Sēf fōg yrattib shanṭtah",
+    "Hello, my son, welcome. Sēf's upstairs packing his suitcase."
+   ],
+   [
+    "B",
+    "الله يحييج يا خالتي. شحالج؟",
+    "allāh yḥayyīch yā khālti. shḥālich?",
+    "Thank you, auntie. How are you?"
+   ],
+   [
+    "A",
+    "بخير الحمد لله. بس قلبي مب مرتاح، الولد بيسافر بعيد",
+    "b-khēr il-ḥamdu lillāh. bas galbi mub mirtāḥ, il-walad biysāfir baʿīd",
+    "Fine, thank God. But my heart's uneasy; the boy's going far away."
+   ],
+   [
+    "B",
+    "الله يسهل عليه، ويرده لكم بالسلامة",
+    "allāh ysahhil ʿalēh, w yruddah lakum bis-salāma",
+    "May God make it easy for him, and bring him back to you safe and sound."
+   ],
+   [
+    "A",
+    "آمين. الله يوفقه ويرفع راسنا",
+    "āmīn. allāh ywaffgah w yirfaʿ rāsna",
+    "Amen. May God grant him success and make us proud."
+   ],
+   [
+    "B",
+    "إن شاء الله. هو مستعد، ويستاهل كل خير",
+    "in shāʼ allāh. huwa mistaʿidd, w yistāhil kill khēr",
+    "God willing. He's ready, and he deserves the very best."
+   ],
+   [
+    "A",
+    "الله يحفظك. وعساها تكون سنة خير عليه",
+    "allāh yiḥfaẓak. w ʿasāha tkūn sana khēr ʿalēh",
+    "God keep you. And may it be a good year for him."
+   ],
+   [
+    "B",
+    "الله يكتب له اللي فيه الخير، يا خالتي",
+    "allāh yiktib-lah illi fīh il-khēr, yā khālti",
+    "May God bring him what's best, auntie."
+   ],
+   [
+    "A",
+    "آمين يا رب... هذا هو نزل! عسى عمرك طويل، كنا نتكلم عنك",
+    "āmīn yā rabb... hādha huwa nizal! ʿasa ʿumrak ṭawīl, kinna nitkallam ʿannak",
+    "Amen... Here he is, he's come down! Speak of the devil, we were just talking about you."
+   ],
+   [
+    "B",
+    "هلا سيف! يلا، بساعدك في الشنطة",
+    "hala Sēf! yalla, basāʿdak fi sh-shanṭa",
+    "Hi Sēf! Come on, I'll help you with the suitcase."
+   ]
+  ],
+  "items": [
+   [
+    "الله يسهل عليه",
+    "allāh ysahhil ʿalēh",
+    "may God make it easy for him",
+    "الله ييسر عليه",
+    "for you: allāh ysahhil ʿalēk (to a man), ʿalēch (to a woman)"
+   ],
+   [
+    "يرده لكم بالسلامة",
+    "yruddah lakum bis-salāma",
+    "(may God) bring him back to you safe and sound",
+    "يعيده إليكم سالمًا",
+    "about a woman: yrudd-ha lakum bis-salāma (يردها لكم بالسلامة)"
+   ],
+   [
+    "الله يكتب له اللي فيه الخير",
+    "allāh yiktib-lah illi fīh il-khēr",
+    "may God bring him what's best (lit. write for him what has good in it)",
+    "الله يكتب له الخير",
+    "for you: allāh yiktib-lak illi fīh il-khēr (to a man)"
+   ],
+   [
+    "عساها تكون",
+    "ʿasāha tkūn",
+    "may it (f.) be, I hope it'll be (+ a wish)",
+    "عسى أن تكون",
+    "a masculine noun: ʿasāh ykūn (عساه يكون)"
+   ],
+   [
+    "يستاهل كل خير",
+    "yistāhil kill khēr",
+    "he deserves the very best",
+    "يستحق كل خير",
+    "about a woman: tistāhil kill khēr (تستاهل كل خير)"
+   ],
+   [
+    "يرتب شنطته",
+    "yrattib shanṭtah",
+    "he's packing his suitcase",
+    "يرتب حقيبته",
+    ""
+   ],
+   [
+    "قلبي مب مرتاح",
+    "galbi mub mirtāḥ",
+    "my heart's uneasy, I'm worried",
+    "قلبي غير مطمئن",
+    "(recognise)"
+   ],
+   [
+    "يا وليدي",
+    "yā wlēdi",
+    "my son, my boy (an older person to a young man)",
+    "يا بني",
+    "(recognise)"
+   ],
+   [
+    "عسى عمرك طويل",
+    "ʿasa ʿumrak ṭawīl",
+    "speak of the devil! (said kindly to someone who turns up as you mention him; lit. may your life be long)",
+    "",
+    "(recognise)"
+   ]
+  ],
+  "culture": "Before a journey, many Muslims say the travel prayer (duʿāʼ as-safar), asking God for protection on the way. When someone is about to leave, family and friends add their own blessings, as Umm Sēf and you do here: may God make it easy for him and bring him back safe.",
+  "receptive": [
+   6,
+   7,
+   8
+  ]
+ },
+ {
+  "id": "s5u008",
+  "stage": 5,
+  "title": "God be pleased with you",
+  "goal": "In Bū Rāshid's majlis, with Sēf there, he thanks you for helping Rāshid with his course; take his thanks and bless him back",
+  "tip": "optatives as thanks: allāh yisʿidak, allāh yṭawwil ʿumrak, allāh yhannīh",
+  "grammar": "An elder thanks you with a blessing: allāh yirẓa ʿalēk, allāh yisʿidak. Play it down (hādha aqall shay) and bless him back: āmīn w iyyāk, allāh yṭawwil ʿumrak. When he says mā gaṣṣart, the reply is still mā sawwēna shay.",
+  "dialogue": [
+   [
+    "A",
+    "حياك الله يا ولدي! راشد ما وقف يسولف عنك",
+    "ḥayyāk allāh yā wildi! Rāshid ma wigaf ysōlif ʿannak",
+    "Welcome, son! Rāshid hasn't stopped talking about you."
+   ],
+   [
+    "B",
+    "الله يحييك يا عمي. شحالك؟",
+    "allāh yḥayyīk yā ʿammi. shḥālak?",
+    "Thank you, uncle. How are you?"
+   ],
+   [
+    "A",
+    "بخير الله يسلمك. الله يرضى عليك، ساعدته في طلب الكورس",
+    "b-khēr allāh ysallmak. allāh yirẓa ʿalēk, sāʿadtah fi ṭalab il-kōrs",
+    "Fine, thank you. God bless you, you helped him with the course application."
+   ],
+   [
+    "B",
+    "هذا أقل شي يا عمي. راشد يستاهل",
+    "hādha aqall shay yā ʿammi. Rāshid yistāhil",
+    "It's the least I could do, uncle. Rāshid deserves it."
+   ],
+   [
+    "A",
+    "لا والله، تعبت وياه وايد. الله يسعدك مثل ما فرحتنا",
+    "la wallāh, tiʿabt wiyyāh wāyid. allāh yisʿidak mithil ma farraḥtna",
+    "No, really, you went to a lot of trouble for him. May God make you happy, as you've made us happy."
+   ],
+   [
+    "B",
+    "آمين وإياك يا عمي. الله يطول عمرك",
+    "āmīn w iyyāk yā ʿammi. allāh yṭawwil ʿumrak",
+    "Amen, and you too, uncle. God give you a long life."
+   ],
+   [
+    "A",
+    "ويقول إنك عطيته اللابتوب حقك؟",
+    "w ygūl innak ʿaṭētah il-lābtōb ḥaggak?",
+    "And he says you gave him your laptop?"
+   ],
+   [
+    "B",
+    "هيه، عندي واحد يديد، وهو يحتاجه للكورس",
+    "hē, ʿindi wāḥid yidīd, w huwa yiḥtājah lil-kōrs",
+    "Yes, I've got a new one, and he needs it for the course."
+   ],
+   [
+    "A",
+    "الله يخلف عليك. ما قصرت والله",
+    "allāh yikhlif ʿalēk. mā gaṣṣart wallāh",
+    "May God repay you. You've been so kind, truly."
+   ],
+   [
+    "B",
+    "ما سوينا شي يا عمي. الله يهنيه فيه",
+    "mā sawwēna shay yā ʿammi. allāh yhannīh fīh",
+    "It was nothing, uncle. I hope he enjoys it."
+   ]
+  ],
+  "items": [
+   [
+    "الله يرضى عليك",
+    "allāh yirẓa ʿalēk",
+    "God bless you (warm thanks, usually from an older person) (to a man)",
+    "رضي الله عنك",
+    "to a woman: allāh yirẓa ʿalēch (الله يرضى عليج); (recognise)"
+   ],
+   [
+    "هذا أقل شي",
+    "hādha aqall shay",
+    "it's the least I could do",
+    "هذا أقل شيء",
+    ""
+   ],
+   [
+    "تعبت وياه",
+    "tiʿabt wiyyāh",
+    "you went to a lot of trouble for him (to a man); I went to a lot of trouble for him",
+    "تعبت معه",
+    "to a woman: tiʿabti wiyyāh (تعبتي وياه)"
+   ],
+   [
+    "الله يسعدك",
+    "allāh yisʿidak",
+    "God make you happy (warm thanks) (to a man)",
+    "الله يسعدك",
+    "to a woman: allāh yisʿidich (الله يسعدج)"
+   ],
+   [
+    "مثل ما فرحتنا",
+    "mithil ma farraḥtna",
+    "as you've made us happy (to a man)",
+    "كما أسعدتنا",
+    "to a woman: mithil ma farraḥtīna (مثل ما فرحتينا); (recognise)"
+   ],
+   [
+    "الله يطول عمرك",
+    "allāh yṭawwil ʿumrak",
+    "God give you a long life (thanks, to an older man)",
+    "أطال الله عمرك",
+    "to a woman: allāh yṭawwil ʿumrich (الله يطول عمرج)"
+   ],
+   [
+    "اللابتوب",
+    "il-lābtōb",
+    "the laptop",
+    "الحاسوب المحمول",
+    ""
+   ],
+   [
+    "الله يخلف عليك",
+    "allāh yikhlif ʿalēk",
+    "may God repay you (for what you've given or spent) (to a man)",
+    "أخلف الله عليك",
+    "to a woman: allāh yikhlif ʿalēch; (recognise)"
+   ],
+   [
+    "الله يهنيه",
+    "allāh yhannīh",
+    "may he enjoy it (said of something given to him)",
+    "هنيئًا له",
+    "to the person himself: allāh yhannīk (الله يهنيك)"
+   ]
+  ],
+  "receptive": [
+   0,
+   4,
+   7
+  ]
+ },
+ {
+  "id": "s5u009",
+  "stage": 5,
+  "title": "Come on, keep going!",
+  "goal": "On a video call, Rāshid says his programming course is too hard after one week and he wants to quit; talk him into carrying on",
+  "tip": "urging: shidd ḥēlak, inta gaddha, la + verb",
+  "grammar": "Urge a friend on with commands: shidd ḥēlak! 'come on, keep at it!', inta gaddha 'you can do it'. Stop him with la + verb: la twaggif il-ḥīn 'don't stop now', la tgārin nafsak fīhum 'don't compare yourself with them'.",
+  "dialogue": [
+   [
+    "A",
+    "برو، الكورس صعب وايد. أفكر أطلع منه",
+    "brō, il-kōrs ṣaʿb wāyid. afakkir aṭlaʿ minnah",
+    "Bro, the course is really hard. I'm thinking of dropping out."
+   ],
+   [
+    "B",
+    "تطلع؟ بعد أسبوع واحد بس؟",
+    "tiṭlaʿ? baʿd usbūʿ wāḥid bas?",
+    "Drop out? After just one week?"
+   ],
+   [
+    "A",
+    "مليت! كل يوم كود، ودماغي بينفجر",
+    "malēt! kill yōm kōd, w dmāghi biyinfijir",
+    "I'm fed up! Code every day, and my brain's going to explode."
+   ],
+   [
+    "B",
+    "عادي، أول أسبوع دايما صعب",
+    "ʿādi, awwal usbūʿ dāyman ṣaʿb",
+    "That's normal; the first week's always hard."
+   ],
+   [
+    "A",
+    "بس الشباب الثانيين أشطر مني",
+    "bas ish-shabāb ith-thānyīn ashṭar minni",
+    "But the other guys are better than me."
+   ],
+   [
+    "B",
+    "لا تقارن نفسك فيهم. شد حيلك!",
+    "la tgārin nafsak fīhum. shidd ḥēlak!",
+    "Don't compare yourself with them. Come on, keep at it!"
+   ],
+   [
+    "A",
+    "وإذا ما فهمت شي؟",
+    "w idha ma fhimt shay?",
+    "And if I don't understand something?"
+   ],
+   [
+    "B",
+    "اسأل، وخذها خطوة خطوة. انت قدها",
+    "isʼal, w khidhha khaṭwa khaṭwa. inta gaddha",
+    "Ask, and take it step by step. You can do it."
+   ],
+   [
+    "A",
+    "يعني ما أطلع؟",
+    "yaʿni ma aṭlaʿ?",
+    "So I shouldn't drop out?"
+   ],
+   [
+    "B",
+    "لا توقف الحين. كمل الشهر، ولا تفشلني!",
+    "la twaggif il-ḥīn. kammil ish-shahar, w la tfashshilni!",
+    "Don't stop now. Finish the month, and don't let me down!"
+   ]
+  ],
+  "items": [
+   [
+    "شد حيلك",
+    "shidd ḥēlak",
+    "come on, keep at it, put your back into it (to a man)",
+    "اجتهد",
+    "to a woman: shiddi ḥēlich (شدي حيلج); to a group: shiddu ḥēlkum (شدوا حيلكم)"
+   ],
+   [
+    "انت قدها",
+    "inta gaddha",
+    "you can do it, you're up to it (to a man)",
+    "أنت قادر عليها",
+    "to a woman: inti gaddha (انتي قدها)"
+   ],
+   [
+    "لا تقارن نفسك",
+    "la tgārin nafsak",
+    "don't compare yourself (to a man)",
+    "لا تقارن نفسك",
+    "to a woman: la tgārnīn nafsich (لا تقارنين نفسج)"
+   ],
+   [
+    "لا توقف",
+    "la twaggif",
+    "don't stop (to a man)",
+    "لا تتوقف",
+    "to a woman: la twaggfīn (لا توقفين)"
+   ],
+   [
+    "لا تفشلني",
+    "la tfashshilni",
+    "don't let me down, don't show me up (to a man) (friends only)",
+    "لا تخذلني",
+    "to a woman: la tfashshlīni (لا تفشليني)"
+   ],
+   [
+    "أول أسبوع دايما صعب",
+    "awwal usbūʿ dāyman ṣaʿb",
+    "the first week's always hard",
+    "الأسبوع الأول صعب دائمًا",
+    ""
+   ],
+   [
+    "أطلع منه",
+    "aṭlaʿ minnah",
+    "(to) drop out of it, (to) quit it (a course)",
+    "أنسحب منه",
+    ""
+   ],
+   [
+    "مليت",
+    "malēt",
+    "I'm fed up, I'm sick of it",
+    "مللت",
+    "(recognise)"
+   ],
+   [
+    "دماغي بينفجر",
+    "dmāghi biyinfijir",
+    "my brain's going to explode (friends only)",
+    "رأسي سينفجر",
+    "(recognise)"
+   ]
+  ],
+  "receptive": [
+   7,
+   8
+  ]
+ },
+ {
+  "id": "s5u010",
+  "stage": 5,
+  "title": "Let's begin, with God's blessing",
+  "goal": "At the office, Maryam starts a new project with the team; get everyone going, share out the work and answer her good wishes",
+  "tip": "hortatives: tawakkalna, ʿala barakat illāh, khallna, yalla + verb",
+  "grammar": "Start a job together: tawakkalna ʿala llāh or ʿala barakat illāh 'off we go'. Urge with let's: khallna ngassim ish-shughul, yalla nibda; urge a group with the -u ending: shiddu ḥēlkum, la titʼakhkharūn.",
+  "dialogue": [
+   [
+    "A",
+    "يلا يا جماعة، توكلنا على الله. المشروع اليديد يبدا اليوم",
+    "yalla yā jamāʿa, tawakkalna ʿala llāh. il-mashrūʿ il-yidīd yibda l-yōm",
+    "Right, everyone, let's get going. The new project starts today."
+   ],
+   [
+    "B",
+    "على بركة الله. شو أول شي؟",
+    "ʿala barakat illāh. shu awwal shay?",
+    "Off we go. What comes first?"
+   ],
+   [
+    "A",
+    "الخطة لازم تخلص قبل الخميس، وما في وقت وايد",
+    "il-khiṭṭa lāzim tikhlaṣ gabil il-khamīs, w ma fī wagt wāyid",
+    "The plan has to be finished before Thursday, and there isn't much time."
+   ],
+   [
+    "B",
+    "عيل خلنا نقسم الشغل بيننا. كل واحد ياخذ جزء",
+    "ʿayal khallna ngassim ish-shughul bēnna. kill wāḥid yākhidh juzʼ",
+    "Then let's split the work between us. Everyone takes a part."
+   ],
+   [
+    "A",
+    "فكرة زينة. انت خذ التقرير، وأنا آخذ العرض",
+    "fikra zēna. inta khidh it-taqrīr, w ana ākhidh il-ʿarẓ",
+    "Good idea. You take the report, and I'll take the presentation."
+   ],
+   [
+    "B",
+    "تمام. وانتو يا شباب، شدوا حيلكم!",
+    "tamām. w intu yā shabāb, shiddu ḥēlkum!",
+    "Fine. And you guys, put your backs into it!"
+   ],
+   [
+    "A",
+    "وأبيكم تشتغلون بحماس، ولا تتأخرون على الاجتماعات",
+    "w abīkum tishtaghlūn b-ḥamās, w la titʼakhkharūn ʿala l-ijtimāʿāt",
+    "And I want you all to work with energy, and don't be late for the meetings."
+   ],
+   [
+    "B",
+    "لا تحاتين، يوم الخميس بنكون مخلصين",
+    "la tḥātīn, yōm il-khamīs binkūn mkhallṣīn",
+    "Don't worry, by Thursday we'll be done."
+   ],
+   [
+    "A",
+    "بالتوفيق للكل. الله يعطيكم العافية",
+    "bit-tawfīg lil-kill. allāh yaʿṭīkum il-ʿāfya",
+    "Good luck, everyone. Thanks for all your hard work."
+   ],
+   [
+    "B",
+    "الله يعافيج. يلا نبدا!",
+    "allāh yʿāfīch. yalla nibda!",
+    "Thank you. Let's get started!"
+   ]
+  ],
+  "items": [
+   [
+    "توكلنا على الله",
+    "tawakkalna ʿala llāh",
+    "let's get going, trusting in God (as you start something)",
+    "توكلنا على الله",
+    ""
+   ],
+   [
+    "على بركة الله",
+    "ʿala barakat illāh",
+    "off we go, with God's blessing (as you start something)",
+    "على بركة الله",
+    ""
+   ],
+   [
+    "أول شي",
+    "awwal shay",
+    "first, the first thing; first of all",
+    "أول شيء",
+    ""
+   ],
+   [
+    "كل واحد ياخذ جزء",
+    "kill wāḥid yākhidh juzʼ",
+    "everyone takes a part, each person takes a share",
+    "كل واحد يأخذ جزءًا",
+    ""
+   ],
+   [
+    "يلا نبدا",
+    "yalla nibda",
+    "let's start, let's get going",
+    "هيا نبدأ",
+    ""
+   ],
+   [
+    "لا تتأخرون",
+    "la titʼakhkharūn",
+    "don't be late (to a group)",
+    "لا تتأخروا",
+    "to one man: la titʼakhkhar; to one woman: la titʼakhkharīn"
+   ],
+   [
+    "ما في وقت",
+    "ma fī wagt",
+    "there's no time, there isn't time",
+    "لا يوجد وقت",
+    "not much time: ma fī wagt wāyid"
+   ],
+   [
+    "بالتوفيق",
+    "bit-tawfīg",
+    "good luck (with it), all the best",
+    "بالتوفيق",
+    "(recognise)"
+   ],
+   [
+    "بحماس",
+    "b-ḥamās",
+    "with energy, enthusiastically",
+    "بحماس",
+    "(recognise)"
+   ]
+  ],
+  "task": "This week: with a tutor or exchange partner (search a tutoring site for «Emirati Arabic tutor»), plan an imaginary group trip together for 10 minutes: who books what and by when. Start with tawakkalna ʿala llāh, split the jobs (kill wāḥid yākhidh…), urge them on once (shidd ḥēlak) and end with a wish (allāh ysahhil ʿalēk).",
+  "receptive": [
+   7,
+   8
+  ]
+ },
+ {
+  "id": "s5u011",
+  "stage": 5,
+  "title": "I swear I saw him!",
+  "goal": "At a karak stand, you tell Sēf you've just seen Fahad at Dubai Mall; he won't believe you, so insist",
+  "tip": "insisting: wallāh il-ʿaẓīm, huwa b-nafsah, min jiddak?",
+  "grammar": "Insist with an oath and a fact: wallāh il-ʿaẓīm shiftah 'I swear I saw him'; huwa b-nafsah 'the man himself'. Sēf doubts: min jiddak? 'are you serious?' A plain wallāh is everyday; wallāh il-ʿaẓīm is for when you really need to be believed.",
+  "dialogue": [
+   [
+    "B",
+    "سيف، شفت فهد اليوم في دبي مول!",
+    "Sēf, shift Fahad il-yōm fi Dbayy Mōl!",
+    "Sēf, I saw Fahad today at Dubai Mall!"
+   ],
+   [
+    "A",
+    "فهد؟ مستحيل، فهد في الكويت. يتهيأ لك",
+    "Fahad? mustaḥīl, Fahad fi l-Kwēt. yithayyaʼ-lak",
+    "Fahad? Impossible, Fahad's in Kuwait. You're imagining things."
+   ],
+   [
+    "B",
+    "والله العظيم شفته، عند النافورة",
+    "wallāh il-ʿaẓīm shiftah, ʿind in-nāfūra",
+    "I swear to God I saw him, by the fountain."
+   ],
+   [
+    "A",
+    "يمكن واحد يشبهه. وايد ناس يلبسون نفس الشي",
+    "yimkin wāḥid yishbahah. wāyid nās yilbisūn nafs ish-shay",
+    "Maybe someone who looks like him. Lots of people wear the same thing."
+   ],
+   [
+    "B",
+    "لا، هو بنفسه. حتى سلم علي من بعيد",
+    "la, huwa b-nafsah. ḥatta sallam ʿalay min baʿīd",
+    "No, it was him, the man himself. He even waved to me from a distance."
+   ],
+   [
+    "A",
+    "من جدك؟ وليش ما قال لي إنه ياي؟",
+    "min jiddak? w lēsh ma gāl-li innah yāy?",
+    "Are you serious? Then why didn't he tell me he was coming?"
+   ],
+   [
+    "B",
+    "ما أدري. بس والله العظيم إنه هو",
+    "ma adri. bas wallāh il-ʿaẓīm innah huwa",
+    "I don't know. But I swear it was him."
+   ],
+   [
+    "A",
+    "انت تحب تمزح وايد، ترا",
+    "inta tḥibb timzaḥ wāyid, tara",
+    "You do like a joke, you know."
+   ],
+   [
+    "B",
+    "هالمرة ما أمزح. صدقني!",
+    "hal-marra ma amzaḥ. ṣaddigni!",
+    "This time I'm not joking. Believe me!"
+   ],
+   [
+    "A",
+    "دقيقة... فهد طرش لي: لا تقول لسيف إني في دبي! غلط في الرقم",
+    "digīga... Fahad ṭarrash-li: la tgūl l-Sēf inni fi Dbayy! ghilaṭ fi r-ragam",
+    "Hang on... Fahad's messaged me: 'Don't tell Sēf I'm in Dubai!' He sent it to the wrong number."
+   ]
+  ],
+  "items": [
+   [
+    "والله العظيم",
+    "wallāh il-ʿaẓīm",
+    "I swear to God, I swear it's true (strong)",
+    "والله العظيم",
+    ""
+   ],
+   [
+    "هو بنفسه",
+    "huwa b-nafsah",
+    "him in person, the man himself",
+    "هو بنفسه",
+    "about a woman: hiya b-nafs-ha (هي بنفسها)"
+   ],
+   [
+    "يشبهه",
+    "yishbahah",
+    "(he) looks like him",
+    "يشبهه",
+    "looks like her: yishbahha (يشبهها)"
+   ],
+   [
+    "من جدك؟",
+    "min jiddak?",
+    "are you serious? (to a man)",
+    "هل أنت جاد؟",
+    "to a woman: min jiddich? (من جدج؟)"
+   ],
+   [
+    "سلم علي من بعيد",
+    "sallam ʿalay min baʿīd",
+    "he waved to me from a distance (lit. he greeted me from afar)",
+    "حياني من بعيد",
+    ""
+   ],
+   [
+    "النافورة",
+    "in-nāfūra",
+    "the fountain",
+    "النافورة",
+    ""
+   ],
+   [
+    "يتهيأ لك",
+    "yithayyaʼ-lak",
+    "you're imagining things (to a man)",
+    "يخيل إليك",
+    "to a woman: yithayyaʼ-lich (يتهيأ لج); (recognise)"
+   ],
+   [
+    "يلبسون نفس الشي",
+    "yilbisūn nafs ish-shay",
+    "they wear the same thing",
+    "يلبسون الشيء نفسه",
+    "(recognise)"
+   ],
+   [
+    "غلط في الرقم",
+    "ghilaṭ fi r-ragam",
+    "he got the wrong number, he sent it to the wrong person",
+    "أخطأ في الرقم",
+    "(recognise)"
+   ]
+  ],
+  "culture": "Wallāh 'by God' is everyday Gulf talk, used for 'really' or 'honestly'; longer oaths such as wallāh il-ʿaẓīm are stronger and kept for when it matters. You may hear other oaths in films, such as ʿalayy iṭ-ṭalāg: don't use them.",
+  "receptive": [
+   6,
+   7,
+   8
+  ]
+ },
+ {
+  "id": "s5u012",
+  "stage": 5,
+  "title": "So much that I shut up",
+  "goal": "At a café, Fahad (secretly in Dubai) asks how Sēf took your news; tell him, and talk up the dinner that's coming",
+  "tip": "emphasis: lad-daraja inn, wala aḥla; Kuwaiti gid and ʿazz allāh (recognise)",
+  "grammar": "Emphasise how far something went with lad-daraja inn: ẓiḥak ʿalay lad-daraja inni sikatt 'he laughed at me so much that I shut up'. Fahad's Kuwaiti emphasis is for recognising: kint gid ḥajazt 'I'd (really) booked', ʿazz allāh 'honestly'.",
+  "dialogue": [
+   [
+    "A",
+    "سيف ما صدقك؟",
+    "Sēf ma ṣaddagak?",
+    "Sēf didn't believe you?"
+   ],
+   [
+    "B",
+    "لا، ضحك علي لدرجة إني سكت",
+    "la, ẓiḥak ʿalay lad-daraja inni sikatt",
+    "No, he laughed at me so much that I shut up."
+   ],
+   [
+    "A",
+    "زين سويت. أنا كنت قد حجزت من شهر، وما قلت لأحد",
+    "zēn sawwēt. ana kint gid ḥajazt min shahar, w ma gilt l-aḥad",
+    "Good. I'd booked a whole month ago, and I didn't tell anyone."
+   ],
+   [
+    "B",
+    "من شهر؟ وما قلت لي ولا كلمة!",
+    "min shahar? w ma gilt-li wala kilma!",
+    "A month ago? And you didn't say a word to me!"
+   ],
+   [
+    "A",
+    "عز الله إني تعبت وأنا ساكت!",
+    "ʿazz allāh inni tiʿabt w ana sākit!",
+    "Honestly, keeping quiet wore me out!"
+   ],
+   [
+    "B",
+    "هههه. بس العشا بيكون رهيب، ما تتخيل",
+    "hhhh. bas il-ʿasha biykūn rahīb, ma titkhayyal",
+    "Haha. But the dinner's going to be amazing, you can't imagine."
+   ],
+   [
+    "A",
+    "سمعت إن بو راشد مسوي ذبيحة كاملة؟",
+    "simaʿt inn Bū Rāshid msawwi dhbīḥa kāmla?",
+    "I heard Bū Rāshid's having a whole sheep cooked?"
+   ],
+   [
+    "B",
+    "هيه، وطابخين أكل لدرجة إنه يكفي الفريج كله!",
+    "hē, w ṭābkhīn akil lad-daraja innah ykaffi l-firīj killah!",
+    "Yes, and they're cooking so much food it'll feed the whole neighbourhood!"
+   ],
+   [
+    "A",
+    "عز الله إنه كريم. الله يحفظه",
+    "ʿazz allāh innah karīm. allāh yiḥfaẓah",
+    "He really is generous. God keep him."
+   ],
+   [
+    "B",
+    "الله يحفظه. بتكون ليلة ولا أحلى",
+    "allāh yiḥfaẓah. bitkūn lēla wala aḥla",
+    "God keep him. It'll be a night like no other."
+   ]
+  ],
+  "items": [
+   [
+    "لدرجة إن",
+    "lad-daraja inn",
+    "so much that, to the point that",
+    "لدرجة أن",
+    "with a pronoun: lad-daraja inni (I), lad-daraja innah (he, it)"
+   ],
+   [
+    "ضحك علي",
+    "ẓiḥak ʿalay",
+    "he laughed at me",
+    "ضحك عليّ",
+    ""
+   ],
+   [
+    "من شهر",
+    "min shahar",
+    "a month ago; for a month now",
+    "منذ شهر",
+    ""
+   ],
+   [
+    "وأنا ساكت",
+    "w ana sākit",
+    "keeping quiet, without saying a word (said by a man)",
+    "وأنا ساكت",
+    "a woman says: w ana sākta (وأنا ساكتة)"
+   ],
+   [
+    "ما تتخيل",
+    "ma titkhayyal",
+    "you can't imagine (to a man)",
+    "لا تتخيل",
+    "to a woman: ma titkhayylīn (ما تتخيلين)"
+   ],
+   [
+    "ولا أحلى",
+    "wala aḥla",
+    "like no other, couldn't be better (after a noun)",
+    "لا أجمل منه",
+    ""
+   ],
+   [
+    "كنت قد حجزت",
+    "kint gid ḥajazt",
+    "I'd (really) booked already (Kuwait)",
+    "كنت قد حجزت",
+    "(recognise)"
+   ],
+   [
+    "عز الله",
+    "ʿazz allāh",
+    "honestly, truly (Kuwait)",
+    "والله",
+    "(recognise)"
+   ],
+   [
+    "ذبيحة",
+    "dhbīḥa",
+    "a slaughtered sheep, a whole sheep (cooked for guests)",
+    "ذبيحة",
+    "(recognise)"
+   ]
+  ],
+  "receptive": [
+   6,
+   7,
+   8
+  ]
+ },
+ {
+  "id": "s5u013",
+  "stage": 5,
+  "title": "Nothing special, uncle",
+  "goal": "In Bū Rāshid's majlis, with Sēf there, he praises your Arabic and your work; accept the praise modestly and pass the credit on",
+  "tip": "understatement: mub dhāk iz-zōd, min dhōgak, killah minkum",
+  "grammar": "Take praise by playing it down: min dhōgak 'that's kind of you', bas mub dhāk iz-zōd 'but it's nothing special'. Pass the credit on: shay basīṭ, w Maryam sāʿadatni; killah minkum 'it's all thanks to you'.",
+  "dialogue": [
+   [
+    "A",
+    "ما شاء الله تبارك الرحمن! سولفت مع الشواب ساعة كاملة",
+    "mā shāʼ allāh tabārak ir-raḥmān! sōlaft maʿa sh-shuwwāb sāʿa kāmla",
+    "Mā shāʼ allāh, God bless! You chatted with the old men for a whole hour."
+   ],
+   [
+    "B",
+    "من ذوقك يا عمي. بس مب ذاك الزود",
+    "min dhōgak yā ʿammi. bas mub dhāk iz-zōd",
+    "That's kind of you, uncle. But it's nothing special."
+   ],
+   [
+    "A",
+    "لا والله، صرت تتكلم مثلنا",
+    "la wallāh, ṣirt titkallam mithilna",
+    "No, really, you speak like us now."
+   ],
+   [
+    "B",
+    "بعدني أغلط وايد. بس أحاول",
+    "baʿadni aghlaṭ wāyid. bas aḥāwil",
+    "I still make lots of mistakes. But I try."
+   ],
+   [
+    "A",
+    "الكل يغلط. المهم إنك ما تستحي تتكلم",
+    "il-kill yighlaṭ. il-muhimm innak ma tistiḥi titkallam",
+    "Everyone makes mistakes. What matters is you're not shy about speaking."
+   ],
+   [
+    "B",
+    "كله منكم يا عمي، انتو تشجعوني",
+    "killah minkum yā ʿammi, intu tshajjʿūni",
+    "It's all thanks to you, uncle; you all encourage me."
+   ],
+   [
+    "A",
+    "وسيف يقول إنك سويت العرض في الشغل بروحك؟",
+    "w Sēf ygūl innak sawwēt il-ʿarẓ fi sh-shughul b-rūḥak?",
+    "And Sēf says you did the presentation at work by yourself?"
+   ],
+   [
+    "B",
+    "شي بسيط، ومريم ساعدتني وايد فيه",
+    "shay basīṭ, w Maryam sāʿadatni wāyid fīh",
+    "It was nothing much, and Maryam helped me a lot with it."
+   ],
+   [
+    "A",
+    "تواضع منك! هذي أخلاق الرياييل",
+    "tawāẓuʿ minnak! hādhi akhlāg ir-ryāyīl",
+    "You're being modest! That's how a real man behaves."
+   ],
+   [
+    "B",
+    "الله يحفظك يا عمي. مب ذاك الزود والله",
+    "allāh yiḥfaẓak yā ʿammi. mub dhāk iz-zōd wallāh",
+    "God keep you, uncle. It's nothing special, honestly."
+   ]
+  ],
+  "items": [
+   [
+    "من ذوقك",
+    "min dhōgak",
+    "that's kind of you, how nice of you to say so (to a man)",
+    "هذا من لطفك",
+    "to a woman: min dhōgich (من ذوقج)"
+   ],
+   [
+    "مب ذاك الزود",
+    "mub dhāk iz-zōd",
+    "nothing special, not all that great (UAE)",
+    "ليس بتلك الدرجة",
+    ""
+   ],
+   [
+    "صرت تتكلم مثلنا",
+    "ṣirt titkallam mithilna",
+    "you speak like us now (to a man)",
+    "أصبحت تتكلم مثلنا",
+    "to a woman: ṣirti titkallamīn mithilna"
+   ],
+   [
+    "كله منكم",
+    "killah minkum",
+    "it's all thanks to you (all)",
+    "الفضل لكم",
+    "to one man: killah minnak (كله منك)"
+   ],
+   [
+    "تشجعوني",
+    "tshajjʿūni",
+    "you encourage me (to a group)",
+    "تشجعونني",
+    "to one man: tshajjiʿni; to one woman: tshajjʿīni"
+   ],
+   [
+    "ما تستحي",
+    "ma tistiḥi",
+    "you're not shy, you don't hold back (to a man)",
+    "لا تخجل",
+    "careful: on its own, ma tistiḥi! is a rebuke, 'have you no shame?'; (recognise)"
+   ],
+   [
+    "تبارك الرحمن",
+    "tabārak ir-raḥmān",
+    "blessed be God (said with mā shāʼ allāh when praising)",
+    "تبارك الرحمن",
+    "(recognise)"
+   ],
+   [
+    "تواضع منك",
+    "tawāẓuʿ minnak",
+    "you're being modest (to a man)",
+    "هذا تواضع منك",
+    "(recognise)"
+   ],
+   [
+    "أخلاق الرياييل",
+    "akhlāg ir-ryāyīl",
+    "the way a real man behaves (lit. men's manners)",
+    "أخلاق الرجال",
+    "(recognise)"
+   ]
+  ],
+  "culture": "Praise in the Gulf usually comes with mā shāʼ allāh 'God has willed it', a reminder that good things come from God and a protection against envy and the evil eye. If someone praises you or your family and forgets it, others may say it for them.",
+  "receptive": [
+   5,
+   6,
+   7,
+   8
+  ]
+ },
+ {
+  "id": "s5u014",
+  "stage": 5,
+  "title": "It's no big deal",
+  "goal": "At the office, Maryam has spilt coffee on her laptop just before a client meeting; calm her down and play the problem down",
+  "tip": "playing down: mub sālfa, kill shay yhūn, mub awwal marra",
+  "grammar": "Shrink a problem: mub sālfa 'it's no big deal', kill shay yhūn 'it's all manageable', mub awwal marra tṣīr 'it's not the first time it's happened'. To someone who's upset: khaffifi ʿala nafsich 'go easy on yourself'.",
+  "dialogue": [
+   [
+    "A",
+    "يا ويلي! كبيت القهوة على اللابتوب، والاجتماع بعد ربع ساعة!",
+    "yā wēli! kabbēt il-gahwa ʿala l-lābtōb, w il-ijtimāʿ baʿd rubʿ sāʿa!",
+    "Oh no! I've spilt coffee on the laptop, and the meeting's in a quarter of an hour!"
+   ],
+   [
+    "B",
+    "لا تحاتين، مب سالفة. الملفات محفوظة؟",
+    "la tḥātīn, mub sālfa. il-malaffāt maḥfūẓa?",
+    "Don't worry, it's no big deal. Are the files saved?"
+   ],
+   [
+    "A",
+    "هيه، على الإيميل. بس العرض كله كان عليه!",
+    "hē, ʿala l-īmēl. bas il-ʿarẓ killah kān ʿalēh!",
+    "Yes, in my email. But the whole presentation was on it!"
+   ],
+   [
+    "B",
+    "عادي، بفتحه على لابتوبي",
+    "ʿādi, baftaḥah ʿala lābtōbi",
+    "That's fine, I'll open it on my laptop."
+   ],
+   [
+    "A",
+    "بس شكلي بيكون مب زين قدام العميل",
+    "bas shakli biykūn mub zēn jiddām il-ʿamīl",
+    "But I'm going to look bad in front of the client."
+   ],
+   [
+    "B",
+    "كل شي يهون. العميل ما بيدري بشي",
+    "kill shay yhūn. il-ʿamīl ma biydri b-shay",
+    "It's all manageable. The client won't know a thing."
+   ],
+   [
+    "A",
+    "الله يستر... وإذا خرب اللابتوب؟",
+    "allāh yistur... w idha khirab il-lābtōb?",
+    "Let's hope so... And what if the laptop's broken?"
+   ],
+   [
+    "B",
+    "الشركة بتصلحه. خففي على نفسج، مب أول مرة تصير",
+    "ish-sharika bitṣallḥah. khaffifi ʿala nafsich, mub awwal marra tṣīr",
+    "The company will fix it. Go easy on yourself; it's not the first time it's happened."
+   ],
+   [
+    "A",
+    "صدقت والله. يعطيك العافية",
+    "ṣidagt wallāh. yaʿṭīk il-ʿāfya",
+    "You're so right. Thanks for your help."
+   ],
+   [
+    "B",
+    "الله يعافيج. يلا، خلنا نروح",
+    "allāh yʿāfīch. yalla, khallna nrūḥ",
+    "Not at all. Come on, let's go."
+   ]
+  ],
+  "items": [
+   [
+    "مب سالفة",
+    "mub sālfa",
+    "it's no big deal, it's nothing (UAE)",
+    "ليست مشكلة",
+    ""
+   ],
+   [
+    "كل شي يهون",
+    "kill shay yhūn",
+    "it's all manageable, nothing's that bad",
+    "كل شيء يهون",
+    ""
+   ],
+   [
+    "خففي على نفسج",
+    "khaffifi ʿala nafsich",
+    "go easy on yourself, don't be so hard on yourself (to a woman)",
+    "خففي على نفسك",
+    "to a man: khaffif ʿala nafsak (خفف على نفسك)"
+   ],
+   [
+    "مب أول مرة تصير",
+    "mub awwal marra tṣīr",
+    "it's not the first time it's happened, these things happen",
+    "ليست أول مرة يحدث هذا",
+    ""
+   ],
+   [
+    "الملفات محفوظة",
+    "il-malaffāt maḥfūẓa",
+    "the files are saved",
+    "الملفات محفوظة",
+    ""
+   ],
+   [
+    "بفتحه على لابتوبي",
+    "baftaḥah ʿala lābtōbi",
+    "I'll open it on my laptop",
+    "سأفتحه على حاسوبي",
+    ""
+   ],
+   [
+    "قدام العميل",
+    "jiddām il-ʿamīl",
+    "in front of the client",
+    "أمام العميل",
+    ""
+   ],
+   [
+    "يا ويلي",
+    "yā wēli",
+    "oh no! (lit. woe is me)",
+    "",
+    "(recognise)"
+   ],
+   [
+    "كبيت القهوة",
+    "kabbēt il-gahwa",
+    "I spilt the coffee; you spilt the coffee (to a man)",
+    "سكبت القهوة",
+    "to a woman: kabbēti il-gahwa; (recognise)"
+   ]
+  ],
+  "receptive": [
+   7,
+   8
+  ]
+ },
+ {
+  "id": "s5u015",
+  "stage": 5,
+  "title": "Checkpoint 5.1: Sēf's farewell",
+  "goal": "Checkpoint: at Bū Rāshid's farewell dinner, Sēf finds Fahad there; insist you told him so, play down your part, and send Sēf off with blessings",
+  "tip": "checkpoint 5.1 (s5u001–s5u014): hedging, insisting, playing down, wishes",
+  "grammar": "Review, and now you say it: wallāh il-ʿaẓīm, huwa b-nafsah, iẓ-ẓāhir inn, mub sālfa, allāh ysahhil ʿalēk, and new send-offs: ṭamminna ʿalēk 'let us know you're OK', dīr bālak ʿala nafsak, fī ḥifẓ illāh.",
+  "dialogue": [
+   [
+    "A",
+    "فهد هني؟! يعني اللي شفته في المول كان هو بنفسه؟",
+    "Fahad hni?! yaʿni illi shiftah fi l-mōl kān huwa b-nafsah?",
+    "Fahad's here?! So the person you saw at the mall really was him?"
+   ],
+   [
+    "B",
+    "شفت؟ قلت لك، والله العظيم!",
+    "shift? gilt-lak, wallāh il-ʿaẓīm!",
+    "See? I told you, I swore it!"
+   ],
+   [
+    "A",
+    "الظاهر الكل كان يدري إلا أنا",
+    "iẓ-ẓāhir il-kill kān yadri illa ana",
+    "Apparently everyone knew except me."
+   ],
+   [
+    "B",
+    "هههه، صح. بس انت على نياتك",
+    "hhhh, ṣaḥḥ. bas inta ʿala nyātak",
+    "Haha, true. But you're too trusting."
+   ],
+   [
+    "A",
+    "وعمي يقول انت ساعدته في كل شي. ما قصرت",
+    "w ʿammi ygūl inta sāʿadtah fi kill shay. mā gaṣṣart",
+    "And my uncle says you helped him with everything. Thank you so much."
+   ],
+   [
+    "B",
+    "ما سوينا شي. مب سالفة",
+    "mā sawwēna shay. mub sālfa",
+    "It was nothing. It's no big deal."
+   ],
+   [
+    "A",
+    "عساك على القوة. والله إني بشتاق لكم",
+    "ʿasāk ʿala l-gūwa. wallāh inni bashtāg-lkum",
+    "Well done, and thank you. I'm really going to miss you all."
+   ],
+   [
+    "B",
+    "ونحن بعد. الله يسهل عليك، وترجع بالسلامة",
+    "w niḥin baʿad. allāh ysahhil ʿalēk, w tirjaʿ bis-salāma",
+    "Us too. May God make it easy for you, and may you come back safe."
+   ],
+   [
+    "A",
+    "آمين. وانت شد حيلك في الشغل",
+    "āmīn. w inta shidd ḥēlak fi sh-shughul",
+    "Amen. And you, keep at it at work."
+   ],
+   [
+    "B",
+    "إن شاء الله. دير بالك على نفسك، وطمنا عليك. في حفظ الله",
+    "in shāʼ allāh. dīr bālak ʿala nafsak, w ṭamminna ʿalēk. fī ḥifẓ illāh",
+    "God willing. Look after yourself, and let us know you're OK. Go safely."
+   ]
+  ],
+  "items": [
+   [
+    "طمنا عليك",
+    "ṭamminna ʿalēk",
+    "let us know you're OK (to a man)",
+    "طمئنا عليك",
+    "to a woman: ṭamminīna ʿalēch (طمنينا عليج)"
+   ],
+   [
+    "دير بالك على نفسك",
+    "dīr bālak ʿala nafsak",
+    "look after yourself, take care of yourself (to a man)",
+    "اعتن بنفسك",
+    "to a woman: dīri bālich ʿala nafsich (ديري بالج على نفسج)"
+   ],
+   [
+    "في حفظ الله",
+    "fī ḥifẓ illāh",
+    "go safely, in God's keeping (to someone leaving on a journey)",
+    "في حفظ الله",
+    ""
+   ],
+   [
+    "ترجع بالسلامة",
+    "tirjaʿ bis-salāma",
+    "(may you) come back safe and sound (to a man)",
+    "تعود سالمًا",
+    "to a woman: tirjaʿīn bis-salāma (ترجعين بالسلامة)"
+   ],
+   [
+    "إلا أنا",
+    "illa ana",
+    "except me, apart from me",
+    "إلا أنا",
+    "except him: illa huwa (إلا هو)"
+   ],
+   [
+    "عساك على القوة",
+    "ʿasāk ʿala l-gūwa",
+    "well done, more power to you (to someone who's worked hard) (to a man)",
+    "",
+    "(recognise)"
+   ]
+  ],
+  "task": "This week: record a 2-minute voice note to Sēf, now abroad. Tell him the news from the office (iẓ-ẓāhir inn…, ma fī shay rasmi), play down something you did well (mub dhāk iz-zōd), urge him on with his studies (shidd ḥēlak) and end with two blessings (allāh ysahhil ʿalēk, fī ḥifẓ illāh). Listen back once and redo any sentence you hesitated on.",
+  "receptive": [
+   5
+  ]
+ }
+]
