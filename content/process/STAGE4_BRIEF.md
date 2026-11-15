@@ -9,7 +9,7 @@ Read this with BATCH_LEAD.md, WRITER.md, all of STYLE.md and FRAMEWORK.md §2, �
   - every social formula has its reply from the other speaker in the same dialogue (the linter warns);
   - the future needs b-; English glosses match the Arabic exactly (person, tense, number);
   - never teach a bare homograph (STYLE §2 list; the linter warns);
-  - never re-teach an item, even in another word order or with a small change (the linter errors/warns): reuse it in dialogue instead;
+  - never re-teach an item, even in another word order, with or without il-, or with only the person, pronoun or ending changed (the linter errors or warns: "another order", "with or without il-", "looks like … with only the person or ending changed"): such counterparts go in a note and are reused in dialogue; finish with none of these warnings for your batch;
   - Emirati characters (Sēf, Maryam, Bū Rāshid, Rāshid) never use Kuwaiti or Saudi forms; Fahad and Nūra do;
   - story continuity: B has been in Dubai about two years by the end of stage 3, studies engineering and interns at the office with Maryam, has his own car, lives in Mirdif with a friend; check stage 3's last units before you place a scene;
   - no unsourced facts: every culture claim, custom, rule, date or figure is cited in your writer log from an official or major-news source, or left out;
