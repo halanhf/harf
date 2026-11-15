@@ -256,7 +256,7 @@
    [
     "A",
     "يا ولدي، استانست في الإمارات هالسنة؟",
-    "yā wildi, istānast fi l-imārāt has-sana?",
+    "yā wildi, istānast fi l-Imārāt has-sana?",
     "Son, have you enjoyed yourself in the Emirates this year?"
    ],
    [
@@ -360,11 +360,11 @@
     ""
    ],
    [
-    "تيي ويانا",
-    "tiyi wiyyāna",
-    "you come with us (to a man)",
-    "تأتي معنا",
-    "to a woman: tiyīn wiyyāna (تيين ويانا)"
+    "نمت في البر",
+    "nimt fi l-barr",
+    "I slept out in the desert, I camped in the desert",
+    "نمت في الصحراء",
+    "we slept out: nimna fi l-barr (نمنا في البر)"
    ]
   ],
   "culture": "in shāʼ allāh 'God willing' is the polite answer to an elder's invitation. It can be a real yes or a soft maybe, so if you mean yes, make it clear: in shāʼ allāh, akīd! or ask what time. If you can't come, thank him and give a reason."
@@ -533,9 +533,9 @@
    ],
    [
     "B",
-    "طموحي إني أفتح شركة خاصة فيني. بس أول شي أبي أصير مهندس زين",
-    "ṭumūḥi inni aftaḥ sharika khāṣṣa fīni. bas awwal shay abi aṣīr muhandis zēn",
-    "My ambition is to open my own company. But first I want to be a good engineer."
+    "طموحي إني أفتح شركة خاصة فيني. بس أول شي أبي أصير مهندس",
+    "ṭumūḥi inni aftaḥ sharika khāṣṣa fīni. bas awwal shay abi aṣīr muhandis",
+    "My ambition is to open my own company. But first I want to be an engineer."
    ],
    [
     "A",
@@ -746,7 +746,7 @@
   "title": "Checkpoint 3.5: where shall we have lunch?",
   "goal": "Checkpoint: the team project is nearly done; ask Maryam and the team where to have lunch afterwards, and wish them luck",
   "tip": "To a group, endings are -kum and -ūn: shu raʼykum? 'what do you all think?', tẓunnūn? 'do you all think?', bitiyūn? 'are you all coming?', allāh ywaffigkum 'good luck (all of you)'. To a woman: shu raʼyich?, tẓunnīn? A group participle takes -īn: nāwyīn 'we're planning'.",
-  "grammar": "checkpoint 3.5: recycle s3u057–s3u082 (khalli, ma ʿād, bāgi, illi, aẓunn, nāwi)",
+  "grammar": "checkpoint 3.5: recycle s3u066–s3u082 (illi, aẓunn, b-raʼyi, nāwi, aḥiss)",
   "dialogue": [
    [
     "B",
@@ -774,9 +774,9 @@
    ],
    [
     "B",
-    "خلاص، خلوني أختار أنا. والغدا علي، بتيون كلكم؟",
-    "khalāṣ, khallūni akhtār ana. w il-ghada ʿalay, bitiyūn killkum?",
-    "Right, let me choose, then. And lunch is on me: are you all coming?"
+    "خلاص، اللي يبي ييي، ييي. والغدا علي، بتيون كلكم؟",
+    "khalāṣ, illi yabi yiyi, yiyi. w il-ghada ʿalay, bitiyūn killkum?",
+    "Right, whoever wants to come, comes. And lunch is on me: are you all coming?"
    ],
    [
     "A",
@@ -786,9 +786,9 @@
    ],
    [
     "B",
-    "الله يوفقكم! وأنا موجود إذا تبون شي",
-    "allāh ywaffigkum! w ana mawjūd idha tabūn shay",
-    "Good luck! And I'm around if you need anything."
+    "الله يوفقكم! وبرأيي المشروع اللي سويناه وايد زين",
+    "allāh ywaffigkum! w b-raʼyi l-mashrūʿ illi sawwēnāh wāyid zēn",
+    "Good luck! And in my opinion the project we've done is really good."
    ],
    [
     "A",

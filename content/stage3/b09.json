@@ -1305,7 +1305,7 @@
   "id": "s3u095",
   "stage": 3,
   "title": "Goodbye, Kuwait",
-  "goal": "Thank Fahad and his family as you leave Kuwait, invite them to Dubai and talk about how Kuwaitis speak",
+  "goal": "Thank Fahad and his family as you and Sēf leave Kuwait (Fahad is staying on for the holiday), invite them to Dubai and talk about how Kuwaitis speak",
   "tip": "Thank a whole family with group endings: mā gaṣṣartu 'you've all been so kind' (reply: mā sawwēna shay), taʿʿabnākum 'we've put you to so much trouble', la tinsūna 'don't forget us'. Fahad waves the thanks away with la tgūl chidhi 'don't say that', and says ma rāḥ for 'won't'.",
   "grammar": "Kuwaiti forms II: ma rāḥ + verb, ḥatta iḥna; recycle group endings (mā gaṣṣartu, la tinsūna)",
   "dialogue": [
@@ -1341,9 +1341,9 @@
    ],
    [
     "A",
-    "الله يحييك. ما راح أنساكم! شرايك في الكويت؟",
-    "allāh yḥayyīk. ma rāḥ ansākum! shrāyak fi l-Kwēt?",
-    "Thank you. I won't forget you! What do you think of Kuwait?"
+    "الله يحييك. ما راح أنساكم، باقي أسبوع وأرجع! شرايك في الكويت؟",
+    "allāh yḥayyīk. ma rāḥ ansākum, bāgi usbūʿ w arjaʿ! shrāyak fi l-Kwēt?",
+    "Thank you. I won't forget you: I'm back in a week! What do you think of Kuwait?"
    ],
    [
     "B",
@@ -1353,8 +1353,8 @@
    ],
    [
     "A",
-    "صج، حتى إحنا: أيام زمان أهل شرق كانوا يتكلمون غير عن أهل جبلة",
-    "ṣij, ḥatta iḥna: ayyām zamān ahal Sharg kānaw yitkallamūn ghēr ʿan ahal Jibla",
+    "صج، حتى إحنا: زمان أهل شرق كانوا يتكلمون غير عن أهل جبلة",
+    "ṣij, ḥatta iḥna: zamān ahal Sharg kānaw yitkallamūn ghēr ʿan ahal Jibla",
     "True, even among us: in the old days the people of Sharq spoke differently from the people of Jibla."
    ]
   ],

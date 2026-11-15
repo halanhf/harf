@@ -729,16 +729,16 @@
  {
   "id": "s3u108",
   "stage": 3,
-  "title": "Checkpoint 3.7: a surprise lunch for Ḥamad",
+  "title": "Checkpoint 3.7: a surprise lunch for Khālid",
   "goal": "Checkpoint (stage review): at the office, tell Maryam that a colleague is leaving, and plan a surprise lunch with her",
   "tip": "Stage 3 review, and now you say it: news with gāl-li innah + a participle (ṭāliʿ), ma adri wēn biyrūḥ, lō ana makānah, chān gaʿadt 'if I were him, I'd stay', illi + -ah (illi yḥibbah), maḥjūz 'booked up', ittaṣalt, and to a woman khallīni attaṣil 'let me ring'.",
   "grammar": "checkpoint 3.7 (stage review): participle, reported speech, ma adri, lō … chān, illi, maḥjūz, ittaṣalt, khalli + verb",
   "dialogue": [
    [
     "B",
-    "سمعتي؟ حمد قال لي إنه طالع من الشركة",
-    "simaʿti? Ḥamad gāl-li innah ṭāliʿ min ish-sharika",
-    "Have you heard? Ḥamad told me he's leaving the company."
+    "سمعتي؟ خالد قال لي إنه طالع من الشركة",
+    "simaʿti? Khālid gāl-li innah ṭāliʿ min ish-sharika",
+    "Have you heard? Khālid told me he's leaving the company."
    ],
    [
     "A",
@@ -772,9 +772,9 @@
    ],
    [
     "B",
-    "اتصلت فيهم من قبل وما لقيت. خليني أتصل مرة ثانية",
-    "ittaṣalt fīhum min gabil w ma ligēt. khallīni attaṣil marra thānya",
-    "I've rung them before and couldn't get one. Let me ring again."
+    "اتصلت فيهم من قبل، وبالأخير ما لقيت. خليني أتصل مرة ثانية",
+    "ittaṣalt fīhum min gabil, w bil-akhīr ma ligēt. khallīni attaṣil marra thānya",
+    "I've rung them before, and in the end I never got one. Let me ring again."
    ],
    [
     "A",
@@ -799,11 +799,11 @@
     "I found a job: ligēt shughul (لقيت شغل); she found a job: ligat shughul (لقت شغل)"
    ],
    [
-    "لو أنا مكانه",
-    "lō ana makānah",
-    "if I were him, in his place",
-    "لو كنت مكانه",
-    "if I were her: lō ana makānha (لو أنا مكانها)"
+    "يمكن تلقى طاولة",
+    "yimkin tilga ṭāwla",
+    "maybe you'll get a table (to a man)",
+    "ربما تجد طاولة",
+    "to a woman: yimkin tilgīn ṭāwla (يمكن تلقين طاولة)"
    ],
    [
     "خليني أتصل",
@@ -934,21 +934,21 @@
   "id": "s3u110",
   "stage": 3,
   "title": "B1 exit: my first day at work",
-  "goal": "B1 exit: a year into your internship, tell Maryam and the team the story of your first day at the office",
+  "goal": "B1 exit: two years into your internship, tell Maryam and the team the story of your first day at the office",
   "tip": "Tell it in order: the scene with kān (ma kint aʿarf aḥad, wala kint adri shu l-mafrūẓ asawwi; kint gāʿid asmaʿ 'I was sitting there listening'), the turn with fajʼa, what started with gām (gimt arjif), and the end with bil-akhīr. To a woman, 'do you remember?' is tidhkrīn?",
   "grammar": "B1 exit: narrate an experience (lamma, kān gāʿid + verb, fajʼa, gām + verb, bil-akhīr)",
   "dialogue": [
    [
     "A",
-    "تدري إن اليوم صار لك سنة ويانا؟",
-    "tadri inn il-yōm ṣār-lak sana wiyyāna?",
-    "Did you know you've been with us a year today?"
+    "تدري إن اليوم صار لك سنتين ويانا؟",
+    "tadri inn il-yōm ṣār-lak santēn wiyyāna?",
+    "Did you know you've been with us two years today?"
    ],
    [
     "B",
-    "سنة؟! والله ما حسيت. تذكرين أول يوم لي؟",
-    "sana?! wallāh ma ḥassēt. tidhkrīn awwal yōm li?",
-    "A year?! Honestly, it doesn't feel like it. Do you remember my first day?"
+    "سنتين؟! والله ما حسيت. تذكرين أول يوم لي؟",
+    "santēn?! wallāh ma ḥassēt. tidhkrīn awwal yōm li?",
+    "Two years?! Honestly, it doesn't feel like it. Do you remember my first day?"
    ],
    [
     "A",
