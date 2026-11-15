@@ -63,9 +63,9 @@
    ],
    [
     "B",
-    "سوري، كمل كلامك. وأنا أكتب الخطة",
-    "sōri, kammil kalāmak. w ana aktib il-khiṭṭa",
-    "Sorry, go on. And I'll write up the plan."
+    "سوري، كمل كلامك. وأنا أكتب الخطة، بلا تكرار",
+    "sōri, kammil kalāmak. w ana aktib il-khiṭṭa, bala tikrār",
+    "Sorry, go on. And I'll write up the plan, with nothing said twice."
    ]
   ],
   "items": [
@@ -98,15 +98,12 @@
     "a feminine thing: mirtabṭa b- (مرتبطة ب)"
    ],
    [
-    "على نفس الموجة",
-    "ʿala nafs il-mōja",
-    "on the same wavelength",
-    "على الموجة نفسها",
-    "(recognise)"
+    "تكرار",
+    "tikrār",
+    "repetition, repeating (yourself)",
+    "تكرار",
+    "without repeating ourselves: bala tikrār"
    ]
-  ],
-  "receptive": [
-   4
   ]
  },
  {
@@ -213,13 +210,6 @@
     "neutral, not taking sides (a man)",
     "محايد",
     "a woman: muḥāyda (محايدة)"
-   ],
-   [
-    "الأولوية",
-    "il-awlawiyya",
-    "(the) priority, what comes first",
-    "الأولوية",
-    "the report comes first: il-awlawiyya lit-tagrīr"
    ]
   ]
  },
@@ -346,7 +336,7 @@
   "title": "Prove it! A debate at university",
   "goal": "In a seminar debate, your classmate Sulṭān argues that English is enough to live in Dubai; take him on point by point",
   "tip": "Answer the argument, not the man. Concede what's true first (ma ankir inn… 'I don't deny that…'), then name the weak spot (hādhi ḥujja nāgṣa, hādha tanāquẓ), and when he calls you ʿāṭifi 'emotional', answer with your own experience.",
-  "grammar": "debating (ma ankir inn, ḥujja, tanāquẓ, ʿāṭifi)",
+  "grammar": "debating (ma ankir inn, ḥujja, tanāquẓ, ma tigdar tinfi)",
   "dialogue": [
    [
     "A",
@@ -392,9 +382,9 @@
    ],
    [
     "B",
-    "مب عاطفي. لما تكلمت عربي، الناس فتحوا لي مجالسهم",
-    "mub ʿāṭifi. lamma tkallamt ʿarabi, in-nās fitḥaw-li majālis-hum",
-    "It's not emotional. When I spoke Arabic, people opened their majlises to me."
+    "مب عاطفي، وما تقدر تنفي: لما تكلمت عربي، الناس فتحوا لي مجالسهم",
+    "mub ʿāṭifi, w ma tigdar tinfi: lamma tkallamt ʿarabi, in-nās fitḥaw-li majālis-hum",
+    "It's not emotional, and you can't deny it: when I spoke Arabic, people opened their majlises to me."
    ],
    [
     "A",
@@ -439,25 +429,25 @@
     "q kept, as in fuṣḥā"
    ],
    [
-    "عاطفي",
-    "ʿāṭifi",
-    "emotional (talk, an argument)",
-    "عاطفي",
-    "feminine: ʿāṭifiyya (عاطفية)"
+    "تنفي",
+    "tinfi",
+    "you deny (to a man)",
+    "تنفي",
+    "to a woman: tinfīn (تنفين); you can't deny it: ma tigdar tinfi"
    ]
   ],
   "receptive": [
-   2
+   1
   ],
-  "task": "This week: with a tutor or exchange partner (search a tutoring site for «Emirati Arabic tutor»), hold a 10-minute debate. They argue that English is enough in Dubai; you argue for Arabic. Ask for proof (ʿaṭni dalīl), concede with ma ankir inn…, name one weak point (ḥujja nāgṣa, tanāquẓ), and say maʿak ḥagg fi hādhi once. Then sum up your side in one minute as if to Bū Saʿīd (ṭāl ʿumrak, fi saṭrēn)."
+  "task": "This week: with a tutor or exchange partner (search a tutoring site for «Emirati Arabic tutor»), hold a 10-minute debate: they say English is enough in Dubai; you argue for Arabic. Concede once (ma ankir inn…), ask for proof (ʿaṭni dalīl) and name a weak point (ḥujja nāgṣa, tanāquẓ). Then sum up your side in one minute as if to Bū Saʿīd (ṭāl ʿumrak, fi saṭrēn)."
  },
  {
   "id": "s5u086",
   "stage": 5,
   "title": "Don't back out now! Debating with Fahad",
   "goal": "On a video call from Kuwait, Fahad hears you won the seminar debate and challenges you: Kuwaiti or Emirati? Hold your ground with a friend",
-  "tip": "With a friend the same moves get playful. Tease back instead of proving: la titfalsaf ʿalay 'don't lecture me', la tishmit 'don't gloat', and call a big win a mubārā. When he asks tabi tinsiḥib? 'want to back out?', refuse and offer a draw.",
-  "grammar": "debating with a friend (la tishmit, tinsiḥib, mubārā)",
+  "tip": "With a friend the same moves get playful. Tease back instead of proving: la titfalsaf ʿalay 'don't lecture me', la tishmit 'don't gloat', and la tistafizzni 'don't wind me up'. When he asks tabi tinsiḥib? 'want to back out?', refuse and offer a draw.",
+  "grammar": "debating with a friend (la tishmit, la tistafizzni, tinsiḥib)",
   "dialogue": [
    [
     "A",
@@ -479,9 +469,9 @@
    ],
    [
     "B",
-    "ما تقدر تقول جي! الإماراتي بعد الكل يفهمه",
-    "ma tigdar tgūl chī! il-imārāti baʿad il-kill yifhamah",
-    "You can't say that! Everyone understands Emirati too."
+    "لا تستفزني! الإماراتي بعد الكل يفهمه",
+    "la tistafizzni! il-imārāti baʿad il-kill yifhamah",
+    "Don't wind me up! Everyone understands Emirati too."
    ],
    [
     "A",
@@ -509,9 +499,9 @@
    ],
    [
     "A",
-    "ماشي، تعادلنا. بس المباراة الياية في دبي!",
-    "māshi, tʿādalna. bas il-mubārā l-yāya fi Dbayy!",
-    "Fine, it's a draw. But the next match is in Dubai!"
+    "ماشي، تعادلنا. بس لا تعايرني إذا خسرت المباراة الياية!",
+    "māshi, tʿādalna. bas la tʿāyirni idha khisirt il-mubārā l-yāya!",
+    "Fine, it's a draw. But don't rub it in if I lose the next match!"
    ],
    [
     "B",
@@ -536,11 +526,18 @@
     "to a woman: tinsiḥbīn (تنسحبين)"
    ],
    [
-    "مباراة",
-    "mubārā",
-    "a match, a contest",
-    "مباراة",
-    "the next match: il-mubārā l-yāya"
+    "لا تستفزني",
+    "la tistafizzni",
+    "don't wind me up, don't provoke me (to a man)",
+    "لا تستفزني",
+    "to a woman: la tistafizzīni (لا تستفزيني)"
+   ],
+   [
+    "لا تعايرني",
+    "la tʿāyirni",
+    "don't rub it in, don't taunt me (with it) (to a man)",
+    "لا تعيرني",
+    "to a woman: la tʿāyrīni (لا تعايريني)"
    ],
    [
     "عنجهية",
@@ -558,8 +555,8 @@
    ]
   ],
   "receptive": [
-   3,
-   4
+   4,
+   5
   ]
  },
  {
@@ -578,9 +575,9 @@
    ],
    [
     "B",
-    "بسم الله. عندي ثلاث نقاط… لا، ارتبكت!",
-    "bismillāh. ʿindi thalāth nigāṭ… la, irtabakt!",
-    "In God's name. I've got three points… no, I've lost my nerve!"
+    "بسم الله. عندي ثلاث نقاط… لا، ارتبكت! هذا كابوس!",
+    "bismillāh. ʿindi thalāth nigāṭ… la, irtabakt! hādha kābūs!",
+    "In God's name. I've got three points… no, I've lost my nerve! This is a nightmare!"
    ],
    [
     "A",
@@ -633,11 +630,11 @@
   ],
   "items": [
    [
-    "ارتبكت",
-    "irtabakt",
-    "I got flustered, I lost my nerve; you got flustered (to a man)",
-    "ارتبكت",
-    "to a woman: irtabakti (ارتبكتي)"
+    "كابوس",
+    "kābūs",
+    "a nightmare",
+    "كابوس",
+    ""
    ],
    [
     "أتلعثم",
@@ -813,7 +810,7 @@
    [
     "A",
     "أول نقطة الشغل، وهو كله بالإنقليزي، صح؟",
-    "awwal nugṭa ish-shughul, w huwa killah bil-inglīzi, ṣaḥḥ?",
+    "awwal nugṭa sh-shughul, w huwa killah bil-inglīzi, ṣaḥḥ?",
     "The first point is work, and that's all in English, right?"
    ],
    [
