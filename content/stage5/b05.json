@@ -46,7 +46,7 @@
    [
     "A",
     "يا أخوي، اللابتوب عليه كفالة سنة، ما بتخسر شي",
-    "yā akhūy, il-lābtōb ʿalēh kafāla sana, ma bitkhsar shay",
+    "yā akhūy, il-lābtōb ʿalēh kafāla sana, ma bitikhsar shay",
     "Brother, the laptop has a year's warranty; you won't lose anything."
    ],
    [
@@ -377,9 +377,9 @@
    ],
    [
     "A",
-    "حمد حط في قروب الأهل مقطع لراشد وهو طايح في الملعب، وراشد رد عليه بكلام ما يصير",
-    "Ḥamad ḥaṭṭ fi girūb il-ahal magṭaʿ l-Rāshid w huwa ṭāyiḥ fi l-malʿab, w Rāshid radd ʿalēh b-kalām ma yṣīr",
-    "Ḥamad put a clip of Rāshid falling over on the pitch in the family group, and Rāshid answered him with words he shouldn't have used."
+    "حمد حط في قروب الأهل مقطع لراشد وهو طايح، وراشد رد عليه بكلام ما يصير",
+    "Ḥamad ḥaṭṭ fi girūb il-ahal magṭaʿ l-Rāshid w huwa ṭāyiḥ, w Rāshid radd ʿalēh b-kalām ma yṣīr",
+    "Ḥamad put a clip of Rāshid falling over in the family group, and Rāshid answered him with words he shouldn't have used."
    ],
    [
     "B",
@@ -389,15 +389,15 @@
    ],
    [
     "A",
-    "يمكن، بس أبو حمد زعل. يقول راشد ما احترم ولده الكبير",
-    "yimkin, bas Bū Ḥamad ziʿal. ygūl Rāshid ma iḥtaram wildah il-kbīr",
-    "Maybe, but Ḥamad's father got upset. He says Rāshid didn't respect his grown-up son."
+    "يمكن، بس أبو حمد زعل. قلت له تعوذ من الشيطان، بس يقول راشد ما احترم ولده",
+    "yimkin, bas Bū Ḥamad ziʿal. gilt-lah taʿawwadh min ish-shēṭān, bas ygūl Rāshid ma iḥtaram wildah",
+    "Maybe, but Ḥamad's father got upset. I told him to calm down, but he says Rāshid didn't respect his son, a grown man."
    ],
    [
     "B",
-    "الله يهداهم. يعني صارت سالفة كبار، وكل واحد راكب راسه؟",
-    "allāh yihdāhum. yaʿni ṣārat sālfat kbār, w kill wāḥid rākib rāsah?",
-    "God guide them. So it's become a grown-ups' matter, and each one's dug his heels in?"
+    "يعني صارت سالفة كبار، وكل واحد راكب راسه؟",
+    "yaʿni ṣārat sālfat kbār, w kill wāḥid rākib rāsah?",
+    "So it's become a grown-ups' matter, and each one's dug his heels in?"
    ],
    [
     "A",
@@ -478,7 +478,7 @@
   "id": "s5u063",
   "stage": 5,
   "title": "You hurt his feelings",
-  "goal": "At a karak stand, talk to Ḥamad, the cousin whose wedding you went to, about the clip and the row in the family group; give Rāshid's side, hear his, and get him to move first",
+  "goal": "At a karak stand, talk to Ḥamad, the cousin whose wedding you went to, about the family-group row; give Rāshid's side, hear his, and get him to move first",
   "tip": "As the go-between, give each side's feelings, not your verdict: Rāshid infaẓaḥ, kasart khāṭrah. Answer the fear behind a question (ḥāgid ʿalay?) with la, galbah abyaẓ, call it ṣār sūʼ fahm, and ask for one small step: ibda inta.",
   "grammar": "mediating II: giving each side's feelings (kasart khāṭrah, galbah abyaẓ, ṣār sūʼ fahm)",
   "dialogue": [
@@ -496,9 +496,9 @@
    ],
    [
     "B",
-    "هيه، عمك كلمني. بس راشد انفضح، المقطع شافه الكل",
-    "hē, ʿammak kallamni. bas Rāshid infaẓaḥ, il-magṭaʿ shāfah il-kill",
-    "Yes, your uncle talked to me. But Rāshid was shown up; everyone saw the clip."
+    "عمك كلمني. بس راشد انفضح قدام الكل",
+    "ʿammak kallamni. bas Rāshid infaẓaḥ jiddām il-kill",
+    "Your uncle talked to me. But Rāshid was shown up in front of everyone."
    ],
    [
     "A",
@@ -547,9 +547,9 @@
    [
     "كسرت خاطره",
     "kasart khāṭrah",
-    "you hurt his feelings (lit. you broke his khāṭir, his spirit) (to a man); I hurt his feelings",
+    "you hurt his feelings (lit. you broke his khāṭir, his spirit) (to a man)",
     "جرحت مشاعره",
-    "to a woman: kasarti khāṭrah (كسرتي خاطره)"
+    "to a woman: kasarti khāṭrah (كسرتي خاطره); I hurt his feelings: kasart khāṭrah"
    ],
    [
     "حاقد علي",
@@ -636,9 +636,9 @@
    ],
    [
     "B",
-    "هيه، اتصلت فيه وقلت له: الخطأ من عندنا. وقال حصل خير",
-    "hē, ittaṣalt fīh w gilt-lah: il-khaṭaʼ min ʿindana. w gāl ḥaṣal khēr",
-    "Yes, I called him and told him: the mistake was ours. And he said no harm done."
+    "قلت له: الخطأ من عندنا. وقال حصل خير",
+    "gilt-lah: il-khaṭaʼ min ʿindana. w gāl ḥaṣal khēr",
+    "I told him: the mistake was ours. And he said no harm done."
    ],
    [
     "A",
@@ -753,9 +753,9 @@
    ],
    [
     "A",
-    "يدي يقول دقيقتين، وأحيانا أكثر. كانت حياة صعبة، بس كان رزين ما يشتكي",
-    "yaddi ygūl digīgtēn, w aḥyānan akthar. kānat ḥayā ṣaʿba, bas kān rizīn ma yishtiki",
-    "My grandfather used to say two minutes, sometimes more. It was a hard life, but he was steady and never complained."
+    "يدي يقول دقيقتين، وأحيانا أكثر. كانت حياة صعبة، بس كان رزين، متزن، ما يشتكي",
+    "yaddi ygūl digīgtēn, w aḥyānan akthar. kānat ḥayā ṣaʿba, bas kān rizīn, mitzin, ma yishtiki",
+    "My grandfather used to say two minutes, sometimes more. It was a hard life, but he was steady and composed, and never complained."
    ],
    [
     "B",
