@@ -103,6 +103,8 @@ The course follows **CODA-Gulf** (S: Khalifa et al. 2016; Habash et al. 2018) fo
 - ربع: rubʿ "quarter" (clock time: w rubʿ, illa rubʿ) vs rabʿ "friends, mates". Teach "friends" as ربعي rabʿi "my mates" (276/130); never bare ربع.
 - يمه: yumma "mum" (the item, s2u030) vs yammah "beside him, near him". Teach "near him" as a chunk (يمه على طول style) and note the clash where yumma is taught.
 - تسلم: tislam "thanks (to a man)" vs tsallim "you hand over / greet". Write تسلّم with shadda for the second.
+- والا / ولا walla is one word for "or" and "or else, otherwise" (the published UAE grammar: walla 'or'); never a separate "willa". wala (no doubled l) is "not even, nor".
+- مستعيل mistaʿyil "in a hurry" (woman mistaʿyla) follows the y-word rule (AE 417 vs مستعجل 135); note "you'll see written مستعجل".
 - أقل aqall "less" and قليل qalīl "few, little" keep q in UAE speech (the published UAE grammar writes only 'aqall and qaliil); everyday "a little" is still shwayy.
 - صج ṣij "really" keeps ج (natives write صج 2476/3162 vs صق 3/0): a deliberate exception to the ق rule, like الفريج.
 - طب: ṭibb "medicine" (the item, s2u003) vs UAE ṭabb "came in, entered" vs Egyptian/Levantine ṭab "OK" (never use). Teach ṭabb only as a chunk.
