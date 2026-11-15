@@ -115,7 +115,7 @@
     "nilʿab kūra = we play football"
    ]
   ],
-  "culture": "Football is the most popular sport in the UAE. In the hot months friends often play in the evening, after sunset, when it is cooler."
+  "culture": "Football is the most popular sport among Emiratis. In the hot months friends often play in the evening, after sunset, when it is cooler."
  },
  {
   "id": "s2u002",
@@ -384,9 +384,9 @@
    ],
    [
     "B",
-    "نطلع ونسهر ويا الشباب كل ليلة",
-    "niṭlaʿ w nis-har wiyya sh-shabāb kill lēla",
-    "We go out and stay up late with the guys every night."
+    "ومرات نطلع ونسهر ويا الشباب",
+    "w marrāt niṭlaʿ w nis-har wiyya sh-shabāb",
+    "And sometimes we go out and stay up late with the guys."
    ],
    [
     "A",
@@ -401,7 +401,7 @@
     "wiyya baʿaẓ",
     "together, with each other",
     "معًا",
-    "you'll also hear maʿa baʿaẓ (مع بعض)"
+    "also very common: maʿa baʿaẓ (مع بعض)"
    ],
    [
     "نسكن",
@@ -459,7 +459,7 @@
   "stage": 2,
   "title": "Do you all work here?",
   "goal": "Chat with two young men at a karak stand and get invited to football.",
-  "tip": "For a group, 'you' and 'they' add -ūn: tilʿabūn (you all play), yilʿabūn (they play). A short i before the last consonant drops: tishtaghil → tishtaghlūn, yishtaghil → yishtaghlūn. 'We' stays nishtaghil, with no ending.",
+  "tip": "For a group, 'you' and 'they' add -ūn: tilʿabūn (you all play), yilʿabūn (they play), tidrisūn (you all study). In longer verbs like tishtaghil, the short i before the last consonant drops: tishtaghlūn, yishtaghlūn (to a woman: tishtaghlīn). 'We' stays nishtaghil, with no ending.",
   "grammar": "Present tense I: you all (ti- … -ūn) and they (yi- … -ūn)",
   "dialogue": [
    [
@@ -470,9 +470,9 @@
    ],
    [
     "A",
-    "لا، نشتغل في المطار",
-    "la, nishtaghil fi l-maṭār",
-    "No, we work at the airport."
+    "هلا فيك! لا، نشتغل في المطار",
+    "hala fīk! la, nishtaghil fi l-maṭār",
+    "Hi! No, we work at the airport."
    ],
    [
     "B",
@@ -488,8 +488,8 @@
    ],
    [
     "B",
-    "وتلعبون كورة؟ سيف يلعب دوم!",
-    "w tilʿabūn kūra? Sēf yilʿab dōm!",
+    "وتلعبون كورة؟ سيف دوم يلعب!",
+    "w tilʿabūn kūra? Sēf dōm yilʿab!",
     "And do you play football? Sēf plays all the time!"
    ],
    [
@@ -587,14 +587,14 @@
    ],
    [
     "A",
-    "والصبح ما يصحى! كل يوم أصحيه",
-    "w iṣ-ṣubḥ ma yiṣḥa! kill yōm aṣaḥḥīh",
-    "And in the morning he doesn't wake up! Every day I wake him."
+    "والصبح ما يصحى! أصحيه، ويرجع ينام على طول",
+    "w iṣ-ṣubḥ ma yiṣḥa! aṣaḥḥīh, w yirjaʿ ynām ʿala ṭūl",
+    "And in the morning he doesn't wake up! I wake him, and he goes straight back to sleep."
    ],
    [
     "B",
-    "هيه، بس ينجح على طول",
-    "hē, bas yinjaḥ ʿala ṭūl",
+    "هيه، بس دوم ينجح",
+    "hē, bas dōm yinjaḥ",
     "True, but he always passes."
    ],
    [
@@ -663,7 +663,7 @@
     "ما شاء الله عليك",
     "mā shāʼ allāh ʿalēk",
     "good for you, well done (to a man)",
-    "",
+    "ما شاء الله / أحسنت",
     "to a woman: mā shāʼ allāh ʿalēch (ما شاء الله عليج)"
    ],
    [
@@ -691,9 +691,9 @@
    ],
    [
     "A",
-    "أبوي، يروح كل خميس بعد الدوام",
-    "ubūy, yrūḥ kill khamīs baʿd id-dawām",
-    "My dad, he goes every Thursday after work."
+    "أبوي، يروح كل سبت الصبح",
+    "ubūy, yrūḥ kill sabt iṣ-ṣubḥ",
+    "My dad, he goes every Saturday morning."
    ],
    [
     "B",
@@ -796,7 +796,7 @@
   "id": "s2u008",
   "stage": 2,
   "title": "A walk after work",
-  "goal": "Ask Maryam what she does after work and agree to walk with her family.",
+  "goal": "Ask Maryam what she does after work, and agree to start walking with Sēf.",
   "tip": "Verbs whose past ends in a vowel keep a vowel in the present: sawwa → ysawwi (he does), asawwi, nsawwi; misha → yimshi (he walks), amshi, timshi. Before -īn and -ūn the final i goes: tsawwi → tsawwīn, timshi → timshīn, yimshi → yimshūn.",
   "grammar": "Present tense II: verbs ending in a vowel (ysawwi, yimshi)",
   "dialogue": [
@@ -832,15 +832,15 @@
    ],
    [
     "A",
-    "يلا، تمشي ويانا يوم الخميس؟",
-    "yalla, timshi wiyyāna yōm il-khamīs?",
-    "Come on, will you walk with us on Thursday?"
+    "يلا، تمشي ويا سيف يوم الخميس؟",
+    "yalla, timshi wiyya Sēf yōm il-khamīs?",
+    "Come on, why not walk with Sēf on Thursday?"
    ],
    [
     "B",
-    "ليش لا! نمشي الساعة كم؟",
-    "lēsh la! nimshi is-sāʿa cham?",
-    "Why not! What time do we walk?"
+    "ليش لا! نمشي الصبح بدري",
+    "lēsh la! nimshi iṣ-ṣubḥ badri",
+    "Why not! We'll walk early in the morning."
    ]
   ],
   "items": [
@@ -1134,7 +1134,7 @@
   "id": "s2u011",
   "stage": 2,
   "title": "When are you coming?",
-  "goal": "Take a call from Umm Sēf about lunch tomorrow, and say you'd like to learn her harees.",
+  "goal": "Take a call from Umm Sēf about lunch tomorrow, and tell her you love harees but can't make it.",
   "tip": "'Come': ayi (I), tiyi (you, to a man; she), yiyi (he), niyi (we); tiyīn to a woman, tiyūn to a group, yiyūn (they). 'It' or 'him' after a verb ending in a vowel is -īh: nsawwi → nsawwīh (we make it). After a consonant it's -ah: aḥibb → aḥibbah.",
   "grammar": "Present tense II: 'come' (ayi, tiyi, yiyi); object -īh after a vowel (nsawwīh)",
   "dialogue": [
@@ -1158,14 +1158,14 @@
    ],
    [
     "B",
-    "لا، ييي بعد الدوام",
-    "la, yiyi baʿd id-dawām",
-    "No, he's coming after work."
+    "هيه، ييي وياي",
+    "hē, yiyi wiyyāy",
+    "Yes, he's coming with me."
    ],
    [
     "A",
-    "تحب الهريس؟ نسويه دوم يوم الجمعة",
-    "tḥibb il-harīs? nsawwīh dōm yōm il-jumʿa",
+    "تحب الهريس؟ دوم نسويه يوم الجمعة",
+    "tḥibb il-harīs? dōm nsawwīh yōm il-jumʿa",
     "Do you like harees? We always make it on Fridays."
    ],
    [
@@ -1176,9 +1176,9 @@
    ],
    [
     "A",
-    "تعال بدري، ونسويه ويا بعض!",
-    "taʿāl badri, w nsawwīh wiyya baʿaẓ!",
-    "Come early, and we'll make it together!"
+    "سيف يعرف يسويه. يعلمك!",
+    "Sēf yaʿarf ysawwīh. yʿallmak!",
+    "Sēf knows how to make it. He'll teach you!"
    ]
   ],
   "items": [
@@ -1239,15 +1239,15 @@
     "ma aʿarf asawwīh = I don't know how to make it"
    ]
   ],
-  "culture": "Harees, wheat cooked for hours with meat until smooth, is a traditional Emirati dish, served especially in Ramadan, at Eid and at weddings. Offering to teach a guest a family dish is a warm gesture."
+  "culture": "Harees, wheat cooked for hours with meat until smooth, is a traditional Emirati dish, served especially in Ramadan, at weddings and when honouring guests. Preparing and serving it is seen as a sign of hospitality and generosity."
  },
  {
   "id": "s2u012",
   "stage": 2,
   "title": "The weekly shop",
   "goal": "Talk with Sēf at the supermarket about when you shop and how his dad shops.",
-  "tip": "This lesson mixes the verb types: yilga (he finds) and yishtiri (he buys) end in a vowel like yimshi; yākhidh keeps its long ā; yṭāliʿ (he looks) is regular. yākhidh wagt means 'it takes time' or 'he takes his time'.",
-  "grammar": "Present tense II recycled: yilga, yishtiri, yimshi, yṭāliʿ, yākhidh",
+  "tip": "This lesson mixes the verb types: yilga (he finds) and yishtiri (he buys) end in a vowel like yimshi; yākhidh keeps its long ā; yṭāliʿ (he looks) is regular; yaʿṭi (he gives) ends in a vowel, so 'gives him' is yaʿṭīh. yākhidh wagt means 'it takes a long time'.",
+  "grammar": "Present tense II recycled: yilga, yishtiri, yaʿṭi, yimshi, yṭāliʿ, yākhidh",
   "dialogue": [
    [
     "A",
@@ -1287,9 +1287,9 @@
    ],
    [
     "A",
-    "ساعتين! بس دوم يلقى سمك زين",
-    "sāʿtēn! bas dōm yilga simach zēn",
-    "Two hours! But he always finds good fish."
+    "ساعتين! بس البياع دوم يعطيه سمك زين",
+    "sāʿtēn! bas il-bayyāʿ dōm yaʿṭīh simach zēn",
+    "Two hours! But the seller always gives him good fish."
    ]
   ],
   "items": [
@@ -1338,9 +1338,9 @@
    [
     "ياخذ وقت",
     "yākhidh wagt",
-    "it takes (a long) time; he takes his time",
+    "it takes a long time; he takes a long time",
     "يستغرق وقتًا",
-    ""
+    "he takes his time (isn't in a hurry): yākhidh wagtah (ياخذ وقته)"
    ],
    [
     "ساعتين",
@@ -1350,11 +1350,11 @@
     ""
    ],
    [
-    "يلقى",
-    "yilga",
-    "he finds",
-    "يجد",
-    ""
+    "يعطي",
+    "yaʿṭi",
+    "he gives",
+    "يعطي",
+    "he gives him: yaʿṭīh (يعطيه); give me: ʿaṭni"
    ]
   ]
  }
