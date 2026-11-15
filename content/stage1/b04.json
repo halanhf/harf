@@ -114,7 +114,7 @@
   "id": "s1u048",
   "stage": 1,
   "title": "Come on, quick!",
-  "goal": "Hurry a friend out of the door: get up, look, listen, take it, come.",
+  "goal": "A friend hurries you out of the door: get up, look, listen, take it, come.",
   "tip": "To tell a man to do something, drop the t- of the 'you' verb: tshūf → shūf (look), trūḥ → rūḥ (go), tgūm → gūm (get up). Where two consonants would start the word, add i-: tismaʿ → ismaʿ (listen). 'Come' and 'take' have their own forms: taʿāl, khudh.",
   "grammar": "Imperative to a man: gūm, shūf, rūḥ, taʿāl",
   "dialogue": [
@@ -197,7 +197,7 @@
     "khudh",
     "take (to a man)",
     "خذ",
-    "to a woman: khudhi; khudhah = take it"
+    "to a woman: khudhi; khudhah = take it; also said: khidh"
    ],
    [
     "تعال",
@@ -324,7 +324,7 @@
   "stage": 1,
   "title": "Come here, everyone!",
   "goal": "Call Saif and his friends together for a photo at Global Village: come, come closer, look, smile, let me, let's.",
-  "tip": "To a group, add -u to the man's form: taʿāl → taʿālu, shūf → shūfu, garrib → garrbu (come closer; the i drops). 'Let' is khall- to a man: khallni ashūf (let me see), khallna nrūḥ (let's go); to a woman khallīni, to a group khallūni. The next verb has no 'to'.",
+  "tip": "To a group, add -u to the man's form: taʿāl → taʿālu, shūf → shūfu, garrib → garrbu (come closer; the i drops). 'Let' is khallni / khallna to a man: khallni ashūf (let me see), khallna nrūḥ (let's go). khallīni and khallīna work for a man or a woman; to a group khallūni. The next verb has no 'to'.",
   "grammar": "Imperative to a group: add -u (taʿālu, shūfu); khallni",
   "dialogue": [
    [
@@ -384,7 +384,7 @@
     "khallni",
     "let me (to a man)",
     "دعني",
-    "to a woman: khallīni (خليني); to a group: khallūni (خلوني); khallni ashūf = let me see"
+    "also khallīni (خليني), to a man or a woman; to a group: khallūni (خلوني); khallni ashūf = let me see"
    ],
    [
     "أصور",
@@ -417,9 +417,9 @@
    [
     "خلنا",
     "khallna",
-    "let's",
+    "let's (to a man)",
     "دعنا",
-    "to a woman: khallīna (خلينا); to a group: khallūna (خلونا); khallna nrūḥ = let's go"
+    "also khallīna (خلينا), to a man or a woman; to a group: khallūna (خلونا); khallna nrūḥ = let's go"
    ]
   ],
   "culture": "In public places, ask before you photograph people and keep women and families you don't know out of your photos. In the UAE, taking or sharing photos of people without their consent is also against the law, with heavy fines. Many families prefer that photos of their women aren't taken or shared. (Needs a native check.)"
