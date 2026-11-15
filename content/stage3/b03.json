@@ -1,0 +1,1331 @@
+[
+ {
+  "id": "s3u024",
+  "stage": 3,
+  "title": "I don't know where I put it",
+  "goal": "On campus, tell Sēf you've lost your student card and don't know what to do or who to ask",
+  "tip": "To say 'I don't know where / what / when…', put ma adri in front of the question and keep its normal word order: wēn il-maktab? → ma adri wēn il-maktab 'I don't know where the office is'. shu asawwi? → ma adri shu asawwi 'I don't know what to do'.",
+  "grammar": "indirect questions: ma adri + wēn, shu, mita, lēsh, minu + a normal clause",
+  "dialogue": [
+   [
+    "A",
+    "شفيك يا ريّال؟ شو صار؟",
+    "shfīk yā rayyāl? shu ṣār?",
+    "What's up, man? What happened?"
+   ],
+   [
+    "B",
+    "بطاقة الجامعة ضاعت. ما أدري وين حطيتها",
+    "biṭāgat il-jāmʿa ẓāʿat. ma adri wēn ḥaṭṭēt-ha",
+    "My student card's gone. I don't know where I put it."
+   ],
+   [
+    "A",
+    "شفت في السيارة؟",
+    "shift fi s-sayyāra?",
+    "Did you look in the car?"
+   ],
+   [
+    "B",
+    "هيه، ما لقيتها. ما أدري شو أسوي",
+    "hē, ma ligēt-ha. ma adri shu asawwi",
+    "Yes, I didn't find it. I don't know what to do."
+   ],
+   [
+    "A",
+    "روح المكتب اللي جدام المكتبة، هم يعرفون",
+    "rūḥ il-maktab illi jiddām il-maktaba, hum yaʿarfūn",
+    "Go to the office in front of the library, they'll know."
+   ],
+   [
+    "B",
+    "أي مكتب؟ ما أدري منو أكلم هناك",
+    "ay maktab? ma adri minu akallim hnāk",
+    "Which office? I don't know who to talk to there."
+   ],
+   [
+    "A",
+    "ما أدري متى يسكرون. إذا تبي، نروح الحين",
+    "ma adri mita ysakkrūn. idha tabi, nrūḥ il-ḥīn",
+    "I don't know when they close. If you want, let's go now."
+   ],
+   [
+    "B",
+    "يلا. ما أدري ليش أغراضي دوم تضيع!",
+    "yalla. ma adri lēsh aghrāẓi dōm tẓīʿ!",
+    "Let's go. I don't know why my stuff always goes missing!"
+   ]
+  ],
+  "items": [
+   [
+    "ما أدري وين",
+    "ma adri wēn",
+    "I don't know where",
+    "لا أعرف أين",
+    "ma adri wēn ḥaṭṭēt-ha = I don't know where I put it; fast speech: madri wēn"
+   ],
+   [
+    "ما أدري شو أسوي",
+    "ma adri shu asawwi",
+    "I don't know what to do",
+    "لا أعرف ماذا أفعل",
+    "Kuwait: ma adri shinu asawwi (ما أدري شنو أسوي)"
+   ],
+   [
+    "ما أدري متى",
+    "ma adri mita",
+    "I don't know when",
+    "لا أعرف متى",
+    "ma adri mita ysakkrūn = I don't know when they close"
+   ],
+   [
+    "ما أدري ليش",
+    "ma adri lēsh",
+    "I don't know why",
+    "لا أعرف لماذا",
+    ""
+   ],
+   [
+    "ما أدري منو أكلم",
+    "ma adri minu akallim",
+    "I don't know who to talk to",
+    "لا أعرف مع من أتكلم",
+    "akallim = I talk to, I call (someone)"
+   ],
+   [
+    "بطاقة الجامعة",
+    "biṭāgat il-jāmʿa",
+    "student card, university ID card",
+    "بطاقة الجامعة",
+    "before a noun, biṭāga becomes biṭāgat"
+   ],
+   [
+    "هم يعرفون",
+    "hum yaʿarfūn",
+    "they know, they'll know",
+    "هم يعرفون",
+    "he knows: yaʿarf (يعرف)"
+   ],
+   [
+    "يسكرون",
+    "ysakkrūn",
+    "they close, they shut (a shop, an office)",
+    "يغلقون",
+    "it closes: ysakkir (يسكر); they open: yiftaḥūn (يفتحون)"
+   ],
+   [
+    "أغراضي",
+    "aghrāẓi",
+    "my things, my stuff",
+    "أغراضي",
+    "your things: aghrāẓak (to a man), aghrāẓich (to a woman)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u025",
+  "stage": 3,
+  "title": "Do you know where the meeting room is?",
+  "goal": "At the office, ask Maryam if she knows where the meeting is, who's coming and why the manager picked you",
+  "tip": "To ask a colleague, start with tadri…? 'do you know…?' and add the question as it is: tadri wēn il-mudīr? 'do you know where the manager is?'. To a woman: tadrīn…? or taʿarfīn…?: tadrīn minu yāy? On its own, tadri shu? means 'you know what?'.",
+  "grammar": "indirect questions: tadri / tadrīn / taʿarfīn + wēn, shu, minu, mita",
+  "dialogue": [
+   [
+    "B",
+    "مريم، تدرين وين غرفة الاجتماعات اليديدة؟",
+    "Maryam, tadrīn wēn ghurfat il-ijtimāʿāt il-yidīda?",
+    "Maryam, do you know where the new meeting room is?"
+   ],
+   [
+    "A",
+    "هيه، في الطابق الثالث. ليش؟",
+    "hē, fi ṭ-ṭābig ith-thālith. lēsh?",
+    "Yes, on the third floor. Why?"
+   ],
+   [
+    "B",
+    "عندنا ضيوف الساعة عشر. تدرين منو ياي؟",
+    "ʿindana ẓyūf is-sāʿa ʿashr. tadrīn minu yāy?",
+    "We've got visitors at ten. Do you know who's coming?"
+   ],
+   [
+    "A",
+    "ما أدري والله. بس تدري شو؟ المدير يبيك تسوي العرض",
+    "ma adri wallāh. bas tadri shu? il-mudīr yabīk tsawwi l-ʿarẓ",
+    "No idea. But you know what? The manager wants you to give the presentation."
+   ],
+   [
+    "B",
+    "أنا؟ تدرين ليش اختارني أنا؟",
+    "ana? tadrīn lēsh ikhtārni ana?",
+    "Me? Do you know why he picked me?"
+   ],
+   [
+    "A",
+    "يقول إنك تتكلم زين",
+    "ygūl innak titkallam zēn",
+    "He says you speak well."
+   ],
+   [
+    "B",
+    "الله يستر! تعرفين متى يخلص الاجتماع؟",
+    "allāh yistur! taʿarfīn mita yikhlaṣ il-ijtimāʿ?",
+    "Heaven help me! Do you know when the meeting finishes?"
+   ],
+   [
+    "A",
+    "قبل الغدا إن شاء الله. لا تخاف، بتسويه زين",
+    "gabil il-ghada in shāʼ allāh. la tkhāf, bitsawwīh zēn",
+    "Before lunch, hopefully. Don't worry, you'll do it well."
+   ]
+  ],
+  "items": [
+   [
+    "تدرين وين…؟",
+    "tadrīn wēn…?",
+    "do you know where…? (to a woman)",
+    "هل تعرفين أين…؟",
+    "to a man: tadri wēn…? (تدري وين؟)"
+   ],
+   [
+    "تدري شو؟",
+    "tadri shu?",
+    "you know what? (to a man)",
+    "أتعرف ماذا؟",
+    "to a woman: tadrīn shu?; before a clause it asks 'do you know what…?': tadri shu ṣār?"
+   ],
+   [
+    "تدرين منو…؟",
+    "tadrīn minu…?",
+    "do you know who…? (to a woman)",
+    "هل تعرفين من…؟",
+    "to a man: tadri minu…? (تدري منو؟)"
+   ],
+   [
+    "تعرفين متى…؟",
+    "taʿarfīn mita…?",
+    "do you know when…? (to a woman)",
+    "هل تعرفين متى…؟",
+    "to a man: taʿarf mita…? (تعرف متى؟); taʿarf and tadri both mean 'you know'"
+   ],
+   [
+    "غرفة الاجتماعات",
+    "ghurfat il-ijtimāʿāt",
+    "the meeting room",
+    "غرفة الاجتماعات",
+    ""
+   ],
+   [
+    "ضيوف",
+    "ẓyūf",
+    "guests, visitors",
+    "ضيوف",
+    "one guest: ẓēf (ضيف)"
+   ],
+   [
+    "اختارني",
+    "ikhtārni",
+    "(he) picked me, he chose me",
+    "اختارني",
+    "she picked me: ikhtāratni (اختارتني)"
+   ],
+   [
+    "يبيك تسوي",
+    "yabīk tsawwi",
+    "he wants you to do (to a man)",
+    "يريدك أن تفعل",
+    "to a woman: yabīch tsawwīn (يبيج تسوين)"
+   ],
+   [
+    "الله يستر",
+    "allāh yistur",
+    "heaven help me, let's hope it goes all right (lit. may God protect)",
+    "",
+    "said before something worrying, half joking or serious"
+   ]
+  ]
+ },
+ {
+  "id": "s3u026",
+  "stage": 3,
+  "title": "Could you tell me where it is?",
+  "goal": "Ask at a mall information desk where to buy a phone charger and when the mall closes",
+  "tip": "gūl-li 'tell me' + a question asks for information: gūl-li shu tabi 'tell me what you want'. To a stranger, soften it with mumkin: mumkin tgūl-li wēn il-maṭāʿim? 'could you tell me where the restaurants are?'. To a woman: mumkin tgūlīn-li…?",
+  "grammar": "indirect questions after gūl-li 'tell me': mumkin tgūl-li wēn…?, gūl-li shu…",
+  "dialogue": [
+   [
+    "B",
+    "السلام عليكم. ممكن تقول لي وين محلات التلفونات؟",
+    "as-salāmu ʿalaykum. mumkin tgūl-li wēn maḥallāt it-tilifōnāt?",
+    "Hello. Could you tell me where the phone shops are?"
+   ],
+   [
+    "A",
+    "وعليكم السلام. في وايد. قول لي شو تبي بالضبط",
+    "wa ʿalaykum is-salām. fī wāyid. gūl-li shu tabi biẓ-ẓabṭ",
+    "Hello. There are lots. Tell me what exactly you want."
+   ],
+   [
+    "B",
+    "شاحن حق تلفوني. كان في محل هني، ما أدري شو اسمه",
+    "shāḥin ḥagg tilifōni. kān fī maḥall hni, ma adri shu ismah",
+    "A charger for my phone. There was a shop here, I don't know what it's called."
+   ],
+   [
+    "A",
+    "حق أي تلفون؟",
+    "ḥagg ay tilifōn?",
+    "For which phone?"
+   ],
+   [
+    "B",
+    "حق هذا. وقول لي، وين أقرب محل؟",
+    "ḥagg hādha. w gūl-li, wēn agrab maḥall?",
+    "For this one. And tell me, where's the nearest shop?"
+   ],
+   [
+    "A",
+    "في الطابق الأول، يم المطاعم",
+    "fi ṭ-ṭābig il-awwal, yamm il-maṭāʿim",
+    "On the first floor, next to the restaurants."
+   ],
+   [
+    "B",
+    "مشكور. وممكن تقول لي متى يسكر المول؟",
+    "mashkūr. w mumkin tgūl-li mita ysakkir il-mōl?",
+    "Thanks. And could you tell me when the mall closes?"
+   ],
+   [
+    "A",
+    "العفو. نص الليل، بس المحلات تسكر قبل",
+    "il-ʿafu. nuṣṣ il-lēl, bas il-maḥallāt tsakkir gabil",
+    "You're welcome. At midnight, but the shops close earlier."
+   ]
+  ],
+  "items": [
+   [
+    "ممكن تقول لي…؟",
+    "mumkin tgūl-li…?",
+    "could you tell me…? (to a man)",
+    "هل يمكنك أن تخبرني…؟",
+    "to a woman: mumkin tgūlīn-li…? (ممكن تقولين لي؟)"
+   ],
+   [
+    "قول لي شو",
+    "gūl-li shu",
+    "tell me what (to a man)",
+    "قل لي ماذا",
+    "to a woman: gūlī-li shu (قولي لي شو); you'll see written قولي شو"
+   ],
+   [
+    "ما أدري شو اسمه",
+    "ma adri shu ismah",
+    "I don't know what it's called, I don't know his name",
+    "لا أعرف ما اسمه",
+    "a feminine noun or a woman: ma adri shu ismha (ما أدري شو اسمها)"
+   ],
+   [
+    "أقرب محل",
+    "agrab maḥall",
+    "the nearest shop",
+    "أقرب محل",
+    "agrab wāḥid = the nearest one"
+   ],
+   [
+    "بالضبط",
+    "biẓ-ẓabṭ",
+    "exactly",
+    "بالضبط",
+    ""
+   ],
+   [
+    "الطابق الأول",
+    "iṭ-ṭābig il-awwal",
+    "the first floor",
+    "الطابق الأول",
+    "after a vowel: fi ṭ-ṭābig il-awwal"
+   ],
+   [
+    "يم المطاعم",
+    "yamm il-maṭāʿim",
+    "next to the restaurants, by the restaurants",
+    "بجانب المطاعم",
+    "one restaurant: maṭʿam (مطعم)"
+   ],
+   [
+    "متى يسكر المول؟",
+    "mita ysakkir il-mōl?",
+    "when does the mall close?",
+    "متى يغلق المركز التجاري؟",
+    "when does it open?: mita yiftaḥ? (متى يفتح؟)"
+   ],
+   [
+    "في وايد",
+    "fī wāyid",
+    "there are lots, there are plenty",
+    "يوجد الكثير",
+    ""
+   ]
+  ],
+  "culture": "Even at a counter, start with as-salāmu ʿalaykum before your question, and wait for the reply: going straight to the question can sound abrupt. With shop and mall staff, mumkin…? and law samaḥt are polite enough; long formal phrases sound stiff in Gulf speech."
+ },
+ {
+  "id": "s3u027",
+  "stage": 3,
+  "title": "Ask him if there's a table outside",
+  "goal": "Phone a restaurant worker to book for your mates, ask whether there's a table outside, and say you'll get back to them",
+  "tip": "idha also means 'whether': ma adri idha fī makān 'I don't know if there's room'. Use it after asʼal 'ask', shūf 'see, check' and ma adri: isʼalah idha yigdar 'ask him if he can'. The question after idha keeps its normal word order.",
+  "grammar": "idha 'whether, if' after asʼal, shūf and ma adri: isʼalah idha…",
+  "dialogue": [
+   [
+    "B",
+    "السلام عليكم. أبي أسأل إذا عندكم طاولة باكر في الليل",
+    "as-salāmu ʿalaykum. abi asʼal idha ʿindakum ṭāwla bāchir fi l-lēl",
+    "Hello. I'd like to ask if you have a table tomorrow evening."
+   ],
+   [
+    "A",
+    "وعليكم السلام. حق كم واحد؟",
+    "wa ʿalaykum is-salām. ḥagg cham wāḥid?",
+    "Hello. For how many?"
+   ],
+   [
+    "B",
+    "حق خمسة. وشوف إذا في طاولة برا، لو سمحت",
+    "ḥagg khamsa. w shūf idha fī ṭāwla barra, law samaḥt",
+    "For five. And see if there's a table outside, please."
+   ],
+   [
+    "A",
+    "برا كله محجوز. بس المدير يمكن يقدر يسوي شي",
+    "barra killah maḥjūz. bas il-mudīr yimkin yigdar ysawwi shay",
+    "Outside is all booked. But the manager might be able to do something."
+   ],
+   [
+    "B",
+    "زين، اسأله إذا يقدر. نحب نقعد برا",
+    "zēn, isʼalah idha yigdar. nḥibb nigʿid barra",
+    "OK, ask him if he can. We like sitting outside."
+   ],
+   [
+    "A",
+    "سألته. يقول إن في طاولة الساعة تسع",
+    "saʼaltah. ygūl inn fī ṭāwla s-sāʿa tisʿ",
+    "I asked him. He says there's a table at nine."
+   ],
+   [
+    "B",
+    "ما أدري إذا ربعي يقدرون تسع. بسألهم وبرد عليك",
+    "ma adri idha rabʿi yigdarūn tisʿ. basʼalhum w barudd ʿalēk",
+    "I don't know if my mates can do nine. I'll ask them and get back to you."
+   ],
+   [
+    "A",
+    "ما عليه. بس لا تتأخر، الخميس زحمة",
+    "ma ʿalēh. bas la titʼakhkhar, il-khamīs zaḥma",
+    "No problem. But don't leave it late, Thursday's busy."
+   ]
+  ],
+  "items": [
+   [
+    "أبي أسأل إذا",
+    "abi asʼal idha",
+    "I'd like to ask if, I'm calling to ask whether",
+    "أريد أن أسأل إذا",
+    "a polite way to start a call to a shop, a clinic or an office"
+   ],
+   [
+    "اسأله إذا",
+    "isʼalah idha",
+    "ask him whether, ask him if (to a man)",
+    "اسأله إن كان",
+    "to a woman: isʼalīh idha (اسأليه إذا)"
+   ],
+   [
+    "ما أدري إذا",
+    "ma adri idha",
+    "I don't know if, I don't know whether",
+    "لا أعرف إن كان",
+    ""
+   ],
+   [
+    "شوف إذا",
+    "shūf idha",
+    "see if, check whether (to a man)",
+    "انظر إن كان",
+    "to a woman: shūfi idha (شوفي إذا)"
+   ],
+   [
+    "حق كم واحد؟",
+    "ḥagg cham wāḥid?",
+    "for how many (people)?",
+    "لكم شخص؟",
+    ""
+   ],
+   [
+    "كله محجوز",
+    "killah maḥjūz",
+    "it's all booked, it's fully booked",
+    "كله محجوز",
+    "a feminine noun: iṭ-ṭāwla maḥjūza (الطاولة محجوزة)"
+   ],
+   [
+    "بسألهم",
+    "basʼalhum",
+    "I'll ask them",
+    "سأسألهم",
+    "I'll ask him: basʼalah (بسأله)"
+   ],
+   [
+    "برد عليك",
+    "barudd ʿalēk",
+    "I'll get back to you, I'll let you know (to a man)",
+    "سأرد عليك",
+    "to a woman: barudd ʿalēch (برد عليج)"
+   ],
+   [
+    "يقدرون",
+    "yigdarūn",
+    "they can",
+    "يستطيعون",
+    "he can: yigdar (يقدر)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u028",
+  "stage": 3,
+  "title": "Checkpoint 3.2: Fahad's flight is late",
+  "goal": "Checkpoint: from Dubai airport, phone Fahad to find out why his flight is late and what to do",
+  "tip": "The 'I don't know where / if' pattern works with every person: ma nadri 'we don't know', ma tadri 'she doesn't know', ma yadri 'he doesn't know'. To a group, tadri becomes tadrūn: tadrūn shu? 'you know what, guys?'. Fahad says shinu for shu: ma adri shinu ṣāyir.",
+  "grammar": "checkpoint 3.2: recycle s3u013–s3u027 (conditionals, reported speech, indirect questions)",
+  "dialogue": [
+   [
+    "B",
+    "هلا فهد! وينك؟ نحن في المطار",
+    "hala Fahad! wēnak? niḥin fi l-maṭār",
+    "Hi Fahad! Where are you? We're at the airport."
+   ],
+   [
+    "A",
+    "هلا والله. للحين في الكويت! يقولون إن الطيارة متأخرة",
+    "hala wallāh. lil-ḥīn fi l-Kwēt! ygūlūn inn iṭ-ṭayyāra mitʼakhkhra",
+    "Hi. I'm still in Kuwait! They say the flight's delayed."
+   ],
+   [
+    "B",
+    "صج؟ ما ندري شي! تدري ليش؟",
+    "ṣij? ma nadri shay! tadri lēsh?",
+    "Really? We had no idea! Do you know why?"
+   ],
+   [
+    "A",
+    "لا والله، ما أدري شنو صاير. حتى الموظفة ما تدري",
+    "la wallāh, ma adri shinu ṣāyir. ḥatta l-muwaẓẓafa ma tadri",
+    "No, I've no idea what's going on. Even the woman at the desk doesn't know."
+   ],
+   [
+    "B",
+    "ما عليه. سيف يقول بنترياك حتى لو تأخرت وايد",
+    "ma ʿalēh. Sēf ygūl binitrayyāk ḥatta lō taʼakhkhart wāyid",
+    "Never mind. Sēf says we'll wait for you even if you're really late."
+   ],
+   [
+    "A",
+    "تدرون شو؟ روحوا البيت. إذا وصلت، باخذ تاكسي",
+    "tadrūn shu? rūḥu l-bēt. idha wiṣalt, bākhidh tāksi",
+    "You know what, guys? Go home. When I land, I'll take a taxi."
+   ],
+   [
+    "B",
+    "لا، بنترياك. بس اسألها إذا في طيارة ثانية",
+    "la, binitrayyāk. bas isʼalha idha fī ṭayyāra thānya",
+    "No, we'll wait for you. But ask her if there's another flight."
+   ],
+   [
+    "A",
+    "زين، بسألها. وإذا عرفت شي، بطرش لكم",
+    "zēn, basʼalha. w idha ʿirift shay, baṭarrish-lkum",
+    "OK, I'll ask her. And if I find out anything, I'll message you."
+   ]
+  ],
+  "items": [
+   [
+    "ما ندري",
+    "ma nadri",
+    "we don't know",
+    "لا نعرف",
+    "ma nadri shay = we've no idea; Kuwait: the same (iḥna ma nadri)"
+   ],
+   [
+    "ما تدري",
+    "ma tadri",
+    "she doesn't know",
+    "لا تعرف",
+    "he doesn't know: ma yadri (ما يدري); to a man it also means 'you don't know'"
+   ],
+   [
+    "تدري ليش؟",
+    "tadri lēsh?",
+    "do you know why? (to a man)",
+    "هل تعرف لماذا؟",
+    "to a woman: tadrīn lēsh? (تدرين ليش؟)"
+   ],
+   [
+    "تدرون شو؟",
+    "tadrūn shu?",
+    "you know what? (to a group)",
+    "أتعرفون ماذا؟",
+    "to one man: tadri shu?; to one woman: tadrīn shu?"
+   ],
+   [
+    "اسألها إذا",
+    "isʼalha idha",
+    "ask her whether, ask her if (to a man)",
+    "اسألها إن كان",
+    "to a woman: isʼalīha idha (اسأليها إذا)"
+   ],
+   [
+    "ما أدري شنو",
+    "ma adri shinu",
+    "I don't know what (Kuwait)",
+    "لا أعرف ماذا",
+    "UAE: ma adri shu (ما أدري شو)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u029",
+  "stage": 3,
+  "title": "Who fixes the printer?",
+  "goal": "Find the office technician, tell him what's wrong with the printer, and encourage him while he works",
+  "tip": "Many everyday verbs double their middle letter: ṣallaḥ 'he fixed', yṣalliḥ 'he fixes'. You know some already: sawwa, ṭarrash, khallaṣ. They take the usual endings: aṣalliḥ 'I fix', tṣalliḥ 'you fix', yṣallḥūn 'they fix'. With 'it': aṣalliḥha 'I'll fix it (f.)'.",
+  "grammar": "Form II verbs (doubled middle letter): yṣalliḥ 'he fixes', aṣalliḥha 'I'll fix it'",
+  "dialogue": [
+   [
+    "B",
+    "لو سمحت، منو اللي يصلح الطابعة؟",
+    "law samaḥt, minu illi yṣalliḥ iṭ-ṭābʿa?",
+    "Excuse me, who fixes the printer?"
+   ],
+   [
+    "A",
+    "أنا. شو فيها؟",
+    "ana. shu fīha?",
+    "Me. What's wrong with it?"
+   ],
+   [
+    "B",
+    "ما تطبع من الصبح. ما أدري شو صار لها",
+    "ma tiṭbaʿ min iṣ-ṣubḥ. ma adri shu ṣār-lha",
+    "It hasn't printed since this morning. I don't know what's happened to it."
+   ],
+   [
+    "A",
+    "بسيطة. خلني أشوفها وأصلحها الحين",
+    "basīṭa. khallni ashūfha w aṣalliḥha l-ḥīn",
+    "No problem. Let me look at it and I'll fix it now."
+   ],
+   [
+    "B",
+    "الله يقويك! تبي شي؟",
+    "allāh ygawwīk! tabi shay?",
+    "Thanks for all your work! Do you need anything?"
+   ],
+   [
+    "A",
+    "الله يعافيك. خلاص، اشتغلت! بس لا تحطون فيها ورق وايد",
+    "allāh yʿāfīk. khalāṣ, ishtaghalat! bas la tḥuṭṭūn fīha warag wāyid",
+    "Thank you. There, it's working! But don't (any of you) put too much paper in it."
+   ],
+   [
+    "B",
+    "ما شاء الله! ما قصرت",
+    "mā shāʼ allāh! mā gaṣṣart",
+    "Brilliant! Thanks so much."
+   ],
+   [
+    "A",
+    "ما سوينا شي. إذا خربت مرة ثانية، قول لي",
+    "mā sawwēna shay. idha khirbat marra thānya, gūl-li",
+    "It was nothing. If it breaks down again, tell me."
+   ]
+  ],
+  "items": [
+   [
+    "يصلح",
+    "yṣalliḥ",
+    "(he) fixes, repairs",
+    "يصلح",
+    "I fix: aṣalliḥ (أصلح); he fixed: ṣallaḥ (صلح); don't confuse with ma yiṣlaḥ 'it won't do', spelled the same"
+   ],
+   [
+    "أصلحها",
+    "aṣalliḥha",
+    "I'll fix it (f.), I fix it",
+    "أصلحها",
+    "a masculine thing: aṣallḥah (أصلحه)"
+   ],
+   [
+    "الله يقويك",
+    "allāh ygawwīk",
+    "(to someone working) God give you strength (to a man)",
+    "",
+    "to a woman: allāh ygawwīch (الله يقويج); a common reply: allāh yʿāfīk"
+   ],
+   [
+    "الطابعة",
+    "iṭ-ṭābʿa",
+    "the printer",
+    "الطابعة",
+    "the printers: iṭ-ṭābʿāt (الطابعات)"
+   ],
+   [
+    "ما تطبع",
+    "ma tiṭbaʿ",
+    "it (f.) won't print",
+    "لا تطبع",
+    "print it (f.): iṭbaʿha (اطبعها)"
+   ],
+   [
+    "شو صار لها؟",
+    "shu ṣār-lha?",
+    "what's happened to it (f.)?, what's happened to her?",
+    "ماذا حدث لها؟",
+    "a masculine thing or a man: shu ṣār-lah? (شو صار له؟)"
+   ],
+   [
+    "بسيطة",
+    "basīṭa",
+    "no problem, it's nothing (lit. simple)",
+    "بسيطة",
+    ""
+   ],
+   [
+    "إذا خربت",
+    "idha khirbat",
+    "if it (f.) breaks down",
+    "إذا تعطلت",
+    "a masculine thing: idha khirab (إذا خرب)"
+   ],
+   [
+    "اشتغلت",
+    "ishtaghalat",
+    "it's working now, it worked (a feminine thing)",
+    "اشتغلت / عملت",
+    "a masculine thing: ishtaghal (اشتغل)"
+   ]
+  ],
+  "culture": "allāh ygawwīk is what you say to someone in the middle of a job: a technician, a cleaner, friends carrying furniture. yaʿṭīk il-ʿāfya, which you already know, works in the same places. Both are warm and everyday, not formal, and you can say them to anyone working, whatever their job."
+ },
+ {
+  "id": "s3u030",
+  "stage": 3,
+  "title": "I changed the meeting time",
+  "goal": "Talk with Maryam at the office about the meeting she moved and the slides you changed",
+  "tip": "Form II past works like any past verb: ghayyart 'I changed; you (m.) changed', ghayyarti 'you (f.) changed', ghayyar 'he changed', ghayyarna 'we changed'. Add -ah for 'it': ghayyartah 'I changed it'. Don't mix it up with tghayyar 'it changed (by itself)'.",
+  "grammar": "Form II past: ghayyart 'I changed', ghayyartīh 'you (f.) changed it', rajjiʿha 'put it back'",
+  "dialogue": [
+   [
+    "A",
+    "شفت الإيميل؟ غيرت موعد الاجتماع",
+    "shift il-īmēl? ghayyart mawʿid il-ijtimāʿ",
+    "Did you see the email? I've changed the meeting time."
+   ],
+   [
+    "B",
+    "لا، للحين ما شفته. ليش غيرتيه؟",
+    "la, lil-ḥīn ma shiftah. lēsh ghayyartīh?",
+    "No, I haven't seen it yet. Why did you change it?"
+   ],
+   [
+    "A",
+    "المدير مسافر باكر. غيرته، صار يوم الخميس",
+    "il-mudīr msāfir bāchir. ghayyartah, ṣār yōm il-khamīs",
+    "The manager's flying out tomorrow. I moved it, it's on Thursday now."
+   ],
+   [
+    "B",
+    "زين. وأنا غيرت العرض شوي. تبين تشوفينه؟",
+    "zēn. w ana ghayyart il-ʿarẓ shwayy. tabīn tshūfīnah?",
+    "OK. And I've changed the presentation a bit. Do you want to see it?"
+   ],
+   [
+    "A",
+    "هيه أكيد… بس ليش غيرت الألوان؟",
+    "hē akīd… bas lēsh ghayyart il-alwān?",
+    "Yes, sure… but why did you change the colours?"
+   ],
+   [
+    "B",
+    "غيرت رأيي. الألوان القديمة ما كانت حلوة",
+    "ghayyart raʼyi. il-alwān il-gadīma ma kānat ḥilwa",
+    "I changed my mind. The old colours weren't nice."
+   ],
+   [
+    "A",
+    "لا والله، كانت أحلى! رجعها مثل قبل",
+    "la wallāh, kānat aḥla! rajjiʿha mithil gabil",
+    "No way, they were nicer! Put them back like before."
+   ],
+   [
+    "B",
+    "إن شاء الله. برجعها الحين",
+    "in shāʼ allāh. barajjiʿha l-ḥīn",
+    "All right. I'll change them back now."
+   ]
+  ],
+  "items": [
+   [
+    "غيرت",
+    "ghayyart",
+    "I changed; you changed (to a man)",
+    "غيرت",
+    "to a woman: ghayyarti (غيرتي); we changed: ghayyarna (غيرنا)"
+   ],
+   [
+    "غيرت رأيي",
+    "ghayyart raʼyi",
+    "I've changed my mind",
+    "غيرت رأيي",
+    "you'll see written غيرت رايي"
+   ],
+   [
+    "غيرته",
+    "ghayyartah",
+    "I changed it (m.), I moved it (a time, a plan); you changed it (to a man)",
+    "غيرته",
+    "a feminine thing: ghayyart-ha (غيرتها); to a woman (you changed it): ghayyartīh (غيرتيه)"
+   ],
+   [
+    "ليش غيرتيه؟",
+    "lēsh ghayyartīh?",
+    "why did you change it? (to a woman)",
+    "لماذا غيرتِه؟",
+    "to a man: lēsh ghayyartah? (ليش غيرته؟)"
+   ],
+   [
+    "موعد الاجتماع",
+    "mawʿid il-ijtimāʿ",
+    "the meeting time",
+    "موعد الاجتماع",
+    ""
+   ],
+   [
+    "تبين تشوفينه؟",
+    "tabīn tshūfīnah?",
+    "do you want to see it (m.)? (to a woman)",
+    "هل تريدين أن تريه؟",
+    "to a man: tabi tshūfah? (تبي تشوفه؟)"
+   ],
+   [
+    "رجعها",
+    "rajjiʿha",
+    "put it (f.) back, change them back (to a man)",
+    "أرجعها",
+    "to a woman: rajjʿīha (رجعيها); a masculine thing: rajjʿah (رجعه)"
+   ],
+   [
+    "برجعها",
+    "barajjiʿha",
+    "I'll put it (f.) back, I'll change them back",
+    "سأرجعها",
+    "not barjaʿ 'I'll go back', which is written the same before the ending"
+   ],
+   [
+    "مثل قبل",
+    "mithil gabil",
+    "like before, the way it was",
+    "كما كان",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "s3u031",
+  "stage": 3,
+  "title": "Take me to the repair shop",
+  "goal": "Ask Sēf to take you to get your laptop fixed and to drop you home afterwards",
+  "tip": "wadda 'take (someone somewhere)' and waṣṣal 'give a lift, drop off' are Form II verbs. Add the person: waddni 'take me', bawaddīk 'I'll take you', waṣṣilni l-bēt 'drop me home'. The place follows with no word for 'to': waddni l-mōl 'take me to the mall'.",
+  "grammar": "Form II with object endings: waddni 'take me', bawaddīk 'I'll take you', bawaṣṣlak 'I'll drop you'",
+  "dialogue": [
+   [
+    "B",
+    "سيف، انت فاضي العصر؟ ودني محل التصليح",
+    "Sēf, inta fāẓi l-ʿaṣir? waddni maḥall it-taṣlīḥ",
+    "Sēf, are you free this afternoon? Take me to the repair shop."
+   ],
+   [
+    "A",
+    "أكيد. شو خربان؟",
+    "akīd. shu kharbān?",
+    "Sure. What's broken?"
+   ],
+   [
+    "B",
+    "اللابتوب. ما يشتغل من أمس",
+    "il-lābtōb. ma yishtaghil min ams",
+    "The laptop. It hasn't worked since yesterday."
+   ],
+   [
+    "A",
+    "زين، بوديك بعد المحاضرة. أمس وديت أخوي نفس المحل",
+    "zēn, bawaddīk baʿd il-muḥāẓra. ams waddēt akhūy nafs il-maḥall",
+    "OK, I'll take you after the lecture. Yesterday I took my brother to the same shop."
+   ],
+   [
+    "B",
+    "صج؟ وزين شغلهم؟",
+    "ṣij? w zēn shughulhum?",
+    "Really? And are they any good?"
+   ],
+   [
+    "A",
+    "وايد زين، وسريعين بعد",
+    "wāyid zēn, w sarīʿīn baʿad",
+    "Really good, and quick too."
+   ],
+   [
+    "B",
+    "زين. وبعدين وصلني البيت إذا تقدر",
+    "zēn. w baʿdēn waṣṣilni l-bēt idha tigdar",
+    "Great. And then drop me home, if you can."
+   ],
+   [
+    "A",
+    "لا تشيل هم. بوصلك وبنتعشى بعد",
+    "la tshīl ham. bawaṣṣlak w binitʿashsha baʿad",
+    "Don't worry about it. I'll drop you, and we'll have dinner too."
+   ]
+  ],
+  "items": [
+   [
+    "ودني",
+    "waddni",
+    "take me (somewhere) (to a man)",
+    "خذني / أوصلني",
+    "to a woman: waddīni (وديني); waddni l-bēt = take me home"
+   ],
+   [
+    "بوديك",
+    "bawaddīk",
+    "I'll take you (to a man)",
+    "سآخذك",
+    "to a woman: bawaddīch (بوديج)"
+   ],
+   [
+    "وديت",
+    "waddēt",
+    "I took (someone somewhere); you took (to a man)",
+    "أخذت / أوصلت",
+    "to a woman: waddēti (وديتي)"
+   ],
+   [
+    "وصلني البيت",
+    "waṣṣilni l-bēt",
+    "drop me home, give me a lift home (to a man)",
+    "أوصلني إلى البيت",
+    "to a woman: waṣṣlīni l-bēt (وصليني البيت); not wiṣalni 'it reached me', written the same"
+   ],
+   [
+    "بوصلك",
+    "bawaṣṣlak",
+    "I'll give you a lift, I'll drop you (to a man)",
+    "سأوصلك",
+    "to a woman: bawaṣṣlich (بوصلج)"
+   ],
+   [
+    "ما يشتغل",
+    "ma yishtaghil",
+    "it doesn't work, it's not working (a masculine thing)",
+    "لا يعمل",
+    "a feminine thing: ma tishtaghil (ما تشتغل)"
+   ],
+   [
+    "اللابتوب",
+    "il-lābtōb",
+    "the laptop",
+    "الحاسوب المحمول",
+    ""
+   ],
+   [
+    "لا تشيل هم",
+    "la tshīl ham",
+    "don't worry about it (to a man)",
+    "لا تقلق",
+    "to a woman: la tshīlīn ham (لا تشيلين هم); to a group: la tshīlūn ham (لا تشيلون هم)"
+   ],
+   [
+    "سريعين",
+    "sarīʿīn",
+    "quick, fast (people)",
+    "سريعون",
+    "one man: sarīʿ (سريع); a woman: sarīʿa (سريعة)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u032",
+  "stage": 3,
+  "title": "I've looked everywhere!",
+  "goal": "At Sēf's house after the guys have gone, look for your lost phone with Sēf's help",
+  "tip": "dawwar ʿala means 'look for': dawwart ʿalēh 'I looked for it (m.)'. ẓayyaʿ means 'lose (something)': ẓayyaʿtah 'I lost it'. Both are Form II: past dawwart, ẓayyaʿt; present adawwir, aẓayyiʿ; to a man, dawwir! 'look!'.",
+  "grammar": "Form II: dawwart 'I looked for', ẓayyaʿtah 'I lost it', dawwir 'look!'",
+  "dialogue": [
+   [
+    "B",
+    "سيف، شفت تلفوني؟ شكلي ضيعته",
+    "Sēf, shift tilifōni? shakli ẓayyaʿtah",
+    "Sēf, have you seen my phone? I think I've lost it."
+   ],
+   [
+    "A",
+    "لا والله. دورت في السيارة؟",
+    "la wallāh. dawwart fi s-sayyāra?",
+    "No. Did you look in the car?"
+   ],
+   [
+    "B",
+    "هيه، دورت في كل مكان. ما لقيته",
+    "hē, dawwart fi kill makān. ma ligētah",
+    "Yes, I've looked everywhere. I didn't find it."
+   ],
+   [
+    "A",
+    "خلني أدق عليه",
+    "khallni adigg ʿalēh",
+    "Let me ring it."
+   ],
+   [
+    "B",
+    "يمكن صامت. ما أدري وين حطيته",
+    "yimkin ṣāmit. ma adri wēn ḥaṭṭētah",
+    "It might be on silent. I don't know where I put it."
+   ],
+   [
+    "A",
+    "اسمع! أسمعه… تحت المخدة في المجلس!",
+    "ismaʿ! asmaʿah… taḥt il-mkhadda fi l-majlis!",
+    "Listen! I can hear it… under the cushion in the majlis!"
+   ],
+   [
+    "B",
+    "الحمد لله! دورت عليه نص ساعة",
+    "il-ḥamdu lillāh! dawwart ʿalēh nuṣṣ sāʿa",
+    "Thank God! I looked for it for half an hour."
+   ],
+   [
+    "A",
+    "المرة الياية دور عليه زين قبل لا تخاف",
+    "il-marra l-yāya dawwir ʿalēh zēn gabil la tkhāf",
+    "Next time, look for it properly before you panic."
+   ]
+  ],
+  "items": [
+   [
+    "دورت",
+    "dawwart",
+    "I looked (for); you looked (to a man)",
+    "بحثت",
+    "to a woman: dawwarti (دورتي)"
+   ],
+   [
+    "دورت عليه",
+    "dawwart ʿalēh",
+    "I looked for it (m.), I looked for him",
+    "بحثت عنه",
+    "a feminine thing: dawwart ʿalēha (دورت عليها)"
+   ],
+   [
+    "دور عليه",
+    "dawwir ʿalēh",
+    "look for it (m.), look for him (to a man)",
+    "ابحث عنه",
+    "to a woman: dawwri ʿalēh (دوري عليه)"
+   ],
+   [
+    "ضيعته",
+    "ẓayyaʿtah",
+    "I lost it (m.); you lost it (to a man)",
+    "أضعته",
+    "a feminine thing: ẓayyaʿt-ha (ضيعتها); to a woman (you lost it): ẓayyaʿtīh (ضيعتيه); I lost: ẓayyaʿt (ضيعت)"
+   ],
+   [
+    "خلني أدق عليه",
+    "khallni adigg ʿalēh",
+    "let me ring it, let me call him",
+    "دعني أتصل به",
+    "to call her: adigg ʿalēha"
+   ],
+   [
+    "صامت",
+    "ṣāmit",
+    "on silent (a phone)",
+    "صامت",
+    ""
+   ],
+   [
+    "تحت المخدة",
+    "taḥt il-mkhadda",
+    "under the cushion, under the pillow",
+    "تحت الوسادة",
+    ""
+   ],
+   [
+    "نص ساعة",
+    "nuṣṣ sāʿa",
+    "half an hour",
+    "نصف ساعة",
+    ""
+   ],
+   [
+    "أسمعه",
+    "asmaʿah",
+    "I can hear it (m.), I can hear him",
+    "أسمعه",
+    "I can hear it (f.), her: asmaʿha (أسمعها)"
+   ]
+  ]
+ },
+ {
+  "id": "s3u033",
+  "stage": 3,
+  "title": "Done, sir",
+  "goal": "Report to the manager on what you've finished and what's still left, and answer him respectfully",
+  "tip": "khallaṣ 'finish (something)' is Form II: khallaṣt 'I finished', khallaṣtah 'I finished it', khallaṣna 'we finished', bakhallṣah 'I'll finish it'. Without the double letter, yikhlaṣ means 'it ends, it's over': mita yikhlaṣ il-ijtimāʿ?",
+  "grammar": "Form II past and future with 'it': khallaṣtah 'I finished it', bakhallṣah 'I'll finish it'",
+  "dialogue": [
+   [
+    "A",
+    "صباح الخير. خلصت التقرير؟",
+    "ṣabāḥ il-khēr. khallaṣt it-taqrīr?",
+    "Morning. Have you finished the report?"
+   ],
+   [
+    "B",
+    "صباح النور طال عمرك. هيه، خلصته أمس",
+    "ṣabāḥ in-nūr ṭāl ʿumrak. hē, khallaṣtah ams",
+    "Good morning, sir. Yes, I finished it yesterday."
+   ],
+   [
+    "A",
+    "زين. وطرشته لمريم؟",
+    "zēn. w ṭarrashtah l-Maryam?",
+    "Good. And did you send it to Maryam?"
+   ],
+   [
+    "B",
+    "لا، للحين ما طرشته. بطرشه الحين",
+    "la, lil-ḥīn ma ṭarrashtah. baṭarrshah il-ḥīn",
+    "No, I haven't sent it yet. I'll send it now."
+   ],
+   [
+    "A",
+    "وجهزت الجدول حق اجتماع باكر؟",
+    "w jahhazt il-jadwal ḥagg ijtimāʿ bāchir?",
+    "And have you got the schedule ready for tomorrow's meeting?"
+   ],
+   [
+    "B",
+    "أنا ومريم خلصنا نصه. بخلصه قبل الغدا",
+    "ana w Maryam khallaṣna nuṣṣah. bakhallṣah gabil il-ghada",
+    "Maryam and I have done half of it. I'll finish it before lunch."
+   ],
+   [
+    "A",
+    "الله يقويك. وإذا تبي شي، قول لي",
+    "allāh ygawwīk. w idha tabi shay, gūl-li",
+    "Good work. And if you need anything, tell me."
+   ],
+   [
+    "B",
+    "الله يعافيك. أبشر طال عمرك",
+    "allāh yʿāfīk. abshir ṭāl ʿumrak",
+    "Thank you. Consider it done, sir."
+   ]
+  ],
+  "items": [
+   [
+    "خلصت",
+    "khallaṣt",
+    "I finished; you finished (to a man)",
+    "أنهيت",
+    "to a woman: khallaṣti (خلصتي); khallaṣt? = have you finished?"
+   ],
+   [
+    "خلصته",
+    "khallaṣtah",
+    "I finished it (m.); you finished it (to a man)",
+    "أنهيته",
+    "a feminine thing: khallaṣt-ha (خلصتها); to a woman (you finished it): khallaṣtīh (خلصتيه)"
+   ],
+   [
+    "خلصنا",
+    "khallaṣna",
+    "we finished, we've done",
+    "أنهينا",
+    "they finished: khallaṣaw (خلصوا)"
+   ],
+   [
+    "التقرير",
+    "it-taqrīr",
+    "the report",
+    "التقرير",
+    ""
+   ],
+   [
+    "جهزت",
+    "jahhazt",
+    "I got (it) ready, I prepared; you prepared (to a man)",
+    "جهزت / أعددت",
+    "to a woman: jahhazti (جهزتي)"
+   ],
+   [
+    "الجدول",
+    "il-jadwal",
+    "the schedule, the timetable",
+    "الجدول",
+    ""
+   ],
+   [
+    "نصه",
+    "nuṣṣah",
+    "half of it (m.)",
+    "نصفه",
+    "half of it (f.): nuṣṣha (نصها)"
+   ],
+   [
+    "إذا تبي شي",
+    "idha tabi shay",
+    "if you need anything (to a man)",
+    "إذا احتجت شيئًا",
+    "to a woman: idha tabīn shay (إذا تبين شي)"
+   ]
+  ],
+  "culture": "In a Gulf office, rank shows in how people talk. With a senior manager, greet him first, answer a request with abshir or abshir ṭāl ʿumrak, and keep yā rayyāl, khēba and English slang for colleagues your own age. If he thanks you with allāh ygawwīk, answer allāh yʿāfīk."
+ },
+ {
+  "id": "s3u034",
+  "stage": 3,
+  "title": "Is the room ready, everyone?",
+  "goal": "Check with Maryam and the team that the meeting room is ready for the visitors, and thank them",
+  "tip": "Form II verbs take the group endings like any past verb: rattabna 'we set out', jahhazna 'we got ready'; jahhaztu? 'have you (all) got it ready?'. Some come from English: chayyak 'check' gives chayyakt 'I checked', tchayyik 'you check'.",
+  "grammar": "Form II with 'we' and 'you all': rattabna 'we set out', jahhaztu 'you (all) got ready', chayyakt 'I checked'",
+  "dialogue": [
+   [
+    "B",
+    "صباح الخير يا جماعة. جهزتوا غرفة الاجتماعات؟",
+    "ṣabāḥ il-khēr yā jamāʿa. jahhaztu ghurfat il-ijtimāʿāt?",
+    "Morning, everyone. Have you got the meeting room ready?"
+   ],
+   [
+    "A",
+    "صباح النور. هيه، رتبنا الكراسي وحطينا الماي",
+    "ṣabāḥ in-nūr. hē, rattabna l-karāsi w ḥaṭṭēna l-māy",
+    "Morning. Yes, we've set out the chairs and put the water out."
+   ],
+   [
+    "B",
+    "يعطيكم العافية! والشاشة؟ منو شيك عليها؟",
+    "yaʿṭīkum il-ʿāfya! w ish-shāsha? minu chayyak ʿalēha?",
+    "Thanks for all your work! And the screen? Who checked it?"
+   ],
+   [
+    "A",
+    "الله يعافيك. أنا شيكت، بس ما تشتغل",
+    "allāh yʿāfīk. ana chayyakt, bas ma tishtaghil",
+    "Thank you. I checked, but it's not working."
+   ],
+   [
+    "B",
+    "يمكن السلك. خلني أشوف… خلاص، اشتغلت!",
+    "yimkin is-silk. khallni ashūf… khalāṣ, ishtaghalat!",
+    "Maybe it's the cable. Let me see… there, it's working!"
+   ],
+   [
+    "A",
+    "ما شاء الله عليك! بس للحين ما سوينا القهوة",
+    "mā shāʼ allāh ʿalēk! bas lil-ḥīn ma sawwēna l-gahwa",
+    "Well done you! But we still haven't made the coffee."
+   ],
+   [
+    "B",
+    "لا تشيلون هم، أنا بسويها. الضيوف ياين الساعة عشر",
+    "la tshīlūn ham, ana basawwīha. iẓ-ẓyūf yāyīn is-sāʿa ʿashr",
+    "Don't worry, I'll make it. The visitors are coming at ten."
+   ],
+   [
+    "A",
+    "زين. وأنا برتب الأوراق على الطاولة",
+    "zēn. w ana barattib il-awrāg ʿala ṭ-ṭāwla",
+    "Good. And I'll lay out the papers on the table."
+   ]
+  ],
+  "items": [
+   [
+    "جهزتوا",
+    "jahhaztu",
+    "you (all) got (it) ready; have you got it ready? (to a group)",
+    "هل جهزتم",
+    "to one man: jahhazt; to one woman: jahhazti; you'll see written جهزتو"
+   ],
+   [
+    "رتبنا",
+    "rattabna",
+    "we tidied, we set out, we arranged",
+    "رتبنا",
+    "I tidied: rattabt (رتبت)"
+   ],
+   [
+    "الكراسي",
+    "il-karāsi",
+    "the chairs",
+    "الكراسي",
+    "one chair: kursi (كرسي)"
+   ],
+   [
+    "يعطيكم العافية",
+    "yaʿṭīkum il-ʿāfya",
+    "thanks for all your work (to a group)",
+    "",
+    "to one man: yaʿṭīk il-ʿāfya; reply: allāh yʿāfīk"
+   ],
+   [
+    "شيكت",
+    "chayyakt",
+    "I checked; you checked (to a man)",
+    "تحققت",
+    "to a woman: chayyakti (شيكتي); from English 'check'; chayyik ʿala = check (something)"
+   ],
+   [
+    "الشاشة",
+    "ish-shāsha",
+    "the screen",
+    "الشاشة",
+    ""
+   ],
+   [
+    "السلك",
+    "is-silk",
+    "the cable, the lead, the wire",
+    "السلك",
+    ""
+   ],
+   [
+    "بسويها",
+    "basawwīha",
+    "I'll make it (f.), I'll do it (f.)",
+    "سأعملها",
+    "a masculine thing: basawwīh (بسويه)"
+   ],
+   [
+    "برتب",
+    "barattib",
+    "I'll tidy, I'll lay out, I'll arrange",
+    "سأرتب",
+    ""
+   ]
+  ],
+  "culture": "Offering water and Arabic coffee or tea to visitors is basic Gulf hospitality, at the office as at home, so it's part of getting a meeting room ready. Thank the people who did the work with yaʿṭīkum il-ʿāfya; the reply is allāh yʿāfīk."
+ }
+]
