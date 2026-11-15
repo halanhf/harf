@@ -139,7 +139,7 @@ test("data: the course runs stage by stage in teaching order; pairs and fuṣḥ
   for(const u of D.COURSE){ assert.ok(u.stage>=last,`${u.id} is out of stage order`); last=u.stage; assert.ok(!ids.has(u.id),`duplicate unit ${u.id}`); ids.add(u.id);
     assert.ok(/^(u\d+|s[1-5]u\d{3})$/.test(u.id),u.id); assert.ok(D.STAGE_LEVELS[u.stage],u.id); }
   for(const p of D.PAIRS){ assert.equal(p.length,2); assert.notEqual(p[0][0],p[1][0]); }
-  const seen=new Set(); for(const m of D.MSA){ assert.ok(m.length>=3&&m.length<=5); const k=L.normalizeArabic(m[0]); assert.ok(!seen.has(k),`duplicate fuṣḥā word ${m[0]}`); seen.add(k);
+  const seen=new Set(); for(const m of D.MSA){ assert.ok(m.length>=3&&m.length<=5); const k=m[0].replace(/\u0640/g,"").trim(); assert.ok(!seen.has(k),`duplicate fuṣḥā word ${m[0]}`); seen.add(k); // vowelled: homographs are different words
     if(m[3]) assert.ok(/^(G=|G~ .+|M \S.+)$/.test(m[3]),`${m[0]} gulf column: ${m[3]}`); if(m[4]) assert.ok(["function","signs","forms","services","news","religion","general"].includes(m[4]),`${m[0]} domain ${m[4]}`); }
 });
 test("word match marks which target words speech recognition caught",()=>{

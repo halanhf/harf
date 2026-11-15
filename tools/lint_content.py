@@ -103,8 +103,9 @@ def check_fusha(errs, warns):
         if len(r) > 3 and r[3] and not re.fullmatch(r"G=|G~ .+|M \S.+", r[3]): errs.append(f"{where}: gulf column format: {r[3]}")
         if len(r) > 4 and r[4] and r[4] not in DOMAINS: errs.append(f"{where}: domain {r[4]}")
         if i >= 44 and not HAR.search(r[0]): warns.append(f"{where}: fuṣḥā word without vowel marks: {r[0]}")
-        k = norm(r[0])
+        k = re.sub(r"\s+", " ", r[0].replace("\u0640", "")).strip()  # vowelled form: أَمَام and إِمَام, ذَكَر and ذَكَرَ are different words
         if k in seen: errs.append(f"{where}: {r[0]} duplicates {seen[k]}")
+        elif norm(r[0]) in {norm(x) for x in seen}: warns.append(f"{where}: {r[0]} looks like another row once vowels are dropped: make sure the english tells them apart")
         seen[k] = where
     ids = set()
     for src, r in batches("readings"):
