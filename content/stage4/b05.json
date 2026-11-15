@@ -39,9 +39,9 @@
    ],
    [
     "B",
-    "هيه، الملاحظات شفتها، وبخلصها اليوم إن شاء الله",
-    "hē, il-mulāḥaẓāt shift-ha, w bakhalliṣha l-yōm in shāʼ allāh",
-    "Yes, the comments, I've seen them, and I'll get them done today, God willing."
+    "هيه، شفتها كلها، وبخلصها اليوم إن شاء الله",
+    "hē, shift-ha killha, w bakhalliṣha l-yōm in shāʼ allāh",
+    "Yes, I've seen them all, and I'll get them done today, God willing."
    ],
    [
     "A",
@@ -301,7 +301,7 @@
    [
     "A",
     "الدكتور حقكم في الجامعة! باكر بتشوف السيارتين عند الجامعة",
-    "id-diktōr ḥaggkum fi l-jāmʿa! bāchir bitshūf is-sayyārtēn ʿind il-jāmʿa",
+    "id-daktōr ḥaggkum fi l-jāmʿa! bāchir bitshūf is-sayyārtēn ʿind il-jāmʿa",
     "Your lecturer at the university! Tomorrow you'll see both cars at the university."
    ],
    [
@@ -391,7 +391,7 @@
   "id": "s4u043",
   "stage": 4,
   "title": "The flats are all new",
-  "goal": "Look at flat ads with Sēf and talk about rooms, parking and shops, with feminine singular agreement for things in the plural",
+  "goal": "At the office, Maryam shows you some flat ads; talk about rooms, parking and shops, with feminine singular agreement for things in the plural",
   "tip": "Plural things usually take the feminine singular: is-sayyārāt yidīda 'the cars are new', il-maḥallāt tsakkir badri 'the shops close early', il-ghuraf ṣghīra. For people use the plural: ish-shabāb zēnīn.",
   "grammar": "agreement with non-human plurals: feminine singular (il-maḥallāt tsakkir, il-ghuraf ṣghīra)",
   "dialogue": [
@@ -427,9 +427,9 @@
    ],
    [
     "B",
-    "زين. والمحلات؟ قريبة؟",
-    "zēn. w il-maḥallāt? garība?",
-    "Good. And the shops? Are they close?"
+    "زين. والمحلات؟ تعرفين إذا قريبة؟",
+    "zēn. w il-maḥallāt? taʿarfīn idha garība?",
+    "Good. And the shops? Do you know if they're close?"
    ],
    [
     "A",
@@ -439,9 +439,15 @@
    ],
    [
     "B",
-    "يعني الشقق هذي زينة، بس مب لي. أنا أحب مردف!",
-    "yaʿni sh-shigag hādhi zēna, bas mub li. ana aḥibb Mirdif!",
-    "So these flats are good, but they're not for me. I love Mirdif!"
+    "يعني الشقق هذي زينة، بس مب لي. مشكورة!",
+    "yaʿni sh-shigag hādhi zēna, bas mub li. mashkūra!",
+    "So these flats are good, but they're not for me. Thanks!"
+   ],
+   [
+    "A",
+    "العفو! أدري، انت ما تبدل مردف بشي",
+    "il-ʿafu! adri, inta ma tbaddil Mirdif b-shay",
+    "You're welcome! I know, you wouldn't swap Mirdif for anything."
    ]
   ],
   "items": [
@@ -662,7 +668,7 @@
    [
     "A",
     "هذا غلا المعيشة اللي يتكلمون عنه في الأخبار كل يوم",
-    "hādha ghala l-maʿīsha illi yitkallmūn ʿannah fi l-akhbār kill yōm",
+    "hādha ghala l-maʿīsha illi yitkallamūn ʿannah fi l-akhbār kill yōm",
     "That's the 'cost of living' they talk about on the news every day."
    ],
    [
@@ -921,9 +927,9 @@
    ],
    [
     "A",
-    "يعني بتنتقل؟ الشباب يقولون المسافة تفرق وايد على الأعصاب",
-    "yaʿni bitintigil? ish-shabāb ygūlūn il-masāfa tfarrig wāyid ʿala l-aʿṣāb",
-    "So you'll move? The guys say the distance makes a big difference to your nerves."
+    "يعني بتنتقل؟ ترا الشباب في المكتب كلهم يقولون إن المسافة تفرق وايد",
+    "yaʿni bitintigil? tara sh-shabāb fi l-maktab killhum ygūlūn inn il-masāfa tfarrig wāyid",
+    "So you'll move? You know, the guys in the office all say the distance makes a big difference."
    ],
    [
     "B",
@@ -988,13 +994,6 @@
     "(recognise)"
    ],
    [
-    "على الأعصاب",
-    "ʿala l-aʿṣāb",
-    "on your nerves, for your nerves",
-    "على الأعصاب",
-    "(recognise)"
-   ],
-   [
     "عجبتني الفكرة",
     "ʿajbatni l-fikra",
     "I like the idea",
@@ -1010,8 +1009,7 @@
    ]
   ],
   "receptive": [
-   5,
-   6
+   5
   ]
  },
  {
@@ -1290,7 +1288,7 @@
   "id": "s4u050",
   "stage": 4,
   "title": "Bottom line: we're staying",
-  "goal": "On a call, tell Sēf how the talk with the landlord went, weigh it up and say what you've decided",
+  "goal": "On a group call, tell Sēf and Fahad how the talk with the landlord went, weigh it up and say what you've decided",
   "tip": "Sum up and decide: garār ḥilu 'a good decision', ḥasabt-ha 'I worked it out', garrarna 'we've decided'. You'll also hear il-khulāṣa 'in short, the bottom line'. Recycle the question word at the end: w huwa gāl shu?",
   "grammar": "recycle: question word at the end, comparatives; summing up and deciding",
   "dialogue": [
@@ -1302,9 +1300,9 @@
    ],
    [
     "B",
-    "يبي يزيد الإيجار شوي",
-    "yabi yzīd il-ījār shwayy",
-    "He wants to put the rent up a bit."
+    "تدرون؟ يبي يزيد الإيجار شوي",
+    "tadrūn? yabi yzīd il-ījār shwayy",
+    "Do you know what? He wants to put the rent up a bit."
    ],
    [
     "A",
