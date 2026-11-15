@@ -627,7 +627,7 @@
     "B",
     "عادي، أنا بعد بدفع. والعطر أحلى شي!",
     "ʿādi, ana baʿad badfaʿ. w il-ʿiṭir aḥla shay!",
-    "No problem, I'll pay too. And perfume is the best thing!"
+    "No problem, I'll pay too. And perfume's the best thing to get!"
    ]
   ],
   "items": [
@@ -657,7 +657,7 @@
     "shrāykum?",
     "what do you think? how about…? (to a group)",
     "ما رأيكم؟",
-    "to one man: shrāyak? (شرايك); to one woman: shrāyich? (شرايج)"
+    "to one man: shrāyak? (شرايك); to one woman: shrāyich? (شرايج); UAE also: shu raʼykum (شو رايكم)"
    ],
    [
     "بيزات",
@@ -680,14 +680,14 @@
   "stage": 2,
   "title": "Grandad's old house",
   "goal": "Look at an old photo with Sēf and ask what his grandad's house was like",
-  "tip": "Gulf has no 'is' in the present, but the past needs kān 'was': il-bēt kān ṣghīr. With a feminine subject it's kānat: kānat il-manṭiga hādya. kān fī 'there was', ma kān fī 'there wasn't', kān ʿindi 'I had': here kān doesn't change.",
+  "tip": "Gulf has no 'is' in the present, but the past needs kān 'was': il-bēt kān ṣghīr. With a feminine subject it's kānat: kānat il-manṭiga hādya. kān fī 'there was' and ma kān fī 'there wasn't' never change. kān ʿindi 'I had' (with a feminine thing, also kānat ʿindi).",
   "grammar": "kān 'was': kān, kānat; kān fī 'there was'; kān ʿind- 'had'",
   "dialogue": [
    [
     "A",
     "شوف، هذا بيت يدي أيام زمان",
     "shūf, hādha bēt yaddi ayyām zamān",
-    "Look, this is my grandad's house in the old days."
+    "Look, this was my grandad's house in the old days."
    ],
    [
     "B",
@@ -1016,7 +1016,7 @@
     "tghayyarat",
     "(it / she) has changed, changed",
     "تغيّرت",
-    "I changed: tghayyart"
+    "I've changed (become different): tghayyart; 'I changed something' is ghayyart (غيرت)"
    ]
   ]
  },

@@ -4,7 +4,7 @@
   "stage": 2,
   "title": "Sēf's neighbourhood",
   "goal": "Sēf shows you round his family's neighbourhood: talk about the houses and the people",
-  "tip": "Many plurals change inside the word, so learn them in pairs: bēt → byūt, rayyāl → ryāyīl, bint → banāt. Adjectives for people take -īn: nās ṭayybīn. For things, use the feminine: il-byūt kbīra 'the houses are big', killha 'all of them'. Two is still -ēn: waladēn.",
+  "tip": "Many plurals change inside the word, so learn them in pairs: bēt → byūt, rayyāl → ryāyīl, bint → banāt. Most adjectives for people take -īn: nās ṭayybīn. For things, use the feminine: il-byūt kbīra 'the houses are big', killha 'all of them'. Two is still -ēn: waladēn.",
   "grammar": "broken plurals (bēt → byūt, rayyāl → ryāyīl, bint → banāt); people take -īn",
   "dialogue": [
    [
@@ -27,15 +27,15 @@
    ],
    [
     "B",
-    "ومنو هذيلا الرياييل اللي برا؟",
-    "w minu hādhēla r-ryāyīl illi barra?",
-    "And who are these men outside?"
+    "ومنو هذيلا الرياييل اللي في الشارع؟",
+    "w minu hādhēla r-ryāyīl illi fi sh-shāriʿ?",
+    "And who are these men in the street?"
    ],
    [
     "A",
-    "عيال عمي. ناس طيبين، بتشوف",
-    "ʿyāl ʿammi. nās ṭayybīn, bitshūf",
-    "My cousins. Nice people, you'll see."
+    "عيال عمي. ناس طيبين، كل واحد ريّال زين",
+    "ʿyāl ʿammi. nās ṭayybīn, kill wāḥid rayyāl zēn",
+    "My cousins. Nice people, every one of them a good guy."
    ],
    [
     "B",
@@ -84,7 +84,7 @@
     "ʿyāl ʿammi",
     "my cousins (my father's brother's sons)",
     "أبناء عمي",
-    "one: wild ʿammi (ولد عمي); his daughters: banāt ʿammi (بنات عمي)"
+    "one: wild ʿammi (ولد عمي); my uncle's daughters: banāt ʿammi (بنات عمي)"
    ],
    [
     "ناس طيبين",
@@ -162,9 +162,9 @@
    ],
    [
     "A",
-    "هيه، السيارات وايد. روح بالمترو",
-    "hē, is-sayyārāt wāyid. rūḥ bil-mitro",
-    "Yes, there are lots of cars. Go by metro."
+    "هيه، الناس وايد، والسيارات بعد. روح بالمترو",
+    "hē, in-nās wāyid, w is-sayyārāt baʿad. rūḥ bil-mitro",
+    "Yes, there are loads of people, and cars too. Go by metro."
    ]
   ],
   "items": [
@@ -261,9 +261,9 @@
    ],
    [
     "B",
-    "الله أكرم. الحمد لله، أنا صايم ويوعان!",
-    "allāhu akram. il-ḥamdu lillāh, ana ṣāyim w yōʿān!",
-    "God is more generous. I'm fasting, thank God, and I'm starving!"
+    "الله أكرم. أنا صايم، والحين تعبان ويوعان!",
+    "allāhu akram. ana ṣāyim, w il-ḥīn taʿbān w yōʿān!",
+    "God is more generous. I'm fasting, and by now I'm tired and starving!"
    ],
    [
     "A",
@@ -279,9 +279,9 @@
    ],
    [
     "A",
-    "منا ومنكم. يلا نصلي",
-    "minna w minkum. yalla nṣalli",
-    "From us and from you. Come on, let's pray."
+    "منا ومنكم. يلا نصلي قبل الأكل",
+    "minna w minkum. yalla nṣalli gabil il-akil",
+    "From us and from you. Come on, let's pray before we eat."
    ]
   ],
   "items": [
@@ -356,7 +356,7 @@
   "stage": 2,
   "title": "Back after Eid",
   "goal": "At the office after the Eid holiday, Maryam welcomes you back: Eid greetings and the summer weather",
-  "tip": "For Eid, say ʿasākum min ʿuwwādah and answer by saying it back. To someone back from a trip: il-ḥamdu lillāh ʿala s-salāma → allāh ysallmak (to a woman: ysallmich). Plural things still take the feminine: ish-shawāriʿ killha ghubār 'the streets are all dust'.",
+  "tip": "For Eid, say ʿasākum min ʿuwwādah and answer by saying it back. To someone back from a trip: il-ḥamdu lillāh ʿala s-salāma → allāh ysallmak (to a woman: ysallmich). Plural things still take the feminine: ish-shawāriʿ killha ghubār 'the streets are covered in dust'.",
   "grammar": "recycle: plurals with feminine agreement (ish-shawāriʿ killha)",
   "dialogue": [
    [
@@ -399,7 +399,7 @@
     "A",
     "والغبار بعد! الشوارع كلها غبار",
     "w il-ghubār baʿad! ish-shawāriʿ killha ghubār",
-    "And the dust too! The streets are all dust."
+    "And the dust too! The streets are covered in dust."
    ]
   ],
   "items": [
@@ -478,9 +478,9 @@
   "dialogue": [
    [
     "A",
-    "وصلنا. هذا مجلس عمي بو راشد",
-    "wiṣalna. hādha majlis ʿammi Bū Rāshid",
-    "We're here. This is my uncle Bū Rāshid's majlis."
+    "وصلنا. هذا مجلس عمي بو راشد. الرياييل كلهم داخل",
+    "wiṣalna. hādha majlis ʿammi Bū Rāshid. ir-ryāyīl killhum dākhil",
+    "We're here. This is my uncle Bū Rāshid's majlis. All the men are inside."
    ],
    [
     "B",
@@ -490,9 +490,9 @@
    ],
    [
     "A",
-    "قول له يا عمي، أو طال عمرك",
-    "gūl-lah yā ʿammi, aw ṭāl ʿumrak",
-    "Call him 'uncle', or 'sir'."
+    "شفيك؟ قول له يا عمي، أو طال عمرك",
+    "shfīk? gūl-lah yā ʿammi, aw ṭāl ʿumrak",
+    "What's the matter? Call him 'uncle', or 'sir'."
    ],
    [
     "B",
@@ -514,9 +514,9 @@
    ],
    [
     "A",
-    "قول له الله يحييك يا طويل العمر",
-    "gūl-lah allāh yḥayyīk yā ṭawīl il-ʿumr",
-    "Say 'allāh yḥayyīk, ṭawīl il-ʿumr' to him."
+    "قول له الله يحييك يا طويل العمر. ناس طيبين، بتشوف",
+    "gūl-lah allāh yḥayyīk yā ṭawīl il-ʿumr. nās ṭayybīn, bitshūf",
+    "Say 'allāh yḥayyīk, ṭawīl il-ʿumr' to him. They're nice people, you'll see."
    ]
   ],
   "items": [
@@ -626,15 +626,15 @@
    ],
    [
     "B",
-    "بس، مشكور يا عمي",
-    "bas, mashkūr yā ʿammi",
-    "That's enough, thank you, uncle."
+    "بس، مشكور طال عمرك",
+    "bas, mashkūr ṭāl ʿumrak",
+    "That's enough, thank you, sir."
    ],
    [
     "A",
-    "العفو. ما شاء الله، يعرف يهز الفنجان!",
-    "il-ʿafu. mā shāʼ allāh, yaʿarf yhizz il-finjān!",
-    "You're welcome. Well done, he knows to shake the cup!"
+    "العفو. ما شاء الله، يعرف يهز الفنجان مثل الكبار!",
+    "il-ʿafu. mā shāʼ allāh, yaʿarf yhizz il-finjān mithil il-kbār!",
+    "You're welcome. Well done, he knows to shake the cup like the old folk!"
    ]
   ],
   "items": [
@@ -720,9 +720,9 @@
    ],
    [
     "B",
-    "أدرس هندسة في الجامعة يا عمي",
-    "adris handasa fi l-jāmʿa yā ʿammi",
-    "I'm studying engineering at the university, uncle."
+    "أدرس هندسة في الجامعة، طال عمرك",
+    "adris handasa fi l-jāmʿa, ṭāl ʿumrak",
+    "I'm studying engineering at the university, sir."
    ],
    [
     "A",
@@ -732,9 +732,9 @@
    ],
    [
     "B",
-    "السموحة يا عمي! طاح الفنجان",
-    "is-samūḥa yā ʿammi! ṭāḥ il-finjān",
-    "I'm so sorry, uncle! The cup's fallen over."
+    "الله يبارك فيك. السموحة يا عمي! طاح الفنجان",
+    "allāh ybārik fīk. is-samūḥa yā ʿammi! ṭāḥ il-finjān",
+    "Thank you. Oh, I'm so sorry, uncle! The cup's fallen over."
    ],
    [
     "A",
@@ -751,7 +751,7 @@
    [
     "A",
     "ما عليه، خله! سيف بيمسحه",
-    "ma ʿalēh, khallah! Sēf biymsaḥah",
+    "ma ʿalēh, khallah! Sēf biyimsaḥah",
     "Never mind, leave it! Sēf will wipe it up."
    ]
   ],
@@ -767,7 +767,7 @@
     "مسموح",
     "masmūḥ",
     "that's all right, you're forgiven (the reply to is-samūḥa)",
-    "مسموح",
+    "مسامح / لا عليك",
     ""
    ],
    [
@@ -780,9 +780,9 @@
    [
     "حبيبي",
     "ḥabībi",
-    "my dear, mate (lit. my love), between men",
+    "my dear, mate (lit. my love) (friends only; not to an elder)",
     "حبيبي",
-    "usually yā ḥabībi; men use it with men and boys, never with a woman outside the family"
+    "usually yā ḥabībi; between friends, and from an older man to a younger one; never to a woman outside the family"
    ],
    [
     "شو تدرس؟",
@@ -827,7 +827,7 @@
   "title": "Incense, and stay for dinner",
   "goal": "Bū Rāshid passes you the incense burner and insists you stay for dinner",
   "tip": "Object endings sit on imperatives: garribah ṣōbak 'bring it close to you'. tbakhkhar 'perfume yourself with incense' is an imperative too. bala means 'without': bala ʿasha 'without dinner'. bititʿashsha wiyyāna 'you'll have dinner with us' is a friendly order.",
-  "grammar": "recycle: imperatives with object endings (tbakhkhar, garribah)",
+  "grammar": "recycle: imperatives (tbakhkhar, khudh) and object endings (garribah)",
   "dialogue": [
    [
     "A",
@@ -855,15 +855,15 @@
    ],
    [
     "A",
-    "هيه. والحين بتتعشى ويانا",
-    "hē. w il-ḥīn bititʿashsha wiyyāna",
-    "Yes. And now you're having dinner with us."
+    "هيه، زين جي. والحين بتتعشى ويانا يا حبيبي",
+    "hē, zēn chī. w il-ḥīn bititʿashsha wiyyāna yā ḥabībi",
+    "Yes, that's right. And now you're having dinner with us, my boy."
    ],
    [
     "B",
-    "الله يخليك يا عمي، المرة الياية إن شاء الله",
-    "allāh ykhallīk yā ʿammi, il-marra l-yāya in shāʼ allāh",
-    "That's very kind, uncle, next time, God willing."
+    "الله يخليك طال عمرك، المرة الياية إن شاء الله",
+    "allāh ykhallīk ṭāl ʿumrak, il-marra l-yāya in shāʼ allāh",
+    "That's very kind, sir, next time, God willing."
    ],
    [
     "A",
@@ -885,7 +885,7 @@
     "il-madkhan",
     "the incense burner",
     "المبخرة",
-    "Kuwait: il-mabkhar (المبخر)"
+    "also: il-mabkhar (المبخر), commoner in Kuwait"
    ],
    [
     "تبخر",
@@ -902,11 +902,11 @@
     "to a woman: garribīh (قربيه); garribah ṣōbak 'bring it close to you'"
    ],
    [
-    "ريحته حلوة",
-    "rīḥtah ḥilwa",
-    "it smells nice (a masculine thing)",
-    "رائحته طيبة",
-    "a feminine thing: rīḥat-ha ḥilwa (ريحتها حلوة)"
+    "زين جي؟",
+    "zēn chī?",
+    "is this all right? like this?",
+    "هل هكذا جيد؟",
+    "the answer: hē, zēn chī 'yes, that's right'"
    ],
    [
     "بتتعشى ويانا",
@@ -930,14 +930,14 @@
     "to a woman: ma trūḥīn (ما تروحين)"
    ]
   ],
-  "culture": "Bukhūr (incense) is passed round in a burner, and guests let the smoke reach their clothes and hair. It doesn't always mean the visit is over. A host will insist you stay to eat; il-marra l-yāya and allāh ykhallīk decline politely. You may also hear kaththar khērak (كثر خيرك) used as a polite 'no, thank you'."
+  "culture": "Bukhūr (incense) is passed round in a burner, and guests let the smoke reach their clothes and hair. It often comes near the end of a visit, but it doesn't always mean the visit is over. A host will insist you stay to eat; il-marra l-yāya and allāh ykhallīk decline politely. You may also hear kaththar khērak (كثر خيرك) used as a polite 'no, thank you'."
  },
  {
   "id": "s2u067",
   "stage": 2,
   "title": "Taking our leave",
   "goal": "After dinner, you and Sēf take your leave of Bū Rāshid: the long goodbye",
-  "tip": "To a group, imperatives add -u: igʿid → igʿdu 'sit, stay (you all)'. -na on a verb means 'us': tzūrna 'you visit us'. Leaving takes a few rounds: you say nistaʼdhin, the host says wēn? badri!, you give a reason and thank him.",
+  "tip": "To a group, imperatives add -u: igʿid → igʿdu 'sit, stay (you all)'. -na can mean 'us', tzūrna 'you visit us', or end a past verb as 'we', sawwēna 'we did'. Leaving takes a few rounds: you say nistaʼdhin, the host says wēn? badri!, you give a reason and thank him.",
   "grammar": "recycle: group imperatives (igʿdu) and -na 'us' (tzūrna)",
   "dialogue": [
    [
@@ -960,15 +960,15 @@
    ],
    [
     "A",
-    "زين، بس لازم تزورنا مرة ثانية",
-    "zēn, bas lāzim tzūrna marra thānya",
-    "All right, but you must visit us again."
+    "زين، بس لازم تزورنا مرة ثانية يا حبيبي",
+    "zēn, bas lāzim tzūrna marra thānya yā ḥabībi",
+    "All right, but you must visit us again, my boy."
    ],
    [
     "B",
-    "أكيد إن شاء الله. ما قصرت يا عمي",
-    "akīd in shāʼ allāh. mā gaṣṣart yā ʿammi",
-    "Of course, God willing. Thank you for everything, uncle."
+    "أكيد إن شاء الله. ما قصرت طال عمرك",
+    "akīd in shāʼ allāh. mā gaṣṣart ṭāl ʿumrak",
+    "Of course, God willing. Thank you for everything, sir."
    ],
    [
     "A",
