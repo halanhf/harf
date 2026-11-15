@@ -243,7 +243,8 @@
     "",
     "said before something worrying, half joking or serious"
    ]
-  ]
+  ],
+  "culture": "allāh yistur 'may God protect (us)' is everyday speech, not formal or old-fashioned. People say it before something they are nervous about (an exam, a meeting with the boss, a long drive), often half joking, as B does here."
  },
  {
   "id": "s3u026",
@@ -285,9 +286,9 @@
    ],
    [
     "A",
-    "في الطابق الأول، يم المطاعم",
-    "fi ṭ-ṭābig il-awwal, yamm il-maṭāʿim",
-    "On the first floor, next to the restaurants."
+    "في الطابق الأرضي، يم المطاعم",
+    "fi ṭ-ṭābig il-arẓi, yamm il-maṭāʿim",
+    "On the ground floor, next to the restaurants."
    ],
    [
     "B",
@@ -297,8 +298,8 @@
    ],
    [
     "A",
-    "العفو. نص الليل، بس المحلات تسكر قبل",
-    "il-ʿafu. nuṣṣ il-lēl, bas il-maḥallāt tsakkir gabil",
+    "العفو. نص الليل، بس المحلات تسكر قبلها",
+    "il-ʿafu. nuṣṣ il-lēl, bas il-maḥallāt tsakkir gabilha",
     "You're welcome. At midnight, but the shops close earlier."
    ]
   ],
@@ -339,11 +340,11 @@
     ""
    ],
    [
-    "الطابق الأول",
-    "iṭ-ṭābig il-awwal",
-    "the first floor",
-    "الطابق الأول",
-    "after a vowel: fi ṭ-ṭābig il-awwal"
+    "الطابق الأرضي",
+    "iṭ-ṭābig il-arẓi",
+    "the ground floor",
+    "الطابق الأرضي",
+    "first floor: iṭ-ṭābig il-awwal; after a vowel: fi ṭ-ṭābig il-arẓi"
    ],
    [
     "يم المطاعم",
@@ -385,8 +386,8 @@
    ],
    [
     "A",
-    "وعليكم السلام. حق كم واحد؟",
-    "wa ʿalaykum is-salām. ḥagg cham wāḥid?",
+    "وعليكم السلام. كم واحد؟",
+    "wa ʿalaykum is-salām. cham wāḥid?",
     "Hello. For how many?"
    ],
    [
@@ -456,11 +457,11 @@
     "to a woman: shūfi idha (شوفي إذا)"
    ],
    [
-    "حق كم واحد؟",
-    "ḥagg cham wāḥid?",
-    "for how many (people)?",
-    "لكم شخصًا؟",
-    ""
+    "كم واحد؟",
+    "cham wāḥid?",
+    "how many (people)?",
+    "كم شخصًا؟",
+    "for a table: ḥagg cham wāḥid?"
    ],
    [
     "كله محجوز",
@@ -592,7 +593,8 @@
     "لا أعرف ماذا",
     "UAE: ma adri shu (ما أدري شو)"
    ]
-  ]
+  ],
+  "culture": "Emiratis and Kuwaitis understand each other easily, and the quickest tell between them is 'what': Emiratis say shu, Kuwaitis shinu (also iḥna for 'we' and mū for 'not'). Keep using your own forms with Fahad: he understands shu, and you only need to recognise his."
  },
  {
   "id": "s3u029",
@@ -875,8 +877,8 @@
    ],
    [
     "B",
-    "صج؟ وزين شغلهم؟",
-    "ṣij? w zēn shughulhum?",
+    "صج؟ وشغلهم زين؟",
+    "ṣij? w shughulhum zēn?",
     "Really? And are they any good?"
    ],
    [
