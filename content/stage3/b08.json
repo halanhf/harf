@@ -127,7 +127,7 @@
   "stage": 3,
   "title": "In my opinion, the desert: b-raʼyi",
   "goal": "Plan the weekend with Sēf and Fahad, and give your opinion with a reason",
-  "tip": "b-raʼyi 'in my opinion' starts the sentence: b-raʼyi l-barr aḥsan. More common and casual: ana ashūf 'I reckon'. To ask, say shu raʼyak? (to a woman: shu raʼyich?): b-raʼyak alone means 'suit yourself'. Give the reason with lann before a noun: lann il-jaww ḥilu; with no noun, lannah: lannah garīb.",
+  "tip": "b-raʼyi 'in my opinion' starts the sentence: b-raʼyi l-barr aḥsan. More common and casual: ana ashūf 'I reckon'. To ask, say shu raʼyak? (to a woman: shu raʼyich?): b-rāyak alone means 'suit yourself'. Give the reason with lann before a noun: lann il-jaww ḥilu; with no noun, lannah: lannah garīb.",
   "grammar": "b-raʼyi / ana ashūf 'in my view'; lann / lannah 'because' to give a reason",
   "dialogue": [
    [
@@ -185,14 +185,14 @@
     "b-raʼyi",
     "in my opinion, I'd say",
     "برأيي / في رأيي",
-    "you'll see written برايي; more common and casual: ana ashūf (أنا أشوف); on its own, b-raʼyak (برايك) means 'suit yourself', not 'what do you think?'"
+    "you'll see written برايي; more common and casual: ana ashūf (أنا أشوف); on its own, b-rāyak (برايك) means 'suit yourself', not 'what do you think?'"
    ],
    [
     "أنا أشوف",
     "ana ashūf",
     "I reckon, the way I see it",
     "أرى",
-    "to ask: shu raʼyak? (to a man), shu raʼyich? (to a woman); b-raʼyak (برايك) on its own means 'suit yourself, your call', not 'what do you think?'"
+    "to ask: shu raʼyak? (to a man), shu raʼyich? (to a woman); b-rāyak (برايك) on its own means 'suit yourself, your call', not 'what do you think?'"
    ],
    [
     "لأن",
@@ -374,7 +374,7 @@
   "stage": 3,
   "title": "What are you planning to do? nāwi",
   "goal": "At the office, tell Maryam your plans after the internship and ask about hers",
-  "tip": "nāwi 'planning to' is a participle, so it agrees with whoever is planning: nāwi (a man), nāwya (a woman), nāwyīn (a group), then a present verb: nāwi akammil dirāsti. Asking a man: shu nāwi tsawwi?; a woman: shu nāwya tsawwīn? After baʿd ma, use a present verb: baʿd ma titkharraj.",
+  "tip": "nāwi 'planning to' is a participle, so it agrees with whoever is planning: nāwi (a man), nāwya (a woman), nāwyīn (a group), then a present verb: nāwi akammil dirāsti. Asking a man: shu nāwi tsawwi?; a woman: shu nāwya tsawwīn? For the future, baʿd ma takes a present verb: baʿd ma titkharraj.",
   "grammar": "nāwi / nāwya + verb 'planning to'; recycle: future b-, baʿd ma",
   "dialogue": [
    [
@@ -415,9 +415,9 @@
    ],
    [
     "A",
-    "ناوية أخلص الماجستير السنة الياية، بس شو بعده؟ للحين ما قررت",
-    "nāwya akhalliṣ il-mājistēr is-sana l-yāya, bas shu baʿdah? lil-ḥīn ma garrart",
-    "I'm planning to finish my master's next year, but what then? I haven't decided yet."
+    "ناوية أخلص الماجستير، بس شو بعده؟ للحين ما قررت",
+    "nāwya akhalliṣ il-mājistēr, bas shu baʿdah? lil-ḥīn ma garrart",
+    "I'm planning to finish my master's, but what then? I haven't decided yet."
    ],
    [
     "B",
@@ -498,7 +498,7 @@
   "stage": 3,
   "title": "My dream since I was little",
   "goal": "At a karak stand one evening, hear Sēf's dream and tell him your ambition",
-  "tip": "ḥilmi 'my dream' and ṭumūḥi 'my ambition' can be followed straight by a present verb, with no word for 'to': ḥilmi aṣīr ṭayyār 'my dream is to be a pilot'. You'll also hear inni: ḥilmi inni aṣīr ṭayyār. aṣīr 'I become' works the same after abi: abi aṣīr muhandis.",
+  "tip": "ḥilmi 'my dream' and ṭumūḥi 'my ambition' take inni 'that I' + a present verb: ḥilmi inni aṣīr ṭayyār 'my dream is to be a pilot'. aṣīr 'I become' also follows abi directly: abi aṣīr muhandis 'I want to be an engineer'.",
   "grammar": "ḥilmi, ṭumūḥi + present verb; recycle: abi + verb, lann",
   "dialogue": [
    [
@@ -515,8 +515,8 @@
    ],
    [
     "A",
-    "لا! حلمي أصير طيار، لأني أحب السفر",
-    "la! ḥilmi aṣīr ṭayyār, lanni aḥibb is-safar",
+    "لا! حلمي إني أصير طيار، لأني أحب السفر",
+    "la! ḥilmi inni aṣīr ṭayyār, lanni aḥibb is-safar",
     "No! My dream is to be a pilot, because I love travelling."
    ],
    [
@@ -533,8 +533,8 @@
    ],
    [
     "B",
-    "طموحي أفتح شركة حقي. بس أول شي أبي أصير مهندس زين",
-    "ṭumūḥi aftaḥ sharika ḥaggi. bas awwal shay abi aṣīr muhandis zēn",
+    "طموحي إني أفتح شركة خاصة فيني. بس أول شي أبي أصير مهندس زين",
+    "ṭumūḥi inni aftaḥ sharika khāṣṣa fīni. bas awwal shay abi aṣīr muhandis zēn",
     "My ambition is to open my own company. But first I want to be a good engineer."
    ],
    [
@@ -744,15 +744,15 @@
   "id": "s3u083",
   "stage": 3,
   "title": "Checkpoint 3.5: where shall we have lunch?",
-  "goal": "Checkpoint: before your trip to London, ask Maryam and the team where to have lunch together, and wish them luck with the project",
+  "goal": "Checkpoint: the team project is nearly done; ask Maryam and the team where to have lunch afterwards, and wish them luck",
   "tip": "To a group, endings are -kum and -ūn: shu raʼykum? 'what do you all think?', tẓunnūn? 'do you all think?', bitiyūn? 'are you all coming?', allāh ywaffigkum 'good luck (all of you)'. To a woman: shu raʼyich?, tẓunnīn? A group participle takes -īn: nāwyīn 'we're planning'.",
   "grammar": "checkpoint 3.5: recycle s3u057–s3u082 (khalli, ma ʿād, bāgi, illi, aẓunn, nāwi)",
   "dialogue": [
    [
     "B",
-    "باقي لي أسبوعين وبسافر لندن. شو رأيكم، وين نتغدى الخميس؟",
-    "bāgi-li usbūʿēn w basāfir Landan. shu raʼykum, wēn nitghadda l-khamīs?",
-    "Two weeks to go and I'm flying to London. What do you all think, where shall we have lunch on Thursday?"
+    "باقي لنا أسبوع على المشروع. شو رأيكم، وين نتغدى بعده؟",
+    "bāgi-lna usbūʿ ʿala l-mashrūʿ. shu raʼykum, wēn nitghadda baʿdah?",
+    "We've got a week left on the project. What do you all think, where shall we have lunch after it?"
    ],
    [
     "A",
@@ -762,8 +762,8 @@
    ],
    [
     "B",
-    "مريم، شو رأيج؟ تظنين زين؟",
-    "Maryam, shu raʼyich? tẓunnīn zēn?",
+    "مريم، شو رأيج؟ تظنين إنه زين؟",
+    "Maryam, shu raʼyich? tẓunnīn innah zēn?",
     "Maryam, what do you think? Do you think it's good?"
    ],
    [
@@ -780,15 +780,15 @@
    ],
    [
     "A",
-    "أكيد! ونحن ناوين نخلص المشروع قبل لا تسافر",
-    "akīd! w niḥin nāwyīn nkhalliṣ il-mashrūʿ gabil la tsāfir",
-    "Of course! And we're planning to finish the project before you leave."
+    "أكيد! ونحن ناوين نخلص كل شي قبل الخميس",
+    "akīd! w niḥin nāwyīn nkhalliṣ kill shay gabil il-khamīs",
+    "Of course! And we're planning to finish everything before Thursday."
    ],
    [
     "B",
-    "الله يوفقكم! وأنا موجود أساعدكم لين آخر يوم",
-    "allāh ywaffigkum! w ana mawjūd asāʿidkum lēn ākhir yōm",
-    "Good luck! And I'm here to help you until the last day."
+    "الله يوفقكم! وأنا موجود إذا تبون شي",
+    "allāh ywaffigkum! w ana mawjūd idha tabūn shay",
+    "Good luck! And I'm around if you need anything."
    ],
    [
     "A",
