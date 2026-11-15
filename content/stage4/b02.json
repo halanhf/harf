@@ -39,9 +39,9 @@
    ],
    [
     "B",
-    "راويني. الصورة ظلمة! ما ينشاف فيها شي",
-    "rāwīni. iṣ-ṣūra ẓalma! ma yinshāf fīha shay",
-    "Show me. The photo's so dark! You can't see a thing in it."
+    "راويني. الصورة مب واضحة! ما ينشاف فيها شي",
+    "rāwīni. iṣ-ṣūra mub wāẓḥa! ma yinshāf fīha shay",
+    "Show me. The photo isn't clear! You can't see a thing in it."
    ],
    [
     "A",
@@ -107,11 +107,11 @@
     "(recognise) she answered: raddat ʿalay (ردت علي)"
    ],
    [
-    "الصورة ظلمة",
-    "iṣ-ṣūra ẓalma",
-    "the photo's dark",
-    "الصورة مظلمة",
-    "also of a room: il-ghurfa ẓalma (الغرفة ظلمة)"
+    "الصورة مب واضحة",
+    "iṣ-ṣūra mub wāẓḥa",
+    "the photo isn't clear",
+    "الصورة غير واضحة",
+    "it's clear: wāẓiḥ (واضح); a feminine noun: wāẓḥa (واضحة)"
    ],
    [
     "بنشوفه بعيوننا",
@@ -129,28 +129,28 @@
  {
   "id": "s4u012",
   "stage": 4,
-  "title": "The uni website won't let me in",
-  "goal": "On the last day of course registration, the university website is jammed; Sēf helps you get in and open your timetable",
+  "title": "The ticket site won't let me in",
+  "goal": "An hour before a football match, the ticket website is jammed; Sēf helps you get in, book and open your tickets",
   "tip": "Form VII present without ma says what can be done: yinfitiḥ 'it opens, it can be opened', yinḥall 'it can be sorted out'. From dashsh 'go in' comes ma yindashsh 'you can't get in': il-mawgiʿ ma yindashsh 'the site won't let you in'.",
   "grammar": "Form VII present as 'can / can't be done': ma yindashsh, yinḥall, ma yinfitiḥ",
   "dialogue": [
    [
     "B",
-    "سيف، موقع الجامعة ما يندش!",
-    "Sēf, mawgiʿ il-jāmʿa ma yindashsh!",
-    "Sēf, the uni website won't let me in!"
+    "سيف، موقع التذاكر ما يندش!",
+    "Sēf, mawgiʿ it-tadhākir ma yindashsh!",
+    "Sēf, the ticket website won't let me in!"
    ],
    [
     "A",
-    "عادي، اليوم آخر يوم للتسجيل، والكل قاعد يسجل الحين",
-    "ʿādi, il-yōm ākhir yōm lit-tasjīl, w il-kill gāʿid ysajjil il-ḥīn",
-    "That's normal: today's the last day to register, and everyone's registering right now."
+    "عادي، المباراة الليلة، والكل قاعد يحجز في نفس الوقت",
+    "ʿādi, il-mubārā l-lēla, w il-kill gāʿid yiḥjiz fi nafs il-wagt",
+    "That's normal: the match is tonight, and everyone's booking at the same time."
    ],
    [
     "B",
-    "وإذا ما سجلت اليوم؟ شو بيصير؟",
-    "w idha ma sajjalt il-yōm? shu biyṣīr?",
-    "And if I don't register today? What'll happen?"
+    "وإذا ما لقينا تذاكر؟ شو نسوي؟",
+    "w idha ma ligēna tadhākir? shu nsawwi?",
+    "And if we don't get tickets? What do we do?"
    ],
    [
     "A",
@@ -160,33 +160,33 @@
    ],
    [
     "B",
-    "دشيت! بس ملف الجدول ما ينفتح",
-    "dashshēt! bas malaff il-jadwal ma yinfitiḥ",
-    "I'm in! But the timetable file won't open."
+    "دشيت وحجزت تذكرتين! بس الإيميل ما ينفتح",
+    "dashshēt w ḥajazt tadhkartēn! bas il-īmēl ma yinfitiḥ",
+    "I'm in, and I've booked two tickets! But the email won't open."
    ],
    [
     "A",
-    "يباله برنامج ثاني، بس على اللابتوب ينفتح أكيد",
-    "yabā-lah barnāmij thāni, bas ʿala l-lābtōb yinfitiḥ akīd",
-    "It needs another program, but it'll definitely open on the laptop."
+    "يباله شبكة أحسن، بس في البيت ينفتح أكيد",
+    "yabā-lah shabaka aḥsan, bas fil-bēt yinfitiḥ akīd",
+    "It needs a better signal, but at home it'll definitely open."
    ],
    [
     "B",
-    "زين. والمادة اللي أبيها؟ للحين فيها مكان؟",
-    "zēn. w il-māda illi abīha? lil-ḥīn fīha makān?",
-    "OK. And the module I want? Is there still a place on it?"
+    "زين. والمواقف عند الملعب؟ بتكون زحمة؟",
+    "zēn. w il-mawāgif ʿind il-malʿab? bitkūn zaḥma?",
+    "OK. And the parking at the stadium? Will it be packed?"
    ],
    [
     "A",
-    "هيه، بس باقي مكانين بس. سجل الحين قبل لا يروحون",
-    "hē, bas bāgi makānēn bas. sajjil il-ḥīn gabil la yrūḥūn",
-    "Yes, but there are only two places left. Register now before they go."
+    "أكيد، يقولون باقي تذاكر شوي بس، يعني الملعب بيكون مليان",
+    "akīd, ygūlūn bāgi tadhākir shwayy bas, yaʿni l-malʿab biykūn malyān",
+    "Sure; they say there are only a few tickets left, so the stadium will be full."
    ],
    [
     "B",
-    "سجلت! الحمد لله",
-    "sajjalt! il-ḥamdu lillāh",
-    "Done, I've registered! Thank God."
+    "عيل نطلع من البيت الساعة ست",
+    "ʿayal niṭlaʿ min il-bēt is-sāʿa sitt",
+    "Then let's leave home at six."
    ]
   ],
   "items": [
@@ -219,11 +219,11 @@
     "to a woman: dashshēti (دشيتي)"
    ],
    [
-    "إذا ما سجلت",
-    "idha ma sajjalt",
-    "if I don't register; if you don't register (to a man)",
-    "إذا لم أسجل",
-    "to a woman: idha ma sajjalti (إذا ما سجلتي)"
+    "حجزت تذكرتين",
+    "ḥajazt tadhkartēn",
+    "I booked two tickets; you booked two tickets (to a man)",
+    "حجزت تذكرتين",
+    "to a woman: ḥajazti (حجزتي)"
    ],
    [
     "جرب من تلفوني",
@@ -233,25 +233,25 @@
     "to a woman: jarrbi min tilifōni (جربي من تلفوني)"
    ],
    [
-    "آخر يوم للتسجيل",
-    "ākhir yōm lit-tasjīl",
-    "the last day to register",
-    "آخر يوم للتسجيل",
+    "الكل قاعد يحجز",
+    "il-kill gāʿid yiḥjiz",
+    "everyone's booking",
+    "الجميع يحجز",
     "(recognise)"
    ],
    [
-    "يباله برنامج ثاني",
-    "yabā-lah barnāmij thāni",
-    "it needs another program",
-    "يحتاج إلى برنامج آخر",
+    "يباله شبكة أحسن",
+    "yabā-lah shabaka aḥsan",
+    "it needs a better signal",
+    "يحتاج إلى شبكة أفضل",
     "(recognise)"
    ],
    [
-    "باقي مكانين بس",
-    "bāgi makānēn bas",
-    "there are only two places left",
-    "بقي مكانان فقط",
-    "(recognise) one place left: bāgi makān wāḥid (باقي مكان واحد)"
+    "باقي تذاكر شوي بس",
+    "bāgi tadhākir shwayy bas",
+    "there are only a few tickets left",
+    "بقيت تذاكر قليلة فقط",
+    "(recognise)"
    ]
   ],
   "receptive": [
@@ -549,15 +549,15 @@
    ],
    [
     "B",
-    "والعريس؟ بيكون وصل القاعة؟",
-    "w il-ʿarīs? biykūn wiṣal il-gāʿa?",
-    "And the groom? Will he have got to the hall?"
+    "وفهد؟ تظن بيكون وصل؟",
+    "w Fahad? tẓunn biykūn wiṣal?",
+    "And Fahad? Do you think he'll have got there?"
    ],
    [
     "A",
-    "أكيد. دق على فهد، يمكن يعرف",
-    "akīd. digg ʿala Fahad, yimkin yaʿarf",
-    "Sure. Ring Fahad; maybe he knows."
+    "أكيد، هو دوم بدري. دق عليه، يمكن يتريانا",
+    "akīd, huwa dōm badri. digg ʿalēh, yimkin yitrayyāna",
+    "Sure, he's always early. Ring him; maybe he's waiting for us."
    ],
    [
     "B",
@@ -601,11 +601,11 @@
     "he'll have started: biykūn bida (بيكون بدا)"
    ],
    [
-    "بيكون وصل",
-    "biykūn wiṣal",
-    "he'll have got there, he's probably there by now",
-    "سيكون قد وصل",
-    "she: bitkūn wiṣlat (بتكون وصلت)"
+    "المهم نوصل",
+    "il-muhimm nōṣal",
+    "the main thing is we get there",
+    "المهم أن نصل",
+    "the main thing is you get there: il-muhimm tōṣal (المهم توصل)"
    ],
    [
     "المكالمة ما تنسمع",
@@ -1266,7 +1266,7 @@
     "(recognise)"
    ]
   ],
-  "task": "This week: search YouTube for «مسلسل إماراتي» (Emirati series) or «سوالف» (chats). Listen until you hear إياه, إياها or إياهم three times, and write down the sentence around each: who gave, showed or told what to whom? Within a minute you should hear شو / مب (UAE) or شنو / مو (Kuwait). If you hear سوف, ليس or هل all the time, it's fuṣḥā: pick another clip.",
+  "task": "This week: search YouTube for «مسلسل إماراتي» (Emirati series). Pick 5 short lines where someone gives, lends, shows or hands something back (listen for إياه, إياها, عطني, رده). Pause, repeat each line twice, matching the speed. Within a minute you should hear شو / مب (UAE) or شنو / مو (Kuwait). If you hear سوف, ليس or هل all the time, it's fuṣḥā: pick another clip.",
   "receptive": [
    2,
    4,
