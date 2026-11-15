@@ -128,7 +128,7 @@
   "stage": 3,
   "title": "The lift's out of order",
   "goal": "Plan a meeting with Maryam at the office when the lift is broken, the room is booked and the manager's line is busy",
-  "tip": "Participles describe a state: ḥajaz 'booked' → maḥjūz 'booked, taken'; mashghūl 'busy'. Form II verbs (doubled middle letter) make theirs with m-: sakkar 'shut' → msakkar 'shut'; mʿaṭṭal 'out of order' has the same shape. With a feminine noun add -a: il-ghurfa maḥjūza.",
+  "tip": "Participles describe a state: ḥajaz 'he booked' → maḥjūz 'booked up, taken'; mashghūl 'busy'. Form II verbs (doubled middle letter) make theirs with m-: sakkar 'he shut' → msakkar 'shut, closed'; mʿaṭṭal 'out of order' has the same shape. With a feminine noun add -a: il-ghurfa maḥjūza.",
   "grammar": "participles for states: maḥjūz, mashghūl; Form II with m-: mʿaṭṭal, msakkar",
   "dialogue": [
    [
@@ -200,7 +200,7 @@
     "maḥjūz",
     "booked, reserved; taken (a seat)",
     "محجوز",
-    "with a feminine noun: maḥjūza (محجوزة); hādha l-kursi maḥjūz? = is this seat taken?"
+    "with a feminine noun: maḥjūza (محجوزة); you've met it in killah maḥjūz (كله محجوز); hādha l-kursi maḥjūz? = is this seat taken?"
    ],
    [
     "لين الظهر",
@@ -368,7 +368,7 @@
     ""
    ]
   ],
-  "culture": "In the hottest months much of daily life in the UAE moves to the evening. People run errands early in the morning or after maghrib, malls and cafés stay busy late, and parks and beaches fill up at night once it cools a little. Midday is for staying indoors."
+  "culture": "In the hottest months much of daily life in the UAE moves to the evening. Many people only go out after sunset: beaches and waterfronts fill up at night, and Dubai has beaches lit for night swimming. Midday is for staying indoors."
  },
  {
   "id": "s3u050",
@@ -447,7 +447,7 @@
     "shu akhbār…?",
     "how's … going? any news on …?",
     "ما أخبار…؟",
-    "shu akhbār id-dirāsa? = how are your studies going?"
+    "shu akhbār id-dirāsa? = how are your studies going?; the same phrase as shakhbārak? 'how are things?', run together"
    ],
    [
     "يسوق",
@@ -547,7 +547,7 @@
     "A",
     "أبشر! بتستانس، بس لازم تصحى بدري",
     "abshir! bitistānis, bas lāzim tiṣḥa badri",
-    "You're on! You'll love it, but you'll have to get up early."
+    "You got it! You'll love it, but you'll have to get up early."
    ]
   ],
   "items": [
@@ -775,7 +775,7 @@
     "A",
     "مب لازم. البس شي محترم وبس",
     "mub lāzim. ilbas shay miḥtaram w bas",
-    "No need. Just wear something smart."
+    "No need. Just wear something decent."
    ],
    [
     "B",
@@ -835,7 +835,7 @@
    [
     "البس شي محترم",
     "ilbas shay miḥtaram",
-    "wear something smart (to a man)",
+    "wear something decent, wear something modest (to a man)",
     "البس شيئًا محترمًا",
     "to a woman: ilbasi shay miḥtaram (البسي شي محترم)"
    ],
@@ -1109,7 +1109,7 @@
     ""
    ]
   ],
-  "culture": "In a mosque, shoes go on the rack by the door, phones go on silent and voices stay low. Women pray in their own section, often with its own entrance. Most mosques have a washing area for wudu. If the prayer has started, join a row quietly, and never walk in front of someone who is praying. Afterwards people often say tagabbal allāh to each other, and the answer is minna w minkum."
+  "culture": "In a mosque, shoes go on the rack by the door, phones go on silent and voices stay low. Women pray in their own section. Most mosques have a washing area for wudu. If the prayer has started, join a row quietly, and never walk in front of someone who is praying. Afterwards people often say tagabbal allāh to each other, and the answer is minna w minkum."
  },
  {
   "id": "s3u056",
