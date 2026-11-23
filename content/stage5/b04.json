@@ -47,7 +47,7 @@
     "A",
     "بروحي؟ خيبة! يعني انت ما بتقول ولا كلمة؟ تعال حبيبي!",
     "b-rūḥi? khēba! yaʿni inta ma bitgūl wala kilma? taʿāl ḥabībi!",
-    "On my own? Come off it! So you won't say a single word? Nice try, mate!"
+    "On my own? Come off it! So you won't say a single word? Hold on a minute, mate!"
    ],
    [
     "B",
@@ -107,7 +107,7 @@
    [
     "تعال حبيبي!",
     "taʿāl ḥabībi!",
-    "(ironic) nice try, mate! come off it! (to a man) (friends only)",
+    "(ironic) hold on a minute, mate! come here, you! (to someone being difficult) (to a man) (friends only)",
     "",
     "(recognise); to a woman: taʿāli ḥabībti (تعالي حبيبتي); said straight, it's a friendly 'come here, mate'"
    ]
@@ -122,8 +122,8 @@
   "stage": 5,
   "title": "Nice parking, champ! Mock praise",
   "goal": "Outside Bū Rāshid's majlis, Rāshid praises your terrible parking; take the joke, and tease him back about his team's defeat",
-  "tip": "Mock praise uses real compliments for something bad: yā baṭal 'champ', brāvo ʿalēk, shu hal-mawhiba! 'what talent!'. The tone and the situation tell everyone it's a joke. When you've both scored a point, call it even: wāḥid wāḥid (you'll hear tʿādalna).",
-  "grammar": "irony: mock praise (yā baṭal, brāvo ʿalēk, shu hal-mawhiba)",
+  "tip": "Mock praise uses real compliments for something bad: yā salām! 'wow!', yā baṭal 'champ'. You'll also hear brāvo ʿalēk and shu hal-mawhiba! 'what talent!'. The tone and the situation tell everyone it's a joke. When you've both scored a point, call it even: wāḥid wāḥid (you'll hear tʿādalna).",
+  "grammar": "irony: mock praise (yā baṭal, yā salām!)",
   "dialogue": [
    [
     "A",
@@ -177,7 +177,7 @@
     "A",
     "تأخرت! شافها من الدريشة وقام يضحك. تعال حبيبي، لا تتهرب!",
     "taʼakhkhart! shāfha min id-dirīsha w gām yiẓḥak. taʿāl ḥabībi, la titharrab!",
-    "Too late! He saw it from the window and burst out laughing. Nice try, mate; don't try to dodge it!"
+    "Too late! He saw it from the window and burst out laughing. Not so fast, mate; don't try to dodge it!"
    ],
    [
     "B",
@@ -258,9 +258,9 @@
    ],
    [
     "A",
-    "سنة في الغربة، وبيرجع يرطن مثل الأجانب، وينسى الكلمات العربية وطعم المجبوس!",
-    "sana fi l-ghurba, w biyirjaʿ yirṭin mithil il-ajānib, w yinsa l-kalimāt il-ʿarabiyya w ṭaʿm il-majbūs!",
-    "A year abroad, and he'll come back jabbering like a foreigner, forgetting his Arabic words and the taste of majbūs!"
+    "سنة في الغربة، وبيرجع يرطن مثل الأجانب، وينسى الكلمات العربية وطعم المكبوس!",
+    "sana fi l-ghurba, w biyirjaʿ yirṭin mithil il-ajānib, w yinsa l-kalimāt il-ʿarabiyya w ṭaʿm il-machbūs!",
+    "A year abroad, and he'll come back jabbering like a foreigner, forgetting his Arabic words and the taste of machbūs!"
    ],
    [
     "B",
@@ -276,9 +276,9 @@
    ],
    [
     "B",
-    "والله يا عمي، صار يلبس بنطلون بدال الكندورة",
-    "wallāh yā ʿammi, ṣār yilbas banṭalōn badāl il-kandūra",
-    "Honestly, uncle, he's started wearing trousers instead of the kandūra."
+    "والله يا عمي، صار يلبس بنطلون بدال الكندورة والغترة",
+    "wallāh yā ʿammi, ṣār yilbas banṭalōn badāl il-kandūra w il-ghitra",
+    "Honestly, uncle, he's started wearing trousers instead of the kandūra and the ghitra."
    ],
    [
     "A",
@@ -321,10 +321,10 @@
     "(recognise); a foreigner: ajnabi (أجنبي)"
    ],
    [
-    "المجبوس",
-    "il-majbūs",
-    "majbūs (spiced rice with meat or fish)",
-    "المجبوس",
+    "الغترة",
+    "il-ghitra",
+    "the ghitra (a man's headcloth)",
+    "الغترة",
     ""
    ],
    [
@@ -377,9 +377,9 @@
    ],
    [
     "B",
-    "فهد، خلاص عاد. ماجد ما ضحك",
-    "Fahad, khalāṣ ʿād. Mājid ma ẓiḥak",
-    "Fahad, that's enough now. Mājid isn't laughing."
+    "فهد، خلاص عاد. ماجد يستحي، ما ضحك",
+    "Fahad, khalāṣ ʿād. Mājid yistiḥi, ma ẓiḥak",
+    "Fahad, that's enough now. Mājid's embarrassed; he isn't laughing."
    ],
    [
     "A",
@@ -401,9 +401,9 @@
    ],
    [
     "B",
-    "أدري. بس الحين مب وقته، هالسالفة ما فيها مزح عنده. كلمه",
-    "adri. bas il-ḥīn mub wagtah, has-sālfa ma fīha mazaḥ ʿindah. kallmah",
-    "I know. But now's not the time; for him, that story's no joke. Talk to him."
+    "أدري. بس الحين مب وقته. كلمه",
+    "adri. bas il-ḥīn mub wagtah. kallmah",
+    "I know. But now's not the time. Talk to him."
    ],
    [
     "A",
@@ -413,19 +413,12 @@
    ],
    [
     "B",
-    "يلا، الكرك على فهد! وايد عليك",
-    "yalla, il-karak ʿala Fahad! wāyid ʿalēk",
-    "(to Mājid) Come on, karak's on Fahad! (to Fahad) Steady on, don't overdo it! (ironic)"
+    "شفت؟ ماجد ضحك، يعني ما صار شي. يلا، الكرك على فهد! وايد عليك",
+    "shift? Mājid ẓiḥak, yaʿni ma ṣār shay. yalla, il-karak ʿala Fahad! wāyid ʿalēk",
+    "See? Mājid's laughing, so no harm done. Come on, karak's on Fahad! (to Fahad) Steady on, don't overdo it! (ironic)"
    ]
   ],
   "items": [
-   [
-    "زودتها",
-    "zawwadt-ha",
-    "you've gone too far (to a man); I went too far",
-    "بالغت / تجاوزت الحد",
-    "to a woman: zawwadtī-ha (زودتيها)"
-   ],
    [
     "أحرجته",
     "aḥrajtah",
@@ -439,6 +432,13 @@
     "(to) hurt him, hurt his feelings",
     "أجرحه",
     "to hurt her: ajraḥ-ha (أجرحها)"
+   ],
+   [
+    "يستحي",
+    "yistiḥi",
+    "(he's) embarrassed, shy, he feels ashamed",
+    "يستحي / يخجل",
+    "a woman: tistiḥi (تستحي)"
    ],
    [
     "حقك علي",
@@ -645,7 +645,7 @@
     "A",
     "زين، انت تمون. بس إذا قلت إنك تعرف تلعب كورة، بقول لك: أونه!",
     "zēn, inta tmūn. bas idha gilt innak taʿarf tilʿab kūra, bagūl-lak: awinna!",
-    "Fine, you're one of us. But if you say you can play football, I'll say: yeah, right!"
+    "Fine, we're close enough; you can get away with it. But if you say you can play football, I'll say: yeah, right!"
    ]
   ],
   "items": [
@@ -1273,9 +1273,9 @@
   "dialogue": [
    [
     "A",
-    "هذي هي. شوف العداد، ونظيفة من داخل ومن برا",
-    "hādhi hiya. shūf il-ʿaddād, w naẓīfa min dākhil w min barra",
-    "Here it is. Look at the mileage on the meter, and it's clean inside and out."
+    "هذي هي. شوف العداد والملكية، ونظيفة من داخل ومن برا",
+    "hādhi hiya. shūf il-ʿaddād w il-mulkiyya, w naẓīfa min dākhil w min barra",
+    "Here it is. Look at the meter and the registration card, and it's clean inside and out."
    ],
    [
     "B",
@@ -1362,17 +1362,18 @@
     "(recognise)"
    ],
    [
-    "جاد",
-    "jādd",
-    "serious (a man)",
-    "جاد",
-    "a woman: jādda (جادة); I'm serious: ana jādd (أنا جاد)"
+    "الملكية",
+    "il-mulkiyya",
+    "the car's registration card (UAE)",
+    "ملكية السيارة",
+    "(recognise)"
    ]
   ],
   "receptive": [
    0,
    2,
-   3
+   3,
+   4
   ],
   "culture": "When someone shows you something new, Gulf speakers admire it with mā shāʼ allāh, to praise it without envy. So B starts with mā shāʼ allāh even while he points out the scratch."
  }

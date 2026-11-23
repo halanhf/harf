@@ -15,9 +15,9 @@
    ],
    [
     "B",
-    "زين، ويا ترا شو نقول له؟ يا شيخ؟",
-    "zēn, w yā tara shu ngūl-lah? yā shēkh?",
-    "OK, and I wonder, what do we call him? Yā shēkh?"
+    "زين، يا ترا شو نقول له؟ يا شيخ؟",
+    "zēn, yā tara shu ngūl-lah? yā shēkh?",
+    "OK, I wonder, what do we call him? Yā shēkh?"
    ],
    [
     "A",
@@ -138,7 +138,7 @@
     "A",
     "لا، يستأذن الشيخ أول. والشيوخ يعرفون كل واحد من أبوه ولبوقته",
     "la, yistaʼdhin ish-shēkh awwal. w ish-shyūkh yaʿarfūn kill wāḥid min ubūh w labbūgtah",
-    "No, he asked the sheikh's permission first. And the sheikhs knew everyone by his father and his branch of the family."
+    "No, he asked the sheikh's permission first. And the sheikhs knew everyone by his father and his family nickname."
    ],
    [
     "B",
@@ -192,13 +192,6 @@
     ""
    ],
    [
-    "فلان بن فلان",
-    "fulān bin fulān",
-    "so-and-so, son of so-and-so (how a visitor named himself)",
-    "فلان بن فلان",
-    "(recognise)"
-   ],
-   [
     "العسكري",
     "il-ʿaskari",
     "the guard, the soldier",
@@ -222,17 +215,16 @@
    [
     "اللبوقة",
     "il-labbūga",
-    "the branch of a family, a lineage (old-fashioned)",
-    "الفرع / النسب",
-    "(recognise); his branch of the family: labbūgtah (لبوقته)"
+    "a family nickname, a byname passed down in a family (old-fashioned)",
+    "اللقب",
+    "(recognise); his family nickname: labbūgtah (لبوقته); UAE also: it-taʿyūra (التعيورة)"
    ]
   ],
   "culture": "In the old days, a visitor to a ruler's majlis gave his name at the gate as fulān bin fulān, and the guard asked the sheikh's permission to let him in. The sheikhs knew people by their father's or grandfather's name. Inside, you didn't sit until the sheikh invited you, or speak until he spoke to you, and to leave you asked his permission first.",
   "receptive": [
    1,
-   2,
-   4,
-   5
+   3,
+   4
   ]
  },
  {
@@ -257,9 +249,9 @@
    ],
    [
     "A",
-    "الاجتماع بعد ساعة، والمدير العام بيحضر. التقرير ضروري",
-    "il-ijtimāʿ baʿd sāʿa, w il-mudīr il-ʿāmm biyiḥẓar. it-taqrīr ẓarūri",
-    "The meeting's in an hour, and the director general will be there. The report is essential."
+    "الاجتماع بعد ساعة، وعلى ما يبدو المدير العام بيحضر. التقرير ضروري",
+    "il-ijtimāʿ baʿd sāʿa, w ʿala ma yibdu l-mudīr il-ʿāmm biyiḥẓar. it-taqrīr ẓarūri",
+    "The meeting's in an hour, and it seems the director general will be there. The report is essential."
    ],
    [
     "B",
@@ -293,15 +285,15 @@
    ],
    [
     "A",
-    "ما قصرت يا ولدي، الله يرضى عليك. أنا فخور فيك",
-    "mā gaṣṣart yā wildi, allāh yirẓa ʿalēk. ana fakhūr fīk",
-    "Thank you, son; bless you. I'm proud of you."
+    "ما قصرت يا ولدي، الله يرضى عليك",
+    "mā gaṣṣart yā wildi, allāh yirẓa ʿalēk",
+    "Thank you, son; bless you."
    ],
    [
     "B",
-    "ما سوينا شي، صدقني هذا واجبي",
-    "mā sawwēna shay, ṣaddigni hādha wājbi",
-    "It's nothing; believe me, it's my job."
+    "ما سوينا شي، وإياك. صدقني هذا واجبي",
+    "mā sawwēna shay, w iyyāk. ṣaddigni hādha wājbi",
+    "It's nothing, and bless you too. Believe me, it's my job."
    ]
   ],
   "items": [
@@ -332,13 +324,6 @@
     "gladly, with pleasure (lit. from my eyes)",
     "بكل سرور",
     ""
-   ],
-   [
-    "واجبي",
-    "wājbi",
-    "my duty, my job (hādha wājbi: it's my duty)",
-    "واجبي",
-    "your duty (to a man): wājbak (واجبك)"
    ],
    [
     "ضروري",
@@ -477,7 +462,7 @@
   "title": "Khaṭīr! Rāshid's new words",
   "goal": "Rāshid shows you a video of a new burger place, full of the words young people use now; work out what they mean and where you can say them",
   "tip": "Young people's praise words often mean the opposite of the dictionary: khaṭīr 'dangerous' means 'amazing', mub ṭabīʿi 'not normal' means 'unreal'. Keep them for friends, not the office. To calm a friend down, la tṣīr ōvar 'don't go over the top'.",
-  "grammar": "trendy language: khaṭīr, mub ṭabīʿi, falla, stāyl, ōvar (friends only)",
+  "grammar": "trendy language: falla, stāyl, ōvar (recycle khaṭīr, mub ṭabīʿi) (friends only)",
   "dialogue": [
    [
     "A",
@@ -531,7 +516,7 @@
     "A",
     "خلاص، الخميس نروح كلنا، وانت قول لي إذا خطير ولّا لا",
     "khalāṣ, il-khamīs nrūḥ killna, w inta gūl-li idha khaṭīr walla la",
-    "Fine, on Thursday we'll all go, and you tell me if it's insane or not."
+    "Fine, let's all go on Thursday, and you tell me if it's insane or not."
    ],
    [
     "B",
@@ -541,20 +526,6 @@
    ]
   ],
   "items": [
-   [
-    "خطير",
-    "khaṭīr",
-    "amazing, insane (lit. dangerous) (friends only)",
-    "رائع",
-    "(recognise); also 'serious, dangerous' (shay khaṭīr)"
-   ],
-   [
-    "مب طبيعي",
-    "mub ṭabīʿi",
-    "unreal, amazing (lit. not normal) (friends only)",
-    "مذهل",
-    "(recognise)"
-   ],
    [
     "فلة",
     "falla",
@@ -574,7 +545,7 @@
     "la tṣīr ōvar",
     "don't go over the top, don't overdo it (friends only) (to a man)",
     "لا تبالغ",
-    "to a woman: la tṣīrīn ōvar (لا تصيرين أوفر)"
+    "to a woman: la tṣīrīn ōvar (لا تصيرين أوفر); (recognise)"
    ],
    [
     "الديكور",
@@ -582,13 +553,19 @@
     "the décor",
     "الديكور",
     ""
+   ],
+   [
+    "البرقر",
+    "il-burgar",
+    "the burger",
+    "البرجر",
+    "you'll see written البرجر"
    ]
   ],
   "receptive": [
    0,
    1,
-   2,
-   3
+   2
   ]
  },
  {
@@ -613,9 +590,9 @@
    ],
    [
     "A",
-    "بالعافية عليك يا ولدي",
-    "bil-ʿāfya ʿalēk yā wildi",
-    "Enjoy it, son."
+    "الله يسلمك، بالعافية عليك يا ولدي",
+    "allāh ysallmak, bil-ʿāfya ʿalēk yā wildi",
+    "Thank you; enjoy it, son."
    ],
    [
     "B",
@@ -638,7 +615,7 @@
    [
     "A",
     "وين شبعت؟ ما أكلت شي! راشد، حط له",
-    "wēn shbaʿt? ma akalt shay! Rāshid, ḥuṭṭ lah",
+    "wēn shbaʿt? ma akalt shay! Rāshid, ḥuṭṭ-lah",
     "Full? You've hardly eaten! Rāshid, give him some more."
    ],
    [
@@ -655,9 +632,9 @@
    ],
    [
     "B",
-    "تامرني على شي ثاني قبل لا أروح؟",
-    "tāmirni ʿala shay thāni gabil la arūḥ?",
-    "Is there anything else I can do for you before I go?"
+    "تامرني على شي ثاني؟ وإذا ما شي لازم، بنترخص",
+    "tāmirni ʿala shay thāni? w idha ma shay lāzim, binitrakhkhaṣ",
+    "Is there anything else I can do for you? And if there's nothing you need, we'll take our leave."
    ]
   ],
   "items": [
@@ -665,7 +642,7 @@
     "ما عليك زود",
     "ma ʿalēk zōd",
     "nobody does it better, you can't be beaten (praise) (to a man)",
-    "لا يُعلى عليك",
+    "لا يعلى عليك",
     "to a woman: ma ʿalēch zōd (ما عليج زود)"
    ],
    [
@@ -744,7 +721,7 @@
     "A",
     "أحسن وايد. وشو السبب الوحيد؟ لا تقول عشان، قول بسبب",
     "aḥsan wāyid. w shu s-sabab il-waḥīd? la tgūl ʿashān, gūl b-sabab",
-    "Much better. And what's the one reason? Don't say ʿashān, say bi-sabab."
+    "Much better. And what's the one reason? Don't say ʿashān, say b-sabab."
    ],
    [
     "B",
@@ -883,9 +860,9 @@
    ],
    [
     "A",
-    "هذا كلام جرايد! وفي المجلس، شو أسلوبك؟",
-    "hādha kalām jarāyid! w fi l-majlis, shu uslūbak?",
-    "That's newspaper talk! And in the majlis, what's your style?"
+    "خل الفصحى للإيميل، هذا كلام من الجريدة! وفي المجلس، شو أسلوبك؟",
+    "khall il-fuṣḥa lil-īmēl, hādha kalām min il-jarīda! w fi l-majlis, shu uslūbak?",
+    "Keep fuṣḥā for emails; that's talk straight out of the newspaper! And in the majlis, what's your style?"
    ],
    [
     "B",
@@ -914,7 +891,7 @@
     "kalimāt fakhma",
     "grand words, high-sounding words",
     "كلمات فخمة",
-    ""
+    "(recognise)"
    ],
    [
     "وانت رايق",
@@ -924,23 +901,24 @@
     "to a woman: w inti rāyga (وانتي رايقة)"
    ],
    [
-    "كلام جرايد",
-    "kalām jarāyid",
-    "newspaper talk, the language of the papers",
-    "كلام الجرائد",
-    "(recognise); one paper: jarīda (جريدة)"
-   ],
-   [
     "تعابير",
     "taʿābīr",
     "expressions, turns of phrase",
     "تعابير",
     "one: taʿbīr (تعبير)"
+   ],
+   [
+    "الجريدة",
+    "il-jarīda",
+    "the newspaper",
+    "الجريدة",
+    "(recognise); newspapers: il-jarāyid (الجرايد)"
    ]
   ],
   "receptive": [
    0,
-   4
+   2,
+   5
   ]
  },
  {
@@ -948,7 +926,7 @@
   "stage": 5,
   "title": "A toast for Bū Khālid",
   "goal": "At the office farewell lunch for Bū Khālid, who is retiring after twenty years, give the team's short formal toast and hand him the team's gift",
-  "tip": "A toast here is a short formal speech, not a drink. Open with ysharrifni and say who you speak for (b-ism il-farīg), praise him (kint lana qudwa; tirakt baṣma), close with a wish (nitmanna-lak it-tawfīq), and hand over the gift as ʿarbūn wafāʼ 'a token of loyalty'.",
+  "tip": "A toast here is a short formal speech, not a drink. Open with ysharrifni and say who you speak for (b-ism il-farīg), praise him (kint qudwa; tirakt baṣma), close with a wish (nitmanna-lak it-tawfīq), and hand over the gift as ʿarbūn wafāʼ 'a token of loyalty'.",
   "grammar": "formal speech (toast): qudwa, baṣma, ajyāl, ʿarbūn wafāʼ",
   "dialogue": [
    [
@@ -989,9 +967,9 @@
    ],
    [
     "A",
-    "كلامك يرفع الراس، وقلته بشكل ممتاز",
-    "kalāmak yirfaʿ ir-rās, w giltah b-shakl mumtāz",
-    "Your words make me proud, and you put it beautifully."
+    "كلامك يرفع الراس، ما عليك زود!",
+    "kalāmak yirfaʿ ir-rās, ma ʿalēk zōd!",
+    "Your words make me proud; nobody does it better!"
    ],
    [
     "B",
@@ -1009,7 +987,7 @@
     "B",
     "ما سوينا شي. هذي الهدية عربون وفاء وامتنان",
     "mā sawwēna shay. hādhi l-hadiyya ʿarbūn wafāʼ w imtinān",
-    "It's nothing. This gift is a token of loyalty and gratitude."
+    "It's nothing. This gift is a token of loyalty and gratitude. (formal)"
    ]
   ],
   "items": [
@@ -1047,13 +1025,6 @@
     "a token of loyalty, a token of thanks (formal)",
     "عربون وفاء",
     ""
-   ],
-   [
-    "امتنان",
-    "imtinān",
-    "gratitude (formal)",
-    "امتنان",
-    ""
    ]
   ],
   "task": "This week: record a 2-minute toast (formal) for a friend's graduation or a colleague who's leaving. Open with ysharrifni and b-ism…, praise one quality (kint qudwa, tirakt baṣma), and close with nitmanna-lak it-tawfīq. Then record 30 seconds saying the same thing to the friend over karak, the way friends talk: no fuṣḥā words, and as much ḥilu and wāyid as you like."
@@ -1063,7 +1034,7 @@
   "stage": 5,
   "title": "Welcome to our company",
   "goal": "At the office, a teacher brings a school group to visit; on Bū Saʿīd's behalf, give a short formal welcome, then switch back to everyday talk for the tour",
-  "tip": "A formal welcome: ahlan wa sahlan bikum (the wa is fuṣḥā, kept in this phrase), who you speak for (bin-niyāba ʿan mudīrna), and what comes first (nubdha ʿan sharikatna 'a short overview of our company'). Then drop back to everyday Gulf: jōla fi l-mabna, yalla yā shabāb.",
+  "tip": "A formal welcome: ahlan wa sahlan bikum (the wa is fuṣḥā, kept in this phrase), who you speak for (bin-niyāba ʿan mudīrna), and what comes first (nubdha ʿan sharikatna 'a short overview of our company'). Then drop back to everyday Gulf: jōla fi l-mabna, tāmrūn ʿala shay thāni?, yalla yā shabāb.",
   "grammar": "formal welcome: ahlan wa sahlan bikum, bin-niyāba ʿan, nubdha ʿan",
   "dialogue": [
    [
@@ -1122,9 +1093,9 @@
    ],
    [
     "B",
-    "العفو، هذا واجبنا. يلا يا شباب، من هني!",
-    "il-ʿafu, hādha wājibna. yalla yā shabāb, min hni!",
-    "You're welcome; it's our duty. Come on, lads, this way!"
+    "العفو. تامرون على شي ثاني؟ يلا يا شباب، من هني!",
+    "il-ʿafu. tāmrūn ʿala shay thāni? yalla yā shabāb, min hni!",
+    "You're welcome. Anything else you need? Come on, lads, this way!"
    ]
   ],
   "items": [
@@ -1150,13 +1121,6 @@
     "nubdha ʿan: an overview of"
    ],
    [
-    "المبنى",
-    "il-mabna",
-    "the building",
-    "المبنى",
-    ""
-   ],
-   [
     "وفد",
     "wafd",
     "a delegation, a visiting group (formal)",
@@ -1172,7 +1136,7 @@
    ]
   ],
   "receptive": [
-   4
+   3
   ]
  },
  {
@@ -1418,14 +1382,14 @@
   "stage": 5,
   "title": "Off air",
   "goal": "Straight after the interview, the presenter drops the formal voice; talk about your nerves, the mixing, and when the interview goes out",
-  "tip": "The same speaker shifts register in seconds: on air mustamiʿīna l-kirām, off air khalāṣ, ṭilaʿna min il-hawa. Say what happened on air with ʿala l-hawa: twattart ʿala l-hawa; abda bil-fuṣḥa w akammil bil-lahja 'I start in fuṣḥā and carry on in dialect'.",
+  "tip": "The same speaker shifts register in seconds: off air it's khalāṣ, khiliṣ il-lāyv, ṭilaʿna min il-hawa. irtāḥ! Then ask about the repeat: mita l-iʿāda? ʿala ay mōja?",
   "grammar": "register shifting: formal → everyday as soon as the mic is off",
   "dialogue": [
    [
     "A",
-    "خلاص، طلعنا من الهوا. ارتاح يا سالم!",
-    "khalāṣ, ṭilaʿna min il-hawa. irtāḥ yā Sālim!",
-    "That's it, we're off air. Relax, Sālim!"
+    "خلاص، خلص اللايف، طلعنا من الهوا. ارتاح يا سالم!",
+    "khalāṣ, khiliṣ il-lāyv, ṭilaʿna min il-hawa. irtāḥ yā Sālim!",
+    "That's it, the live show's over, we're off air. Relax, Sālim!"
    ],
    [
     "B",
@@ -1453,15 +1417,15 @@
    ],
    [
     "B",
-    "ومتى بتنزل المقابلة؟ وعلى أي موجة؟",
-    "w mita bitinzil il-mugābla? w ʿala ay mōja?",
-    "And when will the interview go out? And on which frequency?"
+    "ومتى الإعادة؟ وعلى أي موجة؟",
+    "w mita l-iʿāda? w ʿala ay mōja?",
+    "And when's the repeat? And on which frequency?"
    ],
    [
     "A",
-    "الخميس الياي، الساعة ثمان الصبح، على نفس الموجة، في البرنامج نفسه",
-    "il-khamīs il-yāy, is-sāʿa thamān iṣ-ṣubḥ, ʿala nafs il-mōja, fi l-barnāmij nafsah",
-    "Next Thursday, at eight in the morning, on the same frequency, on the same programme."
+    "الإعادة الخميس الياي، الساعة ثمان الصبح، على نفس الموجة",
+    "il-iʿāda l-khamīs il-yāy, is-sāʿa thamān iṣ-ṣubḥ, ʿala nafs il-mōja",
+    "The repeat's next Thursday, at eight in the morning, on the same frequency."
    ],
    [
     "B",
@@ -1477,26 +1441,12 @@
    ],
    [
     "B",
-    "أكيد! بس المرة الياية بتكلم باللهجة من البداية",
-    "akīd! bas il-marra l-yāya batkallam bil-lahja min il-bidāya",
-    "Great! But next time I'll talk in dialect from the start."
+    "أكيد! بس المرة الياية بتكلم باللهجة من البداية في البرنامج",
+    "akīd! bas il-marra l-yāya batkallam bil-lahja min il-bidāya fi l-barnāmij",
+    "Great! But next time on the programme I'll talk in dialect from the start."
    ]
   ],
   "items": [
-   [
-    "طلعنا من الهوا",
-    "ṭilaʿna min il-hawa",
-    "we're off air",
-    "انتهى البث",
-    "(recognise)"
-   ],
-   [
-    "على الهوا",
-    "ʿala l-hawa",
-    "on air, live (on radio or TV)",
-    "على الهواء",
-    ""
-   ],
    [
     "الموجة",
     "il-mōja",
@@ -1524,12 +1474,18 @@
     "a shot, a short clip (filmed)",
     "لقطة",
     ""
+   ],
+   [
+    "اللايف",
+    "il-lāyv",
+    "the live show, the live broadcast",
+    "البث المباشر",
+    ""
    ]
   ],
   "receptive": [
-   0,
-   3,
-   4
+   1,
+   2
   ]
  },
  {
@@ -1537,8 +1493,8 @@
   "stage": 5,
   "title": "Fahad hears about the radio",
   "goal": "On a video call, Fahad has heard you were on the radio; tell him how it went, and compare how your languages are slipping, his at work and yours in the majlis",
-  "tip": "Say a language is slipping with tbahdalat 'it's gone to pieces': ʿarabīti tbahdalat, ingilīziyyti tbahdalat. Name the mix with mazīj, and the fix with atmarran 'I practise': lāzim atmarran, nitmarran kill usbūʿ. Fahad's Kuwaiti forms (shinu, shdaʿwa, ēh) are for recognition.",
-  "grammar": "saying a language is slipping: ʿarabīti tbahdalat, kalāmi mazīj; fixing it: lāzim atmarran",
+  "tip": "Say a language is slipping with tbahdalat 'it's gone to pieces': ʿarabiyyti tbahdalat, ingilīziyyti tbahdalat. Name the mix with mazīj, and the fix with atmarran 'I practise': lāzim atmarran, nitmarran kill usbūʿ. Fahad's Kuwaiti forms (shinu, shdaʿwa, ēh) are for recognition.",
+  "grammar": "saying a language is slipping: ʿarabiyyti tbahdalat, kalāmi mazīj; fixing it: lāzim atmarran",
   "dialogue": [
    [
     "A",
@@ -1567,7 +1523,7 @@
    [
     "A",
     "إيه، وعربيتي تبهدلت، حتى اللكنة تغيرت. كلامي مزيج",
-    "ēh, w ʿarabīti tbahdalat, ḥatta l-lakna tghayyarat. kalāmi mazīj",
+    "ēh, w ʿarabiyyti tbahdalat, ḥatta l-lakna tghayyarat. kalāmi mazīj",
     "Yes, and my Arabic's gone to pieces; even my accent has changed. The way I talk is a mix."
    ],
    [
@@ -1607,7 +1563,7 @@
     "ṭilaʿt bir-rādyo",
     "you were on the radio (to a man); I was on the radio",
     "ظهرت في الإذاعة",
-    "to a woman: ṭilaʿti bir-rādyo (طلعتي بالراديو)"
+    "to a woman: ṭilaʿti bir-rādyo (طلعتي بالراديو); (recognise)"
    ],
    [
     "شدعوه!",
@@ -1631,13 +1587,6 @@
     "(recognise)"
    ],
    [
-    "أتمرن",
-    "atmarran",
-    "I practise, (to) practise",
-    "أتمرن",
-    "we practise: nitmarran (نتمرن)"
-   ],
-   [
     "اللكنة",
     "il-lakna",
     "the accent",
@@ -1647,9 +1596,10 @@
   ],
   "task": "This week: with a tutor or exchange partner, do a 10-minute mock radio interview about your Arabic. They ask in a formal style; you answer in educated Gulf Arabic (bin-nisba li, min ṣōb…, b-shakl ʿāmm). Then switch: off air, retell the interview for 2 minutes the way you'd tell Sēf on a video call, mixing in as much English as he would.",
   "receptive": [
+   0,
    1,
    3,
-   5
+   4
   ]
  },
  {
@@ -1657,20 +1607,20 @@
   "stage": 5,
   "title": "Checkpoint 5.3: the radio star in the majlis",
   "goal": "Checkpoint: in Bū Rāshid's majlis, he heard your radio interview; take his teasing, explain your registers, and take your leave properly",
-  "tip": "Review: thank an elder with allāh la yhīnak; keep wāw for the pitch (yā salām in the majlis); explain your registers with ʿala l-hawa … w fi l-majlis …; bless back with āmīn w iyyāk, leave with idha ma shay lāzim, binitrakhkhaṣ?, and offer help with tāmirni ʿala shay thāni?",
+  "tip": "Review: thank an elder with allāh la yhīnak; keep sōri and yēs for the pitch (yā salām in the majlis); quote your on-air style (bin-nisba li …); welcome a group with ahlan wa sahlan bikum, bin-niyāba ʿan …; leave with binitrakhkhaṣ?, and offer help with tāmirni ʿala shay thāni?",
   "grammar": "checkpoint 5.3 (s5u032–s5u045): honorifics, borrowed interjections, register shifting",
   "dialogue": [
    [
     "A",
-    "يا هلا بالنجم! سمعنا البث في السيارة، الله يحفظك من الحسد",
-    "yā hala bin-najim! simaʿna l-bathth fi s-sayyāra, allāh yiḥfaẓak min il-ḥasad",
-    "Welcome, star! We heard the broadcast in the car; God protect you from envy."
+    "يا هلا بالنجم! سويت ضجة! سمعنا البث في السيارة، الله يحفظك من الحسد",
+    "yā hala bin-najim! sawwēt ẓajja! simaʿna l-bathth fi s-sayyāra, allāh yiḥfaẓak min il-ḥasad",
+    "Welcome, star! You've caused a stir! We heard the broadcast in the car; God protect you from envy."
    ],
    [
     "B",
-    "الله يحييك. الله لا يهينك، توترت شوي",
-    "allāh yḥayyīk. allāh la yhīnak, twattart shwayy",
-    "Thank you, uncle. That's kind of you; I was a bit nervous."
+    "الله يحييك. الله لا يهينك، بس توترت على الهوا",
+    "allāh yḥayyīk. allāh la yhīnak, bas twattart ʿala l-hawa",
+    "Thank you. That's kind of you, but I got nervous on air."
    ],
    [
     "A",
@@ -1680,9 +1630,9 @@
    ],
    [
     "B",
-    "على الهوا رسمي، وفي المجلس سوالف وبس",
-    "ʿala l-hawa rasmi, w fi l-majlis sawālif w bas",
-    "On air it's formal, and in the majlis it's just chatting."
+    "هذا أسلوب الراديو: «بالنسبة لي، عندي شغف باللهجة». وفي المجلس سوالف وبس",
+    "hādha uslūb ir-rādyo: \"bin-nisba li, ʿindi shaghaf bil-lahja\". w fi l-majlis sawālif w bas",
+    "That's the radio style: \"For me, I have a passion for the dialect.\" (formal) And in the majlis it's just chatting."
    ],
    [
     "A",
@@ -1692,21 +1642,21 @@
    ],
    [
     "B",
-    "هيه، ويا الشباب بس. قدامك أقول يا سلام!",
-    "hē, wiyya sh-shabāb bas. jiddāmak agūl yā salām!",
-    "Yes, but only with the lads. In front of you I say yā salām!"
+    "هيه، وسوري ويس بعد، بس ويا الشباب. قدامك أقول يا سلام!",
+    "hē, w sōri w yēs baʿad, bas wiyya sh-shabāb. jiddāmak agūl yā salām!",
+    "Yes, and \"sorry\" and \"yes!\" too, but only with the lads. In front of you I say yā salām!"
    ],
    [
     "A",
-    "تكلمت زين! طرش لي الرابط، أبي أشوفك في القناة. الله يرضى عليك",
-    "tkallamt zēn! ṭarrish-li r-rābiṭ, abi ashūfak fi l-qanāh. allāh yirẓa ʿalēk",
-    "You spoke well! Send me the link; I want to see you on the channel. Bless you."
+    "تكلمت زين! طرش لي الرابط، أبي أشوفك في القناة. وإذا زارك وفد، شو تقول؟",
+    "tkallamt zēn! ṭarrish-li r-rābiṭ, abi ashūfak fi l-qanāh. w idha zārak wafd, shu tgūl?",
+    "You spoke well! Send me the link; I want to see you on the channel. And if a delegation visits you, what do you say?"
    ],
    [
     "B",
-    "آمين وإياك. إذا ما شي لازم، بنترخص؟",
-    "āmīn w iyyāk. idha ma shay lāzim, binitrakhkhaṣ?",
-    "Amen, and you too. If there's nothing you need, may we take our leave?"
+    "من عيوني. أقول: أهلا وسهلا بكم، بالنيابة عن الفريق! وإذا ما شي لازم، بنترخص؟",
+    "min ʿyūni. agūl: ahlan wa sahlan bikum, bin-niyāba ʿan il-farīg! w idha ma shay lāzim, binitrakhkhaṣ?",
+    "Gladly. I say: \"Welcome, on behalf of the team!\" (formal) And if there's nothing you need, may we take our leave?"
    ],
    [
     "A",
@@ -1751,17 +1701,16 @@
     "(recognise)"
    ],
    [
-    "النجم",
-    "in-najim",
-    "the star (teasing, warm)",
-    "النجم",
-    "(recognise)"
+    "ضجة",
+    "ẓajja",
+    "a stir, a fuss, a buzz (sawwēt ẓajja: you've caused a stir)",
+    "ضجة",
+    ""
    ]
   ],
   "receptive": [
    0,
-   3,
-   4
+   3
   ]
  }
 ]
