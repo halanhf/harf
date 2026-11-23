@@ -107,9 +107,9 @@
    [
     "تعال حبيبي!",
     "taʿāl ḥabībi!",
-    "(ironic) hold on a minute, mate! come here, you! (to someone being difficult) (to a man) (friends only)",
+    "(ironic) hold on a minute, mate! come here, you! (to a man) (friends only)",
     "",
-    "(recognise); to a woman: taʿāli ḥabībti (تعالي حبيبتي); said straight, it's a friendly 'come here, mate'"
+    "(recognise); said to someone being difficult; to a woman: taʿāli ḥabībti (تعالي حبيبتي); said straight, it's a friendly 'come here, mate'"
    ]
   ],
   "receptive": [
@@ -968,9 +968,9 @@
    ],
    [
     "B",
-    "ولد حلال، مؤدب ورزين، وما يتهرب من شي. أنا أضمنه، وعلى مسؤوليتي",
-    "wild ḥalāl, mʼaddab w rizīn, w ma yitharrab min shay. ana aẓmanah, w ʿala masʼūliyyti",
-    "He's a decent guy, well-mannered and level-headed, and he doesn't dodge anything. I vouch for him, on my responsibility."
+    "ولد حلال، رزين ومستقر، وما يتهرب من شي. أنا أضمنه، وعلى مسؤوليتي",
+    "wild ḥalāl, rizīn w mistagirr, w ma yitharrab min shay. ana aẓmanah, w ʿala masʼūliyyti",
+    "He's a decent guy, level-headed and settled, and he doesn't dodge anything. I vouch for him, on my responsibility."
    ],
    [
     "A",
@@ -1007,13 +1007,6 @@
     "a woman: zamīla (زميلة); my colleague: zamīli (زميلي)"
    ],
    [
-    "ضجة",
-    "ẓajja",
-    "a racket, noise, a fuss",
-    "ضجة",
-    "(recognise)"
-   ],
-   [
     "ولد حلال",
     "wild ḥalāl",
     "a decent guy, a good man (lit. a lawful son)",
@@ -1026,11 +1019,17 @@
     "level-headed, sensible (a man)",
     "رزين",
     "a woman: rizīna (رزينة)"
+   ],
+   [
+    "مستقر",
+    "mistagirr",
+    "settled, stable (in his life and work) (a man)",
+    "مستقر",
+    "a woman: mistagirra (مستقرة)"
    ]
   ],
   "receptive": [
-   0,
-   2
+   0
   ],
   "task": "This week: in Talk, ask your partner to play your landlord, who doesn't want a stranger in his flat. Persuade him for 10 turns, respectfully (ṭāl ʿumrak, ʿala masʼūliyyti, min yōm ma…). Then switch register: record a 2-minute voice note telling Sēf how it went, as friends talk, with a joke or two. Keep to what each person says: no rules, prices or official steps."
  },
