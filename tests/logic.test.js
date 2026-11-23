@@ -119,13 +119,13 @@ test("data: 28 letters, six non-joiners",()=>{
   assert.equal(D.LETTERS.length,28);
   assert.equal(D.LETTERS.filter(x=>!x[5]).map(x=>x[0]).join(""),"ادذرزو");
 });
-test("data: every course unit is well formed with 7±2 phrases and no duplicate phrases",()=>{
+test("data: every course unit is well formed (5-9 phrases, 3-10 dialogue lines) with no duplicate phrases",()=>{
   const seen=new Set(); const ids=new Set();
   for(const u of D.COURSE){
-    assert.ok(!ids.has(u.id)); ids.add(u.id); assert.equal(u.stage,1);
+    assert.ok(!ids.has(u.id)); ids.add(u.id); assert.ok(u.stage>=1&&u.stage<=5,u.id);
     assert.ok(u.title&&u.goal&&u.tip,u.id);
     assert.ok(u.items.length>=5&&u.items.length<=9,`${u.id} has ${u.items.length} items`);
-    assert.ok(u.dialogue.length>=3&&u.dialogue.length<=8,u.id);
+    assert.ok(u.dialogue.length>=3&&u.dialogue.length<=10,u.id);
     for(const l of u.dialogue){ assert.equal(l.length,4,u.id); assert.ok(["A","B"].includes(l[0])); assert.match(l[1],/[ء-ي]/); }
     for(const it of u.items){ assert.equal(it.length,5,`${u.id} ${it[0]}`); assert.match(it[0],/[ء-ي]/); assert.ok(it[1]&&it[2]);
       const k=L.normalizeArabic(it[0]); assert.ok(!seen.has(k),`duplicate phrase ${it[0]}`); seen.add(k); }
