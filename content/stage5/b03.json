@@ -632,9 +632,9 @@
    ],
    [
     "B",
-    "تامرني على شي ثاني؟ وإذا ما شي لازم، بنترخص",
-    "tāmirni ʿala shay thāni? w idha ma shay lāzim, binitrakhkhaṣ",
-    "Is there anything else I can do for you? And if there's nothing you need, we'll take our leave."
+    "تامرني على شي ثاني؟ ولّا بنترخص؟",
+    "tāmirni ʿala shay thāni? walla binitrakhkhaṣ?",
+    "Is there anything else I can do for you? Or may we take our leave?"
    ]
   ],
   "items": [
@@ -1504,9 +1504,9 @@
    ],
    [
     "B",
-    "هلا فيك! كانت حلوة، بس توترت على الهوا",
-    "hala fīk! kānat ḥilwa, bas twattart ʿala l-hawa",
-    "Hi! It went well, but I got nervous on air."
+    "هلا فيك! كان حوار حلو، بس توترت",
+    "hala fīk! kān ḥiwār ḥilu, bas twattart",
+    "Hi! It was a good conversation, but I got nervous."
    ],
    [
     "A",
@@ -1618,9 +1618,9 @@
    ],
    [
     "B",
-    "الله يحييك. الله لا يهينك، بس توترت على الهوا",
-    "allāh yḥayyīk. allāh la yhīnak, bas twattart ʿala l-hawa",
-    "Thank you. That's kind of you, but I got nervous on air."
+    "الله لا يهينك، بس توترت على الهوا",
+    "allāh la yhīnak, bas twattart ʿala l-hawa",
+    "That's kind of you, but I got nervous on air."
    ],
    [
     "A",
@@ -1642,9 +1642,9 @@
    ],
    [
     "B",
-    "هيه، وسوري ويس بعد، بس ويا الشباب. قدامك أقول يا سلام!",
-    "hē, w sōri w yēs baʿad, bas wiyya sh-shabāb. jiddāmak agūl yā salām!",
-    "Yes, and \"sorry\" and \"yes!\" too, but only with the lads. In front of you I say yā salām!"
+    "سوري ويس ويا الشباب بس. قدامك يا سلام!",
+    "sōri w yēs wiyya sh-shabāb bas. jiddāmak yā salām!",
+    "\"Sorry\" and \"yes!\" only with the lads. In front of you, yā salām!"
    ],
    [
     "A",
