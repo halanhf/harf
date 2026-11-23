@@ -363,9 +363,9 @@
    ],
    [
     "B",
-    "ممكن، بس الشغل مب كل الحياة",
-    "mumkin, bas ish-shughul mub kill il-ḥayā",
-    "Maybe, but work isn't the whole of life."
+    "ممكن، بس الحياة مب مرتبطة بالشغل بس",
+    "mumkin, bas il-ḥayā mub mirtabṭa bish-shughul bas",
+    "Maybe, but life isn't just tied up with work."
    ],
    [
     "A",
@@ -493,9 +493,9 @@
    ],
    [
     "A",
-    "زين، تبي تنسحب؟",
-    "zēn, tabi tinsiḥib?",
-    "OK, do you want to back out?"
+    "زين، هذا مجرد كلام. تبي تنسحب؟",
+    "zēn, hādha mujarrad kalām. tabi tinsiḥib?",
+    "OK, that's just talk. Do you want to back out?"
    ],
    [
     "B",
@@ -575,9 +575,9 @@
   "dialogue": [
    [
     "A",
-    "يلا، ابدا العرض. تخيل إنك على المسرح والجمهور يطالعك",
-    "yalla, ibda l-ʿarẓ. tkhayyal innak ʿala l-masraḥ w il-jamhūr yṭālʿak",
-    "Go on, start the talk. Imagine you're on the stage and the audience is watching you."
+    "يلا يا منسق، ابدا العرض. تخيل إنك على المسرح والجمهور يطالعك",
+    "yalla yā munassiq, ibda l-ʿarẓ. tkhayyal innak ʿala l-masraḥ w il-jamhūr yṭālʿak",
+    "Go on, coordinator, start the talk. Imagine you're on the stage and the audience is watching you."
    ],
    [
     "B",
@@ -695,9 +695,9 @@
    ],
    [
     "B",
-    "أبي أمثال شعبية يا عمي، للنقطة الأخيرة",
-    "abi amthāl shaʿbiyya yā ʿammi, lin-nugṭa l-akhīra",
-    "I'd like some folk proverbs, uncle, for the last point."
+    "على طاري العرض، أبي أمثال شعبية يا عمي",
+    "ʿala ṭāri l-ʿarẓ, abi amthāl shaʿbiyya yā ʿammi",
+    "Speaking of the talk, I'd like some folk proverbs, uncle."
    ],
    [
     "A",
@@ -707,9 +707,9 @@
    ],
    [
     "B",
-    "صدقت والله! وشي للي يقولون الإنقليزي يكفي؟",
-    "ṣidagt wallāh! w shay lilli ygūlūn il-ingilīzi ykaffi?",
-    "Too true! And something for people who say English is enough?"
+    "صدقت والله! وشي للي يتجاهلون العربي؟",
+    "ṣidagt wallāh! w shay lilli yitjāhalūn il-ʿarabi?",
+    "Too true! And something for people who leave Arabic out?"
    ],
    [
     "A",
@@ -725,9 +725,9 @@
    ],
    [
     "A",
-    "بالضبط. وخلفان؟ راشد يقول إنه يشوف غلط الكل",
-    "biẓ-ẓabṭ. w Khalfān? Rāshid ygūl innah yshūf ghalaṭ il-kill",
-    "Exactly. And Khalfān? Rāshid says he sees everyone's mistakes."
+    "بالضبط. وخلفان؟ راشد يقول إنه يشوف غلط الكل ويتذمر",
+    "biẓ-ẓabṭ. w Khalfān? Rāshid ygūl innah yshūf ghalaṭ il-kill w yitdhammar",
+    "Exactly. And Khalfān? Rāshid says he sees everyone's mistakes, and he's always grumbling."
    ],
    [
     "B",
@@ -926,9 +926,9 @@
    ],
    [
     "B",
-    "الله يحييك يا عمي. عرض صغير، وقبله كان كابوس!",
-    "allāh yḥayyīk yā ʿammi. ʿarẓ ṣghayyir, w gabilah kān kābūs!",
-    "Thank you, uncle. Just a little talk, and before it, it was a nightmare!"
+    "الله يحييك. عرض صغير، وكان كابوس!",
+    "allāh yḥayyīk. ʿarẓ ṣghayyir, w kān kābūs!",
+    "Thank you. Just a little talk, and it was a nightmare!"
    ],
    [
     "A",
