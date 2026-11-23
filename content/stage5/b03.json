@@ -4,7 +4,7 @@
   "stage": 5,
   "title": "Saʿādat, maʿāli, sumuww: titles at work",
   "goal": "At the office, Maryam briefs you before a director general's visit: which title goes in writing, what to call him, and what not to say",
-  "tip": "Titles go before a post or a name, in writing and formal speech: saʿādat il-mudīr il-ʿāmm, maʿāli l-wazīr. Face to face, the spoken honorific is enough: ṭāl ʿumrak. To check what to say, ask shu nigūl-lah?: shu nigūl-lah fi l-īmēl? 'what do we call him in the email?'",
+  "tip": "Titles go before a post or a name, in writing and formal speech: saʿādat il-mudīr il-ʿāmm, maʿāli l-wazīr. Face to face, the spoken honorific is enough: ṭāl ʿumrak. To check what to say, ask shu ngūl-lah?: shu ngūl-lah fi l-īmēl? 'what do we call him in the email?'",
   "grammar": "honorifics: written titles (saʿādat, maʿāli, sumuww) vs the spoken ṭāl ʿumrak",
   "dialogue": [
    [
@@ -16,13 +16,13 @@
    [
     "B",
     "زين، ويا ترا شو نقول له؟ يا شيخ؟",
-    "zēn, w yā tara shu nigūl-lah? yā shēkh?",
+    "zēn, w yā tara shu ngūl-lah? yā shēkh?",
     "OK, and I wonder, what do we call him? Yā shēkh?"
    ],
    [
     "A",
     "لا، هو مب شيخ. في الإيميل نكتب «سعادة المدير العام»، وقدامه نقول طال عمرك",
-    "la, huwa mub shēkh. fi l-īmēl niktib \"saʿādat il-mudīr il-ʿāmm\", w jiddāmah nigūl ṭāl ʿumrak",
+    "la, huwa mub shēkh. fi l-īmēl niktib \"saʿādat il-mudīr il-ʿāmm\", w jiddāmah ngūl ṭāl ʿumrak",
     "No, he isn't a sheikh. In the email we write \"His Excellency the Director General\", and to his face we say ṭāl ʿumrak."
    ],
    [
@@ -40,7 +40,7 @@
    [
     "B",
     "فهمت. يعني الألقاب في الكتابة والكلام الرسمي؟",
-    "fihimt. yaʿni l-alqāb fi l-kitāba w il-kalām ir-rasmi?",
+    "fhimt. yaʿni l-alqāb fi l-kitāba w il-kalām ir-rasmi?",
     "I see. So the titles are for writing and formal speech?"
    ],
    [
@@ -414,7 +414,7 @@
    [
     "B",
     "فهمت: الإنقليزي للملعب، والعربي للمحاضرة!",
-    "fihimt: il-ingilīzi lil-malʿab, w il-ʿarabi lil-muḥāẓra!",
+    "fhimt: il-ingilīzi lil-malʿab, w il-ʿarabi lil-muḥāẓra!",
     "Got it: English for the pitch, Arabic for the lecture hall!"
    ]
   ],
@@ -743,13 +743,13 @@
    [
     "A",
     "أحسن وايد. وشو السبب الوحيد؟ لا تقول عشان، قول بسبب",
-    "aḥsan wāyid. w shu s-sabab il-waḥīd? la tgūl ʿashān, gūl bi-sabab",
+    "aḥsan wāyid. w shu s-sabab il-waḥīd? la tgūl ʿashān, gūl b-sabab",
     "Much better. And what's the one reason? Don't say ʿashān, say bi-sabab."
    ],
    [
     "B",
     "بسبب تأخر البيانات. والأولوية الحين للتنسيق مع القسم الثاني",
-    "bi-sabab taʼakhkhur il-bayānāt. w il-awlawiyya l-ḥīn lit-tansīq maʿa l-gism ith-thāni",
+    "b-sabab taʼakhkhur il-bayānāt. w il-awlawiyya l-ḥīn lit-tansīq maʿa l-gism ith-thāni",
     "Due to the delay in the data. And the priority now is coordinating with the other department. (formal)"
    ],
    [
@@ -773,7 +773,7 @@
    [
     "B",
     "الله لا يهينج! يعني في المكتب بسبب، وويا الشباب عشان!",
-    "allāh la yhīnich! yaʿni fi l-maktab bi-sabab, w wiyya sh-shabāb ʿashān!",
+    "allāh la yhīnich! yaʿni fi l-maktab b-sabab, w wiyya sh-shabāb ʿashān!",
     "Thanks so much! So at the office bi-sabab, and with the lads ʿashān!"
    ]
   ],
@@ -830,7 +830,7 @@
   "stage": 5,
   "title": "You sound like the news!",
   "goal": "In Bū Rāshid's majlis, with Rāshid there, you answer him in office Arabic; he teases you, and you switch back to plain majlis talk",
-  "tip": "Office words sound stiff in the majlis: il-mashrūʿ māshi bi-khuṭwāt thābta earns you chinnak fi nashrat il-akhbār and la titfalsaf ʿalēna! Switch down to plain words, no kalimāt fakhma: ish-shughul zēn, bas fīh ẓaghiṭ wāyid. In the majlis, talk w inta rāyig.",
+  "tip": "Office words sound stiff in the majlis: il-mashrūʿ māshi b-khuṭwāt thābta earns you chinnak fi nashrat il-akhbār and la titfalsaf ʿalēna! Switch down to plain words, no kalimāt fakhma: ish-shughul zēn, bas fīh ẓaghiṭ wāyid. In the majlis, talk w inta rāyig.",
   "grammar": "register shifting: office → majlis (recycle: chinnak + noun)",
   "dialogue": [
    [
@@ -948,7 +948,7 @@
   "stage": 5,
   "title": "A toast for Bū Khālid",
   "goal": "At the office farewell lunch for Bū Khālid, who is retiring after twenty years, give the team's short formal toast and hand him the team's gift",
-  "tip": "A toast here is a short formal speech, not a drink. Open with yisharrifni and say who you speak for (b-ism il-farīg), praise him (kint lana qudwa; tirakt baṣma), close with a wish (nitmanna-lak it-tawfīq), and hand over the gift as ʿarbūn wafāʼ 'a token of loyalty'.",
+  "tip": "A toast here is a short formal speech, not a drink. Open with ysharrifni and say who you speak for (b-ism il-farīg), praise him (kint lana qudwa; tirakt baṣma), close with a wish (nitmanna-lak it-tawfīq), and hand over the gift as ʿarbūn wafāʼ 'a token of loyalty'.",
   "grammar": "formal speech (toast): qudwa, baṣma, ajyāl, ʿarbūn wafāʼ",
   "dialogue": [
    [
@@ -960,7 +960,7 @@
    [
     "B",
     "يشرفني، باسم الفريق، أقول كلمة بهالمناسبة",
-    "yisharrifni, b-ism il-farīg, agūl kilma b-hal-munāsaba",
+    "ysharrifni, b-ism il-farīg, agūl kilma b-hal-munāsaba",
     "It's an honour, on behalf of the team, to say a few words on this occasion. (formal)"
    ],
    [
@@ -990,7 +990,7 @@
    [
     "A",
     "كلامك يرفع الراس، وقلته بشكل ممتاز",
-    "kalāmak yirfaʿ ir-rās, w giltah bi-shakl mumtāz",
+    "kalāmak yirfaʿ ir-rās, w giltah b-shakl mumtāz",
     "Your words make me proud, and you put it beautifully."
    ],
    [
@@ -1002,7 +1002,7 @@
    [
     "A",
     "آمين. والله ما توقعت حفلة توديع بهالشكل. ما قصرتوا يا عيالي",
-    "āmīn. wallāh ma twaggaʿt ḥaflat tawdīʿ b-hash-shakil. mā gaṣṣartu yā ʿyāli",
+    "āmīn. wallāh ma twaggaʿt ḥaflat tawdīʿ b-hash-shakl. mā gaṣṣartu yā ʿyāli",
     "Amen. Honestly, I didn't expect a farewell party like this. You've all been so kind, my dears."
    ],
    [
@@ -1056,7 +1056,7 @@
     ""
    ]
   ],
-  "task": "This week: record a 2-minute toast (formal) for a friend's graduation or a colleague who's leaving. Open with yisharrifni and b-ism…, praise one quality (kint qudwa, tirakt baṣma), and close with nitmanna-lak it-tawfīq. Then record 30 seconds saying the same thing to the friend over karak, the way friends talk: no fuṣḥā words, and as much ḥilu and wāyid as you like."
+  "task": "This week: record a 2-minute toast (formal) for a friend's graduation or a colleague who's leaving. Open with ysharrifni and b-ism…, praise one quality (kint qudwa, tirakt baṣma), and close with nitmanna-lak it-tawfīq. Then record 30 seconds saying the same thing to the friend over karak, the way friends talk: no fuṣḥā words, and as much ḥilu and wāyid as you like."
  },
  {
   "id": "s5u041",
@@ -1105,7 +1105,7 @@
    [
     "A",
     "ممتاز. وبعدها؟",
-    "mumtāz. w baʿdha?",
+    "mumtāz. w baʿd-ha?",
     "Excellent. And after that?"
    ],
    [
@@ -1298,8 +1298,8 @@
   "stage": 5,
   "title": "On air: why Emirati?",
   "goal": "On the university radio, the presenter interviews you about learning Emirati Arabic; answer his formal questions in educated Gulf Arabic",
-  "tip": "On air, structure your answers with educated Gulf linkers: bin-nisba li 'for me', min ṣōb … w min ṣōb thāni 'on the one hand … on the other', bi-shakl ʿāmm 'on the whole'. The presenter's lines are formal (ḥaddithna ʿan tajrubtak); your grammar can stay Gulf.",
-  "grammar": "educated spoken Arabic in an interview: bin-nisba li, min ṣōb … w min ṣōb thāni, bi-shakl ʿāmm",
+  "tip": "On air, structure your answers with educated Gulf linkers: bin-nisba li 'for me', min ṣōb … w min ṣōb thāni 'on the one hand … on the other', b-shakl ʿāmm 'on the whole'. The presenter's lines are formal (ḥaddithna ʿan tajrubtak); your grammar can stay Gulf.",
+  "grammar": "educated spoken Arabic in an interview: bin-nisba li, min ṣōb … w min ṣōb thāni, b-shakl ʿāmm",
   "dialogue": [
    [
     "A",
@@ -1310,7 +1310,7 @@
    [
     "B",
     "أهلا وسهلا، يشرفني أكون معكم",
-    "ahlan wa sahlan, yisharrifni akūn maʿākum",
+    "ahlan wa sahlan, ysharrifni akūn maʿākum",
     "Hello, it's an honour to be with you. (formal)"
    ],
    [
@@ -1346,13 +1346,13 @@
    [
     "B",
     "بشكل عام، كلام الشباب خليط، بس العربي باقي قوي",
-    "bi-shakl ʿāmm, kalām ish-shabāb khalīṭ, bas il-ʿarabi bāgi gawi",
+    "b-shakl ʿāmm, kalām ish-shabāb khalīṭ, bas il-ʿarabi bāgi gawi",
     "On the whole, young people's talk is a mix, but Arabic is still strong. (formal)"
    ],
    [
     "A",
     "نشكرك على هالحوار. مستمعينا، بعد الفاصل نرجع لكم",
-    "nashkurak ʿala hal-ḥiwār. mustamiʿīna, baʿd il-fāṣil nirjaʿ lakum",
+    "nishkurak ʿala hal-ḥiwār. mustamiʿīna, baʿd il-fāṣil nirjaʿ lakum",
     "Thank you for this conversation. Listeners, we'll be back after the break. (formal)"
    ],
    [
@@ -1442,7 +1442,7 @@
    [
     "B",
     "بشكل عام زين، بس حسيت كلامي خليط فصحى ولهجة",
-    "bi-shakl ʿāmm zēn, bas ḥassēt kalāmi khalīṭ fuṣḥa w lahja",
+    "b-shakl ʿāmm zēn, bas ḥassēt kalāmi khalīṭ fuṣḥa w lahja",
     "On the whole fine, but I felt my talk was a mix of fuṣḥā and dialect."
    ],
    [
@@ -1645,7 +1645,7 @@
     "(recognise)"
    ]
   ],
-  "task": "This week: with a tutor or exchange partner, do a 10-minute mock radio interview about your Arabic. They ask in a formal style; you answer in educated Gulf Arabic (bin-nisba li, min ṣōb…, bi-shakl ʿāmm). Then switch: off air, retell the interview for 2 minutes the way you'd tell Sēf on a video call, mixing in as much English as he would.",
+  "task": "This week: with a tutor or exchange partner, do a 10-minute mock radio interview about your Arabic. They ask in a formal style; you answer in educated Gulf Arabic (bin-nisba li, min ṣōb…, b-shakl ʿāmm). Then switch: off air, retell the interview for 2 minutes the way you'd tell Sēf on a video call, mixing in as much English as he would.",
   "receptive": [
    1,
    3,
