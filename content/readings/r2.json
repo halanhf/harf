@@ -3,11 +3,11 @@
   "id": "r2-01",
   "level": 2,
   "stage": 2,
-  "title": "Residence renewal form",
+  "title": "Card renewal form",
   "lines": [
    [
-    "استمارة طلب تجديد الإقامة",
-    "Residence renewal application form"
+    "استمارة طلب تجديد البطاقة",
+    "Card renewal application form"
    ],
    [
     "الاسم: …… اسم العائلة: ……",
@@ -54,20 +54,24 @@
     "Required documents: a copy of the passport and a passport photo."
    ],
    [
-    "الرسوم: ٣٠٠ درهم. التوقيع: …… التاريخ: ……",
-    "Fees: 300 dirhams. Signature: …… Date: ……"
+    "الرسوم: ٣٠ درهمًا. التوقيع: …… التاريخ: ……",
+    "Fees: 30 dirhams. Signature: …… Date: ……"
+   ],
+   [
+    "يرجى الاِحْتِفَاظ بالإيصال.",
+    "Please keep the receipt."
    ]
   ],
   "questions": [
    [
     "What is this form for?",
     [
-     "Renewing a residence permit",
+     "Renewing a card",
      "Applying for a visa",
      "Opening a bank account",
      "Registering a company"
     ],
-    "Renewing a residence permit"
+    "Renewing a card"
    ],
    [
     "How should the form be filled in?",
@@ -110,19 +114,19 @@
     "Email (optional)"
    ],
    [
-    "ملاحظات (اختياري)",
-    "Notes (optional)"
+    "ملاحظات أو سَبَب الطلب (اختياري)",
+    "Notes or reason for the request (optional)"
    ],
    [
     "أوافق على الشروط والأحكام.",
     "I agree to the terms and conditions."
    ],
    [
-    "اضغط حفظ لحفظ الطلب، أو إلغاء للخروج.",
+    "اضغط «حفظ» لحفظ الطلب، أو «إلغاء» للخروج.",
     "Press Save to save the application, or Cancel to exit."
    ],
    [
-    "اضغط التالي ثم تأكيد ثم إرسال.",
+    "اضغط «التالي» ثم «تأكيد» ثم «إرسال».",
     "Press Next, then Confirm, then Send."
    ],
    [
@@ -134,11 +138,11 @@
     "The ID number is required for citizens and residents."
    ],
    [
-    "الرسوم: ٥٠ درهمًا شامل الضريبة.",
+    "الرسوم: ٥٠ درهمًا شاملة الضريبة.",
     "Fee: 50 dirhams including tax."
    ],
    [
-    "لا تُرْسِلْ الطلب قبل التأكيد.",
+    "لا تُرْسِلِ الطلب قبل التأكيد.",
     "Do not send the application before confirming."
    ],
    [
@@ -148,7 +152,7 @@
   ],
   "questions": [
    [
-    "Which fields must be filled in?",
+    "Which of the first four fields are required?",
     [
      "Full name and phone number",
      "Email and notes",
@@ -158,14 +162,14 @@
     "Full name and phone number"
    ],
    [
-    "What does the Save button do?",
+    "What must you not do before confirming?",
     [
-     "Saves the application",
-     "Sends the application",
-     "Deletes the application",
-     "Prints the application"
+     "Send the application",
+     "Save the application",
+     "Cancel the form",
+     "Press Next"
     ],
-    "Saves the application"
+    "Send the application"
    ],
    [
     "What will arrive on your phone?",
@@ -190,8 +194,8 @@
     "Al Waha restaurant for grills and juices"
    ],
    [
-    "وجبة الغداء: دجاج مَشْوِيّ مع أرز وسلطة طَازِجَة",
-    "Lunch meal: grilled chicken with rice and fresh salad"
+    "وجبة الغداء: دجاج مَشْوِيّ مع أرز وسلطة طَازِجَة وَحَسَاء",
+    "Lunch meal: grilled chicken with rice, fresh salad and soup"
    ],
    [
     "وجبة الْعَشَاء: لحم مَشْوِيّ مع أرز ومقبلات",
@@ -222,7 +226,7 @@
     "The restaurant is open from 12 noon until 11 p.m."
    ],
    [
-    "لِلْحَجْز: اِتَّصِلْ بالمطعم قبل الوصول",
+    "لِلْحَجْز: اتَّصِلْ بالمطعم قبل الوصول",
     "To book: call the restaurant before arriving"
    ]
   ],
@@ -248,7 +252,7 @@
     "Hot drinks or water"
    ],
    [
-    "How do you book a table?",
+    "How do you make a booking?",
     [
      "Call the restaurant before arriving",
      "Fill in a form",
@@ -330,7 +334,7 @@
     [
      "When paying by card",
      "When buying two items",
-     "On Fridays",
+     "On the last day of the sale",
      "When buying shoes"
     ],
     "When paying by card"
@@ -378,7 +382,7 @@
     "The children's clinic is on the second floor."
    ],
    [
-    "إذا كان لديك ألم شديد أو حرارة، تَوَجَّهْ إلى الطوارئ.",
+    "إذا كان لديك ألم شديد أو حرارة، فَتَوَجَّهْ إلى الطوارئ.",
     "If you have severe pain or a fever, go to the emergency department."
    ],
    [
@@ -427,7 +431,7 @@
   "id": "r2-06",
   "level": 2,
   "stage": 2,
-  "title": "Medicine label",
+  "title": "Painkiller: label and pharmacy notice",
   "lines": [
    [
     "اسم الدواء: مُسَكِّن للألم",
@@ -442,16 +446,16 @@
     "Do not take the tablets before food."
    ],
    [
-    "إذا اِسْتَمَرَّ الألم، رَاجِعْ الطبيب.",
+    "إذا اسْتَمَرَّ الألم، فَرَاجِعِ الطبيب.",
     "If the pain continues, see the doctor."
    ],
    [
-    "احفظ الدواء بعيدًا عن الحرارة.",
+    "اِحْفَظِ الدواء بعيدًا عن الحرارة.",
     "Keep the medicine away from heat."
    ],
    [
-    "الصيدلية مفتوحة من ٩ صباحًا إلى ١١ مساءً.",
-    "The pharmacy is open from 9 a.m. to 11 p.m."
+    "الصيدلية مفتوحة من ٩ صباحًا إلى ١٠ مساءً.",
+    "The pharmacy is open from 9 a.m. to 10 p.m."
    ],
    [
     "السعر: ١٢ درهمًا. الدفع نقدًا أو بالبطاقة.",
@@ -462,12 +466,8 @@
     "Please bring the prescription and your ID."
    ],
    [
-    "الاستبدال والاسترجاع مع الفاتورة فقط.",
-    "Exchange and refund with the receipt only."
-   ],
-   [
     "التوصيل مجاني من الفرع إلى المنطقة.",
-    "Delivery from the branch to your area is free."
+    "Delivery from the branch to the area is free."
    ],
    [
     "للاستعلامات: الاستقبال في الفرع.",
@@ -504,14 +504,14 @@
     "See the doctor"
    ],
    [
-    "Where should the medicine be kept?",
+    "Where is the pharmacy?",
     [
-     "Away from heat",
-     "In the fridge",
-     "Near the window",
-     "In the car"
+     "On the first floor, in front of the clinic",
+     "On the second floor",
+     "Next to the entrance",
+     "Behind reception"
     ],
-    "Away from heat"
+    "On the first floor, in front of the clinic"
    ]
   ]
  },
@@ -522,8 +522,8 @@
   "title": "Bank branch notice",
   "lines": [
    [
-    "فرع المدينة: الصراف الآلي مغلق للصيانة يوم السبت.",
-    "City branch: the ATM is closed for maintenance on Saturday."
+    "فرع المدينة: الصراف الآلي مغلق للصيانة يوم الأحد.",
+    "City branch: the ATM is closed for maintenance on Sunday."
    ],
    [
     "يمكنكم السحب والإيداع في الفرع من ٨ صباحًا إلى ٢ ظهرًا.",
@@ -542,7 +542,7 @@
     "Do not give your PIN to anyone."
    ],
    [
-    "إذا فَقَدْتَ البطاقة، أَبْلِغْ الفرع.",
+    "إذا فَقَدْتَ البطاقة، فَأَبْلِغِ الفرع.",
     "If you lose your card, tell the branch."
    ],
    [
@@ -584,14 +584,14 @@
     "Transfers between customers' accounts"
    ],
    [
-    "What must you not do?",
+    "What should you do if you lose your card?",
     [
-     "Give your PIN to anyone",
-     "Withdraw on Saturday",
-     "Use a card",
-     "Check your balance"
+     "Tell the branch",
+     "Wait three days",
+     "Use the ATM",
+     "Close the account"
     ],
-    "Give your PIN to anyone"
+    "Tell the branch"
    ]
   ]
  },
@@ -606,8 +606,8 @@
     "Invoice no. 457 — table no. 7"
    ],
    [
-    "الفرع: المدينة — التاريخ: الأحد",
-    "Branch: City — Date: Sunday"
+    "الفرع: المدينة — اليوم: الأحد",
+    "Branch: City — Day: Sunday"
    ],
    [
     "الأسعار بالدرهم.",
@@ -618,28 +618,28 @@
     "Time: 8 p.m."
    ],
    [
-    "وجبة دجاج: ٢٥ درهمًا",
-    "Chicken meal: 25 dirhams"
+    "وجبة دجاج: ٢٠ درهمًا",
+    "Chicken meal: 20 dirhams"
    ],
    [
     "عَصِير بُرْتُقَال: ١٢ درهمًا",
     "Orange juice: 12 dirhams"
    ],
    [
-    "حلوى: ١٣ درهمًا",
-    "Dessert: 13 dirhams"
+    "حَلْوَى: ٨ دراهم",
+    "Dessert: 8 dirhams"
    ],
    [
-    "المبلغ قبل الضريبة: ٥٠ درهمًا",
-    "Amount before tax: 50 dirhams"
+    "المبلغ قبل الضريبة: ٤٠ درهمًا",
+    "Amount before tax: 40 dirhams"
    ],
    [
-    "الضريبة: ١٠٪",
-    "Tax: 10%"
+    "الضريبة: ٥٪",
+    "Tax: 5%"
    ],
    [
-    "الإجمالي شامل الضريبة: ٥٥ درهمًا",
-    "Total including tax: 55 dirhams"
+    "الإجمالي شامل الضريبة: ٤٢ درهمًا",
+    "Total including tax: 42 dirhams"
    ],
    [
     "طريقة الدفع: نقدًا",
@@ -650,20 +650,16 @@
     "Paid: 100 dirhams"
    ],
    [
-    "الْبَاقِي: ٤٥ درهمًا",
-    "Change: 45 dirhams"
+    "الْبَاقِي: ٥٨ درهمًا",
+    "Change: 58 dirhams"
    ],
    [
-    "الاستبدال خلال ٧ أيام مع الفاتورة.",
-    "Exchange within 7 days with the receipt."
+    "يرجى الاِحْتِفَاظ بالفاتورة.",
+    "Please keep the receipt."
    ],
    [
-    "الاسترجاع بالفاتورة فقط.",
-    "Refunds with the receipt only."
-   ],
-   [
-    "الطلب رقم ١٢ — ٣ وجبات",
-    "Order no. 12 — 3 meals"
+    "الطلب رقم ١٢ — عَدَد الضُّيُوف: ١",
+    "Order no. 12 — guests: 1"
    ],
    [
     "شكرًا لزيارتكم",
@@ -674,25 +670,25 @@
    [
     "What was the total including tax?",
     [
-     "55 dirhams",
-     "50 dirhams",
-     "45 dirhams",
+     "42 dirhams",
+     "40 dirhams",
+     "58 dirhams",
      "100 dirhams"
     ],
-    "55 dirhams"
+    "42 dirhams"
    ],
    [
     "How much change did the customer get?",
     [
-     "45 dirhams",
-     "5 dirhams",
-     "50 dirhams",
-     "55 dirhams"
+     "58 dirhams",
+     "2 dirhams",
+     "40 dirhams",
+     "42 dirhams"
     ],
-    "45 dirhams"
+    "58 dirhams"
    ],
    [
-    "Which item cost 13 dirhams?",
+    "Which item cost 8 dirhams?",
     [
      "Dessert",
      "Orange juice",
@@ -802,8 +798,8 @@
     "New initiative to support citizens and residents"
    ],
    [
-    "وزارة الاقتصاد: خطة لمشروع في المنطقة الشَّمَالِيَّة",
-    "Ministry of Economy: a plan for a project in the northern region"
+    "الوزارة: خطة لمشروع في المنطقة الشَّمَالِيَّة",
+    "The ministry: a plan for a project in the northern region"
    ],
    [
     "معرض محلي في المدينة مفتوح للعائلات",
@@ -818,7 +814,7 @@
     "Official visit to Kuwait and Qatar"
    ],
    [
-    "اجتماع وزراء الخليج في العاصمة",
+    "اجتماع وُزَرَاء الخليج في العاصمة",
     "Gulf ministers meet in the capital"
    ],
    [
@@ -843,7 +839,7 @@
     "What will be held in the capital next week?",
     [
      "An international conference",
-     "A festival",
+     "A concert",
      "A football match",
      "An exhibition"
     ],
@@ -878,8 +874,8 @@
   "title": "Business headlines",
   "lines": [
    [
-    "زيادة أسعار النفط ٣٪ هذا الأسبوع",
-    "Oil prices up 3% this week"
+    "شركة محلية: زيادة الأسعار ٣٪ هذا الأسبوع",
+    "Local company: prices up 3% this week"
    ],
    [
     "مشروع جديد بِقِيمَة ٣ مليارات درهم في الخليج",
@@ -890,16 +886,16 @@
     "One million visitors to the city's international exhibition"
    ],
    [
-    "الإمارات والكويت: خطة مُشْتَرَكَة للتجارة",
-    "Emirates and Kuwait: a joint plan for trade"
+    "شركتان محليتان: خطة مُشْتَرَكَة للتجارة",
+    "Two local companies: a joint plan for trade"
    ],
    [
     "جائزة عالمية لمبادرة وطنية للمواطنين",
     "Global prize for a national initiative for citizens"
    ],
    [
-    "تقرير رسمي: نسبة الزيادة ٤٪ في الدول العربية",
-    "Official report: an increase of 4% in the Arab countries"
+    "تقرير رسمي: نسبة الزيادة ٤٪ في المدينة",
+    "Official report: an increase of 4% in the city"
    ],
    [
     "السِّيَاحَة في الخليج: مشروع جديد للعائلات",
@@ -924,7 +920,7 @@
   ],
   "questions": [
    [
-    "What happened to oil prices this week?",
+    "What happened to the local company's prices this week?",
     [
      "They rose 3%",
      "They fell 3%",
@@ -962,8 +958,8 @@
   "title": "News brief: road accident",
   "lines": [
    [
-    "كان الحادث بين سيارتين على الطَّرِيق الرَّئِيسِيّ قرب مدخل المدينة صباح الأحد.",
-    "The accident was between two cars on the main road near the city entrance on Sunday morning."
+    "وَقَعَ الحادث بين سيارتين على الطَّرِيق الرَّئِيسِيّ قرب مدخل المدينة صباح الأحد.",
+    "The accident happened between two cars on the main road near the city entrance on Sunday morning."
    ],
    [
     "وصلت الشرطة والإسعاف إلى المكان بعد خمس دقائق.",
@@ -974,16 +970,16 @@
     "A police official said there were no injuries."
    ],
    [
-    "أغلقت الشرطة المنطقة مُدَّة ساعة ثم فتحتها.",
-    "The police closed the area for an hour, then reopened it."
+    "وطلبت الشرطة من السَّائِقِين الانتظار قرب مدخل المدينة.",
+    "The police asked drivers to wait near the city entrance."
    ],
    [
-    "وطلبت الشرطة من السَّائِقِين الانتظار هنا.",
-    "The police asked drivers to wait here."
+    "وأغلقت المنطقة مُدَّة ساعة ثم فتحتها.",
+    "And they closed the area for an hour, then reopened it."
    ],
    [
-    "ولا يوجد أي حادث آخر في المنطقة.",
-    "And there is no other accident in the area."
+    "وقال المسؤول إن السَّبَب هو السرعة.",
+    "The official said the cause was speed."
    ],
    [
     "الطَّرِيق مفتوح الآن للجميع.",
@@ -1062,8 +1058,8 @@
     "The men's and women's prayer rooms are at the gate."
    ],
    [
-    "للاستعلامات: الاستقبال عند المدخل.",
-    "For enquiries: reception at the entrance."
+    "للاستعلامات: استقبال الضُّيُوف عند المدخل.",
+    "For enquiries: guest reception at the entrance."
    ]
   ],
   "questions": [
@@ -1110,16 +1106,16 @@
     "Announcement from the ministry to citizens and residents"
    ],
    [
-    "قرار جديد: تجديد الإقامة عَبْر الْمَوْقِع الرسمي.",
-    "New decision: residence renewal through the official website."
+    "قرار جديد: تجديد البطاقة عَبْر الْمَوْقِع الرسمي.",
+    "New decision: card renewal through the official website."
    ],
    [
     "لا حَاجَة إلى زيارة الفرع.",
     "There is no need to visit the branch."
    ],
    [
-    "الرسوم: ٣٠٠ درهم لسنتين.",
-    "Fees: 300 dirhams for two years."
+    "الرسوم: ٣٠ درهمًا لسنتين.",
+    "Fees: 30 dirhams for two years."
    ],
    [
     "الدفع بالبطاقة فقط.",
@@ -1142,13 +1138,13 @@
     "The ID number is required on the form."
    ],
    [
-    "الطلب يأخذ ٣ أيام، والدفع شامل الضريبة.",
-    "The application takes 3 days, and payment includes tax."
+    "مدة الطلب ٣ أيام، والرسوم شاملة الضريبة.",
+    "The application takes 3 days, and the fees include tax."
    ]
   ],
   "questions": [
    [
-    "How can residence be renewed under the new decision?",
+    "How can the card be renewed under the new decision?",
     [
      "Through the official website",
      "At the branch only",
@@ -1207,7 +1203,7 @@
    ],
    [
     "الموظف يسأل عن الاسم ورقم الجواز ثم يعطي الحقيبة.",
-    "The employee asks for the name and passport number, then gives back the bag."
+    "The employee asks for the name and passport number, then hands over the bag."
    ],
    [
     "بعد ٣٠ يومًا تُرْسَل الحقيبة إلى الشرطة.",
@@ -1226,8 +1222,8 @@
     "Reception is open from 8 a.m. to 8 p.m."
    ],
    [
-    "للاستعلامات: مصلى الرجال في الطابق الأول.",
-    "For enquiries: the men's prayer room is on the first floor."
+    "للاستعلامات: الاستقبال في الطابق الأول.",
+    "For enquiries: reception is on the first floor."
    ]
   ],
   "questions": [
@@ -1278,7 +1274,7 @@
     "Take a number from the machine in front of the entrance."
    ],
    [
-    "ثم اِنْتَظِرْ هنا حتى يَظْهَر رقمك.",
+    "ثم انْتَظِرْ هنا حتى يَظْهَر رقمك.",
     "Then wait here until your number appears."
    ],
    [
@@ -1290,8 +1286,8 @@
     "Payment in cash or by card at the counter."
    ],
    [
-    "لكن الدفع بالبطاقة فقط بعد الساعة ٥ مساءً.",
-    "But after 5 p.m. it is card payment only."
+    "لكن الدفع بالبطاقة فقط بعد الساعة ٣ مساءً.",
+    "But after 3 p.m. it is card payment only."
    ],
    [
     "الاستقبال في الطابق الأول، والمصعد خلف المدخل.",
@@ -1328,7 +1324,7 @@
     "The employee is serving someone else"
    ],
    [
-    "What changes after 5 p.m.?",
+    "What changes after 3 p.m.?",
     [
      "Only card payment is accepted",
      "The centre closes",
