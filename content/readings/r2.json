@@ -30,6 +30,10 @@
     "Passport number: …… ID number: ……"
    ],
    [
+    "تاريخ الإصدار: …… تاريخ الانتهاء: ……",
+    "Date of issue: …… Expiry date: ……"
+   ],
+   [
     "العنوان: …… صندوق البريد: ……",
     "Address: …… P.O. box: ……"
    ],
@@ -38,16 +42,20 @@
     "Phone number: …… Email: ……"
    ],
    [
-    "يرجى تعبئة الحقول المطلوبة بخط واضح.",
-    "Please fill in the required fields in clear handwriting."
+    "يرجى تعبئة الاستمارة بخط واضح.",
+    "Please fill in the form in clear handwriting."
+   ],
+   [
+    "لا تترك أي حقل فارغًا.",
+    "Do not leave any field empty."
    ],
    [
     "المستندات المطلوبة: نسخة من جواز السفر وصورة شخصية.",
     "Required documents: a copy of the passport and a passport photo."
    ],
    [
-    "التوقيع: …… التاريخ: ……",
-    "Signature: …… Date: ……"
+    "الرسوم: ٣٠٠ درهم. التوقيع: …… التاريخ: ……",
+    "Fees: 300 dirhams. Signature: …… Date: ……"
    ]
   ],
   "questions": [
@@ -62,7 +70,7 @@
     "Renewing a residence permit"
    ],
    [
-    "How should the fields be filled in?",
+    "How should the form be filled in?",
     [
      "In clear handwriting",
      "In capital letters only",
@@ -118,6 +126,18 @@
     "Press Next, then Confirm, then Send."
    ],
    [
+    "سيصل رمز التحقق برسالة إلى هاتفك.",
+    "A verification code will reach your phone in a message."
+   ],
+   [
+    "رقم الهوية مطلوب للمواطنين والمقيمين.",
+    "The ID number is required for citizens and residents."
+   ],
+   [
+    "الرسوم: ٥٠ درهمًا شامل الضريبة.",
+    "Fee: 50 dirhams including tax."
+   ],
+   [
     "لا ترسل الطلب قبل التأكيد.",
     "Do not send the application before confirming."
    ],
@@ -148,14 +168,14 @@
     "Saves the application"
    ],
    [
-    "What should be done before pressing Send?",
+    "What will arrive on your phone?",
     [
-     "Confirm",
-     "Cancel",
-     "Save twice",
-     "Write notes"
+     "A verification code in a message",
+     "A receipt",
+     "A copy of the form",
+     "A call from the ministry"
     ],
-    "Confirm"
+    "A verification code in a message"
    ]
   ]
  },
@@ -196,6 +216,14 @@
    [
     "التوصيل مجاني للطلبات فوق ٥٠ درهمًا",
     "Delivery is free for orders over 50 dirhams"
+   ],
+   [
+    "المطعم مفتوح من ١٢ ظهرًا حتى ١١ مساءً",
+    "The restaurant is open from 12 noon until 11 p.m."
+   ],
+   [
+    "للحجز: اتصل بالمطعم قبل الوصول",
+    "To book: call the restaurant before arriving"
    ]
   ],
   "questions": [
@@ -220,14 +248,14 @@
     "Hot drinks or water"
    ],
    [
-    "When is delivery free?",
+    "How do you book a table?",
     [
-     "For orders over 50 dirhams",
-     "For every order",
-     "Only for families",
-     "Only on Sundays"
+     "Call the restaurant before arriving",
+     "Fill in a form",
+     "Visit the branch",
+     "Send a card"
     ],
-    "For orders over 50 dirhams"
+    "Call the restaurant before arriving"
    ]
   ]
  },
@@ -238,16 +266,16 @@
   "title": "Shop sale flyer",
   "lines": [
    [
-    "تخفيضات الموسم: حتى ٥٠٪ في جميع الفروع",
-    "Season sale: up to 50% off in all branches"
+    "تخفيضات الموسم: حتى ٥٠٪ في كل فرع",
+    "Season sale: up to 50% off in every branch"
    ],
    [
     "ملابس وأحذية للرجال والنساء بأسعار خاصة",
     "Clothes and shoes for men and women at special prices"
    ],
    [
-    "المقاسات متوفرة في كل فرع",
-    "Sizes are available in every branch"
+    "المقاسات متوفرة للرجال والنساء",
+    "Sizes are available for men and women"
    ],
    [
     "عرض خاص: خصم إضافي ١٠٪ عند الدفع بالبطاقة",
@@ -260,6 +288,26 @@
    [
     "لا يوجد استرجاع للمشتريات المخفضة",
     "No refunds on discounted purchases"
+   ],
+   [
+    "الدفع نقدًا أو بالبطاقة",
+    "Payment in cash or by card"
+   ],
+   [
+    "فرع المدينة وفرع العاصمة",
+    "The city branch and the capital branch"
+   ],
+   [
+    "الدفع بالبطاقة أو نقدًا في الفرع فقط.",
+    "Payment by card or in cash at the branch only."
+   ],
+   [
+    "الفاتورة مطلوبة عند الاستبدال.",
+    "The receipt is required for exchange."
+   ],
+   [
+    "خصم خاص للعائلات يوم الجمعة.",
+    "A special discount for families on Friday."
    ],
    [
     "ساعات العمل: من ٩ صباحًا إلى ١٠ مساءً",
@@ -322,6 +370,14 @@
     "On arrival please bring your ID and health insurance card."
    ],
    [
+    "سعر الفحص ١٥٠ درهمًا شامل الضريبة.",
+    "The examination costs 150 dirhams including tax."
+   ],
+   [
+    "عيادة الأطفال في الطابق الثاني.",
+    "The children's clinic is on the second floor."
+   ],
+   [
     "إذا كان لديك ألم شديد أو حرارة، توجه إلى الطوارئ.",
     "If you have severe pain or a fever, go to the emergency department."
    ],
@@ -356,14 +412,14 @@
     "Go to the emergency department"
    ],
    [
-    "On which day is the clinic closed?",
+    "Where is the children's clinic?",
     [
-     "Friday",
-     "Saturday",
-     "Sunday",
-     "Thursday"
+     "On the second floor",
+     "On the first floor",
+     "Next to the pharmacy",
+     "At the entrance"
     ],
-    "Friday"
+    "On the second floor"
    ]
   ]
  },
@@ -402,8 +458,28 @@
     "Price: 12 dirhams. Payment in cash or by card."
    ],
    [
-    "التوصيل مجاني من الفرع.",
-    "Delivery from the branch is free."
+    "يرجى إحضار الوصفة الطبية والهوية.",
+    "Please bring the prescription and your ID."
+   ],
+   [
+    "الاستبدال والاسترجاع مع الفاتورة فقط.",
+    "Exchange and refund with the receipt only."
+   ],
+   [
+    "التوصيل مجاني من الفرع إلى المنطقة.",
+    "Delivery from the branch to your area is free."
+   ],
+   [
+    "للاستعلامات: الاستقبال في الفرع.",
+    "For enquiries: reception at the branch."
+   ],
+   [
+    "الصيدلية في الطابق الأول أمام العيادة.",
+    "The pharmacy is on the first floor in front of the clinic."
+   ],
+   [
+    "العيادة مفتوحة من الأحد إلى الخميس.",
+    "The clinic is open from Sunday to Thursday."
    ]
   ],
   "questions": [
@@ -466,12 +542,24 @@
     "Do not give your PIN to anyone."
    ],
    [
-    "البطاقة ليست لشخص آخر.",
-    "The card is not for anyone else."
+    "إذا فقدت البطاقة، أبلغ الفرع.",
+    "If you lose your card, tell the branch."
    ],
    [
-    "الاستعلامات في الطابق الأول.",
-    "Enquiries are on the first floor."
+    "الاستعلامات في الطابق الأول، والاستقبال أمام المصعد.",
+    "Enquiries are on the first floor, and reception is in front of the lift."
+   ],
+   [
+    "ساعات العمل من الأحد إلى الخميس فقط.",
+    "Opening hours are Sunday to Thursday only."
+   ],
+   [
+    "الرقم السري مطلوب عند السحب.",
+    "The PIN is required for withdrawals."
+   ],
+   [
+    "الدفع بالبطاقة في الفرع مجانًا.",
+    "Paying by card at the branch is free."
    ]
   ],
   "questions": [
@@ -518,16 +606,28 @@
     "Invoice no. 457 — table no. 7"
    ],
    [
+    "الفرع: المدينة — التاريخ: الأحد",
+    "Branch: City — Date: Sunday"
+   ],
+   [
+    "الأسعار بالدرهم.",
+    "Prices are in dirhams."
+   ],
+   [
+    "الساعة ٨ مساءً",
+    "Time: 8 p.m."
+   ],
+   [
     "وجبة دجاج: ٢٥ درهمًا",
     "Chicken meal: 25 dirhams"
    ],
    [
-    "شاي وقهوة: ٨ دراهم",
-    "Tea and coffee: 8 dirhams"
+    "عصير برتقال: ٩ دراهم",
+    "Orange juice: 9 dirhams"
    ],
    [
-    "حلوى: ٧ دراهم",
-    "Dessert: 7 dirhams"
+    "حلوى: ٦ دراهم",
+    "Dessert: 6 dirhams"
    ],
    [
     "المبلغ قبل الضريبة: ٤٠ درهمًا",
@@ -546,8 +646,28 @@
     "Payment method: cash"
    ],
    [
+    "المدفوع: ٥٠ درهمًا",
+    "Paid: 50 dirhams"
+   ],
+   [
+    "الباقي: ٨ دراهم",
+    "Change: 8 dirhams"
+   ],
+   [
     "الاستبدال خلال ٧ أيام مع الفاتورة.",
     "Exchange within 7 days with the receipt."
+   ],
+   [
+    "الاسترجاع بالفاتورة فقط.",
+    "Refunds with the receipt only."
+   ],
+   [
+    "الطلب رقم ١٢ — ٣ وجبات",
+    "Order no. 12 — 3 meals"
+   ],
+   [
+    "شكرًا لزيارتكم",
+    "Thank you for your visit"
    ]
   ],
   "questions": [
@@ -557,27 +677,27 @@
      "42 dirhams",
      "40 dirhams",
      "47 dirhams",
-     "25 dirhams"
+     "50 dirhams"
     ],
     "42 dirhams"
    ],
    [
-    "How did the customer pay?",
+    "How much change did the customer get?",
     [
-     "In cash",
-     "By card",
-     "By transfer",
-     "It was free"
+     "8 dirhams",
+     "2 dirhams",
+     "10 dirhams",
+     "42 dirhams"
     ],
-    "In cash"
+    "8 dirhams"
    ],
    [
-    "Which item cost 7 dirhams?",
+    "Which item cost 6 dirhams?",
     [
      "Dessert",
-     "Tea and coffee",
+     "Orange juice",
      "The chicken meal",
-     "Water"
+     "Tea"
     ],
     "Dessert"
    ]
@@ -598,8 +718,8 @@
     "Next month's rent is due before the 25th of the month."
    ],
    [
-    "المبلغ: ٣٠٠٠ درهم.",
-    "The amount: 3000 dirhams."
+    "المبلغ: ٣٠٠٠ درهم، شامل المياه والكهرباء.",
+    "The amount: 3000 dirhams, including water and electricity."
    ],
    [
     "يمكنكم الدفع نقدًا في الاستقبال أو بالتحويل إلى حساب المبنى.",
@@ -614,8 +734,20 @@
     "The receipt is available at reception after payment."
    ],
    [
-    "للاستعلامات: الاستقبال في الطابق الأول.",
-    "For enquiries: reception on the first floor."
+    "للحصول على نسخة من عقد الإيجار، يرجى زيارة الاستقبال.",
+    "To get a copy of the rental contract, please visit reception."
+   ],
+   [
+    "الاستعلامات في الطابق الأول.",
+    "Enquiries are on the first floor."
+   ],
+   [
+    "الاستقبال مفتوح من ٨ صباحًا إلى ٤ مساءً.",
+    "Reception is open from 8 a.m. to 4 p.m."
+   ],
+   [
+    "الدفع قبل الموعد مطلوب لجميع السكان.",
+    "Payment before the due date is required from all residents."
    ]
   ],
   "questions": [
@@ -684,6 +816,26 @@
    [
     "زيارة رسمية إلى الكويت وقطر",
     "Official visit to Kuwait and Qatar"
+   ],
+   [
+    "اجتماع وزراء الخليج في العاصمة",
+    "Gulf ministers meet in the capital"
+   ],
+   [
+    "جائزة وطنية لمشروع مدينة جديدة",
+    "National prize for a new city project"
+   ],
+   [
+    "قرار الوزارة: ساعات العمل للمقيمين والمواطنين",
+    "Ministry decision: working hours for residents and citizens"
+   ],
+   [
+    "مهرجان وطني في المدينة والعاصمة",
+    "National festival in the city and the capital"
+   ],
+   [
+    "تقرير الشرطة: حادث في المنطقة",
+    "Police report: an accident in the area"
    ]
   ],
   "questions": [
@@ -748,6 +900,26 @@
    [
     "تقرير رسمي: نسبة الزيادة ٤٪ في الدول العربية",
     "Official report: an increase of 4% in the Arab countries"
+   ],
+   [
+    "السياحة في الخليج: مشروع جديد للعائلات",
+    "Tourism in the Gulf: a new project for families"
+   ],
+   [
+    "مؤتمر دولي عن الاقتصاد والنفط في العاصمة",
+    "International conference on the economy and oil in the capital"
+   ],
+   [
+    "وكالة الأنباء: قرار جديد للمقيمين",
+    "News agency: a new decision for residents"
+   ],
+   [
+    "معرض النفط الدولي في الخليج",
+    "International oil exhibition in the Gulf"
+   ],
+   [
+    "قرار رسمي للمواطنين في المدينة والعاصمة",
+    "Official decision for citizens in the city and the capital"
    ]
   ],
   "questions": [
@@ -790,8 +962,8 @@
   "title": "News brief: road accident",
   "lines": [
    [
-    "حادث بين سيارتين على الطريق الرئيسي في المدينة.",
-    "An accident between two cars on the city's main road."
+    "كان الحادث بين سيارتين على الطريق الرئيسي قرب مدخل المدينة صباح الأحد.",
+    "The accident was between two cars on the main road near the city entrance on Sunday morning."
    ],
    [
     "وصلت الشرطة والإسعاف إلى المكان بعد خمس دقائق.",
@@ -806,8 +978,16 @@
     "The police closed the area for an hour, then reopened it."
    ],
    [
-    "وتدعو الشرطة السائقين إلى استخدام طريق آخر.",
-    "The police urge drivers to use another road."
+    "وطلبت الشرطة من السائقين الانتظار هنا.",
+    "The police asked drivers to wait here."
+   ],
+   [
+    "ولا يوجد أي حادث آخر في المنطقة.",
+    "And there is no other accident in the area."
+   ],
+   [
+    "الطريق مفتوح الآن للجميع.",
+    "The road is now open to everyone."
    ]
   ],
   "questions": [
@@ -858,20 +1038,28 @@
     "From 1 to 15 March, from 4 p.m. until 10 p.m."
    ],
    [
-    "معرض مفتوح للعائلات والمواطنين والمقيمين.",
-    "An exhibition open to families, citizens and residents."
+    "فعاليات للأطفال والعائلات ومعرض مفتوح للمواطنين والمقيمين.",
+    "Activities for children and families, and an exhibition open to citizens and residents."
    ],
    [
-    "جائزة كبيرة لأفضل عرض.",
-    "A big prize for the best show."
+    "مسرح كبير وجائزة لأفضل عرض.",
+    "A big stage and a prize for the best show."
    ],
    [
-    "الدخول مجانًا، والمواقف أمام البوابة الرئيسية.",
-    "Entry is free, and parking is in front of the main gate."
+    "الدخول مجانًا، والموقف أمام البوابة الرئيسية.",
+    "Entry is free, and the car park is in front of the main gate."
    ],
    [
     "ممنوع التدخين وممنوع التصوير داخل المعرض.",
     "Smoking and photography are forbidden inside the exhibition."
+   ],
+   [
+    "المسرح مفتوح من ٦ مساءً حتى ١٠ مساءً.",
+    "The stage is open from 6 p.m. until 10 p.m."
+   ],
+   [
+    "مصلى الرجال ومصلى النساء عند البوابة.",
+    "The men's and women's prayer rooms are at the gate."
    ],
    [
     "للاستعلامات: الاستقبال عند المدخل.",
@@ -900,7 +1088,7 @@
     "Smoking and photography"
    ],
    [
-    "Where is the parking?",
+    "Where is the car park?",
     [
      "In front of the main gate",
      "Behind reception",
@@ -930,7 +1118,7 @@
     "There is no need to visit the branch."
    ],
    [
-    "الرسوم: ٣٠٠ درهم لمدة سنتين.",
+    "الرسوم: ٣٠٠ درهم لسنتين.",
     "Fees: 300 dirhams for two years."
    ],
    [
@@ -940,6 +1128,22 @@
    [
     "المستندات المطلوبة: نسخة من جواز السفر وصورة شخصية.",
     "Required documents: a copy of the passport and a passport photo."
+   ],
+   [
+    "للاستعلامات: الاستقبال في الفرع من الأحد إلى الخميس.",
+    "For enquiries: reception at the branch, Sunday to Thursday."
+   ],
+   [
+    "ساعات العمل من ٨ صباحًا إلى ٢ ظهرًا.",
+    "Opening hours are 8 a.m. to 2 p.m."
+   ],
+   [
+    "رقم الهوية مطلوب في الاستمارة.",
+    "The ID number is required on the form."
+   ],
+   [
+    "الطلب يأخذ ٣ أيام، والدفع شامل الضريبة.",
+    "The application takes 3 days, and payment includes tax."
    ]
   ],
   "questions": [
@@ -982,6 +1186,10 @@
   "title": "Lost property notice",
   "lines": [
    [
+    "قسم المفقودات",
+    "Lost property department"
+   ],
+   [
     "وجد الموظف حقيبة سوداء أمام مصلى الرجال.",
     "The employee found a black bag in front of the men's prayer room."
    ],
@@ -994,16 +1202,32 @@
     "It is now at reception."
    ],
    [
-    "إذا تركت الحقيبة هنا، أحضر هويتك إلى الاستقبال.",
-    "If you left the bag here, bring your ID to reception."
+    "يرجى من صاحب الحقيبة الحضور مع الهوية.",
+    "The owner of the bag is asked to come with ID."
    ],
    [
-    "سنسأل عن الاسم ورقم الجواز ثم نعطي الحقيبة.",
-    "We will ask for the name and passport number, then give you the bag."
+    "الموظف يسأل عن الاسم ورقم الجواز ثم يعطي الحقيبة.",
+    "The employee asks for the name and passport number, then gives back the bag."
    ],
    [
-    "بعد ٣٠ يومًا نرسل الحقيبة إلى الشرطة.",
-    "After 30 days we will send the bag to the police."
+    "بعد ٣٠ يومًا ترسل الحقيبة إلى الشرطة.",
+    "After 30 days the bag is sent to the police."
+   ],
+   [
+    "الاسم والهوية مطلوبان.",
+    "The name and ID are required."
+   ],
+   [
+    "الاستقبال مغلق يوم الجمعة.",
+    "Reception is closed on Friday."
+   ],
+   [
+    "الاستقبال مفتوح من ٨ صباحًا إلى ٨ مساءً.",
+    "Reception is open from 8 a.m. to 8 p.m."
+   ],
+   [
+    "للاستعلامات: مصلى الرجال في الطابق الأول.",
+    "For enquiries: the men's prayer room is on the first floor."
    ]
   ],
   "questions": [
@@ -1058,7 +1282,7 @@
     "Then wait here until your number appears."
    ],
    [
-    "لا تدخل قبل ذلك، لأن الموظف يخدم شخصًا آخر.",
+    "ممنوع الدخول قبل ذلك، لأن الموظف يخدم شخصًا آخر.",
     "Do not go in before then, because the employee is serving someone else."
    ],
    [
@@ -1070,8 +1294,16 @@
     "But after 5 p.m. it is card payment only."
    ],
    [
-    "الجهاز مغلق يوم الجمعة.",
-    "The machine is closed on Friday."
+    "الاستقبال في الطابق الأول، والمصعد خلف المدخل.",
+    "Reception is on the first floor, and the lift is behind the entrance."
+   ],
+   [
+    "الاستقبال مغلق يوم الجمعة.",
+    "Reception is closed on Friday."
+   ],
+   [
+    "ساعات العمل من الأحد إلى الخميس، من ٨ صباحًا إلى ٤ مساءً.",
+    "Opening hours: Sunday to Thursday, 8 a.m. to 4 p.m."
    ]
   ],
   "questions": [

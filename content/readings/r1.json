@@ -14,20 +14,20 @@
     "For visitors only"
    ],
    [
-    "المدخل من الشَّارِع الرئيسي",
+    "المدخل من الشَّارِع الرَّئِيسِيّ",
     "Entrance from the main street"
    ],
    [
-    "ممنوع الانتظار هنا",
-    "No waiting here"
+    "ممنوع الانتظار أمام المدخل",
+    "No waiting in front of the entrance"
    ],
    [
     "الدخول مَجَّانِيّ",
     "Free entry"
    ],
    [
-    "ساعات العمل من ٦ صباحا إلى ١٢ مساء",
-    "Opening hours: 6 am to 12 midnight"
+    "ساعات العمل من ٦ صباحا إلى ١٠ مساء",
+    "Opening hours: 6 am to 10 pm"
    ]
   ],
   "questions": [
@@ -45,9 +45,9 @@
     "Where is the entrance?",
     [
      "From the main street",
+     "From the side street",
      "From gate 2",
-     "Through the pharmacy",
-     "From the lift"
+     "From the back road"
     ],
     "From the main street"
    ]
@@ -64,7 +64,7 @@
     "The neighbourhood pharmacy"
    ],
    [
-    "الْأَدْوِيَة وَالْوَصْفَات",
+    "الْأَدْوِيَة وَالْوَصَفَات",
     "Medicines and prescriptions"
    ],
    [
@@ -76,7 +76,7 @@
     "Open all week"
    ],
    [
-    "اِسْأَلْ الصيدلي",
+    "اِسْأَلِ الصيدلي",
     "Ask the pharmacist"
    ]
   ],
@@ -172,7 +172,7 @@
     "The restaurant"
    ],
    [
-    "الْإِجْمَالِي ٢٠ درهم شَامِل الضَّرِيبَة",
+    "الْإِجْمَالِيّ ٢٠ دِرْهَمًا شَامِل الضَّرِيبَة",
     "Total: 20 dirhams including tax"
    ],
    [
@@ -196,7 +196,7 @@
     "20 dirhams"
    ],
    [
-    "On which day was the receipt issued?",
+    "Which day is printed on the receipt?",
     [
      "Sunday",
      "Monday",
@@ -260,7 +260,7 @@
     "The lift is out of order"
    ],
    [
-    "يرجى اسْتِخْدَام السلم",
+    "يرجى اسْتِخْدَام الدَّرَج",
     "Please use the stairs"
    ],
    [
@@ -306,8 +306,8 @@
     "A women's prayer room on the first floor"
    ],
    [
-    "صَلَاة الجمعة ١٢ ظهرا",
-    "Friday prayer at 12 noon"
+    "صَلَاة الجمعة ١ ظهرا",
+    "Friday prayer at 1 pm"
    ],
    [
     "مكان الْوُضُوء في الطابق الْأَرْضِيّ",
@@ -332,12 +332,12 @@
    [
     "What time is Friday prayer?",
     [
+     "1 pm",
      "12 noon",
      "12 midnight",
-     "1 pm",
      "10 am"
     ],
-    "12 noon"
+    "1 pm"
    ]
   ]
  },
@@ -352,7 +352,7 @@
     "Fresh milk"
    ],
    [
-    "يحفظ في الثَّلَّاجَة",
+    "يُحْفَظ في الثَّلَّاجَة",
     "Keep in the fridge"
    ],
    [
@@ -398,7 +398,7 @@
     "Departures every 10 minutes from this stop"
    ],
    [
-    "الصُّعُود من الباب الأمامي",
+    "الصُّعُود من الباب الْأَمَامِيّ",
     "Board by the front door"
    ],
    [
@@ -490,7 +490,7 @@
     "Press the red button"
    ],
    [
-    "لا تَسْتَخْدِمْ المصعد",
+    "لا تَسْتَخْدِمِ المصعد",
     "Do not use the lift"
    ],
    [
@@ -510,14 +510,14 @@
     "The red button"
    ],
    [
-    "What should you not use?",
+    "When does this sign apply?",
     [
-     "The lift",
-     "The stairs",
-     "The exit",
-     "The phone"
+     "In case of fire",
+     "When the lift is full",
+     "When the power is off",
+     "After closing time"
     ],
-    "The lift"
+    "In case of fire"
    ]
   ]
  },
@@ -532,7 +532,7 @@
     "The clinic is closed on Saturday"
    ],
    [
-    "لِلْمَوَاعِيد اِتَّصِلْ بالاستقبال",
+    "لِلْمَوَاعِيد اتَّصِلْ بالاستقبال",
     "For appointments, call reception"
    ],
    [
@@ -556,7 +556,7 @@
     [
      "Reception",
      "The pharmacy",
-     "The ministry",
+     "The doctor",
      "Emergency services"
     ],
     "Reception"

@@ -6,32 +6,36 @@
   "title": "News: a new bus line",
   "lines": [
    [
-    "أعلنت وزارة النقل أمس إطلاق خط جديد للحافلات بين المدينة والمطار.",
-    "The Ministry of Transport announced yesterday the launch of a new bus line between the city and the airport."
+    "أعلنت وزارة المواصلات أمس أنها أطلقت خطًا جديدًا للحافلات بين المدينة والمطار.",
+    "The Ministry of Transport announced yesterday that it has launched a new bus line between the city and the airport."
    ],
    [
-    "وأوضحت الوزارة أن الخط سيبدأ العمل يوم الأحد المقبل.",
+    "وأوضحت الوزارة أن الخط سيبدأ العمل يوم الأحد القادم.",
     "The ministry explained that the line will start operating next Sunday."
    ],
    [
-    "وستنطلق الحافلات كل ٣٠ دقيقة من الساعة ٦ صباحًا حتى الساعة ١٢ ليلًا.",
-    "Buses will leave every 30 minutes from 6 a.m. until 12 at night."
+    "وأضافت أن الحافلات ستغادر كل نصف ساعة، من الساعة السادسة صباحًا حتى منتصف الليل.",
+    "It added that the buses will leave every half hour, from six in the morning until midnight."
    ],
    [
-    "وأضافت أن سعر التذكرة سيكون ٥ دراهم للراكب الواحد.",
-    "It added that the ticket price will be 5 dirhams per passenger."
+    "وقال مدير المواصلات إن الخط الجديد سيساعد آلاف الركاب كل يوم.",
+    "The transport director said the new line will help thousands of passengers every day."
    ],
    [
-    "وقال مدير الإدارة إن الخط الجديد سيخدم آلاف الركاب كل يوم.",
-    "The department manager said the new line will serve thousands of passengers every day."
+    "وأشار إلى أن سعر التذكرة سيكون خمسة دراهم فقط.",
+    "He pointed out that the ticket price will be only five dirhams."
    ],
    [
-    "وأكدت الوزارة أن بعض المقاعد مخصصة لكبار السن.",
-    "The ministry stressed that some seats are reserved for the elderly."
+    "وأكد أن بعض المقاعد مخصصة لكبار السن والنساء.",
+    "He stressed that some seats are reserved for the elderly and women."
    ],
    [
-    "ودعت المواطنين والمقيمين إلى استخدام الحافلات لتخفيف الازدحام.",
-    "It called on citizens and residents to use the buses to reduce congestion."
+    "وستتوقف الحافلات عند المطار والجامعة والمستشفى وعدة محطات أخرى.",
+    "The buses will stop at the airport, the university, the hospital and several other stations."
+   ],
+   [
+    "ودعا المواطنين والمقيمين إلى استخدام الحافلات، لأن ذلك يقلل الازدحام في الشوارع.",
+    "He called on citizens and residents to use the buses, because that reduces congestion on the streets."
    ]
   ],
   "questions": [
@@ -58,22 +62,22 @@
    [
     "How often will the buses leave?",
     [
-     "Every 30 minutes",
-     "Every 5 minutes",
-     "Every hour",
-     "Every 12 minutes"
+     "Every half hour",
+     "Every five minutes",
+     "Every two hours",
+     "Once a day"
     ],
-    "Every 30 minutes"
+    "Every half hour"
    ],
    [
-    "Who are some of the seats reserved for?",
+    "Why does the director want people to use the buses?",
     [
-     "The elderly",
-     "Students",
-     "Airport workers",
-     "Families with children"
+     "To reduce congestion on the streets",
+     "To save fuel for the ministry",
+     "To fill the airport",
+     "To raise ticket prices"
     ],
-    "The elderly"
+    "To reduce congestion on the streets"
    ]
   ]
  },
@@ -84,44 +88,48 @@
   "title": "News: a ministry receives a delegation",
   "lines": [
    [
-    "استقبل وزير الاقتصاد أمس وفدًا تجاريًا من شركة كبيرة في دبي.",
-    "The minister of the economy received a trade delegation from a large Dubai company yesterday."
+    "استقبل وزير الاقتصاد أمس وفدًا من شركة كبيرة في دبي.",
+    "The minister of the economy received a delegation from a large Dubai company yesterday."
    ],
    [
-    "وبحث الجانبان فرص الاستثمار في مشاريع جديدة.",
-    "The two sides discussed investment opportunities in new projects."
+    "وبحث الجانبان فرص الاستثمار في مشاريع جديدة في المنطقة.",
+    "The two sides discussed investment opportunities in new projects in the region."
    ],
    [
-    "وأكد الوزير أن الحكومة ستواصل دعم الشركات المحلية.",
-    "The minister stressed that the government will continue to support local companies."
+    "وأكد الوزير أن الحكومة تدعم الشركات المحلية.",
+    "The minister stressed that the government supports local companies."
    ],
    [
-    "وأضاف أن الاقتصاد شهد نموًا خلال العام الماضي.",
-    "He added that the economy saw growth during the past year."
+    "وأشار إلى أن الوزارة أطلقت مبادرة جديدة لمساعدة الشباب على فتح مشاريعهم.",
+    "He pointed out that the ministry has launched a new initiative to help young people open their own businesses."
    ],
    [
-    "وأشار إلى أن الوزارة أطلقت مبادرة لمساعدة الشباب على فتح مشاريعهم.",
-    "He pointed out that the ministry has launched an initiative to help young people open their own businesses."
+    "وقال إن الاقتصاد شهد زيادة كبيرة في عدد الشركات خلال العام الماضي.",
+    "He said the economy saw a big increase in the number of companies during the past year."
    ],
    [
-    "ومن جانبه أعرب رئيس الوفد عن شكره لحسن الاستقبال.",
-    "For his part, the head of the delegation expressed his thanks for the warm reception."
+    "وشكر رئيس الوفد الوزير على الاستقبال.",
+    "The head of the delegation thanked the minister for the reception."
    ],
    [
-    "وتم توقيع اتفاقية بين الجانبين في نهاية اللقاء.",
-    "An agreement was signed between the two sides at the end of the meeting."
+    "وأوضح أن شركته تريد فتح فرع جديد في الإمارات.",
+    "He explained that his company wants to open a new branch in the Emirates."
+   ],
+   [
+    "وفي نهاية اللقاء تم توقيع اتفاقية بين الجانبين.",
+    "At the end of the meeting an agreement was signed between the two sides."
    ]
   ],
   "questions": [
    [
     "Who did the minister receive?",
     [
-     "A trade delegation from a company",
+     "A delegation from a company",
      "A group of students",
-     "A police delegation",
+     "A police team",
      "A team of journalists"
     ],
-    "A trade delegation from a company"
+    "A delegation from a company"
    ],
    [
     "What did the two sides discuss?",
@@ -134,14 +142,14 @@
     "Investment opportunities in new projects"
    ],
    [
-    "What is the aim of the initiative the ministry launched?",
+    "What does the head of the delegation say his company wants?",
     [
-     "To help young people open their own businesses",
-     "To lower taxes",
-     "To build new roads",
-     "To train teachers"
+     "To open a new branch in the Emirates",
+     "To sell its shares",
+     "To close an office",
+     "To hire the minister"
     ],
-    "To help young people open their own businesses"
+    "To open a new branch in the Emirates"
    ],
    [
     "What happened at the end of the meeting?",
@@ -162,28 +170,36 @@
   "title": "Weather: a hot weekend",
   "lines": [
    [
-    "توقعت الأرصاد الجوية أن يكون الطقس مشمسًا في معظم مناطق الدولة يومي الجمعة والسبت.",
-    "The weather service forecast sunny weather in most regions of the country on Friday and Saturday."
+    "توقعت الأرصاد الجوية أن يكون الطقس مشمسًا وحارًا في معظم مناطق الدولة يومي الجمعة والسبت.",
+    "The weather service forecast sunny and hot weather in most regions of the country on Friday and Saturday."
    ],
    [
     "وسترتفع درجة الحرارة إلى ٤٥ درجة مئوية في المناطق الداخلية.",
     "The temperature will rise to 45 degrees Celsius in the inland areas."
    ],
    [
-    "وستنخفض إلى ٣٨ درجة على الشواطئ.",
-    "It will drop to 38 degrees on the beaches."
+    "وستنخفض إلى ٣٨ درجة على الشواطئ، مع رطوبة عالية في الليل.",
+    "It will drop to 38 degrees on the beaches, with high humidity at night."
    ],
    [
-    "وستكون الرياح معتدلة، مع رطوبة عالية في الليل.",
-    "Winds will be moderate, with high humidity at night."
+    "وستكون الرياح معتدلة، وسيكون البحر هادئًا ومدى الرؤية جيدًا.",
+    "Winds will be moderate, the sea calm and visibility good."
    ],
    [
-    "وأوضحت أن البحر سيكون هادئًا ومدى الرؤية جيدًا.",
-    "It explained that the sea will be calm and visibility good."
+    "وقالت الأرصاد إن الغبار قد يرتفع في بعض المناطق بعد الظهر.",
+    "The weather service said dust may rise in some areas in the afternoon."
    ],
    [
-    "ودعت المواطنين والمقيمين إلى شرب الماء وتجنب الخروج وقت الظهر.",
-    "It urged citizens and residents to drink water and avoid going out at midday."
+    "ودعت المواطنين والمقيمين إلى شرب الماء كثيرًا وتجنب الخروج وقت الظهر.",
+    "It urged citizens and residents to drink plenty of water and avoid going out at midday."
+   ],
+   [
+    "وطالبت الأسر بعدم ترك الأطفال في السيارات.",
+    "It asked families not to leave children in cars."
+   ],
+   [
+    "وأضافت أن درجة الحرارة ستنخفض قليلًا يوم الأحد.",
+    "It added that the temperature will drop a little on Sunday."
    ]
   ],
   "questions": [
@@ -202,8 +218,8 @@
     [
      "The inland areas",
      "The beaches",
-     "The mountains",
-     "The capital only"
+     "The sea",
+     "The mosque"
     ],
     "The inland areas"
    ],
@@ -218,14 +234,14 @@
     "Calm"
    ],
    [
-    "What advice does the weather service give?",
+    "What are families asked not to do?",
     [
-     "Drink water and avoid going out at midday",
-     "Stay at home all weekend",
-     "Go to the beach at noon",
-     "Drive slowly at night"
+     "Leave children in cars",
+     "Go to the beach",
+     "Drink water",
+     "Travel on Sunday"
     ],
-    "Drink water and avoid going out at midday"
+    "Leave children in cars"
    ]
   ]
  },
@@ -236,32 +252,36 @@
   "title": "Notice: a road closure",
   "lines": [
    [
-    "تعلن بلدية المدينة عن إغلاق شارع الخليج في الاتجاهين بسبب أعمال الصيانة.",
-    "The city municipality announces the closure of Al Khaleej Street in both directions because of maintenance work."
+    "تعلن بلدية المدينة عن إغلاق شارع الخليج في الاتجاهين.",
+    "The city municipality announces the closure of Al Khaleej Street in both directions."
    ],
    [
-    "وسيستمر الإغلاق من يوم الخميس حتى يوم الأحد.",
-    "The closure will last from Thursday until Sunday."
+    "وذلك بسبب أعمال الصيانة من يوم الخميس حتى يوم الأحد.",
+    "This is because of maintenance work from Thursday until Sunday."
    ],
    [
-    "وقد خُصص طريق بديل عبر الدوار الأول والجسر الجديد.",
-    "An alternative route has been set aside via the first roundabout and the new bridge."
+    "وقد خُصص طريق بديل من خلال الدوار الأول والجسر الجديد.",
+    "An alternative route has been set aside through the first roundabout and the new bridge."
    ],
    [
-    "وتم وضع إشارات التحويلة على الطرق المجاورة.",
-    "Diversion signs have been placed on the neighbouring roads."
+    "وتم وضع إشارات التحويلة على الطرق القريبة.",
+    "Diversion signs have been placed on the nearby roads."
    ],
    [
-    "وتتوقع شرطة المرور ازدحامًا في الشوارع القريبة وقت الذروة.",
-    "The traffic police expect congestion on nearby streets at peak time."
+    "وتتوقع شرطة المرور ازدحامًا في الشوارع المجاورة في الصباح وبعد الظهر.",
+    "The traffic police expect congestion on the neighbouring streets in the morning and afternoon."
    ],
    [
-    "ودعت البلدية السائقين إلى تخفيف السرعة قرب موقع العمل.",
-    "The municipality urged drivers to reduce speed near the work site."
+    "ويجب على السائقين أن يقودوا ببطء وأن ينتبهوا إلى الإشارات قرب مكان العمل.",
+    "Drivers must drive slowly and pay attention to the signs near the work site."
    ],
    [
-    "وتشكر الجميع على تعاونهم.",
-    "It thanks everyone for their cooperation."
+    "ويمكن للمواطنين والمقيمين استخدام الحافلات والمترو خلال هذه الأيام.",
+    "Citizens and residents can use the buses and the metro during these days."
+   ],
+   [
+    "وتشكر البلدية الجميع على تعاونهم.",
+    "The municipality thanks everyone for their cooperation."
    ]
   ],
   "questions": [
@@ -288,22 +308,22 @@
    [
     "What route is suggested instead?",
     [
-     "Via the first roundabout and the new bridge",
-     "Via the tunnel",
-     "Via the airport road",
+     "Through the first roundabout and the new bridge",
+     "Through the tunnel",
+     "Through the airport road",
      "There is no alternative route"
     ],
-    "Via the first roundabout and the new bridge"
+    "Through the first roundabout and the new bridge"
    ],
    [
-    "What does the municipality ask drivers to do near the site?",
+    "What does the notice suggest people use during these days?",
     [
-     "Reduce speed",
-     "Park on the pavement",
-     "Use the horn",
-     "Turn off their lights"
+     "Buses and the metro",
+     "Taxis only",
+     "Bicycles",
+     "Boats"
     ],
-    "Reduce speed"
+    "Buses and the metro"
    ]
   ]
  },
@@ -318,28 +338,32 @@
     "The weather service warned of fog forming tomorrow morning in several areas."
    ],
    [
-    "وسينخفض مدى الرؤية إلى أقل من ٥٠٠ متر في بعض الطرق.",
-    "Visibility will drop to less than 500 metres on some roads."
+    "وقالت إن مدى الرؤية سينخفض إلى أقل من ٥٠٠ متر في بعض الطرق.",
+    "It said visibility will drop to less than 500 metres on some roads."
    ],
    [
-    "وسيستمر الضباب حتى الساعة ٩ صباحًا تقريبًا.",
-    "The fog will last until about 9 a.m."
+    "وسيستمر الضباب حتى الساعة التاسعة صباحًا تقريبًا.",
+    "The fog will last until about nine in the morning."
    ],
    [
     "ودعت شرطة المرور السائقين إلى تخفيف السرعة وترك مسافة بين السيارات.",
     "The traffic police urged drivers to reduce speed and leave a gap between cars."
    ],
    [
-    "وأكدت ضرورة استخدام حزام الأمان وعدم استخدام الهاتف أثناء القيادة.",
-    "They stressed the need to use seat belts and not to use the phone while driving."
+    "وأكدت أهمية استخدام حزام الأمان وعدم استخدام الهاتف أثناء القيادة.",
+    "They stressed the importance of using the seat belt and not using the phone while driving."
    ],
    [
-    "ويتوقع أن يكون الطقس مشمسًا بعد الظهر.",
-    "The weather is expected to be sunny in the afternoon."
+    "وطالبت الأسر بعدم ترك الأطفال وحدهم في السيارة.",
+    "They asked families not to leave children alone in the car."
    ],
    [
-    "وستكون درجة الحرارة معتدلة خلال اليوم.",
-    "The temperature will be mild during the day."
+    "ويتوقع أن يكون الطقس مشمسًا بعد الظهر، وأن ترتفع درجة الحرارة.",
+    "The weather is expected to be sunny in the afternoon, and the temperature to rise."
+   ],
+   [
+    "وأضافت أن الرياح ستكون معتدلة والبحر هادئًا.",
+    "It added that winds will be moderate and the sea calm."
    ]
   ],
   "questions": [
@@ -369,7 +393,7 @@
      "Reduce speed and leave a gap between cars",
      "Stay off the roads all day",
      "Drive faster to leave the fog",
-     "Park on the road side"
+     "Park at the road side"
     ],
     "Reduce speed and leave a gap between cars"
    ],
@@ -392,28 +416,36 @@
   "title": "News: a beach clean-up campaign",
   "lines": [
    [
-    "أطلقت بلدية المدينة حملة لتنظيف الشواطئ تحت شعار «شاطئ نظيف».",
-    "The city municipality launched a beach clean-up campaign under the slogan \"A clean beach\"."
+    "أطلقت بلدية المدينة حملة لتنظيف الشواطئ.",
+    "The city municipality launched a campaign to clean the beaches."
    ],
    [
-    "وشارك في الحملة أكثر من ٣٠٠ متطوع من الطلاب والموظفين.",
-    "More than 300 volunteers, students and employees, took part in the campaign."
+    "وشارك في الحملة نحو ٣٠٠ طالب وموظف من المدارس والشركات.",
+    "About 300 students and employees from schools and companies took part in the campaign."
    ],
    [
-    "وجمع المشاركون كميات كبيرة من النفايات على طول الشاطئ.",
-    "The participants collected large amounts of waste along the beach."
+    "وجمع المشاركون كثيرًا من النفايات على طول الشاطئ.",
+    "The participants collected a lot of waste along the beach."
    ],
    [
-    "وأكد مدير الحملة أن التلوث يهدد الحياة البحرية.",
-    "The campaign manager stressed that pollution threatens marine life."
+    "وقال مدير الحملة إن التلوث يضر بالحياة البحرية.",
+    "The campaign manager said that pollution harms marine life."
    ],
    [
-    "وأضاف أن الحملة ستستمر كل أسبوع حتى نهاية الشهر.",
-    "He added that the campaign will continue every week until the end of the month."
+    "وأضاف أن الحملة ستستمر كل يوم جمعة حتى نهاية الشهر.",
+    "He added that the campaign will continue every Friday until the end of the month."
    ],
    [
-    "ودعت البلدية العائلات والمدارس إلى المشاركة في الأسابيع القادمة.",
-    "The municipality invited families and schools to take part in the coming weeks."
+    "وأشار إلى أن الشباب يشاركون بسعادة كبيرة.",
+    "He pointed out that the young people are taking part with great happiness."
+   ],
+   [
+    "ودعا العائلات والمدارس إلى المشاركة في الأسابيع القادمة.",
+    "He invited families and schools to take part in the coming weeks."
+   ],
+   [
+    "وأعلنت البلدية أنها ستقدم هدايا للمشاركين.",
+    "The municipality announced that it will give gifts to the participants."
    ]
   ],
   "questions": [
@@ -438,7 +470,7 @@
     "Students and employees"
    ],
    [
-    "What does the manager say pollution threatens?",
+    "What does the manager say pollution harms?",
     [
      "Marine life",
      "Roads",
@@ -450,12 +482,12 @@
    [
     "How long will the campaign continue?",
     [
-     "Every week until the end of the month",
+     "Every Friday until the end of the month",
      "One day only",
      "Until next year",
      "Every day for a week"
     ],
-    "Every week until the end of the month"
+    "Every Friday until the end of the month"
    ]
   ]
  },
@@ -466,28 +498,32 @@
   "title": "Announcement: a family festival",
   "lines": [
    [
-    "تنظم بلدية الحي مهرجان العائلة يوم الجمعة المقبل في الحديقة العامة.",
+    "تنظم بلدية الحي مهرجان العائلة يوم الجمعة القادم في الحديقة العامة.",
     "The neighbourhood municipality is organising a family festival next Friday in the public park."
    ],
    [
-    "يبدأ المهرجان في الساعة ٤ مساءً ويستمر حتى ١٠ مساءً.",
-    "The festival starts at 4 p.m. and runs until 10 p.m."
+    "يبدأ المهرجان في الساعة الرابعة مساءً ويستمر حتى العاشرة.",
+    "The festival starts at four in the evening and runs until ten."
    ],
    [
-    "ويضم ألعابًا للأطفال وعروضًا وأطعمة تقليدية.",
-    "It includes games for children, shows and traditional food."
+    "ويضم ألعابًا للأطفال وعروضًا للشباب وطعامًا تقليديًا.",
+    "It includes games for children, shows for young people and traditional food."
    ],
    [
-    "وتشارك فيه أسر من أحياء المدينة.",
-    "Families from the city's neighbourhoods take part."
+    "وتشارك فيه أسر من أحياء المدينة، وتقدم أطباقًا من مطابخ مختلفة.",
+    "Families from the city's neighbourhoods take part, and serve dishes from different kitchens."
    ],
    [
     "الدخول مجانًا لجميع الأسر والأصدقاء.",
     "Entry is free for all families and friends."
    ],
    [
-    "ويرجى المحافظة على نظافة المكان.",
-    "Please keep the place clean."
+    "وستكون هناك مواقف للسيارات قرب البوابة الرئيسية.",
+    "There will be parking near the main gate."
+   ],
+   [
+    "ويرجى المحافظة على نظافة المكان، وعدم التدخين.",
+    "Please keep the place clean and do not smoke."
    ],
    [
     "وتدعو البلدية السكان إلى قضاء وقت جميل مع أسرهم.",
@@ -508,12 +544,12 @@
    [
     "What time does it finish?",
     [
-     "10 p.m.",
-     "4 p.m.",
-     "10 a.m.",
+     "Ten in the evening",
+     "Four in the evening",
+     "Ten in the morning",
      "Midnight"
     ],
-    "10 p.m."
+    "Ten in the evening"
    ],
    [
     "How much is entry?",
@@ -526,14 +562,14 @@
     "Free"
    ],
    [
-    "What is the festival aimed at?",
+    "What does the notice ask visitors to do?",
     [
-     "Families",
-     "Tourists only",
-     "Business owners",
-     "Athletes"
+     "Keep the place clean and not smoke",
+     "Bring their own food",
+     "Arrive by bus only",
+     "Wear traditional dress"
     ],
-    "Families"
+    "Keep the place clean and not smoke"
    ]
   ]
  },
@@ -544,12 +580,12 @@
   "title": "Mosque notice: Friday prayer",
   "lines": [
    [
-    "تعلن إدارة مسجد النهضة عن تغيير موعد صلاة الجمعة اعتبارًا من الأسبوع المقبل.",
+    "تعلن إدارة مسجد النهضة عن تغيير موعد صلاة الجمعة من الأسبوع القادم.",
     "The management of Al Nahda Mosque announces a change to the Friday prayer time from next week."
    ],
    [
-    "ستُقام الخطبة الأولى في الساعة ١٢:٣٠ ظهرًا.",
-    "The first sermon will be held at 12:30 p.m."
+    "ستُقام الخطبة الأولى في الساعة الثانية عشرة والنصف ظهرًا.",
+    "The first sermon will be held at half past twelve noon."
    ],
    [
     "وتقام صلاة الجمعة بعدها مباشرة.",
@@ -564,8 +600,8 @@
     "The mosque doors will open an hour before the call to prayer."
    ],
    [
-    "كما يخصص مصلى للنساء في الطابق الأول.",
-    "A prayer room for women is also set aside on the first floor."
+    "كما يوجد مصلى للنساء في الطابق الأول.",
+    "There is also a prayer room for women on the first floor."
    ],
    [
     "ويُمنع إيقاف السيارات أمام المداخل.",
@@ -634,8 +670,8 @@
     "Tarawih prayer is held directly after the isha prayer."
    ],
    [
-    "وسيؤم المصلين إمام المسجد.",
-    "The mosque's imam will lead the worshippers."
+    "وسيصلي إمام المسجد بالمصلين ثماني ركعات.",
+    "The mosque's imam will lead the worshippers in eight rakʿas."
    ],
    [
     "وتفتح المساجد أبوابها لوجبات الإفطار للصائمين بعد أذان المغرب.",
@@ -648,6 +684,10 @@
    [
     "وتدعو الإدارة الجميع إلى المحافظة على نظافة المسجد.",
     "The management invites everyone to keep the mosque clean."
+   ],
+   [
+    "وستكون أبواب المسجد مفتوحة قبل الفجر لمن يريد السحور.",
+    "The mosque doors will be open before dawn for those who want suhoor."
    ],
    [
     "رمضان كريم وكل عام وأنتم بخير.",
@@ -666,14 +706,14 @@
     "Right after the isha prayer"
    ],
    [
-    "Who leads the worshippers?",
+    "How many rakʿas will the imam lead?",
     [
-     "The mosque's imam",
-     "A visiting minister",
-     "The muezzin",
-     "The mosque manager"
+     "Eight",
+     "Two",
+     "Twenty",
+     "Four"
     ],
-    "The mosque's imam"
+    "Eight"
    ],
    [
     "What do the mosques offer after the maghrib call?",
@@ -704,7 +744,7 @@
   "title": "News: Eid holiday announced",
   "lines": [
    [
-    "أعلنت وزارة العمل أن عطلة عيد الفطر ستبدأ يوم الأحد المقبل.",
+    "أعلنت وزارة العمل أن عطلة عيد الفطر ستبدأ يوم الأحد القادم.",
     "The Ministry of Labour announced that the Eid al-Fitr holiday will begin next Sunday."
    ],
    [
@@ -712,20 +752,28 @@
     "The holiday covers both the public and private sectors."
    ],
    [
-    "وتستمر العطلة ٤ أيام، ويعود الموظفون إلى العمل يوم الخميس.",
-    "The holiday lasts 4 days, and employees return to work on Thursday."
+    "وتستمر العطلة أربعة أيام، ويعود الموظفون إلى العمل يوم الخميس.",
+    "The holiday lasts four days, and employees return to work on Thursday."
    ],
    [
     "وأشارت الوزارة إلى أن المستشفيات والصيدليات ستبقى مفتوحة خلال العطلة.",
     "The ministry pointed out that hospitals and pharmacies will stay open during the holiday."
    ],
    [
-    "وستُقام صلاة العيد في المساجد بعد شروق الشمس بنحو ٢٠ دقيقة.",
-    "The Eid prayer will be held in the mosques about 20 minutes after sunrise."
+    "وستُقام صلاة العيد في المساجد بعد شروق الشمس بنحو عشرين دقيقة.",
+    "The Eid prayer will be held in the mosques about twenty minutes after sunrise."
    ],
    [
-    "وهنأت الوزارة المواطنين والمقيمين بحلول العيد.",
-    "The ministry congratulated citizens and residents on the arrival of Eid."
+    "ودعت الوزارة المواطنين والمقيمين إلى زيارة أسرهم وأصدقائهم.",
+    "The ministry invited citizens and residents to visit their families and friends."
+   ],
+   [
+    "وقالت إن الأسواق والمتاجر ستعمل بساعات خاصة خلال أيام العيد.",
+    "It said the markets and shops will work special hours during the days of Eid."
+   ],
+   [
+    "وهنأت الوزارة الجميع بحلول العيد.",
+    "The ministry congratulated everyone on the arrival of Eid."
    ]
   ],
   "questions": [
@@ -742,12 +790,12 @@
    [
     "How long does it last?",
     [
-     "4 days",
-     "2 days",
-     "10 days",
+     "Four days",
+     "Two days",
+     "Ten days",
      "A whole month"
     ],
-    "4 days"
+    "Four days"
    ],
    [
     "When do employees go back to work?",
@@ -786,16 +834,20 @@
     "The funeral prayer will be held after the noon prayer at Al Nahda Mosque."
    ],
    [
-    "ثم يُدفن في المقبرة القريبة.",
-    "He will then be buried in the nearby cemetery."
+    "ثم يُدفن في المقبرة القريبة من الحي.",
+    "He will then be buried in the cemetery near the neighbourhood."
    ],
    [
     "ويستقبل أهله العزاء في المنزل لمدة ثلاثة أيام.",
     "His family will receive condolences at home for three days."
    ],
    [
-    "وللرجال في مجلس الحي وللنساء في المنزل.",
-    "For men at the neighbourhood majlis and for women at the house."
+    "وسيكون عزاء الرجال في مجلس الحي، وعزاء النساء في المنزل.",
+    "Condolences for men will be at the neighbourhood majlis, and for women at the house."
+   ],
+   [
+    "وسيبدأ العزاء بعد صلاة العصر ويستمر حتى صلاة العشاء.",
+    "Condolences will start after the afternoon prayer and continue until the isha prayer."
    ],
    [
     "وتدعو إدارة المسجد الجميع إلى الدعاء له.",
@@ -860,24 +912,28 @@
     "The weather service forecast heavy rain over several areas on Tuesday."
    ],
    [
-    "ومن المتوقع حدوث رعد وبرق ورياح قوية.",
-    "Thunder, lightning and strong winds are expected."
+    "وقالت إنه من المتوقع حدوث رعد وبرق ورياح قوية.",
+    "It said thunder, lightning and strong winds are expected."
    ],
    [
     "وحذرت من تشكل السيول في الوديان والمناطق المنخفضة.",
     "It warned of flash floods forming in the valleys and low-lying areas."
    ],
    [
-    "كما يتوقع ارتفاع الموج في البحر إلى ٣ أمتار.",
-    "Waves at sea are also expected to rise to 3 metres."
+    "كما يتوقع أن يرتفع الموج في البحر إلى ثلاثة أمتار.",
+    "Waves at sea are also expected to rise to three metres."
    ],
    [
-    "ودعا الدفاع المدني السكان إلى عدم الخروج إلا للضرورة.",
-    "Civil defence urged residents not to go out except when necessary."
+    "ودعا الدفاع المدني السكان إلى عدم الخروج من منازلهم إلا عند الحاجة.",
+    "Civil defence urged residents not to leave their homes except when needed."
    ],
    [
     "وأعلنت وزارة التعليم أن الدراسة ستكون عن بعد يوم الثلاثاء.",
     "The Ministry of Education announced that classes will be remote on Tuesday."
+   ],
+   [
+    "وأضافت شرطة المرور أن بعض الطرق قد تُغلق خلال الأمطار.",
+    "The traffic police added that some roads may be closed during the rain."
    ],
    [
     "ويرجى متابعة النشرات الجوية.",
@@ -908,12 +964,12 @@
    [
     "What does civil defence ask residents to do?",
     [
-     "Not to go out except when necessary",
+     "Not to leave their homes except when needed",
      "To go to the beach",
      "To close their shops",
      "To drive to work early"
     ],
-    "Not to go out except when necessary"
+    "Not to leave their homes except when needed"
    ],
    [
     "What will happen to classes on Tuesday?",
@@ -938,11 +994,11 @@
     "The weather service issued a warning of rising waves in the Gulf."
    ],
    [
-    "وتصل سرعة الرياح إلى ٤٠ كيلومترًا في الساعة.",
-    "Wind speed reaches 40 kilometres per hour."
+    "وستكون الرياح قوية، وقد تصل سرعتها إلى أربعين كيلومترًا في الساعة.",
+    "Winds will be strong, and their speed may reach forty kilometres per hour."
    ],
    [
-    "وقد يصل ارتفاع الأمواج إلى مترين في بعض المناطق.",
+    "وقد يصل ارتفاع الموج إلى مترين في بعض المناطق.",
     "Wave height may reach two metres in some areas."
    ],
    [
@@ -954,8 +1010,16 @@
     "It advised visitors not to swim on the beaches."
    ],
    [
+    "وقالت إن الغبار قد يقلل مدى الرؤية في بعض المناطق.",
+    "It said dust may reduce visibility in some areas."
+   ],
+   [
     "ويتوقع أن يتحسن الطقس يوم الأربعاء.",
     "The weather is expected to improve on Wednesday."
+   ],
+   [
+    "وستنخفض الرياح تدريجيًا خلال اليوم.",
+    "The winds will fall gradually during the day."
    ]
   ],
   "questions": [
@@ -972,12 +1036,12 @@
    [
     "How fast can the wind reach?",
     [
-     "40 kilometres per hour",
-     "4 kilometres per hour",
-     "140 kilometres per hour",
-     "14 kilometres per hour"
+     "Forty kilometres per hour",
+     "Four kilometres per hour",
+     "A hundred and forty kilometres per hour",
+     "Fourteen kilometres per hour"
     ],
-    "40 kilometres per hour"
+    "Forty kilometres per hour"
    ],
    [
     "Who is asked not to go out to sea?",
@@ -1008,28 +1072,32 @@
   "title": "Notice: a planned power cut",
   "lines": [
    [
-    "تعلن شركة الكهرباء عن انقطاع التيار الكهربائي في حي النهضة يوم الأربعاء.",
+    "تعلن شركة الكهرباء عن انقطاع التيار في حي النهضة يوم الأربعاء.",
     "The electricity company announces a power cut in Al Nahda neighbourhood on Wednesday."
    ],
    [
-    "وذلك من الساعة ٩ صباحًا حتى الساعة ٢ ظهرًا بسبب أعمال الصيانة.",
-    "This will be from 9 a.m. until 2 p.m. because of maintenance work."
+    "وذلك من الساعة التاسعة صباحًا حتى الثانية ظهرًا بسبب أعمال الصيانة.",
+    "This will be from nine in the morning until two at noon because of maintenance work."
    ],
    [
-    "وتشمل المنطقة الشوارع القريبة من المسجد والمدرسة.",
-    "The area includes the streets near the mosque and the school."
+    "وتشمل المنطقة الشوارع القريبة من المسجد والمدرسة والسوق.",
+    "The area includes the streets near the mosque, the school and the market."
    ],
    [
     "وتنصح الشركة السكان بشحن هواتفهم قبل الموعد.",
     "The company advises residents to charge their phones before the time."
    ],
    [
-    "وبفصل الأجهزة الكهربائية عن التيار.",
-    "And to unplug electrical appliances."
+    "كما تنصحهم بفصل الأجهزة الكهربائية عن التيار.",
+    "It also advises them to unplug electrical appliances."
    ],
    [
     "وتعمل فرق الطوارئ في المنطقة طوال الفترة.",
     "Emergency teams will work in the area throughout the period."
+   ],
+   [
+    "وسيتم فتح المسجد أبوابه للصلاة في وقتها كالمعتاد.",
+    "The mosque will open its doors for prayer on time as usual."
    ],
    [
     "وتعتذر الشركة عن أي إزعاج.",
@@ -1094,8 +1162,8 @@
     "The department includes specialised clinics and a modern laboratory."
    ],
    [
-    "وقال المدير الطبي إن القسم سيستقبل المرضى من الساعة ٨ صباحًا.",
-    "The medical director said the department will receive patients from 8 a.m."
+    "وقال مدير المستشفى إن القسم سيستقبل المرضى من الساعة الثامنة صباحًا.",
+    "The hospital director said the department will receive patients from eight in the morning."
    ],
    [
     "وأوضح أن الفحص الأول سيكون مجانًا لجميع المواطنين والمقيمين.",
@@ -1104,6 +1172,14 @@
    [
     "وأشار إلى أن الفحص المبكر يساعد في العلاج.",
     "He pointed out that early testing helps with treatment."
+   ],
+   [
+    "وأضاف أن القسم يضم أطباء وممرضين من عدة دول.",
+    "He added that the department includes doctors and nurses from several countries."
+   ],
+   [
+    "وسيقدم القسم أيضًا برامج للتوعية، ويجيب عن أسئلة المرضى.",
+    "The department will also offer awareness programmes and answer patients' questions."
    ],
    [
     "ودعا الجميع إلى إجراء فحص دوري.",
@@ -1132,14 +1208,14 @@
     "All citizens and residents"
    ],
    [
-    "When does the department start receiving patients?",
+    "When does the department start receiving patients each day?",
     [
-     "From 8 a.m.",
+     "From eight in the morning",
      "From midnight",
      "From noon",
-     "From 8 p.m."
+     "From eight in the evening"
     ],
-    "From 8 a.m."
+    "From eight in the morning"
    ],
    [
     "What does the director say about early testing?",
@@ -1178,6 +1254,10 @@
    [
     "وتنصح كبار السن والأطفال بأخذ اللقاح هذا الأسبوع.",
     "It advises the elderly and children to get the vaccine this week."
+   ],
+   [
+    "وأوضحت أن الأعراض تشمل السعال والصداع والحمى.",
+    "It explained that the symptoms include cough, headache and fever."
    ],
    [
     "ويرجى إحضار بطاقة الهوية عند الذهاب.",
@@ -1246,7 +1326,7 @@
     "Registration starts on 1 March and ends on 15 March."
    ],
    [
-    "ويتم التسجيل عبر الموقع الإلكتروني للوزارة.",
+    "ويتم التسجيل من خلال الموقع الإلكتروني للوزارة.",
     "Registration is done through the ministry's website."
    ],
    [
@@ -1258,8 +1338,12 @@
     "Late applications will not be accepted after 15 March."
    ],
    [
-    "كما تمنح الوزارة منحًا دراسية للطلاب المتفوقين.",
-    "The ministry also gives scholarships to outstanding students."
+    "كما تقدم الوزارة منحًا دراسية للطلاب المتفوقين.",
+    "The ministry also offers scholarships to outstanding students."
+   ],
+   [
+    "وتبدأ الدراسة في الأسبوع الأول من سبتمبر.",
+    "Classes start in the first week of September."
    ],
    [
     "وللاستفسار يرجى زيارة أقرب مدرسة.",
@@ -1298,14 +1382,14 @@
     "A driving licence"
    ],
    [
-    "Who can get scholarships?",
+    "When do classes start?",
     [
-     "Outstanding students",
-     "All parents",
-     "Teachers",
-     "New residents"
+     "The first week of September",
+     "1 March",
+     "15 March",
+     "The first week of January"
     ],
-    "Outstanding students"
+    "The first week of September"
    ]
   ]
  },
@@ -1328,11 +1412,11 @@
     "The applicant must have no less than two years of experience."
    ],
    [
-    "ويفضل من يجيد اللغتين العربية والإنجليزية.",
+    "ويفضل من يتحدث اللغتين العربية والإنجليزية.",
     "Those who speak both Arabic and English are preferred."
    ],
    [
-    "يرسل المتقدمون سيرتهم الذاتية عبر البريد الإلكتروني قبل نهاية الشهر.",
+    "ويرسل المتقدمون سيرتهم الذاتية بالبريد الإلكتروني قبل نهاية الشهر.",
     "Applicants send their CVs by email before the end of the month."
    ],
    [
@@ -1340,8 +1424,12 @@
     "Applicants will be contacted for a personal interview."
    ],
    [
-    "وتوفر الشركة راتبًا جيدًا وتأمينًا صحيًا.",
-    "The company provides a good salary and health insurance."
+    "وتقدم الشركة راتبًا جيدًا وتأمينًا صحيًا وإجازة سنوية.",
+    "The company offers a good salary, health insurance and annual leave."
+   ],
+   [
+    "وسيعمل الموظفون الجدد في مكتب الشركة في دبي من الأحد إلى الخميس.",
+    "The new employees will work at the company's office in Dubai from Sunday to Thursday."
    ]
   ],
   "questions": [
@@ -1376,14 +1464,14 @@
     "Arabic and English"
    ],
    [
-    "What does the company provide?",
+    "What does the company offer?",
     [
-     "A good salary and health insurance",
-     "A flat",
-     "A car",
-     "Free meals only"
+     "A good salary, health insurance and annual leave",
+     "A flat and a car",
+     "Free meals only",
+     "A scholarship"
     ],
-    "A good salary and health insurance"
+    "A good salary, health insurance and annual leave"
    ]
   ]
  },
@@ -1398,8 +1486,8 @@
     "The city university celebrated the graduation of a new class of students yesterday."
    ],
    [
-    "وبلغ عدد الخريجين هذا العام ٨٠٠ طالب وطالبة.",
-    "The number of graduates this year reached 800 male and female students."
+    "وبلغ عدد الخريجين هذا العام ثمانمئة طالب وطالبة.",
+    "The number of graduates this year reached eight hundred male and female students."
    ],
    [
     "وحضر الحفل أولياء الأمور والأساتذة وعدد من الضيوف.",
@@ -1414,8 +1502,12 @@
     "He pointed out that a number of them had applied for jobs before graduating."
    ],
    [
-    "وتسلم الخريجون شهاداتهم.",
-    "The graduates received their certificates."
+    "وأعلن أن الجامعة ستقدم منحًا دراسية جديدة للطلاب في العام القادم.",
+    "He announced that the university will offer new scholarships to students next year."
+   ],
+   [
+    "وتسلم الخريجون شهاداتهم وسط تصفيق الحضور.",
+    "The graduates received their certificates amid the audience's applause."
    ],
    [
     "واختتم الحفل بكلمة شكر.",
@@ -1426,12 +1518,12 @@
    [
     "How many students graduated?",
     [
-     "800",
-     "80",
-     "8,000",
-     "300"
+     "Eight hundred",
+     "Eighty",
+     "Eight thousand",
+     "Three hundred"
     ],
-    "800"
+    "Eight hundred"
    ],
    [
     "Who attended the ceremony?",
@@ -1454,14 +1546,14 @@
     "They are the future of the nation"
    ],
    [
-    "How did the ceremony end?",
+    "What will the university offer next year?",
     [
-     "With a word of thanks",
-     "With a concert",
-     "With a meal",
-     "With a speech by a minister"
+     "New scholarships",
+     "Free flats",
+     "A new campus abroad",
+     "Free books"
     ],
-    "With a word of thanks"
+    "New scholarships"
    ]
   ]
  },
@@ -1490,6 +1582,14 @@
    [
     "وستنتشر دوريات الشرطة على الطرق الرئيسية.",
     "Police patrols will be deployed on the main roads."
+   ],
+   [
+    "وأشارت إلى أن بعض الشوارع ستشهد ازدحامًا قرب المساجد والأسواق.",
+    "They pointed out that some streets will see congestion near the mosques and markets."
+   ],
+   [
+    "ونصحت السائقين بالخروج مبكرًا وترك مسافة كافية بين السيارات.",
+    "They advised drivers to leave early and keep enough distance between cars."
    ],
    [
     "وتتمنى لكم عيدًا سعيدًا وعودة آمنة.",
@@ -1528,14 +1628,14 @@
     "Leave children alone in the car"
    ],
    [
-    "Where will patrols be deployed?",
+    "Where will there be congestion?",
     [
-     "On the main roads",
-     "In the mosques",
-     "At the airport only",
-     "In the schools"
+     "Near the mosques and markets",
+     "Near the airport",
+     "Near the beach",
+     "On the bridges only"
     ],
-    "On the main roads"
+    "Near the mosques and markets"
    ]
   ]
  }
