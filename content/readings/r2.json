@@ -1,0 +1,1110 @@
+[
+ {
+  "id": "r2-01",
+  "level": 2,
+  "stage": 2,
+  "title": "Residence renewal form",
+  "lines": [
+   [
+    "استمارة طلب تجديد الإقامة",
+    "Residence renewal application form"
+   ],
+   [
+    "الاسم: …… اسم العائلة: ……",
+    "Name: …… Family name: ……"
+   ],
+   [
+    "تاريخ الميلاد: …… مكان الميلاد: ……",
+    "Date of birth: …… Place of birth: ……"
+   ],
+   [
+    "الجنسية: …… الجنس: ذكر / أنثى",
+    "Nationality: …… Sex: male / female"
+   ],
+   [
+    "الحالة الاجتماعية: أعزب / متزوج / مطلق",
+    "Marital status: single / married / divorced"
+   ],
+   [
+    "رقم جواز السفر: …… رقم الهوية: ……",
+    "Passport number: …… ID number: ……"
+   ],
+   [
+    "العنوان: …… صندوق البريد: ……",
+    "Address: …… P.O. box: ……"
+   ],
+   [
+    "رقم الهاتف: …… البريد الإلكتروني: ……",
+    "Phone number: …… Email: ……"
+   ],
+   [
+    "يرجى تعبئة الحقول المطلوبة بخط واضح.",
+    "Please fill in the required fields in clear handwriting."
+   ],
+   [
+    "المستندات المطلوبة: نسخة من جواز السفر وصورة شخصية.",
+    "Required documents: a copy of the passport and a passport photo."
+   ],
+   [
+    "التوقيع: …… التاريخ: ……",
+    "Signature: …… Date: ……"
+   ]
+  ],
+  "questions": [
+   [
+    "What is this form for?",
+    [
+     "Renewing a residence permit",
+     "Applying for a visa",
+     "Opening a bank account",
+     "Registering a company"
+    ],
+    "Renewing a residence permit"
+   ],
+   [
+    "How should the fields be filled in?",
+    [
+     "In clear handwriting",
+     "In capital letters only",
+     "In blue ink",
+     "By the sponsor"
+    ],
+    "In clear handwriting"
+   ],
+   [
+    "Which documents are required?",
+    [
+     "A passport copy and a passport photo",
+     "An ID copy and a bank receipt",
+     "A medical report and a photo",
+     "A rent contract and a passport copy"
+    ],
+    "A passport copy and a passport photo"
+   ]
+  ]
+ },
+ {
+  "id": "r2-02",
+  "level": 2,
+  "stage": 2,
+  "title": "Online form: buttons and notes",
+  "lines": [
+   [
+    "الاسم الكامل (مطلوب)",
+    "Full name (required)"
+   ],
+   [
+    "رقم الهاتف (مطلوب)",
+    "Phone number (required)"
+   ],
+   [
+    "البريد الإلكتروني (اختياري)",
+    "Email (optional)"
+   ],
+   [
+    "ملاحظات (اختياري)",
+    "Notes (optional)"
+   ],
+   [
+    "أوافق على الشروط والأحكام.",
+    "I agree to the terms and conditions."
+   ],
+   [
+    "اضغط حفظ لحفظ الطلب، أو إلغاء للخروج.",
+    "Press Save to save the application, or Cancel to exit."
+   ],
+   [
+    "اضغط التالي ثم تأكيد ثم إرسال.",
+    "Press Next, then Confirm, then Send."
+   ],
+   [
+    "لا ترسل الطلب قبل التأكيد.",
+    "Do not send the application before confirming."
+   ],
+   [
+    "السابق  التالي  حفظ  إلغاء  إرسال",
+    "Back  Next  Save  Cancel  Send"
+   ]
+  ],
+  "questions": [
+   [
+    "Which fields must be filled in?",
+    [
+     "Full name and phone number",
+     "Email and notes",
+     "Only the notes",
+     "All four fields"
+    ],
+    "Full name and phone number"
+   ],
+   [
+    "What does the Save button do?",
+    [
+     "Saves the application",
+     "Sends the application",
+     "Deletes the application",
+     "Prints the application"
+    ],
+    "Saves the application"
+   ],
+   [
+    "What should be done before pressing Send?",
+    [
+     "Confirm",
+     "Cancel",
+     "Save twice",
+     "Write notes"
+    ],
+    "Confirm"
+   ]
+  ]
+ },
+ {
+  "id": "r2-03",
+  "level": 2,
+  "stage": 2,
+  "title": "Restaurant offer flyer",
+  "lines": [
+   [
+    "مطعم الواحة للمشويات والعصائر",
+    "Al Waha restaurant for grills and juices"
+   ],
+   [
+    "وجبة الغداء: دجاج مشوي مع أرز وسلطة طازجة",
+    "Lunch meal: grilled chicken with rice and fresh salad"
+   ],
+   [
+    "وجبة العشاء: لحم مشوي مع أرز ومقبلات",
+    "Dinner meal: grilled meat with rice and starters"
+   ],
+   [
+    "مشروبات ساخنة أو ماء مجانًا مع كل وجبة",
+    "Hot drinks or water free with every meal"
+   ],
+   [
+    "خصم ٢٠٪ للعائلات من الأحد إلى الخميس",
+    "20% discount for families from Sunday to Thursday"
+   ],
+   [
+    "السعر: ٢٥ درهمًا للوجبة",
+    "Price: 25 dirhams per meal"
+   ],
+   [
+    "الدفع نقدًا أو بالبطاقة",
+    "Payment in cash or by card"
+   ],
+   [
+    "التوصيل مجاني للطلبات فوق ٥٠ درهمًا",
+    "Delivery is free for orders over 50 dirhams"
+   ]
+  ],
+  "questions": [
+   [
+    "Who gets the 20% discount?",
+    [
+     "Families, Sunday to Thursday",
+     "Everyone on Friday",
+     "Students only",
+     "Orders over 50 dirhams"
+    ],
+    "Families, Sunday to Thursday"
+   ],
+   [
+    "What comes free with every meal?",
+    [
+     "Hot drinks or water",
+     "A starter",
+     "A dessert",
+     "Delivery"
+    ],
+    "Hot drinks or water"
+   ],
+   [
+    "When is delivery free?",
+    [
+     "For orders over 50 dirhams",
+     "For every order",
+     "Only for families",
+     "Only on Sundays"
+    ],
+    "For orders over 50 dirhams"
+   ]
+  ]
+ },
+ {
+  "id": "r2-04",
+  "level": 2,
+  "stage": 2,
+  "title": "Shop sale flyer",
+  "lines": [
+   [
+    "تخفيضات الموسم: حتى ٥٠٪ في جميع الفروع",
+    "Season sale: up to 50% off in all branches"
+   ],
+   [
+    "ملابس وأحذية للرجال والنساء بأسعار خاصة",
+    "Clothes and shoes for men and women at special prices"
+   ],
+   [
+    "المقاسات متوفرة في كل فرع",
+    "Sizes are available in every branch"
+   ],
+   [
+    "عرض خاص: خصم إضافي ١٠٪ عند الدفع بالبطاقة",
+    "Special offer: a further 10% off when paying by card"
+   ],
+   [
+    "الاستبدال مجانًا خلال ٧ أيام مع الفاتورة",
+    "Exchange is free within 7 days with the receipt"
+   ],
+   [
+    "لا يوجد استرجاع للمشتريات المخفضة",
+    "No refunds on discounted purchases"
+   ],
+   [
+    "ساعات العمل: من ٩ صباحًا إلى ١٠ مساءً",
+    "Opening hours: 9 a.m. to 10 p.m."
+   ]
+  ],
+  "questions": [
+   [
+    "How much is the biggest reduction?",
+    [
+     "Up to 50%",
+     "Up to 10%",
+     "Up to 20%",
+     "Up to 70%"
+    ],
+    "Up to 50%"
+   ],
+   [
+    "When is there an extra 10% off?",
+    [
+     "When paying by card",
+     "When buying two items",
+     "On Fridays",
+     "When buying shoes"
+    ],
+    "When paying by card"
+   ],
+   [
+    "What is needed for a free exchange?",
+    [
+     "The receipt, within 7 days",
+     "The original box",
+     "A card payment",
+     "A phone call"
+    ],
+    "The receipt, within 7 days"
+   ]
+  ]
+ },
+ {
+  "id": "r2-05",
+  "level": 2,
+  "stage": 2,
+  "title": "Clinic notice",
+  "lines": [
+   [
+    "عيادة النور الطبية",
+    "Al Noor Medical Clinic"
+   ],
+   [
+    "ساعات العمل: من الأحد إلى الخميس، من ٨ صباحًا إلى ٩ مساءً.",
+    "Opening hours: Sunday to Thursday, 8 a.m. to 9 p.m."
+   ],
+   [
+    "يرجى حجز موعد قبل الزيارة.",
+    "Please book an appointment before your visit."
+   ],
+   [
+    "عند الوصول يرجى إحضار الهوية وبطاقة التأمين الصحي.",
+    "On arrival please bring your ID and health insurance card."
+   ],
+   [
+    "إذا كان لديك ألم شديد أو حرارة، توجه إلى الطوارئ.",
+    "If you have severe pain or a fever, go to the emergency department."
+   ],
+   [
+    "الصيدلية في الطابق الأول ومفتوحة حتى ١٠ مساءً.",
+    "The pharmacy is on the first floor and open until 10 p.m."
+   ],
+   [
+    "العيادة مغلقة يوم الجمعة.",
+    "The clinic is closed on Friday."
+   ]
+  ],
+  "questions": [
+   [
+    "What should a patient do before visiting?",
+    [
+     "Book an appointment",
+     "Call the pharmacy",
+     "Pay the fee",
+     "Fill in a form at home"
+    ],
+    "Book an appointment"
+   ],
+   [
+    "What should someone with a fever or severe pain do?",
+    [
+     "Go to the emergency department",
+     "Wait for Sunday",
+     "Visit the pharmacy only",
+     "Book for next week"
+    ],
+    "Go to the emergency department"
+   ],
+   [
+    "On which day is the clinic closed?",
+    [
+     "Friday",
+     "Saturday",
+     "Sunday",
+     "Thursday"
+    ],
+    "Friday"
+   ]
+  ]
+ },
+ {
+  "id": "r2-06",
+  "level": 2,
+  "stage": 2,
+  "title": "Medicine label",
+  "lines": [
+   [
+    "اسم الدواء: مسكن للألم",
+    "Medicine: painkiller"
+   ],
+   [
+    "حبة واحدة مرتين يوميًا بعد الأكل.",
+    "One tablet twice a day after food."
+   ],
+   [
+    "لا تستخدم الحبوب قبل الأكل.",
+    "Do not take the tablets before food."
+   ],
+   [
+    "إذا استمر الألم، راجع الطبيب.",
+    "If the pain continues, see the doctor."
+   ],
+   [
+    "احفظ الدواء بعيدًا عن الحرارة.",
+    "Keep the medicine away from heat."
+   ],
+   [
+    "الصيدلية مفتوحة من ٩ صباحًا إلى ١١ مساءً.",
+    "The pharmacy is open from 9 a.m. to 11 p.m."
+   ],
+   [
+    "السعر: ١٢ درهمًا. الدفع نقدًا أو بالبطاقة.",
+    "Price: 12 dirhams. Payment in cash or by card."
+   ],
+   [
+    "التوصيل مجاني من الفرع.",
+    "Delivery from the branch is free."
+   ]
+  ],
+  "questions": [
+   [
+    "How often should the tablet be taken?",
+    [
+     "Twice a day, after food",
+     "Once a day, before food",
+     "Three times a day",
+     "Only when in pain, before food"
+    ],
+    "Twice a day, after food"
+   ],
+   [
+    "What should you do if the pain continues?",
+    [
+     "See the doctor",
+     "Take more tablets",
+     "Return the medicine",
+     "Wait a week"
+    ],
+    "See the doctor"
+   ],
+   [
+    "Where should the medicine be kept?",
+    [
+     "Away from heat",
+     "In the fridge",
+     "Near the window",
+     "In the car"
+    ],
+    "Away from heat"
+   ]
+  ]
+ },
+ {
+  "id": "r2-07",
+  "level": 2,
+  "stage": 2,
+  "title": "Bank branch notice",
+  "lines": [
+   [
+    "فرع المدينة: الصراف الآلي مغلق للصيانة يوم السبت.",
+    "City branch: the ATM is closed for maintenance on Saturday."
+   ],
+   [
+    "يمكنكم السحب والإيداع في الفرع من ٨ صباحًا إلى ٢ ظهرًا.",
+    "You can withdraw and deposit at the branch from 8 a.m. to 2 p.m."
+   ],
+   [
+    "التحويل بين حسابات العملاء مجانًا.",
+    "Transfers between customers' accounts are free."
+   ],
+   [
+    "يرجى التأكد من الرصيد قبل السحب.",
+    "Please check your balance before withdrawing."
+   ],
+   [
+    "لا تعط الرقم السري لأي شخص.",
+    "Do not give your PIN to anyone."
+   ],
+   [
+    "البطاقة ليست لشخص آخر.",
+    "The card is not for anyone else."
+   ],
+   [
+    "الاستعلامات في الطابق الأول.",
+    "Enquiries are on the first floor."
+   ]
+  ],
+  "questions": [
+   [
+    "Why is the ATM closed?",
+    [
+     "For maintenance",
+     "For a holiday",
+     "It is out of cash",
+     "For a new card system"
+    ],
+    "For maintenance"
+   ],
+   [
+    "What is free for customers?",
+    [
+     "Transfers between customers' accounts",
+     "Withdrawals abroad",
+     "New cards",
+     "Deposits of cash"
+    ],
+    "Transfers between customers' accounts"
+   ],
+   [
+    "What must you not do?",
+    [
+     "Give your PIN to anyone",
+     "Withdraw on Saturday",
+     "Use a card",
+     "Check your balance"
+    ],
+    "Give your PIN to anyone"
+   ]
+  ]
+ },
+ {
+  "id": "r2-08",
+  "level": 2,
+  "stage": 2,
+  "title": "Restaurant receipt",
+  "lines": [
+   [
+    "فاتورة رقم ٤٥٧ — الطاولة رقم ٧",
+    "Invoice no. 457 — table no. 7"
+   ],
+   [
+    "وجبة دجاج: ٢٥ درهمًا",
+    "Chicken meal: 25 dirhams"
+   ],
+   [
+    "شاي وقهوة: ٨ دراهم",
+    "Tea and coffee: 8 dirhams"
+   ],
+   [
+    "حلوى: ٧ دراهم",
+    "Dessert: 7 dirhams"
+   ],
+   [
+    "المبلغ قبل الضريبة: ٤٠ درهمًا",
+    "Amount before tax: 40 dirhams"
+   ],
+   [
+    "الضريبة: ٥٪",
+    "Tax: 5%"
+   ],
+   [
+    "الإجمالي شامل الضريبة: ٤٢ درهمًا",
+    "Total including tax: 42 dirhams"
+   ],
+   [
+    "طريقة الدفع: نقدًا",
+    "Payment method: cash"
+   ],
+   [
+    "الاستبدال خلال ٧ أيام مع الفاتورة.",
+    "Exchange within 7 days with the receipt."
+   ]
+  ],
+  "questions": [
+   [
+    "What was the total including tax?",
+    [
+     "42 dirhams",
+     "40 dirhams",
+     "47 dirhams",
+     "25 dirhams"
+    ],
+    "42 dirhams"
+   ],
+   [
+    "How did the customer pay?",
+    [
+     "In cash",
+     "By card",
+     "By transfer",
+     "It was free"
+    ],
+    "In cash"
+   ],
+   [
+    "Which item cost 7 dirhams?",
+    [
+     "Dessert",
+     "Tea and coffee",
+     "The chicken meal",
+     "Water"
+    ],
+    "Dessert"
+   ]
+  ]
+ },
+ {
+  "id": "r2-09",
+  "level": 2,
+  "stage": 2,
+  "title": "Rent notice",
+  "lines": [
+   [
+    "إلى السكان الكرام:",
+    "To our esteemed residents:"
+   ],
+   [
+    "إيجار الشهر القادم مطلوب قبل ٢٥ من الشهر.",
+    "Next month's rent is due before the 25th of the month."
+   ],
+   [
+    "المبلغ: ٣٠٠٠ درهم.",
+    "The amount: 3000 dirhams."
+   ],
+   [
+    "يمكنكم الدفع نقدًا في الاستقبال أو بالتحويل إلى حساب المبنى.",
+    "You can pay in cash at reception or by transfer to the building's account."
+   ],
+   [
+    "يرجى كتابة رقم الشقة في ملاحظات التحويل.",
+    "Please write the flat number in the transfer notes."
+   ],
+   [
+    "الإيصال متوفر في الاستقبال بعد الدفع.",
+    "The receipt is available at reception after payment."
+   ],
+   [
+    "للاستعلامات: الاستقبال في الطابق الأول.",
+    "For enquiries: reception on the first floor."
+   ]
+  ],
+  "questions": [
+   [
+    "When is the rent due?",
+    [
+     "Before the 25th of the month",
+     "On the first of the month",
+     "After the 25th",
+     "At the end of the year"
+    ],
+    "Before the 25th of the month"
+   ],
+   [
+    "How can residents pay?",
+    [
+     "In cash at reception or by transfer",
+     "By card only",
+     "Only by transfer",
+     "At the bank only"
+    ],
+    "In cash at reception or by transfer"
+   ],
+   [
+    "What should be written in the transfer notes?",
+    [
+     "The flat number",
+     "The ID number",
+     "The date of birth",
+     "The phone number"
+    ],
+    "The flat number"
+   ]
+  ]
+ },
+ {
+  "id": "r2-10",
+  "level": 2,
+  "stage": 2,
+  "title": "Short headlines",
+  "lines": [
+   [
+    "مؤتمر دولي في العاصمة الأسبوع المقبل",
+    "International conference in the capital next week"
+   ],
+   [
+    "زيادة عدد السكان في المدينة بنسبة ٥٪",
+    "Population of the city up 5%"
+   ],
+   [
+    "مبادرة جديدة لدعم المواطنين والمقيمين",
+    "New initiative to support citizens and residents"
+   ],
+   [
+    "وزارة الاقتصاد: خطة لمشروع في المنطقة الشمالية",
+    "Ministry of Economy: a plan for a project in the northern region"
+   ],
+   [
+    "معرض محلي في المدينة مفتوح للعائلات",
+    "Local exhibition in the city open to families"
+   ],
+   [
+    "شرطة المدينة: حادث على الطريق ولا يوجد مصابون",
+    "City police: accident on the road, no injuries"
+   ],
+   [
+    "زيارة رسمية إلى الكويت وقطر",
+    "Official visit to Kuwait and Qatar"
+   ]
+  ],
+  "questions": [
+   [
+    "What will be held in the capital next week?",
+    [
+     "An international conference",
+     "A festival",
+     "A football match",
+     "An exhibition"
+    ],
+    "An international conference"
+   ],
+   [
+    "Who is the new initiative for?",
+    [
+     "Citizens and residents",
+     "Families only",
+     "Students",
+     "Tourists"
+    ],
+    "Citizens and residents"
+   ],
+   [
+    "What does the police headline say about the accident?",
+    [
+     "There were no injuries",
+     "Two people were hurt",
+     "The road is closed for a week",
+     "A driver was arrested"
+    ],
+    "There were no injuries"
+   ]
+  ]
+ },
+ {
+  "id": "r2-11",
+  "level": 2,
+  "stage": 2,
+  "title": "Business headlines",
+  "lines": [
+   [
+    "زيادة أسعار النفط ٣٪ هذا الأسبوع",
+    "Oil prices up 3% this week"
+   ],
+   [
+    "مشروع جديد بقيمة ٣ مليارات درهم في الخليج",
+    "New project worth 3 billion dirhams in the Gulf"
+   ],
+   [
+    "مليون زائر لمعرض المدينة الدولي",
+    "One million visitors to the city's international exhibition"
+   ],
+   [
+    "الإمارات والكويت: خطة مشتركة للتجارة",
+    "Emirates and Kuwait: a joint plan for trade"
+   ],
+   [
+    "جائزة عالمية لمبادرة وطنية للمواطنين",
+    "Global prize for a national initiative for citizens"
+   ],
+   [
+    "تقرير رسمي: نسبة الزيادة ٤٪ في الدول العربية",
+    "Official report: an increase of 4% in the Arab countries"
+   ]
+  ],
+  "questions": [
+   [
+    "What happened to oil prices this week?",
+    [
+     "They rose 3%",
+     "They fell 3%",
+     "They stayed the same",
+     "They rose 30%"
+    ],
+    "They rose 3%"
+   ],
+   [
+    "How much is the new Gulf project worth?",
+    [
+     "3 billion dirhams",
+     "3 million dirhams",
+     "30 billion dirhams",
+     "300 million dirhams"
+    ],
+    "3 billion dirhams"
+   ],
+   [
+    "What did the national initiative win?",
+    [
+     "A global prize",
+     "A million dirhams",
+     "A new project",
+     "An official visit"
+    ],
+    "A global prize"
+   ]
+  ]
+ },
+ {
+  "id": "r2-12",
+  "level": 2,
+  "stage": 2,
+  "title": "News brief: road accident",
+  "lines": [
+   [
+    "حادث بين سيارتين على الطريق الرئيسي في المدينة.",
+    "An accident between two cars on the city's main road."
+   ],
+   [
+    "وصلت الشرطة والإسعاف إلى المكان بعد خمس دقائق.",
+    "The police and ambulance reached the scene after five minutes."
+   ],
+   [
+    "قال مسؤول في الشرطة إنه لا يوجد مصابون.",
+    "A police official said there were no injuries."
+   ],
+   [
+    "أغلقت الشرطة المنطقة مدة ساعة ثم فتحتها.",
+    "The police closed the area for an hour, then reopened it."
+   ],
+   [
+    "وتدعو الشرطة السائقين إلى استخدام طريق آخر.",
+    "The police urge drivers to use another road."
+   ]
+  ],
+  "questions": [
+   [
+    "How many cars were in the accident?",
+    [
+     "Two",
+     "One",
+     "Three",
+     "Five"
+    ],
+    "Two"
+   ],
+   [
+    "How long was the area closed?",
+    [
+     "An hour",
+     "Five minutes",
+     "A whole day",
+     "Three hours"
+    ],
+    "An hour"
+   ],
+   [
+    "What did the official say about injuries?",
+    [
+     "There were none",
+     "One person was hurt",
+     "Two were taken to hospital",
+     "It is not yet known"
+    ],
+    "There were none"
+   ]
+  ]
+ },
+ {
+  "id": "r2-13",
+  "level": 2,
+  "stage": 2,
+  "title": "Festival flyer",
+  "lines": [
+   [
+    "مهرجان المدينة الوطني",
+    "The City National Festival"
+   ],
+   [
+    "من ١ إلى ١٥ مارس، من ٤ مساءً حتى ١٠ مساءً.",
+    "From 1 to 15 March, from 4 p.m. until 10 p.m."
+   ],
+   [
+    "معرض مفتوح للعائلات والمواطنين والمقيمين.",
+    "An exhibition open to families, citizens and residents."
+   ],
+   [
+    "جائزة كبيرة لأفضل عرض.",
+    "A big prize for the best show."
+   ],
+   [
+    "الدخول مجانًا، والمواقف أمام البوابة الرئيسية.",
+    "Entry is free, and parking is in front of the main gate."
+   ],
+   [
+    "ممنوع التدخين وممنوع التصوير داخل المعرض.",
+    "Smoking and photography are forbidden inside the exhibition."
+   ],
+   [
+    "للاستعلامات: الاستقبال عند المدخل.",
+    "For enquiries: reception at the entrance."
+   ]
+  ],
+  "questions": [
+   [
+    "How much does entry cost?",
+    [
+     "It is free",
+     "10 dirhams",
+     "25 dirhams",
+     "It depends on the day"
+    ],
+    "It is free"
+   ],
+   [
+    "What is forbidden inside the exhibition?",
+    [
+     "Smoking and photography",
+     "Children",
+     "Food",
+     "Phones"
+    ],
+    "Smoking and photography"
+   ],
+   [
+    "Where is the parking?",
+    [
+     "In front of the main gate",
+     "Behind reception",
+     "Outside the city",
+     "Next to the exit"
+    ],
+    "In front of the main gate"
+   ]
+  ]
+ },
+ {
+  "id": "r2-14",
+  "level": 2,
+  "stage": 2,
+  "title": "Ministry announcement",
+  "lines": [
+   [
+    "إعلان من الوزارة إلى المواطنين والمقيمين",
+    "Announcement from the ministry to citizens and residents"
+   ],
+   [
+    "قرار جديد: تجديد الإقامة عبر الموقع الرسمي.",
+    "New decision: residence renewal through the official website."
+   ],
+   [
+    "لا حاجة إلى زيارة الفرع.",
+    "There is no need to visit the branch."
+   ],
+   [
+    "الرسوم: ٣٠٠ درهم لمدة سنتين.",
+    "Fees: 300 dirhams for two years."
+   ],
+   [
+    "الدفع بالبطاقة فقط.",
+    "Payment by card only."
+   ],
+   [
+    "المستندات المطلوبة: نسخة من جواز السفر وصورة شخصية.",
+    "Required documents: a copy of the passport and a passport photo."
+   ]
+  ],
+  "questions": [
+   [
+    "How can residence be renewed under the new decision?",
+    [
+     "Through the official website",
+     "At the branch only",
+     "By post",
+     "By phone"
+    ],
+    "Through the official website"
+   ],
+   [
+    "How long does the fee cover?",
+    [
+     "Two years",
+     "One year",
+     "Six months",
+     "Five years"
+    ],
+    "Two years"
+   ],
+   [
+    "How can the fee be paid?",
+    [
+     "By card only",
+     "In cash only",
+     "By card or cash",
+     "By transfer only"
+    ],
+    "By card only"
+   ]
+  ]
+ },
+ {
+  "id": "r2-15",
+  "level": 2,
+  "stage": 2,
+  "title": "Lost property notice",
+  "lines": [
+   [
+    "وجد الموظف حقيبة سوداء أمام مصلى الرجال.",
+    "The employee found a black bag in front of the men's prayer room."
+   ],
+   [
+    "فيها جواز سفر وبطاقة.",
+    "In it are a passport and a card."
+   ],
+   [
+    "هي الآن في الاستقبال.",
+    "It is now at reception."
+   ],
+   [
+    "إذا تركت الحقيبة هنا، أحضر هويتك إلى الاستقبال.",
+    "If you left the bag here, bring your ID to reception."
+   ],
+   [
+    "سنسأل عن الاسم ورقم الجواز ثم نعطي الحقيبة.",
+    "We will ask for the name and passport number, then give you the bag."
+   ],
+   [
+    "بعد ٣٠ يومًا نرسل الحقيبة إلى الشرطة.",
+    "After 30 days we will send the bag to the police."
+   ]
+  ],
+  "questions": [
+   [
+    "Where was the bag found?",
+    [
+     "In front of the men's prayer room",
+     "In the car park",
+     "At the gate",
+     "In the lift"
+    ],
+    "In front of the men's prayer room"
+   ],
+   [
+    "What must the owner bring?",
+    [
+     "Their ID",
+     "A receipt",
+     "A photo of the bag",
+     "A phone number"
+    ],
+    "Their ID"
+   ],
+   [
+    "What happens after 30 days?",
+    [
+     "The bag goes to the police",
+     "The bag is thrown away",
+     "The bag is posted to the owner",
+     "The bag goes to the ministry"
+    ],
+    "The bag goes to the police"
+   ]
+  ]
+ },
+ {
+  "id": "r2-16",
+  "level": 2,
+  "stage": 2,
+  "title": "Service centre queue sign",
+  "lines": [
+   [
+    "كيف تدفع الرسوم؟",
+    "How do you pay the fees?"
+   ],
+   [
+    "خذ رقمًا من الجهاز أمام المدخل.",
+    "Take a number from the machine in front of the entrance."
+   ],
+   [
+    "ثم انتظر هنا حتى يظهر رقمك.",
+    "Then wait here until your number appears."
+   ],
+   [
+    "لا تدخل قبل ذلك، لأن الموظف يخدم شخصًا آخر.",
+    "Do not go in before then, because the employee is serving someone else."
+   ],
+   [
+    "الدفع نقدًا أو بالبطاقة عند الشباك.",
+    "Payment in cash or by card at the counter."
+   ],
+   [
+    "لكن الدفع بالبطاقة فقط بعد الساعة ٥ مساءً.",
+    "But after 5 p.m. it is card payment only."
+   ],
+   [
+    "الجهاز مغلق يوم الجمعة.",
+    "The machine is closed on Friday."
+   ]
+  ],
+  "questions": [
+   [
+    "Where is the number machine?",
+    [
+     "In front of the entrance",
+     "Behind the counter",
+     "Outside the building",
+     "Upstairs"
+    ],
+    "In front of the entrance"
+   ],
+   [
+    "Why should you not go in early?",
+    [
+     "The employee is serving someone else",
+     "The centre is closed",
+     "You need an appointment",
+     "Cash is not accepted"
+    ],
+    "The employee is serving someone else"
+   ],
+   [
+    "What changes after 5 p.m.?",
+    [
+     "Only card payment is accepted",
+     "The centre closes",
+     "Fees are free",
+     "Numbers are not needed"
+    ],
+    "Only card payment is accepted"
+   ]
+  ]
+ }
+]

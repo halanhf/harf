@@ -1,0 +1,566 @@
+[
+ {
+  "id": "r1-01",
+  "level": 1,
+  "stage": 1,
+  "title": "Car park sign",
+  "lines": [
+   [
+    "موقف السيارات",
+    "Car park"
+   ],
+   [
+    "خاص بِالزُّوَّار فقط",
+    "For visitors only"
+   ],
+   [
+    "المدخل من الشَّارِع الرئيسي",
+    "Entrance from the main street"
+   ],
+   [
+    "ممنوع الانتظار هنا",
+    "No waiting here"
+   ],
+   [
+    "الدخول مَجَّانِيّ",
+    "Free entry"
+   ],
+   [
+    "ساعات العمل من ٦ صباحا إلى ١٢ مساء",
+    "Opening hours: 6 am to 12 midnight"
+   ]
+  ],
+  "questions": [
+   [
+    "Who may use this car park?",
+    [
+     "Visitors only",
+     "Staff only",
+     "Everyone",
+     "Taxis only"
+    ],
+    "Visitors only"
+   ],
+   [
+    "Where is the entrance?",
+    [
+     "From the main street",
+     "From gate 2",
+     "Through the pharmacy",
+     "From the lift"
+    ],
+    "From the main street"
+   ]
+  ]
+ },
+ {
+  "id": "r1-02",
+  "level": 1,
+  "stage": 1,
+  "title": "Pharmacy hours",
+  "lines": [
+   [
+    "صيدلية الحي",
+    "The neighbourhood pharmacy"
+   ],
+   [
+    "الْأَدْوِيَة وَالْوَصْفَات",
+    "Medicines and prescriptions"
+   ],
+   [
+    "ساعات العمل من الساعة ٩ صباحا إلى الساعة ١٠ مساء",
+    "Opening hours: from 9 am to 10 pm"
+   ],
+   [
+    "مفتوحة طوال الأسبوع",
+    "Open all week"
+   ],
+   [
+    "اِسْأَلْ الصيدلي",
+    "Ask the pharmacist"
+   ]
+  ],
+  "questions": [
+   [
+    "When does the pharmacy close in the evening?",
+    [
+     "10 pm",
+     "9 pm",
+     "9 am",
+     "12 midnight"
+    ],
+    "10 pm"
+   ],
+   [
+    "On which days is it open?",
+    [
+     "Every day of the week",
+     "Weekdays only",
+     "Not on Friday",
+     "Only on Friday"
+    ],
+    "Every day of the week"
+   ]
+  ]
+ },
+ {
+  "id": "r1-03",
+  "level": 1,
+  "stage": 1,
+  "title": "Cafe menu",
+  "lines": [
+   [
+    "الْقَائِمَة",
+    "The menu"
+   ],
+   [
+    "شاي ٣",
+    "Tea 3"
+   ],
+   [
+    "قهوة ٥",
+    "Coffee 5"
+   ],
+   [
+    "عصير ٧",
+    "Juice 7"
+   ],
+   [
+    "الْإِفْطَار ١٥",
+    "Breakfast 15"
+   ],
+   [
+    "ماء ٢",
+    "Water 2"
+   ],
+   [
+    "الْأَسْعَار بالدرهم",
+    "Prices in dirhams"
+   ]
+  ],
+  "questions": [
+   [
+    "Which item costs the most?",
+    [
+     "Breakfast",
+     "Juice",
+     "Coffee",
+     "Water"
+    ],
+    "Breakfast"
+   ],
+   [
+    "What is the price of water?",
+    [
+     "2",
+     "3",
+     "5",
+     "7"
+    ],
+    "2"
+   ]
+  ]
+ },
+ {
+  "id": "r1-04",
+  "level": 1,
+  "stage": 1,
+  "title": "Receipt",
+  "lines": [
+   [
+    "المطعم",
+    "The restaurant"
+   ],
+   [
+    "الْإِجْمَالِي ٢٠ درهم شَامِل الضَّرِيبَة",
+    "Total: 20 dirhams including tax"
+   ],
+   [
+    "يوم الأحد",
+    "Sunday"
+   ],
+   [
+    "شكرا لِزِيَارَتِكُمْ",
+    "Thank you for your visit"
+   ]
+  ],
+  "questions": [
+   [
+    "How much is the total?",
+    [
+     "20 dirhams",
+     "2 dirhams",
+     "12 dirhams",
+     "25 dirhams"
+    ],
+    "20 dirhams"
+   ],
+   [
+    "On which day was the receipt issued?",
+    [
+     "Sunday",
+     "Monday",
+     "Friday",
+     "Saturday"
+    ],
+    "Sunday"
+   ]
+  ]
+ },
+ {
+  "id": "r1-05",
+  "level": 1,
+  "stage": 1,
+  "title": "Metro platform notice",
+  "lines": [
+   [
+    "الْقِطَار القادم بعد ٥ دَقَائِق",
+    "The next train is in 5 minutes"
+   ],
+   [
+    "يرجى الانتظار خلف الْخَطّ",
+    "Please wait behind the line"
+   ],
+   [
+    "ممنوع التدخين",
+    "No smoking"
+   ]
+  ],
+  "questions": [
+   [
+    "When is the next train?",
+    [
+     "In 5 minutes",
+     "In 15 minutes",
+     "Now",
+     "Tomorrow"
+    ],
+    "In 5 minutes"
+   ],
+   [
+    "What are passengers asked to do?",
+    [
+     "Wait behind the line",
+     "Move to the exit",
+     "Buy a ticket",
+     "Press the button"
+    ],
+    "Wait behind the line"
+   ]
+  ]
+ },
+ {
+  "id": "r1-06",
+  "level": 1,
+  "stage": 1,
+  "title": "Lift notice",
+  "lines": [
+   [
+    "المصعد مُعَطَّل",
+    "The lift is out of order"
+   ],
+   [
+    "يرجى اسْتِخْدَام السلم",
+    "Please use the stairs"
+   ],
+   [
+    "صيانة",
+    "Maintenance"
+   ],
+   [
+    "نَعْتَذِرُ عن الْإِزْعَاج",
+    "We apologise for the inconvenience"
+   ]
+  ],
+  "questions": [
+   [
+    "What is wrong with the lift?",
+    [
+     "It is out of order",
+     "It is for elders only",
+     "It is full",
+     "It is closed for a day"
+    ],
+    "It is out of order"
+   ],
+   [
+    "What are people asked to do?",
+    [
+     "Use the stairs",
+     "Wait here",
+     "Call reception",
+     "Leave the building"
+    ],
+    "Use the stairs"
+   ]
+  ]
+ },
+ {
+  "id": "r1-07",
+  "level": 1,
+  "stage": 1,
+  "title": "Mosque notice",
+  "lines": [
+   [
+    "مصلى للنساء في الطابق الأول",
+    "A women's prayer room on the first floor"
+   ],
+   [
+    "صَلَاة الجمعة ١٢ ظهرا",
+    "Friday prayer at 12 noon"
+   ],
+   [
+    "مكان الْوُضُوء في الطابق الْأَرْضِيّ",
+    "The ablution area is on the ground floor"
+   ],
+   [
+    "الرجاء الْهُدُوء",
+    "Please keep quiet"
+   ]
+  ],
+  "questions": [
+   [
+    "Where is the women's prayer room?",
+    [
+     "On the first floor",
+     "On the ground floor",
+     "Next to the entrance",
+     "On the second floor"
+    ],
+    "On the first floor"
+   ],
+   [
+    "What time is Friday prayer?",
+    [
+     "12 noon",
+     "12 midnight",
+     "1 pm",
+     "10 am"
+    ],
+    "12 noon"
+   ]
+  ]
+ },
+ {
+  "id": "r1-08",
+  "level": 1,
+  "stage": 1,
+  "title": "Milk label",
+  "lines": [
+   [
+    "حليب طَازَج",
+    "Fresh milk"
+   ],
+   [
+    "يحفظ في الثَّلَّاجَة",
+    "Keep in the fridge"
+   ],
+   [
+    "يَنْتَهِي يوم الخميس",
+    "Expires on Thursday"
+   ]
+  ],
+  "questions": [
+   [
+    "Where should the milk be kept?",
+    [
+     "In the fridge",
+     "In the sun",
+     "In the freezer",
+     "At room temperature"
+    ],
+    "In the fridge"
+   ],
+   [
+    "When does it expire?",
+    [
+     "Thursday",
+     "Tuesday",
+     "Sunday",
+     "Next month"
+    ],
+    "Thursday"
+   ]
+  ]
+ },
+ {
+  "id": "r1-09",
+  "level": 1,
+  "stage": 1,
+  "title": "Bus stop notice",
+  "lines": [
+   [
+    "الحافلة رَقْم ٨",
+    "Bus number 8"
+   ],
+   [
+    "المغادرة كل ١٠ دَقَائِق من هذه المحطة",
+    "Departures every 10 minutes from this stop"
+   ],
+   [
+    "الصُّعُود من الباب الأمامي",
+    "Board by the front door"
+   ],
+   [
+    "لا تعمل يوم الجمعة",
+    "Does not run on Friday"
+   ]
+  ],
+  "questions": [
+   [
+    "How often does the bus leave?",
+    [
+     "Every 10 minutes",
+     "Every 5 minutes",
+     "Every hour",
+     "Once a day"
+    ],
+    "Every 10 minutes"
+   ],
+   [
+    "When does the bus not run?",
+    [
+     "Friday",
+     "Sunday",
+     "Saturday",
+     "Every evening"
+    ],
+    "Friday"
+   ]
+  ]
+ },
+ {
+  "id": "r1-10",
+  "level": 1,
+  "stage": 1,
+  "title": "Hotel reception",
+  "lines": [
+   [
+    "الاستقبال في الطابق الْأَرْضِيّ",
+    "Reception is on the ground floor"
+   ],
+   [
+    "مفتوح ٢٤ ساعة",
+    "Open 24 hours"
+   ],
+   [
+    "الْإِفْطَار من ٧ إلى ١٠ صباحا",
+    "Breakfast from 7 to 10 am"
+   ],
+   [
+    "يرجى تَسْلِيم المفتاح عند المغادرة",
+    "Please hand in the key when leaving"
+   ]
+  ],
+  "questions": [
+   [
+    "Where is reception?",
+    [
+     "On the ground floor",
+     "On the first floor",
+     "Outside the hotel",
+     "Next to the lift"
+    ],
+    "On the ground floor"
+   ],
+   [
+    "When should guests hand in the key?",
+    [
+     "When leaving",
+     "When arriving",
+     "In the morning only",
+     "On Friday"
+    ],
+    "When leaving"
+   ]
+  ]
+ },
+ {
+  "id": "r1-11",
+  "level": 1,
+  "stage": 1,
+  "title": "Fire safety sign",
+  "lines": [
+   [
+    "في حالة الحريق",
+    "In case of fire"
+   ],
+   [
+    "اضغط الزِّرّ الْأَحْمَر",
+    "Press the red button"
+   ],
+   [
+    "لا تَسْتَخْدِمْ المصعد",
+    "Do not use the lift"
+   ],
+   [
+    "اِتَّجِهْ إلى مخرج الطوارئ",
+    "Head for the emergency exit"
+   ]
+  ],
+  "questions": [
+   [
+    "What should you press?",
+    [
+     "The red button",
+     "The green button",
+     "The lift button",
+     "The door"
+    ],
+    "The red button"
+   ],
+   [
+    "What should you not use?",
+    [
+     "The lift",
+     "The stairs",
+     "The exit",
+     "The phone"
+    ],
+    "The lift"
+   ]
+  ]
+ },
+ {
+  "id": "r1-12",
+  "level": 1,
+  "stage": 1,
+  "title": "Clinic notice",
+  "lines": [
+   [
+    "الْعِيَادَة مغلقة يوم السبت",
+    "The clinic is closed on Saturday"
+   ],
+   [
+    "لِلْمَوَاعِيد اِتَّصِلْ بالاستقبال",
+    "For appointments, call reception"
+   ],
+   [
+    "ساعات العمل من ٨ صباحا إلى ٤ مساء",
+    "Opening hours are from 8 am to 4 pm"
+   ]
+  ],
+  "questions": [
+   [
+    "When is the clinic closed?",
+    [
+     "Saturday",
+     "Sunday",
+     "Friday",
+     "Thursday"
+    ],
+    "Saturday"
+   ],
+   [
+    "Who should you call for an appointment?",
+    [
+     "Reception",
+     "The pharmacy",
+     "The ministry",
+     "Emergency services"
+    ],
+    "Reception"
+   ]
+  ]
+ }
+]
