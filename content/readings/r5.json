@@ -1038,5 +1038,405 @@
     "It is a fine tradition, but not the same as cooking too much"
    ]
   ]
+ },
+ {
+  "id": "r5-08",
+  "level": 5,
+  "stage": 5,
+  "title": "News: artificial intelligence in the classroom",
+  "lines": [
+   [
+    "أطلقت الوزارة هذا الأسبوع تجربة لاستخدام الذكاء الاصطناعي في التعليم، في عشرين مدرسة حكومية في عدة مدن.",
+    "This week the ministry launched a trial of using artificial intelligence in education, in twenty state schools in several cities."
+   ],
+   [
+    "وتأتي التجربة ضمن خطة لتطوير المناهج وتحسين مستوى الطلاب في الرياضيات واللغة العربية.",
+    "The trial is part of a plan to develop the curriculum and improve students' level in maths and Arabic."
+   ],
+   [
+    "وأوضح مسؤول في الوزارة أن كل طالب سيحصل على برنامج يساعده على التعلم وفقا لمستواه وسرعته.",
+    "An official at the ministry explained that each student will get a program that helps him learn according to his level and speed."
+   ],
+   [
+    "فالبرنامج يعرف الأسئلة التي يخطئ فيها الطالب، ويعطيه تمارين إضافية بشأنها.",
+    "The program knows the questions the student gets wrong, and gives him extra exercises on them."
+   ],
+   [
+    "وفي الوقت نفسه، يحصل المعلم على تقرير يومي عن كل طالب في صفه.",
+    "At the same time, the teacher gets a daily report on every student in his class."
+   ],
+   [
+    "وقال المسؤول إن الهدف ليس أن يأخذ البرنامج مكان المعلم، بل أن يوفر له وقتا أكبر للطلاب.",
+    "The official said the aim is not for the program to take the teacher's place, but to give him more time for the students."
+   ],
+   [
+    "وأضاف أن المعلمين حاليا يقضون ساعات طويلة في تصحيح الواجبات، بدلا من شرح الدروس.",
+    "He added that teachers currently spend long hours marking homework instead of explaining lessons."
+   ],
+   [
+    "وستستمر التجربة عاما دراسيا كاملا، ثم تقرر الوزارة بعد ذلك إن كانت ستطبقها في كل المدارس.",
+    "The trial will last a full school year, and the ministry will then decide whether to apply it in all schools."
+   ],
+   [
+    "وقد لقيت الفكرة ترحيبا من كثير من المعلمين، لا سيما معلمي الصفوف الكبيرة.",
+    "The idea has been welcomed by many teachers, especially those who teach large classes."
+   ],
+   [
+    "وقالت معلمة رياضيات إن في صفها أكثر من ثلاثين طالبا، ولا تستطيع أن تتابع كل واحد منهم وحدها.",
+    "A maths teacher said she has more than thirty students in her class and cannot follow each of them on her own."
+   ],
+   [
+    "إلا أن بعض الآباء عبروا عن قلقهم من أن يقضي أطفالهم وقتا أطول أمام الشاشات.",
+    "However, some parents expressed their worry that their children will spend more time in front of screens."
+   ],
+   [
+    "كما تساءل آخرون عن بيانات الطلاب، وأين تحفظ، ومن يستطيع أن يراها.",
+    "Others wondered about the students' data: where it is kept, and who can see it."
+   ],
+   [
+    "وردت الوزارة بأن البيانات تحفظ داخل الدولة، ولا تستخدم إلا لأغراض تعليمية.",
+    "The ministry replied that the data is kept inside the country and is used only for educational purposes."
+   ],
+   [
+    "وأكدت أن الطالب لن يستخدم البرنامج أكثر من ساعة واحدة في اليوم داخل المدرسة.",
+    "It stressed that a student will not use the program for more than one hour a day at school."
+   ],
+   [
+    "من ناحية أخرى، يرى بعض الخبراء أن نجاح التجربة يعتمد على تدريب المعلمين قبل كل شيء.",
+    "On the other hand, some experts believe the trial's success depends above all on training teachers."
+   ],
+   [
+    "فالتقنية، مهما كانت متطورة، لا تفيد إذا لم يعرف المعلم كيف يستخدمها في صفه.",
+    "Technology, however advanced, is of no use if the teacher does not know how to use it in class."
+   ],
+   [
+    "لذا أعلنت الوزارة برنامجا لتدريب المعلمين المشاركين، يبدأ قبل العام الدراسي بأسبوعين.",
+    "So the ministry announced a training programme for the participating teachers, starting two weeks before the school year."
+   ],
+   [
+    "ويبدو أن التجربة ستكون محل اهتمام كبير، إذ طلبت مدارس كثيرة أخرى أن تشارك فيها.",
+    "It seems the trial will attract great interest, as many other schools have asked to take part in it."
+   ],
+   [
+    "غير أن الوزارة قالت إنها تفضل أن تبدأ بعدد صغير من المدارس، ثم تتوسع بناء على النتائج.",
+    "However, the ministry said it prefers to start with a small number of schools and then expand on the basis of the results."
+   ],
+   [
+    "وستنشر الوزارة تقريرا عن التجربة في نهاية الفصل الدراسي الأول.",
+    "The ministry will publish a report on the trial at the end of the first term."
+   ]
+  ],
+  "questions": [
+   [
+    "What is the report about?",
+    [
+     "A trial of artificial intelligence in some state schools",
+     "A ban on phones in schools",
+     "A new university for technology",
+     "The closure of twenty schools"
+    ],
+    "A trial of artificial intelligence in some state schools"
+   ],
+   [
+    "What does the program do when a student gets questions wrong?",
+    [
+     "It gives him extra exercises on them",
+     "It tells his parents",
+     "It lowers his marks",
+     "It sends him to the teacher"
+    ],
+    "It gives him extra exercises on them"
+   ],
+   [
+    "Why do some teachers welcome the idea?",
+    [
+     "They cannot follow every student in large classes alone",
+     "They want to work fewer hours",
+     "They will get higher salaries",
+     "They do not like marking"
+    ],
+    "They cannot follow every student in large classes alone"
+   ],
+   [
+    "What do some experts say the trial's success depends on?",
+    [
+     "Training the teachers",
+     "Buying better computers",
+     "Longer school days",
+     "Parents' support"
+    ],
+    "Training the teachers"
+   ],
+   [
+    "Why does the ministry want to start with only twenty schools?",
+    [
+     "It prefers to expand gradually based on results",
+     "Other schools refused to take part",
+     "It has no more money",
+     "The program only works in small cities"
+    ],
+    "It prefers to expand gradually based on results"
+   ]
+  ]
+ },
+ {
+  "id": "r5-09",
+  "level": 5,
+  "stage": 5,
+  "title": "Opinion: one city, many languages",
+  "lines": [
+   [
+    "في مدينتنا يعيش ويعمل أناس من أكثر من مائتي جنسية، يتكلمون عشرات اللغات.",
+    "In our city, people of more than two hundred nationalities live and work, speaking dozens of languages."
+   ],
+   [
+    "وفي الحي الواحد، قد تسمع الأذان، وترى عيدا يحتفل به الجيران من دين آخر، في الأسبوع نفسه.",
+    "In a single neighbourhood you may hear the call to prayer and see a festival that neighbours of another religion are celebrating, in the same week."
+   ],
+   [
+    "ولا شك أن هذا التنوع من أكبر نعم هذه المدينة، غير أنه لا يأتي وحده.",
+    "There is no doubt that this diversity is one of this city's greatest blessings, but it does not come by itself."
+   ],
+   [
+    "فالتعايش ليس شيئا نحصل عليه مرة واحدة، بل عمل يومي يحتاج إلى جهد ووعي.",
+    "Coexistence is not something we get once and for all, but daily work that needs effort and awareness."
+   ],
+   [
+    "وكثيرا ما نسمع كلمة التسامح، إلا أننا نادرا ما نتوقف عند معناها الحقيقي.",
+    "We often hear the word tolerance, but we rarely stop to think about its real meaning."
+   ],
+   [
+    "فالتسامح في رأيي ليس أن نقبل الآخر لأننا مضطرون، بل أن نحترمه لأنه إنسان مثلنا.",
+    "In my opinion, tolerance is not accepting the other because we have to, but respecting him because he is a human being like us."
+   ],
+   [
+    "وهو لا يعني أن نترك ديننا أو تقاليدنا، بل أن نعرفها جيدا، ونعرف تقاليد غيرنا كذلك.",
+    "Nor does it mean giving up our religion or our traditions, but knowing them well, and knowing others' traditions too."
+   ],
+   [
+    "ومن الواضح أن المدرسة هي المكان الأول لتعلم ذلك.",
+    "Clearly, school is the first place to learn this."
+   ],
+   [
+    "فالطفل الذي يجلس في صفه إلى جانب زملاء من عشر جنسيات، يتعلم أن الاختلاف أمر طبيعي.",
+    "A child who sits in class alongside classmates of ten nationalities learns that difference is normal."
+   ],
+   [
+    "أما مكان العمل، فهو امتحان حقيقي لهذه القيم، لا سيما حين يكون هناك ضغط أو خلاف.",
+    "As for the workplace, it is a real test of these values, especially when there is pressure or disagreement."
+   ],
+   [
+    "ويبدو أن بعضنا يتحدث عن التسامح كثيرا، ثم يتجاهل زميله لأنه من بلد آخر.",
+    "It seems that some of us talk about tolerance a lot, and then ignore a colleague because he is from another country."
+   ],
+   [
+    "وهنا لا بد من الصدق مع النفس قبل أن نطلب ذلك من الآخرين.",
+    "Here we must be honest with ourselves before asking it of others."
+   ],
+   [
+    "بالإضافة إلى ذلك، يلعب الإعلام دورا مهما، سواء في نشر الحوار أم في نشر الخوف.",
+    "In addition, the media plays an important role, whether in spreading dialogue or in spreading fear."
+   ],
+   [
+    "فمقطع واحد على وسائل التواصل الاجتماعي قد يصف شعبا كاملا بصورة سلبية، ويصدقه الآلاف.",
+    "A single clip on social media can describe a whole people negatively, and thousands believe it."
+   ],
+   [
+    "لذا ينبغي أن نسأل دائما: هل هذا الكلام حقيقة، أم مجرد رأي شخص واحد؟",
+    "So we should always ask: is this a fact, or merely one person's opinion?"
+   ],
+   [
+    "ولست أقول إن مدينتنا بلا مشاكل، فالتعايش بين هذا العدد من الناس ليس سهلا أبدا.",
+    "I am not saying our city has no problems: coexistence between this many people is never easy."
+   ],
+   [
+    "لكن التجربة حتى الآن تستحق الفخر، وتستحق أن نحافظ عليها للجيل القادم.",
+    "But the experience so far deserves pride, and deserves to be kept for the next generation."
+   ],
+   [
+    "وفي النهاية، يبدأ التعايش بأشياء صغيرة: تحية للجار، وابتسامة للعامل، وسؤال عن عيد زميل.",
+    "In the end, coexistence starts with small things: a greeting to a neighbour, a smile for a worker, a question about a colleague's festival."
+   ]
+  ],
+  "questions": [
+   [
+    "What is the main idea of the article?",
+    [
+     "Coexistence in a diverse city needs daily effort",
+     "Tolerance means giving up our traditions",
+     "The city has too many nationalities",
+     "Schools should teach only one language"
+    ],
+    "Coexistence in a diverse city needs daily effort"
+   ],
+   [
+    "How does the writer define tolerance?",
+    [
+     "Respecting others as human beings like us",
+     "Accepting others because we have to",
+     "Leaving our own traditions",
+     "Avoiding people from other countries"
+    ],
+    "Respecting others as human beings like us"
+   ],
+   [
+    "Why does the writer see school as the first place to learn coexistence?",
+    [
+     "Children sit with classmates of many nationalities",
+     "Teachers come from many countries",
+     "Schools teach many religions",
+     "Children learn many languages there"
+    ],
+    "Children sit with classmates of many nationalities"
+   ],
+   [
+    "What does the writer suggest we ask about what we see on social media?",
+    [
+     "Whether it is a fact or one person's opinion",
+     "Who paid for it",
+     "How many people shared it",
+     "Which language it is in"
+    ],
+    "Whether it is a fact or one person's opinion"
+   ],
+   [
+    "What is the writer's view of the city's experience so far?",
+    [
+     "It has problems but deserves pride",
+     "It has failed",
+     "It has no problems at all",
+     "It is only good for schools"
+    ],
+    "It has problems but deserves pride"
+   ]
+  ]
+ },
+ {
+  "id": "r5-10",
+  "level": 5,
+  "stage": 5,
+  "title": "News: rents rise again",
+  "lines": [
+   [
+    "كشفت دراسة جديدة أعدتها شركة عقارات في دبي أن إيجارات الشقق ارتفعت بنسبة اثني عشر في المائة خلال العام الماضي.",
+    "A new study prepared by a Dubai property company revealed that flat rents rose by twelve percent over the past year."
+   ],
+   [
+    "وقالت الشركة إن الارتفاع شمل معظم مناطق المدينة، لا سيما المناطق القريبة من المترو والمدارس.",
+    "The company said the rise covered most areas of the city, especially areas close to the metro and schools."
+   ],
+   [
+    "وأوضحت أن متوسط إيجار شقة من غرفتين بلغ نحو تسعين ألف درهم في السنة في هذه المناطق.",
+    "It explained that the average rent for a two-bedroom flat reached about ninety thousand dirhams a year in these areas."
+   ],
+   [
+    "وأرجعت الدراسة هذا الارتفاع إلى زيادة كبيرة في عدد السكان، مقابل عدد محدود من الشقق الجديدة.",
+    "The study put this rise down to a large increase in the population, against a limited number of new flats."
+   ],
+   [
+    "فقد انتقلت آلاف الأسر إلى المدينة خلال العام، بينما تأخر تسليم عدة مشاريع سكنية.",
+    "Thousands of families moved to the city during the year, while the handover of several housing projects was delayed."
+   ],
+   [
+    "وبالتالي أصبح الطلب على الشقق أكبر بكثير من المعروض، مما أدى إلى ارتفاع الأسعار.",
+    "As a result, demand for flats became much greater than supply, which led to higher prices."
+   ],
+   [
+    "وقال مدير في الشركة إن الإيجارات قد تستمر في الارتفاع خلال الأشهر المقبلة، وإن بشكل أبطأ.",
+    "A manager at the company said rents may keep rising in the coming months, though more slowly."
+   ],
+   [
+    "ويبدو أن كثيرا من الأسر بدأت تبحث عن حلول أخرى، نظرا لأن الرواتب لم ترتفع بالسرعة نفسها.",
+    "It seems many families have started looking for other solutions, since salaries have not risen at the same speed."
+   ],
+   [
+    "فمعظم الذين شاركوا في الدراسة قالوا إن الإيجار يأخذ أكثر من ثلث دخلهم الشهري.",
+    "Most of those who took part in the study said rent takes more than a third of their monthly income."
+   ],
+   [
+    "وقالت موظفة في بنك إنها انتقلت مع أسرتها إلى منطقة بعيدة عن عملها، بحثا عن إيجار أقل.",
+    "A bank employee said she had moved with her family to an area far from her work, in search of lower rent."
+   ],
+   [
+    "وأضافت أنها توفر الآن مبلغا جيدا كل شهر، إلا أنها تقضي ساعتين يوميا في الطريق.",
+    "She added that she now saves a good sum every month, but spends two hours a day on the road."
+   ],
+   [
+    "أما آخرون، فقرروا أن يسكنوا مع أسرة أخرى في شقة واحدة، من أجل تقسيم الإيجار.",
+    "Others have decided to live with another family in a single flat, in order to split the rent."
+   ],
+   [
+    "في المقابل، يرى ملاك العقارات أن الأسعار ما زالت معقولة مقارنة بمدن أخرى في المنطقة.",
+    "On the other hand, property owners believe prices are still reasonable compared with other cities in the region."
+   ],
+   [
+    "وقال أحدهم إن تكلفة الصيانة والخدمات ارتفعت أيضا، وإن الإيجار يجب أن يغطي هذه التكلفة.",
+    "One of them said the cost of maintenance and services has also gone up, and that the rent must cover this cost."
+   ],
+   [
+    "وفي هذا الشأن، دعا خبراء إلى بناء مزيد من الشقق بأسعار تناسب الأسر ذات الدخل المتوسط.",
+    "On this matter, experts called for more flats to be built at prices suited to middle-income families."
+   ],
+   [
+    "كما طالبوا بتحسين المواصلات بين وسط المدينة والمناطق البعيدة، حتى يصبح السكن هناك خيارا عمليا.",
+    "They also called for better transport between the city centre and outlying areas, so that living there becomes a practical choice."
+   ],
+   [
+    "وتتوقع الشركة أن تنخفض الضغوط على السوق بعد عامين، حين تنتهي المشاريع الكبيرة التي يجري بناؤها حاليا.",
+    "The company expects pressure on the market to ease in two years, when the big projects now being built are finished."
+   ]
+  ],
+  "questions": [
+   [
+    "What did the study find?",
+    [
+     "Flat rents rose by twelve percent last year",
+     "Flat rents fell in most areas",
+     "Salaries rose faster than rents",
+     "New flats are empty"
+    ],
+    "Flat rents rose by twelve percent last year"
+   ],
+   [
+    "What reason does the study give for the rise?",
+    [
+     "More people, but a limited number of new flats",
+     "Higher taxes on property",
+     "Lower salaries",
+     "Fewer families in the city"
+    ],
+    "More people, but a limited number of new flats"
+   ],
+   [
+    "What did the bank employee do?",
+    [
+     "Moved to a cheaper area far from her work",
+     "Bought a flat",
+     "Moved in with another family",
+     "Left the city"
+    ],
+    "Moved to a cheaper area far from her work"
+   ],
+   [
+    "What do property owners say?",
+    [
+     "Prices are still reasonable compared with other cities",
+     "Rents will fall soon",
+     "They are losing money",
+     "They will stop renting flats"
+    ],
+    "Prices are still reasonable compared with other cities"
+   ],
+   [
+    "What does the company expect in two years?",
+    [
+     "Less pressure on the market when big projects are finished",
+     "Rents doubling",
+     "The metro closing",
+     "No more building"
+    ],
+    "Less pressure on the market when big projects are finished"
+   ]
+  ]
  }
 ]

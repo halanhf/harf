@@ -660,6 +660,10 @@
     "There is a car park behind the mosque."
    ],
    [
+    "ويمكن للعائلات أن تصلي في القاعة الكبيرة.",
+    "Families can pray in the large hall."
+   ],
+   [
     "ويُمنع ترك السيارات أمام المداخل.",
     "Leaving cars in front of the entrances is forbidden."
    ],
@@ -730,7 +734,7 @@
     "Tarawih prayer is held directly after the isha prayer."
    ],
    [
-    "وسيصلي إمام المسجد بالمصلين ثماني ركعات.",
+    "وسيؤم المصلين إمام المسجد في ثماني ركعات.",
     "The mosque's imam will lead the worshippers in eight rakʿas."
    ],
    [
@@ -938,6 +942,10 @@
     "Everyone loved him because he was a kind and generous man."
    ],
    [
+    "وكان قد تقاعد قبل سنتين، وكان يصلي في المسجد كل يوم.",
+    "He had retired two years ago, and he used to pray at the mosque every day."
+   ],
+   [
     "وتدعو إدارة المسجد الجميع إلى الدعاء له.",
     "The mosque management invites everyone to pray for him."
    ],
@@ -1102,8 +1110,8 @@
     "It advised visitors not to swim on the beaches."
    ],
    [
-    "وقالت إن الغبار قد يقلل مدى الرؤية في بعض المناطق.",
-    "It said dust may reduce visibility in some areas."
+    "وقالت إن الغبار قد يرتفع ويجعل مدى الرؤية قليلًا في بعض المناطق.",
+    "It said dust may rise and make visibility low in some areas."
    ],
    [
     "وطلبت من الأسر أن تبقي أطفالها بعيدًا عن البحر.",
@@ -1282,8 +1290,8 @@
     "He pointed out that early testing helps with treatment."
    ],
    [
-    "وأضاف أن القسم يضم أطباء وممرضين من عدة دول.",
-    "He added that the department includes doctors and nurses from several countries."
+    "وأضاف أن فيه أطباء وممرضين من عدة دول.",
+    "He added that it has doctors and nurses from several countries."
    ],
    [
     "وقال إن الأطباء سيجيبون عن أسئلة المرضى وأسرهم.",
@@ -1392,8 +1400,8 @@
     "The whole family can take the vaccine on the same day."
    ],
    [
-    "وستعمل العيادات من الساعة الثامنة صباحًا حتى الثامنة مساءً.",
-    "The clinics will work from eight in the morning until eight in the evening."
+    "وستعمل العيادات من الساعة ٨ صباحًا حتى الساعة ٨ مساءً.",
+    "The clinics will work from 8 in the morning until 8 in the evening."
    ]
   ],
   "questions": [
@@ -1630,8 +1638,8 @@
     "The city university celebrated the graduation of a new class of students yesterday."
    ],
    [
-    "وبلغ عدد الخريجين هذا العام ثلاثمئة طالب وطالبة.",
-    "The number of graduates this year reached three hundred male and female students."
+    "وتخرج هذا العام ثلاثمئة طالب وطالبة.",
+    "This year three hundred male and female students graduated."
    ],
    [
     "وحضر الحفل أولياء الأمور والمعلمون وكثير من الضيوف.",
@@ -1668,7 +1676,7 @@
   ],
   "questions": [
    [
-    "How many students graduated?",
+    "How many students graduated this year?",
     [
      "Three hundred",
      "Thirty",
