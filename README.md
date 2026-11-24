@@ -8,8 +8,8 @@ There are two ways to run it, built from the same `index.html`:
 |---|---|---|
 | Progress | Saved to my Claude account, so the phone and the PC stay in sync | Stays on that one device; move it with Export / Import backup |
 | Works offline | No | Yes, once it's installed |
-| Stages 0 and 1, reviews, role-play, drills | Yes | Yes |
-| AI lessons (stage 2+), stories, chat partner, sentence practice | Yes | No, they need Claude |
+| Stages 0 to 5 (all 466 written lessons), reviews, role-play, drills | Yes | Yes |
+| AI lessons after stage 5, stories, chat partner, sentence practice | Yes | No, they need Claude |
 | Speaking feedback | Claude dictation (Chrome or Edge on a computer or Android) | The browser's own recogniser (Chrome, Edge), plus record and compare |
 
 I use the claude.ai version day to day. The offline app is the backup plan.
@@ -167,11 +167,11 @@ I based it on the [Palteca method](https://palteca.com/method) (input you can un
 | Stage | Level | What's in it |
 |---|---|---|
 | 0 Foundations | | 28 letters and their shapes, vowel marks, Gulf pronunciation, ear training |
-| 1 Survival | A1 | 16 hand-written lessons: greetings, goodbyes and sorry, survival words, polite requests, about me, work and study, questions and directions, can/know, there is / isn't, numbers, prices, café, time, taxi, hospitality |
-| 2 Everyday | A2 | 12 planned topics with a grammar point each, written for you by AI at your level |
-| 3 Conversations | B1 | 12 planned topics with a grammar point each |
-| 4 Fluent | B2 | 10 planned topics with a grammar point each |
-| 5 Native-like | C1 | 10 planned topics |
+| 1 Survival | A1 | 66 written lessons: greetings, survival words, requests, about me, directions, numbers, prices, café, time, taxi, hospitality |
+| 2 Everyday | A2 | 90 written lessons: daily life, past and future, plans, shopping, health, family |
+| 3 Conversations | B1 | 110 written lessons: telling stories, opinions, work and study, problems and complaints |
+| 4 Fluent | B2 | 110 written lessons: hypotheticals, debate, media, other Gulf voices, proverbs, the workplace |
+| 5 Native-like | C1 | 90 written lessons: hedging, emphasis, politeness and register, irony, negotiation, conflict, heritage, religion, presentations |
 | 6 Open-ended | | Any topic you choose |
 
 You move up when a stage's lessons are done and 80% of its phrases have stuck for at least a week. Fuṣḥā recognition cards start after five lessons, three new words a day. The Course tab also has grammar tables and a numbers drill.
@@ -193,11 +193,12 @@ Most mainstream apps teach MSA, Egyptian or Levantine ([overview](https://talkin
 ### Known limits
 
 - **The audio is standard Arabic.** Phone voices read قهوة as qahwa where Gulf speakers say gahwa. Cards where this matters show a "Gulf: …" chip, and the transliteration always shows the Gulf pronunciation. For real Gulf audio, use YouTube or a tutor.
-- **Nobody native has checked it yet.** Stage 1 was checked by two separate AI reviewers, and the stage 2+ lessons are AI-written and only machine-checked. Every card has a "hide it" button for anything that looks off.
+- **Nobody native has checked it yet.** Every lesson was checked by at least two separate AI reviewers (one for form, one for meaning), against a corpus of Emirati and Kuwaiti writing and published sources, and every stage had a whole-stage review. A few hundred thin or uncertain forms are on a list for a native speaker to confirm, and most of those are taught for recognising only. Every card has a "hide it" button for anything that looks off.
 - **Speech scoring checks words, not accent.** A green word means it was understood, not that it sounded Emirati.
 - **An app won't get you fluent on its own.** From stage 3, add a weekly session with a native Gulf tutor.
 - Gulf varieties differ (Kuwaiti shinu vs Emirati shu, cham vs kam). The notes flag the common ones, not all of them.
 - No pictures. Palteca uses images as memory aids, but published pages can't load outside images.
+- The graded fuṣḥā readings aren't written yet; the Reading tab says so.
 - I've tested the layout in Chromium at phone and desktop sizes. I haven't tried real device voices, real speech recognition, or the backup download inside an iPhone home screen app yet.
 
 ### Tests
