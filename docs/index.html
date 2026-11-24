@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-/AlbFZ8Jxm/QsqtLcK/bBKyobjiTZj9BelqyV9p8ITw=' 'sha256-HvBY4llcNvE1m/EX6bMH9KpzHc4dGfeOX8BAF06ncDY=' 'sha256-26yafG3BIYRaFI0E3WDd5BoOsQRN+MNJi+v78Gd7Gac=' 'sha256-vp9yiuNVlFlgqmBK0iLBTlFGjpvCVGY5xQ5q7LnFcr8='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-/AlbFZ8Jxm/QsqtLcK/bBKyobjiTZj9BelqyV9p8ITw=' 'sha256-HvBY4llcNvE1m/EX6bMH9KpzHc4dGfeOX8BAF06ncDY=' 'sha256-EDnjgwpulzme1ZR5tIURKBTBdzqMWfk/TC0+Bcm6Uck=' 'sha256-vp9yiuNVlFlgqmBK0iLBTlFGjpvCVGY5xQ5q7LnFcr8='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -3004,7 +3004,8 @@ function openReading(r){
       f.body.append(el("div",{className:"stage"},el("p",{className:"en",textContent:`${right} of ${r.questions.length} right`}),el("div",{className:"actions"},el("button",{className:"btn wide",type:"button",textContent:"Read it again",onclick:()=>{ q=0; right=0; text(); }}),el("button",{className:"btn primary wide",type:"button",textContent:"Done",onclick:()=>show("course","reading")})))); return; }
     f.progress(q+1,r.questions.length+1);
     const [qq,opts,ans]=r.questions[q]; const box=el("div",{className:"options"}); const fb=el("p",{className:"feedback",role:"status"}); const acts=el("div",{className:"actions"});
-    [...opts].sort(()=>Math.random()-0.5).forEach(o=>box.append(el("button",{className:"btn",type:"button","data-o":o, // shuffled: in the files the answer is often firsttextContent:o,onclick:e=>{ if(box.dataset.done) return; box.dataset.done="1"; const ok=o===ans; if(ok) right++;
+    // options are shuffled: in the files the answer is often first
+    [...opts].sort(()=>Math.random()-0.5).forEach(o=>box.append(el("button",{className:"btn",type:"button","data-o":o,textContent:o,onclick:e=>{ if(box.dataset.done) return; box.dataset.done="1"; const ok=o===ans; if(ok) right++;
       [...box.children].forEach(b=>{ if(b.dataset.o===ans) b.classList.add("right"); else if(b===e.currentTarget) b.classList.add("wrong"); });
       fb.className="feedback "+(ok?"ok":"no"); fb.textContent=ok?"Right":"Answer: "+ans; buzz(ok?10:[30,40,30]);
       acts.append(el("button",{className:"btn primary wide",type:"button",textContent:"Next",onclick:()=>{ q++; ask(); }})); }})));

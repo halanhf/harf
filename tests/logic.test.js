@@ -403,3 +403,6 @@ test("merge: readings done on either device are kept",()=>{
   const m=L.mergeProgress({read:{r001:"2026-03-01"},updatedAt:1},{read:{r002:"2026-03-02",r001:"2026-03-05"},updatedAt:2});
   assert.deepEqual({...m.read},{r001:"2026-03-05",r002:"2026-03-02"});
 });
+test("page: every inline script parses (a syntax error anywhere blanks the whole app)",()=>{
+  for(const m of html.matchAll(/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/g)) assert.doesNotThrow(()=>new vm.Script(m[1]),m[0].slice(0,40));
+});
