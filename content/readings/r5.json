@@ -58,7 +58,7 @@
     "One citizen said the street in front of her house has no shade at all, and that her children do not play outside in summer."
    ],
    [
-    "وأضافت أن الشجرة أمام البيت كانت جزءا من حياة الناس في الماضي، وتريد أن تعود.",
+    "وأضافت أن الشجرة أمام البيت كانت جزءا من حياة الناس في الماضي، وتريد أن تعود هذه الشجرة.",
     "She added that a tree in front of the house used to be part of people's lives in the past, and she wants it to come back."
    ],
    [
@@ -210,7 +210,7 @@
     "It also called for switching off the air conditioner in empty rooms, and running large appliances in the evening instead of at midday."
    ],
    [
-    "وقالت الشركة إن هذه الخطوات البسيطة يمكن أن تخفف فاتورة الأسرة بنسبة تصل إلى عشرين في المائة.",
+    "وقالت الشركة إن هذه الخطوات البسيطة يمكن أن تخفض فاتورة الأسرة بنسبة تصل إلى عشرين في المائة.",
     "The company said these simple steps can cut a family's bill by up to twenty percent."
    ],
    [
@@ -218,7 +218,7 @@
     "On the other hand, the company revealed a large increase in the number of homes using solar energy."
    ],
    [
-    "فقد أصبحت على سطح أكثر من ألفي منزل ألواح شمسية خلال العام الماضي، أي ضعف العام السابق.",
+    "فقد وضعت ألواح شمسية على أسطح أكثر من ألفي منزل خلال العام الماضي، أي ضعف العام السابق.",
     "Solar panels went up on the roofs of more than two thousand homes last year, twice as many as the year before."
    ],
    [
@@ -234,7 +234,7 @@
     "Environmental experts, for their part, believe the problem will not be solved by producing more alone, but also by changing consumption habits."
    ],
    [
-    "وقال أحدهم إن كثيرا من المباني القديمة تفقد البرد بسرعة، وبالتالي تحتاج إلى مكيفات أكثر.",
+    "وقال أحدهم إن كثيرا من المباني القديمة تفقد البرودة بسرعة، وبالتالي تحتاج إلى مكيفات أكثر.",
     "One of them said that many old buildings lose their coolness quickly, and so need more air conditioners."
    ],
    [
@@ -322,7 +322,7 @@
     "However, what was a quick fix at first has become a daily habit in many homes."
    ],
    [
-    "ويقول المعلمون إن كثيرا من الأطفال يدخلون المدرسة وهم لا يستطيعون أن يجلسوا ويسمعوا دقائق قليلة.",
+    "ويقول المعلمون إن كثيرا من الأطفال يدخلون المدرسة وهم لا يستطيعون أن يجلسوا ويستمعوا دقائق قليلة.",
     "Teachers say that many children start school unable to sit and listen for a few minutes."
    ],
    [
@@ -470,8 +470,8 @@
     "The traffic director explained at a press conference that most serious accidents were caused by speed or lack of attention."
    ],
    [
-    "وأضاف أن الذين أصيبوا في الحوادث كانوا أقل من العام الماضي، مما يعني أن الطرق أصبحت أكثر أمانا للسائقين والركاب.",
-    "He added that fewer people were injured in accidents than last year, which means the roads have become safer for drivers and passengers."
+    "وأضاف أن عدد المصابين كان أقل منه في العام الماضي، مما يعني أن الطرق أصبحت أكثر أمانا للجميع.",
+    "He added that fewer people were injured in accidents than last year, which means the roads have become safer for everyone."
    ],
    [
     "إلا أن التقرير كشف عن ارتفاع يدعو إلى القلق في الحوادث داخل الأحياء، لا سيما قرب المدارس.",
@@ -486,7 +486,7 @@
     "So the police announced that they will put cameras near schools before the start of the new school year."
    ],
    [
-    "كما ستصبح السرعة في عدة شوارع داخل الأحياء أربعين كيلومترا في الساعة فقط.",
+    "كما ستصبح السرعة القصوى في عدة شوارع داخل الأحياء أربعين كيلومترا في الساعة فقط.",
     "The speed limit on several streets inside neighbourhoods will also become just forty kilometres an hour."
    ],
    [
@@ -522,12 +522,12 @@
     "He added that the police take no pleasure in a fine, but are pleased when everyone gets home safely."
    ],
    [
-    "ودعا المدير السائقين إلى أن يلتزموا بالسرعة في كل طريق، سواء كانت هناك كاميرا أم لم تكن.",
+    "ودعا المدير السائقين إلى أن يلتزموا بالسرعة المحددة في كل طريق، سواء كانت هناك كاميرا أم لم تكن.",
     "The director called on drivers to keep to the speed limit on every road, whether there is a camera or not."
    ],
    [
-    "كما ذكر الآباء بضرورة استخدام حزام الأمان ومقاعد الأطفال في كل رحلة، مهما كانت قريبة.",
-    "He also reminded parents of the need to use seat belts and children's seats on every trip, however short."
+    "كما دعا الآباء إلى استخدام حزام الأمان ومقاعد الأطفال في كل رحلة، مهما كانت قريبة.",
+    "He also urged parents to use seat belts and children's seats on every trip, however short."
    ],
    [
     "من ناحية أخرى، كشف التقرير أن الحوادث في الطرق الخارجية ما زالت كثيرة في الليل، بسبب التعب وقلة النوم.",
@@ -564,7 +564,7 @@
     "Inside neighbourhoods, especially near schools"
    ],
    [
-    "What will change near schools?",
+    "What new measures will the police introduce?",
     [
      "The streets will close in the morning",
      "New cameras and a lower speed limit",
@@ -638,8 +638,8 @@
     "In my opinion it can, but in a different way from the small company."
    ],
    [
-    "فبدلا من أن يتوقف الجميع يوم الخميس، يمكن أن يأخذ كل فريق يوما مختلفا.",
-    "Instead of everyone stopping on Thursday, each team could take a different day."
+    "فبدلا من أن يتوقف الجميع يوم الجمعة، يمكن أن يأخذ كل فريق يوما مختلفا.",
+    "Instead of everyone stopping on Friday, each team could take a different day."
    ],
    [
     "وبذلك تستمر الخدمة كل أيام الأسبوع، ويحصل الموظف في الوقت نفسه على يوم إضافي للراحة.",
@@ -651,7 +651,7 @@
    ],
    [
     "فالموظف المتعب يقع في أخطاء أكثر، ويغيب عن العمل أكثر، وغالبا ما يترك وظيفته بعد وقت قليل.",
-    "A tired employee makes more mistakes, is absent from work more, and in most cases leaves his job after a short time."
+    "A tired employee makes more mistakes, is absent from work more, and often leaves his job after a short time."
    ],
    [
     "وهذا يعني تكلفة أكبر على الشركة، لأنها تحتاج إلى توظيف موظفين جدد وتعليمهم من البداية.",
@@ -683,7 +683,7 @@
    ],
    [
     "ثم تقرر بعد ذلك على أساس النتائج، وليس على أساس الحماس وحده.",
-    "Then they can decide afterwards on the basis of the results, not on the basis of enthusiasm alone."
+    "And then decide afterwards on the basis of the results, not on the basis of enthusiasm alone."
    ],
    [
     "ومن ناحية أخرى، ينبغي ألا ننسى من يعملون في الخدمات التي لا تتوقف، فهم أيضا يستحقون التوازن.",
@@ -701,7 +701,7 @@
      "A company's trial of a four-day working week",
      "A new law on working hours",
      "A strike at a Dubai company",
-     "The closure of shops on Thursdays"
+     "The closure of shops on Fridays"
     ],
     "A company's trial of a four-day working week"
    ],
@@ -728,7 +728,7 @@
    [
     "How could a large company keep its service running, according to the writer?",
     [
-     "Everyone stops on Thursday",
+     "Everyone stops on Friday",
      "It hires more staff",
      "Each team takes a different day off",
      "It works longer hours"
@@ -819,7 +819,7 @@
    ],
    [
     "كما وعدوا بتخفيض الإيجار للحرفيين المواطنين، وكبار السن منهم بشكل خاص.",
-    "They also promised to cut the rent for national craftspeople, and especially the older ones among them."
+    "They also promised to cut the rent for citizen craftspeople, and especially the older ones among them."
    ],
    [
     "وأكد مدير المهرجان أن هؤلاء هم قلب المهرجان، ولا مهرجان للتراث بدونهم.",
@@ -914,24 +914,24 @@
     "Iftar tables fill up with many dishes, and then half of them or more go back to the kitchen without anyone eating from them."
    ],
    [
-    "وفي اليوم التالي، يذهب معظم هذا الطعام إلى القمامة.",
-    "And the next day, most of this food goes in the rubbish."
+    "وفي اليوم التالي، يرمى معظم هذا الطعام.",
+    "And the next day, most of this food is thrown away."
    ],
    [
-    "وقد كشفت دراسة أجرتها البلدية أن كمية الطعام المرمي ترتفع في رمضان بنسبة ثلاثين في المائة تقريبا.",
-    "A study carried out by the municipality revealed that the amount of food thrown away rises by about thirty percent in Ramadan."
+    "وقد كشفت دراسة أجرتها البلدية أن الطعام المرمي يرتفع في رمضان بنسبة ثلاثين في المائة تقريبا.",
+    "A study carried out by the municipality revealed that thrown-away food rises by about thirty percent in Ramadan."
    ],
    [
-    "ولا شك أن الكرم من أجمل تقاليدنا، فلا أحد يريد أن يقال عنه إنه بخيل مع ضيوفه.",
-    "There is no doubt that generosity is one of our finest traditions: no one wants it said that he is mean with his guests."
+    "ولا شك أن الكرم من أجمل تقاليدنا، فلا أحد يريد أن يقال عنه إنه لم يكرم ضيوفه.",
+    "There is no doubt that generosity is one of our finest traditions: no one wants it said that he did not honour his guests."
    ],
    [
     "إلا أن الكرم شيء، والمبالغة في الطبخ شيء آخر تماما.",
     "But generosity is one thing, and cooking too much is quite another."
    ],
    [
-    "فالكرم أن تقدم لضيفك ما يكفيه ويجعله سعيدا، لا أن تملأ المائدة بما لا يؤكل.",
-    "Generosity is offering your guest what is enough for him and pleases him, not filling the table with what will not be eaten."
+    "فالكرم أن تقدم لضيفك ما يكفيه، لا أن تملأ المائدة بما لا يؤكل.",
+    "Generosity is offering your guest what is enough for him, not filling the table with what will not be eaten."
    ],
    [
     "ومن الواضح أن جزءا من المشكلة يعود إلى الخوف من كلام الناس، أكثر مما يحتاجه البيت فعلا.",
@@ -946,8 +946,8 @@
     "First, to ask before cooking: how many people will eat with us today?"
    ],
    [
-    "ثانيا، أن نطبخ أطباقا أقل بكميات معقولة، بدلا من عشرة أطباق لا نأكل منها إلا القليل.",
-    "Second, to cook fewer dishes in sensible amounts, instead of ten dishes we eat only a little of."
+    "ثانيا، أن نطبخ أطباقا أقل وأصغر، بدلا من عشرة أطباق لا نأكل منها إلا القليل.",
+    "Second, to cook fewer and smaller dishes, instead of ten dishes we eat only a little of."
    ],
    [
     "ثالثا، أن نحفظ الطعام الباقي بشكل صحيح، ونأكله في السحور أو في اليوم التالي.",
@@ -958,8 +958,8 @@
     "And if there is food left that we do not need, there are charities that collect it every day and take it to families in need."
    ],
    [
-    "بالإضافة إلى ذلك، ينبغي للمطاعم والفنادق أن تراجع موائد الإفطار المفتوحة التي تنتهي بكميات كبيرة من الطعام المرمي.",
-    "In addition, restaurants and hotels should review the open iftar buffets that end with large amounts of wasted food."
+    "بالإضافة إلى ذلك، ينبغي للمطاعم والفنادق أن تراجع موائد الإفطار المفتوحة التي تنتهي بالكثير من الطعام المرمي.",
+    "In addition, restaurants and hotels should review the open iftar buffets that end with a lot of wasted food."
    ],
    [
     "وقد بدأت بعض المطاعم بالفعل بتقديم أطباق أصغر بأسعار أقل، ويبدو أن الزبائن رحبوا بذلك.",
@@ -975,14 +975,14 @@
    ],
    [
     "فكلمة بسيطة بعد الصلاة، أو درس صغير للأطفال، قد يغير عادات أسرة كاملة.",
-    "A simple talk after prayers, or a simple lesson for children, may change the habits of a whole family."
+    "A simple talk after prayers, or a short lesson for children, may change the habits of a whole family."
    ],
    [
     "وليس الأمر قضية مال فقط، بل قضية أخلاق واحترام للنعمة.",
-    "The matter is not only one of money, but one of morals and respect for God's blessings."
+    "The matter is not only one of money, but one of morals and respect for blessings."
    ],
    [
-    "فكيف نصوم لنشعر بالجائع، ثم نرمي في المساء ما يكفي لإطعام أسر كثيرة؟",
+    "فكيف نصوم لنشعر بالجائعين، ثم نرمي في المساء ما يكفي لإطعام أسر كثيرة؟",
     "How can we fast to feel for the hungry, and then in the evening throw away enough to feed many families?"
    ],
    [
@@ -1050,8 +1050,8 @@
   "title": "News: artificial intelligence in the classroom",
   "lines": [
    [
-    "أطلقت الوزارة هذا الأسبوع تجربة لاستخدام الذكاء الاصطناعي في التعليم، في عشرين مدرسة حكومية في عدة مدن.",
-    "This week the ministry launched a trial of using artificial intelligence in education, in twenty state schools in several cities."
+    "أعلنت الوزارة هذا الأسبوع تجربة لاستخدام الذكاء الاصطناعي في التعليم، ستشمل عشرين مدرسة حكومية في عدة مدن.",
+    "This week the ministry announced a trial of using artificial intelligence in education, which will cover twenty state schools in several cities."
    ],
    [
     "وتأتي التجربة ضمن خطة لتطوير المناهج وتحسين مستوى الطلاب في الرياضيات واللغة العربية.",
@@ -1082,7 +1082,7 @@
     "The trial will last a full school year, and the ministry will then decide whether to apply it in all schools."
    ],
    [
-    "وقد رحب كثير من المعلمين بالفكرة، لا سيما معلمي الصفوف الكبيرة.",
+    "وقد رحب كثير من المعلمين بالفكرة، لا سيما معلمي الصفوف المزدحمة.",
     "Many teachers have welcomed the idea, especially those who teach large classes."
    ],
    [
@@ -1165,7 +1165,7 @@
      "They want to work fewer hours",
      "They cannot follow every student in large classes alone",
      "They will get higher salaries",
-     "They do not like marking"
+     "They want to stop using textbooks"
     ],
     "They cannot follow every student in large classes alone"
    ],
@@ -1198,11 +1198,11 @@
   "title": "Opinion: one city, many languages",
   "lines": [
    [
-    "في مدينتنا يسكن ويعمل أناس من أكثر من مائتي جنسية، يتكلمون عشرات اللغات.",
-    "In our city, people of more than two hundred nationalities live and work, speaking dozens of languages."
+    "في مدينتنا يسكن ويعمل أناس من عشرات الجنسيات، يتكلمون لغات كثيرة.",
+    "In our city, people of dozens of nationalities live and work, speaking many languages."
    ],
    [
-    "وفي الحي الواحد، قد تسمع الأذان، وترى عيدا يحتفل به الجيران من دين آخر، في الأسبوع نفسه.",
+    "وفي الحي الواحد، قد تسمع الأذان، وترى عيدا يحتفل به جيران من دين آخر، في الأسبوع نفسه.",
     "In a single neighbourhood you may hear the call to prayer and see a festival that neighbours of another religion are celebrating, in the same week."
    ],
    [
@@ -1226,16 +1226,16 @@
     "Nor does it mean giving up our religion or our traditions, but knowing them well, and knowing others' traditions too."
    ],
    [
-    "ومن الواضح أن المدرسة هي المكان الأول لتعلم ذلك.",
-    "Clearly, school is the first place to learn this."
-   ],
-   [
-    "والأسرة قبلها، فالطفل يسمع في البيت كيف يتكلم والداه عن الناس من البلاد الأخرى.",
-    "And the family before it: a child hears at home how his parents talk about people from other countries."
+    "ومن الواضح أن المدرسة هي المكان الأهم لتعلم ذلك.",
+    "Clearly, school is the most important place to learn this."
    ],
    [
     "فالطفل الذي يجلس في صفه إلى جانب زملاء من عشر جنسيات، يتعلم أن الاختلاف أمر طبيعي.",
     "A child who sits in class alongside classmates of ten nationalities learns that difference is normal."
+   ],
+   [
+    "والأسرة قبلها، فالطفل يسمع في البيت كيف يتكلم والداه عن الناس من البلاد الأخرى.",
+    "And the family before it: a child hears at home how his parents talk about people from other countries."
    ],
    [
     "أما مكان العمل، فهو امتحان حقيقي لهذه القيم، لا سيما حين يكون هناك ضغط أو مشكلة.",
@@ -1308,7 +1308,7 @@
     "Respecting others as human beings like us"
    ],
    [
-    "Why does the writer see school as the first place to learn coexistence?",
+    "Why does the writer see school as the most important place to learn coexistence?",
     [
      "Children sit with classmates of many nationalities",
      "Teachers come from many countries",
@@ -1354,12 +1354,12 @@
     "The company said the rise was seen in most areas of the city, especially areas close to the metro and schools."
    ],
    [
-    "وأوضحت أن متوسط إيجار شقة من غرفتين بلغ نحو تسعين ألف درهم في السنة في هذه المناطق.",
+    "وأوضحت أن متوسط إيجار شقة من غرفتي نوم بلغ نحو تسعين ألف درهم في السنة في هذه المناطق.",
     "It explained that the average rent for a two-bedroom flat reached about ninety thousand dirhams a year in these areas."
    ],
    [
-    "وأرجعت الدراسة هذا الارتفاع إلى زيادة كبيرة في السكان، مقابل شقق جديدة قليلة.",
-    "The study put this rise down to a large increase in the population, against few new flats."
+    "وأرجعت الدراسة هذا الارتفاع إلى زيادة كبيرة في عدد السكان، مقابل قلة الشقق الجديدة.",
+    "The study put this rise down to a large increase in the population, against a shortage of new flats."
    ],
    [
     "فقد انتقلت آلاف الأسر إلى المدينة خلال العام، بينما تأخر تسليم عدة مشاريع سكنية.",
@@ -1659,7 +1659,7 @@
    ],
    [
     "ثم ألقى ممثل عن الوزارة كلمة بالنيابة عن معالي الوزير، نقل فيها تهنئة الوزير للخريجين وأسرهم.",
-    "Then a representative of the ministry gave a speech on behalf of the minister, in which he passed on the minister's congratulations to the graduates and their families."
+    "Then a representative of the ministry gave a speech on behalf of His Excellency the Minister, in which he passed on the minister's congratulations to the graduates and their families."
    ],
    [
     "وأكد أن الدولة تعتبر التعليم التقني من أهم طرق بناء اقتصاد يعتمد على الابتكار.",
@@ -1774,12 +1774,12 @@
     "On Thursday the city celebrated the anniversary of National Day, amid great joy shared by citizens and residents."
    ],
    [
-    "وبدأت الاحتفالات في الصباح برفع العلم في الساحات العامة والمدارس والمباني الحكومية.",
-    "The celebrations began in the morning with the raising of the flag in public squares, schools and government buildings."
+    "وبدأت الاحتفالات في الصباح برفع العلم في الشوارع والمدارس والوزارات.",
+    "The celebrations began in the morning with the raising of the flag in the streets, schools and ministries."
    ],
    [
     "وأقيمت المراسم الرسمية في ساحة كبيرة وسط المدينة، بحضور معالي الوزير وكبار الشخصيات.",
-    "The official ceremonies were held in a large square in the city centre, attended by the minister and dignitaries."
+    "The official ceremonies were held in a large square in the city centre, attended by His Excellency the Minister and dignitaries."
    ],
    [
     "واستعرض الوزير حرس الشرف، ثم عزفت الفرقة النشيد الوطني، بينما وقف الحضور احتراما.",
@@ -1790,8 +1790,8 @@
     "In a speech he gave for the occasion, the minister said this day is not merely a celebration, but a chance to remember what the fathers and grandfathers achieved."
    ],
    [
-    "وأضاف أن البلاد انتقلت خلال خمسين عاما من حياة بسيطة إلى دولة حديثة، بفضل العمل والتعاون.",
-    "He added that the country had moved within fifty years from a simple life to a modern state, thanks to work and cooperation."
+    "وأضاف أن البلاد انتقلت خلال عشرات السنين من حياة بسيطة إلى دولة حديثة، بفضل العمل والتعاون.",
+    "He added that the country had moved within a few decades from a simple life to a modern state, thanks to work and cooperation."
    ],
    [
     "وأكد أن على الجميع أن يحافظوا على هذا الإنجاز، لا سيما الشباب.",
@@ -1802,8 +1802,8 @@
     "On the sidelines of the celebration, the minister opened a new museum of the city's history, after two years of work."
    ],
    [
-    "وفي المتحف صور وأدوات قديمة، إلى جانب قسم خاص عن البحر والسفن وحياة الناس على الشاطئ.",
-    "The museum has old photographs and tools, alongside a special section on the sea, boats and people's life on the shore."
+    "وفي المتحف صور وقطع قديمة، إلى جانب قسم خاص عن البحر والسفن وحياة الناس على الشاطئ.",
+    "The museum has old photographs and objects, alongside a special section on the sea, boats and people's life on the shore."
    ],
    [
     "كما توجد فيه قاعة تقنية يستطيع فيها الناس أن يروا المدينة كما كانت قبل ستين عاما.",
@@ -1814,8 +1814,8 @@
     "The museum director said most of the pieces came from families themselves, who gave them to the museum so the new generation could see them."
    ],
    [
-    "وأضاف أن الدخول سيكون مجانا خلال الشهر الأول، لا سيما لطلاب المدارس.",
-    "He added that entry will be free during the first month, especially for schoolchildren."
+    "وأضاف أن الدخول سيكون مجانا خلال الشهر الأول، وأن المتحف يرحب بطلاب المدارس بشكل خاص.",
+    "He added that entry will be free during the first month, and that the museum especially welcomes schoolchildren."
    ],
    [
     "وأشار إلى أن المتحف سيستقبل الرحلات المدرسية كل صباح، مع برنامج خاص يشرح فيه موظفون للطلاب تاريخ المدينة.",
@@ -1830,7 +1830,7 @@
     "The police called on drivers to keep to traffic rules and not to stop in places not designated for it."
    ],
    [
-    "وشهد الشاطئ عروضا للألعاب النارية استمرت نصف ساعة، حضرها آلاف الأسر.",
+    "وشهد الشاطئ عرضا للألعاب النارية استمر نصف ساعة، حضره آلاف الأسر.",
     "The beach saw a fireworks display that lasted half an hour, attended by thousands of families."
    ],
    [
@@ -1926,8 +1926,8 @@
     "I am pleased, first of all, to welcome you to the opening of the first Youth and Environment Conference."
    ],
    [
-    "ويشرفني أن أتقدم بالشكر إلى صاحب السمو حاكم الإمارة على رعايته لهذا المؤتمر، ودعمه الدائم للشباب.",
-    "I am honoured to extend my thanks to His Highness the Ruler of the emirate for his patronage of this conference and his continued support for young people."
+    "ويشرفني أن أتقدم بالشكر إلى الجهة الراعية لهذا المؤتمر على رعايتها له، ودعمها الدائم للشباب.",
+    "I am honoured to extend my thanks to the sponsor of this conference for its sponsorship and its continued support for young people."
    ],
    [
     "كما أشكر كل الجهات التي ساهمت في تنظيمه، وأرحب بضيوفنا الذين جاؤوا من أكثر من عشرين دولة.",
@@ -1999,7 +1999,7 @@
    ],
    [
     "وختاما، أتقدم بالشكر مرة أخرى لكل من ساهم في هذا المؤتمر، وأتمنى لكم نقاشا جيدا ونتائج تخدم بلادنا والعالم.",
-    "In conclusion, I extend my thanks once again to everyone who contributed to this conference, and I wish you a useful discussion and results that serve our country and the world."
+    "In conclusion, I extend my thanks once again to everyone who contributed to this conference, and I wish you a good discussion and results that serve our country and the world."
    ],
    [
     "والسلام عليكم ورحمة الله وبركاته.",

@@ -14,8 +14,8 @@
     "The signing came at the end of three days of talks in the capital between official delegations from the two countries."
    ],
    [
-    "وشارك في المباحثات وزير الخارجية ونائب رئيس الوزراء في الدولة الأخرى.",
-    "The foreign minister and the other state's deputy prime minister took part in the talks."
+    "وشارك في المباحثات الوزير، كما شارك فيها نائب رئيس الوزراء في الدولة الأخرى.",
+    "The minister took part in the talks, as did the other state's deputy prime minister."
    ],
    [
     "وقال المتحدث الرسمي باسم الوزارة في بيان إن المباحثات كانت ناجحة.",
@@ -114,8 +114,8 @@
     "Parliament approved a new housing law yesterday after a long session that went on until the evening."
    ],
    [
-    "ووافق على القانون 38 عضوا من أصل 50، بينما رفضه 9 أعضاء، ولم يشارك 3 في التصويت.",
-    "38 members out of 50 voted for the law, 9 rejected it, and 3 did not take part in the vote."
+    "ووافق على القانون 48 عضوا من أصل 60، بينما رفضه 9 أعضاء، ولم يشارك 3 في التصويت.",
+    "48 members out of 60 voted for the law, 9 rejected it, and 3 did not take part in the vote."
    ],
    [
     "وهدف القانون هو تسهيل حصول المواطنين الشباب على قروض لشراء منزل أو شقة.",
@@ -158,8 +158,8 @@
     "He stressed that the law and the project complement each other, and that neither can be relied on alone."
    ],
    [
-    "ومن المتوقع أن يصدر مرسوم بالقانون خلال أسبوعين، على أن يبدأ تطبيقه في بداية العام.",
-    "A decree enacting the law is expected within two weeks, with implementation to begin at the start of the year."
+    "ومن المتوقع أن يصدر مرسوم بإصدار القانون خلال أسبوعين، على أن يبدأ تطبيقه في بداية العام.",
+    "A decree promulgating the law is expected within two weeks, with implementation to begin at the start of the year."
    ]
   ],
   "questions": [
@@ -168,8 +168,8 @@
     [
      "9",
      "3",
-     "38",
-     "50"
+     "48",
+     "60"
     ],
     "9"
    ],
@@ -442,8 +442,8 @@
     "The government will also set aside a billion dirhams for clean energy, road and hospital projects."
    ],
    [
-    "وقال وزير المالية إن الاقتصاد الوطني أصبح أقل اعتمادا على النفط، وإن نمو القطاعات الأخرى مستمر.",
-    "The finance minister said the national economy had become less dependent on oil and that growth in other sectors was continuing."
+    "وقال الوزير إن الاقتصاد الوطني أصبح أقل اعتمادا على النفط، وإن نمو القطاعات الأخرى مستمر.",
+    "The minister said the national economy had become less dependent on oil and that growth in other sectors was continuing."
    ],
    [
     "وأوضح أن قطاعات السياحة والتجارة والصناعة تمثل اليوم نصف الإيرادات تقريبا.",
@@ -544,8 +544,8 @@
     "The banking sector rose the most, with its shares up 3 percent."
    ],
    [
-    "وأعلن أكبر مصرف في الدولة أن أرباحه زادت بنسبة 12 بالمائة بسبب ارتفاع القروض للشركات والأفراد.",
-    "The country's largest bank announced that its profits had risen 12 percent because of more lending to companies and individuals."
+    "وأعلن أحد المصارف الكبيرة أن أرباحه زادت بنسبة 12 بالمائة بسبب ارتفاع القروض للشركات والأفراد.",
+    "One of the large banks announced that its profits had risen 12 percent because of more lending to companies and individuals."
    ],
    [
     "كما ارتفعت أسهم شركات العقارات بعد أخبار عن مشاريع سكنية جديدة في العاصمة.",
@@ -1040,8 +1040,8 @@
   "title": "A heritage festival opens",
   "lines": [
    [
-    "افتتح أمس مهرجان التراث أمام المتحف الوطني، ويستمر عشرة أيام.",
-    "The heritage festival opened yesterday in front of the national museum and runs for ten days."
+    "افتتح أمس مهرجان التراث أمام متحف المدينة، ويستمر عشرة أيام.",
+    "The heritage festival opened yesterday in front of the city museum and runs for ten days."
    ],
    [
     "ويقدم المهرجان صورة عن حياة الأجداد في البحر والصحراء من خلال المعارض والعروض الشعبية.",
@@ -1292,8 +1292,8 @@
     "For a child who sees his father lie learns to lie, and a child who sees truthfulness learns truthfulness."
    ],
    [
-    "عباد الله، إن الصادق لا يخاف من شيء، لأنه لم يقل إلا ما هو صحيح.",
-    "Servants of God, the truthful person fears nothing, because he has said only what is true."
+    "عباد الله، إن الصادق لا يخاف من الناس، لأنه لم يقل إلا ما هو صحيح.",
+    "Servants of God, the truthful person does not fear people, because he has said only what is true."
    ],
    [
     "والصدق قد يكون صعبا أحيانا، لكن أجره عند الله عظيم.",
