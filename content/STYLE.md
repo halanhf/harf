@@ -97,6 +97,7 @@ The course follows **CODA-Gulf** (S: Khalifa et al. 2016; Habash et al. 2018) fo
 **Homographs: teach these only as chunks, never bare,** because the linter's duplicate check sees one key:
 - يدي: yaddi "my grandfather" vs īdi "my hand" (write "my hand" إيدي, 3592/421).
 - ويه: wiyh "face" vs wēh "ugh!". Teach ويهي "my face"; the interjection only in notes.
+- مثل: mithil "like" (taught bare at s2u034) vs mathal "a proverb". Teach the proverb sense only in a chunk (il-mathal ygūl).
 - يا: "he came" vs the vocative يا. Teach ما يا "he didn't come" (110/10) or another chunk attested with attest.py; never bare يا.
 - مرة: marra "once, time" (taught only in chunks: ʿīd marra thānya u2, hal-marra s1u031, il-marra th-thānya s1u037) vs mara "woman, wife" vs Saudi marra "very". Teach "wife" as مرتي (187/274) and Saudi "very" only in a chunk such as مرة حلو (14/43).
 - يصلح: yṣalliḥ "fixes" (the item, s3u029) vs yiṣlaḥ "will do, is suitable". Teach the second only as ما يصلح (16/25).
