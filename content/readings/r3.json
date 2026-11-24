@@ -96,16 +96,16 @@
   "title": "News: a ministry receives a delegation",
   "lines": [
    [
-    "استقبل وزير الاقتصاد أمس وفدًا من شركة كبيرة في دبي.",
-    "The minister of the economy received a delegation from a large Dubai company yesterday."
+    "استقبل مسؤول في الوزارة أمس وفدًا من شركة كبيرة في دبي.",
+    "An official at the ministry received a delegation from a large Dubai company yesterday."
    ],
    [
-    "وبحث الوزير ورئيس الشركة فرص العمل في مشاريع جديدة في المنطقة.",
-    "The minister and the company's head discussed job opportunities in new projects in the region."
+    "وبحث المسؤول ورئيس الشركة فرص العمل في مشاريع جديدة في المنطقة.",
+    "The official and the company's head discussed job opportunities in new projects in the region."
    ],
    [
-    "وأكد الوزير أن الحكومة تدعم الشركات المحلية.",
-    "The minister stressed that the government supports local companies."
+    "وأكد المسؤول أن الحكومة تدعم الشركات المحلية.",
+    "The official stressed that the government supports local companies."
    ],
    [
     "وأشار إلى أن الوزارة أطلقت مبادرة جديدة لمساعدة الشباب على فتح مشاريعهم.",
@@ -134,7 +134,7 @@
   ],
   "questions": [
    [
-    "Who did the minister receive?",
+    "Who did the official receive?",
     [
      "A delegation from a company",
      "A group of students",
@@ -159,7 +159,7 @@
      "To open a new branch in the capital",
      "To sell its shares",
      "To close an office",
-     "To hire the minister"
+     "To hire the official"
     ],
     "To open a new branch in the capital"
    ],
@@ -194,8 +194,8 @@
     "On the beaches it will reach 38 degrees, with high humidity at night."
    ],
    [
-    "وفي الصباح ستكون الرياح خفيفة وسيكون الجو جميلًا.",
-    "In the morning the winds will be light and the weather lovely."
+    "وفي الصباح ستكون الرياح خفيفة.",
+    "In the morning the winds will be light."
    ],
    [
     "وسيكون البحر هادئًا وسيكون مدى الرؤية جيدًا.",
@@ -215,12 +215,12 @@
    ],
    [
     "وأضافت أن درجة الحرارة ستنخفض قليلًا يوم الأحد، وأن الطقس سيكون حارًا في الأسبوع القادم.",
-    "It added that the temperature will drop a little on Sunday, and that the weather will stay hot next week."
+    "It added that the temperature will drop a little on Sunday, and that the weather will be hot next week."
    ]
   ],
   "questions": [
    [
-    "Which days does the forecast cover?",
+    "Which days will be sunny and hot in most regions?",
     [
      "Friday and Saturday",
      "Sunday and Monday",
@@ -362,7 +362,7 @@
     "The weather service warned of fog forming tomorrow morning in several areas."
    ],
    [
-    "وقالت إن مدى الرؤية سينخفض إلى أقل من خمسمئة متر في بعض الطرق.",
+    "وقالت إن مدى الرؤية سينخفض إلى أقل من خمسمئة متر على بعض الطرق.",
     "It said visibility will drop to less than five hundred metres on some roads."
    ],
    [
@@ -476,8 +476,8 @@
     "He invited families and schools to take part in the coming weeks."
    ],
    [
-    "وقال إنه سيقدم هدايا لجميع الأطفال.",
-    "He said he will give gifts to all the children."
+    "وقال إن المبادرة ستقدم هدايا لجميع الأطفال.",
+    "He said the initiative will give gifts to all the children."
    ]
   ],
   "questions": [
@@ -730,8 +730,8 @@
     "The mosque's imam will lead the worshippers in eight rakʿas."
    ],
    [
-    "ويفتح المسجد أبوابه لوجبات الإفطار للصائمين بعد أذان المغرب.",
-    "The mosque opens its doors for iftar meals for those fasting after the maghrib call to prayer."
+    "ويفتح المسجد أبوابه لوجبات الإفطار للصائمين قبل أذان المغرب.",
+    "The mosque opens its doors for iftar meals for those fasting before the maghrib call to prayer."
    ],
    [
     "وسيكون الإمساك قبل أذان الفجر بعشر دقائق.",
@@ -784,7 +784,7 @@
     "Eight"
    ],
    [
-    "What does the mosque offer after the maghrib call?",
+    "What does the mosque open its doors for before the maghrib call?",
     [
      "Iftar meals for those fasting",
      "Free medicine",
@@ -902,7 +902,7 @@
   "title": "Notice: a funeral prayer",
   "lines": [
    [
-    "تُوُفِّيَ أحد أبناء الحي صباح اليوم رحمه الله.",
+    "تُوُفِّي أحد أبناء الحي صباح اليوم رحمه الله.",
     "One of the sons of the neighbourhood passed away this morning, may God have mercy on him."
    ],
    [
@@ -1020,7 +1020,7 @@
     "The Ministry of Education announced that classes will be remote on Tuesday."
    ],
    [
-    "وقالت شرطة المرور إن بعض الطرق والأنفاق قد تُغلق خلال الأمطار.",
+    "وقالت شرطة المرور إن بعض الطرق والأنفاق قد تُغلَق خلال الأمطار.",
     "The traffic police said that some roads and tunnels may be closed during the rain."
    ],
    [
@@ -1110,7 +1110,7 @@
     "It asked families to keep their children at home."
    ],
    [
-    "وقالت شرطة المرور إن بعض الطرق القريبة من البحر قد تُغلق.",
+    "وقالت شرطة المرور إن بعض الطرق القريبة من البحر قد تُغلَق.",
     "The traffic police said some roads near the sea may be closed."
    ],
    [
@@ -1360,8 +1360,8 @@
     "The vaccine is available free of charge in all hospitals and clinics."
    ],
    [
-    "وتبدأ يوم الأحد وتستمر شهرًا كاملًا.",
-    "It starts on Sunday and lasts a full month."
+    "وتبدأ يوم الاثنين وتستمر شهرًا كاملًا.",
+    "It starts on Monday and lasts a full month."
    ],
    [
     "وأكدت الوزارة أن اللقاح آمن وفعال.",
@@ -1572,8 +1572,8 @@
     "The new employees will work at the company's office in Dubai from Monday to Friday."
    ],
    [
-    "وتقول الشركة إنها تريد أن تساعد الشباب على بدء حياتهم المهنية، وإن العمل عندها ممتع.",
-    "The company says it wants to help young people start their working lives, and that working there is enjoyable."
+    "وتقول الشركة إن العمل عندها ممتع.",
+    "The company says that working there is enjoyable."
    ]
   ],
   "questions": [
