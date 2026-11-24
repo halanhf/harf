@@ -9,7 +9,7 @@ Read FRAMEWORK.md §13 (the readings table and "Reading rules") and STYLE.md §8
 
 ## The words a reader has
 - `python3 tools/reading_check.py rN` prints each text's coverage and the words not yet in the learner's set (fuṣḥā rows unlocked by that stage + dialect items taught by that stage + a few function words). Matching is crude: judge the list yourself.
-- Target coverage per §13 (R1 90%, R2 95%, R3 95–97%, R4 97–98%, R5 98%), and at most the §13 number of new words per text (R1 3–5, R2 4–6, R3 5–8, R4 6–10, R5 ≤10). Proper names (generic: "Dubai", "the ministry"), digits and times don't count.
+- Target coverage per §13 (R1 90%, R2 95%, R3 95–97%, R4 97–98%, R5 98%), and at most the §13 number of new words per text (R1 3–5, R2 4–6, R3 5–8, R4 6–10, R5 ≤10). Proper names (generic: "Dubai", "the ministry"), digits and times don't count. **Course-lead ruling:** in a short text the two targets conflict (4 new words in a 15-word sign is 73%); every line has its English one tap away, so the new-word count governs and the percentage is a guide.
 - Fuṣḥā rows are in content/msa.json and content/msa/w1–w3.json. Unlocked: stage 1 = msa.json + w1 rows 0–105 (F01–F03); stage 2 = w1 rows 106–305 (F04–F07); stage 3 = w2 rows 0–249 (F08–F12); stage 4 = w2 rows 250–349 + w3 rows 0–149 (F13–F17); stage 5 = w3 rows 150–299 (F18–F20). Build each text around its level's own batches, so the reading practises them.
 
 ## Language
