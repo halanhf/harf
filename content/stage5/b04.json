@@ -103,17 +103,7 @@
     "don't try to dodge it, don't wriggle out of it (to a man)",
     "لا تتهرب",
     "to a woman: la titharrabīn (لا تتهربين)"
-   ],
-   [
-    "تعال حبيبي!",
-    "taʿāl ḥabībi!",
-    "(ironic) hold on a minute, mate! come here, you! (to a man) (friends only)",
-    "",
-    "(recognise); said to someone being difficult; to a woman: taʿāli ḥabībti (تعالي حبيبتي); said straight, it's a friendly 'come here, mate'"
    ]
-  ],
-  "receptive": [
-   5
   ],
   "culture": "Wāyid ʿalēk works because everyone knows it means the opposite of its words: said with a straight face to a friend who has done very little, it's a joke, not praise. Khēba belongs with it: an exclamation of mock disbelief for good-natured teasing among friends. Joking like this is for friends; with elders, a manager or someone you've just met, say things straight."
  },
@@ -353,7 +343,7 @@
   "id": "s5u050",
   "stage": 5,
   "title": "Enough now: where banter stops",
-  "goal": "At a karak stand during Fahad's visit, he teases your classmate Mājid in front of strangers, about a story you once told; stop him kindly, help him put it right",
+  "goal": "At a karak stand on Fahad's visit from Kuwait, he teases your classmate Mājid in front of strangers about a story you told; stop him kindly, put it right",
   "tip": "To stop a joke without a fight: khalāṣ ʿād 'that's enough now', then say why: mub jiddām in-nās 'not in front of people', il-ḥīn mub wagtah 'now's not the time'. zawwadt-ha, aḥrajtah 'you went too far, you embarrassed him'; Fahad answers zawwadt-ha 'I went too far' and ḥaggak ʿalay 'I'm sorry'.",
   "grammar": "where banter stops: khalāṣ ʿād, zawwadt-ha, mub wagtah",
   "dialogue": [
@@ -434,13 +424,6 @@
     "to hurt her: ajraḥ-ha (أجرحها)"
    ],
    [
-    "يستحي",
-    "yistiḥi",
-    "(he's) embarrassed, shy, he feels ashamed",
-    "يستحي / يخجل",
-    "a woman: tistiḥi (تستحي)"
-   ],
-   [
     "حقك علي",
     "ḥaggak ʿalay",
     "I'm sorry, I owe you an apology (to a man)",
@@ -463,8 +446,8 @@
    ]
   ],
   "receptive": [
-   4,
-   5
+   3,
+   4
   ],
   "task": "This week: with a tutor or exchange partner, talk for 10 minutes about teasing among friends where they grew up: what's fine, and what crosses the line. Tell one short story of a joke that went too far (yours or made up), using khalāṣ ʿād, zawwadt-ha and ḥaggak ʿalay. Then switch register: retell it in 1 minute as if to Bū Rāshid's majlis, respectfully, with no friends' words."
  },
@@ -620,7 +603,7 @@
    [
     "A",
     "أدري إنك تمزح، بس أنا رسبت في الرياضيات، وأبوي للحين عتبان",
-    "adri innak timzaḥ, bas ana rasabt fi r-riyāẓiyyāt, w ubūy lil-ḥīn ʿatbān",
+    "adri innak timzaḥ, bas ana risabt fi r-riyāẓiyyāt, w ubūy lil-ḥīn ʿatbān",
     "I know you were joking, but I failed maths, and my dad's still upset about it."
    ],
    [
@@ -665,10 +648,10 @@
    ],
    [
     "رسبت",
-    "rasabt",
+    "risabt",
     "I failed (an exam); you failed (to a man)",
     "رسبت",
-    "to a woman: rasabti (رسبتي); he failed: risab (رسب)"
+    "to a woman: risabti (رسبتي); he failed: risab (رسب)"
    ],
    [
     "عتبان",
@@ -733,7 +716,7 @@
    [
     "A",
     "هذا اللي ما أدريه. بشكل عام الميزانية عندنا محدودة، شو بتعطوني زيادة؟",
-    "hādha illi ma adrīh. bi-shakl ʿāmm il-mīzāniyya ʿindana maḥdūda, shu bitaʿṭūni ziyāda?",
+    "hādha illi ma adrīh. b-shakl ʿāmm il-mīzāniyya ʿindana maḥdūda, shu bitaʿṭūni ziyāda?",
     "That I don't know. On the whole our budget's limited; what will you give me on top?"
    ],
    [

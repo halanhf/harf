@@ -46,7 +46,7 @@
    [
     "A",
     "بس ردهم الأخير كان غامض. طلبوا خصم ونسخة من كل شي",
-    "bas radd-hum il-akhīr kān ghāmiẓ. ṭalabaw khaṣm w nuskha min kill shay",
+    "bas radd-hum il-akhīr kān ghāmiẓ. ṭalabaw khaṣim w nuskha min kill shay",
     "But their last reply was vague. They asked for a discount and a copy of everything."
    ],
    [
@@ -106,16 +106,15 @@
    ],
    [
     "خصم",
-    "khaṣm",
+    "khaṣim",
     "a discount",
     "خصم",
-    "(recognise)"
+    ""
    ]
   ],
   "culture": "In everyday Emirati speech, in shāʼ allāh does several jobs: a plan that's already made, a polite hope, or, when it's drawn out (in shāʼ allāāh…), a gentle way of not promising. Listen to the tone, and to whether a time or a next step comes with it.",
   "receptive": [
-   4,
-   5
+   4
   ]
  },
  {
@@ -352,7 +351,7 @@
   "id": "s5u004",
   "stage": 5,
   "title": "Fahad's bet",
-  "goal": "On a video call, Fahad asks if Sēf knows he's flying in for the farewell dinner Bū Rāshid is planning; weigh up his Kuwaiti guesses",
+  "goal": "Video call: Fahad, on a few months' work posting in Kuwait, asks if Sēf knows he's flying back for Bū Rāshid's farewell dinner; weigh up his Kuwaiti guesses",
   "tip": "Fahad guesses the Kuwaiti way, with chūd: chūd yadri 'maybe he knows'. You hedge your own way: ma astabʿid innah yiktishif 'I wouldn't be surprised if he finds out', or deny it: ma ʿindah khabar 'he has no idea'.",
   "grammar": "epistemic chūd (Kuwait, recognise); ma astabʿid, ma ʿindah khabar",
   "dialogue": [
@@ -526,7 +525,7 @@
    [
     "A",
     "هههه، معك حق. الظاهر إن الإعلان نصب، ولا تقول إني ساذج!",
-    "hhhh, maʿak ḥagg. iẓ-ẓāhir inn il-iʿlān naṣb, w la tgūl inni sādhij!",
+    "hahaha, maʿak ḥagg. iẓ-ẓāhir inn il-iʿlān naṣb, w la tgūl inni sādhij!",
     "Haha, you're right. It looks like the ad's a scam, and don't call me gullible!"
    ],
    [
@@ -947,7 +946,7 @@
   "title": "Come on, keep going!",
   "goal": "On a video call, Rāshid says his programming course is too hard after one week and he wants to quit; talk him into carrying on",
   "tip": "Urge a friend on with commands: shidd ḥēlak! 'come on, keep at it!', inta gadd-ha 'you can do it'. Stop him with la + verb: la tōgaf il-ḥīn 'don't stop now', la tgārin nafsak fīhum 'don't compare yourself with them'.",
-  "grammar": "urging: shidd ḥēlak, inta gaddha, la + verb",
+  "grammar": "urging: shidd ḥēlak, inta gadd-ha, la + verb",
   "dialogue": [
    [
     "A",
@@ -1023,7 +1022,7 @@
     "inta gadd-ha",
     "you can do it, you're up to it (to a man)",
     "أنت قادر عليها",
-    "to a woman: inti gaddha (انتي قدها)"
+    "to a woman: inti gadd-ha (انتي قدها)"
    ],
    [
     "لا تقارن نفسك",
@@ -1040,22 +1039,12 @@
     ""
    ],
    [
-    "مليت",
-    "malēt",
-    "I'm fed up, I'm sick of it",
-    "مللت",
-    "(recognise)"
-   ],
-   [
     "كود",
     "kōd",
     "(computer) code",
     "شيفرة برمجية",
     ""
    ]
-  ],
-  "receptive": [
-   4
   ]
  },
  {
@@ -1182,7 +1171,7 @@
   "id": "s5u011",
   "stage": 5,
   "title": "I swear I saw him!",
-  "goal": "At a karak stand, you let slip to Sēf that you've just seen Fahad at Dubai Mall; he won't believe you, so insist",
+  "goal": "At a karak stand, you let slip to Sēf that you've just seen Fahad at Dubai Mall, though he's on a work posting in Kuwait; he won't believe you, so insist",
   "tip": "Insist with an oath and a fact: wallāh il-ʿaẓīm shiftah 'I swear I saw him'; huwa b-nafsah 'the man himself'. Sēf doubts: min jiddak? 'are you serious?'",
   "grammar": "insisting: wallāh il-ʿaẓīm, huwa b-nafsah, min jiddak?",
   "dialogue": [
@@ -1300,7 +1289,7 @@
   "id": "s5u012",
   "stage": 5,
   "title": "So much that I shut up",
-  "goal": "At a café, Fahad (secretly in Dubai) asks how Sēf took your news; tell him, and talk up the dinner that's coming",
+  "goal": "At a café, Fahad (flown in from his Kuwait posting for the dinner, in secret) asks how Sēf took your news; tell him, and talk up the dinner that's coming",
   "tip": "Emphasise how far something went with lad-daraja inn: ẓiḥak ʿalay lad-daraja inni sikatt 'he laughed at me so much that I shut up'. Fahad's Kuwaiti emphasis is for recognising: kint gid ḥajazt 'I'd (really) booked'.",
   "grammar": "emphasis: lad-daraja inn, wala aḥla; Kuwaiti gid (recognise)",
   "dialogue": [
@@ -1337,7 +1326,7 @@
    [
     "B",
     "هههه. بس العشا بيكون رهيب، ما تتخيل",
-    "hhhh. bas il-ʿasha biykūn rahīb, ma titkhayyal",
+    "hahaha. bas il-ʿasha biykūn rahīb, ma titkhayyal",
     "Haha. But the dinner's going to be amazing, you can't imagine."
    ],
    [
@@ -1648,7 +1637,7 @@
   "id": "s5u015",
   "stage": 5,
   "title": "Checkpoint 5.1: Sēf's farewell",
-  "goal": "Checkpoint: at Bū Rāshid's farewell dinner, Sēf finds Fahad there; insist you told him so, play down your part, and send Sēf off with blessings",
+  "goal": "Checkpoint: at Bū Rāshid's farewell dinner, Sēf finds Fahad (in from Kuwait); insist you told him so, play down your part, and send Sēf off with blessings",
   "tip": "Review, and now you say it: huwa b-nafsah, wallāh il-ʿaẓīm, ashukk inn, iẓ-ẓāhir inn, mub dhāk iz-zōd, shidd ḥēlak, mub sālfa, allāh ysahhil ʿalēk, and send-offs: ṭamminni ʿalēk 'let me know you're OK', dīr bālak ʿala nafsak, fī ḥifẓ illāh.",
   "grammar": "checkpoint 5.1 (s5u001–s5u014): hedging, insisting, playing down, wishes",
   "dialogue": [
@@ -1673,7 +1662,7 @@
    [
     "B",
     "هههه، أشك إنك ما كنت تدري! الظاهر إنك على نياتك",
-    "hhhh, ashukk innak ma kint tadri! iẓ-ẓāhir innak ʿala nyātak",
+    "hahaha, ashukk innak ma kint tadri! iẓ-ẓāhir innak ʿala nyātak",
     "Haha, I doubt you really didn't know! Looks like you're too trusting."
    ],
    [

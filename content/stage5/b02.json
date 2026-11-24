@@ -109,7 +109,7 @@
     "la tbūg la tkhāf",
     "if you don't steal, you've nothing to fear (a saying)",
     "",
-    "(recognise)"
+    "(recognise); also heard: la tbūg wala tkhāf"
    ]
   ],
   "receptive": [
@@ -641,9 +641,9 @@
    ],
    [
     "A",
-    "من جدك؟ ما يصير جي! وين ما حطيتك تلعب، ولّا احتياط",
-    "min jiddak? ma yṣīr chī! wēn ma ḥaṭṭētak tilʿab, walla iḥtiyāṭ",
-    "Are you serious? You can't do that! You play wherever I put you, or you're on the bench."
+    "من جدك؟ ما يصير جي! وين ما حطيتك تلعب، في المرمى ولّا احتياط",
+    "min jiddak? ma yṣīr chī! wēn ma ḥaṭṭētak tilʿab, fi l-marma walla iḥtiyāṭ",
+    "Are you serious? You can't do that! You play wherever I put you, in goal or on the bench."
    ],
    [
     "B",
@@ -653,13 +653,6 @@
    ]
   ],
   "items": [
-   [
-    "اللي يفوز",
-    "illi yfūz",
-    "whoever wins, the winner",
-    "من يفوز",
-    ""
-   ],
    [
     "فانيلة",
     "fānēla",
@@ -687,11 +680,18 @@
     "the line-up (of a team)",
     "التشكيلة",
     "(recognise)"
+   ],
+   [
+    "المرمى",
+    "il-marma",
+    "the goal (the frame the ball goes into), in goal",
+    "المرمى",
+    ""
    ]
   ],
   "receptive": [
-   3,
-   4
+   2,
+   3
   ]
  },
  {
@@ -1106,7 +1106,7 @@
    [
     "A",
     "لأنك كل ويكند في المول، فضيحة!",
-    "lann-ak kill wīkind fi l-mōl, faẓīḥa!",
+    "lannak kill wīkind fi l-mōl, faẓīḥa!",
     "Because you're at the mall every weekend, it's a disgrace!"
    ],
    [
@@ -1606,13 +1606,6 @@
     "feelings: mashāʿir (مشاعر)"
    ],
    [
-    "حضن",
-    "ḥuẓun",
-    "a hug",
-    "حضن",
-    ""
-   ],
-   [
     "على ما يبدو",
     "ʿala ma yibdu",
     "it seems, apparently (formal)",
@@ -1628,8 +1621,8 @@
    ]
   ],
   "receptive": [
-   4,
-   5
+   3,
+   4
   ]
  },
  {

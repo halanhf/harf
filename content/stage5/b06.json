@@ -500,7 +500,7 @@
   "stage": 5,
   "title": "The desert misses you, Sēf",
   "goal": "On a video call from abroad, Sēf sees your photos from his uncle's ʿizba; tell him about it, tease him about the cold, and plan his next visit home",
-  "tip": "Tell news in short past-tense bursts, one thing per sentence: shilt iṣ-ṣagr ʿala īdi! w shribt ḥalīb in-nāga. Friends tease about luck and weather: yā ḥaẓẓak!, and the reply la tzīdha ʿalay! 'don't rub it in!'. Plan with yōm + present: yōm tirjaʿ 'when you're back'.",
+  "tip": "Tell news in short past-tense bursts, one thing per sentence: shilt iṣ-ṣagr ʿala īdi! w shribt ḥalīb in-nāga. Friends tease about luck and weather: yā ḥaẓẓak!, and the reply la tzīd-ha ʿalay! 'don't rub it in!'. Plan with yōm + present: yōm tirjaʿ 'when you're back'.",
   "grammar": "recycle: telling a friend about your weekend (past narrative; la … wala)",
   "dialogue": [
    [
@@ -542,7 +542,7 @@
    [
     "A",
     "لا تزيدها علي! صج متجمد، ما أحس بإيدي",
-    "la tzīdha ʿalay! ṣij mitjammid, ma aḥiss b-īdi",
+    "la tzīd-ha ʿalay! ṣij mitjammid, ma aḥiss b-īdi",
     "Don't rub it in! I'm really frozen; I can't feel my hand."
    ],
    [
@@ -567,7 +567,7 @@
   "items": [
    [
     "لا تزيدها علي!",
-    "la tzīdha ʿalay!",
+    "la tzīd-ha ʿalay!",
     "don't rub it in! (to a man)",
     "لا تزدها عليّ",
     "to a woman: la tzīdīnha ʿalay (لا تزيدينها علي)"
@@ -660,7 +660,7 @@
    [
     "A",
     "هذا من السنة. النبي صلى الله عليه وسلم كان يخطب خطبتين، ويقعد بينهم، وهو قدوتنا",
-    "hādha min is-sunna. in-nabi ṣalla llāhu ʿalayhi wa sallam kān yikhṭub khuṭbatēn, w yigʿid bēnhum, w huwa gidwatna",
+    "hādha min is-sunna. in-nabi ṣalla llāhu ʿalayhi wa sallam kān yikhṭub khuṭbatēn, w yigʿid bēnhum, w huwa qudwatna",
     "That's from the Sunna. The Prophet, peace be upon him, used to give two sermons and sit between them, and he's our example."
    ],
    [
@@ -1121,9 +1121,9 @@
    ],
    [
     "B",
-    "أنا ساكن ويا ربيعي. يعني عن نفسي بس؟",
-    "ana sākin wiyya rbīʿi. yaʿni ʿan nafsi bas?",
-    "I live with a friend. So just for myself?"
+    "أنا ساكن ويا زميلي. يعني عن نفسي بس؟",
+    "ana sākin wiyya zamīli. yaʿni ʿan nafsi bas?",
+    "I live with a colleague. So just for myself?"
    ],
    [
     "A",
@@ -1241,9 +1241,9 @@
    ],
    [
     "B",
-    "لا. بس دفعت زكاة الفطر قبل الصلاة",
-    "la. bas difaʿt zakāt il-fiṭr gabil iṣ-ṣalā",
-    "No. But I paid zakāt il-fiṭr before the prayer."
+    "لا، ما شفت الهلال. بس دفعت زكاة الفطر قبل الصلاة",
+    "la, ma shift il-hilāl. bas difaʿt zakāt il-fiṭr gabil iṣ-ṣalā",
+    "No, I didn't see the new moon. But I paid zakāt il-fiṭr before the prayer."
    ],
    [
     "A",
@@ -1277,9 +1277,9 @@
    ],
    [
     "B",
-    "عيل بنسمعه للآخر. هذا التراث!",
-    "ʿayal binismaʿah lil-ākhir. hādha t-turāth!",
-    "Then we'll listen to the end. That's heritage!"
+    "عيل بنسمعه للآخر، ونسوي لقيمات على الجمر. هذا التراث!",
+    "ʿayal binismaʿah lil-ākhir, w nsawwi lgēmāt ʿala l-jamir. hādha t-turāth!",
+    "Then we'll listen to the end, and make luqaimat over the embers. That's heritage!"
    ]
   ],
   "items": [

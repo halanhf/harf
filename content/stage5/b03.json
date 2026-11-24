@@ -166,9 +166,9 @@
    ],
    [
     "B",
-    "على ما يبدو الوقت تأخر. طال عمرك، إذا ما شي لازم، بنترخص؟",
-    "ʿala ma yibdu l-wagt taʼakhkhar. ṭāl ʿumrak, idha ma shay lāzim, binitrakhkhaṣ?",
-    "It seems it's getting late. Sir, if there's nothing you need, may we take our leave?"
+    "الظاهر إن الوقت تأخر. طال عمرك، إذا ما شي لازم، بنترخص؟",
+    "iẓ-ẓāhir inn il-wagt taʼakhkhar. ṭāl ʿumrak, idha ma shay lāzim, binitrakhkhaṣ?",
+    "It looks like it's getting late. Sir, if there's nothing you need, may we take our leave?"
    ],
    [
     "A",
@@ -461,7 +461,7 @@
   "stage": 5,
   "title": "Khaṭīr! Rāshid's new words",
   "goal": "Rāshid shows you a video of a new burger place, full of the words young people use now; work out what they mean and where you can say them",
-  "tip": "Young people's praise words often mean the opposite of the dictionary: khaṭīr 'dangerous' means 'amazing', mub ṭabīʿi 'not normal' means 'unreal'. Keep them for friends, not the office. To calm a friend down, la tṣīr ōvar 'don't go over the top'.",
+  "tip": "Young people's praise words often mean the opposite of the dictionary: khaṭīr 'dangerous' means 'amazing', mub ṭabīʿi 'not normal' means 'unreal'. Keep them for friends, not the office. You'll hear la tṣīr ōvar 'don't go over the top'; to calm a friend down yourself, la tbālig is enough.",
   "grammar": "trendy language: falla, stāyl, ōvar (recycle khaṭīr, mub ṭabīʿi) (friends only)",
   "dialogue": [
    [
@@ -502,15 +502,15 @@
    ],
    [
     "A",
-    "لا لا، مديرك بيقول شو هالكلام! خلها ويا الشباب",
-    "la la, mudīrak biygūl shu hal-kalām! khallha wiyya sh-shabāb",
-    "No, no, your boss would say \"what kind of talk is that!\" Save it for the lads."
+    "لا لا، مديرك بيقول: لا تصير أوفر! خلها ويا الشباب",
+    "la la, mudīrak biygūl: la tṣīr ōvar! khallha wiyya sh-shabāb",
+    "No, no, your boss would say \"don't go over the top!\" Save it for the lads."
    ],
    [
     "B",
-    "ومع هذا، لا تصير أوفر، باقي ما ذقناه",
-    "w maʿa hādha, la tṣīr ōvar, bāgi ma dhugnāh",
-    "Still, don't go over the top; we haven't tried it yet."
+    "ومع هذا، لا تبالغ، باقي ما ذقناه",
+    "w maʿa hādha, la tbālig, bāgi ma dhugnāh",
+    "Still, don't exaggerate; we haven't tried it yet."
    ],
    [
     "A",
@@ -842,9 +842,9 @@
    ],
    [
     "B",
-    "زين، بس على ما يبدو المدير دوم مستعيل، وفيه ضغط وايد",
-    "zēn, bas ʿala ma yibdu l-mudīr dōm mistaʿyil, w fīh ẓaghiṭ wāyid",
-    "Good, but it seems the manager's always in a hurry, and there's a lot of pressure."
+    "زين، بس الظاهر إن المدير دوم مستعيل، وفيه ضغط وايد",
+    "zēn, bas iẓ-ẓāhir inn il-mudīr dōm mistaʿyil, w fīh ẓaghiṭ wāyid",
+    "Good, but it looks like the manager's always in a hurry, and there's a lot of pressure."
    ],
    [
     "A",
@@ -1436,7 +1436,7 @@
    [
     "A",
     "وصورنا لقطة بالكاميرا بعد، بنحطها أونلاين",
-    "w ṣawwarna lagṭa bil-kāmira baʿad, binḥuṭṭha ōnlāyn",
+    "w ṣawwarna lagṭa bil-kāmīra baʿad, binḥuṭṭha ōnlāyn",
     "And we filmed a short clip on camera too; we'll put it online."
    ],
    [
@@ -1459,7 +1459,7 @@
     "il-barnāmij",
     "the programme, the show (on radio or TV)",
     "البرنامج",
-    "(recognise)"
+    ""
    ],
    [
     "في المايك",
@@ -1484,7 +1484,6 @@
    ]
   ],
   "receptive": [
-   1,
    2
   ]
  },
