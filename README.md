@@ -45,18 +45,16 @@ python -m http.server 8000 --bind 127.0.0.1 -d docs
 
 Always use exactly http://127.0.0.1:8000. The browser keeps progress per address, so `localhost:8000` or a different port would start you from nothing. `--bind 127.0.0.1` keeps the server on this PC only.
 
-### The offline app on your phone (needs hosting)
+### The offline app on your phone
 
-A phone can't reach your PC's `127.0.0.1`, so `docs/` has to be on the web over HTTPS. The repo's private, so GitHub Pages would need a paid plan (or making the repo public). Cloudflare Pages is free and can deploy from a private repo.
+It's live at **https://halanhf.github.io/harf/** (GitHub Pages, deployed from `docs/` on `main`; every push to `main` redeploys it).
 
-**Cloudflare Pages** redeploys on every push:
+- **iPhone:** open it in Safari, Share, **Add to Home Screen**.
+- **Android:** open it in Chrome, ⋮, **Install app**.
 
-1. In the Cloudflare dashboard go to **Workers & Pages**, then **Create application**, **Pages**, **Connect to Git**.
-2. Pick **GitHub**. When GitHub asks which repos, choose **Only select repositories** and pick `arabic-learn`. Then **Install & Authorize** and **Begin setup**.
-3. Production branch: `main`. Leave the framework preset alone. Build command: leave it blank (Cloudflare's docs also suggest `exit 0`, which does the same). Build output directory: `docs`.
-4. **Save and Deploy**. You get an address like `https://<project-name>.pages.dev`, and every push to `main` redeploys it.
+Open it once online; after that it works offline. Progress stays on that device: use the backup download now and then.
 
-Anyone with either address can open the app. That's fine: it's only the app, and progress never leaves each person's own browser.
+Anyone with the address can open the app. That's fine: it's only the app, and progress never leaves each person's own browser.
 
 Then put it on the phone:
 
@@ -94,7 +92,7 @@ Open it, press **Continue** until Today says you're done. A normal day is review
 
   CI fails if `docs/` doesn't match `index.html`.
 - **claude.ai version:** republish the artifact from the new `index.html`. It keeps the same link and your progress. The page needs the `db`, `user`, `sample`, `dictation` and `downloads` capabilities, so keep them when republishing (without `downloads` the backup can only go to the clipboard).
-- **Hosted offline app:** Cloudflare redeploys on push (if you ever use GitHub Pages instead, run the **pages** workflow again). The app loads the new version the next time it's opened online.
+- **Hosted offline app:** GitHub Pages redeploys on every push to `main`. The app loads the new version the next time it's opened online.
 - **PC install from 127.0.0.1:** start the server again, open the app once, then stop the server.
 
 Updates never touch progress. It lives in browser storage, not in the files.
