@@ -46,7 +46,7 @@
     "Please fill in the form in clear handwriting."
    ],
    [
-    "لا تترك أي حَقْل فارغًا.",
+    "لا تَتْرُكْ أي حَقْل فارغًا.",
     "Do not leave any field empty."
    ],
    [
@@ -58,7 +58,7 @@
     "Fees: 30 dirhams. Signature: …… Date: ……"
    ],
    [
-    "يرجى الاِحْتِفَاظ بالإيصال.",
+    "يرجى الِاحْتِفَاظ بالإيصال.",
     "Please keep the receipt."
    ]
   ],
@@ -294,20 +294,12 @@
     "No refunds on discounted purchases"
    ],
    [
-    "الدفع نقدًا أو بالبطاقة",
-    "Payment in cash or by card"
-   ],
-   [
     "فرع المدينة وفرع العاصمة",
     "The city branch and the capital branch"
    ],
    [
     "الدفع بالبطاقة أو نقدًا في الفرع فقط.",
     "Payment by card or in cash at the branch only."
-   ],
-   [
-    "الفاتورة مطلوبة عند الاستبدال.",
-    "The receipt is required for exchange."
    ],
    [
     "خصم خاص للعائلات يوم الجمعة.",
@@ -320,7 +312,7 @@
   ],
   "questions": [
    [
-    "How much is the biggest reduction?",
+    "How much is the season sale reduction?",
     [
      "Up to 50%",
      "Up to 10%",
@@ -378,7 +370,7 @@
     "The examination costs 150 dirhams including tax."
    ],
    [
-    "عيادة الْأَطْفَال في الطابق الثَّانِي.",
+    "عيادة الأطفال في الطابق الثاني.",
     "The children's clinic is on the second floor."
    ],
    [
@@ -435,14 +427,14 @@
   "lines": [
    [
     "اسم الدواء: مُسَكِّن للألم",
-    "Medicine: painkiller"
+    "Medicine name: painkiller"
    ],
    [
-    "حَبَّة وَاحِدَة مرتين يوميًا بعد الأكل.",
+    "حَبَّة واحدة مرتين يوميًا بعد الأكل.",
     "One tablet twice a day after food."
    ],
    [
-    "لا تستخدم الحبوب قبل الأكل.",
+    "لا تَسْتَخْدِمِ الحبوب قبل الأكل.",
     "Do not take the tablets before food."
    ],
    [
@@ -466,8 +458,8 @@
     "Please bring the prescription and your ID."
    ],
    [
-    "التوصيل مجاني من الفرع إلى المنطقة.",
-    "Delivery from the branch to the area is free."
+    "التوصيل مجاني داخل المنطقة.",
+    "Free delivery within the area."
    ],
    [
     "للاستعلامات: الاستقبال في الفرع.",
@@ -556,10 +548,6 @@
    [
     "الرقم السري مطلوب عند السحب.",
     "The PIN is required for withdrawals."
-   ],
-   [
-    "الدفع بالبطاقة في الفرع مجانًا.",
-    "Paying by card at the branch is free."
    ]
   ],
   "questions": [
@@ -634,8 +622,8 @@
     "Amount before tax: 40 dirhams"
    ],
    [
-    "الضريبة: ٥٪",
-    "Tax: 5%"
+    "الضريبة (٥٪): درهمان",
+    "Tax (5%): 2 dirhams"
    ],
    [
     "الإجمالي شامل الضريبة: ٤٢ درهمًا",
@@ -654,7 +642,7 @@
     "Change: 58 dirhams"
    ],
    [
-    "يرجى الاِحْتِفَاظ بالفاتورة.",
+    "يرجى الِاحْتِفَاظ بالفاتورة.",
     "Please keep the receipt."
    ],
    [
@@ -710,8 +698,8 @@
     "To our esteemed residents:"
    ],
    [
-    "إيجار الشهر القادم مطلوب قبل ٢٥ من الشهر.",
-    "Next month's rent is due before the 25th of the month."
+    "إيجار الشهر القادم مطلوب قبل يوم ٢٥ من هذا الشهر.",
+    "Next month's rent is due before the 25th of this month."
    ],
    [
     "المبلغ: ٣٠٠٠ درهم، شامل المياه وَالْكَهْرَبَاء.",
@@ -722,7 +710,7 @@
     "You can pay in cash at reception or by transfer to the building's account."
    ],
    [
-    "يرجى كِتَابَة رقم الشقة في ملاحظات التحويل.",
+    "يرجى كتابة رقم الشقة في ملاحظات التحويل.",
     "Please write the flat number in the transfer notes."
    ],
    [
@@ -822,8 +810,8 @@
     "National prize for a new city project"
    ],
    [
-    "قرار الوزارة: ساعات العمل للمقيمين والمواطنين",
-    "Ministry decision: working hours for residents and citizens"
+    "قرار الوزارة: ساعات عمل جديدة للموظفين",
+    "Ministry decision: new working hours for employees"
    ],
    [
     "مهرجان وطني في المدينة والعاصمة",
@@ -894,8 +882,8 @@
     "Global prize for a national initiative for citizens"
    ],
    [
-    "تقرير رسمي: نسبة الزيادة ٤٪ في المدينة",
-    "Official report: an increase of 4% in the city"
+    "تقرير رسمي: زيادة التجارة في المدينة بنسبة ٤٪",
+    "Official report: trade in the city up 4%"
    ],
    [
     "السِّيَاحَة في الخليج: مشروع جديد للعائلات",
@@ -958,8 +946,8 @@
   "title": "News brief: road accident",
   "lines": [
    [
-    "وَقَعَ الحادث بين سيارتين على الطَّرِيق الرَّئِيسِيّ قرب مدخل المدينة صباح الأحد.",
-    "The accident happened between two cars on the main road near the city entrance on Sunday morning."
+    "وَقَعَ حادث بين سيارتين على الطَّرِيق الرَّئِيسِيّ قرب مدخل المدينة صباح الأحد.",
+    "An accident happened between two cars on the main road near the city entrance on Sunday morning."
    ],
    [
     "وصلت الشرطة والإسعاف إلى المكان بعد خمس دقائق.",
@@ -974,15 +962,15 @@
     "The police asked drivers to wait near the city entrance."
    ],
    [
-    "وأغلقت المنطقة مُدَّة ساعة ثم فتحتها.",
-    "And they closed the area for an hour, then reopened it."
+    "وأغلقت الشرطة المنطقة مُدَّة ساعة ثم فتحتها.",
+    "The police closed the area for an hour, then reopened it."
    ],
    [
     "وقال المسؤول إن السَّبَب هو السرعة.",
     "The official said the cause was speed."
    ],
    [
-    "الطَّرِيق مفتوح الآن للجميع.",
+    "الطريق مفتوح الآن للجميع.",
     "The road is now open to everyone."
    ]
   ],

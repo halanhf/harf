@@ -86,10 +86,10 @@
     [
      "Easier visas for businessmen",
      "Scholarships for students",
-     "A shared army",
+     "A common currency",
      "A solar electricity project"
     ],
-    "A shared army"
+    "A common currency"
    ],
    [
     "What can you infer about trade between the two countries before the agreement?",
@@ -357,8 +357,8 @@
     "He explained that the delegation would carry a clear message from the summit to the two governments: the war must stop now."
    ],
    [
-    "وقال رئيس الدولة في كلمة في نهاية القمة إن شعوب المنطقة تريد السلام والاستقرار.",
-    "In a speech at the end of the summit, the head of state said the peoples of the region want peace and stability."
+    "وقال وزير في كلمة في نهاية القمة إن شعوب المنطقة تريد السلام والاستقرار.",
+    "In a speech at the end of the summit, a minister said the peoples of the region want peace and stability."
    ],
    [
     "وأضاف أن بلده مستعد لاستقبال المفاوضات بين البلدين في العاصمة.",
@@ -383,9 +383,9 @@
    [
     "What will the new fund pay for?",
     [
-     "Rebuilding the summit venue",
+     "Peacekeeping troops",
      "Refugees' education, health and housing",
-     "Weapons for both sides",
+     "Rebuilding roads in the capital",
      "Trade between the ten countries"
     ],
     "Refugees' education, health and housing"
@@ -430,8 +430,8 @@
     "The ministry's statement explained that the surplus came from higher oil and gas prices and greater revenue from the tourism sector."
    ],
    [
-    "وكانت الميزانية قد سجلت عجزا كبيرا قبل أربع سنوات بسبب انخفاض أسعار النفط.",
-    "The budget had recorded a large deficit four years earlier because of a fall in oil prices."
+    "وكانت الميزانية قد سجلت عجزا كبيرا قبل سنتين بسبب انخفاض أسعار النفط.",
+    "The budget had recorded a large deficit two years earlier because of a fall in oil prices."
    ],
    [
     "وأضاف البيان أن الحكومة ستستخدم جزءا من الفائض لتخفيض الديون العامة.",
@@ -742,16 +742,16 @@
     "She says the beginning was hard, because the banks refused to give her a loan in the first year."
    ],
    [
-    "لذلك اعتمدت على مدخراتها وعلى مساعدة والدها، وكانت تعمل وحدها في الليل بعد نهاية وظيفتها.",
-    "So she relied on her savings and her father's help, and worked alone at night after finishing her job."
+    "لذلك اعتمدت على مدخراتها وعلى مساعدة والدها، وكانت تعمل وحدها في الليل بعد عودتها من عملها.",
+    "So she relied on her savings and her father's help, and worked alone at night after she came home from work."
    ],
    [
     "وفي السنة الثالثة، حصلت على تمويل من صندوق حكومي للمشاريع الصغيرة.",
     "In the third year she got funding from a government fund for small businesses."
    ],
    [
-    "وتقول فاطمة إن التمويل ساعدها على شراء أجهزة جديدة وزيادة الإنتاج خمس مرات.",
-    "Fatima says the funding helped her buy new machines and increase production fivefold."
+    "وتقول فاطمة إن التمويل ساعدها على زيادة الإنتاج خمس مرات.",
+    "Fatima says the funding helped her increase production fivefold."
    ],
    [
     "كما دخلت في شراكة مع تاجر لديه عدة محلات في المراكز التجارية.",
@@ -774,8 +774,8 @@
     "Last year the factory returned to profit and began selling its products in two countries in the region."
    ],
    [
-    "وتنصح فاطمة الشباب الذين يريدون بدء مشروع بأن تكون البداية صغيرة، وأن يتعلموا من كل خطأ.",
-    "Fatima advises young people who want to start a business to start small and to learn from every mistake."
+    "وتقول فاطمة للشباب الذين يريدون مشروعا خاصا إن عليهم أن يبدؤوا صغارا، وأن يتعلموا من كل خطأ.",
+    "Fatima tells young people who want a business of their own to start small and learn from every mistake."
    ],
    [
     "وأغلب الموظفين في المصنع اليوم من نساء الحي.",
@@ -974,16 +974,16 @@
     "He said more than two hundred thousand people had used the app on the first day."
    ],
    [
+    "وأوضح أن التطبيق مجاني، ويعمل على كل الهواتف.",
+    "He explained that the app is free and works on all phones."
+   ],
+   [
     "وقال أحد المستخدمين إنه جدد رخصة القيادة في خمس دقائق وهو في منزله.",
     "One user said he had renewed his driving licence in five minutes from home."
    ],
    [
     "لكن مستخدمين آخرين قالوا على وسائل التواصل الاجتماعي إن التطبيق كان بطيئا في الساعات الأولى.",
     "But other users said on social media that the app had been slow in the first hours."
-   ],
-   [
-    "وأوضح أن التطبيق مجاني، ويعمل على كل الهواتف.",
-    "He explained that the app is free and works on all phones."
    ],
    [
     "وردت الوزارة بأن السبب هو الإقبال الكبير، وأن المشكلة حلت في المساء.",
@@ -995,9 +995,9 @@
     "What is the main idea of the new app?",
     [
      "One platform for many government services",
-     "A game for children",
-     "A news channel",
-     "A shopping site"
+     "A bank's mobile app",
+     "A map of government offices",
+     "A tourist guide to the city"
     ],
     "One platform for many government services"
    ],
@@ -1040,16 +1040,16 @@
   "title": "A heritage festival opens",
   "lines": [
    [
-    "افتتح أمس مهرجان التراث السنوي في ساحة المتحف الوطني، ويستمر عشرة أيام.",
-    "The annual heritage festival opened yesterday in the square outside the national museum and runs for ten days."
+    "افتتح أمس مهرجان التراث أمام المتحف الوطني، ويستمر عشرة أيام.",
+    "The heritage festival opened yesterday in front of the national museum and runs for ten days."
    ],
    [
     "ويقدم المهرجان صورة عن حياة الأجداد في البحر والصحراء من خلال المعارض والعروض الشعبية.",
-    "Through exhibitions and folk performances, the festival gives a picture of their grandparents' life at sea and in the desert."
+    "Through exhibitions and folk performances, the festival gives a picture of the life of the forefathers at sea and in the desert."
    ],
    [
     "وفي قسم البحر، يشاهد الزوار نماذج من السفن القديمة، ويتحدث معهم كبار السن عن رحلات الغوص.",
-    "In the sea section, visitors see models of old ships, and elderly people talk to them about pearl-diving trips."
+    "In the sea section, visitors see models of old ships, and elderly people talk to them about diving trips."
    ],
    [
     "أما قسم الصحراء فيعرض الخيام والقهوة العربية، ويشرح للأطفال كيف كانت حياة الأسر قبل النفط.",
@@ -1068,8 +1068,8 @@
     "Folk music groups perform every evening on a large stage beside the museum."
    ],
    [
-    "كما تقام كل ليلة أمسية شعرية يقرأ فيها شاعر من الشباب قصيدة عن الوطن.",
-    "A poetry evening is also held every night, in which a young poet reads a poem about the homeland."
+    "كما يقرأ كل ليلة شاعر من الشباب قصيدة عن الوطن على المسرح.",
+    "Every night a young poet also reads a poem about the homeland on the stage."
    ],
    [
     "وقال مدير المتحف إن الهدف من المهرجان هو أن يعرف الجيل الجديد تراث الآباء والأجداد.",
@@ -1092,7 +1092,7 @@
     "One of the elderly participants said he was happy because the children ask a lot about life at sea."
    ],
    [
-    "والدخول إلى المهرجان مجاني، وهو مفتوح من الساعة الرابعة عصرا حتى الحادية عشرة ليلا.",
+    "والدخول إلى المهرجان مجاني، وهو مفتوح من الساعة 4 عصرا حتى الساعة 11 ليلا.",
     "Entry to the festival is free, and it is open from four in the afternoon until eleven at night."
    ]
   ],
@@ -1194,20 +1194,20 @@
     "The lecturer explained that young people do not need to give up their phones, but to know who posted the news."
    ],
    [
-    "كما دعت الأسر إلى الحديث مع أبنائها عن الأخبار التي يشاهدونها كل يوم.",
+    "كما دعت الدراسة الأسر إلى الحديث مع أبنائها عن الأخبار التي يشاهدونها كل يوم.",
     "It also called on families to talk with their children about the news they watch every day."
    ]
   ],
   "questions": [
    [
-    "Where do most young people get their news?",
+    "What share of the participants said they follow a television news bulletin?",
     [
-     "Social media",
-     "Television",
-     "Radio",
-     "Newspapers"
+     "12 percent",
+     "30 percent",
+     "70 percent",
+     "50 percent"
     ],
-    "Social media"
+    "12 percent"
    ],
    [
     "When do young people mostly listen to the radio?",
@@ -1272,12 +1272,12 @@
     "As for lying, it is one of Satan's doors: it starts with a small word, then grows until it ruins a person's life."
    ],
    [
-    "وكم من أسرة تفرقت بسبب كذبة، وكم من صداقة انتهت لأن أحد الطرفين لم يصدق.",
-    "How many families have broken apart because of a lie, and how many friendships have ended because one side was not truthful."
+    "وكم من أسرة تعبت بسبب كذبة، وكم من تاجر خسر زبائنه لأنه كذب عليهم.",
+    "How many families have suffered because of a lie, and how many a trader has lost his customers because he lied to them."
    ],
    [
-    "أيها الإخوة، إن من الكذب ما يظنه الناس صغيرا، كأن يعد الرجل ولا يفي بوعده.",
-    "Brothers, some lying is thought small by people, such as when a man makes a promise and does not keep it."
+    "أيها الإخوة، إن من الكذب ما يظنه الناس صغيرا، كأن يقول الرجل إنه سيأتي وهو يعرف أنه لن يأتي.",
+    "Brothers, some lying is thought small by people, such as when a man says he will come while knowing he will not."
    ],
    [
     "ومن ذلك أيضا أن ينشر الإنسان خبرا على وسائل التواصل الاجتماعي قبل أن يتأكد من صحته.",
@@ -1481,7 +1481,7 @@
    ],
    [
     "وقال إمام الجامع في كلمة قبل توزيع الجوائز إن هؤلاء الأطفال هم مستقبل الأمة.",
-    "In a speech before the prizes were handed out, the mosque's imam said these children are the future of the community."
+    "In a speech before the prizes were handed out, the mosque's imam said these children are the future of the Ummah."
    ],
    [
     "وأضاف أن الحفظ وحده لا يكفي، وأن المهم هو أن يفهم الطفل الآيات ويعمل بها في حياته.",
@@ -1566,8 +1566,8 @@
     "The municipality has launched a new initiative to cut household electricity and water consumption by 20 percent within three years."
    ],
    [
-    "وتبدأ المبادرة في حي واحد يسكنه نحو خمسة آلاف شخص، ثم تنتقل إلى بقية الأحياء.",
-    "The initiative begins in one neighbourhood of about five thousand people and will then move to the other neighbourhoods."
+    "وتبدأ المبادرة في حي واحد يسكنه نحو خمسة آلاف شخص، ثم تنتقل إلى أحياء أخرى.",
+    "The initiative begins in one neighbourhood of about five thousand people and will then move to other neighbourhoods."
    ],
    [
     "وقال مدير المبادرة إن الاستدامة لم تعد مفهوما بعيدا عن الناس، بل أصبحت مسؤولية كل أسرة.",
@@ -1583,7 +1583,7 @@
    ],
    [
     "كما ستقدم البلدية للأسر أدوات توفير مجانية للحمامات والمطابخ.",
-    "The municipality will also give families free water-saving fittings for bathrooms and kitchens."
+    "The municipality will also give families free saving devices for bathrooms and kitchens."
    ],
    [
     "وهناك أيضا حملة توعية في المدارس والمساجد وعلى وسائل التواصل الاجتماعي.",
@@ -1630,14 +1630,14 @@
     "Cutting household electricity and water use by 20 percent in three years"
    ],
    [
-    "Why do families use more energy in summer?",
+    "How does summer use in the neighbourhood compare with the other months?",
     [
-     "School holidays",
-     "Air conditioners",
-     "More guests",
-     "Longer days at work"
+     "Twice as much",
+     "Half as much",
+     "About the same",
+     "A fifth more"
     ],
-    "Air conditioners"
+    "Twice as much"
    ],
    [
     "What do the engineers do in the initiative?",
@@ -1704,16 +1704,16 @@
     "He added that the schools that achieve the best results would receive awards and extra support."
    ],
    [
+    "وأكد الوزير أن الخطة ستبدأ في عشرين مدرسة في العام الأول.",
+    "The minister stressed that the plan would start in twenty schools in the first year."
+   ],
+   [
     "في المقابل، قال بعض المعلمين إن الخطة جيدة، لكن تنفيذها يحتاج إلى وقت وإمكانيات كبيرة.",
     "On the other hand, some teachers said the plan is good, but carrying it out needs time and considerable resources."
    ],
    [
     "وأوضحت معلمة تعمل منذ خمس عشرة سنة أن الازدحام في الصفوف من أكبر التحديات اليوم.",
     "A teacher who has worked for fifteen years explained that overcrowded classrooms are one of the biggest challenges today."
-   ],
-   [
-    "وأكد الوزير أن الخطة ستبدأ في عشرين مدرسة في العام الأول.",
-    "The minister stressed that the plan would start in twenty schools in the first year."
    ],
    [
     "ورد الوزير بأن الوزارة ستفتتح ثلاثين مدرسة جديدة لتخفيض الازدحام في الصفوف.",
@@ -1793,8 +1793,8 @@
     "But she never thought of going back, because she knew the opportunity would not come again."
    ],
    [
-    "وتقول إن أكثر ما ساعدها هو ثقتها بنفسها ودعم والدتها.",
-    "She says what helped her most was her self-confidence and her mother's support."
+    "وتقول إن أكثر من ساعدها هي والدتها.",
+    "She says the person who helped her most was her mother."
    ],
    [
     "وبعد عودتها، بدأت العمل مهندسة في قسم الصيانة، وكانت تعمل في الليل والنهار لتؤكد للجميع أنها قادرة على النجاح.",
@@ -1923,12 +1923,12 @@
     "The ministry is also working with schools to change the meals pupils eat at school."
    ],
    [
-    "وقال طبيب في أحد المستشفيات إن عيادته تستقبل اليوم مرضى شبابا أكثر بكثير من الماضي.",
-    "A doctor at one hospital said his clinic now sees far more young patients than in the past."
-   ],
-   [
     "وأوضحت أن الوزارة ستزور كذلك الشركات الكبيرة لتقديم الفحص للموظفين في مكان عملهم.",
     "She explained that the ministry would also visit large companies to offer the test to employees at their workplace."
+   ],
+   [
+    "وقال طبيب في أحد المستشفيات إن عيادته تستقبل اليوم مرضى شبابا أكثر بكثير من الماضي.",
+    "A doctor at one hospital said his clinic now sees far more young patients than in the past."
    ],
    [
     "وأضاف أن الحملة خطوة مهمة، لكن التغيير الأهم يبدأ في البيت، على مائدة الطعام.",
@@ -1992,12 +1992,12 @@
     "Experts say the answer is not simple, because the impact of this technology differs from one field to another."
    ],
    [
-    "فبعض الوظائف التي تعتمد على تكرار العمل نفسه كل يوم قد تختفي خلال سنوات قليلة.",
-    "Some jobs that rely on repeating the same work every day may disappear within a few years."
+    "فبعض الوظائف التي فيها العمل نفسه كل يوم قد تختفي خلال سنوات قليلة.",
+    "Some jobs in which the work is the same every day may disappear within a few years."
    ],
    [
-    "لكن وظائف أخرى ستتغير فقط، إذ سيستخدم الموظف الذكاء الاصطناعي لينجز عمله بسرعة أكبر.",
-    "But other jobs will only change, as employees use artificial intelligence to get their work done faster."
+    "لكن وظائف أخرى ستتغير فقط، إذ سيستخدم الموظف الذكاء الاصطناعي ليعمل بسرعة أكبر.",
+    "But other jobs will only change, as employees use artificial intelligence to work faster."
    ],
    [
     "كما ستأتي وظائف جديدة لم يكن أحد يعرفها قبل عشر سنوات.",
@@ -2010,6 +2010,10 @@
    [
     "وأوضح أن الشركة قدمت لكل موظف تدريبا على استخدام الأدوات الجديدة، وأن الإنتاج ارتفع بنسبة 30 بالمائة.",
     "He explained that the company had given every employee training in using the new tools, and that output had risen by 30 percent."
+   ],
+   [
+    "وأشار إلى أن الشركة لم تستخدم التقنية لتخفيض التكلفة فقط، بل لتحسين جودة الخدمة.",
+    "He pointed out that the company had not used the technology only to cut costs but to improve the quality of service."
    ],
    [
     "وأضاف أن المهارات التي تحتاجها الشركات اليوم هي الابتكار والتواصل وحل المشكلات.",
@@ -2028,24 +2032,20 @@
     "An employee at a bank said she had been afraid at first, but today she sees the technology as an opportunity, not a danger."
    ],
    [
-    "وأشار إلى أن الشركة لم تستخدم التقنية لتخفيض التكلفة فقط، بل لتحسين جودة الخدمة.",
-    "He pointed out that the company had not used the technology only to cut costs but to improve the quality of service."
-   ],
-   [
     "وأضافت أن الآلة تستطيع أن تحسب بسرعة، لكنها لا تستطيع أن تفهم الزبون مثل الإنسان.",
     "She added that a machine can calculate quickly but cannot understand a customer the way a person can."
    ]
   ],
   "questions": [
    [
-    "Which jobs are most at risk, according to experts?",
+    "According to the text, how will many jobs change instead of disappearing?",
     [
-     "Jobs that repeat the same work every day",
-     "Jobs in banks only",
-     "Jobs that need communication",
-     "Teaching jobs"
+     "Employees will use AI to work faster",
+     "They will move to other countries",
+     "Only managers will keep them",
+     "They will need fewer hours"
     ],
-    "Jobs that repeat the same work every day"
+    "Employees will use AI to work faster"
    ],
    [
     "What did the technology company do?",
