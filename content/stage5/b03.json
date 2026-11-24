@@ -461,8 +461,8 @@
   "stage": 5,
   "title": "Khaṭīr! Rāshid's new words",
   "goal": "Rāshid shows you a video of a new burger place, full of the words young people use now; work out what they mean and where you can say them",
-  "tip": "Young people's praise words often mean the opposite of the dictionary: khaṭīr 'dangerous' means 'amazing', mub ṭabīʿi 'not normal' means 'unreal'. Keep them for friends, not the office. You'll hear la tṣīr ōvar 'don't go over the top'; to calm a friend down yourself, la tbālig is enough.",
-  "grammar": "trendy language: falla, stāyl, ōvar (recycle khaṭīr, mub ṭabīʿi) (friends only)",
+  "tip": "Young people's praise words often mean the opposite of the dictionary: khaṭīr 'dangerous' means 'amazing', mub ṭabīʿi 'not normal' means 'unreal'. Keep them for friends, not the office. You'll hear la tṣīr ōfar 'don't go over the top'; to calm a friend down yourself, la tbālig is enough.",
+  "grammar": "trendy language: falla, stāyl, ōfar (recycle khaṭīr, mub ṭabīʿi) (friends only)",
   "dialogue": [
    [
     "A",
@@ -503,7 +503,7 @@
    [
     "A",
     "لا لا، مديرك بيقول: لا تصير أوفر! خلها ويا الشباب",
-    "la la, mudīrak biygūl: la tṣīr ōvar! khallha wiyya sh-shabāb",
+    "la la, mudīrak biygūl: la tṣīr ōfar! khallha wiyya sh-shabāb",
     "No, no, your boss would say \"don't go over the top!\" Save it for the lads."
    ],
    [
@@ -542,10 +542,10 @@
    ],
    [
     "لا تصير أوفر",
-    "la tṣīr ōvar",
+    "la tṣīr ōfar",
     "don't go over the top, don't overdo it (friends only) (to a man)",
     "لا تبالغ",
-    "to a woman: la tṣīrīn ōvar (لا تصيرين أوفر); (recognise)"
+    "to a woman: la tṣīrīn ōfar (لا تصيرين أوفر); (recognise)"
    ],
    [
     "الديكور",
@@ -1382,13 +1382,13 @@
   "stage": 5,
   "title": "Off air",
   "goal": "Straight after the interview, the presenter drops the formal voice; talk about your nerves, the mixing, and when the interview goes out",
-  "tip": "The same speaker shifts register in seconds: off air it's khalāṣ, khiliṣ il-lāyv, ṭilaʿna min il-hawa. irtāḥ! Then ask about the repeat: mita l-iʿāda? ʿala ay mōja?",
+  "tip": "The same speaker shifts register in seconds: off air it's khalāṣ, khilaṣ il-lāyf, ṭilaʿna min il-hawa. irtāḥ! Then ask about the repeat: mita l-iʿāda? ʿala ay mōja?",
   "grammar": "register shifting: formal → everyday as soon as the mic is off",
   "dialogue": [
    [
     "A",
     "خلاص، خلص اللايف، طلعنا من الهوا. ارتاح يا سالم!",
-    "khalāṣ, khiliṣ il-lāyv, ṭilaʿna min il-hawa. irtāḥ yā Sālim!",
+    "khalāṣ, khilaṣ il-lāyf, ṭilaʿna min il-hawa. irtāḥ yā Sālim!",
     "That's it, the live show's over, we're off air. Relax, Sālim!"
    ],
    [
@@ -1477,7 +1477,7 @@
    ],
    [
     "اللايف",
-    "il-lāyv",
+    "il-lāyf",
     "the live show, the live broadcast",
     "البث المباشر",
     ""

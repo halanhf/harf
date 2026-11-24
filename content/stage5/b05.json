@@ -352,13 +352,13 @@
   "stage": 5,
   "title": "Cousins who won't speak",
   "goal": "In Bū Rāshid's majlis, he tells you a joke in the family group has set Rāshid against Ḥamad, the cousin whose wedding you went to; agree to be the go-between",
-  "tip": "Mediating starts with naming the problem gently: mithāwshīn 'they've fallen out', kill wāḥid rākib rāsah 'each one's dug his heels in'. Then offer to step in (aṣalliḥ bēnhum) before il-fitna grows, and hear each side first: basmaʿ min Rāshid awwal.",
-  "grammar": "mediating I: naming the quarrel, offering to step in (mithāwshīn, rākib rāsah)",
+  "tip": "Mediating starts with naming the problem gently: mit-hāwshīn 'they've fallen out', kill wāḥid rākib rāsah 'each one's dug his heels in'. Then offer to step in (aṣalliḥ bēnhum) before il-fitna grows, and hear each side first: basmaʿ min Rāshid awwal.",
+  "grammar": "mediating I: naming the quarrel, offering to step in (mit-hāwshīn, rākib rāsah)",
   "dialogue": [
    [
     "A",
     "يا ولدي، أبيك في سالفة. راشد وحمد ولد أخوي متهاوشين",
-    "yā wildi, abīk fi sālfa. Rāshid w Ḥamad wild akhūy mithāwshīn",
+    "yā wildi, abīk fi sālfa. Rāshid w Ḥamad wild akhūy mit-hāwshīn",
     "Son, I need you for something. Rāshid and my brother's son Ḥamad have fallen out."
    ],
    [
@@ -381,9 +381,9 @@
    ],
    [
     "A",
-    "يمكن، بس أبو حمد زعل. قلت له تعوذ من الشيطان، بس يقول راشد ما احترم ولده",
+    "يمكن، بس بو حمد زعل. قلت له تعوذ من الشيطان، بس يقول راشد ما احترم ولده",
     "yimkin, bas Bū Ḥamad ziʿal. gilt-lah taʿawwadh min ish-shēṭān, bas ygūl Rāshid ma iḥtaram wildah",
-    "Maybe, but Ḥamad's father got upset. I told him to calm down, but he says Rāshid didn't respect his son, a grown man."
+    "Maybe, but Ḥamad's father got upset. I told him to calm down, but he says Rāshid didn't respect his son."
    ],
    [
     "B",
@@ -419,10 +419,10 @@
   "items": [
    [
     "متهاوشين",
-    "mithāwshīn",
+    "mit-hāwshīn",
     "they've fallen out, they're quarrelling (two or more people)",
     "متخاصمون",
-    "one man: mithāwish (متهاوش); one woman: mithāwsha (متهاوشة)"
+    "one man: mit-hāwish (متهاوش); one woman: mit-hāwsha (متهاوشة)"
    ],
    [
     "راكب راسه",
@@ -628,7 +628,7 @@
    [
     "A",
     "هذا الصح. اللي يعترف بغلطه كبير، وانت صاير قدوة لراشد",
-    "hādha ṣ-ṣaḥḥ. illi yiʿtirif b-ghalṭah kabīr, w inta ṣāyir qudwa l-Rāshid",
+    "hādha ṣ-ṣaḥḥ. illi yiʿtirif b-ghalaṭah kbīr, w inta ṣāyir qudwa l-Rāshid",
     "That's right. A man who admits his mistake is a big man, and you've become a role model for Rāshid."
    ],
    [
@@ -980,7 +980,7 @@
    [
     "A",
     "مرة وحدة، وأنا صغير. وراشد؟ هذا ما يركب إلا البلايستيشن!",
-    "marra waḥda, w ana ṣghīr. w Rāshid? hādha ma yirkab illa l-blāystēshin!",
+    "marra waḥda, w ana ṣghīr. w Rāshid? hādha ma yirkab illa l-blēstēshin!",
     "Once, when I was little. And Rāshid? The only thing he rides is the PlayStation!"
    ],
    [

@@ -27,8 +27,8 @@
    ],
    [
     "B",
-    "الظاهر إنه مشغول هالأيام، أو يمكن مزاجه مب زين",
-    "iẓ-ẓāhir innah mashghūl hal-ayyām, aw yimkin mizājah mub zēn",
+    "الظاهر إنه مشغول هالأيام، أو يمكن ما له مزاج",
+    "iẓ-ẓāhir innah mashghūl hal-ayyām, aw yimkin ma lah mizāj",
     "Apparently he's busy these days, or maybe he's not in the mood."
    ],
    [
@@ -88,7 +88,7 @@
     "mizāj",
     "mood",
     "مزاج",
-    "his mood: mizājah (مزاجه); not in the mood: mizājah mub zēn"
+    "his mood: mizājah (مزاجه); he's not in the mood: ma lah mizāj (ما له مزاج); I'm not in the mood: māli mizāj (مالي مزاج)"
    ],
    [
     "تأجيل",
@@ -525,7 +525,7 @@
    [
     "A",
     "هههه، معك حق. الظاهر إن الإعلان نصب، ولا تقول إني ساذج!",
-    "hahaha, maʿak ḥagg. iẓ-ẓāhir inn il-iʿlān naṣb, w la tgūl inni sādhij!",
+    "hahaha, maʿak ḥagg. iẓ-ẓāhir inn il-iʿlān naṣib, w la tgūl inni sādhij!",
     "Haha, you're right. It looks like the ad's a scam, and don't call me gullible!"
    ],
    [
@@ -963,13 +963,13 @@
    [
     "A",
     "مليت! كل يوم كود، وراسي بينفجر",
-    "malēt! kill yōm kōd, w rāsi biyinfijir",
+    "mallēt! kill yōm kōd, w rāsi biyinfijir",
     "I'm fed up! Code every day, and my head's going to explode."
    ],
    [
     "B",
-    "عادي، أول أسبوع دايما صعب. والأيام تمر بسرعة",
-    "ʿādi, awwal usbūʿ dāyman ṣaʿb. w il-ayyām tmurr b-surʿa",
+    "عادي، أول أسبوع دوم صعب. والأيام تمر بسرعة",
+    "ʿādi, awwal usbūʿ dōm ṣaʿb. w il-ayyām tmurr b-surʿa",
     "That's normal; the first week's always hard. And the days go by fast."
    ],
    [
@@ -1004,9 +1004,9 @@
    ],
    [
     "B",
-    "لا توقف الحين. كمل الشهر، ولا تفشلني!",
-    "la tōgaf il-ḥīn. kammil ish-shahar, w la tfashshilni!",
-    "Don't stop now. Finish the month, and don't let me down!"
+    "الله يسلمك. لا توقف الحين. كمل الشهر، ولا تفشلني!",
+    "allāh ysallmak. la tōgaf il-ḥīn. kammil ish-shahar, w la tfashshilni!",
+    "You're welcome. Don't stop now. Finish the month, and don't let me down!"
    ]
   ],
   "items": [
@@ -1184,7 +1184,7 @@
    [
     "A",
     "فهد؟ مستحيل، انت غلطان. فهد في الكويت، يتهيأ لك",
-    "Fahad? mustaḥīl, inta ghalṭān. Fahad fi l-Kwēt, yithayyaʼ-lak",
+    "Fahad? mustaḥīl, inta ghalṭān. Fahad fi l-Kwēt, yit-hayyaʼ-lak",
     "Fahad? Impossible, you're wrong. Fahad's in Kuwait; you're imagining things."
    ],
    [
@@ -1232,7 +1232,7 @@
    [
     "A",
     "دقيقة... فهد طرش لي: أنا في الكويت، مشغول وايد. شفت؟ يتهيأ لك",
-    "digīga... Fahad ṭarrash-li: ana fi l-Kwēt, mashghūl wāyid. shift? yithayyaʼ-lak",
+    "digīga... Fahad ṭarrash-li: ana fi l-Kwēt, mashghūl wāyid. shift? yit-hayyaʼ-lak",
     "Hang on... Fahad's messaged me: 'I'm in Kuwait, really busy.' See? You're imagining things."
    ]
   ],
@@ -1267,10 +1267,10 @@
    ],
    [
     "يتهيأ لك",
-    "yithayyaʼ-lak",
+    "yit-hayyaʼ-lak",
     "you're imagining things (to a man)",
     "يخيل إليك",
-    "to a woman: yithayyaʼ-lich (يتهيأ لج); (recognise)"
+    "to a woman: yit-hayyaʼ-lich (يتهيأ لج); (recognise)"
    ],
    [
     "النافورة",
