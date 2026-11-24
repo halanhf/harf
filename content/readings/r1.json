@@ -60,7 +60,7 @@
   "title": "Pharmacy hours",
   "lines": [
    [
-    "صيدلية الحي",
+    "صيدلية الْحَيّ",
     "The neighbourhood pharmacy"
    ],
    [
@@ -76,7 +76,7 @@
     "Open all week"
    ],
    [
-    "اِسْأَلِ الصيدلي",
+    "اِسْأَلِ الصَّيْدَلِيّ",
     "Ask the pharmacist"
    ]
   ],
@@ -277,7 +277,7 @@
     "What is wrong with the lift?",
     [
      "It is out of order",
-     "It is for elders only",
+     "It is only for staff",
      "It is full",
      "It is closed for a day"
     ],
@@ -310,7 +310,7 @@
     "Friday prayer at 1 pm"
    ],
    [
-    "مكان الْوُضُوء في الطابق الْأَرْضِيّ",
+    "مَكَان الْوُضُوء في الطابق الْأَرْضِيّ",
     "The ablution area is on the ground floor"
    ],
    [
@@ -482,7 +482,7 @@
   "title": "Fire safety sign",
   "lines": [
    [
-    "في حالة الحريق",
+    "في حَالَة الحريق",
     "In case of fire"
    ],
    [

@@ -18,11 +18,11 @@
     "Date of birth: …… Place of birth: ……"
    ],
    [
-    "الجنسية: …… الجنس: ذكر / أنثى",
+    "الجنسية: …… الجنس: ذَكَر / أنثى",
     "Nationality: …… Sex: male / female"
    ],
    [
-    "الحالة الاجتماعية: أعزب / متزوج / مطلق",
+    "الحالة الاجتماعية: أعزب / متزوج / مُطَلَّق",
     "Marital status: single / married / divorced"
    ],
    [
@@ -42,11 +42,11 @@
     "Phone number: …… Email: ……"
    ],
    [
-    "يرجى تعبئة الاستمارة بخط واضح.",
+    "يرجى تَعْبِئَة الاستمارة بِخَطٍّ واضح.",
     "Please fill in the form in clear handwriting."
    ],
    [
-    "لا تترك أي حقل فارغًا.",
+    "لا تترك أي حَقْل فارغًا.",
     "Do not leave any field empty."
    ],
    [
@@ -98,7 +98,7 @@
   "title": "Online form: buttons and notes",
   "lines": [
    [
-    "الاسم الكامل (مطلوب)",
+    "الاسم الْكَامِل (مطلوب)",
     "Full name (required)"
    ],
    [
@@ -126,7 +126,7 @@
     "Press Next, then Confirm, then Send."
    ],
    [
-    "سيصل رمز التحقق برسالة إلى هاتفك.",
+    "سيصل رَمْز التَّحَقُّق بِرِسَالَة إلى هاتفك.",
     "A verification code will reach your phone in a message."
    ],
    [
@@ -138,7 +138,7 @@
     "Fee: 50 dirhams including tax."
    ],
    [
-    "لا ترسل الطلب قبل التأكيد.",
+    "لا تُرْسِلْ الطلب قبل التأكيد.",
     "Do not send the application before confirming."
    ],
    [
@@ -190,11 +190,11 @@
     "Al Waha restaurant for grills and juices"
    ],
    [
-    "وجبة الغداء: دجاج مشوي مع أرز وسلطة طازجة",
+    "وجبة الغداء: دجاج مَشْوِيّ مع أرز وسلطة طَازِجَة",
     "Lunch meal: grilled chicken with rice and fresh salad"
    ],
    [
-    "وجبة العشاء: لحم مشوي مع أرز ومقبلات",
+    "وجبة الْعَشَاء: لحم مَشْوِيّ مع أرز ومقبلات",
     "Dinner meal: grilled meat with rice and starters"
    ],
    [
@@ -222,7 +222,7 @@
     "The restaurant is open from 12 noon until 11 p.m."
    ],
    [
-    "للحجز: اتصل بالمطعم قبل الوصول",
+    "لِلْحَجْز: اِتَّصِلْ بالمطعم قبل الوصول",
     "To book: call the restaurant before arriving"
    ]
   ],
@@ -266,11 +266,11 @@
   "title": "Shop sale flyer",
   "lines": [
    [
-    "تخفيضات الموسم: حتى ٥٠٪ في كل فرع",
+    "تخفيضات الْمَوْسِم: حتى ٥٠٪ في كل فرع",
     "Season sale: up to 50% off in every branch"
    ],
    [
-    "ملابس وأحذية للرجال والنساء بأسعار خاصة",
+    "ملابس وَأَحْذِيَة للرجال والنساء بأسعار خاصة",
     "Clothes and shoes for men and women at special prices"
    ],
    [
@@ -278,7 +278,7 @@
     "Sizes are available for men and women"
    ],
    [
-    "عرض خاص: خصم إضافي ١٠٪ عند الدفع بالبطاقة",
+    "عَرْض خاص: خصم إِضَافِيّ ١٠٪ عند الدفع بالبطاقة",
     "Special offer: a further 10% off when paying by card"
    ],
    [
@@ -286,7 +286,7 @@
     "Exchange is free within 7 days with the receipt"
    ],
    [
-    "لا يوجد استرجاع للمشتريات المخفضة",
+    "لا يوجد استرجاع للمشتريات الْمُخَفَّضَة",
     "No refunds on discounted purchases"
    ],
    [
@@ -362,23 +362,23 @@
     "Opening hours: Sunday to Thursday, 8 a.m. to 9 p.m."
    ],
    [
-    "يرجى حجز موعد قبل الزيارة.",
+    "يرجى حَجْز موعد قبل الزيارة.",
     "Please book an appointment before your visit."
    ],
    [
-    "عند الوصول يرجى إحضار الهوية وبطاقة التأمين الصحي.",
+    "عند الوصول يرجى إِحْضَار الهوية وبطاقة التأمين الصحي.",
     "On arrival please bring your ID and health insurance card."
    ],
    [
-    "سعر الفحص ١٥٠ درهمًا شامل الضريبة.",
+    "سعر الْفَحْص ١٥٠ درهمًا شامل الضريبة.",
     "The examination costs 150 dirhams including tax."
    ],
    [
-    "عيادة الأطفال في الطابق الثاني.",
+    "عيادة الْأَطْفَال في الطابق الثَّانِي.",
     "The children's clinic is on the second floor."
    ],
    [
-    "إذا كان لديك ألم شديد أو حرارة، توجه إلى الطوارئ.",
+    "إذا كان لديك ألم شديد أو حرارة، تَوَجَّهْ إلى الطوارئ.",
     "If you have severe pain or a fever, go to the emergency department."
    ],
    [
@@ -430,11 +430,11 @@
   "title": "Medicine label",
   "lines": [
    [
-    "اسم الدواء: مسكن للألم",
+    "اسم الدواء: مُسَكِّن للألم",
     "Medicine: painkiller"
    ],
    [
-    "حبة واحدة مرتين يوميًا بعد الأكل.",
+    "حَبَّة وَاحِدَة مرتين يوميًا بعد الأكل.",
     "One tablet twice a day after food."
    ],
    [
@@ -442,7 +442,7 @@
     "Do not take the tablets before food."
    ],
    [
-    "إذا استمر الألم، راجع الطبيب.",
+    "إذا اِسْتَمَرَّ الألم، رَاجِعْ الطبيب.",
     "If the pain continues, see the doctor."
    ],
    [
@@ -458,7 +458,7 @@
     "Price: 12 dirhams. Payment in cash or by card."
    ],
    [
-    "يرجى إحضار الوصفة الطبية والهوية.",
+    "يرجى إِحْضَار الوصفة الطبية والهوية.",
     "Please bring the prescription and your ID."
    ],
    [
@@ -530,19 +530,19 @@
     "You can withdraw and deposit at the branch from 8 a.m. to 2 p.m."
    ],
    [
-    "التحويل بين حسابات العملاء مجانًا.",
+    "التحويل بين حسابات الْعُمَلَاء مجانًا.",
     "Transfers between customers' accounts are free."
    ],
    [
-    "يرجى التأكد من الرصيد قبل السحب.",
+    "يرجى التَّأَكُّد من الرصيد قبل السحب.",
     "Please check your balance before withdrawing."
    ],
    [
-    "لا تعط الرقم السري لأي شخص.",
+    "لا تُعْطِ الرقم السري لأي شَخْص.",
     "Do not give your PIN to anyone."
    ],
    [
-    "إذا فقدت البطاقة، أبلغ الفرع.",
+    "إذا فَقَدْتَ البطاقة، أَبْلِغْ الفرع.",
     "If you lose your card, tell the branch."
    ],
    [
@@ -622,36 +622,36 @@
     "Chicken meal: 25 dirhams"
    ],
    [
-    "عصير برتقال: ٩ دراهم",
-    "Orange juice: 9 dirhams"
+    "عَصِير بُرْتُقَال: ١٢ درهمًا",
+    "Orange juice: 12 dirhams"
    ],
    [
-    "حلوى: ٦ دراهم",
-    "Dessert: 6 dirhams"
+    "حلوى: ١٣ درهمًا",
+    "Dessert: 13 dirhams"
    ],
    [
-    "المبلغ قبل الضريبة: ٤٠ درهمًا",
-    "Amount before tax: 40 dirhams"
+    "المبلغ قبل الضريبة: ٥٠ درهمًا",
+    "Amount before tax: 50 dirhams"
    ],
    [
-    "الضريبة: ٥٪",
-    "Tax: 5%"
+    "الضريبة: ١٠٪",
+    "Tax: 10%"
    ],
    [
-    "الإجمالي شامل الضريبة: ٤٢ درهمًا",
-    "Total including tax: 42 dirhams"
+    "الإجمالي شامل الضريبة: ٥٥ درهمًا",
+    "Total including tax: 55 dirhams"
    ],
    [
     "طريقة الدفع: نقدًا",
     "Payment method: cash"
    ],
    [
-    "المدفوع: ٥٠ درهمًا",
-    "Paid: 50 dirhams"
+    "الْمَدْفُوع: ١٠٠ درهم",
+    "Paid: 100 dirhams"
    ],
    [
-    "الباقي: ٨ دراهم",
-    "Change: 8 dirhams"
+    "الْبَاقِي: ٤٥ درهمًا",
+    "Change: 45 dirhams"
    ],
    [
     "الاستبدال خلال ٧ أيام مع الفاتورة.",
@@ -674,25 +674,25 @@
    [
     "What was the total including tax?",
     [
-     "42 dirhams",
-     "40 dirhams",
-     "47 dirhams",
-     "50 dirhams"
+     "55 dirhams",
+     "50 dirhams",
+     "45 dirhams",
+     "100 dirhams"
     ],
-    "42 dirhams"
+    "55 dirhams"
    ],
    [
     "How much change did the customer get?",
     [
-     "8 dirhams",
-     "2 dirhams",
-     "10 dirhams",
-     "42 dirhams"
+     "45 dirhams",
+     "5 dirhams",
+     "50 dirhams",
+     "55 dirhams"
     ],
-    "8 dirhams"
+    "45 dirhams"
    ],
    [
-    "Which item cost 6 dirhams?",
+    "Which item cost 13 dirhams?",
     [
      "Dessert",
      "Orange juice",
@@ -710,7 +710,7 @@
   "title": "Rent notice",
   "lines": [
    [
-    "إلى السكان الكرام:",
+    "إلى السكان الْكِرَام:",
     "To our esteemed residents:"
    ],
    [
@@ -718,7 +718,7 @@
     "Next month's rent is due before the 25th of the month."
    ],
    [
-    "المبلغ: ٣٠٠٠ درهم، شامل المياه والكهرباء.",
+    "المبلغ: ٣٠٠٠ درهم، شامل المياه وَالْكَهْرَبَاء.",
     "The amount: 3000 dirhams, including water and electricity."
    ],
    [
@@ -726,7 +726,7 @@
     "You can pay in cash at reception or by transfer to the building's account."
    ],
    [
-    "يرجى كتابة رقم الشقة في ملاحظات التحويل.",
+    "يرجى كِتَابَة رقم الشقة في ملاحظات التحويل.",
     "Please write the flat number in the transfer notes."
    ],
    [
@@ -734,7 +734,7 @@
     "The receipt is available at reception after payment."
    ],
    [
-    "للحصول على نسخة من عقد الإيجار، يرجى زيارة الاستقبال.",
+    "لِلْحُصُول على نسخة من عَقْد الإيجار، يرجى زيارة الاستقبال.",
     "To get a copy of the rental contract, please visit reception."
    ],
    [
@@ -746,8 +746,8 @@
     "Reception is open from 8 a.m. to 4 p.m."
    ],
    [
-    "الدفع قبل الموعد مطلوب لجميع السكان.",
-    "Payment before the due date is required from all residents."
+    "الدفع قبل الموعد مطلوب من السكان.",
+    "Payment before the due date is required from residents."
    ]
   ],
   "questions": [
@@ -790,19 +790,19 @@
   "title": "Short headlines",
   "lines": [
    [
-    "مؤتمر دولي في العاصمة الأسبوع المقبل",
+    "مؤتمر دولي في العاصمة الأسبوع الْمُقْبِل",
     "International conference in the capital next week"
    ],
    [
-    "زيادة عدد السكان في المدينة بنسبة ٥٪",
+    "زيادة عَدَد السكان في المدينة بنسبة ٥٪",
     "Population of the city up 5%"
    ],
    [
-    "مبادرة جديدة لدعم المواطنين والمقيمين",
+    "مبادرة جديدة لِدَعْم المواطنين والمقيمين",
     "New initiative to support citizens and residents"
    ],
    [
-    "وزارة الاقتصاد: خطة لمشروع في المنطقة الشمالية",
+    "وزارة الاقتصاد: خطة لمشروع في المنطقة الشَّمَالِيَّة",
     "Ministry of Economy: a plan for a project in the northern region"
    ],
    [
@@ -810,7 +810,7 @@
     "Local exhibition in the city open to families"
    ],
    [
-    "شرطة المدينة: حادث على الطريق ولا يوجد مصابون",
+    "شرطة المدينة: حادث على الطَّرِيق ولا يوجد مصابون",
     "City police: accident on the road, no injuries"
    ],
    [
@@ -882,15 +882,15 @@
     "Oil prices up 3% this week"
    ],
    [
-    "مشروع جديد بقيمة ٣ مليارات درهم في الخليج",
+    "مشروع جديد بِقِيمَة ٣ مليارات درهم في الخليج",
     "New project worth 3 billion dirhams in the Gulf"
    ],
    [
-    "مليون زائر لمعرض المدينة الدولي",
+    "مليون زَائِر لمعرض المدينة الدولي",
     "One million visitors to the city's international exhibition"
    ],
    [
-    "الإمارات والكويت: خطة مشتركة للتجارة",
+    "الإمارات والكويت: خطة مُشْتَرَكَة للتجارة",
     "Emirates and Kuwait: a joint plan for trade"
    ],
    [
@@ -902,7 +902,7 @@
     "Official report: an increase of 4% in the Arab countries"
    ],
    [
-    "السياحة في الخليج: مشروع جديد للعائلات",
+    "السِّيَاحَة في الخليج: مشروع جديد للعائلات",
     "Tourism in the Gulf: a new project for families"
    ],
    [
@@ -962,7 +962,7 @@
   "title": "News brief: road accident",
   "lines": [
    [
-    "كان الحادث بين سيارتين على الطريق الرئيسي قرب مدخل المدينة صباح الأحد.",
+    "كان الحادث بين سيارتين على الطَّرِيق الرَّئِيسِيّ قرب مدخل المدينة صباح الأحد.",
     "The accident was between two cars on the main road near the city entrance on Sunday morning."
    ],
    [
@@ -974,11 +974,11 @@
     "A police official said there were no injuries."
    ],
    [
-    "أغلقت الشرطة المنطقة مدة ساعة ثم فتحتها.",
+    "أغلقت الشرطة المنطقة مُدَّة ساعة ثم فتحتها.",
     "The police closed the area for an hour, then reopened it."
    ],
    [
-    "وطلبت الشرطة من السائقين الانتظار هنا.",
+    "وطلبت الشرطة من السَّائِقِين الانتظار هنا.",
     "The police asked drivers to wait here."
    ],
    [
@@ -986,7 +986,7 @@
     "And there is no other accident in the area."
    ],
    [
-    "الطريق مفتوح الآن للجميع.",
+    "الطَّرِيق مفتوح الآن للجميع.",
     "The road is now open to everyone."
    ]
   ],
@@ -1038,15 +1038,15 @@
     "From 1 to 15 March, from 4 p.m. until 10 p.m."
    ],
    [
-    "فعاليات للأطفال والعائلات ومعرض مفتوح للمواطنين والمقيمين.",
+    "فَعَّالِيَّات للأطفال والعائلات ومعرض مفتوح للمواطنين والمقيمين.",
     "Activities for children and families, and an exhibition open to citizens and residents."
    ],
    [
-    "مسرح كبير وجائزة لأفضل عرض.",
+    "مَسْرَح كبير وجائزة لأفضل عَرْض.",
     "A big stage and a prize for the best show."
    ],
    [
-    "الدخول مجانًا، والموقف أمام البوابة الرئيسية.",
+    "الدخول مجانًا، والموقف أمام البوابة الرَّئِيسِيَّة.",
     "Entry is free, and the car park is in front of the main gate."
    ],
    [
@@ -1106,15 +1106,15 @@
   "title": "Ministry announcement",
   "lines": [
    [
-    "إعلان من الوزارة إلى المواطنين والمقيمين",
+    "إِعْلَان من الوزارة إلى المواطنين والمقيمين",
     "Announcement from the ministry to citizens and residents"
    ],
    [
-    "قرار جديد: تجديد الإقامة عبر الموقع الرسمي.",
+    "قرار جديد: تجديد الإقامة عَبْر الْمَوْقِع الرسمي.",
     "New decision: residence renewal through the official website."
    ],
    [
-    "لا حاجة إلى زيارة الفرع.",
+    "لا حَاجَة إلى زيارة الفرع.",
     "There is no need to visit the branch."
    ],
    [
@@ -1186,11 +1186,11 @@
   "title": "Lost property notice",
   "lines": [
    [
-    "قسم المفقودات",
-    "Lost property department"
+    "الْمَفْقُودَات",
+    "Lost property"
    ],
    [
-    "وجد الموظف حقيبة سوداء أمام مصلى الرجال.",
+    "وَجَدَ الموظف حقيبة سَوْدَاء أمام مصلى الرجال.",
     "The employee found a black bag in front of the men's prayer room."
    ],
    [
@@ -1202,7 +1202,7 @@
     "It is now at reception."
    ],
    [
-    "يرجى من صاحب الحقيبة الحضور مع الهوية.",
+    "يرجى من صَاحِب الحقيبة الْحُضُور مع الهوية.",
     "The owner of the bag is asked to come with ID."
    ],
    [
@@ -1210,7 +1210,7 @@
     "The employee asks for the name and passport number, then gives back the bag."
    ],
    [
-    "بعد ٣٠ يومًا ترسل الحقيبة إلى الشرطة.",
+    "بعد ٣٠ يومًا تُرْسَل الحقيبة إلى الشرطة.",
     "After 30 days the bag is sent to the police."
    ],
    [
@@ -1274,19 +1274,19 @@
     "How do you pay the fees?"
    ],
    [
-    "خذ رقمًا من الجهاز أمام المدخل.",
+    "خذ رقمًا من الْجِهَاز أمام المدخل.",
     "Take a number from the machine in front of the entrance."
    ],
    [
-    "ثم انتظر هنا حتى يظهر رقمك.",
+    "ثم اِنْتَظِرْ هنا حتى يَظْهَر رقمك.",
     "Then wait here until your number appears."
    ],
    [
-    "ممنوع الدخول قبل ذلك، لأن الموظف يخدم شخصًا آخر.",
+    "ممنوع الدخول قبل ذلك، لأن الموظف يَخْدِم شخصًا آخر.",
     "Do not go in before then, because the employee is serving someone else."
    ],
    [
-    "الدفع نقدًا أو بالبطاقة عند الشباك.",
+    "الدفع نقدًا أو بالبطاقة عند الشُّبَّاك.",
     "Payment in cash or by card at the counter."
    ],
    [
