@@ -198,7 +198,7 @@ Most mainstream apps teach MSA, Egyptian or Levantine ([overview](https://talkin
 - **An app won't get you fluent on its own.** From stage 3, add a weekly session with a native Gulf tutor.
 - Gulf varieties differ (Kuwaiti shinu vs Emirati shu, cham vs kam). The notes flag the common ones, not all of them.
 - No pictures. Palteca uses images as memory aids, but published pages can't load outside images.
-- The graded fuṣḥā readings aren't written yet; the Reading tab says so.
+- The 82 graded fuṣḥā readings (signs and receipts at level 1 up to editorials at level 5) were each checked by two to four rounds of separate AI reviewers for grammar, vowel marks, translation and level. A native check would still catch things they can't, especially how natural the wording is.
 - I've tested the layout in Chromium at phone and desktop sizes. I haven't tried real device voices, real speech recognition, or the backup download inside an iPhone home screen app yet.
 
 ### Tests
