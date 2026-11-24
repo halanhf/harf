@@ -268,8 +268,8 @@
   "title": "Notice: a road closure",
   "lines": [
    [
-    "تعلن بلدية المدينة عن إغلاق شارع الخليج في الاتجاهين.",
-    "The city municipality announces the closure of Al Khaleej Street in both directions."
+    "تعلن بلدية المدينة عن إغلاق شارع الخليج بالكامل.",
+    "The city municipality announces the full closure of Al Khaleej Street."
    ],
    [
     "وذلك بسبب أعمال الصيانة من يوم الخميس حتى يوم الأحد.",
@@ -456,8 +456,8 @@
     "About three hundred students and employees from schools and companies took part in the initiative."
    ],
    [
-    "وجمع المشاركون كثيرًا من النفايات على طول الشاطئ.",
-    "The participants collected a lot of waste along the beach."
+    "وجمع الذين شاركوا كثيرًا من النفايات على طول الشاطئ.",
+    "Those who took part collected a lot of waste along the beach."
    ],
    [
     "وقال مدير المبادرة إن التلوث يضر بالحياة البحرية.",
@@ -476,12 +476,12 @@
     "He explained that the beach will stay open to everyone, but that nobody must leave anything on the beach."
    ],
    [
-    "ودعا العائلات والمدارس إلى المشاركة في الأسابيع القادمة.",
+    "ودعا العائلات والمدارس إلى أن يشاركوا في الأسابيع القادمة.",
     "He invited families and schools to take part in the coming weeks."
    ],
    [
-    "وأعلنت البلدية أنها ستقدم هدايا للمشاركين.",
-    "The municipality announced that it will give gifts to the participants."
+    "وقال إنه سيقدم هدايا لجميع الأطفال.",
+    "He said he will give gifts to all the children."
    ]
   ],
   "questions": [
@@ -542,7 +542,7 @@
     "The festival starts at four in the evening and runs until ten."
    ],
    [
-    "ويقدم ألعابًا للأطفال وعروضًا للشباب وفعاليات لجميع أفراد الأسرة.",
+    "ويقدم ألعابًا للأطفال وعروضًا للشباب وفعاليات للأسرة كلها.",
     "It offers games for children, shows for young people and activities for the whole family."
    ],
    [
@@ -566,8 +566,12 @@
     "Please do not smoke inside the park."
    ],
    [
-    "وتدعو البلدية السكان إلى قضاء وقت جميل مع أسرهم.",
-    "The municipality invites residents to spend a pleasant time with their families."
+    "وتدعو البلدية جميع السكان إلى زيارة المهرجان مع أسرهم وأصدقائهم.",
+    "The municipality invites all residents to visit the festival with their families and friends."
+   ],
+   [
+    "ونتمنى لكم وقتًا جميلًا وسعيدًا.",
+    "We wish you a lovely and happy time."
    ]
   ],
   "questions": [
@@ -636,7 +640,7 @@
     "The Friday prayer is held directly after it."
    ],
    [
-    "ويُرجى من المصلين الحضور قبل الموعد بنصف ساعة.",
+    "ويُرجى من المصلين أن يأتوا قبل الموعد بنصف ساعة.",
     "Worshippers are kindly asked to arrive half an hour before the time."
    ],
    [
@@ -656,12 +660,16 @@
     "There is a car park behind the mosque."
    ],
    [
-    "ويُمنع إيقاف السيارات أمام المداخل.",
-    "Parking cars in front of the entrances is forbidden."
+    "ويُمنع ترك السيارات أمام المداخل.",
+    "Leaving cars in front of the entrances is forbidden."
    ],
    [
-    "وتشكر الإدارة المصلين على تعاونهم.",
-    "The management thanks the worshippers for their cooperation."
+    "وستكون الخطبة بالعربية، وسيكون هناك ملخص بالإنجليزية.",
+    "The sermon will be in Arabic, and there will be a summary in English."
+   ],
+   [
+    "ونشكركم على تعاونكم.",
+    "We thank you for your cooperation."
    ]
   ],
   "questions": [
@@ -698,12 +706,12 @@
    [
     "What is forbidden?",
     [
-     "Parking in front of the entrances",
+     "Leaving cars in front of the entrances",
      "Entering with children",
      "Using the lift",
      "Praying early"
     ],
-    "Parking in front of the entrances"
+    "Leaving cars in front of the entrances"
    ]
   ]
  },
@@ -744,6 +752,10 @@
    [
     "ويرجى من الجميع عدم التدخين داخل المسجد.",
     "Everyone is kindly asked not to smoke inside the mosque."
+   ],
+   [
+    "وسيكون المسجد مفتوحًا للنساء والرجال والأطفال طوال الشهر.",
+    "The mosque will be open to women, men and children throughout the month."
    ],
    [
     "ونرجو أن يكون هذا الشهر شهر خير لكم ولأسركم.",
@@ -836,6 +848,10 @@
     "It said the markets and shops will work special hours during the days of Eid."
    ],
    [
+    "وقالت إن الشرطة ستكون موجودة في الشوارع والأسواق.",
+    "It said the police will be present in the streets and markets."
+   ],
+   [
     "وهنأت الوزارة الجميع بحلول العيد.",
     "The ministry congratulated everyone on the arrival of Eid."
    ]
@@ -914,8 +930,12 @@
     "Condolences will start after the afternoon prayer and continue until the isha prayer."
    ],
    [
-    "وقد ترك الله يرحمه زوجة وثلاثة أبناء وابنتين.",
-    "He leaves a wife, three sons and two daughters."
+    "وهو زوج وأب لثلاثة أبناء وابنتين.",
+    "He was a husband and a father of three sons and two daughters."
+   ],
+   [
+    "وكان الجميع يحبه لأنه كان رجلًا طيبًا وكريمًا.",
+    "Everyone loved him because he was a kind and generous man."
    ],
    [
     "وتدعو إدارة المسجد الجميع إلى الدعاء له.",
@@ -1090,6 +1110,10 @@
     "It asked families to keep their children away from the sea."
    ],
    [
+    "وقالت شرطة المرور إن بعض الطرق القريبة من البحر قد تُغلق.",
+    "The traffic police said some roads near the sea may be closed."
+   ],
+   [
     "ويتوقع أن يتحسن الطقس يوم الأربعاء.",
     "The weather is expected to improve on Wednesday."
    ],
@@ -1180,6 +1204,10 @@
     "The mosque doors stay open for prayer on time as usual."
    ],
    [
+    "ولن تعمل المصاعد في المباني خلال هذه الساعات.",
+    "Lifts in buildings will not work during these hours."
+   ],
+   [
     "وتعتذر الشركة عن أي إزعاج.",
     "The company apologises for any inconvenience."
    ]
@@ -1242,8 +1270,8 @@
     "The department includes specialised clinics and a modern laboratory."
    ],
    [
-    "وقال مدير المستشفى إن القسم سيستقبل المرضى من الساعة الثامنة صباحًا.",
-    "The hospital director said the department will receive patients from eight in the morning."
+    "وقال مدير المستشفى إن القسم سيستقبل المرضى من الساعة ٨ صباحًا.",
+    "The hospital director said the department will receive patients from 8 in the morning."
    ],
    [
     "وأوضح أن الفحص الأول سيكون مجانًا لجميع المواطنين والمقيمين.",
@@ -1262,8 +1290,12 @@
     "He said the doctors will answer questions from patients and their families."
    ],
    [
-    "وسيقدم القسم أيضًا برامج لتعليم المرضى كيف يأكلون ويشربون وينامون بشكل صحيح.",
-    "The department will also offer programmes to teach patients how to eat, drink and sleep properly."
+    "وسيقدم القسم أيضًا برامج لتعليم المرضى كيف يأكلون ويشربون وينامون جيدًا.",
+    "The department will also offer programmes to teach patients how to eat, drink and sleep well."
+   ],
+   [
+    "وقال إن القسم سيعمل من الأحد إلى الخميس، وإن الإسعاف سيصل إليه في أي وقت.",
+    "He said the department will work from Sunday to Thursday, and that an ambulance can reach it at any time."
    ],
    [
     "ودعا الجميع إلى إجراء فحص كل سنة.",
@@ -1294,12 +1326,12 @@
    [
     "When does the department start receiving patients each day?",
     [
-     "From eight in the morning",
+     "From 8 in the morning",
      "From midnight",
      "From noon",
-     "From eight in the evening"
+     "From 8 in the evening"
     ],
-    "From eight in the morning"
+    "From 8 in the morning"
    ],
    [
     "What does the director say about early testing?",
@@ -1328,8 +1360,8 @@
     "The vaccine is available free of charge in all hospitals and clinics."
    ],
    [
-    "وتبدأ الحملة يوم الأحد وتستمر شهرًا كاملًا.",
-    "The campaign starts on Sunday and lasts a full month."
+    "وتبدأ يوم الأحد وتستمر شهرًا كاملًا.",
+    "It starts on Sunday and lasts a full month."
    ],
    [
     "وأكدت الوزارة أن اللقاح آمن وفعال.",
@@ -1358,6 +1390,10 @@
    [
     "ويمكن للأسرة كلها أن تأخذ اللقاح في اليوم نفسه.",
     "The whole family can take the vaccine on the same day."
+   ],
+   [
+    "وستعمل العيادات من الساعة الثامنة صباحًا حتى الثامنة مساءً.",
+    "The clinics will work from eight in the morning until eight in the evening."
    ]
   ],
   "questions": [
@@ -1410,16 +1446,16 @@
   "title": "Announcement: school registration",
   "lines": [
    [
-    "تعلن وزارة التعليم عن فتح باب التسجيل للعام الدراسي الجديد.",
-    "The Ministry of Education announces the opening of registration for the new school year."
+    "تعلن وزارة التعليم عن فتح باب التقديم للعام الدراسي الجديد.",
+    "The Ministry of Education announces the opening of applications for the new school year."
    ],
    [
-    "يبدأ التسجيل يوم ١ مارس وينتهي يوم ١٥ مارس.",
-    "Registration starts on 1 March and ends on 15 March."
+    "يبدأ التقديم يوم ١ مارس وينتهي يوم ١٥ مارس.",
+    "Applications start on 1 March and end on 15 March."
    ],
    [
-    "ويتم التسجيل من خلال الموقع الإلكتروني للوزارة.",
-    "Registration is done through the ministry's website."
+    "ويتم التقديم من خلال الموقع الإلكتروني للوزارة.",
+    "Applications are made through the ministry's website."
    ],
    [
     "ويجب على ولي الأمر أن يحضر المستندات التالية: جواز السفر وشهادة الميلاد وصورة شخصية.",
@@ -1444,11 +1480,15 @@
    [
     "وإذا كانت لديكم أسئلة، يرجى زيارة أقرب مدرسة.",
     "If you have questions, please visit the nearest school."
+   ],
+   [
+    "وسيصل إلى كل أسرة رد من الوزارة خلال أسبوعين.",
+    "Every family will receive a reply from the ministry within two weeks."
    ]
   ],
   "questions": [
    [
-    "How long does registration last?",
+    "How long do applications stay open?",
     [
      "From 1 March to 15 March",
      "One week",
@@ -1458,7 +1498,7 @@
     "From 1 March to 15 March"
    ],
    [
-    "How is registration done?",
+    "How are applications made?",
     [
      "On the ministry's website",
      "By post",
@@ -1504,24 +1544,24 @@
     "The jobs include engineers, accountants and reception staff."
    ],
    [
-    "ويجب أن تكون لدى المتقدم خبرة لا تقل عن سنتين.",
-    "The applicant must have no less than two years of experience."
+    "ويجب أن تكون لدى كل من يتقدم للوظيفة خبرة لا تقل عن سنتين.",
+    "Everyone who applies for the job must have no less than two years of experience."
    ],
    [
-    "ويجب أن يكون المتقدم قد تخرج من الجامعة.",
-    "The applicant must have graduated from university."
+    "ويجب أن يكون قد تخرج من الجامعة.",
+    "He or she must have graduated from university."
    ],
    [
     "ويفضل من يتحدث العربية والإنجليزية.",
     "Those who speak Arabic and English are preferred."
    ],
    [
-    "ويرسل المتقدمون سيرتهم الذاتية بالبريد الإلكتروني قبل نهاية الشهر.",
-    "Applicants send their CVs by email before the end of the month."
+    "ويرسل من يريد الوظيفة سيرته الذاتية بالبريد الإلكتروني قبل نهاية الشهر.",
+    "Whoever wants the job sends their CV by email before the end of the month."
    ],
    [
-    "وسيتم الاتصال بالمتقدمين لإجراء مقابلة.",
-    "Applicants will be contacted for an interview."
+    "وسيتم الاتصال بمن يناسب الوظيفة لإجراء مقابلة.",
+    "Those who suit the job will be contacted for an interview."
    ],
    [
     "وتقدم الشركة راتبًا جيدًا وتأمينًا صحيًا وإجازة.",
@@ -1530,6 +1570,10 @@
    [
     "وسيعمل الموظفون الجدد في مكتب الشركة في دبي من الأحد إلى الخميس.",
     "The new employees will work at the company's office in Dubai from Sunday to Thursday."
+   ],
+   [
+    "وتقول الشركة إنها تريد أن تساعد الشباب على بدء حياتهم المهنية، وإن العمل عندها ممتع.",
+    "The company says it wants to help young people start their working lives, and that working there is enjoyable."
    ]
   ],
   "questions": [
@@ -1586,20 +1630,20 @@
     "The city university celebrated the graduation of a new class of students yesterday."
    ],
    [
-    "وبلغ عدد الخريجين هذا العام ثمانمئة طالب وطالبة.",
-    "The number of graduates this year reached eight hundred male and female students."
+    "وبلغ عدد الخريجين هذا العام ثلاثمئة طالب وطالبة.",
+    "The number of graduates this year reached three hundred male and female students."
    ],
    [
-    "وحضر الحفل أولياء الأمور والمعلمون وعدد من الضيوف.",
-    "Parents, teachers and a number of guests attended the ceremony."
+    "وحضر الحفل أولياء الأمور والمعلمون وكثير من الضيوف.",
+    "Parents, teachers and many guests attended the ceremony."
    ],
    [
-    "وقال رئيس الجامعة إن الخريجين هم مستقبل الدولة.",
-    "The university president said the graduates are the future of the country."
+    "وقال رئيس الجامعة إن هؤلاء الشباب هم مستقبل الدولة.",
+    "The university president said these young people are the future of the country."
    ],
    [
-    "وأشار إلى أن عددًا منهم تقدم لوظائف قبل التخرج.",
-    "He pointed out that a number of them had applied for jobs before graduating."
+    "وأشار إلى أن كثيرًا منهم تقدم لوظائف قبل أن يتخرج.",
+    "He pointed out that many of them had applied for jobs before graduating."
    ],
    [
     "وأعلن أن الجامعة ستقدم منحًا دراسية جديدة للطلاب في العام القادم.",
@@ -1610,8 +1654,12 @@
     "He said the university will open a new college and a new engineering department."
    ],
    [
-    "وتسلم الخريجون شهاداتهم، وكانوا سعداء جدًا.",
-    "The graduates received their certificates, and they were very happy."
+    "وأضاف أن الطلاب الذين نجحوا هذا العام تعلموا كثيرًا، وأن الجامعة سعيدة بهم.",
+    "He added that the students who succeeded this year learned a lot, and that the university is happy with them."
+   ],
+   [
+    "وتسلم الجميع شهاداتهم، وكانوا سعداء جدًا.",
+    "Everyone received their certificates, and they were very happy."
    ],
    [
     "واختتم الحفل بكلمة شكر.",
@@ -1622,12 +1670,12 @@
    [
     "How many students graduated?",
     [
-     "Eight hundred",
-     "Eighty",
-     "Eight thousand",
-     "Three hundred"
+     "Three hundred",
+     "Thirty",
+     "Three thousand",
+     "Eight hundred"
     ],
-    "Eight hundred"
+    "Three hundred"
    ],
    [
     "Who attended the ceremony?",
@@ -1696,8 +1744,12 @@
     "They advised drivers to leave early and keep enough distance between cars."
    ],
    [
-    "وقالت إن من يريد المساعدة يمكنه الاتصال بالشرطة في أي وقت.",
+    "وقالت إن من يريد المساعدة يمكنه أن يتصل بالشرطة في أي وقت.",
     "They said that anyone who wants help can call the police at any time."
+   ],
+   [
+    "وأوضحت أن الذين يخالفون القانون سيدفعون غرامة كما في الأيام الأخرى.",
+    "They explained that those who break the law will pay a fine, as on other days."
    ],
    [
     "وتتمنى لكم عيدًا سعيدًا وعودة آمنة.",
