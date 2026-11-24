@@ -130,8 +130,8 @@
     "The government will pay the interest for these families, and the monthly instalments will not exceed a quarter of the family's salary."
    ],
    [
-    "وقال رئيس البرلمان بعد التصويت إن السكن من أهم حقوق المواطن، وإن الأسرة هي أساس المجتمع.",
-    "After the vote, the speaker of parliament said housing is one of a citizen's most important rights and that the family is the foundation of society."
+    "وقال نائب بعد التصويت إن السكن من أهم حقوق المواطن، وإن الأسرة هي أساس المجتمع.",
+    "After the vote, one member said housing is one of a citizen's most important rights and that the family is the foundation of society."
    ],
    [
     "وأضاف أن الشباب طالبوا بهذا القانون كثيرا خلال السنوات الماضية.",
@@ -418,8 +418,8 @@
   "title": "Budget shows a surplus",
   "lines": [
    [
-    "أعلنت وزارة المالية أمس أن ميزانية الدولة سجلت فائضا للمرة الأولى منذ أربع سنوات.",
-    "The finance ministry announced yesterday that the state budget had recorded a surplus for the first time in four years."
+    "أعلنت الوزارة أمس أن ميزانية الدولة سجلت فائضا للمرة الأولى منذ أربع سنوات.",
+    "The ministry announced yesterday that the state budget had recorded a surplus for the first time in four years."
    ],
    [
     "وبلغت الإيرادات العامة خلال العام الماضي 92 مليار درهم، بينما بلغت النفقات 85 مليار درهم.",
@@ -738,6 +738,10 @@
     "Today Fatima has a small factory in the industrial area where twenty employees work."
    ],
    [
+    "وأغلب الموظفين في المصنع اليوم من نساء الحي.",
+    "Most of the factory's employees today are women from the neighbourhood."
+   ],
+   [
     "وتقول إن البداية كانت صعبة، لأن المصارف رفضت أن تقدم لها قرضا في السنة الأولى.",
     "She says the beginning was hard, because the banks refused to give her a loan in the first year."
    ],
@@ -774,12 +778,8 @@
     "Last year the factory returned to profit and began selling its products in two countries in the region."
    ],
    [
-    "وتقول فاطمة للشباب الذين يريدون مشروعا خاصا إن عليهم أن يبدؤوا صغارا، وأن يتعلموا من كل خطأ.",
+    "وتقول فاطمة للشباب الذين يريدون مشروعا خاصا إن عليهم أن يبدؤوا بمشروع صغير، وأن يتعلموا من كل خطأ.",
     "Fatima tells young people who want a business of their own to start small and learn from every mistake."
-   ],
-   [
-    "وأغلب الموظفين في المصنع اليوم من نساء الحي.",
-    "Most of the factory's employees today are women from the neighbourhood."
    ],
    [
     "وتقول: الربح يأتي في النهاية، لكن الصبر هو رأس المال الأهم.",
@@ -844,6 +844,10 @@
     "The match was played at the main stadium in the capital in front of more than thirty thousand fans."
    ],
    [
+    "ووصل الجمهور إلى الملعب قبل بداية المباراة بساعتين.",
+    "The fans arrived at the stadium two hours before the match began."
+   ],
+   [
     "وبدأ المنتخب الضيف المباراة بقوة، وسجل هدفا في الدقيقة العاشرة من الشوط الأول.",
     "The visiting team started the match strongly and scored a goal in the tenth minute of the first half."
    ],
@@ -868,8 +872,8 @@
     "With this win the team raised its total to ten points and went top of its group."
    ],
    [
-    "وقال المدرب بعد المباراة إن اللاعبين أظهروا روحا قوية، وإن الجمهور كان اللاعب رقم واحد.",
-    "The coach said after the match that the players had shown a strong spirit and that the crowd had been the number one player."
+    "وقال قائد الفريق بعد المباراة إن اللاعبين أظهروا روحا قوية، وإن الجمهور كان اللاعب رقم واحد.",
+    "The team captain said after the match that the players had shown a strong spirit and that the crowd had been the number one player."
    ],
    [
     "وأضاف أن الفريق ما زال يحتاج إلى تحسين الدفاع، لأن الأخطاء في الشوط الأول كانت كثيرة.",
@@ -880,12 +884,8 @@
     "The young player said he had not expected to score two goals in his first match for the national team."
    ],
    [
-    "ووصل الجمهور إلى الملعب قبل بداية المباراة بساعتين.",
-    "The fans arrived at the stadium two hours before the match began."
-   ],
-   [
-    "ويلعب المنتخب مباراته القادمة خارج أرضه بعد أسبوعين، ويحتاج إلى نقطة واحدة فقط للوصول إلى نهائي البطولة.",
-    "The team plays its next match away in two weeks and needs only one point to reach the final of the tournament."
+    "ويلعب المنتخب مباراته القادمة خارج أرضه بعد أسبوعين، ويحتاج إلى نقطة واحدة فقط للوصول إلى الدور النهائي من البطولة.",
+    "The team plays its next match away in two weeks and needs only one point to reach the final round of the tournament."
    ]
   ],
   "questions": [
@@ -1284,8 +1284,8 @@
     "Another kind is when a person posts a news item on social media before checking that it is true."
    ],
    [
-    "فكونوا من الصادقين في البيع والشراء، وفي البيت والعمل، وفي الكلام مع أطفالكم.",
-    "So be among the truthful in buying and selling, at home and at work, and in what you say to your children."
+    "فكونوا صادقين في البيع والشراء، وفي البيت والعمل، وفي الكلام مع أطفالكم.",
+    "So be truthful in buying and selling, at home and at work, and in what you say to your children."
    ],
    [
     "فإن الطفل الذي يرى والده يكذب يتعلم الكذب، والطفل الذي يرى الصدق يتعلم الصدق.",
@@ -1444,7 +1444,7 @@
    [
     "What reason does he give for visiting your parents now?",
     [
-     "It brings money",
+     "It is only needed at Eid",
      "The government requires it",
      "Relatives will complain otherwise",
      "Your children will copy you when you are old"
@@ -1668,8 +1668,8 @@
   "title": "A plan to develop schools",
   "lines": [
    [
-    "أعلنت وزارة التعليم خطة لتطوير المدارس الحكومية خلال السنوات الخمس القادمة.",
-    "The education ministry has announced a plan to develop state schools over the next five years."
+    "أعلنت الوزارة خطة لتطوير المدارس الحكومية خلال السنوات الخمس القادمة.",
+    "The ministry has announced a plan to develop state schools over the next five years."
    ],
    [
     "وهدف الخطة هو تحسين جودة التعليم ورفع مستوى الطلاب في القراءة والرياضيات والعلوم.",
