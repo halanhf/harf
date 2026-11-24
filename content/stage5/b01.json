@@ -1638,7 +1638,7 @@
   "stage": 5,
   "title": "Checkpoint 5.1: Sēf's farewell",
   "goal": "Checkpoint: at Bū Rāshid's farewell dinner, Sēf finds Fahad (in from Kuwait); insist you told him so, play down your part, and send Sēf off with blessings",
-  "tip": "Review, and now you say it: huwa b-nafsah, wallāh il-ʿaẓīm, ashukk inn, iẓ-ẓāhir inn, mub dhāk iz-zōd, shidd ḥēlak, mub sālfa, allāh ysahhil ʿalēk, and send-offs: ṭamminni ʿalēk 'let me know you're OK', dīr bālak ʿala nafsak, fī ḥifẓ illāh.",
+  "tip": "Review, and now you say it: huwa b-nafsah, wallāh il-ʿaẓīm, ashukk inn, iẓ-ẓāhir inn, mub dhāk iz-zōd, shidd ḥēlak, mub sālfa, allāh ysahhil ʿalēk, and send-offs: ṭamminni ʿalēk 'let me know you're OK', dīr bālak ʿala nafsak.",
   "grammar": "checkpoint 5.1 (s5u001–s5u014): hedging, insisting, playing down, wishes",
   "dialogue": [
    [
@@ -1697,9 +1697,9 @@
    ],
    [
     "B",
-    "إن شاء الله. دير بالك على نفسك، وطمني عليك. في حفظ الله",
-    "in shāʼ allāh. dīr bālak ʿala nafsak, w ṭamminni ʿalēk. fī ḥifẓ illāh",
-    "God willing. Look after yourself, and let me know you're OK. Go safely."
+    "إن شاء الله. دير بالك على نفسك، وطمني عليك",
+    "in shāʼ allāh. dīr bālak ʿala nafsak, w ṭamminni ʿalēk",
+    "God willing. Look after yourself, and let me know you're OK."
    ]
   ],
   "items": [
