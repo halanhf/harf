@@ -42,7 +42,7 @@
     "In summer trees need large amounts of water, especially in the first months after they are planted."
    ],
    [
-    "لذا ستسقي البلدية معظم الأشجار بالمياه بعد معالجتها، بدلا من مياه الشرب.",
+    "لذا ستسقي البلدية معظم الأشجار بالمياه المعالجة، بدلا من مياه الشرب.",
     "So the municipality will water most of the trees with treated water instead of drinking water."
    ],
    [
@@ -102,7 +102,7 @@
     "The idea seems to have attracted a lot of interest, as more than three thousand people registered on the app within just two days."
    ],
    [
-    "وختم المسؤول حديثه بالقول إن المدينة الخضراء ليست حلما بعيدا، بل هدف يمكن تحقيقه بجهود الجميع.",
+    "وختم المسؤول حديثه بالقول إن المدينة الخضراء ليست حلما بعيدا، بل هي هدف يمكن تحقيقه بجهود الجميع.",
     "The official ended by saying that a green city is not a distant dream but a goal that can be reached through everyone's efforts."
    ]
   ],
@@ -918,8 +918,8 @@
     "And the next day, most of this food is thrown away."
    ],
    [
-    "وقد كشفت دراسة أجرتها البلدية أن الطعام المرمي يرتفع في رمضان بنسبة ثلاثين في المائة تقريبا.",
-    "A study carried out by the municipality revealed that thrown-away food rises by about thirty percent in Ramadan."
+    "وقد كشفت دراسة أجرتها البلدية أن كمية الطعام المرمي ترتفع في رمضان بنسبة ثلاثين في المائة تقريبا.",
+    "A study carried out by the municipality revealed that the amount of thrown-away food rises by about thirty percent in Ramadan."
    ],
    [
     "ولا شك أن الكرم من أجمل تقاليدنا، فلا أحد يريد أن يقال عنه إنه لم يكرم ضيوفه.",
@@ -938,8 +938,8 @@
     "Clearly, part of the problem comes from fear of what people will say, more than from what the household really needs."
    ],
    [
-    "في رأيي، يبدأ الحل من داخل الأسرة، بخطوات بسيطة لا تكلف شيئا.",
-    "In my opinion, the solution starts inside the family, with simple steps that cost nothing."
+    "في رأيي، يبدأ الحل من داخل الأسرة نفسها، بخطوات بسيطة لا تكلف شيئا ولا تحتاج إلى وقت طويل.",
+    "In my opinion, the solution starts inside the family itself, with simple steps that cost nothing and do not take long."
    ],
    [
     "أولا، أن نسأل قبل الطبخ: كم شخصا سيأكل معنا اليوم؟",
@@ -1210,7 +1210,7 @@
     "There is no doubt that this diversity is one of this city's greatest blessings, but it does not come by itself."
    ],
    [
-    "فالتعايش ليس شيئا نحصل عليه مرة واحدة، بل عمل يومي يحتاج إلى جهد ووعي.",
+    "فالتعايش ليس شيئا نحصل عليه مرة واحدة، بل هو عمل يومي يحتاج إلى جهد ووعي.",
     "Coexistence is not something we get once and for all, but daily work that needs effort and awareness."
    ],
    [
@@ -1234,8 +1234,8 @@
     "A child who sits in class alongside classmates of ten nationalities learns that difference is normal."
    ],
    [
-    "والأسرة قبلها، فالطفل يسمع في البيت كيف يتكلم والداه عن الناس من البلاد الأخرى.",
-    "And the family before it: a child hears at home how his parents talk about people from other countries."
+    "وقبل المدرسة تأتي الأسرة، فالطفل يسمع في البيت كيف يتكلم والداه عن الناس من البلاد الأخرى.",
+    "And before school comes the family: a child hears at home how his parents talk about people from other countries."
    ],
    [
     "أما مكان العمل، فهو امتحان حقيقي لهذه القيم، لا سيما حين يكون هناك ضغط أو مشكلة.",
@@ -1366,8 +1366,8 @@
     "Thousands of families moved to the city during the year, while the handover of several housing projects was delayed."
    ],
    [
-    "وبالتالي أصبح الطلب على الشقق أكبر بكثير من الشقق المتوفرة، مما أدى إلى ارتفاع الأسعار.",
-    "As a result, demand for flats became much greater than the flats available, which led to higher prices."
+    "وبالتالي أصبح الطلب على الشقق أكبر بكثير من عدد الشقق المتوفرة، مما أدى إلى ارتفاع الأسعار.",
+    "As a result, demand for flats became much greater than the number of flats available, which led to higher prices."
    ],
    [
     "وقال مدير في الشركة إن الإيجارات قد تستمر في الارتفاع خلال الأشهر المقبلة، وإن كان ذلك بسرعة أقل.",
@@ -1626,8 +1626,8 @@
   "title": "News: a graduation ceremony",
   "lines": [
    [
-    "تحت رعاية معالي وزير التعليم، أقامت إحدى الكليات التقنية مساء الأربعاء حفل تخريج الدفعة العاشرة من طلابها.",
-    "Under the patronage of His Excellency the Minister of Education, a technical college held a graduation ceremony on Wednesday evening for its tenth class of students."
+    "تحت رعاية معالي الوزير، أقامت إحدى الكليات التقنية مساء الأربعاء حفل تخريج الدفعة العاشرة من طلابها.",
+    "Under the patronage of His Excellency the Minister, a technical college held a graduation ceremony on Wednesday evening for its tenth class of students."
    ],
    [
     "وأقيم الحفل في مسرح الكلية بحضور كبار الشخصيات ومعلمي الكلية وأسر الخريجين.",
@@ -1791,7 +1791,7 @@
    ],
    [
     "وأضاف أن البلاد انتقلت خلال عشرات السنين من حياة بسيطة إلى دولة حديثة، بفضل العمل والتعاون.",
-    "He added that the country had moved within a few decades from a simple life to a modern state, thanks to work and cooperation."
+    "He added that the country had moved over decades from a simple life to a modern state, thanks to work and cooperation."
    ],
    [
     "وأكد أن على الجميع أن يحافظوا على هذا الإنجاز، لا سيما الشباب.",
@@ -1938,7 +1938,7 @@
     "Distinguished guests, talking about the environment is no longer just talk for conferences: it has become a necessity that cannot be ignored."
    ],
    [
-    "فالصيف عندنا أصبح أطول وأكثر حرا، والبحر الذي كان يعمل فيه أجدادنا يحتاج اليوم إلى من يحافظ عليه.",
+    "فالصيف عندنا أصبح أطول وأكثر حرارة، والبحر الذي كان يعمل فيه أجدادنا يحتاج اليوم إلى من يحافظ عليه.",
     "Our summers have become longer and hotter, and the sea our grandfathers worked on now needs someone to look after it."
    ],
    [
