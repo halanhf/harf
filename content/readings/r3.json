@@ -198,7 +198,7 @@
     "In the morning the winds will be light and the weather lovely."
    ],
    [
-    "وسيكون البحر هادئًا ومدى الرؤية جيدًا.",
+    "وسيكون البحر هادئًا وسيكون مدى الرؤية جيدًا.",
     "The sea will be calm and visibility good."
    ],
    [
@@ -390,12 +390,8 @@
     "They will announce any road closures."
    ],
    [
-    "ويتوقع أن يكون الطقس مشمسًا بعد الظهر، وأن ترتفع درجة الحرارة.",
-    "The weather is expected to be sunny in the afternoon, and the temperature to rise."
-   ],
-   [
-    "وأضافت أن الرياح ستكون معتدلة والبحر هادئًا.",
-    "It added that winds will be moderate and the sea calm."
+    "وأضافت الأرصاد أن الطقس سيكون مشمسًا بعد الظهر، وأن البحر سيكون هادئًا.",
+    "The weather service added that the weather will be sunny in the afternoon and the sea calm."
    ]
   ],
   "questions": [
@@ -476,7 +472,7 @@
     "He explained that the beach will stay open to everyone, but that nobody must leave anything on the beach."
    ],
    [
-    "ودعا العائلات والمدارس إلى أن يشاركوا في الأسابيع القادمة.",
+    "ودعا العائلات والمدارس إلى المشاركة في الأسابيع القادمة.",
     "He invited families and schools to take part in the coming weeks."
    ],
    [
@@ -636,7 +632,7 @@
     "The sermon will be held ten minutes after it."
    ],
    [
-    "وتقام صلاة الجمعة بعدها مباشرة.",
+    "وتُقام صلاة الجمعة بعدها مباشرة.",
     "The Friday prayer is held directly after it."
    ],
    [
@@ -852,8 +848,8 @@
     "It said the markets and shops will work special hours during the days of Eid."
    ],
    [
-    "وقالت إن الشرطة ستكون موجودة في الشوارع والأسواق.",
-    "It said the police will be present in the streets and markets."
+    "وقالت إن الشركات يجب أن تعطي الموظفين رواتبهم قبل العيد.",
+    "It said companies must give employees their salaries before Eid."
    ],
    [
     "وهنأت الوزارة الجميع بحلول العيد.",
@@ -914,6 +910,14 @@
     "One of the sons of the neighbourhood passed away this morning, may God have mercy on him."
    ],
    [
+    "وهو أب لثلاثة أبناء وابنتين.",
+    "He was the father of three sons and two daughters."
+   ],
+   [
+    "وكان الجميع يحبه لأنه كان رجلًا طيبًا وكريمًا.",
+    "Everyone loved him because he was a kind and generous man."
+   ],
+   [
     "وستُقام صلاة الجنازة بعد صلاة الظهر في جامع النهضة.",
     "The funeral prayer will be held after the noon prayer at Al Nahda Mosque."
    ],
@@ -932,14 +936,6 @@
    [
     "وسيبدأ العزاء بعد صلاة العصر ويستمر حتى صلاة العشاء.",
     "Condolences will start after the afternoon prayer and continue until the isha prayer."
-   ],
-   [
-    "وهو زوج وأب لثلاثة أبناء وابنتين.",
-    "He was a husband and a father of three sons and two daughters."
-   ],
-   [
-    "وكان الجميع يحبه لأنه كان رجلًا طيبًا وكريمًا.",
-    "Everyone loved him because he was a kind and generous man."
    ],
    [
     "وكان قد تقاعد قبل سنتين، وكان يصلي في المسجد كل يوم.",
@@ -1098,8 +1094,8 @@
     "Winds will be strong, and their speed may reach forty kilometres per hour."
    ],
    [
-    "وسيكون الموج عاليًا في المساء وبعد الظهر في بعض المناطق.",
-    "The waves will be high in the evening and afternoon in some areas."
+    "وسيكون الموج عاليًا بعد الظهر وفي المساء في بعض المناطق.",
+    "The waves will be high in the afternoon and evening in some areas."
    ],
    [
     "ودعت الأرصاد الصيادين وأصحاب القوارب إلى عدم الخروج إلى البحر.",
@@ -1126,8 +1122,8 @@
     "The weather is expected to improve on Wednesday."
    ],
    [
-    "وستنخفض سرعة الرياح خلال اليوم.",
-    "Wind speed will fall during the day."
+    "وستنخفض سرعة الرياح مساء الثلاثاء.",
+    "Wind speed will fall on Tuesday evening."
    ]
   ],
   "questions": [
@@ -1560,7 +1556,7 @@
     "He or she must have graduated from university."
    ],
    [
-    "ويفضل من يتحدث العربية والإنجليزية.",
+    "ويُفضَّل من يتحدث العربية والإنجليزية.",
     "Those who speak Arabic and English are preferred."
    ],
    [
@@ -1666,7 +1662,7 @@
     "He added that the students who succeeded this year learned a lot, and that the university is happy with them."
    ],
    [
-    "وتسلم الجميع شهاداتهم، وكانوا سعداء جدًا.",
+    "وتَسَلَّمَ الجميع شهاداتهم، وكانوا سعداء جدًا.",
     "Everyone received their certificates, and they were very happy."
    ],
    [

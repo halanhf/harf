@@ -826,6 +826,10 @@
     "The festival director stressed that these people are the heart of the festival, and there is no heritage festival without them."
    ],
    [
+    "وقال إن كثيرا منهم تعلموا صناعتهم من آبائهم، ويريدون أن ينقلوها إلى أبنائهم كذلك.",
+    "He said many of them learned their craft from their fathers, and want to pass it on to their sons too."
+   ],
+   [
     "وأضاف أن المهرجان سيضيف في الدورة المقبلة برامج جديدة للشباب، بينها مسابقة للشعر الشعبي.",
     "He added that the festival will add new programmes for young people at the next edition, including a folk poetry competition."
    ],
@@ -1078,12 +1082,20 @@
     "The trial will last a full school year, and the ministry will then decide whether to apply it in all schools."
    ],
    [
-    "وقد لقيت الفكرة ترحيبا من كثير من المعلمين، لا سيما معلمي الصفوف الكبيرة.",
-    "The idea has been welcomed by many teachers, especially those who teach large classes."
+    "وقد رحب كثير من المعلمين بالفكرة، لا سيما معلمي الصفوف الكبيرة.",
+    "Many teachers have welcomed the idea, especially those who teach large classes."
    ],
    [
     "وقالت معلمة رياضيات إن في صفها أكثر من ثلاثين طالبا، ولا تستطيع أن تتابع كل واحد منهم وحدها.",
     "A maths teacher said she has more than thirty students in her class and cannot follow each of them on her own."
+   ],
+   [
+    "وأضافت أن بعض الطلاب يخجلون من السؤال أمام زملائهم، أما البرنامج فيسألونه دون خوف.",
+    "She added that some students are shy about asking in front of their classmates, but they ask the program without fear."
+   ],
+   [
+    "وقال معلم آخر إن التقرير اليومي سيساعده على معرفة من يحتاج إلى مساعدة قبل الامتحان، لا بعده.",
+    "Another teacher said the daily report will help him know who needs help before the exam, not after it."
    ],
    [
     "إلا أن بعض الآباء عبروا عن قلقهم من أن يقضي أطفالهم وقتا أطول أمام الشاشات.",
@@ -1102,12 +1114,12 @@
     "It stressed that a student will not use the program for more than one hour a day at school."
    ],
    [
-    "من ناحية أخرى، يرى بعض الخبراء أن نجاح التجربة يعتمد على تدريب المعلمين قبل كل شيء.",
-    "On the other hand, some experts believe the trial's success depends above all on training teachers."
+    "من ناحية أخرى، يرى بعض مديري المدارس أن التجربة لن تنجح إلا بتدريب المعلمين قبل كل شيء.",
+    "On the other hand, some head teachers believe the trial will only succeed if teachers are trained first of all."
    ],
    [
-    "فالتقنية، مهما كانت متطورة، لا تفيد إذا لم يعرف المعلم كيف يستخدمها في صفه.",
-    "Technology, however advanced, is of no use if the teacher does not know how to use it in class."
+    "فالتقنية، مهما كانت جيدة، لا فائدة منها إذا لم يعرف المعلم كيف يستخدمها في صفه.",
+    "Technology, however good, is of no use if the teacher does not know how to use it in class."
    ],
    [
     "لذا أعلنت الوزارة برنامجا لتدريب المعلمين المشاركين، يبدأ قبل العام الدراسي بأسبوعين.",
@@ -1118,8 +1130,8 @@
     "It seems the trial will attract great interest, as many other schools have asked to take part in it."
    ],
    [
-    "غير أن الوزارة قالت إنها تفضل أن تبدأ بعدد صغير من المدارس، ثم تتوسع بناء على النتائج.",
-    "However, the ministry said it prefers to start with a small number of schools and then expand on the basis of the results."
+    "غير أن الوزارة قالت إنها تفضل أن تبدأ بعشرين مدرسة فقط، ثم تضيف مدارس أخرى على أساس النتائج.",
+    "However, the ministry said it prefers to start with just twenty schools, and then add others on the basis of the results."
    ],
    [
     "وستنشر الوزارة تقريرا عن التجربة في نهاية الفصل الدراسي الأول.",
@@ -1158,7 +1170,7 @@
     "They cannot follow every student in large classes alone"
    ],
    [
-    "What do some experts say the trial's success depends on?",
+    "What do some head teachers say the trial's success depends on?",
     [
      "Training the teachers",
      "Buying better computers",
@@ -1186,7 +1198,7 @@
   "title": "Opinion: one city, many languages",
   "lines": [
    [
-    "في مدينتنا يعيش ويعمل أناس من أكثر من مائتي جنسية، يتكلمون عشرات اللغات.",
+    "في مدينتنا يسكن ويعمل أناس من أكثر من مائتي جنسية، يتكلمون عشرات اللغات.",
     "In our city, people of more than two hundred nationalities live and work, speaking dozens of languages."
    ],
    [
@@ -1218,12 +1230,16 @@
     "Clearly, school is the first place to learn this."
    ],
    [
+    "والأسرة قبلها، فالطفل يسمع في البيت كيف يتكلم والداه عن الناس من البلاد الأخرى.",
+    "And the family before it: a child hears at home how his parents talk about people from other countries."
+   ],
+   [
     "فالطفل الذي يجلس في صفه إلى جانب زملاء من عشر جنسيات، يتعلم أن الاختلاف أمر طبيعي.",
     "A child who sits in class alongside classmates of ten nationalities learns that difference is normal."
    ],
    [
-    "أما مكان العمل، فهو امتحان حقيقي لهذه القيم، لا سيما حين يكون هناك ضغط أو خلاف.",
-    "As for the workplace, it is a real test of these values, especially when there is pressure or disagreement."
+    "أما مكان العمل، فهو امتحان حقيقي لهذه القيم، لا سيما حين يكون هناك ضغط أو مشكلة.",
+    "As for the workplace, it is a real test of these values, especially when there is pressure or a problem."
    ],
    [
     "ويبدو أن بعضنا يتحدث عن التسامح كثيرا، ثم يتجاهل زميله لأنه من بلد آخر.",
@@ -1232,6 +1248,10 @@
    [
     "وهنا لا بد من الصدق مع النفس قبل أن نطلب ذلك من الآخرين.",
     "Here we must be honest with ourselves before asking it of others."
+   ],
+   [
+    "فالتسامح الذي لا نراه في معاملتنا اليومية مجرد كلام جميل في المؤتمرات.",
+    "Tolerance that we do not see in how we treat people every day is just fine words at conferences."
    ],
    [
     "بالإضافة إلى ذلك، يلعب الإعلام دورا مهما، سواء في نشر الحوار أم في نشر الخوف.",
@@ -1246,16 +1266,24 @@
     "So we should always ask: is this a fact, or merely one person's opinion?"
    ],
    [
-    "ولست أقول إن مدينتنا بلا مشاكل، فالتعايش بين هذا العدد من الناس ليس سهلا أبدا.",
-    "I am not saying our city has no problems: coexistence between this many people is never easy."
+    "ولست أقول إن مدينتنا بلا مشاكل، فالتعايش بين كل هؤلاء الناس ليس سهلا أبدا.",
+    "I am not saying our city has no problems: coexistence between all these people is never easy."
    ],
    [
-    "لكن التجربة حتى الآن تستحق الفخر، وتستحق أن نحافظ عليها للجيل القادم.",
-    "But the experience so far deserves pride, and deserves to be kept for the next generation."
+    "فهناك أحيانا كلام سلبي عن جنسية معينة، أو معاملة مختلفة في السكن أو العمل.",
+    "There is sometimes negative talk about a particular nationality, or different treatment in housing or at work."
    ],
    [
-    "وفي النهاية، يبدأ التعايش بأشياء صغيرة: تحية للجار، وابتسامة للعامل، وسؤال عن عيد زميل.",
-    "In the end, coexistence starts with small things: a greeting to a neighbour, a smile for a worker, a question about a colleague's festival."
+    "ومثل هذه الأمور لا تحل بالصمت، بل بالحوار والقانون معا.",
+    "Things like this are not solved by silence, but by dialogue and the law together."
+   ],
+   [
+    "لكن التجربة حتى الآن تستحق التقدير، وتستحق أن نحافظ عليها للجيل القادم.",
+    "But the experience so far deserves recognition, and deserves to be kept for the next generation."
+   ],
+   [
+    "وفي النهاية، يبدأ التعايش بأشياء صغيرة: تحية للجار، وكلمة طيبة لمن يعمل في الحي، وسؤال عن عيد زميل.",
+    "In the end, coexistence starts with small things: a greeting to a neighbour, a kind word for those who work in the neighbourhood, a question about a colleague's festival."
    ]
   ],
   "questions": [
@@ -1302,12 +1330,12 @@
    [
     "What is the writer's view of the city's experience so far?",
     [
-     "It has problems but deserves pride",
+     "It has problems but deserves recognition",
      "It has failed",
      "It has no problems at all",
      "It is only good for schools"
     ],
-    "It has problems but deserves pride"
+    "It has problems but deserves recognition"
    ]
   ]
  },
@@ -1322,27 +1350,27 @@
     "A new study prepared by a Dubai property company revealed that flat rents rose by twelve percent over the past year."
    ],
    [
-    "وقالت الشركة إن الارتفاع شمل معظم مناطق المدينة، لا سيما المناطق القريبة من المترو والمدارس.",
-    "The company said the rise covered most areas of the city, especially areas close to the metro and schools."
+    "وقالت الشركة إن الارتفاع كان في معظم مناطق المدينة، لا سيما المناطق القريبة من المترو والمدارس.",
+    "The company said the rise was seen in most areas of the city, especially areas close to the metro and schools."
    ],
    [
     "وأوضحت أن متوسط إيجار شقة من غرفتين بلغ نحو تسعين ألف درهم في السنة في هذه المناطق.",
     "It explained that the average rent for a two-bedroom flat reached about ninety thousand dirhams a year in these areas."
    ],
    [
-    "وأرجعت الدراسة هذا الارتفاع إلى زيادة كبيرة في عدد السكان، مقابل عدد محدود من الشقق الجديدة.",
-    "The study put this rise down to a large increase in the population, against a limited number of new flats."
+    "وأرجعت الدراسة هذا الارتفاع إلى زيادة كبيرة في السكان، مقابل شقق جديدة قليلة.",
+    "The study put this rise down to a large increase in the population, against few new flats."
    ],
    [
     "فقد انتقلت آلاف الأسر إلى المدينة خلال العام، بينما تأخر تسليم عدة مشاريع سكنية.",
     "Thousands of families moved to the city during the year, while the handover of several housing projects was delayed."
    ],
    [
-    "وبالتالي أصبح الطلب على الشقق أكبر بكثير من المعروض، مما أدى إلى ارتفاع الأسعار.",
-    "As a result, demand for flats became much greater than supply, which led to higher prices."
+    "وبالتالي أصبح الطلب على الشقق أكبر بكثير من الشقق المتوفرة، مما أدى إلى ارتفاع الأسعار.",
+    "As a result, demand for flats became much greater than the flats available, which led to higher prices."
    ],
    [
-    "وقال مدير في الشركة إن الإيجارات قد تستمر في الارتفاع خلال الأشهر المقبلة، وإن بشكل أبطأ.",
+    "وقال مدير في الشركة إن الإيجارات قد تستمر في الارتفاع خلال الأشهر المقبلة، وإن كان ذلك بسرعة أقل.",
     "A manager at the company said rents may keep rising in the coming months, though more slowly."
    ],
    [
@@ -1350,8 +1378,8 @@
     "It seems many families have started looking for other solutions, since salaries have not risen at the same speed."
    ],
    [
-    "فمعظم الذين شاركوا في الدراسة قالوا إن الإيجار يأخذ أكثر من ثلث دخلهم الشهري.",
-    "Most of those who took part in the study said rent takes more than a third of their monthly income."
+    "فمعظم الذين شاركوا في الدراسة قالوا إن الإيجار يأخذ أكثر من خمسة وثلاثين في المائة من دخلهم الشهري.",
+    "Most of those who took part in the study said rent takes more than thirty-five percent of their monthly income."
    ],
    [
     "وقالت موظفة في بنك إنها انتقلت مع أسرتها إلى منطقة بعيدة عن عملها، بحثا عن إيجار أقل.",
@@ -1362,28 +1390,36 @@
     "She added that she now saves a good sum every month, but spends two hours a day on the road."
    ],
    [
-    "أما آخرون، فقرروا أن يسكنوا مع أسرة أخرى في شقة واحدة، من أجل تقسيم الإيجار.",
-    "Others have decided to live with another family in a single flat, in order to split the rent."
+    "أما آخرون، فقرروا أن يسكنوا مع أسرة أخرى في شقة واحدة، من أجل أن يدفعوا الإيجار معا.",
+    "Others have decided to live with another family in a single flat, so that they pay the rent together."
    ],
    [
-    "في المقابل، يرى ملاك العقارات أن الأسعار ما زالت معقولة مقارنة بمدن أخرى في المنطقة.",
-    "On the other hand, property owners believe prices are still reasonable compared with other cities in the region."
+    "وقال أحد الشباب إنه يسكن مع ثلاثة من زملائه في العمل، وإن هذا هو الحل الوحيد أمامه حاليا.",
+    "One young man said he lives with three of his work colleagues, and that this is the only solution open to him at present."
+   ],
+   [
+    "في المقابل، يرى ملاك العقارات أن الأسعار ما زالت معقولة إذا نظرنا إلى مدن أخرى في المنطقة.",
+    "On the other hand, property owners believe prices are still reasonable if we look at other cities in the region."
    ],
    [
     "وقال أحدهم إن تكلفة الصيانة والخدمات ارتفعت أيضا، وإن الإيجار يجب أن يغطي هذه التكلفة.",
     "One of them said the cost of maintenance and services has also gone up, and that the rent must cover this cost."
    ],
    [
-    "وفي هذا الشأن، دعا خبراء إلى بناء مزيد من الشقق بأسعار تناسب الأسر ذات الدخل المتوسط.",
-    "On this matter, experts called for more flats to be built at prices suited to middle-income families."
+    "وفي هذا الشأن، دعا خبراء إلى بناء شقق أكثر بأسعار معقولة، للأسر التي دخلها ليس كبيرا.",
+    "On this matter, experts called for more flats to be built at reasonable prices, for families whose income is not large."
    ],
    [
-    "كما طالبوا بتحسين المواصلات بين وسط المدينة والمناطق البعيدة، حتى يصبح السكن هناك خيارا عمليا.",
-    "They also called for better transport between the city centre and outlying areas, so that living there becomes a practical choice."
+    "كما طالبوا بتحسين المواصلات بين وسط المدينة والمناطق البعيدة، حتى يصبح السكن هناك حلا عمليا.",
+    "They also called for better transport between the city centre and outlying areas, so that living there becomes a practical solution."
    ],
    [
-    "وتتوقع الشركة أن تنخفض الضغوط على السوق بعد عامين، حين تنتهي المشاريع الكبيرة التي يجري بناؤها حاليا.",
+    "وتتوقع الشركة أن يخف الضغط على السوق بعد عامين، حين تنتهي المشاريع الكبيرة التي يجري بناؤها حاليا.",
     "The company expects pressure on the market to ease in two years, when the big projects now being built are finished."
+   ],
+   [
+    "وحتى ذلك الوقت، تنصح الدراسة الأسر بالتفكير جيدا قبل تجديد عقد الإيجار، والبحث في أكثر من منطقة.",
+    "Until then, the study advises families to think carefully before renewing a rental contract, and to look in more than one area."
    ]
   ],
   "questions": [
@@ -1400,12 +1436,12 @@
    [
     "What reason does the study give for the rise?",
     [
-     "More people, but a limited number of new flats",
+     "More people, but few new flats",
      "Higher taxes on property",
      "Lower salaries",
      "Fewer families in the city"
     ],
-    "More people, but a limited number of new flats"
+    "More people, but few new flats"
    ],
    [
     "What did the bank employee do?",
@@ -1436,6 +1472,550 @@
      "No more building"
     ],
     "Less pressure on the market when big projects are finished"
+   ]
+  ]
+ },
+ {
+  "id": "r5-11",
+  "level": 5,
+  "stage": 5,
+  "title": "Opinion: before you press \"send\"",
+  "lines": [
+   [
+    "وصلتني الأسبوع الماضي رسالة تزعم أن مياه الشرب في المدينة لم تعد صالحة، وأن على الجميع شراء الماء من المحلات.",
+    "Last week I received a message claiming that the city's drinking water was no longer safe, and that everyone should buy water from shops."
+   ],
+   [
+    "وخلال ساعات، كانت الرسالة نفسها في كل مجموعات الأسرة والعمل التي أشارك فيها.",
+    "Within hours, the same message was in every family and work group I belong to."
+   ],
+   [
+    "وفي اليوم التالي، نفت البلدية الخبر تماما، وأكدت أن الماء آمن وأن الفحص يجري كل يوم.",
+    "The next day, the municipality completely denied the story, stressing that the water is safe and is tested every day."
+   ],
+   [
+    "غير أن النفي لم يصل إلى كل من وصلته الإشاعة، ويبدو أن كثيرين ما زالوا يصدقونها.",
+    "But the denial did not reach everyone the rumour had reached, and it seems many still believe it."
+   ],
+   [
+    "وهذه ليست المرة الأولى، فكلما حدثت مشكلة صغيرة، ظهرت معها رسائل تبالغ فيها وتنشر الخوف.",
+    "This is not the first time: whenever a small problem happens, messages appear with it that exaggerate it and spread fear."
+   ],
+   [
+    "فلماذا ننشر الإشاعة بهذه السرعة؟",
+    "So why do we spread rumours so fast?"
+   ],
+   [
+    "في رأيي، السبب ليس سوء النية في معظم الحالات، بل الرغبة في مساعدة الآخرين.",
+    "In my opinion, the reason in most cases is not bad intentions, but the wish to help others."
+   ],
+   [
+    "فنحن نعتقد أننا نحمي أسرتنا وأصدقاءنا حين نرسل لهم التحذير، دون أن نسأل إن كان صحيحا.",
+    "We believe we are protecting our family and friends when we send them the warning, without asking whether it is true."
+   ],
+   [
+    "إلا أن النية الطيبة لا تجعل الخبر الكاذب حقيقة.",
+    "But good intentions do not turn a false story into a fact."
+   ],
+   [
+    "بل إن الإشاعة قد تسبب ضررا حقيقيا، سواء للأسر التي تخاف دون سبب، أم للشركات والمحلات التي تخسر زبائنها.",
+    "Indeed, a rumour can cause real harm, whether to families who are frightened for no reason, or to companies and shops that lose their customers."
+   ],
+   [
+    "وقد يتجاهل الناس بعد ذلك تحذيرا حقيقيا، لأنهم سمعوا تحذيرات كاذبة كثيرة من قبل.",
+    "And people may then ignore a real warning, because they have heard many false warnings before."
+   ],
+   [
+    "ومن الواضح أن الحل لا يكون بالقانون وحده، رغم أهميته.",
+    "Clearly, the solution does not lie in the law alone, despite its importance."
+   ],
+   [
+    "بل لا بد من وعي عام يجعل كل واحد منا يسأل ثلاثة أسئلة بسيطة قبل أن يرسل أي رسالة.",
+    "Rather, there must be a general awareness that makes each of us ask three simple questions before sending any message."
+   ],
+   [
+    "أولا، ما مصدر هذا الخبر؟ هل هو جهة رسمية أم شخص لا نعرفه؟",
+    "First, what is the source of this story? Is it an official body or someone we do not know?"
+   ],
+   [
+    "ثانيا، هل نشرته صحيفة أو قناة معروفة، أم أنه موجود فقط في الرسائل؟",
+    "Second, has a known newspaper or channel published it, or does it exist only in messages?"
+   ],
+   [
+    "ثالثا، هل في الرسالة دليل حقيقي، أم مجرد كلمات قوية وصور لا نعرف من أين جاءت؟",
+    "Third, is there real evidence in the message, or just strong words and pictures whose origin we do not know?"
+   ],
+   [
+    "وإذا لم نعرف الجواب، فالأفضل أن ننتظر، فلا أحد سيلومنا على رسالة لم نرسلها.",
+    "And if we do not know the answer, it is better to wait: no one will blame us for a message we did not send."
+   ],
+   [
+    "ولا أطلب هنا أن نتوقف عن الحديث في القضايا التي تهمنا، أو أن نصمت حين نرى خطأ.",
+    "I am not asking here that we stop talking about the issues that matter to us, or that we stay silent when we see something wrong."
+   ],
+   [
+    "بل أطلب أن نكون موضوعيين، فالرأي العام قوة كبيرة، ومن الظلم أن نتركه للإشاعات.",
+    "Rather, I am asking that we be objective: public opinion is a great force, and it is unjust to leave it to rumours."
+   ],
+   [
+    "وللجهات الرسمية دور هنا أيضا، فكلما أسرعت في نشر الحقيقة، قل أثر الإشاعة.",
+    "Official bodies also have a role here: the faster they publish the truth, the smaller the effect of the rumour."
+   ],
+   [
+    "وفي النهاية، الهاتف في أيدينا، والقرار قرارنا: هل نكون جزءا من المشكلة أم من الحل؟",
+    "In the end, the phone is in our hands and the decision is ours: will we be part of the problem or of the solution?"
+   ]
+  ],
+  "questions": [
+   [
+    "What is the article about?",
+    [
+     "Spreading rumours through messages",
+     "A problem with the city's drinking water",
+     "A new law on mobile phones",
+     "How to write a good message"
+    ],
+    "Spreading rumours through messages"
+   ],
+   [
+    "What happened after the municipality denied the story?",
+    [
+     "Many people still believed the rumour",
+     "Everyone stopped buying water",
+     "The message disappeared",
+     "The municipality closed the water supply"
+    ],
+    "Many people still believed the rumour"
+   ],
+   [
+    "According to the writer, why do most people spread rumours?",
+    [
+     "They want to help others",
+     "They want to harm companies",
+     "They are paid to do it",
+     "They want to break the law"
+    ],
+    "They want to help others"
+   ],
+   [
+    "What does the writer advise if we cannot answer the three questions?",
+    [
+     "Wait and do not send the message",
+     "Send it with a warning",
+     "Ask the municipality to answer",
+     "Delete all our groups"
+    ],
+    "Wait and do not send the message"
+   ],
+   [
+    "How does the writer see the role of the law?",
+    [
+     "Important, but not enough on its own",
+     "The only real solution",
+     "Of no importance at all",
+     "Too strict already"
+    ],
+    "Important, but not enough on its own"
+   ]
+  ]
+ },
+ {
+  "id": "r5-12",
+  "level": 5,
+  "stage": 5,
+  "title": "News: a graduation ceremony",
+  "lines": [
+   [
+    "تحت رعاية معالي وزير التعليم، أقامت إحدى الكليات التقنية مساء الأربعاء حفل تخريج الدفعة العاشرة من طلابها.",
+    "Under the patronage of His Excellency the Minister of Education, a technical college held a graduation ceremony on Wednesday evening for its tenth class of students."
+   ],
+   [
+    "وأقيم الحفل في مسرح الكلية بحضور عدد من كبار الشخصيات وأعضاء هيئة التدريس وأسر الخريجين.",
+    "The ceremony was held in the college theatre, attended by a number of dignitaries, members of the teaching staff and graduates' families."
+   ],
+   [
+    "وشملت الدفعة أكثر من ستمائة خريج وخريجة في تخصصات الهندسة والحاسوب والطاقة والإدارة.",
+    "The class included more than six hundred male and female graduates in engineering, computing, energy and management."
+   ],
+   [
+    "وبدأ الحفل بالنشيد الوطني، ثم دخل الخريجون إلى المسرح وسط تصفيق أسرهم وزملائهم.",
+    "The ceremony began with the national anthem, then the graduates entered the theatre amid the applause of their families and classmates."
+   ],
+   [
+    "وألقى مدير الكلية كلمة رحب فيها بالحضور، وهنأ الخريجين على ما حققوه خلال سنوات الدراسة.",
+    "The college director gave a speech in which he welcomed the guests and congratulated the graduates on what they had achieved during their years of study."
+   ],
+   [
+    "وقال إن الكلية خرجت منذ تأسيسها آلاف الشباب الذين يعملون اليوم في معظم قطاعات الدولة.",
+    "He said that since it was founded the college has produced thousands of young people who now work in most sectors of the state."
+   ],
+   [
+    "وأضاف أن سوق العمل يتغير بسرعة، وبالتالي لا بد من أن يستمر الخريج في التعلم بعد تخرجه.",
+    "He added that the job market is changing quickly, so the graduate must keep learning after graduating."
+   ],
+   [
+    "كما أشار إلى أن الكلية أطلقت هذا العام ثلاثة برامج جديدة في الذكاء الاصطناعي والطاقة الشمسية.",
+    "He also pointed out that the college launched three new programmes this year in artificial intelligence and solar energy."
+   ],
+   [
+    "ثم ألقى ممثل عن الوزارة كلمة بالنيابة عن معالي الوزير، نقل فيها تهنئة الوزير للخريجين وأسرهم.",
+    "Then a representative of the ministry gave a speech on behalf of the minister, in which he passed on the minister's congratulations to the graduates and their families."
+   ],
+   [
+    "وأكد أن الدولة تعتبر التعليم التقني من أهم طرق بناء اقتصاد قائم على الابتكار.",
+    "He stressed that the state considers technical education one of the most important ways of building an economy based on innovation."
+   ],
+   [
+    "ودعا الخريجين إلى أن يكونوا على قدر المسؤولية، وأن يضعوا مصلحة الوطن قبل كل شيء.",
+    "He called on the graduates to rise to their responsibility and to put the interest of the nation before everything."
+   ],
+   [
+    "وألقت إحدى الخريجات كلمة باسم زملائها، شكرت فيها الأسر والمعلمين على دعمهم طوال سنوات الدراسة.",
+    "One of the graduates gave a speech on behalf of her classmates, thanking families and teachers for their support throughout the years of study."
+   ],
+   [
+    "وقالت إن أصعب ما في الطريق لم يكن الامتحانات، بل الأيام التي شعرت فيها بأنها لن تنجح.",
+    "She said the hardest part of the journey was not the exams, but the days when she felt she would not succeed."
+   ],
+   [
+    "وفي ختام الحفل، كرم ممثل الوزارة الطلاب الأوائل، ومنحهم شهادات تقدير.",
+    "At the end of the ceremony, the ministry's representative honoured the top students and awarded them certificates of appreciation."
+   ],
+   [
+    "كما كرم عددا من الشركات التي ساهمت في تدريب الطلاب، وقدم لها دروعا تذكارية.",
+    "He also honoured a number of companies that had helped train the students, and presented them with commemorative trophies."
+   ],
+   [
+    "وأعلنت الكلية في نهاية الحفل أن أكثر من نصف الخريجين حصلوا على وظائف قبل التخرج.",
+    "At the end of the ceremony the college announced that more than half the graduates had got jobs before graduating."
+   ],
+   [
+    "وأشارت إلى أن معظم هذه الوظائف في الشركات التي تدرب فيها الطلاب خلال سنتهم الأخيرة.",
+    "It pointed out that most of these jobs are at the companies where the students trained during their final year."
+   ],
+   [
+    "وبعد الحفل، التقط الخريجون الصور مع أسرهم في ساحة الكلية، وسط أجواء من الفرح.",
+    "After the ceremony, the graduates took photos with their families in the college square, amid an atmosphere of joy."
+   ]
+  ],
+  "questions": [
+   [
+    "What event does the report describe?",
+    [
+     "A college graduation ceremony",
+     "The opening of a new college",
+     "A conference on education",
+     "A new law on technical education"
+    ],
+    "A college graduation ceremony"
+   ],
+   [
+    "Who gave a speech on behalf of the minister?",
+    [
+     "A representative of the ministry",
+     "The college director",
+     "One of the graduates",
+     "A company director"
+    ],
+    "A representative of the ministry"
+   ],
+   [
+    "What did the director say graduates must do because the job market changes quickly?",
+    [
+     "Keep learning after they graduate",
+     "Work only for the state",
+     "Study abroad",
+     "Start their own companies"
+    ],
+    "Keep learning after they graduate"
+   ],
+   [
+    "What did the graduate say was the hardest part?",
+    [
+     "The days she felt she would not succeed",
+     "The exams",
+     "The long journey to college",
+     "Finding a job"
+    ],
+    "The days she felt she would not succeed"
+   ],
+   [
+    "What does the fact that most jobs were at companies where students trained suggest?",
+    [
+     "Training with companies helps students find jobs",
+     "The companies paid for the ceremony",
+     "Students did not want other jobs",
+     "The college has too few students"
+    ],
+    "Training with companies helps students find jobs"
+   ]
+  ]
+ },
+ {
+  "id": "r5-13",
+  "level": 5,
+  "stage": 5,
+  "title": "News: National Day and a new museum",
+  "lines": [
+   [
+    "احتفلت المدينة يوم الخميس بذكرى اليوم الوطني، وسط أجواء من الفرح شارك فيها المواطنون والمقيمون.",
+    "On Thursday the city celebrated the anniversary of National Day, amid an atmosphere of joy shared by citizens and residents."
+   ],
+   [
+    "وبدأت الاحتفالات في الصباح برفع العلم في الساحات العامة والمدارس والدوائر الحكومية.",
+    "The celebrations began in the morning with the raising of the flag in public squares, schools and government departments."
+   ],
+   [
+    "وأقيمت المراسم الرسمية في ساحة كبيرة وسط المدينة، بحضور معالي الوزير وعدد من كبار الشخصيات.",
+    "The official ceremonies were held in a large square in the city centre, attended by the minister and a number of dignitaries."
+   ],
+   [
+    "واستعرض الوزير حرس الشرف، ثم عزفت الفرقة النشيد الوطني، بينما وقف الحضور احتراما.",
+    "The minister reviewed the guard of honour, then the band played the national anthem while those present stood out of respect."
+   ],
+   [
+    "وفي كلمة ألقاها بهذه المناسبة، قال الوزير إن هذا اليوم ليس مجرد احتفال، بل فرصة لنتذكر ما حققه الآباء والأجداد.",
+    "In a speech he gave for the occasion, the minister said this day is not merely a celebration, but a chance to remember what the fathers and grandfathers achieved."
+   ],
+   [
+    "وأضاف أن البلاد انتقلت خلال عقود قليلة من حياة بسيطة إلى دولة حديثة، بفضل العمل والتعاون.",
+    "He added that the country had moved within a few decades from a simple life to a modern state, thanks to work and cooperation."
+   ],
+   [
+    "وأكد أن الحفاظ على هذا الإنجاز مسؤولية الجميع، لا سيما الشباب.",
+    "He stressed that preserving this achievement is everyone's responsibility, especially young people's."
+   ],
+   [
+    "وعلى هامش الاحتفال، افتتح الوزير متحفا جديدا لتاريخ المدينة، بعد عامين من العمل.",
+    "On the sidelines of the celebration, the minister opened a new museum of the city's history, after two years of work."
+   ],
+   [
+    "ويضم المتحف صورا وأدوات قديمة، إلى جانب قسم خاص عن البحر والسفن وحياة الناس على الشاطئ.",
+    "The museum holds old photographs and tools, alongside a special section on the sea, boats and people's life on the shore."
+   ],
+   [
+    "كما يضم قاعة تقنية يستطيع فيها الزائر أن يرى المدينة كما كانت قبل ستين عاما.",
+    "It also contains a technology hall in which a visitor can see the city as it was sixty years ago."
+   ],
+   [
+    "وقال مدير المتحف إن معظم القطع جاءت من الأسر نفسها، التي قدمتها للمتحف حتى يراها الجيل الجديد.",
+    "The museum director said most of the pieces came from families themselves, who gave them to the museum so the new generation could see them."
+   ],
+   [
+    "وأضاف أن الدخول سيكون مجانا خلال الشهر الأول، لا سيما لطلاب المدارس.",
+    "He added that entry will be free during the first month, especially for schoolchildren."
+   ],
+   [
+    "وفي المساء، امتلأت الشوارع بالسيارات التي حملت الأعلام، وسط ازدحام كبير على الطرق الرئيسية.",
+    "In the evening, the streets filled with cars carrying flags, amid heavy congestion on the main roads."
+   ],
+   [
+    "وقد دعت الشرطة السائقين إلى الالتزام بقواعد المرور، وعدم الوقوف في أماكن غير مخصصة.",
+    "The police called on drivers to keep to traffic rules and not to stop in places not designated for it."
+   ],
+   [
+    "وشهد الشاطئ عروضا للألعاب النارية استمرت نصف ساعة، حضرها آلاف الأسر.",
+    "The beach saw a fireworks display that lasted half an hour, attended by thousands of families."
+   ],
+   [
+    "كما نظمت البلدية في الحدائق العامة برامج للأطفال، بينها مسابقات في الرسم والشعر عن الوطن.",
+    "The municipality also organised programmes for children in public parks, including competitions in drawing and poetry about the homeland."
+   ],
+   [
+    "وبعثت عدة دول برقيات تهنئة بهذه المناسبة، عبرت فيها عن تمنياتها للبلاد بمزيد من التقدم والازدهار.",
+    "Several countries sent cables of congratulations for the occasion, expressing their wishes for further progress and prosperity for the country."
+   ],
+   [
+    "ومن المقرر أن تستمر الاحتفالات ثلاثة أيام، مع برامج يومية في كل مناطق المدينة.",
+    "The celebrations are due to last three days, with daily programmes in every area of the city."
+   ]
+  ],
+  "questions": [
+   [
+    "What does the report describe?",
+    [
+     "National Day celebrations and a museum opening",
+     "A new law about the flag",
+     "The closure of the city centre",
+     "A sports festival"
+    ],
+    "National Day celebrations and a museum opening"
+   ],
+   [
+    "What happened during the official ceremonies?",
+    [
+     "The minister reviewed the guard of honour and the anthem was played",
+     "Students received certificates",
+     "A new road was opened",
+     "The minister visited schools"
+    ],
+    "The minister reviewed the guard of honour and the anthem was played"
+   ],
+   [
+    "Where did most of the museum's pieces come from?",
+    [
+     "Families who gave them to the museum",
+     "Other museums abroad",
+     "The ministry's offices",
+     "A company that bought them"
+    ],
+    "Families who gave them to the museum"
+   ],
+   [
+    "Why did the police issue a call to drivers?",
+    [
+     "The streets were crowded with cars in the evening",
+     "A road had closed",
+     "It was raining",
+     "The fireworks were cancelled"
+    ],
+    "The streets were crowded with cars in the evening"
+   ],
+   [
+    "According to the minister, what is National Day?",
+    [
+     "A chance to remember what earlier generations achieved",
+     "Only a holiday from work",
+     "A day for sport",
+     "A day to open new museums"
+    ],
+    "A chance to remember what earlier generations achieved"
+   ]
+  ]
+ },
+ {
+  "id": "r5-14",
+  "level": 5,
+  "stage": 5,
+  "title": "Speech: opening a youth conference",
+  "lines": [
+   [
+    "بسم الله الرحمن الرحيم.",
+    "In the name of God, the Most Gracious, the Most Merciful."
+   ],
+   [
+    "السيدات والسادة، الحضور الكرام، السلام عليكم ورحمة الله وبركاته.",
+    "Ladies and gentlemen, distinguished guests, peace be upon you, and God's mercy and blessings."
+   ],
+   [
+    "يسرني في البداية أن أرحب بكم في افتتاح المؤتمر الأول للشباب والبيئة.",
+    "I am pleased, first of all, to welcome you to the opening of the first Youth and Environment Conference."
+   ],
+   [
+    "ويشرفني أن أتقدم بالشكر إلى صاحب السمو حاكم الإمارة على رعايته لهذا المؤتمر، ودعمه المستمر للشباب.",
+    "I am honoured to extend my thanks to His Highness the Ruler of the emirate for his patronage of this conference and his continued support for young people."
+   ],
+   [
+    "كما أشكر كل الجهات التي ساهمت في تنظيمه، وأرحب بضيوفنا الذين جاؤوا من أكثر من عشرين دولة.",
+    "I also thank all the bodies that helped to organise it, and I welcome our guests who have come from more than twenty countries."
+   ],
+   [
+    "أيها الحضور الكرام، لم يعد الحديث عن البيئة ترفا، بل أصبح ضرورة لا يمكن تجاهلها.",
+    "Distinguished guests, talking about the environment is no longer a luxury: it has become a necessity that cannot be ignored."
+   ],
+   [
+    "فالصيف عندنا أصبح أطول وأشد حرا، والبحر الذي عاش منه أجدادنا يحتاج اليوم إلى حماية.",
+    "Our summers have become longer and hotter, and the sea our grandfathers lived from now needs protecting."
+   ],
+   [
+    "ولا شك أن الحكومات تتحمل الجزء الأكبر من المسؤولية، غير أنها لا تستطيع أن تنجح وحدها.",
+    "There is no doubt that governments bear the greater part of the responsibility, but they cannot succeed alone."
+   ],
+   [
+    "ومن هنا جاءت فكرة هذا المؤتمر: أن نسمع من الشباب، لا أن نتكلم عنهم فقط.",
+    "That is where the idea for this conference came from: to hear from young people, not only to talk about them."
+   ],
+   [
+    "فقد شارك في التحضير له أكثر من خمسمائة طالب وطالبة من الجامعات والمدارس.",
+    "More than five hundred male and female students from universities and schools took part in preparing it."
+   ],
+   [
+    "وقدموا أكثر من مائة فكرة، تتناول الماء والطاقة والنقل والطعام.",
+    "They put forward more than a hundred ideas, dealing with water, energy, transport and food."
+   ],
+   [
+    "وقد اختارت لجنة من الخبراء عشرين فكرة منها، ستعرض عليكم خلال اليومين المقبلين.",
+    "A committee of experts chose twenty of them, which will be presented to you over the next two days."
+   ],
+   [
+    "بعض هذه الأفكار بسيط، مثل تطبيق يساعد الأسر على تقليل استهلاك الماء في البيت.",
+    "Some of these ideas are simple, such as an app that helps families reduce water use at home."
+   ],
+   [
+    "وبعضها أكبر، مثل مشروع لزراعة أشجار المنغروف على الشاطئ لحماية البحر.",
+    "Others are bigger, such as a project to plant mangrove trees on the shore to protect the sea."
+   ],
+   [
+    "وأود أن أعلن اليوم أن الوزارة ستقدم منحة لأفضل خمسة مشاريع، حتى تتحول من فكرة إلى واقع.",
+    "I would like to announce today that the ministry will give a grant to the best five projects, so that they can turn from ideas into reality."
+   ],
+   [
+    "أيها الشباب، أنتم لستم مستقبل هذا الوطن فقط، بل أنتم حاضره أيضا.",
+    "Young people, you are not only the future of this nation: you are its present too."
+   ],
+   [
+    "فلا تنتظروا أن يطلب منكم أحد المشاركة، بل كونوا أنتم البداية، في بيوتكم وجامعاتكم وأحيائكم.",
+    "So do not wait for someone to ask you to take part: be the beginning yourselves, in your homes, your universities and your neighbourhoods."
+   ],
+   [
+    "وختاما، أتقدم بالشكر مرة أخرى لكل من ساهم في هذا المؤتمر، وأتمنى لكم نقاشا مفيدا ونتائج تخدم بلادنا والعالم.",
+    "In conclusion, I extend my thanks once again to everyone who contributed to this conference, and I wish you a useful discussion and results that serve our country and the world."
+   ],
+   [
+    "والسلام عليكم ورحمة الله وبركاته.",
+    "And peace be upon you, and God's mercy and blessings."
+   ]
+  ],
+  "questions": [
+   [
+    "What is the purpose of this speech?",
+    [
+     "To open a conference on young people and the environment",
+     "To announce a new environment law",
+     "To thank a college for a graduation",
+     "To close a festival"
+    ],
+    "To open a conference on young people and the environment"
+   ],
+   [
+    "Where did the conference's ideas come from?",
+    [
+     "Students from universities and schools",
+     "The ministry's experts",
+     "Guests from other countries",
+     "Companies"
+    ],
+    "Students from universities and schools"
+   ],
+   [
+    "What will the ministry give the best five projects?",
+    [
+     "A grant",
+     "A trophy",
+     "A job",
+     "A trip abroad"
+    ],
+    "A grant"
+   ],
+   [
+    "Why does the speaker say governments need young people?",
+    [
+     "Governments cannot succeed alone",
+     "Young people pay more taxes",
+     "Young people work in the ministry",
+     "Governments have no money"
+    ],
+    "Governments cannot succeed alone"
+   ],
+   [
+    "What does the speaker mean by \"you are its present too\"?",
+    [
+     "Young people should act now, not wait",
+     "Young people are too young to help",
+     "The future is not important",
+     "Only students can attend"
+    ],
+    "Young people should act now, not wait"
    ]
   ]
  }
