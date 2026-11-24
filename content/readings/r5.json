@@ -66,8 +66,8 @@
     "On the other hand, some traders wondered about the effect of the trees on the parking spaces in front of their shops."
    ],
    [
-    "وقال أحدهم إن الزبائن يريدون موقفا قريبا، وإن أي تغيير في الشارع قد يؤثر على البيع.",
-    "One of them said customers want a nearby parking space, and that any change in the street could affect sales."
+    "وقال أحدهم إن الزبائن يريدون موقفا قريبا، وإن أي تغيير في الشارع قد يكون له أثر على محله.",
+    "One of them said customers want a nearby parking space, and that any change in the street could have an effect on his shop."
    ],
    [
     "وأكد المسؤول أن البلدية ستلتقي السكان والتجار في كل حي قبل أن تبدأ الزراعة فيه.",
@@ -386,6 +386,10 @@
     "Rather, I am calling for balance: the phone is a useful tool when we control it, and a danger when it controls us."
    ],
    [
+    "وكل أسرة تعرف أطفالها، ويمكنها أن تختار ما يناسبها من هذه الخطوات.",
+    "Every family knows its own children, and can choose which of these steps suit it."
+   ],
+   [
     "وفي النهاية، لن يتذكر أطفالنا ما رأوه على الشاشة، بل الوقت الذي قضيناه معهم.",
     "In the end, our children will not remember what they saw on the screen, but the time we spent with them."
    ]
@@ -466,8 +470,8 @@
     "The traffic director explained at a press conference that most serious accidents were caused by speed or lack of attention."
    ],
    [
-    "وأضاف أن عدد الذين أصيبوا في الحوادث انخفض كذلك، مما يعني أن الطرق أصبحت أكثر أمانا للسائقين والركاب معا.",
-    "He added that the number of people injured in accidents had also fallen, which means the roads have become safer for drivers and passengers alike."
+    "وأضاف أن الذين أصيبوا في الحوادث أقل كذلك من العام الماضي، مما يعني أن الطرق أصبحت أكثر أمانا للسائقين والركاب معا.",
+    "He added that fewer people were also injured in accidents than last year, which means the roads have become safer for drivers and passengers alike."
    ],
    [
     "إلا أن التقرير كشف ارتفاعا يدعو إلى القلق في الحوادث داخل الأحياء، لا سيما قرب المدارس.",
@@ -502,8 +506,12 @@
     "The traffic director completely denied this, stressing that the aim is people's safety, not fines."
    ],
    [
-    "وأشار إلى أن عدد المخالفات نفسه انخفض في الطرق التي فيها كاميرات منذ أكثر من عام.",
-    "He pointed out that the number of fines had itself fallen on roads that have had cameras for more than a year."
+    "وأشار إلى أن المخالفات نفسها انخفضت في الطرق التي فيها كاميرات منذ أكثر من عام.",
+    "He pointed out that fines themselves had fallen on roads that have had cameras for more than a year."
+   ],
+   [
+    "فالسائق الذي يعرف أن هناك كاميرا يقود بسرعة معقولة، ولا يدفع أي مخالفة.",
+    "A driver who knows there is a camera drives at a sensible speed and pays no fine."
    ],
    [
     "وقال إن هذا دليل على أن السائقين غيروا طريقة قيادتهم، وهو ما تريده الشرطة بالفعل.",
@@ -520,6 +528,14 @@
    [
     "كما ذكر الآباء بضرورة استخدام حزام الأمان ومقاعد الأطفال في كل رحلة، مهما كانت قريبة.",
     "He also reminded parents of the need to use seat belts and children's seats on every trip, however short."
+   ],
+   [
+    "من ناحية أخرى، كشف التقرير أن الحوادث في الطرق الخارجية ما زالت كثيرة في الليل، بسبب التعب وقلة النوم.",
+    "On the other hand, the report revealed that accidents on roads outside the city are still high at night, because of tiredness and lack of sleep."
+   ],
+   [
+    "لذا دعا التقرير السائقين إلى التوقف للراحة كل ساعتين في الرحلات الطويلة.",
+    "So the report called on drivers to stop for a rest every two hours on long trips."
    ],
    [
     "وتتوقع الشرطة أن تنشر تقريرها الكامل عن العام كله في شهر يناير المقبل.",
@@ -650,12 +666,16 @@
     "Some employees at the same company said the pressure of work in the four days had become greater."
    ],
    [
-    "كما قال عدد من الزبائن إنهم لم يجدوا من يجيب على الهاتف في بعض الأيام.",
-    "A number of customers also said that on some days they found no one to answer the phone."
+    "كما قال بعض الزبائن إنهم لم يجدوا من يجيب على الهاتف في بعض الأيام.",
+    "Some customers also said that on some days they found no one to answer the phone."
    ],
    [
-    "وهذا يعني أن نجاح التجربة يحتاج إلى تنظيم جيد للعمل، لا مجرد أيام أقل.",
-    "This means that the trial's success needs good organisation of the work, not merely fewer days."
+    "وهذا يعني أن التجربة لا تنجح إلا بتنظيم جيد للعمل، لا بمجرد أيام أقل.",
+    "This means that the trial can only succeed with good organisation of the work, not merely with fewer days."
+   ],
+   [
+    "فإذا بقي العمل كما هو وقلت الأيام، فسيتعب الموظف أكثر، ولن نحقق أي هدف.",
+    "If the work stays as it is and the days are fewer, the employee will get more tired and we will achieve nothing."
    ],
    [
     "لذا أقترح أن تبدأ الشركات الكبيرة بتجارب صغيرة في قسم واحد أو قسمين.",
@@ -666,8 +686,12 @@
     "Then they can decide afterwards on the basis of the results, not on the basis of enthusiasm alone."
    ],
    [
-    "فالهدف في النهاية ليس عدد الأيام، بل التوازن بين العمل والحياة.",
-    "The goal in the end is not the number of days, but a balance between work and life."
+    "ومن ناحية أخرى، ينبغي ألا ننسى من يعملون في الخدمات التي لا تتوقف، فهم أيضا يستحقون التوازن.",
+    "On the other hand, we should not forget those who work in services that never stop: they too deserve balance."
+   ],
+   [
+    "فالهدف في النهاية ليس أن نعمل أياما أقل، بل التوازن بين العمل والحياة.",
+    "The goal in the end is not to work fewer days, but a balance between work and life."
    ]
   ],
   "questions": [
@@ -734,12 +758,12 @@
     "The city's heritage festival closed its tenth edition on Saturday, after ten days of shows and programmes."
    ],
    [
-    "وقالت اللجنة المنظمة إن نحو مائتي ألف شخص زاروا المهرجان، أي بزيادة الربع عن العام الماضي.",
-    "The organising committee said about two hundred thousand people visited the festival, a rise of a quarter on last year."
+    "وقال المنظمون إن نحو مائتي ألف شخص زاروا المهرجان، أي بزيادة الربع عن العام الماضي.",
+    "The organisers said about two hundred thousand people visited the festival, a rise of a quarter on last year."
    ],
    [
-    "وأوضحت أن معظم الزوار كانوا من الأسر، إلى جانب أعداد كبيرة من السياح والمقيمين.",
-    "It explained that most visitors were families, alongside large numbers of tourists and residents."
+    "وأوضحوا أن معظم الزوار كانوا من الأسر، إلى جانب أعداد كبيرة من السياح والمقيمين.",
+    "They explained that most visitors were families, alongside large numbers of tourists and residents."
    ],
    [
     "وشهد المهرجان هذا العام أكثر من مائة عرض، بين الشعر والموسيقى والفنون الشعبية.",
@@ -762,48 +786,56 @@
     "He added that the festival is no longer just a local event, but has become part of the region's tourism programme."
    ],
    [
-    "وبالفعل، امتلأت معظم الفنادق في المدينة خلال أيام المهرجان، وفقا لأرقام اللجنة.",
-    "Indeed, most of the city's hotels were full during the festival, according to the committee's figures."
+    "وبالفعل، امتلأت معظم الفنادق في المدينة خلال أيام المهرجان، وفقا لأرقام المنظمين.",
+    "Indeed, most of the city's hotels were full during the festival, according to the organisers' figures."
    ],
    [
-    "وقالت إحدى الزائرات إنها جاءت مع أسرتها من مدينة أخرى، وإن أطفالها لا يريدون العودة إلى البيت.",
-    "One visitor said she had come with her family from another city, and that her children did not want to go back home."
+    "وقالت إحدى الأمهات إنها جاءت مع أسرتها من مدينة أخرى، وإن أطفالها لا يريدون العودة إلى البيت.",
+    "One mother said she had come with her family from another city, and that her children did not want to go back home."
    ],
    [
-    "ورغم هذا النجاح، اشتكى بعض الزوار من الازدحام الشديد عند المدخل، لا سيما في عطلة نهاية الأسبوع.",
-    "Despite this success, some visitors complained of heavy congestion at the entrance, especially at the weekend."
+    "ورغم أن المهرجان نجح، اشتكى بعض الزوار من الازدحام الشديد عند المدخل، لا سيما في عطلة نهاية الأسبوع.",
+    "Although the festival was a success, some visitors complained of heavy congestion at the entrance, especially at the weekend."
    ],
    [
-    "كما انتقد بعضهم قلة مواقف السيارات، مما جعلهم يمشون مسافات طويلة تحت الشمس.",
-    "Some also criticised the lack of parking spaces, which made them walk long distances in the sun."
+    "كما انتقد بعضهم قلة مواقف السيارات، فقد مشى كثيرون مسافات طويلة تحت الشمس.",
+    "Some also criticised the lack of parking spaces: many walked long distances in the sun."
    ],
    [
-    "أما بعض الحرفيين، فقالوا إن إيجار الأكشاك ارتفع، وبالتالي قلت أرباحهم عن العام الماضي.",
-    "As for some of the craftspeople, they said the rent for stalls had gone up, so their profits were lower than last year."
+    "أما بعض الحرفيين، فقالوا إن إيجار المحلات في المهرجان ارتفع، وبالتالي قلت أرباحهم عن العام الماضي.",
+    "As for some of the craftspeople, they said the rent for shops at the festival had gone up, so their profits were lower than last year."
    ],
    [
     "وقال أحدهم إنه يحب المهرجان، إلا أنه لا يستطيع أن يدفع إيجارا أعلى كل عام.",
     "One of them said he loves the festival, but cannot pay a higher rent every year."
    ],
    [
-    "وردت اللجنة بأنها ستدرس هذه الملاحظات بشكل جدي قبل الدورة المقبلة.",
-    "The committee replied that it will study these remarks seriously before the next edition."
+    "ورد المنظمون بأنهم سيدرسون هذه الملاحظات بشكل جدي قبل الدورة المقبلة.",
+    "The organisers replied that they will study these remarks seriously before the next edition."
    ],
    [
-    "وأعلنت أنها تبحث نقل المهرجان إلى مكان أكبر قرب الشاطئ، مع حافلات مجانية من وسط المدينة.",
-    "It announced that it is considering moving the festival to a bigger site near the beach, with free buses from the city centre."
+    "وأعلنوا أنهم يبحثون نقل المهرجان إلى مكان أكبر قرب الشاطئ، مع حافلات مجانية من وسط المدينة.",
+    "They announced that they are considering moving the festival to a bigger site near the beach, with free buses from the city centre."
    ],
    [
-    "كما وعدت بتخفيض إيجار الأكشاك للحرفيين المواطنين، وكبار السن منهم بشكل خاص.",
-    "It also promised to cut the stall rent for national craftspeople, and especially the older ones among them."
+    "كما وعدوا بتخفيض الإيجار للحرفيين المواطنين، وكبار السن منهم بشكل خاص.",
+    "They also promised to cut the rent for national craftspeople, and especially the older ones among them."
    ],
    [
-    "وأكد مدير المهرجان أن الحرفيين هم قلب المهرجان، ولا مهرجان للتراث بدونهم.",
-    "The festival director stressed that the craftspeople are the heart of the festival, and there is no heritage festival without them."
+    "وأكد مدير المهرجان أن هؤلاء هم قلب المهرجان، ولا مهرجان للتراث بدونهم.",
+    "The festival director stressed that these people are the heart of the festival, and there is no heritage festival without them."
    ],
    [
-    "ومن المنتظر أن تنطلق الدورة المقبلة في الشهر نفسه من العام القادم.",
-    "The next edition is expected to begin in the same month next year."
+    "وأضاف أن المهرجان سيضيف في الدورة المقبلة برامج جديدة للشباب، بينها مسابقة للشعر الشعبي.",
+    "He added that the festival will add new programmes for young people at the next edition, including a folk poetry competition."
+   ],
+   [
+    "كما سيستخدم المنظمون تطبيقا إلكترونيا للتذاكر، بدلا من الانتظار عند المدخل.",
+    "The organisers will also use an app for tickets, instead of people waiting at the entrance."
+   ],
+   [
+    "وستنطلق الدورة المقبلة في الشهر نفسه من العام القادم.",
+    "The next edition will begin in the same month next year."
    ]
   ],
   "questions": [
@@ -830,12 +862,12 @@
    [
     "What did some craftspeople complain about?",
     [
-     "Higher rent for stalls",
+     "Higher rent for their shops",
      "Too few visitors",
      "Bad weather",
      "The length of the festival"
     ],
-    "Higher rent for stalls"
+    "Higher rent for their shops"
    ],
    [
     "What does the fact that hotels were full suggest?",
@@ -848,14 +880,14 @@
     "The festival attracts visitors from outside the city"
    ],
    [
-    "How does the committee respond to the complaints?",
+    "How do the organisers respond to the complaints?",
     [
-     "It will study them and is considering a bigger site",
-     "It rejects them as exaggerated",
-     "It plans to stop the festival",
-     "It blames the visitors"
+     "They will study them and are considering a bigger site",
+     "They reject them as exaggerated",
+     "They plan to stop the festival",
+     "They blame the visitors"
     ],
-    "It will study them and is considering a bigger site"
+    "They will study them and are considering a bigger site"
    ]
   ]
  },
@@ -894,12 +926,12 @@
     "But generosity is one thing, and cooking too much is quite another."
    ],
    [
-    "فالكرم أن تقدم لضيفك ما يكفيه ويسعده، لا أن تملأ المائدة بما لا يؤكل.",
+    "فالكرم أن تقدم لضيفك ما يكفيه ويجعله سعيدا، لا أن تملأ المائدة بما لا يؤكل.",
     "Generosity is offering your guest what is enough for him and pleases him, not filling the table with what will not be eaten."
    ],
    [
-    "ومن الواضح أن جزءا من المشكلة يعود إلى الخوف من كلام الناس، أكثر من الحاجة الحقيقية.",
-    "Clearly, part of the problem comes from fear of what people will say, more than from real need."
+    "ومن الواضح أن جزءا من المشكلة يعود إلى الخوف من كلام الناس، أكثر مما يحتاجه البيت فعلا.",
+    "Clearly, part of the problem comes from fear of what people will say, more than from what the household really needs."
    ],
    [
     "في رأيي، يبدأ الحل من داخل الأسرة، بخطوات بسيطة لا تكلف شيئا.",
@@ -930,16 +962,24 @@
     "Some restaurants have indeed started serving smaller dishes at lower prices, and customers seem to have welcomed this."
    ],
    [
-    "وهذا دليل على أن التغيير ممكن، وأنه لا يعني خسارة للمطعم أو للزبون.",
-    "This is evidence that change is possible, and that it does not mean a loss for the restaurant or the customer."
+    "وهذا دليل على أن التغيير ممكن، وأنه لا يعني خسارة للمطعم أو للزبائن.",
+    "This is evidence that change is possible, and that it does not mean a loss for the restaurant or its customers."
+   ],
+   [
+    "كما يمكن للمساجد والمدارس أن تساهم في توعية الناس بهذه القضية خلال الشهر الكريم.",
+    "Mosques and schools can also help raise people's awareness of this issue during the holy month."
+   ],
+   [
+    "فكلمة بسيطة بعد الصلاة، أو درس بسيط للأطفال، قد يغير عادات أسرة كاملة.",
+    "A simple talk after prayers, or a simple lesson for children, may change the habits of a whole family."
    ],
    [
     "وليس الأمر قضية مال فقط، بل قضية أخلاق واحترام للنعمة.",
     "The matter is not only one of money, but one of morals and respect for God's blessings."
    ],
    [
-    "فكيف نصوم لنشعر بالجائع، ثم نرمي في المساء ما يكفي لأسرة كاملة؟",
-    "How can we fast to feel for the hungry, and then in the evening throw away enough for a whole family?"
+    "فكيف نصوم لنشعر بالجائع، ثم نرمي في المساء ما يكفي لإطعام أسر كثيرة؟",
+    "How can we fast to feel for the hungry, and then in the evening throw away enough to feed many families?"
    ],
    [
     "لعل رمضان هذا العام يكون بداية عادة جديدة: مائدة أصغر، وقلب أكبر.",
