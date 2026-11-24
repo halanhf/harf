@@ -1290,8 +1290,8 @@
   "stage": 5,
   "title": "So much that I shut up",
   "goal": "At a café, Fahad (flown in from his Kuwait posting for the dinner, in secret) asks how Sēf took your news; tell him, and talk up the dinner that's coming",
-  "tip": "Emphasise how far something went with lad-daraja inn: ẓiḥak ʿalay lad-daraja inni sikatt 'he laughed at me so much that I shut up'. Fahad's Kuwaiti emphasis is for recognising: kint gid ḥajazt 'I'd (really) booked'.",
-  "grammar": "emphasis: lad-daraja inn, wala aḥla; Kuwaiti gid (recognise)",
+  "tip": "Emphasise how far something went with li-darajat inn: ẓiḥak ʿalay li-darajat inni sikatt 'he laughed at me so much that I shut up'. Fahad's Kuwaiti emphasis is for recognising: kint gid ḥajazt 'I'd (really) booked'.",
+  "grammar": "emphasis: li-darajat inn, wala aḥla; Kuwaiti gid (recognise)",
   "dialogue": [
    [
     "A",
@@ -1302,7 +1302,7 @@
    [
     "B",
     "لا، ضحك علي لدرجة إني سكت",
-    "la, ẓiḥak ʿalay lad-daraja inni sikatt",
+    "la, ẓiḥak ʿalay li-darajat inni sikatt",
     "No, he laughed at me so much that I shut up."
    ],
    [
@@ -1338,7 +1338,7 @@
    [
     "B",
     "هيه، وليمة كبيرة! طابخين أكل لدرجة إنه يكفي الفريج",
-    "hē, walīma kbīra! ṭābkhīn akil lad-daraja innah ykaffi l-firīj",
+    "hē, walīma kbīra! ṭābkhīn akil li-darajat innah ykaffi l-firīj",
     "Yes, a big feast! They're cooking so much food it'll feed the neighbourhood."
    ],
    [
@@ -1425,7 +1425,7 @@
    [
     "B",
     "بعدني أغلط، لدرجة إن الشواب يضحكون! بس أحاول",
-    "baʿadni aghlaṭ, lad-daraja inn ish-shuwwāb yiẓḥakūn! bas aḥāwil",
+    "baʿadni aghlaṭ, li-darajat inn ish-shuwwāb yiẓḥakūn! bas aḥāwil",
     "I still make mistakes, so many that the old men laugh! But I try."
    ],
    [
