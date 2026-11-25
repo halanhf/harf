@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-5mfrMZwl0We17ExkKRei3bOM5LvSdCL2YuhrO6JAzWQ=' 'sha256-rUUKHST3vIYfrvAaI+TdyUb6kOvLmiBuE0NYaA+fKYU=' 'sha256-8dYiRBlb1s2/5av6oPPwCCQ8D6e0H0ztK+tM2ni5JZM=' 'sha256-vp9yiuNVlFlgqmBK0iLBTlFGjpvCVGY5xQ5q7LnFcr8='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-5mfrMZwl0We17ExkKRei3bOM5LvSdCL2YuhrO6JAzWQ=' 'sha256-QLDDme5kr7NmHN1UH28NFTWNlzF44FTdth6Z2JYkOmk=' 'sha256-8dYiRBlb1s2/5av6oPPwCCQ8D6e0H0ztK+tM2ni5JZM=' 'sha256-vp9yiuNVlFlgqmBK0iLBTlFGjpvCVGY5xQ5q7LnFcr8='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -2278,7 +2278,7 @@ const GH_API="https://api.github.com";
 function ghApi(cfg,fetchFn){
   const repo="/repos/"+encodeURIComponent(cfg.owner)+"/"+encodeURIComponent(cfg.repo)+"/contents/";
   async function call(op,path,method,body,keepalive){
-    const headers={Authorization:"Bearer "+cfg.token,Accept:"application/vnd.github+json"}; const init={method,headers,cache:"no-store"};
+    const headers={Authorization:"Bearer "+cfg.token,Accept:"application/vnd.github+json"}; const init={method,headers,cache:"no-store",redirect:"error"};
     if(body!==undefined){ headers["Content-Type"]="application/json"; init.body=body; }
     if(keepalive&&(body||"").length<60000) init.keepalive=true;
     let r; try{ r=await fetchFn(GH_API+path,init); }catch(e){ return {kind:"offline"}; }
@@ -2305,11 +2305,11 @@ async function ghCycle(api,local,mem,opts){
     let listed={}; const gone=new Set();
     if(!(opts.replace&&att===0)){
       const m=await api.get(GH_META); if(m.kind!=="ok"&&m.kind!=="missing") return end(m.kind);
-      let meta=null; if(m.kind==="ok"){ meta=parse(m.text); if(!isObj(meta)) return end("bad"); }
+      let meta=null; if(m.kind==="ok"){ meta=parse(m.text); if(!isObj(meta)||(meta.shards!==undefined&&!isObj(meta.shards))) return end("bad"); }
       listed=meta&&isObj(meta.shards)?meta.shards:{};
       const need=ghNeed(listed,w.sha,force), rs=await Promise.all(need.map(n=>api.get(ghFile(n)))), files={};
       for(let i=0;i<need.length;i++){ const r=rs[i]; if(r.kind==="missing"){ gone.add(need[i]); continue; } if(r.kind!=="ok") return end(r.kind);
-        const f=parse(r.text); if(!isObj(f)) return end("bad"); files[need[i]]=f; }
+        const f=parse(r.text); if(!isObj(f)||(f.cards!==undefined&&!isObj(f.cards))) return end("bad"); files[need[i]]=f; }
       // every answer is in: only now merge and note what was read
       const got=Object.keys(files);
       if(meta||got.length){ const rest=Object.assign({},meta||{}); delete rest.shards; const cards={}; for(const n of got) cards[n]=isObj(files[n].cards)?files[n].cards:{};

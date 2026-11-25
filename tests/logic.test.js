@@ -543,7 +543,7 @@ function fakeHub(files={}){
   h.set=(p,o)=>h.files.set(p,{text:typeof o==="string"?o:JSON.stringify(o),sha:"sha"+(++n)}); for(const [p,o] of Object.entries(files)) h.set(p,o);
   h.json=p=>JSON.parse(h.files.get(p).text); const names=m=>h.log.filter(r=>r.method===m).map(r=>r.url.split("/").pop()); h.puts=()=>names("PUT"); h.gets=()=>names("GET");
   const res=(status,body)=>({status,ok:status<300,json:async()=>body});
-  h.fetch=async(url,o={})=>{ const method=o.method||"GET"; h.log.push({url,method,headers:o.headers||{},cache:o.cache,keepalive:!!o.keepalive,body:o.body||""});
+  h.fetch=async(url,o={})=>{ const method=o.method||"GET"; h.log.push({url,method,headers:o.headers||{},cache:o.cache,redirect:o.redirect,keepalive:!!o.keepalive,body:o.body||""});
     if(h.down) throw new TypeError("Failed to fetch "+TOKEN);
     const p=url.replace("https://api.github.com","");
     if(h.before) await h.before(method,p);
@@ -625,4 +625,25 @@ test("github client: keepalive only for bodies a browser will accept",async()=>{
   const hub=fakeHub(); const api=L.ghApi({owner:"someone",repo:"harf-progress",token:TOKEN},hub.fetch);
   await api.put("progress.json","{}",undefined,true); await api.put("cards_s1.json",JSON.stringify({x:"a".repeat(70000)}),undefined,true);
   assert.deepEqual(hub.log.map(q=>q.keepalive),[true,false]);
+});
+test("github cycle: a file of unknown shape is never replaced",async()=>{
+  for(const [files,why] of [[{"progress.json":{updatedAt:1,shards:{s1:"zzz"}},"cards_s1.json":{cards:"x"}},"cards string"],[{"progress.json":{updatedAt:1,shards:{s1:"zzz"}},"cards_s1.json":{cards:[]}},"cards array"],[{"progress.json":{updatedAt:1,shards:"x"}},"shards string"],[{"progress.json":{updatedAt:1,shards:[]}},"shards array"]]){
+    const hub=fakeHub(files); const before=[...hub.files].map(([p,f])=>p+f.text+f.sha).join("|"); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3)}}));
+    const r=await a.sync(); assert.equal(r.kind,"bad",why); assert.deepEqual(hub.puts(),[],why); assert.equal(r.merged,null,why); assert.equal([...hub.files].map(([p,f])=>p+f.text+f.sha).join("|"),before,why); }
+});
+test("github cycle: a write refused part-way keeps what was written and finishes the rest next time",async()=>{
+  const hub=fakeHub(); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3),"s2u001.0":pcard(GT,3)}}));
+  const localBefore=JSON.stringify(a.local); hub.status["PUT cards_s2.json"]=500;
+  const r=await L.ghCycle(a.api,a.local,a.mem,{now:GNOW,today:GDAY}); assert.equal(r.kind,"server"); assert.equal(JSON.stringify(a.local),localBefore);
+  assert.equal(hub.puts().filter(n=>n==="cards_s1.json").length,1); assert.deepEqual([...r.wrote],["cards_s1.json"]);
+  assert.equal(r.mem.sha["cards_s1.json"],hub.files.get("cards_s1.json").sha); assert.equal(r.mem.sha["cards_s2.json"],undefined);
+  a.local=r.merged; a.mem=r.mem; delete hub.status["PUT cards_s2.json"]; hub.log.length=0;
+  const r2=await a.sync(); assert.equal(r2.kind,"ok"); assert.deepEqual(hub.puts(),["cards_s2.json","progress.json"]);
+});
+test("github client: results never carry the token, and fetch never follows a redirect",async()=>{
+  const hub=fakeHub(); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3)}}));
+  for(const st of [401,500,409]){ hub.status["*"]=st; const r=await a.sync(); assert.ok(!JSON.stringify(r).includes(TOKEN)); assert.ok(["auth","server","conflict"].includes(r.kind)); } hub.status={};
+  hub.files.clear(); hub.set("progress.json","{not json"); const r=await a.sync(); assert.equal(r.kind,"bad"); assert.ok(!JSON.stringify(r).includes(TOKEN));
+  for(const q of hub.log) assert.equal(q.redirect,"error");
+  assert.ok(hub.log.length>0);
 });
