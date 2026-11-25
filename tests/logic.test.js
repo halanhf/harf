@@ -6,12 +6,49 @@ const vm=require("node:vm");
 const path=require("node:path");
 const html=fs.readFileSync(path.join(__dirname,"..","index.html"),"utf8");
 const block=id=>{const m=html.match(new RegExp(`<script id="${id}">([\\s\\S]*?)</script>`));assert.ok(m,`script ${id} missing`);return m[1];};
-const ctx={module:{exports:{}}};
+const ctx={module:{exports:{}},TextEncoder,TextDecoder,atob,btoa};
 vm.createContext(ctx);
 vm.runInContext(block("logic"),ctx);
 vm.runInContext(block("data")+";this.D={LETTERS,VOWELS,SHIFTS,PAIRS,COURSE,STAGE_LEVELS,MSA,READINGS,GRAMMAR,NUMBERS};",ctx);
 const L=ctx.module.exports, D=ctx.D;
 const DAY=86400000, now=1e12;
+// the page's own state, sync and boot code, run against fakes (no browser, no network)
+const main=html.match(/<script>\r?\n\(function\(\)\{([\s\S]*?)<\/script>/)[1];
+const cut=(a,b,m=main)=>{ const i=m.indexOf(a), j=b?m.indexOf(b,i):m.lastIndexOf("})();"); assert.ok(i>=0&&j>i,`section ${a} missing`); return m.slice(i,j); };
+// the built page's inline scripts, in document order; the app script is the one with no id that holds the state section
+const builtScripts=()=>[...fs.readFileSync(path.join(__dirname,"..","docs","index.html"),"utf8").matchAll(/<script(?: id="[^"]*")?>([\s\S]*?)<\/script>/g)].map(m=>m[1]);
+const tick=async(n=12)=>{ for(let i=0;i<n;i++) await new Promise(r=>setImmediate(r)); };
+let EXPOSE="readRemote,writeRemote,pushRemote,serialize,save,flush,sync,setS:x=>{S=hydrate(x);},S:()=>S,stamps:()=>shardStamp,use:(db,uid)=>{DB=db;UID=uid;synced=true;}";
+// a minimal element tree for the panel: attributes set with setAttribute are kept apart from properties, like the real dom
+const findId=(n,id)=>!n?null:n.id===id?n:(n.children||[]).map(c=>findId(c,id)).find(Boolean)||null;
+function fakeEl(tag){ const e={tag,attrs:{},children:[],setAttribute(k,v){ e.attrs[k]=String(v); },append(...k){ e.children.push(...k); }}; Object.defineProperty(e,"textContent",{get:()=>e._t||"",set:v=>{ e._t=String(v); e.children=[]; }}); return e; }
+function loadUi(o={}){
+  const store=o.store||new Map(Object.entries(o.saved||{})); const note={hidden:true,textContent:""}; const on={}, calls=[], timers=new Map(); let tid=0;
+  const env={module:{exports:{}},TextEncoder,TextDecoder,atob,btoa,AbortController,
+    setTimeout:(f,ms)=>{ timers.set(++tid,{f,ms}); return tid; },clearTimeout:id=>{ timers.delete(id); },
+    $:s=>s==="#sync-note"?note:findId(env.rootEl,s.slice(1)),
+    localStorage:{getItem:k=>store.has(k)?store.get(k):null,setItem:(k,v)=>{ store.set(k,String(v)); },removeItem:k=>{ store.delete(k); }},
+    document:{createElement:fakeEl,visibilityState:"visible",addEventListener:(t,f)=>{ on[t]=f; }},addEventListener:(t,f)=>{ on[t]=f; },
+    window:{claude:o.claude,HARF_PWA:o.built?undefined:o.pwa},navigator:{onLine:o.online!==false},fetch:o.fetch||(()=>{ throw new Error("unexpected fetch"); }),
+    rebuild(){},refresh(){},busy:false,currentTab:"today",RENDER:{today(){ calls.push("render"); }},show(){ calls.push("show"); },
+    feedMsa(){ calls.push("msa"); if(o.feed) o.feed(env.T); },feedSentences(){ calls.push("sentences"); },afterRemoteChange(){ calls.push("changed"); },firstMergeDone(){}};
+  vm.createContext(env); let m=main;
+  if(o.built){ const sc=builtScripts(), mi=sc.findIndex(x=>x.includes("// ===== state =====")); assert.ok(mi>0); sc.slice(0,mi).forEach(x=>vm.runInContext(x,env)); m=sc[mi].match(/\(function\(\)\{([\s\S]*)/)[1]; }
+  else vm.runInContext(block("logic"),env);
+  vm.runInContext(cut("// ===== state =====","// ===== items index =====",m)+";this.T={"+EXPOSE+"};",env);
+  if(o.dom){ vm.runInContext(cut("const ap=","const arSpan=",main),env); env.rootEl=fakeEl("div"); env.renderMe=()=>{ calls.push("renderMe"); }; }
+  if(o.boot) vm.runInContext(cut("// ===== boot =====",undefined,m),env);
+  const runTimers=()=>{ const all=[...timers.values()]; timers.clear(); all.forEach(x=>x.f()); };
+  return Object.assign(env.T,{store,note,on,calls,timers,runTimers,env,fed:()=>calls.filter(c=>c==="msa"||c==="sentences")});
+}
+// a stand-in for the account store: doc(path).get()/set(), paths that can be made to fail, and a gate that holds reads back
+function fakeDb(docs={}){ const db={m:new Map(Object.entries(docs)),fail:new Set(),reads:0,gate:null};
+  db.hold=()=>{ let open; db.gate=new Promise(r=>{ open=r; }); return open; };
+  db.doc=p=>({get:async()=>{ db.reads++; if(db.gate) await db.gate; if(db.fail.has(p)) throw Object.assign(new Error("x"),{code:"unavailable"}); return {exists:db.m.has(p),data:()=>db.m.get(p)}; },
+    set:async v=>{ db.m.set(p,JSON.parse(JSON.stringify(v))); },collection:()=>({limit:()=>({get:async()=>({docs:[]})}),doc:()=>({set:async()=>{}})})});
+  return db; }
+const claudeWith=db=>({use:async n=>n==="db"?db:n==="user"?{id:async()=>"u1"}:null});
+const P="data/users/u1/", pcard=(t,r)=>[1,5,r,t+1440,0,t,-1,1];
 
 test("normalize strips vowels and unifies letter variants, including gulf letters",()=>{
   assert.equal(L.normalizeArabic("كِتَاب"),"كتاب");
@@ -176,7 +213,7 @@ test("merge: a stale copy never overwrites newer work, from either side",()=>{
 test("merge: starting over wins over older progress on other devices, but keeps work done after it",()=>{
   const R=Date.UTC(2026,2,5); const rMin=Math.floor(R/60000);
   const reset={updatedAt:R,resetAt:R,resetDay:"2026-03-05",cards:{},unitsDone:{},lastDay:"",streak:0};
-  const old={updatedAt:R+5,lastDay:"2026-03-04",streak:12,cards:{a:[1,5,3,rMin+999,0,rMin-100,-1,2],b:[1,5,1,rMin+999,0,rMin+50,-1,1]},unitsDone:{u1:"2026-03-01",u2:"2026-03-05"},custom:[{id:"c"+(R-1000).toString(36)+"abc"},{id:"c"+(R+1000).toString(36)+"abc"}]};
+  const old={updatedAt:R+5,lastDay:"2026-03-04",streak:12,cards:{a:[1,5,3,rMin+999,0,rMin-100,-1,2],b:[1,5,1,rMin+999,0,rMin+50,-1,1]},unitsDone:{u1:"2026-03-01",u2:"2026-03-06"},custom:[{id:"c"+(R-1000).toString(36)+"abc"},{id:"c"+(R+1000).toString(36)+"abc"}]};
   const m=L.mergeProgress(old,reset);
   assert.deepEqual(Object.keys(m.cards),["b"]); assert.deepEqual(Object.keys(m.unitsDone),["u2"]); assert.equal(m.streak,0); assert.equal(m.custom.length,1);
   assert.equal(m.resetAt,R);
@@ -221,7 +258,7 @@ test("merge and cleanSaved: a damaged or hostile backup never replaces good prog
   const bad={updatedAt:9e15,cards:{a:[1,5,3,"x",0,"zzz",-1,2],b:null,c:[1,2]},custom:{},unitsDone:"abc",resetAt:9e15,resetDay:"9999-12-31"};
   const clean=L.cleanSaved(bad,now,"2026-11-14");
   assert.deepEqual(Object.keys(clean.cards),[]); assert.equal(JSON.stringify(clean.unitsDone),"{}"); assert.equal(clean.resetAt,0); assert.equal(clean.resetDay,"");
-  const skew=L.cleanSaved({resetAt:now+60000,resetDay:"2026-11-15"},now,"2026-11-14"); assert.equal(skew.resetAt,now); assert.equal(skew.resetDay,"2026-11-14");
+  const skew=L.cleanSaved({resetAt:now+60000,resetDay:"2026-11-15"},now,"2026-11-14"); assert.equal(skew.resetAt,now+60000); assert.equal(skew.resetCut,now); assert.equal(skew.resetDay,"2026-11-14");
   const m=L.mergeProgress(local,clean); assert.deepEqual([...m.cards.a],good); assert.deepEqual([...m.cards.b],good);
   // even unclean, merge itself never picks a broken card or throws on a non-array word list
   const m2=L.mergeProgress(local,{cards:bad.cards,custom:{}}); assert.deepEqual([...m2.cards.a],good); assert.deepEqual([...m2.cards.b],good); assert.equal(m2.cards.c,undefined);
@@ -244,6 +281,7 @@ test("built app: no third-party requests, and the csp allows exactly its own inl
   assert.ok(scripts.length>=4);
   for(const js of scripts) assert.ok(csp.includes(`'sha256-${crypto.createHash("sha256").update(js).digest("base64")}'`),"script hash missing from csp");
   assert.match(csp,/default-src 'self'/); assert.match(csp,/object-src 'none'/);
+  assert.equal(csp.replace(/ 'sha256-[^']+'/g,""),"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'");
 });
 test("built app: an update precaches fresh files, not the previous version still in the http cache",()=>{
   const sw=fs.readFileSync(path.join(__dirname,"..","docs","sw.js"),"utf8");
@@ -405,4 +443,537 @@ test("merge: readings done on either device are kept",()=>{
 });
 test("page: every inline script parses (a syntax error anywhere blanks the whole app)",()=>{
   for(const m of html.matchAll(/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/g)) assert.doesNotThrow(()=>new vm.Script(m[1]),m[0].slice(0,40));
+});
+
+test("account read: a card group that fails to load leaves nothing marked as read, so the next save can't overwrite it",async()=>{
+  const db=fakeDb({[P+"progress"]:{updatedAt:5,shards:{s1:"a1",s2:"b1"}},[P+"cards_s1"]:{cards:{"u1.0":pcard(100,3)}},[P+"cards_s2"]:{cards:{"s2u001.0":pcard(200,3)}}});
+  const t=loadUi(); t.use(db,"u1");
+  db.fail.add(P+"cards_s2"); await assert.rejects(t.readRemote()); assert.deepEqual({...t.stamps()},{});
+  await t.pushRemote(); assert.equal(t.sync.state,"error"); assert.ok(db.m.get(P+"cards_s1").cards["u1.0"],"not rewritten while unread");
+  db.fail.clear(); await t.pushRemote();
+  assert.ok(db.m.get(P+"cards_s1").cards["u1.0"]); assert.ok(t.S().cards["u1.0"]&&t.S().cards["s2u001.0"]);
+  assert.deepEqual({...t.stamps()},{...db.m.get(P+"progress").shards});
+});
+test("merge: start over wins over everything older on a device that hadn't heard of it, the same day included",()=>{
+  const R=Date.UTC(2026,2,5,12), rMin=Math.floor(R/60000), RD="2026-03-05";
+  const fresh={updatedAt:R,resetAt:R,resetDay:RD,cards:{},unitsDone:{},lastDay:"",streak:0};
+  // the other device studied that morning, before the reset, and hasn't seen it yet
+  const stale={updatedAt:R+5,lastDay:RD,streak:12,freezes:1,reviewsToday:40,newToday:1,talks:9,msaDay:RD,
+    cards:{a:[1,5,3,rMin+999,0,rMin-100,-1,2]},unitsDone:{sounds:"2026-03-01",u1:RD},log:{[RD]:40,"2026-03-04":10},
+    rp:{u1:RD},read:{"r1-01":RD},seen:{letters:1},session:{day:RD,done:{review:1}}};
+  for(const m of [L.mergeProgress(stale,fresh),L.mergeProgress(fresh,stale)]){
+    for(const f of ["cards","unitsDone","log","rp","read","seen"]) assert.equal(JSON.stringify(m[f]),"{}",f);
+    for(const f of ["streak","freezes","reviewsToday","newToday","talks"]) assert.equal(m[f]||0,0,f);
+    assert.equal(m.lastDay,""); assert.equal(m.msaDay,""); assert.equal(m.session.day,""); assert.equal(m.resetAt,R); assert.equal(m.resetDay,RD);
+  }
+  // the device that started over then studies the same day: its own work stays
+  const after=Object.assign({},fresh,{updatedAt:R+60000,lastDay:RD,streak:1,reviewsToday:3,unitsDone:{sounds:RD},log:{[RD]:3},read:{"r1-02":RD},seen:{vowels:1},talks:1,session:{day:RD,done:{learn:1}}});
+  for(const m of [L.mergeProgress(after,stale),L.mergeProgress(stale,after)]){
+    assert.equal(m.streak,1); assert.equal(m.reviewsToday,3); assert.equal(m.log[RD],3); assert.equal(m.talks,1);
+    assert.deepEqual(Object.keys(m.unitsDone),["sounds"]); assert.deepEqual(Object.keys(m.read),["r1-02"]); assert.deepEqual(Object.keys(m.seen),["vowels"]); assert.deepEqual({...m.session.done},{learn:1});
+  }
+  // work done on the other device on later days still counts, but its streak can't reach back past the reset
+  const later=Object.assign({},stale,{lastDay:"2026-03-07",streak:14,unitsDone:{u1:RD,u2:"2026-03-06"},cards:{b:[1,5,1,rMin+9999,0,rMin+2000,-1,1]}});
+  const k=L.mergeProgress(fresh,later); assert.deepEqual(Object.keys(k.cards),["b"]); assert.deepEqual(Object.keys(k.unitsDone),["u2"]); assert.equal(k.streak,2); assert.equal(k.lastDay,"2026-03-07");
+  // two copies that both carry the reset keep everything either has
+  const p=Object.assign({},after,{unitsDone:{u3:RD}}); assert.deepEqual(Object.keys(L.mergeProgress(after,p).unitsDone).sort(),["sounds","u3"]);
+});
+test("start over: the account push replaces instead of merging, and the button asks for that",async()=>{
+  const db=fakeDb({[P+"progress"]:{updatedAt:5,lastDay:"2026-03-01",streak:4,shards:{s1:"a1"}},[P+"cards_s1"]:{cards:{"u1.0":pcard(100,3)}}});
+  const t=loadUi(); t.use(db,"u1"); await t.pushRemote(); assert.ok(t.S().cards["u1.0"]);
+  const R=Date.now(); t.setS({resetAt:R,resetDay:"2026-03-05",updatedAt:R}); const before=db.reads;
+  await t.pushRemote({replace:true});
+  assert.equal(db.reads,before,"a replace push reads nothing"); assert.deepEqual(db.m.get(P+"cards_s1"),{cards:{}}); assert.equal(db.m.get(P+"progress").resetAt,R); assert.equal(db.m.get(P+"progress").streak,0);
+});
+test("daily cards are added only after the first merge has been tried",async()=>{
+  // account configured: nothing is added until the first read has come back
+  const db=fakeDb(); const open=db.hold(); const t=loadUi({boot:true,claude:claudeWith(db)});
+  await tick(); assert.deepEqual(t.fed(),[]); open(); await tick(); assert.deepEqual(t.fed(),["msa","sentences"]);
+  // the first read fails: still added, once
+  const db2=fakeDb(); db2.fail.add(P+"progress"); const t2=loadUi({boot:true,claude:claudeWith(db2)}); await tick(); assert.deepEqual(t2.fed(),["msa","sentences"]);
+  // no remote at all, or no connection: added at once, before the first screen
+  const t3=loadUi({boot:true}); assert.deepEqual(t3.fed(),["msa","sentences"]); assert.ok(t3.calls.indexOf("sentences")<t3.calls.indexOf("show"));
+  const db4=fakeDb(); db4.hold(); const t4=loadUi({boot:true,online:false,claude:claudeWith(db4)}); assert.deepEqual(t4.fed(),["msa","sentences"]);
+  assert.match(html,/function afterRemoteChange\(\)\{ rebuild\(\); feed\(\);/);
+});
+test("github sync: what each answer from the api means",()=>{
+  const k=L.ghKind;
+  assert.equal(k("read",200),"ok"); assert.equal(k("write",201),"ok"); assert.equal(k("read",404),"missing"); assert.equal(k("write",404),"repo");
+  for(const op of ["read","write","user"]) for(const s of [401,403]) assert.equal(k(op,s),"auth");
+  assert.equal(k("user",404),"auth"); assert.equal(k("write",409),"conflict"); assert.equal(k("write",422),"conflict"); assert.equal(k("read",409),"server");
+  for(const s of [429,500,502,503,418]) assert.equal(k("read",s),"server");
+  assert.equal(k("write",0),"offline"); assert.equal(k("read",undefined),"offline");
+});
+test("github sync: the status line, and how a finished cycle changes it",()=>{
+  const t=1e12, line=L.ghLine;
+  assert.equal(line(false,{last:t},t),"Not set up");
+  assert.equal(line(true,{last:t-59000},t),"Synced just now"); assert.equal(line(true,{last:t-60000},t),"Synced 1 min ago"); assert.equal(line(true,{last:t-125000},t),"Synced 2 min ago");
+  assert.equal(line(true,{last:t+5000},t),"Synced just now"); // the clock went back
+  assert.equal(line(true,{last:t,waiting:true},t),"Offline, will sync later"); assert.equal(line(true,{last:0},t),"Offline, will sync later"); assert.equal(line(true,null,t),"Offline, will sync later");
+  const why={auth:"the token was refused",repo:"the progress repo was not found",server:"GitHub is not responding",conflict:"another device was saving at the same time",bad:"the saved progress could not be read"};
+  assert.deepEqual({...L.GH_WHY},why);
+  for(const [k,v] of Object.entries(why)) assert.equal(line(true,{last:t,waiting:true,problem:k},t),"Sync problem: "+v);
+  assert.equal(line(true,{problem:"zzz"},t),"Sync problem: GitHub is not responding");
+  const after=L.ghAfter;
+  assert.deepEqual({...after({last:5,waiting:true,problem:"server"},"ok",t)},{last:t,waiting:false,problem:""});
+  assert.deepEqual({...after({last:5,waiting:false,problem:"server"},"offline",t)},{last:5,waiting:true,problem:""});
+  assert.deepEqual({...after({last:5,waiting:true,problem:""},"auth",t)},{last:5,waiting:true,problem:"auth"});
+  assert.deepEqual({...after(null,"server",t)},{last:0,waiting:false,problem:"server"});
+});
+test("github sync: when a cycle may run, and the one-a-minute limit on saves",()=>{
+  const s={on:true,online:true,halted:false,dirty:true}, go=L.ghAllow;
+  for(const tr of ["open","online","show","hide","save","timer","manual"]) assert.equal(go(tr,s),"go",tr);
+  for(const tr of ["open","save","manual"]) assert.equal(go(tr,{...s,on:false}),"no");
+  assert.equal(go("save",{...s,online:false}),"offline"); assert.equal(go("open",{...s,online:false}),"offline"); assert.equal(go("manual",{...s,online:false}),"go");
+  assert.equal(go("online",{...s,halted:true}),"no"); assert.equal(go("save",{...s,halted:true}),"no"); assert.equal(go("manual",{...s,halted:true}),"go");
+  assert.equal(go("hide",{...s,dirty:false}),"no"); assert.equal(go("hide",{...s,dirty:false,online:false}),"no"); assert.equal(go("show",{...s,dirty:false}),"go");
+  const t=1e12; assert.equal(L.ghWait(0,t),0); assert.equal(L.ghWait(t-10000,t),50000); assert.equal(L.ghWait(t-60000,t),0); assert.equal(L.ghWait(t-3600000,t),0);
+  assert.equal(L.ghWait(t+5000,t),60000); // the clock went back: never more than a minute
+});
+test("github sync: what to fetch and what to send",()=>{
+  assert.equal(L.canon({b:1,a:{d:[2,{z:1,y:2}],c:null}}),'{"a":{"c":null,"d":[2,{"y":2,"z":1}]},"b":1}');
+  assert.equal(L.GH_META,"progress.json"); assert.equal(L.ghFile("s1"),"cards_s1.json");
+  const sha={"cards_s1.json":"x1","cards_s2.json":"y1"};
+  assert.deepEqual([...L.ghNeed({s1:"x1",s2:"y2",msa:"m1"},sha,new Set())],["s2","msa"]);
+  assert.deepEqual([...L.ghNeed({s1:"x1"},sha,new Set(["cards_s1.json","cards_own.json"]))],["s1","own"]); assert.deepEqual([...L.ghNeed({},{},null)],[]);
+  const c=[1,5,3,1000,0,900,-1,2], mem={sha,body:{"cards_s1.json":L.canon({cards:{"u1.0":c,"u1.1":c}}),"cards_s2.json":L.canon({cards:{"s2u001.0":c}})}};
+  // s1: the same cards in another order, not sent. s2: emptied by "start over", sent. msa: new, sent. own: empty and never stored, not sent
+  const ch=L.ghChanged({s1:{"u1.1":c,"u1.0":c},s2:{},msa:{"m.0":c},own:{}},mem);
+  assert.deepEqual([...ch.map(f=>f.path)],["cards_s2.json","cards_msa.json"]); assert.equal(ch[0].text,'{"cards":{}}'); assert.equal(ch[1].text,L.canon({cards:{"m.0":c}}));
+  const big=JSON.stringify({x:"قهوة ☕ "+"ab".repeat(200000)}); assert.equal(L.b64dec(L.b64enc(big)),big);
+  assert.equal(L.b64dec(Buffer.from("هلا").toString("base64").replace(/(.{2})/g,"$1\n")),"هلا"); // github wraps its base64 in newlines
+});
+
+// a stand-in for the github contents api: files with shas, the answers the app must handle, and a log of every request
+const TOKEN="github_pat_TESTTOKEN123";
+function fakeHub(files={}){
+  let n=0; const h={files:new Map(),log:[],status:{},down:false,login:"someone",before:null};
+  h.set=(p,o)=>h.files.set(p,{text:typeof o==="string"?o:JSON.stringify(o),sha:"sha"+(++n)}); for(const [p,o] of Object.entries(files)) h.set(p,o);
+  h.json=p=>JSON.parse(h.files.get(p).text); const names=m=>h.log.filter(r=>r.method===m).map(r=>r.url.split("/").pop()); h.puts=()=>names("PUT"); h.gets=()=>names("GET");
+  const res=(status,body)=>({status,ok:status<300,json:async()=>body,headers:{get:n=>(h.hdr||{})[String(n).toLowerCase()]??null}});
+  h.fetch=async(url,o={})=>{ const method=o.method||"GET"; h.log.push({url,method,headers:o.headers||{},cache:o.cache,redirect:o.redirect,keepalive:!!o.keepalive,body:o.body||""});
+    if(h.down||(h.noKeepalive&&o.keepalive)) throw new TypeError("Failed to fetch "+TOKEN);
+    const p=url.replace("https://api.github.com","");
+    if(h.before) await h.before(method,p);
+    const forced=h.status[method+" "+p.split("/").pop()]||h.status[method]||h.status["*"]; if(forced) return res(forced,{message:"no"});
+    if(p==="/user") return res(200,{login:h.login});
+    const m=/^\/repos\/([^/]+)\/harf-progress\/contents\/(.+)$/.exec(p); if(!m||m[1]!==h.login) return res(404,{message:"Not Found"});
+    const f=h.files.get(m[2]);
+    if(method==="GET") return f?res(200,{sha:f.sha,size:f.text.length,encoding:"base64",content:Buffer.from(f.text).toString("base64").replace(/(.{60})/g,"$1\n")}):res(404,{message:"Not Found"});
+    const b=JSON.parse(o.body); if(f&&!b.sha) return res(422,{message:"sha wasn't supplied"}); if(f&&b.sha!==f.sha) return res(409,{message:"does not match"});
+    h.set(m[2],Buffer.from(b.content,"base64").toString()); return res(f?200:201,{content:{sha:h.files.get(m[2]).sha}}); };
+  return h;
+}
+const GNOW=Date.UTC(2026,10,25,12), GDAY="2026-11-25", GT=Math.floor(GNOW/60000)-5000;
+const prog=o=>{ const p=L.cleanSaved(Object.assign({updatedAt:GNOW-1000,streak:1,lastDay:"2026-11-24",settings:{translit:"auto"}},o),GNOW,GDAY); return L.mergeProgress(p,p); };
+// one device: its progress, what it remembers of the store, and a sync that applies the result the way the page will
+const dev=(hub,p)=>{ const d={mem:{sha:{},body:{}},local:p,api:L.ghApi({owner:"someone",repo:"harf-progress",token:TOKEN},hub.fetch)};
+  d.sync=async opts=>{ const r=await L.ghCycle(d.api,d.local,d.mem,Object.assign({now:GNOW,today:GDAY},opts)); if(r.merged){ d.local=L.mergeProgress(d.local,r.merged); d.mem=r.mem; } return r; }; return d; };
+
+test("github cycle: the first sync writes card files then progress.json; a second with nothing new writes nothing",async()=>{
+  const hub=fakeHub(); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3),"s2u001.0":pcard(GT+1,3)},custom:[{id:"cabc123xyz",ar:"قهوة",tr:"gahwa",en:"coffee"}]}));
+  const r=await a.sync(); assert.equal(r.kind,"ok"); assert.deepEqual(hub.puts(),["cards_s1.json","cards_s2.json","progress.json"]);
+  assert.deepEqual(Object.keys(hub.json("cards_s1.json")),["cards"]); assert.deepEqual(Object.keys(hub.json("cards_s1.json").cards),["u1.0"]);
+  const meta=hub.json("progress.json"); assert.equal(meta.cards,undefined); assert.equal(meta.custom[0].ar,"قهوة");
+  assert.deepEqual(meta.shards,{s1:hub.files.get("cards_s1.json").sha,s2:hub.files.get("cards_s2.json").sha});
+  hub.log.length=0; const r2=await a.sync(); assert.equal(r2.kind,"ok"); assert.deepEqual(hub.puts(),[]); assert.deepEqual(hub.gets(),["progress.json"]);
+  // every request: github only, the token in the header only, never cached
+  for(const q of hub.log){ assert.ok(q.url.startsWith("https://api.github.com/")); assert.equal(q.headers.Authorization,"Bearer "+TOKEN); assert.ok(!q.url.includes(TOKEN)&&!q.body.includes(TOKEN)); assert.equal(q.cache,"no-store"); }
+});
+test("github cycle: two devices converge and then stop writing",async()=>{
+  const hub=fakeHub(); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3),"u1.1":pcard(GT,1)}})), b=dev(hub,prog({updatedAt:GNOW-500,cards:{"u1.1":pcard(GT+50,2),"s3u001.0":pcard(GT,1)}}));
+  await a.sync(); await b.sync(); await a.sync();
+  assert.equal(a.local.cards["u1.1"][5],GT+50); assert.ok(a.local.cards["s3u001.0"]); assert.ok(b.local.cards["u1.0"]);
+  hub.log.length=0; await b.sync(); await a.sync(); assert.deepEqual(hub.puts(),[]);
+  // a fresh page load on b (nothing remembered) reads everything once and still writes nothing
+  b.mem={sha:{},body:{}}; hub.log.length=0; await b.sync(); assert.deepEqual(hub.puts(),[]); assert.deepEqual(hub.gets().sort(),["cards_s1.json","cards_s3.json","progress.json"]);
+});
+test("github cycle: a refused write is re-read, merged and retried",async()=>{
+  const hub=fakeHub(); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3)}})); await a.sync();
+  a.local=L.mergeProgress(a.local,prog({updatedAt:GNOW,cards:{"u1.1":pcard(GT+9,1)}}));
+  // another device saves between this one's read and its write
+  let once=true; hub.before=async(method,p)=>{ if(once&&method==="PUT"&&p.endsWith("cards_s1.json")){ once=false; const d=hub.json("cards_s1.json"); d.cards["u1.2"]=pcard(GT+7,1); hub.set("cards_s1.json",d); } };
+  const r=await a.sync(); assert.equal(r.kind,"ok"); assert.deepEqual(Object.keys(hub.json("cards_s1.json").cards).sort(),["u1.0","u1.1","u1.2"]); assert.ok(a.local.cards["u1.2"]);
+});
+test("github cycle: refused three times, it gives up and keeps local work",async()=>{
+  const hub=fakeHub(); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3)}})); hub.status.PUT=409;
+  const r=await a.sync(); assert.equal(r.kind,"conflict"); assert.equal(hub.puts().length,3); assert.ok(a.local.cards["u1.0"]);
+});
+test("github cycle: a card file that fails to load means nothing is noted as read, and the next sync still merges it",async()=>{
+  const hub=fakeHub(); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3),"s2u001.0":pcard(GT,3)}})); await a.sync();
+  const b=dev(hub,prog({updatedAt:GNOW-9000,cards:{"u1.5":pcard(GT,1)}}));
+  hub.status["GET cards_s2.json"]=500; const r=await b.sync(); assert.equal(r.kind,"server"); assert.equal(r.merged,null); assert.deepEqual(b.mem,{sha:{},body:{}}); assert.equal(hub.puts().length,3);
+  delete hub.status["GET cards_s2.json"]; const r2=await b.sync(); assert.equal(r2.kind,"ok"); assert.deepEqual(Object.keys(hub.json("cards_s1.json").cards).sort(),["u1.0","u1.5"]); assert.ok(b.local.cards["s2u001.0"]);
+});
+test("github cycle: refused token, no connection, unreadable file: nothing is written and nothing leaks",async()=>{
+  const hub=fakeHub({"progress.json":"{not json"}); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3)}}));
+  assert.equal((await a.sync()).kind,"bad"); assert.equal(hub.files.get("progress.json").text,"{not json"); hub.files.clear();
+  const cfg={owner:"someone",repo:"harf-progress",token:TOKEN};
+  const big=L.ghApi(cfg,async()=>({status:200,json:async()=>({sha:"x",size:2000000,encoding:"none",content:""})})); assert.equal((await big.get("progress.json")).kind,"bad");
+  const page=L.ghApi(cfg,async()=>({status:200,json:async()=>{ throw new SyntaxError("<html>"); }})); assert.equal((await page.get("progress.json")).kind,"server"); assert.equal((await page.user()).kind,"server");
+  hub.status["*"]=401; assert.equal((await a.sync()).kind,"auth"); hub.status["*"]=403; assert.equal((await a.sync()).kind,"auth"); hub.status={};
+  hub.down=true; const r=await a.sync(); assert.equal(r.kind,"offline"); assert.ok(!JSON.stringify(r).includes(TOKEN)); assert.deepEqual(hub.puts(),[]); assert.ok(a.local.cards["u1.0"]);
+});
+test("github cycle: start over: the push replaces, and wins even from a page that has read nothing yet",async()=>{
+  const hub=fakeHub(); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3),"s2u001.0":pcard(GT,3)},unitsDone:{u1:"2026-11-20"}})); await a.sync();
+  const blank=prog({updatedAt:GNOW,resetAt:GNOW,resetDay:GDAY,streak:0,lastDay:""});
+  a.local=blank; hub.log.length=0; const r=await a.sync({replace:true}); assert.equal(r.kind,"ok"); assert.deepEqual(hub.gets(),[]);
+  assert.deepEqual(hub.json("cards_s1.json"),{cards:{}}); assert.deepEqual(hub.json("cards_s2.json"),{cards:{}}); assert.equal(hub.json("progress.json").resetAt,GNOW); assert.deepEqual(hub.json("progress.json").unitsDone,{});
+  // again, from a page that never read the store (reset pressed offline, sent later)
+  const hub2=fakeHub(); const c=dev(hub2,prog({cards:{"u1.0":pcard(GT,3)},unitsDone:{u1:"2026-11-20"}})); await c.sync();
+  const d=dev(hub2,blank); const r2=await d.sync({replace:true}); assert.equal(r2.kind,"ok"); assert.deepEqual(hub2.json("cards_s1.json"),{cards:{}}); assert.equal(hub2.json("progress.json").resetAt,GNOW); assert.deepEqual(Object.keys(d.local.cards),[]);
+  // and the device that hadn't heard of it drops its old work on its next sync
+  await c.sync(); assert.deepEqual(Object.keys(c.local.cards),[]); assert.deepEqual(Object.keys(c.local.unitsDone),[]);
+});
+test("github cycle: a card file that exists but isn't listed is merged, never overwritten",async()=>{
+  const hub=fakeHub({"cards_s1.json":{cards:{"u1.7":pcard(GT,2)}}}); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3)}}));
+  const r=await a.sync(); assert.equal(r.kind,"ok"); assert.deepEqual(Object.keys(hub.json("cards_s1.json").cards).sort(),["u1.0","u1.7"]);
+});
+test("github client: keepalive only for bodies a browser will accept",async()=>{
+  const hub=fakeHub(); const api=L.ghApi({owner:"someone",repo:"harf-progress",token:TOKEN},hub.fetch);
+  await api.put("progress.json","{}",undefined,true); await api.put("cards_s1.json",JSON.stringify({x:"a".repeat(70000)}),undefined,true);
+  assert.deepEqual(hub.log.map(q=>q.keepalive),[true,false]);
+});
+test("github cycle: a file of unknown shape is never replaced",async()=>{
+  for(const [files,why] of [[{"progress.json":{updatedAt:1,shards:{s1:"zzz"}},"cards_s1.json":{cards:"x"}},"cards string"],[{"progress.json":{updatedAt:1,shards:{s1:"zzz"}},"cards_s1.json":{cards:[]}},"cards array"],[{"progress.json":{updatedAt:1,shards:"x"}},"shards string"],[{"progress.json":{updatedAt:1,shards:[]}},"shards array"]]){
+    const hub=fakeHub(files); const before=[...hub.files].map(([p,f])=>p+f.text+f.sha).join("|"); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3)}}));
+    const r=await a.sync(); assert.equal(r.kind,"bad",why); assert.deepEqual(hub.puts(),[],why); assert.equal(r.merged,null,why); assert.equal([...hub.files].map(([p,f])=>p+f.text+f.sha).join("|"),before,why); }
+});
+test("github cycle: a write refused part-way keeps what was written and finishes the rest next time",async()=>{
+  const hub=fakeHub(); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3),"s2u001.0":pcard(GT,3)}}));
+  const localBefore=JSON.stringify(a.local); hub.status["PUT cards_s2.json"]=500;
+  const r=await L.ghCycle(a.api,a.local,a.mem,{now:GNOW,today:GDAY}); assert.equal(r.kind,"server"); assert.equal(JSON.stringify(a.local),localBefore);
+  assert.equal(hub.puts().filter(n=>n==="cards_s1.json").length,1); assert.deepEqual([...r.wrote],["cards_s1.json"]);
+  assert.equal(r.mem.sha["cards_s1.json"],hub.files.get("cards_s1.json").sha); assert.equal(r.mem.sha["cards_s2.json"],undefined);
+  a.local=r.merged; a.mem=r.mem; delete hub.status["PUT cards_s2.json"]; hub.log.length=0;
+  const r2=await a.sync(); assert.equal(r2.kind,"ok"); assert.deepEqual(hub.puts(),["cards_s2.json","progress.json"]);
+});
+test("github client: results never carry the token, and fetch never follows a redirect",async()=>{
+  const hub=fakeHub(); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3)}}));
+  for(const st of [401,500,409]){ hub.status["*"]=st; const r=await a.sync(); assert.ok(!JSON.stringify(r).includes(TOKEN)); assert.ok(["auth","server","conflict"].includes(r.kind)); } hub.status={};
+  hub.files.clear(); hub.set("progress.json","{not json"); const r=await a.sync(); assert.equal(r.kind,"bad"); assert.ok(!JSON.stringify(r).includes(TOKEN));
+  for(const q of hub.log) assert.equal(q.redirect,"manual");
+  assert.ok(hub.log.length>0);
+});
+
+// ===== the offline app syncs through github =====
+EXPOSE+=",ghSync,ghForget,ghSave,savedMsg,gh:()=>GH";
+EXPOSE+=",ghConnect,ghPanel,startOver";
+const KEY="harf-gulf-v1", CFG=JSON.stringify({owner:"someone",repo:"harf-progress",token:TOKEN});
+// a store that already holds another device's progress
+function hubWith(p){ const hub=fakeHub(); const {meta,shards}=L.splitProgress(p); const st={};
+  for(const n of L.SHARDS) if(Object.keys(shards[n]).length){ hub.set("cards_"+n+".json",{cards:shards[n]}); st[n]=hub.files.get("cards_"+n+".json").sha; }
+  hub.set("progress.json",Object.assign({},meta,{shards:st})); return hub; }
+// progress as another device running this app would have saved it (every field present)
+const saved=o=>{ const d=loadUi(); d.setS(L.cleanSaved(o,now,"2026-11-14")); return d.serialize(); };
+const study=(t,id="u1.9")=>{ const p=t.serialize(); p.cards[id]=pcard(Math.floor(Date.now()/60000),2); t.setS(p); t.save(); };
+
+test("offline app: on open the remote copy is merged before daily cards are added, and a second sync sends nothing",async()=>{
+  const hub=hubWith(saved({updatedAt:5,lastDay:"2026-03-01",streak:4,cards:{"u1.0":pcard(100,3),"m.0":pcard(200,5)}}));
+  const t=loadUi({boot:true,pwa:true,fetch:hub.fetch,saved:{[KEY+"-gh"]:CFG}});
+  assert.ok(t.calls.includes("show"),"the first screen never waits for the network"); assert.deepEqual(t.fed(),[]);
+  await tick(); assert.ok(t.S().cards["u1.0"]&&t.S().cards["m.0"]); assert.equal(t.S().streak,4); assert.deepEqual(t.fed(),["msa","sentences"]);
+  assert.equal(t.savedMsg(),"Synced just now"); assert.equal(JSON.parse(t.store.get(KEY+"-ghs")).waiting,false);
+  hub.log.length=0; await t.ghSync("manual"); assert.deepEqual(hub.puts(),[]); assert.deepEqual(hub.gets(),["progress.json"]);
+});
+test("offline app: saves while studying share one timer; going to the background sends at once, with keepalive",async()=>{
+  const hub=fakeHub(); const t=loadUi({boot:true,pwa:true,fetch:hub.fetch,saved:{[KEY+"-gh"]:CFG}}); await tick(); hub.log.length=0;
+  study(t); t.save(); t.save();
+  const pend=[...t.timers.values()]; assert.equal(pend.length,1); assert.ok(pend[0].ms>55000&&pend[0].ms<=60000,`waits ${pend[0].ms} ms`); assert.equal(hub.log.length,0);
+  t.env.document.visibilityState="hidden"; t.on.visibilitychange(); await tick();
+  assert.ok(hub.puts().includes("cards_s1.json")); assert.ok(hub.log.every(q=>q.keepalive)); assert.equal(t.timers.size,0);
+  hub.log.length=0; t.on.pagehide(); await tick(); assert.equal(hub.log.length,0,"nothing new, nothing sent");
+  // the timer path: one cycle when it fires
+  t.env.document.visibilityState="visible"; study(t,"u1.8"); assert.equal(t.timers.size,1); t.runTimers(); await tick(); assert.deepEqual(hub.puts(),["cards_s1.json","progress.json"]);
+});
+test("offline app: no connection is not an error, and the waiting state survives a reload",async()=>{
+  const hub=fakeHub(); const store=new Map([[KEY+"-gh",CFG]]); let n=0;
+  const t=loadUi({boot:true,pwa:true,online:false,store,fetch:()=>{ n++; return Promise.reject(new Error("x")); }});
+  assert.deepEqual(t.fed(),["msa","sentences"]); assert.equal(n,0); assert.equal(t.savedMsg(),"Offline, will sync later"); assert.equal(t.note.hidden,true);
+  assert.equal(JSON.parse(store.get(KEY+"-ghs")).waiting,true);
+  assert.equal(loadUi({pwa:true,online:false,store}).savedMsg(),"Offline, will sync later");
+  // a request that fails while the browser says it's online is the same state
+  hub.down=true; const t3=loadUi({boot:true,pwa:true,store,fetch:hub.fetch}); await tick(); assert.equal(t3.savedMsg(),"Offline, will sync later"); assert.equal(t3.note.hidden,true); assert.deepEqual(t3.fed(),["msa","sentences"]);
+  hub.down=false; t3.on.online(); await tick(); assert.equal(t3.savedMsg(),"Synced just now"); assert.ok(hub.files.has("progress.json"));
+});
+test("offline app: a refused token stops automatic sync, keeps progress, says so, and the token is never shown or saved elsewhere",async()=>{
+  const hub=fakeHub(); const store=new Map([[KEY+"-gh",CFG]]); const t=loadUi({boot:true,pwa:true,fetch:hub.fetch,store}); await tick();
+  study(t); hub.status["*"]=401; await t.ghSync("manual");
+  assert.equal(t.savedMsg(),"Sync problem: the token was refused"); assert.equal(t.note.hidden,false); assert.equal(t.note.textContent,"Sync problem: the token was refused. Open Progress, Sync and paste a new token.");
+  assert.ok(t.S().cards["u1.9"]); assert.ok(JSON.parse(store.get(KEY)).cards["u1.9"]);
+  hub.log.length=0; t.save(); t.runTimers(); t.on.online(); t.on.visibilitychange(); await tick(); assert.equal(hub.log.length,0,"no automatic retries");
+  for(const text of [t.note.textContent,store.get(KEY),store.get(KEY+"-ghs"),JSON.stringify(t.serialize())]) assert.ok(!text.includes(TOKEN));
+  hub.status={}; await t.ghSync("manual"); assert.equal(t.savedMsg(),"Synced just now"); assert.equal(t.note.hidden,true); assert.ok(hub.json("cards_s1.json").cards["u1.9"]);
+  for(const f of hub.files.values()) assert.ok(!f.text.includes(TOKEN));
+});
+test("claude.ai build: never talks to github, even with a stored token",async()=>{
+  const db=fakeDb(); let n=0; const t=loadUi({boot:true,claude:claudeWith(db),saved:{[KEY+"-gh"]:CFG},fetch:()=>{ n++; return Promise.reject(new Error("x")); }}); await tick();
+  assert.equal(t.gh(),null); t.save(); t.runTimers(); t.on.online(); t.on.visibilitychange(); t.on.pagehide(); await tick();
+  assert.equal(n,0); assert.ok(db.m.has(P+"progress")); assert.equal(t.savedMsg(),"Saved to your account");
+});
+test("offline app: a connection that never answers is given up on, so nothing waits on it for good",async()=>{
+  let aborted=0; const hang=(u,o)=>new Promise((_,rej)=>o.signal.addEventListener("abort",()=>{ aborted++; rej(new Error("aborted")); }));
+  const t=loadUi({boot:true,pwa:true,fetch:hang,saved:{[KEY+"-gh"]:CFG}}); await tick(); assert.ok(t.calls.includes("show")); assert.deepEqual(t.fed(),[]);
+  assert.deepEqual([...t.timers.values()].map(x=>x.ms),[30000]); t.runTimers(); await tick();
+  assert.equal(aborted,1); assert.deepEqual(t.fed(),["msa","sentences"]); assert.equal(t.savedMsg(),"Offline, will sync later");
+});
+test("offline app: disconnecting in another tab stops this one",async()=>{
+  const hub=fakeHub(); const store=new Map([[KEY+"-gh",CFG]]); const t=loadUi({boot:true,pwa:true,fetch:hub.fetch,store}); await tick();
+  store.delete(KEY+"-gh"); store.delete(KEY+"-ghs"); t.on.storage({key:KEY+"-gh",newValue:null}); assert.equal(t.gh(),null); assert.equal(t.savedMsg(),"This browser only");
+  hub.log.length=0; study(t); t.runTimers(); t.on.online(); await tick(); assert.equal(hub.log.length,0);
+});
+test("offline app: saving the connection trims the token, and refuses one that would make every request throw",()=>{
+  const store=new Map(); const t=loadUi({pwa:true,store});
+  assert.deepEqual({...t.ghSave({owner:"someone",repo:"harf-progress",token:"  "+TOKEN+"\n"})},{ok:true}); assert.deepEqual(JSON.parse(store.get(KEY+"-gh")),{owner:"someone",repo:"harf-progress",token:TOKEN}); assert.equal(t.gh().token,TOKEN);
+  t.ghForget(); assert.ok(!store.has(KEY+"-gh"));
+  for(const bad of ["","   ","git hub_pat","tok\nen","tok\ten","tokén","tok\u0000en","تو كن","tok​en"]){
+    assert.deepEqual({...t.ghSave({owner:"someone",repo:"harf-progress",token:bad})},{ok:false,kind:"auth",why:"the token was refused"},JSON.stringify(bad)); assert.ok(!store.has(KEY+"-gh"),"nothing stored"); assert.equal(t.gh(),null); }
+});
+
+// ===== fix round 1 =====
+test("built app: the installed-app flag is set before the app script reads it, so a stored connection is picked up on load",async()=>{
+  const sc=builtScripts(), flag=sc.findIndex(x=>/window\.HARF_PWA\s*=\s*true/.test(x)), app=sc.findIndex(x=>x.includes("// ===== state ====="));
+  assert.ok(flag>=0&&flag<app,`flag script ${flag}, app script ${app}`);
+  const hub=fakeHub(); const t=loadUi({built:true,boot:true,fetch:hub.fetch,saved:{[KEY+"-gh"]:CFG}});
+  assert.ok(t.gh(),"the saved connection is loaded"); await tick(); assert.ok(hub.log.length>0,"the open sync made its first request");
+});
+test("offline app: a server that sends headers and then stalls the body is given up on too",async()=>{
+  let n=0; const stall=async()=>{ n++; return {status:200,ok:true,json:()=>new Promise(()=>{})}; };
+  const t=loadUi({boot:true,pwa:true,fetch:stall,saved:{[KEY+"-gh"]:CFG}}); await tick(); assert.deepEqual(t.fed(),[]);
+  assert.deepEqual([...t.timers.values()].map(x=>x.ms),[30000],"the timeout is still running while the body is read"); t.runTimers(); await tick();
+  assert.deepEqual(t.fed(),["msa","sentences"]); assert.equal(t.savedMsg(),"Offline, will sync later");
+  const before=n, again=t.ghSync("manual"); await tick(); assert.equal(n,before+1,"a later trigger starts a new cycle"); t.runTimers(); assert.equal(await again,"offline");
+});
+function heldCycle(t,first){ const calls=[]; const orig=t.env.ghCycle; let go; t.env.ghCycle=(api,l,m,o)=>{ calls.push(o); return calls.length===1?new Promise(r=>{ go=()=>r(first||orig(api,l,m,o)); }):orig(api,l,m,o); }; return {calls,release:()=>go()}; }
+test("offline app: a start-over queued behind a running cycle is not lost to a later automatic trigger",async()=>{
+  const hub=fakeHub(); const t=loadUi({pwa:true,fetch:hub.fetch,saved:{[KEY+"-gh"]:CFG}}); const h=heldCycle(t);
+  const p=t.ghSync("open"); t.ghSync("manual",{replace:true}); t.ghSync("online"); t.ghSync("show"); h.release(); await p; await tick();
+  assert.equal(h.calls.length,2); assert.equal(h.calls[1].replace,true);
+});
+test("offline app: a refused token during a cycle stops what was queued behind it, unless it was queued by hand",async()=>{
+  const hub=fakeHub(); const t=loadUi({pwa:true,fetch:hub.fetch,saved:{[KEY+"-gh"]:CFG}}); const h=heldCycle(t,{kind:"auth",merged:null,mem:{sha:{},body:{}}});
+  const p=t.ghSync("open"); t.ghSync("online"); t.ghSync("show"); h.release(); await p; await tick();
+  assert.equal(h.calls.length,1); assert.equal(hub.log.length,0); assert.equal(t.savedMsg(),"Sync problem: the token was refused");
+  const t2=loadUi({pwa:true,fetch:hub.fetch,saved:{[KEY+"-gh"]:CFG}}); const h2=heldCycle(t2,{kind:"auth",merged:null,mem:{sha:{},body:{}}});
+  const p2=t2.ghSync("open"); t2.ghSync("online"); t2.ghSync("manual"); h2.release(); await p2; await tick(); assert.equal(h2.calls.length,2);
+});
+test("offline app: saving the connection refuses an empty owner or repo",()=>{
+  const store=new Map(); const t=loadUi({pwa:true,store});
+  for(const c of [{owner:"",repo:"harf-progress"},{owner:"  ",repo:"harf-progress"},{owner:"someone",repo:""},{owner:"someone",repo:" \n"},{owner:"someone"},{repo:"harf-progress"}]){
+    assert.deepEqual({...t.ghSave(Object.assign({token:TOKEN},c))},{ok:false,kind:"repo",why:"the progress repo was not found"},JSON.stringify(c)); assert.ok(!store.has(KEY+"-gh")); assert.equal(t.gh(),null); }
+  assert.deepEqual({...t.ghSave({owner:" someone ",repo:" harf-progress ",token:TOKEN})},{ok:true}); assert.deepEqual(JSON.parse(store.get(KEY+"-gh")),{owner:"someone",repo:"harf-progress",token:TOKEN});
+});
+
+test("connect: the owner comes from /user, the token is kept only under its own key, and a bad token or repo is not kept",async()=>{
+  const hub=fakeHub(); hub.login="a-learner"; const store=new Map(); const t=loadUi({boot:true,pwa:true,fetch:hub.fetch,store}); await tick();
+  assert.equal(t.savedMsg(),"This browser only");
+  assert.equal(await t.ghConnect("  "+TOKEN+"\n",""),"ok");
+  assert.deepEqual(JSON.parse(store.get(KEY+"-gh")),{owner:"a-learner",repo:"harf-progress",token:TOKEN}); assert.ok(hub.files.has("progress.json")); assert.equal(t.savedMsg(),"Synced just now");
+  for(const [k,v] of store) if(k!==KEY+"-gh") assert.ok(!v.includes(TOKEN),k);
+  for(const f of hub.files.values()) assert.ok(!f.text.includes(TOKEN));
+  for(const q of hub.log){ assert.ok(q.url.startsWith("https://api.github.com/")); assert.ok(!q.url.includes(TOKEN)&&!q.body.includes(TOKEN)); }
+  t.ghForget(); assert.ok(!store.has(KEY+"-gh")&&!store.has(KEY+"-ghs")); assert.equal(t.gh(),null);
+  hub.log.length=0; assert.equal(await t.ghConnect("","harf-progress"),"auth"); assert.equal(await t.ghConnect(TOKEN,"a-learner/harf-progress"),"repo"); assert.equal(await t.ghConnect("tok\u00e9n","harf-progress"),"auth"); assert.equal(hub.log.length,0);
+  hub.status["GET user"]=401; assert.equal(await t.ghConnect(TOKEN,"harf-progress"),"auth"); assert.ok(!store.has(KEY+"-gh")); hub.status={};
+  // the repo isn't there, or the token can't reach it: found out on the first write, and not kept
+  assert.equal(await t.ghConnect(TOKEN,"other-repo"),"repo"); assert.ok(!store.has(KEY+"-gh")); assert.equal(t.note.hidden,true);
+  t.env.navigator.onLine=false; assert.equal(await t.ghConnect(TOKEN,"harf-progress"),"offline"); assert.ok(!store.has(KEY+"-gh"));
+  // not the offline app: nothing happens
+  const c=loadUi({boot:true,claude:claudeWith(fakeDb()),fetch:hub.fetch}); await tick(); hub.log.length=0; assert.equal(await c.ghConnect(TOKEN,"harf-progress"),"no"); assert.equal(hub.log.length,0);
+});
+test("connect: a browser that won't store the token is told so, and nothing is kept",async()=>{
+  const hub=fakeHub(); const t=loadUi({boot:true,pwa:true,fetch:hub.fetch}); await tick();
+  t.env.localStorage.setItem=()=>{ throw new Error("full"); };
+  assert.equal(await t.ghConnect(TOKEN,"harf-progress"),"store"); assert.equal(t.gh(),null); assert.equal(hub.files.size,0);
+});
+test("sync panel: a password field outside any form, one place that names github, and a backup that is still progress only",()=>{
+  const panel=html.slice(html.indexOf("function ghPanel("),html.indexOf("// ===== items index =====")); assert.ok(panel.length>500);
+  assert.ok(!/<form\b/i.test(html)&&!/el\("form"/.test(panel)); // the csp has form-action 'none'; the chat box has its own form, the panel has none
+    assert.match(html,/select,input\[type=text\],input\[type=password\],textarea\{/);
+  assert.ok(!/console\./.test(html)); assert.equal(html.split("api.github.com").length-1,1);
+  assert.match(html,/state:serialize\(\),gen:S\.gen\}/);
+  for(const s of ["Not set up","Synced just now","Offline, will sync later","Sync problem: ","Connecting…","Disconnect","Sync now"]) assert.ok(html.includes(s),s);
+});
+
+test("sync panel: the input hints are real attributes on the built inputs, not properties",()=>{
+  const t=loadUi({pwa:true,dom:true}); const sec=t.env.rootEl; t.ghPanel(sec);
+  for(const id of ["gh-token","gh-repo"]){ const i=findId(sec,id); assert.ok(i,id); assert.equal(i.attrs.autocomplete,"off"); assert.equal(i.attrs.autocapitalize,"off"); assert.equal(i.attrs.autocorrect,"off"); assert.equal(i.attrs.spellcheck,"false"); }
+  assert.equal(findId(sec,"gh-token").type,"password"); assert.equal(findId(sec,"gh-repo").value,"harf-progress");
+  const tags=n=>[n.tag,...(n.children||[]).flatMap(c=>c&&c.tag?tags(c):[])]; assert.ok(!tags(sec).includes("form"),"the page forbids form submission, so the panel has no form");
+});
+test("disconnect stops the cycle that is running: nothing more goes out with the old token, and a reconnect syncs on its own",async()=>{
+  const OLD="github_pat_OLDTOKEN9999"; const hub=fakeHub(); let first=true, release; const gate=new Promise(r=>{ release=r; });
+  hub.before=async(m,p)=>{ if(first&&m==="GET"&&p.includes("/contents/")){ first=false; await gate; } };
+  const store=new Map([[KEY+"-gh",JSON.stringify({owner:"someone",repo:"harf-progress",token:OLD})]]);
+  const t=loadUi({boot:true,pwa:true,fetch:hub.fetch,store}); await tick();
+  const oldReqs=()=>hub.log.filter(q=>q.headers.Authorization==="Bearer "+OLD).length; assert.equal(oldReqs(),1);
+  t.ghForget(); assert.equal(await Promise.race([t.ghConnect(TOKEN,"harf-progress"),tick(30).then(()=>"joined the old run")]),"ok"); assert.ok(hub.files.has("progress.json"));
+  release(); await tick(); assert.equal(oldReqs(),1); assert.equal(t.gh().token,TOKEN); assert.equal(t.savedMsg(),"Synced just now");
+  // and with no reconnect: still nothing more
+  const hub2=fakeHub(); let rel2; const g2=new Promise(r=>{ rel2=r; }); let f2=true; hub2.before=async(m,p)=>{ if(f2&&m==="GET"&&p.includes("/contents/")){ f2=false; await g2; } };
+  const t2=loadUi({boot:true,pwa:true,fetch:hub2.fetch,store:new Map([[KEY+"-gh",CFG]])}); await tick(); const n=hub2.log.length; t2.ghForget(); rel2(); await tick(); assert.equal(hub2.log.length,n); assert.equal(t2.gh(),null);
+});
+test("another tab changing or removing the connection stops the cycle running here, and the next sync starts fresh with the new one",async()=>{
+  const OLD="github_pat_OLDTOKEN9999", NEW="github_pat_NEWTOKEN7777", cfg=tk=>JSON.stringify({owner:"someone",repo:"harf-progress",token:tk});
+  const mk=async()=>{ const hub=fakeHub(); let first=true, release; const gate=new Promise(r=>{ release=r; });
+    hub.before=async(m,p)=>{ if(first&&m==="GET"&&p.includes("/contents/")){ first=false; await gate; } };
+    const store=new Map([[KEY+"-gh",cfg(OLD)]]); const t=loadUi({boot:true,pwa:true,fetch:hub.fetch,store}); await tick();
+    return {hub,store,t,release,old:()=>hub.log.filter(q=>q.headers.Authorization==="Bearer "+OLD).length,fresh:()=>hub.log.filter(q=>q.headers.Authorization==="Bearer "+NEW).length}; };
+  // removed in another tab
+  let x=await mk(); assert.equal(x.old(),1);
+  x.store.delete(KEY+"-gh"); x.store.delete(KEY+"-ghs"); x.t.on.storage({key:KEY+"-gh",newValue:null}); x.release(); await tick();
+  assert.equal(x.old(),1,"no request with the old token after it was removed"); assert.equal(x.hub.log.length,1);
+  // changed in another tab: the held run is dropped, the next sync is a fresh cycle with the new token
+  x=await mk(); assert.equal(x.old(),1);
+  x.store.set(KEY+"-gh",cfg(NEW)); x.t.on.storage({key:KEY+"-gh",newValue:cfg(NEW)});
+  const next=x.t.ghSync("manual"); await tick(); assert.ok(x.fresh()>0,"the next sync starts at once with the new token, not by joining the old run");
+  x.release(); await next; await tick(); assert.equal(x.old(),1,"the old run sent nothing more"); assert.ok(x.hub.files.has("progress.json"));
+});
+test("connect: a failure shows on the panel that is on screen when it ends, never with the token, and clears on the next attempt",async()=>{
+  const hub=fakeHub(); let release; const gate=new Promise(r=>{ release=r; }); hub.before=async(m,p)=>{ if(p==="/user") await gate; }; hub.status["GET user"]=401;
+  const t=loadUi({pwa:true,dom:true,fetch:hub.fetch}); const sec=t.env.rootEl; t.ghPanel(sec);
+  findId(sec,"gh-token").value=TOKEN; const first=findId(sec,"gh-go").onclick();
+  sec.children=[]; t.ghPanel(sec); // the page redraws while Connect is pending
+  assert.equal(findId(sec,"gh-go").disabled,true); assert.equal(findId(sec,"gh-go").textContent,"Connecting…");
+  release(); await first; await tick();
+  assert.equal(findId(sec,"gh-line").textContent,"Sync problem: the token was refused"); assert.equal(findId(sec,"gh-go").disabled,false); assert.equal(findId(sec,"gh-go").textContent,"Connect");
+  assert.ok(!JSON.stringify(sec,(k,v)=>k==="onclick"?undefined:v).includes(TOKEN.slice(4)));
+  sec.children=[]; t.ghPanel(sec); assert.equal(findId(sec,"gh-line").textContent,"Sync problem: the token was refused"); // kept until the next try
+  hub.status={}; hub.before=null; findId(sec,"gh-token").value=TOKEN; await findId(sec,"gh-go").onclick(); assert.ok(t.gh()); assert.ok(t.calls.includes("renderMe"));
+  t.ghForget(); sec.children=[]; t.ghPanel(sec); assert.equal(findId(sec,"gh-line").textContent,"Not set up");
+});
+
+// ===== final fix wave =====
+// a card as a feed, a lesson or "add my own word" first creates it has r (reps) 1; any grade makes it 2 or more
+test("merge: a card nobody has graded since it was added never replaces one that has been graded, whatever the clocks say",()=>{
+  const T=Math.floor(now/60000), graded=[1,5,3,T-3000,0,T-3000,-1,4], fresh=[1.18,5,1,T,0,T,1,0]; // the fresh copy has the later review time
+  const mk=c=>({updatedAt:now,cards:{"m.10":c}});
+  for(const [a,b] of [[mk(graded),mk(fresh)],[mk(fresh),mk(graded)]]) assert.deepEqual(L.mergeProgress(a,b).cards["m.10"],graded);
+  // both graded: the later review wins, as before
+  const later=[1,5,4,T+9000,0,T-10,-1,6]; for(const [a,b] of [[mk(graded),mk(later)],[mk(later),mk(graded)]]) assert.deepEqual(L.mergeProgress(a,b).cards["m.10"],later);
+  // neither graded: the later one wins
+  const fresh2=[1.18,5,1,T+5,0,T-1,1,0]; for(const [a,b] of [[mk(fresh),mk(fresh2)],[mk(fresh2),mk(fresh)]]) assert.deepEqual(L.mergeProgress(a,b).cards["m.10"],fresh);
+  // start over: a graded card from before the reset does not come back, the card added after it stays
+  const R=now-60000, RD="2026-11-25", rMin=Math.floor(R/60000);
+  const before={updatedAt:R-5000,cards:{"m.10":[1,5,3,rMin-100,0,rMin-3000,-1,4]}}, after={updatedAt:R+5000,resetAt:R,resetDay:RD,cards:{"m.10":[1.18,5,1,rMin+5,0,rMin+5,1,0]}};
+  for(const [a,b] of [[before,after],[after,before]]) assert.deepEqual(L.mergeProgress(a,b).cards["m.10"],after.cards["m.10"]);
+});
+test("offline app: opening with no signal adds the day's cards, and they never reset the reviews another device made of the same words",async()=>{
+  const nowMin=Math.floor(Date.now()/60000), reviewed=id=>[3,5,3,nowMin+9000,0,nowMin-600,-1,4];
+  // the other device already added and reviewed m.10 to m.12; this one was last synced the day before
+  const hub=hubWith(saved({updatedAt:5,lastDay:"2026-03-01",streak:4,cards:{"m.10":reviewed(),"m.11":reviewed(),"m.12":reviewed()}}));
+  const feed=t=>{ const p=t.serialize(); for(const id of ["m.10","m.11","m.12"]) if(!p.cards[id]) p.cards[id]=[1.18,5,1,nowMin,0,nowMin,1,0]; t.setS(p); t.save(); };
+  const t=loadUi({boot:true,pwa:true,online:false,fetch:hub.fetch,feed,saved:{[KEY+"-gh"]:CFG}});
+  assert.deepEqual(t.fed(),["msa","sentences"]); assert.equal(t.S().cards["m.10"].r,1,"fed offline"); assert.equal(hub.log.length,0);
+  t.env.navigator.onLine=true; t.on.online(); await tick();
+  for(const id of ["m.10","m.11","m.12"]){ assert.equal(t.S().cards[id].r,3,id+" locally"); assert.equal(hub.json("cards_msa.json").cards[id][2],3,id+" in the store"); }
+  assert.equal(t.savedMsg(),"Synced just now");
+});
+test("start over with a clock that is ahead: the other device keeps the marker as sent, so its own later work the same day stays",()=>{
+  const RD="2026-11-25", R=now+300000; // the device that started over has a clock 5 minutes ahead of this one
+  const A={updatedAt:R,resetAt:R,resetDay:RD,cards:{},unitsDone:{},lastDay:"",streak:0};
+  const B0=L.cleanSaved(A,now,RD); assert.equal(B0.resetAt,R,"the marker is kept as sent"); assert.equal(B0.resetCut,now,"work from here on is not dropped"); assert.equal(B0.resetDay,RD);
+  assert.equal(L.cleanSaved(A,R+1,RD).resetCut,undefined,"a marker that isn't ahead needs no cut"); assert.equal(L.cleanSaved({resetAt:now+2*DAY,resetDay:RD},now,RD).resetAt,0,"far ahead is still junk");
+  // this device then studies, still before R on its own clock, and its copy goes back to the other one
+  const tMin=Math.floor((now+60000)/60000);
+  const B=Object.assign({},B0,{updatedAt:now+60000,lastDay:RD,streak:1,reviewsToday:2,unitsDone:{u1:RD},log:{[RD]:2},cards:{"u1.0":[1,5,2,tMin+1,0,tMin,-1,1]}});
+  for(const m of [L.mergeProgress(A,B),L.mergeProgress(B,A),L.mergeProgress(L.mergeProgress(A,B),A)]){
+    assert.equal(m.streak,1); assert.equal(m.lastDay,RD); assert.deepEqual(Object.keys(m.unitsDone),["u1"]); assert.equal(m.log[RD],2); assert.deepEqual(Object.keys(m.cards),["u1.0"]); assert.equal(m.resetAt,R); }
+  // work from before the reset (this device's clock) is still removed
+  const old={updatedAt:now-9000,lastDay:RD,streak:7,unitsDone:{u0:RD},cards:{"u1.5":[1,5,3,Math.floor(now/60000)-50,0,Math.floor(now/60000)-100,-1,2]}};
+  const k=L.mergeProgress(B0,old); assert.deepEqual(Object.keys(k.cards),[]); assert.deepEqual(Object.keys(k.unitsDone),[]);
+});
+
+// ===== final fix wave: the api client, the panel and start over =====
+const findText=(n,s)=>!n?null:n.textContent===s?n:(n.children||[]).map(c=>findText(c,s)).find(Boolean)||null;
+test("github sync: a 403 that is a rate limit is a busy server, not a refused token, and Connect keeps the token",async()=>{
+  assert.equal(L.ghKind("read",403,true),"server"); assert.equal(L.ghKind("write",403,true),"server"); assert.equal(L.ghKind("read",403),"auth"); assert.equal(L.ghKind("read",401,true),"auth");
+  const hub=fakeHub(); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3)}}));
+  hub.status["*"]=403; hub.hdr={"x-ratelimit-remaining":"0"}; assert.equal((await a.sync()).kind,"server");
+  hub.hdr={"retry-after":"60"}; assert.equal((await a.sync()).kind,"server");
+  hub.hdr={"x-ratelimit-remaining":"41"}; assert.equal((await a.sync()).kind,"auth"); hub.hdr={}; assert.equal((await a.sync()).kind,"auth");
+  hub.status={}; const store=new Map(); const t=loadUi({boot:true,pwa:true,fetch:hub.fetch,store}); await tick();
+  hub.status["GET progress.json"]=403; hub.hdr={"x-ratelimit-remaining":"0"};
+  assert.equal(await t.ghConnect(TOKEN,"harf-progress"),"server"); assert.ok(store.has(KEY+"-gh"),"the token is kept"); assert.equal(t.savedMsg(),"Sync problem: GitHub is not responding");
+  t.ghForget(); hub.hdr={}; assert.equal(await t.ghConnect(TOKEN,"harf-progress"),"auth"); assert.ok(!store.has(KEY+"-gh"),"a plain 403 still drops it");
+});
+test("github client: a repo that moved answers with a redirect, which is never followed and reads as not found",async()=>{
+  assert.equal(L.ghKind("read",301),"repo"); assert.equal(L.ghKind("write",308),"repo"); assert.equal(L.ghKind("user",301),"server");
+  const hub=fakeHub(); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3)}})); hub.status["*"]=301;
+  const r=await a.sync(); assert.equal(r.kind,"repo"); assert.ok(hub.log.length>0); for(const q of hub.log) assert.equal(q.redirect,"manual");
+  // a browser hides the status of a redirect it was told not to follow
+  const opaque=async()=>({type:"opaqueredirect",status:0,json:async()=>{ throw new Error("no body"); }});
+  const api=L.ghApi({owner:"someone",repo:"harf-progress",token:TOKEN},opaque); assert.deepEqual({...await api.get("progress.json")},{kind:"repo"}); assert.deepEqual({...await api.put("progress.json","{}")},{kind:"repo"});
+  const t=loadUi({boot:true,pwa:true,fetch:opaque,saved:{[KEY+"-gh"]:CFG}}); await tick(); assert.equal(t.savedMsg(),"Sync problem: the progress repo was not found");
+});
+test("github client: a keepalive request the browser refuses is sent again without keepalive before it counts as offline",async()=>{
+  const hub=fakeHub(); hub.noKeepalive=true; const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3)}}));
+  const r=await a.sync({keepalive:true}); assert.equal(r.kind,"ok"); assert.ok(hub.files.has("progress.json"));
+  assert.ok(hub.log.some(q=>q.keepalive)&&hub.log.some(q=>!q.keepalive));
+  hub.log.forEach((q,i)=>{ if(q.keepalive){ const n=hub.log[i+1]; assert.ok(n&&!n.keepalive&&n.url===q.url&&n.method===q.method&&n.body===q.body,"one plain retry"); } });
+  const hub2=fakeHub(); hub2.down=true; const b=dev(hub2,prog({})); assert.equal((await b.sync({keepalive:true})).kind,"offline"); assert.equal(hub2.log.length,2,"one retry, then offline");
+  // the page: going to the background still ends synced
+  const hub3=fakeHub(); hub3.noKeepalive=true; const t=loadUi({boot:true,pwa:true,fetch:hub3.fetch,saved:{[KEY+"-gh"]:CFG}}); await tick();
+  study(t); t.env.document.visibilityState="hidden"; t.on.visibilitychange(); await tick();
+  assert.equal(t.savedMsg(),"Synced just now"); assert.ok(hub3.json("cards_s1.json").cards["u1.9"]);
+});
+test("sync panel: Connect and Sync now always come back, even when the sync itself fails",async()=>{
+  const t=loadUi({pwa:true,dom:true}); const sec=t.env.rootEl; t.ghPanel(sec); let n=0; t.env.ghConnect=()=>{ n++; return Promise.reject(new Error("boom")); };
+  findId(sec,"gh-token").value=TOKEN; await findId(sec,"gh-go").onclick();
+  assert.equal(findId(sec,"gh-go").disabled,false); assert.equal(findId(sec,"gh-go").textContent,"Connect"); assert.equal(findId(sec,"gh-line").textContent,"Sync problem: GitHub is not responding"); assert.equal(findId(sec,"gh-token").value,"");
+  await findId(sec,"gh-go").onclick(); assert.equal(n,2,"a second press is not ignored");
+  const u=loadUi({pwa:true,dom:true,saved:{[KEY+"-gh"]:CFG}}); const s2=u.env.rootEl; u.ghPanel(s2); u.env.ghSync=()=>Promise.reject(new Error("boom"));
+  const btn=findText(s2,"Sync now"); assert.ok(btn); await btn.onclick({currentTarget:btn}); assert.equal(btn.disabled,false); assert.ok(u.calls.includes("renderMe"));
+});
+test("sync panel: Disconnect asks for a second tap, and the first one wears off",()=>{
+  const store=new Map([[KEY+"-gh",CFG]]); const t=loadUi({pwa:true,dom:true,store}); const sec=t.env.rootEl; t.ghPanel(sec);
+  const b=findText(sec,"Disconnect"); assert.ok(b); b.onclick(); assert.equal(b.textContent,"Tap again to disconnect"); assert.ok(t.gh()); assert.ok(store.has(KEY+"-gh"));
+  t.runTimers(); assert.equal(b.textContent,"Disconnect"); b.onclick(); assert.ok(t.gh(),"a tap after it wore off only asks again");
+  b.onclick(); assert.equal(t.gh(),null); assert.ok(!store.has(KEY+"-gh")); assert.ok(t.calls.includes("renderMe"));
+});
+test("sync panel: the connected panel shows the repo and never the token, and a refused token says what to do",async()=>{
+  const hub=fakeHub(); const store=new Map([[KEY+"-gh",CFG]]); const t=loadUi({pwa:true,dom:true,fetch:hub.fetch,store}); const sec=t.env.rootEl; t.ghPanel(sec);
+  const dump=()=>JSON.stringify(sec,(k,v)=>typeof v==="function"?undefined:v);
+  assert.ok(!dump().includes(TOKEN)&&!dump().includes(TOKEN.slice(4))); assert.ok(findText(sec,"someone/harf-progress")); assert.ok(!findId(sec,"gh-token"),"no token box while connected"); assert.equal(findId(sec,"gh-hint"),null);
+  hub.status["*"]=401; await t.ghSync("manual"); sec.children=[]; t.ghPanel(sec);
+  assert.equal(findId(sec,"gh-line").textContent,"Sync problem: the token was refused"); assert.equal(findId(sec,"gh-hint").textContent,"Press Disconnect, then paste a new token."); assert.ok(!dump().includes(TOKEN.slice(4)));
+  assert.equal(t.note.textContent,"Sync problem: the token was refused. Open Progress, Sync and paste a new token."); assert.ok(!t.note.textContent.includes("will sync when it can"));
+  const t2=loadUi({pwa:true,dom:true,fetch:hub.fetch,store:new Map([[KEY+"-gh",CFG]])}); hub.status={"*":404}; await t2.ghSync("manual");
+  assert.equal(t2.savedMsg(),"Sync problem: the progress repo was not found"); assert.equal(t2.note.textContent,"Sync problem: the progress repo was not found. Open Progress, Sync and check the repo name.");
+});
+test("start over on the offline app: the next cycle replaces what the repo holds, and the old work does not come back",async()=>{
+  const hub=fakeHub(); const t=loadUi({pwa:true,dom:true,fetch:hub.fetch,saved:{[KEY+"-gh"]:CFG}});
+  study(t); await t.ghSync("manual"); assert.deepEqual(Object.keys(hub.json("cards_s1.json").cards),["u1.9"]);
+  hub.log.length=0; t.startOver(); await tick();
+  assert.deepEqual(hub.gets(),[],"a replace reads nothing first"); assert.deepEqual(hub.json("cards_s1.json"),{cards:{}}); assert.ok(t.S().resetAt>0); assert.equal(hub.json("progress.json").resetAt,t.S().resetAt); assert.ok(t.calls.includes("renderMe"));
+  assert.deepEqual(Object.keys(t.S().cards),[]);
+});
+test("start over on the claude.ai build: the account copy is replaced, not merged",async()=>{
+  const db=fakeDb({[P+"progress"]:{updatedAt:5,lastDay:"2026-03-01",streak:4,shards:{s1:"a1"}},[P+"cards_s1"]:{cards:{"u1.0":pcard(100,3)}}});
+  const t=loadUi({dom:true}); t.use(db,"u1"); await t.pushRemote(); assert.ok(t.S().cards["u1.0"]); const before=db.reads;
+  t.startOver(); await tick(); assert.equal(db.reads,before); assert.deepEqual(db.m.get(P+"cards_s1"),{cards:{}}); assert.ok(t.S().resetAt>0); assert.equal(db.m.get(P+"progress").resetAt,t.S().resetAt);
+});
+
+// ===== second wave =====
+test("merge: a migrated old card with reps 1 but a lapse and a long interval is not 'never graded', in either order",()=>{
+  const T=Math.floor(now/60000), graded=[1,5,3,T-3000,0,T-3000,-1,4], legacy=[2,5,1,T+4000,1,T,-1,30], mk=c=>({updatedAt:now,cards:{"u1.0":c}});
+  for(const [a,b] of [[mk(graded),mk(legacy)],[mk(legacy),mk(graded)]]) assert.deepEqual(L.mergeProgress(a,b).cards["u1.0"],legacy);
+  const noStep=[1,5,1,T+1,0,T,-1,0]; for(const [a,b] of [[mk(graded),mk(noStep)],[mk(noStep),mk(graded)]]) assert.deepEqual(L.mergeProgress(a,b).cards["u1.0"],noStep);
+});
+test("start over: a damaged or hand-edited cut can't make the reset stop removing older cards",()=>{
+  const R=now-3600000, RD="2026-11-25", rMin=Math.floor(R/60000);
+  const c=L.cleanSaved({resetAt:R,resetDay:RD,resetCut:1,cards:{}},now,RD); assert.equal(c.resetAt,R); assert.equal(c.resetCut,undefined);
+  const other={updatedAt:R-9000,cards:{"u1.0":[1,5,3,rMin-30,0,rMin-60,-1,2]}};
+  for(const m of [L.mergeProgress(c,other),L.mergeProgress(other,c),L.mergeProgress({resetAt:R,resetDay:RD,resetCut:1,cards:{}},other)]) assert.deepEqual(Object.keys(m.cards),[]);
+  assert.equal(L.cleanSaved({resetAt:now+300000,resetDay:RD,resetCut:now-2*DAY},now,RD).resetCut,now,"a cut more than a day before the marker is ignored");
+});
+test("start over: two devices with the same marker time agree on the reset day, whichever copy comes first",()=>{
+  // the phone's clock is ahead: it starts over at 00:10 on the 21st; the PC hears at 23:50 on the 20th and finishes a lesson that day
+  const R=Date.UTC(2026,10,21,0,10), pcNow=R-20*60000;
+  const phone={updatedAt:R,resetAt:R,resetDay:"2026-11-21",cards:{},unitsDone:{},lastDay:"",streak:0};
+  const heard=L.cleanSaved(phone,pcNow,"2026-11-20"); assert.equal(heard.resetDay,"2026-11-20");
+  const pc=Object.assign({},heard,{updatedAt:pcNow+60000,lastDay:"2026-11-20",streak:1,unitsDone:{u1:"2026-11-20"},log:{"2026-11-20":1}});
+  const x=L.mergeProgress(phone,pc), y=L.mergeProgress(pc,phone);
+  assert.equal(JSON.stringify(x.unitsDone),'{"u1":"2026-11-20"}'); assert.equal(x.resetDay,"2026-11-20"); assert.equal(x.streak,1);
+  for(const f of ["unitsDone","resetDay","resetAt","streak","lastDay","log"]) assert.equal(JSON.stringify(y[f]),JSON.stringify(x[f]),f);
 });

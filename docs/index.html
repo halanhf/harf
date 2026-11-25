@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-5mfrMZwl0We17ExkKRei3bOM5LvSdCL2YuhrO6JAzWQ=' 'sha256-HvBY4llcNvE1m/EX6bMH9KpzHc4dGfeOX8BAF06ncDY=' 'sha256-EDnjgwpulzme1ZR5tIURKBTBdzqMWfk/TC0+Bcm6Uck=' 'sha256-vp9yiuNVlFlgqmBK0iLBTlFGjpvCVGY5xQ5q7LnFcr8='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-5mfrMZwl0We17ExkKRei3bOM5LvSdCL2YuhrO6JAzWQ=' 'sha256-Enfv6hyq399c234o4qcR1Hp/yh8FKoUffj2Dx/DrhfA=' 'sha256-WnXR1IG0CP/Ag9sP+nhyaA4iFhRilE+BwK3e2+PF1xQ=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -26,6 +26,7 @@
 </style>
 </head>
 <body>
+<script>window.HARF_PWA=true;</script>
 <meta name="claude:viewport-fit-sides" content="cover">
 <style>
 /* layout: one-column practice app. "today" is home; lessons and reviews open in a focus mode with the nav hidden.
@@ -248,7 +249,7 @@ details.grp>summary .tag{margin-left:auto}
 .msg .fix{font-size:14px;color:var(--saffron-ink);display:block;margin-top:6px}
 .compose{display:flex;gap:8px;align-items:flex-end}
 .compose textarea{flex:1;min-width:0;resize:vertical;min-height:52px}
-select,input[type=text],textarea{font:400 16px var(--ui);color:var(--ink);background:var(--card);border:1px solid var(--line-strong);border-radius:var(--r);padding:9px 12px;min-height:44px;max-width:100%}
+select,input[type=text],input[type=password],textarea{font:400 16px var(--ui);color:var(--ink);background:var(--card);border:1px solid var(--line-strong);border-radius:var(--r);padding:9px 12px;min-height:44px;max-width:100%}
 textarea{width:100%}
 .kv{display:grid;gap:0}
 .kv div{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-block:8px;font-variant-numeric:tabular-nums}
@@ -2147,22 +2148,51 @@ function cleanSaved(raw,now,todayKey){
   // day fields must be real dates: a junk one sorts after every date, so it would win every merge and stop the streak counting
   for(const f of ["lastDay","freezeUsed","msaDay"]) if(!(typeof o[f]==="string"&&(o[f]===""||isFinite(dayNum(o[f]))))) o[f]="";
   if(!o.session||typeof o.session!=="object"||!(typeof o.session.day==="string"&&isFinite(dayNum(o.session.day)))) o.session={day:"",done:{}};
-  const R=+o.resetAt; o.resetAt=R>0&&R<=now+DAY?Math.min(R,now):0; // a clock a little ahead is pulled back; a date far ahead is junk and ignored
+  // a marker from a clock a little ahead is kept as sent (so the sender still sees this copy as having heard of it), with a cut at this clock's now so work done here after it isn't removed; a date far ahead is junk and ignored, and so is a cut more than a day before the marker
+  const R=+o.resetAt, cut=Math.min(R,now,+o.resetCut>=R-DAY?+o.resetCut:Infinity); o.resetAt=R>0&&R<=now+DAY?R:0; delete o.resetCut; if(o.resetAt&&cut<R) o.resetCut=cut;
   o.resetDay=typeof o.resetDay==="string"&&o.resetAt?o.resetDay:"";
   if(todayKey&&o.resetDay>todayKey) o.resetDay=todayKey;
+  return o;
+}
+// what a "start over" at time R (ms) on day RD removes from one copy of progress (packed form); the copy is never changed.
+// a copy that hadn't heard of the reset (behind) also loses what it did on the reset day itself, since that was before the reset
+function afterReset(o,R,RD,behind){
+  o=Object.assign({},o); if(!R) return o;
+  const lastReview=c=>!Array.isArray(c)?-1:c.length===8?c[5]:c[3]-Math.round(c[1]*1440), rMin=Math.floor(R/60000);
+  const old=d=>{ d=String(d||""); return behind?d<=RD:d<RD; };
+  const pick=(x,keep)=>{ const r={}; for(const [k,v] of Object.entries(x||{})) if(keep(k,v)) r[k]=v; return r; };
+  o.cards=pick(o.cards,(k,c)=>lastReview(c)>=rMin);
+  o.suspended=pick(o.suspended,(k,v)=>Math.abs(v)>=R);
+  o.custom=(Array.isArray(o.custom)?o.custom:[]).filter(c=>c&&(parseInt(String(c.id).slice(1,-3),36)||0)>=R);
+  for(const f of ["unitsDone","rp","read"]) o[f]=pick(o[f],(k,v)=>!old(v));
+  o.log=pick(o.log,k=>!old(k));
+  if(old(o.lastDay)){ o.streak=0; o.freezes=0; o.reviewsToday=0; o.newToday=0; o.lastDay=""; o.freezeUsed=""; }
+  else if(behind) o.streak=Math.min(o.streak||0,dayNum(o.lastDay)-dayNum(RD));
+  if(o.session&&old(o.session.day)) o.session={day:"",done:{}};
+  if(old(o.msaDay)) o.msaDay="";
+  if(behind){ o.seen={}; o.talks=0; }
   return o;
 }
 // combine two saved copies of progress (packed form) so no device's work is lost: each card keeps its most recent
 // review, finished lessons and added words are unioned, and day counters come from whichever copy saw the later day
 function mergeProgress(a,b){
   a=a||{}; b=b||{};
+  // "start over" leaves a dated marker; each copy first loses what the later marker removes, then the two are combined
+  const reset=(a.resetAt||0)>=(b.resetAt||0)?a:b, R=reset.resetAt||0;
+  // the same marker time on both copies can carry two reset days (a clock that is ahead); the earlier one wins, so both devices agree whichever copy comes first
+  const RD=(a.resetAt||0)===(b.resetAt||0)&&a.resetDay&&b.resetDay?(a.resetDay<b.resetDay?a.resetDay:b.resetDay):reset.resetDay||"";
+  // cards and words made before the cut are removed; the cut is earlier than the marker only for a marker that came from a clock ahead of this one
+  const cut=Math.min(...[a,b].filter(x=>(x.resetAt||0)===R).map(x=>x.resetCut>=R-DAY?Math.min(x.resetCut,R):R));
+  a=afterReset(a,cut,RD,(a.resetAt||0)<R); b=afterReset(b,cut,RD,(b.resetAt||0)<R);
   const aNew=(a.updatedAt||0)>=(b.updatedAt||0), newer=aNew?a:b, older=aNew?b:a;
   const out=Object.assign({},older,newer);
   const keys=(x,y)=>new Set([...Object.keys(x||{}),...Object.keys(y||{})]);
   const lastReview=c=>!Array.isArray(c)?-1:c.length===8?c[5]:c[3]-Math.round(c[1]*1440);
+  // a card nobody has graded since it was added (as a feed, a finished lesson or "add my own word" makes it) has exactly 1 rep, and any grade adds one: it never replaces a graded copy, whatever the clocks say
+  const fresh=c=>c.length===8&&c[2]===1&&c[4]===0&&c[6]>=0; // and no lapse and a learning step: a migrated old card keeps its reps but has an interval
   const ok=c=>validCard(c)?c:undefined; // a broken card from a bad backup or copy must never replace a good one
   out.cards={}; for(const k of keys(a.cards,b.cards)){ const x=ok((a.cards||{})[k]), y=ok((b.cards||{})[k]); if(!x&&!y) continue;
-    out.cards[k]=!x?y:!y?x:(lastReview(x)>lastReview(y)||(lastReview(x)===lastReview(y)&&(x[2]||0)>=(y[2]||0)))?x:y; }
+    out.cards[k]=!x?y:!y?x:fresh(x)!==fresh(y)?(fresh(x)?y:x):(lastReview(x)>lastReview(y)||(lastReview(x)===lastReview(y)&&(x[2]||0)>=(y[2]||0)))?x:y; }
   out.unitsDone={}; for(const k of keys(a.unitsDone,b.unitsDone)){ const x=(a.unitsDone||{})[k], y=(b.unitsDone||{})[k]; out.unitsDone[k]=!x?y:!y?x:(x<y?x:y); }
   out.suspended={}; for(const k of keys(a.suspended,b.suspended)){ const x=+(a.suspended||{})[k]||0, y=+(b.suspended||{})[k]||0; out.suspended[k]=Math.abs(x)>=Math.abs(y)?x:y; }
   const arr=x=>Array.isArray(x)?x:[];
@@ -2174,23 +2204,12 @@ function mergeProgress(a,b){
   const day=la===lb?newer:la>lb?a:b;
   for(const f of ["streak","freezes","freezeUsed","lastDay","reviewsToday","newToday"]) out[f]=day[f];
   if(la===lb){ out.streak=Math.max(a.streak||0,b.streak||0); out.reviewsToday=Math.max(a.reviewsToday||0,b.reviewsToday||0); out.newToday=Math.max(a.newToday||0,b.newToday||0); out.freezes=Math.min(a.freezes||0,b.freezes||0); }
-  const sa=a.session||{}, sb=b.session||{};
+  const sa=Object.assign({day:"",done:{}},a.session), sb=Object.assign({day:"",done:{}},b.session);
   out.session=sa.day===sb.day?{day:sa.day,done:Object.assign({},sa.done,sb.done)}:((sa.day||"")>(sb.day||"")?sa:sb);
-  out.msaDay=(a.msaDay||"")>(b.msaDay||"")?a.msaDay:b.msaDay;
+  out.msaDay=(a.msaDay||"")>(b.msaDay||"")?a.msaDay:(b.msaDay||"");
   out.talks=Math.max(a.talks||0,b.talks||0);
   out.updatedAt=Math.max(a.updatedAt||0,b.updatedAt||0);
-  // "start over" leaves a dated marker; anything older than it, from either copy, is dropped
-  const reset=(a.resetAt||0)>=(b.resetAt||0)?a:b, R=reset.resetAt||0, RD=reset.resetDay||"";
-  out.resetAt=R; out.resetDay=RD;
-  if(R){ const rMin=Math.floor(R/60000);
-    for(const k of Object.keys(out.cards)) if(lastReview(out.cards[k])<rMin) delete out.cards[k];
-    for(const k of Object.keys(out.unitsDone)) if(String(out.unitsDone[k])<RD) delete out.unitsDone[k];
-    for(const k of Object.keys(out.suspended)) if(Math.abs(out.suspended[k])<R) delete out.suspended[k];
-    out.custom=out.custom.filter(c=>(parseInt(String(c.id).slice(1,-3),36)||0)>=R);
-    for(const f of ["log","rp"]) for(const k of Object.keys(out[f])) if((f==="log"?k:String(out[f][k]))<RD) delete out[f][k];
-    if((out.lastDay||"")<RD){ out.streak=0; out.lastDay=""; out.freezes=0; out.freezeUsed=""; out.reviewsToday=0; out.newToday=0; }
-    if((out.session&&out.session.day||"")<RD) out.session={day:"",done:{}};
-    if((out.msaDay||"")<RD) out.msaDay=""; }
+  out.resetAt=R; out.resetDay=RD; delete out.resetCut; if(R&&cut<R) out.resetCut=cut;
   return out;
 }
 // "in 10 min", "in 3 days": what a grade button will do
@@ -2215,7 +2234,120 @@ function joinProgress(meta,shards){
     for(const [k,c] of Object.entries(sh)) cards[k]=cards[k]?mergeProgress({cards:{[k]:cards[k]}},{cards:{[k]:c}}).cards[k]:c; }
   o.cards=cards; return o;
 }
-if(typeof module!=="undefined") module.exports={SHARDS,shardOf,splitProgress,joinProgress,learnDay,dueAt,validCard,validGen,cleanSaved,S_MIN,MAX_IVL,normalizeArabic,levenshtein,similarity,wordMatch,letterForms,schedule,retrievability,intervalDays,isLeech,FSRS_W,cardMode,pickOptions,soundShift,validateUnit,isHidden,stageStatus,planDay,interleave,packCard,unpackCard,MATURE_DAYS,dayNum,nextStreak,visibleStreak,mergeProgress,whenLabel};
+// github sync decisions: what an answer means, the status line, when to run, what to fetch and send (no network here)
+const GH_META="progress.json", GH_GAP=60000;
+const GH_WHY={auth:"the token was refused",repo:"the progress repo was not found",server:"GitHub is not responding",conflict:"another device was saving at the same time",bad:"the saved progress could not be read"};
+const ghFile=n=>"cards_"+n+".json";
+function canon(x){ const sort=v=>Array.isArray(v)?v.map(sort):v&&typeof v==="object"?Object.keys(v).sort().reduce((o,k)=>(o[k]=sort(v[k]),o),{}):v; return JSON.stringify(sort(x)); }
+function b64enc(text){ const b=new TextEncoder().encode(text); let s=""; for(let i=0;i<b.length;i+=8192) s+=String.fromCharCode.apply(null,b.subarray(i,i+8192)); return btoa(s); }
+function b64dec(b64){ const s=atob(String(b64).replace(/\s+/g,"")), b=new Uint8Array(s.length); for(let i=0;i<s.length;i++) b[i]=s.charCodeAt(i); return new TextDecoder().decode(b); }
+function ghKind(op,status,limited){
+  if(!status) return "offline";
+  if(status===200||status===201) return "ok";
+  if(status===403&&limited) return "server"; // a rate limit, not a refused token
+  if(status===401||status===403) return "auth";
+  if(status>=300&&status<400) return op==="user"?"server":"repo"; // a renamed or moved repo answers with a redirect
+  if(status===404) return op==="read"?"missing":op==="write"?"repo":"auth";
+  if((status===409||status===422)&&op==="write") return "conflict";
+  return "server";
+}
+function ghLine(on,st,now){
+  if(!on) return "Not set up";
+  st=st||{};
+  if(st.problem) return "Sync problem: "+(GH_WHY[st.problem]||GH_WHY.server);
+  if(st.waiting||!st.last) return "Offline, will sync later";
+  const n=Math.floor((now-st.last)/60000);
+  return n<1?"Synced just now":"Synced "+n+" min ago";
+}
+function ghAfter(st,kind,now){
+  const s=st||{last:0,waiting:false,problem:""};
+  if(kind==="ok") return {last:now,waiting:false,problem:""};
+  if(kind==="offline") return {last:s.last,waiting:true,problem:""};
+  return {last:s.last,waiting:s.waiting,problem:kind};
+}
+const ghWait=(lastRun,now)=>Math.min(GH_GAP,Math.max(0,lastRun+GH_GAP-now));
+function ghAllow(trigger,s){
+  if(!s.on) return "no";
+  if(trigger==="manual") return "go";
+  if(s.halted) return "no";
+  if(trigger==="hide"&&!s.dirty) return "no";
+  return s.online?"go":"offline";
+}
+function ghNeed(stamps,sha,force){
+  return SHARDS.filter(n=>(force&&force.has(ghFile(n)))||(stamps[n]&&stamps[n]!==sha[ghFile(n)]));
+}
+function ghChanged(shards,mem){
+  const out=[];
+  for(const n of SHARDS){ const path=ghFile(n), cards=shards[n]||{};
+    if(!Object.keys(cards).length&&!mem.sha[path]) continue;
+    const text=canon({cards}); if(text!==mem.body[path]) out.push({path,text}); }
+  return out;
+}
+// github client: one request in, one {kind,...} out; never rejects, never carries text from an exception or an answer
+const GH_API="https://api.github.com";
+function ghApi(cfg,fetchFn){
+  const repo="/repos/"+encodeURIComponent(cfg.owner)+"/"+encodeURIComponent(cfg.repo)+"/contents/";
+  async function call(op,path,method,body,keepalive){
+    const headers={Authorization:"Bearer "+cfg.token,Accept:"application/vnd.github+json"}; const init={method,headers,cache:"no-store",redirect:"manual"}; // a redirect is never followed, so the token can't go anywhere else
+    if(body!==undefined){ headers["Content-Type"]="application/json"; init.body=body; }
+    if(keepalive&&(body||"").length<60000) init.keepalive=true;
+    // a keepalive request that needs a preflight is refused by some browsers: try it once more as a plain request before calling it offline
+    let r; try{ r=await fetchFn(GH_API+path,init); }catch(e){ r=null;
+      if(init.keepalive&&!(e&&e.name==="TimeoutError")){ delete init.keepalive; try{ r=await fetchFn(GH_API+path,init); }catch(e2){ r=null; } } }
+    if(!r) return {kind:"offline"};
+    const h=r.headers, limited=!!h&&typeof h.get==="function"&&(h.get("x-ratelimit-remaining")==="0"||h.get("retry-after")!=null);
+    const kind=r.type==="opaqueredirect"?(op==="user"?"server":"repo"):ghKind(op,r.status,limited); if(kind!=="ok") return {kind};
+    let j; try{ j=await r.json(); }catch(e){ return {kind:e&&e.name==="TimeoutError"?"offline":"server"}; }
+    return j&&typeof j==="object"?{kind:"ok",j}:{kind:"server"};
+  }
+  return {
+    async user(){ const r=await call("user","/user","GET"); return r.kind!=="ok"?{kind:r.kind}:typeof r.j.login==="string"?{kind:"ok",login:r.j.login}:{kind:"server"}; },
+    async get(path,keepalive){ const r=await call("read",repo+encodeURIComponent(path),"GET",undefined,keepalive); if(r.kind!=="ok") return {kind:r.kind}; const j=r.j;
+      if(typeof j.sha!=="string"||!j.sha||typeof j.content!=="string"||(j.content===""&&j.size>0)) return {kind:"bad"};
+      try{ return {kind:"ok",sha:j.sha,text:b64dec(j.content)}; }catch(e){ return {kind:"bad"}; } },
+    async put(path,text,sha,keepalive){ const body={message:"harf sync",content:b64enc(text)}; if(sha) body.sha=sha;
+      const r=await call("write",repo+encodeURIComponent(path),"PUT",JSON.stringify(body),keepalive); if(r.kind!=="ok") return {kind:r.kind};
+      return r.j.content&&typeof r.j.content.sha==="string"?{kind:"ok",sha:r.j.content.sha}:{kind:"server"}; }
+  };
+}
+// one sync cycle: read what the store has, merge it in, write only what changed; a refused write goes round again (3 attempts)
+async function ghCycle(api,local,mem,opts){
+  opts=opts||{}; const isObj=v=>!!v&&typeof v==="object"&&!Array.isArray(v), parse=t=>{ try{ return JSON.parse(t); }catch(e){ return null; } };
+  let cur=local, read=false; const w={sha:Object.assign({},mem.sha),body:Object.assign({},mem.body)}, force=new Set(), wrote=[];
+  const end=kind=>({kind,merged:read||opts.replace?cur:null,mem:read||opts.replace?w:mem,wrote});
+  for(let att=0;att<3;att++){
+    let listed={}; const gone=new Set();
+    if(!(opts.replace&&att===0)){
+      const m=await api.get(GH_META,opts.keepalive); if(m.kind!=="ok"&&m.kind!=="missing") return end(m.kind);
+      let meta=null; if(m.kind==="ok"){ meta=parse(m.text); if(!isObj(meta)||(meta.shards!==undefined&&!isObj(meta.shards))) return end("bad"); }
+      listed=meta&&isObj(meta.shards)?meta.shards:{};
+      const need=ghNeed(listed,w.sha,force), rs=await Promise.all(need.map(n=>api.get(ghFile(n),opts.keepalive))), files={};
+      for(let i=0;i<need.length;i++){ const r=rs[i]; if(r.kind==="missing"){ gone.add(need[i]); continue; } if(r.kind!=="ok") return end(r.kind);
+        const f=parse(r.text); if(!isObj(f)||(f.cards!==undefined&&!isObj(f.cards))) return end("bad"); files[need[i]]=f; }
+      // every answer is in: only now merge and note what was read
+      const got=Object.keys(files);
+      if(meta||got.length){ const rest=Object.assign({},meta||{}); delete rest.shards; const cards={}; for(const n of got) cards[n]=isObj(files[n].cards)?files[n].cards:{};
+        cur=mergeProgress(cur,cleanSaved(joinProgress(rest,cards),opts.now,opts.today)); }
+      if(meta){ w.sha[GH_META]=m.sha; w.body[GH_META]=canon(meta); } else { delete w.sha[GH_META]; delete w.body[GH_META]; }
+      for(const n of got){ const p=ghFile(n); w.sha[p]=rs[need.indexOf(n)].sha; w.body[p]=canon(files[n]); }
+      for(const n of gone){ delete w.sha[ghFile(n)]; delete w.body[ghFile(n)]; }
+      force.clear(); read=true;
+    }
+    const {meta,shards}=splitProgress(cur); delete meta.shards; let again=false;
+    const send=async(path,text)=>{ const r=await api.put(path,text,w.sha[path],opts.keepalive);
+      if(r.kind==="ok"){ w.sha[path]=r.sha; w.body[path]=text; wrote.push(path); return null; }
+      if(r.kind==="conflict"){ force.add(path); again=true; return null; } return r.kind; };
+    for(const {path,text} of ghChanged(shards,w)){ const k=await send(path,text); if(k) return end(k); if(again) break; }
+    if(!again){
+      const stamps=Object.assign({},listed); for(const n of gone) delete stamps[n]; for(const n of SHARDS) if(w.sha[ghFile(n)]) stamps[n]=w.sha[ghFile(n)];
+      const text=canon(Object.assign({},meta,{shards:stamps}));
+      if(text!==w.body[GH_META]){ const k=await send(GH_META,text); if(k) return end(k); }
+    }
+    if(!again) return end("ok");
+  }
+  return end("conflict");
+}
+if(typeof module!=="undefined") module.exports={SHARDS,shardOf,splitProgress,joinProgress,learnDay,dueAt,validCard,validGen,cleanSaved,S_MIN,MAX_IVL,normalizeArabic,levenshtein,similarity,wordMatch,letterForms,schedule,retrievability,intervalDays,isLeech,FSRS_W,cardMode,pickOptions,soundShift,validateUnit,isHidden,stageStatus,planDay,interleave,packCard,unpackCard,MATURE_DAYS,dayNum,nextStreak,visibleStreak,mergeProgress,afterReset,whenLabel,canon,b64enc,b64dec,GH_META,GH_GAP,GH_WHY,ghFile,ghKind,ghLine,ghAfter,ghWait,ghAllow,ghNeed,ghChanged,GH_API,ghApi,ghCycle};
 </script>
 
 <script>
@@ -2284,10 +2416,10 @@ const markDone=k=>{ if(S.session.day!==today()) S.session={day:today(),done:{}};
 let DB=null, UID=null, synced=false, saveTimer=0, pushing=null, pushAgain=false, replaceNext=false;
 const sync={state:"local",msg:"This browser only"};
 if(unreadable){ const n=$("#sync-note"); n.hidden=false; n.textContent="Saved progress in this browser couldn't be read, so a copy was kept aside and the app started fresh. Import a backup from Progress if you have one."; }
-function setSync(state,msg){ sync.state=state; sync.msg=msg; const n=$("#sync-note");
-  if(state==="error"){ n.hidden=false; n.textContent=msg+" Your progress is still safe in this browser and will sync when it can."; } else if(!localFail) n.hidden=true; }
+function setSync(state,msg,tail){ sync.state=state; sync.msg=msg; const n=$("#sync-note");
+  if(state==="error"){ n.hidden=false; n.textContent=msg+(tail||" Your progress is still safe in this browser and will sync when it can."); } else if(!localFail) n.hidden=true; }
 const syncError=e=>{ const c=e&&e.code; return c==="quota_exceeded"?"Account storage is full.":c==="not_granted"||c==="forbidden"||c==="permission_denied"?"This page isn't allowed to save to your account.":`Couldn't save to your account${c?" ("+c+")":""}.`; };
-function save(){ S.updatedAt=Date.now(); persistLocal(); if(synced){ clearTimeout(saveTimer); saveTimer=setTimeout(pushRemote,1500); } }
+function save(){ S.updatedAt=Date.now(); persistLocal(); if(GH){ ghDirty=true; ghSync("save"); } if(synced){ clearTimeout(saveTimer); saveTimer=setTimeout(pushRemote,1500); } }
 const progressRef=()=>DB.doc(`data/users/${UID}/progress`);
 const shardRef=n=>DB.doc(`data/users/${UID}/cards_${n}`);
 // what this browser last read or wrote for each card group, so unchanged groups aren't fetched or rewritten
@@ -2297,10 +2429,16 @@ let shardStamp={}, shardSent={};
 async function readRemote(){
   const snap=await progressRef().get(); if(!snap.exists) return null;
   const meta=clone(snap.data()); const stamps=meta.shards&&typeof meta.shards==="object"?meta.shards:{}; delete meta.shards;
-  const shards={};
+  const shards={}, seen={};
   await Promise.all(SHARDS.filter(n=>stamps[n]&&stamps[n]!==shardStamp[n]).map(async n=>{ const d=await shardRef(n).get();
-    if(d.exists){ const o=clone(d.data()); shards[n]=o.cards&&typeof o.cards==="object"?o.cards:{}; } shardStamp[n]=stamps[n]; }));
-  return cleanIn(joinProgress(meta,shards));
+    if(d.exists){ const o=clone(d.data()); shards[n]=o.cards&&typeof o.cards==="object"?o.cards:{}; } seen[n]=stamps[n]; }));
+  return {data:cleanIn(joinProgress(meta,shards)),seen};
+}
+// a group counts as read only once all of them arrived and were merged, so a failed fetch can't let a later write overwrite what was never merged
+async function pullRemote(){
+  const r=await readRemote(); if(!r) return;
+  const changed=applyMerged(mergeProgress(serialize(),r.data)); Object.assign(shardStamp,r.seen);
+  if(changed) afterRemoteChange();
 }
 // card groups first, then the main document that points at them, so a reader never follows a stamp to an unwritten group
 async function writeRemote(){
@@ -2318,13 +2456,13 @@ function pushRemote(opts){
   if(pushing){ if(opts&&opts.replace) replaceNext=true; else pushAgain=true; return pushing; }
   pushing=(async()=>{
     try{
-      if(!(opts&&opts.replace)){ const remote=await readRemote(); if(remote&&applyMerged(mergeProgress(serialize(),remote))) afterRemoteChange(); }
+      if(!(opts&&opts.replace)) await pullRemote();
       await writeRemote(); setSync("ok","Saved to your account");
     }catch(e){ setSync("error",syncError(e)); }
   })();
   return pushing.then(()=>{ pushing=null; if(replaceNext){ replaceNext=false; pushAgain=false; return pushRemote({replace:true}); } if(pushAgain){ pushAgain=false; return pushRemote(); } });
 }
-const flush=()=>{ persistLocal(); return pushRemote(); };
+const flush=opts=>{ persistLocal(); return GH?ghSync(opts?"manual":"save",opts):pushRemote(opts); };
 function saveGenUnit(u){
   try{ localStorage.setItem(KEY+"-gen",JSON.stringify(S.gen)); }catch(e){}
   if(DB&&UID) progressRef().collection("units").doc(u.id).set(u).catch(()=>{});
@@ -2336,10 +2474,9 @@ async function setupSync(){
   let id=null; try{ id=await user.id(); }catch(e){} if(!id) return;
   DB=db; UID=id; setSync("pending","Connecting to your account…");
   try{
-    const remote=await readRemote();
-    if(remote&&applyMerged(mergeProgress(serialize(),remote))) afterRemoteChange();
+    await pullRemote();
   }catch(e){ setSync("error",syncError(e)); }
-  synced=true; await pushRemote();
+  firstMergeDone(); synced=true; await pushRemote();
   try{
     const us=await progressRef().collection("units").limit(1000).get();
     const known=new Set(S.gen.map(u=>u.id)); let added=false;
@@ -2351,10 +2488,126 @@ async function setupSync(){
 }
 // another tab or window of this app saved: merge its work in, so this tab's next save can't overwrite it.
 // merged in memory only (no write back), so two tabs never answer each other's saves in a loop
-addEventListener("storage",e=>{ if(e.key!==KEY||!e.newValue) return;
+addEventListener("storage",e=>{
+  if(e.key===KEY+"-gh"){ ghCancel(); ghLoad(); if(!GH) ghForget(); else{ ghMem={sha:{},body:{}}; ghHalted=false; ghDirty=true; } if(!busy) RENDER[currentTab](); return; }
+  if(e.key!==KEY||!e.newValue) return;
   try{ const before=sig(S), gen=S.gen; S=hydrate(mergeProgress(serialize(),cleanIn(JSON.parse(e.newValue)))); S.gen=gen; if(sig(S)!==before) afterRemoteChange(); }catch(x){} });
-document.addEventListener("visibilitychange",()=>{ if(synced) pushRemote(); });
-addEventListener("pagehide",()=>{ if(synced) pushRemote(); });
+document.addEventListener("visibilitychange",()=>{ if(synced) pushRemote(); ghSync(document.visibilityState==="hidden"?"hide":"show"); });
+addEventListener("pagehide",()=>{ if(synced) pushRemote(); ghSync("hide"); });
+addEventListener("online",()=>{ ghSync("online"); });
+
+// a reset is a dated marker, so other devices drop their older progress when they next merge instead of bringing it back
+function startOver(){ const gen=S.gen; S=blank(); S.gen=gen; S.resetAt=Date.now(); S.resetDay=today(); save(); flush({replace:true}); rebuild(); refresh(); renderMe(); }
+
+// ===== sync to github (offline app only). the same merge as the account sync, through the github contents api =====
+// GH is the saved connection; everything else here lives in memory, except the status line's state, kept so "waiting" survives a reload
+let GH=null, ghSt={last:0,waiting:false,problem:""}, ghMem={sha:{},body:{}}, ghDirty=false, ghHalted=false, ghRaised=false, ghStart=0, ghTimer=0, ghRun=null, ghAgain=null, ghCur=null, ghMsg="", ghBusy=false;
+// a refused token or a missing repo stops sync until the learner acts, so the notice says what to do instead of promising it will sync
+const GH_TAIL={auth:" Open Progress, Sync and paste a new token.",repo:" Open Progress, Sync and check the repo name."};
+function ghLoad(){
+  GH=null; ghSt={last:0,waiting:false,problem:""};
+  if(!window.HARF_PWA) return;
+  try{ const c=JSON.parse(localStorage.getItem(KEY+"-gh")||"null"), ok=v=>typeof v==="string"&&v!=="";
+    if(!c||typeof c!=="object"||!ok(c.owner)||!ok(c.repo)||!ok(c.token)) return;
+    GH={owner:c.owner,repo:c.repo,token:c.token};
+    const o=JSON.parse(localStorage.getItem(KEY+"-ghs")||"null");
+    if(o&&typeof o==="object") ghSt={last:isFinite(+o.last)?+o.last:0,waiting:o.waiting===true,problem:Object.prototype.hasOwnProperty.call(GH_WHY,o.problem)?o.problem:""};
+  }catch(e){}
+}
+ghLoad();
+function ghNote(){ try{ localStorage.setItem(KEY+"-ghs",JSON.stringify(ghSt)); }catch(e){} const n=$("#gh-line"); if(n) n.textContent=ghLine(!!GH,ghSt,Date.now()); }
+const savedMsg=()=>GH?ghLine(true,ghSt,Date.now()):sync.msg;
+// a connection that never answers is given up on, so nothing waits on it for good
+// the 30 s covers the answer's body too: it stops when the body has been read (or when the answer isn't one that gets read)
+function ghFetch(url,opts){ const ac=new AbortController(); let stop; const dead=new Promise((_,no)=>{ stop=setTimeout(()=>{ no(Object.assign(new Error("timeout"),{name:"TimeoutError"})); ac.abort(); },30000); }); dead.catch(()=>{});
+  return Promise.race([fetch(url,Object.assign({},opts,{signal:ac.signal})),dead]).then(r=>{
+    if(!(r.status>=200&&r.status<300)) clearTimeout(stop);
+    return {status:r.status,type:r.type,headers:r.headers,json:()=>Promise.race([r.json(),dead]).finally(()=>clearTimeout(stop))}; },e=>{ clearTimeout(stop); throw e; }); }
+// saves the connection once the token is fit to send: pasted text often has a stray newline or space, and a header that isn't printable ascii makes fetch throw, which would read as offline for good
+function ghSave(c){
+  const token=String(c&&c.token||"").trim();
+  if(!/^[\x21-\x7e]+$/.test(token)) return {ok:false,kind:"auth",why:GH_WHY.auth};
+  const owner=String(c.owner||"").trim(), repo=String(c.repo||"").trim(); if(!owner||!repo) return {ok:false,kind:"repo",why:GH_WHY.repo};
+  try{ localStorage.setItem(KEY+"-gh",JSON.stringify({owner,repo,token})); localStorage.removeItem(KEY+"-ghs"); }catch(e){ return {ok:false,kind:"store",why:"This browser isn't letting Harf save the token."}; }
+  ghCancel(); ghMem={sha:{},body:{}}; ghDirty=ghHalted=false; ghLoad(); return {ok:true};
+}
+// stops the cycle that is running: its next request is never sent, and a later cycle starts on its own
+function ghCancel(){ if(ghCur){ ghCur.dead=true; ghCur=null; } ghRun=null; ghAgain=null; }
+function ghForget(){
+  ghCancel();
+  try{ localStorage.removeItem(KEY+"-gh"); localStorage.removeItem(KEY+"-ghs"); }catch(e){}
+  clearTimeout(ghTimer); ghTimer=0; ghMem={sha:{},body:{}}; ghDirty=ghHalted=false; ghStart=0; ghAgain=null; ghLoad();
+  if(ghRaised){ ghRaised=false; setSync("local","This browser only"); }
+}
+// the only way a cycle starts. saves wait on one timer (at most one cycle a minute); a request that comes while one runs makes one more cycle after it
+function ghSync(trigger,opts){
+  const now=Date.now(), a=ghAllow(trigger,{on:!!GH,online:navigator.onLine!==false,halted:ghHalted,dirty:ghDirty});
+  if(a==="no") return Promise.resolve();
+  if(a==="offline"){ ghSt=ghAfter(ghSt,"offline",now); ghNote(); firstMergeDone(); return Promise.resolve("offline"); }
+  if(trigger==="save"){ if(!ghTimer&&!ghRun) ghTimer=setTimeout(()=>{ ghTimer=0; ghSync("timer"); },Math.max(1500,ghWait(ghStart,now))); return Promise.resolve(); }
+  if(ghRun){ const q=ghAgain||{hand:false,replace:false}; ghAgain={hand:q.hand||trigger==="manual",replace:q.replace||!!(opts&&opts.replace)}; return ghRun; }
+  clearTimeout(ghTimer); ghTimer=0; ghStart=now; ghDirty=false;
+  const cfg=GH, me={dead:false}; ghCur=me;
+  const send=(u,o)=>me.dead?Promise.reject(new Error("cancelled")):ghFetch(u,o);
+  ghRun=(async()=>{
+    let r; try{ r=await ghCycle(ghApi(cfg,send),serialize(),ghMem,{replace:!!(opts&&opts.replace),keepalive:trigger==="hide",now,today:today()}); }catch(e){ r={kind:"server",merged:null,mem:ghMem}; }
+    const mine=ghCur===me; if(mine){ ghRun=null; ghCur=null; } const again=mine?ghAgain:null; if(mine) ghAgain=null;
+    try{
+      if(GH===cfg&&mine){
+        const end=Date.now();
+        if(r.merged){ const changed=applyMerged(mergeProgress(serialize(),r.merged)); ghMem=r.mem; if(changed) afterRemoteChange(); }
+        ghSt=ghAfter(ghSt,r.kind,end); ghHalted=r.kind==="auth"||r.kind==="repo"; if(r.kind!=="ok") ghDirty=true;
+        if(ghHalted){ ghRaised=true; setSync("error",ghLine(true,ghSt,end)+".",GH_TAIL[r.kind]); } else if(ghRaised){ ghRaised=false; setSync("local","This browser only"); }
+        ghNote();
+      }
+    } finally { firstMergeDone(); }
+    if(again&&GH&&mine) return ghSync(again.hand||again.replace?"manual":"timer",{replace:again.replace});
+    if(GH===cfg&&mine&&r.kind==="ok"&&ghDirty) ghSync("save");
+    return r.kind;
+  })();
+  return ghRun;
+}
+
+// first connection from the panel: the owner is whoever the token belongs to. the details are kept once /user answers; a first sync that says the token or the repo is no good drops them again, any other answer (offline, server) keeps them
+async function ghConnect(token,repo){
+  if(!window.HARF_PWA) return "no";
+  token=String(token||"").trim(); repo=String(repo||"").trim()||"harf-progress";
+  if(!/^[!-~]+$/.test(token)) return "auth";
+  if(!/^[A-Za-z0-9._-]{1,100}$/.test(repo)) return "repo";
+  if(navigator.onLine===false) return "offline";
+  const u=await ghApi({owner:"",repo,token},ghFetch).user(); if(u.kind!=="ok") return u.kind;
+  const sv=ghSave({owner:u.login,repo,token}); if(!sv.ok) return sv.kind;
+  const r=await ghSync("manual"); if(r==="auth"||r==="repo") ghForget();
+  return r;
+}
+
+// the Sync block of the Progress page (the offline app only): paste a token once on each device
+function ghPanel(sec){
+  sec.append(el("h3",{style:"margin:22px 0 6px",textContent:"Sync"}));
+  if(GH){
+    sec.append(el("p",{className:"tag",id:"gh-line",role:"status",textContent:ghLine(true,ghSt,Date.now())}));
+    if(ghSt.problem==="auth") sec.append(el("p",{className:"tag",id:"gh-hint",textContent:"Press Disconnect, then paste a new token."}));
+    // disconnecting forgets a token that GitHub showed only once, so it asks for a second tap, like the reset button
+    const dis=el("button",{className:"btn small",type:"button",textContent:"Disconnect"}); let armed=0;
+    dis.onclick=()=>{ if(!armed){ dis.textContent="Tap again to disconnect"; armed=setTimeout(()=>{ armed=0; dis.textContent="Disconnect"; },4000); return; } clearTimeout(armed); armed=0; ghForget(); renderMe(); };
+    sec.append(el("p",{className:"tag",textContent:GH.owner+"/"+GH.repo}),
+      el("div",{className:"row",style:"margin-top:8px"},
+        el("button",{className:"btn small",type:"button",textContent:"Sync now",onclick:async e=>{ const b=e.currentTarget; b.disabled=true; try{ await ghSync("manual"); }catch(x){} finally{ b.disabled=false; renderMe(); } }}),dis));
+  } else {
+    const tok=el("input",{type:"password",id:"gh-token",autocomplete:"off"}), rp=el("input",{type:"text",id:"gh-repo",value:"harf-progress"});
+    // these are not all dom properties (autocorrect is not, in some browsers it is a boolean), so they are set as attributes
+    for(const i of [tok,rp]) for(const [k,v] of [["autocomplete","off"],["autocapitalize","off"],["autocorrect","off"],["spellcheck","false"]]) i.setAttribute(k,v);
+    const line=el("p",{className:"tag",id:"gh-line",role:"status",textContent:ghMsg||ghLine(false)});
+    // the outcome is kept in ghMsg and written to whichever panel is on screen when the attempt ends
+    const go=el("button",{className:"btn primary small",id:"gh-go",type:"button",textContent:ghBusy?"Connecting…":"Connect",disabled:ghBusy,onclick:async()=>{ if(ghBusy) return; ghBusy=true; ghMsg=""; go.disabled=true; go.textContent="Connecting…"; line.textContent=ghLine(false);
+      let k; try{ k=await ghConnect(tok.value,rp.value); }catch(e){ k="server"; } finally{ tok.value=""; ghBusy=false; }
+      if(GH){ ghMsg=""; renderMe(); return; }
+      ghMsg=k==="offline"?"You're offline. Connect to the internet, then try again.":k==="store"?"This browser isn't letting Harf save the token.":"Sync problem: "+(GH_WHY[k]||GH_WHY.server);
+      const l=$("#gh-line"), b=$("#gh-go"); if(l) l.textContent=ghMsg; if(b){ b.disabled=false; b.textContent="Connect"; } }});
+    sec.append(el("p",{className:"tag",style:"max-width:62ch",textContent:"Keeps this device in step with your others through a private GitHub repo that only you can read. Paste an access token once on each device; the steps are in the README."}),line,
+      el("div",{className:"setting"},el("label",{htmlFor:"gh-token",textContent:"Access token"}),tok),el("div",{className:"setting"},el("label",{htmlFor:"gh-repo",textContent:"Repo"}),rp),go);
+  }
+}
 
 // ===== items index =====
 let ITEMS={}, UNITS=[], ITEM_UNIT={};
@@ -2660,7 +2913,7 @@ function renderToday(){
     list.append(s.avail&&!s.done?el("button",{className:cls,type:"button",onclick:s.run},inner):el("div",{className:cls},inner)); });
   sec.append(list);
   const nm=Object.keys(S.cards).length;
-  if(nm) sec.append(el("p",{className:"tag",style:"margin-top:14px",textContent:`${nm} phrases in rotation · ${Object.values(S.cards).filter(c=>c.i>=MATURE_DAYS).length} known for a week or more · ${sync.msg}`}));
+  if(nm) sec.append(el("p",{className:"tag",style:"margin-top:14px",textContent:`${nm} phrases in rotation · ${Object.values(S.cards).filter(c=>c.i>=MATURE_DAYS).length} known for a week or more · ${savedMsg()}`}));
 }
 
 // ===== lesson: listen → phrases → quick check =====
@@ -3247,7 +3500,7 @@ function renderMe(){
     el("h3",{style:"margin:22px 0 8px",textContent:"Last 12 weeks"}),heatmap(),
     el("h3",{style:"margin:22px 0 8px",textContent:"Reviews coming up"}),forecastBars());
   const kv=el("div",{className:"kv",style:"margin-top:18px"});
-  [["Stage",`${st} · ${STAGE_NAMES[st]}`],["Gulf phrases in rotation",gulf],["Fuṣḥā words in rotation",cards.length-gulf],["Lessons done",lessonsDone()],["Reviews today",S.lastDay===today()?S.reviewsToday:0],["Conversations",S.talks||0],["Streak freezes (one per 7 days, hold 2)",S.freezes||0],["Progress saved",sync.msg]]
+  [["Stage",`${st} · ${STAGE_NAMES[st]}`],["Gulf phrases in rotation",gulf],["Fuṣḥā words in rotation",cards.length-gulf],["Lessons done",lessonsDone()],["Reviews today",S.lastDay===today()?S.reviewsToday:0],["Conversations",S.talks||0],["Streak freezes (one per 7 days, hold 2)",S.freezes||0],["Progress saved",savedMsg()]]
     .forEach(([a,b])=>kv.append(el("div",{},el("span",{textContent:a}),el("b",{textContent:String(b)}))));
   sec.append(kv);
   if(DB) sec.append(el("div",{className:"row",style:"margin-top:8px"},el("button",{className:"btn small",type:"button",textContent:"Sync now",onclick:async e=>{ const b=e.currentTarget; b.disabled=true; await pushRemote(); renderMe(); }})));
@@ -3270,7 +3523,8 @@ Return ONLY JSON: {"hook": one or two sentences in English, "example_ar", "examp
   const pwa=!!window.HARF_PWA;
   sec.append(el("h3",{style:"margin:22px 0 6px",textContent:"Phone and computer"}),el("p",{className:"tag",style:"max-width:62ch",textContent:DB
     ?"Open this same page on your phone (claude.ai in the browser, or the Claude app) and sign in to the same account: your progress follows you. Speaking practice and the Claude voice work in Chrome or Edge on a computer or Android; on iPhone and in the Claude apps, say answers aloud and compare."
-    :pwa?(standalone()?"This installed app keeps progress on this device. To move it, use Export backup here and Import backup on the other device."
+    :pwa?(GH?"This app syncs with your other devices through your private GitHub repo whenever it has a connection. Export backup still gives you a file of your own."
+      :standalone()?"This installed app keeps progress on this device. To move it, use Export backup here and Import backup on the other device."
       :"Progress here stays in this browser. To move it, use Export backup here and Import backup on the other device.")
     :"Progress here stays in this browser. The claude.ai version syncs across devices; use Export and Import backup to move progress between them."}));
   // the offline copy can go on the home screen or the taskbar: the browser's own install button where there is one, the steps where there isn't
@@ -3279,6 +3533,7 @@ Return ONLY JSON: {"hook": one or two sentences in English, "example_ar", "examp
     else sec.append(el("p",{className:"tag",style:"max-width:62ch;margin-top:6px",textContent:/iPhone|iPad|iPod/.test(navigator.userAgent)
       ?"To add it to your home screen: Share, then Add to Home Screen. The home screen app keeps its own progress, separate from Safari, so add it before you start or move your progress across with a backup."
       :"To install it, open Chrome or Edge's menu and look for Install (on Android: Install and create shortcut). It then opens in its own window and works offline."})); }
+  if(pwa) ghPanel(sec);
   sec.append(el("h2",{style:"margin-top:26px",textContent:"Settings"}));
   const select=(id,label,opts,val,onch)=>{ const s=el("select",{id}); opts.forEach(([v,l])=>s.append(el("option",{value:String(v),textContent:l,selected:String(val)===String(v)}))); s.onchange=()=>onch(s.value); return el("div",{className:"setting"},el("label",{htmlFor:id,textContent:label}),s); };
   sec.append(select("set-translit","Pronunciation lines",[["auto","Fade out as I level up"],["always","Always show"],["tap","Show on tap"],["never","Never show"]],S.settings.translit,v=>{ S.settings.translit=v; save(); }),
@@ -3304,9 +3559,9 @@ Return ONLY JSON: {"hook": one or two sentences in English, "example_ar", "examp
       const gen=Array.isArray(o.gen)?o.gen.filter(validGen):[]; const state=cleanIn(o.state);
       const n=Object.keys(state.cards).length, bad=Object.keys(o.state.cards).length-n;
       // a backup made after "start over" on another device carries that reset: say what it will remove before it does
-      const lost=state.resetAt>(S.resetAt||0)?Object.values(S.cards).filter(c=>c.t<state.resetAt).length:0;
+      const merged=mergeProgress(serialize(),state), lost=state.resetAt>(S.resetAt||0)?Object.keys(S.cards).filter(k=>!merged.cards[k]).length:0;
       // and the other way round: "start over" here, after the backup was made, drops its older cards when they merge. say so, never a silent no-op
-      const merged=mergeProgress(serialize(),state), gone=Object.keys(state.cards).filter(k=>!merged.cards[k]).length;
+      const gone=Object.keys(state.cards).filter(k=>!merged.cards[k]).length;
       bmsg.textContent=""; ap(bmsg,el("p",{textContent:`Backup${o.saved?" from "+String(o.saved).slice(0,10):""}: ${n} cards, ${Object.keys(state.unitsDone).length} lessons${bad?` (${bad} damaged card${bad>1?"s":""} skipped)`:""}. It's combined with what's here: each card keeps its most recent review.`}),
         lost?el("p",{className:"notice warn",textContent:`This backup was made after “Start over” on ${state.resetDay||"another device"}, so ${lost} card${lost>1?"s":""} here from before then will be removed.`}):null,
         gone?el("p",{className:"notice warn",textContent:`You chose “Start over” on ${merged.resetDay||"a later day"}, after this backup was made, so ${gone===n?"none of its cards will":`${gone} of its cards won't`} come back. Start over can't be undone with a backup.`}):null,
@@ -3320,25 +3575,30 @@ Return ONLY JSON: {"hook": one or two sentences in English, "example_ar", "examp
   if(hidden.length) sec.append(el("div",{className:"setting"},el("span",{textContent:"Cards you hid"}),el("button",{className:"btn small",type:"button",textContent:`Restore ${hidden.length} hidden card${hidden.length>1?"s":""}`,onclick:()=>{ hidden.forEach(k=>S.suspended[k]=-Date.now()); save(); renderMe(); }})));
   const r1=el("button",{className:"btn small danger",type:"button",textContent:"Reset all progress"}); const r2=el("button",{className:"btn small danger",type:"button",hidden:true,textContent:"Tap again to erase everything"});
   r1.onclick=()=>{ r2.hidden=false; r1.hidden=true; setTimeout(()=>{ if(r2.isConnected){ r2.hidden=true; r1.hidden=false; } },5000); };
-  // a reset is a dated marker, so other devices drop their older progress when they next merge instead of bringing it back
-  r2.onclick=()=>{ const gen=S.gen; S=blank(); S.gen=gen; S.resetAt=Date.now(); S.resetDay=today(); save(); flush(); rebuild(); refresh(); renderMe(); };
+  r2.onclick=startOver;
   sec.append(el("h3",{style:"margin:26px 0 4px;color:var(--bad)",textContent:"Danger zone"}),el("div",{className:"setting"},el("span",{textContent:"Start over, on every device (keeps written lessons)"}),el("div",{className:"row"},r1,r2)));
 }
 
 // ===== boot =====
-function afterRemoteChange(){ rebuild(); feedMsa(); feedSentences(); refresh(); if(!busy) RENDER[currentTab](); }
+// the day's new cards are stamped with the current time, so they are added only once the first merge has been tried
+let merged=false;
+function feed(){ if(merged){ feedMsa(); feedSentences(); } }
+function firstMergeDone(){ if(merged) return; merged=true; feed(); refresh(); if(!busy) RENDER[currentTab](); }
+function hasRemote(){ return !!(window.claude&&window.claude.use)||!!GH; }
+function afterRemoteChange(){ rebuild(); feed(); refresh(); if(!busy) RENDER[currentTab](); }
 async function setupCaps(){
   if(!window.claude||!window.claude.use) return;
   const [s,d,t]=await Promise.all(["sample","dictation","tts"].map(n=>window.claude.use(n).catch(()=>null)));
   if(s) SAMPLE=s; if(d) setupDictation(d); if(t){ TTS=t; pickVoices(); }
   if(!busy&&(s||d||t)) RENDER[currentTab]();
 }
-feedMsa(); feedSentences(); show("today"); setupSync(); setupCaps();
+if(!hasRemote()||navigator.onLine===false) firstMergeDone();
+const afterSetup=()=>{ if(!GH) firstMergeDone(); };
+show("today"); ghSync("open"); setupSync().then(afterSetup,afterSetup); setupCaps();
 })();
 </script>
 <script>
 // installed-app extras: offline support and asking the browser not to clear progress
-window.HARF_PWA=true;
 if("serviceWorker" in navigator) addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
 if(navigator.storage&&navigator.storage.persist) navigator.storage.persist().catch(()=>{});
 </script>
