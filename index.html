@@ -143,7 +143,7 @@ button.say{background:none;border:0;color:var(--ink);cursor:pointer;padding:0 8p
 .words .miss{border-bottom-color:var(--bad);background:color-mix(in srgb,var(--bad) 10%,transparent)}
 .options{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%}
 .options .btn{min-height:56px;flex-direction:column;gap:0;transition:background-color .15s,border-color .15s}
-.options .btn .ar{font-size:26px;line-height:1.5}
+.options .btn .ar{font-size:26px;line-height:1.5} .options.har .btn .ar{line-height:1.8}
 .options .btn.right{border-color:var(--good);background:color-mix(in srgb,var(--good) 14%,var(--card))}
 .options .btn.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 12%,var(--card))}
 .options .btn.right::after{content:"✓";color:var(--good);font-weight:600}
@@ -152,7 +152,7 @@ button.say{background:none;border:0;color:var(--ink);cursor:pointer;padding:0 8p
 .built{direction:rtl;min-height:60px;justify-content:center;border-bottom:2px solid var(--line);width:100%;padding-bottom:8px}
 .built:empty::before{content:"Tap the words in order. Arabic starts on the right →";direction:ltr;font-size:14px;color:var(--muted);align-self:center}
 .built.ok{border-bottom-color:var(--good)} .built.no{border-bottom-color:var(--bad)}
-.wtile{font:400 24px/1.8 var(--ar)!important;min-width:48px;min-height:48px}
+.wtile{font:400 24px/1.4 var(--ar)!important;min-width:48px;min-height:48px} .wtile.har{font:400 24px/1.8 var(--ar)!important}
 .wtile.right{border-color:var(--good)} .wtile.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 10%,var(--card))}
 .more{width:100%;text-align:left}
 .more .row{justify-content:center;padding-bottom:8px}
@@ -2947,7 +2947,7 @@ function openLesson(u,onDone){
       if(!f.alive()) return; body.textContent=""; if(q>=order.length) return finish();
       f.progress(1+u.items.length+q,steps); const hv=harOn();
       const it=u.items[order[q]]; const opts=pickOptions(it.ar,u.items.map(x=>x.ar),4);
-      const box=el("div",{className:"options"}); const fb=el("p",{className:"feedback",role:"status"}); const acts=el("div",{className:"actions"});
+      const box=el("div",{className:"options"+(hv?" har":"")}); const fb=el("p",{className:"feedback",role:"status"}); const acts=el("div",{className:"actions"});
       const go=()=>{ if(f.alive()&&body.contains(box)){ q++; ask(); } };
       opts.forEach(o=>box.append(el("button",{className:"btn",type:"button",lang:"ar",onclick:e=>{
         if(box.dataset.done) return; box.dataset.done="1"; const ok=o===it.ar; if(ok) right++; else missed.add(order[q]);
@@ -3055,7 +3055,7 @@ function startReview(onDone){
       // tap the words in order; building it yourself beats reading it (desirable difficulty)
       const target=tilesOf(it.ar); const shownT=tilesOf(shownAr(it,hv)); const pool=target.map((w,i)=>({w,s:shownT.length===target.length?shownT[i]:w,i})).sort(()=>Math.random()-0.5);
       const built=el("div",{className:"row built",lang:"ar"}); const bank=el("div",{className:"row center",style:"direction:rtl"});
-      const tile=(o,where)=>el("button",{className:"btn wtile",type:"button",lang:"ar",textContent:o.s,onclick:e=>{ if(stage.dataset.checked) return; const to=where===bank?built:bank; to.append(tile(o,to)); e.currentTarget.remove(); }});
+      const tile=(o,where)=>el("button",{className:"btn wtile"+(hv?" har":""),type:"button",lang:"ar",textContent:o.s,onclick:e=>{ if(stage.dataset.checked) return; const to=where===bank?built:bank; to.append(tile(o,to)); e.currentTarget.remove(); }});
       pool.forEach(o=>bank.append(tile(o,bank)));
       const fb=el("p",{className:"feedback",role:"status"});
       const check=el("button",{className:"btn primary wide",type:"button",textContent:"Check"});

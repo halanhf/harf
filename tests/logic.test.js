@@ -1132,6 +1132,20 @@ test("harakat: build-the-sentence tiles show the marks, but the check compares t
   const sc=loadScreens({harakat:"always",stage:1}); const body=reviewOf(sc,"u1.s0",sc.card(-1,3,6)); const bank=()=>walk(body).filter(n=>/wtile/.test(n.className)&&/center/.test(n.parent.className));
   press(bank().find(n=>txt(n)==="السَّلَامَة")); press(bank().find(n=>txt(n)==="مَعْ")); press(byText(body,"Check")); assert.ok(/\bno\b/.test(walk(body).find(n=>/\bbuilt\b/.test(n.className)).className));
 });
+test("harakat: the taller line is used only while marks are shown (tiles and quick-check options)",()=>{
+  assert.ok(/\.wtile\{font:400 24px\/1\.4 /.test(html),"tiles keep their old line height by default");
+  assert.ok(/\.wtile\.har\{font:400 24px\/1\.8 /.test(html),"the taller line is on .wtile.har");
+  assert.ok(/\.options \.btn \.ar\{font-size:26px;line-height:1\.5\}/.test(html)&&/\.options\.har \.btn \.ar\{[^}]*line-height:1\.8/.test(html));
+  for(const [hk,on] of [["always",true],["never",false]]){
+    const sc=loadScreens({harakat:hk,stage:1}); const body=reviewOf(sc,"u1.s0",sc.card(-1,3,6));
+    const tiles=walk(body).filter(n=>/wtile/.test(n.className)); assert.equal(tiles.length,2);
+    for(const t of tiles) assert.equal(/\bhar\b/.test(t.className),on,hk+" tile: "+t.className);
+    const sc2=loadScreens({harakat:hk,stage:1}); sc2.env.openLesson(UNIT); press(byText(sc2.spy.view.body,"Learn the phrases →"));
+    for(let k=0;k<4;k++) press(byText(sc2.spy.view.body,k<3?"Next →":"Quick check →"));
+    const opt=walk(sc2.spy.view.body).find(n=>n.attrs["data-ar"]!==undefined); assert.ok(opt);
+    assert.equal(/\bhar\b/.test(opt.parent.className),on,hk+" options: "+opt.parent.className);
+  }
+});
 test("harakat: tiles fall back to the plain words when the vowelled form splits into a different number of words",()=>{
   const sc=loadScreens({harakat:"always",stage:1}); sc.items["u1.s0"].arv="مَعْالسَّلَامَة";
   const body=reviewOf(sc,"u1.s0",sc.card(-1,3,6)); assert.deepEqual(walk(body).filter(n=>/wtile/.test(n.className)).map(txt).sort(),["السلامة","مع"].sort());
