@@ -11,43 +11,50 @@
     "A",
     "شو تسوي كل يوم؟",
     "shu tsawwi kill yōm?",
-    "What do you do every day?"
+    "What do you do every day?",
+    "شُو تْسَوِّي كِلّْ يَوْمْ؟"
    ],
    [
     "B",
     "الصبح أدرس، والعصر أشتغل",
     "iṣ-ṣubḥ adris, w il-ʿaṣir ashtaghil",
-    "In the morning I study, and in the afternoon I work."
+    "In the morning I study, and in the afternoon I work.",
+    "الصُّبْحْ أَدْرِسْ، وْالْعَصِرْ أَشْتَغِلْ"
    ],
    [
     "A",
     "ومتى ترجع البيت؟",
     "w mita tirjaʿ il-bēt?",
-    "And when do you get home?"
+    "And when do you get home?",
+    "وْمِتَى تِرْجَعْ الْبَيْتْ؟"
    ],
    [
     "B",
     "أرجع بالمترو بعد الدوام، وأطبخ عشا",
     "arjaʿ bil-mitrō baʿd id-dawām, w aṭbakh ʿasha",
-    "I get back on the metro after work and cook dinner."
+    "I get back on the metro after work and cook dinner.",
+    "أَرْجَعْ بِالْمِتْرَوْ بَعْدْ الدَّوَامْ، وْأَطْبَخْ عَشَا"
    ],
    [
     "A",
     "وما تلعب كورة؟",
     "w ma tilʿab kūra?",
-    "And don't you play football?"
+    "And don't you play football?",
+    "وْمَا تِلْعَبْ كُورَة؟"
    ],
    [
     "B",
     "ألعب، بس مب كل يوم",
     "alʿab, bas mub kill yōm",
-    "I do, but not every day."
+    "I do, but not every day.",
+    "أَلْعَبْ، بَسْ مُبْ كِلّْ يَوْمْ"
    ],
    [
     "A",
     "أنا دوم ألعب يوم الجمعة، قريب منك. تعال!",
     "ana dōm alʿab yōm il-jumʿa, garīb minnak. taʿāl!",
-    "I always play on Fridays, near you. Come along!"
+    "I always play on Fridays, near you. Come along!",
+    "أَنَا دَوْمْ أَلْعَبْ يَوْمْ الْجُمْعَة، قَرِيبْ مِنَّكْ. تَعَالْ!"
    ]
   ],
   "items": [
@@ -56,63 +63,72 @@
     "kill yōm",
     "every day",
     "كل يوم",
-    ""
+    "",
+    "كِلّْ يَوْمْ"
    ],
    [
     "دوم",
     "dōm",
     "always, all the time",
     "دائمًا",
-    "goes before the verb: dōm alʿab = I always play"
+    "goes before the verb: dōm alʿab = I always play",
+    "دَوْمْ"
    ],
    [
     "ترجع",
     "tirjaʿ",
     "you go back, you get back (to a man)",
     "ترجع",
-    "to a woman: tirjaʿīn (ترجعين)"
+    "to a woman: tirjaʿīn (ترجعين)",
+    "تِرْجَعْ"
    ],
    [
     "أرجع",
     "arjaʿ",
     "I go back, I get back",
     "أرجع / أعود",
-    "arjaʿ il-bēt = I get home"
+    "arjaʿ il-bēt = I get home",
+    "أَرْجَعْ"
    ],
    [
     "بعد الدوام",
     "baʿd id-dawām",
     "after work, after hours",
     "بعد الدوام",
-    ""
+    "",
+    "بَعْدْ الدَّوَامْ"
    ],
    [
     "أطبخ",
     "aṭbakh",
     "I cook",
     "أطبخ",
-    ""
+    "",
+    "أَطْبَخْ"
    ],
    [
     "ألعب",
     "alʿab",
     "I play",
     "ألعب",
-    ""
+    "",
+    "أَلْعَبْ"
    ],
    [
     "تلعب؟",
     "tilʿab?",
     "do you play? (to a man)",
     "هل تلعب؟",
-    "to a woman: tilʿabīn? (تلعبين؟)"
+    "to a woman: tilʿabīn? (تلعبين؟)",
+    "تِلْعَبْ؟"
    ],
    [
     "كورة",
     "kūra",
     "football; a ball",
     "كرة القدم / كرة",
-    "nilʿab kūra = we play football"
+    "nilʿab kūra = we play football",
+    "كُورَة"
    ]
   ],
   "culture": "Football is the most popular sport among Emiratis. In the hot months friends often play in the evening, after sunset, when it is cooler."
@@ -129,43 +145,50 @@
     "B",
     "مريم، تطلعين من الدوام الساعة كم؟",
     "Maryam, tiṭlaʿīn min id-dawām is-sāʿa cham?",
-    "Maryam, what time do you leave work?"
+    "Maryam, what time do you leave work?",
+    "مَرْيَمْ، تِطْلَعِينْ مِنْ الدَّوَامْ السَّاعَة كَمْ؟"
    ],
    [
     "A",
     "الساعة ثلاث. وبعد الدوام أدرس كل يوم",
     "is-sāʿa thalāth. w baʿd id-dawām adris kill yōm",
-    "At three. And after work I study every day."
+    "At three. And after work I study every day.",
+    "السَّاعَة ثَلَاثْ. وْبَعْدْ الدَّوَامْ أَدْرِسْ كِلّْ يَوْمْ"
    ],
    [
     "B",
     "والله؟ شو تدرسين؟",
     "wallāh? shu tidrisīn?",
-    "Really? What are you studying?"
+    "Really? What are you studying?",
+    "وَاللّٰهْ؟ شُو تِدْرِسِينْ؟"
    ],
    [
     "A",
     "ماجستير. وأكتب بحث الحين!",
     "mājistēr. w aktib baḥth il-ḥīn!",
-    "A master's. And I'm writing a dissertation now!"
+    "A master's. And I'm writing a dissertation now!",
+    "مَاجِسْتَيْرْ. وْأَكْتِبْ بَحْثْ الْحِينْ!"
    ],
    [
     "B",
     "وين تكتبين؟ في البيت؟",
     "wēn tiktibīn? fi l-bēt?",
-    "Where do you write? At home?"
+    "Where do you write? At home?",
+    "وَيْنْ تِكْتِبِينْ؟ فِي الْبَيْتْ؟"
    ],
    [
     "A",
     "لا، في المكتبة. البيت زحمة!",
     "la, fi l-maktaba. il-bēt zaḥma!",
-    "No, in the library. Home's too busy!"
+    "No, in the library. Home's too busy!",
+    "لَا، فِي الْمَكْتَبَة. الْبَيْتْ زَحْمَة!"
    ],
    [
     "B",
     "تدرين شو؟ أنا بعد أدرس في مكتبة الجامعة",
     "tadrīn shu? ana baʿad adris fi maktabat il-jāmʿa",
-    "You know what? I study in the university library too."
+    "You know what? I study in the university library too.",
+    "تَدْرِينْ شُو؟ أَنَا بَعَدْ أَدْرِسْ فِي مَكْتَبَةْ الْجَامْعَة"
    ]
   ],
   "items": [
@@ -174,56 +197,64 @@
     "tiṭlaʿīn",
     "you go out, you leave (to a woman)",
     "تخرجين",
-    "to a man: tiṭlaʿ (تطلع); tiṭlaʿīn min id-dawām = you leave work"
+    "to a man: tiṭlaʿ (تطلع); tiṭlaʿīn min id-dawām = you leave work",
+    "تِطْلَعِينْ"
    ],
    [
     "تدرسين",
     "tidrisīn",
     "you study (to a woman)",
     "تدرسين",
-    "to a man: tidris (تدرس)"
+    "to a man: tidris (تدرس)",
+    "تِدْرِسِينْ"
    ],
    [
     "ماجستير",
     "mājistēr",
     "a master's degree",
     "ماجستير",
-    "you'll also hear the English 'master' (ماستر)"
+    "you'll also hear the English 'master' (ماستر)",
+    "مَاجِسْتَيْرْ"
    ],
    [
     "أكتب",
     "aktib",
     "I write",
     "أكتب",
-    ""
+    "",
+    "أَكْتِبْ"
    ],
    [
     "بحث",
     "baḥth",
     "a research paper, a dissertation",
     "بحث",
-    ""
+    "",
+    "بَحْثْ"
    ],
    [
     "تكتبين",
     "tiktibīn",
     "you write (to a woman)",
     "تكتبين",
-    "to a man: tiktib (تكتب)"
+    "to a man: tiktib (تكتب)",
+    "تِكْتِبِينْ"
    ],
    [
     "المكتبة",
     "il-maktaba",
     "the library; also a bookshop",
     "المكتبة",
-    ""
+    "",
+    "الْمَكْتَبَة"
    ],
    [
     "تدرين؟",
     "tadrīn?",
     "do you know? (to a woman)",
     "هل تعرفين؟",
-    "to a man: tadri? (تدري؟); tadrīn shu? = you know what?"
+    "to a man: tadri? (تدري؟); tadrīn shu? = you know what?",
+    "تَدْرِينْ؟"
    ]
   ]
  },
@@ -239,43 +270,50 @@
     "A",
     "تدري إن أختي تشتغل ويا مريم؟",
     "tadri inn ukhti tishtaghil wiyya Maryam?",
-    "Did you know my sister works with Maryam?"
+    "Did you know my sister works with Maryam?",
+    "تَدْرِي إِنّْ أُخْتِي تِشْتَغِلْ وِيَّا مَرْيَمْ؟"
    ],
    [
     "B",
     "لا والله! وأخوك؟ يشتغل بعد؟",
     "la wallāh! w akhūk? yishtaghil baʿad?",
-    "No way! And your brother? Does he work too?"
+    "No way! And your brother? Does he work too?",
+    "لَا وَاللّٰهْ! وْأَخُوكْ؟ يِشْتَغِلْ بَعَدْ؟"
    ],
    [
     "A",
     "لا، يدرس طب، ودوم في المكتبة",
     "la, yidris ṭibb, w dōm fi l-maktaba",
-    "No, he studies medicine, and he's always in the library."
+    "No, he studies medicine, and he's always in the library.",
+    "لَا، يِدْرِسْ طِبّْ، وْدَوْمْ فِي الْمَكْتَبَة"
    ],
    [
     "B",
     "طب؟ يعني يدرس ليل ونهار!",
     "ṭibb? yaʿni yidris lēl w nahār!",
-    "Medicine? So he studies day and night!"
+    "Medicine? So he studies day and night!",
+    "طِبّْ؟ يَعْنِي يِدْرِسْ لَيْلْ وْنَهَارْ!"
    ],
    [
     "A",
     "هيه، ويسهر كل ليلة",
     "hē, w yis-har kill lēla",
-    "Yes, and he stays up late every night."
+    "Yes, and he stays up late every night.",
+    "هَيْه، وْيِسْهَرْ كِلّْ لَيْلَة"
    ],
    [
     "B",
     "ما يتعب؟",
     "ma yitʿab?",
-    "Doesn't he get tired?"
+    "Doesn't he get tired?",
+    "مَا يِتْعَبْ؟"
    ],
    [
     "A",
     "يتعب، بس يحب الطب وايد",
     "yitʿab, bas yḥibb iṭ-ṭibb wāyid",
-    "He does, but he really loves medicine."
+    "He does, but he really loves medicine.",
+    "يِتْعَبْ، بَسْ يْحِبّْ الطِّبّْ وَايِدْ"
    ]
   ],
   "items": [
@@ -284,63 +322,72 @@
     "tadri?",
     "do you know? did you know? (to a man)",
     "هل تعرف؟",
-    "to a woman: tadrīn? (تدرين؟); tadri inn … = did you know that …"
+    "to a woman: tadrīn? (تدرين؟); tadri inn … = did you know that …",
+    "تَدْرِي؟"
    ],
    [
     "يشتغل",
     "yishtaghil",
     "he works",
     "يعمل",
-    "she works: tishtaghil (تشتغل)"
+    "she works: tishtaghil (تشتغل)",
+    "يِشْتَغِلْ"
    ],
    [
     "يدرس",
     "yidris",
     "he studies",
     "يدرس",
-    "she studies: tidris (تدرس)"
+    "she studies: tidris (تدرس)",
+    "يِدْرِسْ"
    ],
    [
     "طب",
     "ṭibb",
     "medicine (the subject)",
     "طب",
-    "yidris ṭibb = he studies medicine"
+    "yidris ṭibb = he studies medicine",
+    "طِبّْ"
    ],
    [
     "ليل ونهار",
     "lēl w nahār",
     "day and night, all the time",
     "ليلًا ونهارًا",
-    ""
+    "",
+    "لَيْلْ وْنَهَارْ"
    ],
    [
     "يسهر",
     "yis-har",
     "he stays up late",
     "يسهر",
-    "I stay up late: as-har (أسهر)"
+    "I stay up late: as-har (أسهر)",
+    "يِسْهَرْ"
    ],
    [
     "كل ليلة",
     "kill lēla",
     "every night",
     "كل ليلة",
-    ""
+    "",
+    "كِلّْ لَيْلَة"
    ],
    [
     "يتعب",
     "yitʿab",
     "he gets tired",
     "يتعب",
-    "ma yitʿab? = doesn't he get tired?"
+    "ma yitʿab? = doesn't he get tired?",
+    "يِتْعَبْ"
    ],
    [
     "يحب",
     "yḥibb",
     "he likes, he loves",
     "يحب",
-    "she likes: tḥibb (تحب)"
+    "she likes: tḥibb (تحب)",
+    "يْحِبّْ"
    ]
   ]
  },
@@ -356,43 +403,50 @@
     "A",
     "انت وسيف دوم ويا بعض!",
     "inta w Sēf dōm wiyya baʿaẓ!",
-    "You and Sēf are always together!"
+    "You and Sēf are always together!",
+    "اِنْتَ وْسَيْفْ دَوْمْ وِيَّا بَعَضْ!"
    ],
    [
     "B",
     "هيه، ندرس في نفس الجامعة، ونسكن قريب",
     "hē, nidris fi nafs il-jāmʿa, w niskin garīb",
-    "Yes, we study at the same university and live nearby."
+    "Yes, we study at the same university and live nearby.",
+    "هَيْه، نِدْرِسْ فِي نَفْسْ الْجَامْعَة، وْنِسْكِنْ قَرِيبْ"
    ],
    [
     "A",
     "وشو تسوون يوم الجمعة؟",
     "w shu tsawwūn yōm il-jumʿa?",
-    "And what do you get up to on Fridays?"
+    "And what do you get up to on Fridays?",
+    "وْشُو تْسَوُّونْ يَوْمْ الْجُمْعَة؟"
    ],
    [
     "B",
     "نلعب كورة، ومرات نروح البحر ونسبح",
     "nilʿab kūra, w marrāt nrūḥ il-baḥar w nisbaḥ",
-    "We play football, and sometimes we go to the beach and swim."
+    "We play football, and sometimes we go to the beach and swim.",
+    "نِلْعَبْ كُورَة، وْمَرَّاتْ نْرُوحْ الْبَحَرْ وْنِسْبَحْ"
    ],
    [
     "A",
     "وفي الليل؟",
     "w fi l-lēl?",
-    "And at night?"
+    "And at night?",
+    "وْفِي اللَّيْلْ؟"
    ],
    [
     "B",
     "ومرات نطلع ونسهر ويا الشباب",
     "w marrāt niṭlaʿ w nis-har wiyya sh-shabāb",
-    "And sometimes we go out and stay up late with the guys."
+    "And sometimes we go out and stay up late with the guys.",
+    "وْمَرَّاتْ نِطْلَعْ وْنِسْهَرْ وِيَّا الشَّبَابْ"
    ],
    [
     "A",
     "والجامعة؟! تدري إن الامتحان قريب؟",
     "w il-jāmʿa?! tadri inn il-imtiḥān garīb?",
-    "And university?! Do you know the exam is soon?"
+    "And university?! Do you know the exam is soon?",
+    "وْالْجَامْعَة؟! تَدْرِي إِنّْ الْاِمْتِحَانْ قَرِيبْ؟"
    ]
   ],
   "items": [
@@ -401,56 +455,64 @@
     "wiyya baʿaẓ",
     "together, with each other",
     "معًا",
-    "also very common: maʿa baʿaẓ (مع بعض)"
+    "also very common: maʿa baʿaẓ (مع بعض)",
+    "وِيَّا بَعَضْ"
    ],
    [
     "نسكن",
     "niskin",
     "we live (somewhere)",
     "نسكن",
-    "I live: askin (أسكن)"
+    "I live: askin (أسكن)",
+    "نِسْكِنْ"
    ],
    [
     "شو تسوون؟",
     "shu tsawwūn?",
     "what do you do? (to a group)",
     "ماذا تفعلون؟",
-    "to one man: shu tsawwi?; to one woman: shu tsawwīn?"
+    "to one man: shu tsawwi?; to one woman: shu tsawwīn?",
+    "شُو تْسَوُّونْ؟"
    ],
    [
     "نلعب",
     "nilʿab",
     "we play",
     "نلعب",
-    ""
+    "",
+    "نِلْعَبْ"
    ],
    [
     "مرات",
     "marrāt",
     "sometimes; times",
     "أحيانًا",
-    "marrāt … w marrāt … = sometimes … and sometimes …"
+    "marrāt … w marrāt … = sometimes … and sometimes …",
+    "مَرَّاتْ"
    ],
    [
     "نسبح",
     "nisbaḥ",
     "we swim",
     "نسبح",
-    ""
+    "",
+    "نِسْبَحْ"
    ],
    [
     "نطلع",
     "niṭlaʿ",
     "we go out",
     "نخرج",
-    ""
+    "",
+    "نِطْلَعْ"
    ],
    [
     "نسهر",
     "nis-har",
     "we stay up late, we spend the evening out",
     "نسهر",
-    ""
+    "",
+    "نِسْهَرْ"
    ]
   ]
  },
@@ -466,43 +528,50 @@
     "B",
     "هلا يا شباب! تدرسون ويا سيف؟",
     "hala yā shabāb! tidrisūn wiyya Sēf?",
-    "Hi guys! Do you study with Sēf?"
+    "Hi guys! Do you study with Sēf?",
+    "هَلَا يَا شَبَابْ! تِدْرِسُونْ وِيَّا سَيْفْ؟"
    ],
    [
     "A",
     "هلا فيك! لا، نشتغل في المطار",
     "hala fīk! la, nishtaghil fi l-maṭār",
-    "Hi! No, we work at the airport."
+    "Hi! No, we work at the airport.",
+    "هَلَا فِيكْ! لَا، نِشْتَغِلْ فِي الْمَطَارْ"
    ],
    [
     "B",
     "ما شاء الله! تشتغلون كل يوم؟",
     "mā shāʼ allāh! tishtaghlūn kill yōm?",
-    "Great! Do you work every day?"
+    "Great! Do you work every day?",
+    "مَا شَاءْ اللّٰهْ! تِشْتَغْلُونْ كِلّْ يَوْمْ؟"
    ],
    [
     "A",
     "هيه، وأبوي وعمي يشتغلون هناك بعد",
     "hē, w ubūy w ʿammi yishtaghlūn hnāk baʿad",
-    "Yes, and my dad and my uncle work there too."
+    "Yes, and my dad and my uncle work there too.",
+    "هَيْه، وْأُبُويْ وْعَمِّي يِشْتَغْلُونْ هْنَاكْ بَعَدْ"
    ],
    [
     "B",
     "وتلعبون كورة؟ سيف دوم يلعب!",
     "w tilʿabūn kūra? Sēf dōm yilʿab!",
-    "And do you play football? Sēf plays all the time!"
+    "And do you play football? Sēf plays all the time!",
+    "وْتِلْعَبُونْ كُورَة؟ سَيْفْ دَوْمْ يِلْعَبْ!"
    ],
    [
     "A",
     "هيه، ربعنا يلعبون كل خميس. تبي تيي؟",
     "hē, rabʿna yilʿabūn kill khamīs. tabi tiyi?",
-    "Yes, our mates play every Thursday. Want to come?"
+    "Yes, our mates play every Thursday. Want to come?",
+    "هَيْه، رَبْعْنَا يِلْعَبُونْ كِلّْ خَمِيسْ. تَبِي تِيِي؟"
    ],
    [
     "B",
     "أكيد! وين تلعبون؟",
     "akīd! wēn tilʿabūn?",
-    "Definitely! Where do you play?"
+    "Definitely! Where do you play?",
+    "أَكِيدْ! وَيْنْ تِلْعَبُونْ؟"
    ]
   ],
   "items": [
@@ -511,56 +580,64 @@
     "yā shabāb",
     "guys! (to a group of young men)",
     "يا شباب",
-    "friendly, to young men you know or have just met"
+    "friendly, to young men you know or have just met",
+    "يَا شَبَابْ"
    ],
    [
     "نشتغل",
     "nishtaghil",
     "we work",
     "نعمل",
-    ""
+    "",
+    "نِشْتَغِلْ"
    ],
    [
     "تشتغلون",
     "tishtaghlūn",
     "you work (to a group)",
     "تعملون",
-    "to one man: tishtaghil; to one woman: tishtaghlīn"
+    "to one man: tishtaghil; to one woman: tishtaghlīn",
+    "تِشْتَغْلُونْ"
    ],
    [
     "يشتغلون",
     "yishtaghlūn",
     "they work",
     "يعملون",
-    ""
+    "",
+    "يِشْتَغْلُونْ"
    ],
    [
     "يلعب",
     "yilʿab",
     "he plays",
     "يلعب",
-    ""
+    "",
+    "يِلْعَبْ"
    ],
    [
     "تلعبون",
     "tilʿabūn",
     "you play (to a group)",
     "تلعبون",
-    "to one man: tilʿab; to one woman: tilʿabīn"
+    "to one man: tilʿab; to one woman: tilʿabīn",
+    "تِلْعَبُونْ"
    ],
    [
     "يلعبون",
     "yilʿabūn",
     "they play",
     "يلعبون",
-    ""
+    "",
+    "يِلْعَبُونْ"
    ],
    [
     "كل خميس",
     "kill khamīs",
     "every Thursday",
     "كل خميس",
-    "also kill jumʿa (every Friday)"
+    "also kill jumʿa (every Friday)",
+    "كِلّْ خَمِيسْ"
    ]
   ],
   "culture": "Karak stands and cafeterias are where young men in Dubai often meet after work. Inviting a new acquaintance to a game straight away, as here, is ordinary friendliness."
@@ -577,43 +654,50 @@
     "A",
     "سيف ما يدرس! دوم يلعب ويطلع",
     "Sēf ma yidris! dōm yilʿab w yiṭlaʿ",
-    "Sēf doesn't study! He's always playing and going out."
+    "Sēf doesn't study! He's always playing and going out.",
+    "سَيْفْ مَا يِدْرِسْ! دَوْمْ يِلْعَبْ وْيِطْلَعْ"
    ],
    [
     "B",
     "لا يا أم سيف، يدرس، بس في الليل",
     "la yā Umm Sēf, yidris, bas fi l-lēl",
-    "No, Umm Sēf, he does study, but at night."
+    "No, Umm Sēf, he does study, but at night.",
+    "لَا يَا أُمّْ سَيْفْ، يِدْرِسْ، بَسْ فِي اللَّيْلْ"
    ],
    [
     "A",
     "والصبح ما يصحى! أصحيه، ويرجع ينام على طول",
     "w iṣ-ṣubḥ ma yiṣḥa! aṣaḥḥīh, w yirjaʿ ynām ʿala ṭūl",
-    "And in the morning he doesn't wake up! I wake him, and he goes straight back to sleep."
+    "And in the morning he doesn't wake up! I wake him, and he goes straight back to sleep.",
+    "وْالصُّبْحْ مَا يِصْحَى! أَصَحِّيهْ، وْيِرْجَعْ يْنَامْ عَلَى طُولْ"
    ],
    [
     "B",
     "هيه، بس دوم ينجح",
     "hē, bas dōm yinjaḥ",
-    "True, but he always passes."
+    "True, but he always passes.",
+    "هَيْه، بَسْ دَوْمْ يِنْجَحْ"
    ],
    [
     "A",
     "وانت؟ تدرس في الليل بعد؟",
     "w inta? tidris fi l-lēl baʿad?",
-    "And you? Do you study at night too?"
+    "And you? Do you study at night too?",
+    "وْاِنْتَ؟ تِدْرِسْ فِي اللَّيْلْ بَعَدْ؟"
    ],
    [
     "B",
     "لا، أنا ما أسهر. أدرس الصبح",
     "la, ana ma as-har. adris iṣ-ṣubḥ",
-    "No, I don't stay up late. I study in the mornings."
+    "No, I don't stay up late. I study in the mornings.",
+    "لَا، أَنَا مَا أَسْهَرْ. أَدْرِسْ الصُّبْحْ"
    ],
    [
     "A",
     "ما شاء الله عليك! علمه شوي!",
     "mā shāʼ allāh ʿalēk! ʿallmah shwayy!",
-    "Good for you! Teach him a bit!"
+    "Good for you! Teach him a bit!",
+    "مَا شَاءْ اللّٰهْ عَلَيْكْ! عَلّْمَهْ شْوَيّْ!"
    ]
   ],
   "items": [
@@ -622,56 +706,64 @@
     "ma yidris",
     "he doesn't study",
     "لا يدرس",
-    ""
+    "",
+    "مَا يِدْرِسْ"
    ],
    [
     "يطلع",
     "yiṭlaʿ",
     "he goes out",
     "يخرج",
-    "she goes out: tiṭlaʿ (تطلع)"
+    "she goes out: tiṭlaʿ (تطلع)",
+    "يِطْلَعْ"
    ],
    [
     "ما يصحى",
     "ma yiṣḥa",
     "he doesn't wake up",
     "لا يستيقظ",
-    "I wake up: aṣḥa (أصحى)"
+    "I wake up: aṣḥa (أصحى)",
+    "مَا يِصْحَى"
    ],
    [
     "أصحيه",
     "aṣaḥḥīh",
     "I wake him up",
     "أوقظه",
-    "for her: aṣaḥḥīha (أصحيها)"
+    "for her: aṣaḥḥīha (أصحيها)",
+    "أَصَحِّيهْ"
    ],
    [
     "ينجح",
     "yinjaḥ",
     "he passes (an exam), he succeeds",
     "ينجح",
-    "past: nijaḥt (I passed)"
+    "past: nijaḥt (I passed)",
+    "يِنْجَحْ"
    ],
    [
     "ما أسهر",
     "ma as-har",
     "I don't stay up late",
     "لا أسهر",
-    ""
+    "",
+    "مَا أَسْهَرْ"
    ],
    [
     "ما شاء الله عليك",
     "mā shāʼ allāh ʿalēk",
     "good for you, well done (to a man)",
     "ما شاء الله / أحسنت",
-    "to a woman: mā shāʼ allāh ʿalēch (ما شاء الله عليج)"
+    "to a woman: mā shāʼ allāh ʿalēch (ما شاء الله عليج)",
+    "مَا شَاءْ اللّٰهْ عَلَيْكْ"
    ],
    [
     "علمه",
     "ʿallmah",
     "teach him (to a man)",
     "علمه",
-    "to a woman: ʿallmīh (علميه)"
+    "to a woman: ʿallmīh (علميه)",
+    "عَلّْمَهْ"
    ]
   ]
  },
@@ -687,43 +779,50 @@
     "B",
     "منو يروح السوبرماركت في بيتكم؟",
     "minu yrūḥ is-sūbarmārkit fi bētkum?",
-    "Who goes to the supermarket in your house?"
+    "Who goes to the supermarket in your house?",
+    "مِنُو يْرُوحْ السُّوبَرْمَارْكِتْ فِي بَيْتْكُمْ؟"
    ],
    [
     "A",
     "أبوي، يروح كل سبت الصبح",
     "ubūy, yrūḥ kill sabt iṣ-ṣubḥ",
-    "My dad, he goes every Saturday morning."
+    "My dad, he goes every Saturday morning.",
+    "أُبُويْ، يْرُوحْ كِلّْ سَبْتْ الصُّبْحْ"
    ],
    [
     "B",
     "بروحه؟",
     "b-rūḥah?",
-    "On his own?"
+    "On his own?",
+    "بْرُوحَهْ؟"
    ],
    [
     "A",
     "لا، ويا أمي. هي دوم تشوف الأسعار، وهو يدفع!",
     "la, wiyya ummi. hiya dōm tshūf il-asʿār, w huwa yidfaʿ!",
-    "No, with my mum. She always checks the prices, and he pays!"
+    "No, with my mum. She always checks the prices, and he pays!",
+    "لَا، وِيَّا أُمِّي. هِيَ دَوْمْ تْشُوفْ الْأَسْعَارْ، وْهُوَ يِدْفَعْ!"
    ],
    [
     "B",
     "وانت؟ ما تروح وياهم؟",
     "w inta? ma trūḥ wiyyāhum?",
-    "And you? Don't you go with them?"
+    "And you? Don't you go with them?",
+    "وْاِنْتَ؟ مَا تْرُوحْ وِيَّاهُمْ؟"
    ],
    [
     "A",
     "لا، أنام! أبوي يقول: سيف ما يصحى!",
     "la, anām! ubūy ygūl: Sēf ma yiṣḥa!",
-    "No, I sleep! My dad says, 'Sēf never wakes up!'"
+    "No, I sleep! My dad says, 'Sēf never wakes up!'",
+    "لَا، أَنَامْ! أُبُويْ يْقُولْ: سَيْفْ مَا يِصْحَى!"
    ],
    [
     "B",
     "والله صح! تسهر كل ليلة، وانت كسلان",
     "wallāh ṣaḥḥ! tis-har kill lēla, w inta kaslān",
-    "Honestly, he's right! You stay up every night, and you're lazy."
+    "Honestly, he's right! You stay up every night, and you're lazy.",
+    "وَاللّٰهْ صَحّْ! تِسْهَرْ كِلّْ لَيْلَة، وْاِنْتَ كَسْلَانْ"
    ]
   ],
   "items": [
@@ -732,63 +831,72 @@
     "yrūḥ",
     "he goes",
     "يذهب",
-    "she goes: trūḥ (تروح)"
+    "she goes: trūḥ (تروح)",
+    "يْرُوحْ"
    ],
    [
     "بروحه",
     "b-rūḥah",
     "on his own, by himself",
     "وحده",
-    "on her own: b-rūḥha"
+    "on her own: b-rūḥha",
+    "بْرُوحَهْ"
    ],
    [
     "تشوف",
     "tshūf",
     "she sees, she checks; you see (to a man)",
     "ترى",
-    "to a woman: tshūfīn (تشوفين)"
+    "to a woman: tshūfīn (تشوفين)",
+    "تْشُوفْ"
    ],
    [
     "الأسعار",
     "il-asʿār",
     "the prices",
     "الأسعار",
-    "one price: siʿir"
+    "one price: siʿir",
+    "الْأَسْعَارْ"
    ],
    [
     "يدفع",
     "yidfaʿ",
     "he pays",
     "يدفع",
-    ""
+    "",
+    "يِدْفَعْ"
    ],
    [
     "وياهم",
     "wiyyāhum",
     "with them",
     "معهم",
-    ""
+    "",
+    "وِيَّاهُمْ"
    ],
    [
     "أنام",
     "anām",
     "I sleep",
     "أنام",
-    ""
+    "",
+    "أَنَامْ"
    ],
    [
     "يقول",
     "ygūl",
     "he says",
     "يقول",
-    "she says: tgūl (تقول)"
+    "she says: tgūl (تقول)",
+    "يْقُولْ"
    ],
    [
     "كسلان",
     "kaslān",
     "lazy (a man)",
     "كسول / كسلان",
-    "a woman: kaslāna (كسلانة)"
+    "a woman: kaslāna (كسلانة)",
+    "كَسْلَانْ"
    ]
   ]
  },
@@ -804,43 +912,50 @@
     "B",
     "مريم، شو تسوين بعد الدوام؟",
     "Maryam, shu tsawwīn baʿd id-dawām?",
-    "Maryam, what do you do after work?"
+    "Maryam, what do you do after work?",
+    "مَرْيَمْ، شُو تْسَوِّينْ بَعْدْ الدَّوَامْ؟"
    ],
    [
     "A",
     "أمشي ساعة في الحديقة ويا أبوي",
     "amshi sāʿa fi l-ḥadīga wiyya ubūy",
-    "I walk for an hour in the park with my dad."
+    "I walk for an hour in the park with my dad.",
+    "أَمْشِي سَاعَة فِي الْحَدِيقَة وِيَّا أُبُويْ"
    ],
    [
     "B",
     "كل يوم؟ ما تتعبين؟",
     "kill yōm? ma titʿabīn?",
-    "Every day? Don't you get tired?"
+    "Every day? Don't you get tired?",
+    "كِلّْ يَوْمْ؟ مَا تِتْعَبِينْ؟"
    ],
    [
     "A",
     "لا، عادي. وانت؟ ما تمشي؟",
     "la, ʿādi. w inta? ma timshi?",
-    "No, it's fine. And you? Don't you walk?"
+    "No, it's fine. And you? Don't you walk?",
+    "لَا، عَادِي. وْاِنْتَ؟ مَا تِمْشِي؟"
    ],
    [
     "B",
     "لا، سيف يسوي رياضة، بس أنا كسلان!",
     "la, Sēf ysawwi riyāẓa, bas ana kaslān!",
-    "No, Sēf does sport, but I'm lazy!"
+    "No, Sēf does sport, but I'm lazy!",
+    "لَا، سَيْفْ يْسَوِّي رِيَاضَة، بَسْ أَنَا كَسْلَانْ!"
    ],
    [
     "A",
     "يلا، تمشي ويا سيف يوم الخميس؟",
     "yalla, timshi wiyya Sēf yōm il-khamīs?",
-    "Come on, why not walk with Sēf on Thursday?"
+    "Come on, why not walk with Sēf on Thursday?",
+    "يَلَّا، تِمْشِي وِيَّا سَيْفْ يَوْمْ الْخَمِيسْ؟"
    ],
    [
     "B",
     "ليش لا! نمشي الصبح بدري",
     "lēsh la! nimshi ṣ-ṣubḥ badri",
-    "Why not! We'll walk early in the morning."
+    "Why not! We'll walk early in the morning.",
+    "لَيْشْ لَا! نِمْشِي الصُّبْحْ بَدْرِي"
    ]
   ],
   "items": [
@@ -849,63 +964,72 @@
     "shu tsawwīn?",
     "what do you do? what are you doing? (to a woman)",
     "ماذا تفعلين؟",
-    "to a man: shu tsawwi?"
+    "to a man: shu tsawwi?",
+    "شُو تْسَوِّينْ؟"
    ],
    [
     "أمشي",
     "amshi",
     "I walk",
     "أمشي",
-    ""
+    "",
+    "أَمْشِي"
    ],
    [
     "ساعة",
     "sāʿa",
     "an hour",
     "ساعة",
-    "is-sāʿa = the time, o'clock"
+    "is-sāʿa = the time, o'clock",
+    "سَاعَة"
    ],
    [
     "الحديقة",
     "il-ḥadīga",
     "the park, the garden",
     "الحديقة",
-    ""
+    "",
+    "الْحَدِيقَة"
    ],
    [
     "تتعبين",
     "titʿabīn",
     "you get tired (to a woman)",
     "تتعبين",
-    "to a man: titʿab (تتعب)"
+    "to a man: titʿab (تتعب)",
+    "تِتْعَبِينْ"
    ],
    [
     "تمشي",
     "timshi",
     "you walk (to a man); she walks",
     "تمشي",
-    "to a woman: timshīn (تمشين)"
+    "to a woman: timshīn (تمشين)",
+    "تِمْشِي"
    ],
    [
     "يسوي",
     "ysawwi",
     "he does, he makes",
     "يفعل / يعمل",
-    "she does: tsawwi (تسوي)"
+    "she does: tsawwi (تسوي)",
+    "يْسَوِّي"
    ],
    [
     "رياضة",
     "riyāẓa",
     "sport, exercise",
     "رياضة",
-    "ysawwi riyāẓa = he does sport, he works out"
+    "ysawwi riyāẓa = he does sport, he works out",
+    "رِيَاضَة"
    ],
    [
     "نمشي",
     "nimshi",
     "we walk; shall we walk?",
     "نمشي",
-    ""
+    "",
+    "نِمْشِي"
    ]
   ],
   "culture": "In a Dubai summer it is too hot to walk in the day, so people walk in the early morning, after sunset, or inside air-conditioned malls. In winter, parks and beach paths fill up in the evenings."
@@ -922,43 +1046,50 @@
     "A",
     "وين أحط الكراتين؟",
     "wēn aḥuṭṭ il-karātīn?",
-    "Where shall I put the boxes?"
+    "Where shall I put the boxes?",
+    "وَيْنْ أَحُطّْ الْكَرَاتِينْ؟"
    ],
    [
     "B",
     "حطها في الغرفة، يم الدريشة",
     "ḥuṭṭha fi l-ghurfa, yamm id-dirīsha",
-    "Put them in the room, by the window."
+    "Put them in the room, by the window.",
+    "حُطّْهَا فِي الْغُرْفَة، يَمّْ الدِّرِيشَة"
    ],
    [
     "A",
     "والكنبة؟ نحطها هني؟",
     "w il-kanaba? nḥuṭṭha hni?",
-    "And the sofa? Shall we put it here?"
+    "And the sofa? Shall we put it here?",
+    "وْالْكَنَبَة؟ نْحُطّْهَا هْنِي؟"
    ],
    [
     "B",
     "هيه، قدام التلفزيون. أبوي دوم يحطها جي",
     "hē, jiddām it-tilfizyōn. ubūy dōm yḥuṭṭha chī",
-    "Yes, in front of the TV. My dad always puts it like that."
+    "Yes, in front of the TV. My dad always puts it like that.",
+    "هَيْه، قِدَّامْ التِّلْفِزْيَوْنْ. أُبُويْ دَوْمْ يْحُطّْهَا جِي"
    ],
    [
     "A",
     "تلفونك يدق!",
     "tilifōnak ydigg!",
-    "Your phone's ringing!"
+    "Your phone's ringing!",
+    "تِلِفَوْنَكْ يْدِقّْ!"
    ],
    [
     "B",
     "هذي أمي. أرد عليها بعد ساعة",
     "hādhi ummi. arudd ʿalēha baʿd sāʿa",
-    "It's my mum. I'll call her back in an hour."
+    "It's my mum. I'll call her back in an hour.",
+    "هٰذِي أُمِّي. أَرُدّْ عَلَيْهَا بَعْدْ سَاعَة"
    ],
    [
     "A",
     "لا يا ريّال، رد عليها الحين! لا تكون كسلان",
     "la yā rayyāl, rudd ʿalēha l-ḥīn! la tkūn kaslān",
-    "No, man, answer her now! Don't be lazy."
+    "No, man, answer her now! Don't be lazy.",
+    "لَا يَا رَيَّالْ، رُدّْ عَلَيْهَا الْحِينْ! لَا تْكُونْ كَسْلَانْ"
    ]
   ],
   "items": [
@@ -967,56 +1098,64 @@
     "aḥuṭṭ",
     "I put; shall I put?",
     "أضع",
-    ""
+    "",
+    "أَحُطّْ"
    ],
    [
     "الكراتين",
     "il-karātīn",
     "the (cardboard) boxes",
     "الكراتين",
-    "one box: kartōn (كرتون)"
+    "one box: kartōn (كرتون)",
+    "الْكَرَاتِينْ"
    ],
    [
     "نحطها",
     "nḥuṭṭha",
     "we put it (a feminine thing) or them; shall we put it?",
     "نضعها",
-    "for a masculine thing: nḥuṭṭah (نحطه)"
+    "for a masculine thing: nḥuṭṭah (نحطه)",
+    "نْحُطّْهَا"
    ],
    [
     "يحط",
     "yḥuṭṭ",
     "he puts",
     "يضع",
-    "she puts: tḥuṭṭ (تحط)"
+    "she puts: tḥuṭṭ (تحط)",
+    "يْحُطّْ"
    ],
    [
     "يدق",
     "ydigg",
     "it rings; he knocks",
     "يرن / يطرق",
-    "il-bāb ydigg = someone's at the door"
+    "il-bāb ydigg = someone's at the door",
+    "يْدِقّْ"
    ],
    [
     "أرد",
     "arudd",
     "I answer, I reply",
     "أرد",
-    "arudd ʿalēh = I answer him, I call him back"
+    "arudd ʿalēh = I answer him, I call him back",
+    "أَرُدّْ"
    ],
    [
     "رد عليها",
     "rudd ʿalēha",
     "answer her! (to a man)",
     "رد عليها",
-    "to a woman: ruddi ʿalēha; answer him: rudd ʿalēh"
+    "to a woman: ruddi ʿalēha; answer him: rudd ʿalēh",
+    "رُدّْ عَلَيْهَا"
    ],
    [
     "يا ريّال",
     "yā rayyāl",
     "man!, mate! (friends only)",
     "",
-    "only to friends of your age, never to an elder or in a meeting"
+    "only to friends of your age, never to an elder or in a meeting",
+    "يَا رَيَّالْ"
    ]
   ]
  },
@@ -1032,43 +1171,50 @@
     "A",
     "شو تاكل؟ أنا دوم آخذ عيش ولحم",
     "shu tākil? ana dōm ākhidh ʿēsh w laḥam",
-    "What are you having? I always get rice and meat."
+    "What are you having? I always get rice and meat.",
+    "شُو تَاكِلْ؟ أَنَا دَوْمْ آخِذْ عَيْشْ وْلَحَمْ"
    ],
    [
     "B",
     "أنا ما آكل لحم",
     "ana ma ākil laḥam",
-    "I don't eat meat."
+    "I don't eat meat.",
+    "أَنَا مَا آكِلْ لَحَمْ"
    ],
    [
     "A",
     "والله؟ من متى؟",
     "wallāh? min mita?",
-    "Really? Since when?"
+    "Really? Since when?",
+    "وَاللّٰهْ؟ مِنْ مِتَى؟"
    ],
    [
     "B",
     "من زمان. آكل سمك ودياي بس",
     "min zamān. ākil simach w diyāy bas",
-    "For ages. I only eat fish and chicken."
+    "For ages. I only eat fish and chicken.",
+    "مِنْ زَمَانْ. آكِلْ سِمَكْ وْدِيَايْ بَسْ"
    ],
    [
     "A",
     "زين، خذ سمك. وتاخذ عصير؟",
     "zēn, khudh simach. w tākhidh ʿaṣīr?",
-    "OK, get the fish. And will you have a juice?"
+    "OK, get the fish. And will you have a juice?",
+    "زَيْنْ، خُذْ سِمَكْ. وْتَاخِذْ عَصِيرْ؟"
    ],
    [
     "B",
     "لا، ماي بس. وآخذ سلطة بعد",
     "la, māy bas. w ākhidh salaṭa baʿad",
-    "No, just water. And I'll get a salad too."
+    "No, just water. And I'll get a salad too.",
+    "لَا، مَايْ بَسْ. وْآخِذْ سَلَطَة بَعَدْ"
    ],
    [
     "A",
     "سمك وسلطة؟ أخوي يسوي رياضة، وياكل صحنين!",
     "simach w salaṭa? akhūy ysawwi riyāẓa, w yākil ṣaḥnēn!",
-    "Fish and salad? My brother works out, and he eats two plates!"
+    "Fish and salad? My brother works out, and he eats two plates!",
+    "سِمَكْ وْسَلَطَة؟ أَخُويْ يْسَوِّي رِيَاضَة، وْيَاكِلْ صَحْنَيْنْ!"
    ]
   ],
   "items": [
@@ -1077,56 +1223,64 @@
     "tākil",
     "you eat; are you having? (to a man)",
     "تأكل",
-    "to a woman: tāklīn (تاكلين)"
+    "to a woman: tāklīn (تاكلين)",
+    "تَاكِلْ"
    ],
    [
     "آخذ",
     "ākhidh",
     "I take; I'll have (ordering)",
     "آخذ",
-    ""
+    "",
+    "آخِذْ"
    ],
    [
     "ما آكل",
     "ma ākil",
     "I don't eat",
     "لا آكل",
-    "laḥam is red meat: chicken (diyāy) and fish are counted apart"
+    "laḥam is red meat: chicken (diyāy) and fish are counted apart",
+    "مَا آكِلْ"
    ],
    [
     "من متى؟",
     "min mita?",
     "since when?",
     "منذ متى؟",
-    ""
+    "",
+    "مِنْ مِتَى؟"
    ],
    [
     "سلطة",
     "salaṭa",
     "salad",
     "سلطة",
-    ""
+    "",
+    "سَلَطَة"
    ],
    [
     "تاخذ",
     "tākhidh",
     "you take; will you have? (to a man)",
     "تأخذ",
-    "to a woman: tākhdhīn (تاخذين)"
+    "to a woman: tākhdhīn (تاخذين)",
+    "تَاخِذْ"
    ],
    [
     "ياكل",
     "yākil",
     "he eats",
     "يأكل",
-    "she eats: tākil (تاكل)"
+    "she eats: tākil (تاكل)",
+    "يَاكِلْ"
    ],
    [
     "صحنين",
     "ṣaḥnēn",
     "two plates",
     "صحنان",
-    "one plate: ṣaḥan"
+    "one plate: ṣaḥan",
+    "صَحْنَيْنْ"
    ]
   ]
  },
@@ -1142,43 +1296,50 @@
     "A",
     "سالم، متى تيي باكر؟",
     "Sālim, mita tiyi bāchir?",
-    "Salim, when are you coming tomorrow?"
+    "Salim, when are you coming tomorrow?",
+    "سَالِمْ، مِتَى تِيِي بَاكِرْ؟"
    ],
    [
     "B",
     "مشكورة! أيي الساعة وحدة إن شاء الله",
     "mashkūra! ayi s-sāʿa waḥda in shāʼ allāh",
-    "Thank you! I'll come at one, God willing."
+    "Thank you! I'll come at one, God willing.",
+    "مَشْكُورَة! أَيِي السَّاعَة وَحْدَة إِنْ شَاءْ اللّٰهْ"
    ],
    [
     "A",
     "العفو. وسيف ييي وياك؟",
     "il-ʿafu. w Sēf yiyi wiyyāk?",
-    "You're welcome. Is Sēf coming with you?"
+    "You're welcome. Is Sēf coming with you?",
+    "الْعَفُو. وْسَيْفْ يِيِي وِيَّاكْ؟"
    ],
    [
     "B",
     "هيه، ييي وياي بعد الدوام",
     "hē, yiyi wiyyāy baʿd id-dawām",
-    "Yes, he's coming with me after work."
+    "Yes, he's coming with me after work.",
+    "هَيْه، يِيِي وِيَّايْ بَعْدْ الدَّوَامْ"
    ],
    [
     "A",
     "تحب الهريس؟ دوم نسويه يوم الجمعة",
     "tḥibb il-harīs? dōm nsawwīh yōm il-jumʿa",
-    "Do you like harees? We always make it on Fridays."
+    "Do you like harees? We always make it on Fridays.",
+    "تْحِبّْ الْهَرِيسْ؟ دَوْمْ نْسَوِّيهْ يَوْمْ الْجُمْعَة"
    ],
    [
     "B",
     "أحبه وايد، بس ما أعرف أسويه",
     "aḥibbah wāyid, bas ma aʿarf asawwīh",
-    "I love it, but I don't know how to make it."
+    "I love it, but I don't know how to make it.",
+    "أَحِبَّهْ وَايِدْ، بَسْ مَا أَعَرْفْ أَسَوِّيهْ"
    ],
    [
     "A",
     "ولا يهمك، أنا أسويه، وانت بس تاكل!",
     "wala yhimmak, ana asawwīh, w inta bas tākil!",
-    "Don't worry, I'll make it. You just eat!"
+    "Don't worry, I'll make it. You just eat!",
+    "وَلَا يْهِمَّكْ، أَنَا أَسَوِّيهْ، وْاِنْتَ بَسْ تَاكِلْ!"
    ]
   ],
   "items": [
@@ -1187,56 +1348,64 @@
     "mita tiyi?",
     "when are you coming? (to a man)",
     "متى تأتي؟",
-    "to a woman: mita tiyīn? (متى تيين؟)"
+    "to a woman: mita tiyīn? (متى تيين؟)",
+    "مِتَى تِيِي؟"
    ],
    [
     "أيي",
     "ayi",
     "I come, I'm coming",
     "آتي",
-    "you'll see written اجي"
+    "you'll see written اجي",
+    "أَيِي"
    ],
    [
     "ييي",
     "yiyi",
     "he comes, he's coming",
     "يأتي",
-    "she comes: tiyi (تيي); they come: yiyūn (ييون); you'll see written يي or يجي"
+    "she comes: tiyi (تيي); they come: yiyūn (ييون); you'll see written يي or يجي",
+    "يِيِي"
    ],
    [
     "وياك",
     "wiyyāk",
     "with you (to a man)",
     "معك",
-    "to a woman: wiyyāch (وياج)"
+    "to a woman: wiyyāch (وياج)",
+    "وِيَّاكْ"
    ],
    [
     "الهريس",
     "il-harīs",
     "harees (wheat and meat, slow-cooked)",
     "الهريس",
-    ""
+    "",
+    "الْهَرِيسْ"
    ],
    [
     "نسويه",
     "nsawwīh",
     "we make it, we do it",
     "نصنعه / نفعله",
-    "for a feminine thing: nsawwīha"
+    "for a feminine thing: nsawwīha",
+    "نْسَوِّيهْ"
    ],
    [
     "أحبه",
     "aḥibbah",
     "I love it, I like him",
     "أحبه",
-    "for a feminine thing: aḥibbha"
+    "for a feminine thing: aḥibbha",
+    "أَحِبَّهْ"
    ],
    [
     "أسويه",
     "asawwīh",
     "I make it, I do it",
     "أصنعه / أفعله",
-    "ma aʿarf asawwīh = I don't know how to make it"
+    "ma aʿarf asawwīh = I don't know how to make it",
+    "أَسَوِّيهْ"
    ]
   ],
   "culture": "Harees, wheat cooked for hours with meat until smooth, is a traditional Emirati dish, served especially in Ramadan, at weddings and when honouring guests. Preparing and serving it is seen as a sign of hospitality and generosity."
@@ -1253,43 +1422,50 @@
     "A",
     "كل أسبوع تيي هني؟",
     "kill usbūʿ tiyi hni?",
-    "Do you come here every week?"
+    "Do you come here every week?",
+    "كِلّْ أُسْبُوعْ تِيِي هْنِي؟"
    ],
    [
     "B",
     "هيه، كل سبت آخذ أغراض الأسبوع",
     "hē, kill sabt ākhidh aghrāẓ il-usbūʿ",
-    "Yes, every Saturday I get the week's shopping."
+    "Yes, every Saturday I get the week's shopping.",
+    "هَيْه، كِلّْ سَبْتْ آخِذْ أَغْرَاضْ الْأُسْبُوعْ"
    ],
    [
     "A",
     "وتلقى كل شي هني؟",
     "w tilga kill shay hni?",
-    "And do you find everything here?"
+    "And do you find everything here?",
+    "وْتِلْقَى كِلّْ شَيْ هْنِي؟"
    ],
    [
     "B",
     "هيه، بس الأسعار غالية شوي",
     "hē, bas il-asʿār ghālya shwayy",
-    "Yes, but the prices are a bit high."
+    "Yes, but the prices are a bit high.",
+    "هَيْه، بَسْ الْأَسْعَارْ غَالْيَة شْوَيّْ"
    ],
    [
     "A",
     "أبوي يحب السوق. يمشي ويطالع ويشتري",
     "ubūy yḥibb is-sūg. yimshi w yṭāliʿ w yishtiri",
-    "My dad loves the market. He walks around, looks and buys."
+    "My dad loves the market. He walks around, looks and buys.",
+    "أُبُويْ يْحِبّْ السُّوقْ. يِمْشِي وْيْطَالِعْ وْيِشْتِرِي"
    ],
    [
     "B",
     "بروحه؟ وياخذ وقت؟",
     "b-rūḥah? w yākhidh wagt?",
-    "On his own? And does it take him long?"
+    "On his own? And does it take him long?",
+    "بْرُوحَهْ؟ وْيَاخِذْ وَقْتْ؟"
    ],
    [
     "A",
     "ساعتين! بس البياع دوم يعطيه سمك زين",
     "sāʿtēn! bas il-bayyāʿ dōm yaʿṭīh simach zēn",
-    "Two hours! But the seller always gives him good fish."
+    "Two hours! But the seller always gives him good fish.",
+    "سَاعْتَيْنْ! بَسْ الْبَيَّاعْ دَوْمْ يَعْطِيهْ سِمَكْ زَيْنْ"
    ]
   ],
   "items": [
@@ -1298,63 +1474,72 @@
     "kill usbūʿ",
     "every week",
     "كل أسبوع",
-    ""
+    "",
+    "كِلّْ أُسْبُوعْ"
    ],
    [
     "أغراض",
     "aghrāẓ",
     "shopping, groceries, things",
     "أغراض / مشتريات",
-    "aghrāẓ il-bēt = things for the house"
+    "aghrāẓ il-bēt = things for the house",
+    "أَغْرَاضْ"
    ],
    [
     "تلقى",
     "tilga",
     "you find (to a man); she finds",
     "تجد",
-    "to a woman: tilgīn (تلقين)"
+    "to a woman: tilgīn (تلقين)",
+    "تِلْقَى"
    ],
    [
     "يشتري",
     "yishtiri",
     "he buys",
     "يشتري",
-    "she buys: tishtiri (تشتري)"
+    "she buys: tishtiri (تشتري)",
+    "يِشْتِرِي"
    ],
    [
     "يمشي",
     "yimshi",
     "he walks",
     "يمشي",
-    ""
+    "",
+    "يِمْشِي"
    ],
    [
     "يطالع",
     "yṭāliʿ",
     "he looks (at), he watches",
     "ينظر / يشاهد",
-    "yṭāliʿ it-tilfizyōn = he watches TV"
+    "yṭāliʿ it-tilfizyōn = he watches TV",
+    "يْطَالِعْ"
    ],
    [
     "ياخذ وقت",
     "yākhidh wagt",
     "it takes a long time; he takes a long time",
     "يستغرق وقتًا",
-    "he takes his time (isn't in a hurry): yākhidh wagtah (ياخذ وقته)"
+    "he takes his time (isn't in a hurry): yākhidh wagtah (ياخذ وقته)",
+    "يَاخِذْ وَقْتْ"
    ],
    [
     "ساعتين",
     "sāʿtēn",
     "two hours",
     "ساعتان",
-    ""
+    "",
+    "سَاعْتَيْنْ"
    ],
    [
     "يعطي",
     "yaʿṭi",
     "he gives",
     "يعطي",
-    "he gives him: yaʿṭīh (يعطيه); give me: ʿaṭni"
+    "he gives him: yaʿṭīh (يعطيه); give me: ʿaṭni",
+    "يَعْطِي"
    ]
   ]
  }
