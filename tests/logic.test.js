@@ -31,7 +31,7 @@ function loadUi(o={}){
     document:{createElement:fakeEl,visibilityState:"visible",addEventListener:(t,f)=>{ on[t]=f; }},addEventListener:(t,f)=>{ on[t]=f; },
     window:{claude:o.claude,HARF_PWA:o.built?undefined:o.pwa},navigator:{onLine:o.online!==false},fetch:o.fetch||(()=>{ throw new Error("unexpected fetch"); }),
     rebuild(){},refresh(){},busy:false,currentTab:"today",RENDER:{today(){ calls.push("render"); }},show(){ calls.push("show"); },
-    feedMsa(){ calls.push("msa"); },feedSentences(){ calls.push("sentences"); },afterRemoteChange(){ calls.push("changed"); },firstMergeDone(){}};
+    feedMsa(){ calls.push("msa"); if(o.feed) o.feed(env.T); },feedSentences(){ calls.push("sentences"); },afterRemoteChange(){ calls.push("changed"); },firstMergeDone(){}};
   vm.createContext(env); let m=main;
   if(o.built){ const sc=builtScripts(), mi=sc.findIndex(x=>x.includes("// ===== state =====")); assert.ok(mi>0); sc.slice(0,mi).forEach(x=>vm.runInContext(x,env)); m=sc[mi].match(/\(function\(\)\{([\s\S]*)/)[1]; }
   else vm.runInContext(block("logic"),env);
@@ -843,4 +843,31 @@ test("connect: a failure shows on the panel that is on screen when it ends, neve
   sec.children=[]; t.ghPanel(sec); assert.equal(findId(sec,"gh-line").textContent,"Sync problem: the token was refused"); // kept until the next try
   hub.status={}; hub.before=null; findId(sec,"gh-token").value=TOKEN; await findId(sec,"gh-go").onclick(); assert.ok(t.gh()); assert.ok(t.calls.includes("renderMe"));
   t.ghForget(); sec.children=[]; t.ghPanel(sec); assert.equal(findId(sec,"gh-line").textContent,"Not set up");
+});
+
+// ===== final fix wave =====
+// a card as a feed, a lesson or "add my own word" first creates it has r (reps) 1; any grade makes it 2 or more
+test("merge: a card nobody has graded since it was added never replaces one that has been graded, whatever the clocks say",()=>{
+  const T=Math.floor(now/60000), graded=[1,5,3,T-3000,0,T-3000,-1,4], fresh=[1.18,5,1,T,0,T,1,0]; // the fresh copy has the later review time
+  const mk=c=>({updatedAt:now,cards:{"m.10":c}});
+  for(const [a,b] of [[mk(graded),mk(fresh)],[mk(fresh),mk(graded)]]) assert.deepEqual(L.mergeProgress(a,b).cards["m.10"],graded);
+  // both graded: the later review wins, as before
+  const later=[1,5,4,T+9000,0,T-10,-1,6]; for(const [a,b] of [[mk(graded),mk(later)],[mk(later),mk(graded)]]) assert.deepEqual(L.mergeProgress(a,b).cards["m.10"],later);
+  // neither graded: the later one wins
+  const fresh2=[1.18,5,1,T+5,0,T-1,1,0]; for(const [a,b] of [[mk(fresh),mk(fresh2)],[mk(fresh2),mk(fresh)]]) assert.deepEqual(L.mergeProgress(a,b).cards["m.10"],fresh);
+  // start over: a graded card from before the reset does not come back, the card added after it stays
+  const R=now-60000, RD="2026-11-25", rMin=Math.floor(R/60000);
+  const before={updatedAt:R-5000,cards:{"m.10":[1,5,3,rMin-100,0,rMin-3000,-1,4]}}, after={updatedAt:R+5000,resetAt:R,resetDay:RD,cards:{"m.10":[1.18,5,1,rMin+5,0,rMin+5,1,0]}};
+  for(const [a,b] of [[before,after],[after,before]]) assert.deepEqual(L.mergeProgress(a,b).cards["m.10"],after.cards["m.10"]);
+});
+test("offline app: opening with no signal adds the day's cards, and they never reset the reviews another device made of the same words",async()=>{
+  const nowMin=Math.floor(Date.now()/60000), reviewed=id=>[3,5,3,nowMin+9000,0,nowMin-600,-1,4];
+  // the other device already added and reviewed m.10 to m.12; this one was last synced the day before
+  const hub=hubWith(saved({updatedAt:5,lastDay:"2026-03-01",streak:4,cards:{"m.10":reviewed(),"m.11":reviewed(),"m.12":reviewed()}}));
+  const feed=t=>{ const p=t.serialize(); for(const id of ["m.10","m.11","m.12"]) if(!p.cards[id]) p.cards[id]=[1.18,5,1,nowMin,0,nowMin,1,0]; t.setS(p); t.save(); };
+  const t=loadUi({boot:true,pwa:true,online:false,fetch:hub.fetch,feed,saved:{[KEY+"-gh"]:CFG}});
+  assert.deepEqual(t.fed(),["msa","sentences"]); assert.equal(t.S().cards["m.10"].r,1,"fed offline"); assert.equal(hub.log.length,0);
+  t.env.navigator.onLine=true; t.on.online(); await tick();
+  for(const id of ["m.10","m.11","m.12"]){ assert.equal(t.S().cards[id].r,3,id+" locally"); assert.equal(hub.json("cards_msa.json").cards[id][2],3,id+" in the store"); }
+  assert.equal(t.savedMsg(),"Synced just now");
 });

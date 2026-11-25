@@ -2158,9 +2158,11 @@ function mergeProgress(a,b){
   const out=Object.assign({},older,newer);
   const keys=(x,y)=>new Set([...Object.keys(x||{}),...Object.keys(y||{})]);
   const lastReview=c=>!Array.isArray(c)?-1:c.length===8?c[5]:c[3]-Math.round(c[1]*1440);
+  // a card nobody has graded since it was added (as a feed, a finished lesson or "add my own word" makes it) has exactly 1 rep, and any grade adds one: it never replaces a graded copy, whatever the clocks say
+  const fresh=c=>c.length===8&&c[2]===1;
   const ok=c=>validCard(c)?c:undefined; // a broken card from a bad backup or copy must never replace a good one
   out.cards={}; for(const k of keys(a.cards,b.cards)){ const x=ok((a.cards||{})[k]), y=ok((b.cards||{})[k]); if(!x&&!y) continue;
-    out.cards[k]=!x?y:!y?x:(lastReview(x)>lastReview(y)||(lastReview(x)===lastReview(y)&&(x[2]||0)>=(y[2]||0)))?x:y; }
+    out.cards[k]=!x?y:!y?x:fresh(x)!==fresh(y)?(fresh(x)?y:x):(lastReview(x)>lastReview(y)||(lastReview(x)===lastReview(y)&&(x[2]||0)>=(y[2]||0)))?x:y; }
   out.unitsDone={}; for(const k of keys(a.unitsDone,b.unitsDone)){ const x=(a.unitsDone||{})[k], y=(b.unitsDone||{})[k]; out.unitsDone[k]=!x?y:!y?x:(x<y?x:y); }
   out.suspended={}; for(const k of keys(a.suspended,b.suspended)){ const x=+(a.suspended||{})[k]||0, y=+(b.suspended||{})[k]||0; out.suspended[k]=Math.abs(x)>=Math.abs(y)?x:y; }
   const arr=x=>Array.isArray(x)?x:[];
