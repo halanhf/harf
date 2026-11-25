@@ -267,7 +267,7 @@
   "stage": 3,
   "title": "I was going to call you: kint b- + verb",
   "goal": "Turn up late to dinner with Sēf and Fahad, apologise to the group and say what you were going to do",
-  "tip": "kān + b- + a present verb is 'was going to, was about to': kint bagūl-lak 'I was going to tell you', kinna binrūḥ 'we were about to go', kān biyrūḥ 'he was about to go'. kān agrees, and so does the verb after b-. Kuwaitis say this too, and also use rāḥ: kint rāḥ agūl-lak.",
+  "tip": "kān + b- + a present verb is 'was going to, was about to': kint bagūl-lak 'I was going to tell you', kinna binrūḥ 'we were about to go', kān biyrūḥ 'he was about to go'. kān agrees, and so does the verb after b-. Kuwaitis say this too, and also use rāḥ: kint rāḥ agūl-lik (-lak in the UAE).",
   "grammar": "'Was going to': kān + b- + present verb (kint bagūl-lak, kinna binrūḥ); Kuwait: kān rāḥ",
   "culture": "Saying il-ʿasha ʿala ḥsābi 'dinner's on me' is a friendly way to make up for keeping friends waiting. Friends often argue over who pays (khallha ʿalay! la wallāh!): an offer is usually turned down once before it's accepted, so expect to insist.",
   "dialogue": [
@@ -281,7 +281,7 @@
    ["B", "يلا نطلب عيل! والعشا على حسابي", "yalla niṭlub ʿayal! w il-ʿasha ʿala ḥsābi", "Let's order, then! And dinner's on me."]
   ],
   "items": [
-   ["كنت بقول لك", "kint bagūl-lak", "I was going to tell you (to a man)", "كنت سأقول لك", "to a woman: kint bagūl-lich (كنت بقول لج); Kuwait: kint rāḥ agūl-lik (كنت راح أقول لك)"],
+   ["كنت بقول لك", "kint bagūl-lak", "I was going to tell you (to a man)", "كنت سأقول لك", "to a woman: kint bagūl-lich (كنت بقول لج); Kuwait (to a man): kint rāḥ agūl-lik (كنت راح أقول لك)"],
    ["كنت بتصل فيكم", "kint battaṣil fīkum", "I was going to call you (to a group)", "كنت سأتصل بكم", "to one man: kint battaṣil fīk (كنت بتصل فيك); to one woman: kint battaṣil fīch (كنت بتصل فيج)"],
    ["كنا بنروح", "kinna binrūḥ", "we were about to go, we were going to go", "كنا سنذهب", "Kuwait: kinna rāḥ nrūḥ (كنا راح نروح)"],
    ["كان بيروح", "kān biyrūḥ", "he was about to go, he was going to go", "كان سيذهب", "she was about to go: kānat bitrūḥ (كانت بتروح)"],
