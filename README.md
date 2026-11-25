@@ -140,7 +140,7 @@ Export a backup first if you might want your progress back.
 - **Chrome (Windows):** open the app, ⋮ menu, **Uninstall Harf**, **Remove**. Tick **Also delete data from Chrome** to wipe progress too.
 - **Edge:** go to `edge://apps`, **Details** on Harf, **Uninstall**.
 - **iPhone or Android:** touch and hold the icon and remove it.
-- **Just the progress:** Progress, Danger zone, **Reset all progress**. That also clears it on every device synced to the account or through GitHub, and a backup made before it won't bring it back. A device that only hears about it later loses the lesson marks and streak for that same day, including work it did offline that day.
+- **Just the progress:** Progress, Danger zone, **Reset all progress**. That also clears it on every device synced to the account or through GitHub, and a backup made before it won't bring it back. A device that only hears about it later loses the lesson marks and streak for that same day, including work it did offline that day. If a device's clock is wrong, cards reviewed within that clock error before a Start over may survive it.
 
 ## Troubleshooting
 

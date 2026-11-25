@@ -953,3 +953,27 @@ test("start over on the claude.ai build: the account copy is replaced, not merge
   const t=loadUi({dom:true}); t.use(db,"u1"); await t.pushRemote(); assert.ok(t.S().cards["u1.0"]); const before=db.reads;
   t.startOver(); await tick(); assert.equal(db.reads,before); assert.deepEqual(db.m.get(P+"cards_s1"),{cards:{}}); assert.ok(t.S().resetAt>0); assert.equal(db.m.get(P+"progress").resetAt,t.S().resetAt);
 });
+
+// ===== second wave =====
+test("merge: a migrated old card with reps 1 but a lapse and a long interval is not 'never graded', in either order",()=>{
+  const T=Math.floor(now/60000), graded=[1,5,3,T-3000,0,T-3000,-1,4], legacy=[2,5,1,T+4000,1,T,-1,30], mk=c=>({updatedAt:now,cards:{"u1.0":c}});
+  for(const [a,b] of [[mk(graded),mk(legacy)],[mk(legacy),mk(graded)]]) assert.deepEqual(L.mergeProgress(a,b).cards["u1.0"],legacy);
+  const noStep=[1,5,1,T+1,0,T,-1,0]; for(const [a,b] of [[mk(graded),mk(noStep)],[mk(noStep),mk(graded)]]) assert.deepEqual(L.mergeProgress(a,b).cards["u1.0"],noStep);
+});
+test("start over: a damaged or hand-edited cut can't make the reset stop removing older cards",()=>{
+  const R=now-3600000, RD="2026-11-25", rMin=Math.floor(R/60000);
+  const c=L.cleanSaved({resetAt:R,resetDay:RD,resetCut:1,cards:{}},now,RD); assert.equal(c.resetAt,R); assert.equal(c.resetCut,undefined);
+  const other={updatedAt:R-9000,cards:{"u1.0":[1,5,3,rMin-30,0,rMin-60,-1,2]}};
+  for(const m of [L.mergeProgress(c,other),L.mergeProgress(other,c),L.mergeProgress({resetAt:R,resetDay:RD,resetCut:1,cards:{}},other)]) assert.deepEqual(Object.keys(m.cards),[]);
+  assert.equal(L.cleanSaved({resetAt:now+300000,resetDay:RD,resetCut:now-2*DAY},now,RD).resetCut,now,"a cut more than a day before the marker is ignored");
+});
+test("start over: two devices with the same marker time agree on the reset day, whichever copy comes first",()=>{
+  // the phone's clock is ahead: it starts over at 00:10 on the 21st; the PC hears at 23:50 on the 20th and finishes a lesson that day
+  const R=Date.UTC(2026,10,21,0,10), pcNow=R-20*60000;
+  const phone={updatedAt:R,resetAt:R,resetDay:"2026-11-21",cards:{},unitsDone:{},lastDay:"",streak:0};
+  const heard=L.cleanSaved(phone,pcNow,"2026-11-20"); assert.equal(heard.resetDay,"2026-11-20");
+  const pc=Object.assign({},heard,{updatedAt:pcNow+60000,lastDay:"2026-11-20",streak:1,unitsDone:{u1:"2026-11-20"},log:{"2026-11-20":1}});
+  const x=L.mergeProgress(phone,pc), y=L.mergeProgress(pc,phone);
+  assert.equal(JSON.stringify(x.unitsDone),'{"u1":"2026-11-20"}'); assert.equal(x.resetDay,"2026-11-20"); assert.equal(x.streak,1);
+  for(const f of ["unitsDone","resetDay","resetAt","streak","lastDay","log"]) assert.equal(JSON.stringify(y[f]),JSON.stringify(x[f]),f);
+});
