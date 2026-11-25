@@ -762,7 +762,7 @@
   "stage": 2,
   "title": "At the clinic",
   "goal": "See a doctor at a clinic: say what hurts, since when and what you ate",
-  "tip": "khēr? on its own means 'what's up? is everything OK?'. ʿasa ma shar? 'nothing serious, I hope?' is answered ma shar, il-ḥamdu lillāh. Use the past for what happened (kalt simach 'I ate fish') and the present for now (ma agdar ākil 'I can't eat').",
+  "tip": "khēr? on its own means 'what's up? is everything OK?'. ʿasa ma shar? 'nothing serious, I hope?' is answered ma shar, il-ḥamdu lillāh. Use the past for what happened (kalēt simach 'I ate fish') and the present for now (ma agdar ākil 'I can't eat').",
   "grammar": "recycle: past for what happened, present for how you feel now",
   "dialogue": [
    [
@@ -781,17 +781,17 @@
    ],
    [
     "A",
-    "سلامات! من متى؟ وشو كلت؟",
-    "salāmāt! min mita? w shu kalt?",
+    "سلامات! من متى؟ وشو كليت؟",
+    "salāmāt! min mita? w shu kalēt?",
     "Oh dear! Since when? And what did you eat?",
-    "سَلَامَاتْ! مِنْ مِتَى؟ وْشُو كَلْتْ؟"
+    "سَلَامَاتْ! مِنْ مِتَى؟ وْشُو كَلَيْتْ؟"
    ],
    [
     "B",
-    "الله يسلمك. من يومين، كلت سمك في مطعم يديد",
-    "allāh ysallmak. min yōmēn, kalt simach fi maṭʿam yidīd",
+    "الله يسلمك. من يومين، كليت سمك في مطعم يديد",
+    "allāh ysallmak. min yōmēn, kalēt simach fi maṭʿam yidīd",
     "Thank you. For two days. I ate fish at a new restaurant.",
-    "اللّٰهْ يْسَلّْمَكْ. مِنْ يَوْمَيْنْ، كَلْتْ سِمَكْ فِي مَطْعَمْ يِدِيدْ"
+    "اللّٰهْ يْسَلّْمَكْ. مِنْ يَوْمَيْنْ، كَلَيْتْ سِمَكْ فِي مَطْعَمْ يِدِيدْ"
    ],
    [
     "A",
