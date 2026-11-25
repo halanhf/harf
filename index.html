@@ -224,7 +224,7 @@ details.grp>summary .tag{margin-left:auto}
 .msg .fix{font-size:14px;color:var(--saffron-ink);display:block;margin-top:6px}
 .compose{display:flex;gap:8px;align-items:flex-end}
 .compose textarea{flex:1;min-width:0;resize:vertical;min-height:52px}
-select,input[type=text],textarea{font:400 16px var(--ui);color:var(--ink);background:var(--card);border:1px solid var(--line-strong);border-radius:var(--r);padding:9px 12px;min-height:44px;max-width:100%}
+select,input[type=text],input[type=password],textarea{font:400 16px var(--ui);color:var(--ink);background:var(--card);border:1px solid var(--line-strong);border-radius:var(--r);padding:9px 12px;min-height:44px;max-width:100%}
 textarea{width:100%}
 .kv{display:grid;gap:0}
 .kv div{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-block:8px;font-variant-numeric:tabular-nums}
@@ -2521,6 +2521,19 @@ function ghSync(trigger,opts){
   return ghRun;
 }
 
+// first connection from the panel: the owner is whoever the token belongs to; nothing is kept unless the first sync gets through
+async function ghConnect(token,repo){
+  if(!window.HARF_PWA) return "no";
+  token=String(token||"").trim(); repo=String(repo||"").trim()||"harf-progress";
+  if(!/^[!-~]+$/.test(token)) return "auth";
+  if(!/^[A-Za-z0-9._-]{1,100}$/.test(repo)) return "repo";
+  if(navigator.onLine===false) return "offline";
+  const u=await ghApi({owner:"",repo,token},ghFetch).user(); if(u.kind!=="ok") return u.kind;
+  const sv=ghSave({owner:u.login,repo,token}); if(!sv.ok) return sv.why===GH_WHY.auth?"auth":sv.why===GH_WHY.repo?"repo":"store";
+  const r=await ghSync("manual"); if(r==="auth"||r==="repo") ghForget();
+  return r;
+}
+
 // ===== items index =====
 let ITEMS={}, UNITS=[], ITEM_UNIT={};
 const tilesOf=ar=>String(ar).replace(/[،؟?!.,]/g," ").split(/\s+/).filter(Boolean);
@@ -3435,7 +3448,8 @@ Return ONLY JSON: {"hook": one or two sentences in English, "example_ar", "examp
   const pwa=!!window.HARF_PWA;
   sec.append(el("h3",{style:"margin:22px 0 6px",textContent:"Phone and computer"}),el("p",{className:"tag",style:"max-width:62ch",textContent:DB
     ?"Open this same page on your phone (claude.ai in the browser, or the Claude app) and sign in to the same account: your progress follows you. Speaking practice and the Claude voice work in Chrome or Edge on a computer or Android; on iPhone and in the Claude apps, say answers aloud and compare."
-    :pwa?(standalone()?"This installed app keeps progress on this device. To move it, use Export backup here and Import backup on the other device."
+    :pwa?(GH?"This app syncs with your other devices through your private GitHub repo whenever it has a connection. Export backup still gives you a file of your own."
+      :standalone()?"This installed app keeps progress on this device. To move it, use Export backup here and Import backup on the other device."
       :"Progress here stays in this browser. To move it, use Export backup here and Import backup on the other device.")
     :"Progress here stays in this browser. The claude.ai version syncs across devices; use Export and Import backup to move progress between them."}));
   // the offline copy can go on the home screen or the taskbar: the browser's own install button where there is one, the steps where there isn't
@@ -3444,6 +3458,25 @@ Return ONLY JSON: {"hook": one or two sentences in English, "example_ar", "examp
     else sec.append(el("p",{className:"tag",style:"max-width:62ch;margin-top:6px",textContent:/iPhone|iPad|iPod/.test(navigator.userAgent)
       ?"To add it to your home screen: Share, then Add to Home Screen. The home screen app keeps its own progress, separate from Safari, so add it before you start or move your progress across with a backup."
       :"To install it, open Chrome or Edge's menu and look for Install (on Android: Install and create shortcut). It then opens in its own window and works offline."})); }
+  // sync through github (the offline app only): paste a token once on each device
+  if(pwa){
+    sec.append(el("h3",{style:"margin:22px 0 6px",textContent:"Sync"}));
+    if(GH){
+      sec.append(el("p",{className:"tag",id:"gh-line",role:"status",textContent:ghLine(true,ghSt,Date.now())}),el("p",{className:"tag",textContent:GH.owner+"/"+GH.repo}),
+        el("div",{className:"row",style:"margin-top:8px"},
+          el("button",{className:"btn small",type:"button",textContent:"Sync now",onclick:async e=>{ e.currentTarget.disabled=true; await ghSync("manual"); renderMe(); }}),
+          el("button",{className:"btn small",type:"button",textContent:"Disconnect",onclick:()=>{ ghForget(); renderMe(); }})));
+    } else {
+      const tok=el("input",{type:"password",id:"gh-token",autocomplete:"off",autocapitalize:"off",autocorrect:"off",spellcheck:false}), rp=el("input",{type:"text",id:"gh-repo",value:"harf-progress",autocomplete:"off",autocapitalize:"off",autocorrect:"off",spellcheck:false});
+      const line=el("p",{className:"tag",id:"gh-line",role:"status",textContent:ghLine(false)});
+      const go=el("button",{className:"btn primary small",type:"button",textContent:"Connect",onclick:async()=>{ go.disabled=true; go.textContent="Connecting…";
+        const k=await ghConnect(tok.value,rp.value); tok.value="";
+        if(GH){ renderMe(); return; }
+        go.disabled=false; go.textContent="Connect";
+        line.textContent=k==="offline"?"You're offline. Connect to the internet, then try again.":k==="store"?"This browser isn't letting Harf save the token.":"Sync problem: "+(GH_WHY[k]||GH_WHY.server); }});
+      sec.append(el("p",{className:"tag",style:"max-width:62ch",textContent:"Keeps this device in step with your others through a private GitHub repo that only you can read. Paste an access token once on each device; the steps are in the README."}),line,
+        el("div",{className:"setting"},el("label",{htmlFor:"gh-token",textContent:"Access token"}),tok),el("div",{className:"setting"},el("label",{htmlFor:"gh-repo",textContent:"Repo"}),rp),go);
+    } }
   sec.append(el("h2",{style:"margin-top:26px",textContent:"Settings"}));
   const select=(id,label,opts,val,onch)=>{ const s=el("select",{id}); opts.forEach(([v,l])=>s.append(el("option",{value:String(v),textContent:l,selected:String(val)===String(v)}))); s.onchange=()=>onch(s.value); return el("div",{className:"setting"},el("label",{htmlFor:id,textContent:label}),s); };
   sec.append(select("set-translit","Pronunciation lines",[["auto","Fade out as I level up"],["always","Always show"],["tap","Show on tap"],["never","Never show"]],S.settings.translit,v=>{ S.settings.translit=v; save(); }),

@@ -655,6 +655,7 @@ test("github client: results never carry the token, and fetch never follows a re
 
 // ===== the offline app syncs through github =====
 EXPOSE+=",ghSync,ghForget,ghSave,savedMsg,gh:()=>GH";
+EXPOSE+=",ghConnect";
 const KEY="harf-gulf-v1", CFG=JSON.stringify({owner:"someone",repo:"harf-progress",token:TOKEN});
 // a store that already holds another device's progress
 function hubWith(p){ const hub=fakeHub(); const {meta,shards}=L.splitProgress(p); const st={};
@@ -758,4 +759,38 @@ test("offline app: saving the connection refuses an empty owner or repo",()=>{
   for(const c of [{owner:"",repo:"harf-progress"},{owner:"  ",repo:"harf-progress"},{owner:"someone",repo:""},{owner:"someone",repo:" \n"},{owner:"someone"},{repo:"harf-progress"}]){
     assert.deepEqual({...t.ghSave(Object.assign({token:TOKEN},c))},{ok:false,why:"the progress repo was not found"},JSON.stringify(c)); assert.ok(!store.has(KEY+"-gh")); assert.equal(t.gh(),null); }
   assert.deepEqual({...t.ghSave({owner:" someone ",repo:" harf-progress ",token:TOKEN})},{ok:true}); assert.deepEqual(JSON.parse(store.get(KEY+"-gh")),{owner:"someone",repo:"harf-progress",token:TOKEN});
+});
+
+test("connect: the owner comes from /user, the token is kept only under its own key, and a bad token or repo is not kept",async()=>{
+  const hub=fakeHub(); hub.login="a-learner"; const store=new Map(); const t=loadUi({boot:true,pwa:true,fetch:hub.fetch,store}); await tick();
+  assert.equal(t.savedMsg(),"This browser only");
+  assert.equal(await t.ghConnect("  "+TOKEN+"\n",""),"ok");
+  assert.deepEqual(JSON.parse(store.get(KEY+"-gh")),{owner:"a-learner",repo:"harf-progress",token:TOKEN}); assert.ok(hub.files.has("progress.json")); assert.equal(t.savedMsg(),"Synced just now");
+  for(const [k,v] of store) if(k!==KEY+"-gh") assert.ok(!v.includes(TOKEN),k);
+  for(const f of hub.files.values()) assert.ok(!f.text.includes(TOKEN));
+  for(const q of hub.log){ assert.ok(q.url.startsWith("https://api.github.com/")); assert.ok(!q.url.includes(TOKEN)&&!q.body.includes(TOKEN)); }
+  t.ghForget(); assert.ok(!store.has(KEY+"-gh")&&!store.has(KEY+"-ghs")); assert.equal(t.gh(),null);
+  hub.log.length=0; assert.equal(await t.ghConnect("","harf-progress"),"auth"); assert.equal(await t.ghConnect(TOKEN,"a-learner/harf-progress"),"repo"); assert.equal(await t.ghConnect("tok\u00e9n","harf-progress"),"auth"); assert.equal(hub.log.length,0);
+  hub.status["GET user"]=401; assert.equal(await t.ghConnect(TOKEN,"harf-progress"),"auth"); assert.ok(!store.has(KEY+"-gh")); hub.status={};
+  // the repo isn't there, or the token can't reach it: found out on the first write, and not kept
+  assert.equal(await t.ghConnect(TOKEN,"other-repo"),"repo"); assert.ok(!store.has(KEY+"-gh")); assert.equal(t.note.hidden,true);
+  t.env.navigator.onLine=false; assert.equal(await t.ghConnect(TOKEN,"harf-progress"),"offline"); assert.ok(!store.has(KEY+"-gh"));
+  // not the offline app: nothing happens
+  const c=loadUi({boot:true,claude:claudeWith(fakeDb()),fetch:hub.fetch}); await tick(); hub.log.length=0; assert.equal(await c.ghConnect(TOKEN,"harf-progress"),"no"); assert.equal(hub.log.length,0);
+});
+test("connect: a browser that won't store the token is told so, and nothing is kept",async()=>{
+  const hub=fakeHub(); const t=loadUi({boot:true,pwa:true,fetch:hub.fetch}); await tick();
+  t.env.localStorage.setItem=()=>{ throw new Error("full"); };
+  assert.equal(await t.ghConnect(TOKEN,"harf-progress"),"store"); assert.equal(t.gh(),null); assert.equal(hub.files.size,0);
+});
+test("sync panel: a password field outside any form, one place that names github, and a backup that is still progress only",()=>{
+  const panel=html.slice(html.indexOf("// sync through github (the offline app only)"),html.indexOf('el("h2",{style:"margin-top:26px",textContent:"Settings"})')); assert.ok(panel.length>500);
+  assert.ok(!/<form\b/i.test(html)&&!/el\("form"/.test(panel)); // the csp has form-action 'none'; the chat box has its own form, the panel has none
+  assert.match(html,/type:"password",id:"gh-token",autocomplete:"off"/);
+  assert.match(html,/autocapitalize:"off",autocorrect:"off",spellcheck:false/);
+  assert.match(html,/select,input\[type=text\],input\[type=password\],textarea\{/);
+  assert.ok(!/console\./.test(html)); assert.equal(html.split("api.github.com").length-1,1);
+  assert.match(html,/state:serialize\(\),gen:S\.gen\}/);
+  for(const s of ["Not set up","Synced just now","Offline, will sync later","Sync problem: ","Connecting…","Disconnect","Sync now"]) assert.ok(html.includes(s),s);
+  assert.ok(!/GH\.token/.test(html.slice(html.indexOf("function renderMe"),html.indexOf("function renderMe")+9000))); // the token is never rendered
 });
