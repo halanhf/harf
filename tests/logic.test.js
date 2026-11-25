@@ -205,7 +205,7 @@ test("merge: a stale copy never overwrites newer work, from either side",()=>{
 test("merge: starting over wins over older progress on other devices, but keeps work done after it",()=>{
   const R=Date.UTC(2026,2,5); const rMin=Math.floor(R/60000);
   const reset={updatedAt:R,resetAt:R,resetDay:"2026-03-05",cards:{},unitsDone:{},lastDay:"",streak:0};
-  const old={updatedAt:R+5,lastDay:"2026-03-04",streak:12,cards:{a:[1,5,3,rMin+999,0,rMin-100,-1,2],b:[1,5,1,rMin+999,0,rMin+50,-1,1]},unitsDone:{u1:"2026-03-01",u2:"2026-03-05"},custom:[{id:"c"+(R-1000).toString(36)+"abc"},{id:"c"+(R+1000).toString(36)+"abc"}]};
+  const old={updatedAt:R+5,lastDay:"2026-03-04",streak:12,cards:{a:[1,5,3,rMin+999,0,rMin-100,-1,2],b:[1,5,1,rMin+999,0,rMin+50,-1,1]},unitsDone:{u1:"2026-03-01",u2:"2026-03-06"},custom:[{id:"c"+(R-1000).toString(36)+"abc"},{id:"c"+(R+1000).toString(36)+"abc"}]};
   const m=L.mergeProgress(old,reset);
   assert.deepEqual(Object.keys(m.cards),["b"]); assert.deepEqual(Object.keys(m.unitsDone),["u2"]); assert.equal(m.streak,0); assert.equal(m.custom.length,1);
   assert.equal(m.resetAt,R);
@@ -444,4 +444,36 @@ test("account read: a card group that fails to load leaves nothing marked as rea
   db.fail.clear(); await t.pushRemote();
   assert.ok(db.m.get(P+"cards_s1").cards["u1.0"]); assert.ok(t.S().cards["u1.0"]&&t.S().cards["s2u001.0"]);
   assert.deepEqual({...t.stamps()},{...db.m.get(P+"progress").shards});
+});
+test("merge: start over wins over everything older on a device that hadn't heard of it, the same day included",()=>{
+  const R=Date.UTC(2026,2,5,12), rMin=Math.floor(R/60000), RD="2026-03-05";
+  const fresh={updatedAt:R,resetAt:R,resetDay:RD,cards:{},unitsDone:{},lastDay:"",streak:0};
+  // the other device studied that morning, before the reset, and hasn't seen it yet
+  const stale={updatedAt:R+5,lastDay:RD,streak:12,freezes:1,reviewsToday:40,newToday:1,talks:9,msaDay:RD,
+    cards:{a:[1,5,3,rMin+999,0,rMin-100,-1,2]},unitsDone:{sounds:"2026-03-01",u1:RD},log:{[RD]:40,"2026-03-04":10},
+    rp:{u1:RD},read:{"r1-01":RD},seen:{letters:1},session:{day:RD,done:{review:1}}};
+  for(const m of [L.mergeProgress(stale,fresh),L.mergeProgress(fresh,stale)]){
+    for(const f of ["cards","unitsDone","log","rp","read","seen"]) assert.equal(JSON.stringify(m[f]),"{}",f);
+    for(const f of ["streak","freezes","reviewsToday","newToday","talks"]) assert.equal(m[f]||0,0,f);
+    assert.equal(m.lastDay,""); assert.equal(m.msaDay,""); assert.equal(m.session.day,""); assert.equal(m.resetAt,R); assert.equal(m.resetDay,RD);
+  }
+  // the device that started over then studies the same day: its own work stays
+  const after=Object.assign({},fresh,{updatedAt:R+60000,lastDay:RD,streak:1,reviewsToday:3,unitsDone:{sounds:RD},log:{[RD]:3},read:{"r1-02":RD},seen:{vowels:1},talks:1,session:{day:RD,done:{learn:1}}});
+  for(const m of [L.mergeProgress(after,stale),L.mergeProgress(stale,after)]){
+    assert.equal(m.streak,1); assert.equal(m.reviewsToday,3); assert.equal(m.log[RD],3); assert.equal(m.talks,1);
+    assert.deepEqual(Object.keys(m.unitsDone),["sounds"]); assert.deepEqual(Object.keys(m.read),["r1-02"]); assert.deepEqual(Object.keys(m.seen),["vowels"]); assert.deepEqual({...m.session.done},{learn:1});
+  }
+  // work done on the other device on later days still counts, but its streak can't reach back past the reset
+  const later=Object.assign({},stale,{lastDay:"2026-03-07",streak:14,unitsDone:{u1:RD,u2:"2026-03-06"},cards:{b:[1,5,1,rMin+9999,0,rMin+2000,-1,1]}});
+  const k=L.mergeProgress(fresh,later); assert.deepEqual(Object.keys(k.cards),["b"]); assert.deepEqual(Object.keys(k.unitsDone),["u2"]); assert.equal(k.streak,2); assert.equal(k.lastDay,"2026-03-07");
+  // two copies that both carry the reset keep everything either has
+  const p=Object.assign({},after,{unitsDone:{u3:RD}}); assert.deepEqual(Object.keys(L.mergeProgress(after,p).unitsDone).sort(),["sounds","u3"]);
+});
+test("start over: the account push replaces instead of merging, and the button asks for that",async()=>{
+  const db=fakeDb({[P+"progress"]:{updatedAt:5,lastDay:"2026-03-01",streak:4,shards:{s1:"a1"}},[P+"cards_s1"]:{cards:{"u1.0":pcard(100,3)}}});
+  const t=loadUi(); t.use(db,"u1"); await t.pushRemote(); assert.ok(t.S().cards["u1.0"]);
+  const R=Date.now(); t.setS({resetAt:R,resetDay:"2026-03-05",updatedAt:R}); const before=db.reads;
+  await t.pushRemote({replace:true});
+  assert.equal(db.reads,before,"a replace push reads nothing"); assert.deepEqual(db.m.get(P+"cards_s1"),{cards:{}}); assert.equal(db.m.get(P+"progress").resetAt,R); assert.equal(db.m.get(P+"progress").streak,0);
+  assert.match(html,/S\.resetAt=Date\.now\(\); S\.resetDay=today\(\); save\(\); flush\(\{replace:true\}\)/);
 });

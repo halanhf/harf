@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-5mfrMZwl0We17ExkKRei3bOM5LvSdCL2YuhrO6JAzWQ=' 'sha256-HvBY4llcNvE1m/EX6bMH9KpzHc4dGfeOX8BAF06ncDY=' 'sha256-u/tS4yAM6oeqhkv9Q8tN4FD59br4JkeGoTHcAZMt9WY=' 'sha256-vp9yiuNVlFlgqmBK0iLBTlFGjpvCVGY5xQ5q7LnFcr8='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-5mfrMZwl0We17ExkKRei3bOM5LvSdCL2YuhrO6JAzWQ=' 'sha256-psLNyxhv1hCrcQS7g087KjXXQq4i/2gfLtLhgMtMUhc=' 'sha256-t3qlENI8A3EbYqxw14DS7dCJQaEFoVU1CmtaOImpvrg=' 'sha256-vp9yiuNVlFlgqmBK0iLBTlFGjpvCVGY5xQ5q7LnFcr8='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -2152,10 +2152,32 @@ function cleanSaved(raw,now,todayKey){
   if(todayKey&&o.resetDay>todayKey) o.resetDay=todayKey;
   return o;
 }
+// what a "start over" at time R (ms) on day RD removes from one copy of progress (packed form); the copy is never changed.
+// a copy that hadn't heard of the reset (behind) also loses what it did on the reset day itself, since that was before the reset
+function afterReset(o,R,RD,behind){
+  o=Object.assign({},o); if(!R) return o;
+  const lastReview=c=>!Array.isArray(c)?-1:c.length===8?c[5]:c[3]-Math.round(c[1]*1440), rMin=Math.floor(R/60000);
+  const old=d=>{ d=String(d||""); return behind?d<=RD:d<RD; };
+  const pick=(x,keep)=>{ const r={}; for(const [k,v] of Object.entries(x||{})) if(keep(k,v)) r[k]=v; return r; };
+  o.cards=pick(o.cards,(k,c)=>lastReview(c)>=rMin);
+  o.suspended=pick(o.suspended,(k,v)=>Math.abs(v)>=R);
+  o.custom=(Array.isArray(o.custom)?o.custom:[]).filter(c=>c&&(parseInt(String(c.id).slice(1,-3),36)||0)>=R);
+  for(const f of ["unitsDone","rp","read"]) o[f]=pick(o[f],(k,v)=>!old(v));
+  o.log=pick(o.log,k=>!old(k));
+  if(old(o.lastDay)){ o.streak=0; o.freezes=0; o.reviewsToday=0; o.newToday=0; o.lastDay=""; o.freezeUsed=""; }
+  else if(behind) o.streak=Math.min(o.streak||0,dayNum(o.lastDay)-dayNum(RD));
+  if(o.session&&old(o.session.day)) o.session={day:"",done:{}};
+  if(old(o.msaDay)) o.msaDay="";
+  if(behind){ o.seen={}; o.talks=0; }
+  return o;
+}
 // combine two saved copies of progress (packed form) so no device's work is lost: each card keeps its most recent
 // review, finished lessons and added words are unioned, and day counters come from whichever copy saw the later day
 function mergeProgress(a,b){
   a=a||{}; b=b||{};
+  // "start over" leaves a dated marker; each copy first loses what the later marker removes, then the two are combined
+  const reset=(a.resetAt||0)>=(b.resetAt||0)?a:b, R=reset.resetAt||0, RD=reset.resetDay||"";
+  a=afterReset(a,R,RD,(a.resetAt||0)<R); b=afterReset(b,R,RD,(b.resetAt||0)<R);
   const aNew=(a.updatedAt||0)>=(b.updatedAt||0), newer=aNew?a:b, older=aNew?b:a;
   const out=Object.assign({},older,newer);
   const keys=(x,y)=>new Set([...Object.keys(x||{}),...Object.keys(y||{})]);
@@ -2174,23 +2196,12 @@ function mergeProgress(a,b){
   const day=la===lb?newer:la>lb?a:b;
   for(const f of ["streak","freezes","freezeUsed","lastDay","reviewsToday","newToday"]) out[f]=day[f];
   if(la===lb){ out.streak=Math.max(a.streak||0,b.streak||0); out.reviewsToday=Math.max(a.reviewsToday||0,b.reviewsToday||0); out.newToday=Math.max(a.newToday||0,b.newToday||0); out.freezes=Math.min(a.freezes||0,b.freezes||0); }
-  const sa=a.session||{}, sb=b.session||{};
+  const sa=Object.assign({day:"",done:{}},a.session), sb=Object.assign({day:"",done:{}},b.session);
   out.session=sa.day===sb.day?{day:sa.day,done:Object.assign({},sa.done,sb.done)}:((sa.day||"")>(sb.day||"")?sa:sb);
-  out.msaDay=(a.msaDay||"")>(b.msaDay||"")?a.msaDay:b.msaDay;
+  out.msaDay=(a.msaDay||"")>(b.msaDay||"")?a.msaDay:(b.msaDay||"");
   out.talks=Math.max(a.talks||0,b.talks||0);
   out.updatedAt=Math.max(a.updatedAt||0,b.updatedAt||0);
-  // "start over" leaves a dated marker; anything older than it, from either copy, is dropped
-  const reset=(a.resetAt||0)>=(b.resetAt||0)?a:b, R=reset.resetAt||0, RD=reset.resetDay||"";
   out.resetAt=R; out.resetDay=RD;
-  if(R){ const rMin=Math.floor(R/60000);
-    for(const k of Object.keys(out.cards)) if(lastReview(out.cards[k])<rMin) delete out.cards[k];
-    for(const k of Object.keys(out.unitsDone)) if(String(out.unitsDone[k])<RD) delete out.unitsDone[k];
-    for(const k of Object.keys(out.suspended)) if(Math.abs(out.suspended[k])<R) delete out.suspended[k];
-    out.custom=out.custom.filter(c=>(parseInt(String(c.id).slice(1,-3),36)||0)>=R);
-    for(const f of ["log","rp"]) for(const k of Object.keys(out[f])) if((f==="log"?k:String(out[f][k]))<RD) delete out[f][k];
-    if((out.lastDay||"")<RD){ out.streak=0; out.lastDay=""; out.freezes=0; out.freezeUsed=""; out.reviewsToday=0; out.newToday=0; }
-    if((out.session&&out.session.day||"")<RD) out.session={day:"",done:{}};
-    if((out.msaDay||"")<RD) out.msaDay=""; }
   return out;
 }
 // "in 10 min", "in 3 days": what a grade button will do
@@ -2215,7 +2226,7 @@ function joinProgress(meta,shards){
     for(const [k,c] of Object.entries(sh)) cards[k]=cards[k]?mergeProgress({cards:{[k]:cards[k]}},{cards:{[k]:c}}).cards[k]:c; }
   o.cards=cards; return o;
 }
-if(typeof module!=="undefined") module.exports={SHARDS,shardOf,splitProgress,joinProgress,learnDay,dueAt,validCard,validGen,cleanSaved,S_MIN,MAX_IVL,normalizeArabic,levenshtein,similarity,wordMatch,letterForms,schedule,retrievability,intervalDays,isLeech,FSRS_W,cardMode,pickOptions,soundShift,validateUnit,isHidden,stageStatus,planDay,interleave,packCard,unpackCard,MATURE_DAYS,dayNum,nextStreak,visibleStreak,mergeProgress,whenLabel};
+if(typeof module!=="undefined") module.exports={SHARDS,shardOf,splitProgress,joinProgress,learnDay,dueAt,validCard,validGen,cleanSaved,S_MIN,MAX_IVL,normalizeArabic,levenshtein,similarity,wordMatch,letterForms,schedule,retrievability,intervalDays,isLeech,FSRS_W,cardMode,pickOptions,soundShift,validateUnit,isHidden,stageStatus,planDay,interleave,packCard,unpackCard,MATURE_DAYS,dayNum,nextStreak,visibleStreak,mergeProgress,afterReset,whenLabel};
 </script>
 
 <script>
@@ -2330,7 +2341,7 @@ function pushRemote(opts){
   })();
   return pushing.then(()=>{ pushing=null; if(replaceNext){ replaceNext=false; pushAgain=false; return pushRemote({replace:true}); } if(pushAgain){ pushAgain=false; return pushRemote(); } });
 }
-const flush=()=>{ persistLocal(); return pushRemote(); };
+const flush=opts=>{ persistLocal(); return pushRemote(opts); };
 function saveGenUnit(u){
   try{ localStorage.setItem(KEY+"-gen",JSON.stringify(S.gen)); }catch(e){}
   if(DB&&UID) progressRef().collection("units").doc(u.id).set(u).catch(()=>{});
@@ -3326,7 +3337,7 @@ Return ONLY JSON: {"hook": one or two sentences in English, "example_ar", "examp
   const r1=el("button",{className:"btn small danger",type:"button",textContent:"Reset all progress"}); const r2=el("button",{className:"btn small danger",type:"button",hidden:true,textContent:"Tap again to erase everything"});
   r1.onclick=()=>{ r2.hidden=false; r1.hidden=true; setTimeout(()=>{ if(r2.isConnected){ r2.hidden=true; r1.hidden=false; } },5000); };
   // a reset is a dated marker, so other devices drop their older progress when they next merge instead of bringing it back
-  r2.onclick=()=>{ const gen=S.gen; S=blank(); S.gen=gen; S.resetAt=Date.now(); S.resetDay=today(); save(); flush(); rebuild(); refresh(); renderMe(); };
+  r2.onclick=()=>{ const gen=S.gen; S=blank(); S.gen=gen; S.resetAt=Date.now(); S.resetDay=today(); save(); flush({replace:true}); rebuild(); refresh(); renderMe(); };
   sec.append(el("h3",{style:"margin:26px 0 4px;color:var(--bad)",textContent:"Danger zone"}),el("div",{className:"setting"},el("span",{textContent:"Start over, on every device (keeps written lessons)"}),el("div",{className:"row"},r1,r2)));
 }
 
