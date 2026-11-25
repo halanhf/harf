@@ -4,10 +4,11 @@
 #   python tools/harakat_check.py --all              every file, a file not started fails too
 #   python tools/harakat_check.py --base REF [...]   also fails if a checked file changed anything but the added vowelled elements since git REF
 #
-# three checks per row (check_row):
+# four checks per row (check_row):
 #   strip    the form with its marks removed is the arabic field, and keeps every shadda the arabic field has. the arabic field is never edited
 #   reading  the marks, read letter by letter, spell the transliteration: the form is split into words (whitespace and ، ؟ ! . … :) and each word into
 #            clusters (a letter + the marks after it); the sounds of all words are joined with nothing between them and must fullmatch translit_key(translit)
+#   nfc      the form is in Unicode canonical order (unicodedata.normalize("NFC", s) leaves it unchanged): on one letter the vowel comes before the shadda (يَّ), then sukūn or dagger alif
 #   vowels   every letter is fully vowelled (see "reading rules") and carries no mark it may not carry
 #
 # reading rules. marks: fatha a, kasra i, damma u, sukun nothing, tanwin an/in/un, dagger alif ā (replaces a fatha); exactly one of these per letter, and a
@@ -160,6 +161,7 @@ def reading(vow):  # (regex, problems)
 
 def check_row(ar, tr, vow, allowed=False):
     out = check_strip(vow, ar)
+    if unicodedata.normalize("NFC", vow) != vow: out.append("nfc: the marks are not in canonical order (the vowel before the shadda, then sukūn); NFC order is the one order used everywhere")
     rx, probs = reading(vow)
     out += [f"vowels: {p}" for p in probs]
     ok = re.fullmatch(rx, translit_key(tr)) is not None

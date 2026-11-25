@@ -12,14 +12,14 @@
     "ألو، طرشت لك رسالة. شفتها؟",
     "alō, ṭarrasht-lak risāla. shift-ha?",
     "Hello? I sent you a message. Have you seen it?",
-    "أَلَوْ، طَرَّشْتْ لَكْ رِسَالَة. شِفْتْهَا؟"
+    "أَلَوْ، طَرَّشْتْ لَكْ رِسَالَة. شِفْتْهَا؟"
    ],
    [
     "B",
     "لا، ما وصلتني. متى طرشتها؟",
     "la, ma wiṣlatni. mita ṭarrasht-ha?",
     "No, I haven't got it. When did you send it?",
-    "لَا، مَا وِصْلَتْنِي. مِتَى طَرَّشْتْهَا؟"
+    "لَا، مَا وِصْلَتْنِي. مِتَى طَرَّشْتْهَا؟"
    ],
    [
     "A",
@@ -33,28 +33,28 @@
     "طرشها مرة ثانية، الله يخليك",
     "ṭarrishha marra thānya, allāh ykhallīk",
     "Send it again, please.",
-    "طَرِّشْهَا مَرَّة ثَانْيَة، اللّٰهْ يْخَلِّيكْ"
+    "طَرِّشْهَا مَرَّة ثَانْيَة، اللّٰهْ يْخَلِّيكْ"
    ],
    [
     "A",
     "طرشتها. وصلتك؟",
     "ṭarrasht-ha. wiṣlatak?",
     "Sent. Did you get it?",
-    "طَرَّشْتْهَا. وِصْلَتَكْ؟"
+    "طَرَّشْتْهَا. وِصْلَتَكْ؟"
    ],
    [
     "B",
     "هيه، وصلتني. وطرش لي صورة المكان بعد",
     "hē, wiṣlatni. w ṭarrish-li ṣūrat il-makān baʿad",
     "Yes, I've got it. And send me a photo of the place too.",
-    "هَيْه، وِصْلَتْنِي. وْطَرِّشْ لِي صُورَةْ الْمَكَانْ بَعَدْ"
+    "هَيْه، وِصْلَتْنِي. وْطَرِّشْ لِي صُورَةْ الْمَكَانْ بَعَدْ"
    ],
    [
     "A",
     "زين، بطرشها. يلا، أشوفك هناك",
     "zēn, baṭarrishha. yalla, ashūfak hnāk",
     "OK, I'll send it. Right, see you there.",
-    "زَيْنْ، بَطَرِّشْهَا. يَلَّا، أَشُوفَكْ هْنَاكْ"
+    "زَيْنْ، بَطَرِّشْهَا. يَلَّا، أَشُوفَكْ هْنَاكْ"
    ]
   ],
   "items": [
@@ -64,7 +64,7 @@
     "I sent you (something), I've sent it to you (to a man)",
     "أرسلت لك",
     "to a woman: ṭarrasht-lich (طرشت لج)",
-    "طَرَّشْتْ لَكْ"
+    "طَرَّشْتْ لَكْ"
    ],
    [
     "رسالة",
@@ -96,7 +96,7 @@
     "I sent it (f.); you sent it (to a man)",
     "أرسلتها",
     "to a woman (you sent it): ṭarrashtīha (طرشتيها); a masculine thing: ṭarrashtah (طرشته)",
-    "طَرَّشْتْهَا"
+    "طَرَّشْتْهَا"
    ],
    [
     "طرشها",
@@ -104,7 +104,7 @@
     "send it (f.) (to a man)",
     "أرسلها",
     "to a woman: ṭarrshīha (طرشيها); a masculine thing: ṭarrshah (طرشه)",
-    "طَرِّشْهَا"
+    "طَرِّشْهَا"
    ],
    [
     "وصلتك؟",
@@ -152,7 +152,7 @@
     "في الطريق. قولي له بكون هناك بعد ربع ساعة",
     "fi ṭ-ṭarīg. gūlī-lah bakūn hnāk baʿd rubʿ sāʿa",
     "On my way. Tell him I'll be there in a quarter of an hour.",
-    "فِي الطَّرِيقْ. قُولِي لَهْ بَكُونْ هْنَاكْ بَعْدْ رُبْعْ سَاعَة"
+    "فِي الطَّرِيقْ. قُولِي لَهْ بَكُونْ هْنَاكْ بَعْدْ رُبْعْ سَاعَة"
    ],
    [
     "A",
@@ -166,7 +166,7 @@
     "طرشت لج إيميل البارحة. شوفيه",
     "ṭarrasht-lich īmēl il-bārḥa. shūfīh",
     "I sent you an email last night. Have a look at it.",
-    "طَرَّشْتْ لِجْ إِيمَيْلْ الْبَارْحَة. شُوفِيهْ"
+    "طَرَّشْتْ لِجْ إِيمَيْلْ الْبَارْحَة. شُوفِيهْ"
    ],
    [
     "A",
@@ -180,14 +180,14 @@
     "مشكورة، ما قصرتي",
     "mashkūra, mā gaṣṣarti",
     "Thanks, that's really kind of you.",
-    "مَشْكُورَة، مَا قَصَّرْتِي"
+    "مَشْكُورَة، مَا قَصَّرْتِي"
    ],
    [
     "A",
     "ما سوينا شي. لا تتأخر!",
     "mā sawwēna shay. la titʼakhkhar!",
     "It was nothing. Don't be late!",
-    "مَا سَوَّيْنَا شَيْ. لَا تِتْأَخَّرْ!"
+    "مَا سَوَّيْنَا شَيْ. لَا تِتْأَخَّرْ!"
    ]
   ],
   "items": [
@@ -245,7 +245,7 @@
     "thank you, that's very kind of you (to a woman)",
     "شكرًا لكِ",
     "to a man: mā gaṣṣart (u12); the reply: mā sawwēna shay",
-    "مَا قَصَّرْتِي"
+    "مَا قَصَّرْتِي"
    ],
    [
     "لا تتأخر",
@@ -253,7 +253,7 @@
     "don't be late (to a man)",
     "لا تتأخر",
     "to a woman: la titʼakhkharīn (لا تتأخرين)",
-    "لَا تِتْأَخَّرْ"
+    "لَا تِتْأَخَّرْ"
    ]
   ],
   "culture": "The National (2020) lists ṭarrish 'send' among the Emirati words to use in the workplace: ṭarrish-li 'send it to me', ṭarrasht-lah 'I sent it to him'. You'll also hear it mixed with English, as in 'ana ṭarrasht-lak risāla yesterday'."
@@ -271,14 +271,14 @@
     "السلام عليكم. عندك شاحن حق هالتلفون؟",
     "as-salāmu ʿalaykum. ʿindak shāḥin ḥagg hat-tilifōn?",
     "Hello. Have you got a charger for this phone?",
-    "السَّلَامُ عَلَيْكُمْ. عِنْدَكْ شَاحِنْ حَقّْ هَالتِّلِفَوْنْ؟"
+    "السَّلَامُ عَلَيْكُمْ. عِنْدَكْ شَاحِنْ حَقّْ هَالتِّلِفَوْنْ؟"
    ],
    [
     "A",
     "وعليكم السلام. هيه، هذا حق هالموبايل. تبيه؟",
     "wa ʿalaykum is-salām. hē, hādha ḥagg hal-mobāyl. tabīh?",
     "Hello. Yes, this one's for this phone. Do you want it?",
-    "وَعَلَيْكُمْ السَّلَامْ. هَيْه، هٰذَا حَقّْ هَالْمُوبَايْلْ. تَبِيهْ؟"
+    "وَعَلَيْكُمْ السَّلَامْ. هَيْه، هٰذَا حَقّْ هَالْمُوبَايْلْ. تَبِيهْ؟"
    ],
    [
     "B",
@@ -292,14 +292,14 @@
     "بخمسين درهم. أحطه في كيس؟",
     "b-khamsīn dirham. aḥuṭṭah fi kīs?",
     "Fifty dirhams. Shall I put it in a bag?",
-    "بْخَمْسِينْ دِرْهَمْ. أَحُطَّهْ فِي كِيسْ؟"
+    "بْخَمْسِينْ دِرْهَمْ. أَحُطَّهْ فِي كِيسْ؟"
    ],
    [
     "B",
     "لا، مشكور. عطني إياه بس",
     "la, mashkūr. ʿaṭni iyyāh bas",
     "No, thanks. Just give it to me.",
-    "لَا، مَشْكُورْ. عَطْنِي إِيَّاهْ بَسْ"
+    "لَا، مَشْكُورْ. عَطْنِي إِيَّاهْ بَسْ"
    ],
    [
     "A",
@@ -355,7 +355,7 @@
     "I put it (m.); shall I put it…?",
     "أضعه",
     "a feminine thing: aḥuṭṭha (أحطها)",
-    "أَحُطَّهْ"
+    "أَحُطَّهْ"
    ],
    [
     "عطني إياه",
@@ -363,7 +363,7 @@
     "give it (m.) to me (to a man)",
     "أعطني إياه",
     "to a woman: ʿaṭīni iyyāh (عطيني إياه); a feminine thing: ʿaṭni iyyāha (عطني إياها)",
-    "عَطْنِي إِيَّاهْ"
+    "عَطْنِي إِيَّاهْ"
    ],
    [
     "الفاتورة",
@@ -396,14 +396,14 @@
     "شباب، وين الصورة حق البر؟",
     "shabāb, wēn iṣ-ṣūra ḥagg il-barr?",
     "Guys, where's the photo from the desert?",
-    "شَبَابْ، وَيْنْ الصُّورَة حَقّْ الْبَرّْ؟"
+    "شَبَابْ، وَيْنْ الصُّورَة حَقّْ الْبَرّْ؟"
    ],
    [
     "B",
     "حطيتها في القروب. ما شفتوها؟",
     "ḥaṭṭēt-ha fi l-grūb. ma shiftūha?",
     "I put it in the group. Haven't you seen it?",
-    "حَطَّيْتْهَا فِي الْقْرُوبْ. مَا شِفْتُوهَا؟"
+    "حَطَّيْتْهَا فِي الْقْرُوبْ. مَا شِفْتُوهَا؟"
    ],
    [
     "A",
@@ -431,7 +431,7 @@
     "وباكر بطرش لكم الفيديو بعد",
     "w bāchir baṭarrish-lkum il-fīdyo baʿad",
     "And tomorrow I'll send you the video too.",
-    "وْبَاكِرْ بَطَرِّشْ لْكُمْ الْفِيدْيُو بَعَدْ"
+    "وْبَاكِرْ بَطَرِّشْ لْكُمْ الْفِيدْيُو بَعَدْ"
    ],
    [
     "A",
@@ -448,7 +448,7 @@
     "I put it (f.); you put it (to a man)",
     "وضعتها",
     "to a woman (you put it): ḥaṭṭētīha (حطيتيها); a masculine thing: ḥaṭṭētah (حطيته)",
-    "حَطَّيْتْهَا"
+    "حَطَّيْتْهَا"
    ],
    [
     "ما شفتوها؟",
@@ -496,7 +496,7 @@
     "I'll send you (something) (to a group)",
     "سأرسل لكم",
     "to one man: baṭarrish-lak (بطرش لك); to one woman: baṭarrish-lich (بطرش لج)",
-    "بَطَرِّشْ لْكُمْ"
+    "بَطَرِّشْ لْكُمْ"
    ],
    [
     "الفيديو",
@@ -529,14 +529,14 @@
     "السلام عليكم. أنا فهد، من ربع سيف",
     "as-salāmu ʿalaykum. ana Fahad, min rabʿ Sēf",
     "Hello. I'm Fahad, one of Sēf's mates.",
-    "السَّلَامُ عَلَيْكُمْ. أَنَا فَهَدْ، مِنْ رَبْعْ سَيْفْ"
+    "السَّلَامُ عَلَيْكُمْ. أَنَا فَهَدْ، مِنْ رَبْعْ سَيْفْ"
    ],
    [
     "B",
     "وعليكم السلام. هلا والله! انت كويتي؟",
     "wa ʿalaykum is-salām. hala wallāh! inta kwēti?",
     "Hello! Great to meet you. Are you Kuwaiti?",
-    "وَعَلَيْكُمْ السَّلَامْ. هَلَا وَاللّٰهْ! اِنْتَ كْوَيْتِي؟"
+    "وَعَلَيْكُمْ السَّلَامْ. هَلَا وَاللّٰهْ! اِنْتَ كْوَيْتِي؟"
    ],
    [
     "A",
@@ -550,14 +550,14 @@
     "اسمي سالم. أول مرة في دبي؟",
     "ismi Sālim. awwal marra fi Dbayy?",
     "My name's Sālim. Is this your first time in Dubai?",
-    "اِسْمِي سَالِمْ. أَوَّلْ مَرَّة فِي دْبَيّْ؟"
+    "اِسْمِي سَالِمْ. أَوَّلْ مَرَّة فِي دْبَيّْ؟"
    ],
    [
     "A",
     "لا، مو أول مرة. أحب دبي وايد",
     "la, mū awwal marra. aḥibb Dbayy wāyid",
     "No, it's not my first time. I love Dubai.",
-    "لَا، مُو أَوَّلْ مَرَّة. أَحِبّْ دْبَيّْ وَايِدْ"
+    "لَا، مُو أَوَّلْ مَرَّة. أَحِبّْ دْبَيّْ وَايِدْ"
    ],
    [
     "B",
@@ -613,7 +613,7 @@
     "the first time",
     "أول مرة",
     "Kuwait: mū awwal marra = UAE: mub awwal marra (it's not the first time)",
-    "أَوَّلْ مَرَّة"
+    "أَوَّلْ مَرَّة"
    ],
    [
     "بتقعد",
@@ -662,14 +662,14 @@
     "لا، ما أعرفهم. هلا والله، حياكم الله في دبي",
     "la, ma aʿarfhum. hala wallāh, ḥayyākum allāh fi Dbayy",
     "No, I haven't. Hi, welcome to Dubai, all of you.",
-    "لَا، مَا أَعَرْفْهُمْ. هَلَا وَاللّٰهْ، حَيَّاكُمْ اللّٰهْ فِي دْبَيّْ"
+    "لَا، مَا أَعَرْفْهُمْ. هَلَا وَاللّٰهْ، حَيَّاكُمْ اللّٰهْ فِي دْبَيّْ"
    ],
    [
     "A",
     "الله يحييك. إحنا هني في إجازة، أسبوعين بس",
     "allāh yḥayyīk. iḥna hni fi ijāza, usbūʿēn bas",
     "Thank you. We're here on holiday, just for two weeks.",
-    "اللّٰهْ يْحَيِّيكْ. إِحْنَا هْنِي فِي إِجَازَة، أُسْبُوعَيْنْ بَسْ"
+    "اللّٰهْ يْحَيِّيكْ. إِحْنَا هْنِي فِي إِجَازَة، أُسْبُوعَيْنْ بَسْ"
    ],
    [
     "B",
@@ -690,7 +690,7 @@
     "تبون نتعشى ويا بعض الليلة؟",
     "tabūn nitʿashsha wiyya baʿaẓ il-lēla?",
     "Do you want to have dinner together tonight?",
-    "تَبُونْ نِتْعَشَّى وِيَّا بَعَضْ اللَّيْلَة؟"
+    "تَبُونْ نِتْعَشَّى وِيَّا بَعَضْ اللَّيْلَة؟"
    ],
    [
     "A",
@@ -763,7 +763,7 @@
     "tonight",
     "الليلة",
     "il-lēl (الليل) = the night",
-    "اللَّيْلَة"
+    "اللَّيْلَة"
    ]
   ]
  },
@@ -787,42 +787,42 @@
     "عنده شغل، بيتأخر شوي",
     "ʿindah shughul, biyitʼakhkhar shwayy",
     "He's got work, he'll be a bit late.",
-    "عِنْدَهْ شُغُلْ، بِيِتْأَخَّرْ شْوَيّْ"
+    "عِنْدَهْ شُغُلْ، بِيِتْأَخَّرْ شْوَيّْ"
    ],
    [
     "A",
     "مو مشكلة. بس اللحين المطعم زحمة، ماكو طاولة",
     "mū mushkila. bas illaḥīn il-maṭʿam zaḥma, māku ṭāwla",
     "No problem. But right now the restaurant's packed, there are no tables.",
-    "مُو مُشْكِلَة. بَسْ اللَّحِينْ الْمَطْعَمْ زَحْمَة، مَاكُو طَاوْلَة"
+    "مُو مُشْكِلَة. بَسْ اللَّحِينْ الْمَطْعَمْ زَحْمَة، مَاكُو طَاوْلَة"
    ],
    [
     "B",
     "شوف، في طاولة برا",
     "shūf, fī ṭāwla barra",
     "Look, there's a table outside.",
-    "شُوفْ، فِي طَاوْلَة بَرَّا"
+    "شُوفْ، فِي طَاوْلَة بَرَّا"
    ],
    [
     "A",
     "إيه، أكو! بس الجو حار برا",
     "ēh, aku! bas il-jaww ḥārr barra",
     "Oh yes, there is! But it's hot outside.",
-    "إَيْهْ، أَكُو! بَسْ الْجَوّْ حَارّْ بَرَّا"
+    "إَيْهْ، أَكُو! بَسْ الْجَوّْ حَارّْ بَرَّا"
    ],
    [
     "B",
     "عادي. نقعد برا؟",
     "ʿādi. nigʿid barra?",
     "That's fine. Shall we sit outside?",
-    "عَادِي. نِقْعِدْ بَرَّا؟"
+    "عَادِي. نِقْعِدْ بَرَّا؟"
    ],
    [
     "A",
     "يلا. وقول له إحنا برا، عشان يشوفنا",
     "yalla. w gūl-lah iḥna barra, ʿashān yshūfna",
     "OK. And tell him we're outside, so he can see us.",
-    "يَلَّا. وْقُولْ لَهْ إِحْنَا بَرَّا، عَشَانْ يْشُوفْنَا"
+    "يَلَّا. وْقُولْ لَهْ إِحْنَا بَرَّا، عَشَانْ يْشُوفْنَا"
    ]
   ],
   "items": [
@@ -864,7 +864,7 @@
     "now (Kuwait)",
     "الآن",
     "Kuwaitis say il-ḥīn (الحين), the UAE default, even more often; you'll hear illaḥīn in the UAE too",
-    "اللَّحِينْ"
+    "اللَّحِينْ"
    ],
    [
     "بيتأخر",
@@ -872,7 +872,7 @@
     "he'll be late",
     "سيتأخر",
     "she'll be late: bititʼakhkhar (بتتأخر)",
-    "بِيِتْأَخَّرْ"
+    "بِيِتْأَخَّرْ"
    ],
    [
     "الجو",
@@ -905,49 +905,49 @@
     "هلا يمه! إيه، أنا ويا سالم",
     "hala yumma! ēh, ana wiyya Sālim",
     "(on the phone) Hi, Mum! Yes, I'm with Sālim.",
-    "هَلَا يُمَّه! إَيْهْ، أَنَا وِيَّا سَالِمْ"
+    "هَلَا يُمَّه! إَيْهْ، أَنَا وِيَّا سَالِمْ"
    ],
    [
     "B",
     "هذي أمك؟ سلم عليها",
     "hādhi ummak? sallim ʿalēha",
     "Is that your mum? Say hi to her from me.",
-    "هٰذِي أُمَّكْ؟ سَلِّمْ عَلَيْهَا"
+    "هٰذِي أُمَّكْ؟ سَلِّمْ عَلَيْهَا"
    ],
    [
     "A",
     "يمه، سالم يسلم عليج. اهي تسلّم عليك",
     "yumma, Sālim ysallim ʿalēch. ihi tsallim ʿalēk",
     "(on the phone) Mum, Sālim says hi. (to you) She says hi to you.",
-    "يُمَّه، سَالِمْ يْسَلِّمْ عَلَيْجْ. اِهِي تْسَلِّمْ عَلَيْكْ"
+    "يُمَّه، سَالِمْ يْسَلِّمْ عَلَيْجْ. اِهِي تْسَلِّمْ عَلَيْكْ"
    ],
    [
     "B",
     "الله يسلمها. وأبوك؟ عساه بخير",
     "allāh ysallimha. w ubūk? ʿasāh b-khēr",
     "God keep her. And your dad? I hope he's well.",
-    "اللّٰهْ يْسَلِّمْهَا. وْأُبُوكْ؟ عَسَاهْ بْخَيْرْ"
+    "اللّٰهْ يْسَلِّمْهَا. وْأُبُوكْ؟ عَسَاهْ بْخَيْرْ"
    ],
    [
     "A",
     "الحمد لله، اهو يمها اللحين",
     "il-ḥamdu lillāh, ihu yammha illaḥīn",
     "He's fine, thank God. He's right next to her now.",
-    "الْحَمْدُ لِلّٰهْ، اِهُو يَمّْهَا اللَّحِينْ"
+    "الْحَمْدُ لِلّٰهْ، اِهُو يَمّْهَا اللَّحِينْ"
    ],
    [
     "B",
     "زين. سلم عليه بعد",
     "zēn. sallim ʿalēh baʿad",
     "Great. Say hi to him too.",
-    "زَيْنْ. سَلِّمْ عَلَيْهْ بَعَدْ"
+    "زَيْنْ. سَلِّمْ عَلَيْهْ بَعَدْ"
    ],
    [
     "A",
     "يبه! سالم يسلم عليك",
     "yuba! Sālim ysallim ʿalēk",
     "(on the phone) Dad! Sālim says hi.",
-    "يُبَه! سَالِمْ يْسَلِّمْ عَلَيْكْ"
+    "يُبَه! سَالِمْ يْسَلِّمْ عَلَيْكْ"
    ]
   ],
   "items": [
@@ -957,7 +957,7 @@
     "Mum! (calling or talking to your mother) (Kuwait)",
     "يا أمي",
     "talking about her: ummi (أمي); you'll hear yumma in the UAE too; UAE also: ummāya (أمايه); spelt like yammah (يمه) 'next to him'",
-    "يُمَّه"
+    "يُمَّه"
    ],
    [
     "يبه",
@@ -989,7 +989,7 @@
     "your mum (to a man)",
     "أمك",
     "to a woman: ummich (أمج); your dad: ubūk (أبوك); you'll also hear il-wālda (الوالدة) 'your mother' (respectful)",
-    "أُمَّكْ"
+    "أُمَّكْ"
    ],
    [
     "سلم عليها",
@@ -997,7 +997,7 @@
     "say hi to her (from me) (to a man)",
     "سلم عليها",
     "to a woman: sallmi ʿalēha (سلمي عليها)",
-    "سَلِّمْ عَلَيْهَا"
+    "سَلِّمْ عَلَيْهَا"
    ],
    [
     "تسلّم عليك",
@@ -1005,7 +1005,7 @@
     "(she) says hi to you (to a man)",
     "تسلم عليك",
     "to a woman: tsallim ʿalēch (تسلّم عليج); not tislam (تسلم, 'thank you')",
-    "تْسَلِّمْ عَلَيْكْ"
+    "تْسَلِّمْ عَلَيْكْ"
    ],
    [
     "الله يسلمها",
@@ -1013,7 +1013,7 @@
     "God keep her (reply when she sends greetings)",
     "سلمها الله",
     "of a man: allāh ysallmah (s1u020)",
-    "اللّٰهْ يْسَلِّمْهَا"
+    "اللّٰهْ يْسَلِّمْهَا"
    ],
    [
     "عساه بخير",

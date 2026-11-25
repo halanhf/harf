@@ -222,6 +222,16 @@ class Checker(unittest.TestCase):
         self.assertTrue(has(hc.check_row("ما شاء الله", "mā shāʼ allāh", "مَا شَاء اللّٰهْ"), "reading:"))
         self.assertTrue(has(hc.check_row("جزء", "juzʼ", "جُزْء"), "vowels:", "ء has no vowel mark"))  # not after an alif: still unmarked
 
+    # content fix wave D: one mark order (Unicode canonical, what NFC gives)
+    def test_marks_must_be_in_canonical_order(self):  # رَيَّالْ rayyāl: the vowel comes before the shadda
+        old, canon = "رَيَّالْ", "رَيَّالْ"
+        self.assertNotEqual(old, canon)
+        r = hc.check_row("ريّال", "rayyāl", old)
+        self.assertEqual(len(r), 1)
+        self.assertTrue(r[0].startswith("nfc:"), r)
+        self.assertEqual(hc.check_row("ريّال", "rayyāl", canon), [])
+        self.assertTrue(has(hc.check_row("ريّال", "rayyāl", old, allowed=True), "nfc:"))  # an allowlist entry exempts the reading only
+
 class Cli(unittest.TestCase):  # main() on a throwaway repo layout, so these do not depend on how much of the real course is vowelled
     def setUp(self):
         import json

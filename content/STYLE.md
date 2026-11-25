@@ -312,4 +312,6 @@ The article does not hide the vowel before it: the proclitic, or the last letter
 
 A final ء written after a long ā but not said stays bare, like a silent ه or ة: the day names are ثَلَاثَاء thalātha and أَرْبَعَاء arbaʿa (الثَّلَاثَاء, الْأَرْبَعَاء). A final ء that is said keeps its sukūn: مَسَاءْ masāʼ, شَاءْ shāʼ.
 
+Mark order: every vowelled form is in Unicode canonical order (what `unicodedata.normalize("NFC", s)` gives): on one letter the vowel comes before the shadda (يَّ), then sukūn or dagger alif. The checker fails a form in any other order.
+
 `tools/harakat_check.py` checks every row; its reading rules and tolerances are in the file's header comment.
