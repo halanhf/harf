@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-tlmomW+XNOmKXu34A7L9hS9+tcQ66w+uAM7lTV4QnlQ=' 'sha256-txhSLsOHd6hQarX0lDXIVN2zkYL7pc+A49r/ogANucg=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-tlmomW+XNOmKXu34A7L9hS9+tcQ66w+uAM7lTV4QnlQ=' 'sha256-SwdP/7DqbjIhRDRB1mgYtA3cOGdpM1pk3xOTCFVMuzw=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -164,8 +164,8 @@ button.say{background:none;border:0;color:var(--ink);cursor:pointer;padding:0 8p
 .feedback.ok{color:var(--good)} .feedback.no{color:var(--bad)}
 .words{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;direction:rtl}
 .words span{font:400 24px/1.6 var(--ar);padding:0 6px;border-radius:6px;border-bottom:3px solid transparent}
-.words .hit{border-bottom-color:var(--good)}
-.words .miss{border-bottom-color:var(--bad);background:color-mix(in srgb,var(--bad) 10%,transparent)}
+.words .hit{border-bottom:3px solid var(--good)}
+.words .miss{border-bottom:3px dashed var(--bad);background:color-mix(in srgb,var(--bad) 10%,transparent)}
 .options{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%}
 .options .btn{min-height:56px;flex-direction:column;gap:0;transition:background-color .15s,border-color .15s}
 .options .btn .ar{font-size:26px;line-height:1.5} .options.har .btn .ar{line-height:1.8}
@@ -2774,7 +2774,7 @@ function speakWidget(target,onScore){
     ap(fb,el("p",{textContent:(best.pct>=75?"Good":best.pct>=50?"Close, try once more":"Try again")+` · ${best.pct}%`}),
       el("div",{className:"words",lang:"ar"},best.words.map(x=>el("span",{className:x.ok?"hit":"miss",textContent:x.w}))),
       best.heard?el("p",{className:"tag"},"Heard: ",arSpan(best.heard)):null,
-      best.words.some(x=>!x.ok)?el("p",{className:"tag",textContent:"Red: words it didn't catch. Listen again and say those clearly."}):null);
+      best.words.some(x=>!x.ok)?el("p",{className:"tag",textContent:"Underlined with dashes: words it didn't catch. Listen again and say those clearly."}):null);
     buzz(best.pct>=75?10:[30,40,30]); if(onScore) onScore(best.pct);
   };
   let active=false;
@@ -2813,7 +2813,7 @@ function recordWidget(text){
     const rec=new MediaRecorder(stream); const chunks=[]; rec.ondataavailable=e=>chunks.push(e.data);
     rec.onstop=()=>{ stream.getTracks().forEach(t=>t.stop()); const url=URL.createObjectURL(new Blob(chunks,{type:rec.mimeType||"audio/webm"}));
       const audio=new Audio(url); b.lastChild.textContent="Record again"; b.disabled=false;
-      const cmp=el("button",{className:"btn small cmp",type:"button",textContent:"Compare: model, then you",onclick:()=>{ sayQueue([{text}],{onDone:()=>{ audio.currentTime=0; audio.play().catch(()=>{}); }}); }});
+      const cmp=el("button",{className:"btn small cmp",type:"button",textContent:"Compare: you, then the model",onclick:()=>{ const model=()=>sayQueue([{text}]); audio.currentTime=0; audio.onended=model; audio.play().catch(model); }});
       wrap.querySelectorAll(".cmp").forEach(x=>x.remove()); wrap.append(cmp); };
     stopAudio(); b.disabled=true; b.lastChild.textContent="Recording 4 s…"; rec.start(); setTimeout(()=>{ if(rec.state==="recording") rec.stop(); },4000);
   };

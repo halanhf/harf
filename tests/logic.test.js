@@ -1039,6 +1039,8 @@ function uiEl(tag){ const e={tag,attrs:{},children:[],parent:null,style:{},hidde
   remove(){ if(e.parent) e.parent.children=e.parent.children.filter(x=>x!==e); e.parent=null; e.detached=true; },
   contains(n){ return n===e||e.children.some(c=>c&&typeof c==="object"&&c.contains(n)); },
   classList:{add:c=>{ e.className=(e.className+" "+c).trim(); },remove:c=>{ e.className=e.className.split(/\s+/).filter(x=>x&&x!==c).join(" "); },contains:c=>e.className.split(/\s+/).includes(c)},
+  get lastChild(){ return e.children[e.children.length-1]||null; },
+  querySelectorAll(sel){ const c=sel.slice(1); return walk(e).slice(1).filter(n=>n.className.split(/\s+/).includes(c)); },
   scrollIntoView(){}, focus(){} };
   const own={}; e.dataset=new Proxy(own,{get:(o,k)=>k in o?o[k]:e.attrs["data-"+String(k).replace(/[A-Z]/g,c=>"-"+c.toLowerCase())]});
   Object.defineProperty(e,"textContent",{get:()=>e._t||"",set:v=>{ e._t=String(v); e.children.forEach(c=>{ if(c&&typeof c==="object"){ c.parent=null; c.detached=true; } }); e.children=[]; }}); return e; }
@@ -1407,4 +1409,26 @@ test("audio: a claude.ai voice with no onState behaves as before",async()=>{
 test("voice notice: a new notice is announced once and a repeat is not",async()=>{
   const s=loadSpeech({fire:"none"}); assert.deepEqual(s.announced,[]); s.env.say("هلا"); await s.run(); assert.deepEqual(s.announced,[s.env.VOICE_STALL]);
   s.env.say("زين"); await s.run(); assert.equal(s.announced.length,1,"the same notice again is not announced");
+});
+test("record yourself: Compare plays your recording inside the tap, then the model; a recording that won't play still plays the model",async()=>{
+  for(const fails of [false,true]){
+    const sc=loadScreens(), {env,spy,t}=sc, audios=[]; let tapping=false;
+    Object.assign(env,{policyBlocksMic:()=>false,Blob:class{},URL:{createObjectURL:()=>"blob:1"},
+      MediaRecorder:class{ constructor(){ this.state="inactive"; } start(){ this.state="recording"; } stop(){ this.state="inactive"; this.ondataavailable({data:"x"}); this.onstop(); } },
+      Audio:class{ constructor(){ this.plays=[]; audios.push(this); } play(){ this.plays.push(tapping); return fails?Promise.reject(new Error("no")):Promise.resolve(); } }});
+    env.window.MediaRecorder=env.MediaRecorder; env.navigator.mediaDevices={getUserMedia:async()=>({getTracks:()=>[{stop(){}}]})};
+    vm.runInContext(cut("let recBlocked=false","// phone and claude voices"),env);
+    const w=env.recordWidget("هلا"); press(walk(w).find(n=>n.tag==="button")); await tick(); t.runTimers();
+    tapping=true; press(byText(w,"Compare: you, then the model")); tapping=false;
+    assert.deepEqual(audios[0].plays,[true],"played inside the tap"); await tick();
+    if(!fails){ assert.deepEqual(spy.queue,[]); audios[0].onended(); } assert.deepEqual(spy.queue.flat(),["هلا"]);
+  }
+});
+test("speech check: caught and missed words differ by underline style, not only colour",()=>{
+  const sc=loadScreens(); Object.assign(sc.env,{canListen:()=>true,srListen:cb=>cb({alts:["مع"]})});
+  vm.runInContext(cut("function speakWidget","// record yourself"),sc.env);
+  const w=sc.env.speakWidget("مع السلامة"); press(byText(w,"Say it"));
+  const words=walk(w).filter(n=>n.parent&&/\bwords\b/.test(n.parent.className)); assert.deepEqual(words.map(n=>[txt(n),n.className]),[["مع","hit"],["السلامة","miss"]]);
+  assert.ok(texts(w).includes("Underlined with dashes: words it didn't catch. Listen again and say those clearly."));
+  assert.match(html,/\.words \.hit\{border-bottom:3px solid var\(--good\)\}/); assert.match(html,/\.words \.miss\{border-bottom:3px dashed var\(--bad\);/);
 });
