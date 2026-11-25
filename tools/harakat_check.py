@@ -21,7 +21,7 @@
 #     article alif (first letter, second after one proclitic و ب ف ك ل ه, or third after و/ف and a proclitic (وهالمرة), next letter ل bare or with sukun): reads (a|i|ā)? and takes no mark;
 #       it wins over the long-vowel reading (وَاللّٰهْ wallāh, هَالْمُوبَايْلْ hal-mobāyl)
 #       the vowel before it is not hidden: after a fatḥa, kasra or ḍamma on the proclitic or on the last letter of the word before, the alif adds no sound (وَاللّٰهْ wallāh, هَالتِّلِفَوْنْ, مَعَ السَّلَامَة);
-#       after a sukūn it may add i, not a (وْالْبَيْتْ w il-bēt; وْاللّٰهْ is rejected). Unchanged: no letter before, a bare letter before, and the alif of الله after a sukūn in another word (شَاءْ اللّٰهْ)
+#       after a sukūn it may add i or ā (never a), after a real word break (وْالْبَيْتْ w il-bēt; وْاللّٰهْ is rejected). Unchanged: no letter before, a bare letter before, and the alif of الله after a sukūn in another word (شَاءْ اللّٰهْ)
 #     article lām right after it, when the next letter has a shadda (sun letter): silent
 #     ا after a letter with tanwin fatha, ا last in the word after و (رَاحَوْا), ة after a fatha, ه last in the word: silent
 #     ء last in the word after a bare ا: silent, and that ا may then be read short (the day names ثَلَاثَاء thalātha, أَرْبَعَاء arbaʿa); a sounded final ء keeps its sukūn (مَسَاءْ masāʼ, شَاءْ shāʼ)
@@ -59,7 +59,7 @@ ARTICLE = "(?:a|i|ā)?"
 ARTICLE_AFTER_SUKUN = "(?:_(?:i|ā))?"  # the i sits after a real break: w il-bēt, min il-bēt, never bil-  # a sukūn says there is no a before the article (w il-, not wa)
 
 def article_vowel(prev, own_word, allah):  # the reading of an article alif, given the cluster before it (the proclitic, or the last letter of the word before)
-    # a fatḥa, kasra or ḍamma there is the vowel, so the alif adds none (wa-llāh, ha-ltilifōn, maʿa s-salāma); a sukūn lets it add i (w il-, min il-), not a.
+    # a fatḥa, kasra or ḍamma there is the vowel, so the alif adds none (wa-llāh, ha-ltilifōn, maʿa s-salāma); a sukūn lets it add i or ā after a real break (w il-, min il-), never a.
     # kept as before: no letter before, a bare letter before (minu illi), and the alif of allāh after a sukūn in another word (shāʼ allāh, ḥayyāk allāh)
     if prev is None or prev[1] not in ("a", "i", "u", "0"): return ARTICLE
     if prev[1] != "0": return ""

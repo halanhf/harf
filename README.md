@@ -238,7 +238,7 @@ Most mainstream apps teach MSA, Egyptian or Levantine ([overview](https://talkin
 
 - **The audio is standard Arabic.** Phone voices read قهوة as qahwa where Gulf speakers say gahwa. Cards where this matters show a "Gulf: …" chip, and the transliteration always shows the Gulf pronunciation. For real Gulf audio, use YouTube or a tutor.
 - **Nobody native has checked it yet.** Every lesson was checked by at least two separate AI reviewers (one for form, one for meaning), against a corpus of Emirati and Kuwaiti writing and published sources, and every stage had a whole-stage review. A few hundred thin or uncertain forms are on a list for a native speaker to confirm, and most of those are taught for recognising only. Every card has a "hide it" button for anything that looks off.
-- **The vowel marks follow the transliteration.** Stage 1 and 2 phrases carry full vowel marks that spell Gulf pronunciation as the course transliterates it (bēt is بَيْت, shlōnak is شْلَوْنَكْ), not Standard Arabic vowelling. A script checks that every marked phrase strips back to its normal spelling and reads as its transliteration, and AI reviewers read every row; no native speaker has checked them.
+- **The vowel marks follow the transliteration.** Stage 1 and 2 phrases carry full vowel marks that spell Gulf pronunciation as the course transliterates it (bēt is بَيْتْ, shlōnak is شْلَوْنَكْ), not Standard Arabic vowelling. A script checks that every marked phrase strips back to its normal spelling and, within a short list of stated tolerances (for example a final long vowel read short, or ق read as g), reads as its transliteration, with the vowel of an article never moved onto the word before it. AI reviewers read every row; no native speaker has checked them.
 - **Speech scoring checks words, not accent.** A green word means it was understood, not that it sounded Emirati.
 - **An app won't get you fluent on its own.** From stage 3, add a weekly session with a native Gulf tutor.
 - Gulf varieties differ (Kuwaiti shinu vs Emirati shu, cham vs kam). The notes flag the common ones, not all of them.
@@ -259,7 +259,7 @@ python tools/harakat_check.py --all
 python -m unittest discover -s tests -p "test_*.py"
 ```
 
-The Python tests cover the vowel-mark checker and the linter's handling of vowelled rows; the checker proves every stage 1–2 vowelled form strips back to its Arabic and reads as its transliteration.
+The Python tests cover the vowel-mark checker and the linter's handling of vowelled rows; the checker verifies that every stage 1–2 vowelled form strips back to its Arabic, uses one mark order, and reads as its transliteration within its stated tolerances.
 
 ## Credits
 
