@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-5mfrMZwl0We17ExkKRei3bOM5LvSdCL2YuhrO6JAzWQ=' 'sha256-1i+YMjxInJ8yYfryjWQC0HpJh32o7Chuu3ukOusAuF0=' 'sha256-OOuf6vpRg3WQb3uwXSD4jc2aZ3SNeP+E1kh9lFulHOc=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-5mfrMZwl0We17ExkKRei3bOM5LvSdCL2YuhrO6JAzWQ=' 'sha256-4zT0am2rTTqvtXW585tQxEyuZM0817L3A1Nk2GIQBGU=' 'sha256-crQU0+UasFUjqXppDzosM2PeeCo63RXV5oVI6r1H19Q=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -2239,10 +2239,12 @@ const ghFile=n=>"cards_"+n+".json";
 function canon(x){ const sort=v=>Array.isArray(v)?v.map(sort):v&&typeof v==="object"?Object.keys(v).sort().reduce((o,k)=>(o[k]=sort(v[k]),o),{}):v; return JSON.stringify(sort(x)); }
 function b64enc(text){ const b=new TextEncoder().encode(text); let s=""; for(let i=0;i<b.length;i+=8192) s+=String.fromCharCode.apply(null,b.subarray(i,i+8192)); return btoa(s); }
 function b64dec(b64){ const s=atob(String(b64).replace(/\s+/g,"")), b=new Uint8Array(s.length); for(let i=0;i<s.length;i++) b[i]=s.charCodeAt(i); return new TextDecoder().decode(b); }
-function ghKind(op,status){
+function ghKind(op,status,limited){
   if(!status) return "offline";
   if(status===200||status===201) return "ok";
+  if(status===403&&limited) return "server"; // a rate limit, not a refused token
   if(status===401||status===403) return "auth";
+  if(status>=300&&status<400) return op==="user"?"server":"repo"; // a renamed or moved repo answers with a redirect
   if(status===404) return op==="read"?"missing":op==="write"?"repo":"auth";
   if((status===409||status===422)&&op==="write") return "conflict";
   return "server";
@@ -2284,11 +2286,15 @@ const GH_API="https://api.github.com";
 function ghApi(cfg,fetchFn){
   const repo="/repos/"+encodeURIComponent(cfg.owner)+"/"+encodeURIComponent(cfg.repo)+"/contents/";
   async function call(op,path,method,body,keepalive){
-    const headers={Authorization:"Bearer "+cfg.token,Accept:"application/vnd.github+json"}; const init={method,headers,cache:"no-store",redirect:"error"};
+    const headers={Authorization:"Bearer "+cfg.token,Accept:"application/vnd.github+json"}; const init={method,headers,cache:"no-store",redirect:"manual"}; // a redirect is never followed, so the token can't go anywhere else
     if(body!==undefined){ headers["Content-Type"]="application/json"; init.body=body; }
     if(keepalive&&(body||"").length<60000) init.keepalive=true;
-    let r; try{ r=await fetchFn(GH_API+path,init); }catch(e){ return {kind:"offline"}; }
-    const kind=ghKind(op,r&&r.status); if(kind!=="ok") return {kind};
+    // a keepalive request that needs a preflight is refused by some browsers: try it once more as a plain request before calling it offline
+    let r; try{ r=await fetchFn(GH_API+path,init); }catch(e){ r=null;
+      if(init.keepalive&&!(e&&e.name==="TimeoutError")){ delete init.keepalive; try{ r=await fetchFn(GH_API+path,init); }catch(e2){ r=null; } } }
+    if(!r) return {kind:"offline"};
+    const h=r.headers, limited=!!h&&typeof h.get==="function"&&(h.get("x-ratelimit-remaining")==="0"||h.get("retry-after")!=null);
+    const kind=r.type==="opaqueredirect"?(op==="user"?"server":"repo"):ghKind(op,r.status,limited); if(kind!=="ok") return {kind};
     let j; try{ j=await r.json(); }catch(e){ return {kind:e&&e.name==="TimeoutError"?"offline":"server"}; }
     return j&&typeof j==="object"?{kind:"ok",j}:{kind:"server"};
   }
@@ -2408,8 +2414,8 @@ const markDone=k=>{ if(S.session.day!==today()) S.session={day:today(),done:{}};
 let DB=null, UID=null, synced=false, saveTimer=0, pushing=null, pushAgain=false, replaceNext=false;
 const sync={state:"local",msg:"This browser only"};
 if(unreadable){ const n=$("#sync-note"); n.hidden=false; n.textContent="Saved progress in this browser couldn't be read, so a copy was kept aside and the app started fresh. Import a backup from Progress if you have one."; }
-function setSync(state,msg){ sync.state=state; sync.msg=msg; const n=$("#sync-note");
-  if(state==="error"){ n.hidden=false; n.textContent=msg+" Your progress is still safe in this browser and will sync when it can."; } else if(!localFail) n.hidden=true; }
+function setSync(state,msg,tail){ sync.state=state; sync.msg=msg; const n=$("#sync-note");
+  if(state==="error"){ n.hidden=false; n.textContent=msg+(tail||" Your progress is still safe in this browser and will sync when it can."); } else if(!localFail) n.hidden=true; }
 const syncError=e=>{ const c=e&&e.code; return c==="quota_exceeded"?"Account storage is full.":c==="not_granted"||c==="forbidden"||c==="permission_denied"?"This page isn't allowed to save to your account.":`Couldn't save to your account${c?" ("+c+")":""}.`; };
 function save(){ S.updatedAt=Date.now(); persistLocal(); if(GH){ ghDirty=true; ghSync("save"); } if(synced){ clearTimeout(saveTimer); saveTimer=setTimeout(pushRemote,1500); } }
 const progressRef=()=>DB.doc(`data/users/${UID}/progress`);
@@ -2488,9 +2494,14 @@ document.addEventListener("visibilitychange",()=>{ if(synced) pushRemote(); ghSy
 addEventListener("pagehide",()=>{ if(synced) pushRemote(); ghSync("hide"); });
 addEventListener("online",()=>{ ghSync("online"); });
 
+// a reset is a dated marker, so other devices drop their older progress when they next merge instead of bringing it back
+function startOver(){ const gen=S.gen; S=blank(); S.gen=gen; S.resetAt=Date.now(); S.resetDay=today(); save(); flush({replace:true}); rebuild(); refresh(); renderMe(); }
+
 // ===== sync to github (offline app only). the same merge as the account sync, through the github contents api =====
 // GH is the saved connection; everything else here lives in memory, except the status line's state, kept so "waiting" survives a reload
 let GH=null, ghSt={last:0,waiting:false,problem:""}, ghMem={sha:{},body:{}}, ghDirty=false, ghHalted=false, ghRaised=false, ghStart=0, ghTimer=0, ghRun=null, ghAgain=null, ghCur=null, ghMsg="", ghBusy=false;
+// a refused token or a missing repo stops sync until the learner acts, so the notice says what to do instead of promising it will sync
+const GH_TAIL={auth:" Open Progress, Sync and paste a new token.",repo:" Open Progress, Sync and check the repo name."};
 function ghLoad(){
   GH=null; ghSt={last:0,waiting:false,problem:""};
   if(!window.HARF_PWA) return;
@@ -2509,7 +2520,7 @@ const savedMsg=()=>GH?ghLine(true,ghSt,Date.now()):sync.msg;
 function ghFetch(url,opts){ const ac=new AbortController(); let stop; const dead=new Promise((_,no)=>{ stop=setTimeout(()=>{ no(Object.assign(new Error("timeout"),{name:"TimeoutError"})); ac.abort(); },30000); }); dead.catch(()=>{});
   return Promise.race([fetch(url,Object.assign({},opts,{signal:ac.signal})),dead]).then(r=>{
     if(!(r.status>=200&&r.status<300)) clearTimeout(stop);
-    return {status:r.status,json:()=>Promise.race([r.json(),dead]).finally(()=>clearTimeout(stop))}; },e=>{ clearTimeout(stop); throw e; }); }
+    return {status:r.status,type:r.type,headers:r.headers,json:()=>Promise.race([r.json(),dead]).finally(()=>clearTimeout(stop))}; },e=>{ clearTimeout(stop); throw e; }); }
 // saves the connection once the token is fit to send: pasted text often has a stray newline or space, and a header that isn't printable ascii makes fetch throw, which would read as offline for good
 function ghSave(c){
   const token=String(c&&c.token||"").trim();
@@ -2544,7 +2555,7 @@ function ghSync(trigger,opts){
         const end=Date.now();
         if(r.merged){ const changed=applyMerged(mergeProgress(serialize(),r.merged)); ghMem=r.mem; if(changed) afterRemoteChange(); }
         ghSt=ghAfter(ghSt,r.kind,end); ghHalted=r.kind==="auth"||r.kind==="repo"; if(r.kind!=="ok") ghDirty=true;
-        if(ghHalted){ ghRaised=true; setSync("error",ghLine(true,ghSt,end)+"."); } else if(ghRaised){ ghRaised=false; setSync("local","This browser only"); }
+        if(ghHalted){ ghRaised=true; setSync("error",ghLine(true,ghSt,end)+".",GH_TAIL[r.kind]); } else if(ghRaised){ ghRaised=false; setSync("local","This browser only"); }
         ghNote();
       }
     } finally { firstMergeDone(); }
@@ -2572,10 +2583,14 @@ async function ghConnect(token,repo){
 function ghPanel(sec){
   sec.append(el("h3",{style:"margin:22px 0 6px",textContent:"Sync"}));
   if(GH){
-    sec.append(el("p",{className:"tag",id:"gh-line",role:"status",textContent:ghLine(true,ghSt,Date.now())}),el("p",{className:"tag",textContent:GH.owner+"/"+GH.repo}),
+    sec.append(el("p",{className:"tag",id:"gh-line",role:"status",textContent:ghLine(true,ghSt,Date.now())}));
+    if(ghSt.problem==="auth") sec.append(el("p",{className:"tag",id:"gh-hint",textContent:"Press Disconnect, then paste a new token."}));
+    // disconnecting forgets a token that GitHub showed only once, so it asks for a second tap, like the reset button
+    const dis=el("button",{className:"btn small",type:"button",textContent:"Disconnect"}); let armed=0;
+    dis.onclick=()=>{ if(!armed){ dis.textContent="Tap again to disconnect"; armed=setTimeout(()=>{ armed=0; dis.textContent="Disconnect"; },4000); return; } clearTimeout(armed); armed=0; ghForget(); renderMe(); };
+    sec.append(el("p",{className:"tag",textContent:GH.owner+"/"+GH.repo}),
       el("div",{className:"row",style:"margin-top:8px"},
-        el("button",{className:"btn small",type:"button",textContent:"Sync now",onclick:async e=>{ e.currentTarget.disabled=true; await ghSync("manual"); renderMe(); }}),
-        el("button",{className:"btn small",type:"button",textContent:"Disconnect",onclick:()=>{ ghForget(); renderMe(); }})));
+        el("button",{className:"btn small",type:"button",textContent:"Sync now",onclick:async e=>{ const b=e.currentTarget; b.disabled=true; try{ await ghSync("manual"); }catch(x){} finally{ b.disabled=false; renderMe(); } }}),dis));
   } else {
     const tok=el("input",{type:"password",id:"gh-token",autocomplete:"off"}), rp=el("input",{type:"text",id:"gh-repo",value:"harf-progress"});
     // these are not all dom properties (autocorrect is not, in some browsers it is a boolean), so they are set as attributes
@@ -2583,7 +2598,7 @@ function ghPanel(sec){
     const line=el("p",{className:"tag",id:"gh-line",role:"status",textContent:ghMsg||ghLine(false)});
     // the outcome is kept in ghMsg and written to whichever panel is on screen when the attempt ends
     const go=el("button",{className:"btn primary small",id:"gh-go",type:"button",textContent:ghBusy?"Connecting…":"Connect",disabled:ghBusy,onclick:async()=>{ if(ghBusy) return; ghBusy=true; ghMsg=""; go.disabled=true; go.textContent="Connecting…"; line.textContent=ghLine(false);
-      const k=await ghConnect(tok.value,rp.value); tok.value=""; ghBusy=false;
+      let k; try{ k=await ghConnect(tok.value,rp.value); }catch(e){ k="server"; } finally{ tok.value=""; ghBusy=false; }
       if(GH){ ghMsg=""; renderMe(); return; }
       ghMsg=k==="offline"?"You're offline. Connect to the internet, then try again.":k==="store"?"This browser isn't letting Harf save the token.":"Sync problem: "+(GH_WHY[k]||GH_WHY.server);
       const l=$("#gh-line"), b=$("#gh-go"); if(l) l.textContent=ghMsg; if(b){ b.disabled=false; b.textContent="Connect"; } }});
@@ -3558,8 +3573,7 @@ Return ONLY JSON: {"hook": one or two sentences in English, "example_ar", "examp
   if(hidden.length) sec.append(el("div",{className:"setting"},el("span",{textContent:"Cards you hid"}),el("button",{className:"btn small",type:"button",textContent:`Restore ${hidden.length} hidden card${hidden.length>1?"s":""}`,onclick:()=>{ hidden.forEach(k=>S.suspended[k]=-Date.now()); save(); renderMe(); }})));
   const r1=el("button",{className:"btn small danger",type:"button",textContent:"Reset all progress"}); const r2=el("button",{className:"btn small danger",type:"button",hidden:true,textContent:"Tap again to erase everything"});
   r1.onclick=()=>{ r2.hidden=false; r1.hidden=true; setTimeout(()=>{ if(r2.isConnected){ r2.hidden=true; r1.hidden=false; } },5000); };
-  // a reset is a dated marker, so other devices drop their older progress when they next merge instead of bringing it back
-  r2.onclick=()=>{ const gen=S.gen; S=blank(); S.gen=gen; S.resetAt=Date.now(); S.resetDay=today(); save(); flush({replace:true}); rebuild(); refresh(); renderMe(); };
+  r2.onclick=startOver;
   sec.append(el("h3",{style:"margin:26px 0 4px;color:var(--bad)",textContent:"Danger zone"}),el("div",{className:"setting"},el("span",{textContent:"Start over, on every device (keeps written lessons)"}),el("div",{className:"row"},r1,r2)));
 }
 
