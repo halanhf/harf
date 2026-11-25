@@ -83,13 +83,13 @@ Open it, press **Continue** until Today says you're done. A normal day is review
 
 ## Sync the offline app
 
-The offline app can keep your phone and your PC in step through a private GitHub repo (a private folder on GitHub) called `harf-progress`, which only you can read. It syncs when it opens, shortly after you study (never more than once a minute), when you leave it, when the connection comes back and when you return to it. With no connection it carries on and catches up later. If you never set this up, nothing changes: progress stays on that device.
+The offline app can keep your phone and your PC in step through a private GitHub repo (a private folder on GitHub) called `harf-progress`, which only you can read. It syncs when it opens, shortly after you study (never more than once a minute), when the connection comes back and when you return to it. It also tries to when you leave it, but a phone or browser can close the page before that finishes, so the last minute of work may wait until the app is next opened. With no connection it carries on and catches up later. If you never set this up, nothing changes: progress stays on that device.
 
 It does not sync with the claude.ai version. **Export backup** and **Import backup** are still the bridge between the two.
 
 ### 1. Make the private repo (once)
 
-On github.com: **+** at the top right, **New repository**. Repository name `harf-progress`, choose **Private**, tick **Add a README file**, then **Create repository**.
+On github.com: **+** at the top right, **New repository**. Repository name `harf-progress`, choose **Private**, tick **Add a README file**, then **Create repository**. Once it exists, do not rename or move it: if you do, the app says the progress repo was not found.
 
 ### 2. Make the token (once; the same token can be pasted on each device)
 
@@ -97,7 +97,7 @@ On github.com: **+** at the top right, **New repository**. Repository name `harf
 2. Resource owner: your own account.
 3. Repository access: **Only select repositories**, then pick `harf-progress`.
 4. Permissions, Repository permissions: set **Contents** to **Read and write**. (Metadata: Read-only is added by itself.)
-5. Pick an expiry, press **Generate token**, and copy the token. GitHub shows it once, so keep it somewhere safe until you have pasted it on each device.
+5. Pick the longest expiry GitHub offers (its default is only 30 days). When a token runs out the app shows `Sync problem: the token was refused`, and you make a new token and paste it. Press **Generate token**, and copy the token. GitHub shows it once, so keep it somewhere safe until you have pasted it on each device.
 
 ### 3. Paste it into the app
 
@@ -115,7 +115,7 @@ Read and write that one repo, nothing else. To cut it off, delete the token on G
 4. Put the phone in flight mode and review a few cards. Progress shows `Offline, will sync later`. Turn flight mode off: it shows `Synced just now`, and the PC has the reviews after you return to it.
 5. With both devices in flight mode, review different cards on each. Turn both back on. Each device ends with both sets of reviews.
 6. Press **Disconnect** on the phone. The line reads `Not set up`, progress is still there, and reviews on the phone no longer reach the PC. Connect again to carry on.
-7. Optional, and it erases everything: **Reset all progress** (then **Tap again to erase everything**) on one device; open the other and it is empty too.
+7. Optional, and it erases everything: **Reset all progress** (then **Tap again to erase everything**) on one device; open the other and it is empty too. A device that only hears about the reset later also loses that same day's lesson marks and streak, including anything it did offline that day.
 
 ## Updating
 
@@ -140,7 +140,7 @@ Export a backup first if you might want your progress back.
 - **Chrome (Windows):** open the app, ⋮ menu, **Uninstall Harf**, **Remove**. Tick **Also delete data from Chrome** to wipe progress too.
 - **Edge:** go to `edge://apps`, **Details** on Harf, **Uninstall**.
 - **iPhone or Android:** touch and hold the icon and remove it.
-- **Just the progress:** Progress, Danger zone, **Reset all progress**. That also clears it on every device synced to the account or through GitHub, and a backup made before it won't bring it back.
+- **Just the progress:** Progress, Danger zone, **Reset all progress**. That also clears it on every device synced to the account or through GitHub, and a backup made before it won't bring it back. A device that only hears about it later loses the lesson marks and streak for that same day, including work it did offline that day.
 
 ## Troubleshooting
 
@@ -153,8 +153,8 @@ Export a backup first if you might want your progress back.
 | Progress gone on the PC install | You opened a different address or port. Use exactly http://127.0.0.1:8000 |
 | Old version still showing | Open it once while online. The installed app checks for a new version every time it opens |
 | Export backup says "Couldn't export here" | claude.ai only lets a page save files through its downloads permission. Open Harf in a web browser on claude.ai and export from there |
-| Sync problem: the token was refused | The token expired, was revoked, or doesn't have Contents: Read and write on the repo. Pasting it can also fail if a space or odd character got into the middle of it. Make a new one, press **Disconnect**, then **Connect** with it |
-| Sync problem: the progress repo was not found | The repo name is wrong (type just `harf-progress`, not your name before it), or the token wasn't given access to it |
+| Sync problem: the token was refused | The token expired, was revoked, or doesn't have Contents: Read and write on the repo. Pasting it can also fail if a space or odd character got into the middle of it. Make a new one, press **Disconnect** (it asks you to tap twice), then paste the new token and press **Connect** |
+| Sync problem: the progress repo was not found | The repo name is wrong (type just `harf-progress`, not your name before it), or the token wasn't given access to it, or the repo was renamed or moved (put it back to `harf-progress`) |
 | Sync problem: the saved progress could not be read | A file in `harf-progress` was edited by hand or damaged. Delete that file on GitHub and press **Sync now**: the app writes it again from this device. Nothing is overwritten until you do |
 | Sync problem: GitHub is not responding | GitHub or the connection is down. Progress stays on the device and the app tries again by itself |
 | Sync problem: another device was saving at the same time | Wait a moment and press **Sync now**. It also tries again the next time you study or open the app |
@@ -182,7 +182,7 @@ Export a backup first if you might want your progress back.
 | App update | Progress isn't in the files, so updates never touch it |
 | No connection | Study carries on. Changes wait and are sent when the connection is back |
 | Two devices studied before they synced | Each card keeps its most recent review, so neither loses work |
-| The access token expired or was revoked | Sync stops and says so. Progress stays on the device; paste a new token to carry on |
+| The access token expired or was revoked | Sync stops and says so. Progress stays on the device; press **Disconnect**, then paste a new token to carry on |
 
 ## How it works
 
