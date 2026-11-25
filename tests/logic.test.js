@@ -1054,8 +1054,8 @@ const MARKS=/[\u064B-\u0652\u0670]/;
 const UNIT={id:"u1",stage:1,title:"Greetings",goal:"g",tip:"t",
   items:[{ar:"هلا",tr:"hala",en:"hi",arv:"هَلَا"},{ar:"شلونك",tr:"shlōnak",en:"how are you",arv:"شْلَوْنَكْ"},{ar:"زين",tr:"zēn",en:"good",arv:"زَيْنْ"},{ar:"مع السلامة",tr:"maʿ is-salāma",en:"bye",arv:"مَعْ السَّلَامَة"}],
   dialogue:[{who:"A",ar:"شلونك",tr:"shlōnak",en:"how are you",arv:"شْلَوْنَكْ"},{who:"B",ar:"زين",tr:"zēn",en:"good",arv:"زَيْنْ"}]};
-function loadScreens({harakat="auto",stage=1,autoplay=true}={}){
-  const t=loadUi(), env=t.env; t.setS({settings:{harakat,autoplay}}); env.__stage=stage; env.currentStage=()=>env.__stage;
+function loadScreens({harakat="auto",stage=1,autoplay=true,ui={}}={}){
+  const t=loadUi(ui), env=t.env; t.setS({settings:{harakat,autoplay}}); env.__stage=stage; env.currentStage=()=>env.__stage;
   const spy={say:[],queue:[],auto:[],played:[],widget:[],view:null}; env.document.createElement=uiEl;
   const rec=name=>text=>{ spy.widget.push([name,text]); return uiEl("span"); };
   Object.assign(env,{say(text){ spy.say.push(text); spy.played.push(text); return Promise.resolve(); },sayQueue(parts){ spy.queue.push(parts.map(p=>p.text)); parts.forEach(p=>{ if(p.text) spy.played.push(p.text); }); return Promise.resolve(); },auto:text=>{ spy.auto.push(text); if(t.S().settings.autoplay!==false) spy.played.push(text); },
@@ -1732,4 +1732,79 @@ test("stage reached: a copy from before this change (no such field) still loads,
   for(const m of [L.mergeProgress(old,{updatedAt:3,stageOpen:{4:8}}),L.mergeProgress({updatedAt:3,stageOpen:{4:8}},old)]) assert.deepEqual({...m.stageOpen},{4:8});
   const u=loadUi(); u.setS(old); assert.deepEqual({...u.S().stageOpen},{}); assert.deepEqual({...u.serialize().stageOpen},{}); assert.equal(u.S().streak,2);
   const sp=L.splitProgress(old); assert.ok(Object.keys(L.joinProgress(sp.meta,sp.shards)).includes("cards"));
+});
+// the review with a store behind it (path "claude" = account store, "gh" = github hub, "local" = none): cards that were really graded before (r>=1),
+// a clock and timers the test moves (adv), and the remote to compare with
+async function reviewSync(path,{n=6,day=null}={}){
+  const hub=path==="gh"?fakeHub():null, db=path==="claude"?fakeDb():null, store=new Map(path==="gh"?[[KEY+"-gh",CFG]]:[]);
+  const sc=loadScreens({harakat:"never",ui:path==="gh"?{pwa:true,store,fetch:hub.fetch}:{store}}), {env,t}=sc;
+  const ids=[...Array(n).keys()].map(i=>"x."+i), ar=["هلا","زين","شاي","قهوة","ماي","خبز","لبن","تمر","سمك"].slice(0,n);
+  vm.runInContext("globalThis.__now=Math.floor(Date.now()/60000)*60000; Date.now=()=>globalThis.__now;"+cut("function touchDay","const shownStreak"),env);
+  ids.forEach((id,i)=>{ sc.items[id]={id,unit:"x"+i,stage:1,ar:ar[i],tr:"t",en:"e"+i}; t.S().cards[id]=Object.assign(sc.card(0,0,2),{d:i+1,t:env.__now-3*864e5}); });
+  if(day) Object.assign(t.S(),day);
+  const q=[]; let tid=0; env.setTimeout=(f,ms)=>{ q.push({id:++tid,at:env.__now+ms,f}); return tid; }; env.clearTimeout=id=>{ const i=q.findIndex(x=>x.id===id); if(i>=0) q.splice(i,1); };
+  const adv=async ms=>{ const end=env.__now+ms; for(;;){ q.sort((a,b)=>a.at-b.at||a.id-b.id); const x=q[0]; if(!x||x.at>end) break; q.shift(); env.__now=Math.max(env.__now,x.at); x.f(); await tick(); } env.__now=end; await tick(); };
+  if(path==="claude"){ t.use(db,"u1"); await t.pushRemote(); } if(path==="gh"){ assert.ok(t.gh()); await env.ghSync("manual"); await tick(); }
+  await adv(61000); // past the github gap
+  env.sched=(c,g,n)=>L.schedule(c,g,n,0.9); const focused=[], said=[]; env.announce=x=>{ said.push(x); };
+  env.document.createElement=tag=>{ const e=uiEl(tag); e.focus=()=>{ focused.push(e); }; return e; }; env.startReview(null); const b=()=>sc.spy.view.body;
+  const shown=()=>ids[ar.indexOf((walk(b()).find(n=>/\bsay\b/.test(n.className))||{attrs:{}}).attrs["aria-label"]?.slice(6))];
+  const grade=lab=>{ press(byText(b(),"Show answer")); press(walk(b()).find(n=>n.tag==="button"&&n.parent&&/grades/.test(n.parent.className)&&txt(n).startsWith(lab))); };
+  const full=()=>{ const p=t.serialize(); delete p.updatedAt; return JSON.stringify(p); };
+  const remote=()=>path==="gh"?JSON.stringify([...hub.files].map(([k,v])=>[k,k==="progress.json"?Object.assign(JSON.parse(v.text),{updatedAt:0}):v.text]).sort()):path==="claude"?JSON.stringify([...db.m].map(([k,v])=>[k,Object.assign({},v,{updatedAt:0})]).sort()):"";
+  return {sc,env,t,b,shown,grade,full,remote,adv,focused,said,undoBtn:()=>byText(b(),"Undo last grade"),sync:()=>path==="gh"?env.ghSync("manual"):t.pushRemote()};
+}
+const SYNCED="That grade has already synced, so it can't be undone.";
+for(const path of ["claude","gh"]) test(`undo holds the push (${path}): nothing is uploaded while an undo is open, and the remote ends as it was`,async()=>{
+  const r=await reviewSync(path), remoteBefore=r.remote(), before=r.full();
+  r.grade("Easy"); await r.adv(2000); assert.equal(r.remote(),remoteBefore,"held"); assert.notEqual(r.full(),before);
+  press(r.undoBtn()); assert.equal(r.full(),before); await r.adv(10000); assert.equal(r.remote(),remoteBefore,"the remote is the pre-grade copy"); assert.equal(r.full(),before);
+});
+test("undo after the grade synced is refused, drawn no more, and changes nothing",async()=>{
+  const r=await reviewSync("claude"), remoteBefore=r.remote(); r.grade("Easy"); const btn=r.undoBtn(); assert.ok(btn); await r.adv(9000);
+  assert.notEqual(r.remote(),remoteBefore,"pushed after the hold"); const state=r.full(); press(btn);
+  assert.ok(texts(r.b()).includes(SYNCED)); assert.equal(r.full(),state); assert.ok(!r.undoBtn(),"button removed");
+  // a screen drawn after the grade went out has no button
+  const w=await reviewSync("claude",{n:1}); w.grade("Forgot"); assert.ok(w.undoBtn()); await w.adv(9000); await w.adv(53000);
+  assert.ok(byText(w.b(),"Show answer"),"the card is back"); assert.ok(!w.undoBtn(),"not drawn once sent");
+});
+test("undo: a page hidden at 2 s pushes at once and the undo is then refused",async()=>{
+  for(const path of ["claude","gh"]){ const r=await reviewSync(path), remoteBefore=r.remote(); r.grade("Easy"); await r.adv(2000); assert.equal(r.remote(),remoteBefore);
+    const btn=r.undoBtn(); r.env.document.visibilityState="hidden"; r.t.on.visibilitychange(); await tick(); assert.notEqual(r.remote(),remoteBefore,path);
+    const state=r.full(); press(btn); assert.ok(texts(r.b()).includes(SYNCED),path); assert.equal(r.full(),state); }
+});
+test("undo: Sync now during the hold pushes at once and the undo is then refused",async()=>{
+  for(const path of ["claude","gh"]){ const r=await reviewSync(path), remoteBefore=r.remote(); r.grade("Easy"); await r.adv(1000); await r.sync(); await tick();
+    assert.notEqual(r.remote(),remoteBefore,path); press(r.undoBtn()); assert.ok(texts(r.b()).includes(SYNCED),path); }
+});
+test("undo hold: grading every 5 s never delays a push past 30 s, and the undo open then is refused",async()=>{
+  for(const path of ["claude","gh"]){ const r=await reviewSync(path,{n:9}), remoteBefore=r.remote();
+    for(let k=0;k<6;k++){ r.grade("Got it"); await r.adv(5000); if(k<5) assert.equal(r.remote(),remoteBefore,`${path}: still held at ${(k+1)*5} s`); }
+    assert.notEqual(r.remote(),remoteBefore,path+": pushed by 31 s"); press(r.undoBtn()); assert.ok(texts(r.b()).includes(SYNCED),path); }
+});
+test("undo hold: a grade on a new day, undone within the hold, leaves the remote's day, streak, freezes and log as they were",async()=>{
+  for(const path of ["claude","gh"]){ const r=await reviewSync(path,{day:{streak:4,freezes:1,freezeUsed:0,lastDay:"2000-01-01",reviewsToday:7,newToday:2,log:{"2000-01-01":3}}});
+    if(path==="claude") await r.t.pushRemote(); else await r.env.ghSync("manual"); await tick(); const remoteBefore=r.remote(), before=r.full();
+    r.grade("Got it"); assert.notEqual(r.full(),before); await r.adv(2000); press(r.undoBtn()); await r.adv(10000); assert.equal(r.remote(),remoteBefore,path); assert.equal(r.full(),before); }
+});
+test("undo hold: the waiting screen does not push, and an undo from it leaves the remote as it was",async()=>{
+  for(const path of ["claude","gh"]){ const r=await reviewSync(path,{n:1}), remoteBefore=r.remote(), before=r.full();
+    r.grade("Forgot"); assert.ok(/comes? back in/.test(texts(r.b()).join(" "))); await r.adv(3000); assert.equal(r.remote(),remoteBefore,path+": no forced push");
+    press(r.undoBtn()); assert.equal(r.full(),before); assert.ok(byText(r.b(),"Show answer")); await r.adv(10000); assert.equal(r.remote(),remoteBefore,path); }
+});
+test("undo hold: how long a timer-started push still waits",()=>{
+  const g=1e6, w=L.holdWait; assert.equal(w(g+500,0,0),0,"no undo open"); assert.equal(w(g+1500,g,g),6500,"inside the 8 s"); assert.equal(w(g+7999,g,g),1);
+  assert.equal(w(g+8000,g,g),0,"hold over"); assert.equal(w(g+20000,g,g),0);
+  assert.equal(w(g+29500,g+29000,g),500,"capped at 30 s from the first wish to push"); assert.equal(w(g+30000,g+29000,g),0,"at the limit"); assert.equal(w(g+31000,g+29000,g),0);
+});
+test("review: a forgotten card that was the last one shown comes back from the waiting screen",async()=>{
+  const one=await reviewSync("local",{n:1}); one.grade("Forgot"); assert.ok(/comes? back in/.test(texts(one.b()).join(" "))); await one.adv(61000); assert.ok(byText(one.b(),"Show answer")); assert.equal(one.shown(),"x.0");
+  const six=await reviewSync("local"); for(let i=0;i<5;i++) six.grade("Got it"); assert.equal(six.shown(),"x.5"); six.grade("Forgot"); assert.ok(/comes? back in/.test(texts(six.b()).join(" ")));
+  await six.adv(61000); assert.equal(six.shown(),"x.5"); assert.ok(byText(six.b(),"Show answer"));
+});
+test("undo: it is announced, focus goes to the refusal line, and a stage with nothing to undo has no empty row",async()=>{
+  const r=await reviewSync("claude"); const stage=()=>walk(r.b()).find(n=>n.className==="stage"); assert.match(stage().children[0].className,/mode/,"nothing to undo, no empty row first");
+  r.grade("Easy"); press(r.undoBtn()); assert.ok(r.said.includes("Grade undone"));
+  r.grade("Easy"); const p=r.t.serialize(); p.cards["x.0"][5]+=7; r.t.setS(p); press(r.undoBtn()); const line=walk(r.b()).find(n=>n.tag==="p"&&txt(n)==="That card changed on another device, so it can't be undone.");
+  assert.ok(line&&r.focused.includes(line),"focus on the refusal line");
 });

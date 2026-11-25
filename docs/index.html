@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-7YBfJ/6+a8rvfuRpmEXlNEvVD63NFPXOBdeuKoxmO+Y=' 'sha256-YZQtd5YjOwHleRt2hA9J1FMDCn6gaBtYNe9ptxY3jRo=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-V7DlWgS2s7y1584o7dflNsCnSB0bQ9Excm+f8hJF/SY=' 'sha256-Rr0l6YKpntdKgOv/4gtnUXZKMEUWrvUkYPEUCqV5AlM=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -2280,6 +2280,8 @@ function ghAfter(st,kind,now){
   return {last:s.last,waiting:s.waiting,problem:kind};
 }
 const ghWait=(lastRun,now)=>Math.min(GH_GAP,Math.max(0,lastRun+GH_GAP-now));
+// how long a timer-started upload still waits while a grade can be undone: 8 s after the grade, never past 30 s from the first save it holds back (from 0: no undo open)
+const holdWait=(now,from,want)=>from?Math.max(0,Math.min(from+8000,want+30000)-now):0;
 function ghAllow(trigger,s){
   if(!s.on) return "no";
   if(trigger==="manual") return "go";
@@ -2364,7 +2366,7 @@ async function ghCycle(api,local,mem,opts){
 const tilesOf=ar=>String(ar).replace(/[،؟?!.,]/g," ").split(/\s+/).filter(Boolean);
 const showHarakat=(mode,stage)=>mode==="always"?true:mode==="never"?false:stage<=2;
 const shownAr=(row,on)=>on&&typeof row.arv==="string"&&row.arv?row.arv:row.ar;
-if(typeof module!=="undefined") module.exports={tilesOf,showHarakat,shownAr,SHARDS,shardOf,splitProgress,joinProgress,learnDay,dueAt,validCard,validGen,cleanSaved,S_MIN,MAX_IVL,normalizeArabic,levenshtein,similarity,wordMatch,letterForms,schedule,retrievability,intervalDays,isLeech,FSRS_W,cardMode,pickOptions,soundShift,validateUnit,isHidden,stageStatus,planDay,interleave,packCard,unpackCard,MATURE_DAYS,dayNum,nextStreak,visibleStreak,mergeProgress,afterReset,whenLabel,canon,b64enc,b64dec,GH_META,GH_GAP,GH_WHY,ghFile,ghKind,ghLine,ghAfter,ghWait,ghAllow,ghNeed,ghChanged,GH_API,ghApi,ghCycle};
+if(typeof module!=="undefined") module.exports={holdWait,tilesOf,showHarakat,shownAr,SHARDS,shardOf,splitProgress,joinProgress,learnDay,dueAt,validCard,validGen,cleanSaved,S_MIN,MAX_IVL,normalizeArabic,levenshtein,similarity,wordMatch,letterForms,schedule,retrievability,intervalDays,isLeech,FSRS_W,cardMode,pickOptions,soundShift,validateUnit,isHidden,stageStatus,planDay,interleave,packCard,unpackCard,MATURE_DAYS,dayNum,nextStreak,visibleStreak,mergeProgress,afterReset,whenLabel,canon,b64enc,b64dec,GH_META,GH_GAP,GH_WHY,ghFile,ghKind,ghLine,ghAfter,ghWait,ghAllow,ghNeed,ghChanged,GH_API,ghApi,ghCycle};
 </script>
 
 <script>
@@ -2438,7 +2440,13 @@ if(unreadable){ const n=$("#sync-note"); n.hidden=false; n.textContent="Saved pr
 function setSync(state,msg,tail){ sync.state=state; sync.msg=msg; const n=$("#sync-note");
   if(state==="error"){ n.hidden=false; n.textContent=msg+(tail||" Your progress is still safe in this browser and will sync when it can."); } else if(!localFail) n.hidden=true; }
 const syncError=e=>{ const c=e&&e.code; return c==="quota_exceeded"?"Account storage is full.":c==="not_granted"||c==="forbidden"||c==="permission_denied"?"This page isn't allowed to save to your account.":`Couldn't save to your account${c?" ("+c+")":""}.`; };
-function save(){ S.updatedAt=Date.now(); persistLocal(); if(GH){ ghDirty=true; ghSync("save"); } if(synced){ clearTimeout(saveTimer); saveTimer=setTimeout(pushRemote,1500); } }
+// an upload started by a timer waits while the last review grade can still be undone (sentFrom: the newest save an upload attempt has started with; undoHold: the open undo, if any)
+let sentFrom=0, undoHold=null, heldSince=0;
+const holdCheck=()=>{ if(undoHold&&!undoHold.open()){ undoHold=null; heldSince=0; } };
+const holdLeft=now=>{ holdCheck(); return undoHold?holdWait(now,undoHold.at,heldSince||now):0; };
+const pushStarts=()=>{ sentFrom=S.updatedAt; heldSince=0; };
+function timerPush(){ const w=holdLeft(Date.now()); if(w>0) saveTimer=setTimeout(timerPush,w); else pushRemote(); }
+function save(){ S.updatedAt=Date.now(); persistLocal(); holdCheck(); if(undoHold&&!heldSince) heldSince=Date.now(); if(GH){ ghDirty=true; ghSync("save"); } if(synced){ clearTimeout(saveTimer); saveTimer=setTimeout(timerPush,1500); } }
 const progressRef=()=>DB.doc(`data/users/${UID}/progress`);
 const shardRef=n=>DB.doc(`data/users/${UID}/cards_${n}`);
 // what this browser last read or wrote for each card group, so unchanged groups aren't fetched or rewritten
@@ -2461,7 +2469,7 @@ async function pullRemote(){
 }
 // card groups first, then the main document that points at them, so a reader never follows a stamp to an unwritten group
 async function writeRemote(){
-  const {meta,shards}=splitProgress(serialize()); const stamps={};
+  pushStarts(); const {meta,shards}=splitProgress(serialize()); const stamps={};
   for(const n of SHARDS){ const body=JSON.stringify(shards[n]); const empty=body==="{}";
     if(empty&&!shardStamp[n]) continue;
     if(body!==shardSent[n]||!shardStamp[n]){ const st=Date.now().toString(36)+Math.random().toString(36).slice(2,6); await shardRef(n).set({cards:shards[n]}); shardStamp[n]=st; shardSent[n]=body; }
@@ -2564,8 +2572,9 @@ function ghSync(trigger,opts){
   if(a==="no") return Promise.resolve();
   if(a==="offline"){ ghSt=ghAfter(ghSt,"offline",now); ghNote(); firstMergeDone(); return Promise.resolve("offline"); }
   if(trigger==="save"){ if(!ghTimer&&!ghRun) ghTimer=setTimeout(()=>{ ghTimer=0; ghSync("timer"); },Math.max(1500,ghWait(ghStart,now))); return Promise.resolve(); }
+  if(trigger==="timer"){ const w=holdLeft(now); if(w>0){ clearTimeout(ghTimer); ghTimer=setTimeout(()=>{ ghTimer=0; ghSync("timer"); },w); return Promise.resolve(); } }
   if(ghRun){ const q=ghAgain||{hand:false,replace:false}; ghAgain={hand:q.hand||trigger==="manual",replace:q.replace||!!(opts&&opts.replace)}; return ghRun; }
-  clearTimeout(ghTimer); ghTimer=0; ghStart=now; ghDirty=false;
+  clearTimeout(ghTimer); ghTimer=0; ghStart=now; ghDirty=false; pushStarts();
   const cfg=GH, me={dead:false}; ghCur=me;
   const send=(u,o)=>me.dead?Promise.reject(new Error("cancelled")):ghFetch(u,o);
   ghRun=(async()=>{
@@ -3127,22 +3136,24 @@ function renderReviewTab(){
 function startReview(onDone){
   const exit=onDone||(()=>show(currentTab));
   const f=focusView({title:"Review",onClose:exit});
-  const first=plan(); let queue=interleave(first.reviews,id=>ITEM_UNIT[id]||"x"), total=queue.length, n=0, shown=null, waitTimer=0;
+  const first=plan(); let queue=interleave(first.reviews,id=>ITEM_UNIT[id]||"x"), total=queue.length, n=0, waitTimer=0;
   const back=new Map(); let undo=null, cur=null; // back: card id -> n when forgotten (queue order only); undo: the last grade; cur: the card on screen
   // cards over today's cap wait for the next session; the top-up only brings in cards that come due while this one runs
   const held=new Set(planDay(liveCards(),S.suspended,Date.now(),{maxReviews:1e9}).reviews.filter(id=>!first.reviews.includes(id)));
-  const topUp=()=>{ const due=planDay(liveCards(),S.suspended,Date.now(),{maxReviews:500,exclude:held}).reviews.filter(id=>!queue.includes(id)&&id!==shown); if(due.length){ total+=due.length; for(const id of due){ if(back.has(id)){ queue.splice(Math.min(queue.length,Math.max(0,3-(n-back.get(id)))),0,id); back.delete(id); } else queue.push(id); } } }; // a forgotten card returns once due, after three other cards at least
+  const topUp=()=>{ const due=planDay(liveCards(),S.suspended,Date.now(),{maxReviews:500,exclude:held}).reviews.filter(id=>!queue.includes(id)&&id!==cur); if(due.length){ total+=due.length; for(const id of due){ if(back.has(id)){ queue.splice(Math.min(queue.length,Math.max(0,3-(n-back.get(id)))),0,id); back.delete(id); } else queue.push(id); } } }; // a forgotten card returns once due, after three other cards at least
   const finish=()=>{ keyHandler=null; undo=null; cur=null; flush(); f.progress(total,total); f.body.textContent="";
     if(onDone&&n) S.session.done.review=1;
     f.body.append(el("div",{className:"stage"},el("p",{className:"en",textContent:n?"Review done":"Nothing due"}),el("p",{className:"tag",textContent:n?`${n} card${n>1?"s":""} reviewed. They'll come back as you start to forget them.`:"Learn a lesson and its phrases will show up here."}),
       el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Continue",onclick:exit})))); announce("Review done"); };
-  const undoBox=()=>{ const box=el("div",{className:"row center"}); if(undo) box.append(el("button",{className:"btn small ghost",type:"button",textContent:"Undo last grade",onclick:()=>undoLast(box)})); return box; };
+  const undoBox=()=>{ if(!undo||sentFrom>=undo.stamp) return null; const box=el("div",{className:"row center"}); box.append(el("button",{className:"btn small ghost",type:"button",textContent:"Undo last grade",onclick:()=>undoLast(box)})); return box; };
   // puts the last graded card and the day's counters back exactly; refuses when a sync replaced the card since
   const undoLast=box=>{ const u=undo; if(!u) return; undo=null; const c=S.cards[u.id];
-    if(!c||JSON.stringify(packCard(c))!==u.after){ box.textContent=""; box.append(el("p",{className:"feedback no",role:"status",textContent:"That card changed on another device, so it can't be undone."})); return; }
+    const refuse=t=>{ const p=el("p",{className:"feedback no",role:"status",textContent:t}); box.textContent=""; box.append(p); p.setAttribute("tabindex","-1"); try{ p.focus(); }catch(e){} };
+    if(sentFrom>=u.stamp) return refuse("That grade has already synced, so it can't be undone."); // an upload has started with this grade in it
+    if(!c||JSON.stringify(packCard(c))!==u.after) return refuse("That card changed on another device, so it can't be undone.");
     S.cards[u.id]=u.card; Object.assign(S,u.day); if(u.logBefore) S.log=u.logBefore; else if(u.logVal===undefined) delete S.log[u.logKey]; else S.log[u.logKey]=u.logVal;
     S.session.day=u.sessionDay; if(u.review===undefined) delete S.session.done.review; else S.session.done.review=u.review; save();
-    queue=queue.filter(x=>x!==u.id); back.delete(u.id); if(cur&&cur!==u.id) queue.unshift(cur); queue.unshift(u.id); n=u.n; next(); };
+    queue=queue.filter(x=>x!==u.id); back.delete(u.id); if(cur&&cur!==u.id) queue.unshift(cur); queue.unshift(u.id); n=u.n; next(); announce("Grade undone"); };
   // a second tap within 4 s deletes a word you added; the card goes from the queue, and so does an undo that would bring it back
   const delBtn=wid=>{ let armed=0; const b=el("button",{className:"btn small ghost",type:"button",textContent:"Delete this word"});
     b.onclick=()=>{ if(!armed){ b.textContent="Tap again to delete"; armed=setTimeout(()=>{ armed=0; b.textContent="Delete this word"; },4000); return; }
@@ -3151,14 +3162,14 @@ function startReview(onDone){
     clearTimeout(waitTimer); if(!f.alive()) return; f.body.textContent=""; keyHandler=null; topUp();
     if(!queue.length){
       const now=Date.now(); const soon=Object.entries(liveCards()).filter(([id,c])=>!isHidden(S.suspended,id)&&!held.has(id)&&dueAt(c)>now&&dueAt(c)-now<10*60000).sort((a,b)=>dueAt(a[1])-dueAt(b[1])); // when it really comes back, and never one held for the next days
-      if(soon.length&&n){ const ms=dueAt(soon[0][1])-now; flush(); cur=null;
+      if(soon.length&&n){ const ms=dueAt(soon[0][1])-now; if(holdLeft(Date.now())>0) persistLocal(); else flush(); cur=null; // not while the last grade can still be undone
         f.body.append(el("div",{className:"stage"},undoBox(),el("p",{className:"en",textContent:`${soon.length} card${soon.length>1?"s":""} come${soon.length>1?"":"s"} back ${whenLabel(ms)}`}),
           el("p",{className:"tag",textContent:"New and forgotten cards return after a short gap on purpose: recalling after a pause is what makes them stick. Wait here, or finish and they'll be on Today."}),
           el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Finish for now",onclick:finish}))));
         waitTimer=setTimeout(()=>{ if(f.alive()) next(); },Math.min(ms+500,30000)); return; }
       return finish();
     }
-    const id=queue.shift(); shown=cur=id; const it=ITEMS[id]; const hv=harOn(); const nShown=n; n++; f.progress(n-1,total);
+    const id=queue.shift(); cur=id; const it=ITEMS[id]; const hv=harOn(); const nShown=n; n++; f.progress(n-1,total);
     const card=S.cards[id]; const mode=cardMode(card,it.msaTrack||it.receptive,it.sentence);
     const stage=el("div",{className:"stage"},undoBox()); f.body.append(stage);
     const ans=el("div",{className:"stack",hidden:true,style:"justify-items:center;width:100%"});
@@ -3196,8 +3207,10 @@ function startReview(onDone){
       el("details",{className:"more"},el("summary",{textContent:"Problem with this card?"}),el("div",{className:"row"},el("button",{className:"btn small ghost",type:"button",textContent:"Hide it from reviews",onclick:()=>{ S.suspended[id]=Date.now(); save(); next(); }}),it.unit==="custom"?delBtn(id):null)));
     const grade=g=>{ const logKey=today(), logVal=S.log[logKey], logBefore=Object.keys(S.log).length>=400?Object.assign({},S.log):null; // the log drops its oldest day past 400
       const snap={id,n:nShown,card:Object.assign({},S.cards[id]),day:{reviewsToday:S.reviewsToday,newToday:S.newToday,streak:S.streak,freezes:S.freezes,freezeUsed:S.freezeUsed,lastDay:S.lastDay},logKey,logVal,logBefore,sessionDay:S.session.day,review:S.session.done.review};
-      touchDay(); S.cards[id]=sched(S.cards[id],g,Date.now()); S.reviewsToday++; logActivity(1); save(); if(onDone) S.session.done.review=1;
-      snap.after=JSON.stringify(packCard(S.cards[id])); undo=snap; if(g===0) back.set(id,n); next(); };
+      touchDay(); S.cards[id]=sched(S.cards[id],g,Date.now()); S.reviewsToday++; logActivity(1);
+      snap.after=JSON.stringify(packCard(S.cards[id])); undo=snap; if(g===0) back.set(id,n);
+      undoHold={at:Date.now(),open:()=>undo===snap&&f.alive()&&!!S.cards[id]&&JSON.stringify(packCard(S.cards[id]))===snap.after}; // uploads wait a few seconds so this can still be taken back
+      save(); snap.stamp=S.updatedAt; if(onDone) S.session.done.review=1; next(); };
     const gr=el("div",{className:"grades",role:"group","aria-label":"How well did you know it?"});
     const reveal=()=>{ if(!ans.hidden) return; ans.hidden=false; acts.textContent=""; if(trTap&&trTap.tagName==="BUTTON") trTap.remove(); const now=Date.now();
       [["Forgot",0],["Hard",1],["Got it",2],["Easy",3]].forEach(([lab,g])=>{ const nx=sched(card,g,now);
