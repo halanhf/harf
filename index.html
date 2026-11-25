@@ -2644,7 +2644,7 @@ function showTr(){ const m=S.settings.translit; if(m!=="auto") return m; const s
 
 // ===== speech out: device voices, or the Claude voice where the page is given one =====
 const synth=("speechSynthesis" in window)?window.speechSynthesis:null;
-let arVoices=[], arVoice=null, enVoice=null, TTS=null, audioGen=0, curUtt=null, voiceOff=false, curNote=null, stallGen=-1, shownNote=null, ttsHooked=null, ttsPart=null;
+let arVoices=[], arVoice=null, enVoice=null, TTS=null, audioGen=0, curUtt=null, voiceOff=false, curNote=null, stallGen=-1, shownNote=null, ttsHooked=null, ttsPart=null, curRec=null;
 try{ voiceOff=localStorage.getItem(KEY+"-voice")==="hidden"; }catch(e){}
 const VOICE_NONE="This device has no speech voice, so Harf can't play audio here. The pronunciation lines show how each phrase sounds.";
 const VOICE_NOAR="No Arabic voice on this device, so audio may be silent. Android: Settings, Google Speech Services, install Arabic. iPhone: Settings, Accessibility, Spoken Content, Voices, Arabic. Windows: Settings, Time & language, Speech, add Arabic.";
@@ -2670,7 +2670,7 @@ function voiceRow(after){ if(!voiceOff) return null;
   return el("div",{className:"setting"},el("span",{textContent:"Audio notices are hidden"}),el("button",{className:"btn small",type:"button",textContent:"Show them again",onclick:()=>{ voiceOff=false; try{ localStorage.removeItem(KEY+"-voice"); }catch(e){} pickVoices(); voiceNote(curNote); if(after) after(); }})); }
 pickVoices(); if(synth){ if(synth.addEventListener) synth.addEventListener("voiceschanged",pickVoices); else synth.onvoiceschanged=pickVoices; }
 const useClaudeVoice=()=>{ if(!TTS) return false; const v=S.settings.voice; return v==="claude"||(v!=="device"&&!arVoice); };
-function stopAudio(){ audioGen++; if(synth) try{ synth.cancel(); }catch(e){} if(TTS) try{ TTS.stop().catch(()=>{}); }catch(e){} }
+function stopAudio(){ audioGen++; pauseRec(); if(synth) try{ synth.cancel(); }catch(e){} if(TTS) try{ TTS.stop().catch(()=>{}); }catch(e){} }
 // one utterance; resolves when it ends or fails or is given up on, never rejects
 // the Claude voice reports its state: a line has started once it is "speaking" after its own "starting"; one handler, aimed at the line now waiting
 function hookTTS(){ if(!TTS||TTS===ttsHooked||typeof TTS.onState!=="function") return; ttsHooked=TTS;
@@ -2749,6 +2749,7 @@ function speakWidget(target,onScore){
     ap(fb,el("p",{textContent:(best.pct>=75?"Good":best.pct>=50?"Close, try once more":"Try again")+` · ${best.pct}%`}),
       el("div",{className:"words",lang:"ar"},best.words.map(x=>el("span",{className:x.ok?"hit":"miss",textContent:x.w}))),
       best.heard?el("p",{className:"tag"},"Heard: ",arSpan(best.heard)):null,
+      el("span",{className:"sr",textContent:best.words.some(x=>!x.ok)?"Not caught: "+best.words.filter(x=>!x.ok).map(x=>x.w).join(", "):"All words caught"}),
       best.words.some(x=>!x.ok)?el("p",{className:"tag",textContent:"Underlined with dashes: words it didn't catch. Listen again and say those clearly."}):null);
     buzz(best.pct>=75?10:[30,40,30]); if(onScore) onScore(best.pct);
   };
@@ -2780,17 +2781,29 @@ function speakWidget(target,onScore){
 // record yourself and compare with the model (only where the page may use the microphone)
 let recBlocked=false;
 const canRecord=()=>!!(navigator.mediaDevices&&navigator.mediaDevices.getUserMedia&&window.MediaRecorder)&&!recBlocked&&!micBlocked&&!policyBlocksMic();
+// the playing recording: stopAudio pauses it, and it is released (link freed) when replaced or when its screen is left
+function pauseRec(){ if(!curRec) return; clearTimeout(curRec.timer); curRec.audio.onended=curRec.audio.onerror=null; try{ curRec.audio.pause(); curRec.audio.currentTime=0; }catch(e){} if(!curRec.wrap.isConnected) releaseRec(); }
+function releaseRec(){ const c=curRec; if(!c) return; curRec=null; clearTimeout(c.timer); c.audio.onended=c.audio.onerror=null; try{ c.audio.pause(); }catch(e){} try{ URL.revokeObjectURL(c.url); }catch(e){} }
 function recordWidget(text){
   if(!canRecord()) return null;
-  const wrap=el("div",{className:"row center"}); const b=el("button",{className:"btn small",type:"button"},icon("rec"),el("span",{textContent:"Record yourself"})); wrap.append(b);
+  const wrap=el("div",{className:"row center"}); const b=el("button",{className:"btn small",type:"button"},icon("rec"),el("span",{textContent:"Record yourself"}));
+  const note=el("p",{className:"tag",role:"status"}); wrap.append(b,note);
   b.onclick=async()=>{
     let stream; try{ stream=await navigator.mediaDevices.getUserMedia({audio:true}); }catch(e){ recBlocked=true; wrap.replaceWith(el("p",{className:"tag",textContent:"The microphone isn't available here."})); return; }
-    const rec=new MediaRecorder(stream); const chunks=[]; rec.ondataavailable=e=>chunks.push(e.data);
-    rec.onstop=()=>{ stream.getTracks().forEach(t=>t.stop()); const url=URL.createObjectURL(new Blob(chunks,{type:rec.mimeType||"audio/webm"}));
-      const audio=new Audio(url); b.lastChild.textContent="Record again"; b.disabled=false;
-      const cmp=el("button",{className:"btn small cmp",type:"button",textContent:"Compare: you, then the model",onclick:()=>{ const model=()=>sayQueue([{text}]); audio.currentTime=0; audio.onended=model; audio.play().catch(model); }});
+    const was=b.lastChild.textContent, chunks=[]; let rec=null, tm=0, failed=false; note.textContent="";
+    const fail=()=>{ if(failed) return; failed=true; clearTimeout(tm); try{ stream.getTracks().forEach(t=>t.stop()); }catch(e){} b.disabled=false; b.lastChild.textContent=was; note.textContent="Couldn't record. Try again."; };
+    try{ rec=new MediaRecorder(stream); }catch(e){ fail(); return; }
+    rec.ondataavailable=e=>chunks.push(e.data); rec.onerror=()=>{ fail(); try{ if(rec.state==="recording") rec.stop(); }catch(e){} };
+    rec.onstop=()=>{ if(failed) return; stream.getTracks().forEach(t=>t.stop()); releaseRec(); const url=URL.createObjectURL(new Blob(chunks,{type:rec.mimeType||"audio/webm"}));
+      const audio=new Audio(url), cur=curRec={audio,url,wrap,timer:0}; b.lastChild.textContent="Record again"; b.disabled=false;
+      // the recording starts inside the tap (iPhone refuses it later); the model follows when it ends, fails or runs out of time, unless audio was stopped meanwhile
+      const cmp=el("button",{className:"btn small cmp",type:"button",textContent:"Compare: you, then the model",onclick:()=>{ stopAudio(); const g=audioGen; let went=false;
+        const model=()=>{ if(went||g!==audioGen||curRec!==cur||!wrap.isConnected) return; went=true; clearTimeout(cur.timer); sayQueue([{text}]); };
+        audio.currentTime=0; audio.onended=model; audio.onerror=model; cur.timer=setTimeout(model,((audio.duration>0&&audio.duration<10)?audio.duration:4)*1000+1500); audio.play().catch(model); }});
       wrap.querySelectorAll(".cmp").forEach(x=>x.remove()); wrap.append(cmp); };
-    stopAudio(); b.disabled=true; b.lastChild.textContent="Recording 4 s…"; rec.start(); setTimeout(()=>{ if(rec.state==="recording") rec.stop(); },4000);
+    stopAudio(); b.disabled=true; b.lastChild.textContent="Recording 4 s…";
+    try{ rec.start(); }catch(e){ fail(); return; }
+    tm=setTimeout(()=>{ if(rec.state==="recording") rec.stop(); },4000);
   };
   return wrap;
 }
@@ -2819,7 +2832,7 @@ addEventListener("appinstalled",()=>{ installEvt=null; if(currentTab==="me"&&!bu
 let currentTab="today", viewId=0, busy=false, keyHandler=null, wake=null, courseTab="lessons";
 function releaseWake(){ try{ if(wake) wake.release(); }catch(e){} wake=null; }
 async function keepAwake(){ try{ if(navigator.wakeLock) wake=await navigator.wakeLock.request("screen"); }catch(e){} }
-function leaveActivity(){ viewId++; closeFocus=null; stopAudio(); busy=false; keyHandler=null; releaseWake(); document.body.classList.remove("focus"); if(DICT&&dictSink) DICT.stop().catch(()=>{}); }
+function leaveActivity(){ viewId++; closeFocus=null; stopAudio(); releaseRec(); busy=false; keyHandler=null; releaseWake(); document.body.classList.remove("focus"); if(DICT&&dictSink) DICT.stop().catch(()=>{}); }
 const RENDER={today:()=>renderToday(),review:()=>renderReviewTab(),course:()=>renderCourse(),talk:()=>renderTalk(),me:()=>renderMe()};
 // a lesson or review sits on two steps of browser history, so the phone's back gesture closes it instead of quitting
 // the installed app: back once asks "leave?" mid-lesson, back again leaves. two up front because chrome skips history

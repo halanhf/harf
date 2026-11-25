@@ -1256,7 +1256,7 @@ function loadSpeech({voices=[{lang:"ar-SA"}],engine=true,fire="end",store,quietC
   env.SpeechSynthesisUtterance=function(text){ this.text=text; };
   if(engine) env.window.speechSynthesis={getVoices:()=>voices,addEventListener(){},cancel(){ cancels.push(1); if(!quietCancel&&cur&&cur.onerror) cur.onerror({error:"interrupted"}); cur=null; },
     speak(u){ if(throwSpeak) throw new Error("boom"); cur=u; spoken.push(u.text); if(fire==="end"){ u.onstart&&u.onstart(); u.onend(); } else if(fire==="start") u.onstart&&u.onstart(); else if(fire==="error") u.onerror({error:"synthesis-failed"}); }};
-  vm.runInContext(cut("const ap=","const SVG=")+cut("const synth=","// ===== speech in")+";this.__tts=x=>{ TTS=x; pickVoices(); }; Object.assign(this,{VOICE_NONE,VOICE_NOAR,VOICE_STALL});",env);
+  vm.runInContext(cut("const ap=","const SVG=")+cut("const synth=","// ===== speech in")+";function pauseRec(){} /* the record widget is not loaded here */ this.__tts=x=>{ TTS=x; pickVoices(); }; Object.assign(this,{VOICE_NONE,VOICE_NOAR,VOICE_STALL});",env);
   return {t,env,note,spoken,cancels,announced,run:async()=>{ for(let i=0;i<4;i++){ t.runTimers(); await tick(); } }};
 }
 test("audio: a voice that never answers is given up on, the queue carries on, and one line says so",async()=>{
@@ -1410,19 +1410,54 @@ test("voice notice: a new notice is announced once and a repeat is not",async()=
   const s=loadSpeech({fire:"none"}); assert.deepEqual(s.announced,[]); s.env.say("هلا"); await s.run(); assert.deepEqual(s.announced,[s.env.VOICE_STALL]);
   s.env.say("زين"); await s.run(); assert.equal(s.announced.length,1,"the same notice again is not announced");
 });
+function loadRec({fails=false,never=false,startThrows=false,ctorThrows=false}={}){
+  const sc=loadScreens(), {env,spy,t}=sc, audios=[], log=[], revoked=[], state={tapping:false,stopped:0,n:0,recs:[]};
+  Object.assign(env,{policyBlocksMic:()=>false,Blob:class{},URL:{createObjectURL:()=>"blob:"+(++state.n),revokeObjectURL:u=>revoked.push(u)},
+    MediaRecorder:class{ constructor(){ if(ctorThrows) throw new Error("no"); this.state="inactive"; state.recs.push(this); } start(){ if(startThrows) throw new Error("no"); this.state="recording"; } stop(){ this.state="inactive"; this.ondataavailable({data:"x"}); this.onstop(); } },
+    Audio:class{ constructor(){ this.plays=[]; audios.push(this); } pause(){ this.paused=true; log.push("pause"); } play(){ log.push("play"); this.plays.push(state.tapping); return never?new Promise(()=>{}):fails?Promise.reject(new Error("no")):Promise.resolve(); } }});
+  env.window.MediaRecorder=env.MediaRecorder; env.navigator.mediaDevices={getUserMedia:async()=>({getTracks:()=>[{stop(){ state.stopped++; }}]})};
+  vm.runInContext("var audioGen=0,synth=null,curRec=null;",env);
+  vm.runInContext(cut("let recBlocked=false","// phone and claude voices"),env);
+  vm.runInContext(cut("function stopAudio()","\n"),env); const real=env.stopAudio; env.stopAudio=()=>{ log.push("stop"); real(); };
+  const w=env.recordWidget("هلا"), rb=walk(w).find(n=>n.tag==="button");
+  const record=async()=>{ press(rb); await tick(); t.runTimers(); };
+  const compare=()=>{ state.tapping=true; press(byText(w,"Compare: you, then the model")); state.tapping=false; };
+  return {sc,env,spy,t,w,rb,audios,log,revoked,state,record,compare};
+}
 test("record yourself: Compare plays your recording inside the tap, then the model; a recording that won't play still plays the model",async()=>{
   for(const fails of [false,true]){
-    const sc=loadScreens(), {env,spy,t}=sc, audios=[]; let tapping=false;
-    Object.assign(env,{policyBlocksMic:()=>false,Blob:class{},URL:{createObjectURL:()=>"blob:1"},
-      MediaRecorder:class{ constructor(){ this.state="inactive"; } start(){ this.state="recording"; } stop(){ this.state="inactive"; this.ondataavailable({data:"x"}); this.onstop(); } },
-      Audio:class{ constructor(){ this.plays=[]; audios.push(this); } play(){ this.plays.push(tapping); return fails?Promise.reject(new Error("no")):Promise.resolve(); } }});
-    env.window.MediaRecorder=env.MediaRecorder; env.navigator.mediaDevices={getUserMedia:async()=>({getTracks:()=>[{stop(){}}]})};
-    vm.runInContext(cut("let recBlocked=false","// phone and claude voices"),env);
-    const w=env.recordWidget("هلا"); press(walk(w).find(n=>n.tag==="button")); await tick(); t.runTimers();
-    tapping=true; press(byText(w,"Compare: you, then the model")); tapping=false;
-    assert.deepEqual(audios[0].plays,[true],"played inside the tap"); await tick();
-    if(!fails){ assert.deepEqual(spy.queue,[]); audios[0].onended(); } assert.deepEqual(spy.queue.flat(),["هلا"]);
+    const r=loadRec({fails}); await r.record(); r.compare();
+    assert.deepEqual(r.audios[0].plays,[true],"played inside the tap"); await tick();
+    if(!fails){ assert.deepEqual(r.spy.queue,[]); r.audios[0].onended(); } assert.deepEqual(r.spy.queue.flat(),["هلا"]);
   }
+});
+test("record yourself: another play tap, a leaving screen or speech already playing never overlaps the recording",async()=>{
+  for(const fails of [false,true]){ // another tap while the recording plays: it is stopped and the model line never follows
+    const r=loadRec({fails}); await r.record(); r.compare(); r.env.stopAudio(); assert.ok(r.audios[0].paused,"recording stopped");
+    await tick(); if(r.audios[0].onended) r.audios[0].onended(); r.t.runTimers(); await tick(); assert.deepEqual(r.spy.queue,[]);
+  }
+  { const r=loadRec(); await r.record(); r.log.length=0; r.compare(); assert.deepEqual(r.log.filter(x=>x!=="pause"),["stop","play"],"speech is stopped first, inside the tap"); }
+  { const r=loadRec(); await r.record(); r.compare(); r.w.remove(); r.env.stopAudio(); r.audios[0].onended&&r.audios[0].onended(); r.t.runTimers(); await tick();
+    assert.ok(r.audios[0].paused); assert.deepEqual(r.spy.queue,[],"nothing plays after the widget left"); assert.deepEqual(r.revoked,["blob:1"]); }
+  { const r=loadRec(); await r.record(); r.compare(); r.w.remove(); r.audios[0].onended(); assert.deepEqual(r.spy.queue,[],"a widget no longer on the screen plays nothing"); }
+  assert.match(html,/function leaveActivity\(\)\{[^\n]*releaseRec\(\)/,"leaving an activity releases the recording");
+});
+test("record yourself: a recording's link is released when a new recording replaces it",async()=>{
+  const r=loadRec(); await r.record(); assert.deepEqual(r.revoked,[]); await r.record(); assert.deepEqual(r.revoked,["blob:1"]); assert.equal(r.audios.length,2);
+  assert.equal(walk(r.w).filter(n=>/\bcmp\b/.test(n.className)).length,1);
+});
+test("record yourself: a recorder that fails frees the microphone and restores the button, with a plain message",async()=>{
+  for(const mode of [{ctorThrows:true},{startThrows:true},"onerror"]){
+    const r=loadRec(typeof mode==="string"?{}:mode); press(r.rb); await tick();
+    if(mode==="onerror"){ assert.equal(r.rb.disabled,true); r.state.recs[0].onerror({}); }
+    assert.equal(r.state.stopped,1,"microphone stopped"); assert.equal(r.rb.disabled,false); assert.equal(txt(r.rb),"Record yourself");
+    assert.ok(texts(r.w).includes("Couldn't record. Try again."),JSON.stringify(mode)); r.t.runTimers(); assert.equal(walk(r.w).filter(n=>/\bcmp\b/.test(n.className)).length,0);
+  }
+});
+test("record yourself: a recording that neither ends nor fails still lets the model follow, unless audio was stopped",async()=>{
+  { const r=loadRec({never:true}); await r.record(); r.compare(); await tick(); assert.deepEqual(r.spy.queue,[]); r.t.runTimers(); assert.deepEqual(r.spy.queue.flat(),["هلا"]); }
+  { const r=loadRec({never:true}); await r.record(); r.compare(); r.audios[0].onerror(); assert.deepEqual(r.spy.queue.flat(),["هلا"]); r.t.runTimers(); assert.equal(r.spy.queue.length,1,"only once"); }
+  { const r=loadRec({never:true}); await r.record(); r.compare(); r.env.stopAudio(); r.t.runTimers(); assert.deepEqual(r.spy.queue,[]); }
 });
 test("speech check: caught and missed words differ by underline style, not only colour",()=>{
   const sc=loadScreens(); Object.assign(sc.env,{canListen:()=>true,srListen:cb=>cb({alts:["مع"]})});
@@ -1460,4 +1495,13 @@ test("lesson resume: a resume point that no longer fits the lesson is ignored",(
   for(const bad of ["{",'{"u":"u1","day":"DAY","step":2,"k":9}','{"u":"u1","day":"DAY","step":3,"k":0,"order":[0,0,1,2],"q":1,"right":0,"missed":[]}']){
     const sc=loadScreens(); sc.t.store.set(KEY+"-resume",bad.replace("DAY",vm.runInContext("today()",sc.env)));
     assert.doesNotThrow(()=>sc.env.openLesson(UNIT)); assert.ok(byText(sc.spy.view.body,"Learn the phrases →"),bad); }
+});
+test("speech check: a screen reader is told which words were caught",()=>{
+  for(const [alts,want] of [[["مع"],"Not caught: السلامة"],[["مع السلامة"],"All words caught"]]){
+    const sc=loadScreens(); Object.assign(sc.env,{canListen:()=>true,srListen:cb=>cb({alts})});
+    vm.runInContext(cut("function speakWidget","// record yourself"),sc.env);
+    const w=sc.env.speakWidget("مع السلامة"); press(byText(w,"Say it"));
+    const fb=walk(w).find(n=>/\bfeedback\b/.test(n.className)), sr=walk(fb).find(n=>/\bsr\b/.test(n.className));
+    assert.equal(fb.attrs.role||fb.role,"status"); assert.ok(sr,"hidden summary"); assert.equal(txt(sr),want);
+  }
 });
