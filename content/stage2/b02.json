@@ -952,9 +952,9 @@
    [
     "B",
     "حلو! يلا، عشر دقايق وأنا عندكم",
-    "ḥilu! yalla, ʿashr dagāyig w ana ʿindakum",
+    "ḥilu! yalla, ʿashr digāyig w ana ʿindakum",
     "Great! OK, I'll be with you in ten minutes.",
-    "حِلُو! يَلَّا، عَشْرْ دَقَايِقْ وْأَنَا عِنْدَكُمْ"
+    "حِلُو! يَلَّا، عَشْرْ دِقَايِقْ وْأَنَا عِنْدَكُمْ"
    ]
   ],
   "items": [
@@ -1008,11 +1008,11 @@
    ],
    [
     "عشر دقايق",
-    "ʿashr dagāyig",
+    "ʿashr digāyig",
     "ten minutes",
     "عشر دقائق",
-    "one minute: dagīga",
-    "عَشْرْ دَقَايِقْ"
+    "one minute: digīga",
+    "عَشْرْ دِقَايِقْ"
    ],
    [
     "عندكم",
@@ -1057,9 +1057,9 @@
    [
     "B",
     "زين، بتصل فيك بعد دقيقة",
-    "zēn, battaṣil fīk baʿd dagīga",
+    "zēn, battaṣil fīk baʿd digīga",
     "OK, I'll call you back in a minute.",
-    "زَيْنْ، بَتَّصِلْ فِيكْ بَعْدْ دَقِيقَة"
+    "زَيْنْ، بَتَّصِلْ فِيكْ بَعْدْ دِقِيقَة"
    ],
    [
     "A",
@@ -1126,11 +1126,11 @@
    ],
    [
     "بعد دقيقة",
-    "baʿd dagīga",
+    "baʿd digīga",
     "in a minute",
     "بعد دقيقة",
     "",
-    "بَعْدْ دَقِيقَة"
+    "بَعْدْ دِقِيقَة"
    ],
    [
     "الشبكة",

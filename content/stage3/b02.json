@@ -1321,7 +1321,7 @@
   "stage": 3,
   "title": "He said he was on his way",
   "goal": "Wait for Sēf with Fahad at a restaurant and report what Sēf told you on the phone",
-  "tip": "Gulf Arabic keeps the speaker's tense when you report: Sēf said ana yāy, so you say gāl innah yāy 'he said he was coming'. 'I'll be there in ten minutes' becomes gāl innah biyōṣal baʿd ʿashr dagāyig. Only the person changes; English shifts the tense, Arabic doesn't.",
+  "tip": "Gulf Arabic keeps the speaker's tense when you report: Sēf said ana yāy, so you say gāl innah yāy 'he said he was coming'. 'I'll be there in ten minutes' becomes gāl innah biyōṣal baʿd ʿashr digāyig. Only the person changes; English shifts the tense, Arabic doesn't.",
   "grammar": "no tense shift in reported speech (gāl innah yāy 'he said he was coming')",
   "dialogue": [
    [
@@ -1357,7 +1357,7 @@
    [
     "B",
     "قبل ساعة! وقال إنه بيوصل بعد عشر دقايق",
-    "gabil sāʿa! w gāl innah biyōṣal baʿd ʿashr dagāyig",
+    "gabil sāʿa! w gāl innah biyōṣal baʿd ʿashr digāyig",
     "An hour ago! And he said he'd be here in ten minutes."
    ],
    [

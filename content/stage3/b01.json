@@ -128,7 +128,7 @@
    ["B", "نايم؟! صار لنا ساعة نترياك!", "nāyim?! ṣār-lna sāʿa nitrayyāk!", "In bed?! We've been waiting for you for an hour!"],
    ["A", "سهرت لين الصبح. انتو تغديتوا؟", "sihart lēn iṣ-ṣubḥ. intu tghaddētu?", "I was up till morning. Have you had lunch?"],
    ["B", "لا، للحين ما تغدينا. وفهد يوعان وايد!", "la, lil-ḥīn ma tghaddēna. w Fahad yōʿān wāyid!", "No, we haven't had lunch yet. And Fahad's really hungry!"],
-   ["A", "زين، أنا نازل الحين. خمس دقايق بس", "zēn, ana nāzil il-ḥīn. khams dagāyig bas", "OK, I'm coming down now. Just five minutes."],
+   ["A", "زين، أنا نازل الحين. خمس دقايق بس", "zēn, ana nāzil il-ḥīn. khams digāyig bas", "OK, I'm coming down now. Just five minutes."],
    ["B", "زين، بس لا تنام مرة ثانية!", "zēn, bas la tnām marra thānya!", "OK, but don't go back to sleep!"],
    ["A", "لا تحاتي، أنا صاحي الحين والله!", "la tḥāti, ana ṣāḥi l-ḥīn wallāh!", "Don't worry, I'm awake now, honestly!"]
   ],
@@ -141,7 +141,7 @@
    ["تغديتوا؟", "tghaddētu?", "have you had lunch? (to a group)", "هل تغديتم؟", "to one man: tghaddēt? (تغديت؟); to one woman: tghaddēti? (تغديتي؟)"],
    ["ما تغدينا", "ma tghaddēna", "we haven't had lunch, we didn't have lunch", "لم نتغدَّ", "I haven't had lunch: ma tghaddēt (ما تغديت)"],
    ["أنا نازل", "ana nāzil", "I'm coming down, I'm on my way down (said by a man)", "أنا نازل", "a woman says: ana nāzla (أنا نازلة)"],
-   ["خمس دقايق", "khams dagāyig", "five minutes", "خمس دقائق", "ten minutes: ʿashr dagāyig (عشر دقايق)"]
+   ["خمس دقايق", "khams digāyig", "five minutes", "خمس دقائق", "ten minutes: ʿashr digāyig (عشر دقايق)"]
   ]
  },
  {

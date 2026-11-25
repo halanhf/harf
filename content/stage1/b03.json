@@ -1102,7 +1102,7 @@
     "title": "What time is the film?",
     "goal": "Tell the time with half past and quarter to, and use 11 to 19 for the time, minutes and prices, before a film with Sēf.",
     "grammar": "Telling the time (w nuṣṣ, w rubʿ, illa rubʿ); 11 to 19 and a singular noun after 11",
-    "tip": "is-sāʿa + hour: is-sāʿa thnaʿash (twelve). Then w nuṣṣ (half past), w rubʿ (quarter past), illa rubʿ (quarter to). 13 to 19 end in -ṭaʿash (11 is iḥdaʿash, 12 thnaʿash). After 11 to 19 the noun stays singular: khamsṭaʿash dagīga; but 3 to 10 take the plural: khams dagāyig.",
+    "tip": "is-sāʿa + hour: is-sāʿa thnaʿash (twelve). Then w nuṣṣ (half past), w rubʿ (quarter past), illa rubʿ (quarter to). 13 to 19 end in -ṭaʿash (11 is iḥdaʿash, 12 thnaʿash). After 11 to 19 the noun stays singular: khamsṭaʿash digīga; but 3 to 10 take the plural: khams digāyig.",
     "dialogue": [
       [
         "A",
@@ -1135,9 +1135,9 @@
       [
         "A",
         "بتسعطعش درهم. والسينما خمسطعش دقيقة!",
-        "b-tisaʿṭaʿash dirham. w is-sīnama khamsṭaʿash dagīga!",
+        "b-tisaʿṭaʿash dirham. w is-sīnama khamsṭaʿash digīga!",
         "Nineteen dirhams. And the cinema's fifteen minutes away!",
-        "بْتِسَعْطَعَشْ دِرْهَمْ. وْالسِّينَمَا خَمْسْطَعَشْ دَقِيقَة!"
+        "بْتِسَعْطَعَشْ دِرْهَمْ. وْالسِّينَمَا خَمْسْطَعَشْ دِقِيقَة!"
       ],
       [
         "B",
@@ -1182,11 +1182,11 @@
       ],
       [
         "دقيقة",
-        "dagīga",
+        "digīga",
         "a minute",
         "دقيقة",
-        "3 to 10 take the plural (khams dagāyig); 11 and up the singular (ʿishrīn dagīga)",
-        "دَقِيقَة"
+        "3 to 10 take the plural (khams digāyig); 11 and up the singular (ʿishrīn digīga)",
+        "دِقِيقَة"
       ],
       [
         "إحدعش",
@@ -1209,7 +1209,7 @@
         "khamsṭaʿash",
         "fifteen (١٥)",
         "خمسة عشر",
-        "khamsṭaʿash dagīga = fifteen minutes (singular noun)",
+        "khamsṭaʿash digīga = fifteen minutes (singular noun)",
         "خَمْسْطَعَشْ"
       ],
       [
