@@ -152,7 +152,7 @@ button.say{background:none;border:0;color:var(--ink);cursor:pointer;padding:0 8p
 .built{direction:rtl;min-height:60px;justify-content:center;border-bottom:2px solid var(--line);width:100%;padding-bottom:8px}
 .built:empty::before{content:"Tap the words in order. Arabic starts on the right →";direction:ltr;font-size:14px;color:var(--muted);align-self:center}
 .built.ok{border-bottom-color:var(--good)} .built.no{border-bottom-color:var(--bad)}
-.wtile{font:400 24px/1.4 var(--ar)!important;min-width:48px;min-height:48px}
+.wtile{font:400 24px/1.8 var(--ar)!important;min-width:48px;min-height:48px}
 .wtile.right{border-color:var(--good)} .wtile.wrong{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 10%,var(--card))}
 .more{width:100%;text-align:left}
 .more .row{justify-content:center;padding-bottom:8px}
@@ -2356,7 +2356,7 @@ document.documentElement.lang=document.documentElement.lang||"en";
 // ===== state =====
 const KEY="harf-gulf-v1";
 const blank=()=>({cards:{},unitsDone:{},suspended:{},custom:[],gen:[],streak:0,lastDay:"",reviewsToday:0,newToday:0,
-  session:{day:"",done:{}},settings:{translit:"auto",newPerDay:1,retention:0.9,gender:"",autoplay:true,voice:"auto"},
+  session:{day:"",done:{}},settings:{translit:"auto",harakat:"auto",newPerDay:1,retention:0.9,gender:"",autoplay:true,voice:"auto"},
   talks:0,freezes:0,freezeUsed:"",log:{},rp:{},seen:{},read:{},msaDay:"",resetAt:0,resetDay:"",updatedAt:0});
 const clone=x=>JSON.parse(JSON.stringify(x==null?{}:x));
 const sched=(c,g,now)=>schedule(c,g,now,S.settings.retention||0.9);
@@ -2370,7 +2370,7 @@ function hydrate(raw){ const o=clone(raw); const b=blank(); const s=Object.assig
   s.settings=Object.assign(blank().settings,o.settings||{}); s.session=Object.assign({day:"",done:{}},o.session||{}); s.session.done=Object.assign({},s.session.done);
   for(const f of ["unitsDone","suspended","log","rp","seen","read"]) if(!s[f]||typeof s[f]!=="object"||Array.isArray(s[f])) s[f]={};
   const st=s.settings, r=+st.retention; st.retention=r>=0.7&&r<=0.99?r:0.9; st.newPerDay=+st.newPerDay===2?2:1; st.autoplay=st.autoplay!==false;
-  if(!["auto","always","tap","never"].includes(st.translit)) st.translit="auto"; if(!["","m","f"].includes(st.gender)) st.gender=""; if(!["auto","device","claude"].includes(st.voice)) st.voice="auto";
+  if(!["auto","always","tap","never"].includes(st.translit)) st.translit="auto"; if(!["auto","always","never"].includes(st.harakat)) st.harakat="auto"; if(!["","m","f"].includes(st.gender)) st.gender=""; if(!["auto","device","claude"].includes(st.voice)) st.voice="auto";
   for(const f of ["streak","freezes","reviewsToday","newToday","talks","resetAt","updatedAt"]) s[f]=isFinite(+s[f])?+s[f]:0;
   for(const f of ["lastDay","freezeUsed","msaDay","resetDay"]) if(typeof s[f]!=="string") s[f]="";
   s.custom=Array.isArray(s.custom)?s.custom.filter(c=>c&&typeof c.id==="string"&&/^c[0-9a-z]+$/.test(c.id)&&typeof c.ar==="string"&&c.ar).map(c=>({id:c.id,ar:c.ar.slice(0,80),tr:String(c.tr||"").slice(0,80),en:String(c.en||"").slice(0,80)})):[];
@@ -2637,6 +2637,7 @@ function touchDay(){ const o=nextStreak(S,today()); if(!o.newDay) return; S.stre
 function logActivity(n){ const t=today(); S.log[t]=(S.log[t]||0)+(n||1);
   const keys=Object.keys(S.log); if(keys.length>400) keys.sort().slice(0,keys.length-400).forEach(k=>delete S.log[k]); }
 const shownStreak=()=>visibleStreak(S,today());
+const harOn=()=>showHarakat(S.settings.harakat,currentStage());
 function showTr(){ const m=S.settings.translit; if(m!=="auto") return m; const st=currentStage(); return st<=1?"always":st===2?"tap":"never"; }
 
 // ===== speech out: device voices, or the Claude voice where the page is given one =====
@@ -2677,7 +2678,8 @@ const playBtn=(text,label,o)=>el("button",{className:"btn small",type:"button","
 const slowBtn=text=>el("button",{className:"btn small",type:"button","aria-label":"Slow: "+text,textContent:"Slow",onclick:()=>say(text,0.55)});
 const shadowBtn=text=>el("button",{className:"btn small",type:"button",textContent:"Shadow",title:"repeat along: slow, then normal speed twice",onclick:e=>{ const b=e.currentTarget; b.textContent="Repeat along…";
   sayQueue([{text,rate:0.6},{pause:2200},{text},{pause:1800},{text}]).then(()=>{ b.textContent="Shadow"; }); }});
-const bigAr=(text,cls)=>el("button",{className:(cls||"big")+" say",type:"button",lang:"ar",title:"Tap to hear it","aria-label":"Hear: "+text,textContent:text,onclick:()=>say(text)});
+// text is what is spoken and labelled; shown (the vowelled form, when marks are on) is only what is drawn
+const bigAr=(text,cls,shown)=>el("button",{className:(cls||"big")+" say",type:"button",lang:"ar",title:"Tap to hear it","aria-label":"Hear: "+text,textContent:shown==null?text:shown,onclick:()=>say(text)});
 
 // ===== speech in: claude dictation where offered, else the browser's recogniser; hidden when neither works =====
 const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
@@ -2901,14 +2903,14 @@ function openLesson(u,onDone){
   const stepper=n=>el("div",{className:"stepper","aria-label":"Lesson steps"},["Listen","Phrases","Check"].map((t,i)=>el("span",{className:i===n?"on":i<n?"did":"",textContent:(i<n?"✓ ":"")+t})));
   // 1. understandable input: listen and work out the meaning before reading the translation
   const step1=()=>{
-    f.progress(0,steps); body.textContent="";
+    f.progress(0,steps); body.textContent=""; const hv=harOn();
     let slow=false, shadow=false; const ens=[], lines=[];
     const playLine=(l,btn)=>{ lines.forEach(x=>x.classList.remove("playing")); btn.classList.add("playing");
       const end=()=>btn.classList.remove("playing");
       if(shadow) sayQueue([{text:l.ar,rate:0.6},{pause:2200},{text:l.ar},{pause:1800},{text:l.ar}]).then(end); else say(l.ar,slow?0.55:0.85).then(end); };
     const dl=el("div",{className:"dialogue panel"});
     u.dialogue.forEach(l=>{ const en=el("p",{className:"en",textContent:l.en,hidden:true}); ens.push(en);
-      const b=el("button",{className:"line-play",type:"button","aria-label":`Play line: ${l.ar}`,onclick:()=>playLine(l,b)},arSpan(l.ar),icon("play")); lines.push(b);
+      const b=el("button",{className:"line-play",type:"button","aria-label":`Play line: ${l.ar}`,onclick:()=>playLine(l,b)},arSpan(shownAr(l,hv)),icon("play")); lines.push(b);
       dl.append(el("div",{className:"line"+(l.who==="B"?" b":"")},el("span",{className:"who"+(l.who==="B"?" b":""),textContent:l.who,"aria-hidden":"true"}),el("div",{className:"txt"},b,trLine(l.tr),en))); });
     const playAll=el("button",{className:"btn primary",type:"button"},icon("play"),el("span",{textContent:"Play the conversation"}));
     playAll.onclick=()=>{ const parts=[]; u.dialogue.forEach((l,i)=>{ parts.push({text:l.ar,i,rate:slow?0.55:0.85},{pause:450}); });
@@ -2925,9 +2927,9 @@ function openLesson(u,onDone){
   const step2=()=>{
     started=true; let k=0;
     const showItem=()=>{
-      f.progress(1+k,steps); body.textContent=""; const it=u.items[k];
+      f.progress(1+k,steps); body.textContent=""; const it=u.items[k]; const hv=harOn();
       const more=el("details",{className:"more"},el("summary",{textContent:"More practice"}),el("div",{className:"row"},shadowBtn(it.ar),recordWidget(it.ar)));
-      const card=el("div",{className:"stage"},el("p",{className:"mode",textContent:`New phrase ${k+1} of ${u.items.length}`+(it.receptive?" · to understand":"")}),bigAr(it.ar),
+      const card=el("div",{className:"stage"},el("p",{className:"mode",textContent:`New phrase ${k+1} of ${u.items.length}`+(it.receptive?" · to understand":"")}),bigAr(it.ar,undefined,shownAr(it,hv)),
         el("div",{className:"row center"},slowBtn(it.ar),nativeLink(it)),
         el("p",{className:"tr",textContent:it.tr}),el("p",{className:"en",textContent:it.en}),
         it.msa&&normalizeArabic(it.msa)!==normalizeArabic(it.ar)?el("p",{className:"msa"},"In fuṣḥā: ",arSpan(it.msa)):null,
@@ -2943,7 +2945,7 @@ function openLesson(u,onDone){
     const order=[...u.items.keys()].sort(()=>Math.random()-0.5); let q=0, right=0; const missed=new Set();
     const ask=()=>{
       if(!f.alive()) return; body.textContent=""; if(q>=order.length) return finish();
-      f.progress(1+u.items.length+q,steps);
+      f.progress(1+u.items.length+q,steps); const hv=harOn();
       const it=u.items[order[q]]; const opts=pickOptions(it.ar,u.items.map(x=>x.ar),4);
       const box=el("div",{className:"options"}); const fb=el("p",{className:"feedback",role:"status"}); const acts=el("div",{className:"actions"});
       const go=()=>{ if(f.alive()&&body.contains(box)){ q++; ask(); } };
@@ -2953,7 +2955,7 @@ function openLesson(u,onDone){
         fb.className="feedback "+(ok?"ok":"no"); fb.textContent=ok?"Yes":"It's "+it.tr; say(it.ar); buzz(ok?10:[30,40,30]);
         acts.append(el("button",{className:"btn primary wide",type:"button",textContent:"Next",onclick:go}));
         if(ok) setTimeout(go,1100);
-      },"data-ar":o},arSpan(o))));
+      },"data-ar":o},arSpan(shownAr(u.items.find(x=>x.ar===o)||{ar:o},hv)))));
       const card=el("div",{className:"stage"},el("p",{className:"mode",textContent:`Check ${q+1} of ${order.length}`}),el("p",{className:"en",textContent:it.en}),box,fb,acts);
       body.append(stepper(2),card); focusCard(card);
     };
@@ -2981,11 +2983,11 @@ function roleplay(u,onDone){
     if(k>=u.dialogue.length){ touchDay(); S.rp[u.id]=today(); logActivity(1); save(); flush();
       body.append(el("div",{className:"stage"},el("p",{className:"en",textContent:"Conversation done"}),el("p",{className:"tag",textContent:"Do it again another day without looking. Speed comes from repetition."}),
         el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Continue",onclick:onDone||(()=>show(currentTab))})))); return; }
-    const l=u.dialogue[k];
-    if(l.who==="A"){ const card=el("div",{className:"stage"},el("p",{className:"mode",textContent:"They say"}),bigAr(l.ar,"mid"),trLine(l.tr),el("div",{className:"row center"},slowBtn(l.ar),shadowBtn(l.ar)),
+    const l=u.dialogue[k]; const hv=harOn();
+    if(l.who==="A"){ const card=el("div",{className:"stage"},el("p",{className:"mode",textContent:"They say"}),bigAr(l.ar,"mid",shownAr(l,hv)),trLine(l.tr),el("div",{className:"row center"},slowBtn(l.ar),shadowBtn(l.ar)),
         el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Your turn →",onclick:()=>{ k++; step(); }})));
       body.append(card); focusCard(card); auto(l.ar); return; }
-    const ans=el("div",{className:"stack",hidden:true,style:"justify-items:center;width:100%"},bigAr(l.ar,"mid"),el("p",{className:"tr",textContent:l.tr}),el("div",{className:"row center"},slowBtn(l.ar),shadowBtn(l.ar)),recordWidget(l.ar));
+    const ans=el("div",{className:"stack",hidden:true,style:"justify-items:center;width:100%"},bigAr(l.ar,"mid",shownAr(l,hv)),el("p",{className:"tr",textContent:l.tr}),el("div",{className:"row center"},slowBtn(l.ar),shadowBtn(l.ar)),recordWidget(l.ar));
     const acts=el("div",{className:"actions"});
     const showAns=el("button",{className:"btn wide",type:"button",textContent:"Show the answer",onclick:()=>{ ans.hidden=false; showAns.remove(); say(l.ar); }});
     acts.append(showAns,el("button",{className:"btn primary wide",type:"button",textContent:"Next →",onclick:()=>{ k++; step(); }}));
@@ -3038,7 +3040,7 @@ function startReview(onDone){
         waitTimer=setTimeout(()=>{ if(f.alive()) next(); },Math.min(ms+500,30000)); return; }
       return finish();
     }
-    const id=queue.shift(); shown=id; const it=ITEMS[id]; n++; f.progress(n-1,total);
+    const id=queue.shift(); shown=id; const it=ITEMS[id]; const hv=harOn(); n++; f.progress(n-1,total);
     const card=S.cards[id]; const mode=cardMode(card,it.msaTrack||it.receptive,it.sentence);
     const stage=el("div",{className:"stage"}); f.body.append(stage);
     const ans=el("div",{className:"stack",hidden:true,style:"justify-items:center;width:100%"});
@@ -3047,13 +3049,13 @@ function startReview(onDone){
     stage.append(el("p",{className:"mode",textContent:(it.msaTrack?"Fuṣḥā · ":"")+labels[mode]}));
     let suggest=-1;
     const trTap=mode==="recognize"?trLine(it.tr,"tap"):null;
-    if(mode==="recognize") ap(stage,bigAr(it.ar),trTap);
+    if(mode==="recognize") ap(stage,bigAr(it.ar,undefined,shownAr(it,hv)),trTap);
     else if(mode==="listen"){ ap(stage,el("div",{className:"row center"},playBtn(it.ar,"Play",{vary:true}),slowBtn(it.ar))); setTimeout(()=>{ if(f.alive()&&stage.isConnected) say(it.ar,null,{vary:true}); },150); }
     else if(mode==="build"){
       // tap the words in order; building it yourself beats reading it (desirable difficulty)
-      const target=tilesOf(it.ar); const pool=target.map((w,i)=>({w,i})).sort(()=>Math.random()-0.5);
+      const target=tilesOf(it.ar); const shownT=tilesOf(shownAr(it,hv)); const pool=target.map((w,i)=>({w,s:shownT.length===target.length?shownT[i]:w,i})).sort(()=>Math.random()-0.5);
       const built=el("div",{className:"row built",lang:"ar"}); const bank=el("div",{className:"row center",style:"direction:rtl"});
-      const tile=(o,where)=>el("button",{className:"btn wtile",type:"button",lang:"ar",textContent:o.w,onclick:e=>{ if(stage.dataset.checked) return; const to=where===bank?built:bank; to.append(tile(o,to)); e.currentTarget.remove(); }});
+      const tile=(o,where)=>el("button",{className:"btn wtile",type:"button",lang:"ar",textContent:o.s,onclick:e=>{ if(stage.dataset.checked) return; const to=where===bank?built:bank; to.append(tile(o,to)); e.currentTarget.remove(); }});
       pool.forEach(o=>bank.append(tile(o,bank)));
       const fb=el("p",{className:"feedback",role:"status"});
       const check=el("button",{className:"btn primary wide",type:"button",textContent:"Check"});
@@ -3063,7 +3065,7 @@ function startReview(onDone){
       ap(stage,el("p",{className:"en",textContent:it.en}),built,bank,fb); acts.append(check);
     }
     else ap(stage,el("p",{className:"en",textContent:it.en}),it.note?el("p",{className:"tag",textContent:it.note}):null,speakWidget(it.ar));
-    if(mode!=="recognize") ans.append(el("div",{className:"big",lang:"ar",textContent:it.ar}),el("p",{className:"tr",textContent:it.tr}));
+    if(mode!=="recognize") ans.append(el("div",{className:"big",lang:"ar",textContent:shownAr(it,hv)}),el("p",{className:"tr",textContent:it.tr}));
     else ans.append(el("p",{className:"tr",textContent:it.tr}));
     if(mode!=="produce") ans.append(el("p",{className:"en",textContent:it.en}));
     if(it.msa&&normalizeArabic(it.msa)!==normalizeArabic(it.ar)) ans.append(el("p",{className:"msa"},"In fuṣḥā: ",arSpan(it.msa)));
@@ -3101,7 +3103,7 @@ function audioDrill(){
     if(!f.alive()) return; f.progress(i,pick.length);
     if(i>=pick.length){ now_.textContent=""; ap(now_,el("p",{className:"en",textContent:"Drill done"}),el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Again",onclick:audioDrill}))); return; }
     const it=ITEMS[pick[i++]]; now_.textContent="";
-    const ar=el("div",{className:"big",lang:"ar",textContent:it.ar,style:"visibility:hidden"}); const tr=el("p",{className:"tr",textContent:it.tr,style:"visibility:hidden"});
+    const ar=el("div",{className:"big",lang:"ar",textContent:shownAr(it,harOn()),style:"visibility:hidden"}); const tr=el("p",{className:"tr",textContent:it.tr,style:"visibility:hidden"});
     ap(now_,el("p",{className:"mode",textContent:`${i} of ${pick.length}`}),el("p",{className:"en",textContent:it.en}),ar,tr,el("div",{className:"actions"},el("button",{className:"btn wide",type:"button",textContent:"Stop",onclick:()=>{ stopAudio(); show("review"); }})));
     const parts=[]; if(spokenEn) parts.push({text:"How do you say: "+it.en.replace(/\(.*?\)/g,""),lang:"en",rate:1});
     parts.push({pause:4000},{text:it.ar,reveal:true},{pause:1500},{text:it.ar,rate:0.65},{pause:1200});
@@ -3470,7 +3472,7 @@ function renderMe(){
   refresh(); const sec=$("#me"); sec.textContent="";
   const cards=Object.entries(liveCards()).filter(([id])=>!isHidden(S.suspended,id));
   const mature=cards.filter(([,c])=>c.i>=MATURE_DAYS).length; const gulf=cards.filter(([id])=>!id.startsWith("m.")).length;
-  const st=currentStage(); const k=shownStreak();
+  const st=currentStage(); const k=shownStreak(); const hv=harOn();
   const stat=(v,l)=>el("div",{className:"stat"},el("b",{},v),el("span",{textContent:l}));
   sec.append(el("h2",{textContent:"Your progress"}),
     el("div",{className:"stats"},stat(el("span",{className:"flame",style:"justify-content:center"},icon("flame"),String(k)),"day streak"),stat(String(mature),"known for a week+"),stat(String(cards.length),"in rotation")),
@@ -3485,7 +3487,7 @@ function renderMe(){
   const tricky=cards.filter(([,c])=>isLeech(c)).sort((a,b)=>b[1].l-a[1].l).slice(0,10);
   if(tricky.length){ const list=el("div",{className:"stack"});
     tricky.forEach(([id,c])=>{ const it=ITEMS[id]; const aid=el("p",{className:"tag",role:"status"});
-      const row=el("div",{className:"panel stack"},el("div",{className:"row",style:"justify-content:space-between"},el("div",{},arSpan(it.ar,"mid"),el("p",{className:"tr",textContent:it.tr}),el("p",{textContent:it.en+" · forgotten "+c.l+" times"})),playBtn(it.ar)),aid);
+      const row=el("div",{className:"panel stack"},el("div",{className:"row",style:"justify-content:space-between"},el("div",{},arSpan(shownAr(it,hv),"mid"),el("p",{className:"tr",textContent:it.tr}),el("p",{textContent:it.en+" · forgotten "+c.l+" times"})),playBtn(it.ar)),aid);
       if(SAMPLE){ const b=el("button",{className:"btn small",type:"button",textContent:"Help me remember",onclick:async()=>{ b.disabled=true; aid.textContent="Thinking…";
         try{ const r=await SAMPLE.json(`An English speaker learning ${DIALECT}
 keeps forgetting "${it.ar}" (${it.tr}) = "${it.en}". Give a vivid memory hook linking its sound to its meaning, plus one short example sentence in Gulf Arabic.
@@ -3514,6 +3516,7 @@ Return ONLY JSON: {"hook": one or two sentences in English, "example_ar", "examp
   sec.append(el("h2",{style:"margin-top:26px",textContent:"Settings"}));
   const select=(id,label,opts,val,onch)=>{ const s=el("select",{id}); opts.forEach(([v,l])=>s.append(el("option",{value:String(v),textContent:l,selected:String(val)===String(v)}))); s.onchange=()=>onch(s.value); return el("div",{className:"setting"},el("label",{htmlFor:id,textContent:label}),s); };
   sec.append(select("set-translit","Pronunciation lines",[["auto","Fade out as I level up"],["always","Always show"],["tap","Show on tap"],["never","Never show"]],S.settings.translit,v=>{ S.settings.translit=v; save(); }),
+    select("set-harakat","Vowel marks",[["auto","Auto"],["always","Always"],["never","Never"]],S.settings.harakat,v=>{ S.settings.harakat=v; save(); }),
     select("set-new","New lessons",[[1,"1 lesson a day (about 30 min)"],[2,"2 lessons a day (about 45 min)"]],S.settings.newPerDay,v=>{ S.settings.newPerDay=+v; save(); }),
     select("set-ret","How much to remember",[[0.85,"85%: fewer reviews"],[0.9,"90%: balanced (recommended)"],[0.95,"95%: more reviews"]],S.settings.retention||0.9,v=>{ S.settings.retention=+v; save(); }),
     select("set-gender","Talk to me as",[["","Not set"],["m","A man (-ak)"],["f","A woman (-ich)"]],S.settings.gender||"",v=>{ S.settings.gender=v; save(); }),
