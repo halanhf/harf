@@ -384,8 +384,8 @@
   "stage": 4,
   "title": "Metro or car?",
   "goal": "At the office, Maryam asks why you still drive to work; weigh up the metro against your car",
-  "tip": "Recycle comparatives: arīḥ 'more relaxing', awfar 'cheaper'. Concede, then add your but: ṣaḥḥ awfar, bas il-maḥaṭṭa mub garība 'true, it's cheaper, but the station isn't near'. To defend the car: ʿala kēfi 'as I like', wagt ma abi 'whenever I want'.",
-  "grammar": "recycle: comparatives (arīḥ, awfar), ṣaḥḥ … bas … to concede",
+  "tip": "Recycle comparatives: aryaḥ 'more relaxing', awfar 'cheaper'. Concede, then add your but: ṣaḥḥ awfar, bas il-maḥaṭṭa mub garība 'true, it's cheaper, but the station isn't near'. To defend the car: ʿala kēfi 'as I like', wagt ma abi 'whenever I want'.",
+  "grammar": "recycle: comparatives (aryaḥ, awfar), ṣaḥḥ … bas … to concede",
   "dialogue": [
    [
     "A",
@@ -402,7 +402,7 @@
    [
     "A",
     "ليش ما تاخذ المترو؟ أنا آخذه كل يوم، أريح وأوفر",
-    "lēsh ma tākhidh il-mitrō? ana ākhdhah kill yōm, arīḥ w awfar",
+    "lēsh ma tākhidh il-mitrō? ana ākhdhah kill yōm, aryaḥ w awfar",
     "Why don't you take the metro? I take it every day; it's more relaxing and cheaper."
    ],
    [
@@ -452,10 +452,10 @@
    ],
    [
     "أريح وأوفر",
-    "arīḥ w awfar",
+    "aryaḥ w awfar",
     "more relaxing and cheaper, easier and cheaper",
     "أريح وأوفر",
-    "arīḥ here is 'more relaxing' (comparative), not arayyiḥ 'I rest'"
+    "aryaḥ here is 'more relaxing' (comparative), not arayyiḥ 'I rest'"
    ],
    [
     "ليش ما تاخذ المترو؟",
@@ -778,7 +778,7 @@
   "stage": 4,
   "title": "Checkpoint 4.4: Fahad comes for National Day",
   "goal": "Checkpoint: Fahad and his cousin visit you in Mirdif over National Day; tell them about your neighbours, plan the evening, and hear about Kuwait's national days",
-  "tip": "Review, and now you say it: ma khallūna nnām 'they didn't let us sleep', khallhum 'forget them, leave them', ma tghayyar shay, maʿak ḥagg, arīḥ and il-ḥilu fīh, kill ʿām w intu b-khēr, and idha ḥtajtu shay 'if you need anything' to a group. Fahad uses Kuwaiti forms (shinu, iḥna).",
+  "tip": "Review, and now you say it: ma khallūna nnām 'they didn't let us sleep', khallhum 'forget them, leave them', ma tghayyar shay, maʿak ḥagg, aryaḥ and il-ḥilu fīh, kill ʿām w intu b-khēr, and idha ḥtajtu shay 'if you need anything' to a group. Fahad uses Kuwaiti forms (shinu, iḥna).",
   "grammar": "checkpoint 4.4 (s4u045–s4u056): khalla + verb, agreeing and pros and cons, comparatives, group forms",
   "dialogue": [
    [
@@ -814,7 +814,7 @@
    [
     "B",
     "معك حق. بنروح بالمترو، أريح. الحلو فيه ما في زحمة",
-    "maʿak ḥagg. binrūḥ bil-mitrō, arīḥ. il-ḥilu fīh ma fī zaḥma",
+    "maʿak ḥagg. binrūḥ bil-mitrō, aryaḥ. il-ḥilu fīh ma fī zaḥma",
     "You're right. We'll take the metro; it's easier. The good thing about it is there's no traffic."
    ],
    [
