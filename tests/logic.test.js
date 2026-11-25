@@ -1066,7 +1066,7 @@ function loadScreens({harakat="auto",stage=1}={}){
     STAGE_NAMES:[],stageInfo:()=>({}),shownStreak:()=>0,lessonsDone:()=>0,standalone:()=>false,ghPanel(){},installEvt:null,cleanIn:x=>x,DAY:86400000,SAMPLE:null,micBlocked:false,SR:null,DB:null,GH:null});
   vm.runInContext("var enVoice=null, TTS=null, chatLog=[], generating=false, DICT=null, dictSink=null, dictLang='ar-AE'; let keyHandler=null;",env);
   for(const s of [cut("const ap=","const SVG="),cut("let ITEMS={}","function rebuild"),cut("const liveCards=","const lessonsDone"),
-      cut("const harOn=","\n"),cut("const bigAr=","\n"),cut("function openLesson","// ===== role-play"),cut("function roleplay(","// ===== review tab"),cut("let talkMode=","// ===== progress"),cut("function startReview","// ===== hands-free"),cut("function audioDrill","// ===== course"),cut("function renderMe","// ===== boot")])
+      cut("const harOn=","\n"),cut("const bigAr=","\n"),cut("// the lesson's place is kept","// ===== role-play"),cut("function roleplay(","// ===== review tab"),cut("let talkMode=","// ===== progress"),cut("function startReview","// ===== hands-free"),cut("function audioDrill","// ===== course"),cut("function renderMe","// ===== boot")])
     vm.runInContext(s,env);
   const items={}, unitOf={}; UNIT.items.forEach((it,i)=>{ items["u1."+i]=Object.assign({id:"u1."+i,unit:"u1",stage:1},it); unitOf["u1."+i]="u1"; });
   const s0=Object.assign({id:"u1.s0",unit:"u1",stage:"s1",sentence:true},UNIT.items[3]); items["u1.s0"]=s0; unitOf["u1.s0"]="u1";
@@ -1431,4 +1431,33 @@ test("speech check: caught and missed words differ by underline style, not only 
   const words=walk(w).filter(n=>n.parent&&/\bwords\b/.test(n.parent.className)); assert.deepEqual(words.map(n=>[txt(n),n.className]),[["مع","hit"],["السلامة","miss"]]);
   assert.ok(texts(w).includes("Underlined with dashes: words it didn't catch. Listen again and say those clearly."));
   assert.match(html,/\.words \.hit\{border-bottom:3px solid var\(--good\)\}/); assert.match(html,/\.words \.miss\{border-bottom:3px dashed var\(--bad\);/);
+});
+const toCheck=(sc,k=0)=>{ const b=()=>sc.spy.view.body; press(byText(b(),"Learn the phrases →")); for(let i=0;i<k;i++) press(byText(b(),"Next →")); };
+const answer=(sc,right)=>{ const b=sc.spy.view.body, en=walk(b).find(n=>n.className==="en"&&UNIT.items.some(i=>i.en===txt(n))), it=UNIT.items.find(i=>i.en===txt(en));
+  press(walk(b).find(n=>n.attrs["data-ar"]!==undefined&&(n.attrs["data-ar"]===it.ar)===right)); const nx=byText(b,"Next"); if(nx) press(nx); return it; };
+test("lesson resume: leaving during the phrases and reopening the same day offers to continue at the same phrase",()=>{
+  const sc=loadScreens({harakat:"never"}); sc.env.openLesson(UNIT); toCheck(sc,2);
+  assert.ok(sc.t.store.has(KEY+"-resume")); sc.env.openLesson(UNIT); const b=sc.spy.view.body;
+  assert.ok(texts(b).includes("You stopped part-way through this lesson.")); assert.ok(byText(b,"Start again"));
+  press(byText(b,"Continue where you left off")); assert.equal(sc.shown(sc.spy.view.body)[0],"زين");
+});
+test("lesson resume: in the quick check the answers, the score and the missed phrases carry over, and finishing clears it",()=>{
+  const sc=loadScreens({harakat:"never"}); sc.env.sched=(c,g,n)=>L.schedule(c,g,n,0.9); sc.env.openLesson(UNIT); toCheck(sc,3); press(byText(sc.spy.view.body,"Quick check →"));
+  const missed=answer(sc,false); sc.env.openLesson(UNIT); press(byText(sc.spy.view.body,"Continue where you left off"));
+  assert.ok(texts(sc.spy.view.body).includes("Check 2 of 4")); for(let i=0;i<3;i++) answer(sc,true);
+  assert.ok(texts(sc.spy.view.body).includes("3 of 4 right")); assert.ok(!sc.t.store.has(KEY+"-resume"));
+  UNIT.items.forEach((it,i)=>assert.equal(sc.t.S().cards["u1."+i].st,it===missed?0:1,it.ar));
+});
+test("lesson resume: Start again, another day, another lesson and Start over all start from the top",()=>{
+  const sc=loadScreens(); sc.env.openLesson(UNIT); toCheck(sc,1); sc.env.openLesson(UNIT); press(byText(sc.spy.view.body,"Start again"));
+  assert.ok(byText(sc.spy.view.body,"Learn the phrases →")); assert.ok(!sc.t.store.has(KEY+"-resume"));
+  toCheck(sc,1); sc.env.openLesson(Object.assign({},UNIT,{id:"u2"})); assert.ok(!byText(sc.spy.view.body,"Continue where you left off"));
+  assert.ok(sc.t.store.has(KEY+"-resume"),"looking at another lesson leaves it alone"); vm.runInContext(`{ const n=Date.now; Date.now=()=>n()+${DAY}; }`,sc.env);
+  sc.env.openLesson(UNIT); assert.ok(!byText(sc.spy.view.body,"Continue where you left off"));
+  const u=loadUi({dom:true,saved:{[KEY+"-resume"]:'{"u":"u1"}'}}); u.startOver(); assert.ok(!u.store.has(KEY+"-resume"));
+});
+test("lesson resume: a resume point that no longer fits the lesson is ignored",()=>{
+  for(const bad of ["{",'{"u":"u1","day":"DAY","step":2,"k":9}','{"u":"u1","day":"DAY","step":3,"k":0,"order":[0,0,1,2],"q":1,"right":0,"missed":[]}']){
+    const sc=loadScreens(); sc.t.store.set(KEY+"-resume",bad.replace("DAY",vm.runInContext("today()",sc.env)));
+    assert.doesNotThrow(()=>sc.env.openLesson(UNIT)); assert.ok(byText(sc.spy.view.body,"Learn the phrases →"),bad); }
 });

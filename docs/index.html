@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-tlmomW+XNOmKXu34A7L9hS9+tcQ66w+uAM7lTV4QnlQ=' 'sha256-SwdP/7DqbjIhRDRB1mgYtA3cOGdpM1pk3xOTCFVMuzw=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-tlmomW+XNOmKXu34A7L9hS9+tcQ66w+uAM7lTV4QnlQ=' 'sha256-jgUkaxaYwLB1lE171AL8yUgQGceruX87kw4w9R/LCto=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -2502,7 +2502,7 @@ addEventListener("pagehide",()=>{ if(synced) pushRemote(); ghSync("hide"); });
 addEventListener("online",()=>{ ghSync("online"); });
 
 // a reset is a dated marker, so other devices drop their older progress when they next merge instead of bringing it back
-function startOver(){ if(typeof resetTalk==="function") resetTalk(); /* talk screen is defined later */ const gen=S.gen; S=blank(); S.gen=gen; S.resetAt=Date.now(); S.resetDay=today(); save(); flush({replace:true}); rebuild(); refresh(); renderMe(); }
+function startOver(){ if(typeof resetTalk==="function") resetTalk(); /* talk screen is defined later */ try{ localStorage.removeItem(KEY+"-resume"); }catch(e){} const gen=S.gen; S=blank(); S.gen=gen; S.resetAt=Date.now(); S.resetDay=today(); save(); flush({replace:true}); rebuild(); refresh(); renderMe(); }
 
 // ===== sync to github (offline app only). the same merge as the account sync, through the github contents api =====
 // GH is the saved connection; everything else here lives in memory, except the status line's state, kept so "waiting" survives a reload
@@ -2952,6 +2952,17 @@ function renderToday(){
 }
 
 // ===== lesson: listen → phrases → quick check =====
+// the lesson's place is kept on this device for the day: cards are only written when a lesson ends, so nothing else needs it
+const RESUME=KEY+"-resume";
+function dropResume(){ try{ localStorage.removeItem(RESUME); }catch(e){} }
+function keepResume(p,u){ try{ localStorage.setItem(RESUME,JSON.stringify(Object.assign({u:u.id,day:today()},p))); }catch(e){} }
+function readResume(u){ let p; try{ const v=localStorage.getItem(RESUME); if(v===null) return null; p=JSON.parse(v); }catch(e){ dropResume(); return null; }
+  if(!p||typeof p!=="object"){ dropResume(); return null; } if(p.u!==u.id) return null;
+  const n=u.items.length, int=(x,lo,hi)=>Number.isInteger(x)&&x>=lo&&x<hi, perm=(a,len)=>Array.isArray(a)&&a.length<=len&&a.every(x=>int(x,0,n))&&new Set(a).size===a.length;
+  let ok=p.day===today()&&(p.step===2||p.step===3)&&int(p.k,0,n);
+  if(ok&&p.step===3) ok=perm(p.order,n)&&p.order.length===n&&int(p.q,0,n)&&int(p.right,0,p.q+1)&&perm(p.missed,n);
+  if(!ok){ dropResume(); return null; }
+  return p.step===3?{step:3,k:p.k,order:p.order.slice(),q:p.q,right:p.right,missed:p.missed.slice()}:{step:2,k:p.k,order:[],q:0,right:0,missed:[]}; }
 function openLesson(u,onDone){
   let started=false;
   const f=focusView({title:u.title,confirm:()=>started,onClose:()=>show(currentTab)}); const body=f.body;
@@ -2977,13 +2988,13 @@ function openLesson(u,onDone){
       el("p",{className:"lede",textContent:"Listen first and work out what's happening. Tap any line to hear it again. Then reveal the English and check."}),
       el("div",{className:"row"},playAll,tog("Slow",()=>slow,v=>slow=v),tog("Shadow",()=>shadow,v=>shadow=v),reveal),dl,el("p",{className:"notice",textContent:"Tip: "+u.tip}),
       u.culture?el("p",{className:"notice",textContent:"Culture: "+u.culture}):null,
-      el("div",{className:"actions page"},el("button",{className:"btn primary wide",type:"button",textContent:"Learn the phrases →",onclick:step2})));
+      el("div",{className:"actions page"},el("button",{className:"btn primary wide",type:"button",textContent:"Learn the phrases →",onclick:()=>step2(0)})));
   };
   // 2. the new phrases, one at a time: hear, say, move on
-  const step2=()=>{
-    started=true; let k=0;
+  const step2=k0=>{
+    started=true; let k=k0;
     const showItem=()=>{
-      f.progress(1+k,steps); body.textContent=""; const it=u.items[k]; const hv=harOn();
+      keepResume({step:2,k},u); f.progress(1+k,steps); body.textContent=""; const it=u.items[k]; const hv=harOn();
       const more=el("details",{className:"more"},el("summary",{textContent:"More practice"}),el("div",{className:"row"},shadowBtn(it.ar),recordWidget(it.ar)));
       const card=el("div",{className:"stage"},el("p",{className:"mode",textContent:`New phrase ${k+1} of ${u.items.length}`+(it.receptive?" · to understand":"")}),bigAr(it.ar,undefined,shownAr(it,hv)),
         el("div",{className:"row center"},slowBtn(it.ar),nativeLink(it)),
@@ -2997,11 +3008,11 @@ function openLesson(u,onDone){
     showItem();
   };
   // 3. immediate retrieval: english → which arabic? then the phrases join the review rotation
-  const step3=()=>{
-    const order=[...u.items.keys()].sort(()=>Math.random()-0.5); let q=0, right=0; const missed=new Set();
+  const step3=pt=>{
+    started=true; const order=pt?pt.order:[...u.items.keys()].sort(()=>Math.random()-0.5); let q=pt?pt.q:0, right=pt?pt.right:0; const missed=new Set(pt?pt.missed:[]);
     const ask=()=>{
       if(!f.alive()) return; body.textContent=""; if(q>=order.length) return finish();
-      f.progress(1+u.items.length+q,steps); const hv=harOn();
+      keepResume({step:3,k:0,order,q,right,missed:[...missed]},u); f.progress(1+u.items.length+q,steps); const hv=harOn();
       const it=u.items[order[q]]; const opts=pickOptions(it.ar,u.items.map(x=>x.ar),4);
       const box=el("div",{className:"options"+(hv?" har":"")}); const fb=el("p",{className:"feedback",role:"status"}); const acts=el("div",{className:"actions"});
       const go=()=>{ if(f.alive()&&body.contains(box)){ q++; ask(); } };
@@ -3016,7 +3027,7 @@ function openLesson(u,onDone){
       body.append(stepper(2),card); focusCard(card);
     };
     const finish=()=>{
-      started=false; touchDay(); const now=Date.now(); const first=!S.unitsDone[u.id];
+      started=false; dropResume(); touchDay(); const now=Date.now(); const first=!S.unitsDone[u.id];
       u.items.forEach((it,i)=>{ const id=u.id+"."+i; if(!S.cards[id]) S.cards[id]=sched({},missed.has(i)?0:2,now); });
       if(first){ S.unitsDone[u.id]=today(); S.newToday++; }
       addSentenceCards(u.id,99); logActivity(u.items.length); save(); flush(); refresh(); f.progress(steps,steps);
@@ -3028,7 +3039,13 @@ function openLesson(u,onDone){
     };
     ask();
   };
-  step1();
+  const pt=readResume(u);
+  if(!pt) return step1();
+  f.progress(0,steps);
+  const choice=el("div",{className:"stage"},el("p",{className:"en",textContent:"You stopped part-way through this lesson."}),
+    el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Continue where you left off",onclick:()=>pt.step===2?step2(pt.k):step3(pt)}),
+      el("button",{className:"btn wide",type:"button",textContent:"Start again",onclick:()=>{ dropResume(); step1(); }})));
+  body.append(choice); focusCard(choice);
 }
 
 // ===== role-play: you are B =====
