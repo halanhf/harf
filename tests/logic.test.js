@@ -1544,3 +1544,64 @@ test("speech check: a screen reader is told which words were caught",()=>{
     assert.equal(fb.attrs.role||fb.role,"status"); assert.ok(sr,"hidden summary"); assert.equal(txt(sr),want);
   }
 });
+// six recognise cards due in a fixed order, the real scheduler and day counters, and a clock the test moves
+function reviewSix(){
+  const sc=loadScreens({harakat:"never"}), {env,t}=sc, ids=["x.0","x.1","x.2","x.3","x.4","x.5"], ar=["هلا","زين","شاي","قهوة","ماي","خبز"];
+  ids.forEach((id,i)=>{ sc.items[id]={id,unit:"x"+i,stage:1,ar:ar[i],tr:"t",en:"e"+i}; t.S().cards[id]=Object.assign(sc.card(0,0,0),{d:i+1}); });
+  // minute-aligned, so a card that is saved and read back (minutes in storage) keeps the same due time
+  vm.runInContext("globalThis.__now=Math.floor(Date.now()/60000)*60000; Date.now=()=>globalThis.__now;"+cut("function touchDay","const shownStreak"),env);
+  env.sched=(c,g,n)=>L.schedule(c,g,n,0.9); env.startReview(null); const b=()=>sc.spy.view.body;
+  const shown=()=>ids[ar.indexOf((walk(b()).find(n=>/\bsay\b/.test(n.className))||{attrs:{}}).attrs["aria-label"]?.slice(6))];
+  const grade=lab=>{ press(byText(b(),"Show answer")); press(walk(b()).find(n=>n.tag==="button"&&n.parent&&/grades/.test(n.parent.className)&&txt(n).startsWith(lab))); };
+  // the whole stored form (what is saved and synced), without the save stamp
+  const full=()=>{ const p=t.serialize(); delete p.updatedAt; return JSON.stringify(p); };
+  return {sc,env,t,b,shown,grade,full,at:ms=>{ env.__now+=ms; }};
+}
+test("review: a card you forgot comes back after three other cards when a minute has already passed",()=>{
+  const r=reviewSix(), seen=[r.shown()]; r.grade("Forgot"); r.at(61000);
+  for(let i=0;i<5;i++){ seen.push(r.shown()); r.grade("Got it"); } assert.deepEqual(seen,["x.0","x.1","x.2","x.3","x.0","x.4"]);
+});
+test("review: a card you forgot never comes back before its minute, however fast you go",()=>{
+  const r=reviewSix(), seen=[r.shown()]; r.grade("Forgot"); r.at(5000);
+  for(let i=0;i<5;i++){ seen.push(r.shown()); if(i===3) r.at(60000); r.grade("Got it"); } assert.deepEqual(seen,["x.0","x.1","x.2","x.3","x.4","x.0"]);
+});
+test("review: moving a forgotten card earlier changes the queue only, every stored card is what schedule() gives",()=>{
+  const r=reviewSix(), S=()=>r.t.S(), start=JSON.parse(JSON.stringify(S().cards)), ev=[], seen=[];
+  const go=lab=>{ const id=r.shown(); seen.push(id); ev.push([id,{Forgot:0,Hard:1,"Got it":2,Easy:3}[lab],r.env.__now]); r.grade(lab); };
+  go("Forgot"); r.at(61000); go("Hard"); go("Forgot"); go("Easy"); go("Got it"); r.at(61000); go("Got it"); go("Got it"); go("Got it");
+  assert.equal(seen.indexOf("x.0",1),4,"the forgotten card came back after three others: "+seen);
+  const want={}; for(const [id,c] of Object.entries(start)) want[id]=Object.assign({},c); for(const [id,g,now] of ev) want[id]=L.schedule(want[id],g,now,0.9);
+  const ids=Object.keys(want); assert.deepEqual(Object.keys(S().cards).sort(),ids.sort());
+  for(const id of ids) assert.equal(JSON.stringify(L.packCard(S().cards[id])),JSON.stringify(L.packCard(want[id])),id);
+  assert.equal(S().reviewsToday,ev.length); assert.equal(JSON.stringify(Object.keys(S().cards[ev[0][0]]).sort()),JSON.stringify(Object.keys(want[ev[0][0]]).sort()));
+});
+test("undo: puts the last graded card back exactly as it was, with the day's counters, one grade deep",()=>{
+  const r=reviewSix(), before=r.full(), live=JSON.stringify(r.t.S().cards["x.0"]);
+  r.grade("Easy"); assert.notEqual(r.full(),before); assert.equal(r.shown(),"x.1"); press(byText(r.b(),"Undo last grade"));
+  assert.equal(r.shown(),"x.0"); assert.equal(r.full(),before); assert.equal(JSON.stringify(r.t.S().cards["x.0"]),live); assert.ok(!byText(r.b(),"Undo last grade"));
+  r.grade("Got it"); r.grade("Got it"); press(byText(r.b(),"Undo last grade")); assert.equal(r.shown(),"x.1","only the latest grade"); assert.ok(!byText(r.b(),"Undo last grade"));
+  assert.equal(JSON.parse(r.full()).reviewsToday,1);
+});
+test("undo: a forgotten card taken back leaves the queue as it was, and the counters, log and session as they were",()=>{
+  const r=reviewSix(), S=()=>r.t.S(); r.grade("Got it"); const before=r.full(), live=JSON.stringify(S().cards["x.1"]), seen=[];
+  r.grade("Forgot"); assert.equal(r.shown(),"x.2"); press(byText(r.b(),"Undo last grade")); assert.equal(r.full(),before); assert.equal(JSON.stringify(S().cards["x.1"]),live);
+  for(let i=0;i<5;i++){ seen.push(r.shown()); r.grade("Got it"); } assert.deepEqual(seen,["x.1","x.2","x.3","x.4","x.5"],"the undone card is back at the front, in order, and nothing was moved by the undone Forgot");
+});
+test("undo: a new day's reset by the grade is put back too (streak, freezes, day, counters, empty log)",()=>{
+  const r=reviewSix(), S=()=>r.t.S(); Object.assign(S(),{streak:4,freezes:1,freezeUsed:0,lastDay:"2000-01-01",reviewsToday:7,newToday:2,log:{"2000-01-01":3}}); S().session={day:"2000-01-01",done:{lesson:1}};
+  const before=r.full(); r.grade("Got it"); assert.notEqual(r.full(),before); press(byText(r.b(),"Undo last grade")); assert.equal(r.full(),before);
+  assert.ok(!("review" in S().session.done)&&!(vm.runInContext("today()",r.env) in S().log),"keys that did not exist are removed, not left undefined");
+});
+test("undo: gone when the session ends, and refused when a sync changed the card meanwhile",()=>{
+  const r=reviewSix(); r.grade("Got it"); const p=r.t.serialize(); p.cards["x.0"][5]+=7; r.t.setS(p); const after=r.full();
+  press(byText(r.b(),"Undo last grade")); assert.equal(r.t.S().cards["x.0"].t,p.cards["x.0"][5]*60000); assert.equal(r.full(),after,"nothing restored"); assert.ok(texts(r.b()).includes("That card changed on another device, so it can't be undone."));
+  assert.ok(!byText(r.b(),"Undo last grade"),"button removed after the refusal");
+  for(let i=0;i<5;i++) r.grade("Got it"); assert.ok(texts(r.b()).includes("Review done")); assert.ok(!byText(r.b(),"Undo last grade"));
+});
+test("undo: from the waiting screen the card comes back and the wait is cancelled",()=>{
+  const sc=loadScreens({harakat:"never"}), {env,t}=sc; t.S().cards={"u1.0":sc.card(0,0,0)}; env.sched=(c,g,n)=>L.schedule(c,g,n,0.9);
+  vm.runInContext(cut("function touchDay","const shownStreak"),env); const full=()=>{ const p=t.serialize(); delete p.updatedAt; return JSON.stringify(p); }, before=full();
+  env.startReview(null); press(byText(sc.spy.view.body,"Show answer")); press(walk(sc.spy.view.body).find(n=>txt(n).startsWith("Forgot")&&n.tag==="button"));
+  assert.ok(/comes? back in/.test(texts(sc.spy.view.body).join(" "))); press(byText(sc.spy.view.body,"Undo last grade"));
+  assert.equal(full(),before); assert.ok(byText(sc.spy.view.body,"Show answer")); assert.equal(t.timers.size,0);
+});
