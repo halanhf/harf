@@ -15,7 +15,7 @@
 #   long vowels  a short-vowel mark followed by its bare carrier is one long vowel: fatha + bare ا or ى = ā, kasra + bare ي = ī, damma + bare و = ū.
 #                with no sounded letter after it in the word, it may be read short (T4: ma, ana, hādha, ʿindi, fi)
 #   bare letters that are read (anything else bare is a "missing mark" problem):
-#     article alif (first letter, or second after one proclitic و ب ف ك ل ه, next letter ل bare or with sukun): reads (a|i|ā)? and takes no mark;
+#     article alif (first letter, second after one proclitic و ب ف ك ل ه, or third after و/ف and a proclitic (وهالمرة), next letter ل bare or with sukun): reads (a|i|ā)? and takes no mark;
 #       it wins over the long-vowel reading (وَاللّٰهْ wallāh, هَالْمُوبَايْلْ hal-mobāyl)
 #     article lām right after it, when the next letter has a shadda (sun letter): silent
 #     ا after a letter with tanwin fatha, ا last in the word after و (رَاحَوْا), ة after a fatha, ه last in the word: silent
@@ -100,7 +100,8 @@ def read_word(word, probs):  # -> regex of one word; problems are appended to pr
     cl = clusters(word, probs)
     n = len(cl)
     def art(j):  # is cl[j] an article alif (marked or not)?
-        return (cl[j][0] == "ا" and (j == 0 or (j == 1 and cl[0][0] in PROCLITICS)) and j + 1 < n
+        return (cl[j][0] == "ا" and (j == 0 or (j == 1 and cl[0][0] in PROCLITICS)
+                                     or (j == 2 and cl[0][0] in "وف" and cl[1][0] in PROCLITICS)) and j + 1 < n
                 and cl[j + 1][0] == "ل" and cl[j + 1][1] in (None, "0") and not cl[j + 1][2])
     out, i, after_long_a = [], 0, False  # out: (regex, sounded, long vowel kind)
     while i < n:
@@ -120,6 +121,8 @@ def read_word(word, probs):  # -> regex of one word; problems are appended to pr
         if ch == "آ" or ch == "ى":
             probs.append(f"{ch} takes no mark in {word}"); i += 1; continue
         if ch == "ا" and art(i): probs.append(f"the article alif takes no mark in {word}")
+        if ch == "ا" and (v == "0" or sh): probs.append(f"the alif takes no sukūn or shadda in {word}")
+        if ch == "ا" and v in ("an", "in", "un"): probs.append(f"tanwīn goes on the letter before the alif, the alif stays bare (V15) in {word}")
         c = "" if ch == "ا" else CONS[ch]
         if sh: c += c
         nxt = cl[i + 1] if i + 1 < n else None

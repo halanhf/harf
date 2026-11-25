@@ -164,6 +164,30 @@ class Checker(unittest.TestCase):
         r = hc.check_row("شلونك؟", "shlōnak?", "شلَوْنَكْ؟")
         self.assertTrue(has(r, "vowels:") and has(r, "reading:"))
 
+    # hardening round (review of task 1)
+    def test_article_alif_after_two_proclitics(self):  # s1u031 dialogue[3] وهالمرة w hal-marra
+        self.assertEqual(hc.check_row("وهالمرة", "w hal-marra", "وْهَالْمَرَّة"), [])
+        self.assertEqual(hc.check_row("والله؟ وهالمرة شو تبي؟", "wallāh? w hal-marra shu tabi?", "وَاللّٰهْ؟ وْهَالْمَرَّة شُو تَبِي؟"), [])
+        # real words where و or ف is followed by a proclitic and ا but no article stay ā: s1u056 ولازم, s2u037 وكان, s1u058 فواكه
+        self.assertEqual(hc.check_row("ولازم", "w lāzim", "وْلَازِمْ"), [])
+        self.assertEqual(hc.check_row("وكان", "w kān", "وْكَانْ"), [])
+        self.assertEqual(hc.check_row("فواكه", "fawākih", "فَوَاكِهْ"), [])
+        # the ل must still be bare or carry sukūn: وَالِد is wālid, not an article
+        self.assertEqual(hc.check_row("والد", "wālid", "وَالِدْ"), [])
+        self.assertEqual(hc.check_row("وبالله", "w billāh", "وْبِاللّٰهْ"), [])
+
+    def test_alif_takes_no_sukun_or_shadda(self):
+        for ar, tr, bad, good in [("ما", "ma", "مَاْ", "مَا"), ("أنا", "ana", "أَنَاْ", "أَنَا")]:
+            self.assertTrue(has(hc.check_row(ar, tr, bad), "vowels:"), bad)
+            self.assertEqual(hc.check_row(ar, tr, good), [])
+        self.assertTrue(has(hc.check_row("ما", "ma", "مَاّْ"), "vowels:"))
+
+    def test_tanwin_goes_on_the_letter_before_the_alif(self):  # V15
+        r = hc.check_row("تقريبا", "tagrīban", "تَقْرِيبَاً")
+        self.assertTrue(has(r, "vowels:", "tanwīn"))
+        self.assertTrue(has(r, "vowels:", "V15"))
+        self.assertEqual(hc.check_row("تقريبا", "tagrīban", "تَقْرِيبًا"), [])
+
 class Cli(unittest.TestCase):  # main() on a throwaway repo layout, so these do not depend on how much of the real course is vowelled
     def setUp(self):
         import json
