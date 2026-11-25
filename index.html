@@ -2451,7 +2451,7 @@ async function setupSync(){
 // another tab or window of this app saved: merge its work in, so this tab's next save can't overwrite it.
 // merged in memory only (no write back), so two tabs never answer each other's saves in a loop
 addEventListener("storage",e=>{
-  if(e.key===KEY+"-gh"){ ghLoad(); if(!GH) ghForget(); else{ ghMem={sha:{},body:{}}; ghHalted=false; ghDirty=true; } if(!busy) RENDER[currentTab](); return; }
+  if(e.key===KEY+"-gh"){ ghCancel(); ghLoad(); if(!GH) ghForget(); else{ ghMem={sha:{},body:{}}; ghHalted=false; ghDirty=true; } if(!busy) RENDER[currentTab](); return; }
   if(e.key!==KEY||!e.newValue) return;
   try{ const before=sig(S), gen=S.gen; S=hydrate(mergeProgress(serialize(),cleanIn(JSON.parse(e.newValue)))); S.gen=gen; if(sig(S)!==before) afterRemoteChange(); }catch(x){} });
 document.addEventListener("visibilitychange",()=>{ if(synced) pushRemote(); ghSync(document.visibilityState==="hidden"?"hide":"show"); });
@@ -2476,7 +2476,7 @@ function ghNote(){ try{ localStorage.setItem(KEY+"-ghs",JSON.stringify(ghSt)); }
 const savedMsg=()=>GH?ghLine(true,ghSt,Date.now()):sync.msg;
 // a connection that never answers is given up on, so nothing waits on it for good
 // the 30 s covers the answer's body too: it stops when the body has been read (or when the answer isn't one that gets read)
-function ghFetch(url,opts){ const ac=new AbortController(); let stop; const dead=new Promise((_,no)=>{ stop=setTimeout(()=>{ ac.abort(); no(Object.assign(new Error("timeout"),{name:"TimeoutError"})); },30000); }); dead.catch(()=>{});
+function ghFetch(url,opts){ const ac=new AbortController(); let stop; const dead=new Promise((_,no)=>{ stop=setTimeout(()=>{ no(Object.assign(new Error("timeout"),{name:"TimeoutError"})); ac.abort(); },30000); }); dead.catch(()=>{});
   return Promise.race([fetch(url,Object.assign({},opts,{signal:ac.signal})),dead]).then(r=>{
     if(!(r.status>=200&&r.status<300)) clearTimeout(stop);
     return {status:r.status,json:()=>Promise.race([r.json(),dead]).finally(()=>clearTimeout(stop))}; },e=>{ clearTimeout(stop); throw e; }); }

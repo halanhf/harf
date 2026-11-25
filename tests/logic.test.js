@@ -815,6 +815,22 @@ test("disconnect stops the cycle that is running: nothing more goes out with the
   const hub2=fakeHub(); let rel2; const g2=new Promise(r=>{ rel2=r; }); let f2=true; hub2.before=async(m,p)=>{ if(f2&&m==="GET"&&p.includes("/contents/")){ f2=false; await g2; } };
   const t2=loadUi({boot:true,pwa:true,fetch:hub2.fetch,store:new Map([[KEY+"-gh",CFG]])}); await tick(); const n=hub2.log.length; t2.ghForget(); rel2(); await tick(); assert.equal(hub2.log.length,n); assert.equal(t2.gh(),null);
 });
+test("another tab changing or removing the connection stops the cycle running here, and the next sync starts fresh with the new one",async()=>{
+  const OLD="github_pat_OLDTOKEN9999", NEW="github_pat_NEWTOKEN7777", cfg=tk=>JSON.stringify({owner:"someone",repo:"harf-progress",token:tk});
+  const mk=async()=>{ const hub=fakeHub(); let first=true, release; const gate=new Promise(r=>{ release=r; });
+    hub.before=async(m,p)=>{ if(first&&m==="GET"&&p.includes("/contents/")){ first=false; await gate; } };
+    const store=new Map([[KEY+"-gh",cfg(OLD)]]); const t=loadUi({boot:true,pwa:true,fetch:hub.fetch,store}); await tick();
+    return {hub,store,t,release,old:()=>hub.log.filter(q=>q.headers.Authorization==="Bearer "+OLD).length,fresh:()=>hub.log.filter(q=>q.headers.Authorization==="Bearer "+NEW).length}; };
+  // removed in another tab
+  let x=await mk(); assert.equal(x.old(),1);
+  x.store.delete(KEY+"-gh"); x.store.delete(KEY+"-ghs"); x.t.on.storage({key:KEY+"-gh",newValue:null}); x.release(); await tick();
+  assert.equal(x.old(),1,"no request with the old token after it was removed"); assert.equal(x.hub.log.length,1);
+  // changed in another tab: the held run is dropped, the next sync is a fresh cycle with the new token
+  x=await mk(); assert.equal(x.old(),1);
+  x.store.set(KEY+"-gh",cfg(NEW)); x.t.on.storage({key:KEY+"-gh",newValue:cfg(NEW)});
+  const next=x.t.ghSync("manual"); await tick(); assert.ok(x.fresh()>0,"the next sync starts at once with the new token, not by joining the old run");
+  x.release(); await next; await tick(); assert.equal(x.old(),1,"the old run sent nothing more"); assert.ok(x.hub.files.has("progress.json"));
+});
 test("connect: a failure shows on the panel that is on screen when it ends, never with the token, and clears on the next attempt",async()=>{
   const hub=fakeHub(); let release; const gate=new Promise(r=>{ release=r; }); hub.before=async(m,p)=>{ if(p==="/user") await gate; }; hub.status["GET user"]=401;
   const t=loadUi({pwa:true,dom:true,fetch:hub.fetch}); const sec=t.env.rootEl; t.ghPanel(sec);
