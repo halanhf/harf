@@ -1249,13 +1249,13 @@ test("redraw: sentence practice keeps its sentence, your answer and your tries, 
 
 // the speech-out section against a fake speechSynthesis. fire: "end" (starts then ends), "start" (starts, never ends), "error", "none" (nothing ever fires)
 function loadSpeech({voices=[{lang:"ar-SA"}],engine=true,fire="end",store,quietCancel=false,throwSpeak=false}={}){
-  const t=loadUi({store}), env=t.env, note=uiEl("p"), spoken=[], cancels=[]; note.hidden=true; let cur=null;
+  const t=loadUi({store}), env=t.env, note=uiEl("p"), spoken=[], cancels=[], announced=[]; note.hidden=true; let cur=null; env.announce=x=>{ announced.push(x); };
   env.document.createElement=uiEl; env.$=s=>s==="#voice-note"?note:s==="#sync-note"?t.note:null;
   env.SpeechSynthesisUtterance=function(text){ this.text=text; };
   if(engine) env.window.speechSynthesis={getVoices:()=>voices,addEventListener(){},cancel(){ cancels.push(1); if(!quietCancel&&cur&&cur.onerror) cur.onerror({error:"interrupted"}); cur=null; },
     speak(u){ if(throwSpeak) throw new Error("boom"); cur=u; spoken.push(u.text); if(fire==="end"){ u.onstart&&u.onstart(); u.onend(); } else if(fire==="start") u.onstart&&u.onstart(); else if(fire==="error") u.onerror({error:"synthesis-failed"}); }};
   vm.runInContext(cut("const ap=","const SVG=")+cut("const synth=","// ===== speech in")+";this.__tts=x=>{ TTS=x; pickVoices(); }; Object.assign(this,{VOICE_NONE,VOICE_NOAR,VOICE_STALL});",env);
-  return {t,env,note,spoken,cancels,run:async()=>{ for(let i=0;i<4;i++){ t.runTimers(); await tick(); } }};
+  return {t,env,note,spoken,cancels,announced,run:async()=>{ for(let i=0;i<4;i++){ t.runTimers(); await tick(); } }};
 }
 test("audio: a voice that never answers is given up on, the queue carries on, and one line says so",async()=>{
   const s=loadSpeech({fire:"none"}); let done; s.env.sayQueue([{text:"هلا"},{pause:400},{text:"زين"}]).then(r=>{ done=r; });
@@ -1382,4 +1382,29 @@ test("audio: a line cut by the next tap stays quiet, even when the engine says n
   const s=loadSpeech({fire:"none",quietCancel:true}); s.env.say("هلا"); s.env.stopAudio(); const c0=s.cancels.length; await s.run(); assert.equal(s.note.hidden,true); assert.equal(s.cancels.length,c0,"a stale timer cancels nothing");
   const stops=[], c=loadSpeech({voices:[]}); let rej; c.env.__tts({speak:()=>new Promise((_,r)=>{ rej=r; }),stop:async()=>{ stops.push(1); }});
   c.env.say("هلا"); c.env.stopAudio(); rej({code:"interrupted"}); const n0=stops.length; await c.run(); assert.equal(c.note.hidden,true); assert.equal(stops.length,n0);
+});
+
+// a claude.ai voice that reports the documented states: speak() returns a promise the test settles, onState hands the handler over
+function fakeVoice({withState=true}={}){ const v={calls:[],stops:0,h:null,pend:[]};
+  v.speak=t=>{ v.calls.push(t); return new Promise((res,rej)=>{ v.pend.push({res,rej}); }); }; v.stop=async()=>{ v.stops++; };
+  if(withState) v.onState=h=>{ v.h=h; return ()=>{}; }; v.emit=state=>v.h&&v.h({state}); return v; }
+test("audio: a claude.ai line that reaches speaking is not reported, and one still speaking at its limit is not cut off or played over",async()=>{
+  const s=loadSpeech({voices:[]}), v=fakeVoice(); s.env.__tts(v); let done; s.env.sayQueue([{text:"هلا"},{text:"زين"}]).then(r=>{ done=r; });
+  v.emit("starting"); v.emit("speaking"); s.t.runTimers(); await tick();
+  assert.deepEqual(v.calls,["هلا"],"the next line waits for the one that is playing"); assert.equal(s.note.hidden,true); assert.equal(v.stops,1,"only the stop that opened the queue");
+  v.pend[0].res({playedMs:900}); await tick(); assert.deepEqual(v.calls,["هلا","زين"]); v.emit("starting"); v.emit("speaking"); v.pend[1].res({playedMs:900}); await tick(); assert.equal(done,true); assert.equal(s.note.hidden,true);
+});
+test("audio: a claude.ai line that never reaches speaking is stopped and reported; a stale speaking event cannot start the next line",async()=>{
+  const s=loadSpeech({voices:[]}), v=fakeVoice(); s.env.__tts(v); s.env.say("هلا"); v.emit("starting"); const st=v.stops; s.t.runTimers(); await tick();
+  assert.equal(v.stops,st+1); assert.ok(txt(s.note).startsWith(s.env.VOICE_STALL));
+  const t=loadSpeech({voices:[]}), w=fakeVoice(); t.env.__tts(w); t.env.say("هلا"); w.emit("starting"); w.emit("speaking"); t.env.say("زين"); w.emit("speaking"); // the old line's event arrives after the new tap
+  const s2=w.stops; t.t.runTimers(); await tick(); assert.equal(w.stops,s2+1,"the new line never started"); assert.ok(txt(t.note).startsWith(t.env.VOICE_STALL));
+});
+test("audio: a claude.ai voice with no onState behaves as before",async()=>{
+  const s=loadSpeech({voices:[]}), v=fakeVoice({withState:false}); s.env.__tts(v); s.env.say("هلا"); const st=v.stops; s.t.runTimers(); await tick();
+  assert.equal(v.stops,st+1); assert.ok(txt(s.note).startsWith(s.env.VOICE_STALL));
+});
+test("voice notice: a new notice is announced once and a repeat is not",async()=>{
+  const s=loadSpeech({fire:"none"}); assert.deepEqual(s.announced,[]); s.env.say("هلا"); await s.run(); assert.deepEqual(s.announced,[s.env.VOICE_STALL]);
+  s.env.say("زين"); await s.run(); assert.equal(s.announced.length,1,"the same notice again is not announced");
 });

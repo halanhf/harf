@@ -2644,14 +2644,15 @@ function showTr(){ const m=S.settings.translit; if(m!=="auto") return m; const s
 
 // ===== speech out: device voices, or the Claude voice where the page is given one =====
 const synth=("speechSynthesis" in window)?window.speechSynthesis:null;
-let arVoices=[], arVoice=null, enVoice=null, TTS=null, audioGen=0, curUtt=null, voiceOff=false, curNote=null, stallGen=-1;
+let arVoices=[], arVoice=null, enVoice=null, TTS=null, audioGen=0, curUtt=null, voiceOff=false, curNote=null, stallGen=-1, shownNote=null, ttsHooked=null, ttsPart=null;
 try{ voiceOff=localStorage.getItem(KEY+"-voice")==="hidden"; }catch(e){}
 const VOICE_NONE="This device has no speech voice, so Harf can't play audio here. The pronunciation lines show how each phrase sounds.";
 const VOICE_NOAR="No Arabic voice on this device, so audio may be silent. Android: Settings, Google Speech Services, install Arabic. iPhone: Settings, Accessibility, Spoken Content, Voices, Arabic. Windows: Settings, Time & language, Speech, add Arabic.";
 const VOICE_STALL="Audio didn't play on this device, so Harf carried on without it. Check the volume, or add an Arabic voice in the device's speech settings.";
 // one dismissible line about audio; Hide is remembered on this device only
 function voiceNote(text){ const note=$("#voice-note"); curNote=text||null; if(!note) return;
-  if(voiceOff||!text){ note.hidden=true; return; }
+  if(voiceOff||!text){ note.hidden=true; shownNote=null; return; }
+  if(text!==shownNote||note.hidden){ shownNote=text; announce(text); } // the notice is at the top: say it too, without scrolling
   note.textContent=text; note.append(" ",el("button",{className:"btn link",type:"button","aria-label":"Hide this notice",textContent:"Hide",onclick:()=>{ voiceOff=true; try{ localStorage.setItem(KEY+"-voice","hidden"); }catch(e){} note.hidden=true; }}));
   note.hidden=false; }
 // how long one line may take before it is given up on
@@ -2671,19 +2672,22 @@ pickVoices(); if(synth){ if(synth.addEventListener) synth.addEventListener("voic
 const useClaudeVoice=()=>{ if(!TTS) return false; const v=S.settings.voice; return v==="claude"||(v!=="device"&&!arVoice); };
 function stopAudio(){ audioGen++; if(synth) try{ synth.cancel(); }catch(e){} if(TTS) try{ TTS.stop().catch(()=>{}); }catch(e){} }
 // one utterance; resolves when it ends or fails or is given up on, never rejects
+// the Claude voice reports its state: a line has started once it is "speaking" after its own "starting"; one handler, aimed at the line now waiting
+function hookTTS(){ if(!TTS||TTS===ttsHooked||typeof TTS.onState!=="function") return; ttsHooked=TTS;
+  try{ TTS.onState(e=>{ const p=ttsPart; if(!p||!e) return; if(e.state==="starting") p.seen=true; else if(e.state==="speaking"&&p.seen) p.begin(); }); }catch(x){} }
 function speakPart(text,o){
   o=o||{}; const en=o.lang==="en", g=audioGen;
   return new Promise(res=>{
     if(!text){ res(); return; }
-    let done=false, started=false, tm=0, claude=false;
+    let done=false, started=false, tm=0, claude=false, me=null;
     // after one line of a queue stalls, the rest get a short limit and no second notice
     const stall=()=>{ if(g===audioGen&&stallGen!==g){ stallGen=g; voiceNote(VOICE_STALL); } };
-    const fin=(quiet,late)=>{ if(done) return; done=true; clearTimeout(tm);
+    const fin=(quiet,late)=>{ if(done) return; if(late&&claude&&started&&ttsHooked===TTS) return; /* really playing: wait for it, a new speak() would cut it off */ done=true; clearTimeout(tm); if(ttsPart===me) ttsPart=null;
       if(late&&!started&&g===audioGen){ try{ if(claude) TTS.stop().catch(()=>{}); else synth.cancel(); }catch(e){} } // never leave a given-up line to play over the next one
       if(!quiet&&!started) stall(); res(); };
     tm=setTimeout(()=>fin(false,true),g===stallGen?1500:speakLimit(text,o.rate));
     try{
-      if(TTS&&(en?!enVoice:useClaudeVoice())){ claude=true; // the Claude voice reports nothing until the line is over, so there is no "started" to trust
+      if(TTS&&(en?!enVoice:useClaudeVoice())){ claude=true; hookTTS(); me=ttsPart={seen:false,begin:()=>{ started=true; }};
         TTS.speak(String(text).slice(0,2000),{rate:Math.max(0.7,Math.min(1.5,o.rate||1))}).then(()=>{ started=true; fin(true); },e=>{ if(e&&e.code==="not_granted"){ TTS=null; pickVoices(); } fin(true); }); return; }
       if(!synth){ fin(true); return; }
       const u=new SpeechSynthesisUtterance(text); let v=en?enVoice:arVoice;
