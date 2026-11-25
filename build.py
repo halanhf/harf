@@ -45,12 +45,13 @@ fonts = """<style>
 </style>"""
 sw = """<script>
 // installed-app extras: offline support and asking the browser not to clear progress
-window.HARF_PWA=true;
 if("serviceWorker" in navigator) addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
 if(navigator.storage&&navigator.storage.persist) navigator.storage.persist().catch(()=>{});
 </script>
 """
-rest = body.strip() + "\n" + sw
+# the flag comes first: the app script reads it while it loads
+flag = "<script>window.HARF_PWA=true;</script>\n"
+rest = flag + body.strip() + "\n" + sw
 # csp: only this app's own inline scripts (by hash) and files from its own folder; the one other host the page may talk to is api.github.com, for progress sync
 hashes = " ".join(f"'sha256-{base64.b64encode(hashlib.sha256(js.encode()).digest()).decode()}'" for js in re.findall(r"<script[^>]*>(.*?)</script>", rest, re.S))
 csp = f"default-src 'self'; script-src 'self' {hashes}; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'"

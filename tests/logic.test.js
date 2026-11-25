@@ -14,7 +14,9 @@ const L=ctx.module.exports, D=ctx.D;
 const DAY=86400000, now=1e12;
 // the page's own state, sync and boot code, run against fakes (no browser, no network)
 const main=html.match(/<script>\r?\n\(function\(\)\{([\s\S]*?)<\/script>/)[1];
-const cut=(a,b)=>{ const i=main.indexOf(a), j=b?main.indexOf(b,i):main.lastIndexOf("})();"); assert.ok(i>=0&&j>i,`section ${a} missing`); return main.slice(i,j); };
+const cut=(a,b,m=main)=>{ const i=m.indexOf(a), j=b?m.indexOf(b,i):m.lastIndexOf("})();"); assert.ok(i>=0&&j>i,`section ${a} missing`); return m.slice(i,j); };
+// the built page's inline scripts, in document order; the app script is the one with no id that holds the state section
+const builtScripts=()=>[...fs.readFileSync(path.join(__dirname,"..","docs","index.html"),"utf8").matchAll(/<script(?: id="[^"]*")?>([\s\S]*?)<\/script>/g)].map(m=>m[1]);
 const tick=async(n=12)=>{ for(let i=0;i<n;i++) await new Promise(r=>setImmediate(r)); };
 let EXPOSE="readRemote,writeRemote,pushRemote,serialize,save,flush,sync,setS:x=>{S=hydrate(x);},S:()=>S,stamps:()=>shardStamp,use:(db,uid)=>{DB=db;UID=uid;synced=true;}";
 function loadUi(o={}){
@@ -24,12 +26,14 @@ function loadUi(o={}){
     $:s=>s==="#sync-note"?note:null,
     localStorage:{getItem:k=>store.has(k)?store.get(k):null,setItem:(k,v)=>{ store.set(k,String(v)); },removeItem:k=>{ store.delete(k); }},
     document:{visibilityState:"visible",addEventListener:(t,f)=>{ on[t]=f; }},addEventListener:(t,f)=>{ on[t]=f; },
-    window:{claude:o.claude,HARF_PWA:o.pwa},navigator:{onLine:o.online!==false},fetch:o.fetch||(()=>{ throw new Error("unexpected fetch"); }),
+    window:{claude:o.claude,HARF_PWA:o.built?undefined:o.pwa},navigator:{onLine:o.online!==false},fetch:o.fetch||(()=>{ throw new Error("unexpected fetch"); }),
     rebuild(){},refresh(){},busy:false,currentTab:"today",RENDER:{today(){ calls.push("render"); }},show(){ calls.push("show"); },
     feedMsa(){ calls.push("msa"); },feedSentences(){ calls.push("sentences"); },afterRemoteChange(){ calls.push("changed"); },firstMergeDone(){}};
-  vm.createContext(env); vm.runInContext(block("logic"),env);
-  vm.runInContext(cut("// ===== state =====","// ===== items index =====")+";this.T={"+EXPOSE+"};",env);
-  if(o.boot) vm.runInContext(cut("// ===== boot ====="),env);
+  vm.createContext(env); let m=main;
+  if(o.built){ const sc=builtScripts(), mi=sc.findIndex(x=>x.includes("// ===== state =====")); assert.ok(mi>0); sc.slice(0,mi).forEach(x=>vm.runInContext(x,env)); m=sc[mi].match(/\(function\(\)\{([\s\S]*)/)[1]; }
+  else vm.runInContext(block("logic"),env);
+  vm.runInContext(cut("// ===== state =====","// ===== items index =====",m)+";this.T={"+EXPOSE+"};",env);
+  if(o.boot) vm.runInContext(cut("// ===== boot =====",undefined,m),env);
   const runTimers=()=>{ const all=[...timers.values()]; timers.clear(); all.forEach(x=>x.f()); };
   return Object.assign(env.T,{store,note,on,calls,timers,runTimers,env,fed:()=>calls.filter(c=>c==="msa"||c==="sentences")});
 }
@@ -720,4 +724,38 @@ test("offline app: saving the connection trims the token, and refuses one that w
   t.ghForget(); assert.ok(!store.has(KEY+"-gh"));
   for(const bad of ["","   ","git hub_pat","tok\nen","tok\ten","tokén","tok\u0000en","تو كن","tok​en"]){
     assert.deepEqual({...t.ghSave({owner:"someone",repo:"harf-progress",token:bad})},{ok:false,why:"the token was refused"},JSON.stringify(bad)); assert.ok(!store.has(KEY+"-gh"),"nothing stored"); assert.equal(t.gh(),null); }
+});
+
+// ===== fix round 1 =====
+test("built app: the installed-app flag is set before the app script reads it, so a stored connection is picked up on load",async()=>{
+  const sc=builtScripts(), flag=sc.findIndex(x=>/window\.HARF_PWA\s*=\s*true/.test(x)), app=sc.findIndex(x=>x.includes("// ===== state ====="));
+  assert.ok(flag>=0&&flag<app,`flag script ${flag}, app script ${app}`);
+  const hub=fakeHub(); const t=loadUi({built:true,boot:true,fetch:hub.fetch,saved:{[KEY+"-gh"]:CFG}});
+  assert.ok(t.gh(),"the saved connection is loaded"); await tick(); assert.ok(hub.log.length>0,"the open sync made its first request");
+});
+test("offline app: a server that sends headers and then stalls the body is given up on too",async()=>{
+  let n=0; const stall=async()=>{ n++; return {status:200,ok:true,json:()=>new Promise(()=>{})}; };
+  const t=loadUi({boot:true,pwa:true,fetch:stall,saved:{[KEY+"-gh"]:CFG}}); await tick(); assert.deepEqual(t.fed(),[]);
+  assert.deepEqual([...t.timers.values()].map(x=>x.ms),[30000],"the timeout is still running while the body is read"); t.runTimers(); await tick();
+  assert.deepEqual(t.fed(),["msa","sentences"]); assert.equal(t.savedMsg(),"Offline, will sync later");
+  const before=n, again=t.ghSync("manual"); await tick(); assert.equal(n,before+1,"a later trigger starts a new cycle"); t.runTimers(); assert.equal(await again,"offline");
+});
+function heldCycle(t,first){ const calls=[]; const orig=t.env.ghCycle; let go; t.env.ghCycle=(api,l,m,o)=>{ calls.push(o); return calls.length===1?new Promise(r=>{ go=()=>r(first||orig(api,l,m,o)); }):orig(api,l,m,o); }; return {calls,release:()=>go()}; }
+test("offline app: a start-over queued behind a running cycle is not lost to a later automatic trigger",async()=>{
+  const hub=fakeHub(); const t=loadUi({pwa:true,fetch:hub.fetch,saved:{[KEY+"-gh"]:CFG}}); const h=heldCycle(t);
+  const p=t.ghSync("open"); t.ghSync("manual",{replace:true}); t.ghSync("online"); t.ghSync("show"); h.release(); await p; await tick();
+  assert.equal(h.calls.length,2); assert.equal(h.calls[1].replace,true);
+});
+test("offline app: a refused token during a cycle stops what was queued behind it, unless it was queued by hand",async()=>{
+  const hub=fakeHub(); const t=loadUi({pwa:true,fetch:hub.fetch,saved:{[KEY+"-gh"]:CFG}}); const h=heldCycle(t,{kind:"auth",merged:null,mem:{sha:{},body:{}}});
+  const p=t.ghSync("open"); t.ghSync("online"); t.ghSync("show"); h.release(); await p; await tick();
+  assert.equal(h.calls.length,1); assert.equal(hub.log.length,0); assert.equal(t.savedMsg(),"Sync problem: the token was refused");
+  const t2=loadUi({pwa:true,fetch:hub.fetch,saved:{[KEY+"-gh"]:CFG}}); const h2=heldCycle(t2,{kind:"auth",merged:null,mem:{sha:{},body:{}}});
+  const p2=t2.ghSync("open"); t2.ghSync("online"); t2.ghSync("manual"); h2.release(); await p2; await tick(); assert.equal(h2.calls.length,2);
+});
+test("offline app: saving the connection refuses an empty owner or repo",()=>{
+  const store=new Map(); const t=loadUi({pwa:true,store});
+  for(const c of [{owner:"",repo:"harf-progress"},{owner:"  ",repo:"harf-progress"},{owner:"someone",repo:""},{owner:"someone",repo:" \n"},{owner:"someone"},{repo:"harf-progress"}]){
+    assert.deepEqual({...t.ghSave(Object.assign({token:TOKEN},c))},{ok:false,why:"the progress repo was not found"},JSON.stringify(c)); assert.ok(!store.has(KEY+"-gh")); assert.equal(t.gh(),null); }
+  assert.deepEqual({...t.ghSave({owner:" someone ",repo:" harf-progress ",token:TOKEN})},{ok:true}); assert.deepEqual(JSON.parse(store.get(KEY+"-gh")),{owner:"someone",repo:"harf-progress",token:TOKEN});
 });

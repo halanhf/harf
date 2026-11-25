@@ -2259,7 +2259,7 @@ function ghApi(cfg,fetchFn){
     if(keepalive&&(body||"").length<60000) init.keepalive=true;
     let r; try{ r=await fetchFn(GH_API+path,init); }catch(e){ return {kind:"offline"}; }
     const kind=ghKind(op,r&&r.status); if(kind!=="ok") return {kind};
-    let j; try{ j=await r.json(); }catch(e){ return {kind:"server"}; }
+    let j; try{ j=await r.json(); }catch(e){ return {kind:e&&e.name==="TimeoutError"?"offline":"server"}; }
     return j&&typeof j==="object"?{kind:"ok",j}:{kind:"server"};
   }
   return {
@@ -2475,13 +2475,17 @@ ghLoad();
 function ghNote(){ try{ localStorage.setItem(KEY+"-ghs",JSON.stringify(ghSt)); }catch(e){} const n=$("#gh-line"); if(n) n.textContent=ghLine(!!GH,ghSt,Date.now()); }
 const savedMsg=()=>GH?ghLine(true,ghSt,Date.now()):sync.msg;
 // a connection that never answers is given up on, so nothing waits on it for good
-function ghFetch(url,opts){ const ac=new AbortController(), t=setTimeout(()=>ac.abort(),30000);
-  return fetch(url,Object.assign({},opts,{signal:ac.signal})).finally(()=>clearTimeout(t)); }
+// the 30 s covers the answer's body too: it stops when the body has been read (or when the answer isn't one that gets read)
+function ghFetch(url,opts){ const ac=new AbortController(); let stop; const dead=new Promise((_,no)=>{ stop=setTimeout(()=>{ ac.abort(); no(Object.assign(new Error("timeout"),{name:"TimeoutError"})); },30000); }); dead.catch(()=>{});
+  return Promise.race([fetch(url,Object.assign({},opts,{signal:ac.signal})),dead]).then(r=>{
+    if(!(r.status>=200&&r.status<300)) clearTimeout(stop);
+    return {status:r.status,json:()=>Promise.race([r.json(),dead]).finally(()=>clearTimeout(stop))}; },e=>{ clearTimeout(stop); throw e; }); }
 // saves the connection once the token is fit to send: pasted text often has a stray newline or space, and a header that isn't printable ascii makes fetch throw, which would read as offline for good
 function ghSave(c){
   const token=String(c&&c.token||"").trim();
   if(!/^[\x21-\x7e]+$/.test(token)) return {ok:false,why:GH_WHY.auth};
-  try{ localStorage.setItem(KEY+"-gh",JSON.stringify({owner:c.owner,repo:c.repo,token})); localStorage.removeItem(KEY+"-ghs"); }catch(e){ return {ok:false,why:"This browser isn't letting Harf save the token."}; }
+  const owner=String(c.owner||"").trim(), repo=String(c.repo||"").trim(); if(!owner||!repo) return {ok:false,why:GH_WHY.repo};
+  try{ localStorage.setItem(KEY+"-gh",JSON.stringify({owner,repo,token})); localStorage.removeItem(KEY+"-ghs"); }catch(e){ return {ok:false,why:"This browser isn't letting Harf save the token."}; }
   ghMem={sha:{},body:{}}; ghDirty=ghHalted=false; ghLoad(); return {ok:true};
 }
 function ghForget(){
@@ -2495,7 +2499,7 @@ function ghSync(trigger,opts){
   if(a==="no") return Promise.resolve();
   if(a==="offline"){ ghSt=ghAfter(ghSt,"offline",now); ghNote(); firstMergeDone(); return Promise.resolve("offline"); }
   if(trigger==="save"){ if(!ghTimer&&!ghRun) ghTimer=setTimeout(()=>{ ghTimer=0; ghSync("timer"); },Math.max(1500,ghWait(ghStart,now))); return Promise.resolve(); }
-  if(ghRun){ ghAgain={opts}; return ghRun; }
+  if(ghRun){ const q=ghAgain||{hand:false,replace:false}; ghAgain={hand:q.hand||trigger==="manual",replace:q.replace||!!(opts&&opts.replace)}; return ghRun; }
   clearTimeout(ghTimer); ghTimer=0; ghStart=now; ghDirty=false;
   const cfg=GH;
   ghRun=(async()=>{
@@ -2510,7 +2514,7 @@ function ghSync(trigger,opts){
         ghNote();
       }
     } finally { firstMergeDone(); }
-    if(again&&GH) return ghSync("manual",again.opts);
+    if(again&&GH) return ghSync(again.hand||again.replace?"manual":"timer",{replace:again.replace});
     if(GH===cfg&&r.kind==="ok"&&ghDirty) ghSync("save");
     return r.kind;
   })();
