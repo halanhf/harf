@@ -109,6 +109,7 @@ The course follows **CODA-Gulf** (the published spelling convention for written 
 - أبوظبي Abu Dhabi is Abuẓabi (short u, one word; the published UAE grammar has 'abu ẓabi, fast bu ẓabi).
 - دفع "paid" is difaʿ (difaʿt, difaʿt-ha), as the published UAE grammar writes difa9; حسب "counted" is ḥasab (ḥasabt, ḥasabt-ha).
 - أقل aqall "less" and قليل qalīl "few, little" keep q in UAE speech (the published UAE grammar writes only 'aqall and qaliil); everyday "a little" is still shwayy.
+- أكل "ate" and أخذ "took" conjugate like defective verbs before a person ending: kalēt, kalēti, kalēna, kalētu (كليت …) and khadhēt, khadhēti, khadhēna, khadhētu (خذيت …). He, she and they are kal, kalat, kalaw and khadh, khadhat, khadhaw. The short kalt, khadht (كلت, خذت) and akalt (أكلت) go in notes only, as "you'll also hear …". "Minute" is digīga, digīgtēn, digāyig (not dagīga, dagāyig).
 - صج ṣij "really" keeps ج (natives write صج 2476/3162 vs صق 3/0): a deliberate exception to the ق rule, like الفريج.
 - طب: ṭibb "medicine" (the item, s2u003) vs UAE ṭabb "came in, entered" vs Egyptian/Levantine ṭab "OK" (never use). Teach ṭabb only as a chunk.
 - ودنا: widdana "we'd like" vs waddna "take us!" Teach only as a chunk (ودنا نشوفك, ودنا المول).

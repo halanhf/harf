@@ -500,9 +500,9 @@
     "id": "s1u041",
     "stage": 1,
     "title": "Where did you put the key?",
-    "goal": "Tell Sēf where you put the car key and who took it, and say whether you've eaten: ḥaṭṭēt, khadht, kalt.",
-    "grammar": "Past tense II: doubled and hamzated verbs (ḥaṭṭēt, khadht, kalt)",
-    "tip": "Doubled verbs (ḥaṭṭ put) add -ē- like sawwēt: ḥaṭṭēt (I put, you put). 'Take' and 'eat' have short forms: khadh (he took) → khadht (I took), kal (he ate) → kalt (I ate). To a woman: ḥaṭṭēti, khadhti, kalti.",
+    "goal": "Tell Sēf where you put the car key and who took it, and say whether you've eaten: ḥaṭṭēt, khadhēt, kalēt.",
+    "grammar": "Past tense II: doubled and hamzated verbs (ḥaṭṭēt, khadhēt, kalēt)",
+    "tip": "Doubled verbs (ḥaṭṭ put) add -ē- like sawwēt: ḥaṭṭēt (I put, you put). 'Take' and 'eat' do the same: khadh (he took) → khadhēt (I took), kal (he ate) → kalēt (I ate). To a woman: ḥaṭṭēti, khadhēti, kalēti. You'll also hear khadht, kalt.",
     "dialogue": [
       [
         "A",
@@ -534,17 +534,17 @@
       ],
       [
         "A",
-        "آسف، أنا خذت المفتاح! يلا، كلت شي؟",
-        "āsif, ana khadht il-miftāḥ! yalla, kalt shay?",
+        "آسف، أنا خذيت المفتاح! يلا، كليت شي؟",
+        "āsif, ana khadhēt il-miftāḥ! yalla, kalēt shay?",
         "Sorry, I took the key! Right, have you eaten anything?",
-        "آسِفْ، أَنَا خَذْتْ الْمِفْتَاحْ! يَلَّا، كَلْتْ شَيْ؟"
+        "آسِفْ، أَنَا خَذَيْتْ الْمِفْتَاحْ! يَلَّا، كَلَيْتْ شَيْ؟"
       ],
       [
         "B",
-        "لا، ما كلت من الصبح",
-        "la, ma kalt min iṣ-ṣubḥ",
+        "لا، ما كليت من الصبح",
+        "la, ma kalēt min iṣ-ṣubḥ",
         "No, I haven't eaten since the morning.",
-        "لَا، مَا كَلْتْ مِنْ الصُّبْحْ"
+        "لَا، مَا كَلَيْتْ مِنْ الصُّبْحْ"
       ]
     ],
     "items": [
@@ -557,28 +557,28 @@
         "حَطَّيْتْ"
       ],
       [
-        "خذت",
-        "khadht",
+        "خذيت",
+        "khadhēt",
         "I took; you took (to a man)",
         "أخذتُ / أخذتَ",
-        "to a woman: khadhti (خذتي); khadhat 'she took' is spelled the same; also said: khadhēt (خذيت)",
-        "خَذْتْ"
+        "to a woman: khadhēti (خذيتي); you'll also hear khadht (خذت), spelled like khadhat 'she took'",
+        "خَذَيْتْ"
       ],
       [
-        "كلت",
-        "kalt",
+        "كليت",
+        "kalēt",
         "I ate; you ate (to a man)",
         "أكلتُ / أكلتَ",
-        "to a woman: kalti (كلتي); also said: akalt (أكلت), kalēt (كليت)",
-        "كَلْتْ"
+        "to a woman: kalēti (كليتي); you'll also hear kalt (كلت), akalt (أكلت)",
+        "كَلَيْتْ"
       ],
       [
-        "ما كلت",
-        "ma kalt",
+        "ما كليت",
+        "ma kalēt",
         "I haven't eaten, I didn't eat",
         "لم آكل",
         "",
-        "مَا كَلْتْ"
+        "مَا كَلَيْتْ"
       ],
       [
         "مفتاح السيارة",
@@ -1102,7 +1102,7 @@
     "title": "What time is the film?",
     "goal": "Tell the time with half past and quarter to, and use 11 to 19 for the time, minutes and prices, before a film with Sēf.",
     "grammar": "Telling the time (w nuṣṣ, w rubʿ, illa rubʿ); 11 to 19 and a singular noun after 11",
-    "tip": "is-sāʿa + hour: is-sāʿa thnaʿash (twelve). Then w nuṣṣ (half past), w rubʿ (quarter past), illa rubʿ (quarter to). 13 to 19 end in -ṭaʿash (11 is iḥdaʿash, 12 thnaʿash). After 11 to 19 the noun stays singular: khamsṭaʿash dagīga; but 3 to 10 take the plural: khams dagāyig.",
+    "tip": "is-sāʿa + hour: is-sāʿa thnaʿash (twelve). Then w nuṣṣ (half past), w rubʿ (quarter past), illa rubʿ (quarter to). 13 to 19 end in -ṭaʿash (11 is iḥdaʿash, 12 thnaʿash). After 11 to 19 the noun stays singular: khamsṭaʿash digīga; but 3 to 10 take the plural: khams digāyig.",
     "dialogue": [
       [
         "A",
@@ -1135,9 +1135,9 @@
       [
         "A",
         "بتسعطعش درهم. والسينما خمسطعش دقيقة!",
-        "b-tisaʿṭaʿash dirham. w is-sīnama khamsṭaʿash dagīga!",
+        "b-tisaʿṭaʿash dirham. w is-sīnama khamsṭaʿash digīga!",
         "Nineteen dirhams. And the cinema's fifteen minutes away!",
-        "بْتِسَعْطَعَشْ دِرْهَمْ. وْالسِّينَمَا خَمْسْطَعَشْ دَقِيقَة!"
+        "بْتِسَعْطَعَشْ دِرْهَمْ. وْالسِّينَمَا خَمْسْطَعَشْ دِقِيقَة!"
       ],
       [
         "B",
@@ -1182,11 +1182,11 @@
       ],
       [
         "دقيقة",
-        "dagīga",
+        "digīga",
         "a minute",
         "دقيقة",
-        "3 to 10 take the plural (khams dagāyig); 11 and up the singular (ʿishrīn dagīga)",
-        "دَقِيقَة"
+        "3 to 10 take the plural (khams digāyig); 11 and up the singular (ʿishrīn digīga)",
+        "دِقِيقَة"
       ],
       [
         "إحدعش",
@@ -1209,7 +1209,7 @@
         "khamsṭaʿash",
         "fifteen (١٥)",
         "خمسة عشر",
-        "khamsṭaʿash dagīga = fifteen minutes (singular noun)",
+        "khamsṭaʿash digīga = fifteen minutes (singular noun)",
         "خَمْسْطَعَشْ"
       ],
       [
