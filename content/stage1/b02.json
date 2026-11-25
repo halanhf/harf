@@ -62,7 +62,7 @@
       ["A", "منو هذيلا في الصورة؟", "minu hādhēla fi ṣ-ṣūra?", "Who are these people in the photo?", "مِنُو هٰذَيْلَا فِي الصُّورَة؟"],
       ["B", "هذيلا ربعي في الشغل", "hādhēla rabʿi fi sh-shughul", "These are my mates from work.", "هٰذَيْلَا رَبْعِي فِي الشُّغُلْ"],
       ["A", "ما شاء الله! كلهم إماراتيين؟", "mā shāʼ allāh! killhum imārātiyyīn?", "Nice! Are they all Emirati?", "مَا شَاءْ اللّٰهْ! كِلّْهُمْ إِمَارَاتِيِّينْ؟"],
-      ["B", "لا، في إماراتيين وهنود، وأنا بريطاني", "la, fi imārātiyyīn w hnūd, w ana brīṭāni", "No, there are Emiratis and Indians, and I'm British.", "لَا، فِي إِمَارَاتِيِّينْ وْهْنُودْ، وْأَنَا بْرِيطَانِي"],
+      ["B", "لا، في إماراتيين وهنود، وأنا بريطاني", "la, fī imārātiyyīn w hnūd, w ana brīṭāni", "No, there are Emiratis and Indians, and I'm British.", "لَا، فِي إِمَارَاتِيِّينْ وْهْنُودْ، وْأَنَا بْرِيطَانِي"],
       ["A", "زين. والشباب طيبين؟", "zēn. w ish-shabāb ṭayybīn?", "Good. And are the guys nice?", "زَيْنْ. وْالشَّبَابْ طَيّْبِينْ؟"],
       ["B", "إي، كلهم زينين، بس مشغولين", "ī, killhum zēnīn, bas mashghūlīn", "Yes, they're all good guys, but busy.", "إِي، كِلّْهُمْ زَيْنِينْ، بَسْ مَشْغُولِينْ"]
     ],
@@ -113,7 +113,7 @@
     "dialogue": [
       ["A", "شو رأيك في هالكندورة؟", "shu raʼyak fi hal-kandūra?", "What do you think of this kandura?", "شُو رَأْيَكْ فِي هَالْكَنْدُورَة؟"],
       ["B", "حلوة، بس يعني، كل هالشي أبيض!", "ḥilwa, bas yaʿni, kill hash-shay abyaẓ!", "It's nice, but, I mean, all this stuff is white!", "حِلْوَة، بَسْ يَعْنِي، كِلّْ هَالشَّيْ أَبْيَضْ!"],
-      ["A", "لا، هالأيام في ألوان وايد", "la, hal-ayyām fi alwān wāyid", "No, these days there are lots of colours.", "لَا، هَالْأَيَّامْ فِي أَلْوَانْ وَايِدْ"],
+      ["A", "لا، هالأيام في ألوان وايد", "la, hal-ayyām fī alwān wāyid", "No, these days there are lots of colours.", "لَا، هَالْأَيَّامْ فِي أَلْوَانْ وَايِدْ"],
       ["B", "والله؟ وهالمرة شو تبي؟", "wallāh? w hal-marra shu tabi?", "Really? So what do you want this time?", "وَاللّٰهْ؟ وْهَالْمَرَّة شُو تَبِي؟"],
       ["A", "هالسنة أبي شي ثاني، لون ثاني", "has-sana abi shay thāni, lōn thāni", "This year I want something different, another colour.", "هَالسَّنَة أَبِي شَيْ ثَانِي، لَوْنْ ثَانِي"]
     ],
