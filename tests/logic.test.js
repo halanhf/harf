@@ -1545,9 +1545,10 @@ test("speech check: a screen reader is told which words were caught",()=>{
   }
 });
 // six recognise cards due in a fixed order, the real scheduler and day counters, and a clock the test moves
-function reviewSix(){
-  const sc=loadScreens({harakat:"never"}), {env,t}=sc, ids=["x.0","x.1","x.2","x.3","x.4","x.5"], ar=["هلا","زين","شاي","قهوة","ماي","خبز"];
+function reviewSix(own){ // own: the first card is a word the learner added (this id)
+  const sc=loadScreens({harakat:"never"}), {env,t}=sc, ids=[own||"x.0","x.1","x.2","x.3","x.4","x.5"], ar=["هلا","زين","شاي","قهوة","ماي","خبز"];
   ids.forEach((id,i)=>{ sc.items[id]={id,unit:"x"+i,stage:1,ar:ar[i],tr:"t",en:"e"+i}; t.S().cards[id]=Object.assign(sc.card(0,0,0),{d:i+1}); });
+  if(own){ sc.items[own]={id:own,unit:"custom",stage:"custom",ar:ar[0],tr:"t",en:"e0"}; t.S().custom=[{id:own,ar:ar[0],tr:"t",en:"e0"}]; }
   // minute-aligned, so a card that is saved and read back (minutes in storage) keeps the same due time
   vm.runInContext("globalThis.__now=Math.floor(Date.now()/60000)*60000; Date.now=()=>globalThis.__now;"+cut("function touchDay","const shownStreak"),env);
   env.sched=(c,g,n)=>L.schedule(c,g,n,0.9); env.startReview(null); const b=()=>sc.spy.view.body;
@@ -1604,4 +1605,59 @@ test("undo: from the waiting screen the card comes back and the wait is cancelle
   env.startReview(null); press(byText(sc.spy.view.body,"Show answer")); press(walk(sc.spy.view.body).find(n=>txt(n).startsWith("Forgot")&&n.tag==="button"));
   assert.ok(/comes? back in/.test(texts(sc.spy.view.body).join(" "))); press(byText(sc.spy.view.body,"Undo last grade"));
   assert.equal(full(),before); assert.ok(byText(sc.spy.view.body,"Show answer")); assert.equal(t.timers.size,0);
+});
+const WORD={id:"cabc1",ar:"قهوة",tr:"gahwa",en:"coffee"}, wcard=()=>[1,5,2,GT+9999,0,GT+60,-1,1];
+test("delete my own word: a second tap deletes the word and its card; the first tap wears off; course cards have no such button",()=>{
+  const sc=loadScreens({harakat:"never"}), {env,t}=sc; t.S().custom=[{...WORD}]; sc.items.cabc1=Object.assign({unit:"custom",stage:"custom"},WORD);
+  t.S().cards={cabc1:sc.card(0,0,0),"u1.0":Object.assign(sc.card(0,0,0),{d:5})}; env.startReview(null); const b=()=>sc.spy.view.body;
+  const del=byText(b(),"Delete this word"); press(del); assert.equal(txt(del),"Tap again to delete"); assert.equal(t.S().custom.length,1);
+  t.runTimers(); assert.equal(txt(del),"Delete this word"); press(del); press(del);
+  assert.deepEqual([...t.S().custom],[]); assert.equal(t.S().cards.cabc1,undefined); assert.ok(t.S().deleted.cabc1>0);
+  assert.ok(!byText(b(),"Delete this word"),"the next card is a course card");
+});
+test("delete my own word: the deletion wins every merge, a later grade elsewhere included; junk is dropped; a reset clears only what came before it",()=>{
+  const T=GNOW, here={updatedAt:T,deleted:{cabc1:T},custom:[],cards:{}}, there={updatedAt:T+9000,custom:[WORD],cards:{cabc1:wcard()}};
+  for(const m of [L.mergeProgress(here,there),L.mergeProgress(there,here)]){ assert.deepEqual([...m.custom],[]); assert.equal(m.cards.cabc1,undefined); assert.equal(m.deleted.cabc1,T); }
+  assert.deepEqual({...L.cleanSaved({deleted:{"u1.0":5,cabc1:"x",cdef2:7,m:{}}},now,"2026-11-14").deleted},{cdef2:7});
+  const sp=L.splitProgress(here); assert.equal(sp.meta.deleted.cabc1,T); assert.equal(L.joinProgress(sp.meta,sp.shards).deleted.cabc1,T);
+  for(const [R,kept] of [[T+60000,false],[T-60000,true]]){ const reset={updatedAt:R,resetAt:R,resetDay:GDAY,cards:{}}; const m=L.mergeProgress(here,reset); assert.equal(!!(m.deleted||{}).cabc1,kept,String(R)); }
+  for(const o of [{},{built:true}]){ const u=loadUi(o); u.setS({deleted:{cabc1:T}}); assert.equal(u.serialize().deleted.cabc1,T); }
+});
+test("delete my own word: the other device loses it through github and through the account",async()=>{
+  const hub=fakeHub(), a=dev(hub,prog({custom:[WORD],cards:{cabc1:wcard()}})), b=dev(hub,prog({custom:[WORD],cards:{cabc1:wcard()}}));
+  await a.sync(); await b.sync(); a.local=L.mergeProgress(a.local,{updatedAt:GNOW+5,deleted:{cabc1:GNOW},custom:[],cards:{}}); await a.sync(); await b.sync();
+  assert.deepEqual([...b.local.custom],[]); assert.equal(b.local.cards.cabc1,undefined);
+  const db=fakeDb(), one=loadUi(), two=loadUi(); one.use(db,"u1"); two.use(db,"u1");
+  one.setS(saved({custom:[WORD],cards:{cabc1:wcard()}})); await one.pushRemote(); await two.pushRemote(); assert.equal(two.S().custom.length,1);
+  const p=two.serialize(); p.custom=[]; delete p.cards.cabc1; p.deleted={cabc1:Date.now()}; two.setS(p); await two.pushRemote(); await one.pushRemote();
+  assert.deepEqual([...one.S().custom],[]); assert.equal(one.S().cards.cabc1,undefined);
+});
+test("delete my own word: a marker removes only an added word, never a course card, even from a hand-edited backup; an old copy without the field still merges",()=>{
+  const course={"u1.0":wcard(),"s1u1.s0":wcard(),"m.0":wcard(),"g1x":wcard()}, bad={updatedAt:GNOW+9,deleted:{"u1.0":GNOW,"m.0":GNOW,"s1u1.s0":GNOW,"g1x":GNOW,"__proto__":GNOW,"c":-5,"cq":0,"cz":"9"},custom:[],cards:{}};
+  const clean=L.cleanSaved(bad,GNOW+99,GDAY); assert.deepEqual({...clean.deleted},{});
+  for(const m of [L.mergeProgress({updatedAt:GNOW,cards:course},bad),L.mergeProgress(bad,{updatedAt:GNOW,cards:course})]){ assert.deepEqual(Object.keys(m.cards).sort(),Object.keys(course).sort()); assert.deepEqual({...m.deleted},{}); }
+  const u=loadUi(); u.setS(Object.assign({},bad,{cards:course})); assert.deepEqual(Object.keys(u.serialize().cards).sort(),Object.keys(course).sort()); assert.deepEqual({...u.serialize().deleted},{});
+  const old={updatedAt:GNOW,custom:[WORD],cards:{cabc1:wcard()}}, m1=L.mergeProgress(old,{updatedAt:GNOW-5,cards:{}}), m2=L.mergeProgress({updatedAt:GNOW-5,cards:{}},old);
+  for(const m of [m1,m2]){ assert.equal(m.custom.length,1); assert.ok(m.cards.cabc1); assert.deepEqual({...(m.deleted||{})},{}); }
+  const uo=loadUi(); uo.setS(old); assert.deepEqual({...uo.S().deleted},{}); assert.equal(uo.S().custom.length,1);
+});
+test("delete my own word: the later time wins per key, and a word added again under a new id is untouched",()=>{
+  const a={updatedAt:GNOW,deleted:{cabc1:100,cold:9},cards:{}}, b={updatedAt:GNOW+1,deleted:{cabc1:300,cxyz:5},custom:[{...WORD,id:"cnew9"}],cards:{cnew9:wcard()}};
+  for(const m of [L.mergeProgress(a,b),L.mergeProgress(b,a)]){ assert.deepEqual({...m.deleted},{cabc1:300,cold:9,cxyz:5}); assert.equal(m.custom.length,1); assert.ok(m.cards.cnew9); }
+  const m=L.mergeProgress(a,{updatedAt:GNOW,resetAt:GNOW+50,resetDay:GDAY,cards:{}}); assert.deepEqual({...m.deleted},{}); // before the reset
+  const m2=L.mergeProgress({updatedAt:GNOW,deleted:{cabc1:GNOW+80},cards:{}},{updatedAt:GNOW,resetAt:GNOW+50,resetDay:GDAY,cards:{}}); assert.deepEqual({...m2.deleted},{cabc1:GNOW+80}); // after it
+});
+test("delete my own word: a card you just forgot and then delete cannot be brought back by undo, and the next card has no undo button",()=>{
+  const r=reviewSix("cabc1"), S=()=>r.t.S(); r.grade("Forgot"); r.at(61000);
+  for(const id of ["x.1","x.2","x.3"]){ assert.equal(r.shown(),id); press(byText(r.b(),"Hide it from reviews")); }
+  assert.equal(r.shown(),"cabc1"); assert.ok(byText(r.b(),"Undo last grade"),"the snapshot of the word's grade is still offered");
+  const del=byText(r.b(),"Delete this word"); press(del); press(del);
+  assert.equal(S().cards.cabc1,undefined); assert.deepEqual([...S().custom],[]); assert.equal(r.shown(),"x.4"); assert.ok(!byText(r.b(),"Undo last grade"),"snapshot dropped");
+  r.grade("Got it"); for(let i=0;i<3;i++) assert.notEqual(r.shown(),"cabc1"); assert.equal(S().cards.cabc1,undefined);
+  assert.ok(!byText(r.b(),"Delete this word"),"a course card has no such button");
+});
+test("delete my own word: joining the account copy drops a stale shard card of a deleted word, and leaves a copy without the field alone",()=>{
+  const {meta,shards}=L.splitProgress({updatedAt:5,cards:{cabc1:wcard(),"u1.0":wcard()},custom:[WORD]}); meta.deleted={cabc1:9,"u1.0":9};
+  const j=L.joinProgress(meta,shards); assert.deepEqual(Object.keys(j.cards),["u1.0"]); assert.deepEqual([...j.custom],[]); assert.deepEqual({...j.deleted},{cabc1:9});
+  assert.equal("deleted" in L.joinProgress({updatedAt:5},{}),false);
 });

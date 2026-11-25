@@ -2115,11 +2115,13 @@ const validCard=a=>Array.isArray(a)&&(a.length===5||a.length===8)&&a.every(x=>ty
 const validGen=u=>!!u&&typeof u.id==="string"&&/^g[0-9a-z]+$/.test(u.id)&&[2,3,4,5,6].includes(u.stage)&&!validateUnit(u).length;
 // make a saved copy from outside (backup file, account, another tab) safe to merge: wrong shapes become empty,
 // broken cards are dropped, and a "start over" marker can't be in the future (that would wipe work done after it)
+// words you deleted: {id of an added word: ms}. only an added word's id can be here, so a marker can never remove a course card
+const tombs=x=>{ const r={}; if(x&&typeof x==="object"&&!Array.isArray(x)) for(const [k,v] of Object.entries(x)) if(/^c[0-9a-z]+$/.test(k)&&typeof v==="number"&&isFinite(v)&&v>0) r[k]=v; return r; };
 function cleanSaved(raw,now,todayKey){
   const o=raw&&typeof raw==="object"&&!Array.isArray(raw)?Object.assign({},raw):{};
   const cards={}; if(o.cards&&typeof o.cards==="object") for(const [k,a] of Object.entries(o.cards)) if(validCard(a)) cards[k]=a; o.cards=cards;
   for(const f of ["unitsDone","suspended","log","rp","seen","read"]) if(!o[f]||typeof o[f]!=="object"||Array.isArray(o[f])) o[f]={};
-  if(!Array.isArray(o.custom)) o.custom=[];
+  if(!Array.isArray(o.custom)) o.custom=[]; o.deleted=tombs(o.deleted);
   // day fields must be real dates: a junk one sorts after every date, so it would win every merge and stop the streak counting
   for(const f of ["lastDay","freezeUsed","msaDay"]) if(!(typeof o[f]==="string"&&(o[f]===""||isFinite(dayNum(o[f]))))) o[f]="";
   if(!o.session||typeof o.session!=="object"||!(typeof o.session.day==="string"&&isFinite(dayNum(o.session.day)))) o.session={day:"",done:{}};
@@ -2139,6 +2141,7 @@ function afterReset(o,R,RD,behind){
   o.cards=pick(o.cards,(k,c)=>lastReview(c)>=rMin);
   o.suspended=pick(o.suspended,(k,v)=>Math.abs(v)>=R);
   o.custom=(Array.isArray(o.custom)?o.custom:[]).filter(c=>c&&(parseInt(String(c.id).slice(1,-3),36)||0)>=R);
+  o.deleted=pick(tombs(o.deleted),(k,v)=>v>=R);
   for(const f of ["unitsDone","rp","read"]) o[f]=pick(o[f],(k,v)=>!old(v));
   o.log=pick(o.log,k=>!old(k));
   if(old(o.lastDay)){ o.streak=0; o.freezes=0; o.reviewsToday=0; o.newToday=0; o.lastDay=""; o.freezeUsed=""; }
@@ -2172,6 +2175,9 @@ function mergeProgress(a,b){
   out.suspended={}; for(const k of keys(a.suspended,b.suspended)){ const x=+(a.suspended||{})[k]||0, y=+(b.suspended||{})[k]||0; out.suspended[k]=Math.abs(x)>=Math.abs(y)?x:y; }
   const arr=x=>Array.isArray(x)?x:[];
   const byId=new Map(); [...arr(older.custom),...arr(newer.custom)].forEach(c=>{ if(c&&c.id) byId.set(c.id,c); }); out.custom=[...byId.values()];
+  // a deleted word stays deleted: the later time per id, then the word and its card go, whichever copy graded it last
+  out.deleted=tombs({}); for(const k of keys(tombs(a.deleted),tombs(b.deleted))) out.deleted[k]=Math.max(tombs(a.deleted)[k]||0,tombs(b.deleted)[k]||0);
+  out.cards=Object.fromEntries(Object.entries(out.cards).filter(([k])=>!out.deleted[k])); out.custom=out.custom.filter(c=>!out.deleted[c.id]);
   out.log={}; for(const k of keys(a.log,b.log)) out.log[k]=Math.max(+(a.log||{})[k]||0,+(b.log||{})[k]||0);
   for(const f of ["rp","read"]){ out[f]={}; for(const k of keys(a[f],b[f])){ const x=(a[f]||{})[k]||"", y=(b[f]||{})[k]||""; out[f][k]=x>y?x:y; } }
   out.seen=Object.assign({},a.seen,b.seen);
@@ -2207,7 +2213,10 @@ function joinProgress(meta,shards){
   const o=Object.assign({},meta||{}); const cards=Object.assign({},o.cards&&typeof o.cards==="object"?o.cards:{});
   for(const n of SHARDS){ const sh=shards&&shards[n]; if(!sh||typeof sh!=="object") continue;
     for(const [k,c] of Object.entries(sh)) cards[k]=cards[k]?mergeProgress({cards:{[k]:cards[k]}},{cards:{[k]:c}}).cards[k]:c; }
-  o.cards=cards; return o;
+  o.cards=cards;
+  if(o.deleted!==undefined){ o.deleted=tombs(o.deleted); for(const k of Object.keys(o.deleted)) delete o.cards[k]; // a shard that was not rewritten may still hold a deleted word's card
+    if(Array.isArray(o.custom)) o.custom=o.custom.filter(c=>!(c&&o.deleted[c.id])); }
+  return o;
 }
 // github sync decisions: what an answer means, the status line, when to run, what to fetch and send (no network here)
 const GH_META="progress.json", GH_GAP=60000;
@@ -2357,7 +2366,7 @@ document.documentElement.lang=document.documentElement.lang||"en";
 
 // ===== state =====
 const KEY="harf-gulf-v1";
-const blank=()=>({cards:{},unitsDone:{},suspended:{},custom:[],gen:[],streak:0,lastDay:"",reviewsToday:0,newToday:0,
+const blank=()=>({cards:{},unitsDone:{},suspended:{},custom:[],deleted:{},gen:[],streak:0,lastDay:"",reviewsToday:0,newToday:0,
   session:{day:"",done:{}},settings:{translit:"auto",harakat:"auto",newPerDay:1,retention:0.9,gender:"",autoplay:true,voice:"auto"},
   talks:0,freezes:0,freezeUsed:"",log:{},rp:{},seen:{},read:{},msaDay:"",resetAt:0,resetDay:"",updatedAt:0});
 const clone=x=>JSON.parse(JSON.stringify(x==null?{}:x));
@@ -2370,7 +2379,7 @@ function serialize(){ const o=Object.assign({},S,{cards:{}}); delete o.gen; for(
 // remote data is frozen by the platform, so everything is deep-copied before use
 function hydrate(raw){ const o=clone(raw); const b=blank(); const s=Object.assign(b,o);
   s.settings=Object.assign(blank().settings,o.settings||{}); s.session=Object.assign({day:"",done:{}},o.session||{}); s.session.done=Object.assign({},s.session.done);
-  for(const f of ["unitsDone","suspended","log","rp","seen","read"]) if(!s[f]||typeof s[f]!=="object"||Array.isArray(s[f])) s[f]={};
+  for(const f of ["unitsDone","suspended","log","rp","seen","read","deleted"]) if(!s[f]||typeof s[f]!=="object"||Array.isArray(s[f])) s[f]={}; s.deleted=tombs(s.deleted);
   const st=s.settings, r=+st.retention; st.retention=r>=0.7&&r<=0.99?r:0.9; st.newPerDay=+st.newPerDay===2?2:1; st.autoplay=st.autoplay!==false;
   if(!["auto","always","tap","never"].includes(st.translit)) st.translit="auto"; if(!["auto","always","never"].includes(st.harakat)) st.harakat="auto"; if(!["","m","f"].includes(st.gender)) st.gender=""; if(!["auto","device","claude"].includes(st.voice)) st.voice="auto";
   for(const f of ["streak","freezes","reviewsToday","newToday","talks","resetAt","updatedAt"]) s[f]=isFinite(+s[f])?+s[f]:0;
@@ -3098,6 +3107,10 @@ function startReview(onDone){
     S.cards[u.id]=u.card; Object.assign(S,u.day); if(u.logBefore) S.log=u.logBefore; else if(u.logVal===undefined) delete S.log[u.logKey]; else S.log[u.logKey]=u.logVal;
     S.session.day=u.sessionDay; if(u.review===undefined) delete S.session.done.review; else S.session.done.review=u.review; save();
     queue=queue.filter(x=>x!==u.id); back.delete(u.id); if(cur&&cur!==u.id) queue.unshift(cur); queue.unshift(u.id); n=u.n; next(); };
+  // a second tap within 4 s deletes a word you added; the card goes from the queue, and so does an undo that would bring it back
+  const delBtn=wid=>{ let armed=0; const b=el("button",{className:"btn small ghost",type:"button",textContent:"Delete this word"});
+    b.onclick=()=>{ if(!armed){ b.textContent="Tap again to delete"; armed=setTimeout(()=>{ armed=0; b.textContent="Delete this word"; },4000); return; }
+        clearTimeout(armed); armed=0; deleteCustom(wid); queue=queue.filter(x=>x!==wid); back.delete(wid); if(undo&&undo.id===wid) undo=null; next(); }; return b; };
   const next=()=>{
     clearTimeout(waitTimer); if(!f.alive()) return; f.body.textContent=""; keyHandler=null; topUp();
     if(!queue.length){
@@ -3144,7 +3157,7 @@ function startReview(onDone){
     if(it.note&&mode!=="produce") ans.append(el("p",{className:"tag",textContent:it.note}));
     ap(ans,shiftChip(it),el("div",{className:"row center"},mode==="produce"||mode==="build"?[playBtn(it.ar),slowBtn(it.ar)]:null,!it.sentence&&!it.msaTrack?nativeLink(it):null),
       isLeech(card)?el("p",{},el("span",{className:"chip",textContent:"Tricky card: get a memory aid in Progress"})):null,
-      el("details",{className:"more"},el("summary",{textContent:"Problem with this card?"}),el("div",{className:"row"},el("button",{className:"btn small ghost",type:"button",textContent:"Hide it from reviews",onclick:()=>{ S.suspended[id]=Date.now(); save(); next(); }}))));
+      el("details",{className:"more"},el("summary",{textContent:"Problem with this card?"}),el("div",{className:"row"},el("button",{className:"btn small ghost",type:"button",textContent:"Hide it from reviews",onclick:()=>{ S.suspended[id]=Date.now(); save(); next(); }}),it.unit==="custom"?delBtn(id):null)));
     const grade=g=>{ const logKey=today(), logVal=S.log[logKey], logBefore=Object.keys(S.log).length>=400?Object.assign({},S.log):null; // the log drops its oldest day past 400
       const snap={id,n:nShown,card:Object.assign({},S.cards[id]),day:{reviewsToday:S.reviewsToday,newToday:S.newToday,streak:S.streak,freezes:S.freezes,freezeUsed:S.freezeUsed,lastDay:S.lastDay},logKey,logVal,logBefore,sessionDay:S.session.day,review:S.session.done.review};
       touchDay(); S.cards[id]=sched(S.cards[id],g,Date.now()); S.reviewsToday++; logActivity(1); save(); if(onDone) S.session.done.review=1;
@@ -3162,6 +3175,9 @@ function startReview(onDone){
   };
   next();
 }
+// delete a word you added: its card and the word go, and a marker keeps the other devices from bringing it back
+function deleteCustom(id){ if(!/^c[0-9a-z]+$/.test(id)||!S.custom.some(c=>c.id===id)) return;
+  S.custom=S.custom.filter(c=>c.id!==id); delete S.cards[id]; delete ITEMS[id]; delete ITEM_UNIT[id]; S.deleted[id]=Date.now(); save(); }
 
 // ===== hands-free audio drill (pimsleur-style anticipation: prompt, pause to answer out loud, then the answer) =====
 function audioDrill(){
