@@ -1,3 +1,2 @@
 # rows whose vowelled form can't reproduce the transliteration under tools/harakat_check.py's reading rules.
 # one per line: <unit id> <items[i]|dialogue[i]> | <reason a reviewer can check>. it exempts only the reading check.
-s2u031 dialogue[3] | the loanword كاميرا is spelled with ي but said with a short i (kāmira), so the marks can only read ī there
