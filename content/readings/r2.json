@@ -194,7 +194,7 @@
     "Al Waha restaurant for grills and juices"
    ],
    [
-    "وجبة الغداء: دجاج مَشْوِيّ مع أرز وسلطة طَازِجَة وَحَسَاء",
+    "وجبة الغداء: دجاج مَشْوِيّ مع أرز وسلطة طَازَجَة وَحَسَاء",
     "Lunch meal: grilled chicken with rice, fresh salad and soup"
    ],
    [
@@ -587,11 +587,11 @@
   "id": "r2-08",
   "level": 2,
   "stage": 2,
-  "title": "Restaurant receipt",
+  "title": "Restaurant bill",
   "lines": [
    [
     "فاتورة رقم ٤٥٧ — الطاولة رقم ٧",
-    "Invoice no. 457 — table no. 7"
+    "Bill no. 457 — table no. 7"
    ],
    [
     "الفرع: المدينة — اليوم: الأحد",
@@ -643,7 +643,7 @@
    ],
    [
     "يرجى الِاحْتِفَاظ بالفاتورة.",
-    "Please keep the receipt."
+    "Please keep the bill."
    ],
    [
     "الطلب رقم ١٢ — عَدَد الضُّيُوف: ١",
@@ -1114,8 +1114,8 @@
     "Required documents: a copy of the passport and a passport photo."
    ],
    [
-    "للاستعلامات: الاستقبال في الفرع من الأحد إلى الخميس.",
-    "For enquiries: reception at the branch, Sunday to Thursday."
+    "للاستعلامات: الاستقبال في الفرع من الاثنين إلى الجمعة.",
+    "For enquiries: reception at the branch, Monday to Friday."
    ],
    [
     "ساعات العمل من ٨ صباحًا إلى ٢ ظهرًا.",

@@ -786,7 +786,7 @@
   "stage": 2,
   "title": "The module I'm doing now",
   "goal": "Tell Fahad about your studies, your module and your next exam",
-  "tip": "illi also joins a noun to a phrase with no verb: il-māda illi ʿindi l-ḥīn 'the module I've got now', il-imtiḥān illi yōm il-ithnēn 'the exam on Monday'. dirāsa is 'studying, studies': shlōn id-dirāsa? 'how are your studies going?'",
+  "tip": "illi also joins a noun to a phrase with no verb: il-mādda illi ʿindi l-ḥīn 'the module I've got now', il-imtiḥān illi yōm il-ithnēn 'the exam on Monday'. dirāsa is 'studying, studies': shlōn id-dirāsa? 'how are your studies going?'",
   "grammar": "illi + a phrase with no verb",
   "dialogue": [
    [
@@ -813,9 +813,9 @@
    [
     "B",
     "هندسة. والمادة اللي عندي الحين صعبة",
-    "handasa. w il-māda illi ʿindi l-ḥīn ṣaʿba",
+    "handasa. w il-mādda illi ʿindi l-ḥīn ṣaʿba",
     "Engineering. And the module I've got now is hard.",
-    "هَنْدَسَة. وْالْمَادَة اللِّي عِنْدِي الْحِينْ صَعْبَة"
+    "هَنْدَسَة. وْالْمَادَّة اللِّي عِنْدِي الْحِينْ صَعْبَة"
    ],
    [
     "A",
@@ -858,11 +858,11 @@
    ],
    [
     "المادة",
-    "il-māda",
+    "il-mādda",
     "the module, the (school) subject",
     "المادة",
     "",
-    "الْمَادَة"
+    "الْمَادَّة"
    ],
    [
     "الامتحان اللي",

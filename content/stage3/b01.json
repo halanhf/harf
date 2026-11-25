@@ -13,7 +13,7 @@
    ["B", "والله؟ زين، أنا ياي بالمترو. ربع ساعة بس", "wallāh? zēn, ana yāy bil-mitrō. rubʿ sāʿa bas", "Really? OK, I'm coming on the metro. Just a quarter of an hour."],
    ["A", "ماشي. نحن نازلين تحت عند المطاعم", "māshi. niḥin nāzlīn taḥt ʿind il-maṭāʿim", "OK. We're heading downstairs, to the restaurants."],
    ["B", "زين عيل. وطيارته الساعة كم؟", "zēn ʿayal. w ṭayyārtah is-sāʿa cham?", "Fine then. And what time's his flight?"],
-   ["A", "الساعة تسع. أول ما توصل، دق علي", "is-sāʿa tisʿ. awwal ma tōṣal, digg ʿalay", "At nine. Ring me as soon as you get here."]
+   ["A", "الساعة تسع. أول ما توصل، دق علي", "is-sāʿa tisiʿ. awwal ma tōṣal, digg ʿalay", "At nine. Ring me as soon as you get here."]
   ],
   "items": [
    ["أنا طالع", "ana ṭāliʿ", "I'm leaving, I'm heading out (said by a man)", "أنا خارج", "a woman says: ana ṭālʿa (أنا طالعة); ana ṭāliʿ il-ḥīn = I'm just leaving"],
@@ -24,7 +24,7 @@
    ["ربع ساعة", "rubʿ sāʿa", "a quarter of an hour", "ربع ساعة", "half an hour: nuṣṣ sāʿa (نص ساعة)"],
    ["يلا بسرعة", "yalla b-surʿa", "hurry up! quick!", "هيا بسرعة", ""],
    ["طيارته", "ṭayyārtah", "his flight, his plane", "طائرته", "my flight: ṭayyārti (طيارتي); the plane: iṭ-ṭayyāra (الطيارة)"],
-   ["الساعة تسع", "is-sāʿa tisʿ", "nine o'clock, at nine", "الساعة التاسعة", "counting: tisʿa (تسعة); at seven: is-sāʿa sabʿ"]
+   ["الساعة تسع", "is-sāʿa tisiʿ", "nine o'clock, at nine", "الساعة التاسعة", "counting: tisʿa (تسعة); at seven: is-sāʿa sabʿ"]
   ]
  },
  {
@@ -69,7 +69,7 @@
    ["A", "لا، مب عارف. بس شايف هذاك الريّال؟", "la, mub ʿārif. bas shāyif hādhāk ir-rayyāl?", "No, I don't. But do you see that man?"],
    ["B", "هيه، شايفه. منو هو؟", "hē, shāyfah. minu huwa?", "Yes, I can see him. Who is he?"],
    ["A", "هذا الدكتور اليديد حقنا. هو عارف كل شي", "hādha d-daktōr il-yidīd ḥaggna. huwa ʿārif kill shay", "That's our new lecturer. He knows everything."],
-   ["B", "زين، بسأله. بس ترا أنا مب فاهم المادة", "zēn, basʼalah. bas tara ana mub fāhim il-māda", "OK, I'll ask him. But mind you, I don't understand the module."],
+   ["B", "زين، بسأله. بس ترا أنا مب فاهم المادة", "zēn, basʼalah. bas tara ana mub fāhim il-mādda", "OK, I'll ask him. But mind you, I don't understand the module."],
    ["A", "عادي، محد فاهم شي! حتى أنا", "ʿādi, maḥḥad fāhim shay! ḥatta ana", "Don't worry, nobody understands a thing! Me included."],
    ["B", "عيل خلنا نذاكر ويا بعض", "ʿayal khallna ndhākir wiyya baʿaẓ", "Then let's revise together."],
    ["A", "فكرة حلوة. بس انت عارف، أنا كسلان!", "fikra ḥilwa. bas inta ʿārif, ana kaslān!", "Good idea. But you know I'm lazy!"]
@@ -110,7 +110,7 @@
    ["شبعان", "shabʿān", "full (after eating) (a man)", "شبعان", "a woman: shabʿāna (شبعانة)"],
    ["شو مسوي؟", "shu msawwi?", "how have you done? what have you been up to? (to a man)", "ماذا فعلت؟", "to a woman: shu msawwya? (شو مسوية؟)"],
    ["ناجح", "nājiḥ", "(has) passed; successful (a man)", "ناجح", "a woman: nājḥa (ناجحة)"],
-   ["في كل المواد", "fi kill il-mawādd", "in all the modules, in every subject", "في كل المواد", "one module: il-māda (المادة)"],
+   ["في كل المواد", "fi kill il-mawādd", "in all the modules, in every subject", "في كل المواد", "one module: il-mādda (المادة)"],
    ["العشا جاهز", "il-ʿasha jāhiz", "dinner's ready", "العشاء جاهز", "lunch is ready: il-ghada jāhiz (الغدا جاهز)"],
    ["الأهل", "il-ahal", "the family, the people at home", "الأهل", "my family: ahli (أهلي)"]
   ]
@@ -184,7 +184,7 @@
   "dialogue": [
    ["A", "وينك البارحة؟ دقيت عليك ثلاث مرات!", "wēnak il-bārḥa? daggēt ʿalēk thalāth marrāt!", "Where were you last night? I rang you three times!"],
    ["B", "آسف، كنت قاعد أسوق. ما سمعت التلفون", "āsif, kint gāʿid asūg. ma simaʿt it-tilifōn", "Sorry, I was driving. I didn't hear the phone."],
-   ["A", "وبعدين؟ دقيت مرة ثانية الساعة تسع", "w baʿdēn? daggēt marra thānya s-sāʿa tisʿ", "And after that? I rang again at nine."],
+   ["A", "وبعدين؟ دقيت مرة ثانية الساعة تسع", "w baʿdēn? daggēt marra thānya s-sāʿa tisiʿ", "And after that? I rang again at nine."],
    ["B", "الساعة تسع كنا قاعدين ناكل في المطعم", "is-sāʿa tisiʿ kinna gāʿdīn nākil fi l-maṭʿam", "At nine we were eating at the restaurant."],
    ["A", "ويا منو؟ ليش ما قلت لي؟", "wiyya minu? lēsh ma gilt-li?", "Who with? Why didn't you tell me?"],
    ["B", "ويا الجماعة من الشغل. وبعدها كنت نايم", "wiyya l-jamāʿa min ish-shughul. w baʿd-ha kint nāyim", "With the people from work. And after that I was asleep."],
@@ -267,7 +267,7 @@
   "stage": 3,
   "title": "I was going to call you: kint b- + verb",
   "goal": "Turn up late to dinner with Sēf and Fahad, apologise to the group and say what you were going to do",
-  "tip": "kān + b- + a present verb is 'was going to, was about to': kint bagūl-lak 'I was going to tell you', kinna binrūḥ 'we were about to go', kān biyrūḥ 'he was about to go'. kān agrees, and so does the verb after b-. Kuwaitis say this too, and also use rāḥ: kint rāḥ agūl-lak.",
+  "tip": "kān + b- + a present verb is 'was going to, was about to': kint bagūl-lak 'I was going to tell you', kinna binrūḥ 'we were about to go', kān biyrūḥ 'he was about to go'. kān agrees, and so does the verb after b-. Kuwaitis say this too, and also use rāḥ: kint rāḥ agūl-lik (-lak in the UAE).",
   "grammar": "'Was going to': kān + b- + present verb (kint bagūl-lak, kinna binrūḥ); Kuwait: kān rāḥ",
   "culture": "Saying il-ʿasha ʿala ḥsābi 'dinner's on me' is a friendly way to make up for keeping friends waiting. Friends often argue over who pays (khallha ʿalay! la wallāh!): an offer is usually turned down once before it's accepted, so expect to insist.",
   "dialogue": [
@@ -281,7 +281,7 @@
    ["B", "يلا نطلب عيل! والعشا على حسابي", "yalla niṭlub ʿayal! w il-ʿasha ʿala ḥsābi", "Let's order, then! And dinner's on me."]
   ],
   "items": [
-   ["كنت بقول لك", "kint bagūl-lak", "I was going to tell you (to a man)", "كنت سأقول لك", "to a woman: kint bagūl-lich (كنت بقول لج); Kuwait: kint rāḥ agūl-lak (كنت راح أقول لك)"],
+   ["كنت بقول لك", "kint bagūl-lak", "I was going to tell you (to a man)", "كنت سأقول لك", "to a woman: kint bagūl-lich (كنت بقول لج); Kuwait (to a man): kint rāḥ agūl-lik (كنت راح أقول لك)"],
    ["كنت بتصل فيكم", "kint battaṣil fīkum", "I was going to call you (to a group)", "كنت سأتصل بكم", "to one man: kint battaṣil fīk (كنت بتصل فيك); to one woman: kint battaṣil fīch (كنت بتصل فيج)"],
    ["كنا بنروح", "kinna binrūḥ", "we were about to go, we were going to go", "كنا سنذهب", "Kuwait: kinna rāḥ nrūḥ (كنا راح نروح)"],
    ["كان بيروح", "kān biyrūḥ", "he was about to go, he was going to go", "كان سيذهب", "she was about to go: kānat bitrūḥ (كانت بتروح)"],

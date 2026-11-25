@@ -621,7 +621,7 @@
 "title": "Brothers and sisters",
 "goal": "Ask Maryam about her brothers and sisters and talk about yours.",
 "grammar": "Possessive endings -ak, -ich, -ha; family plurals learned as words",
-"tip": "Family plurals are learned as words: akh (brother) → ikhwān, ukhut (sister) → khawāt. Endings go on as usual: ikhwāni (my brothers), khawātich (your sisters, to a woman), rayyilha (her husband). ʿindich = you have (to a woman).",
+"tip": "Family plurals are learned as words: akh (brother) → ikhwān, ukhut (sister) → khawāt. Endings go on as usual: ikhwāni (my brothers), khawātich (your sisters, to a woman), rayilha (her husband). ʿindich = you have (to a woman).",
 "dialogue": [
 [
 "B",
@@ -654,16 +654,16 @@
 [
 "B",
 "ويا ريلها وعيالها في لندن. وانتي، عندج خوات؟",
-"wiyya rayyilha w ʿyālha fi Landan. w inti, ʿindich khawāt?",
+"wiyya rayilha w ʿyālha fi Landan. w inti, ʿindich khawāt?",
 "With her husband and kids in London. And you, do you have sisters?",
-"وِيَّا رَيِّلْهَا وْعْيَالْهَا فِي لَنْدَنْ. وْاِنْتِي، عِنْدِجْ خَوَاتْ؟"
+"وِيَّا رَيِلْهَا وْعْيَالْهَا فِي لَنْدَنْ. وْاِنْتِي، عِنْدِجْ خَوَاتْ؟"
 ],
 [
 "A",
 "أخت وحدة. هي متزوجة، وريلها من الشارقة",
-"ukhut waḥda. hiya mitzawwja, w rayyilha min ish-Shārja",
+"ukhut waḥda. hiya mitzawwja, w rayilha min ish-Shārja",
 "One sister. She's married, and her husband is from Sharjah.",
-"أُخُتْ وَحْدَة. هِيَ مِتْزَوّْجَة، وْرَيِّلْهَا مِنْ الشَّارْقَة"
+"أُخُتْ وَحْدَة. هِيَ مِتْزَوّْجَة، وْرَيِلْهَا مِنْ الشَّارْقَة"
 ]
 ],
 "items": [
@@ -725,11 +725,11 @@
 ],
 [
 "ريلها",
-"rayyilha",
+"rayilha",
 "her husband",
 "زوجها",
-"lit. 'her man'; my husband (a woman says): rayyli",
-"رَيِّلْهَا"
+"lit. 'her man'; my husband (a woman says): rayli",
+"رَيِلْهَا"
 ]
 ]
 },
@@ -1151,9 +1151,9 @@
 [
 "B",
 "هذا ريل أختي، ويا عيالهم",
-"hādha rayyil ukhti, wiyya ʿyālhum",
+"hādha rayil ukhti, wiyya ʿyālhum",
 "That's my sister's husband, with their kids.",
-"هٰذَا رَيِّلْ أُخْتِي، وِيَّا عْيَالْهُمْ"
+"هٰذَا رَيِلْ أُخْتِي، وِيَّا عْيَالْهُمْ"
 ]
 ],
 "items": [
@@ -1207,11 +1207,11 @@
 ],
 [
 "ريل أختي",
-"rayyil ukhti",
+"rayil ukhti",
 "my sister's husband",
 "زوج أختي",
-"rayyāl (man) becomes rayyil before a noun or ending",
-"رَيِّلْ أُخْتِي"
+"rayil = husband; a different word from rayyāl (man)",
+"رَيِلْ أُخْتِي"
 ],
 [
 "عيالهم",
