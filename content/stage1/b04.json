@@ -11,37 +11,43 @@
     "A",
     "سالم، نتلاقى في المكتب يوم الثلاثاء، سطعش؟",
     "Sālim, nitlāga fi l-maktab yōm ith-thalātha, siṭṭaʿash?",
-    "Salim, shall we meet in the office on Tuesday, the sixteenth?"
+    "Salim, shall we meet in the office on Tuesday, the sixteenth?",
+    "سَالِمْ، نِتْلَاقَى فِي الْمَكْتَبْ يَوْمْ الثَّلَاثَاءْ، سِطَّعَشْ؟"
    ],
    [
     "B",
     "سطعش عندي موعد. يوم الأربعاء، سبعطعش؟",
     "siṭṭaʿash ʿindi mawʿid. yōm il-arbaʿa, sabaʿṭaʿash?",
-    "On the sixteenth I've got an appointment. Wednesday, the seventeenth?"
+    "On the sixteenth I've got an appointment. Wednesday, the seventeenth?",
+    "سِطَّعَشْ عِنْدِي مَوْعِدْ. يَوْمْ الْأَرْبَعَاءْ، سَبَعْطَعَشْ؟"
    ],
    [
     "A",
     "سبعطعش ما أقدر. ثمنطعش يناسبك؟",
     "sabaʿṭaʿash ma agdar. thamanṭaʿash ynāsbak?",
-    "The seventeenth I can't. Does the eighteenth suit you?"
+    "The seventeenth I can't. Does the eighteenth suit you?",
+    "سَبَعْطَعَشْ مَا أَقْدَرْ. ثَمَنْطَعَشْ يْنَاسْبَكْ؟"
    ],
    [
     "B",
     "إي، يناسبني. الساعة كم؟",
     "ī, ynāsibni. is-sāʿa cham?",
-    "Yes, it suits me. What time?"
+    "Yes, it suits me. What time?",
+    "إِي، يْنَاسِبْنِي. السَّاعَة كَمْ؟"
    ],
    [
     "A",
     "بدري، الساعة تسع وربع الصبح",
     "badri, is-sāʿa tisiʿ w rubʿ iṣ-ṣubḥ",
-    "Early: quarter past nine in the morning."
+    "Early: quarter past nine in the morning.",
+    "بَدْرِي، السَّاعَة تِسِعْ وْرُبْعْ الصُّبْحْ"
    ],
    [
     "B",
     "زين، اتفقنا!",
     "zēn, ittafagna!",
-    "OK, it's a deal!"
+    "OK, it's a deal!",
+    "زَيْنْ، اِتَّفَقْنَا!"
    ]
   ],
   "items": [
@@ -50,63 +56,72 @@
     "thamanṭaʿash",
     "eighteen (١٨)",
     "ثمانية عشر",
-    ""
+    "",
+    "ثَمَنْطَعَشْ"
    ],
    [
     "يوم الأربعاء",
     "yōm il-arbaʿa",
     "Wednesday, on Wednesday",
     "يوم الأربعاء",
-    ""
+    "",
+    "يَوْمْ الْأَرْبَعَاءْ"
    ],
    [
     "بدري",
     "badri",
     "early",
     "مبكرًا",
-    ""
+    "",
+    "بَدْرِي"
    ],
    [
     "نتلاقى",
     "nitlāga",
     "we'll meet; shall we meet?",
     "نلتقي",
-    ""
+    "",
+    "نِتْلَاقَى"
    ],
    [
     "عندي موعد",
     "ʿindi mawʿid",
     "I've got an appointment",
     "عندي موعد",
-    ""
+    "",
+    "عِنْدِي مَوْعِدْ"
    ],
    [
     "سطعش",
     "siṭṭaʿash",
     "sixteen (١٦)",
     "ستة عشر",
-    "a date is the plain number: yōm siṭṭaʿash = on the 16th"
+    "a date is the plain number: yōm siṭṭaʿash = on the 16th",
+    "سِطَّعَشْ"
    ],
    [
     "يناسبك؟",
     "ynāsbak?",
     "does it suit you? (to a man)",
     "هل يناسبك؟",
-    "to a woman: ynāsbich? (يناسبج); it suits me: ynāsibni; ma ynāsibni = it doesn't suit me"
+    "to a woman: ynāsbich? (يناسبج); it suits me: ynāsibni; ma ynāsibni = it doesn't suit me",
+    "يْنَاسْبَكْ؟"
    ],
    [
     "سبعطعش",
     "sabaʿṭaʿash",
     "seventeen (١٧)",
     "سبعة عشر",
-    ""
+    "",
+    "سَبَعْطَعَشْ"
    ],
    [
     "اتفقنا",
     "ittafagna",
     "agreed, it's a deal",
     "اتفقنا",
-    ""
+    "",
+    "اِتَّفَقْنَا"
    ]
   ]
  },
@@ -122,31 +137,36 @@
     "A",
     "سالم، قوم! تأخرنا",
     "Sālim, gūm! taʼakhkharna",
-    "Salim, get up! We're late."
+    "Salim, get up! We're late.",
+    "سَالِمْ، قُومْ! تَأَخَّرْنَا"
    ],
    [
     "B",
     "دقيقة. روح انت",
     "dagīga. rūḥ inta",
-    "One minute. You go."
+    "One minute. You go.",
+    "دَقِيقَة. رُوحْ اِنْتَ"
    ],
    [
     "A",
     "لا، شوف الساعة! إحدعش ونص",
     "la, shūf is-sāʿa! iḥdaʿash w nuṣṣ",
-    "No, look at the time! Half past eleven."
+    "No, look at the time! Half past eleven.",
+    "لَا، شُوفْ السَّاعَة! إِحْدَعَشْ وْنُصّْ"
    ],
    [
     "B",
     "زين. اسمع، وين حطيت تلفوني؟",
     "zēn. ismaʿ, wēn ḥaṭṭēt tilifōni?",
-    "OK. Listen, where did I put my phone?"
+    "OK. Listen, where did I put my phone?",
+    "زَيْنْ. اِسْمَعْ، وَيْنْ حَطَّيْتْ تِلِفَوْنِي؟"
    ],
    [
     "A",
     "هناك. خذه وتعال!",
     "hnāk. khudhah w taʿāl!",
-    "Over there. Take it and come!"
+    "Over there. Take it and come!",
+    "هْنَاكْ. خُذَهْ وْتَعَالْ!"
    ]
   ],
   "items": [
@@ -155,56 +175,64 @@
     "gūm",
     "get up (to a man)",
     "قم",
-    "to a woman: gūmi"
+    "to a woman: gūmi",
+    "قُومْ"
    ],
    [
     "تأخرنا",
     "taʼakhkharna",
     "we're late",
     "تأخرنا",
-    "I'm late: taʼakhkhart (تأخرت)"
+    "I'm late: taʼakhkhart (تأخرت)",
+    "تَأَخَّرْنَا"
    ],
    [
     "روح",
     "rūḥ",
     "go (to a man)",
     "اذهب",
-    "to a woman: rūḥi"
+    "to a woman: rūḥi",
+    "رُوحْ"
    ],
    [
     "شوف",
     "shūf",
     "look (to a man)",
     "انظر",
-    "to a woman: shūfi"
+    "to a woman: shūfi",
+    "شُوفْ"
    ],
    [
     "تلفون",
     "tilifōn",
     "phone",
     "هاتف",
-    "my phone: tilifōni; you'll also hear mobāyl (موبايل)"
+    "my phone: tilifōni; you'll also hear mobāyl (موبايل)",
+    "تِلِفَوْنْ"
    ],
    [
     "اسمع",
     "ismaʿ",
     "listen (to a man)",
     "اسمع",
-    "to a woman: ismaʿi"
+    "to a woman: ismaʿi",
+    "اِسْمَعْ"
    ],
    [
     "خذ",
     "khudh",
     "take (to a man)",
     "خذ",
-    "to a woman: khudhi; khudhah = take it; also said: khidh"
+    "to a woman: khudhi; khudhah = take it; also said: khidh",
+    "خُذْ"
    ],
    [
     "تعال",
     "taʿāl",
     "come (to a man)",
     "تعال",
-    "to a woman: taʿāli; to a group: taʿālu"
+    "to a woman: taʿāli; to a group: taʿālu",
+    "تَعَالْ"
    ]
   ]
  },
@@ -220,37 +248,43 @@
     "B",
     "مريم، تقدرين تساعديني؟ تعالي شوفي",
     "Maryam, tigdarīn tsāʿdīni? taʿāli shūfi",
-    "Maryam, can you help me? Come and have a look."
+    "Maryam, can you help me? Come and have a look.",
+    "مَرْيَمْ، تِقْدَرِينْ تْسَاعْدِينِي؟ تَعَالِي شُوفِي"
    ],
    [
     "A",
     "تريا شوي. شو فيه؟",
     "trayya shwayy. shu fīh?",
-    "Wait a bit. What's up?"
+    "Wait a bit. What's up?",
+    "تْرَيَّا شْوَيّْ. شُو فِيهْ؟"
    ],
    [
     "B",
     "الإيميل ما يفتح، وما سويت شي!",
     "il-īmēl ma yiftaḥ, w ma sawwēt shay!",
-    "The email won't open, and I didn't do anything!"
+    "The email won't open, and I didn't do anything!",
+    "الْإِيمَيْلْ مَا يِفْتَحْ، وْمَا سَوَّيْتْ شَيْ!"
    ],
    [
     "A",
     "طرش لي الإيميل، وأنا بشوف",
     "ṭarrish-li l-īmēl, w ana bashūf",
-    "Send me the email and I'll have a look."
+    "Send me the email and I'll have a look.",
+    "طَرِّشْ لِي الْإِيمَيْلْ، وْأَنَا بَشُوفْ"
    ],
    [
     "B",
     "طرشته. شوفي الحين",
     "ṭarrashtah. shūfi l-ḥīn",
-    "I've sent it. Look now."
+    "I've sent it. Look now.",
+    "طَرَّشْتَهْ. شُوفِي الْحِينْ"
    ],
    [
     "A",
     "هيه، وصل. ييب لي الملف بعد",
     "hē, wiṣal. yīb-li l-malaff baʿad",
-    "Yes, it's come. Bring me the file too."
+    "Yes, it's come. Bring me the file too.",
+    "هَيْه، وِصَلْ. يِيبْ لِي الْمَلَفّْ بَعَدْ"
    ]
   ],
   "items": [
@@ -259,63 +293,72 @@
     "taʿāli",
     "come (to a woman)",
     "تعالي",
-    "to a man: taʿāl"
+    "to a man: taʿāl",
+    "تَعَالِي"
    ],
    [
     "شوفي",
     "shūfi",
     "look (to a woman)",
     "انظري",
-    "to a man: shūf"
+    "to a man: shūf",
+    "شُوفِي"
    ],
    [
     "تريا",
     "trayya",
     "wait (to a man) (UAE)",
     "انتظر",
-    "to a woman: trayyi (تريي); you'll see written اتريا; Kuwait: inṭir (انطر); never istanna (استنى)"
+    "to a woman: trayyi (تريي); you'll see written اتريا; Kuwait: inṭir (انطر); never istanna (استنى)",
+    "تْرَيَّا"
    ],
    [
     "ييب لي",
     "yīb-li",
     "bring me (to a man)",
     "أحضر لي",
-    "to a woman: yībī-li (ييبي لي); you'll see written جيب لي; ييب alone also means 'he brings'"
+    "to a woman: yībī-li (ييبي لي); you'll see written جيب لي; ييب alone also means 'he brings'",
+    "يِيبْ لِي"
    ],
    [
     "طرش لي",
     "ṭarrish-li",
     "send me (to a man)",
     "أرسل لي",
-    "to a woman: ṭarrshī-li (طرشي لي)"
+    "to a woman: ṭarrshī-li (طرشي لي)",
+    "طَرِّشْ لِي"
    ],
    [
     "شو فيه؟",
     "shu fīh?",
     "what's up? what's the matter? (also: what's wrong with it?)",
     "ما الأمر؟ / ما به؟",
-    "about a person: shfīk? (what's wrong with you?)"
+    "about a person: shfīk? (what's wrong with you?)",
+    "شُو فِيهْ؟"
    ],
    [
     "الملف",
     "il-malaff",
     "the file",
     "الملف",
-    ""
+    "",
+    "الْمَلَفّْ"
    ],
    [
     "ما يفتح",
     "ma yiftaḥ",
     "it won't open",
     "لا يفتح",
-    ""
+    "",
+    "مَا يِفْتَحْ"
    ],
    [
     "تقدر تساعدني؟",
     "tigdar tsāʿidni?",
     "can you help me? (to a man)",
     "هل تستطيع مساعدتي؟",
-    "to a woman: tigdarīn tsāʿdīni? (تقدرين تساعديني؟)"
+    "to a woman: tigdarīn tsāʿdīni? (تقدرين تساعديني؟)",
+    "تِقْدَرْ تْسَاعِدْنِي؟"
    ]
   ]
  },
@@ -331,37 +374,43 @@
     "B",
     "يا جماعة، تعالوا هني!",
     "yā jamāʿa, taʿālu hni!",
-    "Everyone, come over here!"
+    "Everyone, come over here!",
+    "يَا جَمَاعَة، تَعَالُوا هْنِي!"
    ],
    [
     "A",
     "شو فيه؟ شو تبي؟",
     "shu fīh? shu tabi?",
-    "What's up? What do you want?"
+    "What's up? What do you want?",
+    "شُو فِيهْ؟ شُو تَبِي؟"
    ],
    [
     "B",
     "دقيقة، خلوني أصوركم. قربوا شوي",
     "dagīga, khallūni aṣawwirkum. garrbu shwayy",
-    "One minute, let me take your photo. Come a bit closer."
+    "One minute, let me take your photo. Come a bit closer.",
+    "دَقِيقَة، خَلُّونِي أَصَوِّرْكُمْ. قَرّْبُوا شْوَيّْ"
    ],
    [
     "A",
     "يلا شباب، شوفوا هني!",
     "yalla shabāb, shūfu hni!",
-    "Come on, guys, look here!"
+    "Come on, guys, look here!",
+    "يَلَّا شَبَابْ، شُوفُوا هْنِي!"
    ],
    [
     "B",
     "اضحكوا... خلاص!",
     "iẓḥaku… khalāṣ!",
-    "Smile… done!"
+    "Smile… done!",
+    "اِضْحَكُوا... خَلَاصْ!"
    ],
    [
     "A",
     "خلني أشوف. حلوة! زين سويت. يلا، خلنا نروح",
     "khallni ashūf. ḥilwa! zēn sawwēt. yalla, khallna nrūḥ",
-    "Let me see. Lovely! Well done. Come on, let's go."
+    "Let me see. Lovely! Well done. Come on, let's go.",
+    "خَلّْنِي أَشُوفْ. حِلْوَة! زَيْنْ سَوَّيْتْ. يَلَّا، خَلّْنَا نْرُوحْ"
    ]
   ],
   "items": [
@@ -370,56 +419,64 @@
     "taʿālu",
     "come (to a group)",
     "تعالوا",
-    "to one man: taʿāl; to one woman: taʿāli"
+    "to one man: taʿāl; to one woman: taʿāli",
+    "تَعَالُوا"
    ],
    [
     "يا جماعة",
     "yā jamāʿa",
     "everyone, folks (calling a group)",
     "يا جماعة",
-    ""
+    "",
+    "يَا جَمَاعَة"
    ],
    [
     "خلني",
     "khallni",
     "let me (to a man)",
     "دعني",
-    "to a woman: khallīni (خليني); to a group: khallūni (خلوني); khallni ashūf = let me see"
+    "to a woman: khallīni (خليني); to a group: khallūni (خلوني); khallni ashūf = let me see",
+    "خَلّْنِي"
    ],
    [
     "أصور",
     "aṣawwir",
     "I take a photo",
     "أصور",
-    "aṣawwrak? = shall I take your photo? (to a man); khallūni aṣawwirkum = let me take your photo (to a group)"
+    "aṣawwrak? = shall I take your photo? (to a man); khallūni aṣawwirkum = let me take your photo (to a group)",
+    "أَصَوِّرْ"
    ],
    [
     "قربوا",
     "garrbu",
     "come closer (to a group)",
     "اقتربوا",
-    "to one man: garrib; to one woman: garrbi"
+    "to one man: garrib; to one woman: garrbi",
+    "قَرّْبُوا"
    ],
    [
     "شوفوا",
     "shūfu",
     "look (to a group)",
     "انظروا",
-    "to one man: shūf; to one woman: shūfi"
+    "to one man: shūf; to one woman: shūfi",
+    "شُوفُوا"
    ],
    [
     "اضحكوا",
     "iẓḥaku",
     "smile (for a photo; lit. laugh) (to a group)",
     "ابتسموا",
-    "to one man: iẓḥak; to one woman: iẓḥaki"
+    "to one man: iẓḥak; to one woman: iẓḥaki",
+    "اِضْحَكُوا"
    ],
    [
     "خلنا",
     "khallna",
     "let's (to a man)",
     "دعنا",
-    "to a woman: khallīna (خلينا); to a group: khallūna (خلونا); khallna nrūḥ = let's go"
+    "to a woman: khallīna (خلينا); to a group: khallūna (خلونا); khallna nrūḥ = let's go",
+    "خَلّْنَا"
    ]
   ],
   "culture": "In public places, ask before you photograph people and keep women and families you don't know out of your photos. In the UAE, taking or sharing photos of people without their consent is also against the law, with heavy fines. Many families prefer that photos of their women aren't taken or shared."
@@ -436,37 +493,43 @@
     "A",
     "يلا، الساعة إحدعش. أنا بروح",
     "yalla, is-sāʿa iḥdaʿash. ana barūḥ",
-    "Right, it's eleven. I'm off."
+    "Right, it's eleven. I'm off.",
+    "يَلَّا، السَّاعَة إِحْدَعَشْ. أَنَا بَرُوحْ"
    ],
    [
     "B",
     "لا تروح! تو الناس",
     "la trūḥ! taww in-nās",
-    "Don't go! It's still early."
+    "Don't go! It's still early.",
+    "لَا تْرُوحْ! تَوّْ النَّاسْ"
    ],
    [
     "A",
     "لازم، عندي دوام باكر الصبح",
     "lāzim, ʿindi dawām bāchir iṣ-ṣubḥ",
-    "I have to, I've got work tomorrow morning."
+    "I have to, I've got work tomorrow morning.",
+    "لَازِمْ، عِنْدِي دَوَامْ بَاكِرْ الصُّبْحْ"
    ],
    [
     "B",
     "زين. لا تنسى تلفونك!",
     "zēn. la tinsa tilifōnak!",
-    "OK. Don't forget your phone!"
+    "OK. Don't forget your phone!",
+    "زَيْنْ. لَا تِنْسَى تِلِفَوْنَكْ!"
    ],
    [
     "A",
     "لا تحاتي، هذا هو. نتلاقى باكر!",
     "la tḥāti, hādha huwa. nitlāga bāchir!",
-    "Don't worry, here it is. See you tomorrow!"
+    "Don't worry, here it is. See you tomorrow!",
+    "لَا تْحَاتِي، هٰذَا هُوَ. نِتْلَاقَى بَاكِرْ!"
    ],
    [
     "B",
     "مع السلامة. انتبه، لا تسوق بسرعة!",
     "maʿa s-salāma. intibih, la tsūg b-surʿa!",
-    "Bye. Take care, don't drive fast!"
+    "Bye. Take care, don't drive fast!",
+    "مَعَ السَّلَامَة. اِنْتِبِهْ، لَا تْسُوقْ بْسُرْعَة!"
    ]
   ],
   "items": [
@@ -475,63 +538,72 @@
     "la trūḥ",
     "don't go (to a man)",
     "لا تذهب",
-    "to a woman: la trūḥīn; to a group: la trūḥūn (لا تروحون)"
+    "to a woman: la trūḥīn; to a group: la trūḥūn (لا تروحون)",
+    "لَا تْرُوحْ"
    ],
    [
     "لا تروحين",
     "la trūḥīn",
     "don't go (to a woman)",
     "لا تذهبي",
-    "to a man: la trūḥ"
+    "to a man: la trūḥ",
+    "لَا تْرُوحِينْ"
    ],
    [
     "لا تنسى",
     "la tinsa",
     "don't forget (to a man)",
     "لا تنس",
-    "to a woman: la tinsīn"
+    "to a woman: la tinsīn",
+    "لَا تِنْسَى"
    ],
    [
     "لا تحاتي",
     "la tḥāti",
     "don't worry (to a man)",
     "لا تقلق",
-    "to a woman: la tḥātīn"
+    "to a woman: la tḥātīn",
+    "لَا تْحَاتِي"
    ],
    [
     "دوام",
     "dawām",
     "work hours, a shift",
     "دوام",
-    "ʿindi dawām = I'm working (I have work); also school or university hours; ʿindi dawām bāchir: you'll see written باجر"
+    "ʿindi dawām = I'm working (I have work); also school or university hours; ʿindi dawām bāchir: you'll see written باجر",
+    "دَوَامْ"
    ],
    [
     "هذا هو",
     "hādha huwa",
     "here it is",
     "ها هو",
-    "for a feminine thing: hādhi hiya"
+    "for a feminine thing: hādhi hiya",
+    "هٰذَا هُوَ"
    ],
    [
     "انتبه",
     "intibih",
     "be careful, take care (to a man)",
     "انتبه",
-    "to a woman: intibhi"
+    "to a woman: intibhi",
+    "اِنْتِبِهْ"
    ],
    [
     "لا تسوق بسرعة",
     "la tsūg b-surʿa",
     "don't drive fast (to a man)",
     "لا تسرع",
-    "to a woman: la tsūgīn b-surʿa"
+    "to a woman: la tsūgīn b-surʿa",
+    "لَا تْسُوقْ بْسُرْعَة"
    ],
    [
     "تو الناس",
     "taww in-nās",
     "it's still early (don't leave yet)",
     "ما زال الوقت مبكرًا",
-    ""
+    "",
+    "تَوّْ النَّاسْ"
    ]
   ],
   "culture": "Evenings in the Gulf start late, especially in summer, when the day is too hot to go out. Friends often meet after the ʿisha prayer and stay out until midnight, so ten o'clock can still be taww in-nās."
@@ -548,37 +620,43 @@
     "A",
     "سالم، عندي موعد في البنك. برجع على طول",
     "Sālim, ʿindi mawʿid fi l-bank. barjaʿ ʿala ṭūl",
-    "Salim, I've got an appointment at the bank. I'll be straight back."
+    "Salim, I've got an appointment at the bank. I'll be straight back.",
+    "سَالِمْ، عِنْدِي مَوْعِدْ فِي الْبَنْكْ. بَرْجَعْ عَلَى طُولْ"
    ],
    [
     "B",
     "زين. ييبي لي قهوة، الله يخليج",
     "zēn. yībī-li gahwa, allāh ykhallīch",
-    "OK. Bring me a coffee, please."
+    "OK. Bring me a coffee, please.",
+    "زَيْنْ. يِيبِي لِي قَهْوَة، اللّٰهْ يْخَلِّيجْ"
    ],
    [
     "A",
     "إن شاء الله. لا تنسى الإيميل والملف!",
     "in shāʼ allāh. la tinsa l-īmēl w il-malaff!",
-    "Sure. Don't forget the email and the file!"
+    "Sure. Don't forget the email and the file!",
+    "إِنْ شَاءْ اللّٰهْ. لَا تِنْسَى الْإِيمَيْلْ وْالْمَلَفّْ!"
    ],
    [
     "B",
     "لا تحاتين، طرشته البارحة. خذي، عشرين درهم",
     "la tḥātīn, ṭarrashtah il-bārḥa. khudhi, ʿishrīn dirham",
-    "Don't worry, I sent it yesterday. Here, take twenty dirhams."
+    "Don't worry, I sent it yesterday. Here, take twenty dirhams.",
+    "لَا تْحَاتِينْ، طَرَّشْتَهْ الْبَارْحَة. خُذِي، عِشْرِينْ دِرْهَمْ"
    ],
    [
     "A",
     "لا، خلها علي!",
     "la, khallha ʿalay!",
-    "No, it's on me!"
+    "No, it's on me!",
+    "لَا، خَلّْهَا عَلَيْ!"
    ],
    [
     "B",
     "لا، خذي. بس لا تنسين القهوة!",
     "la, khudhi. bas la tinsīn il-gahwa!",
-    "No, take it. But don't forget the coffee!"
+    "No, take it. But don't forget the coffee!",
+    "لَا، خُذِي. بَسْ لَا تِنْسِينْ الْقَهْوَة!"
    ]
   ],
   "items": [
@@ -587,42 +665,48 @@
     "yībī-li",
     "bring me (to a woman)",
     "أحضري لي",
-    "to a man: yīb-li; you'll see written جيبي لي"
+    "to a man: yīb-li; you'll see written جيبي لي",
+    "يِيبِي لِي"
    ],
    [
     "خذي",
     "khudhi",
     "take (to a woman)",
     "خذي",
-    "to a man: khudh"
+    "to a man: khudh",
+    "خُذِي"
    ],
    [
     "لا تحاتين",
     "la tḥātīn",
     "don't worry (to a woman)",
     "لا تقلقي",
-    "to a man: la tḥāti"
+    "to a man: la tḥāti",
+    "لَا تْحَاتِينْ"
    ],
    [
     "لا تنسين",
     "la tinsīn",
     "don't forget (to a woman)",
     "لا تنسي",
-    "to a man: la tinsa"
+    "to a man: la tinsa",
+    "لَا تِنْسِينْ"
    ],
    [
     "على طول",
     "ʿala ṭūl",
     "straight away",
     "فورًا / مباشرةً",
-    "also 'straight on' when giving directions, and 'always, all the time'"
+    "also 'straight on' when giving directions, and 'always, all the time'",
+    "عَلَى طُولْ"
    ],
    [
     "خلها علي",
     "khallha ʿalay",
     "it's on me (I'll pay)",
     "على حسابي",
-    "said when offering to pay"
+    "said when offering to pay",
+    "خَلّْهَا عَلَيْ"
    ]
   ]
  },
@@ -638,37 +722,43 @@
     "B",
     "مريم، تبين تروحين ويانا؟",
     "Maryam, tabīn trūḥīn wiyyāna?",
-    "Maryam, do you want to come with us?"
+    "Maryam, do you want to come with us?",
+    "مَرْيَمْ، تَبِينْ تْرُوحِينْ وِيَّانَا؟"
    ],
    [
     "A",
     "وين بتروحون؟",
     "wēn bitrūḥūn?",
-    "Where are you going?"
+    "Where are you going?",
+    "وَيْنْ بِتْرُوحُونْ؟"
    ],
    [
     "B",
     "المول. أبي أتغدى هناك",
     "il-mōl. abi atghadda hnāk",
-    "The mall. I want to have lunch there."
+    "The mall. I want to have lunch there.",
+    "الْمَوْلْ. أَبِي أَتْغَدَّى هْنَاكْ"
    ],
    [
     "A",
     "مشكور، بس ما أبي أطلع. عندي دوام",
     "mashkūr, bas ma abi aṭlaʿ. ʿindi dawām",
-    "Thanks, but I'd rather not go out. I'm working."
+    "Thanks, but I'd rather not go out. I'm working.",
+    "مَشْكُورْ، بَسْ مَا أَبِي أَطْلَعْ. عِنْدِي دَوَامْ"
    ],
    [
     "B",
     "لا تحاتين. تبين أييب لج شي؟",
     "la tḥātīn. tabīn ayīb-lich shay?",
-    "Don't worry. Do you want me to bring you anything?"
+    "Don't worry. Do you want me to bring you anything?",
+    "لَا تْحَاتِينْ. تَبِينْ أَيِيبْ لِجْ شَيْ؟"
    ],
    [
     "A",
     "هيه، أي شي حلو. وخلها علي!",
     "hē, ay shay ḥilu. w khallha ʿalay!",
-    "Yes, anything sweet. And it's on me!"
+    "Yes, anything sweet. And it's on me!",
+    "هَيْه، أَيْ شَيْ حِلُو. وْخَلّْهَا عَلَيْ!"
    ]
   ],
   "items": [
@@ -677,56 +767,64 @@
     "tabīn?",
     "do you want? (to a woman)",
     "هل تريدين؟",
-    "to a man: tabi?"
+    "to a man: tabi?",
+    "تَبِينْ؟"
    ],
    [
     "تبي تروح؟",
     "tabi trūḥ?",
     "do you want to go? (to a man)",
     "هل تريد أن تذهب؟",
-    "to a woman: tabīn trūḥīn? (تبين تروحين؟)"
+    "to a woman: tabīn trūḥīn? (تبين تروحين؟)",
+    "تَبِي تْرُوحْ؟"
    ],
    [
     "وين بتروحون؟",
     "wēn bitrūḥūn?",
     "where are you going? (to a group)",
     "إلى أين ستذهبون؟",
-    "to one man: wēn bitrūḥ?; to one woman: wēn bitrūḥīn?"
+    "to one man: wēn bitrūḥ?; to one woman: wēn bitrūḥīn?",
+    "وَيْنْ بِتْرُوحُونْ؟"
    ],
    [
     "أبي أتغدى",
     "abi atghadda",
     "I want to have lunch",
     "أريد أن أتغدى",
-    ""
+    "",
+    "أَبِي أَتْغَدَّى"
    ],
    [
     "ما أبي",
     "ma abi",
     "I don't want (to)",
     "لا أريد",
-    "UAE also: ma abā (ما أبا)"
+    "UAE also: ma abā (ما أبا)",
+    "مَا أَبِي"
    ],
    [
     "أطلع",
     "aṭlaʿ",
     "(I) go out",
     "أخرج",
-    "ma abi aṭlaʿ = I don't want to go out"
+    "ma abi aṭlaʿ = I don't want to go out",
+    "أَطْلَعْ"
    ],
    [
     "أي شي",
     "ay shay",
     "anything",
     "أي شيء",
-    ""
+    "",
+    "أَيْ شَيْ"
    ],
    [
     "أييب لك",
     "ayīb-lak",
     "I bring you, I'll get you (to a man)",
     "أحضر لك",
-    "to a woman: ayīb-lich (أييب لج); tabi ayīb-lak shay? = shall I get you something?"
+    "to a woman: ayīb-lich (أييب لج); tabi ayīb-lak shay? = shall I get you something?",
+    "أَيِيبْ لَكْ"
    ]
   ]
  },
@@ -742,37 +840,43 @@
     "B",
     "مريم، أقدر أساعدج؟",
     "Maryam, agdar asāʿdich?",
-    "Maryam, can I help you?"
+    "Maryam, can I help you?",
+    "مَرْيَمْ، أَقْدَرْ أَسَاعْدِجْ؟"
    ],
    [
     "A",
     "أكيد. تقدر تييب لي الأوراق؟",
     "akīd. tigdar tyīb-li l-awrāg?",
-    "Sure. Can you bring me the papers?"
+    "Sure. Can you bring me the papers?",
+    "أَكِيدْ. تِقْدَرْ تْيِيبْ لِي الْأَوْرَاقْ؟"
    ],
    [
     "B",
     "على طول، تفضلي. شلون تقولين هذا بالعربي؟",
     "ʿala ṭūl, tfaẓẓali. shlōn tgūlīn hādha bil-ʿarabi?",
-    "Right away, here you are. How do you say this in Arabic?"
+    "Right away, here you are. How do you say this in Arabic?",
+    "عَلَى طُولْ، تْفَضَّلِي. شْلَوْنْ تْقُولِينْ هٰذَا بِالْعَرَبِي؟"
    ],
    [
     "A",
     "عرض حق الاجتماع. تبي تتعلم؟",
     "ʿarẓ ḥagg il-ijtimāʿ. tabi titʿallam?",
-    "A presentation for the meeting. Do you want to learn (how)?"
+    "A presentation for the meeting. Do you want to learn (how)?",
+    "عَرْضْ حَقّْ الْاِجْتِمَاعْ. تَبِي تِتْعَلَّمْ؟"
    ],
    [
     "B",
     "إي! تقدرين تعلميني؟",
     "ī! tigdarīn tʿallmīni?",
-    "Yes! Can you teach me?"
+    "Yes! Can you teach me?",
+    "إِي! تِقْدَرِينْ تْعَلّْمِينِي؟"
    ],
    [
     "A",
     "طبعا. يوم الأربعاء الصبح، بعد الاجتماع",
     "ṭabʿan. yōm il-arbaʿa ṣ-ṣubḥ, baʿd il-ijtimāʿ",
-    "Of course. On Wednesday morning, after the meeting."
+    "Of course. On Wednesday morning, after the meeting.",
+    "طَبْعًا. يَوْمْ الْأَرْبَعَاءْ الصُّبْحْ، بَعْدْ الْاِجْتِمَاعْ"
    ]
   ],
   "items": [
@@ -781,63 +885,72 @@
     "agdar asāʿdak?",
     "can I help you? (to a man)",
     "هل أستطيع مساعدتك؟",
-    "to a woman: agdar asāʿdich? (أقدر أساعدج)"
+    "to a woman: agdar asāʿdich? (أقدر أساعدج)",
+    "أَقْدَرْ أَسَاعْدَكْ؟"
    ],
    [
     "شلون تقول … بالعربي؟",
     "shlōn tgūl … bil-ʿarabi?",
     "how do you say … in Arabic? (to a man)",
     "كيف تقول … بالعربية؟",
-    "to a woman: shlōn tgūlīn … bil-ʿarabi?; UAE also: chēf tgūl…; shlōn tgūl hādha bil-ʿarabi? = how do you say this in Arabic?"
+    "to a woman: shlōn tgūlīn … bil-ʿarabi?; UAE also: chēf tgūl…; shlōn tgūl hādha bil-ʿarabi? = how do you say this in Arabic?",
+    "شْلَوْنْ تْقُولْ … بِالْعَرَبِي؟"
    ],
    [
     "تقدر تعلمني؟",
     "tigdar tʿallimni?",
     "can you teach me? (to a man)",
     "هل تستطيع أن تعلمني؟",
-    "to a woman: tigdarīn tʿallmīni? (تقدرين تعلميني؟)"
+    "to a woman: tigdarīn tʿallmīni? (تقدرين تعلميني؟)",
+    "تِقْدَرْ تْعَلِّمْنِي؟"
    ],
    [
     "تييب لي",
     "tyīb-li",
     "you bring me (to a man)",
     "تحضر لي",
-    "to a woman: tyībīn-li; tigdar tyīb-li…? = can you bring me…?; you'll see written تجيب لي"
+    "to a woman: tyībīn-li; tigdar tyīb-li…? = can you bring me…?; you'll see written تجيب لي",
+    "تْيِيبْ لِي"
    ],
    [
     "أكيد",
     "akīd",
     "sure, definitely",
     "بالتأكيد",
-    ""
+    "",
+    "أَكِيدْ"
    ],
    [
     "طبعا",
     "ṭabʿan",
     "of course",
     "طبعًا",
-    ""
+    "",
+    "طَبْعًا"
    ],
    [
     "تبي تتعلم؟",
     "tabi titʿallam?",
     "do you want to learn? (to a man)",
     "هل تريد أن تتعلم؟",
-    "to a woman: tabīn titʿallamīn?"
+    "to a woman: tabīn titʿallamīn?",
+    "تَبِي تِتْعَلَّمْ؟"
    ],
    [
     "الأوراق",
     "il-awrāg",
     "the papers, the documents",
     "الأوراق",
-    "one sheet: warga (ورقة)"
+    "one sheet: warga (ورقة)",
+    "الْأَوْرَاقْ"
    ],
    [
     "عرض",
     "ʿarẓ",
     "a presentation",
     "عرض تقديمي",
-    "also 'an offer, a deal' in shops; at work you'll also hear the English: presentation"
+    "also 'an offer, a deal' in shops; at work you'll also hear the English: presentation",
+    "عَرْضْ"
    ]
   ]
  },
@@ -853,37 +966,43 @@
     "A",
     "شحالك؟ الشغل عاجبك؟",
     "shḥālak? ish-shughul ʿājbak?",
-    "How are you? Do you like the job?"
+    "How are you? Do you like the job?",
+    "شْحَالَكْ؟ الشُّغُلْ عَاجْبَكْ؟"
    ],
    [
     "B",
     "زين الحمد لله. طبعا، عاجبني وايد",
     "zēn il-ḥamdu lillāh. ṭabʿan, ʿājibni wāyid",
-    "Fine, thank God. Of course, I like it a lot."
+    "Fine, thank God. Of course, I like it a lot.",
+    "زَيْنْ الْحَمْدُ لِلّٰهْ. طَبْعًا، عَاجِبْنِي وَايِدْ"
    ],
    [
     "A",
     "وشو تحب تسوي بعد الدوام؟",
     "w shu tḥibb tsawwi baʿd id-dawām?",
-    "And what do you like doing after work?"
+    "And what do you like doing after work?",
+    "وْشُو تْحِبّْ تْسَوِّي بَعْدْ الدَّوَامْ؟"
    ],
    [
     "B",
     "أحب أروح البحر",
     "aḥibb arūḥ il-baḥar",
-    "I like going to the beach."
+    "I like going to the beach.",
+    "أَحِبّْ أَرُوحْ الْبَحَرْ"
    ],
    [
     "A",
     "في الصيف؟ الحر وايد!",
     "fi ṣ-ṣēf? il-ḥarr wāyid!",
-    "In summer? It's so hot!"
+    "In summer? It's so hot!",
+    "فِي الصَّيْفْ؟ الْحَرّْ وَايِدْ!"
    ],
    [
     "B",
     "عادي، أروح في الليل. ما أحب البرد",
     "ʿādi, arūḥ fi l-lēl. ma aḥibb il-bard",
-    "No big deal, I go at night. I don't like the cold."
+    "No big deal, I go at night. I don't like the cold.",
+    "عَادِي، أَرُوحْ فِي اللَّيْلْ. مَا أَحِبّْ الْبَرْدْ"
    ]
   ],
   "items": [
@@ -892,63 +1011,72 @@
     "ʿājibni",
     "I like it (it pleases me)",
     "يعجبني",
-    "do you like it?: ʿājbak? (to a man), ʿājbich? (to a woman); for a feminine thing: ʿājbatni (عاجبتني)"
+    "do you like it?: ʿājbak? (to a man), ʿājbich? (to a woman); for a feminine thing: ʿājbatni (عاجبتني)",
+    "عَاجِبْنِي"
    ],
    [
     "أحب",
     "aḥibb",
     "I like, I love",
     "أحب",
-    "aḥibb arūḥ = I like going"
+    "aḥibb arūḥ = I like going",
+    "أَحِبّْ"
    ],
    [
     "ما أحب",
     "ma aḥibb",
     "I don't like",
     "لا أحب",
-    ""
+    "",
+    "مَا أَحِبّْ"
    ],
    [
     "تحب؟",
     "tḥibb?",
     "do you like? (to a man)",
     "هل تحب؟",
-    "to a woman: tḥibbīn?"
+    "to a woman: tḥibbīn?",
+    "تْحِبّْ؟"
    ],
    [
     "شو تسوي؟",
     "shu tsawwi?",
     "what do you do? / what are you doing? (to a man)",
     "ماذا تفعل؟",
-    "to a woman: shu tsawwīn?"
+    "to a woman: shu tsawwīn?",
+    "شُو تْسَوِّي؟"
    ],
    [
     "عادي",
     "ʿādi",
     "it's fine, no big deal, normal",
     "عادي",
-    ""
+    "",
+    "عَادِي"
    ],
    [
     "الحر",
     "il-ḥarr",
     "the heat",
     "الحر",
-    "the adjective is ḥārr (hot)"
+    "the adjective is ḥārr (hot)",
+    "الْحَرّْ"
    ],
    [
     "الصيف",
     "iṣ-ṣēf",
     "summer",
     "الصيف",
-    ""
+    "",
+    "الصَّيْفْ"
    ],
    [
     "البرد",
     "il-bard",
     "the cold (weather)",
     "البرد",
-    ""
+    "",
+    "الْبَرْدْ"
    ]
   ]
  },
@@ -964,37 +1092,43 @@
     "A",
     "تبي تيي البر ويانا يوم الجمعة؟",
     "tabi tiyi l-barr wiyyāna yōm il-jumʿa?",
-    "Do you want to come to the desert with us on Friday?"
+    "Do you want to come to the desert with us on Friday?",
+    "تَبِي تِيِي الْبَرّْ وِيَّانَا يَوْمْ الْجُمْعَة؟"
    ],
    [
     "B",
     "يمكن، مب أكيد",
     "yimkin, mub akīd",
-    "Maybe, I'm not sure."
+    "Maybe, I'm not sure.",
+    "يِمْكِنْ، مُبْ أَكِيدْ"
    ],
    [
     "A",
     "ليش؟ شو عندك؟",
     "lēsh? shu ʿindak?",
-    "Why? What have you got on?"
+    "Why? What have you got on?",
+    "لَيْشْ؟ شُو عِنْدَكْ؟"
    ],
    [
     "B",
     "عشان عندي امتحان، ولازم أدرس",
     "ʿashān ʿindi imtiḥān, w lāzim adris",
-    "Because I've got an exam, and I have to study."
+    "Because I've got an exam, and I have to study.",
+    "عَشَانْ عِنْدِي اِمْتِحَانْ، وْلَازِمْ أَدْرِسْ"
    ],
    [
     "A",
     "عادي، نرجع بدري إذا تبي",
     "ʿādi, nirjaʿ badri idha tabi",
-    "No problem, we'll come back early if you want."
+    "No problem, we'll come back early if you want.",
+    "عَادِي، نِرْجَعْ بَدْرِي إِذَا تَبِي"
    ],
    [
     "B",
     "زين، ليش لا! اتفقنا",
     "zēn, lēsh la! ittafagna",
-    "OK, why not! It's a deal."
+    "OK, why not! It's a deal.",
+    "زَيْنْ، لَيْشْ لَا! اِتَّفَقْنَا"
    ]
   ],
   "items": [
@@ -1003,63 +1137,72 @@
     "tabi tiyi?",
     "do you want to come? (to a man)",
     "هل تريد أن تأتي؟",
-    "to a woman: tabīn tiyīn? (تبين تيين؟); you'll see written تجي"
+    "to a woman: tabīn tiyīn? (تبين تيين؟); you'll see written تجي",
+    "تَبِي تِيِي؟"
    ],
    [
     "يمكن",
     "yimkin",
     "maybe",
     "ربما",
-    ""
+    "",
+    "يِمْكِنْ"
    ],
    [
     "مب أكيد",
     "mub akīd",
     "not sure, not certain",
     "غير مؤكد",
-    "Kuwait: mū akīd"
+    "Kuwait: mū akīd",
+    "مُبْ أَكِيدْ"
    ],
    [
     "عشان",
     "ʿashān",
     "because",
     "لأن",
-    "also everyday: lann (لأن); fast speech: ʿshān"
+    "also everyday: lann (لأن); fast speech: ʿshān",
+    "عَشَانْ"
    ],
    [
     "امتحان",
     "imtiḥān",
     "exam",
     "امتحان",
-    ""
+    "",
+    "اِمْتِحَانْ"
    ],
    [
     "البر",
     "il-barr",
     "the desert (out of town)",
     "الصحراء",
-    "rāyḥīn il-barr = going out to the desert"
+    "rāyḥīn il-barr = going out to the desert",
+    "الْبَرّْ"
    ],
    [
     "نرجع",
     "nirjaʿ",
     "we (will) come back",
     "نرجع",
-    ""
+    "",
+    "نِرْجَعْ"
    ],
    [
     "إذا تبي",
     "idha tabi",
     "if you want (to a man)",
     "إذا أردت",
-    "to a woman: idha tabīn"
+    "to a woman: idha tabīn",
+    "إِذَا تَبِي"
    ],
    [
     "ليش لا",
     "lēsh la",
     "why not",
     "لم لا",
-    ""
+    "",
+    "لَيْشْ لَا"
    ]
   ],
   "culture": "In the cooler months, roughly November to March, many Emirati families and friends drive out to il-barr at the weekend to camp, light a fire and drink gahwa. In summer it is far too hot."
