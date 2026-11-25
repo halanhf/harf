@@ -2202,7 +2202,54 @@ function joinProgress(meta,shards){
     for(const [k,c] of Object.entries(sh)) cards[k]=cards[k]?mergeProgress({cards:{[k]:cards[k]}},{cards:{[k]:c}}).cards[k]:c; }
   o.cards=cards; return o;
 }
-if(typeof module!=="undefined") module.exports={SHARDS,shardOf,splitProgress,joinProgress,learnDay,dueAt,validCard,validGen,cleanSaved,S_MIN,MAX_IVL,normalizeArabic,levenshtein,similarity,wordMatch,letterForms,schedule,retrievability,intervalDays,isLeech,FSRS_W,cardMode,pickOptions,soundShift,validateUnit,isHidden,stageStatus,planDay,interleave,packCard,unpackCard,MATURE_DAYS,dayNum,nextStreak,visibleStreak,mergeProgress,afterReset,whenLabel};
+// github sync decisions: what an answer means, the status line, when to run, what to fetch and send (no network here)
+const GH_META="progress.json", GH_GAP=60000;
+const GH_WHY={auth:"the token was refused",repo:"the progress repo was not found",server:"GitHub is not responding",conflict:"another device was saving at the same time",bad:"the saved progress could not be read"};
+const ghFile=n=>"cards_"+n+".json";
+function canon(x){ const sort=v=>Array.isArray(v)?v.map(sort):v&&typeof v==="object"?Object.keys(v).sort().reduce((o,k)=>(o[k]=sort(v[k]),o),{}):v; return JSON.stringify(sort(x)); }
+function b64enc(text){ const b=new TextEncoder().encode(text); let s=""; for(let i=0;i<b.length;i+=8192) s+=String.fromCharCode.apply(null,b.subarray(i,i+8192)); return btoa(s); }
+function b64dec(b64){ const s=atob(String(b64).replace(/\s+/g,"")), b=new Uint8Array(s.length); for(let i=0;i<s.length;i++) b[i]=s.charCodeAt(i); return new TextDecoder().decode(b); }
+function ghKind(op,status){
+  if(!status) return "offline";
+  if(status===200||status===201) return "ok";
+  if(status===401||status===403) return "auth";
+  if(status===404) return op==="read"?"missing":op==="write"?"repo":"auth";
+  if((status===409||status===422)&&op==="write") return "conflict";
+  return "server";
+}
+function ghLine(on,st,now){
+  if(!on) return "Not set up";
+  st=st||{};
+  if(st.problem) return "Sync problem: "+(GH_WHY[st.problem]||GH_WHY.server);
+  if(st.waiting||!st.last) return "Offline, will sync later";
+  const n=Math.floor((now-st.last)/60000);
+  return n<1?"Synced just now":"Synced "+n+" min ago";
+}
+function ghAfter(st,kind,now){
+  const s=st||{last:0,waiting:false,problem:""};
+  if(kind==="ok") return {last:now,waiting:false,problem:""};
+  if(kind==="offline") return {last:s.last,waiting:true,problem:""};
+  return {last:s.last,waiting:s.waiting,problem:kind};
+}
+const ghWait=(lastRun,now)=>Math.min(GH_GAP,Math.max(0,lastRun+GH_GAP-now));
+function ghAllow(trigger,s){
+  if(!s.on) return "no";
+  if(trigger==="manual") return "go";
+  if(s.halted) return "no";
+  if(trigger==="hide"&&!s.dirty) return "no";
+  return s.online?"go":"offline";
+}
+function ghNeed(stamps,sha,force){
+  return SHARDS.filter(n=>(force&&force.has(ghFile(n)))||(stamps[n]&&stamps[n]!==sha[ghFile(n)]));
+}
+function ghChanged(shards,mem){
+  const out=[];
+  for(const n of SHARDS){ const path=ghFile(n), cards=shards[n]||{};
+    if(!Object.keys(cards).length&&!mem.sha[path]) continue;
+    const text=canon({cards}); if(text!==mem.body[path]) out.push({path,text}); }
+  return out;
+}
+if(typeof module!=="undefined") module.exports={SHARDS,shardOf,splitProgress,joinProgress,learnDay,dueAt,validCard,validGen,cleanSaved,S_MIN,MAX_IVL,normalizeArabic,levenshtein,similarity,wordMatch,letterForms,schedule,retrievability,intervalDays,isLeech,FSRS_W,cardMode,pickOptions,soundShift,validateUnit,isHidden,stageStatus,planDay,interleave,packCard,unpackCard,MATURE_DAYS,dayNum,nextStreak,visibleStreak,mergeProgress,afterReset,whenLabel,canon,b64enc,b64dec,GH_META,GH_GAP,GH_WHY,ghFile,ghKind,ghLine,ghAfter,ghWait,ghAllow,ghNeed,ghChanged};
 </script>
 
 <script>

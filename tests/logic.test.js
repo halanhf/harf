@@ -6,7 +6,7 @@ const vm=require("node:vm");
 const path=require("node:path");
 const html=fs.readFileSync(path.join(__dirname,"..","index.html"),"utf8");
 const block=id=>{const m=html.match(new RegExp(`<script id="${id}">([\\s\\S]*?)</script>`));assert.ok(m,`script ${id} missing`);return m[1];};
-const ctx={module:{exports:{}}};
+const ctx={module:{exports:{}},TextEncoder,TextDecoder,atob,btoa};
 vm.createContext(ctx);
 vm.runInContext(block("logic"),ctx);
 vm.runInContext(block("data")+";this.D={LETTERS,VOWELS,SHIFTS,PAIRS,COURSE,STAGE_LEVELS,MSA,READINGS,GRAMMAR,NUMBERS};",ctx);
@@ -487,4 +487,51 @@ test("daily cards are added only after the first merge has been tried",async()=>
   const t3=loadUi({boot:true}); assert.deepEqual(t3.fed(),["msa","sentences"]); assert.ok(t3.calls.indexOf("sentences")<t3.calls.indexOf("show"));
   const db4=fakeDb(); db4.hold(); const t4=loadUi({boot:true,online:false,claude:claudeWith(db4)}); assert.deepEqual(t4.fed(),["msa","sentences"]);
   assert.match(html,/function afterRemoteChange\(\)\{ rebuild\(\); feed\(\);/);
+});
+test("github sync: what each answer from the api means",()=>{
+  const k=L.ghKind;
+  assert.equal(k("read",200),"ok"); assert.equal(k("write",201),"ok"); assert.equal(k("read",404),"missing"); assert.equal(k("write",404),"repo");
+  for(const op of ["read","write","user"]) for(const s of [401,403]) assert.equal(k(op,s),"auth");
+  assert.equal(k("user",404),"auth"); assert.equal(k("write",409),"conflict"); assert.equal(k("write",422),"conflict"); assert.equal(k("read",409),"server");
+  for(const s of [429,500,502,503,301,418]) assert.equal(k("read",s),"server");
+  assert.equal(k("write",0),"offline"); assert.equal(k("read",undefined),"offline");
+});
+test("github sync: the status line, and how a finished cycle changes it",()=>{
+  const t=1e12, line=L.ghLine;
+  assert.equal(line(false,{last:t},t),"Not set up");
+  assert.equal(line(true,{last:t-59000},t),"Synced just now"); assert.equal(line(true,{last:t-60000},t),"Synced 1 min ago"); assert.equal(line(true,{last:t-125000},t),"Synced 2 min ago");
+  assert.equal(line(true,{last:t+5000},t),"Synced just now"); // the clock went back
+  assert.equal(line(true,{last:t,waiting:true},t),"Offline, will sync later"); assert.equal(line(true,{last:0},t),"Offline, will sync later"); assert.equal(line(true,null,t),"Offline, will sync later");
+  const why={auth:"the token was refused",repo:"the progress repo was not found",server:"GitHub is not responding",conflict:"another device was saving at the same time",bad:"the saved progress could not be read"};
+  assert.deepEqual({...L.GH_WHY},why);
+  for(const [k,v] of Object.entries(why)) assert.equal(line(true,{last:t,waiting:true,problem:k},t),"Sync problem: "+v);
+  assert.equal(line(true,{problem:"zzz"},t),"Sync problem: GitHub is not responding");
+  const after=L.ghAfter;
+  assert.deepEqual({...after({last:5,waiting:true,problem:"server"},"ok",t)},{last:t,waiting:false,problem:""});
+  assert.deepEqual({...after({last:5,waiting:false,problem:"server"},"offline",t)},{last:5,waiting:true,problem:""});
+  assert.deepEqual({...after({last:5,waiting:true,problem:""},"auth",t)},{last:5,waiting:true,problem:"auth"});
+  assert.deepEqual({...after(null,"server",t)},{last:0,waiting:false,problem:"server"});
+});
+test("github sync: when a cycle may run, and the one-a-minute limit on saves",()=>{
+  const s={on:true,online:true,halted:false,dirty:true}, go=L.ghAllow;
+  for(const tr of ["open","online","show","hide","save","timer","manual"]) assert.equal(go(tr,s),"go",tr);
+  for(const tr of ["open","save","manual"]) assert.equal(go(tr,{...s,on:false}),"no");
+  assert.equal(go("save",{...s,online:false}),"offline"); assert.equal(go("open",{...s,online:false}),"offline"); assert.equal(go("manual",{...s,online:false}),"go");
+  assert.equal(go("online",{...s,halted:true}),"no"); assert.equal(go("save",{...s,halted:true}),"no"); assert.equal(go("manual",{...s,halted:true}),"go");
+  assert.equal(go("hide",{...s,dirty:false}),"no"); assert.equal(go("hide",{...s,dirty:false,online:false}),"no"); assert.equal(go("show",{...s,dirty:false}),"go");
+  const t=1e12; assert.equal(L.ghWait(0,t),0); assert.equal(L.ghWait(t-10000,t),50000); assert.equal(L.ghWait(t-60000,t),0); assert.equal(L.ghWait(t-3600000,t),0);
+  assert.equal(L.ghWait(t+5000,t),60000); // the clock went back: never more than a minute
+});
+test("github sync: what to fetch and what to send",()=>{
+  assert.equal(L.canon({b:1,a:{d:[2,{z:1,y:2}],c:null}}),'{"a":{"c":null,"d":[2,{"y":2,"z":1}]},"b":1}');
+  assert.equal(L.GH_META,"progress.json"); assert.equal(L.ghFile("s1"),"cards_s1.json");
+  const sha={"cards_s1.json":"x1","cards_s2.json":"y1"};
+  assert.deepEqual([...L.ghNeed({s1:"x1",s2:"y2",msa:"m1"},sha,new Set())],["s2","msa"]);
+  assert.deepEqual([...L.ghNeed({s1:"x1"},sha,new Set(["cards_s1.json","cards_own.json"]))],["s1","own"]); assert.deepEqual([...L.ghNeed({},{},null)],[]);
+  const c=[1,5,3,1000,0,900,-1,2], mem={sha,body:{"cards_s1.json":L.canon({cards:{"u1.0":c,"u1.1":c}}),"cards_s2.json":L.canon({cards:{"s2u001.0":c}})}};
+  // s1: the same cards in another order, not sent. s2: emptied by "start over", sent. msa: new, sent. own: empty and never stored, not sent
+  const ch=L.ghChanged({s1:{"u1.1":c,"u1.0":c},s2:{},msa:{"m.0":c},own:{}},mem);
+  assert.deepEqual([...ch.map(f=>f.path)],["cards_s2.json","cards_msa.json"]); assert.equal(ch[0].text,'{"cards":{}}'); assert.equal(ch[1].text,L.canon({cards:{"m.0":c}}));
+  const big=JSON.stringify({x:"قهوة ☕ "+"ab".repeat(200000)}); assert.equal(L.b64dec(L.b64enc(big)),big);
+  assert.equal(L.b64dec(Buffer.from("هلا").toString("base64").replace(/(.{2})/g,"$1\n")),"هلا"); // github wraps its base64 in newlines
 });
