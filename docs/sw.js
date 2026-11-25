@@ -1,7 +1,7 @@
 // offline support for the installed app. the page is fetched network-first (falling back to the saved copy offline or after 4 s)
 // so a new version shows up on the next open;
 // fonts and icons are cache-first because they never change under the same name
-const CACHE="harf-vbc9625714c", ROOT=new URL("./",location.href).pathname;
+const CACHE="harf-v0c5534edf1", ROOT=new URL("./",location.href).pathname;
 // the page is stored as "./" only: hosts like cloudflare pages redirect /index.html to /, and a redirected copy can't open the app offline
 const SHELL=["./","./manifest.webmanifest","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-maskable-512.png","./icons/apple-touch-icon.png","./icons/favicon-32.png",
   "./fonts/amiri-arabic-400-normal.woff2","./fonts/amiri-arabic-700-normal.woff2","./fonts/readex-pro-latin-400-normal.woff2","./fonts/readex-pro-latin-500-normal.woff2","./fonts/readex-pro-latin-600-normal.woff2","./fonts/readex-pro-latin-ext-400-normal.woff2"];

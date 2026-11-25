@@ -310,4 +310,6 @@ Two readings the table implies: a bare ة also follows a long ā (الْمُبَ
 
 The article does not hide the vowel before it: the proclitic, or the last letter of the word before an article, carries the vowel the transliteration has there. A short a needs fatḥa (وَاللّٰهْ wallāh, هَالتِّلِفَوْنْ hat-tilifōn, مَعَ السَّلَامَة maʿa s-salāma), no vowel needs sukūn (وْالْبَيْتْ w il-bēt). The one exception is the alif of الله after a sukūn in the word before (شَاءْ اللّٰهْ shāʼ allāh).
 
+A final ء written after a long ā but not said stays bare, like a silent ه or ة: the day names are ثَلَاثَاء thalātha and أَرْبَعَاء arbaʿa (الثَّلَاثَاء, الْأَرْبَعَاء). A final ء that is said keeps its sukūn: مَسَاءْ masāʼ, شَاءْ shāʼ.
+
 `tools/harakat_check.py` checks every row; its reading rules and tolerances are in the file's header comment.

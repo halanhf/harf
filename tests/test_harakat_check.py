@@ -204,6 +204,24 @@ class Checker(unittest.TestCase):
         self.assertEqual(hc.check_row("من البيت", "min il-bēt", "مِنْ الْبَيْتْ"), [])
         self.assertEqual(hc.check_row("في البيت", "fi l-bēt", "فِي الْبَيْتْ"), [])
 
+    # content fix wave B: a written but silent final hamza
+    def test_silent_final_hamza_after_alif(self):  # the day names thalātha / arbaʿa (s1u045, s1u047, s1u054)
+        for ar, tr, vow in [("يوم الثلاثاء", "yōm ith-thalātha", "يَوْمْ الثَّلَاثَاء"),
+                            ("يوم الأربعاء", "yōm il-arbaʿa", "يَوْمْ الْأَرْبَعَاء"),
+                            ("ثلاثاء", "thalātha", "ثَلَاثَاء"), ("أربعاء", "arbaʿa", "أَرْبَعَاء")]:
+            with self.subTest(vow=vow):
+                self.assertEqual(hc.check_row(ar, tr, vow), [])
+        # the sukūn form says the hamza is sounded, which the transliteration does not
+        self.assertTrue(has(hc.check_row("ثلاثاء", "thalātha", "ثَلَاثَاءْ"), "reading:"))
+
+    def test_sounded_final_hamza_still_needs_its_mark_and_is_read(self):  # masāʼ (s2u034), shāʼ (u10), ʼ after a non-alif letter
+        self.assertEqual(hc.check_row("مساء الخير", "masāʼ il-khēr", "مَسَاءْ الْخَيْرْ"), [])
+        self.assertEqual(hc.check_row("ما شاء الله", "mā shāʼ allāh", "مَا شَاءْ اللّٰهْ"), [])
+        r = hc.check_row("مساء الخير", "masāʼ il-khēr", "مَسَاء الْخَيْرْ")  # bare ء would be silent: the marks read masā, not masāʼ
+        self.assertTrue(has(r, "reading:"))
+        self.assertTrue(has(hc.check_row("ما شاء الله", "mā shāʼ allāh", "مَا شَاء اللّٰهْ"), "reading:"))
+        self.assertTrue(has(hc.check_row("جزء", "juzʼ", "جُزْء"), "vowels:", "ء has no vowel mark"))  # not after an alif: still unmarked
+
 class Cli(unittest.TestCase):  # main() on a throwaway repo layout, so these do not depend on how much of the real course is vowelled
     def setUp(self):
         import json

@@ -21,6 +21,7 @@
 #       after a sukūn it may add i, not a (وْالْبَيْتْ w il-bēt; وْاللّٰهْ is rejected). Unchanged: no letter before, a bare letter before, and the alif of الله after a sukūn in another word (شَاءْ اللّٰهْ)
 #     article lām right after it, when the next letter has a shadda (sun letter): silent
 #     ا after a letter with tanwin fatha, ا last in the word after و (رَاحَوْا), ة after a fatha, ه last in the word: silent
+#     ء last in the word after a bare ا: silent, and that ا may then be read short (the day names ثَلَاثَاء thalātha, أَرْبَعَاء arbaʿa); a sounded final ء keeps its sukūn (مَسَاءْ masāʼ, شَاءْ shāʼ)
 #     آ needs no mark: reads (ʼ)ā
 #   an ا with a mark only carries its vowel (اِنْتَ inta); a ة with a mark is t (construct -at)
 # tolerances, the complete list (anything else that does not match needs an entry in tools/harakat_allow.txt):
@@ -126,6 +127,7 @@ def read_word(word, probs, before=None):  # -> regex of one word; problems are a
             elif ch == "ا" and i == n - 1 and prev and prev[0] == "و": pass
             elif ch == "ة" and prev and (prev[1] == "a" or long_a): pass
             elif ch == "ه" and i == n - 1: pass
+            elif ch == "ء" and i == n - 1 and prev and prev[0] == "ا" and prev[1] is None: pass  # a final ء after a bare ا is written, not said (ثَلَاثَاء thalātha)
             else: probs.append(f"{ch} has no vowel mark in {word}")
             i += 1; continue
         if ch == "آ" or ch == "ى":

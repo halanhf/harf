@@ -1,9 +1,3 @@
 # rows whose vowelled form can't reproduce the transliteration under tools/harakat_check.py's reading rules.
 # one per line: <unit id> <items[i]|dialogue[i]> | <reason a reviewer can check>. it exempts only the reading check.
 s2u031 dialogue[3] | the loanword كاميرا is spelled with ي but said with a short i (kāmira), so the marks can only read ī there
-s1u045 items[8] | the day name is spelled with final اء but Gulf speech says a short a and drops the hamza (thalātha, arbaʿa); the marks keep the written ending
-s1u045 dialogue[5] | the day name is spelled with final اء but Gulf speech says a short a and drops the hamza (thalātha, arbaʿa); the marks keep the written ending
-s1u047 items[1] | the day name is spelled with final اء but Gulf speech says a short a and drops the hamza (thalātha, arbaʿa); the marks keep the written ending
-s1u047 dialogue[0] | the day name is spelled with final اء but Gulf speech says a short a and drops the hamza (thalātha, arbaʿa); the marks keep the written ending
-s1u047 dialogue[1] | the day name is spelled with final اء but Gulf speech says a short a and drops the hamza (thalātha, arbaʿa); the marks keep the written ending
-s1u054 dialogue[5] | the day name is spelled with final اء but Gulf speech says a short a and drops the hamza (thalātha, arbaʿa); the marks keep the written ending
