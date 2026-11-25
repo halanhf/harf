@@ -7,7 +7,9 @@
 # four checks per row (check_row):
 #   strip    the form with its marks removed is the arabic field, and keeps every shadda the arabic field has. the arabic field is never edited
 #   reading  the marks, read letter by letter, spell the transliteration: the form is split into words (whitespace and ، ؟ ! . … :) and each word into
-#            clusters (a letter + the marks after it); the sounds of all words are joined with nothing between them and must fullmatch translit_key(translit)
+#            clusters (a letter + the marks after it); the sounds are joined and must fullmatch translit_key(translit). a space or hyphen of the transliteration is a word break (_) that may fall between any two clusters
+#            or words, but must fall between a word whose last letter carries fatha, kasra or damma and a following word that starts with an article alif: the article's vowel cannot sit on the word before it
+#            (إِنْ شَاءْ اللّٰهْ, not شَاءَ اللّٰهْ). a w il-/min il- article i needs a real break before it, so وِالْ and بْالْ (bil-) are rejected
 #   nfc      the form is in Unicode canonical order (unicodedata.normalize("NFC", s) leaves it unchanged): on one letter the vowel comes before the shadda (يَّ), then sukūn or dagger alif
 #   vowels   every letter is fully vowelled (see "reading rules") and carries no mark it may not carry
 #
@@ -53,7 +55,7 @@ CONS = {"ب": "b", "ت": "t", "ث": "th", "ج": "(?:j|ch)", "ح": "ḥ", "خ": "
 CONS.update({h: "ʼ?" for h in HAMZA})
 CONS = {k: unicodedata.normalize("NFC", v) for k, v in CONS.items()}
 ARTICLE = "(?:a|i|ā)?"
-ARTICLE_AFTER_SUKUN = "(?:i|ā)?"  # a sukūn says there is no a before the article (w il-, not wa)
+ARTICLE_AFTER_SUKUN = "(?:_(?:i|ā))?"  # the i sits after a real break: w il-bēt, min il-bēt, never bil-  # a sukūn says there is no a before the article (w il-, not wa)
 
 def article_vowel(prev, own_word, allah):  # the reading of an article alif, given the cluster before it (the proclitic, or the last letter of the word before)
     # a fatḥa, kasra or ḍamma there is the vowel, so the alif adds none (wa-llāh, ha-ltilifōn, maʿa s-salāma); a sukūn lets it add i (w il-, min il-), not a.
@@ -84,7 +86,8 @@ def check_strip(vow, ar):
 def translit_key(tr):
     t = unicodedata.normalize("NFC", tr.lower()).replace("'", "ʼ").replace("’", "ʼ")
     t = t.replace("ē", "ay").replace("ō", "aw").replace("o", "ū")
-    return re.sub(r"[\s\-,.?!;:…\"“”()]", "", t)
+    t = re.sub(r"[,.?!;:…\"“”()]", "", t)
+    return re.sub(r"[\s\-]+", "_", t).strip("_")  # a space or hyphen is a word break, kept as _
 
 def clusters(word, probs):  # [(letter, vowel kind or None, shadda)]; vowel kind: a i u 0 an in un d(agger)
     out = []
@@ -137,26 +140,29 @@ def read_word(word, probs, before=None):  # -> regex of one word; problems are a
         if ch == "ا" and (v == "0" or sh): probs.append(f"the alif takes no sukūn or shadda in {word}")
         if ch == "ا" and v in ("an", "in", "un"): probs.append(f"tanwīn goes on the letter before the alif, the alif stays bare (V15) in {word}")
         c = "" if ch == "ا" else CONS[ch]
-        if sh: c += c
+        if sh: c = c + "_?" + c  # a break may fall inside a sun-letter doubling (is-salām)
         nxt = cl[i + 1] if i + 1 < n else None
         if (v in LONG and nxt and nxt[1] is None and not nxt[2] and nxt[0] in CARRIER[v] and not art(i + 1)):
             out.append((c, True, None)); out.append(("", False, v))
             after_long_a = v == "a" and nxt[0] == "ا"; i += 2; continue
         out.append((c + SHORT.get(v, ""), True, None)); i += 1
-    rx = ""
+    parts = []
     for k, (r, sounded, lv) in enumerate(out):
-        if lv: rx += LONG[lv] if any(o[1] for o in out[k + 1:]) else LONG_SHORT[lv]
-        else: rx += r
-    return rx
+        if lv: parts[-1] += LONG[lv] if any(o[1] for o in out[k + 1:]) else LONG_SHORT[lv]
+        else: parts.append(r)
+    return "_?".join(x for x in parts if x)  # a word break in the transliteration may fall between any two clusters
 
 def reading(vow):  # (regex, problems)
-    probs, rx, before = [], "", None
+    probs, rx, before, last = [], "", None, None
     for k, w in enumerate(re.split(r"([\s،؟!.…:]+)", vow)):
         if k % 2: before = before if w.isspace() else None  # a separator with punctuation in it ends the connection to the next word
         elif w:
-            rx += read_word(w, probs, before)
             cl = clusters(w, [])
-            before = cl[-1] if cl else None
+            if rx:  # words are joined by a break that may be absent, but must be there when a vowelled letter meets an article alif
+                starts_article = len(cl) > 1 and cl[0][0] == "ا" and cl[0][1] is None and cl[1][0] == "ل"
+                rx += "_" if (starts_article and last and last[1] in ("a", "i", "u")) else "_?"
+            rx += read_word(w, probs, before)
+            before = last = cl[-1] if cl else None
     return unicodedata.normalize("NFC", rx), probs
 
 def check_row(ar, tr, vow, allowed=False):
@@ -166,7 +172,7 @@ def check_row(ar, tr, vow, allowed=False):
     out += [f"vowels: {p}" for p in probs]
     ok = re.fullmatch(rx, translit_key(tr)) is not None
     if not allowed and not ok:
-        out.append(f'reading: translit {translit_key(tr)} / marks read {rx.replace("(?:", "(")}')
+        out.append(f'reading: translit {translit_key(tr)} / marks read {rx.replace("(?:", "(").replace("_?", "")}')
     if allowed and ok:
         out.append("reading: allowlisted but passes")
     return out

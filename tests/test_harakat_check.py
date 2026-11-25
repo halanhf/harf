@@ -72,8 +72,8 @@ class Checker(unittest.TestCase):
                 self.assertEqual(hc.check_row(ar, tr, vow), [])
 
     def test_translit_key(self):
-        self.assertEqual(hc.translit_key("w il-Kwēt, ōkē?"), "wilkwaytawkay")
-        self.assertEqual(hc.translit_key("il-fīdyo"), "ilfīdyū")
+        self.assertEqual(hc.translit_key("w il-Kwēt, ōkē?"), "w_il_kwayt_awkay")  # word breaks stay, as _
+        self.assertEqual(hc.translit_key("il-fīdyo"), "il_fīdyū")
 
     def test_strip_and_shadda_helpers(self):
         self.assertEqual(hc.strip_marks("رَيَّالْ"), "ريال")
@@ -231,6 +231,29 @@ class Checker(unittest.TestCase):
         self.assertTrue(r[0].startswith("nfc:"), r)
         self.assertEqual(hc.check_row("ريّال", "rayyāl", canon), [])
         self.assertTrue(has(hc.check_row("ريّال", "rayyāl", old, allowed=True), "nfc:"))  # an allowlist entry exempts the reading only
+
+    # final fix wave, item 2: the vowel of an article cannot move onto the word before it; V8 for the proclitics
+    def test_vowel_cannot_move_across_a_word_boundary(self):
+        pairs = [("إِنْ شَاءَ اللّٰهْ", "in shāʼ allāh", "إِنْ شَاءْ اللّٰهْ"), ("حَيَّاكَ اللّٰهْ", "ḥayyāk allāh", "حَيَّاكْ اللّٰهْ"),
+                 ("صَبَاحِ الْخَيْرْ", "ṣabāḥ il-khēr", "صَبَاحْ الْخَيْرْ"), ("يَوْمِ الْخَمِيسْ", "yōm il-khamīs", "يَوْمْ الْخَمِيسْ"),
+                 ("وَعَلَيْكُمِ السَّلَامْ", "wa ʿalaykum is-salām", "وَعَلَيْكُمْ السَّلَامْ"), ("مِنِ الشَّبَكَة", "min ish-shabaka", "مِنْ الشَّبَكَة"),
+                 ("زَيْنِ، الْحِينْ", "zēn, il-ḥīn", "زَيْنْ، الْحِينْ"), ("هَيِه النَّاسْ", "hē in-nās", "هَيْه النَّاسْ"),
+                 ("وِصْلَوِا الصُّبْحْ", "wiṣlaw iṣ-ṣubḥ", "وِصْلَوْا الصُّبْحْ"), ("أَنَاِ اللِّي", "ana illi", "أَنَا اللِّي"),
+                 ("يَلَّاِ، الْحِينْ", "yalla, il-ḥīn", "يَلَّا، الْحِينْ")]
+        for bad, tr, good in pairs:
+            with self.subTest(bad=bad):
+                self.assertTrue(has(hc.check_row(hc.strip_marks(bad), tr, bad), "reading:"), bad)
+                self.assertEqual(hc.check_row(hc.strip_marks(good), tr, good), [], good)
+        # the right vowels on the letter before still pass: the five real maʿa s-salāma rows, fi l-bēt, wa il-
+        for vow, tr in [("مَعَ السَّلَامَة", "maʿa s-salāma"), ("فِي الْبَيْتْ", "fi l-bēt"), ("هَالتِّلِفَوْنْ", "hat-tilifōn"), ("وَاللّٰهْ", "wallāh")]:
+            self.assertEqual(hc.check_row(hc.strip_marks(vow), tr, vow), [], vow)
+
+    def test_proclitic_marks_follow_v8(self):  # w il-: و takes sukūn; bil-: ب takes kasra
+        self.assertTrue(has(hc.check_row("والبيت", "w il-bēt", "وِالْبَيْتْ"), "reading:"))
+        self.assertEqual(hc.check_row("والبيت", "w il-bēt", "وْالْبَيْتْ"), [])
+        self.assertTrue(has(hc.check_row("بالعربي", "bil-ʿarabi", "بْالْعَرَبِي"), "reading:"))
+        self.assertEqual(hc.check_row("بالعربي", "bil-ʿarabi", "بِالْعَرَبِي"), [])
+
 
 class Cli(unittest.TestCase):  # main() on a throwaway repo layout, so these do not depend on how much of the real course is vowelled
     def setUp(self):
