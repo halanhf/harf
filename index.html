@@ -2477,7 +2477,7 @@ addEventListener("pagehide",()=>{ if(synced) pushRemote(); ghSync("hide"); });
 addEventListener("online",()=>{ ghSync("online"); });
 
 // a reset is a dated marker, so other devices drop their older progress when they next merge instead of bringing it back
-function startOver(){ const gen=S.gen; S=blank(); S.gen=gen; S.resetAt=Date.now(); S.resetDay=today(); save(); flush({replace:true}); rebuild(); refresh(); renderMe(); }
+function startOver(){ if(typeof resetTalk==="function") resetTalk(); /* talk screen is defined later */ const gen=S.gen; S=blank(); S.gen=gen; S.resetAt=Date.now(); S.resetDay=today(); save(); flush({replace:true}); rebuild(); refresh(); renderMe(); }
 
 // ===== sync to github (offline app only). the same merge as the account sync, through the github contents api =====
 // GH is the saved connection; everything else here lives in memory, except the status line's state, kept so "waiting" survives a reload
@@ -3300,8 +3300,11 @@ Transliteration (one scheme, always): long vowels ā ī ū; Gulf ē ō for ay/aw
 const learnerGender=()=>S.settings.gender==="f"?"The learner is a woman: address her with feminine forms (-ich, t-…-īn) throughout.":S.settings.gender==="m"?"The learner is a man: address him with masculine forms (-ak).":"Address the learner with masculine forms (-ak) unless they say they are a woman or use feminine forms about themselves (āsfa, ṭālba, rāyḥa); from then on use -ich / -īn forms.";
 const stageLine=()=>`Learner stage: ${currentStage()} of 5 (${STAGE_NAMES[currentStage()]}).`;
 let talkMode="chat";
-let chatDraft="", practiceQ=null, practiceAsk=null, practiceDraft="", practiceTries=0; // kept across redraws of the Talk tab
+let chatDraft="", chatInp=null, practiceQ=null, practiceAsk=null, practiceDraft="", practiceTries=0, practiceRes=null, practiceBusy=false, practiceUI=null; // kept across redraws of the Talk tab
+function resetPractice(){ practiceQ=practiceAsk=practiceRes=null; practiceDraft=""; practiceTries=0; practiceBusy=false; }
+function resetTalk(){ chatDraft=""; resetPractice(); }
 function renderTalk(){
+  if(dictSink&&dictSink.talk){ dictSink.done=true; dictSink=null; if(DICT) DICT.stop().catch(()=>{}); } // a dictation into the old boxes ends with them
   const sec=$("#talk"); sec.textContent="";
   if(!SAMPLE){ sec.append(el("h2",{textContent:"Talk"}),el("p",{className:"lede",textContent:"The conversation partner, sentence practice and stories need the claude.ai version of this page. Lessons, reviews, role-play and drills all work here."})); return; }
   const st=el("div",{className:"subtabs",role:"group","aria-label":"Talk sections"});
@@ -3314,7 +3317,7 @@ function dictateBtn(target){
   if(!DICT) return null;
   const b=el("button",{className:"btn",type:"button","aria-label":"Dictate in Arabic"},icon("mic")); let on=false;
   b.onclick=()=>{ if(on){ DICT.stop().catch(()=>{}); return; }
-    const base=target.value; const sink={final:"",partial:"",done:false,update(){ target.value=(base+(base?" ":"")+sink.final+" "+sink.partial).replace(/\s+/g," ").trimStart(); },
+    const base=target.value; const sink={final:"",partial:"",done:false,talk:true,update(){ if(!target.isConnected) return; target.value=(base+(base?" ":"")+sink.final+" "+sink.partial).replace(/\s+/g," ").trimStart(); if(target.oninput) target.oninput(); },
       ended(reason){ if(sink.done) return; sink.done=true; on=false; b.setAttribute("aria-pressed","false"); if(dictSink===sink) dictSink=null; sink.partial=""; sink.update(); if(reason==="not_granted"||reason==="unavailable"){ DICT=null; b.remove(); } }};
     stopAudio(); dictSink=sink; on=true; b.setAttribute("aria-pressed","true"); DICT.start({language:dictLang}).catch(e=>sink.ended(e&&e.code)); };
   return b;
@@ -3322,12 +3325,12 @@ function dictateBtn(target){
 function renderChat(sec){
   sec.append(el("p",{className:"lede",textContent:"Write or say something in Gulf Arabic, transliteration or English. Your partner replies at your level. If you make a mistake you get a hint first, so you can fix it yourself."}));
   const chat=el("div",{className:"chat","aria-live":"polite"}); sec.append(chat);
-  const scen=el("div",{className:"row",style:"margin-bottom:10px"}); ["Order at a café","Meet someone new","Take a taxi","Visit a friend's house"].forEach(s=>scen.append(el("button",{className:"btn small",type:"button",textContent:s,onclick:()=>{ inp.value="Let's role-play: "+s.toLowerCase()+". You start."; form.requestSubmit(); }})));
+  const scen=el("div",{className:"row",style:"margin-bottom:10px"}); ["Order at a café","Meet someone new","Take a taxi","Visit a friend's house"].forEach(s=>scen.append(el("button",{className:"btn small",type:"button",textContent:s,onclick:()=>{ inp.value=chatDraft="Let's role-play: "+s.toLowerCase()+". You start."; form.requestSubmit(); }})));
   sec.append(scen);
   const add=(cls,...kids)=>{ const m=el("div",{className:"msg "+cls},...kids); chat.append(m); return m; };
   const renderReply=(m,r,userText)=>{ m.textContent=""; ap(m,arSpan(String(r.arabic||"")),el("span",{className:"tr",style:"display:block",textContent:String(r.translit||"")}),el("span",{textContent:String(r.english||"")}));
     if(r.correction){ const fix=el("span",{className:"fix",hidden:true,textContent:String(r.correction)});
-      const row=el("span",{className:"row",style:"margin-top:6px"},el("button",{className:"btn small",type:"button",textContent:"Try again",onclick:()=>{ inp.value=chatDraft=userText||""; inp.focus(); }}),el("button",{className:"btn small ghost",type:"button",textContent:"Show the Gulf version",onclick:e=>{ fix.hidden=false; e.currentTarget.remove(); }}));
+      const row=el("span",{className:"row",style:"margin-top:6px"},el("button",{className:"btn small",type:"button",textContent:"Try again",onclick:()=>{ chatDraft=userText||""; chatInp.value=chatDraft; chatInp.focus(); }}),el("button",{className:"btn small ghost",type:"button",textContent:"Show the Gulf version",onclick:e=>{ fix.hidden=false; e.currentTarget.remove(); }}));
       ap(m,el("span",{className:"fix",textContent:"Something to fix: "+String(r.hint||"have another look at your Arabic.")}),row,fix); }
     const row=el("div",{className:"row",style:"margin-top:6px"},playBtn(String(r.arabic||""),"Hear")); m.append(row);
     (Array.isArray(r.new_words)?r.new_words:[]).slice(0,4).forEach(w=>{ if(!w||typeof w.ar!=="string"||typeof w.en!=="string") return;
@@ -3335,7 +3338,7 @@ function renderChat(sec){
   const fem=S.settings.gender==="f";
   if(!chatLog.length) add("",arSpan(fem?"هلا والله! شلونج اليوم؟":"هلا والله! شلونك اليوم؟"),el("span",{className:"tr",style:"display:block",textContent:fem?"hala wallāh! shlōnich il-yōm?":"hala wallāh! shlōnak il-yōm?"}),el("span",{textContent:"Hi there! How are you today?"}));
   chatLog.forEach((m,i)=>{ if(m.role==="user") add("me",el("span",{textContent:m.content})); else renderReply(add(""),m.r,(chatLog[i-1]||{}).content); });
-  const inp=typingBox(el("textarea",{id:"chat-input",placeholder:"زين الحمد لله … or: how do I say I'm tired?","aria-label":"your message"})); inp.value=chatDraft; inp.oninput=()=>{ chatDraft=inp.value; };
+  const inp=typingBox(el("textarea",{id:"chat-input",placeholder:"زين الحمد لله … or: how do I say I'm tired?","aria-label":"your message"})); inp.value=chatDraft; inp.oninput=()=>{ chatDraft=inp.value; }; chatInp=inp;
   const send=el("button",{className:"btn primary",type:"submit",textContent:"Send"});
   const form=el("form",{className:"compose"},inp,dictateBtn(inp),send); sec.append(form);
   form.onsubmit=async e=>{ e.preventDefault(); const text=inp.value.trim().slice(0,500); if(!text||send.disabled) return; inp.value=""; chatDraft=""; send.disabled=true;
@@ -3350,7 +3353,7 @@ Conversation so far:
 ${chatLog.slice(-12).map(m=>(m.role==="user"?"Learner: ":"Partner: ")+(m.role==="user"?m.content:m.r.arabic)).join("\n")}`;
     try{ const r=await SAMPLE.json(prompt,{modelTier:"default",cache:false}); if(!r||typeof r!=="object") throw new Error("bad");
       chatLog.push({role:"assistant",r}); renderReply(wait,r,text); S.talks=(S.talks||0)+1; touchDay(); logActivity(1); save(); }
-    catch(err){ chatLog.pop(); wait.remove(); chat.lastChild&&chat.lastChild.remove(); inp.value=chatDraft=text;
+    catch(err){ chatLog.pop(); wait.remove(); chat.lastChild&&chat.lastChild.remove(); if(!chatDraft) chatDraft=text; if(chatInp) chatInp.value=chatDraft;
       add("",el("span",{className:"feedback no",textContent:err&&err.code==="rate_limited"?"Too many messages at once. Wait a minute and send again.":"Your partner couldn't answer that. Your message is back in the box: try sending again."})); }
     send.disabled=false; };
 }
@@ -3377,8 +3380,10 @@ Return ONLY JSON: {"english": the sentence, "hint": one short hint in English na
       const full=(r,v)=>{ res.textContent=""; ap(res,el("div",{className:"stage"},el("p",{className:"feedback "+(v==="correct"?"ok":"no"),textContent:v==="correct"?"Correct":v==="close"?"Close":"Not quite"}),
         r.best?arSpan(String(r.best.ar||""),"mid"):null,r.best?el("p",{className:"tr",textContent:String(r.best.tr||"")}):null,el("p",{textContent:String(r.explanation||"")}),
         el("div",{className:"row center"},r.best?playBtn(String(r.best.ar||"")):null,r.best?el("button",{className:"btn small",type:"button",textContent:"+ Add to my cards",onclick:e=>{ addCustom({ar:r.best.ar,tr:r.best.tr,en:q.english}); e.currentTarget.disabled=true; e.currentTarget.textContent="Added"; }}):null),
-        el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Next sentence",onclick:()=>{ practiceQ=practiceAsk=null; practiceDraft=""; practiceTries=0; ask(); }})))); };
-      go.onclick=async()=>{ const a=inp.value.trim().slice(0,300); if(!a||go.disabled) return; go.disabled=true; practiceTries++; res.textContent=""; res.append(el("p",{className:"tag",textContent:"Checking…"}));
+        el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Next sentence",onclick:()=>{ resetPractice(); ask(); }})))); };
+      practiceUI={go,res,full,inp};
+      if(practiceRes){ go.remove(); full(practiceRes.r,practiceRes.v); } else if(practiceBusy){ go.disabled=true; res.append(el("p",{className:"tag",textContent:"Checking…"})); }
+      go.onclick=async()=>{ const a=inp.value.trim().slice(0,300); if(!a||go.disabled) return; practiceBusy=true; go.disabled=true; practiceTries++; res.textContent=""; res.append(el("p",{className:"tag",textContent:"Checking…"}));
         try{
           const r=await SAMPLE.json(`A learner of the dialect below was asked to translate: "${q.english}". They wrote: "${a}".
 Dialect: ${DIALECT}
@@ -3387,11 +3392,11 @@ Judge it as a friendly Gulf Arabic teacher. Accept any natural Gulf phrasing (Em
 "correct": natural Gulf with the right meaning. "close": right meaning, but with fuṣḥā, Egyptian or Levantine forms, the wrong gender, or a wrong verb prefix or ending. "wrong": the meaning is wrong.
 "best" stays as close to the learner's own wording as possible.
 Return ONLY JSON: {"verdict": "correct" | "close" | "wrong", "hint": one short English hint that points at what to fix WITHOUT giving the corrected words, "best": {"ar": a natural Gulf version in Arabic script, "tr": its transliteration}, "explanation": 1-2 short sentences in English on what to change and why (or why it's good)}`,{modelTier:"default",cache:false});
-          go.disabled=false; const v=String(r.verdict||""); touchDay(); logActivity(1); save();
-          if(v==="correct"||practiceTries>=2){ go.remove(); full(r,v); return; }
-          res.textContent=""; ap(res,el("p",{className:"feedback no",textContent:(v==="close"?"Close. ":"Not quite. ")+String(r.hint||"Have another look.")}),
-            el("div",{className:"row"},el("button",{className:"btn small",type:"button",textContent:"Try again",onclick:()=>{ inp.focus(); res.textContent=""; }}),el("button",{className:"btn small ghost",type:"button",textContent:"Show the answer",onclick:()=>{ go.remove(); full(r,v); }})));
-        }catch(err){ res.textContent=""; res.append(el("p",{className:"feedback no",textContent:"Couldn't check that just now. Try again."})); go.disabled=false; practiceTries--; }
+          practiceBusy=false; const u=practiceUI; u.go.disabled=false; const v=String(r.verdict||""); touchDay(); logActivity(1); save();
+          if(v==="correct"||practiceTries>=2){ practiceRes={r,v}; u.go.remove(); u.full(r,v); return; }
+          u.res.textContent=""; ap(u.res,el("p",{className:"feedback no",textContent:(v==="close"?"Close. ":"Not quite. ")+String(r.hint||"Have another look.")}),
+            el("div",{className:"row"},el("button",{className:"btn small",type:"button",textContent:"Try again",onclick:()=>{ u.inp.focus(); u.res.textContent=""; }}),el("button",{className:"btn small ghost",type:"button",textContent:"Show the answer",onclick:()=>{ practiceRes={r,v}; u.go.remove(); u.full(r,v); }})));
+        }catch(err){ practiceBusy=false; const u=practiceUI; u.res.textContent=""; u.res.append(el("p",{className:"feedback no",textContent:"Couldn't check that just now. Try again."})); u.go.disabled=false; practiceTries--; }
       };
     }catch(err){ box.textContent=""; box.append(el("p",{className:"feedback no",textContent:err&&err.code==="rate_limited"?"Too many requests. Try again in a minute.":"Couldn't think of a sentence. Try again."}),el("button",{className:"btn",type:"button",textContent:"Try again",onclick:ask})); }
   };

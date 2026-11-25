@@ -1033,15 +1033,15 @@ test("harakat: the vowelled form is display-only: no audio, speech, matching or 
 // the screens themselves, run against a small fake dom with the audio and checking calls recorded
 function uiEl(tag){ const e={tag,attrs:{},children:[],parent:null,style:{},hidden:false,className:"",
   setAttribute(k,v){ e.attrs[k]=String(v); },
-  isConnected:true,
+  detached:false, get isConnected(){ for(let n=e;n;n=n.parent) if(n.detached) return false; return true; },
   // like the browser: a node is added as it is, anything else (null, undefined, false, a number) becomes a text node of its string form
-  append(...k){ for(const c of k){ if(c&&typeof c==="object") c.parent=e; e.children.push(c&&typeof c==="object"?c:String(c)); } },
-  remove(){ if(e.parent) e.parent.children=e.parent.children.filter(x=>x!==e); e.parent=null; },
+  append(...k){ for(const c of k){ if(c&&typeof c==="object"){ c.parent=e; c.detached=false; } e.children.push(c&&typeof c==="object"?c:String(c)); } },
+  remove(){ if(e.parent) e.parent.children=e.parent.children.filter(x=>x!==e); e.parent=null; e.detached=true; },
   contains(n){ return n===e||e.children.some(c=>c&&typeof c==="object"&&c.contains(n)); },
   classList:{add:c=>{ e.className=(e.className+" "+c).trim(); },remove:c=>{ e.className=e.className.split(/\s+/).filter(x=>x&&x!==c).join(" "); },contains:c=>e.className.split(/\s+/).includes(c)},
-  scrollIntoView(){} };
+  scrollIntoView(){}, focus(){} };
   const own={}; e.dataset=new Proxy(own,{get:(o,k)=>k in o?o[k]:e.attrs["data-"+String(k).replace(/[A-Z]/g,c=>"-"+c.toLowerCase())]});
-  Object.defineProperty(e,"textContent",{get:()=>e._t||"",set:v=>{ e._t=String(v); e.children.forEach(c=>{ if(c&&typeof c==="object") c.parent=null; }); e.children=[]; }}); return e; }
+  Object.defineProperty(e,"textContent",{get:()=>e._t||"",set:v=>{ e._t=String(v); e.children.forEach(c=>{ if(c&&typeof c==="object"){ c.parent=null; c.detached=true; } }); e.children=[]; }}); return e; }
 const walk=n=>typeof n==="string"||!n?[]:[n,...n.children.flatMap(walk)];
 const txt=n=>typeof n==="string"?n:(n._t||"")+n.children.map(txt).join("");
 const byText=(root,t)=>walk(root).find(n=>n.tag==="button"&&txt(n)===t);
@@ -1062,7 +1062,7 @@ function loadScreens({harakat="auto",stage=1}={}){
     focusView:()=>{ spy.view={body:uiEl("div"),progress(){},alive:()=>true}; return spy.view; },focusCard(){},announce(){},buzz(){},stopAudio(){},keepAwake(){},
     sched:c=>c,touchDay(){},logActivity(){},addSentenceCards(){},show(){},refresh(){},heatmap:()=>uiEl("div"),forecastBars:()=>uiEl("div"),savedMsg:()=>"",
     STAGE_NAMES:[],stageInfo:()=>({}),shownStreak:()=>0,lessonsDone:()=>0,standalone:()=>false,ghPanel(){},installEvt:null,cleanIn:x=>x,DAY:86400000,SAMPLE:null,micBlocked:false,SR:null,DB:null,GH:null});
-  vm.runInContext("var enVoice=null, TTS=null, chatLog=[], generating=false, DICT=null; let keyHandler=null;",env);
+  vm.runInContext("var enVoice=null, TTS=null, chatLog=[], generating=false, DICT=null, dictSink=null, dictLang='ar-AE'; let keyHandler=null;",env);
   for(const s of [cut("const ap=","const SVG="),cut("let ITEMS={}","function rebuild"),cut("const liveCards=","const lessonsDone"),
       cut("const harOn=","\n"),cut("const bigAr=","\n"),cut("function openLesson","// ===== role-play"),cut("function roleplay(","// ===== review tab"),cut("let talkMode=","// ===== progress"),cut("function startReview","// ===== hands-free"),cut("function audioDrill","// ===== course"),cut("function renderMe","// ===== boot")])
     vm.runInContext(s,env);
@@ -1280,4 +1280,69 @@ test("voice notice: Hide keeps it hidden on this device after a reload, and it i
   const s=loadSpeech({voices:[{lang:"en-GB"}]}); assert.ok(txt(s.note).startsWith(s.env.VOICE_NOAR)); const before=JSON.stringify(s.t.serialize());
   press(byText(s.note,"Hide")); assert.equal(s.note.hidden,true); assert.equal(s.t.store.get(KEY+"-voice"),"hidden"); assert.equal(JSON.stringify(s.t.serialize()),before);
   const r=loadSpeech({voices:[{lang:"en-GB"}],fire:"none",store:s.t.store}); assert.equal(r.note.hidden,true); r.env.say("هلا"); await r.run(); assert.equal(r.note.hidden,true);
+});
+
+// fix round 1
+const talkSend=(sec,text)=>{ const f=walk(sec).find(n=>n.tag==="form"); const i=byId(sec,"chat-input"); i.value=text; i.oninput(); return f.onsubmit({preventDefault(){}}); };
+const typeIn=(sec,id,text)=>{ const i=byId(sec,id); i.value=text; i.oninput(); return i; };
+test("dictation: dictated text reaches the draft, survives a redraw, and a dictation left over from before the redraw writes nowhere",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); sc.env.SAMPLE={json:()=>new Promise(()=>{})}; let stopped=0;
+  vm.runInContext("DICT=null",sc.env); sc.env.__dict={start:async()=>{},stop:async()=>{ stopped++; }}; vm.runInContext("DICT=this.__dict",sc.env);
+  sc.env.renderTalk(); const old=byId(sec,"chat-input"); walk(sec).find(n=>n.attrs["aria-label"]==="Dictate in Arabic").onclick();
+  const sink=vm.runInContext("dictSink",sc.env); sink.final="مرحبا"; sink.update();
+  sc.env.renderTalk(); assert.equal(byId(sec,"chat-input").value.trim(),"مرحبا"); assert.equal(stopped,1); assert.equal(vm.runInContext("dictSink",sc.env),null);
+  old.value=""; sink.final="مرحبا بك"; sink.update(); assert.equal(old.value,""); assert.equal(byId(sec,"chat-input").value.trim(),"مرحبا");
+});
+test("dictation: dictated text in the sentence box reaches the practice draft",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); sc.env.SAMPLE={json:async()=>({english:"I want coffee",hint:"abi"})};
+  sc.env.__dict={start:async()=>{},stop:async()=>{}}; vm.runInContext("DICT=this.__dict; talkMode='practice'",sc.env);
+  sc.env.renderTalk(); await tick(); walk(sec).find(n=>n.attrs["aria-label"]==="Dictate in Arabic").onclick();
+  const sink=vm.runInContext("dictSink",sc.env); sink.final="ابي قهوة"; sink.update(); sc.env.renderTalk(); await tick();
+  assert.equal(byId(sec,"practice-input").value.trim(),"ابي قهوة");
+});
+test("scenario buttons: the starter text is the draft even when a reply is still on its way",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); sc.env.SAMPLE={json:()=>new Promise(()=>{})};
+  sc.env.renderTalk(); talkSend(sec,"hi"); const form=walk(sec).find(n=>n.tag==="form"); form.requestSubmit=()=>form.onsubmit({preventDefault(){}});
+  press(byText(sec,"Order at a café")); sc.env.renderTalk();
+  assert.equal(byId(sec,"chat-input").value,"Let's role-play: order at a café. You start.");
+});
+test("chat errors: a failed send puts the text back and it survives a redraw; Try again does too",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); sc.env.SAMPLE={json:async()=>{ throw new Error("x"); }};
+  sc.env.renderTalk(); await talkSend(sec,"hello"); assert.equal(byId(sec,"chat-input").value,"hello"); sc.env.renderTalk(); assert.equal(byId(sec,"chat-input").value,"hello");
+  const sc2=loadScreens(), sec2=talkOf(sc2); sc2.env.SAMPLE={json:async()=>({arabic:"زين",translit:"zēn",english:"good",correction:"c",hint:"h"})};
+  sc2.env.renderTalk(); await talkSend(sec2,"bad"); assert.equal(byId(sec2,"chat-input").value,"");
+  press(byText(sec2,"Try again")); assert.equal(byId(sec2,"chat-input").value,"bad"); sc2.env.renderTalk(); assert.equal(byId(sec2,"chat-input").value,"bad");
+});
+test("chat errors: a send that fails after a redraw writes to the box on screen, and never over a newer draft",async()=>{
+  for(const newer of [null,"newer"]){
+    const sc=loadScreens(), sec=talkOf(sc); let fail; sc.env.SAMPLE={json:()=>new Promise((_,rej)=>{ fail=rej; })};
+    sc.env.renderTalk(); const sent=talkSend(sec,"hello"); sc.env.renderTalk(); const now=byId(sec,"chat-input"); if(newer) typeIn(sec,"chat-input",newer);
+    fail(new Error("x")); await sent; assert.equal(byId(sec,"chat-input"),now); assert.equal(now.value,newer||"hello"); sc.env.renderTalk(); assert.equal(byId(sec,"chat-input").value,newer||"hello");
+  }
+});
+const PRACTICE_OK={verdict:"correct",best:{ar:"ابي قهوة",tr:"abi gahwa"},explanation:"ok"};
+test("practice: tries are kept across a redraw, so the second check reveals the answer",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); const replies=[{english:"I want coffee",hint:"abi"},{verdict:"wrong",hint:"h",best:{ar:"ابي قهوة",tr:"abi gahwa"},explanation:"e"}]; let n=0;
+  sc.env.SAMPLE={json:async()=>replies[Math.min(n++,1)]}; vm.runInContext('talkMode="practice"',sc.env); sc.env.renderTalk(); await tick();
+  typeIn(sec,"practice-input","x"); press(byText(sec,"Check")); await tick(); assert.equal(vm.runInContext("practiceTries",sc.env),1);
+  sc.env.renderTalk(); await tick(); assert.equal(vm.runInContext("practiceTries",sc.env),1); assert.ok(!byText(sec,"Next sentence"));
+  press(byText(sec,"Check")); await tick(); assert.ok(byText(sec,"Next sentence"));
+});
+test("practice: a redraw after the answer is shown keeps the answer and its buttons, and asks for nothing new",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); let n=0; sc.env.SAMPLE={json:async()=>n++?PRACTICE_OK:{english:"I want coffee",hint:"abi"}};
+  vm.runInContext('talkMode="practice"',sc.env); sc.env.renderTalk(); await tick(); typeIn(sec,"practice-input","ابي قهوة"); press(byText(sec,"Check")); await tick();
+  assert.ok(byText(sec,"Next sentence")); sc.env.renderTalk(); await tick();
+  assert.equal(n,2); assert.ok(byText(sec,"Next sentence")); assert.ok(byText(sec,"+ Add to my cards")); assert.ok(!byText(sec,"Check")); assert.ok(texts(sec).includes("I want coffee"));
+  press(byText(sec,"Next sentence")); await tick(); assert.equal(n,3); assert.ok(!byText(sec,"Next sentence"));
+});
+test("practice: a redraw while checking keeps Check disabled and shows the result in the box on screen",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); let n=0, give; sc.env.SAMPLE={json:()=>n++?new Promise(r=>{ give=r; }):Promise.resolve({english:"I want coffee",hint:"abi"})};
+  vm.runInContext('talkMode="practice"',sc.env); sc.env.renderTalk(); await tick(); typeIn(sec,"practice-input","ابي قهوة"); press(byText(sec,"Check")); await tick();
+  sc.env.renderTalk(); await tick(); assert.equal(byText(sec,"Check").disabled,true); assert.ok(texts(sec).includes("Checking…"));
+  give(PRACTICE_OK); await tick(); assert.ok(byText(sec,"Next sentence")); assert.equal(n,2);
+});
+test("start over: the Talk draft, sentence, answer and result are forgotten",()=>{
+  const sc=loadScreens(); vm.runInContext('chatDraft="a"; practiceQ={english:"x"}; practiceDraft="b"; practiceTries=1; practiceRes={}; practiceBusy=true;',sc.env); sc.env.resetTalk();
+  assert.deepEqual(JSON.parse(vm.runInContext("JSON.stringify([chatDraft,practiceQ,practiceAsk,practiceDraft,practiceTries,practiceRes,practiceBusy])",sc.env)),["",null,null,"",0,null,false]);
+  assert.ok(/function startOver\(\)\{[^\n]*\bresetTalk\(\)/.test(main));
 });
