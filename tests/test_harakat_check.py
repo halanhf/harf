@@ -254,6 +254,12 @@ class Checker(unittest.TestCase):
         self.assertTrue(has(hc.check_row("بالعربي", "bil-ʿarabi", "بْالْعَرَبِي"), "reading:"))
         self.assertEqual(hc.check_row("بالعربي", "bil-ʿarabi", "بِالْعَرَبِي"), [])
 
+    # item 3
+    def test_no_shadda_on_a_hamza_letter(self):
+        for ar, tr, bad in [("أنا", "ana", "أَّنَا"), ("شاء", "shāʼ", "شَاءّْ"), ("إن", "in", "إِّنْ"), ("سأل", "saʼal", "سَأَّلْ")]:
+            with self.subTest(bad=bad):
+                self.assertTrue(has(hc.check_row(ar, tr, bad), "vowels:", "shadda"), bad)
+        self.assertEqual(hc.check_row("سأل", "saʼal", "سَأَلْ"), [])
 
 class Cli(unittest.TestCase):  # main() on a throwaway repo layout, so these do not depend on how much of the real course is vowelled
     def setUp(self):

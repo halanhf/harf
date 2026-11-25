@@ -26,6 +26,7 @@
 #     ا after a letter with tanwin fatha, ا last in the word after و (رَاحَوْا), ة after a fatha, ه last in the word: silent
 #     ء last in the word after a bare ا: silent, and that ا may then be read short (the day names ثَلَاثَاء thalātha, أَرْبَعَاء arbaʿa); a sounded final ء keeps its sukūn (مَسَاءْ masāʼ, شَاءْ shāʼ)
 #     آ needs no mark: reads (ʼ)ā
+#   a shadda on a hamza letter (ء أ إ ؤ ئ) is a problem: a hamza is not doubled
 #   an ا with a mark only carries its vowel (اِنْتَ inta); a ة with a mark is t (construct -at)
 # tolerances, the complete list (anything else that does not match needs an entry in tools/harakat_allow.txt):
 #   T1 ق g/j/q, ك k/ch, ج j/ch, ش sh/ch, ض ظ ẓ/ḍ    T2 hamza letters may be silent, آ is ā with an optional ʼ    T3 the article's vowel comes from the transliteration
@@ -136,6 +137,7 @@ def read_word(word, probs, before=None):  # -> regex of one word; problems are a
             i += 1; continue
         if ch == "آ" or ch == "ى":
             probs.append(f"{ch} takes no mark in {word}"); i += 1; continue
+        if sh and ch in HAMZA: probs.append(f"{ch} takes no shadda (a hamza is not doubled) in {word}")
         if ch == "ا" and art(i): probs.append(f"the article alif takes no mark in {word}")
         if ch == "ا" and (v == "0" or sh): probs.append(f"the alif takes no sukūn or shadda in {word}")
         if ch == "ا" and v in ("an", "in", "un"): probs.append(f"tanwīn goes on the letter before the alif, the alif stays bare (V15) in {word}")
