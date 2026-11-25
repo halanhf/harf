@@ -11,43 +11,50 @@
     "A",
     "هلا! وين كنت؟ نتغدى مع بعض اليوم؟",
     "hala! wēn kint? nitghadda maʿa baʿaẓ il-yōm?",
-    "Hi! Where have you been? Shall we have lunch together today?"
+    "Hi! Where have you been? Shall we have lunch together today?",
+    "هَلَا! وَيْنْ كِنْتْ؟ نِتْغَدَّى مَعَ بَعَضْ الْيَوْمْ؟"
    ],
    [
     "B",
     "هلا فيك! ما أقدر، عندي شغل لين الساعة ثلاث",
     "hala fīk! ma agdar, ʿindi shughul lēn is-sāʿa thalāth",
-    "Hi! I can't, I've got work until three."
+    "Hi! I can't, I've got work until three.",
+    "هَلَا فِيكْ! مَا أَقْدَرْ، عِنْدِي شُغُلْ لَيْنْ السَّاعَة ثَلَاثْ"
    ],
    [
     "A",
     "عادي، نتغدى عقب الشغل",
     "ʿādi, nitghadda ʿugub ish-shughul",
-    "No problem, we'll have lunch after work."
+    "No problem, we'll have lunch after work.",
+    "عَادِي، نِتْغَدَّى عُقُبْ الشُّغُلْ"
    ],
    [
     "B",
     "بس بعد الغدا عندي محاضرة لين ست",
     "bas baʿd il-ghada ʿindi muḥāẓra lēn sitt",
-    "But after lunch I've got a lecture until six."
+    "But after lunch I've got a lecture until six.",
+    "بَسْ بَعْدْ الْغَدَا عِنْدِي مُحَاضْرَة لَيْنْ سِتّْ"
    ],
    [
     "A",
     "زين، وعقب المحاضرة؟ بترياك لين تخلص",
     "zēn, w ʿugub il-muḥāẓra? batrayyāk lēn tkhalliṣ",
-    "OK, and after the lecture? I'll wait for you until you finish."
+    "OK, and after the lecture? I'll wait for you until you finish.",
+    "زَيْنْ، وْعُقُبْ الْمُحَاضْرَة؟ بَتْرَيَّاكْ لَيْنْ تْخَلِّصْ"
    ],
    [
     "B",
     "مشكور! بعد المغرب نروح المول؟",
     "mashkūr! baʿd il-maghrib nrūḥ il-mōl?",
-    "Thanks! Shall we go to the mall after maghrib?"
+    "Thanks! Shall we go to the mall after maghrib?",
+    "مَشْكُورْ! بَعْدْ الْمَغْرِبْ نْرُوحْ الْمَوْلْ؟"
    ],
    [
     "A",
     "العفو. اتفقنا! من زمان ما شفتك",
     "il-ʿafu. ittafagna! min zamān ma shiftak",
-    "You're welcome. Deal! I haven't seen you for ages!"
+    "You're welcome. Deal! I haven't seen you for ages!",
+    "الْعَفُو. اِتَّفَقْنَا! مِنْ زَمَانْ مَا شِفْتَكْ"
    ]
   ],
   "items": [
@@ -56,63 +63,72 @@
     "lēn",
     "until",
     "حتى / إلى أن",
-    "also before a present verb: lēn tkhalliṣ 'until you finish'"
+    "also before a present verb: lēn tkhalliṣ 'until you finish'",
+    "لَيْنْ"
    ],
    [
     "عقب",
     "ʿugub",
     "after (before a noun) (UAE)",
     "بعد",
-    "baʿd (بعد) is the everyday form everywhere: baʿd il-maghrib"
+    "baʿd (بعد) is the everyday form everywhere: baʿd il-maghrib",
+    "عُقُبْ"
    ],
    [
     "لين الساعة ثلاث",
     "lēn is-sāʿa thalāth",
     "until three o'clock",
     "حتى الساعة الثالثة",
-    ""
+    "",
+    "لَيْنْ السَّاعَة ثَلَاثْ"
    ],
    [
     "محاضرة",
     "muḥāẓra",
     "a lecture, a class (at university)",
     "محاضرة",
-    ""
+    "",
+    "مُحَاضْرَة"
    ],
    [
     "بترياك",
     "batrayyāk",
     "I'll wait for you (to a man) (UAE)",
     "سأنتظرك",
-    "to a woman: batrayyāch (بترياج)"
+    "to a woman: batrayyāch (بترياج)",
+    "بَتْرَيَّاكْ"
    ],
    [
     "لين تخلص",
     "lēn tkhalliṣ",
     "until you finish (to a man)",
     "حتى تنتهي",
-    "to a woman: lēn tkhallṣīn (لين تخلصين)"
+    "to a woman: lēn tkhallṣīn (لين تخلصين)",
+    "لَيْنْ تْخَلِّصْ"
    ],
    [
     "مع بعض",
     "maʿa baʿaẓ",
     "together, with each other",
     "معًا",
-    "also: wiyya baʿaẓ (ويا بعض)"
+    "also: wiyya baʿaẓ (ويا بعض)",
+    "مَعَ بَعَضْ"
    ],
    [
     "من زمان ما شفتك",
     "min zamān ma shiftak",
     "I haven't seen you for ages, long time no see (to a man)",
     "لم أرك منذ زمن",
-    "to a woman: min zamān ma shiftich (من زمان ما شفتج)"
+    "to a woman: min zamān ma shiftich (من زمان ما شفتج)",
+    "مِنْ زَمَانْ مَا شِفْتَكْ"
    ],
    [
     "ما شفتك",
     "ma shiftak",
     "I haven't seen you, I didn't see you (to a man)",
     "لم أرك",
-    "to a woman: ma shiftich (ما شفتج)"
+    "to a woman: ma shiftich (ما شفتج)",
+    "مَا شِفْتَكْ"
    ]
   ]
  },
@@ -128,43 +144,50 @@
     "A",
     "صباح الخير! شو سويت أمس عقب الدوام؟",
     "ṣabāḥ il-khēr! shu sawwēt ams ʿugub id-dawām?",
-    "Good morning! What did you do yesterday after work?"
+    "Good morning! What did you do yesterday after work?",
+    "صَبَاحْ الْخَيْرْ! شُو سَوَّيْتْ أَمْسْ عُقُبْ الدَّوَامْ؟"
    ],
    [
     "B",
     "صباح النور. بعد ما خلصت، رحت المول ويا سيف",
     "ṣabāḥ in-nūr. baʿd ma khallaṣt, riḥt il-mōl wiyya Sēf",
-    "Good morning. After I finished, I went to the mall with Sēf."
+    "Good morning. After I finished, I went to the mall with Sēf.",
+    "صَبَاحْ النُّورْ. بَعْدْ مَا خَلَّصْتْ، رِحْتْ الْمَوْلْ وِيَّا سَيْفْ"
    ],
    [
     "A",
     "والله؟ شو اشتريت؟",
     "wallāh? shu ishtarēt?",
-    "Really? What did you buy?"
+    "Really? What did you buy?",
+    "وَاللّٰهْ؟ شُو اِشْتَرَيْتْ؟"
    ],
    [
     "B",
     "أول شي اشتريت قميص، وبعدها تعشينا",
     "awwal shay ishtarēt gamīṣ, w baʿd-ha tʿashshēna",
-    "First I bought a shirt, and after that we had dinner."
+    "First I bought a shirt, and after that we had dinner.",
+    "أَوَّلْ شَيْ اِشْتَرَيْتْ قَمِيصْ، وْبَعْدْهَا تْعَشَّيْنَا"
    ],
    [
     "A",
     "حلو! وعقب ما تعشيتوا؟",
     "ḥilu! w ʿugub ma tʿashshētu?",
-    "Nice! And after you'd had dinner?"
+    "Nice! And after you'd had dinner?",
+    "حِلُو! وْعُقُبْ مَا تْعَشَّيْتُوا؟"
    ],
    [
     "B",
     "آخر شي رجعت البيت ونمت. وانتي؟",
     "ākhir shay rijaʿt il-bēt w nimt. w inti?",
-    "In the end I went home and slept. And you?"
+    "In the end I went home and slept. And you?",
+    "آخِرْ شَيْ رِجَعْتْ الْبَيْتْ وْنِمْتْ. وْاِنْتِي؟"
    ],
    [
     "A",
     "أنا عقب ما رجعت البيت، نمت لين الصبح!",
     "ana ʿugub ma rijaʿt il-bēt, nimt lēn iṣ-ṣubḥ!",
-    "Me? After I got home, I slept till morning!"
+    "Me? After I got home, I slept till morning!",
+    "أَنَا عُقُبْ مَا رِجَعْتْ الْبَيْتْ، نِمْتْ لَيْنْ الصُّبْحْ!"
    ]
   ],
   "items": [
@@ -173,63 +196,72 @@
     "baʿd ma",
     "after (before a verb: after I …, after you …)",
     "بعد أن",
-    ""
+    "",
+    "بَعْدْ مَا"
    ],
    [
     "عقب ما",
     "ʿugub ma",
     "after (before a verb) (UAE)",
     "بعد أن",
-    "everyone also says baʿd ma (بعد ما)"
+    "everyone also says baʿd ma (بعد ما)",
+    "عُقُبْ مَا"
    ],
    [
     "بعد ما خلصت",
     "baʿd ma khallaṣt",
     "after I finished; after you finished (to a man)",
     "بعد أن انتهيت",
-    "to a woman: baʿd ma khallaṣti (بعد ما خلصتي)"
+    "to a woman: baʿd ma khallaṣti (بعد ما خلصتي)",
+    "بَعْدْ مَا خَلَّصْتْ"
    ],
    [
     "أول شي",
     "awwal shay",
     "first (of all), first thing",
     "أولًا",
-    ""
+    "",
+    "أَوَّلْ شَيْ"
    ],
    [
     "بعدها",
     "baʿd-ha",
     "after that, then",
     "بعد ذلك",
-    "UAE also: ʿugubha (عقبها)"
+    "UAE also: ʿugubha (عقبها)",
+    "بَعْدْهَا"
    ],
    [
     "آخر شي",
     "ākhir shay",
     "in the end, finally; the last thing",
     "أخيرًا / في النهاية",
-    ""
+    "",
+    "آخِرْ شَيْ"
    ],
    [
     "تعشينا",
     "tʿashshēna",
     "we had dinner",
     "تعشينا",
-    "you had dinner (to a group): tʿashshētu (تعشيتوا)"
+    "you had dinner (to a group): tʿashshētu (تعشيتوا)",
+    "تْعَشَّيْنَا"
    ],
    [
     "رجعت البيت",
     "rijaʿt il-bēt",
     "I went home, I got home; you went home (to a man)",
     "عدت إلى البيت",
-    "to a woman: rijaʿti l-bēt"
+    "to a woman: rijaʿti l-bēt",
+    "رِجَعْتْ الْبَيْتْ"
    ],
    [
     "لين الصبح",
     "lēn iṣ-ṣubḥ",
     "till morning",
     "حتى الصباح",
-    ""
+    "",
+    "لَيْنْ الصُّبْحْ"
    ]
   ]
  },
@@ -245,43 +277,50 @@
     "A",
     "وين رايح؟ اقعد لين يرجع بو سيف",
     "wēn rāyiḥ? igʿid lēn yirjaʿ Bū Sēf",
-    "Where are you off to? Stay until Sēf's dad gets back."
+    "Where are you off to? Stay until Sēf's dad gets back.",
+    "وَيْنْ رَايِحْ؟ اِقْعِدْ لَيْنْ يِرْجَعْ بُو سَيْفْ"
    ],
    [
     "B",
     "عن إذنكم يا أم سيف، أحسن أروح. عندي محاضرة الصبح",
     "ʿan idhnakum yā Umm Sēf, aḥsan arūḥ. ʿindi muḥāẓra ṣ-ṣubḥ",
-    "Excuse me, Umm Sēf, I'd better go. I've got a lecture in the morning."
+    "Excuse me, Umm Sēf, I'd better go. I've got a lecture in the morning.",
+    "عَنْ إِذْنَكُمْ يَا أُمّْ سَيْفْ، أَحْسَنْ أَرُوحْ. عِنْدِي مُحَاضْرَة الصُّبْحْ"
    ],
    [
     "A",
     "زين، بس قبل لا تروح، اشرب قهوة",
     "zēn, bas gabil la trūḥ, ishrab gahwa",
-    "All right, but before you go, have a coffee."
+    "All right, but before you go, have a coffee.",
+    "زَيْنْ، بَسْ قَبِلْ لَا تْرُوحْ، اِشْرَبْ قَهْوَة"
    ],
    [
     "B",
     "تسلمين! بشربها بسرعة قبل لا أتأخر",
     "tislamīn! bashrabha b-surʿa gabil la atʼakhkhar",
-    "Thank you! I'll drink it quickly, before I stay too late."
+    "Thank you! I'll drink it quickly, before I'm late.",
+    "تِسْلَمِينْ! بَشْرَبْهَا بْسُرْعَة قَبِلْ لَا أَتْأَخَّرْ"
    ],
    [
     "A",
     "الله يسلمك. وقبل لا أنسى، هذي حلويات حقك",
     "allāh ysallmak. w gabil la ansa, hādhi ḥalawiyyāt ḥaggak",
-    "God keep you. And before I forget, these sweets are for you."
+    "God keep you. And before I forget, these sweets are for you.",
+    "اللّٰهْ يْسَلّْمَكْ. وْقَبِلْ لَا أَنْسَى، هٰذِي حَلَوِيَّاتْ حَقَّكْ"
    ],
    [
     "B",
     "ما قصرتي! ما في داعي",
     "mā gaṣṣarti! ma fī dāʿi",
-    "That's so kind of you! There's no need."
+    "That's so kind of you! There's no need.",
+    "مَا قَصَّرْتِي! مَا فِي دَاعِي"
    ],
    [
     "A",
     "ما سوينا شي. البيت بيتك",
     "mā sawwēna shay. il-bēt bētak",
-    "It was nothing. This is your home too."
+    "It was nothing. This is your home too.",
+    "مَا سَوَّيْنَا شَيْ. الْبَيْتْ بَيْتَكْ"
    ]
   ],
   "items": [
@@ -290,63 +329,72 @@
     "gabil la",
     "before (before a verb)",
     "قبل أن",
-    "also: gabil ma (قبل ما)"
+    "also: gabil ma (قبل ما)",
+    "قَبِلْ لَا"
    ],
    [
     "قبل لا تروح",
     "gabil la trūḥ",
     "before you go (to a man)",
     "قبل أن تذهب",
-    "to a woman: gabil la trūḥīn (قبل لا تروحين)"
+    "to a woman: gabil la trūḥīn (قبل لا تروحين)",
+    "قَبِلْ لَا تْرُوحْ"
    ],
    [
     "قبل لا أنسى",
     "gabil la ansa",
     "before I forget",
     "قبل أن أنسى",
-    ""
+    "",
+    "قَبِلْ لَا أَنْسَى"
    ],
    [
     "أحسن أروح",
     "aḥsan arūḥ",
     "I'd better go",
     "من الأفضل أن أذهب",
-    "when leaving a host, start with ʿan idhnakum (عن إذنكم) 'excuse me (to the family)'"
+    "when leaving a host, start with ʿan idhnakum (عن إذنكم) 'excuse me (to the family)'",
+    "أَحْسَنْ أَرُوحْ"
    ],
    [
     "اشرب قهوة",
     "ishrab gahwa",
     "have a coffee (to a man)",
     "اشرب قهوة",
-    "to a woman: ishrabi gahwa (اشربي قهوة)"
+    "to a woman: ishrabi gahwa (اشربي قهوة)",
+    "اِشْرَبْ قَهْوَة"
    ],
    [
     "تسلمين",
     "tislamīn",
     "thank you (to a woman)",
     "شكرًا لكِ",
-    "to a man: tislam (تسلم); the reply is allāh ysallmak (to a man) or allāh ysallmich (to a woman)"
+    "to a man: tislam (تسلم); the reply is allāh ysallmak (to a man) or allāh ysallmich (to a woman)",
+    "تِسْلَمِينْ"
    ],
    [
     "البيت بيتك",
     "il-bēt bētak",
     "you're always welcome here (lit. the house is your house) (to a man)",
     "البيت بيتك",
-    "to a woman: il-bēt bētich"
+    "to a woman: il-bēt bētich",
+    "الْبَيْتْ بَيْتَكْ"
    ],
    [
     "وين رايح؟",
     "wēn rāyiḥ?",
     "where are you off to? (to a man)",
     "إلى أين أنت ذاهب؟",
-    "to a woman: wēn rāyḥa?"
+    "to a woman: wēn rāyḥa?",
+    "وَيْنْ رَايِحْ؟"
    ],
    [
     "لين يرجع",
     "lēn yirjaʿ",
     "until he gets back",
     "حتى يرجع",
-    "until she gets back: lēn tirjaʿ (لين ترجع)"
+    "until she gets back: lēn tirjaʿ (لين ترجع)",
+    "لَيْنْ يِرْجَعْ"
    ]
   ]
  },
@@ -362,43 +410,50 @@
     "A",
     "شو سويت يوم ييت دبي أول مرة؟",
     "shu sawwēt yōm yīt Dbayy awwal marra?",
-    "What did you do when you first came to Dubai?"
+    "What did you do when you first came to Dubai?",
+    "شُو سَوَّيْتْ يَوْمْ يِيتْ دْبَيّْ أَوَّلْ مَرَّة؟"
    ],
    [
     "B",
     "يوم وصلت، كان الحر وايد!",
     "yōm wiṣalt, kān il-ḥarr wāyid!",
-    "When I arrived, it was so hot!"
+    "When I arrived, it was so hot!",
+    "يَوْمْ وِصَلْتْ، كَانْ الْحَرّْ وَايِدْ!"
    ],
    [
     "A",
     "والله؟ ولما طلعت من المطار؟",
     "wallāh? w lamma ṭilaʿt min il-maṭār?",
-    "Really? And when you came out of the airport?"
+    "Really? And when you came out of the airport?",
+    "وَاللّٰهْ؟ وْلَمَّا طِلَعْتْ مِنْ الْمَطَارْ؟"
    ],
    [
     "B",
     "أول ما طلعت، شربت ماي بارد. كان أحسن شي!",
     "awwal ma ṭilaʿt, shirabt māy bārid. kān aḥsan shay!",
-    "As soon as I came out, I drank cold water. It was the best thing ever!"
+    "As soon as I came out, I drank cold water. It was the best thing ever!",
+    "أَوَّلْ مَا طِلَعْتْ، شِرَبْتْ مَايْ بَارِدْ. كَانْ أَحْسَنْ شَيْ!"
    ],
    [
     "A",
     "وباكر مسافر لندن؟",
     "w bāchir msāfir Landan?",
-    "And you're flying to London tomorrow?"
+    "And you're flying to London tomorrow?",
+    "وْبَاكِرْ مْسَافِرْ لَنْدَنْ؟"
    ],
    [
     "B",
     "هيه، بس قبل لا أروح لازم أخلص شغلي",
     "hē, bas gabil la arūḥ lāzim akhalliṣ shughli",
-    "Yes, but before I go I have to finish my work."
+    "Yes, but before I go I have to finish my work.",
+    "هَيْه، بَسْ قَبِلْ لَا أَرُوحْ لَازِمْ أَخَلِّصْ شُغْلِي"
    ],
    [
     "A",
     "زين. أول ما توصل، طرش لي رسالة",
     "zēn. awwal ma tōṣal, ṭarrish-li risāla",
-    "OK. As soon as you land, send me a message."
+    "OK. As soon as you land, send me a message.",
+    "زَيْنْ. أَوَّلْ مَا تَوْصَلْ، طَرِّشْ لِي رِسَالَة"
    ]
   ],
   "items": [
@@ -407,56 +462,64 @@
     "awwal ma",
     "as soon as",
     "بمجرد أن / حالما",
-    ""
+    "",
+    "أَوَّلْ مَا"
    ],
    [
     "أول ما طلعت",
     "awwal ma ṭilaʿt",
     "as soon as I came out; as soon as you came out (to a man)",
     "حالما خرجت",
-    "to a woman: awwal ma ṭilaʿti (أول ما طلعتي)"
+    "to a woman: awwal ma ṭilaʿti (أول ما طلعتي)",
+    "أَوَّلْ مَا طِلَعْتْ"
    ],
    [
     "أول ما توصل",
     "awwal ma tōṣal",
     "as soon as you get there (to a man)",
     "حالما تصل",
-    "to a woman: awwal ma tōṣlīn (أول ما توصلين)"
+    "to a woman: awwal ma tōṣlīn (أول ما توصلين)",
+    "أَوَّلْ مَا تَوْصَلْ"
    ],
    [
     "يوم وصلت",
     "yōm wiṣalt",
     "when I arrived; when you arrived (to a man)",
     "عندما وصلت",
-    "to a woman: yōm wiṣalti"
+    "to a woman: yōm wiṣalti",
+    "يَوْمْ وِصَلْتْ"
    ],
    [
     "يوم ييت",
     "yōm yīt",
     "when I came; when you came (to a man)",
     "عندما جئت",
-    "to a woman: yōm yīti; you'll see written يوم جيت"
+    "to a woman: yōm yīti; you'll see written يوم جيت",
+    "يَوْمْ يِيتْ"
    ],
    [
     "مسافر",
     "msāfir",
     "travelling, flying (somewhere) (a man)",
     "مسافر",
-    "a woman: msāfra (مسافرة)"
+    "a woman: msāfra (مسافرة)",
+    "مْسَافِرْ"
    ],
    [
     "لما",
     "lamma",
     "when (before a past verb)",
     "عندما / لما",
-    "lamma ṭilaʿt = yōm ṭilaʿt 'when I came out'"
+    "lamma ṭilaʿt = yōm ṭilaʿt 'when I came out'",
+    "لَمَّا"
    ],
    [
     "قبل لا أروح",
     "gabil la arūḥ",
     "before I go",
     "قبل أن أذهب",
-    ""
+    "",
+    "قَبِلْ لَا أَرُوحْ"
    ]
   ]
  },
@@ -472,43 +535,50 @@
     "B",
     "يا شباب، نطلع الساعة خمس عشان نلحق",
     "yā shabāb, niṭlaʿ is-sāʿa khams ʿashān nilḥag",
-    "Guys, let's leave at five so we make it in time."
+    "Guys, let's leave at five so we make it in time.",
+    "يَا شَبَابْ، نِطْلَعْ السَّاعَة خَمْسْ عَشَانْ نِلْحَقْ"
    ],
    [
     "A",
     "خمس؟ عشان شو؟ الفلم الساعة ثمان!",
     "khams? ʿashān shu? il-film is-sāʿa thamān!",
-    "Five? What for? The film's at eight!"
+    "Five? What for? The film's at eight!",
+    "خَمْسْ؟ عَشَانْ شُو؟ الْفِلْمْ السَّاعَة ثَمَانْ!"
    ],
    [
     "B",
     "عشان نلقى باركن. وبعدها نتعشى مع بعض",
     "ʿashān nilga bārkin. w baʿd-ha nitʿashsha maʿa baʿaẓ",
-    "So we find a parking space. And then we'll have dinner together."
+    "So we find a parking space. And then we'll have dinner together.",
+    "عَشَانْ نِلْقَى بَارْكِنْ. وْبَعْدْهَا نِتْعَشَّى مَعَ بَعَضْ"
    ],
    [
     "A",
     "زين، والتذاكر؟",
     "zēn, w it-tadhākir?",
-    "OK, and the tickets?"
+    "OK, and the tickets?",
+    "زَيْنْ، وْالتَّذَاكِرْ؟"
    ],
    [
     "B",
     "اشتريتها أمس. بس تعالوا بدري عشان ما نتأخر!",
     "ishtarēt-ha ams. bas taʿālu badri ʿashān ma nitʼakhkhar!",
-    "I bought them yesterday. Just come early so we're not late!"
+    "I bought them yesterday. Just come early so we're not late!",
+    "اِشْتَرَيْتْهَا أَمْسْ. بَسْ تَعَالُوا بَدْرِي عَشَانْ مَا نِتْأَخَّرْ!"
    ],
    [
     "A",
     "ومنو بيسوق؟",
     "w minu biysūg?",
-    "And who's driving?"
+    "And who's driving?",
+    "وْمِنُو بِيْسُوقْ؟"
    ],
    [
     "B",
     "أنا بسوق. عشان جي قلت لكم: الساعة خمس!",
     "ana basūg. ʿashān chī gilt-lkum: is-sāʿa khams!",
-    "I'll drive. That's why I told you: five o'clock!"
+    "I'll drive. That's why I told you: five o'clock!",
+    "أَنَا بَسُوقْ. عَشَانْ جِي قِلْتْ لْكُمْ: السَّاعَة خَمْسْ!"
    ]
   ],
   "items": [
@@ -517,56 +587,64 @@
     "ʿashān ma nitʼakhkhar",
     "so that we're not late",
     "لكي لا نتأخر",
-    ""
+    "",
+    "عَشَانْ مَا نِتْأَخَّرْ"
    ],
    [
     "عشان شو؟",
     "ʿashān shu?",
     "what for?",
     "لماذا؟",
-    "Kuwait: ʿashān shinu? (عشان شنو)"
+    "Kuwait: ʿashān shinu? (عشان شنو)",
+    "عَشَانْ شُو؟"
    ],
    [
     "عشان جي",
     "ʿashān chī",
     "that's why, so",
     "لذلك",
-    "wider Gulf and Kuwait: ʿashān chidhi (عشان جذي)"
+    "wider Gulf and Kuwait: ʿashān chidhi (عشان جذي)",
+    "عَشَانْ جِي"
    ],
    [
     "باركن",
     "bārkin",
     "a parking space, parking",
     "موقف سيارات",
-    "from English 'parking'"
+    "from English 'parking'",
+    "بَارْكِنْ"
    ],
    [
     "التذاكر",
     "it-tadhākir",
     "the tickets",
     "التذاكر",
-    "one ticket: tadhkara (تذكرة)"
+    "one ticket: tadhkara (تذكرة)",
+    "التَّذَاكِرْ"
    ],
    [
     "أنا بسوق",
     "ana basūg",
     "I'll drive",
     "أنا سأقود",
-    ""
+    "",
+    "أَنَا بَسُوقْ"
    ],
    [
     "قلت لكم",
     "gilt-lkum",
     "I told you (to a group)",
     "قلت لكم",
-    "to one man: gilt-lak; to one woman: gilt-lich"
+    "to one man: gilt-lak; to one woman: gilt-lich",
+    "قِلْتْ لْكُمْ"
    ],
    [
     "عشان نلحق",
     "ʿashān nilḥag",
     "so that we make it (in time)",
     "لكي نلحق",
-    "nilḥag = we catch, we make it"
+    "nilḥag = we catch, we make it",
+    "عَشَانْ نِلْحَقْ"
    ]
   ]
  },
@@ -582,43 +660,50 @@
     "A",
     "منو الريّال اللي يم الباب؟",
     "minu r-rayyāl illi yamm il-bāb?",
-    "Who's the guy by the door?"
+    "Who's the guy by the door?",
+    "مِنُو الرَّيَّالْ اللِّي يَمّْ الْبَابْ؟"
    ],
    [
     "B",
     "هذا مارك، ربيعي اللي من لندن",
     "hādha Mārk, rbīʿi illi min Landan",
-    "That's Mark, my friend from London."
+    "That's Mark, my friend from London.",
+    "هٰذَا مَارْكْ، رْبِيعِي اللِّي مِنْ لَنْدَنْ"
    ],
    [
     "A",
     "والشباب اللي هناك؟ أول مرة أشوفهم",
     "w ish-shabāb illi hnāk? awwal marra ashūfhum",
-    "And the guys over there? It's the first time I've seen them."
+    "And the guys over there? It's the first time I've seen them.",
+    "وْالشَّبَابْ اللِّي هْنَاكْ؟ أَوَّلْ مَرَّة أَشُوفْهُمْ"
    ],
    [
     "B",
     "هذيلا الطلاب اللي يدرسون وياي هندسة",
     "hādhēla ṭ-ṭullāb illi yidrisūn wiyyāy handasa",
-    "They're the students who study engineering with me."
+    "They're the students who study engineering with me.",
+    "هٰذَيْلَا الطُّلَّابْ اللِّي يِدْرِسُونْ وِيَّايْ هَنْدَسَة"
    ],
    [
     "A",
     "زين. والكتاب اللي على الطاولة، حقك؟",
     "zēn. w il-kitāb illi ʿala ṭ-ṭāwla, ḥaggak?",
-    "OK. And the book on the table, is it yours?"
+    "OK. And the book on the table, is it yours?",
+    "زَيْنْ. وْالْكِتَابْ اللِّي عَلَى الطَّاوْلَة، حَقَّكْ؟"
    ],
    [
     "B",
     "لا، حق الطالب اللي يقعد يمي",
     "la, ḥagg iṭ-ṭālib illi yigʿid yammi",
-    "No, it belongs to the student who sits next to me."
+    "No, it belongs to the student who sits next to me.",
+    "لَا، حَقّْ الطَّالِبْ اللِّي يِقْعِدْ يَمِّي"
    ],
    [
     "A",
     "يلا، قبل لا نتأخر! المحاضرة اللي الساعة عشر بتبدا",
     "yalla, gabil la nitʼakhkhar! il-muḥāẓra illi s-sāʿa ʿashr bitibda",
-    "Come on, before we're late! The ten o'clock lecture is about to start."
+    "Come on, before we're late! The ten o'clock lecture is about to start.",
+    "يَلَّا، قَبِلْ لَا نِتْأَخَّرْ! الْمُحَاضْرَة اللِّي السَّاعَة عَشْرْ بِتِبْدَا"
    ]
   ],
   "items": [
@@ -627,63 +712,72 @@
     "illi",
     "who, that, which (after a definite noun)",
     "الذي / التي",
-    "never changes for gender or number; not used after an indefinite noun; you'll see written الي"
+    "never changes for gender or number; not used after an indefinite noun; you'll see written الي",
+    "اللِّي"
    ],
    [
     "الريّال اللي",
     "ir-rayyāl illi",
     "the man who, the guy who",
     "الرجل الذي",
-    ""
+    "",
+    "الرَّيَّالْ اللِّي"
    ],
    [
     "الشباب اللي",
     "ish-shabāb illi",
     "the guys who, the young men who",
     "الشباب الذين",
-    ""
+    "",
+    "الشَّبَابْ اللِّي"
    ],
    [
     "الكتاب اللي على الطاولة",
     "il-kitāb illi ʿala ṭ-ṭāwla",
     "the book (that's) on the table",
     "الكتاب الذي على الطاولة",
-    ""
+    "",
+    "الْكِتَابْ اللِّي عَلَى الطَّاوْلَة"
    ],
    [
     "بتبدا",
     "bitibda",
     "it's going to start, it'll start (a feminine thing: a lecture, a party)",
     "ستبدأ",
-    "a masculine thing (a film, a meeting): biyibda (بيبدا)"
+    "a masculine thing (a film, a meeting): biyibda (بيبدا)",
+    "بِتِبْدَا"
    ],
    [
     "يقعد",
     "yigʿid",
     "he sits",
     "يجلس",
-    "UAE also: yiylis (ييلس)"
+    "UAE also: yiylis (ييلس)",
+    "يِقْعِدْ"
    ],
    [
     "يمي",
     "yammi",
     "next to me",
     "بجانبي",
-    "next to you: yammak (to a man), yammich (to a woman)"
+    "next to you: yammak (to a man), yammich (to a woman)",
+    "يَمِّي"
    ],
    [
     "ربيعي اللي",
     "rbīʿi illi",
     "my friend who, my friend (the one) …",
     "صديقي الذي",
-    "a woman says, about a female friend: rbīʿti illi (ربيعتي اللي)"
+    "a woman says, about a female friend: rbīʿti illi (ربيعتي اللي)",
+    "رْبِيعِي اللِّي"
    ],
    [
     "يم الباب",
     "yamm il-bāb",
     "by the door, next to the door",
     "بجانب الباب",
-    ""
+    "",
+    "يَمّْ الْبَابْ"
    ]
   ]
  },
@@ -699,43 +793,50 @@
     "A",
     "شلونك؟ شلون الدراسة؟",
     "shlōnak? shlōn id-dirāsa?",
-    "How are you? How are your studies going?"
+    "How are you? How are your studies going?",
+    "شْلَوْنَكْ؟ شْلَوْنْ الدِّرَاسَة؟"
    ],
    [
     "B",
     "زين الحمد لله، بس وايد صعبة",
     "zēn il-ḥamdu lillāh, bas wāyid ṣaʿba",
-    "Fine, thank God, but it's really hard."
+    "Fine, thank God, but it's really hard.",
+    "زَيْنْ الْحَمْدُ لِلّٰهْ، بَسْ وَايِدْ صَعْبَة"
    ],
    [
     "A",
     "ليش؟ شنو تخصصك؟",
     "lēsh? shinu takhaṣṣuṣak?",
-    "Why? What's your major?"
+    "Why? What's your major?",
+    "لَيْشْ؟ شِنُو تَخَصُّصَكْ؟"
    ],
    [
     "B",
     "هندسة. والمادة اللي عندي الحين صعبة",
     "handasa. w il-māda illi ʿindi l-ḥīn ṣaʿba",
-    "Engineering. And the module I've got now is hard."
+    "Engineering. And the module I've got now is hard.",
+    "هَنْدَسَة. وْالْمَادَة اللِّي عِنْدِي الْحِينْ صَعْبَة"
    ],
    [
     "A",
     "عندك امتحان هالأسبوع؟",
     "ʿindak imtiḥān hal-usbūʿ?",
-    "Have you got an exam this week?"
+    "Have you got an exam this week?",
+    "عِنْدَكْ اِمْتِحَانْ هَالْأُسْبُوعْ؟"
    ],
    [
     "B",
     "هيه، الامتحان اللي يوم الاثنين. بدرس لين الليل",
     "hē, il-imtiḥān illi yōm il-ithnēn. badris lēn il-lēl",
-    "Yes, the one on Monday. I'll be studying till night."
+    "Yes, the one on Monday. I'll be studying till night.",
+    "هَيْه، الْاِمْتِحَانْ اللِّي يَوْمْ الْاِثْنَيْنْ. بَدْرِسْ لَيْنْ اللَّيْلْ"
    ],
    [
     "A",
     "إن شاء الله تنجح! وبعد الامتحان نطلع مع بعض",
     "in shāʼ allāh tinjaḥ! w baʿd il-imtiḥān niṭlaʿ maʿa baʿaẓ",
-    "I hope you pass! And after the exam let's go out together."
+    "I hope you pass! And after the exam let's go out together.",
+    "إِنْ شَاءْ اللّٰهْ تِنْجَحْ! وْبَعْدْ الْاِمْتِحَانْ نِطْلَعْ مَعَ بَعَضْ"
    ]
   ],
   "items": [
@@ -744,56 +845,64 @@
     "id-dirāsa",
     "studying, (my, your) studies",
     "الدراسة",
-    ""
+    "",
+    "الدِّرَاسَة"
    ],
    [
     "تخصصك",
     "takhaṣṣuṣak",
     "your major, your subject (at university) (to a man)",
     "تخصصك",
-    "to a woman: takhaṣṣuṣich"
+    "to a woman: takhaṣṣuṣich",
+    "تَخَصُّصَكْ"
    ],
    [
     "المادة",
     "il-māda",
     "the module, the (school) subject",
     "المادة",
-    ""
+    "",
+    "الْمَادَة"
    ],
    [
     "الامتحان اللي",
     "il-imtiḥān illi",
     "the exam that, the exam (which is) …",
     "الامتحان الذي",
-    ""
+    "",
+    "الْاِمْتِحَانْ اللِّي"
    ],
    [
     "بدرس",
     "badris",
     "I'll study",
     "سأدرس",
-    ""
+    "",
+    "بَدْرِسْ"
    ],
    [
     "إن شاء الله تنجح",
     "in shāʼ allāh tinjaḥ",
     "I hope you pass (to a man)",
     "أتمنى أن تنجح",
-    "to a woman: in shāʼ allāh tinjaḥīn"
+    "to a woman: in shāʼ allāh tinjaḥīn",
+    "إِنْ شَاءْ اللّٰهْ تِنْجَحْ"
    ],
    [
     "شلون الدراسة؟",
     "shlōn id-dirāsa?",
     "how are your studies going?",
     "كيف الدراسة؟",
-    "also: chēf id-dirāsa? (كيف الدراسة؟)"
+    "also: chēf id-dirāsa? (كيف الدراسة؟)",
+    "شْلَوْنْ الدِّرَاسَة؟"
    ],
    [
     "هالأسبوع",
     "hal-usbūʿ",
     "this week",
     "هذا الأسبوع",
-    ""
+    "",
+    "هَالْأُسْبُوعْ"
    ]
   ]
  },
@@ -809,43 +918,50 @@
     "A",
     "هلا! كيف الشغل ويانا؟",
     "hala! chēf ish-shughul wiyyāna?",
-    "Hi! How's work with us going?"
+    "Hi! How's work with us going?",
+    "هَلَا! كَيْفْ الشُّغُلْ وِيَّانَا؟"
    ],
    [
     "B",
     "هلا فيج! زين، شغلي وايد حلو. والمدير اللي عندنا طيب",
     "hala fīch! zēn, shughli wāyid ḥilu. w il-mudīr illi ʿindana ṭayyib",
-    "Hi! Good, I really like my job. And the manager we've got is nice."
+    "Hi! Good, I really like my job. And the manager we've got is nice.",
+    "هَلَا فِيجْ! زَيْنْ، شُغْلِي وَايِدْ حِلُو. وْالْمُدِيرْ اللِّي عِنْدَنَا طَيِّبْ"
    ],
    [
     "A",
     "هيه، والموظفين اللي ويانا كلهم طيبين",
     "hē, w il-muwaẓẓafīn illi wiyyāna killhum ṭayybīn",
-    "Yes, and the people who work with us are all nice."
+    "Yes, and the people who work with us are all nice.",
+    "هَيْه، وْالْمُوَظَّفِينْ اللِّي وِيَّانَا كِلّْهُمْ طَيّْبِينْ"
    ],
    [
     "B",
     "بس الدوام اللي عندنا يبدا الساعة سبع، بدري شوي!",
     "bas id-dawām illi ʿindana yibda s-sāʿa sabʿ, badri shwayy!",
-    "But our working day starts at seven, that's a bit early!"
+    "But our working day starts at seven, that's a bit early!",
+    "بَسْ الدَّوَامْ اللِّي عِنْدَنَا يِبْدَا السَّاعَة سَبْعْ، بَدْرِي شْوَيّْ!"
    ],
    [
     "A",
     "صح. وأنا اليوم عندي اجتماع لين خمس",
     "ṣaḥḥ. w ana l-yōm ʿindi ijtimāʿ lēn khams",
-    "True. And today I've got a meeting until five."
+    "True. And today I've got a meeting until five.",
+    "صَحّْ. وْأَنَا الْيَوْمْ عِنْدِي اِجْتِمَاعْ لَيْنْ خَمْسْ"
    ],
    [
     "B",
     "الاجتماع اللي عن مشروعج؟",
     "il-ijtimāʿ illi ʿan mashrūʿich?",
-    "The one about your project?"
+    "The one about your project?",
+    "الْاِجْتِمَاعْ اللِّي عَنْ مَشْرُوعِجْ؟"
    ],
    [
     "A",
     "هيه. أول ما أخلص، نشرب قهوة كلنا في المكتب",
     "hē. awwal ma akhalliṣ, nishrab gahwa killna fi l-maktab",
-    "Yes. As soon as I finish, we'll all have a coffee in the office."
+    "Yes. As soon as I finish, we'll all have a coffee in the office.",
+    "هَيْه. أَوَّلْ مَا أَخَلِّصْ، نِشْرَبْ قَهْوَة كِلّْنَا فِي الْمَكْتَبْ"
    ]
   ],
   "items": [
@@ -854,56 +970,64 @@
     "il-mudīr",
     "the manager, the boss",
     "المدير",
-    "my manager: mudīri (مديري)"
+    "my manager: mudīri (مديري)",
+    "الْمُدِيرْ"
    ],
    [
     "شغلي",
     "shughli",
     "my work, my job",
     "عملي",
-    ""
+    "",
+    "شُغْلِي"
    ],
    [
     "الموظفين",
     "il-muwaẓẓafīn",
     "the staff, the employees",
     "الموظفون",
-    "one: muwaẓẓaf (موظف); a woman: muwaẓẓafa (موظفة)"
+    "one: muwaẓẓaf (موظف); a woman: muwaẓẓafa (موظفة)",
+    "الْمُوَظَّفِينْ"
    ],
    [
     "يبدا",
     "yibda",
     "it starts, it begins (a masculine thing: the working day, the film)",
     "يبدأ",
-    "a feminine thing: tibda (تبدا)"
+    "a feminine thing: tibda (تبدا)",
+    "يِبْدَا"
    ],
    [
     "المشروع",
     "il-mashrūʿ",
     "the project",
     "المشروع",
-    "your project (to a woman): mashrūʿich (مشروعج)"
+    "your project (to a woman): mashrūʿich (مشروعج)",
+    "الْمَشْرُوعْ"
    ],
    [
     "كيف الشغل؟",
     "chēf ish-shughul?",
     "how's work?",
     "كيف العمل؟",
-    "also: shlōn ish-shughul?"
+    "also: shlōn ish-shughul?",
+    "كَيْفْ الشُّغُلْ؟"
    ],
    [
     "عندي اجتماع",
     "ʿindi ijtimāʿ",
     "I've got a meeting",
     "لدي اجتماع",
-    ""
+    "",
+    "عِنْدِي اِجْتِمَاعْ"
    ],
    [
     "اللي عندنا",
     "illi ʿindana",
     "(the one) we've got, at our place",
     "الذي لدينا",
-    ""
+    "",
+    "اللِّي عِنْدَنَا"
    ]
   ]
  },
@@ -919,43 +1043,50 @@
     "A",
     "شو فيه؟ شو اللي صار اليوم؟",
     "shu fīh? shu illi ṣār il-yōm?",
-    "What's up? What happened today?"
+    "What's up? What happened today?",
+    "شُو فِيهْ؟ شُو اللِّي صَارْ الْيَوْمْ؟"
    ],
    [
     "B",
     "الإيميل اللي كان حق المدير، راح لكل اللي في الشركة!",
     "il-īmēl illi kān ḥagg il-mudīr, rāḥ l-kill illi fi sh-sharika!",
-    "The email that was meant for the manager went to everyone in the company!"
+    "The email that was meant for the manager went to everyone in the company!",
+    "الْإِيمَيْلْ اللِّي كَانْ حَقّْ الْمُدِيرْ، رَاحْ لْكِلّْ اللِّي فِي الشَّرِكَة!"
    ],
    [
     "A",
     "لا! ومنو اللي طرشه؟",
     "la! w minu illi ṭarrashah?",
-    "No! And who sent it?"
+    "No! And who sent it?",
+    "لَا! وْمِنُو اللِّي طَرَّشَهْ؟"
    ],
    [
     "B",
     "أنا اللي طرشته! ما دريت",
     "ana illi ṭarrashtah! ma dirēt",
-    "I'm the one who sent it! I didn't realise."
+    "I'm the one who sent it! I didn't realise.",
+    "أَنَا اللِّي طَرَّشْتَهْ! مَا دِرَيْتْ"
    ],
    [
     "A",
     "والشي اللي كان فيه؟ مشكلة؟",
     "w ish-shay illi kān fīh? mushkila?",
-    "And what was in it? Is it a problem?"
+    "And what was in it? Is it a problem?",
+    "وْالشَّيْ اللِّي كَانْ فِيهْ؟ مُشْكِلَة؟"
    ],
    [
     "B",
     "لا، والمدير قال: اللي صار صار",
     "la, w il-mudīr gāl: illi ṣār ṣār",
-    "No, and the manager said: what's done is done."
+    "No, and the manager said: what's done is done.",
+    "لَا، وْالْمُدِيرْ قَالْ: اللِّي صَارْ صَارْ"
    ],
    [
     "A",
     "الحمد لله! مديرك ريّال زين",
     "il-ḥamdu lillāh! mudīrak rayyāl zēn",
-    "Thank God! Your manager's a good guy."
+    "Thank God! Your manager's a good guy.",
+    "الْحَمْدُ لِلّٰهْ! مُدِيرَكْ رَيَّالْ زَيْنْ"
    ]
   ],
   "items": [
@@ -964,56 +1095,64 @@
     "illi ṣār",
     "what happened",
     "ما حدث",
-    ""
+    "",
+    "اللِّي صَارْ"
    ],
    [
     "كل اللي",
     "kill illi",
     "everyone who; everything that",
     "كل من / كل ما",
-    ""
+    "",
+    "كِلّْ اللِّي"
    ],
    [
     "منو اللي…؟",
     "minu illi…?",
     "who (is it that)…?",
     "من الذي…؟",
-    ""
+    "",
+    "مِنُو اللِّي…؟"
    ],
    [
     "أنا اللي",
     "ana illi",
     "I'm the one who, it was me who",
     "أنا الذي",
-    "a woman says the same"
+    "a woman says the same",
+    "أَنَا اللِّي"
    ],
    [
     "الشي اللي",
     "ish-shay illi",
     "the thing that, what",
     "الشيء الذي",
-    ""
+    "",
+    "الشَّيْ اللِّي"
    ],
    [
     "ما دريت",
     "ma dirēt",
     "I didn't realise, I didn't know",
     "لم أدرِ",
-    ""
+    "",
+    "مَا دِرَيْتْ"
    ],
    [
     "اللي صار صار",
     "illi ṣār ṣār",
     "what's done is done (lit. what happened happened)",
     "ما حدث قد حدث",
-    ""
+    "",
+    "اللِّي صَارْ صَارْ"
    ],
    [
     "ريّال زين",
     "rayyāl zēn",
     "a good guy, a decent man",
     "رجل طيب",
-    ""
+    "",
+    "رَيَّالْ زَيْنْ"
    ]
   ]
  }

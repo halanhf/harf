@@ -1,0 +1,2 @@
+# rows whose vowelled form can't reproduce the transliteration under tools/harakat_check.py's reading rules.
+# one per line: <unit id> <items[i]|dialogue[i]> | <reason a reviewer can check>. it exempts only the reading check.

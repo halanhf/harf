@@ -163,13 +163,41 @@ test("data: every course unit is well formed (5-9 phrases, 3-10 dialogue lines) 
     assert.ok(u.title&&u.goal&&u.tip,u.id);
     assert.ok(u.items.length>=5&&u.items.length<=9,`${u.id} has ${u.items.length} items`);
     assert.ok(u.dialogue.length>=3&&u.dialogue.length<=10,u.id);
-    for(const l of u.dialogue){ assert.equal(l.length,4,u.id); assert.ok(["A","B"].includes(l[0])); assert.match(l[1],/[ء-ي]/); }
-    for(const it of u.items){ assert.equal(it.length,5,`${u.id} ${it[0]}`); assert.match(it[0],/[ء-ي]/); assert.ok(it[1]&&it[2]);
+    // stages 1-2 rows may carry a vowelled form as their last element; later stages never do
+    for(const l of u.dialogue){ assert.ok(u.stage<=2?(l.length===4||l.length===5):l.length===4,u.id); assert.ok(["A","B"].includes(l[0])); assert.match(l[1],/[ء-ي]/);
+      if(l.length===5) assert.ok(typeof l[4]==="string"&&l[4].trim(),u.id); }
+    for(const it of u.items){ assert.ok(u.stage<=2?(it.length===5||it.length===6):it.length===5,`${u.id} ${it[0]}`); assert.match(it[0],/[ء-ي]/); assert.ok(it[1]&&it[2]);
+      if(it.length===6) assert.ok(typeof it[5]==="string"&&it[5].trim(),`${u.id} ${it[0]}`);
       const k=L.normalizeArabic(it[0]); assert.ok(!seen.has(k),`duplicate phrase ${it[0]}`); seen.add(k); }
     // the converted unit passes the same check ai lessons must pass
     const conv={title:u.title,goal:u.goal,tip:u.tip,dialogue:u.dialogue.map(([who,ar,tr,en])=>({who,ar,tr,en})),items:u.items.map(([ar,tr,en,msa])=>({ar,tr,en,msa}))};
     assert.deepEqual([...L.validateUnit(conv)],[],u.id);
   }
+});
+test("data: stage 1-2 vowelled forms strip back to the Arabic and tile one-to-one with it",()=>{
+  for(const u of D.COURSE){
+    const rows=[...u.dialogue.map(l=>[l[1],l[4]]),...u.items.map(it=>[it[0],it[5]])];
+    for(const [ar,v] of rows){
+      if(v===undefined) continue;
+      assert.equal(L.normalizeArabic(v),L.normalizeArabic(ar),`${u.id} ${ar}`);
+      const ta=L.tilesOf(ar), tv=L.tilesOf(v);
+      assert.equal(tv.length,ta.length,`${u.id} ${ar}`);
+      tv.forEach((t,i)=>assert.equal(L.normalizeArabic(t),L.normalizeArabic(ta[i]),`${u.id} ${ar}`));
+    }
+  }
+});
+test("harakat: auto follows the learner's current stage, always and never override it",()=>{
+  for(const s of [0,1,2]) assert.equal(L.showHarakat("auto",s),true);
+  for(const s of [3,6]) assert.equal(L.showHarakat("auto",s),false);
+  assert.equal(L.showHarakat("always",4),true);
+  assert.equal(L.showHarakat("never",1),false);
+  assert.equal(L.showHarakat("junk",1),true);
+});
+test("harakat: the vowelled form is shown only when marks are on, and only if the row has one",()=>{
+  assert.equal(L.shownAr({ar:"ريّال",arv:"رَيَّالْ"},true),"رَيَّالْ");
+  assert.equal(L.shownAr({ar:"ريّال",arv:"رَيَّالْ"},false),"ريّال");
+  assert.equal(L.shownAr({ar:"زين"},true),"زين");
+  assert.equal(L.shownAr({ar:"زين",arv:""},true),"زين");
 });
 test("data: the course runs stage by stage in teaching order; pairs and fuṣḥā list are well formed",()=>{
   let last=1; const ids=new Set();
@@ -976,4 +1004,176 @@ test("start over: two devices with the same marker time agree on the reset day, 
   const x=L.mergeProgress(phone,pc), y=L.mergeProgress(pc,phone);
   assert.equal(JSON.stringify(x.unitsDone),'{"u1":"2026-11-20"}'); assert.equal(x.resetDay,"2026-11-20"); assert.equal(x.streak,1);
   for(const f of ["unitsDone","resetDay","resetAt","streak","lastDay","log"]) assert.equal(JSON.stringify(y[f]),JSON.stringify(x[f]),f);
+});
+
+// ===== vowel marks: the setting and every place a stage 1-2 phrase is shown =====
+test("settings: vowel marks default to auto, keep a valid choice, and drop a junk one",()=>{
+  const T=loadUi();
+  T.setS({settings:{}}); assert.equal(T.S().settings.harakat,"auto");
+  T.setS({settings:{harakat:"never"}}); assert.equal(T.S().settings.harakat,"never"); assert.equal(T.serialize().settings.harakat,"never");
+  T.setS({settings:{harakat:"tap"}}); assert.equal(T.S().settings.harakat,"auto");
+  T.setS({}); assert.equal(T.S().settings.harakat,"auto");
+});
+test("settings: the newer copy's vowel-mark choice wins a merge, and the account split keeps it",()=>{
+  const a={updatedAt:2,settings:{translit:"never",harakat:"never"}}, b={updatedAt:1,settings:{translit:"auto",harakat:"always"}};
+  assert.equal(L.mergeProgress(a,b).settings.harakat,"never"); assert.equal(L.mergeProgress(b,a).settings.harakat,"never");
+  const sp=L.splitProgress({settings:{harakat:"always"},cards:{}}); assert.equal(sp.meta.settings.harakat,"always");
+  assert.equal(L.joinProgress(sp.meta,sp.shards).settings.harakat,"always");
+});
+test("progress: the vowel marks control sits after pronunciation lines, with auto, always and never",()=>{
+  const k='select("set-harakat","Vowel marks",[["auto","Auto"],["always","Always"],["never","Never"]],S.settings.harakat,';
+  const i=main.indexOf(k); assert.ok(i>0); assert.ok(i>main.indexOf('select("set-translit"')); assert.ok(i<main.indexOf('select("set-new"'));
+});
+test("harakat: the vowelled form is display-only: no audio, speech, matching or tile call is given it",()=>{
+  for(const re of [/\b(?:say|speakPart|sayQueue|auto|playBtn|slowBtn|shadowBtn|recordWidget|speakWidget|wordMatch|similarity|pickOptions|nativeLink|soundShift|normalizeArabic|addCustom)\([^()]*\b(?:shownAr|arv)\b/,/text:\s*(?:shownAr|[\w.]*\barv\b)/,/bigAr\(\s*shownAr/,/"aria-label":[^,]*shownAr/])
+    assert.ok(!re.test(main),String(re));
+  assert.ok(main.split("shownAr(").length-1>=10,"one shownAr( per display site");
+});
+
+// the screens themselves, run against a small fake dom with the audio and checking calls recorded
+function uiEl(tag){ const e={tag,attrs:{},children:[],parent:null,style:{},hidden:false,className:"",
+  setAttribute(k,v){ e.attrs[k]=String(v); },
+  append(...k){ for(const c of k){ if(c&&typeof c==="object") c.parent=e; e.children.push(c); } },
+  remove(){ if(e.parent) e.parent.children=e.parent.children.filter(x=>x!==e); e.parent=null; },
+  contains(n){ return n===e||e.children.some(c=>c&&typeof c==="object"&&c.contains(n)); },
+  classList:{add:c=>{ e.className=(e.className+" "+c).trim(); },remove:c=>{ e.className=e.className.split(/\s+/).filter(x=>x&&x!==c).join(" "); },contains:c=>e.className.split(/\s+/).includes(c)},
+  scrollIntoView(){} };
+  const own={}; e.dataset=new Proxy(own,{get:(o,k)=>k in o?o[k]:e.attrs["data-"+String(k).replace(/[A-Z]/g,c=>"-"+c.toLowerCase())]});
+  Object.defineProperty(e,"textContent",{get:()=>e._t||"",set:v=>{ e._t=String(v); e.children.forEach(c=>{ if(c&&typeof c==="object") c.parent=null; }); e.children=[]; }}); return e; }
+const walk=n=>typeof n==="string"||!n?[]:[n,...n.children.flatMap(walk)];
+const txt=n=>typeof n==="string"?n:(n._t||"")+n.children.map(txt).join("");
+const byText=(root,t)=>walk(root).find(n=>n.tag==="button"&&txt(n)===t);
+const press=n=>{ assert.ok(n,"control missing"); n.onclick({currentTarget:n}); };
+const MARKS=/[\u064B-\u0652\u0670]/;
+const UNIT={id:"u1",stage:1,title:"Greetings",goal:"g",tip:"t",
+  items:[{ar:"هلا",tr:"hala",en:"hi",arv:"هَلَا"},{ar:"شلونك",tr:"shlōnak",en:"how are you",arv:"شْلَوْنَكْ"},{ar:"زين",tr:"zēn",en:"good",arv:"زَيْنْ"},{ar:"مع السلامة",tr:"maʿ is-salāma",en:"bye",arv:"مَعْ السَّلَامَة"}],
+  dialogue:[{who:"A",ar:"شلونك",tr:"shlōnak",en:"how are you",arv:"شْلَوْنَكْ"},{who:"B",ar:"زين",tr:"zēn",en:"good",arv:"زَيْنْ"}]};
+function loadScreens({harakat="auto",stage=1}={}){
+  const t=loadUi(), env=t.env; t.setS({settings:{harakat}}); env.__stage=stage; env.currentStage=()=>env.__stage;
+  const spy={say:[],queue:[],auto:[],widget:[],view:null}; env.document.createElement=uiEl;
+  const rec=name=>text=>{ spy.widget.push([name,text]); return uiEl("span"); };
+  Object.assign(env,{say(text){ spy.say.push(text); return Promise.resolve(); },sayQueue(parts){ spy.queue.push(parts.map(p=>p.text)); return Promise.resolve(); },auto:text=>{ spy.auto.push(text); },
+    playBtn:rec("play"),slowBtn:rec("slow"),shadowBtn:rec("shadow"),recordWidget:rec("record"),speakWidget:rec("speak"),nativeLink:()=>uiEl("span"),shiftChip:()=>null,
+    trLine:tr=>{ const p=uiEl("p"); p.textContent=tr; return p; },icon:()=>uiEl("span"),
+    focusView:()=>{ spy.view={body:uiEl("div"),progress(){},alive:()=>true}; return spy.view; },focusCard(){},announce(){},buzz(){},stopAudio(){},keepAwake(){},
+    sched:c=>c,touchDay(){},logActivity(){},addSentenceCards(){},show(){},refresh(){},heatmap:()=>uiEl("div"),forecastBars:()=>uiEl("div"),savedMsg:()=>"",
+    STAGE_NAMES:[],stageInfo:()=>({}),shownStreak:()=>0,lessonsDone:()=>0,standalone:()=>false,ghPanel(){},installEvt:null,cleanIn:x=>x,DAY:86400000,SAMPLE:null,micBlocked:false,SR:null,DB:null,GH:null});
+  vm.runInContext("var enVoice=null, TTS=null; let keyHandler=null;",env);
+  for(const s of [cut("const ap=","const SVG="),cut("let ITEMS={}","function rebuild"),cut("const liveCards=","const lessonsDone"),
+      cut("const harOn=","\n"),cut("const bigAr=","\n"),cut("function openLesson","// ===== role-play"),cut("function roleplay(","// ===== review tab"),cut("function startReview","// ===== hands-free"),cut("function audioDrill","// ===== course"),cut("function renderMe","// ===== boot")])
+    vm.runInContext(s,env);
+  const items={}, unitOf={}; UNIT.items.forEach((it,i)=>{ items["u1."+i]=Object.assign({id:"u1."+i,unit:"u1",stage:1},it); unitOf["u1."+i]="u1"; });
+  const s0=Object.assign({id:"u1.s0",unit:"u1",stage:"s1",sentence:true},UNIT.items[3]); items["u1.s0"]=s0; unitOf["u1.s0"]="u1";
+  vm.runInContext("this.__set=(i,u,m)=>{ ITEMS=i; UNITS=u; ITEM_UNIT=m; };",env); env.__set(items,[UNIT],unitOf);
+  const card=(st,i,r)=>({s:1,k:5,d:1,t:0,r,l:0,st,i});
+  return {t,env,spy,items,card,shown:root=>walk(root).filter(n=>n.lang==="ar").map(txt)};
+}
+// what each screen puts on the page, in order, as {shown: arabic texts on screen}, while the spies keep what audio, speech and checking were given
+function tour(sc){
+  const {env,spy,shown}=sc, out={}; const body=()=>spy.view.body;
+  env.openLesson(UNIT); out.step1=shown(body()); out.step1Labels=walk(body()).filter(n=>n.attrs["aria-label"]).map(n=>n.attrs["aria-label"]);
+  press(byText(body(),"Learn the phrases →")); out.step2=[]; out.step2Labels=[];
+  for(let k=0;k<UNIT.items.length;k++){ out.step2.push(shown(body())[0]); out.step2Labels.push(walk(body()).find(n=>/\bsay\b/.test(n.className)).attrs["aria-label"]); press(byText(body(),k<3?"Next →":"Quick check →")); }
+  out.step3=walk(body()).filter(n=>n.attrs["data-ar"]!==undefined).map(n=>({data:n.attrs["data-ar"],shown:shown(n)[0]}));
+  env.roleplay(UNIT); out.rpA=shown(body()); out.rpALabel=walk(body()).find(n=>/\bsay\b/.test(n.className)).attrs["aria-label"]; press(byText(body(),"Your turn →"));
+  out.rpB=shown(body());
+  return out;
+}
+const PLAIN=UNIT.items.map(x=>x.ar), VOW=UNIT.items.map(x=>x.arv);
+test("harakat off: every lesson and role-play screen shows today's text and nothing else",()=>{
+  for(const sc of [loadScreens({harakat:"never",stage:1}),loadScreens({harakat:"auto",stage:3}),loadScreens({harakat:"auto",stage:6})]){
+    const o=tour(sc);
+    assert.deepEqual(o.step1,["شلونك","زين"]); assert.deepEqual(o.step2,PLAIN); assert.deepEqual(o.step3.map(x=>x.shown),o.step3.map(x=>x.data));
+    assert.deepEqual(o.rpA,["شلونك"]); assert.deepEqual(o.rpB,["زين"]);
+    for(const s of [...o.step1,...o.step2,...o.rpA,...o.rpB,...o.step3.map(x=>x.shown)]) assert.ok(!MARKS.test(s),s);
+  }
+});
+test("harakat on: lesson and role-play screens show the vowelled form, audio and labels keep the plain spelling",()=>{
+  for(const sc of [loadScreens({harakat:"always",stage:4}),loadScreens({harakat:"auto",stage:1}),loadScreens({harakat:"auto",stage:0}),loadScreens({harakat:"auto",stage:2})]){
+    const o=tour(sc);
+    assert.deepEqual(o.step1,["شْلَوْنَكْ","زَيْنْ"]); assert.deepEqual(o.step2,VOW); assert.equal(o.step3.length,4);
+    for(const x of o.step3){ const row=UNIT.items.find(i=>i.ar===x.data); assert.ok(row,"data-ar is a plain spelling: "+x.data); assert.equal(x.shown,row.arv); }
+    assert.deepEqual(o.rpA,["شْلَوْنَكْ"]); assert.deepEqual(o.rpB,["زَيْنْ"]);
+    assert.deepEqual(o.step2Labels,PLAIN.map(a=>"Hear: "+a)); assert.equal(o.rpALabel,"Hear: شلونك");
+    for(const s of [...o.step1Labels,...o.step2Labels,o.rpALabel]) assert.ok(!MARKS.test(s),s);
+    // everything handed to audio, recording and speech scoring is the plain text
+    const heard=[...sc.spy.auto,...sc.spy.say,...sc.spy.queue.flat(),...sc.spy.widget.map(w=>w[1])];
+    assert.ok(heard.length>=8,"audio and widgets were reached"); for(const h of heard) assert.ok(PLAIN.includes(h),"plain text only: "+h);
+  }
+});
+test("harakat on: tapping the big phrase and the answer check use the plain spelling",()=>{
+  const sc=loadScreens({harakat:"always",stage:1}); const {env,spy}=sc; env.openLesson(UNIT); press(byText(spy.view.body,"Learn the phrases →"));
+  press(walk(spy.view.body).find(n=>/\bsay\b/.test(n.className))); assert.deepEqual(spy.say,["هلا"]);
+  for(let k=0;k<4;k++) press(byText(spy.view.body,k<3?"Next →":"Quick check →"));
+  const right=walk(spy.view.body).filter(n=>n.attrs["data-ar"]!==undefined); const en=walk(spy.view.body).find(n=>n.className==="en"&&UNIT.items.some(i=>i.en===txt(n))); const it=UNIT.items.find(i=>i.en===txt(en));
+  const wrong=right.find(n=>n.attrs["data-ar"]!==it.ar); press(wrong); assert.ok(/\bright\b/.test(right.find(n=>n.attrs["data-ar"]===it.ar).className),"the plain spelling is the right answer"); assert.ok(/\bwrong\b/.test(wrong.className));
+  assert.equal(spy.say.at(-1),it.ar);
+});
+const reviewOf=(sc,id,c)=>{ sc.t.S().cards[id]=c; sc.env.startReview(null); return sc.spy.view.body; };
+const bigOf=n=>walk(n).filter(x=>x.lang==="ar"&&/\bbig\b/.test(x.className)).map(txt);
+test("harakat: review recognise card shows the vowelled form, labels and audio keep the plain one",()=>{
+  for(const [hk,stage,want] of [["always",4,"مَعْ السَّلَامَة"],["auto",1,"مَعْ السَّلَامَة"],["never",1,"مع السلامة"],["auto",3,"مع السلامة"]]){
+    const sc=loadScreens({harakat:hk,stage}); const body=reviewOf(sc,"u1.3",sc.card(0,0,0)); assert.ok(/What does it mean/.test(txt(body)));
+    const b=walk(body).find(n=>/\bsay\b/.test(n.className)); assert.equal(txt(b),want); assert.equal(b.attrs["aria-label"],"Hear: مع السلامة"); press(b); assert.deepEqual(sc.spy.say,["مع السلامة"]);
+    press(byText(body,"Show answer")); for(const a of sc.spy.auto) assert.equal(a,"مع السلامة");
+  }
+});
+test("harakat: build-the-sentence tiles show the marks, but the check compares the plain words",()=>{
+  for(const hk of ["always","never"]){
+    const sc=loadScreens({harakat:hk,stage:1}); const body=reviewOf(sc,"u1.s0",sc.card(-1,3,6)); assert.ok(/Build the sentence/.test(txt(body)),txt(body));
+    const target=["مع","السلامة"], vow=["مَعْ","السَّلَامَة"]; const bank=()=>walk(body).filter(n=>/wtile/.test(n.className)&&n.parent&&n.parent.tag==="div"&&/center/.test(n.parent.className));
+    const tilesNow=bank(); assert.equal(tilesNow.length,2);
+    const label=n=>txt(n); const want=hk==="always"?vow:target; assert.deepEqual(tilesNow.map(label).sort(),[...want].sort());
+    for(let i=0;i<2;i++){ const t=bank().find(n=>label(n)===want[i]); press(t); }
+    press(byText(body,"Check")); const built=walk(body).find(n=>/\bbuilt\b/.test(n.className)); assert.ok(/ok/.test(built.className),"built in order is right: "+built.className);
+    assert.ok(sc.spy.say.concat(sc.spy.auto).every(x=>x==="مع السلامة"));
+  }
+  // the wrong order is still wrong with marks shown
+  const sc=loadScreens({harakat:"always",stage:1}); const body=reviewOf(sc,"u1.s0",sc.card(-1,3,6)); const bank=()=>walk(body).filter(n=>/wtile/.test(n.className)&&/center/.test(n.parent.className));
+  press(bank().find(n=>txt(n)==="السَّلَامَة")); press(bank().find(n=>txt(n)==="مَعْ")); press(byText(body,"Check")); assert.ok(/\bno\b/.test(walk(body).find(n=>/\bbuilt\b/.test(n.className)).className));
+});
+test("harakat: the taller line is used only while marks are shown (tiles and quick-check options)",()=>{
+  assert.ok(/\.wtile\{font:400 24px\/1\.4 /.test(html),"tiles keep their old line height by default");
+  assert.ok(/\.wtile\.har\{font:400 24px\/1\.8 /.test(html),"the taller line is on .wtile.har");
+  assert.ok(/\.options \.btn \.ar\{font-size:26px;line-height:1\.5\}/.test(html)&&/\.options\.har \.btn \.ar\{[^}]*line-height:1\.8/.test(html));
+  for(const [hk,on] of [["always",true],["never",false]]){
+    const sc=loadScreens({harakat:hk,stage:1}); const body=reviewOf(sc,"u1.s0",sc.card(-1,3,6));
+    const tiles=walk(body).filter(n=>/wtile/.test(n.className)); assert.equal(tiles.length,2);
+    for(const t of tiles) assert.equal(/\bhar\b/.test(t.className),on,hk+" tile: "+t.className);
+    const sc2=loadScreens({harakat:hk,stage:1}); sc2.env.openLesson(UNIT); press(byText(sc2.spy.view.body,"Learn the phrases →"));
+    for(let k=0;k<4;k++) press(byText(sc2.spy.view.body,k<3?"Next →":"Quick check →"));
+    const opt=walk(sc2.spy.view.body).find(n=>n.attrs["data-ar"]!==undefined); assert.ok(opt);
+    assert.equal(/\bhar\b/.test(opt.parent.className),on,hk+" options: "+opt.parent.className);
+  }
+});
+test("harakat: tiles fall back to the plain words when the vowelled form splits into a different number of words",()=>{
+  const sc=loadScreens({harakat:"always",stage:1}); sc.items["u1.s0"].arv="مَعْالسَّلَامَة";
+  const body=reviewOf(sc,"u1.s0",sc.card(-1,3,6)); assert.deepEqual(walk(body).filter(n=>/wtile/.test(n.className)).map(txt).sort(),["السلامة","مع"].sort());
+});
+test("harakat: the review answer shows the vowelled form and a stage 3 phrase without one is untouched",()=>{
+  const sc=loadScreens({harakat:"always",stage:1}); const body=reviewOf(sc,"u1.s0",sc.card(-1,3,6)); assert.deepEqual(bigOf(body),["مَعْ السَّلَامَة"]);
+  const sc2=loadScreens({harakat:"always",stage:4}); delete sc2.items["u1.s0"].arv; assert.deepEqual(bigOf(reviewOf(sc2,"u1.s0",sc2.card(-1,3,6))),["مع السلامة"]);
+  const sc3=loadScreens({harakat:"never",stage:1}); assert.deepEqual(bigOf(reviewOf(sc3,"u1.s0",sc3.card(-1,3,6))),["مع السلامة"]);
+});
+test("harakat: the hands-free drill reveals the vowelled form but speaks the plain one",()=>{
+  for(const [hk,want] of [["always","شْلَوْنَكْ"],["never","شلونك"]]){
+    const sc=loadScreens({harakat:hk,stage:1}); sc.t.S().cards["u1.1"]=sc.card(-1,3,6); sc.env.audioDrill();
+    assert.deepEqual(bigOf(sc.spy.view.body),[want]); assert.deepEqual(sc.spy.queue.flat().filter(Boolean),["شلونك","شلونك"]);
+  }
+});
+test("harakat: Progress shows tricky cards vowelled when marks are on, and the control saves the choice",()=>{
+  for(const [hk,stage,want] of [["always",4,"شْلَوْنَكْ"],["auto",1,"شْلَوْنَكْ"],["never",1,"شلونك"],["auto",3,"شلونك"]]){
+    const sc=loadScreens({harakat:hk,stage}); const me=uiEl("div"); me.id="me"; sc.env.rootEl=me; sc.t.S().cards["u1.1"]=Object.assign(sc.card(-1,3,6),{l:5});
+    sc.env.renderMe(); const row=walk(me).find(n=>n.lang==="ar"&&/\bmid\b/.test(n.className)); assert.equal(txt(row),want);
+    assert.deepEqual(sc.spy.widget.filter(w=>w[0]==="play").map(w=>w[1]),["شلونك"]);
+  }
+  const sc=loadScreens({harakat:"auto",stage:1}); const me=uiEl("div"); me.id="me"; sc.env.rootEl=me; sc.env.renderMe();
+  const sel=walk(me).find(n=>n.id==="set-harakat"); assert.ok(sel,"the control is there"); assert.deepEqual(sel.children.map(o=>[o.value,txt(o)]),[["auto","Auto"],["always","Always"],["never","Never"]]);
+  assert.equal(sel.children.find(o=>o.selected).value,"auto"); sel.value="never"; sel.onchange(); assert.equal(sc.t.S().settings.harakat,"never"); assert.equal(sc.t.serialize().settings.harakat,"never");
+  const ids=walk(me).filter(n=>n.tag==="select").map(n=>n.id); assert.ok(ids.indexOf("set-harakat")===ids.indexOf("set-translit")+1&&ids.indexOf("set-new")===ids.indexOf("set-harakat")+1,ids.join());
+});
+test("harakat: the memory-aid prompt for a tricky card is built from the plain spelling",()=>{
+  const sc=loadScreens({harakat:"always",stage:1}); const me=uiEl("div"); me.id="me"; sc.env.rootEl=me; sc.t.S().cards["u1.1"]=Object.assign(sc.card(-1,3,6),{l:5});
+  const asked=[]; sc.env.DIALECT="Gulf Arabic"; sc.env.SAMPLE={json:(q)=>{ asked.push(q); return new Promise(()=>{}); }}; sc.env.renderMe();
+  press(byText(me,"Help me remember")); assert.equal(asked.length,1); assert.ok(asked[0].includes('"شلونك"')); assert.ok(!MARKS.test(asked[0]));
 });

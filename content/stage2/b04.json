@@ -11,43 +11,50 @@
     "B",
     "سيف، أي واحد أحسن؟ هذا ولّا هذاك؟",
     "Sēf, ay wāḥid aḥsan? hādha walla hādhāk?",
-    "Sēf, which one's better? This one or that one?"
+    "Sēf, which one's better? This one or that one?",
+    "سَيْفْ، أَيْ وَاحِدْ أَحْسَنْ؟ هٰذَا وَلَّا هٰذَاكْ؟"
    ],
    [
     "A",
     "هذا أحسن من هذاك، بس أغلى. تبيه؟",
     "hādha aḥsan min hādhāk, bas aghla. tabīh?",
-    "This one's better than that one, but it's more expensive. Do you want it?"
+    "This one's better than that one, but it's more expensive. Do you want it?",
+    "هٰذَا أَحْسَنْ مِنْ هٰذَاكْ، بَسْ أَغْلَى. تَبِيهْ؟"
    ],
    [
     "B",
     "أغلى بكم؟",
     "aghla b-cham?",
-    "How much more?"
+    "How much more?",
+    "أَغْلَى بْكَمْ؟"
    ],
    [
     "A",
     "بمية بس. والكاميرا حقه أزين",
-    "b-miya bas. w il-kāmira ḥaggah azyan",
-    "Only a hundred. And its camera is better."
+    "b-miya bas. w il-kāmīra ḥaggah azyan",
+    "Only a hundred. And its camera is better.",
+    "بْمِيَة بَسْ. وْالْكَامِيرَا حَقَّهْ أَزْيَنْ"
    ],
    [
     "B",
     "بس هذاك أخف وأصغر",
     "bas hādhāk akhaff w aṣghar",
-    "But that one's lighter and smaller."
+    "But that one's lighter and smaller.",
+    "بَسْ هٰذَاكْ أَخَفّْ وْأَصْغَرْ"
    ],
    [
     "A",
     "صح، بس هذا أسرع. المهم، شو تبي، أرخص ولّا أسرع؟",
     "ṣaḥḥ, bas hādha asraʿ. il-muhimm, shu tabi, arkhaṣ walla asraʿ?",
-    "True, but this one's faster. Anyway, what do you want, cheaper or faster?"
+    "True, but this one's faster. Anyway, what do you want, cheaper or faster?",
+    "صَحّْ، بَسْ هٰذَا أَسْرَعْ. الْمُهِمّْ، شُو تَبِي، أَرْخَصْ وَلَّا أَسْرَعْ؟"
    ],
    [
     "B",
     "أسرع. خلاص، أبيه، يستاهل",
     "asraʿ. khalāṣ, abīh, yistāhil",
-    "Faster. OK, I'll have it, it's worth it."
+    "Faster. OK, I'll have it, it's worth it.",
+    "أَسْرَعْ. خَلَاصْ، أَبِيهْ، يِسْتَاهِلْ"
    ]
   ],
   "items": [
@@ -56,63 +63,72 @@
     "aḥsan",
     "better",
     "أحسن / أفضل",
-    "never changes: hādhi aḥsan (this one (f.) is better); aḥsan min = better than"
+    "never changes: hādhi aḥsan (this one (f.) is better); aḥsan min = better than",
+    "أَحْسَنْ"
    ],
    [
     "أغلى",
     "aghla",
     "more expensive",
     "أغلى",
-    "from ghāli; aghla b-miya = a hundred more"
+    "from ghāli; aghla b-miya = a hundred more",
+    "أَغْلَى"
    ],
    [
     "أرخص",
     "arkhaṣ",
     "cheaper",
     "أرخص",
-    "from rkhīṣ"
+    "from rkhīṣ",
+    "أَرْخَصْ"
    ],
    [
     "أزين",
     "azyan",
     "better, nicer",
     "أفضل",
-    "from zēn; aḥsan is more common"
+    "from zēn; aḥsan is more common",
+    "أَزْيَنْ"
    ],
    [
     "أخف",
     "akhaff",
     "lighter (in weight)",
     "أخف",
-    "from khafīf"
+    "from khafīf",
+    "أَخَفّْ"
    ],
    [
     "أصغر",
     "aṣghar",
     "smaller; younger",
     "أصغر",
-    "from ṣghīr"
+    "from ṣghīr",
+    "أَصْغَرْ"
    ],
    [
     "أسرع",
     "asraʿ",
     "faster, quicker",
     "أسرع",
-    "from sarīʿ"
+    "from sarīʿ",
+    "أَسْرَعْ"
    ],
    [
     "أي واحد؟",
     "ay wāḥid?",
     "which one?",
     "أيّ واحد؟",
-    "for a feminine thing: ay waḥda?"
+    "for a feminine thing: ay waḥda?",
+    "أَيْ وَاحِدْ؟"
    ],
    [
     "يستاهل",
     "yistāhil",
     "it's worth it; he deserves it",
     "يستحق",
-    "ma yistāhil = it's not worth it"
+    "ma yistāhil = it's not worth it",
+    "يِسْتَاهِلْ"
    ]
   ]
  },
@@ -128,43 +144,50 @@
     "B",
     "سيف، هالقميص ضيق علي",
     "Sēf, hal-gamīṣ ẓayyig ʿalay",
-    "Sēf, this shirt's tight on me."
+    "Sēf, this shirt's tight on me.",
+    "سَيْفْ، هَالْقَمِيصْ ضَيِّقْ عَلَيْ"
    ],
    [
     "A",
     "جرب مقاس أكبر",
     "jarrib magās akbar",
-    "Try a bigger size."
+    "Try a bigger size.",
+    "جَرِّبْ مَقَاسْ أَكْبَرْ"
    ],
    [
     "B",
     "هذا أكبر، بس واسع شوي",
     "hādha akbar, bas wāsiʿ shwayy",
-    "This one's bigger, but it's a bit loose."
+    "This one's bigger, but it's a bit loose.",
+    "هٰذَا أَكْبَرْ، بَسْ وَاسِعْ شْوَيّْ"
    ],
    [
     "A",
     "جرب الأزرق، هو أصغر شوي",
     "jarrib il-azrag, huwa aṣghar shwayy",
-    "Try the blue one, it's a bit smaller."
+    "Try the blue one, it's a bit smaller.",
+    "جَرِّبْ الْأَزْرَقْ، هُوَ أَصْغَرْ شْوَيّْ"
    ],
    [
     "B",
     "الأزرق؟ لا، ما أبيه. عندهم أحمر؟",
     "il-azrag? la, ma abīh. ʿind-hum aḥmar?",
-    "The blue one? No, I don't want it. Do they have red?"
+    "The blue one? No, I don't want it. Do they have red?",
+    "الْأَزْرَقْ؟ لَا، مَا أَبِيهْ. عِنْدْهُمْ أَحْمَرْ؟"
    ],
    [
     "A",
     "هيه، بس والله الأزرق لايق عليك، أحلى من الأحمر",
     "hē, bas wallāh il-azrag lāyig ʿalēk, aḥla min il-aḥmar",
-    "Yes, but honestly the blue would suit you, it's nicer than the red."
+    "Yes, but honestly the blue would suit you, it's nicer than the red.",
+    "هَيْه، بَسْ وَاللّٰهْ الْأَزْرَقْ لَايِقْ عَلَيْكْ، أَحْلَى مِنْ الْأَحْمَرْ"
    ],
    [
     "B",
     "خلاص، عطني إياه",
     "khalāṣ, ʿaṭni iyyāh",
-    "OK, give it to me."
+    "OK, give it to me.",
+    "خَلَاصْ، عَطْنِي إِيَّاهْ"
    ]
   ],
   "items": [
@@ -173,63 +196,72 @@
     "akbar",
     "bigger; older",
     "أكبر",
-    "from kbīr; akbar minni = older than me"
+    "from kbīr; akbar minni = older than me",
+    "أَكْبَرْ"
    ],
    [
     "ضيق",
     "ẓayyig",
     "tight; narrow",
     "ضيق",
-    "with a feminine noun: ẓayyga (ضيقة)"
+    "with a feminine noun: ẓayyga (ضيقة)",
+    "ضَيِّقْ"
    ],
    [
     "واسع",
     "wāsiʿ",
     "loose, too big (clothes); wide, roomy",
     "واسع",
-    "with a feminine noun: wāsʿa (واسعة)"
+    "with a feminine noun: wāsʿa (واسعة)",
+    "وَاسِعْ"
    ],
    [
     "جرب",
     "jarrib",
     "try (it) (to a man)",
     "جرّب",
-    "to a woman: jarrbi (جربي)"
+    "to a woman: jarrbi (جربي)",
+    "جَرِّبْ"
    ],
    [
     "مقاس",
     "magās",
     "size (clothes, shoes)",
     "مقاس",
-    "you'll also hear sāyz (سايز), from English"
+    "you'll also hear sāyz (سايز), from English",
+    "مَقَاسْ"
    ],
    [
     "أحمر",
     "aḥmar",
     "red (masculine)",
     "أحمر",
-    "with a feminine noun: ḥamra (حمرا)"
+    "with a feminine noun: ḥamra (حمرا)",
+    "أَحْمَرْ"
    ],
    [
     "أزرق",
     "azrag",
     "blue (masculine)",
     "أزرق",
-    "with a feminine noun: zarga (زرقا)"
+    "with a feminine noun: zarga (زرقا)",
+    "أَزْرَقْ"
    ],
    [
     "أحلى",
     "aḥla",
     "nicer, prettier, sweeter",
     "أجمل / أحلى",
-    "from ḥilu"
+    "from ḥilu",
+    "أَحْلَى"
    ],
    [
     "لايق عليك",
     "lāyig ʿalēk",
     "it suits you (to a man)",
     "يليق بك",
-    "to a woman: lāyig ʿalēch (لايق عليج)"
+    "to a woman: lāyig ʿalēch (لايق عليج)",
+    "لَايِقْ عَلَيْكْ"
    ]
   ]
  },
@@ -245,43 +277,50 @@
     "B",
     "السلام عليكم. أبي عطر حق أمي. شو أحسن شي عندك؟",
     "as-salāmu ʿalaykum. abi ʿiṭir ḥagg ummi. shu aḥsan shay ʿindak?",
-    "Hello. I want a perfume for my mum. What's the best thing you have?"
+    "Hello. I want a perfume for my mum. What's the best thing you have?",
+    "السَّلَامُ عَلَيْكُمْ. أَبِي عِطِرْ حَقّْ أُمِّي. شُو أَحْسَنْ شَيْ عِنْدَكْ؟"
    ],
    [
     "A",
     "وعليكم السلام. هذا أحسن واحد عندي، دهن عود",
     "wa ʿalaykum is-salām. hādha aḥsan wāḥid ʿindi, dihin ʿūd",
-    "Hello. This is the best one I've got: oud oil."
+    "Hello. This is the best one I've got: oud oil.",
+    "وَعَلَيْكُمْ السَّلَامْ. هٰذَا أَحْسَنْ وَاحِدْ عِنْدِي، دِهِنْ عُودْ"
    ],
    [
     "B",
     "ما شاء الله، ريحته حلوة. بكم؟",
     "mā shāʼ allāh, rīḥtah ḥilwa. b-cham?",
-    "Wow, it smells lovely. How much?"
+    "Wow, it smells lovely. How much?",
+    "مَا شَاءْ اللّٰهْ، رِيحْتَهْ حِلْوَة. بْكَمْ؟"
    ],
    [
     "A",
     "بميتين. هو أغلى واحد هني. تبيه؟",
     "b-mītēn. huwa aghla wāḥid hni. tabīh?",
-    "Two hundred. It's the most expensive one here. Do you want it?"
+    "Two hundred. It's the most expensive one here. Do you want it?",
+    "بْمِيتَيْنْ. هُوَ أَغْلَى وَاحِدْ هْنِي. تَبِيهْ؟"
    ],
    [
     "B",
     "غالي شوي. آخر سعر؟",
     "ghāli shwayy. ākhir siʿir?",
-    "That's a bit expensive. What's your best price?"
+    "That's a bit expensive. What's your best price?",
+    "غَالِي شْوَيّْ. آخِرْ سِعِرْ؟"
    ],
    [
     "A",
     "عشانك، بمية وخمسين. آخر كلام",
     "ʿashānak, b-miya w khamsīn. ākhir kalām",
-    "For you, a hundred and fifty. That's my last word."
+    "For you, a hundred and fifty. That's my last word.",
+    "عَشَانَكْ، بْمِيَة وْخَمْسِينْ. آخِرْ كَلَامْ"
    ],
    [
     "B",
     "خلاص، باخذه. هدية حلوة!",
     "khalāṣ, bākhdhah. hadiyya ḥilwa!",
-    "OK, I'll take it. A lovely present!"
+    "OK, I'll take it. A lovely present!",
+    "خَلَاصْ، بَاخْذَهْ. هَدِيَّة حِلْوَة!"
    ]
   ],
   "items": [
@@ -290,63 +329,72 @@
     "ʿiṭir",
     "perfume",
     "عطر",
-    "plural: ʿuṭūr (عطور)"
+    "plural: ʿuṭūr (عطور)",
+    "عِطِرْ"
    ],
    [
     "أحسن شي",
     "aḥsan shay",
     "the best thing",
     "أفضل شيء",
-    ""
+    "",
+    "أَحْسَنْ شَيْ"
    ],
    [
     "أحسن واحد",
     "aḥsan wāḥid",
     "the best one",
     "الأفضل",
-    "for a feminine thing: aḥsan waḥda"
+    "for a feminine thing: aḥsan waḥda",
+    "أَحْسَنْ وَاحِدْ"
    ],
    [
     "دهن عود",
     "dihin ʿūd",
     "oud oil (perfume oil from agarwood)",
     "دهن العود",
-    ""
+    "",
+    "دِهِنْ عُودْ"
    ],
    [
     "ريحته",
     "rīḥtah",
     "its smell (a masculine thing)",
     "رائحته",
-    "for a feminine thing: rīḥt-ha (ريحتها)"
+    "for a feminine thing: rīḥt-ha (ريحتها)",
+    "رِيحْتَهْ"
    ],
    [
     "أغلى واحد",
     "aghla wāḥid",
     "the most expensive one",
     "الأغلى",
-    ""
+    "",
+    "أَغْلَى وَاحِدْ"
    ],
    [
     "عشانك",
     "ʿashānak",
     "for you, for your sake (to a man)",
     "من أجلك",
-    "to a woman: ʿashānich (عشانج)"
+    "to a woman: ʿashānich (عشانج)",
+    "عَشَانَكْ"
    ],
    [
     "آخر كلام",
     "ākhir kalām",
     "my last word, final offer",
     "كلمتي الأخيرة / العرض الأخير",
-    ""
+    "",
+    "آخِرْ كَلَامْ"
    ],
    [
     "هدية",
     "hadiyya",
     "present, gift",
     "هدية",
-    ""
+    "",
+    "هَدِيَّة"
    ]
   ],
   "culture": "Bargaining is normal in the old souqs, such as the spice and perfume souqs in Deira, but not in malls and chain shops, where prices are fixed. Oud oil (dihin ʿūd) and bukhūr (incense) are classic Gulf presents."
@@ -363,43 +411,50 @@
     "B",
     "مساء الخير. اشتريت هالساعة أمس، بس ما تشتغل",
     "masāʼ il-khēr. ishtarēt has-sāʿa ams, bas ma tishtaghil",
-    "Good evening. I bought this watch yesterday, but it doesn't work."
+    "Good evening. I bought this watch yesterday, but it doesn't work.",
+    "مَسَاءْ الْخَيْرْ. اِشْتَرَيْتْ هَالسَّاعَة أَمْسْ، بَسْ مَا تِشْتَغِلْ"
    ],
    [
     "A",
     "مساء النور. خربانة؟ عندك الفاتورة؟",
     "masāʼ in-nūr. kharbāna? ʿindak il-fātūra?",
-    "Good evening. Broken? Do you have the receipt?"
+    "Good evening. Broken? Do you have the receipt?",
+    "مَسَاءْ النُّورْ. خَرْبَانَة؟ عِنْدَكْ الْفَاتُورَة؟"
    ],
    [
     "B",
     "هيه، تفضلي. أبي أبدلها",
     "hē, tfaẓẓali. abi abaddilha",
-    "Yes, here you are. I want to exchange it."
+    "Yes, here you are. I want to exchange it.",
+    "هَيْه، تْفَضَّلِي. أَبِي أَبَدِّلْهَا"
    ],
    [
     "A",
     "أكيد. تبي وحدة ثانية شراتها؟",
     "akīd. tabi waḥda thānya shrāt-ha?",
-    "Sure. Do you want another one just like it?"
+    "Sure. Do you want another one just like it?",
+    "أَكِيدْ. تَبِي وَحْدَة ثَانْيَة شْرَاتْهَا؟"
    ],
    [
     "B",
     "لا، أبي وحدة مثل ساعة ربيعي، أكبر شوي",
     "la, abi waḥda mithil sāʿat rbīʿi, akbar shwayy",
-    "No, I want one like my friend's watch, a bit bigger."
+    "No, I want one like my friend's watch, a bit bigger.",
+    "لَا، أَبِي وَحْدَة مِثِلْ سَاعَةْ رْبِيعِي، أَكْبَرْ شْوَيّْ"
    ],
    [
     "A",
     "هذيك؟ هي أغلى بخمسين درهم",
     "hādhīch? hiya aghla b-khamsīn dirham",
-    "That one? It's fifty dirhams more."
+    "That one? It's fifty dirhams more.",
+    "هٰذِيكْ؟ هِيَ أَغْلَى بْخَمْسِينْ دِرْهَمْ"
    ],
    [
     "B",
     "مب مشكلة، باخذها",
     "mub mushkila, bākhidhha",
-    "No problem, I'll take it."
+    "No problem, I'll take it.",
+    "مُبْ مُشْكِلَة، بَاخِذْهَا"
    ]
   ],
   "items": [
@@ -408,56 +463,64 @@
     "ishtarēt",
     "I bought; you bought (to a man)",
     "اشتريت",
-    "to a woman: ishtarēti (اشتريتي); you'll also hear shirēt (شريت)"
+    "to a woman: ishtarēti (اشتريتي); you'll also hear shirēt (شريت)",
+    "اِشْتَرَيْتْ"
    ],
    [
     "خربان",
     "kharbān",
     "broken, not working (masculine)",
     "معطّل",
-    "with a feminine noun: kharbāna (خربانة)"
+    "with a feminine noun: kharbāna (خربانة)",
+    "خَرْبَانْ"
    ],
    [
     "مساء النور",
     "masāʼ in-nūr",
     "good evening (the reply)",
     "مساء النور",
-    "reply to masāʼ il-khēr"
+    "reply to masāʼ il-khēr",
+    "مَسَاءْ النُّورْ"
    ],
    [
     "ما تشتغل",
     "ma tishtaghil",
     "it doesn't work (a feminine thing: a watch, a car)",
     "لا تعمل",
-    "for a masculine thing: ma yishtaghil (ما يشتغل)"
+    "for a masculine thing: ma yishtaghil (ما يشتغل)",
+    "مَا تِشْتَغِلْ"
    ],
    [
     "أبدلها",
     "abaddilha",
     "(I) exchange it (a feminine thing)",
     "أستبدلها",
-    "abi abaddilha = I want to exchange it; for a masculine thing: abaddlah (أبدله)"
+    "abi abaddilha = I want to exchange it; for a masculine thing: abaddlah (أبدله)",
+    "أَبَدِّلْهَا"
    ],
    [
     "وحدة ثانية",
     "waḥda thānya",
     "another one (a feminine thing)",
     "واحدة أخرى",
-    "for a masculine thing: wāḥid thāni"
+    "for a masculine thing: wāḥid thāni",
+    "وَحْدَة ثَانْيَة"
    ],
    [
     "مثل",
     "mithil",
     "like, the same as",
     "مثل",
-    "mithilha = like it (a feminine thing)"
+    "mithilha = like it (a feminine thing)",
+    "مِثِلْ"
    ],
    [
     "شرات",
     "shrāt",
     "like, just like (UAE)",
     "مثل",
-    "the default is mithil (مثل); shrāt-ha = just like it (f.)"
+    "the default is mithil (مثل); shrāt-ha = just like it (f.)",
+    "شْرَاتْ"
    ]
   ]
  },
@@ -473,43 +536,50 @@
     "A",
     "والله الأكل هني أحسن من المول، مثل كل مرة",
     "wallāh il-akil hni aḥsan min il-mōl, mithil kill marra",
-    "Honestly, the food here is better than at the mall, as usual."
+    "Honestly, the food here is better than at the mall, as usual.",
+    "وَاللّٰهْ الْأَكِلْ هْنِي أَحْسَنْ مِنْ الْمَوْلْ، مِثِلْ كِلّْ مَرَّة"
    ],
    [
     "B",
     "صح، وأرخص بعد. الحساب لو سمحت!",
     "ṣaḥḥ, w arkhaṣ baʿad. il-ḥsāb law samaḥt!",
-    "True, and cheaper too. The bill, please!"
+    "True, and cheaper too. The bill, please!",
+    "صَحّْ، وْأَرْخَصْ بَعَدْ. الْحْسَابْ لَوْ سَمَحْتْ!"
    ],
    [
     "A",
     "خلها علي اليوم",
     "khallha ʿalay il-yōm",
-    "It's on me today."
+    "It's on me today.",
+    "خَلّْهَا عَلَيْ الْيَوْمْ"
    ],
    [
     "B",
     "لا والله، كل مرة انت تدفع! نص نص",
     "la wallāh, kill marra inta tidfaʿ! nuṣṣ nuṣṣ",
-    "No way, you pay every time! Let's go halves."
+    "No way, you pay every time! Let's go halves.",
+    "لَا وَاللّٰهْ، كِلّْ مَرَّة اِنْتَ تِدْفَعْ! نُصّْ نُصّْ"
    ],
    [
     "A",
     "زين. تدفع كاش ولّا بطاقة؟",
     "zēn. tidfaʿ kāsh walla biṭāga?",
-    "OK. Are you paying cash or card?"
+    "OK. Are you paying cash or card?",
+    "زَيْنْ. تِدْفَعْ كَاشْ وَلَّا بِطَاقَة؟"
    ],
    [
     "B",
     "بطاقة، ما عندي فلوس في جيبي",
     "biṭāga, ma ʿindi flūs fi jēbi",
-    "Card, I don't have any money on me."
+    "Card, I don't have any money on me.",
+    "بِطَاقَة، مَا عِنْدِي فْلُوسْ فِي جَيْبِي"
    ],
    [
     "A",
     "عادي، أنا أدفع كاش، والباقي له",
     "ʿādi, ana adfaʿ kāsh, w il-bāgi lah",
-    "No problem, I'm paying cash, and he can keep the change."
+    "No problem, I'm paying cash, and he can keep the change.",
+    "عَادِي، أَنَا أَدْفَعْ كَاشْ، وْالْبَاقِي لَهْ"
    ]
   ],
   "items": [
@@ -518,63 +588,72 @@
     "flūs",
     "money",
     "نقود / مال",
-    "UAE also: bēzāt (بيزات)"
+    "UAE also: bēzāt (بيزات)",
+    "فْلُوسْ"
    ],
    [
     "كاش",
     "kāsh",
     "cash",
     "نقدًا",
-    "from English"
+    "from English",
+    "كَاشْ"
    ],
    [
     "بطاقة",
     "biṭāga",
     "(bank) card",
     "بطاقة",
-    "you'll also hear il-kart (الكرت)"
+    "you'll also hear il-kart (الكرت)",
+    "بِطَاقَة"
    ],
    [
     "أدفع",
     "adfaʿ",
     "I pay",
     "أدفع",
-    "I'll pay: badfaʿ (بدفع)"
+    "I'll pay: badfaʿ (بدفع)",
+    "أَدْفَعْ"
    ],
    [
     "تدفع",
     "tidfaʿ",
     "you pay (to a man)",
     "تدفع",
-    "to a woman: tidfaʿīn (تدفعين)"
+    "to a woman: tidfaʿīn (تدفعين)",
+    "تِدْفَعْ"
    ],
    [
     "الباقي",
     "il-bāgi",
     "the change (money back); the rest",
     "الباقي",
-    ""
+    "",
+    "الْبَاقِي"
    ],
    [
     "نص نص",
     "nuṣṣ nuṣṣ",
     "half and half, let's go halves",
     "مناصفةً",
-    ""
+    "",
+    "نُصّْ نُصّْ"
    ],
    [
     "مثل كل مرة",
     "mithil kill marra",
     "as usual, like every time",
     "كالعادة",
-    ""
+    "",
+    "مِثِلْ كِلّْ مَرَّة"
    ],
    [
     "في جيبي",
     "fi jēbi",
     "in my pocket, with me (money)",
     "في جيبي",
-    ""
+    "",
+    "فِي جَيْبِي"
    ]
   ],
   "culture": "Friends often argue over the bill (la wallāh! ʿala ḥsābi!), and the one who invited usually pays. Young friends and colleagues also split it (nuṣṣ nuṣṣ). When an elder or a host has invited you, let them pay and thank them."
@@ -591,43 +670,50 @@
     "B",
     "ألو سيف، شو قاعدين تسوون؟",
     "alō Sēf, shu gāʿdīn tsawwūn?",
-    "Hello Sēf, what are you guys doing?"
+    "Hello Sēf, what are you guys doing?",
+    "أَلَوْ سَيْفْ، شُو قَاعْدِينْ تْسَوُّونْ؟"
    ],
    [
     "A",
     "هلا! أنا وفهد في المول، نشتري هدية حق أمي",
     "hala! ana w Fahad fi l-mōl, nishtiri hadiyya ḥagg ummi",
-    "Hi! Fahad and I are at the mall, buying a present for my mum."
+    "Hi! Fahad and I are at the mall, buying a present for my mum.",
+    "هَلَا! أَنَا وْفَهَدْ فِي الْمَوْلْ، نِشْتِرِي هَدِيَّة حَقّْ أُمِّي"
    ],
    [
     "B",
     "حلو! لقيتوا شي؟",
     "ḥilu! ligētu shay?",
-    "Nice! Have you found anything?"
+    "Nice! Have you found anything?",
+    "حِلُو! لِقَيْتُوا شَيْ؟"
    ],
    [
     "A",
     "لا، ما اشترينا شي. الساعات هني كلها مثل بعض",
     "la, ma ishtarēna shay. is-sāʿāt hni killha mithil baʿaẓ",
-    "No, we haven't bought anything. The watches here are all the same."
+    "No, we haven't bought anything. The watches here are all the same.",
+    "لَا، مَا اِشْتَرَيْنَا شَيْ. السَّاعَاتْ هْنِي كِلّْهَا مِثِلْ بَعَضْ"
    ],
    [
     "B",
     "شو رأيكم نروح سوق العطور في ديرة؟",
     "shu raʼykum nrūḥ sūg il-ʿuṭūr fi Dēra?",
-    "How about we go to the perfume souq in Deira?"
+    "How about we go to the perfume souq in Deira?",
+    "شُو رَأْيْكُمْ نْرُوحْ سُوقْ الْعُطُورْ فِي دَيْرَة؟"
    ],
    [
     "A",
     "فكرة حلوة، بس ما عندي بيزات وايد",
     "fikra ḥilwa, bas ma ʿindi bēzāt wāyid",
-    "Good idea, but I haven't got much money."
+    "Good idea, but I haven't got much money.",
+    "فِكْرَة حِلْوَة، بَسْ مَا عِنْدِي بَيْزَاتْ وَايِدْ"
    ],
    [
     "B",
     "عادي، أنا بعد بدفع. والعطر أحلى شي!",
     "ʿādi, ana baʿad badfaʿ. w il-ʿiṭir aḥla shay!",
-    "No problem, I'll pay too. And perfume's the best thing to get!"
+    "No problem, I'll pay too. And perfume's the best thing to get!",
+    "عَادِي، أَنَا بَعَدْ بَدْفَعْ. وْالْعِطِرْ أَحْلَى شَيْ!"
    ]
   ],
   "items": [
@@ -636,42 +722,48 @@
     "ligētu",
     "you found (to a group)",
     "وجدتم",
-    "to one man: ligēt; to one woman: ligēti; ligētu shay? = have you found anything?"
+    "to one man: ligēt; to one woman: ligēti; ligētu shay? = have you found anything?",
+    "لِقَيْتُوا"
    ],
    [
     "اشترينا",
     "ishtarēna",
     "we bought",
     "اشترينا",
-    "ma ishtarēna shay = we haven't bought anything"
+    "ma ishtarēna shay = we haven't bought anything",
+    "اِشْتَرَيْنَا"
    ],
    [
     "مثل بعض",
     "mithil baʿaẓ",
     "the same, alike",
     "متشابهة",
-    ""
+    "",
+    "مِثِلْ بَعَضْ"
    ],
    [
     "شو رأيكم؟",
     "shu raʼykum?",
     "what do you think? how about…? (to a group)",
     "ما رأيكم؟",
-    "to one man: shu raʼyak? (شو رأيك); to one woman: shu raʼyich?; you'll also hear shrāykum? (شرايكم؟)"
+    "to one man: shu raʼyak? (شو رأيك); to one woman: shu raʼyich?; you'll also hear shrāykum? (شرايكم؟)",
+    "شُو رَأْيْكُمْ؟"
    ],
    [
     "بيزات",
     "bēzāt",
     "money (UAE)",
     "نقود",
-    "the default is flūs (فلوس)"
+    "the default is flūs (فلوس)",
+    "بَيْزَاتْ"
    ],
    [
     "أحلى شي",
     "aḥla shay",
     "the best thing, the nicest thing",
     "أجمل شيء",
-    ""
+    "",
+    "أَحْلَى شَيْ"
    ]
   ]
  },
@@ -687,43 +779,50 @@
     "A",
     "شوف، هذا بيت يدي أيام زمان",
     "shūf, hādha bēt yaddi ayyām zamān",
-    "Look, this was my grandad's house in the old days."
+    "Look, this was my grandad's house in the old days.",
+    "شُوفْ، هٰذَا بَيْتْ يَدِّي أَيَّامْ زَمَانْ"
    ],
    [
     "B",
     "ما شاء الله! كان أكبر من بيتكم؟",
     "mā shāʼ allāh! kān akbar min bētkum?",
-    "Wow! Was it bigger than your house?"
+    "Wow! Was it bigger than your house?",
+    "مَا شَاءْ اللّٰهْ! كَانْ أَكْبَرْ مِنْ بَيْتْكُمْ؟"
    ],
    [
     "A",
     "لا، كان أصغر. بس كان في حوش كبير",
     "la, kān aṣghar. bas kān fī ḥōsh kbīr",
-    "No, it was smaller. But there was a big courtyard."
+    "No, it was smaller. But there was a big courtyard.",
+    "لَا، كَانْ أَصْغَرْ. بَسْ كَانْ فِي حَوْشْ كْبِيرْ"
    ],
    [
     "B",
     "وكان عندكم مكيف؟",
     "w kān ʿindakum mkayyif?",
-    "And did your family have air conditioning?"
+    "And did your family have air conditioning?",
+    "وْكَانْ عِنْدَكُمْ مْكَيِّفْ؟"
    ],
    [
     "A",
     "لا والله، ما كان في مكيف. والصيف كان صعب",
     "la wallāh, ma kān fī mkayyif. w iṣ-ṣēf kān ṣaʿb",
-    "No, there was no air conditioning. And summer was hard."
+    "No, there was no air conditioning. And summer was hard.",
+    "لَا وَاللّٰهْ، مَا كَانْ فِي مْكَيِّفْ. وْالصَّيْفْ كَانْ صَعْبْ"
    ],
    [
     "B",
     "والبيت الحين موجود؟",
     "w il-bēt il-ḥīn mawjūd?",
-    "And is the house still there now?"
+    "And is the house still there now?",
+    "وْالْبَيْتْ الْحِينْ مَوْجُودْ؟"
    ],
    [
     "A",
     "لا، راح. كانت المنطقة هادية، الحين زحمة",
     "la, rāḥ. kānat il-manṭiga hādya, il-ḥīn zaḥma",
-    "No, it's gone. The area was quiet; now it's packed."
+    "No, it's gone. The area was quiet; now it's packed.",
+    "لَا، رَاحْ. كَانَتْ الْمَنْطِقَة هَادْيَة، الْحِينْ زَحْمَة"
    ]
   ],
   "items": [
@@ -732,63 +831,72 @@
     "kān",
     "was; (he / it) was",
     "كان",
-    "with a feminine subject: kānat"
+    "with a feminine subject: kānat",
+    "كَانْ"
    ],
    [
     "كانت",
     "kānat",
     "(she / it) was",
     "كانت",
-    ""
+    "",
+    "كَانَتْ"
    ],
    [
     "كان في",
     "kān fī",
     "there was, there were",
     "كان هناك",
-    "kān doesn't change: kān fī ḥōsh"
+    "kān doesn't change: kān fī ḥōsh",
+    "كَانْ فِي"
    ],
    [
     "ما كان في",
     "ma kān fī",
     "there wasn't, there weren't",
     "لم يكن هناك",
-    ""
+    "",
+    "مَا كَانْ فِي"
    ],
    [
     "كان عندكم؟",
     "kān ʿindakum?",
     "did you have? (to a group or a family)",
     "هل كان لديكم؟",
-    "to one man: kān ʿindak?; to one woman: kān ʿindich?; I had: kān ʿindi"
+    "to one man: kān ʿindak?; to one woman: kān ʿindich?; I had: kān ʿindi",
+    "كَانْ عِنْدَكُمْ؟"
    ],
    [
     "أيام زمان",
     "ayyām zamān",
     "the old days, back in the day",
     "قديمًا",
-    ""
+    "",
+    "أَيَّامْ زَمَانْ"
    ],
    [
     "حوش",
     "ḥōsh",
     "courtyard (of a house)",
     "فناء",
-    ""
+    "",
+    "حَوْشْ"
    ],
    [
     "مكيف",
     "mkayyif",
     "air conditioner, the AC",
     "مكيّف",
-    ""
+    "",
+    "مْكَيِّفْ"
    ],
    [
     "صعب",
     "ṣaʿb",
     "hard, difficult",
     "صعب",
-    "with a feminine noun: ṣaʿba (صعبة)"
+    "with a feminine noun: ṣaʿba (صعبة)",
+    "صَعْبْ"
    ]
   ]
  },
@@ -804,43 +912,50 @@
     "B",
     "السلام عليكم يا أم سيف، شحالج؟",
     "as-salāmu ʿalaykum yā Umm Sēf, shḥālich?",
-    "Hello, Umm Sēf, how are you?"
+    "Hello, Umm Sēf, how are you?",
+    "السَّلَامُ عَلَيْكُمْ يَا أُمّْ سَيْفْ، شْحَالِجْ؟"
    ],
    [
     "A",
     "وعليكم السلام، بخير الحمد لله. وأهلك؟ عساهم بخير؟",
     "wa ʿalaykum is-salām, b-khēr il-ḥamdu lillāh. w ahlak? ʿasāhum b-khēr?",
-    "Hello, fine, thank God. And your family? I hope they're well?"
+    "Hello, fine, thank God. And your family? I hope they're well?",
+    "وَعَلَيْكُمْ السَّلَامْ، بْخَيْرْ الْحَمْدُ لِلّٰهْ. وْأَهْلَكْ؟ عَسَاهُمْ بْخَيْرْ؟"
    ],
    [
     "B",
     "الحمد لله بخير. سيف يقول كنتي ساكنة في ديرة؟",
     "il-ḥamdu lillāh b-khēr. Sēf ygūl kinti sākna fi Dēra?",
-    "They're fine, thank God. Sēf says you used to live in Deira?"
+    "They're fine, thank God. Sēf says you used to live in Deira?",
+    "الْحَمْدُ لِلّٰهْ بْخَيْرْ. سَيْفْ يْقُولْ كِنْتِي سَاكْنَة فِي دَيْرَة؟"
    ],
    [
     "A",
     "هيه، أيام زمان كنا ساكنين في ديرة، قريب من البحر",
     "hē, ayyām zamān kinna sāknīn fi Dēra, garīb min il-baḥar",
-    "Yes, in the old days we lived in Deira, near the sea."
+    "Yes, in the old days we lived in Deira, near the sea.",
+    "هَيْه، أَيَّامْ زَمَانْ كِنَّا سَاكْنِينْ فِي دَيْرَة، قَرِيبْ مِنْ الْبَحَرْ"
    ],
    [
     "B",
     "وشو كنتي تسوين كل يوم؟",
     "w shu kinti tsawwīn kill yōm?",
-    "And what did you use to do every day?"
+    "And what did you use to do every day?",
+    "وْشُو كِنْتِي تْسَوِّينْ كِلّْ يَوْمْ؟"
    ],
    [
     "A",
     "كنا نلعب في الفريج ويا العيال، أحلى شي!",
     "kinna nilʿab fi l-firīj wiyya l-ʿyāl, aḥla shay!",
-    "We used to play in the neighbourhood with the other kids, the best thing ever!"
+    "We used to play in the neighbourhood with the other kids, the best thing ever!",
+    "كِنَّا نِلْعَبْ فِي الْفِرِيجْ وِيَّا الْعْيَالْ، أَحْلَى شَيْ!"
    ],
    [
     "B",
     "أنا لما كنت صغير، كنت أروح المدرسة وأرجع البيت، بس!",
     "ana lamma kint ṣghīr, kint arūḥ il-madrasa w arjaʿ il-bēt, bas!",
-    "When I was little, I just went to school and came home!"
+    "When I was little, I just went to school and came home!",
+    "أَنَا لَمَّا كِنْتْ صْغِيرْ، كِنْتْ أَرُوحْ الْمَدْرَسَة وْأَرْجَعْ الْبَيْتْ، بَسْ!"
    ]
   ],
   "items": [
@@ -849,56 +964,64 @@
     "lamma kint ṣghīr",
     "when I was little (said by a man)",
     "عندما كنت صغيرًا",
-    "a woman says: lamma kint ṣghīra; more often: yōm kint ṣghīr (yōm + past is taught in s2u044)"
+    "a woman says: lamma kint ṣghīra; more often: yōm kint ṣghīr (yōm + past is taught in s2u044)",
+    "لَمَّا كِنْتْ صْغِيرْ"
    ],
    [
     "كنت",
     "kint",
     "I was; you were (to a man)",
     "كنتُ / كنتَ",
-    "to a woman: kinti; kint + verb = I used to: kint arūḥ"
+    "to a woman: kinti; kint + verb = I used to: kint arūḥ",
+    "كِنْتْ"
    ],
    [
     "كنتي",
     "kinti",
     "you were (to a woman)",
     "كنتِ",
-    "to a man: kint"
+    "to a man: kint",
+    "كِنْتِي"
    ],
    [
     "كنا",
     "kinna",
     "we were",
     "كنّا",
-    ""
+    "",
+    "كِنَّا"
    ],
    [
     "كنا نلعب",
     "kinna nilʿab",
     "we used to play",
     "كنا نلعب",
-    ""
+    "",
+    "كِنَّا نِلْعَبْ"
    ],
    [
     "كنت أروح",
     "kint arūḥ",
     "I used to go",
     "كنت أذهب",
-    ""
+    "",
+    "كِنْتْ أَرُوحْ"
    ],
    [
     "الفريج",
     "il-firīj",
     "the neighbourhood (old-style, where families know each other)",
     "الحي",
-    ""
+    "",
+    "الْفِرِيجْ"
    ],
    [
     "المدرسة",
     "il-madrasa",
     "school, the school",
     "المدرسة",
-    ""
+    "",
+    "الْمَدْرَسَة"
    ]
   ],
   "culture": "Before oil was found in 1966 (first shipped in 1969), many Dubai families lived from the sea: pearling, fishing and trade along the Creek, with Deira on one bank and Bur Dubai on the other. Life centred on the firīj, the neighbourhood where everyone knew each other; the Emirati cartoon Freej (2006) is named after it."
@@ -915,43 +1038,50 @@
     "A",
     "تدري؟ لما كنت صغيرة، ما كان في مترو",
     "tadri? lamma kint ṣghīra, ma kān fī mitrō",
-    "You know what? When I was little, there was no metro."
+    "You know what? When I was little, there was no metro.",
+    "تَدْرِي؟ لَمَّا كِنْتْ صْغِيرَة، مَا كَانْ فِي مِتْرَوْ"
    ],
    [
     "B",
     "والله؟ يعني كنتوا تروحون كل مكان بالسيارة؟",
     "wallāh? yaʿni kintu trūḥūn kill makān bis-sayyāra?",
-    "Really? So you all used to go everywhere by car?"
+    "Really? So you all used to go everywhere by car?",
+    "وَاللّٰهْ؟ يَعْنِي كِنْتُوا تْرُوحُونْ كِلّْ مَكَانْ بِالسَّيَّارَة؟"
    ],
    [
     "A",
     "هيه، بس الزحمة كانت أقل من الحين",
     "hē, bas iz-zaḥma kānat aqall min il-ḥīn",
-    "Yes, but there was less traffic than now."
+    "Yes, but there was less traffic than now.",
+    "هَيْه، بَسْ الزَّحْمَة كَانَتْ أَقَلّْ مِنْ الْحِينْ"
    ],
    [
     "B",
     "والحين دبي أكبر بوايد",
     "w il-ḥīn Dbayy akbar b-wāyid",
-    "And now Dubai's much bigger."
+    "And now Dubai's much bigger.",
+    "وْالْحِينْ دْبَيّْ أَكْبَرْ بْوَايِدْ"
    ],
    [
     "A",
     "أكيد! والناس كانوا يعرفون بعض",
     "akīd! w in-nās kānaw yaʿarfūn baʿaẓ",
-    "Of course! And people used to know each other."
+    "Of course! And people used to know each other.",
+    "أَكِيدْ! وْالنَّاسْ كَانَوْا يَعَرْفُونْ بَعَضْ"
    ],
    [
     "B",
     "دبي تغيرت وايد. أول كان أحسن؟",
     "Dbayy tghayyarat wāyid. awwal kān aḥsan?",
-    "Dubai has changed a lot. Was it better before?"
+    "Dubai has changed a lot. Was it better before?",
+    "دْبَيّْ تْغَيَّرَتْ وَايِدْ. أَوَّلْ كَانْ أَحْسَنْ؟"
    ],
    [
     "A",
     "ما أدري. الحين أحسن، بس أول كان أهدى",
     "ma adri. il-ḥīn aḥsan, bas awwal kān ahda",
-    "I don't know. It's better now, but it used to be quieter."
+    "I don't know. It's better now, but it used to be quieter.",
+    "مَا أَدْرِي. الْحِينْ أَحْسَنْ، بَسْ أَوَّلْ كَانْ أَهْدَى"
    ]
   ],
   "items": [
@@ -960,63 +1090,72 @@
     "kintu",
     "you were (to a group)",
     "كنتم",
-    "to one man: kint; to one woman: kinti; kintu trūḥūn = you used to go (to a group)"
+    "to one man: kint; to one woman: kinti; kintu trūḥūn = you used to go (to a group)",
+    "كِنْتُوا"
    ],
    [
     "كانوا",
     "kānaw",
     "they were",
     "كانوا",
-    "kānaw + verb = they used to"
+    "kānaw + verb = they used to",
+    "كَانَوْا"
    ],
    [
     "أقل",
     "aqall",
     "less, fewer",
     "أقل",
-    ""
+    "",
+    "أَقَلّْ"
    ],
    [
     "أهدى",
     "ahda",
     "quieter, calmer",
     "أهدأ",
-    "from hādi"
+    "from hādi",
+    "أَهْدَى"
    ],
    [
     "كل مكان",
     "kill makān",
     "everywhere",
     "كل مكان",
-    ""
+    "",
+    "كِلّْ مَكَانْ"
    ],
    [
     "بالسيارة",
     "bis-sayyāra",
     "by car",
     "بالسيارة",
-    ""
+    "",
+    "بِالسَّيَّارَة"
    ],
    [
     "يعرفون بعض",
     "yaʿarfūn baʿaẓ",
     "they know each other",
     "يعرف بعضهم بعضًا",
-    ""
+    "",
+    "يَعَرْفُونْ بَعَضْ"
    ],
    [
     "بوايد",
     "b-wāyid",
     "much, by far (after a comparative)",
     "بكثير",
-    "akbar b-wāyid = much bigger"
+    "akbar b-wāyid = much bigger",
+    "بْوَايِدْ"
    ],
    [
     "تغيرت",
     "tghayyarat",
     "(it / she) has changed, changed",
     "تغيّرت",
-    "I've changed (become different): tghayyart; 'I changed something' is ghayyart (غيرت)"
+    "I've changed (become different): tghayyart; 'I changed something' is ghayyart (غيرت)",
+    "تْغَيَّرَتْ"
    ]
   ]
  },
@@ -1032,43 +1171,50 @@
     "A",
     "انت من بريطانيا؟ كم صار لك في دبي؟",
     "inta min Brīṭānya? cham ṣār-lak fi Dbayy?",
-    "Are you from Britain? How long have you been in Dubai?"
+    "Are you from Britain? How long have you been in Dubai?",
+    "اِنْتَ مِنْ بْرِيطَانْيَا؟ كَمْ صَارْ لَكْ فِي دْبَيّْ؟"
    ],
    [
     "B",
     "صار لي سنة تقريبا. أول كنت في لندن",
     "ṣār-li sana tagrīban. awwal kint fi Landan",
-    "About a year. Before that I was in London."
+    "About a year. Before that I was in London.",
+    "صَارْ لِي سَنَة تَقْرِيبًا. أَوَّلْ كِنْتْ فِي لَنْدَنْ"
    ],
    [
     "A",
     "ما شاء الله، وتتكلم عربي زين!",
     "mā shāʼ allāh, w titkallam ʿarabi zēn!",
-    "Great, and you speak Arabic well!"
+    "Great, and you speak Arabic well!",
+    "مَا شَاءْ اللّٰهْ، وْتِتْكَلَّمْ عَرَبِي زَيْنْ!"
    ],
    [
     "B",
     "شوي شوي. صار لي ست شهور أتعلم",
     "shwayy shwayy. ṣār-li sitt shhūr atʿallam",
-    "Little by little. I've been learning for six months."
+    "Little by little. I've been learning for six months.",
+    "شْوَيّْ شْوَيّْ. صَارْ لِي سِتّْ شْهُورْ أَتْعَلَّمْ"
    ],
    [
     "A",
     "وتعودت على دبي؟",
     "w tʿawwadt ʿala Dbayy?",
-    "And have you got used to Dubai?"
+    "And have you got used to Dubai?",
+    "وْتْعَوَّدْتْ عَلَى دْبَيّْ؟"
    ],
    [
     "B",
     "هيه، بس الحر صعب علي. البرد أحسن!",
     "hē, bas il-ḥarr ṣaʿb ʿalay. il-bard aḥsan!",
-    "Yes, but the heat's hard for me. The cold is better!"
+    "Yes, but the heat's hard for me. The cold is better!",
+    "هَيْه، بَسْ الْحَرّْ صَعْبْ عَلَيْ. الْبَرْدْ أَحْسَنْ!"
    ],
    [
     "A",
     "عادي، بعد سنتين بتتعود!",
     "ʿādi, baʿd santēn bititʿawwad!",
-    "That's normal, give it two years and you'll get used to it!"
+    "That's normal, give it two years and you'll get used to it!",
+    "عَادِي، بَعْدْ سَنْتَيْنْ بِتِتْعَوَّدْ!"
    ]
   ],
   "items": [
@@ -1077,56 +1223,64 @@
     "ṣār-li",
     "it's been … (for me), I've been … (for)",
     "منذ / مضى عليّ",
-    "ṣār-lah = he's been; ṣār-lha = she's been"
+    "ṣār-lah = he's been; ṣār-lha = she's been",
+    "صَارْ لِي"
    ],
    [
     "كم صار لك؟",
     "cham ṣār-lak?",
     "how long have you been (here)? (to a man)",
     "منذ متى أنت هنا؟",
-    "to a woman: cham ṣār-lich? (كم صار لج)"
+    "to a woman: cham ṣār-lich? (كم صار لج)",
+    "كَمْ صَارْ لَكْ؟"
    ],
    [
     "سنة",
     "sana",
     "a year",
     "سنة",
-    "two years: santēn"
+    "two years: santēn",
+    "سَنَة"
    ],
    [
     "تقريبا",
     "tagrīban",
     "about, roughly",
     "تقريبًا",
-    ""
+    "",
+    "تَقْرِيبًا"
    ],
    [
     "ست شهور",
     "sitt shhūr",
     "six months",
     "ستة أشهر",
-    ""
+    "",
+    "سِتّْ شْهُورْ"
    ],
    [
     "تعودت على",
     "tʿawwadt ʿala",
     "I've got used to; you've got used to (to a man)",
     "اعتدت على",
-    "to a woman: tʿawwadti ʿala"
+    "to a woman: tʿawwadti ʿala",
+    "تْعَوَّدْتْ عَلَى"
    ],
    [
     "بتتعود",
     "bititʿawwad",
     "you'll get used to it (to a man)",
     "ستعتاد",
-    "to a woman: bititʿawwadīn (بتتعودين)"
+    "to a woman: bititʿawwadīn (بتتعودين)",
+    "بِتِتْعَوَّدْ"
    ],
    [
     "بريطانيا",
     "Brīṭānya",
     "Britain",
     "بريطانيا",
-    ""
+    "",
+    "بْرِيطَانْيَا"
    ]
   ]
  }

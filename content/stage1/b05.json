@@ -11,37 +11,43 @@
     "A",
     "صباح الخير يا ريّال. تريقت؟",
     "ṣabāḥ il-khēr yā rayyāl. trayyagt?",
-    "Morning, man. Have you had breakfast?"
+    "Morning, man. Have you had breakfast?",
+    "صَبَاحْ الْخَيْرْ يَا رَيَّالْ. تْرَيَّقْتْ؟"
    ],
    [
     "B",
     "صباح النور. لا، ما تريقت. أنا يوعان",
     "ṣabāḥ in-nūr. la, ma trayyagt. ana yōʿān",
-    "Morning. No, I haven't. I'm hungry."
+    "Morning. No, I haven't. I'm hungry.",
+    "صَبَاحْ النُّورْ. لَا، مَا تْرَيَّقْتْ. أَنَا يَوْعَانْ"
    ],
    [
     "A",
     "يلا، الريوق على حسابي. كرك وخبز وبيض؟",
     "yalla, ir-riyūg ʿala ḥsābi. karak w khubiz w bēẓ?",
-    "Come on, breakfast's on me. Karak, bread and eggs?"
+    "Come on, breakfast's on me. Karak, bread and eggs?",
+    "يَلَّا، الرِّيُوقْ عَلَى حْسَابِي. كَرَكْ وْخُبِزْ وْبَيْضْ؟"
    ],
    [
     "B",
     "ليش لا، مشكور! الكرك هني حلو، صح؟",
     "lēsh la, mashkūr! il-karak hni ḥilu, ṣaḥḥ?",
-    "Why not, thanks! The karak here is good, isn't it?"
+    "Why not, thanks! The karak here is good, isn't it?",
+    "لَيْشْ لَا، مَشْكُورْ! الْكَرَكْ هْنِي حِلُو، صَحّْ؟"
    ],
    [
     "A",
     "طبعا، أحب الكرك هني. بالعافية!",
     "ṭabʿan, aḥibb il-karak hni. bil-ʿāfya!",
-    "Of course, I love the karak here. Enjoy!"
+    "Of course, I love the karak here. Enjoy!",
+    "طَبْعًا، أَحِبّْ الْكَرَكْ هْنِي. بِالْعَافْيَة!"
    ],
    [
     "B",
     "الله يعافيك",
     "allāh yʿāfīk",
-    "Thanks (God give you health)."
+    "Thanks (God give you health).",
+    "اللّٰهْ يْعَافِيكْ"
    ]
   ],
   "items": [
@@ -50,63 +56,72 @@
     "riyūg",
     "breakfast",
     "فطور",
-    "you'll also hear fuṭūr (فطور)"
+    "you'll also hear fuṭūr (فطور)",
+    "رِيُوقْ"
    ],
    [
     "تريقت",
     "trayyagt",
     "I've had breakfast / have you had breakfast? (to a man)",
     "أفطرتُ / هل أفطرتَ؟",
-    "to a woman: trayyagti?; I haven't: ma trayyagt"
+    "to a woman: trayyagti?; I haven't: ma trayyagt",
+    "تْرَيَّقْتْ"
    ],
    [
     "يوعان",
     "yōʿān",
     "hungry (a man)",
     "جائع",
-    "a woman: yōʿāna (يوعانة); you'll see written جوعان"
+    "a woman: yōʿāna (يوعانة); you'll see written جوعان",
+    "يَوْعَانْ"
    ],
    [
     "على حسابي",
     "ʿala ḥsābi",
     "it's on me (I'm paying)",
     "على حسابي",
-    ""
+    "",
+    "عَلَى حْسَابِي"
    ],
    [
     "كرك",
     "karak",
     "karak (strong tea boiled with milk and spices)",
     "",
-    ""
+    "",
+    "كَرَكْ"
    ],
    [
     "خبز",
     "khubiz",
     "bread",
     "خبز",
-    ""
+    "",
+    "خُبِزْ"
    ],
    [
     "بيض",
     "bēẓ",
     "eggs",
     "بيض",
-    "one egg: bēẓa"
+    "one egg: bēẓa",
+    "بَيْضْ"
    ],
    [
     "صح",
     "ṣaḥḥ",
     "true; right? (tagged on)",
     "صحيح",
-    "…, ṣaḥḥ? = …, isn't it?"
+    "…, ṣaḥḥ? = …, isn't it?",
+    "صَحّْ"
    ],
    [
     "بالعافية",
     "bil-ʿāfya",
     "enjoy (to someone eating or drinking)",
     "هنيئًا",
-    "reply: allāh yʿāfīk; to a woman: allāh yʿāfīch"
+    "reply: allāh yʿāfīk; to a woman: allāh yʿāfīch",
+    "بِالْعَافْيَة"
    ]
   ],
   "culture": "Karak is strong black tea boiled with milk, sugar and cardamom. Small cafeterias all over Dubai sell it all day, and many people order it without getting out of the car. Among friends, offering to pay (ʿala ḥsābi) is normal; the other person often protests, or thanks them and pays next time."
@@ -123,37 +138,43 @@
     "A",
     "باكر الريوق علينا. شو نشتري من السوبرماركت؟",
     "bāchir ir-riyūg ʿalēna. shu nishtiri min is-sūbarmārkit?",
-    "Tomorrow breakfast is on us. What shall we buy at the supermarket?"
+    "Tomorrow breakfast is on us. What shall we buy at the supermarket?",
+    "بَاكِرْ الرِّيُوقْ عَلَيْنَا. شُو نِشْتِرِي مِنْ السُّوبَرْمَارْكِتْ؟"
    ],
    [
     "B",
     "ناقصنا حليب وخبز. وانتي شو تبين؟",
     "nāgiṣna ḥalīb w khubiz. w inti shu tabīn?",
-    "We need milk and bread. And what do you want?"
+    "We need milk and bread. And what do you want?",
+    "نَاقِصْنَا حَلِيبْ وْخُبِزْ. وْاِنْتِي شُو تَبِينْ؟"
    ],
    [
     "A",
     "أبي فواكه. وخذ كيس، انزين؟",
     "abi fawākih. w khudh kīs, inzēn?",
-    "I want fruit. And take a bag, OK?"
+    "I want fruit. And take a bag, OK?",
+    "أَبِي فَوَاكِهْ. وْخُذْ كِيسْ، اِنْزَيْنْ؟"
    ],
    [
     "B",
     "أوكي. شي ثاني؟",
     "ōkē. shay thāni?",
-    "OK. Anything else?"
+    "OK. Anything else?",
+    "أَوْكَيْ. شَيْ ثَانِي؟"
    ],
    [
     "A",
     "لا، بس جي. يعطيك العافية!",
     "la, bas chī. yaʿṭīk il-ʿāfya!",
-    "No, that's it. Thanks for doing this!"
+    "No, that's it. Thanks for doing this!",
+    "لَا، بَسْ جِي. يَعْطِيكْ الْعَافْيَة!"
    ],
    [
     "B",
     "الله يعافيج",
     "allāh yʿāfīch",
-    "You're welcome."
+    "You're welcome.",
+    "اللّٰهْ يْعَافِيجْ"
    ]
   ],
   "items": [
@@ -162,63 +183,72 @@
     "nishtiri",
     "we buy / shall we buy?",
     "نشتري",
-    "I buy: ashtiri"
+    "I buy: ashtiri",
+    "نِشْتِرِي"
    ],
    [
     "السوبرماركت",
     "is-sūbarmārkit",
     "the supermarket",
     "السوبرماركت / المتجر",
-    "you'll also hear il-jamʿiyya (الجمعية), the local co-op supermarket"
+    "you'll also hear il-jamʿiyya (الجمعية), the local co-op supermarket",
+    "السُّوبَرْمَارْكِتْ"
    ],
    [
     "ناقص",
     "nāgiṣ",
     "missing, lacking; short of",
     "ناقص",
-    "shu nāgiṣna? = what do we need?"
+    "shu nāgiṣna? = what do we need?",
+    "نَاقِصْ"
    ],
    [
     "حليب",
     "ḥalīb",
     "milk",
     "حليب",
-    ""
+    "",
+    "حَلِيبْ"
    ],
    [
     "فواكه",
     "fawākih",
     "fruit",
     "فواكه",
-    ""
+    "",
+    "فَوَاكِهْ"
    ],
    [
     "كيس",
     "kīs",
     "bag (plastic or paper)",
     "كيس",
-    ""
+    "",
+    "كِيسْ"
    ],
    [
     "انزين",
     "inzēn",
     "OK, will do; OK? (after a request); well, so… (to start)",
     "حسنًا",
-    "said when you agree to do something; to start a sentence: inzēn, shu tabi? = so, what do you want?"
+    "said when you agree to do something; to start a sentence: inzēn, shu tabi? = so, what do you want?",
+    "اِنْزَيْنْ"
    ],
    [
     "أوكي",
     "ōkē",
     "OK",
     "",
-    "from English; normal among young people"
+    "from English; normal among young people",
+    "أَوْكَيْ"
    ],
    [
     "شي ثاني؟",
     "shay thāni?",
     "anything else?",
     "شيء آخر؟",
-    ""
+    "",
+    "شَيْ ثَانِي؟"
    ]
   ]
  },
@@ -234,37 +264,43 @@
     "B",
     "نعيما!",
     "naʿīman!",
-    "Naʿīman! (said after a shower)"
+    "Naʿīman! (said after a shower)",
+    "نَعِيمًا!"
    ],
    [
     "A",
     "الله ينعم عليك. شو نتعشى؟",
     "allāh yinʿim ʿalēk. shu nitʿashsha?",
-    "Thanks (God bless you). What shall we have for dinner?"
+    "Thanks (God bless you). What shall we have for dinner?",
+    "اللّٰهْ يِنْعِمْ عَلَيْكْ. شُو نِتْعَشَّى؟"
    ],
    [
     "B",
     "أنا يوعان. نطلب أكل من مطعم؟",
     "ana yōʿān. niṭlub akil min maṭʿam?",
-    "I'm hungry. Shall we order food from a restaurant?"
+    "I'm hungry. Shall we order food from a restaurant?",
+    "أَنَا يَوْعَانْ. نِطْلُبْ أَكِلْ مِنْ مَطْعَمْ؟"
    ],
    [
     "A",
     "هيه، عيش ودياي. والعشا على حسابي",
     "hē, ʿēsh w diyāy. w il-ʿasha ʿala ḥsābi",
-    "Yes, rice and chicken. And dinner's on me."
+    "Yes, rice and chicken. And dinner's on me.",
+    "هَيْه، عَيْشْ وْدِيَايْ. وْالْعَشَا عَلَى حْسَابِي"
    ],
    [
     "B",
     "لا والله، هالمرة علي!",
     "la wallāh, hal-marra ʿalay!",
-    "No way, this time it's on me!"
+    "No way, this time it's on me!",
+    "لَا وَاللّٰهْ، هَالْمَرَّة عَلَيْ!"
    ],
    [
     "A",
     "انزين، انزين!",
     "inzēn, inzēn!",
-    "OK, OK!"
+    "OK, OK!",
+    "اِنْزَيْنْ، اِنْزَيْنْ!"
    ]
   ],
   "items": [
@@ -273,56 +309,64 @@
     "naʿīman",
     "said to someone fresh from a shower or a haircut",
     "نعيمًا",
-    "reply: allāh yinʿim ʿalēk"
+    "reply: allāh yinʿim ʿalēk",
+    "نَعِيمًا"
    ],
    [
     "الله ينعم عليك",
     "allāh yinʿim ʿalēk",
     "reply to naʿīman (to a man)",
     "أنعم الله عليك",
-    "to a woman: allāh yinʿim ʿalēch"
+    "to a woman: allāh yinʿim ʿalēch",
+    "اللّٰهْ يِنْعِمْ عَلَيْكْ"
    ],
    [
     "نتعشى",
     "nitʿashsha",
     "we have dinner / shall we have dinner?",
     "نتعشى",
-    "I've had dinner: tʿashshēt (تعشيت)"
+    "I've had dinner: tʿashshēt (تعشيت)",
+    "نِتْعَشَّى"
    ],
    [
     "نطلب",
     "niṭlub",
     "we order / shall we order?",
     "نطلب",
-    ""
+    "",
+    "نِطْلُبْ"
    ],
    [
     "أكل",
     "akil",
     "food",
     "طعام",
-    "the food: il-akil"
+    "the food: il-akil",
+    "أَكِلْ"
    ],
    [
     "دياي",
     "diyāy",
     "chicken",
     "دجاج",
-    "you'll see written دجاج too; one chicken: diyāya"
+    "you'll see written دجاج too; one chicken: diyāya",
+    "دِيَايْ"
    ],
    [
     "عشا",
     "ʿasha",
     "dinner",
     "عشاء",
-    ""
+    "",
+    "عَشَا"
    ],
    [
     "لا والله",
     "la wallāh",
     "no way, no really (refusing or insisting)",
     "",
-    "used when you insist, e.g. on paying"
+    "used when you insist, e.g. on paying",
+    "لَا وَاللّٰهْ"
    ]
   ]
  },
@@ -338,37 +382,43 @@
     "A",
     "حياك الله يا ولدي. تفضل على الغدا",
     "ḥayyāk allāh yā wildi. tfaẓẓal ʿala l-ghada",
-    "Welcome, son. Please, come and have lunch."
+    "Welcome, son. Please, come and have lunch.",
+    "حَيَّاكْ اللّٰهْ يَا وِلْدِي. تْفَضَّلْ عَلَى الْغَدَا"
    ],
    [
     "B",
     "الله يحييج. شحالج يا خالتي؟",
     "allāh yḥayyīch. shḥālich yā khālti?",
-    "Thank you. How are you, auntie?"
+    "Thank you. How are you, auntie?",
+    "اللّٰهْ يْحَيِّيجْ. شْحَالِجْ يَا خَالْتِي؟"
    ],
    [
     "A",
     "بخير. تفضل، سمك ولحم ودياي! صحنك فاضي",
     "b-khēr. tfaẓẓal, simach w laḥam w diyāy! ṣaḥnak fāẓi",
-    "Fine. Help yourself, there's fish, meat and chicken! Your plate's empty."
+    "Fine. Help yourself, there's fish, meat and chicken! Your plate's empty.",
+    "بْخَيْرْ. تْفَضَّلْ، سِمَكْ وْلَحَمْ وْدِيَايْ! صَحْنَكْ فَاضِي"
    ],
    [
     "B",
     "لا والله، شبعت. تسلم إيدج، وايد لذيذ",
     "la wallāh, shbaʿt. tislam īdich, wāyid ladhīdh",
-    "No really, I'm full. Bless your hands, it's delicious."
+    "No really, I'm full. Bless your hands, it's delicious.",
+    "لَا وَاللّٰهْ، شْبَعْتْ. تِسْلَمْ إِيدِجْ، وَايِدْ لَذِيذْ"
    ],
    [
     "A",
     "الله يسلمك. بالعافية عليك",
     "allāh ysallmak. bil-ʿāfya ʿalēk",
-    "You're welcome. Enjoy it."
+    "You're welcome. Enjoy it.",
+    "اللّٰهْ يْسَلّْمَكْ. بِالْعَافْيَة عَلَيْكْ"
    ],
    [
     "B",
     "الله يعافيج",
     "allāh yʿāfīch",
-    "Thank you (God give you health)."
+    "Thank you (God give you health).",
+    "اللّٰهْ يْعَافِيجْ"
    ]
   ],
   "items": [
@@ -377,63 +427,72 @@
     "ghada",
     "lunch",
     "غداء",
-    "the lunch: il-ghada"
+    "the lunch: il-ghada",
+    "غَدَا"
    ],
    [
     "سمك",
     "simach",
     "fish",
     "سمك",
-    "you'll see written سمج"
+    "you'll see written سمج",
+    "سِمَكْ"
    ],
    [
     "لحم",
     "laḥam",
     "meat",
     "لحم",
-    ""
+    "",
+    "لَحَمْ"
    ],
    [
     "صحن",
     "ṣaḥan",
     "plate, dish",
     "صحن",
-    "your plate: ṣaḥnak"
+    "your plate: ṣaḥnak",
+    "صَحَنْ"
    ],
    [
     "فاضي",
     "fāẓi",
     "empty; free (not busy)",
     "فارغ",
-    "a woman, or a feminine thing: fāẓya"
+    "a woman, or a feminine thing: fāẓya",
+    "فَاضِي"
    ],
    [
     "شبعت",
     "shbaʿt",
     "I'm full (I've had enough)",
     "شبعت",
-    ""
+    "",
+    "شْبَعْتْ"
    ],
    [
     "تسلم",
     "tislam",
     "thank you (to a man; lit. may you be safe)",
     "شكرًا",
-    "to a woman: tislamīn (تسلمين); reply: allāh ysallmak"
+    "to a woman: tislamīn (تسلمين); reply: allāh ysallmak",
+    "تِسْلَمْ"
    ],
    [
     "تسلم إيدك",
     "tislam īdak",
     "bless your hands (to a man who cooked or made something)",
     "سلمت يداك",
-    "to a woman: tislam īdich (تسلم إيدج); reply: allāh ysallmak"
+    "to a woman: tislam īdich (تسلم إيدج); reply: allāh ysallmak",
+    "تِسْلَمْ إِيدَكْ"
    ],
    [
     "لذيذ",
     "ladhīdh",
     "delicious",
     "لذيذ",
-    ""
+    "",
+    "لَذِيذْ"
    ]
   ],
   "culture": "Eat, pass dishes and take your coffee cup with the right hand. A host keeps offering more even after you say you're full; saying wallāh shbaʿt, il-ḥamdu lillāh once or twice is the polite way to stop. Praise the food and thank the cook with tislam īdich (to a man: tislam īdak)."
@@ -450,37 +509,43 @@
     "B",
     "لو سمحت، وين محطة المترو؟",
     "law samaḥt, wēn maḥaṭṭat il-mitrō?",
-    "Excuse me, where's the metro station?"
+    "Excuse me, where's the metro station?",
+    "لَوْ سَمَحْتْ، وَيْنْ مَحَطَّةْ الْمِتْرَوْ؟"
    ],
    [
     "A",
     "مب بعيد. روح على طول صوب الإشارة",
     "mub baʿīd. rūḥ ʿala ṭūl ṣōb il-ishāra",
-    "It's not far. Go straight on towards the traffic lights."
+    "It's not far. Go straight on towards the traffic lights.",
+    "مُبْ بَعِيدْ. رُوحْ عَلَى طُولْ صَوْبْ الْإِشَارَة"
    ],
    [
     "B",
     "ما فهمت. شوي شوي، الله يخليك",
     "ma fhimt. shwayy shwayy, allāh ykhallīk",
-    "I didn't get that. Slowly, please."
+    "I didn't get that. Slowly, please.",
+    "مَا فْهِمْتْ. شْوَيّْ شْوَيّْ، اللّٰهْ يْخَلِّيكْ"
    ],
    [
     "A",
     "عادي. تتكلم إنقليزي؟",
     "ʿādi. titkallam ingilīzi?",
-    "No problem. Do you speak English?"
+    "No problem. Do you speak English?",
+    "عَادِي. تِتْكَلَّمْ إِنْقِلِيزِي؟"
    ],
    [
     "B",
     "شوي بس. عند الإشارة يمين، صح؟",
     "shwayy bas. ʿind il-ishāra yamīn, ṣaḥḥ?",
-    "Just a little. At the lights, right, isn't it?"
+    "Just a little. At the lights, right, isn't it?",
+    "شْوَيّْ بَسْ. عِنْدْ الْإِشَارَة يَمِينْ، صَحّْ؟"
    ],
    [
     "A",
     "لا، يسار. المول قدامك، والمحطة وراه",
     "la, yasār. il-mōl jiddāmak, w il-maḥaṭṭa warāh",
-    "No, left. The mall's in front of you, and the station's behind it."
+    "No, left. The mall's in front of you, and the station's behind it.",
+    "لَا، يَسَارْ. الْمَوْلْ قِدَّامَكْ، وْالْمَحَطَّة وَرَاهْ"
    ]
   ],
   "items": [
@@ -489,63 +554,72 @@
     "il-mitrō",
     "the metro",
     "المترو",
-    ""
+    "",
+    "الْمِتْرَوْ"
    ],
    [
     "محطة",
     "maḥaṭṭa",
     "station",
     "محطة",
-    "the metro station: maḥaṭṭat il-mitrō"
+    "the metro station: maḥaṭṭat il-mitrō",
+    "مَحَطَّة"
    ],
    [
     "بعيد",
     "baʿīd",
     "far",
     "بعيد",
-    "not far: mub baʿīd"
+    "not far: mub baʿīd",
+    "بَعِيدْ"
    ],
    [
     "صوب",
     "ṣōb",
     "towards, in the direction of",
     "نحو",
-    "ṣōbak = your way, towards you"
+    "ṣōbak = your way, towards you",
+    "صَوْبْ"
    ],
    [
     "الإشارة",
     "il-ishāra",
     "the traffic lights",
     "إشارة المرور",
-    ""
+    "",
+    "الْإِشَارَة"
    ],
    [
     "تتكلم إنقليزي؟",
     "titkallam ingilīzi?",
     "do you speak English? (to a man)",
     "هل تتكلم الإنجليزية؟",
-    "to a woman: titkallamīn ingilīzi?; you'll see written انجليزي"
+    "to a woman: titkallamīn ingilīzi?; you'll see written انجليزي",
+    "تِتْكَلَّمْ إِنْقِلِيزِي؟"
    ],
    [
     "قدام",
     "jiddām",
     "in front of",
     "أمام",
-    "jiddāmak = in front of you; you'll see written جدام"
+    "jiddāmak = in front of you; you'll see written جدام",
+    "قِدَّامْ"
    ],
    [
     "ورا",
     "wara",
     "behind",
     "وراء / خلف",
-    "warāh = behind it"
+    "warāh = behind it",
+    "وَرَا"
    ],
    [
     "شوي بس",
     "shwayy bas",
     "just a little",
     "قليلًا فقط",
-    "a reply: titkallam ʿarabi? shwayy bas"
+    "a reply: titkallam ʿarabi? shwayy bas",
+    "شْوَيّْ بَسْ"
    ]
   ]
  },
@@ -561,31 +635,36 @@
     "A",
     "يلا نركب المترو",
     "yalla nirkab il-mitrō",
-    "Come on, let's take the metro."
+    "Come on, let's take the metro.",
+    "يَلَّا نِرْكَبْ الْمِتْرَوْ"
    ],
    [
     "B",
     "زين. المترو فوق ولّا تحت؟",
     "zēn. il-mitrō fōg walla taḥt?",
-    "OK. Is the metro upstairs or downstairs?"
+    "OK. Is the metro upstairs or downstairs?",
+    "زَيْنْ. الْمِتْرَوْ فَوْقْ وَلَّا تَحْتْ؟"
    ],
    [
     "A",
     "فوق. بس التذكرة تحت، قدام الباب",
     "fōg. bas it-tadhkara taḥt, jiddām il-bāb",
-    "Upstairs. But you get the ticket downstairs, in front of the door."
+    "Upstairs. But you get the ticket downstairs, in front of the door.",
+    "فَوْقْ. بَسْ التَّذْكَرَة تَحْتْ، قِدَّامْ الْبَابْ"
    ],
    [
     "B",
     "المترو مب زحمة اليوم. وين ننزل؟",
     "il-mitrō mub zaḥma l-yōm. wēn ninzil?",
-    "The metro isn't crowded today. Where do we get off?"
+    "The metro isn't crowded today. Where do we get off?",
+    "الْمِتْرَوْ مُبْ زَحْمَة الْيَوْمْ. وَيْنْ نِنْزِلْ؟"
    ],
    [
     "A",
     "في محطة المول. تعال، اقعد يمي",
     "fi maḥaṭṭat il-mōl. taʿāl, igʿid yammi",
-    "At the mall station. Come, sit next to me."
+    "At the mall station. Come, sit next to me.",
+    "فِي مَحَطَّةْ الْمَوْلْ. تَعَالْ، اِقْعِدْ يَمِّي"
    ]
   ],
   "items": [
@@ -594,56 +673,64 @@
     "nirkab",
     "we get on / let's take (the bus, the metro)",
     "نركب",
-    "I get on: arkab"
+    "I get on: arkab",
+    "نِرْكَبْ"
    ],
    [
     "ننزل",
     "ninzil",
     "we get off / let's get off",
     "ننزل",
-    ""
+    "",
+    "نِنْزِلْ"
    ],
    [
     "فوق",
     "fōg",
     "up, upstairs; above",
     "فوق",
-    ""
+    "",
+    "فَوْقْ"
    ],
    [
     "تحت",
     "taḥt",
     "down, downstairs; below",
     "تحت",
-    ""
+    "",
+    "تَحْتْ"
    ],
    [
     "اقعد",
     "igʿid",
     "sit (down) (to a man)",
     "اجلس",
-    "to a woman: igʿidi; UAE also: iylis (ايلس), from yalas 'sat'"
+    "to a woman: igʿidi; UAE also: iylis (ايلس), from yalas 'sat'",
+    "اِقْعِدْ"
    ],
    [
     "تذكرة",
     "tadhkara",
     "ticket",
     "تذكرة",
-    ""
+    "",
+    "تَذْكَرَة"
    ],
    [
     "يم",
     "yamm",
     "next to, by",
     "بجانب",
-    "yammi = next to me; yammak = next to you; you'll also hear jamb (جنب)"
+    "yammi = next to me; yammak = next to you; you'll also hear jamb (جنب)",
+    "يَمّْ"
    ],
    [
     "زحمة",
     "zaḥma",
     "crowded; a crush, traffic",
     "مزدحم / زحام",
-    ""
+    "",
+    "زَحْمَة"
    ]
   ]
  },
@@ -659,37 +746,43 @@
     "A",
     "ألو، انت وين؟ الكل هني!",
     "alō, inta wēn? il-kill hni!",
-    "Hello? Where are you? Everyone's here!"
+    "Hello? Where are you? Everyone's here!",
+    "أَلَوْ، اِنْتَ وَيْنْ؟ الْكِلّْ هْنِي!"
    ],
    [
     "B",
     "أنا في الطريق، في المترو. ياي الحين",
     "ana fi ṭ-ṭarīg, fi l-mitrō. yāy il-ḥīn",
-    "I'm on the way, on the metro. I'm coming now."
+    "I'm on the way, on the metro. I'm coming now.",
+    "أَنَا فِي الطَّرِيقْ، فِي الْمِتْرَوْ. يَايْ الْحِينْ"
    ],
    [
     "A",
     "زين. نحن برا المول، عند الباب",
     "zēn. niḥin barra l-mōl, ʿind il-bāb",
-    "OK. We're outside the mall, by the door."
+    "OK. We're outside the mall, by the door.",
+    "زَيْنْ. نِحِنْ بَرَّا الْمَوْلْ، عِنْدْ الْبَابْ"
    ],
    [
     "B",
     "ما أسمعج عدل. عيدي مرة ثانية؟",
     "ma asmaʿich ʿadil. ʿīdi marra thānya?",
-    "I can't hear you properly. Can you say it again?"
+    "I can't hear you properly. Can you say it again?",
+    "مَا أَسْمَعِجْ عَدِلْ. عِيدِي مَرَّة ثَانْيَة؟"
    ],
    [
     "A",
     "برا، مب داخل! قدام الباب",
     "barra, mub dākhil! jiddām il-bāb",
-    "Outside, not inside! In front of the door."
+    "Outside, not inside! In front of the door.",
+    "بَرَّا، مُبْ دَاخِلْ! قِدَّامْ الْبَابْ"
    ],
    [
     "B",
     "انزين، أنا قريب منج. خمس دقايق",
     "inzēn, ana garīb minnich. khams dagāyig",
-    "OK, I'm close to you. Five minutes."
+    "OK, I'm close to you. Five minutes.",
+    "اِنْزَيْنْ، أَنَا قَرِيبْ مِنِّجْ. خَمْسْ دَقَايِقْ"
    ]
   ],
   "items": [
@@ -698,56 +791,64 @@
     "inta wēn?",
     "where are you? (to a man)",
     "أين أنت؟",
-    "to a woman: inti wēn?"
+    "to a woman: inti wēn?",
+    "اِنْتَ وَيْنْ؟"
    ],
    [
     "في الطريق",
     "fi ṭ-ṭarīg",
     "on the way",
     "في الطريق",
-    ""
+    "",
+    "فِي الطَّرِيقْ"
    ],
    [
     "ياي",
     "yāy",
     "coming (a man)",
     "قادم",
-    "a woman: yāya (ياية); you'll see written جاي"
+    "a woman: yāya (ياية); you'll see written جاي",
+    "يَايْ"
    ],
    [
     "برا",
     "barra",
     "outside",
     "خارج",
-    "you'll see written برع"
+    "you'll see written برع",
+    "بَرَّا"
    ],
    [
     "داخل",
     "dākhil",
     "inside",
     "داخل",
-    ""
+    "",
+    "دَاخِلْ"
    ],
    [
     "ما أسمعك",
     "ma asmaʿak",
     "I can't hear you (to a man)",
     "لا أسمعك",
-    "to a woman: ma asmaʿich (ما أسمعج)"
+    "to a woman: ma asmaʿich (ما أسمعج)",
+    "مَا أَسْمَعَكْ"
    ],
    [
     "عدل",
     "ʿadil",
     "properly, right; straight",
     "جيدًا",
-    "ma asmaʿak ʿadil = I can't hear you properly"
+    "ma asmaʿak ʿadil = I can't hear you properly",
+    "عَدِلْ"
    ],
    [
     "قريب منك",
     "garīb minnak",
     "close to you (to a man)",
     "قريب منك",
-    "to a woman: garīb minnich"
+    "to a woman: garīb minnich",
+    "قَرِيبْ مِنَّكْ"
    ]
   ]
  },
@@ -763,37 +864,43 @@
     "B",
     "باكر بروح المطار. كيف أروح؟",
     "bāchir barūḥ il-maṭār. chēf arūḥ?",
-    "Tomorrow I'm going to the airport. How do I get there?"
+    "Tomorrow I'm going to the airport. How do I get there?",
+    "بَاكِرْ بَرُوحْ الْمَطَارْ. كَيْفْ أَرُوحْ؟"
    ],
    [
     "A",
     "بالمترو أو بالتاكسي",
     "bil-mitrō aw bit-tāksi",
-    "By metro or by taxi."
+    "By metro or by taxi.",
+    "بِالْمِتْرَوْ أَوْ بِالتَّاكْسِي"
    ],
    [
     "B",
     "والباص؟ الموقف قدام البيت",
     "w il-bāṣ? il-mōgif jiddām il-bēt",
-    "And the bus? The stop's right outside home."
+    "And the bus? The stop's right outside home.",
+    "وْالْبَاصْ؟ الْمَوْقِفْ قِدَّامْ الْبَيْتْ"
    ],
    [
     "A",
     "الباص يوصل المطار، بس مب سريع",
     "il-bāṣ yōṣal il-maṭār, bas mub sarīʿ",
-    "The bus gets to the airport, but it isn't fast."
+    "The bus gets to the airport, but it isn't fast.",
+    "الْبَاصْ يَوْصَلْ الْمَطَارْ، بَسْ مُبْ سَرِيعْ"
    ],
    [
     "B",
     "زين، المترو. المحطة ورا المول؟",
     "zēn, il-mitrō. il-maḥaṭṭa wara l-mōl?",
-    "OK, the metro. Is the station behind the mall?"
+    "OK, the metro. Is the station behind the mall?",
+    "زَيْنْ، الْمِتْرَوْ. الْمَحَطَّة وَرَا الْمَوْلْ؟"
    ],
    [
     "A",
     "لا، بعيدة على ريولك. خذ تاكسي",
     "la, baʿīda ʿala ryūlak. khudh tāksi",
-    "No, it's too far to walk. Take a taxi."
+    "No, it's too far to walk. Take a taxi.",
+    "لَا، بَعِيدَة عَلَى رْيُولَكْ. خُذْ تَاكْسِي"
    ]
   ],
   "items": [
@@ -802,56 +909,64 @@
     "chēf",
     "how?",
     "كيف",
-    "the same as shlōn (u15); some say kēf"
+    "the same as shlōn (u15); some say kēf",
+    "كَيْفْ"
    ],
    [
     "المطار",
     "il-maṭār",
     "the airport",
     "المطار",
-    ""
+    "",
+    "الْمَطَارْ"
    ],
    [
     "أو",
     "aw",
     "or",
     "أو",
-    "in questions you already know walla (ولّا): kbīra walla ṣghīra?"
+    "in questions you already know walla (ولّا): kbīra walla ṣghīra?",
+    "أَوْ"
    ],
    [
     "الباص",
     "il-bāṣ",
     "the bus",
     "الحافلة",
-    ""
+    "",
+    "الْبَاصْ"
    ],
    [
     "موقف",
     "mōgif",
     "(bus) stop; car park",
     "موقف",
-    "bus stop: mōgif il-bāṣ"
+    "bus stop: mōgif il-bāṣ",
+    "مَوْقِفْ"
    ],
    [
     "يوصل",
     "yōṣal",
     "it gets there, it reaches",
     "يصل",
-    ""
+    "",
+    "يَوْصَلْ"
    ],
    [
     "سريع",
     "sarīʿ",
     "fast, quick",
     "سريع",
-    "not fast: mub sarīʿ"
+    "not fast: mub sarīʿ",
+    "سَرِيعْ"
    ],
    [
     "على ريولي",
     "ʿala ryūli",
     "on foot (lit. on my feet)",
     "سيرًا على الأقدام",
-    "to a man: ʿala ryūlak; to a woman: ʿala ryūlich (على ريولج); you'll see written رجولي"
+    "to a man: ʿala ryūlak; to a woman: ʿala ryūlich (على ريولج); you'll see written رجولي",
+    "عَلَى رْيُولِي"
    ]
   ]
  },
@@ -867,37 +982,43 @@
     "B",
     "هلا سيف، انتو وين؟",
     "hala Sēf, intu wēn?",
-    "Hi Sēf, where are you guys?"
+    "Hi Sēf, where are you guys?",
+    "هَلَا سَيْفْ، اِنْتُو وَيْنْ؟"
    ],
    [
     "A",
     "هلا فيك! يايين، نحن في المترو، قريبين",
     "hala fīk! yāyīn, niḥin fi l-mitrō, garībīn",
-    "Hi! Coming, we're on the metro, close by."
+    "Hi! Coming, we're on the metro, close by.",
+    "هَلَا فِيكْ! يَايِينْ، نِحِنْ فِي الْمِتْرَوْ، قَرِيبِينْ"
    ],
    [
     "B",
     "زين. انتو يوعانين؟ تبون نتغدى في المول؟",
     "zēn. intu yōʿānīn? tabūn nitghadda fi l-mōl?",
-    "Great. Are you hungry? Do you want to have lunch at the mall?"
+    "Great. Are you hungry? Do you want to have lunch at the mall?",
+    "زَيْنْ. اِنْتُو يَوْعَانِينْ؟ تَبُونْ نِتْغَدَّى فِي الْمَوْلْ؟"
    ],
    [
     "A",
     "هيه والله! المطعم وين؟",
     "hē wallāh! il-maṭʿam wēn?",
-    "Definitely! Where's the restaurant?"
+    "Definitely! Where's the restaurant?",
+    "هَيْه وَاللّٰهْ! الْمَطْعَمْ وَيْنْ؟"
    ],
    [
     "B",
     "فوق، يم السينما. والغدا على حسابي",
     "fōg, yamm is-sīnama. w il-ghada ʿala ḥsābi",
-    "Upstairs, next to the cinema. And lunch is on me."
+    "Upstairs, next to the cinema. And lunch is on me.",
+    "فَوْقْ، يَمّْ السِّينَمَا. وْالْغَدَا عَلَى حْسَابِي"
    ],
    [
     "A",
     "لا والله، الغدا على حسابنا!",
     "la wallāh, il-ghada ʿala ḥsābna!",
-    "No way, lunch is on us!"
+    "No way, lunch is on us!",
+    "لَا وَاللّٰهْ، الْغَدَا عَلَى حْسَابْنَا!"
    ]
   ],
   "items": [
@@ -906,42 +1027,48 @@
     "intu wēn?",
     "where are you? (to a group)",
     "أين أنتم؟",
-    "to one man: inta wēn?; to one woman: inti wēn?"
+    "to one man: inta wēn?; to one woman: inti wēn?",
+    "اِنْتُو وَيْنْ؟"
    ],
    [
     "يايين",
     "yāyīn",
     "coming (a group; we or they)",
     "قادمون",
-    "one man: yāy; one woman: yāya; you'll see written ياين"
+    "one man: yāy; one woman: yāya; you'll see written ياين",
+    "يَايِينْ"
    ],
    [
     "قريبين",
     "garībīn",
     "close, nearby (a group)",
     "قريبون",
-    "one man: garīb; one woman: garība"
+    "one man: garīb; one woman: garība",
+    "قَرِيبِينْ"
    ],
    [
     "يوعانين",
     "yōʿānīn",
     "hungry (a group)",
     "جائعون",
-    "one man: yōʿān; one woman: yōʿāna"
+    "one man: yōʿān; one woman: yōʿāna",
+    "يَوْعَانِينْ"
    ],
    [
     "تبون؟",
     "tabūn?",
     "do you want? (to a group)",
     "هل تريدون؟",
-    "to one man: tabi?; to one woman: tabīn?"
+    "to one man: tabi?; to one woman: tabīn?",
+    "تَبُونْ؟"
    ],
    [
     "على حسابنا",
     "ʿala ḥsābna",
     "it's on us (we're paying)",
     "على حسابنا",
-    ""
+    "",
+    "عَلَى حْسَابْنَا"
    ]
   ]
  },
@@ -957,37 +1084,43 @@
     "A",
     "وين ساكن الحين؟",
     "wēn sākin il-ḥīn?",
-    "Where are you living now?"
+    "Where are you living now?",
+    "وَيْنْ سَاكِنْ الْحِينْ؟"
    ],
    [
     "B",
     "في مردف، في شقة صغيرة يم المول",
     "fi Mirdif, fi shigga ṣghīra yamm il-mōl",
-    "In Mirdif, in a small flat near the mall."
+    "In Mirdif, in a small flat near the mall.",
+    "فِي مِرْدِفْ، فِي شِقَّة صْغِيرَة يَمّْ الْمَوْلْ"
    ],
    [
     "A",
     "ساكن بروحك، صح؟",
     "sākin b-rūḥak, ṣaḥḥ?",
-    "You live on your own, right?"
+    "You live on your own, right?",
+    "سَاكِنْ بْرُوحَكْ، صَحّْ؟"
    ],
    [
     "B",
     "لا، ويا ربيعي. أعرفه من الجامعة",
     "la, wiyya rbīʿi. aʿarfah min il-jāmʿa",
-    "No, with my friend. I know him from university."
+    "No, with my friend. I know him from university.",
+    "لَا، وِيَّا رْبِيعِي. أَعَرْفَهْ مِنْ الْجَامْعَة"
    ],
    [
     "A",
     "ما شاء الله. والمنطقة زحمة؟",
     "mā shāʼ allāh. w il-manṭiga zaḥma?",
-    "How lovely. And is the area busy?"
+    "How lovely. And is the area busy?",
+    "مَا شَاءْ اللّٰهْ. وْالْمَنْطِقَة زَحْمَة؟"
    ],
    [
     "B",
     "لا، هادية. والجيران طيبين، أعرفهم كلهم",
     "la, hādya. w il-jīrān ṭayybīn, aʿarfhum killhum",
-    "No, it's quiet. And the neighbours are nice, I know them all."
+    "No, it's quiet. And the neighbours are nice, I know them all.",
+    "لَا، هَادْيَة. وْالْجِيرَانْ طَيّْبِينْ، أَعَرْفْهُمْ كِلّْهُمْ"
    ]
   ],
   "items": [
@@ -996,42 +1129,48 @@
     "sākin",
     "living (in a place) (a man)",
     "ساكن",
-    "a woman: sākna (ساكنة); wēn sākin? = where do you live?"
+    "a woman: sākna (ساكنة); wēn sākin? = where do you live?",
+    "سَاكِنْ"
    ],
    [
     "أعرفه",
     "aʿarfah",
     "I know him",
     "أعرفه",
-    "I know her: aʿarfha (أعرفها)"
+    "I know her: aʿarfha (أعرفها)",
+    "أَعَرْفَهْ"
    ],
    [
     "منطقة",
     "manṭiga",
     "area, neighbourhood",
     "منطقة",
-    ""
+    "",
+    "مَنْطِقَة"
    ],
    [
     "هادية",
     "hādya",
     "quiet, calm (with a feminine noun: area, flat)",
     "هادئة",
-    "for a masculine noun: hādi (هادي)"
+    "for a masculine noun: hādi (هادي)",
+    "هَادْيَة"
    ],
    [
     "الجيران",
     "il-jīrān",
     "the neighbours",
     "الجيران",
-    "one neighbour: jār"
+    "one neighbour: jār",
+    "الْجِيرَانْ"
    ],
    [
     "أعرفهم",
     "aʿarfhum",
     "I know them",
     "أعرفهم",
-    ""
+    "",
+    "أَعَرْفْهُمْ"
    ]
   ]
  }

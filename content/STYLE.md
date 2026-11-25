@@ -56,7 +56,7 @@ Evidence keys used below:
 
 ## 2. Spelling (Arabic script)
 
-The course follows **CODA-Gulf** (S: Khalifa et al. 2016; Habash et al. 2018) for q, k and the -ich ending: spell by the fuṣḥā cognate and let the transliteration carry the Gulf sound. **It departs from CODA for the y-sound** (course-lead decision): where Gulf speakers say y for fuṣḥā j in an everyday dialect word, write ي. Natives mostly write it that way, the corpus supports it, and the app's text-to-speech reads the script, so ي gives the right sound. Common native spellings that differ go in the note as "you'll see written …".
+The course follows **CODA-Gulf** (the published spelling convention for written Gulf Arabic) for q, k and the -ich ending: spell by the fuṣḥā cognate and let the transliteration carry the Gulf sound. **It departs from CODA for the y-sound** (course-lead decision): where Gulf speakers say y for fuṣḥā j in an everyday dialect word, write ي. Natives mostly write it that way, the corpus supports it, and the app's text-to-speech reads the script, so ي gives the right sound. Common native spellings that differ go in the note as "you'll see written …".
 
 | Feature | Rule | Example | Evidence |
 |---|---|---|---|
@@ -76,7 +76,7 @@ The course follows **CODA-Gulf** (S: Khalifa et al. 2016; Habash et al. 2018) fo
 | 3rd person masculine suffix | ـه | بيته bētah, عنده ʿindah | S |
 | alif maqṣūra | as in fuṣḥā; a defective verb's he-form ends in ى because Gulf says -a (نسى nisa, لقى liga, مشى misha) | متى, على, سوى, نسى | S |
 | initial hamza | write أ / إ / آ where fuṣḥā has it (stage 1 practice: أبي, أقدر, أنا, إي, إن شاء الله, آسف). Kept from stage 1: انت, انتي, انتو without hamza | أروح, أعرف; انت | stage 1; CODA* allows either. The linter and attest.py ignore hamza |
-| vowel marks | none. Shadda only where it prevents a misreading (ريّال "man" vs ريال the coin) | — | lint warns on other marks |
+| vowel marks | none in the Arabic field. Shadda only where it prevents a misreading (ريّال "man" vs ريال the coin). Stage 1 and 2 rows also carry a fully vowelled form as their last element (§14) | — | lint warns on other marks |
 | Persian letters چ گ ڤ پ | never in an Arabic field. Allowed in a note: "you'll see written چاي" | — | S (CODA* uses none) |
 | numbers | words, not digits, in dialogue and items | بعشرين درهم | stage 1 |
 | punctuation | Arabic comma ، and question mark ؟ | — | stage 1 |
@@ -272,3 +272,46 @@ From stage 4, a unit may list some items as receptive in an optional field `"rec
 - Receptive items still count as taught (teach-once applies), still appear in the dialogue, and appear only in A's lines. Prefer A lines over 8 words for them, so the app doesn't make a sentence-building card from the line.
 - The English gloss is the same as for any item. Add "(recognise)" to the note.
 - The linter and app need the changes in §9 before the first stage 4 batch.
+
+## 14. Vowelled forms (stages 1 and 2)
+
+Every stage 1 and 2 row also carries the same words fully vowelled, so the app can show fading vowel marks. The Arabic field itself stays as §2 says.
+
+**Row layout.** The vowelled form is the last element: items are `[ar, translit, english, fuṣḥā, note, vowelled]`, dialogue lines `[speaker, ar, translit, english, vowelled]`. Nothing else in a row changes, and no row is added, removed or reordered.
+
+**The marks reproduce the transliteration.** The form is read letter by letter and must spell the reviewed transliteration, which is Gulf speech, not fuṣḥā: shlōnak is شْلَوْنَكْ (not شْلُونَك, which reads shlūnak), il-ḥamdu is الْحَمْدُ because that is how the course says it. With the marks stripped the form is exactly the Arabic field, with every shadda the field has kept on the same letter; a shadda the field lacks may be added where a sound is doubled. Never change the Arabic field or the transliteration to make a row pass.
+
+**Vowelling rules**
+
+| # | Rule | Example |
+|---|---|---|
+| V1 | Every sounded consonant carries one of fatḥa, kasra, ḍamma, sukūn (or tanwīn, V15); a word-final sounded consonant takes sukūn | زَيْنْ zēn (u1) |
+| V2 | ā = fatḥa + bare ا (bare ى at a word end); ī = kasra + bare ي; ū = ḍamma + bare و | السَّلَامْ is-salām; الْحِينْ il-ḥīn; عَلَى ʿala |
+| V3 | ē = fatḥa + يْ; ō = fatḥa + وْ. The design's example شْلُونَك reads shlūnak: write شْلَوْنَكْ | شْلَوْنَكْ shlōnak (u1); لَوْ سَمَحْتْ law samaḥt (s1u061) |
+| V4 | Written ay/aw (shay, law, ay, aw, geminate -ayy-/-aww-) use the same marks as ē/ō | وَعَلَيْكُمْ wa ʿalaykum (u1); شْوَيّْ shwayy (s2u058) |
+| V5 | A consonant cluster at the start of a word: sukūn on the first consonant | كْبِيرَة kbīra (s1u028); يْسَلّْمَكْ ysallmak (u1) |
+| V6 | Shadda for every doubled sound, with that consonant's vowel, or sukūn when a consonant follows; keep every shadda the Arabic field has, on the same letter | رَيَّالْ rayyāl (s1u025); وَلَّا walla (s1u028); يْسَلّْمَكْ; كِلّْ kill (s2u059) |
+| V7 | Article: the alif is always bare (il-, al- and l- are read from context). Moon letter: lām takes sukūn. Sun letter: lām bare and shadda on the next letter | الْحَمْدُ il-ḥamdu; السَّلَامُ as-salāmu; الْقَمِيصْ l-gamīṣ (s1u030) |
+| V8 | "and" is وْ when transliterated w, وَ when wa; after it the article alif is still bare | وْالشِّقَّة w ish-shigga (s1u028); وَاللّٰهْ wallāh (u1); وْاِنْتَ w inta (u1) |
+| V9 | tāʼ marbūṭa: bare after fatḥa when the word ends in -a; with sukūn when it is a construct -at | كْبِيرَة kbīra; سَيَّارَةْ أُبُويْ sayyārat ubūy (s1u025); مَحَطَّةْ الْمِتْرَوْ maḥaṭṭat il-mitrō (s1u061) |
+| V10 | ه: sounded → it carries a mark (word-final: sukūn); silent at a word end → bare | إِيدَهْ īdah (s2u058); هَيْه hē; يُمَّه yumma; الْحِينَه il-ḥīna |
+| V11 | Hamza: the seat letter carries the vowel or sukūn; never add or remove a hamza the Arabic field has or lacks; آ needs no mark | رَأْيَكْ raʼyak (s1u030); شَاءْ shāʼ; آسِفْ āsif (s1u038); الْأَكِلْ il-akil (s2u057) |
+| V12 | A word-initial vowel on a bare alif (no hamza written): the alif carries the vowel | وْاِنْتَ w inta; اِجْتِمَاعْ ijtimāʿ (s2u089) |
+| V13 | A final vowel the transliteration writes short over a long letter (ma, la, ana, hādha, ʿindi, fi): short vowel + bare letter, as V2 | مَا فِي ma fī; عِنْدِي ʿindi (u5) |
+| V14 | An ā the spelling does not write: dagger alif ٰ on the consonant | هٰذَا hādha, هٰذَاكْ hādhāk (s1u030); اللّٰهْ allāh |
+| V15 | Tanwīn only where the transliteration has -an; the alif after it stays bare | تَقْرِيبًا tagrīban (s2u040); أَصْلًا aṣlan (s2u080) |
+| V16 | Religious and set formulas keep their established shapes (shadda and dagger alif in اللّٰه, لِلّٰه) but carry a case ending only where the transliteration says it | السَّلَامُ عَلَيْكُمْ as-salāmu ʿalaykum; وَعَلَيْكُمْ السَّلَامْ wa ʿalaykum is-salām; الْحَمْدُ لِلّٰهْ il-ḥamdu lillāh (not لِلّٰهِ) |
+| V17 | Plural verb -aw: وْ then a bare silent alif | رَاحَوْا rāḥaw, وِصْلَوْا wiṣlaw (s1u038) |
+| V18 | Helping vowels and dropped vowels exactly as transliterated | قَبِلْ gabil (s2u057); قِلْتِي لِي giltī-li (s2u089) |
+| V19 | ق, ك, ج, ش stay as written; the marks give the vowels, never the g, ch, j or y | قِدَّامْ jiddām; شَايْ chāy; عَلَيْجْ ʿalēch |
+| V20 | Loanwords as transliterated: short o is ḍamma + bare و, ō is fatḥa + وْ, ē is fatḥa + يْ | مُوبَايْلْ mobāyl (s2u025); الْفِيدْيُو il-fīdyo (s2u026); الْمِتْرَوْ il-mitrō |
+
+Two readings the table implies: a bare ة also follows a long ā (الْمُبَارَاة il-mubārā, s2u020), and an alif after a proclitic و ب ف ك ل ه that is followed by ل is the article, not ā (وَاللّٰهْ, هَالشَّيْ).
+
+The article does not hide the vowel before it: the proclitic, or the last letter of the word before an article, carries the vowel the transliteration has there. A short a needs fatḥa (وَاللّٰهْ wallāh, هَالتِّلِفَوْنْ hat-tilifōn, مَعَ السَّلَامَة maʿa s-salāma), no vowel needs sukūn (وْالْبَيْتْ w il-bēt). The vowel of the article never moves onto the word before it (إِنْ شَاءْ اللّٰهْ, صَبَاحْ الْخَيْرْ, يَوْمْ الْخَمِيسْ, not شَاءَ, صَبَاحِ, يَوْمِ); after the proclitic وْ of w il- the article i is a separate sound (وْالْبَيْتْ, not وِالْبَيْتْ), and bil- is بِالْ; after a sukūn the article alif adds i (or ā), never a. The one exception to the sukūn rule is the alif of الله after a sukūn in the word before (شَاءْ اللّٰهْ shāʼ allāh).
+
+A final ء written after a long ā but not said stays bare, like a silent ه or ة: the day names are ثَلَاثَاء thalātha and أَرْبَعَاء arbaʿa (الثَّلَاثَاء, الْأَرْبَعَاء). A final ء that is said keeps its sukūn: مَسَاءْ masāʼ, شَاءْ shāʼ.
+
+A hamza letter never carries a shadda. Mark order: every vowelled form is in Unicode canonical order (what `unicodedata.normalize("NFC", s)` gives): on one letter the vowel comes before the shadda (يَّ), then sukūn or dagger alif. The checker fails a form in any other order.
+
+`tools/harakat_check.py` checks every row; its reading rules and tolerances are in the file's header comment.

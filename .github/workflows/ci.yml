@@ -18,6 +18,9 @@ jobs:
       - run: node --version && node --test tests/logic.test.js
       # the course content: shape, duplicates, transliteration scheme (warnings are printed for reviewers, errors fail)
       - run: python3 tools/lint_content.py
+      # the python tools' own tests, and the stage 1-2 vowel marks (every row must be vowelled): they strip back to the arabic and read as the transliteration
+      - run: python3 -m unittest discover -s tests -p "test_*.py"
+      - run: python3 tools/harakat_check.py --all
       # docs/ is the installable app built from index.html; it must match the source
       - name: installed app is up to date
         run: |

@@ -62,7 +62,8 @@ def main():
             if not (isinstance(it, list) and 5 <= len(it) <= 9): E("items must be 5-9"); it = []
             elif n >= 2 and len(it) < (5 if n == 5 else 8) and not re.search(r"checkpoint|exit", str(u.get("title", "")) + str(u.get("goal", "")), re.I): W(f"only {len(it)} items: normal lessons need {'5-9 at C1 (STAGE5_BRIEF)' if n == 5 else '8-9 (FRAMEWORK item arithmetic)'}")
             for i, l in enumerate(dl):
-                if not (isinstance(l, list) and len(l) == 4 and l[0] in ("A", "B") and all(isinstance(x, str) and x.strip() for x in l[1:])): E(f"dialogue[{i}] shape"); continue
+                if isinstance(l, list) and len(l) == 5 and n > 2: E(f"dialogue[{i}] has a vowelled form outside stages 1-2"); continue
+                if not (isinstance(l, list) and len(l) in (4, 5) and l[0] in ("A", "B") and all(isinstance(x, str) and x.strip() for x in l[1:])): E(f"dialogue[{i}] shape"); continue
                 check_line(l[1], l[2], l[3], f"dialogue[{i}]", E, W, 200)
             for m in formula_gaps(dl): W(m)
             if n >= 4 and isinstance(it, list):
@@ -73,7 +74,8 @@ def main():
                         if tagged and i not in rec: W(f"items[{i}] note says (recognise) but the item isn't in receptive")
                         if i in rec and not tagged: W(f"items[{i}] is receptive but its note doesn't say (recognise)")
             for i, r in enumerate(it):
-                if not (isinstance(r, list) and len(r) == 5 and all(isinstance(x, str) for x in r) and all(x.strip() for x in r[:3])): E(f"items[{i}] shape"); continue
+                if isinstance(r, list) and len(r) == 6 and n > 2: E(f"items[{i}] has a vowelled form outside stages 1-2"); continue
+                if not (isinstance(r, list) and len(r) in (5, 6) and all(isinstance(x, str) for x in r) and all(x.strip() for x in r[:3]) and (len(r) == 5 or r[5].strip())): E(f"items[{i}] shape"); continue
                 check_line(r[0], r[1], r[2], f"items[{i}]", E, W, 80)
                 if r[3] and not AR.search(r[3]): E(f"items[{i}] fuṣḥā column isn't Arabic")
                 k = norm(r[0])
@@ -113,7 +115,7 @@ def check_translit_consistency(only, warns):
     seen = {}
     for n in range(1, 6):
         for src, u in units_of(n):
-            rows = [(l[1], l[2]) for l in u.get("dialogue", []) if isinstance(l, list) and len(l) == 4] + [(r[0], r[1]) for r in u.get("items", []) if isinstance(r, list) and len(r) == 5]
+            rows = [(l[1], l[2]) for l in u.get("dialogue", []) if isinstance(l, list) and len(l) in (4, 5)] + [(r[0], r[1]) for r in u.get("items", []) if isinstance(r, list) and len(r) in (5, 6)]
             for ar, tr in rows:
                 aw = ar.replace("،", " ").replace("؟", " ").split(); tw = re.sub(r"[,.?!;:…]", " ", tr).split()
                 if len(aw) != len(tw): continue
@@ -154,7 +156,7 @@ FORMULAS = [(r"السلام عليكم", ["وعليكم السلام"]), (r"ما
     (r"الله يوفق", ["امين", "الله يوفق"]), (r"عقبال", ["الله يسمع"]), (r"صباح الخير", ["صباح النور"]), (r"مساء الخير", ["مساء النور"]),
     (r"تصبح\w* على خير", ["من اهله"]), (r"السموحه", ["مسموح", "ما عليه"])]
 def formula_gaps(dl):
-    rows = [(l[0], norm(l[1])) for l in dl if isinstance(l, list) and len(l) == 4]
+    rows = [(l[0], norm(l[1])) for l in dl if isinstance(l, list) and len(l) in (4, 5)]
     out = []
     for i, (who, ar) in enumerate(rows):
         for pat, replies in FORMULAS:

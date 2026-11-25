@@ -11,43 +11,50 @@
     "A",
     "سمعت؟ عندي لك خبر",
     "simaʿt? ʿindi lak khabar",
-    "Have you heard? I've got news for you."
+    "Have you heard? I've got news for you.",
+    "سِمَعْتْ؟ عِنْدِي لَكْ خَبَرْ"
    ],
    [
     "B",
     "خير إن شاء الله؟ شو صار؟",
     "khēr in shāʼ allāh? shu ṣār?",
-    "Good news, I hope? What's happened?"
+    "Good news, I hope? What's happened?",
+    "خَيْرْ إِنْ شَاءْ اللّٰهْ؟ شُو صَارْ؟"
    ],
    [
     "A",
     "ترا الامتحان باكر، مب يوم الخميس!",
     "tara l-imtiḥān bāchir, mub yōm il-khamīs!",
-    "Just so you know, the exam's tomorrow, not Thursday!"
+    "Just so you know, the exam's tomorrow, not Thursday!",
+    "تَرَا الْاِمْتِحَانْ بَاكِرْ، مُبْ يَوْمْ الْخَمِيسْ!"
    ],
    [
     "B",
     "صج؟ ما كنت أدري. منو قال لك؟",
     "ṣij? ma kint adri. minu gāl-lak?",
-    "Really? I had no idea. Who told you?"
+    "Really? I had no idea. Who told you?",
+    "صِجْ؟ مَا كِنْتْ أَدْرِي. مِنُو قَالْ لَكْ؟"
    ],
    [
     "A",
     "طرشوا رسالة في القروب. ما شفتها؟",
     "ṭarrashaw risāla fi l-grūb. ma shift-ha?",
-    "They sent a message in the group. Didn't you see it?"
+    "They sent a message in the group. Didn't you see it?",
+    "طَرَّشَوْا رِسَالَة فِي الْقْرُوبْ. مَا شِفْتْهَا؟"
    ],
    [
     "B",
     "لا والله. ترا ما ذاكرت شي، لازم أذاكر!",
     "la wallāh. tara ma dhākart shay, lāzim adhākir!",
-    "No, honestly. Mind you, I haven't revised a thing, I have to study!"
+    "No, honestly. Mind you, I haven't revised a thing, I have to study!",
+    "لَا وَاللّٰهْ. تَرَا مَا ذَاكَرْتْ شَيْ، لَازِمْ أَذَاكِرْ!"
    ],
    [
     "A",
     "ترا والله أنا بعد! خل نذاكر مع بعض الليلة",
     "tara wallāh ana baʿad! khal ndhākir maʿa baʿaẓ il-lēla",
-    "Honestly, same here! Let's revise together tonight."
+    "Honestly, same here! Let's revise together tonight.",
+    "تَرَا وَاللّٰهْ أَنَا بَعَدْ! خَلْ نْذَاكِرْ مَعَ بَعَضْ اللَّيْلَة"
    ]
   ],
   "items": [
@@ -56,56 +63,64 @@
     "tara",
     "just so you know, mind you (before news or a warning)",
     "",
-    "you'll see written ترى; tara ana ma adri = mind you, I don't know"
+    "you'll see written ترى; tara ana ma adri = mind you, I don't know",
+    "تَرَا"
    ],
    [
     "سمعت؟",
     "simaʿt?",
     "have you heard? did you hear? (to a man)",
     "هل سمعت؟",
-    "to a woman: simaʿti? (سمعتي؟); I heard: simaʿt, said by men and women"
+    "to a woman: simaʿti? (سمعتي؟); I heard: simaʿt, said by men and women",
+    "سِمَعْتْ؟"
    ],
    [
     "عندي لك خبر",
     "ʿindi lak khabar",
     "I've got news for you (to a man)",
     "لدي خبر لك",
-    "to a woman: ʿindi lich khabar (عندي لج خبر); news: khabar (خبر)"
+    "to a woman: ʿindi lich khabar (عندي لج خبر); news: khabar (خبر)",
+    "عِنْدِي لَكْ خَبَرْ"
    ],
    [
     "ما كنت أدري",
     "ma kint adri",
     "I didn't know, I had no idea",
     "لم أكن أعرف",
-    "you also know ma dirēt (ما دريت), 'I didn't realise'"
+    "you also know ma dirēt (ما دريت), 'I didn't realise'",
+    "مَا كِنْتْ أَدْرِي"
    ],
    [
     "منو قال لك؟",
     "minu gāl-lak?",
     "who told you? (to a man)",
     "من أخبرك؟",
-    "to a woman: minu gāl-lich? (منو قال لج؟)"
+    "to a woman: minu gāl-lich? (منو قال لج؟)",
+    "مِنُو قَالْ لَكْ؟"
    ],
    [
     "طرشوا",
     "ṭarrashaw",
     "they sent",
     "أرسلوا",
-    "he sent: ṭarrash (طرش); you'll see written طرشو"
+    "he sent: ṭarrash (طرش); you'll see written طرشو",
+    "طَرَّشَوْا"
    ],
    [
     "ما ذاكرت",
     "ma dhākart",
     "I haven't revised, I didn't study (for an exam); you haven't revised (to a man)",
     "لم أذاكر",
-    "to a woman (you haven't): ma dhākarti (ما ذاكرتي)"
+    "to a woman (you haven't): ma dhākarti (ما ذاكرتي)",
+    "مَا ذَاكَرْتْ"
    ],
    [
     "ترا والله",
     "tara wallāh",
     "honestly, I'm telling you",
     "",
-    "stronger than tara alone"
+    "stronger than tara alone",
+    "تَرَا وَاللّٰهْ"
    ]
   ]
  },
@@ -121,43 +136,50 @@
     "A",
     "صباح الخير! شكلك تعبان اليوم",
     "ṣabāḥ il-khēr! shaklak taʿbān il-yōm",
-    "Good morning! You look tired today."
+    "Good morning! You look tired today.",
+    "صَبَاحْ الْخَيْرْ! شَكْلَكْ تَعْبَانْ الْيَوْمْ"
    ],
    [
     "B",
     "صباح النور. هيه، ما نمت عدل. وين المدير؟",
     "ṣabāḥ in-nūr. hē, ma nimt ʿadil. wēn il-mudīr?",
-    "Good morning. Yes, I didn't sleep properly. Where's the manager?"
+    "Good morning. Yes, I didn't sleep properly. Where's the manager?",
+    "صَبَاحْ النُّورْ. هَيْه، مَا نِمْتْ عَدِلْ. وَيْنْ الْمُدِيرْ؟"
    ],
    [
     "A",
     "ما يا. شكله في اجتماع برا المكتب",
     "ma yā. shaklah fi ijtimāʿ barra l-maktab",
-    "He hasn't come in. Looks like he's at a meeting outside the office."
+    "He hasn't come in. Looks like he's at a meeting outside the office.",
+    "مَا يَا. شَكْلَهْ فِي اِجْتِمَاعْ بَرَّا الْمَكْتَبْ"
    ],
    [
     "B",
     "صج؟ شكله مب ياي اليوم. سيارته مب هني",
     "ṣij? shaklah mub yāy il-yōm. sayyārtah mub hni",
-    "Really? Looks like he's not coming today. His car's not here."
+    "Really? Looks like he's not coming today. His car's not here.",
+    "صِجْ؟ شَكْلَهْ مُبْ يَايْ الْيَوْمْ. سَيَّارْتَهْ مُبْ هْنِي"
    ],
    [
     "A",
     "صح. خلنا نخلص المشروع بدري!",
     "ṣaḥḥ. khallna nkhalliṣ il-mashrūʿ badri!",
-    "Right. Let's get the project done early!"
+    "Right. Let's get the project done early!",
+    "صَحّْ. خَلّْنَا نْخَلِّصْ الْمَشْرُوعْ بَدْرِي!"
    ],
    [
     "B",
     "شكلج بتخلصين قبلي! وأنا شكلي بنام على المكتب",
     "shaklich bitkhallṣīn gabli! w ana shakli banām ʿala l-maktab",
-    "Looks like you'll finish before me! And it looks like I'll fall asleep at my desk."
+    "Looks like you'll finish before me! And it looks like I'll fall asleep at my desk.",
+    "شَكْلِجْ بِتْخَلّْصِينْ قَبْلِي! وْأَنَا شَكْلِي بَنَامْ عَلَى الْمَكْتَبْ"
    ],
    [
     "A",
     "لا تنام! ترا شكله ياي!",
     "la tnām! tara shaklah yāy!",
-    "Don't fall asleep! Watch out, looks like he's coming!"
+    "Don't fall asleep! Watch out, looks like he's coming!",
+    "لَا تْنَامْ! تَرَا شَكْلَهْ يَايْ!"
    ]
   ],
   "items": [
@@ -166,56 +188,64 @@
     "shaklah",
     "it looks like he… / it…; he seems",
     "يبدو أنه",
-    "about a woman or a feminine thing: shaklha (شكلها); on its own shakl means 'look, appearance'"
+    "about a woman or a feminine thing: shaklha (شكلها); on its own shakl means 'look, appearance'",
+    "شَكْلَهْ"
    ],
    [
     "شكله مب ياي",
     "shaklah mub yāy",
     "it looks like he's not coming",
     "يبدو أنه لن يأتي",
-    "about a woman: shaklha mub yāya (شكلها مب ياية)"
+    "about a woman: shaklha mub yāya (شكلها مب ياية)",
+    "شَكْلَهْ مُبْ يَايْ"
    ],
    [
     "شكلي",
     "shakli",
     "it looks like I…, I think I'll…",
     "يبدو أنني",
-    "shakli barūḥ = looks like I'll go"
+    "shakli barūḥ = looks like I'll go",
+    "شَكْلِي"
    ],
    [
     "شكلك تعبان",
     "shaklak taʿbān",
     "you look tired (to a man)",
     "تبدو متعبًا",
-    "to a woman: shaklich taʿbāna (شكلج تعبانة)"
+    "to a woman: shaklich taʿbāna (شكلج تعبانة)",
+    "شَكْلَكْ تَعْبَانْ"
    ],
    [
     "شكلج",
     "shaklich",
     "it looks like you…, you look (to a woman)",
     "يبدو أنكِ",
-    "to a man: shaklak (شكلك)"
+    "to a man: shaklak (شكلك)",
+    "شَكْلِجْ"
    ],
    [
     "ما نمت عدل",
     "ma nimt ʿadil",
     "I didn't sleep properly; you didn't sleep properly (to a man)",
     "لم أنم جيدًا",
-    "to a woman (you didn't): ma nimti ʿadil"
+    "to a woman (you didn't): ma nimti ʿadil",
+    "مَا نِمْتْ عَدِلْ"
    ],
    [
     "مب هني",
     "mub hni",
     "(he's / it's) not here",
     "ليس هنا",
-    "Kuwait: mū hni"
+    "Kuwait: mū hni",
+    "مُبْ هْنِي"
    ],
    [
     "لا تنام",
     "la tnām",
     "don't fall asleep, don't sleep (to a man)",
     "لا تنم",
-    "to a woman: la tnāmīn (لا تنامين)"
+    "to a woman: la tnāmīn (لا تنامين)",
+    "لَا تْنَامْ"
    ]
   ]
  },
@@ -231,43 +261,50 @@
     "A",
     "هلا! كيف الشغل؟",
     "hala! chēf ish-shughul?",
-    "Hi! How's work?"
+    "Hi! How's work?",
+    "هَلَا! كَيْفْ الشُّغُلْ؟"
    ],
    [
     "B",
     "هلا فيك. ماشي الحال. وين نتعشى الليلة؟",
     "hala fīk. māshi l-ḥāl. wēn nitʿashsha l-lēla?",
-    "Hi. Not bad. Where are we having dinner tonight?"
+    "Hi. Not bad. Where are we having dinner tonight?",
+    "هَلَا فِيكْ. مَاشِي الْحَالْ. وَيْنْ نِتْعَشَّى اللَّيْلَة؟"
    ],
    [
     "A",
     "ترا المطعم اللي نحبه مسكر اليوم",
     "tara l-maṭʿam illi nḥibbah msakkar il-yōm",
-    "Just so you know, the restaurant we like is closed today."
+    "Just so you know, the restaurant we like is closed today.",
+    "تَرَا الْمَطْعَمْ اللِّي نْحِبَّهْ مْسَكَّرْ الْيَوْمْ"
    ],
    [
     "B",
     "عيل وين نروح؟ المول زحمة الحين",
     "ʿayal wēn nrūḥ? il-mōl zaḥma l-ḥīn",
-    "So where do we go, then? The mall's packed now."
+    "So where do we go, then? The mall's packed now.",
+    "عَيَلْ وَيْنْ نْرُوحْ؟ الْمَوْلْ زَحْمَة الْحِينْ"
    ],
    [
     "A",
     "عيل ليش ما نطلب؟",
     "ʿayal lēsh ma niṭlub?",
-    "Then why don't we order in?"
+    "Then why don't we order in?",
+    "عَيَلْ لَيْشْ مَا نِطْلُبْ؟"
    ],
    [
     "B",
     "والله فكرة! زين عيل، بس انت تطلب، يصير؟",
     "wallāh fikra! zēn ʿayal, bas inta tiṭlub, yṣīr?",
-    "Good idea! Fine then, but you're ordering, OK?"
+    "Good idea! Fine then, but you're ordering, OK?",
+    "وَاللّٰهْ فِكْرَة! زَيْنْ عَيَلْ، بَسْ اِنْتَ تِطْلُبْ، يْصِيرْ؟"
    ],
    [
     "A",
     "ماشي. يلا عيل، تعال عندي الساعة ثمان",
     "māshi. yalla ʿayal, taʿāl ʿindi s-sāʿa thamān",
-    "OK. Come on then, come round to mine at eight."
+    "OK. Come on then, come round to mine at eight.",
+    "مَاشِي. يَلَّا عَيَلْ، تَعَالْ عِنْدِي السَّاعَة ثَمَانْ"
    ]
   ],
   "items": [
@@ -276,63 +313,72 @@
     "ʿayal",
     "so, then, in that case",
     "إذن",
-    "ʿayal shu? = so what, then?"
+    "ʿayal shu? = so what, then?",
+    "عَيَلْ"
    ],
    [
     "عيل وين؟",
     "ʿayal wēn?",
     "so where, then?",
     "إذن أين؟",
-    ""
+    "",
+    "عَيَلْ وَيْنْ؟"
    ],
    [
     "عيل ليش؟",
     "ʿayal lēsh?",
     "then why?, so why?",
     "إذن لماذا؟",
-    "ʿayal lēsh ma…? = then why don't…?"
+    "ʿayal lēsh ma…? = then why don't…?",
+    "عَيَلْ لَيْشْ؟"
    ],
    [
     "زين عيل",
     "zēn ʿayal",
     "fine then, OK then",
     "حسنًا إذن",
-    ""
+    "",
+    "زَيْنْ عَيَلْ"
    ],
    [
     "يلا عيل",
     "yalla ʿayal",
     "come on then, let's go then",
     "هيا إذن",
-    ""
+    "",
+    "يَلَّا عَيَلْ"
    ],
    [
     "ماشي",
     "māshi",
     "OK, fine (agreeing to a plan)",
     "حسنًا",
-    "also 'walking, leaving': ana māshi = I'm off"
+    "also 'walking, leaving': ana māshi = I'm off",
+    "مَاشِي"
    ],
    [
     "ماشي الحال",
     "māshi l-ḥāl",
     "not bad, it's going OK (about work, studies, things)",
     "الأمور على ما يرام",
-    "for 'how are you?' keep b-khēr, allāh ysallmak"
+    "for 'how are you?' keep b-khēr, allāh ysallmak",
+    "مَاشِي الْحَالْ"
    ],
    [
     "مسكر",
     "msakkar",
     "closed, shut (a shop, a restaurant, a door)",
     "مغلق",
-    "with a feminine noun or a plural of things: msakkara (مسكرة); open: maftūḥ (مفتوح)"
+    "with a feminine noun or a plural of things: msakkara (مسكرة); open: maftūḥ (مفتوح)",
+    "مْسَكَّرْ"
    ],
    [
     "تعال عندي",
     "taʿāl ʿindi",
     "come round to mine, come to my place (to a man)",
     "تعال إلى بيتي",
-    "to a woman: taʿāli ʿindi"
+    "to a woman: taʿāli ʿindi",
+    "تَعَالْ عِنْدِي"
    ]
   ]
  },
@@ -348,43 +394,50 @@
     "A",
     "يلا عاد! تعال ويانا البر الليلة",
     "yalla ʿād! taʿāl wiyyāna l-barr il-lēla",
-    "Come on now! Come to the desert with us tonight."
+    "Come on now! Come to the desert with us tonight.",
+    "يَلَّا عَادْ! تَعَالْ وِيَّانَا الْبَرّْ اللَّيْلَة"
    ],
    [
     "B",
     "قلت لكم ما أقدر، لازم أذاكر",
     "gilt-lkum ma agdar, lāzim adhākir",
-    "I told you lot I can't, I have to revise."
+    "I told you lot I can't, I have to revise.",
+    "قِلْتْ لْكُمْ مَا أَقْدَرْ، لَازِمْ أَذَاكِرْ"
    ],
    [
     "A",
     "بس عاد! كل أسبوع عندك امتحان",
     "bas ʿād! kill usbūʿ ʿindak imtiḥān",
-    "Come off it! Every week you've got an exam."
+    "Come off it! Every week you've got an exam.",
+    "بَسْ عَادْ! كِلّْ أُسْبُوعْ عِنْدَكْ اِمْتِحَانْ"
    ],
    [
     "B",
     "وأصلا البر بارد الحين",
     "w aṣlan il-barr bārid il-ḥīn",
-    "And anyway, the desert's cold now."
+    "And anyway, the desert's cold now.",
+    "وْأَصْلًا الْبَرّْ بَارِدْ الْحِينْ"
    ],
    [
     "A",
     "لا عاد، مب جي! الجو حلو",
     "la ʿād, mub chī! il-jaww ḥilu",
-    "Oh come on, it's not like that! The weather's nice."
+    "Oh come on, it's not like that! The weather's nice.",
+    "لَا عَادْ، مُبْ جِي! الْجَوّْ حِلُو"
    ],
    [
     "B",
     "أنا أصلا ما عندي جاكيت",
     "ana aṣlan ma ʿindi jākēt",
-    "I haven't even got a jacket, anyway."
+    "I haven't even got a jacket, anyway.",
+    "أَنَا أَصْلًا مَا عِنْدِي جَاكَيْتْ"
    ],
    [
     "A",
     "عيل بييب لك واحد. ترا بمر عليك!",
     "ʿayal bayīb-lak wāḥid. tara bamurr ʿalēk!",
-    "Then I'll bring you one. And just so you know, I'm picking you up!"
+    "Then I'll bring you one. And just so you know, I'm picking you up!",
+    "عَيَلْ بَيِيبْ لَكْ وَاحِدْ. تَرَا بَمُرّْ عَلَيْكْ!"
    ]
   ],
   "items": [
@@ -393,56 +446,64 @@
     "ʿād",
     "now, then, come on (adds push or emphasis)",
     "",
-    "often after the word it pushes: yalla ʿād, bas ʿād; at the start it means 'well': ʿād ana ma adri = well, how would I know"
+    "often after the word it pushes: yalla ʿād, bas ʿād; at the start it means 'well': ʿād ana ma adri = well, how would I know",
+    "عَادْ"
    ],
    [
     "يلا عاد",
     "yalla ʿād",
     "come on now!",
     "هيا الآن",
-    ""
+    "",
+    "يَلَّا عَادْ"
    ],
    [
     "بس عاد",
     "bas ʿād",
     "that's enough now, come off it; stop it (friends only)",
     "كفى",
-    ""
+    "",
+    "بَسْ عَادْ"
    ],
    [
     "لا عاد",
     "la ʿād",
     "oh, come on! (no way)",
     "",
-    "often with mub chī: la ʿād, mub chī!; before a verb it means 'don't … again': la ʿād tittaṣil = don't call again"
+    "often with mub chī: la ʿād, mub chī!; before a verb it means 'don't … again': la ʿād tittaṣil = don't call again",
+    "لَا عَادْ"
    ],
    [
     "أصلا",
     "aṣlan",
     "anyway, in the first place, actually",
     "أصلًا",
-    "you'll see written اصلا"
+    "you'll see written اصلا",
+    "أَصْلًا"
    ],
    [
     "أنا أصلا",
     "ana aṣlan",
     "I … anyway; I don't even … (with ma)",
     "أنا أصلًا",
-    "ana aṣlan ma ʿindi wagt = I haven't even got time"
+    "ana aṣlan ma ʿindi wagt = I haven't even got time",
+    "أَنَا أَصْلًا"
    ],
    [
     "مب جي",
     "mub chī",
     "it's not like that",
     "ليس كذلك",
-    "wider Gulf: mub chidhi (مب جذي); Kuwait: mū chidhi (مو جذي)"
+    "wider Gulf: mub chidhi (مب جذي); Kuwait: mū chidhi (مو جذي)",
+    "مُبْ جِي"
    ],
    [
     "الجو حلو",
     "il-jaww ḥilu",
     "the weather's nice",
     "الجو جميل",
-    ""
+    "",
+    "الْجَوّْ حِلُو"
    ]
   ]
  },
@@ -458,43 +519,50 @@
     "A",
     "شو صار في اجتماع المشروع؟",
     "shu ṣār fi ijtimāʿ il-mashrūʿ?",
-    "What happened at the project meeting?"
+    "What happened at the project meeting?",
+    "شُو صَارْ فِي اِجْتِمَاعْ الْمَشْرُوعْ؟"
    ],
    [
     "B",
     "محد يا! قعدت ساعة بروحي",
     "maḥḥad yā! gaʿadt sāʿa b-rūḥi",
-    "Nobody came! I sat there for an hour on my own."
+    "Nobody came! I sat there for an hour on my own.",
+    "مَحَّدْ يَا! قَعَدْتْ سَاعَة بْرُوحِي"
    ],
    [
     "A",
     "محد؟ صج؟ طرشت لهم في القروب؟",
     "maḥḥad? ṣij? ṭarrasht-lhum fi l-grūb?",
-    "Nobody? Really? Did you message them in the group?"
+    "Nobody? Really? Did you message them in the group?",
+    "مَحَّدْ؟ صِجْ؟ طَرَّشْتْ لْهُمْ فِي الْقْرُوبْ؟"
    ],
    [
     "B",
     "هيه، بس محد رد علي",
     "hē, bas maḥḥad radd ʿalay",
-    "Yes, but nobody got back to me."
+    "Yes, but nobody got back to me.",
+    "هَيْه، بَسْ مَحَّدْ رَدّْ عَلَيْ"
    ],
    [
     "A",
     "غريبة! وترا محد قال لي شي بعد",
     "gharība! w tara maḥḥad gāl-li shay baʿad",
-    "That's odd! And just so you know, nobody said a thing to me either."
+    "That's odd! And just so you know, nobody said a thing to me either.",
+    "غَرِيبَة! وْتَرَا مَحَّدْ قَالْ لِي شَيْ بَعَدْ"
    ],
    [
     "B",
     "تدرين شو؟ شكله محد يهتم بالمشروع",
     "tadrīn shu? shaklah maḥḥad yihtamm bil-mashrūʿ",
-    "You know what? Looks like nobody cares about the project."
+    "You know what? Looks like nobody cares about the project.",
+    "تَدْرِينْ شُو؟ شَكْلَهْ مَحَّدْ يِهْتَمّْ بِالْمَشْرُوعْ"
    ],
    [
     "A",
     "لا تحاتي، الأسبوع الياي بكون في الاجتماع",
     "la tḥāti, il-usbūʿ il-yāy bakūn fi l-ijtimāʿ",
-    "Don't worry, next week I'll be at the meeting."
+    "Don't worry, next week I'll be at the meeting.",
+    "لَا تْحَاتِي، الْأُسْبُوعْ الْيَايْ بَكُونْ فِي الْاِجْتِمَاعْ"
    ]
   ],
   "items": [
@@ -503,63 +571,72 @@
     "maḥḥad",
     "nobody, no one",
     "لا أحد",
-    "one word; with ma and a verb say aḥad: ma shift aḥad = I didn't see anybody"
+    "one word; with ma and a verb say aḥad: ma shift aḥad = I didn't see anybody",
+    "مَحَّدْ"
    ],
    [
     "محد يا",
     "maḥḥad yā",
     "nobody came",
     "لم يأتِ أحد",
-    ""
+    "",
+    "مَحَّدْ يَا"
    ],
    [
     "محد رد علي",
     "maḥḥad radd ʿalay",
     "nobody answered me, nobody got back to me",
     "لم يرد علي أحد",
-    ""
+    "",
+    "مَحَّدْ رَدّْ عَلَيْ"
    ],
    [
     "محد قال لي",
     "maḥḥad gāl-li",
     "nobody told me",
     "لم يخبرني أحد",
-    ""
+    "",
+    "مَحَّدْ قَالْ لِي"
    ],
    [
     "محد يهتم",
     "maḥḥad yihtamm",
     "nobody cares",
     "لا أحد يهتم",
-    "yihtamm b- = to care about: yihtamm bil-mashrūʿ"
+    "yihtamm b- = to care about: yihtamm bil-mashrūʿ",
+    "مَحَّدْ يِهْتَمّْ"
    ],
    [
     "قعدت",
     "gaʿadt",
     "I sat, I stayed; you sat (to a man)",
     "جلست",
-    "to a woman (you sat): gaʿadti (قعدتي); UAE also: yalast (يلست)"
+    "to a woman (you sat): gaʿadti (قعدتي); UAE also: yalast (يلست)",
+    "قَعَدْتْ"
    ],
    [
     "طرشت لهم",
     "ṭarrasht-lhum",
     "I sent (it to) them, I messaged them; you messaged them (to a man)",
     "أرسلت لهم",
-    "to a woman (you sent): ṭarrashtī-lhum (طرشتي لهم)"
+    "to a woman (you sent): ṭarrashtī-lhum (طرشتي لهم)",
+    "طَرَّشْتْ لْهُمْ"
    ],
    [
     "غريبة",
     "gharība",
     "that's odd!, strange",
     "غريب",
-    "as an exclamation always gharība!; describing a man or a masculine thing: gharīb (غريب), shay gharīb = something strange"
+    "as an exclamation always gharība!; describing a man or a masculine thing: gharīb (غريب), shay gharīb = something strange",
+    "غَرِيبَة"
    ],
    [
     "الأسبوع الياي",
     "il-usbūʿ il-yāy",
     "next week",
     "الأسبوع القادم",
-    "you'll see written الاسبوع الجاي"
+    "you'll see written الاسبوع الجاي",
+    "الْأُسْبُوعْ الْيَايْ"
    ]
   ]
  },
@@ -575,43 +652,50 @@
     "A",
     "أنا يوعان! شو عندك أكل؟",
     "ana yōʿān! shu ʿindak akil?",
-    "I'm starving! What food have you got?"
+    "I'm starving! What food have you got?",
+    "أَنَا يَوْعَانْ! شُو عِنْدَكْ أَكِلْ؟"
    ],
    [
     "B",
     "ولا شي! الثلاجة فاضية",
     "wala shay! ith-thallāja fāẓya",
-    "Nothing at all! The fridge is empty."
+    "Nothing at all! The fridge is empty.",
+    "وَلَا شَيْ! الثَّلَّاجَة فَاضْيَة"
    ],
    [
     "A",
     "ولا شي؟ ولا حتى خبز؟",
     "wala shay? wala ḥatta khubiz?",
-    "Nothing? Not even bread?"
+    "Nothing? Not even bread?",
+    "وَلَا شَيْ؟ وَلَا حَتَّى خُبِزْ؟"
    ],
    [
     "B",
     "لا والله. ما اشتريت ولا شي، ولا مرة طبخت هني",
     "la wallāh. ma ishtarēt wala shay, wala marra ṭabakht hni",
-    "No, honestly. I haven't bought a thing, I've never once cooked here."
+    "No, honestly. I haven't bought a thing, I've never once cooked here.",
+    "لَا وَاللّٰهْ. مَا اِشْتَرَيْتْ وَلَا شَيْ، وَلَا مَرَّة طَبَخْتْ هْنِي"
    ],
    [
     "A",
     "عيل نطلب. في مطعم مفتوح الحين؟",
     "ʿayal niṭlub. fī maṭʿam maftūḥ il-ḥīn?",
-    "Then let's order. Is there a restaurant open now?"
+    "Then let's order. Is there a restaurant open now?",
+    "عَيَلْ نِطْلُبْ. فِي مَطْعَمْ مَفْتُوحْ الْحِينْ؟"
    ],
    [
     "B",
     "ولا واحد! كلها مسكرة هني، الساعة ثنتين بالليل",
     "wala wāḥid! killha msakkara hni, is-sāʿa thintēn bil-lēl",
-    "Not one! They're all shut round here, it's two in the morning."
+    "Not one! They're all shut round here, it's two in the morning.",
+    "وَلَا وَاحِدْ! كِلّْهَا مْسَكَّرَة هْنِي، السَّاعَة ثِنْتَيْنْ بِاللَّيْلْ"
    ],
    [
     "A",
     "خلاص، بنام يوعان. بس ترا ولا كلمة حق أمي!",
     "khalāṣ, banām yōʿān. bas tara wala kilma ḥagg ummi!",
-    "Fine, I'll go to bed hungry. But mind you, not a word to my mum!"
+    "Fine, I'll go to bed hungry. But mind you, not a word to my mum!",
+    "خَلَاصْ، بَنَامْ يَوْعَانْ. بَسْ تَرَا وَلَا كِلْمَة حَقّْ أُمِّي!"
    ]
   ],
   "items": [
@@ -620,63 +704,72 @@
     "wala shay",
     "nothing at all, not a thing",
     "لا شيء",
-    "ma ishtarēt wala shay = I didn't buy a thing; not walla (ولّا, 'or')"
+    "ma ishtarēt wala shay = I didn't buy a thing; not walla (ولّا, 'or')",
+    "وَلَا شَيْ"
    ],
    [
     "ولا واحد",
     "wala wāḥid",
     "not one, not a single one",
     "ولا واحد",
-    "for a feminine thing: wala waḥda (ولا وحدة)"
+    "for a feminine thing: wala waḥda (ولا وحدة)",
+    "وَلَا وَاحِدْ"
    ],
    [
     "ولا حتى",
     "wala ḥatta",
     "not even",
     "ولا حتى",
-    "wala ḥatta khubiz = not even bread"
+    "wala ḥatta khubiz = not even bread",
+    "وَلَا حَتَّى"
    ],
    [
     "ولا كلمة",
     "wala kilma",
     "not a word",
     "ولا كلمة",
-    ""
+    "",
+    "وَلَا كِلْمَة"
    ],
    [
     "ولا مرة",
     "wala marra",
     "not once, never once",
     "ولا مرة",
-    "goes before a past verb: wala marra ṭabakht = I've never once cooked"
+    "goes before a past verb: wala marra ṭabakht = I've never once cooked",
+    "وَلَا مَرَّة"
    ],
    [
     "الثلاجة",
     "ith-thallāja",
     "the fridge",
     "الثلاجة",
-    ""
+    "",
+    "الثَّلَّاجَة"
    ],
    [
     "مفتوح",
     "maftūḥ",
     "open (a shop, a restaurant, a door)",
     "مفتوح",
-    "with a feminine noun: maftūḥa (مفتوحة); closed: msakkar"
+    "with a feminine noun: maftūḥa (مفتوحة); closed: msakkar",
+    "مَفْتُوحْ"
    ],
    [
     "كلها مسكرة",
     "killha msakkara",
     "they're all shut (places, shops)",
     "كلها مغلقة",
-    "plural things take the feminine: killha maftūḥa = they're all open"
+    "plural things take the feminine: killha maftūḥa = they're all open",
+    "كِلّْهَا مْسَكَّرَة"
    ],
    [
     "طبخت",
     "ṭabakht",
     "I cooked; you cooked (to a man)",
     "طبخت",
-    "to a woman (you cooked): ṭabakhti (طبختي); I cook: aṭbakh"
+    "to a woman (you cooked): ṭabakhti (طبختي); I cook: aṭbakh",
+    "طَبَخْتْ"
    ]
   ]
  },
@@ -692,43 +785,50 @@
     "A",
     "باكر نطلع البحر الساعة أربع الصبح!",
     "bāchir niṭlaʿ il-baḥar is-sāʿa arbaʿ iṣ-ṣubḥ!",
-    "Tomorrow we're going out to sea at four in the morning!"
+    "Tomorrow we're going out to sea at four in the morning!",
+    "بَاكِرْ نِطْلَعْ الْبَحَرْ السَّاعَة أَرْبَعْ الصُّبْحْ!"
    ],
    [
     "B",
     "أربع؟ لا لا، ما أقدر!",
     "arbaʿ? la la, ma agdar!",
-    "Four? No, no, I can't!"
+    "Four? No, no, I can't!",
+    "أَرْبَعْ؟ لَا لَا، مَا أَقْدَرْ!"
    ],
    [
     "A",
     "ليش؟ زعلان من الشباب؟",
     "lēsh? zaʿlān min ish-shabāb?",
-    "Why? Are you cross with the guys?"
+    "Why? Are you cross with the guys?",
+    "لَيْشْ؟ زَعْلَانْ مِنْ الشَّبَابْ؟"
    ],
    [
     "B",
     "لا أبد، بس أنا أبد ما أصحى أربع",
     "la abad, bas ana abad ma aṣḥa arbaʿ",
-    "Not at all, I just never get up at four."
+    "Not at all, I just never get up at four.",
+    "لَا أَبَدْ، بَسْ أَنَا أَبَدْ مَا أَصْحَى أَرْبَعْ"
    ],
    [
     "A",
     "ولا مرة في حياتك؟ عيل هالمرة أول مرة!",
     "wala marra fi ḥayātak? ʿayal hal-marra awwal marra!",
-    "Not once in your life? Then this time's the first time!"
+    "Not once in your life? Then this time's the first time!",
+    "وَلَا مَرَّة فِي حَيَاتَكْ؟ عَيَلْ هَالْمَرَّة أَوَّلْ مَرَّة!"
    ],
    [
     "B",
     "غصب يعني؟",
     "ghaṣb yaʿni?",
-    "What, I don't get a choice?"
+    "What, I don't get a choice?",
+    "غَصْبْ يَعْنِي؟"
    ],
    [
     "A",
     "هيه، غصب عنك! بمر عليك الساعة ثلاث ونص",
     "hē, ghaṣb ʿannak! bamurr ʿalēk is-sāʿa thalāth w nuṣṣ",
-    "Yes, like it or not! I'll pick you up at half past three."
+    "Yes, like it or not! I'll pick you up at half past three.",
+    "هَيْه، غَصْبْ عَنَّكْ! بَمُرّْ عَلَيْكْ السَّاعَة ثَلَاثْ وْنُصّْ"
    ]
   ],
   "items": [
@@ -737,56 +837,64 @@
     "abad",
     "never, not at all (with ma or la)",
     "أبدًا",
-    "on its own as an answer: abad! = not at all!"
+    "on its own as an answer: abad! = not at all!",
+    "أَبَدْ"
    ],
    [
     "لا أبد",
     "la abad",
     "no, not at all (it's nothing like that)",
     "لا أبدًا",
-    "la abad, bas taʿbān = not at all, I'm just tired"
+    "la abad, bas taʿbān = not at all, I'm just tired",
+    "لَا أَبَدْ"
    ],
    [
     "أبد ما",
     "abad ma",
     "never (before a verb)",
     "أبدًا",
-    "ana abad ma aṣḥa arbaʿ = I never get up at four"
+    "ana abad ma aṣḥa arbaʿ = I never get up at four",
+    "أَبَدْ مَا"
    ],
    [
     "في حياتك",
     "fi ḥayātak",
     "in your life, ever (to a man)",
     "في حياتك",
-    "to a woman: fi ḥayātich (في حياتج); in my life: fi ḥayāti"
+    "to a woman: fi ḥayātich (في حياتج); in my life: fi ḥayāti",
+    "فِي حَيَاتَكْ"
    ],
    [
     "غصب",
     "ghaṣb",
     "by force, against someone's will",
     "بالإكراه / رغمًا",
-    "mub ghaṣb = you don't have to, nobody's forcing you; Kuwait: mū ghaṣb"
+    "mub ghaṣb = you don't have to, nobody's forcing you; Kuwait: mū ghaṣb",
+    "غَصْبْ"
    ],
    [
     "غصب يعني؟",
     "ghaṣb yaʿni?",
     "what, I've got no choice? do I have to?",
     "هل هذا إجباري؟",
-    ""
+    "",
+    "غَصْبْ يَعْنِي؟"
    ],
    [
     "غصب عنك",
     "ghaṣb ʿannak",
     "whether you like it or not (to a man) (friends only)",
     "رغمًا عنك",
-    "to a woman: ghaṣb ʿannich (غصب عنج); against my will, I couldn't help it: ghaṣb ʿanni (غصب عني)"
+    "to a woman: ghaṣb ʿannich (غصب عنج); against my will, I couldn't help it: ghaṣb ʿanni (غصب عني)",
+    "غَصْبْ عَنَّكْ"
    ],
    [
     "ثلاث ونص",
     "thalāth w nuṣṣ",
     "half past three",
     "الثالثة والنصف",
-    ""
+    "",
+    "ثَلَاثْ وْنُصّْ"
    ]
   ]
  },
@@ -802,43 +910,50 @@
     "A",
     "هلا! إحنا بنروح نتعشى الليلة، شرايك؟",
     "hala! iḥna binrūḥ nitʿashsha l-lēla, shrāyak?",
-    "Hi! We're going out for dinner tonight, how about it?"
+    "Hi! We're going out for dinner tonight, how about it?",
+    "هَلَا! إِحْنَا بِنْرُوحْ نِتْعَشَّى اللَّيْلَة، شْرَايَكْ؟"
    ],
    [
     "B",
     "هلا فيك. ترا أنا مب فاضي، عندي عرض باكر",
     "hala fīk. tara ana mub fāẓi, ʿindi ʿarẓ bāchir",
-    "Hi. Mind you, I'm not free, I've got a presentation tomorrow."
+    "Hi. Mind you, I'm not free, I've got a presentation tomorrow.",
+    "هَلَا فِيكْ. تَرَا أَنَا مُبْ فَاضِي، عِنْدِي عَرْضْ بَاكِرْ"
    ],
    [
     "A",
     "عرض؟ ماني فاهم، انت طالب مو موظف!",
     "ʿarẓ? māni fāhim, inta ṭālib mū muwaẓẓaf!",
-    "A presentation? I don't get it, you're a student, not an employee!"
+    "A presentation? I don't get it, you're a student, not an employee!",
+    "عَرْضْ؟ مَانِي فَاهِمْ، اِنْتَ طَالِبْ مُو مُوَظَّفْ!"
    ],
    [
     "B",
     "عرض في الشغل. بس مب فاهم المشروع، محد شرح لي",
     "ʿarẓ fi sh-shughul. bas mub fāhim il-mashrūʿ, maḥḥad sharaḥ-li",
-    "A presentation at work. But I don't get the project, nobody explained it to me."
+    "A presentation at work. But I don't get the project, nobody explained it to me.",
+    "عَرْضْ فِي الشُّغُلْ. بَسْ مُبْ فَاهِمْ الْمَشْرُوعْ، مَحَّدْ شَرَحْ لِي"
    ],
    [
     "A",
     "عيل ماني رايح بروحي! سيف مو فاضي بعد",
     "ʿayal māni rāyiḥ b-rūḥi! Sēf mū fāẓi baʿad",
-    "Then I'm not going on my own! Sēf's not free either."
+    "Then I'm not going on my own! Sēf's not free either.",
+    "عَيَلْ مَانِي رَايِحْ بْرُوحِي! سَيْفْ مُو فَاضِي بَعَدْ"
    ],
    [
     "B",
     "عيل نروح باكر بعد العرض. اليوم أبد ما أقدر",
     "ʿayal nrūḥ bāchir baʿd il-ʿarẓ. il-yōm abad ma agdar",
-    "Then let's go tomorrow after the presentation. Today I can't at all."
+    "Then let's go tomorrow after the presentation. Today I can't at all.",
+    "عَيَلْ نْرُوحْ بَاكِرْ بَعْدْ الْعَرْضْ. الْيَوْمْ أَبَدْ مَا أَقْدَرْ"
    ],
    [
     "A",
     "زين، باكر. بس ترا غصب عنك!",
     "zēn, bāchir. bas tara ghaṣb ʿannak!",
-    "OK, tomorrow. But mind you, you're coming, like it or not!"
+    "OK, tomorrow. But mind you, you're coming, like it or not!",
+    "زَيْنْ، بَاكِرْ. بَسْ تَرَا غَصْبْ عَنَّكْ!"
    ]
   ],
   "items": [
@@ -847,56 +962,64 @@
     "māni",
     "I'm not (Kuwait)",
     "لستُ",
-    "men and women both say it; Emiratis say it too, but mostly ana mub (أنا مب)"
+    "men and women both say it; Emiratis say it too, but mostly ana mub (أنا مب)",
+    "مَانِي"
    ],
    [
     "ماني فاهم",
     "māni fāhim",
     "I don't get it, I don't understand (Kuwait) (said by a man)",
     "لا أفهم",
-    "a woman says: māni fāhma (ماني فاهمة); UAE: mub fāhim (مب فاهم)"
+    "a woman says: māni fāhma (ماني فاهمة); UAE: mub fāhim (مب فاهم)",
+    "مَانِي فَاهِمْ"
    ],
    [
     "ماني رايح",
     "māni rāyiḥ",
     "I'm not going (Kuwait) (said by a man)",
     "لن أذهب",
-    "a woman says: māni rāyḥa (ماني رايحة); UAE: mub rāyiḥ (مب رايح)"
+    "a woman says: māni rāyḥa (ماني رايحة); UAE: mub rāyiḥ (مب رايح)",
+    "مَانِي رَايِحْ"
    ],
    [
     "مو فاضي",
     "mū fāẓi",
     "(he's / I'm) not free, busy (a man) (Kuwait)",
     "ليس متفرغًا",
-    "a woman: mū fāẓya (مو فاضية); UAE: mub fāẓi (مب فاضي)"
+    "a woman: mū fāẓya (مو فاضية); UAE: mub fāẓi (مب فاضي)",
+    "مُو فَاضِي"
    ],
    [
     "مب فاهم",
     "mub fāhim",
     "(I) don't get it, (I'm) not following (said by a man)",
     "لا أفهم",
-    "a woman says: mub fāhma (مب فاهمة); Kuwait: māni fāhim"
+    "a woman says: mub fāhma (مب فاهمة); Kuwait: māni fāhim",
+    "مُبْ فَاهِمْ"
    ],
    [
     "مب فاضي",
     "mub fāẓi",
     "(I'm) not free, (I'm) busy (said by a man)",
     "لست متفرغًا",
-    "a woman says: mub fāẓya (مب فاضية); Kuwait: mū fāẓi, māni fāẓi"
+    "a woman says: mub fāẓya (مب فاضية); Kuwait: mū fāẓi, māni fāẓi",
+    "مُبْ فَاضِي"
    ],
    [
     "محد شرح لي",
     "maḥḥad sharaḥ-li",
     "nobody explained (it) to me",
     "لم يشرح لي أحد",
-    ""
+    "",
+    "مَحَّدْ شَرَحْ لِي"
    ],
    [
     "شرايك؟",
     "shrāyak?",
     "what do you think? how about it? (to a man)",
     "ما رأيك؟",
-    "to a woman: shrāyich? (شرايج؟); to a group: shrāykum?"
+    "to a woman: shrāyich? (شرايج؟); to a group: shrāykum?",
+    "شْرَايَكْ؟"
    ]
   ]
  }
