@@ -2917,7 +2917,7 @@ function openLesson(u,onDone){
       sayQueue(parts,{onPart:(i,p)=>{ lines.forEach(x=>x.classList.remove("playing")); if(p.text) lines[p.i].classList.add("playing"); },onDone:()=>lines.forEach(x=>x.classList.remove("playing"))}); };
     const tog=(t,get,set)=>{ const b=el("button",{className:"btn small",type:"button","aria-pressed":"false",textContent:t}); b.onclick=()=>{ set(!get()); b.setAttribute("aria-pressed",String(get())); }; return b; };
     const reveal=el("button",{className:"btn small",type:"button",textContent:"Reveal English"}); reveal.onclick=()=>{ ens.forEach(e=>e.hidden=false); reveal.remove(); };
-    body.append(stepper(0),el("h2",{className:"title",textContent:u.title}),u.grammar?el("p",{},el("span",{className:"chip next",textContent:"Grammar: "+u.grammar})):null,
+    ap(body,stepper(0),el("h2",{className:"title",textContent:u.title}),u.grammar?el("p",{},el("span",{className:"chip next",textContent:"Grammar: "+u.grammar})):null,
       el("p",{className:"lede",textContent:"Listen first and work out what's happening. Tap any line to hear it again. Then reveal the English and check."}),
       el("div",{className:"row"},playAll,tog("Slow",()=>slow,v=>slow=v),tog("Shadow",()=>shadow,v=>shadow=v),reveal),dl,el("p",{className:"notice",textContent:"Tip: "+u.tip}),
       u.culture?el("p",{className:"notice",textContent:"Culture: "+u.culture}):null,
@@ -3071,7 +3071,7 @@ function startReview(onDone){
     if(it.msa&&normalizeArabic(it.msa)!==normalizeArabic(it.ar)) ans.append(el("p",{className:"msa"},"In fuṣḥā: ",arSpan(it.msa)));
     // gulf column: "G=" same word in gulf speech, "G~ gahwa" said differently, "M الحين il-ḥīn" gulf uses another word
     if(it.gulf){ const g=String(it.gulf).trim(); const m=/^M\s+(\S+(?:\s+[\u0600-\u06FF]\S*)*)\s+(.+)$/.exec(g);
-      ans.append(g==="G="?el("p",{className:"msa",textContent:"Gulf speech uses this word too."}):g.startsWith("G~")?el("p",{className:"msa",textContent:"Gulf speech says it: "+g.slice(2).trim()}):m?el("p",{className:"msa"},"Gulf speech uses ",arSpan(m[1])," ",el("span",{className:"tr",textContent:m[2]})," instead."):null); }
+      ap(ans,g==="G="?el("p",{className:"msa",textContent:"Gulf speech uses this word too."}):g.startsWith("G~")?el("p",{className:"msa",textContent:"Gulf speech says it: "+g.slice(2).trim()}):m?el("p",{className:"msa"},"Gulf speech uses ",arSpan(m[1])," ",el("span",{className:"tr",textContent:m[2]})," instead."):null); }
     if(it.note&&mode!=="produce") ans.append(el("p",{className:"tag",textContent:it.note}));
     ap(ans,shiftChip(it),el("div",{className:"row center"},mode==="produce"||mode==="build"?[playBtn(it.ar),slowBtn(it.ar)]:null,!it.sentence&&!it.msaTrack?nativeLink(it):null),
       isLeech(card)?el("p",{},el("span",{className:"chip",textContent:"Tricky card: get a memory aid in Progress"})):null,
@@ -3395,7 +3395,7 @@ Set the story in the UAE or Kuwait with Gulf names. Each line is one complete se
 Return ONLY JSON: {"title": English title, "lines": [{"ar","tr","en"}], "question": {"q": an English comprehension question, "options": [3 English options], "answer": the correct option exactly}, "new_words": [{"ar","tr","en"}]}`;
     try{ const r=await SAMPLE.json(prompt,{modelTier:"default",cache:false}); if(!box.isConnected) return; box.textContent="";
       if(!r||!Array.isArray(r.lines)) throw new Error("bad");
-      const p=el("div",{className:"panel dialogue"}); box.append(el("h3",{textContent:String(r.title||"Story")}),msa?el("p",{className:"chip",textContent:"Fuṣḥā story: new words are given in Gulf"}):null,p);
+      const p=el("div",{className:"panel dialogue"}); ap(box,el("h3",{textContent:String(r.title||"Story")}),msa?el("p",{className:"chip",textContent:"Fuṣḥā story: new words are given in Gulf"}):null,p);
       const lines=r.lines.slice(0,10).filter(l=>l&&typeof l.ar==="string");
       p.append(el("div",{className:"row"},el("button",{className:"btn small",type:"button",onclick:()=>sayQueue(lines.flatMap(l=>[{text:l.ar},{pause:500}]))},icon("play"),el("span",{textContent:"Play the story"}))));
       lines.forEach(l=>{ const en=el("p",{className:"en",hidden:true,textContent:String(l.en||"")});
