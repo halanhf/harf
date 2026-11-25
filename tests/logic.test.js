@@ -1057,7 +1057,7 @@ function loadScreens({harakat="auto",stage=1}={}){
   const spy={say:[],queue:[],auto:[],widget:[],view:null}; env.document.createElement=uiEl;
   const rec=name=>text=>{ spy.widget.push([name,text]); return uiEl("span"); };
   Object.assign(env,{say(text){ spy.say.push(text); return Promise.resolve(); },sayQueue(parts){ spy.queue.push(parts.map(p=>p.text)); return Promise.resolve(); },auto:text=>{ spy.auto.push(text); },
-    playBtn:rec("play"),slowBtn:rec("slow"),shadowBtn:rec("shadow"),recordWidget:rec("record"),speakWidget:rec("speak"),nativeLink:()=>uiEl("span"),shiftChip:()=>null,
+    voiceRow:()=>null,playBtn:rec("play"),slowBtn:rec("slow"),shadowBtn:rec("shadow"),recordWidget:rec("record"),speakWidget:rec("speak"),nativeLink:()=>uiEl("span"),shiftChip:()=>null,
     trLine:tr=>{ const p=uiEl("p"); p.textContent=tr; return p; },icon:()=>uiEl("span"),
     focusView:()=>{ spy.view={body:uiEl("div"),progress(){},alive:()=>true}; return spy.view; },focusCard(){},announce(){},buzz(){},stopAudio(){},keepAwake(){},
     sched:c=>c,touchDay(){},logActivity(){},addSentenceCards(){},show(){},refresh(){},heatmap:()=>uiEl("div"),forecastBars:()=>uiEl("div"),savedMsg:()=>"",
@@ -1248,14 +1248,14 @@ test("redraw: sentence practice keeps its sentence, your answer and your tries, 
 });
 
 // the speech-out section against a fake speechSynthesis. fire: "end" (starts then ends), "start" (starts, never ends), "error", "none" (nothing ever fires)
-function loadSpeech({voices=[{lang:"ar-SA"}],engine=true,fire="end",store}={}){
-  const t=loadUi({store}), env=t.env, note=uiEl("p"), spoken=[]; note.hidden=true; let cur=null;
+function loadSpeech({voices=[{lang:"ar-SA"}],engine=true,fire="end",store,quietCancel=false,throwSpeak=false}={}){
+  const t=loadUi({store}), env=t.env, note=uiEl("p"), spoken=[], cancels=[]; note.hidden=true; let cur=null;
   env.document.createElement=uiEl; env.$=s=>s==="#voice-note"?note:s==="#sync-note"?t.note:null;
   env.SpeechSynthesisUtterance=function(text){ this.text=text; };
-  if(engine) env.window.speechSynthesis={getVoices:()=>voices,addEventListener(){},cancel(){ if(cur&&cur.onerror) cur.onerror({error:"interrupted"}); cur=null; },
-    speak(u){ cur=u; spoken.push(u.text); if(fire==="end"){ u.onstart&&u.onstart(); u.onend(); } else if(fire==="start") u.onstart&&u.onstart(); else if(fire==="error") u.onerror({error:"synthesis-failed"}); }};
+  if(engine) env.window.speechSynthesis={getVoices:()=>voices,addEventListener(){},cancel(){ cancels.push(1); if(!quietCancel&&cur&&cur.onerror) cur.onerror({error:"interrupted"}); cur=null; },
+    speak(u){ if(throwSpeak) throw new Error("boom"); cur=u; spoken.push(u.text); if(fire==="end"){ u.onstart&&u.onstart(); u.onend(); } else if(fire==="start") u.onstart&&u.onstart(); else if(fire==="error") u.onerror({error:"synthesis-failed"}); }};
   vm.runInContext(cut("const ap=","const SVG=")+cut("const synth=","// ===== speech in")+";this.__tts=x=>{ TTS=x; pickVoices(); }; Object.assign(this,{VOICE_NONE,VOICE_NOAR,VOICE_STALL});",env);
-  return {t,env,note,spoken,run:async()=>{ for(let i=0;i<4;i++){ t.runTimers(); await tick(); } }};
+  return {t,env,note,spoken,cancels,run:async()=>{ for(let i=0;i<4;i++){ t.runTimers(); await tick(); } }};
 }
 test("audio: a voice that never answers is given up on, the queue carries on, and one line says so",async()=>{
   const s=loadSpeech({fire:"none"}); let done; s.env.sayQueue([{text:"هلا"},{pause:400},{text:"زين"}]).then(r=>{ done=r; });
@@ -1345,4 +1345,41 @@ test("start over: the Talk draft, sentence, answer and result are forgotten",()=
   const sc=loadScreens(); vm.runInContext('chatDraft="a"; practiceQ={english:"x"}; practiceDraft="b"; practiceTries=1; practiceRes={}; practiceBusy=true;',sc.env); sc.env.resetTalk();
   assert.deepEqual(JSON.parse(vm.runInContext("JSON.stringify([chatDraft,practiceQ,practiceAsk,practiceDraft,practiceTries,practiceRes,practiceBusy])",sc.env)),["",null,null,"",0,null,false]);
   assert.ok(/function startOver\(\)\{[^\n]*\bresetTalk\(\)/.test(main));
+});
+
+test("audio: a given-up line is stopped before the next one, on the Claude voice and the device voice, and a line that started is left alone",async()=>{
+  const log=[], c=loadSpeech({voices:[]}); c.env.__tts({speak:t=>{ log.push("speak "+t); return new Promise(()=>{}); },stop:async()=>{ log.push("stop"); }}); log.length=0;
+  c.env.sayQueue([{text:"هلا"},{text:"زين"}]); await c.run(); await c.run();
+  assert.deepEqual(log,["stop","speak هلا","stop","speak زين","stop"],"each given-up line is stopped before the next is spoken"); assert.ok(txt(c.note).startsWith(c.env.VOICE_STALL));
+  const d=loadSpeech({fire:"none"}); d.env.say("هلا"); const before=d.cancels.length; await d.run(); assert.equal(d.cancels.length,before+1,"a line that never started is cancelled");
+  const st=loadSpeech({fire:"start"}); st.env.say("هلا"); const b2=st.cancels.length; await st.run(); assert.equal(st.cancels.length,b2,"a line that started is not cut off");
+});
+test("audio: speak, the utterance or the Claude voice throwing ends the part like a failure and the queue still completes",async()=>{
+  const a=loadSpeech({throwSpeak:true}); let done; a.env.sayQueue([{text:"هلا"},{text:"زين"}]).then(r=>{ done=r; }); await a.run(); assert.equal(done,true); assert.ok(txt(a.note).startsWith(a.env.VOICE_STALL));
+  const b=loadSpeech(); b.env.SpeechSynthesisUtterance=function(){ throw new Error("boom"); }; await b.env.say("هلا"); assert.ok(txt(b.note).startsWith(b.env.VOICE_STALL));
+  const c=loadSpeech({voices:[]}); c.env.__tts({speak:()=>{ throw new Error("boom"); },stop:async()=>{}}); await c.env.say("هلا"); assert.ok(txt(c.note).startsWith(c.env.VOICE_STALL));
+});
+test("audio: a voices-changed event does not clear a didn't-play notice, but still updates the no-voice one",async()=>{
+  const s=loadSpeech({fire:"none"}); s.env.say("هلا"); await s.run(); assert.ok(txt(s.note).startsWith(s.env.VOICE_STALL)); s.env.pickVoices(); assert.equal(s.note.hidden,false); assert.ok(txt(s.note).startsWith(s.env.VOICE_STALL));
+  const n=loadSpeech({voices:[{lang:"en-GB"}]}); assert.equal(n.note.hidden,false); n.env.__tts({speak:async()=>{},stop:async()=>{}}); assert.equal(n.note.hidden,true);
+});
+test("audio: after one line in a queue stalls the rest get a short limit and the notice shows once; a new tap starts fresh",async()=>{
+  const s=loadSpeech({fire:"none"}); let shown=0; const ap=s.note.append; s.note.append=(...a)=>{ shown++; ap.apply(s.note,a); };
+  s.env.sayQueue([{text:"هلا"},{text:"زين"},{text:"شلونك"}]); const ms=()=>[...s.t.timers.values()].map(x=>x.ms);
+  assert.ok(ms()[0]>=4000); s.t.runTimers(); await tick();
+  assert.deepEqual(ms(),[1500],"the second line waits only the short limit"); await s.run(); assert.equal(shown,1,"one notice, not one per line");
+  s.env.say("هلا"); assert.ok(ms().every(x=>x>=4000),"a new play tap gets the full limit again");
+});
+test("audio: the notice sits in the main page, which a focus view leaves visible",()=>{
+  assert.match(html,/<main>\s*<p class="notice" id="voice-note"/); assert.doesNotMatch(html,/body\.focus[^{}]*(main|voice-note)[^{}]*\{[^}]*display:none/);
+});
+test("voice notice: a Settings row brings hidden notices back",()=>{
+  const s=loadSpeech({voices:[{lang:"en-GB"}]}); assert.equal(s.env.voiceRow(),null,"no row while the notice is not hidden");
+  press(byText(s.note,"Hide")); let again=0; const row=s.env.voiceRow(()=>{ again++; }); assert.ok(row); assert.ok(txt(row).startsWith("Audio notices are hidden"));
+  press(byText(row,"Show them again")); assert.equal(s.t.store.has(KEY+"-voice"),false); assert.equal(s.note.hidden,false); assert.ok(txt(s.note).startsWith(s.env.VOICE_NOAR)); assert.equal(again,1); assert.equal(s.env.voiceRow(),null);
+});
+test("audio: a line cut by the next tap stays quiet, even when the engine says nothing on cancel, and for an interrupted Claude line",async()=>{
+  const s=loadSpeech({fire:"none",quietCancel:true}); s.env.say("هلا"); s.env.stopAudio(); const c0=s.cancels.length; await s.run(); assert.equal(s.note.hidden,true); assert.equal(s.cancels.length,c0,"a stale timer cancels nothing");
+  const stops=[], c=loadSpeech({voices:[]}); let rej; c.env.__tts({speak:()=>new Promise((_,r)=>{ rej=r; }),stop:async()=>{ stops.push(1); }});
+  c.env.say("هلا"); c.env.stopAudio(); rej({code:"interrupted"}); const n0=stops.length; await c.run(); assert.equal(c.note.hidden,true); assert.equal(stops.length,n0);
 });

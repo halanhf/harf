@@ -2644,13 +2644,13 @@ function showTr(){ const m=S.settings.translit; if(m!=="auto") return m; const s
 
 // ===== speech out: device voices, or the Claude voice where the page is given one =====
 const synth=("speechSynthesis" in window)?window.speechSynthesis:null;
-let arVoices=[], arVoice=null, enVoice=null, TTS=null, audioGen=0, curUtt=null, voiceOff=false;
+let arVoices=[], arVoice=null, enVoice=null, TTS=null, audioGen=0, curUtt=null, voiceOff=false, curNote=null, stallGen=-1;
 try{ voiceOff=localStorage.getItem(KEY+"-voice")==="hidden"; }catch(e){}
 const VOICE_NONE="This device has no speech voice, so Harf can't play audio here. The pronunciation lines show how each phrase sounds.";
 const VOICE_NOAR="No Arabic voice on this device, so audio may be silent. Android: Settings, Google Speech Services, install Arabic. iPhone: Settings, Accessibility, Spoken Content, Voices, Arabic. Windows: Settings, Time & language, Speech, add Arabic.";
 const VOICE_STALL="Audio didn't play on this device, so Harf carried on without it. Check the volume, or add an Arabic voice in the device's speech settings.";
 // one dismissible line about audio; Hide is remembered on this device only
-function voiceNote(text){ const note=$("#voice-note"); if(!note) return;
+function voiceNote(text){ const note=$("#voice-note"); curNote=text||null; if(!note) return;
   if(voiceOff||!text){ note.hidden=true; return; }
   note.textContent=text; note.append(" ",el("button",{className:"btn link",type:"button","aria-label":"Hide this notice",textContent:"Hide",onclick:()=>{ voiceOff=true; try{ localStorage.setItem(KEY+"-voice","hidden"); }catch(e){} note.hidden=true; }}));
   note.hidden=false; }
@@ -2661,8 +2661,12 @@ function pickVoices(){
   if(synth){ arVoices=vs.filter(v=>/^ar/i.test(v.lang));
     arVoice=vs.find(v=>/^ar-(AE|KW|QA|BH|OM)/i.test(v.lang))||vs.find(v=>/^ar-SA/i.test(v.lang))||arVoices[0]||null;
     enVoice=vs.find(v=>/^en-GB/i.test(v.lang))||vs.find(v=>/^en/i.test(v.lang))||null; }
-  voiceNote(!synth&&!TTS?VOICE_NONE:(synth&&!arVoice&&!TTS&&vs.length)?VOICE_NOAR:null);
+  const want=!synth&&!TTS?VOICE_NONE:(synth&&!arVoice&&!TTS&&vs.length)?VOICE_NOAR:null;
+  if(want||curNote===VOICE_NONE||curNote===VOICE_NOAR) voiceNote(want); // a "didn't play" notice is not this function's to clear
 }
+// Settings row, only while the notices are hidden on this device
+function voiceRow(after){ if(!voiceOff) return null;
+  return el("div",{className:"setting"},el("span",{textContent:"Audio notices are hidden"}),el("button",{className:"btn small",type:"button",textContent:"Show them again",onclick:()=>{ voiceOff=false; try{ localStorage.removeItem(KEY+"-voice"); }catch(e){} pickVoices(); voiceNote(curNote); if(after) after(); }})); }
 pickVoices(); if(synth){ if(synth.addEventListener) synth.addEventListener("voiceschanged",pickVoices); else synth.onvoiceschanged=pickVoices; }
 const useClaudeVoice=()=>{ if(!TTS) return false; const v=S.settings.voice; return v==="claude"||(v!=="device"&&!arVoice); };
 function stopAudio(){ audioGen++; if(synth) try{ synth.cancel(); }catch(e){} if(TTS) try{ TTS.stop().catch(()=>{}); }catch(e){} }
@@ -2671,15 +2675,22 @@ function speakPart(text,o){
   o=o||{}; const en=o.lang==="en", g=audioGen;
   return new Promise(res=>{
     if(!text){ res(); return; }
-    let done=false, started=false, tm=0;
-    const fin=quiet=>{ if(done) return; done=true; clearTimeout(tm); if(!quiet&&!started&&g===audioGen) voiceNote(VOICE_STALL); res(); };
-    tm=setTimeout(()=>fin(false),speakLimit(text,o.rate));
-    if(TTS&&(en?!enVoice:useClaudeVoice())){ TTS.speak(String(text).slice(0,2000),{rate:Math.max(0.7,Math.min(1.5,o.rate||1))}).then(()=>{ started=true; fin(true); },e=>{ if(e&&e.code==="not_granted"){ TTS=null; pickVoices(); } fin(true); }); return; }
-    if(!synth){ fin(true); return; }
-    const u=new SpeechSynthesisUtterance(text); let v=en?enVoice:arVoice;
-    if(!en&&o.vary&&arVoices.length>1) v=arVoices[Math.floor(Math.random()*arVoices.length)]; // many voices help the ear (high-variability training)
-    u.lang=v?v.lang:(en?"en-GB":"ar-SA"); if(v) u.voice=v; u.rate=o.rate||0.85; curUtt=u; // kept so it is not collected before it ends
-    u.onstart=()=>{ started=true; }; u.onend=()=>fin(true); u.onerror=e=>fin(!!e&&(e.error==="interrupted"||e.error==="canceled")); synth.speak(u);
+    let done=false, started=false, tm=0, claude=false;
+    // after one line of a queue stalls, the rest get a short limit and no second notice
+    const stall=()=>{ if(g===audioGen&&stallGen!==g){ stallGen=g; voiceNote(VOICE_STALL); } };
+    const fin=(quiet,late)=>{ if(done) return; done=true; clearTimeout(tm);
+      if(late&&!started&&g===audioGen){ try{ if(claude) TTS.stop().catch(()=>{}); else synth.cancel(); }catch(e){} } // never leave a given-up line to play over the next one
+      if(!quiet&&!started) stall(); res(); };
+    tm=setTimeout(()=>fin(false,true),g===stallGen?1500:speakLimit(text,o.rate));
+    try{
+      if(TTS&&(en?!enVoice:useClaudeVoice())){ claude=true; // the Claude voice reports nothing until the line is over, so there is no "started" to trust
+        TTS.speak(String(text).slice(0,2000),{rate:Math.max(0.7,Math.min(1.5,o.rate||1))}).then(()=>{ started=true; fin(true); },e=>{ if(e&&e.code==="not_granted"){ TTS=null; pickVoices(); } fin(true); }); return; }
+      if(!synth){ fin(true); return; }
+      const u=new SpeechSynthesisUtterance(text); let v=en?enVoice:arVoice;
+      if(!en&&o.vary&&arVoices.length>1) v=arVoices[Math.floor(Math.random()*arVoices.length)]; // many voices help the ear (high-variability training)
+      u.lang=v?v.lang:(en?"en-GB":"ar-SA"); if(v) u.voice=v; u.rate=o.rate||0.85; curUtt=u; // kept so it is not collected before it ends
+      u.onstart=()=>{ started=true; }; u.onend=()=>fin(true); u.onerror=e=>fin(!!e&&(e.error==="interrupted"||e.error==="canceled")); synth.speak(u);
+    }catch(e){ fin(false); }
   });
 }
 function say(text,rate,o){ stopAudio(); return speakPart(text,Object.assign({},o,{rate})); }
@@ -3547,6 +3558,7 @@ Return ONLY JSON: {"hook": one or two sentences in English, "example_ar", "examp
     select("set-gender","Talk to me as",[["","Not set"],["m","A man (-ak)"],["f","A woman (-ich)"]],S.settings.gender||"",v=>{ S.settings.gender=v; save(); }),
     select("set-auto","Play audio automatically",[["1","On"],["0","Off (quiet places)"]],S.settings.autoplay===false?"0":"1",v=>{ S.settings.autoplay=v==="1"; save(); }));
   if(TTS) sec.append(select("set-voice","Arabic voice",[["auto","Device voice, Claude voice if none"],["device","Device voice"],["claude","Claude voice"]],S.settings.voice||"auto",v=>{ S.settings.voice=v; save(); say("هلا والله، شلونك؟"); }));
+  { const vr=voiceRow(renderMe); if(vr) sec.append(vr); }
   if(micBlocked&&SR) sec.append(el("div",{className:"setting"},el("span",{textContent:"Microphone"}),el("button",{className:"btn small",type:"button",textContent:"Try the microphone again",onclick:()=>{ micBlocked=false; try{ localStorage.removeItem(KEY+"-mic"); }catch(e){} renderMe(); }})));
   // backup: a file you keep, in case browser data or the account copy is ever lost. restoring merges, so it never loses work
   const exp=el("button",{className:"btn small",type:"button",textContent:"Export backup"});
