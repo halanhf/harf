@@ -1545,9 +1545,9 @@ test("speech check: a screen reader is told which words were caught",()=>{
   }
 });
 // six recognise cards due in a fixed order, the real scheduler and day counters, and a clock the test moves
-function reviewSix(own){ // own: the first card is a word the learner added (this id)
+function reviewSix(own,late){ // own: the first card is a word the learner added (this id)
   const sc=loadScreens({harakat:"never"}), {env,t}=sc, ids=[own||"x.0","x.1","x.2","x.3","x.4","x.5"], ar=["هلا","زين","شاي","قهوة","ماي","خبز"];
-  ids.forEach((id,i)=>{ sc.items[id]={id,unit:"x"+i,stage:1,ar:ar[i],tr:"t",en:"e"+i}; t.S().cards[id]=Object.assign(sc.card(0,0,0),{d:i+1}); });
+  ids.forEach((id,i)=>{ sc.items[id]={id,unit:"x"+i,stage:1,ar:ar[i],tr:"t",en:"e"+i}; t.S().cards[id]=Object.assign(sc.card(0,0,0),{d:late&&i===0?50:i+1}); });
   if(own){ sc.items[own]={id:own,unit:"custom",stage:"custom",ar:ar[0],tr:"t",en:"e0"}; t.S().custom=[{id:own,ar:ar[0],tr:"t",en:"e0"}]; }
   // minute-aligned, so a card that is saved and read back (minutes in storage) keeps the same due time
   vm.runInContext("globalThis.__now=Math.floor(Date.now()/60000)*60000; Date.now=()=>globalThis.__now;"+cut("function touchDay","const shownStreak"),env);
@@ -1807,4 +1807,42 @@ test("undo: it is announced, focus goes to the refusal line, and a stage with no
   r.grade("Easy"); press(r.undoBtn()); assert.ok(r.said.includes("Grade undone"));
   r.grade("Easy"); const p=r.t.serialize(); p.cards["x.0"][5]+=7; r.t.setS(p); press(r.undoBtn()); const line=walk(r.b()).find(n=>n.tag==="p"&&txt(n)==="That card changed on another device, so it can't be undone.");
   assert.ok(line&&r.focused.includes(line),"focus on the refusal line");
+});
+
+// what a merge from a device that deleted the word does to this one while a review is open: the real merge, then the item table loses it
+const goneRemote=(r,id)=>{ const T=Date.now(); r.t.setS(L.mergeProgress(r.t.serialize(),{updatedAt:T+1,deleted:{[id]:T},custom:[],cards:{}})); delete r.sc.items[id]; };
+const finishAll=r=>{ const seen=[]; for(let i=0;i<12&&r.shown();i++){ seen.push(r.shown()); r.grade("Got it"); } return seen; };
+test("delete my own word: a word deleted on another device while it waits in the open review is skipped, nothing throws, the review finishes",()=>{
+  const r=reviewSix("cabc1",true); assert.equal(r.shown(),"x.0".replace("x.0","x.1")); goneRemote(r,"cabc1"); assert.ok(!r.t.S().custom.length);
+  r.grade("Got it"); const seen=finishAll(r); assert.ok(!seen.includes("cabc1")); assert.ok(texts(r.b()).includes("Review done"),texts(r.b()).join("|")); assert.ok(texts(r.b()).some(x=>x.startsWith("5 cards reviewed")),texts(r.b()).join("|"));
+});
+test("delete my own word: a forgotten word deleted on another device does not come back or stall the review",()=>{
+  const r=reviewSix("cabc1"); r.grade("Forgot"); goneRemote(r,"cabc1"); r.at(61000); const seen=finishAll(r);
+  assert.ok(!seen.includes("cabc1")); assert.ok(texts(r.b()).includes("Review done"),texts(r.b()).join("|")); assert.equal(r.t.S().cards.cabc1,undefined);
+});
+test("delete my own word: when every remaining card was deleted elsewhere the review ends with Review done; the one graded before it is the only one counted",()=>{
+  const sc=loadScreens({harakat:"never"}), {env,t}=sc, W2={id:"cdef2",ar:"شاي",tr:"shay",en:"tea"}; t.S().custom=[{...WORD},{...W2}];
+  for(const w of [WORD,W2]){ sc.items[w.id]=Object.assign({unit:"custom",stage:"custom"},w); t.S().cards[w.id]=sc.card(0,0,0); }
+  env.startReview(null); const b=()=>sc.spy.view.body, r={t,sc}; const firstAr=texts(b()).some(x=>x==="قهوة"||x==="coffee")?"cabc1":"cdef2", other=firstAr==="cabc1"?"cdef2":"cabc1";
+  goneRemote(r,other); press(byText(b(),"Show answer")); press(walk(b()).find(n=>n.tag==="button"&&txt(n).startsWith("Got it")));
+  assert.ok(texts(b()).includes("Review done"),texts(b()).join("|")); assert.ok(texts(b()).some(x=>x.startsWith("1 card reviewed")));
+});
+test("delete my own word: a marker map or word id named like an object property neither makes a marker nor removes anything",()=>{
+  const W3={id:"constructor",ar:"ا",tr:"a",en:"a"}, W4={id:"toString",ar:"ب",tr:"b",en:"b"}, card={constructor:wcard(),toString:wcard()};
+  for(const [x,y] of [[{updatedAt:1,custom:[W3,W4],cards:card},{updatedAt:2,cards:{}}],[{updatedAt:2,cards:{}},{updatedAt:1,custom:[W3,W4],cards:card}]]){
+    const m=L.mergeProgress(x,y); assert.deepEqual({...m.deleted},{}); assert.deepEqual([...m.custom.map(c=>c.id).sort()],["constructor","toString"]); assert.deepEqual(Object.keys(m.cards).sort(),["constructor","toString"]);
+  }
+  const m=L.mergeProgress({updatedAt:1,deleted:{},custom:[W3],cards:{}},{updatedAt:2,deleted:{cabc1:5},cards:{}}); assert.deepEqual({...m.deleted},{cabc1:5}); assert.equal(m.custom.length,1);
+  const j=L.joinProgress({updatedAt:1,deleted:{},custom:[W3,W4]},{own:{constructor:wcard()}}); assert.equal(j.custom.length,2); assert.ok(j.cards.constructor);
+});
+test("delete my own word: a hidden word that is deleted leaves no hidden-card entry, by the delete button and by a merge",()=>{
+  const r=reviewSix("cabc1"); r.t.S().suspended={cabc1:5,"x.2":7}; const del=byText(r.b(),"Delete this word"); press(del); press(del);
+  assert.deepEqual({...r.t.S().suspended},{"x.2":7});
+  for(const m of [L.mergeProgress({updatedAt:1,suspended:{cabc1:5,"u1.0":-7},custom:[WORD],cards:{cabc1:wcard()}},{updatedAt:2,deleted:{cabc1:9},cards:{}}),L.mergeProgress({updatedAt:2,deleted:{cabc1:9},cards:{}},{updatedAt:1,suspended:{cabc1:5,"u1.0":-7},cards:{}})]) assert.deepEqual({...m.suspended},{"u1.0":-7});
+});
+test("delete my own word: deleting changes no day counter, streak, log, freezes or session; the only card deleted is not counted as reviewed; the armed state is announced",()=>{
+  const r=reviewSix("cabc1"), said=[]; r.env.announce=x=>said.push(x); const S=()=>r.t.S(), pick=()=>JSON.stringify(["reviewsToday","newToday","streak","lastDay","log","freezes","session"].map(k=>S()[k]));
+  const before=pick(), del=byText(r.b(),"Delete this word"); press(del); assert.ok(said.includes("Tap again to delete")); press(del); assert.equal(pick(),before); assert.ok(S().deleted.cabc1>0);
+  const sc=loadScreens({harakat:"never"}); sc.t.S().custom=[{...WORD}]; sc.items.cabc1=Object.assign({unit:"custom",stage:"custom"},WORD); sc.t.S().cards={cabc1:sc.card(0,0,0)}; sc.env.startReview(null);
+  const d=byText(sc.spy.view.body,"Delete this word"); press(d); press(d); const t=texts(sc.spy.view.body); assert.ok(t.includes("Nothing due"),t.join("|")); assert.ok(!t.some(x=>/reviewed/.test(x)));
 });
