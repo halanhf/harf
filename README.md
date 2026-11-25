@@ -6,7 +6,7 @@ There are two ways to run it, built from the same `index.html`:
 
 | | claude.ai version | Offline app (`docs/`) |
 |---|---|---|
-| Progress | Saved to my Claude account, so the phone and the PC stay in sync | Stays on that one device; move it with Export / Import backup |
+| Progress | Saved to my Claude account, so the phone and the PC stay in sync | Stays on that device, or syncs through your own private GitHub repo once you set it up (see "Sync the offline app") |
 | Works offline | No | Yes, once it's installed |
 | Stages 0 to 5 (all 466 written lessons), reviews, role-play, drills | Yes | Yes |
 | AI lessons after stage 5, stories, chat partner, sentence practice | Yes | No, they need Claude |
@@ -52,9 +52,9 @@ It's live at **https://halanhf.github.io/harf/** (GitHub Pages, deployed from `d
 - **iPhone:** open it in Safari, Share, **Add to Home Screen**.
 - **Android:** open it in Chrome, ⋮, **Install app**.
 
-Open it once online; after that it works offline. Progress stays on that device: use the backup download now and then.
+Open it once online; after that it works offline. Progress stays on that device unless you set up sync (see "Sync the offline app"). The backup download still works either way, so use it now and then.
 
-Anyone with the address can open the app. That's fine: it's only the app, and progress never leaves each person's own browser.
+Anyone with the address can open the app. That's fine: it's only the app. Progress never leaves a person's own browser unless they set up their own sync, and that goes to their own private repo.
 
 Then put it on the phone:
 
@@ -81,6 +81,42 @@ Open it, press **Continue** until Today says you're done. A normal day is review
 - **Backups:** Progress, **Export backup**, every week or so, and before you clear browser data. **Import backup** merges, and it tells you what will change before it does anything. It can't undo **Start over**, though: anything older than the reset stays gone.
 - **Too many reviews after a break:** Today stops at 60 a day and spreads the rest over the next few days. New lessons pause while more than 40 are waiting.
 
+## Sync the offline app
+
+The offline app can keep your phone and your PC in step through a private GitHub repo (a private folder on GitHub) called `harf-progress`, which only you can read. It syncs when it opens, shortly after you study (never more than once a minute), when you leave it, when the connection comes back and when you return to it. With no connection it carries on and catches up later. If you never set this up, nothing changes: progress stays on that device.
+
+It does not sync with the claude.ai version. **Export backup** and **Import backup** are still the bridge between the two.
+
+### 1. Make the private repo (once)
+
+On github.com: **+** at the top right, **New repository**. Repository name `harf-progress`, choose **Private**, tick **Add a README file**, then **Create repository**.
+
+### 2. Make the token (once; the same token can be pasted on each device)
+
+1. On GitHub, click your picture, then **Settings**, then **Developer settings**, **Personal access tokens**, **Fine-grained tokens**, **Generate new token**.
+2. Resource owner: your own account.
+3. Repository access: **Only select repositories**, then pick `harf-progress`.
+4. Permissions, Repository permissions: set **Contents** to **Read and write**. (Metadata: Read-only is added by itself.)
+5. Pick an expiry, press **Generate token**, and copy the token. GitHub shows it once, so keep it somewhere safe until you have pasted it on each device.
+
+### 3. Paste it into the app
+
+In the app: **Progress**, find **Sync**, paste the token into **Access token**, leave **Repo** as `harf-progress` (just the name), and press **Connect**. The line should read `Synced just now`. Do the same on the other device. On an iPhone, the home screen app and Safari keep separate storage, so connect in the one you use.
+
+### What a leaked token could do
+
+Read and write that one repo, nothing else. To cut it off, delete the token on GitHub; the app then says `Sync problem: the token was refused`. On a device, **Disconnect** removes the token from that browser at once and stops any sync in progress. Your progress stays where it is.
+
+### Check that it works (once, with two devices)
+
+1. On the PC, connect. On github.com, `harf-progress` now has `progress.json` and one or more `cards_….json` files.
+2. On the phone, connect. Lessons done, streak and review counts match the PC.
+3. Review a few cards on the phone, then switch to another app. Bring the PC app to the front: within a moment its counts match.
+4. Put the phone in flight mode and review a few cards. Progress shows `Offline, will sync later`. Turn flight mode off: it shows `Synced just now`, and the PC has the reviews after you return to it.
+5. With both devices in flight mode, review different cards on each. Turn both back on. Each device ends with both sets of reviews.
+6. Press **Disconnect** on the phone. The line reads `Not set up`, progress is still there, and reviews on the phone no longer reach the PC. Connect again to carry on.
+7. Optional, and it erases everything: **Reset all progress** (then **Tap again to erase everything**) on one device; open the other and it is empty too.
+
 ## Updating
 
 - **After changing `index.html`:** rebuild the offline app and run the tests, then commit both.
@@ -104,7 +140,7 @@ Export a backup first if you might want your progress back.
 - **Chrome (Windows):** open the app, ⋮ menu, **Uninstall Harf**, **Remove**. Tick **Also delete data from Chrome** to wipe progress too.
 - **Edge:** go to `edge://apps`, **Details** on Harf, **Uninstall**.
 - **iPhone or Android:** touch and hold the icon and remove it.
-- **Just the progress:** Progress, Danger zone, **Reset all progress**. That also clears it on every device synced to the account, and a backup made before it won't bring it back.
+- **Just the progress:** Progress, Danger zone, **Reset all progress**. That also clears it on every device synced to the account or through GitHub, and a backup made before it won't bring it back.
 
 ## Troubleshooting
 
@@ -117,13 +153,19 @@ Export a backup first if you might want your progress back.
 | Progress gone on the PC install | You opened a different address or port. Use exactly http://127.0.0.1:8000 |
 | Old version still showing | Open it once while online. The installed app checks for a new version every time it opens |
 | Export backup says "Couldn't export here" | claude.ai only lets a page save files through its downloads permission. Open Harf in a web browser on claude.ai and export from there |
+| Sync problem: the token was refused | The token expired, was revoked, or doesn't have Contents: Read and write on the repo. Pasting it can also fail if a space or odd character got into the middle of it. Make a new one, press **Disconnect**, then **Connect** with it |
+| Sync problem: the progress repo was not found | The repo name is wrong (type just `harf-progress`, not your name before it), or the token wasn't given access to it |
+| Sync problem: the saved progress could not be read | A file in `harf-progress` was edited by hand or damaged. Delete that file on GitHub and press **Sync now**: the app writes it again from this device. Nothing is overwritten until you do |
+| Sync problem: GitHub is not responding | GitHub or the connection is down. Progress stays on the device and the app tries again by itself |
+| Sync problem: another device was saving at the same time | Wait a moment and press **Sync now**. It also tries again the next time you study or open the app |
+| "You're offline" when pressing **Connect** | Connecting needs the internet once. Get online and press **Connect** again |
 | `pages` workflow fails | Pages isn't switched on yet: Settings, Pages, Source: **GitHub Actions** |
 
 ## Security and privacy
 
-- No accounts, keys or passwords anywhere in the app or the repo.
-- The offline app has a strict content security policy: it only runs its own scripts and loads nothing from other sites. The fonts are bundled.
-- Progress lives in your browser (and in your Claude account for the claude.ai version). The hosted app has nothing private in it.
+- No accounts, keys or passwords in the repo or the page. If you set up sync, your access token is kept only in that browser's storage: it is never in a backup, in the synced files or in an error message, and **Disconnect** removes it.
+- The offline app has a strict content security policy: it only runs its own scripts and loads nothing from other sites. The fonts are bundled. The only other site the page may talk to is api.github.com, and only once you have set up sync.
+- Progress lives in your browser, in your Claude account for the claude.ai version, and in your private `harf-progress` repo if you set up sync. The hosted app has nothing private in it.
 - Chrome and Edge send speech recognition audio to Google's or Microsoft's servers. On claude.ai, dictation goes to Anthropic's speech-to-text and the page only gets the words back.
 - The local server is bound to 127.0.0.1, so nothing else on your network can reach it.
 
@@ -138,6 +180,9 @@ Export a backup first if you might want your progress back.
 | A backup made after "Start over" on another device | The preview says how many cards here it'll remove |
 | A backup made before you chose "Start over" | The preview says its older cards won't come back, rather than pretending to restore them |
 | App update | Progress isn't in the files, so updates never touch it |
+| No connection | Study carries on. Changes wait and are sent when the connection is back |
+| Two devices studied before they synced | Each card keeps its most recent review, so neither loses work |
+| The access token expired or was revoked | Sync stops and says so. Progress stays on the device; paste a new token to carry on |
 
 ## How it works
 
@@ -205,7 +250,7 @@ Most mainstream apps teach MSA, Egyptian or Levantine ([overview](https://talkin
 node --test tests/logic.test.js
 ```
 
-They cover the FSRS scheduler (learning steps, growth, lapses, the stability floor, hard < good < easy, the retention target, older cards), the daily review cap, loading damaged backups safely, card modes, interleaving, the stage gate, the AI-lesson validator, Arabic normalisation (including چ and گ), word-level speech matching, streaks across time zones, review days across a clock change, a time-zone change and the clock going back, the sync merge, the contrast of the main text colours in light and dark mode, and the course data: every hand-written lesson has to pass the same validator AI lessons do. They also check the built app loads nothing from other sites, that its content security policy matches its inline scripts, that the service worker opens the saved copy offline or on a stalled connection, and that Android's back gesture closes a lesson without quitting the app.
+They cover the FSRS scheduler (learning steps, growth, lapses, the stability floor, hard < good < easy, the retention target, older cards), the daily review cap, loading damaged backups safely, card modes, interleaving, the stage gate, the AI-lesson validator, Arabic normalisation (including چ and گ), word-level speech matching, streaks across time zones, review days across a clock change, a time-zone change and the clock going back, the sync merge, the contrast of the main text colours in light and dark mode, and the course data: every hand-written lesson has to pass the same validator AI lessons do. They also check the built app loads nothing from other sites, that its content security policy matches its inline scripts, that the service worker opens the saved copy offline or on a stalled connection, and that Android's back gesture closes a lesson without quitting the app. The sync tests run the whole cycle against a stand-in for GitHub (first sync, two devices, a refused write, a failed read, start over). They also check that the token only ever travels in the request header to api.github.com, and that the claude.ai build never calls GitHub.
 
 ## Credits
 
