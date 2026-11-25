@@ -2273,10 +2273,16 @@ let shardStamp={}, shardSent={};
 async function readRemote(){
   const snap=await progressRef().get(); if(!snap.exists) return null;
   const meta=clone(snap.data()); const stamps=meta.shards&&typeof meta.shards==="object"?meta.shards:{}; delete meta.shards;
-  const shards={};
+  const shards={}, seen={};
   await Promise.all(SHARDS.filter(n=>stamps[n]&&stamps[n]!==shardStamp[n]).map(async n=>{ const d=await shardRef(n).get();
-    if(d.exists){ const o=clone(d.data()); shards[n]=o.cards&&typeof o.cards==="object"?o.cards:{}; } shardStamp[n]=stamps[n]; }));
-  return cleanIn(joinProgress(meta,shards));
+    if(d.exists){ const o=clone(d.data()); shards[n]=o.cards&&typeof o.cards==="object"?o.cards:{}; } seen[n]=stamps[n]; }));
+  return {data:cleanIn(joinProgress(meta,shards)),seen};
+}
+// a group counts as read only once all of them arrived and were merged, so a failed fetch can't let a later write overwrite what was never merged
+async function pullRemote(){
+  const r=await readRemote(); if(!r) return;
+  const changed=applyMerged(mergeProgress(serialize(),r.data)); Object.assign(shardStamp,r.seen);
+  if(changed) afterRemoteChange();
 }
 // card groups first, then the main document that points at them, so a reader never follows a stamp to an unwritten group
 async function writeRemote(){
@@ -2294,7 +2300,7 @@ function pushRemote(opts){
   if(pushing){ if(opts&&opts.replace) replaceNext=true; else pushAgain=true; return pushing; }
   pushing=(async()=>{
     try{
-      if(!(opts&&opts.replace)){ const remote=await readRemote(); if(remote&&applyMerged(mergeProgress(serialize(),remote))) afterRemoteChange(); }
+      if(!(opts&&opts.replace)) await pullRemote();
       await writeRemote(); setSync("ok","Saved to your account");
     }catch(e){ setSync("error",syncError(e)); }
   })();
@@ -2312,8 +2318,7 @@ async function setupSync(){
   let id=null; try{ id=await user.id(); }catch(e){} if(!id) return;
   DB=db; UID=id; setSync("pending","Connecting to your account…");
   try{
-    const remote=await readRemote();
-    if(remote&&applyMerged(mergeProgress(serialize(),remote))) afterRemoteChange();
+    await pullRemote();
   }catch(e){ setSync("error",syncError(e)); }
   synced=true; await pushRemote();
   try{

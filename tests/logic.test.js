@@ -12,6 +12,35 @@ vm.runInContext(block("logic"),ctx);
 vm.runInContext(block("data")+";this.D={LETTERS,VOWELS,SHIFTS,PAIRS,COURSE,STAGE_LEVELS,MSA,READINGS,GRAMMAR,NUMBERS};",ctx);
 const L=ctx.module.exports, D=ctx.D;
 const DAY=86400000, now=1e12;
+// the page's own state, sync and boot code, run against fakes (no browser, no network)
+const main=html.match(/<script>\r?\n\(function\(\)\{([\s\S]*?)<\/script>/)[1];
+const cut=(a,b)=>{ const i=main.indexOf(a), j=b?main.indexOf(b,i):main.lastIndexOf("})();"); assert.ok(i>=0&&j>i,`section ${a} missing`); return main.slice(i,j); };
+const tick=async(n=12)=>{ for(let i=0;i<n;i++) await new Promise(r=>setImmediate(r)); };
+let EXPOSE="readRemote,writeRemote,pushRemote,serialize,save,flush,sync,setS:x=>{S=hydrate(x);},S:()=>S,stamps:()=>shardStamp,use:(db,uid)=>{DB=db;UID=uid;synced=true;}";
+function loadUi(o={}){
+  const store=o.store||new Map(Object.entries(o.saved||{})); const note={hidden:true,textContent:""}; const on={}, calls=[], timers=new Map(); let tid=0;
+  const env={module:{exports:{}},TextEncoder,TextDecoder,atob,btoa,AbortController,
+    setTimeout:(f,ms)=>{ timers.set(++tid,{f,ms}); return tid; },clearTimeout:id=>{ timers.delete(id); },
+    $:s=>s==="#sync-note"?note:null,
+    localStorage:{getItem:k=>store.has(k)?store.get(k):null,setItem:(k,v)=>{ store.set(k,String(v)); },removeItem:k=>{ store.delete(k); }},
+    document:{visibilityState:"visible",addEventListener:(t,f)=>{ on[t]=f; }},addEventListener:(t,f)=>{ on[t]=f; },
+    window:{claude:o.claude,HARF_PWA:o.pwa},navigator:{onLine:o.online!==false},fetch:o.fetch||(()=>{ throw new Error("unexpected fetch"); }),
+    rebuild(){},refresh(){},busy:false,currentTab:"today",RENDER:{today(){ calls.push("render"); }},show(){ calls.push("show"); },
+    feedMsa(){ calls.push("msa"); },feedSentences(){ calls.push("sentences"); },afterRemoteChange(){ calls.push("changed"); },firstMergeDone(){}};
+  vm.createContext(env); vm.runInContext(block("logic"),env);
+  vm.runInContext(cut("// ===== state =====","// ===== items index =====")+";this.T={"+EXPOSE+"};",env);
+  if(o.boot) vm.runInContext(cut("// ===== boot ====="),env);
+  const runTimers=()=>{ const all=[...timers.values()]; timers.clear(); all.forEach(x=>x.f()); };
+  return Object.assign(env.T,{store,note,on,calls,timers,runTimers,env,fed:()=>calls.filter(c=>c==="msa"||c==="sentences")});
+}
+// a stand-in for the account store: doc(path).get()/set(), paths that can be made to fail, and a gate that holds reads back
+function fakeDb(docs={}){ const db={m:new Map(Object.entries(docs)),fail:new Set(),reads:0,gate:null};
+  db.hold=()=>{ let open; db.gate=new Promise(r=>{ open=r; }); return open; };
+  db.doc=p=>({get:async()=>{ db.reads++; if(db.gate) await db.gate; if(db.fail.has(p)) throw Object.assign(new Error("x"),{code:"unavailable"}); return {exists:db.m.has(p),data:()=>db.m.get(p)}; },
+    set:async v=>{ db.m.set(p,JSON.parse(JSON.stringify(v))); },collection:()=>({limit:()=>({get:async()=>({docs:[]})}),doc:()=>({set:async()=>{}})})});
+  return db; }
+const claudeWith=db=>({use:async n=>n==="db"?db:n==="user"?{id:async()=>"u1"}:null});
+const P="data/users/u1/", pcard=(t,r)=>[1,5,r,t+1440,0,t,-1,1];
 
 test("normalize strips vowels and unifies letter variants, including gulf letters",()=>{
   assert.equal(L.normalizeArabic("كِتَاب"),"كتاب");
@@ -405,4 +434,14 @@ test("merge: readings done on either device are kept",()=>{
 });
 test("page: every inline script parses (a syntax error anywhere blanks the whole app)",()=>{
   for(const m of html.matchAll(/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/g)) assert.doesNotThrow(()=>new vm.Script(m[1]),m[0].slice(0,40));
+});
+
+test("account read: a card group that fails to load leaves nothing marked as read, so the next save can't overwrite it",async()=>{
+  const db=fakeDb({[P+"progress"]:{updatedAt:5,shards:{s1:"a1",s2:"b1"}},[P+"cards_s1"]:{cards:{"u1.0":pcard(100,3)}},[P+"cards_s2"]:{cards:{"s2u001.0":pcard(200,3)}}});
+  const t=loadUi(); t.use(db,"u1");
+  db.fail.add(P+"cards_s2"); await assert.rejects(t.readRemote()); assert.deepEqual({...t.stamps()},{});
+  await t.pushRemote(); assert.equal(t.sync.state,"error"); assert.ok(db.m.get(P+"cards_s1").cards["u1.0"],"not rewritten while unread");
+  db.fail.clear(); await t.pushRemote();
+  assert.ok(db.m.get(P+"cards_s1").cards["u1.0"]); assert.ok(t.S().cards["u1.0"]&&t.S().cards["s2u001.0"]);
+  assert.deepEqual({...t.stamps()},{...db.m.get(P+"progress").shards});
 });
