@@ -19,13 +19,16 @@ const cut=(a,b,m=main)=>{ const i=m.indexOf(a), j=b?m.indexOf(b,i):m.lastIndexOf
 const builtScripts=()=>[...fs.readFileSync(path.join(__dirname,"..","docs","index.html"),"utf8").matchAll(/<script(?: id="[^"]*")?>([\s\S]*?)<\/script>/g)].map(m=>m[1]);
 const tick=async(n=12)=>{ for(let i=0;i<n;i++) await new Promise(r=>setImmediate(r)); };
 let EXPOSE="readRemote,writeRemote,pushRemote,serialize,save,flush,sync,setS:x=>{S=hydrate(x);},S:()=>S,stamps:()=>shardStamp,use:(db,uid)=>{DB=db;UID=uid;synced=true;}";
+// a minimal element tree for the panel: attributes set with setAttribute are kept apart from properties, like the real dom
+const findId=(n,id)=>!n?null:n.id===id?n:(n.children||[]).map(c=>findId(c,id)).find(Boolean)||null;
+function fakeEl(tag){ const e={tag,attrs:{},children:[],setAttribute(k,v){ e.attrs[k]=String(v); },append(...k){ e.children.push(...k); }}; Object.defineProperty(e,"textContent",{get:()=>e._t||"",set:v=>{ e._t=String(v); e.children=[]; }}); return e; }
 function loadUi(o={}){
   const store=o.store||new Map(Object.entries(o.saved||{})); const note={hidden:true,textContent:""}; const on={}, calls=[], timers=new Map(); let tid=0;
   const env={module:{exports:{}},TextEncoder,TextDecoder,atob,btoa,AbortController,
     setTimeout:(f,ms)=>{ timers.set(++tid,{f,ms}); return tid; },clearTimeout:id=>{ timers.delete(id); },
-    $:s=>s==="#sync-note"?note:null,
+    $:s=>s==="#sync-note"?note:findId(env.rootEl,s.slice(1)),
     localStorage:{getItem:k=>store.has(k)?store.get(k):null,setItem:(k,v)=>{ store.set(k,String(v)); },removeItem:k=>{ store.delete(k); }},
-    document:{visibilityState:"visible",addEventListener:(t,f)=>{ on[t]=f; }},addEventListener:(t,f)=>{ on[t]=f; },
+    document:{createElement:fakeEl,visibilityState:"visible",addEventListener:(t,f)=>{ on[t]=f; }},addEventListener:(t,f)=>{ on[t]=f; },
     window:{claude:o.claude,HARF_PWA:o.built?undefined:o.pwa},navigator:{onLine:o.online!==false},fetch:o.fetch||(()=>{ throw new Error("unexpected fetch"); }),
     rebuild(){},refresh(){},busy:false,currentTab:"today",RENDER:{today(){ calls.push("render"); }},show(){ calls.push("show"); },
     feedMsa(){ calls.push("msa"); },feedSentences(){ calls.push("sentences"); },afterRemoteChange(){ calls.push("changed"); },firstMergeDone(){}};
@@ -33,6 +36,7 @@ function loadUi(o={}){
   if(o.built){ const sc=builtScripts(), mi=sc.findIndex(x=>x.includes("// ===== state =====")); assert.ok(mi>0); sc.slice(0,mi).forEach(x=>vm.runInContext(x,env)); m=sc[mi].match(/\(function\(\)\{([\s\S]*)/)[1]; }
   else vm.runInContext(block("logic"),env);
   vm.runInContext(cut("// ===== state =====","// ===== items index =====",m)+";this.T={"+EXPOSE+"};",env);
+  if(o.dom){ vm.runInContext(cut("const ap=","const arSpan=",main),env); env.rootEl=fakeEl("div"); env.renderMe=()=>{ calls.push("renderMe"); }; }
   if(o.boot) vm.runInContext(cut("// ===== boot =====",undefined,m),env);
   const runTimers=()=>{ const all=[...timers.values()]; timers.clear(); all.forEach(x=>x.f()); };
   return Object.assign(env.T,{store,note,on,calls,timers,runTimers,env,fed:()=>calls.filter(c=>c==="msa"||c==="sentences")});
@@ -655,7 +659,7 @@ test("github client: results never carry the token, and fetch never follows a re
 
 // ===== the offline app syncs through github =====
 EXPOSE+=",ghSync,ghForget,ghSave,savedMsg,gh:()=>GH";
-EXPOSE+=",ghConnect";
+EXPOSE+=",ghConnect,ghPanel";
 const KEY="harf-gulf-v1", CFG=JSON.stringify({owner:"someone",repo:"harf-progress",token:TOKEN});
 // a store that already holds another device's progress
 function hubWith(p){ const hub=fakeHub(); const {meta,shards}=L.splitProgress(p); const st={};
@@ -724,7 +728,7 @@ test("offline app: saving the connection trims the token, and refuses one that w
   assert.deepEqual({...t.ghSave({owner:"someone",repo:"harf-progress",token:"  "+TOKEN+"\n"})},{ok:true}); assert.deepEqual(JSON.parse(store.get(KEY+"-gh")),{owner:"someone",repo:"harf-progress",token:TOKEN}); assert.equal(t.gh().token,TOKEN);
   t.ghForget(); assert.ok(!store.has(KEY+"-gh"));
   for(const bad of ["","   ","git hub_pat","tok\nen","tok\ten","tokén","tok\u0000en","تو كن","tok​en"]){
-    assert.deepEqual({...t.ghSave({owner:"someone",repo:"harf-progress",token:bad})},{ok:false,why:"the token was refused"},JSON.stringify(bad)); assert.ok(!store.has(KEY+"-gh"),"nothing stored"); assert.equal(t.gh(),null); }
+    assert.deepEqual({...t.ghSave({owner:"someone",repo:"harf-progress",token:bad})},{ok:false,kind:"auth",why:"the token was refused"},JSON.stringify(bad)); assert.ok(!store.has(KEY+"-gh"),"nothing stored"); assert.equal(t.gh(),null); }
 });
 
 // ===== fix round 1 =====
@@ -757,7 +761,7 @@ test("offline app: a refused token during a cycle stops what was queued behind i
 test("offline app: saving the connection refuses an empty owner or repo",()=>{
   const store=new Map(); const t=loadUi({pwa:true,store});
   for(const c of [{owner:"",repo:"harf-progress"},{owner:"  ",repo:"harf-progress"},{owner:"someone",repo:""},{owner:"someone",repo:" \n"},{owner:"someone"},{repo:"harf-progress"}]){
-    assert.deepEqual({...t.ghSave(Object.assign({token:TOKEN},c))},{ok:false,why:"the progress repo was not found"},JSON.stringify(c)); assert.ok(!store.has(KEY+"-gh")); assert.equal(t.gh(),null); }
+    assert.deepEqual({...t.ghSave(Object.assign({token:TOKEN},c))},{ok:false,kind:"repo",why:"the progress repo was not found"},JSON.stringify(c)); assert.ok(!store.has(KEY+"-gh")); assert.equal(t.gh(),null); }
   assert.deepEqual({...t.ghSave({owner:" someone ",repo:" harf-progress ",token:TOKEN})},{ok:true}); assert.deepEqual(JSON.parse(store.get(KEY+"-gh")),{owner:"someone",repo:"harf-progress",token:TOKEN});
 });
 
@@ -784,13 +788,43 @@ test("connect: a browser that won't store the token is told so, and nothing is k
   assert.equal(await t.ghConnect(TOKEN,"harf-progress"),"store"); assert.equal(t.gh(),null); assert.equal(hub.files.size,0);
 });
 test("sync panel: a password field outside any form, one place that names github, and a backup that is still progress only",()=>{
-  const panel=html.slice(html.indexOf("// sync through github (the offline app only)"),html.indexOf('el("h2",{style:"margin-top:26px",textContent:"Settings"})')); assert.ok(panel.length>500);
+  const panel=html.slice(html.indexOf("function ghPanel("),html.indexOf("// ===== items index =====")); assert.ok(panel.length>500);
   assert.ok(!/<form\b/i.test(html)&&!/el\("form"/.test(panel)); // the csp has form-action 'none'; the chat box has its own form, the panel has none
   assert.match(html,/type:"password",id:"gh-token",autocomplete:"off"/);
-  assert.match(html,/autocapitalize:"off",autocorrect:"off",spellcheck:false/);
-  assert.match(html,/select,input\[type=text\],input\[type=password\],textarea\{/);
+    assert.match(html,/select,input\[type=text\],input\[type=password\],textarea\{/);
   assert.ok(!/console\./.test(html)); assert.equal(html.split("api.github.com").length-1,1);
   assert.match(html,/state:serialize\(\),gen:S\.gen\}/);
   for(const s of ["Not set up","Synced just now","Offline, will sync later","Sync problem: ","Connecting…","Disconnect","Sync now"]) assert.ok(html.includes(s),s);
   assert.ok(!/GH\.token/.test(html.slice(html.indexOf("function renderMe"),html.indexOf("function renderMe")+9000))); // the token is never rendered
+});
+
+test("sync panel: the input hints are real attributes on the built inputs, not properties",()=>{
+  const t=loadUi({pwa:true,dom:true}); const sec=t.env.rootEl; t.ghPanel(sec);
+  for(const id of ["gh-token","gh-repo"]){ const i=findId(sec,id); assert.ok(i,id); assert.equal(i.attrs.autocomplete,"off"); assert.equal(i.attrs.autocapitalize,"off"); assert.equal(i.attrs.autocorrect,"off"); assert.equal(i.attrs.spellcheck,"false"); }
+  assert.equal(findId(sec,"gh-token").type,"password"); assert.equal(findId(sec,"gh-repo").value,"harf-progress");
+});
+test("disconnect stops the cycle that is running: nothing more goes out with the old token, and a reconnect syncs on its own",async()=>{
+  const OLD="github_pat_OLDTOKEN9999"; const hub=fakeHub(); let first=true, release; const gate=new Promise(r=>{ release=r; });
+  hub.before=async(m,p)=>{ if(first&&m==="GET"&&p.includes("/contents/")){ first=false; await gate; } };
+  const store=new Map([[KEY+"-gh",JSON.stringify({owner:"someone",repo:"harf-progress",token:OLD})]]);
+  const t=loadUi({boot:true,pwa:true,fetch:hub.fetch,store}); await tick();
+  const oldReqs=()=>hub.log.filter(q=>q.headers.Authorization==="Bearer "+OLD).length; assert.equal(oldReqs(),1);
+  t.ghForget(); assert.equal(await Promise.race([t.ghConnect(TOKEN,"harf-progress"),tick(30).then(()=>"joined the old run")]),"ok"); assert.ok(hub.files.has("progress.json"));
+  release(); await tick(); assert.equal(oldReqs(),1); assert.equal(t.gh().token,TOKEN); assert.equal(t.savedMsg(),"Synced just now");
+  // and with no reconnect: still nothing more
+  const hub2=fakeHub(); let rel2; const g2=new Promise(r=>{ rel2=r; }); let f2=true; hub2.before=async(m,p)=>{ if(f2&&m==="GET"&&p.includes("/contents/")){ f2=false; await g2; } };
+  const t2=loadUi({boot:true,pwa:true,fetch:hub2.fetch,store:new Map([[KEY+"-gh",CFG]])}); await tick(); const n=hub2.log.length; t2.ghForget(); rel2(); await tick(); assert.equal(hub2.log.length,n); assert.equal(t2.gh(),null);
+});
+test("connect: a failure shows on the panel that is on screen when it ends, never with the token, and clears on the next attempt",async()=>{
+  const hub=fakeHub(); let release; const gate=new Promise(r=>{ release=r; }); hub.before=async(m,p)=>{ if(p==="/user") await gate; }; hub.status["GET user"]=401;
+  const t=loadUi({pwa:true,dom:true,fetch:hub.fetch}); const sec=t.env.rootEl; t.ghPanel(sec);
+  findId(sec,"gh-token").value=TOKEN; const first=findId(sec,"gh-go").onclick();
+  sec.children=[]; t.ghPanel(sec); // the page redraws while Connect is pending
+  assert.equal(findId(sec,"gh-go").disabled,true); assert.equal(findId(sec,"gh-go").textContent,"Connecting…");
+  release(); await first; await tick();
+  assert.equal(findId(sec,"gh-line").textContent,"Sync problem: the token was refused"); assert.equal(findId(sec,"gh-go").disabled,false); assert.equal(findId(sec,"gh-go").textContent,"Connect");
+  assert.ok(!JSON.stringify(sec,(k,v)=>k==="onclick"?undefined:v).includes(TOKEN.slice(4)));
+  sec.children=[]; t.ghPanel(sec); assert.equal(findId(sec,"gh-line").textContent,"Sync problem: the token was refused"); // kept until the next try
+  hub.status={}; hub.before=null; findId(sec,"gh-token").value=TOKEN; await findId(sec,"gh-go").onclick(); assert.ok(t.gh()); assert.ok(t.calls.includes("renderMe"));
+  t.ghForget(); sec.children=[]; t.ghPanel(sec); assert.equal(findId(sec,"gh-line").textContent,"Not set up");
 });
