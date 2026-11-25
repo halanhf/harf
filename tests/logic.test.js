@@ -1045,6 +1045,8 @@ function uiEl(tag){ const e={tag,attrs:{},children:[],parent:null,style:{},hidde
 const walk=n=>typeof n==="string"||!n?[]:[n,...n.children.flatMap(walk)];
 const txt=n=>typeof n==="string"?n:(n._t||"")+n.children.map(txt).join("");
 const byText=(root,t)=>walk(root).find(n=>n.tag==="button"&&txt(n)===t);
+const talkOf=sc=>{ const s=uiEl("div"); s.id="talk"; sc.env.rootEl=s; Object.assign(sc.env,{DIALECT:"Gulf",learnerGender:()=>"",stageLine:()=>"",knownList:()=>""}); return s; };
+const byId=(root,id)=>walk(root).find(n=>n.id===id);
 const press=n=>{ assert.ok(n,"control missing"); n.onclick({currentTarget:n}); };
 const MARKS=/[\u064B-\u0652\u0670]/;
 const UNIT={id:"u1",stage:1,title:"Greetings",goal:"g",tip:"t",
@@ -1060,9 +1062,9 @@ function loadScreens({harakat="auto",stage=1}={}){
     focusView:()=>{ spy.view={body:uiEl("div"),progress(){},alive:()=>true}; return spy.view; },focusCard(){},announce(){},buzz(){},stopAudio(){},keepAwake(){},
     sched:c=>c,touchDay(){},logActivity(){},addSentenceCards(){},show(){},refresh(){},heatmap:()=>uiEl("div"),forecastBars:()=>uiEl("div"),savedMsg:()=>"",
     STAGE_NAMES:[],stageInfo:()=>({}),shownStreak:()=>0,lessonsDone:()=>0,standalone:()=>false,ghPanel(){},installEvt:null,cleanIn:x=>x,DAY:86400000,SAMPLE:null,micBlocked:false,SR:null,DB:null,GH:null});
-  vm.runInContext("var enVoice=null, TTS=null; let keyHandler=null;",env);
+  vm.runInContext("var enVoice=null, TTS=null, chatLog=[], generating=false, DICT=null; let keyHandler=null;",env);
   for(const s of [cut("const ap=","const SVG="),cut("let ITEMS={}","function rebuild"),cut("const liveCards=","const lessonsDone"),
-      cut("const harOn=","\n"),cut("const bigAr=","\n"),cut("function openLesson","// ===== role-play"),cut("function roleplay(","// ===== review tab"),cut("function renderStory","// ===== progress"),cut("function startReview","// ===== hands-free"),cut("function audioDrill","// ===== course"),cut("function renderMe","// ===== boot")])
+      cut("const harOn=","\n"),cut("const bigAr=","\n"),cut("function openLesson","// ===== role-play"),cut("function roleplay(","// ===== review tab"),cut("let talkMode=","// ===== progress"),cut("function startReview","// ===== hands-free"),cut("function audioDrill","// ===== course"),cut("function renderMe","// ===== boot")])
     vm.runInContext(s,env);
   const items={}, unitOf={}; UNIT.items.forEach((it,i)=>{ items["u1."+i]=Object.assign({id:"u1."+i,unit:"u1",stage:1},it); unitOf["u1."+i]="u1"; });
   const s0=Object.assign({id:"u1.s0",unit:"u1",stage:"s1",sentence:true},UNIT.items[3]); items["u1.s0"]=s0; unitOf["u1.s0"]="u1";
@@ -1222,4 +1224,25 @@ test("guard: no screen the harness can reach shows a bare null or undefined",asy
   sc.t.S().cards={"u1.1":sc.card(-1,3,6)}; env.audioDrill(); check("drill");
   const me=uiEl("div"); me.id="me"; env.rootEl=me; sc.t.S().cards["u1.1"]=Object.assign(sc.card(-1,3,6),{l:5}); env.renderMe(); if(junk(me).length) seen.push("progress: "+junk(me));
   assert.deepEqual(seen,[]);
+});
+
+test("typing boxes: chat and sentence boxes follow the text's direction with autocorrect and autocapitalise off, as attributes; the topic box follows direction",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); sc.env.SAMPLE={json:async()=>({english:"I want coffee",hint:"abi"})};
+  const want={dir:"auto",autocapitalize:"off",autocorrect:"off",spellcheck:"false"}, has=(n)=>Object.fromEntries(Object.keys(want).map(k=>[k,n.attrs[k]]));
+  sc.env.renderTalk(); assert.deepEqual(has(byId(sec,"chat-input")),want);
+  vm.runInContext('talkMode="practice"',sc.env); sc.env.renderTalk(); await tick(); assert.deepEqual(has(byId(sec,"practice-input")),want);
+  sc.env.generateUnit(6,null,()=>{}); const topic=byId(sc.spy.view.body,"topic-input"); assert.equal(topic.attrs.dir,"auto"); assert.equal(topic.attrs.autocorrect,undefined);
+});
+test("redraw: a chat draft survives the Talk tab being drawn again, and sending clears it",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); sc.env.SAMPLE={json:()=>new Promise(()=>{})};
+  sc.env.renderTalk(); const inp=byId(sec,"chat-input"); inp.value="شلونك"; inp.oninput();
+  sc.env.renderTalk(); assert.equal(byId(sec,"chat-input").value,"شلونك");
+  walk(sec).find(n=>n.tag==="form").onsubmit({preventDefault(){}}); sc.env.renderTalk(); assert.equal(byId(sec,"chat-input").value,"");
+});
+test("redraw: sentence practice keeps its sentence, your answer and your tries, and asks for no new sentence",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); let asks=0, give; sc.env.SAMPLE={json:()=>{ asks++; return new Promise(r=>{ give=r; }); }};
+  vm.runInContext('talkMode="practice"',sc.env); sc.env.renderTalk(); sc.env.renderTalk(); // redrawn while the sentence is still coming
+  give({english:"I want coffee",hint:"abi"}); await tick(); assert.equal(asks,1); assert.ok(texts(sec).includes("I want coffee"));
+  const inp=byId(sec,"practice-input"); inp.value="ابي قهوة"; inp.oninput(); sc.env.renderTalk(); await tick();
+  assert.equal(asks,1); assert.ok(texts(sec).includes("I want coffee")); assert.equal(byId(sec,"practice-input").value,"ابي قهوة");
 });

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-tlmomW+XNOmKXu34A7L9hS9+tcQ66w+uAM7lTV4QnlQ=' 'sha256-EbwLWdA86BG25Ox1XZjTitQcAiH680As906AF4rERgE=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-tlmomW+XNOmKXu34A7L9hS9+tcQ66w+uAM7lTV4QnlQ=' 'sha256-Y5m96fxVo99k9rFP54KNTJjkpIsoMRChqrIXGFeeE+g=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -2360,6 +2360,8 @@ const ap=(p,...kids)=>{ for(const k of kids.flat(Infinity)) if(k!=null&&k!==fals
 const el=(tag,props,...kids)=>{ const e=document.createElement(tag);
   if(props) for(const [k,v] of Object.entries(props)){ if(v==null) continue; if(k==="style"||k.includes("-")) e.setAttribute(k,v); else e[k]=v; }
   return ap(e,...kids); };
+// a box you type into: follows the text's direction, no autocorrect or auto-capital (set as attributes, like ghPanel)
+const typingBox=i=>{ i.setAttribute("dir","auto"); i.setAttribute("autocapitalize","off"); i.setAttribute("autocorrect","off"); i.setAttribute("spellcheck","false"); return i; };
 const arSpan=(t,cls)=>el("span",{className:"ar"+(cls?" "+cls:""),lang:"ar",textContent:t});
 const SVG={today:'<path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>',
   review:'<path d="M20 12a8 8 0 1 1-2.4-5.7"/><path d="M20 4v5h-5"/>',
@@ -3309,6 +3311,7 @@ Transliteration (one scheme, always): long vowels ā ī ū; Gulf ē ō for ay/aw
 const learnerGender=()=>S.settings.gender==="f"?"The learner is a woman: address her with feminine forms (-ich, t-…-īn) throughout.":S.settings.gender==="m"?"The learner is a man: address him with masculine forms (-ak).":"Address the learner with masculine forms (-ak) unless they say they are a woman or use feminine forms about themselves (āsfa, ṭālba, rāyḥa); from then on use -ich / -īn forms.";
 const stageLine=()=>`Learner stage: ${currentStage()} of 5 (${STAGE_NAMES[currentStage()]}).`;
 let talkMode="chat";
+let chatDraft="", practiceQ=null, practiceAsk=null, practiceDraft="", practiceTries=0; // kept across redraws of the Talk tab
 function renderTalk(){
   const sec=$("#talk"); sec.textContent="";
   if(!SAMPLE){ sec.append(el("h2",{textContent:"Talk"}),el("p",{className:"lede",textContent:"The conversation partner, sentence practice and stories need the claude.ai version of this page. Lessons, reviews, role-play and drills all work here."})); return; }
@@ -3335,7 +3338,7 @@ function renderChat(sec){
   const add=(cls,...kids)=>{ const m=el("div",{className:"msg "+cls},...kids); chat.append(m); return m; };
   const renderReply=(m,r,userText)=>{ m.textContent=""; ap(m,arSpan(String(r.arabic||"")),el("span",{className:"tr",style:"display:block",textContent:String(r.translit||"")}),el("span",{textContent:String(r.english||"")}));
     if(r.correction){ const fix=el("span",{className:"fix",hidden:true,textContent:String(r.correction)});
-      const row=el("span",{className:"row",style:"margin-top:6px"},el("button",{className:"btn small",type:"button",textContent:"Try again",onclick:()=>{ inp.value=userText||""; inp.focus(); }}),el("button",{className:"btn small ghost",type:"button",textContent:"Show the Gulf version",onclick:e=>{ fix.hidden=false; e.currentTarget.remove(); }}));
+      const row=el("span",{className:"row",style:"margin-top:6px"},el("button",{className:"btn small",type:"button",textContent:"Try again",onclick:()=>{ inp.value=chatDraft=userText||""; inp.focus(); }}),el("button",{className:"btn small ghost",type:"button",textContent:"Show the Gulf version",onclick:e=>{ fix.hidden=false; e.currentTarget.remove(); }}));
       ap(m,el("span",{className:"fix",textContent:"Something to fix: "+String(r.hint||"have another look at your Arabic.")}),row,fix); }
     const row=el("div",{className:"row",style:"margin-top:6px"},playBtn(String(r.arabic||""),"Hear")); m.append(row);
     (Array.isArray(r.new_words)?r.new_words:[]).slice(0,4).forEach(w=>{ if(!w||typeof w.ar!=="string"||typeof w.en!=="string") return;
@@ -3343,10 +3346,10 @@ function renderChat(sec){
   const fem=S.settings.gender==="f";
   if(!chatLog.length) add("",arSpan(fem?"هلا والله! شلونج اليوم؟":"هلا والله! شلونك اليوم؟"),el("span",{className:"tr",style:"display:block",textContent:fem?"hala wallāh! shlōnich il-yōm?":"hala wallāh! shlōnak il-yōm?"}),el("span",{textContent:"Hi there! How are you today?"}));
   chatLog.forEach((m,i)=>{ if(m.role==="user") add("me",el("span",{textContent:m.content})); else renderReply(add(""),m.r,(chatLog[i-1]||{}).content); });
-  const inp=el("textarea",{id:"chat-input",placeholder:"زين الحمد لله … or: how do I say I'm tired?","aria-label":"your message"});
+  const inp=typingBox(el("textarea",{id:"chat-input",placeholder:"زين الحمد لله … or: how do I say I'm tired?","aria-label":"your message"})); inp.value=chatDraft; inp.oninput=()=>{ chatDraft=inp.value; };
   const send=el("button",{className:"btn primary",type:"submit",textContent:"Send"});
   const form=el("form",{className:"compose"},inp,dictateBtn(inp),send); sec.append(form);
-  form.onsubmit=async e=>{ e.preventDefault(); const text=inp.value.trim().slice(0,500); if(!text||send.disabled) return; inp.value=""; send.disabled=true;
+  form.onsubmit=async e=>{ e.preventDefault(); const text=inp.value.trim().slice(0,500); if(!text||send.disabled) return; inp.value=""; chatDraft=""; send.disabled=true;
     add("me",el("span",{textContent:text})); chatLog.push({role:"user",content:text}); const wait=add("",el("span",{className:"tr",textContent:"…"}));
     const prompt=`You are a warm, patient conversation partner helping an English speaker learn ${DIALECT}
 ${stageLine()} Words they already know: ${knownList(120)||"almost none yet"}.
@@ -3358,7 +3361,7 @@ Conversation so far:
 ${chatLog.slice(-12).map(m=>(m.role==="user"?"Learner: ":"Partner: ")+(m.role==="user"?m.content:m.r.arabic)).join("\n")}`;
     try{ const r=await SAMPLE.json(prompt,{modelTier:"default",cache:false}); if(!r||typeof r!=="object") throw new Error("bad");
       chatLog.push({role:"assistant",r}); renderReply(wait,r,text); S.talks=(S.talks||0)+1; touchDay(); logActivity(1); save(); }
-    catch(err){ chatLog.pop(); wait.remove(); chat.lastChild&&chat.lastChild.remove(); inp.value=text;
+    catch(err){ chatLog.pop(); wait.remove(); chat.lastChild&&chat.lastChild.remove(); inp.value=chatDraft=text;
       add("",el("span",{className:"feedback no",textContent:err&&err.code==="rate_limited"?"Too many messages at once. Wait a minute and send again.":"Your partner couldn't answer that. Your message is back in the box: try sending again."})); }
     send.disabled=false; };
 }
@@ -3367,23 +3370,26 @@ function renderPractice(sec){
   sec.append(el("p",{className:"lede",textContent:"You get an English sentence built from words you know. Write or say it in Gulf Arabic. If it's off, you get a hint and one more try before the answer."}));
   const box=el("div",{className:"stack"}); sec.append(box);
   const ask=async()=>{
-    box.textContent=""; box.append(el("p",{className:"tag",textContent:"Thinking of a sentence…"}));
+    box.textContent="";
     try{
-      const q=await SAMPLE.json(`Give an English-speaking learner a sentence to translate into the dialect below.
+      let q=practiceQ;
+      if(!q){ box.append(el("p",{className:"tag",textContent:"Thinking of a sentence…"}));
+        q=await (practiceAsk||(practiceAsk=SAMPLE.json(`Give an English-speaking learner a sentence to translate into the dialect below.
 Dialect: ${DIALECT}
 Stage ${currentStage()} (${STAGE_NAMES[currentStage()]}). Known words: ${knownList(120)||"basic greetings"}.
 Write ONE short English sentence (4-10 words) they can translate using mostly those words, combining at least two of them in a new way, in a situation natural in the UAE or Kuwait. If it says "you", add who is addressed in brackets: (to a man) or (to a woman).
-Return ONLY JSON: {"english": the sentence, "hint": one short hint in English naming a word or pattern to use}`,{modelTier:"default",cache:false});
-      if(!box.isConnected) return; box.textContent=""; let tries=0;
-      const inp=el("textarea",{id:"practice-input",placeholder:"اكتب هنا … or transliteration","aria-label":"your translation"});
+Return ONLY JSON: {"english": the sentence, "hint": one short hint in English naming a word or pattern to use}`,{modelTier:"default",cache:false}).then(r=>{ practiceQ=r; practiceAsk=null; return r; },e=>{ practiceAsk=null; throw e; })));
+      }
+      if(!box.isConnected) return; box.textContent="";
+      const inp=typingBox(el("textarea",{id:"practice-input",placeholder:"اكتب هنا … or transliteration","aria-label":"your translation"})); inp.value=practiceDraft; inp.oninput=()=>{ practiceDraft=inp.value; };
       const go=el("button",{className:"btn primary",type:"button",textContent:"Check"}); const res=el("div",{className:"stack",role:"status"});
       box.append(el("div",{className:"stage",style:"padding-bottom:16px"},el("p",{className:"mode",textContent:"Say it in Gulf Arabic"}),el("p",{className:"en",textContent:String(q.english||"")}),
         el("details",{},el("summary",{textContent:"Hint"}),el("p",{className:"tag",textContent:String(q.hint||"")})),el("div",{className:"compose",style:"width:100%"},inp,dictateBtn(inp)),go),res);
       const full=(r,v)=>{ res.textContent=""; ap(res,el("div",{className:"stage"},el("p",{className:"feedback "+(v==="correct"?"ok":"no"),textContent:v==="correct"?"Correct":v==="close"?"Close":"Not quite"}),
         r.best?arSpan(String(r.best.ar||""),"mid"):null,r.best?el("p",{className:"tr",textContent:String(r.best.tr||"")}):null,el("p",{textContent:String(r.explanation||"")}),
         el("div",{className:"row center"},r.best?playBtn(String(r.best.ar||"")):null,r.best?el("button",{className:"btn small",type:"button",textContent:"+ Add to my cards",onclick:e=>{ addCustom({ar:r.best.ar,tr:r.best.tr,en:q.english}); e.currentTarget.disabled=true; e.currentTarget.textContent="Added"; }}):null),
-        el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Next sentence",onclick:ask})))); };
-      go.onclick=async()=>{ const a=inp.value.trim().slice(0,300); if(!a||go.disabled) return; go.disabled=true; tries++; res.textContent=""; res.append(el("p",{className:"tag",textContent:"Checking…"}));
+        el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Next sentence",onclick:()=>{ practiceQ=practiceAsk=null; practiceDraft=""; practiceTries=0; ask(); }})))); };
+      go.onclick=async()=>{ const a=inp.value.trim().slice(0,300); if(!a||go.disabled) return; go.disabled=true; practiceTries++; res.textContent=""; res.append(el("p",{className:"tag",textContent:"Checking…"}));
         try{
           const r=await SAMPLE.json(`A learner of the dialect below was asked to translate: "${q.english}". They wrote: "${a}".
 Dialect: ${DIALECT}
@@ -3393,10 +3399,10 @@ Judge it as a friendly Gulf Arabic teacher. Accept any natural Gulf phrasing (Em
 "best" stays as close to the learner's own wording as possible.
 Return ONLY JSON: {"verdict": "correct" | "close" | "wrong", "hint": one short English hint that points at what to fix WITHOUT giving the corrected words, "best": {"ar": a natural Gulf version in Arabic script, "tr": its transliteration}, "explanation": 1-2 short sentences in English on what to change and why (or why it's good)}`,{modelTier:"default",cache:false});
           go.disabled=false; const v=String(r.verdict||""); touchDay(); logActivity(1); save();
-          if(v==="correct"||tries>=2){ go.remove(); full(r,v); return; }
+          if(v==="correct"||practiceTries>=2){ go.remove(); full(r,v); return; }
           res.textContent=""; ap(res,el("p",{className:"feedback no",textContent:(v==="close"?"Close. ":"Not quite. ")+String(r.hint||"Have another look.")}),
             el("div",{className:"row"},el("button",{className:"btn small",type:"button",textContent:"Try again",onclick:()=>{ inp.focus(); res.textContent=""; }}),el("button",{className:"btn small ghost",type:"button",textContent:"Show the answer",onclick:()=>{ go.remove(); full(r,v); }})));
-        }catch(err){ res.textContent=""; res.append(el("p",{className:"feedback no",textContent:"Couldn't check that just now. Try again."})); go.disabled=false; tries--; }
+        }catch(err){ res.textContent=""; res.append(el("p",{className:"feedback no",textContent:"Couldn't check that just now. Try again."})); go.disabled=false; practiceTries--; }
       };
     }catch(err){ box.textContent=""; box.append(el("p",{className:"feedback no",textContent:err&&err.code==="rate_limited"?"Too many requests. Try again in a minute.":"Couldn't think of a sentence. Try again."}),el("button",{className:"btn",type:"button",textContent:"Try again",onclick:ask})); }
   };
@@ -3439,7 +3445,7 @@ async function generateUnit(stage,topic,then){
   const f=focusView({title:"Writing your next lesson",onClose:()=>{ generating=false; show(currentTab); }});
   try{
     let chosen=topic;
-    if(!chosen){ const inp=el("input",{type:"text",id:"topic-input",placeholder:"e.g. buying a car, my favourite food, a trip to Dubai","aria-label":"topic"});
+    if(!chosen){ const inp=el("input",{type:"text",id:"topic-input",placeholder:"e.g. buying a car, my favourite food, a trip to Dubai","aria-label":"topic"}); inp.setAttribute("dir","auto");
       const go=el("button",{className:"btn primary",type:"button",textContent:"Write it"});
       f.body.append(el("p",{className:"lede",textContent:"You're past the planned stages. Pick any topic and the lesson is built around what you already know."}),el("div",{className:"compose"},inp,go));
       await new Promise(res=>{ go.onclick=()=>{ if(inp.value.trim()){ chosen=inp.value.trim().slice(0,80); res(); } }; });
