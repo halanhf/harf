@@ -1033,7 +1033,9 @@ test("harakat: the vowelled form is display-only: no audio, speech, matching or 
 // the screens themselves, run against a small fake dom with the audio and checking calls recorded
 function uiEl(tag){ const e={tag,attrs:{},children:[],parent:null,style:{},hidden:false,className:"",
   setAttribute(k,v){ e.attrs[k]=String(v); },
-  append(...k){ for(const c of k){ if(c&&typeof c==="object") c.parent=e; e.children.push(c); } },
+  isConnected:true,
+  // like the browser: a node is added as it is, anything else (null, undefined, false, a number) becomes a text node of its string form
+  append(...k){ for(const c of k){ if(c&&typeof c==="object") c.parent=e; e.children.push(c&&typeof c==="object"?c:String(c)); } },
   remove(){ if(e.parent) e.parent.children=e.parent.children.filter(x=>x!==e); e.parent=null; },
   contains(n){ return n===e||e.children.some(c=>c&&typeof c==="object"&&c.contains(n)); },
   classList:{add:c=>{ e.className=(e.className+" "+c).trim(); },remove:c=>{ e.className=e.className.split(/\s+/).filter(x=>x&&x!==c).join(" "); },contains:c=>e.className.split(/\s+/).includes(c)},
@@ -1060,7 +1062,7 @@ function loadScreens({harakat="auto",stage=1}={}){
     STAGE_NAMES:[],stageInfo:()=>({}),shownStreak:()=>0,lessonsDone:()=>0,standalone:()=>false,ghPanel(){},installEvt:null,cleanIn:x=>x,DAY:86400000,SAMPLE:null,micBlocked:false,SR:null,DB:null,GH:null});
   vm.runInContext("var enVoice=null, TTS=null; let keyHandler=null;",env);
   for(const s of [cut("const ap=","const SVG="),cut("let ITEMS={}","function rebuild"),cut("const liveCards=","const lessonsDone"),
-      cut("const harOn=","\n"),cut("const bigAr=","\n"),cut("function openLesson","// ===== role-play"),cut("function roleplay(","// ===== review tab"),cut("function startReview","// ===== hands-free"),cut("function audioDrill","// ===== course"),cut("function renderMe","// ===== boot")])
+      cut("const harOn=","\n"),cut("const bigAr=","\n"),cut("function openLesson","// ===== role-play"),cut("function roleplay(","// ===== review tab"),cut("function renderStory","// ===== progress"),cut("function startReview","// ===== hands-free"),cut("function audioDrill","// ===== course"),cut("function renderMe","// ===== boot")])
     vm.runInContext(s,env);
   const items={}, unitOf={}; UNIT.items.forEach((it,i)=>{ items["u1."+i]=Object.assign({id:"u1."+i,unit:"u1",stage:1},it); unitOf["u1."+i]="u1"; });
   const s0=Object.assign({id:"u1.s0",unit:"u1",stage:"s1",sentence:true},UNIT.items[3]); items["u1.s0"]=s0; unitOf["u1.s0"]="u1";
@@ -1176,4 +1178,48 @@ test("harakat: the memory-aid prompt for a tricky card is built from the plain s
   const sc=loadScreens({harakat:"always",stage:1}); const me=uiEl("div"); me.id="me"; sc.env.rootEl=me; sc.t.S().cards["u1.1"]=Object.assign(sc.card(-1,3,6),{l:5});
   const asked=[]; sc.env.DIALECT="Gulf Arabic"; sc.env.SAMPLE={json:(q)=>{ asked.push(q); return new Promise(()=>{}); }}; sc.env.renderMe();
   press(byText(me,"Help me remember")); assert.equal(asked.length,1); assert.ok(asked[0].includes('"شلونك"')); assert.ok(!MARKS.test(asked[0]));
+});
+
+// native append() prints the text "null" for a null child: lessons, review answers and stories must never show that
+const texts=root=>{ const out=[]; const go=n=>{ if(typeof n==="string") out.push(n); else if(n){ if(n._t) out.push(n._t); n.children.forEach(go); } }; go(root); return out; };
+const junk=root=>texts(root).filter(t=>/^\s*(null|undefined|false|true)\s*$/.test(t));
+const gulfRow=gulf=>({id:"m.0",unit:"msa",stage:"msa",msaTrack:true,ar:"ماء",tr:"maa",en:"water",gulf});
+const msaAnswer=gulf=>{ const sc=loadScreens({harakat:"never",stage:3}); sc.items["m.0"]=gulfRow(gulf); return reviewOf(sc,"m.0",sc.card(0,0,0)); };
+test("a lesson without grammar or culture shows no stray null text, and still shows title, tip and dialogue",()=>{
+  const sc=loadScreens({harakat:"never"}); sc.env.openLesson(UNIT); const body=sc.spy.view.body, all=texts(body);
+  assert.deepEqual(junk(body),[]);
+  assert.ok(all.includes("Greetings")&&all.includes("Tip: t"),all.join("|"));
+  assert.ok(!all.some(t=>/^(Grammar|Culture):/.test(t)));
+  assert.deepEqual(sc.shown(body),["شلونك","زين"]);
+});
+test("a lesson with grammar and culture shows the Grammar chip and the Culture note",()=>{
+  const sc=loadScreens(); sc.env.openLesson(Object.assign({},UNIT,{grammar:"past tense",culture:"Greet first"})); const body=sc.spy.view.body, all=texts(body);
+  assert.deepEqual(junk(body),[]); assert.ok(all.includes("Grammar: past tense")&&all.includes("Culture: Greet first")&&all.includes("Tip: t"),all.join("|"));
+});
+test("a fuṣḥā review answer shows no null text, whatever the gulf field holds",()=>{
+  for(const g of ["","  ","G?","M x","nonsense"]){ const body=msaAnswer(g); assert.deepEqual(junk(body),[],JSON.stringify(g)); assert.ok(!texts(body).some(t=>/^Gulf speech/.test(t))); assert.ok(texts(body).includes("water")); }
+  assert.ok(texts(msaAnswer("G=")).includes("Gulf speech uses this word too."));
+  assert.ok(texts(msaAnswer("G~ maay")).includes("Gulf speech says it: maay"));
+  const m=msaAnswer("M مي maay"); assert.deepEqual(junk(m),[]); assert.ok(texts(m).includes("Gulf speech uses ")&&texts(m).includes("maay")&&texts(m).includes(" instead."),texts(m).join("|"));
+});
+test("the AI story shows no null text for a plain story and the fuṣḥā chip only for a fuṣḥā one",async()=>{
+  for(const [rand,chip] of [[0.9,false],[0.1,true]]){
+    const sc=loadScreens({stage:3}); vm.runInContext("Math.random=()=>"+rand,sc.env); sc.env.DIALECT="Gulf Arabic"; sc.env.knownList=()=>"";
+    sc.env.SAMPLE={json:async()=>({title:"The market",lines:[{ar:"هلا",tr:"hala",en:"hi"}],question:{q:"Who?",options:["a","b","c"],answer:"a"},new_words:[]})};
+    const sec=uiEl("div"); sc.env.renderStory(sec); press(byText(sec,"Write me a story")); await tick();
+    const all=texts(sec); assert.ok(all.includes("The market"),all.join("|")); assert.deepEqual(junk(sec),[]);
+    assert.equal(all.some(t=>/^Fuṣḥā story/.test(t)),chip);
+  }
+});
+test("guard: no screen the harness can reach shows a bare null or undefined",async()=>{
+  const sc=loadScreens({harakat:"always",stage:3}); const {env,spy}=sc, seen=[];
+  const check=what=>{ const j=junk(spy.view.body); if(j.length) seen.push(what+": "+j); };
+  env.openLesson(UNIT); check("lesson 1"); press(byText(spy.view.body,"Learn the phrases →")); check("lesson 2");
+  for(let k=0;k<4;k++){ press(byText(spy.view.body,k<3?"Next →":"Quick check →")); check("lesson step "+k); }
+  env.roleplay(UNIT); check("role-play A"); press(byText(spy.view.body,"Your turn →")); check("role-play B");
+  for(const card of [sc.card(0,0,0),sc.card(1,2,3),sc.card(2,3,5),sc.card(-1,3,6)]) for(const id of ["u1.1","u1.3","u1.s0"]){ sc.t.S().cards[id]=card; env.startReview(null); check("review "+id+" "+JSON.stringify(card)); }
+  sc.items["m.0"]=gulfRow("G="); sc.t.S().cards={"m.0":sc.card(0,0,0)}; env.startReview(null); check("review msa");
+  sc.t.S().cards={"u1.1":sc.card(-1,3,6)}; env.audioDrill(); check("drill");
+  const me=uiEl("div"); me.id="me"; env.rootEl=me; sc.t.S().cards["u1.1"]=Object.assign(sc.card(-1,3,6),{l:5}); env.renderMe(); if(junk(me).length) seen.push("progress: "+junk(me));
+  assert.deepEqual(seen,[]);
 });
