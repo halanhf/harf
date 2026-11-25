@@ -163,13 +163,41 @@ test("data: every course unit is well formed (5-9 phrases, 3-10 dialogue lines) 
     assert.ok(u.title&&u.goal&&u.tip,u.id);
     assert.ok(u.items.length>=5&&u.items.length<=9,`${u.id} has ${u.items.length} items`);
     assert.ok(u.dialogue.length>=3&&u.dialogue.length<=10,u.id);
-    for(const l of u.dialogue){ assert.equal(l.length,4,u.id); assert.ok(["A","B"].includes(l[0])); assert.match(l[1],/[ء-ي]/); }
-    for(const it of u.items){ assert.equal(it.length,5,`${u.id} ${it[0]}`); assert.match(it[0],/[ء-ي]/); assert.ok(it[1]&&it[2]);
+    // stages 1-2 rows may carry a vowelled form as their last element; later stages never do
+    for(const l of u.dialogue){ assert.ok(u.stage<=2?(l.length===4||l.length===5):l.length===4,u.id); assert.ok(["A","B"].includes(l[0])); assert.match(l[1],/[ء-ي]/);
+      if(l.length===5) assert.ok(typeof l[4]==="string"&&l[4].trim(),u.id); }
+    for(const it of u.items){ assert.ok(u.stage<=2?(it.length===5||it.length===6):it.length===5,`${u.id} ${it[0]}`); assert.match(it[0],/[ء-ي]/); assert.ok(it[1]&&it[2]);
+      if(it.length===6) assert.ok(typeof it[5]==="string"&&it[5].trim(),`${u.id} ${it[0]}`);
       const k=L.normalizeArabic(it[0]); assert.ok(!seen.has(k),`duplicate phrase ${it[0]}`); seen.add(k); }
     // the converted unit passes the same check ai lessons must pass
     const conv={title:u.title,goal:u.goal,tip:u.tip,dialogue:u.dialogue.map(([who,ar,tr,en])=>({who,ar,tr,en})),items:u.items.map(([ar,tr,en,msa])=>({ar,tr,en,msa}))};
     assert.deepEqual([...L.validateUnit(conv)],[],u.id);
   }
+});
+test("data: stage 1-2 vowelled forms strip back to the Arabic and tile one-to-one with it",()=>{
+  for(const u of D.COURSE){
+    const rows=[...u.dialogue.map(l=>[l[1],l[4]]),...u.items.map(it=>[it[0],it[5]])];
+    for(const [ar,v] of rows){
+      if(v===undefined) continue;
+      assert.equal(L.normalizeArabic(v),L.normalizeArabic(ar),`${u.id} ${ar}`);
+      const ta=L.tilesOf(ar), tv=L.tilesOf(v);
+      assert.equal(tv.length,ta.length,`${u.id} ${ar}`);
+      tv.forEach((t,i)=>assert.equal(L.normalizeArabic(t),L.normalizeArabic(ta[i]),`${u.id} ${ar}`));
+    }
+  }
+});
+test("harakat: auto follows the learner's current stage, always and never override it",()=>{
+  for(const s of [0,1,2]) assert.equal(L.showHarakat("auto",s),true);
+  for(const s of [3,6]) assert.equal(L.showHarakat("auto",s),false);
+  assert.equal(L.showHarakat("always",4),true);
+  assert.equal(L.showHarakat("never",1),false);
+  assert.equal(L.showHarakat("junk",1),true);
+});
+test("harakat: the vowelled form is shown only when marks are on, and only if the row has one",()=>{
+  assert.equal(L.shownAr({ar:"ريّال",arv:"رَيَّالْ"},true),"رَيَّالْ");
+  assert.equal(L.shownAr({ar:"ريّال",arv:"رَيَّالْ"},false),"ريّال");
+  assert.equal(L.shownAr({ar:"زين"},true),"زين");
+  assert.equal(L.shownAr({ar:"زين",arv:""},true),"زين");
 });
 test("data: the course runs stage by stage in teaching order; pairs and fuṣḥā list are well formed",()=>{
   let last=1; const ids=new Set();
