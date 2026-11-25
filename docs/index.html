@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-5mfrMZwl0We17ExkKRei3bOM5LvSdCL2YuhrO6JAzWQ=' 'sha256-QLDDme5kr7NmHN1UH28NFTWNlzF44FTdth6Z2JYkOmk=' 'sha256-8dYiRBlb1s2/5av6oPPwCCQ8D6e0H0ztK+tM2ni5JZM=' 'sha256-vp9yiuNVlFlgqmBK0iLBTlFGjpvCVGY5xQ5q7LnFcr8='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-5mfrMZwl0We17ExkKRei3bOM5LvSdCL2YuhrO6JAzWQ=' 'sha256-FKgE0Yxi8W558bnU4rkLJWRY0dx/KrOPPRnqpKPUlpQ=' 'sha256-wGj1hy+s5yb2+O2Qsea7szfOe7emsRuoS/9jmb9leHU=' 'sha256-vp9yiuNVlFlgqmBK0iLBTlFGjpvCVGY5xQ5q7LnFcr8='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -2288,7 +2288,7 @@ function ghApi(cfg,fetchFn){
   }
   return {
     async user(){ const r=await call("user","/user","GET"); return r.kind!=="ok"?{kind:r.kind}:typeof r.j.login==="string"?{kind:"ok",login:r.j.login}:{kind:"server"}; },
-    async get(path,keepalive){ const r=await call("read",repo+encodeURIComponent(path),"GET"); if(r.kind!=="ok") return {kind:r.kind}; const j=r.j;
+    async get(path,keepalive){ const r=await call("read",repo+encodeURIComponent(path),"GET",undefined,keepalive); if(r.kind!=="ok") return {kind:r.kind}; const j=r.j;
       if(typeof j.sha!=="string"||!j.sha||typeof j.content!=="string"||(j.content===""&&j.size>0)) return {kind:"bad"};
       try{ return {kind:"ok",sha:j.sha,text:b64dec(j.content)}; }catch(e){ return {kind:"bad"}; } },
     async put(path,text,sha,keepalive){ const body={message:"harf sync",content:b64enc(text)}; if(sha) body.sha=sha;
@@ -2304,10 +2304,10 @@ async function ghCycle(api,local,mem,opts){
   for(let att=0;att<3;att++){
     let listed={}; const gone=new Set();
     if(!(opts.replace&&att===0)){
-      const m=await api.get(GH_META); if(m.kind!=="ok"&&m.kind!=="missing") return end(m.kind);
+      const m=await api.get(GH_META,opts.keepalive); if(m.kind!=="ok"&&m.kind!=="missing") return end(m.kind);
       let meta=null; if(m.kind==="ok"){ meta=parse(m.text); if(!isObj(meta)||(meta.shards!==undefined&&!isObj(meta.shards))) return end("bad"); }
       listed=meta&&isObj(meta.shards)?meta.shards:{};
-      const need=ghNeed(listed,w.sha,force), rs=await Promise.all(need.map(n=>api.get(ghFile(n)))), files={};
+      const need=ghNeed(listed,w.sha,force), rs=await Promise.all(need.map(n=>api.get(ghFile(n),opts.keepalive))), files={};
       for(let i=0;i<need.length;i++){ const r=rs[i]; if(r.kind==="missing"){ gone.add(need[i]); continue; } if(r.kind!=="ok") return end(r.kind);
         const f=parse(r.text); if(!isObj(f)||(f.cards!==undefined&&!isObj(f.cards))) return end("bad"); files[need[i]]=f; }
       // every answer is in: only now merge and note what was read
@@ -2405,7 +2405,7 @@ if(unreadable){ const n=$("#sync-note"); n.hidden=false; n.textContent="Saved pr
 function setSync(state,msg){ sync.state=state; sync.msg=msg; const n=$("#sync-note");
   if(state==="error"){ n.hidden=false; n.textContent=msg+" Your progress is still safe in this browser and will sync when it can."; } else if(!localFail) n.hidden=true; }
 const syncError=e=>{ const c=e&&e.code; return c==="quota_exceeded"?"Account storage is full.":c==="not_granted"||c==="forbidden"||c==="permission_denied"?"This page isn't allowed to save to your account.":`Couldn't save to your account${c?" ("+c+")":""}.`; };
-function save(){ S.updatedAt=Date.now(); persistLocal(); if(synced){ clearTimeout(saveTimer); saveTimer=setTimeout(pushRemote,1500); } }
+function save(){ S.updatedAt=Date.now(); persistLocal(); if(GH){ ghDirty=true; ghSync("save"); } if(synced){ clearTimeout(saveTimer); saveTimer=setTimeout(pushRemote,1500); } }
 const progressRef=()=>DB.doc(`data/users/${UID}/progress`);
 const shardRef=n=>DB.doc(`data/users/${UID}/cards_${n}`);
 // what this browser last read or wrote for each card group, so unchanged groups aren't fetched or rewritten
@@ -2448,7 +2448,7 @@ function pushRemote(opts){
   })();
   return pushing.then(()=>{ pushing=null; if(replaceNext){ replaceNext=false; pushAgain=false; return pushRemote({replace:true}); } if(pushAgain){ pushAgain=false; return pushRemote(); } });
 }
-const flush=opts=>{ persistLocal(); return pushRemote(opts); };
+const flush=opts=>{ persistLocal(); return GH?ghSync(opts?"manual":"save",opts):pushRemote(opts); };
 function saveGenUnit(u){
   try{ localStorage.setItem(KEY+"-gen",JSON.stringify(S.gen)); }catch(e){}
   if(DB&&UID) progressRef().collection("units").doc(u.id).set(u).catch(()=>{});
@@ -2474,10 +2474,72 @@ async function setupSync(){
 }
 // another tab or window of this app saved: merge its work in, so this tab's next save can't overwrite it.
 // merged in memory only (no write back), so two tabs never answer each other's saves in a loop
-addEventListener("storage",e=>{ if(e.key!==KEY||!e.newValue) return;
+addEventListener("storage",e=>{
+  if(e.key===KEY+"-gh"){ ghLoad(); if(!GH) ghForget(); else{ ghMem={sha:{},body:{}}; ghHalted=false; ghDirty=true; } if(!busy) RENDER[currentTab](); return; }
+  if(e.key!==KEY||!e.newValue) return;
   try{ const before=sig(S), gen=S.gen; S=hydrate(mergeProgress(serialize(),cleanIn(JSON.parse(e.newValue)))); S.gen=gen; if(sig(S)!==before) afterRemoteChange(); }catch(x){} });
-document.addEventListener("visibilitychange",()=>{ if(synced) pushRemote(); });
-addEventListener("pagehide",()=>{ if(synced) pushRemote(); });
+document.addEventListener("visibilitychange",()=>{ if(synced) pushRemote(); ghSync(document.visibilityState==="hidden"?"hide":"show"); });
+addEventListener("pagehide",()=>{ if(synced) pushRemote(); ghSync("hide"); });
+addEventListener("online",()=>{ ghSync("online"); });
+
+// ===== sync to github (offline app only). the same merge as the account sync, through the github contents api =====
+// GH is the saved connection; everything else here lives in memory, except the status line's state, kept so "waiting" survives a reload
+let GH=null, ghSt={last:0,waiting:false,problem:""}, ghMem={sha:{},body:{}}, ghDirty=false, ghHalted=false, ghRaised=false, ghStart=0, ghTimer=0, ghRun=null, ghAgain=null;
+function ghLoad(){
+  GH=null; ghSt={last:0,waiting:false,problem:""};
+  if(!window.HARF_PWA) return;
+  try{ const c=JSON.parse(localStorage.getItem(KEY+"-gh")||"null"), ok=v=>typeof v==="string"&&v!=="";
+    if(!c||typeof c!=="object"||!ok(c.owner)||!ok(c.repo)||!ok(c.token)) return;
+    GH={owner:c.owner,repo:c.repo,token:c.token};
+    const o=JSON.parse(localStorage.getItem(KEY+"-ghs")||"null");
+    if(o&&typeof o==="object") ghSt={last:isFinite(+o.last)?+o.last:0,waiting:o.waiting===true,problem:Object.prototype.hasOwnProperty.call(GH_WHY,o.problem)?o.problem:""};
+  }catch(e){}
+}
+ghLoad();
+function ghNote(){ try{ localStorage.setItem(KEY+"-ghs",JSON.stringify(ghSt)); }catch(e){} const n=$("#gh-line"); if(n) n.textContent=ghLine(!!GH,ghSt,Date.now()); }
+const savedMsg=()=>GH?ghLine(true,ghSt,Date.now()):sync.msg;
+// a connection that never answers is given up on, so nothing waits on it for good
+function ghFetch(url,opts){ const ac=new AbortController(), t=setTimeout(()=>ac.abort(),30000);
+  return fetch(url,Object.assign({},opts,{signal:ac.signal})).finally(()=>clearTimeout(t)); }
+// saves the connection once the token is fit to send: pasted text often has a stray newline or space, and a header that isn't printable ascii makes fetch throw, which would read as offline for good
+function ghSave(c){
+  const token=String(c&&c.token||"").trim();
+  if(!/^[\x21-\x7e]+$/.test(token)) return {ok:false,why:GH_WHY.auth};
+  try{ localStorage.setItem(KEY+"-gh",JSON.stringify({owner:c.owner,repo:c.repo,token})); localStorage.removeItem(KEY+"-ghs"); }catch(e){ return {ok:false,why:"This browser isn't letting Harf save the token."}; }
+  ghMem={sha:{},body:{}}; ghDirty=ghHalted=false; ghLoad(); return {ok:true};
+}
+function ghForget(){
+  try{ localStorage.removeItem(KEY+"-gh"); localStorage.removeItem(KEY+"-ghs"); }catch(e){}
+  clearTimeout(ghTimer); ghTimer=0; ghMem={sha:{},body:{}}; ghDirty=ghHalted=false; ghStart=0; ghAgain=null; ghLoad();
+  if(ghRaised){ ghRaised=false; setSync("local","This browser only"); }
+}
+// the only way a cycle starts. saves wait on one timer (at most one cycle a minute); a request that comes while one runs makes one more cycle after it
+function ghSync(trigger,opts){
+  const now=Date.now(), a=ghAllow(trigger,{on:!!GH,online:navigator.onLine!==false,halted:ghHalted,dirty:ghDirty});
+  if(a==="no") return Promise.resolve();
+  if(a==="offline"){ ghSt=ghAfter(ghSt,"offline",now); ghNote(); firstMergeDone(); return Promise.resolve("offline"); }
+  if(trigger==="save"){ if(!ghTimer&&!ghRun) ghTimer=setTimeout(()=>{ ghTimer=0; ghSync("timer"); },Math.max(1500,ghWait(ghStart,now))); return Promise.resolve(); }
+  if(ghRun){ ghAgain={opts}; return ghRun; }
+  clearTimeout(ghTimer); ghTimer=0; ghStart=now; ghDirty=false;
+  const cfg=GH;
+  ghRun=(async()=>{
+    let r; try{ r=await ghCycle(ghApi(cfg,ghFetch),serialize(),ghMem,{replace:!!(opts&&opts.replace),keepalive:trigger==="hide",now,today:today()}); }catch(e){ r={kind:"server",merged:null,mem:ghMem}; }
+    ghRun=null; const again=ghAgain; ghAgain=null;
+    try{
+      if(GH===cfg){
+        const end=Date.now();
+        if(r.merged){ const changed=applyMerged(mergeProgress(serialize(),r.merged)); ghMem=r.mem; if(changed) afterRemoteChange(); }
+        ghSt=ghAfter(ghSt,r.kind,end); ghHalted=r.kind==="auth"||r.kind==="repo"; if(r.kind!=="ok") ghDirty=true;
+        if(ghHalted){ ghRaised=true; setSync("error",ghLine(true,ghSt,end)+"."); } else if(ghRaised){ ghRaised=false; setSync("local","This browser only"); }
+        ghNote();
+      }
+    } finally { firstMergeDone(); }
+    if(again&&GH) return ghSync("manual",again.opts);
+    if(GH===cfg&&r.kind==="ok"&&ghDirty) ghSync("save");
+    return r.kind;
+  })();
+  return ghRun;
+}
 
 // ===== items index =====
 let ITEMS={}, UNITS=[], ITEM_UNIT={};
@@ -2783,7 +2845,7 @@ function renderToday(){
     list.append(s.avail&&!s.done?el("button",{className:cls,type:"button",onclick:s.run},inner):el("div",{className:cls},inner)); });
   sec.append(list);
   const nm=Object.keys(S.cards).length;
-  if(nm) sec.append(el("p",{className:"tag",style:"margin-top:14px",textContent:`${nm} phrases in rotation · ${Object.values(S.cards).filter(c=>c.i>=MATURE_DAYS).length} known for a week or more · ${sync.msg}`}));
+  if(nm) sec.append(el("p",{className:"tag",style:"margin-top:14px",textContent:`${nm} phrases in rotation · ${Object.values(S.cards).filter(c=>c.i>=MATURE_DAYS).length} known for a week or more · ${savedMsg()}`}));
 }
 
 // ===== lesson: listen → phrases → quick check =====
@@ -3370,7 +3432,7 @@ function renderMe(){
     el("h3",{style:"margin:22px 0 8px",textContent:"Last 12 weeks"}),heatmap(),
     el("h3",{style:"margin:22px 0 8px",textContent:"Reviews coming up"}),forecastBars());
   const kv=el("div",{className:"kv",style:"margin-top:18px"});
-  [["Stage",`${st} · ${STAGE_NAMES[st]}`],["Gulf phrases in rotation",gulf],["Fuṣḥā words in rotation",cards.length-gulf],["Lessons done",lessonsDone()],["Reviews today",S.lastDay===today()?S.reviewsToday:0],["Conversations",S.talks||0],["Streak freezes (one per 7 days, hold 2)",S.freezes||0],["Progress saved",sync.msg]]
+  [["Stage",`${st} · ${STAGE_NAMES[st]}`],["Gulf phrases in rotation",gulf],["Fuṣḥā words in rotation",cards.length-gulf],["Lessons done",lessonsDone()],["Reviews today",S.lastDay===today()?S.reviewsToday:0],["Conversations",S.talks||0],["Streak freezes (one per 7 days, hold 2)",S.freezes||0],["Progress saved",savedMsg()]]
     .forEach(([a,b])=>kv.append(el("div",{},el("span",{textContent:a}),el("b",{textContent:String(b)}))));
   sec.append(kv);
   if(DB) sec.append(el("div",{className:"row",style:"margin-top:8px"},el("button",{className:"btn small",type:"button",textContent:"Sync now",onclick:async e=>{ const b=e.currentTarget; b.disabled=true; await pushRemote(); renderMe(); }})));
@@ -3453,7 +3515,7 @@ Return ONLY JSON: {"hook": one or two sentences in English, "example_ar", "examp
 let merged=false;
 function feed(){ if(merged){ feedMsa(); feedSentences(); } }
 function firstMergeDone(){ if(merged) return; merged=true; feed(); refresh(); if(!busy) RENDER[currentTab](); }
-function hasRemote(){ return !!(window.claude&&window.claude.use); }
+function hasRemote(){ return !!(window.claude&&window.claude.use)||!!GH; }
 function afterRemoteChange(){ rebuild(); feed(); refresh(); if(!busy) RENDER[currentTab](); }
 async function setupCaps(){
   if(!window.claude||!window.claude.use) return;
@@ -3462,7 +3524,8 @@ async function setupCaps(){
   if(!busy&&(s||d||t)) RENDER[currentTab]();
 }
 if(!hasRemote()||navigator.onLine===false) firstMergeDone();
-show("today"); setupSync().then(firstMergeDone,firstMergeDone); setupCaps();
+const afterSetup=()=>{ if(!GH) firstMergeDone(); };
+show("today"); ghSync("open"); setupSync().then(afterSetup,afterSetup); setupCaps();
 })();
 </script>
 <script>

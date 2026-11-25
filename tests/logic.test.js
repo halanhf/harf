@@ -273,6 +273,7 @@ test("built app: no third-party requests, and the csp allows exactly its own inl
   assert.ok(scripts.length>=4);
   for(const js of scripts) assert.ok(csp.includes(`'sha256-${crypto.createHash("sha256").update(js).digest("base64")}'`),"script hash missing from csp");
   assert.match(csp,/default-src 'self'/); assert.match(csp,/object-src 'none'/);
+  assert.equal(csp.replace(/ 'sha256-[^']+'/g,""),"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'");
 });
 test("built app: an update precaches fresh files, not the previous version still in the http cache",()=>{
   const sw=fs.readFileSync(path.join(__dirname,"..","docs","sw.js"),"utf8");
@@ -646,4 +647,77 @@ test("github client: results never carry the token, and fetch never follows a re
   hub.files.clear(); hub.set("progress.json","{not json"); const r=await a.sync(); assert.equal(r.kind,"bad"); assert.ok(!JSON.stringify(r).includes(TOKEN));
   for(const q of hub.log) assert.equal(q.redirect,"error");
   assert.ok(hub.log.length>0);
+});
+
+// ===== the offline app syncs through github =====
+EXPOSE+=",ghSync,ghForget,ghSave,savedMsg,gh:()=>GH";
+const KEY="harf-gulf-v1", CFG=JSON.stringify({owner:"someone",repo:"harf-progress",token:TOKEN});
+// a store that already holds another device's progress
+function hubWith(p){ const hub=fakeHub(); const {meta,shards}=L.splitProgress(p); const st={};
+  for(const n of L.SHARDS) if(Object.keys(shards[n]).length){ hub.set("cards_"+n+".json",{cards:shards[n]}); st[n]=hub.files.get("cards_"+n+".json").sha; }
+  hub.set("progress.json",Object.assign({},meta,{shards:st})); return hub; }
+// progress as another device running this app would have saved it (every field present)
+const saved=o=>{ const d=loadUi(); d.setS(L.cleanSaved(o,now,"2026-11-14")); return d.serialize(); };
+const study=(t,id="u1.9")=>{ const p=t.serialize(); p.cards[id]=pcard(Math.floor(Date.now()/60000),2); t.setS(p); t.save(); };
+
+test("offline app: on open the remote copy is merged before daily cards are added, and a second sync sends nothing",async()=>{
+  const hub=hubWith(saved({updatedAt:5,lastDay:"2026-03-01",streak:4,cards:{"u1.0":pcard(100,3),"m.0":pcard(200,5)}}));
+  const t=loadUi({boot:true,pwa:true,fetch:hub.fetch,saved:{[KEY+"-gh"]:CFG}});
+  assert.ok(t.calls.includes("show"),"the first screen never waits for the network"); assert.deepEqual(t.fed(),[]);
+  await tick(); assert.ok(t.S().cards["u1.0"]&&t.S().cards["m.0"]); assert.equal(t.S().streak,4); assert.deepEqual(t.fed(),["msa","sentences"]);
+  assert.equal(t.savedMsg(),"Synced just now"); assert.equal(JSON.parse(t.store.get(KEY+"-ghs")).waiting,false);
+  hub.log.length=0; await t.ghSync("manual"); assert.deepEqual(hub.puts(),[]); assert.deepEqual(hub.gets(),["progress.json"]);
+});
+test("offline app: saves while studying share one timer; going to the background sends at once, with keepalive",async()=>{
+  const hub=fakeHub(); const t=loadUi({boot:true,pwa:true,fetch:hub.fetch,saved:{[KEY+"-gh"]:CFG}}); await tick(); hub.log.length=0;
+  study(t); t.save(); t.save();
+  const pend=[...t.timers.values()]; assert.equal(pend.length,1); assert.ok(pend[0].ms>55000&&pend[0].ms<=60000,`waits ${pend[0].ms} ms`); assert.equal(hub.log.length,0);
+  t.env.document.visibilityState="hidden"; t.on.visibilitychange(); await tick();
+  assert.ok(hub.puts().includes("cards_s1.json")); assert.ok(hub.log.every(q=>q.keepalive)); assert.equal(t.timers.size,0);
+  hub.log.length=0; t.on.pagehide(); await tick(); assert.equal(hub.log.length,0,"nothing new, nothing sent");
+  // the timer path: one cycle when it fires
+  t.env.document.visibilityState="visible"; study(t,"u1.8"); assert.equal(t.timers.size,1); t.runTimers(); await tick(); assert.deepEqual(hub.puts(),["cards_s1.json","progress.json"]);
+});
+test("offline app: no connection is not an error, and the waiting state survives a reload",async()=>{
+  const hub=fakeHub(); const store=new Map([[KEY+"-gh",CFG]]); let n=0;
+  const t=loadUi({boot:true,pwa:true,online:false,store,fetch:()=>{ n++; return Promise.reject(new Error("x")); }});
+  assert.deepEqual(t.fed(),["msa","sentences"]); assert.equal(n,0); assert.equal(t.savedMsg(),"Offline, will sync later"); assert.equal(t.note.hidden,true);
+  assert.equal(JSON.parse(store.get(KEY+"-ghs")).waiting,true);
+  assert.equal(loadUi({pwa:true,online:false,store}).savedMsg(),"Offline, will sync later");
+  // a request that fails while the browser says it's online is the same state
+  hub.down=true; const t3=loadUi({boot:true,pwa:true,store,fetch:hub.fetch}); await tick(); assert.equal(t3.savedMsg(),"Offline, will sync later"); assert.equal(t3.note.hidden,true); assert.deepEqual(t3.fed(),["msa","sentences"]);
+  hub.down=false; t3.on.online(); await tick(); assert.equal(t3.savedMsg(),"Synced just now"); assert.ok(hub.files.has("progress.json"));
+});
+test("offline app: a refused token stops automatic sync, keeps progress, says so, and the token is never shown or saved elsewhere",async()=>{
+  const hub=fakeHub(); const store=new Map([[KEY+"-gh",CFG]]); const t=loadUi({boot:true,pwa:true,fetch:hub.fetch,store}); await tick();
+  study(t); hub.status["*"]=401; await t.ghSync("manual");
+  assert.equal(t.savedMsg(),"Sync problem: the token was refused"); assert.equal(t.note.hidden,false); assert.match(t.note.textContent,/^Sync problem: the token was refused\. Your progress is still safe/);
+  assert.ok(t.S().cards["u1.9"]); assert.ok(JSON.parse(store.get(KEY)).cards["u1.9"]);
+  hub.log.length=0; t.save(); t.runTimers(); t.on.online(); t.on.visibilitychange(); await tick(); assert.equal(hub.log.length,0,"no automatic retries");
+  for(const text of [t.note.textContent,store.get(KEY),store.get(KEY+"-ghs"),JSON.stringify(t.serialize())]) assert.ok(!text.includes(TOKEN));
+  hub.status={}; await t.ghSync("manual"); assert.equal(t.savedMsg(),"Synced just now"); assert.equal(t.note.hidden,true); assert.ok(hub.json("cards_s1.json").cards["u1.9"]);
+  for(const f of hub.files.values()) assert.ok(!f.text.includes(TOKEN));
+});
+test("claude.ai build: never talks to github, even with a stored token",async()=>{
+  const db=fakeDb(); let n=0; const t=loadUi({boot:true,claude:claudeWith(db),saved:{[KEY+"-gh"]:CFG},fetch:()=>{ n++; return Promise.reject(new Error("x")); }}); await tick();
+  assert.equal(t.gh(),null); t.save(); t.runTimers(); t.on.online(); t.on.visibilitychange(); t.on.pagehide(); await tick();
+  assert.equal(n,0); assert.ok(db.m.has(P+"progress")); assert.equal(t.savedMsg(),"Saved to your account");
+});
+test("offline app: a connection that never answers is given up on, so nothing waits on it for good",async()=>{
+  let aborted=0; const hang=(u,o)=>new Promise((_,rej)=>o.signal.addEventListener("abort",()=>{ aborted++; rej(new Error("aborted")); }));
+  const t=loadUi({boot:true,pwa:true,fetch:hang,saved:{[KEY+"-gh"]:CFG}}); await tick(); assert.ok(t.calls.includes("show")); assert.deepEqual(t.fed(),[]);
+  assert.deepEqual([...t.timers.values()].map(x=>x.ms),[30000]); t.runTimers(); await tick();
+  assert.equal(aborted,1); assert.deepEqual(t.fed(),["msa","sentences"]); assert.equal(t.savedMsg(),"Offline, will sync later");
+});
+test("offline app: disconnecting in another tab stops this one",async()=>{
+  const hub=fakeHub(); const store=new Map([[KEY+"-gh",CFG]]); const t=loadUi({boot:true,pwa:true,fetch:hub.fetch,store}); await tick();
+  store.delete(KEY+"-gh"); store.delete(KEY+"-ghs"); t.on.storage({key:KEY+"-gh",newValue:null}); assert.equal(t.gh(),null); assert.equal(t.savedMsg(),"This browser only");
+  hub.log.length=0; study(t); t.runTimers(); t.on.online(); await tick(); assert.equal(hub.log.length,0);
+});
+test("offline app: saving the connection trims the token, and refuses one that would make every request throw",()=>{
+  const store=new Map(); const t=loadUi({pwa:true,store});
+  assert.deepEqual({...t.ghSave({owner:"someone",repo:"harf-progress",token:"  "+TOKEN+"\n"})},{ok:true}); assert.deepEqual(JSON.parse(store.get(KEY+"-gh")),{owner:"someone",repo:"harf-progress",token:TOKEN}); assert.equal(t.gh().token,TOKEN);
+  t.ghForget(); assert.ok(!store.has(KEY+"-gh"));
+  for(const bad of ["","   ","git hub_pat","tok\nen","tok\ten","tokén","tok\u0000en","تو كن","tok​en"]){
+    assert.deepEqual({...t.ghSave({owner:"someone",repo:"harf-progress",token:bad})},{ok:false,why:"the token was refused"},JSON.stringify(bad)); assert.ok(!store.has(KEY+"-gh"),"nothing stored"); assert.equal(t.gh(),null); }
 });

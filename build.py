@@ -51,9 +51,9 @@ if(navigator.storage&&navigator.storage.persist) navigator.storage.persist().cat
 </script>
 """
 rest = body.strip() + "\n" + sw
-# csp: only this app's own inline scripts (by hash) and files from its own folder; nothing loads from other sites
+# csp: only this app's own inline scripts (by hash) and files from its own folder; the one other host the page may talk to is api.github.com, for progress sync
 hashes = " ".join(f"'sha256-{base64.b64encode(hashlib.sha256(js.encode()).digest()).decode()}'" for js in re.findall(r"<script[^>]*>(.*?)</script>", rest, re.S))
-csp = f"default-src 'self'; script-src 'self' {hashes}; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"
+csp = f"default-src 'self'; script-src 'self' {hashes}; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'"
 head = f"""<!doctype html>
 <html lang="en">
 <head>
