@@ -1246,3 +1246,38 @@ test("redraw: sentence practice keeps its sentence, your answer and your tries, 
   const inp=byId(sec,"practice-input"); inp.value="ابي قهوة"; inp.oninput(); sc.env.renderTalk(); await tick();
   assert.equal(asks,1); assert.ok(texts(sec).includes("I want coffee")); assert.equal(byId(sec,"practice-input").value,"ابي قهوة");
 });
+
+// the speech-out section against a fake speechSynthesis. fire: "end" (starts then ends), "start" (starts, never ends), "error", "none" (nothing ever fires)
+function loadSpeech({voices=[{lang:"ar-SA"}],engine=true,fire="end",store}={}){
+  const t=loadUi({store}), env=t.env, note=uiEl("p"), spoken=[]; note.hidden=true; let cur=null;
+  env.document.createElement=uiEl; env.$=s=>s==="#voice-note"?note:s==="#sync-note"?t.note:null;
+  env.SpeechSynthesisUtterance=function(text){ this.text=text; };
+  if(engine) env.window.speechSynthesis={getVoices:()=>voices,addEventListener(){},cancel(){ if(cur&&cur.onerror) cur.onerror({error:"interrupted"}); cur=null; },
+    speak(u){ cur=u; spoken.push(u.text); if(fire==="end"){ u.onstart&&u.onstart(); u.onend(); } else if(fire==="start") u.onstart&&u.onstart(); else if(fire==="error") u.onerror({error:"synthesis-failed"}); }};
+  vm.runInContext(cut("const ap=","const SVG=")+cut("const synth=","// ===== speech in")+";this.__tts=x=>{ TTS=x; pickVoices(); }; Object.assign(this,{VOICE_NONE,VOICE_NOAR,VOICE_STALL});",env);
+  return {t,env,note,spoken,run:async()=>{ for(let i=0;i<4;i++){ t.runTimers(); await tick(); } }};
+}
+test("audio: a voice that never answers is given up on, the queue carries on, and one line says so",async()=>{
+  const s=loadSpeech({fire:"none"}); let done; s.env.sayQueue([{text:"هلا"},{pause:400},{text:"زين"}]).then(r=>{ done=r; });
+  await s.run(); assert.equal(done,true); assert.deepEqual(s.spoken,["هلا","زين"]);
+  assert.equal(s.note.hidden,false); assert.ok(txt(s.note).startsWith(s.env.VOICE_STALL));
+  const e=loadSpeech({fire:"error"}); await e.env.say("هلا"); assert.ok(txt(e.note).startsWith(e.env.VOICE_STALL),"an error before it starts is the same");
+});
+test("audio: a voice that starts is never cut off or reported, and an interrupted line is not a failure",async()=>{
+  const s=loadSpeech({fire:"start"}); let done=false; s.env.say("هلا").then(()=>{ done=true; }); await s.run(); assert.equal(done,true); assert.equal(s.note.hidden,true);
+  const i=loadSpeech({fire:"none"}); i.env.say("هلا"); i.env.say("زين"); await tick(); assert.equal(i.note.hidden,true,"the second tap interrupted the first");
+  const ok=loadSpeech(); await ok.env.say("هلا"); assert.equal(ok.note.hidden,true);
+});
+test("audio: no speech engine and no Claude voice shows one line at load, and play goes on at once; the claude.ai voice clears it",async()=>{
+  const s=loadSpeech({engine:false}); assert.ok(txt(s.note).startsWith(s.env.VOICE_NONE)); await s.env.say("هلا");
+  s.env.__tts({speak:async()=>{},stop:async()=>{}}); assert.equal(s.note.hidden,true);
+});
+test("audio: the Claude voice that never finishes is given up on too (claude.ai build)",async()=>{
+  const s=loadSpeech({voices:[]}); s.env.__tts({speak:()=>new Promise(()=>{}),stop:async()=>{}}); let done=false;
+  s.env.say("هلا").then(()=>{ done=true; }); await s.run(); assert.equal(done,true); assert.ok(txt(s.note).startsWith(s.env.VOICE_STALL));
+});
+test("voice notice: Hide keeps it hidden on this device after a reload, and it is not part of progress",async()=>{
+  const s=loadSpeech({voices:[{lang:"en-GB"}]}); assert.ok(txt(s.note).startsWith(s.env.VOICE_NOAR)); const before=JSON.stringify(s.t.serialize());
+  press(byText(s.note,"Hide")); assert.equal(s.note.hidden,true); assert.equal(s.t.store.get(KEY+"-voice"),"hidden"); assert.equal(JSON.stringify(s.t.serialize()),before);
+  const r=loadSpeech({voices:[{lang:"en-GB"}],fire:"none",store:s.t.store}); assert.equal(r.note.hidden,true); r.env.say("هلا"); await r.run(); assert.equal(r.note.hidden,true);
+});
