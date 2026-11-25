@@ -56,7 +56,7 @@ Evidence keys used below:
 
 ## 2. Spelling (Arabic script)
 
-The course follows **CODA-Gulf** (S: Khalifa et al. 2016; Habash et al. 2018) for q, k and the -ich ending: spell by the fuṣḥā cognate and let the transliteration carry the Gulf sound. **It departs from CODA for the y-sound** (course-lead decision): where Gulf speakers say y for fuṣḥā j in an everyday dialect word, write ي. Natives mostly write it that way, the corpus supports it, and the app's text-to-speech reads the script, so ي gives the right sound. Common native spellings that differ go in the note as "you'll see written …".
+The course follows **CODA-Gulf** (the published spelling convention for written Gulf Arabic) for q, k and the -ich ending: spell by the fuṣḥā cognate and let the transliteration carry the Gulf sound. **It departs from CODA for the y-sound** (course-lead decision): where Gulf speakers say y for fuṣḥā j in an everyday dialect word, write ي. Natives mostly write it that way, the corpus supports it, and the app's text-to-speech reads the script, so ي gives the right sound. Common native spellings that differ go in the note as "you'll see written …".
 
 | Feature | Rule | Example | Evidence |
 |---|---|---|---|
