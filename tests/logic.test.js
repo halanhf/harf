@@ -258,7 +258,7 @@ test("merge and cleanSaved: a damaged or hostile backup never replaces good prog
   const bad={updatedAt:9e15,cards:{a:[1,5,3,"x",0,"zzz",-1,2],b:null,c:[1,2]},custom:{},unitsDone:"abc",resetAt:9e15,resetDay:"9999-12-31"};
   const clean=L.cleanSaved(bad,now,"2026-11-14");
   assert.deepEqual(Object.keys(clean.cards),[]); assert.equal(JSON.stringify(clean.unitsDone),"{}"); assert.equal(clean.resetAt,0); assert.equal(clean.resetDay,"");
-  const skew=L.cleanSaved({resetAt:now+60000,resetDay:"2026-11-15"},now,"2026-11-14"); assert.equal(skew.resetAt,now); assert.equal(skew.resetDay,"2026-11-14");
+  const skew=L.cleanSaved({resetAt:now+60000,resetDay:"2026-11-15"},now,"2026-11-14"); assert.equal(skew.resetAt,now+60000); assert.equal(skew.resetCut,now); assert.equal(skew.resetDay,"2026-11-14");
   const m=L.mergeProgress(local,clean); assert.deepEqual([...m.cards.a],good); assert.deepEqual([...m.cards.b],good);
   // even unclean, merge itself never picks a broken card or throws on a non-array word list
   const m2=L.mergeProgress(local,{cards:bad.cards,custom:{}}); assert.deepEqual([...m2.cards.a],good); assert.deepEqual([...m2.cards.b],good); assert.equal(m2.cards.c,undefined);
@@ -870,4 +870,18 @@ test("offline app: opening with no signal adds the day's cards, and they never r
   t.env.navigator.onLine=true; t.on.online(); await tick();
   for(const id of ["m.10","m.11","m.12"]){ assert.equal(t.S().cards[id].r,3,id+" locally"); assert.equal(hub.json("cards_msa.json").cards[id][2],3,id+" in the store"); }
   assert.equal(t.savedMsg(),"Synced just now");
+});
+test("start over with a clock that is ahead: the other device keeps the marker as sent, so its own later work the same day stays",()=>{
+  const RD="2026-11-25", R=now+300000; // the device that started over has a clock 5 minutes ahead of this one
+  const A={updatedAt:R,resetAt:R,resetDay:RD,cards:{},unitsDone:{},lastDay:"",streak:0};
+  const B0=L.cleanSaved(A,now,RD); assert.equal(B0.resetAt,R,"the marker is kept as sent"); assert.equal(B0.resetCut,now,"work from here on is not dropped"); assert.equal(B0.resetDay,RD);
+  assert.equal(L.cleanSaved(A,R+1,RD).resetCut,undefined,"a marker that isn't ahead needs no cut"); assert.equal(L.cleanSaved({resetAt:now+2*DAY,resetDay:RD},now,RD).resetAt,0,"far ahead is still junk");
+  // this device then studies, still before R on its own clock, and its copy goes back to the other one
+  const tMin=Math.floor((now+60000)/60000);
+  const B=Object.assign({},B0,{updatedAt:now+60000,lastDay:RD,streak:1,reviewsToday:2,unitsDone:{u1:RD},log:{[RD]:2},cards:{"u1.0":[1,5,2,tMin+1,0,tMin,-1,1]}});
+  for(const m of [L.mergeProgress(A,B),L.mergeProgress(B,A),L.mergeProgress(L.mergeProgress(A,B),A)]){
+    assert.equal(m.streak,1); assert.equal(m.lastDay,RD); assert.deepEqual(Object.keys(m.unitsDone),["u1"]); assert.equal(m.log[RD],2); assert.deepEqual(Object.keys(m.cards),["u1.0"]); assert.equal(m.resetAt,R); }
+  // work from before the reset (this device's clock) is still removed
+  const old={updatedAt:now-9000,lastDay:RD,streak:7,unitsDone:{u0:RD},cards:{"u1.5":[1,5,3,Math.floor(now/60000)-50,0,Math.floor(now/60000)-100,-1,2]}};
+  const k=L.mergeProgress(B0,old); assert.deepEqual(Object.keys(k.cards),[]); assert.deepEqual(Object.keys(k.unitsDone),[]);
 });

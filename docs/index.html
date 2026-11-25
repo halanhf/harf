@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-5mfrMZwl0We17ExkKRei3bOM5LvSdCL2YuhrO6JAzWQ=' 'sha256-di0w47/DCcF5LfVPBWHzrgYJODGDGSe2a6fzgFSp6kg=' 'sha256-OOuf6vpRg3WQb3uwXSD4jc2aZ3SNeP+E1kh9lFulHOc=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-5mfrMZwl0We17ExkKRei3bOM5LvSdCL2YuhrO6JAzWQ=' 'sha256-1i+YMjxInJ8yYfryjWQC0HpJh32o7Chuu3ukOusAuF0=' 'sha256-OOuf6vpRg3WQb3uwXSD4jc2aZ3SNeP+E1kh9lFulHOc=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -2148,7 +2148,8 @@ function cleanSaved(raw,now,todayKey){
   // day fields must be real dates: a junk one sorts after every date, so it would win every merge and stop the streak counting
   for(const f of ["lastDay","freezeUsed","msaDay"]) if(!(typeof o[f]==="string"&&(o[f]===""||isFinite(dayNum(o[f]))))) o[f]="";
   if(!o.session||typeof o.session!=="object"||!(typeof o.session.day==="string"&&isFinite(dayNum(o.session.day)))) o.session={day:"",done:{}};
-  const R=+o.resetAt; o.resetAt=R>0&&R<=now+DAY?Math.min(R,now):0; // a clock a little ahead is pulled back; a date far ahead is junk and ignored
+  // a marker from a clock a little ahead is kept as sent (so the sender still sees this copy as having heard of it), with a cut at this clock's now so work done here after it isn't removed; a date far ahead is junk and ignored
+  const R=+o.resetAt, cut=Math.min(R,now,+o.resetCut>0?+o.resetCut:Infinity); o.resetAt=R>0&&R<=now+DAY?R:0; delete o.resetCut; if(o.resetAt&&cut<R) o.resetCut=cut;
   o.resetDay=typeof o.resetDay==="string"&&o.resetAt?o.resetDay:"";
   if(todayKey&&o.resetDay>todayKey) o.resetDay=todayKey;
   return o;
@@ -2178,7 +2179,9 @@ function mergeProgress(a,b){
   a=a||{}; b=b||{};
   // "start over" leaves a dated marker; each copy first loses what the later marker removes, then the two are combined
   const reset=(a.resetAt||0)>=(b.resetAt||0)?a:b, R=reset.resetAt||0, RD=reset.resetDay||"";
-  a=afterReset(a,R,RD,(a.resetAt||0)<R); b=afterReset(b,R,RD,(b.resetAt||0)<R);
+  // cards and words made before the cut are removed; the cut is earlier than the marker only for a marker that came from a clock ahead of this one
+  const cut=Math.min(...[a,b].filter(x=>(x.resetAt||0)===R).map(x=>x.resetCut>0?Math.min(x.resetCut,R):R));
+  a=afterReset(a,cut,RD,(a.resetAt||0)<R); b=afterReset(b,cut,RD,(b.resetAt||0)<R);
   const aNew=(a.updatedAt||0)>=(b.updatedAt||0), newer=aNew?a:b, older=aNew?b:a;
   const out=Object.assign({},older,newer);
   const keys=(x,y)=>new Set([...Object.keys(x||{}),...Object.keys(y||{})]);
@@ -2204,7 +2207,7 @@ function mergeProgress(a,b){
   out.msaDay=(a.msaDay||"")>(b.msaDay||"")?a.msaDay:(b.msaDay||"");
   out.talks=Math.max(a.talks||0,b.talks||0);
   out.updatedAt=Math.max(a.updatedAt||0,b.updatedAt||0);
-  out.resetAt=R; out.resetDay=RD;
+  out.resetAt=R; out.resetDay=RD; delete out.resetCut; if(R&&cut<R) out.resetCut=cut;
   return out;
 }
 // "in 10 min", "in 3 days": what a grade button will do
