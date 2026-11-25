@@ -2117,11 +2117,13 @@ const validGen=u=>!!u&&typeof u.id==="string"&&/^g[0-9a-z]+$/.test(u.id)&&[2,3,4
 // broken cards are dropped, and a "start over" marker can't be in the future (that would wipe work done after it)
 // words you deleted: {id of an added word: ms}. only an added word's id can be here, so a marker can never remove a course card
 const tombs=x=>{ const r={}; if(x&&typeof x==="object"&&!Array.isArray(x)) for(const [k,v] of Object.entries(x)) if(/^c[0-9a-z]+$/.test(k)&&typeof v==="number"&&isFinite(v)&&v>0) r[k]=v; return r; };
+// stages you have reached: {"2".."6": ms first opened}; only whole stages 2 to 6 with a real time, so a damaged backup can't open more than the course has
+const opens=x=>{ const r={}; if(x&&typeof x==="object"&&!Array.isArray(x)) for(const [k,v] of Object.entries(x)) if(/^[2-6]$/.test(k)&&typeof v==="number"&&isFinite(v)&&v>0) r[k]=v; return r; };
 function cleanSaved(raw,now,todayKey){
   const o=raw&&typeof raw==="object"&&!Array.isArray(raw)?Object.assign({},raw):{};
   const cards={}; if(o.cards&&typeof o.cards==="object") for(const [k,a] of Object.entries(o.cards)) if(validCard(a)) cards[k]=a; o.cards=cards;
   for(const f of ["unitsDone","suspended","log","rp","seen","read"]) if(!o[f]||typeof o[f]!=="object"||Array.isArray(o[f])) o[f]={};
-  if(!Array.isArray(o.custom)) o.custom=[]; o.deleted=tombs(o.deleted);
+  if(!Array.isArray(o.custom)) o.custom=[]; o.deleted=tombs(o.deleted); o.stageOpen=opens(o.stageOpen);
   // day fields must be real dates: a junk one sorts after every date, so it would win every merge and stop the streak counting
   for(const f of ["lastDay","freezeUsed","msaDay"]) if(!(typeof o[f]==="string"&&(o[f]===""||isFinite(dayNum(o[f]))))) o[f]="";
   if(!o.session||typeof o.session!=="object"||!(typeof o.session.day==="string"&&isFinite(dayNum(o.session.day)))) o.session={day:"",done:{}};
@@ -2141,7 +2143,7 @@ function afterReset(o,R,RD,behind){
   o.cards=pick(o.cards,(k,c)=>lastReview(c)>=rMin);
   o.suspended=pick(o.suspended,(k,v)=>Math.abs(v)>=R);
   o.custom=(Array.isArray(o.custom)?o.custom:[]).filter(c=>c&&(parseInt(String(c.id).slice(1,-3),36)||0)>=R);
-  o.deleted=pick(tombs(o.deleted),(k,v)=>v>=R);
+  o.deleted=pick(tombs(o.deleted),(k,v)=>v>=R); o.stageOpen=pick(opens(o.stageOpen),(k,v)=>v>=R);
   for(const f of ["unitsDone","rp","read"]) o[f]=pick(o[f],(k,v)=>!old(v));
   o.log=pick(o.log,k=>!old(k));
   if(old(o.lastDay)){ o.streak=0; o.freezes=0; o.reviewsToday=0; o.newToday=0; o.lastDay=""; o.freezeUsed=""; }
@@ -2178,6 +2180,8 @@ function mergeProgress(a,b){
   // a deleted word stays deleted: the later time per id, then the word and its card go, whichever copy graded it last
   out.deleted=tombs({}); for(const k of keys(tombs(a.deleted),tombs(b.deleted))) out.deleted[k]=Math.max(tombs(a.deleted)[k]||0,tombs(b.deleted)[k]||0);
   out.cards=Object.fromEntries(Object.entries(out.cards).filter(([k])=>!out.deleted[k])); out.custom=out.custom.filter(c=>!out.deleted[c.id]);
+  // a stage once opened stays open: every stage either copy reached, at the earlier time
+  out.stageOpen=opens({}); for(const k of keys(opens(a.stageOpen),opens(b.stageOpen))) out.stageOpen[k]=Math.min(...[opens(a.stageOpen)[k],opens(b.stageOpen)[k]].filter(v=>v>0));
   out.log={}; for(const k of keys(a.log,b.log)) out.log[k]=Math.max(+(a.log||{})[k]||0,+(b.log||{})[k]||0);
   for(const f of ["rp","read"]){ out[f]={}; for(const k of keys(a[f],b[f])){ const x=(a[f]||{})[k]||"", y=(b[f]||{})[k]||""; out[f][k]=x>y?x:y; } }
   out.seen=Object.assign({},a.seen,b.seen);
@@ -2216,6 +2220,7 @@ function joinProgress(meta,shards){
   o.cards=cards;
   if(o.deleted!==undefined){ o.deleted=tombs(o.deleted); for(const k of Object.keys(o.deleted)) delete o.cards[k]; // a shard that was not rewritten may still hold a deleted word's card
     if(Array.isArray(o.custom)) o.custom=o.custom.filter(c=>!(c&&o.deleted[c.id])); }
+  if(o.stageOpen!==undefined) o.stageOpen=opens(o.stageOpen);
   return o;
 }
 // github sync decisions: what an answer means, the status line, when to run, what to fetch and send (no network here)
@@ -2366,7 +2371,7 @@ document.documentElement.lang=document.documentElement.lang||"en";
 
 // ===== state =====
 const KEY="harf-gulf-v1";
-const blank=()=>({cards:{},unitsDone:{},suspended:{},custom:[],deleted:{},gen:[],streak:0,lastDay:"",reviewsToday:0,newToday:0,
+const blank=()=>({cards:{},unitsDone:{},suspended:{},custom:[],deleted:{},stageOpen:{},gen:[],streak:0,lastDay:"",reviewsToday:0,newToday:0,
   session:{day:"",done:{}},settings:{translit:"auto",harakat:"auto",newPerDay:1,retention:0.9,gender:"",autoplay:true,voice:"auto"},
   talks:0,freezes:0,freezeUsed:"",log:{},rp:{},seen:{},read:{},msaDay:"",resetAt:0,resetDay:"",updatedAt:0});
 const clone=x=>JSON.parse(JSON.stringify(x==null?{}:x));
@@ -2379,7 +2384,7 @@ function serialize(){ const o=Object.assign({},S,{cards:{}}); delete o.gen; for(
 // remote data is frozen by the platform, so everything is deep-copied before use
 function hydrate(raw){ const o=clone(raw); const b=blank(); const s=Object.assign(b,o);
   s.settings=Object.assign(blank().settings,o.settings||{}); s.session=Object.assign({day:"",done:{}},o.session||{}); s.session.done=Object.assign({},s.session.done);
-  for(const f of ["unitsDone","suspended","log","rp","seen","read","deleted"]) if(!s[f]||typeof s[f]!=="object"||Array.isArray(s[f])) s[f]={}; s.deleted=tombs(s.deleted);
+  for(const f of ["unitsDone","suspended","log","rp","seen","read","deleted","stageOpen"]) if(!s[f]||typeof s[f]!=="object"||Array.isArray(s[f])) s[f]={}; s.deleted=tombs(s.deleted); s.stageOpen=opens(s.stageOpen);
   const st=s.settings, r=+st.retention; st.retention=r>=0.7&&r<=0.99?r:0.9; st.newPerDay=+st.newPerDay===2?2:1; st.autoplay=st.autoplay!==false;
   if(!["auto","always","tap","never"].includes(st.translit)) st.translit="auto"; if(!["auto","always","never"].includes(st.harakat)) st.harakat="auto"; if(!["","m","f"].includes(st.gender)) st.gender=""; if(!["auto","device","claude"].includes(st.voice)) st.voice="auto";
   for(const f of ["streak","freezes","reviewsToday","newToday","talks","resetAt","updatedAt"]) s[f]=isFinite(+s[f])?+s[f]:0;
@@ -2633,10 +2638,16 @@ function feedMsa(){
 const unitsOfStage=n=>UNITS.filter(u=>u.stage===n);
 function stageInfo(n){ const us=unitsOfStage(n); const ids=Object.values(ITEMS).filter(it=>it.stage===n).map(it=>it.id); return stageStatus(us.map(u=>u.id),ids,S); }
 const plannedOf=n=>Math.max(1,unitsOfStage(n).length);
-function currentStage(){
+function liveStage(){
   if(!S.unitsDone.sounds) return 0;
   for(let n=1;n<=5;n++) if(!stageInfo(n).complete) return n;
   return 6;
+}
+// a stage you have reached stays open: its lessons don't lock again if cards lapse (the percentage shown is still the real one)
+function currentStage(){
+  const live=liveStage(), o=opens(S.stageOpen); let top=0; for(const k of Object.keys(o)) top=Math.max(top,+k);
+  if(live>=2&&live>top){ S.stageOpen=Object.assign(o,{[live]:Date.now()}); save(); return live; }
+  return Math.max(live,top);
 }
 function nextUnit(){
   const stage=currentStage(); if(stage===0) return {kind:"sounds"};

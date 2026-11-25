@@ -1661,3 +1661,75 @@ test("delete my own word: joining the account copy drops a stale shard card of a
   const j=L.joinProgress(meta,shards); assert.deepEqual(Object.keys(j.cards),["u1.0"]); assert.deepEqual([...j.custom],[]); assert.deepEqual({...j.deleted},{cabc1:9});
   assert.equal("deleted" in L.joinProgress({updatedAt:5},{}),false);
 });
+// ===== a stage you have reached stays open =====
+const U2={id:"s2u001",stage:2,title:"Shopping",goal:"g",tip:"t",items:[{ar:"بكم",tr:"bcham",en:"how much"}],dialogue:[]};
+function stageScreens(o){
+  const sc=loadScreens(), {env,t}=sc; if(o) t.setS(o); Object.assign(env,{STAGE_NAMES:{0:"Foundations",1:"Survival",2:"Everyday",3:"C",4:"F",5:"N",6:"O"},STAGE_LEVELS:{1:"A1",2:"A2",3:"B1",4:"B2",5:"C1"},MSA:[],nextUnit:()=>({kind:"consolidate"})});
+  sc.items["s2u001.0"]=Object.assign({id:"s2u001.0",unit:"s2u001",stage:2},U2.items[0]); env.__set(sc.items,[UNIT,U2],{});
+  vm.runInContext(cut("const unitsOfStage=","function nextUnit")+cut("function renderLessons","let curLetter=0"),env);
+  t.S().unitsDone={sounds:"2026-11-01",u1:"2026-11-01"}; return sc;
+}
+const lessonBtn=(sec,title)=>walk(sec).find(n=>n.tag==="button"&&/\bunit\b/.test(n.className)&&texts(n).includes(title));
+test("stage reached: forgotten cards lower the percentage but not the lessons; a device that has not heard keeps its own lock",()=>{
+  const sc=stageScreens(); for(let i=0;i<4;i++) sc.t.S().cards["u1."+i]=sc.card(-1,8,4);
+  assert.equal(sc.env.currentStage(),2); assert.ok(sc.t.S().stageOpen["2"]>0);
+  sc.t.S().cards["u1.0"]=sc.card(0,0,5); sc.t.S().cards["u1.1"]=sc.card(0,0,5);
+  assert.equal(sc.env.currentStage(),2); const sec=uiEl("div"); sc.env.renderLessons(sec);
+  assert.equal(lessonBtn(sec,"Shopping").disabled,false); assert.ok(texts(sec).some(s=>/50% known for a week\+/.test(s)));
+  const other=stageScreens(); other.t.S().cards={"u1.0":other.card(0,0,5)}; const s2=uiEl("div"); other.env.renderLessons(s2); assert.equal(lessonBtn(s2,"Shopping").disabled,true);
+});
+test("stage reached: the known percentage is the computed one, whatever is remembered; the time is set once",()=>{
+  const sc=stageScreens(); for(let i=0;i<4;i++) sc.t.S().cards["u1."+i]=sc.card(-1,8,4);
+  assert.equal(sc.env.currentStage(),2); const first=sc.t.S().stageOpen["2"]; sc.t.S().cards["u1.0"]=sc.card(0,0,5); sc.t.S().cards["u1.1"]=sc.card(0,0,5);
+  assert.equal(sc.env.currentStage(),2); assert.equal(sc.t.S().stageOpen["2"],first);
+  assert.equal(sc.env.stageInfo(1).frac,0.5); assert.equal(sc.env.stageInfo(1).complete,false);
+  sc.t.S().stageOpen={2:1,3:1,6:1}; assert.equal(sc.env.stageInfo(1).frac,0.5); assert.equal(sc.env.stageInfo(2).frac,0); assert.equal(sc.env.currentStage(),6);
+  assert.equal(sc.env.liveStage(),1);
+});
+test("stage reached: merges keep the earliest time per stage in both orders; junk is dropped; a reset clears what came before it; backups keep it",()=>{
+  const a={updatedAt:2,stageOpen:{2:500,3:900}}, b={updatedAt:1,stageOpen:{2:300}};
+  for(const m of [L.mergeProgress(a,b),L.mergeProgress(b,a)]) assert.deepEqual({...m.stageOpen},{2:300,3:900});
+  assert.deepEqual({...L.cleanSaved({stageOpen:{1:5,2:"x",3:7,9:4,"u1":3}},now,"2026-11-14").stageOpen},{3:7});
+  const reset={updatedAt:GNOW,resetAt:GNOW,resetDay:GDAY,cards:{}}; assert.deepEqual({...L.mergeProgress({updatedAt:5,stageOpen:{2:GNOW-DAY,3:GNOW+60000}},reset).stageOpen},{3:GNOW+60000});
+  const sp=L.splitProgress(a); assert.deepEqual({...L.joinProgress(sp.meta,sp.shards).stageOpen},{2:500,3:900});
+  for(const o of [{},{built:true}]){ const u=loadUi(o); u.setS({stageOpen:{2:500}}); assert.equal(u.serialize().stageOpen["2"],500); }
+});
+test("stage reached: the other device gets it through github and through the account",async()=>{
+  const hub=fakeHub(), a=dev(hub,prog({stageOpen:{2:GNOW-5}})), b=dev(hub,prog({})); await a.sync(); await b.sync(); assert.equal(b.local.stageOpen["2"],GNOW-5);
+  const db=fakeDb(), one=loadUi(), two=loadUi(); one.use(db,"u1"); two.use(db,"u1"); one.setS(saved({stageOpen:{3:777}})); await one.pushRemote(); await two.pushRemote(); assert.equal(two.S().stageOpen["3"],777);
+});
+test("stage reached: a device that has not reached it gains it by merging, and a merge never takes one away, in either order",()=>{
+  const sets=[{},{2:5},{2:9,3:4},{4:1},{2:5,3:7,4:8,5:9,6:10}], flat=m=>Object.keys(m.stageOpen).sort().join();
+  for(const x of sets) for(const y of sets){ const want=[...new Set([...Object.keys(x),...Object.keys(y)])].sort().join();
+    for(const m of [L.mergeProgress({updatedAt:1,stageOpen:x},{updatedAt:2,stageOpen:y}),L.mergeProgress({updatedAt:2,stageOpen:y},{updatedAt:1,stageOpen:x})]){ assert.equal(flat(m),want);
+      for(const k of Object.keys(m.stageOpen)) assert.equal(m.stageOpen[k],Math.min(...[x[k],y[k]].filter(v=>v>0))); } }
+  const m=L.mergeProgress({updatedAt:9,stageOpen:{2:5}},{updatedAt:1,stageOpen:{2:7,3:4}}); assert.deepEqual({...m.stageOpen},{2:5,3:4}); assert.deepEqual({...L.mergeProgress(m,m).stageOpen},{2:5,3:4});
+});
+test("stage reached: a damaged or hand-edited backup can not raise it past the real stages or make it fractional, in cleanSaved, merging or loading",()=>{
+  const bad={updatedAt:99,stageOpen:{7:1,8:1,"2.5":1,"-3":1,"02":1,"3":-4,"4":0,"5":"9","6":null,"1":5,"0":5,"":5,"2e0":5,"__proto__":5,constructor:5,"u1":3}};
+  assert.deepEqual({...L.cleanSaved(bad,now,"2026-11-14").stageOpen},{});
+  for(const junk of [5,"x",null,[2,3],[5,5,5,5,5,5,5],true]) assert.deepEqual({...L.cleanSaved({stageOpen:junk},now,"2026-11-14").stageOpen},{});
+  const good={updatedAt:1,stageOpen:{2:500}};
+  for(const m of [L.mergeProgress(good,bad),L.mergeProgress(bad,good),L.mergeProgress(good,{updatedAt:99,stageOpen:[2,3,4,5,6,7]}),L.mergeProgress({updatedAt:99,stageOpen:"x"},good)]) assert.deepEqual({...m.stageOpen},{2:500});
+  const u=loadUi(); u.setS(bad); assert.deepEqual({...u.S().stageOpen},{}); assert.deepEqual({...u.serialize().stageOpen},{});
+  const sp=L.splitProgress(bad); assert.deepEqual({...L.joinProgress(sp.meta,sp.shards).stageOpen},{});
+  const sc=stageScreens({stageOpen:{7:1,"2.5":1,9:1}}); assert.equal(sc.env.currentStage(),sc.env.liveStage()); assert.ok(sc.env.currentStage()<=6);
+});
+test("stage reached: start over clears it, and an older value held by another device does not bring it back",()=>{
+  const R=GNOW, old={updatedAt:R-5000,stageOpen:{2:R-9000,3:R-8000}}, reset={updatedAt:R,resetAt:R,resetDay:GDAY,cards:{}};
+  for(const m of [L.mergeProgress(old,reset),L.mergeProgress(reset,old)]){ assert.deepEqual({...m.stageOpen},{}); assert.deepEqual({...L.mergeProgress(m,old).stageOpen},{}); assert.deepEqual({...L.mergeProgress(old,m).stageOpen},{}); }
+  const u=loadUi({dom:true}); u.setS({stageOpen:{2:500,4:600}}); u.startOver(); assert.deepEqual({...u.S().stageOpen},{});
+  const after=u.serialize(); assert.deepEqual({...after.stageOpen},{});
+  const staleOld={updatedAt:after.resetAt-5000,stageOpen:{2:500,4:600},resetAt:0};
+  for(const m of [L.mergeProgress(staleOld,after),L.mergeProgress(after,staleOld)]) assert.deepEqual({...m.stageOpen},{});
+  const reopened={...after,stageOpen:{3:after.resetAt+7},updatedAt:after.updatedAt+9};
+  for(const m of [L.mergeProgress(staleOld,reopened),L.mergeProgress(reopened,staleOld)]) assert.deepEqual({...m.stageOpen},{3:after.resetAt+7});
+});
+test("stage reached: a copy from before this change (no such field) still loads, merges and saves cleanly",()=>{
+  const old={updatedAt:5,cards:{},unitsDone:{u1:"2026-11-01"},custom:[],streak:2,lastDay:"2026-11-24"};
+  assert.ok("stageOpen" in L.cleanSaved(old,now,"2026-11-14")); assert.deepEqual({...L.cleanSaved(old,now,"2026-11-14").stageOpen},{});
+  for(const m of [L.mergeProgress(old,{updatedAt:3,cards:{}}),L.mergeProgress({updatedAt:3,cards:{}},old),L.mergeProgress(old,old)]) assert.deepEqual({...m.stageOpen},{});
+  for(const m of [L.mergeProgress(old,{updatedAt:3,stageOpen:{4:8}}),L.mergeProgress({updatedAt:3,stageOpen:{4:8}},old)]) assert.deepEqual({...m.stageOpen},{4:8});
+  const u=loadUi(); u.setS(old); assert.deepEqual({...u.S().stageOpen},{}); assert.deepEqual({...u.serialize().stageOpen},{}); assert.equal(u.S().streak,2);
+  const sp=L.splitProgress(old); assert.ok(Object.keys(L.joinProgress(sp.meta,sp.shards)).includes("cards"));
+});
