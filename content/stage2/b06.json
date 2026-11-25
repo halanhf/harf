@@ -4,8 +4,8 @@
   "stage": 2,
   "title": "Three hundred, five hundred",
   "goal": "Buy headphones from a shop assistant in an electronics shop: ask prices in the hundreds, compare them and pay",
-  "tip": "For the hundreds, put the short number before miya: thalāth miya 300, arbaʿ miya 400, khams miya 500, tisʿ miya 900 (200 is mītēn). Add the tens with w: thalāth miya w khamsīn 350. A dirham has a hundred fils, so khamsīn fils is half a dirham.",
-  "grammar": "hundreds: number + miya (thalāth miya … tisʿ miya); dirham and fils",
+  "tip": "For the hundreds, put the short number before miya: thalāth miya 300, arbaʿ miya 400, khams miya 500, tisiʿ miya 900 (200 is mītēn). Add the tens with w: thalāth miya w khamsīn 350. A dirham has a hundred fils, so khamsīn fils is half a dirham.",
+  "grammar": "hundreds: number + miya (thalāth miya … tisiʿ miya); dirham and fils",
   "dialogue": [
    [
     "B",
@@ -24,9 +24,9 @@
    [
     "B",
     "تسع مية؟ غالية وايد! عندك سماعات أرخص؟",
-    "tisʿ miya? ghālya wāyid! ʿindak sammāʿāt arkhaṣ?",
+    "tisiʿ miya? ghālya wāyid! ʿindak sammāʿāt arkhaṣ?",
     "Nine hundred? That's really expensive! Have you got cheaper headphones?",
-    "تِسْعْ مِيَة؟ غَالْيَة وَايِدْ! عِنْدَكْ سَمَّاعَاتْ أَرْخَصْ؟"
+    "تِسِعْ مِيَة؟ غَالْيَة وَايِدْ! عِنْدَكْ سَمَّاعَاتْ أَرْخَصْ؟"
    ],
    [
     "A",
@@ -84,11 +84,11 @@
    ],
    [
     "تسع مية",
-    "tisʿ miya",
+    "tisiʿ miya",
     "nine hundred (900)",
     "تسعمئة",
     "",
-    "تِسْعْ مِيَة"
+    "تِسِعْ مِيَة"
    ],
    [
     "ثلاث مية وخمسين",
