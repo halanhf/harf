@@ -477,3 +477,14 @@ test("start over: the account push replaces instead of merging, and the button a
   assert.equal(db.reads,before,"a replace push reads nothing"); assert.deepEqual(db.m.get(P+"cards_s1"),{cards:{}}); assert.equal(db.m.get(P+"progress").resetAt,R); assert.equal(db.m.get(P+"progress").streak,0);
   assert.match(html,/S\.resetAt=Date\.now\(\); S\.resetDay=today\(\); save\(\); flush\(\{replace:true\}\)/);
 });
+test("daily cards are added only after the first merge has been tried",async()=>{
+  // account configured: nothing is added until the first read has come back
+  const db=fakeDb(); const open=db.hold(); const t=loadUi({boot:true,claude:claudeWith(db)});
+  await tick(); assert.deepEqual(t.fed(),[]); open(); await tick(); assert.deepEqual(t.fed(),["msa","sentences"]);
+  // the first read fails: still added, once
+  const db2=fakeDb(); db2.fail.add(P+"progress"); const t2=loadUi({boot:true,claude:claudeWith(db2)}); await tick(); assert.deepEqual(t2.fed(),["msa","sentences"]);
+  // no remote at all, or no connection: added at once, before the first screen
+  const t3=loadUi({boot:true}); assert.deepEqual(t3.fed(),["msa","sentences"]); assert.ok(t3.calls.indexOf("sentences")<t3.calls.indexOf("show"));
+  const db4=fakeDb(); db4.hold(); const t4=loadUi({boot:true,online:false,claude:claudeWith(db4)}); assert.deepEqual(t4.fed(),["msa","sentences"]);
+  assert.match(html,/function afterRemoteChange\(\)\{ rebuild\(\); feed\(\);/);
+});

@@ -2331,7 +2331,7 @@ async function setupSync(){
   try{
     await pullRemote();
   }catch(e){ setSync("error",syncError(e)); }
-  synced=true; await pushRemote();
+  firstMergeDone(); synced=true; await pushRemote();
   try{
     const us=await progressRef().collection("units").limit(1000).get();
     const known=new Set(S.gen.map(u=>u.id)); let added=false;
@@ -3318,13 +3318,19 @@ Return ONLY JSON: {"hook": one or two sentences in English, "example_ar", "examp
 }
 
 // ===== boot =====
-function afterRemoteChange(){ rebuild(); feedMsa(); feedSentences(); refresh(); if(!busy) RENDER[currentTab](); }
+// the day's new cards are stamped with the current time, so they are added only once the first merge has been tried
+let merged=false;
+function feed(){ if(merged){ feedMsa(); feedSentences(); } }
+function firstMergeDone(){ if(merged) return; merged=true; feed(); refresh(); if(!busy) RENDER[currentTab](); }
+function hasRemote(){ return !!(window.claude&&window.claude.use); }
+function afterRemoteChange(){ rebuild(); feed(); refresh(); if(!busy) RENDER[currentTab](); }
 async function setupCaps(){
   if(!window.claude||!window.claude.use) return;
   const [s,d,t]=await Promise.all(["sample","dictation","tts"].map(n=>window.claude.use(n).catch(()=>null)));
   if(s) SAMPLE=s; if(d) setupDictation(d); if(t){ TTS=t; pickVoices(); }
   if(!busy&&(s||d||t)) RENDER[currentTab]();
 }
-feedMsa(); feedSentences(); show("today"); setupSync(); setupCaps();
+if(!hasRemote()||navigator.onLine===false) firstMergeDone();
+show("today"); setupSync().then(firstMergeDone,firstMergeDone); setupCaps();
 })();
 </script>
