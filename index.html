@@ -3007,7 +3007,7 @@ function openLesson(u,onDone){
       opts.forEach(o=>box.append(el("button",{className:"btn",type:"button",lang:"ar",onclick:e=>{
         if(box.dataset.done) return; box.dataset.done="1"; const ok=o===it.ar; if(ok) right++; else missed.add(order[q]);
         [...box.children].forEach(b=>{ if(b.dataset.ar===it.ar) b.classList.add("right"); else if(b===e.currentTarget) b.classList.add("wrong"); });
-        fb.className="feedback "+(ok?"ok":"no"); fb.textContent=ok?"Yes":"It's "+it.tr; say(it.ar); buzz(ok?10:[30,40,30]);
+        fb.className="feedback "+(ok?"ok":"no"); fb.textContent=ok?"Yes":"It's "+it.tr; auto(it.ar); buzz(ok?10:[30,40,30]);
         acts.append(el("button",{className:"btn primary wide",type:"button",textContent:"Next",onclick:go}));
         if(ok) setTimeout(go,1100);
       },"data-ar":o},arSpan(shownAr(u.items.find(x=>x.ar===o)||{ar:o},hv)))));
@@ -3050,7 +3050,7 @@ function roleplay(u,onDone){
       body.append(card); focusCard(card); auto(l.ar); return; }
     const ans=el("div",{className:"stack",hidden:true,style:"justify-items:center;width:100%"},bigAr(l.ar,"mid",shownAr(l,hv)),el("p",{className:"tr",textContent:l.tr}),el("div",{className:"row center"},slowBtn(l.ar),shadowBtn(l.ar)),recordWidget(l.ar));
     const acts=el("div",{className:"actions"});
-    const showAns=el("button",{className:"btn wide",type:"button",textContent:"Show the answer",onclick:()=>{ ans.hidden=false; showAns.remove(); say(l.ar); }});
+    const showAns=el("button",{className:"btn wide",type:"button",textContent:"Show the answer",onclick:()=>{ ans.hidden=false; showAns.remove(); auto(l.ar); }});
     acts.append(showAns,el("button",{className:"btn primary wide",type:"button",textContent:"Next →",onclick:()=>{ k++; step(); }}));
     const card=el("div",{className:"stage"},el("p",{className:"mode",textContent:"You say (in Gulf Arabic)"}),el("p",{className:"en",textContent:l.en}),speakWidget(l.ar),ans,acts);
     body.append(card); focusCard(card);
@@ -3111,7 +3111,7 @@ function startReview(onDone){
     let suggest=-1;
     const trTap=mode==="recognize"?trLine(it.tr,"tap"):null;
     if(mode==="recognize") ap(stage,bigAr(it.ar,undefined,shownAr(it,hv)),trTap);
-    else if(mode==="listen"){ ap(stage,el("div",{className:"row center"},playBtn(it.ar,"Play",{vary:true}),slowBtn(it.ar))); setTimeout(()=>{ if(f.alive()&&stage.isConnected) say(it.ar,null,{vary:true}); },150); }
+    else if(mode==="listen"){ ap(stage,el("div",{className:"row center"},playBtn(it.ar,"Play",{vary:true}),slowBtn(it.ar))); setTimeout(()=>{ if(f.alive()&&stage.isConnected) auto(it.ar,{vary:true}); },150); }
     else if(mode==="build"){
       // tap the words in order; building it yourself beats reading it (desirable difficulty)
       const target=tilesOf(it.ar); const shownT=tilesOf(shownAr(it,hv)); const pool=target.map((w,i)=>({w,s:shownT.length===target.length?shownT[i]:w,i})).sort(()=>Math.random()-0.5);
@@ -3257,7 +3257,7 @@ function renderSounds(sec){
         fb.className="feedback "+(ok?"ok":"no"); fb.textContent=(ok?"Right. ":"That was "+pick[1]+". ")+`${right}/${total}`; buzz(ok?10:[30,40,30]);
         acts.append(el("button",{className:"btn primary wide",type:"button",textContent:"Next",onclick:doRound})); if(ok) setTimeout(()=>{ if(acts.isConnected) doRound(); },900);
         hint.textContent=S.unitsDone.sounds?"Stage 0 is done. Practise as much as you like.":status(); }},arSpan(w[0]),el("span",{className:"tag",textContent:w[1]+" · "+w[2]}))));
-      ap(stage,el("p",{className:"mode",textContent:"Which word did you hear?"}),el("div",{className:"row center"},playBtn(pick[0],"Play again",{vary:true}),slowBtn(pick[0])),opts,fb,acts); say(pick[0],null,{vary:true});
+      ap(stage,el("p",{className:"mode",textContent:"Which word did you hear?"}),el("div",{className:"row center"},playBtn(pick[0],"Play again",{vary:true}),slowBtn(pick[0])),opts,fb,acts); auto(pick[0],{vary:true});
       hint.textContent=S.unitsDone.sounds?"Stage 0 is done. Practise as much as you like.":`${status()} · 75% over at least 8 tries finishes stage 0`;
     };
     doRound();
@@ -3322,11 +3322,11 @@ function numbersDrill(){
     const listen=Math.random()<0.5; const box=el("div",{className:"options"}); const fb=el("p",{className:"feedback",role:"status"}); const acts=el("div",{className:"actions"});
     pool.forEach(o=>box.append(el("button",{className:"btn",type:"button","data-k":o[3],onclick:e=>{ if(box.dataset.done) return; box.dataset.done="1"; const ok=o===n; if(ok) right++;
       [...box.children].forEach(b=>{ if(b.dataset.k===n[3]) b.classList.add("right"); else if(b===e.currentTarget) b.classList.add("wrong"); });
-      fb.className="feedback "+(ok?"ok":"no"); fb.textContent=(ok?"Yes: ":"It's ")+n[2]+" ("+n[3]+")"; say(n[1]); buzz(ok?10:[30,40,30]);
+      fb.className="feedback "+(ok?"ok":"no"); fb.textContent=(ok?"Yes: ":"It's ")+n[2]+" ("+n[3]+")"; auto(n[1]); buzz(ok?10:[30,40,30]);
       acts.append(el("button",{className:"btn primary wide",type:"button",textContent:"Next",onclick:()=>{ q++; ask(); }})); }},listen?el("span",{className:"en",textContent:o[3]}):arSpan(o[1]),listen?null:el("span",{className:"tag",textContent:o[2]}))));
     const card=el("div",{className:"stage"},el("p",{className:"mode",textContent:listen?"Which number did you hear?":"Which is it?"}),
       listen?el("div",{className:"row center"},playBtn(n[1],"Play again")):el("div",{className:"big",lang:"ar",textContent:n[0]}),box,fb,acts);
-    f.body.append(card); focusCard(card); if(listen) say(n[1]); };
+    f.body.append(card); focusCard(card); if(listen) auto(n[1]); };
   ask();
 }
 

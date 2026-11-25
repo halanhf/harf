@@ -1054,11 +1054,11 @@ const MARKS=/[\u064B-\u0652\u0670]/;
 const UNIT={id:"u1",stage:1,title:"Greetings",goal:"g",tip:"t",
   items:[{ar:"هلا",tr:"hala",en:"hi",arv:"هَلَا"},{ar:"شلونك",tr:"shlōnak",en:"how are you",arv:"شْلَوْنَكْ"},{ar:"زين",tr:"zēn",en:"good",arv:"زَيْنْ"},{ar:"مع السلامة",tr:"maʿ is-salāma",en:"bye",arv:"مَعْ السَّلَامَة"}],
   dialogue:[{who:"A",ar:"شلونك",tr:"shlōnak",en:"how are you",arv:"شْلَوْنَكْ"},{who:"B",ar:"زين",tr:"zēn",en:"good",arv:"زَيْنْ"}]};
-function loadScreens({harakat="auto",stage=1}={}){
-  const t=loadUi(), env=t.env; t.setS({settings:{harakat}}); env.__stage=stage; env.currentStage=()=>env.__stage;
-  const spy={say:[],queue:[],auto:[],widget:[],view:null}; env.document.createElement=uiEl;
+function loadScreens({harakat="auto",stage=1,autoplay=true}={}){
+  const t=loadUi(), env=t.env; t.setS({settings:{harakat,autoplay}}); env.__stage=stage; env.currentStage=()=>env.__stage;
+  const spy={say:[],queue:[],auto:[],played:[],widget:[],view:null}; env.document.createElement=uiEl;
   const rec=name=>text=>{ spy.widget.push([name,text]); return uiEl("span"); };
-  Object.assign(env,{say(text){ spy.say.push(text); return Promise.resolve(); },sayQueue(parts){ spy.queue.push(parts.map(p=>p.text)); return Promise.resolve(); },auto:text=>{ spy.auto.push(text); },
+  Object.assign(env,{say(text){ spy.say.push(text); spy.played.push(text); return Promise.resolve(); },sayQueue(parts){ spy.queue.push(parts.map(p=>p.text)); parts.forEach(p=>{ if(p.text) spy.played.push(p.text); }); return Promise.resolve(); },auto:text=>{ spy.auto.push(text); if(t.S().settings.autoplay!==false) spy.played.push(text); },
     voiceRow:()=>null,playBtn:rec("play"),slowBtn:rec("slow"),shadowBtn:rec("shadow"),recordWidget:rec("record"),speakWidget:rec("speak"),nativeLink:()=>uiEl("span"),shiftChip:()=>null,
     trLine:tr=>{ const p=uiEl("p"); p.textContent=tr; return p; },icon:()=>uiEl("span"),
     focusView:()=>{ spy.view={body:uiEl("div"),progress(){},alive:()=>true}; return spy.view; },focusCard(){},announce(){},buzz(){},stopAudio(){},keepAwake(){},
@@ -1066,10 +1066,11 @@ function loadScreens({harakat="auto",stage=1}={}){
     STAGE_NAMES:[],stageInfo:()=>({}),shownStreak:()=>0,lessonsDone:()=>0,standalone:()=>false,ghPanel(){},installEvt:null,cleanIn:x=>x,DAY:86400000,SAMPLE:null,micBlocked:false,SR:null,DB:null,GH:null});
   vm.runInContext("var enVoice=null, TTS=null, chatLog=[], generating=false, DICT=null, dictSink=null, dictLang='ar-AE'; let keyHandler=null;",env);
   for(const s of [cut("const ap=","const SVG="),cut("let ITEMS={}","function rebuild"),cut("const liveCards=","const lessonsDone"),
-      cut("const harOn=","\n"),cut("const bigAr=","\n"),cut("// the lesson's place is kept","// ===== role-play"),cut("function roleplay(","// ===== review tab"),cut("let talkMode=","// ===== progress"),cut("function startReview","// ===== hands-free"),cut("function audioDrill","// ===== course"),cut("function renderMe","// ===== boot")])
+      cut("const harOn=","\n"),cut("const bigAr=","\n"),cut("// the lesson's place is kept","// ===== role-play"),cut("function roleplay(","// ===== review tab"),cut("let talkMode=","// ===== progress"),cut("function startReview","// ===== hands-free"),cut("let curLetter=0","function renderGrammar"),cut("function numbersDrill","// ===== talk"),cut("function audioDrill","// ===== course"),cut("function renderMe","// ===== boot")])
     vm.runInContext(s,env);
   const items={}, unitOf={}; UNIT.items.forEach((it,i)=>{ items["u1."+i]=Object.assign({id:"u1."+i,unit:"u1",stage:1},it); unitOf["u1."+i]="u1"; });
   const s0=Object.assign({id:"u1.s0",unit:"u1",stage:"s1",sentence:true},UNIT.items[3]); items["u1.s0"]=s0; unitOf["u1.s0"]="u1";
+  Object.assign(env,{PAIRS:[[["قلب","qalb","heart"],["كلب","kalb","dog"]]],NUMBERS:[["١","واحد","wāhid","one"],["٢","ثنين","thnayn","two"],["٣","ثلاثة","thalātha","three"],["٤","أربعة","arbaʿa","four"]],LETTERS:[]});
   vm.runInContext("this.__set=(i,u,m)=>{ ITEMS=i; UNITS=u; ITEM_UNIT=m; };",env); env.__set(items,[UNIT],unitOf);
   const card=(st,i,r)=>({s:1,k:5,d:1,t:0,r,l:0,st,i});
   return {t,env,spy,items,card,shown:root=>walk(root).filter(n=>n.lang==="ar").map(txt)};
@@ -1113,7 +1114,7 @@ test("harakat on: tapping the big phrase and the answer check use the plain spel
   for(let k=0;k<4;k++) press(byText(spy.view.body,k<3?"Next →":"Quick check →"));
   const right=walk(spy.view.body).filter(n=>n.attrs["data-ar"]!==undefined); const en=walk(spy.view.body).find(n=>n.className==="en"&&UNIT.items.some(i=>i.en===txt(n))); const it=UNIT.items.find(i=>i.en===txt(en));
   const wrong=right.find(n=>n.attrs["data-ar"]!==it.ar); press(wrong); assert.ok(/\bright\b/.test(right.find(n=>n.attrs["data-ar"]===it.ar).className),"the plain spelling is the right answer"); assert.ok(/\bwrong\b/.test(wrong.className));
-  assert.equal(spy.say.at(-1),it.ar);
+  assert.equal(spy.auto.at(-1),it.ar);
 });
 const reviewOf=(sc,id,c)=>{ sc.t.S().cards[id]=c; sc.env.startReview(null); return sc.spy.view.body; };
 const bigOf=n=>walk(n).filter(x=>x.lang==="ar"&&/\bbig\b/.test(x.className)).map(txt);
@@ -1495,6 +1496,44 @@ test("lesson resume: a resume point that no longer fits the lesson is ignored",(
   for(const bad of ["{",'{"u":"u1","day":"DAY","step":2,"k":9}','{"u":"u1","day":"DAY","step":3,"k":0,"order":[0,0,1,2],"q":1,"right":0,"missed":[]}']){
     const sc=loadScreens(); sc.t.store.set(KEY+"-resume",bad.replace("DAY",vm.runInContext("today()",sc.env)));
     assert.doesNotThrow(()=>sc.env.openLesson(UNIT)); assert.ok(byText(sc.spy.view.body,"Learn the phrases →"),bad); }
+});
+// every place that speaks without a tap on a play control, in order; returns what was played
+function quietTour(sc){
+  const {env,spy,t}=sc, b=()=>spy.view.body, got={};
+  env.openLesson(UNIT); toCheck(sc,3); press(byText(b(),"Quick check →")); spy.played.length=0; answer(sc,false); got.check=[...spy.played];
+  env.roleplay(UNIT); press(byText(b(),"Your turn →")); spy.played.length=0; press(byText(b(),"Show the answer")); got.roleplay=[...spy.played];
+  spy.played.length=0; t.S().cards={"u1.1":sc.card(-1,2,3)}; env.startReview(null); t.runTimers(); got.listen=[...spy.played];
+  vm.runInContext("Math.random=()=>0.1; soundTab='ear'",env); spy.played.length=0; env.renderSounds(uiEl("div")); got.ear=[...spy.played];
+  spy.played.length=0; env.numbersDrill(); got.numbers=[...spy.played];
+  vm.runInContext("TTS={}",env); const me=uiEl("div"); me.id="me"; env.rootEl=me; env.renderMe(); spy.played.length=0;
+  const sel=walk(me).find(n=>n.id==="set-voice"); sel.value="device"; sel.onchange(); got.voice=[...spy.played];
+  return got;
+}
+test("autoplay off: nothing speaks by itself, and play controls still play",()=>{
+  const sc=loadScreens({autoplay:false}); const got=quietTour(sc);
+  for(const [k,v] of Object.entries(got)) if(k!=="voice") assert.deepEqual(v,[],k);
+  assert.deepEqual(got.voice,["هلا والله، شلونك؟"],"choosing a voice is a request to hear it");
+  assert.ok(sc.spy.widget.some(w=>w[0]==="play"&&w[1]==="شلونك"),"the listen card has its Play button");
+  sc.t.store.delete(KEY+"-resume"); sc.env.openLesson(UNIT); toCheck(sc,0); sc.spy.played.length=0; press(walk(sc.spy.view.body).find(n=>/\bsay\b/.test(n.className))); assert.deepEqual(sc.spy.played,["هلا"],"a tap plays");
+});
+test("autoplay on: the same screens still speak by themselves",()=>{
+  const got=quietTour(loadScreens({autoplay:true})); for(const [k,v] of Object.entries(got)) assert.ok(v.length>=1,k);
+});
+test("autoplay off: a lesson resumed at a phrase or at the quick check stays quiet, and its taps still play",()=>{
+  const sc=loadScreens({autoplay:false}); sc.env.openLesson(UNIT); toCheck(sc,2); sc.env.openLesson(UNIT); sc.spy.played.length=0;
+  press(byText(sc.spy.view.body,"Continue where you left off")); assert.deepEqual(sc.spy.played,[],"resumed at a phrase");
+  press(walk(sc.spy.view.body).find(n=>/\bsay\b/.test(n.className))); assert.deepEqual(sc.spy.played,["زين"],"its phrase button plays");
+  for(const k of [2,3]) press(byText(sc.spy.view.body,k<3?"Next →":"Quick check →"));
+  answer(sc,true); sc.env.openLesson(UNIT); sc.spy.played.length=0; press(byText(sc.spy.view.body,"Continue where you left off")); assert.deepEqual(sc.spy.played,[],"resumed at the quick check");
+  sc.spy.played.length=0; answer(sc,false); assert.deepEqual(sc.spy.played,[],"a resumed answer");
+});
+test("autoplay off: Play, Slow, Shadow and Compare are taps and always play",()=>{
+  const sc=loadScreens({autoplay:false}), {env,spy}=sc;
+  for(const a of ["const playBtn=","const slowBtn="]) vm.runInContext(cut(a,"\n"),env);
+  vm.runInContext(cut("const shadowBtn=","// text is what is spoken"),env);
+  const mk=c=>vm.runInContext(c,env); press(mk('playBtn("هلا")')); press(mk('slowBtn("شلونك")')); press(mk('shadowBtn("زين")')); assert.deepEqual(spy.played,["هلا","شلونك","زين","زين","زين"]);
+  const cmp=cut('const cmp=el("button"','wrap.querySelectorAll(".cmp")'); assert.ok(/sayQueue\(/.test(cmp)&&!/auto\(/.test(cmp),"Compare plays the model on the tap");
+  spy.played.length=0; env.say("x"); assert.deepEqual(spy.played,["x"]);
 });
 test("speech check: a screen reader is told which words were caught",()=>{
   for(const [alts,want] of [[["مع"],"Not caught: السلامة"],[["مع السلامة"],"All words caught"]]){
