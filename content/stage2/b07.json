@@ -11,43 +11,50 @@
     "A",
     "هذا فريجنا. هذي البيوت كلها حق أهلي",
     "hādha firījna. hādhi l-byūt killha ḥagg ahli",
-    "This is our neighbourhood. These houses all belong to my family."
+    "This is our neighbourhood. These houses all belong to my family.",
+    "هٰذَا فِرِيجْنَا. هٰذِي الْبْيُوتْ كِلّْهَا حَقّْ أَهْلِي"
    ],
    [
     "B",
     "ما شاء الله! البيوت كبيرة وايد",
     "mā shāʼ allāh! il-byūt kbīra wāyid",
-    "Wow! The houses are really big."
+    "Wow! The houses are really big.",
+    "مَا شَاءْ اللّٰهْ! الْبْيُوتْ كْبِيرَة وَايِدْ"
    ],
    [
     "A",
     "هيه. هذا بيت يدي، عنده خمس بنات وولدين",
     "hē. hādha bēt yaddi, ʿindah khams banāt w waladēn",
-    "Yes. This is my grandad's house. He's got five daughters and two sons."
+    "Yes. This is my grandad's house. He's got five daughters and two sons.",
+    "هَيْه. هٰذَا بَيْتْ يَدِّي، عِنْدَهْ خَمْسْ بَنَاتْ وْوَلَدَيْنْ"
    ],
    [
     "B",
     "ومنو هذيلا الرياييل اللي في الشارع؟",
     "w minu hādhēla r-ryāyīl illi fi sh-shāriʿ?",
-    "And who are these men in the street?"
+    "And who are these men in the street?",
+    "وْمِنُو هٰذَيْلَا الرّْيَايِيلْ اللِّي فِي الشَّارِعْ؟"
    ],
    [
     "A",
     "عيال عمي. ناس طيبين، كل واحد ريّال زين",
     "ʿyāl ʿammi. nās ṭayybīn, kill wāḥid rayyāl zēn",
-    "My cousins. Nice people, every one of them a good guy."
+    "My cousins. Nice people, every one of them a good guy.",
+    "عْيَالْ عَمِّي. نَاسْ طَيّْبِينْ، كِلّْ وَاحِدْ رَيَّالْ زَيْنْ"
    ],
    [
     "B",
     "الفريج حلو! والناس يعرفون بعض؟",
     "il-firīj ḥilu! w in-nās yaʿarfūn baʿaẓ?",
-    "It's a lovely neighbourhood! And do people know each other?"
+    "It's a lovely neighbourhood! And do people know each other?",
+    "الْفِرِيجْ حِلُو! وْالنَّاسْ يَعَرْفُونْ بَعَضْ؟"
    ],
    [
     "A",
     "هيه، كلهم أهل وجيران",
     "hē, killhum ahal w jīrān",
-    "Yes, they're all family and neighbours."
+    "Yes, they're all family and neighbours.",
+    "هَيْه، كِلّْهُمْ أَهَلْ وْجِيرَانْ"
    ]
   ],
   "items": [
@@ -56,63 +63,72 @@
     "byūt",
     "houses",
     "بيوت",
-    "one: bēt (بيت); the houses: il-byūt"
+    "one: bēt (بيت); the houses: il-byūt",
+    "بْيُوتْ"
    ],
    [
     "رياييل",
     "ryāyīl",
     "men",
     "رجال",
-    "one: rayyāl (ريّال); you'll see written ريايل"
+    "one: rayyāl (ريّال); you'll see written ريايل",
+    "رْيَايِيلْ"
    ],
    [
     "بنات",
     "banāt",
     "girls; daughters",
     "بنات",
-    "one: bint (بنت)"
+    "one: bint (بنت)",
+    "بَنَاتْ"
    ],
    [
     "ناس",
     "nās",
     "people",
     "ناس",
-    "the people: in-nās (الناس)"
+    "the people: in-nās (الناس)",
+    "نَاسْ"
    ],
    [
     "عيال عمي",
     "ʿyāl ʿammi",
     "my cousins (my father's brother's sons)",
     "أبناء عمي",
-    "one: wild ʿammi (ولد عمي); my uncle's daughters: banāt ʿammi (بنات عمي)"
+    "one: wild ʿammi (ولد عمي); my uncle's daughters: banāt ʿammi (بنات عمي)",
+    "عْيَالْ عَمِّي"
    ],
    [
     "ناس طيبين",
     "nās ṭayybīn",
     "nice people, good people",
     "أناس طيبون",
-    "adjectives for people take -īn"
+    "adjectives for people take -īn",
+    "نَاسْ طَيّْبِينْ"
    ],
    [
     "كلها",
     "killha",
     "all of them (things); all of it",
     "كلها",
-    "for people: killhum (كلهم)"
+    "for people: killhum (كلهم)",
+    "كِلّْهَا"
    ],
    [
     "كبيرة",
     "kbīra",
     "big (with a feminine noun or a plural of things)",
     "كبيرة",
-    "masculine: kbīr (كبير); il-byūt kbīra 'the houses are big'"
+    "masculine: kbīr (كبير); il-byūt kbīra 'the houses are big'",
+    "كْبِيرَة"
    ],
    [
     "ولدين",
     "waladēn",
     "two boys, two sons",
     "ولدان",
-    "one: walad (ولد); my son: wildi (ولدي)"
+    "one: walad (ولد); my son: wildi (ولدي)",
+    "وَلَدَيْنْ"
    ]
   ]
  },
@@ -128,43 +144,50 @@
     "A",
     "وين تشتري أغراضك؟ من المول؟",
     "wēn tishtiri aghrāẓak? min il-mōl?",
-    "Where do you buy your stuff? At the mall?"
+    "Where do you buy your stuff? At the mall?",
+    "وَيْنْ تِشْتِرِي أَغْرَاضَكْ؟ مِنْ الْمَوْلْ؟"
    ],
    [
     "B",
     "هيه، بس المحلات في المول غالية. وانتي؟",
     "hē, bas il-maḥallāt fi l-mōl ghālya. w inti?",
-    "Yes, but the shops in the mall are expensive. And you?"
+    "Yes, but the shops in the mall are expensive. And you?",
+    "هَيْه، بَسْ الْمَحَلَّاتْ فِي الْمَوْلْ غَالْيَة. وْاِنْتِي؟"
    ],
    [
     "A",
     "أنا أروح ديرة. الأسواق هناك رخيصة وايد",
     "ana arūḥ Dēra. il-aswāg hnāk rakhīṣa wāyid",
-    "I go to Deira. The souqs there are really cheap."
+    "I go to Deira. The souqs there are really cheap.",
+    "أَنَا أَرُوحْ دَيْرَة. الْأَسْوَاقْ هْنَاكْ رَخِيصَة وَايِدْ"
    ],
    [
     "B",
     "والله؟ شو تشترين من هناك؟",
     "wallāh? shu tishtirīn min hnāk?",
-    "Really? What do you buy there?"
+    "Really? What do you buy there?",
+    "وَاللّٰهْ؟ شُو تِشْتِرِينْ مِنْ هْنَاكْ؟"
    ],
    [
     "A",
     "كل شي! فيها عطور وملابس ومطاعم وايد",
     "kill shay! fīha ʿuṭūr w malābis w maṭāʿim wāyid",
-    "Everything! There are perfumes, clothes and loads of restaurants."
+    "Everything! There are perfumes, clothes and loads of restaurants.",
+    "كِلّْ شَيْ! فِيهَا عُطُورْ وْمَلَابِسْ وْمَطَاعِمْ وَايِدْ"
    ],
    [
     "B",
     "حلو! بس الشوارع هناك زحمة، صح؟",
     "ḥilu! bas ish-shawāriʿ hnāk zaḥma, ṣaḥḥ?",
-    "Nice! But the streets there are busy, right?"
+    "Nice! But the streets there are busy, right?",
+    "حِلُو! بَسْ الشَّوَارِعْ هْنَاكْ زَحْمَة، صَحّْ؟"
    ],
    [
     "A",
     "هيه، الناس وايد، والسيارات بعد. روح بالمترو",
     "hē, in-nās wāyid, w is-sayyārāt baʿad. rūḥ bil-mitrō",
-    "Yes, there are loads of people, and cars too. Go by metro."
+    "Yes, there are loads of people, and cars too. Go by metro.",
+    "هَيْه، النَّاسْ وَايِدْ، وْالسَّيَّارَاتْ بَعَدْ. رُوحْ بِالْمِتْرَوْ"
    ]
   ],
   "items": [
@@ -173,63 +196,72 @@
     "maḥallāt",
     "shops",
     "محلات / متاجر",
-    "one: maḥall (محل)"
+    "one: maḥall (محل)",
+    "مَحَلَّاتْ"
    ],
    [
     "أسواق",
     "aswāg",
     "souqs, markets",
     "أسواق",
-    "one: sūg (سوق); the souqs: il-aswāg"
+    "one: sūg (سوق); the souqs: il-aswāg",
+    "أَسْوَاقْ"
    ],
    [
     "سيارات",
     "sayyārāt",
     "cars",
     "سيارات",
-    "one: sayyāra (سيارة); the cars: is-sayyārāt"
+    "one: sayyāra (سيارة); the cars: is-sayyārāt",
+    "سَيَّارَاتْ"
    ],
    [
     "مطاعم",
     "maṭāʿim",
     "restaurants",
     "مطاعم",
-    "one: maṭʿam (مطعم)"
+    "one: maṭʿam (مطعم)",
+    "مَطَاعِمْ"
    ],
    [
     "عطور",
     "ʿuṭūr",
     "perfumes",
     "عطور",
-    "one: ʿiṭir (عطر)"
+    "one: ʿiṭir (عطر)",
+    "عُطُورْ"
    ],
    [
     "ملابس",
     "malābis",
     "clothes",
     "ملابس",
-    ""
+    "",
+    "مَلَابِسْ"
    ],
    [
     "الشوارع",
     "ish-shawāriʿ",
     "the streets, the roads",
     "الشوارع",
-    "one: shāriʿ (شارع)"
+    "one: shāriʿ (شارع)",
+    "الشَّوَارِعْ"
    ],
    [
     "تشترين",
     "tishtirīn",
     "you buy (to a woman)",
     "تشترين",
-    "to a man: tishtiri (تشتري)"
+    "to a man: tishtiri (تشتري)",
+    "تِشْتِرِينْ"
    ],
    [
     "فيها",
     "fīha",
     "there is, there are (in it: a feminine place, such as a city or an area)",
     "فيها",
-    "for a masculine place: fīh (فيه); fīha maḥallāt 'it has shops'"
+    "for a masculine place: fīh (فيه); fīha maḥallāt 'it has shops'",
+    "فِيهَا"
    ]
   ]
  },
@@ -245,43 +277,50 @@
     "A",
     "هلا والله! حياك الله، تفضل",
     "hala wallāh! ḥayyāk allāh, tfaẓẓal",
-    "Hey! Welcome, come in."
+    "Hey! Welcome, come in.",
+    "هَلَا وَاللّٰهْ! حَيَّاكْ اللّٰهْ، تْفَضَّلْ"
    ],
    [
     "B",
     "هلا فيك، الله يحييك. مبارك عليكم الشهر!",
     "hala fīk, allāh yḥayyīk. mubārak ʿalēkum ish-shahar!",
-    "Hi, thanks. Happy Ramadan to you all!"
+    "Hi, thanks. Happy Ramadan to you all!",
+    "هَلَا فِيكْ، اللّٰهْ يْحَيِّيكْ. مُبَارَكْ عَلَيْكُمْ الشَّهَرْ!"
    ],
    [
     "A",
     "الله يبارك فيك. رمضان كريم! الفطور جاهز",
     "allāh ybārik fīk. ramaẓān karīm! il-fuṭūr jāhiz",
-    "And to you. Ramadan Kareem! Iftar's ready."
+    "And to you. Ramadan Kareem! Iftar's ready.",
+    "اللّٰهْ يْبَارِكْ فِيكْ. رَمَضَانْ كَرِيمْ! الْفُطُورْ جَاهِزْ"
    ],
    [
     "B",
     "الله أكرم. أنا صايم، والحين تعبان ويوعان!",
     "allāhu akram. ana ṣāyim, w il-ḥīn taʿbān w yōʿān!",
-    "God is more generous. I'm fasting, and by now I'm tired and starving!"
+    "God is more generous. I'm fasting, and by now I'm tired and starving!",
+    "اللّٰهُ أَكْرَمْ. أَنَا صَايِمْ، وْالْحِينْ تَعْبَانْ وْيَوْعَانْ!"
    ],
    [
     "A",
     "كلنا صايمين ويوعانين! يلا، أذن المغرب. خذ تمر وماي",
     "killna ṣāymīn w yōʿānīn! yalla, adhdhan il-maghrib. khudh tamr w māy",
-    "We're all fasting and starving! Right, the maghrib call's gone. Have some dates and water."
+    "We're all fasting and starving! Right, the maghrib call's gone. Have some dates and water.",
+    "كِلّْنَا صَايْمِينْ وْيَوْعَانِينْ! يَلَّا، أَذَّنْ الْمَغْرِبْ. خُذْ تَمْرْ وْمَايْ"
    ],
    [
     "B",
     "الحمد لله. تقبل الله",
     "il-ḥamdu lillāh. tagabbal allāh",
-    "Thank God. May God accept (our fast)."
+    "Thank God. May God accept (our fast).",
+    "الْحَمْدُ لِلّٰهْ. تَقَبَّلْ اللّٰهْ"
    ],
    [
     "A",
     "منا ومنكم. يلا نصلي قبل الأكل",
     "minna w minkum. yalla nṣalli gabil il-akil",
-    "From us and from you. Come on, let's pray before we eat."
+    "From us and from you. Come on, let's pray before we eat.",
+    "مِنَّا وْمِنْكُمْ. يَلَّا نْصَلِّي قَبِلْ الْأَكِلْ"
    ]
   ],
   "items": [
@@ -290,63 +329,72 @@
     "mubārak ʿalēkum ish-shahar",
     "happy Ramadan (lit. blessed be the month for you), at the start of Ramadan",
     "رمضان مبارك / شهر مبارك",
-    "said as it is, to one person or many; the reply is allāh ybārik fīk (to a woman: fīch); you'll also hear ʿalēna w ʿalēkum (علينا وعليكم)"
+    "said as it is, to one person or many; the reply is allāh ybārik fīk (to a woman: fīch); you'll also hear ʿalēna w ʿalēkum (علينا وعليكم)",
+    "مُبَارَكْ عَلَيْكُمْ الشَّهَرْ"
    ],
    [
     "رمضان كريم",
     "ramaẓān karīm",
     "Ramadan Kareem (lit. Ramadan is generous)",
     "رمضان كريم",
-    "the reply is allāhu akram"
+    "the reply is allāhu akram",
+    "رَمَضَانْ كَرِيمْ"
    ],
    [
     "الله أكرم",
     "allāhu akram",
     "God is more generous (the reply to ramaẓān karīm)",
     "الله أكرم",
-    ""
+    "",
+    "اللّٰهُ أَكْرَمْ"
    ],
    [
     "تقبل الله",
     "tagabbal allāh",
     "may God accept (it), said after breaking the fast or after prayer",
     "تقبل الله",
-    "the reply is minna w minkum"
+    "the reply is minna w minkum",
+    "تَقَبَّلْ اللّٰهْ"
    ],
    [
     "منا ومنكم",
     "minna w minkum",
     "from us and from you (the reply to tagabbal allāh)",
     "منا ومنكم",
-    ""
+    "",
+    "مِنَّا وْمِنْكُمْ"
    ],
    [
     "صايم",
     "ṣāyim",
     "fasting (a man)",
     "صائم",
-    "a woman: ṣāyma (صايمة); a group: ṣāymīn (صايمين)"
+    "a woman: ṣāyma (صايمة); a group: ṣāymīn (صايمين)",
+    "صَايِمْ"
    ],
    [
     "الفطور",
     "il-fuṭūr",
     "iftar, the meal that breaks the fast",
     "الإفطار",
-    "fuṭūr also means breakfast; breakfast is also riyūg (ريوق)"
+    "fuṭūr also means breakfast; breakfast is also riyūg (ريوق)",
+    "الْفُطُورْ"
    ],
    [
     "أذن المغرب",
     "adhdhan il-maghrib",
     "the maghrib call to prayer has gone (time to break the fast)",
     "أذن لصلاة المغرب",
-    ""
+    "",
+    "أَذَّنْ الْمَغْرِبْ"
    ],
    [
     "كلنا",
     "killna",
     "all of us, we all",
     "كلنا",
-    ""
+    "",
+    "كِلّْنَا"
    ]
   ],
   "culture": "Ramadan greetings are everyday speech, not formal. At the start of the month you'll hear mubārak ʿalēkum ish-shahar, and ramaẓān karīm all month. The fast ends at the maghrib call to prayer. People usually break it with dates and water, pray maghrib, and then eat."
@@ -363,43 +411,50 @@
     "A",
     "هلا! عساكم من عواده",
     "hala! ʿasākum min ʿuwwādah",
-    "Hi! Happy Eid (lit. may you see it come back)."
+    "Hi! Happy Eid (lit. may you see it come back).",
+    "هَلَا! عَسَاكُمْ مِنْ عُوَّادَهْ"
    ],
    [
     "B",
     "هلا فيج! عساكم من عواده",
     "hala fīch! ʿasākum min ʿuwwādah",
-    "Hi! Happy Eid to you too."
+    "Hi! Happy Eid to you too.",
+    "هَلَا فِيجْ! عَسَاكُمْ مِنْ عُوَّادَهْ"
    ],
    [
     "A",
     "وين كنت في العيد؟ ما شفناك",
     "wēn kint fi l-ʿīd? ma shifnāk",
-    "Where were you over Eid? We didn't see you."
+    "Where were you over Eid? We didn't see you.",
+    "وَيْنْ كِنْتْ فِي الْعِيدْ؟ مَا شِفْنَاكْ"
    ],
    [
     "B",
     "سافرت لندن عند أهلي. رجعت أمس",
     "sāfart Landan ʿind ahli. rijaʿt ams",
-    "I flew to London, to my family. I got back yesterday."
+    "I flew to London, to my family. I got back yesterday.",
+    "سَافَرْتْ لَنْدَنْ عِنْدْ أَهْلِي. رِجَعْتْ أَمْسْ"
    ],
    [
     "A",
     "الحمد لله على السلامة! شحال الأهل؟",
     "il-ḥamdu lillāh ʿala s-salāma! shḥāl il-ahal?",
-    "Welcome back! How's the family?"
+    "Welcome back! How's the family?",
+    "الْحَمْدُ لِلّٰهْ عَلَى السَّلَامَة! شْحَالْ الْأَهَلْ؟"
    ],
    [
     "B",
     "الله يسلمج، كلهم بخير. بس الرطوبة هني ما تنطاق!",
     "allāh ysallmich, killhum b-khēr. bas ir-ruṭūba hni ma tinṭāg!",
-    "Thanks, they're all well. But the humidity here is unbearable!"
+    "Thanks, they're all well. But the humidity here is unbearable!",
+    "اللّٰهْ يْسَلّْمِجْ، كِلّْهُمْ بْخَيْرْ. بَسْ الرُّطُوبَة هْنِي مَا تِنْطَاقْ!"
    ],
    [
     "A",
     "والغبار بعد! الشوارع والسيارات كلها غبار",
     "w il-ghubār baʿad! ish-shawāriʿ w is-sayyārāt killha ghubār",
-    "And the dust too! The streets and the cars are all covered in dust."
+    "And the dust too! The streets and the cars are all covered in dust.",
+    "وْالْغُبَارْ بَعَدْ! الشَّوَارِعْ وْالسَّيَّارَاتْ كِلّْهَا غُبَارْ"
    ]
   ],
   "items": [
@@ -408,63 +463,72 @@
     "ʿasākum min ʿuwwādah",
     "happy Eid (lit. may you be among those who see it again)",
     "عيد مبارك / كل عام وأنتم بخير",
-    "the reply is the same words"
+    "the reply is the same words",
+    "عَسَاكُمْ مِنْ عُوَّادَهْ"
    ],
    [
     "الحمد لله على السلامة",
     "il-ḥamdu lillāh ʿala s-salāma",
     "welcome back (from a trip or an illness; lit. thank God you're safe)",
     "الحمد لله على السلامة",
-    "the reply is allāh ysallmak (to a woman: allāh ysallmich)"
+    "the reply is allāh ysallmak (to a woman: allāh ysallmich)",
+    "الْحَمْدُ لِلّٰهْ عَلَى السَّلَامَة"
    ],
    [
     "في العيد",
     "fi l-ʿīd",
     "at Eid, over Eid",
     "في العيد",
-    "the Eid: il-ʿīd (العيد)"
+    "the Eid: il-ʿīd (العيد)",
+    "فِي الْعِيدْ"
    ],
    [
     "سافرت",
     "sāfart",
     "I travelled, I went away; you travelled (to a man)",
     "سافرت",
-    "to a woman: sāfarti (سافرتي)"
+    "to a woman: sāfarti (سافرتي)",
+    "سَافَرْتْ"
    ],
    [
     "عند أهلي",
     "ʿind ahli",
     "at my family's, (staying) with my family",
     "عند أهلي",
-    ""
+    "",
+    "عِنْدْ أَهْلِي"
    ],
    [
     "ما شفناك",
     "ma shifnāk",
     "we didn't see you, we haven't seen you (to a man)",
     "لم نرك",
-    "to a woman: ma shifnāch (ما شفناج)"
+    "to a woman: ma shifnāch (ما شفناج)",
+    "مَا شِفْنَاكْ"
    ],
    [
     "ما تنطاق",
     "ma tinṭāg",
     "it's unbearable (a feminine thing: the humidity, the traffic)",
     "لا تطاق",
-    "a masculine thing: ma yinṭāg (ما ينطاق), il-ḥarr ma yinṭāg 'the heat is unbearable'"
+    "a masculine thing: ma yinṭāg (ما ينطاق), il-ḥarr ma yinṭāg 'the heat is unbearable'",
+    "مَا تِنْطَاقْ"
    ],
    [
     "الرطوبة",
     "ir-ruṭūba",
     "the humidity",
     "الرطوبة",
-    ""
+    "",
+    "الرُّطُوبَة"
    ],
    [
     "الغبار",
     "il-ghubār",
     "the dust",
     "الغبار",
-    ""
+    "",
+    "الْغُبَارْ"
    ]
   ]
  },
@@ -480,43 +544,50 @@
     "A",
     "وصلنا. هذا مجلس عمي بو راشد. الرياييل كلهم داخل",
     "wiṣalna. hādha majlis ʿammi Bū Rāshid. ir-ryāyīl killhum dākhil",
-    "We're here. This is my uncle Bū Rāshid's majlis. All the men are inside."
+    "We're here. This is my uncle Bū Rāshid's majlis. All the men are inside.",
+    "وِصَلْنَا. هٰذَا مَجْلِسْ عَمِّي بُو رَاشِدْ. الرّْيَايِيلْ كِلّْهُمْ دَاخِلْ"
    ],
    [
     "B",
     "شو أقول له؟ يا بو راشد؟",
     "shu agūl-lah? yā Bū Rāshid?",
-    "What do I call him? Bū Rāshid?"
+    "What do I call him? Bū Rāshid?",
+    "شُو أَقُولْ لَهْ؟ يَا بُو رَاشِدْ؟"
    ],
    [
     "A",
     "عادي. أو قول له يا عمي، أو طال عمرك",
     "ʿādi. aw gūl-lah yā ʿammi, aw ṭāl ʿumrak",
-    "That's fine. Or call him 'uncle', or 'sir'."
+    "That's fine. Or call him 'uncle', or 'sir'.",
+    "عَادِي. أَوْ قُولْ لَهْ يَا عَمِّي، أَوْ طَالْ عُمْرَكْ"
    ],
    [
     "B",
     "ويا ريّال؟ مثل ما أقول لك؟",
     "w yā rayyāl? mithil ma agūl-lak?",
-    "And 'yā rayyāl'? Like I say to you?"
+    "And 'yā rayyāl'? Like I say to you?",
+    "وْيَا رَيَّالْ؟ مِثِلْ مَا أَقُولْ لَكْ؟"
    ],
    [
     "A",
     "لا تقول له يا ريّال! هذي حق الشباب، مب الكبار",
     "la tgūl-lah yā rayyāl! hādhi ḥagg ish-shabāb, mub il-kbār",
-    "Don't call him 'yā rayyāl'! That's for the guys, not for older people."
+    "Don't call him 'yā rayyāl'! That's for the guys, not for older people.",
+    "لَا تْقُولْ لَهْ يَا رَيَّالْ! هٰذِي حَقّْ الشَّبَابْ، مُبْ الْكْبَارْ"
    ],
    [
     "B",
     "زين. وإذا قال لي الحمد لله على السلامة؟",
     "zēn. w idha gāl-li l-ḥamdu lillāh ʿala s-salāma?",
-    "OK. And if he says 'welcome back' to me?"
+    "OK. And if he says 'welcome back' to me?",
+    "زَيْنْ. وْإِذَا قَالْ لِي الْحَمْدُ لِلّٰهْ عَلَى السَّلَامَة؟"
    ],
    [
     "A",
     "قول له الله يسلمك يا طويل العمر. ناس طيبين، بتشوف",
     "gūl-lah allāh ysallmak yā ṭawīl il-ʿumr. nās ṭayybīn, bitshūf",
-    "Say 'allāh ysallmak, ṭawīl il-ʿumr' to him. They're nice people, you'll see."
+    "Say 'allāh ysallmak, ṭawīl il-ʿumr' to him. They're nice people, you'll see.",
+    "قُولْ لَهْ اللّٰهْ يْسَلّْمَكْ يَا طَوِيلْ الْعُمْرْ. نَاسْ طَيّْبِينْ، بِتْشُوفْ"
    ]
   ],
   "items": [
@@ -525,63 +596,72 @@
     "yā ʿammi",
     "uncle, sir (respectful, to any older man)",
     "يا عمي",
-    "not only for your real uncle"
+    "not only for your real uncle",
+    "يَا عَمِّي"
    ],
    [
     "طال عمرك",
     "ṭāl ʿumrak",
     "sir (respectful; lit. may your life be long) (to a man)",
     "أطال الله عمرك",
-    "to a woman: ṭāl ʿumrich (طال عمرج)"
+    "to a woman: ṭāl ʿumrich (طال عمرج)",
+    "طَالْ عُمْرَكْ"
    ],
    [
     "طويل العمر",
     "ṭawīl il-ʿumr",
     "sir (respectful, to an elder; lit. long-lived one) (to a man)",
     "",
-    "to a woman: ṭawīlat il-ʿumr (طويلة العمر); usually yā ṭawīl il-ʿumr; a mark of respect, not a title"
+    "to a woman: ṭawīlat il-ʿumr (طويلة العمر); usually yā ṭawīl il-ʿumr; a mark of respect, not a title",
+    "طَوِيلْ الْعُمْرْ"
    ],
    [
     "قول له",
     "gūl-lah",
     "tell him, say to him (to a man)",
     "قل له",
-    "to a woman: gūlī-lah (قولي له)"
+    "to a woman: gūlī-lah (قولي له)",
+    "قُولْ لَهْ"
    ],
    [
     "شو أقول له؟",
     "shu agūl-lah?",
     "what do I say to him? what do I call him?",
     "ماذا أقول له؟",
-    ""
+    "",
+    "شُو أَقُولْ لَهْ؟"
    ],
    [
     "لا تقول له",
     "la tgūl-lah",
     "don't tell him, don't say to him (to a man)",
     "لا تقل له",
-    "to a woman: la tgūlīn-lah (لا تقولين له)"
+    "to a woman: la tgūlīn-lah (لا تقولين له)",
+    "لَا تْقُولْ لَهْ"
    ],
    [
     "مثل ما",
     "mithil ma",
     "like, the way (before a verb)",
     "كما",
-    "mithil ma agūl-lak 'the way I say it to you'"
+    "mithil ma agūl-lak 'the way I say it to you'",
+    "مِثِلْ مَا"
    ],
    [
     "إذا قال لي",
     "idha gāl-li",
     "if he says to me",
     "إذا قال لي",
-    ""
+    "",
+    "إِذَا قَالْ لِي"
    ],
    [
     "الكبار",
     "il-kbār",
     "older people, elders; adults",
     "الكبار",
-    "one: kbīr (كبير)"
+    "one: kbīr (كبير)",
+    "الْكْبَارْ"
    ]
   ],
   "culture": "yā rayyāl is for friends. Saying it to an elder or in a meeting is a real social mistake. Older men are yā ʿammi, whether or not they're your uncle. ṭawīl il-ʿumr and ṭāl ʿumrak wish someone a long life. They show respect to elders, strangers and sheikhs, and they aren't a title."
@@ -598,43 +678,50 @@
     "A",
     "هلا والله! حياك الله يا ولدي",
     "hala wallāh! ḥayyāk allāh yā wildi",
-    "Hello there! Welcome, son."
+    "Hello there! Welcome, son.",
+    "هَلَا وَاللّٰهْ! حَيَّاكْ اللّٰهْ يَا وِلْدِي"
    ],
    [
     "B",
     "هلا فيك. الله يحييك يا عمي",
     "hala fīk. allāh yḥayyīk yā ʿammi",
-    "Hello. Thank you, uncle."
+    "Hello. Thank you, uncle.",
+    "هَلَا فِيكْ. اللّٰهْ يْحَيِّيكْ يَا عَمِّي"
    ],
    [
     "A",
     "تفضل اقعد. سيف، ييب الدلة وصب له",
     "tfaẓẓal igʿid. Sēf, yīb id-dalla w ṣubb-lah",
-    "Please, sit down. Sēf, bring the coffee pot and pour him some."
+    "Please, sit down. Sēf, bring the coffee pot and pour him some.",
+    "تْفَضَّلْ اِقْعِدْ. سَيْفْ، يِيبْ الدَّلَّة وْصُبّْ لَهْ"
    ],
    [
     "B",
     "القهوة العربية أحبها وايد",
     "il-gahwa l-ʿarabiyya aḥibbha wāyid",
-    "I love Arabic coffee."
+    "I love Arabic coffee.",
+    "الْقَهْوَة الْعَرَبِيَّة أَحِبّْهَا وَايِدْ"
    ],
    [
     "A",
     "خذ تمر ويا الفنجان. تبي بعد؟",
     "khudh tamr wiyya l-finjān. tabi baʿad?",
-    "Have some dates with your cup. Would you like more?"
+    "Have some dates with your cup. Would you like more?",
+    "خُذْ تَمْرْ وِيَّا الْفِنْجَانْ. تَبِي بَعَدْ؟"
    ],
    [
     "B",
     "بس، مشكور طال عمرك",
     "bas, mashkūr ṭāl ʿumrak",
-    "That's enough, thank you, sir."
+    "That's enough, thank you, sir.",
+    "بَسْ، مَشْكُورْ طَالْ عُمْرَكْ"
    ],
    [
     "A",
     "العفو. ما شاء الله، يعرف يهز الفنجان مثل الكبار!",
     "il-ʿafu. mā shāʼ allāh, yaʿarf yhizz il-finjān mithil il-kbār!",
-    "You're welcome. Well done, he knows to shake the cup like the old folk!"
+    "You're welcome. Well done, he knows to shake the cup like the old folk!",
+    "الْعَفُو. مَا شَاءْ اللّٰهْ، يَعَرْفْ يْهِزّْ الْفِنْجَانْ مِثِلْ الْكْبَارْ!"
    ]
   ],
   "items": [
@@ -643,63 +730,72 @@
     "finjān",
     "a coffee cup (small, without a handle)",
     "فنجان",
-    "UAE also: finyān (فنيان); the cup: il-finjān"
+    "UAE also: finyān (فنيان); the cup: il-finjān",
+    "فِنْجَانْ"
    ],
    [
     "دلة",
     "dalla",
     "a coffee pot (for Arabic coffee)",
     "دلة / إبريق القهوة",
-    "the pot: id-dalla"
+    "the pot: id-dalla",
+    "دَلَّة"
    ],
    [
     "صب له",
     "ṣubb-lah",
     "pour (for) him (to a man)",
     "صب له / اسكب له",
-    "to a woman: ṣubbī-lah (صبي له); pour for me: ṣubb-li (صب لي)"
+    "to a woman: ṣubbī-lah (صبي له); pour for me: ṣubb-li (صب لي)",
+    "صُبّْ لَهْ"
    ],
    [
     "القهوة العربية",
     "il-gahwa l-ʿarabiyya",
     "Arabic coffee",
     "القهوة العربية",
-    ""
+    "",
+    "الْقَهْوَة الْعَرَبِيَّة"
    ],
    [
     "يعرف",
     "yaʿarf",
     "he knows; he knows how to (+ a verb)",
     "يعرف",
-    "yaʿarf yhizz il-finjān 'he knows to shake the cup'; she knows: taʿarf (تعرف)"
+    "yaʿarf yhizz il-finjān 'he knows to shake the cup'; she knows: taʿarf (تعرف)",
+    "يَعَرْفْ"
    ],
    [
     "أحبها",
     "aḥibbha",
     "I love it, I like it (a feminine thing: coffee, a city); I love her",
     "أحبها",
-    "a masculine thing: aḥibbah (أحبه)"
+    "a masculine thing: aḥibbah (أحبه)",
+    "أَحِبّْهَا"
    ],
    [
     "تبي بعد؟",
     "tabi baʿad?",
     "would you like more? (to a man)",
     "أتريد المزيد؟",
-    "to a woman: tabīn baʿad? (تبين بعد؟)"
+    "to a woman: tabīn baʿad? (تبين بعد؟)",
+    "تَبِي بَعَدْ؟"
    ],
    [
     "بس، مشكور",
     "bas, mashkūr",
     "that's enough, thanks (said to a man)",
     "يكفي، شكرًا",
-    "to a woman: bas, mashkūra; in the majlis, shake the cup as you say it"
+    "to a woman: bas, mashkūra; in the majlis, shake the cup as you say it",
+    "بَسْ، مَشْكُورْ"
    ],
    [
     "يهز الفنجان",
     "yhizz il-finjān",
     "he shakes the cup (to say 'no more coffee')",
     "يهز الفنجان",
-    "I shake: ahizz (أهز)"
+    "I shake: ahizz (أهز)",
+    "يْهِزّْ الْفِنْجَانْ"
    ]
   ],
   "culture": "Arabic coffee is poured a little at a time into a small finjān. Take it with your right hand. Your cup is filled again until you give it a small shake from side to side as you hand it back: that means 'no more, thank you'. One to three cups is usual."
@@ -716,43 +812,50 @@
     "A",
     "شو تدرس يا ولدي؟",
     "shu tidris yā wildi?",
-    "What are you studying, son?"
+    "What are you studying, son?",
+    "شُو تِدْرِسْ يَا وِلْدِي؟"
    ],
    [
     "B",
     "أدرس هندسة في الجامعة، طال عمرك",
     "adris handasa fi l-jāmʿa, ṭāl ʿumrak",
-    "I'm studying engineering at the university, sir."
+    "I'm studying engineering at the university, sir.",
+    "أَدْرِسْ هَنْدَسَة فِي الْجَامْعَة، طَالْ عُمْرَكْ"
    ],
    [
     "A",
     "ما شاء الله عليك يا حبيبي!",
     "mā shāʼ allāh ʿalēk yā ḥabībi!",
-    "Good for you, my dear boy!"
+    "Good for you, my dear boy!",
+    "مَا شَاءْ اللّٰهْ عَلَيْكْ يَا حَبِيبِي!"
    ],
    [
     "B",
     "الله يبارك فيك. السموحة يا عمي! طاح الفنجان",
     "allāh ybārik fīk. is-samūḥa yā ʿammi! ṭāḥ il-finjān",
-    "Thank you. Oh, I'm so sorry, uncle! The cup's fallen over."
+    "Thank you. Oh, I'm so sorry, uncle! The cup's fallen over.",
+    "اللّٰهْ يْبَارِكْ فِيكْ. السَّمُوحَة يَا عَمِّي! طَاحْ الْفِنْجَانْ"
    ],
    [
     "A",
     "مسموح، مسموح! ما صار شي",
     "masmūḥ, masmūḥ! ma ṣār shay",
-    "That's all right, that's all right! It's nothing."
+    "That's all right, that's all right! It's nothing.",
+    "مَسْمُوحْ، مَسْمُوحْ! مَا صَارْ شَيْ"
    ],
    [
     "B",
     "خلني أمسحه يا عمي",
     "khallni amsaḥah yā ʿammi",
-    "Let me wipe it up, uncle."
+    "Let me wipe it up, uncle.",
+    "خَلّْنِي أَمْسَحَهْ يَا عَمِّي"
    ],
    [
     "A",
     "ما عليه، خله! سيف بيمسحه",
     "ma ʿalēh, khallah! Sēf biyimsaḥah",
-    "Never mind, leave it! Sēf will wipe it up."
+    "Never mind, leave it! Sēf will wipe it up.",
+    "مَا عَلَيْهْ، خَلَّهْ! سَيْفْ بِيِمْسَحَهْ"
    ]
   ],
   "items": [
@@ -761,63 +864,72 @@
     "is-samūḥa",
     "sorry, excuse me (asking forgiveness)",
     "المعذرة / عفوًا",
-    "the reply is masmūḥ; also is-samūḥa minnak 'forgive me' (to a man; to a woman: is-samūḥa minnich)"
+    "the reply is masmūḥ; also is-samūḥa minnak 'forgive me' (to a man; to a woman: is-samūḥa minnich)",
+    "السَّمُوحَة"
    ],
    [
     "مسموح",
     "masmūḥ",
     "that's all right, you're forgiven (the reply to is-samūḥa)",
     "مسامح / لا عليك",
-    ""
+    "",
+    "مَسْمُوحْ"
    ],
    [
     "ما عليه",
     "ma ʿalēh",
     "never mind, it doesn't matter",
     "لا بأس",
-    "maʿlēsh (معليش) means the same; you'll see written ماعليه"
+    "maʿlēsh (معليش) means the same; you'll see written ماعليه",
+    "مَا عَلَيْهْ"
    ],
    [
     "حبيبي",
     "ḥabībi",
     "my dear, mate (elders and friends say it to you; you say it to friends only)",
     "حبيبي",
-    "usually yā ḥabībi; never to a woman outside the family"
+    "usually yā ḥabībi; never to a woman outside the family",
+    "حَبِيبِي"
    ],
    [
     "شو تدرس؟",
     "shu tidris?",
     "what are you studying? (to a man)",
     "ماذا تدرس؟",
-    "to a woman: shu tidrisīn? (شو تدرسين؟)"
+    "to a woman: shu tidrisīn? (شو تدرسين؟)",
+    "شُو تِدْرِسْ؟"
    ],
    [
     "طاح",
     "ṭāḥ",
     "it fell, it fell over; he fell",
     "وقع / سقط",
-    "she or it (f.) fell: ṭāḥat (طاحت)"
+    "she or it (f.) fell: ṭāḥat (طاحت)",
+    "طَاحْ"
    ],
    [
     "ما صار شي",
     "ma ṣār shay",
     "it's nothing, nothing happened",
     "لم يحدث شيء",
-    ""
+    "",
+    "مَا صَارْ شَيْ"
    ],
    [
     "خلني أمسحه",
     "khallni amsaḥah",
     "let me wipe it (up) (to a man)",
     "دعني أمسحه",
-    "to a woman: khallīni amsaḥah (خليني أمسحه)"
+    "to a woman: khallīni amsaḥah (خليني أمسحه)",
+    "خَلّْنِي أَمْسَحَهْ"
    ],
    [
     "خله",
     "khallah",
     "leave it, let it be (to a man)",
     "اتركه / دعه",
-    "to a woman: khallīh (خليه)"
+    "to a woman: khallīh (خليه)",
+    "خَلَّهْ"
    ]
   ]
  },
@@ -833,43 +945,50 @@
     "A",
     "تفضل، هذا بخور. تبخر يا ولدي",
     "tfaẓẓal, hādha bukhūr. tbakhkhar yā wildi",
-    "Here, this is incense. Perfume yourself with it, son."
+    "Here, this is incense. Perfume yourself with it, son.",
+    "تْفَضَّلْ، هٰذَا بُخُورْ. تْبَخَّرْ يَا وِلْدِي"
    ],
    [
     "B",
     "ما شاء الله، ريحته حلوة وايد!",
     "mā shāʼ allāh, rīḥtah ḥilwa wāyid!",
-    "Wow, it smells really nice!"
+    "Wow, it smells really nice!",
+    "مَا شَاءْ اللّٰهْ، رِيحْتَهْ حِلْوَة وَايِدْ!"
    ],
    [
     "A",
     "خذ المدخن وقربه صوبك",
     "khudh il-madkhan w garrbah ṣōbak",
-    "Take the burner and hold it close to you."
+    "Take the burner and hold it close to you.",
+    "خُذْ الْمَدْخَنْ وْقَرّْبَهْ صَوْبَكْ"
    ],
    [
     "B",
     "زين جي يا عمي؟",
     "zēn chī yā ʿammi?",
-    "Like this, uncle?"
+    "Like this, uncle?",
+    "زَيْنْ جِي يَا عَمِّي؟"
    ],
    [
     "A",
     "هيه، زين جي. والحين بتتعشى ويانا يا حبيبي",
     "hē, zēn chī. w il-ḥīn bititʿashsha wiyyāna yā ḥabībi",
-    "Yes, that's right. And now you're having dinner with us, my boy."
+    "Yes, that's right. And now you're having dinner with us, my boy.",
+    "هَيْه، زَيْنْ جِي. وْالْحِينْ بِتِتْعَشَّى وِيَّانَا يَا حَبِيبِي"
    ],
    [
     "B",
     "الله يخليك طال عمرك، المرة الياية إن شاء الله",
     "allāh ykhallīk ṭāl ʿumrak, il-marra l-yāya in shāʼ allāh",
-    "That's very kind, sir, next time, God willing."
+    "That's very kind, sir, next time, God willing.",
+    "اللّٰهْ يْخَلِّيكْ طَالْ عُمْرَكْ، الْمَرَّة الْيَايَة إِنْ شَاءْ اللّٰهْ"
    ],
    [
     "A",
     "لا والله، ما تروح بلا عشا!",
     "la wallāh, ma trūḥ bala ʿasha!",
-    "No way, you're not leaving without dinner!"
+    "No way, you're not leaving without dinner!",
+    "لَا وَاللّٰهْ، مَا تْرُوحْ بَلَا عَشَا!"
    ]
   ],
   "items": [
@@ -878,56 +997,64 @@
     "bukhūr",
     "incense (wood chips or paste burnt for scent)",
     "بخور",
-    "the incense: il-bukhūr"
+    "the incense: il-bukhūr",
+    "بُخُورْ"
    ],
    [
     "المدخن",
     "il-madkhan",
     "the incense burner",
     "المبخرة",
-    "also: il-mabkhar (المبخر), commoner in Kuwait"
+    "also: il-mabkhar (المبخر), commoner in Kuwait",
+    "الْمَدْخَنْ"
    ],
    [
     "تبخر",
     "tbakhkhar",
     "perfume yourself with the incense (to a man)",
     "تطيب بالبخور",
-    "to a woman: tbakhkhari (تبخري)"
+    "to a woman: tbakhkhari (تبخري)",
+    "تْبَخَّرْ"
    ],
    [
     "قربه",
     "garrbah",
     "bring it closer (a masculine thing) (to a man)",
     "قربه",
-    "to a woman: garrbīh (قربيه); garrbah ṣōbak 'bring it close to you'"
+    "to a woman: garrbīh (قربيه); garrbah ṣōbak 'bring it close to you'",
+    "قَرّْبَهْ"
    ],
    [
     "زين جي؟",
     "zēn chī?",
     "is this all right? like this?",
     "هكذا؟ / هل هذا جيد؟",
-    "the answer: hē, zēn chī 'yes, that's right'"
+    "the answer: hē, zēn chī 'yes, that's right'",
+    "زَيْنْ جِي؟"
    ],
    [
     "بتتعشى ويانا",
     "bititʿashsha wiyyāna",
     "you'll have dinner with us (to a man)",
     "ستتعشى معنا",
-    "to a woman: bititʿashshīn wiyyāna (بتتعشين ويانا)"
+    "to a woman: bititʿashshīn wiyyāna (بتتعشين ويانا)",
+    "بِتِتْعَشَّى وِيَّانَا"
    ],
    [
     "بلا",
     "bala",
     "without",
     "بلا / بدون",
-    "bala ʿasha 'without dinner'"
+    "bala ʿasha 'without dinner'",
+    "بَلَا"
    ],
    [
     "ما تروح",
     "ma trūḥ",
     "you're not going (a host insisting) (to a man)",
     "لن تذهب",
-    "to a woman: ma trūḥīn (ما تروحين)"
+    "to a woman: ma trūḥīn (ما تروحين)",
+    "مَا تْرُوحْ"
    ]
   ],
   "culture": "Bukhūr (incense) is passed round in a burner, and guests let the smoke reach their clothes and hair. It often comes near the end of a visit, but it doesn't always mean the visit is over. A host will insist you stay to eat; il-marra l-yāya and allāh ykhallīk decline politely. You may also hear kaththar khērak (كثر خيرك) used as a polite 'no, thank you'."
@@ -944,43 +1071,50 @@
     "B",
     "يا عمي، نستأذن الحين",
     "yā ʿammi, nistaʼdhin il-ḥīn",
-    "Uncle, we'll be on our way now."
+    "Uncle, we'll be on our way now.",
+    "يَا عَمِّي، نِسْتَأْذِنْ الْحِينْ"
    ],
    [
     "A",
     "وين؟ بدري! اقعدوا شوي",
     "wēn? badri! igʿdu shwayy",
-    "What, already? It's early! Stay a bit longer."
+    "What, already? It's early! Stay a bit longer.",
+    "وَيْنْ؟ بَدْرِي! اِقْعْدُوا شْوَيّْ"
    ],
    [
     "B",
     "الله يخليك، عندي محاضرة الصبح. لازم أقوم بدري",
     "allāh ykhallīk, ʿindi muḥāẓra ṣ-ṣubḥ. lāzim agūm badri",
-    "That's kind of you, but I've got a lecture in the morning. I have to get up early."
+    "That's kind of you, but I've got a lecture in the morning. I have to get up early.",
+    "اللّٰهْ يْخَلِّيكْ، عِنْدِي مُحَاضْرَة الصُّبْحْ. لَازِمْ أَقُومْ بَدْرِي"
    ],
    [
     "A",
     "زين. حياك أي وقت، لازم تزورنا يا حبيبي",
     "zēn. ḥayyāk ay wagt, lāzim tzūrna yā ḥabībi",
-    "All right. You're welcome any time, you must visit us, my boy."
+    "All right. You're welcome any time, you must visit us, my boy.",
+    "زَيْنْ. حَيَّاكْ أَيْ وَقْتْ، لَازِمْ تْزُورْنَا يَا حَبِيبِي"
    ],
    [
     "B",
     "أكيد إن شاء الله. ما قصرت طال عمرك",
     "akīd in shāʼ allāh. mā gaṣṣart ṭāl ʿumrak",
-    "Of course, God willing. Thank you for everything, sir."
+    "Of course, God willing. Thank you for everything, sir.",
+    "أَكِيدْ إِنْ شَاءْ اللّٰهْ. مَا قَصَّرْتْ طَالْ عُمْرَكْ"
    ],
    [
     "A",
     "ما سوينا شي. سلم لي على أبوك، وفي أمان الله",
     "mā sawwēna shay. sallim-li ʿala ubūk, w fī amān illāh",
-    "It was nothing. Give my regards to your father, and goodbye."
+    "It was nothing. Give my regards to your father, and goodbye.",
+    "مَا سَوَّيْنَا شَيْ. سَلِّمْ لِي عَلَى أُبُوكْ، وْفِي أَمَانْ اللّٰهْ"
    ],
    [
     "B",
     "إن شاء الله. مع السلامة يا عمي",
     "in shāʼ allāh. maʿa s-salāma yā ʿammi",
-    "I will. Goodbye, uncle."
+    "I will. Goodbye, uncle.",
+    "إِنْ شَاءْ اللّٰهْ. مَعَ السَّلَامَة يَا عَمِّي"
    ]
   ],
   "items": [
@@ -989,56 +1123,64 @@
     "nistaʼdhin",
     "we'll be going, we'd like to take our leave (polite)",
     "نستأذن",
-    "I'll be going: astaʼdhin (أستأذن)"
+    "I'll be going: astaʼdhin (أستأذن)",
+    "نِسْتَأْذِنْ"
    ],
    [
     "وين؟ بدري!",
     "wēn? badri!",
     "what, already? it's early! (urging a guest to stay)",
     "إلى أين؟ ما زال الوقت مبكرًا",
-    ""
+    "",
+    "وَيْنْ؟ بَدْرِي!"
    ],
    [
     "اقعدوا",
     "igʿdu",
     "sit down; stay (to a group)",
     "اجلسوا",
-    "to one man: igʿid (اقعد); to one woman: igʿidi (اقعدي); UAE also: iylisu (ايلسوا)"
+    "to one man: igʿid (اقعد); to one woman: igʿidi (اقعدي); UAE also: iylisu (ايلسوا)",
+    "اِقْعْدُوا"
    ],
    [
     "أقوم",
     "agūm",
     "I get up",
     "أقوم / أنهض",
-    "lāzim agūm badri 'I have to get up early'; get up! (to a man): gūm (قوم)"
+    "lāzim agūm badri 'I have to get up early'; get up! (to a man): gūm (قوم)",
+    "أَقُومْ"
    ],
    [
     "تزورنا",
     "tzūrna",
     "you visit us, (that) you visit us (to a man)",
     "تزورنا",
-    "to a woman: tzūrīnna (تزورينا); lāzim tzūrna 'you must visit us'"
+    "to a woman: tzūrīnna (تزورينا); lāzim tzūrna 'you must visit us'",
+    "تْزُورْنَا"
    ],
    [
     "أي وقت",
     "ay wagt",
     "any time",
     "في أي وقت",
-    "ḥayyāk ay wagt 'you're welcome any time' (to a man)"
+    "ḥayyāk ay wagt 'you're welcome any time' (to a man)",
+    "أَيْ وَقْتْ"
    ],
    [
     "سلم لي على",
     "sallim-li ʿala",
     "give my regards to, say hi to … for me (to a man)",
     "سلم لي على",
-    "to a woman: sallmī-li ʿala (سلمي لي على)"
+    "to a woman: sallmī-li ʿala (سلمي لي على)",
+    "سَلِّمْ لِي عَلَى"
    ],
    [
     "أبوك",
     "ubūk",
     "your dad, your father (to a man)",
     "أبوك / والدك",
-    "to a woman: ubūch (أبوج)"
+    "to a woman: ubūch (أبوج)",
+    "أُبُوكْ"
    ]
   ],
   "culture": "Leaving a majlis is a small ritual with several rounds. You say you're going, the host urges you to stay, you give a reason and thank him, and he asks you to come again and sends greetings to your family."

@@ -11,43 +11,50 @@
     "B",
     "مساء الخير. أبي سماعات حق الدراسة",
     "masāʼ il-khēr. abi sammāʿāt ḥagg id-dirāsa",
-    "Good evening. I want some headphones for studying."
+    "Good evening. I want some headphones for studying.",
+    "مَسَاءْ الْخَيْرْ. أَبِي سَمَّاعَاتْ حَقّْ الدِّرَاسَة"
    ],
    [
     "A",
     "مساء النور. هذي زينة، بتسع مية",
     "masāʼ in-nūr. hādhi zēna, b-tisʿ miya",
-    "Good evening. These are good. They're nine hundred."
+    "Good evening. These are good. They're nine hundred.",
+    "مَسَاءْ النُّورْ. هٰذِي زَيْنَة، بْتِسْعْ مِيَة"
    ],
    [
     "B",
     "تسع مية؟ غالية وايد! عندك سماعات أرخص؟",
     "tisʿ miya? ghālya wāyid! ʿindak sammāʿāt arkhaṣ?",
-    "Nine hundred? That's really expensive! Have you got cheaper headphones?"
+    "Nine hundred? That's really expensive! Have you got cheaper headphones?",
+    "تِسْعْ مِيَة؟ غَالْيَة وَايِدْ! عِنْدَكْ سَمَّاعَاتْ أَرْخَصْ؟"
    ],
    [
     "A",
     "هذيك بخمس مية، وهذيك بثلاث مية وخمسين",
     "hādhīch b-khams miya, w hādhīch b-thalāth miya w khamsīn",
-    "Those are five hundred, and those are three hundred and fifty."
+    "Those are five hundred, and those are three hundred and fifty.",
+    "هٰذِيكْ بْخَمْسْ مِيَة، وْهٰذِيكْ بْثَلَاثْ مِيَة وْخَمْسِينْ"
    ],
    [
     "B",
     "زين، باخذ اللي بثلاث مية وخمسين",
     "zēn, bākhidh illi b-thalāth miya w khamsīn",
-    "OK, I'll take the ones for three hundred and fifty."
+    "OK, I'll take the ones for three hundred and fifty.",
+    "زَيْنْ، بَاخِذْ اللِّي بْثَلَاثْ مِيَة وْخَمْسِينْ"
    ],
    [
     "A",
     "ثلاث مية وخمسين درهم. كاش ولّا بطاقة؟",
     "thalāth miya w khamsīn dirham. kāsh walla biṭāga?",
-    "Three hundred and fifty dirhams. Cash or card?"
+    "Three hundred and fifty dirhams. Cash or card?",
+    "ثَلَاثْ مِيَة وْخَمْسِينْ دِرْهَمْ. كَاشْ وَلَّا بِطَاقَة؟"
    ],
    [
     "B",
     "كاش. هذي أربع مية. وقبل لا أنسى، أبي الفاتورة",
     "kāsh. hādhi arbaʿ miya. w gabil la ansa, abi l-fātūra",
-    "Cash. Here's four hundred. And before I forget, I'd like the receipt."
+    "Cash. Here's four hundred. And before I forget, I'd like the receipt.",
+    "كَاشْ. هٰذِي أَرْبَعْ مِيَة. وْقَبِلْ لَا أَنْسَى، أَبِي الْفَاتُورَة"
    ]
   ],
   "items": [
@@ -56,56 +63,64 @@
     "thalāth miya",
     "three hundred (300)",
     "ثلاثمئة",
-    "two hundred is mītēn (ميتين, u14)"
+    "two hundred is mītēn (ميتين, u14)",
+    "ثَلَاثْ مِيَة"
    ],
    [
     "أربع مية",
     "arbaʿ miya",
     "four hundred (400)",
     "أربعمئة",
-    ""
+    "",
+    "أَرْبَعْ مِيَة"
    ],
    [
     "خمس مية",
     "khams miya",
     "five hundred (500)",
     "خمسمئة",
-    "600 sitt miya, 700 sabʿ miya, 800 thamān miya"
+    "600 sitt miya, 700 sabʿ miya, 800 thamān miya",
+    "خَمْسْ مِيَة"
    ],
    [
     "تسع مية",
     "tisʿ miya",
     "nine hundred (900)",
     "تسعمئة",
-    ""
+    "",
+    "تِسْعْ مِيَة"
    ],
    [
     "ثلاث مية وخمسين",
     "thalāth miya w khamsīn",
     "three hundred and fifty (350)",
     "ثلاثمئة وخمسون",
-    "the hundreds first, then the tens with w: mītēn w ʿishrīn = 220"
+    "the hundreds first, then the tens with w: mītēn w ʿishrīn = 220",
+    "ثَلَاثْ مِيَة وْخَمْسِينْ"
    ],
    [
     "درهم",
     "dirham",
     "a dirham; dirhams (after a number, and in prices)",
     "درهم",
-    "a dirham has a hundred fils (فلس); after 3 to 10 you'll also hear darāhim (دراهم); Kuwait's money: dīnār (دينار)"
+    "a dirham has a hundred fils (فلس); after 3 to 10 you'll also hear darāhim (دراهم); Kuwait's money: dīnār (دينار)",
+    "دِرْهَمْ"
    ],
    [
     "سماعات",
     "sammāʿāt",
     "headphones, earphones",
     "سماعات",
-    ""
+    "",
+    "سَمَّاعَاتْ"
    ],
    [
     "غالية",
     "ghālya",
     "expensive (with a feminine word, or several things)",
     "غالية",
-    "with a masculine word: ghāli (غالي)"
+    "with a masculine word: ghāli (غالي)",
+    "غَالْيَة"
    ]
   ]
  },
@@ -121,43 +136,50 @@
     "A",
     "شوف سيارتي اليديدة! شرايك؟",
     "shūf sayyārti l-yidīda! shrāyak?",
-    "Look at my new car! What do you think?"
+    "Look at my new car! What do you think?",
+    "شُوفْ سَيَّارْتِي الْيِدِيدَة! شْرَايَكْ؟"
    ],
    [
     "B",
     "ما شاء الله، مبروك عليج! حلوة وأكيد غالية. بكم؟",
     "mā shāʼ allāh, mabrūk ʿalēch! ḥilwa w akīd ghālya. b-cham?",
-    "Wow, congratulations! It's lovely, and it must have been expensive. How much?"
+    "Wow, congratulations! It's lovely, and it must have been expensive. How much?",
+    "مَا شَاءْ اللّٰهْ، مَبْرُوكْ عَلَيْجْ! حِلْوَة وْأَكِيدْ غَالْيَة. بْكَمْ؟"
    ],
    [
     "A",
     "الله يبارك فيك. بخمسين ألف. مب يديدة، عمرها ثلاث سنين",
     "allāh ybārik fīk. b-khamsīn alf. mub yidīda, ʿumrha thalāth sinīn",
-    "Thank you. Fifty thousand. It's not brand new, it's three years old."
+    "Thank you. Fifty thousand. It's not brand new, it's three years old.",
+    "اللّٰهْ يْبَارِكْ فِيكْ. بْخَمْسِينْ أَلْفْ. مُبْ يِدِيدَة، عُمْرْهَا ثَلَاثْ سِنِينْ"
    ],
    [
     "B",
     "خمسين ألف؟ كل اللي عندي ثلاث آلاف!",
     "khamsīn alf? kill illi ʿindi thalāth ālāf!",
-    "Fifty thousand? All I've got is three thousand!"
+    "Fifty thousand? All I've got is three thousand!",
+    "خَمْسِينْ أَلْفْ؟ كِلّْ اللِّي عِنْدِي ثَلَاثْ آلَافْ!"
    ],
    [
     "A",
     "بثلاث آلاف؟ تشتري سيكل بس!",
     "b-thalāth ālāf? tishtiri sēkal bas!",
-    "With three thousand? You could only buy a bike!"
+    "With three thousand? You could only buy a bike!",
+    "بْثَلَاثْ آلَافْ؟ تِشْتِرِي سَيْكَلْ بَسْ!"
    ],
    [
     "B",
     "عادي. وتدفعين حق البنك كل شهر؟",
     "ʿādi. w tidfaʿīn ḥagg il-bank kill shahar?",
-    "That's fine. And do you pay the bank every month?"
+    "That's fine. And do you pay the bank every month?",
+    "عَادِي. وْتِدْفَعِينْ حَقّْ الْبَنْكْ كِلّْ شَهَرْ؟"
    ],
    [
     "A",
     "هيه، ألفين في الشهر، لين سنة ألفين وثمانية وعشرين!",
     "hē, alfēn fi sh-shahar, lēn sanat alfēn w thamānya w ʿishrīn!",
-    "Yes, two thousand a month, until 2028!"
+    "Yes, two thousand a month, until 2028!",
+    "هَيْه، أَلْفَيْنْ فِي الشَّهَرْ، لَيْنْ سَنَةْ أَلْفَيْنْ وْثَمَانْيَة وْعِشْرِينْ!"
    ]
   ],
   "items": [
@@ -166,63 +188,72 @@
     "alfēn",
     "two thousand (2,000)",
     "ألفان",
-    ""
+    "",
+    "أَلْفَيْنْ"
    ],
    [
     "ثلاث آلاف",
     "thalāth ālāf",
     "three thousand (3,000)",
     "ثلاثة آلاف",
-    "the same up to 10,000: arbaʿ ālāf, khams ālāf … ʿashr ālāf (عشر آلاف; you'll see written عشرة آلاف)"
+    "the same up to 10,000: arbaʿ ālāf, khams ālāf … ʿashr ālāf (عشر آلاف; you'll see written عشرة آلاف)",
+    "ثَلَاثْ آلَافْ"
    ],
    [
     "خمسين ألف",
     "khamsīn alf",
     "fifty thousand (50,000)",
     "خمسون ألفًا",
-    "from 11,000 up alf stays the same: ʿishrīn alf 20,000; miyat alf 100,000"
+    "from 11,000 up alf stays the same: ʿishrīn alf 20,000; miyat alf 100,000",
+    "خَمْسِينْ أَلْفْ"
    ],
    [
     "في الشهر",
     "fi sh-shahar",
     "a month, per month",
     "في الشهر / شهريًا",
-    ""
+    "",
+    "فِي الشَّهَرْ"
    ],
    [
     "عمرها ثلاث سنين",
     "ʿumrha thalāth sinīn",
     "it's three years old (a feminine thing); she's three",
     "عمرها ثلاث سنوات",
-    "a masculine thing or a boy: ʿumrah (عمره); you've also seen thalāth sanawāt (s1u023)"
+    "a masculine thing or a boy: ʿumrah (عمره); you've also seen thalāth sanawāt (s1u023)",
+    "عُمْرْهَا ثَلَاثْ سِنِينْ"
    ],
    [
     "تشتري",
     "tishtiri",
     "you buy (to a man); she buys",
     "تشتري",
-    "to a woman: tishtirīn (تشترين)"
+    "to a woman: tishtirīn (تشترين)",
+    "تِشْتِرِي"
    ],
    [
     "سيكل",
     "sēkal",
     "a bike, a bicycle",
     "دراجة",
-    ""
+    "",
+    "سَيْكَلْ"
    ],
    [
     "كل شهر",
     "kill shahar",
     "every month",
     "كل شهر",
-    "every week: kill usbūʿ (كل أسبوع); every day: kill yōm (كل يوم)"
+    "every week: kill usbūʿ (كل أسبوع); every day: kill yōm (كل يوم)",
+    "كِلّْ شَهَرْ"
    ],
    [
     "البنك",
     "il-bank",
     "the bank",
     "البنك",
-    ""
+    "",
+    "الْبَنْكْ"
    ]
   ]
  },
@@ -238,43 +269,50 @@
     "B",
     "ألو سيف، طلعت من المترو. وين الشقة؟",
     "alō Sēf, ṭilaʿt min il-mitrō. wēn ish-shigga?",
-    "Hello Sēf, I've come out of the metro. Where's the flat?"
+    "Hello Sēf, I've come out of the metro. Where's the flat?",
+    "أَلَوْ سَيْفْ، طِلَعْتْ مِنْ الْمِتْرَوْ. وَيْنْ الشِّقَّة؟"
    ],
    [
     "A",
     "روح سيدا، وثالث شارع على اليمين",
     "rūḥ sīda, w thālith shāriʿ ʿala l-yamīn",
-    "Go straight on, and it's the third street on the right."
+    "Go straight on, and it's the third street on the right.",
+    "رُوحْ سِيدَا، وْثَالِثْ شَارِعْ عَلَى الْيَمِينْ"
    ],
    [
     "B",
     "ثالث شارع؟ زين. وبعدها؟",
     "thālith shāriʿ? zēn. w baʿd-ha?",
-    "The third street? OK. And after that?"
+    "The third street? OK. And after that?",
+    "ثَالِثْ شَارِعْ؟ زَيْنْ. وْبَعْدْهَا؟"
    ],
    [
     "A",
     "رابع بناية، اللي يم الإشارة. الطابق العاشر",
     "rābiʿ bināya, illi yamm il-ishāra. iṭ-ṭābig il-ʿāshir",
-    "The fourth building, the one by the traffic lights. The tenth floor."
+    "The fourth building, the one by the traffic lights. The tenth floor.",
+    "رَابِعْ بِنَايَة، اللِّي يَمّْ الْإِشَارَة. الطَّابِقْ الْعَاشِرْ"
    ],
    [
     "B",
     "العاشر؟! واللفت شغال؟",
     "il-ʿāshir?! w il-lift shaghghāl?",
-    "The tenth?! Is the lift working?"
+    "The tenth?! Is the lift working?",
+    "الْعَاشِرْ؟! وْاللِّفْتْ شَغَّالْ؟"
    ],
    [
     "A",
     "هيه. يلا، الكل هني. انت آخر واحد!",
     "hē. yalla, il-kill hni. inta ākhir wāḥid!",
-    "Yes. Come on, everyone's here. You're the last one!"
+    "Yes. Come on, everyone's here. You're the last one!",
+    "هَيْه. يَلَّا، الْكِلّْ هْنِي. اِنْتَ آخِرْ وَاحِدْ!"
    ],
    [
     "B",
     "ياي! لا تاكلون قبل لا أوصل!",
     "yāy! la tāklūn gabil la ōṣal!",
-    "I'm coming! Don't eat before I get there!"
+    "I'm coming! Don't eat before I get there!",
+    "يَايْ! لَا تَاكْلُونْ قَبِلْ لَا أَوْصَلْ!"
    ]
   ],
   "items": [
@@ -283,63 +321,72 @@
     "thālith",
     "third",
     "ثالث",
-    "before a noun: thālith shāriʿ = the third street"
+    "before a noun: thālith shāriʿ = the third street",
+    "ثَالِثْ"
    ],
    [
     "رابع",
     "rābiʿ",
     "fourth",
     "رابع",
-    "fifth: khāmis (خامس); sixth: sādis (سادس)"
+    "fifth: khāmis (خامس); sixth: sādis (سادس)",
+    "رَابِعْ"
    ],
    [
     "عاشر",
     "ʿāshir",
     "tenth",
     "عاشر",
-    "seventh: sābiʿ; eighth: thāmin; ninth: tāsiʿ"
+    "seventh: sābiʿ; eighth: thāmin; ninth: tāsiʿ",
+    "عَاشِرْ"
    ],
    [
     "آخر واحد",
     "ākhir wāḥid",
     "the last one",
     "آخر واحد",
-    "to a woman: inti ākhir waḥda (انتي آخر وحدة)"
+    "to a woman: inti ākhir waḥda (انتي آخر وحدة)",
+    "آخِرْ وَاحِدْ"
    ],
    [
     "شارع",
     "shāriʿ",
     "street, road",
     "شارع",
-    ""
+    "",
+    "شَارِعْ"
    ],
    [
     "على اليمين",
     "ʿala l-yamīn",
     "on the right",
     "على اليمين",
-    "on the left: ʿala l-yasār (على اليسار)"
+    "on the left: ʿala l-yasār (على اليسار)",
+    "عَلَى الْيَمِينْ"
    ],
    [
     "الطابق",
     "iṭ-ṭābig",
     "the floor, the storey (of a building)",
     "الطابق",
-    "also: id-dōr (الدور)"
+    "also: id-dōr (الدور)",
+    "الطَّابِقْ"
    ],
    [
     "اللفت",
     "il-lift",
     "the lift (UAE)",
     "المصعد",
-    "also: il-maṣʿad (المصعد)"
+    "also: il-maṣʿad (المصعد)",
+    "اللِّفْتْ"
    ],
    [
     "لا تاكلون",
     "la tāklūn",
     "don't eat (to a group)",
     "لا تأكلوا",
-    "to one man: la tākil (لا تاكل); to one woman: la tāklīn (لا تاكلين)"
+    "to one man: la tākil (لا تاكل); to one woman: la tāklīn (لا تاكلين)",
+    "لَا تَاكْلُونْ"
    ]
   ]
  },
@@ -355,43 +402,50 @@
     "B",
     "سيف، قبل لا أنسى، متى عيد ميلادك؟",
     "Sēf, gabil la ansa, mita ʿīd mīlādak?",
-    "Sēf, before I forget, when's your birthday?"
+    "Sēf, before I forget, when's your birthday?",
+    "سَيْفْ، قَبِلْ لَا أَنْسَى، مِتَى عِيدْ مِيلَادَكْ؟"
    ],
    [
     "A",
     "في شهر إحدعش، آخر الشهر",
     "fi shahar iḥdaʿash, ākhir ish-shahar",
-    "In November, at the end of the month."
+    "In November, at the end of the month.",
+    "فِي شَهَرْ إِحْدَعَشْ، آخِرْ الشَّهَرْ"
    ],
    [
     "B",
     "يعني الشهر الياي! كم عمرك الحين؟",
     "yaʿni sh-shahar il-yāy! cham ʿumrak il-ḥīn?",
-    "So next month! How old are you now?"
+    "So next month! How old are you now?",
+    "يَعْنِي الشَّهَرْ الْيَايْ! كَمْ عُمْرَكْ الْحِينْ؟"
    ],
    [
     "A",
     "ثنين وعشرين، وبيصير عمري ثلاثة وعشرين. وانت؟",
     "thnēn w ʿishrīn, w biyṣīr ʿumri thalātha w ʿishrīn. w inta?",
-    "Twenty-two, and I'll be twenty-three. And you?"
+    "Twenty-two, and I'll be twenty-three. And you?",
+    "ثْنَيْنْ وْعِشْرِينْ، وْبِيْصِيرْ عُمْرِي ثَلَاثَة وْعِشْرِينْ. وْاِنْتَ؟"
    ],
    [
     "B",
     "عيد ميلادي كان في شهر تسعة، الشهر اللي طاف",
     "ʿīd mīlādi kān fi shahar tisʿa, ish-shahar illi ṭāf",
-    "My birthday was in September, last month."
+    "My birthday was in September, last month.",
+    "عِيدْ مِيلَادِي كَانْ فِي شَهَرْ تِسْعَة، الشَّهَرْ اللِّي طَافْ"
    ],
    [
     "A",
     "والله؟ ليش ما قلت لي؟",
     "wallāh? lēsh ma gilt-li?",
-    "Really? Why didn't you tell me?"
+    "Really? Why didn't you tell me?",
+    "وَاللّٰهْ؟ لَيْشْ مَا قِلْتْ لِي؟"
    ],
    [
     "B",
     "كنت مسافر ويا أهلي. وصار عمري عشرين!",
     "kint msāfir wiyya ahli. w ṣār ʿumri ʿishrīn!",
-    "I was away with my family. And I've turned twenty!"
+    "I was away with my family. And I've turned twenty!",
+    "كِنْتْ مْسَافِرْ وِيَّا أَهْلِي. وْصَارْ عُمْرِي عِشْرِينْ!"
    ]
   ],
   "items": [
@@ -400,63 +454,72 @@
     "shahar",
     "month",
     "شهر",
-    "two months: shahrēn (شهرين); months: shhūr (شهور)"
+    "two months: shahrēn (شهرين); months: shhūr (شهور)",
+    "شَهَرْ"
    ],
    [
     "شهر تسعة",
     "shahar tisʿa",
     "September (lit. month nine)",
     "سبتمبر / أيلول",
-    "the same for every month: shahar ʿashra = October"
+    "the same for every month: shahar ʿashra = October",
+    "شَهَرْ تِسْعَة"
    ],
    [
     "الشهر الياي",
     "ish-shahar il-yāy",
     "next month",
     "الشهر القادم",
-    "next week: il-usbūʿ il-yāy (الأسبوع الياي)"
+    "next week: il-usbūʿ il-yāy (الأسبوع الياي)",
+    "الشَّهَرْ الْيَايْ"
    ],
    [
     "الشهر اللي طاف",
     "ish-shahar illi ṭāf",
     "last month",
     "الشهر الماضي",
-    "last week: il-usbūʿ illi ṭāf (الأسبوع اللي طاف)"
+    "last week: il-usbūʿ illi ṭāf (الأسبوع اللي طاف)",
+    "الشَّهَرْ اللِّي طَافْ"
    ],
    [
     "آخر الشهر",
     "ākhir ish-shahar",
     "the end of the month",
     "آخر الشهر",
-    "the start of the month: awwal ish-shahar (أول الشهر)"
+    "the start of the month: awwal ish-shahar (أول الشهر)",
+    "آخِرْ الشَّهَرْ"
    ],
    [
     "عيد ميلادي",
     "ʿīd mīlādi",
     "my birthday",
     "عيد ميلادي",
-    ""
+    "",
+    "عِيدْ مِيلَادِي"
    ],
    [
     "متى عيد ميلادك؟",
     "mita ʿīd mīlādak?",
     "when's your birthday? (to a man)",
     "متى عيد ميلادك؟",
-    "to a woman: mita ʿīd mīlādich? (متى عيد ميلادج؟)"
+    "to a woman: mita ʿīd mīlādich? (متى عيد ميلادج؟)",
+    "مِتَى عِيدْ مِيلَادَكْ؟"
    ],
    [
     "كم عمرك؟",
     "cham ʿumrak?",
     "how old are you? (to a man)",
     "كم عمرك؟",
-    "to a woman: cham ʿumrich? (كم عمرج؟)"
+    "to a woman: cham ʿumrich? (كم عمرج؟)",
+    "كَمْ عُمْرَكْ؟"
    ],
    [
     "صار عمري",
     "ṣār ʿumri",
     "I've turned (an age), I'm now",
     "أصبح عمري",
-    "ṣār ʿumri ʿishrīn = I've turned twenty"
+    "ṣār ʿumri ʿishrīn = I've turned twenty",
+    "صَارْ عُمْرِي"
    ]
   ]
  },
@@ -472,43 +535,50 @@
     "B",
     "يا جماعة، عيد ميلاد سيف آخر الشهر",
     "yā jamāʿa, ʿīd mīlād Sēf ākhir ish-shahar",
-    "Everyone, Sēf's birthday is at the end of the month."
+    "Everyone, Sēf's birthday is at the end of the month.",
+    "يَا جَمَاعَة، عِيدْ مِيلَادْ سَيْفْ آخِرْ الشَّهَرْ"
    ],
    [
     "A",
     "إيه، أدري. شنو نسوي له؟",
     "ēh, adri. shinu nsawwī-lah?",
-    "Yes, I know. What shall we do for him?"
+    "Yes, I know. What shall we do for him?",
+    "إَيْهْ، أَدْرِي. شِنُو نْسَوِّي لَهْ؟"
    ],
    [
     "B",
     "نتعشى في المطعم اللي يم البحر؟",
     "nitʿashsha fi l-maṭʿam illi yamm il-baḥar?",
-    "Shall we have dinner at the restaurant by the sea?"
+    "Shall we have dinner at the restaurant by the sea?",
+    "نِتْعَشَّى فِي الْمَطْعَمْ اللِّي يَمّْ الْبَحَرْ؟"
    ],
    [
     "A",
     "فكرة حلوة! بس كم بيكون الحساب؟",
     "fikra ḥilwa! bas cham biykūn il-ḥsāb?",
-    "Good idea! But how much will the bill be?"
+    "Good idea! But how much will the bill be?",
+    "فِكْرَة حِلْوَة! بَسْ كَمْ بِيْكُونْ الْحْسَابْ؟"
    ],
    [
     "B",
     "تقريبا ست مية. كل واحد يدفع ميتين",
     "tagrīban sitt miya. kill wāḥid yidfaʿ mītēn",
-    "About six hundred. Each of us pays two hundred."
+    "About six hundred. Each of us pays two hundred.",
+    "تَقْرِيبًا سِتّْ مِيَة. كِلّْ وَاحِدْ يِدْفَعْ مِيتَيْنْ"
    ],
    [
     "A",
     "زين، بس ما عندي إلا دنانير!",
     "zēn, bas ma ʿindi illa danānīr!",
-    "OK, but I've only got dinars!"
+    "OK, but I've only got dinars!",
+    "زَيْنْ، بَسْ مَا عِنْدِي إِلَّا دَنَانِيرْ!"
    ],
    [
     "B",
     "عادي، بالبطاقة. بس لا تقولون له شي، خلوها مفاجأة!",
     "ʿādi, bil-biṭāga. bas la tgūlūn-lah shay, khallūha mufājaʼa!",
-    "No problem, pay by card. But don't tell him anything, you two. Keep it a surprise!"
+    "No problem, pay by card. But don't tell him anything, you two. Keep it a surprise!",
+    "عَادِي، بِالْبِطَاقَة. بَسْ لَا تْقُولُونْ لَهْ شَيْ، خَلُّوهَا مُفَاجَأَة!"
    ]
   ],
   "items": [
@@ -517,42 +587,48 @@
     "kill wāḥid",
     "each one, each person, everyone",
     "كل واحد",
-    "kill wāḥid yidfaʿ = each person pays"
+    "kill wāḥid yidfaʿ = each person pays",
+    "كِلّْ وَاحِدْ"
    ],
    [
     "نسوي له",
     "nsawwī-lah",
     "we do (something) for him; shall we do (something) for him?",
     "نفعل له",
-    "for her: nsawwī-lha (نسوي لها)"
+    "for her: nsawwī-lha (نسوي لها)",
+    "نْسَوِّي لَهْ"
    ],
    [
     "فكرة حلوة",
     "fikra ḥilwa",
     "good idea",
     "فكرة جميلة",
-    ""
+    "",
+    "فِكْرَة حِلْوَة"
    ],
    [
     "ما عندي إلا",
     "ma ʿindi illa",
     "I've only got",
     "ليس عندي إلا",
-    "ma ʿindi illa danānīr = I've only got dinars (Kuwait's money: dīnār, دينار; plural danānīr, دنانير)"
+    "ma ʿindi illa danānīr = I've only got dinars (Kuwait's money: dīnār, دينار; plural danānīr, دنانير)",
+    "مَا عِنْدِي إِلَّا"
    ],
    [
     "لا تقولون له",
     "la tgūlūn-lah",
     "don't tell him (to a group)",
     "لا تقولوا له",
-    "to one man: la tgūl-lah (لا تقول له); to one woman: la tgūlīn-lah (لا تقولين له)"
+    "to one man: la tgūl-lah (لا تقول له); to one woman: la tgūlīn-lah (لا تقولين له)",
+    "لَا تْقُولُونْ لَهْ"
    ],
    [
     "خلوها",
     "khallūha",
     "leave it, keep it (a feminine thing) (to a group)",
     "اتركوها",
-    "to one man: khallha (خلها); to one woman: khallīha (خليها); khallūha mufājaʼa = keep it a surprise"
+    "to one man: khallha (خلها); to one woman: khallīha (خليها); khallūha mufājaʼa = keep it a surprise",
+    "خَلُّوهَا"
    ]
   ]
  },
@@ -568,43 +644,50 @@
     "A",
     "صباح الخير. شفيك؟ انت تعبان؟",
     "ṣabāḥ il-khēr. shfīk? inta taʿbān?",
-    "Good morning. What's wrong? Are you unwell?"
+    "Good morning. What's wrong? Are you unwell?",
+    "صَبَاحْ الْخَيْرْ. شْفِيكْ؟ اِنْتَ تَعْبَانْ؟"
    ],
    [
     "B",
     "صباح النور. هيه، شوي تعبان. راسي يعورني",
     "ṣabāḥ in-nūr. hē, shwayy taʿbān. rāsi yʿawwirni",
-    "Good morning. Yes, I'm not feeling great. I've got a headache."
+    "Good morning. Yes, I'm not feeling great. I've got a headache.",
+    "صَبَاحْ النُّورْ. هَيْه، شْوَيّْ تَعْبَانْ. رَاسِي يْعَوِّرْنِي"
    ],
    [
     "A",
     "سلامات! من متى؟",
     "salāmāt! min mita?",
-    "Oh no, get well soon! Since when?"
+    "Oh no, get well soon! Since when?",
+    "سَلَامَاتْ! مِنْ مِتَى؟"
    ],
    [
     "B",
     "الله يسلمج. من البارحة، وأحس بدوخة بعد",
     "allāh ysallmich. min il-bārḥa, w aḥiss b-dōkha baʿad",
-    "Thank you. Since last night, and I feel dizzy too."
+    "Thank you. Since last night, and I feel dizzy too.",
+    "اللّٰهْ يْسَلّْمِجْ. مِنْ الْبَارْحَة، وْأَحِسّْ بْدَوْخَة بَعَدْ"
    ],
    [
     "A",
     "ما تشوف شر. روح البيت وارتاح",
     "ma tshūf shar. rūḥ il-bēt w irtāḥ",
-    "I hope it's nothing. Go home and rest."
+    "I hope it's nothing. Go home and rest.",
+    "مَا تْشُوفْ شَرْ. رُوحْ الْبَيْتْ وْاِرْتَاحْ"
    ],
    [
     "B",
     "الله يسلمج. بس عندي اجتماع الساعة عشر",
     "allāh ysallmich. bas ʿindi ijtimāʿ is-sāʿa ʿashr",
-    "Thank you. But I've got a meeting at ten."
+    "Thank you. But I've got a meeting at ten.",
+    "اللّٰهْ يْسَلّْمِجْ. بَسْ عِنْدِي اِجْتِمَاعْ السَّاعَة عَشْرْ"
    ],
    [
     "A",
     "عادي، بقول للمدير. والشغل اللي عندك، بسويه أنا",
     "ʿādi, bagūl lil-mudīr. w ish-shughul illi ʿindak, basawwīh ana",
-    "That's fine, I'll tell the manager. And the work you've got, I'll do it."
+    "That's fine, I'll tell the manager. And the work you've got, I'll do it.",
+    "عَادِي، بَقُولْ لِلْمُدِيرْ. وْالشُّغُلْ اللِّي عِنْدَكْ، بَسَوِّيهْ أَنَا"
    ]
   ],
   "items": [
@@ -613,56 +696,64 @@
     "shfīk?",
     "what's wrong? what's the matter? (to a man)",
     "ما بك؟",
-    "to a woman: shfīch? (شفيج؟); UAE also: shu fīk? (شو فيك؟)"
+    "to a woman: shfīch? (شفيج؟); UAE also: shu fīk? (شو فيك؟)",
+    "شْفِيكْ؟"
    ],
    [
     "تعبان",
     "taʿbān",
     "tired; unwell, not feeling well (a man)",
     "متعب / مريض",
-    "a woman: taʿbāna (تعبانة)"
+    "a woman: taʿbāna (تعبانة)",
+    "تَعْبَانْ"
    ],
    [
     "راسي يعورني",
     "rāsi yʿawwirni",
     "my head hurts, I've got a headache",
     "رأسي يؤلمني",
-    "say the part that hurts first; a masculine part takes yʿawwirni, a feminine one (hand, leg, eye, ear) tʿawwirni: īdi tʿawwirni (إيدي تعورني) = my hand hurts"
+    "say the part that hurts first; a masculine part takes yʿawwirni, a feminine one (hand, leg, eye, ear) tʿawwirni: īdi tʿawwirni (إيدي تعورني) = my hand hurts",
+    "رَاسِي يْعَوِّرْنِي"
    ],
    [
     "سلامات",
     "salāmāt",
     "oh no, get well soon (to someone ill or hurt)",
     "شفاك الله",
-    "reply: allāh ysallmak (الله يسلمك)"
+    "reply: allāh ysallmak (الله يسلمك)",
+    "سَلَامَاتْ"
    ],
    [
     "ما تشوف شر",
     "ma tshūf shar",
     "get well soon, I hope it's nothing (to a man; lit. may you see no harm)",
     "لا بأس عليك",
-    "to a woman: ma tshūfīn shar (ما تشوفين شر); reply: allāh ysallmak, or ish-shar ma yiyīk (الشر ما يييك)"
+    "to a woman: ma tshūfīn shar (ما تشوفين شر); reply: allāh ysallmak, or ish-shar ma yiyīk (الشر ما يييك)",
+    "مَا تْشُوفْ شَرْ"
    ],
    [
     "أحس",
     "aḥiss",
     "I feel",
     "أشعر",
-    "aḥiss b-dōkha = I feel dizzy"
+    "aḥiss b-dōkha = I feel dizzy",
+    "أَحِسّْ"
    ],
    [
     "الله يسلمج",
     "allāh ysallmich",
     "God keep you (reply to get-well wishes or thanks, to a woman)",
     "",
-    "to a man: allāh ysallmak (الله يسلمك)"
+    "to a man: allāh ysallmak (الله يسلمك)",
+    "اللّٰهْ يْسَلّْمِجْ"
    ],
    [
     "روح البيت وارتاح",
     "rūḥ il-bēt w irtāḥ",
     "go home and rest (to a man)",
     "اذهب إلى البيت واسترح",
-    "to a woman: rūḥi l-bēt w irtāḥi (روحي البيت وارتاحي)"
+    "to a woman: rūḥi l-bēt w irtāḥi (روحي البيت وارتاحي)",
+    "رُوحْ الْبَيْتْ وْاِرْتَاحْ"
    ]
   ]
  },
@@ -678,43 +769,50 @@
     "A",
     "تفضل اقعد. خير؟ عسى ما شر؟",
     "tfaẓẓal igʿid. khēr? ʿasa ma shar?",
-    "Please sit down. What's the matter? Nothing serious, I hope?"
+    "Please sit down. What's the matter? Nothing serious, I hope?",
+    "تْفَضَّلْ اِقْعِدْ. خَيْرْ؟ عَسَى مَا شَرْ؟"
    ],
    [
     "B",
     "ما شر، الحمد لله. بس بطني يعورني يا دكتور",
     "ma shar, il-ḥamdu lillāh. bas baṭni yʿawwirni yā daktōr",
-    "Nothing serious, thank God. But my stomach hurts, doctor."
+    "Nothing serious, thank God. But my stomach hurts, doctor.",
+    "مَا شَرْ، الْحَمْدُ لِلّٰهْ. بَسْ بَطْنِي يْعَوِّرْنِي يَا دَكْتَوْرْ"
    ],
    [
     "A",
     "سلامات! من متى؟ وشو كلت؟",
     "salāmāt! min mita? w shu kalt?",
-    "Oh dear! Since when? And what did you eat?"
+    "Oh dear! Since when? And what did you eat?",
+    "سَلَامَاتْ! مِنْ مِتَى؟ وْشُو كَلْتْ؟"
    ],
    [
     "B",
     "الله يسلمك. من يومين، كلت سمك في مطعم يديد",
     "allāh ysallmak. min yōmēn, kalt simach fi maṭʿam yidīd",
-    "Thank you. For two days. I ate fish at a new restaurant."
+    "Thank you. For two days. I ate fish at a new restaurant.",
+    "اللّٰهْ يْسَلّْمَكْ. مِنْ يَوْمَيْنْ، كَلْتْ سِمَكْ فِي مَطْعَمْ يِدِيدْ"
    ],
    [
     "A",
     "يمكن من الأكل. فيك حرارة؟",
     "yimkin min il-akil. fīk ḥarāra?",
-    "Maybe it's the food. Have you got a temperature?"
+    "Maybe it's the food. Have you got a temperature?",
+    "يِمْكِنْ مِنْ الْأَكِلْ. فِيكْ حَرَارَة؟"
    ],
    [
     "B",
     "لا، بس ما أقدر آكل شي",
     "la, bas ma agdar ākil shay",
-    "No, but I can't eat anything."
+    "No, but I can't eat anything.",
+    "لَا، بَسْ مَا أَقْدَرْ آكِلْ شَيْ"
    ],
    [
     "A",
     "بكتب لك دوا، خذه من الصيدلية اللي تحت",
     "baktib-lak dawa, khudhah min iṣ-ṣēdaliyya illi taḥt",
-    "I'll write you a prescription. Get it from the pharmacy downstairs."
+    "I'll write you a prescription. Get it from the pharmacy downstairs.",
+    "بَكْتِبْ لَكْ دَوَا، خُذَهْ مِنْ الصَّيْدَلِيَّة اللِّي تَحْتْ"
    ]
   ],
   "items": [
@@ -723,63 +821,72 @@
     "khēr?",
     "what's up? what's the matter? is everything OK?",
     "ما الأمر؟",
-    "said when someone calls or comes to you, or looks worried"
+    "said when someone calls or comes to you, or looks worried",
+    "خَيْرْ؟"
    ],
    [
     "عسى ما شر؟",
     "ʿasa ma shar?",
     "nothing serious, I hope?",
     "أرجو ألا يكون مكروهًا",
-    "reply: ma shar, il-ḥamdu lillāh (ما شر، الحمد لله)"
+    "reply: ma shar, il-ḥamdu lillāh (ما شر، الحمد لله)",
+    "عَسَى مَا شَرْ؟"
    ],
    [
     "بطني يعورني",
     "baṭni yʿawwirni",
     "my stomach hurts, I've got a stomach ache",
     "بطني يؤلمني",
-    ""
+    "",
+    "بَطْنِي يْعَوِّرْنِي"
    ],
    [
     "دكتور",
     "daktōr",
     "doctor",
     "طبيب",
-    "a woman doctor: daktōra (دكتورة); yā daktōr = doctor (talking to him)"
+    "a woman doctor: daktōra (دكتورة); yā daktōr = doctor (talking to him)",
+    "دَكْتَوْرْ"
    ],
    [
     "من يومين",
     "min yōmēn",
     "for two days (now); two days ago",
     "منذ يومين",
-    ""
+    "",
+    "مِنْ يَوْمَيْنْ"
    ],
    [
     "حرارة",
     "ḥarāra",
     "a temperature, a fever; heat",
     "حمى / حرارة",
-    "fīk ḥarāra? = have you got a temperature? (to a man); to a woman: fīch ḥarāra?"
+    "fīk ḥarāra? = have you got a temperature? (to a man); to a woman: fīch ḥarāra?",
+    "حَرَارَة"
    ],
    [
     "بكتب لك",
     "baktib-lak",
     "I'll write (it) for you (to a man)",
     "سأكتب لك",
-    "to a woman: baktib-lich (بكتب لج)"
+    "to a woman: baktib-lich (بكتب لج)",
+    "بَكْتِبْ لَكْ"
    ],
    [
     "دوا",
     "dawa",
     "medicine",
     "دواء",
-    "you'll see written دواء"
+    "you'll see written دواء",
+    "دَوَا"
    ],
    [
     "صيدلية",
     "ṣēdaliyya",
     "a pharmacy, a chemist's",
     "صيدلية",
-    ""
+    "",
+    "صَيْدَلِيَّة"
    ]
   ]
  },
@@ -795,43 +902,50 @@
     "B",
     "مساء الخير. عندي وصفة من الدكتور",
     "masāʼ il-khēr. ʿindi waṣfa min id-daktōr",
-    "Good evening. I've got a prescription from the doctor."
+    "Good evening. I've got a prescription from the doctor.",
+    "مَسَاءْ الْخَيْرْ. عِنْدِي وَصْفَة مِنْ الدَّكْتَوْرْ"
    ],
    [
     "A",
     "مساء النور. سلامتك! تفضل، هذا الدوا",
     "masāʼ in-nūr. salāmtak! tfaẓẓal, hādha d-dawa",
-    "Good evening. I hope you feel better! Here's the medicine."
+    "Good evening. I hope you feel better! Here's the medicine.",
+    "مَسَاءْ النُّورْ. سَلَامْتَكْ! تْفَضَّلْ، هٰذَا الدَّوَا"
    ],
    [
     "B",
     "الله يسلمج. كم حبة آخذ؟",
     "allāh ysallmich. cham ḥabba ākhidh?",
-    "Thank you. How many tablets do I take?"
+    "Thank you. How many tablets do I take?",
+    "اللّٰهْ يْسَلّْمِجْ. كَمْ حَبَّة آخِذْ؟"
    ],
    [
     "A",
     "حبة وحدة، مرتين في اليوم",
     "ḥabba waḥda, marratēn fi l-yōm",
-    "One tablet, twice a day."
+    "One tablet, twice a day.",
+    "حَبَّة وَحْدَة، مَرَّتَيْنْ فِي الْيَوْمْ"
    ],
    [
     "B",
     "قبل الأكل ولّا بعد الأكل؟",
     "gabil il-akil walla baʿd il-akil?",
-    "Before food or after food?"
+    "Before food or after food?",
+    "قَبِلْ الْأَكِلْ وَلَّا بَعْدْ الْأَكِلْ؟"
    ],
    [
     "A",
     "بعد الأكل. والدوا بخمسة وأربعين درهم",
     "baʿd il-akil. w id-dawa b-khamsa w arbaʿīn dirham",
-    "After food. And the medicine is forty-five dirhams."
+    "After food. And the medicine is forty-five dirhams.",
+    "بَعْدْ الْأَكِلْ. وْالدَّوَا بْخَمْسَة وْأَرْبَعِينْ دِرْهَمْ"
    ],
    [
     "B",
     "تفضلي خمسين. مشكورة!",
     "tfaẓẓali khamsīn. mashkūra!",
-    "Here's fifty. Thank you!"
+    "Here's fifty. Thank you!",
+    "تْفَضَّلِي خَمْسِينْ. مَشْكُورَة!"
    ]
   ],
   "items": [
@@ -840,56 +954,64 @@
     "waṣfa",
     "a prescription",
     "وصفة طبية",
-    ""
+    "",
+    "وَصْفَة"
    ],
    [
     "سلامتك",
     "salāmtak",
     "I hope you feel better, get well soon (to a man)",
     "سلامتك",
-    "to a woman: salāmtich (سلامتج); reply: allāh ysallmak"
+    "to a woman: salāmtich (سلامتج); reply: allāh ysallmak",
+    "سَلَامْتَكْ"
    ],
    [
     "كم حبة؟",
     "cham ḥabba?",
     "how many tablets?",
     "كم حبة؟",
-    ""
+    "",
+    "كَمْ حَبَّة؟"
    ],
    [
     "حبة وحدة",
     "ḥabba waḥda",
     "one tablet",
     "حبة واحدة",
-    "two tablets: ḥabbatēn (حبتين)"
+    "two tablets: ḥabbatēn (حبتين)",
+    "حَبَّة وَحْدَة"
    ],
    [
     "مرتين في اليوم",
     "marratēn fi l-yōm",
     "twice a day",
     "مرتين في اليوم",
-    "three times a day: thalāth marrāt fi l-yōm"
+    "three times a day: thalāth marrāt fi l-yōm",
+    "مَرَّتَيْنْ فِي الْيَوْمْ"
    ],
    [
     "قبل الأكل",
     "gabil il-akil",
     "before food, before eating",
     "قبل الأكل",
-    ""
+    "",
+    "قَبِلْ الْأَكِلْ"
    ],
    [
     "بعد الأكل",
     "baʿd il-akil",
     "after food, after eating",
     "بعد الأكل",
-    ""
+    "",
+    "بَعْدْ الْأَكِلْ"
    ],
    [
     "أربعين",
     "arbaʿīn",
     "forty (40)",
     "أربعون",
-    "60 sittīn, 70 sabʿīn, 80 thamānīn, 90 tisʿīn"
+    "60 sittīn, 70 sabʿīn, 80 thamānīn, 90 tisʿīn",
+    "أَرْبَعِينْ"
    ]
   ]
  },
@@ -905,43 +1027,50 @@
     "A",
     "ألو، وينك؟ صار لي حادث!",
     "alō, wēnak? ṣār-li ḥādith!",
-    "Hello, where are you? I've had an accident!"
+    "Hello, where are you? I've had an accident!",
+    "أَلَوْ، وَيْنَكْ؟ صَارْ لِي حَادِثْ!"
    ],
    [
     "B",
     "حادث؟! خير؟ شي يعورك؟",
     "ḥādith?! khēr? shay yʿawwrak?",
-    "An accident?! Are you OK? Does anything hurt?"
+    "An accident?! Are you OK? Does anything hurt?",
+    "حَادِثْ؟! خَيْرْ؟ شَيْ يْعَوّْرَكْ؟"
    ],
    [
     "A",
     "لا، ما تعورت، ما فيني شي. حادث بسيط",
     "la, ma tʿawwart, ma fīni shay. ḥādith basīṭ",
-    "No, I didn't get hurt, I'm fine. It's a minor accident."
+    "No, I didn't get hurt, I'm fine. It's a minor accident.",
+    "لَا، مَا تْعَوَّرْتْ، مَا فِينِي شَيْ. حَادِثْ بَسِيطْ"
    ],
    [
     "B",
     "الحمد لله، سلامتك! في أحد تعور؟",
     "il-ḥamdu lillāh, salāmtak! fī aḥad tʿawwar?",
-    "Thank God you're OK! Is anyone hurt?"
+    "Thank God you're OK! Is anyone hurt?",
+    "الْحَمْدُ لِلّٰهْ، سَلَامْتَكْ! فِي أَحَدْ تْعَوَّرْ؟"
    ],
    [
     "A",
     "الله يسلمك. الريّال الثاني تعور شوي في إيده",
     "allāh ysallmak. ir-rayyāl ith-thāni tʿawwar shwayy fi īdah",
-    "Thanks. The other man hurt his hand a bit."
+    "Thanks. The other man hurt his hand a bit.",
+    "اللّٰهْ يْسَلّْمَكْ. الرَّيَّالْ الثَّانِي تْعَوَّرْ شْوَيّْ فِي إِيدَهْ"
    ],
    [
     "B",
     "اتصلت بالإسعاف؟",
     "ittaṣalt bil-isʿāf?",
-    "Did you call the ambulance?"
+    "Did you call the ambulance?",
+    "اِتَّصَلْتْ بِالْإِسْعَافْ؟"
    ],
    [
     "A",
     "هيه، والشرطة بعد. الحين يايين",
     "hē, w ish-shurṭa baʿad. il-ḥīn yāyīn",
-    "Yes, and the police too. They're on their way now."
+    "Yes, and the police too. They're on their way now.",
+    "هَيْه، وْالشُّرْطَة بَعَدْ. الْحِينْ يَايِينْ"
    ]
   ],
   "items": [
@@ -950,63 +1079,72 @@
     "ḥādith",
     "an accident",
     "حادث",
-    ""
+    "",
+    "حَادِثْ"
    ],
    [
     "صار لي حادث",
     "ṣār-li ḥādith",
     "I've had an accident",
     "تعرضت لحادث",
-    ""
+    "",
+    "صَارْ لِي حَادِثْ"
    ],
    [
     "ما فيني شي",
     "ma fīni shay",
     "I'm fine, nothing's wrong with me",
     "لست مصابًا بشيء",
-    ""
+    "",
+    "مَا فِينِي شَيْ"
    ],
    [
     "بسيط",
     "basīṭ",
     "minor, small, not serious",
     "بسيط",
-    "with a feminine word: basīṭa (بسيطة)"
+    "with a feminine word: basīṭa (بسيطة)",
+    "بَسِيطْ"
    ],
    [
     "شي يعورك؟",
     "shay yʿawwrak?",
     "does anything hurt? (to a man)",
     "هل يؤلمك شيء؟",
-    "to a woman: shay yʿawwrich? (شي يعورج؟)"
+    "to a woman: shay yʿawwrich? (شي يعورج؟)",
+    "شَيْ يْعَوّْرَكْ؟"
    ],
    [
     "ما تعورت",
     "ma tʿawwart",
     "I didn't get hurt; you didn't get hurt (to a man)",
     "لم أصب",
-    "to a woman: ma tʿawwarti (ما تعورتي); she didn't get hurt: ma tʿawwrat; fī aḥad tʿawwar? = is anyone hurt?"
+    "to a woman: ma tʿawwarti (ما تعورتي); she didn't get hurt: ma tʿawwrat; fī aḥad tʿawwar? = is anyone hurt?",
+    "مَا تْعَوَّرْتْ"
    ],
    [
     "اتصلت بالإسعاف؟",
     "ittaṣalt bil-isʿāf?",
     "did you call the ambulance? (to a man)",
     "هل اتصلت بالإسعاف؟",
-    "to a woman: ittaṣalti bil-isʿāf? (اتصلتي بالإسعاف؟)"
+    "to a woman: ittaṣalti bil-isʿāf? (اتصلتي بالإسعاف؟)",
+    "اِتَّصَلْتْ بِالْإِسْعَافْ؟"
    ],
    [
     "الإسعاف",
     "il-isʿāf",
     "the ambulance",
     "الإسعاف",
-    ""
+    "",
+    "الْإِسْعَافْ"
    ],
    [
     "الشرطة",
     "ish-shurṭa",
     "the police",
     "الشرطة",
-    ""
+    "",
+    "الشُّرْطَة"
    ]
   ]
  }
