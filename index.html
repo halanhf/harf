@@ -2249,7 +2249,67 @@ function ghChanged(shards,mem){
     const text=canon({cards}); if(text!==mem.body[path]) out.push({path,text}); }
   return out;
 }
-if(typeof module!=="undefined") module.exports={SHARDS,shardOf,splitProgress,joinProgress,learnDay,dueAt,validCard,validGen,cleanSaved,S_MIN,MAX_IVL,normalizeArabic,levenshtein,similarity,wordMatch,letterForms,schedule,retrievability,intervalDays,isLeech,FSRS_W,cardMode,pickOptions,soundShift,validateUnit,isHidden,stageStatus,planDay,interleave,packCard,unpackCard,MATURE_DAYS,dayNum,nextStreak,visibleStreak,mergeProgress,afterReset,whenLabel,canon,b64enc,b64dec,GH_META,GH_GAP,GH_WHY,ghFile,ghKind,ghLine,ghAfter,ghWait,ghAllow,ghNeed,ghChanged};
+// github client: one request in, one {kind,...} out; never rejects, never carries text from an exception or an answer
+const GH_API="https://api.github.com";
+function ghApi(cfg,fetchFn){
+  const repo="/repos/"+encodeURIComponent(cfg.owner)+"/"+encodeURIComponent(cfg.repo)+"/contents/";
+  async function call(op,path,method,body,keepalive){
+    const headers={Authorization:"Bearer "+cfg.token,Accept:"application/vnd.github+json"}; const init={method,headers,cache:"no-store"};
+    if(body!==undefined){ headers["Content-Type"]="application/json"; init.body=body; }
+    if(keepalive&&(body||"").length<60000) init.keepalive=true;
+    let r; try{ r=await fetchFn(GH_API+path,init); }catch(e){ return {kind:"offline"}; }
+    const kind=ghKind(op,r&&r.status); if(kind!=="ok") return {kind};
+    let j; try{ j=await r.json(); }catch(e){ return {kind:"server"}; }
+    return j&&typeof j==="object"?{kind:"ok",j}:{kind:"server"};
+  }
+  return {
+    async user(){ const r=await call("user","/user","GET"); return r.kind!=="ok"?{kind:r.kind}:typeof r.j.login==="string"?{kind:"ok",login:r.j.login}:{kind:"server"}; },
+    async get(path,keepalive){ const r=await call("read",repo+encodeURIComponent(path),"GET"); if(r.kind!=="ok") return {kind:r.kind}; const j=r.j;
+      if(typeof j.sha!=="string"||!j.sha||typeof j.content!=="string"||(j.content===""&&j.size>0)) return {kind:"bad"};
+      try{ return {kind:"ok",sha:j.sha,text:b64dec(j.content)}; }catch(e){ return {kind:"bad"}; } },
+    async put(path,text,sha,keepalive){ const body={message:"harf sync",content:b64enc(text)}; if(sha) body.sha=sha;
+      const r=await call("write",repo+encodeURIComponent(path),"PUT",JSON.stringify(body),keepalive); if(r.kind!=="ok") return {kind:r.kind};
+      return r.j.content&&typeof r.j.content.sha==="string"?{kind:"ok",sha:r.j.content.sha}:{kind:"server"}; }
+  };
+}
+// one sync cycle: read what the store has, merge it in, write only what changed; a refused write goes round again (3 attempts)
+async function ghCycle(api,local,mem,opts){
+  opts=opts||{}; const isObj=v=>!!v&&typeof v==="object"&&!Array.isArray(v), parse=t=>{ try{ return JSON.parse(t); }catch(e){ return null; } };
+  let cur=local, read=false; const w={sha:Object.assign({},mem.sha),body:Object.assign({},mem.body)}, force=new Set(), wrote=[];
+  const end=kind=>({kind,merged:read||opts.replace?cur:null,mem:read||opts.replace?w:mem,wrote});
+  for(let att=0;att<3;att++){
+    let listed={}; const gone=new Set();
+    if(!(opts.replace&&att===0)){
+      const m=await api.get(GH_META); if(m.kind!=="ok"&&m.kind!=="missing") return end(m.kind);
+      let meta=null; if(m.kind==="ok"){ meta=parse(m.text); if(!isObj(meta)) return end("bad"); }
+      listed=meta&&isObj(meta.shards)?meta.shards:{};
+      const need=ghNeed(listed,w.sha,force), rs=await Promise.all(need.map(n=>api.get(ghFile(n)))), files={};
+      for(let i=0;i<need.length;i++){ const r=rs[i]; if(r.kind==="missing"){ gone.add(need[i]); continue; } if(r.kind!=="ok") return end(r.kind);
+        const f=parse(r.text); if(!isObj(f)) return end("bad"); files[need[i]]=f; }
+      // every answer is in: only now merge and note what was read
+      const got=Object.keys(files);
+      if(meta||got.length){ const rest=Object.assign({},meta||{}); delete rest.shards; const cards={}; for(const n of got) cards[n]=isObj(files[n].cards)?files[n].cards:{};
+        cur=mergeProgress(cur,cleanSaved(joinProgress(rest,cards),opts.now,opts.today)); }
+      if(meta){ w.sha[GH_META]=m.sha; w.body[GH_META]=canon(meta); } else { delete w.sha[GH_META]; delete w.body[GH_META]; }
+      for(const n of got){ const p=ghFile(n); w.sha[p]=rs[need.indexOf(n)].sha; w.body[p]=canon(files[n]); }
+      for(const n of gone){ delete w.sha[ghFile(n)]; delete w.body[ghFile(n)]; }
+      force.clear(); read=true;
+    }
+    const {meta,shards}=splitProgress(cur); delete meta.shards; let again=false;
+    const send=async(path,text)=>{ const r=await api.put(path,text,w.sha[path],opts.keepalive);
+      if(r.kind==="ok"){ w.sha[path]=r.sha; w.body[path]=text; wrote.push(path); return null; }
+      if(r.kind==="conflict"){ force.add(path); again=true; return null; } return r.kind; };
+    for(const {path,text} of ghChanged(shards,w)){ const k=await send(path,text); if(k) return end(k); if(again) break; }
+    if(!again){
+      const stamps=Object.assign({},listed); for(const n of gone) delete stamps[n]; for(const n of SHARDS) if(w.sha[ghFile(n)]) stamps[n]=w.sha[ghFile(n)];
+      const text=canon(Object.assign({},meta,{shards:stamps}));
+      if(text!==w.body[GH_META]){ const k=await send(GH_META,text); if(k) return end(k); }
+    }
+    if(!again) return end("ok");
+  }
+  return end("conflict");
+}
+if(typeof module!=="undefined") module.exports={SHARDS,shardOf,splitProgress,joinProgress,learnDay,dueAt,validCard,validGen,cleanSaved,S_MIN,MAX_IVL,normalizeArabic,levenshtein,similarity,wordMatch,letterForms,schedule,retrievability,intervalDays,isLeech,FSRS_W,cardMode,pickOptions,soundShift,validateUnit,isHidden,stageStatus,planDay,interleave,packCard,unpackCard,MATURE_DAYS,dayNum,nextStreak,visibleStreak,mergeProgress,afterReset,whenLabel,canon,b64enc,b64dec,GH_META,GH_GAP,GH_WHY,ghFile,ghKind,ghLine,ghAfter,ghWait,ghAllow,ghNeed,ghChanged,GH_API,ghApi,ghCycle};
 </script>
 
 <script>

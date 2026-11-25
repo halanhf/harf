@@ -535,3 +535,94 @@ test("github sync: what to fetch and what to send",()=>{
   const big=JSON.stringify({x:"قهوة ☕ "+"ab".repeat(200000)}); assert.equal(L.b64dec(L.b64enc(big)),big);
   assert.equal(L.b64dec(Buffer.from("هلا").toString("base64").replace(/(.{2})/g,"$1\n")),"هلا"); // github wraps its base64 in newlines
 });
+
+// a stand-in for the github contents api: files with shas, the answers the app must handle, and a log of every request
+const TOKEN="github_pat_TESTTOKEN123";
+function fakeHub(files={}){
+  let n=0; const h={files:new Map(),log:[],status:{},down:false,login:"someone",before:null};
+  h.set=(p,o)=>h.files.set(p,{text:typeof o==="string"?o:JSON.stringify(o),sha:"sha"+(++n)}); for(const [p,o] of Object.entries(files)) h.set(p,o);
+  h.json=p=>JSON.parse(h.files.get(p).text); const names=m=>h.log.filter(r=>r.method===m).map(r=>r.url.split("/").pop()); h.puts=()=>names("PUT"); h.gets=()=>names("GET");
+  const res=(status,body)=>({status,ok:status<300,json:async()=>body});
+  h.fetch=async(url,o={})=>{ const method=o.method||"GET"; h.log.push({url,method,headers:o.headers||{},cache:o.cache,keepalive:!!o.keepalive,body:o.body||""});
+    if(h.down) throw new TypeError("Failed to fetch "+TOKEN);
+    const p=url.replace("https://api.github.com","");
+    if(h.before) await h.before(method,p);
+    const forced=h.status[method+" "+p.split("/").pop()]||h.status[method]||h.status["*"]; if(forced) return res(forced,{message:"no"});
+    if(p==="/user") return res(200,{login:h.login});
+    const m=/^\/repos\/([^/]+)\/harf-progress\/contents\/(.+)$/.exec(p); if(!m||m[1]!==h.login) return res(404,{message:"Not Found"});
+    const f=h.files.get(m[2]);
+    if(method==="GET") return f?res(200,{sha:f.sha,size:f.text.length,encoding:"base64",content:Buffer.from(f.text).toString("base64").replace(/(.{60})/g,"$1\n")}):res(404,{message:"Not Found"});
+    const b=JSON.parse(o.body); if(f&&!b.sha) return res(422,{message:"sha wasn't supplied"}); if(f&&b.sha!==f.sha) return res(409,{message:"does not match"});
+    h.set(m[2],Buffer.from(b.content,"base64").toString()); return res(f?200:201,{content:{sha:h.files.get(m[2]).sha}}); };
+  return h;
+}
+const GNOW=Date.UTC(2026,10,25,12), GDAY="2026-11-25", GT=Math.floor(GNOW/60000)-5000;
+const prog=o=>{ const p=L.cleanSaved(Object.assign({updatedAt:GNOW-1000,streak:1,lastDay:"2026-11-24",settings:{translit:"auto"}},o),GNOW,GDAY); return L.mergeProgress(p,p); };
+// one device: its progress, what it remembers of the store, and a sync that applies the result the way the page will
+const dev=(hub,p)=>{ const d={mem:{sha:{},body:{}},local:p,api:L.ghApi({owner:"someone",repo:"harf-progress",token:TOKEN},hub.fetch)};
+  d.sync=async opts=>{ const r=await L.ghCycle(d.api,d.local,d.mem,Object.assign({now:GNOW,today:GDAY},opts)); if(r.merged){ d.local=L.mergeProgress(d.local,r.merged); d.mem=r.mem; } return r; }; return d; };
+
+test("github cycle: the first sync writes card files then progress.json; a second with nothing new writes nothing",async()=>{
+  const hub=fakeHub(); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3),"s2u001.0":pcard(GT+1,3)},custom:[{id:"cabc123xyz",ar:"قهوة",tr:"gahwa",en:"coffee"}]}));
+  const r=await a.sync(); assert.equal(r.kind,"ok"); assert.deepEqual(hub.puts(),["cards_s1.json","cards_s2.json","progress.json"]);
+  assert.deepEqual(Object.keys(hub.json("cards_s1.json")),["cards"]); assert.deepEqual(Object.keys(hub.json("cards_s1.json").cards),["u1.0"]);
+  const meta=hub.json("progress.json"); assert.equal(meta.cards,undefined); assert.equal(meta.custom[0].ar,"قهوة");
+  assert.deepEqual(meta.shards,{s1:hub.files.get("cards_s1.json").sha,s2:hub.files.get("cards_s2.json").sha});
+  hub.log.length=0; const r2=await a.sync(); assert.equal(r2.kind,"ok"); assert.deepEqual(hub.puts(),[]); assert.deepEqual(hub.gets(),["progress.json"]);
+  // every request: github only, the token in the header only, never cached
+  for(const q of hub.log){ assert.ok(q.url.startsWith("https://api.github.com/")); assert.equal(q.headers.Authorization,"Bearer "+TOKEN); assert.ok(!q.url.includes(TOKEN)&&!q.body.includes(TOKEN)); assert.equal(q.cache,"no-store"); }
+});
+test("github cycle: two devices converge and then stop writing",async()=>{
+  const hub=fakeHub(); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3),"u1.1":pcard(GT,1)}})), b=dev(hub,prog({updatedAt:GNOW-500,cards:{"u1.1":pcard(GT+50,2),"s3u001.0":pcard(GT,1)}}));
+  await a.sync(); await b.sync(); await a.sync();
+  assert.equal(a.local.cards["u1.1"][5],GT+50); assert.ok(a.local.cards["s3u001.0"]); assert.ok(b.local.cards["u1.0"]);
+  hub.log.length=0; await b.sync(); await a.sync(); assert.deepEqual(hub.puts(),[]);
+  // a fresh page load on b (nothing remembered) reads everything once and still writes nothing
+  b.mem={sha:{},body:{}}; hub.log.length=0; await b.sync(); assert.deepEqual(hub.puts(),[]); assert.deepEqual(hub.gets().sort(),["cards_s1.json","cards_s3.json","progress.json"]);
+});
+test("github cycle: a refused write is re-read, merged and retried",async()=>{
+  const hub=fakeHub(); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3)}})); await a.sync();
+  a.local=L.mergeProgress(a.local,prog({updatedAt:GNOW,cards:{"u1.1":pcard(GT+9,1)}}));
+  // another device saves between this one's read and its write
+  let once=true; hub.before=async(method,p)=>{ if(once&&method==="PUT"&&p.endsWith("cards_s1.json")){ once=false; const d=hub.json("cards_s1.json"); d.cards["u1.2"]=pcard(GT+7,1); hub.set("cards_s1.json",d); } };
+  const r=await a.sync(); assert.equal(r.kind,"ok"); assert.deepEqual(Object.keys(hub.json("cards_s1.json").cards).sort(),["u1.0","u1.1","u1.2"]); assert.ok(a.local.cards["u1.2"]);
+});
+test("github cycle: refused three times, it gives up and keeps local work",async()=>{
+  const hub=fakeHub(); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3)}})); hub.status.PUT=409;
+  const r=await a.sync(); assert.equal(r.kind,"conflict"); assert.equal(hub.puts().length,3); assert.ok(a.local.cards["u1.0"]);
+});
+test("github cycle: a card file that fails to load means nothing is noted as read, and the next sync still merges it",async()=>{
+  const hub=fakeHub(); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3),"s2u001.0":pcard(GT,3)}})); await a.sync();
+  const b=dev(hub,prog({updatedAt:GNOW-9000,cards:{"u1.5":pcard(GT,1)}}));
+  hub.status["GET cards_s2.json"]=500; const r=await b.sync(); assert.equal(r.kind,"server"); assert.equal(r.merged,null); assert.deepEqual(b.mem,{sha:{},body:{}}); assert.equal(hub.puts().length,3);
+  delete hub.status["GET cards_s2.json"]; const r2=await b.sync(); assert.equal(r2.kind,"ok"); assert.deepEqual(Object.keys(hub.json("cards_s1.json").cards).sort(),["u1.0","u1.5"]); assert.ok(b.local.cards["s2u001.0"]);
+});
+test("github cycle: refused token, no connection, unreadable file: nothing is written and nothing leaks",async()=>{
+  const hub=fakeHub({"progress.json":"{not json"}); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3)}}));
+  assert.equal((await a.sync()).kind,"bad"); assert.equal(hub.files.get("progress.json").text,"{not json"); hub.files.clear();
+  const cfg={owner:"someone",repo:"harf-progress",token:TOKEN};
+  const big=L.ghApi(cfg,async()=>({status:200,json:async()=>({sha:"x",size:2000000,encoding:"none",content:""})})); assert.equal((await big.get("progress.json")).kind,"bad");
+  const page=L.ghApi(cfg,async()=>({status:200,json:async()=>{ throw new SyntaxError("<html>"); }})); assert.equal((await page.get("progress.json")).kind,"server"); assert.equal((await page.user()).kind,"server");
+  hub.status["*"]=401; assert.equal((await a.sync()).kind,"auth"); hub.status["*"]=403; assert.equal((await a.sync()).kind,"auth"); hub.status={};
+  hub.down=true; const r=await a.sync(); assert.equal(r.kind,"offline"); assert.ok(!JSON.stringify(r).includes(TOKEN)); assert.deepEqual(hub.puts(),[]); assert.ok(a.local.cards["u1.0"]);
+});
+test("github cycle: start over: the push replaces, and wins even from a page that has read nothing yet",async()=>{
+  const hub=fakeHub(); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3),"s2u001.0":pcard(GT,3)},unitsDone:{u1:"2026-11-20"}})); await a.sync();
+  const blank=prog({updatedAt:GNOW,resetAt:GNOW,resetDay:GDAY,streak:0,lastDay:""});
+  a.local=blank; hub.log.length=0; const r=await a.sync({replace:true}); assert.equal(r.kind,"ok"); assert.deepEqual(hub.gets(),[]);
+  assert.deepEqual(hub.json("cards_s1.json"),{cards:{}}); assert.deepEqual(hub.json("cards_s2.json"),{cards:{}}); assert.equal(hub.json("progress.json").resetAt,GNOW); assert.deepEqual(hub.json("progress.json").unitsDone,{});
+  // again, from a page that never read the store (reset pressed offline, sent later)
+  const hub2=fakeHub(); const c=dev(hub2,prog({cards:{"u1.0":pcard(GT,3)},unitsDone:{u1:"2026-11-20"}})); await c.sync();
+  const d=dev(hub2,blank); const r2=await d.sync({replace:true}); assert.equal(r2.kind,"ok"); assert.deepEqual(hub2.json("cards_s1.json"),{cards:{}}); assert.equal(hub2.json("progress.json").resetAt,GNOW); assert.deepEqual(Object.keys(d.local.cards),[]);
+  // and the device that hadn't heard of it drops its old work on its next sync
+  await c.sync(); assert.deepEqual(Object.keys(c.local.cards),[]); assert.deepEqual(Object.keys(c.local.unitsDone),[]);
+});
+test("github cycle: a card file that exists but isn't listed is merged, never overwritten",async()=>{
+  const hub=fakeHub({"cards_s1.json":{cards:{"u1.7":pcard(GT,2)}}}); const a=dev(hub,prog({cards:{"u1.0":pcard(GT,3)}}));
+  const r=await a.sync(); assert.equal(r.kind,"ok"); assert.deepEqual(Object.keys(hub.json("cards_s1.json").cards).sort(),["u1.0","u1.7"]);
+});
+test("github client: keepalive only for bodies a browser will accept",async()=>{
+  const hub=fakeHub(); const api=L.ghApi({owner:"someone",repo:"harf-progress",token:TOKEN},hub.fetch);
+  await api.put("progress.json","{}",undefined,true); await api.put("cards_s1.json",JSON.stringify({x:"a".repeat(70000)}),undefined,true);
+  assert.deepEqual(hub.log.map(q=>q.keepalive),[true,false]);
+});
