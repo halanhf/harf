@@ -17,6 +17,8 @@
 #   bare letters that are read (anything else bare is a "missing mark" problem):
 #     article alif (first letter, second after one proclitic و ب ف ك ل ه, or third after و/ف and a proclitic (وهالمرة), next letter ل bare or with sukun): reads (a|i|ā)? and takes no mark;
 #       it wins over the long-vowel reading (وَاللّٰهْ wallāh, هَالْمُوبَايْلْ hal-mobāyl)
+#       the vowel before it is not hidden: after a fatḥa, kasra or ḍamma on the proclitic or on the last letter of the word before, the alif adds no sound (وَاللّٰهْ wallāh, هَالتِّلِفَوْنْ, مَعَ السَّلَامَة);
+#       after a sukūn it may add i, not a (وْالْبَيْتْ w il-bēt; وْاللّٰهْ is rejected). Unchanged: no letter before, a bare letter before, and the alif of الله after a sukūn in another word (شَاءْ اللّٰهْ)
 #     article lām right after it, when the next letter has a shadda (sun letter): silent
 #     ا after a letter with tanwin fatha, ا last in the word after و (رَاحَوْا), ة after a fatha, ه last in the word: silent
 #     آ needs no mark: reads (ʼ)ā
@@ -49,6 +51,14 @@ CONS = {"ب": "b", "ت": "t", "ث": "th", "ج": "(?:j|ch)", "ح": "ḥ", "خ": "
 CONS.update({h: "ʼ?" for h in HAMZA})
 CONS = {k: unicodedata.normalize("NFC", v) for k, v in CONS.items()}
 ARTICLE = "(?:a|i|ā)?"
+ARTICLE_AFTER_SUKUN = "(?:i|ā)?"  # a sukūn says there is no a before the article (w il-, not wa)
+
+def article_vowel(prev, own_word, allah):  # the reading of an article alif, given the cluster before it (the proclitic, or the last letter of the word before)
+    # a fatḥa, kasra or ḍamma there is the vowel, so the alif adds none (wa-llāh, ha-ltilifōn, maʿa s-salāma); a sukūn lets it add i (w il-, min il-), not a.
+    # kept as before: no letter before, a bare letter before (minu illi), and the alif of allāh after a sukūn in another word (shāʼ allāh, ḥayyāk allāh)
+    if prev is None or prev[1] not in ("a", "i", "u", "0"): return ARTICLE
+    if prev[1] != "0": return ""
+    return ARTICLE if allah and not own_word else ARTICLE_AFTER_SUKUN
 
 def strip_marks(s):
     return MARKS.sub("", s)
@@ -96,7 +106,7 @@ def clusters(word, probs):  # [(letter, vowel kind or None, shadda)]; vowel kind
         res.append((ch, v, sh))
     return res
 
-def read_word(word, probs):  # -> regex of one word; problems are appended to probs
+def read_word(word, probs, before=None):  # -> regex of one word; problems are appended to probs; before: the last cluster of the word before it (None after punctuation or at the start)
     cl = clusters(word, probs)
     n = len(cl)
     def art(j):  # is cl[j] an article alif (marked or not)?
@@ -110,7 +120,7 @@ def read_word(word, probs):  # -> regex of one word; problems are appended to pr
         if v is None and not sh:  # a bare letter
             prev = cl[i - 1] if i else None
             if ch == "آ": out.append(("ʼ?ā", True, None))
-            elif ch == "ا" and art(i): out.append((ARTICLE, False, None))
+            elif ch == "ا" and art(i): out.append((article_vowel(cl[i - 1] if i else before, i > 0, i + 2 < n and cl[i + 2][1] == "d"), False, None))
             elif ch == "ل" and i and art(i - 1) and i + 1 < n and cl[i + 1][2]: pass  # article lām before a sun letter
             elif ch == "ا" and prev and prev[1] == "an": pass
             elif ch == "ا" and i == n - 1 and prev and prev[0] == "و": pass
@@ -137,9 +147,13 @@ def read_word(word, probs):  # -> regex of one word; problems are appended to pr
     return rx
 
 def reading(vow):  # (regex, problems)
-    probs, rx = [], ""
-    for w in SEP.split(vow):
-        if w: rx += read_word(w, probs)
+    probs, rx, before = [], "", None
+    for k, w in enumerate(re.split(r"([\s،؟!.…:]+)", vow)):
+        if k % 2: before = before if w.isspace() else None  # a separator with punctuation in it ends the connection to the next word
+        elif w:
+            rx += read_word(w, probs, before)
+            cl = clusters(w, [])
+            before = cl[-1] if cl else None
     return unicodedata.normalize("NFC", rx), probs
 
 def check_row(ar, tr, vow, allowed=False):

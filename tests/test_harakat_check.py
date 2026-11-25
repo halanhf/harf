@@ -188,6 +188,22 @@ class Checker(unittest.TestCase):
         self.assertTrue(has(r, "vowels:", "V15"))
         self.assertEqual(hc.check_row("تقريبا", "tagrīban", "تَقْرِيبًا"), [])
 
+    # content fix wave A: the vowel before an article must agree with the transliteration
+    def test_vowel_before_article_must_agree(self):
+        rows = [("لا والله", "la wallāh", "لَا وْاللّٰهْ", "لَا وَاللّٰهْ"),   # s2u014: sukūn where wa belongs
+                ("هالتلفون", "hat-tilifōn", "هْالتِّلِفَوْنْ", "هَالتِّلِفَوْنْ"),  # s2u025
+                ("هالموبايل", "hal-mobāyl", "هْالْمُوبَايْلْ", "هَالْمُوبَايْلْ"),
+                ("مشكورة. مع السلامة", "mashkūra. maʿa s-salāma", "مَشْكُورَة. مَعْ السَّلَامَة", "مَشْكُورَة. مَعَ السَّلَامَة")]  # s2u022
+        for ar, tr, bad, good in rows:
+            with self.subTest(ar=ar):
+                self.assertTrue(has(hc.check_row(ar, tr, bad), "reading:"), bad)
+                self.assertEqual(hc.check_row(ar, tr, good), [])
+        # no vowel before the article needs sukūn: w il-bēt, w ish-shigga, min il-bēt
+        self.assertEqual(hc.check_row("والبيت", "w il-bēt", "وْالْبَيْتْ"), [])
+        self.assertTrue(has(hc.check_row("والبيت", "w il-bēt", "وَالْبَيْتْ"), "reading:"))
+        self.assertEqual(hc.check_row("من البيت", "min il-bēt", "مِنْ الْبَيْتْ"), [])
+        self.assertEqual(hc.check_row("في البيت", "fi l-bēt", "فِي الْبَيْتْ"), [])
+
 class Cli(unittest.TestCase):  # main() on a throwaway repo layout, so these do not depend on how much of the real course is vowelled
     def setUp(self):
         import json
