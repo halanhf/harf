@@ -1912,10 +1912,25 @@ test("app left open: with sync on, the day turn feeds after the pull, so a newer
   t.on.visibilitychange(); assert.equal(t.fed().length,fed,"not before the pull"); await tick(); await tick();
   assert.equal(t.fed().length,fed+2); assert.equal(t.S().settings.retention,0.8,"account locally"); assert.equal(db.m.get(P+"progress").settings.retention,0.8,"account store");
 });
-test("app left open: a pull that never comes back still turns the day, after 30 seconds",async()=>{
-  const db=fakeDb({[P+"progress"]:{updatedAt:5,shards:{}}}); const t=loadUi({boot:true,claude:claudeWith(db)}); await tick(); const fed=t.fed().length;
-  db.hold(); shiftDays(t,1); t.on.visibilitychange(); await tick(); assert.equal(t.fed().length,fed);
-  const w=[...t.timers.values()].find(x=>x.ms===30000); assert.ok(w,"a 30 s fallback"); w.f(); assert.equal(t.fed().length,fed+2);
+const remoteAcct=()=>{ const {meta}=L.splitProgress(saved({updatedAt:5,lastDay:"2026-03-01",streak:4,settings:{retention:0.9},cards:{}})); return fakeDb({[P+"progress"]:{...meta,shards:{}}}); };
+const newerSetting=(db,t)=>db.m.set(P+"progress",{...db.m.get(P+"progress"),updatedAt:vm.runInContext("Date.now()",t.env)-1000,settings:{...db.m.get(P+"progress").settings,retention:0.8}});
+const pageNow=t=>vm.runInContext("Date.now()",t.env);
+test("app left open: a push already in flight and its queued re-run both finish before the day turn feeds",async()=>{
+  const db=remoteAcct(), feed=t=>{ t.S().updatedAt=pageNow(t); }; const t=loadUi({boot:true,claude:claudeWith(db),feed}); await tick(); const fed=t.fed().length;
+  let open=db.hold(); t.save(); t.runTimers(); await tick();
+  shiftDays(t,1); t.on.visibilitychange(); open(); const open2=db.hold(); await tick();
+  assert.equal(t.fed().length,fed,"second read still pending");
+  newerSetting(db,t); db.gate=null; open2(); await tick(); await tick();
+  assert.equal(t.fed().length,fed+2); assert.equal(t.S().settings.retention,0.8,"locally"); assert.equal(db.m.get(P+"progress").settings.retention,0.8,"in the store");
+});
+test("app left open: a pull that never comes back redraws after 30 seconds without feeding; the late pull feeds once, after its merge",async()=>{
+  const db=remoteAcct(), feed=t=>{ t.S().updatedAt=pageNow(t); }; const t=loadUi({boot:true,claude:claudeWith(db),feed}); await tick(); const fed=t.fed().length, drawn=()=>t.calls.filter(c=>c==="render").length, d0=drawn();
+  const open=db.hold(); const day0=vm.runInContext("openDay",t.env); shiftDays(t,1); t.on.visibilitychange(); await tick(); assert.equal(t.fed().length,fed);
+  const w=[...t.timers.values()].find(x=>x.ms===30000); assert.ok(w,"a 30 s fallback"); w.f();
+  assert.equal(t.fed().length,fed,"not fed"); assert.equal(drawn(),d0+1,"redrawn"); assert.equal(vm.runInContext("openDay",t.env),day0);
+  t.on.visibilitychange(); await tick(); assert.equal(t.fed().length,fed,"a second event while the read is held does not feed");
+  newerSetting(db,t); db.gate=null; open(); await tick(); await tick();
+  assert.equal(t.fed().length,fed+2,"fed once"); assert.equal(t.S().settings.retention,0.8); assert.equal(db.m.get(P+"progress").settings.retention,0.8);
 });
 const earHint=sec=>walk(sec).map(txt).find(t=>/of the last \d+ right/.test(t));
 test("stage 0 test: start over clears the answers, so the stage does not pass again with no new answers",()=>{

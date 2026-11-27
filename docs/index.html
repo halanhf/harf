@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-y4PbxGL9KiDi+jqPwEwb2z0H7/j2nh3KWrvCnJtBMGo=' 'sha256-KpfUqO39uYWcRorRMAu4JgY/pQGTFNLNzPT+fy4K+KY=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-y4PbxGL9KiDi+jqPwEwb2z0H7/j2nh3KWrvCnJtBMGo=' 'sha256-ARKASbfRAc78ScJL1wr/XUe1yB5AFmPjsb7KDOQnEpA=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -3728,9 +3728,13 @@ function afterRemoteChange(){ rebuild(); feed(); refresh(); if(!busy) RENDER[cur
 let openDay=today(), dayWait=false;
 function dayTurn(pull){
   if(today()<=openDay||dayWait) return;
-  const go=()=>{ dayWait=false; if(today()<=openDay) return; openDay=today(); feed(); refresh(); if(!busy) RENDER[currentTab](); };
-  // a pull that never answers must not keep the day from turning: after 30 s it turns anyway
-  if(((GH&&ghRun)||(synced&&pushing))&&pull){ dayWait=true; const tm=setTimeout(go,30000), done=()=>{ clearTimeout(tm); go(); }; pull.then(done,done); } else go();
+  const running=()=>(GH&&ghRun)||(synced&&pushing), draw=()=>{ refresh(); if(!busy) RENDER[currentTab](); };
+  const turn=()=>{ if(today()<=openDay) return; openDay=today(); feed(); draw(); };
+  if(!(running()&&pull)) return turn();
+  // follow the whole chain (a push in flight queues a second pull behind it), then feed. after 30 s only redraw: feeding before the merge would stamp updatedAt, and the late pull still feeds once
+  dayWait=true; const tm=setTimeout(()=>{ dayWait=false; draw(); },30000);
+  const wait=p=>p.then(null,()=>{}).then(()=>{ const n=running(); return n&&n!==p?wait(n):0; });
+  wait(pull).then(()=>{ clearTimeout(tm); dayWait=false; turn(); });
 }
 async function setupCaps(){
   if(!window.claude||!window.claude.use) return;

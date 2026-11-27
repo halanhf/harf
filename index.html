@@ -3703,9 +3703,13 @@ function afterRemoteChange(){ rebuild(); feed(); refresh(); if(!busy) RENDER[cur
 let openDay=today(), dayWait=false;
 function dayTurn(pull){
   if(today()<=openDay||dayWait) return;
-  const go=()=>{ dayWait=false; if(today()<=openDay) return; openDay=today(); feed(); refresh(); if(!busy) RENDER[currentTab](); };
-  // a pull that never answers must not keep the day from turning: after 30 s it turns anyway
-  if(((GH&&ghRun)||(synced&&pushing))&&pull){ dayWait=true; const tm=setTimeout(go,30000), done=()=>{ clearTimeout(tm); go(); }; pull.then(done,done); } else go();
+  const running=()=>(GH&&ghRun)||(synced&&pushing), draw=()=>{ refresh(); if(!busy) RENDER[currentTab](); };
+  const turn=()=>{ if(today()<=openDay) return; openDay=today(); feed(); draw(); };
+  if(!(running()&&pull)) return turn();
+  // follow the whole chain (a push in flight queues a second pull behind it), then feed. after 30 s only redraw: feeding before the merge would stamp updatedAt, and the late pull still feeds once
+  dayWait=true; const tm=setTimeout(()=>{ dayWait=false; draw(); },30000);
+  const wait=p=>p.then(null,()=>{}).then(()=>{ const n=running(); return n&&n!==p?wait(n):0; });
+  wait(pull).then(()=>{ clearTimeout(tm); dayWait=false; turn(); });
 }
 async function setupCaps(){
   if(!window.claude||!window.claude.use) return;
