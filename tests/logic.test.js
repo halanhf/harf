@@ -1873,7 +1873,7 @@ test("stage reached: a stage time from a clock set ahead is dropped on load and 
 function earTest(){
   const sc=loadScreens(); vm.runInContext("Math.random=()=>0.9; soundTab='ear'",sc.env); let sec=uiEl("div"); sc.env.renderSounds(sec);
   const pick=sc.env.PAIRS[0][1][0];
-  return {sc,redraw(){ sec=uiEl("div"); sc.env.renderSounds(sec); },answer(ok){ press(walk(sec).find(n=>n.attrs["data-w"]!==undefined&&(n.attrs["data-w"]===pick)===ok)); press(byText(sec,"Next")); },done:()=>!!sc.t.S().unitsDone.sounds};
+  return {sc,redraw(){ sec=uiEl("div"); sc.env.renderSounds(sec); },answer(ok){ press(walk(sec).find(n=>n.attrs["data-w"]!==undefined&&(n.attrs["data-w"]===pick)===ok)); press(byText(sec,"Next")); },done:()=>!!sc.t.S().unitsDone.sounds,hint:()=>earHint(sec)};
 }
 test("stage 0 test: a bad start doesn't block it: 6 of the last 8 pass",()=>{
   const e=earTest(); for(let i=0;i<6;i++) e.answer(false); for(let i=0;i<5;i++) e.answer(true); assert.equal(e.done(),false,"5 of the last 8");
@@ -1906,4 +1906,30 @@ test("app left open: with sync on, the day turn feeds after the pull, so a newer
   assert.equal(t.fed().length,fed+2); assert.equal(t.S().settings.retention,0.8);
   const again=hub.json("progress.json"); assert.equal(again.settings.retention,0.8);
   }
+});
+const earHint=sec=>walk(sec).map(txt).find(t=>/of the last \d+ right/.test(t));
+test("stage 0 test: start over clears the answers, so the stage does not pass again with no new answers",()=>{
+  const e=earTest(); for(const ok of [false,false,true,true,true,true,true,true]) e.answer(ok); assert.equal(e.done(),true);
+  e.sc.env.renderMe=()=>{}; e.sc.t.startOver(); e.redraw(); assert.equal(e.done(),false,"no answers after start over");
+  for(const ok of [false,false,true,true,true,true,true,true]) e.answer(ok); assert.equal(e.done(),true);
+});
+test("stage 0 test: a reset merged in from another device clears the answers the same way",()=>{
+  const e=earTest(); for(const ok of [false,false,true,true,true,true,true,true]) e.answer(ok); assert.equal(e.done(),true);
+  e.sc.t.S().unitsDone={}; e.redraw(); assert.equal(e.done(),false,"no answers after the merged reset");
+  for(const ok of [false,false,true,true,true,true,true,true]) e.answer(ok); assert.equal(e.done(),true);
+});
+test("stage 0 test: 8 answers with 5 right do not pass",()=>{
+  const e=earTest(); for(const ok of [true,true,true,true,true,false,false,false]) e.answer(ok); assert.equal(e.done(),false);
+});
+test("stage 0 test: a run of 4 wrong, 6 right, 2 wrong passes on the 10th answer and not before",()=>{
+  const e=earTest(); const seq=[false,false,false,false,true,true,true,true,true,true];
+  for(let i=0;i<9;i++){ e.answer(seq[i]); assert.equal(e.done(),false,"before answer "+(i+1)); }
+  e.answer(seq[9]); assert.equal(e.done(),true,"on answer 10");
+});
+test("stage 0 test: after 12 answers the window holds only the last 8",()=>{
+  const e=earTest(); for(let i=0;i<8;i++) e.answer(false); for(let i=0;i<4;i++) e.answer(true);
+  assert.equal(e.done(),false); assert.ok(e.hint().includes("4 of the last 8 right"),e.hint());
+});
+test("stage 0 test: a redraw keeps counting rounds from the answers so far",()=>{
+  const e=earTest(); for(let i=0;i<7;i++) e.answer(true); e.redraw(); assert.ok(e.hint().includes("Round 8 · 7 of the last 7 right"),e.hint());
 });

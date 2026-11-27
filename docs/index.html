@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-y4PbxGL9KiDi+jqPwEwb2z0H7/j2nh3KWrvCnJtBMGo=' 'sha256-xjcbAVe9Ydg2MjhW651WKHGKNE+iBuBF2MxwoCsTDIM=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-y4PbxGL9KiDi+jqPwEwb2z0H7/j2nh3KWrvCnJtBMGo=' 'sha256-YMmxnrr6HvfWDziI+gCQGboEiu6AQGyNHpm1CeC6jbk=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -2528,7 +2528,7 @@ addEventListener("pagehide",()=>{ if(synced) pushRemote(); ghSync("hide"); });
 addEventListener("online",()=>{ ghSync("online"); });
 
 // a reset is a dated marker, so other devices drop their older progress when they next merge instead of bringing it back
-function startOver(){ if(typeof resetTalk==="function") resetTalk(); /* talk screen is defined later */ try{ localStorage.removeItem(KEY+"-resume"); }catch(e){} const gen=S.gen; S=blank(); S.gen=gen; S.resetAt=Date.now(); S.resetDay=today(); save(); flush({replace:true}); rebuild(); refresh(); renderMe(); }
+function startOver(){ if(typeof resetTalk==="function") resetTalk(); if(typeof resetEar==="function") resetEar(); /* talk screen is defined later */ try{ localStorage.removeItem(KEY+"-resume"); }catch(e){} const gen=S.gen; S=blank(); S.gen=gen; S.resetAt=Date.now(); S.resetDay=today(); save(); flush({replace:true}); rebuild(); refresh(); renderMe(); }
 
 // ===== sync to github (offline app only). the same merge as the account sync, through the github contents api =====
 // GH is the saved connection; everything else here lives in memory, except the status line's state, kept so "waiting" survives a reload
@@ -3293,7 +3293,8 @@ function renderLessons(sec){
   sec.append(el("div",{className:"stagehead",style:"margin-top:18px"},el("h3",{textContent:"Understanding fuṣḥā"}),el("span",{className:"tag",textContent:`${msaLearned}/${MSA.length} words`})),
     el("p",{className:"tag",textContent:"Standard Arabic for reading and understanding: news, signs, formal speech. Recognition only, three new words a day once you've done five lessons."}));
 }
-let curLetter=0, soundTab="letters", earLast=[]; // earLast: ear test answers, newest last, at most 8 (true = right); kept across redraws
+let curLetter=0, soundTab="letters", earLast=[], earGiven=0, earDone=false; // ear test: earLast = last 8 answers (true = right); earGiven = answers since reset; earDone = stage 0 was passed when the ear screen last drew
+function resetEar(){ earLast=[]; earGiven=0; earDone=false; }
 const S0=[["letters","Letters"],["vowels","Vowel marks"],["gulf","Gulf sounds"],["ear","Ear training"]];
 function renderSounds(sec){
   if(!S.seen[soundTab]){ S.seen[soundTab]=1; save(); }
@@ -3330,13 +3331,14 @@ function renderSounds(sec){
     const status=()=>`Round ${round} · ${hits()} of the last ${earLast.length} right`;
     const doRound=()=>{
       if(!stage.isConnected) return;
-      if(earLast.length>=8&&earLast.filter(Boolean).length>=6&&!S.unitsDone.sounds){ S.unitsDone.sounds=today(); touchDay(); logActivity(1); save(); flush(); refresh(); stage.textContent="";
+      if(!S.unitsDone.sounds&&earDone) resetEar(); earDone=!!S.unitsDone.sounds; // a reset (here or merged in) clears the answers
+      if(earLast.length>=8&&earLast.filter(Boolean).length>=6&&!S.unitsDone.sounds){ S.unitsDone.sounds=today(); earDone=true; touchDay(); logActivity(1); save(); flush(); refresh(); stage.textContent="";
         ap(stage,el("p",{className:"mode",textContent:"Stage 0 complete"}),el("p",{className:"en",textContent:`${hits()} of your last 8 right. Your ear is ready.`}),el("p",{className:"tag",textContent:"Stage 1 starts with greetings. Come back here whenever a sound feels shaky."}),
           el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Go to Today",onclick:()=>show("today")})));
         announce("Stage 0 complete"); return; }
-      round++; stage.textContent=""; const pair=PAIRS[Math.floor(Math.random()*PAIRS.length)]; const pick=pair[Math.floor(Math.random()*2)];
+      round=earGiven+1; stage.textContent=""; const pair=PAIRS[Math.floor(Math.random()*PAIRS.length)]; const pick=pair[Math.floor(Math.random()*2)];
       const fb=el("p",{className:"feedback",role:"status"}); const opts=el("div",{className:"options"}); const acts=el("div",{className:"actions"});
-      [...pair].sort(()=>Math.random()-0.5).forEach(w=>opts.append(el("button",{className:"btn",type:"button","data-w":w[0],onclick:e=>{ if(opts.dataset.done) return; opts.dataset.done="1"; const ok=w===pick; earLast.push(ok); if(earLast.length>8) earLast.shift();
+      [...pair].sort(()=>Math.random()-0.5).forEach(w=>opts.append(el("button",{className:"btn",type:"button","data-w":w[0],onclick:e=>{ if(opts.dataset.done) return; opts.dataset.done="1"; const ok=w===pick; earLast.push(ok); if(earLast.length>8) earLast.shift(); earGiven++;
         [...opts.children].forEach(b=>{ if(b.dataset.w===pick[0]) b.classList.add("right"); else if(b===e.currentTarget) b.classList.add("wrong"); });
         fb.className="feedback "+(ok?"ok":"no"); fb.textContent=(ok?"Right. ":"That was "+pick[1]+". ")+`${hits()}/${earLast.length}`; buzz(ok?10:[30,40,30]);
         acts.append(el("button",{className:"btn primary wide",type:"button",textContent:"Next",onclick:doRound})); if(ok) setTimeout(()=>{ if(acts.isConnected) doRound(); },900);
