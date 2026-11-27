@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-y4PbxGL9KiDi+jqPwEwb2z0H7/j2nh3KWrvCnJtBMGo=' 'sha256-YMmxnrr6HvfWDziI+gCQGboEiu6AQGyNHpm1CeC6jbk=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-y4PbxGL9KiDi+jqPwEwb2z0H7/j2nh3KWrvCnJtBMGo=' 'sha256-ludysSFfbriuzwpzUX+xwX6KKjMzfb5tECK3GCpT6eA=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -2445,12 +2445,12 @@ function setSync(state,msg,tail){ sync.state=state; sync.msg=msg; const n=$("#sy
   if(state==="error"){ n.hidden=false; n.textContent=msg+(tail||" Your progress is still safe in this browser and will sync when it can."); } else if(!localFail) n.hidden=true; }
 const syncError=e=>{ const c=e&&e.code; return c==="quota_exceeded"?"Account storage is full.":c==="not_granted"||c==="forbidden"||c==="permission_denied"?"This page isn't allowed to save to your account.":`Couldn't save to your account${c?" ("+c+")":""}.`; };
 // an upload started by a timer waits while the last review grade can still be undone (sentFrom: the newest save an upload attempt has started with; undoHold: the open undo, if any)
-let sentFrom=0, undoHold=null, heldSince=0;
+let sentFrom=0, saveSeq=0, undoHold=null, heldSince=0; // saveSeq counts saves in this page, so a device with a fast clock can't make a grade look sent
 const holdCheck=()=>{ if(undoHold&&!undoHold.open()){ undoHold=null; heldSince=0; } };
 const holdLeft=now=>{ holdCheck(); return undoHold?holdWait(now,undoHold.at,heldSince||now):0; };
-const pushStarts=()=>{ sentFrom=S.updatedAt; heldSince=0; };
+const pushStarts=()=>{ sentFrom=saveSeq; heldSince=0; };
 function timerPush(){ const w=holdLeft(Date.now()); if(w>0) saveTimer=setTimeout(timerPush,w); else pushRemote(); }
-function save(){ S.updatedAt=Date.now(); persistLocal(); holdCheck(); if(undoHold&&!heldSince) heldSince=Date.now(); if(GH){ ghDirty=true; ghSync("save"); } if(synced){ clearTimeout(saveTimer); saveTimer=setTimeout(timerPush,1500); } }
+function save(){ S.updatedAt=Date.now(); saveSeq++; persistLocal(); holdCheck(); if(undoHold&&!heldSince) heldSince=Date.now(); if(GH){ ghDirty=true; ghSync("save"); } if(synced){ clearTimeout(saveTimer); saveTimer=setTimeout(timerPush,undoHold?Math.max(0,Math.min(1500,heldSince+30000-Date.now())):1500); } } // while an undo is open it never lands after the 30 s cap
 const progressRef=()=>DB.doc(`data/users/${UID}/progress`);
 const shardRef=n=>DB.doc(`data/users/${UID}/cards_${n}`);
 // what this browser last read or wrote for each card group, so unchanged groups aren't fetched or rewritten
@@ -2577,7 +2577,8 @@ function ghSync(trigger,opts){
   if(a==="offline"){ ghSt=ghAfter(ghSt,"offline",now); ghNote(); firstMergeDone(); return Promise.resolve("offline"); }
   if(trigger==="save"){ if(!ghTimer&&!ghRun) ghTimer=setTimeout(()=>{ ghTimer=0; ghSync("timer"); },Math.max(1500,ghWait(ghStart,now))); return Promise.resolve(); }
   if(trigger==="timer"){ const w=holdLeft(now); if(w>0){ clearTimeout(ghTimer); ghTimer=setTimeout(()=>{ ghTimer=0; ghSync("timer"); },w); return Promise.resolve(); } }
-  if(ghRun){ const q=ghAgain||{hand:false,replace:false}; ghAgain={hand:q.hand||trigger==="manual",replace:q.replace||!!(opts&&opts.replace)}; return ghRun; }
+  // a hide or online that waits for the running cycle is re-run as itself, not held as a timer
+  if(ghRun){ const q=ghAgain||{hand:false,replace:false,urgent:""}; ghAgain={hand:q.hand||trigger==="manual",replace:q.replace||!!(opts&&opts.replace),urgent:q.urgent||(trigger!=="timer"?trigger:"")}; return ghRun; }
   clearTimeout(ghTimer); ghTimer=0; ghStart=now; ghDirty=false; pushStarts();
   const cfg=GH, me={dead:false}; ghCur=me;
   const send=(u,o)=>me.dead?Promise.reject(new Error("cancelled")):ghFetch(u,o);
@@ -2593,7 +2594,7 @@ function ghSync(trigger,opts){
         ghNote();
       }
     } finally { firstMergeDone(); }
-    if(again&&GH&&mine) return ghSync(again.hand||again.replace?"manual":"timer",{replace:again.replace});
+    if(again&&GH&&mine) return ghSync(again.hand||again.replace?"manual":again.urgent||"timer",{replace:again.replace});
     if(GH===cfg&&mine&&r.kind==="ok"&&ghDirty) ghSync("save");
     return r.kind;
   })();
@@ -3216,8 +3217,8 @@ function startReview(onDone){
       const snap={id,n:nShown,card:Object.assign({},S.cards[id]),day:{reviewsToday:S.reviewsToday,newToday:S.newToday,streak:S.streak,freezes:S.freezes,freezeUsed:S.freezeUsed,lastDay:S.lastDay},logKey,logVal,logBefore,sessionDay:S.session.day,review:S.session.done.review};
       touchDay(); S.cards[id]=sched(S.cards[id],g,Date.now()); S.reviewsToday++; logActivity(1);
       snap.after=JSON.stringify(packCard(S.cards[id])); undo=snap; if(g===0) back.set(id,n);
-      undoHold={at:Date.now(),open:()=>undo===snap&&f.alive()&&!!S.cards[id]&&JSON.stringify(packCard(S.cards[id]))===snap.after}; // uploads wait a few seconds so this can still be taken back
-      save(); snap.stamp=S.updatedAt; if(onDone) S.session.done.review=1; next(); };
+      snap.stamp=saveSeq+1; undoHold={at:Date.now(),open:()=>undo===snap&&sentFrom<snap.stamp&&f.alive()&&!!S.cards[id]&&JSON.stringify(packCard(S.cards[id]))===snap.after}; // uploads wait a few seconds so this can still be taken back
+      save(); if(onDone) S.session.done.review=1; next(); };
     const gr=el("div",{className:"grades",role:"group","aria-label":"How well did you know it?"});
     const reveal=()=>{ if(!ans.hidden) return; ans.hidden=false; acts.textContent=""; if(trTap&&trTap.tagName==="BUTTON") trTap.remove(); const now=Date.now();
       [["Forgot",0],["Hard",1],["Got it",2],["Easy",3]].forEach(([lab,g])=>{ const nx=sched(card,g,now);

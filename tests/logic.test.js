@@ -1738,7 +1738,7 @@ test("stage reached: a copy from before this change (no such field) still loads,
 async function reviewSync(path,{n=6,day=null}={}){
   const hub=path==="gh"?fakeHub():null, db=path==="claude"?fakeDb():null, store=new Map(path==="gh"?[[KEY+"-gh",CFG]]:[]);
   const sc=loadScreens({harakat:"never",ui:path==="gh"?{pwa:true,store,fetch:hub.fetch}:{store}}), {env,t}=sc;
-  const ids=[...Array(n).keys()].map(i=>"x."+i), ar=["هلا","زين","شاي","قهوة","ماي","خبز","لبن","تمر","سمك"].slice(0,n);
+  const ids=[...Array(n).keys()].map(i=>"x."+i), ar=[...Array(n).keys()].map(i=>["هلا","زين","شاي","قهوة","ماي","خبز","لبن","تمر","سمك"][i]||"كلم"+"ا".repeat(i));
   vm.runInContext("globalThis.__now=Math.floor(Date.now()/60000)*60000; Date.now=()=>globalThis.__now;"+cut("function touchDay","const shownStreak"),env);
   ids.forEach((id,i)=>{ sc.items[id]={id,unit:"x"+i,stage:1,ar:ar[i],tr:"t",en:"e"+i}; t.S().cards[id]=Object.assign(sc.card(0,0,2),{d:i+1,t:env.__now-3*864e5}); });
   if(day) Object.assign(t.S(),day);
@@ -1752,7 +1752,7 @@ async function reviewSync(path,{n=6,day=null}={}){
   const grade=lab=>{ press(byText(b(),"Show answer")); press(walk(b()).find(n=>n.tag==="button"&&n.parent&&/grades/.test(n.parent.className)&&txt(n).startsWith(lab))); };
   const full=()=>{ const p=t.serialize(); delete p.updatedAt; return JSON.stringify(p); };
   const remote=()=>path==="gh"?JSON.stringify([...hub.files].map(([k,v])=>[k,k==="progress.json"?Object.assign(JSON.parse(v.text),{updatedAt:0}):v.text]).sort()):path==="claude"?JSON.stringify([...db.m].map(([k,v])=>[k,Object.assign({},v,{updatedAt:0})]).sort()):"";
-  return {sc,env,t,b,shown,grade,full,remote,adv,focused,said,undoBtn:()=>byText(b(),"Undo last grade"),sync:()=>path==="gh"?env.ghSync("manual"):t.pushRemote()};
+  return {sc,env,t,b,shown,grade,full,remote,adv,focused,said,hub,db,undoBtn:()=>byText(b(),"Undo last grade"),sync:()=>path==="gh"?env.ghSync("manual"):t.pushRemote()};
 }
 const SYNCED="That grade has already synced, so it can't be undone.";
 for(const path of ["claude","gh"]) test(`undo holds the push (${path}): nothing is uploaded while an undo is open, and the remote ends as it was`,async()=>{
@@ -1932,4 +1932,27 @@ test("stage 0 test: after 12 answers the window holds only the last 8",()=>{
 });
 test("stage 0 test: a redraw keeps counting rounds from the answers so far",()=>{
   const e=earTest(); for(let i=0;i<7;i++) e.answer(true); e.redraw(); assert.ok(e.hint().includes("Round 8 · 7 of the last 7 right"),e.hint());
+});
+
+test("undo hold (github): a hide or online that arrives while a cycle runs is re-run at once, not held; a queued save is still held",async()=>{
+  for(const trig of ["hide","online"]){ const r=await reviewSync("gh"), remoteBefore=r.remote(); let open; const gate=new Promise(x=>{ open=x; });
+    const hub=r.hub; hub.before=async()=>{ await gate; }; const cycle=r.sync(); await tick();
+    r.grade("Easy"); if(trig==="hide"){ r.env.document.visibilityState="hidden"; r.t.on.visibilitychange(); } else r.t.on.online();
+    open(); await cycle; await tick(); assert.notEqual(r.remote(),remoteBefore,trig+": pushed straight after the cycle, not after the hold");
+    press(r.undoBtn()); assert.ok(texts(r.b()).includes(SYNCED),trig); }
+  const r=await reviewSync("gh"), remoteBefore=r.remote(); let open; const gate=new Promise(x=>{ open=x; }); r.hub.before=async()=>{ await gate; }; const cycle=r.sync(); await tick();
+  r.grade("Easy"); open(); await cycle; await tick(); assert.equal(r.remote(),remoteBefore,"a queued save is held"); await r.adv(2000); assert.equal(r.remote(),remoteBefore); await r.adv(61000); assert.notEqual(r.remote(),remoteBefore,"and goes later, on its normal timer");
+});
+test("undo hold (claude.ai): grading every 1.4 s still pushes by the 30 s cap",async()=>{
+  const r=await reviewSync("claude",{n:34}), remoteBefore=r.remote(); let first=0;
+  for(let k=1;k<=32&&!first;k++){ r.grade("Got it"); await r.adv(1400); if(r.remote()!==remoteBefore) first=k*1400; }
+  assert.ok(first>0&&first<=30000+1400,"first push at "+first+" ms");
+});
+test("undo hold: once the grade has gone out the hold ends, so another save is not delayed",async()=>{
+  for(const path of ["claude"]){ const r=await reviewSync(path); r.grade("Easy"); await r.adv(1000); r.env.document.visibilityState="hidden"; r.t.on.visibilitychange(); await tick(); const sent=r.remote();
+    await r.adv(2000); r.t.S().settings.newPerDay=2; r.t.save(); await r.adv(1400); assert.equal(r.remote(),sent,path+": not yet"); await r.adv(1000); assert.notEqual(r.remote(),sent,path+": pushed at 4.5 s, not 8 s"); }
+});
+test("undo: a remote copy whose clock is five minutes ahead does not take the Undo button away from an unsent grade",async()=>{
+  const r=await reviewSync("claude"); const k="data/users/u1/progress"; const doc=JSON.parse(JSON.stringify(r.db.m.get(k))); doc.updatedAt=r.env.__now+300000; r.db.m.set(k,doc); await r.t.pushRemote();
+  r.grade("Easy"); assert.ok(r.undoBtn(),"button drawn"); const remoteBefore=r.remote(), before=r.full(); press(r.undoBtn()); await r.adv(10000); assert.ok(!texts(r.b()).includes(SYNCED)); assert.equal(r.remote(),remoteBefore);
 });
