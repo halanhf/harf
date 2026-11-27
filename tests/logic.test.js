@@ -1316,6 +1316,17 @@ test("chat errors: a failed send puts the text back and it survives a redraw; Tr
   sc2.env.renderTalk(); await talkSend(sec2,"bad"); assert.equal(byId(sec2,"chat-input").value,"");
   press(byText(sec2,"Try again")); assert.equal(byId(sec2,"chat-input").value,"bad"); sc2.env.renderTalk(); assert.equal(byId(sec2,"chat-input").value,"bad");
 });
+test("chat: a reply that lands after the Talk tab was redrawn is on screen, and the redrawn Send stays off until it arrives",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); let ok; vm.runInContext('currentTab="talk"',sc.env); sc.env.SAMPLE={json:()=>new Promise(r=>{ ok=r; })};
+  sc.env.renderTalk(); const sent=talkSend(sec,"hello"); sc.env.renderTalk();
+  const send=()=>walk(sec).find(n=>n.tag==="button"&&txt(n)==="Send"); assert.equal(send().disabled,true,"Send is off in the redrawn form while the reply is awaited");
+  const before=walk(sec).filter(n=>n.tag==="form").length; walk(sec).find(n=>n.tag==="form").onsubmit({preventDefault(){}}); await tick(); assert.equal(vm.runInContext("chatLog.length",sc.env),1,"no second send");
+  ok({arabic:"زين",translit:"zēn",english:"good"}); await sent;
+  assert.ok(texts(sec).includes("good"),texts(sec).join("|")); assert.equal(before,1); assert.equal(send().disabled,false);
+  // not redrawn when the learner has gone to another tab
+  const sc2=loadScreens(), sec2=talkOf(sc2); let ok2; sc2.env.SAMPLE={json:()=>new Promise(r=>{ ok2=r; })}; vm.runInContext('currentTab="talk"',sc2.env);
+  sc2.env.renderTalk(); const s2=talkSend(sec2,"hi"); vm.runInContext('currentTab="today"',sc2.env); sc2.env.renderTalk(); ok2({arabic:"زين",translit:"zēn",english:"good"}); await s2; assert.ok(!texts(sec2).includes("good"));
+});
 test("chat errors: a send that fails after a redraw writes to the box on screen, and never over a newer draft",async()=>{
   for(const newer of [null,"newer"]){
     const sc=loadScreens(), sec=talkOf(sc); let fail; sc.env.SAMPLE={json:()=>new Promise((_,rej)=>{ fail=rej; })};

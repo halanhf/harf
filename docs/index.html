@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-MTWtj6+Nyh74aUm93XVj0Wlaxa3R5HyWV+jeZVaPGis=' 'sha256-dj7ikrda3qjStNoRu2CeumayTft6HA7lkh5Tu3rGJA4=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-MTWtj6+Nyh74aUm93XVj0Wlaxa3R5HyWV+jeZVaPGis=' 'sha256-UjLLf7KmEQolECByvO6fZQOxbHJInHHBrJo6DDb+zl0=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -3432,7 +3432,7 @@ Transliteration (one scheme, always): long vowels ā ī ū; Gulf ē ō for ay/aw
 const learnerGender=()=>S.settings.gender==="f"?"The learner is a woman: address her with feminine forms (-ich, t-…-īn) throughout.":S.settings.gender==="m"?"The learner is a man: address him with masculine forms (-ak).":"Address the learner with masculine forms (-ak) unless they say they are a woman or use feminine forms about themselves (āsfa, ṭālba, rāyḥa); from then on use -ich / -īn forms.";
 const stageLine=()=>`Learner stage: ${currentStage()} of 5 (${STAGE_NAMES[currentStage()]}).`;
 let talkMode="chat";
-let chatDraft="", chatInp=null, practiceQ=null, practiceAsk=null, practiceDraft="", practiceTries=0, practiceRes=null, practiceBusy=false, practiceUI=null; // kept across redraws of the Talk tab
+let chatSending=false, chatSendBtn=null, chatDraft="", chatInp=null, practiceQ=null, practiceAsk=null, practiceDraft="", practiceTries=0, practiceRes=null, practiceBusy=false, practiceUI=null; // kept across redraws of the Talk tab
 function resetPractice(){ practiceQ=practiceAsk=practiceRes=null; practiceDraft=""; practiceTries=0; practiceBusy=false; }
 function resetTalk(){ chatDraft=""; resetPractice(); }
 function renderTalk(){
@@ -3471,9 +3471,9 @@ function renderChat(sec){
   if(!chatLog.length) add("",arSpan(fem?"هلا والله! شلونج اليوم؟":"هلا والله! شلونك اليوم؟"),el("span",{className:"tr",style:"display:block",textContent:fem?"hala wallāh! shlōnich il-yōm?":"hala wallāh! shlōnak il-yōm?"}),el("span",{textContent:"Hi there! How are you today?"}));
   chatLog.forEach((m,i)=>{ if(m.role==="user") add("me",el("span",{textContent:m.content})); else renderReply(add(""),m.r,(chatLog[i-1]||{}).content); });
   const inp=typingBox(el("textarea",{id:"chat-input",placeholder:"زين الحمد لله … or: how do I say I'm tired?","aria-label":"your message"})); inp.value=chatDraft; inp.oninput=()=>{ chatDraft=inp.value; }; chatInp=inp;
-  const send=el("button",{className:"btn primary",type:"submit",textContent:"Send"});
+  const send=el("button",{className:"btn primary",type:"submit",textContent:"Send",disabled:chatSending}); chatSendBtn=send; // a redrawn form stays off while a reply is awaited
   const form=el("form",{className:"compose"},inp,dictateBtn(inp),send); sec.append(form);
-  form.onsubmit=async e=>{ e.preventDefault(); const text=inp.value.trim().slice(0,500); if(!text||send.disabled) return; inp.value=""; chatDraft=""; send.disabled=true;
+  form.onsubmit=async e=>{ e.preventDefault(); const text=inp.value.trim().slice(0,500); if(!text||send.disabled||chatSending) return; inp.value=""; chatDraft=""; chatSending=true; send.disabled=true;
     add("me",el("span",{textContent:text})); chatLog.push({role:"user",content:text}); const wait=add("",el("span",{className:"tr",textContent:"…"}));
     const prompt=`You are a warm, patient conversation partner helping an English speaker learn ${DIALECT}
 ${stageLine()} Words they already know: ${knownList(120)||"almost none yet"}.
@@ -3484,10 +3484,10 @@ Return ONLY JSON: {"arabic": your Gulf reply in Arabic script, "translit": its t
 Conversation so far:
 ${chatLog.slice(-12).map(m=>(m.role==="user"?"Learner: ":"Partner: ")+(m.role==="user"?m.content:m.r.arabic)).join("\n")}`;
     try{ const r=await SAMPLE.json(prompt,{modelTier:"default",cache:false}); if(!r||typeof r!=="object") throw new Error("bad");
-      chatLog.push({role:"assistant",r}); renderReply(wait,r,text); S.talks=(S.talks||0)+1; touchDay(); logActivity(1); save(); }
+      chatLog.push({role:"assistant",r}); renderReply(wait,r,text); S.talks=(S.talks||0)+1; touchDay(); logActivity(1); save(); chatSending=false; if(!chat.isConnected&&currentTab==="talk"&&talkMode==="chat"&&!busy) renderTalk(); } // the tab was redrawn while waiting: draw it again so the reply shows
     catch(err){ chatLog.pop(); wait.remove(); chat.lastChild&&chat.lastChild.remove(); if(!chatDraft) chatDraft=text; if(chatInp) chatInp.value=chatDraft;
       add("",el("span",{className:"feedback no",textContent:err&&err.code==="rate_limited"?"Too many messages at once. Wait a minute and send again.":"Your partner couldn't answer that. Your message is back in the box: try sending again."})); }
-    send.disabled=false; };
+    chatSending=false; send.disabled=false; if(chatSendBtn) chatSendBtn.disabled=false; };
 }
 // output practice: you produce a sentence and get a hint before the answer (prompting self-correction beats being told)
 function renderPractice(sec){
