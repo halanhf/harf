@@ -1517,6 +1517,21 @@ test("lesson resume: a resume point that no longer fits the lesson is ignored",(
     const sc=loadScreens(); sc.t.store.set(KEY+"-resume",bad.replace("DAY",vm.runInContext("today()",sc.env)));
     assert.doesNotThrow(()=>sc.env.openLesson(UNIT)); assert.ok(byText(sc.spy.view.body,"Learn the phrases →"),bad); }
 });
+test("lesson resume: the offer says where the learner stopped, in phrases and in the quick check",()=>{
+  const sc=loadScreens({harakat:"never"}); sc.env.openLesson(UNIT); toCheck(sc,1); sc.env.openLesson(UNIT);
+  assert.ok(texts(sc.spy.view.body).includes("You stopped part-way through this lesson.")); assert.ok(texts(sc.spy.view.body).includes("You stopped at phrase 2 of 4."),texts(sc.spy.view.body).join("|"));
+  press(byText(sc.spy.view.body,"Start again")); toCheck(sc,3); press(byText(sc.spy.view.body,"Quick check →")); answer(sc,true); sc.env.openLesson(UNIT);
+  assert.ok(texts(sc.spy.view.body).includes("You stopped at check 2 of 4."),texts(sc.spy.view.body).join("|"));
+});
+test("lesson resume: a resume point from a past day is removed and not offered; a storage that throws does not break the lesson; a bad position or missed list is discarded",()=>{
+  const sc=loadScreens(); sc.env.openLesson(UNIT); toCheck(sc,1); assert.ok(sc.t.store.has(KEY+"-resume")); vm.runInContext(`{ const n=Date.now; Date.now=()=>n()+${DAY}; }`,sc.env);
+  sc.env.openLesson(UNIT); assert.ok(!byText(sc.spy.view.body,"Continue where you left off")); assert.ok(byText(sc.spy.view.body,"Learn the phrases →")); assert.ok(!sc.t.store.has(KEY+"-resume"),"the old key is removed");
+  const th=loadScreens(); th.env.localStorage={getItem(){ throw new Error("blocked"); },setItem(){ throw new Error("blocked"); },removeItem(){ throw new Error("blocked"); }};
+  assert.doesNotThrow(()=>th.env.openLesson(UNIT)); assert.ok(byText(th.spy.view.body,"Learn the phrases →")); assert.doesNotThrow(()=>toCheck(th,2)); assert.doesNotThrow(()=>press(byText(th.spy.view.body,"Next →")));
+  for(const bad of ['{"u":"u1","day":"DAY","step":3,"k":0,"order":[0,1,2,3],"q":9,"right":0,"missed":[]}','{"u":"u1","day":"DAY","step":3,"k":0,"order":[0,1,2,3],"q":-1,"right":0,"missed":[]}','{"u":"u1","day":"DAY","step":3,"k":0,"order":[0,1,2,3],"q":1,"right":0,"missed":["x"]}','{"u":"u1","day":"DAY","step":3,"k":0,"order":[0,1,2,3],"q":1,"right":0,"missed":[7]}','{"u":"u1","day":"DAY","step":3,"k":0,"order":[0,1,2,3],"q":1,"right":0,"missed":[1,1]}','{"u":"u1","day":"DAY","step":3,"k":0,"order":[0,1,2,3],"q":1,"right":0,"missed":5}']){
+    const s2=loadScreens(); s2.t.store.set(KEY+"-resume",bad.replace("DAY",vm.runInContext("today()",s2.env)));
+    assert.doesNotThrow(()=>s2.env.openLesson(UNIT)); assert.ok(byText(s2.spy.view.body,"Learn the phrases →"),bad); assert.ok(!texts(s2.spy.view.body).some(x=>/You stopped/.test(x)),bad); assert.ok(!s2.t.store.has(KEY+"-resume"),bad); }
+});
 // every place that speaks without a tap on a play control, in order; returns what was played
 function quietTour(sc){
   const {env,spy,t}=sc, b=()=>spy.view.body, got={};

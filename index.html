@@ -3066,7 +3066,7 @@ function openLesson(u,onDone){
   const pt=readResume(u);
   if(!pt) return step1();
   f.progress(0,steps);
-  const choice=el("div",{className:"stage"},el("p",{className:"en",textContent:"You stopped part-way through this lesson."}),
+  const choice=el("div",{className:"stage"},el("p",{className:"en",textContent:"You stopped part-way through this lesson."}),el("p",{className:"tag",textContent:pt.step===2?`You stopped at phrase ${pt.k+1} of ${u.items.length}.`:`You stopped at check ${pt.q+1} of ${u.items.length}.`}),
     el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Continue where you left off",onclick:()=>pt.step===2?step2(pt.k):step3(pt)}),
       el("button",{className:"btn wide",type:"button",textContent:"Start again",onclick:()=>{ dropResume(); step1(); }})));
   body.append(choice); focusCard(choice);

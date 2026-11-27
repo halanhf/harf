@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-MTWtj6+Nyh74aUm93XVj0Wlaxa3R5HyWV+jeZVaPGis=' 'sha256-JuI+RB2c/p5M4i6yYEZKRz8LKGks2kJwq/zhj76XUXA=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-MTWtj6+Nyh74aUm93XVj0Wlaxa3R5HyWV+jeZVaPGis=' 'sha256-dgWmdiUERemrikplpXMNeS/anfhE7mzgm8zoqGeCW60=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -3091,7 +3091,7 @@ function openLesson(u,onDone){
   const pt=readResume(u);
   if(!pt) return step1();
   f.progress(0,steps);
-  const choice=el("div",{className:"stage"},el("p",{className:"en",textContent:"You stopped part-way through this lesson."}),
+  const choice=el("div",{className:"stage"},el("p",{className:"en",textContent:"You stopped part-way through this lesson."}),el("p",{className:"tag",textContent:pt.step===2?`You stopped at phrase ${pt.k+1} of ${u.items.length}.`:`You stopped at check ${pt.q+1} of ${u.items.length}.`}),
     el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Continue where you left off",onclick:()=>pt.step===2?step2(pt.k):step3(pt)}),
       el("button",{className:"btn wide",type:"button",textContent:"Start again",onclick:()=>{ dropResume(); step1(); }})));
   body.append(choice); focusCard(choice);
