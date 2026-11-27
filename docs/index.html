@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-MTWtj6+Nyh74aUm93XVj0Wlaxa3R5HyWV+jeZVaPGis=' 'sha256-bkMsMwBFhE6MCuQqnMbmvr9TUx7lbYMzJ4eDTG9t484=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-MTWtj6+Nyh74aUm93XVj0Wlaxa3R5HyWV+jeZVaPGis=' 'sha256-JuI+RB2c/p5M4i6yYEZKRz8LKGks2kJwq/zhj76XUXA=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -2578,7 +2578,7 @@ function ghSync(trigger,opts){
   if(trigger==="save"){ if(!ghTimer&&!ghRun) ghTimer=setTimeout(()=>{ ghTimer=0; ghSync("timer"); },Math.max(1500,ghWait(ghStart,now))); return Promise.resolve(); }
   if(trigger==="timer"){ const w=holdLeft(now); if(w>0){ clearTimeout(ghTimer); ghTimer=setTimeout(()=>{ ghTimer=0; ghSync("timer"); },w); return Promise.resolve(); } }
   // a hide or online that waits for the running cycle is re-run as itself, not held as a timer
-  if(ghRun){ const q=ghAgain||{hand:false,replace:false,urgent:""}; ghAgain={hand:q.hand||trigger==="manual",replace:q.replace||!!(opts&&opts.replace),urgent:q.urgent||(trigger!=="timer"?trigger:"")}; return ghRun; }
+  if(ghRun){ const q=ghAgain||{hand:false,replace:false,urgent:""}; ghAgain={hand:q.hand||trigger==="manual",replace:q.replace||!!(opts&&opts.replace),urgent:trigger==="hide"?"hide":(q.urgent||(trigger!=="timer"?trigger:""))}; return ghRun; } // a hide wins over an earlier show: the page may be going away, so the re-run is sent with keepalive
   clearTimeout(ghTimer); ghTimer=0; ghStart=now; ghDirty=false; pushStarts();
   const cfg=GH, me={dead:false}; ghCur=me;
   const send=(u,o)=>me.dead?Promise.reject(new Error("cancelled")):ghFetch(u,o);

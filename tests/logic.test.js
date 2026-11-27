@@ -2015,6 +2015,14 @@ test("undo hold (github): a hide or online that arrives while a cycle runs is re
   const r=await reviewSync("gh"), remoteBefore=r.remote(); let open; const gate=new Promise(x=>{ open=x; }); r.hub.before=async()=>{ await gate; }; const cycle=r.sync(); await tick();
   r.grade("Easy"); open(); await cycle; await tick(); assert.equal(r.remote(),remoteBefore,"a queued save is held"); await r.adv(2000); assert.equal(r.remote(),remoteBefore); await r.adv(61000); assert.notEqual(r.remote(),remoteBefore,"and goes later, on its normal timer");
 });
+test("github sync: a show queued before a hide behind a running cycle is re-run as the hide, with keepalive",async()=>{
+  for(const order of [["show","hide"],["hide","show","hide"],["online","hide"]]){
+    const r=await reviewSync("gh"); let open; const gate=new Promise(x=>{ open=x; }); r.hub.before=async()=>{ await gate; }; const cycle=r.sync(); await tick();
+    r.grade("Easy"); for(const o of order){ if(o==="online") r.t.on.online(); else { r.env.document.visibilityState=o==="hide"?"hidden":"visible"; r.t.on.visibilitychange(); } }
+    r.hub.log.length=0; open(); await cycle; await tick();
+    const again=r.hub.log.filter(q=>q.keepalive); assert.ok(again.length>0,order.join(">")+": the re-run is sent with keepalive"); assert.ok(r.hub.log[r.hub.log.length-1].keepalive,order.join(">")+": and so is the last request");
+  }
+});
 test("undo hold (claude.ai): grading every 1.4 s still pushes by the 30 s cap",async()=>{
   const r=await reviewSync("claude",{n:34}), remoteBefore=r.remote(); let first=0;
   for(let k=1;k<=32&&!first;k++){ r.grade("Got it"); await r.adv(1400); if(r.remote()!==remoteBefore) first=k*1400; }
