@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-y4PbxGL9KiDi+jqPwEwb2z0H7/j2nh3KWrvCnJtBMGo=' 'sha256-X1sLaQ7OZeK61zwWb8FL7UhNY0rnw1E7CyKO2DUvJM8=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-y4PbxGL9KiDi+jqPwEwb2z0H7/j2nh3KWrvCnJtBMGo=' 'sha256-v5wVonrLmr329RtUUxsytVapgtmj8/KESYxOsvCTeKk=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -3293,7 +3293,7 @@ function renderLessons(sec){
   sec.append(el("div",{className:"stagehead",style:"margin-top:18px"},el("h3",{textContent:"Understanding fuṣḥā"}),el("span",{className:"tag",textContent:`${msaLearned}/${MSA.length} words`})),
     el("p",{className:"tag",textContent:"Standard Arabic for reading and understanding: news, signs, formal speech. Recognition only, three new words a day once you've done five lessons."}));
 }
-let curLetter=0, soundTab="letters";
+let curLetter=0, soundTab="letters", earLast=[]; // earLast: ear test answers, newest last, at most 8 (true = right); kept across redraws
 const S0=[["letters","Letters"],["vowels","Vowel marks"],["gulf","Gulf sounds"],["ear","Ear training"]];
 function renderSounds(sec){
   if(!S.seen[soundTab]){ S.seen[soundTab]=1; save(); }
@@ -3325,23 +3325,24 @@ function renderSounds(sec){
   }
   if(soundTab==="ear"){
     body.append(el("p",{className:"lede",textContent:"These pairs differ by one sound English doesn't separate. Hearing the difference comes before saying it. Voices change between rounds where your device has several, which trains the ear faster."}));
-    let right=0,total=0,round=0; const stage=el("div",{className:"stage"}); const hint=el("p",{className:"tag"}); body.append(stage,hint);
-    const status=()=>`Round ${round} · ${right} of ${total} right`;
+    let round=0; const stage=el("div",{className:"stage"}); const hint=el("p",{className:"tag"}); body.append(stage,hint);
+    const hits=()=>earLast.filter(Boolean).length;
+    const status=()=>`Round ${round} · ${hits()} of the last ${earLast.length} right`;
     const doRound=()=>{
       if(!stage.isConnected) return;
-      if(total>=8&&right/total>=0.75&&!S.unitsDone.sounds){ S.unitsDone.sounds=today(); touchDay(); logActivity(1); save(); flush(); refresh(); stage.textContent="";
-        ap(stage,el("p",{className:"mode",textContent:"Stage 0 complete"}),el("p",{className:"en",textContent:`${right} of ${total} right. Your ear is ready.`}),el("p",{className:"tag",textContent:"Stage 1 starts with greetings. Come back here whenever a sound feels shaky."}),
+      if(earLast.length>=8&&earLast.filter(Boolean).length>=6&&!S.unitsDone.sounds){ S.unitsDone.sounds=today(); touchDay(); logActivity(1); save(); flush(); refresh(); stage.textContent="";
+        ap(stage,el("p",{className:"mode",textContent:"Stage 0 complete"}),el("p",{className:"en",textContent:`${hits()} of your last 8 right. Your ear is ready.`}),el("p",{className:"tag",textContent:"Stage 1 starts with greetings. Come back here whenever a sound feels shaky."}),
           el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Go to Today",onclick:()=>show("today")})));
         announce("Stage 0 complete"); return; }
       round++; stage.textContent=""; const pair=PAIRS[Math.floor(Math.random()*PAIRS.length)]; const pick=pair[Math.floor(Math.random()*2)];
       const fb=el("p",{className:"feedback",role:"status"}); const opts=el("div",{className:"options"}); const acts=el("div",{className:"actions"});
-      [...pair].sort(()=>Math.random()-0.5).forEach(w=>opts.append(el("button",{className:"btn",type:"button","data-w":w[0],onclick:e=>{ if(opts.dataset.done) return; opts.dataset.done="1"; total++; const ok=w===pick; if(ok) right++;
+      [...pair].sort(()=>Math.random()-0.5).forEach(w=>opts.append(el("button",{className:"btn",type:"button","data-w":w[0],onclick:e=>{ if(opts.dataset.done) return; opts.dataset.done="1"; const ok=w===pick; earLast.push(ok); if(earLast.length>8) earLast.shift();
         [...opts.children].forEach(b=>{ if(b.dataset.w===pick[0]) b.classList.add("right"); else if(b===e.currentTarget) b.classList.add("wrong"); });
-        fb.className="feedback "+(ok?"ok":"no"); fb.textContent=(ok?"Right. ":"That was "+pick[1]+". ")+`${right}/${total}`; buzz(ok?10:[30,40,30]);
+        fb.className="feedback "+(ok?"ok":"no"); fb.textContent=(ok?"Right. ":"That was "+pick[1]+". ")+`${hits()}/${earLast.length}`; buzz(ok?10:[30,40,30]);
         acts.append(el("button",{className:"btn primary wide",type:"button",textContent:"Next",onclick:doRound})); if(ok) setTimeout(()=>{ if(acts.isConnected) doRound(); },900);
         hint.textContent=S.unitsDone.sounds?"Stage 0 is done. Practise as much as you like.":status(); }},arSpan(w[0]),el("span",{className:"tag",textContent:w[1]+" · "+w[2]}))));
       ap(stage,el("p",{className:"mode",textContent:"Which word did you hear?"}),el("div",{className:"row center"},playBtn(pick[0],"Play again",{vary:true}),slowBtn(pick[0])),opts,fb,acts); auto(pick[0],{vary:true});
-      hint.textContent=S.unitsDone.sounds?"Stage 0 is done. Practise as much as you like.":`${status()} · 75% over at least 8 tries finishes stage 0`;
+      hint.textContent=S.unitsDone.sounds?"Stage 0 is done. Practise as much as you like.":`${status()} · 6 of your last 8 right finishes stage 0`;
     };
     doRound();
   }

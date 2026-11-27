@@ -1870,3 +1870,15 @@ test("stage reached: a stage time from a clock set ahead is dropped on load and 
   const far=L.cleanSaved({updatedAt:R-5,stageOpen:{2:now+3*DAY,3:1e300}},now,"2026-11-14");
   for(const m of [L.mergeProgress(far,reset),L.mergeProgress(reset,far)]) assert.deepEqual({...m.stageOpen},{});
 });
+function earTest(){
+  const sc=loadScreens(); vm.runInContext("Math.random=()=>0.9; soundTab='ear'",sc.env); let sec=uiEl("div"); sc.env.renderSounds(sec);
+  const pick=sc.env.PAIRS[0][1][0];
+  return {sc,redraw(){ sec=uiEl("div"); sc.env.renderSounds(sec); },answer(ok){ press(walk(sec).find(n=>n.attrs["data-w"]!==undefined&&(n.attrs["data-w"]===pick)===ok)); press(byText(sec,"Next")); },done:()=>!!sc.t.S().unitsDone.sounds};
+}
+test("stage 0 test: a bad start doesn't block it: 6 of the last 8 pass",()=>{
+  const e=earTest(); for(let i=0;i<6;i++) e.answer(false); for(let i=0;i<5;i++) e.answer(true); assert.equal(e.done(),false,"5 of the last 8");
+  e.answer(true); assert.equal(e.done(),true);
+});
+test("stage 0 test: the answers so far survive the screen being drawn again",()=>{
+  const e=earTest(); for(let i=0;i<7;i++) e.answer(true); e.redraw(); assert.equal(e.done(),false); e.answer(true); assert.equal(e.done(),true);
+});
