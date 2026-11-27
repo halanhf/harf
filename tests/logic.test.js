@@ -1690,7 +1690,12 @@ test("stage reached: merges keep the earliest time per stage in both orders; jun
   const a={updatedAt:2,stageOpen:{2:500,3:900}}, b={updatedAt:1,stageOpen:{2:300}};
   for(const m of [L.mergeProgress(a,b),L.mergeProgress(b,a)]) assert.deepEqual({...m.stageOpen},{2:300,3:900});
   assert.deepEqual({...L.cleanSaved({stageOpen:{1:5,2:"x",3:7,9:4,"u1":3}},now,"2026-11-14").stageOpen},{3:7});
-  const reset={updatedAt:GNOW,resetAt:GNOW,resetDay:GDAY,cards:{}}; assert.deepEqual({...L.mergeProgress({updatedAt:5,stageOpen:{2:GNOW-DAY,3:GNOW+60000}},reset).stageOpen},{3:GNOW+60000});
+  const reset={updatedAt:GNOW,resetAt:GNOW,resetDay:GDAY,cards:{}}; const stale={updatedAt:5,stageOpen:{2:GNOW-DAY,3:GNOW+60000}};
+  // a copy that never heard of the reset keeps no stage at all, even one stamped after it (it was derived from progress the reset removes)
+  for(const m of [L.mergeProgress(stale,reset),L.mergeProgress(reset,stale)]) assert.deepEqual({...m.stageOpen},{});
+  // a copy that already knows the reset keeps a stage recorded at or after it
+  const knows={updatedAt:GNOW+9,resetAt:GNOW,resetDay:GDAY,stageOpen:{2:GNOW-1,3:GNOW,4:GNOW+60000},cards:{}};
+  for(const m of [L.mergeProgress(knows,reset),L.mergeProgress(reset,knows)]) assert.deepEqual({...m.stageOpen},{3:GNOW,4:GNOW+60000});
   const sp=L.splitProgress(a); assert.deepEqual({...L.joinProgress(sp.meta,sp.shards).stageOpen},{2:500,3:900});
   for(const o of [{},{built:true}]){ const u=loadUi(o); u.setS({stageOpen:{2:500}}); assert.equal(u.serialize().stageOpen["2"],500); }
 });
@@ -1869,6 +1874,20 @@ test("stage reached: a stage time from a clock set ahead is dropped on load and 
   const R=now, reset={updatedAt:R,resetAt:R,resetDay:"2026-11-14",cards:{}};
   const far=L.cleanSaved({updatedAt:R-5,stageOpen:{2:now+3*DAY,3:1e300}},now,"2026-11-14");
   for(const m of [L.mergeProgress(far,reset),L.mergeProgress(reset,far)]) assert.deepEqual({...m.stageOpen},{});
+});
+test("stage reached: a stage recorded on first draw by a copy that has not heard of the reset does not survive it, on the account and on github",async()=>{
+  for(const path of ["claude","pwa"]){
+    const d0=new Date(), day=`${d0.getFullYear()}-${String(d0.getMonth()+1).padStart(2,"0")}-${String(d0.getDate()).padStart(2,"0")}`, R=Date.now()-2000;
+    const remote={updatedAt:R,resetAt:R,resetDay:day,cards:{}}, local=saved({updatedAt:R-5000,unitsDone:{sounds:"2026-11-01"},cards:{}});
+    let t,meta;
+    if(path==="claude"){ const db=fakeDb(); const sp=L.splitProgress(remote); db.m.set(P+"progress",sp.meta); for(const [k,v] of Object.entries(sp.shards)) db.m.set(P+"cards_"+k,v);
+      t=loadUi({boot:true,claude:claudeWith(db),saved:{[KEY]:JSON.stringify(local)}}); meta=()=>db.m.get(P+"progress"); }
+    else { const hub=hubWith(remote); t=loadUi({boot:true,pwa:true,fetch:hub.fetch,saved:{[KEY]:JSON.stringify(local),[KEY+"-gh"]:CFG}}); meta=()=>hub.json("progress.json"); }
+    vm.runInContext(cut("function liveStage","function nextUnit",main),t.env); Object.assign(t.env,{unitsOfStage:()=>[],stageInfo:n=>({complete:n<3}),ITEMS:{}});
+    assert.equal(t.env.currentStage(),3); assert.ok(t.S().stageOpen["3"]>R,"the first draw stamps stage 3 after the reset");
+    await tick(); await tick();
+    assert.equal(t.env.currentStage(),0,path); assert.deepEqual({...t.S().stageOpen},{},path); assert.deepEqual({...(meta().stageOpen||{})},{},path);
+  }
 });
 function earTest(){
   const sc=loadScreens(); vm.runInContext("Math.random=()=>0.9; soundTab='ear'",sc.env); let sec=uiEl("div"); sc.env.renderSounds(sec);

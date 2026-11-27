@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-y4PbxGL9KiDi+jqPwEwb2z0H7/j2nh3KWrvCnJtBMGo=' 'sha256-ARKASbfRAc78ScJL1wr/XUe1yB5AFmPjsb7KDOQnEpA=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-MTWtj6+Nyh74aUm93XVj0Wlaxa3R5HyWV+jeZVaPGis=' 'sha256-ARKASbfRAc78ScJL1wr/XUe1yB5AFmPjsb7KDOQnEpA=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -2171,7 +2171,7 @@ function afterReset(o,R,RD,behind){
   o.cards=pick(o.cards,(k,c)=>lastReview(c)>=rMin);
   o.suspended=pick(o.suspended,(k,v)=>Math.abs(v)>=R);
   o.custom=(Array.isArray(o.custom)?o.custom:[]).filter(c=>c&&(parseInt(String(c.id).slice(1,-3),36)||0)>=R);
-  o.deleted=pick(tombs(o.deleted),(k,v)=>v>=R); o.stageOpen=pick(opens(o.stageOpen),(k,v)=>v>=R);
+  o.deleted=pick(tombs(o.deleted),(k,v)=>v>=R); o.stageOpen=behind?{}:pick(opens(o.stageOpen),(k,v)=>v>=R); // a copy that never heard of the reset can only have derived its stage from progress the reset removes
   for(const f of ["unitsDone","rp","read"]) o[f]=pick(o[f],(k,v)=>!old(v));
   o.log=pick(o.log,k=>!old(k));
   if(old(o.lastDay)){ o.streak=0; o.freezes=0; o.reviewsToday=0; o.newToday=0; o.lastDay=""; o.freezeUsed=""; }
