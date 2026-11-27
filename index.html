@@ -3144,7 +3144,7 @@ function startReview(onDone){
     const live=id=>ITEMS[id]&&S.cards[id]; // a word deleted on another device is merged in under an open review
     queue=queue.filter(live); for(const id of [...back.keys()]) if(!live(id)) back.delete(id); if(undo&&!live(undo.id)) undo=null;
     if(!queue.length){
-      const now=Date.now(); const soon=Object.entries(liveCards()).filter(([id,c])=>!isHidden(S.suspended,id)&&!held.has(id)&&dueAt(c)>now&&dueAt(c)-now<10*60000).sort((a,b)=>dueAt(a[1])-dueAt(b[1])); // when it really comes back, and never one held for the next days
+      const now=Date.now(); const soon=Object.entries(liveCards()).filter(([id,c])=>!isHidden(S.suspended,id)&&!held.has(id)&&dueAt(c)>now&&dueAt(c)-now<=10*60000).sort((a,b)=>dueAt(a[1])-dueAt(b[1])); // when it really comes back, and never one held for the next days
       if(soon.length&&n){ const ms=dueAt(soon[0][1])-now; if(holdLeft(Date.now())>0) persistLocal(); else flush(); cur=null; // not while the last grade can still be undone
         f.body.append(el("div",{className:"stage"},undoBox(),el("p",{className:"en",textContent:`${soon.length} card${soon.length>1?"s":""} come${soon.length>1?"":"s"} back ${whenLabel(ms)}`}),
           el("p",{className:"tag",textContent:"New and forgotten cards return after a short gap on purpose: recalling after a pause is what makes them stick. Wait here, or finish and they'll be on Today."}),

@@ -1597,7 +1597,7 @@ test("undo: gone when the session ends, and refused when a sync changed the card
   const r=reviewSix(); r.grade("Got it"); const p=r.t.serialize(); p.cards["x.0"][5]+=7; r.t.setS(p); const after=r.full();
   press(byText(r.b(),"Undo last grade")); assert.equal(r.t.S().cards["x.0"].t,p.cards["x.0"][5]*60000); assert.equal(r.full(),after,"nothing restored"); assert.ok(texts(r.b()).includes("That card changed on another device, so it can't be undone."));
   assert.ok(!byText(r.b(),"Undo last grade"),"button removed after the refusal");
-  for(let i=0;i<5;i++) r.grade("Got it"); assert.ok(texts(r.b()).includes("Review done")); assert.ok(!byText(r.b(),"Undo last grade"));
+  for(let i=0;i<5;i++) r.grade("Got it"); assert.ok(/come back in 10 min/.test(texts(r.b()).join(" ")),"the six new cards wait 10 min"); press(byText(r.b(),"Finish for now")); assert.ok(texts(r.b()).includes("Review done")); assert.ok(!byText(r.b(),"Undo last grade"));
 });
 test("undo: from the waiting screen the card comes back and the wait is cancelled",()=>{
   const sc=loadScreens({harakat:"never"}), {env,t}=sc; t.S().cards={"u1.0":sc.card(0,0,0)}; env.sched=(c,g,n)=>L.schedule(c,g,n,0.9);
@@ -1605,6 +1605,14 @@ test("undo: from the waiting screen the card comes back and the wait is cancelle
   env.startReview(null); press(byText(sc.spy.view.body,"Show answer")); press(walk(sc.spy.view.body).find(n=>txt(n).startsWith("Forgot")&&n.tag==="button"));
   assert.ok(/comes? back in/.test(texts(sc.spy.view.body).join(" "))); press(byText(sc.spy.view.body,"Undo last grade"));
   assert.equal(full(),before); assert.ok(byText(sc.spy.view.body,"Show answer")); assert.equal(t.timers.size,0);
+});
+test("review: a card due in exactly 10 minutes is on the waiting screen even when the clock moved on a millisecond or more",()=>{
+  for(const [st,i,lab] of [[0,0,"Got it"],[-1,8,"Forgot"]]) for(const step of [0,1,7]){
+    const sc=loadScreens({harakat:"never"}), {env,t}=sc; t.S().cards={"u1.0":sc.card(st,i,st<0?4:0)}; env.sched=(c,g,n)=>L.schedule(c,g,n,0.9);
+    vm.runInContext(`globalThis.__now=Math.floor(Date.now()/60000)*60000; Date.now=()=>(globalThis.__now+=${step});`+cut("function touchDay","const shownStreak"),env);
+    env.startReview(null); press(byText(sc.spy.view.body,"Show answer")); press(walk(sc.spy.view.body).find(n=>txt(n).startsWith(lab)&&n.tag==="button"));
+    assert.ok(/1 card comes back in 10 min/.test(texts(sc.spy.view.body).join(" ")),`${lab}, clock +${step} ms: ${texts(sc.spy.view.body).join("|")}`);
+  }
 });
 const WORD={id:"cabc1",ar:"قهوة",tr:"gahwa",en:"coffee"}, wcard=()=>[1,5,2,GT+9999,0,GT+60,-1,1];
 test("delete my own word: a second tap deletes the word and its card; the first tap wears off; course cards have no such button",()=>{
@@ -1816,7 +1824,7 @@ test("undo: it is announced, focus goes to the refusal line, and a stage with no
 
 // what a merge from a device that deleted the word does to this one while a review is open: the real merge, then the item table loses it
 const goneRemote=(r,id)=>{ const T=Date.now(); r.t.setS(L.mergeProgress(r.t.serialize(),{updatedAt:T+1,deleted:{[id]:T},custom:[],cards:{}})); delete r.sc.items[id]; };
-const finishAll=r=>{ const seen=[]; for(let i=0;i<12&&r.shown();i++){ seen.push(r.shown()); r.grade("Got it"); } return seen; };
+const finishAll=r=>{ const seen=[]; for(let i=0;i<12&&r.shown();i++){ seen.push(r.shown()); r.grade("Got it"); } const fin=byText(r.b(),"Finish for now"); if(fin) press(fin); return seen; }; // a card just graded is due in exactly 10 min and waits on screen: leave through "Finish for now"
 test("delete my own word: a word deleted on another device while it waits in the open review is skipped, nothing throws, the review finishes",()=>{
   const r=reviewSix("cabc1",true); assert.equal(r.shown(),"x.0".replace("x.0","x.1")); goneRemote(r,"cabc1"); assert.ok(!r.t.S().custom.length);
   r.grade("Got it"); const seen=finishAll(r); assert.ok(!seen.includes("cabc1")); assert.ok(texts(r.b()).includes("Review done"),texts(r.b()).join("|")); assert.ok(texts(r.b()).some(x=>x.startsWith("5 cards reviewed")),texts(r.b()).join("|"));
@@ -1829,7 +1837,7 @@ test("delete my own word: when every remaining card was deleted elsewhere the re
   const sc=loadScreens({harakat:"never"}), {env,t}=sc, W2={id:"cdef2",ar:"شاي",tr:"shay",en:"tea"}; t.S().custom=[{...WORD},{...W2}];
   for(const w of [WORD,W2]){ sc.items[w.id]=Object.assign({unit:"custom",stage:"custom"},w); t.S().cards[w.id]=sc.card(0,0,0); }
   env.startReview(null); const b=()=>sc.spy.view.body, r={t,sc}; const firstAr=texts(b()).some(x=>x==="قهوة"||x==="coffee")?"cabc1":"cdef2", other=firstAr==="cabc1"?"cdef2":"cabc1";
-  goneRemote(r,other); press(byText(b(),"Show answer")); press(walk(b()).find(n=>n.tag==="button"&&txt(n).startsWith("Got it")));
+  goneRemote(r,other); press(byText(b(),"Show answer")); press(walk(b()).find(n=>n.tag==="button"&&txt(n).startsWith("Got it"))); assert.ok(/1 card comes back in 10 min/.test(texts(b()).join(" ")),texts(b()).join("|")); press(byText(b(),"Finish for now"));
   assert.ok(texts(b()).includes("Review done"),texts(b()).join("|")); assert.ok(texts(b()).some(x=>x.startsWith("1 card reviewed")));
 });
 test("delete my own word: a marker map or word id named like an object property neither makes a marker nor removes anything",()=>{
