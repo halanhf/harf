@@ -1399,14 +1399,23 @@ test("audio: a line cut by the next tap stays quiet, even when the engine says n
 });
 
 // a claude.ai voice that reports the documented states: speak() returns a promise the test settles, onState hands the handler over
+const runShort=s=>{ for(const [id,x] of [...s.t.timers]) if(x.ms<60000){ s.t.timers.delete(id); x.f(); } }; // the ordinary limits only, not the hard one
 function fakeVoice({withState=true}={}){ const v={calls:[],stops:0,h:null,pend:[]};
   v.speak=t=>{ v.calls.push(t); return new Promise((res,rej)=>{ v.pend.push({res,rej}); }); }; v.stop=async()=>{ v.stops++; };
   if(withState) v.onState=h=>{ v.h=h; return ()=>{}; }; v.emit=state=>v.h&&v.h({state}); return v; }
 test("audio: a claude.ai line that reaches speaking is not reported, and one still speaking at its limit is not cut off or played over",async()=>{
   const s=loadSpeech({voices:[]}), v=fakeVoice(); s.env.__tts(v); let done; s.env.sayQueue([{text:"هلا"},{text:"زين"}]).then(r=>{ done=r; });
-  v.emit("starting"); v.emit("speaking"); s.t.runTimers(); await tick();
+  v.emit("starting"); v.emit("speaking"); runShort(s); await tick();
   assert.deepEqual(v.calls,["هلا"],"the next line waits for the one that is playing"); assert.equal(s.note.hidden,true); assert.equal(v.stops,1,"only the stop that opened the queue");
   v.pend[0].res({playedMs:900}); await tick(); assert.deepEqual(v.calls,["هلا","زين"]); v.emit("starting"); v.emit("speaking"); v.pend[1].res({playedMs:900}); await tick(); assert.equal(done,true); assert.equal(s.note.hidden,true);
+});
+test("audio: a claude.ai line stuck in speaking that never settles is stopped by a second, longer timer, and the queue moves on",async()=>{
+  const s=loadSpeech({voices:[]}), v=fakeVoice(); s.env.__tts(v); let done; s.env.sayQueue([{text:"هلا"},{text:"زين"}]).then(r=>{ done=r; });
+  v.emit("starting"); v.emit("speaking"); const ms=()=>[...s.t.timers.values()].map(x=>x.ms).sort((a,b)=>a-b); assert.equal(ms().length,2); assert.ok(ms()[1]>=60000,"a hard limit of a minute or more");
+  const st=v.stops; for(const [id,x] of [...s.t.timers]) if(x.ms<60000){ s.t.timers.delete(id); x.f(); } await tick(); assert.deepEqual(v.calls,["هلا"],"the ordinary limit still waits for a playing line");
+  for(const [id,x] of [...s.t.timers]){ s.t.timers.delete(id); x.f(); } await tick();
+  assert.equal(v.stops,st+1,"the stuck line is stopped"); assert.deepEqual(v.calls,["هلا","زين"],"the next line starts"); assert.equal(s.note.hidden,true,"no notice: it was playing");
+  v.emit("starting"); v.emit("speaking"); v.pend[1].res({playedMs:900}); await tick(); assert.equal(done,true);
 });
 test("audio: a claude.ai line that never reaches speaking is stopped and reported; a stale speaking event cannot start the next line",async()=>{
   const s=loadSpeech({voices:[]}), v=fakeVoice(); s.env.__tts(v); s.env.say("هلا"); v.emit("starting"); const st=v.stops; s.t.runTimers(); await tick();

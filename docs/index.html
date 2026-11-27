@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-MTWtj6+Nyh74aUm93XVj0Wlaxa3R5HyWV+jeZVaPGis=' 'sha256-UjLLf7KmEQolECByvO6fZQOxbHJInHHBrJo6DDb+zl0=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-MTWtj6+Nyh74aUm93XVj0Wlaxa3R5HyWV+jeZVaPGis=' 'sha256-bkMsMwBFhE6MCuQqnMbmvr9TUx7lbYMzJ4eDTG9t484=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -2739,15 +2739,16 @@ function speakPart(text,o){
   o=o||{}; const en=o.lang==="en", g=audioGen;
   return new Promise(res=>{
     if(!text){ res(); return; }
-    let done=false, started=false, tm=0, claude=false, me=null;
+    let done=false, started=false, tm=0, hard=0, claude=false, me=null;
     // after one line of a queue stalls, the rest get a short limit and no second notice
     const stall=()=>{ if(g===audioGen&&stallGen!==g){ stallGen=g; voiceNote(VOICE_STALL); } };
-    const fin=(quiet,late)=>{ if(done) return; if(late&&claude&&started&&ttsHooked===TTS) return; /* really playing: wait for it, a new speak() would cut it off */ done=true; clearTimeout(tm); if(ttsPart===me) ttsPart=null;
-      if(late&&!started&&g===audioGen){ try{ if(claude) TTS.stop().catch(()=>{}); else synth.cancel(); }catch(e){} } // never leave a given-up line to play over the next one
+    const fin=(quiet,late,force)=>{ if(done) return; if(late&&!force&&claude&&started&&ttsHooked===TTS) return; /* really playing: wait for it, a new speak() would cut it off */ done=true; clearTimeout(tm); clearTimeout(hard); if(ttsPart===me) ttsPart=null;
+      if(force&&claude){ if(g===audioGen) try{ TTS.stop().catch(()=>{}); }catch(e){} } // a line stuck in "speaking" is cut after the hard limit so the queue moves on
+      else if(late&&!started&&g===audioGen){ try{ if(claude) TTS.stop().catch(()=>{}); else synth.cancel(); }catch(e){} } // never leave a given-up line to play over the next one
       if(!quiet&&!started) stall(); res(); };
     tm=setTimeout(()=>fin(false,true),g===stallGen?1500:speakLimit(text,o.rate));
     try{
-      if(TTS&&(en?!enVoice:useClaudeVoice())){ claude=true; hookTTS(); me=ttsPart={seen:false,begin:()=>{ started=true; }};
+      if(TTS&&(en?!enVoice:useClaudeVoice())){ claude=true; hard=setTimeout(()=>fin(true,true,true),Math.max(60000,3*speakLimit(text,o.rate))); hookTTS(); me=ttsPart={seen:false,begin:()=>{ started=true; }};
         TTS.speak(String(text).slice(0,2000),{rate:Math.max(0.7,Math.min(1.5,o.rate||1))}).then(()=>{ started=true; fin(true); },e=>{ if(e&&e.code==="not_granted"){ TTS=null; pickVoices(); } fin(true); }); return; }
       if(!synth){ fin(true); return; }
       const u=new SpeechSynthesisUtterance(text); let v=en?enVoice:arVoice;
