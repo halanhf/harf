@@ -31,7 +31,7 @@ function loadUi(o={}){
     document:{createElement:fakeEl,visibilityState:"visible",addEventListener:(t,f)=>{ on[t]=f; }},addEventListener:(t,f)=>{ on[t]=f; },
     window:{claude:o.claude,HARF_PWA:o.built?undefined:o.pwa},navigator:{onLine:o.online!==false},fetch:o.fetch||(()=>{ throw new Error("unexpected fetch"); }),
     rebuild(){},refresh(){},busy:false,currentTab:"today",RENDER:{today(){ calls.push("render"); }},show(){ calls.push("show"); },
-    feedMsa(){ calls.push("msa"); if(o.feed) o.feed(env.T); },feedSentences(){ calls.push("sentences"); },afterRemoteChange(){ calls.push("changed"); },firstMergeDone(){}};
+    feedMsa(){ calls.push("msa"); if(o.feed) o.feed(env.T); },feedSentences(){ calls.push("sentences"); },afterRemoteChange(){ calls.push("changed"); },firstMergeDone(){},dayTurn(){}};
   vm.createContext(env); let m=main;
   if(o.built){ const sc=builtScripts(), mi=sc.findIndex(x=>x.includes("// ===== state =====")); assert.ok(mi>0); sc.slice(0,mi).forEach(x=>vm.runInContext(x,env)); m=sc[mi].match(/\(function\(\)\{([\s\S]*)/)[1]; }
   else vm.runInContext(block("logic"),env);
@@ -1033,39 +1033,44 @@ test("harakat: the vowelled form is display-only: no audio, speech, matching or 
 // the screens themselves, run against a small fake dom with the audio and checking calls recorded
 function uiEl(tag){ const e={tag,attrs:{},children:[],parent:null,style:{},hidden:false,className:"",
   setAttribute(k,v){ e.attrs[k]=String(v); },
-  isConnected:true,
+  detached:false, get isConnected(){ for(let n=e;n;n=n.parent) if(n.detached) return false; return true; },
   // like the browser: a node is added as it is, anything else (null, undefined, false, a number) becomes a text node of its string form
-  append(...k){ for(const c of k){ if(c&&typeof c==="object") c.parent=e; e.children.push(c&&typeof c==="object"?c:String(c)); } },
-  remove(){ if(e.parent) e.parent.children=e.parent.children.filter(x=>x!==e); e.parent=null; },
+  append(...k){ for(const c of k){ if(c&&typeof c==="object"){ c.parent=e; c.detached=false; } e.children.push(c&&typeof c==="object"?c:String(c)); } },
+  remove(){ if(e.parent) e.parent.children=e.parent.children.filter(x=>x!==e); e.parent=null; e.detached=true; },
   contains(n){ return n===e||e.children.some(c=>c&&typeof c==="object"&&c.contains(n)); },
   classList:{add:c=>{ e.className=(e.className+" "+c).trim(); },remove:c=>{ e.className=e.className.split(/\s+/).filter(x=>x&&x!==c).join(" "); },contains:c=>e.className.split(/\s+/).includes(c)},
-  scrollIntoView(){} };
+  get lastChild(){ return e.children[e.children.length-1]||null; },
+  querySelectorAll(sel){ const c=sel.slice(1); return walk(e).slice(1).filter(n=>n.className.split(/\s+/).includes(c)); },
+  scrollIntoView(){}, focus(){} };
   const own={}; e.dataset=new Proxy(own,{get:(o,k)=>k in o?o[k]:e.attrs["data-"+String(k).replace(/[A-Z]/g,c=>"-"+c.toLowerCase())]});
-  Object.defineProperty(e,"textContent",{get:()=>e._t||"",set:v=>{ e._t=String(v); e.children.forEach(c=>{ if(c&&typeof c==="object") c.parent=null; }); e.children=[]; }}); return e; }
+  Object.defineProperty(e,"textContent",{get:()=>e._t||"",set:v=>{ e._t=String(v); e.children.forEach(c=>{ if(c&&typeof c==="object"){ c.parent=null; c.detached=true; } }); e.children=[]; }}); return e; }
 const walk=n=>typeof n==="string"||!n?[]:[n,...n.children.flatMap(walk)];
 const txt=n=>typeof n==="string"?n:(n._t||"")+n.children.map(txt).join("");
 const byText=(root,t)=>walk(root).find(n=>n.tag==="button"&&txt(n)===t);
+const talkOf=sc=>{ const s=uiEl("div"); s.id="talk"; sc.env.rootEl=s; Object.assign(sc.env,{DIALECT:"Gulf",learnerGender:()=>"",stageLine:()=>"",knownList:()=>""}); return s; };
+const byId=(root,id)=>walk(root).find(n=>n.id===id);
 const press=n=>{ assert.ok(n,"control missing"); n.onclick({currentTarget:n}); };
 const MARKS=/[\u064B-\u0652\u0670]/;
 const UNIT={id:"u1",stage:1,title:"Greetings",goal:"g",tip:"t",
   items:[{ar:"هلا",tr:"hala",en:"hi",arv:"هَلَا"},{ar:"شلونك",tr:"shlōnak",en:"how are you",arv:"شْلَوْنَكْ"},{ar:"زين",tr:"zēn",en:"good",arv:"زَيْنْ"},{ar:"مع السلامة",tr:"maʿ is-salāma",en:"bye",arv:"مَعْ السَّلَامَة"}],
   dialogue:[{who:"A",ar:"شلونك",tr:"shlōnak",en:"how are you",arv:"شْلَوْنَكْ"},{who:"B",ar:"زين",tr:"zēn",en:"good",arv:"زَيْنْ"}]};
-function loadScreens({harakat="auto",stage=1}={}){
-  const t=loadUi(), env=t.env; t.setS({settings:{harakat}}); env.__stage=stage; env.currentStage=()=>env.__stage;
-  const spy={say:[],queue:[],auto:[],widget:[],view:null}; env.document.createElement=uiEl;
+function loadScreens({harakat="auto",stage=1,autoplay=true,ui={}}={}){
+  const t=loadUi(ui), env=t.env; t.setS({settings:{harakat,autoplay}}); env.__stage=stage; env.currentStage=()=>env.__stage;
+  const spy={say:[],queue:[],auto:[],played:[],widget:[],view:null}; env.document.createElement=uiEl;
   const rec=name=>text=>{ spy.widget.push([name,text]); return uiEl("span"); };
-  Object.assign(env,{say(text){ spy.say.push(text); return Promise.resolve(); },sayQueue(parts){ spy.queue.push(parts.map(p=>p.text)); return Promise.resolve(); },auto:text=>{ spy.auto.push(text); },
-    playBtn:rec("play"),slowBtn:rec("slow"),shadowBtn:rec("shadow"),recordWidget:rec("record"),speakWidget:rec("speak"),nativeLink:()=>uiEl("span"),shiftChip:()=>null,
+  Object.assign(env,{say(text){ spy.say.push(text); spy.played.push(text); return Promise.resolve(); },sayQueue(parts){ spy.queue.push(parts.map(p=>p.text)); parts.forEach(p=>{ if(p.text) spy.played.push(p.text); }); return Promise.resolve(); },auto:text=>{ spy.auto.push(text); if(t.S().settings.autoplay!==false) spy.played.push(text); },
+    voiceRow:()=>null,playBtn:rec("play"),slowBtn:rec("slow"),shadowBtn:rec("shadow"),recordWidget:rec("record"),speakWidget:rec("speak"),nativeLink:()=>uiEl("span"),shiftChip:()=>null,
     trLine:tr=>{ const p=uiEl("p"); p.textContent=tr; return p; },icon:()=>uiEl("span"),
     focusView:()=>{ spy.view={body:uiEl("div"),progress(){},alive:()=>true}; return spy.view; },focusCard(){},announce(){},buzz(){},stopAudio(){},keepAwake(){},
     sched:c=>c,touchDay(){},logActivity(){},addSentenceCards(){},show(){},refresh(){},heatmap:()=>uiEl("div"),forecastBars:()=>uiEl("div"),savedMsg:()=>"",
     STAGE_NAMES:[],stageInfo:()=>({}),shownStreak:()=>0,lessonsDone:()=>0,standalone:()=>false,ghPanel(){},installEvt:null,cleanIn:x=>x,DAY:86400000,SAMPLE:null,micBlocked:false,SR:null,DB:null,GH:null});
-  vm.runInContext("var enVoice=null, TTS=null; let keyHandler=null;",env);
+  vm.runInContext("var enVoice=null, TTS=null, chatLog=[], generating=false, DICT=null, dictSink=null, dictLang='ar-AE'; let keyHandler=null;",env);
   for(const s of [cut("const ap=","const SVG="),cut("let ITEMS={}","function rebuild"),cut("const liveCards=","const lessonsDone"),
-      cut("const harOn=","\n"),cut("const bigAr=","\n"),cut("function openLesson","// ===== role-play"),cut("function roleplay(","// ===== review tab"),cut("function renderStory","// ===== progress"),cut("function startReview","// ===== hands-free"),cut("function audioDrill","// ===== course"),cut("function renderMe","// ===== boot")])
+      cut("const harOn=","\n"),cut("const bigAr=","\n"),cut("// the lesson's place is kept","// ===== role-play"),cut("function roleplay(","// ===== review tab"),cut("let talkMode=","// ===== progress"),cut("function startReview","// ===== hands-free"),cut("let curLetter=0","function renderGrammar"),cut("function numbersDrill","// ===== talk"),cut("function audioDrill","// ===== course"),cut("function renderMe","// ===== boot")])
     vm.runInContext(s,env);
   const items={}, unitOf={}; UNIT.items.forEach((it,i)=>{ items["u1."+i]=Object.assign({id:"u1."+i,unit:"u1",stage:1},it); unitOf["u1."+i]="u1"; });
   const s0=Object.assign({id:"u1.s0",unit:"u1",stage:"s1",sentence:true},UNIT.items[3]); items["u1.s0"]=s0; unitOf["u1.s0"]="u1";
+  Object.assign(env,{PAIRS:[[["قلب","qalb","heart"],["كلب","kalb","dog"]]],NUMBERS:[["١","واحد","wāhid","one"],["٢","ثنين","thnayn","two"],["٣","ثلاثة","thalātha","three"],["٤","أربعة","arbaʿa","four"]],LETTERS:[]});
   vm.runInContext("this.__set=(i,u,m)=>{ ITEMS=i; UNITS=u; ITEM_UNIT=m; };",env); env.__set(items,[UNIT],unitOf);
   const card=(st,i,r)=>({s:1,k:5,d:1,t:0,r,l:0,st,i});
   return {t,env,spy,items,card,shown:root=>walk(root).filter(n=>n.lang==="ar").map(txt)};
@@ -1109,7 +1114,7 @@ test("harakat on: tapping the big phrase and the answer check use the plain spel
   for(let k=0;k<4;k++) press(byText(spy.view.body,k<3?"Next →":"Quick check →"));
   const right=walk(spy.view.body).filter(n=>n.attrs["data-ar"]!==undefined); const en=walk(spy.view.body).find(n=>n.className==="en"&&UNIT.items.some(i=>i.en===txt(n))); const it=UNIT.items.find(i=>i.en===txt(en));
   const wrong=right.find(n=>n.attrs["data-ar"]!==it.ar); press(wrong); assert.ok(/\bright\b/.test(right.find(n=>n.attrs["data-ar"]===it.ar).className),"the plain spelling is the right answer"); assert.ok(/\bwrong\b/.test(wrong.className));
-  assert.equal(spy.say.at(-1),it.ar);
+  assert.equal(spy.auto.at(-1),it.ar);
 });
 const reviewOf=(sc,id,c)=>{ sc.t.S().cards[id]=c; sc.env.startReview(null); return sc.spy.view.body; };
 const bigOf=n=>walk(n).filter(x=>x.lang==="ar"&&/\bbig\b/.test(x.className)).map(txt);
@@ -1222,4 +1227,857 @@ test("guard: no screen the harness can reach shows a bare null or undefined",asy
   sc.t.S().cards={"u1.1":sc.card(-1,3,6)}; env.audioDrill(); check("drill");
   const me=uiEl("div"); me.id="me"; env.rootEl=me; sc.t.S().cards["u1.1"]=Object.assign(sc.card(-1,3,6),{l:5}); env.renderMe(); if(junk(me).length) seen.push("progress: "+junk(me));
   assert.deepEqual(seen,[]);
+});
+
+test("typing boxes: chat and sentence boxes follow the text's direction with autocorrect and autocapitalise off, as attributes; the topic box follows direction",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); sc.env.SAMPLE={json:async()=>({english:"I want coffee",hint:"abi"})};
+  const want={dir:"auto",autocapitalize:"off",autocorrect:"off",spellcheck:"false"}, has=(n)=>Object.fromEntries(Object.keys(want).map(k=>[k,n.attrs[k]]));
+  sc.env.renderTalk(); assert.deepEqual(has(byId(sec,"chat-input")),want);
+  vm.runInContext('talkMode="practice"',sc.env); sc.env.renderTalk(); await tick(); assert.deepEqual(has(byId(sec,"practice-input")),want);
+  sc.env.generateUnit(6,null,()=>{}); const topic=byId(sc.spy.view.body,"topic-input"); assert.equal(topic.attrs.dir,"auto"); assert.equal(topic.attrs.autocorrect,undefined);
+});
+test("redraw: a chat draft survives the Talk tab being drawn again, and sending clears it",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); sc.env.SAMPLE={json:()=>new Promise(()=>{})};
+  sc.env.renderTalk(); const inp=byId(sec,"chat-input"); inp.value="شلونك"; inp.oninput();
+  sc.env.renderTalk(); assert.equal(byId(sec,"chat-input").value,"شلونك");
+  walk(sec).find(n=>n.tag==="form").onsubmit({preventDefault(){}}); sc.env.renderTalk(); assert.equal(byId(sec,"chat-input").value,"");
+});
+test("redraw: sentence practice keeps its sentence, your answer and your tries, and asks for no new sentence",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); let asks=0, give; sc.env.SAMPLE={json:()=>{ asks++; return new Promise(r=>{ give=r; }); }};
+  vm.runInContext('talkMode="practice"',sc.env); sc.env.renderTalk(); sc.env.renderTalk(); // redrawn while the sentence is still coming
+  give({english:"I want coffee",hint:"abi"}); await tick(); assert.equal(asks,1); assert.ok(texts(sec).includes("I want coffee"));
+  const inp=byId(sec,"practice-input"); inp.value="ابي قهوة"; inp.oninput(); sc.env.renderTalk(); await tick();
+  assert.equal(asks,1); assert.ok(texts(sec).includes("I want coffee")); assert.equal(byId(sec,"practice-input").value,"ابي قهوة");
+});
+
+// the speech-out section against a fake speechSynthesis. fire: "end" (starts then ends), "start" (starts, never ends), "error", "none" (nothing ever fires)
+function loadSpeech({voices=[{lang:"ar-SA"}],engine=true,fire="end",store,quietCancel=false,throwSpeak=false}={}){
+  const t=loadUi({store}), env=t.env, note=uiEl("p"), spoken=[], cancels=[], announced=[]; note.hidden=true; let cur=null; env.announce=x=>{ announced.push(x); };
+  env.document.createElement=uiEl; env.$=s=>s==="#voice-note"?note:s==="#sync-note"?t.note:null;
+  env.SpeechSynthesisUtterance=function(text){ this.text=text; };
+  if(engine) env.window.speechSynthesis={getVoices:()=>voices,addEventListener(){},cancel(){ cancels.push(1); if(!quietCancel&&cur&&cur.onerror) cur.onerror({error:"interrupted"}); cur=null; },
+    speak(u){ if(throwSpeak) throw new Error("boom"); cur=u; spoken.push(u.text); if(fire==="end"){ u.onstart&&u.onstart(); u.onend(); } else if(fire==="start") u.onstart&&u.onstart(); else if(fire==="error") u.onerror({error:"synthesis-failed"}); }};
+  vm.runInContext(cut("const ap=","const SVG=")+cut("const synth=","// ===== speech in")+";function pauseRec(){} /* the record widget is not loaded here */ this.__tts=x=>{ TTS=x; pickVoices(); }; Object.assign(this,{VOICE_NONE,VOICE_NOAR,VOICE_STALL});",env);
+  return {t,env,note,spoken,cancels,announced,run:async()=>{ for(let i=0;i<4;i++){ t.runTimers(); await tick(); } }};
+}
+test("audio: a voice that never answers is given up on, the queue carries on, and one line says so",async()=>{
+  const s=loadSpeech({fire:"none"}); let done; s.env.sayQueue([{text:"هلا"},{pause:400},{text:"زين"}]).then(r=>{ done=r; });
+  await s.run(); assert.equal(done,true); assert.deepEqual(s.spoken,["هلا","زين"]);
+  assert.equal(s.note.hidden,false); assert.ok(txt(s.note).startsWith(s.env.VOICE_STALL));
+  const e=loadSpeech({fire:"error"}); await e.env.say("هلا"); assert.ok(txt(e.note).startsWith(e.env.VOICE_STALL),"an error before it starts is the same");
+});
+test("audio: a voice that starts is never cut off or reported, and an interrupted line is not a failure",async()=>{
+  const s=loadSpeech({fire:"start"}); let done=false; s.env.say("هلا").then(()=>{ done=true; }); await s.run(); assert.equal(done,true); assert.equal(s.note.hidden,true);
+  const i=loadSpeech({fire:"none"}); i.env.say("هلا"); i.env.say("زين"); await tick(); assert.equal(i.note.hidden,true,"the second tap interrupted the first");
+  const ok=loadSpeech(); await ok.env.say("هلا"); assert.equal(ok.note.hidden,true);
+});
+test("audio: no speech engine and no Claude voice shows one line at load, and play goes on at once; the claude.ai voice clears it",async()=>{
+  const s=loadSpeech({engine:false}); assert.ok(txt(s.note).startsWith(s.env.VOICE_NONE)); await s.env.say("هلا");
+  s.env.__tts({speak:async()=>{},stop:async()=>{}}); assert.equal(s.note.hidden,true);
+});
+test("audio: the Claude voice that never finishes is given up on too (claude.ai build)",async()=>{
+  const s=loadSpeech({voices:[]}); s.env.__tts({speak:()=>new Promise(()=>{}),stop:async()=>{}}); let done=false;
+  s.env.say("هلا").then(()=>{ done=true; }); await s.run(); assert.equal(done,true); assert.ok(txt(s.note).startsWith(s.env.VOICE_STALL));
+});
+test("voice notice: Hide keeps it hidden on this device after a reload, and it is not part of progress",async()=>{
+  const s=loadSpeech({voices:[{lang:"en-GB"}]}); assert.ok(txt(s.note).startsWith(s.env.VOICE_NOAR)); const before=JSON.stringify(s.t.serialize());
+  press(byText(s.note,"Hide")); assert.equal(s.note.hidden,true); assert.equal(s.t.store.get(KEY+"-voice"),"hidden"); assert.equal(JSON.stringify(s.t.serialize()),before);
+  const r=loadSpeech({voices:[{lang:"en-GB"}],fire:"none",store:s.t.store}); assert.equal(r.note.hidden,true); r.env.say("هلا"); await r.run(); assert.equal(r.note.hidden,true);
+});
+
+// fix round 1
+const talkSend=(sec,text)=>{ const f=walk(sec).find(n=>n.tag==="form"); const i=byId(sec,"chat-input"); i.value=text; i.oninput(); return f.onsubmit({preventDefault(){}}); };
+const typeIn=(sec,id,text)=>{ const i=byId(sec,id); i.value=text; i.oninput(); return i; };
+test("dictation: dictated text reaches the draft, survives a redraw, and a dictation left over from before the redraw writes nowhere",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); sc.env.SAMPLE={json:()=>new Promise(()=>{})}; let stopped=0;
+  vm.runInContext("DICT=null",sc.env); sc.env.__dict={start:async()=>{},stop:async()=>{ stopped++; }}; vm.runInContext("DICT=this.__dict",sc.env);
+  sc.env.renderTalk(); const old=byId(sec,"chat-input"); walk(sec).find(n=>n.attrs["aria-label"]==="Dictate in Arabic").onclick();
+  const sink=vm.runInContext("dictSink",sc.env); sink.final="مرحبا"; sink.update();
+  sc.env.renderTalk(); assert.equal(byId(sec,"chat-input").value.trim(),"مرحبا"); assert.equal(stopped,1); assert.equal(vm.runInContext("dictSink",sc.env),null);
+  old.value=""; sink.final="مرحبا بك"; sink.update(); assert.equal(old.value,""); assert.equal(byId(sec,"chat-input").value.trim(),"مرحبا");
+});
+test("dictation: dictated text in the sentence box reaches the practice draft",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); sc.env.SAMPLE={json:async()=>({english:"I want coffee",hint:"abi"})};
+  sc.env.__dict={start:async()=>{},stop:async()=>{}}; vm.runInContext("DICT=this.__dict; talkMode='practice'",sc.env);
+  sc.env.renderTalk(); await tick(); walk(sec).find(n=>n.attrs["aria-label"]==="Dictate in Arabic").onclick();
+  const sink=vm.runInContext("dictSink",sc.env); sink.final="ابي قهوة"; sink.update(); sc.env.renderTalk(); await tick();
+  assert.equal(byId(sec,"practice-input").value.trim(),"ابي قهوة");
+});
+test("scenario buttons: the starter text is the draft even when a reply is still on its way",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); sc.env.SAMPLE={json:()=>new Promise(()=>{})};
+  sc.env.renderTalk(); talkSend(sec,"hi"); const form=walk(sec).find(n=>n.tag==="form"); form.requestSubmit=()=>form.onsubmit({preventDefault(){}});
+  press(byText(sec,"Order at a café")); sc.env.renderTalk();
+  assert.equal(byId(sec,"chat-input").value,"Let's role-play: order at a café. You start.");
+});
+test("chat errors: a failed send puts the text back and it survives a redraw; Try again does too",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); sc.env.SAMPLE={json:async()=>{ throw new Error("x"); }};
+  sc.env.renderTalk(); await talkSend(sec,"hello"); assert.equal(byId(sec,"chat-input").value,"hello"); sc.env.renderTalk(); assert.equal(byId(sec,"chat-input").value,"hello");
+  const sc2=loadScreens(), sec2=talkOf(sc2); sc2.env.SAMPLE={json:async()=>({arabic:"زين",translit:"zēn",english:"good",correction:"c",hint:"h"})};
+  sc2.env.renderTalk(); await talkSend(sec2,"bad"); assert.equal(byId(sec2,"chat-input").value,"");
+  press(byText(sec2,"Try again")); assert.equal(byId(sec2,"chat-input").value,"bad"); sc2.env.renderTalk(); assert.equal(byId(sec2,"chat-input").value,"bad");
+});
+test("chat: a reply that lands after the Talk tab was redrawn is on screen, and the redrawn Send stays off until it arrives",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); let ok; vm.runInContext('currentTab="talk"',sc.env); sc.env.SAMPLE={json:()=>new Promise(r=>{ ok=r; })};
+  sc.env.renderTalk(); const sent=talkSend(sec,"hello"); sc.env.renderTalk();
+  const send=()=>walk(sec).find(n=>n.tag==="button"&&txt(n)==="Send"); assert.equal(send().disabled,true,"Send is off in the redrawn form while the reply is awaited");
+  const before=walk(sec).filter(n=>n.tag==="form").length; walk(sec).find(n=>n.tag==="form").onsubmit({preventDefault(){}}); await tick(); assert.equal(vm.runInContext("chatLog.length",sc.env),1,"no second send");
+  ok({arabic:"زين",translit:"zēn",english:"good"}); await sent;
+  assert.ok(texts(sec).includes("good"),texts(sec).join("|")); assert.equal(before,1); assert.equal(send().disabled,false);
+  // not redrawn when the learner has gone to another tab
+  const sc2=loadScreens(), sec2=talkOf(sc2); let ok2; sc2.env.SAMPLE={json:()=>new Promise(r=>{ ok2=r; })}; vm.runInContext('currentTab="talk"',sc2.env);
+  sc2.env.renderTalk(); const s2=talkSend(sec2,"hi"); vm.runInContext('currentTab="today"',sc2.env); sc2.env.renderTalk(); ok2({arabic:"زين",translit:"zēn",english:"good"}); await s2; assert.ok(!texts(sec2).includes("good"));
+});
+test("chat errors: a send that fails after a redraw writes to the box on screen, and never over a newer draft",async()=>{
+  for(const newer of [null,"newer"]){
+    const sc=loadScreens(), sec=talkOf(sc); let fail; sc.env.SAMPLE={json:()=>new Promise((_,rej)=>{ fail=rej; })};
+    sc.env.renderTalk(); const sent=talkSend(sec,"hello"); sc.env.renderTalk(); const now=byId(sec,"chat-input"); if(newer) typeIn(sec,"chat-input",newer);
+    fail(new Error("x")); await sent; assert.equal(byId(sec,"chat-input"),now); assert.equal(now.value,newer||"hello"); sc.env.renderTalk(); assert.equal(byId(sec,"chat-input").value,newer||"hello");
+  }
+});
+const PRACTICE_OK={verdict:"correct",best:{ar:"ابي قهوة",tr:"abi gahwa"},explanation:"ok"};
+test("practice: tries are kept across a redraw, so the second check reveals the answer",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); const replies=[{english:"I want coffee",hint:"abi"},{verdict:"wrong",hint:"h",best:{ar:"ابي قهوة",tr:"abi gahwa"},explanation:"e"}]; let n=0;
+  sc.env.SAMPLE={json:async()=>replies[Math.min(n++,1)]}; vm.runInContext('talkMode="practice"',sc.env); sc.env.renderTalk(); await tick();
+  typeIn(sec,"practice-input","x"); press(byText(sec,"Check")); await tick(); assert.equal(vm.runInContext("practiceTries",sc.env),1);
+  sc.env.renderTalk(); await tick(); assert.equal(vm.runInContext("practiceTries",sc.env),1); assert.ok(!byText(sec,"Next sentence"));
+  press(byText(sec,"Check")); await tick(); assert.ok(byText(sec,"Next sentence"));
+});
+test("practice: a redraw after the answer is shown keeps the answer and its buttons, and asks for nothing new",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); let n=0; sc.env.SAMPLE={json:async()=>n++?PRACTICE_OK:{english:"I want coffee",hint:"abi"}};
+  vm.runInContext('talkMode="practice"',sc.env); sc.env.renderTalk(); await tick(); typeIn(sec,"practice-input","ابي قهوة"); press(byText(sec,"Check")); await tick();
+  assert.ok(byText(sec,"Next sentence")); sc.env.renderTalk(); await tick();
+  assert.equal(n,2); assert.ok(byText(sec,"Next sentence")); assert.ok(byText(sec,"+ Add to my cards")); assert.ok(!byText(sec,"Check")); assert.ok(texts(sec).includes("I want coffee"));
+  press(byText(sec,"Next sentence")); await tick(); assert.equal(n,3); assert.ok(!byText(sec,"Next sentence"));
+});
+test("practice: a redraw while checking keeps Check disabled and shows the result in the box on screen",async()=>{
+  const sc=loadScreens(), sec=talkOf(sc); let n=0, give; sc.env.SAMPLE={json:()=>n++?new Promise(r=>{ give=r; }):Promise.resolve({english:"I want coffee",hint:"abi"})};
+  vm.runInContext('talkMode="practice"',sc.env); sc.env.renderTalk(); await tick(); typeIn(sec,"practice-input","ابي قهوة"); press(byText(sec,"Check")); await tick();
+  sc.env.renderTalk(); await tick(); assert.equal(byText(sec,"Check").disabled,true); assert.ok(texts(sec).includes("Checking…"));
+  give(PRACTICE_OK); await tick(); assert.ok(byText(sec,"Next sentence")); assert.equal(n,2);
+});
+test("start over: the Talk draft, sentence, answer and result are forgotten",()=>{
+  const sc=loadScreens(); vm.runInContext('chatDraft="a"; practiceQ={english:"x"}; practiceDraft="b"; practiceTries=1; practiceRes={}; practiceBusy=true;',sc.env); sc.env.resetTalk();
+  assert.deepEqual(JSON.parse(vm.runInContext("JSON.stringify([chatDraft,practiceQ,practiceAsk,practiceDraft,practiceTries,practiceRes,practiceBusy])",sc.env)),["",null,null,"",0,null,false]);
+  assert.ok(/function startOver\(\)\{[^\n]*\bresetTalk\(\)/.test(main));
+});
+
+test("audio: a given-up line is stopped before the next one, on the Claude voice and the device voice, and a line that started is left alone",async()=>{
+  const log=[], c=loadSpeech({voices:[]}); c.env.__tts({speak:t=>{ log.push("speak "+t); return new Promise(()=>{}); },stop:async()=>{ log.push("stop"); }}); log.length=0;
+  c.env.sayQueue([{text:"هلا"},{text:"زين"}]); await c.run(); await c.run();
+  assert.deepEqual(log,["stop","speak هلا","stop","speak زين","stop"],"each given-up line is stopped before the next is spoken"); assert.ok(txt(c.note).startsWith(c.env.VOICE_STALL));
+  const d=loadSpeech({fire:"none"}); d.env.say("هلا"); const before=d.cancels.length; await d.run(); assert.equal(d.cancels.length,before+1,"a line that never started is cancelled");
+  const st=loadSpeech({fire:"start"}); st.env.say("هلا"); const b2=st.cancels.length; await st.run(); assert.equal(st.cancels.length,b2,"a line that started is not cut off");
+});
+test("audio: speak, the utterance or the Claude voice throwing ends the part like a failure and the queue still completes",async()=>{
+  const a=loadSpeech({throwSpeak:true}); let done; a.env.sayQueue([{text:"هلا"},{text:"زين"}]).then(r=>{ done=r; }); await a.run(); assert.equal(done,true); assert.ok(txt(a.note).startsWith(a.env.VOICE_STALL));
+  const b=loadSpeech(); b.env.SpeechSynthesisUtterance=function(){ throw new Error("boom"); }; await b.env.say("هلا"); assert.ok(txt(b.note).startsWith(b.env.VOICE_STALL));
+  const c=loadSpeech({voices:[]}); c.env.__tts({speak:()=>{ throw new Error("boom"); },stop:async()=>{}}); await c.env.say("هلا"); assert.ok(txt(c.note).startsWith(c.env.VOICE_STALL));
+});
+test("audio: a voices-changed event does not clear a didn't-play notice, but still updates the no-voice one",async()=>{
+  const s=loadSpeech({fire:"none"}); s.env.say("هلا"); await s.run(); assert.ok(txt(s.note).startsWith(s.env.VOICE_STALL)); s.env.pickVoices(); assert.equal(s.note.hidden,false); assert.ok(txt(s.note).startsWith(s.env.VOICE_STALL));
+  const n=loadSpeech({voices:[{lang:"en-GB"}]}); assert.equal(n.note.hidden,false); n.env.__tts({speak:async()=>{},stop:async()=>{}}); assert.equal(n.note.hidden,true);
+});
+test("audio: after one line in a queue stalls the rest get a short limit and the notice shows once; a new tap starts fresh",async()=>{
+  const s=loadSpeech({fire:"none"}); let shown=0; const ap=s.note.append; s.note.append=(...a)=>{ shown++; ap.apply(s.note,a); };
+  s.env.sayQueue([{text:"هلا"},{text:"زين"},{text:"شلونك"}]); const ms=()=>[...s.t.timers.values()].map(x=>x.ms);
+  assert.ok(ms()[0]>=4000); s.t.runTimers(); await tick();
+  assert.deepEqual(ms(),[1500],"the second line waits only the short limit"); await s.run(); assert.equal(shown,1,"one notice, not one per line");
+  s.env.say("هلا"); assert.ok(ms().every(x=>x>=4000),"a new play tap gets the full limit again");
+});
+test("audio: the notice sits in the main page, which a focus view leaves visible",()=>{
+  assert.match(html,/<main>\s*<p class="notice" id="voice-note"/); assert.doesNotMatch(html,/body\.focus[^{}]*(main|voice-note)[^{}]*\{[^}]*display:none/);
+});
+test("voice notice: a Settings row brings hidden notices back",()=>{
+  const s=loadSpeech({voices:[{lang:"en-GB"}]}); assert.equal(s.env.voiceRow(),null,"no row while the notice is not hidden");
+  press(byText(s.note,"Hide")); let again=0; const row=s.env.voiceRow(()=>{ again++; }); assert.ok(row); assert.ok(txt(row).startsWith("Audio notices are hidden"));
+  press(byText(row,"Show them again")); assert.equal(s.t.store.has(KEY+"-voice"),false); assert.equal(s.note.hidden,false); assert.ok(txt(s.note).startsWith(s.env.VOICE_NOAR)); assert.equal(again,1); assert.equal(s.env.voiceRow(),null);
+});
+test("audio: a line cut by the next tap stays quiet, even when the engine says nothing on cancel, and for an interrupted Claude line",async()=>{
+  const s=loadSpeech({fire:"none",quietCancel:true}); s.env.say("هلا"); s.env.stopAudio(); const c0=s.cancels.length; await s.run(); assert.equal(s.note.hidden,true); assert.equal(s.cancels.length,c0,"a stale timer cancels nothing");
+  const stops=[], c=loadSpeech({voices:[]}); let rej; c.env.__tts({speak:()=>new Promise((_,r)=>{ rej=r; }),stop:async()=>{ stops.push(1); }});
+  c.env.say("هلا"); c.env.stopAudio(); rej({code:"interrupted"}); const n0=stops.length; await c.run(); assert.equal(c.note.hidden,true); assert.equal(stops.length,n0);
+});
+
+// a claude.ai voice that reports the documented states: speak() returns a promise the test settles, onState hands the handler over
+const runShort=s=>{ for(const [id,x] of [...s.t.timers]) if(x.ms<60000){ s.t.timers.delete(id); x.f(); } }; // the ordinary limits only, not the hard one
+function fakeVoice({withState=true}={}){ const v={calls:[],stops:0,h:null,pend:[]};
+  v.speak=t=>{ v.calls.push(t); return new Promise((res,rej)=>{ v.pend.push({res,rej}); }); }; v.stop=async()=>{ v.stops++; };
+  if(withState) v.onState=h=>{ v.h=h; return ()=>{}; }; v.emit=state=>v.h&&v.h({state}); return v; }
+test("audio: a claude.ai line that reaches speaking is not reported, and one still speaking at its limit is not cut off or played over",async()=>{
+  const s=loadSpeech({voices:[]}), v=fakeVoice(); s.env.__tts(v); let done; s.env.sayQueue([{text:"هلا"},{text:"زين"}]).then(r=>{ done=r; });
+  v.emit("starting"); v.emit("speaking"); runShort(s); await tick();
+  assert.deepEqual(v.calls,["هلا"],"the next line waits for the one that is playing"); assert.equal(s.note.hidden,true); assert.equal(v.stops,1,"only the stop that opened the queue");
+  v.pend[0].res({playedMs:900}); await tick(); assert.deepEqual(v.calls,["هلا","زين"]); v.emit("starting"); v.emit("speaking"); v.pend[1].res({playedMs:900}); await tick(); assert.equal(done,true); assert.equal(s.note.hidden,true);
+});
+test("audio: a claude.ai line stuck in speaking that never settles is stopped by a second, longer timer, and the queue moves on",async()=>{
+  const s=loadSpeech({voices:[]}), v=fakeVoice(); s.env.__tts(v); let done; s.env.sayQueue([{text:"هلا"},{text:"زين"}]).then(r=>{ done=r; });
+  v.emit("starting"); v.emit("speaking"); const ms=()=>[...s.t.timers.values()].map(x=>x.ms).sort((a,b)=>a-b); assert.equal(ms().length,2); assert.ok(ms()[1]>=60000,"a hard limit of a minute or more");
+  const st=v.stops; for(const [id,x] of [...s.t.timers]) if(x.ms<60000){ s.t.timers.delete(id); x.f(); } await tick(); assert.deepEqual(v.calls,["هلا"],"the ordinary limit still waits for a playing line");
+  for(const [id,x] of [...s.t.timers]){ s.t.timers.delete(id); x.f(); } await tick();
+  assert.equal(v.stops,st+1,"the stuck line is stopped"); assert.deepEqual(v.calls,["هلا","زين"],"the next line starts"); assert.equal(s.note.hidden,true,"no notice: it was playing");
+  v.emit("starting"); v.emit("speaking"); v.pend[1].res({playedMs:900}); await tick(); assert.equal(done,true);
+});
+test("audio: a claude.ai line that never reaches speaking is stopped and reported; a stale speaking event cannot start the next line",async()=>{
+  const s=loadSpeech({voices:[]}), v=fakeVoice(); s.env.__tts(v); s.env.say("هلا"); v.emit("starting"); const st=v.stops; s.t.runTimers(); await tick();
+  assert.equal(v.stops,st+1); assert.ok(txt(s.note).startsWith(s.env.VOICE_STALL));
+  const t=loadSpeech({voices:[]}), w=fakeVoice(); t.env.__tts(w); t.env.say("هلا"); w.emit("starting"); w.emit("speaking"); t.env.say("زين"); w.emit("speaking"); // the old line's event arrives after the new tap
+  const s2=w.stops; t.t.runTimers(); await tick(); assert.equal(w.stops,s2+1,"the new line never started"); assert.ok(txt(t.note).startsWith(t.env.VOICE_STALL));
+});
+test("audio: a claude.ai voice with no onState behaves as before",async()=>{
+  const s=loadSpeech({voices:[]}), v=fakeVoice({withState:false}); s.env.__tts(v); s.env.say("هلا"); const st=v.stops; s.t.runTimers(); await tick();
+  assert.equal(v.stops,st+1); assert.ok(txt(s.note).startsWith(s.env.VOICE_STALL));
+});
+test("voice notice: a new notice is announced once and a repeat is not",async()=>{
+  const s=loadSpeech({fire:"none"}); assert.deepEqual(s.announced,[]); s.env.say("هلا"); await s.run(); assert.deepEqual(s.announced,[s.env.VOICE_STALL]);
+  s.env.say("زين"); await s.run(); assert.equal(s.announced.length,1,"the same notice again is not announced");
+});
+function loadRec({fails=false,never=false,startThrows=false,ctorThrows=false}={}){
+  const sc=loadScreens(), {env,spy,t}=sc, audios=[], log=[], revoked=[], state={tapping:false,stopped:0,n:0,recs:[]};
+  Object.assign(env,{policyBlocksMic:()=>false,Blob:class{},URL:{createObjectURL:()=>"blob:"+(++state.n),revokeObjectURL:u=>revoked.push(u)},
+    MediaRecorder:class{ constructor(){ if(ctorThrows) throw new Error("no"); this.state="inactive"; state.recs.push(this); } start(){ if(startThrows) throw new Error("no"); this.state="recording"; } stop(){ this.state="inactive"; this.ondataavailable({data:"x"}); this.onstop(); } },
+    Audio:class{ constructor(){ this.plays=[]; audios.push(this); } pause(){ this.paused=true; log.push("pause"); } play(){ log.push("play"); this.plays.push(state.tapping); return never?new Promise(()=>{}):fails?Promise.reject(new Error("no")):Promise.resolve(); } }});
+  env.window.MediaRecorder=env.MediaRecorder; env.navigator.mediaDevices={getUserMedia:async()=>({getTracks:()=>[{stop(){ state.stopped++; }}]})};
+  vm.runInContext("var audioGen=0,synth=null,curRec=null;",env);
+  vm.runInContext(cut("let recBlocked=false","// phone and claude voices"),env);
+  vm.runInContext(cut("function stopAudio()","\n"),env); const real=env.stopAudio; env.stopAudio=()=>{ log.push("stop"); real(); };
+  const w=env.recordWidget("هلا"), rb=walk(w).find(n=>n.tag==="button");
+  const record=async()=>{ press(rb); await tick(); t.runTimers(); };
+  const compare=()=>{ state.tapping=true; press(byText(w,"Compare: you, then the model")); state.tapping=false; };
+  return {sc,env,spy,t,w,rb,audios,log,revoked,state,record,compare};
+}
+test("record yourself: Compare plays your recording inside the tap, then the model; a recording that won't play still plays the model",async()=>{
+  for(const fails of [false,true]){
+    const r=loadRec({fails}); await r.record(); r.compare();
+    assert.deepEqual(r.audios[0].plays,[true],"played inside the tap"); await tick();
+    if(!fails){ assert.deepEqual(r.spy.queue,[]); r.audios[0].onended(); } assert.deepEqual(r.spy.queue.flat(),["هلا"]);
+  }
+});
+test("record yourself: another play tap, a leaving screen or speech already playing never overlaps the recording",async()=>{
+  for(const fails of [false,true]){ // another tap while the recording plays: it is stopped and the model line never follows
+    const r=loadRec({fails}); await r.record(); r.compare(); r.env.stopAudio(); assert.ok(r.audios[0].paused,"recording stopped");
+    await tick(); if(r.audios[0].onended) r.audios[0].onended(); r.t.runTimers(); await tick(); assert.deepEqual(r.spy.queue,[]);
+  }
+  { const r=loadRec(); await r.record(); r.log.length=0; r.compare(); assert.deepEqual(r.log.filter(x=>x!=="pause"),["stop","play"],"speech is stopped first, inside the tap"); }
+  { const r=loadRec(); await r.record(); r.compare(); r.w.remove(); r.env.stopAudio(); r.audios[0].onended&&r.audios[0].onended(); r.t.runTimers(); await tick();
+    assert.ok(r.audios[0].paused); assert.deepEqual(r.spy.queue,[],"nothing plays after the widget left"); assert.deepEqual(r.revoked,["blob:1"]); }
+  { const r=loadRec(); await r.record(); r.compare(); r.w.remove(); r.audios[0].onended(); assert.deepEqual(r.spy.queue,[],"a widget no longer on the screen plays nothing"); }
+  assert.match(html,/function leaveActivity\(\)\{[^\n]*releaseRec\(\)/,"leaving an activity releases the recording");
+});
+test("record yourself: a recording's link is released when a new recording replaces it",async()=>{
+  const r=loadRec(); await r.record(); assert.deepEqual(r.revoked,[]); await r.record(); assert.deepEqual(r.revoked,["blob:1"]); assert.equal(r.audios.length,2);
+  assert.equal(walk(r.w).filter(n=>/\bcmp\b/.test(n.className)).length,1);
+});
+test("record yourself: a recorder that fails frees the microphone and restores the button, with a plain message",async()=>{
+  for(const mode of [{ctorThrows:true},{startThrows:true},"onerror"]){
+    const r=loadRec(typeof mode==="string"?{}:mode); press(r.rb); await tick();
+    if(mode==="onerror"){ assert.equal(r.rb.disabled,true); r.state.recs[0].onerror({}); }
+    assert.equal(r.state.stopped,1,"microphone stopped"); assert.equal(r.rb.disabled,false); assert.equal(txt(r.rb),"Record yourself");
+    assert.ok(texts(r.w).includes("Couldn't record. Try again."),JSON.stringify(mode)); r.t.runTimers(); assert.equal(walk(r.w).filter(n=>/\bcmp\b/.test(n.className)).length,0);
+  }
+});
+test("record yourself: a recording that neither ends nor fails still lets the model follow, unless audio was stopped",async()=>{
+  { const r=loadRec({never:true}); await r.record(); r.compare(); await tick(); assert.deepEqual(r.spy.queue,[]); r.t.runTimers(); assert.deepEqual(r.spy.queue.flat(),["هلا"]); }
+  { const r=loadRec({never:true}); await r.record(); r.compare(); r.audios[0].onerror(); assert.deepEqual(r.spy.queue.flat(),["هلا"]); r.t.runTimers(); assert.equal(r.spy.queue.length,1,"only once"); }
+  { const r=loadRec({never:true}); await r.record(); r.compare(); r.env.stopAudio(); r.t.runTimers(); assert.deepEqual(r.spy.queue,[]); }
+});
+test("speech check: caught and missed words differ by underline style, not only colour",()=>{
+  const sc=loadScreens(); Object.assign(sc.env,{canListen:()=>true,srListen:cb=>cb({alts:["مع"]})});
+  vm.runInContext(cut("function speakWidget","// record yourself"),sc.env);
+  const w=sc.env.speakWidget("مع السلامة"); press(byText(w,"Say it"));
+  const words=walk(w).filter(n=>n.parent&&/\bwords\b/.test(n.parent.className)); assert.deepEqual(words.map(n=>[txt(n),n.className]),[["مع","hit"],["السلامة","miss"]]);
+  assert.ok(texts(w).includes("Underlined with dashes: words it didn't catch. Listen again and say those clearly."));
+  assert.match(html,/\.words \.hit\{border-bottom:3px solid var\(--good\)\}/); assert.match(html,/\.words \.miss\{border-bottom:3px dashed var\(--bad\);/);
+});
+const toCheck=(sc,k=0)=>{ const b=()=>sc.spy.view.body; press(byText(b(),"Learn the phrases →")); for(let i=0;i<k;i++) press(byText(b(),"Next →")); };
+const answer=(sc,right)=>{ const b=sc.spy.view.body, en=walk(b).find(n=>n.className==="en"&&UNIT.items.some(i=>i.en===txt(n))), it=UNIT.items.find(i=>i.en===txt(en));
+  press(walk(b).find(n=>n.attrs["data-ar"]!==undefined&&(n.attrs["data-ar"]===it.ar)===right)); const nx=byText(b,"Next"); if(nx) press(nx); return it; };
+test("lesson resume: leaving during the phrases and reopening the same day offers to continue at the same phrase",()=>{
+  const sc=loadScreens({harakat:"never"}); sc.env.openLesson(UNIT); toCheck(sc,2);
+  assert.ok(sc.t.store.has(KEY+"-resume")); sc.env.openLesson(UNIT); const b=sc.spy.view.body;
+  assert.ok(texts(b).includes("You stopped part-way through this lesson.")); assert.ok(byText(b,"Start again"));
+  press(byText(b,"Continue where you left off")); assert.equal(sc.shown(sc.spy.view.body)[0],"زين");
+});
+test("lesson resume: in the quick check the answers, the score and the missed phrases carry over, and finishing clears it",()=>{
+  const sc=loadScreens({harakat:"never"}); sc.env.sched=(c,g,n)=>L.schedule(c,g,n,0.9); sc.env.openLesson(UNIT); toCheck(sc,3); press(byText(sc.spy.view.body,"Quick check →"));
+  const missed=answer(sc,false); sc.env.openLesson(UNIT); press(byText(sc.spy.view.body,"Continue where you left off"));
+  assert.ok(texts(sc.spy.view.body).includes("Check 2 of 4")); for(let i=0;i<3;i++) answer(sc,true);
+  assert.ok(texts(sc.spy.view.body).includes("3 of 4 right")); assert.ok(!sc.t.store.has(KEY+"-resume"));
+  UNIT.items.forEach((it,i)=>assert.equal(sc.t.S().cards["u1."+i].st,it===missed?0:1,it.ar));
+});
+test("lesson resume: Start again, another day, another lesson and Start over all start from the top",()=>{
+  const sc=loadScreens(); sc.env.openLesson(UNIT); toCheck(sc,1); sc.env.openLesson(UNIT); press(byText(sc.spy.view.body,"Start again"));
+  assert.ok(byText(sc.spy.view.body,"Learn the phrases →")); assert.ok(!sc.t.store.has(KEY+"-resume"));
+  toCheck(sc,1); sc.env.openLesson(Object.assign({},UNIT,{id:"u2"})); assert.ok(!byText(sc.spy.view.body,"Continue where you left off"));
+  assert.ok(sc.t.store.has(KEY+"-resume"),"looking at another lesson leaves it alone"); vm.runInContext(`{ const n=Date.now; Date.now=()=>n()+${DAY}; }`,sc.env);
+  sc.env.openLesson(UNIT); assert.ok(!byText(sc.spy.view.body,"Continue where you left off"));
+  const u=loadUi({dom:true,saved:{[KEY+"-resume"]:'{"u":"u1"}'}}); u.startOver(); assert.ok(!u.store.has(KEY+"-resume"));
+});
+test("lesson resume: a resume point that no longer fits the lesson is ignored",()=>{
+  for(const bad of ["{",'{"u":"u1","day":"DAY","step":2,"k":9}','{"u":"u1","day":"DAY","step":3,"k":0,"order":[0,0,1,2],"q":1,"right":0,"missed":[]}']){
+    const sc=loadScreens(); sc.t.store.set(KEY+"-resume",bad.replace("DAY",vm.runInContext("today()",sc.env)));
+    assert.doesNotThrow(()=>sc.env.openLesson(UNIT)); assert.ok(byText(sc.spy.view.body,"Learn the phrases →"),bad); }
+});
+test("lesson resume: the offer says where the learner stopped, in phrases and in the quick check",()=>{
+  const sc=loadScreens({harakat:"never"}); sc.env.openLesson(UNIT); toCheck(sc,1); sc.env.openLesson(UNIT);
+  assert.ok(texts(sc.spy.view.body).includes("You stopped part-way through this lesson.")); assert.ok(texts(sc.spy.view.body).includes("You stopped at phrase 2 of 4."),texts(sc.spy.view.body).join("|"));
+  press(byText(sc.spy.view.body,"Start again")); toCheck(sc,3); press(byText(sc.spy.view.body,"Quick check →")); answer(sc,true); sc.env.openLesson(UNIT);
+  assert.ok(texts(sc.spy.view.body).includes("You stopped at check 2 of 4."),texts(sc.spy.view.body).join("|"));
+});
+test("lesson resume: a resume point from a past day is removed and not offered; a storage that throws does not break the lesson; a bad position or missed list is discarded",()=>{
+  const sc=loadScreens(); sc.env.openLesson(UNIT); toCheck(sc,1); assert.ok(sc.t.store.has(KEY+"-resume")); vm.runInContext(`{ const n=Date.now; Date.now=()=>n()+${DAY}; }`,sc.env);
+  sc.env.openLesson(UNIT); assert.ok(!byText(sc.spy.view.body,"Continue where you left off")); assert.ok(byText(sc.spy.view.body,"Learn the phrases →")); assert.ok(!sc.t.store.has(KEY+"-resume"),"the old key is removed");
+  const th=loadScreens(); th.env.localStorage={getItem(){ throw new Error("blocked"); },setItem(){ throw new Error("blocked"); },removeItem(){ throw new Error("blocked"); }};
+  assert.doesNotThrow(()=>th.env.openLesson(UNIT)); assert.ok(byText(th.spy.view.body,"Learn the phrases →")); assert.doesNotThrow(()=>toCheck(th,2)); assert.doesNotThrow(()=>press(byText(th.spy.view.body,"Next →")));
+  for(const bad of ['{"u":"u1","day":"DAY","step":3,"k":0,"order":[0,1,2,3],"q":9,"right":0,"missed":[]}','{"u":"u1","day":"DAY","step":3,"k":0,"order":[0,1,2,3],"q":-1,"right":0,"missed":[]}','{"u":"u1","day":"DAY","step":3,"k":0,"order":[0,1,2,3],"q":1,"right":0,"missed":["x"]}','{"u":"u1","day":"DAY","step":3,"k":0,"order":[0,1,2,3],"q":1,"right":0,"missed":[7]}','{"u":"u1","day":"DAY","step":3,"k":0,"order":[0,1,2,3],"q":1,"right":0,"missed":[1,1]}','{"u":"u1","day":"DAY","step":3,"k":0,"order":[0,1,2,3],"q":1,"right":0,"missed":5}']){
+    const s2=loadScreens(); s2.t.store.set(KEY+"-resume",bad.replace("DAY",vm.runInContext("today()",s2.env)));
+    assert.doesNotThrow(()=>s2.env.openLesson(UNIT)); assert.ok(byText(s2.spy.view.body,"Learn the phrases →"),bad); assert.ok(!texts(s2.spy.view.body).some(x=>/You stopped/.test(x)),bad); assert.ok(!s2.t.store.has(KEY+"-resume"),bad); }
+});
+// every place that speaks without a tap on a play control, in order; returns what was played
+function quietTour(sc){
+  const {env,spy,t}=sc, b=()=>spy.view.body, got={};
+  env.openLesson(UNIT); toCheck(sc,3); press(byText(b(),"Quick check →")); spy.played.length=0; answer(sc,false); got.check=[...spy.played];
+  env.roleplay(UNIT); press(byText(b(),"Your turn →")); spy.played.length=0; press(byText(b(),"Show the answer")); got.roleplay=[...spy.played];
+  spy.played.length=0; t.S().cards={"u1.1":sc.card(-1,2,3)}; env.startReview(null); t.runTimers(); got.listen=[...spy.played];
+  vm.runInContext("Math.random=()=>0.1; soundTab='ear'",env); spy.played.length=0; env.renderSounds(uiEl("div")); got.ear=[...spy.played];
+  spy.played.length=0; env.numbersDrill(); got.numbers=[...spy.played];
+  vm.runInContext("TTS={}",env); const me=uiEl("div"); me.id="me"; env.rootEl=me; env.renderMe(); spy.played.length=0;
+  const sel=walk(me).find(n=>n.id==="set-voice"); sel.value="device"; sel.onchange(); got.voice=[...spy.played];
+  return got;
+}
+test("autoplay off: nothing speaks by itself, and play controls still play",()=>{
+  const sc=loadScreens({autoplay:false}); const got=quietTour(sc);
+  for(const [k,v] of Object.entries(got)) if(k!=="voice") assert.deepEqual(v,[],k);
+  assert.deepEqual(got.voice,["هلا والله، شلونك؟"],"choosing a voice is a request to hear it");
+  assert.ok(sc.spy.widget.some(w=>w[0]==="play"&&w[1]==="شلونك"),"the listen card has its Play button");
+  sc.t.store.delete(KEY+"-resume"); sc.env.openLesson(UNIT); toCheck(sc,0); sc.spy.played.length=0; press(walk(sc.spy.view.body).find(n=>/\bsay\b/.test(n.className))); assert.deepEqual(sc.spy.played,["هلا"],"a tap plays");
+});
+test("autoplay on: the same screens still speak by themselves",()=>{
+  const got=quietTour(loadScreens({autoplay:true})); for(const [k,v] of Object.entries(got)) assert.ok(v.length>=1,k);
+});
+test("autoplay off: a lesson resumed at a phrase or at the quick check stays quiet, and its taps still play",()=>{
+  const sc=loadScreens({autoplay:false}); sc.env.openLesson(UNIT); toCheck(sc,2); sc.env.openLesson(UNIT); sc.spy.played.length=0;
+  press(byText(sc.spy.view.body,"Continue where you left off")); assert.deepEqual(sc.spy.played,[],"resumed at a phrase");
+  press(walk(sc.spy.view.body).find(n=>/\bsay\b/.test(n.className))); assert.deepEqual(sc.spy.played,["زين"],"its phrase button plays");
+  for(const k of [2,3]) press(byText(sc.spy.view.body,k<3?"Next →":"Quick check →"));
+  answer(sc,true); sc.env.openLesson(UNIT); sc.spy.played.length=0; press(byText(sc.spy.view.body,"Continue where you left off")); assert.deepEqual(sc.spy.played,[],"resumed at the quick check");
+  sc.spy.played.length=0; answer(sc,false); assert.deepEqual(sc.spy.played,[],"a resumed answer");
+});
+test("autoplay: through the real gate, a screen that plays by itself plays unless the setting is false; a setting that is absent after hydrate means on",()=>{
+  for(const [setting,want] of [[false,false],[true,true],[undefined,true]]){
+    const sc=loadScreens({harakat:"never"}); const settings={harakat:"never"}; if(setting!==undefined) settings.autoplay=setting; sc.t.setS({settings});
+    vm.runInContext(cut("const auto=","\n").replace("const auto=","this.auto="),sc.env); // the real gate, in place of the harness's spy
+    assert.equal(sc.t.S().settings.autoplay,want,"hydrate fills the setting in"); sc.env.openLesson(UNIT); sc.spy.played.length=0; press(byText(sc.spy.view.body,"Learn the phrases →"));
+    assert.equal(sc.spy.played.length>0,want,`autoplay ${setting}`); if(want) assert.equal(sc.spy.played.length,1,"one line, played once");
+  }
+});
+test("autoplay off: Play, Slow, Shadow and Compare are taps and always play",()=>{
+  const sc=loadScreens({autoplay:false}), {env,spy}=sc;
+  for(const a of ["const playBtn=","const slowBtn="]) vm.runInContext(cut(a,"\n"),env);
+  vm.runInContext(cut("const shadowBtn=","// text is what is spoken"),env);
+  const mk=c=>vm.runInContext(c,env); press(mk('playBtn("هلا")')); press(mk('slowBtn("شلونك")')); press(mk('shadowBtn("زين")')); assert.deepEqual(spy.played,["هلا","شلونك","زين","زين","زين"]);
+  const cmp=cut('const cmp=el("button"','wrap.querySelectorAll(".cmp")'); assert.ok(/sayQueue\(/.test(cmp)&&!/auto\(/.test(cmp),"Compare plays the model on the tap");
+  spy.played.length=0; env.say("x"); assert.deepEqual(spy.played,["x"]);
+});
+test("speech check: a screen reader is told which words were caught",()=>{
+  for(const [alts,want] of [[["مع"],"Not caught: السلامة"],[["مع السلامة"],"All words caught"]]){
+    const sc=loadScreens(); Object.assign(sc.env,{canListen:()=>true,srListen:cb=>cb({alts})});
+    vm.runInContext(cut("function speakWidget","// record yourself"),sc.env);
+    const w=sc.env.speakWidget("مع السلامة"); press(byText(w,"Say it"));
+    const fb=walk(w).find(n=>/\bfeedback\b/.test(n.className)), sr=walk(fb).find(n=>/\bsr\b/.test(n.className));
+    assert.equal(fb.attrs.role||fb.role,"status"); assert.ok(sr,"hidden summary"); assert.equal(txt(sr),want);
+  }
+});
+// six recognise cards due in a fixed order, the real scheduler and day counters, and a clock the test moves
+function reviewSix(own,late){ // own: the first card is a word the learner added (this id)
+  const sc=loadScreens({harakat:"never"}), {env,t}=sc, ids=[own||"x.0","x.1","x.2","x.3","x.4","x.5"], ar=["هلا","زين","شاي","قهوة","ماي","خبز"];
+  ids.forEach((id,i)=>{ sc.items[id]={id,unit:"x"+i,stage:1,ar:ar[i],tr:"t",en:"e"+i}; t.S().cards[id]=Object.assign(sc.card(0,0,0),{d:late&&i===0?50:i+1}); });
+  if(own){ sc.items[own]={id:own,unit:"custom",stage:"custom",ar:ar[0],tr:"t",en:"e0"}; t.S().custom=[{id:own,ar:ar[0],tr:"t",en:"e0"}]; }
+  // minute-aligned, so a card that is saved and read back (minutes in storage) keeps the same due time
+  vm.runInContext("globalThis.__now=Math.floor(Date.now()/60000)*60000; Date.now=()=>globalThis.__now;"+cut("function touchDay","const shownStreak"),env);
+  env.sched=(c,g,n)=>L.schedule(c,g,n,0.9); env.startReview(null); const b=()=>sc.spy.view.body;
+  const shown=()=>ids[ar.indexOf((walk(b()).find(n=>/\bsay\b/.test(n.className))||{attrs:{}}).attrs["aria-label"]?.slice(6))];
+  const grade=lab=>{ press(byText(b(),"Show answer")); press(walk(b()).find(n=>n.tag==="button"&&n.parent&&/grades/.test(n.parent.className)&&txt(n).startsWith(lab))); };
+  // the whole stored form (what is saved and synced), without the save stamp
+  const full=()=>{ const p=t.serialize(); delete p.updatedAt; return JSON.stringify(p); };
+  return {sc,env,t,b,shown,grade,full,at:ms=>{ env.__now+=ms; }};
+}
+test("review: a card you forgot comes back after three other cards when a minute has already passed",()=>{
+  const r=reviewSix(), seen=[r.shown()]; r.grade("Forgot"); r.at(61000);
+  for(let i=0;i<5;i++){ seen.push(r.shown()); r.grade("Got it"); } assert.deepEqual(seen,["x.0","x.1","x.2","x.3","x.0","x.4"]);
+});
+test("review: a card you forgot never comes back before its minute, however fast you go",()=>{
+  const r=reviewSix(), seen=[r.shown()]; r.grade("Forgot"); r.at(5000);
+  for(let i=0;i<5;i++){ seen.push(r.shown()); if(i===3) r.at(60000); r.grade("Got it"); } assert.deepEqual(seen,["x.0","x.1","x.2","x.3","x.4","x.0"]);
+});
+test("review: moving a forgotten card earlier changes the queue only, every stored card is what schedule() gives",()=>{
+  const r=reviewSix(), S=()=>r.t.S(), start=JSON.parse(JSON.stringify(S().cards)), ev=[], seen=[];
+  const go=lab=>{ const id=r.shown(); seen.push(id); ev.push([id,{Forgot:0,Hard:1,"Got it":2,Easy:3}[lab],r.env.__now]); r.grade(lab); };
+  go("Forgot"); r.at(61000); go("Hard"); go("Forgot"); go("Easy"); go("Got it"); r.at(61000); go("Got it"); go("Got it"); go("Got it");
+  assert.equal(seen.indexOf("x.0",1),4,"the forgotten card came back after three others: "+seen);
+  const want={}; for(const [id,c] of Object.entries(start)) want[id]=Object.assign({},c); for(const [id,g,now] of ev) want[id]=L.schedule(want[id],g,now,0.9);
+  const ids=Object.keys(want); assert.deepEqual(Object.keys(S().cards).sort(),ids.sort());
+  for(const id of ids) assert.equal(JSON.stringify(L.packCard(S().cards[id])),JSON.stringify(L.packCard(want[id])),id);
+  assert.equal(S().reviewsToday,ev.length); assert.equal(JSON.stringify(Object.keys(S().cards[ev[0][0]]).sort()),JSON.stringify(Object.keys(want[ev[0][0]]).sort()));
+});
+test("undo: puts the last graded card back exactly as it was, with the day's counters, one grade deep",()=>{
+  const r=reviewSix(), before=r.full(), live=JSON.stringify(r.t.S().cards["x.0"]);
+  r.grade("Easy"); assert.notEqual(r.full(),before); assert.equal(r.shown(),"x.1"); press(byText(r.b(),"Undo last grade"));
+  assert.equal(r.shown(),"x.0"); assert.equal(r.full(),before); assert.equal(JSON.stringify(r.t.S().cards["x.0"]),live); assert.ok(!byText(r.b(),"Undo last grade"));
+  r.grade("Got it"); r.grade("Got it"); press(byText(r.b(),"Undo last grade")); assert.equal(r.shown(),"x.1","only the latest grade"); assert.ok(!byText(r.b(),"Undo last grade"));
+  assert.equal(JSON.parse(r.full()).reviewsToday,1);
+});
+test("undo: a forgotten card taken back leaves the queue as it was, and the counters, log and session as they were",()=>{
+  const r=reviewSix(), S=()=>r.t.S(); r.grade("Got it"); const before=r.full(), live=JSON.stringify(S().cards["x.1"]), seen=[];
+  r.grade("Forgot"); assert.equal(r.shown(),"x.2"); press(byText(r.b(),"Undo last grade")); assert.equal(r.full(),before); assert.equal(JSON.stringify(S().cards["x.1"]),live);
+  for(let i=0;i<5;i++){ seen.push(r.shown()); r.grade("Got it"); } assert.deepEqual(seen,["x.1","x.2","x.3","x.4","x.5"],"the undone card is back at the front, in order, and nothing was moved by the undone Forgot");
+});
+test("undo: a new day's reset by the grade is put back too (streak, freezes, day, counters, empty log)",()=>{
+  const r=reviewSix(), S=()=>r.t.S(); Object.assign(S(),{streak:4,freezes:1,freezeUsed:0,lastDay:"2000-01-01",reviewsToday:7,newToday:2,log:{"2000-01-01":3}}); S().session={day:"2000-01-01",done:{lesson:1}};
+  const before=r.full(); r.grade("Got it"); assert.notEqual(r.full(),before); press(byText(r.b(),"Undo last grade")); assert.equal(r.full(),before);
+  assert.ok(!("review" in S().session.done)&&!(vm.runInContext("today()",r.env) in S().log),"keys that did not exist are removed, not left undefined");
+});
+test("undo: gone when the session ends, and refused when a sync changed the card meanwhile",()=>{
+  const r=reviewSix(); r.grade("Got it"); const p=r.t.serialize(); p.cards["x.0"][5]+=7; r.t.setS(p); const after=r.full();
+  press(byText(r.b(),"Undo last grade")); assert.equal(r.t.S().cards["x.0"].t,p.cards["x.0"][5]*60000); assert.equal(r.full(),after,"nothing restored"); assert.ok(texts(r.b()).includes("That card changed on another device, so it can't be undone."));
+  assert.ok(!byText(r.b(),"Undo last grade"),"button removed after the refusal");
+  for(let i=0;i<5;i++) r.grade("Got it"); assert.ok(/come back in 10 min/.test(texts(r.b()).join(" ")),"the six new cards wait 10 min"); press(byText(r.b(),"Finish for now")); assert.ok(texts(r.b()).includes("Review done")); assert.ok(!byText(r.b(),"Undo last grade"));
+});
+test("undo: from the waiting screen the card comes back and the wait is cancelled",()=>{
+  const sc=loadScreens({harakat:"never"}), {env,t}=sc; t.S().cards={"u1.0":sc.card(0,0,0)}; env.sched=(c,g,n)=>L.schedule(c,g,n,0.9);
+  vm.runInContext(cut("function touchDay","const shownStreak"),env); const full=()=>{ const p=t.serialize(); delete p.updatedAt; return JSON.stringify(p); }, before=full();
+  env.startReview(null); press(byText(sc.spy.view.body,"Show answer")); press(walk(sc.spy.view.body).find(n=>txt(n).startsWith("Forgot")&&n.tag==="button"));
+  assert.ok(/comes? back in/.test(texts(sc.spy.view.body).join(" "))); press(byText(sc.spy.view.body,"Undo last grade"));
+  assert.equal(full(),before); assert.ok(byText(sc.spy.view.body,"Show answer")); assert.equal(t.timers.size,0);
+});
+test("review: a card due in exactly 10 minutes is on the waiting screen even when the clock moved on a millisecond or more",()=>{
+  for(const [st,i,lab] of [[0,0,"Got it"],[-1,8,"Forgot"]]) for(const step of [0,1,7]){
+    const sc=loadScreens({harakat:"never"}), {env,t}=sc; t.S().cards={"u1.0":sc.card(st,i,st<0?4:0)}; env.sched=(c,g,n)=>L.schedule(c,g,n,0.9);
+    vm.runInContext(`globalThis.__now=Math.floor(Date.now()/60000)*60000; Date.now=()=>(globalThis.__now+=${step});`+cut("function touchDay","const shownStreak"),env);
+    env.startReview(null); press(byText(sc.spy.view.body,"Show answer")); press(walk(sc.spy.view.body).find(n=>txt(n).startsWith(lab)&&n.tag==="button"));
+    assert.ok(/1 card comes back in 10 min/.test(texts(sc.spy.view.body).join(" ")),`${lab}, clock +${step} ms: ${texts(sc.spy.view.body).join("|")}`);
+  }
+});
+test("review: Finish for now ends the wait; the waiting timer does not bring the waiting screen back over Review done",()=>{
+  const sc=loadScreens({harakat:"never"}), {env,t}=sc; t.S().cards={"u1.0":sc.card(0,0,0)}; env.sched=(c,g,n)=>L.schedule(c,g,n,0.9);
+  vm.runInContext(cut("function touchDay","const shownStreak"),env); env.startReview(null); const b=()=>sc.spy.view.body;
+  press(byText(b(),"Show answer")); press(walk(b()).find(n=>txt(n).startsWith("Got it")&&n.tag==="button")); assert.ok(/comes back in/.test(texts(b()).join(" ")));
+  press(byText(b(),"Finish for now")); assert.ok(texts(b()).includes("Review done")); t.runTimers();
+  assert.ok(texts(b()).includes("Review done"),texts(b()).join("|")); assert.equal(t.timers.size,0,"no timer left");
+});
+const WORD={id:"cabc1",ar:"قهوة",tr:"gahwa",en:"coffee"}, wcard=()=>[1,5,2,GT+9999,0,GT+60,-1,1];
+test("delete my own word: a second tap deletes the word and its card; the first tap wears off; course cards have no such button",()=>{
+  const sc=loadScreens({harakat:"never"}), {env,t}=sc; t.S().custom=[{...WORD}]; sc.items.cabc1=Object.assign({unit:"custom",stage:"custom"},WORD);
+  t.S().cards={cabc1:sc.card(0,0,0),"u1.0":Object.assign(sc.card(0,0,0),{d:5})}; env.startReview(null); const b=()=>sc.spy.view.body;
+  const del=byText(b(),"Delete this word"); press(del); assert.equal(txt(del),"Tap again to delete"); assert.equal(t.S().custom.length,1);
+  t.runTimers(); assert.equal(txt(del),"Delete this word"); press(del); press(del);
+  assert.deepEqual([...t.S().custom],[]); assert.equal(t.S().cards.cabc1,undefined); assert.ok(t.S().deleted.cabc1>0);
+  assert.ok(!byText(b(),"Delete this word"),"the next card is a course card");
+});
+test("delete my own word: the deletion wins every merge, a later grade elsewhere included; junk is dropped; a reset clears only what came before it",()=>{
+  const T=GNOW, here={updatedAt:T,deleted:{cabc1:T},custom:[],cards:{}}, there={updatedAt:T+9000,custom:[WORD],cards:{cabc1:wcard()}};
+  for(const m of [L.mergeProgress(here,there),L.mergeProgress(there,here)]){ assert.deepEqual([...m.custom],[]); assert.equal(m.cards.cabc1,undefined); assert.equal(m.deleted.cabc1,T); }
+  assert.deepEqual({...L.cleanSaved({deleted:{"u1.0":5,cabc1:"x",cdef2:7,m:{}}},now,"2026-11-14").deleted},{cdef2:7});
+  const sp=L.splitProgress(here); assert.equal(sp.meta.deleted.cabc1,T); assert.equal(L.joinProgress(sp.meta,sp.shards).deleted.cabc1,T);
+  for(const [R,kept] of [[T+60000,false],[T-60000,true]]){ const reset={updatedAt:R,resetAt:R,resetDay:GDAY,cards:{}}; const m=L.mergeProgress(here,reset); assert.equal(!!(m.deleted||{}).cabc1,kept,String(R)); }
+  for(const o of [{},{built:true}]){ const u=loadUi(o); u.setS({deleted:{cabc1:T}}); assert.equal(u.serialize().deleted.cabc1,T); }
+});
+test("delete my own word: the other device loses it through github and through the account",async()=>{
+  const hub=fakeHub(), a=dev(hub,prog({custom:[WORD],cards:{cabc1:wcard()}})), b=dev(hub,prog({custom:[WORD],cards:{cabc1:wcard()}}));
+  await a.sync(); await b.sync(); a.local=L.mergeProgress(a.local,{updatedAt:GNOW+5,deleted:{cabc1:GNOW},custom:[],cards:{}}); await a.sync(); await b.sync();
+  assert.deepEqual([...b.local.custom],[]); assert.equal(b.local.cards.cabc1,undefined);
+  const db=fakeDb(), one=loadUi(), two=loadUi(); one.use(db,"u1"); two.use(db,"u1");
+  one.setS(saved({custom:[WORD],cards:{cabc1:wcard()}})); await one.pushRemote(); await two.pushRemote(); assert.equal(two.S().custom.length,1);
+  const p=two.serialize(); p.custom=[]; delete p.cards.cabc1; p.deleted={cabc1:Date.now()}; two.setS(p); await two.pushRemote(); await one.pushRemote();
+  assert.deepEqual([...one.S().custom],[]); assert.equal(one.S().cards.cabc1,undefined);
+});
+test("delete my own word: a marker removes only an added word, never a course card, even from a hand-edited backup; an old copy without the field still merges",()=>{
+  const course={"u1.0":wcard(),"s1u1.s0":wcard(),"m.0":wcard(),"g1x":wcard()}, bad={updatedAt:GNOW+9,deleted:{"u1.0":GNOW,"m.0":GNOW,"s1u1.s0":GNOW,"g1x":GNOW,"__proto__":GNOW,"c":-5,"cq":0,"cz":"9"},custom:[],cards:{}};
+  const clean=L.cleanSaved(bad,GNOW+99,GDAY); assert.deepEqual({...clean.deleted},{});
+  for(const m of [L.mergeProgress({updatedAt:GNOW,cards:course},bad),L.mergeProgress(bad,{updatedAt:GNOW,cards:course})]){ assert.deepEqual(Object.keys(m.cards).sort(),Object.keys(course).sort()); assert.deepEqual({...m.deleted},{}); }
+  const u=loadUi(); u.setS(Object.assign({},bad,{cards:course})); assert.deepEqual(Object.keys(u.serialize().cards).sort(),Object.keys(course).sort()); assert.deepEqual({...u.serialize().deleted},{});
+  const old={updatedAt:GNOW,custom:[WORD],cards:{cabc1:wcard()}}, m1=L.mergeProgress(old,{updatedAt:GNOW-5,cards:{}}), m2=L.mergeProgress({updatedAt:GNOW-5,cards:{}},old);
+  for(const m of [m1,m2]){ assert.equal(m.custom.length,1); assert.ok(m.cards.cabc1); assert.deepEqual({...(m.deleted||{})},{}); }
+  const uo=loadUi(); uo.setS(old); assert.deepEqual({...uo.S().deleted},{}); assert.equal(uo.S().custom.length,1);
+});
+test("delete my own word: the later time wins per key, and a word added again under a new id is untouched",()=>{
+  const a={updatedAt:GNOW,deleted:{cabc1:100,cold:9},cards:{}}, b={updatedAt:GNOW+1,deleted:{cabc1:300,cxyz:5},custom:[{...WORD,id:"cnew9"}],cards:{cnew9:wcard()}};
+  for(const m of [L.mergeProgress(a,b),L.mergeProgress(b,a)]){ assert.deepEqual({...m.deleted},{cabc1:300,cold:9,cxyz:5}); assert.equal(m.custom.length,1); assert.ok(m.cards.cnew9); }
+  const m=L.mergeProgress(a,{updatedAt:GNOW,resetAt:GNOW+50,resetDay:GDAY,cards:{}}); assert.deepEqual({...m.deleted},{}); // before the reset
+  const m2=L.mergeProgress({updatedAt:GNOW,deleted:{cabc1:GNOW+80},cards:{}},{updatedAt:GNOW,resetAt:GNOW+50,resetDay:GDAY,cards:{}}); assert.deepEqual({...m2.deleted},{cabc1:GNOW+80}); // after it
+});
+test("delete my own word: a card you just forgot and then delete cannot be brought back by undo, and the next card has no undo button",()=>{
+  const r=reviewSix("cabc1"), S=()=>r.t.S(); r.grade("Forgot"); r.at(61000);
+  for(const id of ["x.1","x.2","x.3"]){ assert.equal(r.shown(),id); press(byText(r.b(),"Hide it from reviews")); }
+  assert.equal(r.shown(),"cabc1"); assert.ok(byText(r.b(),"Undo last grade"),"the snapshot of the word's grade is still offered");
+  const del=byText(r.b(),"Delete this word"); press(del); press(del);
+  assert.equal(S().cards.cabc1,undefined); assert.deepEqual([...S().custom],[]); assert.equal(r.shown(),"x.4"); assert.ok(!byText(r.b(),"Undo last grade"),"snapshot dropped");
+  r.grade("Got it"); for(let i=0;i<3;i++) assert.notEqual(r.shown(),"cabc1"); assert.equal(S().cards.cabc1,undefined);
+  assert.ok(!byText(r.b(),"Delete this word"),"a course card has no such button");
+});
+test("delete my own word: joining the account copy drops a stale shard card of a deleted word, and leaves a copy without the field alone",()=>{
+  const {meta,shards}=L.splitProgress({updatedAt:5,cards:{cabc1:wcard(),"u1.0":wcard()},custom:[WORD]}); meta.deleted={cabc1:9,"u1.0":9};
+  const j=L.joinProgress(meta,shards); assert.deepEqual(Object.keys(j.cards),["u1.0"]); assert.deepEqual([...j.custom],[]); assert.deepEqual({...j.deleted},{cabc1:9});
+  assert.equal("deleted" in L.joinProgress({updatedAt:5},{}),false);
+});
+// ===== a stage you have reached stays open =====
+const U2={id:"s2u001",stage:2,title:"Shopping",goal:"g",tip:"t",items:[{ar:"بكم",tr:"bcham",en:"how much"}],dialogue:[]};
+function stageScreens(o){
+  const sc=loadScreens(), {env,t}=sc; if(o) t.setS(o); Object.assign(env,{STAGE_NAMES:{0:"Foundations",1:"Survival",2:"Everyday",3:"C",4:"F",5:"N",6:"O"},STAGE_LEVELS:{1:"A1",2:"A2",3:"B1",4:"B2",5:"C1"},MSA:[],nextUnit:()=>({kind:"consolidate"})});
+  sc.items["s2u001.0"]=Object.assign({id:"s2u001.0",unit:"s2u001",stage:2},U2.items[0]); env.__set(sc.items,[UNIT,U2],{});
+  vm.runInContext(cut("const unitsOfStage=","function nextUnit")+cut("function renderLessons","let curLetter=0"),env);
+  t.S().unitsDone={sounds:"2026-11-01",u1:"2026-11-01"}; return sc;
+}
+const lessonBtn=(sec,title)=>walk(sec).find(n=>n.tag==="button"&&/\bunit\b/.test(n.className)&&texts(n).includes(title));
+test("stage reached: forgotten cards lower the percentage but not the lessons; a device that has not heard keeps its own lock",()=>{
+  const sc=stageScreens(); for(let i=0;i<4;i++) sc.t.S().cards["u1."+i]=sc.card(-1,8,4);
+  assert.equal(sc.env.currentStage(),2); assert.ok(sc.t.S().stageOpen["2"]>0);
+  sc.t.S().cards["u1.0"]=sc.card(0,0,5); sc.t.S().cards["u1.1"]=sc.card(0,0,5);
+  assert.equal(sc.env.currentStage(),2); const sec=uiEl("div"); sc.env.renderLessons(sec);
+  assert.equal(lessonBtn(sec,"Shopping").disabled,false); assert.ok(texts(sec).some(s=>/50% known for a week\+/.test(s)));
+  const other=stageScreens(); other.t.S().cards={"u1.0":other.card(0,0,5)}; const s2=uiEl("div"); other.env.renderLessons(s2); assert.equal(lessonBtn(s2,"Shopping").disabled,true);
+});
+test("stage reached: the known percentage is the computed one, whatever is remembered; the time is set once",()=>{
+  const sc=stageScreens(); for(let i=0;i<4;i++) sc.t.S().cards["u1."+i]=sc.card(-1,8,4);
+  assert.equal(sc.env.currentStage(),2); const first=sc.t.S().stageOpen["2"]; sc.t.S().cards["u1.0"]=sc.card(0,0,5); sc.t.S().cards["u1.1"]=sc.card(0,0,5);
+  assert.equal(sc.env.currentStage(),2); assert.equal(sc.t.S().stageOpen["2"],first);
+  assert.equal(sc.env.stageInfo(1).frac,0.5); assert.equal(sc.env.stageInfo(1).complete,false);
+  sc.t.S().stageOpen={2:1,3:1,6:1}; assert.equal(sc.env.stageInfo(1).frac,0.5); assert.equal(sc.env.stageInfo(2).frac,0); assert.equal(sc.env.currentStage(),6);
+  assert.equal(sc.env.liveStage(),1);
+});
+test("stage reached: merges keep the earliest time per stage in both orders; junk is dropped; a reset clears what came before it; backups keep it",()=>{
+  const a={updatedAt:2,stageOpen:{2:500,3:900}}, b={updatedAt:1,stageOpen:{2:300}};
+  for(const m of [L.mergeProgress(a,b),L.mergeProgress(b,a)]) assert.deepEqual({...m.stageOpen},{2:300,3:900});
+  assert.deepEqual({...L.cleanSaved({stageOpen:{1:5,2:"x",3:7,9:4,"u1":3}},now,"2026-11-14").stageOpen},{3:7});
+  const reset={updatedAt:GNOW,resetAt:GNOW,resetDay:GDAY,cards:{}}; const stale={updatedAt:5,stageOpen:{2:GNOW-DAY,3:GNOW+60000}};
+  // a copy that never heard of the reset keeps no stage at all, even one stamped after it (it was derived from progress the reset removes)
+  for(const m of [L.mergeProgress(stale,reset),L.mergeProgress(reset,stale)]) assert.deepEqual({...m.stageOpen},{});
+  // a copy that already knows the reset keeps a stage recorded at or after it
+  const knows={updatedAt:GNOW+9,resetAt:GNOW,resetDay:GDAY,stageOpen:{2:GNOW-1,3:GNOW,4:GNOW+60000},cards:{}};
+  for(const m of [L.mergeProgress(knows,reset),L.mergeProgress(reset,knows)]) assert.deepEqual({...m.stageOpen},{3:GNOW,4:GNOW+60000});
+  const sp=L.splitProgress(a); assert.deepEqual({...L.joinProgress(sp.meta,sp.shards).stageOpen},{2:500,3:900});
+  for(const o of [{},{built:true}]){ const u=loadUi(o); u.setS({stageOpen:{2:500}}); assert.equal(u.serialize().stageOpen["2"],500); }
+});
+test("stage reached: the other device gets it through github and through the account",async()=>{
+  const hub=fakeHub(), a=dev(hub,prog({stageOpen:{2:GNOW-5}})), b=dev(hub,prog({})); await a.sync(); await b.sync(); assert.equal(b.local.stageOpen["2"],GNOW-5);
+  const db=fakeDb(), one=loadUi(), two=loadUi(); one.use(db,"u1"); two.use(db,"u1"); one.setS(saved({stageOpen:{3:777}})); await one.pushRemote(); await two.pushRemote(); assert.equal(two.S().stageOpen["3"],777);
+});
+test("stage reached: a device that has not reached it gains it by merging, and a merge never takes one away, in either order",()=>{
+  const sets=[{},{2:5},{2:9,3:4},{4:1},{2:5,3:7,4:8,5:9,6:10}], flat=m=>Object.keys(m.stageOpen).sort().join();
+  for(const x of sets) for(const y of sets){ const want=[...new Set([...Object.keys(x),...Object.keys(y)])].sort().join();
+    for(const m of [L.mergeProgress({updatedAt:1,stageOpen:x},{updatedAt:2,stageOpen:y}),L.mergeProgress({updatedAt:2,stageOpen:y},{updatedAt:1,stageOpen:x})]){ assert.equal(flat(m),want);
+      for(const k of Object.keys(m.stageOpen)) assert.equal(m.stageOpen[k],Math.min(...[x[k],y[k]].filter(v=>v>0))); } }
+  const m=L.mergeProgress({updatedAt:9,stageOpen:{2:5}},{updatedAt:1,stageOpen:{2:7,3:4}}); assert.deepEqual({...m.stageOpen},{2:5,3:4}); assert.deepEqual({...L.mergeProgress(m,m).stageOpen},{2:5,3:4});
+});
+test("stage reached: a damaged or hand-edited backup can not raise it past the real stages or make it fractional, in cleanSaved, merging or loading",()=>{
+  const bad={updatedAt:99,stageOpen:{7:1,8:1,"2.5":1,"-3":1,"02":1,"3":-4,"4":0,"5":"9","6":null,"1":5,"0":5,"":5,"2e0":5,"__proto__":5,constructor:5,"u1":3}};
+  assert.deepEqual({...L.cleanSaved(bad,now,"2026-11-14").stageOpen},{});
+  for(const junk of [5,"x",null,[2,3],[5,5,5,5,5,5,5],true]) assert.deepEqual({...L.cleanSaved({stageOpen:junk},now,"2026-11-14").stageOpen},{});
+  const good={updatedAt:1,stageOpen:{2:500}};
+  for(const m of [L.mergeProgress(good,bad),L.mergeProgress(bad,good),L.mergeProgress(good,{updatedAt:99,stageOpen:[2,3,4,5,6,7]}),L.mergeProgress({updatedAt:99,stageOpen:"x"},good)]) assert.deepEqual({...m.stageOpen},{2:500});
+  const u=loadUi(); u.setS(bad); assert.deepEqual({...u.S().stageOpen},{}); assert.deepEqual({...u.serialize().stageOpen},{});
+  const sp=L.splitProgress(bad); assert.deepEqual({...L.joinProgress(sp.meta,sp.shards).stageOpen},{});
+  const sc=stageScreens({stageOpen:{7:1,"2.5":1,9:1}}); assert.equal(sc.env.currentStage(),sc.env.liveStage()); assert.ok(sc.env.currentStage()<=6);
+});
+test("stage reached: start over clears it, and an older value held by another device does not bring it back",()=>{
+  const R=GNOW, old={updatedAt:R-5000,stageOpen:{2:R-9000,3:R-8000}}, reset={updatedAt:R,resetAt:R,resetDay:GDAY,cards:{}};
+  for(const m of [L.mergeProgress(old,reset),L.mergeProgress(reset,old)]){ assert.deepEqual({...m.stageOpen},{}); assert.deepEqual({...L.mergeProgress(m,old).stageOpen},{}); assert.deepEqual({...L.mergeProgress(old,m).stageOpen},{}); }
+  const u=loadUi({dom:true}); u.setS({stageOpen:{2:500,4:600}}); u.startOver(); assert.deepEqual({...u.S().stageOpen},{});
+  const after=u.serialize(); assert.deepEqual({...after.stageOpen},{});
+  const staleOld={updatedAt:after.resetAt-5000,stageOpen:{2:500,4:600},resetAt:0};
+  for(const m of [L.mergeProgress(staleOld,after),L.mergeProgress(after,staleOld)]) assert.deepEqual({...m.stageOpen},{});
+  const reopened={...after,stageOpen:{3:after.resetAt+7},updatedAt:after.updatedAt+9};
+  for(const m of [L.mergeProgress(staleOld,reopened),L.mergeProgress(reopened,staleOld)]) assert.deepEqual({...m.stageOpen},{3:after.resetAt+7});
+});
+test("stage reached: a copy from before this change (no such field) still loads, merges and saves cleanly",()=>{
+  const old={updatedAt:5,cards:{},unitsDone:{u1:"2026-11-01"},custom:[],streak:2,lastDay:"2026-11-24"};
+  assert.ok("stageOpen" in L.cleanSaved(old,now,"2026-11-14")); assert.deepEqual({...L.cleanSaved(old,now,"2026-11-14").stageOpen},{});
+  for(const m of [L.mergeProgress(old,{updatedAt:3,cards:{}}),L.mergeProgress({updatedAt:3,cards:{}},old),L.mergeProgress(old,old)]) assert.deepEqual({...m.stageOpen},{});
+  for(const m of [L.mergeProgress(old,{updatedAt:3,stageOpen:{4:8}}),L.mergeProgress({updatedAt:3,stageOpen:{4:8}},old)]) assert.deepEqual({...m.stageOpen},{4:8});
+  const u=loadUi(); u.setS(old); assert.deepEqual({...u.S().stageOpen},{}); assert.deepEqual({...u.serialize().stageOpen},{}); assert.equal(u.S().streak,2);
+  const sp=L.splitProgress(old); assert.ok(Object.keys(L.joinProgress(sp.meta,sp.shards)).includes("cards"));
+});
+// the review with a store behind it (path "claude" = account store, "gh" = github hub, "local" = none): cards that were really graded before (r>=1),
+// a clock and timers the test moves (adv), and the remote to compare with
+async function reviewSync(path,{n=6,day=null}={}){
+  const hub=path==="gh"?fakeHub():null, db=path==="claude"?fakeDb():null, store=new Map(path==="gh"?[[KEY+"-gh",CFG]]:[]);
+  const sc=loadScreens({harakat:"never",ui:path==="gh"?{pwa:true,store,fetch:hub.fetch}:{store}}), {env,t}=sc;
+  const ids=[...Array(n).keys()].map(i=>"x."+i), ar=[...Array(n).keys()].map(i=>["هلا","زين","شاي","قهوة","ماي","خبز","لبن","تمر","سمك"][i]||"كلم"+"ا".repeat(i));
+  vm.runInContext("globalThis.__now=Math.floor(Date.now()/60000)*60000; Date.now=()=>globalThis.__now;"+cut("function touchDay","const shownStreak"),env);
+  ids.forEach((id,i)=>{ sc.items[id]={id,unit:"x"+i,stage:1,ar:ar[i],tr:"t",en:"e"+i}; t.S().cards[id]=Object.assign(sc.card(0,0,2),{d:i+1,t:env.__now-3*864e5}); });
+  if(day) Object.assign(t.S(),day);
+  const q=[]; let tid=0; env.setTimeout=(f,ms)=>{ q.push({id:++tid,at:env.__now+ms,f}); return tid; }; env.clearTimeout=id=>{ const i=q.findIndex(x=>x.id===id); if(i>=0) q.splice(i,1); };
+  const adv=async ms=>{ const end=env.__now+ms; for(;;){ q.sort((a,b)=>a.at-b.at||a.id-b.id); const x=q[0]; if(!x||x.at>end) break; q.shift(); env.__now=Math.max(env.__now,x.at); x.f(); await tick(); } env.__now=end; await tick(); };
+  if(path==="claude"){ t.use(db,"u1"); await t.pushRemote(); } if(path==="gh"){ assert.ok(t.gh()); await env.ghSync("manual"); await tick(); }
+  await adv(61000); // past the github gap
+  env.sched=(c,g,n)=>L.schedule(c,g,n,0.9); const focused=[], said=[]; env.announce=x=>{ said.push(x); };
+  env.document.createElement=tag=>{ const e=uiEl(tag); e.focus=()=>{ focused.push(e); }; return e; }; env.startReview(null); const b=()=>sc.spy.view.body;
+  const shown=()=>ids[ar.indexOf((walk(b()).find(n=>/\bsay\b/.test(n.className))||{attrs:{}}).attrs["aria-label"]?.slice(6))];
+  const grade=lab=>{ press(byText(b(),"Show answer")); press(walk(b()).find(n=>n.tag==="button"&&n.parent&&/grades/.test(n.parent.className)&&txt(n).startsWith(lab))); };
+  const full=()=>{ const p=t.serialize(); delete p.updatedAt; return JSON.stringify(p); };
+  const remote=()=>path==="gh"?JSON.stringify([...hub.files].map(([k,v])=>[k,k==="progress.json"?Object.assign(JSON.parse(v.text),{updatedAt:0}):v.text]).sort()):path==="claude"?JSON.stringify([...db.m].map(([k,v])=>[k,Object.assign({},v,{updatedAt:0})]).sort()):"";
+  return {sc,env,t,b,shown,grade,full,remote,adv,focused,said,hub,db,undoBtn:()=>byText(b(),"Undo last grade"),sync:()=>path==="gh"?env.ghSync("manual"):t.pushRemote()};
+}
+const SYNCED="That grade has already synced, so it can't be undone.";
+for(const path of ["claude","gh"]) test(`undo holds the push (${path}): nothing is uploaded while an undo is open, and the remote ends as it was`,async()=>{
+  const r=await reviewSync(path), remoteBefore=r.remote(), before=r.full();
+  r.grade("Easy"); await r.adv(2000); assert.equal(r.remote(),remoteBefore,"held"); assert.notEqual(r.full(),before);
+  press(r.undoBtn()); assert.equal(r.full(),before); await r.adv(10000); assert.equal(r.remote(),remoteBefore,"the remote is the pre-grade copy"); assert.equal(r.full(),before);
+});
+test("undo after the grade synced is refused, drawn no more, and changes nothing",async()=>{
+  const r=await reviewSync("claude"), remoteBefore=r.remote(); r.grade("Easy"); const btn=r.undoBtn(); assert.ok(btn); await r.adv(9000);
+  assert.notEqual(r.remote(),remoteBefore,"pushed after the hold"); const state=r.full(); press(btn);
+  assert.ok(texts(r.b()).includes(SYNCED)); assert.equal(r.full(),state); assert.ok(!r.undoBtn(),"button removed");
+  // a screen drawn after the grade went out has no button
+  const w=await reviewSync("claude",{n:1}); w.grade("Forgot"); assert.ok(w.undoBtn()); await w.adv(9000); await w.adv(53000);
+  assert.ok(byText(w.b(),"Show answer"),"the card is back"); assert.ok(!w.undoBtn(),"not drawn once sent");
+});
+test("undo: a page hidden at 2 s pushes at once and the undo is then refused",async()=>{
+  for(const path of ["claude","gh"]){ const r=await reviewSync(path), remoteBefore=r.remote(); r.grade("Easy"); await r.adv(2000); assert.equal(r.remote(),remoteBefore);
+    const btn=r.undoBtn(); r.env.document.visibilityState="hidden"; r.t.on.visibilitychange(); await tick(); assert.notEqual(r.remote(),remoteBefore,path);
+    const state=r.full(); press(btn); assert.ok(texts(r.b()).includes(SYNCED),path); assert.equal(r.full(),state); }
+});
+test("undo: Sync now during the hold pushes at once and the undo is then refused",async()=>{
+  for(const path of ["claude","gh"]){ const r=await reviewSync(path), remoteBefore=r.remote(); r.grade("Easy"); await r.adv(1000); await r.sync(); await tick();
+    assert.notEqual(r.remote(),remoteBefore,path); press(r.undoBtn()); assert.ok(texts(r.b()).includes(SYNCED),path); }
+});
+test("undo hold: grading every 5 s never delays a push past 30 s, and the undo open then is refused",async()=>{
+  for(const path of ["claude","gh"]){ const r=await reviewSync(path,{n:9}), remoteBefore=r.remote();
+    for(let k=0;k<6;k++){ r.grade("Got it"); await r.adv(5000); if(k<5) assert.equal(r.remote(),remoteBefore,`${path}: still held at ${(k+1)*5} s`); }
+    assert.notEqual(r.remote(),remoteBefore,path+": pushed by 31 s"); press(r.undoBtn()); assert.ok(texts(r.b()).includes(SYNCED),path); }
+});
+test("undo hold: a grade on a new day, undone within the hold, leaves the remote's day, streak, freezes and log as they were",async()=>{
+  for(const path of ["claude","gh"]){ const r=await reviewSync(path,{day:{streak:4,freezes:1,freezeUsed:0,lastDay:"2000-01-01",reviewsToday:7,newToday:2,log:{"2000-01-01":3}}});
+    if(path==="claude") await r.t.pushRemote(); else await r.env.ghSync("manual"); await tick(); const remoteBefore=r.remote(), before=r.full();
+    r.grade("Got it"); assert.notEqual(r.full(),before); await r.adv(2000); press(r.undoBtn()); await r.adv(10000); assert.equal(r.remote(),remoteBefore,path); assert.equal(r.full(),before); }
+});
+test("undo hold: the waiting screen does not push, and an undo from it leaves the remote as it was",async()=>{
+  for(const path of ["claude","gh"]){ const r=await reviewSync(path,{n:1}), remoteBefore=r.remote(), before=r.full();
+    r.grade("Forgot"); assert.ok(/comes? back in/.test(texts(r.b()).join(" "))); await r.adv(3000); assert.equal(r.remote(),remoteBefore,path+": no forced push");
+    press(r.undoBtn()); assert.equal(r.full(),before); assert.ok(byText(r.b(),"Show answer")); await r.adv(10000); assert.equal(r.remote(),remoteBefore,path); }
+});
+test("undo hold: how long a timer-started push still waits",()=>{
+  const g=1e6, w=L.holdWait; assert.equal(w(g+500,0,0),0,"no undo open"); assert.equal(w(g+1500,g,g),6500,"inside the 8 s"); assert.equal(w(g+7999,g,g),1);
+  assert.equal(w(g+8000,g,g),0,"hold over"); assert.equal(w(g+20000,g,g),0);
+  assert.equal(w(g+29500,g+29000,g),500,"capped at 30 s from the first wish to push"); assert.equal(w(g+30000,g+29000,g),0,"at the limit"); assert.equal(w(g+31000,g+29000,g),0);
+});
+test("review: a forgotten card that was the last one shown comes back from the waiting screen",async()=>{
+  const one=await reviewSync("local",{n:1}); one.grade("Forgot"); assert.ok(/comes? back in/.test(texts(one.b()).join(" "))); await one.adv(61000); assert.ok(byText(one.b(),"Show answer")); assert.equal(one.shown(),"x.0");
+  const six=await reviewSync("local"); for(let i=0;i<5;i++) six.grade("Got it"); assert.equal(six.shown(),"x.5"); six.grade("Forgot"); assert.ok(/comes? back in/.test(texts(six.b()).join(" ")));
+  await six.adv(61000); assert.equal(six.shown(),"x.5"); assert.ok(byText(six.b(),"Show answer"));
+});
+test("undo: it is announced, focus goes to the refusal line, and a stage with nothing to undo has no empty row",async()=>{
+  const r=await reviewSync("claude"); const stage=()=>walk(r.b()).find(n=>n.className==="stage"); assert.match(stage().children[0].className,/mode/,"nothing to undo, no empty row first");
+  r.grade("Easy"); press(r.undoBtn()); assert.ok(r.said.includes("Grade undone"));
+  r.grade("Easy"); const p=r.t.serialize(); p.cards["x.0"][5]+=7; r.t.setS(p); press(r.undoBtn()); const line=walk(r.b()).find(n=>n.tag==="p"&&txt(n)==="That card changed on another device, so it can't be undone.");
+  assert.ok(line&&r.focused.includes(line),"focus on the refusal line");
+});
+
+// what a merge from a device that deleted the word does to this one while a review is open: the real merge, then the item table loses it
+const goneRemote=(r,id)=>{ const T=Date.now(); r.t.setS(L.mergeProgress(r.t.serialize(),{updatedAt:T+1,deleted:{[id]:T},custom:[],cards:{}})); delete r.sc.items[id]; };
+const finishAll=r=>{ const seen=[]; for(let i=0;i<12&&r.shown();i++){ seen.push(r.shown()); r.grade("Got it"); } const fin=byText(r.b(),"Finish for now"); if(fin) press(fin); return seen; }; // a card just graded is due in exactly 10 min and waits on screen: leave through "Finish for now"
+test("delete my own word: a word deleted on another device while it waits in the open review is skipped, nothing throws, the review finishes",()=>{
+  const r=reviewSix("cabc1",true); assert.equal(r.shown(),"x.0".replace("x.0","x.1")); goneRemote(r,"cabc1"); assert.ok(!r.t.S().custom.length);
+  r.grade("Got it"); const seen=finishAll(r); assert.ok(!seen.includes("cabc1")); assert.ok(texts(r.b()).includes("Review done"),texts(r.b()).join("|")); assert.ok(texts(r.b()).some(x=>x.startsWith("5 cards reviewed")),texts(r.b()).join("|"));
+});
+test("delete my own word: a forgotten word deleted on another device does not come back or stall the review",()=>{
+  const r=reviewSix("cabc1"); r.grade("Forgot"); goneRemote(r,"cabc1"); r.at(61000); const seen=finishAll(r);
+  assert.ok(!seen.includes("cabc1")); assert.ok(texts(r.b()).includes("Review done"),texts(r.b()).join("|")); assert.equal(r.t.S().cards.cabc1,undefined);
+});
+test("delete my own word: when every remaining card was deleted elsewhere the review ends with Review done; the one graded before it is the only one counted",()=>{
+  const sc=loadScreens({harakat:"never"}), {env,t}=sc, W2={id:"cdef2",ar:"شاي",tr:"shay",en:"tea"}; t.S().custom=[{...WORD},{...W2}];
+  for(const w of [WORD,W2]){ sc.items[w.id]=Object.assign({unit:"custom",stage:"custom"},w); t.S().cards[w.id]=sc.card(0,0,0); }
+  env.startReview(null); const b=()=>sc.spy.view.body, r={t,sc}; const firstAr=texts(b()).some(x=>x==="قهوة"||x==="coffee")?"cabc1":"cdef2", other=firstAr==="cabc1"?"cdef2":"cabc1";
+  goneRemote(r,other); press(byText(b(),"Show answer")); press(walk(b()).find(n=>n.tag==="button"&&txt(n).startsWith("Got it"))); assert.ok(/1 card comes back in 10 min/.test(texts(b()).join(" ")),texts(b()).join("|")); press(byText(b(),"Finish for now"));
+  assert.ok(texts(b()).includes("Review done"),texts(b()).join("|")); assert.ok(texts(b()).some(x=>x.startsWith("1 card reviewed")));
+});
+test("delete my own word: a marker map or word id named like an object property neither makes a marker nor removes anything",()=>{
+  const W3={id:"constructor",ar:"ا",tr:"a",en:"a"}, W4={id:"toString",ar:"ب",tr:"b",en:"b"}, card={constructor:wcard(),toString:wcard()};
+  for(const [x,y] of [[{updatedAt:1,custom:[W3,W4],cards:card},{updatedAt:2,cards:{}}],[{updatedAt:2,cards:{}},{updatedAt:1,custom:[W3,W4],cards:card}]]){
+    const m=L.mergeProgress(x,y); assert.deepEqual({...m.deleted},{}); assert.deepEqual([...m.custom.map(c=>c.id).sort()],["constructor","toString"]); assert.deepEqual(Object.keys(m.cards).sort(),["constructor","toString"]);
+  }
+  const m=L.mergeProgress({updatedAt:1,deleted:{},custom:[W3],cards:{}},{updatedAt:2,deleted:{cabc1:5},cards:{}}); assert.deepEqual({...m.deleted},{cabc1:5}); assert.equal(m.custom.length,1);
+  const j=L.joinProgress({updatedAt:1,deleted:{},custom:[W3,W4]},{own:{constructor:wcard()}}); assert.equal(j.custom.length,2); assert.ok(j.cards.constructor);
+});
+test("delete my own word: a hidden word that is deleted leaves no hidden-card entry, by the delete button and by a merge",()=>{
+  const r=reviewSix("cabc1"); r.t.S().suspended={cabc1:5,"x.2":7}; const del=byText(r.b(),"Delete this word"); press(del); press(del);
+  assert.deepEqual({...r.t.S().suspended},{"x.2":7});
+  for(const m of [L.mergeProgress({updatedAt:1,suspended:{cabc1:5,"u1.0":-7},custom:[WORD],cards:{cabc1:wcard()}},{updatedAt:2,deleted:{cabc1:9},cards:{}}),L.mergeProgress({updatedAt:2,deleted:{cabc1:9},cards:{}},{updatedAt:1,suspended:{cabc1:5,"u1.0":-7},cards:{}})]) assert.deepEqual({...m.suspended},{"u1.0":-7});
+});
+test("delete my own word: deleting changes no day counter, streak, log, freezes or session; the only card deleted is not counted as reviewed; the armed state is announced",()=>{
+  const r=reviewSix("cabc1"), said=[]; r.env.announce=x=>said.push(x); const S=()=>r.t.S(), pick=()=>JSON.stringify(["reviewsToday","newToday","streak","lastDay","log","freezes","session"].map(k=>S()[k]));
+  const before=pick(), del=byText(r.b(),"Delete this word"); press(del); assert.ok(said.includes("Tap again to delete")); press(del); assert.equal(pick(),before); assert.ok(S().deleted.cabc1>0);
+  const sc=loadScreens({harakat:"never"}); sc.t.S().custom=[{...WORD}]; sc.items.cabc1=Object.assign({unit:"custom",stage:"custom"},WORD); sc.t.S().cards={cabc1:sc.card(0,0,0)}; sc.env.startReview(null);
+  const d=byText(sc.spy.view.body,"Delete this word"); press(d); press(d); const t=texts(sc.spy.view.body); assert.ok(t.includes("Nothing due"),t.join("|")); assert.ok(!t.some(x=>/reviewed/.test(x)));
+});
+test("stage reached: recording a stage does not touch updatedAt, reaches local storage, and a stale device that records one on first draw cannot revert a newer setting",()=>{
+  const sc=stageScreens(); const {env,t}=sc; for(let i=0;i<4;i++) t.S().cards["u1."+i]=sc.card(-1,8,4);
+  t.S().updatedAt=1234; t.S().settings.retention=0.8; const stale0=t.serialize();
+  assert.equal(env.currentStage(),2); assert.equal(t.S().updatedAt,1234); assert.ok(t.S().stageOpen["2"]>0);
+  const re=loadUi({store:t.store}); assert.ok(re.S().stageOpen["2"]>0,"survived a reload"); assert.equal(re.S().updatedAt,1234);
+  const stale=t.serialize(), phone={...stale0,updatedAt:5000,stageOpen:{},settings:{...stale0.settings,retention:0.95}};
+  for(const m of [L.mergeProgress(stale,phone),L.mergeProgress(phone,stale)]){ assert.equal(m.settings.retention,0.95); assert.ok(m.stageOpen["2"]>0); }
+});
+test("stage reached: the built page does not bump updatedAt when it records a stage either",()=>{
+  const sc=builtScripts(), mi=sc.findIndex(x=>x.includes("// ===== state =====")), m=sc[mi].match(/\(function\(\)\{([\s\S]*)/)[1], u=loadUi({built:true});
+  vm.runInContext(cut("function liveStage","function nextUnit",m),u.env);
+  Object.assign(u.env,{unitsOfStage:()=>[],stageInfo:n=>({complete:n<2}),ITEMS:{}}); u.S().unitsDone={sounds:"2026-11-01"}; u.S().updatedAt=77;
+  assert.equal(u.env.currentStage(),2); assert.ok(u.S().stageOpen["2"]>0); assert.equal(u.S().updatedAt,77);
+});
+test("stage reached: a merge that changes only a remembered stage redraws, and the lesson is open",()=>{
+  const u=loadUi(); u.setS({updatedAt:5}); const copy=u.serialize(); copy.stageOpen={3:GNOW-9}; copy.updatedAt=4;
+  u.calls.length=0; u.on.storage({key:KEY,newValue:JSON.stringify(copy)}); assert.ok(u.calls.includes("changed")); assert.equal(u.S().stageOpen["3"],GNOW-9);
+});
+test("stage reached: a stage time from a clock set ahead is dropped on load and does not survive a reset; one hour ahead is kept",()=>{
+  const c=L.cleanSaved({stageOpen:{2:now+3*DAY,3:1e300,4:now+3600000,5:now-5}},now,"2026-11-14"); assert.deepEqual({...c.stageOpen},{4:now+3600000,5:now-5});
+  const R=now, reset={updatedAt:R,resetAt:R,resetDay:"2026-11-14",cards:{}};
+  const far=L.cleanSaved({updatedAt:R-5,stageOpen:{2:now+3*DAY,3:1e300}},now,"2026-11-14");
+  for(const m of [L.mergeProgress(far,reset),L.mergeProgress(reset,far)]) assert.deepEqual({...m.stageOpen},{});
+});
+test("stage reached: a stage recorded on first draw by a copy that has not heard of the reset does not survive it, on the account and on github",async()=>{
+  for(const path of ["claude","pwa"]){
+    const d0=new Date(), day=`${d0.getFullYear()}-${String(d0.getMonth()+1).padStart(2,"0")}-${String(d0.getDate()).padStart(2,"0")}`, R=Date.now()-2000;
+    const remote={updatedAt:R,resetAt:R,resetDay:day,cards:{}}, local=saved({updatedAt:R-5000,unitsDone:{sounds:"2026-11-01"},cards:{}});
+    let t,meta;
+    if(path==="claude"){ const db=fakeDb(); const sp=L.splitProgress(remote); db.m.set(P+"progress",sp.meta); for(const [k,v] of Object.entries(sp.shards)) db.m.set(P+"cards_"+k,v);
+      t=loadUi({boot:true,claude:claudeWith(db),saved:{[KEY]:JSON.stringify(local)}}); meta=()=>db.m.get(P+"progress"); }
+    else { const hub=hubWith(remote); t=loadUi({boot:true,pwa:true,fetch:hub.fetch,saved:{[KEY]:JSON.stringify(local),[KEY+"-gh"]:CFG}}); meta=()=>hub.json("progress.json"); }
+    vm.runInContext(cut("function liveStage","function nextUnit",main),t.env); Object.assign(t.env,{unitsOfStage:()=>[],stageInfo:n=>({complete:n<3}),ITEMS:{}});
+    assert.equal(t.env.currentStage(),3); assert.ok(t.S().stageOpen["3"]>R,"the first draw stamps stage 3 after the reset");
+    await tick(); await tick();
+    assert.equal(t.env.currentStage(),0,path); assert.deepEqual({...t.S().stageOpen},{},path); assert.deepEqual({...(meta().stageOpen||{})},{},path);
+  }
+});
+test("stage reached: recording a stage with github sync on marks the github copy dirty, so it is pushed with the next sync",async()=>{
+  const hub=fakeHub(); const t=loadUi({boot:true,pwa:true,fetch:hub.fetch,saved:{[KEY+"-gh"]:CFG}}); await tick();
+  vm.runInContext(cut("function liveStage","function nextUnit",main),t.env); Object.assign(t.env,{unitsOfStage:()=>[],stageInfo:n=>({complete:n<3}),ITEMS:{}}); t.S().unitsDone={sounds:"2026-11-01"};
+  hub.log.length=0; assert.equal(t.env.currentStage(),3); assert.ok(t.S().stageOpen["3"]>0);
+  t.env.document.visibilityState="hidden"; t.on.visibilitychange(); await tick();
+  assert.ok(hub.puts().includes("progress.json"),"a hide pushes what was recorded"); assert.ok(hub.json("progress.json").stageOpen["3"]>0);
+  const off=loadUi({boot:true,pwa:true,fetch:hub.fetch}); await tick(); vm.runInContext(cut("function liveStage","function nextUnit",main),off.env); Object.assign(off.env,{unitsOfStage:()=>[],stageInfo:n=>({complete:n<3}),ITEMS:{}}); off.S().unitsDone={sounds:"2026-11-01"};
+  hub.log.length=0; off.env.currentStage(); off.env.document.visibilityState="hidden"; off.on.visibilitychange(); await tick(); assert.deepEqual(hub.log,[],"with sync off nothing is sent");
+});
+function earTest(){
+  const sc=loadScreens(); vm.runInContext("Math.random=()=>0.9; soundTab='ear'",sc.env); let sec=uiEl("div"); sc.env.renderSounds(sec);
+  const pick=sc.env.PAIRS[0][1][0];
+  return {sc,redraw(){ sec=uiEl("div"); sc.env.renderSounds(sec); },answer(ok){ press(walk(sec).find(n=>n.attrs["data-w"]!==undefined&&(n.attrs["data-w"]===pick)===ok)); press(byText(sec,"Next")); },done:()=>!!sc.t.S().unitsDone.sounds,hint:()=>earHint(sec)};
+}
+test("stage 0 test: a bad start doesn't block it: 6 of the last 8 pass",()=>{
+  const e=earTest(); for(let i=0;i<6;i++) e.answer(false); for(let i=0;i<5;i++) e.answer(true); assert.equal(e.done(),false,"5 of the last 8");
+  e.answer(true); assert.equal(e.done(),true);
+});
+test("stage 0 test: the answers so far survive the screen being drawn again",()=>{
+  const e=earTest(); for(let i=0;i<7;i++) e.answer(true); e.redraw(); assert.equal(e.done(),false); e.answer(true); assert.equal(e.done(),true);
+});
+
+const shiftDays=(t,n)=>vm.runInContext(`{ const d=Date.now; Date.now=()=>d()+${n*DAY}; }`,t.env);
+test("app left open overnight: back in front the next day it feeds today's cards and redraws, on both builds; the same day does nothing",async()=>{
+  for(const o of [{boot:true},{boot:true,pwa:true},{boot:true,claude:claudeWith(fakeDb())}]){
+    const t=loadUi(o); await tick(); const fed=t.fed().length, drawn=()=>t.calls.filter(c=>c==="render").length, d0=drawn();
+    t.on.visibilitychange(); assert.equal(t.fed().length,fed); assert.equal(drawn(),d0);
+    shiftDays(t,1); t.env.document.visibilityState="hidden"; t.on.visibilitychange(); assert.equal(t.fed().length,fed,"not while hidden");
+    t.env.document.visibilityState="visible"; t.on.visibilitychange(); await tick(); assert.equal(t.fed().length,fed+2); assert.equal(drawn(),d0+1);
+    shiftDays(t,1); t.env.busy=true; t.on.visibilitychange(); await tick(); assert.equal(t.fed().length,fed+4); assert.equal(drawn(),d0+1,"a lesson on screen is not redrawn");
+  }
+});
+test("app left open: a clock that went back a day changes nothing",async()=>{
+  const t=loadUi({boot:true}); await tick(); const fed=t.fed().length; shiftDays(t,-1); t.on.visibilitychange(); assert.equal(t.fed().length,fed);
+});
+test("app left open: with sync on, the day turn feeds after the pull, so a newer setting from another device is not overwritten by a stale one (both GitHub builds and the account)",async()=>{
+  const feed=t=>{ t.S().updatedAt=vm.runInContext("Date.now()",t.env); }, pageNow=t=>vm.runInContext("Date.now()",t.env);
+  const p0=saved({updatedAt:5,lastDay:"2026-03-01",streak:4,settings:{retention:0.9},cards:{"u1.0":pcard(100,3)}});
+  for(const b of [{pwa:true},{built:true}]){
+    const hub=hubWith(p0);
+    const t=loadUi({boot:true,...b,fetch:hub.fetch,feed,saved:{[KEY+"-gh"]:CFG}}); await tick(); const fed=t.fed().length;
+    shiftDays(t,1); const meta=hub.json("progress.json"); meta.updatedAt=pageNow(t)-1000; meta.settings={...meta.settings,retention:0.8}; hub.set("progress.json",meta);
+    t.on.visibilitychange(); assert.equal(t.fed().length,fed,"not before the pull"); await tick(); await tick();
+    assert.equal(t.fed().length,fed+2); assert.equal(t.S().settings.retention,0.8,"github locally"); assert.equal(hub.json("progress.json").settings.retention,0.8,"github store");
+  }
+  const {meta,shards}=L.splitProgress(p0), db=fakeDb({[P+"progress"]:{...meta,shards:{s1:"a1"}},[P+"cards_s1"]:{cards:shards.s1}});
+  const t=loadUi({boot:true,claude:claudeWith(db),feed}); await tick(); const fed=t.fed().length;
+  shiftDays(t,1); db.m.set(P+"progress",{...db.m.get(P+"progress"),updatedAt:pageNow(t)-1000,settings:{...db.m.get(P+"progress").settings,retention:0.8}});
+  t.on.visibilitychange(); assert.equal(t.fed().length,fed,"not before the pull"); await tick(); await tick();
+  assert.equal(t.fed().length,fed+2); assert.equal(t.S().settings.retention,0.8,"account locally"); assert.equal(db.m.get(P+"progress").settings.retention,0.8,"account store");
+});
+const remoteAcct=()=>{ const {meta}=L.splitProgress(saved({updatedAt:5,lastDay:"2026-03-01",streak:4,settings:{retention:0.9},cards:{}})); return fakeDb({[P+"progress"]:{...meta,shards:{}}}); };
+const newerSetting=(db,t)=>db.m.set(P+"progress",{...db.m.get(P+"progress"),updatedAt:vm.runInContext("Date.now()",t.env)-1000,settings:{...db.m.get(P+"progress").settings,retention:0.8}});
+const pageNow=t=>vm.runInContext("Date.now()",t.env);
+test("app left open: a push already in flight and its queued re-run both finish before the day turn feeds",async()=>{
+  const db=remoteAcct(), feed=t=>{ t.S().updatedAt=pageNow(t); }; const t=loadUi({boot:true,claude:claudeWith(db),feed}); await tick(); const fed=t.fed().length;
+  let open=db.hold(); t.save(); t.runTimers(); await tick();
+  shiftDays(t,1); t.on.visibilitychange(); open(); const open2=db.hold(); await tick();
+  assert.equal(t.fed().length,fed,"second read still pending");
+  newerSetting(db,t); db.gate=null; open2(); await tick(); await tick();
+  assert.equal(t.fed().length,fed+2); assert.equal(t.S().settings.retention,0.8,"locally"); assert.equal(db.m.get(P+"progress").settings.retention,0.8,"in the store");
+});
+test("app left open: a pull that never comes back redraws after 30 seconds without feeding; the late pull feeds once, after its merge",async()=>{
+  const db=remoteAcct(), feed=t=>{ t.S().updatedAt=pageNow(t); }; const t=loadUi({boot:true,claude:claudeWith(db),feed}); await tick(); const fed=t.fed().length, drawn=()=>t.calls.filter(c=>c==="render").length, d0=drawn();
+  const open=db.hold(); const day0=vm.runInContext("openDay",t.env); shiftDays(t,1); t.on.visibilitychange(); await tick(); assert.equal(t.fed().length,fed);
+  const w=[...t.timers.values()].find(x=>x.ms===30000); assert.ok(w,"a 30 s fallback"); w.f();
+  assert.equal(t.fed().length,fed,"not fed"); assert.equal(drawn(),d0+1,"redrawn"); assert.equal(vm.runInContext("openDay",t.env),day0);
+  t.on.visibilitychange(); await tick(); assert.equal(t.fed().length,fed,"a second event while the read is held does not feed");
+  newerSetting(db,t); db.gate=null; open(); await tick(); await tick();
+  assert.equal(t.fed().length,fed+2,"fed once"); assert.equal(t.S().settings.retention,0.8); assert.equal(db.m.get(P+"progress").settings.retention,0.8);
+});
+const earHint=sec=>walk(sec).map(txt).find(t=>/of the last \d+ right/.test(t));
+test("stage 0 test: start over clears the answers, so the stage does not pass again with no new answers",()=>{
+  const e=earTest(); for(const ok of [false,false,true,true,true,true,true,true]) e.answer(ok); assert.equal(e.done(),true);
+  e.sc.env.renderMe=()=>{}; e.sc.t.startOver(); e.redraw(); assert.equal(e.done(),false,"no answers after start over");
+  for(const ok of [false,false,true,true,true,true,true,true]) e.answer(ok); assert.equal(e.done(),true);
+});
+test("stage 0 test: a reset merged in from another device clears the answers the same way",()=>{
+  const e=earTest(); for(const ok of [false,false,true,true,true,true,true,true]) e.answer(ok); assert.equal(e.done(),true);
+  e.sc.t.S().unitsDone={}; e.redraw(); assert.equal(e.done(),false,"no answers after the merged reset");
+  for(const ok of [false,false,true,true,true,true,true,true]) e.answer(ok); assert.equal(e.done(),true);
+});
+test("stage 0 test: 8 answers with 5 right do not pass",()=>{
+  const e=earTest(); for(const ok of [true,true,true,true,true,false,false,false]) e.answer(ok); assert.equal(e.done(),false);
+});
+test("stage 0 test: a run of 4 wrong, 6 right, 2 wrong passes on the 10th answer and not before",()=>{
+  const e=earTest(); const seq=[false,false,false,false,true,true,true,true,true,true];
+  for(let i=0;i<9;i++){ e.answer(seq[i]); assert.equal(e.done(),false,"before answer "+(i+1)); }
+  e.answer(seq[9]); assert.equal(e.done(),true,"on answer 10");
+});
+test("stage 0 test: after 12 answers the window holds only the last 8",()=>{
+  const e=earTest(); for(let i=0;i<8;i++) e.answer(false); for(let i=0;i<4;i++) e.answer(true);
+  assert.equal(e.done(),false); assert.ok(e.hint().includes("4 of the last 8 right"),e.hint());
+});
+test("stage 0 test: the first round shows only the round, with no 0 of the last 0; the count comes with the first answer",()=>{
+  const e=earTest();
+  const sec=uiEl("div"); e.sc.env.renderSounds(sec); const status=()=>walk(sec).map(txt).filter(t=>/^Round \d/.test(t));
+  assert.deepEqual(status(),["Round 1 · 6 of your last 8 right finishes stage 0"]); assert.ok(!walk(sec).map(txt).some(t=>/0 of the last 0/.test(t)));
+  e.answer(true); e.redraw(); assert.ok(e.hint().includes("Round 2 · 1 of the last 1 right"),e.hint());
+});
+test("stage 0 test: a redraw keeps counting rounds from the answers so far",()=>{
+  const e=earTest(); for(let i=0;i<7;i++) e.answer(true); e.redraw(); assert.ok(e.hint().includes("Round 8 · 7 of the last 7 right"),e.hint());
+});
+
+test("undo hold (github): a hide or online that arrives while a cycle runs is re-run at once, not held; a queued save is still held",async()=>{
+  for(const trig of ["hide","online"]){ const r=await reviewSync("gh"), remoteBefore=r.remote(); let open; const gate=new Promise(x=>{ open=x; });
+    const hub=r.hub; hub.before=async()=>{ await gate; }; const cycle=r.sync(); await tick();
+    r.grade("Easy"); if(trig==="hide"){ r.env.document.visibilityState="hidden"; r.t.on.visibilitychange(); } else r.t.on.online();
+    open(); await cycle; await tick(); assert.notEqual(r.remote(),remoteBefore,trig+": pushed straight after the cycle, not after the hold");
+    press(r.undoBtn()); assert.ok(texts(r.b()).includes(SYNCED),trig); }
+  const r=await reviewSync("gh"), remoteBefore=r.remote(); let open; const gate=new Promise(x=>{ open=x; }); r.hub.before=async()=>{ await gate; }; const cycle=r.sync(); await tick();
+  r.grade("Easy"); open(); await cycle; await tick(); assert.equal(r.remote(),remoteBefore,"a queued save is held"); await r.adv(2000); assert.equal(r.remote(),remoteBefore); await r.adv(61000); assert.notEqual(r.remote(),remoteBefore,"and goes later, on its normal timer");
+});
+test("github sync: a show queued before a hide behind a running cycle is re-run as the hide, with keepalive",async()=>{
+  for(const order of [["show","hide"],["hide","show","hide"],["online","hide"]]){
+    const r=await reviewSync("gh"); let open; const gate=new Promise(x=>{ open=x; }); r.hub.before=async()=>{ await gate; }; const cycle=r.sync(); await tick();
+    r.grade("Easy"); for(const o of order){ if(o==="online") r.t.on.online(); else { r.env.document.visibilityState=o==="hide"?"hidden":"visible"; r.t.on.visibilitychange(); } }
+    r.hub.log.length=0; open(); await cycle; await tick();
+    const again=r.hub.log.filter(q=>q.keepalive); assert.ok(again.length>0,order.join(">")+": the re-run is sent with keepalive"); assert.ok(r.hub.log[r.hub.log.length-1].keepalive,order.join(">")+": and so is the last request");
+  }
+});
+test("undo hold (claude.ai): grading every 1.4 s still pushes by the 30 s cap",async()=>{
+  const r=await reviewSync("claude",{n:34}), remoteBefore=r.remote(); let first=0;
+  for(let k=1;k<=32&&!first;k++){ r.grade("Got it"); await r.adv(1400); if(r.remote()!==remoteBefore) first=k*1400; }
+  assert.ok(first>0&&first<=30000+1400,"first push at "+first+" ms");
+});
+test("undo hold: once the grade has gone out the hold ends, so another save is not delayed",async()=>{
+  for(const path of ["claude"]){ const r=await reviewSync(path); r.grade("Easy"); await r.adv(1000); r.env.document.visibilityState="hidden"; r.t.on.visibilitychange(); await tick(); const sent=r.remote();
+    await r.adv(2000); r.t.S().settings.newPerDay=2; r.t.save(); await r.adv(1400); assert.equal(r.remote(),sent,path+": not yet"); await r.adv(1000); assert.notEqual(r.remote(),sent,path+": pushed at 4.5 s, not 8 s"); }
+});
+test("undo: a remote copy whose clock is five minutes ahead does not take the Undo button away from an unsent grade",async()=>{
+  const r=await reviewSync("claude"); const k="data/users/u1/progress"; const doc=JSON.parse(JSON.stringify(r.db.m.get(k))); doc.updatedAt=r.env.__now+300000; r.db.m.set(k,doc); await r.t.pushRemote();
+  r.grade("Easy"); assert.ok(r.undoBtn(),"button drawn"); const remoteBefore=r.remote(), before=r.full(); press(r.undoBtn()); await r.adv(10000); assert.ok(!texts(r.b()).includes(SYNCED)); assert.equal(r.remote(),remoteBefore);
 });

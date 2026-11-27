@@ -139,8 +139,8 @@ button.say{background:none;border:0;color:var(--ink);cursor:pointer;padding:0 8p
 .feedback.ok{color:var(--good)} .feedback.no{color:var(--bad)}
 .words{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;direction:rtl}
 .words span{font:400 24px/1.6 var(--ar);padding:0 6px;border-radius:6px;border-bottom:3px solid transparent}
-.words .hit{border-bottom-color:var(--good)}
-.words .miss{border-bottom-color:var(--bad);background:color-mix(in srgb,var(--bad) 10%,transparent)}
+.words .hit{border-bottom:3px solid var(--good)}
+.words .miss{border-bottom:3px dashed var(--bad);background:color-mix(in srgb,var(--bad) 10%,transparent)}
 .options{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%}
 .options .btn{min-height:56px;flex-direction:column;gap:0;transition:background-color .15s,border-color .15s}
 .options .btn .ar{font-size:26px;line-height:1.5} .options.har .btn .ar{line-height:1.8}
@@ -2115,11 +2115,18 @@ const validCard=a=>Array.isArray(a)&&(a.length===5||a.length===8)&&a.every(x=>ty
 const validGen=u=>!!u&&typeof u.id==="string"&&/^g[0-9a-z]+$/.test(u.id)&&[2,3,4,5,6].includes(u.stage)&&!validateUnit(u).length;
 // make a saved copy from outside (backup file, account, another tab) safe to merge: wrong shapes become empty,
 // broken cards are dropped, and a "start over" marker can't be in the future (that would wipe work done after it)
+// words you deleted: {id of an added word: ms}. only an added word's id can be here, so a marker can never remove a course card
+const own=(o,k)=>Object.prototype.hasOwnProperty.call(o,k);
+const tombs=x=>{ const r={}; if(x&&typeof x==="object"&&!Array.isArray(x)) for(const [k,v] of Object.entries(x)) if(/^c[0-9a-z]+$/.test(k)&&typeof v==="number"&&isFinite(v)&&v>0) r[k]=v; return r; };
+// stages you have reached: {"2".."6": ms first opened}; only whole stages 2 to 6 with a real time, so a damaged backup can't open more than the course has
+// a stage time from a clock set far ahead would outlast a reset, so cleaning drops times over a day ahead
+const pick1=(m,max)=>Object.fromEntries(Object.entries(m).filter(([k,v])=>v<=max));
+const opens=x=>{ const r={}; if(x&&typeof x==="object"&&!Array.isArray(x)) for(const [k,v] of Object.entries(x)) if(/^[2-6]$/.test(k)&&typeof v==="number"&&isFinite(v)&&v>0) r[k]=v; return r; };
 function cleanSaved(raw,now,todayKey){
   const o=raw&&typeof raw==="object"&&!Array.isArray(raw)?Object.assign({},raw):{};
   const cards={}; if(o.cards&&typeof o.cards==="object") for(const [k,a] of Object.entries(o.cards)) if(validCard(a)) cards[k]=a; o.cards=cards;
   for(const f of ["unitsDone","suspended","log","rp","seen","read"]) if(!o[f]||typeof o[f]!=="object"||Array.isArray(o[f])) o[f]={};
-  if(!Array.isArray(o.custom)) o.custom=[];
+  if(!Array.isArray(o.custom)) o.custom=[]; o.deleted=tombs(o.deleted); o.stageOpen=pick1(opens(o.stageOpen),now+DAY);
   // day fields must be real dates: a junk one sorts after every date, so it would win every merge and stop the streak counting
   for(const f of ["lastDay","freezeUsed","msaDay"]) if(!(typeof o[f]==="string"&&(o[f]===""||isFinite(dayNum(o[f]))))) o[f]="";
   if(!o.session||typeof o.session!=="object"||!(typeof o.session.day==="string"&&isFinite(dayNum(o.session.day)))) o.session={day:"",done:{}};
@@ -2139,6 +2146,7 @@ function afterReset(o,R,RD,behind){
   o.cards=pick(o.cards,(k,c)=>lastReview(c)>=rMin);
   o.suspended=pick(o.suspended,(k,v)=>Math.abs(v)>=R);
   o.custom=(Array.isArray(o.custom)?o.custom:[]).filter(c=>c&&(parseInt(String(c.id).slice(1,-3),36)||0)>=R);
+  o.deleted=pick(tombs(o.deleted),(k,v)=>v>=R); o.stageOpen=behind?{}:pick(opens(o.stageOpen),(k,v)=>v>=R); // a copy that never heard of the reset can only have derived its stage from progress the reset removes
   for(const f of ["unitsDone","rp","read"]) o[f]=pick(o[f],(k,v)=>!old(v));
   o.log=pick(o.log,k=>!old(k));
   if(old(o.lastDay)){ o.streak=0; o.freezes=0; o.reviewsToday=0; o.newToday=0; o.lastDay=""; o.freezeUsed=""; }
@@ -2172,6 +2180,12 @@ function mergeProgress(a,b){
   out.suspended={}; for(const k of keys(a.suspended,b.suspended)){ const x=+(a.suspended||{})[k]||0, y=+(b.suspended||{})[k]||0; out.suspended[k]=Math.abs(x)>=Math.abs(y)?x:y; }
   const arr=x=>Array.isArray(x)?x:[];
   const byId=new Map(); [...arr(older.custom),...arr(newer.custom)].forEach(c=>{ if(c&&c.id) byId.set(c.id,c); }); out.custom=[...byId.values()];
+  // a deleted word stays deleted: the later time per id, then the word and its card go, whichever copy graded it last
+  const ta=tombs(a.deleted), tb=tombs(b.deleted); out.deleted={}; for(const k of keys(ta,tb)) out.deleted[k]=Math.max(own(ta,k)?ta[k]:0,own(tb,k)?tb[k]:0);
+  const gone=k=>own(out.deleted,k); // own keys only: "constructor" is a valid id shape
+  out.cards=Object.fromEntries(Object.entries(out.cards).filter(([k])=>!gone(k))); out.custom=out.custom.filter(c=>!gone(c.id)); out.suspended=Object.fromEntries(Object.entries(out.suspended).filter(([k])=>!gone(k)));
+  // a stage once opened stays open: every stage either copy reached, at the earlier time
+  const oa=opens(a.stageOpen), ob=opens(b.stageOpen); out.stageOpen={}; for(const k of keys(oa,ob)) out.stageOpen[k]=Math.min(...[oa[k],ob[k]].filter(v=>v>0));
   out.log={}; for(const k of keys(a.log,b.log)) out.log[k]=Math.max(+(a.log||{})[k]||0,+(b.log||{})[k]||0);
   for(const f of ["rp","read"]){ out[f]={}; for(const k of keys(a[f],b[f])){ const x=(a[f]||{})[k]||"", y=(b[f]||{})[k]||""; out[f][k]=x>y?x:y; } }
   out.seen=Object.assign({},a.seen,b.seen);
@@ -2207,7 +2221,11 @@ function joinProgress(meta,shards){
   const o=Object.assign({},meta||{}); const cards=Object.assign({},o.cards&&typeof o.cards==="object"?o.cards:{});
   for(const n of SHARDS){ const sh=shards&&shards[n]; if(!sh||typeof sh!=="object") continue;
     for(const [k,c] of Object.entries(sh)) cards[k]=cards[k]?mergeProgress({cards:{[k]:cards[k]}},{cards:{[k]:c}}).cards[k]:c; }
-  o.cards=cards; return o;
+  o.cards=cards;
+  if(o.deleted!==undefined){ o.deleted=tombs(o.deleted); for(const k of Object.keys(o.deleted)) delete o.cards[k]; // a shard that was not rewritten may still hold a deleted word's card
+    if(Array.isArray(o.custom)) o.custom=o.custom.filter(c=>!(c&&own(o.deleted,c.id))); }
+  if(o.stageOpen!==undefined) o.stageOpen=opens(o.stageOpen);
+  return o;
 }
 // github sync decisions: what an answer means, the status line, when to run, what to fetch and send (no network here)
 const GH_META="progress.json", GH_GAP=60000;
@@ -2241,6 +2259,8 @@ function ghAfter(st,kind,now){
   return {last:s.last,waiting:s.waiting,problem:kind};
 }
 const ghWait=(lastRun,now)=>Math.min(GH_GAP,Math.max(0,lastRun+GH_GAP-now));
+// how long a timer-started upload still waits while a grade can be undone: 8 s after the grade, never past 30 s from the first save it holds back (from 0: no undo open)
+const holdWait=(now,from,want)=>from?Math.max(0,Math.min(from+8000,want+30000)-now):0;
 function ghAllow(trigger,s){
   if(!s.on) return "no";
   if(trigger==="manual") return "go";
@@ -2325,7 +2345,7 @@ async function ghCycle(api,local,mem,opts){
 const tilesOf=ar=>String(ar).replace(/[،؟?!.,]/g," ").split(/\s+/).filter(Boolean);
 const showHarakat=(mode,stage)=>mode==="always"?true:mode==="never"?false:stage<=2;
 const shownAr=(row,on)=>on&&typeof row.arv==="string"&&row.arv?row.arv:row.ar;
-if(typeof module!=="undefined") module.exports={tilesOf,showHarakat,shownAr,SHARDS,shardOf,splitProgress,joinProgress,learnDay,dueAt,validCard,validGen,cleanSaved,S_MIN,MAX_IVL,normalizeArabic,levenshtein,similarity,wordMatch,letterForms,schedule,retrievability,intervalDays,isLeech,FSRS_W,cardMode,pickOptions,soundShift,validateUnit,isHidden,stageStatus,planDay,interleave,packCard,unpackCard,MATURE_DAYS,dayNum,nextStreak,visibleStreak,mergeProgress,afterReset,whenLabel,canon,b64enc,b64dec,GH_META,GH_GAP,GH_WHY,ghFile,ghKind,ghLine,ghAfter,ghWait,ghAllow,ghNeed,ghChanged,GH_API,ghApi,ghCycle};
+if(typeof module!=="undefined") module.exports={holdWait,tilesOf,showHarakat,shownAr,SHARDS,shardOf,splitProgress,joinProgress,learnDay,dueAt,validCard,validGen,cleanSaved,S_MIN,MAX_IVL,normalizeArabic,levenshtein,similarity,wordMatch,letterForms,schedule,retrievability,intervalDays,isLeech,FSRS_W,cardMode,pickOptions,soundShift,validateUnit,isHidden,stageStatus,planDay,interleave,packCard,unpackCard,MATURE_DAYS,dayNum,nextStreak,visibleStreak,mergeProgress,afterReset,whenLabel,canon,b64enc,b64dec,GH_META,GH_GAP,GH_WHY,ghFile,ghKind,ghLine,ghAfter,ghWait,ghAllow,ghNeed,ghChanged,GH_API,ghApi,ghCycle};
 </script>
 
 <script>
@@ -2335,6 +2355,8 @@ const ap=(p,...kids)=>{ for(const k of kids.flat(Infinity)) if(k!=null&&k!==fals
 const el=(tag,props,...kids)=>{ const e=document.createElement(tag);
   if(props) for(const [k,v] of Object.entries(props)){ if(v==null) continue; if(k==="style"||k.includes("-")) e.setAttribute(k,v); else e[k]=v; }
   return ap(e,...kids); };
+// a box you type into: follows the text's direction, no autocorrect or auto-capital (set as attributes, like ghPanel)
+const typingBox=i=>{ i.setAttribute("dir","auto"); i.setAttribute("autocapitalize","off"); i.setAttribute("autocorrect","off"); i.setAttribute("spellcheck","false"); return i; };
 const arSpan=(t,cls)=>el("span",{className:"ar"+(cls?" "+cls:""),lang:"ar",textContent:t});
 const SVG={today:'<path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>',
   review:'<path d="M20 12a8 8 0 1 1-2.4-5.7"/><path d="M20 4v5h-5"/>',
@@ -2355,7 +2377,7 @@ document.documentElement.lang=document.documentElement.lang||"en";
 
 // ===== state =====
 const KEY="harf-gulf-v1";
-const blank=()=>({cards:{},unitsDone:{},suspended:{},custom:[],gen:[],streak:0,lastDay:"",reviewsToday:0,newToday:0,
+const blank=()=>({cards:{},unitsDone:{},suspended:{},custom:[],deleted:{},stageOpen:{},gen:[],streak:0,lastDay:"",reviewsToday:0,newToday:0,
   session:{day:"",done:{}},settings:{translit:"auto",harakat:"auto",newPerDay:1,retention:0.9,gender:"",autoplay:true,voice:"auto"},
   talks:0,freezes:0,freezeUsed:"",log:{},rp:{},seen:{},read:{},msaDay:"",resetAt:0,resetDay:"",updatedAt:0});
 const clone=x=>JSON.parse(JSON.stringify(x==null?{}:x));
@@ -2368,7 +2390,7 @@ function serialize(){ const o=Object.assign({},S,{cards:{}}); delete o.gen; for(
 // remote data is frozen by the platform, so everything is deep-copied before use
 function hydrate(raw){ const o=clone(raw); const b=blank(); const s=Object.assign(b,o);
   s.settings=Object.assign(blank().settings,o.settings||{}); s.session=Object.assign({day:"",done:{}},o.session||{}); s.session.done=Object.assign({},s.session.done);
-  for(const f of ["unitsDone","suspended","log","rp","seen","read"]) if(!s[f]||typeof s[f]!=="object"||Array.isArray(s[f])) s[f]={};
+  for(const f of ["unitsDone","suspended","log","rp","seen","read","deleted","stageOpen"]) if(!s[f]||typeof s[f]!=="object"||Array.isArray(s[f])) s[f]={}; s.deleted=tombs(s.deleted); s.stageOpen=opens(s.stageOpen);
   const st=s.settings, r=+st.retention; st.retention=r>=0.7&&r<=0.99?r:0.9; st.newPerDay=+st.newPerDay===2?2:1; st.autoplay=st.autoplay!==false;
   if(!["auto","always","tap","never"].includes(st.translit)) st.translit="auto"; if(!["auto","always","never"].includes(st.harakat)) st.harakat="auto"; if(!["","m","f"].includes(st.gender)) st.gender=""; if(!["auto","device","claude"].includes(st.voice)) st.voice="auto";
   for(const f of ["streak","freezes","reviewsToday","newToday","talks","resetAt","updatedAt"]) s[f]=isFinite(+s[f])?+s[f]:0;
@@ -2397,7 +2419,13 @@ if(unreadable){ const n=$("#sync-note"); n.hidden=false; n.textContent="Saved pr
 function setSync(state,msg,tail){ sync.state=state; sync.msg=msg; const n=$("#sync-note");
   if(state==="error"){ n.hidden=false; n.textContent=msg+(tail||" Your progress is still safe in this browser and will sync when it can."); } else if(!localFail) n.hidden=true; }
 const syncError=e=>{ const c=e&&e.code; return c==="quota_exceeded"?"Account storage is full.":c==="not_granted"||c==="forbidden"||c==="permission_denied"?"This page isn't allowed to save to your account.":`Couldn't save to your account${c?" ("+c+")":""}.`; };
-function save(){ S.updatedAt=Date.now(); persistLocal(); if(GH){ ghDirty=true; ghSync("save"); } if(synced){ clearTimeout(saveTimer); saveTimer=setTimeout(pushRemote,1500); } }
+// an upload started by a timer waits while the last review grade can still be undone (sentFrom: the newest save an upload attempt has started with; undoHold: the open undo, if any)
+let sentFrom=0, saveSeq=0, undoHold=null, heldSince=0; // saveSeq counts saves in this page, so a device with a fast clock can't make a grade look sent
+const holdCheck=()=>{ if(undoHold&&!undoHold.open()){ undoHold=null; heldSince=0; } };
+const holdLeft=now=>{ holdCheck(); return undoHold?holdWait(now,undoHold.at,heldSince||now):0; };
+const pushStarts=()=>{ sentFrom=saveSeq; heldSince=0; };
+function timerPush(){ const w=holdLeft(Date.now()); if(w>0) saveTimer=setTimeout(timerPush,w); else pushRemote(); }
+function save(){ S.updatedAt=Date.now(); saveSeq++; persistLocal(); holdCheck(); if(undoHold&&!heldSince) heldSince=Date.now(); if(GH){ ghDirty=true; ghSync("save"); } if(synced){ clearTimeout(saveTimer); saveTimer=setTimeout(timerPush,undoHold?Math.max(0,Math.min(1500,heldSince+30000-Date.now())):1500); } } // while an undo is open it never lands after the 30 s cap
 const progressRef=()=>DB.doc(`data/users/${UID}/progress`);
 const shardRef=n=>DB.doc(`data/users/${UID}/cards_${n}`);
 // what this browser last read or wrote for each card group, so unchanged groups aren't fetched or rewritten
@@ -2420,14 +2448,14 @@ async function pullRemote(){
 }
 // card groups first, then the main document that points at them, so a reader never follows a stamp to an unwritten group
 async function writeRemote(){
-  const {meta,shards}=splitProgress(serialize()); const stamps={};
+  pushStarts(); const {meta,shards}=splitProgress(serialize()); const stamps={};
   for(const n of SHARDS){ const body=JSON.stringify(shards[n]); const empty=body==="{}";
     if(empty&&!shardStamp[n]) continue;
     if(body!==shardSent[n]||!shardStamp[n]){ const st=Date.now().toString(36)+Math.random().toString(36).slice(2,6); await shardRef(n).set({cards:shards[n]}); shardStamp[n]=st; shardSent[n]=body; }
     stamps[n]=shardStamp[n]; }
   meta.shards=stamps; await progressRef().set(meta);
 }
-const sig=s=>{ let t=0; for(const c of Object.values(s.cards)) t+=c.t; return [Object.keys(s.cards).length,t,Object.keys(s.unitsDone).length,s.streak,s.lastDay,s.custom.length,Object.values(s.suspended).filter(v=>v>0).length].join("|"); };
+const sig=s=>{ let t=0; for(const c of Object.values(s.cards)) t+=c.t; return [Object.keys(s.cards).length,t,Object.keys(s.unitsDone).length,s.streak,s.lastDay,s.custom.length,Object.values(s.suspended).filter(v=>v>0).length,Object.keys(s.stageOpen||{}).join()].join("|"); };
 function applyMerged(merged){ const before=sig(S); const gen=S.gen; S=hydrate(merged); S.gen=gen; persistLocal(); return sig(S)!==before; }
 function pushRemote(opts){
   clearTimeout(saveTimer); if(!synced||!DB) return Promise.resolve();
@@ -2465,17 +2493,17 @@ async function setupSync(){
   }catch(e){}
 }
 // another tab or window of this app saved: merge its work in, so this tab's next save can't overwrite it.
-// merged in memory only (no write back), so two tabs never answer each other's saves in a loop
+// merged in memory only (no write back), so two tabs never answer each other's saves in a loop. the one exception is a merge that opens a higher stage: the redraw after it records that stage once (currentStage, written to this browser and marked for the next github sync), then the copies agree and nothing more is written
 addEventListener("storage",e=>{
   if(e.key===KEY+"-gh"){ ghCancel(); ghLoad(); if(!GH) ghForget(); else{ ghMem={sha:{},body:{}}; ghHalted=false; ghDirty=true; } if(!busy) RENDER[currentTab](); return; }
   if(e.key!==KEY||!e.newValue) return;
   try{ const before=sig(S), gen=S.gen; S=hydrate(mergeProgress(serialize(),cleanIn(JSON.parse(e.newValue)))); S.gen=gen; if(sig(S)!==before) afterRemoteChange(); }catch(x){} });
-document.addEventListener("visibilitychange",()=>{ if(synced) pushRemote(); ghSync(document.visibilityState==="hidden"?"hide":"show"); });
+document.addEventListener("visibilitychange",()=>{ const q=synced?pushRemote():null; const p=ghSync(document.visibilityState==="hidden"?"hide":"show"); if(document.visibilityState==="visible") dayTurn(q||p); });
 addEventListener("pagehide",()=>{ if(synced) pushRemote(); ghSync("hide"); });
 addEventListener("online",()=>{ ghSync("online"); });
 
 // a reset is a dated marker, so other devices drop their older progress when they next merge instead of bringing it back
-function startOver(){ const gen=S.gen; S=blank(); S.gen=gen; S.resetAt=Date.now(); S.resetDay=today(); save(); flush({replace:true}); rebuild(); refresh(); renderMe(); }
+function startOver(){ if(typeof resetTalk==="function") resetTalk(); if(typeof resetEar==="function") resetEar(); /* talk screen is defined later */ try{ localStorage.removeItem(KEY+"-resume"); }catch(e){} const gen=S.gen; S=blank(); S.gen=gen; S.resetAt=Date.now(); S.resetDay=today(); save(); flush({replace:true}); rebuild(); refresh(); renderMe(); }
 
 // ===== sync to github (offline app only). the same merge as the account sync, through the github contents api =====
 // GH is the saved connection; everything else here lives in memory, except the status line's state, kept so "waiting" survives a reload
@@ -2523,8 +2551,10 @@ function ghSync(trigger,opts){
   if(a==="no") return Promise.resolve();
   if(a==="offline"){ ghSt=ghAfter(ghSt,"offline",now); ghNote(); firstMergeDone(); return Promise.resolve("offline"); }
   if(trigger==="save"){ if(!ghTimer&&!ghRun) ghTimer=setTimeout(()=>{ ghTimer=0; ghSync("timer"); },Math.max(1500,ghWait(ghStart,now))); return Promise.resolve(); }
-  if(ghRun){ const q=ghAgain||{hand:false,replace:false}; ghAgain={hand:q.hand||trigger==="manual",replace:q.replace||!!(opts&&opts.replace)}; return ghRun; }
-  clearTimeout(ghTimer); ghTimer=0; ghStart=now; ghDirty=false;
+  if(trigger==="timer"){ const w=holdLeft(now); if(w>0){ clearTimeout(ghTimer); ghTimer=setTimeout(()=>{ ghTimer=0; ghSync("timer"); },w); return Promise.resolve(); } }
+  // a hide or online that waits for the running cycle is re-run as itself, not held as a timer
+  if(ghRun){ const q=ghAgain||{hand:false,replace:false,urgent:""}; ghAgain={hand:q.hand||trigger==="manual",replace:q.replace||!!(opts&&opts.replace),urgent:trigger==="hide"?"hide":(q.urgent||(trigger!=="timer"?trigger:""))}; return ghRun; } // a hide wins over an earlier show: the page may be going away, so the re-run is sent with keepalive
+  clearTimeout(ghTimer); ghTimer=0; ghStart=now; ghDirty=false; pushStarts();
   const cfg=GH, me={dead:false}; ghCur=me;
   const send=(u,o)=>me.dead?Promise.reject(new Error("cancelled")):ghFetch(u,o);
   ghRun=(async()=>{
@@ -2539,7 +2569,7 @@ function ghSync(trigger,opts){
         ghNote();
       }
     } finally { firstMergeDone(); }
-    if(again&&GH&&mine) return ghSync(again.hand||again.replace?"manual":"timer",{replace:again.replace});
+    if(again&&GH&&mine) return ghSync(again.hand||again.replace?"manual":again.urgent||"timer",{replace:again.replace});
     if(GH===cfg&&mine&&r.kind==="ok"&&ghDirty) ghSync("save");
     return r.kind;
   })();
@@ -2622,10 +2652,17 @@ function feedMsa(){
 const unitsOfStage=n=>UNITS.filter(u=>u.stage===n);
 function stageInfo(n){ const us=unitsOfStage(n); const ids=Object.values(ITEMS).filter(it=>it.stage===n).map(it=>it.id); return stageStatus(us.map(u=>u.id),ids,S); }
 const plannedOf=n=>Math.max(1,unitsOfStage(n).length);
-function currentStage(){
+function liveStage(){
   if(!S.unitsDone.sounds) return 0;
   for(let n=1;n<=5;n++) if(!stageInfo(n).complete) return n;
   return 6;
+}
+// a stage you have reached stays open: its lessons don't lock again if cards lapse (the percentage shown is still the real one)
+function currentStage(){
+  const live=liveStage(), o=opens(S.stageOpen); let top=0; for(const k of Object.keys(o)) top=Math.max(top,+k);
+  // recording is not activity: no save(), so updatedAt stays and an idle device's stale settings can't win a merge; it goes to this browser and rides with the next github sync. jumping straight to a higher stage records only that one, enough because the remembered stage is the highest key
+  if(live>=2&&live>top){ S.stageOpen=Object.assign(o,{[live]:Date.now()}); persistLocal(); if(GH) ghDirty=true; return live; }
+  return Math.max(live,top);
 }
 function nextUnit(){
   const stage=currentStage(); if(stage===0) return {kind:"sounds"};
@@ -2642,28 +2679,58 @@ function showTr(){ const m=S.settings.translit; if(m!=="auto") return m; const s
 
 // ===== speech out: device voices, or the Claude voice where the page is given one =====
 const synth=("speechSynthesis" in window)?window.speechSynthesis:null;
-let arVoices=[], arVoice=null, enVoice=null, TTS=null, audioGen=0;
+let arVoices=[], arVoice=null, enVoice=null, TTS=null, audioGen=0, curUtt=null, voiceOff=false, curNote=null, stallGen=-1, shownNote=null, ttsHooked=null, ttsPart=null, curRec=null;
+try{ voiceOff=localStorage.getItem(KEY+"-voice")==="hidden"; }catch(e){}
+const VOICE_NONE="This device has no speech voice, so Harf can't play audio here. The pronunciation lines show how each phrase sounds.";
+const VOICE_NOAR="No Arabic voice on this device, so audio may be silent. Android: Settings, Google Speech Services, install Arabic. iPhone: Settings, Accessibility, Spoken Content, Voices, Arabic. Windows: Settings, Time & language, Speech, add Arabic.";
+const VOICE_STALL="Audio didn't play on this device, so Harf carried on without it. Check the volume, or add an Arabic voice in the device's speech settings.";
+// one dismissible line about audio; Hide is remembered on this device only
+function voiceNote(text){ const note=$("#voice-note"); curNote=text||null; if(!note) return;
+  if(voiceOff||!text){ note.hidden=true; shownNote=null; return; }
+  if(text!==shownNote||note.hidden){ shownNote=text; announce(text); } // the notice is at the top: say it too, without scrolling
+  note.textContent=text; note.append(" ",el("button",{className:"btn link",type:"button","aria-label":"Hide this notice",textContent:"Hide",onclick:()=>{ voiceOff=true; try{ localStorage.setItem(KEY+"-voice","hidden"); }catch(e){} note.hidden=true; }}));
+  note.hidden=false; }
+// how long one line may take before it is given up on
+const speakLimit=(text,rate)=>4000+Math.round(String(text).length*150/Math.min(1.5,Math.max(0.5,rate||0.85)));
 function pickVoices(){
-  if(synth){ const vs=synth.getVoices()||[]; arVoices=vs.filter(v=>/^ar/i.test(v.lang));
+  const vs=synth?synth.getVoices()||[]:[];
+  if(synth){ arVoices=vs.filter(v=>/^ar/i.test(v.lang));
     arVoice=vs.find(v=>/^ar-(AE|KW|QA|BH|OM)/i.test(v.lang))||vs.find(v=>/^ar-SA/i.test(v.lang))||arVoices[0]||null;
-    enVoice=vs.find(v=>/^en-GB/i.test(v.lang))||vs.find(v=>/^en/i.test(v.lang))||null;
-    const note=$("#voice-note");
-    if(!arVoice&&!TTS&&vs.length){ note.hidden=false; note.textContent="No Arabic voice on this device, so audio may be silent. Android: Settings, Google Speech Services, install Arabic. iPhone: Settings, Accessibility, Spoken Content, Voices, Arabic. Windows: Settings, Time & language, Speech, add Arabic."; }
-    else note.hidden=true; }
+    enVoice=vs.find(v=>/^en-GB/i.test(v.lang))||vs.find(v=>/^en/i.test(v.lang))||null; }
+  const want=!synth&&!TTS?VOICE_NONE:(synth&&!arVoice&&!TTS&&vs.length)?VOICE_NOAR:null;
+  if(want||curNote===VOICE_NONE||curNote===VOICE_NOAR) voiceNote(want); // a "didn't play" notice is not this function's to clear
 }
-if(synth){ pickVoices(); if(synth.addEventListener) synth.addEventListener("voiceschanged",pickVoices); else synth.onvoiceschanged=pickVoices; }
+// Settings row, only while the notices are hidden on this device
+function voiceRow(after){ if(!voiceOff) return null;
+  return el("div",{className:"setting"},el("span",{textContent:"Audio notices are hidden"}),el("button",{className:"btn small",type:"button",textContent:"Show them again",onclick:()=>{ voiceOff=false; try{ localStorage.removeItem(KEY+"-voice"); }catch(e){} pickVoices(); voiceNote(curNote); if(after) after(); }})); }
+pickVoices(); if(synth){ if(synth.addEventListener) synth.addEventListener("voiceschanged",pickVoices); else synth.onvoiceschanged=pickVoices; }
 const useClaudeVoice=()=>{ if(!TTS) return false; const v=S.settings.voice; return v==="claude"||(v!=="device"&&!arVoice); };
-function stopAudio(){ audioGen++; if(synth) try{ synth.cancel(); }catch(e){} if(TTS) try{ TTS.stop().catch(()=>{}); }catch(e){} }
-// one utterance; resolves when it ends or fails, never rejects
+function stopAudio(){ audioGen++; pauseRec(); if(synth) try{ synth.cancel(); }catch(e){} if(TTS) try{ TTS.stop().catch(()=>{}); }catch(e){} }
+// one utterance; resolves when it ends or fails or is given up on, never rejects
+// the Claude voice reports its state: a line has started once it is "speaking" after its own "starting"; one handler, aimed at the line now waiting
+function hookTTS(){ if(!TTS||TTS===ttsHooked||typeof TTS.onState!=="function") return; ttsHooked=TTS;
+  try{ TTS.onState(e=>{ const p=ttsPart; if(!p||!e) return; if(e.state==="starting") p.seen=true; else if(e.state==="speaking"&&p.seen) p.begin(); }); }catch(x){} }
 function speakPart(text,o){
-  o=o||{}; const en=o.lang==="en";
+  o=o||{}; const en=o.lang==="en", g=audioGen;
   return new Promise(res=>{
     if(!text){ res(); return; }
-    if(TTS&&(en?!enVoice:useClaudeVoice())){ TTS.speak(String(text).slice(0,2000),{rate:Math.max(0.7,Math.min(1.5,o.rate||1))}).then(()=>res(),e=>{ if(e&&e.code==="not_granted"){ TTS=null; pickVoices(); } res(); }); return; }
-    if(!synth){ res(); return; }
-    const u=new SpeechSynthesisUtterance(text); let v=en?enVoice:arVoice;
-    if(!en&&o.vary&&arVoices.length>1) v=arVoices[Math.floor(Math.random()*arVoices.length)]; // many voices help the ear (high-variability training)
-    u.lang=v?v.lang:(en?"en-GB":"ar-SA"); if(v) u.voice=v; u.rate=o.rate||0.85; u.onend=()=>res(); u.onerror=()=>res(); synth.speak(u);
+    let done=false, started=false, tm=0, hard=0, claude=false, me=null;
+    // after one line of a queue stalls, the rest get a short limit and no second notice
+    const stall=()=>{ if(g===audioGen&&stallGen!==g){ stallGen=g; voiceNote(VOICE_STALL); } };
+    const fin=(quiet,late,force)=>{ if(done) return; if(late&&!force&&claude&&started&&ttsHooked===TTS) return; /* really playing: wait for it, a new speak() would cut it off */ done=true; clearTimeout(tm); clearTimeout(hard); if(ttsPart===me) ttsPart=null;
+      if(force&&claude){ if(g===audioGen) try{ TTS.stop().catch(()=>{}); }catch(e){} } // a line stuck in "speaking" is cut after the hard limit so the queue moves on
+      else if(late&&!started&&g===audioGen){ try{ if(claude) TTS.stop().catch(()=>{}); else synth.cancel(); }catch(e){} } // never leave a given-up line to play over the next one
+      if(!quiet&&!started) stall(); res(); };
+    tm=setTimeout(()=>fin(false,true),g===stallGen?1500:speakLimit(text,o.rate));
+    try{
+      if(TTS&&(en?!enVoice:useClaudeVoice())){ claude=true; hard=setTimeout(()=>fin(true,true,true),Math.max(60000,3*speakLimit(text,o.rate))); hookTTS(); me=ttsPart={seen:false,begin:()=>{ started=true; }};
+        TTS.speak(String(text).slice(0,2000),{rate:Math.max(0.7,Math.min(1.5,o.rate||1))}).then(()=>{ started=true; fin(true); },e=>{ if(e&&e.code==="not_granted"){ TTS=null; pickVoices(); } fin(true); }); return; }
+      if(!synth){ fin(true); return; }
+      const u=new SpeechSynthesisUtterance(text); let v=en?enVoice:arVoice;
+      if(!en&&o.vary&&arVoices.length>1) v=arVoices[Math.floor(Math.random()*arVoices.length)]; // many voices help the ear (high-variability training)
+      u.lang=v?v.lang:(en?"en-GB":"ar-SA"); if(v) u.voice=v; u.rate=o.rate||0.85; curUtt=u; // kept so it is not collected before it ends
+      u.onstart=()=>{ started=true; }; u.onend=()=>fin(true); u.onerror=e=>fin(!!e&&(e.error==="interrupted"||e.error==="canceled")); synth.speak(u);
+    }catch(e){ fin(false); }
   });
 }
 function say(text,rate,o){ stopAudio(); return speakPart(text,Object.assign({},o,{rate})); }
@@ -2718,7 +2785,8 @@ function speakWidget(target,onScore){
     ap(fb,el("p",{textContent:(best.pct>=75?"Good":best.pct>=50?"Close, try once more":"Try again")+` · ${best.pct}%`}),
       el("div",{className:"words",lang:"ar"},best.words.map(x=>el("span",{className:x.ok?"hit":"miss",textContent:x.w}))),
       best.heard?el("p",{className:"tag"},"Heard: ",arSpan(best.heard)):null,
-      best.words.some(x=>!x.ok)?el("p",{className:"tag",textContent:"Red: words it didn't catch. Listen again and say those clearly."}):null);
+      el("span",{className:"sr",textContent:best.words.some(x=>!x.ok)?"Not caught: "+best.words.filter(x=>!x.ok).map(x=>x.w).join(", "):"All words caught"}),
+      best.words.some(x=>!x.ok)?el("p",{className:"tag",textContent:"Underlined with dashes: words it didn't catch. Listen again and say those clearly."}):null);
     buzz(best.pct>=75?10:[30,40,30]); if(onScore) onScore(best.pct);
   };
   let active=false;
@@ -2749,17 +2817,29 @@ function speakWidget(target,onScore){
 // record yourself and compare with the model (only where the page may use the microphone)
 let recBlocked=false;
 const canRecord=()=>!!(navigator.mediaDevices&&navigator.mediaDevices.getUserMedia&&window.MediaRecorder)&&!recBlocked&&!micBlocked&&!policyBlocksMic();
+// the playing recording: stopAudio pauses it, and it is released (link freed) when replaced or when its screen is left
+function pauseRec(){ if(!curRec) return; clearTimeout(curRec.timer); curRec.audio.onended=curRec.audio.onerror=null; try{ curRec.audio.pause(); curRec.audio.currentTime=0; }catch(e){} if(!curRec.wrap.isConnected) releaseRec(); }
+function releaseRec(){ const c=curRec; if(!c) return; curRec=null; clearTimeout(c.timer); c.audio.onended=c.audio.onerror=null; try{ c.audio.pause(); }catch(e){} try{ URL.revokeObjectURL(c.url); }catch(e){} }
 function recordWidget(text){
   if(!canRecord()) return null;
-  const wrap=el("div",{className:"row center"}); const b=el("button",{className:"btn small",type:"button"},icon("rec"),el("span",{textContent:"Record yourself"})); wrap.append(b);
+  const wrap=el("div",{className:"row center"}); const b=el("button",{className:"btn small",type:"button"},icon("rec"),el("span",{textContent:"Record yourself"}));
+  const note=el("p",{className:"tag",role:"status"}); wrap.append(b,note);
   b.onclick=async()=>{
     let stream; try{ stream=await navigator.mediaDevices.getUserMedia({audio:true}); }catch(e){ recBlocked=true; wrap.replaceWith(el("p",{className:"tag",textContent:"The microphone isn't available here."})); return; }
-    const rec=new MediaRecorder(stream); const chunks=[]; rec.ondataavailable=e=>chunks.push(e.data);
-    rec.onstop=()=>{ stream.getTracks().forEach(t=>t.stop()); const url=URL.createObjectURL(new Blob(chunks,{type:rec.mimeType||"audio/webm"}));
-      const audio=new Audio(url); b.lastChild.textContent="Record again"; b.disabled=false;
-      const cmp=el("button",{className:"btn small cmp",type:"button",textContent:"Compare: model, then you",onclick:()=>{ sayQueue([{text}],{onDone:()=>{ audio.currentTime=0; audio.play().catch(()=>{}); }}); }});
+    const was=b.lastChild.textContent, chunks=[]; let rec=null, tm=0, failed=false; note.textContent="";
+    const fail=()=>{ if(failed) return; failed=true; clearTimeout(tm); try{ stream.getTracks().forEach(t=>t.stop()); }catch(e){} b.disabled=false; b.lastChild.textContent=was; note.textContent="Couldn't record. Try again."; };
+    try{ rec=new MediaRecorder(stream); }catch(e){ fail(); return; }
+    rec.ondataavailable=e=>chunks.push(e.data); rec.onerror=()=>{ fail(); try{ if(rec.state==="recording") rec.stop(); }catch(e){} };
+    rec.onstop=()=>{ if(failed) return; stream.getTracks().forEach(t=>t.stop()); releaseRec(); const url=URL.createObjectURL(new Blob(chunks,{type:rec.mimeType||"audio/webm"}));
+      const audio=new Audio(url), cur=curRec={audio,url,wrap,timer:0}; b.lastChild.textContent="Record again"; b.disabled=false;
+      // the recording starts inside the tap (iPhone refuses it later); the model follows when it ends, fails or runs out of time, unless audio was stopped meanwhile
+      const cmp=el("button",{className:"btn small cmp",type:"button",textContent:"Compare: you, then the model",onclick:()=>{ stopAudio(); const g=audioGen; let went=false;
+        const model=()=>{ if(went||g!==audioGen||curRec!==cur||!wrap.isConnected) return; went=true; clearTimeout(cur.timer); sayQueue([{text}]); };
+        audio.currentTime=0; audio.onended=model; audio.onerror=model; cur.timer=setTimeout(model,((audio.duration>0&&audio.duration<10)?audio.duration:4)*1000+1500); audio.play().catch(model); }});
       wrap.querySelectorAll(".cmp").forEach(x=>x.remove()); wrap.append(cmp); };
-    stopAudio(); b.disabled=true; b.lastChild.textContent="Recording 4 s…"; rec.start(); setTimeout(()=>{ if(rec.state==="recording") rec.stop(); },4000);
+    stopAudio(); b.disabled=true; b.lastChild.textContent="Recording 4 s…";
+    try{ rec.start(); }catch(e){ fail(); return; }
+    tm=setTimeout(()=>{ if(rec.state==="recording") rec.stop(); },4000);
   };
   return wrap;
 }
@@ -2788,7 +2868,7 @@ addEventListener("appinstalled",()=>{ installEvt=null; if(currentTab==="me"&&!bu
 let currentTab="today", viewId=0, busy=false, keyHandler=null, wake=null, courseTab="lessons";
 function releaseWake(){ try{ if(wake) wake.release(); }catch(e){} wake=null; }
 async function keepAwake(){ try{ if(navigator.wakeLock) wake=await navigator.wakeLock.request("screen"); }catch(e){} }
-function leaveActivity(){ viewId++; closeFocus=null; stopAudio(); busy=false; keyHandler=null; releaseWake(); document.body.classList.remove("focus"); if(DICT&&dictSink) DICT.stop().catch(()=>{}); }
+function leaveActivity(){ viewId++; closeFocus=null; stopAudio(); releaseRec(); busy=false; keyHandler=null; releaseWake(); document.body.classList.remove("focus"); if(DICT&&dictSink) DICT.stop().catch(()=>{}); }
 const RENDER={today:()=>renderToday(),review:()=>renderReviewTab(),course:()=>renderCourse(),talk:()=>renderTalk(),me:()=>renderMe()};
 // a lesson or review sits on two steps of browser history, so the phone's back gesture closes it instead of quitting
 // the installed app: back once asks "leave?" mid-lesson, back again leaves. two up front because chrome skips history
@@ -2896,6 +2976,17 @@ function renderToday(){
 }
 
 // ===== lesson: listen → phrases → quick check =====
+// the lesson's place is kept on this device for the day: cards are only written when a lesson ends, so nothing else needs it
+const RESUME=KEY+"-resume";
+function dropResume(){ try{ localStorage.removeItem(RESUME); }catch(e){} }
+function keepResume(p,u){ try{ localStorage.setItem(RESUME,JSON.stringify(Object.assign({u:u.id,day:today()},p))); }catch(e){} }
+function readResume(u){ let p; try{ const v=localStorage.getItem(RESUME); if(v===null) return null; p=JSON.parse(v); }catch(e){ dropResume(); return null; }
+  if(!p||typeof p!=="object"){ dropResume(); return null; } if(p.u!==u.id) return null;
+  const n=u.items.length, int=(x,lo,hi)=>Number.isInteger(x)&&x>=lo&&x<hi, perm=(a,len)=>Array.isArray(a)&&a.length<=len&&a.every(x=>int(x,0,n))&&new Set(a).size===a.length;
+  let ok=p.day===today()&&(p.step===2||p.step===3)&&int(p.k,0,n);
+  if(ok&&p.step===3) ok=perm(p.order,n)&&p.order.length===n&&int(p.q,0,n)&&int(p.right,0,p.q+1)&&perm(p.missed,n);
+  if(!ok){ dropResume(); return null; }
+  return p.step===3?{step:3,k:p.k,order:p.order.slice(),q:p.q,right:p.right,missed:p.missed.slice()}:{step:2,k:p.k,order:[],q:0,right:0,missed:[]}; }
 function openLesson(u,onDone){
   let started=false;
   const f=focusView({title:u.title,confirm:()=>started,onClose:()=>show(currentTab)}); const body=f.body;
@@ -2921,13 +3012,13 @@ function openLesson(u,onDone){
       el("p",{className:"lede",textContent:"Listen first and work out what's happening. Tap any line to hear it again. Then reveal the English and check."}),
       el("div",{className:"row"},playAll,tog("Slow",()=>slow,v=>slow=v),tog("Shadow",()=>shadow,v=>shadow=v),reveal),dl,el("p",{className:"notice",textContent:"Tip: "+u.tip}),
       u.culture?el("p",{className:"notice",textContent:"Culture: "+u.culture}):null,
-      el("div",{className:"actions page"},el("button",{className:"btn primary wide",type:"button",textContent:"Learn the phrases →",onclick:step2})));
+      el("div",{className:"actions page"},el("button",{className:"btn primary wide",type:"button",textContent:"Learn the phrases →",onclick:()=>step2(0)})));
   };
   // 2. the new phrases, one at a time: hear, say, move on
-  const step2=()=>{
-    started=true; let k=0;
+  const step2=k0=>{
+    started=true; let k=k0;
     const showItem=()=>{
-      f.progress(1+k,steps); body.textContent=""; const it=u.items[k]; const hv=harOn();
+      keepResume({step:2,k},u); f.progress(1+k,steps); body.textContent=""; const it=u.items[k]; const hv=harOn();
       const more=el("details",{className:"more"},el("summary",{textContent:"More practice"}),el("div",{className:"row"},shadowBtn(it.ar),recordWidget(it.ar)));
       const card=el("div",{className:"stage"},el("p",{className:"mode",textContent:`New phrase ${k+1} of ${u.items.length}`+(it.receptive?" · to understand":"")}),bigAr(it.ar,undefined,shownAr(it,hv)),
         el("div",{className:"row center"},slowBtn(it.ar),nativeLink(it)),
@@ -2941,18 +3032,18 @@ function openLesson(u,onDone){
     showItem();
   };
   // 3. immediate retrieval: english → which arabic? then the phrases join the review rotation
-  const step3=()=>{
-    const order=[...u.items.keys()].sort(()=>Math.random()-0.5); let q=0, right=0; const missed=new Set();
+  const step3=pt=>{
+    started=true; const order=pt?pt.order:[...u.items.keys()].sort(()=>Math.random()-0.5); let q=pt?pt.q:0, right=pt?pt.right:0; const missed=new Set(pt?pt.missed:[]);
     const ask=()=>{
       if(!f.alive()) return; body.textContent=""; if(q>=order.length) return finish();
-      f.progress(1+u.items.length+q,steps); const hv=harOn();
+      keepResume({step:3,k:0,order,q,right,missed:[...missed]},u); f.progress(1+u.items.length+q,steps); const hv=harOn();
       const it=u.items[order[q]]; const opts=pickOptions(it.ar,u.items.map(x=>x.ar),4);
       const box=el("div",{className:"options"+(hv?" har":"")}); const fb=el("p",{className:"feedback",role:"status"}); const acts=el("div",{className:"actions"});
       const go=()=>{ if(f.alive()&&body.contains(box)){ q++; ask(); } };
       opts.forEach(o=>box.append(el("button",{className:"btn",type:"button",lang:"ar",onclick:e=>{
         if(box.dataset.done) return; box.dataset.done="1"; const ok=o===it.ar; if(ok) right++; else missed.add(order[q]);
         [...box.children].forEach(b=>{ if(b.dataset.ar===it.ar) b.classList.add("right"); else if(b===e.currentTarget) b.classList.add("wrong"); });
-        fb.className="feedback "+(ok?"ok":"no"); fb.textContent=ok?"Yes":"It's "+it.tr; say(it.ar); buzz(ok?10:[30,40,30]);
+        fb.className="feedback "+(ok?"ok":"no"); fb.textContent=ok?"Yes":"It's "+it.tr; auto(it.ar); buzz(ok?10:[30,40,30]);
         acts.append(el("button",{className:"btn primary wide",type:"button",textContent:"Next",onclick:go}));
         if(ok) setTimeout(go,1100);
       },"data-ar":o},arSpan(shownAr(u.items.find(x=>x.ar===o)||{ar:o},hv)))));
@@ -2960,7 +3051,7 @@ function openLesson(u,onDone){
       body.append(stepper(2),card); focusCard(card);
     };
     const finish=()=>{
-      started=false; touchDay(); const now=Date.now(); const first=!S.unitsDone[u.id];
+      started=false; dropResume(); touchDay(); const now=Date.now(); const first=!S.unitsDone[u.id];
       u.items.forEach((it,i)=>{ const id=u.id+"."+i; if(!S.cards[id]) S.cards[id]=sched({},missed.has(i)?0:2,now); });
       if(first){ S.unitsDone[u.id]=today(); S.newToday++; }
       addSentenceCards(u.id,99); logActivity(u.items.length); save(); flush(); refresh(); f.progress(steps,steps);
@@ -2972,7 +3063,13 @@ function openLesson(u,onDone){
     };
     ask();
   };
-  step1();
+  const pt=readResume(u);
+  if(!pt) return step1();
+  f.progress(0,steps);
+  const choice=el("div",{className:"stage"},el("p",{className:"en",textContent:"You stopped part-way through this lesson."}),el("p",{className:"tag",textContent:pt.step===2?`You stopped at phrase ${pt.k+1} of ${u.items.length}.`:`You stopped at check ${pt.q+1} of ${u.items.length}.`}),
+    el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Continue where you left off",onclick:()=>pt.step===2?step2(pt.k):step3(pt)}),
+      el("button",{className:"btn wide",type:"button",textContent:"Start again",onclick:()=>{ dropResume(); step1(); }})));
+  body.append(choice); focusCard(choice);
 }
 
 // ===== role-play: you are B =====
@@ -2989,7 +3086,7 @@ function roleplay(u,onDone){
       body.append(card); focusCard(card); auto(l.ar); return; }
     const ans=el("div",{className:"stack",hidden:true,style:"justify-items:center;width:100%"},bigAr(l.ar,"mid",shownAr(l,hv)),el("p",{className:"tr",textContent:l.tr}),el("div",{className:"row center"},slowBtn(l.ar),shadowBtn(l.ar)),recordWidget(l.ar));
     const acts=el("div",{className:"actions"});
-    const showAns=el("button",{className:"btn wide",type:"button",textContent:"Show the answer",onclick:()=>{ ans.hidden=false; showAns.remove(); say(l.ar); }});
+    const showAns=el("button",{className:"btn wide",type:"button",textContent:"Show the answer",onclick:()=>{ ans.hidden=false; showAns.remove(); auto(l.ar); }});
     acts.append(showAns,el("button",{className:"btn primary wide",type:"button",textContent:"Next →",onclick:()=>{ k++; step(); }}));
     const card=el("div",{className:"stage"},el("p",{className:"mode",textContent:"You say (in Gulf Arabic)"}),el("p",{className:"en",textContent:l.en}),speakWidget(l.ar),ans,acts);
     body.append(card); focusCard(card);
@@ -3021,28 +3118,44 @@ function renderReviewTab(){
 function startReview(onDone){
   const exit=onDone||(()=>show(currentTab));
   const f=focusView({title:"Review",onClose:exit});
-  const first=plan(); let queue=interleave(first.reviews,id=>ITEM_UNIT[id]||"x"), total=queue.length, n=0, shown=null, waitTimer=0;
+  const first=plan(); let queue=interleave(first.reviews,id=>ITEM_UNIT[id]||"x"), total=queue.length, n=0, waitTimer=0;
+  const back=new Map(); let undo=null, cur=null; // back: card id -> n when forgotten (queue order only); undo: the last grade; cur: the card on screen
   // cards over today's cap wait for the next session; the top-up only brings in cards that come due while this one runs
   const held=new Set(planDay(liveCards(),S.suspended,Date.now(),{maxReviews:1e9}).reviews.filter(id=>!first.reviews.includes(id)));
-  const topUp=()=>{ const due=planDay(liveCards(),S.suspended,Date.now(),{maxReviews:500,exclude:held}).reviews.filter(id=>!queue.includes(id)&&id!==shown); if(due.length){ queue.push(...due); total+=due.length; } };
-  const finish=()=>{ keyHandler=null; flush(); f.progress(total,total); f.body.textContent="";
+  const topUp=()=>{ const due=planDay(liveCards(),S.suspended,Date.now(),{maxReviews:500,exclude:held}).reviews.filter(id=>!queue.includes(id)&&id!==cur); if(due.length){ total+=due.length; for(const id of due){ if(back.has(id)){ queue.splice(Math.min(queue.length,Math.max(0,3-(n-back.get(id)))),0,id); back.delete(id); } else queue.push(id); } } }; // a forgotten card returns once due, after three other cards at least
+  const finish=()=>{ clearTimeout(waitTimer); waitTimer=0; keyHandler=null; undo=null; cur=null; flush(); f.progress(total,total); f.body.textContent="";
     if(onDone&&n) S.session.done.review=1;
     f.body.append(el("div",{className:"stage"},el("p",{className:"en",textContent:n?"Review done":"Nothing due"}),el("p",{className:"tag",textContent:n?`${n} card${n>1?"s":""} reviewed. They'll come back as you start to forget them.`:"Learn a lesson and its phrases will show up here."}),
       el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Continue",onclick:exit})))); announce("Review done"); };
+  const undoBox=()=>{ if(!undo||sentFrom>=undo.stamp) return null; const box=el("div",{className:"row center"}); box.append(el("button",{className:"btn small ghost",type:"button",textContent:"Undo last grade",onclick:()=>undoLast(box)})); return box; };
+  // puts the last graded card and the day's counters back exactly; refuses when a sync replaced the card since
+  const undoLast=box=>{ const u=undo; if(!u) return; undo=null; const c=S.cards[u.id];
+    const refuse=t=>{ const p=el("p",{className:"feedback no",role:"status",textContent:t}); box.textContent=""; box.append(p); p.setAttribute("tabindex","-1"); try{ p.focus(); }catch(e){} };
+    if(sentFrom>=u.stamp) return refuse("That grade has already synced, so it can't be undone."); // an upload has started with this grade in it
+    if(!c||JSON.stringify(packCard(c))!==u.after) return refuse("That card changed on another device, so it can't be undone.");
+    S.cards[u.id]=u.card; Object.assign(S,u.day); if(u.logBefore) S.log=u.logBefore; else if(u.logVal===undefined) delete S.log[u.logKey]; else S.log[u.logKey]=u.logVal;
+    S.session.day=u.sessionDay; if(u.review===undefined) delete S.session.done.review; else S.session.done.review=u.review; save();
+    queue=queue.filter(x=>x!==u.id); back.delete(u.id); if(cur&&cur!==u.id) queue.unshift(cur); queue.unshift(u.id); n=u.n; next(); announce("Grade undone"); };
+  // a second tap within 4 s deletes a word you added; the card goes from the queue, and so does an undo that would bring it back
+  const delBtn=wid=>{ let armed=0; const b=el("button",{className:"btn small ghost",type:"button",textContent:"Delete this word"});
+    b.onclick=()=>{ if(!armed){ b.textContent="Tap again to delete"; announce("Tap again to delete"); armed=setTimeout(()=>{ armed=0; b.textContent="Delete this word"; },4000); return; }
+        clearTimeout(armed); armed=0; deleteCustom(wid); n--; total--; queue=queue.filter(x=>x!==wid); back.delete(wid); if(undo&&undo.id===wid) undo=null; next(); }; return b; };
   const next=()=>{
     clearTimeout(waitTimer); if(!f.alive()) return; f.body.textContent=""; keyHandler=null; topUp();
+    const live=id=>ITEMS[id]&&S.cards[id]; // a word deleted on another device is merged in under an open review
+    queue=queue.filter(live); for(const id of [...back.keys()]) if(!live(id)) back.delete(id); if(undo&&!live(undo.id)) undo=null;
     if(!queue.length){
-      const now=Date.now(); const soon=Object.entries(liveCards()).filter(([id,c])=>!isHidden(S.suspended,id)&&!held.has(id)&&dueAt(c)>now&&dueAt(c)-now<10*60000).sort((a,b)=>dueAt(a[1])-dueAt(b[1])); // when it really comes back, and never one held for the next days
-      if(soon.length&&n){ const ms=dueAt(soon[0][1])-now; flush();
-        f.body.append(el("div",{className:"stage"},el("p",{className:"en",textContent:`${soon.length} card${soon.length>1?"s":""} come${soon.length>1?"":"s"} back ${whenLabel(ms)}`}),
+      const now=Date.now(); const soon=Object.entries(liveCards()).filter(([id,c])=>!isHidden(S.suspended,id)&&!held.has(id)&&dueAt(c)>now&&dueAt(c)-now<=10*60000).sort((a,b)=>dueAt(a[1])-dueAt(b[1])); // when it really comes back, and never one held for the next days
+      if(soon.length&&n){ const ms=dueAt(soon[0][1])-now; if(holdLeft(Date.now())>0) persistLocal(); else flush(); cur=null; // not while the last grade can still be undone
+        f.body.append(el("div",{className:"stage"},undoBox(),el("p",{className:"en",textContent:`${soon.length} card${soon.length>1?"s":""} come${soon.length>1?"":"s"} back ${whenLabel(ms)}`}),
           el("p",{className:"tag",textContent:"New and forgotten cards return after a short gap on purpose: recalling after a pause is what makes them stick. Wait here, or finish and they'll be on Today."}),
           el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Finish for now",onclick:finish}))));
         waitTimer=setTimeout(()=>{ if(f.alive()) next(); },Math.min(ms+500,30000)); return; }
       return finish();
     }
-    const id=queue.shift(); shown=id; const it=ITEMS[id]; const hv=harOn(); n++; f.progress(n-1,total);
+    const id=queue.shift(); cur=id; const it=ITEMS[id]; const hv=harOn(); const nShown=n; n++; f.progress(n-1,total);
     const card=S.cards[id]; const mode=cardMode(card,it.msaTrack||it.receptive,it.sentence);
-    const stage=el("div",{className:"stage"}); f.body.append(stage);
+    const stage=el("div",{className:"stage"},undoBox()); f.body.append(stage);
     const ans=el("div",{className:"stack",hidden:true,style:"justify-items:center;width:100%"});
     const acts=el("div",{className:"actions"});
     const labels={recognize:"What does it mean?",listen:"Listen: what does it mean?",produce:"Say it in Gulf Arabic",build:"Build the sentence"};
@@ -3050,7 +3163,7 @@ function startReview(onDone){
     let suggest=-1;
     const trTap=mode==="recognize"?trLine(it.tr,"tap"):null;
     if(mode==="recognize") ap(stage,bigAr(it.ar,undefined,shownAr(it,hv)),trTap);
-    else if(mode==="listen"){ ap(stage,el("div",{className:"row center"},playBtn(it.ar,"Play",{vary:true}),slowBtn(it.ar))); setTimeout(()=>{ if(f.alive()&&stage.isConnected) say(it.ar,null,{vary:true}); },150); }
+    else if(mode==="listen"){ ap(stage,el("div",{className:"row center"},playBtn(it.ar,"Play",{vary:true}),slowBtn(it.ar))); setTimeout(()=>{ if(f.alive()&&stage.isConnected) auto(it.ar,{vary:true}); },150); }
     else if(mode==="build"){
       // tap the words in order; building it yourself beats reading it (desirable difficulty)
       const target=tilesOf(it.ar); const shownT=tilesOf(shownAr(it,hv)); const pool=target.map((w,i)=>({w,s:shownT.length===target.length?shownT[i]:w,i})).sort(()=>Math.random()-0.5);
@@ -3075,8 +3188,13 @@ function startReview(onDone){
     if(it.note&&mode!=="produce") ans.append(el("p",{className:"tag",textContent:it.note}));
     ap(ans,shiftChip(it),el("div",{className:"row center"},mode==="produce"||mode==="build"?[playBtn(it.ar),slowBtn(it.ar)]:null,!it.sentence&&!it.msaTrack?nativeLink(it):null),
       isLeech(card)?el("p",{},el("span",{className:"chip",textContent:"Tricky card: get a memory aid in Progress"})):null,
-      el("details",{className:"more"},el("summary",{textContent:"Problem with this card?"}),el("div",{className:"row"},el("button",{className:"btn small ghost",type:"button",textContent:"Hide it from reviews",onclick:()=>{ S.suspended[id]=Date.now(); save(); next(); }}))));
-    const grade=g=>{ touchDay(); S.cards[id]=sched(S.cards[id],g,Date.now()); S.reviewsToday++; logActivity(1); save(); if(onDone) S.session.done.review=1; next(); };
+      el("details",{className:"more"},el("summary",{textContent:"Problem with this card?"}),el("div",{className:"row"},el("button",{className:"btn small ghost",type:"button",textContent:"Hide it from reviews",onclick:()=>{ S.suspended[id]=Date.now(); save(); next(); }}),it.unit==="custom"?delBtn(id):null)));
+    const grade=g=>{ if(!live(id)){ n--; return next(); } const logKey=today(), logVal=S.log[logKey], logBefore=Object.keys(S.log).length>=400?Object.assign({},S.log):null; // the log drops its oldest day past 400
+      const snap={id,n:nShown,card:Object.assign({},S.cards[id]),day:{reviewsToday:S.reviewsToday,newToday:S.newToday,streak:S.streak,freezes:S.freezes,freezeUsed:S.freezeUsed,lastDay:S.lastDay},logKey,logVal,logBefore,sessionDay:S.session.day,review:S.session.done.review};
+      touchDay(); S.cards[id]=sched(S.cards[id],g,Date.now()); S.reviewsToday++; logActivity(1);
+      snap.after=JSON.stringify(packCard(S.cards[id])); undo=snap; if(g===0) back.set(id,n);
+      snap.stamp=saveSeq+1; undoHold={at:Date.now(),open:()=>undo===snap&&sentFrom<snap.stamp&&f.alive()&&!!S.cards[id]&&JSON.stringify(packCard(S.cards[id]))===snap.after}; // uploads wait a few seconds so this can still be taken back
+      save(); if(onDone) S.session.done.review=1; next(); };
     const gr=el("div",{className:"grades",role:"group","aria-label":"How well did you know it?"});
     const reveal=()=>{ if(!ans.hidden) return; ans.hidden=false; acts.textContent=""; if(trTap&&trTap.tagName==="BUTTON") trTap.remove(); const now=Date.now();
       [["Forgot",0],["Hard",1],["Got it",2],["Easy",3]].forEach(([lab,g])=>{ const nx=sched(card,g,now);
@@ -3090,6 +3208,9 @@ function startReview(onDone){
   };
   next();
 }
+// delete a word you added: its card and the word go, and a marker keeps the other devices from bringing it back
+function deleteCustom(id){ if(!/^c[0-9a-z]+$/.test(id)||!S.custom.some(c=>c.id===id)) return;
+  S.custom=S.custom.filter(c=>c.id!==id); delete S.cards[id]; delete S.suspended[id]; delete ITEMS[id]; delete ITEM_UNIT[id]; S.deleted[id]=Date.now(); save(); }
 
 // ===== hands-free audio drill (pimsleur-style anticipation: prompt, pause to answer out loud, then the answer) =====
 function audioDrill(){
@@ -3149,7 +3270,8 @@ function renderLessons(sec){
   sec.append(el("div",{className:"stagehead",style:"margin-top:18px"},el("h3",{textContent:"Understanding fuṣḥā"}),el("span",{className:"tag",textContent:`${msaLearned}/${MSA.length} words`})),
     el("p",{className:"tag",textContent:"Standard Arabic for reading and understanding: news, signs, formal speech. Recognition only, three new words a day once you've done five lessons."}));
 }
-let curLetter=0, soundTab="letters";
+let curLetter=0, soundTab="letters", earLast=[], earGiven=0, earDone=false; // ear test: earLast = last 8 answers (true = right); earGiven = answers since reset; earDone = stage 0 was passed when the ear screen last drew
+function resetEar(){ earLast=[]; earGiven=0; earDone=false; }
 const S0=[["letters","Letters"],["vowels","Vowel marks"],["gulf","Gulf sounds"],["ear","Ear training"]];
 function renderSounds(sec){
   if(!S.seen[soundTab]){ S.seen[soundTab]=1; save(); }
@@ -3181,23 +3303,25 @@ function renderSounds(sec){
   }
   if(soundTab==="ear"){
     body.append(el("p",{className:"lede",textContent:"These pairs differ by one sound English doesn't separate. Hearing the difference comes before saying it. Voices change between rounds where your device has several, which trains the ear faster."}));
-    let right=0,total=0,round=0; const stage=el("div",{className:"stage"}); const hint=el("p",{className:"tag"}); body.append(stage,hint);
-    const status=()=>`Round ${round} · ${right} of ${total} right`;
+    let round=0; const stage=el("div",{className:"stage"}); const hint=el("p",{className:"tag"}); body.append(stage,hint);
+    const hits=()=>earLast.filter(Boolean).length;
+    const status=()=>earLast.length?`Round ${round} · ${hits()} of the last ${earLast.length} right`:`Round ${round}`;
     const doRound=()=>{
       if(!stage.isConnected) return;
-      if(total>=8&&right/total>=0.75&&!S.unitsDone.sounds){ S.unitsDone.sounds=today(); touchDay(); logActivity(1); save(); flush(); refresh(); stage.textContent="";
-        ap(stage,el("p",{className:"mode",textContent:"Stage 0 complete"}),el("p",{className:"en",textContent:`${right} of ${total} right. Your ear is ready.`}),el("p",{className:"tag",textContent:"Stage 1 starts with greetings. Come back here whenever a sound feels shaky."}),
+      if(!S.unitsDone.sounds&&earDone) resetEar(); earDone=!!S.unitsDone.sounds; // a reset (here or merged in) clears the answers
+      if(earLast.length>=8&&earLast.filter(Boolean).length>=6&&!S.unitsDone.sounds){ S.unitsDone.sounds=today(); earDone=true; touchDay(); logActivity(1); save(); flush(); refresh(); stage.textContent="";
+        ap(stage,el("p",{className:"mode",textContent:"Stage 0 complete"}),el("p",{className:"en",textContent:`${hits()} of your last 8 right. Your ear is ready.`}),el("p",{className:"tag",textContent:"Stage 1 starts with greetings. Come back here whenever a sound feels shaky."}),
           el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Go to Today",onclick:()=>show("today")})));
         announce("Stage 0 complete"); return; }
-      round++; stage.textContent=""; const pair=PAIRS[Math.floor(Math.random()*PAIRS.length)]; const pick=pair[Math.floor(Math.random()*2)];
+      round=earGiven+1; stage.textContent=""; const pair=PAIRS[Math.floor(Math.random()*PAIRS.length)]; const pick=pair[Math.floor(Math.random()*2)];
       const fb=el("p",{className:"feedback",role:"status"}); const opts=el("div",{className:"options"}); const acts=el("div",{className:"actions"});
-      [...pair].sort(()=>Math.random()-0.5).forEach(w=>opts.append(el("button",{className:"btn",type:"button","data-w":w[0],onclick:e=>{ if(opts.dataset.done) return; opts.dataset.done="1"; total++; const ok=w===pick; if(ok) right++;
+      [...pair].sort(()=>Math.random()-0.5).forEach(w=>opts.append(el("button",{className:"btn",type:"button","data-w":w[0],onclick:e=>{ if(opts.dataset.done) return; opts.dataset.done="1"; const ok=w===pick; earLast.push(ok); if(earLast.length>8) earLast.shift(); earGiven++;
         [...opts.children].forEach(b=>{ if(b.dataset.w===pick[0]) b.classList.add("right"); else if(b===e.currentTarget) b.classList.add("wrong"); });
-        fb.className="feedback "+(ok?"ok":"no"); fb.textContent=(ok?"Right. ":"That was "+pick[1]+". ")+`${right}/${total}`; buzz(ok?10:[30,40,30]);
+        fb.className="feedback "+(ok?"ok":"no"); fb.textContent=(ok?"Right. ":"That was "+pick[1]+". ")+`${hits()}/${earLast.length}`; buzz(ok?10:[30,40,30]);
         acts.append(el("button",{className:"btn primary wide",type:"button",textContent:"Next",onclick:doRound})); if(ok) setTimeout(()=>{ if(acts.isConnected) doRound(); },900);
         hint.textContent=S.unitsDone.sounds?"Stage 0 is done. Practise as much as you like.":status(); }},arSpan(w[0]),el("span",{className:"tag",textContent:w[1]+" · "+w[2]}))));
-      ap(stage,el("p",{className:"mode",textContent:"Which word did you hear?"}),el("div",{className:"row center"},playBtn(pick[0],"Play again",{vary:true}),slowBtn(pick[0])),opts,fb,acts); say(pick[0],null,{vary:true});
-      hint.textContent=S.unitsDone.sounds?"Stage 0 is done. Practise as much as you like.":`${status()} · 75% over at least 8 tries finishes stage 0`;
+      ap(stage,el("p",{className:"mode",textContent:"Which word did you hear?"}),el("div",{className:"row center"},playBtn(pick[0],"Play again",{vary:true}),slowBtn(pick[0])),opts,fb,acts); auto(pick[0],{vary:true});
+      hint.textContent=S.unitsDone.sounds?"Stage 0 is done. Practise as much as you like.":`${status()} · 6 of your last 8 right finishes stage 0`;
     };
     doRound();
   }
@@ -3261,11 +3385,11 @@ function numbersDrill(){
     const listen=Math.random()<0.5; const box=el("div",{className:"options"}); const fb=el("p",{className:"feedback",role:"status"}); const acts=el("div",{className:"actions"});
     pool.forEach(o=>box.append(el("button",{className:"btn",type:"button","data-k":o[3],onclick:e=>{ if(box.dataset.done) return; box.dataset.done="1"; const ok=o===n; if(ok) right++;
       [...box.children].forEach(b=>{ if(b.dataset.k===n[3]) b.classList.add("right"); else if(b===e.currentTarget) b.classList.add("wrong"); });
-      fb.className="feedback "+(ok?"ok":"no"); fb.textContent=(ok?"Yes: ":"It's ")+n[2]+" ("+n[3]+")"; say(n[1]); buzz(ok?10:[30,40,30]);
+      fb.className="feedback "+(ok?"ok":"no"); fb.textContent=(ok?"Yes: ":"It's ")+n[2]+" ("+n[3]+")"; auto(n[1]); buzz(ok?10:[30,40,30]);
       acts.append(el("button",{className:"btn primary wide",type:"button",textContent:"Next",onclick:()=>{ q++; ask(); }})); }},listen?el("span",{className:"en",textContent:o[3]}):arSpan(o[1]),listen?null:el("span",{className:"tag",textContent:o[2]}))));
     const card=el("div",{className:"stage"},el("p",{className:"mode",textContent:listen?"Which number did you hear?":"Which is it?"}),
       listen?el("div",{className:"row center"},playBtn(n[1],"Play again")):el("div",{className:"big",lang:"ar",textContent:n[0]}),box,fb,acts);
-    f.body.append(card); focusCard(card); if(listen) say(n[1]); };
+    f.body.append(card); focusCard(card); if(listen) auto(n[1]); };
   ask();
 }
 
@@ -3284,7 +3408,11 @@ Transliteration (one scheme, always): long vowels ā ī ū; Gulf ē ō for ay/aw
 const learnerGender=()=>S.settings.gender==="f"?"The learner is a woman: address her with feminine forms (-ich, t-…-īn) throughout.":S.settings.gender==="m"?"The learner is a man: address him with masculine forms (-ak).":"Address the learner with masculine forms (-ak) unless they say they are a woman or use feminine forms about themselves (āsfa, ṭālba, rāyḥa); from then on use -ich / -īn forms.";
 const stageLine=()=>`Learner stage: ${currentStage()} of 5 (${STAGE_NAMES[currentStage()]}).`;
 let talkMode="chat";
+let chatSending=false, chatSendBtn=null, chatDraft="", chatInp=null, practiceQ=null, practiceAsk=null, practiceDraft="", practiceTries=0, practiceRes=null, practiceBusy=false, practiceUI=null; // kept across redraws of the Talk tab
+function resetPractice(){ practiceQ=practiceAsk=practiceRes=null; practiceDraft=""; practiceTries=0; practiceBusy=false; }
+function resetTalk(){ chatDraft=""; resetPractice(); }
 function renderTalk(){
+  if(dictSink&&dictSink.talk){ dictSink.done=true; dictSink=null; if(DICT) DICT.stop().catch(()=>{}); } // a dictation into the old boxes ends with them
   const sec=$("#talk"); sec.textContent="";
   if(!SAMPLE){ sec.append(el("h2",{textContent:"Talk"}),el("p",{className:"lede",textContent:"The conversation partner, sentence practice and stories need the claude.ai version of this page. Lessons, reviews, role-play and drills all work here."})); return; }
   const st=el("div",{className:"subtabs",role:"group","aria-label":"Talk sections"});
@@ -3297,7 +3425,7 @@ function dictateBtn(target){
   if(!DICT) return null;
   const b=el("button",{className:"btn",type:"button","aria-label":"Dictate in Arabic"},icon("mic")); let on=false;
   b.onclick=()=>{ if(on){ DICT.stop().catch(()=>{}); return; }
-    const base=target.value; const sink={final:"",partial:"",done:false,update(){ target.value=(base+(base?" ":"")+sink.final+" "+sink.partial).replace(/\s+/g," ").trimStart(); },
+    const base=target.value; const sink={final:"",partial:"",done:false,talk:true,update(){ if(!target.isConnected) return; target.value=(base+(base?" ":"")+sink.final+" "+sink.partial).replace(/\s+/g," ").trimStart(); if(target.oninput) target.oninput(); },
       ended(reason){ if(sink.done) return; sink.done=true; on=false; b.setAttribute("aria-pressed","false"); if(dictSink===sink) dictSink=null; sink.partial=""; sink.update(); if(reason==="not_granted"||reason==="unavailable"){ DICT=null; b.remove(); } }};
     stopAudio(); dictSink=sink; on=true; b.setAttribute("aria-pressed","true"); DICT.start({language:dictLang}).catch(e=>sink.ended(e&&e.code)); };
   return b;
@@ -3305,12 +3433,12 @@ function dictateBtn(target){
 function renderChat(sec){
   sec.append(el("p",{className:"lede",textContent:"Write or say something in Gulf Arabic, transliteration or English. Your partner replies at your level. If you make a mistake you get a hint first, so you can fix it yourself."}));
   const chat=el("div",{className:"chat","aria-live":"polite"}); sec.append(chat);
-  const scen=el("div",{className:"row",style:"margin-bottom:10px"}); ["Order at a café","Meet someone new","Take a taxi","Visit a friend's house"].forEach(s=>scen.append(el("button",{className:"btn small",type:"button",textContent:s,onclick:()=>{ inp.value="Let's role-play: "+s.toLowerCase()+". You start."; form.requestSubmit(); }})));
+  const scen=el("div",{className:"row",style:"margin-bottom:10px"}); ["Order at a café","Meet someone new","Take a taxi","Visit a friend's house"].forEach(s=>scen.append(el("button",{className:"btn small",type:"button",textContent:s,onclick:()=>{ inp.value=chatDraft="Let's role-play: "+s.toLowerCase()+". You start."; form.requestSubmit(); }})));
   sec.append(scen);
   const add=(cls,...kids)=>{ const m=el("div",{className:"msg "+cls},...kids); chat.append(m); return m; };
   const renderReply=(m,r,userText)=>{ m.textContent=""; ap(m,arSpan(String(r.arabic||"")),el("span",{className:"tr",style:"display:block",textContent:String(r.translit||"")}),el("span",{textContent:String(r.english||"")}));
     if(r.correction){ const fix=el("span",{className:"fix",hidden:true,textContent:String(r.correction)});
-      const row=el("span",{className:"row",style:"margin-top:6px"},el("button",{className:"btn small",type:"button",textContent:"Try again",onclick:()=>{ inp.value=userText||""; inp.focus(); }}),el("button",{className:"btn small ghost",type:"button",textContent:"Show the Gulf version",onclick:e=>{ fix.hidden=false; e.currentTarget.remove(); }}));
+      const row=el("span",{className:"row",style:"margin-top:6px"},el("button",{className:"btn small",type:"button",textContent:"Try again",onclick:()=>{ chatDraft=userText||""; chatInp.value=chatDraft; chatInp.focus(); }}),el("button",{className:"btn small ghost",type:"button",textContent:"Show the Gulf version",onclick:e=>{ fix.hidden=false; e.currentTarget.remove(); }}));
       ap(m,el("span",{className:"fix",textContent:"Something to fix: "+String(r.hint||"have another look at your Arabic.")}),row,fix); }
     const row=el("div",{className:"row",style:"margin-top:6px"},playBtn(String(r.arabic||""),"Hear")); m.append(row);
     (Array.isArray(r.new_words)?r.new_words:[]).slice(0,4).forEach(w=>{ if(!w||typeof w.ar!=="string"||typeof w.en!=="string") return;
@@ -3318,10 +3446,10 @@ function renderChat(sec){
   const fem=S.settings.gender==="f";
   if(!chatLog.length) add("",arSpan(fem?"هلا والله! شلونج اليوم؟":"هلا والله! شلونك اليوم؟"),el("span",{className:"tr",style:"display:block",textContent:fem?"hala wallāh! shlōnich il-yōm?":"hala wallāh! shlōnak il-yōm?"}),el("span",{textContent:"Hi there! How are you today?"}));
   chatLog.forEach((m,i)=>{ if(m.role==="user") add("me",el("span",{textContent:m.content})); else renderReply(add(""),m.r,(chatLog[i-1]||{}).content); });
-  const inp=el("textarea",{id:"chat-input",placeholder:"زين الحمد لله … or: how do I say I'm tired?","aria-label":"your message"});
-  const send=el("button",{className:"btn primary",type:"submit",textContent:"Send"});
+  const inp=typingBox(el("textarea",{id:"chat-input",placeholder:"زين الحمد لله … or: how do I say I'm tired?","aria-label":"your message"})); inp.value=chatDraft; inp.oninput=()=>{ chatDraft=inp.value; }; chatInp=inp;
+  const send=el("button",{className:"btn primary",type:"submit",textContent:"Send",disabled:chatSending}); chatSendBtn=send; // a redrawn form stays off while a reply is awaited
   const form=el("form",{className:"compose"},inp,dictateBtn(inp),send); sec.append(form);
-  form.onsubmit=async e=>{ e.preventDefault(); const text=inp.value.trim().slice(0,500); if(!text||send.disabled) return; inp.value=""; send.disabled=true;
+  form.onsubmit=async e=>{ e.preventDefault(); const text=inp.value.trim().slice(0,500); if(!text||send.disabled||chatSending) return; inp.value=""; chatDraft=""; chatSending=true; send.disabled=true;
     add("me",el("span",{textContent:text})); chatLog.push({role:"user",content:text}); const wait=add("",el("span",{className:"tr",textContent:"…"}));
     const prompt=`You are a warm, patient conversation partner helping an English speaker learn ${DIALECT}
 ${stageLine()} Words they already know: ${knownList(120)||"almost none yet"}.
@@ -3332,33 +3460,38 @@ Return ONLY JSON: {"arabic": your Gulf reply in Arabic script, "translit": its t
 Conversation so far:
 ${chatLog.slice(-12).map(m=>(m.role==="user"?"Learner: ":"Partner: ")+(m.role==="user"?m.content:m.r.arabic)).join("\n")}`;
     try{ const r=await SAMPLE.json(prompt,{modelTier:"default",cache:false}); if(!r||typeof r!=="object") throw new Error("bad");
-      chatLog.push({role:"assistant",r}); renderReply(wait,r,text); S.talks=(S.talks||0)+1; touchDay(); logActivity(1); save(); }
-    catch(err){ chatLog.pop(); wait.remove(); chat.lastChild&&chat.lastChild.remove(); inp.value=text;
+      chatLog.push({role:"assistant",r}); renderReply(wait,r,text); S.talks=(S.talks||0)+1; touchDay(); logActivity(1); save(); chatSending=false; if(!chat.isConnected&&currentTab==="talk"&&talkMode==="chat"&&!busy) renderTalk(); } // the tab was redrawn while waiting: draw it again so the reply shows
+    catch(err){ chatLog.pop(); wait.remove(); chat.lastChild&&chat.lastChild.remove(); if(!chatDraft) chatDraft=text; if(chatInp) chatInp.value=chatDraft;
       add("",el("span",{className:"feedback no",textContent:err&&err.code==="rate_limited"?"Too many messages at once. Wait a minute and send again.":"Your partner couldn't answer that. Your message is back in the box: try sending again."})); }
-    send.disabled=false; };
+    chatSending=false; send.disabled=false; if(chatSendBtn) chatSendBtn.disabled=false; };
 }
 // output practice: you produce a sentence and get a hint before the answer (prompting self-correction beats being told)
 function renderPractice(sec){
   sec.append(el("p",{className:"lede",textContent:"You get an English sentence built from words you know. Write or say it in Gulf Arabic. If it's off, you get a hint and one more try before the answer."}));
   const box=el("div",{className:"stack"}); sec.append(box);
   const ask=async()=>{
-    box.textContent=""; box.append(el("p",{className:"tag",textContent:"Thinking of a sentence…"}));
+    box.textContent="";
     try{
-      const q=await SAMPLE.json(`Give an English-speaking learner a sentence to translate into the dialect below.
+      let q=practiceQ;
+      if(!q){ box.append(el("p",{className:"tag",textContent:"Thinking of a sentence…"}));
+        q=await (practiceAsk||(practiceAsk=SAMPLE.json(`Give an English-speaking learner a sentence to translate into the dialect below.
 Dialect: ${DIALECT}
 Stage ${currentStage()} (${STAGE_NAMES[currentStage()]}). Known words: ${knownList(120)||"basic greetings"}.
 Write ONE short English sentence (4-10 words) they can translate using mostly those words, combining at least two of them in a new way, in a situation natural in the UAE or Kuwait. If it says "you", add who is addressed in brackets: (to a man) or (to a woman).
-Return ONLY JSON: {"english": the sentence, "hint": one short hint in English naming a word or pattern to use}`,{modelTier:"default",cache:false});
-      if(!box.isConnected) return; box.textContent=""; let tries=0;
-      const inp=el("textarea",{id:"practice-input",placeholder:"اكتب هنا … or transliteration","aria-label":"your translation"});
+Return ONLY JSON: {"english": the sentence, "hint": one short hint in English naming a word or pattern to use}`,{modelTier:"default",cache:false}).then(r=>{ practiceQ=r; practiceAsk=null; return r; },e=>{ practiceAsk=null; throw e; })));
+      }
+      if(!box.isConnected) return; box.textContent="";
+      const inp=typingBox(el("textarea",{id:"practice-input",placeholder:"اكتب هنا … or transliteration","aria-label":"your translation"})); inp.value=practiceDraft; inp.oninput=()=>{ practiceDraft=inp.value; };
       const go=el("button",{className:"btn primary",type:"button",textContent:"Check"}); const res=el("div",{className:"stack",role:"status"});
       box.append(el("div",{className:"stage",style:"padding-bottom:16px"},el("p",{className:"mode",textContent:"Say it in Gulf Arabic"}),el("p",{className:"en",textContent:String(q.english||"")}),
         el("details",{},el("summary",{textContent:"Hint"}),el("p",{className:"tag",textContent:String(q.hint||"")})),el("div",{className:"compose",style:"width:100%"},inp,dictateBtn(inp)),go),res);
       const full=(r,v)=>{ res.textContent=""; ap(res,el("div",{className:"stage"},el("p",{className:"feedback "+(v==="correct"?"ok":"no"),textContent:v==="correct"?"Correct":v==="close"?"Close":"Not quite"}),
         r.best?arSpan(String(r.best.ar||""),"mid"):null,r.best?el("p",{className:"tr",textContent:String(r.best.tr||"")}):null,el("p",{textContent:String(r.explanation||"")}),
         el("div",{className:"row center"},r.best?playBtn(String(r.best.ar||"")):null,r.best?el("button",{className:"btn small",type:"button",textContent:"+ Add to my cards",onclick:e=>{ addCustom({ar:r.best.ar,tr:r.best.tr,en:q.english}); e.currentTarget.disabled=true; e.currentTarget.textContent="Added"; }}):null),
-        el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Next sentence",onclick:ask})))); };
-      go.onclick=async()=>{ const a=inp.value.trim().slice(0,300); if(!a||go.disabled) return; go.disabled=true; tries++; res.textContent=""; res.append(el("p",{className:"tag",textContent:"Checking…"}));
+        el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Next sentence",onclick:()=>{ resetPractice(); ask(); }})))); };
+      practiceUI={go,res,full,inp};
+      if(practiceRes){ go.remove(); full(practiceRes.r,practiceRes.v); } else if(practiceBusy){ go.disabled=true; res.append(el("p",{className:"tag",textContent:"Checking…"})); }
+      go.onclick=async()=>{ const a=inp.value.trim().slice(0,300); if(!a||go.disabled) return; practiceBusy=true; go.disabled=true; practiceTries++; res.textContent=""; res.append(el("p",{className:"tag",textContent:"Checking…"}));
         try{
           const r=await SAMPLE.json(`A learner of the dialect below was asked to translate: "${q.english}". They wrote: "${a}".
 Dialect: ${DIALECT}
@@ -3367,11 +3500,11 @@ Judge it as a friendly Gulf Arabic teacher. Accept any natural Gulf phrasing (Em
 "correct": natural Gulf with the right meaning. "close": right meaning, but with fuṣḥā, Egyptian or Levantine forms, the wrong gender, or a wrong verb prefix or ending. "wrong": the meaning is wrong.
 "best" stays as close to the learner's own wording as possible.
 Return ONLY JSON: {"verdict": "correct" | "close" | "wrong", "hint": one short English hint that points at what to fix WITHOUT giving the corrected words, "best": {"ar": a natural Gulf version in Arabic script, "tr": its transliteration}, "explanation": 1-2 short sentences in English on what to change and why (or why it's good)}`,{modelTier:"default",cache:false});
-          go.disabled=false; const v=String(r.verdict||""); touchDay(); logActivity(1); save();
-          if(v==="correct"||tries>=2){ go.remove(); full(r,v); return; }
-          res.textContent=""; ap(res,el("p",{className:"feedback no",textContent:(v==="close"?"Close. ":"Not quite. ")+String(r.hint||"Have another look.")}),
-            el("div",{className:"row"},el("button",{className:"btn small",type:"button",textContent:"Try again",onclick:()=>{ inp.focus(); res.textContent=""; }}),el("button",{className:"btn small ghost",type:"button",textContent:"Show the answer",onclick:()=>{ go.remove(); full(r,v); }})));
-        }catch(err){ res.textContent=""; res.append(el("p",{className:"feedback no",textContent:"Couldn't check that just now. Try again."})); go.disabled=false; tries--; }
+          practiceBusy=false; const u=practiceUI; u.go.disabled=false; const v=String(r.verdict||""); touchDay(); logActivity(1); save();
+          if(v==="correct"||practiceTries>=2){ practiceRes={r,v}; u.go.remove(); u.full(r,v); return; }
+          u.res.textContent=""; ap(u.res,el("p",{className:"feedback no",textContent:(v==="close"?"Close. ":"Not quite. ")+String(r.hint||"Have another look.")}),
+            el("div",{className:"row"},el("button",{className:"btn small",type:"button",textContent:"Try again",onclick:()=>{ u.inp.focus(); u.res.textContent=""; }}),el("button",{className:"btn small ghost",type:"button",textContent:"Show the answer",onclick:()=>{ practiceRes={r,v}; u.go.remove(); u.full(r,v); }})));
+        }catch(err){ practiceBusy=false; const u=practiceUI; u.res.textContent=""; u.res.append(el("p",{className:"feedback no",textContent:"Couldn't check that just now. Try again."})); u.go.disabled=false; practiceTries--; }
       };
     }catch(err){ box.textContent=""; box.append(el("p",{className:"feedback no",textContent:err&&err.code==="rate_limited"?"Too many requests. Try again in a minute.":"Couldn't think of a sentence. Try again."}),el("button",{className:"btn",type:"button",textContent:"Try again",onclick:ask})); }
   };
@@ -3414,7 +3547,7 @@ async function generateUnit(stage,topic,then){
   const f=focusView({title:"Writing your next lesson",onClose:()=>{ generating=false; show(currentTab); }});
   try{
     let chosen=topic;
-    if(!chosen){ const inp=el("input",{type:"text",id:"topic-input",placeholder:"e.g. buying a car, my favourite food, a trip to Dubai","aria-label":"topic"});
+    if(!chosen){ const inp=el("input",{type:"text",id:"topic-input",placeholder:"e.g. buying a car, my favourite food, a trip to Dubai","aria-label":"topic"}); inp.setAttribute("dir","auto");
       const go=el("button",{className:"btn primary",type:"button",textContent:"Write it"});
       f.body.append(el("p",{className:"lede",textContent:"You're past the planned stages. Pick any topic and the lesson is built around what you already know."}),el("div",{className:"compose"},inp,go));
       await new Promise(res=>{ go.onclick=()=>{ if(inp.value.trim()){ chosen=inp.value.trim().slice(0,80); res(); } }; });
@@ -3522,6 +3655,7 @@ Return ONLY JSON: {"hook": one or two sentences in English, "example_ar", "examp
     select("set-gender","Talk to me as",[["","Not set"],["m","A man (-ak)"],["f","A woman (-ich)"]],S.settings.gender||"",v=>{ S.settings.gender=v; save(); }),
     select("set-auto","Play audio automatically",[["1","On"],["0","Off (quiet places)"]],S.settings.autoplay===false?"0":"1",v=>{ S.settings.autoplay=v==="1"; save(); }));
   if(TTS) sec.append(select("set-voice","Arabic voice",[["auto","Device voice, Claude voice if none"],["device","Device voice"],["claude","Claude voice"]],S.settings.voice||"auto",v=>{ S.settings.voice=v; save(); say("هلا والله، شلونك؟"); }));
+  { const vr=voiceRow(renderMe); if(vr) sec.append(vr); }
   if(micBlocked&&SR) sec.append(el("div",{className:"setting"},el("span",{textContent:"Microphone"}),el("button",{className:"btn small",type:"button",textContent:"Try the microphone again",onclick:()=>{ micBlocked=false; try{ localStorage.removeItem(KEY+"-mic"); }catch(e){} renderMe(); }})));
   // backup: a file you keep, in case browser data or the account copy is ever lost. restoring merges, so it never loses work
   const exp=el("button",{className:"btn small",type:"button",textContent:"Export backup"});
@@ -3566,6 +3700,18 @@ function feed(){ if(merged){ feedMsa(); feedSentences(); } }
 function firstMergeDone(){ if(merged) return; merged=true; feed(); refresh(); if(!busy) RENDER[currentTab](); }
 function hasRemote(){ return !!(window.claude&&window.claude.use)||!!GH; }
 function afterRemoteChange(){ rebuild(); feed(); refresh(); if(!busy) RENDER[currentTab](); }
+// an app left open overnight: back in front on a later day it feeds and redraws. with sync on (github or account) the feed waits for the pull that comes with the return (feeding stamps updatedAt, so before the merge a stale device would win the settings). a lesson or review on screen is not redrawn
+let openDay=today(), dayWait=false;
+function dayTurn(pull){
+  if(today()<=openDay||dayWait) return;
+  const running=()=>(GH&&ghRun)||(synced&&pushing), draw=()=>{ refresh(); if(!busy) RENDER[currentTab](); };
+  const turn=()=>{ if(today()<=openDay) return; openDay=today(); feed(); draw(); };
+  if(!(running()&&pull)) return turn();
+  // follow the whole chain (a push in flight queues a second pull behind it), then feed. after 30 s only redraw: feeding before the merge would stamp updatedAt, and the late pull still feeds once
+  dayWait=true; const tm=setTimeout(()=>{ dayWait=false; draw(); },30000);
+  const wait=p=>p.then(null,()=>{}).then(()=>{ const n=running(); return n&&n!==p?wait(n):0; });
+  wait(pull).then(()=>{ clearTimeout(tm); dayWait=false; turn(); });
+}
 async function setupCaps(){
   if(!window.claude||!window.claude.use) return;
   const [s,d,t]=await Promise.all(["sample","dictation","tts"].map(n=>window.claude.use(n).catch(()=>null)));
