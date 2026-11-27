@@ -1890,22 +1890,32 @@ test("app left open overnight: back in front the next day it feeds today's cards
     t.on.visibilitychange(); assert.equal(t.fed().length,fed); assert.equal(drawn(),d0);
     shiftDays(t,1); t.env.document.visibilityState="hidden"; t.on.visibilitychange(); assert.equal(t.fed().length,fed,"not while hidden");
     t.env.document.visibilityState="visible"; t.on.visibilitychange(); await tick(); assert.equal(t.fed().length,fed+2); assert.equal(drawn(),d0+1);
-    shiftDays(t,1); t.env.busy=true; t.on.visibilitychange(); assert.equal(t.fed().length,fed+4); assert.equal(drawn(),d0+1,"a lesson on screen is not redrawn");
+    shiftDays(t,1); t.env.busy=true; t.on.visibilitychange(); await tick(); assert.equal(t.fed().length,fed+4); assert.equal(drawn(),d0+1,"a lesson on screen is not redrawn");
   }
 });
 test("app left open: a clock that went back a day changes nothing",async()=>{
   const t=loadUi({boot:true}); await tick(); const fed=t.fed().length; shiftDays(t,-1); t.on.visibilitychange(); assert.equal(t.fed().length,fed);
 });
-test("app left open: with sync on, the day turn feeds after the pull, so a newer setting from another device is not overwritten by a stale one",async()=>{
-  const feed=t=>{ t.S().updatedAt=Date.now(); };
+test("app left open: with sync on, the day turn feeds after the pull, so a newer setting from another device is not overwritten by a stale one (both GitHub builds and the account)",async()=>{
+  const feed=t=>{ t.S().updatedAt=vm.runInContext("Date.now()",t.env); }, pageNow=t=>vm.runInContext("Date.now()",t.env);
+  const p0=saved({updatedAt:5,lastDay:"2026-03-01",streak:4,settings:{retention:0.9},cards:{"u1.0":pcard(100,3)}});
   for(const b of [{pwa:true},{built:true}]){
-  const hub=hubWith(saved({updatedAt:5,lastDay:"2026-03-01",streak:4,settings:{retention:0.9},cards:{"u1.0":pcard(100,3)}}));
-  const t=loadUi({boot:true,...b,fetch:hub.fetch,feed,saved:{[KEY+"-gh"]:CFG}}); await tick(); const fed=t.fed().length;
-  const meta=hub.json("progress.json"); meta.updatedAt=Date.now()+60000; meta.settings={...meta.settings,retention:0.8}; hub.set("progress.json",meta);
-  shiftDays(t,1); t.on.visibilitychange(); assert.equal(t.fed().length,fed,"not before the pull"); await tick(); await tick();
-  assert.equal(t.fed().length,fed+2); assert.equal(t.S().settings.retention,0.8);
-  const again=hub.json("progress.json"); assert.equal(again.settings.retention,0.8);
+    const hub=hubWith(p0);
+    const t=loadUi({boot:true,...b,fetch:hub.fetch,feed,saved:{[KEY+"-gh"]:CFG}}); await tick(); const fed=t.fed().length;
+    shiftDays(t,1); const meta=hub.json("progress.json"); meta.updatedAt=pageNow(t)-1000; meta.settings={...meta.settings,retention:0.8}; hub.set("progress.json",meta);
+    t.on.visibilitychange(); assert.equal(t.fed().length,fed,"not before the pull"); await tick(); await tick();
+    assert.equal(t.fed().length,fed+2); assert.equal(t.S().settings.retention,0.8,"github locally"); assert.equal(hub.json("progress.json").settings.retention,0.8,"github store");
   }
+  const {meta,shards}=L.splitProgress(p0), db=fakeDb({[P+"progress"]:{...meta,shards:{s1:"a1"}},[P+"cards_s1"]:{cards:shards.s1}});
+  const t=loadUi({boot:true,claude:claudeWith(db),feed}); await tick(); const fed=t.fed().length;
+  shiftDays(t,1); db.m.set(P+"progress",{...db.m.get(P+"progress"),updatedAt:pageNow(t)-1000,settings:{...db.m.get(P+"progress").settings,retention:0.8}});
+  t.on.visibilitychange(); assert.equal(t.fed().length,fed,"not before the pull"); await tick(); await tick();
+  assert.equal(t.fed().length,fed+2); assert.equal(t.S().settings.retention,0.8,"account locally"); assert.equal(db.m.get(P+"progress").settings.retention,0.8,"account store");
+});
+test("app left open: a pull that never comes back still turns the day, after 30 seconds",async()=>{
+  const db=fakeDb({[P+"progress"]:{updatedAt:5,shards:{}}}); const t=loadUi({boot:true,claude:claudeWith(db)}); await tick(); const fed=t.fed().length;
+  db.hold(); shiftDays(t,1); t.on.visibilitychange(); await tick(); assert.equal(t.fed().length,fed);
+  const w=[...t.timers.values()].find(x=>x.ms===30000); assert.ok(w,"a 30 s fallback"); w.f(); assert.equal(t.fed().length,fed+2);
 });
 const earHint=sec=>walk(sec).map(txt).find(t=>/of the last \d+ right/.test(t));
 test("stage 0 test: start over clears the answers, so the stage does not pass again with no new answers",()=>{
