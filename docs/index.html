@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-MTWtj6+Nyh74aUm93XVj0Wlaxa3R5HyWV+jeZVaPGis=' 'sha256-VtDbEDV0HsZTm1GgGFrd3hOOUtS+jjFYtM9VEFifHl4=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-MTWtj6+Nyh74aUm93XVj0Wlaxa3R5HyWV+jeZVaPGis=' 'sha256-p1I+f1F8+L1z8YCDwY6qndpPKxie/1mv4j1QvZDkbs4=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -3148,7 +3148,7 @@ function startReview(onDone){
   // cards over today's cap wait for the next session; the top-up only brings in cards that come due while this one runs
   const held=new Set(planDay(liveCards(),S.suspended,Date.now(),{maxReviews:1e9}).reviews.filter(id=>!first.reviews.includes(id)));
   const topUp=()=>{ const due=planDay(liveCards(),S.suspended,Date.now(),{maxReviews:500,exclude:held}).reviews.filter(id=>!queue.includes(id)&&id!==cur); if(due.length){ total+=due.length; for(const id of due){ if(back.has(id)){ queue.splice(Math.min(queue.length,Math.max(0,3-(n-back.get(id)))),0,id); back.delete(id); } else queue.push(id); } } }; // a forgotten card returns once due, after three other cards at least
-  const finish=()=>{ keyHandler=null; undo=null; cur=null; flush(); f.progress(total,total); f.body.textContent="";
+  const finish=()=>{ clearTimeout(waitTimer); waitTimer=0; keyHandler=null; undo=null; cur=null; flush(); f.progress(total,total); f.body.textContent="";
     if(onDone&&n) S.session.done.review=1;
     f.body.append(el("div",{className:"stage"},el("p",{className:"en",textContent:n?"Review done":"Nothing due"}),el("p",{className:"tag",textContent:n?`${n} card${n>1?"s":""} reviewed. They'll come back as you start to forget them.`:"Learn a lesson and its phrases will show up here."}),
       el("div",{className:"actions"},el("button",{className:"btn primary wide",type:"button",textContent:"Continue",onclick:exit})))); announce("Review done"); };

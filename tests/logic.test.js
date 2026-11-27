@@ -1657,6 +1657,13 @@ test("review: a card due in exactly 10 minutes is on the waiting screen even whe
     assert.ok(/1 card comes back in 10 min/.test(texts(sc.spy.view.body).join(" ")),`${lab}, clock +${step} ms: ${texts(sc.spy.view.body).join("|")}`);
   }
 });
+test("review: Finish for now ends the wait; the waiting timer does not bring the waiting screen back over Review done",()=>{
+  const sc=loadScreens({harakat:"never"}), {env,t}=sc; t.S().cards={"u1.0":sc.card(0,0,0)}; env.sched=(c,g,n)=>L.schedule(c,g,n,0.9);
+  vm.runInContext(cut("function touchDay","const shownStreak"),env); env.startReview(null); const b=()=>sc.spy.view.body;
+  press(byText(b(),"Show answer")); press(walk(b()).find(n=>txt(n).startsWith("Got it")&&n.tag==="button")); assert.ok(/comes back in/.test(texts(b()).join(" ")));
+  press(byText(b(),"Finish for now")); assert.ok(texts(b()).includes("Review done")); t.runTimers();
+  assert.ok(texts(b()).includes("Review done"),texts(b()).join("|")); assert.equal(t.timers.size,0,"no timer left");
+});
 const WORD={id:"cabc1",ar:"قهوة",tr:"gahwa",en:"coffee"}, wcard=()=>[1,5,2,GT+9999,0,GT+60,-1,1];
 test("delete my own word: a second tap deletes the word and its card; the first tap wears off; course cards have no such button",()=>{
   const sc=loadScreens({harakat:"never"}), {env,t}=sc; t.S().custom=[{...WORD}]; sc.items.cabc1=Object.assign({unit:"custom",stage:"custom"},WORD);
