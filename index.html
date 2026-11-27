@@ -2498,7 +2498,7 @@ addEventListener("storage",e=>{
   if(e.key===KEY+"-gh"){ ghCancel(); ghLoad(); if(!GH) ghForget(); else{ ghMem={sha:{},body:{}}; ghHalted=false; ghDirty=true; } if(!busy) RENDER[currentTab](); return; }
   if(e.key!==KEY||!e.newValue) return;
   try{ const before=sig(S), gen=S.gen; S=hydrate(mergeProgress(serialize(),cleanIn(JSON.parse(e.newValue)))); S.gen=gen; if(sig(S)!==before) afterRemoteChange(); }catch(x){} });
-document.addEventListener("visibilitychange",()=>{ if(synced) pushRemote(); ghSync(document.visibilityState==="hidden"?"hide":"show"); });
+document.addEventListener("visibilitychange",()=>{ if(synced) pushRemote(); const p=ghSync(document.visibilityState==="hidden"?"hide":"show"); if(document.visibilityState==="visible") dayTurn(p); });
 addEventListener("pagehide",()=>{ if(synced) pushRemote(); ghSync("hide"); });
 addEventListener("online",()=>{ ghSync("online"); });
 
@@ -3696,6 +3696,13 @@ function feed(){ if(merged){ feedMsa(); feedSentences(); } }
 function firstMergeDone(){ if(merged) return; merged=true; feed(); refresh(); if(!busy) RENDER[currentTab](); }
 function hasRemote(){ return !!(window.claude&&window.claude.use)||!!GH; }
 function afterRemoteChange(){ rebuild(); feed(); refresh(); if(!busy) RENDER[currentTab](); }
+// an app left open overnight: back in front on a later day it feeds and redraws. with sync on the feed waits for the pull that comes with the return (feeding stamps updatedAt, so before the merge a stale device would win the settings). a lesson or review on screen is not redrawn
+let openDay=today(), dayWait=false;
+function dayTurn(pull){
+  if(today()<=openDay||dayWait) return;
+  const go=()=>{ dayWait=false; if(today()<=openDay) return; openDay=today(); feed(); refresh(); if(!busy) RENDER[currentTab](); };
+  if(GH&&ghRun&&pull){ dayWait=true; pull.then(go,go); } else go();
+}
 async function setupCaps(){
   if(!window.claude||!window.claude.use) return;
   const [s,d,t]=await Promise.all(["sample","dictation","tts"].map(n=>window.claude.use(n).catch(()=>null)));

@@ -31,7 +31,7 @@ function loadUi(o={}){
     document:{createElement:fakeEl,visibilityState:"visible",addEventListener:(t,f)=>{ on[t]=f; }},addEventListener:(t,f)=>{ on[t]=f; },
     window:{claude:o.claude,HARF_PWA:o.built?undefined:o.pwa},navigator:{onLine:o.online!==false},fetch:o.fetch||(()=>{ throw new Error("unexpected fetch"); }),
     rebuild(){},refresh(){},busy:false,currentTab:"today",RENDER:{today(){ calls.push("render"); }},show(){ calls.push("show"); },
-    feedMsa(){ calls.push("msa"); if(o.feed) o.feed(env.T); },feedSentences(){ calls.push("sentences"); },afterRemoteChange(){ calls.push("changed"); },firstMergeDone(){}};
+    feedMsa(){ calls.push("msa"); if(o.feed) o.feed(env.T); },feedSentences(){ calls.push("sentences"); },afterRemoteChange(){ calls.push("changed"); },firstMergeDone(){},dayTurn(){}};
   vm.createContext(env); let m=main;
   if(o.built){ const sc=builtScripts(), mi=sc.findIndex(x=>x.includes("// ===== state =====")); assert.ok(mi>0); sc.slice(0,mi).forEach(x=>vm.runInContext(x,env)); m=sc[mi].match(/\(function\(\)\{([\s\S]*)/)[1]; }
   else vm.runInContext(block("logic"),env);
@@ -1881,4 +1881,29 @@ test("stage 0 test: a bad start doesn't block it: 6 of the last 8 pass",()=>{
 });
 test("stage 0 test: the answers so far survive the screen being drawn again",()=>{
   const e=earTest(); for(let i=0;i<7;i++) e.answer(true); e.redraw(); assert.equal(e.done(),false); e.answer(true); assert.equal(e.done(),true);
+});
+
+const shiftDays=(t,n)=>vm.runInContext(`{ const d=Date.now; Date.now=()=>d()+${n*DAY}; }`,t.env);
+test("app left open overnight: back in front the next day it feeds today's cards and redraws, on both builds; the same day does nothing",async()=>{
+  for(const o of [{boot:true},{boot:true,pwa:true},{boot:true,claude:claudeWith(fakeDb())}]){
+    const t=loadUi(o); await tick(); const fed=t.fed().length, drawn=()=>t.calls.filter(c=>c==="render").length, d0=drawn();
+    t.on.visibilitychange(); assert.equal(t.fed().length,fed); assert.equal(drawn(),d0);
+    shiftDays(t,1); t.env.document.visibilityState="hidden"; t.on.visibilitychange(); assert.equal(t.fed().length,fed,"not while hidden");
+    t.env.document.visibilityState="visible"; t.on.visibilitychange(); await tick(); assert.equal(t.fed().length,fed+2); assert.equal(drawn(),d0+1);
+    shiftDays(t,1); t.env.busy=true; t.on.visibilitychange(); assert.equal(t.fed().length,fed+4); assert.equal(drawn(),d0+1,"a lesson on screen is not redrawn");
+  }
+});
+test("app left open: a clock that went back a day changes nothing",async()=>{
+  const t=loadUi({boot:true}); await tick(); const fed=t.fed().length; shiftDays(t,-1); t.on.visibilitychange(); assert.equal(t.fed().length,fed);
+});
+test("app left open: with sync on, the day turn feeds after the pull, so a newer setting from another device is not overwritten by a stale one",async()=>{
+  const feed=t=>{ t.S().updatedAt=Date.now(); };
+  for(const b of [{pwa:true},{built:true}]){
+  const hub=hubWith(saved({updatedAt:5,lastDay:"2026-03-01",streak:4,settings:{retention:0.9},cards:{"u1.0":pcard(100,3)}}));
+  const t=loadUi({boot:true,...b,fetch:hub.fetch,feed,saved:{[KEY+"-gh"]:CFG}}); await tick(); const fed=t.fed().length;
+  const meta=hub.json("progress.json"); meta.updatedAt=Date.now()+60000; meta.settings={...meta.settings,retention:0.8}; hub.set("progress.json",meta);
+  shiftDays(t,1); t.on.visibilitychange(); assert.equal(t.fed().length,fed,"not before the pull"); await tick(); await tick();
+  assert.equal(t.fed().length,fed+2); assert.equal(t.S().settings.retention,0.8);
+  const again=hub.json("progress.json"); assert.equal(again.settings.retention,0.8);
+  }
 });
