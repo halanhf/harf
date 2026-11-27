@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-MTWtj6+Nyh74aUm93XVj0Wlaxa3R5HyWV+jeZVaPGis=' 'sha256-dgWmdiUERemrikplpXMNeS/anfhE7mzgm8zoqGeCW60=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-fDBLnztpyR5NDmjSr0nNw9Wrr4mxPSs/pGQt3hRhm/Q=' 'sha256-WXo9PJk0xhhXHm0kMI4uTJ1dz61Ul1zcoRizp161880=' 'sha256-MTWtj6+Nyh74aUm93XVj0Wlaxa3R5HyWV+jeZVaPGis=' 'sha256-VtDbEDV0HsZTm1GgGFrd3hOOUtS+jjFYtM9VEFifHl4=' 'sha256-+XgoAk8AU6081FeaHuZvBob5vrUBLkeo2lkksYJKAIk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Harf Gulf Arabic</title>
 <meta name="description" content="Learn to speak Gulf Arabic from zero.">
@@ -2518,7 +2518,7 @@ async function setupSync(){
   }catch(e){}
 }
 // another tab or window of this app saved: merge its work in, so this tab's next save can't overwrite it.
-// merged in memory only (no write back), so two tabs never answer each other's saves in a loop
+// merged in memory only (no write back), so two tabs never answer each other's saves in a loop. the one exception is a merge that opens a higher stage: the redraw after it records that stage once (currentStage, written to this browser and marked for the next github sync), then the copies agree and nothing more is written
 addEventListener("storage",e=>{
   if(e.key===KEY+"-gh"){ ghCancel(); ghLoad(); if(!GH) ghForget(); else{ ghMem={sha:{},body:{}}; ghHalted=false; ghDirty=true; } if(!busy) RENDER[currentTab](); return; }
   if(e.key!==KEY||!e.newValue) return;
@@ -3330,7 +3330,7 @@ function renderSounds(sec){
     body.append(el("p",{className:"lede",textContent:"These pairs differ by one sound English doesn't separate. Hearing the difference comes before saying it. Voices change between rounds where your device has several, which trains the ear faster."}));
     let round=0; const stage=el("div",{className:"stage"}); const hint=el("p",{className:"tag"}); body.append(stage,hint);
     const hits=()=>earLast.filter(Boolean).length;
-    const status=()=>`Round ${round} · ${hits()} of the last ${earLast.length} right`;
+    const status=()=>earLast.length?`Round ${round} · ${hits()} of the last ${earLast.length} right`:`Round ${round}`;
     const doRound=()=>{
       if(!stage.isConnected) return;
       if(!S.unitsDone.sounds&&earDone) resetEar(); earDone=!!S.unitsDone.sounds; // a reset (here or merged in) clears the answers

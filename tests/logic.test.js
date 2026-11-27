@@ -1562,6 +1562,14 @@ test("autoplay off: a lesson resumed at a phrase or at the quick check stays qui
   answer(sc,true); sc.env.openLesson(UNIT); sc.spy.played.length=0; press(byText(sc.spy.view.body,"Continue where you left off")); assert.deepEqual(sc.spy.played,[],"resumed at the quick check");
   sc.spy.played.length=0; answer(sc,false); assert.deepEqual(sc.spy.played,[],"a resumed answer");
 });
+test("autoplay: through the real gate, a screen that plays by itself plays unless the setting is false; a setting that is absent after hydrate means on",()=>{
+  for(const [setting,want] of [[false,false],[true,true],[undefined,true]]){
+    const sc=loadScreens({harakat:"never"}); const settings={harakat:"never"}; if(setting!==undefined) settings.autoplay=setting; sc.t.setS({settings});
+    vm.runInContext(cut("const auto=","\n").replace("const auto=","this.auto="),sc.env); // the real gate, in place of the harness's spy
+    assert.equal(sc.t.S().settings.autoplay,want,"hydrate fills the setting in"); sc.env.openLesson(UNIT); sc.spy.played.length=0; press(byText(sc.spy.view.body,"Learn the phrases →"));
+    assert.equal(sc.spy.played.length>0,want,`autoplay ${setting}`); if(want) assert.equal(sc.spy.played.length,1,"one line, played once");
+  }
+});
 test("autoplay off: Play, Slow, Shadow and Compare are taps and always play",()=>{
   const sc=loadScreens({autoplay:false}), {env,spy}=sc;
   for(const a of ["const playBtn=","const slowBtn="]) vm.runInContext(cut(a,"\n"),env);
@@ -1932,6 +1940,15 @@ test("stage reached: a stage recorded on first draw by a copy that has not heard
     assert.equal(t.env.currentStage(),0,path); assert.deepEqual({...t.S().stageOpen},{},path); assert.deepEqual({...(meta().stageOpen||{})},{},path);
   }
 });
+test("stage reached: recording a stage with github sync on marks the github copy dirty, so it is pushed with the next sync",async()=>{
+  const hub=fakeHub(); const t=loadUi({boot:true,pwa:true,fetch:hub.fetch,saved:{[KEY+"-gh"]:CFG}}); await tick();
+  vm.runInContext(cut("function liveStage","function nextUnit",main),t.env); Object.assign(t.env,{unitsOfStage:()=>[],stageInfo:n=>({complete:n<3}),ITEMS:{}}); t.S().unitsDone={sounds:"2026-11-01"};
+  hub.log.length=0; assert.equal(t.env.currentStage(),3); assert.ok(t.S().stageOpen["3"]>0);
+  t.env.document.visibilityState="hidden"; t.on.visibilitychange(); await tick();
+  assert.ok(hub.puts().includes("progress.json"),"a hide pushes what was recorded"); assert.ok(hub.json("progress.json").stageOpen["3"]>0);
+  const off=loadUi({boot:true,pwa:true,fetch:hub.fetch}); await tick(); vm.runInContext(cut("function liveStage","function nextUnit",main),off.env); Object.assign(off.env,{unitsOfStage:()=>[],stageInfo:n=>({complete:n<3}),ITEMS:{}}); off.S().unitsDone={sounds:"2026-11-01"};
+  hub.log.length=0; off.env.currentStage(); off.env.document.visibilityState="hidden"; off.on.visibilitychange(); await tick(); assert.deepEqual(hub.log,[],"with sync off nothing is sent");
+});
 function earTest(){
   const sc=loadScreens(); vm.runInContext("Math.random=()=>0.9; soundTab='ear'",sc.env); let sec=uiEl("div"); sc.env.renderSounds(sec);
   const pick=sc.env.PAIRS[0][1][0];
@@ -2016,6 +2033,12 @@ test("stage 0 test: a run of 4 wrong, 6 right, 2 wrong passes on the 10th answer
 test("stage 0 test: after 12 answers the window holds only the last 8",()=>{
   const e=earTest(); for(let i=0;i<8;i++) e.answer(false); for(let i=0;i<4;i++) e.answer(true);
   assert.equal(e.done(),false); assert.ok(e.hint().includes("4 of the last 8 right"),e.hint());
+});
+test("stage 0 test: the first round shows only the round, with no 0 of the last 0; the count comes with the first answer",()=>{
+  const e=earTest();
+  const sec=uiEl("div"); e.sc.env.renderSounds(sec); const status=()=>walk(sec).map(txt).filter(t=>/^Round \d/.test(t));
+  assert.deepEqual(status(),["Round 1 · 6 of your last 8 right finishes stage 0"]); assert.ok(!walk(sec).map(txt).some(t=>/0 of the last 0/.test(t)));
+  e.answer(true); e.redraw(); assert.ok(e.hint().includes("Round 2 · 1 of the last 1 right"),e.hint());
 });
 test("stage 0 test: a redraw keeps counting rounds from the answers so far",()=>{
   const e=earTest(); for(let i=0;i<7;i++) e.answer(true); e.redraw(); assert.ok(e.hint().includes("Round 8 · 7 of the last 7 right"),e.hint());
