@@ -2119,12 +2119,14 @@ const validGen=u=>!!u&&typeof u.id==="string"&&/^g[0-9a-z]+$/.test(u.id)&&[2,3,4
 const own=(o,k)=>Object.prototype.hasOwnProperty.call(o,k);
 const tombs=x=>{ const r={}; if(x&&typeof x==="object"&&!Array.isArray(x)) for(const [k,v] of Object.entries(x)) if(/^c[0-9a-z]+$/.test(k)&&typeof v==="number"&&isFinite(v)&&v>0) r[k]=v; return r; };
 // stages you have reached: {"2".."6": ms first opened}; only whole stages 2 to 6 with a real time, so a damaged backup can't open more than the course has
+// a stage time from a clock set far ahead would outlast a reset, so cleaning drops times over a day ahead
+const pick1=(m,max)=>Object.fromEntries(Object.entries(m).filter(([k,v])=>v<=max));
 const opens=x=>{ const r={}; if(x&&typeof x==="object"&&!Array.isArray(x)) for(const [k,v] of Object.entries(x)) if(/^[2-6]$/.test(k)&&typeof v==="number"&&isFinite(v)&&v>0) r[k]=v; return r; };
 function cleanSaved(raw,now,todayKey){
   const o=raw&&typeof raw==="object"&&!Array.isArray(raw)?Object.assign({},raw):{};
   const cards={}; if(o.cards&&typeof o.cards==="object") for(const [k,a] of Object.entries(o.cards)) if(validCard(a)) cards[k]=a; o.cards=cards;
   for(const f of ["unitsDone","suspended","log","rp","seen","read"]) if(!o[f]||typeof o[f]!=="object"||Array.isArray(o[f])) o[f]={};
-  if(!Array.isArray(o.custom)) o.custom=[]; o.deleted=tombs(o.deleted); o.stageOpen=opens(o.stageOpen);
+  if(!Array.isArray(o.custom)) o.custom=[]; o.deleted=tombs(o.deleted); o.stageOpen=pick1(opens(o.stageOpen),now+DAY);
   // day fields must be real dates: a junk one sorts after every date, so it would win every merge and stop the streak counting
   for(const f of ["lastDay","freezeUsed","msaDay"]) if(!(typeof o[f]==="string"&&(o[f]===""||isFinite(dayNum(o[f]))))) o[f]="";
   if(!o.session||typeof o.session!=="object"||!(typeof o.session.day==="string"&&isFinite(dayNum(o.session.day)))) o.session={day:"",done:{}};
@@ -2183,7 +2185,7 @@ function mergeProgress(a,b){
   const gone=k=>own(out.deleted,k); // own keys only: "constructor" is a valid id shape
   out.cards=Object.fromEntries(Object.entries(out.cards).filter(([k])=>!gone(k))); out.custom=out.custom.filter(c=>!gone(c.id)); out.suspended=Object.fromEntries(Object.entries(out.suspended).filter(([k])=>!gone(k)));
   // a stage once opened stays open: every stage either copy reached, at the earlier time
-  out.stageOpen=opens({}); for(const k of keys(opens(a.stageOpen),opens(b.stageOpen))) out.stageOpen[k]=Math.min(...[opens(a.stageOpen)[k],opens(b.stageOpen)[k]].filter(v=>v>0));
+  const oa=opens(a.stageOpen), ob=opens(b.stageOpen); out.stageOpen={}; for(const k of keys(oa,ob)) out.stageOpen[k]=Math.min(...[oa[k],ob[k]].filter(v=>v>0));
   out.log={}; for(const k of keys(a.log,b.log)) out.log[k]=Math.max(+(a.log||{})[k]||0,+(b.log||{})[k]||0);
   for(const f of ["rp","read"]){ out[f]={}; for(const k of keys(a[f],b[f])){ const x=(a[f]||{})[k]||"", y=(b[f]||{})[k]||""; out[f][k]=x>y?x:y; } }
   out.seen=Object.assign({},a.seen,b.seen);
@@ -2453,7 +2455,7 @@ async function writeRemote(){
     stamps[n]=shardStamp[n]; }
   meta.shards=stamps; await progressRef().set(meta);
 }
-const sig=s=>{ let t=0; for(const c of Object.values(s.cards)) t+=c.t; return [Object.keys(s.cards).length,t,Object.keys(s.unitsDone).length,s.streak,s.lastDay,s.custom.length,Object.values(s.suspended).filter(v=>v>0).length].join("|"); };
+const sig=s=>{ let t=0; for(const c of Object.values(s.cards)) t+=c.t; return [Object.keys(s.cards).length,t,Object.keys(s.unitsDone).length,s.streak,s.lastDay,s.custom.length,Object.values(s.suspended).filter(v=>v>0).length,Object.keys(s.stageOpen||{}).join()].join("|"); };
 function applyMerged(merged){ const before=sig(S); const gen=S.gen; S=hydrate(merged); S.gen=gen; persistLocal(); return sig(S)!==before; }
 function pushRemote(opts){
   clearTimeout(saveTimer); if(!synced||!DB) return Promise.resolve();
@@ -2657,7 +2659,8 @@ function liveStage(){
 // a stage you have reached stays open: its lessons don't lock again if cards lapse (the percentage shown is still the real one)
 function currentStage(){
   const live=liveStage(), o=opens(S.stageOpen); let top=0; for(const k of Object.keys(o)) top=Math.max(top,+k);
-  if(live>=2&&live>top){ S.stageOpen=Object.assign(o,{[live]:Date.now()}); save(); return live; }
+  // recording is not activity: no save(), so updatedAt stays and an idle device's stale settings can't win a merge; it goes to this browser and rides with the next github sync. jumping straight to a higher stage records only that one, enough because the remembered stage is the highest key
+  if(live>=2&&live>top){ S.stageOpen=Object.assign(o,{[live]:Date.now()}); persistLocal(); if(GH) ghDirty=true; return live; }
   return Math.max(live,top);
 }
 function nextUnit(){

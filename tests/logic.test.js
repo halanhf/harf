@@ -1846,3 +1846,27 @@ test("delete my own word: deleting changes no day counter, streak, log, freezes 
   const sc=loadScreens({harakat:"never"}); sc.t.S().custom=[{...WORD}]; sc.items.cabc1=Object.assign({unit:"custom",stage:"custom"},WORD); sc.t.S().cards={cabc1:sc.card(0,0,0)}; sc.env.startReview(null);
   const d=byText(sc.spy.view.body,"Delete this word"); press(d); press(d); const t=texts(sc.spy.view.body); assert.ok(t.includes("Nothing due"),t.join("|")); assert.ok(!t.some(x=>/reviewed/.test(x)));
 });
+test("stage reached: recording a stage does not touch updatedAt, reaches local storage, and a stale device that records one on first draw cannot revert a newer setting",()=>{
+  const sc=stageScreens(); const {env,t}=sc; for(let i=0;i<4;i++) t.S().cards["u1."+i]=sc.card(-1,8,4);
+  t.S().updatedAt=1234; t.S().settings.retention=0.8; const stale0=t.serialize();
+  assert.equal(env.currentStage(),2); assert.equal(t.S().updatedAt,1234); assert.ok(t.S().stageOpen["2"]>0);
+  const re=loadUi({store:t.store}); assert.ok(re.S().stageOpen["2"]>0,"survived a reload"); assert.equal(re.S().updatedAt,1234);
+  const stale=t.serialize(), phone={...stale0,updatedAt:5000,stageOpen:{},settings:{...stale0.settings,retention:0.95}};
+  for(const m of [L.mergeProgress(stale,phone),L.mergeProgress(phone,stale)]){ assert.equal(m.settings.retention,0.95); assert.ok(m.stageOpen["2"]>0); }
+});
+test("stage reached: the built page does not bump updatedAt when it records a stage either",()=>{
+  const sc=builtScripts(), mi=sc.findIndex(x=>x.includes("// ===== state =====")), m=sc[mi].match(/\(function\(\)\{([\s\S]*)/)[1], u=loadUi({built:true});
+  vm.runInContext(cut("function liveStage","function nextUnit",m),u.env);
+  Object.assign(u.env,{unitsOfStage:()=>[],stageInfo:n=>({complete:n<2}),ITEMS:{}}); u.S().unitsDone={sounds:"2026-11-01"}; u.S().updatedAt=77;
+  assert.equal(u.env.currentStage(),2); assert.ok(u.S().stageOpen["2"]>0); assert.equal(u.S().updatedAt,77);
+});
+test("stage reached: a merge that changes only a remembered stage redraws, and the lesson is open",()=>{
+  const u=loadUi(); u.setS({updatedAt:5}); const copy=u.serialize(); copy.stageOpen={3:GNOW-9}; copy.updatedAt=4;
+  u.calls.length=0; u.on.storage({key:KEY,newValue:JSON.stringify(copy)}); assert.ok(u.calls.includes("changed")); assert.equal(u.S().stageOpen["3"],GNOW-9);
+});
+test("stage reached: a stage time from a clock set ahead is dropped on load and does not survive a reset; one hour ahead is kept",()=>{
+  const c=L.cleanSaved({stageOpen:{2:now+3*DAY,3:1e300,4:now+3600000,5:now-5}},now,"2026-11-14"); assert.deepEqual({...c.stageOpen},{4:now+3600000,5:now-5});
+  const R=now, reset={updatedAt:R,resetAt:R,resetDay:"2026-11-14",cards:{}};
+  const far=L.cleanSaved({updatedAt:R-5,stageOpen:{2:now+3*DAY,3:1e300}},now,"2026-11-14");
+  for(const m of [L.mergeProgress(far,reset),L.mergeProgress(reset,far)]) assert.deepEqual({...m.stageOpen},{});
+});
